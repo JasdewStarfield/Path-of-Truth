@@ -13,3 +13,13 @@ usernamecache.json
 launcher_profiles.json
 /libraries
 /versions
+/assets/skins
+config/embeddium-options.json
+config/embeddium-fingerprint.json
+config/fml.toml
+config/modernfix-mixins.properties
+config/oculus.properties
+config/sodium-extra-options.json
+options.txt
+/resourcepacks
+/shaderpacks
