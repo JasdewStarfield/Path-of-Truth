@@ -20,8 +20,9 @@ config/fml.toml
 config/modernfix-mixins.properties
 config/oculus.properties
 config/sodium-extra-options.json
-options.txt
 /resourcepacks
 /shaderpacks
 /XaeroWaypoints
 /XaeroWorldMap
+options.txt
+/XaeroWaypoints_BACKUP032021
