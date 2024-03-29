@@ -1,0 +1,154 @@
+
+[dynamic_lighting_settings]
+	#
+	# If enabled, vanilla mobs and items will recieve dynamic lighting. If disabled, only objects specified by external mods or configs will recieve dynamic lighting.
+	# Default: true
+	vanillaDynamicLighting = true
+	#
+	# If enabled, torches and other vanilla fire-based items will not emit light underwater.
+	# Default: false
+	torchesDoNothingInWater = false
+	#
+	# A multiplier applied to an entity's light level when in the deep dark.
+	# Default: 0.5
+	#Range: 0.0 ~ 1.0
+	deepDarkScaling = 0.5
+	#
+	# The maximum amount of times light tries to refresh in a second. Higher values attempt to refresh more often. This number can be decreased if you experience poor performance.
+	# Default: 40
+	#Range: 1 ~ 240
+	lightRefreshRate = 40
+	#
+	# Determines how far away you should be able to see light from an entity (measured in blocks). 0 for infinite distance. Use this to prevent far away entities from causing light updates.
+	# Default: 128
+	#Range: 0 ~ 1024
+	maxVisibleDistance = 128
+	#
+	# Determines if dynamic lighting should still occur when an entity is behind a wall. Turning this on may impact performance, but allows light to be seen around corners from far away. Entities within 24 blocks will always emit light.
+	# Default: false
+	seeThroughWalls = false
+	#
+	# Determines if dynamic lighting smoothly blends as you move. Works best with a high refresh rate. Will result in worse performance since lighting updates typically happen more often.
+	# Default: true
+	smoothBlending = true
+	#
+	# If enabled, chunks with dynamic lighting will always render off thread. Improves FPS, but may cause strange rendering glitches (Does nothing if Optifine is installed).
+	# Default: true
+	threadedRendering = true
+
+	[dynamic_lighting_settings.entity_lighting]
+		#
+		# Sets the light level of entities. Allows for adding modded entities. Set the light to -1 to unregister it.
+		# Example: ["minecraft:blaze=9", "minecraft:creeper=5"]
+		# Default: []
+		entityBrightnessOverrides = []
+
+		[dynamic_lighting_settings.entity_lighting.burning_entities]
+			#
+			# Determines if entities on fire emit light.
+			# Default: true
+			burningEntitiesGlow = true
+			#
+			# How bright a burning entity should be.
+			# Default: 10
+			#Range: 0 ~ 15
+			burningEntityLightLevel = 10
+
+		[dynamic_lighting_settings.entity_lighting.glowing_entities]
+			#
+			# Determines if entities affected with the glowing effect emit light.
+			# Default: true
+			glowingEntitiesGlow = true
+			#
+			# How bright an entity with the glowing effect be.
+			# Default: 5
+			#Range: 0 ~ 15
+			glowingEntityLightLevel = 5
+
+		[dynamic_lighting_settings.entity_lighting.entity_settings]
+			#
+			# Determines if if creepers emit light before they explode.
+			# Default: true
+			creepersGlow = true
+
+	[dynamic_lighting_settings.item_lighting]
+		#
+		# Modifies the light level of items. Allows for adding modded items. Set the light to -1 to unregister it.
+		# Example: ["minecraft:torch=14", "minecraft:diamond=10"]
+		# Default: []
+		itemBrightnessOverrides = []
+		#
+		# Determines if items in the world emit light.
+		# Default: true
+		itemEntitiesGlow = true
+		#
+		# Determines if held or worn items emit light.
+		# Default: true
+		heldItemsGlow = true
+		#
+		# Determines if item frames with glowing items emit light.
+		# Default: true
+		itemFramesGlow = true
+
+[block_emission_settings]
+	#
+	# Determines if block textures can be lit brighter than usual.
+	# Default: true
+	blockTexturesGlow = true
+	#
+	# Modifies the light level of block textures. Set the light to -1 to unregister it.
+	# Example: ["minecraft:block/end_portal_frame_eye=12", "minecraft:block/stone=4"]
+	# Default: []
+	blockTextureBrightnessOverrides = []
+
+[armor_trim_emission_settings]
+	#
+	# Determines if armor trim materials can be lit brighter than usual.
+	# Default: true
+	armorTrimsGlow = true
+	#
+	# Modifies the light level of armor trim textures based on trim material. Set the light to -1 to unregister it.
+	# Example: ["minecraft:diamond=10", "minecraft:gold=7"]
+	# Default: []
+	armorTrimBrightnessOverrides = []
+
+[debug_settings]
+	#
+	# Logs info about registry data.
+	# Default: false
+	logRegistry = false
+	#
+	# Logs the average time 100 dynamic lighting calculations took, and provides a fastest refresh time for your machine based on these numbers.
+	# Default: false
+	logLightCalculationTime = false
+	#
+	# Logs when a mod or resource pack is using a deprecated folder structure.
+	# Default: true
+	logDeprecatedFolderStructure = true
+	#
+	# Logs when dynamic lighting encounters an issue.
+	# Default: false
+	logDynamicLightingErrors = false
+
+	[debug_settings.flags]
+		#
+		# Disables emissive block textures if an incompatible mod is discovered.
+		# Default: true
+		disableBlockTextureGlowIfError = true
+		#
+		# Warns when Flywheel is installed since you may see weird dynamic lighting on some blocks from Create.
+		# Default: true
+		warnAboutFlywheel = false
+		#
+		# Warns when Sodium (or a variation) is installed since dynamic lighting may not work.
+		# Default: true
+		warnAboutSodium = true
+
+[mod_compat]
+
+	[mod_compat.enabled_builtin_plugins]
+		#
+		# Enables the plugin for Create.
+		# Default: true
+		create = true
+
