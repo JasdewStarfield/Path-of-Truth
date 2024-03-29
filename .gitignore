@@ -26,3 +26,5 @@ config/sodium-extra-options.json
 /XaeroWorldMap
 options.txt
 /XaeroWaypoints_BACKUP032021
+config/enchdesc.json
+config/jade/sort-order.json
