@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "461ABC15BE939FA8", title: "第一阶段" }
+		{ id: "12EA2EE194EF67D3", title: "第二阶段" }
+		{ id: "1C3253C18F104B31", title: "挑战！" }
+	]
+}

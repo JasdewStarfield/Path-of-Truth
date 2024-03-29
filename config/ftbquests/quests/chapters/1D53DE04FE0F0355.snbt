@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1D53DE04FE0F0355"
+	group: ""
+	icon: "minecraft:skeleton_skull"
+	id: "1D53DE04FE0F0355"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "从头说起"
+}

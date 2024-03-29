@@ -23,3 +23,5 @@ config/sodium-extra-options.json
 options.txt
 /resourcepacks
 /shaderpacks
+/XaeroWaypoints
+/XaeroWorldMap
