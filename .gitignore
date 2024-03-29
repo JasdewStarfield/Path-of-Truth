@@ -1,0 +1,7 @@
+/logs/
+*.log
+/.idea/
+/local/
+/saves/
+/rhino.local.properties
+/natives-windows-x86_64/
