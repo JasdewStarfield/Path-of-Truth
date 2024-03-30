@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "s": {
+      "item": "create:shaft"
+    },
+    "p": {
+      "item": "create_new_age:heat_pipe"
+    },
+    "#": {
+      "item": "minecraft:copper_block"
+    },
+    ".": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    ".s.",
+    "p#p"
+  ],
+  "result": {
+    "count": 1,
+    "item": "create_new_age:stirling_engine"
+  },
+  "show_notification": true
+}

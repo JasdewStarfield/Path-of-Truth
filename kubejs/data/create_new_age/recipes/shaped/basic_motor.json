@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "i": {
+      "item": "minecraft:iron_nugget"
+    },
+    "s": {
+      "item": "create:shaft"
+    },
+    "#": {
+      "item": "create:andesite_casing"
+    },
+    "m": {
+      "item": "create_new_age:magnetite_block"
+    }
+  },
+  "pattern": [
+    "iii",
+    "m#s",
+    "iii"
+  ],
+  "result": {
+    "count": 1,
+    "item": "create_new_age:basic_motor"
+  },
+  "show_notification": true
+}

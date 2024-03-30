@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "p": {
+      "item": "create_new_age:heat_pipe"
+    },
+    "#": {
+      "item": "minecraft:coal_block"
+    },
+    ".": {
+      "item": "minecraft:iron_nugget"
+    },
+    "b": {
+      "item": "create:empty_blaze_burner"
+    }
+  },
+  "pattern": [
+    ". .",
+    ".b.",
+    "p#p"
+  ],
+  "result": {
+    "count": 1,
+    "item": "create_new_age:heater"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:redstone_block"
+    },
+    "I": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    "III",
+    "I#I",
+    "III"
+  ],
+  "result": {
+    "count": 2,
+    "item": "create_new_age:redstone_magnet"
+  },
+  "show_notification": true
+}

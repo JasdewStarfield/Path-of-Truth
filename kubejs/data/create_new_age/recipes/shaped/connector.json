@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "c": {
+      "item": "create:copper_nugget"
+    },
+    "a": {
+      "item": "create:andesite_alloy"
+    }
+  },
+  "pattern": [
+    "ac",
+    "ca",
+    "ac"
+  ],
+  "result": {
+    "count": 2,
+    "item": "create_new_age:electrical_connector"
+  },
+  "show_notification": true
+}

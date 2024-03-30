@@ -1,0 +1,63 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:bricks"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "count": 4,
+      "item": "create_new_age:reactor_casing"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_new_age:incomplete_casing"
+        },
+        [
+          {
+            "tag": "forge:plates/iron"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "create_new_age:incomplete_casing"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create_new_age:incomplete_casing"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_new_age:incomplete_casing"
+        }
+      ]
+    },
+    {
+      "type": "create_new_age:energising",
+      "energy_needed": 500,
+      "ingredients": [
+        {
+          "item": "create_new_age:incomplete_casing"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_new_age:incomplete_casing"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "create_new_age:incomplete_casing"
+  }
+}

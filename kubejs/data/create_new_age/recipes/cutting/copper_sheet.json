@@ -1,0 +1,15 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "create:copper_sheet"
+    }
+  ],
+  "results": [
+    {
+      "item": "create_new_age:copper_wire",
+      "count": 4
+    }
+  ],
+  "processingTime": 100
+}

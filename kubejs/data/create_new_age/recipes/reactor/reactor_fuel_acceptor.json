@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "create_new_age:reactor_casing"
+    },
+    ".": {
+      "item": "create:andesite_funnel"
+    },
+    ",": {
+      "item": "create:brass_funnel"
+    }
+  },
+  "pattern": [
+    "#.#",
+    "#,#"
+  ],
+  "result": {
+    "count": 1,
+    "item": "create_new_age:reactor_fuel_acceptor"
+  },
+  "show_notification": true
+}

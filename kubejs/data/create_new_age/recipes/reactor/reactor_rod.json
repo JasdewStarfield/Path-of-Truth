@@ -1,0 +1,28 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "A": {
+      "tag": "forge:plates/gold"
+    },
+    "F": {
+      "item": "minecraft:iron_block"
+    },
+    "C": {
+      "item": "create_new_age:reactor_casing"
+    },
+    "G": {
+      "item": "create_new_age:reactor_glass"
+    }
+  },
+  "pattern": [
+    "CAAAC",
+    " GFG ",
+    " GFG ",
+    "CAAAC"
+  ],
+  "result": {
+    "count": 3,
+    "item": "create_new_age:reactor_rod"
+  }
+}

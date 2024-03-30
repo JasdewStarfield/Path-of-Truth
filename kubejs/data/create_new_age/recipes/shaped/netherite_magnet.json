@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "$": {
+      "item": "minecraft:diamond_block"
+    },
+    ".": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "pattern": [
+    "...",
+    ".$.",
+    "..."
+  ],
+  "result": {
+    "count": 3,
+    "item": "create_new_age:netherite_magnet"
+  },
+  "show_notification": true
+}

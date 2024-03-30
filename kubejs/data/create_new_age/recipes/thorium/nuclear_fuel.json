@@ -1,0 +1,61 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_new_age:radioactive_thorium"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "create_new_age:nuclear_fuel"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create_new_age:incomplete_fuel"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_new_age:incomplete_fuel"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create_new_age:incomplete_fuel"
+        },
+        [
+          {
+            "tag": "forge:plates/iron"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "create_new_age:incomplete_fuel"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "create_new_age:incomplete_fuel"
+        }
+      ],
+      "results": [
+        {
+          "item": "create_new_age:incomplete_fuel"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "create_new_age:incomplete_fuel"
+  }
+}
