@@ -1,0 +1,15 @@
+volume = 1.0
+maxPlayCont = 8
+spatial = true
+sampleRate = 44100
+useYoutubeDownloader = true
+relayServerURL = "https://raw.githubusercontent.com/TeamFelnull/IamMusicPlayer/master/relay_server.json"
+lavaPlayerNativesURL = "https://raw.githubusercontent.com/TeamFelnull/IamMusicPlayer/master/lavaplayer/natives_link.json"
+neteaseCloudMusicApiURL = "https://raw.githubusercontent.com/TeamFelnull/IamMusicPlayer/master/api_server.json"
+maxWaitTime = 10000
+retryTime = 3000
+dropItemRing = true
+patchouliIntegration = true
+soundPhysicsRemasteredIntegration = true
+showMusicLines = false
+showSpeakerRange = false

@@ -54,6 +54,9 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
+  "immersiveengineering": {
+    "multiblock_icon": true
+  },
   "supplementaries": {
     "hat_stand": true
   },
