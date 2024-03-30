@@ -1,8 +1,0 @@
-{
-  "schemaVersion": 2,
-  "items": [
-    "$minecraft:armor",
-    "$minecraft:universal_enchants_horse_armor"
-  ],
-  "incompatible": []
-}

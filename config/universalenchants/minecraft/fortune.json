@@ -1,9 +1,0 @@
-{
-  "schemaVersion": 2,
-  "items": [
-    "$minecraft:digger"
-  ],
-  "incompatible": [
-    "minecraft:silk_touch"
-  ]
-}

@@ -35,3 +35,4 @@ patchouli_data.json
 config/xaerominimap.txt
 /screenshots
 /debug
+/.mixin.out
