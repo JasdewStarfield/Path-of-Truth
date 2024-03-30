@@ -31,3 +31,5 @@ config/jade/sort-order.json
 config/xaerominimap_entities.json
 config/ambientsounds-client.json
 patchouli_data.json
+/crash-reports
+config/xaerominimap.txt
