@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:bow",
+    "$minecraft:crossbow"
+  ],
+  "incompatible": []
+}

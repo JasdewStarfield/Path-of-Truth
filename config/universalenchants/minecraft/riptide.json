@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:trident"
+  ],
+  "incompatible": [
+    "minecraft:channeling",
+    "minecraft:loyalty"
+  ]
+}

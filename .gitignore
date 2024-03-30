@@ -33,3 +33,5 @@ config/ambientsounds-client.json
 patchouli_data.json
 /crash-reports
 config/xaerominimap.txt
+/screenshots
+/debug

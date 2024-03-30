@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:weapon",
+    "blue_skies:spike_shield",
+    "blue_skies:crushing_hammer",
+    "farmersdelight:skillet",
+    "farmersdelight:flint_knife",
+    "farmersdelight:iron_knife",
+    "farmersdelight:diamond_knife",
+    "farmersdelight:netherite_knife",
+    "farmersdelight:golden_knife",
+    "bloodmagic:soulscythe",
+    "irons_spellbooks:graybeard_staff",
+    "irons_spellbooks:artificer_cane",
+    "irons_spellbooks:ice_staff",
+    "irons_spellbooks:blood_staff",
+    "$minecraft:universal_enchants_axe",
+    "$minecraft:trident"
+  ],
+  "incompatible": []
+}

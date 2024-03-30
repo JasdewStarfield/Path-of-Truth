@@ -1,0 +1,38 @@
+
+["Harder Natural Healing Control Values"]
+	#Debug Level: 0 = Off, 1 = Log, 2 = Chat+Log
+	#Range: 0 ~ 2
+	debugLevel = 0
+	#Attack Healing Delay in Ticks
+	#Range: 0 ~ 3600
+	attackHealingDelayTicks = 200
+	#Max Bonus HitPoint Totems
+	#Range: 0 ~ 1200
+	maxBonusHitPointTotems = 300
+	#healingPerSecond
+	#Range: 0.0 ~ 10.0
+	healingPerSecond = 0.25
+	#healthAfterDeath
+	#Range: 0 ~ 20
+	healthAfterDeath = 20
+	#hungerAfterDeath
+	#Range: 0 ~ 20
+	hungerAfterDeath = 20
+	#minimumFoodHealingLevel
+	#Range: 0.0 ~ 22.0
+	minimumFoodHealingLevel = 16.0
+	#healingExhaustionCost - Hunger exhausted per healing event.
+	#Range: 0.0 ~ 10.0
+	healingExhaustionCost = 1.0
+	#wakeupHealingAmount
+	#Range: 0.0 ~ 10.0
+	wakeupHealingAmount = 4.0
+	#extraExhaustionWhenHurt
+	#Range: 0.0 ~ 1.0
+	extraExhaustionWhenHurt = 0.0125
+	#minimum hit points for peaceful mode starvation.
+	#Range: 0 ~ 20
+	minimumStarvationHealth = 0
+	#Can the player get hungry and maybe even starve to death in peaceful mode.
+	peacefulHunger = true
+

@@ -1,0 +1,7 @@
+{
+    /*
+    Whether or not changes to configs should be watched and reacted to. (Configs normally auto-update when modified)
+    Note: Changing this will require you to restart your game for it to be applied.
+    */
+    "watch_changes": true
+}

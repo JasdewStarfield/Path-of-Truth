@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:armor_feet",
+    "alexsmobs:pigshoes",
+    "$minecraft:universal_enchants_horse_armor"
+  ],
+  "incompatible": [
+    "minecraft:frost_walker"
+  ]
+}

@@ -1,0 +1,6 @@
+
+#General settings
+[general]
+	#Enable this and death counter messages will not show up in chat.
+	hideDeathCounterMessages = false
+

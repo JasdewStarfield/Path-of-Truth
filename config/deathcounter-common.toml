@@ -1,0 +1,20 @@
+
+#General settings
+[general]
+	#What kind of message should we send players when they die?
+	#Accepts: NONE, SHORT, LONG
+	#Allowed Values: NONE, SHORT, LONG
+	messageType = "LONG"
+	#Should we broadcast the leaderboard to the player when they die?
+	#Accepts: NONE, SELF, ALL
+	#Allowed Values: NONE, SELF, ALL
+	broadcastOnDeath = "NONE"
+	#Number of names to show in the leaderboard
+	#Range: 1 ~ 50
+	leaderboardCount = 5
+	#Do not persist deaths across sessions? Turning this on disables saving deaths to server folder.
+	singleSession = false
+	#Permission level required to use the op commands for Death Counter
+	#Range: 0 ~ 4
+	commandPermissionLevel = 1
+

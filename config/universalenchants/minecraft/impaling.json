@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:trident",
+    "$minecraft:weapon",
+    "$minecraft:universal_enchants_axe"
+  ],
+  "incompatible": [
+    "minecraft:smite",
+    "minecraft:bane_of_arthropods"
+  ]
+}

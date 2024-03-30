@@ -1,0 +1,274 @@
+
+[General]
+	#Whether some predators cause to not drop any items for their prey
+	nodropsforpredators = true
+	#Whether some Prey fear their predators
+	preyfear = true
+	#Whether Mobs that are aggresive to the player will not do so if below a certain amount of health
+	weakened = true
+	#Whether Charging Mobs can get stunned when holding up a shield
+	stunnablecharge = true
+
+[Items]
+	#Whether Sand requires no sand
+	sandnoammo = true
+
+[Mobs]
+
+	[Mobs."Vanilla Mob Tweaks"]
+		#Whether Spiders eat silverfish,cockroaches,flies and bees
+		spidereats = true
+		#Whether Cave Spiders eat silverfish,cockroaches,flies and bees
+		cavespidereats = true
+		#Whether frogs eat flies
+		frogeatflies = true
+		#Whether frogs can be transformed into Warped Toads
+		frogtransform = true
+
+	[Mobs."Alligator Snapping Turtle"]
+		#Whether Snapping Turtles alert others when attacked
+		snappingturtlealert = true
+		#Whether Alligator Snapping Turtles lay dormant at day and hunt at night
+		snappingturtledormant = true
+		#Whether Alligator Snapping Turtles has their moss accumulation affected by rain
+		snappingturtlemossincrease = true
+
+	[Mobs.Anaconda]
+		#Whether Anacona's hunt babies of some predators
+		anacondaattackbabies = true
+		#Whether Anaconda cannibalize on other anaconda's in certain conditions
+		anacondacannibalize = true
+
+	[Mobs."Bald Eagle"]
+		#Whether Bald Eagles cannibalize on other bald eagles in certain conditions
+		baldeaglecannibalize = true
+
+	[Mobs."Banana Slug"]
+		#Whether Banana Slugs can be sheared
+		bananaslugsheared = true
+
+	[Mobs."Blue Jay"]
+		#Whether Blue Jays hunt small animals
+		bluejayhunt = true
+
+	[Mobs."Bone Serpent"]
+		#Whether Bone Serpent fear Lavaithans
+		boneserpentfear = true
+
+	[Mobs.Caiman]
+		#Whether Caimans attack when their egg is held by an entity
+		caimaneggattack = true
+		#Whether Mantis Shrimps cannibalize on other mantis shrimps in certain conditions
+		caimanaggresive = true
+
+	[Mobs."Capuchin Monkey"]
+		#Whether Capuchins hunt small animals
+		capuchinhunt = true
+
+	[Mobs.Catfish]
+		#Whether Catfishes can be  and eat seemingly impossible to eat animals
+		catfisheatstupid = false
+		#Whether Catfish cannibalize on other small catfishes
+		catfishcannibalize = true
+
+	[Mobs."Cave Centipede"]
+		#Whether Cave Centipedes fear players holding light items, or placed light blocks
+		centipedelightfear = true
+
+	[Mobs.Cockroach]
+		#Whether Cockroaches fear any living entity
+		skittishcockroaches = true
+
+	[Mobs."Crimson Mosquito"]
+		#Whether Crimson Mosquitoes can be turned into Warped Moscos by feeding them Mungus Spores
+		crimsontransform = true
+		#Whether Crimson Mosquitoes cant attack Straddlers, unless with blood inside
+		crimsonnostraddler = true
+		#Whether Crimson Mosquitoes can spawn with blood
+		bloodedmosquitoes = true
+		#Whether Crimson Mosquitoes take no damage from Blood Sprayer
+		crimsonbloodprot = true
+
+	[Mobs.Crow]
+		#Whether Crows cannibalize on other crows in certain conditions
+		crowcannibalize = true
+
+	[Mobs.Elephant]
+		#Whether Tusked Elephants will attack players if staying with them for too long,(Unless if holding a acasia blossom)
+		elephantattack = true
+		#Whether Elephants can trample mobs
+		elephanttrample = true
+
+	[Mobs.Emu]
+		#Whether Emus attack ANY entity that is holding a ranged weapon
+		emurangedattack = true
+		#Whether Emu's attack when their egg is held by an entity
+		emueggattack = true
+		#Whether Emu's rarely scuffle at day
+		emuscuffle = true
+
+	[Mobs.Enderiophage]
+		#Whether Enderiophages attack players when below 40%
+		enderiophageplayer = true
+		#Whether Enderiophages attack depending on if they have resistance or not
+		enderioimmunity = true
+		#Whether Enderiophages adapt to their environment when built
+		enderioadaption = true
+
+	[Mobs.Farseer]
+		#Whether Farseer will have new effects when attacking the player
+		farseeralter = true
+		#Whether Farseer attack human-like entities
+		farseerhumanlikeattack = true
+
+	[Mobs.Flutter]
+		#Whether Flutter will be withered when fed Wither Rose
+		flutterwither = true
+		#Whether Flutter can be sheared for Azalea and Blossoms
+		fluttersheared = true
+
+	[Mobs.Fly]
+		#Whether flies pester specific mobs
+		flypester = true
+		#Whether flies can be converted to a Crimson Mosquito
+		flyconvert = true
+		#Whether flies fear candles
+		flysfearcandles = true
+		#Whether flies fear all (except for mobs they pester)
+		frogeatflies = true
+		#Whether Gelada Monkeys hunt small animals
+		geladahunt = true
+
+	[Mobs."Giant Squid"]
+		#Whether Giant Squids cannibalize on other giant squids in certain conditions
+		giantsquidcannibalize = true
+
+	[Mobs."Grizzly Bear"]
+		#Whether Grizzlies will not attack players when untamed
+		grizzlyattackfriendly = true
+
+	[Mobs.Guster]
+		#Whether Guster's Tornado effect is based on armor of the player
+		gusterweighed = true
+		#Whether Gusters are immune to projectiles
+		gusterprojectileprot = true
+
+	[Mobs."Hammerhead Shark"]
+		#Whether Hammerhead Sharks hunts more aquatic creatures
+		hammerheadhuntmantisshrimp = true
+
+	[Mobs.Hummingbird]
+		#Whether Hummingbirds follow Flutters
+		hummingfollowflutter = true
+		#Whether Hummingbirds only pollinate at day
+		hummingbirdpolinate = true
+
+	[Mobs.Lavithan]
+		#Whether Lavithan can be reconverted from Obsidian to Normal
+		lavaithanobsidianremove = true
+
+	[Mobs.Lobster]
+		#Whether Lobsters only spawn at night
+		lobsternight = true
+
+	[Mobs."Mantis Shrimp"]
+		#Whether Mantis Shrimps cannibalize on other mantis shrimps in certain conditions
+		mantiscannibalize = true
+		#Whether Mantis Shrimps are aggresive to the player
+		mantisaggresive = true
+
+	[Mobs.Mudskipper]
+		#Whether Mantis Shrimps are aggresive to the player
+		mudskipperhunt = true
+
+	[Mobs.Murmur]
+		#Whether Murmur has to has its body to be killed
+		murmurbodykill = true
+
+	[Mobs.Orca]
+		#Whether Orca's hunt fish
+		orcahunt = true
+
+	[Mobs.Raccoon]
+		#Whether Raccoons hunt for food
+		raccoonhunt = true
+
+	[Mobs.Rattlesnake]
+		#Whether Rattlesnakes cannibalize on other rattlesnakes in certain conditions
+		rattlesnakecannibalize = true
+
+	[Mobs.Roadrunner]
+		#Whether Roadrunners only hunt at day
+		roadrunnerday = true
+
+	[Mobs.Seagull]
+		#Whether Seagulls cannot snatch food if wearing a sombrero
+		seagullsombrero = true
+		#Whether Seagulls dont get buffed when it eats a Enchanted Golden Apple
+		seagullbuff = true
+		#Whether Seagulls don't snatch food if below 40% health
+		seagullnotsnatch = true
+
+	[Mobs.Skelewag]
+		#Whether Skelewag's attack all entities apart from their allies
+		scourgingseas = true
+		#Whether Skelewags circle prey like Hammerhead sharks
+		skelewagcircle = true
+
+	[Mobs.Skreecher]
+		#Whether Skreecher's soul can be used on a Screacher to allow it to spawn wardens
+		skreecherward = true
+
+	[Mobs."Snow Leopard"]
+		#Whether Snow Leopards can get rare items when killing specific mobs
+		snowluck = true
+
+	[Mobs."Soul Vulture"]
+		#Whether Soul Vultures increase soul level no matter what when attacking
+		soulbuff = true
+
+	[Mobs.Straddler]
+		#Amount of shots a Straddler has before reloading to fire again (0 Disables this feature)
+		#Range: > 0
+		straddlershots = 8
+		#Whether Straddlers no longer avenger their brethren (Bone Serpents and Crimson Mosquitoes)
+		stradllervengeance = true
+
+	[Mobs.Stradpole]
+		#Whether Stradpoles bob up in the lava
+		stradpolebobup = true
+
+	[Mobs."Sugar Glider"]
+		#Whether Sugar Gliders can be fed sugar to speed up
+		sugarrush = true
+
+	[Mobs.Terrapin]
+		#Whether Terrapins take damage when jumped on
+		terrapinstomp = true
+
+	[Mobs.Tiger]
+		#Whether Tigers only hunt at night
+		tigerhuntnight = true
+
+	[Mobs.Tusklin]
+		#Whether Tusklins flee warped fungus like their predecessors
+		fleewarped = true
+		#Whether Tusklins can be perm trusted with mushroom stew
+		tusklinfulltrust = true
+		#Whether Tusklins with the new Trample enchantment can trample when ridden
+		tusklintrample = true
+		#Whether Tusklins can have their equipment removed with shears
+		tusklinremoveequipment = true
+		#Whether Void Worm can be stunned when dealt enough damage
+		voidwormstun = true
+
+	[Mobs."Warped Mosco"]
+		#Whether Warped Moscos eat Crimson Mosquitoes rarely
+		warpedcannibalism = true
+
+	[Mobs."Warped Toad"]
+		#Whether Warped Toads dont eat Tarantula Hawks when tamed
+		warpedtarantula = true
+		#Whether Warped Toads cant impossibly eat Warped Moscos
+		moscoconsume = true
+

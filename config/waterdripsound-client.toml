@@ -1,0 +1,13 @@
+
+[General]
+	#Enables/Disables the whole Mod [false/true|default:true]
+	enableMod = true
+	#Volume of water/lava drips [0.0-1.0|default:0.3]
+	volume = 0.3
+	#Chance of a drip forming each tick (one in X so lower is faster) [1-100|default:10]
+	dripChance = 10
+	#If enabled, uses the Dripstone water/lava drip sounds added in 1.17. If not, uses sounds from older versions of the mod. [false/true|default:true]
+	useDripstoneSounds = true
+	#Sound category [default:AMBIENT]
+	soundCategory = "AMBIENT"
+

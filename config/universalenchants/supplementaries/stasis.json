@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 2,
+  "items": [
+    "$minecraft:crossbow"
+  ],
+  "incompatible": [
+    "minecraft:multishot"
+  ]
+}
