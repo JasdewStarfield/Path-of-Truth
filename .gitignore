@@ -36,3 +36,4 @@ config/xaerominimap.txt
 /screenshots
 /debug
 /.mixin.out
+config/everycomp-hazardous.properties

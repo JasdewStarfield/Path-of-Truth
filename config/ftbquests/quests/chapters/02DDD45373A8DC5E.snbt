@@ -1,0 +1,89 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "02DDD45373A8DC5E"
+	group: "461ABC15BE939FA8"
+	icon: "minecraft:weathered_copper"
+	id: "02DDD45373A8DC5E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "46156FBBDCAB4B1D"
+			subtitle: "自己动手，丰衣足食"
+			tasks: [{
+				id: "66B578110EFCF7EA"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "从原始工具开始"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2F791EC2607066B4"]
+			description: ["恭喜你初步摆脱了原始人阶段！"]
+			id: "0E41103FFC1FC96A"
+			subtitle: "转起来了，站起来了"
+			tasks: [{
+				id: "50B3A1CC2C49EEA3"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			title: "青铜时代，前进四！"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["46156FBBDCAB4B1D"]
+			id: "3C34EE3C3BAB33EC"
+			subtitle: "铜，一种很好得到也很容易冶炼的东西"
+			tasks: [{
+				id: "4561B0E5F3385141"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			title: "原始人的金属"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C34EE3C3BAB33EC"]
+			description: [
+				"个人的力量来探究真理显然是难以为继的，所以你需要帮助。"
+				"比如，机械神教的力量。"
+			]
+			id: "177304E3D3C7EFC3"
+			subtitle: "这里不是龙傲天小说"
+			tasks: [{
+				id: "0636FAA1B978C3D7"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "人力终有尽头"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["177304E3D3C7EFC3"]
+			id: "2F791EC2607066B4"
+			subtitle: "地球在转。"
+			tasks: [
+				{
+					id: "0495BABE3FB28BAF"
+					item: "create:large_cogwheel"
+					type: "item"
+				}
+				{
+					id: "203E8F07604DFCF1"
+					item: "create:cogwheel"
+					type: "item"
+				}
+			]
+			title: "基本工具"
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "青铜时代"
+}

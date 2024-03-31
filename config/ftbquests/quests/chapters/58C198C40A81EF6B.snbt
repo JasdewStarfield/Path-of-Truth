@@ -1,0 +1,28 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "58C198C40A81EF6B"
+	group: "461ABC15BE939FA8"
+	icon: "irons_spellbooks:lightning_bottle"
+	id: "58C198C40A81EF6B"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"你的魔法之路要从路边的一些泛着蓝紫色光芒的垃圾开始……"
+			"请注意收集它们，这是奥术的基石。"
+		]
+		icon: "minecraft:chest"
+		id: "374C430D0AD70D2E"
+		subtitle: "有的时候你需要看看大自然的馈赠"
+		tasks: [{
+			id: "6E5FCD00F7C67EA4"
+			item: "irons_spellbooks:arcane_essence"
+			type: "item"
+		}]
+		title: "探索自然"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "原始萨满"
+}
