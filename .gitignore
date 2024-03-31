@@ -37,3 +37,4 @@ config/xaerominimap.txt
 /debug
 /.mixin.out
 config/everycomp-hazardous.properties
+/config/sound_physics_remastered
