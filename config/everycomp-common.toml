@@ -35,6 +35,11 @@
 				maple = true
 				comet = true
 
+			[general.types.leaves_type.undergarden]
+				smogstem = true
+				wigglewood = true
+				grongle = true
+
 		[general.types.cake]
 
 			[general.types.cake.blue_skies]
@@ -54,6 +59,11 @@
 
 			[general.types.wood_type.betterarcheology]
 				rotten = true
+
+			[general.types.wood_type.undergarden]
+				smogstem = true
+				wigglewood = true
+				grongle = true
 
 	#Disables specific entries
 	[general.entries]
