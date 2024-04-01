@@ -7,22 +7,59 @@
 	id: "58C198C40A81EF6B"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		description: [
-			"你的魔法之路要从路边的一些泛着蓝紫色光芒的垃圾开始……"
-			"请注意收集它们，这是奥术的基石。"
-		]
-		icon: "minecraft:chest"
-		id: "374C430D0AD70D2E"
-		subtitle: "有的时候你需要看看大自然的馈赠"
-		tasks: [{
-			id: "6E5FCD00F7C67EA4"
-			item: "irons_spellbooks:arcane_essence"
-			type: "item"
-		}]
-		title: "探索自然"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			description: [
+				"你的魔法之路要从路边的一些泛着蓝紫色光芒的垃圾开始……"
+				"请注意收集它们，这是奥术的基石。"
+			]
+			icon: "minecraft:chest"
+			id: "374C430D0AD70D2E"
+			subtitle: "有的时候你需要看看大自然的馈赠"
+			tasks: [{
+				id: "6E5FCD00F7C67EA4"
+				item: "irons_spellbooks:arcane_essence"
+				type: "item"
+			}]
+			title: "探索自然"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "788F3EC85AC1172E"
+			subtitle: "看看台子和水面。"
+			tasks: [{
+				id: "59A31B2BD0665A8D"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			title: "外在的帮助"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			id: "28A1C39EF1446334"
+			subtitle: "你是一位法师。"
+			tasks: [{
+				id: "150978E8B38FB4B1"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:copper_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 5
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "内心的力量"
+			x: 2.0d
+			y: 0.0d
+		}
+	]
 	title: "原始萨满"
 }

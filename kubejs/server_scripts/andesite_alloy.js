@@ -18,9 +18,9 @@ ServerEvents.recipes(event => {
         {
         A: '#forge:nuggets/tin', 
         B: 'minecraft:andesite',
-        C: 'minecraft:dried_kelp'
+        C: 'botania:livingrock'
         }
     ).id('andesite_alloy_manual_only')
 
-    event.recipes.create.mixing('4x create:andesite_alloy', ['#forge:nuggets/tin','#forge:nuggets/tin','#forge:nuggets/tin','#forge:nuggets/tin','minecraft:andesite','minecraft:andesite','minecraft:andesite','minecraft:andesite','minecraft:dried_kelp'])
+    event.recipes.create.mixing('4x create:andesite_alloy', ['#forge:nuggets/tin','#forge:nuggets/tin','#forge:nuggets/tin','#forge:nuggets/tin','minecraft:andesite','minecraft:andesite','minecraft:andesite','minecraft:andesite','botania:livingrock'])
 })
