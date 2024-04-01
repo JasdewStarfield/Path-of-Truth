@@ -10,6 +10,8 @@
 	quests: [
 		{
 			id: "46156FBBDCAB4B1D"
+			shape: "gear"
+			size: 2.0d
 			subtitle: "自己动手，丰衣足食"
 			tasks: [{
 				id: "66B578110EFCF7EA"
@@ -18,21 +20,29 @@
 			}]
 			title: "从原始工具开始"
 			x: 0.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2F791EC2607066B4"]
+			dependency_requirement: "one_completed"
 			description: ["恭喜你初步摆脱了原始人阶段！"]
 			id: "0E41103FFC1FC96A"
 			subtitle: "转起来了，站起来了"
-			tasks: [{
-				id: "50B3A1CC2C49EEA3"
-				item: "create:water_wheel"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "50B3A1CC2C49EEA3"
+					item: "create:water_wheel"
+					type: "item"
+				}
+				{
+					id: "65A86CB9144A5B15"
+					item: "create:windmill_bearing"
+					type: "item"
+				}
+			]
 			title: "青铜时代，前进四！"
-			x: 0.0d
-			y: 2.0d
+			x: 2.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["46156FBBDCAB4B1D"]
@@ -44,11 +54,15 @@
 				type: "item"
 			}]
 			title: "原始人的金属"
-			x: -2.0d
+			x: -4.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3C34EE3C3BAB33EC"]
+			dependencies: [
+				"05A75CB67C986F21"
+				"489BC5567AF09228"
+				"06AA85338A57DB33"
+			]
 			description: [
 				"个人的力量来探究真理显然是难以为继的，所以你需要帮助。"
 				"比如，机械神教的力量。"
@@ -56,16 +70,16 @@
 			id: "177304E3D3C7EFC3"
 			subtitle: "这里不是龙傲天小说"
 			tasks: [{
-				id: "0636FAA1B978C3D7"
-				item: "create:andesite_alloy"
+				id: "2EC2F3324E9E5CAF"
+				item: "kubejs:raw_andesite_alloy"
 				type: "item"
 			}]
 			title: "人力终有尽头"
 			x: 0.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["177304E3D3C7EFC3"]
+			dependencies: ["7A6ADC4EE6686110"]
 			id: "2F791EC2607066B4"
 			subtitle: "地球在转。"
 			tasks: [
@@ -79,9 +93,266 @@
 					item: "create:cogwheel"
 					type: "item"
 				}
+				{
+					id: "56718A1465ABEB58"
+					item: "create:shaft"
+					type: "item"
+				}
 			]
 			title: "基本工具"
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["46156FBBDCAB4B1D"]
+			id: "05A75CB67C986F21"
+			tasks: [{
+				id: "0D891A9B01788793"
+				item: "simplemetals_tin:tin_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C34EE3C3BAB33EC"]
+			id: "05545789C11E97FE"
+			tasks: [{
+				id: "3A1A0025BA4364CE"
+				item: "minecraft:blast_furnace"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			id: "489BC5567AF09228"
+			tasks: [{
+				id: "7DA793B57D4A9855"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			id: "06AA85338A57DB33"
+			tasks: [{
+				id: "56A21895A51FA871"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
 			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"177304E3D3C7EFC3"
+				"05545789C11E97FE"
+			]
+			id: "7A6ADC4EE6686110"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "3D846FB73882E9B7"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0E41103FFC1FC96A"]
+			id: "27E166AF7BA5BDB1"
+			tasks: [
+				{
+					id: "71F611ED457CE3E5"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "2146F0E5E72D2172"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:plates"
+						}
+					}
+					title: "Any #forge:plates"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["27E166AF7BA5BDB1"]
+			id: "29B3F884515FC9DB"
+			tasks: [
+				{
+					id: "3F171A67419EAF9D"
+					item: "create:mechanical_mixer"
+					type: "item"
+				}
+				{
+					id: "233FD60B3A1D62F9"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0E41103FFC1FC96A"]
+			id: "4252F0F8AD1C5A60"
+			tasks: [{
+				id: "6B269D995C1F2D37"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4252F0F8AD1C5A60"]
+			id: "69864E61F37B2AA3"
+			tasks: [{
+				id: "6FA0C714DB1BC9CF"
+				item: "immersiveengineering:dust_copper"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["4252F0F8AD1C5A60"]
+			id: "5FAD02B13A64AB4C"
+			tasks: [{
+				id: "13F5B2387B8F5F88"
+				item: "kubejs:tin_dust"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 9.5d
+		}
+		{
+			dependencies: [
+				"29B3F884515FC9DB"
+				"69864E61F37B2AA3"
+				"5FAD02B13A64AB4C"
+			]
+			id: "3BECB3D53E17F80B"
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "69E0DF208053971B"
+					item: "kubejs:bronze_dust"
+					type: "item"
+				}
+				{
+					id: "08172036827B42C0"
+					item: "kubejs:bronze_ingot"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["29B3F884515FC9DB"]
+			id: "47C5992588416736"
+			shape: "diamond"
+			tasks: [{
+				id: "35E047601CEBCB29"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["3BECB3D53E17F80B"]
+			id: "40E4071636BA7BB1"
+			tasks: [
+				{
+					id: "353B0257275D6612"
+					item: {
+						Count: 1b
+						id: "kubejs:bronze_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0AF29D10ED04F9B1"
+					item: {
+						Count: 1b
+						id: "kubejs:bronze_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3F26BA4237D434C5"
+					item: {
+						Count: 1b
+						id: "kubejs:bronze_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "64B4C614B3F38622"
+					item: {
+						Count: 1b
+						id: "kubejs:bronze_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "13F716548484A9F8"
+					item: {
+						Count: 1b
+						id: "kubejs:bronze_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["46156FBBDCAB4B1D"]
+			icon: "minecraft:raw_iron"
+			id: "7D7F5D6CF26C1636"
+			tasks: [
+				{
+					id: "1009E3D7D476BC6F"
+					title: "噔 噔 咚"
+					type: "checkmark"
+				}
+				{
+					id: "6D4AFC5DECCC56A4"
+					item: "minecraft:raw_iron"
+					type: "item"
+				}
+			]
+			x: 5.0d
 			y: 0.0d
 		}
 	]

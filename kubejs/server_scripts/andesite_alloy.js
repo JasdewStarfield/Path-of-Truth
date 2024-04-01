@@ -9,18 +9,19 @@ ServerEvents.recipes(event => {
 
     //新配方
     event.shaped(
-        Item.of('create:andesite_alloy', 2),
+        Item.of('kubejs:raw_andesite_alloy', 2),
         [ 
         'ABA', 
         'BCB',
-        'ABA'  
+        'ABA'
         ],
         {
         A: '#forge:nuggets/tin', 
         B: 'minecraft:andesite',
         C: 'botania:livingrock'
         }
-    ).id('andesite_alloy_manual_only')
+    ).id('raw_andesite_alloy_manual_only')
 
-    event.recipes.create.mixing('4x create:andesite_alloy', ['#forge:nuggets/tin','#forge:nuggets/tin','#forge:nuggets/tin','#forge:nuggets/tin','minecraft:andesite','minecraft:andesite','minecraft:andesite','minecraft:andesite','botania:livingrock'])
+    event.recipes.create.mixing('4x kubejs:raw_andesite_alloy', ['#forge:nuggets/tin','#forge:nuggets/tin','#forge:nuggets/tin','#forge:nuggets/tin','minecraft:andesite','minecraft:andesite','minecraft:andesite','minecraft:andesite','botania:livingrock'])
+    event.blasting('create:andesite_alloy', 'kubejs:raw_andesite_alloy')
 })

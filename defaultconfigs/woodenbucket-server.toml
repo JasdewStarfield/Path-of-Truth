@@ -1,0 +1,19 @@
+
+["Balance Options"]
+	#Whether or not obtaining fish with a Wooden Bucket should be enabled.
+	fishObtainingEnabled = true
+	#Minimum temperature of fluid at which the Wooden Bucket breaks when emptied.
+	#Range: -10000 ~ 10000
+	crackingTemperature = 1000
+	#Whether or not milking entities with a Wooden Bucket should be enabled.
+	milkingEnabled = true
+	#Defines the maximum durability of a Wooden Bucket. (0 deactivates the durability)
+	#Range: 0 ~ 10000
+	durability = 25
+	#Fluid temperature from which you get a burning effect if a bucket contains this fluid.
+	#Range: -10000 ~ 10000
+	burningTemperature = 1000
+	#Fluid temperature from which you get a freezing effect if a bucket contains this fluid.
+	#Range: -10000 ~ 10000
+	freezingTemperature = -1
+

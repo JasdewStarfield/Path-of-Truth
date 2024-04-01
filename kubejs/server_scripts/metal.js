@@ -186,4 +186,7 @@ ServerEvents.recipes(event => {
     //石磨粉碎铜锭锡锭
     event.recipes.create.milling(Item.of('kubejs:tin_dust').withChance(0.5), '#forge:ingots/tin')
     event.recipes.create.milling(Item.of('immersiveengineering:dust_copper').withChance(0.5), '#forge:ingots/copper')
+
+    event.remove({id:/alloyed\.*/})
+    event.recipes.create.mixing('kubejs:bronze_ingot', ['#forge:ingots/tin','#forge:ingots/copper','#forge:ingots/copper','#forge:ingots/copper']).heated()
 })

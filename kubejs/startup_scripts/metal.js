@@ -1,6 +1,6 @@
 StartupEvents.registry('item', (event) => {
   //青铜一套
-  event.create("bronze_dust").displayName('Bronze Dust')
+  event.create("bronze_dust").displayName('Bronze Grit')
   event.create("bronze_ingot").displayName('Bronze Ingot')
   event.create("bronze_nugget").displayName('Bronze Nugget')
   event.create("bronze_sheet").displayName('Bronze Sheet')
@@ -19,8 +19,11 @@ StartupEvents.registry('item', (event) => {
   */
 
   //补充：锌粉，锡粉
-  event.create("zinc_dust")
-  event.create("tin_dust")
+  event.create("zinc_dust").displayName('Zinc Grit')
+  event.create("tin_dust").displayName('Tin Grit')
+
+  //粗安山合金
+  event.create("raw_andesite_alloy").displayName('Raw Andesite Alloy')
 })
 
 StartupEvents.registry('block', (event) => {
@@ -34,6 +37,7 @@ StartupEvents.registry('block', (event) => {
 		.requiresTool(true)
 		.tagBlock("mineable/pickaxe")
 		.tagBlock("minecraft:needs_stone_tool")
+    .tagItem("forge:storage_blocks")
     .tagItem("forge:storage_blocks/bronze")
 		.opaque(true)
 		.fullBlock(true)
