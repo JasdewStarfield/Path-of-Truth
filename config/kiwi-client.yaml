@@ -5,7 +5,7 @@ globalTooltip: false
 noMicrosoftTelemetry: true
 debug:
   tagsTooltip: true
-  debugTooltipMsg: true
+  debugTooltipMsg: false
   tagsTooltipAppendKeybindHint: true
   tagsPerPage: 6
   NBTTooltip: true
