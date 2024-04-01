@@ -26,18 +26,37 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["374C430D0AD70D2E"]
+			description: [
+				"所以你需要寻求自然中的力量——"
+				"比如找找那些地上的和地下的朋友。"
+			]
+			icon: "botania:cosmetic_botanist_emblem"
 			id: "788F3EC85AC1172E"
-			subtitle: "看看台子和水面。"
-			tasks: [{
-				id: "59A31B2BD0665A8D"
-				item: "botania:apothecary_default"
-				type: "item"
-			}]
+			subtitle: "个人的能力终究有限。"
+			tasks: [
+				{
+					id: "59A31B2BD0665A8D"
+					item: "botania:apothecary_default"
+					type: "item"
+				}
+				{
+					id: "741C8144EDDAB0E9"
+					item: "botania:lexicon"
+					type: "item"
+				}
+				{
+					id: "6699E477287E0D16"
+					item: "botania:pure_daisy"
+					type: "item"
+				}
+			]
 			title: "外在的帮助"
 			x: -2.0d
 			y: 0.0d
 		}
 		{
+			dependencies: ["374C430D0AD70D2E"]
 			id: "28A1C39EF1446334"
 			subtitle: "你是一位法师。"
 			tasks: [{
@@ -59,6 +78,23 @@
 			title: "内心的力量"
 			x: 2.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["28A1C39EF1446334"]
+			description: [
+				"你需要一套自己的衣服）"
+				"所以，先从布料开始吧）"
+			]
+			id: "5F5CA37CCE531CAA"
+			subtitle: "喔，你最好是不要光溜溜的到处跑"
+			tasks: [{
+				id: "03B305793FF64434"
+				item: "irons_spellbooks:magic_cloth"
+				type: "item"
+			}]
+			title: "保护自己"
+			x: 0.0d
+			y: 2.0d
 		}
 	]
 	title: "原始萨满"
