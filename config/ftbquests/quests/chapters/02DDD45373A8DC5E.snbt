@@ -67,6 +67,7 @@
 			description: [
 				"个人的力量来探究真理显然是难以为继的，所以你需要帮助。"
 				"比如，机械神教的力量。"
+				"所以，从粗制安山合金开始你的工作吧）"
 			]
 			id: "177304E3D3C7EFC3"
 			subtitle: "这里不是龙傲天小说"
@@ -181,6 +182,7 @@
 		{
 			dependencies: ["0E41103FFC1FC96A"]
 			id: "27E166AF7BA5BDB1"
+			subtitle: "压下去就对了"
 			tasks: [
 				{
 					id: "71F611ED457CE3E5"
@@ -206,7 +208,12 @@
 		}
 		{
 			dependencies: ["27E166AF7BA5BDB1"]
+			description: [
+				"来一点飞速旋转的齿轮，然后你就可以看到工作盆里的粉末飞溅了）"
+				"加油，青铜在前方等着你"
+			]
 			id: "29B3F884515FC9DB"
+			subtitle: "快一点，再快一点"
 			tasks: [
 				{
 					id: "3F171A67419EAF9D"
@@ -219,6 +226,7 @@
 					type: "item"
 				}
 			]
+			title: "机械混合"
 			x: 0.0d
 			y: 9.5d
 		}
@@ -285,18 +293,6 @@
 			title: "钟鸣鼎食"
 			x: 0.0d
 			y: 12.0d
-		}
-		{
-			dependencies: ["29B3F884515FC9DB"]
-			id: "47C5992588416736"
-			shape: "diamond"
-			tasks: [{
-				id: "35E047601CEBCB29"
-				item: "create:andesite_alloy"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 9.5d
 		}
 		{
 			dependencies: ["3BECB3D53E17F80B"]

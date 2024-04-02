@@ -40,6 +40,7 @@
 				item: "botania:flower_bag"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "个人的能力终究有限。"
 			tasks: [
 				{
@@ -97,6 +98,7 @@
 				}
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "你是一位法师。"
 			tasks: [{
 				id: "150978E8B38FB4B1"
@@ -123,6 +125,7 @@
 			description: [
 				"你需要一套自己的衣服）"
 				"所以，先从布料开始吧）"
+				"但目前你做不了太好的护甲——因为有金属需求！"
 			]
 			id: "5F5CA37CCE531CAA"
 			subtitle: "喔，你最好是不要光溜溜的到处跑"
@@ -133,7 +136,7 @@
 			}]
 			title: "保护自己"
 			x: 2.0d
-			y: 1.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["788F3EC85AC1172E"]
@@ -141,6 +144,7 @@
 				"你会发现活石可以催化一些工业的原料。"
 				"至于活木，它是很好的魔力载体。"
 			]
+			icon: "botania:light_relay"
 			id: "735172F79325756F"
 			rewards: [{
 				id: "10ACEE589E13F8C0"
@@ -163,6 +167,168 @@
 			title: "活化生命"
 			x: -2.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["28A1C39EF1446334"]
+			description: [
+				"在铁魔法的机制中，如果你不希望通过快捷键而是右键直接施法，只有法杖能帮你完成这一任务。"
+				"所以，来一根大棒子罢）"
+			]
+			id: "4A9552BDD5C05A42"
+			subtitle: "右键施法多是一件美事"
+			tasks: [{
+				id: "5E91EFB09DC2DA55"
+				item: "irons_spellbooks:graybeard_staff"
+				type: "item"
+			}]
+			title: "大棒子"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["788F3EC85AC1172E"]
+			description: [
+				"魔力，一种来自世界的力量，然而需要你用等价的事项来进行转化。"
+				"所有的产魔花朵都需要金属核心，越高级的花朵核心所用的金属越难以获得，所以这部分你需要寻求工业的帮助。当然，产魔的材料最好也用工业处理！"
+				"*小声：虽然一开始你大概率只能手动"
+			]
+			icon: "botania:animated_torch"
+			id: "7FB5C93F2487B215"
+			rewards: [{
+				id: "2E0F7F1C8E717B42"
+				item: "botania:obedience_stick"
+				type: "item"
+			}]
+			subtitle: "嗯……魔力怎么不算电力呢"
+			tasks: [
+				{
+					id: "21BC6ADDDE4D8471"
+					item: "botania:endoflame"
+					type: "item"
+				}
+				{
+					id: "1107871A65440B70"
+					item: "botania:mana_pool"
+					type: "item"
+				}
+				{
+					id: "3522A823EFB02517"
+					item: "botania:mana_spreader"
+					type: "item"
+				}
+			]
+			title: "“火力发电机”"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"7FB5C93F2487B215"
+				"735172F79325756F"
+			]
+			description: [
+				"你会发现血魔法祭坛你拿到之后其实是用不了的——因为你没有提供血液的方式。"
+				"如果你希望为祭坛供血，那你需要一把牺牲匕首——但这显然需要工业金属。"
+				"所以，先看看植物魔法的符文吧）"
+			]
+			icon: "botania:creative_pool"
+			id: "427145081CA922B6"
+			subtitle: "作为萨满搞两个祭坛很合理吧"
+			tasks: [
+				{
+					id: "72FF252286D78F58"
+					item: "botania:runic_altar"
+					type: "item"
+				}
+				{
+					id: "29CD34D7845ADD40"
+					item: "bloodmagic:altar"
+					type: "item"
+				}
+			]
+			title: "祭祀的开端"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4A9552BDD5C05A42"
+				"5F5CA37CCE531CAA"
+			]
+			description: ["但显然，你需要付出一些努力才能获得这份盔甲）"]
+			icon: "irons_spellbooks:arcane_rune"
+			id: "2C9D0B8EB811DFCA"
+			rewards: [{
+				id: "1A3303A074B8E1B0"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:recall"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "法术也会给你保护自己的方式"
+			tasks: [
+				{
+					id: "56442FA7BB5BAF69"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:wandering_magician_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "35D89B1CE00DB77A"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:wandering_magician_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3E84AB2E0CBF60E2"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:wandering_magician_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "633A4F71C72FB5CC"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:wandering_magician_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "成为流浪法师"
+			x: 4.0d
+			y: 0.0d
 		}
 	]
 	title: "原始萨满"

@@ -17,7 +17,15 @@ event.shaped(Item.of('名字',数量),
     }
 )
 */
-
+/*
+替换配方系列
+event.replaceInput({mod:'模组名',output:'输出产物'},
+    '要被替换的物品名' , '要替换成的物品名')
+*/
+/*
+删除配方：
+event.remove({id:'名字'})
+*/
 /*
 植物魔法系列配方记录：
 onEvent("recipes", event => {
@@ -25,14 +33,14 @@ onEvent("recipes", event => {
     event.remove({ output: "botania:livingrock" })
 
     //法力充能
-    event.recipes.botania.mana_infusion("minecraft:acacia_boat", "minecraft:acacia_door", 200, "minecraft:acacia_log")
+    event.recipes.botania.mana_infusion("产出物", "原材料", 200, "下方催化方块")
     //精灵门交换
     event.recipes.botania.elven_trade(["minecraft:acacia_boat"], "minecraft:diamond")
     event.recipes.botania.elven_trade(["minecraft:acacia_boat", "minecraft:acacia_button"], ["minecraft:diamond_block", "minecraft:gold_ingot"])
     //白雏菊转化
     event.recipes.botania.pure_daisy("minecraft:acacia_button", "minecraft:acacia_leaves")
     event.recipes.botania.pure_daisy("minecraft:acacia_button", "minecraft:stone", 1)
-    //？
+    //植物炼药台
     event.recipes.botania.brew("kubejs:torrent", ["minecraft:acacia_boat"])
     //花药台合成
     event.recipes.botania.petal_apothecary("minecraft:acacia_boat", ["minecraft:acacia_button"])
