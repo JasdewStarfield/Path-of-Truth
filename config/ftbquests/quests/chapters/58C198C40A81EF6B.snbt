@@ -15,6 +15,7 @@
 			]
 			icon: "minecraft:chest"
 			id: "374C430D0AD70D2E"
+			shape: "octagon"
 			subtitle: "有的时候你需要看看大自然的馈赠"
 			tasks: [{
 				id: "6E5FCD00F7C67EA4"
@@ -30,9 +31,15 @@
 			description: [
 				"所以你需要寻求自然中的力量——"
 				"比如找找那些地上的和地下的朋友。"
+				"由于没有铁，你可以先用木头装水）"
 			]
 			icon: "botania:cosmetic_botanist_emblem"
 			id: "788F3EC85AC1172E"
+			rewards: [{
+				id: "3F3621978CB3318B"
+				item: "botania:flower_bag"
+				type: "item"
+			}]
 			subtitle: "个人的能力终究有限。"
 			tasks: [
 				{
@@ -50,14 +57,46 @@
 					item: "botania:pure_daisy"
 					type: "item"
 				}
+				{
+					id: "35B1398FEE514782"
+					item: {
+						Count: 1b
+						id: "woodenbucket:wooden_bucket"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "外在的帮助"
-			x: -2.0d
-			y: 0.0d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
 			id: "28A1C39EF1446334"
+			rewards: [{
+				id: "300AC1A510B03C11"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:magic_missile"
+								index: 0
+								level: 3
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "你是一位法师。"
 			tasks: [{
 				id: "150978E8B38FB4B1"
@@ -76,8 +115,8 @@
 				type: "item"
 			}]
 			title: "内心的力量"
-			x: 2.0d
-			y: 0.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["28A1C39EF1446334"]
@@ -93,8 +132,37 @@
 				type: "item"
 			}]
 			title: "保护自己"
-			x: 0.0d
-			y: 2.0d
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["788F3EC85AC1172E"]
+			description: [
+				"你会发现活石可以催化一些工业的原料。"
+				"至于活木，它是很好的魔力载体。"
+			]
+			id: "735172F79325756F"
+			rewards: [{
+				id: "10ACEE589E13F8C0"
+				item: "kubejs:raw_andesite_alloy"
+				type: "item"
+			}]
+			subtitle: "在纯洁的白雏菊帮助下……"
+			tasks: [
+				{
+					id: "1959A768803842EB"
+					item: "botania:livingwood_log"
+					type: "item"
+				}
+				{
+					id: "3A8BA784740F45BD"
+					item: "botania:livingrock"
+					type: "item"
+				}
+			]
+			title: "活化生命"
+			x: -2.0d
+			y: -1.0d
 		}
 	]
 	title: "原始萨满"

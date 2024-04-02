@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: ["不管干什么，你总归需要从工作台开始的，对吧）"]
 			id: "46156FBBDCAB4B1D"
 			shape: "gear"
 			size: 2.0d
@@ -105,12 +106,15 @@
 		}
 		{
 			dependencies: ["46156FBBDCAB4B1D"]
+			description: ["很符合原始人的身份，不是吗？"]
 			id: "05A75CB67C986F21"
+			subtitle: "一种很容易融化成液体的材料"
 			tasks: [{
 				id: "0D891A9B01788793"
 				item: "simplemetals_tin:tin_ingot"
 				type: "item"
 			}]
+			title: "容易融化"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -126,22 +130,30 @@
 			y: 2.0d
 		}
 		{
+			description: [
+				"想要把普通的材料变成安山合金，你需要一点小小的……催化剂）"
+				"它并不难获得，甚至可以说无穷无尽，但需要一点你的耐心。"
+			]
 			id: "489BC5567AF09228"
+			subtitle: "是的，这个世界不只需要科技"
 			tasks: [{
 				id: "7DA793B57D4A9855"
 				item: "botania:livingrock"
 				type: "item"
 			}]
+			title: "魔法之力"
 			x: -2.0d
 			y: 0.0d
 		}
 		{
 			id: "06AA85338A57DB33"
+			subtitle: "是的，从石头干起"
 			tasks: [{
 				id: "56A21895A51FA871"
 				item: "minecraft:andesite"
 				type: "item"
 			}]
+			title: "安山科技"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -150,9 +162,14 @@
 				"177304E3D3C7EFC3"
 				"05545789C11E97FE"
 			]
+			description: [
+				"终于，你获得了一些可以用来干活的金属。"
+				"遗憾的是，它们不能为你制造护甲和工具，也许你得想想别的办法？"
+			]
 			id: "7A6ADC4EE6686110"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "科技的起始"
 			tasks: [{
 				id: "3D846FB73882E9B7"
 				item: "create:andesite_alloy"
@@ -183,6 +200,7 @@
 					type: "item"
 				}
 			]
+			title: "Duang！"
 			x: -2.0d
 			y: 9.5d
 		}
@@ -206,46 +224,52 @@
 		}
 		{
 			dependencies: ["0E41103FFC1FC96A"]
+			description: [
+				"有些东西需要你通过早期手段来处理。"
+				"你可以用石磨磨面粉——也可以用它粉碎一些相对脆弱的金属。"
+			]
 			id: "4252F0F8AD1C5A60"
+			subtitle: "当然，你没有粉碎轮"
 			tasks: [{
 				id: "6B269D995C1F2D37"
 				item: "create:millstone"
 				type: "item"
 			}]
+			title: "粉碎性打击"
 			x: 4.5d
 			y: 7.0d
 		}
 		{
 			dependencies: ["4252F0F8AD1C5A60"]
 			id: "69864E61F37B2AA3"
-			tasks: [{
-				id: "6FA0C714DB1BC9CF"
-				item: "immersiveengineering:dust_copper"
-				type: "item"
-			}]
+			subtitle: "铜和锡，三比一"
+			tasks: [
+				{
+					id: "6FA0C714DB1BC9CF"
+					item: "immersiveengineering:dust_copper"
+					type: "item"
+				}
+				{
+					id: "7D32C7D35BBDC475"
+					item: "kubejs:tin_dust"
+					type: "item"
+				}
+			]
+			title: "至关重要的粉末"
 			x: 4.5d
-			y: 9.5d
-		}
-		{
-			dependencies: ["4252F0F8AD1C5A60"]
-			id: "5FAD02B13A64AB4C"
-			tasks: [{
-				id: "13F5B2387B8F5F88"
-				item: "kubejs:tin_dust"
-				type: "item"
-			}]
-			x: 7.0d
 			y: 9.5d
 		}
 		{
 			dependencies: [
 				"29B3F884515FC9DB"
 				"69864E61F37B2AA3"
-				"5FAD02B13A64AB4C"
 			]
+			description: ["现在你掌握了青铜的冶炼技术，也就是说，你可以制作一些相对趁手的——石头以上的——工具了。"]
+			icon: "kubejs:bronze_dust"
 			id: "3BECB3D53E17F80B"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "你好，商朝人"
 			tasks: [
 				{
 					id: "69E0DF208053971B"
@@ -258,6 +282,7 @@
 					type: "item"
 				}
 			]
+			title: "钟鸣鼎食"
 			x: 0.0d
 			y: 12.0d
 		}
@@ -276,6 +301,7 @@
 		{
 			dependencies: ["3BECB3D53E17F80B"]
 			id: "40E4071636BA7BB1"
+			subtitle: "嘿伙计，我想你需要一些工具"
 			tasks: [
 				{
 					id: "353B0257275D6612"
@@ -333,13 +359,19 @@
 					type: "item"
 				}
 			]
+			title: "生存的必要手段"
 			x: -2.0d
 			y: 12.0d
 		}
 		{
 			dependencies: ["46156FBBDCAB4B1D"]
+			description: [
+				"你会惊讶的发现，在这个包里，炼铁需要更高的技术力）"
+				"所以你需要从青铜时代开始——并构建自己的高炉来解决铁的问题。"
+			]
 			icon: "minecraft:raw_iron"
 			id: "7D7F5D6CF26C1636"
+			subtitle: "老铁，我请问呢？"
 			tasks: [
 				{
 					id: "1009E3D7D476BC6F"
