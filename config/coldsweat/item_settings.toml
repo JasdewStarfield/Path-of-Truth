@@ -1,0 +1,62 @@
+
+["Fuel Items"]
+	#Defines items that can be used as fuel
+	#Format: [["item-id-1", amount-1], ["item-id-2", amount-2], ...etc]
+	Boiler = [["#minecraft:planks", 10], ["minecraft:coal", 37], ["minecraft:charcoal", 37], ["#minecraft:logs_that_burn", 37], ["minecraft:coal_block", 333], ["minecraft:magma_block", 333], ["minecraft:lava_bucket", 1000]]
+	Icebox = [["minecraft:snowball", 37], ["minecraft:clay_ball", 37], ["minecraft:snow_block", 333], ["minecraft:ice", 333], ["minecraft:clay", 333], ["minecraft:powder_snow_bucket", 333], ["minecraft:water_bucket", 1000], ["minecraft:packed_ice", 1000]]
+	#Negative values indicate cold fuel
+	Hearth = [["#minecraft:planks", 10], ["minecraft:coal", 37], ["minecraft:charcoal", 37], ["#minecraft:logs_that_burn", 37], ["minecraft:coal_block", 333], ["minecraft:magma_block", 333], ["minecraft:lava_bucket", 1000], ["minecraft:snowball", -37], ["minecraft:clay_ball", -37], ["minecraft:snow_block", -333], ["minecraft:ice", -333], ["minecraft:clay", -333], ["minecraft:powder_snow_bucket", -333], ["minecraft:water_bucket", -1000], ["minecraft:packed_ice", -1000]]
+	#Potions containing any of these effects will not be allowed in the hearth
+	#Format: ["effect_id", "effect_id", ...etc]
+	"Blacklisted Hearth Potions" = ["minecraft:instant_damage", "minecraft:poison", "minecraft:wither", "minecraft:weakness", "minecraft:mining_fatigue", "minecraft:slowness"]
+	#If true, potions can be used as fuel in the hearth
+	#This gives all players in range the potion effect
+	"Allow Potions in Hearth" = true
+
+["Soulspring Lamp"]
+	#Defines items that the Soulspring Lamp can use as fuel
+	#Format: [["item-id-1", amount-1], ["item-id-2", amount-2], ...etc]
+	"Fuel Items" = [["cold_sweat:soul_sprout", 4.0, "{}"]]
+	#Defines the dimensions that the Soulspring Lamp can be used in
+	#Format: ["dimension-id-1", "dimension-id-2", ...etc]
+	"Valid Dimensions" = ["minecraft:the_nether"]
+
+[Insulation]
+	#Defines the items that can be used for insulating armor in the Sewing Table
+	#Format: [["item_id", cold, hot, "static", *nbt], ["item_id", amount, adapt-speed, "adaptive", *nbt], ...etc]
+	#"item_id": The item's ID (i.e. "minecraft:iron_ingot"). Accepts tags with "#" (i.e. "#minecraft:wool").
+	#
+	#Adaptive Insulation: 
+	#"amount": The amount of insulation the item provides.
+	#"adapt-speed": The speed at which the insulation adapts to the environment.
+	#*"type": Optional. Either "static" or "adaptive". Defines the insulation type. Defaults to static.
+	#*"nbt": Optional. If set, the item will only provide insulation if it has the specified NBT tag.
+	#
+	#Static Insulation: 
+	#"cold": The amount of cold insulation the item provides.
+	#"hot": The amount of heat insulation the item provides.
+	#*"type": Optional. Either "static" or "adaptive". Defines the insulation type. Defaults to static.
+	#*"nbt": Optional. If set, the item will only provide insulation if it has the specified NBT tag.
+	"Insulation Ingredients" = [["minecraft:leather_boots"], ["cold_sweat:fur"], ["cold_sweat:fur_cap"], ["minecraft:leather_helmet"], ["minecraft:white_wool"], ["minecraft:rabbit_hide"], ["cold_sweat:hoglin_trousers"], ["cold_sweat:hoglin_tunic"], ["minecraft:gray_wool"], ["minecraft:leather_chestplate"], ["cold_sweat:hoglin_headpiece"], ["cold_sweat:fur_boots"], ["minecraft:orange_wool"], ["minecraft:brown_wool"], ["minecraft:cyan_wool"], ["cold_sweat:hoglin_hooves"], ["minecraft:red_wool"], ["cold_sweat:hoglin_hide"], ["minecraft:purple_wool"], ["minecraft:blue_wool"], ["minecraft:black_wool"], ["minecraft:magenta_wool"], ["minecraft:pink_wool"], ["minecraft:light_blue_wool"], ["cold_sweat:fur_pants"], ["minecraft:leather"], ["minecraft:light_gray_wool"], ["cold_sweat:fur_parka"], ["cold_sweat:chameleon_molt"], ["minecraft:yellow_wool"], ["minecraft:lime_wool"], ["minecraft:green_wool"], ["minecraft:leather_leggings"]]
+	#Defines the items that provide insulation when worn
+	#See Insulation Ingredients for formatting
+	"Insulating Armor" = [["create:netherite_backtank", 0.0, 1998.0, "static", "{}"], ["create:netherite_diving_boots", 0.0, 1998.0, "static", "{}"], ["minecraft:netherite_leggings", 0.0, 1998.0, "static", "{}"], ["create:netherite_diving_helmet", 0.0, 1998.0, "static", "{}"]]
+	#Defines the items that provide insulation when worn in a curio slot
+	#See Insulation Ingredients for formatting
+	"Insulating Curios" = []
+	#Defines how many insulation slots armor pieces have
+	#Format: [head, chest, legs, feet]
+	"Insulation Slots" = [4, 6, 5, 4]
+	#Defines wearable items that cannot be insulated
+	#Format: ["item_id", "item_id", ...etc]
+	"Insulation Blacklist" = []
+
+[Consumables]
+	#Defines items that affect the player's temperature when consumed
+	#Format: [["item_id", amount], ["item_id", amount], ...etc]
+	#Negative values are cold foods, positive values are hot foods
+	"Temperature-Affecting Foods" = []
+	#Defines how much a waterskin will change the player's body temperature by when used
+	#Range: > 0
+	"Waterskin Strength" = 50
+

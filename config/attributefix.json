@@ -11,28 +11,6 @@
         "value": 512
       }
     },
-    "irons_spellbooks:ender_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
-    "irons_spellbooks:holy_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "minecraft:generic.follow_range": {
       "enabled": true,
       "min": {
@@ -44,40 +22,7 @@
         "value": 2048
       }
     },
-    "forge:nametag_distance": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 64,
-        "value": 64
-      }
-    },
-    "irons_spellbooks:blood_magic_resist": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "irons_spellbooks:nature_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
-    "irons_spellbooks:evocation_magic_resist": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -99,15 +44,15 @@
         "value": 8
       }
     },
-    "forge:block_reach": {
+    "cold_sweat:base_temperature": {
       "enabled": false,
       "min": {
-        "default": 0,
-        "value": 0
+        "default": NaN,
+        "value": NaN
       },
       "max": {
-        "default": 1024,
-        "value": 1024
+        "default": Infinity,
+        "value": Infinity
       }
     },
     "irons_spellbooks:nature_magic_resist": {
@@ -143,26 +88,15 @@
         "value": 10
       }
     },
-    "minecraft:generic.attack_speed": {
-      "enabled": true,
+    "cold_sweat:heat_resistance": {
+      "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
-    "minecraft:generic.attack_damage": {
-      "enabled": true,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 2048,
-        "value": 1000000
+        "default": 1,
+        "value": 1
       }
     },
     "minecraft:generic.luck": {
@@ -176,51 +110,7 @@
         "value": 1024
       }
     },
-    "irons_spellbooks:ender_magic_resist": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
-    "minecraft:generic.armor": {
-      "enabled": true,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 30,
-        "value": 1000000
-      }
-    },
-    "irons_spellbooks:evocation_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
     "irons_spellbooks:fire_spell_power": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
-      }
-    },
-    "irons_spellbooks:blood_spell_power": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -253,15 +143,15 @@
         "value": 10
       }
     },
-    "minecraft:generic.flying_speed": {
-      "enabled": true,
+    "cold_sweat:cold_dampening": {
+      "enabled": false,
       "min": {
-        "default": 0,
-        "value": 0
+        "default": -Infinity,
+        "value": -Infinity
       },
       "max": {
-        "default": 1024,
-        "value": 1024
+        "default": 1,
+        "value": 1
       }
     },
     "diet:natural_regeneration": {
@@ -286,7 +176,18 @@
         "value": 10
       }
     },
-    "irons_spellbooks:lightning_spell_power": {
+    "irons_spellbooks:cooldown_reduction": {
+      "enabled": false,
+      "min": {
+        "default": -10,
+        "value": -10
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "irons_spellbooks:spell_power": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -297,11 +198,253 @@
         "value": 10
       }
     },
-    "irons_spellbooks:cooldown_reduction": {
+    "cold_sweat:heat_dampening": {
       "enabled": false,
       "min": {
-        "default": -10,
-        "value": -10
+        "default": -Infinity,
+        "value": -Infinity
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "minecraft:zombie.spawn_reinforcements": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1,
+        "value": 1
+      }
+    },
+    "irons_spellbooks:ice_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "minecraft:generic.attack_knockback": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 5,
+        "value": 1000000
+      }
+    },
+    "cold_sweat:freezing_point": {
+      "enabled": false,
+      "min": {
+        "default": -Infinity,
+        "value": -Infinity
+      },
+      "max": {
+        "default": Infinity,
+        "value": Infinity
+      }
+    },
+    "forge:swim_speed": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "minecraft:generic.armor_toughness": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 20,
+        "value": 1000000
+      }
+    },
+    "irons_spellbooks:fire_magic_resist": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "irons_spellbooks:ender_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "irons_spellbooks:holy_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "forge:nametag_distance": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 64,
+        "value": 64
+      }
+    },
+    "irons_spellbooks:blood_magic_resist": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "irons_spellbooks:evocation_magic_resist": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "forge:block_reach": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "minecraft:generic.attack_speed": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "minecraft:generic.attack_damage": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 2048,
+        "value": 1000000
+      }
+    },
+    "irons_spellbooks:ender_magic_resist": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "cold_sweat:world_temperature": {
+      "enabled": false,
+      "min": {
+        "default": NaN,
+        "value": NaN
+      },
+      "max": {
+        "default": Infinity,
+        "value": Infinity
+      }
+    },
+    "minecraft:generic.armor": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 30,
+        "value": 1000000
+      }
+    },
+    "irons_spellbooks:evocation_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "irons_spellbooks:blood_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 10,
+        "value": 10
+      }
+    },
+    "minecraft:generic.flying_speed": {
+      "enabled": true,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
+      }
+    },
+    "irons_spellbooks:lightning_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
       },
       "max": {
         "default": 10,
@@ -330,15 +473,15 @@
         "value": 1
       }
     },
-    "irons_spellbooks:spell_power": {
+    "cold_sweat:cold_resistance": {
       "enabled": false,
       "min": {
         "default": 0,
         "value": 0
       },
       "max": {
-        "default": 10,
-        "value": 10
+        "default": 1,
+        "value": 1
       }
     },
     "botania:pixie_spawn_chance": {
@@ -385,29 +528,18 @@
         "value": 10
       }
     },
-    "irons_spellbooks:ice_magic_resist": {
+    "cold_sweat:burning_point": {
       "enabled": false,
       "min": {
-        "default": 0,
-        "value": 0
+        "default": -Infinity,
+        "value": -Infinity
       },
       "max": {
-        "default": 10,
-        "value": 10
+        "default": Infinity,
+        "value": Infinity
       }
     },
-    "minecraft:zombie.spawn_reinforcements": {
-      "enabled": true,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1,
-        "value": 1
-      }
-    },
-    "irons_spellbooks:ice_spell_power": {
+    "irons_spellbooks:ice_magic_resist": {
       "enabled": false,
       "min": {
         "default": 0,
@@ -427,28 +559,6 @@
       "max": {
         "default": 2,
         "value": 2
-      }
-    },
-    "minecraft:generic.attack_knockback": {
-      "enabled": true,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 5,
-        "value": 1000000
-      }
-    },
-    "forge:swim_speed": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
       }
     },
     "irons_spellbooks:max_mana": {
@@ -471,28 +581,6 @@
       "max": {
         "default": 1,
         "value": 1
-      }
-    },
-    "minecraft:generic.armor_toughness": {
-      "enabled": true,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 20,
-        "value": 1000000
-      }
-    },
-    "irons_spellbooks:fire_magic_resist": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 10,
-        "value": 10
       }
     }
   }

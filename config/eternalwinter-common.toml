@@ -1,0 +1,10 @@
+#If BLACKLIST, the list below will be treated as a blacklist what not to touch.
+#If WHITELIST, the will be treated as a whitelist what biomes should only be touched
+#Allowed Values: WHITELIST, BLACKLIST
+listMode = "BLACKLIST"
+#The blacklist or whitelist, depending on listMode
+biomeList = ["river", "ocean", "deep_ocean", "warm_ocean", "lukewarm_ocean", "cold_ocean", "deep_warm_ocean", "deep_lukewarm_ocean", "deep_cold_ocean", "deep_frozen_ocean"]
+#The downfall value each biome should get. If -1, EternalWinter will keep the original downfall of the biome, otherwise it takes a value between 0 and 1
+#Range: -1.0 ~ 1.0
+downfall = -1.0
+
