@@ -67,7 +67,6 @@
 			description: [
 				"个人的力量来探究真理显然是难以为继的，所以你需要帮助。"
 				"比如，机械神教的力量。"
-				"所以，从粗制安山合金开始你的工作吧）"
 			]
 			id: "177304E3D3C7EFC3"
 			subtitle: "这里不是龙傲天小说"
@@ -102,7 +101,7 @@
 				}
 			]
 			title: "基本工具"
-			x: -2.0d
+			x: 0.0d
 			y: 7.0d
 		}
 		{
@@ -131,6 +130,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["735172F79325756F"]
 			description: [
 				"想要把普通的材料变成安山合金，你需要一点小小的……催化剂）"
 				"它并不难获得，甚至可以说无穷无尽，但需要一点你的耐心。"
@@ -182,7 +182,6 @@
 		{
 			dependencies: ["0E41103FFC1FC96A"]
 			id: "27E166AF7BA5BDB1"
-			subtitle: "压下去就对了"
 			tasks: [
 				{
 					id: "71F611ED457CE3E5"
@@ -203,17 +202,12 @@
 				}
 			]
 			title: "Duang！"
-			x: -2.0d
-			y: 9.5d
+			x: -2.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["27E166AF7BA5BDB1"]
-			description: [
-				"来一点飞速旋转的齿轮，然后你就可以看到工作盆里的粉末飞溅了）"
-				"加油，青铜在前方等着你"
-			]
 			id: "29B3F884515FC9DB"
-			subtitle: "快一点，再快一点"
 			tasks: [
 				{
 					id: "3F171A67419EAF9D"
@@ -226,9 +220,8 @@
 					type: "item"
 				}
 			]
-			title: "机械混合"
 			x: 0.0d
-			y: 9.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["0E41103FFC1FC96A"]
@@ -265,7 +258,7 @@
 			]
 			title: "至关重要的粉末"
 			x: 4.5d
-			y: 9.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -293,6 +286,18 @@
 			title: "钟鸣鼎食"
 			x: 0.0d
 			y: 12.0d
+		}
+		{
+			dependencies: ["29B3F884515FC9DB"]
+			id: "47C5992588416736"
+			shape: "diamond"
+			tasks: [{
+				id: "35E047601CEBCB29"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 9.0d
 		}
 		{
 			dependencies: ["3BECB3D53E17F80B"]
@@ -382,6 +387,27 @@
 			]
 			x: 5.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["7A6ADC4EE6686110"]
+			id: "50BB17FEED3B10D2"
+			tasks: [{
+				id: "627EF45054EFDE2B"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 7.0d
+		}
+		{
+			id: "2D883E21C72F5947"
+			tasks: [{
+				id: "05E64F6FA96B65F7"
+				item: "immersiveengineering:light_engineering"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 9.0d
 		}
 	]
 	title: "青铜时代"
