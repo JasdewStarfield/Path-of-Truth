@@ -188,8 +188,13 @@
 				"0E41103FFC1FC96A"
 				"2D883E21C72F5947"
 			]
+			description: [
+				"工业的第一步是物理加工，所以你需要压几块板子。"
+				"而为了压板子，辊压机自然是必不可少的。"
+			]
 			icon: "create:mechanical_press"
 			id: "27E166AF7BA5BDB1"
+			subtitle: "你铁砧临头了（确信"
 			tasks: [
 				{
 					id: "71F611ED457CE3E5"
@@ -215,7 +220,12 @@
 		}
 		{
 			dependencies: ["27E166AF7BA5BDB1"]
+			description: [
+				"通过工业手段，你可以在工作盆里批量混合和组装物品。"
+				"这也是工业优于魔法的一点（确信"
+			]
 			id: "29B3F884515FC9DB"
+			subtitle: "在大缸里通过搅拌产生神秘物质"
 			tasks: [
 				{
 					id: "3F171A67419EAF9D"
@@ -228,6 +238,7 @@
 					type: "item"
 				}
 			]
+			title: "工业化女巫"
 			x: 0.0d
 			y: 10.5d
 		}
@@ -300,11 +311,13 @@
 			description: ["利用搅拌，你可以以更经济的方式倍增安山合金的产率！"]
 			id: "47C5992588416736"
 			shape: "diamond"
+			subtitle: "冒泡泡，冒泡泡"
 			tasks: [{
 				id: "4CFECA6BDF000DA8"
 				item: "kubejs:raw_andesite_alloy"
 				type: "item"
 			}]
+			title: "另一种生产方式"
 			x: 1.5d
 			y: 10.5d
 		}
@@ -400,17 +413,27 @@
 		}
 		{
 			dependencies: ["7A6ADC4EE6686110"]
+			description: [
+				"现在你不能通过把安山合金按到原木上来创建机壳了：你需要在活木上进行加工才可以。"
+				"是的，你首先需要用魔法活化木头，然后它们才能在加工台上被你压成机壳。"
+			]
 			id: "50BB17FEED3B10D2"
+			subtitle: "什么，这不科学！"
 			tasks: [{
 				id: "627EF45054EFDE2B"
 				item: "create:andesite_casing"
 				type: "item"
 			}]
+			title: "来点壳子"
 			x: -2.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["50BB17FEED3B10D2"]
+			description: [
+				"这是安山系列机械的核心组件。"
+				"多 多 益 善）"
+			]
 			id: "2D883E21C72F5947"
 			subtitle: "你疑似有点过于城市化了"
 			tasks: [{
@@ -441,13 +464,19 @@
 				"3BECB3D53E17F80B"
 				"336807D048A4EF6A"
 			]
+			description: [
+				"终于，你看到了炼铁的曙光，但——你需要先去满世界找岩浆块。"
+				"找找废弃的地狱门，记得打个标记，哭泣的黑曜石你以后还会用到的。"
+			]
 			id: "2C15AA9278830174"
+			subtitle: "离亮闪闪的小可爱更进一步"
 			tasks: [{
 				count: 27L
 				id: "765F2C43E4E65DDA"
 				item: "immersiveengineering:blastbrick"
 				type: "item"
 			}]
+			title: "高炉炼铁"
 			x: -3.0d
 			y: 16.0d
 		}
@@ -507,7 +536,13 @@
 		}
 		{
 			dependencies: ["336807D048A4EF6A"]
+			description: [
+				"比如：焦煤。"
+				"多余的杂酚油你可以看着办（？）反正处理不掉杂酚油是沉浸的通病。"
+				"小声：拿来洗澡也行。"
+			]
 			id: "6D46668D63E83ED7"
+			subtitle: "为了炼铁，你需要比煤更强的燃料"
 			tasks: [
 				{
 					count: 27L
@@ -521,12 +556,18 @@
 					type: "item"
 				}
 			]
+			title: "基本生产要素"
 			x: 3.0d
 			y: 16.0d
 		}
 		{
 			dependencies: ["2F791EC2607066B4"]
+			description: [
+				"作为一个更加真实的整合包，你会发现所有的部件都会造成一定程度的应力损耗。"
+				"这也就意味着，你&b&l不能使用&r齿轮链来传输动能。"
+			]
 			id: "105CB8690DCE4DCC"
+			subtitle: "是的，符合现实"
 			tasks: [{
 				id: "7D7679617FDA45B3"
 				title: "动力损耗"

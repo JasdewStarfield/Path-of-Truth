@@ -1,0 +1,29 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "21E029A01EA15F54"
+	group: "12EA2EE194EF67D3"
+	icon: "bloodmagic:weakbloodorb"
+	id: "21E029A01EA15F54"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		id: "11E3776CE5E23255"
+		subtitle: "首先，你需要找到教程"
+		tasks: [{
+			id: "1DDD954A3EFC8D3C"
+			item: {
+				Count: 1b
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "bloodmagic:guide"
+				}
+			}
+			type: "item"
+		}]
+		title: "了解鲜血之力"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "鲜血与灵魂"
+}

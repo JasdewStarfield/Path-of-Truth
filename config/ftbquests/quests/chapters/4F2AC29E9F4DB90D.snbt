@@ -1,0 +1,26 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4F2AC29E9F4DB90D"
+	group: "12EA2EE194EF67D3"
+	icon: "immersiveengineering:ingot_steel"
+	id: "4F2AC29E9F4DB90D"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: ["所以，工业的新篇章也对你开启了。"]
+		id: "11EC3A84F0C84E65"
+		shape: "gear"
+		size: 1.5d
+		subtitle: "现在你获得了铁！"
+		tasks: [{
+			id: "22AC8380896E7FE2"
+			item: "minecraft:iron_ingot"
+			type: "item"
+		}]
+		title: "工业基石"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "钢铁雄心"
+}

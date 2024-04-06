@@ -14,6 +14,7 @@
 				"请注意收集它们，这是奥术的基石。"
 			]
 			icon: "minecraft:chest"
+			icon_scale: 1.5d
 			id: "374C430D0AD70D2E"
 			shape: "octagon"
 			subtitle: "有的时候你需要看看大自然的馈赠"
@@ -40,6 +41,7 @@
 				item: "botania:flower_bag"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "个人的能力终究有限。"
 			tasks: [
 				{
@@ -76,10 +78,12 @@
 		{
 			dependencies: ["374C430D0AD70D2E"]
 			description: [
-				"作为施法的基本工具，一本法术书是有必要的。"
+				"作为施法的基本工具，一本法术书和一个抄写台是有必要的。"
 				"……这应该也是你前期唯一能做到的施法手段。"
 				"默认施法按键是V，但你可以通过制作法杖来进行右键施法。"
+				"当然，你也可以去抢劫术士的抄写台——但你更可能被冰术士打死就是了。"
 			]
+			icon: "irons_spellbooks:ender_upgrade_orb"
 			id: "28A1C39EF1446334"
 			rewards: [{
 				id: "300AC1A510B03C11"
@@ -102,23 +106,31 @@
 				}
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "你是一位法师。"
-			tasks: [{
-				id: "150978E8B38FB4B1"
-				item: {
-					Count: 1b
-					id: "irons_spellbooks:copper_spell_book"
-					tag: {
-						ISB_Spells: {
-							data: [ ]
-							maxSpells: 5
-							mustEquip: 1b
-							spellWheel: 1b
+			tasks: [
+				{
+					id: "150978E8B38FB4B1"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:copper_spell_book"
+						tag: {
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 5
+								mustEquip: 1b
+								spellWheel: 1b
+							}
 						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "677928AAFA743D41"
+					item: "irons_spellbooks:inscription_table"
+					type: "item"
+				}
+			]
 			title: "内心的力量"
 			x: 0.0d
 			y: 2.0d
@@ -183,6 +195,7 @@
 				item: "botania:rune_mana"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "拉出去祭天！"
 			tasks: [{
 				id: "626B38A8103DFA61"
@@ -205,17 +218,13 @@
 			]
 			icon: {
 				Count: 1b
-				ForgeCaps: {
-					"cold_sweat:item_insulation": {
-						Insulation: [ ]
-					}
-				}
 				id: "irons_spellbooks:wandering_magician_helmet"
 				tag: {
 					Damage: 0
 				}
 			}
 			id: "7E9EA8A40086E7CA"
+			shape: "rsquare"
 			subtitle: "这意味着你穿上后可以出去浪了"
 			tasks: [
 				{
@@ -304,6 +313,7 @@
 		{
 			dependencies: ["788F3EC85AC1172E"]
 			description: ["现在你需要一点火力……来帮助你产出魔力。"]
+			icon: "botania:creative_pool"
 			id: "71D2AC46FA223631"
 			rewards: [{
 				id: "704DD1E0D902324F"
@@ -339,8 +349,9 @@
 			]
 			description: [
 				"你已经初步了解了魔法的力量，那么，做一个血之祭坛出来吧。"
-				"我们的魔法故事将进入新的篇章。"
+				"我们的魔法故事将进入新的篇章，你也将感受到鲜血和灵魂的力量。"
 			]
+			icon_scale: 1.2d
 			id: "708CC78EEB470115"
 			rewards: [
 				{
@@ -358,6 +369,8 @@
 					type: "item"
 				}
 			]
+			shape: "pentagon"
+			size: 2.0d
 			subtitle: "你，准备好了吗？"
 			tasks: [{
 				id: "3539EB568810683D"
