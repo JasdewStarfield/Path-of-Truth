@@ -175,10 +175,7 @@
 				"735172F79325756F"
 				"71D2AC46FA223631"
 			]
-			description: [
-				"现在，你可以准备沟通一些天地之间的魔力……以及准备好献出自己的鲜血。"
-				"不过，献血需要科技工具的帮助——很显然，牺牲也需要门槛。"
-			]
+			description: ["现在，你可以准备沟通一些天地之间的魔力，用它们生产属于你的符文吧。"]
 			icon: "botania:runic_altar"
 			id: "5DC5D0BF9E2C91CC"
 			rewards: [{
@@ -187,18 +184,11 @@
 				type: "item"
 			}]
 			subtitle: "拉出去祭天！"
-			tasks: [
-				{
-					id: "626B38A8103DFA61"
-					item: "botania:runic_altar"
-					type: "item"
-				}
-				{
-					id: "4C95117E7FE73F3E"
-					item: "bloodmagic:altar"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "626B38A8103DFA61"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
 			title: "祭祀天地"
 			x: -4.0d
 			y: 0.0d
@@ -341,6 +331,42 @@
 			title: "电池，嗯"
 			x: -2.0d
 			y: 1.0d
+		}
+		{
+			dependencies: [
+				"5DC5D0BF9E2C91CC"
+				"7E9EA8A40086E7CA"
+			]
+			description: [
+				"你已经初步了解了魔法的力量，那么，做一个血之祭坛出来吧。"
+				"我们的魔法故事将进入新的篇章。"
+			]
+			id: "708CC78EEB470115"
+			rewards: [
+				{
+					id: "5543440A93455087"
+					item: {
+						Count: 1b
+						id: "bloodmagic:sacrificialdagger"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1D0F630C6D896177"
+					item: "bloodmagic:daggerofsacrifice"
+					type: "item"
+				}
+			]
+			subtitle: "你，准备好了吗？"
+			tasks: [{
+				id: "3539EB568810683D"
+				item: "bloodmagic:altar"
+				type: "item"
+			}]
+			title: "牺牲与献祭"
+			x: 0.0d
+			y: 6.0d
 		}
 	]
 	title: "原始萨满"

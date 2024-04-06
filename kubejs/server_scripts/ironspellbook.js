@@ -19,6 +19,19 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:magic_cloth'},
     '#minecraft:wool', 'immersiveengineering:hemp_fabric' )
 
+    //修改木质法杖配方
+    event.remove({id:'irons_spellbooks:graybeard_staff'})
+    event.shaped(Item.of('irons_spellbooks:graybeard_staff',1),
+        ['  A',
+        ' B ',
+        'C  '],
+        {
+            A:'irons_spellbooks:arcane_essence',
+            B:'kubejs:bronze_shovel',
+            C:'#forge:ingots'
+        }
+    )
+
     //修改法师护甲配方
     event.remove({id:'irons_spellbooks:wandering_magician_helmet'})
     event.remove({id:'irons_spellbooks:wandering_magician_chestplate'})
