@@ -401,11 +401,13 @@
 		}
 		{
 			id: "2D883E21C72F5947"
+			subtitle: "你疑似有点过于城市化了"
 			tasks: [{
 				id: "05E64F6FA96B65F7"
 				item: "immersiveengineering:light_engineering"
 				type: "item"
 			}]
+			title: "工业化的方块"
 			x: -4.5d
 			y: 9.0d
 		}

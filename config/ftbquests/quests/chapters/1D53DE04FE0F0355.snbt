@@ -89,11 +89,27 @@
 				"走下去吧，你会见到它的。"
 			]
 			id: "0662BC09A7E92B1B"
-			rewards: [{
-				id: "73C6D4ACFF494AFB"
-				item: "respawnobelisks:respawn_obelisk_end"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "73C6D4ACFF494AFB"
+					item: "respawnobelisks:respawn_obelisk_end"
+					type: "item"
+				}
+				{
+					id: "33962CC0203CB2E7"
+					item: {
+						Count: 1b
+						id: "respawnobelisks:obelisk_core"
+						tag: {
+							RespawnObeliskData: {
+								Charge: 100.0d
+								MaxCharge: 100.0d
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "你总会看到的。"
 			tasks: [{
 				dimension: "minecraft:the_end"

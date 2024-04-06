@@ -75,6 +75,11 @@
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
+			description: [
+				"作为施法的基本工具，一本法术书是有必要的。"
+				"……这应该也是你前期唯一能做到的施法手段。"
+				"默认施法按键是V，但你可以通过制作法杖来进行右键施法。"
+			]
 			id: "28A1C39EF1446334"
 			rewards: [{
 				id: "300AC1A510B03C11"
@@ -141,6 +146,7 @@
 				"你会发现活石可以催化一些工业的原料。"
 				"至于活木，它是很好的魔力载体。"
 			]
+			icon: "botania:pure_daisy"
 			id: "735172F79325756F"
 			rewards: [{
 				id: "10ACEE589E13F8C0"
@@ -163,6 +169,178 @@
 			title: "活化生命"
 			x: -2.0d
 			y: -1.0d
+		}
+		{
+			dependencies: [
+				"735172F79325756F"
+				"71D2AC46FA223631"
+			]
+			description: [
+				"现在，你可以准备沟通一些天地之间的魔力……以及准备好献出自己的鲜血。"
+				"不过，献血需要科技工具的帮助——很显然，牺牲也需要门槛。"
+			]
+			icon: "botania:runic_altar"
+			id: "5DC5D0BF9E2C91CC"
+			rewards: [{
+				id: "6216BE3098275FE7"
+				item: "botania:rune_mana"
+				type: "item"
+			}]
+			subtitle: "拉出去祭天！"
+			tasks: [
+				{
+					id: "626B38A8103DFA61"
+					item: "botania:runic_altar"
+					type: "item"
+				}
+				{
+					id: "4C95117E7FE73F3E"
+					item: "bloodmagic:altar"
+					type: "item"
+				}
+			]
+			title: "祭祀天地"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5F5CA37CCE531CAA"
+				"66D6C25EC4F7A966"
+			]
+			description: [
+				"和常规护甲不同，魔法线的护甲往往自带对于魔法的加成。"
+				"这套护甲是初期最容易获得的法师护甲，它能帮你完成一些法力消耗比较高的法术（"
+				"顺带一提，铁魔法的法力回复是按比例进行的，所以法力总值高一点没什么坏处。"
+			]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						Insulation: [ ]
+					}
+				}
+				id: "irons_spellbooks:wandering_magician_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7E9EA8A40086E7CA"
+			subtitle: "这意味着你穿上后可以出去浪了"
+			tasks: [
+				{
+					id: "3FAC8ECB05056EFE"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:wandering_magician_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "541CE495BFBB3894"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:wandering_magician_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "074299C70529C038"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:wandering_magician_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "68CB6A8EDBFAE4AD"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:wandering_magician_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "流浪法师"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["28A1C39EF1446334"]
+			description: ["为了让你的施法更方便（也就是右键能放法术），也为了前期能简单护身，你最好整上一根。"]
+			id: "66D6C25EC4F7A966"
+			subtitle: "是的，这也是近战武器"
+			tasks: [{
+				id: "465956FE248BE3E4"
+				item: "irons_spellbooks:graybeard_staff"
+				type: "item"
+			}]
+			title: "大 木 棒"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["788F3EC85AC1172E"]
+			description: ["现在你需要一点火力……来帮助你产出魔力。"]
+			id: "71D2AC46FA223631"
+			rewards: [{
+				id: "704DD1E0D902324F"
+				item: "botania:obedience_stick"
+				type: "item"
+			}]
+			subtitle: "容纳能源的池子就是电池（确信"
+			tasks: [
+				{
+					id: "0E280060FEFFD99A"
+					item: "botania:mana_pool"
+					type: "item"
+				}
+				{
+					id: "228B8AFC60958577"
+					item: "botania:endoflame"
+					type: "item"
+				}
+				{
+					id: "0B77ABCA3F437F14"
+					item: "botania:mana_spreader"
+					type: "item"
+				}
+			]
+			title: "电池，嗯"
+			x: -2.0d
+			y: 1.0d
 		}
 	]
 	title: "原始萨满"
