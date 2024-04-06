@@ -150,8 +150,8 @@ ServerEvents.recipes(event => {
       ], {
       B: 'create:andesite_casing',
       A: 'botania:livingwood_planks',
-      C: 'create:cog',
-      D: 'create:large_cog'
+      C: 'create:cogwheel',
+      D: 'create:large_cogwheel'
     })
     event.replaceInput(
       { id:/.*mechanical.*/ },

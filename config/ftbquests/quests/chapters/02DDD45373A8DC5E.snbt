@@ -42,8 +42,8 @@
 				}
 			]
 			title: "青铜时代，前进四！"
-			x: 2.0d
-			y: 7.0d
+			x: 4.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["46156FBBDCAB4B1D"]
@@ -101,8 +101,8 @@
 				}
 			]
 			title: "基本工具"
-			x: 0.0d
-			y: 7.0d
+			x: 2.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["46156FBBDCAB4B1D"]
@@ -147,6 +147,10 @@
 			y: 0.0d
 		}
 		{
+			description: [
+				"温馨提示：如果找不到安山岩，可以多探索洞穴，找到“安山岩洞穴”的洞穴群系。"
+				"实在不行的话，闪长岩也可以用来合成安山岩。"
+			]
 			id: "06AA85338A57DB33"
 			subtitle: "是的，从石头干起"
 			tasks: [{
@@ -180,7 +184,11 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["0E41103FFC1FC96A"]
+			dependencies: [
+				"0E41103FFC1FC96A"
+				"2D883E21C72F5947"
+			]
+			icon: "create:mechanical_press"
 			id: "27E166AF7BA5BDB1"
 			tasks: [
 				{
@@ -202,8 +210,8 @@
 				}
 			]
 			title: "Duang！"
-			x: -2.5d
-			y: 9.0d
+			x: 0.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["27E166AF7BA5BDB1"]
@@ -221,7 +229,7 @@
 				}
 			]
 			x: 0.0d
-			y: 9.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["0E41103FFC1FC96A"]
@@ -237,8 +245,8 @@
 				type: "item"
 			}]
 			title: "粉碎性打击"
-			x: 4.5d
-			y: 7.0d
+			x: 3.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["4252F0F8AD1C5A60"]
@@ -257,8 +265,8 @@
 				}
 			]
 			title: "至关重要的粉末"
-			x: 4.5d
-			y: 9.0d
+			x: 1.5d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -285,23 +293,25 @@
 			]
 			title: "钟鸣鼎食"
 			x: 0.0d
-			y: 12.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["29B3F884515FC9DB"]
+			description: ["利用搅拌，你可以以更经济的方式倍增安山合金的产率！"]
 			id: "47C5992588416736"
 			shape: "diamond"
 			tasks: [{
-				id: "35E047601CEBCB29"
-				item: "create:andesite_alloy"
+				id: "4CFECA6BDF000DA8"
+				item: "kubejs:raw_andesite_alloy"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 9.0d
+			x: 1.5d
+			y: 10.5d
 		}
 		{
 			dependencies: ["3BECB3D53E17F80B"]
 			id: "40E4071636BA7BB1"
+			shape: "diamond"
 			subtitle: "嘿伙计，我想你需要一些工具"
 			tasks: [
 				{
@@ -361,7 +371,7 @@
 				}
 			]
 			title: "生存的必要手段"
-			x: -2.0d
+			x: -1.5d
 			y: 12.0d
 		}
 		{
@@ -396,20 +406,134 @@
 				item: "create:andesite_casing"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 7.0d
+			x: -2.0d
+			y: 6.5d
 		}
 		{
+			dependencies: ["50BB17FEED3B10D2"]
 			id: "2D883E21C72F5947"
 			subtitle: "你疑似有点过于城市化了"
 			tasks: [{
-				id: "05E64F6FA96B65F7"
-				item: "immersiveengineering:light_engineering"
+				id: "426215F2BF5D4D54"
+				item: "kubejs:andesite_engineering"
 				type: "item"
 			}]
 			title: "工业化的方块"
-			x: -4.5d
-			y: 9.0d
+			x: -4.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["27E166AF7BA5BDB1"]
+			description: ["太好用了"]
+			id: "63B4B5472513A83F"
+			shape: "diamond"
+			subtitle: "很好，这使我机器旋转"
+			tasks: [{
+				id: "53A50D0E4A211DBF"
+				item: "create:wrench"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 10.5d
+		}
+		{
+			dependencies: [
+				"3BECB3D53E17F80B"
+				"336807D048A4EF6A"
+			]
+			id: "2C15AA9278830174"
+			tasks: [{
+				count: 27L
+				id: "765F2C43E4E65DDA"
+				item: "immersiveengineering:blastbrick"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"2C15AA9278830174"
+				"6D46668D63E83ED7"
+			]
+			id: "6E0D85E43EDF1994"
+			rewards: [
+				{
+					count: 5
+					id: "36442D0529483539"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "73E42537932CB1D6"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "1DA9CD53AD4F0922"
+					item: "kubejs:bronze_ingot"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "恭喜你完成了第一章！"
+			tasks: [{
+				id: "72B82CDECCBEAB96"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 18.0d
+		}
+		{
+			dependencies: ["3BECB3D53E17F80B"]
+			id: "336807D048A4EF6A"
+			subtitle: "80！80！"
+			tasks: [{
+				id: "2CC1960A4B0CF73D"
+				item: {
+					Count: 1b
+					id: "immersiveengineering:hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["336807D048A4EF6A"]
+			id: "6D46668D63E83ED7"
+			tasks: [
+				{
+					count: 27L
+					id: "3C1030747B3B1D3B"
+					item: "immersiveengineering:cokebrick"
+					type: "item"
+				}
+				{
+					id: "6D78B6452A4869A0"
+					item: "immersiveengineering:coal_coke"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["2F791EC2607066B4"]
+			id: "105CB8690DCE4DCC"
+			tasks: [{
+				id: "7D7679617FDA45B3"
+				title: "动力损耗"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 6.5d
 		}
 	]
 	title: "青铜时代"

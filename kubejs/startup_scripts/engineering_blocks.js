@@ -15,5 +15,5 @@ StartupEvents.registry('block', (event) => {
 		.opaque(true)
 		.fullBlock(true)
 		.renderType('solid')
-		.textureAll('kubejs:block/bronze_block')
+		.textureAll('kubejs:block/andesite_engineering')
 })

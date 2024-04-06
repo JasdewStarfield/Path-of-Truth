@@ -6,6 +6,37 @@ ServerEvents.recipes(event => {
     event.remove({id:/immersiveengineering\:crafting\/hammercrushing_\.*/})
     event.remove({id:/immersiveengineering:crafting\/wire_.*/})
 
+    //焦炉砖
+    event.remove({id:"immersiveengineering:crafting/cokebrick"})
+    event.shaped('immersiveengineering:cokebrick', [ 
+        'CAC', 
+        'ABA',
+        'CAC'  
+    ], {
+        B: 'minecraft:calcite',
+        A: 'minecraft:brick',
+        C: 'minecraft:clay_ball'
+    })
+
+    //高炉砖
+    event.remove({id:"immersiveengineering:crafting/blastbrick"})
+    event.shaped('immersiveengineering:blastbrick', [ 
+        'CAC', 
+        'ABA',
+        'CAC'  
+    ], {
+        B: 'minecraft:magma_block',
+        A: 'minecraft:brick',
+        C: '#forge:nuggets/bronze'
+    })
+
+    //工程师锤
+    event.replaceInput(
+        { output:"immersiveengineering:hammer" },
+        '#forge:ingots/iron',
+        '#forge:ingots/bronze'
+    )
+
     //高炉炼铁
     event.remove({id:/immersiveengineering:blastfurnace\/steel.*/})
     event.remove({id:/immersiveengineering:blastfurnace\/fuel.*/})
@@ -28,6 +59,7 @@ ServerEvents.recipes(event => {
         "type":"immersiveengineering:blast_furnace",
         "input":{"tag":"forge:dusts/iron"},
         "result":{"tag":"forge:ingots/iron"},
+        "slag":{"tag":"forge:slag"},
         "time":200
     })
     event.custom({
