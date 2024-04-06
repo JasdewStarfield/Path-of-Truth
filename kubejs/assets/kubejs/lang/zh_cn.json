@@ -1,0 +1,18 @@
+{
+  "item.kubejs.incomplete_andesite_engineering": "未完成的安山工程块",
+  "item.kubejs.bronze_dust": "青铜粉",
+  "item.kubejs.bronze_ingot": "青铜锭",
+  "item.kubejs.bronze_nugget": "青铜粒",
+  "item.kubejs.bronze_sheet": "青铜板",
+  "item.kubejs.bronze_sword": "青铜剑",
+  "item.kubejs.bronze_pickaxe": "青铜镐",
+  "item.kubejs.bronze_axe": "青铜斧",
+  "item.kubejs.bronze_shovel": "青铜铲",
+  "item.kubejs.bronze_hoe": "青铜锄",
+  "item.kubejs.zinc_dust": "锌粉",
+  "item.kubejs.tin_dust": "锡粉",
+  "item.kubejs.raw_andesite_alloy": "粗安山合金",
+  "item.kubejs.buran": "暴风雪",
+  "block.kubejs.andesite_engineering": "安山工程块",
+  "block.kubejs.bronze_block": "青铜块"
+}

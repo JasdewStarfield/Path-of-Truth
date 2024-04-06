@@ -1,0 +1,91 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "41206A891883629D"
+	group: ""
+	hide_quest_details_until_startable: true
+	icon: "farmersdelight:black_canvas_sign"
+	id: "41206A891883629D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			id: "5F826044A3A07900"
+			tasks: [{
+				id: "075C620C31120419"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F826044A3A07900"]
+			id: "335B306F8F3F1C95"
+			tasks: [{
+				id: "2E9C350294D52542"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5F826044A3A07900"]
+			id: "6BC55C5CE417B194"
+			tasks: [{
+				id: "641C3386FFB09CB8"
+				item: "simplemetals_tin:tin_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"6BC55C5CE417B194"
+				"335B306F8F3F1C95"
+			]
+			id: "0D69D8466E9218E1"
+			tasks: [{
+				id: "607971A794133D1E"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D69D8466E9218E1"]
+			id: "7CBC86E5B5ADF6AE"
+			tasks: [{
+				id: "6A076FA5B61D1A2E"
+				item: "kubejs:andesite_engineering"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7CBC86E5B5ADF6AE"]
+			id: "0DD8AAA01622241D"
+			tasks: [{
+				id: "2373EEB904B87729"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Landmarks"]
+	title: "里程碑"
+}

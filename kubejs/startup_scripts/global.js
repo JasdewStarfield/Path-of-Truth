@@ -1,3 +1,5 @@
+Platform.mods.kubejs.name = 'Path of Truth'
+
 global.groups = {
   crushableMetals:[
     "copper",

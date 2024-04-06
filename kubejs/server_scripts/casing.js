@@ -153,6 +153,15 @@ ServerEvents.recipes(event => {
       C: 'create:cogwheel',
       D: 'create:large_cogwheel'
     })
+    event.recipes.create.sequenced_assembly([
+      'kubejs:andesite_engineering'
+    ], 'create:andesite_casing', [
+      event.recipes.createDeploying('kubejs:incomplete_andesite_engineering', ['kubejs:incomplete_andesite_engineering', 'botania:livingwood_planks']),
+      event.recipes.createDeploying('kubejs:incomplete_andesite_engineering', ['kubejs:incomplete_andesite_engineering', 'create:cogwheel']),
+      event.recipes.createDeploying('kubejs:incomplete_andesite_engineering', ['kubejs:incomplete_andesite_engineering', 'create:large_cogwheel']),
+      event.recipes.createDeploying('kubejs:incomplete_andesite_engineering', ['kubejs:incomplete_andesite_engineering', 'botania:livingwood_planks'])
+    ]).transitionalItem('kubejs:incomplete_andesite_engineering').loops(1)
+
     event.replaceInput(
       { id:/.*mechanical.*/ },
       'create:andesite_casing',

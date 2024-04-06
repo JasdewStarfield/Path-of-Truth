@@ -3,12 +3,14 @@
 	default_quest_shape: ""
 	filename: "58C198C40A81EF6B"
 	group: "461ABC15BE939FA8"
+	hide_quest_details_until_startable: true
 	icon: "irons_spellbooks:lightning_bottle"
 	id: "58C198C40A81EF6B"
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["6A1B42D208C780BD"]
 			description: [
 				"你的魔法之路要从路边的一些泛着蓝紫色光芒的垃圾开始……"
 				"请注意收集它们，这是奥术的基石。"
@@ -382,5 +384,6 @@
 			y: 6.0d
 		}
 	]
+	subtitle: ["Primal Shaman"]
 	title: "原始萨满"
 }

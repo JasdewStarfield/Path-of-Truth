@@ -1,8 +1,10 @@
 {
+	autofocus_id: "6A1B42D208C780BD"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "1D53DE04FE0F0355"
 	group: ""
+	hide_quest_details_until_startable: true
 	icon: "minecraft:skeleton_skull"
 	id: "1D53DE04FE0F0355"
 	order_index: 0
@@ -142,5 +144,6 @@
 			y: 2.0d
 		}
 	]
+	subtitle: ["Ahead of Everything Else"]
 	title: "从头说起"
 }

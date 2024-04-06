@@ -3,12 +3,14 @@
 	default_quest_shape: ""
 	filename: "02DDD45373A8DC5E"
 	group: "461ABC15BE939FA8"
-	icon: "minecraft:weathered_copper"
+	hide_quest_details_until_startable: true
+	icon: "kubejs:bronze_block"
 	id: "02DDD45373A8DC5E"
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["6A1B42D208C780BD"]
 			description: ["不管干什么，你总归需要从工作台开始的，对吧）"]
 			id: "46156FBBDCAB4B1D"
 			shape: "gear"
@@ -147,6 +149,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["46156FBBDCAB4B1D"]
 			description: [
 				"温馨提示：如果找不到安山岩，可以多探索洞穴，找到“安山岩洞穴”的洞穴群系。"
 				"实在不行的话，闪长岩也可以用来合成安山岩。"
@@ -576,6 +579,29 @@
 			x: 0.0d
 			y: 6.5d
 		}
+		{
+			dependencies: ["6D46668D63E83ED7"]
+			description: ["使用垃圾桶来批量销毁物品和流体。"]
+			id: "1A5534E853393823"
+			shape: "diamond"
+			subtitle: "不用岩浆或者仙人掌了。"
+			tasks: [
+				{
+					id: "20F712C4AF6453C9"
+					item: "trashcans:liquid_trash_can"
+					type: "item"
+				}
+				{
+					id: "6B563537BD0DD1AC"
+					item: "trashcans:item_trash_can"
+					type: "item"
+				}
+			]
+			title: "温暖的家（大嘘）"
+			x: 1.5d
+			y: 15.0d
+		}
 	]
+	subtitle: ["Age of Bronze"]
 	title: "青铜时代"
 }

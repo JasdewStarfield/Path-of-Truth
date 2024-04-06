@@ -3,10 +3,12 @@
 	default_quest_shape: ""
 	filename: "7F0791F4B66B5D63"
 	group: "12EA2EE194EF67D3"
+	hide_quest_details_until_startable: true
 	icon: "betterarcheology:radiance_totem"
 	id: "7F0791F4B66B5D63"
 	order_index: 2
 	quest_links: [ ]
 	quests: [ ]
+	subtitle: ["Spirt of Exploration"]
 	title: "探索精神"
 }

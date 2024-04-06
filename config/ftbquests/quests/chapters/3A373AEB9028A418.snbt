@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "3A373AEB9028A418"
 	group: "461ABC15BE939FA8"
+	hide_quest_details_until_startable: true
 	icon: "sophisticatedbackpacks:backpack"
 	id: "3A373AEB9028A418"
 	order_index: 2
@@ -164,5 +165,6 @@
 			y: 2.0d
 		}
 	]
+	subtitle: ["A Long Way to Go"]
 	title: "漫漫长路"
 }

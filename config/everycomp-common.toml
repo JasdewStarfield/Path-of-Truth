@@ -86,3 +86,9 @@
 				window_pane = true
 				window = true
 
+			[general.entries.wood_type.decorative_blocks]
+				beam = true
+				support = true
+				seat = true
+				palisade = true
+
