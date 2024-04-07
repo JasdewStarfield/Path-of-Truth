@@ -92,3 +92,6 @@
 				seat = true
 				palisade = true
 
+			[general.entries.wood_type.vct]
+				crafting_table = true
+

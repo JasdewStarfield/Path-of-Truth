@@ -143,6 +143,17 @@
         "value": 10
       }
     },
+    "irons_spellbooks:eldritch_spell_power": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
+      }
+    },
     "cold_sweat:cold_dampening": {
       "enabled": false,
       "min": {
@@ -284,6 +295,17 @@
       "max": {
         "default": 10,
         "value": 10
+      }
+    },
+    "irons_spellbooks:eldritch_magic_resist": {
+      "enabled": false,
+      "min": {
+        "default": -100,
+        "value": -100
+      },
+      "max": {
+        "default": 100,
+        "value": 100
       }
     },
     "irons_spellbooks:ender_spell_power": {
