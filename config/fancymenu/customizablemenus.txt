@@ -1,2 +1,5 @@
 type = customizablemenus
 
+de.keksuccino.drippyloadingscreen.customization.DrippyOverlayScreen {
+}
+
