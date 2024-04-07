@@ -3,6 +3,7 @@
 模组名列表：
 铁魔法：irons_spellbooks
 植物魔法：botania
+血魔法：bloodmagic
 */
 /*
 加入有序配方模板
