@@ -42,3 +42,5 @@ config/everycomp-hazardous.properties
 route.drawio
 /config/jei/world
 /fancymenu_data
+/config/konkrete/locals
+/config/fancymenu

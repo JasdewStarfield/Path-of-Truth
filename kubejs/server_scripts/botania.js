@@ -3,7 +3,7 @@
 ServerEvents.recipes(event => {
     //修改白雏菊合成配方
     event.remove({ output: 'botania:pure_daisy' })
-    event.recipes.botania.petal_apothecary('botania:pure_daisy', ['botania:white_petal','irons_spellbooks:arcane_essence','#forge:ingots/tin'])
+    event.recipes.botania.petal_apothecary('botania:pure_daisy', ['#botania:petals/white','irons_spellbooks:arcane_essence','#forge:ingots/tin'])
 
     //修改魔力池配方
     event.remove({ output: 'botania:mana_pool' })
@@ -31,4 +31,8 @@ ServerEvents.recipes(event => {
 
     //魔钢-奥术源质兑换
     event.recipes.botania.mana_infusion('4x irons_spellbooks:arcane_essence', 'botania:manasteel_ingot', 1000, 'botania:alchemy_catalyst')
+
+    //产能花系列配方修改
+
+
 })
