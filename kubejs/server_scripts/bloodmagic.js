@@ -9,5 +9,26 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'bloodmagic',output:'bloodmagic:altar'},
     'minecraft:furnace', 'immersiveengineering:blastbrick' )
 
-    
+    //删除基岩配方
+    event.remove({id:'bloodmagic:array/day'})
+    event.remove({id:'bloodmagic:array/night'})
+    event.remove({id:'bloodmagic:array/spike'})
+    event.remove({id:'bloodmagic:array/bounce'})
+    event.remove({id:'bloodmagic:array/movement'})
+    event.remove({id:'bloodmagic:array/updraft'})
+
+    //炼金矩阵优化
+    event.custom({
+        'type': "bloodmagic:array",
+        'addedinput': {
+            'item': '#forge:dusts/mana'
+        },
+        'baseinput': {
+            'item': 'bloodmagic:reagentwater'
+        },
+        'output': {
+            'item': 'irons_spellbooks:arcane_essence'
+        }
+    })
+
 })
