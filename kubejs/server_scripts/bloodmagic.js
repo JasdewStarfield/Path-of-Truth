@@ -9,6 +9,5 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'bloodmagic',output:'bloodmagic:altar'},
     'minecraft:furnace', 'immersiveengineering:blastbrick' )
 
-
     
 })

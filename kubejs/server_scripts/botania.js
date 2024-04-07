@@ -3,7 +3,13 @@
 ServerEvents.recipes(event => {
     //修改白雏菊合成配方
     event.remove({ output: 'botania:pure_daisy' })
-    event.recipes.botania.petal_apothecary('botania:pure_daisy', ['#botania:petals/white','irons_spellbooks:arcane_essence','#forge:ingots/tin'])
+    event.recipes.botania.petal_apothecary('botania:pure_daisy', 
+        [
+            '#botania:petals/white',
+            'irons_spellbooks:arcane_essence',
+            '#forge:ingots/tin'
+        ]
+    )
 
     //修改魔力池配方
     event.remove({ output: 'botania:mana_pool' })
@@ -33,6 +39,27 @@ ServerEvents.recipes(event => {
     event.recipes.botania.mana_infusion('4x irons_spellbooks:arcane_essence', 'botania:manasteel_ingot', 1000, 'botania:alchemy_catalyst')
 
     //产能花系列配方修改
-
+    //火红莲
+    event.remove({ output: 'botania:endoflame' })
+    event.recipes.botania.petal_apothecary('botania:endoflame', 
+        [
+            '#botania:petals/brown',
+            '#botania:petals/red',
+            'irons_spellbooks:arcane_essence',
+            '#forge:ingots/bronze'
+        ]
+    )
+    //炽玫瑰
+    event.remove({ output: 'botania:thermalily' })
+    event.recipes.botania.petal_apothecary('botania:thermalily', 
+        [
+            '#botania:petals/red',
+            '#botania:petals/orange',
+            'irons_spellbooks:arcane_essence',
+            '#forge:ingots/iron',
+            'botania:rune_fire',
+            'botania:rune_earth'
+        ]
+    )
 
 })

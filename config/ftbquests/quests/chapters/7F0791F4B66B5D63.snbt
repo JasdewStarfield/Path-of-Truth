@@ -8,7 +8,136 @@
 	id: "7F0791F4B66B5D63"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["7CFD3110EF8E53E2"]
+			description: [
+				"你会惊讶的发现，铁制背包往上就没有更大的背包了。"
+				"是的，这是我们故意的：太大的背包会破坏平衡性和真实性，所以你要接受现实。"
+				"这里为你提供了一种合理利用背包升级槽的形式，你可以动态分配自己的经验。"
+				"升级槽当然也可以拿来干别的，但那就要你自己探索了——反正只有两个槽位（摊手"
+			]
+			id: "34610E8F3D1306A9"
+			rewards: [
+				{
+					id: "3F0B29D36BECE9D6"
+					item: "sophisticatedbackpacks:tank_upgrade"
+					type: "item"
+				}
+				{
+					id: "0987144C257A6D19"
+					item: "sophisticatedbackpacks:xp_pump_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "是的，到头了"
+			tasks: [{
+				id: "1055CB939D4B94DA"
+				item: "sophisticatedbackpacks:iron_backpack"
+				type: "item"
+			}]
+			title: "升级你的背包"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"开启方式和地狱门很像，石砖搭一个框架，然后催化石点一下，你就可以进去了）"
+				"进门之后注意安全，深园从来不缺少敌对生物。"
+			]
+			icon: "undergarden:catalyst"
+			id: "0E5C63B3D4891362"
+			subtitle: "Deep♂Dark♂Fantasy"
+			tasks: [
+				{
+					id: "6284E777A07EA445"
+					item: "undergarden:catalyst"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "637647066253066E"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+			]
+			title: "深园之行"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			description: [
+				"由于alex的生物存在，现在不同的下界群系中增加了额外的危险生物。"
+				"祝你下去的时候被绯红蚊子抱脸（确信"
+			]
+			id: "6C542C19575974DB"
+			subtitle: "下地狱去吧"
+			tasks: [{
+				count: 10L
+				id: "6D3BC27D15BE719A"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			title: "下界之旅"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			icon: "blue_skies:everbright_portal"
+			id: "7A6D4E28C28302FE"
+			subtitle: "从冰天雪地到冰天雪地"
+			tasks: [
+				{
+					count: 10L
+					icon: "blue_skies:turquoise_stonebrick"
+					id: "40489386388FFD19"
+					item: "blue_skies:turquoise_stonebrick"
+					type: "item"
+				}
+				{
+					id: "6B32646CFFA2A817"
+					item: {
+						Count: 1b
+						id: "blue_skies:zeal_lighter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "永远明亮"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			icon: "blue_skies:everdawn_portal"
+			id: "280307C036B9B6E7"
+			subtitle: "诸神黄昏（确信"
+			tasks: [
+				{
+					count: 10L
+					id: "4BAC07E33637CB2B"
+					item: "blue_skies:lunar_stonebrick"
+					type: "item"
+				}
+				{
+					id: "0A6CEFF58CCD2909"
+					item: {
+						Count: 1b
+						id: "blue_skies:zeal_lighter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "永恒黄昏"
+			x: 1.5d
+			y: -1.5d
+		}
+	]
 	subtitle: ["Spirt of Exploration"]
 	title: "探索精神"
 }

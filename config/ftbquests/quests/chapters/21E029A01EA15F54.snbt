@@ -8,25 +8,172 @@
 	id: "21E029A01EA15F54"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["708CC78EEB470115"]
-		id: "11E3776CE5E23255"
-		subtitle: "首先，你需要找到教程"
-		tasks: [{
-			id: "1DDD954A3EFC8D3C"
-			item: {
+	quests: [
+		{
+			dependencies: ["708CC78EEB470115"]
+			icon: {
 				Count: 1b
 				id: "patchouli:guide_book"
 				tag: {
 					"patchouli:book": "bloodmagic:guide"
 				}
 			}
-			type: "item"
-		}]
-		title: "了解鲜血之力"
-		x: 0.0d
-		y: 0.0d
-	}]
+			id: "11E3776CE5E23255"
+			shape: "octagon"
+			subtitle: "首先，你需要找到教程"
+			tasks: [{
+				id: "015B595F49230663"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "bloodmagic:guide"
+					}
+				}
+				type: "item"
+			}]
+			title: "了解鲜血之力"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11E3776CE5E23255"]
+			description: [
+				"铁魔法的炼金操作基本都通过这一口锅来实现。"
+				"你有两种获得这口锅的方式："
+				"去寻找沼泽小屋，抢猪灵术士的锅；或者去下界找古战场，挑战远古骑士获得灰烬源质。"
+				"推荐第一种，因为第二种选项你目前应该是打不过的（确信"
+				"提示：你可以跳进锅里获得鲜血精华"
+			]
+			id: "4320B37354ECBC14"
+			rewards: [{
+				id: "2B295BDA1C72940D"
+				item: "irons_spellbooks:blood_vial"
+				type: "item"
+			}]
+			subtitle: "是雪啊（悲"
+			tasks: [{
+				id: "1A11EC0554E3322F"
+				item: "irons_spellbooks:alchemist_cauldron"
+				type: "item"
+			}]
+			title: "我煮我自己"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11E3776CE5E23255"]
+			description: [
+				"但你可以隔着门和对面的精灵交易——对面真的有精灵吗？"
+				"记得把你的植物魔法辞典扔进去——这会解锁新的内容。"
+				"以及，准备好足够的魔力来迎接这一大门的开启。"
+			]
+			icon: "botania:light_relay"
+			id: "2EA11306B3076434"
+			rewards: [{
+				id: "3514FC6E504974A3"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
+			subtitle: "这是一个你开了也过不去的门"
+			tasks: [
+				{
+					count: 2L
+					id: "0D35920A85DEF8B9"
+					item: "botania:natura_pylon"
+					type: "item"
+				}
+				{
+					id: "44D8B9623BC79BFC"
+					item: "botania:alfheim_portal"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "134C60B18ABA501C"
+					item: "botania:livingwood"
+					type: "item"
+				}
+				{
+					id: "0C52EF97E23DB119"
+					item: "botania:glimmering_livingwood"
+					type: "item"
+				}
+			]
+			title: "打开精灵之门"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11E3776CE5E23255"]
+			description: [
+				"而且你在游戏里也没有可以送戒指的人（"
+				"所以把钻石丢进血祭坛里，让它成为你的力量源泉吧）"
+			]
+			icon: "bloodmagic:weakbloodorb"
+			id: "57B126A840CCD6E4"
+			rewards: [{
+				id: "4A9DD1F061EDC83B"
+				item: "botania:black_lotus"
+				type: "item"
+			}]
+			subtitle: "钻石不是拿来做戒指的"
+			tasks: [
+				{
+					id: "7EC352F37B08C886"
+					item: "bloodmagic:weakbloodorb"
+					type: "item"
+				}
+				{
+					id: "132AB4E34ABC5671"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "以血为誓"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["11E3776CE5E23255"]
+			description: [
+				"这些材料保留了传统的充能方式）"
+				"但需要的魔力量仍然不小）"
+			]
+			id: "1B2D939907CB4DF0"
+			rewards: [{
+				id: "5668C87C4C42AE5A"
+				item: "botania:blacker_lotus"
+				type: "item"
+			}]
+			subtitle: "充能后变蓝"
+			tasks: [
+				{
+					id: "48A695DC9A20FF35"
+					item: "botania:manasteel_ingot"
+					type: "item"
+				}
+				{
+					id: "747E7AC65549D814"
+					item: "botania:mana_pearl"
+					type: "item"
+				}
+				{
+					id: "3459ABAA56E73ADE"
+					item: "botania:mana_diamond"
+					type: "item"
+				}
+				{
+					id: "4605AFE5436571C0"
+					item: "botania:mana_powder"
+					type: "item"
+				}
+			]
+			title: "魔能材料"
+			x: 0.0d
+			y: 2.0d
+		}
+	]
 	subtitle: ["Blood and Soul"]
 	title: "鲜血与灵魂"
 }

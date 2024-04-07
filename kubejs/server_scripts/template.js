@@ -19,6 +19,16 @@ event.shaped(Item.of('名字',数量),
 )
 */
 /*
+加入无序配方模板
+event.shapeless(Item.of('名字',数量),
+    [
+        '材料1',
+        '材料2',
+        '材料3'
+    ]
+)
+*/
+/*
 替换配方系列
 event.replaceInput({mod:'模组名',output:'输出产物'},
     '要被替换的物品名' , '要替换成的物品名')
@@ -44,7 +54,13 @@ onEvent("recipes", event => {
     //植物炼药台
     event.recipes.botania.brew("kubejs:torrent", ["minecraft:acacia_boat"])
     //花药台合成
-    event.recipes.botania.petal_apothecary("minecraft:acacia_boat", ["minecraft:acacia_button"])
+    event.recipes.botania.petal_apothecary('item', 
+        [
+            'material1',
+            'material2',
+            'material3'
+        ]
+    )
     //符文祭坛
     event.recipes.botania.runic_altar("minecraft:acacia_boat", ["minecraft:acacia_button", "minecraft:acacia_door"], 5000)
     //泰拉凝聚板
