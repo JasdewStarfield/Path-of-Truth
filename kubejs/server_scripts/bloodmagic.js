@@ -17,6 +17,21 @@ ServerEvents.recipes(event => {
     event.remove({id:'bloodmagic:array/movement'})
     event.remove({id:'bloodmagic:array/updraft'})
 
-
+    //炼金术桌配方修改
+    //魔力粉-奥术源质兑换
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "item": 'botania:mana_powder'
+            }
+        ],
+        "output": {
+          "item": 'irons_spellbooks:arcane_essence'
+        },
+        "syphon": 500,
+        "ticks": 200,
+        "upgradeLevel": 1
+    })
 
 })

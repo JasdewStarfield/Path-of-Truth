@@ -47,7 +47,16 @@ onEvent("recipes", event => {
     event.recipes.botania.mana_infusion("产出物", "原材料", 200, "下方催化方块")
     //精灵门交换
     event.recipes.botania.elven_trade(["minecraft:acacia_boat"], "minecraft:diamond")
-    event.recipes.botania.elven_trade(["minecraft:acacia_boat", "minecraft:acacia_button"], ["minecraft:diamond_block", "minecraft:gold_ingot"])
+    event.recipes.botania.elven_trade(
+        [
+            "输入1", 
+            "输入2"
+        ], 
+        [
+            "输出1", 
+            "输出2"
+        ]
+    )
     //白雏菊转化
     event.recipes.botania.pure_daisy("minecraft:acacia_button", "minecraft:acacia_leaves")
     event.recipes.botania.pure_daisy("minecraft:acacia_button", "minecraft:stone", 1)
@@ -89,5 +98,42 @@ event.custom({
     },
     texture: "bloodmagic:textures/models/alchemyarrays/watersigil.png"
 })
-
+//炼金术桌
+event.custom({
+  "type": "bloodmagic:alchemytable",
+  "input": [
+    {
+      "item": "bloodmagic:weak_tau"
+    },
+    {
+      "item": "bloodmagic:weak_tau"
+    },
+    {
+      "item": "bloodmagic:weak_tau"
+    },
+    {
+      "item": "minecraft:bone_meal"
+    }
+  ],
+  "output": {
+    "item": "bloodmagic:tauoil"
+  },
+  "syphon": 500,
+  "ticks": 200,
+  "upgradeLevel": 3
+})
+//祭坛
+event.custom({
+  "type": "bloodmagic:altar",
+  "altarSyphon": 2000,
+  "consumptionRate": 5,
+  "drainRate": 1,
+  "input": {
+    "tag": "forge:gems/diamond"
+  },
+  "output": {
+    "item": "bloodmagic:weakbloodorb"
+  },
+  "upgradeLevel": 0
+})
 */
