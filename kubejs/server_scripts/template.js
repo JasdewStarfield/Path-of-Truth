@@ -73,3 +73,20 @@ onEvent("recipes", event => {
     event.recipes.botania.marimorphosis("minecraft:acacia_door", "minecraft:acacia_fence_gate", 1, ["plains"], 10)
 })
 */
+/*
+血魔法修改模板
+//炼金矩阵
+event.custom({
+    type: "bloodmagic:array",
+    addedinput: {
+        item: '附加输入（第二输入）'
+    },
+    baseinput: {
+        item: '基底输入（第一输入）'(只能是指定的几种基底)
+    },
+    output: {
+        item: '输出'
+    }
+})
+
+*/

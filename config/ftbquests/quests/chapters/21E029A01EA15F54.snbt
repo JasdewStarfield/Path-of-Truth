@@ -43,8 +43,9 @@
 				"你有两种获得这口锅的方式："
 				"去寻找沼泽小屋，抢猪灵术士的锅；或者去下界找古战场，挑战远古骑士获得灰烬源质。"
 				"推荐第一种，因为第二种选项你目前应该是打不过的（确信"
-				"提示：你可以跳进锅里获得鲜血精华"
+				"提示：你可以跳进锅里获得鲜血精华，献祭自己也是献祭）"
 			]
+			icon: "irons_spellbooks:alchemist_cauldron"
 			id: "4320B37354ECBC14"
 			rewards: [{
 				id: "2B295BDA1C72940D"
@@ -52,11 +53,18 @@
 				type: "item"
 			}]
 			subtitle: "是雪啊（悲"
-			tasks: [{
-				id: "1A11EC0554E3322F"
-				item: "irons_spellbooks:alchemist_cauldron"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "1A11EC0554E3322F"
+					item: "irons_spellbooks:alchemist_cauldron"
+					type: "item"
+				}
+				{
+					id: "2EE4FD26F9E76AB5"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+			]
 			title: "我煮我自己"
 			x: -2.0d
 			y: 0.0d
@@ -139,6 +147,8 @@
 			description: [
 				"这些材料保留了传统的充能方式）"
 				"但需要的魔力量仍然不小）"
+				"所以你可能需要考虑如何获取大量魔力了。"
+				"黑莲花不可再生，只能让你应急一下）"
 			]
 			id: "1B2D939907CB4DF0"
 			rewards: [{
@@ -172,6 +182,116 @@
 			title: "魔能材料"
 			x: 0.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["57B126A840CCD6E4"]
+			icon: "bloodmagic:alchemytable"
+			id: "13313120B0D22371"
+			subtitle: "准备好绘制法阵了吗？"
+			tasks: [
+				{
+					id: "39D1D040B332B33C"
+					item: "bloodmagic:alchemytable"
+					type: "item"
+				}
+				{
+					id: "19798221916B0DF8"
+					item: {
+						Count: 1b
+						id: "bloodmagic:arcaneashes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "真正的炼金"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["57B126A840CCD6E4"]
+			description: [
+				"你已经准备好获取怪物的灵魂，那么，将投网扔到怪物的身上。"
+				"这会禁锢它们的意志，让你在杀死它们时获得恶魔意志的掉落。"
+				"投网是一次性用品，如果你需要更多，你需要自己制造。"
+			]
+			id: "60B15529BE147F62"
+			rewards: [{
+				count: 10
+				id: "32CE8FA3A263AC0D"
+				item: "bloodmagic:soulsnare"
+				type: "item"
+			}]
+			subtitle: "抽取怪物的力量！"
+			tasks: [{
+				id: "68B353027C9FC43D"
+				item: "bloodmagic:soulforge"
+				type: "item"
+			}]
+			title: "灵魂之力"
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["13313120B0D22371"]
+			id: "76E3812C8219949B"
+			subtitle: "无尽水和无尽岩浆的前置"
+			tasks: [
+				{
+					id: "3DE88F9C0B4B6D6F"
+					item: "bloodmagic:reagentwater"
+					type: "item"
+				}
+				{
+					id: "4889EF35AA2CFC94"
+					item: "bloodmagic:reagentlava"
+					type: "item"
+				}
+				{
+					id: "4AB8D784BCB3B4C8"
+					item: "bloodmagic:watersigil"
+					type: "item"
+				}
+				{
+					id: "2C56788977C52021"
+					item: "bloodmagic:lavasigil"
+					type: "item"
+				}
+			]
+			title: "水与火的试炼"
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["60B15529BE147F62"]
+			id: "643DA6D3D15ED948"
+			rewards: [{
+				id: "589783BB7C61ACED"
+				item: {
+					Count: 1b
+					id: "bloodmagic:soulsword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "20AA130C6EFE623B"
+				item: {
+					Count: 1b
+					id: "bloodmagic:soulgempetty"
+					tag: {
+						souls: 64.0d
+					}
+				}
+				type: "item"
+			}]
+			title: "灵魂能量存储"
+			x: 3.0d
+			y: -4.0d
 		}
 	]
 	subtitle: ["Blood and Soul"]
