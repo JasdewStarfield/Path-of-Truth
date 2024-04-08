@@ -17,18 +17,6 @@ ServerEvents.recipes(event => {
     event.remove({id:'bloodmagic:array/movement'})
     event.remove({id:'bloodmagic:array/updraft'})
 
-    //炼金矩阵优化
-    event.custom({
-        'type': "bloodmagic:array",
-        'addedinput': {
-            'item': '#forge:dusts/mana'
-        },
-        'baseinput': {
-            'item': 'bloodmagic:reagentwater'
-        },
-        'output': {
-            'item': 'irons_spellbooks:arcane_essence'
-        }
-    })
+
 
 })

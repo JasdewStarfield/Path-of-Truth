@@ -86,7 +86,8 @@ event.custom({
     },
     output: {
         item: '输出'
-    }
+    },
+    texture: "bloodmagic:textures/models/alchemyarrays/watersigil.png"
 })
 
 */
