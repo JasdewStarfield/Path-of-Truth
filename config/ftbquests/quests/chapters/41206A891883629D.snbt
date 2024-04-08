@@ -12,6 +12,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			id: "5F826044A3A07900"
+			subtitle: "然后你把你屁股底下的东西砍了）"
 			tasks: [{
 				id: "075C620C31120419"
 				item: {
@@ -24,6 +25,7 @@
 				title: "Any #minecraft:logs"
 				type: "item"
 			}]
+			title: "生活在树上"
 			x: 0.0d
 			y: 0.0d
 		}

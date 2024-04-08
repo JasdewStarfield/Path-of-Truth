@@ -1,0 +1,122 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "54FEB8EFCDFE57CF"
+	group: "5B3B99F7ECC70789"
+	icon: "minecraft:end_crystal"
+	id: "54FEB8EFCDFE57CF"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"开启方式和地狱门很像，石砖搭一个框架，然后催化石点一下，你就可以进去了）"
+				"进门之后注意安全，深园从来不缺少敌对生物。"
+			]
+			icon: "undergarden:catalyst"
+			id: "0E5C63B3D4891362"
+			subtitle: "Deep♂Dark♂Fantasy"
+			tasks: [
+				{
+					id: "6284E777A07EA445"
+					item: "undergarden:catalyst"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "637647066253066E"
+					item: "minecraft:stone_bricks"
+					type: "item"
+				}
+			]
+			title: "深园之行"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"你会发现末影之眼的合成难度增加了，但还是能做的。"
+				"为什么增加难度呢，因为不想让你到末地死的太难看（确信"
+			]
+			id: "193F465F65BC13F1"
+			subtitle: "前往虚空！"
+			tasks: [{
+				count: 12L
+				icon: "minecraft:ender_eye"
+				id: "606164797E57E03A"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			title: "虚空之路"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["193F465F65BC13F1"]
+			description: [
+				"你可能会发现末影龙很难打——这种时候我们的建议是战略性撤退。"
+				"装点纪念品就走还是可以的——也可以插个星辰台子作为传送点）"
+			]
+			id: "0C34A91AD3EBF977"
+			subtitle: "呃，打不过就走不丢人"
+			tasks: [{
+				id: "0BF9DA5D6D9EB2E2"
+				item: "botania:ender_air_bottle"
+				type: "item"
+			}]
+			title: "纪念品"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0E5C63B3D4891362"]
+			description: [
+				"深暗之园独有的材料，也是T3科技与魔法的必需品（"
+				"多整点（确信），你会喜欢上它的。"
+			]
+			id: "52A63601F3E154C8"
+			subtitle: "基本材料"
+			tasks: [{
+				id: "5EDA0A2EF656D716"
+				item: "undergarden:cloggrum_ingot"
+				type: "item"
+			}]
+			title: "扼腕叹息"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"0C34A91AD3EBF977"
+				"52A63601F3E154C8"
+			]
+			description: [
+				"末地空气可以转化铁和扼塞锭，同理魔法还有别的手段转化下界合金和遗忆锭，但那就没这么简单了。"
+				"炼金术就是材料互相转来转去）"
+			]
+			id: "066C04C6A6CBCCB3"
+			rewards: [
+				{
+					id: "0A41AE9EF78E19E5"
+					item: "botania:ender_air_bottle"
+					type: "item"
+				}
+				{
+					id: "0039F9F8117D719E"
+					item: "undergarden:cloggrum_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "末地空气的妙用"
+			tasks: [{
+				id: "49BD74DC5C0E9AD5"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "转化！"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "深暗与虚空"
+}

@@ -37,31 +37,6 @@
 				type: "item"
 			}]
 			title: "升级你的背包"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			description: [
-				"开启方式和地狱门很像，石砖搭一个框架，然后催化石点一下，你就可以进去了）"
-				"进门之后注意安全，深园从来不缺少敌对生物。"
-			]
-			icon: "undergarden:catalyst"
-			id: "0E5C63B3D4891362"
-			subtitle: "Deep♂Dark♂Fantasy"
-			tasks: [
-				{
-					id: "6284E777A07EA445"
-					item: "undergarden:catalyst"
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "637647066253066E"
-					item: "minecraft:stone_bricks"
-					type: "item"
-				}
-			]
-			title: "深园之行"
 			x: -1.5d
 			y: 1.5d
 		}
@@ -119,6 +94,7 @@
 				"昏暗而压抑的世界，以及会把你点燃的虫子）"
 				"这个世界的怪物以虫子为主，而且风景不是很好，但水晶沙漠很漂亮，建议去看看）"
 				"另外，水晶沙漠的水晶树需要镐子挖掘——这个世界的稿子才可以。"
+				"友情提示：这个世界产出粘液球"
 			]
 			icon: "blue_skies:everdawn_portal"
 			id: "280307C036B9B6E7"
@@ -145,6 +121,40 @@
 			title: "永恒黄昏"
 			x: 1.5d
 			y: -1.5d
+		}
+		{
+			dependencies: [
+				"7A6D4E28C28302FE"
+				"280307C036B9B6E7"
+			]
+			description: [
+				"低配版传送器是这样的——不过至少能用。"
+				"传送石碑？不存在的。"
+				"如果你希望瞬发传送，那你要等一等了——血魔法的传送符咒后期能做到这一点。"
+			]
+			icon: "blue_skies:star_flare"
+			id: "636824522AD771D1"
+			rewards: [{
+				id: "40B7C002A158D4E7"
+				item: "blue_skies:star_emitter"
+				type: "item"
+			}]
+			subtitle: "照亮回家的路……"
+			tasks: [
+				{
+					id: "4D5ACAF46F6400AA"
+					item: "blue_skies:star_emitter"
+					type: "item"
+				}
+				{
+					id: "6639E0C630BE8D26"
+					item: "blue_skies:astrolabe"
+					type: "item"
+				}
+			]
+			title: "星星点灯"
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	subtitle: ["Spirt of Exploration"]

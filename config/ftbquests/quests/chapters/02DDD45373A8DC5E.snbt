@@ -18,7 +18,14 @@
 			subtitle: "自己动手，丰衣足食"
 			tasks: [{
 				id: "66B578110EFCF7EA"
-				item: "minecraft:crafting_table"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:workbench"
+					}
+				}
+				title: "Any #forge:workbench"
 				type: "item"
 			}]
 			title: "从原始工具开始"

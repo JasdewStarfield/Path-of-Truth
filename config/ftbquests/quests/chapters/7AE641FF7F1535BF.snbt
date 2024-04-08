@@ -1,0 +1,24 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7AE641FF7F1535BF"
+	group: "5B3B99F7ECC70789"
+	icon: "immersiveengineering:circuit_table"
+	id: "7AE641FF7F1535BF"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "5B1818D5A1142A16"
+		shape: "gear"
+		subtitle: "切割磁感线……"
+		tasks: [{
+			id: "0468C63E0DA354E7"
+			item: "create_new_age:generator_coil"
+			type: "item"
+		}]
+		title: "磁能发电"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "电光闪耀"
+}

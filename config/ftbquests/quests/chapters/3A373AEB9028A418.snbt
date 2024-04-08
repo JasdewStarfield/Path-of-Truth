@@ -32,7 +32,7 @@
 				"但这里没有一个父亲让你干掉……也没有霜之哀伤。"
 				"当然，有亡灵。"
 			]
-			icon: "immersive_weathering:snowy_stone_bricks"
+			icon: "snowyspirit:snow_globe"
 			id: "6CA55CF413645302"
 			subtitle: "永恒寒冬……"
 			tasks: [{
@@ -157,6 +157,20 @@
 					icon: "blue_skies:everdawn_portal"
 					id: "6B3BCA57A1092DAE"
 					title: "访问恒晓之地"
+					type: "dimension"
+				}
+				{
+					dimension: "minecraft:the_nether"
+					icon: "minecraft:nether_star"
+					id: "4AC4C4DE3BBD2FEB"
+					title: "访问下界"
+					type: "dimension"
+				}
+				{
+					dimension: "minecraft:the_end"
+					icon: "minecraft:end_portal_frame"
+					id: "3C4C2257B8596DC6"
+					title: "访问末地"
 					type: "dimension"
 				}
 			]

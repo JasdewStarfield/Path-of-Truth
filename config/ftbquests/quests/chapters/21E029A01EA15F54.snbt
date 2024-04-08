@@ -11,6 +11,10 @@
 	quests: [
 		{
 			dependencies: ["708CC78EEB470115"]
+			description: [
+				"有关于血魔法的大部分内容都在这本书里。"
+				"如果不在，那么你最好自己查一下JEI）"
+			]
 			icon: {
 				Count: 1b
 				id: "patchouli:guide_book"
@@ -20,6 +24,7 @@
 			}
 			id: "11E3776CE5E23255"
 			shape: "octagon"
+			size: 1.5d
 			subtitle: "首先，你需要找到教程"
 			tasks: [{
 				id: "015B595F49230663"
@@ -239,6 +244,11 @@
 		{
 			dependencies: ["13313120B0D22371"]
 			id: "76E3812C8219949B"
+			rewards: [{
+				id: "63AF9724E033F83F"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
 			subtitle: "无尽水和无尽岩浆的前置"
 			tasks: [
 				{
@@ -268,6 +278,10 @@
 		}
 		{
 			dependencies: ["60B15529BE147F62"]
+			description: [
+				"很快你就会发现一地的恶魔意志是个很烦人的事情，尤其是它们还不能叠加。"
+				"这种时候，做一块魂石就成为了必要的：将魂石和恶魔意志一起扔在地上，它就会自动进行吸收！"
+			]
 			id: "643DA6D3D15ED948"
 			rewards: [{
 				id: "589783BB7C61ACED"
@@ -280,6 +294,7 @@
 				}
 				type: "item"
 			}]
+			subtitle: "嗯，还是电池"
 			tasks: [{
 				id: "20AA130C6EFE623B"
 				item: {
@@ -301,7 +316,7 @@
 				"60B15529BE147F62"
 			]
 			description: [
-				"血魔法的祭坛分为5级，每一级都需要更多的符文和装饰品。"
+				"血魔法的祭坛分为5级，每升一级都需要更多的符文和装饰品。"
 				"2级祭坛的具体构建方法已经在血染知书中，这里就不再赘述。"
 				"如果你的英文水平不行，请自己寻找翻译软件，因为魔法侧的作者实在不想写汉化。"
 				"不同的符文会给祭坛带来不同的加成，这一点请自行探索。"
@@ -312,6 +327,8 @@
 				item: "bloodmagic:orbcapacityrune"
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 1.5d
 			subtitle: "是的，你需要升级"
 			tasks: [{
 				count: 8L
@@ -417,6 +434,8 @@
 				item: "irons_spellbooks:epic_ink"
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 1.5d
 			subtitle: "杀猪爆装备，一刀999！"
 			tasks: [
 				{
@@ -460,7 +479,7 @@
 				item: "minecraft:budding_amethyst"
 				type: "item"
 			}]
-			subtitle: "是的，墨水升级也需要核心材料"
+			subtitle: "墨水升级也需要核心材料"
 			tasks: [
 				{
 					id: "54EFED2F5BBEF4B6"
@@ -559,6 +578,261 @@
 			title: "魔法炼药"
 			x: 1.0d
 			y: 4.0d
+		}
+		{
+			dependencies: [
+				"532F8BFB9374238B"
+				"588310807CE42A4A"
+			]
+			description: [
+				"由于药水这种东西是一次性的，而一次性的东西总是很讨厌，所以魔法提供了一种固化效果的手段。"
+				"利用酿造台和魔力，你可以持续获得某种效果的加成！"
+				"当然，你最好带上一块魔力石板在身上……"
+			]
+			id: "718DE6A22EEBDD50"
+			rewards: [{
+				id: "4D86A6DD0D9E483A"
+				item: "botania:aura_ring_greater"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "永远存在的药水总是很诱人"
+			tasks: [{
+				id: "30020DAB711D4621"
+				item: "botania:blood_pendant"
+				type: "item"
+			}]
+			title: "长效加成"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["532F8BFB9374238B"]
+			description: [
+				"我们讨论炼金的时候本质是物质的转变，而对于特定产物的拆分和重组显然也是其中一部分。"
+				"这里提供三个例子：将魔力钢锭拆分为奥术源质；将粘液球转化为末影珍珠，将血魔法的气血宝珠逆向还原为钻石。"
+				"更多的神秘配方就要自己探索了，话说的太明白就没意思了）"
+			]
+			icon: "botania:mana_void"
+			id: "01ABDF6D02F461D6"
+			rewards: [
+				{
+					id: "33E380DD12CA5810"
+					item: "botania:manasteel_ingot"
+					type: "item"
+				}
+				{
+					id: "436043AD02B27677"
+					item: "minecraft:slime_ball"
+					type: "item"
+				}
+				{
+					id: "65563A865AE4ED42"
+					item: "bloodmagic:weakbloodorb"
+					type: "item"
+				}
+			]
+			subtitle: "坐下，基本操作"
+			tasks: [
+				{
+					id: "0313C565F0FCA771"
+					item: "irons_spellbooks:arcane_essence"
+					type: "item"
+				}
+				{
+					id: "53B69DB60A8288CD"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "1AEABD7370315090"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "裂解与重组"
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["588310807CE42A4A"]
+			description: [
+				"60倍的长效，想想就爽！"
+				"可惜是固定位置的东西）"
+			]
+			icon: "botania:incense_stick"
+			id: "5F8D901373EA1182"
+			rewards: [{
+				id: "76CD46DCEF9F2F4D"
+				item: {
+					Count: 1b
+					id: "botania:incense_stick"
+					tag: {
+						brewKey: "botania:regen_weak"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "给你自己上香的感觉怎么样？"
+			tasks: [
+				{
+					id: "7F5D64BEBAFC5D8D"
+					item: "botania:incense_stick"
+					type: "item"
+				}
+				{
+					id: "1D3665C18C195047"
+					item: "botania:incense_plate"
+					type: "item"
+				}
+			]
+			title: "短暂，但有效"
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2EA11306B3076434"]
+			description: ["但是它还是会吃你的魔力，所以你得找靠谱且稳定的魔力生产方式。"]
+			id: "6FA24342A82507F6"
+			subtitle: "这个大门其实只是个交易入口）"
+			tasks: [
+				{
+					id: "7A1B73EB8DFDBD82"
+					item: "botania:pixie_dust"
+					type: "item"
+				}
+				{
+					id: "032B3C0F3679278B"
+					item: "botania:elementium_ingot"
+					type: "item"
+				}
+				{
+					id: "591047D9703153E5"
+					item: "botania:dragonstone"
+					type: "item"
+				}
+				{
+					id: "495E63F848850701"
+					item: "botania:dreamwood_log"
+					type: "item"
+				}
+			]
+			title: "PY交易"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2EA11306B3076434"]
+			description: [
+				"为了顺利完成后续的一些事情，火花这种远程传输魔力的结构就成为了必需品。"
+				"好处是它还算廉价，坏处是你必须通过和精灵的交易才能开始搞这些。"
+			]
+			id: "5F1578F61B3B2D32"
+			subtitle: "闪耀的魔法之光"
+			tasks: [{
+				id: "5A3CAB8C0D47DD50"
+				item: "botania:spark"
+				type: "item"
+			}]
+			title: "魔力传输"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6FA24342A82507F6"]
+			description: [
+				"除了正经材料外，精灵门还可以给你提供更好看的玻璃和石英。"
+				"这允许你制造一些光污染更严重的东西……"
+			]
+			id: "6F89A8F4809FAED1"
+			rewards: [{
+				id: "66700AFCDCB5B082"
+				item: "botania:rainbow_rod"
+				type: "item"
+			}]
+			subtitle: "精灵的东西总是更好看的"
+			tasks: [
+				{
+					id: "63B652DDC29B935E"
+					item: "botania:elf_glass"
+					type: "item"
+				}
+				{
+					id: "317F74E4B71975CF"
+					item: "botania:quartz_elven"
+					type: "item"
+				}
+			]
+			title: "炫彩装备"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5F1578F61B3B2D32"]
+			description: [
+				"火花弥散升级可以让魔力池自动给你身上的魔力相关装备充能。"
+				"靠近就能充电——只要有电）"
+				"这下不用每次拿着板子往池子里丢了！"
+				"注：给你的这个炫彩池子和普通池子其实没啥区别，只是有光污染（"
+			]
+			icon: "botania:fabulous_pool"
+			id: "5DDEF3279BE872D5"
+			rewards: [{
+				id: "6DBC8DCB59738FE5"
+				item: "botania:fabulous_pool"
+				type: "item"
+			}]
+			subtitle: "这下真的是电池了"
+			tasks: [
+				{
+					id: "5C8772B9B34153CB"
+					item: "botania:spark_upgrade_dispersive"
+					type: "item"
+				}
+				{
+					id: "52D099BEAE968FA8"
+					item: "botania:spark_changer"
+					type: "item"
+				}
+			]
+			title: "充魔站"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5F1578F61B3B2D32"
+				"6FA24342A82507F6"
+			]
+			description: [
+				"作为后续高级凝聚操作的核心部件，麻烦一点也是正常的。"
+				"请准备好足够多的材料来完成这一切……然后搭建凝聚结构，你就可以准备迎接泰拉钢时代了。"
+				"有一点要注意，这个板子还会拿来合成别的，别以为只有泰拉钢……"
+			]
+			id: "27ABB5338B46217F"
+			rewards: [{
+				id: "1195091C3344D91C"
+				item: {
+					Count: 1b
+					id: "botania:terra_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "嗯，很复杂"
+			tasks: [{
+				id: "03194BBDEF9F93B8"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			title: "泰拉之光"
+			x: 6.0d
+			y: 0.0d
 		}
 	]
 	subtitle: ["Blood and Soul"]

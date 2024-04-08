@@ -1,0 +1,68 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "618B001D3C0B96CC"
+	group: "5B3B99F7ECC70789"
+	icon: "botania:mana_bottle"
+	id: "618B001D3C0B96CC"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["27ABB5338B46217F"]
+			description: ["终于，你获得了一些植物魔法的高级材料，这也意味着你可以合成一些更带劲的东西了。"]
+			id: "0F9DF1C5137194E4"
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "很难合成吧，很难合成就对了"
+			tasks: [{
+				id: "1D4B13BA4AF02BCE"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			title: "泰拉之力"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F9DF1C5137194E4"]
+			description: [
+				"这可能是植魔内部最强大的工具之一，配合不同的透镜可以打出不同的神秘效果。"
+				"基于这个工具出现的位置，风暴透镜现在可以合成了！"
+				"用你的魔力去征服这个世界吧！"
+			]
+			icon: {
+				Count: 1b
+				id: "botania:mana_gun"
+				tag: { }
+			}
+			id: "761B189A2DBC58B3"
+			rewards: [{
+				id: "51A55AF8B2E72467"
+				item: "botania:clip"
+				type: "item"
+			}]
+			subtitle: "甚至多功能）"
+			tasks: [
+				{
+					id: "5D710D0F2741FE98"
+					item: {
+						Count: 1b
+						id: "botania:mana_gun"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "00DD32E8C6FC66ED"
+					item: "botania:lens_storm"
+					type: "item"
+				}
+			]
+			title: "植魔最强工具"
+			x: 0.0d
+			y: -3.0d
+		}
+	]
+	title: "魔力流淌"
+}

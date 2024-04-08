@@ -38,6 +38,70 @@ ServerEvents.recipes(event => {
     //魔钢-奥术源质兑换
     event.recipes.botania.mana_infusion('4x irons_spellbooks:arcane_essence', 'botania:manasteel_ingot', 1000, 'botania:alchemy_catalyst')
 
+    //泰拉凝聚板配方修改
+    event.remove({ output: 'botania:terra_plate' })
+    event.shaped(Item.of('botania:terra_plate',1),
+        ['ABA',
+        'CDE',
+        'FGH'],
+        {
+            A:'botania:manasteel_block',
+            B:'irons_spellbooks:arcane_rune',
+            C:'botania:rune_earth',
+            D:'botania:elementium_block',
+            E:'botania:rune_water',
+            F:'botania:rune_fire',
+            G:'botania:rune_mana',
+            H:'botania:rune_air'
+        }
+    )
+
+    //火花配方替换
+    event.replaceInput({mod:'botania',output:'botania:spark'},
+    'minecraft:gold_nugget', 'botania:elementium_nugget' )
+
+    //自然水晶配方替换
+    event.replaceInput({mod:'botania',output:'botania:natura_pylon'},
+    'minecraft:ender_eye', 'minecraft:ender_pearl' )
+    event.replaceInput({mod:'botania',output:'botania:natura_pylon'},
+    'botania:terrasteel_nugget', 'create:brass_nugget' )
+
+    //精灵门核心配方替换
+    event.replaceInput({mod:'botania',output:'botania:alfheim_portal'},
+    'botania:terrasteel_nugget', 'create:brass_nugget' )
+
+    //魔力枪配方替换
+    event.replaceInput({mod:'botania',output:'botania:mana_gun'},
+    'minecraft:tnt', 'botania:terrasteel_ingot' )
+    event.replaceInput({mod:'botania',output:'botania:mana_gun'},
+    'botania:redstone_spreader', 'bloodmagic:magicianbloodorb' )
+
+    //风暴透镜配方
+    event.shaped(Item.of('botania:lens_storm',1),
+        ['ABA',
+        'CDC',
+        'ABA'],
+        {
+            A:'#forge:ingots/steel',
+            B:'botania:ender_air_bottle',
+            C:'botania:dragonstone',
+            D:'bloodmagic:magicianbloodorb'
+        }
+    )
+
+    //末影之眼配方重写
+    event.remove({output:'minecraft:ender_eye'})
+    event.shaped(Item.of('minecraft:ender_eye',3),
+        ['ABA',
+        'BCB',
+        'ABA'],
+        {
+            A:'create:brass_nugget',
+            B:'botania:terrasteel_nugget',
+            C:'botania:mana_pearl'
+        }
+    )
+
     //精灵门交换奥术源质-魔力粉
     event.recipes.botania.elven_trade(
         [
@@ -57,6 +121,18 @@ ServerEvents.recipes(event => {
             'minecraft:bone',
             'minecraft:snow_block'
         ]
+    )
+
+    //星盘配方增加
+    event.shaped(Item.of('blue_skies:astrolabe',1),
+        ['ABA',
+        'BCB',
+        'ABA'],
+        {
+            A:'botania:dragonstone',
+            B:'blue_skies:falsite_ingot',
+            C:'blue_skies:star_flare'
+        }
     )
 
     //产能花系列配方修改
