@@ -38,6 +38,27 @@ ServerEvents.recipes(event => {
     //魔钢-奥术源质兑换
     event.recipes.botania.mana_infusion('4x irons_spellbooks:arcane_essence', 'botania:manasteel_ingot', 1000, 'botania:alchemy_catalyst')
 
+    //精灵门交换奥术源质-魔力粉
+    event.recipes.botania.elven_trade(
+        [
+            'botania:mana_powder'
+        ], 
+        [
+            'irons_spellbooks:arcane_essence'
+        ]
+    )
+
+    //精灵门产出冰封骨头
+    event.recipes.botania.elven_trade(
+        [
+            'irons_spellbooks:frozen_bone'
+        ], 
+        [
+            'minecraft:bone',
+            'minecraft:snow_block'
+        ]
+    )
+
     //产能花系列配方修改
     //火红莲
     event.remove({ output: 'botania:endoflame' })

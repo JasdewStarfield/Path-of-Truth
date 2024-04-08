@@ -1,4 +1,13 @@
 //此文件提供血魔法系列修改
+//syphon=LP数值
+//altarLevel/orbLevel=等级
+//consumptionRate=LP消耗率（速度）
+//drainRate=LP流失率（损耗）
+//tick=速度（20tick=1s）
+//count=数量
+//minimumDrain=恶魔意志最小值
+//drain=恶魔意志消耗值
+
 ServerEvents.recipes(event => {
     //修改血祭坛配方
     //底层青铜，两侧活石，中间高炉砖
@@ -33,5 +42,22 @@ ServerEvents.recipes(event => {
         "ticks": 200,
         "upgradeLevel": 1
     })
+
+    //祭坛配方修改
+    //雷电瓶生成
+    event.custom({
+        "type": "bloodmagic:altar",
+        "altarSyphon": 500,
+        "consumptionRate": 10,
+        "drainRate": 0,
+        "input": {
+            "item": 'botania:mana_bottle'
+        },
+        "output": {
+            "item": 'irons_spellbooks:lightning_bottle'
+        },
+        "upgradeLevel": 1
+    })
+
 
 })

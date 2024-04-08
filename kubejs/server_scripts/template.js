@@ -46,15 +46,14 @@ onEvent("recipes", event => {
     //法力充能
     event.recipes.botania.mana_infusion("产出物", "原材料", 200, "下方催化方块")
     //精灵门交换
-    event.recipes.botania.elven_trade(["minecraft:acacia_boat"], "minecraft:diamond")
     event.recipes.botania.elven_trade(
-        [
-            "输入1", 
-            "输入2"
-        ], 
         [
             "输出1", 
             "输出2"
+        ], 
+        [
+            "输入1", 
+            "输入2"
         ]
     )
     //白雏菊转化
@@ -84,56 +83,42 @@ onEvent("recipes", event => {
 */
 /*
 血魔法修改模板
-//炼金矩阵
-event.custom({
-    type: "bloodmagic:array",
-    addedinput: {
-        item: '附加输入（第二输入）'
-    },
-    baseinput: {
-        item: '基底输入（第一输入）'(只能是指定的几种基底)
-    },
-    output: {
-        item: '输出'
-    },
-    texture: "bloodmagic:textures/models/alchemyarrays/watersigil.png"
-})
 //炼金术桌
 event.custom({
-  "type": "bloodmagic:alchemytable",
-  "input": [
-    {
-      "item": "bloodmagic:weak_tau"
+    "type": "bloodmagic:alchemytable",
+    "input": [
+        {
+            "item": "bloodmagic:weak_tau"
+        },
+        {
+            "item": "bloodmagic:weak_tau"
+        },
+        {
+            "item": "bloodmagic:weak_tau"
+        },
+        {
+            "item": "minecraft:bone_meal"
+        }
+    ],
+    "output": {
+        "item": "bloodmagic:tauoil"
     },
-    {
-      "item": "bloodmagic:weak_tau"
-    },
-    {
-      "item": "bloodmagic:weak_tau"
-    },
-    {
-      "item": "minecraft:bone_meal"
-    }
-  ],
-  "output": {
-    "item": "bloodmagic:tauoil"
-  },
-  "syphon": 500,
-  "ticks": 200,
-  "upgradeLevel": 3
+    "syphon": 500,
+    "ticks": 200,
+    "upgradeLevel": 3
 })
 //祭坛
 event.custom({
-  "type": "bloodmagic:altar",
-  "altarSyphon": 2000,
-  "consumptionRate": 5,
-  "drainRate": 1,
-  "input": {
-    "tag": "forge:gems/diamond"
-  },
-  "output": {
-    "item": "bloodmagic:weakbloodorb"
-  },
-  "upgradeLevel": 0
+    "type": "bloodmagic:altar",
+    "altarSyphon": 2000,
+    "consumptionRate": 5,
+    "drainRate": 1,
+    "input": {
+        "tag": "forge:gems/diamond"
+    },
+    "output": {
+        "item": "bloodmagic:weakbloodorb"
+    },
+    "upgradeLevel": 0
 })
 */

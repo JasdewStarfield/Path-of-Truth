@@ -293,6 +293,88 @@
 			x: 3.0d
 			y: -4.0d
 		}
+		{
+			dependencies: [
+				"13313120B0D22371"
+				"60B15529BE147F62"
+			]
+			description: [
+				"血魔法的祭坛分为5级，每一级都需要更多的符文和装饰品。"
+				"2级祭坛的具体构建方法已经在血染知书中，这里就不再赘述。"
+				"如果你的英文水平不行，请自己寻找翻译软件，因为魔法侧的作者实在不想写汉化。"
+			]
+			id: "7338DDFCE4617258"
+			subtitle: "是的，你需要升级"
+			tasks: [{
+				count: 8L
+				id: "3A94890A0628B0D8"
+				item: "bloodmagic:blankrune"
+				type: "item"
+			}]
+			title: "符文与高阶祭坛"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			id: "7CCCB823C49F78E8"
+			subtitle: "哇，金色传说！"
+			tasks: [{
+				id: "2001D70EA3440122"
+				item: "irons_spellbooks:legendary_ink"
+				type: "item"
+			}]
+			title: "传奇之路"
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			description: [
+				"如果你要书写法术卷轴，你需要纸以及对应派系的材料。"
+				"现在，所有材料都可以通过特定的方式获得，所以——祝你好运！"
+			]
+			id: "719876BE47F58EE6"
+			rewards: [{
+				id: "71F219F0B3EF03E0"
+				item: "irons_spellbooks:scroll_forge"
+				type: "item"
+			}]
+			subtitle: "六种派系，六类材料"
+			tasks: [
+				{
+					id: "33C00FE7789AFE4D"
+					item: "irons_spellbooks:lightning_bottle"
+					type: "item"
+				}
+				{
+					id: "3613DFF48CF53ADC"
+					item: "irons_spellbooks:blood_vial"
+					type: "item"
+				}
+				{
+					id: "5F9FA6BB079DF0C7"
+					item: "minecraft:poisonous_potato"
+					type: "item"
+				}
+				{
+					id: "792400EAB090AA95"
+					item: "minecraft:ender_pearl"
+					type: "item"
+				}
+				{
+					id: "04D6568FE2D16820"
+					item: "irons_spellbooks:frozen_bone"
+					type: "item"
+				}
+				{
+					id: "67B2711CBB36B8B5"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "自然要素"
+			x: -4.0d
+			y: 1.0d
+		}
 	]
 	subtitle: ["Blood and Soul"]
 	title: "鲜血与灵魂"
