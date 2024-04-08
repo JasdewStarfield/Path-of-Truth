@@ -48,10 +48,9 @@
 			id: "6C542C19575974DB"
 			subtitle: "下地狱去吧"
 			tasks: [{
-				count: 10L
-				id: "6D3BC27D15BE719A"
-				item: "minecraft:obsidian"
-				type: "item"
+				dimension: "minecraft:the_nether"
+				id: "746125215F4246FB"
+				type: "dimension"
 			}]
 			title: "下界之旅"
 			x: 1.5d

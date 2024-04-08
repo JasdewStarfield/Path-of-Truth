@@ -8,22 +8,173 @@
 	id: "4F2AC29E9F4DB90D"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["6E0D85E43EDF1994"]
-		description: ["所以，工业的新篇章也对你开启了。"]
-		id: "11EC3A84F0C84E65"
-		shape: "gear"
-		size: 1.5d
-		subtitle: "现在你获得了铁！"
-		tasks: [{
-			id: "22AC8380896E7FE2"
-			item: "minecraft:iron_ingot"
-			type: "item"
-		}]
-		title: "工业基石"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["6E0D85E43EDF1994"]
+			description: ["所以，工业的新篇章也对你开启了。"]
+			id: "11EC3A84F0C84E65"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "现在你获得了铁！"
+			tasks: [{
+				id: "22AC8380896E7FE2"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "工业基石"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11EC3A84F0C84E65"]
+			id: "7678AE43CAD02807"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "48234F51A3513B8A"
+					item: "create:mechanical_drill"
+					type: "item"
+				}
+				{
+					id: "6619F45A4AA2D1D2"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+				{
+					id: "507BEC2FEDB301FB"
+					item: "create:mechanical_harvester"
+					type: "item"
+				}
+				{
+					id: "707CBC1FA35E277F"
+					item: "create:mechanical_plough"
+					type: "item"
+				}
+				{
+					id: "5F7106FD19254060"
+					item: "create:encased_fan"
+					type: "item"
+				}
+			]
+			title: "更多的自动化选项！"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["11EC3A84F0C84E65"]
+			id: "2B406E71D5BDF8F6"
+			shape: "diamond"
+			tasks: [{
+				id: "0C0BF712FDF13068"
+				item: {
+					Count: 1b
+					id: "rechiseled:chisel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2B406E71D5BDF8F6"]
+			id: "73E629F1A17FB01C"
+			shape: "diamond"
+			tasks: [{
+				id: "540638E716CDF4C8"
+				item: "rechiseledcreate:mechanical_chisel"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7678AE43CAD02807"]
+			id: "6FCB66E5BB478C58"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "21460245451253F6"
+					item: "create:mechanical_bearing"
+					type: "item"
+				}
+				{
+					id: "6E47C3BF35277032"
+					item: "create:linear_chassis"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["11EC3A84F0C84E65"]
+			id: "003B99516797BF14"
+			tasks: [{
+				id: "3B61818AD5CFF549"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["003B99516797BF14"]
+			id: "079D9B3E0E12C25C"
+			tasks: [{
+				id: "5C39BB7A279025A1"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["079D9B3E0E12C25C"]
+			id: "4D493DCB4C0B99C0"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "6F6E71B404D74CDF"
+				item: "immersiveengineering:ingot_constantan"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			id: "28617A52922404CE"
+			tasks: [{
+				id: "36A3FEAB539C0157"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 8.0d
+		}
+		{
+			id: "27FD1F76136CBD0B"
+			tasks: [
+				{
+					id: "3D101CE978CB5A33"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "1E492131DABC2BCD"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+				{
+					id: "7D2C738F52D8C1BD"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 8.0d
+		}
+	]
 	subtitle: ["Hearts of Iron"]
 	title: "钢铁雄心"
 }

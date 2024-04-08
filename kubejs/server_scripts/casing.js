@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
     //铜机壳
     event.remove({id:'create:item_application/copper_casing_from_wood'})
     event.remove({id:'create:item_application/copper_casing_from_log'})
-    casing('create:copper_casing', 'kubejs:bronze_sheet')
+    casing('create:copper_casing', 'immersiveengineering:plate_constantan')
 
     //黄铜机壳
     event.remove({id:'create:item_application/brass_casing_from_wood'})

@@ -72,4 +72,12 @@ ServerEvents.recipes(event => {
         "input":{"item":"tfmg:coal_coke_dust"},
         "time":3200
     })
+
+    //流体管道
+    event.remove({id:"immersiveengineering:crafting/fluid_pipe"})
+    event.replaceInput(
+        { input:"immersiveengineering:fluid_pipe" },
+        'immersiveengineering:fluid_pipe',
+        'tfmg:steel_pipe'
+    )
 })

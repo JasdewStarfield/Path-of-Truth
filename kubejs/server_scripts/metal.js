@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
     )
 
     //青铜粉和锭
-    event.smelting('#forge:ingots/bronze', '#forge:dusts/bronze')
+    event.blasting('#forge:ingots/bronze', '#forge:dusts/bronze')
 
     //青铜压板
     event.recipes.create.pressing('#forge:plates/bronze', '#forge:ingots/bronze')
@@ -183,10 +183,40 @@ ServerEvents.recipes(event => {
     //用铜粉、锡粉合成青铜粉
     event.recipes.create.mixing('kubejs:bronze_dust', ['#forge:dusts/tin','#forge:dusts/copper','#forge:dusts/copper','#forge:dusts/copper'])
 
-    //石磨粉碎铜锭锡锭
+    //石磨粉碎铜锭锡锭镍锭
     event.recipes.create.milling(Item.of('kubejs:tin_dust').withChance(0.5), '#forge:ingots/tin')
     event.recipes.create.milling(Item.of('immersiveengineering:dust_copper').withChance(0.5), '#forge:ingots/copper')
+    event.recipes.create.milling(Item.of('immersiveengineering:dust_nickel').withChance(0.5), '#forge:ingots/nickel')
 
     event.remove({id:/alloyed\.*/})
     event.recipes.create.mixing('kubejs:bronze_ingot', ['#forge:ingots/tin','#forge:ingots/copper','#forge:ingots/copper','#forge:ingots/copper']).heated()
+
+    //康铜
+    //移除合成康铜粉配方
+    event.remove({id:"immersiveengineering:crafting/constantan_mix"})
+    //新增加热搅拌配方
+    event.recipes.create.mixing('2x #forge:dusts/constantan', ['#forge:dusts/nickel','#forge:dusts/copper']).heated()
+    //补充辊压配方
+    event.recipes.create.pressing('#forge:plates/constantan', '#forge:ingots/constantan')
+    //康铜代替铜
+    event.replaceInput(
+        { input:"#forge:ingots/copper",mod:"immersiveengineering" },
+        '#forge:ingots/copper',
+        '#forge:ingots/constantan'
+    )
+    event.replaceInput(
+        { output:"create:fluid_pipe" },
+        '#forge:ingots/copper',
+        '#forge:ingots/constantan'
+    )
+    event.replaceInput(
+        { output:"create:fluid_pipe" },
+        '#forge:plates/copper',
+        '#forge:plates/constantan'
+    )
+    event.replaceInput(
+        { output:"create:fluid_tank" },
+        '#forge:plates/copper',
+        '#forge:plates/constantan'
+    )
 })
