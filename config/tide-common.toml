@@ -1,0 +1,560 @@
+#Lets the fishing rod be charged like a bow to cast the hook farther
+giveJournal = true
+
+#+++ Fishing Journal Configs +++ 
+#You can add custom fish and pages to the "custom" slots.
+[journal]
+
+	#+++ Journal pages +++ 
+	#[id]: The internal name of the page
+	#[content]: The translation for the display name of the page
+	#[title]: The description text that appears on the page
+	#[unlockedByDefault]: If the page is unlocked by default
+	#[icon]: The item icon that shows up on the "new page unlocked" toast
+	[journal.pages]
+
+		[journal.pages.welcome]
+			id = "welcome"
+			title = "journal.title.welcome"
+			content = "journal.content.welcome"
+			icon = "minecraft:air"
+			unlockedByDefault = true
+
+		[journal.pages.freshwater]
+			id = "freshwater"
+			title = "journal.title.freshwater"
+			content = "journal.content.freshwater"
+			icon = "minecraft:salmon"
+			unlockedByDefault = false
+
+		[journal.pages.saltwater]
+			id = "saltwater"
+			title = "journal.title.saltwater"
+			content = "journal.content.saltwater"
+			icon = "minecraft:tropical_fish"
+			unlockedByDefault = false
+
+		[journal.pages.underground]
+			id = "underground"
+			title = "journal.title.underground"
+			content = "journal.content.underground"
+			icon = "minecraft:stone"
+			unlockedByDefault = false
+
+		[journal.pages.depths]
+			id = "depths"
+			title = "journal.title.depths"
+			content = "journal.content.depths"
+			icon = "minecraft:deepslate"
+			unlockedByDefault = false
+
+		[journal.pages.biome]
+			id = "biome"
+			title = "journal.title.biome"
+			content = "journal.content.biome"
+			icon = "tide:sporestalker"
+			unlockedByDefault = false
+
+		[journal.pages.nether]
+			id = "nether"
+			title = "journal.title.nether"
+			content = "journal.content.nether"
+			icon = "tide:magma_mackerel"
+			unlockedByDefault = false
+
+		[journal.pages.end]
+			id = "end"
+			title = "journal.title.end"
+			content = "journal.content.end"
+			icon = "tide:endstone_perch"
+			unlockedByDefault = false
+
+		[journal.pages.blueskies]
+			id = "blueskies"
+			title = "journal.title.blueskies"
+			content = "journal.content.blueskies"
+			icon = "blue_skies:municipal_monkfish"
+			unlockedByDefault = false
+
+		#These are custom slots for journal pages. To use, change the id to the
+		#name of the page (ex. "freshwater") and fill in the required info.
+		#NOTE: Do not change the headers, which is the line directly below this text
+		[journal.pages.custom-0]
+			id = "custom-0"
+			title = "Custom Page"
+			content = "This is an unused custom page"
+			icon = "minecraft:barrier"
+			unlockedByDefault = false
+
+		[journal.pages.custom-1]
+			id = "custom-1"
+			title = "Custom Page"
+			content = "This is an unused custom page"
+			icon = "minecraft:barrier"
+			unlockedByDefault = false
+
+		[journal.pages.custom-2]
+			id = "custom-2"
+			title = "Custom Page"
+			content = "This is an unused custom page"
+			icon = "minecraft:barrier"
+			unlockedByDefault = false
+
+		[journal.pages.custom-3]
+			id = "custom-3"
+			title = "Custom Page"
+			content = "This is an unused custom page"
+			icon = "minecraft:barrier"
+			unlockedByDefault = false
+
+		[journal.pages.custom-4]
+			id = "custom-4"
+			title = "Custom Page"
+			content = "This is an unused custom page"
+			icon = "minecraft:barrier"
+			unlockedByDefault = false
+
+	#+++ Journal profiles (fish) +++ 
+	#[fish]: The name of the fish (ex. "minecraft:cod")
+	#[description]: The description of the fish
+	#[page]: The id of the page the fish belongs on (ex. freshwater, saltwater, underground, depths, biome, nether, end)
+	[journal.profiles]
+
+		[journal.profiles.trout]
+			fish = "tide:trout"
+			description = "profile.item.tide.trout"
+			page = "freshwater"
+
+		[journal.profiles.mint_carp]
+			fish = "tide:mint_carp"
+			description = "profile.item.tide.mint_carp"
+			page = "freshwater"
+
+		[journal.profiles.salmon]
+			fish = "minecraft:salmon"
+			description = "profile.item.minecraft.salmon"
+			page = "freshwater"
+
+		[journal.profiles.clayfish]
+			fish = "tide:clayfish"
+			description = "profile.item.tide.clayfish"
+			page = "freshwater"
+
+		[journal.profiles.bass]
+			fish = "tide:bass"
+			description = "profile.item.tide.bass"
+			page = "freshwater"
+
+		[journal.profiles.pike]
+			fish = "tide:pike"
+			description = "profile.item.tide.pike"
+			page = "freshwater"
+
+		[journal.profiles.catfish]
+			fish = "tide:catfish"
+			description = "profile.item.tide.catfish"
+			page = "freshwater"
+
+		[journal.profiles.cod]
+			fish = "minecraft:cod"
+			description = "profile.item.minecraft.cod"
+			page = "saltwater"
+
+		[journal.profiles.tropical_fish]
+			fish = "minecraft:tropical_fish"
+			description = "profile.item.minecraft.tropical_fish"
+			page = "saltwater"
+
+		[journal.profiles.pufferfish]
+			fish = "minecraft:pufferfish"
+			description = "profile.item.minecraft.pufferfish"
+			page = "saltwater"
+
+		[journal.profiles.tuna]
+			fish = "tide:tuna"
+			description = "profile.item.tide.tuna"
+			page = "saltwater"
+
+		[journal.profiles.angelfish]
+			fish = "tide:angelfish"
+			description = "profile.item.tide.angelfish"
+			page = "saltwater"
+
+		[journal.profiles.barracuda]
+			fish = "tide:barracuda"
+			description = "profile.item.tide.barracuda"
+			page = "saltwater"
+
+		[journal.profiles.sailfish]
+			fish = "tide:sailfish"
+			description = "profile.item.tide.sailfish"
+			page = "saltwater"
+
+		[journal.profiles.cave_eel]
+			fish = "tide:cave_eel"
+			description = "profile.item.tide.cave_eel"
+			page = "underground"
+
+		[journal.profiles.crystal_shrimp]
+			fish = "tide:crystal_shrimp"
+			description = "profile.item.tide.crystal_shrimp"
+			page = "underground"
+
+		[journal.profiles.iron_tetra]
+			fish = "tide:iron_tetra"
+			description = "profile.item.tide.iron_tetra"
+			page = "underground"
+
+		[journal.profiles.glowfish]
+			fish = "tide:glowfish"
+			description = "profile.item.tide.glowfish"
+			page = "underground"
+
+		[journal.profiles.anglerfish]
+			fish = "tide:anglerfish"
+			description = "profile.item.tide.anglerfish"
+			page = "underground"
+
+		[journal.profiles.cave_crawler]
+			fish = "tide:cave_crawler"
+			description = "profile.item.tide.cave_crawler"
+			page = "underground"
+
+		[journal.profiles.gilded_minnow]
+			fish = "tide:gilded_minnow"
+			description = "profile.item.tide.gilded_minnow"
+			page = "underground"
+
+		[journal.profiles.deep_grouper]
+			fish = "tide:deep_grouper"
+			description = "profile.item.tide.deep_grouper"
+			page = "depths"
+
+		[journal.profiles.shadow_snapper]
+			fish = "tide:shadow_snapper"
+			description = "profile.item.tide.shadow_snapper"
+			page = "depths"
+
+		[journal.profiles.abyss_angler]
+			fish = "tide:abyss_angler"
+			description = "profile.item.tide.abyss_angler"
+			page = "depths"
+
+		[journal.profiles.lapis_lanternfish]
+			fish = "tide:lapis_lanternfish"
+			description = "profile.item.tide.lapis_lanternfish"
+			page = "depths"
+
+		[journal.profiles.luminescent_jellyfish]
+			fish = "tide:luminescent_jellyfish"
+			description = "profile.item.tide.luminescent_jellyfish"
+			page = "depths"
+
+		[journal.profiles.crystalline_carp]
+			fish = "tide:crystalline_carp"
+			description = "profile.item.tide.crystalline_carp"
+			page = "depths"
+
+		[journal.profiles.bedrock_tetra]
+			fish = "tide:bedrock_tetra"
+			description = "profile.item.tide.bedrock_tetra"
+			page = "depths"
+
+		[journal.profiles.prarie_pike]
+			fish = "tide:prarie_pike"
+			description = "profile.item.tide.prarie_pike"
+			page = "biome"
+
+		[journal.profiles.sandskipper]
+			fish = "tide:sandskipper"
+			description = "profile.item.tide.sandskipper"
+			page = "biome"
+
+		[journal.profiles.blossom_bass]
+			fish = "tide:blossom_bass"
+			description = "profile.item.tide.blossom_bass"
+			page = "biome"
+
+		[journal.profiles.oakfish]
+			fish = "tide:oakfish"
+			description = "profile.item.tide.oakfish"
+			page = "biome"
+
+		[journal.profiles.frostbite_flounder]
+			fish = "tide:frostbite_flounder"
+			description = "profile.item.tide.frostbite_flounder"
+			page = "biome"
+
+		[journal.profiles.mirage_catfish]
+			fish = "tide:mirage_catfish"
+			description = "profile.item.tide.mirage_catfish"
+			page = "biome"
+
+		[journal.profiles.echofin_snapper]
+			fish = "tide:echofin_snapper"
+			description = "profile.item.tide.echofin_snapper"
+			page = "biome"
+
+		[journal.profiles.sunspike_goby]
+			fish = "tide:sunspike_goby"
+			description = "profile.item.tide.sunspike_goby"
+			page = "biome"
+
+		[journal.profiles.birch_trout]
+			fish = "tide:birch_trout"
+			description = "profile.item.tide.birch_trout"
+			page = "biome"
+
+		[journal.profiles.stonefish]
+			fish = "tide:stonefish"
+			description = "profile.item.tide.stonefish"
+			page = "biome"
+
+		[journal.profiles.dripstone_darter]
+			fish = "tide:dripstone_darter"
+			description = "profile.item.tide.dripstone_darter"
+			page = "biome"
+
+		[journal.profiles.slimefin_snapper]
+			fish = "tide:slimefin_snapper"
+			description = "profile.item.tide.slimefin_snapper"
+			page = "biome"
+
+		[journal.profiles.sporestalker]
+			fish = "tide:sporestalker"
+			description = "profile.item.tide.sporestalker"
+			page = "biome"
+
+		[journal.profiles.leafback]
+			fish = "tide:leafback"
+			description = "profile.item.tide.leafback"
+			page = "biome"
+
+		[journal.profiles.fluttergill]
+			fish = "tide:fluttergill"
+			description = "profile.item.tide.fluttergill"
+			page = "biome"
+
+		[journal.profiles.pine_perch]
+			fish = "tide:pine_perch"
+			description = "profile.item.tide.pine_perch"
+			page = "biome"
+
+		[journal.profiles.magma_mackerel]
+			fish = "tide:magma_mackerel"
+			description = "profile.item.tide.magma_mackerel"
+			page = "nether"
+
+		[journal.profiles.ashen_perch]
+			fish = "tide:ashen_perch"
+			description = "profile.item.tide.ashen_perch"
+			page = "nether"
+
+		[journal.profiles.soulscaler]
+			fish = "tide:soulscaler"
+			description = "profile.item.tide.soulscaler"
+			page = "nether"
+
+		[journal.profiles.warped_guppy]
+			fish = "tide:warped_guppy"
+			description = "profile.item.tide.warped_guppy"
+			page = "nether"
+
+		[journal.profiles.crimson_fangjaw]
+			fish = "tide:crimson_fangjaw"
+			description = "profile.item.tide.crimson_fangjaw"
+			page = "nether"
+
+		[journal.profiles.witherfin]
+			fish = "tide:witherfin"
+			description = "profile.item.tide.witherfin"
+			page = "nether"
+
+		[journal.profiles.blazing_swordfish]
+			fish = "tide:blazing_swordfish"
+			description = "profile.item.tide.blazing_swordfish"
+			page = "nether"
+
+		[journal.profiles.endstone_perch]
+			fish = "tide:endstone_perch"
+			description = "profile.item.tide.endstone_perch"
+			page = "end"
+
+		[journal.profiles.enderfin]
+			fish = "tide:enderfin"
+			description = "profile.item.tide.enderfin"
+			page = "end"
+
+		[journal.profiles.endergazer]
+			fish = "tide:endergazer"
+			description = "profile.item.tide.endergazer"
+			page = "end"
+
+		[journal.profiles.purpur_pike]
+			fish = "tide:purpur_pike"
+			description = "profile.item.tide.purpur_pike"
+			page = "end"
+
+		[journal.profiles.chorus_cod]
+			fish = "tide:chorus_cod"
+			description = "profile.item.tide.chorus_cod"
+			page = "end"
+
+		[journal.profiles.elytrout]
+			fish = "tide:elytrout"
+			description = "profile.item.tide.elytrout"
+			page = "end"
+
+		[journal.profiles.voidseeker]
+			fish = "tide:voidseeker"
+			description = "profile.item.tide.voidseeker"
+			page = "end"
+
+		[journal.profiles.municipal_monkfish]
+			fish = "blue_skies:municipal_monkfish"
+			description = ""
+			page = "blueskies"
+
+		[journal.profiles.grittle_flatfish]
+			fish = "blue_skies:grittle_flatfish"
+			description = ""
+			page = "blueskies"
+
+		[journal.profiles.charscale_moki]
+			fish = "blue_skies:charscale_moki"
+			description = ""
+			page = "blueskies"
+
+		[journal.profiles.horizofin_tunid]
+			fish = "blue_skies:horizofin_tunid"
+			description = ""
+			page = "blueskies"
+
+		#These are custom slots for fish profiles. To use, change the id to the
+		#name of the fish item (ex. "minecraft:salmon") and fill in the required info.
+		#NOTE: Do not change the headers, which is the line directly below this text
+		[journal.profiles.custom0]
+			fish = "custom0"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom1]
+			fish = "custom1"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom2]
+			fish = "custom2"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom3]
+			fish = "custom3"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom4]
+			fish = "custom4"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom5]
+			fish = "custom5"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom6]
+			fish = "custom6"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom7]
+			fish = "custom7"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom8]
+			fish = "custom8"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom9]
+			fish = "custom9"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom10]
+			fish = "custom10"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom11]
+			fish = "custom11"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom12]
+			fish = "custom12"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom13]
+			fish = "custom13"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom14]
+			fish = "custom14"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom15]
+			fish = "custom15"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom16]
+			fish = "custom16"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom17]
+			fish = "custom17"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom18]
+			fish = "custom18"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom19]
+			fish = "custom19"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom20]
+			fish = "custom20"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom21]
+			fish = "custom21"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom22]
+			fish = "custom22"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom23]
+			fish = "custom23"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.custom24]
+			fish = "custom24"
+			description = "This is an unused custom fish profile"
+			page = "The id of the page that the fish belongs to"
+
