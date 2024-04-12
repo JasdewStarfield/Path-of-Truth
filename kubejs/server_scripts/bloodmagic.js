@@ -74,4 +74,18 @@ ServerEvents.recipes(event => {
         },
         "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
     })
+    //点金成钻
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'botania:terrasteel_nugget'
+        },
+        "baseinput": {
+            "item": 'minecraft:gold_ingot'
+        },
+        "output": {
+            "item": 'minecraft:diamond'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
 })

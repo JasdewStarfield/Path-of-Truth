@@ -1,4 +1,5 @@
 //此文件提供植物魔法系列修改
+//魔力满值：100000
 
 ServerEvents.recipes(event => {
     //修改白雏菊合成配方
@@ -82,7 +83,7 @@ ServerEvents.recipes(event => {
         'CDC',
         'ABA'],
         {
-            A:'#forge:ingots/steel',
+            A:'botania:terrasteel_ingot',
             B:'botania:ender_air_bottle',
             C:'botania:dragonstone',
             D:'bloodmagic:magicianbloodorb'
@@ -133,6 +134,19 @@ ServerEvents.recipes(event => {
             B:'blue_skies:falsite_ingot',
             C:'blue_skies:star_flare'
         }
+    )
+
+    //泰拉钢系列配方修改
+    event.remove({output:'botania:terrasteel_ingot'})
+    event.recipes.botania.terra_plate('botania:terrasteel_ingot', 
+        [
+            'botania:manasteel_ingot', 
+            'botania:mana_pearl',
+            'botania:mana_diamond',
+            '#forge:ingots/steel',
+            'irons_spellbooks:arcane_ingot'
+        ], 
+        50000
     )
 
     //产能花系列配方修改

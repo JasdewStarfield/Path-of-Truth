@@ -109,4 +109,11 @@ ServerEvents.recipes(event => {
             D:'bloodmagic:apprenticebloodorb'
         }
     )
+
+    //修改传说法术书配方
+    event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:netherite_spell_book'},
+    'irons_spellbooks:lightning_bottle', 'botania:terrasteel_ingot' )
+    event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:dragonskin_spell_book'},
+    'minecraft:obsidian', 'botania:terrasteel_ingot' )
+
 })

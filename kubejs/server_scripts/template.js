@@ -70,9 +70,21 @@ onEvent("recipes", event => {
         ]
     )
     //符文祭坛
-    event.recipes.botania.runic_altar("minecraft:acacia_boat", ["minecraft:acacia_button", "minecraft:acacia_door"], 5000)
+    event.recipes.botania.runic_altar("minecraft:acacia_boat", 
+        [
+            "minecraft:acacia_button", 
+            "minecraft:acacia_door"
+        ], 
+        5000
+    )
     //泰拉凝聚板
-    event.recipes.botania.terra_plate("minecraft:acacia_boat", ["minecraft:acacia_button", "minecraft:acacia_door"], 5000000)
+    event.recipes.botania.terra_plate('产物', 
+        [
+            '输入1', 
+            '输入2'
+        ], 
+        5000000
+    )
     //？
     event.recipes.botania.orechid("minecraft:acacia_button", "minecraft:acacia_fence", 1)
     //？

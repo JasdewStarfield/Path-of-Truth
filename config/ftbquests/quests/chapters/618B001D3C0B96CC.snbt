@@ -10,7 +10,10 @@
 	quests: [
 		{
 			dependencies: ["27ABB5338B46217F"]
-			description: ["终于，你获得了一些植物魔法的高级材料，这也意味着你可以合成一些更带劲的东西了。"]
+			description: [
+				"终于，你获得了一些植物魔法的高级材料，这也意味着你可以合成一些更带劲的东西了。"
+				"现在，泰拉钢的合成需要更少的魔力——但相应的需要更复杂的材料。"
+			]
 			id: "0F9DF1C5137194E4"
 			shape: "octagon"
 			size: 1.5d
@@ -60,7 +63,110 @@
 				}
 			]
 			title: "植魔最强工具"
-			x: 0.0d
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0F9DF1C5137194E4"]
+			description: [
+				"钻石是MC世界的稀有资源，但偏偏魔法用量不算小。"
+				"这种时候，你就需要考虑一下用炼金矩阵点石成金的技术了。"
+				"祝你好运！"
+				"*会有很劲爆的场面但不会伤到你的（笑"
+			]
+			icon: "minecraft:diamond_block"
+			id: "7B4573440B7AD85C"
+			rewards: [{
+				id: "1D9A644C3CC11135"
+				item: {
+					Count: 1b
+					id: "bloodmagic:arcaneashes"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "很显然，你需要点石成金"
+			tasks: [
+				{
+					id: "5831C237BF6C95EC"
+					item: {
+						Count: 1b
+						id: "bloodmagic:arcaneashes"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "142ED80FE1C366EB"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "00B70B465487FAF9"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "595341A51DCCB7B8"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "7912D69EEB40ADB6"
+					item: "botania:mana_powder"
+					type: "item"
+				}
+				{
+					id: "6350A3AD047F73FC"
+					item: "botania:terrasteel_nugget"
+					type: "item"
+				}
+			]
+			title: "钻石不太够用？"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0F9DF1C5137194E4"]
+			description: [
+				"目前你可以获得的两本传说级法术书是远古典籍和龙皮法术书。"
+				"这两本法术书现在都需要泰拉钢，其中远古典籍还需要下界合金。"
+				"用你的实力证明你能够承载这传说级的力量吧。"
+			]
+			id: "4A24B3DB9C49B7CB"
+			rewards: [{
+				id: "786CC8FDB139D0E4"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:black_hole"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "更多的法术槽，更强的力量"
+			tasks: [{
+				id: "06B962DF49FB5713"
+				item: "irons_spellbooks:ruined_book"
+				type: "item"
+			}]
+			title: "传说级法师"
+			x: 3.0d
 			y: -3.0d
 		}
 	]
