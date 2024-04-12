@@ -72,4 +72,41 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //修改法术书系列配方
+    event.remove({id:'irons_spellbooks:iron_spell_book'})
+    event.remove({id:'irons_spellbooks:gold_spell_book'})
+    event.remove({id:'irons_spellbooks:diamond_spell_book'})
+    event.shaped(Item.of('irons_spellbooks:iron_spell_book',1),
+        ['ABB',
+        'ACD',
+        'ABB'],
+        {
+            A:'minecraft:chain',
+            B:'#forge:leather',
+            C:'irons_spellbooks:copper_spell_book',
+            D:'minecraft:paper'
+        }
+    )
+    event.shaped(Item.of('irons_spellbooks:gold_spell_book',1),
+        ['ABB',
+        'ACD',
+        'ABB'],
+        {
+            A:'#forge:ingots/brass',
+            B:'#forge:leather',
+            C:'irons_spellbooks:iron_spell_book',
+            D:'irons_spellbooks:arcane_ingot'
+        }
+    )
+    event.shaped(Item.of('irons_spellbooks:diamond_spell_book',1),
+        ['ABB',
+        'ACD',
+        'ABB'],
+        {
+            A:'botania:mana_diamond',
+            B:'irons_spellbooks:hogskin',
+            C:'irons_spellbooks:gold_spell_book',
+            D:'bloodmagic:apprenticebloodorb'
+        }
+    )
 })

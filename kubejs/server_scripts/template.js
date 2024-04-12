@@ -121,4 +121,18 @@ event.custom({
     },
     "upgradeLevel": 0
 })
+//炼金矩阵
+event.custom({
+    "type": "bloodmagic:array",
+    "addedinput": {
+        "item": "第二输入"
+    },
+    "baseinput": {
+        "item": "第一输入"
+    },
+    "output": {
+        "item": "输出"
+    },
+    "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+})
 */

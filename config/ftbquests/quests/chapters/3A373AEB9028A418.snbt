@@ -34,6 +34,17 @@
 			]
 			icon: "snowyspirit:snow_globe"
 			id: "6CA55CF413645302"
+			rewards: [{
+				id: "1CE517F49B2646D6"
+				item: {
+					Count: 1b
+					id: "undergarden:froststeel_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "永恒寒冬……"
 			tasks: [{
 				id: "6A8DA287B49C1CF7"

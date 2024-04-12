@@ -59,5 +59,19 @@ ServerEvents.recipes(event => {
         "upgradeLevel": 1
     })
 
-
+    //炼金矩阵配方修改
+    //点铁成金
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'botania:mana_powder'
+        },
+        "baseinput": {
+            "item": 'minecraft:iron_ingot'
+        },
+        "output": {
+            "item": 'minecraft:gold_ingot'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
 })
