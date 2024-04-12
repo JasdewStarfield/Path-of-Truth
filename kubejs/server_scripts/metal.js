@@ -183,10 +183,11 @@ ServerEvents.recipes(event => {
     //用铜粉、锡粉合成青铜粉
     event.recipes.create.mixing('kubejs:bronze_dust', ['#forge:dusts/tin','#forge:dusts/copper','#forge:dusts/copper','#forge:dusts/copper'])
 
-    //石磨粉碎铜锭锡锭镍锭
+    //石磨粉碎铜锭锡锭镍锭锌锭
     event.recipes.create.milling(Item.of('kubejs:tin_dust').withChance(0.5), '#forge:ingots/tin')
     event.recipes.create.milling(Item.of('immersiveengineering:dust_copper').withChance(0.5), '#forge:ingots/copper')
     event.recipes.create.milling(Item.of('immersiveengineering:dust_nickel').withChance(0.5), '#forge:ingots/nickel')
+    event.recipes.create.milling(Item.of('kubejs:zinc_dust').withChance(0.5), '#forge:ingots/zinc')
 
     event.remove({id:/alloyed\.*/})
     event.recipes.create.mixing('kubejs:bronze_ingot', ['#forge:ingots/tin','#forge:ingots/copper','#forge:ingots/copper','#forge:ingots/copper']).heated()
@@ -219,4 +220,19 @@ ServerEvents.recipes(event => {
         '#forge:plates/copper',
         '#forge:plates/constantan'
     )
+
+    //黄铜
+    event.remove({id:"create:mixing/brass_ingot"})
+    let inter = 'kubejs:incomplete_brass_ingot'
+    event.recipes.create.sequenced_assembly([
+        Item.of('create:brass_ingot').withChance(60.0),
+        Item.of('create:zinc_ingot').withChance(20.0),
+        Item.of('copper_ingot').withChance(20.0)
+    ], 'minecraft:copper_ingot', [
+        event.recipes.createPressing(inter, inter),
+        event.recipes.createFilling(inter, [inter, Fluid.lava(500)]),
+        event.recipes.createDeploying(inter, [inter, 'kubejs:zinc_dust']),
+        event.recipes.createFilling(inter, [inter, Fluid.water(500)]),
+        event.recipes.createPressing(inter, inter)
+    ]).transitionalItem(inter).loops(1)
 })

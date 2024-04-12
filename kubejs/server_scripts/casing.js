@@ -196,4 +196,60 @@ ServerEvents.recipes(event => {
       '#forge:plates/iron',
       'createdeco:andesite_sheet'
     )
+
+    //流体工程块及替换机壳
+    event.shaped('kubejs:fluid_engineering', [ 
+      'DAC', 
+      'ABA',
+      'CAD'  
+      ], {
+      B: 'create:copper_casing',
+      A: '#forge:plates/bronze',
+      C: 'create:fluid_pipe',
+      D: 'create:mechanical_pump'
+    })
+    event.recipes.create.sequenced_assembly([
+      'kubejs:fluid_engineering'
+    ], 'create:copper_casing', [
+      event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', '#forge:plates/bronze']),
+      event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', 'create:mechanical_pump']),
+      event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', 'create:fluid_pipe']),
+      event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', '#forge:plates/bronze'])
+    ]).transitionalItem('kubejs:incomplete_fluid_engineering').loops(1)
+
+    event.replaceInput(
+      {input:"create:copper_casing", not: {output:'create:copper_door'}},
+      'create:copper_casing',
+      'kubejs:fluid_engineering'
+    )
+
+    event.recipes.create.deploying('3x create:fluid_pipe', ['#forge:ingots/constantan', '#forge:plates/constantan'])
+    event.recipes.create.deploying('create:mechanical_pump', ['create:fluid_pipe', 'create:cogwheel'])
+    event.recipes.create.deploying('create:fluid_valve', ['create:fluid_pipe', '#forge:plates/iron'])
+
+    //精密工程块及替换机壳
+    event.shaped('kubejs:precise_engineering', [ 
+      'DAC', 
+      'ABA',
+      'CAD'  
+      ], {
+      B: 'create:brass_casing',
+      A: '#forge:treated_wood',
+      C: 'create:electron_tube',
+      D: '#forge:plates/obsidian'
+    })
+    event.recipes.create.sequenced_assembly([
+      'kubejs:precise_engineering'
+    ], 'create:brass_casing', [
+      event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', '#forge:treated_wood']),
+      event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', 'create:electron_tube']),
+      event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', '#forge:plates/obsidian']),
+      event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', '#forge:treated_wood'])
+    ]).transitionalItem('kubejs:incomplete_precise_engineering').loops(1)
+
+    event.replaceInput(
+      {input:"create:brass_casing", not: {output:'create:brass_door'}},
+      'create:brass_casing',
+      'kubejs:precise_engineering'
+    )
 })

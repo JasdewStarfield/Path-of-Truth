@@ -24,6 +24,9 @@ StartupEvents.registry('item', (event) => {
 
   //粗安山合金
   event.create("raw_andesite_alloy").displayName('Raw Andesite Alloy')
+
+  //未完成的黄铜
+  event.create("incomplete_brass_ingot", 'create:sequenced_assembly').displayName('Incomplete Brass Ingot')
 })
 
 StartupEvents.registry('block', (event) => {

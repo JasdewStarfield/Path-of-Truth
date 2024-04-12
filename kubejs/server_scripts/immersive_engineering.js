@@ -6,6 +6,9 @@ ServerEvents.recipes(event => {
     event.remove({id:/immersiveengineering\:crafting\/hammercrushing_\.*/})
     event.remove({id:/immersiveengineering:crafting\/wire_.*/})
 
+    //按分类移除
+    event.remove({type:'immersiveengineering:alloysmelter'})
+
     //焦炉砖
     event.remove({id:"immersiveengineering:crafting/cokebrick"})
     event.shaped('immersiveengineering:cokebrick', [ 
@@ -80,4 +83,17 @@ ServerEvents.recipes(event => {
         'immersiveengineering:fluid_pipe',
         'tfmg:steel_pipe'
     )
+
+    //防腐木板
+    event.remove({id:"immersiveengineering:crafting/treated_wood_horizontal"})
+    event.custom({
+		"type":"create:filling",
+		"ingredients":[
+			{"tag":"minecraft:planks"},
+			{"fluid":"immersiveengineering:creosote", "amount":125}
+		],
+		"results":[
+			{"item":"immersiveengineering:treated_wood_horizontal"},
+		]
+	})
 })

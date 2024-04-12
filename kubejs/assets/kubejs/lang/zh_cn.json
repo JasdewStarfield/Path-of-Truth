@@ -1,5 +1,8 @@
 {
-  "item.kubejs.incomplete_andesite_engineering": "未完成的安山工程块",
+  "item.kubejs.incomplete_andesite_engineering": "未完成的动力工程块",
+  "item.kubejs.incomplete_fluid_engineering": "未完成的流体工程块",
+  "item.kubejs.incomplete_precise_engineering": "未完成的精密工程块",
+  "item.kubejs.incomplete_brass_ingot": "未完成的黄铜锭",
   "item.kubejs.bronze_dust": "青铜粉",
   "item.kubejs.bronze_ingot": "青铜锭",
   "item.kubejs.bronze_nugget": "青铜粒",
@@ -13,6 +16,8 @@
   "item.kubejs.tin_dust": "锡粉",
   "item.kubejs.raw_andesite_alloy": "粗安山合金",
   "item.kubejs.buran": "暴风雪",
-  "block.kubejs.andesite_engineering": "安山工程块",
+  "block.kubejs.andesite_engineering": "动力工程块",
+  "block.kubejs.fluid_engineering": "流体工程块",
+  "block.kubejs.precise_engineering": "精密工程块",
   "block.kubejs.bronze_block": "青铜块"
 }

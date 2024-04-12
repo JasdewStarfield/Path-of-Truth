@@ -115,7 +115,7 @@
 				item: "create:empty_blaze_burner"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: 2.0d
 		}
 		{
@@ -126,8 +126,8 @@
 				item: "create:blaze_burner"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["079D9B3E0E12C25C"]
@@ -140,9 +140,10 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 4.0d
 		}
 		{
+			dependencies: ["4D493DCB4C0B99C0"]
 			id: "28617A52922404CE"
 			tasks: [{
 				id: "36A3FEAB539C0157"
@@ -150,9 +151,10 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 8.0d
+			y: 5.5d
 		}
 		{
+			dependencies: ["4D493DCB4C0B99C0"]
 			id: "27FD1F76136CBD0B"
 			tasks: [
 				{
@@ -172,7 +174,154 @@
 				}
 			]
 			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"28617A52922404CE"
+				"27FD1F76136CBD0B"
+			]
+			id: "1D0D60C89EA75663"
+			tasks: [{
+				id: "3FF03B9622F19ED2"
+				item: "kubejs:fluid_engineering"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1D0D60C89EA75663"]
+			id: "1DC10C93572BD016"
+			tasks: [{
+				id: "49A93F92B22C146D"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: 0.0d
 			y: 8.0d
+		}
+		{
+			dependencies: ["1DC10C93572BD016"]
+			id: "76BE4625CCF2F867"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "2515C545DCD9791F"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["76BE4625CCF2F867"]
+			id: "7F98F9F01F44BA28"
+			tasks: [{
+				id: "0FE1F810BAA152F4"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["7F98F9F01F44BA28"]
+			id: "73CD9D2DD215B5F5"
+			tasks: [{
+				id: "157376255721FB4A"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 12.5d
+		}
+		{
+			dependencies: ["76BE4625CCF2F867"]
+			id: "07C921FBCF56E703"
+			tasks: [{
+				id: "3EFB40B9190D79FE"
+				item: "create_connected:empty_fan_catalyst"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["07C921FBCF56E703"]
+			id: "1D20F56DDBBD6370"
+			tasks: [
+				{
+					id: "16064AFB54D631EB"
+					item: "create_connected:fan_blasting_catalyst"
+					type: "item"
+				}
+				{
+					id: "7FB22F9F510A1EF6"
+					item: "create_connected:fan_smoking_catalyst"
+					type: "item"
+				}
+				{
+					id: "35AD8E13624F875D"
+					item: "create_connected:fan_splashing_catalyst"
+					type: "item"
+				}
+				{
+					id: "19800195D04ADC2C"
+					item: "create_connected:fan_haunting_catalyst"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["7F98F9F01F44BA28"]
+			id: "0E544DEEB04F9620"
+			tasks: [{
+				id: "1D9BAE5F3165752F"
+				title: "解放双手！"
+				type: "checkmark"
+			}]
+			x: -2.5d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"73CD9D2DD215B5F5"
+				"10CF3F30EC2A65E8"
+				"607A957382E65976"
+			]
+			id: "51676EF62E7A17F3"
+			tasks: [{
+				id: "5DF57BF22C499317"
+				item: "kubejs:precise_engineering"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1DC10C93572BD016"]
+			id: "10CF3F30EC2A65E8"
+			tasks: [{
+				id: "1EB36C7B8E90771D"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["1DC10C93572BD016"]
+			id: "607A957382E65976"
+			tasks: [{
+				id: "482B4DBFF340F535"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 11.5d
 		}
 	]
 	subtitle: ["Hearts of Iron"]
