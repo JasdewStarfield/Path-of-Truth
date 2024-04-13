@@ -94,6 +94,7 @@
 				"末地空气可以转化铁和扼塞锭，同理魔法还有别的手段转化下界合金和遗忆锭，但那就没这么简单了。"
 				"炼金术就是材料互相转来转去）"
 			]
+			icon: "botania:mutated_grass"
 			id: "066C04C6A6CBCCB3"
 			rewards: [
 				{
@@ -108,11 +109,18 @@
 				}
 			]
 			subtitle: "末地空气的妙用"
-			tasks: [{
-				id: "49BD74DC5C0E9AD5"
-				item: "minecraft:iron_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "49BD74DC5C0E9AD5"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "1499C88B78F0C14F"
+					item: "botania:ender_air_bottle"
+					type: "item"
+				}
+			]
 			title: "转化！"
 			x: 0.0d
 			y: 0.0d

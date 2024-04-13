@@ -63,8 +63,8 @@
 				}
 			]
 			title: "植魔最强工具"
-			x: -3.0d
-			y: -3.0d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0F9DF1C5137194E4"]
@@ -127,8 +127,8 @@
 				}
 			]
 			title: "钻石不太够用？"
-			x: -3.0d
-			y: 3.0d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0F9DF1C5137194E4"]
@@ -166,8 +166,8 @@
 				type: "item"
 			}]
 			title: "传说级法师"
-			x: 3.0d
-			y: -3.0d
+			x: 1.5d
+			y: -1.5d
 		}
 	]
 	title: "魔力流淌"

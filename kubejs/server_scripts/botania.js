@@ -39,6 +39,20 @@ ServerEvents.recipes(event => {
     //魔钢-奥术源质兑换
     event.recipes.botania.mana_infusion('4x irons_spellbooks:arcane_essence', 'botania:manasteel_ingot', 1000, 'botania:alchemy_catalyst')
 
+    //末地空气转化扼塞锭和铁锭
+    event.shapeless(Item.of('minecraft:iron_ingot',1),
+        [
+            'undergarden:cloggrum_ingot',
+            'botania:ender_air_bottle'
+        ]
+    )
+    event.shapeless(Item.of('undergarden:cloggrum_ingot',1),
+        [
+            'minecraft:iron_ingot',
+            'botania:ender_air_bottle'
+        ]
+    )
+
     //泰拉凝聚板配方修改
     event.remove({ output: 'botania:terra_plate' })
     event.shaped(Item.of('botania:terra_plate',1),
