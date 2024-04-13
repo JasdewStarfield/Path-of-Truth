@@ -98,3 +98,7 @@
 	#Allows lilypads to have any block placed ontop
 	better_lilypads = true
 
+[lectern]
+	#Improved lectern screen allowing to edit font of a book while on it
+	improved_screen = true
+

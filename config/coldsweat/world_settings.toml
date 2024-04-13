@@ -49,11 +49,11 @@
 	#List of blocks that will allow the player to sleep on them, regardless of the "Prevent Sleep When in Danger" setting
 	#Use this list if the player is not getting the temperature effect from sleeping on particular blocks
 	"Sleep Check Override Blocks" = ["#comforts:sleeping_bags"]
-	#When set to true, players cannot sleep if they are cold or hot enough to die
-	"Prevent Sleep When in Danger" = true
 	#Converts damage dealt by Soul Fire to cold damage (default: true)
 	#Does not affect the block's temperature
 	"Cold Soul Fire" = true
+	#When set to true, players cannot sleep if they are cold or hot enough to die
+	"Check Sleeping Conditions" = true
 
 [Hearth]
 	#How effective the hearth is at normalizing temperature
