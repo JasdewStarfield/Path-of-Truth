@@ -295,7 +295,7 @@
 				"69864E61F37B2AA3"
 			]
 			description: ["现在你掌握了青铜的冶炼技术，也就是说，你可以制作一些相对趁手的——石头以上的——工具了。"]
-			icon: "kubejs:bronze_dust"
+			icon: "kubejs:bronze_ingot"
 			id: "3BECB3D53E17F80B"
 			shape: "gear"
 			size: 2.0d

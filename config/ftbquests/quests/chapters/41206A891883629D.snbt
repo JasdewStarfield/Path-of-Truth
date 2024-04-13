@@ -67,24 +67,57 @@
 		}
 		{
 			dependencies: ["0D69D8466E9218E1"]
-			id: "7CBC86E5B5ADF6AE"
+			id: "0DD8AAA01622241D"
 			tasks: [{
-				id: "6A076FA5B61D1A2E"
-				item: "kubejs:andesite_engineering"
+				id: "3430E9FF36B48DA5"
+				item: "kubejs:bronze_ingot"
 				type: "item"
 			}]
 			x: 6.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["7CBC86E5B5ADF6AE"]
-			id: "0DD8AAA01622241D"
+			dependencies: ["0DD8AAA01622241D"]
+			id: "3C070D0F43132EF1"
 			tasks: [{
-				id: "2373EEB904B87729"
+				id: "5CEEA32771EAF942"
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
 			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C070D0F43132EF1"]
+			id: "577E2B9C81B59295"
+			tasks: [{
+				id: "632C04CAA8AD096A"
+				item: "immersiveengineering:ingot_constantan"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["577E2B9C81B59295"]
+			id: "3197074BD2FDC954"
+			tasks: [{
+				id: "37EDF12A8D14B420"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3197074BD2FDC954"]
+			id: "21AB683F37938358"
+			tasks: [{
+				id: "4F55351B5FAD37E7"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 14.0d
 			y: 0.0d
 		}
 	]

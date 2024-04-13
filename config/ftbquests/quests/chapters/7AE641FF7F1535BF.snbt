@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "7AE641FF7F1535BF"
 	group: "5B3B99F7ECC70789"
-	icon: "immersiveengineering:circuit_table"
+	icon: "immersiveengineering:blastfurnace_preheater"
 	id: "7AE641FF7F1535BF"
 	order_index: 0
 	quest_links: [ ]
@@ -20,5 +20,6 @@
 		x: 0.0d
 		y: 0.0d
 	}]
-	title: "电光闪耀"
+	subtitle: ["Hearts of Iron"]
+	title: "钢铁雄心"
 }
