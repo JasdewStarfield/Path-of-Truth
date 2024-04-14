@@ -33,6 +33,7 @@
 				"这可能是植魔内部最强大的工具之一，配合不同的透镜可以打出不同的神秘效果。"
 				"基于这个工具出现的位置，风暴透镜现在可以合成了！"
 				"用你的魔力去征服这个世界吧！"
+				"这是你迈向真理的第一步——后面还会有更多强大到扭曲规则的物品，但你需要通过规则内的探索去找到它们。"
 			]
 			icon: {
 				Count: 1b
@@ -168,6 +169,115 @@
 			title: "传说级法师"
 			x: 1.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["0F9DF1C5137194E4"]
+			description: [
+				"……然后干掉ta来获得你需要的资源以及一些……宝贵的遗物。"
+				"请做好准备，因为这真的很困难。"
+				"……至少，至少，比你干掉凋零要难，所以&l&4请谨慎阅读辞典上的注意事项&r&r。"
+				"你问我为什么没给你设置干掉凋零的任务？这不是MC玩家的基本操作吗？"
+				"*注：第一，不要考虑群殴，因为群殴是你们被群殴不是守护者被群殴；第二，由于仪式的范围有限定，可以考虑卡边缘进行地形杀，但你需要足够强力的治疗）"
+			]
+			icon: "botania:gaia_head"
+			id: "701A0263F6C6D275"
+			subtitle: "你需要召唤并不仁慈的大地母亲……"
+			tasks: [
+				{
+					count: 4L
+					id: "6F349FA30E97FD4B"
+					item: "botania:gaia_pylon"
+					type: "item"
+				}
+				{
+					id: "075DEF7DBC4FEB17"
+					item: "minecraft:beacon"
+					type: "item"
+				}
+			]
+			title: "盖亚仪式"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0F9DF1C5137194E4"]
+			id: "0AC1013759C98150"
+			subtitle: "以及流更多血）"
+			tasks: [{
+				id: "07B1E67BA4C09E90"
+				item: "bloodmagic:magicianbloodorb"
+				type: "item"
+			}]
+			title: "更大，更高，更强"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0F9DF1C5137194E4"]
+			description: [
+				"你的武器和胸甲通常来说都有一个额外的法术槽位，而获得了泰拉钢意味着你可以制造这一神奇的铁砧：你将获得两个额外的，恒定的法术槽！"
+				"请谨慎选择你注入的法术，因为本质上施法方式没变（即你不能通过法术书和剑同时释放两个法术）。"
+				"同时，如果你要更换注入的法术，原有的法术会被销毁而不是替换。"
+			]
+			id: "1512F0EED2C94AD6"
+			rewards: [{
+				id: "5D04AA7F5BF708F8"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:evasion"
+								index: 0
+								level: 4
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "法术护体！"
+			tasks: [{
+				id: "6B6B4238F400C292"
+				item: "irons_spellbooks:arcane_anvil"
+				type: "item"
+			}]
+			title: "固化法术"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F9DF1C5137194E4"]
+			description: [
+				"是的，盖亚仪式有进阶版。"
+				"在本整合包中，盖亚魂锭也是通向终极的合成物之一，不再是除了召唤大BOSS之外完全无用的合金。"
+				"盖亚仪式II会更加艰难，你需要选择合理的方式保护自己，击杀守护者，然后获得遗物。"
+				"遗物是随机的，盖亚之魂是更多的，难度是倍增的。"
+				"盖亚守护者II会在神秘遗物之外掉落随机的植魔符文，以及极大加强泰拉钢头盔的神秘掉落物。"
+			]
+			icon: "botania:infinite_fruit"
+			id: "2F114B04C2EA45F4"
+			subtitle: "嗯……如果你拿得到的话。"
+			tasks: [
+				{
+					id: "2482BC8B4F4B8353"
+					item: "botania:dice"
+					type: "item"
+				}
+				{
+					id: "78A44FD2F1156491"
+					item: "botania:gaia_ingot"
+					type: "item"
+				}
+			]
+			title: "神秘遗物"
+			x: 0.0d
+			y: 2.0d
 		}
 	]
 	title: "魔力流淌"

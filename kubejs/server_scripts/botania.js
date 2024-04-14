@@ -157,7 +157,7 @@ ServerEvents.recipes(event => {
             'botania:manasteel_ingot', 
             'botania:mana_pearl',
             'botania:mana_diamond',
-            '#forge:ingots/steel',
+            '#forge:ingots/brass',
             'irons_spellbooks:arcane_ingot'
         ], 
         50000
@@ -186,5 +186,11 @@ ServerEvents.recipes(event => {
             'botania:rune_earth'
         ]
     )
+    //阿卡纳蔷薇（吃经验）
+    //咀叶花
+    //热爆花
+    //彼方兰（吃食物）
+    //贪食花（吃蛋糕）
+    //粘球草（吃自然生成的史莱姆）
 
 })

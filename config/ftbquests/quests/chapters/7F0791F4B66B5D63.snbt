@@ -153,7 +153,40 @@
 			]
 			title: "星星点灯"
 			x: 0.0d
-			y: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"34610E8F3D1306A9"
+				"6C542C19575974DB"
+			]
+			description: [
+				"现在，我们增加了全新的钓鱼体系：你将在每种群系遇到全新的鱼！"
+				"同时，你在地表，浅层洞穴，深板岩洞穴乃至于下界和末地，都可以钓到全新的鱼！"
+				"去下界钓鱼之前，最好升级一下你的钓竿以防止被岩浆吞没……"
+			]
+			id: "1394E8BA5DD00BFE"
+			rewards: [{
+				count: 32
+				id: "7C564C2BF2645FF3"
+				item: "tide:suspicious_bait"
+				type: "item"
+			}]
+			subtitle: "嗯，上天入地去钓鱼"
+			tasks: [{
+				id: "6E709DFBB1DCE608"
+				item: {
+					Count: 1b
+					id: "tide:blazing_swordfish"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "钓鱼之王"
+			x: 0.0d
+			y: 0.5d
 		}
 	]
 	subtitle: ["Spirt of Exploration"]
