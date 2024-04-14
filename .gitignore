@@ -47,3 +47,5 @@ route.drawio
 config/jei/ingredient-list-mod-sort-order.ini
 config/attributefix.json
 config/terrablender.toml
+config/immediatelyfast.json
+config/modernfix-mixins.properties
