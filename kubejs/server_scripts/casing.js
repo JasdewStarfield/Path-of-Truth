@@ -168,7 +168,6 @@ ServerEvents.recipes(event => {
       'kubejs:andesite_engineering'
     )
     const replacementAndesiteEngineering = [
-      "create:deployer",
       "create_new_age:basic_motor",
       "create:gantry_carriage",
       "create:portable_storage_interface",
@@ -222,6 +221,22 @@ ServerEvents.recipes(event => {
       'create:copper_casing',
       'kubejs:fluid_engineering'
     )
+
+    event.replaceInput(
+      {output:"create:deployer"},
+      'create:andesite_casing',
+      'kubejs:fluid_engineering'
+    )
+    event.remove({output:"create:brass_hand"})
+    event.shaped('create:brass_hand', [ 
+      ' A ', 
+      'CBC',
+      ' C '  
+      ], {
+      B: 'botania:mana_powder',
+      A: 'create:andesite_alloy',
+      C: 'botania:manasteel_ingot'
+    })
 
     event.recipes.create.deploying('3x create:fluid_pipe', ['#forge:ingots/constantan', '#forge:plates/constantan'])
     event.recipes.create.deploying('create:mechanical_pump', ['create:fluid_pipe', 'create:cogwheel'])

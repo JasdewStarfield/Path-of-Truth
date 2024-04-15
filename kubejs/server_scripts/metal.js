@@ -229,7 +229,6 @@ ServerEvents.recipes(event => {
         Item.of('create:zinc_ingot').withChance(20.0),
         Item.of('copper_ingot').withChance(20.0)
     ], 'minecraft:copper_ingot', [
-        event.recipes.createPressing(inter, inter),
         event.recipes.createFilling(inter, [inter, Fluid.lava(500)]),
         event.recipes.createDeploying(inter, [inter, 'kubejs:zinc_dust']),
         event.recipes.createFilling(inter, [inter, Fluid.water(500)]),
