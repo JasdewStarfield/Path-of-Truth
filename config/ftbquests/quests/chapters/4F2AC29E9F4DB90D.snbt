@@ -267,25 +267,33 @@
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
+			description: [
+				"嗯，相信你已经查看过合金的配方了，有没有骂人的冲动？有就骂出来，反正骂了也没用。"
+				"两次压制，水和岩浆注入，还有锌粉，这意味着你需要一条产线来生产黄铜。"
+			]
 			id: "76BE4625CCF2F867"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "超级难得）"
 			tasks: [{
 				id: "2515C545DCD9791F"
 				item: "create:brass_ingot"
 				type: "item"
 			}]
+			title: "真正的合金"
 			x: 0.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["76BE4625CCF2F867"]
 			id: "7F98F9F01F44BA28"
+			subtitle: "两只手不够用就多来几个"
 			tasks: [{
 				id: "0FE1F810BAA152F4"
 				item: "create:deployer"
 				type: "item"
 			}]
+			title: "更多的“帮手”"
 			x: -1.0d
 			y: 11.5d
 		}
@@ -302,18 +310,25 @@
 		}
 		{
 			dependencies: ["76BE4625CCF2F867"]
+			description: [
+				"你应该发现了，在鼓风机前面放某些特定的东西可以实现批量加工）"
+				"但很显然，单格水和单格岩浆都不是很容易放置，而营火又容易烫到自己，所以——这就是解决方案。"
+			]
 			id: "07C921FBCF56E703"
+			subtitle: "其实是保护你自己）"
 			tasks: [{
 				id: "3EFB40B9190D79FE"
 				item: "create_connected:empty_fan_catalyst"
 				type: "item"
 			}]
+			title: "鼓风机输出"
 			x: 1.0d
 			y: 11.5d
 		}
 		{
 			dependencies: ["07C921FBCF56E703"]
 			id: "1D20F56DDBBD6370"
+			subtitle: "很好，看来你意识到了"
 			tasks: [
 				{
 					id: "16064AFB54D631EB"
@@ -336,6 +351,7 @@
 					type: "item"
 				}
 			]
+			title: "触媒装箱"
 			x: 2.5d
 			y: 11.5d
 		}
@@ -368,22 +384,26 @@
 		{
 			dependencies: ["1DC10C93572BD016"]
 			id: "10CF3F30EC2A65E8"
+			subtitle: "这显然比铁硬）"
 			tasks: [{
 				id: "1EB36C7B8E90771D"
 				item: "create:sturdy_sheet"
 				type: "item"
 			}]
+			title: "来硬的"
 			x: 4.0d
 			y: 11.5d
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
 			id: "607A957382E65976"
+			subtitle: "沉浸工业的基础"
 			tasks: [{
 				id: "482B4DBFF340F535"
 				item: "immersiveengineering:treated_wood_horizontal"
 				type: "item"
 			}]
+			title: "防腐措施"
 			x: -4.0d
 			y: 11.5d
 		}

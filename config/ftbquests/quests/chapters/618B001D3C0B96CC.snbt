@@ -262,6 +262,11 @@
 			]
 			icon: "botania:infinite_fruit"
 			id: "2F114B04C2EA45F4"
+			rewards: [{
+				id: "32C23F6C0A2532DA"
+				item: "botania:gaia_spreader"
+				type: "item"
+			}]
 			subtitle: "嗯……如果你拿得到的话。"
 			tasks: [
 				{

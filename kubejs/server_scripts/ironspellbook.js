@@ -116,4 +116,19 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:dragonskin_spell_book'},
     'minecraft:obsidian', 'botania:terrasteel_ingot' )
 
+    //奥术铁砧配方重写
+    event.remove({id:'irons_spellbooks:arcane_anvil'})
+    event.shaped(Item.of('irons_spellbooks:arcane_anvil',1),
+        ['ABA',
+        ' C ',
+        'EDE'],
+        {
+            A:'botania:manasteel_block',
+            B:'minecraft:amethyst_block',
+            C:'botania:terrasteel_ingot',
+            D:'#minecraft:anvil',
+            E:'minecraft:polished_deepslate'
+        }
+    )
+
 })

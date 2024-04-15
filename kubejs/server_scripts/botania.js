@@ -187,8 +187,41 @@ ServerEvents.recipes(event => {
         ]
     )
     //阿卡纳蔷薇（吃经验）
+    event.remove({ output: 'botania:rosa_arcana' })
+    event.recipes.botania.petal_apothecary('botania:rosa_arcana', 
+        [
+            '#botania:petals/pink',
+            '#botania:petals/purple',
+            'irons_spellbooks:arcane_essence',
+            '#forge:ingots/constantan',
+            'botania:rune_mana'
+        ]
+    )
     //咀叶花
+    event.remove({ output: 'botania:munchdew' })
+    event.recipes.botania.petal_apothecary('botania:munchdew', 
+        [
+            '#botania:petals/lime',
+            '#botania:petals/red',
+            '#botania:petals/green',
+            'irons_spellbooks:arcane_essence',
+            '#forge:ingots/constantan',
+            'botania:rune_gluttony'
+        ]
+    )
     //热爆花
+    event.remove({ output: 'botania:entropinnyum' })
+    event.recipes.botania.petal_apothecary('botania:entropinnyum', 
+        [
+            '#botania:petals/gray',
+            '#botania:petals/red',
+            '#botania:petals/white',
+            'irons_spellbooks:arcane_essence',
+            '#forge:ingots/constantan',
+            'botania:rune_wrath',
+            'botania:rune_fire'
+        ]
+    )
     //彼方兰（吃食物）
     //贪食花（吃蛋糕）
     //粘球草（吃自然生成的史莱姆）
