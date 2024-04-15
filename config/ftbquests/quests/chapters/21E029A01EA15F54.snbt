@@ -380,7 +380,7 @@
 				item: "irons_spellbooks:scroll_forge"
 				type: "item"
 			}]
-			subtitle: "六种派系，六类材料"
+			subtitle: "八种派系，八类材料"
 			tasks: [
 				{
 					id: "33C00FE7789AFE4D"
@@ -410,6 +410,16 @@
 				{
 					id: "67B2711CBB36B8B5"
 					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					id: "45BEADFCF614D411"
+					item: "irons_spellbooks:divine_pearl"
+					type: "item"
+				}
+				{
+					id: "5F6F2AF0D82D06F7"
+					item: "minecraft:blaze_rod"
 					type: "item"
 				}
 			]

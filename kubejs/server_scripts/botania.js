@@ -90,6 +90,8 @@ ServerEvents.recipes(event => {
     'minecraft:tnt', 'botania:terrasteel_ingot' )
     event.replaceInput({mod:'botania',output:'botania:mana_gun'},
     'botania:redstone_spreader', 'bloodmagic:magicianbloodorb' )
+    event.replaceInput({mod:'botania',output:'botania:mana_gun'},
+    'botania:mana_diamond', 'create:precision_mechanism' )
 
     //风暴透镜配方
     event.shaped(Item.of('botania:lens_storm',1),

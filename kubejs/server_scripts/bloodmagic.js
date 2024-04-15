@@ -88,4 +88,18 @@ ServerEvents.recipes(event => {
         },
         "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
     })
+    //点盖亚成下界合金
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'botania:dragonstone_block'
+        },
+        "baseinput": {
+            "item": 'botania:gaia_ingot'
+        },
+        "output": {
+            "item": 'minecraft:netherite_ingot'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
 })

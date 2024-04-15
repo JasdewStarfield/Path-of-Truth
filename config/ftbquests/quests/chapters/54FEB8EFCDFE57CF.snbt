@@ -91,7 +91,7 @@
 				"52A63601F3E154C8"
 			]
 			description: [
-				"末地空气可以转化铁和扼塞锭，同理魔法还有别的手段转化下界合金和遗忆锭，但那就没这么简单了。"
+				"末地空气可以转化铁和扼塞锭，同理魔法还有类似的手段转化遗忆锭和钻石——但那很亏。"
 				"炼金术就是材料互相转来转去）"
 			]
 			icon: "botania:mutated_grass"
@@ -124,6 +124,66 @@
 			title: "转化！"
 			x: 0.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["0C34A91AD3EBF977"]
+			description: ["在你击杀末影龙后，会有一些龙皮悬浮于空中——找到它们，然后你就可以制作强大的传说法术书。"]
+			id: "5067D48BC8E1CBEF"
+			subtitle: "你还是赢了，对吧）"
+			tasks: [{
+				id: "25E63FEC90BEA00B"
+				item: "irons_spellbooks:dragonskin"
+				type: "item"
+			}]
+			title: "末影龙的馈赠"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["52A63601F3E154C8"]
+			description: [
+				"正如你所见，如果你找到合适的模板，这种神秘的金属锭可以升级你的装备。"
+				"同时，一些特殊的魔法和工业配方也需要它。"
+				"目前它可以被转换为钻石，而你通过下界合金可以兑换它——当然这个过程肯定是有损耗的，但这不重要。"
+			]
+			id: "424B64AA9BB30C18"
+			subtitle: "深暗顶级材料"
+			tasks: [{
+				id: "1BE9B516904B496A"
+				item: "undergarden:forgotten_ingot"
+				type: "item"
+			}]
+			title: "另一种下界合金"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0E5C63B3D4891362"]
+			description: ["它可以用来合成一些有趣的小玩意，也许你可以攒一点？"]
+			id: "4D18A21D81997FAF"
+			subtitle: "喔，碍事的东西"
+			tasks: [{
+				id: "14021EB3E7813A61"
+				item: "undergarden:depthrock_pebble"
+				type: "item"
+			}]
+			title: "小石头"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["193F465F65BC13F1"]
+			description: ["这也是合成材料之一，惊不惊喜？意不意外？"]
+			id: "2839D8EE20877BD1"
+			subtitle: "高强度魔力水晶"
+			tasks: [{
+				id: "3962D8B1E8A1B5BF"
+				item: "minecraft:end_crystal"
+				type: "item"
+			}]
+			title: "BOOM"
+			x: 2.0d
+			y: -2.0d
 		}
 	]
 	title: "深暗与虚空"

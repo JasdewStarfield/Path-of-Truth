@@ -316,12 +316,18 @@
 				"76BE4625CCF2F867"
 				"7F98F9F01F44BA28"
 			]
+			description: [
+				"虽然这东西叫电子管没错，但是很显然它不能充电，你也没进入电子时代）"
+				"不过有一些组件还是需要它。"
+			]
 			id: "73CD9D2DD215B5F5"
+			subtitle: "嗯，伪电子时代"
 			tasks: [{
 				id: "157376255721FB4A"
 				item: "create:electron_tube"
 				type: "item"
 			}]
+			title: "工业化的结晶"
 			x: -2.0d
 			y: 11.0d
 		}
@@ -376,8 +382,14 @@
 		}
 		{
 			dependencies: ["7F98F9F01F44BA28"]
+			description: [
+				"未来你需要的黄铜可不是个小数目。准备好一片空地搭建你的工厂吧，朋友！"
+				"希望你有足够的血液来换取岩浆（笑"
+			]
+			icon: "immersiveengineering:conveyor_basic"
 			id: "0E544DEEB04F9620"
 			shape: "diamond"
+			subtitle: "很显然你需要更多……"
 			tasks: [{
 				id: "1D9BAE5F3165752F"
 				title: "解放双手！"
@@ -393,17 +405,28 @@
 				"10CF3F30EC2A65E8"
 				"607A957382E65976"
 			]
+			description: [
+				"很好，你现在开始接触到精密机械了，希望你以后会习惯序列组装中的废料（？"
+				"序列组装总是有失败几率的，所以如果失败了，不要骂人，再来一次）"
+			]
 			id: "51676EF62E7A17F3"
+			subtitle: "精密元件的基石"
 			tasks: [{
 				id: "5DF57BF22C499317"
 				item: "kubejs:precise_engineering"
 				type: "item"
 			}]
+			title: "精密工业"
 			x: 0.0d
 			y: 12.5d
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
+			description: [
+				"硬邦邦的黑曜石板子显然是很合适的工程材料，对吧）"
+				"你&l&b不能&r&r把它们镶嵌在盔甲上增加保护，真是遗憾）"
+				"这里缅怀一下曾经的匠魂（"
+			]
 			id: "10CF3F30EC2A65E8"
 			subtitle: "这显然比铁硬）"
 			tasks: [{
@@ -417,6 +440,10 @@
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
+			description: [
+				"由于我们追求真实，你现在不可以通过杂酚油桶简单粗暴的生成这些东西了：你需要注液，不过问题应该也不大。"
+				"*小声：反正杂酚油总会多到你用不完（"
+			]
 			id: "607A957382E65976"
 			subtitle: "沉浸工业的基础"
 			tasks: [{
@@ -430,14 +457,20 @@
 		}
 		{
 			dependencies: ["51676EF62E7A17F3"]
+			description: [
+				"你成功的开启了精密时代，更多的工业和更有趣的历程在像你展开。"
+				"走下去吧，走到世界尽头，真相会在那里等着你。"
+			]
 			id: "242C57AF7F6116E4"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "新时代的曙光！"
 			tasks: [{
 				id: "00035BC45BCE3C29"
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
+			title: "精密时代"
 			x: 0.0d
 			y: 15.0d
 		}
