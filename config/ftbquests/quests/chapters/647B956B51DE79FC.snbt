@@ -1,0 +1,98 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "647B956B51DE79FC"
+	group: "560257DD7915FBBC"
+	icon: "bloodmagic:ritualdiviner"
+	id: "647B956B51DE79FC"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0AC1013759C98150"]
+			description: [
+				"首先你需要四级祭坛和“钢铁之心”来产生你的第一枚导师气血宝珠。"
+				"然后，你就可以准备进行一些神秘的仪式了）"
+			]
+			icon: "bloodmagic:masterritualstone"
+			id: "5A5B1D96C50D1EAE"
+			rewards: [{
+				count: 16
+				id: "16947EBD559EC8D8"
+				item: "bloodmagic:ritualstone"
+				type: "item"
+			}]
+			subtitle: "你要折腾一些大东西了）"
+			tasks: [
+				{
+					id: "71FC2BEF8E5ECB52"
+					item: "bloodmagic:masterbloodorb"
+					type: "item"
+				}
+				{
+					id: "2B81556828554FD0"
+					item: "bloodmagic:ritualdiviner"
+					type: "item"
+				}
+				{
+					id: "428AC6A1DFB72BD8"
+					item: "bloodmagic:masterritualstone"
+					type: "item"
+				}
+				{
+					id: "43D9C25D99C2D576"
+					item: "bloodmagic:ritualtinkerer"
+					type: "item"
+				}
+			]
+			title: "大型仪式的基础"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A5B1D96C50D1EAE"]
+			description: [
+				"所以你可以从熔岩中提取恶魂的眼泪！"
+				"就是需要一些炼金手段（笑"
+			]
+			icon: "alexsmobs:lava_bottle"
+			id: "6D0730EAA3483E08"
+			subtitle: "对着熔岩流泪的恶魂"
+			tasks: [
+				{
+					id: "66A7AC66DAF733EF"
+					item: "minecraft:ghast_tear"
+					type: "item"
+				}
+				{
+					id: "5F1F5E37E339921A"
+					item: "alexsmobs:lava_bottle"
+					type: "item"
+				}
+			]
+			title: "熔岩中的泪水"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A5B1D96C50D1EAE"]
+			description: [
+				"血魔法的盔甲很可能是后期功能最全的盔甲。"
+				"虽然它们一开始很好制造，但这并不意味着升级很容易。"
+				"不同的升级需要不同的训练方式和点数，而具体的可以参见血染知书，升级则通过这条项链。"
+				"……这玩意最好是项链。"
+			]
+			id: "1F71A5FD2A6CA453"
+			subtitle: "你拥有活着的盔甲！"
+			tasks: [{
+				id: "3283831A8F833132"
+				item: "bloodmagic:upgradetrainer"
+				type: "item"
+			}]
+			title: "另一种盔甲升级"
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "诡秘仪式"
+}

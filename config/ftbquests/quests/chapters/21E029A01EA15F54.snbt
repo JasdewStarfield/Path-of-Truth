@@ -14,6 +14,7 @@
 			description: [
 				"有关于血魔法的大部分内容都在这本书里。"
 				"如果不在，那么你最好自己查一下JEI）"
+				"为什么让你查jei呢，因为配方我们改动的可不少）"
 			]
 			icon: {
 				Count: 1b
@@ -88,7 +89,7 @@
 				item: "botania:elementium_ingot"
 				type: "item"
 			}]
-			subtitle: "这是一个你开了也过不去的门"
+			subtitle: "你开了也过不去"
 			tasks: [
 				{
 					count: 2L

@@ -1,0 +1,112 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7C70C5EA37137857"
+	group: "560257DD7915FBBC"
+	icon: "minecraft:chorus_flower"
+	id: "7C70C5EA37137857"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["193F465F65BC13F1"]
+			id: "15E666BAE38566D8"
+			subtitle: "在那开遍紫颂花的原野上……"
+			tasks: [{
+				id: "2EEDEF968ECEA456"
+				item: "minecraft:chorus_flower"
+				type: "item"
+			}]
+			title: "另一层末地"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["280307C036B9B6E7"]
+			icon: {
+				Count: 1b
+				id: "blue_skies:venom_sac"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5AEAA6FCB2862FD9"
+			subtitle: "讨厌的大蜘蛛"
+			tasks: [
+				{
+					id: "057162BE11E594E2"
+					item: {
+						Count: 1b
+						id: "blue_skies:arachnarch_trophy"
+						tag: {
+							BlockStateTag: {
+								tier: "bronze"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D8AB2E089CB256E"
+					item: {
+						Count: 1b
+						id: "blue_skies:alchemist_trophy"
+						tag: {
+							BlockStateTag: {
+								tier: "bronze"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "恒晓的破晓"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A6D4E28C28302FE"]
+			icon: {
+				Count: 1b
+				id: "blue_skies:crushing_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "67987443A4B5265E"
+			subtitle: "砍树，对吧"
+			tasks: [
+				{
+					id: "387A50530A0BE1BB"
+					item: {
+						Count: 1b
+						id: "blue_skies:starlit_crusher_trophy"
+						tag: {
+							BlockStateTag: {
+								tier: "bronze"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "09C7545F2D1F0813"
+					item: {
+						Count: 1b
+						id: "blue_skies:summoner_trophy"
+						tag: {
+							BlockStateTag: {
+								tier: "bronze"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "永昼的夜晚"
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "世界尽头"
+}

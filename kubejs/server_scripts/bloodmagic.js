@@ -42,6 +42,27 @@ ServerEvents.recipes(event => {
         "ticks": 200,
         "upgradeLevel": 1
     })
+    //熔岩瓶子提取恶魂之泪
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "item": 'alexsmobs:lava_bottle'
+            },
+            {
+                "item":'irons_spellbooks:arcane_ingot'
+            },
+            {
+                "item":'create:powdered_obsidian'
+            }
+        ],
+        "output": {
+          "item": 'minecraft:ghast_tear'
+        },
+        "syphon": 1000,
+        "ticks": 500,
+        "upgradeLevel": 4
+    })
 
     //祭坛配方修改
     //雷电瓶生成
@@ -57,6 +78,21 @@ ServerEvents.recipes(event => {
             "item": 'irons_spellbooks:lightning_bottle'
         },
         "upgradeLevel": 1
+    })
+    //四级血魔法宝珠（导师宝珠）合成方式修改
+    event.remove({id:'bloodmagic:altar/masterbloodorb'})
+    event.custom({
+        "type": "bloodmagic:altar",
+        "altarSyphon": 40000,
+        "consumptionRate": 30,
+        "drainRate": 50,
+        "input": {
+            "item": 'immersiveengineering:storage_steel'
+        },
+        "output": {
+            "item": "bloodmagic:masterbloodorb"
+        },
+        "upgradeLevel": 3
     })
 
     //炼金矩阵配方修改

@@ -1,0 +1,29 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "59B76A6AF749A1DB"
+	group: "560257DD7915FBBC"
+	icon: "immersiveengineering:manual"
+	id: "59B76A6AF749A1DB"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "65C8551E86B0DB6F"
+		subtitle: "嗯，科学的杠杆"
+		tasks: [{
+			id: "4BEBC493237C808C"
+			item: {
+				Count: 1b
+				id: "immersiveengineering:graphite_electrode"
+				tag: {
+					graphDmg: 0
+				}
+			}
+			type: "item"
+		}]
+		title: "“杠杆”"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "机械轰鸣"
+}
