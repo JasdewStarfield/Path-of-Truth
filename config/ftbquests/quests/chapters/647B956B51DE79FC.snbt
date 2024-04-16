@@ -13,6 +13,9 @@
 			description: [
 				"首先你需要四级祭坛和“钢铁之心”来产生你的第一枚导师气血宝珠。"
 				"然后，你就可以准备进行一些神秘的仪式了）"
+				"通常的仪式是放置主仪式石后，用仪式石建造框架，然后进行铭文。"
+				"仪式启动需要LP，一些功能持续性的仪式需要持续消耗LP，所以请确保你携带的气血宝珠足够多——附近多放几个祭坛也行）"
+				"&o&c注：不同属性的仪式石是通过“喷漆”获得的，这一合成方式在jei中无法查询，可以查询“元素铭文工具”获得想要的东西。&r&r"
 			]
 			icon: "bloodmagic:masterritualstone"
 			id: "5A5B1D96C50D1EAE"
@@ -22,16 +25,11 @@
 				item: "bloodmagic:ritualstone"
 				type: "item"
 			}]
-			subtitle: "你要折腾一些大东西了）"
+			subtitle: "你要折腾一些大家伙了）"
 			tasks: [
 				{
 					id: "71FC2BEF8E5ECB52"
 					item: "bloodmagic:masterbloodorb"
-					type: "item"
-				}
-				{
-					id: "2B81556828554FD0"
-					item: "bloodmagic:ritualdiviner"
 					type: "item"
 				}
 				{
@@ -40,7 +38,12 @@
 					type: "item"
 				}
 				{
-					id: "43D9C25D99C2D576"
+					id: "422D43F8E77060F2"
+					item: "bloodmagic:ritualdiviner"
+					type: "item"
+				}
+				{
+					id: "3837B6C1AE239E77"
 					item: "bloodmagic:ritualtinkerer"
 					type: "item"
 				}
@@ -81,7 +84,7 @@
 				"虽然它们一开始很好制造，但这并不意味着升级很容易。"
 				"不同的升级需要不同的训练方式和点数，而具体的可以参见血染知书，升级则通过这条项链。"
 				"……这玩意最好是项链。"
-				"如果你希望你的盔甲有更多的点数能够容纳升级，那么你需要摆一个仪式来升级你的盔甲（"
+				"如果你希望你的盔甲有更多的点数能够容纳升级，那么你需要摆一个仪式来升级你的盔甲，将点数上限从100变为300（"
 			]
 			id: "1F71A5FD2A6CA453"
 			subtitle: "你拥有活着的盔甲！"
@@ -96,13 +99,78 @@
 		}
 		{
 			dependencies: ["5A5B1D96C50D1EAE"]
+			description: [
+				"在血魔法的书中，你应该能找到两种进入地牢的仪式，分别对应小型地牢和大型地牢。"
+				"其中，小型地牢的危险性和收获都比较小，也无法让你获取恶魔金属；而大型地牢则非常复杂，战利品也非常多。"
+				"两种地牢的仪式都只需要进行一次，因为入口是固化的，你可以一直通过核心的柱状结构反复出入地牢。"
+				"如果你发现有的房间打不开，那就回去自己合成钥匙吧）"
+				"注意：仪式完成后，所有仪式石都会失效（除了生成的特殊结构），这些失效的石头是可以随意挖掘的"
+			]
+			icon: "bloodmagic:dungeon_ore"
 			id: "7CA6215959E08F1F"
 			subtitle: "深入地牢）"
-			tasks: [{
-				id: "28EA092571F69DAB"
-				item: "bloodmagic:rawdemonite"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "55A54BDA2D73D1B3"
+					item: "bloodmagic:ingot_hellforged"
+					type: "item"
+				}
+				{
+					id: "674A9361F5C7409D"
+					item: {
+						Count: 1b
+						id: "bloodmagic:earthscribetool"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "217DB6F844F8A19C"
+					item: {
+						Count: 1b
+						id: "bloodmagic:waterscribetool"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "472CEB392D5EB22C"
+					item: {
+						Count: 1b
+						id: "bloodmagic:firescribetool"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7A802412D4416E69"
+					item: {
+						Count: 1b
+						id: "bloodmagic:airscribetool"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4AFA64B4E0973BF5"
+					item: {
+						Count: 1b
+						id: "bloodmagic:duskscribetool"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "恶魔的金属"
 			x: 0.0d
 			y: -2.0d
@@ -164,6 +232,12 @@
 				"请善用这朵花……为你的魔法事业添砖加瓦。"
 			]
 			id: "13FCEF26D0A44844"
+			rewards: [{
+				count: 10
+				id: "3D112EB05C66852B"
+				item: "botania:cell_block"
+				type: "item"
+			}]
 			subtitle: "“这就是生活”"
 			tasks: [{
 				id: "6AE125F671370B8A"
@@ -176,6 +250,12 @@
 		}
 		{
 			dependencies: ["13FCEF26D0A44844"]
+			description: [
+				"现在，你可以通过一次史无前例的泰拉合成获得无尽的魔力石板。然而，无尽魔力池由于其工业用途，目前还离你相对遥远。"
+				"……不过这至少够你玩你的魔力射线枪和泰拉之刃了（确信"
+				"同时，这也意味着你的植魔盔甲将会恒定自我修补，而你的精酿项链也总是会起效。"
+				"&o&a“再去和泰拉守护者干一架吧”&r&r"
+			]
 			id: "63F56C428E164122"
 			subtitle: "魔力自有永有"
 			tasks: [{
@@ -191,8 +271,8 @@
 				type: "item"
 			}]
 			title: "自体永动机"
-			x: 1.5d
-			y: 1.5d
+			x: 1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0B5ECEDAA15BA54A"]
@@ -204,8 +284,8 @@
 				type: "item"
 			}]
 			title: "万用水晶"
-			x: -1.5d
-			y: -1.5d
+			x: -1.0d
+			y: -1.0d
 		}
 	]
 	title: "诡秘仪式"
