@@ -42,6 +42,27 @@ ServerEvents.recipes(event => {
         "ticks": 200,
         "upgradeLevel": 1
     })
+    //史莱姆球兑换末影之眼
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "item": 'minecraft:slime_ball'
+            },
+            {
+                "item":'minecraft:blaze_powder'
+            },
+            {
+                "item":'create:powdered_obsidian'
+            }
+        ],
+        "output": {
+          "item": 'minecraft:ender_pearl'
+        },
+        "syphon": 1000,
+        "ticks": 200,
+        "upgradeLevel": 2
+    })
     //熔岩瓶子提取恶魂之泪
     event.custom({
         "type": "bloodmagic:alchemytable",

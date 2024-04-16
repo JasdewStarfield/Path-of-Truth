@@ -10,6 +10,7 @@
 	quests: [
 		{
 			dependencies: ["193F465F65BC13F1"]
+			description: ["很显然，你成功折跃了。也许留一个传送点是比较明智的选择？"]
 			id: "15E666BAE38566D8"
 			subtitle: "在那开遍紫颂花的原野上……"
 			tasks: [{

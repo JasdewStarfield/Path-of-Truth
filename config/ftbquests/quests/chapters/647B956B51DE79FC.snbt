@@ -81,6 +81,7 @@
 				"虽然它们一开始很好制造，但这并不意味着升级很容易。"
 				"不同的升级需要不同的训练方式和点数，而具体的可以参见血染知书，升级则通过这条项链。"
 				"……这玩意最好是项链。"
+				"如果你希望你的盔甲有更多的点数能够容纳升级，那么你需要摆一个仪式来升级你的盔甲（"
 			]
 			id: "1F71A5FD2A6CA453"
 			subtitle: "你拥有活着的盔甲！"
@@ -92,6 +93,119 @@
 			title: "另一种盔甲升级"
 			x: 2.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["5A5B1D96C50D1EAE"]
+			id: "7CA6215959E08F1F"
+			subtitle: "深入地牢）"
+			tasks: [{
+				id: "28EA092571F69DAB"
+				item: "bloodmagic:rawdemonite"
+				type: "item"
+			}]
+			title: "恶魔的金属"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5A5B1D96C50D1EAE"]
+			description: [
+				"如果你想宅在家发展，不想下地挖矿，那不如试试这个！"
+				"当然，有关于生成几率和速率这种事情……显然它不会太快，生成的矿物也遵循基本规律：越稀有的矿物生成率越低。"
+				"它只能产生原版矿物，但也是一种魔力换资源的方式：反正石头这种东西你要多少有多少）"
+			]
+			id: "3502E7A3A9BB5220"
+			subtitle: "一台刷石机，一个魔力池，一切"
+			tasks: [{
+				id: "577EA34F988FEF5C"
+				item: "botania:orechid"
+				type: "item"
+			}]
+			title: "矿物供应商"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7CA6215959E08F1F"
+				"1F71A5FD2A6CA453"
+			]
+			description: [
+				"你会在书里发现一些英文描述，大致内容是“我们还没写完这个模组”"
+				"……所以很显然，作为魔法师兼整合包作者，有一部分内容被我进行了补完。"
+				"如果你发现用到了一些书里没有或者没说清楚的东西，请自行查询jei，因为我要说的话都在配方里了。"
+				"&o&a你不会以为我会给你翻译帕秋莉手册然后在这上面补全吧？不会吧不会吧？&r&r"
+			]
+			id: "0B5ECEDAA15BA54A"
+			subtitle: "这个魔法模组的作者不是很负责任（瘫"
+			tasks: [{
+				id: "2B2539E01BA27370"
+				item: {
+					Count: 1b
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "bloodmagic:guide"
+					}
+				}
+				type: "item"
+			}]
+			title: "魔法补完计划"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"3502E7A3A9BB5220"
+				"6D0730EAA3483E08"
+			]
+			description: [
+				"终于，你碰到了占地最大，功能最强的一种被动产能花。"
+				"现在的你才有能力去制造和使用它。"
+				"请善用这朵花……为你的魔法事业添砖加瓦。"
+			]
+			id: "13FCEF26D0A44844"
+			subtitle: "“这就是生活”"
+			tasks: [{
+				id: "6AE125F671370B8A"
+				item: "botania:dandelifeon"
+				type: "item"
+			}]
+			title: "最强被动产魔"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["13FCEF26D0A44844"]
+			id: "63F56C428E164122"
+			subtitle: "魔力自有永有"
+			tasks: [{
+				id: "3A13F492ABFFE57B"
+				item: {
+					Count: 1b
+					id: "botania:mana_tablet"
+					tag: {
+						creative: 1b
+						mana: 500000
+					}
+				}
+				type: "item"
+			}]
+			title: "自体永动机"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0B5ECEDAA15BA54A"]
+			id: "1D012CE5422522D7"
+			subtitle: "永恒的边缘是万能"
+			tasks: [{
+				id: "1A1BFBD5A83E10B8"
+				item: "bloodmagic:activationcrystalcreative"
+				type: "item"
+			}]
+			title: "万用水晶"
+			x: -1.5d
+			y: -1.5d
 		}
 	]
 	title: "诡秘仪式"
