@@ -25,6 +25,8 @@
 				item: "bloodmagic:ritualstone"
 				type: "item"
 			}]
+			shape: "octagon"
+			size: 1.5d
 			subtitle: "你要折腾一些大家伙了）"
 			tasks: [
 				{
@@ -178,18 +180,31 @@
 		{
 			dependencies: ["5A5B1D96C50D1EAE"]
 			description: [
-				"如果你想宅在家发展，不想下地挖矿，那不如试试这个！"
-				"当然，有关于生成几率和速率这种事情……显然它不会太快，生成的矿物也遵循基本规律：越稀有的矿物生成率越低。"
-				"它只能产生原版矿物，但也是一种魔力换资源的方式：反正石头这种东西你要多少有多少）"
+				"主媒体火花是所有多媒体网络的核心，你可以通过主媒体火花建立一个跨越距离（但不能跨越维度）的物品管理系统！"
+				"可以通过多媒体水晶来查询网络里有什么）"
+				"具体构建方式，请自己查看辞典）"
 			]
 			id: "3502E7A3A9BB5220"
-			subtitle: "一台刷石机，一个魔力池，一切"
+			rewards: [
+				{
+					id: "6A75BF6FB840C3C3"
+					item: "botania:corporea_crystal_cube"
+					type: "item"
+				}
+				{
+					id: "5E0FFA6D10500D1D"
+					item: "botania:corporea_spark"
+					type: "item"
+				}
+			]
+			subtitle: "魔力AE"
 			tasks: [{
+				icon: "botania:corporea_spark_master"
 				id: "577EA34F988FEF5C"
-				item: "botania:orechid"
+				item: "botania:corporea_spark_master"
 				type: "item"
 			}]
-			title: "矿物供应商"
+			title: "魔动工业基础"
 			x: 0.0d
 			y: 2.0d
 		}
@@ -205,6 +220,8 @@
 				"&o&a你不会以为我会给你翻译帕秋莉手册然后在这上面补全吧？不会吧不会吧？&r&r"
 			]
 			id: "0B5ECEDAA15BA54A"
+			shape: "hexagon"
+			size: 1.2d
 			subtitle: "这个魔法模组的作者不是很负责任（瘫"
 			tasks: [{
 				id: "2B2539E01BA27370"
@@ -238,6 +255,8 @@
 				item: "botania:cell_block"
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 1.2d
 			subtitle: "“这就是生活”"
 			tasks: [{
 				id: "6AE125F671370B8A"
@@ -251,7 +270,7 @@
 		{
 			dependencies: ["13FCEF26D0A44844"]
 			description: [
-				"现在，你可以通过一次史无前例的泰拉合成获得无尽的魔力石板。然而，无尽魔力池由于其工业用途，目前还离你相对遥远。"
+				"现在，你可以通过一次&l&9史无前例&r&r的泰拉合成获得无尽的魔力石板。然而，无尽魔力池由于其工业用途，目前还离你相对遥远。"
 				"……不过这至少够你玩你的魔力射线枪和泰拉之刃了（确信"
 				"同时，这也意味着你的植魔盔甲将会恒定自我修补，而你的精酿项链也总是会起效。"
 				"&o&a“再去和泰拉守护者干一架吧”&r&r"
@@ -276,6 +295,11 @@
 		}
 		{
 			dependencies: ["0B5ECEDAA15BA54A"]
+			description: [
+				"仪式水晶是个很烦人的东西，尤其是有种类限制的时候。"
+				"所以，最终的解决方案是一块万用水晶！"
+				"虽然材料不是很好找，但我相信你们现在的阶段应该是可以解决的。"
+			]
 			id: "1D012CE5422522D7"
 			subtitle: "永恒的边缘是万能"
 			tasks: [{
@@ -286,6 +310,78 @@
 			title: "万用水晶"
 			x: -1.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["7CA6215959E08F1F"]
+			id: "4C16917337A2AA2F"
+			subtitle: "顶级宝珠"
+			tasks: [{
+				id: "4394C17E6D7815F7"
+				item: "bloodmagic:archmagebloodorb"
+				type: "item"
+			}]
+			title: "更高阶的祭坛"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["13FCEF26D0A44844"]
+			description: [
+				"通过这个小东西，你可以利用植物魔法的魔力飞行。然而相应的是，它有CD，并且会消耗不少的魔力。"
+				"建议合成创造石板后再畅玩）"
+			]
+			id: "566537583B144D15"
+			subtitle: "魔力飞行"
+			tasks: [{
+				id: "6371D1A37FF75D74"
+				item: {
+					Count: 1b
+					id: "botania:flight_tiara"
+					tag: {
+						variant: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "天空之梦I"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0B5ECEDAA15BA54A"]
+			description: [
+				"通过相对简单的合成，你可以获得另一种飞行形式：准备好装有LP的宝珠，和你自己绑定，然后拿着这个符文右键你想飞往的方向）"
+				"它的消耗显然不算高，但相应的会占据你双手中的一个槽位）"
+			]
+			id: "75F796D92A1DE33B"
+			subtitle: "血液飞行（啊？"
+			tasks: [{
+				id: "2FA291D1865EE982"
+				item: "bloodmagic:airsigil"
+				type: "item"
+			}]
+			title: "天空之梦II"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3502E7A3A9BB5220"]
+			description: [
+				"将主媒体火花放置在多媒体索引上，你就可以通过简单的命令全网调用你需要的物品）"
+				"这也是后续一些神秘合成的基础要素之一）"
+				"具体使用方法还是参见辞典和JEI）"
+				"&o&a不会读书你为什么要来玩MC（？&r&r"
+			]
+			id: "0B50AAAD0722641F"
+			subtitle: "CPU与指令调用"
+			tasks: [{
+				id: "3ECCEBA2C384D683"
+				item: "botania:corporea_index"
+				type: "item"
+			}]
+			title: "网络核心"
+			x: 2.0d
+			y: 2.0d
 		}
 	]
 	title: "诡秘仪式"

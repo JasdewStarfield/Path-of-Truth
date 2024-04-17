@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2716B41E11042107"
+	group: "58EDF058942F253F"
+	icon: "immersiveengineering:logic_circuit"
+	id: "2716B41E11042107"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		id: "143E6A57D69BAE65"
+		tasks: [{
+			id: "1BB0AF39C0798036"
+			item: "immersiveengineering:logic_circuit"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "现代工业"
+}

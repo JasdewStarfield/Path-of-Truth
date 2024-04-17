@@ -1,0 +1,31 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "75FCB41C7CD72B90"
+	group: "58EDF058942F253F"
+	icon: {
+		Count: 1b
+		id: "alexsmobs:shattered_dimensional_carver"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "75FCB41C7CD72B90"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["15E666BAE38566D8"]
+		description: ["把虫子丢进末地的虚空，开启新世界的大门）"]
+		id: "48F6D7FEBE279F32"
+		subtitle: "大虫子"
+		tasks: [{
+			id: "33DB204435234363"
+			item: "alexsmobs:mysterious_worm"
+			type: "item"
+		}]
+		title: "虚空中的王者"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "维度征服者"
+}

@@ -1,0 +1,24 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1BB45CAF6A2385E2"
+	group: "453FC1B4D45CC35B"
+	icon: "minecraft:chain_command_block"
+	id: "1BB45CAF6A2385E2"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		icon: "bloodmagic:dungeon_alternator"
+		id: "0D0BEC03C1B26CA3"
+		subtitle: "机械的终末是……无限。"
+		tasks: [{
+			id: "0D9EFF16FA6958D4"
+			title: "魔法与工业的最高结晶……"
+			type: "checkmark"
+		}]
+		title: "机械神教，机械飞升"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "创世之力"
+}

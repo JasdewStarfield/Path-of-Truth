@@ -105,13 +105,27 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "bloodmagic:altar",
         "altarSyphon": 40000,
-        "consumptionRate": 30,
+        "consumptionRate": 50,
         "drainRate": 50,
         "input": {
             "item": 'immersiveengineering:storage_steel'
         },
         "output": {
             "item": "bloodmagic:masterbloodorb"
+        },
+        "upgradeLevel": 3
+    })
+    //万能仪式石合成
+    event.custom({
+        "type": "bloodmagic:altar",
+        "altarSyphon": 80000,
+        "consumptionRate": 100,
+        "drainRate": 10,
+        "input": {
+            "item": 'undergarden:forgotten_block'
+        },
+        "output": {
+            "item": 'bloodmagic:activationcrystalcreative'
         },
         "upgradeLevel": 3
     })

@@ -164,6 +164,20 @@ ServerEvents.recipes(event => {
         ], 
         50000
     )
+    //创造魔力石板合成
+    event.recipes.botania.terra_plate(Item.of('botania:mana_tablet', '{creative:1b,mana:500000}'), 
+        [
+            'botania:mana_tablet', 
+            'botania:terrasteel_block',
+            'immersiveengineering:storage_steel',
+            'botania:dragonstone_block',
+            'bloodmagic:masterbloodorb',
+            'minecraft:conduit',
+            'irons_spellbooks:mana_upgrade_orb',
+            'blue_skies:charoite_block'
+        ], 
+        100000
+    )
 
     //产能花系列配方修改
     //火红莲

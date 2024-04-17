@@ -1,0 +1,45 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "31996D3CC5C02EFC"
+	group: "58EDF058942F253F"
+	icon: "botania:corporea_spark_creative"
+	id: "31996D3CC5C02EFC"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		dependencies: [
+			"4C16917337A2AA2F"
+			"0B50AAAD0722641F"
+		]
+		description: [
+			"也许你曾经在地牢中发现过一些奇异饰品，但直到此刻，你才能够稳定的产出它们。"
+			"……因为你可以稳定的活化你的箱子了。"
+			"生命的光芒闪耀于鲜血和火花当中。"
+		]
+		icon: "artifacts:mimic_spawn_egg"
+		id: "12134A3EF6C80C54"
+		subtitle: "从给予你的箱子生命开始……"
+		tasks: [
+			{
+				id: "1376A92197AC643B"
+				item: "artifacts:mimic_spawn_egg"
+				type: "item"
+			}
+			{
+				id: "38D4F419FDC97AF8"
+				item: "botania:spark"
+				type: "item"
+			}
+			{
+				id: "683329F0F2EC8C27"
+				item: "bloodmagic:archmagebloodorb"
+				type: "item"
+			}
+		]
+		title: "创造生命"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "终极魔法"
+}

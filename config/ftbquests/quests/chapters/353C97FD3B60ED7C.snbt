@@ -1,0 +1,24 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "353C97FD3B60ED7C"
+	group: "453FC1B4D45CC35B"
+	icon: "minecraft:repeating_command_block"
+	id: "353C97FD3B60ED7C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		icon: "alexsmobs:transmutation_table"
+		id: "6D3D887E93176D55"
+		subtitle: "但你现在可以扭曲规则。"
+		tasks: [{
+			id: "686BD47323323FCE"
+			title: "有关终末……"
+			type: "checkmark"
+		}]
+		title: "真正的魔法是规则……"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "真理之源"
+}

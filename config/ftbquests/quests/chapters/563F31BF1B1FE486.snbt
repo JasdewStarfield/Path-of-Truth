@@ -32,7 +32,7 @@
 			}]
 			title: "第一朵花"
 			x: -2.0d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5BC62338A9F6E65B"]
@@ -56,7 +56,23 @@
 			}]
 			title: "第一本法术书"
 			x: 2.0d
-			y: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2A13E8CAD8E90E20"
+				"47CB45634A921A43"
+			]
+			id: "59793C79A0C3B12B"
+			subtitle: "基本仪式"
+			tasks: [{
+				id: "4B5822E77E2D37BD"
+				item: "bloodmagic:altar"
+				type: "item"
+			}]
+			title: "鲜血涌动"
+			x: 0.0d
+			y: -2.0d
 		}
 	]
 	title: "魔法进程表"
