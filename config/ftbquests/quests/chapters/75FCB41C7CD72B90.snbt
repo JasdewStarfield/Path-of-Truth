@@ -13,19 +13,131 @@
 	id: "75FCB41C7CD72B90"
 	order_index: 2
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["15E666BAE38566D8"]
-		description: ["把虫子丢进末地的虚空，开启新世界的大门）"]
-		id: "48F6D7FEBE279F32"
-		subtitle: "大虫子"
-		tasks: [{
-			id: "33DB204435234363"
-			item: "alexsmobs:mysterious_worm"
-			type: "item"
-		}]
-		title: "虚空中的王者"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["15E666BAE38566D8"]
+			description: [
+				"把虫子丢进末地的虚空，开启新世界的大门）"
+				"如果你计划召唤虚空蠕虫，你最好留着一条，因为可以用魔法进行复制）"
+			]
+			id: "48F6D7FEBE279F32"
+			subtitle: "大虫子"
+			tasks: [{
+				id: "33DB204435234363"
+				item: "alexsmobs:mysterious_worm"
+				type: "item"
+			}]
+			title: "虚空中的王者"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["48F6D7FEBE279F32"]
+			id: "0599775619A680AE"
+			rewards: [
+				{
+					id: "1178D24835197E2D"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B8E4E73A647D8D8"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:mending"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "一键回家"
+			tasks: [{
+				id: "0351C9B565C3F401"
+				item: {
+					Count: 1b
+					id: "alexsmobs:dimensional_carver"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "破碎虚空"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0599775619A680AE"]
+			id: "56D72743B3F704D2"
+			subtitle: "挖到世界边缘！"
+			tasks: [
+				{
+					id: "3D8676B10A9A765B"
+					item: "alexsmobs:capsid"
+					type: "item"
+				}
+				{
+					id: "19E883213D684F08"
+					item: {
+						Count: 1b
+						id: "alexsmobs:shattered_dimensional_carver"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "生物转换"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["48F6D7FEBE279F32"]
+			id: "59C51419CD44935C"
+			tasks: [{
+				id: "07A614381DF128FD"
+				item: "alexsmobs:void_worm_eye"
+				type: "item"
+			}]
+			title: "虚空凝视"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["59C51419CD44935C"]
+			description: [
+				"你可以通过眼球创造瞻远者！"
+				"瞻远者的每一击都是无视护甲的比例伤害，但你需要它的胳膊。"
+				"这是一种挑战，朋友）"
+			]
+			id: "16F90B8A45AE1C92"
+			subtitle: "艰难挑战"
+			tasks: [{
+				entity: "alexsmobs:farseer"
+				icon: "alexsmobs:farseer_arm"
+				id: "5EEB7815CF54FB6E"
+				type: "kill"
+				value: 1L
+			}]
+			title: "看得更远"
+			x: 0.0d
+			y: 2.0d
+		}
+	]
 	title: "维度征服者"
 }

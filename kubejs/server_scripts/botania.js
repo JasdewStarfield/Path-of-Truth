@@ -93,6 +93,14 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'botania',output:'botania:mana_gun'},
     'botania:mana_diamond', 'create:precision_mechanism' )
 
+    //深园催化石配方替换
+    event.replaceInput({mod:'undergarden',output:'undergarden:catalyst'},
+    'minecraft:diamond', 'botania:terrasteel_ingot' )
+    event.replaceInput({mod:'undergarden',output:'undergarden:catalyst'},
+    'minecraft:iron_ingot', 'irons_spellbooks:arcane_ingot' )
+    event.replaceInput({mod:'undergarden',output:'undergarden:catalyst'},
+    'minecraft:gold_ingot', 'create:brass_ingot' )
+
     //风暴透镜配方
     event.shaped(Item.of('botania:lens_storm',1),
         ['ABA',

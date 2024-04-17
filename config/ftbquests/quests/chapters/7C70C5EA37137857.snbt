@@ -24,6 +24,7 @@
 		}
 		{
 			dependencies: ["280307C036B9B6E7"]
+			description: ["剧毒巢穴的最下层，蜘蛛女王欢迎你）"]
 			icon: {
 				Count: 1b
 				id: "blue_skies:venom_sac"
@@ -67,6 +68,7 @@
 		}
 		{
 			dependencies: ["7A6D4E28C28302FE"]
+			description: ["自然城堡的最上层，大树守卫等着你）"]
 			icon: {
 				Count: 1b
 				id: "blue_skies:crushing_hammer"
@@ -107,6 +109,41 @@
 			title: "永昼的夜晚"
 			x: 2.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["15E666BAE38566D8"]
+			description: [
+				"钓鱼王之证（确信"
+				"证明一下你是末地最强钓鱼佬怎么样）"
+			]
+			id: "10CAF35A5551DC8F"
+			subtitle: "从加的饱食度就可以看出来……"
+			tasks: [{
+				id: "759962C6923883ED"
+				item: "tide:voidseeker"
+				type: "item"
+			}]
+			title: "最神秘的鱼"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["15E666BAE38566D8"]
+			description: [
+				"复刻怪会变成你的样子并且和你有完全一样的装备，然后和你对战）"
+				"这些凝胶也是后续你塑造高级生命的材料，记得多收集一些）"
+				"如果你输了你可以说“我被自己打死了”（笑）"
+			]
+			id: "10D75D0FB345A298"
+			subtitle: "谜题：镜像"
+			tasks: [{
+				id: "60F4CB02290B867E"
+				item: "alexsmobs:mimicream"
+				type: "item"
+			}]
+			title: "我打我自己"
+			x: 0.0d
+			y: 2.0d
 		}
 	]
 	title: "世界尽头"
