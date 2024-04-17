@@ -24,22 +24,6 @@
 
 		[general.types.leaves_type]
 
-			[general.types.leaves_type.blue_skies]
-				crystallized = true
-				crescent_fruit = true
-				bluebright = true
-				starlit = true
-				frostbright = true
-				lunar = true
-				dusk = true
-				maple = true
-				comet = true
-
-			[general.types.leaves_type.undergarden]
-				smogstem = true
-				wigglewood = true
-				grongle = true
-
 			[general.types.leaves_type.biomesoplenty]
 				origin = true
 				flowering_oak = true
@@ -59,6 +43,25 @@
 				umbran = true
 				hellbark = true
 
+			[general.types.leaves_type.blue_skies]
+				crystallized = true
+				crescent_fruit = true
+				bluebright = true
+				starlit = true
+				frostbright = true
+				lunar = true
+				dusk = true
+				maple = true
+				comet = true
+
+			[general.types.leaves_type.undergarden]
+				smogstem = true
+				wigglewood = true
+				grongle = true
+
+			[general.types.leaves_type.outer_end]
+				azure = true
+
 		[general.types.cake]
 
 			[general.types.cake.blue_skies]
@@ -76,14 +79,6 @@
 				maple = true
 				comet = true
 
-			[general.types.wood_type.betterarcheology]
-				rotten = true
-
-			[general.types.wood_type.undergarden]
-				smogstem = true
-				wigglewood = true
-				grongle = true
-
 			[general.types.wood_type.biomesoplenty]
 				fir = true
 				redwood = true
@@ -96,13 +91,21 @@
 				umbran = true
 				hellbark = true
 
+			[general.types.wood_type.undergarden]
+				smogstem = true
+				wigglewood = true
+				grongle = true
+
+			[general.types.wood_type.betterarcheology]
+				rotten = true
+
+			[general.types.wood_type.outer_end]
+				azure = true
+
 	#Disables specific entries
 	[general.entries]
 
 		[general.entries.wood_type]
-
-			[general.entries.wood_type.farmersdelight]
-				cabinet = true
 
 			[general.entries.wood_type.storagedrawers]
 				full_drawers_2 = true
@@ -113,15 +116,18 @@
 				half_drawers_2 = true
 				full_drawers_1 = true
 
-			[general.entries.wood_type.create]
-				window_pane = true
-				window = true
-
 			[general.entries.wood_type.decorative_blocks]
 				beam = true
 				support = true
 				seat = true
 				palisade = true
+
+			[general.entries.wood_type.create]
+				window = true
+				window_pane = true
+
+			[general.entries.wood_type.farmersdelight]
+				cabinet = true
 
 			[general.entries.wood_type.vct]
 				crafting_table = true

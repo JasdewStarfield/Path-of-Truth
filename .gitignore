@@ -49,3 +49,4 @@ config/attributefix.json
 config/terrablender.toml
 config/immediatelyfast.json
 config/modernfix-mixins.properties
+/config/spark

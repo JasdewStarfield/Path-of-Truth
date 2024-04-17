@@ -1,5 +1,5 @@
 #Lets the fishing rod be charged like a bow to cast the hook farther
-giveJournal = true
+giveJournal = false
 
 #+++ Fishing Journal Configs +++ 
 #You can add custom fish and pages to the "custom" slots.
