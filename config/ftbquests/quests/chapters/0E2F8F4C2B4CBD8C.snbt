@@ -1,0 +1,844 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0E2F8F4C2B4CBD8C"
+	group: "453FC1B4D45CC35B"
+	icon: "botania:fork_light_relay"
+	id: "0E2F8F4C2B4CBD8C"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["16F90B8A45AE1C92"]
+			description: ["得到每一种蔚蓝浩空特有的BOSS掉落物！"]
+			icon: "blue_skies:blue_journal"
+			id: "0EBCC9ACD99E6B83"
+			rewards: [{
+				id: "41671EF77FD3AF4F"
+				item: "storagedrawers:creative_storage_upgrade"
+				type: "item"
+			}]
+			subtitle: "击穿一切！"
+			tasks: [
+				{
+					id: "1E5AFC47BE30A9CB"
+					item: {
+						Count: 1b
+						id: "blue_skies:crushing_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "37B54615B6EE606E"
+					item: {
+						Count: 1b
+						id: "blue_skies:venom_sac"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "45D65404289D4B9F"
+					item: {
+						Count: 1b
+						id: "blue_skies:different_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7549D0AF8F876FC5"
+					item: {
+						Count: 1b
+						id: "blue_skies:soulbound_spear"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0A86AADC8CF5D709"
+					item: "blue_skies:alchemy_table"
+					type: "item"
+				}
+				{
+					id: "5BC3ACFF17AF859A"
+					item: {
+						Count: 1b
+						id: "blue_skies:alchemy_scroll"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1DFFE809A30E5383"
+					item: "blue_skies:summoning_table"
+					type: "item"
+				}
+				{
+					id: "5F76483372F60043"
+					item: {
+						Count: 1b
+						id: "blue_skies:summoning_tome"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "233924D31ABA7FC4"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "blue_skies:spike_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "蔚蓝浩空收割者"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0EBCC9ACD99E6B83"]
+			description: ["获得你应该通过地狱获得的所有资源！"]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						Insulation: [ ]
+					}
+				}
+				id: "minecraft:netherite_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "04200A4ECA4C6375"
+			subtitle: "你来，你见，你征服"
+			tasks: [
+				{
+					id: "0C36371EFD746915"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					id: "68E2616583F8D02D"
+					item: "minecraft:netherite_ingot"
+					type: "item"
+				}
+				{
+					id: "324D5B81B2A82B68"
+					item: {
+						Count: 1b
+						id: "tide:blazing_swordfish"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3CB74630D25CE054"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					id: "7A6EE7970E39244F"
+					item: "minecraft:ghast_tear"
+					type: "item"
+				}
+				{
+					id: "036CF40651B9B068"
+					item: "minecraft:magma_cream"
+					type: "item"
+				}
+			]
+			title: "地狱行者"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			description: ["获得所有植物魔法的遗物！"]
+			icon: "botania:dice"
+			id: "2C1B7E18AC2064D4"
+			rewards: [{
+				id: "5AD6AD7462096B9D"
+				item: "botania:corporea_spark_creative"
+				type: "item"
+			}]
+			subtitle: "植魔的禁忌武装"
+			tasks: [
+				{
+					id: "3D9EEBC5292E68AC"
+					item: "botania:infinite_fruit"
+					type: "item"
+				}
+				{
+					id: "0EE8473363B0E3B0"
+					item: "botania:king_key"
+					type: "item"
+				}
+				{
+					id: "6C79D8037BFD5D3F"
+					item: "botania:thor_ring"
+					type: "item"
+				}
+				{
+					id: "43F42BAF780C36EC"
+					item: {
+						Count: 1b
+						id: "botania:odin_ring"
+						tag: {
+							baubleUUID: [I;
+								442584890
+								262031562
+								-1737260528
+								-1222560252
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "16818AF1595519DB"
+					item: "botania:loki_ring"
+					type: "item"
+				}
+				{
+					id: "69ECF268FDC20C2B"
+					item: "botania:flugel_eye"
+					type: "item"
+				}
+			]
+			title: "遗物收藏家"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			icon: "irons_spellbooks:eldritch_manuscript"
+			id: "4A795BB15E5110EC"
+			rewards: [{
+				id: "611EBF51F42906A1"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:hither_thither_wand"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:portal"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "铁魔法的至高力量"
+			tasks: [
+				{
+					id: "741296DE9DD90C7D"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:scroll"
+						tag: {
+							ISB_Spells: {
+								data: [{
+									id: "irons_spellbooks:abyssal_shroud"
+									index: 0
+									level: 1
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3A2AD9719A9E9BBB"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:scroll"
+						tag: {
+							ISB_Spells: {
+								data: [{
+									id: "irons_spellbooks:sculk_tentacles"
+									index: 0
+									level: 1
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5ADE8738B26BDC18"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:scroll"
+						tag: {
+							ISB_Spells: {
+								data: [{
+									id: "irons_spellbooks:sonic_boom"
+									index: 0
+									level: 1
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "411F09CFDD86C8D5"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:scroll"
+						tag: {
+							ISB_Spells: {
+								data: [{
+									id: "irons_spellbooks:planar_sight"
+									index: 0
+									level: 1
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6BD23E880EE9E147"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:scroll"
+						tag: {
+							ISB_Spells: {
+								data: [{
+									id: "irons_spellbooks:telekinesis"
+									index: 0
+									level: 1
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "37B53EF9E28354B3"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:scroll"
+						tag: {
+							ISB_Spells: {
+								data: [{
+									id: "irons_spellbooks:eldritch_blast"
+									index: 0
+									level: 1
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "巫术卷轴"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			description: ["获得原版，维度模组以及alex的生物中（几乎）所有可以被处理为鱼的东西）"]
+			icon: "tide:twilight_angler_bucket"
+			id: "725308B81E925449"
+			rewards: [
+				{
+					id: "6647ED35CA4F12F1"
+					item: {
+						Count: 1b
+						id: "alexsmobs:pupfish_locator"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5533F1E66DFF5304"
+					item: {
+						Count: 1b
+						id: "alexsmobs:shield_of_the_deep"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "全是鱼……"
+			tasks: [
+				{
+					id: "7B154DB1966B1382"
+					item: "minecraft:cod"
+					type: "item"
+				}
+				{
+					id: "78718D9DD2BD6E13"
+					item: "minecraft:salmon"
+					type: "item"
+				}
+				{
+					id: "74152D6B189B3DA7"
+					item: "minecraft:tropical_fish"
+					type: "item"
+				}
+				{
+					id: "13C563A116466022"
+					item: "blue_skies:grittle_flatfish"
+					type: "item"
+				}
+				{
+					id: "65AF67174D3C1B4C"
+					item: "blue_skies:municipal_monkfish"
+					type: "item"
+				}
+				{
+					id: "55BE799CC8B27780"
+					item: "blue_skies:charscale_moki"
+					type: "item"
+				}
+				{
+					id: "7F47D9BC91A0D43A"
+					item: "blue_skies:horizofin_tunid"
+					type: "item"
+				}
+				{
+					id: "16601674E1044D08"
+					item: "alexsmobs:blobfish"
+					type: "item"
+				}
+				{
+					id: "393A647265F5A4B4"
+					item: "alexsmobs:cosmic_cod"
+					type: "item"
+				}
+				{
+					id: "60A00EC4254C8E13"
+					item: "alexsmobs:raw_catfish"
+					type: "item"
+				}
+				{
+					id: "36C5117D4A73CEDE"
+					item: "alexsmobs:flying_fish"
+					type: "item"
+				}
+				{
+					id: "097BC0A831A6720E"
+					item: {
+						Count: 1b
+						id: "alexsmobs:skelewag_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6F024CA37E1FB511"
+					item: "undergarden:raw_gwibling"
+					type: "item"
+				}
+				{
+					id: "2B479CF0C67F970D"
+					item: "alexsmobs:mudskipper_bucket"
+					type: "item"
+				}
+				{
+					id: "2A32A34432C6DA0E"
+					item: "alexsmobs:devils_hole_pupfish_bucket"
+					type: "item"
+				}
+			]
+			title: "钓鱼王I"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"获得所有潮汐（Tide）模组中的鱼！"
+				"（由于主世界的特殊性，不要求全部群系鱼收集）"
+			]
+			icon: "minecraft:angler_pottery_sherd"
+			id: "76F63C16AEEFA85D"
+			rewards: [
+				{
+					id: "4EAA16F7577E0C91"
+					item: {
+						Count: 1b
+						id: "alexsmobs:endolocator"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "740CD24A6B8B79F0"
+					item: {
+						Count: 1b
+						id: "tide:netherite_fishing_rod"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "568E42283331BBF6"
+					item: {
+						Count: 1b
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:mending"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "怎么还有？"
+			tasks: [
+				{
+					id: "6F168B7EF518EEA7"
+					item: "tide:clayfish"
+					type: "item"
+				}
+				{
+					id: "0F5378833543C1E5"
+					item: "tide:trout"
+					type: "item"
+				}
+				{
+					id: "5C623A07E136369D"
+					item: "tide:barracuda"
+					type: "item"
+				}
+				{
+					id: "30E851ED59B13A7D"
+					item: "tide:sailfish"
+					type: "item"
+				}
+				{
+					id: "360ECEEACB0DF5AD"
+					item: "tide:catfish"
+					type: "item"
+				}
+				{
+					id: "3D4DFAB61709ADEA"
+					item: "tide:pike"
+					type: "item"
+				}
+				{
+					id: "66FBF753C73916BF"
+					item: "tide:bass"
+					type: "item"
+				}
+				{
+					id: "64E0685D884919CD"
+					item: "tide:tuna"
+					type: "item"
+				}
+				{
+					id: "2E63DE9A3FF3CC9B"
+					item: "tide:glowfish"
+					type: "item"
+				}
+				{
+					id: "17F36A2521552121"
+					item: "tide:anglerfish"
+					type: "item"
+				}
+				{
+					id: "0F8C458943AB6932"
+					item: "tide:cave_crawler"
+					type: "item"
+				}
+				{
+					id: "3E231738EF03AA91"
+					item: "tide:gilded_minnow"
+					type: "item"
+				}
+				{
+					id: "78FC8EE698CE7B93"
+					item: "tide:abyss_angler"
+					type: "item"
+				}
+				{
+					id: "07F684749B416F3B"
+					item: "tide:lapis_lanternfish"
+					type: "item"
+				}
+				{
+					id: "0D258FBD47880C01"
+					item: "tide:deep_grouper"
+					type: "item"
+				}
+				{
+					id: "6FAE8A524C536805"
+					item: "tide:enderfin"
+					type: "item"
+				}
+				{
+					id: "5710DE6F4524D227"
+					item: "tide:purpur_pike"
+					type: "item"
+				}
+				{
+					id: "2E39D95300CCC21B"
+					item: "tide:mint_carp"
+					type: "item"
+				}
+				{
+					id: "5D90A628BB5BE791"
+					item: "tide:angelfish"
+					type: "item"
+				}
+				{
+					id: "5A992A664D06313A"
+					item: "tide:cave_eel"
+					type: "item"
+				}
+				{
+					id: "3818CC2AC9D07991"
+					item: "tide:crystal_shrimp"
+					type: "item"
+				}
+				{
+					id: "10AF40D9EC3D4D6C"
+					item: "tide:iron_tetra"
+					type: "item"
+				}
+				{
+					id: "632904D14072A02E"
+					item: "tide:crystalline_carp"
+					type: "item"
+				}
+				{
+					id: "6F01294F509A8692"
+					item: "tide:bedrock_tetra"
+					type: "item"
+				}
+				{
+					id: "0B26F8A5DC41506F"
+					item: "tide:luminescent_jellyfish"
+					type: "item"
+				}
+				{
+					id: "35D2D71268790B70"
+					item: "tide:shadow_snapper"
+					type: "item"
+				}
+				{
+					id: "0E060D7BB4CB1E1A"
+					item: "tide:endstone_perch"
+					type: "item"
+				}
+				{
+					id: "29FADB3286CF2105"
+					item: "tide:endergazer"
+					type: "item"
+				}
+				{
+					id: "70624C15BFC90D94"
+					item: "tide:chorus_cod"
+					type: "item"
+				}
+				{
+					id: "1336ECCD91663AC1"
+					item: "tide:elytrout"
+					type: "item"
+				}
+				{
+					id: "73D9491E4A11C241"
+					item: "tide:voidseeker"
+					type: "item"
+				}
+				{
+					id: "4B22393021AD30D9"
+					item: "tide:magma_mackerel"
+					type: "item"
+				}
+				{
+					id: "00FACB0C31EAC5E0"
+					item: "tide:warped_guppy"
+					type: "item"
+				}
+				{
+					id: "36544E3D912BC5D5"
+					item: "tide:crimson_fangjaw"
+					type: "item"
+				}
+				{
+					id: "79012262939881C1"
+					item: "tide:soulscaler"
+					type: "item"
+				}
+				{
+					id: "44155C430CEACF7D"
+					item: "tide:witherfin"
+					type: "item"
+				}
+				{
+					id: "1680E63402361A87"
+					item: "tide:ashen_perch"
+					type: "item"
+				}
+				{
+					id: "734AF4CD2A24D12E"
+					item: {
+						Count: 1b
+						id: "tide:blazing_swordfish"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "钓鱼王II"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["04200A4ECA4C6375"]
+			description: [
+				"从商人手中获得扼塞战斧，然后升级为最强大斧头！"
+				"*此刷怪蛋可以复制，请注意不要浪费）"
+			]
+			id: "5DFEFE3A567A507F"
+			rewards: [{
+				id: "3A37EACEEFCCAC20"
+				item: "undergarden:forgotten_guardian_spawn_egg"
+				type: "item"
+			}]
+			subtitle: "深暗最强武器"
+			tasks: [{
+				id: "7868FDBB684B6F3A"
+				item: {
+					Count: 1b
+					id: "undergarden:forgotten_battleaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "深暗王者"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5DFEFE3A567A507F"]
+			description: ["通过随便什么方式获得龙蛋——这是真理的一部分）"]
+			id: "583D1483CCA6EA3F"
+			subtitle: "你赢了，然后呢？"
+			tasks: [{
+				id: "33419BDCE26CF831"
+				item: "minecraft:dragon_egg"
+				type: "item"
+			}]
+			title: "巨龙悲歌"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["583D1483CCA6EA3F"]
+			description: [
+				"本模组提供了四个强大BOSS："
+				"暗夜巫妖，虚空之花，下界铁掌，黑曜石巨柱"
+				"通过击穿他们来证明你身为冒险家的实力！"
+				"你问我BOSS机制？自己探索去！"
+				""
+				"&o&a暗夜巫妖和虚空之花需要通过灵魂之星和虚空百合找到，下界铁掌会生成在类似猪灵堡垒的结构中，黑曜石巨柱则会生成在末地的大型平台上。&r&r"
+			]
+			id: "5EE2152C42721246"
+			rewards: [{
+				id: "0952CBB27F6B1843"
+				item: "create:wand_of_symmetry"
+				type: "item"
+			}]
+			subtitle: "这将是你面对的最终BOSS"
+			tasks: [
+				{
+					id: "05327A6F4952B11C"
+					item: "bosses_of_mass_destruction:blazing_eye"
+					type: "item"
+				}
+				{
+					id: "0015577D5FF5757D"
+					item: "bosses_of_mass_destruction:ancient_anima"
+					type: "item"
+				}
+				{
+					id: "6254833EAA2C9135"
+					item: "bosses_of_mass_destruction:obsidian_heart"
+					type: "item"
+				}
+				{
+					id: "0E921FB3BB592BCE"
+					item: "bosses_of_mass_destruction:void_thorn"
+					type: "item"
+				}
+			]
+			title: "战斗！爽！"
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "传说之路"
+}

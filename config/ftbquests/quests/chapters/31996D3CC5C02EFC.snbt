@@ -44,19 +44,6 @@
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
-			id: "0B39ED6847C19C3F"
-			subtitle: "你现在就是神——一部分的"
-			tasks: [{
-				id: "3AC0A456C19232DE"
-				item: "minecraft:debug_stick"
-				type: "item"
-			}]
-			title: "属性权能"
-			x: -2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["12134A3EF6C80C54"]
 			description: [
 				"通过归途指南针，你将找到地下的墓穴结构，巨量的亡灵，以及鲜血之王。"
 				"当然，你也可能在前期幸运地挖到了这个结构，不过这个任务放在了后期，因为前期你大概是会被打死（摊手"
@@ -121,7 +108,7 @@
 				type: "item"
 			}]
 			title: "核心能源"
-			x: 0.0d
+			x: -2.0d
 			y: 0.0d
 		}
 	]

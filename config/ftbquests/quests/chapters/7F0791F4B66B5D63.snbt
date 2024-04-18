@@ -57,6 +57,7 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["2ADB403A5CDF92C0"]
 			description: [
 				"永远明亮的世界会有冰冻的怪物，而且你会发现常规的装备不管用了！"
 				"你需要搞一点威力足够大的法术——或者搞那个世界的材料来制作装备。"
@@ -89,6 +90,7 @@
 			y: -1.5d
 		}
 		{
+			dependencies: ["2ADB403A5CDF92C0"]
 			description: [
 				"昏暗而压抑的世界，以及会把你点燃的虫子）"
 				"这个世界的怪物以虫子为主，而且风景不是很好，但水晶沙漠很漂亮，建议去看看）"
@@ -154,7 +156,7 @@
 			]
 			title: "星星点灯"
 			x: 0.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -187,7 +189,20 @@
 			}]
 			title: "钓鱼之王"
 			x: 0.0d
-			y: 0.5d
+			y: 1.5d
+		}
+		{
+			description: ["用一本书换一本书，用书本记录下自己的足迹。"]
+			id: "2ADB403A5CDF92C0"
+			subtitle: "守门人珍藏"
+			tasks: [{
+				id: "58FAD6ED3F0129B2"
+				item: "blue_skies:blue_journal"
+				type: "item"
+			}]
+			title: "说明书"
+			x: 0.0d
+			y: -1.5d
 		}
 	]
 	subtitle: ["Spirt of Exploration"]

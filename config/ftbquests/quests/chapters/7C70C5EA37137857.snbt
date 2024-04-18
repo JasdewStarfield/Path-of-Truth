@@ -27,7 +27,7 @@
 			description: ["剧毒巢穴的最下层，蜘蛛女王欢迎你）"]
 			icon: {
 				Count: 1b
-				id: "blue_skies:venom_sac"
+				id: "blue_skies:different_sword"
 				tag: {
 					Damage: 0
 				}
