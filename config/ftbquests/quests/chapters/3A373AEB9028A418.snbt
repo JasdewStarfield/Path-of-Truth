@@ -82,6 +82,7 @@
 				"床的重生点功能消失了，取而代之的是重生方尖碑。"
 				"你有一次设定自己重生点的机会——请谨慎选择。"
 				"小提示：方尖碑是需要充能的，所以……请尽量求生，朋友）"
+				"方尖碑的充能可以通过末影之眼和末影珍珠完成，拿着这两样东西对着方尖碑右键即可。"
 			]
 			id: "046F1DAD921FD2E8"
 			rewards: [
@@ -137,14 +138,8 @@
 			}
 			id: "2F41E7FB9071F484"
 			rewards: [{
-				id: "20C7C5F56B2A3033"
-				item: {
-					Count: 1b
-					id: "botania:flight_tiara"
-					tag: {
-						variant: 3
-					}
-				}
+				id: "5C8FF7137948EED1"
+				item: "bosses_of_mass_destruction:charged_ender_pearl"
 				type: "item"
 			}]
 			subtitle: "送你去另一个世界！"

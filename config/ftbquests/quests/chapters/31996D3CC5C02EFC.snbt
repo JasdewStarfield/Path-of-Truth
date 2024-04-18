@@ -40,7 +40,7 @@
 			]
 			title: "创造生命"
 			x: 0.0d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
@@ -53,6 +53,75 @@
 			}]
 			title: "属性权能"
 			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12134A3EF6C80C54"]
+			description: [
+				"通过归途指南针，你将找到地下的墓穴结构，巨量的亡灵，以及鲜血之王。"
+				"当然，你也可能在前期幸运地挖到了这个结构，不过这个任务放在了后期，因为前期你大概是会被打死（摊手"
+				"来一场法师决斗吧——然后把他的法杖抢过来！"
+				"&o&b*虽然你不一定一次就能抢到）&r&r"
+			]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						Insulation: [ ]
+					}
+				}
+				id: "irons_spellbooks:tarnished_helmet"
+				tag: {
+					Damage: 0
+					ISB_Spells: {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
+			}
+			id: "7B6A44193BB4D5FD"
+			subtitle: "与最强鲜血法师战斗！"
+			tasks: [
+				{
+					id: "05505D853225C269"
+					item: "irons_spellbooks:blood_staff"
+					type: "item"
+				}
+				{
+					id: "1BF8BADDFD9300F3"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:wayward_compass"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "死者为大"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12134A3EF6C80C54"]
+			id: "041344F554F1E367"
+			tasks: [{
+				id: "0C9BBF1AB1C0CBCD"
+				item: {
+					Count: 1b
+					id: "respawnobelisks:obelisk_core"
+					tag: {
+						RespawnObeliskData: {
+							Charge: 100.0d
+							MaxCharge: 100.0d
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "核心能源"
+			x: 0.0d
 			y: 0.0d
 		}
 	]
