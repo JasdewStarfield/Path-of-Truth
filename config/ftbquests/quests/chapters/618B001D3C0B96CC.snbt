@@ -335,9 +335,21 @@
 			]
 			description: [
 				"我们炼金术士有自己的炉子！"
-				"通过LP和特定组件，炼金炉可以对材料进行加工"
+				"通过注入液体和/或放入特定组件，炼金炉可以对材料进行加工、分解、调整等操作。"
+				"同时，在放入原始燃料单元/熔岩晶体的时候，它可以作为长效熔炉使用。"
 			]
 			id: "78CCD3E3F5662FCF"
+			rewards: [{
+				id: "3DBEACAC947D8065"
+				item: {
+					Count: 1b
+					id: "bloodmagic:furnacecell_primitive"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "血液炼金术"
 			tasks: [{
 				id: "5AA654B3165E7E62"
