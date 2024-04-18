@@ -82,6 +82,7 @@
 		}
 		{
 			dependencies: ["0599775619A680AE"]
+			description: ["你的镐子看起来碎了——它真的碎了吗？"]
 			id: "56D72743B3F704D2"
 			subtitle: "挖到世界边缘！"
 			tasks: [
@@ -108,7 +109,9 @@
 		}
 		{
 			dependencies: ["48F6D7FEBE279F32"]
+			description: ["你击败了本模组最难击败的几种生物——之一）"]
 			id: "59C51419CD44935C"
+			subtitle: "你赢了，但你也被盯上了"
 			tasks: [{
 				id: "07A614381DF128FD"
 				item: "alexsmobs:void_worm_eye"
