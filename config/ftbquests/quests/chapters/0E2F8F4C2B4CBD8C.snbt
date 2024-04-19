@@ -234,6 +234,7 @@
 			y: 2.0d
 		}
 		{
+			description: ["获得所有种类的巫术卷轴！"]
 			icon: "irons_spellbooks:eldritch_manuscript"
 			id: "4A795BB15E5110EC"
 			rewards: [{
