@@ -127,7 +127,7 @@ ServerEvents.recipes(event => {
             B:'minecraft:amethyst_block',
             C:'botania:terrasteel_ingot',
             D:'#minecraft:anvil',
-            E:'minecraft:polished_deepslate'
+            E:'undergarden:cloggrum_block'
         }
     )
 

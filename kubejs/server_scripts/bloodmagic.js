@@ -17,6 +17,11 @@ ServerEvents.recipes(event => {
     '#balm:stones', 'botania:livingrock' )
     event.replaceInput({mod:'bloodmagic',output:'bloodmagic:altar'},
     'minecraft:furnace', 'immersiveengineering:blastbrick' )
+    //修改炼金炉配方
+    event.replaceInput({mod:'bloodmagic',output:'bloodmagic:alchemicalreactionchamber'},
+    'minecraft:furnace', 'immersiveengineering:blastbrick' )
+    event.replaceInput({mod:'bloodmagic',output:'bloodmagic:alchemicalreactionchamber'},
+    'minecraft:iron_block', 'undergarden:cloggrum_block' )
 
     //删除基岩配方
     event.remove({id:'bloodmagic:array/day'})
@@ -98,7 +103,13 @@ ServerEvents.recipes(event => {
                 "item":'create:powdered_obsidian'
             },
             {
+                "item":'irons_spellbooks:arcane_salvage'
+            },
+            {
                 "item":'blue_skies:glowing_nature_stone'
+            },
+            {
+                "item":'alexsmobs:mimicream'
             }
         ],
         "output": {
@@ -123,7 +134,7 @@ ServerEvents.recipes(event => {
         "type": "bloodmagic:alchemytable",
         "input": [
             {
-                "tag": 'minecraft:shulker_boxes'
+                "tag": 'forge:chests'
             },
             {
                 "tag": 'forge:eggs'
@@ -136,12 +147,39 @@ ServerEvents.recipes(event => {
             },
             {
                 "item":'biomesoplenty:flesh'
+            },
+            {
+                "item":'alexsmobs:mimicream'
             }
         ],
         "output": {
           "item": 'artifacts:mimic_spawn_egg'
         },
         "syphon": 5000,
+        "ticks": 200,
+        "upgradeLevel": 5
+    })
+    //紫水晶母岩合成
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "item":'alexsmobs:dimensional_carver'
+            },
+            {
+                "item":'minecraft:dragon_egg'
+            },
+            {
+                "item":'minecraft:amethyst_block'
+            },
+            {
+                "item":'botania:spawner_mover'
+            }
+        ],
+        "output": {
+          "item": 'minecraft:budding_amethyst'
+        },
+        "syphon": 10000,
         "ticks": 200,
         "upgradeLevel": 5
     })
@@ -190,6 +228,20 @@ ServerEvents.recipes(event => {
         },
         "upgradeLevel": 3
     })
+    //创造魔力池合成
+    event.custom({
+        "type": "bloodmagic:altar",
+        "altarSyphon": 200000,
+        "consumptionRate": 500,
+        "drainRate": 0,
+        "input": {
+            "item": 'botania:fabulous_pool'
+        },
+        "output": {
+            "item": 'botania:creative_pool'
+        },
+        "upgradeLevel": 4
+    })
 
     //炼金矩阵配方修改
     //点铁成金
@@ -233,5 +285,33 @@ ServerEvents.recipes(event => {
             "item": 'minecraft:netherite_ingot'
         },
         "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
+    //点铁成缪铁
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'minecraft:amethyst_shard'
+        },
+        "baseinput": {
+            "item": 'minecraft:iron_ingot'
+        },
+        "output": {
+            "item": 'blue_skies:falsite_ingot'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/watersigil.png"
+    })
+    //点钻成绛紫晶
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'minecraft:amethyst_block'
+        },
+        "baseinput": {
+            "item": 'minecraft:diamond'
+        },
+        "output": {
+            "item": 'blue_skies:charoite'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/airsigil.png"
     })
 })

@@ -395,30 +395,17 @@
 			description: ["获得原版，维度模组以及alex的生物中（几乎）所有可以被处理为鱼的东西）"]
 			icon: "tide:twilight_angler_bucket"
 			id: "725308B81E925449"
-			rewards: [
-				{
-					id: "6647ED35CA4F12F1"
-					item: {
-						Count: 1b
-						id: "alexsmobs:pupfish_locator"
-						tag: {
-							Damage: 0
-						}
+			rewards: [{
+				id: "5533F1E66DFF5304"
+				item: {
+					Count: 1b
+					id: "alexsmobs:shield_of_the_deep"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-				{
-					id: "5533F1E66DFF5304"
-					item: {
-						Count: 1b
-						id: "alexsmobs:shield_of_the_deep"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			subtitle: "全是鱼……"
 			tasks: [
 				{
@@ -467,11 +454,6 @@
 					type: "item"
 				}
 				{
-					id: "60A00EC4254C8E13"
-					item: "alexsmobs:raw_catfish"
-					type: "item"
-				}
-				{
 					id: "36C5117D4A73CEDE"
 					item: "alexsmobs:flying_fish"
 					type: "item"
@@ -498,8 +480,23 @@
 					type: "item"
 				}
 				{
-					id: "2A32A34432C6DA0E"
+					id: "5BBF88022F8E6880"
 					item: "alexsmobs:devils_hole_pupfish_bucket"
+					type: "item"
+				}
+				{
+					id: "3B22C9773A4CEB13"
+					item: "alexsmobs:small_catfish_bucket"
+					type: "item"
+				}
+				{
+					id: "71B8B8D735DDE70D"
+					item: "alexsmobs:medium_catfish_bucket"
+					type: "item"
+				}
+				{
+					id: "00BFCBE320E6138A"
+					item: "alexsmobs:large_catfish_bucket"
 					type: "item"
 				}
 			]
@@ -757,16 +754,52 @@
 		}
 		{
 			dependencies: ["04200A4ECA4C6375"]
-			description: [
-				"从商人手中获得扼塞战斧，然后升级为最强大斧头！"
-				"*此刷怪蛋可以制造和复制，请注意不要浪费）"
-			]
+			description: ["从商人手中获得扼塞战斧，然后升级为最强大斧头！"]
 			id: "5DFEFE3A567A507F"
-			rewards: [{
-				id: "3A37EACEEFCCAC20"
-				item: "undergarden:forgotten_guardian_spawn_egg"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7A21D55634B4C8A8"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:scroll"
+						tag: {
+							ISB_Spells: {
+								data: [{
+									id: "irons_spellbooks:divine_smite"
+									index: 0
+									level: 5
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "746922BC92782A44"
+					item: {
+						Count: 1b
+						id: "irons_spellbooks:scroll"
+						tag: {
+							ISB_Spells: {
+								data: [{
+									id: "irons_spellbooks:flaming_strike"
+									index: 0
+									level: 5
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "深暗最强武器"
 			tasks: [{
 				id: "7868FDBB684B6F3A"
@@ -787,6 +820,19 @@
 			dependencies: ["5DFEFE3A567A507F"]
 			description: ["通过随便什么方式获得龙蛋——这是真理的一部分）"]
 			id: "583D1483CCA6EA3F"
+			rewards: [
+				{
+					id: "033DAB8F9E8C95E8"
+					item: "minecraft:dragon_head"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "0F1A65FB34082EBE"
+					item: "irons_spellbooks:dragonskin"
+					type: "item"
+				}
+			]
 			subtitle: "你赢了，然后呢？"
 			tasks: [{
 				id: "33419BDCE26CF831"

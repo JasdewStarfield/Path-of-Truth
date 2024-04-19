@@ -42,6 +42,8 @@ ServerEvents.recipes(event => {
     event.recipes.botania.mana_infusion('2x undergarden:forgotten_guardian_spawn_egg', 'undergarden:forgotten_guardian_spawn_egg', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x alexsmobs:spawn_egg_farseer', 'alexsmobs:spawn_egg_farseer', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x artifacts:mimic_spawn_egg', 'artifacts:mimic_spawn_egg', 25000,'botania:conjuration_catalyst')
+    //遗忆锭转化钻石1:2
+    event.recipes.botania.mana_infusion('2x minecraft:diamond', 'undergarden:forgotten_ingot', 1000,'botania:alchemy_catalyst')
 
     //末地空气转化扼塞锭和铁锭
     event.shapeless(Item.of('minecraft:iron_ingot',1),
@@ -84,6 +86,14 @@ ServerEvents.recipes(event => {
     'minecraft:ender_eye', 'minecraft:ender_pearl' )
     event.replaceInput({mod:'botania',output:'botania:natura_pylon'},
     'botania:terrasteel_nugget', 'create:brass_nugget' )
+
+    //生命聚合器配方替换
+    event.replaceInput({mod:'botania',output:'botania:spawner_mover'},
+    'botania:dragonstone', 'irons_spellbooks:blood_staff' )
+    event.replaceInput({mod:'botania',output:'botania:spawner_mover'},
+    'botania:elementium_ingot', 'botania:terrasteel_ingot' )
+    event.replaceInput({mod:'botania',output:'botania:spawner_mover'},
+    'botania:ender_air_bottle', 'irons_spellbooks:upgrade_orb' )
 
     //精灵门核心配方替换
     event.replaceInput({mod:'botania',output:'botania:alfheim_portal'},
@@ -152,6 +162,35 @@ ServerEvents.recipes(event => {
         ]
     )
 
+    //精灵门复制虚空蠕虫
+    event.recipes.botania.elven_trade(
+        [
+            'alexsmobs:mysterious_worm',
+            'alexsmobs:void_worm_effigy'
+        ], 
+        [
+            'alexsmobs:void_worm_effigy',
+            'minecraft:end_crystal',
+            'botania:corporea_index'
+        ]
+    )
+
+    //精灵门复制龙蛋
+    event.recipes.botania.elven_trade(
+        [
+            'minecraft:dragon_egg',
+            'minecraft:dragon_egg'
+        ], 
+        [
+            'minecraft:dragon_egg',
+            'minecraft:end_crystal',
+            '#forge:eggs',
+            'alexsmobs:farseer_arm',
+            'botania:corporea_spark',
+            'immersiveengineering:ingot_hop_graphite'
+        ]
+    )
+
     //星盘配方增加
     event.shaped(Item.of('blue_skies:astrolabe',1),
         ['ABA',
@@ -189,6 +228,20 @@ ServerEvents.recipes(event => {
             'blue_skies:charoite_block'
         ], 
         100000
+    )
+    //个人头像合成（终末产物）
+    event.recipes.botania.terra_plate('kubejs:midnight', 
+        [
+            'minecraft:dragon_egg', 
+            'irons_spellbooks:eldritch_manuscript',
+            'botania:creative_pool',
+            'bloodmagic:archmagebloodorb',
+            'minecraft:budding_amethyst',
+            'undergarden:forgotten_block',
+            'blue_skies:charoite_block',
+            'bosses_of_mass_destruction:obsidian_heart'
+        ], 
+        500000
     )
 
     //产能花系列配方修改

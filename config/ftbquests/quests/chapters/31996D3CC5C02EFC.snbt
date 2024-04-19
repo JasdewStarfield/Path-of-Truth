@@ -40,7 +40,7 @@
 			]
 			title: "创造生命"
 			x: 0.0d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
@@ -87,13 +87,19 @@
 				}
 			]
 			title: "死者为大"
-			x: 2.0d
-			y: 0.0d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
+			description: [
+				"现在你可以通过特定的手段创建和复制顶级生命。"
+				"其中，瞻远者需要通过魔法手段创造，而相对应的遗忆守卫需要通过工业手段创造。"
+				"虚空蠕虫比较特殊，你可以用打败蠕虫后的材料制作一个雕像，以此为凭据找精灵们兑换神秘蠕虫）"
+			]
+			icon: "artifacts:crystal_heart"
 			id: "059A741ABF2A9A34"
-			subtitle: "炼金创生"
+			subtitle: "以魔法复刻生命！"
 			tasks: [
 				{
 					id: "1A39BE641C3A581C"
@@ -105,11 +111,133 @@
 					item: "alexsmobs:spawn_egg_farseer"
 					type: "item"
 				}
+				{
+					id: "7C1C84A966E8A5A3"
+					item: "undergarden:forgotten_guardian_spawn_egg"
+					type: "item"
+				}
 			]
 			title: "巅峰炼金术"
 			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7B6A44193BB4D5FD"
+				"059A741ABF2A9A34"
+			]
+			description: [
+				"植物学的生命聚合器可以帮助你对于刷怪笼进行搬迁）"
+				"刷怪笼加生物蛋会发生什么我想……我应该不用多说了）"
+			]
+			id: "3044537D03B81BFF"
+			subtitle: "抓到一个笼子！"
+			tasks: [{
+				id: "27795803FBF6D039"
+				item: "botania:spawner_mover"
+				type: "item"
+			}]
+			title: "获取生命之源"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["12134A3EF6C80C54"]
+			description: [
+				"现在，你已经可以解析龙蛋的规则，并进行复制。"
+				"你已经越来越接近真相了，不是吗？"
+				"从1到2可是一个伟大的突破。"
+			]
+			id: "0C99BD24E939A68D"
+			subtitle: "以龙蛋为蓝本，你可以创造同样的东西出来！"
+			tasks: [{
+				count: 2L
+				id: "71D9BEAB1BAEE21C"
+				item: "minecraft:dragon_egg"
+				type: "item"
+			}]
+			title: "更多的蛋"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["12134A3EF6C80C54"]
+			description: [
+				"魔动工业无尽能源）"
+				"有了这个你大概率会染上魔瘾，但没有伊利丹来把它炸掉了（笑"
+				"但——你需要先，献血）"
+			]
+			id: "3BE92D4971A86473"
+			subtitle: "太阳井（确信"
+			tasks: [{
+				id: "6B02DAE7F314777E"
+				item: "botania:creative_pool"
+				type: "item"
+			}]
+			title: "魔力潮涌"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3044537D03B81BFF"]
+			description: [
+				"现在，即使你人不在，刷怪笼也可以通过魔力继续运行！"
+				"这也意味着，你开始进入无尽生物资源的时代。"
+			]
+			id: "57CDFE9B7DBD86EA"
+			subtitle: "魔力人"
+			tasks: [{
+				id: "662188F3AD8DBC97"
+				item: "botania:spawner_claw"
+				type: "item"
+			}]
+			title: "全自动生物收割"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0C99BD24E939A68D"
+				"3BE92D4971A86473"
+			]
+			description: [
+				"在正常的生存中，这是你绝对无法获得的东西。"
+				"细心的人可能会发现，我大发慈悲地在第二章送给了你们一块，作为墨水升级的紫水晶产出源。"
+				"然而现在，你需要亲自活化紫水晶块，来让母岩成为你通向真理的基石。"
+			]
+			id: "1A10DCB76F3AE6F2"
+			subtitle: "活化水晶"
+			tasks: [{
+				id: "6D9EBBD338BB3818"
+				item: "minecraft:budding_amethyst"
+				type: "item"
+			}]
+			title: "大地母亲"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A10DCB76F3AE6F2"]
+			description: [
+				"嗯，吃掉会有一个恒定的加成——但材料确实很贵，不是吗？"
+				"这可能是你见过的最奢侈的泰拉合成（"
+			]
+			id: "0C46182EC4B33189"
+			rewards: [{
+				id: "4170ABC8784B07DA"
+				item: "alexsmobs:transmutation_table"
+				type: "item"
+			}]
+			subtitle: "你将触碰——真理之源。"
+			tasks: [{
+				id: "353C425A4E0BBD22"
+				item: "kubejs:midnight"
+				type: "item"
+			}]
+			title: "通往终末的钥匙"
+			x: 4.0d
 			y: 0.0d
 		}
 	]
-	title: "终极魔法"
+	title: "生命炼成"
 }

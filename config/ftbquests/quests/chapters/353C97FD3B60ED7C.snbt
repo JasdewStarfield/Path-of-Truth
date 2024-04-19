@@ -8,8 +8,14 @@
 	order_index: 1
 	quest_links: [ ]
 	quests: [{
+		dependencies: ["0C46182EC4B33189"]
 		icon: "alexsmobs:transmutation_table"
 		id: "6D3D887E93176D55"
+		rewards: [{
+			id: "246B19B66E0D0D4B"
+			item: "minecraft:debug_stick"
+			type: "item"
+		}]
 		subtitle: "但你现在可以扭曲规则。"
 		tasks: [{
 			id: "65EB753A88E8AB99"

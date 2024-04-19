@@ -204,6 +204,44 @@
 			x: 0.0d
 			y: -1.5d
 		}
+		{
+			dependencies: ["636824522AD771D1"]
+			description: [
+				"通过紫水晶和炼金矩阵，你可以将铁转化为缪铁，将钻石转化为绛紫晶！"
+				"当然，不能逆向——这又不是紫薯精的手套（"
+			]
+			id: "31E9607DF423C550"
+			subtitle: "紫色的力量"
+			tasks: [
+				{
+					id: "181918A98B5916C4"
+					item: "blue_skies:falsite_ingot"
+					type: "item"
+				}
+				{
+					id: "3D657FAEE1EF3397"
+					item: "blue_skies:charoite"
+					type: "item"
+				}
+			]
+			title: "紫色激情"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["636824522AD771D1"]
+			description: ["炼金就是换来换去，炼金就是换来换去，炼金就是换来换去……"]
+			id: "756B6F6DEAD2F57F"
+			subtitle: "拿点带标签的东西试试？"
+			tasks: [{
+				id: "5192F0DB64CC6B90"
+				item: "blue_skies:alchemy_table"
+				type: "item"
+			}]
+			title: "自由变换"
+			x: 1.5d
+			y: 0.0d
+		}
 	]
 	subtitle: ["Spirt of Exploration"]
 	title: "探索精神"

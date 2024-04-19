@@ -313,15 +313,36 @@
 		}
 		{
 			dependencies: ["7CA6215959E08F1F"]
-			description: ["在你献祭了足够多的血液后，你终于成为了合格的大法师）"]
+			description: [
+				"在你献祭了足够多的血液后，你终于成为了合格的大法师）"
+				"同时，你可以使用瞬间传送了！不限制维度的那种！"
+				"缺点是需要血液（呃"
+			]
 			id: "4C16917337A2AA2F"
-			subtitle: "顶级宝珠"
-			tasks: [{
-				id: "4394C17E6D7815F7"
-				item: "bloodmagic:archmagebloodorb"
-				type: "item"
-			}]
-			title: "更高阶的祭坛"
+			subtitle: "顶级宝珠与跨维度移动"
+			tasks: [
+				{
+					id: "4394C17E6D7815F7"
+					item: "bloodmagic:archmagebloodorb"
+					type: "item"
+				}
+				{
+					id: "1313ACB170CA0E82"
+					item: "bloodmagic:teleposerfocus"
+					type: "item"
+				}
+				{
+					id: "109DFB74D8067754"
+					item: "bloodmagic:teleposer"
+					type: "item"
+				}
+				{
+					id: "19C71FC5B79F3E19"
+					item: "bloodmagic:telepositionsigil"
+					type: "item"
+				}
+			]
+			title: "高档魔法"
 			x: -2.0d
 			y: -2.0d
 		}
