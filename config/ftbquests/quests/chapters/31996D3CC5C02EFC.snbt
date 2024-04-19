@@ -92,22 +92,21 @@
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
-			id: "041344F554F1E367"
-			tasks: [{
-				id: "0C9BBF1AB1C0CBCD"
-				item: {
-					Count: 1b
-					id: "respawnobelisks:obelisk_core"
-					tag: {
-						RespawnObeliskData: {
-							Charge: 100.0d
-							MaxCharge: 100.0d
-						}
-					}
+			id: "059A741ABF2A9A34"
+			subtitle: "炼金创生"
+			tasks: [
+				{
+					id: "1A39BE641C3A581C"
+					item: "alexsmobs:mysterious_worm"
+					type: "item"
 				}
-				type: "item"
-			}]
-			title: "核心能源"
+				{
+					id: "1E82DD823E1D0ED9"
+					item: "alexsmobs:spawn_egg_farseer"
+					type: "item"
+				}
+			]
+			title: "巅峰炼金术"
 			x: -2.0d
 			y: 0.0d
 		}

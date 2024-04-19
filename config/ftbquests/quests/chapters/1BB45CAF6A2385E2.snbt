@@ -12,9 +12,10 @@
 		id: "0D0BEC03C1B26CA3"
 		subtitle: "机械的终末是……无限。"
 		tasks: [{
-			id: "0D9EFF16FA6958D4"
-			title: "魔法与工业的最高结晶……"
-			type: "checkmark"
+			id: "574D4B148744FE70"
+			item: "kubejs:buran"
+			title: "工业的最高成就……"
+			type: "item"
 		}]
 		title: "机械神教，机械飞升"
 		x: 0.0d

@@ -84,6 +84,67 @@ ServerEvents.recipes(event => {
         "ticks": 500,
         "upgradeLevel": 4
     })
+    //虚空蠕虫之眼制造瞻远者刷怪蛋
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "tag": 'forge:eggs'
+            },
+            {
+                "item":'alexsmobs:void_worm_eye'
+            },
+            {
+                "item":'create:powdered_obsidian'
+            },
+            {
+                "item":'blue_skies:glowing_nature_stone'
+            }
+        ],
+        "output": {
+          "item": 'alexsmobs:spawn_egg_farseer'
+        },
+        "syphon": 10000,
+        "ticks": 200,
+        "upgradeLevel": 5
+    })
+    //潜影盒炼制宝箱怪
+    //追加一个肉块配方
+    event.shaped(Item.of('biomesoplenty:flesh',1),
+        ['AAA',
+        'ABA',
+        'AAA'],
+        {
+            A:'minecraft:rotten_flesh',
+            B:'minecraft:bone'
+        }
+    )
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "tag": 'minecraft:shulker_boxes'
+            },
+            {
+                "tag": 'forge:eggs'
+            },
+            {
+                "item":'botania:pixie_dust'
+            },
+            {
+                "item":'minecraft:bone_block'
+            },
+            {
+                "item":'biomesoplenty:flesh'
+            }
+        ],
+        "output": {
+          "item": 'artifacts:mimic_spawn_egg'
+        },
+        "syphon": 5000,
+        "ticks": 200,
+        "upgradeLevel": 5
+    })
 
     //祭坛配方修改
     //雷电瓶生成

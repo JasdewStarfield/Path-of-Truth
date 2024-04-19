@@ -8,4 +8,5 @@ LootJS.modifiers((event) => {
     event.addBlockLootModifier("minecraft:tall_grass").removeLoot("minecraft:wheat_seeds")
     event.addBlockLootModifier("minecraft:grass").removeLoot("immersiveengineering:seed")
     event.addBlockLootModifier("minecraft:tall_grass").removeLoot("immersiveengineering:seed")
+    event.addLootTableModifier(LootType.CHEST).removeLoot(Item.of('minecraft:enchanted_book').enchant('supplementaries:stasis', 1))
 })

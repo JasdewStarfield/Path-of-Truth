@@ -12,9 +12,10 @@
 		id: "6D3D887E93176D55"
 		subtitle: "但你现在可以扭曲规则。"
 		tasks: [{
-			id: "686BD47323323FCE"
-			title: "有关终末……"
-			type: "checkmark"
+			id: "65EB753A88E8AB99"
+			item: "kubejs:midnight"
+			title: "魔法的终极结晶……"
+			type: "item"
 		}]
 		title: "真正的魔法是规则……"
 		x: 0.0d
