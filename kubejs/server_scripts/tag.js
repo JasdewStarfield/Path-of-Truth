@@ -27,6 +27,4 @@ ServerEvents.tags("item", (event) => {
     event.add("minecraft:tools","kubejs:bronze_shovel")
     event.add("minecraft:shovels","kubejs:bronze_shovel")
     */
-
-    event.remove("forge:dusts/coal_coke","tfmg:coal_coke_dust")
 })

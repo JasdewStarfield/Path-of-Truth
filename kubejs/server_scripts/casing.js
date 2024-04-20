@@ -36,74 +36,6 @@ ServerEvents.recipes(event => {
         B: 'botania:stripped_livingwood',
         A: material
       })
-      event.custom({
-        "type": "create:sequenced_assembly",
-        "ingredient": {
-          "item": "botania:stripped_livingwood"
-        },
-        "transitionalItem": {
-          "item": "botania:stripped_livingwood"
-        },
-        "sequence": [
-          {
-            "type": "create:deploying",
-            "ingredients": [
-              {
-                "item": "botania:stripped_livingwood"
-              },
-              {
-                "item": material
-              }
-            ],
-            "results": [
-              {
-                "item": "botania:stripped_livingwood"
-              }
-            ]
-          }
-        ],
-        "results": [
-          {
-            "item": output,
-            "chance": 30.0
-          }
-        ],
-        "loops": 4
-      })
-      event.custom({
-        "type": "create:sequenced_assembly",
-        "ingredient": {
-          "item": "botania:stripped_livingwood_log"
-        },
-        "transitionalItem": {
-          "item": "botania:stripped_livingwood_log"
-        },
-        "sequence": [
-          {
-            "type": "create:deploying",
-            "ingredients": [
-              {
-                "item": "botania:stripped_livingwood_log"
-              },
-              {
-                "item": material
-              }
-            ],
-            "results": [
-              {
-                "item": "botania:stripped_livingwood_log"
-              }
-            ]
-          }
-        ],
-        "results": [
-          {
-            "item": output,
-            "chance": 30.0
-          }
-        ],
-        "loops": 4
-      })
     }
 
     //安山机壳
@@ -120,6 +52,28 @@ ServerEvents.recipes(event => {
     event.remove({id:'create:item_application/brass_casing_from_wood'})
     event.remove({id:'create:item_application/brass_casing_from_log'})
     casing('create:brass_casing', 'create:brass_sheet')
+
+    //钢机壳
+    event.remove({id:'tfmg:item_application/steel_casing'})
+    event.shaped("tfmg:steel_casing", [ 
+      ' A ', 
+      'ABA',
+      ' A '  
+      ], {
+      B: 'immersiveengineering:treated_wood_horizontal',
+      A: 'forge:plates/steel'
+    })
+
+    //重型机械机壳
+    event.remove({id:'tfmg:item_application/heavy_machinery_casing'})
+    event.shaped("tfmg:heavy_machinery_casing", [ 
+      ' A ', 
+      'ABA',
+      ' A '  
+      ], {
+      B: 'tfmg:steel_casing',
+      A: 'forge:plates/steel'
+    })
 
     //齿轮
     event.remove({id:'create:crafting/kinetics/cogwheel'})

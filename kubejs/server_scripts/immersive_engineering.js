@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
     //高炉炼铁
     event.remove({id:/immersiveengineering:blastfurnace\/steel.*/})
     event.remove({id:/immersiveengineering:blastfurnace\/fuel.*/})
-    event.recipes.create.milling(Item.of('#forge:dusts/coal_coke').withChance(0.8), '#forge:coal_coke')
+    event.recipes.create.milling(Item.of('#forge:dusts/coal_coke').withChance(0.8), 'tfmg:coal_coke')
     event.custom({
         "type":"immersiveengineering:blast_furnace",
         "input":{"tag":"forge:raw_materials/iron"},
@@ -69,11 +69,6 @@ ServerEvents.recipes(event => {
         "type":"immersiveengineering:blast_furnace_fuel",
         "input":{"tag":"forge:dusts/coal_coke"},
         "time":1600
-    })
-    event.custom({
-        "type":"immersiveengineering:blast_furnace_fuel",
-        "input":{"item":"tfmg:coal_coke_dust"},
-        "time":3200
     })
 
     //流体管道
