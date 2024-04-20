@@ -16,9 +16,9 @@
 				"请注意收集它们，这是奥术的基石。"
 			]
 			icon: "minecraft:chest"
-			icon_scale: 1.5d
 			id: "374C430D0AD70D2E"
 			shape: "octagon"
+			size: 1.2d
 			subtitle: "有的时候你需要看看大自然的馈赠"
 			tasks: [{
 				id: "6E5FCD00F7C67EA4"

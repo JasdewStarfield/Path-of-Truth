@@ -242,7 +242,7 @@
 		{
 			dependencies: ["71BF98560860C0AB"]
 			id: "309ED82498C4F2D1"
-			subtitle: "魔力潮汐"
+			subtitle: "永动机（个人版）"
 			tasks: [{
 				id: "137EB8297FD4C37B"
 				item: {
@@ -300,6 +300,94 @@
 			title: "风暴之力"
 			x: 0.0d
 			y: -7.0d
+		}
+		{
+			dependencies: ["7B4BE516F4D4E494"]
+			id: "11809308EF757592"
+			subtitle: "末影之王"
+			tasks: [{
+				id: "47E21A0CAC53FC78"
+				item: "minecraft:dragon_egg"
+				type: "item"
+			}]
+			title: "更多的蛋"
+			x: -1.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["7B4BE516F4D4E494"]
+			id: "7A0D894A5227359D"
+			subtitle: "生命之源"
+			tasks: [{
+				id: "1B6941284D379213"
+				item: "botania:spawner_mover"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["7B4BE516F4D4E494"]
+			id: "1DC429EF770C416D"
+			subtitle: "工业化无尽魔力"
+			tasks: [{
+				id: "64A693A5EDD62113"
+				item: "botania:creative_pool"
+				type: "item"
+			}]
+			title: "魔力潮汐"
+			x: 2.0d
+			y: -16.0d
+		}
+		{
+			dependencies: [
+				"2022E86F75370929"
+				"7A0D894A5227359D"
+				"11809308EF757592"
+			]
+			id: "0A2BE67F3E9F7225"
+			tasks: [{
+				id: "106B3E5E1EB2E1C7"
+				item: "minecraft:budding_amethyst"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["7B4BE516F4D4E494"]
+			id: "2022E86F75370929"
+			subtitle: "噫，大虫子"
+			tasks: [{
+				id: "0832B35B18824218"
+				item: {
+					Count: 1b
+					id: "alexsmobs:dimensional_carver"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "撕裂维度"
+			x: 0.0d
+			y: -15.0d
+		}
+		{
+			dependencies: [
+				"1DC429EF770C416D"
+				"0A2BE67F3E9F7225"
+			]
+			id: "697B1277B1C95490"
+			subtitle: "真相的通行证"
+			tasks: [{
+				id: "09891F03B5381DDB"
+				item: "kubejs:midnight"
+				type: "item"
+			}]
+			title: "嗯，作者之一"
+			x: 0.0d
+			y: -17.0d
 		}
 	]
 	title: "魔法进程表"

@@ -7,25 +7,40 @@
 	id: "353C97FD3B60ED7C"
 	order_index: 1
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["0C46182EC4B33189"]
-		icon: "alexsmobs:transmutation_table"
-		id: "6D3D887E93176D55"
-		rewards: [{
-			id: "246B19B66E0D0D4B"
-			item: "minecraft:debug_stick"
-			type: "item"
-		}]
-		subtitle: "但你现在可以扭曲规则。"
-		tasks: [{
-			id: "65EB753A88E8AB99"
-			item: "kubejs:midnight"
-			title: "魔法的终极结晶……"
-			type: "item"
-		}]
-		title: "真正的魔法是规则……"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["0C46182EC4B33189"]
+			icon: "alexsmobs:transmutation_table"
+			id: "6D3D887E93176D55"
+			rewards: [{
+				id: "246B19B66E0D0D4B"
+				item: "minecraft:debug_stick"
+				type: "item"
+			}]
+			subtitle: "但你现在可以扭曲规则。"
+			tasks: [{
+				id: "65EB753A88E8AB99"
+				item: "kubejs:midnight"
+				title: "魔法的终极结晶……"
+				type: "item"
+			}]
+			title: "真正的魔法是规则……"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6D3D887E93176D55"]
+			id: "25B8A0AF0FDD432B"
+			subtitle: "资源复制"
+			tasks: [{
+				id: "70C4DC3CA7EC7EEE"
+				item: "botania:corporea_spark_creative"
+				type: "item"
+			}]
+			title: "至高网络节点"
+			x: 0.0d
+			y: -2.0d
+		}
+	]
 	title: "真理之源"
 }

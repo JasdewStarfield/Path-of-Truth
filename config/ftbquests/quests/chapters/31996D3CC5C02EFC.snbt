@@ -87,8 +87,8 @@
 				}
 			]
 			title: "死者为大"
-			x: -2.0d
-			y: -2.0d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
@@ -118,8 +118,8 @@
 				}
 			]
 			title: "巅峰炼金术"
-			x: -2.0d
-			y: 2.0d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -157,8 +157,8 @@
 				type: "item"
 			}]
 			title: "更多的蛋"
-			x: 2.0d
-			y: -2.0d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
@@ -175,8 +175,8 @@
 				type: "item"
 			}]
 			title: "魔力潮涌"
-			x: 2.0d
-			y: 2.0d
+			x: 1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3044537D03B81BFF"]
@@ -204,6 +204,7 @@
 				"在正常的生存中，这是你绝对无法获得的东西。"
 				"细心的人可能会发现，我大发慈悲地在第二章送给了你们一块，作为墨水升级的紫水晶产出源。"
 				"然而现在，你需要亲自活化紫水晶块，来让母岩成为你通向真理的基石。"
+				"&o&a*母岩不可复制——我可不希望有的人通过一些小手段逃课）&r&r"
 			]
 			id: "1A10DCB76F3AE6F2"
 			subtitle: "活化水晶"
@@ -224,8 +225,8 @@
 			]
 			id: "0C46182EC4B33189"
 			rewards: [{
-				id: "4170ABC8784B07DA"
-				item: "alexsmobs:transmutation_table"
+				id: "462F6C36FC5E8135"
+				item: "betterarcheology:radiance_totem"
 				type: "item"
 			}]
 			subtitle: "你将触碰——真理之源。"
@@ -237,6 +238,54 @@
 			title: "通往终末的钥匙"
 			x: 4.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["12134A3EF6C80C54"]
+			description: [
+				"现在，你可以不用再去下界古战场了——你可以通过盔甲来制造远古骑士！"
+				"虽然下界合金有点贵，但我相信对于灰烬源质的需求会让你主动来造的）"
+				"以盖亚之魂唤醒远古的英灵——然后挨打）"
+			]
+			id: "7E592EF6A0A80611"
+			subtitle: "石墩出动！"
+			tasks: [{
+				id: "5568E65CD216F102"
+				item: "irons_spellbooks:armor_pile"
+				type: "item"
+			}]
+			title: "盔甲铸魂"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["12134A3EF6C80C54"]
+			description: [
+				"只需要一点点火花，你就可以活化自己的姜饼人——然后用刷怪笼获得无穷无尽的姜饼人！"
+				"但说真的，你不会觉得吃活的姜饼人很奇怪吗？"
+			]
+			icon: "create_confectionery:gingerbread_man"
+			id: "1DFAF813825EE8B8"
+			subtitle: "喂，你不会有负罪感吗？"
+			tasks: [
+				{
+					id: "2FCEF42D3FB6BD87"
+					item: "create_confectionery:little_gingerbread_man_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "62D656EB5BB6A73D"
+					item: "create_confectionery:gingerbread_man"
+					type: "item"
+				}
+				{
+					id: "287E748404AF579A"
+					item: "botania:corporea_spark"
+					type: "item"
+				}
+			]
+			title: "鲜活的食品"
+			x: 0.0d
+			y: -2.0d
 		}
 	]
 	title: "生命炼成"

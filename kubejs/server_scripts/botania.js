@@ -238,8 +238,8 @@ ServerEvents.recipes(event => {
             'bloodmagic:archmagebloodorb',
             'minecraft:budding_amethyst',
             'undergarden:forgotten_block',
-            'blue_skies:charoite_block',
-            'bosses_of_mass_destruction:obsidian_heart'
+            'alexsmobs:transmutation_table',
+            'bosses_of_mass_destruction:mob_ward'
         ], 
         500000
     )
@@ -304,7 +304,99 @@ ServerEvents.recipes(event => {
         ]
     )
     //彼方兰（吃食物）
+    event.remove({ output: 'botania:gourmaryllis' })
+    event.recipes.botania.petal_apothecary('botania:gourmaryllis', 
+        [
+            '#botania:petals/gray',
+            '#botania:petals/red',
+            '#botania:petals/yellow',
+            'irons_spellbooks:arcane_essence',
+            '#forge:ingots/constantan',
+            'botania:rune_summer',
+            'botania:rune_fire'
+        ]
+    )
     //贪食花（吃蛋糕）
+    event.remove({ output: 'botania:kekimurus' })
+    event.recipes.botania.petal_apothecary('botania:kekimurus', 
+        [
+            '#botania:petals/white',
+            '#botania:petals/orange',
+            '#botania:petals/brown',
+            'irons_spellbooks:arcane_essence',
+            '#forge:ingots/constantan',
+            'botania:rune_gluttony',
+            'botania:pixie_dust'
+        ]
+    )
     //粘球草（吃自然生成的史莱姆）
+    event.remove({ output: 'botania:narslimmus' })
+    event.recipes.botania.petal_apothecary('botania:narslimmus', 
+        [
+            '#botania:petals/lime',
+            '#botania:petals/green',
+            '#botania:petals/black',
+            'irons_spellbooks:arcane_essence',
+            '#forge:ingots/constantan',
+            'botania:rune_water',
+            'botania:rune_summer'
+        ]
+    )
+    //斑斓花
+    event.remove({ output: 'botania:spectrolus' })
+    event.recipes.botania.petal_apothecary('botania:spectrolus', 
+        [
+            '#botania:petals/red',
+            '#botania:petals/green',
+            '#botania:petals/blue',
+            '#botania:petals/white',
+            'irons_spellbooks:arcane_ingot',
+            '#forge:ingots/steel',
+            'botania:rune_air',
+            'botania:rune_winter'
+        ]
+    )
+    //勿落草
+    event.remove({ output: 'botania:shulk_me_not' })
+    event.recipes.botania.petal_apothecary('botania:shulk_me_not', 
+        [
+            '#botania:petals/purple',
+            '#botania:petals/magenta',
+            '#botania:petals/gray',
+            'irons_spellbooks:arcane_ingot',
+            '#forge:ingots/steel',
+            'botania:rune_wrath',
+            'botania:rune_envy'
+        ]
+    )
+    //噬草花
+    event.remove({ output: 'botania:rafflowsia' })
+    event.recipes.botania.petal_apothecary('botania:rafflowsia', 
+        [
+            '#botania:petals/purple',
+            '#botania:petals/green',
+            '#botania:petals/black',
+            'irons_spellbooks:arcane_ingot',
+            '#forge:ingots/steel',
+            'botania:rune_pride',
+            'botania:rune_earth'
+        ]
+    )
+    //启命英！
+    event.remove({ output: 'botania:dandelifeon' })
+    event.recipes.botania.petal_apothecary('botania:dandelifeon', 
+        [
+            '#botania:petals/purple',
+            '#botania:petals/lime',
+            'botania:corporea_spark',
+            'irons_spellbooks:arcane_salvage',
+            '#forge:ingots/steel',
+            'botania:terrasteel_ingot',
+            'botania:rune_water',
+            'botania:rune_fire',
+            'botania:rune_air',
+            'botania:rune_earth'
+        ]
+    )
 
 })

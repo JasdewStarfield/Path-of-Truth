@@ -231,8 +231,8 @@ ServerEvents.recipes(event => {
     //创造魔力池合成
     event.custom({
         "type": "bloodmagic:altar",
-        "altarSyphon": 200000,
-        "consumptionRate": 500,
+        "altarSyphon": 500000,
+        "consumptionRate": 200,
         "drainRate": 0,
         "input": {
             "item": 'botania:fabulous_pool'
@@ -241,6 +241,20 @@ ServerEvents.recipes(event => {
             "item": 'botania:creative_pool'
         },
         "upgradeLevel": 4
+    })
+    //盖亚之魂合成奥术残骸
+    event.custom({
+        "type": "bloodmagic:altar",
+        "altarSyphon": 10000,
+        "consumptionRate": 200,
+        "drainRate": 0,
+        "input": {
+            "item": 'botania:life_essence'
+        },
+        "output": {
+            "item": 'irons_spellbooks:arcane_debris'
+        },
+        "upgradeLevel": 2
     })
 
     //炼金矩阵配方修改
@@ -283,6 +297,34 @@ ServerEvents.recipes(event => {
         },
         "output": {
             "item": 'minecraft:netherite_ingot'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
+    //下界合金盔甲注入盖亚之魂活化
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'botania:dragonstone_block'
+        },
+        "baseinput": {
+            "item": 'botania:gaia_ingot'
+        },
+        "output": {
+            "item": 'minecraft:netherite_ingot'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
+    //姜饼人活化
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'botania:life_essence'
+        },
+        "baseinput": {
+            "item": 'minecraft:netherite_chestplate'
+        },
+        "output": {
+            "item": 'irons_spellbooks:armor_pile'
         },
         "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
     })

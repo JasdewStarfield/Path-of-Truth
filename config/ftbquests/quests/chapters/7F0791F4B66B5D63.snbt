@@ -41,6 +41,7 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["6A1B42D208C780BD"]
 			description: [
 				"由于alex的生物存在，现在不同的下界群系中增加了额外的危险生物。"
 				"祝你下去的时候被绯红蚊子抱脸（确信"
@@ -192,6 +193,7 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["6A1B42D208C780BD"]
 			description: ["用一本书换一本书，用书本记录下自己的足迹。"]
 			id: "2ADB403A5CDF92C0"
 			subtitle: "守门人珍藏"

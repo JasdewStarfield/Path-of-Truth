@@ -9,7 +9,10 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["16F90B8A45AE1C92"]
+			dependencies: [
+				"7A6D4E28C28302FE"
+				"280307C036B9B6E7"
+			]
 			description: ["得到每一种蔚蓝浩空特有的BOSS掉落物！"]
 			icon: "blue_skies:blue_journal"
 			id: "0EBCC9ACD99E6B83"
@@ -177,14 +180,22 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["6A1B42D208C780BD"]
 			description: ["获得所有植物魔法的遗物！"]
 			icon: "botania:dice"
 			id: "2C1B7E18AC2064D4"
-			rewards: [{
-				id: "5AD6AD7462096B9D"
-				item: "botania:corporea_spark_creative"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "26C4D0136516FE95"
+					item: "artifacts:eternal_steak"
+					type: "item"
+				}
+				{
+					id: "141FA9B4A23A249B"
+					item: "sophisticatedbackpacks:everlasting_upgrade"
+					type: "item"
+				}
+			]
 			subtitle: "植魔的禁忌武装"
 			tasks: [
 				{
@@ -234,6 +245,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["6A1B42D208C780BD"]
 			description: ["获得所有种类的巫术卷轴！"]
 			icon: "irons_spellbooks:eldritch_manuscript"
 			id: "4A795BB15E5110EC"
@@ -392,6 +404,7 @@
 			y: -2.0d
 		}
 		{
+			dependencies: ["6A1B42D208C780BD"]
 			description: ["获得原版，维度模组以及alex的生物中（几乎）所有可以被处理为鱼的东西）"]
 			icon: "tide:twilight_angler_bucket"
 			id: "725308B81E925449"
@@ -505,6 +518,7 @@
 			y: 2.0d
 		}
 		{
+			dependencies: ["6A1B42D208C780BD"]
 			description: [
 				"获得所有潮汐（Tide）模组中的鱼！"
 				"（由于主世界的特殊性，不要求全部群系鱼收集）"
