@@ -1,0 +1,120 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "24C2242397E3BB49"
+	group: "60E63434E814893B"
+	icon: "createchromaticreturn:multiplite_tube"
+	id: "24C2242397E3BB49"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "6077CDDF1D3A011E"
+			subtitle: "终末光剑"
+			tasks: [{
+				id: "417832F588AA0F03"
+				item: "createchromaticreturn:radiant_glow_saber"
+				type: "item"
+			}]
+			title: "砍瓜切菜"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6077CDDF1D3A011E"]
+			id: "60D336DE781B656A"
+			subtitle: "能够破碎基岩的激光爪！"
+			tasks: [{
+				id: "3189FC1681D11F93"
+				item: "createchromaticreturn:radiant_glow_claws"
+				type: "item"
+			}]
+			title: "粉碎万物"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60D336DE781B656A"]
+			id: "5A910900A5C2135A"
+			subtitle: "祝你好运"
+			tasks: [{
+				id: "108DA76A62DA32C9"
+				item: "createchromaticreturn:bedrock_shard"
+				type: "item"
+			}]
+			title: "基岩的馈赠"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5A910900A5C2135A"]
+			id: "5CD99468F17FD0AC"
+			tasks: [
+				{
+					id: "72EB9A27B749319F"
+					item: "createchromaticreturn:bedrock_charm_base"
+					type: "item"
+				}
+				{
+					id: "5D449FA5C154D62B"
+					item: "createchromaticreturn:charm_base"
+					type: "item"
+				}
+			]
+			title: "压制核心"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5CD99468F17FD0AC"]
+			description: [
+				"在你贯穿世界后，万物都将加持与你。"
+				"恭喜你成功探究了这个世界——"
+				"现在，享受真理加持的快感吧。"
+			]
+			id: "40DDCA5F57C2C680"
+			rewards: [{
+				id: "2BE7FAEEEEF22E63"
+				item: "botania:infrangible_platform"
+				type: "item"
+			}]
+			subtitle: "现在，你就是神。"
+			tasks: [
+				{
+					id: "331782C5E1FA0A6A"
+					item: "createchromaticreturn:industrium_charm"
+					type: "item"
+				}
+				{
+					id: "33EB7F1CDD3EAF1C"
+					item: "createchromaticreturn:shadow_charm"
+					type: "item"
+				}
+				{
+					id: "5CDF68AC9961DF44"
+					item: "createchromaticreturn:refined_charm"
+					type: "item"
+				}
+				{
+					id: "0CDAD4ADBFC289B6"
+					item: "createchromaticreturn:multiplite_charm"
+					type: "item"
+				}
+				{
+					id: "0075D10829EF543F"
+					item: "createchromaticreturn:silkstrum_charm"
+					type: "item"
+				}
+				{
+					id: "79CCEA73DCECAF5D"
+					item: "createchromaticreturn:antiplite_charm"
+					type: "item"
+				}
+			]
+			title: "万物之理，集于一身"
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+	title: "真相于此展开"
+}
