@@ -318,15 +318,15 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "bloodmagic:array",
         "addedinput": {
-            "item": 'botania:life_essence'
+            "item": 'botania:corporea_spark'
         },
         "baseinput": {
-            "item": 'minecraft:netherite_chestplate'
+            "item": 'create_confectionery:gingerbread_man'
         },
         "output": {
-            "item": 'irons_spellbooks:armor_pile'
+            "item": 'create_confectionery:little_gingerbread_man_spawn_egg'
         },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+        "texture": "bloodmagic:textures/models/alchemyarrays/airsigil.png"
     })
     //点铁成缪铁
     event.custom({
