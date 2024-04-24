@@ -215,6 +215,33 @@ ServerEvents.recipes(event => {
     })
 
     //祭坛配方修改
+    //耐火黏土生成
+    event.custom({
+        "type": "bloodmagic:altar",
+        "altarSyphon": 1000,
+        "consumptionRate": 20,
+        "drainRate": 0,
+        "input": {
+            "item": 'minecraft:clay'
+        },
+        "output": {
+            "item": 'tfmg:fireclay'
+        },
+        "upgradeLevel": 1
+    })
+    event.custom({
+        "type": "bloodmagic:altar",
+        "altarSyphon": 250,
+        "consumptionRate": 10,
+        "drainRate": 0,
+        "input": {
+            "item": 'minecraft:clay_ball'
+        },
+        "output": {
+            "item": 'tfmg:fireclay_ball'
+        },
+        "upgradeLevel": 1
+    })
     //雷电瓶生成
     event.custom({
         "type": "bloodmagic:altar",
