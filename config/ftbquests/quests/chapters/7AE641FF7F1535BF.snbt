@@ -7,19 +7,231 @@
 	id: "7AE641FF7F1535BF"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "5B1818D5A1142A16"
-		shape: "gear"
-		subtitle: "切割磁感线……"
-		tasks: [{
-			id: "0468C63E0DA354E7"
-			item: "create_new_age:generator_coil"
-			type: "item"
-		}]
-		title: "磁能发电"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			id: "5B1818D5A1142A16"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "23B61758EA917990"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["241E68C9313210AD"]
+			id: "3A3413B00445526E"
+			tasks: [
+				{
+					id: "089DB3A1CA5A0C3A"
+					item: "tfmg:casting_basin"
+					type: "item"
+				}
+				{
+					id: "0A869FAD6E9169D2"
+					item: "tfmg:ingot_mold"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"241E68C9313210AD"
+				"5B1818D5A1142A16"
+			]
+			id: "3FE201936DBB127F"
+			tasks: [{
+				id: "5D6FC0BDFA823BE4"
+				item: "tfmg:casting_spout"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			id: "241E68C9313210AD"
+			tasks: [{
+				id: "1E690C7D6912DEB3"
+				item: "tfmg:cast_iron_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"0CF2DD3DB7F76FB2"
+				"5B1818D5A1142A16"
+			]
+			id: "309524B4033437AF"
+			tasks: [{
+				id: "1A0B1B856B1D1340"
+				item: "tfmg:blast_furnace_output"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0CF2DD3DB7F76FB2"]
+			id: "5863CFB1CDBEBEC9"
+			tasks: [
+				{
+					id: "6474BE02E12DA62F"
+					item: "tfmg:fireproof_bricks"
+					type: "item"
+				}
+				{
+					id: "71E0B9C5A6B8DF46"
+					item: "tfmg:fireproof_brick_reinforcement"
+					type: "item"
+				}
+			]
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			id: "0CF2DD3DB7F76FB2"
+			tasks: [{
+				id: "0C74014F9A4994EF"
+				item: "tfmg:fireclay_ball"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"3FE201936DBB127F"
+				"5863CFB1CDBEBEC9"
+				"309524B4033437AF"
+				"3A3413B00445526E"
+			]
+			id: "7A7C0A48248FA32B"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "7E42EFEA82C07766"
+				item: "immersiveengineering:ingot_steel"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7A7C0A48248FA32B"]
+			id: "2974EA098C1280C1"
+			tasks: [{
+				id: "58ED4D9D39320EF4"
+				item: "tfmg:steel_casing"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2974EA098C1280C1"
+				"2E4B9CF9789B1AF1"
+			]
+			id: "5700B2AFCCAEE31A"
+			tasks: [{
+				id: "3D0D2F088126E423"
+				item: "immersiveengineering:light_engineering"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.0d
+		}
+		{
+			id: "2E4B9CF9789B1AF1"
+			optional: true
+			shape: "diamond"
+			tasks: [
+				{
+					id: "24572984897793A8"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:blueprint"
+						tag: {
+							blueprint: "components"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7A4DCA3255B08F1C"
+					item: "immersiveengineering:workbench"
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 0.5d
+		}
+		{
+			id: "759F8BFB75CBF0B6"
+			tasks: [{
+				id: "4684AA4A0A8C77AB"
+				item: "immersiveengineering:wirecoil_copper"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"759F8BFB75CBF0B6"
+				"5700B2AFCCAEE31A"
+			]
+			id: "4B2D7C8A59593200"
+			tasks: [
+				{
+					id: "65A4A60A92995D8D"
+					item: "create_new_age:generator_coil"
+					type: "item"
+				}
+				{
+					id: "27BA4EE42BADE50D"
+					item: "create_new_age:carbon_brushes"
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4B2D7C8A59593200"
+				"250398995ECDA3CE"
+			]
+			icon: "createdeco:decal_electrical"
+			id: "504E6502A789DABF"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "7D75B5055412D2C0"
+				max_input: 1000L
+				type: "forge_energy"
+				value: 1000L
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			id: "250398995ECDA3CE"
+			tasks: [{
+				id: "16A0EAF298B2EF94"
+				item: "ftbquests:screen_1"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.5d
+		}
+	]
 	subtitle: ["Hearts of Iron"]
 	title: "钢铁雄心"
 }

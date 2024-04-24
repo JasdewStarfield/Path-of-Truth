@@ -4,10 +4,9 @@ ServerEvents.recipes(event => {
     event.remove({id:/immersiveengineering\:crafting\/plate_\.*/})
     event.remove({id:/immersiveengineering\:crafting\/raw_hammercrushing_\.*/})
     event.remove({id:/immersiveengineering\:crafting\/hammercrushing_\.*/})
-    event.remove({id:/immersiveengineering:crafting\/wire_.*/})
 
     //按分类移除
-    event.remove({type:'immersiveengineering:alloysmelter'})
+    event.remove({type:'immersiveengineering:alloy'})
 
     //焦炉砖
     event.remove({id:"immersiveengineering:crafting/cokebrick"})
@@ -41,6 +40,7 @@ ServerEvents.recipes(event => {
     )
 
     //高炉炼铁
+    event.remove({type:"tfmg:coking"})
     event.remove({id:/immersiveengineering:blastfurnace\/steel.*/})
     event.remove({id:/immersiveengineering:blastfurnace\/fuel.*/})
     event.recipes.create.milling(Item.of('#forge:dusts/coal_coke').withChance(0.8), 'tfmg:coal_coke')
@@ -91,4 +91,26 @@ ServerEvents.recipes(event => {
 			{"item":"immersiveengineering:treated_wood_horizontal"},
 		]
 	})
+
+    //工程块
+    event.remove({id:"immersiveengineering:crafting/light_engineering"})
+    event.remove({id:"immersiveengineering:crafting/heavy_engineering"})
+    event.shaped('immersiveengineering:light_engineering', [ 
+        'CAC', 
+        'ABA',
+        'CAC'  
+    ], {
+        B: 'tfmg:steel_casing',
+        A: 'immersiveengineering:component_steel',
+        C: 'immersiveengineering:component_iron'
+    })
+    event.shaped('immersiveengineering:heavy_engineering', [ 
+        'CAC', 
+        'ABA',
+        'CAC'  
+    ], {
+        B: 'tfmg:heavy_machinery_casing',
+        A: 'immersiveengineering:component_steel',
+        C: 'tfmg:steel_mechanism'
+    })
 })

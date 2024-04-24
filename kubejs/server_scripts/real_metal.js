@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
   event.replaceInput(
       { id: 'immersiveengineering:crafting/blueprint_components' }, // Arg 1: the filter
       '#forge:ingots/aluminum',            // Arg 2: the item to replace
-      '#forge:ingots/zinc'
+      '#forge:ingots/steel'
   )
 
   //铝
