@@ -119,7 +119,7 @@ ServerEvents.recipes(event => {
         "ticks": 200,
         "upgradeLevel": 5
     })
-    //潜影盒炼制宝箱怪
+    //箱子炼制宝箱怪
     //追加一个肉块配方
     event.shaped(Item.of('biomesoplenty:flesh',1),
         ['AAA',
@@ -156,6 +156,36 @@ ServerEvents.recipes(event => {
           "item": 'artifacts:mimic_spawn_egg'
         },
         "syphon": 5000,
+        "ticks": 200,
+        "upgradeLevel": 5
+    })
+    //潜影盒活化为潜影贝
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "tag": 'minecraft:shulker_boxes'
+            },
+            {
+                "tag": 'forge:eggs'
+            },
+            {
+                "item":'minecraft:popped_chorus_fruit'
+            },
+            {
+                "item":'botania:corporea_spark_master'
+            },
+            {
+                "item":'minecraft:end_crystal'
+            },
+            {
+                "item":'alexsmobs:mimicream'
+            }
+        ],
+        "output": {
+          "item": 'minecraft:shulker_spawn_egg'
+        },
+        "syphon": 20000,
         "ticks": 200,
         "upgradeLevel": 5
     })
@@ -235,7 +265,7 @@ ServerEvents.recipes(event => {
         "consumptionRate": 200,
         "drainRate": 0,
         "input": {
-            "item": 'botania:fabulous_pool'
+            "item": 'createchromaticreturn:creative_flour'
         },
         "output": {
             "item": 'botania:creative_pool'

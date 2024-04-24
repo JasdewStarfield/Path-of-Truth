@@ -12,6 +12,18 @@ ServerEvents.recipes(event => {
         ]
     )
 
+    //复制血腥法杖
+    event.recipes.botania.petal_apothecary('irons_spellbooks:blood_staff', 
+        [
+            'botania:fire_rod',
+            'irons_spellbooks:blood_upgrade_orb',
+            'createchromaticreturn:chromatic_compound',
+            'bloodmagic:strong_tau',
+            'bloodmagic:weakbloodshard',
+            'minecraft:dragon_breath'
+        ]
+    )
+
     //修改魔力池配方
     event.remove({ output: 'botania:mana_pool' })
     event.shaped(Item.of('botania:mana_pool',1),
@@ -38,10 +50,11 @@ ServerEvents.recipes(event => {
 
     //魔钢-奥术源质兑换
     event.recipes.botania.mana_infusion('4x irons_spellbooks:arcane_essence', 'botania:manasteel_ingot', 1000, 'botania:alchemy_catalyst')
-    //刷怪蛋复制：遗忆守卫，瞻远者，宝箱怪
+    //刷怪蛋复制：遗忆守卫，瞻远者，宝箱怪，潜影贝
     event.recipes.botania.mana_infusion('2x undergarden:forgotten_guardian_spawn_egg', 'undergarden:forgotten_guardian_spawn_egg', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x alexsmobs:spawn_egg_farseer', 'alexsmobs:spawn_egg_farseer', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x artifacts:mimic_spawn_egg', 'artifacts:mimic_spawn_egg', 25000,'botania:conjuration_catalyst')
+    event.recipes.botania.mana_infusion('2x minecraft:shulker_spawn_egg', 'minecraft:shulker_spawn_egg', 50000,'botania:conjuration_catalyst')
     //遗忆锭转化钻石1:2
     event.recipes.botania.mana_infusion('2x minecraft:diamond', 'undergarden:forgotten_ingot', 1000,'botania:alchemy_catalyst')
 
@@ -171,7 +184,8 @@ ServerEvents.recipes(event => {
         [
             'alexsmobs:void_worm_effigy',
             'minecraft:end_crystal',
-            'botania:corporea_index'
+            'botania:corporea_index',
+            'createchromaticreturn:antiplite_ingot'
         ]
     )
 
@@ -187,7 +201,7 @@ ServerEvents.recipes(event => {
             '#forge:eggs',
             'alexsmobs:farseer_arm',
             'botania:corporea_spark',
-            'immersiveengineering:ingot_hop_graphite'
+            'createchromaticreturn:multiplite_ingot'
         ]
     )
 
@@ -222,7 +236,7 @@ ServerEvents.recipes(event => {
             'botania:terrasteel_block',
             'immersiveengineering:storage_steel',
             'botania:dragonstone_block',
-            'bloodmagic:masterbloodorb',
+            'createchromaticreturn:chromatic_compound',
             'minecraft:conduit',
             'irons_spellbooks:mana_upgrade_orb',
             'blue_skies:charoite_block'
@@ -237,7 +251,7 @@ ServerEvents.recipes(event => {
             'botania:creative_pool',
             'bloodmagic:archmagebloodorb',
             'minecraft:budding_amethyst',
-            'undergarden:forgotten_block',
+            'createchromaticreturn:multiplite_ingot',
             'alexsmobs:transmutation_table',
             'bosses_of_mass_destruction:mob_ward'
         ], 

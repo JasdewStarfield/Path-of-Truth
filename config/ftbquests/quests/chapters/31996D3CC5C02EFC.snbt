@@ -17,6 +17,7 @@
 				"也许你曾经在地牢中发现过一些奇异饰品，但直到此刻，你才能够稳定的产出它们。"
 				"……因为你可以稳定的活化你的箱子了。"
 				"生命的光芒闪耀于鲜血和火花当中。"
+				"&o&5*注：你可以通过相同的手段活化你的潜影盒！&r&r"
 			]
 			icon: "artifacts:mimic_spawn_egg"
 			id: "12134A3EF6C80C54"
@@ -49,14 +50,10 @@
 				"当然，你也可能在前期幸运地挖到了这个结构，不过这个任务放在了后期，因为前期你大概是会被打死（摊手"
 				"来一场法师决斗吧——然后把他的法杖抢过来！"
 				"&o&b*虽然你不一定一次就能抢到）&r&r"
+				"法杖可以通过魔法手段锻造，所以如果脸太黑，不如试试直接自己造）"
 			]
 			icon: {
 				Count: 1b
-				ForgeCaps: {
-					"cold_sweat:item_insulation": {
-						Insulation: [ ]
-					}
-				}
 				id: "irons_spellbooks:tarnished_helmet"
 				tag: {
 					Damage: 0
@@ -246,13 +243,43 @@
 				"虽然下界合金有点贵，但我相信对于灰烬源质的需求会让你主动来造的）"
 				"以盖亚之魂唤醒远古的英灵——然后挨打）"
 			]
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:keeper_flamberge"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7E592EF6A0A80611"
 			subtitle: "石墩出动！"
-			tasks: [{
-				id: "5568E65CD216F102"
-				item: "irons_spellbooks:armor_pile"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5568E65CD216F102"
+					item: "irons_spellbooks:armor_pile"
+					type: "item"
+				}
+				{
+					id: "4CEA80778A09A2C7"
+					item: "botania:life_essence"
+					type: "item"
+				}
+				{
+					id: "62D03B580725735D"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:netherite_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "盔甲铸魂"
 			x: 0.0d
 			y: 2.0d
