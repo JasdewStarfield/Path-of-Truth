@@ -304,13 +304,13 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "bloodmagic:array",
         "addedinput": {
-            "item": 'botania:dragonstone_block'
+            "item": 'botania:life_essence'
         },
         "baseinput": {
-            "item": 'botania:gaia_ingot'
+            "item": 'minecraft:netherite_chestplate'
         },
         "output": {
-            "item": 'minecraft:netherite_ingot'
+            "item": 'irons_spellbooks:armor_pile'
         },
         "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
     })
