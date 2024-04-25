@@ -63,9 +63,7 @@ A Minecraft 1.20.1 Forge tech & magic modpack
   - [运行前的配置要求](#运行前的配置要求)
   - [安装步骤](#安装步骤)
 - [文件目录说明](#文件目录说明)
-- [开发的架构](#开发的架构)
 - [部署](#部署)
-- [使用到的框架](#使用到的框架)
 - [贡献者](#贡献者)
   - [如何参与开源项目](#如何参与开源项目)
 - [版本控制](#版本控制)
@@ -86,7 +84,7 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 ###### **安装步骤**
 
 1. 本整合包还在创作中，暂无安装步骤）
-2. 确实没有只是补充了第二条（
+2. 如果您希望体验开发版本，则可以直接克隆本仓库到你的HMCL启动器的versions文件夹的任一子文件夹内，然后打开启动器理论上就能看到对应版本了。
 
 ```sh
 git clone https://github.com/JasdewStarfield/Path-of-Truth.git
@@ -97,42 +95,32 @@ eg:
 
 ```
 filetree 
-├── ARCHITECTURE.md
-├── LICENSE.txt
 ├── README.md
-├── /account/
-├── /bbs/
-├── /docs/
-│  ├── /rules/
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-├── manage.py
-├── /oa/
-├── /static/
-├── /templates/
-├── useless.md
-└── /util/
+├── LICENSE
+├── log4j2.xml
+├── hmclverion.cfg
+├── arandompack.jar
+├── arandompack.json
+├── kubejs  //魔改内容
+│  ├── assests
+│  ├── data
+│  ├── config
+│  ├── client_scripts
+│  ├── server_scripts
+│  └── startup_scripts
+├── config  //模组本地配置
+├── defaultconfigs  //模组默认服务端配置
+└── mods  //模组
 
 ```
 
 
 
 
-
-### 开发的架构 
-
-请阅读[ARCHITECTURE.md](https://github.com/JasdewStarfield/Path-of-Truth/blob/master/ARCHITECTURE.md) 查阅为该项目的架构。
-
 ### 部署
 
 理论上把整合包zip拖进HMCL即可正常安装启动）
 虽然我们现在还没有整合好的压缩包）
-
-### 使用到的框架
-
-- [xxxxxxx](https://getbootstrap.com)
-- [xxxxxxx](https://jquery.com)
-- [xxxxxxx](https://laravel.com)
 
 ### 贡献者
 
@@ -171,7 +159,7 @@ xxx@xxxx
 
 
 - [Img Shields](https://shields.io)
-- [xxxxxxxxxxxxxx](https://connoratherton.com/loaders)
+- [🌩最好的中文README模板⚡️Best README template](https://github.com/shaojintian/Best_README_template)
 
 <!-- links -->
 [your-project-path]:JasdewStarfield/Path-of-Truth
