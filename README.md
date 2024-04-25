@@ -60,7 +60,7 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 ## 目录
 
 - [上手指南](#上手指南)
-  - [开发前的配置要求](#开发前的配置要求)
+  - [运行前的配置要求](#运行前的配置要求)
   - [安装步骤](#安装步骤)
 - [文件目录说明](#文件目录说明)
 - [开发的架构](#开发的架构)
@@ -78,15 +78,15 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 
 
-###### 开发前的配置要求
+###### 运行前的配置要求
 
 1. Java17（或更高）
 2. Hello Minecraft Launcher（推荐使用）
 
 ###### **安装步骤**
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. 本整合包还在创作中，暂无安装步骤）
+2. 确实没有只是补充了第二条（
 
 ```sh
 git clone https://github.com/JasdewStarfield/Path-of-Truth.git
@@ -125,7 +125,8 @@ filetree
 
 ### 部署
 
-暂无
+理论上把整合包zip拖进HMCL即可正常安装启动）
+虽然我们现在还没有整合好的压缩包）
 
 ### 使用到的框架
 
