@@ -147,8 +147,6 @@ filetree
 
 茉露星圃 | Jasdew Starfield
 
-___________________________
-
 深夜鸽子 | MidnightPigeon
 
  *您也可以在贡献者名单中参看所有参与该项目的开发者。*
