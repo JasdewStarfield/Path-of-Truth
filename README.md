@@ -80,6 +80,7 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 1. Java17（或更高）
 2. Hello Minecraft Launcher（推荐使用）
+3. 建议为游戏分配4G以上的内存
 
 ###### **安装步骤**
 

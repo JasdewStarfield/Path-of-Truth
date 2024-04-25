@@ -302,12 +302,21 @@
 			y: -1.0d
 		}
 		{
+			description: ["当然其它任务也可以用这个来自动提交"]
+			icon: "ftbquests:screen_1"
 			id: "250398995ECDA3CE"
-			tasks: [{
-				id: "16A0EAF298B2EF94"
-				item: "ftbquests:screen_1"
-				type: "item"
-			}]
+			subtitle: "以防你不知道，这个东西是用来提交有能量需求的任务的"
+			tasks: [
+				{
+					id: "16A0EAF298B2EF94"
+					item: "ftbquests:screen_1"
+					type: "item"
+				}
+				{
+					id: "5424C2BF7FD93265"
+					type: "checkmark"
+				}
+			]
 			x: 12.0d
 			y: 0.5d
 		}

@@ -30,4 +30,5 @@ ServerEvents.tags("item", (event) => {
 
     event.add("forge:coal_coke","tfmg:coal_coke")
     event.add("forge:storage_blocks/coal_coke","tfmg:coal_coke_block")
+    event.add("forge:dusts","kubejs:gold_silver_mix")
 })

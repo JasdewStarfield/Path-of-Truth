@@ -3,6 +3,9 @@ StartupEvents.registry('item', (event) => {
 	event.create("incomplete_andesite_engineering", 'create:sequenced_assembly').displayName('Incomplete Mechanical Engineering Block')
 	event.create("incomplete_fluid_engineering", 'create:sequenced_assembly').displayName('Incomplete Fluid Engineering Block')
 	event.create("incomplete_precise_engineering", 'create:sequenced_assembly').displayName('Incomplete Precise Engineering Block')
+	event.create("incomplete_light_engineering", 'create:sequenced_assembly').displayName('Incomplete Light Engineering Block')
+	event.create("incomplete_heavy_engineering", 'create:sequenced_assembly').displayName('Incomplete Heavy Engineering Block')
+	event.create("incomplete_rs_engineering", 'create:sequenced_assembly').displayName('Incomplete Redstone Engineering Block')
 })
 
 StartupEvents.registry('block', (event) => {

@@ -25,4 +25,30 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(inter, [inter, 'create:electron_tube']),
         event.recipes.createPressing(inter, inter)
     ]).transitionalItem(inter).loops(5)
+
+    //电池
+    event.replaceInput(
+        { output:"immersiveengineering:capacitor_lv" },
+        '#forge:ingots/iron',
+        '#forge:ingots/steel'
+    )
+    event.replaceInput(
+        { output:"immersiveengineering:capacitor_mv" },
+        '#forge:plates/nickel',
+        '#forge:plates/electrum'
+    )
+
+    //琥珀金（解锁中压传输）
+    event.recipes.create.mixing('kubejs:gold_silver_mix', ['#forge:dusts/silver','#forge:dusts/gold'])
+    event.custom({
+        "type":"immersiveengineering:squeezer",
+        "energy":6400,
+        "input":{
+            "base_ingredient":{"item":"kubejs:gold_silver_mix"},
+            "count":1
+        },
+        "result":{
+            "tag":"forge:dusts/electrum"
+        }
+    })
 })

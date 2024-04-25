@@ -27,6 +27,9 @@ StartupEvents.registry('item', (event) => {
 
   //未完成的黄铜
   event.create("incomplete_brass_ingot", 'create:sequenced_assembly').displayName('Incomplete Brass Ingot')
+
+  //金-银混合物
+  event.create("gold_silver_mix").displayName('Gold-Silver Mix')
 })
 
 StartupEvents.registry('block', (event) => {
