@@ -17,7 +17,10 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 <p align="center">
   <a href="https://github.com/JasdewStarfield/Path-of-Truth/">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="kubejs/assets/kubejs/textures/item/buran.png" alt="Logo" width="80" height="80">
+  </a>
+  <a href="https://github.com/JasdewStarfield/Path-of-Truth/">
+    <img src="kubejs/assets/kubejs/textures/item/midnight.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">综合向1.20.1Forge整合包</h3>
@@ -38,10 +41,20 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 
 欢迎来到“真理之路”整合包。
+
+
 本整合包由狂野工程师JasdewStarfield与抽象魔法师MidnightPigeon联合创作。
+
+
 在这个世界，你将进行持续的探索发现，直至终末。
+
+
 如果你的知识不够，有一些真相你会没有能力发现；
+
+
 如果你的探索不充分，有一些事物你将无从了解。
+
+
 唯有全面发展，以科学和魔法为左右手，走到虚空的尽头——并看破世界的真实。
  
 ## 目录
@@ -61,14 +74,14 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 ### 上手指南
 
-请将所有链接中的“shaojintian/Best_README_template”改为“your_github_name/your_repository”
+目前仍在开发中，完成主题架构后会及时发布体验版。
 
 
 
 ###### 开发前的配置要求
 
-1. xxxxx x.x.x
-2. xxxxx x.x.x
+1. Java17（或更高）
+2. Hello Minecraft Launcher（推荐使用）
 
 ###### **安装步骤**
 
