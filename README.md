@@ -72,7 +72,7 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 ### 上手指南
 
-目前仍在开发中，完成主题架构后会及时发布体验版。
+目前仍在开发中，完成主体架构后会及时发布体验版。
 
 
 
@@ -145,9 +145,11 @@ filetree
 
 ### 作者
 
-xxx@xxxx
+茉露星圃 | Jasdew Starfield
 
-知乎:xxxx  &ensp; qq:xxxxxx    
+___________________________
+
+深夜鸽子 | MidnightPigeon
 
  *您也可以在贡献者名单中参看所有参与该项目的开发者。*
 
