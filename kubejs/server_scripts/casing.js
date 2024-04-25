@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
       ' A '  
       ], {
       B: 'immersiveengineering:treated_wood_horizontal',
-      A: 'forge:plates/steel'
+      A: '#forge:plates/steel'
     })
 
     //重型机械机壳
@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
       ' A '  
       ], {
       B: 'tfmg:steel_casing',
-      A: 'forge:plates/steel'
+      A: '#forge:plates/lead'
     })
 
     //齿轮
