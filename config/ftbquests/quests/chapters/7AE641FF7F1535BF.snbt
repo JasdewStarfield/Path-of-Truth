@@ -285,6 +285,7 @@
 			dependencies: [
 				"4B2D7C8A59593200"
 				"250398995ECDA3CE"
+				"6F6699667400028E"
 			]
 			icon: "createdeco:decal_electrical"
 			id: "504E6502A789DABF"
@@ -319,6 +320,16 @@
 			]
 			x: 12.0d
 			y: 0.5d
+		}
+		{
+			id: "6F6699667400028E"
+			tasks: [{
+				id: "2D6FD4297BF580BC"
+				item: "create_new_age:magnetite_block"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.5d
 		}
 	]
 	subtitle: ["Hearts of Iron"]

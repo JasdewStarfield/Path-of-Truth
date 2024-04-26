@@ -72,7 +72,7 @@ ServerEvents.recipes(event => {
       ' A '  
       ], {
       B: 'tfmg:steel_casing',
-      A: '#forge:plates/lead'
+      A: '#forge:nuggets/forgotten_metal'
     })
 
     //齿轮

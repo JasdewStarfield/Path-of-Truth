@@ -40,6 +40,7 @@ ServerEvents.recipes(event => {
 
     //琥珀金（解锁中压传输）
     event.recipes.create.mixing('kubejs:gold_silver_mix', ['#forge:dusts/silver','#forge:dusts/gold'])
+    event.remove({id:"immersiveengineering:crafting/electrum_mix"})
     event.custom({
         "type":"immersiveengineering:squeezer",
         "energy":6400,
@@ -51,4 +52,8 @@ ServerEvents.recipes(event => {
             "tag":"forge:dusts/electrum"
         }
     })
+
+    //散热方块
+    //这玩意配方比较神秘，只能用数据覆盖的方法改。参见data文件夹
+
 })

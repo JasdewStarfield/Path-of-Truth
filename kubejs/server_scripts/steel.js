@@ -40,6 +40,11 @@ ServerEvents.recipes(event => {
   //event.shapeless('tfmg:coke_dust', [
   //  'immersiveengineering:coke_dust'
   //])
+  event.replaceInput(
+    { input:"tfmg:rebar" },
+    'tfmg:rebar',
+    '#forge:rods/steel'
+  ) 
 
   //发电
   event.remove({ mod: 'create_new_age'/*, not:[{output:'create_new_age:basic_motor'},{output:'create_new_age:carbon_brushes'},{output:'create_new_age:generator_coil'}]*/ })

@@ -1,4 +1,5 @@
 {
+	autofocus_id: "3B29D716A3D5AAF0"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "59B76A6AF749A1DB"
@@ -7,23 +8,716 @@
 	id: "59B76A6AF749A1DB"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "65C8551E86B0DB6F"
-		subtitle: "嗯，科学的杠杆"
-		tasks: [{
-			id: "4BEBC493237C808C"
-			item: {
-				Count: 1b
-				id: "immersiveengineering:graphite_electrode"
-				tag: {
-					graphDmg: 0
+	quests: [
+		{
+			icon: "irons_spellbooks:lightning_bottle"
+			id: "01534DC5812DBA15"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "569F1900B0E099D3"
+				title: "电力驱动！"
+				type: "checkmark"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["01534DC5812DBA15"]
+			id: "56F7012826597C35"
+			shape: "diamond"
+			subtitle: "这应该是你目前唯一能做出来的电力系统"
+			tasks: [
+				{
+					id: "0A68549D404610F9"
+					item: "immersiveengineering:capacitor_lv"
+					type: "item"
 				}
-			}
-			type: "item"
-		}]
-		title: "“杠杆”"
-		x: 0.0d
-		y: 0.0d
-	}]
+				{
+					id: "76D486062D269C22"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+				{
+					id: "1AC425B6FB63B06B"
+					item: "immersiveengineering:connector_lv"
+					type: "item"
+				}
+				{
+					id: "7F2B292007465A65"
+					item: "immersiveengineering:connector_lv_relay"
+					type: "item"
+				}
+			]
+			title: "低压电力系统"
+			x: -8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0EA7E42D07C4BC01"]
+			icon: "immersiveengineering:fermenter"
+			id: "11F2CDF608EA11DA"
+			tasks: [
+				{
+					count: 2L
+					id: "2AFD860939145650"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "762905BD85F6049B"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "435760F9C46D0B9E"
+					item: "immersiveengineering:sheetmetal_iron"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "2865C37D8B97541E"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4657CE40FA5AD128"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2FC517ACDE967B42"
+					item: "kubejs:fluid_engineering"
+					type: "item"
+				}
+				{
+					id: "37AF227F6B37E2C1"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "组装发酵机"
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0EA7E42D07C4BC01"]
+			icon: "immersiveengineering:squeezer"
+			id: "1E0E5E47E1264279"
+			tasks: [
+				{
+					count: 2L
+					id: "15CC16097E74A823"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "6C29C2FA4F139D80"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "0E8790E366EEDCD7"
+					item: "immersiveengineering:steel_fence"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "4989B46A88E78C79"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0107513CC605D7A3"
+					item: "immersiveengineering:wooden_barrel"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "16F204453489FAD9"
+					item: "kubejs:fluid_engineering"
+					type: "item"
+				}
+				{
+					id: "17E6782896582F24"
+					item: "minecraft:piston"
+					type: "item"
+				}
+				{
+					id: "432BA3C91DE215C5"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "组装挤压机"
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1E0E5E47E1264279"]
+			icon: "immersiveengineering:ingot_electrum"
+			id: "3D6CCF4A93478320"
+			shape: "gear"
+			size: 2.0d
+			tasks: [
+				{
+					id: "4D92B9D18E55E44E"
+					item: "immersiveengineering:ingot_electrum"
+					type: "item"
+				}
+				{
+					id: "3A4BE85609E8FB9D"
+					item: "kubejs:gold_silver_mix"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1E0E5E47E1264279"]
+			icon: "immersiveengineering:plantoil_bucket"
+			id: "1404B54F1747DE16"
+			tasks: [{
+				id: "1C087B5F221D57DF"
+				title: "植物油"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["11F2CDF608EA11DA"]
+			icon: "immersiveengineering:ethanol_bucket"
+			id: "48A3FEF7D02104E5"
+			tasks: [{
+				id: "55EDC4FAFB6E8875"
+				title: "乙醇"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0EA7E42D07C4BC01"]
+			icon: "immersiveengineering:refinery"
+			id: "0FD551E50150A7AD"
+			tasks: [
+				{
+					count: 2L
+					id: "67F425DC97A20D43"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "08F6EB6B45D6FD9B"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "3ECBA312C990B469"
+					item: "immersiveengineering:sheetmetal_iron"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5D35AC45069B0374"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "128AF0B254D80B7C"
+					item: "kubejs:fluid_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6A26DA6CAC4AE4FE"
+					item: "kubejs:precise_engineering"
+					type: "item"
+				}
+				{
+					id: "5A99DC18E2220867"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "组装炼油厂"
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D6CCF4A93478320"]
+			id: "1997BD2CF61ACBA8"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "7C21BBB46A56EFCE"
+					item: "immersiveengineering:wirecoil_electrum"
+					type: "item"
+				}
+				{
+					id: "172FB13F366E3641"
+					item: "immersiveengineering:capacitor_mv"
+					type: "item"
+				}
+				{
+					id: "161EEFB3509C9DBC"
+					item: "immersiveengineering:connector_mv"
+					type: "item"
+				}
+				{
+					id: "2723F981B1CE092E"
+					item: "immersiveengineering:connector_mv_relay"
+					type: "item"
+				}
+			]
+			title: "中压电力系统"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"3D6CCF4A93478320"
+				"3B29D716A3D5AAF0"
+			]
+			icon: "immersiveengineering:diesel_generator"
+			id: "76EF99C068AA2361"
+			tasks: [
+				{
+					count: 13L
+					id: "5AD52430F23B8E03"
+					item: "kubejs:andesite_engineering"
+					type: "item"
+				}
+				{
+					id: "01359F738909AA92"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "35A5BDD20ACCB660"
+					item: "immersiveengineering:radiator"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "4968E20434EDABA4"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "3FF2B5F7A52B9AFB"
+					item: "kubejs:fluid_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "15D250476987F11B"
+					item: "immersiveengineering:generator"
+					type: "item"
+				}
+				{
+					id: "22348BD9DFAB10A4"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "组装柴油发电机"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"48A3FEF7D02104E5"
+				"1404B54F1747DE16"
+				"0FD551E50150A7AD"
+				"2D1BA006EF115501"
+			]
+			icon: "immersiveengineering:biodiesel_bucket"
+			id: "3B29D716A3D5AAF0"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "728AB7BF739D2BBE"
+				title: "生物柴油"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["76EF99C068AA2361"]
+			id: "33D03FA0C23F78F5"
+			shape: "diamond"
+			subtitle: "泡泡系，王道征途罢（心虚"
+			tasks: [{
+				id: "3428E89B02D0D20C"
+				max_input: 1000L
+				type: "forge_energy"
+				value: 114514L
+			}]
+			title: "证明你的能量霸权！"
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3B29D716A3D5AAF0"]
+			icon: "immersiveengineering:arc_furnace"
+			id: "583407C7537AE9C9"
+			tasks: [
+				{
+					count: 10L
+					id: "4D6B834F4F92B3B6"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "561950B9E4D2BADF"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "013133A969D5F8EC"
+					item: "immersiveengineering:storage_steel"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "5F1C12F5642A482F"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5CE1650F9B147F33"
+					item: "immersiveengineering:radiator"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "022414468264B361"
+					item: "kubejs:precise_engineering"
+					type: "item"
+				}
+				{
+					count: 27L
+					id: "0F039EB31AD23BF6"
+					item: "immersiveengineering:blastbrick_reinforced"
+					type: "item"
+				}
+				{
+					count: 14L
+					id: "7DE651763EA056AF"
+					item: "immersiveengineering:slab_sheetmetal_steel"
+					type: "item"
+				}
+				{
+					id: "088121352A88038C"
+					item: "minecraft:cauldron"
+					type: "item"
+				}
+				{
+					id: "6998FE6FE8B54E9B"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "组装电弧炉"
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"583407C7537AE9C9"
+				"66E52E485A1A4139"
+			]
+			id: "2BE7BA0BE9F2DBC9"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "079139B4E55015BA"
+				item: "immersiveengineering:ingot_aluminum"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			id: "2D1BA006EF115501"
+			subtitle: "建立自动化农场！"
+			tasks: [{
+				id: "39F74AB1F55B8E62"
+				title: "自动化小贴士"
+				type: "checkmark"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1E0E5E47E1264279"]
+			id: "48E0B5D1F9972D20"
+			tasks: [{
+				id: "764ECAD4084B20D0"
+				item: "immersiveengineering:dust_hop_graphite"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"48E0B5D1F9972D20"
+				"087C118AB8CC51F8"
+			]
+			id: "66E52E485A1A4139"
+			tasks: [{
+				id: "4138B587205AB188"
+				item: {
+					Count: 1b
+					id: "immersiveengineering:graphite_electrode"
+					tag: {
+						graphDmg: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2BE7BA0BE9F2DBC9"]
+			id: "56F4C82F40DFA8F5"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "766E3AB03BC41581"
+					item: "immersiveengineering:wirecoil_steel"
+					type: "item"
+				}
+				{
+					id: "57E724381F179E0D"
+					item: "immersiveengineering:capacitor_hv"
+					type: "item"
+				}
+				{
+					id: "0FAEF1E583E4917F"
+					item: "immersiveengineering:connector_hv"
+					type: "item"
+				}
+				{
+					id: "384BD7268BC8BEC7"
+					item: "immersiveengineering:connector_hv_relay"
+					type: "item"
+				}
+			]
+			title: "高压电力系统"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["01534DC5812DBA15"]
+			icon: "immersiveengineering:metal_press"
+			id: "143039C6AC2D8186"
+			tasks: [
+				{
+					count: 2L
+					id: "5208256C58FB7FBB"
+					item: "kubejs:andesite_engineering"
+					type: "item"
+				}
+				{
+					id: "70BAA1024A93259A"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					id: "138EE193A413F62D"
+					item: "minecraft:piston"
+					type: "item"
+				}
+				{
+					id: "5668AB17943A7B88"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "79009AC91E696452"
+					item: "immersiveengineering:conveyor_basic"
+					type: "item"
+				}
+				{
+					id: "4B481FA85145F89F"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "搭建金属冲压机"
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["143039C6AC2D8186"]
+			id: "22631A52B9D81A49"
+			tasks: [{
+				id: "0609FD0C01142C51"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:rods/all_metal"
+					}
+				}
+				title: "Any #forge:rods/all_metal"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["22631A52B9D81A49"]
+			id: "0EA7E42D07C4BC01"
+			tasks: [{
+				id: "2B3D45F9C0B744F9"
+				item: "immersiveengineering:steel_scaffolding_standard"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			id: "087C118AB8CC51F8"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				id: "26DA5121AA920A2A"
+				item: {
+					Count: 1b
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "electrode"
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2BE7BA0BE9F2DBC9"
+				"6D9B785CB93D94D6"
+			]
+			id: "03312D6881CC617D"
+			tasks: [{
+				id: "1F69FA726AA73BD9"
+				item: "tfmg:steel_mechanism"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2BE7BA0BE9F2DBC9"]
+			id: "6D9B785CB93D94D6"
+			tasks: [{
+				id: "147D1D7C0FBC9106"
+				item: {
+					Count: 1b
+					id: "tfmg:screwdriver"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"724A0B71BA342AEE"
+				"03312D6881CC617D"
+			]
+			id: "5FB9514C6DE7AD58"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "28BE4BF6221D2F19"
+				item: "immersiveengineering:heavy_engineering"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A19AB31DBCDBCF7"]
+			id: "724A0B71BA342AEE"
+			tasks: [{
+				id: "01630D7BDD3D44BF"
+				item: "tfmg:heavy_machinery_casing"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			id: "1A19AB31DBCDBCF7"
+			tasks: [{
+				id: "631AF2A0043BCBA8"
+				item: "undergarden:forgotten_nugget"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -1.0d
+		}
+	]
 	title: "机械轰鸣"
 }
