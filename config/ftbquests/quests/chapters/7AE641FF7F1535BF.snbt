@@ -287,8 +287,14 @@
 				"250398995ECDA3CE"
 				"6F6699667400028E"
 			]
+			description: ["电光四射，&m电眼逼人&r"]
 			icon: "createdeco:decal_electrical"
 			id: "504E6502A789DABF"
+			rewards: [{
+				id: "38D7F5F20F9C955D"
+				item: "irons_spellbooks:lightning_bottle"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "滋啦"
@@ -322,12 +328,19 @@
 			y: 0.5d
 		}
 		{
+			description: [
+				"发电必需品）"
+				"最符合物理的一集，正常的转转显然不可能直接发电，因此你需要磁力）"
+				"天然的磁铁是最弱的，所以你显然需要想办法加强——不管是用科技还是魔法）"
+			]
 			id: "6F6699667400028E"
+			subtitle: "看到磁感应强度了对吧）"
 			tasks: [{
 				id: "2D6FD4297BF580BC"
 				item: "create_new_age:magnetite_block"
 				type: "item"
 			}]
+			title: "物理人心动时刻"
 			x: 12.0d
 			y: -2.5d
 		}

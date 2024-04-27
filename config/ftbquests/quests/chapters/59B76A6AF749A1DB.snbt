@@ -10,10 +10,12 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: ["所以你现在不得不依赖巨大的动力发电装置）"]
 			icon: "irons_spellbooks:lightning_bottle"
 			id: "01534DC5812DBA15"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "嗯，沉浸的机器要用电"
 			tasks: [{
 				id: "569F1900B0E099D3"
 				title: "电力驱动！"
@@ -24,6 +26,7 @@
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
+			description: ["但你至少有电了，不是吗？"]
 			id: "56F7012826597C35"
 			shape: "diamond"
 			subtitle: "这应该是你目前唯一能做出来的电力系统"
@@ -382,6 +385,20 @@
 		{
 			dependencies: ["76EF99C068AA2361"]
 			id: "33D03FA0C23F78F5"
+			rewards: [{
+				id: "125F680A621D3A57"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 4
+						}
+					}
+					id: "immersiveengineering:powerpack"
+				}
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "泡泡系，王道征途罢（心虚"
 			tasks: [{
@@ -557,8 +574,14 @@
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
+			description: [
+				"另一种意义上的冲压）"
+				"好消息是，至少和create的辊压相比，它可以让你选择压制的类型）"
+				"也就是说，不是只能压制板子了）"
+			]
 			icon: "immersiveengineering:metal_press"
 			id: "143039C6AC2D8186"
+			subtitle: "Duang！"
 			tasks: [
 				{
 					count: 2L
@@ -605,7 +628,9 @@
 		}
 		{
 			dependencies: ["143039C6AC2D8186"]
+			description: ["看看你冲（指冲压机）出来的棒子）"]
 			id: "22631A52B9D81A49"
+			subtitle: "嗯……"
 			tasks: [{
 				id: "0609FD0C01142C51"
 				item: {
@@ -618,24 +643,32 @@
 				title: "Any #forge:rods/all_metal"
 				type: "item"
 			}]
+			title: "看看你的棒子"
 			x: -4.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["22631A52B9D81A49"]
 			id: "0EA7E42D07C4BC01"
+			subtitle: "钢铁的作用）"
 			tasks: [{
 				id: "2B3D45F9C0B744F9"
 				item: "immersiveengineering:steel_scaffolding_standard"
 				type: "item"
 			}]
+			title: "钢门"
 			x: -2.5d
 			y: 0.0d
 		}
 		{
+			description: [
+				"由于这张图不能合成，所以你需要去找工程师村民进行一些不太和谐的行为……"
+				"比如在他们面前翻箱倒柜（"
+			]
 			id: "087C118AB8CC51F8"
 			optional: true
 			shape: "diamond"
+			subtitle: "嗯，宝藏……"
 			tasks: [{
 				id: "26DA5121AA920A2A"
 				item: {
@@ -647,6 +680,7 @@
 				}
 				type: "item"
 			}]
+			title: "我电极呢？"
 			x: 8.5d
 			y: 0.0d
 		}
@@ -715,6 +749,7 @@
 				item: "undergarden:forgotten_nugget"
 				type: "item"
 			}]
+			title: "下去吧你！"
 			x: 10.5d
 			y: -1.0d
 		}
