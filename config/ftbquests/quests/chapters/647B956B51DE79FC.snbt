@@ -315,8 +315,9 @@
 			dependencies: ["7CA6215959E08F1F"]
 			description: [
 				"在你献祭了足够多的血液后，你终于成为了合格的大法师）"
-				"同时，你可以使用瞬间传送了！不限制维度的那种！"
-				"缺点是需要血液（呃"
+				"同时，你可以使用瞬间传送了！不限制维度的那种！（但你需要正确配置传送点方块——并放入核心元件）"
+				"缺点是需要LP（呃……但你可以随时献血"
+				"另一个坏消息，传送符咒和传送点方块也是一对一的，所以你们还是需要传送大厅）"
 			]
 			id: "4C16917337A2AA2F"
 			rewards: [
@@ -420,6 +421,115 @@
 			title: "网络核心"
 			x: 2.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["5A5B1D96C50D1EAE"]
+			description: [
+				"血魔法的仪式可以做到很多事情，而且也不止有打开恶魔维度传送门的这种一次性仪式。"
+				"不同仪式的要求和效果都不同，具体还是参见那本指示书。"
+				"这些不会被写在任务里，但作者个人希望你善用它们。"
+			]
+			icon: "botania:flare_chakram"
+			id: "7D0A74797DBC071B"
+			subtitle: "仪式其实很强大。"
+			tasks: [{
+				id: "4495C7F59ED932AF"
+				title: "一些说明"
+				type: "checkmark"
+			}]
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5A5B1D96C50D1EAE"]
+			description: [
+				"植物魔法的多媒体网络是通过多媒体火花和主媒体火花组成的。"
+				"一个主媒体火花和同样颜色的一系列多媒体火花代表一个网络，内部的物品可以互相流通。"
+				"多媒体火花可以染色，并且只能放置在存储方块或者多媒体方块上。"
+				"多媒体火花有距离限制，但具体是多少我建议你自己测量，所以组网的时候不要拿着一个火花跑老远。"
+				"多媒体索引的指令参见植物魔法辞典。"
+			]
+			icon: "minecraft:cobweb"
+			id: "4EE8F15C56069C68"
+			subtitle: "组网基础知识"
+			tasks: [{
+				id: "7C94112F716CB6D4"
+				title: "网络入门"
+				type: "checkmark"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7D0A74797DBC071B"]
+			description: [
+				"你会发现有一种仪式石不仅没有用到，也没有合成配方，而且还没有对应的铭文工具！"
+				"然而现在，它有了额外的作用——我写的）"
+				"应该说抛开没写完不谈，血魔法的设计还是不错的。"
+				"由于这个东西叫破晓仪式石但是我不想写一个新的铭文工具，它也不能被用于仪式，所以它的合成方式有别于别的仪式石）"
+			]
+			id: "7794ECF3F13D8BBB"
+			subtitle: "模组作者背大锅"
+			tasks: [{
+				id: "0CB44E3B8EA0BB2B"
+				item: "bloodmagic:lightritualstone"
+				type: "item"
+			}]
+			title: "不应存在的方块"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4EE8F15C56069C68"]
+			description: [
+				"如果你想要拓展自己的网络但是又不想放一路箱子来承载火花，那么这就是更好的选择。"
+				"当然，拿来做装饰也行）"
+			]
+			id: "5ABBC509074C06A9"
+			subtitle: "虚假的存储结构"
+			tasks: [{
+				id: "6C1F4E364DA889AC"
+				item: "botania:corporea_block"
+				type: "item"
+			}]
+			title: "空节点"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["75F796D92A1DE33B"]
+			description: [
+				"但实际上，你可以进行物理存储，生命源质也是液体的一种）"
+				"试试存大量LP到create的储罐结构中，在关键时刻反向输入血祭坛来使用！"
+			]
+			id: "5803C7E02E8597D4"
+			subtitle: "通常我们习惯用宝珠存储LP……"
+			tasks: [{
+				id: "16E8CA487B4BFBC6"
+				item: "bloodmagic:life_essence_bucket"
+				type: "item"
+			}]
+			title: "生命源质的存储"
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["566537583B144D15"]
+			description: [
+				"在末地城，你会发现这些小东西，它们允许你装备后直接虚空游泳）"
+				"虽然也有CD就是了，但至少不消耗魔力，不是吗？"
+				"以及：移动速度受到游泳速度加成，并且你可以变成卑鄙的一格人）"
+			]
+			id: "3557A195504496D7"
+			subtitle: "廉价的伪飞行）"
+			tasks: [{
+				id: "73FC4490F98D7BAE"
+				item: "artifacts:helium_flamingo"
+				type: "item"
+			}]
+			title: "空中游泳！"
+			x: 0.0d
+			y: 4.0d
 		}
 	]
 	title: "诡秘仪式"

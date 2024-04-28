@@ -408,17 +408,24 @@
 			description: ["获得原版，维度模组以及alex的生物中（几乎）所有可以被处理为鱼的东西）"]
 			icon: "tide:twilight_angler_bucket"
 			id: "725308B81E925449"
-			rewards: [{
-				id: "5533F1E66DFF5304"
-				item: {
-					Count: 1b
-					id: "alexsmobs:shield_of_the_deep"
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "5533F1E66DFF5304"
+					item: {
+						Count: 1b
+						id: "alexsmobs:shield_of_the_deep"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "421B207EF66FE175"
+					item: "artifacts:anglers_hat"
+					type: "item"
+				}
+			]
 			subtitle: "全是鱼……"
 			tasks: [
 				{

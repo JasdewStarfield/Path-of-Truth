@@ -25,8 +25,12 @@
 		}
 		{
 			dependencies: ["6D3D887E93176D55"]
+			description: [
+				"通过这一火花，只要你的存储格内有这一物品，那么它就可以被无限调用。"
+				"但前提是，你必须得有第一个。"
+			]
 			id: "25B8A0AF0FDD432B"
-			subtitle: "资源复制"
+			subtitle: "一生二，二生三，三生万物"
 			tasks: [{
 				id: "70C4DC3CA7EC7EEE"
 				item: "botania:corporea_spark_creative"
