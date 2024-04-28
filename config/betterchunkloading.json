@@ -7,32 +7,28 @@
     "desc:": "Size of the area marked for preloading: default:7 chunks, max: 32, min: 2",
     "predictionarea": 7
   },
-  "enablePreGen": {
-    "desc:": "Enables predictive, async pre-gen far ahead of the player, to generate nonexisting chunks early so they load in time, requires enablePrediction: default:true",
-    "enablePreGen": true
+  "enableSmartChunkLoading": {
+    "desc:": "Enables smart chunkloading around the player, which dynamically loads the around the player and adapts to player movement speed, to improve server performance on fast movement : default:true",
+    "enableSmartChunkLoading": true
   },
-  "preGenArea": {
-    "desc:": "Size of the area marked for pregeneration: default:7 chunks, min 1, max 32",
-    "preGenArea": 7
+  "smartChunkLoadModifier": {
+    "desc:": "Set a modifier to smart chunkloading, increasing the value increases the view distance used while moving fast, range: [0.1 -> 10.0], default: 1.0",
+    "smartChunkLoadModifier": 1.0
   },
-  "enableLazyChunkloading": {
-    "desc:": "Enables lazy chunkloading around the player, which makes the area loaded directly around the player react more slowly to player position changes.(Improves server performance, less chunks are loaded/unlaoded frequently) : default:true",
-    "enableLazyChunkloading": true
+  "preventWalkUnloaded": {
+    "desc:": "Prevents players from moving into unloaded areas on serverside, which stalls the server and forceloads the chunk: default:true",
+    "preventWalkUnloaded": true
   },
-  "lazyloadingspeed": {
-    "desc:": "Set the speed of lazy loading, increasing this makes the lazy chunk loading gets less lazy and react to player position changes faster: default:0.7",
-    "lazyloadingspeed": 0.7
+  "enableSmartPostProcessing": {
+    "desc:": "Enables smart post processing, which slightly improves the general chunk loading speed by waiting with post processing(e.g. fluid updates) until neighbouring chunks are loaded: default:true",
+    "enableSmartPostProcessing": true
   },
-  "enableFasterChunkLoading": {
-    "desc:": "Enables faster chunk loading, which slightly improves the general chunk loading speed: default:true",
-    "enableFasterChunkLoading": true
+  "enableFasterChunkTasks": {
+    "desc:": "Enables faster worldgen tasks: default:true",
+    "enableFasterChunkTasks": true
   },
   "debugLogging": {
     "desc:": "Enables debug logging to show chunk loading changes: default:false",
     "debugLogging": false
-  },
-  "enableFasterChunkTasks": {
-    "desc:": "Enables faster chunk tasks: default:true",
-    "enableFasterChunkTasks": true
   }
 }

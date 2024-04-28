@@ -45,6 +45,8 @@
         Tags(which get treated as a single entry) are supported by beginning the entry with a #.
         */
         "blockPriorities": {},
+        // Whether attempting to set your spawn point when you are unable to overrides an existing spawn point.
+        "forceSpawnSetting": false,
         /*
         When players are allowed to choose to spawn at a secondary respawn point.
         NEVER: Players can never choose.
