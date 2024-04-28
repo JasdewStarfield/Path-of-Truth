@@ -67,18 +67,11 @@
 			description: ["康铜可承受不了钢水的灼热，所以你需要铸铁——不论是获取焦煤还是制造管道。"]
 			id: "241E68C9313210AD"
 			subtitle: "铸铁管道和机器是必要的）"
-			tasks: [
-				{
-					id: "1E690C7D6912DEB3"
-					item: "tfmg:cast_iron_ingot"
-					type: "item"
-				}
-				{
-					id: "3A3A5FF6058295A1"
-					item: "tfmg:coal_coke"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1E690C7D6912DEB3"
+				item: "tfmg:cast_iron_ingot"
+				type: "item"
+			}]
 			title: "焦炉与焦煤"
 			x: 1.5d
 			y: 0.5d
@@ -155,6 +148,7 @@
 				"你获得了钢锭！这意味着你可以在工业和魔法上继续推进了！"
 				"魔法也需要质量更好的金属作为基础发展）"
 			]
+			icon: "tfmg:steel_ingot"
 			id: "7A7C0A48248FA32B"
 			shape: "gear"
 			size: 2.0d
@@ -243,13 +237,27 @@
 			y: 0.5d
 		}
 		{
+			icon: "immersiveengineering:wirecoil_copper"
 			id: "759F8BFB75CBF0B6"
 			subtitle: "就是电线（"
-			tasks: [{
-				id: "4684AA4A0A8C77AB"
-				item: "immersiveengineering:wirecoil_copper"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "06297AABD34B63D9"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4FC869F367DEA450"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+			]
 			title: "能源通路"
 			x: 10.0d
 			y: -2.5d
@@ -343,6 +351,63 @@
 			title: "物理人心动时刻"
 			x: 12.0d
 			y: -2.5d
+		}
+		{
+			dependencies: ["7A7C0A48248FA32B"]
+			icon: "immersiveengineering:blastbrick_reinforced"
+			id: "598BB8D8FCB30B61"
+			shape: "diamond"
+			tasks: [
+				{
+					count: 27L
+					id: "7464409087A4F115"
+					item: "immersiveengineering:blastbrick_reinforced"
+					type: "item"
+				}
+				{
+					id: "7C42C8600299CC90"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					id: "56FB7DCF62881173"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "搭建强化高炉"
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7A7C0A48248FA32B"]
+			id: "068A7A1F8FB54E98"
+			tasks: [{
+				id: "072D81981D3A5820"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 2
+						}
+					}
+					id: "immersiveengineering:shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "绝对防御！"
+			x: 7.0d
+			y: 0.5d
 		}
 	]
 	subtitle: ["Hearts of Iron"]

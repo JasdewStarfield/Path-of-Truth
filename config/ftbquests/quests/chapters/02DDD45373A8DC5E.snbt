@@ -461,11 +461,19 @@
 			id: "63B4B5472513A83F"
 			shape: "diamond"
 			subtitle: "很好，这使我机器旋转"
-			tasks: [{
-				id: "53A50D0E4A211DBF"
-				item: "create:wrench"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "53A50D0E4A211DBF"
+					item: "create:wrench"
+					type: "item"
+				}
+				{
+					id: "75B753BAD224AC40"
+					item: "create:goggles"
+					type: "item"
+				}
+			]
+			title: "工程师必备"
 			x: -1.5d
 			y: 10.5d
 		}
@@ -478,6 +486,7 @@
 				"终于，你看到了炼铁的曙光，但——你需要先去满世界找岩浆块。"
 				"找找废弃的地狱门，记得打个标记，哭泣的黑曜石你以后还会用到的。"
 			]
+			icon: "immersiveengineering:blast_furnace"
 			id: "2C15AA9278830174"
 			subtitle: "离亮闪闪的小可爱更进一步"
 			tasks: [{
@@ -552,6 +561,7 @@
 				"多余的杂酚油你可以看着办（？）反正处理不掉杂酚油是沉浸的通病。"
 				"小声：拿来洗澡也行。"
 			]
+			icon: "immersiveengineering:coke_oven"
 			id: "6D46668D63E83ED7"
 			subtitle: "为了炼铁，你需要比煤更强的燃料"
 			tasks: [
