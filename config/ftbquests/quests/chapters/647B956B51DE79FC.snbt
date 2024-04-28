@@ -319,6 +319,20 @@
 				"缺点是需要血液（呃"
 			]
 			id: "4C16917337A2AA2F"
+			rewards: [
+				{
+					count: 4
+					id: "3EEA540441EA6512"
+					item: "bloodmagic:teleposer"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "124376D1E1361B81"
+					item: "bloodmagic:teleposerfocus"
+					type: "item"
+				}
+			]
 			subtitle: "顶级宝珠与跨维度移动"
 			tasks: [
 				{
@@ -375,6 +389,7 @@
 			description: [
 				"通过相对简单的合成，你可以获得另一种飞行形式：准备好装有LP的宝珠，和你自己绑定，然后拿着这个符文右键你想飞往的方向）"
 				"它的消耗显然不算高，但相应的会占据你双手中的一个槽位）"
+				"*注：这个飞行方式由于本质是冲击飞行，所以比创造飞行的速度快得多"
 			]
 			id: "75F796D92A1DE33B"
 			subtitle: "血液飞行（啊？"

@@ -26,7 +26,10 @@
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
-			description: ["但你至少有电了，不是吗？"]
+			description: [
+				"但你至少有电了，不是吗？"
+				"准备好搞一些巨大的机器和产线吧）"
+			]
 			id: "56F7012826597C35"
 			shape: "diamond"
 			subtitle: "这应该是你目前唯一能做出来的电力系统"
@@ -58,8 +61,13 @@
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
+			description: [
+				"其实主要作用是生产工业乙醇）"
+				"我们不允许玩家在游戏内酗酒，真的"
+			]
 			icon: "immersiveengineering:fermenter"
 			id: "11F2CDF608EA11DA"
+			subtitle: "酿酒（迫真"
 			tasks: [
 				{
 					count: 2L
@@ -114,8 +122,14 @@
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
+			description: [
+				"虽然占地不小，但你大概率需要不止一台——因为你需要一台来持续的为你压种子）"
+				"唯一的植物油量产方案……没有其他。"
+				"当然，压制琥珀金粉也需要这台机器）"
+			]
 			icon: "immersiveengineering:squeezer"
 			id: "1E0E5E47E1264279"
+			subtitle: "压力山大"
 			tasks: [
 				{
 					count: 2L
@@ -179,6 +193,7 @@
 			id: "3D6CCF4A93478320"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "琥珀金也是金）"
 			tasks: [
 				{
 					id: "4D92B9D18E55E44E"
@@ -191,13 +206,20 @@
 					type: "item"
 				}
 			]
+			title: "金色传说！"
 			x: 3.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["1E0E5E47E1264279"]
+			description: [
+				"从物理上你无法点燃它）"
+				"但是是燃料必需品）"
+				"注：你同样可以通过魔法手段获得，但魔法手段显然无法量产）"
+			]
 			icon: "immersiveengineering:plantoil_bucket"
 			id: "1404B54F1747DE16"
+			subtitle: "能拿来炒菜吗？"
 			tasks: [{
 				id: "1C087B5F221D57DF"
 				title: "植物油"
@@ -208,13 +230,16 @@
 		}
 		{
 			dependencies: ["11F2CDF608EA11DA"]
+			description: ["“对，说你呢，罗蒙诺索夫同志！这玩意不是给你喝的！这不是伏特加！”"]
 			icon: "immersiveengineering:ethanol_bucket"
 			id: "48A3FEF7D02104E5"
+			subtitle: "禁止酗酒"
 			tasks: [{
 				id: "55EDC4FAFB6E8875"
 				title: "乙醇"
 				type: "checkmark"
 			}]
+			title: "工业酒精"
 			x: -0.5d
 			y: -1.5d
 		}
@@ -276,8 +301,10 @@
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
+			description: ["金-银合金是良好的导体材料，所以你现在可以制作更高级的电力系统了）"]
 			id: "1997BD2CF61ACBA8"
 			shape: "diamond"
+			subtitle: "琥珀金的光芒"
 			tasks: [
 				{
 					id: "7C21BBB46A56EFCE"
@@ -309,8 +336,10 @@
 				"3D6CCF4A93478320"
 				"3B29D716A3D5AAF0"
 			]
+			description: ["你已经开始接近现代工业水准了，柴油发电领先时代！"]
 			icon: "immersiveengineering:diesel_generator"
 			id: "76EF99C068AA2361"
+			subtitle: "来劲了，朋友"
 			tasks: [
 				{
 					count: 13L
@@ -370,10 +399,15 @@
 				"0FD551E50150A7AD"
 				"2D1BA006EF115501"
 			]
+			description: [
+				"现在你进入了生物发电的时代！"
+				"虽然发酵苹果和压榨植物可能没那么容易，但相信你可以做到全自动的）"
+			]
 			icon: "immersiveengineering:biodiesel_bucket"
 			id: "3B29D716A3D5AAF0"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "高效燃料"
 			tasks: [{
 				id: "728AB7BF739D2BBE"
 				title: "生物柴油"
@@ -413,8 +447,10 @@
 		}
 		{
 			dependencies: ["3B29D716A3D5AAF0"]
+			description: ["最强电动炉子，几乎全额的分解，最强的动力，以及——通往铝锭的通行证。"]
 			icon: "immersiveengineering:arc_furnace"
 			id: "583407C7537AE9C9"
+			subtitle: "全游戏最强炉子"
 			tasks: [
 				{
 					count: 10L
@@ -489,14 +525,20 @@
 				"583407C7537AE9C9"
 				"66E52E485A1A4139"
 			]
+			description: [
+				"通过电弧炉，你终于获得了这一珍贵的金属）"
+				"现在，你可以利用它的优良性能来解决更多工业方面的问题了）"
+			]
 			id: "2BE7BA0BE9F2DBC9"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "电解，嗯"
 			tasks: [{
 				id: "079139B4E55015BA"
 				item: "immersiveengineering:ingot_aluminum"
 				type: "item"
 			}]
+			title: "工业明珠"
 			x: 3.0d
 			y: -4.0d
 		}
@@ -513,7 +555,12 @@
 		}
 		{
 			dependencies: ["1E0E5E47E1264279"]
+			description: [
+				"其实就是压制后的碳粉（？"
+				"唯一的作用就是烧制石墨锭）"
+			]
 			id: "48E0B5D1F9972D20"
+			subtitle: "名字好长"
 			tasks: [{
 				id: "764ECAD4084B20D0"
 				item: "immersiveengineering:dust_hop_graphite"
@@ -527,7 +574,13 @@
 				"48E0B5D1F9972D20"
 				"087C118AB8CC51F8"
 			]
+			description: [
+				"你应该可以看到电极有两种生产方式。"
+				"在电弧炉运作的过程中，石墨电极的耐久会被消耗，而常规的金属冲压来制作的电极只有一半的耐久度）"
+				"所以——可以先凑活用，但是建议去找蓝图）"
+			]
 			id: "66E52E485A1A4139"
+			subtitle: "控制行为的棒子"
 			tasks: [{
 				id: "4138B587205AB188"
 				item: {
@@ -539,13 +592,16 @@
 				}
 				type: "item"
 			}]
+			title: "电弧炉核心"
 			x: 7.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["2BE7BA0BE9F2DBC9"]
+			description: ["高压电线可以让你铺开更大的范围——以及调用更多的电）"]
 			id: "56F4C82F40DFA8F5"
 			shape: "diamond"
+			subtitle: "铝的第一作用"
 			tasks: [
 				{
 					id: "766E3AB03BC41581"
@@ -649,6 +705,7 @@
 		}
 		{
 			dependencies: ["22631A52B9D81A49"]
+			description: ["虽然这个东西是脚手架没错，但同样也是机器框架）"]
 			id: "0EA7E42D07C4BC01"
 			subtitle: "钢铁的作用）"
 			tasks: [{
@@ -689,7 +746,12 @@
 				"2BE7BA0BE9F2DBC9"
 				"6D9B785CB93D94D6"
 			]
+			description: [
+				"由于柴油性能还是有限，接下来你大概是需要迈入石油和重工业时代）"
+				"而重工业——需要你手里的元件。"
+			]
 			id: "03312D6881CC617D"
+			subtitle: "高级工业必需品"
 			tasks: [{
 				id: "1F69FA726AA73BD9"
 				item: "tfmg:steel_mechanism"
@@ -700,7 +762,14 @@
 		}
 		{
 			dependencies: ["2BE7BA0BE9F2DBC9"]
+			description: [
+				"螺丝刀一般用于制造工业元件）"
+				"比如在你的流水线机械臂上安装一个螺丝刀来拧螺丝（乐"
+				"为什么一定要这样呢，因为方块手是拧不了螺丝的）"
+				"&m&o&c“你甚至不能进电子厂打工”&r&r&r"
+			]
 			id: "6D9B785CB93D94D6"
+			subtitle: "工具还是要的"
 			tasks: [{
 				id: "147D1D7C0FBC9106"
 				item: {
@@ -720,9 +789,11 @@
 				"724A0B71BA342AEE"
 				"03312D6881CC617D"
 			]
+			description: ["准备好迎接真正的工业时代了吗）"]
 			id: "5FB9514C6DE7AD58"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "重大工程的工程块"
 			tasks: [{
 				id: "28BE4BF6221D2F19"
 				item: "immersiveengineering:heavy_engineering"
@@ -733,7 +804,9 @@
 		}
 		{
 			dependencies: ["1A19AB31DBCDBCF7"]
+			description: ["重型机械的基本结构之一"]
 			id: "724A0B71BA342AEE"
+			subtitle: "很重，很重要"
 			tasks: [{
 				id: "01630D7BDD3D44BF"
 				item: "tfmg:heavy_machinery_casing"
@@ -743,7 +816,12 @@
 			y: 1.0d
 		}
 		{
+			description: [
+				"鉴于这个东西只能在深暗的遗忆守卫身上掉落，我们把它放得很靠后）"
+				"但这也意味着，如果你不去冒险，那么你是没有办法获得这种强大的材料来推进工业的）"
+			]
 			id: "1A19AB31DBCDBCF7"
+			subtitle: "干掉另一种意义上的守卫者"
 			tasks: [{
 				id: "631AF2A0043BCBA8"
 				item: "undergarden:forgotten_nugget"

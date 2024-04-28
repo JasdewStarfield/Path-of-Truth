@@ -22,7 +22,11 @@ ServerEvents.recipes(event => {
     'minecraft:furnace', 'immersiveengineering:blastbrick' )
     event.replaceInput({mod:'bloodmagic',output:'bloodmagic:alchemicalreactionchamber'},
     'minecraft:iron_block', 'undergarden:cloggrum_block' )
+    //修改主仪式石配方
+    event.replaceInput({mod:'bloodmagic',output:'bloodmagic:masterritualstone'},
+    'minecraft:obsidian', 'tfmg:steel_casing' )
 
+    
     //删除基岩配方
     event.remove({id:'bloodmagic:array/day'})
     event.remove({id:'bloodmagic:array/night'})
@@ -100,7 +104,7 @@ ServerEvents.recipes(event => {
                 "item":'alexsmobs:void_worm_eye'
             },
             {
-                "item":'create:powdered_obsidian'
+                "item":'tfmg:aluminum_ingot'
             },
             {
                 "item":'irons_spellbooks:arcane_salvage'
@@ -356,6 +360,20 @@ ServerEvents.recipes(event => {
             "item": 'minecraft:netherite_ingot'
         },
         "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
+    //点下界合金成遗忆锭
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'minecraft:netherite_ingot'
+        },
+        "baseinput": {
+            "item": 'minecraft:netherite_ingot'
+        },
+        "output": {
+            "item": 'undergarden:forgotten_ingot'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/firesigil.png"
     })
     //下界合金盔甲注入盖亚之魂活化
     event.custom({
