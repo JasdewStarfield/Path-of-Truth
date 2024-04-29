@@ -920,6 +920,7 @@
 				"（其实植物魔法的斗篷可以用魔力获得有cd的无敌，但那很浪费魔力"
 			]
 			id: "217A9CECA6BEB91C"
+			shape: "diamond"
 			subtitle: "安全第一"
 			tasks: [
 				{
@@ -1065,6 +1066,67 @@
 			title: "精细化农业"
 			x: -6.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["03312D6881CC617D"]
+			id: "2CA584555112E772"
+			shape: "diamond"
+			tasks: [{
+				id: "0ADE2F4D3B0B083C"
+				item: {
+					Count: 1b
+					id: "tfmg:quad_potato_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2BE7BA0BE9F2DBC9"]
+			id: "377948574A940F51"
+			shape: "diamond"
+			subtitle: "I lost a bomb. Do you have it?"
+			tasks: [{
+				id: "386E09FE2436BCC9"
+				item: "tfmg:thermite_grenade"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"48A3FEF7D02104E5"
+				"0FD551E50150A7AD"
+			]
+			description: [""]
+			id: "6A04606B02D87EF0"
+			tasks: [{
+				id: "70505299AC3A9C07"
+				item: "immersiveengineering:acetaldehyde_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"6A04606B02D87EF0"
+				"0FD551E50150A7AD"
+			]
+			description: ["到下一章你就会用到它！"]
+			id: "6CBC49DEC79E819E"
+			tasks: [{
+				id: "5990032AE52EC1B6"
+				item: "immersiveengineering:phenolic_resin_bucket"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
 		}
 	]
 	title: "机械轰鸣"

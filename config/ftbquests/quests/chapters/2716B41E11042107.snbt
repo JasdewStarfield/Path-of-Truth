@@ -7,15 +7,484 @@
 	id: "2716B41E11042107"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		id: "143E6A57D69BAE65"
-		tasks: [{
-			id: "1BB0AF39C0798036"
-			item: "immersiveengineering:logic_circuit"
-			type: "item"
-		}]
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			id: "143E6A57D69BAE65"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "55ACF0AF13FB158B"
+				item: "immersiveengineering:heavy_engineering"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["143E6A57D69BAE65"]
+			id: "2E8FF0455E304658"
+			tasks: [{
+				id: "7322415356A4B9EE"
+				item: "tfmg:surface_scanner"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["586F09D1FB8860DD"]
+			id: "22B1EE261A88D9D1"
+			tasks: [{
+				count: 64L
+				id: "7E75D3CA3B487C74"
+				item: "tfmg:industrial_pipe"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2E8FF0455E304658"]
+			icon: "tfmg:oil_deposit"
+			id: "586F09D1FB8860DD"
+			tasks: [{
+				icon: "tfmg:oil_deposit"
+				id: "5B96E1D30EE9455E"
+				observe_type: 0
+				timer: 0L
+				title: "观察油田方块"
+				to_observe: "tfmg:oil_deposit"
+				type: "observation"
+			}]
+			title: "找到油田"
+			x: 0.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"22B1EE261A88D9D1"
+				"143E6A57D69BAE65"
+			]
+			description: ["具体可以参考思索说明"]
+			icon: "tfmg:pumpjack_crank"
+			id: "08B3DECCC7EBD7CE"
+			tasks: [
+				{
+					id: "5C826AEB85CD3E79"
+					item: "tfmg:pumpjack_base"
+					type: "item"
+				}
+				{
+					id: "6C9BC4E13415DF74"
+					item: "tfmg:pumpjack_crank"
+					type: "item"
+				}
+				{
+					id: "76D35D4CC92E95EF"
+					item: "tfmg:pumpjack_hammer_part"
+					type: "item"
+				}
+				{
+					id: "4B436C4F7310AF88"
+					item: "tfmg:pumpjack_hammer_head"
+					type: "item"
+				}
+				{
+					id: "26423D76F89C59A2"
+					item: "tfmg:pumpjack_hammer_connector"
+					type: "item"
+				}
+				{
+					id: "4A5E141F12F09486"
+					item: "tfmg:pumpjack_hammer"
+					type: "item"
+				}
+				{
+					id: "1C339FBF83B4FF73"
+					item: "tfmg:machine_input"
+					type: "item"
+				}
+				{
+					id: "11F7365EA7861EFA"
+					item: {
+						Count: 1b
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "组装抽油机"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["08B3DECCC7EBD7CE"]
+			id: "1AAD83556BD302DD"
+			tasks: [{
+				id: "4BBF84D92E8CABE3"
+				item: "tfmg:crude_oil_fluid_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["143E6A57D69BAE65"]
+			icon: "immersiveengineering:excavator"
+			id: "71B673D310440EBC"
+			shape: "diamond"
+			tasks: [
+				{
+					count: 16L
+					id: "23A211BF5ED324E7"
+					item: "immersiveengineering:sheetmetal_steel"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "4DC0B8B13AD3B66C"
+					item: "immersiveengineering:radiator"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "4423AE835BC911EE"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "790FD0EBDA4C037F"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4B2958FB210578CA"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					count: 26L
+					id: "248BDFBFD58BD25F"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "4C6929FE38D0F838"
+					item: "tfmg:steel_block"
+					type: "item"
+				}
+				{
+					id: "1C74408D889CB8AF"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "搭建斗轮式采矿机"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["71B673D310440EBC"]
+			id: "7B7978B0964080F3"
+			shape: "diamond"
+			tasks: [{
+				id: "6F18410C24225D27"
+				item: {
+					Count: 1b
+					id: "immersiveengineering:survey_tools"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"143E6A57D69BAE65"
+				"1AAD83556BD302DD"
+			]
+			icon: "tfmg:steel_distillation_controller"
+			id: "3FCEB9256A15A4B2"
+			tasks: [
+				{
+					id: "4AA95EBD3CDCB288"
+					item: "tfmg:steel_fluid_tank"
+					type: "item"
+				}
+				{
+					id: "421CA7F325EAB59A"
+					item: "tfmg:steel_distillation_output"
+					type: "item"
+				}
+				{
+					id: "5CD3DA4AB5972515"
+					item: "tfmg:steel_distillation_controller"
+					type: "item"
+				}
+				{
+					id: "27C4EEF50FD07665"
+					item: "tfmg:industrial_pipe"
+					type: "item"
+				}
+				{
+					id: "4A688382AB720907"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "搭建钢分馏塔"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3FCEB9256A15A4B2"
+				"1AAD83556BD302DD"
+			]
+			id: "107639F1A8166B9C"
+			shape: "diamond"
+			tasks: [{
+				id: "44DCF7BA286EA6C3"
+				item: "tfmg:heavy_oil_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"3FCEB9256A15A4B2"
+				"1AAD83556BD302DD"
+			]
+			id: "443ED09E810FE23D"
+			shape: "diamond"
+			tasks: [{
+				id: "53A6FDD422729299"
+				item: "tfmg:diesel_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"3FCEB9256A15A4B2"
+				"1AAD83556BD302DD"
+			]
+			id: "05EF035C814ADE9B"
+			shape: "diamond"
+			tasks: [{
+				id: "49C958F2E71847C4"
+				item: "tfmg:kerosene_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"3FCEB9256A15A4B2"
+				"1AAD83556BD302DD"
+			]
+			id: "3B7D8BECFF387995"
+			tasks: [{
+				id: "0A94C80A2B72D692"
+				item: "tfmg:naphtha_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"3FCEB9256A15A4B2"
+				"1AAD83556BD302DD"
+			]
+			id: "2718164469D544DF"
+			shape: "diamond"
+			tasks: [{
+				id: "577F1DBBD3F9A3FA"
+				item: "tfmg:gasoline_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"3FCEB9256A15A4B2"
+				"1AAD83556BD302DD"
+			]
+			id: "46A5743F6DC8054D"
+			shape: "diamond"
+			tasks: [{
+				id: "19988C4F9E13FD19"
+				item: "tfmg:napalm_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			icon: "tfmg:cast_iron_distillation_controller"
+			id: "576A28075CA7077D"
+			subtitle: "实际上这个分馏塔干的是裂化的活"
+			tasks: [
+				{
+					id: "629822FE746AF116"
+					item: "tfmg:cast_iron_distillation_output"
+					type: "item"
+				}
+				{
+					id: "16B08063E1527DB8"
+					item: "tfmg:cast_iron_distillation_controller"
+					type: "item"
+				}
+				{
+					id: "289C493060369DE4"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"576A28075CA7077D"
+				"107639F1A8166B9C"
+			]
+			id: "22CB2BBE72C04014"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "3881E65EF3C152EC"
+					item: "tfmg:bitumen"
+					type: "item"
+				}
+				{
+					id: "3C582CE720A9930B"
+					item: "tfmg:sulfur_dust"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"576A28075CA7077D"
+				"3B7D8BECFF387995"
+			]
+			icon: "minecraft:bucket"
+			id: "0B48C7A6F9F81A56"
+			tasks: [{
+				id: "39AC678F2E9625AE"
+				title: "乙烯、丙烯"
+				type: "checkmark"
+			}]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0B48C7A6F9F81A56"]
+			id: "27AC0014531AA954"
+			tasks: [{
+				id: "7F99956FC3A5E8C3"
+				item: "tfmg:liquid_plastic_bucket"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"27AC0014531AA954"
+				"528D895332FD730A"
+			]
+			id: "3E21C675D4F61E6B"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "03BDB368AA49BEFF"
+				item: "tfmg:plastic_sheet"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			id: "528D895332FD730A"
+			tasks: [{
+				id: "206274DB5998ABEF"
+				item: "immersiveengineering:phenolic_resin_bucket"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3E21C675D4F61E6B"]
+			id: "32DA53E6EDA0AC90"
+			tasks: [{
+				id: "70491E97C12AFBD2"
+				item: "immersiveengineering:plate_duroplast"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["32DA53E6EDA0AC90"]
+			id: "538F608DF5017A6A"
+			tasks: [{
+				id: "4BE26B418AD3ABE6"
+				item: "immersiveengineering:component_electronic_adv"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"538F608DF5017A6A"
+				"176ADC50E594B161"
+			]
+			id: "07B58ED0910776DF"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "5EBFA215B48BC68C"
+				item: "kubejs:electronic_engineering"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			id: "176ADC50E594B161"
+			tasks: [{
+				id: "6C505B3C11745EEB"
+				item: "immersiveengineering:component_electronic"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 1.5d
+		}
+	]
 	title: "现代工业"
 }

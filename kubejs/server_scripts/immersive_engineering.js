@@ -183,12 +183,69 @@ ServerEvents.recipes(event => {
     ], {
         B: 'tfmg:steel_casing',
         A: '#forge:dusts/redstone',
-        C: 'create:electron_tube'
+        C: 'immersiveengineering:electron_tube'
     })
     event.recipes.create.sequenced_assembly([
         'immersiveengineering:rs_engineering'
         ], 'tfmg:steel_casing', [
         event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', '#forge:dusts/redstone']),
-        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', 'create:electron_tube'])
+        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', 'immersiveengineering:electron_tube'])
     ]).transitionalItem('kubejs:incomplete_rs_engineering').loops(2)
+
+    //塑料
+    event.remove({id:"immersiveengineering:bottling/duroplast_plate"})
+    event.remove({id:"tfmg:compacting/plastic_molding"})
+    event.custom({
+        "type": "create:compacting",
+        "ingredients": [
+            {
+                "fluid": "immersiveengineering:phenolic_resin",
+                "amount": 500
+            },
+            {
+                "fluid": "tfmg:liquid_plastic",
+                "amount": 500
+            }
+        ],
+        "results": [
+          {
+            "item": "tfmg:plastic_sheet"
+          }
+        ]
+    })
+    event.recipes.create.pressing('immersiveengineering:plate_duroplast', 'tfmg:plastic_sheet')
+
+    //高级电子元件
+    event.remove({id:"immersiveengineering:blueprint/component_electronic_adv"})
+    event.recipes.create.sequenced_assembly([
+        Item.of('immersiveengineering:component_electronic_adv').withChance(70.0),
+        Item.of('immersiveengineering:electron_tube').withChance(5.0),
+        Item.of('immersiveengineering:component_electronic').withChance(20.0),
+        Item.of('immersiveengineering:plate_duroplast').withChance(5.0)
+        ], 'immersiveengineering:plate_duroplast', [
+        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'immersiveengineering:electron_tube']),
+        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:wires/aluminum']),
+        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'tfmg:screw']),
+        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'tfmg:screwdriver'])
+    ]).transitionalItem('kubejs:incomplete_component_electronic_adv').loops(4)
+
+    //电子工程块
+    event.shaped('kubejs:electronic_engineering', [ 
+        'CAD', 
+        'ABA',
+        'DAC'  
+    ], {
+        B: 'create:brass_casing',
+        A: 'tfmg:plastic_sheet',
+        C: 'immersiveengineering:component_electronic_adv',
+        D: 'immersiveengineering:component_electronic'
+    })
+    event.recipes.create.sequenced_assembly([
+        'kubejs:electronic_engineering'
+        ], 'create:brass_casing', [
+            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'tfmg:plastic_sheet']),
+            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'immersiveengineering:component_electronic_adv']),
+            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'immersiveengineering:component_electronic']),
+            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'tfmg:plastic_sheet'])
+    ]).transitionalItem('kubejs:incomplete_electronic_engineering').loops(1)
 })

@@ -6,6 +6,8 @@ StartupEvents.registry('item', (event) => {
 	event.create("incomplete_light_engineering", 'create:sequenced_assembly').displayName('Incomplete Light Engineering Block')
 	event.create("incomplete_heavy_engineering", 'create:sequenced_assembly').displayName('Incomplete Heavy Engineering Block')
 	event.create("incomplete_rs_engineering", 'create:sequenced_assembly').displayName('Incomplete Redstone Engineering Block')
+	event.create("incomplete_component_electronic_adv", 'create:sequenced_assembly').displayName('Incomplete Advanced Electronic Component')
+	event.create("incomplete_electronic_engineering", 'create:sequenced_assembly').displayName('Incomplete Electronic Engineering Block')
 })
 
 StartupEvents.registry('block', (event) => {
@@ -51,4 +53,18 @@ StartupEvents.registry('block', (event) => {
 		.fullBlock(true)
 		.renderType('solid')
 		.textureAll('kubejs:block/precise_engineering')
+	//电子工程块
+	event.create('electronic_engineering')
+	.displayName('Electronic Engineering Block')
+	.soundType("copper")
+	.mapColor("metal")
+	.hardness(3.0)
+	.resistance(6.0)
+	.requiresTool(true)
+	.tagBlock("mineable/pickaxe")
+	.tagBlock("minecraft:needs_stone_tool")
+	.opaque(true)
+	.fullBlock(true)
+	.renderType('solid')
+	.textureAll('kubejs:block/electronic_engineering')
 })

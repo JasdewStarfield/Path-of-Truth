@@ -63,6 +63,11 @@ ServerEvents.recipes(event => {
       B: 'immersiveengineering:treated_wood_horizontal',
       A: '#forge:plates/steel'
     })
+    event.replaceInput(
+      {input:"tfmg:steel_casing", not: {output:'tfmg:steel_door'}},
+      'tfmg:steel_casing',
+      'immersiveengineering:light_engineering'
+    )
 
     //重型机械机壳
     event.remove({id:'tfmg:item_application/heavy_machinery_casing'})
@@ -74,6 +79,11 @@ ServerEvents.recipes(event => {
       B: 'tfmg:steel_casing',
       A: '#forge:nuggets/forgotten_metal'
     })
+    event.replaceInput(
+      {input:"tfmg:heavy_machinery_casing", not: {output:'tfmg:heavy_casing_door'}},
+      'tfmg:heavy_machinery_casing',
+      'immersiveengineering:heavy_engineering'
+    )
 
     //齿轮
     event.remove({id:'create:crafting/kinetics/cogwheel'})
