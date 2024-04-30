@@ -133,6 +133,11 @@
 			dependencies: ["0C34A91AD3EBF977"]
 			description: ["在你击杀末影龙后，会有一些龙皮悬浮于空中——找到它们，然后你就可以制作强大的传说法术书。"]
 			id: "5067D48BC8E1CBEF"
+			rewards: [{
+				id: "598C2AA55B81A613"
+				item: "irons_spellbooks:dragonskin"
+				type: "item"
+			}]
 			subtitle: "你还是赢了，对吧）"
 			tasks: [{
 				id: "25E63FEC90BEA00B"

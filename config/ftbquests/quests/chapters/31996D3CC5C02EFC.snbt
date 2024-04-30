@@ -84,8 +84,8 @@
 				}
 			]
 			title: "死者为大"
-			x: -1.5d
-			y: -1.5d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
@@ -115,8 +115,8 @@
 				}
 			]
 			title: "巅峰炼金术"
-			x: -1.5d
-			y: 1.5d
+			x: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -154,8 +154,8 @@
 				type: "item"
 			}]
 			title: "更多的蛋"
-			x: 1.5d
-			y: -1.5d
+			x: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
@@ -172,8 +172,8 @@
 				type: "item"
 			}]
 			title: "魔力潮涌"
-			x: 1.5d
-			y: 1.5d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3044537D03B81BFF"]
@@ -282,7 +282,7 @@
 			]
 			title: "盔甲铸魂"
 			x: 0.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
@@ -312,7 +312,7 @@
 			]
 			title: "鲜活的食品"
 			x: 0.0d
-			y: -2.0d
+			y: -4.0d
 		}
 	]
 	title: "生命炼成"

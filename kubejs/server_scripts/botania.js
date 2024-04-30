@@ -11,7 +11,14 @@ ServerEvents.recipes(event => {
             '#forge:ingots/tin'
         ]
     )
-
+    //合成破晓仪式石
+    event.recipes.botania.petal_apothecary('bloodmagic:lightritualstone', 
+        [
+            'bloodmagic:masterritualstone',
+            'kubejs:electronic_engineering',
+            'immersiveengineering:component_electronic_adv'
+        ]
+    )
     //复制血腥法杖
     event.recipes.botania.petal_apothecary('irons_spellbooks:blood_staff', 
         [
@@ -57,6 +64,8 @@ ServerEvents.recipes(event => {
     event.recipes.botania.mana_infusion('2x minecraft:shulker_spawn_egg', 'minecraft:shulker_spawn_egg', 50000,'botania:conjuration_catalyst')
     //遗忆锭转化钻石1:2
     event.recipes.botania.mana_infusion('2x minecraft:diamond', 'undergarden:forgotten_ingot', 1000,'botania:alchemy_catalyst')
+    //龙皮复制
+    event.recipes.botania.mana_infusion('2x irons_spellbooks:dragonskin', 'irons_spellbooks:dragonskin', 5000,'botania:conjuration_catalyst')
 
     //末地空气转化扼塞锭和铁锭
     event.shapeless(Item.of('minecraft:iron_ingot',1),
@@ -94,6 +103,10 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'botania',output:'botania:spark'},
     'minecraft:gold_nugget', 'botania:elementium_nugget' )
 
+    //拉普达碎片I配方替换
+    event.replaceInput({mod:'botania',output:'botania:laputa_shard'},
+    'botania:dragonstone', 'botania:corporea_spark_master' )
+    
     //自然水晶配方替换
     event.replaceInput({mod:'botania',output:'botania:natura_pylon'},
     'minecraft:ender_eye', 'minecraft:ender_pearl' )
@@ -201,7 +214,7 @@ ServerEvents.recipes(event => {
             '#forge:eggs',
             'alexsmobs:farseer_arm',
             'botania:corporea_spark',
-            'createchromaticreturn:multiplite_ingot'
+            'bloodmagic:lightritualstone'
         ]
     )
 

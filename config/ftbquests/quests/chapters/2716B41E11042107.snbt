@@ -12,11 +12,13 @@
 			id: "143E6A57D69BAE65"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "重大工程"
 			tasks: [{
 				id: "55ACF0AF13FB158B"
 				item: "immersiveengineering:heavy_engineering"
 				type: "item"
 			}]
+			title: "现代工业基石"
 			x: 0.0d
 			y: 0.0d
 		}

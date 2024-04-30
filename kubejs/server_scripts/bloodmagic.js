@@ -296,7 +296,7 @@ ServerEvents.recipes(event => {
         "consumptionRate": 200,
         "drainRate": 0,
         "input": {
-            "item": 'createchromaticreturn:creative_flour'
+            "item": 'bloodmagic:lightritualstone'
         },
         "output": {
             "item": 'botania:creative_pool'

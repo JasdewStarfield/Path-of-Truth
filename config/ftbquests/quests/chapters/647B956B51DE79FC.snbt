@@ -185,18 +185,6 @@
 				"具体构建方式，请自己查看辞典）"
 			]
 			id: "3502E7A3A9BB5220"
-			rewards: [
-				{
-					id: "6A75BF6FB840C3C3"
-					item: "botania:corporea_crystal_cube"
-					type: "item"
-				}
-				{
-					id: "5E0FFA6D10500D1D"
-					item: "botania:corporea_spark"
-					type: "item"
-				}
-			]
 			subtitle: "魔力AE"
 			tasks: [{
 				icon: "botania:corporea_spark_master"
@@ -290,7 +278,7 @@
 				type: "item"
 			}]
 			title: "自体永动机"
-			x: 1.0d
+			x: 2.0d
 			y: 1.0d
 		}
 		{
@@ -308,7 +296,7 @@
 				type: "item"
 			}]
 			title: "万用水晶"
-			x: -1.0d
+			x: -2.0d
 			y: -1.0d
 		}
 		{
@@ -358,8 +346,8 @@
 				}
 			]
 			title: "高档魔法"
-			x: -2.0d
-			y: -2.0d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["13FCEF26D0A44844"]
@@ -419,7 +407,7 @@
 				type: "item"
 			}]
 			title: "网络核心"
-			x: 2.0d
+			x: 1.0d
 			y: 2.0d
 		}
 		{
@@ -467,8 +455,10 @@
 				"然而现在，它有了额外的作用——我写的）"
 				"应该说抛开没写完不谈，血魔法的设计还是不错的。"
 				"由于这个东西叫破晓仪式石但是我不想写一个新的铭文工具，它也不能被用于仪式，所以它的合成方式有别于别的仪式石）"
+				"从目前来讲，它代表工业的破晓，而具体的用途在下一章揭晓）"
 			]
 			id: "7794ECF3F13D8BBB"
+			shape: "hexagon"
 			subtitle: "模组作者背大锅"
 			tasks: [{
 				id: "0CB44E3B8EA0BB2B"
@@ -486,6 +476,7 @@
 				"当然，拿来做装饰也行）"
 			]
 			id: "5ABBC509074C06A9"
+			shape: "hexagon"
 			subtitle: "虚假的存储结构"
 			tasks: [{
 				id: "6C1F4E364DA889AC"
@@ -500,9 +491,10 @@
 			dependencies: ["75F796D92A1DE33B"]
 			description: [
 				"但实际上，你可以进行物理存储，生命源质也是液体的一种）"
-				"试试存大量LP到create的储罐结构中，在关键时刻反向输入血祭坛来使用！"
+				"试试存大量LP到沉浸的大型储罐结构中，在关键时刻反向输入血祭坛来使用！"
 			]
 			id: "5803C7E02E8597D4"
+			shape: "hexagon"
 			subtitle: "通常我们习惯用宝珠存储LP……"
 			tasks: [{
 				id: "16E8CA487B4BFBC6"
@@ -521,6 +513,7 @@
 				"以及：移动速度受到游泳速度加成，并且你可以变成卑鄙的一格人）"
 			]
 			id: "3557A195504496D7"
+			shape: "hexagon"
 			subtitle: "廉价的伪飞行）"
 			tasks: [{
 				id: "73FC4490F98D7BAE"
@@ -530,6 +523,98 @@
 			title: "空中游泳！"
 			x: 0.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["7CA6215959E08F1F"]
+			description: [
+				"通过恶魔意志的结晶与储存，现在你可以以一种类似于网络的结构对这种能量进行传输！"
+				"刷怪掉落的多余恶魔意志有地方用了，不是吗？"
+			]
+			id: "41AFE28EADD07A7C"
+			subtitle: "恶魔意志的结晶"
+			tasks: [
+				{
+					id: "0C0A40E33A3FCBB1"
+					item: "bloodmagic:demoncrystallizer"
+					type: "item"
+				}
+				{
+					id: "20133877E140293B"
+					item: "bloodmagic:demoncrucible"
+					type: "item"
+				}
+				{
+					id: "6246CACFB06B7667"
+					item: "bloodmagic:demonpylon"
+					type: "item"
+				}
+			]
+			title: "实体化的灵魂"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["41AFE28EADD07A7C"]
+			id: "45D676CD9F197E2D"
+			subtitle: "调试你的灵魂网络"
+			tasks: [
+				{
+					id: "54AC408AD1C4B5B2"
+					item: "bloodmagic:noderouter"
+					type: "item"
+				}
+				{
+					id: "48536F1BDA587360"
+					item: "bloodmagic:itemroutingnode"
+					type: "item"
+				}
+				{
+					id: "7E0F0EE0D583A169"
+					item: "bloodmagic:masterroutingnode"
+					type: "item"
+				}
+			]
+			title: "灵魂网络节点"
+			x: -1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0B50AAAD0722641F"]
+			id: "4C87CAE7F56DEDB9"
+			subtitle: "调试你的物品网络"
+			tasks: [{
+				id: "41D9A0AE6A4D5001"
+				item: "botania:corporea_spark"
+				type: "item"
+			}]
+			title: "火花网络节点"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3502E7A3A9BB5220"]
+			description: ["当大地在魔力的托举下升空……"]
+			id: "793E8DE00C384C1D"
+			rewards: [{
+				id: "78343A838FA4B7F1"
+				item: {
+					Count: 1b
+					id: "botania:laputa_shard"
+					tag: {
+						level: 19
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "飞吧！"
+			tasks: [{
+				id: "5077FB7204E933E0"
+				item: "botania:laputa_shard"
+				type: "item"
+			}]
+			title: "天空之城"
+			x: 0.0d
+			y: 3.0d
 		}
 	]
 	title: "诡秘仪式"
