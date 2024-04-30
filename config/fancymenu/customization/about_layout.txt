@@ -1,0 +1,211 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = about
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1714483614639
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:60a873f7-fb35-4792-a708-509130c607ab-1714483598812] = [groups:][instances:]
+}
+
+customization {
+  action = setscale
+  scale = 3.0
+}
+
+customization {
+  action = autoscale
+  basewidth = 1920
+  baseheight = 1001
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+}
+
+element {
+  source = [source:local]/config/fancymenu/assets/logo.png
+  repeat_texture = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  element_type = image
+  instance_identifier = 7348d97e-519b-49ee-bbb7-11567f2b1191-1714482359633
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = top-centered
+  x = -159
+  y = 38
+  width = 318
+  height = 68
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = d49e2712-abbf-4687-843e-2ca3373fe9eb-1714482359633
+  [loading_requirement_container_meta:d49e2712-abbf-4687-843e-2ca3373fe9eb-1714482359633] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = d02113d7-ae0c-4649-87ba-21f3683f11c9-1714482412888
+  [executable_action_instance:0c47921d-2362-4418-aeb0-1181b8ad536b-1714483604108][action_type:opengui] = title_screen
+  [executable_block:d02113d7-ae0c-4649-87ba-21f3683f11c9-1714482412888][type:generic] = [executables:0c47921d-2362-4418-aeb0-1181b8ad536b-1714483604108;]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  label = 返回主菜单
+  navigatable = true
+  element_type = custom_button
+  instance_identifier = b5d18bb6-4a39-44ee-b399-43b3143b3d18-1714482412888
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = bottom-centered
+  x = -91
+  y = -45
+  width = 182
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = f51dc039-de0c-4f3e-bf84-d76cf62d9956-1714482412888
+  [loading_requirement_container_meta:f51dc039-de0c-4f3e-bf84-d76cf62d9956-1714482412888] = [groups:][instances:]
+}
+
+element {
+  source = [source:local]/config/fancymenu/assets/buran.png
+  repeat_texture = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  element_type = image
+  instance_identifier = 7e0f74a1-d78f-4d36-930d-4c412cf84dd1-1714482492843
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-left
+  x = 60
+  y = -50
+  width = 100
+  height = 100
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = f6d79df9-931d-4d70-9854-0d77ad2e6eaa-1714482492843
+  [loading_requirement_container_meta:f6d79df9-931d-4d70-9854-0d77ad2e6eaa-1714482492843] = [groups:][instances:]
+}
+
+element {
+  source = [source:local]/config/fancymenu/assets/midnight.png
+  repeat_texture = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  element_type = image
+  instance_identifier = 651e3e08-00c1-482c-a8b5-a79e04ab0b2f-1714482548115
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-right
+  x = -160
+  y = -50
+  width = 100
+  height = 100
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = f6d79df9-931d-4d70-9854-0d77ad2e6eaa-1714482492843
+  [loading_requirement_container_meta:f6d79df9-931d-4d70-9854-0d77ad2e6eaa-1714482492843] = [groups:][instances:]
+}
+
+element {
+  interactable = true
+  source = 鸣谢：%n%%n%茉露星圃，Jasdew Starfield，负责科技侧内容编写，以及整体框架。%n%%n%深夜鸽子，MidnightPigeon，负责魔法侧内容编写，以及文本设计。%n%%n%还有你，{"placeholder":"playername"}。真诚感谢你的游玩，我们期待你的反馈！%n%%n%（欢迎点击下方的Github链接来了解更多，以及讨论和汇报问题！）
+  source_mode = direct
+  shadow = true
+  scale = 1.0
+  base_color = #FFFFFFFF
+  text_border = 2
+  line_spacing = 2
+  enable_scrolling = true
+  auto_line_wrapping = true
+  remove_html_breaks = true
+  code_block_single_color = #737373FF
+  code_block_multi_color = #565656FF
+  headline_line_color = #A9A9A9FF
+  separation_line_color = #A9A9A9FF
+  hyperlink_color = #0771FCFF
+  quote_color = #818181FF
+  quote_indent = 8.0
+  quote_italic = false
+  bullet_list_dot_color = #A9A9A9FF
+  bullet_list_indent = 8.0
+  bullet_list_spacing = 3.0
+  parse_markdown = true
+  element_type = text_v2
+  instance_identifier = 2b159cf6-2879-440f-9f8f-55cc2ff4fffd-1714482665535
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -149
+  y = -50
+  width = 298
+  height = 106
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 112b6630-246c-473e-a71e-6d0cff705024-1714482665535
+  [loading_requirement_container_meta:112b6630-246c-473e-a71e-6d0cff705024-1714482665535] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = d02113d7-ae0c-4649-87ba-21f3683f11c9-1714482412888
+  [executable_action_instance:1ee59ec7-4493-407a-8214-976401ce42f4-1714483501496][action_type:openlink] = https://github.com/JasdewStarfield/Path-of-Truth
+  [executable_block:d02113d7-ae0c-4649-87ba-21f3683f11c9-1714482412888][type:generic] = [executables:1ee59ec7-4493-407a-8214-976401ce42f4-1714483501496;]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  label = Github仓库
+  navigatable = true
+  element_type = custom_button
+  instance_identifier = e55049df-e309-4c5c-bcce-c682a699557b-1714483399793
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = bottom-centered
+  x = -91
+  y = -76
+  width = 182
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = f51dc039-de0c-4f3e-bf84-d76cf62d9956-1714482412888
+  [loading_requirement_container_meta:f51dc039-de0c-4f3e-bf84-d76cf62d9956-1714482412888] = [groups:][instances:]
+}
+
