@@ -145,52 +145,61 @@ ServerEvents.recipes(event => {
     event.remove({id:"immersiveengineering:crafting/rs_engineering"})
 
     event.shaped('immersiveengineering:light_engineering', [ 
-        'CAC', 
+        'DAC', 
         'ABA',
-        'CAC'  
+        'CAD'  
     ], {
         B: 'tfmg:steel_casing',
-        A: 'immersiveengineering:component_steel',
+        A: '#forge:plates/copper',
+        D: 'immersiveengineering:component_steel',
         C: 'immersiveengineering:component_iron'
     })
     event.recipes.create.sequenced_assembly([
         'immersiveengineering:light_engineering'
         ], 'tfmg:steel_casing', [
+        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/copper']),
         event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', 'immersiveengineering:component_steel']),
-        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', 'immersiveengineering:component_iron'])
-    ]).transitionalItem('kubejs:incomplete_light_engineering').loops(2)
+        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', 'immersiveengineering:component_iron']),
+        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/copper'])
+    ]).transitionalItem('kubejs:incomplete_light_engineering').loops(1)
 
     event.shaped('immersiveengineering:heavy_engineering', [ 
-        'CAC', 
+        'DAC', 
         'ABA',
-        'CAC'  
+        'CAD'  
     ], {
         B: 'tfmg:heavy_machinery_casing',
-        A: 'immersiveengineering:component_steel',
+        A: '#forge:plates/lead',
+        D: 'immersiveengineering:component_steel',
         C: 'tfmg:steel_mechanism'
     })
     event.recipes.create.sequenced_assembly([
         'immersiveengineering:heavy_engineering'
         ], 'tfmg:heavy_machinery_casing', [
+        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/lead']),
         event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_heavy_engineering', 'immersiveengineering:component_steel']),
-        event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_heavy_engineering', 'tfmg:steel_mechanism'])
-    ]).transitionalItem('kubejs:incomplete_heavy_engineering').loops(2)
+        event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_heavy_engineering', 'tfmg:steel_mechanism']),
+        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/lead'])
+    ]).transitionalItem('kubejs:incomplete_heavy_engineering').loops(1)
 
     event.shaped('immersiveengineering:rs_engineering', [ 
-        'CAC', 
+        'DAC', 
         'ABA',
-        'CAC'  
+        'CAD'  
     ], {
         B: 'tfmg:steel_casing',
-        A: '#forge:dusts/redstone',
+        A: '#forge:plates/constantan',
+        D: '#forge:dusts/redstone',
         C: 'immersiveengineering:electron_tube'
     })
     event.recipes.create.sequenced_assembly([
         'immersiveengineering:rs_engineering'
         ], 'tfmg:steel_casing', [
+        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/constantan']),
         event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', '#forge:dusts/redstone']),
-        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', 'immersiveengineering:electron_tube'])
-    ]).transitionalItem('kubejs:incomplete_rs_engineering').loops(2)
+        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', 'immersiveengineering:electron_tube']),
+        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/constantan'])
+    ]).transitionalItem('kubejs:incomplete_rs_engineering').loops(1)
 
     //塑料
     event.remove({id:"immersiveengineering:bottling/duroplast_plate"})

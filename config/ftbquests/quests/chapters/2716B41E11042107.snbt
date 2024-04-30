@@ -487,6 +487,82 @@
 			x: 17.5d
 			y: 1.5d
 		}
+		{
+			dependencies: ["143E6A57D69BAE65"]
+			id: "52AF7DAADA5AA0EA"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "14D9A7AD66EB0E8E"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 3
+							}
+						}
+						id: "immersiveengineering:railgun"
+					}
+					type: "item"
+				}
+				{
+					id: "3794154469C43BE9"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 4
+							}
+						}
+						id: "immersiveengineering:chemthrower"
+					}
+					type: "item"
+				}
+			]
+			title: "现代军武库"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["143E6A57D69BAE65"]
+			id: "7FBBD3EAF8C168D1"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "01A2A7EE3E4B6CE5"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 5
+							}
+						}
+						id: "immersiveengineering:drill"
+					}
+					type: "item"
+				}
+				{
+					id: "71AC37C7FF3388AD"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 5
+							}
+						}
+						id: "immersiveengineering:buzzsaw"
+					}
+					type: "item"
+				}
+			]
+			title: "机械化工具"
+			x: 1.0d
+			y: -2.0d
+		}
 	]
 	title: "现代工业"
 }
