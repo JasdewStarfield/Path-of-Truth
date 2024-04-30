@@ -406,7 +406,7 @@
 				item: "botania:corporea_index"
 				type: "item"
 			}]
-			title: "网络核心"
+			title: "多媒体核心"
 			x: 1.0d
 			y: 2.0d
 		}
