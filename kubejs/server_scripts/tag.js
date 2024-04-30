@@ -33,3 +33,8 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:dusts","kubejs:gold_silver_mix")
     event.add("forge:dusts/sulfur","tfmg:sulfur_dust")
 })
+
+ServerEvents.tags("fluid", (event) => {
+    event.add("forge:ethylene","tfmg:ethylene")
+    event.add("forge:propylene","tfmg:propylene")
+})

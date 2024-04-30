@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "2716B41E11042107"
 	group: "58EDF058942F253F"
-	icon: "immersiveengineering:logic_circuit"
+	icon: "immersiveengineering:component_electronic_adv"
 	id: "2716B41E11042107"
 	order_index: 0
 	quest_links: [ ]
@@ -31,7 +31,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["586F09D1FB8860DD"]
@@ -43,7 +43,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["2E8FF0455E304658"]
@@ -60,7 +60,7 @@
 			}]
 			title: "找到油田"
 			x: 0.0d
-			y: 10.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -119,8 +119,8 @@
 				}
 			]
 			title: "组装抽油机"
-			x: 1.0d
-			y: 1.5d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["08B3DECCC7EBD7CE"]
@@ -131,7 +131,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
@@ -193,8 +193,8 @@
 				}
 			]
 			title: "搭建斗轮式采矿机"
-			x: -2.5d
-			y: 0.0d
+			x: -2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["71B673D310440EBC"]
@@ -211,8 +211,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.5d
-			y: 0.0d
+			x: -4.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -250,7 +250,7 @@
 			]
 			title: "搭建钢分馏塔"
 			x: 2.0d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -265,7 +265,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -280,7 +280,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -295,7 +295,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -309,7 +309,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -324,7 +324,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -1.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -339,7 +339,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -3.5d
+			y: -4.0d
 		}
 		{
 			icon: "tfmg:cast_iron_distillation_controller"
@@ -363,7 +363,7 @@
 				}
 			]
 			x: 6.0d
-			y: 3.5d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -389,8 +389,8 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
-			y: 6.5d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -404,8 +404,8 @@
 				title: "乙烯、丙烯"
 				type: "checkmark"
 			}]
-			x: 8.0d
-			y: 0.5d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0B48C7A6F9F81A56"]
@@ -415,14 +415,11 @@
 				item: "tfmg:liquid_plastic_bucket"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -1.5d
+			x: 8.0d
+			y: 2.0d
 		}
 		{
-			dependencies: [
-				"27AC0014531AA954"
-				"528D895332FD730A"
-			]
+			dependencies: ["27AC0014531AA954"]
 			id: "3E21C675D4F61E6B"
 			shape: "gear"
 			size: 2.0d
@@ -431,18 +428,8 @@
 				item: "tfmg:plastic_sheet"
 				type: "item"
 			}]
-			x: 12.5d
-			y: 0.0d
-		}
-		{
-			id: "528D895332FD730A"
-			tasks: [{
-				id: "206274DB5998ABEF"
-				item: "immersiveengineering:phenolic_resin_bucket"
-				type: "item"
-			}]
 			x: 10.0d
-			y: 1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["3E21C675D4F61E6B"]
@@ -452,8 +439,8 @@
 				item: "immersiveengineering:plate_duroplast"
 				type: "item"
 			}]
-			x: 15.0d
-			y: 0.0d
+			x: 12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["32DA53E6EDA0AC90"]
@@ -463,7 +450,7 @@
 				item: "immersiveengineering:component_electronic_adv"
 				type: "item"
 			}]
-			x: 17.5d
+			x: 14.0d
 			y: 0.0d
 		}
 		{
@@ -472,15 +459,14 @@
 				"176ADC50E594B161"
 			]
 			id: "07B58ED0910776DF"
-			shape: "gear"
-			size: 2.0d
+			size: 1.0d
 			tasks: [{
 				id: "5EBFA215B48BC68C"
 				item: "kubejs:electronic_engineering"
 				type: "item"
 			}]
-			x: 20.0d
-			y: 0.0d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			id: "176ADC50E594B161"
@@ -489,8 +475,8 @@
 				item: "immersiveengineering:component_electronic"
 				type: "item"
 			}]
-			x: 17.5d
-			y: 1.5d
+			x: 16.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
@@ -568,6 +554,20 @@
 			x: 1.0d
 			y: -2.0d
 		}
+		{
+			dependencies: ["07B58ED0910776DF"]
+			id: "2D906487EC6F1A01"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "5DB8E7650A917BFD"
+				item: "kubejs:buran"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.0d
+		}
 	]
-	title: "现代工业"
+	subtitle: ["Petrochemical Engineering"]
+	title: "黑金与化工"
 }

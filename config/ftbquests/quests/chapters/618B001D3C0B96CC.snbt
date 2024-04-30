@@ -894,5 +894,6 @@
 			y: 3.5d
 		}
 	]
+	subtitle: ["Mana Within"]
 	title: "魔力流淌"
 }

@@ -204,6 +204,27 @@ ServerEvents.recipes(event => {
     //塑料
     event.remove({id:"immersiveengineering:bottling/duroplast_plate"})
     event.remove({id:"tfmg:compacting/plastic_molding"})
+
+    event.remove({id:"tfmg:mixing/liquid_plastic_from_propylene"})
+    event.remove({id:"tfmg:mixing/liquid_plastic_from_ethylene"})
+    event.custom({
+        "type":"immersiveengineering:refinery",
+        "catalyst":{"tag":"forge:plates/horizonite"},
+        "energy":120,
+        "input0":{
+            "amount":8,
+            "tag":"forge:propylene"
+        },
+        "input1":{
+            "amount":16,
+            "tag":"forge:ethylene"
+        },
+        "result":{
+            "amount":16,
+            "fluid":"tfmg:liquid_plastic"
+        }
+    })
+    
     event.custom({
         "type": "create:compacting",
         "ingredients": [

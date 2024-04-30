@@ -56,4 +56,18 @@ ServerEvents.recipes(event => {
     //散热方块
     //这玩意配方比较神秘，只能用数据覆盖的方法改。参见data文件夹
 
+    //终极合成！
+    let inter2 = 'kubejs:incomplete_buran'
+    event.recipes.create.sequenced_assembly([
+        'kubejs:buran'
+    ], 'immersiveengineering:plate_duroplast', [
+        event.recipes.createDeploying(inter2, [inter2, 'kubejs:andesite_engineering']),
+        event.recipes.createDeploying(inter2, [inter2, 'kubejs:fluid_engineering']),
+        event.recipes.createDeploying(inter2, [inter2, 'kubejs:precise_engineering']),
+        event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:light_engineering']),
+        event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:rs_engineering']),
+        event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:heavy_engineering']),
+        event.recipes.createDeploying(inter2, [inter2, 'kubejs:electronic_engineering']),
+        event.recipes.createPressing(inter2, inter2)
+    ]).transitionalItem(inter2).loops(32)
 })
