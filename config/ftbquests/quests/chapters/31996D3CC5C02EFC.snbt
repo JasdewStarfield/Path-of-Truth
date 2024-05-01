@@ -230,6 +230,8 @@
 				item: "betterarcheology:radiance_totem"
 				type: "item"
 			}]
+			shape: "octagon"
+			size: 1.2d
 			subtitle: "你将触碰——真理之源。"
 			tasks: [{
 				id: "353C425A4E0BBD22"

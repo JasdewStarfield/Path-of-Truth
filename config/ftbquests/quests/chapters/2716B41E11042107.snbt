@@ -24,7 +24,9 @@
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
+			description: ["合格的霉国军人应该在听到石油两个字的时候一跃而起！"]
 			id: "2E8FF0455E304658"
+			subtitle: "美军前置科技"
 			tasks: [{
 				id: "7322415356A4B9EE"
 				item: "tfmg:surface_scanner"
@@ -35,20 +37,31 @@
 		}
 		{
 			dependencies: ["586F09D1FB8860DD"]
+			description: [
+				"现在，你的现代工业基础需要经过长途跋涉来到地面，所以——你至少得给人家弄条路）"
+				"“拼命也要挖出大油田！”"
+			]
 			id: "22B1EE261A88D9D1"
+			subtitle: "注入动力"
 			tasks: [{
 				count: 64L
 				id: "7E75D3CA3B487C74"
 				item: "tfmg:industrial_pipe"
 				type: "item"
 			}]
+			title: "工业血管"
 			x: 0.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["2E8FF0455E304658"]
+			description: [
+				"在基岩层流淌的黑金被你找到了！"
+				"那么下一个问题来了，你打算怎么把这玩意弄到地面上呢？"
+			]
 			icon: "tfmg:oil_deposit"
 			id: "586F09D1FB8860DD"
+			subtitle: "地底宝藏"
 			tasks: [{
 				icon: "tfmg:oil_deposit"
 				id: "5B96E1D30EE9455E"
@@ -67,9 +80,13 @@
 				"22B1EE261A88D9D1"
 				"143E6A57D69BAE65"
 			]
-			description: ["具体可以参考思索说明"]
+			description: [
+				"具体可以参考思索说明"
+				"虽然是古老的磕头机，但也足够你来使用了）"
+			]
 			icon: "tfmg:pumpjack_crank"
 			id: "08B3DECCC7EBD7CE"
+			subtitle: "美军战时科技"
 			tasks: [
 				{
 					id: "5C826AEB85CD3E79"
@@ -124,20 +141,31 @@
 		}
 		{
 			dependencies: ["08B3DECCC7EBD7CE"]
+			description: [
+				"普通的原油什么都做不了，但是相应的，处理后的原油能做的事情太多了。"
+				"所以，现在你需要分馏塔——而且需要不止一个！"
+			]
 			id: "1AAD83556BD302DD"
+			subtitle: "黏糊糊"
 			tasks: [{
 				id: "4BBF84D92E8CABE3"
 				item: "tfmg:crude_oil_fluid_bucket"
 				type: "item"
 			}]
+			title: "液体宝藏"
 			x: 2.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
+			description: [
+				"通过斗轮式采矿机，你可以几乎凭空产出矿物）"
+				"虽然理论上是矿脉开采没错，也需要你提前测定就是了，但矿物的产量仍然惊人。"
+			]
 			icon: "immersiveengineering:excavator"
 			id: "71B673D310440EBC"
 			shape: "diamond"
+			subtitle: "矿来！"
 			tasks: [
 				{
 					count: 16L
@@ -198,8 +226,13 @@
 		}
 		{
 			dependencies: ["71B673D310440EBC"]
+			description: [
+				"斗轮式采矿机的采矿量取决于一片区域的矿物储量（非物理意义上）"
+				"而这就是检查储量的工具（笑"
+			]
 			id: "7B7978B0964080F3"
 			shape: "diamond"
+			subtitle: "我矿脉呢？"
 			tasks: [{
 				id: "6F18410C24225D27"
 				item: {
@@ -219,8 +252,13 @@
 				"143E6A57D69BAE65"
 				"1AAD83556BD302DD"
 			]
+			description: [
+				"那就热一下）"
+				"通过大型分馏，现代工业之美将会在你面前展开。"
+			]
 			icon: "tfmg:steel_distillation_controller"
 			id: "3FCEB9256A15A4B2"
+			subtitle: "静置无法分层……"
 			tasks: [
 				{
 					id: "4AA95EBD3CDCB288"
@@ -259,6 +297,7 @@
 			]
 			id: "107639F1A8166B9C"
 			shape: "diamond"
+			subtitle: "分，还可以分"
 			tasks: [{
 				id: "44DCF7BA286EA6C3"
 				item: "tfmg:heavy_oil_bucket"
@@ -274,6 +313,7 @@
 			]
 			id: "443ED09E810FE23D"
 			shape: "diamond"
+			subtitle: "轰！"
 			tasks: [{
 				id: "53A6FDD422729299"
 				item: "tfmg:diesel_bucket"
@@ -287,8 +327,14 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
+			description: [
+				"你是否苦于自己的磁铁磁感应强度太低，发电效率不行？"
+				"现在你可以通过煤油升级自己的磁铁！"
+				"虽然需要一点小小的魔法手段……"
+			]
 			id: "05EF035C814ADE9B"
 			shape: "diamond"
+			subtitle: "磁铁修整器"
 			tasks: [{
 				id: "49C958F2E71847C4"
 				item: "tfmg:kerosene_bucket"
@@ -302,7 +348,12 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
+			description: [
+				"如果你没有分馏出石脑油，检查一下你的分馏塔是不是偷工减料了）"
+				"石油当中最宝贵的一部分也是最容易消失的一部分（摊手"
+			]
 			id: "3B7D8BECFF387995"
+			subtitle: "层数不够就会消失"
 			tasks: [{
 				id: "0A94C80A2B72D692"
 				item: "tfmg:naphtha_bucket"
@@ -318,6 +369,7 @@
 			]
 			id: "2718164469D544DF"
 			shape: "diamond"
+			subtitle: "也许是燃料"
 			tasks: [{
 				id: "577F1DBBD3F9A3FA"
 				item: "tfmg:gasoline_bucket"
@@ -331,8 +383,13 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
+			description: [
+				"我们其实不提倡这种不人道的行为，但是不得不说凝固汽油在MC里只适合干这个（？"
+				"本着和谐身心的前提，凝固汽油桶现在可以用于一次生产大量TNT——方法是和精灵进行交易）"
+			]
 			id: "46A5743F6DC8054D"
 			shape: "diamond"
+			subtitle: "燃烧弹前置"
 			tasks: [{
 				id: "19988C4F9E13FD19"
 				item: "tfmg:napalm_bucket"
@@ -397,8 +454,13 @@
 				"576A28075CA7077D"
 				"3B7D8BECFF387995"
 			]
+			description: [
+				"是的，干到这里你会发现自己还需要再来一次分馏——用铸铁分馏塔）"
+				"习惯就好，这就是石油工业）"
+			]
 			icon: "minecraft:bucket"
 			id: "0B48C7A6F9F81A56"
+			subtitle: "石脑油的组成"
 			tasks: [{
 				id: "39AC678F2E9625AE"
 				title: "乙烯、丙烯"
@@ -409,7 +471,9 @@
 		}
 		{
 			dependencies: ["0B48C7A6F9F81A56"]
+			description: ["你开始接近现代了，你找到了塑料，但是我们不提供免费垃圾袋（"]
 			id: "27AC0014531AA954"
+			subtitle: "塑料！文明之光！"
 			tasks: [{
 				id: "7F99956FC3A5E8C3"
 				item: "tfmg:liquid_plastic_bucket"
@@ -420,9 +484,15 @@
 		}
 		{
 			dependencies: ["27AC0014531AA954"]
+			description: [
+				"但是你不能把塑料做成眼镜框，也不可以在这里唱《看，猫头鹰》"
+				"塑胶是电子元件的基础材料——或者说底板）"
+				"很真实吧&m&o&b（很复杂吧&r&r&r"
+			]
 			id: "3E21C675D4F61E6B"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "你疑似有点城市化了"
 			tasks: [{
 				id: "03BDB368AA49BEFF"
 				item: "tfmg:plastic_sheet"
@@ -433,7 +503,12 @@
 		}
 		{
 			dependencies: ["3E21C675D4F61E6B"]
+			description: [
+				"这将是对于你未来（可能存在的）电子厂生涯的第一步预演："
+				"看到纯粹的，还没有焊接任何元件的板子）"
+			]
 			id: "32DA53E6EDA0AC90"
+			subtitle: "焊板子！"
 			tasks: [{
 				id: "70491E97C12AFBD2"
 				item: "immersiveengineering:plate_duroplast"
@@ -444,7 +519,12 @@
 		}
 		{
 			dependencies: ["32DA53E6EDA0AC90"]
+			description: [
+				"自己给自己焊板子你还想要工资？不可能的，朋友）"
+				"哦对了，如果出现了废料那一定是你的运气问题，人不行不能怪路不平（x"
+			]
 			id: "538F608DF5017A6A"
+			subtitle: "没有工资"
 			tasks: [{
 				id: "4BE26B418AD3ABE6"
 				item: "immersiveengineering:component_electronic_adv"
@@ -458,8 +538,13 @@
 				"538F608DF5017A6A"
 				"176ADC50E594B161"
 			]
+			description: [
+				"终于，你进入了电子时代）"
+				"虽然我们不能在MC里为你提供计算机，但你已经接近这个世界的真相了。"
+			]
 			id: "07B58ED0910776DF"
 			size: 1.0d
+			subtitle: "高精尖"
 			tasks: [{
 				id: "5EBFA215B48BC68C"
 				item: "kubejs:electronic_engineering"
@@ -469,7 +554,9 @@
 			y: 2.0d
 		}
 		{
+			description: ["相比于高级的电路板，木头板子就容易多了，你只需要手动把石英往木头上插）"]
 			id: "176ADC50E594B161"
+			subtitle: "简单的小东西"
 			tasks: [{
 				id: "6C505B3C11745EEB"
 				item: "immersiveengineering:component_electronic"
@@ -482,6 +569,7 @@
 			dependencies: ["143E6A57D69BAE65"]
 			id: "52AF7DAADA5AA0EA"
 			shape: "diamond"
+			subtitle: "哒哒哒哒哒"
 			tasks: [
 				{
 					id: "14D9A7AD66EB0E8E"
@@ -518,8 +606,13 @@
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
+			description: [
+				"相较于机械动力的工具而言，沉浸工具的好处之一是可以拿在手上）"
+				"不过最好提前准备电池背包）"
+			]
 			id: "7FBBD3EAF8C168D1"
 			shape: "diamond"
+			subtitle: "电动工具"
 			tasks: [
 				{
 					id: "01A2A7EE3E4B6CE5"
@@ -556,9 +649,16 @@
 		}
 		{
 			dependencies: ["07B58ED0910776DF"]
+			description: [
+				"工业测的作者oc之一——非常可爱）"
+				"也是通往世界真相的通行证）"
+				"&l&c这大抵是难以置信的序列组装配方（&r&r"
+				"工业的本质就是以机械直达无限，而很快你就将能触碰到这一概念的边缘。"
+			]
 			id: "2D906487EC6F1A01"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "很可爱，对吧"
 			tasks: [{
 				id: "5DB8E7650A917BFD"
 				item: "kubejs:buran"

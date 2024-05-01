@@ -346,6 +346,7 @@
 				"11809308EF757592"
 			]
 			id: "0A2BE67F3E9F7225"
+			subtitle: "活化水晶？"
 			tasks: [{
 				id: "106B3E5E1EB2E1C7"
 				item: "minecraft:budding_amethyst"
@@ -448,6 +449,18 @@
 			}]
 			x: 2.0d
 			y: -13.0d
+		}
+		{
+			dependencies: ["4D484051A8CF29F2"]
+			id: "747404689C3EB6D7"
+			subtitle: "实体化灵魂"
+			tasks: [{
+				id: "09F643905DB0DDCF"
+				item: "bloodmagic:demoncrystallizer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.0d
 		}
 	]
 	title: "魔法进程表"
