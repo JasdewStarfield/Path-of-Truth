@@ -147,4 +147,21 @@ event.custom({
     },
     "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
 })
+//灵魂锻炉
+event.custom({
+    "type": "bloodmagic:soulforge",
+    "drain": 2.0,//单次吸收量
+    "input0": {
+        "tag": "forge:stone"
+    },
+    "input1": {
+        "tag": "forge:glass"
+    },
+    "minimumDrain": 10.0,//要求使用材料的最低容量
+    "output": {
+        "count": 8,//生成数量
+        "item": "bloodmagic:throwing_dagger_syringe"
+    }
+})
+
 */

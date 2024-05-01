@@ -217,6 +217,92 @@ ServerEvents.recipes(event => {
         "ticks": 200,
         "upgradeLevel": 5
     })
+    //晶簇炼金变化
+    //腐蚀，破坏，复仇，坚毅
+    //腐蚀
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "item":'bloodmagic:rawdemoncrystal'
+            },
+            {
+                "item":'botania:life_essence'
+            },
+            {
+                "item":'minecraft:poisonous_potato'
+            }
+        ],
+        "output": {
+          "item": 'bloodmagic:corrosivedemoncrystal'
+        },
+        "syphon": 5000,
+        "ticks": 100,
+        "upgradeLevel": 5
+    })
+    //破坏
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "item":'bloodmagic:rawdemoncrystal'
+            },
+            {
+                "item":'botania:life_essence'
+            },
+            {
+                "item":'bloodmagic:veinmine_charge_2'
+            }
+        ],
+        "output": {
+          "item": 'bloodmagic:destructivedemoncrystal'
+        },
+        "syphon": 5000,
+        "ticks": 100,
+        "upgradeLevel": 5
+    })
+    //复仇
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "item":'bloodmagic:rawdemoncrystal'
+            },
+            {
+                "item":'botania:life_essence'
+            },
+            {
+                "item":'biomesoplenty:bramble'
+            }
+        ],
+        "output": {
+          "item": 'bloodmagic:vengefuldemoncrystal'
+        },
+        "syphon": 5000,
+        "ticks": 100,
+        "upgradeLevel": 5
+    })
+    //坚毅
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "item":'bloodmagic:rawdemoncrystal'
+            },
+            {
+                "item":'botania:life_essence'
+            },
+            {
+                "tag":'forge:ingots/steel'
+            }
+        ],
+        "output": {
+          "item": 'bloodmagic:steadfastdemoncrystal'
+        },
+        "syphon": 5000,
+        "ticks": 100,
+        "upgradeLevel": 5
+    })
 
     //祭坛配方修改
     //耐火黏土生成
@@ -430,5 +516,79 @@ ServerEvents.recipes(event => {
             "item": 'blue_skies:charoite'
         },
         "texture": "bloodmagic:textures/models/alchemyarrays/airsigil.png"
+    })
+    //建立创造多媒体火花
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'kubejs:midnight'
+        },
+        "baseinput": {
+            "item": 'botania:corporea_spark'
+        },
+        "output": {
+            "item": 'botania:corporea_spark_creative'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
+    //创造无限取出升级
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'botania:corporea_spark_creative'
+        },
+        "baseinput": {
+            "item": 'storagedrawers:creative_storage_upgrade'
+        },
+        "output": {
+            "item": 'storagedrawers:creative_vending_upgrade'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
+
+    //灵魂锻炉配方修改
+    //创造储存升级
+    event.custom({
+        "type": "bloodmagic:soulforge",
+        "drain": 10.0,//单次吸收量
+        "input0": {
+            "item": 'storagedrawers:emerald_storage_upgrade'
+        },
+        "input1": {
+            "item": 'sophisticatedbackpacks:everlasting_upgrade'
+        },
+        "input2": {
+            "item": 'sophisticatedbackpacks:stack_upgrade_tier_4'
+        },
+        "input3": {
+            "item": 'bloodmagic:altarcapacityrune2'
+        },
+        "minimumDrain": 128.0,//要求使用材料的最低容量
+        "output": {
+            "count": 1,//生成数量
+            "item": 'storagedrawers:creative_storage_upgrade'
+        }
+    })
+    //凋零骷髅刷怪蛋合成
+    event.custom({
+        "type": "bloodmagic:soulforge",
+        "drain": 128.0,//单次吸收量
+        "input0": {
+            "item": 'minecraft:wither_skeleton_skull'
+        },
+        "input1": {
+            "item": 'tide:witherfin'
+        },
+        "input2": {
+            "item": 'immersive_armors:wither_chestplate'
+        },
+        "input3": {
+            "tag": 'forge:eggs'
+        },
+        "minimumDrain": 512.0,//要求使用材料的最低容量
+        "output": {
+            "count": 1,//生成数量
+            "item": 'minecraft:wither_skeleton_spawn_egg'
+        }
     })
 })

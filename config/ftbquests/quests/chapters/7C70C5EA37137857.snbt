@@ -117,6 +117,11 @@
 				"证明一下你是末地最强钓鱼佬怎么样）"
 			]
 			id: "10CAF35A5551DC8F"
+			rewards: [{
+				id: "2A95EC927550D956"
+				item: "alexsmobs:void_worm_eye"
+				type: "item"
+			}]
 			subtitle: "从加的饱食度就可以看出来……"
 			tasks: [{
 				id: "759962C6923883ED"

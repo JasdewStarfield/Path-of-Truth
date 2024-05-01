@@ -877,8 +877,14 @@
 			]
 			id: "5EE2152C42721246"
 			rewards: [{
-				id: "0952CBB27F6B1843"
-				item: "create:wand_of_symmetry"
+				id: "13BDA7500373C98F"
+				item: {
+					Count: 1b
+					id: "tfmg:quad_potato_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			subtitle: "这将是你面对的最终BOSS"

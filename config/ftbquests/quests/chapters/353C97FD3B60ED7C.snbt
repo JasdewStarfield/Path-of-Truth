@@ -10,7 +10,11 @@
 	quests: [
 		{
 			dependencies: ["0C46182EC4B33189"]
-			icon: "alexsmobs:transmutation_table"
+			description: [
+				"越到末尾的章节，节点就越少）"
+				"因为你不需要我再给你讲故事了，你需要的就是走下去，因为马上你就能看到了。"
+			]
+			icon: "bloodmagic:dungeon_emitter"
 			id: "6D3D887E93176D55"
 			subtitle: "但你现在可以扭曲规则。"
 			tasks: [{
@@ -28,6 +32,7 @@
 			description: [
 				"通过这一火花，只要你的存储格内有某一种物品，那么它就可以被无限调用。"
 				"但前提是，你必须得有第一个。"
+				"现在，1以上的数字对你已经没有意义了——既是基石，也是万物。"
 			]
 			id: "25B8A0AF0FDD432B"
 			subtitle: "一生二，二生三，三生万物"
@@ -37,8 +42,82 @@
 				type: "item"
 			}]
 			title: "至高网络节点"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["25B8A0AF0FDD432B"]
+			description: [
+				"通过创造模式的多媒体火花，你可以反转无尽存储的属性——变成无尽取出！"
+				"虽然相比于创造火花没有太大的提升，但是多媒体火花并不能作为硬件组件被用于插入或合成。比如，这也是创造板条箱和创造储罐的基础组件。"
+				"所以——做出来后记得多复制几个。"
+			]
+			id: "3FB7813E98CDF182"
+			subtitle: "比起网络调用，自己拿还是更快一些）"
+			tasks: [{
+				id: "09047006CF3A5BE9"
+				item: "storagedrawers:creative_vending_upgrade"
+				type: "item"
+			}]
+			title: "无尽炼金"
 			x: 0.0d
-			y: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6D3D887E93176D55"]
+			description: [
+				"通过血魔法的仪式或者炼金转化，你可以产生几种不同的晶簇，或者将原生意志晶簇转化为其他颜色的晶簇。"
+				"至于原生意志晶簇的生成，我想这不需要我来说明？"
+				"翻一下恶魔结晶坛的使用方式，固化你的灵魂能量。"
+			]
+			id: "42A9EF08AE4C9369"
+			subtitle: "彩虹般的意志（大雾"
+			tasks: [
+				{
+					id: "1AC93B335D54D81A"
+					item: "bloodmagic:rawdemoncrystal"
+					type: "item"
+				}
+				{
+					id: "04E2E96FC0C4CC8B"
+					item: "bloodmagic:corrosivedemoncrystal"
+					type: "item"
+				}
+				{
+					id: "323421F4CD4B24DF"
+					item: "bloodmagic:destructivedemoncrystal"
+					type: "item"
+				}
+				{
+					id: "48D9E6E616CAC29D"
+					item: "bloodmagic:vengefuldemoncrystal"
+					type: "item"
+				}
+				{
+					id: "4C19187110E906C0"
+					item: "bloodmagic:steadfastdemoncrystal"
+					type: "item"
+				}
+			]
+			title: "更多意志"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["42A9EF08AE4C9369"]
+			description: [
+				"这是通向世界本源的基础产物，可以通过魔法和工业两种方式分别合成。"
+				"在这里，我们将提供魔法的方式，当然你也可以工业合成后复制，不是吗？"
+			]
+			id: "6A3A54A26F2AC451"
+			subtitle: "有别于工业的合成方式"
+			tasks: [{
+				id: "775EFF19B1E0D3AA"
+				item: "createchromaticreturn:chromatic_compound"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
 		}
 	]
 	subtitle: ["The Spells of Finale"]

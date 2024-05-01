@@ -19,12 +19,12 @@ ServerEvents.recipes(event => {
             'immersiveengineering:component_electronic_adv'
         ]
     )
-    //复制血腥法杖
+    //锻造血腥法杖
     event.recipes.botania.petal_apothecary('irons_spellbooks:blood_staff', 
         [
             'botania:fire_rod',
             'irons_spellbooks:blood_upgrade_orb',
-            'createchromaticreturn:chromatic_compound',
+            'immersiveengineering:steel_post',
             'bloodmagic:strong_tau',
             'bloodmagic:weakbloodshard',
             'minecraft:dragon_breath'
@@ -57,11 +57,12 @@ ServerEvents.recipes(event => {
 
     //魔钢-奥术源质兑换
     event.recipes.botania.mana_infusion('4x irons_spellbooks:arcane_essence', 'botania:manasteel_ingot', 1000, 'botania:alchemy_catalyst')
-    //刷怪蛋复制：遗忆守卫，瞻远者，宝箱怪，潜影贝
+    //刷怪蛋复制：遗忆守卫，瞻远者，宝箱怪，潜影贝，凋零骷髅
     event.recipes.botania.mana_infusion('2x undergarden:forgotten_guardian_spawn_egg', 'undergarden:forgotten_guardian_spawn_egg', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x alexsmobs:spawn_egg_farseer', 'alexsmobs:spawn_egg_farseer', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x artifacts:mimic_spawn_egg', 'artifacts:mimic_spawn_egg', 25000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x minecraft:shulker_spawn_egg', 'minecraft:shulker_spawn_egg', 50000,'botania:conjuration_catalyst')
+    event.recipes.botania.mana_infusion('2x minecraft:wither_skeleton_spawn_egg', 'minecraft:wither_skeleton_spawn_egg', 25000,'botania:conjuration_catalyst')
     //遗忆锭转化钻石1:2
     event.recipes.botania.mana_infusion('2x minecraft:diamond', 'undergarden:forgotten_ingot', 1000,'botania:alchemy_catalyst')
     //龙皮复制
@@ -264,9 +265,23 @@ ServerEvents.recipes(event => {
             'botania:creative_pool',
             'bloodmagic:archmagebloodorb',
             'minecraft:budding_amethyst',
-            'createchromaticreturn:multiplite_ingot',
+            'bloodmagic:lightritualstone',
             'alexsmobs:transmutation_table',
             'bosses_of_mass_destruction:mob_ward'
+        ], 
+        500000
+    )
+    //异彩化合物魔法合成
+    event.recipes.botania.terra_plate('createchromaticreturn:chromatic_compound', 
+        [
+            'bloodmagic:rawdemoncrystal', 
+            'bloodmagic:corrosivedemoncrystal',
+            'bloodmagic:destructivedemoncrystal',
+            'bloodmagic:vengefuldemoncrystal',
+            'bloodmagic:steadfastdemoncrystal',
+            'botania:gaia_ingot',
+            'botania:corporea_spark_creative',
+            'kubejs:midnight'
         ], 
         500000
     )

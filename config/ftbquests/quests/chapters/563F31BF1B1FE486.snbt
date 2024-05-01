@@ -327,7 +327,7 @@
 			y: -13.0d
 		}
 		{
-			dependencies: ["7B4BE516F4D4E494"]
+			dependencies: ["79EE6BAFA5E153E5"]
 			id: "1DC429EF770C416D"
 			subtitle: "工业化无尽魔力"
 			tasks: [{
@@ -388,6 +388,66 @@
 			title: "嗯，作者之一"
 			x: 0.0d
 			y: -17.0d
+		}
+		{
+			dependencies: ["697B1277B1C95490"]
+			id: "1C42F46B21ADC51E"
+			subtitle: "三生万物（真的"
+			tasks: [
+				{
+					id: "2A914190A596881C"
+					item: "botania:corporea_spark_creative"
+					type: "item"
+				}
+				{
+					id: "399ECD7F9664A0A4"
+					item: "storagedrawers:creative_vending_upgrade"
+					type: "item"
+				}
+			]
+			title: "复制之力"
+			x: -2.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["697B1277B1C95490"]
+			id: "547BE1E974BA2186"
+			subtitle: "转化，合成，凝聚"
+			tasks: [{
+				id: "4C9E7E2BAAD67B3C"
+				item: "bloodmagic:rawdemoncrystal"
+				type: "item"
+			}]
+			title: "恶魔结晶"
+			x: 2.0d
+			y: -18.0d
+		}
+		{
+			dependencies: [
+				"1C42F46B21ADC51E"
+				"547BE1E974BA2186"
+			]
+			id: "0D3C086EDB80E9AB"
+			subtitle: "终局开端"
+			tasks: [{
+				id: "022297A7CFF38214"
+				item: "createchromaticreturn:chromatic_compound"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["7B4BE516F4D4E494"]
+			id: "79EE6BAFA5E153E5"
+			subtitle: "工业的破晓带来魔法的推进"
+			tasks: [{
+				id: "151D8A5730F981B3"
+				item: "bloodmagic:lightritualstone"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -13.0d
 		}
 	]
 	title: "魔法进程表"
