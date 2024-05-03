@@ -7,20 +7,93 @@
 	id: "1BB45CAF6A2385E2"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		icon: "bloodmagic:dungeon_alternator"
-		id: "0D0BEC03C1B26CA3"
-		subtitle: "机械的终末是……无限。"
-		tasks: [{
-			id: "574D4B148744FE70"
-			item: "kubejs:buran"
-			title: "工业的最高成就……"
-			type: "item"
-		}]
-		title: "机械神教，机械飞升"
-		x: 0.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: ["2D906487EC6F1A01"]
+			icon: "bloodmagic:dungeon_alternator"
+			id: "0D0BEC03C1B26CA3"
+			shape: "gear"
+			size: 1.2d
+			subtitle: "机械的终末是……无限。"
+			tasks: [{
+				id: "574D4B148744FE70"
+				item: "kubejs:buran"
+				title: "工业的最高成就……"
+				type: "item"
+			}]
+			title: "机械神教，机械飞升"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D0BEC03C1B26CA3"]
+			id: "415EF5AEED3A6952"
+			tasks: [{
+				id: "521D50C8A517514F"
+				item: "create:creative_crate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["415EF5AEED3A6952"]
+			id: "34400C31E3703498"
+			tasks: [{
+				id: "60B96C0FD52B7D5A"
+				item: "create:creative_fluid_tank"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A0E95EE2F0D2D5B"]
+			id: "730D5088B9FDC593"
+			tasks: [{
+				id: "7D88B3C1489D2DD0"
+				item: "create:creative_motor"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D0BEC03C1B26CA3"]
+			id: "1A0E95EE2F0D2D5B"
+			tasks: [{
+				id: "757F7D1039E21F46"
+				item: "immersiveengineering:capacitor_creative"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["34400C31E3703498"]
+			id: "6936D38B28D26AF0"
+			tasks: [{
+				id: "7BB018EE90A8A873"
+				item: "create:creative_blaze_cake"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["730D5088B9FDC593"]
+			id: "6ED2B7EF9909EB05"
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "5F94339B12159527"
+				item: "createchromaticreturn:chromatic_compound"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+	]
 	subtitle: ["The Mastery of Industry"]
 	title: "统御机械"
 }

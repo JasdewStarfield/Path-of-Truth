@@ -21,6 +21,7 @@
 			]
 			icon: "artifacts:mimic_spawn_egg"
 			id: "12134A3EF6C80C54"
+			shape: "rsquare"
 			subtitle: "从给予你的箱子生命开始……"
 			tasks: [
 				{
@@ -84,8 +85,8 @@
 				}
 			]
 			title: "死者为大"
-			x: -2.0d
-			y: -2.0d
+			x: -1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
@@ -116,8 +117,8 @@
 				}
 			]
 			title: "巅峰炼金术"
-			x: -2.0d
-			y: 2.0d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -155,8 +156,8 @@
 				type: "item"
 			}]
 			title: "更多的蛋"
-			x: 2.0d
-			y: -2.0d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
@@ -174,8 +175,8 @@
 				type: "item"
 			}]
 			title: "魔力潮涌"
-			x: 2.0d
-			y: 2.0d
+			x: 1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["3044537D03B81BFF"]
@@ -319,6 +320,80 @@
 			title: "鲜活的食品"
 			x: 0.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["7B6A44193BB4D5FD"]
+			description: [
+				"现在你可以通过黑魔法手段来创造这种莲花了！"
+				"虽然丢进池子能获得很多魔力，但这同样也是高级材料——之一。"
+			]
+			id: "413A1D80B0F01801"
+			subtitle: "黑化的莲花"
+			tasks: [{
+				id: "29B54D28219ABB47"
+				item: "botania:blacker_lotus"
+				type: "item"
+			}]
+			title: "黑魔法师"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0C99BD24E939A68D"]
+			description: [
+				"可以摆在家里做装饰……？"
+				"不合理的炼金催化会让龙蛋只长出头（"
+				"也可以用来制作末地重生方尖碑）"
+			]
+			id: "3D9FF250D16A46C2"
+			subtitle: "龙蛋（未完全孵化）"
+			tasks: [{
+				id: "20EEC8DB99B00208"
+				item: "minecraft:dragon_head"
+				type: "item"
+			}]
+			title: "摸不着头脑"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["059A741ABF2A9A34"]
+			description: ["是的，这也是可以制造的，但是需要你……付出灵魂。"]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "3C38B10AFBEA5CEE"
+			subtitle: "更多的蛋"
+			tasks: [{
+				id: "5A25C8F89EBC9419"
+				item: "minecraft:wither_skeleton_spawn_egg"
+				type: "item"
+			}]
+			title: "万物凋零"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3BE92D4971A86473"]
+			description: [
+				"通过以永恒魔力池放在魔力池下方作为催化器，你可以生产变色龙蛋！"
+				"虽然创造第一个生命会比较麻烦，但这也是可复制的）"
+				"通过这个来为你保温（确信"
+			]
+			icon: "cold_sweat:chameleon_molt"
+			id: "2F259F3824D83D9D"
+			rewards: [{
+				id: "4995CF24C7F999B6"
+				item: "cold_sweat:chameleon_molt"
+				type: "item"
+			}]
+			subtitle: "它在哪儿呢？"
+			tasks: [{
+				id: "2402A22F7A53F487"
+				item: "cold_sweat:chameleon_spawn_egg"
+				type: "item"
+			}]
+			title: "适应环境"
+			x: 3.0d
+			y: 3.0d
 		}
 	]
 	subtitle: ["It's Alive!"]

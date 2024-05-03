@@ -30,6 +30,22 @@ ServerEvents.recipes(event => {
             'minecraft:dragon_breath'
         ]
     )
+    //黑莲花修改
+    event.recipes.botania.petal_apothecary('botania:black_lotus', 
+        [
+            'minecraft:lily_pad',
+            'botania:black_mystical_flower',
+            'botania:pixie_dust'
+        ]
+    )
+    //暗黑莲花修改
+    event.recipes.botania.petal_apothecary('botania:blacker_lotus', 
+        [
+            'botania:black_lotus',
+            'irons_spellbooks:ender_upgrade_orb',
+            'tfmg:crude_oil_fluid_bucket'
+        ]
+    )
 
     //修改魔力池配方
     event.remove({ output: 'botania:mana_pool' })
@@ -57,12 +73,15 @@ ServerEvents.recipes(event => {
 
     //魔钢-奥术源质兑换
     event.recipes.botania.mana_infusion('4x irons_spellbooks:arcane_essence', 'botania:manasteel_ingot', 1000, 'botania:alchemy_catalyst')
-    //刷怪蛋复制：遗忆守卫，瞻远者，宝箱怪，潜影贝，凋零骷髅
+    //变色龙蛋生产
+    event.recipes.botania.mana_infusion('cold_sweat:chameleon_spawn_egg', 'botania:mutated_seeds', 100000, 'botania:creative_pool')
+    //刷怪蛋复制：遗忆守卫，瞻远者，宝箱怪，潜影贝，凋零骷髅，变色龙
     event.recipes.botania.mana_infusion('2x undergarden:forgotten_guardian_spawn_egg', 'undergarden:forgotten_guardian_spawn_egg', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x alexsmobs:spawn_egg_farseer', 'alexsmobs:spawn_egg_farseer', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x artifacts:mimic_spawn_egg', 'artifacts:mimic_spawn_egg', 25000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x minecraft:shulker_spawn_egg', 'minecraft:shulker_spawn_egg', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x minecraft:wither_skeleton_spawn_egg', 'minecraft:wither_skeleton_spawn_egg', 25000,'botania:conjuration_catalyst')
+    event.recipes.botania.mana_infusion('2x cold_sweat:chameleon_spawn_egg', 'cold_sweat:chameleon_spawn_egg', 25000,'botania:conjuration_catalyst')
     //遗忆锭转化钻石1:2
     event.recipes.botania.mana_infusion('2x minecraft:diamond', 'undergarden:forgotten_ingot', 1000,'botania:alchemy_catalyst')
     //龙皮复制
@@ -199,7 +218,7 @@ ServerEvents.recipes(event => {
             'alexsmobs:void_worm_effigy',
             'minecraft:end_crystal',
             'botania:corporea_index',
-            'createchromaticreturn:antiplite_ingot'
+            'botania:blacker_lotus'
         ]
     )
 
@@ -267,7 +286,7 @@ ServerEvents.recipes(event => {
             'minecraft:budding_amethyst',
             'bloodmagic:lightritualstone',
             'alexsmobs:transmutation_table',
-            'bosses_of_mass_destruction:mob_ward'
+            'botania:blacker_lotus'
         ], 
         500000
     )

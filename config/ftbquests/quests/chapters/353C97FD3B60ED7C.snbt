@@ -16,6 +16,8 @@
 			]
 			icon: "bloodmagic:dungeon_emitter"
 			id: "6D3D887E93176D55"
+			shape: "pentagon"
+			size: 1.2d
 			subtitle: "但你现在可以扭曲规则。"
 			tasks: [{
 				id: "65EB753A88E8AB99"
@@ -42,7 +44,7 @@
 				type: "item"
 			}]
 			title: "至高网络节点"
-			x: -1.5d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
@@ -61,7 +63,7 @@
 			}]
 			title: "无尽炼金"
 			x: 0.0d
-			y: 1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6D3D887E93176D55"]
@@ -100,7 +102,7 @@
 				}
 			]
 			title: "更多意志"
-			x: 1.5d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -110,6 +112,8 @@
 				"在这里，我们将提供魔法的方式，当然你也可以工业合成后复制，不是吗？"
 			]
 			id: "6A3A54A26F2AC451"
+			shape: "hexagon"
+			size: 1.2d
 			subtitle: "有别于工业的合成方式"
 			tasks: [{
 				id: "775EFF19B1E0D3AA"
@@ -117,7 +121,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -1.5d
+			y: -2.0d
 		}
 	]
 	subtitle: ["The Spells of Finale"]

@@ -26,7 +26,13 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'bloodmagic',output:'bloodmagic:masterritualstone'},
     'minecraft:obsidian', 'tfmg:steel_casing' )
 
-    
+    //磁铁最终升级
+    event.smithing(
+        'create_new_age:netherite_magnet',
+        'create_new_age:fluxuated_magnetite',
+        'minecraft:netherite_ingot'
+    )
+
     //删除基岩配方
     event.remove({id:'bloodmagic:array/day'})
     event.remove({id:'bloodmagic:array/night'})
@@ -545,6 +551,34 @@ ServerEvents.recipes(event => {
         },
         "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
     })
+    //磁铁升级（红石-铁金）
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'kubejs:gold_silver_mix'
+        },
+        "baseinput": {
+            "item": 'create_new_age:redstone_magnet'
+        },
+        "output": {
+            "item": 'create_new_age:layered_magnet'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/watersigil.png"
+    })
+    //龙蛋催化
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'botania:black_lotus'
+        },
+        "baseinput": {
+            "item": 'minecraft:dragon_egg'
+        },
+        "output": {
+            "item": 'minecraft:dragon_head'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/airsigil.png"
+    })
 
     //灵魂锻炉配方修改
     //创造储存升级
@@ -591,4 +625,83 @@ ServerEvents.recipes(event => {
             "item": 'minecraft:wither_skeleton_spawn_egg'
         }
     })
+
+    //炼金反应炉配方修改
+    //磁铁系列升级（无-红石，铁金-钻）
+    event.custom({
+        "type": "bloodmagic:arc",
+        //可能存在的追加输出（可以不写）
+        "addedoutput": [
+            {
+            "type": {
+                "item": 'minecraft:redstone'
+            },
+            "chance": 0.5,
+            "mainchance": 0.0
+            }
+        ],
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'create_new_age:magnetite_block'
+        },
+        //输入液体（可以不写）
+        "inputFluid": {
+            "amount": 1000,
+            "fluid": 'immersiveengineering:redstone_acid'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 1,//输出数量（可以不写）
+            "item": 'create_new_age:redstone_magnet'
+        },
+        //输出液体（可以不写）
+        "outputFluid": {
+            "amount": 500,
+            "fluid": 'minecraft:water'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/hydrate'
+        }
+    })
+    event.custom({
+        "type": "bloodmagic:arc",
+        //可能存在的追加输出（可以不写）
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'create_new_age:layered_magnet'
+        },
+        //输入液体（可以不写）
+        "inputFluid": {
+            "amount": 1000,
+            "fluid": 'tfmg:kerosene'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 1,//输出数量（可以不写）
+            "item": 'create_new_age:fluxuated_magnetite'
+        },
+        //输出液体（可以不写）
+        "outputFluid": {
+            "amount": 100,
+            "fluid": 'immersiveengineering:creosote'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/hydrate'
+        }
+    })
+
 })

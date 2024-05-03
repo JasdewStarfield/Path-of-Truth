@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: ["通过这个工程块，你可以开始构建一些真正意义上的重型机器了）"]
 			id: "143E6A57D69BAE65"
 			shape: "gear"
 			size: 2.0d
@@ -295,6 +296,7 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
+			description: ["重油还可以进一步分解——然后获得你需要的一些特定资源）"]
 			id: "107639F1A8166B9C"
 			shape: "diamond"
 			subtitle: "分，还可以分"
@@ -331,6 +333,7 @@
 				"你是否苦于自己的磁铁磁感应强度太低，发电效率不行？"
 				"现在你可以通过煤油升级自己的磁铁！"
 				"虽然需要一点小小的魔法手段……"
+				"*注：这似乎不会直接显示在jei里，所以最好去查询磁铁的配方（"
 			]
 			id: "05EF035C814ADE9B"
 			shape: "diamond"
@@ -385,7 +388,7 @@
 			]
 			description: [
 				"我们其实不提倡这种不人道的行为，但是不得不说凝固汽油在MC里只适合干这个（？"
-				"本着和谐身心的前提，凝固汽油桶现在可以用于一次生产大量TNT——方法是和精灵进行交易）"
+				"注意：真的有凝固汽油弹，但是不便宜"
 			]
 			id: "46A5743F6DC8054D"
 			shape: "diamond"
@@ -429,7 +432,7 @@
 			]
 			description: [
 				"液态沥青冷却也是唯一产生沥青块的方式）"
-				"注意收集，因为某些魔法配方需要这种黏黏糊糊的液体固化后的产物）"
+				"不过这玩意目前只能拿来铺路……"
 			]
 			id: "22CB2BBE72C04014"
 			shape: "diamond"
@@ -666,6 +669,125 @@
 			}]
 			x: 12.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["05EF035C814ADE9B"]
+			description: [
+				"在这里，你需要通过炼金手段升级自己的工业磁铁（？"
+				"看起来似乎没什么问题，实际上应该也没什么问题"
+				"（笑死）"
+			]
+			id: "55EE9E5A85FD12B2"
+			shape: "square"
+			subtitle: "来点磁铁炼金"
+			tasks: [
+				{
+					id: "2700F5288AD2B560"
+					item: "create_new_age:redstone_magnet"
+					type: "item"
+				}
+				{
+					id: "5E8F50B2CC9F685B"
+					item: "create_new_age:layered_magnet"
+					type: "item"
+				}
+				{
+					id: "6904AAF7119B4EA2"
+					item: "create_new_age:fluxuated_magnetite"
+					type: "item"
+				}
+				{
+					id: "126C9909B8C61F51"
+					item: "create_new_age:netherite_magnet"
+					type: "item"
+				}
+			]
+			title: "升级你的磁铁"
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["46A5743F6DC8054D"]
+			description: [
+				"朋友，你要干什么？"
+				"带我一个（不是"
+				"这个模组为什么有这些东西啊（瘫"
+			]
+			id: "31A0E8AA7E6964CC"
+			rewards: [{
+				id: "57C3B604BF1DB28D"
+				item: "tfmg:thermite_grenade"
+				type: "item"
+			}]
+			shape: "square"
+			subtitle: "WTF"
+			tasks: [{
+				id: "09C5A58BB68F17D3"
+				item: "tfmg:napalm_bomb"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2718164469D544DF"]
+			description: [
+				"确实是燃料没错，呃……就是燃料不太容易产出。"
+				"注意：液化石油气也有独有的引擎，可以用来产生应力）"
+			]
+			id: "7FB5CC590808D9EA"
+			shape: "square"
+			subtitle: "现代化引擎"
+			tasks: [
+				{
+					id: "4211A7F395B64564"
+					item: "tfmg:gasoline_engine"
+					type: "item"
+				}
+				{
+					id: "76838053DCC5CD1A"
+					item: "tfmg:gasoline_engine_back"
+					type: "item"
+				}
+			]
+			title: "更强大的引擎"
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["443ED09E810FE23D"]
+			description: [
+				"柴油机需要传动杆才能提供应力，所以请注意结构性差异！"
+				"你可以通过扩充件输入润滑油之类的来提升效率）"
+			]
+			id: "79DBFA990528F827"
+			shape: "square"
+			subtitle: "传统农具"
+			tasks: [
+				{
+					id: "494840B5C69ACD08"
+					item: "tfmg:diesel_engine"
+					type: "item"
+				}
+				{
+					id: "0C6D3D40CF5C6131"
+					item: "tfmg:diesel_engine_expansion"
+					type: "item"
+				}
+				{
+					id: "24194990C01FF1C1"
+					item: "railways:smokestack_diesel"
+					type: "item"
+				}
+				{
+					id: "515B92DF9C2B001D"
+					item: "railways:smokestack_oilburner"
+					type: "item"
+				}
+			]
+			title: "可升级引擎"
+			x: 5.0d
+			y: 4.0d
 		}
 	]
 	subtitle: ["Petrochemical Engineering"]

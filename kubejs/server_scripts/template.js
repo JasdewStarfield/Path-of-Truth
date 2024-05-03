@@ -163,5 +163,48 @@ event.custom({
         "item": "bloodmagic:throwing_dagger_syringe"
     }
 })
+//抽象炼金台
+event.custom({
+    "type": "bloodmagic:arc",
+    //可能存在的追加输出（可以不写）
+    "addedoutput": [
+        {
+        "type": {
+            "item": "minecraft:clay_ball"
+        },
+        "chance": 0.5,
+        "mainchance": 0.0
+        }
+    ],
+    //消耗配方（？）
+    "consumeingredient": false,
+    //输入材料
+    "input": {
+        "tag": "forge:sand"
+    },
+    //输入液体（可以不写）
+    "inputFluid": {
+        "amount": 200,
+        "fluid": "minecraft:water"
+    },
+    //输入数量（大概）
+    "inputsize": 1,
+    //主要产物输出几率
+    "mainoutputchance": 0.0,
+    //输出产物内容
+    "output": {
+        "count": 3,//输出数量（可以不写）
+        "item": "minecraft:clay_ball"
+    },
+    //输出液体（可以不写）
+    "outputFluid": {
+        "amount": 50,
+        "fluid": "minecraft:lava"
+    },
+    //使用工具（必须是血魔法原有工具）
+    "tool": {
+        "tag": "bloodmagic:arc/hydrate"
+    }
+})
 
 */
