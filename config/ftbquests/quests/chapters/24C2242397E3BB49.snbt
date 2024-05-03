@@ -10,8 +10,8 @@
 	quests: [
 		{
 			dependencies: [
-				"6A3A54A26F2AC451"
-				"3FB7813E98CDF182"
+				"6D3D887E93176D55"
+				"0D0BEC03C1B26CA3"
 			]
 			id: "6077CDDF1D3A011E"
 			subtitle: "终末光剑"

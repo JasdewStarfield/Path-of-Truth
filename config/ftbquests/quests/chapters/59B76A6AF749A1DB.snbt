@@ -10,6 +10,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["504E6502A789DABF"]
 			description: ["所以你现在不得不依赖巨大的动力发电装置）"]
 			icon: "irons_spellbooks:lightning_bottle"
 			id: "01534DC5812DBA15"
@@ -570,6 +571,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["1E0E5E47E1264279"]
 			description: [
 				"其实就是压制后的碳粉（？"
 				"唯一的作用就是烧制石墨锭）"
@@ -582,7 +584,7 @@
 				type: "item"
 			}]
 			x: 9.0d
-			y: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -744,6 +746,7 @@
 			y: 0.0d
 		}
 		{
+			dependencies: ["2E4B9CF9789B1AF1"]
 			description: [
 				"由于这张图不能合成，所以你需要去找工程师村民进行一些不太和谐的行为……"
 				"比如在他们面前翻箱倒柜（"
@@ -764,8 +767,8 @@
 				type: "item"
 			}]
 			title: "我电极呢？"
-			x: 7.5d
-			y: 2.0d
+			x: 7.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -842,6 +845,7 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["0E5C63B3D4891362"]
 			description: [
 				"鉴于这个东西只能在深暗的遗忆守卫身上掉落，我们把它放得很靠后）"
 				"但这也意味着，如果你不去冒险，那么你是没有办法获得这种强大的材料来推进工业的）"

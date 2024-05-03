@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["5FB9514C6DE7AD58"]
 			description: ["通过这个工程块，你可以开始构建一些真正意义上的重型机器了）"]
 			id: "143E6A57D69BAE65"
 			shape: "gear"

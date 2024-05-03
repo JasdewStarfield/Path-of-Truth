@@ -269,7 +269,7 @@ ServerEvents.recipes(event => {
             'botania:terrasteel_block',
             'immersiveengineering:storage_steel',
             'botania:dandelifeon',
-            'createchromaticreturn:chromatic_compound',
+            'immersiveengineering:storage_electrum',
             'minecraft:conduit',
             'irons_spellbooks:mana_upgrade_orb',
             'blue_skies:charoite_block'

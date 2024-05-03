@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["242C57AF7F6116E4"]
 			description: [
 				"现在，你应该要准备炼钢了，但炼钢显然需要炉子，而炉子显然需要机械。"
 				"土高炉？土法炼钢？不存在的）"
@@ -209,7 +210,10 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["7A7C0A48248FA32B"]
+			dependencies: [
+				"7A7C0A48248FA32B"
+				"176ADC50E594B161"
+			]
 			icon: "immersiveengineering:workbench"
 			id: "2E4B9CF9789B1AF1"
 			subtitle: "手搓零件！"

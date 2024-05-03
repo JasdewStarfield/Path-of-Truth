@@ -168,7 +168,7 @@
 		}
 		{
 			dependencies: ["0E5C63B3D4891362"]
-			description: ["它可以用来合成一些有趣的小玩意，也许你可以攒一点？"]
+			description: ["它可以用来砸一些有趣的小玩意，也许你可以攒一点？"]
 			id: "4D18A21D81997FAF"
 			subtitle: "喔，碍事的东西"
 			tasks: [{
