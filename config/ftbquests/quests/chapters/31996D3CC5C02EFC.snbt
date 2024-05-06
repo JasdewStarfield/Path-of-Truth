@@ -395,6 +395,24 @@
 			x: 3.0d
 			y: 3.0d
 		}
+		{
+			dependencies: ["7E592EF6A0A80611"]
+			description: [
+				"可能你会发现，远古骑士的掉率还是太低了，但是又需要很多的灰烬源质来生产烈焰蛋糕——"
+				"既然你付不起打架的钱，那还是献血罢（确信"
+			]
+			id: "779DCD928E061AC2"
+			shape: "square"
+			subtitle: "需求量过大"
+			tasks: [{
+				id: "1F1C37DC247DA7E3"
+				item: "irons_spellbooks:cinder_essence"
+				type: "item"
+			}]
+			title: "更多源质"
+			x: 0.0d
+			y: 6.0d
+		}
 	]
 	subtitle: ["It's Alive!"]
 	title: "生命炼成"

@@ -409,6 +409,20 @@ ServerEvents.recipes(event => {
         },
         "upgradeLevel": 2
     })
+    //灰烬源质转化
+    event.custom({
+        "type": "bloodmagic:altar",
+        "altarSyphon": 2000,
+        "consumptionRate": 50,
+        "drainRate": 0,
+        "input": {
+            "item": 'irons_spellbooks:arcane_essence'
+        },
+        "output": {
+            "item": 'irons_spellbooks:cinder_essence'
+        },
+        "upgradeLevel": 4
+    })
 
     //炼金矩阵配方修改
     //点铁成金
