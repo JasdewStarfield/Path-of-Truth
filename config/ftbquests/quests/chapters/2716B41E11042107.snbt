@@ -728,7 +728,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: -4.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["2718164469D544DF"]
@@ -753,7 +753,7 @@
 			]
 			title: "更强大的引擎"
 			x: 5.0d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["443ED09E810FE23D"]
@@ -789,6 +789,34 @@
 			title: "可升级引擎"
 			x: 5.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["2718164469D544DF"]
+			id: "2B8294A4CBF6D664"
+			shape: "circle"
+			tasks: [{
+				id: "06AFE6597408DE5C"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"2B8294A4CBF6D664"
+				"46A5743F6DC8054D"
+			]
+			id: "7C566E8D9F54FEF9"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "1A8DCD9556C0A248"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -3.0d
 		}
 	]
 	subtitle: ["Petrochemical Engineering"]

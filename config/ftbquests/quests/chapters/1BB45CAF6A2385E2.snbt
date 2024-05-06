@@ -23,75 +23,102 @@
 			}]
 			title: "机械神教，机械飞升"
 			x: 0.0d
-			y: 0.0d
+			y: 1.7999999999999998d
 		}
 		{
-			dependencies: ["0D0BEC03C1B26CA3"]
+			dependencies: [
+				"1A0E95EE2F0D2D5B"
+				"730D5088B9FDC593"
+			]
 			id: "415EF5AEED3A6952"
+			subtitle: "无限能量=无限物质"
 			tasks: [{
 				id: "521D50C8A517514F"
 				item: "create:creative_crate"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: 3.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["415EF5AEED3A6952"]
+			dependencies: [
+				"1A0E95EE2F0D2D5B"
+				"730D5088B9FDC593"
+			]
 			id: "34400C31E3703498"
+			subtitle: "无限能量=无限物质，流体也算"
 			tasks: [{
 				id: "60B96C0FD52B7D5A"
 				item: "create:creative_fluid_tank"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 0.0d
+			x: -3.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["1A0E95EE2F0D2D5B"]
 			id: "730D5088B9FDC593"
+			subtitle: "无限电力=无限应力"
 			tasks: [{
 				id: "7D88B3C1489D2DD0"
 				item: "create:creative_motor"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 0.0d
+			x: 0.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["0D0BEC03C1B26CA3"]
+			dependencies: ["6ED2B7EF9909EB05"]
 			id: "1A0E95EE2F0D2D5B"
+			subtitle: "这是真正的无限"
 			tasks: [{
 				id: "757F7D1039E21F46"
 				item: "immersiveengineering:capacitor_creative"
 				type: "item"
 			}]
 			x: 0.0d
-			y: 2.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["34400C31E3703498"]
+			dependencies: ["6ED2B7EF9909EB05"]
 			id: "6936D38B28D26AF0"
 			tasks: [{
 				id: "7BB018EE90A8A873"
 				item: "create:creative_blaze_cake"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 1.5d
+			y: -1.0d
 		}
 		{
-			dependencies: ["730D5088B9FDC593"]
+			dependencies: ["0D0BEC03C1B26CA3"]
 			id: "6ED2B7EF9909EB05"
-			shape: "hexagon"
-			size: 1.2d
+			shape: "gear"
+			size: 2.0d
 			tasks: [{
 				id: "5F94339B12159527"
 				item: "createchromaticreturn:chromatic_compound"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -2.0d
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"415EF5AEED3A6952"
+				"34400C31E3703498"
+				"730D5088B9FDC593"
+			]
+			description: ["悠着点玩，别把你家弄没了"]
+			id: "316F43E90F5E3CA9"
+			subtitle: "操纵世界，只需要动动手指"
+			tasks: [{
+				id: "258B3B33F318C788"
+				item: "create:handheld_worldshaper"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
 		}
 	]
 	subtitle: ["The Mastery of Industry"]

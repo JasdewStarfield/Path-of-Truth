@@ -1,0 +1,112 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/coal_coke"
+    },
+    {
+      "tag": "forge:dusts/coal_coke"
+    },
+    {
+      "tag": "forge:dusts/coal_coke"
+    },
+    {
+      "tag": "forge:dusts/coal_coke"
+    },
+    {
+      "tag": "forge:dusts/coal_coke"
+    },
+    {
+      "tag": "forge:dusts/coal_coke"
+    },
+    {
+      "tag": "forge:dusts/coal_coke"
+    },
+    {
+      "tag": "forge:dusts/coal_coke"
+    },
+    {
+      "tag": "forge:dusts/coal_coke"
+    },
+    {
+      "tag": "forge:dusts/coal_coke"
+    },
+    {
+      "tag": "forge:dusts/coal_coke"
+    },
+    {
+      "tag": "forge:dusts/coal_coke"
+    },
+    {
+      "tag": "forge:dusts/coal_coke"
+    },
+    {
+      "tag": "forge:dusts/coal_coke"
+    },
+    {
+      "tag": "forge:dusts/coal_coke"
+    },
+    {
+      "tag": "forge:dusts/coal_coke"
+    },
+    {
+      "item": "minecraft:polished_blackstone"
+    },
+    {
+      "item": "minecraft:polished_blackstone"
+    },
+    {
+      "item": "minecraft:polished_blackstone"
+    },
+    {
+      "item": "minecraft:polished_blackstone"
+    },
+    {
+      "item": "minecraft:polished_blackstone"
+    },
+    {
+      "item": "minecraft:polished_blackstone"
+    },
+    {
+      "item": "minecraft:polished_blackstone"
+    },
+    {
+      "item": "minecraft:polished_blackstone"
+    },
+     {
+      "item": "minecraft:polished_blackstone"
+    },
+     {
+      "item": "minecraft:polished_blackstone"
+    },
+    {
+      "item": "minecraft:polished_blackstone"
+    },
+    {
+      "item": "minecraft:polished_blackstone"
+    },
+    {
+      "item": "minecraft:polished_blackstone"
+    },
+    {
+      "item": "minecraft:polished_blackstone"
+    },
+    {
+      "item": "minecraft:polished_blackstone"
+    },
+    {
+      "item": "minecraft:polished_blackstone"
+    },
+    {
+      "fluid": "minecraft:lava",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createchromaticreturn:shadow_essence",
+      "amount": 25
+    }
+  ],
+  "heatRequirement": "superheated"
+}

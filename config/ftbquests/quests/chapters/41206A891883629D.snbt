@@ -389,16 +389,26 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["69691E179156C1AB"]
+			dependencies: [
+				"69691E179156C1AB"
+				"3A4A7FDA4D752774"
+				"4989FE4EDCFFB309"
+				"39F03860B4042EB0"
+				"38F41C7A2075E5CC"
+				"2739985E562929B2"
+				"32EE8784F8B9200F"
+			]
 			id: "29D490BEC5BBC8E1"
+			shape: "gear"
+			size: 2.0d
 			subtitle: "她真可爱"
 			tasks: [{
 				id: "0149599B05074F3C"
 				item: "kubejs:buran"
 				type: "item"
 			}]
-			x: 30.0d
-			y: 0.0d
+			x: 16.0d
+			y: -7.0d
 		}
 	]
 	subtitle: ["Landmarks"]

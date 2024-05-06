@@ -1,0 +1,33 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "XAYAX",
+    "AAPAA",
+    "APSPA",
+    "AAPAA",
+    "XAIAX"
+  ],
+  "key": {
+    "A": {
+      "item": "kubejs:fluid_engineering"
+    },
+    "P": {
+      "item": "createchromaticreturn:refined_mechanism"
+    },
+    "X": {
+      "item": "createchromaticreturn:multiplite_ingot"
+    },
+    "S": {
+      "item": "tfmg:steel_fluid_tank"
+    },
+    "Y": {
+      "item": "create:creative_motor"
+    },
+    "I": {
+      "item": "immersiveengineering:capacitor_creative"
+    }
+  },
+  "result": {
+    "item": "create:creative_fluid_tank"
+  }
+}
