@@ -46,6 +46,16 @@ ServerEvents.recipes(event => {
             'tfmg:crude_oil_fluid_bucket'
         ]
     )
+    //合成注能丝触书籍
+    event.remove({id:'createchromaticreturn:silkstrum_book_recipe'})
+    event.recipes.botania.petal_apothecary('createchromaticreturn:silkstrum_book', 
+        [
+            'createchromaticreturn:silkstrum',
+            'createchromaticreturn:refined_radiance',
+            'bosses_of_mass_destruction:levitation_block',
+            'irons_spellbooks:ruined_book'
+        ]
+    )
 
     //修改魔力池配方
     event.remove({ output: 'botania:mana_pool' })
@@ -160,6 +170,10 @@ ServerEvents.recipes(event => {
     'minecraft:iron_ingot', 'irons_spellbooks:arcane_ingot' )
     event.replaceInput({mod:'undergarden',output:'undergarden:catalyst'},
     'minecraft:gold_ingot', 'create:brass_ingot' )
+
+    //飞腾台座配方替换
+    event.replaceInput({mod:'bosses_of_mass_destruction',output:'bosses_of_mass_destruction:levitation_block'},
+    'minecraft:gold_ingot', 'botania:corporea_spark_creative' )
 
     //风暴透镜配方
     event.shaped(Item.of('botania:lens_storm',1),

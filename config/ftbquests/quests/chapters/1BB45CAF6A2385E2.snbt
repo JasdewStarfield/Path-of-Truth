@@ -30,21 +30,6 @@
 				"1A0E95EE2F0D2D5B"
 				"730D5088B9FDC593"
 			]
-			id: "415EF5AEED3A6952"
-			subtitle: "无限能量=无限物质"
-			tasks: [{
-				id: "521D50C8A517514F"
-				item: "create:creative_crate"
-				type: "item"
-			}]
-			x: 3.0d
-			y: -6.0d
-		}
-		{
-			dependencies: [
-				"1A0E95EE2F0D2D5B"
-				"730D5088B9FDC593"
-			]
 			id: "34400C31E3703498"
 			subtitle: "无限能量=无限物质，流体也算"
 			tasks: [{
@@ -52,8 +37,8 @@
 				item: "create:creative_fluid_tank"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -6.0d
+			x: -1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1A0E95EE2F0D2D5B"]
@@ -64,8 +49,8 @@
 				item: "create:creative_motor"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -6.0d
+			x: 1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6ED2B7EF9909EB05"]
@@ -104,21 +89,75 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"415EF5AEED3A6952"
-				"34400C31E3703498"
-				"730D5088B9FDC593"
-			]
-			description: ["悠着点玩，别把你家弄没了"]
-			id: "316F43E90F5E3CA9"
-			subtitle: "操纵世界，只需要动动手指"
+			dependencies: ["34400C31E3703498"]
+			id: "6D54B104118A0FA7"
 			tasks: [{
-				id: "258B3B33F318C788"
-				item: "create:handheld_worldshaper"
+				id: "7CFCDA07E478D590"
+				item: "createchromaticreturn:shadow_steel"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3CA3B66481E3AFF9"]
+			id: "0D2EEDEACB542342"
+			tasks: [{
+				id: "23E465701927DCD2"
+				item: "createchromaticreturn:antiplite_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6D54B104118A0FA7"]
+			id: "3CA3B66481E3AFF9"
+			tasks: [{
+				id: "04168B13D9B9D351"
+				item: "createchromaticreturn:industrium_ingot"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["3CA3B66481E3AFF9"]
+			id: "6AFD6EB681F51557"
+			tasks: [{
+				id: "536798D2D0A6709C"
+				item: "createchromaticreturn:industrium_book"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0D2EEDEACB542342"]
+			id: "5B74E17C06C14B35"
+			tasks: [{
+				id: "572B875454198CB8"
+				item: "createchromaticreturn:durasteel_book"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6AFD6EB681F51557"
+				"5B74E17C06C14B35"
+				"0D2EEDEACB542342"
+				"3CA3B66481E3AFF9"
+			]
+			id: "1E235F6753976501"
+			tasks: [{
+				id: "2F6629F5CBFC7050"
+				item: "createchromaticreturn:multiplite_ingot"
 				type: "item"
 			}]
 			x: 0.0d
-			y: -8.0d
+			y: 3.5d
 		}
 	]
 	subtitle: ["The Mastery of Industry"]

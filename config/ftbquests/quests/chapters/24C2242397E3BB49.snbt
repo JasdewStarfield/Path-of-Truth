@@ -12,8 +12,11 @@
 			dependencies: [
 				"6D3D887E93176D55"
 				"0D0BEC03C1B26CA3"
+				"59C668DE4E479AD9"
+				"29548CCE01753D49"
 			]
 			id: "6077CDDF1D3A011E"
+			shape: "octagon"
 			subtitle: "终末光剑"
 			tasks: [{
 				id: "417832F588AA0F03"
@@ -117,6 +120,8 @@
 		{
 			dependencies: ["40DDCA5F57C2C680"]
 			id: "6D9B7D2CD86693AF"
+			shape: "hexagon"
+			size: 2.0d
 			subtitle: "无限。"
 			tasks: [{
 				id: "7FD89303532E9EA7"
@@ -126,6 +131,38 @@
 			title: "神的力量"
 			x: 0.0d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1E235F6753976501"
+				"789E29CC3E41839C"
+			]
+			id: "59C668DE4E479AD9"
+			subtitle: "走出最后一段路。"
+			tasks: [{
+				id: "2622B81FA3F7DFD7"
+				item: "createchromaticreturn:multiplite_ingot"
+				type: "item"
+			}]
+			title: "真理之锭"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1E235F6753976501"
+				"789E29CC3E41839C"
+			]
+			id: "29548CCE01753D49"
+			subtitle: "炼金是这样的。"
+			tasks: [{
+				id: "39C40EBA974C1DB1"
+				item: "createchromaticreturn:antiplite_ingot"
+				type: "item"
+			}]
+			title: "翻转真相"
+			x: 2.0d
+			y: 2.0d
 		}
 	]
 	subtitle: ["The Truth Lies Here"]

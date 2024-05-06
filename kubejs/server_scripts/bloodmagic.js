@@ -537,6 +537,21 @@ ServerEvents.recipes(event => {
         },
         "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
     })
+    //终极锭炼金翻转
+    event.remove({id:'createchromaticreturn:antiplite_recipe'})
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'create_new_age:netherite_magnet'
+        },
+        "baseinput": {
+            "item": 'createchromaticreturn:multiplite_ingot'
+        },
+        "output": {
+            "item": 'createchromaticreturn:antiplite_ingot'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
     //磁铁升级（红石-铁金）
     event.custom({
         "type": "bloodmagic:array",
