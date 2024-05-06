@@ -2,110 +2,20 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "tag": "forge:dusts/coal_coke"
+      "item": "bosses_of_mass_destruction:obsidian_heart"
     },
     {
-      "tag": "forge:dusts/coal_coke"
+      "item": "bosses_of_mass_destruction:void_thorn"
     },
     {
-      "tag": "forge:dusts/coal_coke"
-    },
-    {
-      "tag": "forge:dusts/coal_coke"
-    },
-    {
-      "tag": "forge:dusts/coal_coke"
-    },
-    {
-      "tag": "forge:dusts/coal_coke"
-    },
-    {
-      "tag": "forge:dusts/coal_coke"
-    },
-    {
-      "tag": "forge:dusts/coal_coke"
-    },
-    {
-      "tag": "forge:dusts/coal_coke"
-    },
-    {
-      "tag": "forge:dusts/coal_coke"
-    },
-    {
-      "tag": "forge:dusts/coal_coke"
-    },
-    {
-      "tag": "forge:dusts/coal_coke"
-    },
-    {
-      "tag": "forge:dusts/coal_coke"
-    },
-    {
-      "tag": "forge:dusts/coal_coke"
-    },
-    {
-      "tag": "forge:dusts/coal_coke"
-    },
-    {
-      "tag": "forge:dusts/coal_coke"
-    },
-    {
-      "item": "minecraft:polished_blackstone"
-    },
-    {
-      "item": "minecraft:polished_blackstone"
-    },
-    {
-      "item": "minecraft:polished_blackstone"
-    },
-    {
-      "item": "minecraft:polished_blackstone"
-    },
-    {
-      "item": "minecraft:polished_blackstone"
-    },
-    {
-      "item": "minecraft:polished_blackstone"
-    },
-    {
-      "item": "minecraft:polished_blackstone"
-    },
-    {
-      "item": "minecraft:polished_blackstone"
-    },
-     {
-      "item": "minecraft:polished_blackstone"
-    },
-     {
-      "item": "minecraft:polished_blackstone"
-    },
-    {
-      "item": "minecraft:polished_blackstone"
-    },
-    {
-      "item": "minecraft:polished_blackstone"
-    },
-    {
-      "item": "minecraft:polished_blackstone"
-    },
-    {
-      "item": "minecraft:polished_blackstone"
-    },
-    {
-      "item": "minecraft:polished_blackstone"
-    },
-    {
-      "item": "minecraft:polished_blackstone"
-    },
-    {
-      "fluid": "minecraft:lava",
-      "amount": 250
+      "fluid": "tfmg:heavy_oil",
+      "amount": 1000
     }
   ],
   "results": [
     {
       "fluid": "createchromaticreturn:shadow_essence",
-      "amount": 25
+      "amount": 1000
     }
   ],
   "heatRequirement": "superheated"

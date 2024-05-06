@@ -13,7 +13,7 @@
 			icon: "bloodmagic:dungeon_alternator"
 			id: "0D0BEC03C1B26CA3"
 			shape: "gear"
-			size: 1.2d
+			size: 2.0d
 			subtitle: "机械的终末是……无限。"
 			tasks: [{
 				id: "574D4B148744FE70"
@@ -23,73 +23,76 @@
 			}]
 			title: "机械神教，机械飞升"
 			x: 0.0d
-			y: 1.7999999999999998d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"1A0E95EE2F0D2D5B"
 				"730D5088B9FDC593"
+				"1E235F6753976501"
 			]
 			id: "34400C31E3703498"
-			subtitle: "无限能量=无限物质，流体也算"
+			subtitle: "无限能量=无限物质，但是只有流体"
 			tasks: [{
 				id: "60B96C0FD52B7D5A"
 				item: "create:creative_fluid_tank"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -3.0d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
-			dependencies: ["1A0E95EE2F0D2D5B"]
+			dependencies: ["0D2EEDEACB542342"]
 			id: "730D5088B9FDC593"
-			subtitle: "无限电力=无限应力"
+			subtitle: "绝对刚体=无限应力"
 			tasks: [{
 				id: "7D88B3C1489D2DD0"
 				item: "create:creative_motor"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -3.0d
+			x: 4.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["6ED2B7EF9909EB05"]
+			dependencies: ["3CA3B66481E3AFF9"]
 			id: "1A0E95EE2F0D2D5B"
-			subtitle: "这是真正的无限"
+			subtitle: "永动机械=无尽电力"
 			tasks: [{
 				id: "757F7D1039E21F46"
 				item: "immersiveengineering:capacitor_creative"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.0d
+			x: -4.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["6ED2B7EF9909EB05"]
 			id: "6936D38B28D26AF0"
+			subtitle: "给你的烈焰人来块士力架！"
 			tasks: [{
 				id: "7BB018EE90A8A873"
 				item: "create:creative_blaze_cake"
 				type: "item"
 			}]
 			x: 1.5d
-			y: -1.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
 			id: "6ED2B7EF9909EB05"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "工业提供了另一种异彩化合物的制作方式……"
 			tasks: [{
 				id: "5F94339B12159527"
 				item: "createchromaticreturn:chromatic_compound"
 				type: "item"
 			}]
 			x: 0.0d
-			y: -1.0d
+			y: -6.0d
 		}
 		{
-			dependencies: ["34400C31E3703498"]
+			dependencies: ["6ED2B7EF9909EB05"]
 			id: "6D54B104118A0FA7"
 			tasks: [{
 				id: "7CFCDA07E478D590"
@@ -97,14 +100,15 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -1.0d
+			y: -3.5d
 		}
 		{
-			dependencies: ["3CA3B66481E3AFF9"]
+			dependencies: ["6D54B104118A0FA7"]
 			id: "0D2EEDEACB542342"
+			subtitle: "由世上最硬的金属聚合而来"
 			tasks: [{
-				id: "23E465701927DCD2"
-				item: "createchromaticreturn:antiplite_ingot"
+				id: "12E64818FC7BF260"
+				item: "createchromaticreturn:durasteel_ingot"
 				type: "item"
 			}]
 			x: 1.5d
@@ -113,6 +117,7 @@
 		{
 			dependencies: ["6D54B104118A0FA7"]
 			id: "3CA3B66481E3AFF9"
+			subtitle: "由涌动着澎湃动力的工业机械组合而来"
 			tasks: [{
 				id: "04168B13D9B9D351"
 				item: "createchromaticreturn:industrium_ingot"
@@ -129,8 +134,8 @@
 				item: "createchromaticreturn:industrium_book"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 2.0d
+			x: -2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0D2EEDEACB542342"]
@@ -140,8 +145,8 @@
 				item: "createchromaticreturn:durasteel_book"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 2.0d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -151,13 +156,15 @@
 				"3CA3B66481E3AFF9"
 			]
 			id: "1E235F6753976501"
+			shape: "gear"
+			size: 2.0d
 			tasks: [{
 				id: "2F6629F5CBFC7050"
 				item: "createchromaticreturn:multiplite_ingot"
 				type: "item"
 			}]
 			x: 0.0d
-			y: 3.5d
+			y: 4.0d
 		}
 	]
 	subtitle: ["The Mastery of Industry"]

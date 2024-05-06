@@ -40,7 +40,7 @@
 			}]
 			title: "铜舟共济"
 			x: 3.0d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5F826044A3A07900"]
@@ -53,7 +53,7 @@
 			}]
 			title: "锡装革履"
 			x: 3.0d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6BC55C5CE417B194"]
