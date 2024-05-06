@@ -810,11 +810,13 @@
 			id: "7C566E8D9F54FEF9"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "难度++"
 			tasks: [{
 				id: "1A8DCD9556C0A248"
 				item: "minecraft:netherite_ingot"
 				type: "item"
 			}]
+			title: "另一种黑金"
 			x: 8.0d
 			y: -3.0d
 		}

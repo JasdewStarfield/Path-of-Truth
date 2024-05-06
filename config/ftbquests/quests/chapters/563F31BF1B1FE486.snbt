@@ -380,6 +380,7 @@
 				"0A2BE67F3E9F7225"
 			]
 			id: "697B1277B1C95490"
+			shape: "hexagon"
 			subtitle: "真相的通行证"
 			tasks: [{
 				id: "09891F03B5381DDB"
@@ -429,6 +430,7 @@
 				"547BE1E974BA2186"
 			]
 			id: "0D3C086EDB80E9AB"
+			shape: "octagon"
 			subtitle: "终局开端"
 			tasks: [{
 				id: "022297A7CFF38214"

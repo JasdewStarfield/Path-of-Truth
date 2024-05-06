@@ -22,7 +22,7 @@
 			}]
 			title: "砍瓜切菜"
 			x: 0.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6077CDDF1D3A011E"]
@@ -73,16 +73,11 @@
 			dependencies: ["5CD99468F17FD0AC"]
 			description: [
 				"在你贯穿世界后，万物都将加持与你。"
-				"恭喜你成功探究了这个世界——"
-				"现在，享受真理加持的快感吧。"
+				"你即将成功探究这个世界——"
+				"很近了，真的很近了。"
 			]
 			id: "40DDCA5F57C2C680"
-			rewards: [{
-				id: "2BE7FAEEEEF22E63"
-				item: "botania:infrangible_platform"
-				type: "item"
-			}]
-			subtitle: "现在，你就是神。"
+			subtitle: "集成式世界精华"
 			tasks: [
 				{
 					id: "331782C5E1FA0A6A"
@@ -116,8 +111,21 @@
 				}
 			]
 			title: "万物之理，集于一身"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["40DDCA5F57C2C680"]
+			id: "6D9B7D2CD86693AF"
+			subtitle: "无限。"
+			tasks: [{
+				id: "7FD89303532E9EA7"
+				item: "create:handheld_worldshaper"
+				type: "item"
+			}]
+			title: "神的力量"
 			x: 0.0d
-			y: 2.0d
+			y: 0.0d
 		}
 	]
 	subtitle: ["The Truth Lies Here"]

@@ -537,20 +537,6 @@ ServerEvents.recipes(event => {
         },
         "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
     })
-    //创造无限取出升级
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'botania:corporea_spark_creative'
-        },
-        "baseinput": {
-            "item": 'storagedrawers:creative_storage_upgrade'
-        },
-        "output": {
-            "item": 'storagedrawers:creative_vending_upgrade'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-    })
     //磁铁升级（红石-铁金）
     event.custom({
         "type": "bloodmagic:array",
@@ -623,6 +609,29 @@ ServerEvents.recipes(event => {
         "output": {
             "count": 1,//生成数量
             "item": 'minecraft:wither_skeleton_spawn_egg'
+        }
+    })
+    //丝绸锭合成
+    event.remove({id:'createchromaticreturn:silkstrum_recipe'})
+    event.custom({
+        "type": "bloodmagic:soulforge",
+        "drain": 4096.0,//单次吸收量
+        "input0": {
+            "item": 'createchromaticreturn:glowing_ingot'
+        },
+        "input1": {
+            "item": 'bloodmagic:activationcrystalcreative'
+        },
+        "input2": {
+            "item": 'bloodmagic:strong_tau'
+        },
+        "input3": {
+            "item": 'bloodmagic:lightritualstone'
+        },
+        "minimumDrain": 4096.0,//要求使用材料的最低容量
+        "output": {
+            "count": 1,//生成数量
+            "item": 'createchromaticreturn:silkstrum'
         }
     })
 

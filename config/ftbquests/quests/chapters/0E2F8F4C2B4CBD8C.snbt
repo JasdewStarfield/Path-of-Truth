@@ -181,7 +181,10 @@
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
-			description: ["获得所有植物魔法的遗物！"]
+			description: [
+				"获得所有植物魔法的遗物！"
+				"*请不要丢掉其中任何一种，否则你会发现自己无法通关——这些物品也是后续配方材料！"
+			]
 			icon: "botania:dice"
 			id: "2C1B7E18AC2064D4"
 			rewards: [
@@ -887,6 +890,8 @@
 				}
 				type: "item"
 			}]
+			shape: "rsquare"
+			size: 1.2d
 			subtitle: "这将是你面对的最终BOSS"
 			tasks: [
 				{

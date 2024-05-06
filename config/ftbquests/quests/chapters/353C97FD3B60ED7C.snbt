@@ -27,7 +27,7 @@
 			}]
 			title: "真正的魔法是规则……"
 			x: 0.0d
-			y: 0.0d
+			y: 2.4d
 		}
 		{
 			dependencies: ["6D3D887E93176D55"]
@@ -44,26 +44,23 @@
 				type: "item"
 			}]
 			title: "至高网络节点"
-			x: -2.0d
+			x: -1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["25B8A0AF0FDD432B"]
-			description: [
-				"通过创造模式的多媒体火花，你可以反转无尽存储的属性——变成无尽取出！"
-				"虽然相比于创造火花没有太大的提升，但是多媒体火花并不能作为硬件组件被用于插入或合成。比如，这也是创造板条箱和创造储罐的基础组件之一。"
-				"所以——做出来后记得多复制几个。"
-			]
+			description: ["通过击败两位特定的BOSS，你可以制作这个台座来体验创造飞行——以及作为后续合成的基本材料）"]
 			id: "3FB7813E98CDF182"
-			subtitle: "比起网络调用，自己拿还是更快一些）"
+			shape: "hexagon"
+			subtitle: "范围创造体验卡"
 			tasks: [{
 				id: "09047006CF3A5BE9"
-				item: "storagedrawers:creative_vending_upgrade"
+				item: "bosses_of_mass_destruction:levitation_block"
 				type: "item"
 			}]
-			title: "无尽炼金"
-			x: 0.0d
-			y: 2.0d
+			title: "魔法飞升"
+			x: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["6D3D887E93176D55"]
@@ -102,7 +99,7 @@
 				}
 			]
 			title: "更多意志"
-			x: 2.0d
+			x: 1.5d
 			y: 0.0d
 		}
 		{
@@ -113,15 +110,110 @@
 			]
 			id: "6A3A54A26F2AC451"
 			shape: "hexagon"
-			size: 1.2d
 			subtitle: "有别于工业的合成方式"
 			tasks: [{
 				id: "775EFF19B1E0D3AA"
 				item: "createchromaticreturn:chromatic_compound"
 				type: "item"
 			}]
+			x: 3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6A3A54A26F2AC451"
+				"3FB7813E98CDF182"
+			]
+			description: [
+				"现在，展现你的植物魔法造诣的时刻到了：你需要击杀六次盖亚守护者II来获取需要的资源。"
+				"……最好使用复制出来的遗物，因为一个人只能从骰子里分别获得六种遗物各一次。"
+				"如果你遗失了其中的某一个，那你就要求助于你的队友来完成这一部分了（"
+			]
+			id: "4BDC97C826097CDF"
+			shape: "octagon"
+			size: 1.2d
+			subtitle: "闪起来了"
+			tasks: [{
+				id: "5D064941C4447930"
+				item: "createchromaticreturn:glowing_ingot"
+				type: "item"
+			}]
+			title: "奥术辉光"
 			x: 0.0d
-			y: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4BDC97C826097CDF"]
+			description: ["通过血魔法的顶级手段润滑辉光锭，你可以获得一种丝滑的材料——用来进一步合成，或者制作某些终极工具的手柄。"]
+			id: "277C9F500C187658"
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "精准采集其实是丝绸之触"
+			tasks: [{
+				id: "4AD840A243F1AF3C"
+				item: "createchromaticreturn:silkstrum"
+				type: "item"
+			}]
+			title: "丝滑体验"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4BDC97C826097CDF"]
+			description: ["利用铁魔法的顶级材料进行合成，你可以将辉光锭转化为光芒更强的光辉石。"]
+			id: "32AD657E17E55325"
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "其实不会发光"
+			tasks: [{
+				id: "46005B3A34DA5328"
+				item: "createchromaticreturn:refined_radiance"
+				type: "item"
+			}]
+			title: "更亮，更强"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"32AD657E17E55325"
+				"277C9F500C187658"
+				"311DE2E8FF01C43E"
+			]
+			description: [
+				"你碰到它了，对吧。"
+				"固化的真理是很漂亮的——即使还不是完成品。"
+			]
+			id: "789E29CC3E41839C"
+			shape: "rsquare"
+			size: 1.5d
+			subtitle: "合成方式唯一"
+			tasks: [{
+				id: "4313F27BCBC9E38B"
+				item: "createchromaticreturn:multiplite_ingot"
+				type: "item"
+			}]
+			title: "真理的紫光"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"32AD657E17E55325"
+				"277C9F500C187658"
+			]
+			id: "311DE2E8FF01C43E"
+			shape: "gear"
+			size: 1.2d
+			subtitle: "最难搞的精准采集"
+			tasks: [{
+				id: "7385272BCA41153D"
+				item: "createchromaticreturn:silkstrum_book"
+				type: "item"
+			}]
+			title: "知识充能！"
+			x: 0.0d
+			y: -1.5d
 		}
 	]
 	subtitle: ["The Spells of Finale"]

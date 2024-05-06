@@ -305,6 +305,22 @@ ServerEvents.recipes(event => {
         500000
     )
 
+    //辉光锭合成
+    event.remove({id:'createchromaticreturn:glowing_ingot_recipe'})
+    event.recipes.botania.terra_plate('createchromaticreturn:glowing_ingot', 
+        [
+            'createchromaticreturn:chromatic_compound', 
+            'botania:thor_ring',
+            'botania:odin_ring',
+            'botania:loki_ring',
+            'bosses_of_mass_destruction:levitation_block',
+            'botania:infinite_fruit',
+            'botania:king_key',
+            'botania:flugel_eye'
+        ], 
+        500000
+    )
+
     //产能花系列配方修改
     //火红莲
     event.remove({ output: 'botania:endoflame' })
