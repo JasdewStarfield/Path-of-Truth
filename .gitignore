@@ -50,3 +50,4 @@ config/immediatelyfast.json
 config/modernfix-mixins.properties
 /config/spark
 hmclversion.cfg
+servers.dat
