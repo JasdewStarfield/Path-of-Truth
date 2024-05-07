@@ -51,3 +51,4 @@ config/modernfix-mixins.properties
 /config/spark
 hmclversion.cfg
 servers.dat
+servers.dat_old
