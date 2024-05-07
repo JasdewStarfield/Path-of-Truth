@@ -360,7 +360,7 @@ ServerEvents.recipes(event => {
         "consumptionRate": 50,
         "drainRate": 50,
         "input": {
-            "item": 'immersiveengineering:storage_steel'
+            "item": 'tfmg:steel_block'
         },
         "output": {
             "item": "bloodmagic:masterbloodorb"

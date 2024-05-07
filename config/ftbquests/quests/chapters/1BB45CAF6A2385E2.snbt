@@ -93,7 +93,9 @@
 		}
 		{
 			dependencies: ["6ED2B7EF9909EB05"]
+			description: ["也是超级装备的基础材料"]
 			id: "6D54B104118A0FA7"
+			subtitle: "工业之暗"
 			tasks: [{
 				id: "7CFCDA07E478D590"
 				item: "createchromaticreturn:shadow_steel"
@@ -111,6 +113,7 @@
 				item: "createchromaticreturn:durasteel_ingot"
 				type: "item"
 			}]
+			title: "硬钢锭"
 			x: 1.5d
 			y: 0.5d
 		}
@@ -123,28 +126,35 @@
 				item: "createchromaticreturn:industrium_ingot"
 				type: "item"
 			}]
+			title: "工业锭"
 			x: -1.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["3CA3B66481E3AFF9"]
+			description: ["让你的暗影钢工具可以成为扳手！"]
 			id: "6AFD6EB681F51557"
+			subtitle: "扳手强化"
 			tasks: [{
 				id: "536798D2D0A6709C"
 				item: "createchromaticreturn:industrium_book"
 				type: "item"
 			}]
+			title: "工业结晶"
 			x: -2.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["0D2EEDEACB542342"]
+			description: ["让你的工具永恒存在！"]
 			id: "5B74E17C06C14B35"
+			subtitle: "永恒强化"
 			tasks: [{
 				id: "572B875454198CB8"
 				item: "createchromaticreturn:durasteel_book"
 				type: "item"
 			}]
+			title: "不破之力"
 			x: 2.0d
 			y: 4.0d
 		}
@@ -155,14 +165,17 @@
 				"0D2EEDEACB542342"
 				"3CA3B66481E3AFF9"
 			]
+			description: ["当你的魔法与工业都走到极致，你将获得这一创造的入门通行证。"]
 			id: "1E235F6753976501"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "代表创造的紫色光芒"
 			tasks: [{
 				id: "2F6629F5CBFC7050"
 				item: "createchromaticreturn:multiplite_ingot"
 				type: "item"
 			}]
+			title: "多模态"
 			x: 0.0d
 			y: 4.0d
 		}

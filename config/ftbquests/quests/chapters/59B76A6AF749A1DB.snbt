@@ -1073,8 +1073,10 @@
 		}
 		{
 			dependencies: ["03312D6881CC617D"]
+			description: ["装填烈焰蛋糕以感受最大威力"]
 			id: "2CA584555112E772"
 			shape: "diamond"
+			subtitle: "哒哒哒哒哒"
 			tasks: [{
 				id: "0ADE2F4D3B0B083C"
 				item: {

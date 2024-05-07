@@ -56,6 +56,7 @@
 		{
 			dependencies: ["5A910900A5C2135A"]
 			id: "5CD99468F17FD0AC"
+			subtitle: "浓缩世界精华"
 			tasks: [
 				{
 					id: "72EB9A27B749319F"
@@ -119,6 +120,10 @@
 		}
 		{
 			dependencies: ["40DDCA5F57C2C680"]
+			description: [
+				"恭喜你完成了这一整合包的所有挑战——"
+				"享受神的力量吧，现在，你就是世界的真理。"
+			]
 			id: "6D9B7D2CD86693AF"
 			shape: "hexagon"
 			size: 2.0d

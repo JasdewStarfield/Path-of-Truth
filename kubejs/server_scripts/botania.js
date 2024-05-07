@@ -281,7 +281,7 @@ ServerEvents.recipes(event => {
         [
             'botania:mana_tablet', 
             'botania:terrasteel_block',
-            'immersiveengineering:storage_steel',
+            '#forge:storage_blocks/steel',
             'botania:dandelifeon',
             'immersiveengineering:storage_electrum',
             'minecraft:conduit',
