@@ -5,9 +5,9 @@
 	#Range: > 0
 	modpackProjectID = 0
 	#The name of the modpack
-	modpackName = "PLEASE_CHANGE_ME"
+	modpackName = "Path of Truth"
 	#The version of the modpack
-	modpackVersion = "CHANGE_ME"
+	modpackVersion = "AlphaTestV0.1"
 	#Use the metadata.json to determine the modpack version
 	#ONLY ENABLE THIS IF YOU KNOW WHAT YOU ARE DOING
 	useMetadata = false
