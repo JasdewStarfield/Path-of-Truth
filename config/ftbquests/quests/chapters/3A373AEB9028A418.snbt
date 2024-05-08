@@ -36,17 +36,63 @@
 			]
 			icon: "snowyspirit:snow_globe"
 			id: "6CA55CF413645302"
-			rewards: [{
-				id: "1CE517F49B2646D6"
-				item: {
-					Count: 1b
-					id: "undergarden:froststeel_sword"
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "1CE517F49B2646D6"
+					item: {
+						Count: 1b
+						id: "undergarden:froststeel_sword"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "09E00583F6D048F4"
+					item: {
+						Count: 1b
+						id: "minecraft:leather_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1CF94E4601B572B7"
+					item: {
+						Count: 1b
+						id: "minecraft:leather_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B19C67481D7180A"
+					item: {
+						Count: 1b
+						id: "minecraft:leather_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4B9CA86EB4458897"
+					item: {
+						Count: 1b
+						id: "minecraft:leather_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "永恒寒冬……"
 			tasks: [{
 				id: "6A8DA287B49C1CF7"
