@@ -1,8 +1,11 @@
 {
+	autofocus_id: "6D9B7D2CD86693AF"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "24C2242397E3BB49"
 	group: "60E63434E814893B"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
 	icon: "createchromaticreturn:multiplite_tube"
 	id: "24C2242397E3BB49"
 	order_index: 0

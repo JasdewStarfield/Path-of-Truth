@@ -1,8 +1,11 @@
 {
+	autofocus_id: "12134A3EF6C80C54"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "31996D3CC5C02EFC"
 	group: "58EDF058942F253F"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
 	icon: "botania:corporea_spark_creative"
 	id: "31996D3CC5C02EFC"
 	order_index: 1

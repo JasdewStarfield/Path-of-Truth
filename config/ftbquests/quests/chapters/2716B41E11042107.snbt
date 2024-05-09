@@ -1,8 +1,11 @@
 {
+	autofocus_id: "143E6A57D69BAE65"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "2716B41E11042107"
 	group: "58EDF058942F253F"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
 	icon: "immersiveengineering:component_electronic_adv"
 	id: "2716B41E11042107"
 	order_index: 0
@@ -403,6 +406,7 @@
 			y: -4.0d
 		}
 		{
+			dependencies: ["5FB9514C6DE7AD58"]
 			icon: "tfmg:cast_iron_distillation_controller"
 			id: "576A28075CA7077D"
 			subtitle: "实际上这个分馏塔干的是裂化的活"
@@ -540,7 +544,7 @@
 		{
 			dependencies: [
 				"538F608DF5017A6A"
-				"176ADC50E594B161"
+				"6CDC3FDF89300F77"
 			]
 			description: [
 				"终于，你进入了电子时代）"
@@ -555,18 +559,6 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: 2.0d
-		}
-		{
-			description: ["相比于高级的电路板，木头板子就容易多了，你只需要手动把石英往木头上插）"]
-			id: "176ADC50E594B161"
-			subtitle: "简单的小东西"
-			tasks: [{
-				id: "6C505B3C11745EEB"
-				item: "immersiveengineering:component_electronic"
-				type: "item"
-			}]
-			x: 16.0d
 			y: 2.0d
 		}
 		{
@@ -824,6 +816,19 @@
 			title: "另一种黑金"
 			x: 8.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["5FB9514C6DE7AD58"]
+			description: ["相比于高级的电路板，木头板子就容易多了，你只需要手动把石英往木头上插）"]
+			id: "6CDC3FDF89300F77"
+			subtitle: "简单的小东西"
+			tasks: [{
+				id: "0D0D8E97979AE652"
+				item: "immersiveengineering:component_electronic"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 2.0d
 		}
 	]
 	subtitle: ["Petrochemical Engineering"]

@@ -1,9 +1,11 @@
 {
+	autofocus_id: "374C430D0AD70D2E"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "58C198C40A81EF6B"
 	group: "461ABC15BE939FA8"
 	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
 	icon: "irons_spellbooks:lightning_bottle"
 	id: "58C198C40A81EF6B"
 	order_index: 1

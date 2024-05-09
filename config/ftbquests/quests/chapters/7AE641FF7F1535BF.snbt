@@ -1,8 +1,11 @@
 {
+	autofocus_id: "5B1818D5A1142A16"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "7AE641FF7F1535BF"
 	group: "5B3B99F7ECC70789"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
 	icon: "immersiveengineering:blastfurnace_preheater"
 	id: "7AE641FF7F1535BF"
 	order_index: 0
@@ -65,6 +68,7 @@
 			y: -0.5d
 		}
 		{
+			dependencies: ["242C57AF7F6116E4"]
 			description: ["康铜可承受不了钢水的灼热，所以你需要铸铁——不论是获取焦煤还是制造管道。"]
 			id: "241E68C9313210AD"
 			subtitle: "铸铁管道和机器是必要的）"
@@ -122,6 +126,7 @@
 			y: -3.5d
 		}
 		{
+			dependencies: ["242C57AF7F6116E4"]
 			description: [
 				"建造高炉首先需要能承载高温的黏土）"
 				"理论上它会自然生成在世界上，但很显然，有的时候你不一定运气够好）"
@@ -210,10 +215,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"7A7C0A48248FA32B"
-				"176ADC50E594B161"
-			]
+			dependencies: ["7A7C0A48248FA32B"]
 			icon: "immersiveengineering:workbench"
 			id: "2E4B9CF9789B1AF1"
 			subtitle: "手搓零件！"
@@ -240,6 +242,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["242C57AF7F6116E4"]
 			icon: "immersiveengineering:wirecoil_copper"
 			id: "759F8BFB75CBF0B6"
 			subtitle: "就是电线（"
@@ -320,6 +323,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["242C57AF7F6116E4"]
 			description: ["当然其它任务也可以用这个来自动提交"]
 			icon: "ftbquests:screen_1"
 			id: "250398995ECDA3CE"
@@ -339,6 +343,7 @@
 			y: 0.5d
 		}
 		{
+			dependencies: ["242C57AF7F6116E4"]
 			description: [
 				"发电必需品）"
 				"最符合物理的一集，正常的转转显然不可能直接发电，因此你需要磁力）"

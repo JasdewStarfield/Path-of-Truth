@@ -1,9 +1,11 @@
 {
-	autofocus_id: "3B29D716A3D5AAF0"
+	autofocus_id: "01534DC5812DBA15"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "59B76A6AF749A1DB"
 	group: "560257DD7915FBBC"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
 	icon: "immersiveengineering:manual"
 	id: "59B76A6AF749A1DB"
 	order_index: 0

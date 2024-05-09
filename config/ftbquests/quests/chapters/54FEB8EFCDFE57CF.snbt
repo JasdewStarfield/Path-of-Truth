@@ -1,8 +1,11 @@
 {
+	autofocus_id: "066C04C6A6CBCCB3"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "54FEB8EFCDFE57CF"
 	group: "5B3B99F7ECC70789"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
 	icon: "minecraft:end_crystal"
 	id: "54FEB8EFCDFE57CF"
 	order_index: 2

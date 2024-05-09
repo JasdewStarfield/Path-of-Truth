@@ -1,8 +1,11 @@
 {
+	autofocus_id: "5EE2152C42721246"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "0E2F8F4C2B4CBD8C"
 	group: "453FC1B4D45CC35B"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
 	icon: "botania:fork_light_relay"
 	id: "0E2F8F4C2B4CBD8C"
 	order_index: 2
@@ -294,6 +297,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -315,6 +319,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -336,6 +341,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -357,6 +363,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -378,6 +385,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{
@@ -399,6 +407,7 @@
 							}
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 			]

@@ -1,8 +1,11 @@
 {
+	autofocus_id: "0D0BEC03C1B26CA3"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "1BB45CAF6A2385E2"
 	group: "453FC1B4D45CC35B"
+	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
 	icon: "minecraft:chain_command_block"
 	id: "1BB45CAF6A2385E2"
 	order_index: 0

@@ -1,9 +1,11 @@
 {
+	autofocus_id: "7CFD3110EF8E53E2"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "3A373AEB9028A418"
 	group: "461ABC15BE939FA8"
 	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
 	icon: "sophisticatedbackpacks:backpack"
 	id: "3A373AEB9028A418"
 	order_index: 2
@@ -36,63 +38,6 @@
 			]
 			icon: "snowyspirit:snow_globe"
 			id: "6CA55CF413645302"
-			rewards: [
-				{
-					id: "1CE517F49B2646D6"
-					item: {
-						Count: 1b
-						id: "undergarden:froststeel_sword"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "09E00583F6D048F4"
-					item: {
-						Count: 1b
-						id: "minecraft:leather_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "1CF94E4601B572B7"
-					item: {
-						Count: 1b
-						id: "minecraft:leather_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "4B19C67481D7180A"
-					item: {
-						Count: 1b
-						id: "minecraft:leather_leggings"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "4B9CA86EB4458897"
-					item: {
-						Count: 1b
-						id: "minecraft:leather_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
 			subtitle: "永恒寒冬……"
 			tasks: [{
 				id: "6A8DA287B49C1CF7"
@@ -111,17 +56,19 @@
 				"记得看清自己当前的温度，0度以下或37度以上都是危险的。"
 			]
 			id: "409A09512BF023FC"
-			rewards: [{
-				id: "1D30B661793B7C08"
-				item: "cold_sweat:thermometer"
-				type: "item"
-			}]
 			subtitle: "烧起来了！"
-			tasks: [{
-				id: "3136B1174AAF8C7E"
-				item: "minecraft:campfire"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3136B1174AAF8C7E"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+				{
+					id: "13ECA29BF654E255"
+					item: "cold_sweat:thermometer"
+					type: "item"
+				}
+			]
 			title: "寒来暑往……是不可能的。"
 			x: 2.0d
 			y: 0.0d
@@ -135,27 +82,6 @@
 				"方尖碑的充能可以通过末影之眼和末影珍珠完成，拿着这两样东西对着方尖碑右键即可。"
 			]
 			id: "046F1DAD921FD2E8"
-			rewards: [
-				{
-					id: "4F98557BA1675E9F"
-					item: "respawnobelisks:respawn_obelisk"
-					type: "item"
-				}
-				{
-					id: "474278A92070C57E"
-					item: {
-						Count: 1b
-						id: "respawnobelisks:obelisk_core"
-						tag: {
-							RespawnObeliskData: {
-								Charge: 100.0d
-								MaxCharge: 100.0d
-							}
-						}
-					}
-					type: "item"
-				}
-			]
 			subtitle: "你不能再用床成为无敌的人"
 			tasks: [{
 				id: "26C5D84BA231F17D"

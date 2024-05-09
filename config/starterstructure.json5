@@ -8,9 +8,9 @@
 	// Some schematic files might contain jigsaw or structure blocks. These are by default ignored during structure generation.
 	"generationIgnoreJigsawAndStructureBlocks": true,
 	// Whether the blocks from the generated structure should be protected from breaking/griefing.
-	"protectStructureBlocks": true,
+	"protectStructureBlocks": false,
 	// Whether entities spawned inside the generated structure should be protected from damage.
-	"protectSpawnedEntities": true,
+	"protectSpawnedEntities": false,
 	// If enabled, players that are in creative mode will be able to break and place the structure blocks.
 	"playersInCreativeModeIgnoreProtection": true,
 	// If enabled, players that are in creative mode will be able to damage protected entities which spawned in structures.
