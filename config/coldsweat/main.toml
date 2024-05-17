@@ -22,16 +22,16 @@ Difficulty = 2
 ["Details about how the player is affected by temperature"]
 	#Defines the minimum habitable temperature
 	#Range: -Infinity ~ Infinity
-	"Minimum Habitable Temperature" = 0.42857142857142855
+	"Minimum Habitable Temperature" = 0.21428571428877552
 	#Defines the maximum habitable temperature
 	#Range: -Infinity ~ Infinity
 	"Maximum Habitable Temperature" = 1.619047619047619
 	#Rate at which the player's body temperature changes (default: 1.0 (100%))
 	#Range: 0.0 ~ Infinity
-	"Rate Multiplier" = 1.0
+	"Rate Multiplier" = 0.5
 	#Damage dealt to the player when they are too hot or too cold
 	#Range: 0.0 ~ Infinity
-	"Temperature Damage" = 2.0
+	"Temperature Damage" = 1.0
 
 ["Item settings"]
 	#Allow fire resistance to block overheating damage
