@@ -12,7 +12,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["6A1B42D208C780BD"]
+			dependencies: ["6E0D85E43EDF1994"]
 			description: [
 				"开启方式和地狱门很像，石砖搭一个框架，然后催化石点一下，你就可以进去了）"
 				"进门之后注意安全，深园从来不缺少敌对生物。"
@@ -38,7 +38,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6A1B42D208C780BD"]
+			dependencies: ["76BE4625CCF2F867"]
 			description: [
 				"你会发现末影之眼的合成难度增加了，但还是能做的。"
 				"为什么增加难度呢，因为不想让你到末地死的太难看（确信"
