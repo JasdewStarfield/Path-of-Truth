@@ -112,7 +112,7 @@
       "--launchTarget",
       "forgeclient",
       "--fml.forgeVersion",
-      "47.2.30",
+      "47.2.32",
       "--fml.mcVersion",
       "1.20.1",
       "--fml.forgeGroup",
@@ -500,24 +500,24 @@
       }
     },
     {
-      "name": "net.minecraftforge:fmlloader:1.20.1-47.2.30",
+      "name": "net.minecraftforge:fmlloader:1.20.1-47.2.32",
       "downloads": {
         "artifact": {
-          "path": "net/minecraftforge/fmlloader/1.20.1-47.2.30/fmlloader-1.20.1-47.2.30.jar",
-          "url": "https://maven.minecraftforge.net/net/minecraftforge/fmlloader/1.20.1-47.2.30/fmlloader-1.20.1-47.2.30.jar",
-          "sha1": "9ebfc86e948225226476e5917d8511bf4dd53f2a",
-          "size": 264263
+          "path": "net/minecraftforge/fmlloader/1.20.1-47.2.32/fmlloader-1.20.1-47.2.32.jar",
+          "url": "https://maven.minecraftforge.net/net/minecraftforge/fmlloader/1.20.1-47.2.32/fmlloader-1.20.1-47.2.32.jar",
+          "sha1": "da41b1ab6bba0591a478f8b70f8ac03044dd0b22",
+          "size": 264539
         }
       }
     },
     {
-      "name": "net.minecraftforge:fmlearlydisplay:1.20.1-47.2.30",
+      "name": "net.minecraftforge:fmlearlydisplay:1.20.1-47.2.32",
       "downloads": {
         "artifact": {
-          "path": "net/minecraftforge/fmlearlydisplay/1.20.1-47.2.30/fmlearlydisplay-1.20.1-47.2.30.jar",
-          "url": "https://maven.minecraftforge.net/net/minecraftforge/fmlearlydisplay/1.20.1-47.2.30/fmlearlydisplay-1.20.1-47.2.30.jar",
-          "sha1": "c4a2ff3abdf78062f6b01ab0160b386e8d15109b",
-          "size": 170973
+          "path": "net/minecraftforge/fmlearlydisplay/1.20.1-47.2.32/fmlearlydisplay-1.20.1-47.2.32.jar",
+          "url": "https://maven.minecraftforge.net/net/minecraftforge/fmlearlydisplay/1.20.1-47.2.32/fmlearlydisplay-1.20.1-47.2.32.jar",
+          "sha1": "e99e5320164e7941ee8612e4e00f28225292e200",
+          "size": 170833
         }
       }
     },
@@ -1851,31 +1851,31 @@
     }
   ],
   "downloads": {
-    "client_mappings": {
-      "url": "https://piston-data.mojang.com/v1/objects/6c48521eed01fe2e8ecdadbd5ae348415f3c47da/client.txt",
-      "sha1": "6c48521eed01fe2e8ecdadbd5ae348415f3c47da",
-      "size": 8001795
-    },
     "server_mappings": {
       "url": "https://piston-data.mojang.com/v1/objects/0b4dba049482496c507b2387a73a913230ebbd76/server.txt",
       "sha1": "0b4dba049482496c507b2387a73a913230ebbd76",
       "size": 6154195
     },
-    "server": {
-      "url": "https://piston-data.mojang.com/v1/objects/84194a2f286ef7c14ed7ce0090dba59902951553/server.jar",
-      "sha1": "84194a2f286ef7c14ed7ce0090dba59902951553",
-      "size": 47791053
+    "client_mappings": {
+      "url": "https://piston-data.mojang.com/v1/objects/6c48521eed01fe2e8ecdadbd5ae348415f3c47da/client.txt",
+      "sha1": "6c48521eed01fe2e8ecdadbd5ae348415f3c47da",
+      "size": 8001795
     },
     "client": {
       "url": "https://piston-data.mojang.com/v1/objects/0c3ec587af28e5a785c0b4a7b8a30f9a8f78f838/client.jar",
       "sha1": "0c3ec587af28e5a785c0b4a7b8a30f9a8f78f838",
       "size": 23028853
+    },
+    "server": {
+      "url": "https://piston-data.mojang.com/v1/objects/84194a2f286ef7c14ed7ce0090dba59902951553/server.jar",
+      "sha1": "84194a2f286ef7c14ed7ce0090dba59902951553",
+      "size": 47791053
     }
   },
   "logging": {},
   "type": "release",
-  "time": "2024-04-19T04:27:26+08:00",
-  "releaseTime": "2024-04-19T04:27:26+08:00",
+  "time": "2024-05-10T06:23:13+08:00",
+  "releaseTime": "2024-05-10T06:23:13+08:00",
   "minimumLauncherVersion": 21,
   "root": true,
   "patches": [
@@ -3389,25 +3389,25 @@
         }
       ],
       "downloads": {
-        "client_mappings": {
-          "url": "https://piston-data.mojang.com/v1/objects/6c48521eed01fe2e8ecdadbd5ae348415f3c47da/client.txt",
-          "sha1": "6c48521eed01fe2e8ecdadbd5ae348415f3c47da",
-          "size": 8001795
-        },
         "server_mappings": {
           "url": "https://piston-data.mojang.com/v1/objects/0b4dba049482496c507b2387a73a913230ebbd76/server.txt",
           "sha1": "0b4dba049482496c507b2387a73a913230ebbd76",
           "size": 6154195
         },
-        "server": {
-          "url": "https://piston-data.mojang.com/v1/objects/84194a2f286ef7c14ed7ce0090dba59902951553/server.jar",
-          "sha1": "84194a2f286ef7c14ed7ce0090dba59902951553",
-          "size": 47791053
+        "client_mappings": {
+          "url": "https://piston-data.mojang.com/v1/objects/6c48521eed01fe2e8ecdadbd5ae348415f3c47da/client.txt",
+          "sha1": "6c48521eed01fe2e8ecdadbd5ae348415f3c47da",
+          "size": 8001795
         },
         "client": {
           "url": "https://piston-data.mojang.com/v1/objects/0c3ec587af28e5a785c0b4a7b8a30f9a8f78f838/client.jar",
           "sha1": "0c3ec587af28e5a785c0b4a7b8a30f9a8f78f838",
           "size": 23028853
+        },
+        "server": {
+          "url": "https://piston-data.mojang.com/v1/objects/84194a2f286ef7c14ed7ce0090dba59902951553/server.jar",
+          "sha1": "84194a2f286ef7c14ed7ce0090dba59902951553",
+          "size": 47791053
         }
       },
       "logging": {
@@ -3429,14 +3429,14 @@
     },
     {
       "id": "forge",
-      "version": "47.2.30",
+      "version": "47.2.32",
       "priority": 30000,
       "arguments": {
         "game": [
           "--launchTarget",
           "forgeclient",
           "--fml.forgeVersion",
-          "47.2.30",
+          "47.2.32",
           "--fml.mcVersion",
           "1.20.1",
           "--fml.forgeGroup",
@@ -3764,32 +3764,32 @@
           }
         },
         {
-          "name": "net.minecraftforge:fmlloader:1.20.1-47.2.30",
+          "name": "net.minecraftforge:fmlloader:1.20.1-47.2.32",
           "downloads": {
             "artifact": {
-              "path": "net/minecraftforge/fmlloader/1.20.1-47.2.30/fmlloader-1.20.1-47.2.30.jar",
-              "url": "https://maven.minecraftforge.net/net/minecraftforge/fmlloader/1.20.1-47.2.30/fmlloader-1.20.1-47.2.30.jar",
-              "sha1": "9ebfc86e948225226476e5917d8511bf4dd53f2a",
-              "size": 264263
+              "path": "net/minecraftforge/fmlloader/1.20.1-47.2.32/fmlloader-1.20.1-47.2.32.jar",
+              "url": "https://maven.minecraftforge.net/net/minecraftforge/fmlloader/1.20.1-47.2.32/fmlloader-1.20.1-47.2.32.jar",
+              "sha1": "da41b1ab6bba0591a478f8b70f8ac03044dd0b22",
+              "size": 264539
             }
           }
         },
         {
-          "name": "net.minecraftforge:fmlearlydisplay:1.20.1-47.2.30",
+          "name": "net.minecraftforge:fmlearlydisplay:1.20.1-47.2.32",
           "downloads": {
             "artifact": {
-              "path": "net/minecraftforge/fmlearlydisplay/1.20.1-47.2.30/fmlearlydisplay-1.20.1-47.2.30.jar",
-              "url": "https://maven.minecraftforge.net/net/minecraftforge/fmlearlydisplay/1.20.1-47.2.30/fmlearlydisplay-1.20.1-47.2.30.jar",
-              "sha1": "c4a2ff3abdf78062f6b01ab0160b386e8d15109b",
-              "size": 170973
+              "path": "net/minecraftforge/fmlearlydisplay/1.20.1-47.2.32/fmlearlydisplay-1.20.1-47.2.32.jar",
+              "url": "https://maven.minecraftforge.net/net/minecraftforge/fmlearlydisplay/1.20.1-47.2.32/fmlearlydisplay-1.20.1-47.2.32.jar",
+              "sha1": "e99e5320164e7941ee8612e4e00f28225292e200",
+              "size": 170833
             }
           }
         }
       ],
       "logging": {},
       "type": "release",
-      "time": "2024-04-19T04:27:26+08:00",
-      "releaseTime": "2024-04-19T04:27:26+08:00"
+      "time": "2024-05-10T06:23:13+08:00",
+      "releaseTime": "2024-05-10T06:23:13+08:00"
     }
   ]
 }
