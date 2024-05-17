@@ -168,7 +168,7 @@ filetree
 
 
 - [Img Shields](https://shields.io)
-- [🌩最好的中文README模板⚡️Best README template](https://github.com/shaojintian/Best_README_template
+- [🌩最好的中文README模板⚡️Best README template](https://github.com/shaojintian/Best_README_template)
 - [Curseforge](https://www.curseforge.com)
 
 <!-- links -->
