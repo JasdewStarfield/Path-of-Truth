@@ -63,7 +63,6 @@ A Minecraft 1.20.1 Forge tech & magic modpack
   - [运行前的配置要求](#运行前的配置要求)
   - [安装步骤](#安装步骤)
 - [文件目录说明](#文件目录说明)
-- [部署](#部署)
 - [贡献者](#贡献者)
   - [如何参与开源项目](#如何参与开源项目)
 - [版本控制](#版本控制)
@@ -72,27 +71,44 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 ### 上手指南
 
-目前仍在开发中，完成主体架构后会及时发布体验版。
+本整合包的主要科技模组有[沉浸工程](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)、[机械动力](https://www.curseforge.com/minecraft/mc-mods/create)（及附属），主要魔法模组有[植物魔法](https://www.curseforge.com/minecraft/mc-mods/botania)、[血魔法](https://www.curseforge.com/minecraft/mc-mods/blood-magic)、[铁魔法](https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks)等，探索向模组有[蔚蓝浩空](https://www.curseforge.com/minecraft/mc-mods/blue-skies)、[深暗之园](https://www.curseforge.com/minecraft/mc-mods/the-undergarden)等，还有以[农夫乐事](https://www.curseforge.com/minecraft/mc-mods/farmers-delight)为主的农业美食模组等等。熟悉这些模组的朋友们可以较快上手（但切记这是一个高度魔改的整合包（使用[KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs)）——你熟悉的知识很有可能不再实用。所以别太依赖惯性思维了！）。
 
 
+为了增加难度和丰富体验，整合包调整了地形生成，使得世界中只有寒冷的群系，同时加入了需要玩家注意体温管理的[冷汗](https://www.curseforge.com/minecraft/mc-mods/cold-sweat)模组，这会给你的开拓之旅带来一些生存上的挑战！
+
+
+对于不熟悉这些模组的朋友，也可以参考本整合包详尽的任务指引系统以及模组自带的说明教程。它们会指引你从茹毛饮血的青铜时代开始，跨越铁器时代、精密仪器时代、电气时代等，在一片冰天雪地中展开工业和魔法革命，最终接近这个世界的真相。
+
+
+另外，整合包也提供了相当丰富的视听体验类模组（[Oculus光影](https://www.curseforge.com/minecraft/mc-mods/oculus)、[落叶](https://www.curseforge.com/minecraft/mc-mods/falling-leaves-forge)、[氛围音效](https://www.curseforge.com/minecraft/mc-mods/ambientsounds)等等，很多），这些模组并不影响正常游戏内容，但是相信会给忙碌在主线流程中的你带来一点沉浸感和放松（不喜欢这些内容的朋友也可以自由开关，不会影响流程的完整性）。
 
 ###### 运行前的配置要求
 
 1. Java17（或更高）
-2. Hello Minecraft Launcher（推荐使用）
-3. 建议为游戏分配4G以上的内存
+2. Hello Minecraft Launcher（HMCL，推荐使用）
+3. 建议为游戏分配4G以上的内存，多人服务器则建议8G以上（视游玩人数提高）
 
 ###### **安装步骤**
+标准版安装：
 
-1. 本整合包还在创作中，暂无安装步骤）
-2. 如果您希望体验开发版本，则可以直接克隆本仓库到你的HMCL启动器的versions文件夹的任一子文件夹内，然后打开启动器理论上就能看到对应版本了。
+
+1. 下载本整合包的Release版zip文件（在Github上直接下载，或在官方Curseforge页面上下载（暂未发布））。
+2. 使用支持Curseforge整合包格式的启动器（例如HMCL）安装该文件。
+
+
+如果您希望体验开发版本，则:
+
+
+1. 先安装原版Minecraft，版本1.20.1（如果启动器支持，建议启用版本独立文件夹）。
+2. 安装Forge，版本47.2.30。
+3. 克隆本仓库到你安装版本的目录下（版本独立时通常为versions文件夹的一子文件夹）。
+
 
 ```sh
 git clone https://github.com/JasdewStarfield/Path-of-Truth.git
 ```
 
 ### 文件目录说明
-eg:
 
 ```
 filetree 
@@ -115,17 +131,9 @@ filetree
 
 ```
 
-
-
-
-### 部署
-
-理论上把整合包zip拖进HMCL即可正常安装启动）
-虽然我们现在还没有整合好的压缩包）
-
 ### 贡献者
 
-请阅读**CONTRIBUTING.md** 查阅为该项目做出贡献的开发者。
+请参阅**[贡献者页面](https://github.com/JasdewStarfield/Path-of-Truth/graphs/contributors)** 查阅为该项目做出贡献的开发者。
 
 #### 如何参与开源项目
 
@@ -160,7 +168,8 @@ filetree
 
 
 - [Img Shields](https://shields.io)
-- [🌩最好的中文README模板⚡️Best README template](https://github.com/shaojintian/Best_README_template)
+- [🌩最好的中文README模板⚡️Best README template](https://github.com/shaojintian/Best_README_template
+- [Curseforge](https://www.curseforge.com)
 
 <!-- links -->
 [your-project-path]:JasdewStarfield/Path-of-Truth
