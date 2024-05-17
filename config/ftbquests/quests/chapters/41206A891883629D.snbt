@@ -410,6 +410,55 @@
 			x: 16.0d
 			y: -7.0d
 		}
+		{
+			dependencies: ["29D490BEC5BBC8E1"]
+			hide: true
+			id: "53413B45DB394D6E"
+			tasks: [{
+				id: "2FA6576BF7BAF632"
+				item: "immersiveengineering:capacitor_creative"
+				type: "item"
+			}]
+			x: 14.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["29D490BEC5BBC8E1"]
+			hide: true
+			id: "2B691669C428C335"
+			tasks: [{
+				id: "6C49948E433E0AE7"
+				item: "create:creative_motor"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"53413B45DB394D6E"
+				"2B691669C428C335"
+			]
+			id: "30C6A0C0DC51D779"
+			tasks: [{
+				id: "783FD594EFD7B7F9"
+				item: "create:creative_fluid_tank"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["30C6A0C0DC51D779"]
+			id: "1CDE9847DC820278"
+			tasks: [{
+				id: "7A850C07E6EA294F"
+				item: "createchromaticreturn:multiplite_ingot"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -10.5d
+		}
 	]
 	subtitle: ["Landmarks"]
 	title: "工业里程碑"

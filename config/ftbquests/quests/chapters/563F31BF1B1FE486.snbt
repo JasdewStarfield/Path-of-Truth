@@ -393,6 +393,7 @@
 		}
 		{
 			dependencies: ["697B1277B1C95490"]
+			hide: true
 			id: "1C42F46B21ADC51E"
 			subtitle: "三生万物（真的"
 			tasks: [
@@ -413,6 +414,7 @@
 		}
 		{
 			dependencies: ["697B1277B1C95490"]
+			hide: true
 			id: "547BE1E974BA2186"
 			subtitle: "转化，合成，凝聚"
 			tasks: [{
@@ -434,9 +436,10 @@
 			subtitle: "终局开端"
 			tasks: [{
 				id: "022297A7CFF38214"
-				item: "createchromaticreturn:chromatic_compound"
+				item: "createchromaticreturn:multiplite_ingot"
 				type: "item"
 			}]
+			title: "最魔法的"
 			x: 0.0d
 			y: -19.0d
 		}

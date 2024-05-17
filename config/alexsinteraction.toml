@@ -146,6 +146,8 @@
 	[Mobs."Grizzly Bear"]
 		#Whether Grizzlies will not attack players when untamed
 		grizzlyattackfriendly = true
+		#Whether Grizzlies named 'Freddy Fazbear' will turn into Freddy from April Fools 
+		grizzlyfreddy = true
 
 	[Mobs.Guster]
 		#Whether Guster's Tornado effect is based on armor of the player
@@ -188,6 +190,8 @@
 	[Mobs.Orca]
 		#Whether Orca's hunt fish
 		orcahunt = true
+		#Whether Orcas Might allows temporary neutrality with Skelewags
+		mightupgrade = true
 
 	[Mobs.Raccoon]
 		#Whether Raccoons hunt for food
@@ -210,8 +214,6 @@
 		seagullnotsnatch = true
 
 	[Mobs.Skelewag]
-		#Whether Skelewag's attack all entities apart from their allies
-		scourgingseas = true
 		#Whether Skelewags circle prey like Hammerhead sharks
 		skelewagcircle = true
 
@@ -222,6 +224,8 @@
 	[Mobs."Snow Leopard"]
 		#Whether Snow Leopards can get rare items when killing specific mobs
 		snowluck = true
+		#Whether Snow Leopards can hunt weak Mooses, but also mistakenly attack weak players wearing a Antler Headgear
+		leoparddesires = true
 
 	[Mobs."Soul Vulture"]
 		#Whether Soul Vultures increase soul level no matter what when attacking
@@ -237,6 +241,8 @@
 	[Mobs.Stradpole]
 		#Whether Stradpoles bob up in the lava
 		stradpolebobup = true
+		#Whether launched stradpoles have a chance to inflict flame
+		stradpoleflame = true
 
 	[Mobs."Sugar Glider"]
 		#Whether Sugar Gliders can be fed sugar to speed up
@@ -249,6 +255,8 @@
 	[Mobs.Tiger]
 		#Whether Tigers only hunt at night
 		tigerhuntnight = true
+		#Whether Tigers Blessing gives players that sneak, invisibility as well
+		tigersstealthtigersstealth = true
 
 	[Mobs.Tusklin]
 		#Whether Tusklins flee warped fungus like their predecessors
@@ -259,8 +267,6 @@
 		tusklintrample = true
 		#Whether Tusklins can have their equipment removed with shears
 		tusklinremoveequipment = true
-		#Whether Void Worm can be stunned when dealt enough damage
-		voidwormstun = true
 
 	[Mobs."Warped Mosco"]
 		#Whether Warped Moscos eat Crimson Mosquitoes rarely
@@ -271,4 +277,38 @@
 		warpedtarantula = true
 		#Whether Warped Toads cant impossibly eat Warped Moscos
 		moscoconsume = true
+
+	[Mobs.Cosmaw]
+		#Whether Cosmaw can get weak based on their owner's armor when carrying
+		cosmawweakness = true
+
+	[Mobs."Rocky Roller"]
+		#Whether Rocky Roller Chestplate allows one to temporarily float in water with the 'Rolling Thunder' enchantment
+		rollingthunder = true
+
+	[Mobs.Sunbird]
+		#Whether Sunbirds's effects are upgraded for the better and worse
+		sunbirdupgrade = true
+
+	[Mobs."Void Worm"]
+		#Whether Void Worm can be stunned when dealt enough damage
+		voidwormstun = true
+		#Whether Dimensional Carver can be used to teleport to a linked lodestone compass
+		dimensionallodestone = true
+
+["April Fools"]
+	#AMI April Fools Activation
+	goofymode = false
+	#April Fools Banana Slug and Banana Effects
+	bananaslip = true
+	#April Fools Murmur Effects
+	murmurdecapitate = true
+	#April Fools Crimson Mosquito Effects
+	crimsonmultiply = true
+	#April Fools Rain Frog Effects
+	rainfrogspawnage = true
+	#April Fools Capuchin Monkey Effects
+	capuchinbomb = true
+	#April Fools Straddler Effects
+	straddlerexplosivespread = true
 

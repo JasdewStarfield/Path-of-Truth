@@ -102,6 +102,10 @@
 			[general.types.wood_type.outer_end]
 				azure = true
 
+			[general.types.wood_type.botania]
+				livingwood = true
+				dreamwood = true
+
 	#Disables specific entries
 	[general.entries]
 

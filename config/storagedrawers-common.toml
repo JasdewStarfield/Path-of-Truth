@@ -22,11 +22,11 @@
 [StorageUpgrades]
 	#Storage upgrades multiply storage capacity by the given amount.
 	#When multiple storage upgrades are used together, their multipliers are added before being applied.
-	level1Mult = 2
-	level2Mult = 4
-	level3Mult = 8
+	level1Mult = 4
+	level2Mult = 8
+	level3Mult = 4
 	level4Mult = 16
-	level5Mult = 32
+	level5Mult = 2
 
 [Integration]
 	#When true, shows quantity as NxS + R (by stack size) rather than count

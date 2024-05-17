@@ -36,9 +36,9 @@
 		}
 		{
 			dependencies: ["2F791EC2607066B4"]
-			dependency_requirement: "one_completed"
 			description: ["恭喜你初步摆脱了原始人阶段！"]
 			id: "0E41103FFC1FC96A"
+			min_required_tasks: 1
 			subtitle: "转起来了，站起来了"
 			tasks: [
 				{

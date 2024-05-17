@@ -9,7 +9,7 @@ deathPenaltyLoss = 25
 #PERCENT = Reduce by a percent of the current value
 #RESET = Reset value to defaults
 #Allowed Values: AMOUNT, PERCENT, RESET
-deathPenaltyMethod = "PRECENT"
+deathPenaltyMethod = "PERCENT"
 #The percentage reduction in total gain for each diet group consumed at once.
 #Range: 0 ~ 100
 gainPenaltyPerGroup = 15
@@ -23,3 +23,4 @@ foodOverrides = []
 generateGroupsForEmptyItems = true
 #If enabled, food group tooltips are hidden until player has eaten that type of item.
 hideTooltipsUntilEaten = false
+

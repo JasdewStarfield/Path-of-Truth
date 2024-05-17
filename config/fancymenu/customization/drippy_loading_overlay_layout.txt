@@ -3,13 +3,31 @@ type = fancymenu_layout
 layout-meta {
   identifier = drippy_loading_overlay
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1714486142482
+  last_edited_time = 1715942193679
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:dc147806-a012-4bb3-b9e0-28036cfa2d09-1714486084733] = [groups:][instances:]
+  [loading_requirement_container_meta:3f83137d-8d7f-47d8-bf15-5282a48cb350-1715942171027] = [groups:][instances:]
+}
+
+customization {
+  action = setscale
+  scale = 3.0
+}
+
+customization {
+  action = autoscale
+  basewidth = 854
+  baseheight = 480
+}
+
+menu_background {
+  image_path = [source:local]/config/fancymenu/assets/bg.png
+  slide = false
+  repeat_texture = false
+  background_type = image
 }
 
 customization {
@@ -34,15 +52,15 @@ element {
   nine_slice_texture_border_y = 5
   element_type = image
   instance_identifier = 670b3aa7-99cf-4081-a4bc-9d8b68c3f75d-1714484131622
-  appearance_delay = no_delay
+  appearance_delay = first_time
   appearance_delay_seconds = 1.0
-  fade_in = false
+  fade_in = true
   fade_in_speed = 1.0
   anchor_point = mid-centered
-  x = -125
-  y = -22
-  width = 250
-  height = 47
+  x = -111
+  y = -17
+  width = 223
+  height = 39
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -66,10 +84,10 @@ vanilla_button {
   fade_in = false
   fade_in_speed = 1.0
   anchor_point = vanilla
-  x = 115
-  y = 94
-  width = 250
-  height = 62
+  x = 73
+  y = 60
+  width = 160
+  height = 40
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -93,14 +111,14 @@ vanilla_button {
   navigatable = true
   element_type = vanilla_button
   instance_identifier = progress_bar
-  appearance_delay = no_delay
+  appearance_delay = first_time
   appearance_delay_seconds = 1.0
-  fade_in = false
+  fade_in = true
   fade_in_speed = 1.0
   anchor_point = vanilla
-  x = 115
-  y = 203
-  width = 250
+  x = 73
+  y = 128
+  width = 160
   height = 10
   stretch_x = false
   stretch_y = false
