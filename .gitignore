@@ -52,3 +52,5 @@ config/modernfix-mixins.properties
 hmclversion.cfg
 servers.dat
 servers.dat_old
+config/smoothboot.json
+config/default.json
