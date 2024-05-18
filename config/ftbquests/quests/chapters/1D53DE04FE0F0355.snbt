@@ -11,7 +11,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			can_repeat: true
+			can_repeat: false
 			description: [
 				"欢迎来到“真理之路”整合包。"
 				"本整合包由&b狂野工程师JasdewStarfield&r与&a抽象魔法师MidnightPigeon&r联合创作。"
