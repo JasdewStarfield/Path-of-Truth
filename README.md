@@ -82,6 +82,9 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 另外，整合包也提供了相当丰富的视听体验类模组（[Oculus光影](https://www.curseforge.com/minecraft/mc-mods/oculus)、[落叶](https://www.curseforge.com/minecraft/mc-mods/falling-leaves-forge)、[氛围音效](https://www.curseforge.com/minecraft/mc-mods/ambientsounds)等等，很多），这些模组并不影响正常游戏内容，但是相信会给忙碌在主线流程中的你带来一点沉浸感和放松（不喜欢这些内容的朋友也可以自由开关，不会影响流程的完整性）。
 
+
+*注：本整合包支持单人和多人游玩，且相对难度较高，进入游戏后建议先查看基本的任务说明与介绍。
+
 ###### 运行前的配置要求
 
 1. Java17（或更高）
