@@ -88,7 +88,7 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 ###### 运行前的配置要求
 
 1. Java17（或更高）
-2. Hello Minecraft Launcher（HMCL，推荐使用）
+2. Hello Minecraft Launcher（HMCL，推荐使用）或其他支持安装Curseforge格式整合包的启动器
 3. 建议为游戏分配4G以上的内存，多人服务器则建议8G以上（视游玩人数提高）
 
 ###### **安装步骤**
