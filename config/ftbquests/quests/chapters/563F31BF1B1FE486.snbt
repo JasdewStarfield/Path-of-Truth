@@ -395,20 +395,13 @@
 			dependencies: ["697B1277B1C95490"]
 			hide: true
 			id: "1C42F46B21ADC51E"
-			subtitle: "三生万物（真的"
-			tasks: [
-				{
-					id: "2A914190A596881C"
-					item: "botania:corporea_spark_creative"
-					type: "item"
-				}
-				{
-					id: "399ECD7F9664A0A4"
-					item: "storagedrawers:creative_vending_upgrade"
-					type: "item"
-				}
-			]
-			title: "复制之力"
+			subtitle: "力量固化"
+			tasks: [{
+				id: "2A914190A596881C"
+				item: "bosses_of_mass_destruction:levitation_block"
+				type: "item"
+			}]
+			title: "白日飞升"
 			x: -2.0d
 			y: -18.0d
 		}
@@ -419,10 +412,10 @@
 			subtitle: "转化，合成，凝聚"
 			tasks: [{
 				id: "4C9E7E2BAAD67B3C"
-				item: "bloodmagic:rawdemoncrystal"
+				item: "createchromaticreturn:chromatic_compound"
 				type: "item"
 			}]
-			title: "恶魔结晶"
+			title: "异彩化合物"
 			x: 2.0d
 			y: -18.0d
 		}
