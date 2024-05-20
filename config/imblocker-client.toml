@@ -4,7 +4,7 @@ checkInterval = 2
 #Matched screens would disable your IME
 screenBlacklist = []
 #Matched screens would enable your IME
-screenWhitelist = ["net.minecraft.client.gui.screens.inventory.BookEditScreen", "net.minecraft.client.gui.screens.inventory.SignEditScreen", "net.minecraft.client.gui.screens.inventory.HangingSignEditScreen", "journeymap.client.ui.waypoint.WaypointEditor", "com.ldtteam.blockout.BOScreen"]
+screenWhitelist = ["net.minecraft.client.gui.screens.inventory.BookEditScreen", "net.minecraft.client.gui.screens.inventory.SignEditScreen", "net.minecraft.client.gui.screens.inventory.HangingSignEditScreen", "journeymap.client.ui.waypoint.WaypointEditor", "com.ldtteam.blockout.BOScreen", "dev.ftb.mods.ftblibrary.ui.ScreenWrapper"]
 #Matched input box would disable your IME
 inputBlacklist = []
 #Matched input box would enable your IME
@@ -13,7 +13,7 @@ inputWhitelist = []
 enableScreenRecovering = false
 #Here lists all Screens that is not in whitelist nor blacklist, 
 #so you may easily add those to whitelist/blacklist.
-recoveredScreens = []
+recoveredScreens = ["forgeconfigscreens:fuzs.forgeconfigscreens.client.gui.screens.SelectConfigScreen", "catalogue:com.mrcrayfish.catalogue.client.screen.CatalogueModListScreen"]
 #Disable this and let me know if input or control is messed up
 useExperimental = true
 #Disable IME when typing commands

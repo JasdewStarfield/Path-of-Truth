@@ -32,7 +32,7 @@
 	# and Slowness I below the corresponding threshold.
 	#
 	#
-	benefitsUnparsed = ["effect,speed,0", "attribute,generic.max_health,1", "attribute,generic.max_health,1;effect,haste,0", "attribute,generic.max_health,1;effect,strength,0", "attribute,generic.max_health,1;attribute,generic.armor_toughness,2", "attribute,generic.max_health,1;effect,regeneration,0", "attribute,generic.max_health,1;effect,speed,1", "attribute,generic.max_health,1;effect,strength,0", "attribute,generic.max_health,1;effect,luck,0", "attribute,generic.max_health,1;attribute,generic.knockback_resistance,1", "attribute,generic.max_health,1;attribute,generic.speed,2", "attribute,generic.max_health,1;attribute,generic.armor_toughness,2", "attribute,generic.max_health,1;effect,haste,1", "attribute,generic.max_health,1;effect,strength,1", "attribute,generic.max_health,1;attribute,generic.armor_toughness,2", "attribute,generic.max_health,1;effect,strength,2", "attribute,generic.max_health,1;effect,luck,1"]
+	benefitsUnparsed = ["attribute,generic.max_health,1", "attribute,generic.max_health,1", "attribute,generic.max_health,1", "attribute,generic.max_health,1", "attribute,generic.max_health,1", "attribute,generic.max_health,1", "attribute,generic.max_health,1", "attribute,generic.max_health,1", "attribute,generic.max_health,1", "attribute,generic.max_health,1", "attribute,generic.max_health,1", "attribute,generic.max_health,1", "attribute,generic.max_health,1", "attribute,generic.max_health,1", "attribute,generic.max_health,1", "attribute,generic.max_health,1", "attribute,generic.max_health,1"]
 	# The minimum number of foods a player needs to eat before any benefits are applied.
 	#
 	#

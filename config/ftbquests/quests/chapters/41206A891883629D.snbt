@@ -244,6 +244,7 @@
 				item: "immersiveengineering:light_engineering"
 				type: "item"
 			}]
+			title: "轻车熟路"
 			x: 17.0d
 			y: -2.0d
 		}
