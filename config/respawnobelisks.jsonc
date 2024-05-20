@@ -93,10 +93,11 @@
         */
         "chargingItems": {
             "minecraft:ender_eye": 25.0,
-            "minecraft:ender_pearl": 10.0
+            "minecraft:ender_pearl": 10.0,
+            "irons_spellbooks:arcane_essence": 5.0
         },
         // Whether dispensers can be used to charge obelisks.
-        "allowDispenserCharging": false,
+        "allowDispenserCharging": true,
         // Sound to play when charging an obelisk.
         "chargingSound": "minecraft:block.respawn_anchor.charge",
         // Sound to play when removing radiance from an obelisk or respawning at an obelisk.
@@ -104,7 +105,7 @@
         // Sound to play when setting your spawn at an obelisk.
         "spawnSettingSound": "minecraft:block.respawn_anchor.set_spawn",
         // How much radiance should be consumed when respawning at an obelisk. (a normal obelisk has 100 max radiance)
-        "respawnCost": 20.0,
+        "respawnCost": 10.0,
         // A list of blocks that can be used to provide an obelisk with infinite radiance.
         "infiniteRadianceBlocks": [
             "minecraft:beacon"
