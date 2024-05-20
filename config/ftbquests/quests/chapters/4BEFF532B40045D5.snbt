@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4BEFF532B40045D5"
+	group: ""
+	icon: "undergarden:frozen_deepturf_block"
+	id: "4BEFF532B40045D5"
+	order_index: 3
+	quest_links: [ ]
+	quests: [{
+		id: "6E08F7A257BCB99A"
+		subtitle: "关于这个寒冷的世界……"
+		tasks: [{
+			id: "291B93D287D7812B"
+			title: "温度与保暖"
+			type: "checkmark"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "世界的表象"
+}
