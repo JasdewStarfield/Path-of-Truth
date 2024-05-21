@@ -16,6 +16,11 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 <br />
 
 <p align="center">
+  
+  <a href="https://github.com/JasdewStarfield/Path-of-Truth/">
+    <img src="https://github.com/JasdewStarfield/Path-of-Truth/blob/master/config/fancymenu/assets/logo_new.png" alt="Logo" width="560" height="80">
+  </a>
+  <br />
   <a href="https://github.com/JasdewStarfield/Path-of-Truth/">
     <img src="kubejs/assets/kubejs/textures/item/buran.png" alt="Logo" width="80" height="80">
   </a>
