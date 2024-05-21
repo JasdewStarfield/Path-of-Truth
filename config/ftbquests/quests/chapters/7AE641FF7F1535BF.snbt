@@ -395,7 +395,9 @@
 		}
 		{
 			dependencies: ["7A7C0A48248FA32B"]
+			description: ["感受钢铁的厚重……"]
 			id: "068A7A1F8FB54E98"
+			subtitle: "科技就是力量"
 			tasks: [{
 				id: "072D81981D3A5820"
 				item: {
@@ -419,7 +421,9 @@
 		}
 		{
 			dependencies: ["2E4B9CF9789B1AF1"]
+			description: ["炮台基本单元1/1"]
 			id: "04AAF6565C04DA94"
+			subtitle: "自防御装置基本要素"
 			tasks: [{
 				id: "4A3C2F09B3D2C958"
 				item: "immersiveengineering:rs_engineering"
