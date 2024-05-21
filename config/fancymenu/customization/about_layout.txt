@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = about
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1715942324425
+  last_edited_time = 1716266866600
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:d2eb7f07-e6f0-4d11-b3ea-80c3002ec954-1715942300191] = [groups:][instances:]
+  [loading_requirement_container_meta:3a55f869-062d-4de7-966f-3a74104e211c-1716266858981] = [groups:][instances:]
 }
 
 customization {
@@ -42,30 +42,6 @@ scroll_list_customization {
   show_scroll_list_header_footer_preview_in_editor = false
   repeat_scroll_list_header_texture = false
   repeat_scroll_list_footer_texture = false
-}
-
-element {
-  source = [source:local]/config/fancymenu/assets/logo.png
-  repeat_texture = false
-  nine_slice_texture = false
-  nine_slice_texture_border_x = 5
-  nine_slice_texture_border_y = 5
-  element_type = image
-  instance_identifier = 7348d97e-519b-49ee-bbb7-11567f2b1191-1714482359633
-  appearance_delay = no_delay
-  appearance_delay_seconds = 1.0
-  fade_in = false
-  fade_in_speed = 1.0
-  anchor_point = top-centered
-  x = -159
-  y = 38
-  width = 318
-  height = 68
-  stretch_x = false
-  stretch_y = false
-  stay_on_screen = true
-  element_loading_requirement_container_identifier = d49e2712-abbf-4687-843e-2ca3373fe9eb-1714482359633
-  [loading_requirement_container_meta:d49e2712-abbf-4687-843e-2ca3373fe9eb-1714482359633] = [groups:][instances:]
 }
 
 element {
@@ -214,5 +190,29 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = f51dc039-de0c-4f3e-bf84-d76cf62d9956-1714482412888
   [loading_requirement_container_meta:f51dc039-de0c-4f3e-bf84-d76cf62d9956-1714482412888] = [groups:][instances:]
+}
+
+element {
+  source = [source:local]/config/fancymenu/assets/logo_new.png
+  repeat_texture = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  element_type = image
+  instance_identifier = b1328302-6a2a-44f6-9a08-e08b41dde60f-1716266860040
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = top-centered
+  x = -228
+  y = 30
+  width = 456
+  height = 70
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 31c9ef2e-e183-4eec-859d-93b9117d0393-1714481572588
+  [loading_requirement_container_meta:31c9ef2e-e183-4eec-859d-93b9117d0393-1714481572588] = [groups:][instances:]
 }
 
