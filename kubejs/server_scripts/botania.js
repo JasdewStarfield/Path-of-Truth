@@ -11,6 +11,17 @@ ServerEvents.recipes(event => {
             '#forge:ingots/tin'
         ]
     )
+
+    //热修：遗忆守卫炼制配方
+    event.recipes.botania.petal_apothecary('undergarden:forgotten_guardian_spawn_egg', 
+        [
+            '#forge:eggs',
+            'immersiveengineering:component_electronic_adv',
+            'botania:aura_ring_greater',
+            'undergarden:forgotten_ingot'
+        ]
+    )
+
     //合成破晓仪式石
     event.recipes.botania.petal_apothecary('bloodmagic:lightritualstone', 
         [
