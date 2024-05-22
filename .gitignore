@@ -56,3 +56,4 @@ config/smoothboot.json
 mods/worldedit-mod-7.2.15.jar
 config/worldedit/worldedit.properties
 /config/worldedit
+config/lsp.json

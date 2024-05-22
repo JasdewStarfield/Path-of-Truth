@@ -420,6 +420,7 @@
 				item: "immersiveengineering:capacitor_creative"
 				type: "item"
 			}]
+			title: "无限电力"
 			x: 14.5d
 			y: -8.0d
 		}
@@ -432,6 +433,7 @@
 				item: "create:creative_motor"
 				type: "item"
 			}]
+			title: "无限应力"
 			x: 17.5d
 			y: -8.0d
 		}
@@ -446,17 +448,20 @@
 				item: "create:creative_fluid_tank"
 				type: "item"
 			}]
+			title: "无限流体"
 			x: 16.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["30C6A0C0DC51D779"]
 			id: "1CDE9847DC820278"
+			subtitle: "终局开端"
 			tasks: [{
 				id: "7A850C07E6EA294F"
 				item: "createchromaticreturn:multiplite_ingot"
 				type: "item"
 			}]
+			title: "最科学的"
 			x: 16.0d
 			y: -10.5d
 		}

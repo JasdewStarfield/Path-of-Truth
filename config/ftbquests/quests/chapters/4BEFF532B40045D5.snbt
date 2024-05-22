@@ -1,4 +1,5 @@
 {
+	autofocus_id: "2BC7BDD7E5EC76E5"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "4BEFF532B40045D5"
@@ -103,6 +104,11 @@
 			]
 			icon: "supplementaries:globe"
 			id: "2BC7BDD7E5EC76E5"
+			rewards: [{
+				id: "26D1957DEBF0C88B"
+				item: "supplementaries:globe"
+				type: "item"
+			}]
 			shape: "octagon"
 			size: 2.0d
 			subtitle: "活着是第一要务"
@@ -163,7 +169,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2BC7BDD7E5EC76E5"]
@@ -515,7 +521,177 @@
 			}]
 			title: "雪橇"
 			x: 1.0d
-			y: 3.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2BC7BDD7E5EC76E5"]
+			description: [
+				"显然，比床便宜，还能带着走，为什么不用呢？"
+				"（不过你还是得在够暖和的地方才能睡觉"
+			]
+			icon: "comforts:sleeping_bag_white"
+			id: "5143DD7D7F9C7CBA"
+			subtitle: "便携的床"
+			tasks: [{
+				id: "5E16A992F57E11B8"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "comforts:sleeping_bags"
+					}
+				}
+				title: "Any #comforts:sleeping_bags"
+				type: "item"
+			}]
+			title: "睡袋"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5143DD7D7F9C7CBA"]
+			description: [
+				"但你都看到这了，为什么不试试呢？"
+				"你可以把吊床挂在两个绳与钉之间，然后你就可以躺在上面了。"
+				"与床和睡袋不同的是，这个东西能且只能用来跳过白天。"
+			]
+			icon: "comforts:hammock_white"
+			id: "22FA1E23310625D7"
+			subtitle: "不建议在冬日使用"
+			tasks: [
+				{
+					id: "5AA9D18E750203DC"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "comforts:hammocks"
+						}
+					}
+					title: "Any #comforts:hammocks"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "39F5341FB393BE11"
+					item: "comforts:rope_and_nail"
+					type: "item"
+				}
+			]
+			title: "吊床"
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2E7818CF013586F1"]
+			description: [
+				"在一些地方，你可以找到盐矿。用它你就能制作食盐，然后给各种食物调味！"
+				"调味的食物更有营养，能够额外回复饱食度。"
+			]
+			icon: "salt:salt"
+			id: "14F65F48FC31A9C9"
+			subtitle: "这饭没味啊"
+			tasks: [
+				{
+					id: "47D4152C11D31CE7"
+					item: "salt:raw_rock_salt"
+					type: "item"
+				}
+				{
+					id: "434F8CFEB938F9FE"
+					item: "salt:salt"
+					type: "item"
+				}
+			]
+			title: "盐"
+			x: 3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2BC7BDD7E5EC76E5"]
+			description: [
+				"如果有同种物品过多的情况，就试试抽屉吧！"
+				"每个抽屉可以存储众多的单一种类物品（如果有多个格子则能存储对应的种数，但每种能存储的量也会相应降低）。右键抽屉正面可以放入，左键则是拿取（Shift拿取一组）。"
+				"哦对了，它还可以在破坏时保留内容物！这下可以当小潜影盒了。"
+			]
+			id: "3A2CCC29ACE28498"
+			subtitle: "虚空能源压缩"
+			tasks: [{
+				id: "0C0155F6F3E27FF3"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "storagedrawers:drawers"
+					}
+				}
+				title: "Any #storagedrawers:drawers"
+				type: "item"
+			}]
+			title: "抽屉"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3A2CCC29ACE28498"]
+			description: [
+				"抽屉还能升级！"
+				"用升级模板可以做出多种升级，功能包括但不限于增大储量，销毁物品等等。"
+			]
+			icon: "storagedrawers:diamond_storage_upgrade"
+			id: "360CCFCD57F813D7"
+			subtitle: "叮"
+			tasks: [{
+				id: "09A462DE1CB10D92"
+				item: "storagedrawers:upgrade_template"
+				type: "item"
+			}]
+			title: "升级！"
+			x: 5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["05BA4137086115E9"]
+			description: ["这个系列的伪装方块配方很简单，而且可以把任意方块放入以复制其纹理！但它不会产生那个方块应有的特效，所以更适合用来搭建建筑。"]
+			id: "39DA192CE817B365"
+			subtitle: "来骗，来偷袭"
+			tasks: [{
+				id: "6E39E76D541600D3"
+				item: "copycats:copycat_block"
+				type: "item"
+			}]
+			title: "以假乱真"
+			x: -3.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2BC7BDD7E5EC76E5"]
+			description: [
+				"在背包界面，你可以打开时装盔甲栏！"
+				"装备在时装栏的护甲会优先显示，但是，它们不会产生任何实际效果。"
+			]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						Insulation: [ ]
+					}
+				}
+				id: "immersive_armors:prismarine_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3519ED0299640CF4"
+			subtitle: "这很魔法"
+			tasks: [{
+				id: "709B099176F1DB7F"
+				title: "知道了"
+				type: "checkmark"
+			}]
+			title: "护甲幻化"
+			x: 0.0d
+			y: 5.5d
 		}
 	]
 	subtitle: ["The Representation of This World"]
