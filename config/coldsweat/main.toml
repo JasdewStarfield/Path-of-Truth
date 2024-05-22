@@ -22,7 +22,7 @@ Difficulty = 2
 ["Details about how the player is affected by temperature"]
 	#Defines the minimum habitable temperature
 	#Range: -Infinity ~ Infinity
-	"Minimum Habitable Temperature" = 0.21428571428877552
+	"Minimum Habitable Temperature" = 0.08571428571551021
 	#Defines the maximum habitable temperature
 	#Range: -Infinity ~ Infinity
 	"Maximum Habitable Temperature" = 1.619047619047619

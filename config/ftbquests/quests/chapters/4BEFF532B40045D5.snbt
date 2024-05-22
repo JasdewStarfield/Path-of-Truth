@@ -162,8 +162,8 @@
 				item: "minecraft:spyglass"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 3.0d
+			x: -1.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["2BC7BDD7E5EC76E5"]
@@ -277,8 +277,8 @@
 			dependencies: ["6A93A46261B6C8F0"]
 			description: [
 				"床这种东西太普通了，显然用来设置出生点不太合适。"
-				"现在，你需要找到或者放置重生方尖碑。它们可以和床一样设置出生点，但是很难被完整地破坏。"
-				"然而，每一次复活都是需要消耗其中的能量的。如果能量耗尽再尝试复活，你会获得血量上限下降的Debuff！如果你不及时充能，它还会随着你复活越变越糟，以至于最后丢失复活点！"
+				"现在，你需要找到或者放置重生方尖碑。它们可以和床一样设置出生点，但是很难被完整地破坏。这带来的好处是：你可以自由选择复活的点位了（包括世界出生点）。"
+				"然而，每一次复活都是需要消耗其中的能量的（除了你房间里的那个，它下面的基座方块使它得以拥有无限能量）。如果你不及时充能，它会失去能量，以至于最后耗尽能量，丢失复活点！"
 				""
 				"目前，可以用来充能的物品有：末影珍珠，末影之眼，奥术源质。奥术源质可能是你前期最容易获取的，但是也只能给予少量充能。"
 			]
@@ -495,6 +495,27 @@
 			title: "知识掌控者"
 			x: -3.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["2BC7BDD7E5EC76E5"]
+			description: ["如果你想要跑图的话，就用这个吧！简单好做，还能漂移！"]
+			id: "265C4AEB2E006996"
+			subtitle: "起飞！（仅限雪地）"
+			tasks: [{
+				id: "39F1C8F6EF93A8E5"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "snowyspirit:sleds"
+					}
+				}
+				title: "Any #snowyspirit:sleds"
+				type: "item"
+			}]
+			title: "雪橇"
+			x: 1.0d
+			y: 3.5d
 		}
 	]
 	subtitle: ["The Representation of This World"]
