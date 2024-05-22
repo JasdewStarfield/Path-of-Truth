@@ -18,6 +18,7 @@
         */
         "bannedRespawnBlocks": [
             "minecraft:respawn_anchor",
+            "undergarden:depthrock_bed",
             "#minecraft:beds"
         ],
         // Whether vanilla's nether respawn anchors should be repurposed and turned into 'Destruction Catalysts'
@@ -25,9 +26,9 @@
     },
     "secondarySpawnPoints": {
         // Whether secondary spawn points should be enabled. Secondary respawn points can be used to have multiple respawn points, triggered at various times.
-        "enableSecondarySpawnPoints": false,
+        "enableSecondarySpawnPoints": true,
         // Determines the overall maximum amount of secondary respawn points you can have. -1 is infinite.
-        "overallMaxPoints": 5,
+        "overallMaxPoints": -1,
         /*
         Determines a per-block cap on the amount of respawn points you can have. -1 is infinite.
         Tags(which get treated as a single entry) are supported by beginning the entry with a #.
@@ -57,7 +58,7 @@
         IF_OBELISK: Players can only choose if their respawn point is an obelisk.
         UNLESS_OBELISK: Players can only choose if their respawn point is not an obelisk.
         */
-        "secondarySpawnMode": "NEVER",
+        "secondarySpawnMode": "ALWAYS",
         /*
         When players are allowed to choose to respawn at world spawn.
         NEVER: Players can never choose.
@@ -68,11 +69,11 @@
         IF_OBELISK: Players can only choose if their respawn point is an obelisk.
         UNLESS_OBELISK: Players can only choose if their respawn point is not an obelisk.
         */
-        "worldSpawnMode": "NEVER"
+        "worldSpawnMode": "ALWAYS"
     },
     "immortalityCurse": {
         // Whether the curse of immortality should be enabled or not.
-        "enableCurse": true,
+        "enableCurse": false,
         // Sound to play when respawning with the immortality curse.
         "curseSound": "minecraft:entity.elder_guardian.curse",
         /*
@@ -108,7 +109,8 @@
         "respawnCost": 10.0,
         // A list of blocks that can be used to provide an obelisk with infinite radiance.
         "infiniteRadianceBlocks": [
-            "minecraft:beacon"
+            "minecraft:beacon",
+            "kubejs:obelisk_base"
         ],
         // The beacon level required for it to provide infinite radiance.
         "requiredBeaconLevel": 3,
