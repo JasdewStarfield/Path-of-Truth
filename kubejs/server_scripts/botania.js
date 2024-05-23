@@ -92,6 +92,11 @@ ServerEvents.recipes(event => {
     event.recipes.botania.mana_infusion('immersiveengineering:seed', 'farmersdelight:tomato_seeds', 100)
     event.recipes.botania.mana_infusion('minecraft:wheat_seeds', 'immersiveengineering:seed', 100)
 
+    //海带转化
+    event.recipes.botania.mana_infusion('minecraft:kelp', '#minecraft:leaves', 500)
+    event.recipes.botania.mana_infusion('undergarden:glitterkelp', 'minecraft:kelp', 100,'botania:alchemy_catalyst')
+    event.recipes.botania.mana_infusion('minecraft:kelp', 'undergarden:glitterkelp', 100,'botania:alchemy_catalyst')
+
     //魔钢-奥术源质兑换
     event.recipes.botania.mana_infusion('4x irons_spellbooks:arcane_essence', 'botania:manasteel_ingot', 1000, 'botania:alchemy_catalyst')
     //变色龙蛋生产

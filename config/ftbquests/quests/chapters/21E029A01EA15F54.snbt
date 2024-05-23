@@ -873,6 +873,37 @@
 			x: 6.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["1B2D939907CB4DF0"]
+			description: [
+				"由于实在是太难找，你可以通过魔力将陆地上的叶子转化为海里的叶子！"
+				"有传送带了（确信）"
+			]
+			id: "19CAA60981A6A8E8"
+			subtitle: "冰海确实不太行，但魔力可以！"
+			tasks: [{
+				id: "25A9EBF1200D1329"
+				item: "minecraft:kelp"
+				type: "item"
+			}]
+			title: "罕见作物"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["57B126A840CCD6E4"]
+			description: ["按规定放置熏香祭坛，可以让你的自我献祭更加有效……"]
+			id: "41990A4F90A100DA"
+			subtitle: "失血加成"
+			tasks: [{
+				id: "67AC0274A819CCD0"
+				item: "bloodmagic:incensealtar"
+				type: "item"
+			}]
+			title: "虔诚奉献"
+			x: 0.0d
+			y: -4.0d
+		}
 	]
 	subtitle: ["Blood and Soul"]
 	title: "鲜血与灵魂"
