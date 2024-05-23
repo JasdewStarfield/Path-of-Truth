@@ -461,5 +461,6 @@
 			y: -9.0d
 		}
 	]
+	subtitle: ["Magic Progressions"]
 	title: "魔法进程表"
 }

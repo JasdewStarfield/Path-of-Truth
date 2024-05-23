@@ -1,17 +1,35 @@
 {
-	autofocus_id: "6A1B42D208C780BD"
+	autofocus_id: "4543C26614BBBE4C"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "1D53DE04FE0F0355"
 	group: ""
 	hide_quest_details_until_startable: true
+	hide_quest_until_deps_visible: true
 	icon: "minecraft:skeleton_skull"
 	id: "1D53DE04FE0F0355"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 1.0d
+		hover: [ ]
+		image: "kubejs:textures/logo_new.png"
+		rotation: 0.0d
+		width: 6.581993569131833d
+		x: 0.0d
+		y: -7.5d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			can_repeat: false
+			dependencies: [
+				"170E4E15DBE89604"
+				"7B54E20910D7008D"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"欢迎来到“真理之路”整合包。"
 				"本整合包由&b狂野工程师JasdewStarfield&r与&a抽象魔法师MidnightPigeon&r联合创作。"
@@ -27,6 +45,8 @@
 				item: "ftbquests:book"
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 2.0d
 			subtitle: "科学与魔法都是追求真理的手段。"
 			tasks: [{
 				id: "2172F4EA05003DC8"
@@ -34,7 +54,7 @@
 				type: "checkmark"
 			}]
 			x: 0.0d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -56,7 +76,7 @@
 				type: "item"
 			}]
 			title: "科技之基"
-			x: -2.0d
+			x: -1.0d
 			y: 0.0d
 		}
 		{
@@ -85,7 +105,7 @@
 				type: "item"
 			}]
 			title: "魔法之始"
-			x: 2.0d
+			x: 1.0d
 			y: 0.0d
 		}
 		{
@@ -125,7 +145,7 @@
 				type: "dimension"
 			}]
 			title: "终末之境"
-			x: 0.0d
+			x: -2.0d
 			y: -2.0d
 		}
 		{
@@ -147,8 +167,53 @@
 				type: "item"
 			}]
 			title: "生存之道"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			icon: "createdeco:decal_warning"
+			id: "4543C26614BBBE4C"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "作出选择"
+			tasks: [{
+				id: "46C07CCEE74734F5"
+				title: "我已知晓，开始选择"
+				type: "checkmark"
+			}]
+			title: "开始之前……"
 			x: 0.0d
-			y: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4543C26614BBBE4C"]
+			icon: "createdeco:decal_left"
+			id: "170E4E15DBE89604"
+			incompatible: ["7B54E20910D7008D"]
+			subtitle: "考虑周全……"
+			tasks: [{
+				id: "1B31A712CF22EEBF"
+				title: "我确定独自开始"
+				type: "checkmark"
+			}]
+			title: "选择：独自开始"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4543C26614BBBE4C"]
+			icon: "createdeco:decal_right"
+			id: "7B54E20910D7008D"
+			incompatible: ["170E4E15DBE89604"]
+			subtitle: "考虑周全……"
+			tasks: [{
+				id: "0E8EB110249EE98D"
+				title: "我愿意留在世界出生点"
+				type: "checkmark"
+			}]
+			title: "选择：留在世界出生点"
+			x: 1.0d
+			y: -4.0d
 		}
 	]
 	subtitle: ["Ahead of Everything Else"]
