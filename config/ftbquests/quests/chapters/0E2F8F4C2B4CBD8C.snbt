@@ -933,7 +933,13 @@
 				"6A1B42D208C780BD"
 				"21246254369E4A91"
 			]
+			description: ["探索古代遗迹并找出所有种类的神奇图腾！"]
 			id: "70726F375FFF5CF3"
+			rewards: [{
+				id: "0CA3357EC6D9F217"
+				item: "artifacts:chorus_totem"
+				type: "item"
+			}]
 			subtitle: "考古#2"
 			tasks: [
 				{
@@ -975,6 +981,11 @@
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"（尽可能）找到并组装每一种生物的化石！"
+				"看起来有点哈人……"
+				"不同的化石有不同的作用，但这就要你自己探索了。"
+			]
 			id: "21246254369E4A91"
 			rewards: [{
 				id: "297586588106AE0B"
@@ -1026,6 +1037,22 @@
 			description: ["出于为您的肝考虑，我们只要求收集任意15种陶片……"]
 			id: "268A62891A5A104A"
 			min_required_tasks: 15
+			rewards: [{
+				id: "2836DC6D480087C3"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:netherite_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 12
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "考古#3"
 			tasks: [
 				{
@@ -1135,7 +1162,16 @@
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"做出农夫乐事系列中的各类大菜！"
+				"&o&m&5“吃穿虚空”&r&r&r"
+			]
 			id: "34D11CBE75FBEDF5"
+			rewards: [{
+				id: "5F88A80A1B13DB38"
+				item: "sophisticatedbackpacks:advanced_feeding_upgrade"
+				type: "item"
+			}]
 			subtitle: "超级美食家"
 			tasks: [
 				{

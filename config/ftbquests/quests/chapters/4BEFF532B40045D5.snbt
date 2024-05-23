@@ -395,14 +395,11 @@
 		}
 		{
 			dependencies: ["2E7818CF013586F1"]
-			description: ["愣着干嘛，按W思索啊！"]
-			icon: {
-				Count: 1b
-				ForgeCaps: {
-					Parent: { }
-				}
-				id: "create_central_kitchen:cooking_guide"
-			}
+			description: [
+				"愣着干嘛，按W思索啊！"
+				"我为什么一定要亲自做饭.jpg"
+			]
+			icon: "create_central_kitchen:cooking_guide"
 			id: "6770CC9E8135B472"
 			subtitle: "烈焰人，你最好的厨师"
 			tasks: [
@@ -504,7 +501,10 @@
 		}
 		{
 			dependencies: ["2BC7BDD7E5EC76E5"]
-			description: ["如果你想要跑图的话，就用这个吧！简单好做，还能漂移！"]
+			description: [
+				"如果你想要跑图的话，就用这个吧！简单好做，还能漂移！"
+				"&o&m&b滑雪大冒险3D VER&r&r&r"
+			]
 			id: "265C4AEB2E006996"
 			subtitle: "起飞！（仅限雪地）"
 			tasks: [{
@@ -554,6 +554,7 @@
 				"但你都看到这了，为什么不试试呢？"
 				"你可以把吊床挂在两个绳与钉之间，然后你就可以躺在上面了。"
 				"与床和睡袋不同的是，这个东西能且只能用来跳过白天。"
+				"&m&a&o给自己找罪受的悠长假日&r&r&r"
 			]
 			icon: "comforts:hammock_white"
 			id: "22FA1E23310625D7"
@@ -652,7 +653,10 @@
 		}
 		{
 			dependencies: ["05BA4137086115E9"]
-			description: ["这个系列的伪装方块配方很简单，而且可以把任意方块放入以复制其纹理！但它不会产生那个方块应有的特效，所以更适合用来搭建建筑。"]
+			description: [
+				"这个系列的伪装方块配方很简单，而且可以把任意方块放入以复制其纹理！但它不会产生那个方块应有的特效，所以更适合用来搭建建筑。"
+				"植物魔法的幻影平台也有近似的效果，这里就不再赘述，不过……那个平台会让你掉下去（躺"
+			]
 			id: "39DA192CE817B365"
 			subtitle: "来骗，来偷袭"
 			tasks: [{
