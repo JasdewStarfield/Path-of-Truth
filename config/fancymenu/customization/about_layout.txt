@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = about
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1716266866600
+  last_edited_time = 1716482398330
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:3a55f869-062d-4de7-966f-3a74104e211c-1716266858981] = [groups:][instances:]
+  [loading_requirement_container_meta:6e771b26-685d-4f22-b5c9-8fe5b0abbc6d-1716482271597] = [groups:][instances:]
 }
 
 customization {
@@ -123,10 +123,10 @@ element {
 
 element {
   interactable = true
-  source = 鸣谢：%n%%n%茉露星圃，Jasdew Starfield，负责科技侧内容编写，以及整体框架。%n%%n%深夜鸽子，MidnightPigeon，负责魔法侧内容编写，以及文本设计。%n%%n%还有你，{"placeholder":"playername"}。真诚感谢你的游玩，我们期待你的反馈！%n%%n%（欢迎点击下方的Github链接来了解更多，以及讨论和汇报问题！）
+  source = 鸣谢：%n%%n%茉露星圃，Jasdew Starfield，负责科技侧内容编写，以及整体框架。%n%%n%深夜鸽子，MidnightPigeon，负责魔法侧内容编写，以及文本设计。%n%%n%JackyBlackson，我们敬爱的腐竹，为我们写了很多js脚本并提供了建筑和音乐支持%n%（你现在正听到的音乐就是由他作曲的）。%n%%n%还有你，{"placeholder":"playername"}。真诚感谢你的游玩，我们期待你的反馈！%n%%n%（欢迎点击下方的Github链接来了解更多，以及讨论和汇报问题！）
   source_mode = direct
   shadow = true
-  scale = 1.0
+  scale = 0.75
   base_color = #FFFFFFFF
   text_border = 2
   line_spacing = 2

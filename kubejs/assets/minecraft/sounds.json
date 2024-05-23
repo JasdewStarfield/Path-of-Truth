@@ -1,0 +1,15 @@
+{
+	"music.menu": {
+		"sounds": [
+			{
+				"name": "kubejs:yc_main_theme",
+				"stream": true
+			},
+			{
+				"name": "kubejs:yc_main_title",
+				"stream": true
+			}
+		],
+		"replace": true
+	}
+}

@@ -234,4 +234,7 @@ ServerEvents.recipes(event => {
         event.recipes.createFilling(inter, [inter, Fluid.water(500)]),
         event.recipes.createPressing(inter, inter)
     ]).transitionalItem(inter).loops(1)
+
+    //黑曜石支持用石磨处理
+    event.recipes.create.milling(Item.of('create:powdered_obsidian').withChance(0.75), '#forge:obsidian')
 })

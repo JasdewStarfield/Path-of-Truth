@@ -1,0 +1,26 @@
+{
+    "music.pluto_nocturnus": {
+        "sounds": [
+            {
+                "name": "kubejs:pluto_nocturnus",
+                "stream": true
+            }
+        ]
+    },
+    "music.quam_admirabile_mundi": {
+        "sounds": [
+            {
+                "name": "kubejs:quam_admirabile_mundi",
+                "stream": true
+            }
+        ]
+    },
+    "music.yggdrasil_original_mix": {
+        "sounds": [
+            {
+                "name": "kubejs:yggdrasil_original_mix",
+                "stream": true
+            }
+        ]
+    }
+}

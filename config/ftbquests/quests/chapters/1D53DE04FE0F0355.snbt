@@ -206,7 +206,7 @@
 				"选择独自开始，你将会&9获得一个自己的小屋&r，但是&b代价是与已有人烟的区域分隔开来。&r"
 				"该选项适用于&c希望独自探索的服务器玩家。&r"
 				""
-				"While you choose start your game alone, you will &9get a random spawn point and a gift structure.&r However, this means &byou will born without other players around.&r"
+				"While you choose start your game alone, you will &9get a random spawnpoint and a gift structure.&r However, this means &byou will be spawned without other players around.&r"
 				"This option is suitable for &cserver players who want to explore alone.&r"
 			]
 			icon: "createdeco:decal_left"

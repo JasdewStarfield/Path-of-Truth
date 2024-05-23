@@ -1,0 +1,74 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = %fancymenu:universal_layout%
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1716481342483
+  is_enabled = false
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:cf47377f-8704-492c-98ee-cd0624d9a098-1716481342488] = [groups:][instances:]
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+  repeat_scroll_list_header_texture = false
+  repeat_scroll_list_footer_texture = false
+}
+
+element {
+  play_menu_music = false
+  play_world_music = true
+  element_type = music_controller
+  instance_identifier = c6f31253-92fa-4e4f-a10e-86a34c1009cd-1716480835213
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -168
+  y = -49
+  width = 100
+  height = 100
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 738e75e5-b5db-4ff9-a138-e99838e14c2b-1716480835213
+  [loading_requirement_container_meta:738e75e5-b5db-4ff9-a138-e99838e14c2b-1716480835213] = [groups:][instances:]
+}
+
+element {
+  audio_instance_0 = [source:local]/config/fancymenu/assets/yc_main_title.ogg
+  audio_instance_1 = [source:local]/config/fancymenu/assets/yc_main_theme.ogg
+  play_mode = shuffle
+  looping = true
+  volume = 1.0
+  sound_source = music
+  element_type = audio_v2
+  instance_identifier = 8e9d06a6-4d70-4bae-8e3b-d87e0efddda9-1716480879980
+  appearance_delay = first_time
+  appearance_delay_seconds = 1.0
+  fade_in = true
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = 90
+  y = -50
+  width = 100
+  height = 100
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = cf4adc69-7140-4efd-9a15-691b4cc1589d-1716480879980
+  [loading_requirement_container_meta:cf4adc69-7140-4efd-9a15-691b4cc1589d-1716480879980] = [groups:][instances:]
+}
+

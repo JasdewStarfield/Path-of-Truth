@@ -9,4 +9,9 @@ LootJS.modifiers((event) => {
     event.addBlockLootModifier("minecraft:grass").removeLoot("immersiveengineering:seed")
     event.addBlockLootModifier("minecraft:tall_grass").removeLoot("immersiveengineering:seed")
     event.addLootTypeModifier(LootType.CHEST).removeLoot(Item.of('minecraft:enchanted_book').enchant('supplementaries:stasis', 1))
+
+    event
+        .addLootTableModifier(/.*blue_skies:chests.*dungeon.*/)
+        .randomChance(0.1)
+        .addLoot("kubejs:disc_fragment_yggdrasil");
 })
