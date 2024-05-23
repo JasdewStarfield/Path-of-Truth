@@ -425,6 +425,20 @@ ServerEvents.recipes(event => {
     })
 
     //炼金矩阵配方修改
+    //神秘光碟合成
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'bloodmagic:apprenticebloodorb'
+        },
+        "baseinput": {
+            "item": 'botania:lens_normal'
+        },
+        "output": {
+            "item": 'kubejs:music_disc_quam_admirabile_mundi'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
     //点铁成金
     event.custom({
         "type": "bloodmagic:array",

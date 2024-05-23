@@ -1211,7 +1211,57 @@
 				}
 			]
 			title: "五星级大厨"
-			x: 0.0d
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"在探索真理的路上，你会发现通过三种手段分别可以合成一张神秘的唱片……"
+				"集齐三张唱片，你就可以获得这世界上的最强声音）"
+			]
+			id: "48783396F615D90E"
+			rewards: [{
+				id: "11F0B8AE3D972418"
+				item: {
+					Count: 1b
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:sonic_boom"
+								index: 0
+								level: 3
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "工业，魔法，探索"
+			tasks: [
+				{
+					id: "3F82AF4F070F9EF7"
+					item: "kubejs:music_disc_pluto_nocturnus"
+					type: "item"
+				}
+				{
+					id: "65FDCB5E0F7939EA"
+					item: "kubejs:music_disc_quam_admirabile_mundi"
+					type: "item"
+				}
+				{
+					id: "65811F9D0DA93511"
+					item: "kubejs:music_disc_yggdrasil_original_mix"
+					type: "item"
+				}
+			]
+			title: "神秘旋律"
+			x: 1.0d
 			y: -4.0d
 		}
 	]
