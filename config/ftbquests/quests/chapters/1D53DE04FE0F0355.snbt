@@ -171,46 +171,89 @@
 			y: -2.0d
 		}
 		{
+			description: [
+				"在一切开始之前，&l&c你需要对你的路途做出选择。&r&r"
+				""
+				"At the beginning of everything, &l&cyou have to choose your path.&r&r"
+				""
+				"&l&4这非常重要！&r&r"
+				"&l&4THIS IS VERY IMPORTANT!&r&r"
+			]
 			icon: "createdeco:decal_warning"
 			id: "4543C26614BBBE4C"
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "作出选择"
-			tasks: [{
-				id: "46C07CCEE74734F5"
-				title: "我已知晓，开始选择"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "46C07CCEE74734F5"
+					title: "我已知晓，开始选择"
+					type: "checkmark"
+				}
+				{
+					id: "37F1F323F81DC6A6"
+					title: "Got it."
+					type: "checkmark"
+				}
+			]
 			title: "开始之前……"
 			x: 0.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["4543C26614BBBE4C"]
+			description: [
+				"选择独自开始，你将会&9获得一个自己的小屋&r，但是&b代价是与已有人烟的区域分隔开来。&r"
+				"该选项适用于&c希望独自探索的服务器玩家。&r"
+				""
+				"While you choose start your game alone, you will &9get a random spawn point and a gift structure.&r However, this means &byou will born without other players around.&r"
+				"This option is suitable for &cserver players who want to explore alone.&r"
+			]
 			icon: "createdeco:decal_left"
 			id: "170E4E15DBE89604"
 			incompatible: ["7B54E20910D7008D"]
 			subtitle: "考虑周全……"
-			tasks: [{
-				id: "1B31A712CF22EEBF"
-				title: "我确定独自开始"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "1B31A712CF22EEBF"
+					title: "我确定独自开始"
+					type: "checkmark"
+				}
+				{
+					id: "79CCBB2AA91935AA"
+					title: "I confirm that I want live alone."
+					type: "checkmark"
+				}
+			]
 			title: "选择：独自开始"
 			x: -1.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["4543C26614BBBE4C"]
+			description: [
+				"选择从世界出生点开始，你将会&9能够和他人快速聚集在一起&r，代价是&b你们要共享初始结构和物资。&r"
+				"适合&c信奉人多力量大的玩家团体或者单人进行整合包游玩的玩家。&r"
+				""
+				"By choosing to start from the world spawn point, &9you will be able to quickly gather together with others&r, at the cost of &bsharing initial structures and resources.&r "
+				"This option is suitable for &cplayers who believe in the strength of numbers or for individuals playing this modpack.&r"
+			]
 			icon: "createdeco:decal_right"
 			id: "7B54E20910D7008D"
 			incompatible: ["170E4E15DBE89604"]
 			subtitle: "考虑周全……"
-			tasks: [{
-				id: "0E8EB110249EE98D"
-				title: "我愿意留在世界出生点"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "0E8EB110249EE98D"
+					title: "我愿意留在世界出生点"
+					type: "checkmark"
+				}
+				{
+					id: "1E3678EB4321AFF8"
+					title: "I want to born at the world spawnpoint."
+					type: "checkmark"
+				}
+			]
 			title: "选择：留在世界出生点"
 			x: 1.0d
 			y: -4.0d
