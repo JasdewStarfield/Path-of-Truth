@@ -17,14 +17,14 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 <p align="center">
   
-  <a href="https://github.com/JasdewStarfield/Path-of-Truth/">
+  <a href="https://www.curseforge.com/minecraft/modpacks/path-of-truth">
     <img src="https://github.com/JasdewStarfield/Path-of-Truth/blob/master/config/fancymenu/assets/logo_new.png" alt="Logo" width="560" height="80">
   </a>
   <br />
-  <a href="https://github.com/JasdewStarfield/Path-of-Truth/">
+  <a href="https://github.com/JasdewStarfield">
     <img src="kubejs/assets/kubejs/textures/item/buran.png" alt="Logo" width="80" height="80">
   </a>
-  <a href="https://github.com/JasdewStarfield/Path-of-Truth/">
+  <a href="https://github.com/MidnightPigeon">
     <img src="kubejs/assets/kubejs/textures/item/midnight.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -35,7 +35,7 @@ A Minecraft 1.20.1 Forge tech & magic modpack
     <a href="https://github.com/JasdewStarfield/Path-of-Truth"><strong>探索本项目的文档 »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/JasdewStarfield/Path-of-Truth">查看Demo</a>
+    <a href="https://www.curseforge.com/minecraft/modpacks/path-of-truth">查看Demo</a>
     ·
     <a href="https://github.com/JasdewStarfield/Path-of-Truth/issues">报告Bug</a>
     ·
@@ -100,7 +100,7 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 标准版安装：
 
 
-1. 下载本整合包的Release版zip文件（在Github上直接下载，或在官方Curseforge页面上下载（暂未发布））。
+1. 下载本整合包的Release版zip文件（在Github上直接下载，或在[官方Curseforge页面](https://www.curseforge.com/minecraft/modpacks/path-of-truth)上下载）。
 2. 使用支持Curseforge整合包格式的启动器（例如HMCL）安装该文件。
 
 
@@ -141,7 +141,7 @@ filetree
 
 ### 贡献者
 
-请参阅**[贡献者页面](https://github.com/JasdewStarfield/Path-of-Truth/graphs/contributors)** 查阅为该项目做出贡献的开发者。
+请参阅[贡献者页面](https://github.com/JasdewStarfield/Path-of-Truth/graphs/contributors) 查阅为该项目做出贡献的开发者。
 
 #### 如何参与开源项目
 
@@ -165,6 +165,8 @@ filetree
 茉露星圃 | Jasdew Starfield
 
 深夜鸽子 | MidnightPigeon
+
+同时感谢为我们提供了代码、建筑、配乐支持的JackyBlackson
 
  *您也可以在贡献者名单中参看所有参与该项目的开发者。*
 
