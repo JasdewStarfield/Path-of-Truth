@@ -39,6 +39,16 @@ ServerEvents.recipes(event => {
     "result":{"base_ingredient":{"tag":"forge:dusts/iron"},"count":1},
     "secondaries":[{"chance":0.75,"output":{"tag":"forge:dusts/iron"}}]
   })
+  event.replaceOutput(
+    { id: 'create:splashing/gravel' }, // Arg 1: the filter
+    '#forge:nuggets/iron',            // Arg 2: the item to replace
+    '#forge:nuggets/tin'
+  )
+  event.replaceOutput(
+    { id: 'farmersdelight:cutting/saddle' }, // Arg 1: the filter
+    '#forge:nuggets/iron',            // Arg 2: the item to replace
+    '#forge:nuggets/copper'
+  )
 
   //铜
   event.remove([{id:'create:splashing/crushed_raw_copper'}])
