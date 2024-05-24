@@ -6,5 +6,6 @@
     "item.kubejs.music_disc_yggdrasil_original_mix.desc": "Jacky Blackson - Yggdrasil (Original Mix)",
     "item.kubejs.music_disc_yggdrasil_original_mix": "Music Disc",
     "item.kubejs.incomplete_music_disc_pluto_nocturnus.desc": "Jacky Blackson - Pluto Nocturnus - (Unreleased)",
-    "item.kubejs.disc_fragment_yggdrasil.desc": "Rarely found in chests of Blue Skies Dungeons. You can only see a faint line of text: Yggdrasil..."
+    "item.kubejs.disc_fragment_yggdrasil.desc": "Rarely found in chests of Blue Skies Dungeons. You can only see a faint line of text: Yggdrasil...",
+    "item.kubejs.obelisk_base.desc": "You feel a strong power emitting from this block...If you put it under the obelisk, then it will recieve infinite charge (but you cannot move the base after placement)."
 }
