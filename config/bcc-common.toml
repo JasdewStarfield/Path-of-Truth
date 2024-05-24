@@ -3,11 +3,11 @@
 [general]
 	#The CurseForge project ID for the modpack
 	#Range: > 0
-	modpackProjectID = 0
+	modpackProjectID = 1022312
 	#The name of the modpack
 	modpackName = "Path of Truth"
 	#The version of the modpack
-	modpackVersion = "V1.0"
+	modpackVersion = "V1.1"
 	#Use the metadata.json to determine the modpack version
 	#ONLY ENABLE THIS IF YOU KNOW WHAT YOU ARE DOING
 	useMetadata = false

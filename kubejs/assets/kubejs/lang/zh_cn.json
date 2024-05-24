@@ -8,6 +8,7 @@
   "item.kubejs.incomplete_electronic_engineering": "未完成的电子工程块",
   "item.kubejs.incomplete_component_electronic_adv": "未完成的高级电子原件",
   "item.kubejs.incomplete_brass_ingot": "未完成的黄铜锭",
+  "item.kubejs.incomplete_buran": "未完成的暴风雪",
   "item.kubejs.bronze_dust": "青铜粉",
   "item.kubejs.bronze_ingot": "青铜锭",
   "item.kubejs.bronze_nugget": "青铜粒",
@@ -30,14 +31,17 @@
   "item.kubejs.music_disc_yggdrasil_original_mix.desc": "Jacky Blackson - Yggdrasil (Original Mix)",
   "item.kubejs.music_disc_yggdrasil_original_mix": "音乐唱片",
   "item.kubejs.incomplete_music_disc_pluto_nocturnus": "未完成的音乐唱片",
-  "item.kubejs.incomplete_music_disc_pluto_nocturnus.desc": "Jacky Blackson - Pluto Nocturnus - （尚未发行）",
+  "item.kubejs.incomplete_music_disc_pluto_nocturnus.desc1": "Jacky Blackson - Pluto Nocturnus",
+  "item.kubejs.incomplete_music_disc_pluto_nocturnus.desc2": "“未发行版”",
   "item.kubejs.disc_fragment_yggdrasil": "神秘的唱片残片",
-  "item.kubejs.disc_fragment_yggdrasil.desc": "罕见地从蔚蓝浩空中的地牢箱子里发现。你只能看到一行模糊的字：Yggdrasil……",
+  "item.kubejs.disc_fragment_yggdrasil.desc1": "罕见地从蔚蓝浩空中的地牢箱子里发现",
+  "item.kubejs.disc_fragment_yggdrasil.desc2": "你只能看到一行模糊的字：Yggdrasil……",
   "block.kubejs.andesite_engineering": "动力工程块",
   "block.kubejs.fluid_engineering": "流体工程块",
   "block.kubejs.precise_engineering": "精密工程块",
   "block.kubejs.electronic_engineering": "电子工程块",
   "block.kubejs.bronze_block": "青铜块",
   "block.kubejs.obelisk_base": "重生石碑基座",
-  "item.kubejs.obelisk_base.desc": "你感到一股强大的力量从其中散发出来……如果你把它放在石碑下面，那么石碑就可以被无限充能（但是你不可以再次移动基座方块）。"
+  "item.kubejs.obelisk_base.desc1": "你感到一股强大的力量从其中散发出来……",
+  "item.kubejs.obelisk_base.desc2": "如果你把它放在石碑下面，那么石碑就可以被无限充能（但是你不可以再次移动基座方块）"
 }

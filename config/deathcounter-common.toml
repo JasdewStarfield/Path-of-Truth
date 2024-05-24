@@ -4,11 +4,11 @@
 	#What kind of message should we send players when they die?
 	#Accepts: NONE, SHORT, LONG
 	#Allowed Values: NONE, SHORT, LONG
-	messageType = "LONG"
+	messageType = "SHORT"
 	#Should we broadcast the leaderboard to the player when they die?
 	#Accepts: NONE, SELF, ALL
 	#Allowed Values: NONE, SELF, ALL
-	broadcastOnDeath = "NONE"
+	broadcastOnDeath = "SELF"
 	#Number of names to show in the leaderboard
 	#Range: 1 ~ 50
 	leaderboardCount = 5

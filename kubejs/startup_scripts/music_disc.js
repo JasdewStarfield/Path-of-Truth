@@ -23,6 +23,6 @@ StartupEvents.registry('item', e => {
         .tag("music_discs") // 1.20+ music discs require special tag to enable jukebox functionality (if you want music discs to be obtainable from creepers then use "creeper_drop_music_discs" tag insted)
         .translationKey(`item.kubejs.music_disc_${key}`) //To set disc description add lang file (en_us.json, ru_ru.json, etc.) to the .minecraft\kubejs\assets\kubejs\lang and add entry for every translation key
   })
-  e.create("incomplete_music_disc_pluto_nocturnus", 'create:sequenced_assembly').displayName('Incomplete Music Disc').tooltip({translate:'item.kubejs.incomplete_music_disc_pluto_nocturnus.desc'})
-  e.create("disc_fragment_yggdrasil").displayName('Mysterious Disc Fragment').tooltip({translate:'item.kubejs.disc_fragment_yggdrasil.desc'})
+  e.create("incomplete_music_disc_pluto_nocturnus", 'create:sequenced_assembly').displayName('Incomplete Music Disc').rarity('rare')
+  e.create("disc_fragment_yggdrasil").displayName('Mysterious Disc Fragment')
 })

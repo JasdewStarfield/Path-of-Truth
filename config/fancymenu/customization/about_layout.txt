@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = about
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1716482398330
+  last_edited_time = 1716565585882
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:6e771b26-685d-4f22-b5c9-8fe5b0abbc6d-1716482271597] = [groups:][instances:]
+  [loading_requirement_container_meta:6aeb7f94-452c-4688-b12c-e030b19a06ad-1716565486162] = [groups:][instances:]
 }
 
 customization {
@@ -86,10 +86,10 @@ element {
   fade_in = false
   fade_in_speed = 1.0
   anchor_point = mid-left
-  x = 60
-  y = -50
-  width = 100
-  height = 100
+  x = 95
+  y = -61
+  width = 55
+  height = 55
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -110,10 +110,10 @@ element {
   fade_in = false
   fade_in_speed = 1.0
   anchor_point = mid-right
-  x = -160
-  y = -50
-  width = 100
-  height = 100
+  x = -545
+  y = -2
+  width = 55
+  height = 55
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -153,9 +153,9 @@ element {
   fade_in_speed = 1.0
   anchor_point = mid-centered
   x = -149
-  y = -50
+  y = -39
   width = 298
-  height = 106
+  height = 127
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
@@ -183,7 +183,7 @@ element {
   anchor_point = bottom-centered
   x = -91
   y = -76
-  width = 182
+  width = 80
   height = 20
   stretch_x = false
   stretch_y = false
@@ -214,5 +214,109 @@ element {
   stay_on_screen = true
   element_loading_requirement_container_identifier = 31c9ef2e-e183-4eec-859d-93b9117d0393-1714481572588
   [loading_requirement_container_meta:31c9ef2e-e183-4eec-859d-93b9117d0393-1714481572588] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = a8cac225-5c03-45af-9a6f-abcd774e9b8b-1716564922864
+  [executable_action_instance:2e4708c2-fc3c-44bc-a264-71d7884afde2-1716564966529][action_type:openlink] = https://www.bilibili.com/video/BV14D421G7hR
+  [executable_block:a8cac225-5c03-45af-9a6f-abcd774e9b8b-1716564922864][type:generic] = [executables:2e4708c2-fc3c-44bc-a264-71d7884afde2-1716564966529;]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  nine_slice_custom_background = false
+  nine_slice_border_x = 5
+  nine_slice_border_y = 5
+  label = Bilibili
+  navigatable = true
+  element_type = custom_button
+  instance_identifier = aac4440b-b086-43b6-84eb-2a482d9b58d7-1716564922864
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = 10
+  y = 91
+  width = 80
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 3603f397-65d9-4ca8-91dc-bea62773e8d8-1716564922864
+  [loading_requirement_container_meta:3603f397-65d9-4ca8-91dc-bea62773e8d8-1716564922864] = [groups:][instances:]
+}
+
+element {
+  source = [source:local]/config/fancymenu/assets/jacky.png
+  repeat_texture = false
+  nine_slice_texture = false
+  nine_slice_texture_border_x = 5
+  nine_slice_texture_border_y = 5
+  element_type = image
+  instance_identifier = 0b160be5-cef4-4e28-8ce1-f5552c90b635-1716565152993
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-right
+  x = -545
+  y = 57
+  width = 55
+  height = 55
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = f6d79df9-931d-4d70-9854-0d77ad2e6eaa-1714482492843
+  [loading_requirement_container_meta:f6d79df9-931d-4d70-9854-0d77ad2e6eaa-1714482492843] = [groups:][instances:]
+}
+
+element {
+  copy_client_player = false
+  playername = {"placeholder":"playername"}
+  auto_skin = true
+  auto_cape = true
+  slim = true
+  skin_source = {"placeholder":"playername"}
+  cape_source = {"placeholder":"playername"}
+  scale = 50
+  parrot = false
+  parrot_left_shoulder = false
+  is_baby = false
+  crouching = false
+  showname = true
+  head_follows_mouse = true
+  body_follows_mouse = true
+  body_x_rot_advanced_mode = false
+  body_y_rot_advanced_mode = false
+  head_x_rot_advanced_mode = false
+  head_y_rot_advanced_mode = false
+  head_z_rot_advanced_mode = false
+  left_arm_x_rot_advanced_mode = false
+  left_arm_y_rot_advanced_mode = false
+  left_arm_z_rot_advanced_mode = false
+  right_arm_x_rot_advanced_mode = false
+  right_arm_y_rot_advanced_mode = false
+  right_arm_z_rot_advanced_mode = false
+  left_leg_x_rot_advanced_mode = false
+  left_leg_y_rot_advanced_mode = false
+  left_leg_z_rot_advanced_mode = false
+  right_leg_x_rot_advanced_mode = false
+  right_leg_y_rot_advanced_mode = false
+  right_leg_z_rot_advanced_mode = false
+  element_type = fancymenu_customization_player_entity
+  instance_identifier = 3245b5bf-49e7-4913-bbb0-e10a8500df96-1716565199036
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = 158
+  y = -8
+  width = 30
+  height = 90
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 01dbe6ca-6e41-4038-8b33-f179c1b6729f-1716565199036
+  [loading_requirement_container_meta:01dbe6ca-6e41-4038-8b33-f179c1b6729f-1716565199036] = [groups:][instances:]
 }
 
