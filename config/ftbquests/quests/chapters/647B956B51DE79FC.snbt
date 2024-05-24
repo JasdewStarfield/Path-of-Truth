@@ -17,7 +17,7 @@
 				"然后，你就可以准备进行一些神秘的仪式了）"
 				"通常的仪式是放置主仪式石后，用仪式石建造框架，然后进行铭文。"
 				"仪式启动需要LP，一些功能持续性的仪式需要持续消耗LP，所以请确保你携带的气血宝珠足够多——附近多放几个祭坛也行）"
-				"&o&c注：不同属性的仪式石是通过“喷漆”获得的，这一合成方式在jei中无法查询，可以查询“元素铭文工具”获得想要的东西。&r&r"
+				"&o&c注：不同属性的仪式石是通过“喷漆”获得的，这一合成方式在jei中无法查询，可以查询“元素铭文工具”获得想要的东西。当然，更省心的方式是直接使用仪式推测杖来完成——因为它有无限耐久。&r&r"
 			]
 			icon: "bloodmagic:masterritualstone"
 			id: "5A5B1D96C50D1EAE"
@@ -113,68 +113,11 @@
 			icon: "bloodmagic:dungeon_ore"
 			id: "7CA6215959E08F1F"
 			subtitle: "深入地牢）"
-			tasks: [
-				{
-					id: "55A54BDA2D73D1B3"
-					item: "bloodmagic:ingot_hellforged"
-					type: "item"
-				}
-				{
-					id: "674A9361F5C7409D"
-					item: {
-						Count: 1b
-						id: "bloodmagic:earthscribetool"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "217DB6F844F8A19C"
-					item: {
-						Count: 1b
-						id: "bloodmagic:waterscribetool"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "472CEB392D5EB22C"
-					item: {
-						Count: 1b
-						id: "bloodmagic:firescribetool"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "7A802412D4416E69"
-					item: {
-						Count: 1b
-						id: "bloodmagic:airscribetool"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "4AFA64B4E0973BF5"
-					item: {
-						Count: 1b
-						id: "bloodmagic:duskscribetool"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "55A54BDA2D73D1B3"
+				item: "bloodmagic:ingot_hellforged"
+				type: "item"
+			}]
 			title: "恶魔的金属"
 			x: 0.0d
 			y: -2.0d
@@ -204,10 +147,10 @@
 				"1F71A5FD2A6CA453"
 			]
 			description: [
-				"你会在书里发现一些英文描述，大致内容是“我们还没写完这个模组”"
+				"你会在书里发现一些描述，大致内容是“我们还没写完这个模组”"
 				"……所以很显然，作为魔法师兼整合包作者，有一部分内容被我进行了补完。"
 				"如果你发现用到了一些书里没有或者没说清楚的东西，请自行查询jei，因为我要说的话都在配方里了。"
-				"&o&a你不会以为我会给你翻译帕秋莉手册然后在这上面补全吧？不会吧不会吧？&r&r"
+				"&o&a你不会以为我会给你在帕秋莉手册上面补全吧？不会吧不会吧？&r&r"
 			]
 			id: "0B5ECEDAA15BA54A"
 			shape: "hexagon"
