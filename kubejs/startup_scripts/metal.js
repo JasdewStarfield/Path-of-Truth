@@ -1,15 +1,15 @@
 StartupEvents.registry('item', (event) => {
   //青铜一套
-  event.create("bronze_dust").displayName('Bronze Grit')
-  event.create("bronze_ingot").displayName('Bronze Ingot')
-  event.create("bronze_nugget").displayName('Bronze Nugget')
-  event.create("bronze_sheet").displayName('Bronze Sheet')
+  event.create("bronze_dust").displayName('Bronze Grit').texture('kubejs:item/bronze/bronze_dust')
+  event.create("bronze_ingot").displayName('Bronze Ingot').texture('kubejs:item/bronze/bronze_ingot')
+  event.create("bronze_nugget").displayName('Bronze Nugget').texture('kubejs:item/bronze/bronze_nugget')
+  event.create("bronze_sheet").displayName('Bronze Sheet').texture('kubejs:item/bronze/bronze_sheet')
 
-  event.create("bronze_sword",'sword').displayName('Bronze Sword').tier('bronze')
-  event.create("bronze_pickaxe",'pickaxe').displayName('Bronze Pickaxe').tier('bronze')
-  event.create("bronze_axe",'axe').displayName('Bronze Axe').tier('bronze')
-  event.create("bronze_shovel",'shovel').displayName('Bronze Shovel').tier('bronze')
-  event.create("bronze_hoe",'hoe').displayName('Bronze Hoe').tier('bronze')
+  event.create("bronze_sword",'sword').displayName('Bronze Sword').tier('bronze').texture('kubejs:item/bronze/bronze_sword')
+  event.create("bronze_pickaxe",'pickaxe').displayName('Bronze Pickaxe').tier('bronze').texture('kubejs:item/bronze/bronze_pickaxe')
+  event.create("bronze_axe",'axe').displayName('Bronze Axe').tier('bronze').texture('kubejs:item/bronze/bronze_axe')
+  event.create("bronze_shovel",'shovel').displayName('Bronze Shovel').tier('bronze').texture('kubejs:item/bronze/bronze_shovel')
+  event.create("bronze_hoe",'hoe').displayName('Bronze Hoe').tier('bronze').texture('kubejs:item/bronze/bronze_hoe')
 
   /*
   event.create("bronze_helmet",'helmet').displayName('Bronze Helmet').tier('bronze')
