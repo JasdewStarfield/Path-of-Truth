@@ -1,3 +1,8 @@
+/*
+*
+* 随机器相关设定
+*
+*/
 // 最小及最大坐标
 const minX = 1000;
 const minZ = 1000;
@@ -8,16 +13,23 @@ const maxY = 200;
 // 是否随机取负值
 const reverseNumber = true;
 
+// 是否启用调试模式
 const DENBUG_MODE = true;
 
+// 要求无修改区块的半径（曼哈顿距离）
+const clearRange = 20;
 
+// 出生小屋列表
 const spawnHouseStructureList = [
     {
         name: "spawnhouse",     // 结构名称，文件应当位于 kubejs\data\path_of_truth\structures\<NAME_OF_THE_STRUCTURE>.nbt
+        generateXOffSet: -9,
         generateYOffSet: -28,   // 结构生成的时候结构最下方相对于玩家的偏移
-        xOffSet: 9,             // 生成后玩家需要tp到的偏移量，以下三个均是
+        generateZOffSet: -7,
+
+        xOffSet: 0,             // 生成后玩家需要tp到的偏移量，以下三个均是
         yOffSet: 5,
-        zOffSet: 7
+        zOffSet: 0
     }
 ]
 
@@ -55,7 +67,9 @@ const BoolRecord = function(objName) {
             this.event.server.runCommand(`/scoreboard players reset [${key}] ${this.name}`)
         },
         check: function(key) {
+            
             const pass = this.event.server.runCommand(`/execute if score [${key}] ${this.name} > false ${this.name} run scoreboard players set [${key}] ${this.name} 1`)
+            //this.event.server.tell([Text.lightPurple('[持久化]'), "检查：" , key, " : [", pass, "] "]);
             return pass === 1;
         },
         init: function(event) {
@@ -65,7 +79,7 @@ const BoolRecord = function(objName) {
             
             if(!this.event.server.getScoreboard().hasObjective(`${this.name}`)) {
                 this.event.server.runCommand(`/scoreboard objectives add ${this.name} dummy "${this.name}"`)
-                this.event.server.runCommand(`/scoreboard players add false ${this.name} 1`)
+                this.event.server.runCommand(`/scoreboard players set false ${this.name} -1`)
                 this.event.server.tell([Text.lightPurple('[持久化]'), "创建计分板"]);
             }
         }
@@ -104,71 +118,20 @@ BlockEvents.placed((event) => {
     }
 })
 
-PlayerEvents.chat((event) => {
-	let input = event.message.trim();
 
-    let x = Math.floor(event.player.x);
-    let y = Math.floor(event.player.y);
-    let z = Math.floor(event.player.z);
-
-    event.player.tell([Text.lightPurple('[测试日志]'), "开始"]);
-
-    let logger = Logger("测试持久化封装", event)
-    logger.log("日志开始！")
-
-    testRecord.init(event);
-
-	if(input == "#testobj" && DENBUG_MODE){
-        let target = `[${x},${z}]`
-        let checkResult = testRecord.check(target)
-
-        logger.log([`玩家拥有记录 “${target}”？[${checkResult}]`])
-
-        testRecord.save(target)
-
-        logger.log([`保存记录 “${target}”！`])
-        logger.log([`现在玩家拥有记录 “${target}”？[${checkResult}]`])
-    }
-})
-
-
-PlayerEvents.chat((event) => {
-    let input = event.message.trim();
-    let logger = Logger("测试生物群系", event)
-
-	if(input == "#biome" && DENBUG_MODE){
-        const player = event.player;
-        const blockPos = {
-            x: player.getBlockX(),
-            y: player.getBlockY(),
-            z: player.getBlockZ()
-        }
-        const biome = player.world.getBiome(blockPos);
-
-        // 判断玩家当前位置的生物群系类型是否为海洋类型或河流类型
-        const biomeType = biome.getBiomeCategory();
-        if (biomeType === 'ocean' || biomeType === 'river') {
-            logger.log('玩家当前位置为海洋或河流类型生物群系');
-        }
-
-        // 将玩家移动到所在列方块的最上面一个上
-        for (let y = blockPos.y; y < 300; y++) {
-            const block = player.world.getBlock(blockPos.up(y));
-            const maxY = -114514;
-            if (!block.isAir() && !block.isTransparent()) {
-                maxY = y;
-            }
-        }
-
-        player.setPosition(blockPos.up(maxY).add(0.5, 1, 0.5));
-
-    }
-})
-
+/**
+ * 随机玩家出生点并生成初始小屋
+ * @param {*} server 服务器对象，可以从大部分的 event.server 获得
+ * @param {*} player 玩家对象，可以从大部分玩家事件的 event.player 获得
+ * @author Jacky_Blackson
+ */
 function randomSpread(server, player) {
+    
     let x = Math.floor(player.x);
     let y = Math.floor(player.y);
     let z = Math.floor(player.z);
+    let chunkX = Math.floor(x / 16)
+    let chunkZ = Math.floor(z / 16)
     let event = {
         server: server,
         player: player
@@ -177,58 +140,129 @@ function randomSpread(server, player) {
     const logger = Logger("随机出生点", event)
 
     spawnRecord.init(event);
+    modifiedChunkRecord.init(event);
         
-    const rawUsername = player.username;
-    const username = rawUsername
+    const username = player.username;
 
     // 选择出生位置，不重&&不在出生点
     const loop = true;
+    // 随机偏移量
     let rx = 0;
     let rz = 0;
+    // 目标区块的区块坐标
+    let targChunkX = 0;
+    let targChunkZ = 0;
+    // 尝试次数，以便增加随机半径
     let times = 0;
+    // 基准随机半径
+    let tryRange = 5;
+    // 尝试次数每增加一次增加的随机半径
+    let increaseRatio = 0.5;
     while(loop) {
+
+        // 增加尝试次数，以便基于此增加随机半径
         times++;
-        rx = getNumber(0,20);
-        rz = getNumber(0,20);
-        logger.log(["尝试： ", `[${rx}, ${rz}]`]);
-        if(!((rz===0 && rx ===0) || spawnRecord.check(`[${rx},${rz}]`))) {   // 不：位于当前位置或被记录
-            logger.log(["成功： ", `[${rx}, ${rz}]`]);
-            break;
+        // 获取随机坐标偏移量，随着尝试次数逐渐增大半径
+        rx = getNumber(0,Math.floor(tryRange + times * increaseRatio));
+        rz = getNumber(0,Math.floor(tryRange + times * increaseRatio));
+        // 获取偏移后的目标区块坐标
+        targChunkX = rx + chunkX;
+        targChunkZ = rz + chunkZ;
+        // 生成记录名称，应当和BlockPlaceEvent的格式一致
+        let recordName = `[${targChunkX},${targChunkZ}]`
+        logger.log(["尝试： ", recordName]);
+
+        //判定目标区域是否被占用
+        if(!(rz===0 && rx ===0)) {   // 不位于当前位置
+            // flag
+            let occupied = false;
+            // 判定区块是否被其他玩家占用，需要遍历目标区块前后左右的所有位置（九宫格）
+            
+            for(let tx = -clearRange; tx <=clearRange; tx++) {
+                for(let tz = -clearRange; tz <= clearRange; tz++) {
+                    if(modifiedChunkRecord.check(`[${targChunkX + tx},${targChunkZ + tz}]`)) { //区块被记录
+                        occupied = true;
+                        logger.log(["失败： 被占用：", `[${targChunkX + tx},${targChunkZ + tz}]`]);
+                        break;
+                    }
+                }
+                // 如果上层循环已经判定为被占用，那么不需要进行剩余的循环了
+                if(occupied) {
+                    break;
+                }
+            }
+            let X = 16 * targChunkX + 8;
+            let Z = 16 * targChunkZ + 8;
+            let targetBiome = player.getLevel().getBiome([X, 400, Z]);
+            let targetBiomeString = targetBiome.toString()
+            //判定群系是否合法
+            if(targetBiomeString.includes("ocean") || targetBiomeString.includes("river")) {
+                occupied = true;
+                logger.log(["失败： 生物群系不合理：", `[${X}, ${Z}]`]);
+            }
+            //如果没有被占用，那么可以直接推出尝试的while loop，进入生成阶段
+            if(!occupied) {
+                logger.log(["成功： ", `[${targChunkX}, ${targChunkZ}]`]);
+                break;
+            }
         }
-        if(times > 50) {
-            break;
-        }
-        logger.log(["失败： ", `[${rx}, ${rz}]`]);
+        // 如果上面没有跳出循环，那么说明尝试失败，进行下一轮尝试
+        logger.log(["失败： ", `[${targChunkX}, ${targChunkZ}]`]);
     }
-    const zoomRatio = 100;
-    const X = zoomRatio * rx;
-    const Z = zoomRatio * rz;
-
-    player.potionEffects.add('minecraft:slow_falling', 600, 10, false, false);    // 给予缓降效果放置摔死
-    logger.log(["移动玩家到： ", `${x+X}, 500, ${z+Z}`]);
-    server.runCommand(`tp ${username} ${x+X} 500 ${z+Z}`);// 设置坐标
-    
-    spawnRecord.save(`[${rx},${rz}]`);
-    
-    const spreadCmd = `spreadplayers ${x+X} ${z+Z} 1 20 false ${username}`
-    logger.log(["扩散命令： ", spreadCmd]);
-    server.runCommand(spreadCmd)
-    
+    // 解释：因为上面确保了中心周围九个区块都没有被占用，因此这里无需进行格点缩放
+    // 确定区块中心坐标
+    const X = 16 * targChunkX + 8;
+    const Z = 16 * targChunkZ + 8;
+    // 找到当地位置的最高坐标
+    let highestBlockY = 0;
+    for(let l = 400; l > 0; l--) {
+        let blockStr = player.getLevel().getBlock(X, l, Z).toString()
+        if(!(blockStr.includes("air") || blockStr.includes("leav") || blockStr.includes("log") || blockStr.includes("snow")) ||  blockStr.includes("wood") ) {
+            // event.player.tell([Text.lightPurple('[测试位置]'), "    不是空气，在 y = ", l]);
+            highestBlockY = l;
+            break;
+        }
+    }
+    // 移动玩家
+    player.potionEffects.add('minecraft:slow_falling', 60, 10, false, false);    // 给予缓降效果放置摔死
+    logger.log(["移动玩家到： ", `${X}, ${highestBlockY}, ${Z}`]);
+    server.runCommand(`tp ${username} ${X} ${highestBlockY + 1} ${Z}`);  // 设置坐标
+    server.runCommand(`tp ${username} ${x} ${y} ${z}`);  // 设置坐标
+    server.runCommand(`tp ${username} ${X} ${highestBlockY + 1} ${Z}`);  // 设置坐标
+    //player.setPositioni(X, highestBlockY + 1, Z)
+    // 设置坐标缓存：当前区块已经被占用
+    modifiedChunkRecord.save(`[${targChunkX},${targChunkZ}]`);
+    // 重新获取玩家坐标
     const nplayer = server.getPlayer(username)
-
+    // 重新设置坐标
     x = Math.floor(nplayer.x);
     y = Math.floor(nplayer.y);
     z = Math.floor(nplayer.z);
-
+    // 获取结构
     const structure = spawnHouseStructureList[Math.floor(Math.random() * (spawnHouseStructureList.length - 1) )]
-    
-    const placeCmd = `place template path_of_truth:${structure.name} ${x} ${y + structure.generateYOffSet} ${z}`
+    // 生成结构
+    const placeCmd = `place template path_of_truth:${structure.name} ${x + structure.generateXOffSet} ${y + structure.generateYOffSet} ${z + structure.generateZOffSet}`
     player.tell([Text.lightPurple('[生成小屋]'), placeCmd]);
     player.potionEffects.add('minecraft:slow_falling', 60, 10, false, false);// 给予缓降效果
     player.setPosition(x + structure.xOffSet, y + structure.yOffSet + 2, z + structure.zOffSet)
-    server.runCommand(placeCmd);
-    player.setPosition(x + structure.xOffSet, y + structure.yOffSet + 1, z + structure.zOffSet)
+    let pass = false;
 
+    pass = (server.runCommand(placeCmd) === 1);
+
+    if(!pass) {
+        server.scheduleInTicks(100, callback => {
+            //console.log(this)
+            player.tell([Text.lightPurple('[生成小屋]'), placeCmd]);
+            player.potionEffects.add('minecraft:slow_falling', 60, 10, false, false);// 给予缓降效果
+            player.setPosition(x + structure.xOffSet, y + structure.yOffSet + 2, z + structure.zOffSet)
+            server.runCommand(placeCmd)
+            //randomSpread(this.questCallbackServer, this.questCallbackPlayer)
+            //callback.reschedule(2 * MINUTE) //两分钟以后再通知一次
+        })
+    }
+
+    player.setPosition(x + structure.xOffSet, y + structure.yOffSet + 1, z + structure.zOffSet)
+    // 完成
     player.tell([Text.lightPurple('[随机出生]'), "完成！"]);
 }
 
@@ -241,72 +275,103 @@ PlayerEvents.chat((event) => {
 
 PlayerEvents.chat((event) => {
 	let input = event.message.trim();
-	if(input == "r" && DENBUG_MODE){
-        event.server.runCommand("kubejs reload server_scripts")
+    let player = event.player;
+    let x = Math.floor(player.x);
+    let y = Math.floor(player.y);
+    let z = Math.floor(player.z);
+    const username = event.player.username;
+    if(input == "#s" && DENBUG_MODE){
+        event.player.tell([Text.lightPurple('[测试位置]'), "开始测试！"]);
+
+        let thisBlock = player.getLevel().getBlock(x, y, z)
+        event.player.tell([Text.lightPurple('[测试位置]'), "Block？", thisBlock]);
+
+        let thisBiome = player.getLevel().getBiome([114514, y, 1919810])
+        event.player.tell([Text.lightPurple('[测试位置]'), "biome？", thisBiome]);
+        let stringBiome = thisBiome.toString()
+        event.player.tell([Text.lightPurple('[测试位置]'), "biome string = ", stringBiome]);
+        event.player.tell([Text.lightPurple('[测试位置]'), "biome is ocean = ", stringBiome.includes("ocean")]);
+        event.player.tell([Text.lightPurple('[测试位置]'), "biome is river = ", stringBiome.includes("river")]);
+        let highestBlockY = 0;
+        for(let l = 400; l > 0; l--) {
+            if(!player.getLevel().getBlock(x, l, z).toString().includes("air")) {
+                event.player.tell([Text.lightPurple('[测试位置]'), "    不是空气，在 y = ", l]);
+                highestBlockY = l;
+                break;
+            }
+        }
+        event.player.tell([Text.lightPurple('[测试位置]'), "最高非空气方块 y = ", highestBlockY]);
+    }
+})
+
+PlayerEvents.chat((event) => {
+	let input = event.message.trim();
+    let player = event.player;
+    let x = Math.floor(player.x);
+    let y = Math.floor(player.y);
+    let z = Math.floor(player.z);
+    const username = event.player.username;
+    if(input == "#fly" && DENBUG_MODE){
+        event.player.tell([Text.lightPurple('[测试耐摔王]'), "开始测试！"]);
+        player.setPosition(x, 300, z);
+        for(let i = 0; i < 10000; i++) {
+            event.player.tell([Text.lightPurple('[测试耐摔王]'), "当前脚下方块：", player.getBlock().getId()]);
+        }
+        event.player.tell([Text.lightPurple('[测试耐摔王]'), "结束"]);
+    }
+})
+
+
+let questCallbackServer = "111111111111111111111111111111111111111111111111111111111111"
+let questCallbackPlayer = "222222222222222222222222222222222222222222222222222222222222"
+FTBQuestsEvents.completed('170E4E15DBE89604', event => {
+    //event.server.runCommand(`execute as ${event.player.username} run say #spawnSingly`)
+    questCallbackPlayer = event.player
+    questCallbackServer = event.server
+    event.server.scheduleInTicks(20, callback => {
+        //console.log(callback.data)
+        randomSpread(this.questCallbackServer, this.questCallbackPlayer)
+        //callback.reschedule(2 * MINUTE) //两分钟以后再通知一次
+    })
+})
+
+PlayerEvents.chat((event) => {
+	let input = event.message.trim();
+	if(input == "#spawnSingly"){
+        if (!event.player.stages.has('executedRandomSpawn')) {
+            randomSpread(event.server, event.player)
+            event.player.stages.add('executedRandomSpawn');
+            event.player.tell([Text.lightPurple('[随机出生]'), `已经为玩家设置 executedRandomSpawn`, event.player.stages.has('notNewPlayer')]);
+            event.player.tell([Text.lightPurple('[随机出生]'), "执行完毕"]);
+        }
     }
 })
 
 PlayerEvents.loggedIn(event => {
     if (!event.player.stages.has('notNewPlayer')) {
-        let x = Math.floor(event.player.x);
-        let y = Math.floor(event.player.y);
-        let z = Math.floor(event.player.z);
 
-        spawnRecord.init(event);
-        
-        const rawUsername = event.player.username;
-        const username = rawUsername
+        let player = event.player;
+        let x = Math.floor(player.x);
+        let y = Math.floor(player.y);
+        let z = Math.floor(player.z);
+        let chunkX = Math.floor(x / 16)
+        let chunkZ = Math.floor(z / 16)
 
-        // 选择出生位置，不重&&不在出生点
-        const loop = true;
-        let rx = 0;
-        let rz = 0;
-        let times = 0;
-        while(loop) {
-            times++;
-            rx = getNumber(0,20);
-            rz = getNumber(0,20);
-            event.player.tell([Text.lightPurple('[随机出生]'), "尝试： ", `[${rx}, ${rz}]`]);
-            if(!((rz===0 && rx ===0) || spawnRecord.check(`[${rx},${rz}]`))) {   // 不：位于当前位置或被记录
-                event.player.tell([Text.lightPurple('[随机出生]'), "成功： ", `[${rx}, ${rz}]`]);
-                break;
+        modifiedChunkRecord.init(event);
+
+        for(let tx = -clearRange; tx <=clearRange; tx++) {
+            for(let tz = -clearRange; tz <= clearRange; tz++) {
+                modifiedChunkRecord.save(`[${chunkX + tx},${chunkZ + tz}]`) //区块被记录
             }
-            if(times > 50) {
-                break;
-            }
-            event.player.tell([Text.lightPurple('[随机出生]'), "失败： ", `[${rx}, ${rz}]`]);
         }
-        const zoomRatio = 100;
-        const X = zoomRatio * rx;
-        const Z = zoomRatio * rz;
 
-        event.player.potionEffects.add('minecraft:slow_falling', 600, 10, false, false);    // 给予缓降效果放置摔死
-        event.player.tell([Text.lightPurple('[随机出生]'), "移动玩家到： ", `${x+X}, 500, ${z+Z}`]);
-        event.server.runCommand(`tp ${username} ${x+X} 500 ${z+Z}`);// 设置坐标
+        modifiedChunkRecord.init(event);
         
-        spawnRecord.save(`[${rx},${rz}]`);
-        
-        const spreadCmd = `spreadplayers ${x+X} ${z+Z} 1 40 false ${username}`
-        event.player.tell([Text.lightPurple('[随机出生]'), "扩散命令： ", spreadCmd]);
-        event.server.runCommand(spreadCmd)
-        
-        const player = event.server.getPlayer(username)
-
-        x = Math.floor(player.x);
-        y = Math.floor(player.y);
-        z = Math.floor(player.z);
-
-        const structure = spawnHouseStructureList[Math.floor(Math.random() * (spawnHouseStructureList.length - 1) )]
-        
-        const placeCmd = `place template path_of_truth:${structure.name} ${x} ${y + structure.generateYOffSet} ${z}`
-        event.player.tell([Text.lightPurple('[生成小屋]'), placeCmd]);
-        event.player.potionEffects.add('minecraft:slow_falling', 60, 10, false, false);// 给予缓降效果
-        event.player.setPosition(x + structure.xOffSet, y + structure.yOffSet + 2, z + structure.zOffSet)
-        event.server.runCommand(placeCmd);
-        event.player.setPosition(x + structure.xOffSet, y + structure.yOffSet + 1, z + structure.zOffSet)
-
-        event.player.tell([Text.lightPurple('[随机出生]'), "生成小屋完成！"]);
-
+        /*
+        *
+        * SAY HI TO NEW PLAYERS!
+        * 
+        */
         event.player.stages.add('notNewPlayer');
         event.player.tell([Text.lightPurple('[随机出生]'), `已经为玩家设置 notNewPlayer，成功？`, event.player.stages.has('notNewPlayer')]);
         event.player.tell([Text.lightPurple('[随机出生]'), "执行完毕"]);
