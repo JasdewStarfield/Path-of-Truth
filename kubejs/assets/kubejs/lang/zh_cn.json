@@ -38,5 +38,6 @@
   "block.kubejs.precise_engineering": "精密工程块",
   "block.kubejs.electronic_engineering": "电子工程块",
   "block.kubejs.bronze_block": "青铜块",
-  "block.kubejs.obelisk_base": "重生石碑基座"
+  "block.kubejs.obelisk_base": "重生石碑基座",
+  "item.kubejs.obelisk_base.desc": "你感到一股强大的力量从其中散发出来……如果你把它放在石碑下面，那么石碑就可以被无限充能（但是你不可以再次移动基座方块）。"
 }

@@ -5,7 +5,7 @@
 
 [enchantments]
 	#Should the fancied up Enchantment section be used?
-	enabled = true
+	enabled = false
 
 	[enchantments.color]
 		#The color curses should have
