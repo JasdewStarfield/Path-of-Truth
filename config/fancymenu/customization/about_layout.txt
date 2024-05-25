@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = about
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1716565585882
+  last_edited_time = 1716621584912
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:6aeb7f94-452c-4688-b12c-e030b19a06ad-1716565486162] = [groups:][instances:]
+  [loading_requirement_container_meta:3aff0365-e4c6-4265-8aa0-845f1c2fb537-1716621569400] = [groups:][instances:]
 }
 
 customization {
@@ -24,10 +24,8 @@ customization {
 }
 
 menu_background {
-  image_path = [source:local]/config/fancymenu/assets/bg.png
-  slide = false
-  repeat_texture = false
-  background_type = image
+  panorama_name = panorama1
+  background_type = panorama
 }
 
 customization {
@@ -270,13 +268,13 @@ element {
 }
 
 element {
-  copy_client_player = false
-  playername = {"placeholder":"playername"}
-  auto_skin = true
-  auto_cape = true
+  copy_client_player = true
+  playername = MysteriousEnder
+  auto_skin = false
+  auto_cape = false
   slim = true
-  skin_source = {"placeholder":"playername"}
-  cape_source = {"placeholder":"playername"}
+  skin_source = MysteriousEnder
+  cape_source = MysteriousEnder
   scale = 50
   parrot = false
   parrot_left_shoulder = false
