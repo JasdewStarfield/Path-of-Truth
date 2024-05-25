@@ -251,6 +251,8 @@ function randomSpread(server, player) {
             // /////////////////////////
             // TODO: 清除无敌状态      //
             // /////////////////////////
+            server.runCommandSilent(`/effect clear ${player.username}`)
+            server.runCommandSilent(`/effect give ${player.username} cold_sweat:grace 300 0 true`)
         })
     }
 
@@ -269,6 +271,10 @@ FTBQuestsEvents.completed('170E4E15DBE89604', event => {
         randomSpread(this.questCallbackServer, this.questCallbackPlayer)
         //callback.reschedule(2 * MINUTE) //两分钟以后再通知一次
     })
+})
+FTBQuestsEvents.completed('7B54E20910D7008D', event => {
+    event.server.runCommandSilent(`/effect clear ${event.player.username}`)
+    event.server.runCommandSilent(`/effect give ${event.player.username} cold_sweat:grace 300 0 true`)
 })
 
 PlayerEvents.loggedIn(event => {
@@ -296,6 +302,12 @@ PlayerEvents.loggedIn(event => {
         * TODO: 添加初始的无敌效果
         * 
         */
+        event.player.tell([Text.lightPurple('[Welcome]'), `cxs你记得写一下提示让玩家看任务，要中英双语的`]);
+        event.server.runCommandSilent(`/effect give ${player.username} minecraft:slowness infinite 255 true`)
+        event.server.runCommandSilent(`/effect give ${player.username} minecraft:resistance infinite 255 true`)
+        event.server.runCommandSilent(`/effect give ${player.username} minecraft:regeneration infinite 255 true`)
+        event.server.runCommandSilent(`/effect give ${player.username} minecraft:saturation infinite 255 true`)
+        event.server.runCommandSilent(`/effect give ${player.username} minecraft:jump_boost infinite 128 true`)
         event.player.stages.add('notNewPlayer');
         event.player.tell([Text.lightPurple('[随机出生]'), `已经为玩家设置 notNewPlayer，成功？`, event.player.stages.has('notNewPlayer')]);
         event.player.tell([Text.lightPurple('[随机出生]'), "执行完毕"]);

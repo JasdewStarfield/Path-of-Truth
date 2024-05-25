@@ -208,6 +208,9 @@
 				""
 				"While you choose start your game alone, you will &9get a random spawnpoint and a gift structure.&r However, this means &byou will be spawned without other players around.&r"
 				"This option is suitable for &cserver players who want to explore alone.&r"
+				""
+				"警告：这一步对服务端性能要求较高，且会对所有玩家造成卡顿！请谨慎使用。（你可以使用Chunky预生成区块来避免这个问题）"
+				"Warning: This step will cause significant lag to all players!!! Use it carefully. (You may use Chunky to pre-generate some chunks to reduce the lag)."
 			]
 			icon: "createdeco:decal_left"
 			id: "170E4E15DBE89604"
