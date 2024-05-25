@@ -237,4 +237,6 @@ ServerEvents.recipes(event => {
 
     //黑曜石支持用石磨处理
     event.recipes.create.milling(Item.of('create:powdered_obsidian').withChance(0.75), '#forge:obsidian')
+    //焦煤也是
+    event.recipes.create.milling(Item.of('tfmg:coal_coke_dust').withChance(0.75), '#forge:coal_coke')
 })
