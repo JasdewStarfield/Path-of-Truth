@@ -275,10 +275,15 @@ FTBQuestsEvents.completed('7B54E20910D7008D', event => {
     event.server.runCommandSilent(`/effect give ${event.player.username} cold_sweat:grace 300 0 true`)
 })
 
+
+const isStructureGenratedRecord = BoolRecord("is_struct_generated")
+
 PlayerEvents.loggedIn(event => {
     if (!event.player.stages.has('notNewPlayer')) {
 
         let player = event.player;
+        let server = event.server;
+
         let x = Math.floor(player.x);
         let y = Math.floor(player.y);
         let z = Math.floor(player.z);
@@ -306,6 +311,37 @@ PlayerEvents.loggedIn(event => {
         event.server.runCommandSilent(`/effect give ${player.username} minecraft:saturation infinite 255 true`)
         event.server.runCommandSilent(`/effect give ${player.username} minecraft:jump_boost infinite 128 true`)
         event.player.stages.add('notNewPlayer');
+
+
+        isStructureGenratedRecord.init(event);
+        // if the house is never generated
+        
+        if(!isStructureGenratedRecord.check("worldSpawnpointHouse")) {
+            // delay generation, due to the "not loaded" issue
+            server.scheduleInTicks(10, callback => {
+                // 获取结构
+                const structure = spawnHouseStructureList[Math.floor(Math.random() * (spawnHouseStructureList.length - 1) )]
+                // 生成结构
+                const placeCmd = `place template path_of_truth:${structure.name} ${x + structure.generateXOffSet} ${y + structure.generateYOffSet} ${z + structure.generateZOffSet}`
+                // player.tell([Text.lightPurple('[生成小屋]'), placeCmd]);
+                player.potionEffects.add('minecraft:slow_falling', 60, 10, false, false);// 给予缓降效果
+                player.setPosition(x + structure.xOffSet, y + structure.yOffSet + 2, z + structure.zOffSet)
+                server.runCommandSilent(placeCmd)
+                player.setPosition(x + structure.xOffSet, y + structure.yOffSet + 1, z + structure.zOffSet)
+                // 完成
+                // 清除无敌状态      //
+                server.runCommandSilent(`effect clear ${player.username}`)
+                server.runCommandSilent(`effect give ${player.username} cold_sweat:grace 300 0 true`)
+                //server.runCommandSilent(`/effect give ${player.username} cold_sweat:grace 300 0 true`)
+                isStructureGenratedRecord.save("worldSpawnpointHouse");
+
+                // let nplayer = server.getPlayer(player.username);
+                // let x = Math.floor(nplayer.x);
+                // let y = Math.floor(nplayer.y);
+                // let z = Math.floor(nplayer.z);
+                // server.runCommandSilent(`setworldspawn ${x} ${y} ${z}`)
+            })
+        }
         // event.player.tell([Text.lightPurple('[随机出生]'), `已经为玩家设置 notNewPlayer，成功？`, event.player.stages.has('notNewPlayer')]);
         // event.player.tell([Text.lightPurple('[随机出生]'), "执行完毕"]);
     }
