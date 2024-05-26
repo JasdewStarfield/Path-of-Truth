@@ -316,7 +316,7 @@ PlayerEvents.loggedIn(event => {
 
         isStructureGenratedRecord.init(event);
         // if the house is never generated
-        
+        //如果没有生成房子且玩家是新玩家
         if(!isStructureGenratedRecord.check("worldSpawnpointHouse")) {
             // delay generation, due to the "not loaded" issue
             server.scheduleInTicks(10, callback => {
@@ -327,12 +327,14 @@ PlayerEvents.loggedIn(event => {
                 // player.tell([Text.lightPurple('[生成小屋]'), placeCmd]);
                 player.potionEffects.add('minecraft:slow_falling', 60, 10, false, false);// 给予缓降效果
                 player.setPosition(x + structure.xOffSet, y + structure.yOffSet + 2, z + structure.zOffSet)
-                server.runCommandSilent(placeCmd)
-                player.setPosition(x + structure.xOffSet, y + structure.yOffSet + 1, z + structure.zOffSet)
+                for(let ty = 400; ty > 0; ty--){
+                    server.runCommandSilent(`/execute as ${player.username} at ${player.username} if block ~ ${ty} ~ minecraft:barrier run ${placeCmd}`)
+                }
+                    player.setPosition(x + structure.xOffSet, y + structure.yOffSet + 1, z + structure.zOffSet)
                 // 完成
                 // 清除无敌状态      //
-                server.runCommandSilent(`effect clear ${player.username}`)
-                server.runCommandSilent(`effect give ${player.username} cold_sweat:grace 300 0 true`)
+                //server.runCommandSilent(`effect clear ${player.username}`)
+                //server.runCommandSilent(`effect give ${player.username} cold_sweat:grace 300 0 true`)
                 //server.runCommandSilent(`/effect give ${player.username} cold_sweat:grace 300 0 true`)
                 isStructureGenratedRecord.save("worldSpawnpointHouse");
 
