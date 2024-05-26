@@ -582,8 +582,8 @@
 					type: "item"
 				}
 				{
-					id: "6D78B6452A4869A0"
-					item: "immersiveengineering:coal_coke"
+					id: "559144140D12B35D"
+					item: "tfmg:coal_coke_dust"
 					type: "item"
 				}
 			]
