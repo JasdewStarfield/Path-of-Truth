@@ -34,13 +34,13 @@
 	"shouldUseStructureOffset": true,
 	// The x offset for the generated structure. Used when shouldUseStructureOffset is enabled.
 	// min: -1000, max: 1000
-	"generatedStructureXOffset": 0,
+	"generatedStructureXOffset": -1,
 	// The y offset for the generated structure. Can for example be set to -1 if you notice a building always spawns one block too high. Used when shouldUseStructureOffset is enabled.
 	// min: -1000, max: 1000
-	"generatedStructureYOffset": -28,
+	"generatedStructureYOffset": -1,
 	// The z offset for the generated structure. Used when shouldUseStructureOffset is enabled.
 	// min: -1000, max: 1000
-	"generatedStructureZOffset": 0,
+	"generatedStructureZOffset": -1,
 	// If the spawnCoordinate config options should be used.
 	"shouldUseSpawnCoordinates": false,
 	// The new X coordinate of the spawn when shouldUseSpawnCoordinates is enabled.
@@ -53,13 +53,13 @@
 	// min: -1E7, max: 1E7
 	"spawnZCoordinate": 0,
 	// If the spawnCoordOffset config options should be used.
-	"shouldUseSpawnCoordOffsets": true,
+	"shouldUseSpawnCoordOffsets": false,
 	// The X coordinate offset of the spawn when shouldUseSpawnCoordOffsets is enabled.
 	// min: -1000, max: 1000
 	"spawnXCoordOffset": 0,
 	// The Y coordinate offset of the spawn when shouldUseSpawnCoordOffsets is enabled.
 	// min: -1000, max: 1000
-	"spawnYCoordOffset": 33,
+	"spawnYCoordOffset": 45,
 	// The Z coordinate offset of the spawn when shouldUseSpawnCoordOffsets is enabled.
 	// min: -1000, max: 1000
 	"spawnZCoordOffset": 0

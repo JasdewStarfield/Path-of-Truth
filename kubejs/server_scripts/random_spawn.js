@@ -249,6 +249,7 @@ function randomSpread(server, player) {
             player.setPosition(x + structure.xOffSet, y + structure.yOffSet + 1, z + structure.zOffSet)
             // 完成
             // 清除无敌状态      //
+            server.runCommandSilent(`/execute as ${player.username} at ${player.username} run spawnpoint`)
             server.runCommandSilent(`/effect clear ${player.username}`)
             server.runCommandSilent(`/effect give ${player.username} cold_sweat:grace 300 0 true`)
         })
