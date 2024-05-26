@@ -37,12 +37,25 @@
 				"如果你的知识不够，有一些真相你会没有能力发现；"
 				"如果你的探索不充分，有一些事物你将无从了解。"
 				"唯有全面发展，以科学和魔法为左右手，走到虚空的尽头——并看破世界的真实。"
+				"如果你觉得这页写得太模糊，请翻到第二页。"
+				"{@pagebreak}"
+				"用人话说就是，本整合包的魔改中加入了大量科技与魔法的交叉，对冒险也有要求，所以每个章节都有三条任务线。"
+				"同时，由于是魔改整合包，很多常见的配方并不再适用，所以&c请善用JEI进行配方查询&r——我们不可能专门为了这种事情写一个巨大的配方帮助文档。"
+				"如果你发现&b某一侧的任务完成后没有出现之后的任务&r，请检查另一侧的任务线。"
+				"以及，前期的任务会比较详尽，后面则只起到引导的作用，很多内容可以自行探索。"
+				"有关于汉化，单独安一个I18n模组会解决大部分问题，而解决不掉的血魔法我们已经追加了资源包。"
+				"有关于队伍和任务奖励的事情，请翻到下一页。"
+				"{@pagebreak}"
+				"我们默认&9所有的任务奖励都是队伍奖励&r，也就是说，如果多个玩家进行FTB组队，那么就&a只能拿到一份奖励&r，这避免了新手通过加入队伍拿到高等级奖励的可能。"
+				"如果你希望自己拿到全部的奖励，那就不要随意组队。"
+				"具体参见“世界的表象”中有关组队和圈地的任务线表述。"
 			]
 			icon: "minecraft:writable_book"
 			id: "6A1B42D208C780BD"
 			rewards: [{
 				id: "365C42787A51F61C"
 				item: "ftbquests:book"
+				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -87,6 +100,11 @@
 				"魔法的推进将让你看破真实。"
 			]
 			id: "064AC66B17C07F0F"
+			rewards: [{
+				id: "71F0717D1B66C154"
+				item: "botania:third_eye"
+				type: "item"
+			}]
 			subtitle: "这不科学！"
 			tasks: [{
 				id: "3CD3C78774C56D24"
@@ -208,9 +226,9 @@
 				""
 				"While you choose start your game alone, you will &9get a random spawnpoint and a gift structure.&r However, this means &byou will be spawned without other players around.&r"
 				"This option is suitable for &cserver players who want to explore alone.&r"
-				""
-				"警告：这一步对服务端性能要求较高，且会对所有玩家造成卡顿！请谨慎使用。（你可以使用Chunky预生成区块来避免这个问题）"
-				"Warning: This step will cause significant lag to all players!!! Use it carefully. (You may use Chunky to pre-generate some chunks to reduce the lag)."
+				"{@pagebreak}"
+				"&c警告：&r这一步对服务端性能要求较高，且会对所有玩家造成卡顿！请谨慎使用。（你可以使用Chunky预生成区块来避免这个问题）"
+				"&cWarning: &rThis step will cause significant lag to all players!!! Use it carefully. (You may use Chunky to pre-generate some chunks to reduce the lag)."
 			]
 			icon: "createdeco:decal_left"
 			id: "170E4E15DBE89604"

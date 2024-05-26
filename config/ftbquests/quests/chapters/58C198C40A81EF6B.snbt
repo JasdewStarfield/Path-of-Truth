@@ -62,11 +62,6 @@
 					type: "item"
 				}
 				{
-					id: "741C8144EDDAB0E9"
-					item: "botania:lexicon"
-					type: "item"
-				}
-				{
 					id: "6699E477287E0D16"
 					item: "botania:pure_daisy"
 					type: "item"
@@ -84,8 +79,8 @@
 				}
 			]
 			title: "外在的帮助"
-			x: 0.0d
-			y: -2.0d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
@@ -144,8 +139,8 @@
 				}
 			]
 			title: "内心的力量"
-			x: 0.0d
-			y: 2.0d
+			x: 2.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["28A1C39EF1446334"]
@@ -161,8 +156,8 @@
 				type: "item"
 			}]
 			title: "保护自己"
-			x: 2.0d
-			y: 1.0d
+			x: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["788F3EC85AC1172E"]
@@ -191,7 +186,7 @@
 				}
 			]
 			title: "活化生命"
-			x: -2.0d
+			x: -2.5d
 			y: -1.0d
 		}
 		{
@@ -319,7 +314,7 @@
 				type: "item"
 			}]
 			title: "大 木 棒"
-			x: 2.0d
+			x: 2.5d
 			y: -1.0d
 		}
 		{
@@ -356,13 +351,13 @@
 				}
 			]
 			title: "电池，嗯"
-			x: -2.0d
-			y: 1.0d
+			x: -2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
-				"5DC5D0BF9E2C91CC"
-				"7E9EA8A40086E7CA"
+				"788F3EC85AC1172E"
+				"28A1C39EF1446334"
 			]
 			description: [
 				"你已经初步了解了魔法的力量，那么，做一个血之祭坛出来吧。"
@@ -396,7 +391,7 @@
 			}]
 			title: "牺牲与献祭"
 			x: 0.0d
-			y: 6.0d
+			y: 2.0d
 		}
 	]
 	subtitle: ["Primal Shaman"]

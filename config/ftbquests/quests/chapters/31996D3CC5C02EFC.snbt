@@ -13,8 +13,8 @@
 	quests: [
 		{
 			dependencies: [
-				"4C16917337A2AA2F"
-				"0B50AAAD0722641F"
+				"7CA6215959E08F1F"
+				"3502E7A3A9BB5220"
 			]
 			description: [
 				"也许你曾经在地牢中发现过一些奇异饰品，但直到此刻，你才能够稳定的产出它们。"
@@ -71,22 +71,11 @@
 			}
 			id: "7B6A44193BB4D5FD"
 			subtitle: "与最强鲜血法师战斗！"
-			tasks: [
-				{
-					id: "05505D853225C269"
-					item: "irons_spellbooks:blood_staff"
-					type: "item"
-				}
-				{
-					id: "1BF8BADDFD9300F3"
-					item: {
-						Count: 1b
-						id: "irons_spellbooks:wayward_compass"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "05505D853225C269"
+				item: "irons_spellbooks:blood_staff"
+				type: "item"
+			}]
 			title: "死者为大"
 			x: -1.5d
 			y: -1.5d

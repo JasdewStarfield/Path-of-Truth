@@ -312,11 +312,6 @@
 			subtitle: "让你的所有盔甲都打上法术加成！"
 			tasks: [
 				{
-					id: "775EFB333D0820AE"
-					item: "irons_spellbooks:upgrade_orb"
-					type: "item"
-				}
-				{
 					id: "3AC5B256A5AEF1E8"
 					item: "irons_spellbooks:cinder_essence"
 					type: "item"

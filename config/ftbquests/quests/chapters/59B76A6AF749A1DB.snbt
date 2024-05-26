@@ -250,6 +250,7 @@
 			dependencies: ["0EA7E42D07C4BC01"]
 			icon: "immersiveengineering:refinery"
 			id: "0FD551E50150A7AD"
+			subtitle: "上油开工"
 			tasks: [
 				{
 					count: 2L
@@ -1036,6 +1037,7 @@
 			dependencies: ["22631A52B9D81A49"]
 			id: "1112FBE58AA74D1E"
 			shape: "diamond"
+			subtitle: "装备充能"
 			tasks: [
 				{
 					id: "6CCFCB005D52E4DA"

@@ -631,6 +631,7 @@
 			rewards: [{
 				id: "4D86A6DD0D9E483A"
 				item: "botania:aura_ring_greater"
+				team_reward: false
 				type: "item"
 			}]
 			shape: "hexagon"

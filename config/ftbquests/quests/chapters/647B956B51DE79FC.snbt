@@ -41,16 +41,6 @@
 					item: "bloodmagic:masterritualstone"
 					type: "item"
 				}
-				{
-					id: "422D43F8E77060F2"
-					item: "bloodmagic:ritualdiviner"
-					type: "item"
-				}
-				{
-					id: "3837B6C1AE239E77"
-					item: "bloodmagic:ritualtinkerer"
-					type: "item"
-				}
 			]
 			title: "大型仪式的基础"
 			x: 0.0d

@@ -20,19 +20,11 @@
 			icon: "undergarden:catalyst"
 			id: "0E5C63B3D4891362"
 			subtitle: "Deep♂Dark♂Fantasy"
-			tasks: [
-				{
-					id: "6284E777A07EA445"
-					item: "undergarden:catalyst"
-					type: "item"
-				}
-				{
-					count: 10L
-					id: "637647066253066E"
-					item: "minecraft:stone_bricks"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6284E777A07EA445"
+				item: "undergarden:catalyst"
+				type: "item"
+			}]
 			title: "深园之行"
 			x: -2.0d
 			y: 0.0d

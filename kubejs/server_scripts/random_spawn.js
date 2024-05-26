@@ -73,7 +73,7 @@ const BoolRecord = function(objName) {
             if(!this.event.server.getScoreboard().hasObjective(`${this.name}`)) {
                 this.event.server.runCommandSilent(`/scoreboard objectives add ${this.name} dummy "${this.name}"`)
                 this.event.server.runCommandSilent(`/scoreboard players set false ${this.name} -1`)
-                this.event.server.tell([Text.lightPurple('[持久化]'), "创建计分板：", this.name]);
+                // this.event.server.tell([Text.lightPurple('[持久化]'), "创建计分板：", this.name]);
             }
         }
     }
@@ -173,7 +173,7 @@ function randomSpread(server, player) {
                 for(let tz = -clearRange; tz <= clearRange; tz++) {
                     if(modifiedChunkRecord.check(`[${targChunkX + tx},${targChunkZ + tz}]`)) { //区块被记录
                         occupied = true;
-                        logger.log([`[${targChunkX}, ${targChunkZ}] `, "失败： 被占用"]);
+                        //logger.log([`[${targChunkX}, ${targChunkZ}] `, "失败： 被占用"]);
                         break;
                     }
                 }
@@ -189,11 +189,11 @@ function randomSpread(server, player) {
             //判定群系是否合法
             if(targetBiomeString.includes("ocean") || targetBiomeString.includes("river")) {
                 occupied = true;
-                logger.log([`[${targChunkX}, ${targChunkZ}] `, "失败： 生物群系不合理"]);
+                //logger.log([`[${targChunkX}, ${targChunkZ}] `, "失败： 生物群系不合理"]);
             }
             //如果没有被占用，那么可以直接推出尝试的while loop，进入生成阶段
             if(!occupied) {
-                logger.log([`[${targChunkX}, ${targChunkZ}] `, "成功"]);
+                logger.log(["成功寻找到生成区域，正在生成初始结构，请在原地不要走动……"]);
                 break;
             }
         }
@@ -214,7 +214,7 @@ function randomSpread(server, player) {
         }
     }
     // 移动玩家
-    player.potionEffects.add('minecraft:slow_falling', 60, 10, false, false);    // 给予缓降效果放置摔死
+    player.potionEffects.add('minecraft:slow_falling', 60, 10, false, false);    // 给予缓降效果防止摔死
     // logger.log(["移动玩家到： ", `${X}, ${highestBlockY}, ${Z}`]);
     server.runCommandSilent(`tp ${username} ${X} ${highestBlockY + 1} ${Z}`);  // 设置坐标
     server.runCommandSilent(`tp ${username} ${x} ${y} ${z}`);  // 设置坐标
@@ -248,9 +248,7 @@ function randomSpread(server, player) {
             server.runCommandSilent(placeCmd)
             player.setPosition(x + structure.xOffSet, y + structure.yOffSet + 1, z + structure.zOffSet)
             // 完成
-            // /////////////////////////
-            // TODO: 清除无敌状态      //
-            // /////////////////////////
+            // 清除无敌状态      //
             server.runCommandSilent(`/effect clear ${player.username}`)
             server.runCommandSilent(`/effect give ${player.username} cold_sweat:grace 300 0 true`)
         })
@@ -298,18 +296,17 @@ PlayerEvents.loggedIn(event => {
         modifiedChunkRecord.init(event);
         
         /*
-        *
-        * TODO: 添加初始的无敌效果
-        * 
+        * 添加初始的无敌效果
         */
-        event.player.tell([Text.lightPurple('[Welcome]'), `cxs你记得写一下提示让玩家看任务，要中英双语的`]);
+        event.player.tell([Text.lightPurple('[Welcome]'), `\n欢迎来到真理之路整合包！请通过初始任务选择你的起点！\nWelcome to Path of Truth! Please set your spawn place by choose in task!`]);
+        event.server.runCommandSilent(`/give ${player.username} ftbquests:book`);// 给书（整合到这里了）
         event.server.runCommandSilent(`/effect give ${player.username} minecraft:slowness infinite 255 true`)
         event.server.runCommandSilent(`/effect give ${player.username} minecraft:resistance infinite 255 true`)
         event.server.runCommandSilent(`/effect give ${player.username} minecraft:regeneration infinite 255 true`)
         event.server.runCommandSilent(`/effect give ${player.username} minecraft:saturation infinite 255 true`)
         event.server.runCommandSilent(`/effect give ${player.username} minecraft:jump_boost infinite 128 true`)
         event.player.stages.add('notNewPlayer');
-        event.player.tell([Text.lightPurple('[随机出生]'), `已经为玩家设置 notNewPlayer，成功？`, event.player.stages.has('notNewPlayer')]);
-        event.player.tell([Text.lightPurple('[随机出生]'), "执行完毕"]);
+        // event.player.tell([Text.lightPurple('[随机出生]'), `已经为玩家设置 notNewPlayer，成功？`, event.player.stages.has('notNewPlayer')]);
+        // event.player.tell([Text.lightPurple('[随机出生]'), "执行完毕"]);
     }
 })
