@@ -330,7 +330,9 @@ PlayerEvents.loggedIn(event => {
                 for(let ty = 400; ty > 0; ty--){
                     server.runCommandSilent(`/execute as ${player.username} at ${player.username} if block ~ ${ty} ~ minecraft:barrier run ${placeCmd}`)
                 }
-                    player.setPosition(x + structure.xOffSet, y + structure.yOffSet + 1, z + structure.zOffSet)
+                server.runCommandSilent(`/execute as ${player.username} at ${player.username} run fill ~5 ~10 ~5 ~-5 ~-10 ~-5 air replace barrier`)
+                player.setPosition(x + structure.xOffSet, y + structure.yOffSet + 1, z + structure.zOffSet)
+                server.runCommandSilent(`/execute as ${player.username} at ${player.username} run setworldspawn`)
                 // 完成
                 // 清除无敌状态      //
                 //server.runCommandSilent(`effect clear ${player.username}`)
