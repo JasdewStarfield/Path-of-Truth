@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'minecraft:bread'})
 
     //移除敲板子和粉末等离谱配方
-    event.remove(/immersiveengineering\:crafting\/stick_.*/)
+    event.remove({id:/immersiveengineering\:crafting\/stick_.*/,not:{output:'immersiveengineering:stick_treated'}})
     event.remove({id:/immersiveengineering\:crafting\/plate_\.*/})
     event.remove({id:/immersiveengineering\:crafting\/raw_hammercrushing_\.*/})
     event.remove({id:/immersiveengineering\:crafting\/hammercrushing_\.*/})
