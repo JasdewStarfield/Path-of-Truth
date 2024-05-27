@@ -7,7 +7,7 @@
 	#The name of the modpack
 	modpackName = "Path of Truth"
 	#The version of the modpack
-	modpackVersion = "V1.1"
+	modpackVersion = "V1.2"
 	#Use the metadata.json to determine the modpack version
 	#ONLY ENABLE THIS IF YOU KNOW WHAT YOU ARE DOING
 	useMetadata = false
