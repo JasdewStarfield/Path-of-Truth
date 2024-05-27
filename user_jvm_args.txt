@@ -1,0 +1,10 @@
+# Xmx and Xms set the maximum and minimum RAM usage, respectively.
+# They can take any number, followed by an M or a G.
+# M means Megabyte, G means Gigabyte.
+# For example, to set the maximum to 3GB: -Xmx3G
+# To set the minimum to 2.5GB: -Xms2500M
+
+# A good default for a modded server is 4GB.
+# Uncomment the next line to set it.
+-Xms4G -Xmx8G
+-javaagent:authlib-injector-1.2.4.jar=https://littleskin.cn/api/yggdrasil
