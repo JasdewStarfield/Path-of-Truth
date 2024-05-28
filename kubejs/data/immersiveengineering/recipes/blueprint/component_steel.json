@@ -1,1 +1,0 @@
-{"type":"immersiveengineering:blueprint","category":"components","inputs":[{"base_ingredient":{"tag":"forge:plates/steel"},"count":2},{"tag":"forge:ingots/constantan"}],"result":{"item":"immersiveengineering:component_steel"}}

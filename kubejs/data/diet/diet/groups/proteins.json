@@ -1,9 +1,0 @@
-{
-  "icon": "minecraft:cooked_beef",
-  "color": "#d4781c",
-  "order": 0,
-  "default_value": 0.4,
-  "gain_multiplier": 1.0,
-  "decay_multiplier": 0.9,
-  "beneficial": true
-}
