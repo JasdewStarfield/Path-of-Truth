@@ -419,7 +419,7 @@
 		air_exposure = 0.0
 		#The maximum size of a vein. Set to 0 to disable generation
 		#Range: > 0
-		vein_size = 5
+		vein_size = 7
 		#The minimum Y coordinate this ore can spawn at
 		#Range: > -2147483648
 		min_y = -64
@@ -428,7 +428,7 @@
 		max_y = 24
 		#The number of veins attempted to be generated per chunk
 		#Range: > 0
-		attempts_per_chunk = 7
+		attempts_per_chunk = 14
 		#Set this to true to allow retro-generation of nickel Ore.
 		retrogen_enable = false
 
@@ -442,7 +442,7 @@
 		air_exposure = 0.0
 		#The maximum size of a vein. Set to 0 to disable generation
 		#Range: > 0
-		vein_size = 6
+		vein_size = 9
 		#The minimum Y coordinate this ore can spawn at
 		#Range: > -2147483648
 		min_y = -120
@@ -451,7 +451,7 @@
 		max_y = -8
 		#The number of veins attempted to be generated per chunk
 		#Range: > 0
-		attempts_per_chunk = 11
+		attempts_per_chunk = 22
 		#Set this to true to allow retro-generation of deep_nickel Ore.
 		retrogen_enable = false
 
