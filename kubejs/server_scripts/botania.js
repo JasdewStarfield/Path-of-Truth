@@ -97,6 +97,9 @@ ServerEvents.recipes(event => {
     event.recipes.botania.mana_infusion('undergarden:glitterkelp', 'minecraft:kelp', 100,'botania:alchemy_catalyst')
     event.recipes.botania.mana_infusion('minecraft:kelp', 'undergarden:glitterkelp', 100,'botania:alchemy_catalyst')
 
+    //竹子转化
+    event.recipes.botania.mana_infusion('minecraft:bamboo', 'botania:livingwood_twig', 500)
+
     //魔钢-奥术源质兑换
     event.recipes.botania.mana_infusion('4x irons_spellbooks:arcane_essence', 'botania:manasteel_ingot', 1000, 'botania:alchemy_catalyst')
     //变色龙蛋生产
