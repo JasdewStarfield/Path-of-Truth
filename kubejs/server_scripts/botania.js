@@ -498,7 +498,7 @@ ServerEvents.recipes(event => {
             '#botania:petals/lime',
             'botania:corporea_spark',
             'irons_spellbooks:arcane_salvage',
-            'tfmg:aluminum_ingot',
+            '#forge:ingots/aluminum',
             'botania:terrasteel_ingot',
             'botania:rune_water',
             'botania:rune_fire',
