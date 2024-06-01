@@ -13,8 +13,8 @@ ServerEvents.recipes(event => {
     )
 
     //支持机械动力的活木、活石配方
-    event.recipes.create.mixing(['botania:livingwood_log', Item.of('botania:pure_daisy').withChance(0.95)], ['#minecraft:logs','botania:pure_daisy']).heated
-    event.recipes.create.mixing(['botania:livingrock', Item.of('botania:pure_daisy').withChance(0.95)], ['minecraft:stone','botania:pure_daisy']).heated
+    event.recipes.create.mixing(['botania:livingwood_log', Item.of('botania:pure_daisy').withChance(0.95)], ['#minecraft:logs','botania:pure_daisy']).heated()
+    event.recipes.create.mixing(['botania:livingrock', Item.of('botania:pure_daisy').withChance(0.95)], ['minecraft:stone','botania:pure_daisy']).heated()
 
     //热修：遗忆守卫炼制配方
     event.recipes.botania.petal_apothecary('undergarden:forgotten_guardian_spawn_egg', 

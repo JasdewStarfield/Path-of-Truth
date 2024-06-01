@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     //机壳通用公式
     let casing = (output, base, material) => {
-      event.recipes.create.ItemApplication(output, [base, material])
+      event.recipes.createItemApplication(output, [base, material])
     }
 
     //安山机壳
@@ -21,6 +21,10 @@ ServerEvents.recipes(event => {
     event.remove({id:'create:item_application/brass_casing_from_log'})
     casing('create:brass_casing', "botania:stripped_livingwood", '#forge:plates/brass')
     casing('create:brass_casing', "botania:stripped_livingwood_log", '#forge:plates/brass')
+
+    //火车机壳
+    event.remove({id:'create:item_application/railway_casing'})
+    casing('create:railway_casing', "create:brass_casing", '#forge:plates/obsidian')
 
     //钢机壳
     event.remove({id:'tfmg:item_application/steel_casing'})
@@ -182,7 +186,7 @@ ServerEvents.recipes(event => {
     ]).transitionalItem('kubejs:incomplete_precise_engineering').loops(1)
 
     event.replaceInput(
-      {input:"create:brass_casing", not: {output:'create:brass_door'}},
+      {input:"create:brass_casing", not: {output:['create:brass_door','create:railway_casing']}},
       'create:brass_casing',
       'kubejs:precise_engineering'
     )
