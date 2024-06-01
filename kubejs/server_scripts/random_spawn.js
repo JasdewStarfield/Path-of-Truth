@@ -239,7 +239,7 @@ function randomSpread(server, player) {
     y = Math.floor(nplayer.y);
     z = Math.floor(nplayer.z);
     // 获取结构
-    const structure = spawnHouseStructureList[Math.floor(Math.random() * (spawnHouseStructureList.length - 1) )]
+    const structure = spawnHouseStructureList[Math.floor(Math.random() * (spawnHouseStructureList.length) )]
     // 生成结构
     const placeCmd = `place template path_of_truth:${structure.name} ${x + structure.generateXOffSet} ${y + structure.generateYOffSet} ${z + structure.generateZOffSet}`
     // player.tell([Text.lightPurple('[生成小屋]'), placeCmd]);
