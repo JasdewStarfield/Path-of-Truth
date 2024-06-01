@@ -1,6 +1,7 @@
 LootJS.modifiers((event) => {
     event.addLootTypeModifier(LootType.CHEST).replaceLoot("immersiveengineering:ingot_aluminum", "copper_ingot", true)
     event.addLootTypeModifier(LootType.CHEST).replaceLoot("immersiveengineering:stick_aluminum", "immersiveengineering:stick_iron", true)
+    event.addLootTypeModifier(LootType.CHEST).replaceLoot("iron_block", "raw_iron_block", true)
     event.addLootTypeModifier(LootType.CHEST).replaceLoot("iron_ingot", "raw_iron", true)
     event.addLootTypeModifier(LootType.CHEST).replaceLoot("iron_nugget", "minecraft:copper_nugget", true)
     event.addLootTypeModifier(LootType.ENTITY).replaceLoot("iron_ingot", "raw_iron", true)

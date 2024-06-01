@@ -1,0 +1,8 @@
+{
+  "replace": "true",
+  "values": [
+    "#minecraft:is_nether",
+    "#minecraft:is_overworld",
+    "#createpickywheels:waterwheels_boosted"
+  ]
+}

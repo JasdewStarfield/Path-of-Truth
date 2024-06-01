@@ -1,68 +1,34 @@
 ServerEvents.recipes(event => {
-    //火车机壳
-    event.remove({id:'create:item_application/railway_casing'})
-    event.custom({
-    "type":"create:item_application",
-    "ingredients": [
-        {
-        "item":"create:andesite_casing"
-        },
-        {
-        "item":"create:sturdy_sheet"
-        }
-    ],
-    "results": [
-        {
-        "item":"create:railway_casing"
-        }
-    ]
-    })
-
     //机壳通用公式
-    let casing = (output, material) => {
-      event.shaped(output, [ 
-        ' A ', 
-        'ABA',
-        ' A '  
-        ], {
-        B: 'botania:stripped_livingwood_log',
-        A: material
-      })
-      event.shaped(output, [ 
-        ' A ', 
-        'ABA',
-        ' A '  
-        ], {
-        B: 'botania:stripped_livingwood',
-        A: material
-      })
+    let casing = (output, base, material) => {
+      event.recipes.createItemApplication(output, [base, material])
     }
 
     //安山机壳
     event.remove({id:'create:item_application/andesite_casing_from_wood'})
     event.remove({id:'create:item_application/andesite_casing_from_log'})
-    casing("create:andesite_casing", "create:andesite_alloy")
+    casing("create:andesite_casing", "botania:stripped_livingwood", "create:andesite_alloy")
+    casing("create:andesite_casing", "botania:stripped_livingwood_log", "create:andesite_alloy")
     
     //铜机壳
     event.remove({id:'create:item_application/copper_casing_from_wood'})
     event.remove({id:'create:item_application/copper_casing_from_log'})
-    casing('create:copper_casing', 'immersiveengineering:plate_constantan')
+    casing('create:copper_casing', "botania:stripped_livingwood", '#forge:plates/constantan')
+    casing('create:copper_casing', "botania:stripped_livingwood_log", '#forge:plates/constantan')
 
     //黄铜机壳
     event.remove({id:'create:item_application/brass_casing_from_wood'})
     event.remove({id:'create:item_application/brass_casing_from_log'})
-    casing('create:brass_casing', 'create:brass_sheet')
+    casing('create:brass_casing', "botania:stripped_livingwood", '#forge:plates/brass')
+    casing('create:brass_casing', "botania:stripped_livingwood_log", '#forge:plates/brass')
+
+    //火车机壳
+    event.remove({id:'create:item_application/railway_casing'})
+    casing('create:railway_casing', "create:brass_casing", '#forge:plates/obsidian')
 
     //钢机壳
     event.remove({id:'tfmg:item_application/steel_casing'})
-    event.shaped("tfmg:steel_casing", [ 
-      ' A ', 
-      'ABA',
-      ' A '  
-      ], {
-      B: 'immersiveengineering:treated_wood_horizontal',
-      A: '#forge:plates/steel'
-    })
+    casing("tfmg:steel_casing", "immersiveengineering:treated_wood_horizontal", '#forge:plates/steel')
     event.replaceInput(
       {input:"tfmg:steel_casing", not: {output:'tfmg:steel_door'}},
       'tfmg:steel_casing',
@@ -71,14 +37,7 @@ ServerEvents.recipes(event => {
 
     //重型机械机壳
     event.remove({id:'tfmg:item_application/heavy_machinery_casing'})
-    event.shaped("tfmg:heavy_machinery_casing", [ 
-      ' A ', 
-      'ABA',
-      ' A '  
-      ], {
-      B: 'tfmg:steel_casing',
-      A: '#forge:nuggets/forgotten_metal'
-    })
+    casing("tfmg:heavy_machinery_casing", "tfmg:steel_casing", '#forge:nuggets/forgotten_metal')
     event.replaceInput(
       {input:"tfmg:heavy_machinery_casing", not: {output:'tfmg:heavy_casing_door'}},
       'tfmg:heavy_machinery_casing',
@@ -227,7 +186,7 @@ ServerEvents.recipes(event => {
     ]).transitionalItem('kubejs:incomplete_precise_engineering').loops(1)
 
     event.replaceInput(
-      {input:"create:brass_casing", not: {output:'create:brass_door'}},
+      {input:"create:brass_casing", not: {output:['create:brass_door','create:railway_casing']}},
       'create:brass_casing',
       'kubejs:precise_engineering'
     )

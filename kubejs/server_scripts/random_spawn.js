@@ -23,6 +23,16 @@ const spawnHouseStructureList = [
         xOffSet: 0,             // 生成后玩家需要tp到的偏移量，以下三个均是
         yOffSet: 5,
         zOffSet: 0
+    },
+    {
+        name: "chinesespawn",     // 结构名称，文件应当位于 kubejs\data\path_of_truth\structures\<NAME_OF_THE_STRUCTURE>.nbt
+        generateXOffSet: -8,
+        generateYOffSet: -25,   // 结构生成的时候结构最下方相对于玩家的偏移
+        generateZOffSet: -6,
+
+        xOffSet: 0,             // 生成后玩家需要tp到的偏移量，以下三个均是
+        yOffSet: 5,
+        zOffSet: 0
     }
 ]
 
