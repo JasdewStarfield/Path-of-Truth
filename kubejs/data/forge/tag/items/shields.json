@@ -1,0 +1,150 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:shield",
+      {
+        "id": "shieldexp:wooden_shield",
+        "required": false
+      },
+      {
+        "id": "shieldexp:iron_shield",
+        "required": false
+      },
+      {
+        "id": "shieldexp:golden_shield",
+        "required": false
+      },
+      {
+        "id": "shieldexp:diamond_shield",
+        "required": false
+      },
+      {
+        "id": "shieldexp:netherite_shield",
+        "required": false
+      },
+      {
+        "id": "shieldexp:paragon_shield",
+        "required": false
+      },
+      {
+        "id": "shieldexp:griefer_shield",
+        "required": false
+      },
+      {
+        "id": "alexsmobs:shield_of_the_deep",
+        "required": false
+      },
+      {
+        "id": "artifacts:umbrella",
+        "required": false
+      },
+      {
+        "id": "blue_skies:moonstone_shield",
+        "required": false
+      },
+      {
+        "id": "blue_skies:spike_shield",
+        "required": false
+      },
+      {
+        "id": "divinerpg:apalachia_shield",
+        "required": false
+      },
+      {
+        "id": "divinerpg:halite_shield",
+        "required": false
+      },
+      {
+        "id": "divinerpg:realmite_shield",
+        "required": false
+      },
+      {
+        "id": "nethers_exoticism:rambutan_shield",
+        "required": false
+      },
+      {
+        "id": "stalwart_dungeon:chorundum_shield",
+        "required": false
+      },
+      {
+        "id": "stalwart_dungeon:tungsten_shield",
+        "required": false
+      },
+      {
+        "id": "stalwart_dungeon:warped_tungsten_shield",
+        "required": false
+      },
+      {
+        "id": "sullysmod:jade_shield",
+        "required": false
+      },
+      {
+        "id": "twilight_forest:knightmetal_shield",
+        "required": false
+      },
+      {
+        "id": "unusualend:blob_shield",
+        "required": false
+      },
+      {
+        "id": "upgradednetherite:corrupt_upgraded_netherite_shield",
+        "required": false
+      },
+      {
+        "id": "upgradednetherite:echo_upgraded_netherite_shield",
+        "required": false
+      },
+      {
+        "id": "upgradednetherite:ender_upgraded_netherite_shield",
+        "required": false
+      },
+      {
+        "id": "upgradednetherite:feather_upgraded_netherite_shield",
+        "required": false
+      },
+      {
+        "id": "upgradednetherite:fire_upgraded_netherite_shield",
+        "required": false
+      },
+      {
+        "id": "upgradednetherite:gold_upgraded_netherite_shield",
+        "required": false
+      },
+      {
+        "id": "upgradednetherite:phantom_upgraded_netherite_shield",
+        "required": false
+      },
+      {
+        "id": "upgradednetherite:poison_upgraded_netherite_shield",
+        "required": false
+      },
+      {
+        "id": "upgradednetherite:water_upgraded_netherite_shield",
+        "required": false
+      },
+      {
+        "id": "upgradednetherite:wither_upgraded_netherite_shield",
+        "required": false
+      },
+      {
+        "id": "upgradednetherite:netherite_shield",
+        "required": false
+      },
+      {
+        "id": "upgradednetherite_ultimate:ultimate_upgraded_netherite_shield",
+        "required": false
+      },
+      {
+        "id": "immersiveengineering:shield",
+        "required": false
+      },
+      {
+        "id": "alexsmobs:skelewag_sword",
+        "required": false
+      },
+      {
+        "id": "alexscaves:resistor_shield",
+        "required": false
+      }
+    ]
+  }
