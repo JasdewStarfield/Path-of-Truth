@@ -47,6 +47,12 @@ function getNumber(min,max){
     return randNumber;
 }
 
+//限定范围整数随机数
+function getRandomInt(max){
+    let randNumber = Math.floor(Math.random() * (max+1));
+    return randNumber;
+}
+
 // PlayerEvents.loggedIn(event => {
 //     let username = event.player.name
 //     if (!event.player.stages.has('notNewPlayer')) {
@@ -239,7 +245,7 @@ function randomSpread(server, player) {
     y = Math.floor(nplayer.y);
     z = Math.floor(nplayer.z);
     // 获取结构
-    const structure = spawnHouseStructureList[Math.floor(Math.random() * (spawnHouseStructureList.length) )]
+    const structure = spawnHouseStructureList[getRandomInt(spawnHouseStructureList.length-1)]
     // 生成结构
     const placeCmd = `place template path_of_truth:${structure.name} ${x + structure.generateXOffSet} ${y + structure.generateYOffSet} ${z + structure.generateZOffSet}`
     // player.tell([Text.lightPurple('[生成小屋]'), placeCmd]);
@@ -331,7 +337,7 @@ PlayerEvents.loggedIn(event => {
             // delay generation, due to the "not loaded" issue
             server.scheduleInTicks(10, callback => {
                 // 获取结构
-                const structure = spawnHouseStructureList[Math.floor(Math.random() * (spawnHouseStructureList.length) )]
+                const structure = spawnHouseStructureList[getRandomInt(spawnHouseStructureList.length-1)]
                 // 生成结构
                 const placeCmd = `place template path_of_truth:${structure.name} ${x + structure.generateXOffSet} ${y + structure.generateYOffSet} ${z + structure.generateZOffSet}`
                 // player.tell([Text.lightPurple('[生成小屋]'), placeCmd]);
