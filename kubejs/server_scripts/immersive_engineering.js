@@ -7,6 +7,22 @@ ServerEvents.recipes(event => {
     event.remove({id:/immersiveengineering\:crafting\/raw_hammercrushing_\.*/})
     event.remove({id:/immersiveengineering\:crafting\/hammercrushing_\.*/})
 
+    //机械动力适配IE的敲板子
+    let Plates = (material) => {
+        event.recipes.create.pressing('#forge:plates/'+material, '#forge:ingots/'+material)
+    }
+
+    const IEMetals=[
+        "aluminum",
+        "electrum",
+        "uranium",
+        "nickel",
+        "silver",
+        "lead"
+    ]
+
+    IEMetals.forEach((id) => Plates(id))
+
     //按分类移除
     event.remove({type:'immersiveengineering:alloy'})
 
