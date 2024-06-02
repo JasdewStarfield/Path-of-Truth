@@ -439,6 +439,20 @@ ServerEvents.recipes(event => {
         },
         "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
     })
+    //破坏者盾牌合成
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'minecraft:emerald_block'
+        },
+        "baseinput": {
+            "item": 'shieldexp:golden_shield'
+        },
+        "output": {
+            "item": 'shieldexp:griefer_shield'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
     //点铁成金
     event.custom({
         "type": "bloodmagic:array",
