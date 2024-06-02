@@ -23,6 +23,16 @@ const spawnHouseStructureList = [
         xOffSet: 0,             // 生成后玩家需要tp到的偏移量，以下三个均是
         yOffSet: 5,
         zOffSet: 0
+    },
+    {
+        name: "chinesespawn",     // 结构名称，文件应当位于 kubejs\data\path_of_truth\structures\<NAME_OF_THE_STRUCTURE>.nbt
+        generateXOffSet: -8,
+        generateYOffSet: -30,   // 结构生成的时候结构最下方相对于玩家的偏移
+        generateZOffSet: -6,
+
+        xOffSet: 0,             // 生成后玩家需要tp到的偏移量，以下三个均是
+        yOffSet: 5,
+        zOffSet: 0
     }
 ]
 
@@ -34,6 +44,12 @@ function getNumber(min,max){
     if(Math.random() > 0.5 && reverseNumber){
         randNumber = -randNumber;
     }
+    return randNumber;
+}
+
+//限定范围整数随机数
+function getRandomInt(max){
+    let randNumber = Math.floor(Math.random() * (max+1));
     return randNumber;
 }
 
@@ -60,7 +76,7 @@ const BoolRecord = function(objName) {
             this.event.server.runCommandSilent(`/scoreboard players reset [${key}] ${this.name}`)
         },
         check: function(key) {
-            
+
             const pass = this.event.server.runCommandSilent(`/execute if score [${key}] ${this.name} > false ${this.name} run scoreboard players set [${key}] ${this.name} 1`)
             //this.event.server.tell([Text.lightPurple('[持久化]'), "检查：" , key, " : [", pass, "] "]);
             return pass === 1;
@@ -69,7 +85,7 @@ const BoolRecord = function(objName) {
             //event.player.tell([Text.lightPurple('[持久化]'), "this = ", this]);
             this.event = event;
             //this.event.server.tell([Text.lightPurple('[持久化]'), "创建计分板"]);
-            
+
             if(!this.event.server.getScoreboard().hasObjective(`${this.name}`)) {
                 this.event.server.runCommandSilent(`/scoreboard objectives add ${this.name} dummy "${this.name}"`)
                 this.event.server.runCommandSilent(`/scoreboard players set false ${this.name} -1`)
@@ -119,7 +135,7 @@ BlockEvents.placed((event) => {
  * @author Jacky_Blackson
  */
 function randomSpread(server, player) {
-    
+
     let x = Math.floor(player.x);
     let y = Math.floor(player.y);
     let z = Math.floor(player.z);
@@ -134,7 +150,7 @@ function randomSpread(server, player) {
 
     spawnRecord.init(event);
     modifiedChunkRecord.init(event);
-        
+
     const username = player.username;
 
     // 选择出生位置，不重&&不在出生点
@@ -168,7 +184,7 @@ function randomSpread(server, player) {
             // flag
             let occupied = false;
             // 判定区块是否被其他玩家占用，需要遍历目标区块前后左右的所有位置（九宫格）
-            
+
             for(let tx = -clearRange; tx <=clearRange; tx++) {
                 for(let tz = -clearRange; tz <= clearRange; tz++) {
                     if(modifiedChunkRecord.check(`[${targChunkX + tx},${targChunkZ + tz}]`)) { //区块被记录
@@ -229,7 +245,7 @@ function randomSpread(server, player) {
     y = Math.floor(nplayer.y);
     z = Math.floor(nplayer.z);
     // 获取结构
-    const structure = spawnHouseStructureList[Math.floor(Math.random() * (spawnHouseStructureList.length - 1) )]
+    const structure = spawnHouseStructureList[getRandomInt(spawnHouseStructureList.length-1)]
     // 生成结构
     const placeCmd = `place template path_of_truth:${structure.name} ${x + structure.generateXOffSet} ${y + structure.generateYOffSet} ${z + structure.generateZOffSet}`
     // player.tell([Text.lightPurple('[生成小屋]'), placeCmd]);
@@ -300,7 +316,7 @@ PlayerEvents.loggedIn(event => {
         }
 
         modifiedChunkRecord.init(event);
-        
+
         /*
         * 添加初始的无敌效果
         */
@@ -321,7 +337,7 @@ PlayerEvents.loggedIn(event => {
             // delay generation, due to the "not loaded" issue
             server.scheduleInTicks(10, callback => {
                 // 获取结构
-                const structure = spawnHouseStructureList[Math.floor(Math.random() * (spawnHouseStructureList.length - 1) )]
+                const structure = spawnHouseStructureList[getRandomInt(spawnHouseStructureList.length-1)]
                 // 生成结构
                 const placeCmd = `place template path_of_truth:${structure.name} ${x + structure.generateXOffSet} ${y + structure.generateYOffSet} ${z + structure.generateZOffSet}`
                 // player.tell([Text.lightPurple('[生成小屋]'), placeCmd]);

@@ -1,0 +1,9 @@
+{
+  "replace": "true",
+  "values": [
+    "#minecraft:is_nether",
+    "#minecraft:is_end",
+    "#minecraft:is_overworld",
+    "#createpickywheels:windmills_boosted"
+  ]
+}

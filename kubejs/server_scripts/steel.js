@@ -70,4 +70,35 @@ ServerEvents.recipes(event => {
     B: '#forge:ingots/steel',
     D: '#forge:coal_coke'
   })
+  //电动机
+  event.recipes.create.mechanical_crafting('create_new_age:basic_motor', [
+    ' CBC ',
+    'DBABD',
+    ' CBC '
+  ], {
+    A: 'create_new_age:generator_coil',
+    B: 'create_new_age:magnetite_block',
+    C: 'immersiveengineering:light_engineering',
+    D: 'immersiveengineering:coil_lv'
+  })
+  event.recipes.create.mechanical_crafting('create_new_age:advanced_motor', [
+    ' CBC ',
+    'DBABD',
+    ' CBC '
+  ], {
+    A: 'create_new_age:basic_motor',
+    B: 'create_new_age:layered_magnet',
+    C: 'immersiveengineering:light_engineering',
+    D: 'immersiveengineering:coil_mv'
+  })
+  event.recipes.create.mechanical_crafting('create_new_age:reinforced_motor', [
+    ' CBC ',
+    'DBABD',
+    ' CBC '
+  ], {
+    A: 'create_new_age:advanced_motor',
+    B: 'create_new_age:fluxuated_magnetite',
+    C: 'immersiveengineering:light_engineering',
+    D: 'immersiveengineering:coil_hv'
+  })
 })
