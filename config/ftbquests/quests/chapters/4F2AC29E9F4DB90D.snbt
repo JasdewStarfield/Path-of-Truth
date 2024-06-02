@@ -349,7 +349,7 @@
 			}]
 			title: "鼓风机输出"
 			x: -0.5d
-			y: 11.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["07C921FBCF56E703"]
@@ -380,7 +380,7 @@
 			]
 			title: "触媒装箱"
 			x: 0.5d
-			y: 11.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["7F98F9F01F44BA28"]
@@ -420,7 +420,7 @@
 			}]
 			title: "精密工业"
 			x: 0.0d
-			y: 12.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
@@ -474,7 +474,120 @@
 			}]
 			title: "精密时代"
 			x: 0.0d
-			y: 15.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["11EC3A84F0C84E65"]
+			description: [
+				"获得铁之后，这四种常用（以及接下来会变得常用）的金属就可以实现量产了！（锌可能要晚一些，得等你出粉碎轮之后）"
+				"虽然搭建产线的过程可能比较累，但是全自动还是值得的！"
+			]
+			id: "40840BF9F23BC8A1"
+			subtitle: "磨刀不误砍柴工"
+			tasks: [
+				{
+					id: "28455E5231761DC3"
+					item: "create:copper_nugget"
+					type: "item"
+				}
+				{
+					id: "6110BA0EDB39240E"
+					item: "create:zinc_nugget"
+					type: "item"
+				}
+				{
+					id: "548DF0EC0EF6ADD5"
+					item: "immersiveengineering:nugget_nickel"
+					type: "item"
+				}
+				{
+					id: "011B549B3A74134C"
+					item: "simplemetals_tin:tin_nugget"
+					type: "item"
+				}
+			]
+			title: "粒粒皆辛苦"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["40840BF9F23BC8A1"]
+			description: ["用泥胚获得铁……就是麻烦点，而且你还是逃不过高炉这一步（"]
+			id: "0E7C15008078BC90"
+			subtitle: "铁自己也行"
+			tasks: [{
+				id: "73AD02B2C758A53A"
+				item: "create:crushed_raw_iron"
+				type: "item"
+			}]
+			title: "粒粒皆辛苦2"
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["73CD9D2DD215B5F5"]
+			description: ["终于可以用简单的方式分拣物品了，不是吗？"]
+			id: "029AA89F07AEE09D"
+			subtitle: "这居然是过滤器！"
+			tasks: [
+				{
+					id: "0D53DA1B91F52319"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+				{
+					id: "137C04CA23ACC439"
+					item: "create:brass_tunnel"
+					type: "item"
+				}
+				{
+					id: "1C76A2B72514DDF7"
+					item: "create:smart_chute"
+					type: "item"
+				}
+				{
+					id: "5F5E85ED77BD90D6"
+					item: "create:smart_fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "智能时代"
+			x: 0.0d
+			y: 11.5d
+		}
+		{
+			dependencies: [
+				"51676EF62E7A17F3"
+				"73CD9D2DD215B5F5"
+			]
+			description: ["多造一些这个，用它们组合成阵列，你就可以合成很多有趣的，工作台无法制作的东西了……"]
+			id: "58EBE6ABA158001D"
+			subtitle: "Anything（指可以合成任何东西）"
+			tasks: [{
+				count: 27L
+				id: "39FACC104AFC5067"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 14.5d
+		}
+		{
+			dependencies: ["58EBE6ABA158001D"]
+			description: [
+				"你最好的垃圾处理器……"
+				"小心自己别掉进去了"
+			]
+			id: "7F8965344254B522"
+			subtitle: "真是一对大家伙"
+			tasks: [{
+				count: 2L
+				id: "2925517A680616B5"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 14.5d
 		}
 	]
 	subtitle: ["Exotic Alloys"]

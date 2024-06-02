@@ -11,4 +11,9 @@ ServerEvents.recipes(event => {
             '#forge:ingots/aluminum'
         ]
   )
+  event.shapeless(Item.of('create:copper_nugget',1),
+        [
+            '#forge:nuggets/copper'
+        ]
+  )
 })

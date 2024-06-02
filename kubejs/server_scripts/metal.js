@@ -239,4 +239,22 @@ ServerEvents.recipes(event => {
     event.recipes.create.milling(Item.of('create:powdered_obsidian').withChance(0.75), '#forge:obsidian')
     //焦煤也是
     event.recipes.create.milling(Item.of('tfmg:coal_coke_dust').withChance(0.75), '#forge:coal_coke')
+
+    //ban掉水搅拌出锌粒，火药烧烈焰粉
+    //sb chromatic return
+    event.remove({id:"createchromaticreturn:zinc_recipe"})
+    event.remove({id:"createchromaticreturn:gp_to_bp"})
+
+    //泥土到铜
+    event.recipes.create.compacting('dirt', ['#forge:sand','#forge:cobblestone',Fluid.of('water',500)])
+    event.recipes.create.splashing([Item.of('create:copper_nugget').withChance(0.25)], 'dirt')
+
+    //燧石出镍
+    event.recipes.create.milling(Item.of('#forge:nuggets/nickel').withChance(0.5), 'flint')
+
+    //黏土出锌
+    event.recipes.create.milling(Item.of('#forge:nuggets/zinc').withChance(0.25), 'clay_ball')
+
+    //泥巴出铁
+    event.recipes.create.crushing(Item.of('create:crushed_raw_iron').withChance(0.07), 'packed_mud')
 })
