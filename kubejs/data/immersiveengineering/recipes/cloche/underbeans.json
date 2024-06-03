@@ -1,0 +1,10 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{"item":"undergarden:underbeans"},
+    "render":{"type":"crop","block":"undergarden:underbean_bush"},
+    "results":[
+        {"count": 2, "item":"undergarden:underbeans"}
+    ],
+    "soil":{"item":"undergarden:deepsoil"},
+    "time":800
+}

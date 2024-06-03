@@ -1,5 +1,21 @@
 //此文件提供铁魔法系列修改
 ServerEvents.recipes(event => {
+
+    //保留nbt的有序合成
+    //可以用于背包、法术书升级一类的需要保留“内容”的配方
+    //result, shape, keys：你正常写有序合成的部分，直接粘贴就行
+    //source：你需要保留nbt的那个物品
+    //extraNBTs：额外添加的nbt，可以用来改法术书容量之类的
+    function keepNBTShapedCrafting(result, shape, keys, source, extraNBTs) {
+        let resultItem = Item.of(result)
+        event.shaped(resultItem, shape, keys).modifyResult((grid, stack) => {
+            let sourceNBTs = grid.find(source).nbt
+            stack.nbt.merge(sourceNBTs)
+            stack.nbt.merge(extraNBTs)
+            return stack
+        })
+    }
+
     //修改背包配方
     event.remove({id:'sophisticatedbackpacks:backpack'})
     event.shaped(Item.of('sophisticatedbackpacks:backpack',1),
@@ -76,7 +92,8 @@ ServerEvents.recipes(event => {
     event.remove({id:'irons_spellbooks:iron_spell_book'})
     event.remove({id:'irons_spellbooks:gold_spell_book'})
     event.remove({id:'irons_spellbooks:diamond_spell_book'})
-    event.shaped(Item.of('irons_spellbooks:iron_spell_book',1),
+
+    keepNBTShapedCrafting('irons_spellbooks:iron_spell_book',
         ['ABB',
         'ACD',
         'ABB'],
@@ -85,9 +102,12 @@ ServerEvents.recipes(event => {
             B:'#forge:leather',
             C:'irons_spellbooks:copper_spell_book',
             D:'minecraft:paper'
-        }
+        },
+        'irons_spellbooks:copper_spell_book',
+        {ISB_Spells: {maxSpells: 6}}
     )
-    event.shaped(Item.of('irons_spellbooks:gold_spell_book',1),
+
+    keepNBTShapedCrafting('irons_spellbooks:gold_spell_book',
         ['ABB',
         'ACD',
         'ABB'],
@@ -96,9 +116,11 @@ ServerEvents.recipes(event => {
             B:'#forge:leather',
             C:'irons_spellbooks:iron_spell_book',
             D:'irons_spellbooks:arcane_ingot'
-        }
+        },
+        'irons_spellbooks:iron_spell_book',
+        {ISB_Spells: {maxSpells: 8}}
     )
-    event.shaped(Item.of('irons_spellbooks:diamond_spell_book',1),
+    keepNBTShapedCrafting('irons_spellbooks:diamond_spell_book',
         ['ABB',
         'ACD',
         'ABB'],
@@ -107,7 +129,9 @@ ServerEvents.recipes(event => {
             B:'irons_spellbooks:hogskin',
             C:'irons_spellbooks:gold_spell_book',
             D:'bloodmagic:apprenticebloodorb'
-        }
+        },
+        'irons_spellbooks:gold_spell_book',
+        {ISB_Spells: {maxSpells: 10}}
     )
 
     //修改传说法术书配方

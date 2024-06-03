@@ -475,12 +475,6 @@
 					type: "item"
 				}
 				{
-					count: 6L
-					id: "013133A969D5F8EC"
-					item: "immersiveengineering:storage_steel"
-					type: "item"
-				}
-				{
 					count: 5L
 					id: "5F1C12F5642A482F"
 					item: "immersiveengineering:steel_scaffolding_standard"
@@ -516,7 +510,13 @@
 					type: "item"
 				}
 				{
-					id: "6998FE6FE8B54E9B"
+					count: 6L
+					id: "6ADB0D5CF731E92A"
+					item: "tfmg:steel_block"
+					type: "item"
+				}
+				{
+					id: "01ABF3E61F49C2FC"
 					item: {
 						Count: 1b
 						id: "immersiveengineering:hammer"
@@ -738,7 +738,7 @@
 			dependencies: ["22631A52B9D81A49"]
 			description: ["虽然这个东西是脚手架没错，但同样也是机器框架）"]
 			id: "0EA7E42D07C4BC01"
-			subtitle: "钢铁的作用）"
+			subtitle: "但是你的脚手架又弥补了这一点"
 			tasks: [{
 				id: "2B3D45F9C0B744F9"
 				item: "immersiveengineering:steel_scaffolding_standard"
@@ -882,6 +882,7 @@
 			description: ["你生产金属线的效率现在能翻倍了！别忘了！"]
 			id: "4BBD74D56BC12AEE"
 			shape: "diamond"
+			subtitle: "成双成对"
 			tasks: [
 				{
 					id: "18EC031E6DC5AF3C"
@@ -901,6 +902,7 @@
 					type: "item"
 				}
 			]
+			title: "工艺升级"
 			x: -4.5d
 			y: 1.5d
 		}

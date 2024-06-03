@@ -1,0 +1,11 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{"item":"snowyspirit:ginger_flower"},
+    "render":{"type":"crop","block":"snowyspirit:ginger"},
+    "results":[
+        {"count":2,"item":"snowyspirit:ginger_flower"},
+        {"item":"snowyspirit:ginger"}
+    ],
+    "soil":{"item":"minecraft:dirt"},
+    "time":800
+}

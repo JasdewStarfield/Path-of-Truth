@@ -3,11 +3,15 @@
     "minecraft",
     "kubejs",
     "crafttweaker",
+    "farmersdelight",
+    "supplementaries",
     "create",
+    "tmted",
     "thermal",
     "tfmg",
     "immersiveengineering",
-    "mekanism"
+    "mekanism",
+    "beautify"
   ],
   "stoneStrata": [
     "stone",
@@ -30,7 +34,10 @@
     "forge:wires/{material}",
     "forge:storage_blocks/{material}",
     "forge:storage_blocks/raw_{material}",
-    "forge:coal_coke"
+    "forge:coal_coke",
+    "forge:dough",
+    "forge:flour",
+    "forge:rope"
   ],
   "materials": [
     "aeternium",

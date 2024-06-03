@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
 
   //铝
   event.remove([{id:'create:splashing/immersiveengineering/crushed_raw_aluminum'}])
-  event.custom({"type":"immersiveengineering:arc_furnace","additives":[],"energy":204800,"input":{"item":"create:crushed_raw_aluminum"},"results":[{"tag":"forge:ingots/aluminum"}],"slag":{"tag":"forge:slag"},"time":400})
+  event.custom({"type":"immersiveengineering:arc_furnace","additives":[],"energy":204800,"input":{"item":"create:crushed_raw_aluminum"},"results":[{"item":"tfmg:aluminum_ingot"}],"slag":{"tag":"forge:slag"},"time":400})
   event.remove([{ type: 'minecraft:smelting', output: '#forge:ingots/aluminum' }, { type: 'minecraft:blasting', output: '#forge:ingots/aluminum' }])
   event.remove([{id:'immersiveengineering:crusher/ingot_aluminum'}])
   event.remove([{id:'minecraft:kjs_immersiveengineering_ingot_aluminum'}])

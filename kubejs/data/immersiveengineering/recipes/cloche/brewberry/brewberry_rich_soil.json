@@ -1,0 +1,20 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{
+        "item":"blue_skies:brewberry_bush"
+    },
+    "render":{
+        "type":"generic",
+        "block":"blue_skies:brewberry_bush"
+    },
+    "results":[
+        {
+            "count":3,
+            "item":"blue_skies:brewberry"
+        }
+    ],
+    "soil":{
+        "item":"farmersdelight:rich_soil"
+    },
+    "time":640
+}

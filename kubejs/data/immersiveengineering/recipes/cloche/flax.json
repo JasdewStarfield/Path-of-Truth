@@ -1,0 +1,11 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{"item":"supplementaries:flax_seeds"},
+    "render":{"type":"crop","block":"supplementaries:flax"},
+    "results":[
+        {"count":2,"item":"supplementaries:flax_seeds"},
+        {"item":"supplementaries:flax"}
+    ],
+    "soil":{"item":"minecraft:dirt"},
+    "time":800
+}

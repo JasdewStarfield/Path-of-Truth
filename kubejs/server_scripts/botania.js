@@ -514,4 +514,36 @@ ServerEvents.recipes(event => {
         ]
     )
 
+    //花瓣适配种植罩
+    let petalsCloche = (material) => {
+        event.custom({
+            "type":"immersiveengineering:cloche",
+            "input":{"item":"botania:"+material+"_petal"},
+            "render":{"type":"generic","block":"botania:"+material+"_double_flower"},
+            "results":[{"item":"botania:"+material+"_double_flower"}],
+            "soil":{"item":"farmersdelight:rich_soil"},
+            "time":960
+        })
+    }
+
+    const Colours = [
+        "white",
+        "orange",
+        "magenta",
+        "light_blue",
+        "yellow",
+        "lime",
+        "pink",
+        "gray",
+        "light_gray",
+        "cyan",
+        "purple",
+        "blue",
+        "brown",
+        "green",
+        "red",
+        "black"
+    ]
+
+    Colours.forEach((colour) => petalsCloche(colour))
 })

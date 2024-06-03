@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
     event.remove({id:/immersiveengineering\:crafting\/hammercrushing_\.*/})
 
     //机械动力适配IE的敲板子
-    let Plates = (material) => {
+    let plates = (material) => {
         event.recipes.create.pressing('#forge:plates/'+material, '#forge:ingots/'+material)
     }
 
@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
         "lead"
     ]
 
-    IEMetals.forEach((id) => Plates(id))
+    IEMetals.forEach((id) => plates(id))
 
     //按分类移除
     event.remove({type:'immersiveengineering:alloy'})
@@ -67,7 +67,6 @@ ServerEvents.recipes(event => {
     event.remove({type:"tfmg:coking"})
     event.remove({id:/immersiveengineering:blastfurnace\/steel.*/})
     event.remove({id:/immersiveengineering:blastfurnace\/fuel.*/})
-    event.recipes.create.milling(Item.of('#forge:dusts/coal_coke').withChance(0.8), 'tfmg:coal_coke')
     event.custom({
         "type":"immersiveengineering:blast_furnace",
         "input":{"tag":"forge:raw_materials/iron"},
@@ -154,6 +153,8 @@ ServerEvents.recipes(event => {
           }
         ]
     })
+    //BOP的玫瑰石英碎块
+    event.recipes.create.crushing(Item.of('create:rose_quartz').withChance(0.1), 'biomesoplenty:rose_quartz_block')
 
     //工程块
     event.remove({id:"immersiveengineering:crafting/light_engineering"})

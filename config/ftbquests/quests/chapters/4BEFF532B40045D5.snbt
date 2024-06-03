@@ -347,24 +347,27 @@
 		{
 			dependencies: ["2BC7BDD7E5EC76E5"]
 			description: [
-				"有时，你会发现一些陌生的奇妙的生物。制作一本动物图鉴吧！它会帮你认识和了解其中的大部分！"
-				"如果你尝试过钓鱼，你也会发现你能够在不同的地方钓到全新的鱼类。为什么不制作一本百鱼全书来记录它们呢？"
+				"怪奇宝典——正如其名，是本古怪的书。"
+				"它里面没有内容，但正因如此，它似乎能容纳下无限的知识……"
 			]
-			icon: "minecraft:writable_book"
+			icon: {
+				Count: 1b
+				id: "eccentrictome:tome"
+				tag: {
+					"eccentrictome:mods": { }
+				}
+			}
 			id: "59F2091BF9289EC3"
 			subtitle: "了解这个充满生机的世界"
-			tasks: [
-				{
-					id: "40AB1F84A1C36FCA"
-					item: "alexsmobs:animal_dictionary"
-					type: "item"
+			tasks: [{
+				id: "23C86DB8EBACAD0F"
+				item: {
+					Count: 1b
+					id: "eccentrictome:tome"
+					tag: { }
 				}
-				{
-					id: "491D2B5FCC2BD033"
-					item: "tide:fishing_journal"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "知识就是力量"
 			x: -2.0d
 			y: 2.0d
@@ -486,17 +489,65 @@
 		{
 			dependencies: ["59F2091BF9289EC3"]
 			description: [
-				"虽然理论上这本书可以被放到护符槽，但因为它通过右键操作，最好是随身携带）"
-				"潜行右键存储一级等级，直接右键释放一级等级——再也不用担心死亡后平白无故的经验损失了！"
-				"掌控你的知识，这样在需要经验的时候你才有足够的力量）"
+				"获得这个世界上所有的手册！"
+				"现在，这些知识都属于你了……你或许应该把它们都放进怪奇宝典里"
 			]
 			id: "7A0B5E901E6F8081"
-			subtitle: "控制你的经验！"
-			tasks: [{
-				id: "754851251177E8D1"
-				item: "bloodmagic:experiencebook"
-				type: "item"
-			}]
+			subtitle: "读万卷书"
+			tasks: [
+				{
+					id: "6623615B26788597"
+					item: {
+						Count: 1b
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "bloodmagic:guide"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5FB37FC267CF4F69"
+					item: "botania:lexicon"
+					type: "item"
+				}
+				{
+					id: "26CD097DD5273AA5"
+					item: "tide:fishing_journal"
+					type: "item"
+				}
+				{
+					id: "08B7C5201909D4F4"
+					item: "alexsmobs:animal_dictionary"
+					type: "item"
+				}
+				{
+					id: "1A0BFF413B55D5B0"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
+				{
+					id: "24F155C60081C214"
+					item: "solapplepie:food_book"
+					type: "item"
+				}
+				{
+					id: "74BAA58BC3EAD919"
+					item: {
+						Count: 1b
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "irons_spellbooks:iss_guide_book"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6AECC6B3C7F88EC0"
+					item: "ftbquests:book"
+					type: "item"
+				}
+			]
 			title: "知识掌控者"
 			x: -3.0d
 			y: 3.0d
@@ -638,8 +689,8 @@
 		{
 			dependencies: ["3A2CCC29ACE28498"]
 			description: [
-				"抽屉还能升级！"
-				"用升级模板可以做出多种升级，功能包括但不限于增大储量，销毁物品等等。"
+				"在我们的修改下，如果抽屉不进行升级，那么它的储量将会相当有限。"
+				"用升级模板可以逐级做出多种升级，功能包括但不限于增大储量，销毁物品等等。"
 			]
 			icon: "storagedrawers:diamond_storage_upgrade"
 			id: "360CCFCD57F813D7"
