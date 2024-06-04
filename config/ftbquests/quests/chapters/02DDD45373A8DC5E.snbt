@@ -21,7 +21,7 @@
 			tasks: [{
 				id: "66B578110EFCF7EA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:workbench"
@@ -225,7 +225,7 @@
 				{
 					id: "2146F0E5E72D2172"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:plates"
@@ -351,7 +351,7 @@
 				{
 					id: "353B0257275D6612"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:bronze_sword"
 						tag: {
 							Damage: 0
@@ -362,7 +362,7 @@
 				{
 					id: "0AF29D10ED04F9B1"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:bronze_pickaxe"
 						tag: {
 							Damage: 0
@@ -373,7 +373,7 @@
 				{
 					id: "3F26BA4237D434C5"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:bronze_axe"
 						tag: {
 							Damage: 0
@@ -384,7 +384,7 @@
 				{
 					id: "64B4C614B3F38622"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:bronze_shovel"
 						tag: {
 							Damage: 0
@@ -395,7 +395,7 @@
 				{
 					id: "13F716548484A9F8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:bronze_hoe"
 						tag: {
 							Damage: 0
@@ -554,7 +554,7 @@
 			tasks: [{
 				id: "2CC1960A4B0CF73D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "immersiveengineering:hammer"
 					tag: {
 						Damage: 0

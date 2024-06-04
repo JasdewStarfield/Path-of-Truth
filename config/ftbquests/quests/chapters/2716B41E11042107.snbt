@@ -131,7 +131,7 @@
 				{
 					id: "11F7365EA7861EFA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "create:super_glue"
 						tag: {
 							Damage: 0
@@ -216,7 +216,7 @@
 				{
 					id: "1C74408D889CB8AF"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -241,7 +241,7 @@
 			tasks: [{
 				id: "6F18410C24225D27"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "immersiveengineering:survey_tools"
 					tag: {
 						Damage: 0
@@ -570,7 +570,7 @@
 				{
 					id: "14D9A7AD66EB0E8E"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							Parent: {
 								Items: [ ]
@@ -584,7 +584,7 @@
 				{
 					id: "3794154469C43BE9"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							Parent: {
 								Items: [ ]
@@ -613,7 +613,7 @@
 				{
 					id: "01A2A7EE3E4B6CE5"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							Parent: {
 								Items: [ ]
@@ -627,7 +627,7 @@
 				{
 					id: "71AC37C7FF3388AD"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							Parent: {
 								Items: [ ]

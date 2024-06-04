@@ -16,7 +16,7 @@
 			tasks: [{
 				id: "075C620C31120419"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "minecraft:logs"

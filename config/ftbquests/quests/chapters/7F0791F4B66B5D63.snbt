@@ -79,7 +79,7 @@
 				{
 					id: "6B32646CFFA2A817"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "blue_skies:zeal_lighter"
 						tag: {
 							Damage: 0
@@ -113,7 +113,7 @@
 				{
 					id: "0A6CEFF58CCD2909"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "blue_skies:zeal_lighter"
 						tag: {
 							Damage: 0
@@ -183,7 +183,7 @@
 			tasks: [{
 				id: "6E709DFBB1DCE608"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tide:blazing_swordfish"
 					tag: {
 						Damage: 0

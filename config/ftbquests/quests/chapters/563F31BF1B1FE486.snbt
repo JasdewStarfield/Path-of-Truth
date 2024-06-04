@@ -41,7 +41,7 @@
 			tasks: [{
 				id: "335AC39A26B19ED1"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "irons_spellbooks:copper_spell_book"
 					tag: {
 						ISB_Spells: {
@@ -246,7 +246,7 @@
 			tasks: [{
 				id: "137EB8297FD4C37B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "botania:mana_tablet"
 					tag: {
 						creative: 1b
@@ -362,7 +362,7 @@
 			tasks: [{
 				id: "0832B35B18824218"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "alexsmobs:dimensional_carver"
 					tag: {
 						Damage: 0

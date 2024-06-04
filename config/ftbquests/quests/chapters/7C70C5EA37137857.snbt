@@ -28,7 +28,7 @@
 			dependencies: ["280307C036B9B6E7"]
 			description: ["剧毒巢穴的最下层，蜘蛛女王欢迎你）"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "blue_skies:different_sword"
 				tag: {
 					Damage: 0
@@ -40,7 +40,7 @@
 				{
 					id: "057162BE11E594E2"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "blue_skies:arachnarch_trophy"
 						tag: {
 							BlockStateTag: {
@@ -53,7 +53,7 @@
 				{
 					id: "5D8AB2E089CB256E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "blue_skies:alchemist_trophy"
 						tag: {
 							BlockStateTag: {
@@ -72,7 +72,7 @@
 			dependencies: ["7A6D4E28C28302FE"]
 			description: ["自然城堡的最上层，大树守卫等着你）"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "blue_skies:crushing_hammer"
 				tag: {
 					Damage: 0
@@ -84,7 +84,7 @@
 				{
 					id: "387A50530A0BE1BB"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "blue_skies:starlit_crusher_trophy"
 						tag: {
 							BlockStateTag: {
@@ -97,7 +97,7 @@
 				{
 					id: "09C7545F2D1F0813"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "blue_skies:summoner_trophy"
 						tag: {
 							BlockStateTag: {

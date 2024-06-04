@@ -162,7 +162,7 @@
 			tasks: [{
 				id: "7E42EFEA82C07766"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ingots/steel"
@@ -223,7 +223,7 @@
 				{
 					id: "24572984897793A8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:blueprint"
 						tag: {
 							blueprint: "components"
@@ -250,7 +250,7 @@
 				{
 					id: "06297AABD34B63D9"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:wirecutter"
 						tag: {
 							Damage: 0
@@ -380,7 +380,7 @@
 				{
 					id: "56FB7DCF62881173"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -401,7 +401,7 @@
 			tasks: [{
 				id: "072D81981D3A5820"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							Items: [ ]

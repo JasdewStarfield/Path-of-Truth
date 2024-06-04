@@ -69,7 +69,7 @@
 				{
 					id: "35B1398FEE514782"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "woodenbucket:wooden_bucket"
 						tag: {
 							Damage: 0
@@ -95,7 +95,7 @@
 			rewards: [{
 				id: "300AC1A510B03C11"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "irons_spellbooks:scroll"
 					tag: {
 						ISB_Spells: {
@@ -119,7 +119,7 @@
 				{
 					id: "150978E8B38FB4B1"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "irons_spellbooks:copper_spell_book"
 						tag: {
 							ISB_Spells: {
@@ -224,7 +224,7 @@
 				"顺带一提，铁魔法的法力回复是按比例进行的，所以法力总值高一点没什么坏处。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "irons_spellbooks:wandering_magician_helmet"
 				tag: {
 					Damage: 0
@@ -237,7 +237,7 @@
 				{
 					id: "3FAC8ECB05056EFE"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -253,7 +253,7 @@
 				{
 					id: "541CE495BFBB3894"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -269,7 +269,7 @@
 				{
 					id: "074299C70529C038"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -285,7 +285,7 @@
 				{
 					id: "68CB6A8EDBFAE4AD"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -369,7 +369,7 @@
 				{
 					id: "5543440A93455087"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "bloodmagic:sacrificialdagger"
 						tag: { }
 					}

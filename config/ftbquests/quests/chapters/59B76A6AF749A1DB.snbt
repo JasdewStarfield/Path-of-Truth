@@ -110,7 +110,7 @@
 				{
 					id: "37AF227F6B37E2C1"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -177,7 +177,7 @@
 				{
 					id: "432BA3C91DE215C5"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -290,7 +290,7 @@
 				{
 					id: "5A99DC18E2220867"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -383,7 +383,7 @@
 				{
 					id: "22348BD9DFAB10A4"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -433,7 +433,7 @@
 			rewards: [{
 				id: "125F680A621D3A57"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							Items: [ ]
@@ -518,7 +518,7 @@
 				{
 					id: "01ABF3E61F49C2FC"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -548,7 +548,7 @@
 			tasks: [{
 				id: "079139B4E55015BA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ingots/aluminum"
@@ -604,7 +604,7 @@
 			tasks: [{
 				id: "4138B587205AB188"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "immersiveengineering:graphite_electrode"
 					tag: {
 						graphDmg: 0
@@ -693,7 +693,7 @@
 				{
 					id: "4B481FA85145F89F"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -715,7 +715,7 @@
 				{
 					id: "0609FD0C01142C51"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:rods/all_metal"
@@ -761,7 +761,7 @@
 			tasks: [{
 				id: "26DA5121AA920A2A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "immersiveengineering:blueprint"
 					tag: {
 						blueprint: "electrode"
@@ -805,7 +805,7 @@
 			tasks: [{
 				id: "147D1D7C0FBC9106"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tfmg:screwdriver"
 					tag: {
 						Damage: 0
@@ -887,7 +887,7 @@
 				{
 					id: "18EC031E6DC5AF3C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:wires"
@@ -935,7 +935,7 @@
 				{
 					id: "52D848C4EC576D25"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -951,7 +951,7 @@
 				{
 					id: "36A3A7318D3D1F11"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -967,7 +967,7 @@
 				{
 					id: "1E56FDC9EA12F2CA"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -983,7 +983,7 @@
 				{
 					id: "013472378BC5AC3E"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -1021,7 +1021,7 @@
 			tasks: [{
 				id: "43124CC78A2EF0DD"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							Items: [ ]
@@ -1044,7 +1044,7 @@
 				{
 					id: "6CCFCB005D52E4DA"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							Parent: {
 								Items: [ ]
@@ -1086,7 +1086,7 @@
 			tasks: [{
 				id: "0ADE2F4D3B0B083C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tfmg:quad_potato_cannon"
 					tag: {
 						Damage: 0

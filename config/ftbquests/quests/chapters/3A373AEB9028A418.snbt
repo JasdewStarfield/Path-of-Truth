@@ -86,7 +86,7 @@
 			tasks: [{
 				id: "26C5D84BA231F17D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "minecraft:beds"
@@ -107,7 +107,7 @@
 				"多走走，多看看，顺便找到你所需要的材料。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "alexsmobs:dimensional_carver"
 				tag: {
 					Damage: 0

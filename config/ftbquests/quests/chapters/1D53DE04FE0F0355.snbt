@@ -9,11 +9,7 @@
 	icon: "minecraft:skeleton_skull"
 	id: "1D53DE04FE0F0355"
 	images: [{
-		click: ""
-		corner: false
-		dev: false
 		height: 1.0d
-		hover: [ ]
 		image: "kubejs:textures/logo_new.png"
 		rotation: 0.0d
 		width: 6.581993569131833d
@@ -109,7 +105,7 @@
 			tasks: [{
 				id: "3CD3C78774C56D24"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "irons_spellbooks:copper_spell_book"
 					tag: {
 						ISB_Spells: {
@@ -142,7 +138,7 @@
 				{
 					id: "33962CC0203CB2E7"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "respawnobelisks:obelisk_core"
 						tag: {
 							RespawnObeliskData: {

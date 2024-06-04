@@ -19,7 +19,7 @@
 				"为什么让你查jei呢，因为配方我们改动的可不少）"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "patchouli:guide_book"
 				tag: {
 					"patchouli:book": "bloodmagic:guide"
@@ -32,7 +32,7 @@
 			tasks: [{
 				id: "015B595F49230663"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "patchouli:guide_book"
 					tag: {
 						"patchouli:book": "bloodmagic:guide"
@@ -216,7 +216,7 @@
 				{
 					id: "19798221916B0DF8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "bloodmagic:arcaneashes"
 						tag: {
 							Damage: 0
@@ -312,7 +312,7 @@
 			rewards: [{
 				id: "589783BB7C61ACED"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "bloodmagic:soulsword"
 					tag: {
 						Damage: 0
@@ -324,7 +324,7 @@
 			tasks: [{
 				id: "20AA130C6EFE623B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "bloodmagic:soulgempetty"
 					tag: {
 						souls: 64.0d
@@ -454,7 +454,7 @@
 				"升级法术书的时候，内部的法术也会一并保留，所以可以放心升级。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "irons_spellbooks:diamond_spell_book"
 				tag: {
 					ISB_Spells: {
@@ -478,7 +478,7 @@
 				{
 					id: "6B17EEA23E83F679"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "irons_spellbooks:diamond_spell_book"
 						tag: {
 							ISB_Spells: {
@@ -705,7 +705,7 @@
 			rewards: [{
 				id: "76CD46DCEF9F2F4D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "botania:incense_stick"
 					tag: {
 						brewKey: "botania:regen_weak"
@@ -854,7 +854,7 @@
 			rewards: [{
 				id: "1195091C3344D91C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "botania:terra_sword"
 					tag: {
 						Damage: 0

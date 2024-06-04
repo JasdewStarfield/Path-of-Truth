@@ -29,7 +29,7 @@
 				{
 					id: "1E5AFC47BE30A9CB"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "blue_skies:crushing_hammer"
 						tag: {
 							Damage: 0
@@ -40,7 +40,7 @@
 				{
 					id: "37B54615B6EE606E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "blue_skies:venom_sac"
 						tag: {
 							Damage: 0
@@ -51,7 +51,7 @@
 				{
 					id: "45D65404289D4B9F"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "blue_skies:different_sword"
 						tag: {
 							Damage: 0
@@ -62,7 +62,7 @@
 				{
 					id: "7549D0AF8F876FC5"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "blue_skies:soulbound_spear"
 						tag: {
 							Damage: 0
@@ -78,7 +78,7 @@
 				{
 					id: "5BC3ACFF17AF859A"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "blue_skies:alchemy_scroll"
 						tag: {
 							Damage: 0
@@ -94,7 +94,7 @@
 				{
 					id: "5F76483372F60043"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "blue_skies:summoning_tome"
 						tag: {
 							Damage: 0
@@ -105,7 +105,7 @@
 				{
 					id: "233924D31ABA7FC4"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -127,7 +127,7 @@
 			dependencies: ["0EBCC9ACD99E6B83"]
 			description: ["获得你应该通过地狱获得的所有资源！"]
 			icon: {
-				Count: 1b
+				Count: 1
 				ForgeCaps: {
 					"cold_sweat:item_insulation": {
 						Insulation: [ ]
@@ -154,7 +154,7 @@
 				{
 					id: "324D5B81B2A82B68"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tide:blazing_swordfish"
 						tag: {
 							Damage: 0
@@ -222,7 +222,7 @@
 				{
 					id: "43F42BAF780C36EC"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "botania:odin_ring"
 						tag: {
 							baubleUUID: [I;
@@ -258,7 +258,7 @@
 			rewards: [{
 				id: "611EBF51F42906A1"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "irons_spellbooks:hither_thither_wand"
 					tag: {
 						ISB_Spells: {
@@ -281,7 +281,7 @@
 				{
 					id: "741296DE9DD90C7D"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "irons_spellbooks:scroll"
 						tag: {
 							ISB_Spells: {
@@ -303,7 +303,7 @@
 				{
 					id: "3A2AD9719A9E9BBB"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "irons_spellbooks:scroll"
 						tag: {
 							ISB_Spells: {
@@ -325,7 +325,7 @@
 				{
 					id: "5ADE8738B26BDC18"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "irons_spellbooks:scroll"
 						tag: {
 							ISB_Spells: {
@@ -347,7 +347,7 @@
 				{
 					id: "411F09CFDD86C8D5"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "irons_spellbooks:scroll"
 						tag: {
 							ISB_Spells: {
@@ -369,7 +369,7 @@
 				{
 					id: "6BD23E880EE9E147"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "irons_spellbooks:scroll"
 						tag: {
 							ISB_Spells: {
@@ -391,7 +391,7 @@
 				{
 					id: "37B53EF9E28354B3"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "irons_spellbooks:scroll"
 						tag: {
 							ISB_Spells: {
@@ -424,7 +424,7 @@
 				{
 					id: "5533F1E66DFF5304"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "alexsmobs:shield_of_the_deep"
 						tag: {
 							Damage: 0
@@ -493,7 +493,7 @@
 				{
 					id: "097BC0A831A6720E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "alexsmobs:skelewag_sword"
 						tag: {
 							Damage: 0
@@ -548,7 +548,7 @@
 				{
 					id: "4EAA16F7577E0C91"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "alexsmobs:endolocator"
 						tag: {
 							Damage: 0
@@ -559,7 +559,7 @@
 				{
 					id: "740CD24A6B8B79F0"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tide:netherite_fishing_rod"
 						tag: {
 							Damage: 0
@@ -570,7 +570,7 @@
 				{
 					id: "568E42283331BBF6"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:enchanted_book"
 						tag: {
 							StoredEnchantments: [{
@@ -772,7 +772,7 @@
 				{
 					id: "734AF4CD2A24D12E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "tide:blazing_swordfish"
 						tag: {
 							Damage: 0
@@ -793,7 +793,7 @@
 				{
 					id: "7A21D55634B4C8A8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "irons_spellbooks:scroll"
 						tag: {
 							ISB_Spells: {
@@ -814,7 +814,7 @@
 				{
 					id: "746922BC92782A44"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "irons_spellbooks:scroll"
 						tag: {
 							ISB_Spells: {
@@ -837,7 +837,7 @@
 			tasks: [{
 				id: "7868FDBB684B6F3A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "undergarden:forgotten_battleaxe"
 					tag: {
 						Damage: 0
@@ -891,7 +891,7 @@
 			rewards: [{
 				id: "13BDA7500373C98F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tfmg:quad_potato_cannon"
 					tag: {
 						Damage: 0
@@ -950,7 +950,7 @@
 				{
 					id: "73DC4989A8D8AC81"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "betterarcheology:torrent_totem"
 						tag: {
 							Damage: 0
@@ -961,7 +961,7 @@
 				{
 					id: "10FDB331EBFFC398"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "betterarcheology:soul_totem"
 						tag: {
 							Damage: 0
@@ -1040,7 +1040,7 @@
 			rewards: [{
 				id: "2836DC6D480087C3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "irons_spellbooks:netherite_spell_book"
 					tag: {
 						ISB_Spells: {
@@ -1224,7 +1224,7 @@
 			rewards: [{
 				id: "11F0B8AE3D972418"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "irons_spellbooks:scroll"
 					tag: {
 						ISB_Spells: {

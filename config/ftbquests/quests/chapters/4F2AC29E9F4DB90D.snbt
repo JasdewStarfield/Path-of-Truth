@@ -80,7 +80,7 @@
 			tasks: [{
 				id: "0C0BF712FDF13068"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "rechiseled:chisel"
 					tag: { }
 				}
@@ -130,7 +130,7 @@
 				{
 					id: "7A64A0B95B883F16"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "create:super_glue"
 						tag: {
 							Damage: 0

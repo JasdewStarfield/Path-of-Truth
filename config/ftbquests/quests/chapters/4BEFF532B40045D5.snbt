@@ -39,7 +39,7 @@
 			}]
 			title: "温度与保暖"
 			x: 0.0d
-			y: -3.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["2B8EBEC41EC3DED8"]
@@ -64,7 +64,7 @@
 			]
 			title: "冰火两重天"
 			x: -0.5d
-			y: -6.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6E08F7A257BCB99A"]
@@ -84,7 +84,7 @@
 				{
 					id: "717343A1CD9BE34D"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "cold_sweat:filled_waterskin"
 						tag: { }
 					}
@@ -93,7 +93,7 @@
 			]
 			title: "水袋"
 			x: -0.5d
-			y: -4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -138,7 +138,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6E08F7A257BCB99A"]
@@ -155,10 +155,10 @@
 			}]
 			title: "缝缝补补"
 			x: 1.5d
-			y: -4.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["2BC7BDD7E5EC76E5"]
+			dependencies: ["265C4AEB2E006996"]
 			description: [
 				"最新型的望远镜可以装备在配饰栏上！按下放大键（默认C）直接使用它吧！"
 				"它还可以在放大时使用滚轮自由缩放！"
@@ -170,11 +170,11 @@
 				item: "minecraft:spyglass"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 4.0d
+			x: 4.5d
+			y: -2.5d
 		}
 		{
-			dependencies: ["2BC7BDD7E5EC76E5"]
+			dependencies: ["34C16BAADA9CC42C"]
 			description: [
 				"本整合包有两个队伍系统：任务队伍和世界队伍。"
 				"任务队伍可以通过背包界面左上角进入它的UI。你可以创建或者加入其他人的队伍，也可以邀请在线的玩家加入你的队伍。在同一队伍的玩家任务进度是共享的。（当然奖励也是，所以别想着蹭别人的奖励了！）"
@@ -189,8 +189,8 @@
 				type: "checkmark"
 			}]
 			title: "组队！"
-			x: -3.0d
-			y: 0.0d
+			x: -1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["07AF78F3534CC8D3"]
@@ -207,11 +207,11 @@
 				type: "checkmark"
 			}]
 			title: "圈地！"
-			x: -4.5d
-			y: 0.0d
+			x: -2.5d
+			y: 4.5d
 		}
 		{
-			dependencies: ["2BC7BDD7E5EC76E5"]
+			dependencies: ["1AB48D8D4E2767F6"]
 			description: [
 				"你可能已经发现了，不同的食物会注明其拥有的营养值。这表明你在食用对应的食物时，你的营养都会发生变化，而你需要控制每种类型食物的摄取量，因为每种营养素过多或者过低都会产生Debuff（除了糖分，它只会带来过高时的负收益。少吃糖！）；而当你营养够均衡时，它们又会给你带来正面Buff！"
 				"另外，还有一个食物多样性的设定。你可以用奖励的这本食物清单（也可以简单地通过一本书来合成它）查看你最近吃过的食物，你的多样性指数，还有产生的收益——简而言之，吃不同种类的大餐更有利于多样性指数上升，而吃得越丰富，你的生命上限越高！"
@@ -231,7 +231,7 @@
 				type: "checkmark"
 			}]
 			title: "均衡饮食"
-			x: 3.0d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
@@ -247,7 +247,7 @@
 			tasks: [{
 				id: "2BF4CC115FFB7CC1"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							Items: [ ]
@@ -258,11 +258,12 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: 0.0d
+			title: "午餐袋"
+			x: 5.0d
+			y: 1.0d
 		}
 		{
-			dependencies: ["2BC7BDD7E5EC76E5"]
+			dependencies: ["1AB48D8D4E2767F6"]
 			description: ["担心死了会爆一地装备？现在，死亡会产生一个尸体，并留在原地，不会消失。你可以与尸体互动来取回你的物品。一旦尸体是空的，它就会在一段时间之后自动消失。尸体也不会因掉入岩浆或者虚空而被破坏。多好！"]
 			icon: "minecraft:zombie_head"
 			id: "6A93A46261B6C8F0"
@@ -278,8 +279,8 @@
 				value: 1L
 			}]
 			title: "你死啦？"
-			x: 2.0d
-			y: 2.0d
+			x: 3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6A93A46261B6C8F0"]
@@ -302,8 +303,8 @@
 				type: "observation"
 			}]
 			title: "叮，复活点"
-			x: 3.0d
-			y: 3.0d
+			x: 4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6E08F7A257BCB99A"]
@@ -319,20 +320,21 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: -4.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["528787BEDE2D4CE3"]
 			description: [
 				"这可不是普通的灯！如果你觉得下界太热的话，就做一个吧！它会在你过热时自动开启，为你抵挡热量，就像一个护盾！"
 				"当然，开启防护是需要充能的，而充能的物品就是灵魂豆芽。现在你知道它不是用来吃的了……"
+				"&o&b*注：如果你直接食用灵魂豆芽，可以实现瞬间快速降温；但是这一效果的CD极长因而只能临时使用）&r&r"
 			]
 			id: "7666DDA6F889A9DD"
 			subtitle: "海洋与灵魂之力！"
 			tasks: [{
 				id: "24590BA788C1DCE7"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "cold_sweat:soulspring_lamp"
 					tag: {
 						fuel: 64.0d
@@ -342,16 +344,16 @@
 				type: "item"
 			}]
 			x: 0.5d
-			y: -6.0d
+			y: -5.0d
 		}
 		{
-			dependencies: ["2BC7BDD7E5EC76E5"]
+			dependencies: ["34C16BAADA9CC42C"]
 			description: [
 				"怪奇宝典——正如其名，是本古怪的书。"
 				"它里面没有内容，但正因如此，它似乎能容纳下无限的知识……"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "eccentrictome:tome"
 				tag: {
 					"eccentrictome:mods": { }
@@ -362,18 +364,18 @@
 			tasks: [{
 				id: "23C86DB8EBACAD0F"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "eccentrictome:tome"
 					tag: { }
 				}
 				type: "item"
 			}]
 			title: "知识就是力量"
-			x: -2.0d
-			y: 2.0d
+			x: 1.5d
+			y: 3.5d
 		}
 		{
-			dependencies: ["2BC7BDD7E5EC76E5"]
+			dependencies: ["4814464FAB9C404C"]
 			description: [
 				"现在，你可以收集到许多食材！制作一个厨锅，然后你就可以用全新的方式烹饪它们！"
 				"别忘了收集一些野生作物，它们可以种植，并为你的餐桌增色不少。"
@@ -395,42 +397,11 @@
 				}
 			]
 			title: "厨神之路"
-			x: 2.0d
-			y: -2.0d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["2E7818CF013586F1"]
-			description: [
-				"愣着干嘛，按W思索啊！"
-				"我为什么一定要亲自做饭.jpg"
-			]
-			icon: "create_central_kitchen:cooking_guide"
-			id: "6770CC9E8135B472"
-			subtitle: "烈焰人，你最好的厨师"
-			tasks: [
-				{
-					id: "7F49012AE047FC3D"
-					item: {
-						Count: 1b
-						ForgeCaps: {
-							Parent: { }
-						}
-						id: "create_central_kitchen:cooking_guide"
-					}
-					type: "item"
-				}
-				{
-					id: "5ADAA386B0C8A21D"
-					item: "create:blaze_burner"
-					type: "item"
-				}
-			]
-			title: "高级大厨"
-			x: 3.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["2BC7BDD7E5EC76E5"]
+			dependencies: ["34C16BAADA9CC42C"]
 			description: ["是的，你可以上传你喜欢的图片！"]
 			icon: "immersive_paintings:painting"
 			id: "05BA4137086115E9"
@@ -448,8 +419,8 @@
 				}
 			]
 			title: "艺术家的工作"
-			x: -2.0d
-			y: -2.0d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["05BA4137086115E9"]
@@ -483,14 +454,15 @@
 				}
 			]
 			title: "音乐人的工作"
-			x: -3.0d
-			y: -3.0d
+			x: -1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["59F2091BF9289EC3"]
 			description: [
 				"获得这个世界上所有的手册！"
-				"现在，这些知识都属于你了……你或许应该把它们都放进怪奇宝典里"
+				"现在，这些知识都属于你了……你或许应该把它们都放进怪奇宝典里。"
+				"&o&a*法师的注释：如果你还没有打开精灵之门，那么也许你不应该把植物魔法辞典放进宝典……&r&r"
 			]
 			id: "7A0B5E901E6F8081"
 			subtitle: "读万卷书"
@@ -498,7 +470,7 @@
 				{
 					id: "6623615B26788597"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "patchouli:guide_book"
 						tag: {
 							"patchouli:book": "bloodmagic:guide"
@@ -534,7 +506,7 @@
 				{
 					id: "74BAA58BC3EAD919"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "patchouli:guide_book"
 						tag: {
 							"patchouli:book": "irons_spellbooks:iss_guide_book"
@@ -549,11 +521,11 @@
 				}
 			]
 			title: "知识掌控者"
-			x: -3.0d
-			y: 3.0d
+			x: 2.5d
+			y: 4.5d
 		}
 		{
-			dependencies: ["2BC7BDD7E5EC76E5"]
+			dependencies: ["1AB48D8D4E2767F6"]
 			description: [
 				"如果你想要跑图的话，就用这个吧！简单好做，还能漂移！"
 				"&o&m&b滑雪大冒险3D VER&r&r&r"
@@ -563,7 +535,7 @@
 			tasks: [{
 				id: "39F1C8F6EF93A8E5"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "snowyspirit:sleds"
@@ -573,11 +545,11 @@
 				type: "item"
 			}]
 			title: "雪橇"
-			x: 1.0d
-			y: 4.0d
+			x: 3.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["2BC7BDD7E5EC76E5"]
+			dependencies: ["724EBEFC6D269712"]
 			description: [
 				"显然，比床便宜，还能带着走，为什么不用呢？"
 				"（不过你还是得在够暖和的地方才能睡觉"
@@ -588,7 +560,7 @@
 			tasks: [{
 				id: "5E16A992F57E11B8"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "comforts:sleeping_bags"
@@ -598,7 +570,7 @@
 				type: "item"
 			}]
 			title: "睡袋"
-			x: -3.0d
+			x: -3.5d
 			y: 1.5d
 		}
 		{
@@ -616,7 +588,7 @@
 				{
 					id: "5AA9D18E750203DC"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "comforts:hammocks"
@@ -633,11 +605,11 @@
 				}
 			]
 			title: "吊床"
-			x: -5.0d
+			x: -4.5d
 			y: 2.5d
 		}
 		{
-			dependencies: ["2E7818CF013586F1"]
+			dependencies: ["4814464FAB9C404C"]
 			description: [
 				"在一些地方，你可以找到盐矿。用它你就能制作食盐，然后给各种食物调味！"
 				"调味的食物更有营养，能够额外回复饱食度。"
@@ -658,11 +630,11 @@
 				}
 			]
 			title: "盐"
-			x: 3.5d
-			y: -1.5d
+			x: 5.0d
+			y: -1.0d
 		}
 		{
-			dependencies: ["2BC7BDD7E5EC76E5"]
+			dependencies: ["724EBEFC6D269712"]
 			description: [
 				"如果有同种物品过多的情况，就试试抽屉吧！"
 				"每个抽屉可以存储众多的单一种类物品（如果有多个格子则能存储对应的种数，但每种能存储的量也会相应降低）。右键抽屉正面可以放入，左键则是拿取（Shift拿取一组）。"
@@ -673,7 +645,7 @@
 			tasks: [{
 				id: "0C0155F6F3E27FF3"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "storagedrawers:drawers"
@@ -683,8 +655,8 @@
 				type: "item"
 			}]
 			title: "抽屉"
-			x: 3.0d
-			y: 1.5d
+			x: -3.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["3A2CCC29ACE28498"]
@@ -701,8 +673,8 @@
 				type: "item"
 			}]
 			title: "升级！"
-			x: 5.0d
-			y: 2.5d
+			x: -4.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["05BA4137086115E9"]
@@ -718,22 +690,17 @@
 				type: "item"
 			}]
 			title: "以假乱真"
-			x: -3.5d
-			y: -1.5d
+			x: 1.0d
+			y: 5.0d
 		}
 		{
-			dependencies: ["2BC7BDD7E5EC76E5"]
+			dependencies: ["05BA4137086115E9"]
 			description: [
 				"在背包界面，你可以打开时装盔甲栏！"
 				"装备在时装栏的护甲会优先显示，但是，它们不会产生任何实际效果。"
 			]
 			icon: {
-				Count: 1b
-				ForgeCaps: {
-					"cold_sweat:item_insulation": {
-						Insulation: [ ]
-					}
-				}
+				Count: 1
 				id: "immersive_armors:prismarine_helmet"
 				tag: {
 					Damage: 0
@@ -749,6 +716,114 @@
 			title: "护甲幻化"
 			x: 0.0d
 			y: 5.5d
+		}
+		{
+			dependencies: ["2BC7BDD7E5EC76E5"]
+			description: ["这一栏关联了主要和外出相关的一些知识。当然，没有保温相关，因为那是单独一栏。"]
+			icon: "immersive_aircraft:telescope"
+			id: "1AB48D8D4E2767F6"
+			subtitle: "在外出的时候，你需要注意这些……"
+			tasks: [{
+				id: "2CBBDA795C9A6254"
+				title: "外出探索"
+				type: "checkmark"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2BC7BDD7E5EC76E5"]
+			icon: "biomesoplenty:magic_door"
+			id: "724EBEFC6D269712"
+			subtitle: "当你定居的时候，你需要注意这些……"
+			tasks: [{
+				id: "0F40ED21C6E4A957"
+				title: "居住与发展"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2BC7BDD7E5EC76E5"]
+			description: ["这会让你的生活更有趣！"]
+			icon: "minecraft:writable_book"
+			id: "34C16BAADA9CC42C"
+			subtitle: "多人游戏与杂项"
+			tasks: [{
+				id: "21F55F8823D36F42"
+				title: "更多知识"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["724EBEFC6D269712"]
+			icon: "artifacts:villager_hat"
+			id: "1F2E99A74CDFBD68"
+			tasks: [{
+				id: "7061709B5C76DDBD"
+				title: "神奇的村民"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F2E99A74CDFBD68"]
+			description: [
+				"我们禁止了村民售卖经验修补附魔书！"
+				"所以，刷不出来是正常现象，不用一直刷……"
+				"但是宝箱和钓鱼还是有几率出现经验修补的，多去探险吧，朋友！"
+				"&o&a*友情提示：一旦你获得一本经验修补附魔书，那么就可以通过create的一些神秘方式进行复制，所以不要直接用掉了）&r&r"
+			]
+			icon: "create:experience_nugget"
+			id: "6052F74DFBBEC018"
+			subtitle: "由于直接从村民手里买太简单……"
+			tasks: [{
+				id: "5B5265A11A240989"
+				title: "消失了哈哈"
+				type: "checkmark"
+			}]
+			title: "我经验修补呢？"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1F2E99A74CDFBD68"]
+			description: [
+				"现在，村民会售卖装有特定动物的篮子，这可以让你不用满世界的去寻找生物）"
+				"不过，这里只包括常见动物，罕见的那些还是要自己找的。"
+			]
+			icon: "villagersellanimals:crate_piglet"
+			id: "0ED1B830AB45D425"
+			subtitle: "在村民手里……"
+			tasks: [{
+				id: "49BF95A3EDF7D61F"
+				title: "装着小动物的篮子）"
+				type: "checkmark"
+			}]
+			title: "动物们！"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1F2E99A74CDFBD68"]
+			description: [
+				"现在的游商会有几率售卖一些有用的东西——尤其是魔法侧的特殊道具和一些你无法在正常条件下获得的树苗。"
+				"如果刷出了游商，请不要把它视为行走的拴绳，先看一下商品清单……"
+			]
+			icon: "minecraft:lead"
+			id: "7965ADF51F23E326"
+			subtitle: "不要上来就抽刀子！"
+			tasks: [{
+				id: "6401CAB776E74BB0"
+				title: "注意游商"
+				type: "checkmark"
+			}]
+			x: -5.0d
+			y: 1.0d
 		}
 	]
 	subtitle: ["The Representation of This World"]
