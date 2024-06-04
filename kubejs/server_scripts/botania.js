@@ -300,6 +300,14 @@ ServerEvents.recipes(event => {
         ], 
         50000
     )
+    event.shaped(Item.of('botania:terrasteel_ingot',1),
+    ['AAA',
+    'AAA',
+    'AAA'],
+    {
+        A:'botania:terrasteel_nugget'
+    }
+)
     //创造魔力石板合成
     event.recipes.botania.terra_plate(Item.of('botania:mana_tablet', '{creative:1b,mana:500000}'), 
         [
