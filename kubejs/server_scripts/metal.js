@@ -244,6 +244,7 @@ ServerEvents.recipes(event => {
     //sb chromatic return
     event.remove({id:"createchromaticreturn:zinc_recipe"})
     event.remove({id:"createchromaticreturn:gp_to_bp"})
+    event.remove({id:/createchromaticreturn\:.*doubling\.*/})
 
     //泥土到铜
     event.recipes.create.compacting('dirt', ['#forge:sand','#forge:cobblestone',Fluid.of('water',500)])
