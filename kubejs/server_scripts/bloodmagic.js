@@ -756,4 +756,514 @@ ServerEvents.recipes(event => {
         }
     })
 
+    //矿物处理（其他矿脉适配）
+    //感谢工业完成的碎矿，这样魔法就可以直接接入了
+    //切削油——
+    //霜钢
+    event.custom({
+        "type": "bloodmagic:arc",
+        //可能存在的追加输出（可以不写）
+        "addedoutput": [
+            {
+            "type": {
+                "item": 'kubejs:crushed_froststeel_ore'
+            },
+            "chance": 0.5,
+            "mainchance": 0.0
+            }
+        ],
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'undergarden:raw_froststeel'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 1,//输出数量（可以不写）
+            "item": 'kubejs:crushed_froststeel_ore'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/explosive'
+        }
+    })
+    event.custom({
+        "type": "bloodmagic:arc",
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'kubejs:crushed_froststeel_ore'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 2,//输出数量（可以不写）
+            "item": 'kubejs:froststeel_dust'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/cuttingfluid'
+        }
+    })
+    //扼塞
+    event.custom({
+        "type": "bloodmagic:arc",
+        //可能存在的追加输出（可以不写）
+        "addedoutput": [
+            {
+            "type": {
+                "item": 'kubejs:crushed_cloggrum_ore'
+            },
+            "chance": 0.5,
+            "mainchance": 0.0
+            }
+        ],
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'undergarden:raw_cloggrum'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 1,//输出数量（可以不写）
+            "item": 'kubejs:crushed_cloggrum_ore'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/explosive'
+        }
+    })
+    event.custom({
+        "type": "bloodmagic:arc",
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'kubejs:crushed_cloggrum_ore'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 2,//输出数量（可以不写）
+            "item": 'kubejs:cloggrum_dust'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/cuttingfluid'
+        }
+    })
+    //缪铁
+    event.custom({
+        "type": "bloodmagic:arc",
+        //可能存在的追加输出（可以不写）
+        "addedoutput": [
+            {
+            "type": {
+                "item": 'create_blue_skies_compat:crushed_falsite_ore'
+            },
+            "chance": 0.5,
+            "mainchance": 0.0
+            }
+        ],
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'blue_skies:raw_falsite'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 1,//输出数量（可以不写）
+            "item": 'create_blue_skies_compat:crushed_falsite_ore'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/explosive'
+        }
+    })
+    event.custom({
+        "type": "bloodmagic:arc",
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'create_blue_skies_compat:crushed_falsite_ore'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 2,//输出数量（可以不写）
+            "item": 'kubejs:falsite_dust'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/cuttingfluid'
+        }
+    })
+    //镰鼬铁
+    event.custom({
+        "type": "bloodmagic:arc",
+        //可能存在的追加输出（可以不写）
+        "addedoutput": [
+            {
+            "type": {
+                "item": 'create_blue_skies_compat:crushed_ventium_ore'
+            },
+            "chance": 0.5,
+            "mainchance": 0.0
+            }
+        ],
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'blue_skies:raw_ventium'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 1,//输出数量（可以不写）
+            "item": 'create_blue_skies_compat:crushed_ventium_ore'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/explosive'
+        }
+    })
+    event.custom({
+        "type": "bloodmagic:arc",
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'create_blue_skies_compat:crushed_ventium_ore'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 2,//输出数量（可以不写）
+            "item": 'kubejs:ventium_dust'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/cuttingfluid'
+        }
+    })
+    //炙铁
+    event.custom({
+        "type": "bloodmagic:arc",
+        //可能存在的追加输出（可以不写）
+        "addedoutput": [
+            {
+            "type": {
+                "item": 'create_blue_skies_compat:crushed_horizonite_ore'
+            },
+            "chance": 0.5,
+            "mainchance": 0.0
+            }
+        ],
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'blue_skies:raw_horizonite'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 1,//输出数量（可以不写）
+            "item": 'create_blue_skies_compat:crushed_horizonite_ore'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/explosive'
+        }
+    })
+    event.custom({
+        "type": "bloodmagic:arc",
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'create_blue_skies_compat:crushed_horizonite_ore'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 2,//输出数量（可以不写）
+            "item": 'kubejs:horizonite_dust'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/cuttingfluid'
+        }
+    })
+    //绛紫晶
+    event.custom({
+        "type": "bloodmagic:arc",
+        //可能存在的追加输出（可以不写）
+        "addedoutput": [
+            {
+            "type": {
+                "item": 'create_blue_skies_compat:crushed_charoite_ore'
+            },
+            "chance": 0.5,
+            "mainchance": 0.0
+            }
+        ],
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'blue_skies:raw_charoite'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 1,//输出数量（可以不写）
+            "item": 'create_blue_skies_compat:crushed_charoite_ore'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/explosive'
+        }
+    })
+    event.custom({
+        "type": "bloodmagic:arc",
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'create_blue_skies_compat:crushed_charoite_ore'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 2,//输出数量（可以不写）
+            "item": 'kubejs:charoite_dust'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/cuttingfluid'
+        }
+    })
+    //天闪石（水蓝石）
+    event.custom({
+        "type": "bloodmagic:arc",
+        //可能存在的追加输出（可以不写）
+        "addedoutput": [
+            {
+            "type": {
+                "item": 'create_blue_skies_compat:crushed_aquite_ore'
+            },
+            "chance": 0.5,
+            "mainchance": 0.0
+            }
+        ],
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'blue_skies:raw_aquite'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 1,//输出数量（可以不写）
+            "item": 'create_blue_skies_compat:crushed_aquite_ore'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/explosive'
+        }
+    })
+    event.custom({
+        "type": "bloodmagic:arc",
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'create_blue_skies_compat:crushed_aquite_ore'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 2,//输出数量（可以不写）
+            "item": 'kubejs:aquite_dust'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/cuttingfluid'
+        }
+    })
+    //锌
+    event.custom({
+        "type": "bloodmagic:arc",
+        //可能存在的追加输出（可以不写）
+        "addedoutput": [
+            {
+            "type": {
+                "item": 'create:crushed_raw_zinc'
+            },
+            "chance": 0.5,
+            "mainchance": 0.0
+            }
+        ],
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'create:raw_zinc'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 1,//输出数量（可以不写）
+            "item": 'create:crushed_raw_zinc'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/explosive'
+        }
+    })
+    event.custom({
+        "type": "bloodmagic:arc",
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'create:crushed_raw_zinc'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 2,//输出数量（可以不写）
+            "item": 'kubejs:zinc_dust'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/cuttingfluid'
+        }
+    })
+    //锌粉额外追加一个熔炉配方
+    event.smelting(Item.of('create:zinc_ingot',1),
+        [
+            'kubejs:zinc_dust'
+        ]
+    )
+    //锡
+    event.custom({
+        "type": "bloodmagic:arc",
+        //可能存在的追加输出（可以不写）
+        "addedoutput": [
+            {
+            "type": {
+                "item": 'create:crushed_raw_tin'
+            },
+            "chance": 0.5,
+            "mainchance": 0.0
+            }
+        ],
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'simplemetals_tin:raw_tin'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 1,//输出数量（可以不写）
+            "item": 'create:crushed_raw_tin'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/explosive'
+        }
+    })
+    event.custom({
+        "type": "bloodmagic:arc",
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'create:crushed_raw_tin'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 2,//输出数量（可以不写）
+            "item": 'kubejs:tin_dust'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/cuttingfluid'
+        }
+    })
+    //锡粉也额外追加一个熔炉配方
+    event.smelting(Item.of('simplemetals_tin:tin_ingot',1),
+        [
+            'kubejs:tin_dust'
+        ]
+    )
 })

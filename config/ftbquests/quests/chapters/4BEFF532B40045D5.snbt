@@ -825,6 +825,74 @@
 			x: -5.0d
 			y: 1.0d
 		}
+		{
+			dependencies: ["2E7818CF013586F1"]
+			description: ["在你发展到一定程度后，你可以让你的烈焰人厨师帮你做饭！"]
+			id: "0ED39B54192E5EDF"
+			subtitle: "烈焰人，居家好帮手"
+			tasks: [{
+				id: "0955EAB24EC0EED9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: { }
+					}
+					id: "create_central_kitchen:cooking_guide"
+				}
+				type: "item"
+			}]
+			title: "全自动做饭！"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6052F74DFBBEC018"]
+			description: ["在这个包里，很多生命相关的魔法都需要从小小的鸡蛋开始……"]
+			id: "6AA0E68AB33475C9"
+			subtitle: "先有鸡还是先有蛋？"
+			tasks: [{
+				id: "395381A7F0BAA299"
+				item: "minecraft:egg"
+				type: "item"
+			}]
+			title: "生命基本单元"
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3519ED0299640CF4"]
+			description: [
+				"本整合包为了方便游玩，加入了相当一批有效的饰品，可以在饰品栏进行装备。"
+				"然而相应的，有一些工业/魔法的工具也会占据饰品栏，这就需要你自行取舍了。"
+			]
+			id: "3C9AD619097D4B8D"
+			subtitle: "有用的小玩意"
+			tasks: [{
+				id: "4D52987105704EB5"
+				item: "artifacts:mimic_spawn_egg"
+				type: "item"
+			}]
+			title: "更多饰品"
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"15D6808FE057E96D"
+				"7666DDA6F889A9DD"
+			]
+			description: ["这是温度方面最强的一种材料——没有之一，但是变色龙蛋需要你自己想办法制造……"]
+			id: "63475C4CE3D204B4"
+			subtitle: "来自一些不会自然生成的动物"
+			tasks: [{
+				id: "7665F567AC56E28B"
+				item: "cold_sweat:chameleon_molt"
+				type: "item"
+			}]
+			title: "变温材料"
+			x: 0.0d
+			y: -6.5d
+		}
 	]
 	subtitle: ["The Representation of This World"]
 	title: "世界的表象"
