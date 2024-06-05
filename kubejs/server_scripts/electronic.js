@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
     ], 'kubejs:precise_engineering', [
         event.recipes.createDeploying(inter, [inter, 'create:cogwheel']),
         event.recipes.createDeploying(inter, [inter, 'create:large_cogwheel']),
-        event.recipes.createDeploying(inter, [inter, '#forge:nuggets/zinc']),
+        event.recipes.createDeploying(inter, [inter, '#blue_skies:gems/moonstone_shard']),
         event.recipes.createDeploying(inter, [inter, 'create:electron_tube']),
         event.recipes.createPressing(inter, inter)
     ]).transitionalItem(inter).loops(5)

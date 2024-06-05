@@ -61,6 +61,9 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:dusts/charoite","kubejs:charoite_dust")
     event.add("forge:dusts","kubejs:aquite_dust")
     event.add("forge:dusts/aquite","kubejs:aquite_dust")
+
+    //others
+    event.add("forge:plates","kubejs:frostfire_double_plate")
 })
 
 ServerEvents.tags("fluid", (event) => {

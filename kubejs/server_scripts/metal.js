@@ -244,6 +244,7 @@ ServerEvents.recipes(event => {
     //sb chromatic return
     event.remove({id:"createchromaticreturn:zinc_recipe"})
     event.remove({id:"createchromaticreturn:gp_to_bp"})
+    event.remove({id:"createchromaticreturn:cf_to_rs"})
     event.remove({id:/createchromaticreturn\:.*doubling\.*/})
 
     //泥土到铜
@@ -258,4 +259,8 @@ ServerEvents.recipes(event => {
 
     //泥巴出铁
     event.recipes.create.crushing(Item.of('create:crushed_raw_iron').withChance(0.07), 'packed_mud')
+
+
+    //霜火双层板
+    event.recipes.create.compacting('kubejs:frostfire_double_plate', ['#forge:plates/froststeel','#forge:slimeballs','#forge:plates/horizonite'])
 })

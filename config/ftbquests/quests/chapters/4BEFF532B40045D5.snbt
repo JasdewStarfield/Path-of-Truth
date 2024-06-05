@@ -31,6 +31,8 @@
 				item: "nethersdelight:propelplant_torch"
 				type: "item"
 			}]
+			shape: "hexagon"
+			size: 1.5d
 			subtitle: "关于这个寒冷的世界……"
 			tasks: [{
 				id: "291B93D287D7812B"
@@ -241,6 +243,8 @@
 				"试试午餐袋吧！潜行右键就可以把食物放进去了，直接长按使用便能自动吃其中多样性提升最高的一个，非常省心！（请注意，这一点并不适用于均衡饮食的营养素）"
 				"另外，这个东西还可以进行升级。谁会拒绝带上更多食物的能力呢？"
 				"&o&m&b唯一避免物品栏里的食物被海鸥吃掉的方法&r&r&r"
+				""
+				"&n午餐袋升级的时候务必把里面的东西取出来，不然会消失）&r"
 			]
 			id: "0DC81C451504AFAF"
 			subtitle: "四次元口袋.jpg"
@@ -267,6 +271,11 @@
 			description: ["担心死了会爆一地装备？现在，死亡会产生一个尸体，并留在原地，不会消失。你可以与尸体互动来取回你的物品。一旦尸体是空的，它就会在一段时间之后自动消失。尸体也不会因掉入岩浆或者虚空而被破坏。多好！"]
 			icon: "minecraft:zombie_head"
 			id: "6A93A46261B6C8F0"
+			rewards: [{
+				id: "609660BAB998CA54"
+				item: "biomesoplenty:dead_branch"
+				type: "item"
+			}]
 			subtitle: "哦布莱克斯！"
 			tasks: [{
 				checkItem: false
@@ -292,6 +301,11 @@
 				"目前，可以用来充能的物品有：末影珍珠，末影之眼，奥术源质。奥术源质可能是你前期最容易获取的，但是也只能给予少量充能。"
 			]
 			id: "3B3403855032F399"
+			rewards: [{
+				id: "3D76F980BF4168A7"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
 			subtitle: "床R.I.P."
 			tasks: [{
 				icon: "respawnobelisks:respawn_obelisk"
@@ -686,7 +700,14 @@
 			subtitle: "来骗，来偷袭"
 			tasks: [{
 				id: "6E39E76D541600D3"
-				item: "copycats:copycat_block"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "copycats:copycat_block"
+					}
+				}
+				title: "Any #copycats:copycat_block"
 				type: "item"
 			}]
 			title: "以假乱真"
@@ -722,6 +743,8 @@
 			description: ["这一栏关联了主要和外出相关的一些知识。当然，没有保温相关，因为那是单独一栏。"]
 			icon: "immersive_aircraft:telescope"
 			id: "1AB48D8D4E2767F6"
+			shape: "hexagon"
+			size: 1.5d
 			subtitle: "在外出的时候，你需要注意这些……"
 			tasks: [{
 				id: "2CBBDA795C9A6254"
@@ -735,6 +758,8 @@
 			dependencies: ["2BC7BDD7E5EC76E5"]
 			icon: "biomesoplenty:magic_door"
 			id: "724EBEFC6D269712"
+			shape: "hexagon"
+			size: 1.5d
 			subtitle: "当你定居的时候，你需要注意这些……"
 			tasks: [{
 				id: "0F40ED21C6E4A957"
@@ -749,6 +774,8 @@
 			description: ["这会让你的生活更有趣！"]
 			icon: "minecraft:writable_book"
 			id: "34C16BAADA9CC42C"
+			shape: "hexagon"
+			size: 1.5d
 			subtitle: "多人游戏与杂项"
 			tasks: [{
 				id: "21F55F8823D36F42"
@@ -883,6 +910,11 @@
 			]
 			description: ["这是温度方面最强的一种材料——没有之一，但是变色龙蛋需要你自己想办法制造……"]
 			id: "63475C4CE3D204B4"
+			rewards: [{
+				id: "1BC79A579D86BE02"
+				item: "cold_sweat:chameleon_spawn_egg"
+				type: "item"
+			}]
 			subtitle: "来自一些不会自然生成的动物"
 			tasks: [{
 				id: "7665F567AC56E28B"

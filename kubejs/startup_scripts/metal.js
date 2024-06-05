@@ -46,6 +46,11 @@ StartupEvents.registry('item', (event) => {
   event.create("falsite_dust").displayName('Falsite Grit').texture('kubejs:item/blueskies_compat/falsite_dust')
   event.create("charoite_dust").displayName('Charoite Grit').texture('kubejs:item/blueskies_compat/charoite_dust')
   event.create("aquite_dust").displayName('Aquite Grit').texture('kubejs:item/blueskies_compat/aquite_dust')
+
+  //新材料
+  event.create("frostfire_double_plate").displayName('Frostfire Double Plate').texture('kubejs:item/undergarden_compat/frostfire_double_plate')
+  event.create("forgotten_mechanism").displayName('Forgotten Mechanism').texture('kubejs:item/forgotten_mechanism')
+  event.create("incomplete_forgotten_mechanism", 'create:sequenced_assembly').displayName('Incomplete Forgotten Mechanism').texture('kubejs:item/incomplete_forgotten_mechanism')
 })
 
 StartupEvents.registry('block', (event) => {

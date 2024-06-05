@@ -1211,7 +1211,7 @@
 				}
 			]
 			title: "五星级大厨"
-			x: -1.0d
+			x: -2.0d
 			y: -4.0d
 		}
 		{
@@ -1261,8 +1261,155 @@
 				}
 			]
 			title: "神秘旋律"
-			x: 1.0d
+			x: 0.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["0B043034C7178F75"]
+			description: [
+				"其实，我们本意是让你去这些维度开斗轮式挖掘机。"
+				"但是没法检测，所以就这样代表性地写一下了（"
+			]
+			icon: {
+				Count: 1
+				id: "immersiveengineering:survey_tools"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1ADE9A25641EB88C"
+			subtitle: "在每个拥有矿脉的维度进行地质勘测！"
+			tasks: [
+				{
+					id: "109B642F02AC90C8"
+					item: {
+						Count: 1
+						id: "immersiveengineering:coresample"
+						tag: {
+							dimension: "minecraft:overworld"
+						}
+					}
+					match_nbt: true
+					title: "主世界岩芯样本"
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "56F8CE93FAAF8227"
+					item: {
+						Count: 1
+						id: "immersiveengineering:coresample"
+						tag: {
+							dimension: "minecraft:the_nether"
+						}
+					}
+					match_nbt: true
+					title: "下界岩芯样本"
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "74D72401CE454645"
+					item: {
+						Count: 1
+						id: "immersiveengineering:coresample"
+						tag: {
+							dimension: "blue_skies:everbright"
+						}
+					}
+					match_nbt: true
+					title: "永昼之地岩芯样本"
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "7C4A89BD556FFF21"
+					item: {
+						Count: 1
+						id: "immersiveengineering:coresample"
+						tag: {
+							dimension: "blue_skies:everdawn"
+						}
+					}
+					match_nbt: true
+					title: "恒晓之地岩芯样本"
+					type: "item"
+					weak_nbt_match: true
+				}
+				{
+					id: "6A1D944DC86F4E7A"
+					item: {
+						Count: 1
+						id: "immersiveengineering:coresample"
+						tag: {
+							dimension: "undergarden:undergarden"
+						}
+					}
+					match_nbt: true
+					title: "深暗之园岩芯样本"
+					type: "item"
+					weak_nbt_match: true
+				}
+			]
+			title: "地质专家"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			id: "5D6D256D4DE35A5A"
+			subtitle: "三种……呃，垃圾桶"
+			tasks: [
+				{
+					id: "290A4ECEA003960E"
+					item: "trashcans:energy_trash_can"
+					type: "item"
+				}
+				{
+					id: "3C12E7EC23CA5AC5"
+					item: "trashcans:liquid_trash_can"
+					type: "item"
+				}
+				{
+					id: "21D79379A0E581F8"
+					item: "trashcans:item_trash_can"
+					type: "item"
+				}
+			]
+			title: "环保卫士"
+			x: -1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5D6D256D4DE35A5A"]
+			description: ["老实说，现在该怀疑你是不是对垃圾桶有奇怪的癖好了"]
+			id: "15FED36DE787B730"
+			invisible: true
+			rewards: [{
+				id: "128144164E5F396B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "shieldexp:paragon_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "陷入沉思"
+			tasks: [{
+				id: "39706D9BE11AF329"
+				item: "trashcans:ultimate_trash_can"
+				type: "item"
+			}]
+			title: "还有高手？"
+			x: 1.0d
+			y: -5.5d
 		}
 	]
 	subtitle: ["The Way to Legend"]

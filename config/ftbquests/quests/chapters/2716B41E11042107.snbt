@@ -488,7 +488,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["27AC0014531AA954"]
@@ -523,10 +523,13 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -2.0d
+			y: 1.0d
 		}
 		{
-			dependencies: ["32DA53E6EDA0AC90"]
+			dependencies: [
+				"32DA53E6EDA0AC90"
+				"7C566E8D9F54FEF9"
+			]
 			description: [
 				"自己给自己焊板子你还想要工资？不可能的，朋友）"
 				"哦对了，如果出现了废料那一定是你的运气问题，人不行不能怪路不平（x"
@@ -542,10 +545,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"538F608DF5017A6A"
-				"6CDC3FDF89300F77"
-			]
+			dependencies: ["538F608DF5017A6A"]
 			description: [
 				"终于，你进入了电子时代）"
 				"虽然我们不能在MC里为你提供计算机，但你已经接近这个世界的真相了。"
@@ -558,8 +558,8 @@
 				item: "kubejs:electronic_engineering"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 2.0d
+			x: 16.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
@@ -653,15 +653,15 @@
 			]
 			id: "2D906487EC6F1A01"
 			shape: "gear"
-			size: 2.0d
+			size: 4.0d
 			subtitle: "很可爱，对吧"
 			tasks: [{
 				id: "5DB8E7650A917BFD"
 				item: "kubejs:buran"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 6.0d
+			x: 14.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["05EF035C814ADE9B"]
@@ -791,8 +791,8 @@
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.5d
+			x: 10.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -814,21 +814,21 @@
 				type: "item"
 			}]
 			title: "另一种黑金"
-			x: 8.0d
-			y: -3.0d
+			x: 14.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["5FB9514C6DE7AD58"]
-			description: ["相比于高级的电路板，木头板子就容易多了，你只需要手动把石英往木头上插）"]
-			id: "6CDC3FDF89300F77"
-			subtitle: "简单的小东西"
+			dependencies: ["7B7978B0964080F3"]
+			id: "0B043034C7178F75"
+			shape: "diamond"
+			subtitle: "更精确的矿脉采样工具"
 			tasks: [{
-				id: "0D0D8E97979AE652"
-				item: "immersiveengineering:component_electronic"
+				id: "67B5112D5F9FF788"
+				item: "immersiveengineering:sample_drill"
 				type: "item"
 			}]
-			x: 16.0d
-			y: 2.0d
+			x: -6.0d
+			y: -0.5d
 		}
 	]
 	subtitle: ["Petrochemical Engineering"]

@@ -403,6 +403,22 @@
 					}
 					type: "item"
 				}
+				{
+					id: "1A06E6DBC120BEF3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "生存的必要手段"
 			x: -1.5d
@@ -416,19 +432,24 @@
 			]
 			icon: "minecraft:raw_iron"
 			id: "7D7F5D6CF26C1636"
-			subtitle: "老铁，我请问呢？"
-			tasks: [
+			rewards: [
 				{
-					id: "1009E3D7D476BC6F"
-					title: "噔 噔 咚"
-					type: "checkmark"
+					id: "3301442B75257F02"
+					item: "minecraft:copper_ingot"
+					type: "item"
 				}
 				{
-					id: "6D4AFC5DECCC56A4"
-					item: "minecraft:raw_iron"
+					id: "6825A6B469DDE548"
+					item: "simplemetals_tin:tin_ingot"
 					type: "item"
 				}
 			]
+			subtitle: "老铁，我请问呢？"
+			tasks: [{
+				id: "6D4AFC5DECCC56A4"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
 			x: 5.0d
 			y: 0.0d
 		}
@@ -496,6 +517,8 @@
 			description: [
 				"终于，你看到了炼铁的曙光，但——你需要先去满世界找岩浆块。"
 				"找找废弃的地狱门，记得打个标记，哭泣的黑曜石你以后还会用到的。"
+				""
+				"&n注意：沉浸工程的高炉燃料只能使用焦煤粉！&r"
 			]
 			icon: "immersiveengineering:blast_furnace"
 			id: "2C15AA9278830174"
@@ -549,19 +572,31 @@
 		}
 		{
 			dependencies: ["3BECB3D53E17F80B"]
+			description: [
+				"在这章你会提前接触到一些沉浸工程的多方块结构。（就当是为电气时代做预习了吧）"
+				"多方块结构，顾名思义，你要把它按指定的方法摆出来（手册里都有写），然后拿锤子右击一下某个特定的位置以将它组装为有功能的完整多方块结构。"
+			]
 			id: "336807D048A4EF6A"
 			subtitle: "80！80！"
-			tasks: [{
-				id: "2CC1960A4B0CF73D"
-				item: {
-					Count: 1
-					id: "immersiveengineering:hammer"
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "2CC1960A4B0CF73D"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "7A6151B756584348"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
+			]
+			title: "工程师的活"
 			x: 0.0d
 			y: 16.0d
 		}

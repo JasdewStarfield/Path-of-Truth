@@ -229,6 +229,7 @@
 							blueprint: "components"
 						}
 					}
+					match_nbt: true
 					type: "item"
 				}
 				{

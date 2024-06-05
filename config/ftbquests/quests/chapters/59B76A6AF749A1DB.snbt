@@ -332,13 +332,14 @@
 				}
 			]
 			title: "中压电力系统"
-			x: 5.0d
-			y: 4.0d
+			x: 1.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
 				"3D6CCF4A93478320"
 				"3B29D716A3D5AAF0"
+				"3E60B78B0EE34B75"
 			]
 			description: ["你已经开始接近现代工业水准了，柴油发电领先时代！"]
 			icon: "immersiveengineering:diesel_generator"
@@ -457,7 +458,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["3B29D716A3D5AAF0"]
+			dependencies: [
+				"3B29D716A3D5AAF0"
+				"3E60B78B0EE34B75"
+			]
 			description: ["最强电动炉子，几乎全额的分解，最强的动力，以及——通往铝锭的通行证。"]
 			icon: "immersiveengineering:arc_furnace"
 			id: "583407C7537AE9C9"
@@ -562,18 +566,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["3B29D716A3D5AAF0"]
-			id: "2D1BA006EF115501"
-			subtitle: "建立自动化农场！"
-			tasks: [{
-				id: "39F74AB1F55B8E62"
-				title: "自动化小贴士"
-				type: "checkmark"
-			}]
-			x: 5.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["1E0E5E47E1264279"]
 			description: [
 				"其实就是压制后的碳粉（？"
@@ -586,8 +578,8 @@
 				item: "immersiveengineering:dust_hop_graphite"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 2.5d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -614,7 +606,7 @@
 			}]
 			title: "电弧炉核心"
 			x: 7.5d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2BE7BA0BE9F2DBC9"]
@@ -767,11 +759,12 @@
 						blueprint: "electrode"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			title: "我电极呢？"
-			x: 7.0d
-			y: 3.5d
+			x: 6.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -820,6 +813,7 @@
 			dependencies: [
 				"724A0B71BA342AEE"
 				"03312D6881CC617D"
+				"41E56A9D68E36043"
 			]
 			description: ["准备好迎接真正的工业时代了吗）"]
 			id: "5FB9514C6DE7AD58"
@@ -835,7 +829,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1A19AB31DBCDBCF7"]
+			dependencies: ["3E60B78B0EE34B75"]
 			description: ["重型机械的基本结构之一"]
 			id: "724A0B71BA342AEE"
 			subtitle: "很重，很重要"
@@ -844,31 +838,43 @@
 				item: "tfmg:heavy_machinery_casing"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 1.5d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["0E5C63B3D4891362"]
+			dependencies: ["504E6502A789DABF"]
 			description: [
 				"鉴于这个东西只能在深暗的遗忆守卫身上掉落，我们把它放得很靠后）"
 				"但这也意味着，如果你不去冒险，那么你是没有办法获得这种强大的材料来推进工业的）"
 			]
+			icon: "undergarden:forgotten_nugget"
 			id: "1A19AB31DBCDBCF7"
 			subtitle: "干掉另一种意义上的守卫者"
-			tasks: [{
-				id: "631AF2A0043BCBA8"
-				item: "undergarden:forgotten_nugget"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "631AF2A0043BCBA8"
+					item: "undergarden:forgotten_nugget"
+					type: "item"
+				}
+				{
+					id: "34E7901DCDF89E23"
+					item: "kubejs:forgotten_plate"
+					type: "item"
+				}
+			]
 			title: "下去吧你！"
-			x: 10.5d
-			y: 0.0d
+			x: 9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
-			description: ["沉浸工程的多方块结构的搭建方法都可以在这里找到"]
+			description: [
+				"（虽然之前已经提过了，不过鉴于过了太久所以以防你忘了再说一遍）"
+				"沉浸工程的多方块结构的搭建方法都可以在这里找到"
+			]
 			id: "1984D2E85CF06BC7"
 			shape: "diamond"
+			subtitle: "敲黑板"
 			tasks: [{
 				id: "556BBFA49015176C"
 				item: "immersiveengineering:manual"
@@ -910,6 +916,7 @@
 			dependencies: ["01534DC5812DBA15"]
 			id: "736CE93D99A91B3F"
 			shape: "diamond"
+			subtitle: "让你的沉浸工程高炉满速运转吧！"
 			tasks: [{
 				count: 2L
 				id: "0FB15D52AA8A4CA2"
@@ -1066,8 +1073,10 @@
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
+			description: ["现已支持各种模组作物！"]
 			id: "3A25C9E033482CEB"
 			shape: "diamond"
+			subtitle: "一种更优雅的种植解决方式"
 			tasks: [{
 				id: "0B79AAD8A943099B"
 				item: "immersiveengineering:cloche"
@@ -1139,6 +1148,50 @@
 			}]
 			x: -1.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["3B29D716A3D5AAF0"]
+			description: [
+				"有着奇特性质的两种金属的结合。"
+				"似乎拥有极强的导热性……同时硬度也十分优异"
+			]
+			id: "3E60B78B0EE34B75"
+			subtitle: "嗯，复合板材"
+			tasks: [{
+				id: "76A65BC6B5E46BA6"
+				item: "kubejs:frostfire_double_plate"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D6CCF4A93478320"]
+			description: ["相比于另一种（你后面会用到的）高级的电路板，木头板子就容易多了，你只需要手动把石英往木头上插）"]
+			id: "671C17CCA1D5FA78"
+			subtitle: "简单的小东西"
+			tasks: [{
+				id: "4998B75DD8C7E7A6"
+				item: "immersiveengineering:component_electronic"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1A19AB31DBCDBCF7"
+				"671C17CCA1D5FA78"
+			]
+			id: "41E56A9D68E36043"
+			subtitle: "众所周知，有时候科技发展靠考古"
+			tasks: [{
+				id: "0765B9537FD3914A"
+				item: "kubejs:forgotten_mechanism"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.0d
 		}
 	]
 	subtitle: ["Roaring Machinery"]
