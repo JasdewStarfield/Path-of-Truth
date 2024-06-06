@@ -5,10 +5,9 @@ LootJS.modifiers((event) => {
     event.addLootTypeModifier(LootType.CHEST).replaceLoot("iron_ingot", "raw_iron", true)
     event.addLootTypeModifier(LootType.CHEST).replaceLoot("iron_nugget", "minecraft:copper_nugget", true)
     event.addLootTypeModifier(LootType.ENTITY).replaceLoot("iron_ingot", "raw_iron", true)
-    event.addBlockLootModifier("minecraft:grass").removeLoot("minecraft:wheat_seeds")
-    event.addBlockLootModifier("minecraft:tall_grass").removeLoot("minecraft:wheat_seeds")
-    event.addBlockLootModifier("minecraft:grass").removeLoot("immersiveengineering:seed")
-    event.addBlockLootModifier("minecraft:tall_grass").removeLoot("immersiveengineering:seed")
+    event.addLootTableModifier(/.*/).removeLoot("netherite_ingot")
+    event.addBlockLootModifier("#minecraft:replaceable_by_trees").removeLoot("minecraft:wheat_seeds")
+    event.addBlockLootModifier("#minecraft:replaceable_by_trees").removeLoot("immersiveengineering:seeds")
     event.addLootTypeModifier(LootType.CHEST).removeLoot(Item.of('minecraft:enchanted_book').enchant('supplementaries:stasis', 1))
 
     event

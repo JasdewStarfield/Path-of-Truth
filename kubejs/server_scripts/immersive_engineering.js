@@ -164,7 +164,7 @@ ServerEvents.recipes(event => {
         ' B ',
         'A A'  
     ], {
-        B: '#blue_skies:ingots/falsite',
+        B: '#blue_skies:nuggets/falsite',
         A: '#forge:plates/steel'
     })
     event.shaped('immersiveengineering:component_iron', [ 
@@ -226,7 +226,7 @@ ServerEvents.recipes(event => {
                   "item": "tfmg:unfinished_steel_mechanism"
                 },
                 {
-                  "tag": "forge:wires/steel"
+                  "tag": "forge:dusts/aquite"
                 }
               ],
               "results": [
@@ -516,6 +516,15 @@ ServerEvents.recipes(event => {
         ]
     })
     event.recipes.create.pressing('immersiveengineering:plate_duroplast', 'tfmg:plastic_sheet')
+
+    //流体管道
+    const PipeMaterials = ['steel', 'cast_iron', 'brass', 'aluminum', 'plastic']
+    let pipe = (material) => {
+      event.remove({output:"tfmg:"+material+'_pipe'})
+      event.recipes.createItemApplication('tfmg:'+material+'_pipe', ['create:fluid_pipe', '#forge:ingots/'+material])
+    }
+    PipeMaterials.forEach((id) => pipe(id))
+    event.recipes.createItemApplication('immersiveengineering:fluid_pipe', ['tfmg:aluminum_pipe', '#forge:ingots/cloggrum'])
 
     //高级电子元件
     event.remove({id:"immersiveengineering:blueprint/component_electronic_adv"})

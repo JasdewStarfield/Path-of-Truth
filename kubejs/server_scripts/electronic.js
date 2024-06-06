@@ -53,6 +53,13 @@ ServerEvents.recipes(event => {
         }
     })
 
+    //限制热传导发电
+    event.replaceInput(
+        { output:"immersiveengineering:thermoelectric_generator" },
+        'immersiveengineering:coil_lv',
+        'immersiveengineering:coil_mv'
+    )
+
     //散热方块
     //这玩意配方比较神秘，只能用数据覆盖的方法改。参见data文件夹
 

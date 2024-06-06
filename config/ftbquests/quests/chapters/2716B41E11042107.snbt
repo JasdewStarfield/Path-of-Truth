@@ -652,6 +652,11 @@
 				"工业的本质就是以机械直达无限，而很快你就将能触碰到这一概念的边缘。"
 			]
 			id: "2D906487EC6F1A01"
+			rewards: [{
+				id: "3FC007C95BF523E1"
+				item: "minecraft:heart_pottery_sherd"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 4.0d
 			subtitle: "很可爱，对吧"
@@ -784,8 +789,10 @@
 		}
 		{
 			dependencies: ["2718164469D544DF"]
+			description: ["烈焰人最喜欢吃的"]
 			id: "2B8294A4CBF6D664"
 			shape: "circle"
+			subtitle: "超级加热！"
 			tasks: [{
 				id: "06AFE6597408DE5C"
 				item: "create:blaze_cake"
