@@ -56,12 +56,6 @@
         {
           "type": "minecraft:item",
           "weight": 20,
-          "quality": 2,
-          "name": "minecraft:iron_nugget"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 20,
           "quality": 0,
           "name": "minecraft:stick"
         }

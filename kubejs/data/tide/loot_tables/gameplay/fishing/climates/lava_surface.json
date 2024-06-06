@@ -7,8 +7,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 100,
+          "weight": 40,
           "name": "tide:obsidian_fragment"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "name": "minecraft:tropical_fish"
         },
         {
           "type": "minecraft:item",

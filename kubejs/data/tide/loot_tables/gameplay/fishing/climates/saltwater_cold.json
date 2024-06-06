@@ -7,12 +7,12 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 100,
+          "weight": 50,
           "name": "minecraft:cod"
         },
         {
           "type": "minecraft:item",
-          "weight": 70,
+          "weight": 50,
           "name": "minecraft:salmon"
         },
         {
@@ -24,6 +24,24 @@
           "type": "minecraft:item",
           "weight": 40,
           "name": "tide:tuna"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "quality": 2,
+          "name": "minecraft:pufferfish"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "quality": 2,
+          "name": "tide:barracuda"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "quality": 3,
+          "name": "tide:sailfish"
         }
       ]
     }
