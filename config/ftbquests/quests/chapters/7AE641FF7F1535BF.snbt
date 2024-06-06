@@ -18,6 +18,11 @@
 				"土高炉？土法炼钢？不存在的）"
 			]
 			id: "5B1818D5A1142A16"
+			rewards: [{
+				id: "43DAC37C86ABADB3"
+				item: "create:cogwheel"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "机 械 动 力"
@@ -156,6 +161,11 @@
 			]
 			icon: "tfmg:steel_ingot"
 			id: "7A7C0A48248FA32B"
+			rewards: [{
+				id: "0D95D18A4081C30C"
+				item: "tfmg:steel_pipe"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "钢铁雄心 IV"

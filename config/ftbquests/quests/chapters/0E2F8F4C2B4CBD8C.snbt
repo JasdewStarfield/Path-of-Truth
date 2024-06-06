@@ -966,11 +966,24 @@
 				"不同的化石有不同的作用，但这就要你自己探索了。"
 			]
 			id: "21246254369E4A91"
-			rewards: [{
-				id: "297586588106AE0B"
-				item: "betterarcheology:ocelot_fossil"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "297586588106AE0B"
+					item: "betterarcheology:ocelot_fossil"
+					type: "item"
+				}
+				{
+					id: "36FB0D7DF753F26E"
+					item: {
+						Count: 1
+						id: "betterarcheology:diamond_brush"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			subtitle: "考古#1"
 			tasks: [
 				{
@@ -1257,6 +1270,11 @@
 				}
 			}
 			id: "1ADE9A25641EB88C"
+			rewards: [{
+				id: "28FCB9DD981BB6BB"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
 			subtitle: "在每个拥有矿脉的维度进行地质勘测！"
 			tasks: [
 				{

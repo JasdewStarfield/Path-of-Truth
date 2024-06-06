@@ -49,9 +49,8 @@
 			icon: "minecraft:writable_book"
 			id: "6A1B42D208C780BD"
 			rewards: [{
-				id: "365C42787A51F61C"
-				item: "ftbquests:book"
-				team_reward: false
+				id: "305886D6F21ED99B"
+				item: "minecraft:torch"
 				type: "item"
 			}]
 			shape: "hexagon"

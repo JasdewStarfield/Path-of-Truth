@@ -128,6 +128,11 @@
 				"享受神的力量吧，现在，你就是世界的真理。"
 			]
 			id: "6D9B7D2CD86693AF"
+			rewards: [{
+				id: "664060AFCACAC5B2"
+				item: "snowyspirit:wreath"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "无限。"

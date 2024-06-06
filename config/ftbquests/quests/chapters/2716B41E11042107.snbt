@@ -15,6 +15,11 @@
 			dependencies: ["5FB9514C6DE7AD58"]
 			description: ["通过这个工程块，你可以开始构建一些真正意义上的重型机器了）"]
 			id: "143E6A57D69BAE65"
+			rewards: [{
+				id: "7E32ADC9F2B7A0CD"
+				item: "irons_spellbooks:heavy_chain_necklace"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "重大工程"
@@ -498,6 +503,11 @@
 				"很真实吧&m&o&b（很复杂吧&r&r&r"
 			]
 			id: "3E21C675D4F61E6B"
+			rewards: [{
+				id: "6DF3368F11CA92C9"
+				item: "immersiveengineering:shader_bag_epic"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "你疑似有点城市化了"
@@ -812,6 +822,11 @@
 				"当然，你也可以用盖亚锭转化，对吧）"
 			]
 			id: "7C566E8D9F54FEF9"
+			rewards: [{
+				id: "288277FCDB0A4956"
+				item: "nethersdelight:nether_skewer"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "难度++"
@@ -827,6 +842,11 @@
 		{
 			dependencies: ["7B7978B0964080F3"]
 			id: "0B043034C7178F75"
+			rewards: [{
+				id: "0428279BAF7C1220"
+				item: "minecraft:minecart"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "更精确的矿脉采样工具"
 			tasks: [{

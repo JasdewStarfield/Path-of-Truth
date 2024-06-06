@@ -16,6 +16,11 @@
 			description: ["所以你现在不得不依赖巨大的动力发电装置）"]
 			icon: "irons_spellbooks:lightning_bottle"
 			id: "01534DC5812DBA15"
+			rewards: [{
+				id: "79955FC617AD8807"
+				item: "createdeco:decal_electrical"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "嗯，沉浸的机器要用电"
@@ -194,6 +199,11 @@
 			dependencies: ["1E0E5E47E1264279"]
 			icon: "immersiveengineering:ingot_electrum"
 			id: "3D6CCF4A93478320"
+			rewards: [{
+				id: "71A2780A7585490D"
+				item: "supplementaries:gold_door"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "琥珀金也是金）"
@@ -419,6 +429,11 @@
 			]
 			icon: "immersiveengineering:biodiesel_bucket"
 			id: "3B29D716A3D5AAF0"
+			rewards: [{
+				id: "4BBA83A29A6A4427"
+				item: "farmersdelight:wild_potatoes"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "高效燃料"
@@ -556,6 +571,11 @@
 			]
 			icon: "tfmg:aluminum_ingot"
 			id: "2BE7BA0BE9F2DBC9"
+			rewards: [{
+				id: "274597A581C787E4"
+				item: "immersiveengineering:alu_post"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "电解，嗯"
@@ -827,6 +847,22 @@
 			]
 			description: ["准备好迎接真正的工业时代了吗）"]
 			id: "5FB9514C6DE7AD58"
+			rewards: [{
+				id: "1FCB3F21F61EEBA2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "immersive_armors:heavy_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "重大工程的工程块"

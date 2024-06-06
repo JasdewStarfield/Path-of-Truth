@@ -133,6 +133,11 @@
 				"如果你已经工业化，可以试着用物流系统来为它自动填装燃料！"
 			]
 			id: "2625676A388DBE44"
+			rewards: [{
+				id: "077E76EAF7FC7858"
+				item: "farmersdelight:stove"
+				type: "item"
+			}]
 			subtitle: "并不能打炉石传说"
 			tasks: [{
 				id: "10381AC9A6F5B476"
@@ -149,6 +154,11 @@
 				"可以被缝为内衬的材料会在你把鼠标放上去的时候显示它的属性（以及有效程度）。有些内衬对寒冷有效，而有些则对热辐射有效。据说，还有一种特殊的内衬对各种极端温度都很有效……这就需要你自己去探索了）"
 			]
 			id: "4F3A90AEC7E51F5B"
+			rewards: [{
+				id: "4556A5A5E03D36AC"
+				item: "minecraft:leather"
+				type: "item"
+			}]
 			subtitle: "直接穿着金属很难受吧？"
 			tasks: [{
 				id: "5AE0EA95C2E096C1"
@@ -166,6 +176,11 @@
 				"它还可以在放大时使用滚轮自由缩放！"
 			]
 			id: "454AAF454EF68F8D"
+			rewards: [{
+				id: "11172D7DAA1B2234"
+				item: "immersive_aircraft:telescope"
+				type: "item"
+			}]
 			subtitle: "不再鸡肋了"
 			tasks: [{
 				id: "68088A32AC82FB0B"
@@ -202,6 +217,11 @@
 			]
 			icon: "decorative_blocks:bar_panel"
 			id: "05D1CDF00503DCB2"
+			rewards: [{
+				id: "10572C33CF787971"
+				item: "botania:cosmetic_questgiver_mark"
+				type: "item"
+			}]
 			subtitle: "不是西部大拓荒的那个"
 			tasks: [{
 				id: "3E2AD463059783C7"
@@ -479,6 +499,11 @@
 				"&o&a*法师的注释：如果你还没有打开精灵之门，那么也许你不应该把植物魔法辞典放进宝典……&r&r"
 			]
 			id: "7A0B5E901E6F8081"
+			rewards: [{
+				id: "5FE67996FC951D6F"
+				type: "xp"
+				xp: 1000
+			}]
 			subtitle: "读万卷书"
 			tasks: [
 				{
@@ -597,6 +622,11 @@
 			]
 			icon: "comforts:hammock_white"
 			id: "22FA1E23310625D7"
+			rewards: [{
+				id: "079588ECF1F84915"
+				item: "botania:cosmetic_orange_shades"
+				type: "item"
+			}]
 			subtitle: "不建议在冬日使用"
 			tasks: [
 				{
@@ -680,6 +710,11 @@
 			]
 			icon: "storagedrawers:diamond_storage_upgrade"
 			id: "360CCFCD57F813D7"
+			rewards: [{
+				id: "059860B7CA01B916"
+				item: "storagedrawers:obsidian_storage_upgrade"
+				type: "item"
+			}]
 			subtitle: "叮"
 			tasks: [{
 				id: "09A462DE1CB10D92"
@@ -863,6 +898,11 @@
 			dependencies: ["2E7818CF013586F1"]
 			description: ["在你发展到一定程度后，你可以让你的烈焰人厨师帮你做饭！"]
 			id: "0ED39B54192E5EDF"
+			rewards: [{
+				id: "18BB578DEB281772"
+				item: "minecraft:blaze_powder"
+				type: "item"
+			}]
 			subtitle: "烈焰人，居家好帮手"
 			tasks: [{
 				id: "0955EAB24EC0EED9"
@@ -900,6 +940,11 @@
 				"然而相应的，有一些工业/魔法的工具也会占据饰品栏，这就需要你自行取舍了。"
 			]
 			id: "3C9AD619097D4B8D"
+			rewards: [{
+				id: "63B151E0D0A6E011"
+				item: "botania:bauble_box"
+				type: "item"
+			}]
 			subtitle: "有用的小玩意"
 			tasks: [{
 				id: "4D52987105704EB5"

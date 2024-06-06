@@ -15,6 +15,22 @@
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["不管干什么，你总归需要从工作台开始的，对吧）"]
 			id: "46156FBBDCAB4B1D"
+			rewards: [{
+				id: "68889BA4397825CC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "immersive_armors:wooden_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "自己动手，丰衣足食"
@@ -308,6 +324,11 @@
 			description: ["现在你掌握了青铜的冶炼技术，也就是说，你可以制作一些相对趁手的——石头以上的——工具了。"]
 			icon: "kubejs:bronze_ingot"
 			id: "3BECB3D53E17F80B"
+			rewards: [{
+				id: "6D905D77F65F6C87"
+				item: "minecraft:bell"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "你好，商朝人"
@@ -330,14 +351,27 @@
 		{
 			dependencies: ["29B3F884515FC9DB"]
 			description: ["利用搅拌，你可以以更经济的方式倍增安山合金的产率！"]
+			icon: "kubejs:raw_andesite_alloy"
 			id: "47C5992588416736"
-			shape: "diamond"
-			subtitle: "冒泡泡，冒泡泡"
-			tasks: [{
-				id: "4CFECA6BDF000DA8"
-				item: "kubejs:raw_andesite_alloy"
+			rewards: [{
+				id: "27029C615405C290"
+				item: "create:andesite_alloy"
 				type: "item"
 			}]
+			shape: "diamond"
+			subtitle: "冒泡泡，冒泡泡"
+			tasks: [
+				{
+					id: "4CFECA6BDF000DA8"
+					item: "kubejs:raw_andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "20FD93CFBE648A51"
+					title: "懂"
+					type: "checkmark"
+				}
+			]
 			title: "另一种生产方式"
 			x: 1.5d
 			y: 10.5d
@@ -634,6 +668,11 @@
 				"这也就意味着，你&b&l不能使用&r齿轮链进行长距离的动能传输。"
 			]
 			id: "105CB8690DCE4DCC"
+			rewards: [{
+				id: "4E5CF728545D3799"
+				item: "create_connected:crank_wheel"
+				type: "item"
+			}]
 			subtitle: "是的，符合现实"
 			tasks: [{
 				id: "7D7679617FDA45B3"

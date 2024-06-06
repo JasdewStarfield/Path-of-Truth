@@ -15,6 +15,11 @@
 			dependencies: ["2D906487EC6F1A01"]
 			icon: "bloodmagic:dungeon_alternator"
 			id: "0D0BEC03C1B26CA3"
+			rewards: [{
+				id: "0E96E7EF246B99DD"
+				item: "create_confectionery:soothing_hot_chocolate"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "机械的终末是……无限。"
@@ -83,6 +88,11 @@
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
 			id: "6ED2B7EF9909EB05"
+			rewards: [{
+				id: "40461D13430194CF"
+				item: "immersive_paintings:glow_painting"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "工业提供了另一种异彩化合物的制作方式……"
@@ -170,6 +180,11 @@
 			]
 			description: ["当你的魔法与工业都走到极致，你将获得这一创造的入门通行证。"]
 			id: "1E235F6753976501"
+			rewards: [{
+				id: "371B5C25E45DD511"
+				item: "immersiveengineering:shader_bag_epic"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "代表创造的紫色光芒"
