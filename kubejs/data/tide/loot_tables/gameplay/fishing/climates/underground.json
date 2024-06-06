@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 100,
+          "quality": 0,
+          "name": "tide:cave_eel"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 100,
+          "quality": 0,
+          "name": "tide:cave_crawler"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 70,
+          "quality": 0,
+          "name": "tide:glowfish"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 70,
+          "quality": 0,
+          "name": "tide:anglerfish"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "quality": 1,
+          "name": "tide:iron_tetra"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 30,
+          "quality": 2,
+          "name": "tide:crystal_shrimp"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "quality": 3,
+          "name": "tide:gilded_minnow"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "quality": 0,
+          "name": "minecraft:cobblestone"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "quality": 2,
+          "name": "minecraft:iron_nugget"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "quality": 0,
+          "name": "minecraft:stick"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 90,
+          "quality": 0,
+          "name": "tide:magma_mackerel"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 70,
+          "quality": 0,
+          "name": "tide:ashen_perch"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "quality": 1,
+          "name": "tide:warped_guppy"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "quality": 1,
+          "name": "tide:crimson_fangjaw"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "quality": 1,
+          "name": "tide:soulscaler"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "quality": 2,
+          "name": "tide:witherfin"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "quality": 3,
+          "name": "tide:blazing_swordfish"
+        }
+      ]
+    }
+  ]
+}
