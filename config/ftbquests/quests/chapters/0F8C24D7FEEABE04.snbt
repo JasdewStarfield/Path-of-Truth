@@ -1,0 +1,371 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0F8C24D7FEEABE04"
+	group: ""
+	icon: "minecraft:sniffer_egg"
+	id: "0F8C24D7FEEABE04"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6AA0E68AB33475C9"]
+			description: [
+				"相信你已经发现了，由于这个世界只有雪原，有一些生物你是找不到的——因为它们有生成群系要求。"
+				"虽然你找不到它们的栖息地，但你还是可以通过炼金手段，产出这个世界上本不应出现的生命。"
+				"但首先，你需要鸡蛋。"
+				""
+				"在这个世界，鸡的交配会产出鸡蛋而不是小鸡，你也可以直接通过炼金术制作鸡蛋……"
+			]
+			id: "391DC5DA08CB67C6"
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "生命的奥秘从这里启动"
+			tasks: [{
+				id: "398712B8F9B8DA0A"
+				item: "minecraft:egg"
+				type: "item"
+			}]
+			title: "一切从蛋开始……"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["391DC5DA08CB67C6"]
+			description: ["沙风之眼是沙漠系生物创造的基本单位。"]
+			id: "4E17E2650C432030"
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "为数不多的不需要蛋就可以创造的……"
+			tasks: [{
+				id: "38ADB2CDDF93B6CA"
+				item: "alexsmobs:guster_eye"
+				type: "item"
+			}]
+			title: "沙漠的朋友们"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["391DC5DA08CB67C6"]
+			description: [
+				"——因为你需要从香蕉蛞蝓开始塑造丛林生物，而香蕉蛞蝓需要香蕉来合成。"
+				"通过击碎丛林树叶可以获得香蕉（当然这个几率不高），至于丛林树苗怎么获得，这就需要你自己查询配方表了。"
+			]
+			id: "335A755CFCC0F671"
+			shape: "octagon"
+			size: 1.2d
+			subtitle: "丛林系生物的起始"
+			tasks: [{
+				id: "0A4ADD51E745F4EA"
+				item: "alexsmobs:banana"
+				type: "item"
+			}]
+			title: "丛林的馈赠"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["391DC5DA08CB67C6"]
+			description: [
+				"对于海洋系生物，简单的水与水之符文无法完成催化，所以你需要一些更强力的材料来融入。"
+				"所以你需要前往永昼之地获得一些冰冷而含有灵魂气息的材料……然后把它们磨粉。"
+			]
+			id: "041DE92019EB4C56"
+			shape: "octagon"
+			size: 1.2d
+			subtitle: "冰冷与海洋的象征"
+			tasks: [{
+				id: "3484E8FFC84779E6"
+				item: "kubejs:falsite_dust"
+				type: "item"
+			}]
+			title: "海洋之粉"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["391DC5DA08CB67C6"]
+			icon: "botania:flugel_eye"
+			id: "160FD1D89EBC02BC"
+			rewards: [{
+				id: "07C653DEE4432CA0"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:angel_wing"
+								index: 0
+								level: 5
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.2d
+			subtitle: "最美生物……"
+			tasks: [{
+				id: "52CC1659510CB576"
+				item: "alexsmobs:spawn_egg_sunbird"
+				type: "item"
+			}]
+			title: "天空中的王者"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["335A755CFCC0F671"]
+			id: "29DDAA221F2360B3"
+			subtitle: "方便变化的形态"
+			tasks: [{
+				id: "1EF73C52CE0390B9"
+				item: "alexsmobs:spawn_egg_banana_slug"
+				type: "item"
+			}]
+			title: "黏糊糊"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["041DE92019EB4C56"]
+			id: "2410B41FD6E6584A"
+			subtitle: "五颜六色（x"
+			tasks: [{
+				id: "37DD9DA6D175E67B"
+				item: "alexsmobs:spawn_egg_lobster"
+				type: "item"
+			}]
+			title: "甲壳类"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E17E2650C432030"]
+			id: "41DCE21947B5445F"
+			subtitle: "能跑，能跳，能打人"
+			tasks: [{
+				id: "2DB8FC409758BFD3"
+				item: "alexsmobs:spawn_egg_kangaroo"
+				type: "item"
+			}]
+			title: "袋鼠"
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4E17E2650C432030"]
+			id: "3BC869A38A201430"
+			subtitle: "沙地小鸟"
+			tasks: [{
+				id: "504D3A09F0A9210F"
+				item: "alexsmobs:spawn_egg_roadrunner"
+				type: "item"
+			}]
+			title: "走鹃"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4E17E2650C432030"]
+			id: "255EB59B46E41E3D"
+			subtitle: "能动的绳子"
+			tasks: [{
+				id: "6BE9C89F3D0438A6"
+				item: "alexsmobs:spawn_egg_rattlesnake"
+				type: "item"
+			}]
+			title: "响尾蛇"
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["3BC869A38A201430"]
+			id: "2CD3CB5AA05717CD"
+			subtitle: "更大的鸟"
+			tasks: [{
+				id: "7CF19F9F41EFB068"
+				item: "alexsmobs:spawn_egg_emu"
+				type: "item"
+			}]
+			title: "鸸鹋"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2410B41FD6E6584A"]
+			description: ["为什么一款水生动物有自带火焰附加的拳头呢？"]
+			id: "4625EA0FBEBC75E6"
+			subtitle: "烈焰冲拳！"
+			tasks: [{
+				id: "60A19C5328DBAAF5"
+				item: "alexsmobs:spawn_egg_mantis_shrimp"
+				type: "item"
+			}]
+			title: "螳螂虾"
+			x: 5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2410B41FD6E6584A"]
+			id: "3FD4536FE957D2BC"
+			subtitle: "低配版变色龙"
+			tasks: [{
+				id: "730591F0677DEE53"
+				item: "alexsmobs:spawn_egg_mimic_octopus"
+				type: "item"
+			}]
+			title: "拟态章鱼"
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2410B41FD6E6584A"]
+			id: "69BB31F94993A20D"
+			subtitle: "鲨鱼是这样的）"
+			tasks: [{
+				id: "624CE4361681807E"
+				item: "alexsmobs:spawn_egg_frilled_shark"
+				type: "item"
+			}]
+			title: "血腥……"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["69BB31F94993A20D"]
+			id: "78748C30149C52DE"
+			subtitle: "我用锤子进阶怎么你了"
+			tasks: [{
+				id: "64BF4D0438D4526C"
+				item: "alexsmobs:spawn_egg_hammerhead_shark"
+				type: "item"
+			}]
+			title: "hammer head"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["391DC5DA08CB67C6"]
+			description: [
+				"在现实生活里见到这个的话请妥善处理（？"
+				"砸在地上有几率生成小蟑螂，等蟑螂长大后就可以获取蟑螂残翼了——有一些合成需要蟑螂翅膀！"
+			]
+			id: "51525A6D52B922B7"
+			subtitle: "“糊了的葱花”"
+			tasks: [{
+				id: "4319E0D05EDAFD7C"
+				item: "alexsmobs:cockroach_ootheca"
+				type: "item"
+			}]
+			title: "地里的朋友"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["391DC5DA08CB67C6"]
+			description: ["可以有效驱逐蚊子……但是水生（"]
+			id: "678533973DAAAE25"
+			subtitle: "奇怪的活化石"
+			tasks: [{
+				id: "36915C1BB4CABF06"
+				item: "alexsmobs:spawn_egg_triops"
+				type: "item"
+			}]
+			title: "沙漠x海洋"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["29DDAA221F2360B3"]
+			description: [
+				"如果找不到这个坐垫，可以多去打点宝箱怪……"
+				"希望你没有因为生气而扔掉过它）"
+			]
+			id: "4EA89095F0DFE902"
+			subtitle: "很整蛊，不是吗？"
+			tasks: [{
+				id: "6E4210E9ADD0F2CA"
+				item: "alexsmobs:spawn_egg_skunk"
+				type: "item"
+			}]
+			title: "臭鼬"
+			x: -5.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["29DDAA221F2360B3"]
+			id: "15EDC780EBF44362"
+			subtitle: "陆生鱼类"
+			tasks: [{
+				id: "4C5A3195F633460C"
+				item: "alexsmobs:spawn_egg_mudskipper"
+				type: "item"
+			}]
+			title: "弹涂鱼"
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["29DDAA221F2360B3"]
+			id: "2B5754D08AA932BF"
+			subtitle: "奇怪的小东西"
+			tasks: [{
+				id: "2CD018BC2FBE2962"
+				item: "alexsmobs:spawn_egg_platypus"
+				type: "item"
+			}]
+			title: "鸭嘴兽"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B5754D08AA932BF"]
+			id: "317FD39E5C83E6D2"
+			subtitle: "有毒！"
+			tasks: [{
+				id: "28BFBC2A279AB7DD"
+				item: "alexsmobs:spawn_egg_komodo_dragon"
+				type: "item"
+			}]
+			title: "科莫多巨蜥"
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["391DC5DA08CB67C6"]
+			id: "73D4A5133AF00486"
+			subtitle: "给鱼插上翅膀！"
+			tasks: [{
+				id: "07C51B3154176745"
+				item: "alexsmobs:spawn_egg_flying_fish"
+				type: "item"
+			}]
+			title: "飞鱼"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["391DC5DA08CB67C6"]
+			id: "7D1F3348C58BD32E"
+			subtitle: "大型可驯服昆虫"
+			tasks: [{
+				id: "21C9AE6F47AF2B3F"
+				item: "alexsmobs:spawn_egg_tarantula_hawk"
+				type: "item"
+			}]
+			title: "沙漠蛛蜂"
+			x: -1.0d
+			y: -2.5d
+		}
+	]
+	subtitle: ["Biodiversity"]
+	title: "生物多样性"
+}

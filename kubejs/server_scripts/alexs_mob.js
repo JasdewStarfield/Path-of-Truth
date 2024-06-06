@@ -282,5 +282,28 @@ ServerEvents.recipes(event => {
         },
         "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
     })
+    //臭鼬
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'artifacts:whoopee_cushion'
+        },
+        "baseinput": {
+            "item": 'alexsmobs:spawn_egg_banana_slug'
+        },
+        "output": {
+            "item": 'alexsmobs:spawn_egg_skunk'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
 
+    //曦鹤
+    event.recipes.botania.terra_plate('alexsmobs:spawn_egg_sunbird', 
+        [
+            'alexsmobs:emu_egg', 
+            'botania:flight_tiara',
+            'minecraft:elytra'
+        ], 
+        100000
+    )
 })

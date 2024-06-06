@@ -787,8 +787,14 @@
 		}
 		{
 			dependencies: ["724EBEFC6D269712"]
+			description: [
+				"现在的村民可以做到更多的事情……"
+				"但也有一些事情永远都做不到了）"
+				"如果你需要种子，多翻翻村民的箱子，因为现在打草不会再掉落任何种子了……"
+			]
 			icon: "artifacts:villager_hat"
 			id: "1F2E99A74CDFBD68"
+			subtitle: "村民崛起！"
 			tasks: [{
 				id: "7061709B5C76DDBD"
 				title: "神奇的村民"
@@ -814,14 +820,15 @@
 				type: "checkmark"
 			}]
 			title: "我经验修补呢？"
-			x: -5.5d
-			y: 0.0d
+			x: -5.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["1F2E99A74CDFBD68"]
 			description: [
 				"现在，村民会售卖装有特定动物的篮子，这可以让你不用满世界的去寻找生物）"
 				"不过，这里只包括常见动物，罕见的那些还是要自己找的。"
+				"&o&m&d其实也可以合成一部分&r&r&r"
 			]
 			icon: "villagersellanimals:crate_piglet"
 			id: "0ED1B830AB45D425"
@@ -832,8 +839,8 @@
 				type: "checkmark"
 			}]
 			title: "动物们！"
-			x: -5.0d
-			y: -1.0d
+			x: -5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1F2E99A74CDFBD68"]
@@ -873,7 +880,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6052F74DFBBEC018"]
+			dependencies: ["0ED1B830AB45D425"]
 			description: ["在这个包里，很多生命相关的魔法都需要从小小的鸡蛋开始……"]
 			id: "6AA0E68AB33475C9"
 			subtitle: "先有鸡还是先有蛋？"

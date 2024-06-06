@@ -16,13 +16,13 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing(['botania:livingwood_log', Item.of('botania:pure_daisy').withChance(0.99)], ['#minecraft:logs','botania:pure_daisy']).heated()
     event.recipes.create.mixing(['botania:livingrock', Item.of('botania:pure_daisy').withChance(0.99)], ['minecraft:stone','botania:pure_daisy']).heated()
 
-    //热修：遗忆守卫炼制配方
+    //遗忆守卫炼制配方
     event.recipes.botania.petal_apothecary('undergarden:forgotten_guardian_spawn_egg', 
         [
             '#forge:eggs',
             'immersiveengineering:component_electronic_adv',
             'botania:aura_ring_greater',
-            'undergarden:forgotten_ingot'
+            'kubejs:forgotten_mechanism'
         ]
     )
 

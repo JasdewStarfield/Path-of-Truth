@@ -45,6 +45,8 @@
 				"由于没有铁，你可以先用木头装水）"
 				""
 				"如果你实在找不到白色花瓣……可以试试花肥。"
+				""
+				"如果你实在看不懂合成方式到底是怎么操作的，&l&a请先读书！&r&r"
 			]
 			icon: "botania:cosmetic_botanist_emblem"
 			id: "788F3EC85AC1172E"
@@ -75,6 +77,11 @@
 							Damage: 0
 						}
 					}
+					type: "item"
+				}
+				{
+					id: "513AC58DBB67B60E"
+					item: "botania:lexicon"
 					type: "item"
 				}
 			]

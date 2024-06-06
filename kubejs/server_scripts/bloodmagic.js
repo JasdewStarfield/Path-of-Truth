@@ -311,6 +311,20 @@ ServerEvents.recipes(event => {
     })
 
     //祭坛配方修改
+    //复刻凝胶变化
+    event.custom({
+        "type": "bloodmagic:altar",
+        "altarSyphon": 10000,
+        "consumptionRate": 200,
+        "drainRate": 0,
+        "input": {
+            "tag": 'bookshelf:slime_balls'
+        },
+        "output": {
+            "item": 'alexsmobs:mimicream'
+        },
+        "upgradeLevel": 3
+    })
     //耐火黏土生成
     event.custom({
         "type": "bloodmagic:altar",

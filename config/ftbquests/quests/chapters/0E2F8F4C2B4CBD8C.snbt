@@ -491,17 +491,6 @@
 					type: "item"
 				}
 				{
-					id: "097BC0A831A6720E"
-					item: {
-						Count: 1
-						id: "alexsmobs:skelewag_sword"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "6F024CA37E1FB511"
 					item: "undergarden:raw_gwibling"
 					type: "item"
@@ -517,18 +506,8 @@
 					type: "item"
 				}
 				{
-					id: "3B22C9773A4CEB13"
-					item: "alexsmobs:small_catfish_bucket"
-					type: "item"
-				}
-				{
-					id: "71B8B8D735DDE70D"
-					item: "alexsmobs:medium_catfish_bucket"
-					type: "item"
-				}
-				{
-					id: "00BFCBE320E6138A"
-					item: "alexsmobs:large_catfish_bucket"
+					id: "6B62A58F919D85FA"
+					item: "alexsmobs:raw_catfish"
 					type: "item"
 				}
 			]
