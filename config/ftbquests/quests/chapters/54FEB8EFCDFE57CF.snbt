@@ -75,12 +75,19 @@
 			]
 			id: "52A63601F3E154C8"
 			subtitle: "基本材料"
-			tasks: [{
-				id: "5EDA0A2EF656D716"
-				item: "undergarden:cloggrum_ingot"
-				type: "item"
-			}]
-			title: "扼腕叹息"
+			tasks: [
+				{
+					id: "5EDA0A2EF656D716"
+					item: "undergarden:raw_cloggrum"
+					type: "item"
+				}
+				{
+					id: "1CC1C579FF2B4E67"
+					item: "undergarden:raw_froststeel"
+					type: "item"
+				}
+			]
+			title: "扼腕叹息，霜染深暗"
 			x: 0.0d
 			y: 2.0d
 		}

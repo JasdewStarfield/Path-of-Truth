@@ -11,7 +11,7 @@
 	"Allow Potions in Hearth" = true
 	#Potions containing any of these effects will not be allowed in the hearth
 	#Format: ["effect_id", "effect_id", ...etc]
-	"Blacklisted Potion Effects" = ["minecraft:instant_damage", "minecraft:poison", "minecraft:wither", "minecraft:weakness", "minecraft:mining_fatigue", "minecraft:slowness"]
+	"Blacklisted Hearth Potions" = ["minecraft:instant_damage", "minecraft:poison", "minecraft:wither", "minecraft:weakness", "minecraft:mining_fatigue", "minecraft:slowness"]
 
 ["Soulspring Lamp"]
 	#Defines items that the Soulspring Lamp can use as fuel
@@ -23,35 +23,33 @@
 
 [Insulation]
 	#Defines the items that can be used for insulating armor in the Sewing Table
-	#Format: [["item_id", cold, hot], ["item_id", cold, hot], ...etc]
+	#Format: [["item_id", cold, hot, "static", *nbt], ["item_id", amount, adapt-speed, "adaptive", *nbt], ...etc]
 	#"item_id": The item's ID (i.e. "minecraft:iron_ingot"). Accepts tags with "#" (i.e. "#minecraft:wool").
+	#
+	#Adaptive Insulation: 
+	#"amount": The amount of insulation the item provides.
+	#"adapt-speed": The speed at which the insulation adapts to the environment.
+	#*"type": Optional. Either "static" or "adaptive". Defines the insulation type. Defaults to static.
+	#*"nbt": Optional. If set, the item will only provide insulation if it has the specified NBT tag.
+	#
+	#Static Insulation: 
 	#"cold": The amount of cold insulation the item provides.
 	#"hot": The amount of heat insulation the item provides.
-	"Insulation Ingredients" = [["cold_sweat:hoglin_tunic", 0.0, 12.0], ["minecraft:cyan_wool", 1.5, 0.0], ["alexsmobs:kangaroo_hide", 0.0, 1.5], ["alexsmobs:shed_snake_skin", 1.5, 0.0], ["immersiveengineering:ersatz_leather", 1.0, 1.0], ["cold_sweat:hoglin_trousers", 0.0, 10.0], ["minecraft:black_wool", 1.5, 0.0], ["minecraft:rabbit_hide", 0.0, 1.5], ["minecraft:orange_wool", 1.5, 0.0], ["minecraft:lime_wool", 1.5, 0.0], ["minecraft:green_wool", 1.5, 0.0], ["cold_sweat:hoglin_headpiece", 0.0, 8.0], ["minecraft:blue_wool", 1.5, 0.0], ["minecraft:magenta_wool", 1.5, 0.0], ["cold_sweat:fur_parka", 12.0, 0.0], ["minecraft:leather", 1.0, 1.0], ["minecraft:gray_wool", 1.5, 0.0], ["minecraft:leather_boots", 4.0, 4.0], ["minecraft:red_wool", 1.5, 0.0], ["minecraft:yellow_wool", 1.5, 0.0], ["minecraft:purple_wool", 1.5, 0.0], ["minecraft:light_blue_wool", 1.5, 0.0], ["minecraft:brown_wool", 1.5, 0.0], ["cold_sweat:hoglin_hide", 0.0, 2.0], ["minecraft:light_gray_wool", 1.5, 0.0], ["blue_skies:fox_pelt", 1.0, 1.0], ["minecraft:leather_helmet", 4.0, 4.0], ["alexsmobs:bear_fur", 1.0, 1.0], ["cold_sweat:fur_pants", 10.0, 0.0], ["minecraft:pink_wool", 1.5, 0.0], ["cold_sweat:fur_cap", 8.0, 0.0], ["cold_sweat:fur", 2.0, 0.0], ["minecraft:leather_leggings", 5.0, 5.0], ["alexsmobs:bison_fur", 1.0, 1.0], ["minecraft:leather_chestplate", 6.0, 6.0], ["cold_sweat:fur_boots", 8.0, 0.0], ["cold_sweat:hoglin_hooves", 0.0, 8.0], ["minecraft:white_wool", 1.5, 0.0]]
+	#*"type": Optional. Either "static" or "adaptive". Defines the insulation type. Defaults to static.
+	#*"nbt": Optional. If set, the item will only provide insulation if it has the specified NBT tag.
+	"Insulation Ingredients" = [["minecraft:leather_helmet", 4, 4], ["minecraft:leather_chestplate", 6, 6], ["minecraft:leather_leggings", 5, 5], ["minecraft:leather_boots", 4, 4], ["minecraft:leather", 1, 1], ["cold_sweat:chameleon_molt", 2, 0.0085, "adaptive"], ["cold_sweat:hoglin_hide", 0, 2], ["cold_sweat:fur", 2, 0], ["#minecraft:wool", 1.5, 0], ["minecraft:rabbit_hide", 0, 1.5], ["cold_sweat:hoglin_headpiece", 0, 8], ["cold_sweat:hoglin_tunic", 0, 12], ["cold_sweat:hoglin_trousers", 0, 10], ["cold_sweat:hoglin_hooves", 0, 8], ["cold_sweat:fur_cap", 8, 0], ["cold_sweat:fur_parka", 12, 0], ["cold_sweat:fur_pants", 10, 0], ["cold_sweat:fur_boots", 8, 0]]
 	#Defines the items that provide insulation when worn
-	#Format: [["item_id", cold, hot], ["item_id", cold, hot], ...etc]
-	#"item_id": The item's ID (i.e. "minecraft:iron_ingot"). Accepts tags with "#" (i.e. "#minecraft:wool").
-	#"cold": The amount of cold insulation the item provides.
-	#"hot": The amount of heat insulation the item provides.
-	"Insulating Armor" = [["cold_sweat:fur_pants", 10.0, 0.0], ["cold_sweat:hoglin_trousers", 0.0, 10.0], ["cold_sweat:fur_parka", 12.0, 0.0], ["cold_sweat:fur_cap", 8.0, 0.0], ["cold_sweat:hoglin_tunic", 0.0, 12.0], ["minecraft:leather_boots", 4.0, 4.0], ["minecraft:leather_leggings", 5.0, 5.0], ["minecraft:leather_chestplate", 6.0, 6.0], ["cold_sweat:hoglin_headpiece", 0.0, 8.0], ["cold_sweat:fur_boots", 8.0, 0.0], ["minecraft:leather_helmet", 4.0, 4.0], ["cold_sweat:hoglin_hooves", 0.0, 8.0]]
+	#See Insulation Ingredients for formatting
+	"Insulating Armor" = [["minecraft:netherite_leggings", 0.0, 1998.0, "static", "{}"], ["create:netherite_diving_boots", 0.0, 1998.0, "static", "{}"], ["create:netherite_backtank", 0.0, 1998.0, "static", "{}"], ["create:netherite_diving_helmet", 0.0, 1998.0, "static", "{}"]]
 	#Defines the items that provide insulation when worn in a curio slot
-	#Format: [["item_id", cold, hot], ["item_id", cold, hot], ...etc]
-	#"item_id": The item's ID (i.e. "minecraft:iron_ingot"). Accepts tags with "#" (i.e. "#minecraft:wool").
-	#"cold": The amount of cold insulation the item provides.
-	#"hot": The amount of heat insulation the item provides.
-	"Insulating Curios" = [["artifacts:anglers_hat", 0.5, 0.5], ["artifacts:running_shoes", 0.5, 0.5], ["artifacts:snowshoes", 0.5, 0.5], ["artifacts:plastic_drinking_hat", 0.5, 0.5], ["create:goggles", 0.5, 0.5], ["artifacts:snorkel", 0.5, 0.5], ["irons_spellbooks:fireward_ring", 0.0, 20.0], ["irons_spellbooks:frostward_ring", 20.0, 0.0], ["artifacts:villager_hat", 0.5, 0.5], ["artifacts:rooted_boots", 0.5, 0.5], ["immersiveengineering:earmuffs", 0.5, 0.5], ["artifacts:superstitious_hat", 0.5, 0.5], ["artifacts:cowboy_hat", 0.5, 0.5], ["sophisticatedbackpacks:diamond_backpack", 1.0, 1.0], ["botania:flight_tiara", 0.5, 0.5], ["artifacts:novelty_drinking_hat", 0.5, 0.5], ["sophisticatedbackpacks:iron_backpack", 1.0, 1.0], ["sophisticatedbackpacks:gold_backpack", 1.0, 1.0], ["artifacts:lucky_scarf", 0.5, 0.5], ["sophisticatedbackpacks:copper_backpack", 1.0, 1.0], ["immersiveengineering:powerpack", 1.0, 1.0], ["botania:itemfinder", 0.5, 0.5], ["sophisticatedbackpacks:netherite_backpack", 1.0, 1.0], ["artifacts:bunny_hoppers", 0.5, 0.5], ["artifacts:scarf_of_invisibility", 0.5, 0.5], ["artifacts:night_vision_goggles", 0.5, 0.5], ["sophisticatedbackpacks:backpack", 1.0, 1.0], ["artifacts:aqua_dashers", 0.5, 0.5], ["artifacts:flippers", 0.5, 0.5], ["artifacts:kitty_slippers", 0.5, 0.5], ["artifacts:steadfast_spikes", 0.5, 0.5]]
+	#See Insulation Ingredients for formatting
+	"Insulating Curios" = []
 	#Defines how many insulation slots armor pieces have
 	#Format: [head, chest, legs, feet]
 	"Insulation Slots" = [4, 6, 5, 4]
 	#Defines wearable items that cannot be insulated
 	#Format: ["item_id", "item_id", ...etc]
 	"Insulation Blacklist" = []
-	#Defines insulation items that have the special "chameleon molt" effect
-	#Format: [["item_id", insulation, adaptSpeed], ["item_id", insulation, adaptSpeed], ...etc]
-	#"item_id": The item's ID (i.e. "minecraft:iron_ingot"). Accepts tags with "#" (i.e. "#minecraft:wool").
-	#"insulation": The amount of insulation the item provides. Will adjust to hot/cold based on the environment.
-	#"adaptSpeed": The speed at which the item adapts to the current temperature. Higher values mean faster adaptation (from 0 to 1).
-	"Adaptive Insulation Ingredients" = [["cold_sweat:chameleon_molt", 2.0, 0.0085]]
 
 [Consumables]
 	#Defines items that affect the player's temperature when consumed
