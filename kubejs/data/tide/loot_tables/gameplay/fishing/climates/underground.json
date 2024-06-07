@@ -43,7 +43,12 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
+          "weight": 20,
+          "name": "minecraft:tropical_fish"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
           "quality": 3,
           "name": "tide:gilded_minnow"
         },
