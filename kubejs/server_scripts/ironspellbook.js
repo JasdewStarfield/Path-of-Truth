@@ -49,45 +49,15 @@ ServerEvents.recipes(event => {
     )
 
     //修改法师护甲配方
-    event.remove({id:'irons_spellbooks:wandering_magician_helmet'})
-    event.remove({id:'irons_spellbooks:wandering_magician_chestplate'})
-    event.remove({id:'irons_spellbooks:wandering_magician_leggings'})
-    event.remove({id:'irons_spellbooks:wandering_magician_boots'})
-    event.shaped(Item.of('irons_spellbooks:wandering_magician_helmet',1),
-        ['AAA',
-        'ABA'],
-        {
-            A:'irons_spellbooks:magic_cloth',
-            B:'#forge:ingots/copper'
-        }
-    )
-    event.shaped(Item.of('irons_spellbooks:wandering_magician_chestplate',1),
-        ['ABA',
-        'AAA',
-        'AAA'],
-        {
-            A:'irons_spellbooks:magic_cloth',
-            B:'#forge:ingots/copper'
-        }
-    )
-    event.shaped(Item.of('irons_spellbooks:wandering_magician_leggings',1),
-        ['AAA',
-        'ABA',
-        'A A'],
-        {
-            A:'irons_spellbooks:magic_cloth',
-            B:'#forge:ingots/copper'
-        }
-    )
-    event.shaped(Item.of('irons_spellbooks:wandering_magician_boots',1),
-        ['A A',
-        'ABA'],
-        {
-            A:'irons_spellbooks:magic_cloth',
-            B:'#forge:ingots/copper'
-        }
-    )
-
+    event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:wandering_magician_helmet'},
+    'irons_spellbooks:arcane_essence', 'irons_spellbooks:magic_cloth' )
+    event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:wandering_magician_chestplate'},
+    'irons_spellbooks:arcane_essence', 'irons_spellbooks:magic_cloth' )
+    event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:wandering_magician_leggings'},
+    'irons_spellbooks:arcane_essence', 'irons_spellbooks:magic_cloth' )
+    event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:wandering_magician_boots'},
+    'irons_spellbooks:arcane_essence', 'irons_spellbooks:magic_cloth' )
+    
     //修改法术书系列配方
     event.remove({id:'irons_spellbooks:iron_spell_book'})
     event.remove({id:'irons_spellbooks:gold_spell_book'})
