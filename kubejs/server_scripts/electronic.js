@@ -21,7 +21,7 @@ ServerEvents.recipes(event => {
     ], 'kubejs:precise_engineering', [
         event.recipes.createDeploying(inter, [inter, 'create:cogwheel']),
         event.recipes.createDeploying(inter, [inter, 'create:large_cogwheel']),
-        event.recipes.createDeploying(inter, [inter, '#forge:nuggets/zinc']),
+        event.recipes.createDeploying(inter, [inter, '#blue_skies:gems/moonstone_shard']),
         event.recipes.createDeploying(inter, [inter, 'create:electron_tube']),
         event.recipes.createPressing(inter, inter)
     ]).transitionalItem(inter).loops(5)
@@ -52,6 +52,13 @@ ServerEvents.recipes(event => {
             "tag":"forge:dusts/electrum"
         }
     })
+
+    //限制热传导发电
+    event.replaceInput(
+        { output:"immersiveengineering:thermoelectric_generator" },
+        'immersiveengineering:coil_lv',
+        'immersiveengineering:coil_mv'
+    )
 
     //散热方块
     //这玩意配方比较神秘，只能用数据覆盖的方法改。参见data文件夹

@@ -15,13 +15,29 @@
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["不管干什么，你总归需要从工作台开始的，对吧）"]
 			id: "46156FBBDCAB4B1D"
+			rewards: [{
+				id: "68889BA4397825CC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "immersive_armors:wooden_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "自己动手，丰衣足食"
 			tasks: [{
 				id: "66B578110EFCF7EA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:workbench"
@@ -140,7 +156,12 @@
 		}
 		{
 			dependencies: ["3C34EE3C3BAB33EC"]
+			description: [
+				"这个整合包有&4&l四个&r&r高炉！！！"
+				"这是第一个，我们姑且称之为原版高炉。"
+			]
 			id: "05545789C11E97FE"
+			subtitle: "冶炼一些特殊矿材所必须用的……"
 			tasks: [{
 				id: "3A1A0025BA4364CE"
 				item: "minecraft:blast_furnace"
@@ -225,7 +246,7 @@
 				{
 					id: "2146F0E5E72D2172"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:plates"
@@ -308,6 +329,11 @@
 			description: ["现在你掌握了青铜的冶炼技术，也就是说，你可以制作一些相对趁手的——石头以上的——工具了。"]
 			icon: "kubejs:bronze_ingot"
 			id: "3BECB3D53E17F80B"
+			rewards: [{
+				id: "6D905D77F65F6C87"
+				item: "minecraft:bell"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "你好，商朝人"
@@ -330,14 +356,27 @@
 		{
 			dependencies: ["29B3F884515FC9DB"]
 			description: ["利用搅拌，你可以以更经济的方式倍增安山合金的产率！"]
+			icon: "kubejs:raw_andesite_alloy"
 			id: "47C5992588416736"
-			shape: "diamond"
-			subtitle: "冒泡泡，冒泡泡"
-			tasks: [{
-				id: "4CFECA6BDF000DA8"
-				item: "kubejs:raw_andesite_alloy"
+			rewards: [{
+				id: "27029C615405C290"
+				item: "create:andesite_alloy"
 				type: "item"
 			}]
+			shape: "diamond"
+			subtitle: "冒泡泡，冒泡泡"
+			tasks: [
+				{
+					id: "4CFECA6BDF000DA8"
+					item: "kubejs:raw_andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "20FD93CFBE648A51"
+					title: "懂"
+					type: "checkmark"
+				}
+			]
 			title: "另一种生产方式"
 			x: 1.5d
 			y: 10.5d
@@ -351,7 +390,7 @@
 				{
 					id: "353B0257275D6612"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:bronze_sword"
 						tag: {
 							Damage: 0
@@ -362,7 +401,7 @@
 				{
 					id: "0AF29D10ED04F9B1"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:bronze_pickaxe"
 						tag: {
 							Damage: 0
@@ -373,7 +412,7 @@
 				{
 					id: "3F26BA4237D434C5"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:bronze_axe"
 						tag: {
 							Damage: 0
@@ -384,7 +423,7 @@
 				{
 					id: "64B4C614B3F38622"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:bronze_shovel"
 						tag: {
 							Damage: 0
@@ -395,8 +434,24 @@
 				{
 					id: "13F716548484A9F8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "kubejs:bronze_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1A06E6DBC120BEF3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:shield"
 						tag: {
 							Damage: 0
 						}
@@ -416,19 +471,24 @@
 			]
 			icon: "minecraft:raw_iron"
 			id: "7D7F5D6CF26C1636"
-			subtitle: "老铁，我请问呢？"
-			tasks: [
+			rewards: [
 				{
-					id: "1009E3D7D476BC6F"
-					title: "噔 噔 咚"
-					type: "checkmark"
+					id: "3301442B75257F02"
+					item: "minecraft:copper_ingot"
+					type: "item"
 				}
 				{
-					id: "6D4AFC5DECCC56A4"
-					item: "minecraft:raw_iron"
+					id: "6825A6B469DDE548"
+					item: "simplemetals_tin:tin_ingot"
 					type: "item"
 				}
 			]
+			subtitle: "老铁，我请问呢？"
+			tasks: [{
+				id: "6D4AFC5DECCC56A4"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
 			x: 5.0d
 			y: 0.0d
 		}
@@ -468,8 +528,13 @@
 		}
 		{
 			dependencies: ["27E166AF7BA5BDB1"]
-			description: ["太好用了"]
+			description: ["你怎么能忍住不用的？"]
 			id: "63B4B5472513A83F"
+			rewards: [{
+				id: "53D1AE7DFA54E8AE"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "diamond"
 			subtitle: "很好，这使我机器旋转"
 			tasks: [
@@ -495,7 +560,10 @@
 			]
 			description: [
 				"终于，你看到了炼铁的曙光，但——你需要先去满世界找岩浆块。"
+				"这是第二个高炉，我们姑且称之为沉浸工程粗制高炉。它的作用是冶炼粗铁，以及将铁锭炼为铸铁锭。"
 				"找找废弃的地狱门，记得打个标记，哭泣的黑曜石你以后还会用到的。"
+				""
+				"&n注意：沉浸工程的高炉燃料只能使用焦煤粉！&r"
 			]
 			icon: "immersiveengineering:blast_furnace"
 			id: "2C15AA9278830174"
@@ -549,19 +617,31 @@
 		}
 		{
 			dependencies: ["3BECB3D53E17F80B"]
+			description: [
+				"在这章你会提前接触到一些沉浸工程的多方块结构。（就当是为电气时代做预习了吧）"
+				"多方块结构，顾名思义，你要把它按指定的方法摆出来（手册里都有写），然后拿锤子右击一下某个特定的位置以将它组装为有功能的完整多方块结构。"
+			]
 			id: "336807D048A4EF6A"
 			subtitle: "80！80！"
-			tasks: [{
-				id: "2CC1960A4B0CF73D"
-				item: {
-					Count: 1b
-					id: "immersiveengineering:hammer"
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "2CC1960A4B0CF73D"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "7A6151B756584348"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
+			]
+			title: "工程师的活"
 			x: 0.0d
 			y: 16.0d
 		}
@@ -599,6 +679,11 @@
 				"这也就意味着，你&b&l不能使用&r齿轮链进行长距离的动能传输。"
 			]
 			id: "105CB8690DCE4DCC"
+			rewards: [{
+				id: "4E5CF728545D3799"
+				item: "create_connected:crank_wheel"
+				type: "item"
+			}]
 			subtitle: "是的，符合现实"
 			tasks: [{
 				id: "7D7679617FDA45B3"
@@ -612,6 +697,17 @@
 			dependencies: ["6D46668D63E83ED7"]
 			description: ["使用垃圾桶来批量销毁物品和流体。"]
 			id: "1A5534E853393823"
+			rewards: [{
+				id: "4C489927ADE219CB"
+				item: {
+					Count: 1
+					id: "woodenbucket:wooden_bucket"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "不用岩浆或者仙人掌了。"
 			tasks: [
@@ -629,6 +725,29 @@
 			title: "温暖的家（大嘘）"
 			x: 1.5d
 			y: 15.0d
+		}
+		{
+			dependencies: ["2D883E21C72F5947"]
+			description: [
+				"虽然现在你还做不到，不过如果你有了机械手，那么你就可以通过序列组装的方式来量产工程块！通过这种方式生产的工程块除了机壳以外，耗材全部减半！"
+				"顺便一提，这条规则对今后的工程块也都起效。"
+			]
+			id: "5284E06C5BAE5831"
+			rewards: [{
+				id: "7A6FC01C3FEC1539"
+				item: "botania:cosmetic_engineer_goggles"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "量产小贴士"
+			tasks: [{
+				id: "20382D7DE9325214"
+				title: "明白"
+				type: "checkmark"
+			}]
+			title: "关于工程块……"
+			x: -3.0d
+			y: 10.0d
 		}
 	]
 	subtitle: ["Age of Bronze"]

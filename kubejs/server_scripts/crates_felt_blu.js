@@ -36,7 +36,6 @@ BlockEvents.broken((event) => {
 
 BlockEvents.placed((event) => {
     const bannedPlacing = [
-      "immersiveengineering:fluid_pipe",
     ]
     if (bannedPlacing.includes(event.block.id)) {
       event.block.set("air")

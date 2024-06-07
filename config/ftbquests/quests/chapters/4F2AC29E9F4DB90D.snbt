@@ -15,6 +15,11 @@
 			dependencies: ["6E0D85E43EDF1994"]
 			description: ["所以，工业的新篇章也对你开启了。"]
 			id: "11EC3A84F0C84E65"
+			rewards: [{
+				id: "2C399AD7FD10484E"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "现在你获得了铁！"
@@ -80,7 +85,7 @@
 			tasks: [{
 				id: "0C0BF712FDF13068"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "rechiseled:chisel"
 					tag: { }
 				}
@@ -130,7 +135,7 @@
 				{
 					id: "7A64A0B95B883F16"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "create:super_glue"
 						tag: {
 							Damage: 0
@@ -188,6 +193,11 @@
 			dependencies: ["079D9B3E0E12C25C"]
 			description: ["嗯，你获得了一些可以用来处理液体的金属，这也意味着流体方面的篇章要开启了。"]
 			id: "4D493DCB4C0B99C0"
+			rewards: [{
+				id: "2CF90314F968BCAE"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "玩弄液体让你很开心吗"
@@ -275,7 +285,7 @@
 			}]
 			title: "注入！"
 			x: 1.0d
-			y: 7.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -287,6 +297,11 @@
 				"压制，水和岩浆注入，还有锌粉，这意味着你需要一条产线来生产黄铜。"
 			]
 			id: "76BE4625CCF2F867"
+			rewards: [{
+				id: "3361959F57CB84B4"
+				item: "create:brass_hand"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "超级难得）"
@@ -297,7 +312,7 @@
 			}]
 			title: "真正的合金"
 			x: 0.0d
-			y: 9.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
@@ -311,7 +326,7 @@
 			}]
 			title: "更多的“帮手”"
 			x: -1.0d
-			y: 7.5d
+			y: 8.5d
 		}
 		{
 			dependencies: [
@@ -331,7 +346,7 @@
 			}]
 			title: "工业化的结晶"
 			x: -2.0d
-			y: 11.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["76BE4625CCF2F867"]
@@ -349,7 +364,7 @@
 			}]
 			title: "鼓风机输出"
 			x: -0.5d
-			y: 10.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["07C921FBCF56E703"]
@@ -380,7 +395,7 @@
 			]
 			title: "触媒装箱"
 			x: 0.5d
-			y: 10.5d
+			y: 11.5d
 		}
 		{
 			dependencies: ["7F98F9F01F44BA28"]
@@ -399,7 +414,7 @@
 			}]
 			title: "流水线安装作业"
 			x: -3.5d
-			y: 11.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -410,6 +425,8 @@
 			description: [
 				"很好，你现在开始接触到精密机械了，希望你以后会习惯序列组装中的废料（？"
 				"序列组装总是有失败几率的，所以如果失败了，不要骂人，再来一次）"
+				""
+				"&n注意：从下一步开始，你将涉及到永昼之地或者恒晓之地的特殊矿物。如果你还没有涉及到这些维度，出发去探险吧！&r"
 			]
 			id: "51676EF62E7A17F3"
 			subtitle: "精密元件的基石"
@@ -420,7 +437,7 @@
 			}]
 			title: "精密工业"
 			x: 0.0d
-			y: 13.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
@@ -438,7 +455,7 @@
 			}]
 			title: "来硬的"
 			x: 2.0d
-			y: 11.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
@@ -455,7 +472,7 @@
 			}]
 			title: "防腐措施"
 			x: 3.5d
-			y: 11.0d
+			y: 12.0d
 		}
 		{
 			dependencies: ["51676EF62E7A17F3"]
@@ -464,6 +481,11 @@
 				"走下去吧，走到世界尽头，真相会在那里等着你。"
 			]
 			id: "242C57AF7F6116E4"
+			rewards: [{
+				id: "181F01FA60DFF6B7"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "新时代的曙光！"
@@ -474,7 +496,7 @@
 			}]
 			title: "精密时代"
 			x: 0.0d
-			y: 16.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
@@ -553,7 +575,7 @@
 			]
 			title: "智能时代"
 			x: 0.0d
-			y: 11.5d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -570,7 +592,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 14.5d
+			y: 15.5d
 		}
 		{
 			dependencies: ["58EBE6ABA158001D"]
@@ -587,7 +609,38 @@
 				type: "item"
 			}]
 			x: 1.5d
-			y: 14.5d
+			y: 15.5d
+		}
+		{
+			dependencies: ["1D0D60C89EA75663"]
+			description: [
+				"祛魔、复印附魔书、经验流体化，甚至打造出超越原有等级的附魔……有了附魔工业，你能做到很多事。"
+				"使用思索功能了解更多）"
+			]
+			icon: "create_enchantment_industry:enchanting_guide"
+			id: "18A0D2E7A8E61D45"
+			shape: "diamond"
+			subtitle: "既然是工业就能量产"
+			tasks: [
+				{
+					id: "70805C73F6CC79A2"
+					item: "create_enchantment_industry:disenchanter"
+					type: "item"
+				}
+				{
+					id: "6DA319DEEFA1F635"
+					item: "create_enchantment_industry:printer"
+					type: "item"
+				}
+				{
+					id: "14FB64E02E7F04EB"
+					item: "create_enchantment_industry:enchanting_guide"
+					type: "item"
+				}
+			]
+			title: "附魔工业"
+			x: 0.0d
+			y: 8.0d
 		}
 	]
 	subtitle: ["Exotic Alloys"]

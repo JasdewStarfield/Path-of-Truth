@@ -3,7 +3,7 @@
 	#The number of item stacks held in a basic unit of storage.
 	#1x1 drawers hold 8 units, 1x2 drawers hold 4 units, 2x2 drawers hold 2 units.
 	#Half-depth drawers hold half those amounts.
-	baseStackStorage = 4
+	baseStackStorage = 1
 	#Controller range defines how far away a drawer can be connected
 	#on X, Y, or Z planes.  The default value of 50 gives the controller a very
 	#large range, but not beyond the chunk load distance.
@@ -23,10 +23,10 @@
 	#Storage upgrades multiply storage capacity by the given amount.
 	#When multiple storage upgrades are used together, their multipliers are added before being applied.
 	level1Mult = 4
-	level2Mult = 8
-	level3Mult = 4
-	level4Mult = 16
-	level5Mult = 2
+	level2Mult = 16
+	level3Mult = 64
+	level4Mult = 256
+	level5Mult = 1024
 
 [Integration]
 	#When true, shows quantity as NxS + R (by stack size) rather than count

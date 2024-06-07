@@ -57,7 +57,7 @@
 				"法杖可以通过魔法手段锻造，所以如果脸太黑，不如试试直接自己造）"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "irons_spellbooks:tarnished_helmet"
 				tag: {
 					Damage: 0
@@ -243,7 +243,7 @@
 				"以盖亚之魂唤醒远古的英灵——然后挨打）"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "irons_spellbooks:keeper_flamberge"
 				tag: {
 					Damage: 0
@@ -265,7 +265,7 @@
 				{
 					id: "62D03B580725735D"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]

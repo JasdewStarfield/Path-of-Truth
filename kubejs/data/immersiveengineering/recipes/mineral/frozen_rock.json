@@ -1,0 +1,14 @@
+{
+    "type":"immersiveengineering:mineral_mix",
+    "dimensions":["blue_skies:everbright"],
+    "fail_chance":0.05,
+    "ores":[
+        {"chance":0.5,"output":{"item":"blue_skies:rimestone"}},
+        {"chance":0.5,"output":{"item":"blue_skies:taratite"}}
+    ],
+    "spoils":[
+        {"chance":0.7,"output":{"item":"blue_skies:turquoise_cobblestone"}},
+        {"chance":0.3,"output":{"item":"blue_skies:turquoise_dirt"}}
+    ],
+    "weight":25
+}

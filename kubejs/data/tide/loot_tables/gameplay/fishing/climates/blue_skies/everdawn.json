@@ -1,0 +1,29 @@
+{
+   "type": "minecraft:fishing",
+   "pools": [
+      {
+         "rolls": 1,
+         "bonus_rolls": 0,
+         "entries": [
+            {
+               "type": "minecraft:item",
+               "weight": 100,
+               "quality": 0,
+               "name": "minecraft:salmon"
+            },
+            {
+               "type": "minecraft:item",
+               "weight": 60,
+               "quality": 0,
+               "name": "blue_skies:charscale_moki"
+            },
+            {
+               "type": "minecraft:item",
+               "weight": 60,
+               "quality": 0,
+               "name": "blue_skies:horizofin_tunid"
+            }
+         ]
+      }
+   ]
+}

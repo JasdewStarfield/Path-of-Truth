@@ -45,6 +45,8 @@
 				"由于没有铁，你可以先用木头装水）"
 				""
 				"如果你实在找不到白色花瓣……可以试试花肥。"
+				""
+				"如果你实在看不懂合成方式到底是怎么操作的，&l&a请先读书！&r&r"
 			]
 			icon: "botania:cosmetic_botanist_emblem"
 			id: "788F3EC85AC1172E"
@@ -69,12 +71,17 @@
 				{
 					id: "35B1398FEE514782"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "woodenbucket:wooden_bucket"
 						tag: {
 							Damage: 0
 						}
 					}
+					type: "item"
+				}
+				{
+					id: "513AC58DBB67B60E"
+					item: "botania:lexicon"
 					type: "item"
 				}
 			]
@@ -95,7 +102,7 @@
 			rewards: [{
 				id: "300AC1A510B03C11"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "irons_spellbooks:scroll"
 					tag: {
 						ISB_Spells: {
@@ -119,7 +126,7 @@
 				{
 					id: "150978E8B38FB4B1"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "irons_spellbooks:copper_spell_book"
 						tag: {
 							ISB_Spells: {
@@ -164,6 +171,8 @@
 			description: [
 				"你会发现活石可以催化一些工业的原料。"
 				"至于活木，它是很好的魔力载体。"
+				""
+				"在你获得烈焰人燃烧室之后，你也可以使用搅拌来强行生产活木和活石……代价就是白雏菊有微小的概率因为这种粗暴的行为而毁坏。当然，这是后话了。"
 			]
 			icon: "botania:pure_daisy"
 			id: "735172F79325756F"
@@ -224,20 +233,41 @@
 				"顺带一提，铁魔法的法力回复是按比例进行的，所以法力总值高一点没什么坏处。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "irons_spellbooks:wandering_magician_helmet"
 				tag: {
 					Damage: 0
 				}
 			}
 			id: "7E9EA8A40086E7CA"
+			rewards: [{
+				id: "2E8CEE4E69C62BA9"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:magic_arrow"
+								index: 0
+								level: 2
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			subtitle: "这意味着你穿上后可以出去浪了"
 			tasks: [
 				{
 					id: "3FAC8ECB05056EFE"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -253,7 +283,7 @@
 				{
 					id: "541CE495BFBB3894"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -269,7 +299,7 @@
 				{
 					id: "074299C70529C038"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -285,7 +315,7 @@
 				{
 					id: "68CB6A8EDBFAE4AD"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -369,7 +399,7 @@
 				{
 					id: "5543440A93455087"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "bloodmagic:sacrificialdagger"
 						tag: { }
 					}

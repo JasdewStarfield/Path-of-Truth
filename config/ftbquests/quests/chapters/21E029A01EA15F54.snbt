@@ -19,7 +19,7 @@
 				"为什么让你查jei呢，因为配方我们改动的可不少）"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "patchouli:guide_book"
 				tag: {
 					"patchouli:book": "bloodmagic:guide"
@@ -32,7 +32,7 @@
 			tasks: [{
 				id: "015B595F49230663"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "patchouli:guide_book"
 					tag: {
 						"patchouli:book": "bloodmagic:guide"
@@ -83,6 +83,12 @@
 				"但你可以隔着门和对面的精灵交易——对面真的有精灵吗？"
 				"记得把你的植物魔法辞典扔进去——这会解锁新的内容。"
 				"以及，准备好足够的魔力来迎接这一大门的开启。"
+				"下一页会有详细的搭建说明。"
+				"{@pagebreak}"
+				"*搭建说明："
+				"门的整体结构是围绕3*3的竖正方形进行搭建的（框架是5*5），其中每一条边都需要两个活木和一个微光活木，底边的微光活木则由精灵门核心进行替代。"
+				"搭建好门结构后，&a需要将两个精灵水晶放置在两个不同的魔力池上&r，然后用森林法杖右键精灵门核心开门。"
+				"外围框架5*5正方形的四个角可以填充任意方块也可以不填，&a两个精灵水晶-魔力池结构需要在半径11单位范围内，而且魔力池内都需要四分之一池以上的魔力。&r"
 			]
 			icon: "botania:light_relay"
 			id: "2EA11306B3076434"
@@ -216,7 +222,7 @@
 				{
 					id: "19798221916B0DF8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "bloodmagic:arcaneashes"
 						tag: {
 							Damage: 0
@@ -312,7 +318,7 @@
 			rewards: [{
 				id: "589783BB7C61ACED"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "bloodmagic:soulsword"
 					tag: {
 						Damage: 0
@@ -324,7 +330,7 @@
 			tasks: [{
 				id: "20AA130C6EFE623B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "bloodmagic:soulgempetty"
 					tag: {
 						souls: 64.0d
@@ -451,10 +457,10 @@
 			description: [
 				"由于我们的修改，现在你需要逐级升级自己的法术书。"
 				"下地狱的时候注意温度，注意怪物——以及注意你自己。"
-				"升级法术书的时候请取出内部法术，否则任何损失制作组概不负责（摊手）而且我们也没法负责"
+				"升级法术书的时候，内部的法术也会一并保留，所以可以放心升级。"
 			]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "irons_spellbooks:diamond_spell_book"
 				tag: {
 					ISB_Spells: {
@@ -478,7 +484,7 @@
 				{
 					id: "6B17EEA23E83F679"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "irons_spellbooks:diamond_spell_book"
 						tag: {
 							ISB_Spells: {
@@ -705,7 +711,7 @@
 			rewards: [{
 				id: "76CD46DCEF9F2F4D"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "botania:incense_stick"
 					tag: {
 						brewKey: "botania:regen_weak"
@@ -732,7 +738,7 @@
 		}
 		{
 			dependencies: ["2EA11306B3076434"]
-			description: ["但是它还是会吃你的魔力（虽然开门后吃得很少），所以你得找靠谱且稳定的魔力生产方式。"]
+			description: ["但是它还是会吃你的魔力（虽然开门后就不吃了），所以你得找靠谱且稳定的魔力生产方式。"]
 			id: "6FA24342A82507F6"
 			subtitle: "这个大门其实只是个交易入口）"
 			tasks: [
@@ -854,7 +860,7 @@
 			rewards: [{
 				id: "1195091C3344D91C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "botania:terra_sword"
 					tag: {
 						Damage: 0

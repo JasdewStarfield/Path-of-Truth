@@ -7,7 +7,7 @@
 	hide_quest_details_until_startable: true
 	hide_quest_until_deps_visible: true
 	icon: {
-		Count: 1b
+		Count: 1
 		id: "alexsmobs:shattered_dimensional_carver"
 		tag: {
 			Damage: 0
@@ -45,7 +45,7 @@
 				{
 					id: "1178D24835197E2D"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:enchanted_book"
 						tag: {
 							StoredEnchantments: [{
@@ -59,7 +59,7 @@
 				{
 					id: "4B8E4E73A647D8D8"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "minecraft:enchanted_book"
 						tag: {
 							StoredEnchantments: [{
@@ -75,7 +75,7 @@
 			tasks: [{
 				id: "0351C9B565C3F401"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "alexsmobs:dimensional_carver"
 					tag: {
 						Damage: 0
@@ -99,7 +99,7 @@
 			rewards: [{
 				id: "1B4A414519E38DA0"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "betterarcheology:soul_totem"
 					tag: {
 						Damage: 0
@@ -117,7 +117,7 @@
 				{
 					id: "19E883213D684F08"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "alexsmobs:shattered_dimensional_carver"
 						tag: {
 							Damage: 0

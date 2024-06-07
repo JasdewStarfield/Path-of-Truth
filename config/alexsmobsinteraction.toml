@@ -1,0 +1,318 @@
+
+[General]
+	#Whether some predators cause to not drop any items for their prey
+	DROPLESS_PREDATOR_ENABLED = true
+	#Whether some Prey fear their predators
+	PREY_FEAR_ENABLED = true
+	#Whether Charging Mobs can get stunned when holding up a shield
+	CHARGE_STUN_ENABLED = true
+	#Whether you will combust more when stepping on hot blocks
+	COMBUSTABLE_ENABLED = true
+	#Whether you can set a entity on fire with Lava Bottles
+	MOLTEN_BATH_ENABLED = true
+
+[Items]
+	#Whether Sand requires no sand
+	POCKET_SAND_AMMOLESS_ENABLED = true
+
+[Mobs]
+
+	[Mobs."Vanilla Mob Tweaks"]
+		#Whether Witches will drink a Poison Resistance when Poisoned
+		WITCH_ADDITIONS_ENABLED = true
+		#Whether Spiders eat silverfish,cockroaches,flies and bees
+		SPIDER_EAT_ENABLED = true
+		#Whether Cave Spiders eat silverfish,cockroaches,flies and bees
+		CAVESPIDER_EAT_ENABLED = true
+		#Whether frogs can be transformed into Warped Toads
+		FROG_TRANSFORM_ENABLED = true
+
+	[Mobs."Alligator Snapping Turtle"]
+		#Whether Snapping Turtles alert others when attacked
+		SNAPPING_ALERT_ENABLED = true
+		#Whether Alligator Snapping Turtles lay dormant at day and hunt at night
+		SNAPPING_DORMANT_ENABLED = true
+		#Whether Alligator Snapping Turtles has their moss accumulation affected by rain
+		SNAPPING_MOSS_ENABLED = true
+
+	[Mobs.Anaconda]
+		#Whether Anacona's hunt babies of some predators
+		ANACONDA_KILL_BABY_ENABLED = true
+		#Whether Anaconda cannibalize on other anaconda's in certain conditions
+		ANACONDA_CANNIBALIZE_ENABLED = true
+
+	[Mobs."Bald Eagle"]
+		#Whether Bald Eagles cannibalize on other bald eagles in certain conditions
+		EAGLE_CANNIBALIZE_ENABLED = true
+
+	[Mobs."Banana Slug"]
+		#Whether Banana Slugs can be sheared
+		BANANA_SHEAR_ENABLED = true
+
+	[Mobs."Bone Serpent"]
+		#Whether Bone Serpent fear Lavaithans
+		SERPENT_FEAR_ENABLED = true
+
+	[Mobs.Caiman]
+		#Whether Caimans attack when their egg is held by an entity
+		CAIMAN_EGG_ATTACK_ENABLED = true
+		#Whether Mantis Shrimps cannibalize on other mantis shrimps in certain conditions
+		CAIMAN_AGGRO_ENABLED = true
+
+	[Mobs."Capuchin Monkey"]
+		#Whether Capuchins hunt small animals
+		CAPUCHIN_HUNT_ENABLED = true
+
+	[Mobs.Catfish]
+		#Whether Catfishes can be  and eat seemingly impossible to eat animals
+		STUPID_CATFISH_EAT_ENABLED = false
+		#Whether Catfish cannibalize on other small catfishes
+		CATFISH_CANNIBALIZE_ENABLED = true
+
+	[Mobs."Cave Centipede"]
+		#Whether Cave Centipedes fear players holding light items, or placed light blocks
+		LIGHT_FEAR_ENABLED = true
+
+	[Mobs.Cockroach]
+		#Whether Cockroaches fear any living entity
+		SKITTISH_ROACHES_ENABLED = true
+
+	[Mobs.Cosmaw]
+		#Whether Cosmaw can get weak based on their owner's armor when carrying
+		COSMAW_WEAKENED_ENABLED = true
+
+	[Mobs."Crimson Mosquito"]
+		#Whether Crimson Mosquitoes can be turned into Warped Moscos by feeding them Mungus Spores
+		CRIMSON_TRANSFORM_ENABLED = true
+		#Whether Crimson Mosquitoes cant attack Straddlers, unless with blood inside
+		CRIMSON_NON_STRADDLER_ENABLED = true
+		#Whether Crimson Mosquitoes can spawn with blood
+		BLOODED_ENABLED = true
+		#Whether Crimson Mosquitoes take no damage from Blood Sprayer
+		BLOOD_PROTECTION_ENABLED = true
+
+	[Mobs.Crow]
+		#Whether Crows cannibalize on other crows in certain conditions
+		CROW_CANNIBALIZE_ENABLED = true
+		#Whether Crows will not drop weapons when hit
+		CROW_WARRIORS_ENABLED = true
+
+	[Mobs.Elephant]
+		#Whether Tusked Elephants will attack players if staying with them for too long,(Unless if holding a acasia blossom)
+		ELEPHANT_TERRITORIAL_ENABLED = true
+		#Whether Elephants can trample mobs
+		ELEPHANT_TRAMPLE_ENABLED = true
+
+	[Mobs.Emu]
+		#Whether Emus attack ANY entity that is holding a ranged weapon
+		RANGED_AGGRO_ENABLED = true
+		#Whether Emu's attack when their egg is held by an entity
+		EMU_EGG_ATTACK_ENABLED = true
+		#Whether Emu's rarely scuffle at day
+		EMU_SCUFFLE_ENABLED = true
+
+	[Mobs.Enderiophage]
+		#Whether Enderiophages attack players when below 40%
+		INFECT_WEAK_ENABLED = true
+		#Whether Enderiophages attack depending on if they have resistance or not
+		INFECT_IMMUNITY_ENABLED = true
+
+	[Mobs.Farseer]
+		#Whether Farseer will have new effects when attacking the player
+		FARSEER_ALTERING_ENABLED = true
+		#Whether Farseer attack human-like entities
+		FARSEER_HUMANLIKE_ATTACK_ENABLED = true
+		#Whether Farseer's effects are enabled (this is for sensitive types like photosensitivity)
+		FARSEER_EFFECTS_ENABLED = true
+
+	[Mobs.Flutter]
+		#Whether Flutter will be withered when fed Wither Rose
+		FLUTTER_WITHERED_ENABLED = true
+		#Whether Flutter can be sheared for Azalea and Blossoms
+		FLUTTER_SHEAR_ENABLED = true
+
+	[Mobs.Fly]
+		#Whether flies pester specific mobs
+		FLY_PESTER_ENABLED = true
+		#Whether flies can be converted to a Crimson Mosquito
+		FLY_CONVERT_ENABLED = true
+		#Whether flies fear candles
+		flysfearcandles = true
+		#Whether flies fear all (except for mobs they pester)
+		frogeatflies = true
+		#Whether Gelada Monkeys hunt small animals
+		GELADA_HUNT_ENABLED = true
+
+	[Mobs."Giant Squid"]
+		#Whether Giant Squids cannibalize on other giant squids in certain conditions
+		SQUID_CANNIBALIZE_ENABLED = true
+
+	[Mobs."Grizzly Bear"]
+		#Whether Grizzlies will not attack players when untamed
+		GRIZZLY_FRIENDLY_ENABLED = true
+		#Whether Grizzlies named 'Freddy Fazbear' will turn into Freddy from April Fools 
+		FREDDYABLE_ENABLED = true
+		#Whether Grizzlies can be brushed for hair
+		BRUSHED_ENABLED = true
+
+	[Mobs.Guster]
+		#Whether Guster's Tornado effect is based on armor of the player
+		GUSTER_WEIGHT_ENABLED = true
+		#Whether Gusters are immune to projectiles
+		GUSTER_PROJECTILE_PROT_ENABLED = true
+
+	[Mobs."Hammerhead Shark"]
+		#Whether Hammerhead Sharks hunts more aquatic creatures
+		HAMMERHEAD_MANTIS_EAT_ENABLED = true
+
+	[Mobs.Hummingbird]
+		#Whether Hummingbirds follow Flutters
+		HUMMING_FOLLOW_ENABLED = true
+		#Whether Hummingbirds only pollinate at day
+		POLINATE_DAY_ENABLED = true
+
+	[Mobs."Komodo Dragon"]
+		#Whether Komodo Dragon's are much friendlier when tamed
+		FRIENDLY_KOMODO = false
+
+	[Mobs.Lavithan]
+		#Whether Lavithan can be reconverted from Obsidian to Normal
+		OBSIDIAN_EXTRACT_ENABLED = true
+
+	[Mobs.Lobster]
+		#Whether Lobsters only spawn at night
+		LOBSTER_NIGHT_ENABLED = true
+
+	[Mobs."Mantis Shrimp"]
+		#Whether Mantis Shrimps cannibalize on other mantis shrimps in certain conditions
+		MANTIS_CANNIBALIZE_ENABLED = true
+		#Whether Mantis Shrimps are aggresive to the player
+		MANTIS_AGGRO_ENABLED = true
+		#Whether Mantis Shrimps mine faster based on haste
+		MANTIS_SPEED_ENABLED = true
+
+	[Mobs.Mudskipper]
+		#Whether Mantis Shrimps are aggresive to the player
+		MUDSKIPPER_HUNT_ENABLED = true
+
+	[Mobs.Murmur]
+		#Whether Murmur has to has its body to be killed
+		MURMUR_REGROW_ENABLED = true
+
+	[Mobs.Orca]
+		#Whether Orcas Might allows temporary neutrality with Skelewags
+		MIGHT_UPGRADE_ENABLED = true
+		#Whether Orca's hunt fish
+		ORCA_HUNT_ENABLED = true
+
+	[Mobs.Raccoon]
+		#Whether Raccoons hunt for food
+		RACOON_HUNT_ENABLED = true
+
+	[Mobs.Rattlesnake]
+		#Whether Rattlesnakes cannibalize on other rattlesnakes in certain conditions
+		RATTLESNAKE_CANNIBALIZE_ENABLED = true
+
+	[Mobs.Roadrunner]
+		#Whether Roadrunners only hunt at day
+		ROADRUNNER_DAY_ENABLED = true
+
+	[Mobs."Rocky Roller"]
+		#Whether Rocky Roller Chestplate allows one to temporarily float in water with the 'Rolling Thunder' enchantment
+		ROLLING_THUNDER_ENABLED = true
+
+	[Mobs.Seagull]
+		#Whether Seagulls cannot snatch food if wearing a sombrero
+		SOMBRERO_PROTECTION_ENABLED = true
+		#Whether Seagulls dont get buffed when it eats a Enchanted Golden Apple
+		SEAGULL_BUFFED_ENABLED = true
+		#Whether Seagulls don't snatch food if below 40% health
+		SEAGULL_WEAKEN_ENABLED = true
+
+	[Mobs.Skelewag]
+		#Whether Skelewags circle prey like Hammerhead sharks
+		SKELEWAG_CIRCLE_ENABLED = true
+
+	[Mobs.Skreecher]
+		#Whether Skreecher's soul can be used on a Screacher to allow it to spawn wardens
+		SKREECHER_WARD_ENABLED = true
+
+	[Mobs."Snow Leopard"]
+		#Whether Snow Leopards can get rare items when killing specific mobs
+		SNOW_LUCK_ENABLED = true
+		#Whether Snow Leopards can hunt weak Mooses, but also mistakenly attack weak players wearing a Antler Headgear
+		LEOPARD_DESIRES_ENABLED = true
+
+	[Mobs."Soul Vulture"]
+		#Whether Soul Vultures increase soul level no matter what when attacking
+		VULTURE_STEAL_ENABLED = true
+
+	[Mobs.Straddler]
+		#Amount of shots a Straddler has before reloading to fire again (0 Disables this feature)
+		#Range: > 0
+		STRADDLER_SHOTS_AMOUNT = 8
+		#Whether Straddlers no longer avenger their brethren (Bone Serpents and Crimson Mosquitoes)
+		STRADDLER_VENGEANCE_ENABLED = true
+
+	[Mobs.Stradpole]
+		#Whether Stradpoles bob up in the lava
+		STRADPOLE_BOB_UP_ENABLED = true
+		#Whether launched stradpoles have a chance to inflict flame
+		STRADPOLE_FLAME_ENABLED = true
+
+	[Mobs."Sugar Glider"]
+		#Whether Sugar Gliders can be fed sugar to speed up
+		SUGAR_RUSH_ENABLED = true
+
+	[Mobs.Sunbird]
+		#Whether Sunbirds's effects are upgraded for the better and worse
+		SUNBIRD_UPGRADE_ENABLED = true
+
+	[Mobs.Terrapin]
+		#Whether Terrapins take damage when jumped on
+		TERRAPIN_STOMP_ENABLED = true
+
+	[Mobs.Tiger]
+		#Whether Tigers Blessing gives players that sneak, invisibility as well
+		TIGER_STEALTH_ENABLED = true
+
+	[Mobs.Tusklin]
+		#Whether Tusklins flee warped fungus like their predecessors
+		TUSKLIN_FLEE_ENABLED = true
+		#Whether Tusklins can be perm trusted with mushroom stew
+		TUSKLIN_TRUST_ENABLED = true
+		#Whether Tusklins with the new Trample enchantment can trample when ridden
+		TUSKLIN_TRAMPLE_ENABLED = true
+		#Whether Tusklins can have their equipment removed with shears
+		REMOVE_TUSKLIN_EQUIPMENT_ENABLED = true
+
+	[Mobs."Void Worm"]
+		#Whether Void Worm can be stunned when dealt enough damage
+		VOIDWORM_STUN_ENABLED = true
+		#Whether Dimensional Carver can be used to teleport to a linked lodestone compass
+		DIMENSIONAL_LODESTONE_ENABLED = true
+
+	[Mobs."Warped Mosco"]
+		#Whether Warped Moscos eat Crimson Mosquitoes rarely
+		MOSCO_CANNIBALISM_ENABLED = true
+
+	[Mobs."Warped Toad"]
+		#Whether Warped Toads dont eat Tarantula Hawks when tamed
+		WARPED_FRIENDLY_ENABLED = true
+
+["April Fools"]
+	#AMI April Fools Activation
+	GOOFY_MODE_ENABLED = false
+	#April Fools Banana Slug and Banana Effects
+	GOOFY_BANANA_SLIP_ENABLED = true
+	#April Fools Murmur Effects
+	GOOFY_MURMUR_DECAPITATED_ENABLED = true
+	#April Fools Crimson Mosquito Effects
+	GOOFY_CRIMSON_MULTIPLY_ENABLED = true
+	#April Fools Rain Frog Effects
+	RAINFROG_SPAWNAGE_ENABLED = true
+	#April Fools Capuchin Monkey Effects
+	GOOFY_CAPUCHIN_BOMB_ENABLED = true
+	#April Fools Straddler Effects
+	GOOFY_STRADDLER_SHOTGUN_ENABLED = true
+

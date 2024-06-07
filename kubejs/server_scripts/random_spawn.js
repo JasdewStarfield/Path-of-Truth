@@ -327,6 +327,9 @@ PlayerEvents.loggedIn(event => {
         event.server.runCommandSilent(`/effect give ${player.username} minecraft:regeneration infinite 255 true`)
         event.server.runCommandSilent(`/effect give ${player.username} minecraft:saturation infinite 255 true`)
         event.server.runCommandSilent(`/effect give ${player.username} minecraft:jump_boost infinite 128 true`)
+        event.server.scheduleInTicks(50, callback => {
+            event.server.runCommandSilent(`/clear ${player.username} patchouli:guide_book`);//清除烦人的铁魔法指引（模组没给配置）
+        })
         event.player.stages.add('notNewPlayer');
 
 

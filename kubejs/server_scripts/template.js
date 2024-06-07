@@ -70,10 +70,10 @@ onEvent("recipes", event => {
         ]
     )
     //符文祭坛
-    event.recipes.botania.runic_altar("minecraft:acacia_boat", 
+    event.recipes.botania.runic_altar("产物", 
         [
-            "minecraft:acacia_button", 
-            "minecraft:acacia_door"
+            "输入1", 
+            "输入2"
         ], 
         5000
     )

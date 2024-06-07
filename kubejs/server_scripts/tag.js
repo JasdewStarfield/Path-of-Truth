@@ -28,10 +28,42 @@ ServerEvents.tags("item", (event) => {
     event.add("minecraft:shovels","kubejs:bronze_shovel")
     */
 
+    //Unify
     event.add("forge:coal_coke","tfmg:coal_coke")
     event.add("forge:storage_blocks/coal_coke","tfmg:coal_coke_block")
     event.add("forge:dusts","kubejs:gold_silver_mix")
     event.add("forge:dusts/sulfur","tfmg:sulfur_dust")
+    event.add("forge:flour","tmted:wheat_flour")
+    event.add("forge:rope","beautify:rope")
+
+    //Undergarden
+    event.add("create:crushed_ores","kubejs:crushed_froststeel_ore")
+    event.add("create:crushed_ores","kubejs:crushed_cloggrum_ore")
+    event.add("forge:dusts","kubejs:froststeel_dust")
+    event.add("forge:dusts","kubejs:cloggrum_dust")
+    event.add("forge:dusts/froststeel","kubejs:froststeel_dust")
+    event.add("forge:dusts/cloggrum","kubejs:cloggrum_dust")
+    event.add("forge:plates","kubejs:froststeel_plate")
+    event.add("forge:plates","kubejs:cloggrum_plate")
+    event.add("forge:plates/froststeel","kubejs:froststeel_plate")
+    event.add("forge:plates/cloggrum","kubejs:cloggrum_plate")
+    event.add("forge:plates/forgotten_metal","kubejs:forgotten_plate")
+    event.add("forge:plates","kubejs:forgotten_plate")
+
+    //Blueskies
+    event.add("forge:dusts","kubejs:ventium_dust")
+    event.add("forge:dusts/ventium","kubejs:ventium_dust")
+    event.add("forge:dusts","kubejs:horizonite_dust")
+    event.add("forge:dusts/horizonite","kubejs:horizonite_dust")
+    event.add("forge:dusts","kubejs:falsite_dust")
+    event.add("forge:dusts/falsite","kubejs:falsite_dust")
+    event.add("forge:dusts","kubejs:charoite_dust")
+    event.add("forge:dusts/charoite","kubejs:charoite_dust")
+    event.add("forge:dusts","kubejs:aquite_dust")
+    event.add("forge:dusts/aquite","kubejs:aquite_dust")
+
+    //others
+    event.add("forge:plates","kubejs:frostfire_double_plate")
 })
 
 ServerEvents.tags("fluid", (event) => {

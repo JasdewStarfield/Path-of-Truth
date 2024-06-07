@@ -30,6 +30,27 @@ StartupEvents.registry('item', (event) => {
 
   //金-银混合物
   event.create("gold_silver_mix").displayName('Gold-Silver Mix')
+
+  //Undergarden适配
+  event.create("crushed_froststeel_ore").displayName('Crushed Frost Steel Ore').texture('kubejs:item/undergarden_compat/crushed_froststeel_ore')
+  event.create("crushed_cloggrum_ore").displayName('Crushed Cloggrum Ore').texture('kubejs:item/undergarden_compat/crushed_cloggrum_ore')
+  event.create("froststeel_plate").displayName('Frost Steel Plate').texture('kubejs:item/undergarden_compat/froststeel_plate')
+  event.create("cloggrum_plate").displayName('Cloggrum Plate').texture('kubejs:item/undergarden_compat/cloggrum_plate')
+  event.create("froststeel_dust").displayName('Frost Steel Grit').texture('kubejs:item/undergarden_compat/froststeel_dust')
+  event.create("cloggrum_dust").displayName('Cloggrum Grit').texture('kubejs:item/undergarden_compat/cloggrum_dust')
+  event.create("forgotten_plate").displayName('Forgotten Plate').texture('kubejs:item/undergarden_compat/forgotten_plate')
+
+  //Blueskies几种粉
+  event.create("ventium_dust").displayName('Ventium Grit').texture('kubejs:item/blueskies_compat/ventium_dust')
+  event.create("horizonite_dust").displayName('Horizonite Grit').texture('kubejs:item/blueskies_compat/horizonite_dust')
+  event.create("falsite_dust").displayName('Falsite Grit').texture('kubejs:item/blueskies_compat/falsite_dust')
+  event.create("charoite_dust").displayName('Charoite Grit').texture('kubejs:item/blueskies_compat/charoite_dust')
+  event.create("aquite_dust").displayName('Aquite Grit').texture('kubejs:item/blueskies_compat/aquite_dust')
+
+  //新材料
+  event.create("frostfire_double_plate").displayName('Frostfire Double Plate').texture('kubejs:item/undergarden_compat/frostfire_double_plate')
+  event.create("forgotten_mechanism").displayName('Forgotten Mechanism').texture('kubejs:item/forgotten_mechanism')
+  event.create("incomplete_forgotten_mechanism", 'create:sequenced_assembly').displayName('Incomplete Forgotten Mechanism').texture('kubejs:item/incomplete_forgotten_mechanism')
 })
 
 StartupEvents.registry('block', (event) => {

@@ -35,7 +35,7 @@
 	# This does not make them generate, it just allows them to pass the filter.
 	# Example: ["minecraft", "farlanders", "botania"]
 	# Default: []
-	allowed_mods_for_feature_gen = []
+	allowed_mods_for_feature_gen = ["immersiveengineering"]
 	#
 	# A list of mobs that are allowed to spawn in the Everbright and Everdawn.
 	# This does not make them spawn, it just allows them to pass the filter.
