@@ -94,6 +94,8 @@
 			description: [
 				"钢水会很烫，而且有副产物（？"
 				"但我相信你会有办法的（什么"
+				""
+				"这是第三个高炉！我们叫它炼钢高炉就好，因为它只能炼钢（（"
 			]
 			id: "309524B4033437AF"
 			subtitle: "钢水输出点"
@@ -373,9 +375,25 @@
 		}
 		{
 			dependencies: ["7A7C0A48248FA32B"]
+			description: [
+				"好吧，这其实应该才是第三个高炉，不过按顺序是第四个了。"
+				"它叫沉浸工程强化高炉，基本用途和粗制的那个没区别，只是自动化更加便捷，以及支持使用预热器加速。"
+			]
 			icon: "immersiveengineering:blastbrick_reinforced"
 			id: "598BB8D8FCB30B61"
+			rewards: [{
+				id: "742D112099E39F8C"
+				item: {
+					Count: 1
+					id: "immersiveengineering:pickaxe_steel"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			shape: "diamond"
+			subtitle: "更方便的自动化"
 			tasks: [
 				{
 					count: 27L
@@ -408,6 +426,11 @@
 			dependencies: ["7A7C0A48248FA32B"]
 			description: ["感受钢铁的厚重……"]
 			id: "068A7A1F8FB54E98"
+			rewards: [{
+				id: "602964B65DFAD107"
+				item: "botania:cosmetic_lusitanic_shield"
+				type: "item"
+			}]
 			subtitle: "科技就是力量"
 			tasks: [{
 				id: "072D81981D3A5820"
@@ -434,6 +457,11 @@
 			dependencies: ["2E4B9CF9789B1AF1"]
 			description: ["炮台基本单元1/1"]
 			id: "04AAF6565C04DA94"
+			rewards: [{
+				id: "7F151019D05288DC"
+				item: "storagedrawers:redstone_upgrade"
+				type: "item"
+			}]
 			subtitle: "自防御装置基本要素"
 			tasks: [{
 				id: "4A3C2F09B3D2C958"

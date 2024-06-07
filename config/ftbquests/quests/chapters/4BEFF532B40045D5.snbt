@@ -5,7 +5,6 @@
 	filename: "4BEFF532B40045D5"
 	group: ""
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "undergarden:frozen_deepturf_block"
 	id: "4BEFF532B40045D5"
 	order_index: 3

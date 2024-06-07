@@ -445,6 +445,11 @@
 				"不过这玩意目前只能拿来铺路……"
 			]
 			id: "22CB2BBE72C04014"
+			rewards: [{
+				id: "235E8E70182C0D80"
+				item: "create:mechanical_roller"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "铺路！"
 			tasks: [
@@ -686,6 +691,11 @@
 				"（笑死）"
 			]
 			id: "55EE9E5A85FD12B2"
+			rewards: [{
+				id: "5216D7B088A5E5F1"
+				item: "artifacts:universal_attractor"
+				type: "item"
+			}]
 			shape: "square"
 			subtitle: "来点磁铁炼金"
 			tasks: [
@@ -722,11 +732,23 @@
 				"这个模组为什么有这些东西啊（瘫"
 			]
 			id: "31A0E8AA7E6964CC"
-			rewards: [{
-				id: "57C3B604BF1DB28D"
-				item: "tfmg:thermite_grenade"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "57C3B604BF1DB28D"
+					item: "tfmg:thermite_grenade"
+					type: "item"
+				}
+				{
+					id: "2FFE759DB8EBDEC4"
+					item: "tfmg:zinc_grenade"
+					type: "item"
+				}
+				{
+					id: "7BF4A6E3653E1BDC"
+					item: "tfmg:copper_grenade"
+					type: "item"
+				}
+			]
 			shape: "square"
 			subtitle: "WTF"
 			tasks: [{
@@ -744,6 +766,18 @@
 				"注意：液化石油气也有独有的引擎，可以用来产生应力）"
 			]
 			id: "7FB5CC590808D9EA"
+			rewards: [
+				{
+					id: "020EE4C553BD2FDB"
+					item: "tfmg:lpg_engine"
+					type: "item"
+				}
+				{
+					id: "7B271E189708437F"
+					item: "tfmg:lpg_engine_back"
+					type: "item"
+				}
+			]
 			shape: "square"
 			subtitle: "现代化引擎"
 			tasks: [
@@ -769,6 +803,12 @@
 				"你可以通过扩充件输入润滑油之类的来提升效率）"
 			]
 			id: "79DBFA990528F827"
+			rewards: [{
+				count: 2
+				id: "1E705D047EEF95F6"
+				item: "tfmg:engine_base"
+				type: "item"
+			}]
 			shape: "square"
 			subtitle: "传统农具"
 			tasks: [

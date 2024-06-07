@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "0F8C24D7FEEABE04"
 	group: ""
+	hide_quest_details_until_startable: true
 	icon: "minecraft:sniffer_egg"
 	id: "0F8C24D7FEEABE04"
 	order_index: 4

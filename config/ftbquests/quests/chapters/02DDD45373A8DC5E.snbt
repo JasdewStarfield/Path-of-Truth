@@ -156,7 +156,12 @@
 		}
 		{
 			dependencies: ["3C34EE3C3BAB33EC"]
+			description: [
+				"这个整合包有&4&l四个&r&r高炉！！！"
+				"这是第一个，我们姑且称之为原版高炉。"
+			]
 			id: "05545789C11E97FE"
+			subtitle: "冶炼一些特殊矿材所必须用的……"
 			tasks: [{
 				id: "3A1A0025BA4364CE"
 				item: "minecraft:blast_furnace"
@@ -523,8 +528,13 @@
 		}
 		{
 			dependencies: ["27E166AF7BA5BDB1"]
-			description: ["太好用了"]
+			description: ["你怎么能忍住不用的？"]
 			id: "63B4B5472513A83F"
+			rewards: [{
+				id: "53D1AE7DFA54E8AE"
+				type: "xp"
+				xp: 10
+			}]
 			shape: "diamond"
 			subtitle: "很好，这使我机器旋转"
 			tasks: [
@@ -550,6 +560,7 @@
 			]
 			description: [
 				"终于，你看到了炼铁的曙光，但——你需要先去满世界找岩浆块。"
+				"这是第二个高炉，我们姑且称之为沉浸工程粗制高炉。它的作用是冶炼粗铁，以及将铁锭炼为铸铁锭。"
 				"找找废弃的地狱门，记得打个标记，哭泣的黑曜石你以后还会用到的。"
 				""
 				"&n注意：沉浸工程的高炉燃料只能使用焦煤粉！&r"
@@ -686,6 +697,17 @@
 			dependencies: ["6D46668D63E83ED7"]
 			description: ["使用垃圾桶来批量销毁物品和流体。"]
 			id: "1A5534E853393823"
+			rewards: [{
+				id: "4C489927ADE219CB"
+				item: {
+					Count: 1
+					id: "woodenbucket:wooden_bucket"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "不用岩浆或者仙人掌了。"
 			tasks: [
@@ -703,6 +725,29 @@
 			title: "温暖的家（大嘘）"
 			x: 1.5d
 			y: 15.0d
+		}
+		{
+			dependencies: ["2D883E21C72F5947"]
+			description: [
+				"虽然现在你还做不到，不过如果你有了机械手，那么你就可以通过序列组装的方式来量产工程块！通过这种方式生产的工程块除了机壳以外，耗材全部减半！"
+				"顺便一提，这条规则对今后的工程块也都起效。"
+			]
+			id: "5284E06C5BAE5831"
+			rewards: [{
+				id: "7A6FC01C3FEC1539"
+				item: "botania:cosmetic_engineer_goggles"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "量产小贴士"
+			tasks: [{
+				id: "20382D7DE9325214"
+				title: "明白"
+				type: "checkmark"
+			}]
+			title: "关于工程块……"
+			x: -3.0d
+			y: 10.0d
 		}
 	]
 	subtitle: ["Age of Bronze"]

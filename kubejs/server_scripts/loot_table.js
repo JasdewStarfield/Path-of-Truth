@@ -12,6 +12,6 @@ LootJS.modifiers((event) => {
 
     event
         .addLootTableModifier(/.*blue_skies:chests.*dungeon.*/)
-        .randomChance(0.1)
+        .randomChance(0.25)
         .addLoot("kubejs:disc_fragment_yggdrasil");
 })

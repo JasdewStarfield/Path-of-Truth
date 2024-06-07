@@ -1379,7 +1379,10 @@
 		}
 		{
 			dependencies: ["5D6D256D4DE35A5A"]
-			description: ["老实说，现在该怀疑你是不是对垃圾桶有奇怪的癖好了"]
+			description: [
+				"老实说，现在该怀疑你是不是对垃圾桶有奇怪的癖好了"
+				"奖励你一个配色相同的盾牌好了（"
+			]
 			id: "15FED36DE787B730"
 			invisible: true
 			rewards: [{
@@ -1404,7 +1407,7 @@
 				item: "trashcans:ultimate_trash_can"
 				type: "item"
 			}]
-			title: "还有高手？"
+			title: "[隐藏任务]还有高手？"
 			x: 1.0d
 			y: -5.5d
 		}

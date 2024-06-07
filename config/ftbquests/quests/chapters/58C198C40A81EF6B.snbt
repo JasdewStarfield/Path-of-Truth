@@ -240,6 +240,27 @@
 				}
 			}
 			id: "7E9EA8A40086E7CA"
+			rewards: [{
+				id: "2E8CEE4E69C62BA9"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:magic_arrow"
+								index: 0
+								level: 2
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "rsquare"
 			subtitle: "这意味着你穿上后可以出去浪了"
 			tasks: [

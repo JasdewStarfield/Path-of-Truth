@@ -1258,6 +1258,23 @@
 			x: 0.0d
 			y: -5.0d
 		}
+		{
+			dependencies: ["3D6CCF4A93478320"]
+			description: [
+				"在相对的两个面放置温度不同的方块就可以根据温差发电"
+				"最方便的一集"
+			]
+			id: "786D410103015183"
+			shape: "diamond"
+			subtitle: "特殊发电装置"
+			tasks: [{
+				id: "08FBADECA0AF3AC3"
+				item: "immersiveengineering:thermoelectric_generator"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
 	]
 	subtitle: ["Roaring Machinery"]
 	title: "机械轰鸣"

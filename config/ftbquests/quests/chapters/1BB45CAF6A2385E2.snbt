@@ -40,6 +40,11 @@
 				"1E235F6753976501"
 			]
 			id: "34400C31E3703498"
+			rewards: [{
+				id: "51EB03A1679E8909"
+				item: "createdeco:decal_fluid"
+				type: "item"
+			}]
 			subtitle: "无限能量=无限物质，但是只有流体"
 			tasks: [{
 				id: "60B96C0FD52B7D5A"
@@ -76,6 +81,11 @@
 		{
 			dependencies: ["6ED2B7EF9909EB05"]
 			id: "6936D38B28D26AF0"
+			rewards: [{
+				id: "5EF5BEF9AC3CE16C"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
 			subtitle: "给你的烈焰人来块士力架！"
 			tasks: [{
 				id: "7BB018EE90A8A873"
