@@ -102,7 +102,6 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 1. 下载本整合包的Release版zip文件（在Github上直接下载，或在[官方Curseforge页面](https://www.curseforge.com/minecraft/modpacks/path-of-truth)上下载）。
 2. 使用支持Curseforge整合包格式的启动器（例如HMCL）安装该文件。
-3. *这是一行测试文字*这一分支为服务端版本，此版本可以安装在服务端上进行开服。
 
 
 如果您希望体验开发版本，则:
