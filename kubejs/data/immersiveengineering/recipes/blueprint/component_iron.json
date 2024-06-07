@@ -1,1 +1,1 @@
-{"type":"immersiveengineering:blueprint","category":"components","inputs":[{"base_ingredient":{"tag":"forge:plates/iron"},"count":2},{"tag":"forge:ingots/constantan"}],"result":{"item":"immersiveengineering:component_iron"}}
+{"type":"immersiveengineering:blueprint","category":"components","inputs":[{"base_ingredient":{"tag":"forge:plates/iron"},"count":2},{"tag":"blue_skies:gems/pyrope"}],"result":{"item":"immersiveengineering:component_iron"}}

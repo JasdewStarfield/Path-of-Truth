@@ -1,4 +1,5 @@
 {
+	autofocus_id: "747404689C3EB6D7"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "563F31BF1B1FE486"
@@ -41,7 +42,7 @@
 			tasks: [{
 				id: "335AC39A26B19ED1"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "irons_spellbooks:copper_spell_book"
 					tag: {
 						ISB_Spells: {
@@ -193,7 +194,6 @@
 			dependencies: [
 				"172CC4DA91E7C588"
 				"67DD665888D130CB"
-				"4069A80598955B8F"
 			]
 			id: "4D484051A8CF29F2"
 			subtitle: "新的世界，新的资源"
@@ -246,7 +246,7 @@
 			tasks: [{
 				id: "137EB8297FD4C37B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "botania:mana_tablet"
 					tag: {
 						creative: 1b
@@ -362,7 +362,7 @@
 			tasks: [{
 				id: "0832B35B18824218"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "alexsmobs:dimensional_carver"
 					tag: {
 						Damage: 0

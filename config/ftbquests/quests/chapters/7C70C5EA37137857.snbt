@@ -28,19 +28,31 @@
 			dependencies: ["280307C036B9B6E7"]
 			description: ["剧毒巢穴的最下层，蜘蛛女王欢迎你）"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "blue_skies:different_sword"
 				tag: {
 					Damage: 0
 				}
 			}
 			id: "5AEAA6FCB2862FD9"
+			rewards: [{
+				id: "1B9C784A847FF2D1"
+				item: {
+					Count: 1
+					id: "blue_skies:loot_bag_arachnarch"
+					tag: {
+						LootTable: "blue_skies:loot_bags/arachnarch/common"
+						Rarity: 0
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "讨厌的大蜘蛛"
 			tasks: [
 				{
 					id: "057162BE11E594E2"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "blue_skies:arachnarch_trophy"
 						tag: {
 							BlockStateTag: {
@@ -53,7 +65,7 @@
 				{
 					id: "5D8AB2E089CB256E"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "blue_skies:alchemist_trophy"
 						tag: {
 							BlockStateTag: {
@@ -72,19 +84,31 @@
 			dependencies: ["7A6D4E28C28302FE"]
 			description: ["自然城堡的最上层，大树守卫等着你）"]
 			icon: {
-				Count: 1b
+				Count: 1
 				id: "blue_skies:crushing_hammer"
 				tag: {
 					Damage: 0
 				}
 			}
 			id: "67987443A4B5265E"
+			rewards: [{
+				id: "72E4CA60C692BA1A"
+				item: {
+					Count: 1
+					id: "blue_skies:loot_bag_starlit_crusher"
+					tag: {
+						LootTable: "blue_skies:loot_bags/starlit_crusher/common"
+						Rarity: 0
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "砍树，对吧"
 			tasks: [
 				{
 					id: "387A50530A0BE1BB"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "blue_skies:starlit_crusher_trophy"
 						tag: {
 							BlockStateTag: {
@@ -97,7 +121,7 @@
 				{
 					id: "09C7545F2D1F0813"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "blue_skies:summoner_trophy"
 						tag: {
 							BlockStateTag: {
@@ -120,8 +144,8 @@
 			]
 			id: "10CAF35A5551DC8F"
 			rewards: [{
-				id: "2A95EC927550D956"
-				item: "alexsmobs:void_worm_eye"
+				id: "3AD219F053125447"
+				item: "bosses_of_mass_destruction:void_lily"
 				type: "item"
 			}]
 			subtitle: "从加的饱食度就可以看出来……"
@@ -142,6 +166,11 @@
 				"如果你输了你可以说“我被自己打死了”（笑）"
 			]
 			id: "10D75D0FB345A298"
+			rewards: [{
+				id: "3987711A047E4F38"
+				item: "botania:cosmetic_anaglyph_glasses"
+				type: "item"
+			}]
 			subtitle: "谜题：镜像"
 			tasks: [{
 				id: "60F4CB02290B867E"

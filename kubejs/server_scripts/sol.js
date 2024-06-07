@@ -3,7 +3,8 @@ ServerEvents.recipes(event => {
   event.remove({id:"solapplepie:food_book"})
   event.shapeless(Item.of('solapplepie:food_book',1),
         [
-            'minecraft:book'
+            'minecraft:book',
+            '#forge:crops'
         ]
   )
 
@@ -20,16 +21,4 @@ ServerEvents.recipes(event => {
     '#forge:ingots/gold',
     '#forge:plates/electrum'
   )
-
-  //厨锅（隔壁乐事乱入）
-  event.shaped('farmersdelight:cooking_pot', [ 
-    'DAD', 
-    'CBC',
-    'CCC'  
-  ], {
-    B: 'woodenbucket:wooden_bucket',
-    A: 'minecraft:wooden_shovel',
-    C: '#forge:ingots/bronze',
-    D: 'brick'
-  })
 })

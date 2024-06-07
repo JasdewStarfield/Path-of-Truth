@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 100,
+          "quality": 0,
+          "name": "tide:deep_grouper"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 100,
+          "quality": 0,
+          "name": "tide:shadow_snapper"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 70,
+          "quality": 0,
+          "name": "tide:luminescent_jellyfish"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 70,
+          "quality": 0,
+          "name": "tide:abyss_angler"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 50,
+          "quality": 1,
+          "name": "tide:lapis_lanternfish"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 40,
+          "quality": 1,
+          "name": "tide:crystalline_carp"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 30,
+          "quality": 1,
+          "name": "tide:bedrock_tetra"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "quality": 0,
+          "name": "minecraft:cobbled_deepslate"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "quality": 2,
+          "name": "minecraft:raw_iron"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "quality": 1,
+          "name": "minecraft:diamond"
+        }
+      ]
+    }
+  ]
+}

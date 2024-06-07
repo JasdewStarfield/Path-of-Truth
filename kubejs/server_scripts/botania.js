@@ -13,16 +13,16 @@ ServerEvents.recipes(event => {
     )
 
     //支持机械动力的活木、活石配方
-    event.recipes.create.mixing(['botania:livingwood_log', Item.of('botania:pure_daisy').withChance(0.95)], ['#minecraft:logs','botania:pure_daisy']).heated()
-    event.recipes.create.mixing(['botania:livingrock', Item.of('botania:pure_daisy').withChance(0.95)], ['minecraft:stone','botania:pure_daisy']).heated()
+    event.recipes.create.mixing(['botania:livingwood_log', Item.of('botania:pure_daisy').withChance(0.99)], ['#minecraft:logs','botania:pure_daisy']).heated()
+    event.recipes.create.mixing(['botania:livingrock', Item.of('botania:pure_daisy').withChance(0.99)], ['minecraft:stone','botania:pure_daisy']).heated()
 
-    //热修：遗忆守卫炼制配方
+    //遗忆守卫炼制配方
     event.recipes.botania.petal_apothecary('undergarden:forgotten_guardian_spawn_egg', 
         [
             '#forge:eggs',
             'immersiveengineering:component_electronic_adv',
             'botania:aura_ring_greater',
-            'undergarden:forgotten_ingot'
+            'kubejs:forgotten_mechanism'
         ]
     )
 
@@ -300,6 +300,14 @@ ServerEvents.recipes(event => {
         ], 
         50000
     )
+    event.shaped(Item.of('botania:terrasteel_ingot',1),
+    ['AAA',
+    'AAA',
+    'AAA'],
+    {
+        A:'botania:terrasteel_nugget'
+    }
+)
     //创造魔力石板合成
     event.recipes.botania.terra_plate(Item.of('botania:mana_tablet', '{creative:1b,mana:500000}'), 
         [
@@ -514,4 +522,36 @@ ServerEvents.recipes(event => {
         ]
     )
 
+    //花瓣适配种植罩
+    let petalsCloche = (material) => {
+        event.custom({
+            "type":"immersiveengineering:cloche",
+            "input":{"item":"botania:"+material+"_petal"},
+            "render":{"type":"generic","block":"botania:"+material+"_double_flower"},
+            "results":[{"item":"botania:"+material+"_double_flower"}],
+            "soil":{"item":"farmersdelight:rich_soil"},
+            "time":960
+        })
+    }
+
+    const Colours = [
+        "white",
+        "orange",
+        "magenta",
+        "light_blue",
+        "yellow",
+        "lime",
+        "pink",
+        "gray",
+        "light_gray",
+        "cyan",
+        "purple",
+        "blue",
+        "brown",
+        "green",
+        "red",
+        "black"
+    ]
+
+    Colours.forEach((colour) => petalsCloche(colour))
 })

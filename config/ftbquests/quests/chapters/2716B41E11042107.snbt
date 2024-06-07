@@ -15,6 +15,11 @@
 			dependencies: ["5FB9514C6DE7AD58"]
 			description: ["通过这个工程块，你可以开始构建一些真正意义上的重型机器了）"]
 			id: "143E6A57D69BAE65"
+			rewards: [{
+				id: "7E32ADC9F2B7A0CD"
+				item: "irons_spellbooks:heavy_chain_necklace"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "重大工程"
@@ -131,7 +136,7 @@
 				{
 					id: "11F7365EA7861EFA"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "create:super_glue"
 						tag: {
 							Damage: 0
@@ -216,7 +221,7 @@
 				{
 					id: "1C74408D889CB8AF"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -241,7 +246,7 @@
 			tasks: [{
 				id: "6F18410C24225D27"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "immersiveengineering:survey_tools"
 					tag: {
 						Damage: 0
@@ -440,6 +445,11 @@
 				"不过这玩意目前只能拿来铺路……"
 			]
 			id: "22CB2BBE72C04014"
+			rewards: [{
+				id: "235E8E70182C0D80"
+				item: "create:mechanical_roller"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "铺路！"
 			tasks: [
@@ -488,7 +498,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["27AC0014531AA954"]
@@ -498,6 +508,11 @@
 				"很真实吧&m&o&b（很复杂吧&r&r&r"
 			]
 			id: "3E21C675D4F61E6B"
+			rewards: [{
+				id: "6DF3368F11CA92C9"
+				item: "immersiveengineering:shader_bag_epic"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "你疑似有点城市化了"
@@ -523,10 +538,13 @@
 				type: "item"
 			}]
 			x: 12.0d
-			y: -2.0d
+			y: 1.0d
 		}
 		{
-			dependencies: ["32DA53E6EDA0AC90"]
+			dependencies: [
+				"32DA53E6EDA0AC90"
+				"7C566E8D9F54FEF9"
+			]
 			description: [
 				"自己给自己焊板子你还想要工资？不可能的，朋友）"
 				"哦对了，如果出现了废料那一定是你的运气问题，人不行不能怪路不平（x"
@@ -542,10 +560,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"538F608DF5017A6A"
-				"6CDC3FDF89300F77"
-			]
+			dependencies: ["538F608DF5017A6A"]
 			description: [
 				"终于，你进入了电子时代）"
 				"虽然我们不能在MC里为你提供计算机，但你已经接近这个世界的真相了。"
@@ -558,8 +573,8 @@
 				item: "kubejs:electronic_engineering"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 2.0d
+			x: 16.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
@@ -570,7 +585,7 @@
 				{
 					id: "14D9A7AD66EB0E8E"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							Parent: {
 								Items: [ ]
@@ -584,7 +599,7 @@
 				{
 					id: "3794154469C43BE9"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							Parent: {
 								Items: [ ]
@@ -613,7 +628,7 @@
 				{
 					id: "01A2A7EE3E4B6CE5"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							Parent: {
 								Items: [ ]
@@ -627,7 +642,7 @@
 				{
 					id: "71AC37C7FF3388AD"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							Parent: {
 								Items: [ ]
@@ -652,16 +667,21 @@
 				"工业的本质就是以机械直达无限，而很快你就将能触碰到这一概念的边缘。"
 			]
 			id: "2D906487EC6F1A01"
+			rewards: [{
+				id: "3FC007C95BF523E1"
+				item: "minecraft:heart_pottery_sherd"
+				type: "item"
+			}]
 			shape: "gear"
-			size: 2.0d
+			size: 4.0d
 			subtitle: "很可爱，对吧"
 			tasks: [{
 				id: "5DB8E7650A917BFD"
 				item: "kubejs:buran"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 6.0d
+			x: 14.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["05EF035C814ADE9B"]
@@ -671,6 +691,11 @@
 				"（笑死）"
 			]
 			id: "55EE9E5A85FD12B2"
+			rewards: [{
+				id: "5216D7B088A5E5F1"
+				item: "artifacts:universal_attractor"
+				type: "item"
+			}]
 			shape: "square"
 			subtitle: "来点磁铁炼金"
 			tasks: [
@@ -707,11 +732,23 @@
 				"这个模组为什么有这些东西啊（瘫"
 			]
 			id: "31A0E8AA7E6964CC"
-			rewards: [{
-				id: "57C3B604BF1DB28D"
-				item: "tfmg:thermite_grenade"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "57C3B604BF1DB28D"
+					item: "tfmg:thermite_grenade"
+					type: "item"
+				}
+				{
+					id: "2FFE759DB8EBDEC4"
+					item: "tfmg:zinc_grenade"
+					type: "item"
+				}
+				{
+					id: "7BF4A6E3653E1BDC"
+					item: "tfmg:copper_grenade"
+					type: "item"
+				}
+			]
 			shape: "square"
 			subtitle: "WTF"
 			tasks: [{
@@ -729,6 +766,18 @@
 				"注意：液化石油气也有独有的引擎，可以用来产生应力）"
 			]
 			id: "7FB5CC590808D9EA"
+			rewards: [
+				{
+					id: "020EE4C553BD2FDB"
+					item: "tfmg:lpg_engine"
+					type: "item"
+				}
+				{
+					id: "7B271E189708437F"
+					item: "tfmg:lpg_engine_back"
+					type: "item"
+				}
+			]
 			shape: "square"
 			subtitle: "现代化引擎"
 			tasks: [
@@ -754,6 +803,12 @@
 				"你可以通过扩充件输入润滑油之类的来提升效率）"
 			]
 			id: "79DBFA990528F827"
+			rewards: [{
+				count: 2
+				id: "1E705D047EEF95F6"
+				item: "tfmg:engine_base"
+				type: "item"
+			}]
 			shape: "square"
 			subtitle: "传统农具"
 			tasks: [
@@ -784,15 +839,17 @@
 		}
 		{
 			dependencies: ["2718164469D544DF"]
+			description: ["烈焰人最喜欢吃的"]
 			id: "2B8294A4CBF6D664"
 			shape: "circle"
+			subtitle: "超级加热！"
 			tasks: [{
 				id: "06AFE6597408DE5C"
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.5d
+			x: 10.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -805,6 +862,11 @@
 				"当然，你也可以用盖亚锭转化，对吧）"
 			]
 			id: "7C566E8D9F54FEF9"
+			rewards: [{
+				id: "288277FCDB0A4956"
+				item: "nethersdelight:nether_skewer"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "难度++"
@@ -814,21 +876,26 @@
 				type: "item"
 			}]
 			title: "另一种黑金"
-			x: 8.0d
-			y: -3.0d
+			x: 14.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["5FB9514C6DE7AD58"]
-			description: ["相比于高级的电路板，木头板子就容易多了，你只需要手动把石英往木头上插）"]
-			id: "6CDC3FDF89300F77"
-			subtitle: "简单的小东西"
-			tasks: [{
-				id: "0D0D8E97979AE652"
-				item: "immersiveengineering:component_electronic"
+			dependencies: ["7B7978B0964080F3"]
+			id: "0B043034C7178F75"
+			rewards: [{
+				id: "0428279BAF7C1220"
+				item: "minecraft:minecart"
 				type: "item"
 			}]
-			x: 16.0d
-			y: 2.0d
+			shape: "diamond"
+			subtitle: "更精确的矿脉采样工具"
+			tasks: [{
+				id: "67B5112D5F9FF788"
+				item: "immersiveengineering:sample_drill"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -0.5d
 		}
 	]
 	subtitle: ["Petrochemical Engineering"]

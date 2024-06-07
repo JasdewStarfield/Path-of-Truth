@@ -246,10 +246,10 @@
 				deployer = 4.0
 				millstone = 4.0
 				cuckoo_clock = 1.0
-				speedometer = 0.0
+				speedometer = 0.1
 				copper_backtank = 4.0
 				mechanical_saw = 4.0
-				flywheel = 0.0
+				flywheel = 0.1
 				adjustable_chain_gearshift = 0.1
 				mechanical_pump = 4.0
 				crushing_wheel = 8.0
@@ -261,7 +261,7 @@
 				large_cogwheel = 0.2
 				mechanical_drill = 4.0
 				andesite_encased_large_cogwheel = 0.2
-				stressometer = 0.0
+				stressometer = 0.1
 				shaft = 0.1
 				gearshift = 0.4
 				sequenced_gearshift = 0.4

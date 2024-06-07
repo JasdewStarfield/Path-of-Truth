@@ -1,0 +1,10 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{"item":"undergarden:droopvine_item"},
+    "render":{"type":"crop","block":"undergarden:droopvine"},
+    "results":[
+        {"item":"undergarden:droopvine_item"}
+    ],
+    "soil":{"item":"undergarden:depthrock"},
+    "time":640
+}

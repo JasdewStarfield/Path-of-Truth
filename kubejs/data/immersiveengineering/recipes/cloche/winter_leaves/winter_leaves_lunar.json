@@ -1,0 +1,24 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{
+        "item":"blue_skies:winter_leaf_seeds"
+    },
+    "render":{
+        "type":"crop",
+        "block":"blue_skies:winter_leaves"
+    },
+    "results":[
+        {
+            "count":2,
+            "item":"blue_skies:winter_leaves"
+        },
+        {
+            "count":1,
+            "item":"blue_skies:winter_leaf_seeds"
+        }
+    ],
+    "soil":{
+        "item":"blue_skies:lunar_dirt"
+    },
+    "time":800
+}

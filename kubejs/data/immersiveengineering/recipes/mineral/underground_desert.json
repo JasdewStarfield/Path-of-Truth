@@ -1,0 +1,15 @@
+{
+    "type":"immersiveengineering:mineral_mix",
+    "dimensions":["blue_skies:everdawn"],
+    "fail_chance":0.05,
+    "ores":[
+        {"chance":0.6,"output":{"item":"blue_skies:vitreous_moonstone"}},
+        {"chance":0.2,"output":{"item":"blue_skies:crystallized_leaves"}},
+        {"chance":0.2,"output":{"item":"blue_skies:crystallized_log"}}
+    ],
+    "spoils":[
+        {"chance":0.5,"output":{"item":"blue_skies:crystal_sand"}},
+        {"chance":0.5,"output":{"item":"blue_skies:crystal_sandstone"}}
+    ],
+    "weight":15
+}

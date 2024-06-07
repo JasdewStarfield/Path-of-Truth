@@ -51,6 +51,8 @@
 	lantern_item_size = 0.625
 	#Gives a special animation to lanterns when held in hand
 	lantern_item_holding = true
+	#Makes lantern holding animation have the arm angled more upwards. Looks better if you have dynamic lights on
+	lantern_item_holding_up = false
 
 	[lantern.swing_physics]
 		min_angle = 0.79999995
@@ -75,4 +77,10 @@
 	#A scalar multiplier that will be applied to sign text making it brighter, supposedly more legible
 	#Range: 0.0 ~ 5.0
 	sign_text_color_multiplier = 1.2
+	#Gives a special animation to torches when held in hand
+	torch_item_holding = true
+	#Gives a special animation to supplementaries candle holders when held in hand
+	handle_holder_item_holding = true
+	#Makes Torch and Lantern holding animation be fixed, not changing with player facing
+	fixed_holding_animations = false
 

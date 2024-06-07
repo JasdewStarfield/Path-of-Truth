@@ -16,6 +16,11 @@
 			description: ["所以你现在不得不依赖巨大的动力发电装置）"]
 			icon: "irons_spellbooks:lightning_bottle"
 			id: "01534DC5812DBA15"
+			rewards: [{
+				id: "79955FC617AD8807"
+				item: "createdeco:decal_electrical"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "嗯，沉浸的机器要用电"
@@ -110,7 +115,7 @@
 				{
 					id: "37AF227F6B37E2C1"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -177,7 +182,7 @@
 				{
 					id: "432BA3C91DE215C5"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -194,6 +199,11 @@
 			dependencies: ["1E0E5E47E1264279"]
 			icon: "immersiveengineering:ingot_electrum"
 			id: "3D6CCF4A93478320"
+			rewards: [{
+				id: "71A2780A7585490D"
+				item: "supplementaries:gold_door"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "琥珀金也是金）"
@@ -222,6 +232,11 @@
 			]
 			icon: "immersiveengineering:plantoil_bucket"
 			id: "1404B54F1747DE16"
+			rewards: [{
+				id: "5676B9596046ACB9"
+				item: "bloodmagic:plantoil"
+				type: "item"
+			}]
 			subtitle: "能拿来炒菜吗？"
 			tasks: [{
 				id: "1C087B5F221D57DF"
@@ -236,6 +251,11 @@
 			description: ["“对，说你呢，罗蒙诺索夫同志！这玩意不是给你喝的！这不是伏特加！”"]
 			icon: "immersiveengineering:ethanol_bucket"
 			id: "48A3FEF7D02104E5"
+			rewards: [{
+				id: "566E040EC8258232"
+				item: "tmted:bottle_of_wodka"
+				type: "item"
+			}]
 			subtitle: "禁止酗酒"
 			tasks: [{
 				id: "55EDC4FAFB6E8875"
@@ -290,7 +310,7 @@
 				{
 					id: "5A99DC18E2220867"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -332,13 +352,14 @@
 				}
 			]
 			title: "中压电力系统"
-			x: 5.0d
-			y: 4.0d
+			x: 1.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
 				"3D6CCF4A93478320"
 				"3B29D716A3D5AAF0"
+				"3E60B78B0EE34B75"
 			]
 			description: ["你已经开始接近现代工业水准了，柴油发电领先时代！"]
 			icon: "immersiveengineering:diesel_generator"
@@ -383,7 +404,7 @@
 				{
 					id: "22348BD9DFAB10A4"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -408,6 +429,11 @@
 			]
 			icon: "immersiveengineering:biodiesel_bucket"
 			id: "3B29D716A3D5AAF0"
+			rewards: [{
+				id: "4BBA83A29A6A4427"
+				item: "farmersdelight:wild_potatoes"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "高效燃料"
@@ -433,7 +459,7 @@
 			rewards: [{
 				id: "125F680A621D3A57"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							Items: [ ]
@@ -457,7 +483,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["3B29D716A3D5AAF0"]
+			dependencies: [
+				"3B29D716A3D5AAF0"
+				"3E60B78B0EE34B75"
+			]
 			description: ["最强电动炉子，几乎全额的分解，最强的动力，以及——通往铝锭的通行证。"]
 			icon: "immersiveengineering:arc_furnace"
 			id: "583407C7537AE9C9"
@@ -472,12 +501,6 @@
 				{
 					id: "561950B9E4D2BADF"
 					item: "immersiveengineering:rs_engineering"
-					type: "item"
-				}
-				{
-					count: 6L
-					id: "013133A969D5F8EC"
-					item: "immersiveengineering:storage_steel"
 					type: "item"
 				}
 				{
@@ -516,9 +539,15 @@
 					type: "item"
 				}
 				{
-					id: "6998FE6FE8B54E9B"
+					count: 6L
+					id: "6ADB0D5CF731E92A"
+					item: "tfmg:steel_block"
+					type: "item"
+				}
+				{
+					id: "01ABF3E61F49C2FC"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -542,13 +571,18 @@
 			]
 			icon: "tfmg:aluminum_ingot"
 			id: "2BE7BA0BE9F2DBC9"
+			rewards: [{
+				id: "274597A581C787E4"
+				item: "immersiveengineering:alu_post"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "电解，嗯"
 			tasks: [{
 				id: "079139B4E55015BA"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "itemfilters:tag"
 					tag: {
 						value: "forge:ingots/aluminum"
@@ -560,18 +594,6 @@
 			title: "工业明珠"
 			x: 3.0d
 			y: -4.0d
-		}
-		{
-			dependencies: ["3B29D716A3D5AAF0"]
-			id: "2D1BA006EF115501"
-			subtitle: "建立自动化农场！"
-			tasks: [{
-				id: "39F74AB1F55B8E62"
-				title: "自动化小贴士"
-				type: "checkmark"
-			}]
-			x: 5.0d
-			y: 0.0d
 		}
 		{
 			dependencies: ["1E0E5E47E1264279"]
@@ -586,8 +608,8 @@
 				item: "immersiveengineering:dust_hop_graphite"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 2.5d
+			x: 6.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -604,7 +626,7 @@
 			tasks: [{
 				id: "4138B587205AB188"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "immersiveengineering:graphite_electrode"
 					tag: {
 						graphDmg: 0
@@ -614,7 +636,7 @@
 			}]
 			title: "电弧炉核心"
 			x: 7.5d
-			y: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["2BE7BA0BE9F2DBC9"]
@@ -693,7 +715,7 @@
 				{
 					id: "4B481FA85145F89F"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "immersiveengineering:hammer"
 						tag: {
 							Damage: 0
@@ -715,7 +737,7 @@
 				{
 					id: "0609FD0C01142C51"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:rods/all_metal"
@@ -738,7 +760,7 @@
 			dependencies: ["22631A52B9D81A49"]
 			description: ["虽然这个东西是脚手架没错，但同样也是机器框架）"]
 			id: "0EA7E42D07C4BC01"
-			subtitle: "钢铁的作用）"
+			subtitle: "但是你的脚手架又弥补了这一点"
 			tasks: [{
 				id: "2B3D45F9C0B744F9"
 				item: "immersiveengineering:steel_scaffolding_standard"
@@ -761,17 +783,18 @@
 			tasks: [{
 				id: "26DA5121AA920A2A"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "immersiveengineering:blueprint"
 					tag: {
 						blueprint: "electrode"
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			title: "我电极呢？"
-			x: 7.0d
-			y: 3.5d
+			x: 6.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -805,7 +828,7 @@
 			tasks: [{
 				id: "147D1D7C0FBC9106"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tfmg:screwdriver"
 					tag: {
 						Damage: 0
@@ -820,9 +843,26 @@
 			dependencies: [
 				"724A0B71BA342AEE"
 				"03312D6881CC617D"
+				"41E56A9D68E36043"
 			]
 			description: ["准备好迎接真正的工业时代了吗）"]
 			id: "5FB9514C6DE7AD58"
+			rewards: [{
+				id: "1FCB3F21F61EEBA2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "immersive_armors:heavy_leggings"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "重大工程的工程块"
@@ -835,7 +875,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["1A19AB31DBCDBCF7"]
+			dependencies: ["3E60B78B0EE34B75"]
 			description: ["重型机械的基本结构之一"]
 			id: "724A0B71BA342AEE"
 			subtitle: "很重，很重要"
@@ -844,31 +884,43 @@
 				item: "tfmg:heavy_machinery_casing"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 1.5d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["0E5C63B3D4891362"]
+			dependencies: ["504E6502A789DABF"]
 			description: [
 				"鉴于这个东西只能在深暗的遗忆守卫身上掉落，我们把它放得很靠后）"
 				"但这也意味着，如果你不去冒险，那么你是没有办法获得这种强大的材料来推进工业的）"
 			]
+			icon: "undergarden:forgotten_nugget"
 			id: "1A19AB31DBCDBCF7"
 			subtitle: "干掉另一种意义上的守卫者"
-			tasks: [{
-				id: "631AF2A0043BCBA8"
-				item: "undergarden:forgotten_nugget"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "631AF2A0043BCBA8"
+					item: "undergarden:forgotten_nugget"
+					type: "item"
+				}
+				{
+					id: "34E7901DCDF89E23"
+					item: "kubejs:forgotten_plate"
+					type: "item"
+				}
+			]
 			title: "下去吧你！"
-			x: 10.5d
-			y: 0.0d
+			x: 9.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
-			description: ["沉浸工程的多方块结构的搭建方法都可以在这里找到"]
+			description: [
+				"（虽然之前已经提过了，不过鉴于过了太久所以以防你忘了再说一遍）"
+				"沉浸工程的多方块结构的搭建方法都可以在这里找到"
+			]
 			id: "1984D2E85CF06BC7"
 			shape: "diamond"
+			subtitle: "敲黑板"
 			tasks: [{
 				id: "556BBFA49015176C"
 				item: "immersiveengineering:manual"
@@ -882,11 +934,12 @@
 			description: ["你生产金属线的效率现在能翻倍了！别忘了！"]
 			id: "4BBD74D56BC12AEE"
 			shape: "diamond"
+			subtitle: "成双成对"
 			tasks: [
 				{
 					id: "18EC031E6DC5AF3C"
 					item: {
-						Count: 1b
+						Count: 1
 						id: "itemfilters:tag"
 						tag: {
 							value: "forge:wires"
@@ -901,6 +954,7 @@
 					type: "item"
 				}
 			]
+			title: "工艺升级"
 			x: -4.5d
 			y: 1.5d
 		}
@@ -908,6 +962,7 @@
 			dependencies: ["01534DC5812DBA15"]
 			id: "736CE93D99A91B3F"
 			shape: "diamond"
+			subtitle: "让你的沉浸工程高炉满速运转吧！"
 			tasks: [{
 				count: 2L
 				id: "0FB15D52AA8A4CA2"
@@ -933,7 +988,7 @@
 				{
 					id: "52D848C4EC576D25"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -949,7 +1004,7 @@
 				{
 					id: "36A3A7318D3D1F11"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -965,7 +1020,7 @@
 				{
 					id: "1E56FDC9EA12F2CA"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -981,7 +1036,7 @@
 				{
 					id: "013472378BC5AC3E"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							"cold_sweat:item_insulation": {
 								Insulation: [ ]
@@ -1019,7 +1074,7 @@
 			tasks: [{
 				id: "43124CC78A2EF0DD"
 				item: {
-					Count: 1b
+					Count: 1
 					ForgeCaps: {
 						Parent: {
 							Items: [ ]
@@ -1042,7 +1097,7 @@
 				{
 					id: "6CCFCB005D52E4DA"
 					item: {
-						Count: 1b
+						Count: 1
 						ForgeCaps: {
 							Parent: {
 								Items: [ ]
@@ -1064,8 +1119,10 @@
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
+			description: ["现已支持各种模组作物！"]
 			id: "3A25C9E033482CEB"
 			shape: "diamond"
+			subtitle: "一种更优雅的种植解决方式"
 			tasks: [{
 				id: "0B79AAD8A943099B"
 				item: "immersiveengineering:cloche"
@@ -1084,7 +1141,7 @@
 			tasks: [{
 				id: "0ADE2F4D3B0B083C"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "tfmg:quad_potato_cannon"
 					tag: {
 						Damage: 0
@@ -1129,6 +1186,7 @@
 				"0FD551E50150A7AD"
 			]
 			description: ["到下一章你就会用到它！"]
+			icon: "immersiveengineering:phenolic_resin_bucket"
 			id: "6CBC49DEC79E819E"
 			tasks: [{
 				id: "5990032AE52EC1B6"
@@ -1137,6 +1195,85 @@
 			}]
 			x: -1.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["3B29D716A3D5AAF0"]
+			description: [
+				"有着奇特性质的两种金属的结合。"
+				"似乎拥有极强的导热性……同时硬度也十分优异"
+			]
+			id: "3E60B78B0EE34B75"
+			subtitle: "嗯，复合板材"
+			tasks: [{
+				id: "76A65BC6B5E46BA6"
+				item: "kubejs:frostfire_double_plate"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D6CCF4A93478320"]
+			description: ["相比于另一种（你后面会用到的）高级的电路板，木头板子就容易多了，你只需要手动把石英往木头上插）"]
+			id: "671C17CCA1D5FA78"
+			subtitle: "简单的小东西"
+			tasks: [{
+				id: "4998B75DD8C7E7A6"
+				item: "immersiveengineering:component_electronic"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1A19AB31DBCDBCF7"
+				"671C17CCA1D5FA78"
+			]
+			id: "41E56A9D68E36043"
+			subtitle: "众所周知，有时候科技发展靠考古"
+			tasks: [{
+				id: "0765B9537FD3914A"
+				item: "kubejs:forgotten_mechanism"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2BE7BA0BE9F2DBC9"]
+			description: [
+				"虽然叫扼塞锭，可是用它升级了铝制流体管道之后，反而能更流畅地输送流体了……"
+				"现在你可以在一些地方省去流体泵了。"
+			]
+			id: "6AF055F5437D95A0"
+			shape: "diamond"
+			subtitle: "能省去一点流体泵的功夫"
+			tasks: [{
+				id: "589621E0806E7016"
+				item: "immersiveengineering:fluid_pipe"
+				type: "item"
+			}]
+			title: "高级的流体管道"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3D6CCF4A93478320"]
+			description: [
+				"在相对的两个面放置温度不同的方块就可以根据温差发电"
+				"最方便的一集"
+			]
+			id: "786D410103015183"
+			shape: "diamond"
+			subtitle: "特殊发电装置"
+			tasks: [{
+				id: "08FBADECA0AF3AC3"
+				item: "immersiveengineering:thermoelectric_generator"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
 		}
 	]
 	subtitle: ["Roaring Machinery"]

@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
 
     //重型机械机壳
     event.remove({id:'tfmg:item_application/heavy_machinery_casing'})
-    casing("tfmg:heavy_machinery_casing", "tfmg:steel_casing", '#forge:nuggets/forgotten_metal')
+    casing("tfmg:heavy_machinery_casing", "tfmg:steel_casing", 'kubejs:frostfire_double_plate')
     event.replaceInput(
       {input:"tfmg:heavy_machinery_casing", not: {output:'tfmg:heavy_casing_door'}},
       'tfmg:heavy_machinery_casing',

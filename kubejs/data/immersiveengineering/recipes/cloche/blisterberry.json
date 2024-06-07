@@ -1,0 +1,10 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{"item":"undergarden:blisterberry"},
+    "render":{"type":"crop","block":"undergarden:blisterberry_bush"},
+    "results":[
+        {"count": 2, "item":"undergarden:blisterberry"}
+    ],
+    "soil":{"item":"undergarden:deepsoil"},
+    "time":800
+}

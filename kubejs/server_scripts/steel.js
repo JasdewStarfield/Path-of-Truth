@@ -56,7 +56,7 @@ ServerEvents.recipes(event => {
     ' DDD '
   ], {
     A: 'immersiveengineering:light_engineering',
-    B: '#forge:ingots/steel',
+    B: 'immersiveengineering:component_steel',
     D: 'immersiveengineering:wirecoil_copper'
   })
   event.recipes.create.mechanical_crafting('create_new_age:carbon_brushes', [
@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
     ' DDD '
   ], {
     A: 'immersiveengineering:light_engineering',
-    B: '#forge:ingots/steel',
+    B: 'immersiveengineering:component_iron',
     D: '#forge:coal_coke'
   })
   //电动机

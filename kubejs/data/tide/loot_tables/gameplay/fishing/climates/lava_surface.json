@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 60,
+          "name": "tide:obsidian_fragment"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 30,
+          "name": "tide:fish_bone"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "name": "minecraft:obsidian"
+        }
+      ]
+    }
+  ]
+}

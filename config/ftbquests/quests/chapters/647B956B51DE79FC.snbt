@@ -149,7 +149,7 @@
 			tasks: [{
 				id: "2B2539E01BA27370"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "patchouli:guide_book"
 					tag: {
 						"patchouli:book": "bloodmagic:guide"
@@ -203,7 +203,7 @@
 			tasks: [{
 				id: "3A13F492ABFFE57B"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "botania:mana_tablet"
 					tag: {
 						creative: 1b
@@ -296,7 +296,7 @@
 			tasks: [{
 				id: "6371D1A37FF75D74"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "botania:flight_tiara"
 					tag: {
 						variant: 0
@@ -534,7 +534,7 @@
 			rewards: [{
 				id: "78343A838FA4B7F1"
 				item: {
-					Count: 1b
+					Count: 1
 					id: "botania:laputa_shard"
 					tag: {
 						level: 19

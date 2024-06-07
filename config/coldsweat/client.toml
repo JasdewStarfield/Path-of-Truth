@@ -8,7 +8,7 @@
 	#The position of the body temperature readout relative to default
 	"Body Temperature Readout Offset" = [0, 0]
 	#The position of the world temperature gauge relative to default
-	"World Temperature UI Offset" = [0, 0]
+	"World Temperature UI Offset" = [34, 0]
 
 [Accessibility]
 	#Enables visual distortion effects when the player is too hot or cold
