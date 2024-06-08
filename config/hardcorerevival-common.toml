@@ -25,10 +25,4 @@ allowUnarmedMelee = false
 allowBows = false
 #If true, knocked out players are still able to fire pistols from Mr Crayfish's Gun Mod.
 allowPistols = false
-#Set to false to remove the Accept your Fate button and force players to wait out the timer.
-allowAcceptingFate = true
-#If true, Hardcore Revival will not be active in singleplayer.
-disableInSingleplayer = true
-#If true, Hardcore Revival will not be active when playing alone in multiplayer.
-disableInLonelyMultiplayer = false
 
