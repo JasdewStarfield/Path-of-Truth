@@ -27,6 +27,11 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 30,
+          "name": "tide:angelfish"
+        },
+        {
+          "type": "minecraft:item",
           "weight": 15,
           "quality": 2,
           "name": "minecraft:pufferfish"
