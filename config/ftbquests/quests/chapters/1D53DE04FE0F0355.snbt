@@ -242,7 +242,7 @@
 				}
 			]
 			title: "选择：独自开始"
-			x: -1.0d
+			x: -2.0d
 			y: -4.0d
 		}
 		{
@@ -271,7 +271,36 @@
 				}
 			]
 			title: "选择：留在世界出生点"
-			x: 1.0d
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4543C26614BBBE4C"]
+			description: [
+				"联机开服推荐 - 星遥游戏"
+				"我们致力于提供良好的联机服务，"
+				"目前已支持“真理之路”自动部署，"
+				"您仅需下单，即可零基础体验欢快的联机之旅。"
+				"输入优惠券代码 24pot 可获得10%off的优惠哦~"
+				"官网链接：https://started.ink/"
+			]
+			icon: "immersiveengineering:toolupgrade_revolver_electro"
+			id: "2884B23B36CF2640"
+			rewards: [{
+				id: "33B8CB6BC97484EF"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.2d
+			subtitle: "如果想开服务器玩这个包可以尝试一下！"
+			tasks: [{
+				id: "4D9529C274E7A8F4"
+				title: "感谢金主！"
+				type: "checkmark"
+			}]
+			title: "关于开服……"
+			x: 0.0d
 			y: -4.0d
 		}
 	]

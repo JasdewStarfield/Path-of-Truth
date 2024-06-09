@@ -7,7 +7,9 @@ LootJS.modifiers((event) => {
     event.addLootTypeModifier(LootType.ENTITY).replaceLoot("iron_ingot", "raw_iron", true)
     event.addLootTableModifier(/.*/).removeLoot("netherite_ingot")
     event.addBlockLootModifier("#minecraft:replaceable_by_trees").removeLoot("minecraft:wheat_seeds")
-    event.addBlockLootModifier("#minecraft:replaceable_by_trees").removeLoot("immersiveengineering:seeds")
+    event.addBlockLootModifier("#minecraft:replaceable_by_trees").removeLoot("immersiveengineering:seed")
+    event.addBlockLootModifier("#minecraft:snow").removeLoot("minecraft:wheat_seeds")
+    event.addBlockLootModifier("#minecraft:snow").removeLoot("immersiveengineering:seed")
     event.addLootTypeModifier(LootType.CHEST).removeLoot(Item.of('minecraft:enchanted_book').enchant('supplementaries:stasis', 1))
 
     event

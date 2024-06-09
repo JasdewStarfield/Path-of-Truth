@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
     ' DCD ',
     ' DCD '
   ], {
-    A: 'create:precision_mechanism',
+    A: 'kubejs:precise_engineering',
     B: '#forge:glass',
     C: 'tfmg:cast_iron_pipe',
     D: '#forge:ingots/cast_iron'
@@ -21,10 +21,23 @@ ServerEvents.recipes(event => {
     'DBBBD',
     ' DCD '
   ], {
-    A: 'create:precision_mechanism',
+    A: 'kubejs:precise_engineering',
     B: 'tfmg:fireproof_brick',
     C: 'tfmg:cast_iron_pipe',
     D: '#forge:ingots/cast_iron'
+  })
+
+  //动力合成器
+  event.remove({ output: 'create:mechanical_crafter' })
+  event.shaped('6x create:mechanical_crafter', [ 
+    ' D ', 
+    'ACA',
+    ' B '  
+    ], {
+    B: 'kubejs:precise_engineering',
+    D: 'kubejs:andesite_engineering',
+    A: 'create:cogwheel',
+    C: '#forge:workbench'
   })
   
   event.remove({id:'tfmg:mixing/cast_iron_ingot'})

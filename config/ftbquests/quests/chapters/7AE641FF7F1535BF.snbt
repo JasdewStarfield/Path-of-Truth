@@ -27,8 +27,8 @@
 			size: 2.0d
 			subtitle: "机 械 动 力"
 			tasks: [{
-				id: "23B61758EA917990"
-				item: "create:precision_mechanism"
+				id: "23F01D262DE866AD"
+				item: "kubejs:precise_engineering"
 				type: "item"
 			}]
 			title: "基本元件"
@@ -57,12 +57,13 @@
 			]
 			title: "选择模板"
 			x: 2.5d
-			y: 1.5d
+			y: 2.5d
 		}
 		{
 			dependencies: [
 				"241E68C9313210AD"
 				"5B1818D5A1142A16"
+				"34F7983B4915B789"
 			]
 			id: "3FE201936DBB127F"
 			subtitle: "加压后冷却"
@@ -73,7 +74,7 @@
 			}]
 			title: "金属成型"
 			x: 2.5d
-			y: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["242C57AF7F6116E4"]
@@ -87,18 +88,20 @@
 			}]
 			title: "焦炉与焦煤"
 			x: 1.5d
-			y: 0.5d
+			y: 1.5d
 		}
 		{
 			dependencies: [
 				"0CF2DD3DB7F76FB2"
 				"5B1818D5A1142A16"
+				"34F7983B4915B789"
 			]
 			description: [
 				"钢水会很烫，而且有副产物（？"
 				"但我相信你会有办法的（什么"
 				""
 				"这是第三个高炉！我们叫它炼钢高炉就好，因为它只能炼钢（（"
+				"&n具体建造方式请参照思索说明&r"
 			]
 			id: "309524B4033437AF"
 			subtitle: "钢水输出点"
@@ -109,13 +112,14 @@
 			}]
 			title: "高炉核心"
 			x: 2.5d
-			y: -1.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0CF2DD3DB7F76FB2"]
 			description: [
 				"防火的外墙（必需品"
 				"某种程度上来说，这大概是你的血汗工程（对吧"
+				"&n具体建造方式请参照思索说明&r"
 			]
 			id: "5863CFB1CDBEBEC9"
 			subtitle: "外墙"
@@ -133,7 +137,7 @@
 			]
 			title: "高炉保护层"
 			x: 2.5d
-			y: -3.5d
+			y: -4.5d
 		}
 		{
 			dependencies: ["242C57AF7F6116E4"]
@@ -151,7 +155,7 @@
 			}]
 			title: "血与火"
 			x: 1.5d
-			y: -2.5d
+			y: -3.5d
 		}
 		{
 			dependencies: [
@@ -167,8 +171,19 @@
 			icon: "tfmg:steel_ingot"
 			id: "7A7C0A48248FA32B"
 			rewards: [{
-				id: "0D95D18A4081C30C"
-				item: "tfmg:steel_pipe"
+				id: "10F5829FF85C1C4B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "immersiveengineering:armor_steel_boots"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			shape: "gear"
@@ -250,6 +265,16 @@
 				{
 					id: "7A4DCA3255B08F1C"
 					item: "immersiveengineering:workbench"
+					type: "item"
+				}
+				{
+					id: "3CFBFA097D9EC3C2"
+					item: "immersiveengineering:component_iron"
+					type: "item"
+				}
+				{
+					id: "289E8506756C06E6"
+					item: "immersiveengineering:component_steel"
 					type: "item"
 				}
 			]
@@ -461,7 +486,10 @@
 		}
 		{
 			dependencies: ["2E4B9CF9789B1AF1"]
-			description: ["炮台基本单元1/1"]
+			description: [
+				"炮台基本单元1/1"
+				"下一章会很有用"
+			]
 			id: "04AAF6565C04DA94"
 			rewards: [{
 				id: "7F151019D05288DC"
@@ -476,6 +504,41 @@
 			}]
 			x: 10.0d
 			y: 0.5d
+		}
+		{
+			dependencies: [
+				"73CD9D2DD215B5F5"
+				"5B1818D5A1142A16"
+			]
+			description: ["多造一些这个，用它们组合成阵列，你就可以合成很多有趣的，工作台无法制作的东西了……"]
+			id: "34F7983B4915B789"
+			subtitle: "Anything（指可以合成任何东西）"
+			tasks: [{
+				count: 24L
+				id: "3B1CB63D662B2B0E"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["34F7983B4915B789"]
+			description: [
+				"你最好的垃圾处理器……"
+				"小心自己别掉进去了"
+			]
+			id: "146261DF72C96BF4"
+			shape: "diamond"
+			subtitle: "真是一对大家伙"
+			tasks: [{
+				count: 2L
+				id: "61849FE3A163CC0C"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
 		}
 	]
 	subtitle: ["Hearts of Iron"]

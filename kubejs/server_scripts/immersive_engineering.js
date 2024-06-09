@@ -32,6 +32,17 @@ ServerEvents.recipes(event => {
     event.remove({id:'immersiveengineering:crafting/waterwheel_segment'})
     event.remove({id:'immersiveengineering:crafting/dynamo'})
 
+    //锯条
+    event.remove({id:"immersiveengineering:crafting/sawblade"})
+    event.shaped('immersiveengineering:sawblade', [ 
+        'CAC', 
+        'A A',
+        'CAC'  
+    ], {
+        A: '#forge:ingots/iron',
+        C: '#forge:plates/iron'
+    })
+
     //焦炉砖
     event.remove({id:"immersiveengineering:crafting/cokebrick"})
     event.shaped('immersiveengineering:cokebrick', [ 
@@ -291,7 +302,7 @@ ServerEvents.recipes(event => {
               "item": "tfmg:industrial_pipe"
             }
           ],
-          "loops": 2
+          "loops": 3
     })
 
     //遗忆构件
@@ -408,7 +419,7 @@ ServerEvents.recipes(event => {
             "item": "immersiveengineering:component_electronic"
           }
         ],
-        "loops": 2
+        "loops": 3
   })
 
     //工程块
@@ -460,17 +471,17 @@ ServerEvents.recipes(event => {
         'CAD'  
     ], {
         B: 'tfmg:steel_casing',
-        A: '#forge:plates/constantan',
+        A: '#forge:plates/falsite',
         D: '#forge:dusts/redstone',
         C: 'immersiveengineering:electron_tube'
     })
     event.recipes.create.sequenced_assembly([
         'immersiveengineering:rs_engineering'
         ], 'tfmg:steel_casing', [
-        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/constantan']),
+        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/falsite']),
         event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', '#forge:dusts/redstone']),
         event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', 'immersiveengineering:electron_tube']),
-        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/constantan'])
+        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/falsite'])
     ]).transitionalItem('kubejs:incomplete_rs_engineering').loops(1)
 
     //塑料

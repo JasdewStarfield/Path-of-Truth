@@ -13,18 +13,18 @@ ServerEvents.recipes(event => {
     let inter = 'create:incomplete_precision_mechanism'
     event.recipes.create.sequenced_assembly([
         Item.of('create:precision_mechanism').withChance(80.0),
-        Item.of('kubejs:precise_engineering').withChance(10.0),
+        Item.of('#forge:plates/brass').withChance(10.0),
         Item.of('create:cogwheel').withChance(3.0),
         Item.of('create:large_cogwheel').withChance(3.0),
         Item.of('create:electron_tube').withChance(3.0),
         Item.of('supplementaries:ash').withChance(1.0)
-    ], 'kubejs:precise_engineering', [
+    ], '#forge:plates/brass', [
         event.recipes.createDeploying(inter, [inter, 'create:cogwheel']),
         event.recipes.createDeploying(inter, [inter, 'create:large_cogwheel']),
         event.recipes.createDeploying(inter, [inter, '#blue_skies:gems/moonstone_shard']),
         event.recipes.createDeploying(inter, [inter, 'create:electron_tube']),
         event.recipes.createPressing(inter, inter)
-    ]).transitionalItem(inter).loops(5)
+    ]).transitionalItem(inter).loops(3)
 
     //电池
     event.replaceInput(

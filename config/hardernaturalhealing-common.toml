@@ -17,7 +17,7 @@
 	healthAfterDeath = 20
 	#hungerAfterDeath
 	#Range: 0 ~ 20
-	hungerAfterDeath = 20
+	hungerAfterDeath = 10
 	#minimumFoodHealingLevel
 	#Range: 0.0 ~ 22.0
 	minimumFoodHealingLevel = 16.0
