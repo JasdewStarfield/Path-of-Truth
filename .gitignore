@@ -85,3 +85,13 @@ knownkeys.txt
 schematics/uploaded/MysteriousEnder/spawnhouse.nbt
 mods/battlemusic-1.20.1-1.0.1.jar
 /simplebackups
+libraries/com/electronwill/night-config/core/3.6.4/core-3.6.4.jar
+/libraries/com
+/libraries/commons-codec
+/libraries/commons-io
+/libraries/commons-logging
+/libraries/cpw
+/libraries/io
+/libraries/it
+/libraries/net
+/libraries/org
