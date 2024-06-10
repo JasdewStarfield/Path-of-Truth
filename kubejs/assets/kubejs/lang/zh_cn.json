@@ -58,5 +58,19 @@
   "block.kubejs.bronze_block": "青铜块",
   "block.kubejs.obelisk_base": "重生石碑基座",
   "item.kubejs.obelisk_base.desc1": "你感到一股强大的力量从其中散发出来……",
-  "item.kubejs.obelisk_base.desc2": "如果你把它放在石碑下面，那么石碑就可以被无限充能（但是你不可以再次移动基座方块）"
+  "item.kubejs.obelisk_base.desc2": "如果你把它放在石碑下面，那么石碑就可以被无限充能（但是你不可以再次移动基座方块）",
+
+  "item.immersiveengineering.hammer.tooltip": "工程师锤",
+  "item.immersiveengineering.hammer.tooltip.summary": "工程师的好帮手！用来组装_多方块结构_或者旋转一些方块，还能调整一些机器的输入和输出。",
+  "item.immersiveengineering.hammer.tooltip.condition1": "对尚未组装的多方块结构的核心方块使用时",
+  "item.immersiveengineering.hammer.tooltip.behaviour1": "使这些方块组装为_多方块结构_。",
+  "item.immersiveengineering.hammer.tooltip.condition2": "对部分沉浸工程机器使用时",
+  "item.immersiveengineering.hammer.tooltip.behaviour2": "调整正对的面的_输入_/_输出_。_潜行_时使用改为对相反一面进行调整。",
+  "item.immersiveengineering.hammer.tooltip.condition3": "对电线杆顶部使用时",
+  "item.immersiveengineering.hammer.tooltip.behaviour3": "创建一个电线杆分叉。",
+  "item.immersiveengineering.hammer.tooltip.condition4": "对气球使用时",
+  "item.immersiveengineering.hammer.tooltip.behaviour4": "改变气球的纹理。",
+  "item.immersiveengineering.hammer.tooltip.condition5": "对一般方块使用时",
+  "item.immersiveengineering.hammer.tooltip.behaviour5": "旋转该方块的朝向。"
+  
 }
