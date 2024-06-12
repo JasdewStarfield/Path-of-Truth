@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
         [
             'botania:black_lotus',
             'irons_spellbooks:ender_upgrade_orb',
-            'tfmg:crude_oil_fluid_bucket'
+            'tfmg:asphalt'
         ]
     )
     //合成注能丝触书籍
