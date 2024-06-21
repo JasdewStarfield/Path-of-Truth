@@ -1,13 +1,13 @@
 StartupEvents.registry('item', (event) => {
 	//序列组装半成品
-	event.create("incomplete_andesite_engineering", 'create:sequenced_assembly').displayName('Incomplete Mechanical Engineering Block')
-	event.create("incomplete_fluid_engineering", 'create:sequenced_assembly').displayName('Incomplete Fluid Engineering Block')
-	event.create("incomplete_precise_engineering", 'create:sequenced_assembly').displayName('Incomplete Precise Engineering Block')
-	event.create("incomplete_light_engineering", 'create:sequenced_assembly').displayName('Incomplete Light Engineering Block')
-	event.create("incomplete_heavy_engineering", 'create:sequenced_assembly').displayName('Incomplete Heavy Engineering Block')
-	event.create("incomplete_rs_engineering", 'create:sequenced_assembly').displayName('Incomplete Redstone Engineering Block')
+	event.create("incomplete_andesite_engineering", 'create:sequenced_assembly').parentModel("kubejs:item/incomplete_andesite_engineering").displayName('Incomplete Mechanical Engineering Block')
+	event.create("incomplete_fluid_engineering", 'create:sequenced_assembly').parentModel("kubejs:item/incomplete_fluid_engineering").displayName('Incomplete Fluid Engineering Block')
+	event.create("incomplete_precise_engineering", 'create:sequenced_assembly').parentModel("kubejs:item/incomplete_precise_engineering").displayName('Incomplete Precise Engineering Block')
+	event.create("incomplete_light_engineering", 'create:sequenced_assembly').parentModel("kubejs:item/incomplete_light_engineering").displayName('Incomplete Light Engineering Block')
+	event.create("incomplete_heavy_engineering", 'create:sequenced_assembly').parentModel("kubejs:item/incomplete_heavy_engineering").displayName('Incomplete Heavy Engineering Block')
+	event.create("incomplete_rs_engineering", 'create:sequenced_assembly').parentModel("kubejs:item/incomplete_rs_engineering").displayName('Incomplete Redstone Engineering Block')
 	event.create("incomplete_component_electronic_adv", 'create:sequenced_assembly').displayName('Incomplete Advanced Electronic Component')
-	event.create("incomplete_electronic_engineering", 'create:sequenced_assembly').displayName('Incomplete Electronic Engineering Block')
+	event.create("incomplete_electronic_engineering", 'create:sequenced_assembly').parentModel("kubejs:item/incomplete_electronic_engineering").displayName('Incomplete Electronic Engineering Block')
 })
 
 StartupEvents.registry('block', (event) => {
@@ -24,7 +24,7 @@ StartupEvents.registry('block', (event) => {
 		.opaque(true)
 		.fullBlock(true)
 		.renderType('solid')
-		.textureAll('kubejs:block/andesite_engineering')
+		.model('kubejs:block/andesite_engineering')
 	//流体工程块
 	event.create('fluid_engineering')
 		.displayName('Fluid Engineering Block')
@@ -38,7 +38,7 @@ StartupEvents.registry('block', (event) => {
 		.opaque(true)
 		.fullBlock(true)
 		.renderType('solid')
-		.textureAll('kubejs:block/fluid_engineering')
+		.model('kubejs:block/fluid_engineering')
 	//精密工程块
 	event.create('precise_engineering')
 		.displayName('Precise Engineering Block')
@@ -52,7 +52,7 @@ StartupEvents.registry('block', (event) => {
 		.opaque(true)
 		.fullBlock(true)
 		.renderType('solid')
-		.textureAll('kubejs:block/precise_engineering')
+		.model('kubejs:block/precise_engineering')
 	//电子工程块
 	event.create('electronic_engineering')
 	.displayName('Electronic Engineering Block')
@@ -66,5 +66,5 @@ StartupEvents.registry('block', (event) => {
 	.opaque(true)
 	.fullBlock(true)
 	.renderType('solid')
-	.textureAll('kubejs:block/electronic_engineering')
+	.model('kubejs:block/electronic_engineering')
 })
