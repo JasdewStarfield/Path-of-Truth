@@ -1,7 +1,7 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"2": "kubejs:block/cogwheel",
+		"2": "create:block/cogwheel",
 		"3": "kubejs:block/andesite_engineering",
 		"particle": "create:block/andesite_casing",
 		"os": "create:block/andesite_casing"
