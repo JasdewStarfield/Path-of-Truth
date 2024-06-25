@@ -282,7 +282,7 @@
 				"目前已支持“真理之路”自动部署，"
 				"您仅需下单，即可零基础体验欢快的联机之旅。"
 				"输入优惠券代码 24pot 可获得10%off的优惠哦~"
-				"官网链接：https://started.ink/"
+				"官网链接：&nhttps://started.ink/&r"
 			]
 			icon: "immersiveengineering:toolupgrade_revolver_electro"
 			id: "2884B23B36CF2640"
