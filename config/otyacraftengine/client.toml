@@ -1,3 +1,0 @@
-[urlTextureConfig]
-maxLoaderCount = 3
-urlRegex = "https://(i.imgur.com|imgur.com)/.*"
