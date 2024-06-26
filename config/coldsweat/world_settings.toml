@@ -3,7 +3,7 @@
 #Common dimension IDs: minecraft:overworld, minecraft:the_nether, minecraft:the_end
 [Dimensions]
 	#Applies an offset to the world's temperature across an entire dimension
-	"Dimension Temperature Offsets" = [["minecraft:the_nether", 0.7, "MC"], ["minecraft:the_end", -0.1, "MC"]]
+	"Dimension Temperature Offsets" = [["minecraft:the_end", -0.1, "MC"], ["minecraft:the_nether", 0.7, "MC"]]
 	#Overrides existing dimension temperatures & offsets
 	#Also overrides temperatures of all biomes in the dimension
 	"Dimension Temperatures" = []
@@ -43,25 +43,9 @@
 	#0.0 = no insulation, 1.0 = full insulation
 	#Range: 0.0 ~ 1.0
 	"Cave Insulation Strength" = 1.0
-	#Overrides the world temperature when the player is within this structure
-	#Format: [["structure_1", temperature1, *units], ["structure_2", temperature2, *units]... etc]
-	#(* = optional)
-	"Structure Temperatures" = [["minecraft:igloo", 65.0, "F"]]
-	#Offsets the world temperature when the player is within this structure
-	#Format: [["structure_1", offset1, *units], ["structure_2", offset2, *units]... etc]
-	#(* = optional)
-	"Structure Temperature Offsets" = []
-	#List of blocks that will allow the player to sleep on them, regardless of the "Prevent Sleep When in Danger" setting
-	#Use this list if the player is not getting the temperature effect from sleeping on particular blocks
-	"Sleep Check Override Blocks" = ["#comforts:sleeping_bags"]
-	#When set to true, players cannot sleep if they are cold or hot enough to die
-	"Check Sleeping Conditions" = true
-	#Converts damage dealt by Soul Fire to cold damage (default: true)
-	#Does not affect the block's temperature
-	"Cold Soul Fire" = true
 
 [Hearth]
-	#How effective the hearth is at normalizing temperature
+	#How strong the hearth is
 	#Range: 0.0 ~ 1.0
 	"Hearth Strength" = 0.75
 	#List of additional blocks that the hearth can spread through
