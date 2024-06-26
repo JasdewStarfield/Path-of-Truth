@@ -5,7 +5,6 @@
 	filename: "1D53DE04FE0F0355"
 	group: ""
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "minecraft:skeleton_skull"
 	id: "1D53DE04FE0F0355"
 	images: [{
@@ -24,9 +23,11 @@
 			dependencies: [
 				"170E4E15DBE89604"
 				"7B54E20910D7008D"
+				"2884B23B36CF2640"
 			]
 			dependency_requirement: "one_completed"
 			description: [
+				"&a【完成后解锁本整合包起始章节】&r"
 				"欢迎来到“真理之路”整合包。"
 				"本整合包由&b狂野工程师JasdewStarfield&r与&a抽象魔法师MidnightPigeon&r联合创作。"
 				"在这个世界，你将进行持续的探索发现，直至终末。"
@@ -338,7 +339,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			size: 1.2d
+			size: 1.0d
 			subtitle: "如果想开服务器玩这个包可以尝试一下！"
 			tasks: [{
 				id: "4D9529C274E7A8F4"

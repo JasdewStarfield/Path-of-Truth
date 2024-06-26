@@ -5,7 +5,6 @@
 	filename: "75FCB41C7CD72B90"
 	group: "58EDF058942F253F"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: {
 		Count: 1
 		id: "alexsmobs:shattered_dimensional_carver"
@@ -23,6 +22,7 @@
 				"把虫子丢进末地的虚空，开启新世界的大门）"
 				"如果你计划召唤虚空蠕虫，你最好打完后做个雕像，因为可以用魔法进行兑换）"
 			]
+			hide: true
 			id: "48F6D7FEBE279F32"
 			subtitle: "大虫子"
 			tasks: [{
@@ -179,5 +179,5 @@
 		}
 	]
 	subtitle: ["Conquerer of Dimensions"]
-	title: "维度征服者"
+	title: "5A 维度征服者"
 }

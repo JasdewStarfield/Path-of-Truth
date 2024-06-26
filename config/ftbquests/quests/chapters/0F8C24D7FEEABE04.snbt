@@ -14,17 +14,25 @@
 			description: [
 				"相信你已经发现了，由于这个世界只有雪原，有一些生物你是找不到的——因为它们有生成群系要求。"
 				"虽然你找不到它们的栖息地，但你还是可以通过炼金手段，产出这个世界上本不应出现的生命。"
-				"但首先，你需要鸡蛋。"
+				"但首先，你需要蛋。随便什么生物的蛋都行。"
 				""
 				"在这个世界，鸡的交配会产出鸡蛋而不是小鸡，你也可以直接通过炼金术制作鸡蛋……"
 			]
+			hide: true
 			id: "391DC5DA08CB67C6"
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "生命的奥秘从这里启动"
 			tasks: [{
 				id: "398712B8F9B8DA0A"
-				item: "minecraft:egg"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:eggs"
+					}
+				}
+				title: "Any #forge:eggs"
 				type: "item"
 			}]
 			title: "一切从蛋开始……"
@@ -368,5 +376,5 @@
 		}
 	]
 	subtitle: ["Biodiversity"]
-	title: "生物多样性"
+	title: "【附加】生物多样性"
 }

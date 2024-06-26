@@ -5,7 +5,6 @@
 	filename: "58C198C40A81EF6B"
 	group: "461ABC15BE939FA8"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "irons_spellbooks:lightning_bottle"
 	id: "58C198C40A81EF6B"
 	order_index: 1
@@ -18,6 +17,8 @@
 				"请注意收集它们，这是奥术的基石。"
 				"至于奖励，你可以理解为新手福利，但你能抽到什么就要看脸了）"
 			]
+			hide: true
+			hide_details_until_startable: true
 			icon: "minecraft:chest"
 			id: "374C430D0AD70D2E"
 			rewards: [{
@@ -426,5 +427,5 @@
 		}
 	]
 	subtitle: ["Primal Shaman"]
-	title: "原始萨满"
+	title: "1M 原始萨满"
 }

@@ -5,7 +5,6 @@
 	filename: "618B001D3C0B96CC"
 	group: "5B3B99F7ECC70789"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "botania:mana_bottle"
 	id: "618B001D3C0B96CC"
 	order_index: 1
@@ -17,6 +16,8 @@
 				"终于，你获得了一些植物魔法的高级材料，这也意味着你可以合成一些更带劲的东西了。"
 				"现在，泰拉钢的合成需要更少的魔力——但相应的需要更复杂的材料。"
 			]
+			hide: true
+			hide_details_until_startable: true
 			id: "0F9DF1C5137194E4"
 			rewards: [{
 				id: "4855EAF76355F55E"
@@ -894,5 +895,5 @@
 		}
 	]
 	subtitle: ["Mana Within"]
-	title: "魔力流淌"
+	title: "3M 魔力流淌"
 }

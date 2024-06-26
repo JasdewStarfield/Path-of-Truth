@@ -5,7 +5,6 @@
 	filename: "21E029A01EA15F54"
 	group: "12EA2EE194EF67D3"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "bloodmagic:weakbloodorb"
 	id: "21E029A01EA15F54"
 	order_index: 1
@@ -18,6 +17,7 @@
 				"如果不在，那么你最好自己查一下JEI）"
 				"为什么让你查jei呢，因为配方我们改动的可不少）"
 			]
+			hide: true
 			icon: {
 				Count: 1
 				id: "patchouli:guide_book"
@@ -913,5 +913,5 @@
 		}
 	]
 	subtitle: ["Blood and Soul"]
-	title: "鲜血与灵魂"
+	title: "2M 鲜血与灵魂"
 }

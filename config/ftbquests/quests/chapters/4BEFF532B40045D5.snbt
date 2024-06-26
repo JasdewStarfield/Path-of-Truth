@@ -4,17 +4,13 @@
 	default_quest_shape: ""
 	filename: "4BEFF532B40045D5"
 	group: ""
-	hide_quest_details_until_startable: true
 	icon: "undergarden:frozen_deepturf_block"
 	id: "4BEFF532B40045D5"
 	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"6A1B42D208C780BD"
-				"2BC7BDD7E5EC76E5"
-			]
+			dependencies: ["2BC7BDD7E5EC76E5"]
 			description: [
 				"相信你已经发现了，这个世界到处都是冰天雪地——这是设定的一部分。"
 				"在没有温度计的情况下，你的体感会通过物品栏右侧的菱形标志展示，过冷会出现&b寒霜&r，而过热会出现&c火焰&r。具体来说，这分为环境温度和体温两个系统。环境温度高于2度以及低于38度都是安全的，超出这个范围，你的体温就会变化，这时就要注意了！"
@@ -101,10 +97,12 @@
 			description: [
 				"这个章节会专门用来介绍这个世界的不同之处，以便各位能够更好地生存，以及生活。"
 				"这些知识的跨度可能会很大，有些直到游戏的后期也很有用，这也是我们为什么要把这部分单独列出来。所以遇到不懂的可以先跳过，以后再看就好啦。"
-				"……但是总之，记得看。"
+				"……但是总之，记得看。&e因此，本章节的内容是&o&l完全解锁&r&r&e的，不需要完成前置内容也可以查看！&r"
 				""
 				"*默认设置会导致键位冲突，这种时候我们的建议是直接点击重置按键，我们有预设好的无冲突键位，您也可以自行调整。"
 			]
+			hide: true
+			hide_details_until_startable: false
 			icon: "supplementaries:globe"
 			id: "2BC7BDD7E5EC76E5"
 			rewards: [{
@@ -923,12 +921,22 @@
 		}
 		{
 			dependencies: ["0ED1B830AB45D425"]
-			description: ["在这个包里，很多生命相关的魔法都需要从小小的鸡蛋开始……"]
+			description: [
+				"&a【完成后解锁额外章节：生物多样性】&r"
+				"在这个包里，很多生命相关的魔法都需要从小小的鸡蛋开始……"
+			]
 			id: "6AA0E68AB33475C9"
 			subtitle: "先有鸡还是先有蛋？"
 			tasks: [{
 				id: "395381A7F0BAA299"
-				item: "minecraft:egg"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:eggs"
+					}
+				}
+				title: "Any #forge:eggs"
 				type: "item"
 			}]
 			title: "生命基本单元"
@@ -981,5 +989,5 @@
 		}
 	]
 	subtitle: ["The Representation of This World"]
-	title: "世界的表象"
+	title: "【知识】世界的表象"
 }

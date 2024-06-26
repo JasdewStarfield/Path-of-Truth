@@ -124,8 +124,9 @@
 		{
 			dependencies: ["40DDCA5F57C2C680"]
 			description: [
-				"恭喜你完成了这一整合包的所有挑战——"
+				"&a恭喜你完成了这一整合包的所有挑战——&r"
 				"享受神的力量吧，现在，你就是世界的真理。"
+				"~~完结撒花~~"
 			]
 			id: "6D9B7D2CD86693AF"
 			rewards: [{
@@ -141,7 +142,7 @@
 				item: "create:handheld_worldshaper"
 				type: "item"
 			}]
-			title: "神的力量"
+			title: "【终点】神的力量"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -150,6 +151,7 @@
 				"1E235F6753976501"
 				"789E29CC3E41839C"
 			]
+			hide: true
 			id: "59C668DE4E479AD9"
 			subtitle: "走出最后一段路。"
 			tasks: [{
@@ -157,15 +159,12 @@
 				item: "createchromaticreturn:multiplite_ingot"
 				type: "item"
 			}]
-			title: "真理之锭"
+			title: "【起点】真理之锭"
 			x: -2.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
-			dependencies: [
-				"1E235F6753976501"
-				"789E29CC3E41839C"
-			]
+			dependencies: ["59C668DE4E479AD9"]
 			id: "29548CCE01753D49"
 			subtitle: "炼金是这样的。"
 			tasks: [{
@@ -175,9 +174,9 @@
 			}]
 			title: "翻转真相"
 			x: 2.0d
-			y: 2.0d
+			y: 4.0d
 		}
 	]
 	subtitle: ["The Truth Lies Here"]
-	title: "真相于此展开"
+	title: "∞∞ 真相于此展开"
 }

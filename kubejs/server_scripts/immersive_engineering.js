@@ -516,7 +516,7 @@ ServerEvents.recipes(event => {
             "tag":"forge:ethylene"
         },
         "result":{
-            "amount":8,
+            "amount": 16,
             "fluid":"tfmg:liquid_plastic"
         }
     })

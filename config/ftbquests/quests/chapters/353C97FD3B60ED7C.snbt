@@ -5,7 +5,6 @@
 	filename: "353C97FD3B60ED7C"
 	group: "453FC1B4D45CC35B"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "minecraft:repeating_command_block"
 	id: "353C97FD3B60ED7C"
 	order_index: 1
@@ -17,6 +16,7 @@
 				"越到末尾的章节，节点就越少）"
 				"因为你不需要我再给你讲故事了，你需要的就是走下去，因为马上你就能看到了。"
 			]
+			hide: true
 			icon: "bloodmagic:dungeon_emitter"
 			id: "6D3D887E93176D55"
 			shape: "pentagon"
@@ -225,5 +225,5 @@
 		}
 	]
 	subtitle: ["The Spells of Finale"]
-	title: "终末魔法"
+	title: "6M 终末魔法"
 }

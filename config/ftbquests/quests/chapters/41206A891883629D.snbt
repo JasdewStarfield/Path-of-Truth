@@ -12,6 +12,8 @@
 	quests: [
 		{
 			dependencies: ["6A1B42D208C780BD"]
+			description: ["&l&4这个章节不是正式任务线！只起到任务线的预告作用！具体请看下方的章节组中的内容！&r&r"]
+			hide: true
 			id: "5F826044A3A07900"
 			subtitle: "纤维素、半纤维素、木质素"
 			tasks: [{
@@ -468,5 +470,5 @@
 		}
 	]
 	subtitle: ["Industrial Landmarks"]
-	title: "工业里程碑"
+	title: "【总览】工业里程碑"
 }

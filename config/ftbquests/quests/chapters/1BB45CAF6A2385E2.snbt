@@ -5,7 +5,6 @@
 	filename: "1BB45CAF6A2385E2"
 	group: "453FC1B4D45CC35B"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "minecraft:chain_command_block"
 	id: "1BB45CAF6A2385E2"
 	order_index: 0
@@ -13,6 +12,7 @@
 	quests: [
 		{
 			dependencies: ["2D906487EC6F1A01"]
+			hide: true
 			icon: "bloodmagic:dungeon_alternator"
 			id: "0D0BEC03C1B26CA3"
 			rewards: [{
@@ -29,7 +29,7 @@
 				title: "工业的最高成就……"
 				type: "item"
 			}]
-			title: "机械神教，机械飞升"
+			title: "【起点】机械神教，机械飞升"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -39,6 +39,7 @@
 				"730D5088B9FDC593"
 				"1E235F6753976501"
 			]
+			hide: true
 			id: "34400C31E3703498"
 			rewards: [{
 				id: "51EB03A1679E8909"
@@ -80,6 +81,7 @@
 		}
 		{
 			dependencies: ["6ED2B7EF9909EB05"]
+			hide: true
 			id: "6936D38B28D26AF0"
 			rewards: [{
 				id: "5EF5BEF9AC3CE16C"
@@ -117,6 +119,7 @@
 		{
 			dependencies: ["6ED2B7EF9909EB05"]
 			description: ["也是超级装备的基础材料"]
+			hide: true
 			id: "6D54B104118A0FA7"
 			subtitle: "工业之暗"
 			tasks: [{
@@ -188,7 +191,10 @@
 				"0D2EEDEACB542342"
 				"3CA3B66481E3AFF9"
 			]
-			description: ["当你的魔法与工业都走到极致，你将获得这一创造的入门通行证。"]
+			description: [
+				"&a【完成后解锁主线章节：** ******】&r"
+				"当你的魔法与工业都走到极致，你将获得这一创造的入门通行证。"
+			]
 			id: "1E235F6753976501"
 			rewards: [{
 				id: "371B5C25E45DD511"
@@ -203,11 +209,11 @@
 				item: "createchromaticreturn:multiplite_ingot"
 				type: "item"
 			}]
-			title: "多模态"
+			title: "【终点】多模态"
 			x: 0.0d
 			y: 4.0d
 		}
 	]
 	subtitle: ["The Mastery of Industry"]
-	title: "统御机械"
+	title: "6I 统御机械"
 }

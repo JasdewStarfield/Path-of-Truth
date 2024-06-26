@@ -5,7 +5,6 @@
 	filename: "0E2F8F4C2B4CBD8C"
 	group: "453FC1B4D45CC35B"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "botania:fork_light_relay"
 	id: "0E2F8F4C2B4CBD8C"
 	order_index: 2
@@ -17,6 +16,7 @@
 				"280307C036B9B6E7"
 			]
 			description: ["得到每一种蔚蓝浩空特有的BOSS掉落物！"]
+			hide: false
 			icon: "blue_skies:blue_journal"
 			id: "0EBCC9ACD99E6B83"
 			rewards: [{
@@ -183,6 +183,7 @@
 				"获得所有植物魔法的遗物！"
 				"*请不要丢掉其中任何一种，否则你会发现自己无法通关——这些物品也是后续配方材料！"
 			]
+			hide: true
 			icon: "botania:dice"
 			id: "2C1B7E18AC2064D4"
 			rewards: [
@@ -248,6 +249,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["获得所有种类的巫术卷轴！"]
+			hide: true
 			icon: "irons_spellbooks:eldritch_manuscript"
 			id: "4A795BB15E5110EC"
 			rewards: [{
@@ -413,6 +415,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["获得原版，维度模组以及alex的生物中（几乎）所有可以被处理为鱼的东西）"]
+			hide: true
 			icon: "tide:twilight_angler_bucket"
 			id: "725308B81E925449"
 			rewards: [
@@ -516,6 +519,7 @@
 				"获得所有潮汐（Tide）模组中的鱼！"
 				"（由于主世界的特殊性，不要求全部群系鱼收集）"
 			]
+			hide: true
 			icon: "tide:crystal_shrimp"
 			id: "76F63C16AEEFA85D"
 			rewards: [
@@ -905,6 +909,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["探索古代遗迹并找出所有种类的神奇图腾！"]
+			hide: true
 			id: "70726F375FFF5CF3"
 			rewards: [{
 				id: "0CA3357EC6D9F217"
@@ -957,6 +962,7 @@
 				"看起来有点哈人……"
 				"不同的化石有不同的作用，但这就要你自己探索了。"
 			]
+			hide: true
 			id: "21246254369E4A91"
 			rewards: [
 				{
@@ -1016,6 +1022,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["出于为您的肝考虑，我们只要求收集任意15种陶片……"]
+			hide: true
 			id: "268A62891A5A104A"
 			min_required_tasks: 15
 			rewards: [{
@@ -1147,6 +1154,7 @@
 				"做出农夫乐事系列中的各类大菜！"
 				"&o&m&5“吃穿虚空”&r&r&r"
 			]
+			hide: true
 			id: "34D11CBE75FBEDF5"
 			rewards: [{
 				id: "5F88A80A1B13DB38"
@@ -1201,6 +1209,7 @@
 				"在探索真理的路上，你会发现通过三种手段分别可以合成一张神秘的唱片……"
 				"集齐三张唱片，你就可以获得这世界上的最强声音）"
 			]
+			hide: true
 			id: "48783396F615D90E"
 			rewards: [{
 				id: "11F0B8AE3D972418"
@@ -1343,6 +1352,7 @@
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
+			hide: true
 			id: "5D6D256D4DE35A5A"
 			subtitle: "三种……呃，垃圾桶"
 			tasks: [
@@ -1402,5 +1412,5 @@
 		}
 	]
 	subtitle: ["The Way to Legend"]
-	title: "传说之路"
+	title: "6A 传说之路"
 }

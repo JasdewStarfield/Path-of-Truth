@@ -5,7 +5,6 @@
 	filename: "31996D3CC5C02EFC"
 	group: "58EDF058942F253F"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "botania:corporea_spark_creative"
 	id: "31996D3CC5C02EFC"
 	order_index: 1
@@ -22,6 +21,7 @@
 				"生命的光芒闪耀于鲜血和火花当中。"
 				"&o&5*注：你可以通过相同的手段活化你的潜影盒！&r&r"
 			]
+			hide: true
 			icon: "artifacts:mimic_spawn_egg"
 			id: "12134A3EF6C80C54"
 			shape: "rsquare"
@@ -407,5 +407,5 @@
 		}
 	]
 	subtitle: ["It's Alive!"]
-	title: "生命炼成"
+	title: "5M 生命炼成"
 }

@@ -5,18 +5,21 @@
 	filename: "54FEB8EFCDFE57CF"
 	group: "5B3B99F7ECC70789"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "minecraft:end_crystal"
 	id: "54FEB8EFCDFE57CF"
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["6E0D85E43EDF1994"]
+			dependencies: [
+				"0F9DF1C5137194E4"
+				"76BE4625CCF2F867"
+			]
 			description: [
 				"开启方式和地狱门很像，石砖搭一个框架，然后催化石点一下，你就可以进去了）"
 				"进门之后注意安全，深园从来不缺少敌对生物。"
 			]
+			hide: true
 			icon: "undergarden:catalyst"
 			id: "0E5C63B3D4891362"
 			subtitle: "Deep♂Dark♂Fantasy"
@@ -30,12 +33,16 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["76BE4625CCF2F867"]
+			dependencies: [
+				"76BE4625CCF2F867"
+				"0F9DF1C5137194E4"
+			]
 			description: [
 				"你会发现末影之眼的合成难度增加了，但还是能做的。"
 				"为什么增加难度呢，因为不想让你到末地死的太难看（确信"
 				"找到末地传送门后，记得放一些能让你传送过去的东西……比如星辰放射台）"
 			]
+			hide: true
 			id: "193F465F65BC13F1"
 			subtitle: "前往虚空！"
 			tasks: [{
@@ -201,5 +208,5 @@
 		}
 	]
 	subtitle: ["The Void and Beneath"]
-	title: "深暗与虚空"
+	title: "3A 深暗与虚空"
 }
