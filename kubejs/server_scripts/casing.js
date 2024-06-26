@@ -139,4 +139,24 @@ ServerEvents.recipes(event => {
       event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', '#forge:plates/obsidian']),
       event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', '#forge:treated_wood'])
     ]).transitionalItem('kubejs:incomplete_precise_engineering').loops(1)
+
+    //物流工程块（来源列车机壳）
+    event.shaped('kubejs:logistical_engineering', [ 
+      'DAC', 
+      'ABA',
+      'CAD'  
+      ], {
+      B: 'create:railway_casing',
+      A: 'dried_kelp_block',
+      C: '#forge:leather',
+      D: 'immersiveengineering:hemp_fabric'
+    })
+    event.recipes.create.sequenced_assembly([
+      'kubejs:logistical_engineering'
+    ], 'create:railway_casing', [
+      event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'dried_kelp_block']),
+      event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', '#forge:leather']),
+      event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'immersiveengineering:hemp_fabric']),
+      event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'dried_kelp_block'])
+    ]).transitionalItem('kubejs:incomplete_logistical_engineering').loops(1)
 })

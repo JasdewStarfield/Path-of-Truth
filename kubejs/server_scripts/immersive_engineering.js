@@ -32,6 +32,19 @@ ServerEvents.recipes(event => {
     event.remove({id:'immersiveengineering:crafting/waterwheel_segment'})
     event.remove({id:'immersiveengineering:crafting/dynamo'})
 
+    //传送带
+    event.remove({id:"immersiveengineering:crafting/conveyor_basic"})
+    event.shaped(Item.of('immersiveengineering:conveyor_basic', 6), [ 
+        'DDD',
+        'AAA',
+        'CBC'  
+    ], {
+        A: 'create:belt_connector',
+        B: 'create:electron_tube',
+        C: '#forge:ingots/steel',
+        C: '#forge:leather'
+    })
+
     //锯条
     event.remove({id:"immersiveengineering:crafting/sawblade"})
     event.shaped('immersiveengineering:sawblade', [ 
@@ -535,7 +548,6 @@ ServerEvents.recipes(event => {
       event.recipes.createItemApplication('tfmg:'+material+'_pipe', ['create:fluid_pipe', '#forge:ingots/'+material])
     }
     PipeMaterials.forEach((id) => pipe(id))
-    event.recipes.createItemApplication('immersiveengineering:fluid_pipe', ['tfmg:aluminum_pipe', '#forge:ingots/cloggrum'])
 
     //高级电子元件
     event.remove({id:"immersiveengineering:blueprint/component_electronic_adv"})

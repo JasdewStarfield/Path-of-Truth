@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
     {
     A: 'storagedrawers:upgrade_template',
     B: 'kubejs:andesite_engineering',
-    C: 'forge:plates/bronze'
+    C: '#forge:plates/bronze'
     }
   )
 
@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
     {
     A: 'storagedrawers:obsidian_storage_upgrade',
     B: 'kubejs:precise_engineering',
-    C: 'forge:plates/brass'
+    C: '#forge:plates/brass'
     }
   )
 
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
     {
     A: 'storagedrawers:iron_storage_upgrade',
     B: 'immersiveengineering:light_engineering',
-    C: 'forge:plates/steel'
+    C: '#forge:plates/steel'
     }
   )
 
@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
     {
     A: 'storagedrawers:gold_storage_upgrade',
     B: 'immersiveengineering:heavy_engineering',
-    C: 'forge:plates/aluminum'
+    C: '#forge:plates/aluminum'
     }
   )
 
@@ -90,7 +90,7 @@ ServerEvents.recipes(event => {
     {
     A: 'storagedrawers:diamond_storage_upgrade',
     B: 'kubejs:electronic_engineering',
-    C: 'forge:plates/netherite'
+    C: '#forge:plates/netherite'
     }
   )
 
