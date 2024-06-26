@@ -124,15 +124,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["0EBCC9ACD99E6B83"]
+			dependencies: ["6C542C19575974DB"]
 			description: ["获得你应该通过地狱获得的所有资源！"]
 			icon: {
 				Count: 1
-				ForgeCaps: {
-					"cold_sweat:item_insulation": {
-						Insulation: [ ]
-					}
-				}
 				id: "minecraft:netherite_boots"
 				tag: {
 					Damage: 0
@@ -765,7 +760,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["04200A4ECA4C6375"]
+			dependencies: ["0E5C63B3D4891362"]
 			description: ["从商人手中获得扼塞战斧，然后升级为最强大斧头！"]
 			id: "5DFEFE3A567A507F"
 			rewards: [
@@ -829,7 +824,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["5DFEFE3A567A507F"]
+			dependencies: ["193F465F65BC13F1"]
 			description: ["通过随便什么方式获得龙蛋——这是真理的一部分）"]
 			id: "583D1483CCA6EA3F"
 			rewards: [
@@ -856,7 +851,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["583D1483CCA6EA3F"]
+			dependencies: ["15E666BAE38566D8"]
 			description: [
 				"本模组提供了四种强大BOSS："
 				"暗夜巫妖，虚空之花，下界铁掌，黑曜石巨柱"
@@ -908,10 +903,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"6A1B42D208C780BD"
-				"21246254369E4A91"
-			]
+			dependencies: ["6A1B42D208C780BD"]
 			description: ["探索古代遗迹并找出所有种类的神奇图腾！"]
 			id: "70726F375FFF5CF3"
 			rewards: [{
@@ -1018,14 +1010,11 @@
 				}
 			]
 			title: "古生物学家"
-			x: -2.0d
-			y: 4.0d
+			x: -1.0d
+			y: 5.0d
 		}
 		{
-			dependencies: [
-				"6A1B42D208C780BD"
-				"70726F375FFF5CF3"
-			]
+			dependencies: ["6A1B42D208C780BD"]
 			description: ["出于为您的肝考虑，我们只要求收集任意15种陶片……"]
 			id: "268A62891A5A104A"
 			min_required_tasks: 15
@@ -1149,8 +1138,8 @@
 				}
 			]
 			title: "文物修复师"
-			x: 2.0d
-			y: 4.0d
+			x: 1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -1203,8 +1192,8 @@
 				}
 			]
 			title: "五星级大厨"
-			x: -2.0d
-			y: -4.0d
+			x: -4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -1349,8 +1338,8 @@
 				}
 			]
 			title: "地质专家"
-			x: 2.0d
-			y: -4.0d
+			x: 4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]

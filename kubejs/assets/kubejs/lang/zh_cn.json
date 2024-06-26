@@ -71,6 +71,15 @@
   "item.immersiveengineering.hammer.tooltip.condition4": "对气球使用时",
   "item.immersiveengineering.hammer.tooltip.behaviour4": "改变气球的纹理。",
   "item.immersiveengineering.hammer.tooltip.condition5": "对一般方块使用时",
-  "item.immersiveengineering.hammer.tooltip.behaviour5": "旋转该方块的朝向。"
+  "item.immersiveengineering.hammer.tooltip.behaviour5": "旋转该方块的朝向。",
   
+  "block.botania.apothecary_default.tooltip": "花药台",
+  "block.botania.apothecary_default.tooltip.summary": "植物魔法的入门仪式从_木桶_与_清水_开始。",
+  "block.botania.apothecary_default.tooltip.condition1": "在装入水后",
+  "block.botania.apothecary_default.tooltip.behaviour1": "可以投入原材料，最后放入_任意种子_完成合成（会消耗水）。",
+
+  "item.ftbquests.book.tooltip": "任务书",
+  "item.ftbquests.book.tooltip.summary": "通过翻开它来开始你的旅程！",
+  "item.ftbquests.book.tooltip.condition1": "右键后",
+  "item.ftbquests.book.tooltip.behaviour1": "打开_任务界面_，也可以按下E后点开_左上角的书本图标_来查看_任务_。"
 }

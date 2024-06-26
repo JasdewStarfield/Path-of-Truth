@@ -4,10 +4,13 @@ const TooltipModifier = Java.loadClass("com.simibubi.create.foundation.item.Tool
 const Palette = Java.loadClass("com.simibubi.create.foundation.item.TooltipHelper$Palette")
 
 const CreateTooltipsItems = [
-    "immersiveengineering:hammer"
+    "immersiveengineering:hammer",
+    "botania:apothecary_default",
+    "ftbquests:book"
 ]
 
 //下面是格式，写在assets/kubejs/lang/zh_cn.json（或者英文的就在en_us.json）
+//如果要写的是方块描述则将item换为block
 /*
 {
   "item.{namespace}.{item}.tooltip": "114514(随便写点什么，告诉create这个东西存在tooltip)",
