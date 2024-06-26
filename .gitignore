@@ -84,3 +84,7 @@ banned-players.json
 mods/worldedit-mod-7.2.15.jar.disabled
 knownkeys.txt
 /libraries
+/config/fancymenu/ui_themes
+/config/nucleus
+/config/otyacraftengine
+kubejs/config/probejs.json
