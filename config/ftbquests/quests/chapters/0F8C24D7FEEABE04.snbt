@@ -24,15 +24,8 @@
 			size: 1.5d
 			subtitle: "生命的奥秘从这里启动"
 			tasks: [{
-				id: "398712B8F9B8DA0A"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:eggs"
-					}
-				}
-				title: "Any #forge:eggs"
+				id: "4EBA391FCCFCA388"
+				item: "minecraft:egg"
 				type: "item"
 			}]
 			title: "一切从蛋开始……"

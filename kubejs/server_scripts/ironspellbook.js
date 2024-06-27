@@ -30,6 +30,13 @@ ServerEvents.recipes(event => {
             E:'create:andesite_alloy'
         }
     )
+    //删除堆叠升级
+    event.remove({id:'sophisticatedbackpacks:stack_upgrade_starter_tier'})
+    event.remove({id:'sophisticatedbackpacks:stack_upgrade_tier_1'})
+    event.remove({id:'sophisticatedbackpacks:stack_upgrade_tier_1_from_starter'})
+    event.remove({id:'sophisticatedbackpacks:stack_upgrade_tier_2'})
+    event.remove({id:'sophisticatedbackpacks:stack_upgrade_tier_3'})
+    event.remove({id:'sophisticatedbackpacks:stack_upgrade_tier_4'})
     
     //修改奥术布匹配方
     event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:magic_cloth'},

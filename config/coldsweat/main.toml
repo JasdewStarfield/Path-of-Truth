@@ -9,7 +9,7 @@
 	"Minimum Habitable Temperature" = 0.08
 	#Defines the maximum habitable temperature
 	#Range: -Infinity ~ Infinity
-	"Maximum Habitable Temperature" = 1.511111111111111
+	"Maximum Habitable Temperature" = 1.6
 	#Rate at which the player's body temperature changes (default: 1.0 (100%))
 	#Range: 0.0 ~ Infinity
 	"Rate Multiplier" = 0.5
@@ -58,4 +58,3 @@
 	"Grace Period Length" = 6000
 	#Enables the grace period
 	"Grace Period Enabled" = true
-
