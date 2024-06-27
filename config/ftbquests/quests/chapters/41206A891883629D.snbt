@@ -307,7 +307,7 @@
 			subtitle: "Al"
 			tasks: [{
 				id: "22CF52CB3283296D"
-				item: "immersiveengineering:ingot_aluminum"
+				item: "tfmg:aluminum_ingot"
 				type: "item"
 			}]
 			title: "铝试不爽"
