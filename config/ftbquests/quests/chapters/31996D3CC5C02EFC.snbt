@@ -11,10 +11,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"7CA6215959E08F1F"
-				"3502E7A3A9BB5220"
-			]
+			dependencies: ["7CA6215959E08F1F"]
 			description: [
 				"也许你曾经在地牢中发现过一些奇异饰品，但直到此刻，你才能够稳定的产出它们。"
 				"……因为你可以稳定的活化你的箱子了。"
