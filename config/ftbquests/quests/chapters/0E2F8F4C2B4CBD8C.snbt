@@ -134,6 +134,20 @@
 				}
 			}
 			id: "04200A4ECA4C6375"
+			rewards: [{
+				id: "5C36B048D5D0FDAF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "create:netherite_backtank"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "你来，你见，你征服"
 			tasks: [
 				{
@@ -875,6 +889,7 @@
 						Damage: 0
 					}
 				}
+				title: "哒哒哒哒哒哒"
 				type: "item"
 			}]
 			shape: "rsquare"
