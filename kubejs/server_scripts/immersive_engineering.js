@@ -88,7 +88,6 @@ ServerEvents.recipes(event => {
     )
 
     //高炉炼铁
-    event.remove({type:"tfmg:coking"})
     event.remove({id:/immersiveengineering:blastfurnace\/steel.*/})
     event.remove({id:/immersiveengineering:blastfurnace\/fuel.*/})
     event.custom({

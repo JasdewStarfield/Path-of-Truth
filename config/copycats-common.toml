@@ -1,8 +1,10 @@
+#.
+#Enables/Disables the conversion of placed copycats from the single material to the multi material(where applicable) block entity. Set this to false to enable conversion! (only happens on world load, so if changed while ingame you will need to load the world again)
+disableConversion = false
 
 #.
 #Enable/disable features. Values on server override clients
 [features]
-	#.
 	copycat_board = true
 	copycat_wooden_button = true
 	copycat_trapdoor = true
@@ -25,4 +27,29 @@
 	copycat_stone_button = true
 	copycat_layer = true
 	copycat_slab = true
+	#.
+	copycat_vertical_stairs = true
+	copycat_shaft = true
+	copycat_slope_layer = true
+	copycat_ghost_block = true
+	copycat_ladder = true
+	copycat_slope = true
+	copycat_vertical_slope = true
+
+#.
+#Enable/disable categories of features. Disabling a category hides all related features. Values on server override clients
+[feature_categories]
+	#.
+	#.
+	#All copycats with a sloped surface
+	slopes = true
+	#.
+	#All copycats that support multiple materials in a single block
+	multistates = true
+	#.
+	#All copycats that can be resized by putting in more of the same copycat
+	stackables = true
+	#.
+	#All copycats that can emit a redstone signal
+	redstone = true
 

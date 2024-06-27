@@ -41,9 +41,9 @@
             "shift_y": 0,
             "shift_z": "minecraft:shift_z"
           },
-          "argument2": 0.5
+          "argument2": 0.65
         },
-      "argument2": -1.2
+      "argument2": -0.9
     },
     "vegetation": "minecraft:overworld/noise_router/vegetation",
     "vein_gap": "minecraft:overworld/noise_router/vein_gap",

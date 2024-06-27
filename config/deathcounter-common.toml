@@ -1,5 +1,5 @@
 
-#General settings
+#These configs are general configs that don't fit any other category.
 [general]
 	#What kind of message should we send players when they die?
 	#Accepts: NONE, SHORT, LONG

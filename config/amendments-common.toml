@@ -102,3 +102,12 @@
 	#Improved lectern screen allowing to edit font of a book while on it
 	improved_screen = true
 
+[torch]
+	#Allows torches to set entities on fire
+	torch_fire = true
+	#Allows torches to set entities on fire when held in offhand given you are attacking with a sword
+	torch_fire_offhand = false
+	#Duration of the on fire effect applied by torches. In seconds
+	#Range: 1 ~ 60
+	torch_fire_duration = 2
+

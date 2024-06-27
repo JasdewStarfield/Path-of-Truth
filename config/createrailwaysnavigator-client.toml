@@ -1,7 +1,7 @@
 
 ["Create Railways Navigator Config"]
 	#The language that should be used for announcements of the navigator. Can be different from the game's language settings. (Default: Default)
-	#Allowed Values: DEFAULT, ENGLISH, GERMAN, DUTCH, POLISH, CHINESE_SIMPLIFIED, SAXON, BAVARIAN
+	#Allowed Values: DEFAULT, ENGLISH, GERMAN, DUTCH, POLISH, CHINESE_SIMPLIFIED, SAXON, BAVARIAN, SPANISH, RUSSIAN
 	language = "DEFAULT"
 	#The unit to be used to represent speed. (Default: KMH)
 	#Allowed Values: MS, KMH, MPH, FTS, KT, CMS
