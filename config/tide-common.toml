@@ -448,9 +448,9 @@ giveJournal = false
 		#name of the fish item (ex. "minecraft:salmon") and fill in the required info.
 		#NOTE: Do not change the headers, which is the line directly below this text
 		[journal.profiles.custom0]
-			fish = "custom0"
-			description = "This is an unused custom fish profile"
-			page = "The id of the page that the fish belongs to"
+			fish = "collectorsreap:platinum_bass"
+			description = ""
+			page = "freshwater"
 
 		[journal.profiles.custom1]
 			fish = "custom1"

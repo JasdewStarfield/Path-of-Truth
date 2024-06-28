@@ -26,38 +26,38 @@
 	[item_pipe.amount]
 		#The amount of items transferred
 		#Range: > 1
-		no_upgrade = 4
+		no_upgrade = 2
 		#The amount of items transferred
 		#Range: > 1
-		basic = 8
+		basic = 4
 		#The amount of items transferred
 		#Range: > 1
-		improved = 16
+		improved = 8
 		#The amount of items transferred
 		#Range: > 1
-		advanced = 32
+		advanced = 16
 		#The amount of items transferred
 		#Range: > 1
-		ultimate = 64
+		ultimate = 32
 
 [fluid_pipe]
 
 	[fluid_pipe.amount]
 		#The amount of mB transferred each tick
 		#Range: > 1
-		no_upgrade = 50
+		no_upgrade = 5
 		#The amount of mB transferred each tick
 		#Range: > 1
-		basic = 100
+		basic = 20
 		#The amount of mB transferred each tick
 		#Range: > 1
-		improved = 500
+		improved = 100
 		#The amount of mB transferred each tick
 		#Range: > 1
-		advanced = 2000
+		advanced = 400
 		#The amount of mB transferred each tick
 		#Range: > 1
-		ultimate = 10000
+		ultimate = 1000
 
 [energy_pipe]
 

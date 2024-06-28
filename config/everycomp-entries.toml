@@ -7,6 +7,10 @@
 		[types.cake.blue_skies]
 			comet_berry_pie = true
 
+		[types.cake.collectorsreap]
+			lime_cake = true
+			pomegranate_cake = true
+
 	[types.wood_type]
 
 		[types.wood_type.blue_skies]

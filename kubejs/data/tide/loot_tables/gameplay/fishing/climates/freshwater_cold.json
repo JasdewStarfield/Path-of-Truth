@@ -64,6 +64,12 @@
           "weight": 10,
           "quality": 2,
           "name": "tide:mint_carp"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "quality": 2,
+          "name": "collectorsreap:platinum_bass"
         }
       ]
     }
