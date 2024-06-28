@@ -24,7 +24,7 @@
           "type": "minecraft:item",
           "weight": 70,
           "quality": 1,
-          "name": "minecraft:copper_nugget",
+          "name": "create:copper_nugget",
           "functions": [
             {
               "function": "minecraft:set_count",

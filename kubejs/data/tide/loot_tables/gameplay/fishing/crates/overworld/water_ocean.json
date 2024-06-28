@@ -29,7 +29,7 @@
           "type": "minecraft:item",
           "weight": 23,
           "quality": 10,
-          "name": "minecraft:copper_nugget"
+          "name": "create:copper_nugget"
         },
         {
           "type": "minecraft:item",
@@ -54,24 +54,6 @@
           "weight": 2,
           "quality": 40,
           "name": "minecraft:emerald"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 2,
-          "quality": 20,
-          "name": "minecraft:fishing_rod",
-          "functions": [
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0.1,
-                "max": {
-                  "min": 0.6,
-                  "max": 1
-                }
-              }
-            }
-          ]
         }
       ]
     }
