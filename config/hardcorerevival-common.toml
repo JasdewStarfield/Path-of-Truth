@@ -31,3 +31,4 @@ allowAcceptingFate = true
 disableInSingleplayer = false
 #If true, Hardcore Revival will not be active when playing alone in multiplayer.
 disableInLonelyMultiplayer = false
+

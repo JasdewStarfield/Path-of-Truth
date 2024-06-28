@@ -365,66 +365,34 @@
 				"1512F0EED2C94AD6"
 				"0AC1013759C98150"
 			]
-			description: ["这套盔甲理论上是铁甲……大概是吧？"]
-			icon: "bloodmagic:upgradetome"
+			description: [
+				"通过次级升级卷轴，你可以在奥术铁砧上为你的法术书升级槽位至最高12个！"
+				"这下不用拼命去搞高级法术书了——这也会让一些独特的法术书更加有用）"
+				""
+				"一些更暴力的东西从这个充能核心开始，也许你可以试试雷暴的时候用它来右键轰击避雷针……"
+			]
+			icon: {
+				Count: 1
+				id: "botania:thunder_sword"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7627B3B94BB6C9BE"
-			subtitle: "血魔法里最实用的盔甲哦"
+			subtitle: "现在，你可以升级你的法术书槽位了！"
 			tasks: [
 				{
-					id: "69AF5B7A8BC540CB"
-					item: "bloodmagic:reagentbinding"
+					id: "17D0F7C920508295"
+					item: "irons_spellbooks:lesser_spell_slot_upgrade"
 					type: "item"
 				}
 				{
-					id: "68168BD91E8F9134"
-					item: {
-						Count: 1
-						id: "bloodmagic:livinghelmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "1FB17CC0C68C77ED"
-					item: {
-						Count: 1
-						id: "bloodmagic:livingplate"
-						tag: {
-							Damage: 0
-							livingStats: {
-								maxPoints: 100
-								upgrades: [ ]
-							}
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "7F6086886E998DF0"
-					item: {
-						Count: 1
-						id: "bloodmagic:livingleggings"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "63276E590F76CF5E"
-					item: {
-						Count: 1
-						id: "bloodmagic:livingboots"
-						tag: {
-							Damage: 0
-						}
-					}
+					id: "398B314CC88DF439"
+					item: "irons_spellbooks:energized_core"
 					type: "item"
 				}
 			]
-			title: "可成长盔甲"
+			title: "更暴力的法术！"
 			x: 3.5d
 			y: -3.5d
 		}
