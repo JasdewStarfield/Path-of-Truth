@@ -43,9 +43,15 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 4,
           "quality": 3,
           "name": "tide:blazing_swordfish"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "quality": 3,
+          "name": "minecraft:netherite_scrap"
         }
       ]
     }
