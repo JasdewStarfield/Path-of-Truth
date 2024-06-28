@@ -60,6 +60,18 @@
           "weight": 10,
           "quality": 25,
           "name": "minecraft:diamond"
+        },
+        {
+           "type": "minecraft:item",
+           "weight": 20,
+           "quality":30,
+           "name": "minecraft:book",
+           "functions": [
+             {
+               "function": "minecraft:enchant_randomly",
+               "treasure": true
+             }
+           ]
         }
       ]
     }

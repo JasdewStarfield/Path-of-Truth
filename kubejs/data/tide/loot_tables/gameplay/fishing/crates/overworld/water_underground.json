@@ -91,6 +91,18 @@
               ]
             }
           ]
+        },
+        {
+           "type": "minecraft:item",
+           "weight": 20,
+           "quality":40,
+           "name": "minecraft:book",
+           "functions": [
+             {
+               "function": "minecraft:enchant_randomly",
+               "treasure": true
+             }
+           ]
         }
       ]
     }

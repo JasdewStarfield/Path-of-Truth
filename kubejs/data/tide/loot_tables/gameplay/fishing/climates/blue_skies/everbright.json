@@ -7,7 +7,7 @@
          "entries": [
             {
                "type": "minecraft:item",
-               "weight": 100,
+               "weight": 80,
                "quality": 0,
                "name": "minecraft:cod"
             },
@@ -25,7 +25,7 @@
             },
             {
                "type": "minecraft:item",
-               "weight": 30,
+               "weight": 40,
                "name": "minecraft:book",
                "functions": [
                  {
