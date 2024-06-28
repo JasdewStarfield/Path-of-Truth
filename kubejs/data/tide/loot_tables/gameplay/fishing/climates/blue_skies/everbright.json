@@ -22,6 +22,17 @@
                "weight": 30,
                "quality": 0,
                "name": "blue_skies:grittle_flatfish"
+            },
+            {
+               "type": "minecraft:item",
+               "weight": 30,
+               "name": "minecraft:book",
+               "functions": [
+                 {
+                   "function": "minecraft:enchant_randomly",
+                   "treasure": true
+                 }
+               ]
             }
          ]
       }
