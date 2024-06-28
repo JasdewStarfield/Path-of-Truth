@@ -209,6 +209,7 @@
 		{
 			dependencies: ["1A10DCB76F3AE6F2"]
 			description: [
+				"&b【完成后解锁主线章节：6M 终末魔法】&r"
 				"你大概需要做两个——一个帮助你步入创造的大门，一个作为模板拿来复制）"
 				"&c&l这可能是你见过的最奢侈的泰拉合成...&r&r"
 				"炼金的本质是改变物品的性质。理论上——在你突破那层界限前，凭空造物是不可行的。"
@@ -283,30 +284,18 @@
 		{
 			dependencies: ["12134A3EF6C80C54"]
 			description: [
-				"只需要一点点火花，你就可以活化自己的姜饼人——然后用刷怪笼获得无穷无尽的姜饼人！"
-				"但说真的，你不会觉得吃活的姜饼人很奇怪吗？"
+				"现在，你可以通过一种很高效的方式将魔力转化为电力了）"
+				"魔力转电力的效率很高，但这同样要求你有稳定的产魔方式，比如简单粗暴的火红莲阵列……"
 			]
-			icon: "create_confectionery:gingerbread_man"
+			icon: "botania:enchanter"
 			id: "1DFAF813825EE8B8"
-			subtitle: "喂，你不会有负罪感吗？"
-			tasks: [
-				{
-					id: "2FCEF42D3FB6BD87"
-					item: "create_confectionery:little_gingerbread_man_spawn_egg"
-					type: "item"
-				}
-				{
-					id: "62D656EB5BB6A73D"
-					item: "create_confectionery:gingerbread_man"
-					type: "item"
-				}
-				{
-					id: "287E748404AF579A"
-					item: "botania:corporea_spark"
-					type: "item"
-				}
-			]
-			title: "鲜活的食品"
+			subtitle: "魔动工业！"
+			tasks: [{
+				id: "3E0FF71DC64C6FDE"
+				item: "botania:mana_fluxfield"
+				type: "item"
+			}]
+			title: "魔能潮涌"
 			x: 0.0d
 			y: -4.0d
 		}

@@ -378,6 +378,46 @@
 			x: 3.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"基于一些众所周知的原因（木头实在是太容易获得了），木质鱼竿的耐久被狠狠削减了）"
+				"但你会发现增加了大量全新的钓竿！"
+				"钓鱼系统有一定的变化，你需要在&a不同的位置&r（包括但不限于群系，深度，甚至维度）钓鱼来获得所有的鱼！"
+				"有些鱼拥有&e&l传奇&r&r的功效……"
+				"但你首先需要&6渔夫工坊&r和&5锻造台&r来升级和修改你的鱼竿）"
+				"*由于没有暖水，我们魔改了战利品表，你可以在冷水群系内钓到热带鱼）"
+			]
+			icon: "tide:shooting_starfish"
+			id: "25D2D0B2CB184527"
+			secret: true
+			subtitle: "组装神杆！"
+			tasks: [
+				{
+					id: "114CB1572542ED07"
+					item: "tide:angler_workshop"
+					type: "item"
+				}
+				{
+					id: "0935BEA0F10E6D16"
+					item: "minecraft:smithing_table"
+					type: "item"
+				}
+				{
+					id: "1F50037ED7A7273F"
+					item: "tide:fishing_line"
+					type: "item"
+				}
+				{
+					id: "33BFEF9DDD6E00A8"
+					item: "tide:lavaproof_fishing_hook"
+					type: "item"
+				}
+			]
+			title: "钓鱼人的准备"
+			x: 0.0d
+			y: -3.0d
+		}
 	]
 	subtitle: ["Spirt of Exploration"]
 	title: "2A 探索精神"

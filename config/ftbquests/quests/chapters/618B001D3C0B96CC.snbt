@@ -86,17 +86,6 @@
 			]
 			icon: "minecraft:diamond_block"
 			id: "7B4573440B7AD85C"
-			rewards: [{
-				id: "1D9A644C3CC11135"
-				item: {
-					Count: 1
-					id: "bloodmagic:arcaneashes"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
 			subtitle: "很显然，你需要点石成金"
 			tasks: [
 				{
@@ -136,7 +125,7 @@
 					type: "item"
 				}
 			]
-			title: "钻石不太够用？"
+			title: "真正的炼金术"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -212,7 +201,8 @@
 		{
 			dependencies: ["0F9DF1C5137194E4"]
 			description: [
-				"这是法师宝珠，三阶血祭坛的产物。"
+				"&b【完成后解锁主线章节：4M 诡秘仪式】&r"
+				"法师宝珠，三阶血祭坛的产物，更大的LP储存器）"
 				"当然，也是后续很多魔法合成的必需品。"
 				"你可以用自己的血来完成它——也可以献祭很多别的生物。"
 				"一些更强更有趣的印记你也可以制造了）"
