@@ -573,6 +573,21 @@
 					}
 					type: "item"
 				}
+				{
+					id: "6A6D6A20FD19D613"
+					item: "tide:fortune_line"
+					type: "item"
+				}
+				{
+					id: "7961424FB910D587"
+					item: "tide:lavaproof_fishing_hook"
+					type: "item"
+				}
+				{
+					id: "4EDFB1EAA9C24C50"
+					item: "minecraft:heart_of_the_sea"
+					type: "item"
+				}
 			]
 			subtitle: "怎么还有？"
 			tasks: [
@@ -770,6 +785,41 @@
 							Damage: 0
 						}
 					}
+					type: "item"
+				}
+				{
+					id: "4958C7AAD00BEE9E"
+					item: "tide:yellow_perch"
+					type: "item"
+				}
+				{
+					id: "2E7358F40B52E9BA"
+					item: "tide:bluegill"
+					type: "item"
+				}
+				{
+					id: "4CDBC11E63BCDB1A"
+					item: "tide:guppy"
+					type: "item"
+				}
+				{
+					id: "4EBAF1A57D60D022"
+					item: "tide:ocean_perch"
+					type: "item"
+				}
+				{
+					id: "7C5DF1BE4AD01BCB"
+					item: "tide:mackerel"
+					type: "item"
+				}
+				{
+					id: "23BEB8F86FAABCF4"
+					item: "tide:midas_fish"
+					type: "item"
+				}
+				{
+					id: "084791C04BD4D0D3"
+					item: "tide:shooting_starfish"
 					type: "item"
 				}
 			]
@@ -1427,6 +1477,7 @@
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
+			description: ["那么，你贩剑吗？"]
 			id: "722556B2244FD56A"
 			rewards: [{
 				id: "104622516C821057"

@@ -276,6 +276,18 @@ ServerEvents.recipes(event => {
         ]
     )
 
+    //魔力转换器配方修改
+    event.remove({output:'botania:mana_fluxfield'})
+    event.recipes.botania.runic_altar('botania:mana_fluxfield', 
+        [
+            'immersiveengineering:heavy_engineering', 
+            'botania:redstone_root',
+            'immersiveengineering:generator',
+            'bloodmagic:strengthenedcatalyst'
+        ], 
+        5000
+    )
+
     //星盘配方增加
     event.shaped(Item.of('blue_skies:astrolabe',1),
         ['ABA',
@@ -321,6 +333,18 @@ ServerEvents.recipes(event => {
             'blue_skies:charoite_block'
         ], 
         100000
+    )
+    //创造魔力池合成
+    event.recipes.botania.terra_plate('botania:creative_pool',
+        [
+            'botania:fabulous_pool', 
+            'bloodmagic:lightritualstone',
+            'bloodmagic:archmagebloodorb',
+            'botania:gaia_ingot',
+            'kubejs:frostfire_double_plate',
+            'minecraft:conduit'
+        ],
+        500000
     )
     //个人头像合成（终末产物）
     event.recipes.botania.terra_plate('kubejs:midnight', 

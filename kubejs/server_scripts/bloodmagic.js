@@ -395,20 +395,6 @@ ServerEvents.recipes(event => {
         },
         "upgradeLevel": 3
     })
-    //创造魔力池合成
-    event.custom({
-        "type": "bloodmagic:altar",
-        "altarSyphon": 500000,
-        "consumptionRate": 200,
-        "drainRate": 0,
-        "input": {
-            "item": 'bloodmagic:lightritualstone'
-        },
-        "output": {
-            "item": 'botania:creative_pool'
-        },
-        "upgradeLevel": 4
-    })
     //盖亚之魂合成奥术残骸
     event.custom({
         "type": "bloodmagic:altar",
