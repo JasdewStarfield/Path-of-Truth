@@ -13,13 +13,13 @@
 	#
 	# If set to true, inventory tabs will use simple buttons that can be placed anywhere on the screen.
 	# Default: false
-	use_simple_inventory_tabs = false
+	use_simple_inventory_tabs = true
 
 	["Inventory Tabs"."Sliding Tabs"]
 		#
 		# If set to true, inventory tabs appear on the bottom left corner instead of the bottom right.
 		# Default: false
-		left_align = false
+		left_align = true
 
 	["Inventory Tabs".Buttons]
 		#
