@@ -34,7 +34,7 @@
 				item: "irons_spellbooks:arcane_essence"
 				type: "item"
 			}]
-			title: "探索自然"
+			title: "【起点】探索自然"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -422,7 +422,7 @@
 				item: "bloodmagic:altar"
 				type: "item"
 			}]
-			title: "牺牲与献祭"
+			title: "【终点】牺牲与献祭"
 			x: 0.0d
 			y: 2.0d
 		}

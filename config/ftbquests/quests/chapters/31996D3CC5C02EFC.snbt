@@ -40,7 +40,7 @@
 					type: "item"
 				}
 			]
-			title: "创造生命"
+			title: "【起点】创造生命"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -229,7 +229,7 @@
 				item: "kubejs:midnight"
 				type: "item"
 			}]
-			title: "通往终末的钥匙"
+			title: "【终点】通往终末的钥匙"
 			x: 4.0d
 			y: 0.0d
 		}
@@ -286,6 +286,8 @@
 			description: [
 				"现在，你可以通过一种很高效的方式将魔力转化为电力了）"
 				"魔力转电力的效率很高，但这同样要求你有稳定的产魔方式，比如简单粗暴的火红莲阵列……"
+				""
+				"&2\"Botania is a tech mod.\"&r（确信）"
 			]
 			icon: "botania:enchanter"
 			id: "1DFAF813825EE8B8"

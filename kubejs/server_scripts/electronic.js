@@ -71,10 +71,10 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(inter2, [inter2, 'kubejs:andesite_engineering']),
         event.recipes.createDeploying(inter2, [inter2, 'kubejs:fluid_engineering']),
         event.recipes.createDeploying(inter2, [inter2, 'kubejs:precise_engineering']),
+        event.recipes.createDeploying(inter2, [inter2, 'kubejs:logistical_engineering']),
         event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:light_engineering']),
         event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:rs_engineering']),
         event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:heavy_engineering']),
         event.recipes.createDeploying(inter2, [inter2, 'kubejs:electronic_engineering']),
-        event.recipes.createPressing(inter2, inter2)
     ]).transitionalItem(inter2).loops(32)
 })

@@ -1471,7 +1471,7 @@
 				item: "trashcans:ultimate_trash_can"
 				type: "item"
 			}]
-			title: "[隐藏任务]还有高手？"
+			title: "【隐藏任务】还有高手？"
 			x: 1.0d
 			y: -5.5d
 		}

@@ -426,6 +426,35 @@
 			x: 0.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"这两种指南针分别可以定位&2群系&r和&c结构&r。当你找不到方向的时候，就用它们吧！"
+				"（注：指南针的定位逻辑是在附近一定范围内搜索。因此，如果这个范围内没有的话，也会显示找不到目标！）"
+			]
+			hide: true
+			id: "78A026D295CF4593"
+			subtitle: "感到迷茫吗？"
+			tasks: [
+				{
+					id: "203AAEC8A2C1ECD6"
+					item: {
+						Count: 1
+						id: "naturescompass:naturescompass"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "48AFD8F75693E010"
+					item: "structurecompass:structure_compass"
+					type: "item"
+				}
+			]
+			title: "指南针们"
+			x: 0.0d
+			y: 3.0d
+		}
 	]
 	subtitle: ["Spirt of Exploration"]
 	title: "2A 探索精神"

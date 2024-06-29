@@ -471,7 +471,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "bloodmagic:array",
         "addedinput": {
-            "item": 'botania:dragonstone_block'
+            "item": 'createdeco:netherite_nugget'
         },
         "baseinput": {
             "item": 'botania:gaia_ingot'

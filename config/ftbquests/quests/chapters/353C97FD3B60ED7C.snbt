@@ -28,7 +28,7 @@
 				title: "魔法的终极结晶……"
 				type: "item"
 			}]
-			title: "真正的魔法是规则……"
+			title: "【起点】真正的魔法是规则……"
 			x: 0.0d
 			y: 2.4d
 		}
@@ -196,7 +196,7 @@
 				item: "createchromaticreturn:multiplite_ingot"
 				type: "item"
 			}]
-			title: "真理的紫光"
+			title: "【终点】真理的紫光"
 			x: 0.0d
 			y: 0.0d
 		}

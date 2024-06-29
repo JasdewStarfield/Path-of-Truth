@@ -1,5 +1,5 @@
 {
-	autofocus_id: "657DC1780DCCD565"
+	autofocus_id: "5F826044A3A07900"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "41206A891883629D"
@@ -128,7 +128,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["4989FE4EDCFFB309"]
+			dependencies: ["3197074BD2FDC954"]
 			id: "21AB683F37938358"
 			subtitle: "构件#1"
 			tasks: [{
@@ -175,7 +175,7 @@
 		{
 			dependencies: [
 				"736DD90EBB2F6694"
-				"3197074BD2FDC954"
+				"21AB683F37938358"
 			]
 			id: "4989FE4EDCFFB309"
 			subtitle: "工程块#3"
@@ -185,7 +185,7 @@
 				type: "item"
 			}]
 			title: "精益求精"
-			x: 13.0d
+			x: 15.0d
 			y: -2.0d
 		}
 		{
@@ -211,18 +211,18 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["3197074BD2FDC954"]
+			dependencies: ["21AB683F37938358"]
 			id: "736DD90EBB2F6694"
 			tasks: [{
 				id: "0907B250A37B8812"
 				item: "create:brass_casing"
 				type: "item"
 			}]
-			x: 13.0d
+			x: 15.0d
 			y: 2.0d
 		}
 		{
-			dependencies: ["21AB683F37938358"]
+			dependencies: ["4989FE4EDCFFB309"]
 			description: ["冷知识：钢是合金"]
 			id: "657DC1780DCCD565"
 			subtitle: "合金#5"
@@ -232,7 +232,7 @@
 				type: "item"
 			}]
 			title: "钢筋铁骨"
-			x: 16.0d
+			x: 20.0d
 			y: 0.0d
 		}
 		{
@@ -241,14 +241,14 @@
 				"657DC1780DCCD565"
 			]
 			id: "39F03860B4042EB0"
-			subtitle: "工程块#5"
+			subtitle: "工程块#6"
 			tasks: [{
 				id: "68BD208C909CF950"
 				item: "immersiveengineering:light_engineering"
 				type: "item"
 			}]
 			title: "轻车熟路"
-			x: 17.0d
+			x: 21.0d
 			y: -2.0d
 		}
 		{
@@ -259,7 +259,7 @@
 				item: "tfmg:steel_casing"
 				type: "item"
 			}]
-			x: 17.0d
+			x: 21.0d
 			y: 2.0d
 		}
 		{
@@ -272,20 +272,20 @@
 				type: "checkmark"
 			}]
 			title: "电光石火"
-			x: 18.0d
+			x: 22.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["657DC1780DCCD565"]
 			id: "32EE8784F8B9200F"
-			subtitle: "工程块#4"
+			subtitle: "工程块#5"
 			tasks: [{
 				id: "1E5501FBE6BC9BCF"
 				item: "immersiveengineering:rs_engineering"
 				type: "item"
 			}]
 			title: "红光满面"
-			x: 15.0d
+			x: 19.0d
 			y: -2.0d
 		}
 		{
@@ -298,7 +298,7 @@
 				type: "item"
 			}]
 			title: "琥口脱险"
-			x: 20.0d
+			x: 24.0d
 			y: 0.0d
 		}
 		{
@@ -311,7 +311,7 @@
 				type: "item"
 			}]
 			title: "铝试不爽"
-			x: 22.0d
+			x: 26.0d
 			y: 0.0d
 		}
 		{
@@ -322,23 +322,24 @@
 				item: "tfmg:heavy_machinery_casing"
 				type: "item"
 			}]
-			x: 25.0d
+			x: 29.5d
 			y: 2.0d
 		}
 		{
 			dependencies: [
 				"49DDB0B007118737"
 				"77460436CF5BE7FE"
+				"2E5F0D8FEABE0E50"
 			]
 			id: "38F41C7A2075E5CC"
-			subtitle: "工程块#6"
+			subtitle: "工程块#7"
 			tasks: [{
 				id: "22FA6F5A1C661C8C"
 				item: "immersiveengineering:heavy_engineering"
 				type: "item"
 			}]
 			title: "重于泰山"
-			x: 25.0d
+			x: 29.5d
 			y: -2.0d
 		}
 		{
@@ -351,8 +352,8 @@
 				type: "item"
 			}]
 			title: "钢正不阿"
-			x: 24.0d
-			y: 0.0d
+			x: 27.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["38F41C7A2075E5CC"]
@@ -364,7 +365,7 @@
 				type: "item"
 			}]
 			title: "不塑之客"
-			x: 26.0d
+			x: 30.5d
 			y: 0.0d
 		}
 		{
@@ -377,19 +378,20 @@
 				type: "item"
 			}]
 			title: "高屋建瓴"
-			x: 28.0d
+			x: 32.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["46CB7AD4CEB87D61"]
 			id: "69691E179156C1AB"
+			subtitle: "工程块#8"
 			tasks: [{
 				id: "37A34DCFC48FA58E"
 				item: "kubejs:electronic_engineering"
 				type: "item"
 			}]
 			title: "风驰电掣"
-			x: 29.0d
+			x: 33.5d
 			y: -2.0d
 		}
 		{
@@ -401,6 +403,7 @@
 				"38F41C7A2075E5CC"
 				"2739985E562929B2"
 				"32EE8784F8B9200F"
+				"01D5299D241B8599"
 			]
 			id: "29D490BEC5BBC8E1"
 			shape: "gear"
@@ -411,7 +414,7 @@
 				item: "kubejs:buran"
 				type: "item"
 			}]
-			x: 16.0d
+			x: 17.0d
 			y: -7.0d
 		}
 		{
@@ -424,7 +427,7 @@
 				type: "item"
 			}]
 			title: "无限电力"
-			x: 14.5d
+			x: 15.5d
 			y: -8.0d
 		}
 		{
@@ -437,7 +440,7 @@
 				type: "item"
 			}]
 			title: "无限应力"
-			x: 17.5d
+			x: 18.5d
 			y: -8.0d
 		}
 		{
@@ -452,7 +455,7 @@
 				type: "item"
 			}]
 			title: "无限流体"
-			x: 16.0d
+			x: 17.0d
 			y: -9.0d
 		}
 		{
@@ -465,8 +468,43 @@
 				type: "item"
 			}]
 			title: "最科学的"
-			x: 16.0d
+			x: 17.0d
 			y: -10.5d
+		}
+		{
+			dependencies: ["736DD90EBB2F6694"]
+			id: "294369EA93792F33"
+			tasks: [{
+				id: "7373D4939D2B48AF"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["294369EA93792F33"]
+			id: "01D5299D241B8599"
+			subtitle: "工程块#4"
+			tasks: [{
+				id: "19BAB9F7572C0B97"
+				item: "kubejs:logistical_engineering"
+				type: "item"
+			}]
+			title: "川流不息"
+			x: 17.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6EC555AAE7573B3F"]
+			id: "2E5F0D8FEABE0E50"
+			tasks: [{
+				id: "2ECD118F1B8EB2CD"
+				item: "kubejs:forgotten_mechanism"
+				type: "item"
+			}]
+			x: 27.0d
+			y: 1.0d
 		}
 	]
 	subtitle: ["Industrial Landmarks"]

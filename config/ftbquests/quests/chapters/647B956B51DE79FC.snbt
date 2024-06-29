@@ -42,7 +42,7 @@
 					type: "item"
 				}
 			]
-			title: "大型仪式的基础"
+			title: "【起点】大型仪式的基础"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -109,7 +109,7 @@
 				item: "bloodmagic:ingot_hellforged"
 				type: "item"
 			}]
-			title: "恶魔的金属"
+			title: "【终点】恶魔的金属"
 			x: 0.0d
 			y: -2.0d
 		}

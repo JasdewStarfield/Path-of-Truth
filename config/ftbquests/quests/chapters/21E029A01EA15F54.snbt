@@ -40,7 +40,7 @@
 				}
 				type: "item"
 			}]
-			title: "了解鲜血之力"
+			title: "【起点】了解鲜血之力"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -877,7 +877,7 @@
 				item: "botania:terra_plate"
 				type: "item"
 			}]
-			title: "泰拉之光"
+			title: "【终点】泰拉之光"
 			x: 6.0d
 			y: 0.0d
 		}

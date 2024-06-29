@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
     event.replaceInput(
         { output:"pipez:universal_pipe" },
         '#forge:storage_blocks/redstone',
-        'kubejs:electronic_engineering'
+        'kubejs:logistical_engineering'
     )
     event.replaceInput(
         { output:"pipez:universal_pipe" },

@@ -484,7 +484,7 @@
 				value: 114514L
 			}]
 			title: "证明你的能量霸权！"
-			x: 4.5d
+			x: 1.5d
 			y: 2.0d
 		}
 		{
@@ -1114,19 +1114,6 @@
 			]
 			x: 1.5d
 			y: -2.0d
-		}
-		{
-			dependencies: ["76EF99C068AA2361"]
-			id: "297F6EAE4E51675B"
-			shape: "diamond"
-			subtitle: "保护你的耳朵"
-			tasks: [{
-				id: "01DE3EBD2768F90B"
-				item: "immersiveengineering:earmuffs"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 2.0d
 		}
 		{
 			dependencies: ["22631A52B9D81A49"]

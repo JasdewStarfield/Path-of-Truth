@@ -49,10 +49,11 @@ ServerEvents.recipes(event => {
     event.remove({id:"immersiveengineering:crafting/sawblade"})
     event.shaped('immersiveengineering:sawblade', [ 
         'CAC', 
-        'A A',
+        'ABA',
         'CAC'  
     ], {
         A: '#forge:ingots/iron',
+        B: 'create:andesite_alloy_block',
         C: '#forge:plates/iron'
     })
 
@@ -551,14 +552,15 @@ ServerEvents.recipes(event => {
     //高级电子元件
     event.remove({id:"immersiveengineering:blueprint/component_electronic_adv"})
     event.recipes.create.sequenced_assembly([
-        Item.of('immersiveengineering:component_electronic_adv').withChance(70.0),
-        Item.of('immersiveengineering:electron_tube').withChance(5.0),
-        Item.of('immersiveengineering:component_electronic').withChance(20.0),
-        Item.of('immersiveengineering:plate_duroplast').withChance(5.0)
-        ], 'immersiveengineering:plate_duroplast', [
-        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'create_connected:control_chip']),
-        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:wires/aluminum']),
-        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'createdeco:netherite_nugget']),
+        Item.of('immersiveengineering:component_electronic_adv').withChance(75.0),
+        Item.of('#forge:silicon').withChance(3.0),
+        Item.of('#bloodmagic:gravels/hellforged').withChance(2.0),
+        Item.of('immersiveengineering:component_electronic').withChance(5.0),
+        Item.of('immersiveengineering:circuit_board').withChance(15.0)
+        ], 'immersiveengineering:circuit_board', [
+        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:silicon']),
+        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'immersiveengineering:component_electronic']),
+        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:dusts/hellforged']),
         event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'tfmg:screw']),
         event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'tfmg:screwdriver'])
     ]).transitionalItem('kubejs:incomplete_component_electronic_adv').loops(5)
@@ -572,14 +574,14 @@ ServerEvents.recipes(event => {
         B: 'create:brass_casing',
         A: 'tfmg:plastic_sheet',
         C: 'immersiveengineering:component_electronic_adv',
-        D: 'immersiveengineering:component_electronic'
+        D: 'immersiveengineering:radiator'
     })
     event.recipes.create.sequenced_assembly([
         'kubejs:electronic_engineering'
         ], 'create:brass_casing', [
             event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'tfmg:plastic_sheet']),
             event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'immersiveengineering:component_electronic_adv']),
-            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'immersiveengineering:component_electronic']),
+            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'immersiveengineering:radiator']),
             event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'tfmg:plastic_sheet'])
     ]).transitionalItem('kubejs:incomplete_electronic_engineering').loops(1)
 })
