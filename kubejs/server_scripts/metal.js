@@ -263,7 +263,72 @@ ServerEvents.recipes(event => {
     //泥巴出铁
     event.recipes.create.crushing(Item.of('create:crushed_raw_iron').withChance(0.07), 'packed_mud')
 
+    //红石量产
+    event.recipes.create.filling('redstone_block', [Fluid.of('immersiveengineering:redstone_acid',1000),'botania:livingrock'])
+
 
     //霜火双层板
     event.recipes.create.compacting('kubejs:frostfire_double_plate', ['#forge:plates/froststeel','#forge:slimeballs','#forge:plates/horizonite'])
+
+    //一些沉浸盔甲修改
+    event.replaceInput(
+        { output:/immersive_armors:divine_.*/ },
+        '#forge:ingots/gold',
+        '#forge:ingots/manasteel'
+    )
+
+    event.replaceInput(
+        { output:/immersive_armors:steampunk_.*/ },
+        '#forge:ingots/gold',
+        '#forge:ingots/brass'
+    )
+
+    event.remove({output:/immersive_armors:wooden_.*/})
+
+    event.shaped(
+        Item.of('immersive_armors:wooden_helmet', 1),
+        [ 
+        'ABA',
+        'A A'
+        ],
+        {
+            A: 'botania:livingwood',
+            B: '#forge:nuggets/bronze'
+        }
+    )
+    event.shaped(
+        Item.of('immersive_armors:wooden_chestplate', 1),
+        [ 
+        'A A',
+        'ABA',
+        'BAB'
+        ],
+        {
+            A: 'botania:livingwood',
+            B: '#forge:nuggets/bronze'
+        }
+    )
+    event.shaped(
+        Item.of('immersive_armors:wooden_leggings', 1),
+        [ 
+        'AAA',
+        'B B',
+        'A A'
+        ],
+        {
+            A: 'botania:livingwood',
+            B: '#forge:nuggets/bronze'
+        }
+    )
+    event.shaped(
+        Item.of('immersive_armors:wooden_boots', 1),
+        [ 
+        'A A',
+        'B B'
+        ],
+        {
+            A: 'botania:livingwood',
+            B: '#forge:nuggets/bronze'
+        }
+    )
 })

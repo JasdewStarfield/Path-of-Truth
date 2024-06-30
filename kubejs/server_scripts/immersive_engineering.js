@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
     event.custom({
 		"type":"create:filling",
 		"ingredients":[
-			{"tag":"minecraft:planks"},
+			{"item":"botania:livingwood_planks"},
 			{"fluid":"immersiveengineering:creosote", "amount":125}
 		],
 		"results":[
@@ -179,6 +179,13 @@ ServerEvents.recipes(event => {
     })
     //BOP的玫瑰石英碎块
     event.recipes.create.crushing(Item.of('create:rose_quartz').withChance(0.1), 'biomesoplenty:rose_quartz_block')
+
+    //继电器接线器材料
+    event.replaceInput(
+      { output:/immersiveengineering:connector.*/ },
+      '#immersiveengineering:connector_insulator',
+      'botania:glimmering_stripped_dreamwood'
+    )
 
     //零件
     event.remove({id:"immersiveengineering:crafting/component_steel"})

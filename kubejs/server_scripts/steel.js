@@ -5,13 +5,14 @@ ServerEvents.recipes(event => {
     ' DDD ',
     'DBBBD',
     'DBABD',
-    ' DCD ',
-    ' DCD '
+    ' ECE ',
+    ' ECE '
   ], {
     A: 'kubejs:precise_engineering',
     B: '#forge:glass',
     C: 'tfmg:cast_iron_pipe',
-    D: '#forge:ingots/cast_iron'
+    D: '#forge:ingots/cast_iron',
+    E: '#forge:ingots/elementium'
   })
   event.remove({ id: 'tfmg:crafting/blast_furnace_output' })
   event.recipes.create.mechanical_crafting('tfmg:blast_furnace_output', [
@@ -19,12 +20,13 @@ ServerEvents.recipes(event => {
     'DBBBD',
     'DBABD',
     'DBBBD',
-    ' DCD '
+    ' ECE '
   ], {
     A: 'kubejs:precise_engineering',
     B: 'tfmg:fireproof_brick',
     C: 'tfmg:cast_iron_pipe',
-    D: '#forge:ingots/cast_iron'
+    D: '#forge:ingots/cast_iron',
+    E: '#forge:gems/dragonstone'
   })
 
   //动力合成器

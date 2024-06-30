@@ -1,4 +1,19 @@
+const engineeringBlocks = [
+    'kubejs:andesite_engineering',
+    'kubejs:fluid_engineering',
+    'kubejs:precise_engineering',
+    'kubejs:logistical_engineering',
+    'immersiveengineering:light_engineering',
+    'immersiveengineering:rs_engineering',
+    'immersiveengineering:heavy_engineering',
+    'kubejs:electronic_engineering'
+]
+
+
 ServerEvents.tags("item", (event) => {
+    //工程块
+    engineeringBlocks.forEach((id) => event.add("kubejs:engineering_block", id))
+
     //锌粉、锡粉
     event.add("forge:dusts","kubejs:zinc_dust")
     event.add("forge:dusts/zinc","kubejs:zinc_dust")
@@ -73,6 +88,25 @@ ServerEvents.tags("item", (event) => {
 })
 
 ServerEvents.tags("block", (event) => {
+    //工程块
+    engineeringBlocks.forEach((id) => event.add("kubejs:engineering_block", id))
+
+    //扳手可拆卸拓展
+    engineeringBlocks.forEach((id) => event.add("create:wrench_pickup", id))
+    const wrenchPickupList = [
+        'immersiveengineering:wooden_barrel',
+        'immersiveengineering:gunpowder_barrel',
+        'immersiveengineering:metal_barrel',
+        'immersiveengineering:ballon',
+        'immersiveengineering:electric_lantern',
+        'immersiveengineering:thermoelectric_generator',
+        'immersiveengineering:fluid_pump',
+        'immersiveengineering:sample_drill',
+        'immersiveengineering:tesla_coil',
+        'immersiveengineering:blastfurnace_preheater'
+    ]
+    wrenchPickupList.forEach((id) => event.add("create:wrench_pickup", id))
+
     event.remove("minecraft:mineable/pickaxe","tfmg:oil_deposit")
 })
 
