@@ -1,0 +1,142 @@
+{
+  "is_shield_enchantable": true,
+  "is_horse_armor_enchantable": true,
+  "enchantments": {
+    "death_wish": {
+      "is_enabled": true,
+      "damage_multiplier_range": {
+        "min": 1.0,
+        "max": 2.0
+      },
+      "vulnerability_multiplier_range": {
+        "min": 0.7,
+        "max": 1.2
+      }
+    },
+    "dodge": {
+      "is_enabled": true,
+      "dodge_chance_per_level": 0.125
+    },
+    "enlightenment": {
+      "is_enabled": true,
+      "experience_multiplier_per_level": 0.125
+    },
+    "fishing_fanatic": {
+      "is_enabled": true,
+      "extra_loot_chance": 0.33333,
+      "level_up_chance": {
+        "__default": 0.06,
+        "level_2": 0.05,
+        "level_3": 0.04,
+        "level_4": 0.03,
+        "level_5": 0.02,
+        "level_6": 0.01,
+        "level_7": 0.004,
+        "level_8": 0.002
+      },
+      "level_up_chance_rain_multiplier": 2.0,
+      "special_drop_chance": {
+        "__default": 0.0,
+        "level_4": 0.0025,
+        "level_5": 0.0075,
+        "level_6": 0.02,
+        "level_7": 0.04,
+        "level_8": 0.06
+      },
+      "special_drop_id": "majruszsenchantments:gameplay/fishing/fishing_fanatic_extra",
+      "damage_bonus_per_level": 1.0,
+      "attack_speed_multiplier_per_level": 0.82
+    },
+    "fuse_cutter": {
+      "is_enabled": true,
+      "max_distance": 6.0,
+      "shield_cooldown_ratio": 1.5
+    },
+    "gold_fuelled": {
+      "is_enabled": true
+    },
+    "harvester": {
+      "is_enabled": true
+    },
+    "horse_frost_walker": {
+      "is_enabled": true
+    },
+    "horse_protection": {
+      "is_enabled": true,
+      "armor_bonus_per_level": 2.0
+    },
+    "horse_swiftness": {
+      "is_enabled": true,
+      "speed_multiplier_per_level": 0.125
+    },
+    "hunter": {
+      "is_enabled": true,
+      "penalty_multiplier_per_level": -0.1,
+      "distance_multiplier_per_level": 0.01
+    },
+    "immortality": {
+      "is_enabled": true
+    },
+    "leech": {
+      "is_enabled": true,
+      "health_chance": 0.1,
+      "hunger_chance": 0.1,
+      "effect_chance": 0.1
+    },
+    "magic_protection": {
+      "is_enabled": true
+    },
+    "misanthropy": {
+      "is_enabled": true,
+      "damage_bonus_per_level": 2.5
+    },
+    "repulsion": {
+      "is_enabled": true,
+      "knockback_strength": 1.0
+    },
+    "sixth_sense": {
+      "is_enabled": true,
+      "glow_duration": 2.0,
+      "chest_ids": [
+        "minecraft:chests/ancient_city",
+        "minecraft:chests/ancient_city_ice_box"
+      ],
+      "loot_id": "majruszsenchantments:chests/ancient_city_sixth_sense"
+    },
+    "smelter": {
+      "is_enabled": true
+    },
+    "telekinesis": {
+      "is_enabled": true
+    }
+  },
+  "curses": {
+    "breaking_curse": {
+      "is_enabled": true,
+      "damage_multiplier_per_level": 1.0
+    },
+    "corrosion_curse": {
+      "is_enabled": true,
+      "damage_dealt_per_level": 0.25,
+      "damage_cooldown": 3.0
+    },
+    "fatigue_curse": {
+      "is_enabled": true,
+      "speed_multiplier_per_level": {
+        "mining": 0.8,
+        "attacking": 0.8,
+        "moving": 0.95,
+        "item_using": 0.8,
+        "item_swinging": 0.8
+      }
+    },
+    "incompatibility_curse": {
+      "is_enabled": true
+    },
+    "slippery_curse": {
+      "is_enabled": true,
+      "drop_chance": 0.03,
+      "drop_cooldown": 1.0
+    }
+  }
+}
