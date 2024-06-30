@@ -213,7 +213,7 @@ ServerEvents.recipes(event => {
                 "item":'minecraft:amethyst_block'
             },
             {
-                "item":'botania:spawner_mover'
+                "item":'botania:mana_bomb'
             }
         ],
         "output": {

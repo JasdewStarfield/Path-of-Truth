@@ -158,7 +158,10 @@
 				"你可以通过眼球创造瞻远者！"
 				"瞻远者的每一击都是无视护甲的比例伤害，但你需要它的胳膊。"
 				"这是一种挑战，朋友）"
+				""
+				"*注：由于瞻远者的特效过于神秘以至于有几率崩掉渲染，你可以通过击杀或者直接用刷怪蛋转化来获得它的胳膊）"
 			]
+			icon: "alexsmobs:farseer_arm"
 			id: "16F90B8A45AE1C92"
 			rewards: [{
 				id: "5A29F651F62C25ED"
@@ -167,11 +170,9 @@
 			}]
 			subtitle: "艰难挑战"
 			tasks: [{
-				entity: "alexsmobs:farseer"
-				icon: "alexsmobs:farseer_arm"
-				id: "5EEB7815CF54FB6E"
-				type: "kill"
-				value: 1L
+				id: "11BAACC504F0E437"
+				item: "alexsmobs:spawn_egg_farseer"
+				type: "item"
 			}]
 			title: "看得更远"
 			x: 0.0d

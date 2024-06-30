@@ -143,7 +143,7 @@
 			}]
 			title: "奥术辉光"
 			x: 0.0d
-			y: -2.5d
+			y: -2.4d
 		}
 		{
 			dependencies: ["4BDC97C826097CDF"]
