@@ -85,6 +85,22 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //修改恶魔南瓜配方
+    event.remove({output:'botania:fel_pumpkin'})
+    event.shaped(Item.of('botania:fel_pumpkin',1),
+        ['ABA',
+        'CDE',
+        'AFA'],
+        {
+            A:'create:brass_nugget',
+            B:'minecraft:string',
+            C:'minecraft:rotten_flesh',
+            D:'minecraft:pumpkin',
+            E:'minecraft:gunpowder',
+            F:'minecraft:bone'
+        }
+    )
+
     //符文祭坛配方
     //炼制铁魔法空白符文
     event.recipes.botania.runic_altar('irons_spellbooks:blank_rune', 
