@@ -381,7 +381,8 @@
 				"7A7C0A48248FA32B"
 			]
 			description: [
-				"把它放在你的碳刷旁边就可以自动收集碳刷提供的能量了。记得要选择对应任务哦。"
+				"把它放在你的碳刷旁边就可以自动收集碳刷提供的能量了。下一章会介绍更多传输电力的方式。"
+				"记得要选择对应任务哦。"
 				"当然其它任务也可以用这个来自动提交"
 			]
 			hide: true
@@ -399,6 +400,7 @@
 					type: "checkmark"
 				}
 			]
+			title: "给我个任务吧！"
 			x: 12.0d
 			y: 0.5d
 		}
@@ -560,6 +562,38 @@
 				type: "item"
 			}]
 			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["504E6502A789DABF"]
+			hide: true
+			id: "0728C35476FC5EE2"
+			rewards: [{
+				id: "3B7DE4AC74138629"
+				item: "immersiveengineering:generator"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "当然也可以反着来！"
+			tasks: [
+				{
+					id: "67BC95A36E14545F"
+					item: "create_new_age:basic_motor"
+					type: "item"
+				}
+				{
+					id: "2B2613B6C28332F6"
+					item: "create_new_age:advanced_motor"
+					type: "item"
+				}
+				{
+					id: "40C5ADB9C69907CE"
+					item: "create_new_age:reinforced_motor"
+					type: "item"
+				}
+			]
+			title: "电力转应力"
+			x: 14.0d
 			y: -1.0d
 		}
 	]

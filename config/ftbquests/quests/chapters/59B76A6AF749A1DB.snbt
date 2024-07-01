@@ -1325,25 +1325,6 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["2BE7BA0BE9F2DBC9"]
-			description: [
-				"虽然叫扼塞锭，可是用它升级了铝制流体管道之后，反而能更流畅地输送流体了……"
-				"现在你可以在一些地方省去流体泵了。"
-			]
-			hide: true
-			id: "6AF055F5437D95A0"
-			shape: "diamond"
-			subtitle: "能省去一点流体泵的功夫"
-			tasks: [{
-				id: "589621E0806E7016"
-				item: "immersiveengineering:fluid_pipe"
-				type: "item"
-			}]
-			title: "高级的流体管道"
-			x: 0.0d
-			y: -5.0d
-		}
-		{
 			dependencies: ["3D6CCF4A93478320"]
 			description: [
 				"在相对的两个面放置温度不同的方块就可以根据温差发电"

@@ -736,7 +736,7 @@
 			]
 			title: "升级你的磁铁"
 			x: 5.0d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["46A5743F6DC8054D"]

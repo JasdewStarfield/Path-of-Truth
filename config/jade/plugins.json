@@ -64,6 +64,9 @@
   "immersiveengineering": {
     "multiblock_icon": true
   },
+  "collectorsreap": {
+    "crop_progress": true
+  },
   "supplementaries": {
     "hat_stand": true
   },

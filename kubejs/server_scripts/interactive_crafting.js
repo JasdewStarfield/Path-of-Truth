@@ -19,7 +19,8 @@ ServerEvents.recipes(event => {
       ["create:mechanical_drill", "immersiveengineering:drillhead_iron"],
       ["create:mechanical_plough", "#forge:plates/iron"],
       ["create:mechanical_harvester", "iron_trapdoor"],
-      ["create:mechanical_bearing", "create:shaft"],
+      ["create:mechanical_bearing", "botania:livingwood_slab"],
+      ["create:windmill_bearing", "botania:livingrock_slab"],
       ["create:mechanical_piston", "create:piston_extension_pole"],
       ["create:mechanical_mixer", "create:whisk"],
       ["create:mechanical_press", "#forge:storage_blocks/andesite_alloy"],
@@ -64,4 +65,25 @@ ServerEvents.recipes(event => {
     preciseEngineering.forEach(([output, material]) => 
       InteractiveCrafting(output, "kubejs:precise_engineering", material)
     )
+
+
+    //一些其它的姑且也放这罢
+    //水车
+    event.replaceInput(
+      { output:/create:.*water_wheel/ },
+      '#minecraft:planks',
+      'botania:livingwood_planks'
+    )
+    //粉碎轮
+    event.replaceInput(
+      { output:"create:crushing_wheel" },
+      '#minecraft:planks',
+      'immersiveengineering:treated_wood_horizontal'
+    )
+    event.replaceInput(
+      { output:"create:crushing_wheel" },
+      '#forge:stone',
+      '#forge:storage_blocks/brass'
+    )
+
 })
