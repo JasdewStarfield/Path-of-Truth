@@ -366,6 +366,20 @@ ServerEvents.recipes(event => {
         },
         "upgradeLevel": 1
     })
+    //硫磺转烈焰粉
+    event.custom({
+        "type": "bloodmagic:altar",
+        "altarSyphon": 500,
+        "consumptionRate": 10,
+        "drainRate": 0,
+        "input": {
+            "tag": 'forge:dusts/sulfur'
+        },
+        "output": {
+            "item": 'minecraft:blaze_powder'
+        },
+        "upgradeLevel": 2
+    })
     //四级血魔法宝珠（导师宝珠）合成方式修改
     event.remove({id:'bloodmagic:altar/masterbloodorb'})
     event.custom({
@@ -550,20 +564,6 @@ ServerEvents.recipes(event => {
             "item": 'blue_skies:charoite'
         },
         "texture": "bloodmagic:textures/models/alchemyarrays/airsigil.png"
-    })
-    //建立创造多媒体火花
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'kubejs:midnight'
-        },
-        "baseinput": {
-            "item": 'botania:corporea_spark'
-        },
-        "output": {
-            "item": 'botania:corporea_spark_creative'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
     })
     //终极锭炼金翻转
     event.remove({id:'createchromaticreturn:antiplite_recipe'})

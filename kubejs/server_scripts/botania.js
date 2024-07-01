@@ -85,6 +85,17 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //符文祭坛配方
+    //炼制铁魔法空白符文
+    event.recipes.botania.runic_altar('irons_spellbooks:blank_rune', 
+        [
+            'botania:rune_mana', 
+            'bloodmagic:blankrune',
+            'botania:mana_powder'
+        ], 
+        10000
+    )
+
     //魔力充能配方修正
     //种子转化
     //event.recipes.botania.mana_infusion("产出物", "原材料", 消耗法力, "下方催化方块")
