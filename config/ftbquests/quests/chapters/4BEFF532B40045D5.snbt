@@ -682,22 +682,41 @@
 				"如果有同种物品过多的情况，就试试抽屉吧！"
 				"每个抽屉可以存储众多的单一种类物品（如果有多个格子则能存储对应的种数，但每种能存储的量也会相应降低）。右键抽屉正面可以放入，左键则是拿取（Shift拿取一组）。"
 				"哦对了，它还可以在破坏时保留内容物！这下可以当小潜影盒了。"
+				"{@pagebreak}"
+				"如果有很多乱七八糟的杂项，抽屉的槽位显然是不够的，这种时候就要用到背包了。"
+				"当然，背包的升级需要一些小小的魔法手段……"
+				"以及，由于堆叠升级是抽屉的功能，我们禁止了背包使用的堆叠升级！"
+				"但背包拿来存杂项还是很强大的）"
 			]
 			id: "3A2CCC29ACE28498"
-			subtitle: "虚空能源压缩"
-			tasks: [{
-				id: "0C0155F6F3E27FF3"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "storagedrawers:drawers"
+			subtitle: "强力存储的两条路径"
+			tasks: [
+				{
+					id: "0C0155F6F3E27FF3"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "storagedrawers:drawers"
+						}
 					}
+					title: "Any #storagedrawers:drawers"
+					type: "item"
 				}
-				title: "Any #storagedrawers:drawers"
-				type: "item"
-			}]
-			title: "抽屉"
+				{
+					id: "53E0687F0A0B1A50"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "curios:back"
+						}
+					}
+					title: "背包"
+					type: "item"
+				}
+			]
+			title: "抽屉与背包"
 			x: -3.5d
 			y: -1.5d
 		}
@@ -706,20 +725,35 @@
 			description: [
 				"在我们的修改下，如果抽屉不进行升级，那么它的储量将会相当有限。"
 				"用升级模板可以逐级做出多种升级，功能包括但不限于增大储量，销毁物品等等。"
+				"背包同样可以进行升级，但升级的方向不是存储而是其功能性。"
 			]
 			icon: "storagedrawers:diamond_storage_upgrade"
 			id: "360CCFCD57F813D7"
-			rewards: [{
-				id: "059860B7CA01B916"
-				item: "storagedrawers:obsidian_storage_upgrade"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "059860B7CA01B916"
+					item: "storagedrawers:obsidian_storage_upgrade"
+					type: "item"
+				}
+				{
+					id: "56E90A06F5B019E6"
+					item: "sophisticatedbackpacks:crafting_upgrade"
+					type: "item"
+				}
+			]
 			subtitle: "叮"
-			tasks: [{
-				id: "09A462DE1CB10D92"
-				item: "storagedrawers:upgrade_template"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "09A462DE1CB10D92"
+					item: "storagedrawers:upgrade_template"
+					type: "item"
+				}
+				{
+					id: "081F772F77887964"
+					item: "sophisticatedbackpacks:upgrade_base"
+					type: "item"
+				}
+			]
 			title: "升级！"
 			x: -4.5d
 			y: -2.5d

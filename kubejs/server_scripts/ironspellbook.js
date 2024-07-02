@@ -16,20 +16,6 @@ ServerEvents.recipes(event => {
         })
     }
 
-    //修改背包配方
-    event.remove({id:'sophisticatedbackpacks:backpack'})
-    event.shaped(Item.of('sophisticatedbackpacks:backpack',1),
-        ['BAB',
-        'BCB',
-        'DED'],
-        {
-            A:'#forge:leather',
-            B:'#forge:string',
-            C:'#balm:wooden_chests',
-            D:'irons_spellbooks:magic_cloth',
-            E:'create:andesite_alloy'
-        }
-    )
     //删除堆叠升级
     event.remove({id:'sophisticatedbackpacks:stack_upgrade_starter_tier'})
     event.remove({id:'sophisticatedbackpacks:stack_upgrade_tier_1'})
