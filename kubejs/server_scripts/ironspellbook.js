@@ -227,7 +227,7 @@ ServerEvents.recipes(event => {
         }
     )
     event.remove({id:'createchromaticreturn:multiplite_recipe'})
-    event.shaped(Item.of('createchromaticreturn:multiplite_ingot',1),
+    /*event.shaped(Item.of('createchromaticreturn:multiplite_ingot',1),
         ['ABC',
         'DEF',
         'GHI'],
@@ -242,5 +242,5 @@ ServerEvents.recipes(event => {
             H:'createchromaticreturn:industrium_ingot',
             I:'createchromaticreturn:durasteel_ingot'
         }
-    )
+    )*/
 })
