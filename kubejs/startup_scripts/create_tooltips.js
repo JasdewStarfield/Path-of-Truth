@@ -6,7 +6,8 @@ const Palette = Java.loadClass("com.simibubi.create.foundation.item.TooltipHelpe
 const CreateTooltipsItems = [
     "immersiveengineering:hammer",
     "botania:apothecary_default",
-    "ftbquests:book"
+    "ftbquests:book",
+    "botania:twig_wand"
 ]
 
 //下面是格式，写在assets/kubejs/lang/zh_cn.json（或者英文的就在en_us.json）

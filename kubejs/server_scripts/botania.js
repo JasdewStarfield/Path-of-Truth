@@ -381,7 +381,7 @@ ServerEvents.recipes(event => {
     event.recipes.botania.terra_plate('kubejs:midnight', 
         [
             'minecraft:dragon_egg', 
-            'irons_spellbooks:eldritch_manuscript',
+            'irons_spellbooks:mana_upgrade_orb',
             'botania:mana_bomb',
             'bloodmagic:archmagebloodorb',
             'minecraft:budding_amethyst',
