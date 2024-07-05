@@ -1,0 +1,48 @@
+
+["Create Railways Navigator Config"]
+	#The language that should be used for announcements of the navigator. Can be different from the game's language settings. (Default: Default)
+	#Allowed Values: DEFAULT, ENGLISH, GERMAN, DUTCH, POLISH, CHINESE_SIMPLIFIED, SAXON, BAVARIAN, SPANISH, RUSSIAN
+	language = "DEFAULT"
+	#The unit to be used to represent speed. (Default: KMH)
+	#Allowed Values: MS, KMH, MPH, FTS, KT, CMS
+	speed_unit = "KMH"
+	#Display Time Format. (Default: Hours 24)
+	#Allowed Values: TICKS, HOURS_24, HOURS_12
+	time_format = "HOURS_24"
+
+	["Create Railways Navigator Config".general]
+		#The value indicates how much deviation from the schedule a train should be considered delayed. Delayed trains are marked red in the real-time display. (Default: 500, 30 in-game minutes)
+		#Range: 1 ~ 24000
+		deviation_threshold = 500
+		#If a train departs earlier from the scheduled time than specified here, no real-time data will be displayed. Trains that depart earlier than the scheduled departure time minus the minimum transfer time are intentionally "missed" in order to continue to ensure the connection. (Default: 500, 30 in-game minutes)
+		#Range: 1 ~ 24000
+		realtime_early_arrival_threshold = 500
+		#The next stop or information about the start of the journey is announced in the specified number of ticks before the scheduled arrival at the next station. (Default: 500, 30 real life seconds)
+		#Range: 100 ~ 1000
+		next_stop_announcement = 500
+		#This value (in ticks) indicates how accurately the real-time data should be displayed. By default, only deviations over 10 in-game minutes (167 ticks, approx. 8 real life seconds) are displayed. The lower the value, the more accurate the real-time data but also the more often deviations from the schedule occur. (Default: 167, 10 in-game minutes)
+		#Range: 1 ~ 1000
+		realtime_precision_threshold = 167
+		#This value indicates when departing trains should be displayed on advanced displays. By default 1000 ticks (1 in-game hour, 50 real life seconds) before departure is imminent.
+		#Range: 200 ~ 24000
+		display_lead_time = 1000
+
+	["Create Railways Navigator Config".route_overlay]
+		#Scale of the route overlay UI. (Default: 0.75)
+		#Range: 0.25 ~ 2.0
+		scale = 0.75
+		#If active, events during the journey (e.g. the next stop) are announced. (Default: OFF)
+		narrator = false
+		#If active, you will receive short toasts about important events on your trip, e.g. delays, changes, ... (Default: ON)
+		notifications = true
+		#The position on your screen where you want the overlay to appear. (Default: Top Left)
+		#Allowed Values: TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+		position = "TOP_LEFT"
+
+	["Create Railways Navigator Config".search_settings]
+		#Specifies the minimum amount of time (in ticks) that must be available for changing the train. Only trains that depart later than the specified value at the transfer station will be selected. (Default: 1000, 1 in-game hour, approx. 50 real life seconds)
+		#Range: 0 ~ 24000
+		transfer_time = 1000
+		#List of train groups that should NOT be used in navigation. (Default: <empty>)
+		train_group_blacklist = []
+

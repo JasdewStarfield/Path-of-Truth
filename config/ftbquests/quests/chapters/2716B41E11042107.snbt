@@ -5,7 +5,6 @@
 	filename: "2716B41E11042107"
 	group: "58EDF058942F253F"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "immersiveengineering:component_electronic_adv"
 	id: "2716B41E11042107"
 	order_index: 0
@@ -14,6 +13,7 @@
 		{
 			dependencies: ["5FB9514C6DE7AD58"]
 			description: ["通过这个工程块，你可以开始构建一些真正意义上的重型机器了）"]
+			hide: true
 			id: "143E6A57D69BAE65"
 			rewards: [{
 				id: "7E32ADC9F2B7A0CD"
@@ -28,7 +28,7 @@
 				item: "immersiveengineering:heavy_engineering"
 				type: "item"
 			}]
-			title: "现代工业基石"
+			title: "【起点】现代工业基石"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -306,6 +306,7 @@
 				"1AAD83556BD302DD"
 			]
 			description: ["重油还可以进一步分解——然后获得你需要的一些特定资源）"]
+			hide: true
 			id: "107639F1A8166B9C"
 			shape: "diamond"
 			subtitle: "分，还可以分"
@@ -322,6 +323,7 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
+			hide: true
 			id: "443ED09E810FE23D"
 			shape: "diamond"
 			subtitle: "轰！"
@@ -344,6 +346,7 @@
 				"虽然需要一点小小的魔法手段……"
 				"*注：这似乎不会直接显示在jei里，所以最好去查询磁铁的配方（"
 			]
+			hide: true
 			id: "05EF035C814ADE9B"
 			shape: "diamond"
 			subtitle: "磁铁修整器"
@@ -364,6 +367,7 @@
 				"如果你没有分馏出石脑油，检查一下你的分馏塔是不是偷工减料了）"
 				"石油当中最宝贵的一部分也是最容易消失的一部分（摊手"
 			]
+			hide: true
 			id: "3B7D8BECFF387995"
 			subtitle: "层数不够就会消失"
 			tasks: [{
@@ -379,6 +383,7 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
+			hide: true
 			id: "2718164469D544DF"
 			shape: "diamond"
 			subtitle: "也许是燃料"
@@ -399,6 +404,7 @@
 				"我们其实不提倡这种不人道的行为，但是不得不说凝固汽油在MC里只适合干这个（？"
 				"注意：真的有凝固汽油弹，但是不便宜"
 			]
+			hide: true
 			id: "46A5743F6DC8054D"
 			shape: "diamond"
 			subtitle: "燃烧弹前置"
@@ -411,7 +417,12 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["5FB9514C6DE7AD58"]
+			dependencies: [
+				"5FB9514C6DE7AD58"
+				"3FCEB9256A15A4B2"
+				"1AAD83556BD302DD"
+			]
+			hide: true
 			icon: "tfmg:cast_iron_distillation_controller"
 			id: "576A28075CA7077D"
 			subtitle: "实际上这个分馏塔干的是裂化的活"
@@ -525,7 +536,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3E21C675D4F61E6B"]
+			dependencies: [
+				"3E21C675D4F61E6B"
+				"7C566E8D9F54FEF9"
+			]
 			description: [
 				"这将是对于你未来（可能存在的）电子厂生涯的第一步预演："
 				"看到纯粹的，还没有焊接任何元件的板子）"
@@ -533,22 +547,20 @@
 			id: "32DA53E6EDA0AC90"
 			subtitle: "焊板子！"
 			tasks: [{
-				id: "70491E97C12AFBD2"
-				item: "immersiveengineering:plate_duroplast"
+				id: "6186760AB2B79629"
+				item: "immersiveengineering:circuit_board"
 				type: "item"
 			}]
 			x: 12.0d
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"32DA53E6EDA0AC90"
-				"7C566E8D9F54FEF9"
-			]
+			dependencies: ["32DA53E6EDA0AC90"]
 			description: [
 				"自己给自己焊板子你还想要工资？不可能的，朋友）"
 				"哦对了，如果出现了废料那一定是你的运气问题，人不行不能怪路不平（x"
 			]
+			hide: true
 			id: "538F608DF5017A6A"
 			subtitle: "没有工资"
 			tasks: [{
@@ -661,6 +673,7 @@
 		{
 			dependencies: ["07B58ED0910776DF"]
 			description: [
+				"&a【完成后解锁主线章节：6I 统御机械】&r"
 				"工业测的作者oc之一——非常可爱）"
 				"也是通往世界真相的通行证）"
 				"&l&c这大抵是难以置信的序列组装配方（&r&r"
@@ -680,6 +693,7 @@
 				item: "kubejs:buran"
 				type: "item"
 			}]
+			title: "【终点】暴风雪"
 			x: 14.0d
 			y: 4.0d
 		}
@@ -722,7 +736,7 @@
 			]
 			title: "升级你的磁铁"
 			x: 5.0d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["46A5743F6DC8054D"]
@@ -876,7 +890,7 @@
 				type: "item"
 			}]
 			title: "另一种黑金"
-			x: 14.0d
+			x: 12.0d
 			y: -4.0d
 		}
 		{
@@ -897,7 +911,31 @@
 			x: -6.0d
 			y: -0.5d
 		}
+		{
+			dependencies: ["07B58ED0910776DF"]
+			description: [
+				"你解锁了本整合包内最强大的物流兼存储管理模组——精致存储！"
+				"功能非常强大，所以我们才把它放在了这里……"
+				"至于具体用法，请参考网络教程，这里不再赘述。"
+			]
+			id: "142E14F831B0F7BE"
+			rewards: [{
+				id: "2EAFCE05DDE964FA"
+				item: "refinedstorage:wireless_grid"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "别想太多，会头疼的"
+			tasks: [{
+				id: "5D1B5A24E2694FCF"
+				item: "refinedstorage:grid"
+				type: "item"
+			}]
+			title: "精致存储"
+			x: 19.0d
+			y: 0.0d
+		}
 	]
 	subtitle: ["Petrochemical Engineering"]
-	title: "黑金与化工"
+	title: "5I 黑金与化工"
 }

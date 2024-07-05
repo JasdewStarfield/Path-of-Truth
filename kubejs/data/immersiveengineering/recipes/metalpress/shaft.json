@@ -1,0 +1,1 @@
+{"type":"immersiveengineering:metal_press","conditions":[],"energy":2400,"input":{"item":"create:andesite_alloy"},"mold":"immersiveengineering:mold_rod","result":{"base_ingredient":{"item":"create:shaft"},"count":8}}

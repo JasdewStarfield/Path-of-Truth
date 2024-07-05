@@ -63,5 +63,7 @@ ServerEvents.recipes(event => {
     '#forge:flour'
   )
   event.remove({ id: 'beautify:rope' })
+  event.remove({ id: 'tfmg:crushing/saltpeter' })
+  event.remove({ id: 'tfmg:mixing/gun_powder' })
 
 })

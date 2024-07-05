@@ -4,20 +4,16 @@
 	default_quest_shape: ""
 	filename: "4BEFF532B40045D5"
 	group: ""
-	hide_quest_details_until_startable: true
 	icon: "undergarden:frozen_deepturf_block"
 	id: "4BEFF532B40045D5"
 	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"6A1B42D208C780BD"
-				"2BC7BDD7E5EC76E5"
-			]
+			dependencies: ["2BC7BDD7E5EC76E5"]
 			description: [
-				"相信你已经发现了，这个世界的温度很低。"
-				"在没有温度计的情况下，你的体感会通过物品栏右侧的菱形标志展示，过冷会出现寒霜，而过热会出现火焰。具体来说，这分为环境温度和体温两个系统。环境温度高于2度以及低于38度都是安全的，超出这个范围，你的体温就会变化，这时就要注意了！"
+				"相信你已经发现了，这个世界到处都是冰天雪地——这是设定的一部分。"
+				"在没有温度计的情况下，你的体感会通过物品栏右侧的菱形标志展示，过冷会出现&b寒霜&r，而过热会出现&c火焰&r。具体来说，这分为环境温度和体温两个系统。环境温度高于2度以及低于38度都是安全的，超出这个范围，你的体温就会变化，这时就要注意了！"
 				"在温度过冷或过热的情况下，你不能上床睡眠来跳过长夜，体温偏离过大还会受到伤害以及获得Debuff。"
 				"基于“真实性深度修正”，现在看起来能发热或者降温的东西一般来说有效……"
 				"比如（大部分）各类火把和一些特殊的矿物。"
@@ -101,10 +97,12 @@
 			description: [
 				"这个章节会专门用来介绍这个世界的不同之处，以便各位能够更好地生存，以及生活。"
 				"这些知识的跨度可能会很大，有些直到游戏的后期也很有用，这也是我们为什么要把这部分单独列出来。所以遇到不懂的可以先跳过，以后再看就好啦。"
-				"……但是总之，记得看。"
+				"……但是总之，记得看。&e因此，本章节的内容是&o&l完全解锁&r&r&e的，不需要完成前置内容也可以查看！&r"
 				""
 				"*默认设置会导致键位冲突，这种时候我们的建议是直接点击重置按键，我们有预设好的无冲突键位，您也可以自行调整。"
 			]
+			hide: true
+			hide_details_until_startable: false
 			icon: "supplementaries:globe"
 			id: "2BC7BDD7E5EC76E5"
 			rewards: [{
@@ -384,6 +382,8 @@
 			description: [
 				"怪奇宝典——正如其名，是本古怪的书。"
 				"它里面没有内容，但正因如此，它似乎能容纳下无限的知识……"
+				"实际使用方法是和其他模组的指导书进行合成，合成后就可以通过右键调用——左键还原回怪奇宝典。"
+				"&m&o&b“随身指导书书架”&r&r&r"
 			]
 			icon: {
 				Count: 1
@@ -682,22 +682,41 @@
 				"如果有同种物品过多的情况，就试试抽屉吧！"
 				"每个抽屉可以存储众多的单一种类物品（如果有多个格子则能存储对应的种数，但每种能存储的量也会相应降低）。右键抽屉正面可以放入，左键则是拿取（Shift拿取一组）。"
 				"哦对了，它还可以在破坏时保留内容物！这下可以当小潜影盒了。"
+				"{@pagebreak}"
+				"如果有很多乱七八糟的杂项，抽屉的槽位显然是不够的，这种时候就要用到背包了。"
+				"当然，背包的升级需要一些小小的魔法手段……"
+				"以及，由于堆叠升级是抽屉的功能，我们禁止了背包使用的堆叠升级！"
+				"但背包拿来存杂项还是很强大的）"
 			]
 			id: "3A2CCC29ACE28498"
-			subtitle: "虚空能源压缩"
-			tasks: [{
-				id: "0C0155F6F3E27FF3"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "storagedrawers:drawers"
+			subtitle: "强力存储的两条路径"
+			tasks: [
+				{
+					id: "0C0155F6F3E27FF3"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "storagedrawers:drawers"
+						}
 					}
+					title: "Any #storagedrawers:drawers"
+					type: "item"
 				}
-				title: "Any #storagedrawers:drawers"
-				type: "item"
-			}]
-			title: "抽屉"
+				{
+					id: "53E0687F0A0B1A50"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "curios:back"
+						}
+					}
+					title: "背包"
+					type: "item"
+				}
+			]
+			title: "抽屉与背包"
 			x: -3.5d
 			y: -1.5d
 		}
@@ -706,20 +725,35 @@
 			description: [
 				"在我们的修改下，如果抽屉不进行升级，那么它的储量将会相当有限。"
 				"用升级模板可以逐级做出多种升级，功能包括但不限于增大储量，销毁物品等等。"
+				"背包同样可以进行升级，但升级的方向不是存储而是其功能性。"
 			]
 			icon: "storagedrawers:diamond_storage_upgrade"
 			id: "360CCFCD57F813D7"
-			rewards: [{
-				id: "059860B7CA01B916"
-				item: "storagedrawers:obsidian_storage_upgrade"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "059860B7CA01B916"
+					item: "storagedrawers:obsidian_storage_upgrade"
+					type: "item"
+				}
+				{
+					id: "56E90A06F5B019E6"
+					item: "sophisticatedbackpacks:crafting_upgrade"
+					type: "item"
+				}
+			]
 			subtitle: "叮"
-			tasks: [{
-				id: "09A462DE1CB10D92"
-				item: "storagedrawers:upgrade_template"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "09A462DE1CB10D92"
+					item: "storagedrawers:upgrade_template"
+					type: "item"
+				}
+				{
+					id: "081F772F77887964"
+					item: "sophisticatedbackpacks:upgrade_base"
+					type: "item"
+				}
+			]
 			title: "升级！"
 			x: -4.5d
 			y: -2.5d
@@ -842,7 +876,7 @@
 			description: [
 				"我们禁止了村民售卖经验修补附魔书！"
 				"所以，刷不出来是正常现象，不用一直刷……"
-				"但是宝箱和钓鱼还是有几率出现经验修补的，多去探险吧，朋友！"
+				"但是钓鱼板条箱和宝箱还是有几率出现经验修补的，多去探险吧，朋友！"
 				"如果你希望保存你的经验，可以通过血魔法的经验手册/create的分液池/精妙背包的经验泵保存在外部，这样不至于死亡后有太大损失……"
 				"&o&a*友情提示：一旦你获得一本经验修补附魔书，那么就可以通过create的一些神秘方式进行复制，所以不要直接用掉了）&r&r"
 			]
@@ -921,12 +955,22 @@
 		}
 		{
 			dependencies: ["0ED1B830AB45D425"]
-			description: ["在这个包里，很多生命相关的魔法都需要从小小的鸡蛋开始……"]
+			description: [
+				"&a【完成后解锁额外章节：生物多样性】&r"
+				"在这个包里，很多生命相关的魔法都需要从小小的鸡蛋开始……"
+			]
 			id: "6AA0E68AB33475C9"
 			subtitle: "先有鸡还是先有蛋？"
 			tasks: [{
 				id: "395381A7F0BAA299"
-				item: "minecraft:egg"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:eggs"
+					}
+				}
+				title: "Any #forge:eggs"
 				type: "item"
 			}]
 			title: "生命基本单元"
@@ -979,5 +1023,5 @@
 		}
 	]
 	subtitle: ["The Representation of This World"]
-	title: "世界的表象"
+	title: "【知识】世界的表象"
 }

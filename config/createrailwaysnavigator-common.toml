@@ -1,0 +1,9 @@
+
+[createrailwaysnavigator_common_config]
+	#The time interval (in ticks) in which the Train Listener collects tick data of all trains. Higher values may result in less precise time information in the route details view, while lower values may result in higher CPU usage. Default: 100 (5s)
+	#Range: 100 ~ 1000
+	train_watcher_intervall = 100
+	#Minimum permission level required to edit the global navigator settings. 0 allows everyone to edit these settings.
+	#Range: 0 ~ 4
+	global_settings_permission_level = 0
+

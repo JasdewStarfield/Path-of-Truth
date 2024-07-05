@@ -10,13 +10,13 @@
 
 ServerEvents.recipes(event => {
     //修改血祭坛配方
-    //底层青铜，两侧活石，中间高炉砖
+    //底层青铜，两侧活石，中间初学者手册
     event.replaceInput({mod:'bloodmagic',output:'bloodmagic:altar'},
     'minecraft:gold_ingot', 'kubejs:bronze_ingot' )
     event.replaceInput({mod:'bloodmagic',output:'bloodmagic:altar'},
     '#balm:stones', 'botania:livingrock' )
     event.replaceInput({mod:'bloodmagic',output:'bloodmagic:altar'},
-    'minecraft:furnace', 'immersiveengineering:blastbrick' )
+    'minecraft:furnace', 'irons_spellbooks:copper_spell_book' )
     //修改炼金炉配方
     event.replaceInput({mod:'bloodmagic',output:'bloodmagic:alchemicalreactionchamber'},
     'minecraft:furnace', 'immersiveengineering:blastbrick' )
@@ -213,7 +213,7 @@ ServerEvents.recipes(event => {
                 "item":'minecraft:amethyst_block'
             },
             {
-                "item":'botania:spawner_mover'
+                "item":'botania:mana_bomb'
             }
         ],
         "output": {
@@ -366,6 +366,20 @@ ServerEvents.recipes(event => {
         },
         "upgradeLevel": 1
     })
+    //硫磺转烈焰粉
+    event.custom({
+        "type": "bloodmagic:altar",
+        "altarSyphon": 500,
+        "consumptionRate": 10,
+        "drainRate": 0,
+        "input": {
+            "tag": 'forge:dusts/sulfur'
+        },
+        "output": {
+            "item": 'minecraft:blaze_powder'
+        },
+        "upgradeLevel": 2
+    })
     //四级血魔法宝珠（导师宝珠）合成方式修改
     event.remove({id:'bloodmagic:altar/masterbloodorb'})
     event.custom({
@@ -394,20 +408,6 @@ ServerEvents.recipes(event => {
             "item": 'bloodmagic:activationcrystalcreative'
         },
         "upgradeLevel": 3
-    })
-    //创造魔力池合成
-    event.custom({
-        "type": "bloodmagic:altar",
-        "altarSyphon": 500000,
-        "consumptionRate": 200,
-        "drainRate": 0,
-        "input": {
-            "item": 'bloodmagic:lightritualstone'
-        },
-        "output": {
-            "item": 'botania:creative_pool'
-        },
-        "upgradeLevel": 4
     })
     //盖亚之魂合成奥术残骸
     event.custom({
@@ -485,7 +485,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "bloodmagic:array",
         "addedinput": {
-            "item": 'botania:dragonstone_block'
+            "item": 'createdeco:netherite_nugget'
         },
         "baseinput": {
             "item": 'botania:gaia_ingot'
@@ -564,20 +564,6 @@ ServerEvents.recipes(event => {
             "item": 'blue_skies:charoite'
         },
         "texture": "bloodmagic:textures/models/alchemyarrays/airsigil.png"
-    })
-    //建立创造多媒体火花
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'kubejs:midnight'
-        },
-        "baseinput": {
-            "item": 'botania:corporea_spark'
-        },
-        "output": {
-            "item": 'botania:corporea_spark_creative'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
     })
     //终极锭炼金翻转
     event.remove({id:'createchromaticreturn:antiplite_recipe'})
@@ -693,6 +679,51 @@ ServerEvents.recipes(event => {
     })
 
     //炼金反应炉配方修改
+    //恶魔合金复制
+    event.custom({
+        "type": "bloodmagic:arc",
+        //可能存在的追加输出（可以不写）
+        "addedoutput": [
+            {
+            "type": {
+                "item": "bloodmagic:dungeon_ore"
+            },
+            "chance": 1.0,
+            "mainchance": 0.0
+            },
+            {
+                "type": {
+                    "item": "bloodmagic:dungeon_ore"
+                },
+                "chance": 0.5,
+                "mainchance": 0.0
+            }
+        ],
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": "bloodmagic:dungeon_metal"
+        },
+        //输入液体（可以不写）
+        "inputFluid": {
+            "amount": 20000,
+            "fluid": "bloodmagic:life_essence_fluid"
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 1,//输出数量（可以不写）
+            "item": "bloodmagic:dungeon_metal"
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": "bloodmagic:arc/hydrate"
+        }
+    })
     //磁铁系列升级（无-红石，铁金-钻）
     event.custom({
         "type": "bloodmagic:arc",

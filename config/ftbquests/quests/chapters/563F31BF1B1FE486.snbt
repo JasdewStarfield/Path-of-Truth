@@ -1,9 +1,10 @@
 {
-	autofocus_id: "747404689C3EB6D7"
+	autofocus_id: "5BC62338A9F6E65B"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "563F31BF1B1FE486"
 	group: ""
+	hide_quest_details_until_startable: true
 	icon: "botania:sextant"
 	id: "563F31BF1B1FE486"
 	order_index: 2
@@ -11,6 +12,8 @@
 	quests: [
 		{
 			dependencies: ["6A1B42D208C780BD"]
+			description: ["&l&4这个章节不是正式任务线！只起到任务线的预告作用！具体请看下方的章节组中的内容！&r&r"]
+			hide: true
 			id: "5BC62338A9F6E65B"
 			subtitle: "触碰魔法边缘"
 			tasks: [{
@@ -462,5 +465,5 @@
 		}
 	]
 	subtitle: ["Magic Progressions"]
-	title: "魔法进程表"
+	title: "【总览】魔法进程表"
 }

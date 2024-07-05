@@ -5,7 +5,6 @@
 	filename: "75FCB41C7CD72B90"
 	group: "58EDF058942F253F"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: {
 		Count: 1
 		id: "alexsmobs:shattered_dimensional_carver"
@@ -23,6 +22,7 @@
 				"把虫子丢进末地的虚空，开启新世界的大门）"
 				"如果你计划召唤虚空蠕虫，你最好打完后做个雕像，因为可以用魔法进行兑换）"
 			]
+			hide: true
 			id: "48F6D7FEBE279F32"
 			subtitle: "大虫子"
 			tasks: [{
@@ -158,7 +158,10 @@
 				"你可以通过眼球创造瞻远者！"
 				"瞻远者的每一击都是无视护甲的比例伤害，但你需要它的胳膊。"
 				"这是一种挑战，朋友）"
+				""
+				"*注：由于瞻远者的特效过于神秘以至于有几率崩掉渲染，你可以通过击杀或者直接用刷怪蛋转化来获得它的胳膊）"
 			]
+			icon: "alexsmobs:farseer_arm"
 			id: "16F90B8A45AE1C92"
 			rewards: [{
 				id: "5A29F651F62C25ED"
@@ -167,11 +170,9 @@
 			}]
 			subtitle: "艰难挑战"
 			tasks: [{
-				entity: "alexsmobs:farseer"
-				icon: "alexsmobs:farseer_arm"
-				id: "5EEB7815CF54FB6E"
-				type: "kill"
-				value: 1L
+				id: "11BAACC504F0E437"
+				item: "alexsmobs:spawn_egg_farseer"
+				type: "item"
 			}]
 			title: "看得更远"
 			x: 0.0d
@@ -179,5 +180,5 @@
 		}
 	]
 	subtitle: ["Conquerer of Dimensions"]
-	title: "维度征服者"
+	title: "5A 维度征服者"
 }

@@ -7,8 +7,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 100,
-          "name": "tide:obsidian_fragment"
+          "weight": 80,
+          "name": "tide:obsidian_pike"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 60,
+          "name": "tide:ember_koi"
         },
         {
           "type": "minecraft:item",

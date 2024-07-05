@@ -1,4 +1,19 @@
+const engineeringBlocks = [
+    'kubejs:andesite_engineering',
+    'kubejs:fluid_engineering',
+    'kubejs:precise_engineering',
+    'kubejs:logistical_engineering',
+    'immersiveengineering:light_engineering',
+    'immersiveengineering:rs_engineering',
+    'immersiveengineering:heavy_engineering',
+    'kubejs:electronic_engineering'
+]
+
+
 ServerEvents.tags("item", (event) => {
+    //工程块
+    engineeringBlocks.forEach((id) => event.add("kubejs:engineering_block", id))
+
     //锌粉、锡粉
     event.add("forge:dusts","kubejs:zinc_dust")
     event.add("forge:dusts/zinc","kubejs:zinc_dust")
@@ -15,26 +30,32 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:nuggets","kubejs:bronze_nugget")
     event.add("forge:nuggets/bronze","kubejs:bronze_nugget")
 
-    /*
     event.add("minecraft:tools","kubejs:bronze_sword")
     event.add("minecraft:swords","kubejs:bronze_sword")
+    event.add("forge:tools/swords","kubejs:bronze_sword")
     event.add("minecraft:tools","kubejs:bronze_pickaxe")
     event.add("minecraft:pickaxes","kubejs:bronze_pickaxe")
+    event.add("forge:tools/pickaxes","kubejs:bronze_pickaxe")
     event.add("minecraft:tools","kubejs:bronze_axe")
     event.add("minecraft:axes","kubejs:bronze_axe")
+    event.add("forge:tools/axes","kubejs:bronze_axe")
     event.add("minecraft:tools","kubejs:bronze_hoe")
     event.add("minecraft:hoes","kubejs:bronze_hoe")
+    event.add("forge:tools/hoes","kubejs:bronze_hoe")
     event.add("minecraft:tools","kubejs:bronze_shovel")
     event.add("minecraft:shovels","kubejs:bronze_shovel")
-    */
+    event.add("forge:tools/shovels","kubejs:bronze_shovel")
 
     //Unify
     event.add("forge:coal_coke","tfmg:coal_coke")
     event.add("forge:storage_blocks/coal_coke","tfmg:coal_coke_block")
     event.add("forge:dusts","kubejs:gold_silver_mix")
     event.add("forge:dusts/sulfur","tfmg:sulfur_dust")
+    event.add("forge:dusts/saltpeter","tfmg:nitrate_dust")
     event.add("forge:flour","tmted:wheat_flour")
     event.add("forge:rope","beautify:rope")
+    event.add("forge:plates/netherite","createdeco:netherite_sheet")
+    event.add("forge:plates/andesite","createdeco:andesite_sheet")
 
     //Undergarden
     event.add("create:crushed_ores","kubejs:crushed_froststeel_ore")
@@ -66,7 +87,31 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:plates","kubejs:frostfire_double_plate")
 })
 
+ServerEvents.tags("block", (event) => {
+    //工程块
+    engineeringBlocks.forEach((id) => event.add("kubejs:engineering_block", id))
+
+    //扳手可拆卸拓展
+    engineeringBlocks.forEach((id) => event.add("create:wrench_pickup", id))
+    const wrenchPickupList = [
+        'immersiveengineering:wooden_barrel',
+        'immersiveengineering:gunpowder_barrel',
+        'immersiveengineering:metal_barrel',
+        'immersiveengineering:ballon',
+        'immersiveengineering:electric_lantern',
+        'immersiveengineering:thermoelectric_generator',
+        'immersiveengineering:fluid_pump',
+        'immersiveengineering:sample_drill',
+        'immersiveengineering:tesla_coil',
+        'immersiveengineering:blastfurnace_preheater'
+    ]
+    wrenchPickupList.forEach((id) => event.add("create:wrench_pickup", id))
+
+    event.remove("minecraft:mineable/pickaxe","tfmg:oil_deposit")
+})
+
 ServerEvents.tags("fluid", (event) => {
     event.add("forge:ethylene","tfmg:ethylene")
     event.add("forge:propylene","tfmg:propylene")
+    event.add("forge:lubrication_oil","tfmg:lubrication_oil")
 })

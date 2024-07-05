@@ -4,6 +4,11 @@
         "blue_skies:comet_berries",
         "bosses_of_mass_destruction:crystal_fruit",
         "undergarden:rotten_blisterberry",
-        "undergardendelight:gloomgourd_slice"
+        "undergardendelight:gloomgourd_slice",
+        "collectorsreap:lime",
+        "collectorsreap:pomegranate",
+        "collectorsreap:lime_pie",
+        "collectorsreap:lime_cake",
+        "collectorsreap:pomegranate_cake"
     ]
 }

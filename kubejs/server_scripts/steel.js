@@ -5,13 +5,14 @@ ServerEvents.recipes(event => {
     ' DDD ',
     'DBBBD',
     'DBABD',
-    ' DCD ',
-    ' DCD '
+    ' ECE ',
+    ' ECE '
   ], {
-    A: 'create:precision_mechanism',
+    A: 'kubejs:precise_engineering',
     B: '#forge:glass',
     C: 'tfmg:cast_iron_pipe',
-    D: '#forge:ingots/cast_iron'
+    D: '#forge:ingots/cast_iron',
+    E: '#forge:ingots/elementium'
   })
   event.remove({ id: 'tfmg:crafting/blast_furnace_output' })
   event.recipes.create.mechanical_crafting('tfmg:blast_furnace_output', [
@@ -19,12 +20,26 @@ ServerEvents.recipes(event => {
     'DBBBD',
     'DBABD',
     'DBBBD',
-    ' DCD '
+    ' ECE '
   ], {
-    A: 'create:precision_mechanism',
+    A: 'kubejs:precise_engineering',
     B: 'tfmg:fireproof_brick',
     C: 'tfmg:cast_iron_pipe',
-    D: '#forge:ingots/cast_iron'
+    D: '#forge:ingots/cast_iron',
+    E: '#forge:gems/dragonstone'
+  })
+
+  //动力合成器
+  event.remove({ output: 'create:mechanical_crafter' })
+  event.shaped('6x create:mechanical_crafter', [ 
+    ' D ', 
+    'ACA',
+    ' B '  
+    ], {
+    B: 'kubejs:precise_engineering',
+    D: 'kubejs:andesite_engineering',
+    A: 'create:cogwheel',
+    C: '#forge:workbench'
   })
   
   event.remove({id:'tfmg:mixing/cast_iron_ingot'})

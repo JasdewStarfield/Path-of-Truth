@@ -17,6 +17,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'createchromaticreturn:chromatic_compound_recipe' })
   event.remove({ id: 'createchromaticreturn:andesite_component_recipe' })
   event.remove({ id: 'createchromaticreturn:brass_component_recipe' })
+  event.remove({ input: 'createchromaticreturn:andesite_component' })
+  event.remove({ input: 'createchromaticreturn:brass_component' })
 
   //环境枪
   event.shapeless(

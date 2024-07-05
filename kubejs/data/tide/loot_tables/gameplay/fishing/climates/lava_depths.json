@@ -7,8 +7,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 100,
-          "name": "tide:obsidian_fragment"
+          "weight": 90,
+          "name": "tide:volcano_tuna"
         },
         {
           "type": "minecraft:item",

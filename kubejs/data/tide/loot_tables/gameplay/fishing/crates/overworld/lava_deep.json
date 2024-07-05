@@ -32,6 +32,18 @@
           "type": "minecraft:item",
           "weight": 60,
           "name": "minecraft:crying_obsidian"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 20,
+          "quality":1,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "treasure": true
+            }
+          ]
         }
       ]
     }

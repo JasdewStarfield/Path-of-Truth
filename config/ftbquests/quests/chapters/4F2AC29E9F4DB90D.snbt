@@ -1,11 +1,10 @@
 {
-	autofocus_id: "11EC3A84F0C84E65"
+	autofocus_id: "4D493DCB4C0B99C0"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "4F2AC29E9F4DB90D"
 	group: "12EA2EE194EF67D3"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "create:brass_ingot"
 	id: "4F2AC29E9F4DB90D"
 	order_index: 0
@@ -14,6 +13,7 @@
 		{
 			dependencies: ["6E0D85E43EDF1994"]
 			description: ["所以，工业的新篇章也对你开启了。"]
+			hide: true
 			id: "11EC3A84F0C84E65"
 			rewards: [{
 				id: "2C399AD7FD10484E"
@@ -28,7 +28,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			title: "工业基石"
+			title: "【起点】工业基石"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -151,16 +151,33 @@
 		{
 			dependencies: ["11EC3A84F0C84E65"]
 			description: [
+				"&a【完成后解锁任务线：下界之旅】&r"
 				"你获得了一个笼子，但很显然你需要给里面找到合适的房客。"
 				"下地狱去吧，朋友！"
 			]
+			icon: "create:empty_blaze_burner"
 			id: "003B99516797BF14"
 			subtitle: "我人没了"
-			tasks: [{
-				id: "3B61818AD5CFF549"
-				item: "create:empty_blaze_burner"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "3B61818AD5CFF549"
+					item: "create:empty_blaze_burner"
+					type: "item"
+				}
+				{
+					dimension: "minecraft:the_nether"
+					icon: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "53B8DE7861B4088E"
+					title: "访问下界"
+					type: "dimension"
+				}
+			]
 			title: "烧起来了……吗？"
 			x: -1.0d
 			y: 2.0d
@@ -213,6 +230,7 @@
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
 			description: ["在我们的设定中，由于铜会生锈，只有康铜才能够抵挡流体的腐蚀，并被铸造为可以容纳流体的器械。"]
+			hide: true
 			id: "28617A52922404CE"
 			subtitle: "这里的铜其实是康铜"
 			tasks: [{
@@ -226,6 +244,7 @@
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
 			description: ["让你的液体动一动（大雾"]
+			hide: true
 			id: "27FD1F76136CBD0B"
 			subtitle: "你甚至可以用它们处理牛奶（笑"
 			tasks: [
@@ -284,7 +303,7 @@
 				type: "item"
 			}]
 			title: "注入！"
-			x: 1.0d
+			x: 1.5d
 			y: 8.5d
 		}
 		{
@@ -325,7 +344,7 @@
 				type: "item"
 			}]
 			title: "更多的“帮手”"
-			x: -1.0d
+			x: -1.5d
 			y: 8.5d
 		}
 		{
@@ -337,6 +356,7 @@
 				"虽然这东西叫电子管没错，但是很显然它不能充电，你也没进入电子时代）"
 				"不过有一些组件还是需要它。"
 			]
+			hide: true
 			id: "73CD9D2DD215B5F5"
 			subtitle: "嗯，伪电子时代"
 			tasks: [{
@@ -354,6 +374,7 @@
 				"你应该发现了，在鼓风机前面放某些特定的东西可以实现批量加工）"
 				"但很显然，单格水和单格岩浆都不是很容易放置，而营火又容易烫到自己，所以——这就是解决方案。"
 			]
+			hide: true
 			id: "07C921FBCF56E703"
 			shape: "diamond"
 			subtitle: "其实是保护你自己）"
@@ -364,7 +385,7 @@
 			}]
 			title: "鼓风机输出"
 			x: -0.5d
-			y: 11.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["07C921FBCF56E703"]
@@ -395,49 +416,30 @@
 			]
 			title: "触媒装箱"
 			x: 0.5d
-			y: 11.5d
-		}
-		{
-			dependencies: ["7F98F9F01F44BA28"]
-			description: [
-				"未来你需要的黄铜可不是个小数目。准备好一片空地搭建你的工厂吧，朋友！"
-				"希望你有足够的血液来换取岩浆（笑"
-			]
-			icon: "immersiveengineering:conveyor_basic"
-			id: "0E544DEEB04F9620"
-			shape: "diamond"
-			subtitle: "很显然你需要更多……"
-			tasks: [{
-				id: "1D9BAE5F3165752F"
-				title: "解放双手！"
-				type: "checkmark"
-			}]
-			title: "流水线安装作业"
-			x: -3.5d
 			y: 12.0d
 		}
 		{
 			dependencies: [
 				"73CD9D2DD215B5F5"
-				"10CF3F30EC2A65E8"
-				"607A957382E65976"
+				"7F98F9F01F44BA28"
 			]
 			description: [
 				"很好，你现在开始接触到精密机械了，希望你以后会习惯序列组装中的废料（？"
 				"序列组装总是有失败几率的，所以如果失败了，不要骂人，再来一次）"
 				""
-				"&n注意：从下一步开始，你将涉及到永昼之地或者恒晓之地的特殊矿物。如果你还没有涉及到这些维度，出发去探险吧！&r"
+				"&n注意：从这一步开始，你将涉及到永昼之地或者恒晓之地的特殊矿物。如果你还没有涉及到这些维度，出发去探险吧！&r"
 			]
+			hide: true
 			id: "51676EF62E7A17F3"
 			subtitle: "精密元件的基石"
 			tasks: [{
-				id: "5DF57BF22C499317"
-				item: "kubejs:precise_engineering"
+				id: "5D18D64F0341F617"
+				item: "create:precision_mechanism"
 				type: "item"
 			}]
 			title: "精密工业"
-			x: 0.0d
-			y: 14.0d
+			x: -3.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
@@ -446,6 +448,7 @@
 				"你&l&b不能&r&r把它们镶嵌在盔甲上增加保护，真是遗憾）"
 				"这里缅怀一下曾经的匠魂（"
 			]
+			hide: true
 			id: "10CF3F30EC2A65E8"
 			subtitle: "这显然比铁硬）"
 			tasks: [{
@@ -463,6 +466,7 @@
 				"由于我们追求真实，你现在不可以通过杂酚油桶简单粗暴的生成这些东西了：你需要注液，不过问题应该也不大。"
 				"*小声：反正杂酚油总会多到你用不完（"
 			]
+			hide: true
 			id: "607A957382E65976"
 			subtitle: "沉浸工业的基础"
 			tasks: [{
@@ -475,28 +479,34 @@
 			y: 12.0d
 		}
 		{
-			dependencies: ["51676EF62E7A17F3"]
+			dependencies: [
+				"51676EF62E7A17F3"
+				"10CF3F30EC2A65E8"
+				"607A957382E65976"
+			]
 			description: [
+				"&a【完成后解锁主线章节：3I 钢铁雄心】&r"
 				"你成功的开启了精密时代，更多的工业和更有趣的历程在像你展开。"
 				"走下去吧，走到世界尽头，真相会在那里等着你。"
 			]
+			hide: true
 			id: "242C57AF7F6116E4"
 			rewards: [{
-				id: "181F01FA60DFF6B7"
-				item: "create:large_cogwheel"
+				id: "6BEEB17986271FAD"
+				item: "create:electron_tube"
 				type: "item"
 			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "新时代的曙光！"
 			tasks: [{
-				id: "00035BC45BCE3C29"
-				item: "create:precision_mechanism"
+				id: "5192B0EA05B4611F"
+				item: "kubejs:precise_engineering"
 				type: "item"
 			}]
-			title: "精密时代"
+			title: "【终点】精密时代"
 			x: 0.0d
-			y: 17.0d
+			y: 15.0d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
@@ -550,6 +560,7 @@
 			dependencies: ["73CD9D2DD215B5F5"]
 			description: ["终于可以用简单的方式分拣物品了，不是吗？"]
 			id: "029AA89F07AEE09D"
+			shape: "diamond"
 			subtitle: "这居然是过滤器！"
 			tasks: [
 				{
@@ -575,41 +586,7 @@
 			]
 			title: "智能时代"
 			x: 0.0d
-			y: 12.5d
-		}
-		{
-			dependencies: [
-				"51676EF62E7A17F3"
-				"73CD9D2DD215B5F5"
-			]
-			description: ["多造一些这个，用它们组合成阵列，你就可以合成很多有趣的，工作台无法制作的东西了……"]
-			id: "58EBE6ABA158001D"
-			subtitle: "Anything（指可以合成任何东西）"
-			tasks: [{
-				count: 27L
-				id: "39FACC104AFC5067"
-				item: "create:mechanical_crafter"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 15.5d
-		}
-		{
-			dependencies: ["58EBE6ABA158001D"]
-			description: [
-				"你最好的垃圾处理器……"
-				"小心自己别掉进去了"
-			]
-			id: "7F8965344254B522"
-			subtitle: "真是一对大家伙"
-			tasks: [{
-				count: 2L
-				id: "2925517A680616B5"
-				item: "create:crushing_wheel"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 15.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
@@ -640,9 +617,9 @@
 			]
 			title: "附魔工业"
 			x: 0.0d
-			y: 8.0d
+			y: 8.5d
 		}
 	]
 	subtitle: ["Exotic Alloys"]
-	title: "奇异合金"
+	title: "2I 奇异合金"
 }

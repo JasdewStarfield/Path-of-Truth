@@ -5,7 +5,6 @@
 	filename: "02DDD45373A8DC5E"
 	group: "461ABC15BE939FA8"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "kubejs:bronze_block"
 	id: "02DDD45373A8DC5E"
 	order_index: 0
@@ -14,6 +13,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["不管干什么，你总归需要从工作台开始的，对吧）"]
+			hide: true
 			id: "46156FBBDCAB4B1D"
 			rewards: [{
 				id: "68889BA4397825CC"
@@ -46,7 +46,7 @@
 				title: "Any #forge:workbench"
 				type: "item"
 			}]
-			title: "从原始工具开始"
+			title: "【起点】从原始工具开始"
 			x: 0.0d
 			y: -2.5d
 		}
@@ -114,6 +114,7 @@
 		{
 			dependencies: ["7A6ADC4EE6686110"]
 			description: ["你的齿轮和杠杆也在转，不是吗？"]
+			hide: true
 			id: "2F791EC2607066B4"
 			subtitle: "地球在转。"
 			tasks: [
@@ -171,11 +172,12 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["374C430D0AD70D2E"]
+			dependencies: ["46156FBBDCAB4B1D"]
 			description: [
 				"想要把普通的材料变成安山合金，你需要一点小小的……催化剂）"
 				"它并不难获得，甚至可以说无穷无尽，但需要一点你的耐心。"
 			]
+			hide: true
 			id: "489BC5567AF09228"
 			subtitle: "是的，这个世界不只需要科技"
 			tasks: [{
@@ -498,6 +500,7 @@
 				"现在你不能通过把安山合金按到原木上来创建机壳了：你需要在活木上进行加工才可以。"
 				"是的，你首先需要用魔法活化木头，然后它们才能在加工台上被你压成机壳。"
 			]
+			hide: true
 			id: "50BB17FEED3B10D2"
 			subtitle: "什么，这不科学！"
 			tasks: [{
@@ -583,7 +586,10 @@
 				"2C15AA9278830174"
 				"6D46668D63E83ED7"
 			]
-			description: ["奖励有点臭但我相信你不会介意的（笑"]
+			description: [
+				"&a【完成后解锁主线章节：2I 奇异合金】&r"
+				"奖励有点臭但我相信你不会介意的（笑"
+			]
 			id: "6E0D85E43EDF1994"
 			rewards: [
 				{
@@ -612,6 +618,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
+			title: "【终点】事铁啊！"
 			x: 0.0d
 			y: 18.0d
 		}
@@ -621,6 +628,7 @@
 				"在这章你会提前接触到一些沉浸工程的多方块结构。（就当是为电气时代做预习了吧）"
 				"多方块结构，顾名思义，你要把它按指定的方法摆出来（手册里都有写），然后拿锤子右击一下某个特定的位置以将它组装为有功能的完整多方块结构。"
 			]
+			hide: true
 			id: "336807D048A4EF6A"
 			subtitle: "80！80！"
 			tasks: [
@@ -751,5 +759,5 @@
 		}
 	]
 	subtitle: ["Age of Bronze"]
-	title: "青铜时代"
+	title: "1I 青铜时代"
 }

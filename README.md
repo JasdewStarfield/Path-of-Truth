@@ -109,12 +109,8 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 1. 先安装原版Minecraft，版本1.20.1（如果启动器支持，建议启用版本独立文件夹）。
 2. 安装Forge，版本47.2.32。
-3. 克隆本仓库到你安装版本的目录下（版本独立时通常为versions文件夹的一子文件夹）。
+3. 克隆本仓库的dev-client分支到你安装版本的目录下（版本独立时通常为versions文件夹的一子文件夹）。
 
-
-```sh
-git clone https://github.com/JasdewStarfield/Path-of-Truth.git
-```
 
 ### 文件目录说明
 
@@ -122,10 +118,6 @@ git clone https://github.com/JasdewStarfield/Path-of-Truth.git
 filetree 
 ├── README.md
 ├── LICENSE
-├── log4j2.xml
-├── hmclverion.cfg
-├── arandompack.jar
-├── arandompack.json
 ├── kubejs  //魔改内容
 │  ├── assests
 │  ├── data
@@ -167,6 +159,8 @@ filetree
 深夜鸽子 | MidnightPigeon
 
 同时感谢为我们提供了代码、建筑、配乐支持的JackyBlackson
+
+感谢为我们主动提供材质/模型支持的美工大佬KEYboradManDesu
 
  *您也可以在贡献者名单中参看所有参与该项目的开发者。*
 

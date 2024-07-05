@@ -1,11 +1,11 @@
 {
 	chapter_groups: [
-		{ id: "461ABC15BE939FA8", title: "初识世界" }
-		{ id: "12EA2EE194EF67D3", title: "工业革命" }
-		{ id: "5B3B99F7ECC70789", title: "电火花与炼金术" }
-		{ id: "560257DD7915FBBC", title: "“不选大的怎么能赢”" }
-		{ id: "58EDF058942F253F", title: "撬动真理的杠杆" }
-		{ id: "453FC1B4D45CC35B", title: "终末之行" }
-		{ id: "60E63434E814893B", title: "创世之力" }
+		{ id: "461ABC15BE939FA8", title: "1 初识世界" }
+		{ id: "12EA2EE194EF67D3", title: "2 工业革命" }
+		{ id: "5B3B99F7ECC70789", title: "3 电火花与炼金术" }
+		{ id: "560257DD7915FBBC", title: "4 “不选大的怎么能赢”" }
+		{ id: "58EDF058942F253F", title: "5 撬动真理的杠杆" }
+		{ id: "453FC1B4D45CC35B", title: "6 终末之行" }
+		{ id: "60E63434E814893B", title: "∞ 创世之力" }
 	]
 }

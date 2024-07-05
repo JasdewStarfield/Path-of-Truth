@@ -5,7 +5,6 @@
 	filename: "1D53DE04FE0F0355"
 	group: ""
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "minecraft:skeleton_skull"
 	id: "1D53DE04FE0F0355"
 	images: [{
@@ -27,6 +26,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
+				"&a【完成后解锁本整合包起始章节】&r"
 				"欢迎来到“真理之路”整合包。"
 				"本整合包由&b狂野工程师JasdewStarfield&r与&a抽象魔法师MidnightPigeon&r联合创作。"
 				"在这个世界，你将进行持续的探索发现，直至终末。"
@@ -45,6 +45,31 @@
 				"我们默认&9所有的任务奖励都是队伍奖励&r，也就是说，如果多个玩家进行FTB组队，那么就&a只能拿到一份奖励&r，这避免了新手通过加入队伍拿到高等级奖励的可能。"
 				"如果你希望自己拿到全部的奖励，那就不要随意组队。"
 				"具体参见“世界的表象”中有关组队和圈地的任务线表述。"
+				"有关于魔改配方和特殊说明的部分，请继续看下一页。"
+				"{@pagebreak}"
+				"好了，现在是作者们最喜欢的&c&l高血压&r&r环节（高攻击性警告）。首先，切记&b&l这首先是一个魔改包，然后是一个硬核包。&r&r"
+				"典型的例子是&c“我怎么炼铁”&r和&c“没有铁桶怎么启动花药台”&r，问出这种问题说明任务线和配方你是真的没看。同理，如果你问&c“水车怎么放水也不动”&r，那你会被茉露揍的。"
+				"对于本包的配方和运作方式，优先级大致如下："
+				"&c任务=JEI＞教程书＞思索＞常规经验&r"
+				"本整合包&a&l没有一条任务线是多余的&r&r，所以能看就看，多看书没坏处。"
+				"游戏内问题（关于结构搭建，物品获得/使用，世界机制/设定）请先&c&l按顺序检查任务，JEI，各模组说明书&r&r；这基本包含了所有的解决方案。"
+				"有关于任务线的详细说明，请查看下一页。"
+				"{@pagebreak}"
+				"本整合包除了几条顶端的说明线之外有若干个章节。除去最后一章（终极章节），&b每一章都有工业，魔法，冒险三条任务线，而且互相会用到材料，单推卡住的话我的评价是&l活该。&r"
+				"顶端的工业和魔法进度线是用来查看进度的，详细提示需要在章节内进行查询，所以不要看到进度线到了就&c不看配方冲去做&r——那更是会卡住的。"
+				"&b“世界的表象”&r几乎全章节（除了下方的娱乐章节）都需要认真阅读，&c&l世界机制的说明&r&r在其中是基本完备的。"
+				"如果&4不看任务就开始大喊机制很难懂很恶心&r，那我个人认为&c你需要一个能接受文字的大脑&r。"
+				"有关于游戏常见问题和联系方式，请看下一页。"
+				"{@pagebreak}"
+				"&b这是本任务的最后一页。&r"
+				"如果上述的所有方式都不能解决你的问题，那就需要联系我们了。我们&d会尽可能修复所有的bug（或者说特性），前提是那是真的特性。&r"
+				"如果你的游戏使用机械手的时候导致卡顿和闪退，那么你需要检查显卡驱动，将其更新至最新版，并降低游戏分辨率。"
+				"如果你用原版漏斗导出钢消失了，请换用create漏斗导出并重启游戏。"
+				"现在有两条和我们反馈的途径：github和群聊。链接如下："
+				"&6&lgithub&r&6：github.com/JasdewStarfield/Path-of-Truth&r"
+				"&a&lQQ群号&r&a：631894460&r"
+				""
+				"&l&b感谢大家的下载、游玩与支持。&r&r"
 			]
 			icon: "minecraft:writable_book"
 			id: "6A1B42D208C780BD"
@@ -56,11 +81,33 @@
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "科学与魔法都是追求真理的手段。"
-			tasks: [{
-				id: "2172F4EA05003DC8"
-				title: "真理之路"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "2172F4EA05003DC8"
+					title: "真理之路"
+					type: "checkmark"
+				}
+				{
+					id: "121305C4E037E866"
+					title: "确认看完每一页了吗？"
+					type: "checkmark"
+				}
+				{
+					id: "027A17090FEDEC21"
+					title: "再次确认！每一页！都要看！"
+					type: "checkmark"
+				}
+				{
+					id: "28F7B9819E2F8660"
+					title: "看完了记得去查看其他的任务线！"
+					type: "checkmark"
+				}
+				{
+					id: "6A2BBF87F1819F34"
+					title: "有这个小屋在这里，你可以看完所有说明再开始！"
+					type: "checkmark"
+				}
+			]
 			x: 0.0d
 			y: -2.0d
 		}
@@ -242,7 +289,7 @@
 				}
 			]
 			title: "选择：独自开始"
-			x: -1.0d
+			x: -2.0d
 			y: -4.0d
 		}
 		{
@@ -271,7 +318,36 @@
 				}
 			]
 			title: "选择：留在世界出生点"
-			x: 1.0d
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4543C26614BBBE4C"]
+			description: [
+				"联机开服推荐 - 星遥游戏"
+				"我们致力于提供良好的联机服务，"
+				"目前已支持“真理之路”自动部署，"
+				"您仅需下单，即可零基础体验欢快的联机之旅。"
+				"输入优惠券代码 24pot 可获得10%off的优惠哦~"
+				"官网链接：&nhttps://started.ink/&r"
+			]
+			icon: "immersiveengineering:toolupgrade_revolver_electro"
+			id: "2884B23B36CF2640"
+			rewards: [{
+				id: "33B8CB6BC97484EF"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "如果想开服务器玩这个包可以尝试一下！"
+			tasks: [{
+				id: "4D9529C274E7A8F4"
+				title: "感谢金主！"
+				type: "checkmark"
+			}]
+			title: "关于开服……"
+			x: 0.0d
 			y: -4.0d
 		}
 	]

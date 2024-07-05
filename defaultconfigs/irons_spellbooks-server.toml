@@ -47,7 +47,7 @@
 
 [Worldgen]
 	#The weight of the priest house spawning in a village. Default: 4
-	priestHouseWeight = 4
+	priestHouseWeight = 8
 
 #Individual Spell Configuration
 [Spells]

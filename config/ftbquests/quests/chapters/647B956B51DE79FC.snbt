@@ -4,7 +4,6 @@
 	filename: "647B956B51DE79FC"
 	group: "560257DD7915FBBC"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "bloodmagic:ritualdiviner"
 	id: "647B956B51DE79FC"
 	order_index: 1
@@ -19,6 +18,7 @@
 				"仪式启动需要LP，一些功能持续性的仪式需要持续消耗LP，所以请确保你携带的气血宝珠足够多——附近多放几个祭坛也行）"
 				"&o&c注：不同属性的仪式石是通过“喷漆”获得的，这一合成方式在jei中无法查询，可以查询“元素铭文工具”获得想要的东西。当然，更省心的方式是直接使用仪式推测杖来完成——因为它有无限耐久。&r&r"
 			]
+			hide: true
 			icon: "bloodmagic:masterritualstone"
 			id: "5A5B1D96C50D1EAE"
 			rewards: [{
@@ -42,7 +42,7 @@
 					type: "item"
 				}
 			]
-			title: "大型仪式的基础"
+			title: "【起点】大型仪式的基础"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -94,11 +94,12 @@
 		{
 			dependencies: ["5A5B1D96C50D1EAE"]
 			description: [
-				"在血魔法的书中，你应该能找到两种进入地牢的仪式，分别对应小型地牢和大型地牢。"
-				"其中，小型地牢的危险性和收获都比较小，也无法让你获取恶魔金属；而大型地牢则非常复杂，战利品也非常多。"
+				"&b【完成后解锁主线章节：5M 生命炼成】&r"
+				"在血魔法的书中，你应该能找到两种进入地牢的仪式，分别对应&b小型地牢&r和&c大型地牢&r。"
+				"其中，&b小型地牢（隐域仪式）&r的危险性和收获都比较小，也无法让你获取恶魔金属；而&c大型地牢（无尽之路仪式）&r则非常复杂，战利品也非常多。"
 				"两种地牢的仪式都只需要进行一次，因为入口是固化的，你可以一直通过核心的柱状结构反复出入地牢。"
 				"如果你发现有的房间打不开，那就回去自己合成钥匙吧）"
-				"注意：仪式完成后，所有仪式石都会失效（除了生成的特殊结构），这些失效的石头是可以随意挖掘的"
+				"&4当你收集了一整个恶魔合金块后，你就可以通过鲜血进行恶魔合金的催化了）&r"
 			]
 			icon: "bloodmagic:dungeon_ore"
 			id: "7CA6215959E08F1F"
@@ -108,7 +109,7 @@
 				item: "bloodmagic:ingot_hellforged"
 				type: "item"
 			}]
-			title: "恶魔的金属"
+			title: "【终点】恶魔的金属"
 			x: 0.0d
 			y: -2.0d
 		}
@@ -554,5 +555,5 @@
 		}
 	]
 	subtitle: ["Eerie Ritual"]
-	title: "诡秘仪式"
+	title: "4M 诡秘仪式"
 }

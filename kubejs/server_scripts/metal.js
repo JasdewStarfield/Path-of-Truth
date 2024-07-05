@@ -181,7 +181,7 @@ ServerEvents.recipes(event => {
     */
 
     //用铜粉、锡粉合成青铜粉
-    event.recipes.create.mixing('kubejs:bronze_dust', ['#forge:dusts/tin','#forge:dusts/copper','#forge:dusts/copper','#forge:dusts/copper'])
+    event.recipes.create.mixing('2x kubejs:bronze_dust', ['#forge:dusts/tin','#forge:dusts/copper','#forge:dusts/copper','#forge:dusts/copper'])
 
     //石磨粉碎铜锭锡锭镍锭锌锭
     event.recipes.create.milling(Item.of('kubejs:tin_dust').withChance(0.5), '#forge:ingots/tin')
@@ -190,7 +190,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.milling(Item.of('kubejs:zinc_dust').withChance(0.5), '#forge:ingots/zinc')
 
     event.remove({id:/alloyed\.*/})
-    event.recipes.create.mixing('kubejs:bronze_ingot', ['#forge:ingots/tin','#forge:ingots/copper','#forge:ingots/copper','#forge:ingots/copper']).heated()
+    event.recipes.create.mixing('2x kubejs:bronze_ingot', ['#forge:ingots/tin','#forge:ingots/copper','#forge:ingots/copper','#forge:ingots/copper']).heated()
 
     //康铜
     //移除合成康铜粉配方
@@ -225,20 +225,23 @@ ServerEvents.recipes(event => {
     event.remove({id:"create:mixing/brass_ingot"})
     let inter = 'kubejs:incomplete_brass_ingot'
     event.recipes.create.sequenced_assembly([
-        Item.of('create:brass_ingot').withChance(60.0),
-        Item.of('create:zinc_ingot').withChance(20.0),
-        Item.of('copper_ingot').withChance(20.0)
+        Item.of('create:brass_ingot').withChance(80.0),
+        Item.of('create:zinc_ingot').withChance(10.0),
+        Item.of('copper_ingot').withChance(10.0)
     ], 'minecraft:copper_ingot', [
-        event.recipes.createFilling(inter, [inter, Fluid.lava(500)]),
+        event.recipes.createFilling(inter, [inter, Fluid.lava(250)]),
         event.recipes.createDeploying(inter, [inter, 'kubejs:zinc_dust']),
-        event.recipes.createFilling(inter, [inter, Fluid.water(500)]),
+        event.recipes.createFilling(inter, [inter, Fluid.water(250)]),
         event.recipes.createPressing(inter, inter)
     ]).transitionalItem(inter).loops(1)
 
     //黑曜石支持用石磨处理
     event.recipes.create.milling(Item.of('create:powdered_obsidian').withChance(0.75), '#forge:obsidian')
     //焦煤也是
-    event.recipes.create.milling(Item.of('tfmg:coal_coke_dust').withChance(0.75), '#forge:coal_coke')
+    event.recipes.create.milling(Item.of('tfmg:coal_coke_dust').withChance(0.75), '#forge:coal_coke').id('coal_coke_dust_manual_only')
+
+    //木炭压制焦煤（小概率）
+    event.recipes.create.compacting([Item.of('tfmg:coal_coke').withChance(0.1), Fluid.of('immersiveengineering:creosote', 500)], ['charcoal','charcoal','charcoal','charcoal']).heated()
 
     //ban掉水搅拌出锌粒，火药烧烈焰粉
     //sb chromatic return
@@ -255,12 +258,77 @@ ServerEvents.recipes(event => {
     event.recipes.create.milling(Item.of('#forge:nuggets/nickel').withChance(0.5), 'flint')
 
     //黏土出锌
-    event.recipes.create.milling(Item.of('#forge:nuggets/zinc').withChance(0.25), 'clay_ball')
+    event.recipes.create.milling(Item.of('#forge:nuggets/zinc').withChance(0.2), 'clay_ball')
 
     //泥巴出铁
     event.recipes.create.crushing(Item.of('create:crushed_raw_iron').withChance(0.07), 'packed_mud')
 
+    //红石量产
+    event.recipes.create.filling('redstone_block', [Fluid.of('immersiveengineering:redstone_acid',1000),'botania:livingrock'])
+
 
     //霜火双层板
     event.recipes.create.compacting('kubejs:frostfire_double_plate', ['#forge:plates/froststeel','#forge:slimeballs','#forge:plates/horizonite'])
+
+    //一些沉浸盔甲修改
+    event.replaceInput(
+        { output:/immersive_armors:divine_.*/ },
+        '#forge:ingots/gold',
+        '#forge:ingots/manasteel'
+    )
+
+    event.replaceInput(
+        { output:/immersive_armors:steampunk_.*/ },
+        '#forge:ingots/gold',
+        '#forge:ingots/brass'
+    )
+
+    event.remove({output:/immersive_armors:wooden_.*/})
+
+    event.shaped(
+        Item.of('immersive_armors:wooden_helmet', 1),
+        [ 
+        'ABA',
+        'A A'
+        ],
+        {
+            A: 'botania:livingwood',
+            B: '#forge:nuggets/bronze'
+        }
+    )
+    event.shaped(
+        Item.of('immersive_armors:wooden_chestplate', 1),
+        [ 
+        'A A',
+        'ABA',
+        'BAB'
+        ],
+        {
+            A: 'botania:livingwood',
+            B: '#forge:nuggets/bronze'
+        }
+    )
+    event.shaped(
+        Item.of('immersive_armors:wooden_leggings', 1),
+        [ 
+        'AAA',
+        'B B',
+        'A A'
+        ],
+        {
+            A: 'botania:livingwood',
+            B: '#forge:nuggets/bronze'
+        }
+    )
+    event.shaped(
+        Item.of('immersive_armors:wooden_boots', 1),
+        [ 
+        'A A',
+        'B B'
+        ],
+        {
+            A: 'botania:livingwood',
+            B: '#forge:nuggets/bronze'
+        }
+    )
 })

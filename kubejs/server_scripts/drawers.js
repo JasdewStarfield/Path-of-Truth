@@ -3,13 +3,13 @@ ServerEvents.recipes(event => {
   event.remove({id:"storagedrawers:upgrade_template"})
   event.shaped(
     Item.of('storagedrawers:upgrade_template', 1),
-    [ 
-    'AAA', 
+    [
+    'AAA',
     'ABA',
-    'AAA'  
+    'AAA'
     ],
     {
-    A: '#forge:rods/wooden', 
+    A: '#forge:rods/wooden',
     B: 'irons_spellbooks:arcane_essence'
     }
   )
@@ -18,14 +18,15 @@ ServerEvents.recipes(event => {
   event.remove({id:"storagedrawers:obsidian_storage_upgrade"})
   event.shaped(
     Item.of('storagedrawers:obsidian_storage_upgrade', 1),
-    [ 
-    ' A ', 
+    [
+    ' C ',
     'ABA',
-    ' A '  
+    ' C '
     ],
     {
-    A: 'storagedrawers:upgrade_template', 
-    B: 'kubejs:andesite_engineering'
+    A: 'storagedrawers:upgrade_template',
+    B: 'kubejs:andesite_engineering',
+    C: '#forge:plates/bronze'
     }
   )
 
@@ -33,14 +34,15 @@ ServerEvents.recipes(event => {
   event.remove({id:"storagedrawers:iron_storage_upgrade"})
   event.shaped(
     Item.of('storagedrawers:iron_storage_upgrade', 1),
-    [ 
-    ' A ', 
+    [
+    ' C ',
     'ABA',
-    ' A '  
+    ' C '
     ],
     {
-    A: 'storagedrawers:obsidian_storage_upgrade', 
-    B: 'kubejs:precise_engineering'
+    A: 'storagedrawers:obsidian_storage_upgrade',
+    B: 'kubejs:precise_engineering',
+    C: '#forge:plates/brass'
     }
   )
 
@@ -48,14 +50,15 @@ ServerEvents.recipes(event => {
   event.remove({id:"storagedrawers:gold_storage_upgrade"})
   event.shaped(
     Item.of('storagedrawers:gold_storage_upgrade', 1),
-    [ 
-    ' A ', 
+    [
+    ' C ',
     'ABA',
-    ' A '  
+    ' C '
     ],
     {
-    A: 'storagedrawers:iron_storage_upgrade', 
-    B: 'immersiveengineering:light_engineering'
+    A: 'storagedrawers:iron_storage_upgrade',
+    B: 'immersiveengineering:light_engineering',
+    C: '#forge:plates/steel'
     }
   )
 
@@ -63,14 +66,15 @@ ServerEvents.recipes(event => {
   event.remove({id:"storagedrawers:diamond_storage_upgrade"})
   event.shaped(
     Item.of('storagedrawers:diamond_storage_upgrade', 1),
-    [ 
-    ' A ', 
+    [
+    ' C ',
     'ABA',
-    ' A '  
+    ' C '
     ],
     {
-    A: 'storagedrawers:gold_storage_upgrade', 
-    B: 'immersiveengineering:heavy_engineering'
+    A: 'storagedrawers:gold_storage_upgrade',
+    B: 'immersiveengineering:heavy_engineering',
+    C: '#forge:plates/aluminum'
     }
   )
 
@@ -78,14 +82,15 @@ ServerEvents.recipes(event => {
   event.remove({id:"storagedrawers:emerald_storage_upgrade"})
   event.shaped(
     Item.of('storagedrawers:emerald_storage_upgrade', 1),
-    [ 
-    ' A ', 
+    [
+    ' C ',
     'ABA',
-    ' A '  
+    ' C '
     ],
     {
-    A: 'storagedrawers:diamond_storage_upgrade', 
-    B: 'kubejs:electronic_engineering'
+    A: 'storagedrawers:diamond_storage_upgrade',
+    B: 'kubejs:electronic_engineering',
+    C: '#forge:plates/netherite'
     }
   )
 
@@ -93,13 +98,13 @@ ServerEvents.recipes(event => {
   event.remove({id:"storagedrawers:compacting_drawers_3"})
   event.shaped(
     Item.of('storagedrawers:compacting_drawers_3', 1),
-    [ 
-    'DAD', 
+    [
+    'DAD',
     'CBC',
-    'DAD'  
+    'DAD'
     ],
     {
-    A: 'create:mechanical_piston', 
+    A: 'create:mechanical_piston',
     B: 'create:andesite_casing',
     C: 'create:cogwheel',
     D: '#forge:plates/iron'
@@ -110,13 +115,13 @@ ServerEvents.recipes(event => {
   event.remove({id:"storagedrawers:controller"})
   event.shaped(
     Item.of('storagedrawers:controller', 1),
-    [ 
-    'DAD', 
+    [
+    'DAD',
     'CBC',
-    'DAD'  
+    'DAD'
     ],
     {
-    A: 'create_connected:control_chip', 
+    A: 'create_connected:control_chip',
     B: 'tfmg:steel_casing',
     C: 'create:precision_mechanism',
     D: '#forge:plates/steel'
@@ -127,10 +132,10 @@ ServerEvents.recipes(event => {
   event.remove({id:"storagedrawers:controller_slave"})
   event.shaped(
     Item.of('storagedrawers:controller_slave', 1),
-    [ 
-    'DDD', 
+    [
+    ' D ',
     'DBD',
-    'DDD'  
+    ' D '
     ],
     {
     B: 'tfmg:steel_casing',

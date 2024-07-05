@@ -5,7 +5,6 @@
 	filename: "618B001D3C0B96CC"
 	group: "5B3B99F7ECC70789"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "botania:mana_bottle"
 	id: "618B001D3C0B96CC"
 	order_index: 1
@@ -17,6 +16,8 @@
 				"终于，你获得了一些植物魔法的高级材料，这也意味着你可以合成一些更带劲的东西了。"
 				"现在，泰拉钢的合成需要更少的魔力——但相应的需要更复杂的材料。"
 			]
+			hide: true
+			hide_details_until_startable: true
 			id: "0F9DF1C5137194E4"
 			rewards: [{
 				id: "4855EAF76355F55E"
@@ -31,7 +32,7 @@
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			title: "泰拉之力"
+			title: "【起点】泰拉之力"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -85,17 +86,6 @@
 			]
 			icon: "minecraft:diamond_block"
 			id: "7B4573440B7AD85C"
-			rewards: [{
-				id: "1D9A644C3CC11135"
-				item: {
-					Count: 1
-					id: "bloodmagic:arcaneashes"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
 			subtitle: "很显然，你需要点石成金"
 			tasks: [
 				{
@@ -135,7 +125,7 @@
 					type: "item"
 				}
 			]
-			title: "钻石不太够用？"
+			title: "真正的炼金术"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -211,7 +201,8 @@
 		{
 			dependencies: ["0F9DF1C5137194E4"]
 			description: [
-				"这是法师宝珠，三阶血祭坛的产物。"
+				"&b【完成后解锁主线章节：4M 诡秘仪式】&r"
+				"法师宝珠，三阶血祭坛的产物，更大的LP储存器）"
 				"当然，也是后续很多魔法合成的必需品。"
 				"你可以用自己的血来完成它——也可以献祭很多别的生物。"
 				"一些更强更有趣的印记你也可以制造了）"
@@ -223,7 +214,7 @@
 				item: "bloodmagic:magicianbloodorb"
 				type: "item"
 			}]
-			title: "更大，更高，更强"
+			title: "【终点】更大，更高，更强"
 			x: 0.0d
 			y: -2.0d
 		}
@@ -364,66 +355,34 @@
 				"1512F0EED2C94AD6"
 				"0AC1013759C98150"
 			]
-			description: ["这套盔甲理论上是铁甲……大概是吧？"]
-			icon: "bloodmagic:upgradetome"
+			description: [
+				"通过&c次级槽位升级卷轴&r，你可以在&d奥术铁砧&r上为你的法术书升级槽位至最高12个！"
+				"这下不用拼命去搞高级法术书了——这也会让一些独特的法术书更加有用）"
+				""
+				"一些更暴力的东西从这个&b充能核心&r开始，也许你可以试试雷暴的时候用它来右键轰击避雷针……"
+			]
+			icon: {
+				Count: 1
+				id: "botania:thunder_sword"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "7627B3B94BB6C9BE"
-			subtitle: "血魔法里最实用的盔甲哦"
+			subtitle: "现在，你可以升级你的法术书槽位了！"
 			tasks: [
 				{
-					id: "69AF5B7A8BC540CB"
-					item: "bloodmagic:reagentbinding"
+					id: "17D0F7C920508295"
+					item: "irons_spellbooks:lesser_spell_slot_upgrade"
 					type: "item"
 				}
 				{
-					id: "68168BD91E8F9134"
-					item: {
-						Count: 1
-						id: "bloodmagic:livinghelmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "1FB17CC0C68C77ED"
-					item: {
-						Count: 1
-						id: "bloodmagic:livingplate"
-						tag: {
-							Damage: 0
-							livingStats: {
-								maxPoints: 100
-								upgrades: [ ]
-							}
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "7F6086886E998DF0"
-					item: {
-						Count: 1
-						id: "bloodmagic:livingleggings"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "63276E590F76CF5E"
-					item: {
-						Count: 1
-						id: "bloodmagic:livingboots"
-						tag: {
-							Damage: 0
-						}
-					}
+					id: "398B314CC88DF439"
+					item: "irons_spellbooks:energized_core"
 					type: "item"
 				}
 			]
-			title: "可成长盔甲"
+			title: "更暴力的法术！"
 			x: 3.5d
 			y: -3.5d
 		}
@@ -497,6 +456,7 @@
 			]
 			description: [
 				"炼金矩阵是个很神奇的东西，但同样遵循等价交换原则。如果你需要很宝贵的东西，那么你需要投入同样宝贵的材料——以及高昂的转换费用。"
+				"利用炼金矩阵的催化，你可以利用少量的下界合金将盖亚魂锭同化为一块下界合金！但是前提是你得先用正常的工业手段制作出下界合金才行（大概在工业第五章的位置）。"
 				"注：盖亚之魂可以通过血魔法的另一种方式——献祭——转化为奥术残骸）"
 			]
 			icon: "botania:gaia_ingot"
@@ -514,12 +474,12 @@
 					type: "item"
 				}
 				{
-					id: "74B417ECB8BEDEC1"
-					item: "botania:dragonstone_block"
+					id: "2CD1526B91F29BEC"
+					item: "createdeco:netherite_nugget"
 					type: "item"
 				}
 				{
-					id: "6C03138A2AB04187"
+					id: "171F0DB5DDC67BFA"
 					item: {
 						Count: 1
 						id: "bloodmagic:arcaneashes"
@@ -894,5 +854,5 @@
 		}
 	]
 	subtitle: ["Mana Within"]
-	title: "魔力流淌"
+	title: "3M 魔力流淌"
 }

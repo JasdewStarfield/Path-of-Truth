@@ -2,6 +2,7 @@
   "item.kubejs.incomplete_andesite_engineering": "未完成的动力工程块",
   "item.kubejs.incomplete_fluid_engineering": "未完成的流体工程块",
   "item.kubejs.incomplete_precise_engineering": "未完成的精密工程块",
+  "item.kubejs.incomplete_logistical_engineering": "未完成的物流工程块",
   "item.kubejs.incomplete_light_engineering": "未完成的轻型工程块",
   "item.kubejs.incomplete_heavy_engineering": "未完成的重型工程块",
   "item.kubejs.incomplete_rs_engineering": "未完成的红石工程块",
@@ -54,9 +55,44 @@
   "block.kubejs.andesite_engineering": "动力工程块",
   "block.kubejs.fluid_engineering": "流体工程块",
   "block.kubejs.precise_engineering": "精密工程块",
+  "item.kubejs.logistical_engineering": "物流工程块",
   "block.kubejs.electronic_engineering": "电子工程块",
   "block.kubejs.bronze_block": "青铜块",
   "block.kubejs.obelisk_base": "重生石碑基座",
   "item.kubejs.obelisk_base.desc1": "你感到一股强大的力量从其中散发出来……",
-  "item.kubejs.obelisk_base.desc2": "如果你把它放在石碑下面，那么石碑就可以被无限充能（但是你不可以再次移动基座方块）"
+  "item.kubejs.obelisk_base.desc2": "如果你把它放在石碑下面，那么石碑就可以被无限充能（但是你不可以再次移动基座方块）",
+  "item.kubejs.diamond_gears.desc": "这件钻石装备虽然看起来性能优异，但似乎也极其容易损坏……",
+
+  "item.immersiveengineering.hammer.tooltip": "工程师锤",
+  "item.immersiveengineering.hammer.tooltip.summary": "工程师的好帮手！用来组装_多方块结构_或者旋转一些方块，还能调整一些机器的输入和输出。",
+  "item.immersiveengineering.hammer.tooltip.condition1": "对尚未组装的多方块结构的核心方块使用时",
+  "item.immersiveengineering.hammer.tooltip.behaviour1": "使这些方块组装为_多方块结构_。",
+  "item.immersiveengineering.hammer.tooltip.condition2": "对部分沉浸工程机器使用时",
+  "item.immersiveengineering.hammer.tooltip.behaviour2": "调整正对的面的_输入_/_输出_。_潜行_时使用改为对相反一面进行调整。",
+  "item.immersiveengineering.hammer.tooltip.condition3": "对电线杆顶部使用时",
+  "item.immersiveengineering.hammer.tooltip.behaviour3": "创建一个电线杆分叉。",
+  "item.immersiveengineering.hammer.tooltip.condition4": "对气球使用时",
+  "item.immersiveengineering.hammer.tooltip.behaviour4": "改变气球的纹理。",
+  "item.immersiveengineering.hammer.tooltip.condition5": "对一般方块使用时",
+  "item.immersiveengineering.hammer.tooltip.behaviour5": "旋转该方块的朝向。",
+  
+  "block.botania.apothecary_default.tooltip": "花药台",
+  "block.botania.apothecary_default.tooltip.summary": "植物魔法的入门仪式从_木桶_与_清水_开始。",
+  "block.botania.apothecary_default.tooltip.condition1": "在装入水后",
+  "block.botania.apothecary_default.tooltip.behaviour1": "可以投入原材料，最后放入_任意种子_完成合成（会消耗水）。",
+
+  "item.ftbquests.book.tooltip": "任务书",
+  "item.ftbquests.book.tooltip.summary": "通过翻开它来开始你的旅程！有事没事多看看，任务是本整合包中最清晰的提示书！",
+  "item.ftbquests.book.tooltip.condition1": "右键后",
+  "item.ftbquests.book.tooltip.behaviour1": "打开_任务界面_，也可以按下E后点开_左上角的书本图标_来查看_任务_。",
+
+  "item.botania.twig_wand.tooltip":"森林法杖",
+  "item.botania.twig_wand.tooltip.summary":"植物魔法的基本工具，魔力流的引导者。",
+  "item.botania.twig_wand.tooltip.condition1":"Shift+右键植魔相关单位时",
+  "item.botania.twig_wand.tooltip.behaviour1":"选定该方块（仅限绑定模式下），通过同样的方式选定另一个工作单位可以指定工作关系，如连接魔力发射器和魔力池。",
+  "item.botania.twig_wand.tooltip.condition2":"Shift+右键空气时",
+  "item.botania.twig_wand.tooltip.behaviour2":"切换绑定模式和工作模式，工作模式下法杖不会进行任何选定操作。",
+  "item.botania.twig_wand.tooltip.condition3":"Shift+右键可旋转方块时",
+  "item.botania.twig_wand.tooltip.behaviour3":"旋转该方块的朝向，如箱子和铁砧。"
+
 }

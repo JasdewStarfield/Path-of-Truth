@@ -7,8 +7,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 60,
-          "name": "tide:obsidian_fragment"
+          "weight": 80,
+          "name": "tide:inferno_guppy"
         },
         {
           "type": "minecraft:item",
@@ -17,8 +17,8 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 20,
-          "name": "minecraft:obsidian"
+          "weight": 10,
+          "name": "tide:obsidian_fragment"
         }
       ]
     }

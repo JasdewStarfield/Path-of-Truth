@@ -13,11 +13,21 @@
         {
           "type": "minecraft:item",
           "weight": 70,
+          "name": "tide:mackerel"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 60,
           "name": "minecraft:salmon"
         },
         {
           "type": "minecraft:item",
-          "weight": 30,
+          "weight": 50,
+          "name": "tide:ocean_perch"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 25,
           "name": "tide:trout"
         },
         {
