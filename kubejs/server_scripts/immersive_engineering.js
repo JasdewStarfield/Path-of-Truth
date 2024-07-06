@@ -42,7 +42,7 @@ ServerEvents.recipes(event => {
         A: 'create:belt_connector',
         B: 'create:electron_tube',
         C: '#forge:ingots/steel',
-        C: '#forge:leather'
+        D: '#forge:leather'
     })
 
     //锯条

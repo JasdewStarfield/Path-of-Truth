@@ -365,8 +365,8 @@
 				type: "item"
 			}]
 			title: "工业化的结晶"
-			x: -2.0d
-			y: 12.0d
+			x: -3.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["76BE4625CCF2F867"]
@@ -384,8 +384,8 @@
 				type: "item"
 			}]
 			title: "鼓风机输出"
-			x: -0.5d
-			y: 12.0d
+			x: 2.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["07C921FBCF56E703"]
@@ -415,8 +415,8 @@
 				}
 			]
 			title: "触媒装箱"
-			x: 0.5d
-			y: 12.0d
+			x: 1.0d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -438,8 +438,8 @@
 				type: "item"
 			}]
 			title: "精密工业"
-			x: -3.5d
-			y: 12.0d
+			x: -5.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
@@ -457,8 +457,8 @@
 				type: "item"
 			}]
 			title: "来硬的"
-			x: 2.0d
-			y: 12.0d
+			x: 3.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
@@ -475,8 +475,8 @@
 				type: "item"
 			}]
 			title: "防腐措施"
-			x: 3.5d
-			y: 12.0d
+			x: 5.0d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -506,7 +506,7 @@
 			}]
 			title: "【终点】精密时代"
 			x: 0.0d
-			y: 15.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
@@ -585,8 +585,8 @@
 				}
 			]
 			title: "智能时代"
-			x: 0.0d
-			y: 13.0d
+			x: -2.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
@@ -618,6 +618,94 @@
 			title: "附魔工业"
 			x: 0.0d
 			y: 8.5d
+		}
+		{
+			dependencies: ["37C7364F0F3E8C89"]
+			description: [
+				"事实就是：这章有两个工程块（不过这一个目前不是必须项）"
+				"物流工程块允许你合成pipez的强力管道——它们可以输送各种资源，且不需要动力驱动。它们还可以进行升级，就像抽屉那样。"
+			]
+			hide: true
+			id: "6F27F12FD5EBE559"
+			rewards: [
+				{
+					id: "3483DA9CF7A9BFFE"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+				{
+					id: "1898D70FDD518270"
+					item: "pipez:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "56CD886F627854E9"
+					item: "pipez:wrench"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "什么？还有工程块？"
+			tasks: [{
+				id: "5151D84AFEC27F12"
+				item: "kubejs:logistical_engineering"
+				type: "item"
+			}]
+			title: "大物流时代！"
+			x: 0.0d
+			y: 15.0d
+		}
+		{
+			dependencies: ["37C7364F0F3E8C89"]
+			description: [
+				"铁路系统是机械动力的一大特色。它可以用于物流，抑或是单纯地观光。"
+				"铁路系统最突出的优势在于很适合远距离的运输，因为它可以跨越下界传送门，且不需要途径的区块被加载也能正常运行（但如果你要在站台装卸货的话，还是需要强加载站台）。"
+				"具体的教程，请参考思索系统。"
+			]
+			icon: "railways:track_biomesoplenty_willow"
+			id: "3DD1A739EA5EDB1D"
+			rewards: [{
+				count: 24
+				id: "65D303F0CC11B324"
+				item: "create:track"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "滴滴"
+			tasks: [
+				{
+					id: "4FF8EABCEF4709B2"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "130CDC56C69A4279"
+					item: "create:controls"
+					type: "item"
+				}
+			]
+			title: "铁道运输"
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"76BE4625CCF2F867"
+				"10CF3F30EC2A65E8"
+			]
+			description: ["提示：这一步任务属于本章的支线，不一定要在现在完成。"]
+			hide: true
+			id: "37C7364F0F3E8C89"
+			subtitle: "它能做什么呢？"
+			tasks: [{
+				id: "5CA376BDC1069E53"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			title: "与众不同的机壳"
+			x: 0.0d
+			y: 13.5d
 		}
 	]
 	subtitle: ["Exotic Alloys"]

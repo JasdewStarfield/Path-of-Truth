@@ -1,3 +1,4 @@
+/*
 // 生成一个随机的完整数独矩阵
 function fillSudoku(matrix) {
     // 初始化未填充的单元格
@@ -153,3 +154,4 @@ sudoku_player = sudoku_recipe;
 //删除数字
 removeNumbers(sudoku_player);
 
+*/

@@ -209,7 +209,7 @@ ServerEvents.recipes(event => {
     )
 
     //添加终极锭合成
-    event.remove({id:'createchromaticreturn:refined_radiance_recipe'})
+    /*
     event.shaped(Item.of('createchromaticreturn:refined_radiance',1),
         ['ABC',
         'DEF',
@@ -226,8 +226,8 @@ ServerEvents.recipes(event => {
             I:'irons_spellbooks:dragonskin_spell_book'
         }
     )
-    event.remove({id:'createchromaticreturn:multiplite_recipe'})
-    /*event.shaped(Item.of('createchromaticreturn:multiplite_ingot',1),
+    
+    event.shaped(Item.of('createchromaticreturn:multiplite_ingot',1),
         ['ABC',
         'DEF',
         'GHI'],

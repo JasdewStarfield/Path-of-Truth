@@ -62,7 +62,8 @@ ServerEvents.recipes(event => {
         ]
     )
     //合成注能丝触书籍
-    event.remove({id:'createchromaticreturn:silkstrum_book_recipe'})
+    /*
+    
     event.recipes.botania.petal_apothecary('createchromaticreturn:silkstrum_book', 
         [
             'createchromaticreturn:silkstrum',
@@ -71,6 +72,7 @@ ServerEvents.recipes(event => {
             'irons_spellbooks:ruined_book'
         ]
     )
+    */
 
     //修改魔力池配方
     event.remove({ output: 'botania:mana_pool' })
@@ -391,6 +393,7 @@ ServerEvents.recipes(event => {
         ], 
         500000
     )
+    /*
     //异彩化合物魔法合成
     event.recipes.botania.terra_plate('createchromaticreturn:chromatic_compound', 
         [
@@ -407,7 +410,7 @@ ServerEvents.recipes(event => {
     )
 
     //辉光锭合成
-    event.remove({id:'createchromaticreturn:glowing_ingot_recipe'})
+    
     event.recipes.botania.terra_plate('createchromaticreturn:glowing_ingot', 
         [
             'createchromaticreturn:chromatic_compound', 
@@ -420,7 +423,7 @@ ServerEvents.recipes(event => {
             'botania:flugel_eye'
         ], 
         500000
-    )
+    )*/
 
     //产能花系列配方修改
     //火红莲

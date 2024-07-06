@@ -566,7 +566,8 @@ ServerEvents.recipes(event => {
         "texture": "bloodmagic:textures/models/alchemyarrays/airsigil.png"
     })
     //终极锭炼金翻转
-    event.remove({id:'createchromaticreturn:antiplite_recipe'})
+    /*
+    
     event.custom({
         "type": "bloodmagic:array",
         "addedinput": {
@@ -580,6 +581,7 @@ ServerEvents.recipes(event => {
         },
         "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
     })
+    */
     //磁铁升级（红石-铁金）
     event.custom({
         "type": "bloodmagic:array",
@@ -655,7 +657,8 @@ ServerEvents.recipes(event => {
         }
     })
     //丝绸锭合成
-    event.remove({id:'createchromaticreturn:silkstrum_recipe'})
+    /*
+    
     event.custom({
         "type": "bloodmagic:soulforge",
         "drain": 4096.0,//单次吸收量
@@ -677,6 +680,7 @@ ServerEvents.recipes(event => {
             "item": 'createchromaticreturn:silkstrum'
         }
     })
+    */
 
     //炼金反应炉配方修改
     //恶魔合金复制
