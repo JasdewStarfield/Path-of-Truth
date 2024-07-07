@@ -7,6 +7,32 @@
 	hide_quest_details_until_startable: true
 	icon: "irons_spellbooks:lightning_bottle"
 	id: "58C198C40A81EF6B"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 0.0d
+			y: 3.3d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/m1.png"
+			rotation: 0.0d
+			width: 10.23d
+			x: 0.0d
+			y: -2.5d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [

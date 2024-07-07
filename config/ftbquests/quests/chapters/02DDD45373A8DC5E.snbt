@@ -7,6 +7,32 @@
 	hide_quest_details_until_startable: true
 	icon: "kubejs:bronze_block"
 	id: "02DDD45373A8DC5E"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: -3.8d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 0.0d
+			y: 19.5d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/i1.png"
+			rotation: 0.0d
+			width: 9.516279069767442d
+			x: 0.0d
+			y: -5.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

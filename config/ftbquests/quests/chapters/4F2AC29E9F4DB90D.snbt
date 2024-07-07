@@ -1,5 +1,5 @@
 {
-	autofocus_id: "4D493DCB4C0B99C0"
+	autofocus_id: "0E7C15008078BC90"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "4F2AC29E9F4DB90D"
@@ -7,6 +7,24 @@
 	hide_quest_details_until_startable: true
 	icon: "create:brass_ingot"
 	id: "4F2AC29E9F4DB90D"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/i2.png"
+			rotation: 0.0d
+			width: 9.385321100917432d
+			x: 0.0d
+			y: -4.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -70,8 +88,8 @@
 				}
 			]
 			title: "更多的自动化选项！"
-			x: -1.0d
-			y: -2.0d
+			x: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
@@ -92,8 +110,8 @@
 				type: "item"
 			}]
 			title: "好看吗？"
-			x: 1.0d
-			y: -2.0d
+			x: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2B406E71D5BDF8F6"]
@@ -107,8 +125,8 @@
 				type: "item"
 			}]
 			title: "全自动装饰方块生产器"
-			x: 1.0d
-			y: -4.0d
+			x: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7678AE43CAD02807"]
@@ -145,8 +163,8 @@
 				}
 			]
 			title: "神秘转转"
-			x: -1.0d
-			y: -4.0d
+			x: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
@@ -515,6 +533,7 @@
 				"虽然搭建产线的过程可能比较累，但是全自动还是值得的！"
 			]
 			id: "40840BF9F23BC8A1"
+			shape: "diamond"
 			subtitle: "磨刀不误砍柴工"
 			tasks: [
 				{
@@ -540,12 +559,13 @@
 			]
 			title: "粒粒皆辛苦"
 			x: 0.0d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["40840BF9F23BC8A1"]
 			description: ["用泥胚获得铁……就是麻烦点，而且你还是逃不过高炉这一步（"]
 			id: "0E7C15008078BC90"
+			shape: "diamond"
 			subtitle: "铁自己也行"
 			tasks: [{
 				id: "73AD02B2C758A53A"
@@ -554,7 +574,7 @@
 			}]
 			title: "粒粒皆辛苦2"
 			x: 0.0d
-			y: -5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["73CD9D2DD215B5F5"]

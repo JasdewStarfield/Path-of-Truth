@@ -7,6 +7,32 @@
 	hide_quest_details_until_startable: true
 	icon: "immersiveengineering:component_electronic_adv"
 	id: "2716B41E11042107"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: -1.3d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/i5.png"
+			rotation: 0.0d
+			width: 18.770642201834864d
+			x: 0.0d
+			y: -6.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [

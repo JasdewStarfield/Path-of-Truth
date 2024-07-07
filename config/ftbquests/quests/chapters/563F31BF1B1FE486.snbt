@@ -7,6 +7,24 @@
 	hide_quest_details_until_startable: true
 	icon: "botania:sextant"
 	id: "563F31BF1B1FE486"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: -0.8d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/m0.png"
+			rotation: 0.0d
+			width: 6.730263157894737d
+			x: 0.0d
+			y: 2.0d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [

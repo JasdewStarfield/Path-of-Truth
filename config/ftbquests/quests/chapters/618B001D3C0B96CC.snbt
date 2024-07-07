@@ -1,5 +1,5 @@
 {
-	autofocus_id: "0F9DF1C5137194E4"
+	autofocus_id: "7F53611A7CF99B04"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "618B001D3C0B96CC"
@@ -7,6 +7,32 @@
 	hide_quest_details_until_startable: true
 	icon: "botania:mana_bottle"
 	id: "618B001D3C0B96CC"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: -0.9d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 0.0d
+			y: -2.7d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/m3.png"
+			rotation: 0.0d
+			width: 8.385245901639344d
+			x: 0.0d
+			y: -6.5d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
