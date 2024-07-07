@@ -659,7 +659,7 @@ ServerEvents.recipes(event => {
     //紫水晶母岩聚合
     event.custom({
         "type": "bloodmagic:soulforge",
-        "drain": 64.0,//单次吸收量
+        "drain": 128.0,//单次吸收量
         "input0": {
             "item": 'minecraft:budding_amethyst'
         },
@@ -667,14 +667,14 @@ ServerEvents.recipes(event => {
             "item": 'minecraft:amethyst_block'
         },
         "input2": {
-            "item": 'minecraft:amethyst_block'
+            "item": 'minecraft:budding_amethyst'
         },
         "input3": {
             "item": 'minecraft:amethyst_block'
         },
         "minimumDrain": 2048.0,//要求使用材料的最低容量
         "output": {
-            "count": 3,//生成数量
+            "count": 4,//生成数量
             "item": 'minecraft:budding_amethyst'
         }
     })
