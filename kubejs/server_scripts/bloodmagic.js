@@ -612,28 +612,6 @@ ServerEvents.recipes(event => {
     })
 
     //灵魂锻炉配方修改
-    //创造储存升级
-    event.custom({
-        "type": "bloodmagic:soulforge",
-        "drain": 10.0,//单次吸收量
-        "input0": {
-            "item": 'storagedrawers:emerald_storage_upgrade'
-        },
-        "input1": {
-            "item": 'sophisticatedbackpacks:everlasting_upgrade'
-        },
-        "input2": {
-            "item": 'sophisticatedbackpacks:stack_upgrade_tier_4'
-        },
-        "input3": {
-            "item": 'bloodmagic:altarcapacityrune2'
-        },
-        "minimumDrain": 128.0,//要求使用材料的最低容量
-        "output": {
-            "count": 1,//生成数量
-            "item": 'storagedrawers:creative_storage_upgrade'
-        }
-    })
     //凋零骷髅刷怪蛋合成
     event.custom({
         "type": "bloodmagic:soulforge",
@@ -654,6 +632,50 @@ ServerEvents.recipes(event => {
         "output": {
             "count": 1,//生成数量
             "item": 'minecraft:wither_skeleton_spawn_egg'
+        }
+    })
+    //下界之星聚合
+    event.custom({
+        "type": "bloodmagic:soulforge",
+        "drain": 64.0,//单次吸收量
+        "input0": {
+            "item": 'minecraft:wither_skeleton_skull'
+        },
+        "input1": {
+            "item": 'minecraft:nether_star'
+        },
+        "input2": {
+            "item": 'minecraft:wither_skeleton_skull'
+        },
+        "input3": {
+            "item": 'minecraft:soul_sand'
+        },
+        "minimumDrain": 2048.0,//要求使用材料的最低容量
+        "output": {
+            "count": 3,//生成数量
+            "item": 'minecraft:nether_star'
+        }
+    })
+    //紫水晶母岩聚合
+    event.custom({
+        "type": "bloodmagic:soulforge",
+        "drain": 64.0,//单次吸收量
+        "input0": {
+            "item": 'minecraft:budding_amethyst'
+        },
+        "input1": {
+            "item": 'minecraft:amethyst_block'
+        },
+        "input2": {
+            "item": 'minecraft:amethyst_block'
+        },
+        "input3": {
+            "item": 'minecraft:amethyst_block'
+        },
+        "minimumDrain": 2048.0,//要求使用材料的最低容量
+        "output": {
+            "count": 3,//生成数量
+            "item": 'minecraft:budding_amethyst'
         }
     })
     //丝绸锭合成

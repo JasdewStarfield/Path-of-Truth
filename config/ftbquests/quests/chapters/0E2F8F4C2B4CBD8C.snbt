@@ -522,6 +522,11 @@
 					item: "alexsmobs:raw_catfish"
 					type: "item"
 				}
+				{
+					id: "47E360501CC621C1"
+					item: "collectorsreap:platinum_bass"
+					type: "item"
+				}
 			]
 			title: "钓鱼王I"
 			x: -2.0d
@@ -586,6 +591,20 @@
 				{
 					id: "4EDFB1EAA9C24C50"
 					item: "minecraft:heart_of_the_sea"
+					type: "item"
+				}
+				{
+					id: "61229D24AEE38CF0"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "majruszsenchantments:fishing_fanatic"
+								lvl: 7s
+							}]
+						}
+					}
 					type: "item"
 				}
 			]
@@ -893,7 +912,10 @@
 		}
 		{
 			dependencies: ["193F465F65BC13F1"]
-			description: ["通过随便什么方式获得龙蛋——这是真理的一部分）"]
+			description: [
+				"通过随便什么方式获得龙蛋——这是真理的一部分）"
+				"&m&b*小声：这也是对于一些倒霉蛋的补偿——有的人捡不到漂浮在空中的龙皮）&r&r"
+			]
 			id: "583D1483CCA6EA3F"
 			rewards: [
 				{
