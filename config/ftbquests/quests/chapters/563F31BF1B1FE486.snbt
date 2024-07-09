@@ -323,48 +323,35 @@
 			y: -7.0d
 		}
 		{
-			dependencies: ["7B4BE516F4D4E494"]
+			dependencies: ["79EE6BAFA5E153E5"]
 			id: "11809308EF757592"
 			subtitle: "末影之王"
 			tasks: [{
+				count: 2L
 				id: "47E21A0CAC53FC78"
 				item: "minecraft:dragon_egg"
 				type: "item"
 			}]
 			title: "更多的蛋"
-			x: -1.0d
-			y: -14.0d
+			x: 2.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["7B4BE516F4D4E494"]
 			id: "7A0D894A5227359D"
-			subtitle: "生命之源"
+			subtitle: "无羁魔力"
 			tasks: [{
 				id: "1B6941284D379213"
-				item: "botania:spawner_mover"
+				item: "botania:mana_bomb"
 				type: "item"
 			}]
 			x: -2.0d
 			y: -13.0d
 		}
 		{
-			dependencies: ["79EE6BAFA5E153E5"]
-			id: "1DC429EF770C416D"
-			subtitle: "工业化无尽魔力"
-			tasks: [{
-				id: "64A693A5EDD62113"
-				item: "botania:creative_pool"
-				type: "item"
-			}]
-			title: "魔力潮汐"
-			x: 2.0d
-			y: -16.0d
-		}
-		{
 			dependencies: [
 				"2022E86F75370929"
 				"7A0D894A5227359D"
-				"11809308EF757592"
 			]
 			id: "0A2BE67F3E9F7225"
 			subtitle: "活化水晶？"
@@ -374,7 +361,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -16.0d
+			y: -15.0d
 		}
 		{
 			dependencies: ["7B4BE516F4D4E494"]
@@ -393,12 +380,12 @@
 			}]
 			title: "撕裂维度"
 			x: 0.0d
-			y: -15.0d
+			y: -14.0d
 		}
 		{
 			dependencies: [
-				"1DC429EF770C416D"
 				"0A2BE67F3E9F7225"
+				"11809308EF757592"
 			]
 			id: "697B1277B1C95490"
 			shape: "hexagon"
@@ -410,21 +397,7 @@
 			}]
 			title: "嗯，作者之一"
 			x: 0.0d
-			y: -17.0d
-		}
-		{
-			dependencies: ["697B1277B1C95490"]
-			hide: true
-			id: "1C42F46B21ADC51E"
-			subtitle: "力量固化"
-			tasks: [{
-				id: "2A914190A596881C"
-				item: "bosses_of_mass_destruction:levitation_block"
-				type: "item"
-			}]
-			title: "白日飞升"
-			x: -2.0d
-			y: -18.0d
+			y: -16.0d
 		}
 		{
 			dependencies: ["697B1277B1C95490"]
@@ -437,13 +410,13 @@
 				type: "item"
 			}]
 			title: "异彩化合物"
-			x: 2.0d
-			y: -18.0d
+			x: 0.0d
+			y: -17.0d
 		}
 		{
 			dependencies: [
-				"1C42F46B21ADC51E"
-				"547BE1E974BA2186"
+				"5C9661302B37F26F"
+				"57792EACF9438430"
 			]
 			id: "0D3C086EDB80E9AB"
 			shape: "octagon"
@@ -455,7 +428,7 @@
 			}]
 			title: "最魔法的"
 			x: 0.0d
-			y: -19.0d
+			y: -20.0d
 		}
 		{
 			dependencies: ["7B4BE516F4D4E494"]
@@ -480,6 +453,45 @@
 			}]
 			x: 0.0d
 			y: -9.0d
+		}
+		{
+			dependencies: ["0254FBCBA50B97F1"]
+			id: "57792EACF9438430"
+			subtitle: "光芒万丈"
+			tasks: [{
+				id: "7EC3BF6674D397C9"
+				item: "createchromaticreturn:glowing_ingot"
+				type: "item"
+			}]
+			title: "辉光锭"
+			x: 2.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["0254FBCBA50B97F1"]
+			id: "5C9661302B37F26F"
+			subtitle: "丝滑体验——"
+			tasks: [{
+				id: "455E4D6193809635"
+				item: "createchromaticreturn:silkstrum"
+				type: "item"
+			}]
+			title: "丝绸锭"
+			x: -2.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["547BE1E974BA2186"]
+			id: "0254FBCBA50B97F1"
+			subtitle: "更亮，更强"
+			tasks: [{
+				id: "07ACAB2B1345C4A9"
+				item: "createchromaticreturn:refined_radiance"
+				type: "item"
+			}]
+			title: "光辉石"
+			x: 0.0d
+			y: -18.0d
 		}
 	]
 	subtitle: ["Magic Progressions"]

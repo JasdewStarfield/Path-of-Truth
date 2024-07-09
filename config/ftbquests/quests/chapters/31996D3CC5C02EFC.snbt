@@ -364,7 +364,10 @@
 		}
 		{
 			dependencies: ["059A741ABF2A9A34"]
-			description: ["是的，这也是可以制造的，但是需要你……付出灵魂。"]
+			description: [
+				"是的，这也是可以制造的，但是需要你……付出灵魂。"
+				"相应的，下界之星也可以通过近似的方式复制，但这就需要你自行寻找了……"
+			]
 			icon: "minecraft:wither_skeleton_skull"
 			id: "3C38B10AFBEA5CEE"
 			subtitle: "更多的蛋"
@@ -380,9 +383,10 @@
 		{
 			dependencies: ["3BE92D4971A86473"]
 			description: [
-				"通过以永恒魔力池放在魔力池下方作为催化器，你可以生产变色龙蛋！"
+				"通过以魔力风暴放在魔力池下方作为催化器，你可以生产变色龙蛋！"
 				"虽然创造第一个生命会比较麻烦，但这也是可复制的）"
 				"通过这个来为你保温（确信"
+				"&o&c*小心不要让魔力流射击到魔力风暴上……&r&r"
 			]
 			icon: "cold_sweat:chameleon_molt"
 			id: "2F259F3824D83D9D"

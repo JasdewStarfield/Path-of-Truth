@@ -207,9 +207,6 @@ ServerEvents.recipes(event => {
                 "item":'alexsmobs:dimensional_carver'
             },
             {
-                "item":'minecraft:dragon_egg'
-            },
-            {
                 "item":'minecraft:amethyst_block'
             },
             {
