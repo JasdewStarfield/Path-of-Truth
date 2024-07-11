@@ -82,16 +82,16 @@ ServerEvents.recipes(event => {
   //魔法侧终极锭修改
   //光辉石
   event.shaped(Item.of('createchromaticreturn:refined_radiance',1),
-        [' A ',
-        'BCD',
-        ' E '],
-        {
-            A:'irons_spellbooks:lesser_spell_slot_upgrade',
-            B:'irons_spellbooks:arcane_ingot',
-            C:'createchromaticreturn:chromatic_compound',
-            D:'irons_spellbooks:shriving_stone',
-            E:'irons_spellbooks:upgrade_orb'
-        }
-    )
+      [' A ',
+       'BCD',
+       ' E '],
+      {
+          A:'irons_spellbooks:lesser_spell_slot_upgrade',
+          B:'irons_spellbooks:arcane_ingot',
+          C:'createchromaticreturn:chromatic_compound',
+          D:'irons_spellbooks:shriving_stone',
+          E:'irons_spellbooks:upgrade_orb'
+      }
+  )
   
 })
