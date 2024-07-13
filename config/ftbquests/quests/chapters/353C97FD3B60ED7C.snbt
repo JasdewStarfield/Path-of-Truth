@@ -37,11 +37,11 @@
 			]
 			title: "【起点】真正的魔法是规则……"
 			x: 0.0d
-			y: 2.4d
+			y: 1.7999999999999998d
 		}
 		{
-			dependencies: ["32AD657E17E55325"]
-			description: ["通过光辉石和一系列的随机过程，你找到了一种更强大的材料：辉光锭。"]
+			dependencies: ["5FA2C80387ABE0BB"]
+			description: ["通过光辉液体和一系列的随机过程，你找到了一种更强大的材料：辉光锭。"]
 			id: "4BDC97C826097CDF"
 			shape: "hexagon"
 			size: 1.2d
@@ -52,11 +52,11 @@
 				type: "item"
 			}]
 			title: "法力辉光"
-			x: 1.7999999999999998d
-			y: -1.2d
+			x: 3.0d
+			y: 1.2d
 		}
 		{
-			dependencies: ["32AD657E17E55325"]
+			dependencies: ["5FA2C80387ABE0BB"]
 			description: [
 				"通过血魔法炼金炉的浇灌，你随机到了一种丝滑的材料）"
 				"也许可以拿来制作手柄？"
@@ -71,14 +71,15 @@
 				type: "item"
 			}]
 			title: "丝滑体验"
-			x: -1.7999999999999998d
-			y: -1.2d
+			x: -3.0d
+			y: 1.2d
 		}
 		{
 			dependencies: ["6D3D887E93176D55"]
 			description: [
 				"终极魔法从凝聚光辉石开始——这是奥术智慧的光辉。"
 				"通过一些铁魔法材料的聚合，你可以得到它……"
+				"然后把它通过炼金手段融化。"
 			]
 			id: "32AD657E17E55325"
 			shape: "hexagon"
@@ -113,7 +114,24 @@
 			}]
 			title: "【终点】真理的紫光"
 			x: 0.0d
-			y: -3.75d
+			y: 4.5d
+		}
+		{
+			dependencies: ["32AD657E17E55325"]
+			description: ["如果你足够富有，也许你可以用它去制作红石酸……"]
+			id: "5FA2C80387ABE0BB"
+			shape: "rsquare"
+			size: 1.2d
+			subtitle: "一种“水”"
+			tasks: [{
+				amount: 1000L
+				fluid: "createchromaticreturn:refined_mixture"
+				id: "3653C5A7F95B337E"
+				type: "fluid"
+			}]
+			title: "光辉流淌"
+			x: 0.0d
+			y: -1.0d
 		}
 	]
 	subtitle: ["The Spells of Finale"]

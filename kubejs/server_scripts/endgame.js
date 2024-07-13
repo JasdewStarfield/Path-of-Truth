@@ -93,5 +93,113 @@ ServerEvents.recipes(event => {
           E:'irons_spellbooks:upgrade_orb'
       }
   )
+  //删除光辉流体原有配方
+  event.remove({id:'createchromaticreturn:refined_mixture_recipe'})
+  //添加融化配方
+  event.custom({
+    "type": "bloodmagic:arc",
+    //可能存在的追加输出（可以不写）
+    "addedoutput": [
+        {
+        "type": {
+            "item": "botania:manasteel_ingot"
+        },
+        "chance": 0.5,
+        "mainchance": 0.0
+        },
+        {
+          "type": {
+              "item": "irons_spellbooks:arcane_ingot"
+          },
+          "chance": 0.5,
+          "mainchance": 0.0
+        }
+    ],
+    //消耗配方（？）
+    "consumeingredient": false,
+    //输入材料
+    "input": {
+        "item": 'createchromaticreturn:refined_radiance'
+    },
+    //输入液体（可以不写）
+    "inputFluid": {
+        "amount": 1000,
+        "fluid": "minecraft:water"
+    },
+    //输入数量（大概）
+    "inputsize": 1,
+    //主要产物输出几率
+    "mainoutputchance": 0.0,
+    //输出产物内容
+    "output": {
+      "item": 'botania:mana_powder'
+    },
+    //输出液体（可以不写）
+    "outputFluid": {
+        "amount": 1000,
+        "fluid": "createchromaticreturn:refined_mixture"
+    },
+    //使用工具（必须是血魔法原有工具）
+    "tool": {
+        "tag": "bloodmagic:arc/hydrate"
+    }
+  })
+
+  //添加随机生成两种锭的配方
+  event.custom({
+    "type": "bloodmagic:arc",
+    //可能存在的追加输出（可以不写）
+    "addedoutput": [
+        {
+        "type": {
+            "item": 'createchromaticreturn:glowing_ingot'
+        },
+        "chance": 0.25,
+        "mainchance": 0.0
+        },
+        {
+          "type": {
+              "item": 'createchromaticreturn:silkstrum'
+          },
+          "chance": 0.25,
+          "mainchance": 0.0
+        },
+        {
+          "type": {
+              "item": 'createchromaticreturn:four_leaf_clover'
+          },
+          "chance": 0.05,
+          "mainchance": 0.0
+        }
+    ],
+    //消耗配方（？）
+    "consumeingredient": false,
+    //输入材料
+    "input": {
+        "item": 'botania:gaia_ingot'
+    },
+    //输入液体（可以不写）
+    "inputFluid": {
+        "amount": 5000,
+        "fluid": "createchromaticreturn:refined_mixture"
+    },
+    //输入数量（大概）
+    "inputsize": 1,
+    //主要产物输出几率
+    "mainoutputchance": 0.0,
+    //输出产物内容
+    "output": {
+      "item": 'botania:gaia_ingot'
+    },
+    //输出液体（可以不写）
+    "outputFluid": {
+        "amount": 5000,
+        "fluid": "minecraft:water"
+    },
+    //使用工具（必须是血魔法原有工具）
+    "tool": {
+        "tag": "bloodmagic:arc/resonator"
+    }
+  })
   
 })
