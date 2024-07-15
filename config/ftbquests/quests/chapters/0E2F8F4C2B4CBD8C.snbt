@@ -893,6 +893,20 @@
 					}
 					type: "item"
 				}
+				{
+					id: "1604F2AEC70F8CEF"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
 			]
 			subtitle: "深暗最强武器"
 			tasks: [{
@@ -955,18 +969,32 @@
 				"&o&d黑曜石巨柱则会生成在末地的大型平台上，需要末影之眼召唤。&r&r"
 			]
 			id: "5EE2152C42721246"
-			rewards: [{
-				id: "13BDA7500373C98F"
-				item: {
-					Count: 1
-					id: "tfmg:quad_potato_cannon"
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "13BDA7500373C98F"
+					item: {
+						Count: 1
+						id: "tfmg:quad_potato_cannon"
+						tag: {
+							Damage: 0
+						}
 					}
+					title: "哒哒哒哒哒哒"
+					type: "item"
 				}
-				title: "哒哒哒哒哒哒"
-				type: "item"
-			}]
+				{
+					id: "6897AB733A3B15CC"
+					item: {
+						Count: 1
+						id: "botania:mana_tablet"
+						tag: {
+							creative: 1b
+							mana: 500000
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 1.2d
 			subtitle: "这将是你面对的最终BOSS"

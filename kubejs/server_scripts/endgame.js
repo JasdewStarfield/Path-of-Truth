@@ -101,11 +101,18 @@ ServerEvents.recipes(event => {
     //可能存在的追加输出（可以不写）
     "addedoutput": [
         {
-        "type": {
-            "item": "botania:manasteel_ingot"
+          "type": {
+            "item": 'createchromaticreturn:chromatic_compound'
+          },
+          "chance": 0.5,
+          "mainchance": 0.0
         },
-        "chance": 0.5,
-        "mainchance": 0.0
+        {
+          "type": {
+              "item": "botania:manasteel_ingot"
+          },
+          "chance": 0.5,
+          "mainchance": 0.0
         },
         {
           "type": {
@@ -201,5 +208,31 @@ ServerEvents.recipes(event => {
         "tag": "bloodmagic:arc/resonator"
     }
   })
-  
+
+  //矩阵炼成复制火花
+  event.custom({
+    "type": "bloodmagic:array",
+    "addedinput": {
+        "item": 'createchromaticreturn:multiplite_ingot'
+    },
+    "baseinput": {
+        "item": 'botania:corporea_spark_master'
+    },
+    "output": {
+        "item": 'botania:corporea_spark_creative'
+    },
+    "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+  })
+
+  //符文祭坛炼制永恒魔力池
+  event.recipes.botania.runic_altar('botania:creative_pool', 
+    [
+        'createchromaticreturn:multiplite_ingot', 
+        'botania:fabulous_pool',
+        'botania:mana_bomb',
+        'create:creative_fluid_tank'
+    ], 
+    100000
+  )
+
 })

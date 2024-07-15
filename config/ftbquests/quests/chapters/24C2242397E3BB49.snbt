@@ -16,7 +16,6 @@
 				"6D3D887E93176D55"
 				"0D0BEC03C1B26CA3"
 				"59C668DE4E479AD9"
-				"29548CCE01753D49"
 			]
 			id: "6077CDDF1D3A011E"
 			shape: "octagon"
@@ -160,21 +159,34 @@
 				type: "item"
 			}]
 			title: "【起点】真理之锭"
-			x: -2.0d
-			y: 4.0d
+			x: 0.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["59C668DE4E479AD9"]
-			id: "29548CCE01753D49"
-			subtitle: "炼金是这样的。"
+			description: ["魔力自有永有，而你现在能集成无尽的魔力为你所用。"]
+			id: "21454EF3D8D8DCF1"
+			subtitle: "太阳井"
 			tasks: [{
-				id: "39C40EBA974C1DB1"
-				item: "createchromaticreturn:antiplite_ingot"
+				id: "2165B35BEB3602F3"
+				item: "botania:creative_pool"
 				type: "item"
 			}]
-			title: "翻转真相"
-			x: 2.0d
-			y: 4.0d
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["59C668DE4E479AD9"]
+			description: ["现在，只要你拥有某件物品，那么你将永远不再缺乏它。"]
+			id: "00BBB61C39207A0F"
+			subtitle: "唯一即永恒。"
+			tasks: [{
+				id: "387353577E838962"
+				item: "botania:corporea_spark_creative"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.0d
 		}
 	]
 	subtitle: ["The Truth Lies Here"]
