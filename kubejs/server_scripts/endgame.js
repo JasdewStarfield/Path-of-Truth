@@ -246,4 +246,40 @@ ServerEvents.recipes(event => {
     100000
   )
 
+  //符文祭坛炼制丝触书籍
+  event.recipes.botania.runic_altar('createchromaticreturn:silkstrum_book', 
+    [
+        'createchromaticreturn:chromatic_compound', 
+        'bosses_of_mass_destruction:void_thorn',
+        'bosses_of_mass_destruction:blazing_eye',
+        'irons_spellbooks:gold_spell_book',
+        'bosses_of_mass_destruction:ancient_anima',
+        'bosses_of_mass_destruction:obsidian_heart'
+    ], 
+    100000
+  )
+
+  //灵魂锻炉丝绸书三本复制四本
+  event.custom({
+    "type": "bloodmagic:soulforge",
+    "drain": 512.0,//单次吸收量
+    "input0": {
+        "item": 'createchromaticreturn:silkstrum_book'
+    },
+    "input1": {
+        "item": 'createchromaticreturn:silkstrum_book'
+    },
+    "input2": {
+        "item": 'createchromaticreturn:silkstrum_book'
+    },
+    "input3": {
+        "item": 'irons_spellbooks:gold_spell_book'
+    },
+    "minimumDrain": 2048.0,//要求使用材料的最低容量
+    "output": {
+        "count": 4,//生成数量
+        "item": 'createchromaticreturn:silkstrum_book'
+    }
+  })
+
 })

@@ -173,7 +173,11 @@
 		}
 		{
 			dependencies: ["537B5AA8E2C3244A"]
-			description: ["魔力自有永有，而你现在能集成无尽的魔力为你所用。"]
+			description: [
+				"魔力自有永有，而你现在能集成无尽的魔力为你所用。"
+				""
+				"至于为什么需要创造储罐……因为魔力也需要无尽的容器。"
+			]
 			id: "21454EF3D8D8DCF1"
 			subtitle: "太阳井"
 			tasks: [{
@@ -199,7 +203,9 @@
 		}
 		{
 			dependencies: ["59C668DE4E479AD9"]
+			description: ["流体与真理的碰撞带来无尽的甘泉。"]
 			id: "537B5AA8E2C3244A"
+			subtitle: "无尽流淌"
 			tasks: [{
 				id: "1ABF6C71BB897718"
 				item: "create:creative_fluid_tank"
@@ -210,7 +216,12 @@
 		}
 		{
 			dependencies: ["00BBB61C39207A0F"]
+			description: [
+				"通过压制创造火花核心，你可以通过工业手段从板条箱里无限抽取特定的物资了。"
+				"这也是物流的巅峰。"
+			]
 			id: "0F10088DCC4F6FDB"
+			subtitle: "工业化取用"
 			tasks: [{
 				id: "188B8C056D3F761E"
 				item: "create:creative_crate"
@@ -221,6 +232,7 @@
 		}
 		{
 			dependencies: ["59C668DE4E479AD9"]
+			description: ["在创造的力量之下，你的烈焰人将不再需要额外的燃料，因为它们通过蛋糕触碰了部分永恒。"]
 			hide: true
 			id: "3111841E3A7C8262"
 			rewards: [{
@@ -239,7 +251,13 @@
 		}
 		{
 			dependencies: ["59C668DE4E479AD9"]
+			description: [
+				"通过真理对于马达的压缩和催化，你现在拥有了无穷无尽的应力。"
+				""
+				"&o&7*希望你干的第一件事不是把这玩意放在发电机上……&r&r"
+			]
 			id: "7237285ADC05FC5C"
+			subtitle: "无尽动能"
 			tasks: [{
 				id: "18D003645FEF6259"
 				item: "create:creative_motor"
@@ -250,7 +268,9 @@
 		}
 		{
 			dependencies: ["59C668DE4E479AD9"]
+			description: ["真理对于电的催化让你从现在起开始拥有无尽的电力。"]
 			id: "43913160B28A2E0F"
+			subtitle: "雷霆领主"
 			tasks: [{
 				id: "3941B6168227EA0D"
 				item: "immersiveengineering:capacitor_creative"

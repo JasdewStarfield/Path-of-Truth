@@ -195,7 +195,8 @@
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
 				"获得所有植物魔法的遗物！"
-				"*请不要丢掉其中任何一种，否则你会发现自己无法通关——这些物品也是后续配方材料！"
+				""
+				"&o&c&m打六次盖亚守护者II的感觉怎么样？&r&r&r"
 			]
 			hide: true
 			icon: "botania:dice"
@@ -907,8 +908,36 @@
 					}
 					type: "item"
 				}
+				{
+					id: "20C451D6D9A4165F"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:mending"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "73FDA234B6B6EBEF"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
 			]
-			subtitle: "深暗最强武器"
+			subtitle: "深暗之园最强武器"
 			tasks: [{
 				id: "7868FDBB684B6F3A"
 				item: {
@@ -920,7 +949,7 @@
 				}
 				type: "item"
 			}]
-			title: "深暗王者"
+			title: "深园王者"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -1035,8 +1064,8 @@
 			hide: true
 			id: "70726F375FFF5CF3"
 			rewards: [{
-				id: "0CA3357EC6D9F217"
-				item: "artifacts:chorus_totem"
+				id: "186F0BBBFC1FE93B"
+				item: "artifacts:umbrella"
 				type: "item"
 			}]
 			subtitle: "考古#2"

@@ -226,6 +226,7 @@
 		}
 		{
 			dependencies: ["2410B41FD6E6584A"]
+			description: ["但是不会给你变色龙皮！"]
 			id: "3FD4536FE957D2BC"
 			subtitle: "低配版变色龙"
 			tasks: [{
