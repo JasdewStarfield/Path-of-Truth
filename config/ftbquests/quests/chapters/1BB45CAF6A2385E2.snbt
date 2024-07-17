@@ -12,6 +12,7 @@
 	quests: [
 		{
 			dependencies: ["2D906487EC6F1A01"]
+			description: ["如果你发现你缺少合成异彩化合物的材料……请看魔法线"]
 			hide: true
 			icon: "bloodmagic:dungeon_alternator"
 			id: "0D0BEC03C1B26CA3"
@@ -23,101 +24,25 @@
 			shape: "gear"
 			size: 2.0d
 			subtitle: "机械的终末是……无限。"
-			tasks: [{
-				id: "574D4B148744FE70"
-				item: "kubejs:buran"
-				title: "工业的最高成就……"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "574D4B148744FE70"
+					item: "kubejs:buran"
+					title: "工业的最高成就……"
+					type: "item"
+				}
+				{
+					id: "7B8B9CD2BDB1291B"
+					item: "createchromaticreturn:chromatic_compound"
+					type: "item"
+				}
+			]
 			title: "【起点】机械神教，机械飞升"
 			x: 0.0d
-			y: -3.0d
-		}
-		{
-			dependencies: [
-				"1A0E95EE2F0D2D5B"
-				"730D5088B9FDC593"
-				"1E235F6753976501"
-			]
-			hide: true
-			id: "34400C31E3703498"
-			rewards: [{
-				id: "51EB03A1679E8909"
-				item: "createdeco:decal_fluid"
-				type: "item"
-			}]
-			subtitle: "无限能量=无限物质，但是只有流体"
-			tasks: [{
-				id: "60B96C0FD52B7D5A"
-				item: "create:creative_fluid_tank"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 1.5d
-		}
-		{
-			dependencies: ["0D2EEDEACB542342"]
-			id: "730D5088B9FDC593"
-			subtitle: "绝对刚体=无限应力"
-			tasks: [{
-				id: "7D88B3C1489D2DD0"
-				item: "create:creative_motor"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["3CA3B66481E3AFF9"]
-			id: "1A0E95EE2F0D2D5B"
-			subtitle: "永动机械=无尽电力"
-			tasks: [{
-				id: "757F7D1039E21F46"
-				item: "immersiveengineering:capacitor_creative"
-				type: "item"
-			}]
-			x: -4.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["6ED2B7EF9909EB05"]
-			hide: true
-			id: "6936D38B28D26AF0"
-			rewards: [{
-				id: "5EF5BEF9AC3CE16C"
-				item: "create:blaze_burner"
-				type: "item"
-			}]
-			subtitle: "给你的烈焰人来块士力架！"
-			tasks: [{
-				id: "7BB018EE90A8A873"
-				item: "create:creative_blaze_cake"
-				type: "item"
-			}]
-			x: 1.5d
-			y: -3.5d
+			y: -5.0d
 		}
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
-			id: "6ED2B7EF9909EB05"
-			rewards: [{
-				id: "40461D13430194CF"
-				item: "immersive_paintings:glow_painting"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 2.0d
-			subtitle: "工业提供了另一种异彩化合物的制作方式……"
-			tasks: [{
-				id: "5F94339B12159527"
-				item: "createchromaticreturn:chromatic_compound"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["6ED2B7EF9909EB05"]
 			description: ["也是超级装备的基础材料"]
 			hide: true
 			id: "6D54B104118A0FA7"
@@ -127,11 +52,11 @@
 				item: "createchromaticreturn:shadow_steel"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -3.5d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["6D54B104118A0FA7"]
+			dependencies: ["38F3E1D924DDE502"]
 			id: "0D2EEDEACB542342"
 			subtitle: "由世上最硬的金属聚合而来"
 			tasks: [{
@@ -140,11 +65,11 @@
 				type: "item"
 			}]
 			title: "硬钢锭"
-			x: 1.5d
+			x: 1.0d
 			y: 0.5d
 		}
 		{
-			dependencies: ["6D54B104118A0FA7"]
+			dependencies: ["38F3E1D924DDE502"]
 			id: "3CA3B66481E3AFF9"
 			subtitle: "由涌动着澎湃动力的工业机械组合而来"
 			tasks: [{
@@ -153,7 +78,7 @@
 				type: "item"
 			}]
 			title: "工业锭"
-			x: -1.5d
+			x: -1.0d
 			y: 0.5d
 		}
 		{
@@ -204,14 +129,44 @@
 			shape: "gear"
 			size: 2.0d
 			subtitle: "代表创造的紫色光芒"
-			tasks: [{
-				id: "2F6629F5CBFC7050"
-				item: "createchromaticreturn:multiplite_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2F6629F5CBFC7050"
+					item: "createchromaticreturn:multiplite_ingot"
+					type: "item"
+				}
+				{
+					id: "76E692632B6C4F3A"
+					item: "createchromaticreturn:antiplite_ingot"
+					type: "item"
+				}
+			]
 			title: "【终点】多模态"
 			x: 0.0d
 			y: 4.0d
+		}
+		{
+			id: "2592FE89FD5EFA69"
+			tasks: [{
+				id: "04A6DBE415BD753F"
+				item: "createchromaticreturn:silkstrum_book"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6D54B104118A0FA7"]
+			icon: "createchromaticreturn:shadow_essence_bucket"
+			id: "38F3E1D924DDE502"
+			tasks: [{
+				id: "626B0DD095892643"
+				item: "createchromaticreturn:shadow_essence_bucket"
+				type: "item"
+			}]
+			title: "暗影精华"
+			x: 0.0d
+			y: -1.5d
 		}
 	]
 	subtitle: ["The Mastery of Industry"]

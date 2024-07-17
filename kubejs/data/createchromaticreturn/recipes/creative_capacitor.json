@@ -15,12 +15,12 @@
       "item": "createchromaticreturn:refined_mechanism"
     },
     "X": {
-      "item": "createchromaticreturn:industrium_ingot"
-    },
-    "S": {
-      "item": "immersiveengineering:capacitor_hv"
+      "item": "createchromaticreturn:multiplite_ingot"
     },
     "Y": {
+      "item": "immersiveengineering:capacitor_hv"
+    },
+    "S": {
       "item": "immersiveengineering:capacitor_mv"
     },
     "I": {

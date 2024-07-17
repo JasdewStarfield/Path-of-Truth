@@ -21,14 +21,6 @@
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 6.0d
-			y: 4.0d
-		}
-		{
-			height: 0.4d
-			image: "kubejs:textures/quests/next.png"
-			rotation: 0.0d
-			width: 1.1149863760217984d
 			x: 14.0d
 			y: 0.0d
 		}
@@ -629,7 +621,7 @@
 			tasks: [
 				{
 					id: "70186FD6D7DB9684"
-					item: "kubejs:crushed_raw_bauxite"
+					item: "tfmg:bauxite"
 					type: "item"
 				}
 				{

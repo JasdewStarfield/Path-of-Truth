@@ -13,6 +13,8 @@
 		{
 			dependencies: ["0C46182EC4B33189"]
 			description: [
+				"如果你发现你缺少合成异彩化合物的材料……请看工业线"
+				""
 				"越到末尾的章节，节点就越少）"
 				"因为你不需要我再给你讲故事了，你需要的就是走下去，因为马上你就能看到了。"
 			]
@@ -37,7 +39,7 @@
 			]
 			title: "【起点】真正的魔法是规则……"
 			x: 0.0d
-			y: 1.7999999999999998d
+			y: 2.4d
 		}
 		{
 			dependencies: ["5FA2C80387ABE0BB"]
@@ -107,31 +109,41 @@
 			shape: "rsquare"
 			size: 1.5d
 			subtitle: "合成方式唯一"
-			tasks: [{
-				id: "4313F27BCBC9E38B"
-				item: "createchromaticreturn:multiplite_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "4313F27BCBC9E38B"
+					item: "createchromaticreturn:multiplite_ingot"
+					type: "item"
+				}
+				{
+					id: "1498853426A17E66"
+					item: "createchromaticreturn:antiplite_ingot"
+					type: "item"
+				}
+			]
 			title: "【终点】真理的紫光"
 			x: 0.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["32AD657E17E55325"]
-			description: ["如果你足够富有，也许你可以用它去制作红石酸……"]
+			description: [
+				"在炼金反应炉中，使用光辉锭与水可以合成一种发光的流体"
+				"如果你足够富有，也许你可以用它去制作红石酸……"
+			]
+			icon: "createchromaticreturn:refined_mixture_bucket"
 			id: "5FA2C80387ABE0BB"
 			shape: "rsquare"
 			size: 1.2d
 			subtitle: "一种“水”"
 			tasks: [{
-				amount: 1000L
-				fluid: "createchromaticreturn:refined_mixture"
-				id: "3653C5A7F95B337E"
-				type: "fluid"
+				id: "15AB2E2997EABD09"
+				item: "createchromaticreturn:refined_mixture_bucket"
+				type: "item"
 			}]
 			title: "光辉流淌"
 			x: 0.0d
-			y: -1.0d
+			y: -1.2d
 		}
 	]
 	subtitle: ["The Spells of Finale"]

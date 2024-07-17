@@ -152,18 +152,27 @@
 			]
 			hide: true
 			id: "59C668DE4E479AD9"
+			shape: "gear"
+			size: 2.0d
 			subtitle: "走出最后一段路。"
-			tasks: [{
-				id: "2622B81FA3F7DFD7"
-				item: "createchromaticreturn:multiplite_ingot"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "2622B81FA3F7DFD7"
+					item: "createchromaticreturn:multiplite_ingot"
+					type: "item"
+				}
+				{
+					id: "3AC7042677FA340D"
+					item: "createchromaticreturn:antiplite_ingot"
+					type: "item"
+				}
+			]
 			title: "【起点】真理之锭"
 			x: 0.0d
 			y: 7.0d
 		}
 		{
-			dependencies: ["59C668DE4E479AD9"]
+			dependencies: ["537B5AA8E2C3244A"]
 			description: ["魔力自有永有，而你现在能集成无尽的魔力为你所用。"]
 			id: "21454EF3D8D8DCF1"
 			subtitle: "太阳井"
@@ -173,7 +182,7 @@
 				type: "item"
 			}]
 			x: 3.0d
-			y: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["59C668DE4E479AD9"]
@@ -187,6 +196,68 @@
 			}]
 			x: -3.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["59C668DE4E479AD9"]
+			id: "537B5AA8E2C3244A"
+			tasks: [{
+				id: "1ABF6C71BB897718"
+				item: "create:creative_fluid_tank"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["00BBB61C39207A0F"]
+			id: "0F10088DCC4F6FDB"
+			tasks: [{
+				id: "188B8C056D3F761E"
+				item: "create:creative_crate"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["59C668DE4E479AD9"]
+			hide: true
+			id: "3111841E3A7C8262"
+			rewards: [{
+				id: "5A6EF9373C21B934"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			subtitle: "给你的烈焰人来块士力架！"
+			tasks: [{
+				id: "0266BC865A9B984E"
+				item: "create:creative_blaze_cake"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["59C668DE4E479AD9"]
+			id: "7237285ADC05FC5C"
+			tasks: [{
+				id: "18D003645FEF6259"
+				item: "create:creative_motor"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["59C668DE4E479AD9"]
+			id: "43913160B28A2E0F"
+			tasks: [{
+				id: "3941B6168227EA0D"
+				item: "immersiveengineering:capacitor_creative"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 9.0d
 		}
 	]
 	subtitle: ["The Truth Lies Here"]
