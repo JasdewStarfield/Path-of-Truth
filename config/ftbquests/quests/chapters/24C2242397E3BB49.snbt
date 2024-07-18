@@ -13,7 +13,6 @@
 	quests: [
 		{
 			dependencies: [
-				"6D3D887E93176D55"
 				"0D0BEC03C1B26CA3"
 				"59C668DE4E479AD9"
 			]
@@ -146,9 +145,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"1E235F6753976501"
-				"789E29CC3E41839C"
+			dependencies: ["1E235F6753976501"]
+			description: [
+				"越到末尾的章节，节点就越少）"
+				"因为你不需要我再给你讲故事了，你需要的就是走下去，因为马上你就能看到了。"
 			]
 			hide: true
 			id: "59C668DE4E479AD9"

@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'createchromaticreturn:shadow_steel_recipe' })
   event.remove({ id: 'createchromaticreturn:industrium_recipe' })
   event.remove({ id: 'createchromaticreturn:durasteel_recipe' })
-  
+
   event.remove({id:'createchromaticreturn:refined_radiance_recipe'})
   event.remove({id:'createchromaticreturn:silkstrum_recipe'})
   event.remove({id:'createchromaticreturn:glowing_ingot_recipe'})
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'createchromaticreturn:industrium_book_recipe' })
   event.remove({ id: 'createchromaticreturn:durasteel_book_recipe' })
   event.remove({id:'createchromaticreturn:silkstrum_book_recipe'})
-  
+
   event.remove({id:'createchromaticreturn:multiplite_recipe'})
   event.remove({id:'createchromaticreturn:antiplite_recipe'})
 
@@ -236,26 +236,26 @@ ServerEvents.recipes(event => {
   })
 
   //符文祭坛炼制永恒魔力池
-  event.recipes.botania.runic_altar('botania:creative_pool', 
+  event.recipes.botania.runic_altar('botania:creative_pool',
     [
-        'createchromaticreturn:multiplite_ingot', 
+        'createchromaticreturn:multiplite_ingot',
         'botania:fabulous_pool',
         'botania:mana_bomb',
         'create:creative_fluid_tank'
-    ], 
+    ],
     100000
   )
 
   //符文祭坛炼制丝触书籍
-  event.recipes.botania.runic_altar('createchromaticreturn:silkstrum_book', 
+  event.recipes.botania.runic_altar('createchromaticreturn:silkstrum_book',
     [
-        'createchromaticreturn:chromatic_compound', 
+        'createchromaticreturn:silkstrum', 
         'bosses_of_mass_destruction:void_thorn',
         'bosses_of_mass_destruction:blazing_eye',
         'irons_spellbooks:gold_spell_book',
         'bosses_of_mass_destruction:ancient_anima',
         'bosses_of_mass_destruction:obsidian_heart'
-    ], 
+    ],
     100000
   )
 
