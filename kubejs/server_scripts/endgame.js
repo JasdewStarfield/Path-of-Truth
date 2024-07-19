@@ -68,27 +68,25 @@ ServerEvents.recipes(event => {
 
   event.recipes.create.mixing(['createchromaticreturn:industrium_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [Fluid.of("createchromaticreturn:shadow_essence",1000),'create:deployer','create:mechanical_arm','immersiveengineering:powerpack','tfmg:large_radial_engine']).superheated()
   event.recipes.create.sequenced_assembly([
-    Item.of('createchromaticreturn:industrium_book').withChance(10.0),
-    Item.of('book').withChance(90.0)
-    ], 'immersiveengineering:manual', [
-    event.recipes.createDeploying('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', '#forge:plates/plastic']),
-    event.recipes.createFilling('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', Fluid.of('create_enchantment_industry:hyper_experience',500)]),
+    Item.of('createchromaticreturn:industrium_book')
+    ], '#forge:plates/plastic', [
     event.recipes.createDeploying('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', 'createchromaticreturn:industrium_ingot']),
-    event.recipes.createFilling('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', Fluid.of('create_enchantment_industry:ink',500)]),
-    event.recipes.createDeploying('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', '#forge:plates/plastic'])
-  ]).transitionalItem('kubejs:incomplete_industrium_book').loops(10)
+    event.recipes.createDeploying('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', 'minecraft:paper']),
+    event.recipes.createFilling('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', Fluid.of('create_enchantment_industry:hyper_experience',50)]),
+    event.recipes.createDeploying('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', 'minecraft:paper']),
+    event.recipes.createFilling('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', Fluid.of('create_enchantment_industry:hyper_experience',50)])
+  ]).transitionalItem('kubejs:incomplete_industrium_book').loops(2)
 
   event.recipes.create.compacting(['createchromaticreturn:durasteel_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [Fluid.of("createchromaticreturn:shadow_essence",1000),'#forge:storage_blocks/steel','#forge:storage_blocks/lead','#forge:storage_blocks/cast_iron','#forge:storage_blocks/netherite']).superheated()
   event.recipes.create.sequenced_assembly([
-    Item.of('createchromaticreturn:durasteel_book').withChance(10.0),
-    Item.of('book').withChance(90.0)
-    ], 'immersiveengineering:manual', [
-    event.recipes.createDeploying('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', '#forge:plates/obsidian']),
-    event.recipes.createFilling('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', Fluid.of('create_enchantment_industry:hyper_experience',500)]),
+    Item.of('createchromaticreturn:durasteel_book')
+    ], '#forge:plates/obsidian', [
     event.recipes.createDeploying('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', 'createchromaticreturn:durasteel_ingot']),
-    event.recipes.createFilling('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', Fluid.of('create_enchantment_industry:ink',500)]),
-    event.recipes.createDeploying('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', '#forge:plates/obsidian'])
-  ]).transitionalItem('kubejs:incomplete_durasteel_book').loops(10)
+    event.recipes.createDeploying('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', 'minecraft:paper']),
+    event.recipes.createFilling('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', Fluid.of('create_enchantment_industry:hyper_experience',50)]),
+    event.recipes.createDeploying('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', 'minecraft:paper']),
+    event.recipes.createFilling('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', Fluid.of('create_enchantment_industry:hyper_experience',50)])
+  ]).transitionalItem('kubejs:incomplete_durasteel_book').loops(2)
 
   //魔法侧终极锭修改
   //光辉石
