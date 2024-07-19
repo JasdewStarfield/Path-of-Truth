@@ -1,13 +1,20 @@
 {
-	autofocus_id: "6D9B7D2CD86693AF"
+	autofocus_id: "59C668DE4E479AD9"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "24C2242397E3BB49"
 	group: "60E63434E814893B"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "createchromaticreturn:multiplite_tube"
 	id: "24C2242397E3BB49"
+	images: [{
+		height: 2.0d
+		image: "kubejs:textures/quests/end.png"
+		rotation: 0.0d
+		width: 5.789173789173789d
+		x: 0.0d
+		y: 3.0d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -16,6 +23,7 @@
 				"0D0BEC03C1B26CA3"
 				"59C668DE4E479AD9"
 			]
+			hide: true
 			id: "6077CDDF1D3A011E"
 			shape: "octagon"
 			subtitle: "终末光剑"
@@ -26,7 +34,7 @@
 			}]
 			title: "砍瓜切菜"
 			x: 0.0d
-			y: 2.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6077CDDF1D3A011E"]
@@ -39,7 +47,7 @@
 			}]
 			title: "粉碎万物"
 			x: -2.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["60D336DE781B656A"]
@@ -52,7 +60,7 @@
 			}]
 			title: "基岩的馈赠"
 			x: 0.0d
-			y: -2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["5A910900A5C2135A"]
@@ -72,7 +80,7 @@
 			]
 			title: "压制核心"
 			x: 2.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["5CD99468F17FD0AC"]
@@ -117,7 +125,7 @@
 			]
 			title: "万物之理，集于一身"
 			x: 1.0d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["40DDCA5F57C2C680"]
@@ -142,7 +150,7 @@
 			}]
 			title: "【终点】神的力量"
 			x: 0.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["1E235F6753976501"]
@@ -191,6 +199,7 @@
 		{
 			dependencies: ["59C668DE4E479AD9"]
 			description: ["现在，只要你拥有某件物品，那么你将永远不再缺乏它。"]
+			hide: true
 			id: "00BBB61C39207A0F"
 			subtitle: "唯一即永恒。"
 			tasks: [{
@@ -204,6 +213,7 @@
 		{
 			dependencies: ["59C668DE4E479AD9"]
 			description: ["流体与真理的碰撞带来无尽的甘泉。"]
+			hide: true
 			id: "537B5AA8E2C3244A"
 			subtitle: "无尽流淌"
 			tasks: [{
@@ -256,6 +266,7 @@
 				""
 				"&o&7*希望你干的第一件事不是把这玩意放在发电机上……&r&r"
 			]
+			hide: true
 			id: "7237285ADC05FC5C"
 			subtitle: "无尽动能"
 			tasks: [{
@@ -269,6 +280,7 @@
 		{
 			dependencies: ["59C668DE4E479AD9"]
 			description: ["真理对于电的催化让你从现在起开始拥有无尽的电力。"]
+			hide: true
 			id: "43913160B28A2E0F"
 			subtitle: "雷霆领主"
 			tasks: [{

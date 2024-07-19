@@ -7,13 +7,24 @@
 	hide_quest_details_until_startable: true
 	icon: "minecraft:chain_command_block"
 	id: "1BB45CAF6A2385E2"
+	images: [{
+		height: 3.0d
+		image: "kubejs:textures/quests/6.png"
+		rotation: 0.0d
+		width: 11.64367816091954d
+		x: 0.0d
+		y: -7.5d
+	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["2D906487EC6F1A01"]
+			dependencies: [
+				"2D906487EC6F1A01"
+				"0C46182EC4B33189"
+			]
 			description: [
-				"如果你发现你缺少合成异彩化合物的材料……请看魔法线。"
+				"如果你发现你缺少合成异彩化合物的材料……请看确保你已经做完了整个工业线和魔法线。"
 				""
 				"某种意义上来讲，工业和魔法的最后必将趋于统一，因为本质上都是你探求真理的工具。"
 			]
@@ -36,7 +47,12 @@
 					type: "item"
 				}
 				{
-					id: "7B8B9CD2BDB1291B"
+					id: "5CAA50EB0779626E"
+					item: "kubejs:midnight"
+					type: "item"
+				}
+				{
+					id: "2093C3E9E4788595"
 					item: "createchromaticreturn:chromatic_compound"
 					type: "item"
 				}
@@ -214,6 +230,7 @@
 				"通过一些铁魔法材料的聚合，你可以得到它……"
 				"然后把它通过炼金手段融化。"
 			]
+			hide: true
 			id: "43F24DD9D0242F26"
 			shape: "circle"
 			size: 1.0d
@@ -285,6 +302,6 @@
 			y: 2.0d
 		}
 	]
-	subtitle: ["The Mastery of Industry"]
+	subtitle: ["Mastery of Tech & Magic"]
 	title: "6 统合机械，驾驭魔法"
 }

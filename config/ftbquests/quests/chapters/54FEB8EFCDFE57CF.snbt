@@ -1,5 +1,5 @@
 {
-	autofocus_id: "066C04C6A6CBCCB3"
+	autofocus_id: "0C34A91AD3EBF977"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "54FEB8EFCDFE57CF"
@@ -7,6 +7,14 @@
 	hide_quest_details_until_startable: true
 	icon: "minecraft:end_crystal"
 	id: "54FEB8EFCDFE57CF"
+	images: [{
+		height: 2.0d
+		image: "kubejs:textures/quests/a3.png"
+		rotation: 0.0d
+		width: 14.01388888888889d
+		x: 0.0d
+		y: -3.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [

@@ -7,6 +7,14 @@
 	hide_quest_details_until_startable: true
 	icon: "betterarcheology:radiance_totem"
 	id: "7F0791F4B66B5D63"
+	images: [{
+		height: 2.0d
+		image: "kubejs:textures/quests/a2.png"
+		rotation: 0.0d
+		width: 14.628571428571428d
+		x: 0.0d
+		y: -4.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [

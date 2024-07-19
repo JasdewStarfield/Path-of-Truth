@@ -1,5 +1,5 @@
 {
-	autofocus_id: "5EE2152C42721246"
+	autofocus_id: "48783396F615D90E"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "0E2F8F4C2B4CBD8C"
@@ -7,6 +7,14 @@
 	hide_quest_details_until_startable: true
 	icon: "botania:fork_light_relay"
 	id: "0E2F8F4C2B4CBD8C"
+	images: [{
+		height: 3.0d
+		image: "kubejs:textures/quests/challenge.png"
+		rotation: 0.0d
+		width: 7.807894736842105d
+		x: 0.0d
+		y: -7.5d
+	}]
 	order_index: 5
 	quest_links: [ ]
 	quests: [
