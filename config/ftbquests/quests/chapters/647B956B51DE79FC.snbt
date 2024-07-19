@@ -162,7 +162,7 @@
 		{
 			dependencies: [
 				"7CA6215959E08F1F"
-				"1F71A5FD2A6CA453"
+				"5A5B1D96C50D1EAE"
 			]
 			description: [
 				"你会在书里发现一些描述，大致内容是“我们还没写完这个模组”"
@@ -192,7 +192,7 @@
 		{
 			dependencies: [
 				"3502E7A3A9BB5220"
-				"6D0730EAA3483E08"
+				"5A5B1D96C50D1EAE"
 			]
 			description: [
 				"终于，你碰到了占地最大，功能最强的一种被动产能花。"

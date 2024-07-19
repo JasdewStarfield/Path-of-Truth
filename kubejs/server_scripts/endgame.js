@@ -182,9 +182,9 @@ ServerEvents.recipes(event => {
         },
         {
           "type": {
-              "item": 'createchromaticreturn:four_leaf_clover'
+              "item": 'createchromaticreturn:chromatic_compound'
           },
-          "chance": 0.05,
+          "chance": 0.25,
           "mainchance": 0.0
         }
     ],
@@ -196,7 +196,7 @@ ServerEvents.recipes(event => {
     },
     //输入液体（可以不写）
     "inputFluid": {
-        "amount": 5000,
+        "amount": 1000,
         "fluid": "createchromaticreturn:refined_mixture"
     },
     //输入数量（大概）
@@ -209,7 +209,7 @@ ServerEvents.recipes(event => {
     },
     //输出液体（可以不写）
     "outputFluid": {
-        "amount": 5000,
+        "amount": 1000,
         "fluid": "minecraft:water"
     },
     //使用工具（必须是血魔法原有工具）

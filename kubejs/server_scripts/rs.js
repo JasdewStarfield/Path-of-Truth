@@ -28,4 +28,12 @@ ServerEvents.recipes(event => {
         '#forge:glass',
         'pipez:universal_pipe'
     )
+
+    //替换范围卡配方
+    //维度卡
+    event.replaceInput({mod:'rsinfinitybooster',output:'rsinfinitybooster:dimension_card'},
+    'minecraft:ender_eye', 'bosses_of_mass_destruction:obsidian_heart' )
+    //无限范围增幅
+    event.replaceInput({mod:'rsinfinitybooster',output:'rsinfinitybooster:infinity_card'},
+    'minecraft:nether_star', 'createchromaticreturn:chromatic_compound' )
 })
