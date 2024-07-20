@@ -12,10 +12,20 @@ ServerEvents.recipes(event => {
   )
 
   //铝
-  event.remove([{id:'create:splashing/immersiveengineering/crushed_raw_aluminum'}])
-  event.remove([{ type: 'minecraft:smelting', output: '#forge:ingots/aluminum' }, { type: 'minecraft:blasting', output: '#forge:ingots/aluminum' }])
-  event.remove([{id:'immersiveengineering:crusher/ingot_aluminum'}])
-  event.remove([{id:'minecraft:kjs_immersiveengineering_ingot_aluminum'}])
+  
+  event.replaceOutput(
+    { output: 'create:crushed_raw_aluminum' }, // Arg 1: the filter
+    'create:crushed_raw_aluminum',            // Arg 2: the item to replace
+    'kubejs:crushed_raw_bauxite'
+  )
+  event.remove([{ type: 'immersiveengineering:crusher', output: '#forge:dusts/aluminum' }])
+  event.custom({
+    "type":"immersiveengineering:crusher",
+    "energy":3000,
+    "input":{"tag":"forge:ingots/aluminum"},
+    "result":{"base_ingredient":{"tag":"forge:dusts/aluminum"},"count":1},
+    "secondaries":[]
+  })
   event.custom({
     "type":"immersiveengineering:crusher",
     "energy":6000,
@@ -23,6 +33,16 @@ ServerEvents.recipes(event => {
     "result":{"base_ingredient":{"tag":"forge:dusts/aluminum"},"count":2},
     "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/aluminum"}}]
   })
+  event.recipes.create.mixing([Item.of('mud'),Fluid.of('immersiveengineering:redstone_acid',50),Item.of('create:crushed_raw_aluminum').withChance(0.1)], [Fluid.of('minecraft:water',1000),'kubejs:crushed_raw_bauxite']).heated()
+
+  event.remove([{id:'create:splashing/immersiveengineering/crushed_raw_aluminum'}])
+  event.remove([{ type: 'minecraft:smelting', output: '#forge:ingots/aluminum' }, { type: 'minecraft:blasting', output: '#forge:ingots/aluminum' }])
+  event.remove([{id:'immersiveengineering:crusher/ingot_aluminum'}])
+  event.remove([{id:'immersiveengineering:crusher/raw_ore_aluminum'}])
+  event.remove([{id:'immersiveengineering:arcfurnace/ore_aluminum'}])
+  event.remove([{id:'immersiveengineering:arcfurnace/raw_ore_aluminum'}])
+  event.remove([{id:'immersiveengineering:arcfurnace/raw_block_aluminum'}])
+  event.remove([{id:'minecraft:kjs_immersiveengineering_ingot_aluminum'}])
     
 
   //铁

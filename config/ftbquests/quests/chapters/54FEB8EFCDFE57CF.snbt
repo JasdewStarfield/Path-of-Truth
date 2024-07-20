@@ -1,5 +1,5 @@
 {
-	autofocus_id: "066C04C6A6CBCCB3"
+	autofocus_id: "0C34A91AD3EBF977"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "54FEB8EFCDFE57CF"
@@ -7,6 +7,14 @@
 	hide_quest_details_until_startable: true
 	icon: "minecraft:end_crystal"
 	id: "54FEB8EFCDFE57CF"
+	images: [{
+		height: 2.0d
+		image: "kubejs:textures/quests/a3.png"
+		rotation: 0.0d
+		width: 14.01388888888889d
+		x: 0.0d
+		y: -3.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -40,7 +48,7 @@
 			description: [
 				"你会发现末影之眼的合成难度增加了，但还是能做的。"
 				"为什么增加难度呢，因为不想让你到末地死的太难看（确信"
-				"找到末地传送门后，记得放一些能让你传送过去的东西……比如星辰放射台）"
+				"找到末地传送门后，记得做好合适的标记，毕竟现在没有传送石碑让你满地乱放了……"
 			]
 			hide: true
 			id: "193F465F65BC13F1"
@@ -60,7 +68,7 @@
 			dependencies: ["193F465F65BC13F1"]
 			description: [
 				"你可能会发现末影龙很难打——这种时候我们的建议是战略性撤退。"
-				"虽然你的东西会丢在末地就是了）"
+				"检查一下你的法术列表确保你可以在打不过的时候跑路……"
 				"（其实应该比盖亚守护者简单，所以可以先打完守护者再来打末影龙）"
 			]
 			id: "0C34A91AD3EBF977"

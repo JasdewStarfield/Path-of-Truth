@@ -1,11 +1,11 @@
 {
   "type": "create:mechanical_crafting",
   "pattern": [
-    "XAYAX",
+    "XAAAX",
     "AAPAA",
     "APSPA",
     "AAPAA",
-    "XAIAX"
+    "XAAAX"
   ],
   "key": {
     "A": {
@@ -19,12 +19,6 @@
     },
     "S": {
       "item": "tfmg:steel_fluid_tank"
-    },
-    "Y": {
-      "item": "create:creative_motor"
-    },
-    "I": {
-      "item": "immersiveengineering:capacitor_creative"
     }
   },
   "result": {

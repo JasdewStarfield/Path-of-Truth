@@ -7,6 +7,32 @@
 	hide_quest_details_until_startable: true
 	icon: "immersiveengineering:manual"
 	id: "59B76A6AF749A1DB"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/i4.png"
+			rotation: 0.0d
+			width: 12.853503184713375d
+			x: -6.5d
+			y: 4.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -126,8 +152,8 @@
 				}
 			]
 			title: "组装发酵机"
-			x: -3.0d
-			y: -3.0d
+			x: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
@@ -193,8 +219,8 @@
 				}
 			]
 			title: "组装挤压机"
-			x: -3.0d
-			y: 3.0d
+			x: -2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1E0E5E47E1264279"]
@@ -573,11 +599,15 @@
 			dependencies: [
 				"583407C7537AE9C9"
 				"66E52E485A1A4139"
+				"585C0F11261551FD"
 			]
 			description: [
-				"通过电弧炉，你终于获得了这一珍贵的金属）"
+				"首先经过一些工序将铝土矿加工为氧化铝，然后利用电弧炉电解，你终于获得了这一珍贵的金属）"
 				"现在，你可以利用它的优良性能来解决更多工业方面的问题了）"
+				""
+				"你问我铝土矿在哪找？兄弟，铝可是储量最大的金属之一，如果到了这一阶段你还完全没见过满地的铝土矿，那我得怀疑一下你是不是认真在玩了……"
 			]
+			hide: true
 			icon: "tfmg:aluminum_ingot"
 			id: "2BE7BA0BE9F2DBC9"
 			rewards: [{
@@ -588,18 +618,23 @@
 			shape: "gear"
 			size: 2.0d
 			subtitle: "电解，嗯"
-			tasks: [{
-				id: "079139B4E55015BA"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/aluminum"
-					}
+			tasks: [
+				{
+					id: "70186FD6D7DB9684"
+					item: "tfmg:bauxite"
+					type: "item"
 				}
-				title: "Any #forge:ingots/aluminum"
-				type: "item"
-			}]
+				{
+					id: "6E090919BA7349F7"
+					item: "create:crushed_raw_aluminum"
+					type: "item"
+				}
+				{
+					id: "1C5AD55FCFAA1395"
+					item: "tfmg:aluminum_ingot"
+					type: "item"
+				}
+			]
 			title: "工业明珠"
 			x: 3.0d
 			y: -4.0d
@@ -686,8 +721,8 @@
 				}
 			]
 			title: "高压电力系统"
-			x: 0.5d
-			y: -3.5d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -1241,8 +1276,8 @@
 				item: "tfmg:thermite_grenade"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -6.0d
+			x: 0.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1346,6 +1381,61 @@
 			}]
 			x: 0.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["0EA7E42D07C4BC01"]
+			description: [
+				"这台粉碎机用途很多，不过主要是用来量产矿物！搭配粉碎轮，可以实现矿物的2.5倍量产！"
+				"另外，它在（你会遇到的）铝的生产中也十分关键，所以迟早是要做的。"
+			]
+			icon: "immersiveengineering:crusher"
+			id: "585C0F11261551FD"
+			subtitle: "工业之美源自力量"
+			tasks: [
+				{
+					count: 10L
+					id: "7D0F10DEB45E161F"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "65F78C83310DC723"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "1405009BFD1486FC"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5A700AC8E96FEEEA"
+					item: "immersiveengineering:steel_fence"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "216A28629C426D4B"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					id: "4DCBBC411C6A312F"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "组装粉碎机"
+			x: -3.0d
+			y: -3.5d
 		}
 	]
 	subtitle: ["Roaring Machinery"]

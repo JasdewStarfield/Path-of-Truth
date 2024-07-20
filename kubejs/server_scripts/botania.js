@@ -62,7 +62,8 @@ ServerEvents.recipes(event => {
         ]
     )
     //合成注能丝触书籍
-    event.remove({id:'createchromaticreturn:silkstrum_book_recipe'})
+    /*
+    
     event.recipes.botania.petal_apothecary('createchromaticreturn:silkstrum_book', 
         [
             'createchromaticreturn:silkstrum',
@@ -71,6 +72,7 @@ ServerEvents.recipes(event => {
             'irons_spellbooks:ruined_book'
         ]
     )
+    */
 
     //修改魔力池配方
     event.remove({ output: 'botania:mana_pool' })
@@ -224,10 +226,6 @@ ServerEvents.recipes(event => {
     'minecraft:iron_ingot', 'irons_spellbooks:arcane_ingot' )
     event.replaceInput({mod:'undergarden',output:'undergarden:catalyst'},
     'minecraft:gold_ingot', 'create:brass_ingot' )
-
-    //飞腾台座配方替换
-    event.replaceInput({mod:'bosses_of_mass_destruction',output:'bosses_of_mass_destruction:levitation_block'},
-    'minecraft:gold_ingot', 'botania:corporea_spark_creative' )
 
     //风暴透镜配方
     event.shaped(Item.of('botania:lens_storm',1),
@@ -391,6 +389,7 @@ ServerEvents.recipes(event => {
         ], 
         500000
     )
+    /*
     //异彩化合物魔法合成
     event.recipes.botania.terra_plate('createchromaticreturn:chromatic_compound', 
         [
@@ -407,7 +406,7 @@ ServerEvents.recipes(event => {
     )
 
     //辉光锭合成
-    event.remove({id:'createchromaticreturn:glowing_ingot_recipe'})
+    
     event.recipes.botania.terra_plate('createchromaticreturn:glowing_ingot', 
         [
             'createchromaticreturn:chromatic_compound', 
@@ -420,7 +419,7 @@ ServerEvents.recipes(event => {
             'botania:flugel_eye'
         ], 
         500000
-    )
+    )*/
 
     //产能花系列配方修改
     //火红莲

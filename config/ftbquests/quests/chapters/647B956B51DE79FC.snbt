@@ -1,4 +1,5 @@
 {
+	autofocus_id: "5803C7E02E8597D4"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "647B956B51DE79FC"
@@ -6,6 +7,32 @@
 	hide_quest_details_until_startable: true
 	icon: "bloodmagic:ritualdiviner"
 	id: "647B956B51DE79FC"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: -0.8d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 0.8d
+			y: -2.4d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/m4.png"
+			rotation: 0.0d
+			width: 8.2834008097166d
+			x: 0.0d
+			y: -5.5d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -99,7 +126,7 @@
 				"其中，&b小型地牢（隐域仪式）&r的危险性和收获都比较小，也无法让你获取恶魔金属；而&c大型地牢（无尽之路仪式）&r则非常复杂，战利品也非常多。"
 				"两种地牢的仪式都只需要进行一次，因为入口是固化的，你可以一直通过核心的柱状结构反复出入地牢。"
 				"如果你发现有的房间打不开，那就回去自己合成钥匙吧）"
-				"&4当你收集了一整个恶魔合金块后，你就可以通过鲜血进行恶魔合金的催化了）&r"
+				"&4&o当你收集了一整个恶魔合金块后，你就可以通过鲜血进行恶魔合金的催化了）&r&r"
 			]
 			icon: "bloodmagic:dungeon_ore"
 			id: "7CA6215959E08F1F"
@@ -135,7 +162,7 @@
 		{
 			dependencies: [
 				"7CA6215959E08F1F"
-				"1F71A5FD2A6CA453"
+				"5A5B1D96C50D1EAE"
 			]
 			description: [
 				"你会在书里发现一些描述，大致内容是“我们还没写完这个模组”"
@@ -165,7 +192,7 @@
 		{
 			dependencies: [
 				"3502E7A3A9BB5220"
-				"6D0730EAA3483E08"
+				"5A5B1D96C50D1EAE"
 			]
 			description: [
 				"终于，你碰到了占地最大，功能最强的一种被动产能花。"
@@ -530,7 +557,11 @@
 		}
 		{
 			dependencies: ["3502E7A3A9BB5220"]
-			description: ["当大地在魔力的托举下升空……"]
+			description: [
+				"当大地在魔力的托举下升空……"
+				""
+				"警告：不推荐对着你家使用。后果自负"
+			]
 			id: "793E8DE00C384C1D"
 			rewards: [{
 				id: "78343A838FA4B7F1"

@@ -1,4 +1,5 @@
 {
+	autofocus_id: "160FD1D89EBC02BC"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "0F8C24D7FEEABE04"
@@ -6,6 +7,14 @@
 	hide_quest_details_until_startable: true
 	icon: "minecraft:sniffer_egg"
 	id: "0F8C24D7FEEABE04"
+	images: [{
+		height: 1.0d
+		image: "kubejs:textures/quests/biodiversity.png"
+		rotation: 0.0d
+		width: 6.958620689655173d
+		x: 0.0d
+		y: -6.5d
+	}]
 	order_index: 4
 	quest_links: [ ]
 	quests: [
@@ -217,6 +226,7 @@
 		}
 		{
 			dependencies: ["2410B41FD6E6584A"]
+			description: ["但是不会给你变色龙皮！"]
 			id: "3FD4536FE957D2BC"
 			subtitle: "低配版变色龙"
 			tasks: [{

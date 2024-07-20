@@ -1,5 +1,5 @@
 {
-	autofocus_id: "5B1818D5A1142A16"
+	autofocus_id: "309524B4033437AF"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "7AE641FF7F1535BF"
@@ -7,6 +7,32 @@
 	hide_quest_details_until_startable: true
 	icon: "immersiveengineering:blastfurnace_preheater"
 	id: "7AE641FF7F1535BF"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: -2.3d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 13.0d
+			y: -2.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/i3.png"
+			rotation: 0.0d
+			width: 10.941176470588236d
+			x: 2.5d
+			y: -5.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -57,8 +83,8 @@
 				}
 			]
 			title: "选择模板"
-			x: 2.5d
-			y: 2.5d
+			x: 5.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -89,7 +115,7 @@
 				type: "item"
 			}]
 			title: "焦炉与焦煤"
-			x: 1.5d
+			x: 3.5d
 			y: 1.5d
 		}
 		{
@@ -138,8 +164,8 @@
 				}
 			]
 			title: "高炉保护层"
-			x: 2.5d
-			y: -4.5d
+			x: 5.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["242C57AF7F6116E4"]
@@ -157,7 +183,7 @@
 				type: "item"
 			}]
 			title: "血与火"
-			x: 1.5d
+			x: 3.5d
 			y: -3.5d
 		}
 		{
@@ -538,7 +564,7 @@
 			id: "34F7983B4915B789"
 			subtitle: "Anything（指可以合成任何东西）"
 			tasks: [{
-				count: 24L
+				count: 21L
 				id: "3B1CB63D662B2B0E"
 				item: "create:mechanical_crafter"
 				type: "item"
@@ -597,6 +623,6 @@
 			y: -1.0d
 		}
 	]
-	subtitle: ["Hearts of Iron"]
+	subtitle: ["Hearts of Steel"]
 	title: "3I 钢铁雄心"
 }

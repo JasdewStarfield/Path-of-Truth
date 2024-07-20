@@ -241,7 +241,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.milling(Item.of('tfmg:coal_coke_dust').withChance(0.75), '#forge:coal_coke').id('coal_coke_dust_manual_only')
 
     //木炭压制焦煤（小概率）
-    event.recipes.create.compacting([Item.of('tfmg:coal_coke').withChance(0.1), Fluid.of('immersiveengineering:creosote', 500)], ['charcoal','charcoal','charcoal','charcoal']).heated()
+    event.recipes.create.compacting([Item.of('tfmg:coal_coke').withChance(0.1), Fluid.of('immersiveengineering:creosote', 500)], ['createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder']).heated()
 
     //ban掉水搅拌出锌粒，火药烧烈焰粉
     //sb chromatic return

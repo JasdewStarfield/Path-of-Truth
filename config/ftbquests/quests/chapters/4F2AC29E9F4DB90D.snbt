@@ -1,5 +1,5 @@
 {
-	autofocus_id: "4D493DCB4C0B99C0"
+	autofocus_id: "0E7C15008078BC90"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "4F2AC29E9F4DB90D"
@@ -7,6 +7,24 @@
 	hide_quest_details_until_startable: true
 	icon: "create:brass_ingot"
 	id: "4F2AC29E9F4DB90D"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/i2.png"
+			rotation: 0.0d
+			width: 9.385321100917432d
+			x: 0.0d
+			y: -4.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -70,8 +88,8 @@
 				}
 			]
 			title: "更多的自动化选项！"
-			x: -1.0d
-			y: -2.0d
+			x: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
@@ -92,8 +110,8 @@
 				type: "item"
 			}]
 			title: "好看吗？"
-			x: 1.0d
-			y: -2.0d
+			x: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["2B406E71D5BDF8F6"]
@@ -107,8 +125,8 @@
 				type: "item"
 			}]
 			title: "全自动装饰方块生产器"
-			x: 1.0d
-			y: -4.0d
+			x: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["7678AE43CAD02807"]
@@ -145,8 +163,8 @@
 				}
 			]
 			title: "神秘转转"
-			x: -1.0d
-			y: -4.0d
+			x: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
@@ -184,7 +202,12 @@
 		}
 		{
 			dependencies: ["003B99516797BF14"]
-			description: ["有条件的话可以多抓几只，烈焰人不仅可以帮你加热炉子，开火车也是一把好手。"]
+			description: [
+				"有条件的话可以多抓几只，烈焰人不仅可以帮你加热炉子，开火车也是一把好手。"
+				"烈焰人需要燃料——一般来说是煤炭木炭，但也可以通过流体输入的方式灌入岩浆，而且岩浆很耐烧。"
+				""
+				"&o&c*那么从哪里搞那么多岩浆？&r&r"
+			]
 			icon: "create:blaze_burner"
 			id: "079D9B3E0E12C25C"
 			subtitle: "我TM莱纳！"
@@ -365,8 +388,8 @@
 				type: "item"
 			}]
 			title: "工业化的结晶"
-			x: -2.0d
-			y: 12.0d
+			x: -3.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["76BE4625CCF2F867"]
@@ -384,8 +407,8 @@
 				type: "item"
 			}]
 			title: "鼓风机输出"
-			x: -0.5d
-			y: 12.0d
+			x: 2.5d
+			y: 12.5d
 		}
 		{
 			dependencies: ["07C921FBCF56E703"]
@@ -415,8 +438,8 @@
 				}
 			]
 			title: "触媒装箱"
-			x: 0.5d
-			y: 12.0d
+			x: 1.0d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -438,8 +461,8 @@
 				type: "item"
 			}]
 			title: "精密工业"
-			x: -3.5d
-			y: 12.0d
+			x: -5.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
@@ -457,8 +480,8 @@
 				type: "item"
 			}]
 			title: "来硬的"
-			x: 2.0d
-			y: 12.0d
+			x: 3.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
@@ -475,8 +498,8 @@
 				type: "item"
 			}]
 			title: "防腐措施"
-			x: 3.5d
-			y: 12.0d
+			x: 5.0d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -506,7 +529,7 @@
 			}]
 			title: "【终点】精密时代"
 			x: 0.0d
-			y: 15.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
@@ -515,6 +538,7 @@
 				"虽然搭建产线的过程可能比较累，但是全自动还是值得的！"
 			]
 			id: "40840BF9F23BC8A1"
+			shape: "diamond"
 			subtitle: "磨刀不误砍柴工"
 			tasks: [
 				{
@@ -540,12 +564,13 @@
 			]
 			title: "粒粒皆辛苦"
 			x: 0.0d
-			y: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["40840BF9F23BC8A1"]
 			description: ["用泥胚获得铁……就是麻烦点，而且你还是逃不过高炉这一步（"]
 			id: "0E7C15008078BC90"
+			shape: "diamond"
 			subtitle: "铁自己也行"
 			tasks: [{
 				id: "73AD02B2C758A53A"
@@ -554,7 +579,7 @@
 			}]
 			title: "粒粒皆辛苦2"
 			x: 0.0d
-			y: -5.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["73CD9D2DD215B5F5"]
@@ -585,8 +610,8 @@
 				}
 			]
 			title: "智能时代"
-			x: 0.0d
-			y: 13.0d
+			x: -2.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
@@ -616,8 +641,128 @@
 				}
 			]
 			title: "附魔工业"
+			x: -2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["37C7364F0F3E8C89"]
+			description: [
+				"事实就是：这章有两个工程块（不过这一个目前不是必须项）"
+				"物流工程块允许你合成pipez的强力管道——它们可以输送各种资源，且不需要动力驱动。它们还可以进行升级，就像抽屉那样。"
+			]
+			hide: true
+			id: "6F27F12FD5EBE559"
+			rewards: [
+				{
+					id: "3483DA9CF7A9BFFE"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+				{
+					id: "1898D70FDD518270"
+					item: "pipez:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "56CD886F627854E9"
+					item: "pipez:wrench"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "什么？还有工程块？"
+			tasks: [{
+				id: "5151D84AFEC27F12"
+				item: "kubejs:logistical_engineering"
+				type: "item"
+			}]
+			title: "大物流时代！"
 			x: 0.0d
-			y: 8.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["37C7364F0F3E8C89"]
+			description: [
+				"铁路系统是机械动力的一大特色。它可以用于物流，抑或是单纯地观光。"
+				"铁路系统最突出的优势在于很适合远距离的运输，因为它可以跨越下界传送门，且不需要途径的区块被加载也能正常运行（但如果你要在站台装卸货的话，还是需要强加载站台）。"
+				"具体的教程，请参考思索系统。"
+			]
+			icon: "railways:track_biomesoplenty_willow"
+			id: "3DD1A739EA5EDB1D"
+			rewards: [{
+				count: 24
+				id: "65D303F0CC11B324"
+				item: "create:track"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "滴滴"
+			tasks: [
+				{
+					id: "4FF8EABCEF4709B2"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "130CDC56C69A4279"
+					item: "create:controls"
+					type: "item"
+				}
+			]
+			title: "铁道运输"
+			x: -1.0d
+			y: 12.5d
+		}
+		{
+			dependencies: [
+				"76BE4625CCF2F867"
+				"10CF3F30EC2A65E8"
+			]
+			description: ["提示：这一步任务属于本章的支线，不一定要在现在完成。"]
+			hide: true
+			id: "37C7364F0F3E8C89"
+			subtitle: "它能做什么呢？"
+			tasks: [{
+				id: "5CA376BDC1069E53"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			title: "与众不同的机壳"
+			x: 0.0d
+			y: 13.5d
+		}
+		{
+			dependencies: ["1D0D60C89EA75663"]
+			description: [
+				"通过进入下界，你将会看到大量的岩浆，并思考自己能不能利用它们……"
+				"幸运的是，连续流体超过10000单位就视为无限这一规律仍然有效。"
+				"也就是说，你可以通过软管滑轮从下界岩浆池中抽取&c无尽&r的岩浆！"
+				""
+				"&6&o*这下烈焰人吃饱了）&r&r"
+				"&b需要注意的是，软管滑轮是通过其软管放置面之上的液体量来计算是否无尽的，所以你需要对岩浆池进行一次探底）&r"
+				"&d软管滑轮还可以自动放置岩浆，所以你也许可以在主世界搞一个无尽的岩浆池……大概）&r"
+			]
+			icon: "bloodmagic:lavacrystal"
+			id: "794FE24A776917F2"
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "大型工程"
+			tasks: [
+				{
+					id: "4521DE7E0E114948"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "2D51661924528B20"
+					item: "create:hose_pulley"
+					type: "item"
+				}
+			]
+			title: "无尽岩浆"
+			x: 2.0d
+			y: 6.5d
 		}
 	]
 	subtitle: ["Exotic Alloys"]

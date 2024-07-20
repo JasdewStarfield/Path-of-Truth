@@ -403,7 +403,7 @@
 		#Range: 0.0 ~ 1.0
 		chance = 0.01
 		#Turns on/off addition of loot into backpacks
-		addLoot = true
+		addLoot = false
 		#Turns on/off buffing the entity that wears backpack with potion effects. These are scaled based on how much loot is added.
 		buffWithPotionEffects = true
 		#Turns on/off buffing the entity that wears backpack with additional health. Health is scaled based on backpack tier the mob wears.
@@ -420,10 +420,10 @@
 		dropToFakePlayers = false
 		#Chance of mob dropping backpack when killed by player
 		#Range: 0.0 ~ 1.0
-		backpackDropChance = 0.5
+		backpackDropChance = 0.0
 		#Chance increase per looting level of mob dropping backpack
 		#Range: 0.0 ~ 0.3
-		lootingChanceIncreasePerLevel = 0.15
+		lootingChanceIncreasePerLevel = 0.0
 
 	[server.nerfs]
 		#Determines if too many backpacks in player's inventory cause slowness to the player

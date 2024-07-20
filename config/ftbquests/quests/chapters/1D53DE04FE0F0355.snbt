@@ -7,14 +7,26 @@
 	hide_quest_details_until_startable: true
 	icon: "minecraft:skeleton_skull"
 	id: "1D53DE04FE0F0355"
-	images: [{
-		height: 1.0d
-		image: "kubejs:textures/logo_new.png"
-		rotation: 0.0d
-		width: 6.581993569131833d
-		x: 0.0d
-		y: -7.5d
-	}]
+	images: [
+		{
+			height: 2.0d
+			image: "kubejs:textures/logo_new.png"
+			rotation: 0.0d
+			width: 13.163987138263666d
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			click: "https://started.ink/"
+			height: 1.0d
+			hover: ["前往推荐链接"]
+			image: "botania:block/alfheim_portal_swirl"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: -3.5d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -348,7 +360,7 @@
 			}]
 			title: "关于开服……"
 			x: 0.0d
-			y: -4.0d
+			y: -4.5d
 		}
 	]
 	subtitle: ["Ahead of Everything Else"]

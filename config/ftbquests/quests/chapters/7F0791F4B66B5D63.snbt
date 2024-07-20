@@ -7,16 +7,24 @@
 	hide_quest_details_until_startable: true
 	icon: "betterarcheology:radiance_totem"
 	id: "7F0791F4B66B5D63"
+	images: [{
+		height: 2.0d
+		image: "kubejs:textures/quests/a2.png"
+		rotation: 0.0d
+		width: 14.628571428571428d
+		x: 0.0d
+		y: -4.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["7CFD3110EF8E53E2"]
 			description: [
-				"你会惊讶的发现，铁制背包往上就没有更大的背包了。"
-				"是的，这是我们故意的：太大的背包会破坏平衡性和真实性，所以你要接受现实。"
-				"这里为你提供了一种合理利用背包升级槽的形式，你可以动态分配自己的经验。"
-				"升级槽当然也可以拿来干别的，但那就要你自己探索了——反正只有两个槽位（摊手"
+				"你会惊讶的发现，背包的升级配方不太一样了——而且没有了任何的堆叠升级！"
+				"这是我们刻意的设计——大容量的背包加入堆叠升级后在游戏中过于强大，而且和抽屉出现了功能重复）"
+				"所以我们推荐大量杂物用箱子和背包储存；大量同类物品用抽屉储存。"
+				"具体细节可以参见“世界的表象”章节——对于抽屉和背包都有说明。"
 			]
 			hide: true
 			id: "34610E8F3D1306A9"
@@ -32,9 +40,9 @@
 					type: "item"
 				}
 			]
-			subtitle: "是的，到头了"
+			subtitle: "更强……？"
 			tasks: [{
-				id: "1055CB939D4B94DA"
+				id: "273E945ECB1FDDAC"
 				item: "sophisticatedbackpacks:iron_backpack"
 				type: "item"
 			}]
@@ -140,6 +148,10 @@
 				"星盘不能跨维度传送，所以你需要在下界门口——以及某些维度回家的门口放这种东西。"
 				"虽然它只有300单位的传送距离，但至少可以让你接近门口的时候直接回去。"
 				"&o&m&c星盘可以绑定任何一个星辰源，所以进副本要先绑炉石，记住了吗（x&r&r&r"
+				"{@pagebreak}"
+				"我很高兴你有耐心看到第二页，所以在这里将会提供一个百分百回到世界出生点的方式：通过铁魔法的“回溯”法术可以进行一个高速回传。"
+				"这个法术有很长的CD，并且需要吟唱，但是无视维度限制。"
+				"虽然只能拿来回家，但有个真正的回泉水的方式你就偷着乐吧（"
 			]
 			icon: "blue_skies:star_flare"
 			id: "636824522AD771D1"
@@ -268,11 +280,14 @@
 			id: "72696F489B5523C2"
 			rewards: [{
 				count: 3
-				id: "14617ADF2A5320A7"
+				id: "7E5E8BE1326768C7"
 				item: {
 					Count: 1
-					id: "blue_skies:loot_bag"
-					tag: { }
+					id: "blue_skies:loot_bag_summoner"
+					tag: {
+						LootTable: "blue_skies:loot_bags/summoner/common"
+						Rarity: 0
+					}
 				}
 				type: "item"
 			}]
@@ -333,11 +348,14 @@
 			id: "2F6FFC14EDCD99BB"
 			rewards: [{
 				count: 3
-				id: "438FEEF3D942DC5B"
+				id: "0CD0B8FC019166AC"
 				item: {
 					Count: 1
-					id: "blue_skies:loot_bag"
-					tag: { }
+					id: "blue_skies:loot_bag_alchemist"
+					tag: {
+						LootTable: "blue_skies:loot_bags/alchemist/common"
+						Rarity: 0
+					}
 				}
 				type: "item"
 			}]
@@ -381,24 +399,26 @@
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
+			dependency_requirement: "one_started"
 			description: [
 				"基于一些众所周知的原因（木头实在是太容易获得了），木质鱼竿的耐久被狠狠削减了）"
 				"但你会发现增加了大量全新的钓竿！"
 				"钓鱼系统有一定的变化，你需要在&a不同的位置&r（包括但不限于群系，深度，甚至维度）钓鱼来获得所有的鱼！"
 				"有些鱼拥有&e&l传奇&r&r的功效……"
 				"但你首先需要&6渔夫工坊&r和&5锻造台&r来升级和修改你的鱼竿）"
-				"*由于没有暖水，我们魔改了战利品表，你可以在冷水群系内钓到热带鱼）"
+				"*由于没有暖水，我们魔改了战利品表，你可以在冷水群系内钓到热带鱼，并且&b没有鹦鹉螺壳！&r你需要&1探索海底神殿&r或&c击杀溺尸&r来获得这一物品！）"
 				"有关于钓鱼机制的变更，请查看下一页。"
 				"{@pagebreak}"
 				"现在的钓鱼分为了三个部分：&b抛竿&r，&c拉钩&r，&a提钩&r。"
 				"你需要通过&b长按右键为你的钓竿蓄力&r，这决定它能抛多远。"
-				"在鱼儿上钩后，通过第一次右键（拉钩），我们会进入提钩环节，你需要&a等到标示线在绿色区域（也就是中央区）的时候提钩&r，才有更高几率获得更好的鱼。"
+				"在鱼儿上钩后，通过&c第一次右键（拉钩）&r，我们会进入提钩环节，你需要&a等到标示线在绿色区域（也就是中央区）的时候提钩&r，才有更高几率获得更好的鱼。"
 				"如果你在标示线侧边时提起了钩，那么恭喜你，你&b空军&r了！"
 				"在游戏里享受钓鱼佬的人生也是一种乐趣（确信"
 			]
+			hide: true
+			hide_details_until_startable: true
 			icon: "tide:shooting_starfish"
 			id: "25D2D0B2CB184527"
-			secret: true
 			subtitle: "组装神杆！"
 			tasks: [
 				{
@@ -419,6 +439,11 @@
 				{
 					id: "33BFEF9DDD6E00A8"
 					item: "tide:lavaproof_fishing_hook"
+					type: "item"
+				}
+				{
+					id: "1DCD22B01EDA16D5"
+					item: "tide:fishing_journal"
 					type: "item"
 				}
 			]

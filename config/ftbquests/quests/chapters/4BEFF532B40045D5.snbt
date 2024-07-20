@@ -1,18 +1,36 @@
 {
-	autofocus_id: "2BC7BDD7E5EC76E5"
+	autofocus_id: "63475C4CE3D204B4"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "4BEFF532B40045D5"
 	group: ""
 	icon: "undergarden:frozen_deepturf_block"
 	id: "4BEFF532B40045D5"
+	images: [
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/world.png"
+			rotation: 0.0d
+			width: 7.724137931034483d
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: -8.0d
+			y: 0.0d
+		}
+	]
 	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["2BC7BDD7E5EC76E5"]
 			description: [
-				"相信你已经发现了，这个世界到处都是冰天雪地——这是设定的一部分。"
+				"相信你已经发现了，这个世界&b&l到处都是冰天雪地&r&r——这是设定的一部分。"
 				"在没有温度计的情况下，你的体感会通过物品栏右侧的菱形标志展示，过冷会出现&b寒霜&r，而过热会出现&c火焰&r。具体来说，这分为环境温度和体温两个系统。环境温度高于2度以及低于38度都是安全的，超出这个范围，你的体温就会变化，这时就要注意了！"
 				"在温度过冷或过热的情况下，你不能上床睡眠来跳过长夜，体温偏离过大还会受到伤害以及获得Debuff。"
 				"基于“真实性深度修正”，现在看起来能发热或者降温的东西一般来说有效……"
@@ -824,6 +842,12 @@
 		}
 		{
 			dependencies: ["2BC7BDD7E5EC76E5"]
+			description: [
+				"包括居住，存储与村民和生物互动。"
+				"不包括物流——因为那是工业相关不是生活相关。"
+				""
+				"&o&9*你要是在自己房子里塞机器和传送带那我无话可说:(&r&r"
+			]
 			icon: "biomesoplenty:magic_door"
 			id: "724EBEFC6D269712"
 			shape: "hexagon"
@@ -958,6 +982,8 @@
 			description: [
 				"&a【完成后解锁额外章节：生物多样性】&r"
 				"在这个包里，很多生命相关的魔法都需要从小小的鸡蛋开始……"
+				""
+				"&b&o*注：鸡蛋有炼金制造的方式，并且鸡的交配会生下鸡蛋而不是小鸡，不会自然产蛋。&r&r"
 			]
 			id: "6AA0E68AB33475C9"
 			subtitle: "先有鸡还是先有蛋？"

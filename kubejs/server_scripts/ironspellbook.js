@@ -208,26 +208,8 @@ ServerEvents.recipes(event => {
         }
     )
 
-    //添加终极锭合成
-    event.remove({id:'createchromaticreturn:refined_radiance_recipe'})
-    event.shaped(Item.of('createchromaticreturn:refined_radiance',1),
-        ['ABC',
-        'DEF',
-        'GHI'],
-        {
-            A:'irons_spellbooks:eldritch_manuscript',
-            B:'irons_spellbooks:permafrost_shard',
-            C:'irons_spellbooks:blood_staff',
-            D:'irons_spellbooks:hither_thither_wand',
-            E:'createchromaticreturn:glowing_ingot',
-            F:'irons_spellbooks:tarnished_helmet',
-            G:'irons_spellbooks:magehunter',
-            H:'irons_spellbooks:keeper_flamberge',
-            I:'irons_spellbooks:dragonskin_spell_book'
-        }
-    )
-    event.remove({id:'createchromaticreturn:multiplite_recipe'})
-    /*event.shaped(Item.of('createchromaticreturn:multiplite_ingot',1),
+    /*
+    event.shaped(Item.of('createchromaticreturn:multiplite_ingot',1),
         ['ABC',
         'DEF',
         'GHI'],

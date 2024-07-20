@@ -1,4 +1,4 @@
-ServerEvents.recipes(event => {
+/*ServerEvents.recipes(event => {
   //占位符，测试用
   var testRecipe = [
     'OAAAAAAAA',
@@ -28,3 +28,4 @@ ServerEvents.recipes(event => {
     O:'minecraft:barrier'
   })
 })
+  */

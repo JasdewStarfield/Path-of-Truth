@@ -1,0 +1,27 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "XAAAX",
+    "AAPAA",
+    "APSPA",
+    "AAPAA",
+    "XAAAX"
+  ],
+  "key": {
+    "A": {
+      "item": "kubejs:logistical_engineering"
+    },
+    "P": {
+      "item": "createchromaticreturn:refined_mechanism"
+    },
+    "X": {
+      "item": "createchromaticreturn:multiplite_ingot"
+    },
+    "S": {
+      "item": "botania:corporea_spark_creative"
+    }
+  },
+  "result": {
+    "item": "create:creative_crate"
+  }
+}

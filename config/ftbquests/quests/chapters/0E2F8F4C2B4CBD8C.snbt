@@ -1,13 +1,21 @@
 {
-	autofocus_id: "5EE2152C42721246"
+	autofocus_id: "48783396F615D90E"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "0E2F8F4C2B4CBD8C"
-	group: "453FC1B4D45CC35B"
+	group: ""
 	hide_quest_details_until_startable: true
 	icon: "botania:fork_light_relay"
 	id: "0E2F8F4C2B4CBD8C"
-	order_index: 2
+	images: [{
+		height: 3.0d
+		image: "kubejs:textures/quests/challenge.png"
+		rotation: 0.0d
+		width: 7.807894736842105d
+		x: 0.0d
+		y: -7.5d
+	}]
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -195,7 +203,8 @@
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
 				"获得所有植物魔法的遗物！"
-				"*请不要丢掉其中任何一种，否则你会发现自己无法通关——这些物品也是后续配方材料！"
+				""
+				"&o&c&m打六次盖亚守护者II的感觉怎么样？&r&r&r"
 			]
 			hide: true
 			icon: "botania:dice"
@@ -522,6 +531,11 @@
 					item: "alexsmobs:raw_catfish"
 					type: "item"
 				}
+				{
+					id: "47E360501CC621C1"
+					item: "collectorsreap:platinum_bass"
+					type: "item"
+				}
 			]
 			title: "钓鱼王I"
 			x: -2.0d
@@ -586,6 +600,20 @@
 				{
 					id: "4EDFB1EAA9C24C50"
 					item: "minecraft:heart_of_the_sea"
+					type: "item"
+				}
+				{
+					id: "61229D24AEE38CF0"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "majruszsenchantments:fishing_fanatic"
+								lvl: 7s
+							}]
+						}
+					}
 					type: "item"
 				}
 			]
@@ -874,8 +902,50 @@
 					}
 					type: "item"
 				}
+				{
+					id: "1604F2AEC70F8CEF"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "20C451D6D9A4165F"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:mending"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "73FDA234B6B6EBEF"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
 			]
-			subtitle: "深暗最强武器"
+			subtitle: "深暗之园最强武器"
 			tasks: [{
 				id: "7868FDBB684B6F3A"
 				item: {
@@ -887,13 +957,16 @@
 				}
 				type: "item"
 			}]
-			title: "深暗王者"
+			title: "深园王者"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["193F465F65BC13F1"]
-			description: ["通过随便什么方式获得龙蛋——这是真理的一部分）"]
+			description: [
+				"通过随便什么方式获得龙蛋——这是真理的一部分）"
+				"&m&b*小声：这也是对于一些倒霉蛋的补偿——有的人捡不到漂浮在空中的龙皮）&r&r"
+			]
 			id: "583D1483CCA6EA3F"
 			rewards: [
 				{
@@ -925,23 +998,40 @@
 				"暗夜巫妖，虚空之花，下界铁掌，黑曜石巨柱"
 				"通过击穿他们来证明你身为冒险家的实力！"
 				"你问我BOSS机制？自己探索去！"
-				"注意：由于对于材料的需求，这几种BOSS你可能分别需要打不止一次）"
+				"注意：由于对于材料的需求，这几种BOSS你可能分别需要打不止一次，请善用硫磺花蜜进行结构重置哦））"
 				""
-				"&o&a暗夜巫妖和虚空之花需要通过灵魂之星和虚空百合找到，下界铁掌会生成在类似猪灵堡垒的结构中，黑曜石巨柱则会生成在末地的大型平台上（需要末影之眼召唤）。&r&r"
+				"&o&b暗夜巫妖需要通过灵魂之星找到并用四颗灵魂之星召唤。&r&r"
+				"&o&a虚空之花需要通过虚空百合找到。&r"
+				"&o&c下界铁掌会生成在类似猪灵堡垒的结构，需要破开中心柱体。&r&r"
+				"&o&d黑曜石巨柱则会生成在末地的大型平台上，需要末影之眼召唤。&r&r"
 			]
 			id: "5EE2152C42721246"
-			rewards: [{
-				id: "13BDA7500373C98F"
-				item: {
-					Count: 1
-					id: "tfmg:quad_potato_cannon"
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "13BDA7500373C98F"
+					item: {
+						Count: 1
+						id: "tfmg:quad_potato_cannon"
+						tag: {
+							Damage: 0
+						}
 					}
+					title: "哒哒哒哒哒哒"
+					type: "item"
 				}
-				title: "哒哒哒哒哒哒"
-				type: "item"
-			}]
+				{
+					id: "6897AB733A3B15CC"
+					item: {
+						Count: 1
+						id: "botania:mana_tablet"
+						tag: {
+							creative: 1b
+							mana: 500000
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 1.2d
 			subtitle: "这将是你面对的最终BOSS"
@@ -966,6 +1056,11 @@
 					item: "bosses_of_mass_destruction:void_thorn"
 					type: "item"
 				}
+				{
+					id: "0F953A05D82E62E9"
+					item: "bosses_of_mass_destruction:brimstone_nectar"
+					type: "item"
+				}
 			]
 			title: "战斗！爽！"
 			x: 0.0d
@@ -977,8 +1072,8 @@
 			hide: true
 			id: "70726F375FFF5CF3"
 			rewards: [{
-				id: "0CA3357EC6D9F217"
-				item: "artifacts:chorus_totem"
+				id: "186F0BBBFC1FE93B"
+				item: "artifacts:umbrella"
 				type: "item"
 			}]
 			subtitle: "考古#2"
@@ -1556,5 +1651,5 @@
 		}
 	]
 	subtitle: ["The Way to Legend"]
-	title: "6A 传说之路"
+	title: "【挑战】传说之路"
 }

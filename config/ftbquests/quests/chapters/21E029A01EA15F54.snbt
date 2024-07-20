@@ -1,5 +1,5 @@
 {
-	autofocus_id: "11E3776CE5E23255"
+	autofocus_id: "7338DDFCE4617258"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "21E029A01EA15F54"
@@ -7,6 +7,32 @@
 	hide_quest_details_until_startable: true
 	icon: "bloodmagic:weakbloodorb"
 	id: "21E029A01EA15F54"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/m2.png"
+			rotation: 0.0d
+			width: 10.128712871287128d
+			x: 0.0d
+			y: -8.0d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -305,7 +331,9 @@
 				"很快你就会发现一地的恶魔意志是个很烦人的事情，尤其是它们还不能叠加。"
 				"这种时候，做一块魂石就成为了必要的：将魂石和恶魔意志一起扔在地上，它就会自动进行吸收！"
 				"恶魔意志后续的作用，可以自己在血魔法书中查询。"
-				"&o&a看不懂书？那看我干什么，去多邻国学习去！&r&r"
+				"你可以通过恶魔意志激活这把剑……并用它代替灵魂投网，直接收割灵魂能量。"
+				""
+				"&o&a看不懂？那看我干什么，去看书学习去！&r&r"
 			]
 			id: "643DA6D3D15ED948"
 			rewards: [{
@@ -575,7 +603,7 @@
 			dependencies: ["719876BE47F58EE6"]
 			description: [
 				"元素符文是铁魔法各职业套装的基础，也是后续装备升级法球的基础。"
-				"尽量多在冒险中收集这样的空白符文吧——现在你还没有能力制造它。"
+				"尽量多在冒险中收集这样的空白符文吧——白嫖的总是最香的（？"
 				"当然，它也有合理的合成方式，只是难度会比较高）"
 			]
 			id: "33A4BFBA62AFC0BB"
@@ -878,7 +906,7 @@
 		{
 			dependencies: ["1B2D939907CB4DF0"]
 			description: [
-				"由于实在是太难找，你可以通过魔力将陆地上的叶子转化为海里的叶子！"
+				"由于实在太难找，你可以通过魔力将陆地上的叶子转化为海里的叶子！"
 				"有传送带了（确信）"
 			]
 			id: "19CAA60981A6A8E8"

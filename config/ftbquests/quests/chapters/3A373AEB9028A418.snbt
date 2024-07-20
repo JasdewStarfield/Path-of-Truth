@@ -1,5 +1,5 @@
 {
-	autofocus_id: "7CFD3110EF8E53E2"
+	autofocus_id: "046F1DAD921FD2E8"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "3A373AEB9028A418"
@@ -7,6 +7,14 @@
 	hide_quest_details_until_startable: true
 	icon: "sophisticatedbackpacks:backpack"
 	id: "3A373AEB9028A418"
+	images: [{
+		height: 2.0d
+		image: "kubejs:textures/quests/a1.png"
+		rotation: 0.0d
+		width: 10.893617021276595d
+		x: 0.0d
+		y: -3.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [

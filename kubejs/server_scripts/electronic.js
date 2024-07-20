@@ -76,5 +76,5 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:rs_engineering']),
         event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:heavy_engineering']),
         event.recipes.createDeploying(inter2, [inter2, 'kubejs:electronic_engineering']),
-    ]).transitionalItem(inter2).loops(32)
+    ]).transitionalItem(inter2).loops(8)
 })
