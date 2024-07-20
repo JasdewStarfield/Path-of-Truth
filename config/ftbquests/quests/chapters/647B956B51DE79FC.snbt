@@ -557,7 +557,11 @@
 		}
 		{
 			dependencies: ["3502E7A3A9BB5220"]
-			description: ["当大地在魔力的托举下升空……"]
+			description: [
+				"当大地在魔力的托举下升空……"
+				""
+				"警告：不推荐对着你家使用。后果自负"
+			]
 			id: "793E8DE00C384C1D"
 			rewards: [{
 				id: "78343A838FA4B7F1"

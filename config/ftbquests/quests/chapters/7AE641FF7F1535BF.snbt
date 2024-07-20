@@ -564,7 +564,7 @@
 			id: "34F7983B4915B789"
 			subtitle: "Anything（指可以合成任何东西）"
 			tasks: [{
-				count: 24L
+				count: 21L
 				id: "3B1CB63D662B2B0E"
 				item: "create:mechanical_crafter"
 				type: "item"

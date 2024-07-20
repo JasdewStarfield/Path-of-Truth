@@ -7,14 +7,32 @@
 	hide_quest_details_until_startable: true
 	icon: "minecraft:chain_command_block"
 	id: "1BB45CAF6A2385E2"
-	images: [{
-		height: 3.0d
-		image: "kubejs:textures/quests/6.png"
-		rotation: 0.0d
-		width: 11.64367816091954d
-		x: 0.0d
-		y: -7.5d
-	}]
+	images: [
+		{
+			height: 3.0d
+			image: "kubejs:textures/quests/6.png"
+			rotation: 0.0d
+			width: 11.64367816091954d
+			x: 0.0d
+			y: -7.5d
+		}
+		{
+			height: 0.5d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.6607142857142858d
+			x: 0.0d
+			y: -3.7d
+		}
+		{
+			height: 0.5d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.393732970027248d
+			x: 0.0d
+			y: 0.5d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -302,6 +320,6 @@
 			y: 2.0d
 		}
 	]
-	subtitle: ["Mastery of Tech & Magic"]
+	subtitle: ["Mastery of Tech \\& Magic"]
 	title: "6 统合机械，驾驭魔法"
 }

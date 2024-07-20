@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = about
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1719505176551
+  last_edited_time = 1721444099797
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:1d6d7124-e65b-4b81-8efd-a8613756dbc9-1719505080781] = [groups:][instances:]
+  [loading_requirement_container_meta:2980cc33-a851-4587-b3bd-a53dbcc4aa5d-1721444005299] = [groups:][instances:]
 }
 
 customization {
@@ -121,7 +121,7 @@ element {
 
 element {
   interactable = true
-  source = 鸣谢：%n%%n%-茉露星圃，Jasdew Starfield，负责科技侧内容编写，以及整体框架。%n%%n%-深夜鸽子，MidnightPigeon，负责魔法侧内容编写，以及文本设计。%n%%n%-JackyBlackson，我们敬爱的腐竹，为我们写了很多js脚本并提供了建筑和音乐支持%n%（你现在正听到的音乐就是由他作曲的）。%n%%n%-KEYboradManDesu，一位热心大佬，主动且无偿地帮助我们重置了许多贴图和模型。%n%%n%-还有你，{"placeholder":"playername"}。真诚感谢你的游玩，我们期待你的反馈！%n%%n%（欢迎点击下方的Github链接来了解更多，以及讨论和汇报问题！）
+  source = 鸣谢：%n%%n%-茉露星圃，Jasdew Starfield，负责科技侧内容编写，以及整体框架。%n%%n%-深夜鸽子，MidnightPigeon，负责魔法侧内容编写，以及文本设计。%n%%n%-JackyBlackson，我们敬爱的腐竹，为我们写了很多js脚本并提供了建筑和音乐支持%n%（你现在正听到的音乐就是由他作曲的）。%n%%n%-KEYboradManDesu，一位热心大佬，主动且无偿地帮助我们重置了许多贴图和模型。%n%%n%-还有你，{"placeholder":"playername"}。真诚感谢你的游玩，我们期待你的反馈！%n%%n%（欢迎点击下方的Github链接来了解更多，以及讨论和汇报问题！）%n%整合包QQ讨论群：631894460，欢迎加群反馈或者聊天
   source_mode = direct
   shadow = true
   scale = 0.75
@@ -151,9 +151,9 @@ element {
   fade_in_speed = 1.0
   anchor_point = mid-centered
   x = -149
-  y = -39
+  y = -52
   width = 298
-  height = 127
+  height = 140
   stretch_x = false
   stretch_y = false
   stay_on_screen = true
