@@ -86,6 +86,8 @@
   "item.ftbquests.book.tooltip.summary": "通过翻开它来开始你的旅程！有事没事多看看，任务是本整合包中最清晰的提示书！",
   "item.ftbquests.book.tooltip.condition1": "右键后",
   "item.ftbquests.book.tooltip.behaviour1": "打开_任务界面_，也可以按下E后点开_左上角的书本图标_来查看_任务_。",
+  "item.ftbquests.book.tooltip.condition2": "鼠标移动至_任务界面_左侧",
+  "item.ftbquests.book.tooltip.behaviour2": "打开_侧边栏_，查看不同的_任务线_以及_主线章节_，请注意侧边栏的_功能提示_！",
 
   "item.botania.twig_wand.tooltip":"森林法杖",
   "item.botania.twig_wand.tooltip.summary":"植物魔法的基本工具，魔力流的引导者。",
