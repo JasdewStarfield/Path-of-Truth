@@ -4,4 +4,7 @@ useEnhancedModels = true
 #.
 #Disable warnings about graphics settings that may cause issues with the mod.
 disableGraphicsWarnings = false
+#.
+#Colorize different parts of multi-state copycats to distinguish them visually.
+colorizeMultiStates = false
 
