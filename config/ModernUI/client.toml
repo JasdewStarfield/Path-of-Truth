@@ -104,7 +104,7 @@
 	forceRtl = false
 	#The global font scale used with sp units.
 	#Range: 0.5 ~ 2.0
-	fontScale = 1.2000000476837158
+	fontScale = 1.399999976158142
 	#Default scrollbar size in dips.
 	#Range: 0 ~ 1024
 	scrollbarSize = 8
