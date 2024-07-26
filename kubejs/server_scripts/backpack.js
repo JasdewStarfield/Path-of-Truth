@@ -16,7 +16,47 @@ ServerEvents.recipes(event => {
     )
 
     //金和钻石背包修改
-    event.remove({id:'sophisticatedbackpacks:gold_backpack'})
+    event.remove({id:'sophisticatedbackpacks:gold_backpack'})   
+    event.custom({
+        "type":
+            "sophisticatedbackpacks:backpack_upgrade",
+        "conditions":[{
+            "type":
+                "sophisticatedcore:item enabled",
+            "itemRegistryName":
+                "sophisticatedbackpacks:gold_backpack"
+        }],
+        "key":{
+            "A":{
+                "item":'irons_spellbooks:epic_ink'
+            },
+            "B":{
+                "item":'botania:elementium_ingot'
+            },
+            "C":{
+                "item":'sophisticatedbackpacks:iron_backpack'
+            },
+            "D":{
+                "item":'bloodmagic:weak_tau'
+            },
+            "E":{
+                "item":'botania:terrasteel_ingot'
+            },
+            "F":{
+                "tag":"forge:ingots/gold"
+            }
+        },
+        "pattern": [
+            "FAF",
+            "BCD",
+            "FEF"
+        ],
+        "result":{
+            "item":
+                "sophisticatedbackpacks:gold_backpack"
+        }
+    })
+    /*
     event.shaped('sophisticatedbackpacks:gold_backpack',
         ['FAF',
         'BCD',
@@ -30,8 +70,49 @@ ServerEvents.recipes(event => {
             F:'#forge:ingots/gold'
         }
     )
+    */
 
     event.remove({id:'sophisticatedbackpacks:diamond_backpack'})
+    event.custom({
+        "type":
+            "sophisticatedbackpacks:backpack_upgrade",
+        "conditions":[{
+            "type":
+                "sophisticatedcore:item enabled",
+            "itemRegistryName":
+                "sophisticatedbackpacks:diamond_backpack"
+        }],
+        "key":{
+            "A":{
+                "item":'irons_spellbooks:legendary_ink'
+            },
+            "B":{
+                "item":'botania:dragonstone'
+            },
+            "C":{
+                "item":'sophisticatedbackpacks:gold_backpack'
+            },
+            "D":{
+                "item":'bloodmagic:strong_tau'
+            },
+            "E":{
+                "item":'bloodmagic:ingot_hellforged'
+            },
+            "F":{
+                "item":'botania:mana_diamond'
+            }
+        },
+        "pattern": [
+            "FAF",
+            "BCD",
+            "FEF"
+        ],
+        "result":{
+            "item":
+                "sophisticatedbackpacks:diamond_backpack"
+        }
+    })
+    /*
     event.shaped('sophisticatedbackpacks:diamond_backpack',
         ['FAF',
         'BCD',
@@ -45,5 +126,5 @@ ServerEvents.recipes(event => {
             F:'botania:mana_diamond'
         }
     )
-
+    */
 })
