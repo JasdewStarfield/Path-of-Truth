@@ -49,6 +49,13 @@ ServerEvents.recipes(event => {
   //硫磺石就不是硫磺了吗？
   event.recipes.create.crushing(Item.of('tfmg:sulfur_dust').withChance(0.1), 'biomesoplenty:brimstone')
 
+  //大哥我问你话呢？铝脚手架为啥是钢做的啊？？？
+  event.replaceInput(
+    {output:'tfmg:aluminum_scaffolding'},
+    '#forge:ingots/steel',
+    '#forge:ingots/aluminum'
+  )
+
   //工作台的通用性适配
   event.replaceInput(
     {input:'minecraft:crafting_table'},
@@ -63,5 +70,7 @@ ServerEvents.recipes(event => {
     '#forge:flour'
   )
   event.remove({ id: 'beautify:rope' })
+  event.remove({ id: 'tfmg:crushing/saltpeter' })
+  event.remove({ id: 'tfmg:mixing/gun_powder' })
 
 })

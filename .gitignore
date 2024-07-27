@@ -63,7 +63,6 @@ Path-of-Truth.json
 ARandomPack.json
 ARandomPack.jar
 launch.ps1
-/schematics
 mods/panoramica_forge_1.2.1_MC_1.19-1.19.2.jar
 mods/create-train-perspective.*
 
@@ -84,3 +83,14 @@ banned-players.json
 /simplebackups
 mods/worldedit-mod-7.2.15.jar.disabled
 knownkeys.txt
+schematics/uploaded
+mods/battlemusic-1.20.1-1.0.1.jar
+/simplebackups
+/libraries
+hmclversion.cfg
+/config/fancymenu/ui_themes
+/config/otyacraftengine
+kubejs/config/probejs.json
+/ESM
+/config/nucleus
+config/jei/jei-client.ini

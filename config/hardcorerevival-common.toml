@@ -28,7 +28,7 @@ allowPistols = false
 #Set to false to remove the Accept your Fate button and force players to wait out the timer.
 allowAcceptingFate = true
 #If true, Hardcore Revival will not be active in singleplayer.
-disableInSingleplayer = true
+disableInSingleplayer = false
 #If true, Hardcore Revival will not be active when playing alone in multiplayer.
 disableInLonelyMultiplayer = false
 

@@ -1,4 +1,4 @@
-#Lets the fishing rod be charged like a bow to cast the hook farther
+#Whether to give new players in a world the fishing journal when they spawn
 giveJournal = false
 
 #+++ Fishing Journal Configs +++ 
@@ -7,7 +7,7 @@ giveJournal = false
 
 	#+++ Journal pages +++ 
 	#[id]: The internal name of the page
-	#[content]: The translation for the display name of the page
+	#[content]: The translationKey for the display name of the page
 	#[title]: The description text that appears on the page
 	#[unlockedByDefault]: If the page is unlocked by default
 	#[icon]: The item icon that shows up on the "new page unlocked" toast
@@ -112,6 +112,20 @@ giveJournal = false
 			title = "Custom Page"
 			content = "This is an unused custom page"
 			icon = "minecraft:barrier"
+			unlockedByDefault = false
+
+		[journal.pages.lava]
+			id = "lava"
+			title = "journal.title.lava"
+			content = "journal.content.lava"
+			icon = "tide:fish_bone"
+			unlockedByDefault = false
+
+		[journal.pages.legendary]
+			id = "legendary"
+			title = "journal.title.legendary"
+			content = "journal.content.legendary"
+			icon = "tide:midas_fish"
 			unlockedByDefault = false
 
 	#+++ Journal profiles (fish) +++ 
@@ -434,9 +448,9 @@ giveJournal = false
 		#name of the fish item (ex. "minecraft:salmon") and fill in the required info.
 		#NOTE: Do not change the headers, which is the line directly below this text
 		[journal.profiles.custom0]
-			fish = "custom0"
-			description = "This is an unused custom fish profile"
-			page = "The id of the page that the fish belongs to"
+			fish = "collectorsreap:platinum_bass"
+			description = ""
+			page = "freshwater"
 
 		[journal.profiles.custom1]
 			fish = "custom1"
@@ -557,4 +571,59 @@ giveJournal = false
 			fish = "custom24"
 			description = "This is an unused custom fish profile"
 			page = "The id of the page that the fish belongs to"
+
+		[journal.profiles.yellow_perch]
+			fish = "tide:yellow_perch"
+			description = "profile.item.tide.yellow_perch"
+			page = "freshwater"
+
+		[journal.profiles.bluegill]
+			fish = "tide:bluegill"
+			description = "profile.item.tide.bluegill"
+			page = "freshwater"
+
+		[journal.profiles.guppy]
+			fish = "tide:guppy"
+			description = "profile.item.tide.guppy"
+			page = "freshwater"
+
+		[journal.profiles.ocean_perch]
+			fish = "tide:ocean_perch"
+			description = "profile.item.tide.ocean_perch"
+			page = "saltwater"
+
+		[journal.profiles.mackerel]
+			fish = "tide:mackerel"
+			description = "profile.item.tide.mackerel"
+			page = "saltwater"
+
+		[journal.profiles.ember_koi]
+			fish = "tide:ember_koi"
+			description = "profile.item.tide.ember_koi"
+			page = "lava"
+
+		[journal.profiles.inferno_guppy]
+			fish = "tide:inferno_guppy"
+			description = "profile.item.tide.inferno_guppy"
+			page = "lava"
+
+		[journal.profiles.obsidian_pike]
+			fish = "tide:obsidian_pike"
+			description = "profile.item.tide.obsidian_pike"
+			page = "lava"
+
+		[journal.profiles.volcano_tuna]
+			fish = "tide:volcano_tuna"
+			description = "profile.item.tide.volcano_tuna"
+			page = "lava"
+
+		[journal.profiles.midas_fish]
+			fish = "tide:midas_fish"
+			description = "profile.item.tide.midas_fish"
+			page = "legendary"
+
+		[journal.profiles.shooting_starfish]
+			fish = "tide:shooting_starfish"
+			description = "profile.item.tide.shooting_starfish"
+			page = "legendary"
 

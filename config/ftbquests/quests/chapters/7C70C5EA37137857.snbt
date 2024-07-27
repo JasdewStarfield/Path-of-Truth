@@ -1,18 +1,27 @@
 {
+	autofocus_id: "10CAF35A5551DC8F"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "7C70C5EA37137857"
 	group: "560257DD7915FBBC"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "minecraft:chorus_flower"
 	id: "7C70C5EA37137857"
+	images: [{
+		height: 2.0d
+		image: "kubejs:textures/quests/a4.png"
+		rotation: 0.0d
+		width: 10.448979591836734d
+		x: 0.0d
+		y: -3.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["193F465F65BC13F1"]
 			description: ["很显然，你成功折跃了。也许留一个传送点是比较明智的选择？"]
+			hide: true
 			id: "15E666BAE38566D8"
 			subtitle: "在那开遍紫颂花的原野上……"
 			tasks: [{
@@ -27,6 +36,7 @@
 		{
 			dependencies: ["280307C036B9B6E7"]
 			description: ["剧毒巢穴的最下层，蜘蛛女王欢迎你）"]
+			hide: true
 			icon: {
 				Count: 1
 				id: "blue_skies:different_sword"
@@ -83,6 +93,7 @@
 		{
 			dependencies: ["7A6D4E28C28302FE"]
 			description: ["自然城堡的最上层，大树守卫等着你）"]
+			hide: true
 			icon: {
 				Count: 1
 				id: "blue_skies:crushing_hammer"
@@ -182,6 +193,6 @@
 			y: 2.0d
 		}
 	]
-	subtitle: ["At the Very End of the World"]
-	title: "世界尽头"
+	subtitle: ["At the Very End"]
+	title: "4A 世界尽头"
 }

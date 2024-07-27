@@ -5,15 +5,41 @@
 	filename: "59B76A6AF749A1DB"
 	group: "560257DD7915FBBC"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "immersiveengineering:manual"
 	id: "59B76A6AF749A1DB"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/i4.png"
+			rotation: 0.0d
+			width: 12.853503184713375d
+			x: -6.5d
+			y: 4.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["504E6502A789DABF"]
 			description: ["所以你现在不得不依赖巨大的动力发电装置）"]
+			hide: true
 			icon: "irons_spellbooks:lightning_bottle"
 			id: "01534DC5812DBA15"
 			rewards: [{
@@ -29,6 +55,7 @@
 				title: "电力驱动！"
 				type: "checkmark"
 			}]
+			title: "【起点】电力驱动！"
 			x: -6.5d
 			y: 0.0d
 		}
@@ -125,8 +152,8 @@
 				}
 			]
 			title: "组装发酵机"
-			x: -3.0d
-			y: -3.0d
+			x: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
@@ -192,11 +219,12 @@
 				}
 			]
 			title: "组装挤压机"
-			x: -3.0d
-			y: 3.0d
+			x: -2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["1E0E5E47E1264279"]
+			hide: true
 			icon: "immersiveengineering:ingot_electrum"
 			id: "3D6CCF4A93478320"
 			rewards: [{
@@ -209,13 +237,13 @@
 			subtitle: "琥珀金也是金）"
 			tasks: [
 				{
-					id: "4D92B9D18E55E44E"
-					item: "immersiveengineering:ingot_electrum"
+					id: "3A4BE85609E8FB9D"
+					item: "kubejs:gold_silver_mix"
 					type: "item"
 				}
 				{
-					id: "3A4BE85609E8FB9D"
-					item: "kubejs:gold_silver_mix"
+					id: "27B781704345D1FD"
+					item: "immersiveengineering:ingot_electrum"
 					type: "item"
 				}
 			]
@@ -268,6 +296,7 @@
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
+			description: ["从两侧输入流体，再加上合适的催化剂，你就能……"]
 			icon: "immersiveengineering:refinery"
 			id: "0FD551E50150A7AD"
 			subtitle: "上油开工"
@@ -326,6 +355,7 @@
 		{
 			dependencies: ["3D6CCF4A93478320"]
 			description: ["金-银合金是良好的导体材料，所以你现在可以制作更高级的电力系统了）"]
+			hide: true
 			id: "1997BD2CF61ACBA8"
 			shape: "diamond"
 			subtitle: "琥珀金的光芒"
@@ -362,6 +392,7 @@
 				"3E60B78B0EE34B75"
 			]
 			description: ["你已经开始接近现代工业水准了，柴油发电领先时代！"]
+			hide: true
 			icon: "immersiveengineering:diesel_generator"
 			id: "76EF99C068AA2361"
 			subtitle: "来劲了，朋友"
@@ -436,7 +467,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "高效燃料"
+			subtitle: "获得高效燃料"
 			tasks: [
 				{
 					id: "728AB7BF739D2BBE"
@@ -479,7 +510,7 @@
 				value: 114514L
 			}]
 			title: "证明你的能量霸权！"
-			x: 4.5d
+			x: 1.5d
 			y: 2.0d
 		}
 		{
@@ -487,7 +518,11 @@
 				"3B29D716A3D5AAF0"
 				"3E60B78B0EE34B75"
 			]
-			description: ["最强电动炉子，几乎全额的分解，最强的动力，以及——通往铝锭的通行证。"]
+			description: [
+				"最强电动炉子，几乎全额的分解，最强的动力，以及——通往铝锭的通行证。"
+				"提醒一下，这个炉子也是个电老虎，工作时还请留意你的电力储备……"
+			]
+			hide: true
 			icon: "immersiveengineering:arc_furnace"
 			id: "583407C7537AE9C9"
 			subtitle: "全游戏最强炉子"
@@ -564,11 +599,15 @@
 			dependencies: [
 				"583407C7537AE9C9"
 				"66E52E485A1A4139"
+				"585C0F11261551FD"
 			]
 			description: [
-				"通过电弧炉，你终于获得了这一珍贵的金属）"
+				"首先经过一些工序将铝土矿加工为氧化铝，然后利用电弧炉电解，你终于获得了这一珍贵的金属）"
 				"现在，你可以利用它的优良性能来解决更多工业方面的问题了）"
+				""
+				"你问我铝土矿在哪找？兄弟，铝可是储量最大的金属之一，如果到了这一阶段你还完全没见过满地的铝土矿，那我得怀疑一下你是不是认真在玩了……"
 			]
+			hide: true
 			icon: "tfmg:aluminum_ingot"
 			id: "2BE7BA0BE9F2DBC9"
 			rewards: [{
@@ -579,28 +618,37 @@
 			shape: "gear"
 			size: 2.0d
 			subtitle: "电解，嗯"
-			tasks: [{
-				id: "079139B4E55015BA"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/aluminum"
-					}
+			tasks: [
+				{
+					id: "70186FD6D7DB9684"
+					item: "tfmg:bauxite"
+					type: "item"
 				}
-				title: "Any #forge:ingots/aluminum"
-				type: "item"
-			}]
+				{
+					id: "6E090919BA7349F7"
+					item: "create:crushed_raw_aluminum"
+					type: "item"
+				}
+				{
+					id: "1C5AD55FCFAA1395"
+					item: "tfmg:aluminum_ingot"
+					type: "item"
+				}
+			]
 			title: "工业明珠"
 			x: 3.0d
 			y: -4.0d
 		}
 		{
-			dependencies: ["1E0E5E47E1264279"]
+			dependencies: [
+				"1E0E5E47E1264279"
+				"3B29D716A3D5AAF0"
+			]
 			description: [
 				"其实就是压制后的碳粉（？"
 				"唯一的作用就是烧制石墨锭）"
 			]
+			hide: true
 			id: "48E0B5D1F9972D20"
 			subtitle: "名字好长"
 			tasks: [{
@@ -621,6 +669,7 @@
 				"在电弧炉运作的过程中，石墨电极的耐久会被消耗，而常规的金属冲压来制作的电极只有一半的耐久度）"
 				"所以——可以先凑活用，但是建议去找蓝图）"
 			]
+			hide: true
 			id: "66E52E485A1A4139"
 			subtitle: "控制行为的棒子"
 			tasks: [{
@@ -645,6 +694,7 @@
 				"要使一台电弧炉或者更高级的机器持续运作的话，建议接入多条高压线"
 				"（小提示：高压线没法绝缘——因为绝缘层会被高压电流直接击穿的，所以注意安全）"
 			]
+			hide: true
 			id: "56F4C82F40DFA8F5"
 			shape: "diamond"
 			subtitle: "铝的第一作用"
@@ -671,8 +721,8 @@
 				}
 			]
 			title: "高压电力系统"
-			x: 1.0d
-			y: -4.0d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -731,6 +781,7 @@
 		{
 			dependencies: ["143039C6AC2D8186"]
 			description: ["看看你冲（指冲压机）出来的棒子）"]
+			icon: "immersiveengineering:mold_rod"
 			id: "22631A52B9D81A49"
 			subtitle: "嗯……"
 			tasks: [
@@ -758,9 +809,12 @@
 		}
 		{
 			dependencies: ["22631A52B9D81A49"]
-			description: ["虽然这个东西是脚手架没错，但同样也是机器框架）"]
+			description: [
+				"但是你的脚手架又弥补了这一点（（"
+				"虽然这个东西是脚手架没错，但同样也是机器框架）"
+			]
 			id: "0EA7E42D07C4BC01"
-			subtitle: "但是你的脚手架又弥补了这一点"
+			subtitle: "你的工程块比较松弛"
 			tasks: [{
 				id: "2B3D45F9C0B744F9"
 				item: "immersiveengineering:steel_scaffolding_standard"
@@ -771,11 +825,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2E4B9CF9789B1AF1"]
+			dependencies: [
+				"504E6502A789DABF"
+				"48E0B5D1F9972D20"
+			]
 			description: [
 				"由于这张图不能合成，所以你需要去找工程师村民进行一些不太和谐的行为……"
 				"比如在他们面前翻箱倒柜（"
 			]
+			hide: true
 			id: "087C118AB8CC51F8"
 			optional: true
 			shape: "diamond"
@@ -805,6 +863,7 @@
 				"由于柴油性能还是有限，接下来你大概是需要迈入石油和重工业时代）"
 				"而重工业——需要你手里的元件。"
 			]
+			hide: true
 			id: "03312D6881CC617D"
 			subtitle: "高级工业必需品"
 			tasks: [{
@@ -823,6 +882,7 @@
 				"为什么一定要这样呢，因为方块手是拧不了螺丝的）"
 				"&m&o&c“你甚至不能进电子厂打工”&r&r&r"
 			]
+			hide: true
 			id: "6D9B785CB93D94D6"
 			subtitle: "工具还是要的"
 			tasks: [{
@@ -836,8 +896,8 @@
 				}
 				type: "item"
 			}]
-			x: 7.5d
-			y: -1.5d
+			x: 9.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -845,7 +905,11 @@
 				"03312D6881CC617D"
 				"41E56A9D68E36043"
 			]
-			description: ["准备好迎接真正的工业时代了吗）"]
+			description: [
+				"&a【完成后解锁主线章节：5I 黑金与化工】&r"
+				"准备好迎接真正的重工业时代了吗）"
+			]
+			hide: true
 			id: "5FB9514C6DE7AD58"
 			rewards: [{
 				id: "1FCB3F21F61EEBA2"
@@ -871,6 +935,7 @@
 				item: "immersiveengineering:heavy_engineering"
 				type: "item"
 			}]
+			title: "【终点】工业的重压！"
 			x: 12.5d
 			y: 0.0d
 		}
@@ -888,11 +953,15 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["504E6502A789DABF"]
+			dependencies: [
+				"504E6502A789DABF"
+				"3D6CCF4A93478320"
+			]
 			description: [
 				"鉴于这个东西只能在深暗的遗忆守卫身上掉落，我们把它放得很靠后）"
 				"但这也意味着，如果你不去冒险，那么你是没有办法获得这种强大的材料来推进工业的）"
 			]
+			hide: true
 			icon: "undergarden:forgotten_nugget"
 			id: "1A19AB31DBCDBCF7"
 			subtitle: "干掉另一种意义上的守卫者"
@@ -909,29 +978,51 @@
 				}
 			]
 			title: "下去吧你！"
-			x: 9.0d
-			y: 1.5d
+			x: 6.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
 			description: [
 				"（虽然之前已经提过了，不过鉴于过了太久所以以防你忘了再说一遍）"
-				"沉浸工程的多方块结构的搭建方法都可以在这里找到"
+				"沉浸工程的多方块结构的搭建方法都可以在这里找到。"
+				""
+				"另外，蓝图结构中也内置了各种多方块结构的nbt文件，可以使用蓝图桌自行导出，投影后手动摆放或者使用蓝图加农炮摆放。"
 			]
+			icon: "immersiveengineering:manual"
 			id: "1984D2E85CF06BC7"
-			shape: "diamond"
-			subtitle: "敲黑板"
-			tasks: [{
-				id: "556BBFA49015176C"
-				item: "immersiveengineering:manual"
+			rewards: [{
+				id: "3C94E048DAE9CC37"
+				item: "create:empty_schematic"
 				type: "item"
 			}]
+			shape: "diamond"
+			subtitle: "敲黑板"
+			tasks: [
+				{
+					id: "556BBFA49015176C"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
+				{
+					id: "0E917D5A668CD7AD"
+					item: "create:schematic_table"
+					type: "item"
+				}
+				{
+					id: "6AA005285E1DB4A6"
+					item: "create:empty_schematic"
+					type: "item"
+				}
+			]
+			title: "多方块指南"
 			x: -9.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["143039C6AC2D8186"]
 			description: ["你生产金属线的效率现在能翻倍了！别忘了！"]
+			icon: "immersiveengineering:mold_wire"
 			id: "4BBD74D56BC12AEE"
 			shape: "diamond"
 			subtitle: "成双成对"
@@ -961,6 +1052,11 @@
 		{
 			dependencies: ["01534DC5812DBA15"]
 			id: "736CE93D99A91B3F"
+			rewards: [{
+				id: "54C41AF78F7775E5"
+				item: "minecraft:raw_iron_block"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "让你的沉浸工程高炉满速运转吧！"
 			tasks: [{
@@ -981,6 +1077,7 @@
 				"高压线杀人事件的避免方式：穿一套防电服"
 				"（其实植物魔法的斗篷可以用魔力获得有cd的无敌，但那很浪费魔力"
 			]
+			hide: true
 			id: "217A9CECA6BEB91C"
 			shape: "diamond"
 			subtitle: "安全第一"
@@ -1054,21 +1151,22 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["76EF99C068AA2361"]
-			id: "297F6EAE4E51675B"
-			shape: "diamond"
-			subtitle: "保护你的耳朵"
-			tasks: [{
-				id: "01DE3EBD2768F90B"
-				item: "immersiveengineering:earmuffs"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 2.0d
-		}
-		{
 			dependencies: ["22631A52B9D81A49"]
 			id: "7D8F040FDC419C80"
+			rewards: [{
+				id: "0E8D3E5B8959465C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 8
+						}
+					}
+					id: "immersiveengineering:speedloader"
+				}
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "午时已到"
 			tasks: [{
@@ -1090,7 +1188,22 @@
 		}
 		{
 			dependencies: ["22631A52B9D81A49"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: {
+						Items: [ ]
+						Size: 4
+					}
+				}
+				id: "immersiveengineering:powerpack"
+			}
 			id: "1112FBE58AA74D1E"
+			rewards: [{
+				id: "4789EA4D215ADF8D"
+				item: "irons_spellbooks:lightning_bottle"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "装备充能"
 			tasks: [
@@ -1149,11 +1262,12 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: -1.5d
+			x: 7.5d
+			y: -2.5d
 		}
 		{
 			dependencies: ["2BE7BA0BE9F2DBC9"]
+			hide: true
 			id: "377948574A940F51"
 			shape: "diamond"
 			subtitle: "I lost a bomb. Do you have it?"
@@ -1162,8 +1276,8 @@
 				item: "tfmg:thermite_grenade"
 				type: "item"
 			}]
-			x: 1.5d
-			y: -6.0d
+			x: 0.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1172,6 +1286,7 @@
 			]
 			description: [""]
 			id: "6A04606B02D87EF0"
+			subtitle: "氧化乙醇你就得到了……"
 			tasks: [{
 				id: "70505299AC3A9C07"
 				item: "immersiveengineering:acetaldehyde_bucket"
@@ -1188,6 +1303,7 @@
 			description: ["到下一章你就会用到它！"]
 			icon: "immersiveengineering:phenolic_resin_bucket"
 			id: "6CBC49DEC79E819E"
+			subtitle: "不完全是塑胶"
 			tasks: [{
 				id: "5990032AE52EC1B6"
 				item: "immersiveengineering:phenolic_resin_bucket"
@@ -1202,6 +1318,7 @@
 				"有着奇特性质的两种金属的结合。"
 				"似乎拥有极强的导热性……同时硬度也十分优异"
 			]
+			hide: true
 			id: "3E60B78B0EE34B75"
 			subtitle: "嗯，复合板材"
 			tasks: [{
@@ -1215,6 +1332,7 @@
 		{
 			dependencies: ["3D6CCF4A93478320"]
 			description: ["相比于另一种（你后面会用到的）高级的电路板，木头板子就容易多了，你只需要手动把石英往木头上插）"]
+			hide: true
 			id: "671C17CCA1D5FA78"
 			subtitle: "简单的小东西"
 			tasks: [{
@@ -1229,6 +1347,7 @@
 			dependencies: [
 				"1A19AB31DBCDBCF7"
 				"671C17CCA1D5FA78"
+				"6D9B785CB93D94D6"
 			]
 			id: "41E56A9D68E36043"
 			subtitle: "众所周知，有时候科技发展靠考古"
@@ -1241,30 +1360,18 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["2BE7BA0BE9F2DBC9"]
-			description: [
-				"虽然叫扼塞锭，可是用它升级了铝制流体管道之后，反而能更流畅地输送流体了……"
-				"现在你可以在一些地方省去流体泵了。"
-			]
-			id: "6AF055F5437D95A0"
-			shape: "diamond"
-			subtitle: "能省去一点流体泵的功夫"
-			tasks: [{
-				id: "589621E0806E7016"
-				item: "immersiveengineering:fluid_pipe"
-				type: "item"
-			}]
-			title: "高级的流体管道"
-			x: 0.0d
-			y: -5.0d
-		}
-		{
 			dependencies: ["3D6CCF4A93478320"]
 			description: [
 				"在相对的两个面放置温度不同的方块就可以根据温差发电"
 				"最方便的一集"
 			]
+			hide: true
 			id: "786D410103015183"
+			rewards: [{
+				id: "7698D23FD44BEC0A"
+				item: "minecraft:blue_ice"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "特殊发电装置"
 			tasks: [{
@@ -1275,7 +1382,62 @@
 			x: 0.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["0EA7E42D07C4BC01"]
+			description: [
+				"这台粉碎机用途很多，不过主要是用来量产矿物！搭配粉碎轮，可以实现矿物的2.5倍量产！"
+				"另外，它在（你会遇到的）铝的生产中也十分关键，所以迟早是要做的。"
+			]
+			icon: "immersiveengineering:crusher"
+			id: "585C0F11261551FD"
+			subtitle: "工业之美源自力量"
+			tasks: [
+				{
+					count: 10L
+					id: "7D0F10DEB45E161F"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "65F78C83310DC723"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "1405009BFD1486FC"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5A700AC8E96FEEEA"
+					item: "immersiveengineering:steel_fence"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "216A28629C426D4B"
+					item: "minecraft:hopper"
+					type: "item"
+				}
+				{
+					id: "4DCBBC411C6A312F"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "组装粉碎机"
+			x: -3.0d
+			y: -3.5d
+		}
 	]
 	subtitle: ["Roaring Machinery"]
-	title: "机械轰鸣"
+	title: "4I 机械轰鸣"
 }

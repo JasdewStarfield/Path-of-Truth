@@ -1,7 +1,5 @@
 
 [General]
-	#Whether some predators cause to not drop any items for their prey
-	DROPLESS_PREDATOR_ENABLED = true
 	#Whether some Prey fear their predators
 	PREY_FEAR_ENABLED = true
 	#Whether Charging Mobs can get stunned when holding up a shield
@@ -10,6 +8,8 @@
 	COMBUSTABLE_ENABLED = true
 	#Whether you can set a entity on fire with Lava Bottles
 	MOLTEN_BATH_ENABLED = true
+	#You get hunted by Frilled Sharks and Hammerhead's when you have Exsanguination
+	BLEEDING_HUNGER_ENABLED = true
 
 [Items]
 	#Whether Sand requires no sand
@@ -84,12 +84,12 @@
 	[Mobs."Crimson Mosquito"]
 		#Whether Crimson Mosquitoes can be turned into Warped Moscos by feeding them Mungus Spores
 		CRIMSON_TRANSFORM_ENABLED = true
-		#Whether Crimson Mosquitoes cant attack Straddlers, unless with blood inside
-		CRIMSON_NON_STRADDLER_ENABLED = true
 		#Whether Crimson Mosquitoes can spawn with blood
 		BLOODED_ENABLED = true
 		#Whether Crimson Mosquitoes take no damage from Blood Sprayer
 		BLOOD_PROTECTION_ENABLED = true
+		#Whether Crimson Mosquitoes cant attack bloodless entites (Straddlers,etc..)
+		BLOODLESS_IGNORE_ENABLED = true
 
 	[Mobs.Crow]
 		#Whether Crows cannibalize on other crows in certain conditions
@@ -108,8 +108,6 @@
 		RANGED_AGGRO_ENABLED = true
 		#Whether Emu's attack when their egg is held by an entity
 		EMU_EGG_ATTACK_ENABLED = true
-		#Whether Emu's rarely scuffle at day
-		EMU_SCUFFLE_ENABLED = true
 
 	[Mobs.Enderiophage]
 		#Whether Enderiophages attack players when below 40%
@@ -140,8 +138,6 @@
 		flysfearcandles = true
 		#Whether flies fear all (except for mobs they pester)
 		frogeatflies = true
-		#Whether Gelada Monkeys hunt small animals
-		GELADA_HUNT_ENABLED = true
 
 	[Mobs."Giant Squid"]
 		#Whether Giant Squids cannibalize on other giant squids in certain conditions
@@ -160,6 +156,8 @@
 		GUSTER_WEIGHT_ENABLED = true
 		#Whether Gusters are immune to projectiles
 		GUSTER_PROJECTILE_PROT_ENABLED = true
+		#New potion effect that spawns tiny gusts, and are immune to being slowed by gusts
+		GUSTING_ENABLED = true
 
 	[Mobs."Hammerhead Shark"]
 		#Whether Hammerhead Sharks hunts more aquatic creatures
@@ -236,6 +234,8 @@
 	[Mobs.Skreecher]
 		#Whether Skreecher's soul can be used on a Screacher to allow it to spawn wardens
 		SKREECHER_WARD_ENABLED = true
+		#New potion effect that spawns a Warden when it is about to ware off
+		SKREECH_YOUR_LAST_ENABLED = true
 
 	[Mobs."Snow Leopard"]
 		#Whether Snow Leopards can get rare items when killing specific mobs
@@ -297,8 +297,24 @@
 		MOSCO_CANNIBALISM_ENABLED = true
 
 	[Mobs."Warped Toad"]
-		#Whether Warped Toads dont eat Tarantula Hawks when tamed
+		#Whether Warped Toads dont eat anything when tamed unless tamer attacks
 		WARPED_FRIENDLY_ENABLED = true
+
+	[Mobs."Flying Fish"]
+		#Whether Flying Fish Boots boost will depend on your speed and your look angle
+		WEAVING_WATERS_ENABLED = true
+
+	[Mobs."Gelada Monkey"]
+		#Whether Gelada Monkeys hunt small animals
+		GELADA_HUNT_ENABLED = true
+
+	[Mobs."Leafcutter Ants"]
+		#Whether Leafcutter Chambers have a chance to spawn cockroaches when broken or harvested
+		COCKROACH_CHAMBER = true
+
+	[Mobs.Rhino]
+		#Causes Rhinos to sometimes accidentally attack moving baby rhinos due to their extremely poor vision
+		ACCIDENTAL_BETRAYAL_ENABLED = true
 
 ["April Fools"]
 	#AMI April Fools Activation

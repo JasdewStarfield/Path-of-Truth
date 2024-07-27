@@ -32,6 +32,18 @@
           "weight": 50,
           "name": "minecraft:bone"
         }
+        ,
+        {
+          "type": "minecraft:item",
+          "weight": 40,
+          "name": "minecraft:book",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly",
+              "treasure": true
+            }
+          ]
+        }
       ]
     }
   ]

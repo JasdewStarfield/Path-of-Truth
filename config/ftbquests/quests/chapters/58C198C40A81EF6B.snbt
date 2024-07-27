@@ -5,9 +5,34 @@
 	filename: "58C198C40A81EF6B"
 	group: "461ABC15BE939FA8"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "irons_spellbooks:lightning_bottle"
 	id: "58C198C40A81EF6B"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 0.0d
+			y: 3.3d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/m1.png"
+			rotation: 0.0d
+			width: 10.23d
+			x: 0.0d
+			y: -2.5d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
@@ -17,7 +42,11 @@
 				"你的魔法之路要从路边箱子里的一些泛着蓝紫色光芒的垃圾开始……"
 				"请注意收集它们，这是奥术的基石。"
 				"至于奖励，你可以理解为新手福利，但你能抽到什么就要看脸了）"
+				""
+				"&o&9*在法师塔的箱子中可以轻松获取这些源质，村庄的牧师和制图师结构宝箱与废弃地狱门的箱子中也会有。当然，你也可以夜间去和亡灵术士对决来获取掉落物……&r&r"
 			]
+			hide: true
+			hide_details_until_startable: true
 			icon: "minecraft:chest"
 			id: "374C430D0AD70D2E"
 			rewards: [{
@@ -33,7 +62,7 @@
 				item: "irons_spellbooks:arcane_essence"
 				type: "item"
 			}]
-			title: "探索自然"
+			title: "【起点】探索自然"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -42,11 +71,12 @@
 			description: [
 				"所以你需要寻求自然中的力量——"
 				"比如找找那些地上的和地下的朋友。"
-				"由于没有铁，你可以先用木头装水）"
+				"&l&2由于没有铁，你可以先用木头装水）&r&r"
 				""
 				"如果你实在找不到白色花瓣……可以试试花肥。"
 				""
 				"如果你实在看不懂合成方式到底是怎么操作的，&l&a请先读书！&r&r"
+				"当然书里的配方不一定对，因为经过了魔改，在配方上JEI优先级高于指导书……"
 			]
 			icon: "botania:cosmetic_botanist_emblem"
 			id: "788F3EC85AC1172E"
@@ -390,8 +420,11 @@
 				"28A1C39EF1446334"
 			]
 			description: [
+				"&b【完成后解锁主线章节：2M 鲜血与灵魂】&r"
 				"你已经初步了解了魔法的力量，那么，做一个血之祭坛出来吧。"
 				"我们的魔法故事将进入新的篇章，你也将感受到鲜血和灵魂的力量。"
+				""
+				"&o&c新篇章：指献祭一本书来做祭坛&r&r"
 			]
 			icon_scale: 1.2d
 			id: "708CC78EEB470115"
@@ -419,11 +452,11 @@
 				item: "bloodmagic:altar"
 				type: "item"
 			}]
-			title: "牺牲与献祭"
+			title: "【终点】牺牲与献祭"
 			x: 0.0d
 			y: 2.0d
 		}
 	]
 	subtitle: ["Primal Shaman"]
-	title: "原始萨满"
+	title: "1M 原始萨满"
 }

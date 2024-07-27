@@ -1,0 +1,69 @@
+
+[Replanting]
+	#Should Replanting exist?
+	"Allow Replanting" = true
+	#Should this enchantment be found on the Enchanting Table?
+	"Find on Enchanting Table" = false
+
+["Anti-Water Bane"]
+	#Determines the amount of damage per Anti-Water Bane level it should deal
+	"Bane Damage" = 2.5
+	#Determines whether Anti-Water Bane should deal half its damage to targets that are on fire and extinguish them
+	"Fire Mechanic" = true
+	#Should Anti-Water Bane exist?
+	"Allow Anti-Water Bane" = true
+	#Should Anti-Water Bane be incompatible with Impaling?
+	"Incompatible with Impaling" = true
+	#Should this enchantment be found on the Enchanting Table?
+	"Find on Enchanting Table" = true
+
+["Oath of the Nose"]
+	#Determines the amount of damage per Oath of the Nose level it should deal
+	"Nose Damage" = 2.5
+	#Determines whether Oath of the Nose should apply weakness to hit targets similarly to how Bane of Arthropods applies slowness
+	"Nose Weakness" = true
+	#Should Oath of the Nose exist?
+	"Allow Oath of the Nose" = true
+	#Should Oath of the Nose be incompatible with Sharpness?
+	"Incompatible with Sharpness with Smite" = true
+	#Should Oath of the Nose be incompatible with Smite?
+	"Incompatible with Smite" = true
+	#Should Oath of the Nose be incompatible with Bane of Arthropods?
+	"Incompatible with Bane of Arthropods" = true
+	#Should Oath of the Nose by a treasure enchantment?
+	"Is treasure" = false
+
+[Frost]
+	#Determines the amount of damage that Frost should deal
+	"Frost Damage" = 1.0
+	#Determines the amount of time that Frost should freeze for
+	"Frost Seconds" = 7.0
+	#Should Frost exist?
+	"Allow Frost" = true
+	#Should Frost be incompatible with Flame?
+	"Incompatible with Flame" = true
+	#Should this enchantment be found on the Enchanting Table?
+	"Find on Enchanting Table" = true
+
+[Shove]
+	#Determines the modifier of the push each level adds
+	"Push modifier" = 0.4
+	#Should Shove exist?
+	"Allow Shove" = true
+	#Should Shove be incompatible with Blaze Guard?
+	"Incompatible with Blaze Guard" = true
+	#Should Shove be incompatible with Chill Guard?
+	"Incompatible with Chill Guard" = true
+	#Should this enchantment be found on the Enchanting Table? 
+	"Find on Enchanting Table" = true
+
+[Padding]
+	#Determines the amount of armor points each level of Padding should grant
+	"Armor Points per Level" = 1.0
+	#Determines the damage reduction percentage that each level of Padding should grant
+	"Kinetic reduction Percentage" = 20.0
+	#Should Shove exist?
+	"Should Padding exist?" = true
+	#Should this enchantment be found on the Enchanting Table? 
+	"Find on Enchanting Table" = false
+

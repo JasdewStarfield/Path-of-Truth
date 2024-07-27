@@ -1,22 +1,33 @@
 {
-	autofocus_id: "066C04C6A6CBCCB3"
+	autofocus_id: "0C34A91AD3EBF977"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "54FEB8EFCDFE57CF"
 	group: "5B3B99F7ECC70789"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "minecraft:end_crystal"
 	id: "54FEB8EFCDFE57CF"
+	images: [{
+		height: 2.0d
+		image: "kubejs:textures/quests/a3.png"
+		rotation: 0.0d
+		width: 14.01388888888889d
+		x: 0.0d
+		y: -3.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["6E0D85E43EDF1994"]
+			dependencies: [
+				"0F9DF1C5137194E4"
+				"76BE4625CCF2F867"
+			]
 			description: [
 				"开启方式和地狱门很像，石砖搭一个框架，然后催化石点一下，你就可以进去了）"
 				"进门之后注意安全，深园从来不缺少敌对生物。"
 			]
+			hide: true
 			icon: "undergarden:catalyst"
 			id: "0E5C63B3D4891362"
 			subtitle: "Deep♂Dark♂Fantasy"
@@ -30,12 +41,16 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["76BE4625CCF2F867"]
+			dependencies: [
+				"76BE4625CCF2F867"
+				"0F9DF1C5137194E4"
+			]
 			description: [
 				"你会发现末影之眼的合成难度增加了，但还是能做的。"
 				"为什么增加难度呢，因为不想让你到末地死的太难看（确信"
-				"找到末地传送门后，记得放一些能让你传送过去的东西……比如星辰放射台）"
+				"找到末地传送门后，记得做好合适的标记，毕竟现在没有传送石碑让你满地乱放了……"
 			]
+			hide: true
 			id: "193F465F65BC13F1"
 			subtitle: "前往虚空！"
 			tasks: [{
@@ -53,7 +68,7 @@
 			dependencies: ["193F465F65BC13F1"]
 			description: [
 				"你可能会发现末影龙很难打——这种时候我们的建议是战略性撤退。"
-				"虽然你的东西会丢在末地就是了）"
+				"检查一下你的法术列表确保你可以在打不过的时候跑路……"
 				"（其实应该比盖亚守护者简单，所以可以先打完守护者再来打末影龙）"
 			]
 			id: "0C34A91AD3EBF977"
@@ -72,15 +87,24 @@
 			description: [
 				"深暗之园独有的材料，也是T3科技与魔法的必需品（"
 				"多整点（确信），你会喜欢上它的。"
+				""
+				"注意：霜钢矿只能在寒霜之地找到。善用你的自然指南针。"
 			]
 			id: "52A63601F3E154C8"
 			subtitle: "基本材料"
-			tasks: [{
-				id: "5EDA0A2EF656D716"
-				item: "undergarden:cloggrum_ingot"
-				type: "item"
-			}]
-			title: "扼腕叹息"
+			tasks: [
+				{
+					id: "5EDA0A2EF656D716"
+					item: "undergarden:raw_cloggrum"
+					type: "item"
+				}
+				{
+					id: "1CC1C579FF2B4E67"
+					item: "undergarden:raw_froststeel"
+					type: "item"
+				}
+			]
+			title: "扼腕叹息，霜染深暗"
 			x: 0.0d
 			y: 2.0d
 		}
@@ -194,5 +218,5 @@
 		}
 	]
 	subtitle: ["The Void and Beneath"]
-	title: "深暗与虚空"
+	title: "3A 深暗与虚空"
 }

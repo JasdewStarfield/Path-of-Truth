@@ -32,6 +32,31 @@ ServerEvents.recipes(event => {
     event.remove({id:'immersiveengineering:crafting/waterwheel_segment'})
     event.remove({id:'immersiveengineering:crafting/dynamo'})
 
+    //传送带
+    event.remove({id:"immersiveengineering:crafting/conveyor_basic"})
+    event.shaped(Item.of('immersiveengineering:conveyor_basic', 6), [ 
+        'DDD',
+        'AAA',
+        'CBC'  
+    ], {
+        A: 'create:belt_connector',
+        B: 'create:electron_tube',
+        C: '#forge:ingots/steel',
+        D: '#forge:leather'
+    })
+
+    //锯条
+    event.remove({id:"immersiveengineering:crafting/sawblade"})
+    event.shaped('immersiveengineering:sawblade', [ 
+        'CAC', 
+        'ABA',
+        'CAC'  
+    ], {
+        A: '#forge:ingots/iron',
+        B: 'create:andesite_alloy_block',
+        C: '#forge:plates/iron'
+    })
+
     //焦炉砖
     event.remove({id:"immersiveengineering:crafting/cokebrick"})
     event.shaped('immersiveengineering:cokebrick', [ 
@@ -64,7 +89,6 @@ ServerEvents.recipes(event => {
     )
 
     //高炉炼铁
-    event.remove({type:"tfmg:coking"})
     event.remove({id:/immersiveengineering:blastfurnace\/steel.*/})
     event.remove({id:/immersiveengineering:blastfurnace\/fuel.*/})
     event.custom({
@@ -107,7 +131,7 @@ ServerEvents.recipes(event => {
     event.custom({
 		"type":"create:filling",
 		"ingredients":[
-			{"tag":"minecraft:planks"},
+			{"item":"botania:livingwood_planks"},
 			{"fluid":"immersiveengineering:creosote", "amount":125}
 		],
 		"results":[
@@ -155,6 +179,13 @@ ServerEvents.recipes(event => {
     })
     //BOP的玫瑰石英碎块
     event.recipes.create.crushing(Item.of('create:rose_quartz').withChance(0.1), 'biomesoplenty:rose_quartz_block')
+
+    //继电器接线器材料
+    event.replaceInput(
+      { output:/immersiveengineering:connector.*/ },
+      '#immersiveengineering:connector_insulator',
+      'botania:glimmering_stripped_dreamwood'
+    )
 
     //零件
     event.remove({id:"immersiveengineering:crafting/component_steel"})
@@ -291,7 +322,7 @@ ServerEvents.recipes(event => {
               "item": "tfmg:industrial_pipe"
             }
           ],
-          "loops": 2
+          "loops": 3
     })
 
     //遗忆构件
@@ -408,7 +439,7 @@ ServerEvents.recipes(event => {
             "item": "immersiveengineering:component_electronic"
           }
         ],
-        "loops": 2
+        "loops": 3
   })
 
     //工程块
@@ -460,17 +491,17 @@ ServerEvents.recipes(event => {
         'CAD'  
     ], {
         B: 'tfmg:steel_casing',
-        A: '#forge:plates/constantan',
+        A: '#forge:plates/falsite',
         D: '#forge:dusts/redstone',
         C: 'immersiveengineering:electron_tube'
     })
     event.recipes.create.sequenced_assembly([
         'immersiveengineering:rs_engineering'
         ], 'tfmg:steel_casing', [
-        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/constantan']),
+        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/falsite']),
         event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', '#forge:dusts/redstone']),
         event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', 'immersiveengineering:electron_tube']),
-        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/constantan'])
+        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/falsite'])
     ]).transitionalItem('kubejs:incomplete_rs_engineering').loops(1)
 
     //塑料
@@ -492,7 +523,7 @@ ServerEvents.recipes(event => {
             "tag":"forge:ethylene"
         },
         "result":{
-            "amount":8,
+            "amount": 16,
             "fluid":"tfmg:liquid_plastic"
         }
     })
@@ -524,19 +555,19 @@ ServerEvents.recipes(event => {
       event.recipes.createItemApplication('tfmg:'+material+'_pipe', ['create:fluid_pipe', '#forge:ingots/'+material])
     }
     PipeMaterials.forEach((id) => pipe(id))
-    event.recipes.createItemApplication('immersiveengineering:fluid_pipe', ['tfmg:aluminum_pipe', '#forge:ingots/cloggrum'])
 
     //高级电子元件
     event.remove({id:"immersiveengineering:blueprint/component_electronic_adv"})
     event.recipes.create.sequenced_assembly([
-        Item.of('immersiveengineering:component_electronic_adv').withChance(70.0),
-        Item.of('immersiveengineering:electron_tube').withChance(5.0),
-        Item.of('immersiveengineering:component_electronic').withChance(20.0),
-        Item.of('immersiveengineering:plate_duroplast').withChance(5.0)
-        ], 'immersiveengineering:plate_duroplast', [
-        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'create_connected:control_chip']),
-        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:wires/aluminum']),
-        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'createdeco:netherite_nugget']),
+        Item.of('immersiveengineering:component_electronic_adv').withChance(75.0),
+        Item.of('#forge:silicon').withChance(3.0),
+        Item.of('#bloodmagic:gravels/hellforged').withChance(2.0),
+        Item.of('immersiveengineering:component_electronic').withChance(5.0),
+        Item.of('immersiveengineering:circuit_board').withChance(15.0)
+        ], 'immersiveengineering:circuit_board', [
+        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:silicon']),
+        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'immersiveengineering:component_electronic']),
+        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:dusts/hellforged']),
         event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'tfmg:screw']),
         event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'tfmg:screwdriver'])
     ]).transitionalItem('kubejs:incomplete_component_electronic_adv').loops(5)
@@ -550,14 +581,14 @@ ServerEvents.recipes(event => {
         B: 'create:brass_casing',
         A: 'tfmg:plastic_sheet',
         C: 'immersiveengineering:component_electronic_adv',
-        D: 'immersiveengineering:component_electronic'
+        D: 'immersiveengineering:radiator'
     })
     event.recipes.create.sequenced_assembly([
         'kubejs:electronic_engineering'
         ], 'create:brass_casing', [
             event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'tfmg:plastic_sheet']),
             event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'immersiveengineering:component_electronic_adv']),
-            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'immersiveengineering:component_electronic']),
+            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'immersiveengineering:radiator']),
             event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'tfmg:plastic_sheet'])
     ]).transitionalItem('kubejs:incomplete_electronic_engineering').loops(1)
 })

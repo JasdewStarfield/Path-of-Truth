@@ -30,7 +30,7 @@
 #Recipe book
 [recipe_book]
 	#Should the Cooking Pot have a Recipe Book available on its interface?
-	enableRecipeBookCookingPot = true
+	enableRecipeBookCookingPot = false
 
 #Vanilla item overrides
 [overrides]

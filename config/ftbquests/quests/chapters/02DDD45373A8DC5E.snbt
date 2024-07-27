@@ -5,15 +5,41 @@
 	filename: "02DDD45373A8DC5E"
 	group: "461ABC15BE939FA8"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "kubejs:bronze_block"
 	id: "02DDD45373A8DC5E"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: -3.8d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 0.0d
+			y: 19.5d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/i1.png"
+			rotation: 0.0d
+			width: 9.516279069767442d
+			x: 0.0d
+			y: -5.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["不管干什么，你总归需要从工作台开始的，对吧）"]
+			hide: true
 			id: "46156FBBDCAB4B1D"
 			rewards: [{
 				id: "68889BA4397825CC"
@@ -46,7 +72,7 @@
 				title: "Any #forge:workbench"
 				type: "item"
 			}]
-			title: "从原始工具开始"
+			title: "【起点】从原始工具开始"
 			x: 0.0d
 			y: -2.5d
 		}
@@ -114,6 +140,7 @@
 		{
 			dependencies: ["7A6ADC4EE6686110"]
 			description: ["你的齿轮和杠杆也在转，不是吗？"]
+			hide: true
 			id: "2F791EC2607066B4"
 			subtitle: "地球在转。"
 			tasks: [
@@ -141,7 +168,7 @@
 			dependencies: ["46156FBBDCAB4B1D"]
 			description: [
 				"很符合原始人的身份，不是吗？"
-				"如果你在这一步卡住的话，考虑去完成一下魔法侧的任务"
+				"如果你在这一步卡住的话，考虑去完成一下魔法侧的任务。"
 			]
 			id: "05A75CB67C986F21"
 			subtitle: "一种很容易融化成液体的材料"
@@ -171,11 +198,15 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["374C430D0AD70D2E"]
+			dependencies: ["46156FBBDCAB4B1D"]
 			description: [
 				"想要把普通的材料变成安山合金，你需要一点小小的……催化剂）"
 				"它并不难获得，甚至可以说无穷无尽，但需要一点你的耐心。"
+				""
+				"&a如果你不知道怎么制作活石，请看魔法章节（原始萨满）！&r"
+				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"735172F79325756F\" } }"
 			]
+			hide: true
 			id: "489BC5567AF09228"
 			subtitle: "是的，这个世界不只需要科技"
 			tasks: [{
@@ -468,6 +499,16 @@
 			description: [
 				"你会惊讶的发现，在这个包里，炼铁需要更高的技术力）"
 				"所以你需要从青铜时代开始——并构建自己的高炉来解决铁的问题。"
+				""
+				"&c*注：烧制青铜用的是原版高炉，炼铁用的是沉浸工程的高炉，炼钢用的是机械动力:工业长路的高炉，&l请不要搞混了！&r&r"
+				""
+				"对于没有铁请不要着急，我们允许从冒险中获取铁质盔甲和工具并直接使用，如果真的着急请看下一页。"
+				"{@pagebreak}"
+				"首先，青铜工具是和铁同一等级的，而且没那么难获得，你通过机械动力的石磨就可以磨铜粉和锌粉。"
+				"其次，花药台用木桶可以灌水，不是必须铁桶。"
+				"最后，你可以去蔚蓝浩空来获取天闪石和镰鼬铁来代替原版的铁以制造工具和盔甲。"
+				""
+				"&c&o*法师的留言：谁再问没有铁桶怎么启动花药台我直接一发炎爆术糊你脸上！&r&r"
 			]
 			icon: "minecraft:raw_iron"
 			id: "7D7F5D6CF26C1636"
@@ -489,6 +530,7 @@
 				item: "minecraft:raw_iron"
 				type: "item"
 			}]
+			title: "不能直接烧"
 			x: 5.0d
 			y: 0.0d
 		}
@@ -498,6 +540,7 @@
 				"现在你不能通过把安山合金按到原木上来创建机壳了：你需要在活木上进行加工才可以。"
 				"是的，你首先需要用魔法活化木头，然后它们才能在加工台上被你压成机壳。"
 			]
+			hide: true
 			id: "50BB17FEED3B10D2"
 			subtitle: "什么，这不科学！"
 			tasks: [{
@@ -563,7 +606,7 @@
 				"这是第二个高炉，我们姑且称之为沉浸工程粗制高炉。它的作用是冶炼粗铁，以及将铁锭炼为铸铁锭。"
 				"找找废弃的地狱门，记得打个标记，哭泣的黑曜石你以后还会用到的。"
 				""
-				"&n注意：沉浸工程的高炉燃料只能使用焦煤粉！&r"
+				"&n&c注意：沉浸工程的高炉燃料只能使用焦煤粉！&r&r"
 			]
 			icon: "immersiveengineering:blast_furnace"
 			id: "2C15AA9278830174"
@@ -583,7 +626,10 @@
 				"2C15AA9278830174"
 				"6D46668D63E83ED7"
 			]
-			description: ["奖励有点臭但我相信你不会介意的（笑"]
+			description: [
+				"&a【完成后解锁主线章节：2I 奇异合金】&r"
+				"奖励有点臭但我相信你不会介意的（笑"
+			]
 			id: "6E0D85E43EDF1994"
 			rewards: [
 				{
@@ -612,6 +658,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
+			title: "【终点】事铁啊！"
 			x: 0.0d
 			y: 18.0d
 		}
@@ -620,7 +667,10 @@
 			description: [
 				"在这章你会提前接触到一些沉浸工程的多方块结构。（就当是为电气时代做预习了吧）"
 				"多方块结构，顾名思义，你要把它按指定的方法摆出来（手册里都有写），然后拿锤子右击一下某个特定的位置以将它组装为有功能的完整多方块结构。"
+				""
+				"&l&c比如说，你即将用来炼铁的高炉和用来生产焦煤的焦炉。&r&r"
 			]
+			hide: true
 			id: "336807D048A4EF6A"
 			subtitle: "80！80！"
 			tasks: [
@@ -751,5 +801,5 @@
 		}
 	]
 	subtitle: ["Age of Bronze"]
-	title: "青铜时代"
+	title: "1I 青铜时代"
 }

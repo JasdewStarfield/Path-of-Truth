@@ -16,20 +16,13 @@ ServerEvents.recipes(event => {
         })
     }
 
-    //修改背包配方
-    event.remove({id:'sophisticatedbackpacks:backpack'})
-    event.shaped(Item.of('sophisticatedbackpacks:backpack',1),
-        ['BAB',
-        'BCB',
-        'DED'],
-        {
-            A:'#forge:leather',
-            B:'#forge:string',
-            C:'#balm:wooden_chests',
-            D:'irons_spellbooks:magic_cloth',
-            E:'create:andesite_alloy'
-        }
-    )
+    //删除堆叠升级
+    event.remove({id:'sophisticatedbackpacks:stack_upgrade_starter_tier'})
+    event.remove({id:'sophisticatedbackpacks:stack_upgrade_tier_1'})
+    event.remove({id:'sophisticatedbackpacks:stack_upgrade_tier_1_from_starter'})
+    event.remove({id:'sophisticatedbackpacks:stack_upgrade_tier_2'})
+    event.remove({id:'sophisticatedbackpacks:stack_upgrade_tier_3'})
+    event.remove({id:'sophisticatedbackpacks:stack_upgrade_tier_4'})
     
     //修改奥术布匹配方
     event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:magic_cloth'},
@@ -103,6 +96,25 @@ ServerEvents.recipes(event => {
         'irons_spellbooks:gold_spell_book',
         {ISB_Spells: {maxSpells: 10}}
     )
+
+    //添加普通墨水配方
+    event.custom({
+        "type": "create:filling",
+        "ingredients": [
+          {
+            "item": "botania:mana_bottle"
+          },
+          {
+            "amount": 1000,
+            "fluid": "create_enchantment_industry:ink",
+          }
+        ],
+        "results": [
+          {
+            "item": "irons_spellbooks:common_ink"
+          }
+        ]
+    })
 
     //修改传说法术书配方
     event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:netherite_spell_book'},
@@ -215,25 +227,7 @@ ServerEvents.recipes(event => {
         }
     )
 
-    //添加终极锭合成
-    event.remove({id:'createchromaticreturn:refined_radiance_recipe'})
-    event.shaped(Item.of('createchromaticreturn:refined_radiance',1),
-        ['ABC',
-        'DEF',
-        'GHI'],
-        {
-            A:'irons_spellbooks:eldritch_manuscript',
-            B:'irons_spellbooks:permafrost_shard',
-            C:'irons_spellbooks:blood_staff',
-            D:'irons_spellbooks:hither_thither_wand',
-            E:'createchromaticreturn:glowing_ingot',
-            F:'irons_spellbooks:tarnished_helmet',
-            G:'irons_spellbooks:magehunter',
-            H:'irons_spellbooks:keeper_flamberge',
-            I:'irons_spellbooks:dragonskin_spell_book'
-        }
-    )
-    event.remove({id:'createchromaticreturn:multiplite_recipe'})
+    /*
     event.shaped(Item.of('createchromaticreturn:multiplite_ingot',1),
         ['ABC',
         'DEF',
@@ -249,5 +243,5 @@ ServerEvents.recipes(event => {
             H:'createchromaticreturn:industrium_ingot',
             I:'createchromaticreturn:durasteel_ingot'
         }
-    )
+    )*/
 })

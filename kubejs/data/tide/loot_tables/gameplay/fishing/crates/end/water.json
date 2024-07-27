@@ -32,6 +32,18 @@
           "weight": 1,
           "quality": 1,
           "name": "minecraft:netherite_scrap"
+        },
+        {
+           "type": "minecraft:item",
+           "weight": 5,
+           "quality":20,
+           "name": "minecraft:book",
+           "functions": [
+             {
+               "function": "minecraft:enchant_randomly",
+               "treasure": true
+             }
+           ]
         }
       ]
     }

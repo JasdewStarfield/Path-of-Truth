@@ -1,14 +1,21 @@
 {
-	autofocus_id: "5EE2152C42721246"
+	autofocus_id: "48783396F615D90E"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "0E2F8F4C2B4CBD8C"
-	group: "453FC1B4D45CC35B"
+	group: ""
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "botania:fork_light_relay"
 	id: "0E2F8F4C2B4CBD8C"
-	order_index: 2
+	images: [{
+		height: 3.0d
+		image: "kubejs:textures/quests/challenge.png"
+		rotation: 0.0d
+		width: 7.807894736842105d
+		x: 0.0d
+		y: -7.5d
+	}]
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -17,6 +24,7 @@
 				"280307C036B9B6E7"
 			]
 			description: ["得到每一种蔚蓝浩空特有的BOSS掉落物！"]
+			hide: false
 			icon: "blue_skies:blue_journal"
 			id: "0EBCC9ACD99E6B83"
 			rewards: [{
@@ -124,21 +132,30 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["0EBCC9ACD99E6B83"]
+			dependencies: ["6C542C19575974DB"]
 			description: ["获得你应该通过地狱获得的所有资源！"]
 			icon: {
 				Count: 1
-				ForgeCaps: {
-					"cold_sweat:item_insulation": {
-						Insulation: [ ]
-					}
-				}
 				id: "minecraft:netherite_boots"
 				tag: {
 					Damage: 0
 				}
 			}
 			id: "04200A4ECA4C6375"
+			rewards: [{
+				id: "5C36B048D5D0FDAF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "create:netherite_backtank"
+					tag: { }
+				}
+				type: "item"
+			}]
 			subtitle: "你来，你见，你征服"
 			tasks: [
 				{
@@ -186,8 +203,10 @@
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
 				"获得所有植物魔法的遗物！"
-				"*请不要丢掉其中任何一种，否则你会发现自己无法通关——这些物品也是后续配方材料！"
+				""
+				"&o&c&m打六次盖亚守护者II的感觉怎么样？&r&r&r"
 			]
+			hide: true
 			icon: "botania:dice"
 			id: "2C1B7E18AC2064D4"
 			rewards: [
@@ -253,6 +272,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["获得所有种类的巫术卷轴！"]
+			hide: true
 			icon: "irons_spellbooks:eldritch_manuscript"
 			id: "4A795BB15E5110EC"
 			rewards: [{
@@ -418,6 +438,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["获得原版，维度模组以及alex的生物中（几乎）所有可以被处理为鱼的东西）"]
+			hide: true
 			icon: "tide:twilight_angler_bucket"
 			id: "725308B81E925449"
 			rewards: [
@@ -510,6 +531,11 @@
 					item: "alexsmobs:raw_catfish"
 					type: "item"
 				}
+				{
+					id: "47E360501CC621C1"
+					item: "collectorsreap:platinum_bass"
+					type: "item"
+				}
 			]
 			title: "钓鱼王I"
 			x: -2.0d
@@ -521,6 +547,7 @@
 				"获得所有潮汐（Tide）模组中的鱼！"
 				"（由于主世界的特殊性，不要求全部群系鱼收集）"
 			]
+			hide: true
 			icon: "tide:crystal_shrimp"
 			id: "76F63C16AEEFA85D"
 			rewards: [
@@ -555,6 +582,35 @@
 							StoredEnchantments: [{
 								id: "minecraft:mending"
 								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A6D6A20FD19D613"
+					item: "tide:fortune_line"
+					type: "item"
+				}
+				{
+					id: "7961424FB910D587"
+					item: "tide:lavaproof_fishing_hook"
+					type: "item"
+				}
+				{
+					id: "4EDFB1EAA9C24C50"
+					item: "minecraft:heart_of_the_sea"
+					type: "item"
+				}
+				{
+					id: "61229D24AEE38CF0"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "majruszsenchantments:fishing_fanatic"
+								lvl: 7s
 							}]
 						}
 					}
@@ -759,13 +815,48 @@
 					}
 					type: "item"
 				}
+				{
+					id: "4958C7AAD00BEE9E"
+					item: "tide:yellow_perch"
+					type: "item"
+				}
+				{
+					id: "2E7358F40B52E9BA"
+					item: "tide:bluegill"
+					type: "item"
+				}
+				{
+					id: "4CDBC11E63BCDB1A"
+					item: "tide:guppy"
+					type: "item"
+				}
+				{
+					id: "4EBAF1A57D60D022"
+					item: "tide:ocean_perch"
+					type: "item"
+				}
+				{
+					id: "7C5DF1BE4AD01BCB"
+					item: "tide:mackerel"
+					type: "item"
+				}
+				{
+					id: "23BEB8F86FAABCF4"
+					item: "tide:midas_fish"
+					type: "item"
+				}
+				{
+					id: "084791C04BD4D0D3"
+					item: "tide:shooting_starfish"
+					type: "item"
+				}
 			]
 			title: "钓鱼王II"
 			x: -2.0d
 			y: -2.0d
 		}
 		{
-			dependencies: ["04200A4ECA4C6375"]
+			dependencies: ["0E5C63B3D4891362"]
 			description: ["从商人手中获得扼塞战斧，然后升级为最强大斧头！"]
 			id: "5DFEFE3A567A507F"
 			rewards: [
@@ -811,8 +902,50 @@
 					}
 					type: "item"
 				}
+				{
+					id: "1604F2AEC70F8CEF"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "20C451D6D9A4165F"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:mending"
+								lvl: 1s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "73FDA234B6B6EBEF"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
 			]
-			subtitle: "深暗最强武器"
+			subtitle: "深暗之园最强武器"
 			tasks: [{
 				id: "7868FDBB684B6F3A"
 				item: {
@@ -824,13 +957,16 @@
 				}
 				type: "item"
 			}]
-			title: "深暗王者"
+			title: "深园王者"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["5DFEFE3A567A507F"]
-			description: ["通过随便什么方式获得龙蛋——这是真理的一部分）"]
+			dependencies: ["193F465F65BC13F1"]
+			description: [
+				"通过随便什么方式获得龙蛋——这是真理的一部分）"
+				"&m&b*小声：这也是对于一些倒霉蛋的补偿——有的人捡不到漂浮在空中的龙皮）&r&r"
+			]
 			id: "583D1483CCA6EA3F"
 			rewards: [
 				{
@@ -856,28 +992,46 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["583D1483CCA6EA3F"]
+			dependencies: ["15E666BAE38566D8"]
 			description: [
 				"本模组提供了四种强大BOSS："
 				"暗夜巫妖，虚空之花，下界铁掌，黑曜石巨柱"
 				"通过击穿他们来证明你身为冒险家的实力！"
 				"你问我BOSS机制？自己探索去！"
-				"注意：由于对于材料的需求，这几种BOSS你可能分别需要打不止一次）"
+				"注意：由于对于材料的需求，这几种BOSS你可能分别需要打不止一次，请善用硫磺花蜜进行结构重置哦））"
 				""
-				"&o&a暗夜巫妖和虚空之花需要通过灵魂之星和虚空百合找到，下界铁掌会生成在类似猪灵堡垒的结构中，黑曜石巨柱则会生成在末地的大型平台上（需要末影之眼召唤）。&r&r"
+				"&o&b暗夜巫妖需要通过灵魂之星找到并用四颗灵魂之星召唤。&r&r"
+				"&o&a虚空之花需要通过虚空百合找到。&r"
+				"&o&c下界铁掌会生成在类似猪灵堡垒的结构，需要破开中心柱体。&r&r"
+				"&o&d黑曜石巨柱则会生成在末地的大型平台上，需要末影之眼召唤。&r&r"
 			]
 			id: "5EE2152C42721246"
-			rewards: [{
-				id: "13BDA7500373C98F"
-				item: {
-					Count: 1
-					id: "tfmg:quad_potato_cannon"
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "13BDA7500373C98F"
+					item: {
+						Count: 1
+						id: "tfmg:quad_potato_cannon"
+						tag: {
+							Damage: 0
+						}
 					}
+					title: "哒哒哒哒哒哒"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "6897AB733A3B15CC"
+					item: {
+						Count: 1
+						id: "botania:mana_tablet"
+						tag: {
+							creative: 1b
+							mana: 500000
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "rsquare"
 			size: 1.2d
 			subtitle: "这将是你面对的最终BOSS"
@@ -902,21 +1056,24 @@
 					item: "bosses_of_mass_destruction:void_thorn"
 					type: "item"
 				}
+				{
+					id: "0F953A05D82E62E9"
+					item: "bosses_of_mass_destruction:brimstone_nectar"
+					type: "item"
+				}
 			]
 			title: "战斗！爽！"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"6A1B42D208C780BD"
-				"21246254369E4A91"
-			]
+			dependencies: ["6A1B42D208C780BD"]
 			description: ["探索古代遗迹并找出所有种类的神奇图腾！"]
+			hide: true
 			id: "70726F375FFF5CF3"
 			rewards: [{
-				id: "0CA3357EC6D9F217"
-				item: "artifacts:chorus_totem"
+				id: "186F0BBBFC1FE93B"
+				item: "artifacts:umbrella"
 				type: "item"
 			}]
 			subtitle: "考古#2"
@@ -965,6 +1122,7 @@
 				"看起来有点哈人……"
 				"不同的化石有不同的作用，但这就要你自己探索了。"
 			]
+			hide: true
 			id: "21246254369E4A91"
 			rewards: [
 				{
@@ -1018,15 +1176,13 @@
 				}
 			]
 			title: "古生物学家"
-			x: -2.0d
-			y: 4.0d
+			x: -1.0d
+			y: 5.0d
 		}
 		{
-			dependencies: [
-				"6A1B42D208C780BD"
-				"70726F375FFF5CF3"
-			]
+			dependencies: ["6A1B42D208C780BD"]
 			description: ["出于为您的肝考虑，我们只要求收集任意15种陶片……"]
+			hide: true
 			id: "268A62891A5A104A"
 			min_required_tasks: 15
 			rewards: [{
@@ -1149,8 +1305,8 @@
 				}
 			]
 			title: "文物修复师"
-			x: 2.0d
-			y: 4.0d
+			x: 1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -1158,6 +1314,7 @@
 				"做出农夫乐事系列中的各类大菜！"
 				"&o&m&5“吃穿虚空”&r&r&r"
 			]
+			hide: true
 			id: "34D11CBE75FBEDF5"
 			rewards: [{
 				id: "5F88A80A1B13DB38"
@@ -1203,8 +1360,8 @@
 				}
 			]
 			title: "五星级大厨"
-			x: -2.0d
-			y: -4.0d
+			x: -4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -1212,6 +1369,7 @@
 				"在探索真理的路上，你会发现通过三种手段分别可以合成一张神秘的唱片……"
 				"集齐三张唱片，你就可以获得这世界上的最强声音）"
 			]
+			hide: true
 			id: "48783396F615D90E"
 			rewards: [{
 				id: "11F0B8AE3D972418"
@@ -1349,11 +1507,12 @@
 				}
 			]
 			title: "地质专家"
-			x: 2.0d
-			y: -4.0d
+			x: 4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
+			hide: true
 			id: "5D6D256D4DE35A5A"
 			subtitle: "三种……呃，垃圾桶"
 			tasks: [
@@ -1407,11 +1566,90 @@
 				item: "trashcans:ultimate_trash_can"
 				type: "item"
 			}]
-			title: "[隐藏任务]还有高手？"
+			title: "【隐藏任务】还有高手？"
 			x: 1.0d
 			y: -5.5d
 		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: ["那么，你贩剑吗？"]
+			id: "722556B2244FD56A"
+			rewards: [{
+				id: "104622516C821057"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:necronomicon_spell_book"
+					tag: {
+						ISBEnhance: "irons_spellbooks:raise_dead"
+						ISB_Spells: {
+							data: [
+								{
+									id: "irons_spellbooks:blood_slash"
+									index: 0
+									level: 5
+									locked: 1b
+								}
+								{
+									id: "irons_spellbooks:blood_step"
+									index: 1
+									level: 5
+									locked: 1b
+								}
+								{
+									id: "irons_spellbooks:ray_of_siphoning"
+									index: 2
+									level: 5
+									locked: 1b
+								}
+								{
+									id: "irons_spellbooks:blaze_storm"
+									index: 3
+									level: 5
+									locked: 1b
+								}
+							]
+							maxSpells: 10
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			secret: true
+			subtitle: "收集铁魔法所有的战斗用魔杖！"
+			tasks: [
+				{
+					id: "69ED8C8737277DAA"
+					item: "irons_spellbooks:graybeard_staff"
+					type: "item"
+				}
+				{
+					id: "120AE8C5D5D02197"
+					item: "irons_spellbooks:artificer_cane"
+					type: "item"
+				}
+				{
+					id: "2F7A0B1DA124D502"
+					item: "irons_spellbooks:ice_staff"
+					type: "item"
+				}
+				{
+					id: "0AA86E0E898A0D09"
+					item: "irons_spellbooks:lightning_rod"
+					type: "item"
+				}
+				{
+					id: "7BC464C058D7DC85"
+					item: "irons_spellbooks:blood_staff"
+					type: "item"
+				}
+			]
+			title: "制杖"
+			x: 0.0d
+			y: 6.0d
+		}
 	]
 	subtitle: ["The Way to Legend"]
-	title: "传说之路"
+	title: "【挑战】传说之路"
 }

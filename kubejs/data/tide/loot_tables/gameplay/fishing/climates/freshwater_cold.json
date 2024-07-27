@@ -43,9 +43,33 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 15,
+          "quality": 1,
+          "name": "tide:yellow_perch"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "quality": 1,
+          "name": "tide:bluegill"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "quality": 1,
+          "name": "tide:guppy"
+        },
+        {
+          "type": "minecraft:item",
           "weight": 10,
           "quality": 2,
           "name": "tide:mint_carp"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "quality": 2,
+          "name": "collectorsreap:platinum_bass"
         }
       ]
     }

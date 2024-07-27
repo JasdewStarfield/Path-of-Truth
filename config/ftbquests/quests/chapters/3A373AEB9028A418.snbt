@@ -1,13 +1,20 @@
 {
-	autofocus_id: "7CFD3110EF8E53E2"
+	autofocus_id: "046F1DAD921FD2E8"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "3A373AEB9028A418"
 	group: "461ABC15BE939FA8"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "sophisticatedbackpacks:backpack"
 	id: "3A373AEB9028A418"
+	images: [{
+		height: 2.0d
+		image: "kubejs:textures/quests/a1.png"
+		rotation: 0.0d
+		width: 10.893617021276595d
+		x: 0.0d
+		y: -3.5d
+	}]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -15,9 +22,13 @@
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
 				"由于本整合包需求的模组物品不少，我们加入了背包）"
-				"然而你会发现，为了基本的平衡性，我们删除了金以上等级的背包！"
-				"这意味着如果你要运送大量物品，你需要想想别的办法，比如火车）"
+				"然而你会发现，为了基本的平衡性，我们&a删除了所有的堆叠升级，并修改了背包的部分升级配方！&r"
+				"这意味着如果你要&c运送和存储大量物品&r，你需要想想别的办法，比如rs和抽屉）"
+				""
+				"*注：怪物目前不再掉落背包以及相关的内容物。所以&c请不要考虑通过堆叠升级来用背包当大型仓库的想法&r……我们提供了&b正经的物流途径&r，所以不要惦记着用背包逃课）"
 			]
+			hide: true
+			hide_details_until_startable: true
 			id: "7CFD3110EF8E53E2"
 			subtitle: "万里长征第一步，把你的东西装好）"
 			tasks: [{
@@ -36,6 +47,8 @@
 				"但这里没有一个父亲让你干掉……也没有霜之哀伤。"
 				"当然，有亡灵。"
 			]
+			hide: true
+			hide_details_until_startable: true
 			icon: "snowyspirit:snow_globe"
 			id: "6CA55CF413645302"
 			subtitle: "永恒寒冬……"
@@ -54,7 +67,13 @@
 				"这种时候就需要一些额外的手段来保全自己。"
 				"被冷死在家里是挺整蛊的事情，对吧？"
 				"记得看清自己当前的温度，2度以下或37度以上都是危险的。"
+				""
+				"具体的温度系统细节，可以参考&a【世界的表象】&r章节："
+				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6E08F7A257BCB99A\" } }"
 			]
+			hide: true
+			hide_details_until_startable: true
+			icon: "cold_sweat:thermometer"
 			id: "409A09512BF023FC"
 			subtitle: "烧起来了！"
 			tasks: [
@@ -80,8 +99,18 @@
 				"你有一次设定自己重生点的机会——请谨慎选择。"
 				"小提示：方尖碑是需要充能的，所以……请尽量求生，朋友）"
 				"方尖碑的充能可以通过末影之眼、末影珍珠或奥术源质完成，拿着这些东西对着方尖碑右键即可。"
+				""
+				"具体的重生系统细节，可以参考&a【世界的表象】&r章节："
+				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3B3403855032F399\" } }"
 			]
+			hide: true
+			hide_details_until_startable: true
 			id: "046F1DAD921FD2E8"
+			rewards: [{
+				id: "2AC9D0E9AC9CAC9D"
+				item: "irons_spellbooks:arcane_essence"
+				type: "item"
+			}]
 			subtitle: "你不能再用床成为无敌的人"
 			tasks: [{
 				id: "26C5D84BA231F17D"
@@ -106,6 +135,8 @@
 				"深园，恒晓，永昼是三个主要的冒险维度。"
 				"多走走，多看看，顺便找到你所需要的材料。"
 			]
+			hide: true
+			hide_details_until_startable: true
 			icon: {
 				Count: 1
 				id: "alexsmobs:dimensional_carver"
@@ -163,5 +194,5 @@
 		}
 	]
 	subtitle: ["A Long Way to Go"]
-	title: "漫漫长路"
+	title: "1A 漫漫长路"
 }

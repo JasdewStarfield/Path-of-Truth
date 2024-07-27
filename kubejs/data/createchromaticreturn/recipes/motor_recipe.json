@@ -15,16 +15,16 @@
       "item": "createchromaticreturn:refined_mechanism"
     },
     "X": {
-      "item": "createchromaticreturn:durasteel_ingot"
+      "item": "createchromaticreturn:antiplite_ingot"
     },
     "S": {
-      "item": "immersiveengineering:capacitor_creative"
+      "item": "create_new_age:advanced_motor"
     },
     "Y": {
-      "item": "create:rotation_speed_controller"
+      "item": "create_new_age:reinforced_motor"
     },
     "I": {
-      "item": "create:shaft"
+      "item": "create_new_age:basic_motor"
     }
   },
   "result": {

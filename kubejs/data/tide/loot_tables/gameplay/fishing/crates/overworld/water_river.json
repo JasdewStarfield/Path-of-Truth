@@ -47,7 +47,7 @@
           "type": "minecraft:item",
           "weight": 40,
           "quality": 3,
-          "name": "minecraft:copper_nugget",
+          "name": "create:copper_nugget",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -94,6 +94,18 @@
           "weight": 20,
           "quality": 1,
           "name": "minecraft:wheat"
+        },
+        {
+           "type": "minecraft:item",
+           "weight": 20,
+           "quality":40,
+           "name": "minecraft:book",
+           "functions": [
+             {
+               "function": "minecraft:enchant_randomly",
+               "treasure": true
+             }
+           ]
         }
       ]
     }

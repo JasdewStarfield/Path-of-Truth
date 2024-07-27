@@ -1,27 +1,50 @@
 {
-	autofocus_id: "12134A3EF6C80C54"
+	autofocus_id: "1DFAF813825EE8B8"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "31996D3CC5C02EFC"
 	group: "58EDF058942F253F"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "botania:corporea_spark_creative"
 	id: "31996D3CC5C02EFC"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/m5.png"
+			rotation: 0.0d
+			width: 6.621359223300971d
+			x: 0.0d
+			y: -5.5d
+		}
+	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"7CA6215959E08F1F"
-				"3502E7A3A9BB5220"
-			]
+			dependencies: ["7CA6215959E08F1F"]
 			description: [
 				"也许你曾经在地牢中发现过一些奇异饰品，但直到此刻，你才能够稳定的产出它们。"
 				"……因为你可以稳定的活化你的箱子了。"
 				"生命的光芒闪耀于鲜血和火花当中。"
 				"&o&5*注：你可以通过相同的手段活化你的潜影盒！&r&r"
 			]
+			hide: true
 			icon: "artifacts:mimic_spawn_egg"
 			id: "12134A3EF6C80C54"
 			shape: "rsquare"
@@ -43,7 +66,7 @@
 					type: "item"
 				}
 			]
-			title: "创造生命"
+			title: "【起点】创造生命"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -154,16 +177,16 @@
 		{
 			dependencies: ["12134A3EF6C80C54"]
 			description: [
-				"魔动工业无尽能源）"
-				"有了这个你大概率会染上魔瘾，但没有伊利丹来把它炸掉了（笑"
-				"但——你需要先，献血）"
-				"&o&b&m*小声：电子元件催动魔力涌动也是合理的方案）&r&r&r"
+				"魔能爆裂……"
+				"最恐怖的魔能炸弹。它在收到魔力脉冲后，会原地爆炸并在很长一段时间内无规则散射能引发巨大爆炸的魔力脉冲。"
+				"但你需要把它摆在魔力池下方作为某些配方的催化器……"
+				"所以发射器要对准了哦（笑"
 			]
 			id: "3BE92D4971A86473"
 			subtitle: "太阳井（确信"
 			tasks: [{
 				id: "6B02DAE7F314777E"
-				item: "botania:creative_pool"
+				item: "botania:mana_bomb"
 				type: "item"
 			}]
 			title: "魔力潮涌"
@@ -196,7 +219,7 @@
 				"在正常的生存中，这是你绝对无法获得的东西。"
 				"细心的人可能会发现，我大发慈悲地在第二章送给了你们一块，作为墨水升级的紫水晶产出源。"
 				"然而现在，你需要亲自活化紫水晶块，来让母岩成为你通向真理的基石。"
-				"&o&a*母岩不可复制——我可不希望有的人通过一些小手段逃课）&r&r"
+				"&o&a*紫水晶母岩与下界之星都可以通过狱火锻炉进行催生，但前提是你必须有一个样板。&r&r"
 			]
 			id: "1A10DCB76F3AE6F2"
 			subtitle: "活化水晶"
@@ -212,7 +235,8 @@
 		{
 			dependencies: ["1A10DCB76F3AE6F2"]
 			description: [
-				"你大概需要做两个——一个帮助你步入创造的大门，一个作为模板拿来复制）"
+				"&b【完成后解锁主线章节：6 统合机械，驾驭魔法】&r"
+				"你大概需要做很多个来帮你跨入真理的大门……所以材料都是可以量产的，虽然也没那么容易就是了。"
 				"&c&l这可能是你见过的最奢侈的泰拉合成...&r&r"
 				"炼金的本质是改变物品的性质。理论上——在你突破那层界限前，凭空造物是不可行的。"
 				"当然，你很快就可以了——至少后面的复制不会再这样繁琐了。"
@@ -224,14 +248,14 @@
 				type: "item"
 			}]
 			shape: "octagon"
-			size: 1.2d
+			size: 2.0d
 			subtitle: "你将触碰——真理之源。"
 			tasks: [{
 				id: "353C425A4E0BBD22"
 				item: "kubejs:midnight"
 				type: "item"
 			}]
-			title: "通往终末的钥匙"
+			title: "【终点】通往终末的钥匙"
 			x: 4.0d
 			y: 0.0d
 		}
@@ -286,30 +310,20 @@
 		{
 			dependencies: ["12134A3EF6C80C54"]
 			description: [
-				"只需要一点点火花，你就可以活化自己的姜饼人——然后用刷怪笼获得无穷无尽的姜饼人！"
-				"但说真的，你不会觉得吃活的姜饼人很奇怪吗？"
+				"现在，你可以通过一种很高效的方式将魔力转化为电力了）"
+				"魔力转电力的效率很高，但这同样要求你有稳定的产魔方式，比如简单粗暴的火红莲阵列……"
+				""
+				"&2\"Botania is a tech mod.\"&r（确信）"
 			]
-			icon: "create_confectionery:gingerbread_man"
+			icon: "botania:enchanter"
 			id: "1DFAF813825EE8B8"
-			subtitle: "喂，你不会有负罪感吗？"
-			tasks: [
-				{
-					id: "2FCEF42D3FB6BD87"
-					item: "create_confectionery:little_gingerbread_man_spawn_egg"
-					type: "item"
-				}
-				{
-					id: "62D656EB5BB6A73D"
-					item: "create_confectionery:gingerbread_man"
-					type: "item"
-				}
-				{
-					id: "287E748404AF579A"
-					item: "botania:corporea_spark"
-					type: "item"
-				}
-			]
-			title: "鲜活的食品"
+			subtitle: "魔动工业！"
+			tasks: [{
+				id: "3E0FF71DC64C6FDE"
+				item: "botania:mana_fluxfield"
+				type: "item"
+			}]
+			title: "魔能潮涌"
 			x: 0.0d
 			y: -4.0d
 		}
@@ -350,7 +364,10 @@
 		}
 		{
 			dependencies: ["059A741ABF2A9A34"]
-			description: ["是的，这也是可以制造的，但是需要你……付出灵魂。"]
+			description: [
+				"是的，这也是可以制造的，但是需要你……付出灵魂。"
+				"相应的，下界之星也可以通过近似的方式复制，但这就需要你自行寻找了……"
+			]
 			icon: "minecraft:wither_skeleton_skull"
 			id: "3C38B10AFBEA5CEE"
 			subtitle: "更多的蛋"
@@ -366,9 +383,10 @@
 		{
 			dependencies: ["3BE92D4971A86473"]
 			description: [
-				"通过以永恒魔力池放在魔力池下方作为催化器，你可以生产变色龙蛋！"
+				"通过以魔力风暴放在魔力池下方作为催化器，你可以生产变色龙蛋！"
 				"虽然创造第一个生命会比较麻烦，但这也是可复制的）"
 				"通过这个来为你保温（确信"
+				"&o&c*小心不要让魔力流射击到魔力风暴上……&r&r"
 			]
 			icon: "cold_sweat:chameleon_molt"
 			id: "2F259F3824D83D9D"
@@ -407,5 +425,5 @@
 		}
 	]
 	subtitle: ["It's Alive!"]
-	title: "生命炼成"
+	title: "5M 生命炼成"
 }

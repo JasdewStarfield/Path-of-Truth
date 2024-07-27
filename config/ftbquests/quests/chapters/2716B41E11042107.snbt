@@ -5,15 +5,41 @@
 	filename: "2716B41E11042107"
 	group: "58EDF058942F253F"
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_visible: true
 	icon: "immersiveengineering:component_electronic_adv"
 	id: "2716B41E11042107"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: -1.3d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/i5.png"
+			rotation: 0.0d
+			width: 18.770642201834864d
+			x: 0.0d
+			y: -6.0d
+		}
+	]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["5FB9514C6DE7AD58"]
 			description: ["通过这个工程块，你可以开始构建一些真正意义上的重型机器了）"]
+			hide: true
 			id: "143E6A57D69BAE65"
 			rewards: [{
 				id: "7E32ADC9F2B7A0CD"
@@ -28,7 +54,7 @@
 				item: "immersiveengineering:heavy_engineering"
 				type: "item"
 			}]
-			title: "现代工业基石"
+			title: "【起点】现代工业基石"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -169,6 +195,8 @@
 		{
 			dependencies: ["143E6A57D69BAE65"]
 			description: [
+				"&4一切矿物需求的终极解决手段&r"
+				""
 				"通过斗轮式采矿机，你可以几乎凭空产出矿物）"
 				"虽然理论上是矿脉开采没错，也需要你提前测定就是了，但矿物的产量仍然惊人。"
 			]
@@ -239,6 +267,9 @@
 			description: [
 				"斗轮式采矿机的采矿量取决于一片区域的矿物储量（非物理意义上）"
 				"而这就是检查储量的工具（笑"
+				""
+				"想要知道具体有哪些矿脉，以及每个矿脉产出什么类型的矿产，请看工程师手册的资源章节"
+				"&a我们很贴心地为除了（原来就没有矿脉的）末地以外的所有维度添加了自定义的矿脉&r，所以你可以成为跨维度矿业老板了（"
 			]
 			id: "7B7978B0964080F3"
 			shape: "diamond"
@@ -305,7 +336,11 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
-			description: ["重油还可以进一步分解——然后获得你需要的一些特定资源）"]
+			description: [
+				"重油还可以进一步分解——然后获得你需要的一些特定资源）"
+				"提醒：重油到后期还有其它的用途，所以就算你现在用不上，也不推荐你全部扔掉"
+			]
+			hide: true
 			id: "107639F1A8166B9C"
 			shape: "diamond"
 			subtitle: "分，还可以分"
@@ -322,6 +357,7 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
+			hide: true
 			id: "443ED09E810FE23D"
 			shape: "diamond"
 			subtitle: "轰！"
@@ -344,6 +380,7 @@
 				"虽然需要一点小小的魔法手段……"
 				"*注：这似乎不会直接显示在jei里，所以最好去查询磁铁的配方（"
 			]
+			hide: true
 			id: "05EF035C814ADE9B"
 			shape: "diamond"
 			subtitle: "磁铁修整器"
@@ -364,6 +401,7 @@
 				"如果你没有分馏出石脑油，检查一下你的分馏塔是不是偷工减料了）"
 				"石油当中最宝贵的一部分也是最容易消失的一部分（摊手"
 			]
+			hide: true
 			id: "3B7D8BECFF387995"
 			subtitle: "层数不够就会消失"
 			tasks: [{
@@ -379,6 +417,7 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
+			hide: true
 			id: "2718164469D544DF"
 			shape: "diamond"
 			subtitle: "也许是燃料"
@@ -399,6 +438,7 @@
 				"我们其实不提倡这种不人道的行为，但是不得不说凝固汽油在MC里只适合干这个（？"
 				"注意：真的有凝固汽油弹，但是不便宜"
 			]
+			hide: true
 			id: "46A5743F6DC8054D"
 			shape: "diamond"
 			subtitle: "燃烧弹前置"
@@ -411,7 +451,12 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["5FB9514C6DE7AD58"]
+			dependencies: [
+				"5FB9514C6DE7AD58"
+				"3FCEB9256A15A4B2"
+				"1AAD83556BD302DD"
+			]
+			hide: true
 			icon: "tfmg:cast_iron_distillation_controller"
 			id: "576A28075CA7077D"
 			subtitle: "实际上这个分馏塔干的是裂化的活"
@@ -525,7 +570,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3E21C675D4F61E6B"]
+			dependencies: [
+				"3E21C675D4F61E6B"
+				"7C566E8D9F54FEF9"
+			]
 			description: [
 				"这将是对于你未来（可能存在的）电子厂生涯的第一步预演："
 				"看到纯粹的，还没有焊接任何元件的板子）"
@@ -533,22 +581,22 @@
 			id: "32DA53E6EDA0AC90"
 			subtitle: "焊板子！"
 			tasks: [{
-				id: "70491E97C12AFBD2"
-				item: "immersiveengineering:plate_duroplast"
+				id: "6186760AB2B79629"
+				item: "immersiveengineering:circuit_board"
 				type: "item"
 			}]
 			x: 12.0d
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"32DA53E6EDA0AC90"
-				"7C566E8D9F54FEF9"
-			]
+			dependencies: ["32DA53E6EDA0AC90"]
 			description: [
 				"自己给自己焊板子你还想要工资？不可能的，朋友）"
 				"哦对了，如果出现了废料那一定是你的运气问题，人不行不能怪路不平（x"
+				""
+				"提示：恶魔合金可以做成块然后复制！能批量生产总是好的（"
 			]
+			hide: true
 			id: "538F608DF5017A6A"
 			subtitle: "没有工资"
 			tasks: [{
@@ -661,7 +709,8 @@
 		{
 			dependencies: ["07B58ED0910776DF"]
 			description: [
-				"工业测的作者oc之一——非常可爱）"
+				"&a【完成后解锁主线章节：6 统合机械，驾驭魔法】&r"
+				"工业侧的作者oc之一——非常可爱）"
 				"也是通往世界真相的通行证）"
 				"&l&c这大抵是难以置信的序列组装配方（&r&r"
 				"工业的本质就是以机械直达无限，而很快你就将能触碰到这一概念的边缘。"
@@ -680,6 +729,7 @@
 				item: "kubejs:buran"
 				type: "item"
 			}]
+			title: "【终点】暴风雪"
 			x: 14.0d
 			y: 4.0d
 		}
@@ -722,7 +772,7 @@
 			]
 			title: "升级你的磁铁"
 			x: 5.0d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["46A5743F6DC8054D"]
@@ -839,7 +889,10 @@
 		}
 		{
 			dependencies: ["2718164469D544DF"]
-			description: ["烈焰人最喜欢吃的"]
+			description: [
+				"烈焰人最喜欢吃的。"
+				"使烈焰人燃烧室进入临时的超级燃烧状态！这很重要，因为部分配方要求必须在这种温度下才能进行……"
+			]
 			id: "2B8294A4CBF6D664"
 			shape: "circle"
 			subtitle: "超级加热！"
@@ -859,7 +912,9 @@
 			description: [
 				"手搓怎么可能搓出这么宝贵的合金呢，对吧）"
 				"现在你需要真正的冶炼才能得到下界合金！"
-				"当然，你也可以用盖亚锭转化，对吧）"
+				"当然，你还可以后续用花费盖亚锭进行扩增，但不管怎么样你必须至少弄到应一个"
+				""
+				"题外话：原版下界合金护甲的防御力被大大提升了。所以还是值得用它升级你的钻石甲的"
 			]
 			id: "7C566E8D9F54FEF9"
 			rewards: [{
@@ -876,11 +931,12 @@
 				type: "item"
 			}]
 			title: "另一种黑金"
-			x: 14.0d
+			x: 12.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["7B7978B0964080F3"]
+			description: ["不仅如此，岩芯摆放下来也是很好的装饰品"]
 			id: "0B043034C7178F75"
 			rewards: [{
 				id: "0428279BAF7C1220"
@@ -897,7 +953,31 @@
 			x: -6.0d
 			y: -0.5d
 		}
+		{
+			dependencies: ["07B58ED0910776DF"]
+			description: [
+				"你解锁了本整合包内最强大的物流兼存储管理模组——精致存储！"
+				"功能非常强大，所以我们才把它放在了这里……如果你要向着终末章节冲刺，那么像这样方便的物流会使你搭建产线方便不少。"
+				"至于具体用法，请参考网络教程，这里不再赘述。"
+			]
+			id: "142E14F831B0F7BE"
+			rewards: [{
+				id: "2EAFCE05DDE964FA"
+				item: "refinedstorage:wireless_grid"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "别想太多，会头疼的"
+			tasks: [{
+				id: "5D1B5A24E2694FCF"
+				item: "refinedstorage:grid"
+				type: "item"
+			}]
+			title: "精致存储"
+			x: 19.0d
+			y: 0.0d
+		}
 	]
 	subtitle: ["Petrochemical Engineering"]
-	title: "黑金与化工"
+	title: "5I 黑金与化工"
 }

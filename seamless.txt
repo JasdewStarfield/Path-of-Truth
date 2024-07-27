@@ -1,0 +1,1 @@
+Don't delete this file if you want to disable the default Seamless resources, otherwise it's ok to delete :)

@@ -30,12 +30,12 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
   <h3 align="center">综合向1.20.1Forge整合包</h3>
   <p align="center">
-    你是一个……一个一个整合包啊啊啊啊！
+    整合包反馈交流群：631894460
     <br />
-    <a href="https://github.com/JasdewStarfield/Path-of-Truth"><strong>探索本项目的文档 »</strong></a>
+    <a href="https://www.curseforge.com/minecraft/modpacks/path-of-truth"><strong>在Curseforge上下载整合包正式版 »</strong></a>
     <br />
     <br />
-    <a href="https://www.curseforge.com/minecraft/modpacks/path-of-truth">查看Demo</a>
+    <a href="https://b23.tv/BzX9RtL">观看宣传视频</a>
     ·
     <a href="https://github.com/JasdewStarfield/Path-of-Truth/issues">报告Bug</a>
     ·
@@ -102,7 +102,6 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 1. 下载本整合包的Release版zip文件（在Github上直接下载，或在[官方Curseforge页面](https://www.curseforge.com/minecraft/modpacks/path-of-truth)上下载）。
 2. 使用支持Curseforge整合包格式的启动器（例如HMCL）安装该文件。
-3. *这是一行测试文字*这一分支为服务端版本，此版本可以安装在服务端上进行开服。
 
 
 如果您希望体验开发版本，则:
@@ -110,12 +109,8 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 1. 先安装原版Minecraft，版本1.20.1（如果启动器支持，建议启用版本独立文件夹）。
 2. 安装Forge，版本47.2.32。
-3. 克隆本仓库到你安装版本的目录下（版本独立时通常为versions文件夹的一子文件夹）。
+3. 克隆本仓库的dev-client分支到你安装版本的目录下（版本独立时通常为versions文件夹的一子文件夹）。
 
-
-```sh
-git clone https://github.com/JasdewStarfield/Path-of-Truth.git
-```
 
 ### 文件目录说明
 
@@ -123,10 +118,6 @@ git clone https://github.com/JasdewStarfield/Path-of-Truth.git
 filetree 
 ├── README.md
 ├── LICENSE
-├── log4j2.xml
-├── hmclverion.cfg
-├── arandompack.jar
-├── arandompack.json
 ├── kubejs  //魔改内容
 │  ├── assests
 │  ├── data
@@ -169,6 +160,8 @@ filetree
 
 同时感谢为我们提供了代码、建筑、配乐支持的JackyBlackson
 
+感谢为我们主动提供材质/模型支持的美工大佬KEYboradManDesu
+
  *您也可以在贡献者名单中参看所有参与该项目的开发者。*
 
 ### 版权说明
@@ -181,6 +174,7 @@ filetree
 - [Img Shields](https://shields.io)
 - [🌩最好的中文README模板⚡️Best README template](https://github.com/shaojintian/Best_README_template)
 - [Curseforge](https://www.curseforge.com)
+- [Blockbench](https://www.blockbench.net/)
 
 <!-- links -->
 [your-project-path]:JasdewStarfield/Path-of-Truth
