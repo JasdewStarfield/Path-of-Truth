@@ -74,9 +74,6 @@ usercache.json
 usernamecache.json
 whitelist.json
 /logs
-start-screen.sh
-run-yc.sh
-server.properties
 banned-ips.json
 banned-players.json
 /backups
@@ -86,7 +83,6 @@ knownkeys.txt
 schematics/uploaded
 mods/battlemusic-1.20.1-1.0.1.jar
 /simplebackups
-/libraries
 hmclversion.cfg
 /config/fancymenu/ui_themes
 /config/otyacraftengine
