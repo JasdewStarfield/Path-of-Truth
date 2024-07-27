@@ -312,6 +312,10 @@
 		#Whether Leafcutter Chambers have a chance to spawn cockroaches when broken or harvested
 		COCKROACH_CHAMBER = true
 
+	[Mobs.Rhino]
+		#Causes Rhinos to sometimes accidentally attack moving baby rhinos due to their extremely poor vision
+		ACCIDENTAL_BETRAYAL_ENABLED = true
+
 ["April Fools"]
 	#AMI April Fools Activation
 	GOOFY_MODE_ENABLED = false

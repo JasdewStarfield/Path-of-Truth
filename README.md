@@ -30,12 +30,12 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
   <h3 align="center">综合向1.20.1Forge整合包</h3>
   <p align="center">
-    你是一个……一个一个整合包啊啊啊啊！
+    整合包反馈交流群：631894460
     <br />
-    <a href="https://github.com/JasdewStarfield/Path-of-Truth"><strong>探索本项目的文档 »</strong></a>
+    <a href="https://www.curseforge.com/minecraft/modpacks/path-of-truth"><strong>在Curseforge上下载整合包正式版 »</strong></a>
     <br />
     <br />
-    <a href="https://www.curseforge.com/minecraft/modpacks/path-of-truth">查看Demo</a>
+    <a href="https://b23.tv/BzX9RtL">观看宣传视频</a>
     ·
     <a href="https://github.com/JasdewStarfield/Path-of-Truth/issues">报告Bug</a>
     ·
@@ -174,6 +174,7 @@ filetree
 - [Img Shields](https://shields.io)
 - [🌩最好的中文README模板⚡️Best README template](https://github.com/shaojintian/Best_README_template)
 - [Curseforge](https://www.curseforge.com)
+- [Blockbench](https://www.blockbench.net/)
 
 <!-- links -->
 [your-project-path]:JasdewStarfield/Path-of-Truth

@@ -183,6 +183,10 @@ ServerEvents.recipes(event => {
     //用铜粉、锡粉合成青铜粉
     event.recipes.create.mixing('2x kubejs:bronze_dust', ['#forge:dusts/tin','#forge:dusts/copper','#forge:dusts/copper','#forge:dusts/copper'])
 
+    //修改搅拌器配方
+    event.replaceInput({mod:'create',output:'create:whisk'},
+    '#forge:plates/iron', '#forge:plates/andesite' )
+
     //石磨粉碎铜锭锡锭镍锭锌锭
     event.recipes.create.milling(Item.of('kubejs:tin_dust').withChance(0.5), '#forge:ingots/tin')
     event.recipes.create.milling(Item.of('immersiveengineering:dust_copper').withChance(0.5), '#forge:ingots/copper')

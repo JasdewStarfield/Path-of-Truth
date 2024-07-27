@@ -59,6 +59,10 @@
         UNLESS_OBELISK: Players can only choose if their respawn point is not an obelisk.
         */
         "secondarySpawnMode": "ALWAYS",
+        // A list of block ids which players are not allowed to choose to respawn at, unless it is their main respawn point.
+        "secondarySpawnBlockBlacklist": [],
+        // Whether 'secondarySpawnBlockBlacklist' should act as a whitelist instead of a blacklist.
+        "secondarySpawnBlocksAsWhitelist": false,
         /*
         When players are allowed to choose to respawn at world spawn.
         NEVER: Players can never choose.

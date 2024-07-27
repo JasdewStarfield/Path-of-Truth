@@ -97,6 +97,25 @@ ServerEvents.recipes(event => {
         {ISB_Spells: {maxSpells: 10}}
     )
 
+    //添加普通墨水配方
+    event.custom({
+        "type": "create:filling",
+        "ingredients": [
+          {
+            "item": "botania:mana_bottle"
+          },
+          {
+            "amount": 1000,
+            "fluid": "create_enchantment_industry:ink",
+          }
+        ],
+        "results": [
+          {
+            "item": "irons_spellbooks:common_ink"
+          }
+        ]
+    })
+
     //修改传说法术书配方
     event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:netherite_spell_book'},
     'irons_spellbooks:lightning_bottle', 'botania:terrasteel_ingot' )

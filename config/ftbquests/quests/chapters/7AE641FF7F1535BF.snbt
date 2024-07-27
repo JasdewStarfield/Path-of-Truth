@@ -556,10 +556,7 @@
 			y: 0.5d
 		}
 		{
-			dependencies: [
-				"73CD9D2DD215B5F5"
-				"5B1818D5A1142A16"
-			]
+			dependencies: ["5B1818D5A1142A16"]
 			description: ["多造一些这个，用它们组合成阵列，你就可以合成很多有趣的，工作台无法制作的东西了……"]
 			id: "34F7983B4915B789"
 			subtitle: "Anything（指可以合成任何东西）"

@@ -197,13 +197,13 @@
 			subtitle: "12个法术槽让你可以为所欲为"
 			tasks: [
 				{
-					id: "0E24CC949A464B6A"
-					item: "irons_spellbooks:ruined_book"
+					id: "45D048A878D5D46B"
+					item: "irons_spellbooks:legendary_ink"
 					type: "item"
 				}
 				{
-					id: "45D048A878D5D46B"
-					item: "irons_spellbooks:legendary_ink"
+					id: "79F7E27605C3BC00"
+					item: "minecraft:echo_shard"
 					type: "item"
 				}
 			]
