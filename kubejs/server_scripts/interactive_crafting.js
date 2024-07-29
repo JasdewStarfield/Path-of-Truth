@@ -31,7 +31,8 @@ ServerEvents.recipes(event => {
       ["create:cuckoo_clock", "clock"],
       ["create:portable_storage_interface", "create:chute"],
       ["create:millstone", "grindstone"],
-      ["create:encased_fan", "create:propeller"]
+      ["create:encased_fan", "create:propeller"],
+      ["create_power_loader:empty_andesite_chunk_loader", "glowstone"]
     ]
     andesiteEngineering.forEach(([output, material]) => 
       InteractiveCrafting(output, "kubejs:andesite_engineering", material)
@@ -60,7 +61,8 @@ ServerEvents.recipes(event => {
       ["create:redstone_link", "redstone_torch"],
       //["create:mechanical_crafter", "#forge:workbench"],
       ["create:stockpile_switch", "comparator"],
-      ["create:rotation_speed_controller", "create:precision_mechanism"]
+      ["create:rotation_speed_controller", "create:precision_mechanism"],
+      ["create_power_loader:empty_brass_chunk_loader", "glowstone"]
     ]
     preciseEngineering.forEach(([output, material]) => 
       InteractiveCrafting(output, "kubejs:precise_engineering", material)
@@ -86,4 +88,7 @@ ServerEvents.recipes(event => {
       '#forge:storage_blocks/brass'
     )
 
+    //区块加载器
+    event.recipes.botania.mana_infusion('create_power_loader:brass_chunk_loader', 'create_power_loader:empty_brass_chunk_loader', 10000)
+    event.recipes.botania.mana_infusion('create_power_loader:andesite_chunk_loader', 'create_power_loader:empty_andesite_chunk_loader', 4000)
 })
