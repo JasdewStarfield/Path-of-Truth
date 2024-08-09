@@ -220,14 +220,7 @@
 			subtitle: "钢铁雄心 IV"
 			tasks: [{
 				id: "7E42EFEA82C07766"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/steel"
-					}
-				}
-				title: "Any #forge:ingots/steel"
+				item: "tfmg:steel_ingot"
 				type: "item"
 			}]
 			title: "团结就是力量"

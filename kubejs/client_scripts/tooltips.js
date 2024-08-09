@@ -19,4 +19,7 @@ ItemEvents.tooltip(e => {
     diamondGears.forEach((id) =>
         e.add([id], [Text.red({translate:'item.kubejs.diamond_gears.desc'})])
     )
+
+    e.add(["kubejs:filled_casting_mold_small"], [Text.yellow({translate:'item.kubejs.filled_casting_mold_small.desc'})])
+    e.add(["kubejs:filled_casting_mold_large"], [Text.yellow({translate:'item.kubejs.filled_casting_mold_large.desc'})])
 })
