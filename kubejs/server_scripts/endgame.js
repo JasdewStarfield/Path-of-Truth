@@ -40,7 +40,7 @@ ServerEvents.recipes(event => {
   )
 
   //工业侧
-  event.recipes.create.mixing([Item.of('createchromaticreturn:shadow_steel')], ['createchromaticreturn:chromatic_compound',Fluid.of('create_confectionery:black_chocolate',500),Fluid.of('tfmg:heavy_oil',500),Fluid.of('create_enchantment_industry:ink',500)]).superheated()
+  event.recipes.create.mixing([Item.of('createchromaticreturn:shadow_steel')], ['createchromaticreturn:chromatic_compound',Fluid.of('create_confectionery:black_chocolate',500),Fluid.of('tfmg:heavy_oil',500)]).superheated()
   event.remove({id:'createchromaticreturn:shadow_essence_recipe'})
   event.custom({
     "type":"immersiveengineering:mixer",
