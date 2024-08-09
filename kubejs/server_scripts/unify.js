@@ -63,6 +63,13 @@ ServerEvents.recipes(event => {
     '#forge:workbench'
   )
 
+  //任意末影珍珠合成原版末影珍珠
+  event.shapeless(Item.of('minecraft:ender_pearl',1),
+        [
+            '#forge:ender_pearls'
+        ]
+  )
+
   //下面是一些重复配方的移除
   event.replaceInput(
     {id:'bucketlib:farmersdelight/wheat_dough_from_water'},
