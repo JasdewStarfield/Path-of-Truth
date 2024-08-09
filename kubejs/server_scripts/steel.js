@@ -2,6 +2,7 @@ ServerEvents.recipes(event => {
   //铸铁
   event.remove({ id: 'tfmg:crafting/casting_spout' })
   event.remove({ id: 'tfmg:crafting/casting_basin' })
+  event.remove({ id: 'tfmg:casting/steel' })
   /*
   event.recipes.create.mechanical_crafting('tfmg:casting_spout', [
     ' DDD ',
@@ -102,8 +103,8 @@ ServerEvents.recipes(event => {
       event.recipes.createFilling('kubejs:incomplete_filled_casting_mold_large', ['kubejs:incomplete_filled_casting_mold_large', Fluid.of('minecraft:water',1000)])
   ]).transitionalItem('kubejs:incomplete_filled_casting_mold_large').loops(1)
 
-  event.recipes.create.compacting(['#forge:ingots/steel','kubejs:casting_seal','kubejs:casting_base',Item.of('tfmg:ingot_mold').withChance(0.95)], 'kubejs:filled_casting_mold_small')
-  event.recipes.create.compacting(['#forge:storage_blocks/steel','kubejs:casting_seal','kubejs:casting_base',Item.of('tfmg:block_mold').withChance(0.95)], 'kubejs:filled_casting_mold_large')
+  event.recipes.create.compacting(['tfmg:steel_ingot','kubejs:casting_seal','kubejs:casting_base',Item.of('tfmg:ingot_mold').withChance(0.95)], 'kubejs:filled_casting_mold_small')
+  event.recipes.create.compacting(['tfmg:steel_block','kubejs:casting_seal','kubejs:casting_base',Item.of('tfmg:block_mold').withChance(0.95)], 'kubejs:filled_casting_mold_large')
 
   //发电
   event.remove({ mod: 'create_new_age'/*, not:[{output:'create_new_age:basic_motor'},{output:'create_new_age:carbon_brushes'},{output:'create_new_age:generator_coil'}]*/ })
