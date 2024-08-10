@@ -13,7 +13,7 @@ mobSpawningMaxLayers: 8
 snow-cover:
   replaceWorldgenFeature: true
   placeSnowOnBlock: true
-  retainOriginalBlocks: false
+  retainOriginalBlocks: true
   placeNaturally: true
 accumulation:
   naturalMelting: true
