@@ -578,6 +578,11 @@
 				"小心自己别掉进去了"
 			]
 			id: "146261DF72C96BF4"
+			rewards: [{
+				id: "43FABCFB1F9C244C"
+				item: "createdeco:decal_skull"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "真是一对大家伙"
 			tasks: [{

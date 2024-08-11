@@ -117,6 +117,12 @@
 			dependencies: ["2B406E71D5BDF8F6"]
 			description: ["什么，你说一次凿一组都无法满足你？那还是试试自动产线吧）"]
 			id: "73E629F1A17FB01C"
+			rewards: [{
+				count: 32
+				id: "185C51B9F60FAD04"
+				item: "rechiseled:cobbled_deepslate_tiles"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "是的，这个是拿来做装饰的"
 			tasks: [{
@@ -137,6 +143,12 @@
 				"&o&b哈利路大旋风！&r&r"
 			]
 			id: "6FCB66E5BB478C58"
+			rewards: [{
+				count: 8
+				id: "0FDFE735B2E8ACD6"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "奇怪的旋转结构"
 			tasks: [
@@ -413,6 +425,11 @@
 		{
 			dependencies: ["07C921FBCF56E703"]
 			id: "1D20F56DDBBD6370"
+			rewards: [{
+				id: "0C6E4638235D6397"
+				item: "create_connected:empty_fan_catalyst"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "很好，看来你意识到了"
 			tasks: [
@@ -538,6 +555,11 @@
 				"虽然搭建产线的过程可能比较累，但是全自动还是值得的！"
 			]
 			id: "40840BF9F23BC8A1"
+			rewards: [{
+				id: "1BD1CF2FAF04A5CA"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "磨刀不误砍柴工"
 			tasks: [
@@ -570,13 +592,26 @@
 			dependencies: ["40840BF9F23BC8A1"]
 			description: ["用泥胚获得铁……就是麻烦点，而且你还是逃不过高炉这一步（"]
 			id: "0E7C15008078BC90"
-			shape: "diamond"
-			subtitle: "铁自己也行"
-			tasks: [{
-				id: "73AD02B2C758A53A"
-				item: "create:crushed_raw_iron"
+			rewards: [{
+				count: 2
+				id: "590B27B386DDAD83"
+				item: "create:crushing_wheel"
 				type: "item"
 			}]
+			shape: "diamond"
+			subtitle: "铁自己也行"
+			tasks: [
+				{
+					id: "4D66FAB81E1FFA01"
+					item: "minecraft:packed_mud"
+					type: "item"
+				}
+				{
+					id: "14D2CEDEEA806023"
+					item: "create:crushed_raw_iron"
+					type: "item"
+				}
+			]
 			title: "粒粒皆辛苦2"
 			x: 0.0d
 			y: -2.5d
@@ -585,6 +620,12 @@
 			dependencies: ["73CD9D2DD215B5F5"]
 			description: ["终于可以用简单的方式分拣物品了，不是吗？"]
 			id: "029AA89F07AEE09D"
+			rewards: [{
+				count: 4
+				id: "53B38B9B74121EEF"
+				item: "create:electron_tube"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "这居然是过滤器！"
 			tasks: [
@@ -621,8 +662,13 @@
 			]
 			icon: "create_enchantment_industry:enchanting_guide"
 			id: "18A0D2E7A8E61D45"
+			rewards: [{
+				id: "1ACCBF4DB427B9B6"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "diamond"
-			subtitle: "既然是工业就能量产"
+			subtitle: "经验+3"
 			tasks: [
 				{
 					id: "70805C73F6CC79A2"
@@ -745,19 +791,26 @@
 			]
 			icon: "bloodmagic:lavacrystal"
 			id: "794FE24A776917F2"
+			rewards: [{
+				count: 4
+				id: "2EE8A5DA64A6A6D9"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
 			shape: "diamond"
 			size: 1.0d
 			subtitle: "大型工程"
 			tasks: [
 				{
-					id: "4521DE7E0E114948"
-					item: "minecraft:lava_bucket"
-					type: "item"
-				}
-				{
 					id: "2D51661924528B20"
 					item: "create:hose_pulley"
 					type: "item"
+				}
+				{
+					advancement: "create:hose_pulley_lava"
+					criterion: ""
+					id: "7A8A8A824350CBFF"
+					type: "advancement"
 				}
 			]
 			title: "无尽岩浆"

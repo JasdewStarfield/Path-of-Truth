@@ -415,6 +415,12 @@
 		{
 			dependencies: ["3BECB3D53E17F80B"]
 			id: "40E4071636BA7BB1"
+			rewards: [{
+				count: 8
+				id: "3EBAF7FE8633539F"
+				item: "kubejs:bronze_ingot"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "嘿伙计，我想你需要一些工具"
 			tasks: [
