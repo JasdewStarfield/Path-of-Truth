@@ -224,6 +224,11 @@ ServerEvents.recipes(event => {
         '#forge:plates/copper',
         '#forge:plates/constantan'
     )
+    event.replaceInput(
+        { output:"create_connected:fluid_vessel" },
+        '#forge:plates/copper',
+        '#forge:plates/constantan'
+    )
 
     //黄铜
     event.remove({id:"create:mixing/brass_ingot"})

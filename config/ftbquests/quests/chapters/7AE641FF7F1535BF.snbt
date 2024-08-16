@@ -64,21 +64,24 @@
 		}
 		{
 			dependencies: ["241E68C9313210AD"]
-			description: [
-				"所以你需要一个盆——以及一个合适的模板来压制钢锭）"
-				"&4&n注意：据测试当前版本使用原版漏斗直接连接铸造盆会产生Bug，导致浇筑配方丢失！！！建议不要使用。如果真的遇到此问题，请退出重进（或者可以直接服务端reload）。&r&r"
-			]
+			description: ["所以你需要一个盆——以及一个合适的模板来压制钢锭）"]
+			icon: "kubejs:casting_base"
 			id: "3A3413B00445526E"
 			subtitle: "炼钢的本质其实是把铁水变成钢水）"
 			tasks: [
 				{
-					id: "089DB3A1CA5A0C3A"
-					item: "tfmg:casting_basin"
+					id: "0A869FAD6E9169D2"
+					item: "tfmg:ingot_mold"
 					type: "item"
 				}
 				{
-					id: "0A869FAD6E9169D2"
-					item: "tfmg:ingot_mold"
+					id: "0374F9F32DE169D2"
+					item: "tfmg:block_mold"
+					type: "item"
+				}
+				{
+					id: "4E634AF6488347B6"
+					item: "kubejs:casting_base"
 					type: "item"
 				}
 			]
@@ -92,20 +95,24 @@
 				"5B1818D5A1142A16"
 				"34F7983B4915B789"
 			]
+			description: [
+				"不过这只是一个盖子，所以你应该可以猜到还有一半……"
+				"至于为什么你可以拿起来装了一个钢块的铸造盆，还是当史蒂夫天生神力吧（"
+			]
 			id: "3FE201936DBB127F"
-			subtitle: "加压后冷却"
+			subtitle: "用小盒子炼钢"
 			tasks: [{
-				id: "5D6FC0BDFA823BE4"
-				item: "tfmg:casting_spout"
+				id: "1CD02DA65BDD60D1"
+				item: "kubejs:casting_seal"
 				type: "item"
 			}]
-			title: "金属成型"
+			title: "铸造盆封口"
 			x: 2.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["242C57AF7F6116E4"]
-			description: ["康铜可承受不了钢水的灼热，所以你需要铸铁——不论是获取焦煤还是制造管道。"]
+			description: ["康铜可承受不了钢水的灼热，所以你需要铸铁来为你制造模具。"]
 			hide: true
 			id: "241E68C9313210AD"
 			subtitle: "铸铁管道和机器是必要的）"
@@ -130,6 +137,8 @@
 				""
 				"这是第三个高炉！我们叫它炼钢高炉就好，因为它只能炼钢（（"
 				"&n具体建造方式请参照思索说明&r"
+				""
+				"&c注意&r：请&l不要&r一看思索的延伸就端着铸造盆准备去炼钢。TFMG的铸造盆有让配方崩溃的特性，因此我们已将其从制造序列中移除。具体的钢铁炼制方式请直接从钢锭查询配方。"
 			]
 			id: "309524B4033437AF"
 			subtitle: "钢水输出点"
@@ -188,10 +197,10 @@
 		}
 		{
 			dependencies: [
-				"3FE201936DBB127F"
 				"5863CFB1CDBEBEC9"
 				"309524B4033437AF"
 				"3A3413B00445526E"
+				"3FE201936DBB127F"
 			]
 			description: [
 				"你获得了钢锭！这意味着你可以在工业和魔法上继续推进了！"
@@ -220,14 +229,7 @@
 			subtitle: "钢铁雄心 IV"
 			tasks: [{
 				id: "7E42EFEA82C07766"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/steel"
-					}
-				}
-				title: "Any #forge:ingots/steel"
+				item: "tfmg:steel_ingot"
 				type: "item"
 			}]
 			title: "团结就是力量"
@@ -576,6 +578,11 @@
 				"小心自己别掉进去了"
 			]
 			id: "146261DF72C96BF4"
+			rewards: [{
+				id: "43FABCFB1F9C244C"
+				item: "createdeco:decal_skull"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "真是一对大家伙"
 			tasks: [{

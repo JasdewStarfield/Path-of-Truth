@@ -39,6 +39,14 @@
   "item.kubejs.aquite_dust":"水蓝石粉",
   "item.kubejs.frostfire_double_plate": "霜火复合板",
   "item.kubejs.forgotten_mechanism": "遗忆构件",
+  "item.kubejs.casting_base": "铸造底盆",
+  "item.kubejs.casting_seal": "铸造封口",
+  "item.kubejs.incomplete_filled_casting_mold_small": "未完成的已填充铸造模具",
+  "item.kubejs.filled_casting_mold_small": "已填充铸造模具",
+  "item.kubejs.filled_casting_mold_small.desc": "内含一个钢锭",
+  "item.kubejs.incomplete_filled_casting_mold_large": "待处理的铸造模具",
+  "item.kubejs.filled_casting_mold_large": "已填充的铸造模具",
+  "item.kubejs.filled_casting_mold_large.desc": "内含一个钢块",
   "item.kubejs.buran": "暴风雪",
   "item.kubejs.midnight": "深夜",
   "item.kubejs.music_disc_pluto_nocturnus.desc": "Jacky Blackson - Pluto Nocturnus",
@@ -76,7 +84,7 @@
   "item.immersiveengineering.hammer.tooltip.behaviour4": "改变气球的纹理。",
   "item.immersiveengineering.hammer.tooltip.condition5": "对一般方块使用时",
   "item.immersiveengineering.hammer.tooltip.behaviour5": "旋转该方块的朝向。",
-  
+
   "block.botania.apothecary_default.tooltip": "花药台",
   "block.botania.apothecary_default.tooltip.summary": "植物魔法的入门仪式从_木桶_与_清水_开始。",
   "block.botania.apothecary_default.tooltip.condition1": "在装入水后",

@@ -28,6 +28,14 @@ StartupEvents.registry('item', (event) => {
   //未完成的黄铜
   event.create("incomplete_brass_ingot", 'create:sequenced_assembly').displayName('Incomplete Brass Ingot')
 
+  //钢铸造相关
+  event.create("casting_base").displayName('Casting Base')
+  event.create("casting_seal").displayName('Casting Seal')
+  event.create("incomplete_filled_casting_mold_small", 'create:sequenced_assembly').displayName('Incomplete Filled Casting Mold').texture('kubejs:item/incomplete_filled_casting_mold')
+  event.create("filled_casting_mold_small").displayName('Filled Casting Mold').texture('kubejs:item/filled_casting_mold')
+  event.create("incomplete_filled_casting_mold_large", 'create:sequenced_assembly').displayName('Incomplete Filled Casting Mold').texture('kubejs:item/incomplete_filled_casting_mold')
+  event.create("filled_casting_mold_large").displayName('Filled Casting Mold').texture('kubejs:item/filled_casting_mold')
+
   //金-银混合物
   event.create("gold_silver_mix").displayName('Gold-Silver Mix')
 
