@@ -396,8 +396,40 @@
 				title: "混沌理论与概率论"
 				type: "checkmark"
 			}]
-			x: 0.0d
-			y: 1.0d
+			x: -0.75d
+			y: 0.75d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"本整合包使用的字体为开源像素字体“融合像素字体”。"
+				"如果感到不习惯，可以关闭ModernUI模组的字体优化，便可以切换为原版字体。&4但请注意，原版字体的渲染较为低效，并且可能有一定的bug。&r（当然，您也可以使用自己的字体包）"
+				"具体步骤为：按&eCtrl+K&r打开ModernUI的控制台，找到&2偏好设置-扩展-现代化文本引擎&r选项并关闭"
+			]
+			icon: {
+				Count: 1
+				id: "blue_skies:alchemy_scroll"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7FA79EF7DEBAB201"
+			rewards: [{
+				id: "468A817B9F18EB47"
+				item: "minecraft:writable_book"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "不适应字体的请看这里"
+			tasks: [{
+				id: "0D17B149172E240D"
+				title: "豪德"
+				type: "checkmark"
+			}]
+			title: "关于字体"
+			x: 0.75d
+			y: 0.75d
 		}
 	]
 	subtitle: ["Ahead of Everything Else"]
