@@ -98,7 +98,7 @@ element {
 
 element {
   interactable = true
-  source = Path of Truth V2.1%n%欢迎你，{"placeholder":"playername"}！
+  source = Path of Truth V2.1a%n%欢迎你，{"placeholder":"playername"}！
   source_mode = direct
   shadow = true
   scale = 1.0
