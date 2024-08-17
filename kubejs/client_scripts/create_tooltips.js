@@ -23,7 +23,7 @@ const CreateTooltipsItems = [
 }
 */
 
-ClientEvents.init(event => {
+ClientEvents.loggedIn(event => {
     CreateTooltipsItems.forEach((id) => 
             TooltipModifier.REGISTRY.register(
             id,
