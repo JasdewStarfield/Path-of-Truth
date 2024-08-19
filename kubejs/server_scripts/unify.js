@@ -80,5 +80,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'tfmg:crushing/saltpeter' })
   event.remove({ id: 'tfmg:mixing/gun_powder' })
   event.remove({ id:"tfmg:filling/liquid_asphalt_bucket" })
+  event.remove({ id:"everycomp:c/botania/livingwood_slab_from_livingwood_planks_stonecutting" })
+  event.remove({ id:"everycomp:c/botania/livingwood_stairs_from_livingwood_planks_stonecutting" })
 
 })
