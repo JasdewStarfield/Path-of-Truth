@@ -50,6 +50,9 @@
 	#List of additional blocks that the hearth cannot spread through
 	#Use this list if the hearth is spreading through particular blocks that it shouldn't
 	"Hearth Spread Blacklist" = []
+	#Allows the hearth to automatically turn on/off based on nearby players' temperature
+	#If false, the hearth turns on/off by redstone signal
+	"Automatic Hearth" = false
 
 [Blocks]
 	#Allows for adding simple BlockTemps without the use of Java mods

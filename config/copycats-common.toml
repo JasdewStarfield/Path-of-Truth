@@ -1,6 +1,6 @@
 #.
-#Enables/Disables the conversion of placed copycats from old versions to new ones. Set this to false to enable conversion! (only happens on world load, so if changed while in-game you will need to load the world again)
-disableConversion = false
+#Disables the migration of placed copycats from old versions to new ones. Setting this to true may cause copycats to lose their textures when you upgrade this mod. Restart the game to apply changes.
+disableMigration = false
 
 #.
 #Enable/disable features. Values on server override clients

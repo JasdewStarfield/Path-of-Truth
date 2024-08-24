@@ -9,6 +9,10 @@
 //drain=恶魔意志消耗值
 
 ServerEvents.recipes(event => {
+    //处决束灵盔甲槽位升级
+    //这会导致死亡爆炸
+    event.remove({id:'bloodmagic:alchemytable/curios_upgrade'})
+    
     //修改血祭坛配方
     //底层青铜，两侧活石，中间初学者手册
     event.replaceInput({mod:'bloodmagic',output:'bloodmagic:altar'},

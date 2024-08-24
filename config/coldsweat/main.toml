@@ -1,9 +1,5 @@
 
 [Difficulty]
-	#Overrides all other config options for easy difficulty management
-	#This value is changed by the in-game config. It does nothing otherwise.
-	#Range: 0 ~ 4
-	Difficulty = 4
 	#Defines the minimum habitable temperature
 	#Range: -Infinity ~ Infinity
 	"Minimum Habitable Temperature" = 0.08
@@ -58,4 +54,10 @@
 	"Grace Period Length" = 6000
 	#Enables the grace period
 	"Grace Period Enabled" = false
+
+#DO NOT EDIT THE SETTINGS IN THIS SECTION
+[Builtin]
+	#Range: 0 ~ 4
+	Difficulty = 2
+	Version = "2.3"
 

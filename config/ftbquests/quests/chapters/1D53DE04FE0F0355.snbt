@@ -143,7 +143,7 @@
 				type: "item"
 			}]
 			title: "科技之基"
-			x: -1.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
@@ -177,7 +177,7 @@
 				type: "item"
 			}]
 			title: "魔法之始"
-			x: 1.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -361,6 +361,75 @@
 			title: "关于开服……"
 			x: 0.0d
 			y: -4.5d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"这是2.0版本-&c混沌理论&r-特有的任务，也是对于本整合包概率系统的一个简要说明。"
+				""
+				"基于“真实性设定”，本整合包中&b部分工业和魔法配方存在成功几率&r，典型代表分别为初期的&a矿物磨粉（50%）&r和末期的&d创造锭炼金（50%）&r。当然，具有概率的配方远不止这两类。"
+				""
+				"如果一个有几率成功的物品&c合成失败&r了，那么会&a返还随机材料&r，但这不包括反复使用的物品的自合成（如白雏菊搅拌批量产出活木活石有几率损耗）。"
+				""
+				"有关于概率&9详细机制&r的说明，请翻到下一页。"
+				"{@pagebreak}"
+				"事实上概率系统是&c非常简单粗暴的&r，没有保底，没有限定，一切都&a只会按照配方显示的数值进行&r。"
+				""
+				"然而正如&b小学数学教科书&r上所说，即使抛硬币的正反面概率分别近似于50%，两次抛硬币的结果&c不能保证必然是一正一反&r，本整合包的合成同理。也就是&b在1%（白雏菊搅拌）或5%（炼钢模板）的损失率&r下，你的物品&c仍然可能快速损毁&r，对于此类情况我们&9概不负责&r。"
+				""
+				"当然我们允许合理的情绪发泄，比如&d80%成功率的构件九个碎了八个&r，那么我们欢迎你进入交流群进行吐槽，大概原理是&l&e“有什么不开心的说出来让大家开心一下”&r&r。"
+				""
+				"最后，祝各位合成的时候都有&2更好的运气&r。"
+			]
+			icon: "createdeco:decal_fire_diamond"
+			id: "0D3974B56B1C5AEF"
+			rewards: [{
+				id: "56F374A581A55D38"
+				item: "botania:cosmetic_four_leaf_clover"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "欧皇还是非酋？"
+			tasks: [{
+				id: "286C4060341D903A"
+				title: "混沌理论与概率论"
+				type: "checkmark"
+			}]
+			x: -0.75d
+			y: 0.75d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"本整合包使用的字体为开源像素字体“融合像素字体”。"
+				"如果感到不习惯，可以关闭ModernUI模组的字体优化，便可以切换为原版字体。&4但请注意，原版字体的渲染较为低效，并且可能有一定的bug。&r（当然，您也可以使用自己的字体包）"
+				"具体步骤为：按&eCtrl+K&r打开ModernUI的控制台，找到&2偏好设置-扩展-现代化文本引擎&r选项并关闭"
+			]
+			icon: {
+				Count: 1
+				id: "blue_skies:alchemy_scroll"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7FA79EF7DEBAB201"
+			rewards: [{
+				id: "468A817B9F18EB47"
+				item: "minecraft:writable_book"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "不适应字体的请看这里"
+			tasks: [{
+				id: "0D17B149172E240D"
+				title: "豪德"
+				type: "checkmark"
+			}]
+			title: "关于字体"
+			x: 0.75d
+			y: 0.75d
 		}
 	]
 	subtitle: ["Ahead of Everything Else"]

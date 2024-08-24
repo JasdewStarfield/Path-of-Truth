@@ -63,6 +63,13 @@ ServerEvents.recipes(event => {
     '#forge:workbench'
   )
 
+  //任意末影珍珠合成原版末影珍珠
+  event.shapeless(Item.of('minecraft:ender_pearl',1),
+        [
+            '#forge:ender_pearls'
+        ]
+  )
+
   //下面是一些重复配方的移除
   event.replaceInput(
     {id:'bucketlib:farmersdelight/wheat_dough_from_water'},
@@ -72,5 +79,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'beautify:rope' })
   event.remove({ id: 'tfmg:crushing/saltpeter' })
   event.remove({ id: 'tfmg:mixing/gun_powder' })
+  event.remove({ id:"tfmg:filling/liquid_asphalt_bucket" })
+  event.remove({ id:"everycomp:c/botania/livingwood_slab_from_livingwood_planks_stonecutting" })
+  event.remove({ id:"everycomp:c/botania/livingwood_stairs_from_livingwood_planks_stonecutting" })
 
 })
