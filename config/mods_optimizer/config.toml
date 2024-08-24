@@ -321,6 +321,10 @@ wynntils = "client"
 yungsmenutweaks = "client"
 zmedievalmusic = "client"
 zoomify = "client"
+modernui = "client"
+jecharacters = "client"
+imblocker = "client"
+musicmanager = "client"
 
 [Debug]
 debugForceSide = "default"
