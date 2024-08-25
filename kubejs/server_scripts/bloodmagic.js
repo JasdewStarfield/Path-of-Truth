@@ -61,6 +61,88 @@ ServerEvents.recipes(event => {
         "ticks": 200,
         "upgradeLevel": 1
     })
+    //碎铁矿兑换炙铁碎矿
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "item": 'irons_spellbooks:arcane_essence'
+            },
+            {
+                "item": 'create:crushed_raw_iron'
+            },
+            {
+                "item": 'minecraft:blaze_powder'
+            }
+        ],
+        "output": {
+          "item": 'create_blue_skies_compat:crushed_horizonite_ore'
+        },
+        "syphon": 200,
+        "ticks": 10,
+        "upgradeLevel": 2
+    })
+    //榴石，月长和透辉的兑换
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "item": 'botania:mana_powder'
+            },
+            {
+                "item": 'blue_skies:moonstone'
+            },
+            {
+                "item": 'minecraft:blackstone'
+            }
+        ],
+        "output": {
+          "item": 'blue_skies:everdawn_moonstone_ore'
+        },
+        "syphon": 200,
+        "ticks": 10,
+        "upgradeLevel": 1
+    })
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "item": 'botania:mana_powder'
+            },
+            {
+                "item": 'blue_skies:pyrope_gem'
+            },
+            {
+                "item": 'minecraft:blackstone'
+            }
+        ],
+        "output": {
+          "item": 'blue_skies:everdawn_pyrope_ore'
+        },
+        "syphon": 200,
+        "ticks": 10,
+        "upgradeLevel": 1
+    })
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "item": 'botania:mana_powder'
+            },
+            {
+                "item": 'blue_skies:diopside_gem'
+            },
+            {
+                "item": 'minecraft:blackstone'
+            }
+        ],
+        "output": {
+          "item": 'blue_skies:everdawn_diopside_ore'
+        },
+        "syphon": 500,
+        "ticks": 10,
+        "upgradeLevel": 2
+    })
     //史莱姆球兑换末影之眼
     event.custom({
         "type": "bloodmagic:alchemytable",
@@ -454,6 +536,20 @@ ServerEvents.recipes(event => {
         },
         "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
     })
+    //海潮蛤-鹦鹉螺壳转化
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "tag": 'create:stone_types/limestone'
+        },
+        "baseinput": {
+            "item": 'collectorsreap:clam'
+        },
+        "output": {
+            "item": 'minecraft:nautilus_shell'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/watersigil.png"
+    })
     //点铁成金
     event.custom({
         "type": "bloodmagic:array",
@@ -831,6 +927,128 @@ ServerEvents.recipes(event => {
     //矿物处理（其他矿脉适配）
     //感谢工业完成的碎矿，这样魔法就可以直接接入了
     //切削油——
+    //榴石
+    event.custom({
+        "type": "bloodmagic:arc",
+        //可能存在的追加输出（可以不写）
+        "addedoutput": [
+            {
+                "type": {
+                    "item": 'blue_skies:pyrope_gem'
+                },
+                "chance": 0.5,
+                "mainchance": 0.0
+            },
+            {
+                "type": {
+                    "item": 'blue_skies:pyrope_gem'
+                },
+                "chance": 0.5,
+                "mainchance": 0.0
+            }
+        ],
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "tag": 'blue_skies:ores/pyrope'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 1,//输出数量（可以不写）
+            "item": 'blue_skies:pyrope_gem'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/explosive'
+        }
+    })
+    //月长石
+    event.custom({
+        "type": "bloodmagic:arc",
+        //可能存在的追加输出（可以不写）
+        "addedoutput": [
+            {
+                "type": {
+                    "count" : 2,
+                    "item": 'blue_skies:moonstone_shard'
+                },
+                "chance": 0.5,
+                "mainchance": 0.0
+            },
+            {
+                "type": {
+                    "count" : 2,
+                    "item": 'blue_skies:moonstone_shard'
+                },
+                "chance": 0.5,
+                "mainchance": 0.0
+            }
+        ],
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "tag": 'blue_skies:ores/moonstone'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 6,//输出数量（可以不写）
+            "item": 'blue_skies:moonstone_shard'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/explosive'
+        }
+    })
+    //透辉石
+    event.custom({
+        "type": "bloodmagic:arc",
+        //可能存在的追加输出（可以不写）
+        "addedoutput": [
+            {
+                "type": {
+                    "item": 'blue_skies:diopside_gem'
+                },
+                "chance": 0.5,
+                "mainchance": 0.0
+            },
+            {
+                "type": {
+                    "item": 'blue_skies:diopside_gem'
+                },
+                "chance": 0.5,
+                "mainchance": 0.0
+            }
+        ],
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "tag": 'blue_skies:ores/diopside'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 1,//输出数量（可以不写）
+            "item": 'blue_skies:diopside_gem'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/explosive'
+        }
+    })
     //霜钢
     event.custom({
         "type": "bloodmagic:arc",

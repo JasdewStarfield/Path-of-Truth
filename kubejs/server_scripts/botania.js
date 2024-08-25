@@ -155,6 +155,21 @@ ServerEvents.recipes(event => {
     //瞻远者蛋转化瞻远者之臂
     event.recipes.botania.mana_infusion('alexsmobs:farseer_arm', 'alexsmobs:spawn_egg_farseer', 50000,'botania:mana_bomb')
 
+    //铁矿转化天闪石矿和镰鼬铁矿
+    event.recipes.botania.mana_infusion('create_blue_skies_compat:crushed_aquite_ore', 'create:crushed_raw_iron', 100, 'blue_skies:moonstone_lantern')
+    event.recipes.botania.mana_infusion('create_blue_skies_compat:crushed_ventium_ore', 'create:crushed_raw_iron', 100, 'blue_skies:brumble_lantern')
+    //以及为此追加的月长石灯合成方法
+    event.shaped(Item.of('blue_skies:moonstone_lantern',1),
+        [' A ',
+        'ABA',
+        ' A '],
+        {
+            A:'blue_skies:turquoise_stonebrick',
+            B:'blue_skies:moonstone_block'
+        }
+    )
+
+
     //末地空气转化扼塞锭和铁锭
     event.shapeless(Item.of('minecraft:iron_ingot',1),
         [

@@ -231,24 +231,30 @@
 		{
 			dependencies: ["636824522AD771D1"]
 			description: [
-				"通过紫水晶和炼金矩阵，你可以将铁转化为缪铁，将钻石转化为绛紫晶！"
-				"当然，不能逆向——这又不是紫薯精的手套（"
+				"通过一些魔法手段，你可以复制或者催生矿石。"
+				"不同的矿石催生方法不同，有的&c需要炼金台进行炼制&r，有的需要&b通过炼金矩阵转化&r，还有的需要&a通过魔力池催化&r。"
+				"如果觉得材料不够用，工业的大型挖矿机器又暂时做不出来，不妨看看魔法手段？"
 			]
 			id: "31E9607DF423C550"
-			subtitle: "紫色的力量"
+			subtitle: "魔法也是生产力"
 			tasks: [
 				{
-					id: "181918A98B5916C4"
+					id: "2BDD9F6B572B5A7B"
+					item: "blue_skies:pyrope_gem"
+					type: "item"
+				}
+				{
+					id: "7518E6F3ABD93C49"
 					item: "blue_skies:falsite_ingot"
 					type: "item"
 				}
 				{
-					id: "3D657FAEE1EF3397"
-					item: "blue_skies:charoite"
+					id: "7AE872C213621A9B"
+					item: "create_blue_skies_compat:crushed_ventium_ore"
 					type: "item"
 				}
 			]
-			title: "紫色激情"
+			title: "矿物炼成"
 			x: -1.5d
 			y: 0.0d
 		}
@@ -406,7 +412,7 @@
 				"钓鱼系统有一定的变化，你需要在&a不同的位置&r（包括但不限于群系，深度，甚至维度）钓鱼来获得所有的鱼！"
 				"有些鱼拥有&e&l传奇&r&r的功效……"
 				"但你首先需要&6渔夫工坊&r和&5锻造台&r来升级和修改你的鱼竿）"
-				"*由于没有暖水，我们魔改了战利品表，你可以在冷水群系内钓到热带鱼，并且&b没有鹦鹉螺壳！&r你需要&1探索海底神殿&r或&c击杀溺尸&r来获得这一物品！）"
+				"*由于没有暖水，我们魔改了战利品表，你可以在冷水群系内钓到热带鱼，并且&b没有鹦鹉螺壳！&r你需要&1探索海底神殿&r或&c通过炼金手段&r来获得贝壳！）"
 				"有关于钓鱼机制的变更，请查看下一页。"
 				"{@pagebreak}"
 				"现在的钓鱼分为了三个部分：&b抛竿&r，&c拉钩&r，&a提钩&r。"
@@ -419,6 +425,22 @@
 			hide_details_until_startable: true
 			icon: "tide:shooting_starfish"
 			id: "25D2D0B2CB184527"
+			rewards: [{
+				id: "3B767198DEC47050"
+				item: {
+					Count: 1
+					id: "tide:crystal_fishing_rod"
+					tag: {
+						Damage: 0
+						modifier: {
+							bobber: 14
+							hook: 0
+							line: 0
+						}
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "组装神杆！"
 			tasks: [
 				{
