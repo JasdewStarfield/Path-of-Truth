@@ -24,7 +24,7 @@ config/sodium-extra-options.json
 /XaeroWaypoints
 /XaeroWorldMap
 options.txt
-/XaeroWaypoints_BACKUP032021
+/XaeroWaypoints_BACKUP*
 config/enchdesc.json
 config/jade/sort-order.json
 config/xaerominimap_entities.json
@@ -93,3 +93,4 @@ kubejs/config/probejs.json
 /ESM
 /config/nucleus
 config/jei/jei-client.ini
+/xaero
