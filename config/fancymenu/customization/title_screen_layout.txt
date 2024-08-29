@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = title_screen
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1717417746965
+  last_edited_time = 1724635607810
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:55a5762b-2587-4356-bf2a-ac262a77ca32-1717417737278] = [groups:][instances:]
+  [loading_requirement_container_meta:c10a615e-1366-4407-880e-ba2c524e6a80-1724635530689] = [groups:][instances:]
 }
 
 customization {
@@ -98,7 +98,7 @@ element {
 
 element {
   interactable = true
-  source = Path of Truth V2.1b%n%欢迎你，{"placeholder":"playername"}！
+  source = Path of Truth V2.2%n%欢迎你，{"placeholder":"playername"}！
   source_mode = direct
   shadow = true
   scale = 1.0
