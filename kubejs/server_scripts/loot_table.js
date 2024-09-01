@@ -4,6 +4,7 @@ LootJS.modifiers((event) => {
     event.addLootTypeModifier(LootType.CHEST).replaceLoot("iron_block", "raw_iron_block", true)
     event.addLootTypeModifier(LootType.CHEST).replaceLoot("iron_ingot", "raw_iron", true)
     event.addLootTypeModifier(LootType.CHEST).replaceLoot("iron_nugget", "minecraft:copper_nugget", true)
+    event.addLootTypeModifier(LootType.CHEST).replaceLoot("netherite_ingot", "ancient_debris", true)
     event.addLootTypeModifier(LootType.ENTITY).replaceLoot("iron_ingot", "raw_iron", true)
     event.addLootTableModifier(/.*/).removeLoot("netherite_ingot")
     event.addBlockLootModifier("#minecraft:replaceable_by_trees").removeLoot("minecraft:wheat_seeds")
