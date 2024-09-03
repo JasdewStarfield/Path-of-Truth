@@ -1,0 +1,11 @@
+{
+    "title": {
+      "text": "传送的方法",
+      "bold": true,
+      "underlined": true,
+      "color": "yellow"
+    },
+    "tip": {
+      "text": "没有传送石碑和/back，但是铁魔法和血魔法有传送方式。请尽量不要开创造逃课。"
+    }
+}
