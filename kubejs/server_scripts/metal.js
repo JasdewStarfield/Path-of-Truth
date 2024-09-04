@@ -340,4 +340,21 @@ ServerEvents.recipes(event => {
             B: '#forge:nuggets/bronze'
         }
     )
+
+    //雪帽熔炉配方修改
+    event.remove({id: "blue_skies:snowcap_oven"})
+    event.shaped(
+        Item.of('blue_skies:snowcap_oven', 1),
+        [ 
+        'AAA',
+        'CDC',
+        'BCB'
+        ],
+        {
+            A: 'blue_skies:snowcap_mushroom_block',
+            B: 'blue_skies:turquoise_cobblestone',
+            C: 'undergarden:raw_froststeel',
+            D: 'minecraft:furnace'
+        }
+    )
 })
