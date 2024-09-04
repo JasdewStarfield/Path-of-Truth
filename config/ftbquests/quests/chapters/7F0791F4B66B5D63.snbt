@@ -231,10 +231,11 @@
 		{
 			dependencies: ["636824522AD771D1"]
 			description: [
-				"通过一些魔法手段，你可以复制或者催生矿石。"
+				"通过一些魔法手段，你可以复制或者催生蔚蓝浩空的矿石。"
 				"不同的矿石催生方法不同，有的&c需要炼金台进行炼制&r，有的需要&b通过炼金矩阵转化&r，还有的需要&a通过魔力池催化&r。"
 				"如果觉得材料不够用，工业的大型挖矿机器又暂时做不出来，不妨看看魔法手段？"
 			]
+			icon: "bloodmagic:alchemicalreactionchamber"
 			id: "31E9607DF423C550"
 			subtitle: "魔法也是生产力"
 			tasks: [
@@ -480,6 +481,7 @@
 				"（注：指南针的定位逻辑是在附近一定范围内搜索。因此，如果这个范围内没有的话，也会显示找不到目标！）"
 			]
 			hide: true
+			icon: "minecraft:lodestone"
 			id: "78A026D295CF4593"
 			subtitle: "感到迷茫吗？"
 			tasks: [

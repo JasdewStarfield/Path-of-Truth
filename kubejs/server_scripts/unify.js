@@ -70,6 +70,10 @@ ServerEvents.recipes(event => {
         ]
   )
 
+  //补充：暗影精华桶和光辉混合物桶均可以通过分液返还流体
+  event.recipes.create.emptying([Fluid.of("createchromaticreturn:flowing_refined_mixture",1000), 'bucket'], 'createchromaticreturn:refined_mixture_bucket')
+  event.recipes.create.emptying([Fluid.of("createchromaticreturn:flowing_shadow_essence",1000), 'bucket'], 'createchromaticreturn:shadow_essence_bucket')
+
   //下面是一些重复配方的移除
   event.replaceInput(
     {id:'bucketlib:farmersdelight/wheat_dough_from_water'},

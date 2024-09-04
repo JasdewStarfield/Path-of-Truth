@@ -591,6 +591,7 @@
 		{
 			dependencies: ["40840BF9F23BC8A1"]
 			description: ["用泥胚获得铁……就是麻烦点，而且你还是逃不过高炉这一步（"]
+			icon: "create:crushed_raw_iron"
 			id: "0E7C15008078BC90"
 			rewards: [{
 				count: 2
@@ -657,7 +658,7 @@
 		{
 			dependencies: ["1D0D60C89EA75663"]
 			description: [
-				"祛魔、复印附魔书、经验流体化，甚至打造出超越原有等级的附魔……有了附魔工业，你能做到很多事。"
+				"祛魔、复印附魔书、经验流体化，甚至打造出超越原有等级上限的附魔……有了附魔工业，你能做到很多事。"
 				"使用思索功能了解更多）"
 			]
 			icon: "create_enchantment_industry:enchanting_guide"
