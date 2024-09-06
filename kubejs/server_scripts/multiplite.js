@@ -1,9 +1,51 @@
+ServerEvents.loaded(e => {
+    global.worldSeed = Utils.server.getLevel('minecraft:overworld').seed
+    Utils.server.runCommandSilent('reload')
+})
+
 ServerEvents.recipes(event => {
-    let seed = new Date().getFullYear()
+    let seed = global.worldSeed
+    if (!seed) return 'wait for reload'
+    let filterWan = (r, c) => {
+        if (r == 4 || c == 4) return true
+        if (c % 8 == 0 && r < 4 == (c == 0)) return true
+        if (r % 8 == 0 && c < 4 == (r == 8)) return true
+    }
+
+    let filterByTemplate = tmpl => {
+        return (r, c) => tmpl[r][c] == 'x'
+    }
+
     let sudokus = [
         // [answer, hollowed]
-        GenSudoku(seed),
-        GenSudoku(-seed),
+        GenSudoku(
+            seed,
+            filterByTemplate([
+                '  xxxxx  ',
+                ' x  x  x ',
+                'x  xxx  x',
+                'x x x x x',
+                'xxxxxxxxx',
+                'x x x x x',
+                'x  xxx  x',
+                ' x  x  x ',
+                '  xxxxx  ',
+            ]),
+        ),
+        GenSudoku(
+            -seed,
+            filterByTemplate([
+                'xxx   xxx',
+                'xxx   xxx',
+                'xxx   xxx',
+                '   xxx   ',
+                '   xxx   ',
+                '   xxx   ',
+                'xxx   xxx',
+                'xxx   xxx',
+                'xxx   xxx',
+            ]),
+        ),
     ]
     let materialMap = {
         '1': 'createchromaticreturn:glowing_ingot',
