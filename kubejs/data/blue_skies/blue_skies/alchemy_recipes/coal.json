@@ -1,0 +1,10 @@
+{
+  "type": "blue_skies:transmute",
+  "blacklist": [
+    "tfmg:coal_coke",
+    "immersiveengineering:coal_coke"
+  ],
+  "tags": [
+    "minecraft:coals"
+  ]
+}

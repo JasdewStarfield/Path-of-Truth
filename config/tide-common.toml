@@ -1,5 +1,8 @@
 #Whether to give new players in a world the fishing journal when they spawn
 giveJournal = false
+#Set this to false to disable the fishing minigame.
+#Keep in mind that this will disable the functionality of minigame-related items (ex. the iron fishing hook)
+doMinigame = true
 
 #+++ Fishing Journal Configs +++ 
 #You can add custom fish and pages to the "custom" slots.

@@ -1,0 +1,6 @@
+{
+  "count": 1,
+  "fuel_amount": 20,
+  "input": "kubejs:crushed_froststeel_ore",
+  "output": "undergarden:froststeel_ingot"
+}

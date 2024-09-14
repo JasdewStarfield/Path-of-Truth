@@ -103,6 +103,13 @@
 				"然而经过作者实测，这个几率不高——所以我们提供了另一种方法）"
 				"当然，这个能力倒是很适合拿来探索地图。"
 			]
+			icon: {
+				Count: 1
+				id: "alexsmobs:shattered_dimensional_carver"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "56D72743B3F704D2"
 			rewards: [{
 				id: "1B4A414519E38DA0"

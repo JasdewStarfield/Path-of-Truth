@@ -212,7 +212,10 @@
 		}
 		{
 			dependencies: ["59C668DE4E479AD9"]
-			description: ["现在，只要你拥有某件物品，那么你将永远不再缺乏它。"]
+			description: [
+				"现在，只要你拥有某件物品，那么你将永远不再缺乏它。"
+				"使用方法与一般的多媒体火花一致。"
+			]
 			hide: true
 			id: "00BBB61C39207A0F"
 			subtitle: "唯一即永恒。"

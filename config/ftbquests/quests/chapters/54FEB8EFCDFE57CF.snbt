@@ -85,26 +85,17 @@
 		{
 			dependencies: ["0E5C63B3D4891362"]
 			description: [
-				"深暗之园独有的材料，也是T3科技与魔法的必需品（"
+				"深暗之园常见而独有的材料，也是T3科技与魔法的必需品（"
 				"多整点（确信），你会喜欢上它的。"
-				""
-				"注意：霜钢矿只能在寒霜之地找到。善用你的自然指南针。"
 			]
 			id: "52A63601F3E154C8"
 			subtitle: "基本材料"
-			tasks: [
-				{
-					id: "5EDA0A2EF656D716"
-					item: "undergarden:raw_cloggrum"
-					type: "item"
-				}
-				{
-					id: "1CC1C579FF2B4E67"
-					item: "undergarden:raw_froststeel"
-					type: "item"
-				}
-			]
-			title: "扼腕叹息，霜染深暗"
+			tasks: [{
+				id: "5EDA0A2EF656D716"
+				item: "undergarden:raw_cloggrum"
+				type: "item"
+			}]
+			title: "扼腕叹息"
 			x: 0.0d
 			y: 2.0d
 		}
@@ -170,7 +161,7 @@
 		{
 			dependencies: ["52A63601F3E154C8"]
 			description: [
-				"正如你所见，如果你找到合适的模板，这种神秘的金属锭可以升级你的装备。"
+				"击杀深暗之园遗迹中的遗忆守卫就可以掉落这种金属。正如你所见，如果你找到合适的模板，这种神秘的金属锭可以升级你的装备。"
 				"同时，一些特殊的魔法和工业配方也需要它。"
 				"目前它可以被转换为钻石，而你通过下界合金可以兑换它——当然这个过程肯定是有损耗的，但这不重要。"
 			]
@@ -183,20 +174,6 @@
 			}]
 			title: "另一种下界合金"
 			x: 2.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["0E5C63B3D4891362"]
-			description: ["它可以用来砸一些有趣的小玩意，也许你可以攒一点？"]
-			id: "4D18A21D81997FAF"
-			subtitle: "喔，碍事的东西"
-			tasks: [{
-				id: "14021EB3E7813A61"
-				item: "undergarden:depthrock_pebble"
-				type: "item"
-			}]
-			title: "小石头"
-			x: -2.0d
 			y: 2.0d
 		}
 		{
@@ -215,6 +192,31 @@
 			title: "BOOM"
 			x: 2.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["0E5C63B3D4891362"]
+			description: [
+				"霜钢矿只能在深暗之园的寒霜之地群系找到。因此，请善用你的自然指南针。"
+				"这种金属特殊的性质使你不能用常规的方式冶炼它。相反的是，你需要使其进一步降温才能从粗矿中萃取出纯净的霜钢。来自永昼之地的雪帽菇熔炉可以办到这一点（注意粗霜钢是放在燃料的位置的，释放热量后产生霜钢锭。违反了热力学第二定律，但这就是雪帽菇熔炉的原理）。"
+				"同理，钢粉也可以像这样冷冻为霜钢粉。这就是一种量产的方式了。"
+			]
+			icon: "undergarden:raw_froststeel"
+			id: "626F9C80F646AD96"
+			subtitle: "霜染深暗"
+			tasks: [
+				{
+					id: "1184DCB63511C140"
+					item: "undergarden:raw_froststeel"
+					type: "item"
+				}
+				{
+					id: "14881ADE8D1F01DE"
+					item: "blue_skies:snowcap_oven"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 2.0d
 		}
 	]
 	subtitle: ["The Void and Beneath"]

@@ -191,6 +191,43 @@ ServerEvents.recipes(event => {
     })
     event.smelting("#blue_skies:ingots/"+material, "#forge:dusts/"+material)
   }
+  let blueSkiesIngotNoSmelting = (material) => {
+    event.custom({
+      "type":"immersiveengineering:crusher",
+      "energy":3000,
+      "input":{"tag":"blue_skies:ingots/"+material},
+      "result":{"base_ingredient":{"tag":"forge:dusts/"+material},"count":1},
+      "secondaries":[]
+    })
+    event.custom({
+      "type":"immersiveengineering:crusher",
+      "energy":6000,
+      "input":{"item":"create_blue_skies_compat:crushed_"+material+"_ore"},
+      "result":{"base_ingredient":{"tag":"forge:dusts/"+material},"count":2},
+      "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/"+material}}]
+    })
+    event.custom({
+      "type":"immersiveengineering:crusher",
+      "energy":6000,
+      "input":{"tag":"blue_skies:raw_materials/"+material},
+      "result":{"tag":"forge:dusts/"+material},
+      "secondaries":[{"chance":0.33333334,"output":{"tag":"forge:dusts/"+material}}]
+    })
+    event.custom({
+      "type":"immersiveengineering:crusher",
+      "energy":54000,
+      "input":{"tag":"blue_skies:storage_blocks/raw_"+material},
+      "result":{"base_ingredient":{"tag":"forge:dusts/"+material},"count":12},
+      "secondaries":[]
+    })
+    event.custom({
+      "type":"immersiveengineering:crusher",
+      "energy":6000,
+      "input":{"tag":"blue_skies:ores/"+material},
+      "result":{"base_ingredient":{"tag":"forge:dusts/"+material},"count":2},
+      "secondaries":[]
+    })
+  }
   let blueSkiesGem = (material) => {
     event.custom({
       "type":"immersiveengineering:crusher",
@@ -232,13 +269,40 @@ ServerEvents.recipes(event => {
   //镰鼬铁
   blueSkiesIngot("ventium")
   //炙铁
-  blueSkiesIngot("horizonite")
+  blueSkiesIngotNoSmelting("horizonite")
+  event.remove([{output:"blue_skies:horizonite_ingot", type:"minecraft:smelting"}])
+  event.remove([{output:"blue_skies:horizonite_ingot", type:"minecraft:blasting"}])
+  event.custom({
+    "type":"immersiveengineering:blast_furnace",
+    "input":{"tag":"blue_skies:raw_materials/horizonite"},
+    "result":{"item":"blue_skies:horizonite_ingot"},
+    "slag":{"tag":"forge:slag"},
+    "time":800
+  })
+  event.custom({
+      "type":"immersiveengineering:blast_furnace",
+      "input":{"item":"create_blue_skies_compat:crushed_horizonite_ore"},
+      "result":{"item":"blue_skies:horizonite_ingot"},
+      "slag":{"tag":"forge:slag"},
+      "time":800
+  })
+  event.custom({
+      "type":"immersiveengineering:blast_furnace",
+      "input":{"tag":"forge:dusts/horizonite"},
+      "result":{"item":"blue_skies:horizonite_ingot"},
+      "slag":{"tag":"forge:slag"},
+      "time":800
+  })
   //缪铁
   blueSkiesIngot("falsite")
   //绛紫晶
   blueSkiesGem("charoite")
   //水蓝石
   blueSkiesGem("aquite")
+
+  //单独补充一下榴石矿的粉碎配方
+  event.recipes.create.crushing(["blue_skies:pyrope_gem",Item.of("blue_skies:pyrope_gem").withChance(0.75),Item.of("create:experience_nugget").withChance(0.75),Item.of("blue_skies:turquoise_cobblestone").withChance(0.12)], "blue_skies:everbright_pyrope_ore")
+  event.recipes.create.crushing(["blue_skies:pyrope_gem",Item.of("blue_skies:pyrope_gem").withChance(0.75),Item.of("create:experience_nugget").withChance(0.75),Item.of("blue_skies:lunar_cobblestone").withChance(0.12)], "blue_skies:everdawn_pyrope_ore")
 
   //深暗之园适配
   event.recipes.create.pressing('#forge:plates/forgotten_metal', '#forge:ingots/forgotten_metal')
@@ -286,8 +350,54 @@ ServerEvents.recipes(event => {
     event.recipes.create.crushing(["9x kubejs:crushed_"+material+"_ore",Item.of("create:experience_nugget", 9).withChance(0.75)], '#forge:storage_blocks/raw_'+material)
     event.recipes.create.crushing(["kubejs:crushed_"+material+"_ore",Item.of("kubejs:crushed_"+material+"_ore").withChance(0.75),Item.of("create:experience_nugget").withChance(0.75)], '#forge:ores/'+material)
   }
+  let UndergardenNoSmelting = (material) => {
+    //碎矿相关
+    event.custom({
+      "type":"immersiveengineering:crusher",
+      "energy":3000,
+      "input":{"tag":"forge:ingots/"+material},
+      "result":{"base_ingredient":{"tag":"forge:dusts/"+material},"count":1},
+      "secondaries":[]
+    })
+    event.custom({
+      "type":"immersiveengineering:crusher",
+      "energy":6000,
+      "input":{"item":"kubejs:crushed_"+material+"_ore"},
+      "result":{"base_ingredient":{"tag":"forge:dusts/"+material},"count":2},
+      "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/"+material}}]
+    })
+    event.custom({
+      "type":"immersiveengineering:crusher",
+      "energy":6000,
+      "input":{"tag":"forge:raw_materials/"+material},
+      "result":{"tag":"forge:dusts/"+material},
+      "secondaries":[{"chance":0.33333334,"output":{"tag":"forge:dusts/"+material}}]
+    })
+    event.custom({
+      "type":"immersiveengineering:crusher",
+      "energy":54000,
+      "input":{"tag":"forge:storage_blocks/raw_"+material},
+      "result":{"base_ingredient":{"tag":"forge:dusts/"+material},"count":12},
+      "secondaries":[]
+    })
+    event.custom({
+      "type":"immersiveengineering:crusher",
+      "energy":6000,
+      "input":{"tag":"forge:ores/"+material},
+      "result":{"base_ingredient":{"tag":"forge:dusts/"+material},"count":2},
+      "secondaries":[]
+    })
+    event.recipes.create.pressing('#forge:plates/'+material, '#forge:ingots/'+material)
+    event.recipes.create.crushing(["kubejs:crushed_"+material+"_ore",Item.of("create:experience_nugget").withChance(0.75)], '#forge:raw_materials/'+material)
+    event.recipes.create.crushing(["9x kubejs:crushed_"+material+"_ore",Item.of("create:experience_nugget", 9).withChance(0.75)], '#forge:storage_blocks/raw_'+material)
+    event.recipes.create.crushing(["kubejs:crushed_"+material+"_ore",Item.of("kubejs:crushed_"+material+"_ore").withChance(0.75),Item.of("create:experience_nugget").withChance(0.75)], '#forge:ores/'+material)
+  }
   //霜钢
-  Undergarden("froststeel")
+  UndergardenNoSmelting("froststeel")
+  event.remove({id:"undergarden:smelt_raw_froststeel"})
+  event.remove({id:"undergarden:smelt_shiverstone_froststeel_ore"})
+  event.remove({id:"undergarden:blast_raw_froststeel"})
+  event.remove({id:"undergarden:blast_shiverstone_froststeel_ore"})
   //扼塞锭
   Undergarden("cloggrum")
   //御腐水晶

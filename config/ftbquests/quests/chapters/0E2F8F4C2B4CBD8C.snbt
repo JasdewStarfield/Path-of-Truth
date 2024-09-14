@@ -1574,7 +1574,7 @@
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
-			description: ["那么，你贩剑吗？"]
+			description: ["哦天啊，制杖并贩剑（确信"]
 			id: "722556B2244FD56A"
 			rewards: [{
 				id: "104622516C821057"
@@ -1619,7 +1619,7 @@
 				type: "item"
 			}]
 			secret: true
-			subtitle: "收集铁魔法所有的战斗用魔杖！"
+			subtitle: "收集铁魔法所有的战斗用魔杖和剑！"
 			tasks: [
 				{
 					id: "69ED8C8737277DAA"
@@ -1646,8 +1646,74 @@
 					item: "irons_spellbooks:blood_staff"
 					type: "item"
 				}
+				{
+					id: "64C7726660EE4A38"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:keeper_flamberge"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "65F5F0A8BDF7595F"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:magehunter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4F76C6EEF38F51C6"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:spellbreaker"
+						tag: {
+							Damage: 0
+							ISB_Spells: {
+								data: [{
+									id: "irons_spellbooks:counterspell"
+									index: 0
+									level: 1
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7AA3F1E7E2ECD8F9"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:amethyst_rapier"
+						tag: {
+							Damage: 0
+							ISB_Spells: {
+								data: [{
+									id: "irons_spellbooks:echoing_strikes"
+									index: 0
+									level: 5
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
 			]
-			title: "制杖"
+			title: "制杖与贩剑"
 			x: 0.0d
 			y: 6.0d
 		}

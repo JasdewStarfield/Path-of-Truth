@@ -1,0 +1,6 @@
+{
+  "count": 1,
+  "fuel_amount": 20,
+  "input": "undergarden:raw_froststeel",
+  "output": "undergarden:froststeel_ingot"
+}
