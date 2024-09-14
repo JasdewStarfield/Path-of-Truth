@@ -325,6 +325,7 @@ modernui = "client"
 jecharacters = "client"
 imblocker = "client"
 musicmanager = "client"
+createdynlight = "server"
 
 [Debug]
 debugForceSide = "default"
