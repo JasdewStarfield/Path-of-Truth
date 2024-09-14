@@ -25,6 +25,7 @@ ServerEvents.recipes(event => {
 
     //按分类移除
     event.remove({type:'immersiveengineering:alloy'})
+    event.remove({type:'immersiveengineering:sawmill'})
 
     //移除ie初级动能发电配方
     event.remove({id:'immersiveengineering:crafting/windmill_blade'})

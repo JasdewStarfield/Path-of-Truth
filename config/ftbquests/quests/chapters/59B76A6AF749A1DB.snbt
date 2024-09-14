@@ -1188,6 +1188,7 @@
 		}
 		{
 			dependencies: ["22631A52B9D81A49"]
+			description: ["提示：你需要在蓄电池背包内放入某种规格的蓄电池后它才能被正常充电（使用工程师装配台，具体请参照工程师手册）。"]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -1331,7 +1332,7 @@
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
-			description: ["相比于另一种（你后面会用到的）高级的电路板，木头板子就容易多了，你只需要手动把石英往木头上插）"]
+			description: ["相比于另一种（你后面会用到的）高级的电路板，木头板子就容易多了，你只需要（在工程师装配台上）手动把石英和芯片往木头上插）"]
 			hide: true
 			id: "671C17CCA1D5FA78"
 			subtitle: "简单的小东西"
@@ -1367,11 +1368,18 @@
 			]
 			hide: true
 			id: "786D410103015183"
-			rewards: [{
-				id: "7698D23FD44BEC0A"
-				item: "minecraft:blue_ice"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7698D23FD44BEC0A"
+					item: "minecraft:blue_ice"
+					type: "item"
+				}
+				{
+					id: "323917C4B90C2DD0"
+					item: "immersiveengineering:storage_uranium"
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			subtitle: "特殊发电装置"
 			tasks: [{

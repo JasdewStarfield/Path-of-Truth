@@ -49,6 +49,18 @@ ServerEvents.recipes(event => {
   //硫磺石就不是硫磺了吗？
   event.recipes.create.crushing(Item.of('tfmg:sulfur_dust').withChance(0.1), 'biomesoplenty:brimstone')
 
+  //由于移除了沉浸工程锯木机，补充锯末的获取配方
+  event.recipes.create.cutting(Item.of('immersiveengineering:dust_wood').withChance(0.5), 'stick')
+
+  //锯末面包……
+  event.shaped('2x bread', [ 
+    'BAB', 
+    'ABA' 
+  ], {
+    A: 'immersiveengineering:dust_wood',
+    B: 'wheat'
+  })
+
   //大哥我问你话呢？铝脚手架为啥是钢做的啊？？？
   event.replaceInput(
     {output:'tfmg:aluminum_scaffolding'},
