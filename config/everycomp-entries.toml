@@ -120,3 +120,8 @@
 		[entries.wood_type.vct]
 			crafting_table = true
 
+		[entries.wood_type.beautify]
+			trellis = true
+			blinds = true
+			picture_frame = true
+

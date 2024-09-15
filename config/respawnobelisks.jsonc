@@ -57,6 +57,8 @@
         UNLESS_CHARGED_OBELISK: Players can only choose if their obelisk does not have charge, or if their respawn point isn't an obelisk.
         IF_OBELISK: Players can only choose if their respawn point is an obelisk.
         UNLESS_OBELISK: Players can only choose if their respawn point is not an obelisk.
+        IF_FLAME: Players can only choose if their respawn point is a radiant flame.
+        UNLESS_FLAME: Players can only choose if their respawn point is not a radiant flame.
         */
         "secondarySpawnMode": "ALWAYS",
         // A list of block ids which players are not allowed to choose to respawn at, unless it is their main respawn point.
@@ -72,6 +74,8 @@
         UNLESS_CHARGED_OBELISK: Players can only choose if their obelisk does not have charge, or if their respawn point isn't an obelisk.
         IF_OBELISK: Players can only choose if their respawn point is an obelisk.
         UNLESS_OBELISK: Players can only choose if their respawn point is not an obelisk.
+        IF_FLAME: Players can only choose if their respawn point is a radiant flame.
+        UNLESS_FLAME: Players can only choose if their respawn point is not a radiant flame.
         */
         "worldSpawnMode": "ALWAYS"
     },
@@ -299,5 +303,21 @@
         WORLD_SPAWN_IF_IN_END: Teleports you to the world spawn if your set spawn is in the end, otherwise it will teleport to your spawn.
         */
         "endSpawnMode": "WORLD_SPAWN_IF_IN_END"
+    },
+    "radiantFlame": {
+        // How many ticks players have to wait before they can place another radiant flame.
+        "placementCooldown": 18000,
+        // How long radiant flames can exist before automatically despawning. Set to -1 to allow flames to exist forever.
+        "lifetime": 12000,
+        // How much radiance flames should lose each second.
+        "radianceReduction": 0.0,
+        // Multiplier for the radiance radiant lanterns take from obelisks. Ex. 0.5 would make it so that an obelisk with 100 radiance only fills the lantern up to 50.
+        "radianceEfficiency": 0.6,
+        // The maximum amount of radiance radiant lanterns can take from obelisks. (before the radiance efficiency multiplier is applied)
+        "maxLanternRadiance": 100.0,
+        // Whether radiant flames are bound to the player that placed them.
+        "playerBound": true,
+        // Whether radiant lanterns can be reused.
+        "allowMultipleUses": false
     }
 }
