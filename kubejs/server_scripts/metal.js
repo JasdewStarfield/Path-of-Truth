@@ -205,7 +205,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.pressing('#forge:plates/constantan', '#forge:ingots/constantan')
     //康铜代替铜
     event.replaceInput(
-        { input:"#forge:ingots/copper",mod:"immersiveengineering" },
+        { input:"#forge:ingots/copper",mod:"immersiveengineering",not:{output:"#forge:nuggets/copper"} },
         '#forge:ingots/copper',
         '#forge:ingots/constantan'
     )
