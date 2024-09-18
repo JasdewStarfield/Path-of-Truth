@@ -496,7 +496,11 @@
 				}
 				{
 					id: "48AFD8F75693E010"
-					item: "structurecompass:structure_compass"
+					item: {
+						Count: 1
+						id: "explorerscompass:explorerscompass"
+						tag: { }
+					}
 					type: "item"
 				}
 			]
