@@ -167,7 +167,7 @@
 					type: "dimension"
 				}
 				{
-					dimension: "blue_skies:everbright"
+					dimension: "blue_skies:everdawn"
 					icon: "blue_skies:everdawn_portal"
 					id: "6B3BCA57A1092DAE"
 					title: "访问恒晓之地"
