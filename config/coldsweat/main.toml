@@ -2,7 +2,7 @@
 [Difficulty]
 	#Defines the minimum habitable temperature
 	#Range: -Infinity ~ Infinity
-	"Minimum Habitable Temperature" = 0.08
+	"Minimum Habitable Temperature" = 0.24
 	#Defines the maximum habitable temperature
 	#Range: -Infinity ~ Infinity
 	"Maximum Habitable Temperature" = 1.6
