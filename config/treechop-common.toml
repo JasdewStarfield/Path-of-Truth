@@ -37,7 +37,7 @@
 [treeDetection]
 	#Maximum number of log blocks that can be detected to belong to one tree
 	#Range: 1 ~ 8096
-	maxTreeBlocks = 1024
+	maxTreeBlocks = 256
 	#Maximum number of leaves blocks that can destroyed when a tree is felled
 	#Range: 1 ~ 8096
 	maxLeavesBlocks = 1024
@@ -84,7 +84,7 @@
 	[chopCounting.logarithmic]
 		#Determines the number of chops required to fell a tree; higher values require more chops for bigger trees
 		#Range: 0.0 ~ 10000.0
-		a = 10.0
+		a = 80.0
 
 	#See https://github.com/hammertater/treechop/#linear
 	[chopCounting.linear]
