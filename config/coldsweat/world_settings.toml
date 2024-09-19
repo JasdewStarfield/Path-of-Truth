@@ -3,10 +3,10 @@
 #Common dimension IDs: minecraft:overworld, minecraft:the_nether, minecraft:the_end
 [Dimensions]
 	#Applies an offset to the world's temperature across an entire dimension
-	"Dimension Temperature Offsets" = [["minecraft:the_end", -0.1, "MC"], ["minecraft:the_nether", 0.6, "MC"]]
+	"Dimension Temperature Offsets" = [["minecraft:the_end", -0.1, "MC"]]
 	#Overrides existing dimension temperatures & offsets
 	#Also overrides temperatures of all biomes in the dimension
-	"Dimension Temperatures" = []
+	"Dimension Temperatures" = [["minecraft:overworld", 2, "C"], ["minecraft:the_nether", 39, "C"]]
 
 #Format: [["biome_1", tempLow, tempHigh, *units], ["biome_2", tempLow, tempHigh, *units]... etc]
 #temp-low: The temperature of the biome at midnight
