@@ -1,3 +1,7 @@
 [general]
 giveJournal = false
+holdToCast = true
 doMinigame = true
+showUnread = true
+minigameDifficulty = 1.0
+rodDurabilityMultiplier = 1.0
