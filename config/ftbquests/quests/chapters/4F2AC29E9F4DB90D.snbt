@@ -384,8 +384,8 @@
 		}
 		{
 			dependencies: [
-				"76BE4625CCF2F867"
 				"7F98F9F01F44BA28"
+				"0C1EAC9547A45268"
 			]
 			description: [
 				"虽然这东西叫电子管没错，但是很显然它不能充电，你也没进入电子时代）"
@@ -817,6 +817,34 @@
 			title: "无尽岩浆"
 			x: 2.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["76BE4625CCF2F867"]
+			description: [
+				"玫瑰石英是一种具有电学性质的材料，在受到特定刺激后会产生电压……然而，你并不能指望用这点微弱的电压来积累电力。"
+				"即便如此，它还是有用的。为了制造它，你需要一种叫红石酸的导电流体……。"
+				"当然了，制作完成后它也不能直接使用，还是要用砂纸打磨之后才能正常安装（"
+				""
+				"聪明的小伙伴可能已经发现了，红石酸加上一点点活石，就能用来量产红石粉……没事，你的电子元件不会介意这点掺进来的杂质的，对吧？"
+			]
+			icon: "create:polished_rose_quartz"
+			id: "0C1EAC9547A45268"
+			subtitle: "哦还没有"
+			tasks: [
+				{
+					id: "4A2263932B0BFE7C"
+					item: "immersiveengineering:redstone_acid_bucket"
+					type: "item"
+				}
+				{
+					id: "659533F07C4ECFB1"
+					item: "create:polished_rose_quartz"
+					type: "item"
+				}
+			]
+			title: "有电了……吗？"
+			x: -2.5d
+			y: 12.5d
 		}
 	]
 	subtitle: ["Exotic Alloys"]

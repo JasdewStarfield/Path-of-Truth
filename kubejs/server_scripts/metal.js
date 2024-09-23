@@ -269,9 +269,11 @@ ServerEvents.recipes(event => {
     //黏土出锌
     event.recipes.create.milling(Item.of('#forge:nuggets/zinc').withChance(0.2), 'clay_ball')
 
-    //泥巴出铁
-    event.recipes.create.crushing(Item.of('create:crushed_raw_iron').withChance(0.07), 'packed_mud')
+    //泥巴出铁、铝土
+    event.recipes.create.crushing([Item.of('create:crushed_raw_iron').withChance(0.14),Item.of('kubejs:crushed_raw_bauxite').withChance(0.07)], 'packed_mud')
 
+    //
+    
     //红石量产
     event.recipes.create.filling('redstone_block', [Fluid.of('immersiveengineering:redstone_acid',1000),'botania:livingrock'])
 
@@ -310,7 +312,7 @@ ServerEvents.recipes(event => {
         [ 
         'A A',
         'ABA',
-        'BAB'
+        'AAA'
         ],
         {
             A: 'botania:livingwood',
