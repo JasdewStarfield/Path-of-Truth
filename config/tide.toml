@@ -3,8 +3,10 @@ giveJournal = false
 holdToCast = true
 doMinigame = true
 showUnread = true
+showToasts = true
 minigameDifficulty = 1.0
 rodDurabilityMultiplier = 1.0
+defaultLineColor = false
 [worldgen]
 disableFishingBoat = false
 disableFishingHut = false
