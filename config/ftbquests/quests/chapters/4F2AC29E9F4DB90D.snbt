@@ -1,5 +1,5 @@
 {
-	autofocus_id: "0E7C15008078BC90"
+	autofocus_id: "11EC3A84F0C84E65"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "4F2AC29E9F4DB90D"
@@ -555,8 +555,9 @@
 		{
 			dependencies: ["11EC3A84F0C84E65"]
 			description: [
-				"获得铁之后，这四种常用（以及接下来会变得常用）的金属就可以实现量产了！（锌可能要晚一些，得等你出粉碎轮之后）"
-				"虽然搭建产线的过程可能比较累，但是全自动还是值得的！"
+				"获得铁之后，四种常用（以及接下来会变得常用）的金属——铜、锌、锡、镍——就可以实现量产了！"
+				"虽然搭建产线的过程可能比较累，但是全自动还是值得的！你可以先从这四种开始，继续研究如何量产后续的材料。为此我们也提供了指南："
+				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1A4352FB579FF77E\" } }"
 			]
 			id: "40840BF9F23BC8A1"
 			rewards: [{
@@ -566,60 +567,14 @@
 			}]
 			shape: "diamond"
 			subtitle: "磨刀不误砍柴工"
-			tasks: [
-				{
-					id: "28455E5231761DC3"
-					item: "create:copper_nugget"
-					type: "item"
-				}
-				{
-					id: "6110BA0EDB39240E"
-					item: "create:zinc_nugget"
-					type: "item"
-				}
-				{
-					id: "548DF0EC0EF6ADD5"
-					item: "immersiveengineering:nugget_nickel"
-					type: "item"
-				}
-				{
-					id: "011B549B3A74134C"
-					item: "simplemetals_tin:tin_nugget"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "19B97E76877E5AA8"
+				title: "知道了"
+				type: "checkmark"
+			}]
 			title: "粒粒皆辛苦"
 			x: 0.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["40840BF9F23BC8A1"]
-			description: ["用泥胚获得铁……就是麻烦点，而且你还是逃不过高炉这一步（"]
-			icon: "create:crushed_raw_iron"
-			id: "0E7C15008078BC90"
-			rewards: [{
-				count: 2
-				id: "590B27B386DDAD83"
-				item: "create:crushing_wheel"
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "铁自己也行"
-			tasks: [
-				{
-					id: "4D66FAB81E1FFA01"
-					item: "minecraft:packed_mud"
-					type: "item"
-				}
-				{
-					id: "14D2CEDEEA806023"
-					item: "create:crushed_raw_iron"
-					type: "item"
-				}
-			]
-			title: "粒粒皆辛苦2"
-			x: 0.0d
-			y: -2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["73CD9D2DD215B5F5"]
