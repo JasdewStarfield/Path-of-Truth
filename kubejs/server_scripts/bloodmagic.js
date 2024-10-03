@@ -29,6 +29,9 @@ ServerEvents.recipes(event => {
     //修改主仪式石配方
     event.replaceInput({mod:'bloodmagic',output:'bloodmagic:masterritualstone'},
     'minecraft:obsidian', 'tfmg:steel_casing' )
+    //修改血染知书配方
+    event.replaceInput({id:'bloodmagic:guide'},
+        'minecraft:glass' , 'supplementaries:jar')
 
     //磁铁最终升级
     event.smithing(
