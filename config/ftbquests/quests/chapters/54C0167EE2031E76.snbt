@@ -95,6 +95,11 @@
 			dependencies: ["325D500216D2EFDC"]
 			icon: "minecraft:gold_ingot"
 			id: "6E3F0DA8745CD62F"
+			rewards: [{
+				id: "7D17272DB3FBC5B2"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "洗涤灵魂沙！"
 			tasks: [
@@ -156,6 +161,11 @@
 			dependencies: ["745F05143DD3D683"]
 			icon: "minecraft:iron_ingot"
 			id: "3008F198E9F12E38"
+			rewards: [{
+				id: "0A90209C33FA6990"
+				type: "xp"
+				xp: 3
+			}]
 			subtitle: "粉碎泥坯！"
 			tasks: [
 				{
@@ -177,6 +187,11 @@
 			dependencies: ["2CA163F35B71E735"]
 			icon: "minecraft:copper_ingot"
 			id: "73684052050C9EC2"
+			rewards: [{
+				id: "4C14B9D6E5DB02D8"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "洗涤泥土！"
 			tasks: [
@@ -211,6 +226,11 @@
 			dependencies: ["47D5AC7D15327B25"]
 			icon: "minecraft:redstone"
 			id: "59123A9E8CF4BCB3"
+			rewards: [{
+				id: "0AF6437C913B5768"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "用红石酸浇活石，形成自循环！"
 			tasks: [
@@ -245,6 +265,11 @@
 			dependencies: ["1A4352FB579FF77E"]
 			icon: "bloodmagic:ingot_hellforged"
 			id: "6C5FEFEFE141126D"
+			rewards: [{
+				id: "0DAD4AE1E6C594A1"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "炼金反应炉处理恶魔合金块，形成自循环！"
 			tasks: [
@@ -267,6 +292,11 @@
 			dependencies: ["6E3F0DA8745CD62F"]
 			icon: "minecraft:diamond"
 			id: "6E704D2B9075758E"
+			rewards: [{
+				id: "127CB03D63E8A8CB"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "用泰拉钢粒和金锭炼金！"
 			tasks: [
@@ -300,6 +330,11 @@
 			dependencies: ["30CAE7CB4F12B7B7"]
 			icon: "create:zinc_ingot"
 			id: "34DCE3F630A63930"
+			rewards: [{
+				id: "2200CEB05ADEAD79"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "磨碎黏土！"
 			tasks: [
@@ -346,6 +381,11 @@
 			dependencies: ["1E247B452EF05459"]
 			icon: "immersiveengineering:ingot_silver"
 			id: "4DE040C127C62C16"
+			rewards: [{
+				id: "19B3A726E63BE640"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "粉碎深板岩！"
 			tasks: [
@@ -368,6 +408,11 @@
 			dependencies: ["1E247B452EF05459"]
 			icon: "immersiveengineering:ingot_lead"
 			id: "2D7AA0BD8291858A"
+			rewards: [{
+				id: "6C120BDF5B920F3C"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "粉碎深板岩！"
 			tasks: [
@@ -390,6 +435,11 @@
 			dependencies: ["4247C42D1F36561B"]
 			icon: "simplemetals_tin:tin_ingot"
 			id: "1A5264CDF9253994"
+			rewards: [{
+				id: "0DB30E0FE66B03DA"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "洗涤沙砾！"
 			tasks: [
@@ -424,6 +474,11 @@
 			dependencies: ["640E68E50644C51D"]
 			icon: "immersiveengineering:ingot_uranium"
 			id: "757C9CEEDC437271"
+			rewards: [{
+				id: "4A6FF49F19DE36E1"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "粉碎黑石！"
 			tasks: [
@@ -458,6 +513,11 @@
 			dependencies: ["2A4061F6354FD43D"]
 			icon: "immersiveengineering:ingot_nickel"
 			id: "1F15CF2537659CA5"
+			rewards: [{
+				id: "2B2129FE5F21DBCD"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "磨碎燧石！"
 			tasks: [
@@ -480,6 +540,11 @@
 			dependencies: ["3008F198E9F12E38"]
 			icon: "undergarden:cloggrum_ingot"
 			id: "4AC710EC228F6A22"
+			rewards: [{
+				id: "12268F213D224570"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "铁锭与末地空气混合！"
 			tasks: [
@@ -502,6 +567,11 @@
 			dependencies: ["745F05143DD3D683"]
 			icon: "tfmg:aluminum_ingot"
 			id: "3ED6E1789C0B7C55"
+			rewards: [{
+				id: "13855F1646EDF90B"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "粉碎泥坯！"
 			tasks: [{
@@ -541,6 +611,11 @@
 			dependencies: ["0AD582715391DEE4"]
 			icon: "undergarden:froststeel_ingot"
 			id: "4F63F4EF9023B9AD"
+			rewards: [{
+				id: "3EFBEC6BEDBB8699"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "在雪帽菇熔炉中逆熵冷冻！"
 			tasks: [
@@ -563,6 +638,11 @@
 			dependencies: ["640E68E50644C51D"]
 			icon: "blue_skies:pyrope_gem"
 			id: "28157223D840F237"
+			rewards: [{
+				id: "078B078637BB6BE9"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "利用炼金术桌将榴石还原为原矿，实现自循环！"
 			tasks: [
@@ -585,6 +665,11 @@
 			dependencies: ["640E68E50644C51D"]
 			icon: "blue_skies:diopside_gem"
 			id: "0A9BEAAC5CF53160"
+			rewards: [{
+				id: "0E51840148E1C18D"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "利用炼金术桌将透辉石还原为原矿，实现自循环！"
 			tasks: [
@@ -607,6 +692,11 @@
 			dependencies: ["6E704D2B9075758E"]
 			icon: "blue_skies:charoite"
 			id: "0BA74E3F0231A1A0"
+			rewards: [{
+				id: "69EDF17AB7C74D28"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "用紫水晶块和钻石炼金！"
 			tasks: [
@@ -628,6 +718,11 @@
 			dependencies: ["640E68E50644C51D"]
 			icon: "blue_skies:moonstone_shard"
 			id: "66A2127A9B53A5FB"
+			rewards: [{
+				id: "191F051C21040057"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "利用炼金术桌将月长石碎片还原为原矿，实现自循环！"
 			tasks: [
@@ -650,6 +745,11 @@
 			dependencies: ["3008F198E9F12E38"]
 			icon: "blue_skies:aquite"
 			id: "05BD3E5ED6201A8A"
+			rewards: [{
+				id: "38E14EFA52538F0C"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "对粉碎铁矿石进行魔力灌注！"
 			tasks: [
@@ -672,6 +772,11 @@
 			dependencies: ["3008F198E9F12E38"]
 			icon: "blue_skies:horizonite_ingot"
 			id: "2C668F500DFF33A7"
+			rewards: [{
+				id: "6A3D7DFE67839ED3"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "用炼金术桌转化粉碎铁矿石！"
 			tasks: [
@@ -694,6 +799,11 @@
 			dependencies: ["3008F198E9F12E38"]
 			icon: "blue_skies:falsite_ingot"
 			id: "6F1F217D2139310D"
+			rewards: [{
+				id: "1E242B5A352B758D"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "炼金矩阵转化紫水晶和铁锭！"
 			tasks: [
@@ -715,6 +825,11 @@
 			dependencies: ["3008F198E9F12E38"]
 			icon: "blue_skies:ventium_ingot"
 			id: "792CFDA67B0568A2"
+			rewards: [{
+				id: "7A69AC41ACE23FAE"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "对粉碎铁矿石进行魔力灌注！"
 			tasks: [
@@ -737,6 +852,11 @@
 			dependencies: ["1A4352FB579FF77E"]
 			icon: "undergarden:forgotten_ingot"
 			id: "5B92A3E71ABB5CC7"
+			rewards: [{
+				id: "51FF75A761D03022"
+				type: "xp"
+				xp: 3
+			}]
 			shape: "hexagon"
 			subtitle: "设法组装遗忆守卫刷怪蛋，然后击败它获取！"
 			tasks: [

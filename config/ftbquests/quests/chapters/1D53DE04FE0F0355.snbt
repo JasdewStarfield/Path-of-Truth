@@ -130,10 +130,11 @@
 				"Create及其附属；沉浸工程"
 				"科技的推进将为你照亮前程。"
 			]
+			icon: "create:cogwheel"
 			id: "40CA2BD47E66D2F1"
 			rewards: [{
-				id: "2D18F897296F5289"
-				item: "blue_skies:moonstone"
+				id: "12A46943B2AAF15D"
+				item: "kubejs:music_disc_the_crimson_sky"
 				type: "item"
 			}]
 			subtitle: "“照亮伟大的前程”"
@@ -153,10 +154,18 @@
 				"铁魔法；血魔法；植物魔法"
 				"魔法的推进将让你看破真实。"
 			]
+			icon: {
+				Count: 1
+				id: "botania:mana_tablet"
+				tag: {
+					creative: 1b
+					mana: 500000
+				}
+			}
 			id: "064AC66B17C07F0F"
 			rewards: [{
-				id: "71F0717D1B66C154"
-				item: "botania:third_eye"
+				id: "4325E120DDB75AA9"
+				item: "kubejs:music_disc_flame_over_the_ice"
 				type: "item"
 			}]
 			subtitle: "这不科学！"
