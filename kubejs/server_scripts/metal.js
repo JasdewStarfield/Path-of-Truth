@@ -205,7 +205,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.pressing('#forge:plates/constantan', '#forge:ingots/constantan')
     //康铜代替铜
     event.replaceInput(
-        { input:"#forge:ingots/copper",mod:"immersiveengineering" },
+        { input:"#forge:ingots/copper",mod:"immersiveengineering",not:{output:"#forge:nuggets/copper"} },
         '#forge:ingots/copper',
         '#forge:ingots/constantan'
     )
@@ -249,6 +249,10 @@ ServerEvents.recipes(event => {
     //焦煤也是
     event.recipes.create.milling(Item.of('tfmg:coal_coke_dust').withChance(0.75), '#forge:coal_coke').id('coal_coke_dust_manual_only')
 
+    //深板岩
+    event.recipes.create.filling('magma_block', [Fluid.of('minecraft:lava',500),'minecraft:cobblestone'])
+    event.recipes.create.emptying([Fluid.of('minecraft:lava',250), 'minecraft:cobbled_deepslate'], 'magma_block')
+
     //木炭压制焦煤（小概率）
     event.recipes.create.compacting([Item.of('tfmg:coal_coke').withChance(0.1), Fluid.of('immersiveengineering:creosote', 500)], ['createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder']).heated()
 
@@ -257,6 +261,9 @@ ServerEvents.recipes(event => {
     event.remove({id:"createchromaticreturn:zinc_recipe"})
     event.remove({id:"createchromaticreturn:gp_to_bp"})
     event.remove({id:"createchromaticreturn:cf_to_rs"})
+    event.remove({id:"createchromaticreturn:magma_block_recipe"})
+    event.remove({id:"createchromaticreturn:obsidian_recipe"})
+    event.remove({id:"createchromaticreturn:magma_drain"})
     event.remove({id:/createchromaticreturn\:.*doubling\.*/})
 
     //泥土到铜
@@ -269,8 +276,15 @@ ServerEvents.recipes(event => {
     //黏土出锌
     event.recipes.create.milling(Item.of('#forge:nuggets/zinc').withChance(0.2), 'clay_ball')
 
-    //泥巴出铁
-    event.recipes.create.crushing(Item.of('create:crushed_raw_iron').withChance(0.07), 'packed_mud')
+    //泥巴出铁、铝土
+    event.recipes.create.crushing([Item.of('create:crushed_raw_iron').withChance(0.14),Item.of('kubejs:crushed_raw_bauxite').withChance(0.07)], 'packed_mud')
+
+    //深板岩粉碎出铅，银
+    event.recipes.create.crushing([Item.of('#forge:nuggets/lead').withChance(0.15), Item.of('#forge:nuggets/silver').withChance(0.15)], 'deepslate')
+    event.recipes.create.crushing([Item.of('#forge:nuggets/lead').withChance(0.15), Item.of('#forge:nuggets/silver').withChance(0.15)], 'cobbled_deepslate')
+
+    //黑石粉碎出铀
+    event.recipes.create.crushing([Item.of('#forge:nuggets/uranium').withChance(0.15)], 'blackstone')
 
     //红石量产
     event.recipes.create.filling('redstone_block', [Fluid.of('immersiveengineering:redstone_acid',1000),'botania:livingrock'])
@@ -301,7 +315,7 @@ ServerEvents.recipes(event => {
         'A A'
         ],
         {
-            A: 'botania:livingwood',
+            A: 'botania:livingwood_planks',
             B: '#forge:nuggets/bronze'
         }
     )
@@ -310,10 +324,10 @@ ServerEvents.recipes(event => {
         [ 
         'A A',
         'ABA',
-        'BAB'
+        'AAA'
         ],
         {
-            A: 'botania:livingwood',
+            A: 'botania:livingwood_planks',
             B: '#forge:nuggets/bronze'
         }
     )
@@ -325,7 +339,7 @@ ServerEvents.recipes(event => {
         'A A'
         ],
         {
-            A: 'botania:livingwood',
+            A: 'botania:livingwood_planks',
             B: '#forge:nuggets/bronze'
         }
     )
@@ -336,7 +350,7 @@ ServerEvents.recipes(event => {
         'B B'
         ],
         {
-            A: 'botania:livingwood',
+            A: 'botania:livingwood_planks',
             B: '#forge:nuggets/bronze'
         }
     )

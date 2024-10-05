@@ -94,3 +94,4 @@ kubejs/config/probejs.json
 /config/nucleus
 config/jei/jei-client.ini
 /xaero
+config/fabric/indigo-renderer.properties

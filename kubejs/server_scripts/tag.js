@@ -115,3 +115,9 @@ ServerEvents.tags("fluid", (event) => {
     event.add("forge:propylene","tfmg:propylene")
     event.add("forge:lubrication_oil","tfmg:lubrication_oil")
 })
+
+ServerEvents.tags("block", (event) => {
+    //幽冥锤添加
+    event.add("irons_spellbooks:spectral_hammer_mineable","#forge:stone")
+    event.add("irons_spellbooks:spectral_hammer_mineable","#undergarden:base_stone_undergarden")
+})

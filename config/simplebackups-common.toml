@@ -34,6 +34,9 @@ noPlayerBackups = false
 #Should sub-directories be generated for each world?
 #Keep in mind that all configs above, including backupsToKeep and maxDiskSize, will be calculated for each sub directory.
 createSubDirs = false
+#Use an internal tick counter instead of the real world time. The value of the timer will be converted to ticks. When the timer is over, the backup will be created.
+#Keep in mind that lagging servers will result in larger gaps between two backups, e.g. 10 FPS in average will result in double the time set between backups.
+useTickCounter = false
 
 [mod_compat]
 	#Should backup notifications be sent to Discord by using mc2discord? (needs to be installed)

@@ -90,6 +90,56 @@
 		[types.leaves_type.outer_end]
 			azure = true
 
+	[types.stone_type]
+
+		[types.stone_type.supplementaries]
+			ash = true
+
+		[types.stone_type.copperandtuffbackport]
+			chiseled_tuff = true
+
+		[types.stone_type.botania]
+			livingrock = true
+
+		[types.stone_type.biomesoplenty]
+			brimstone = true
+
+		[types.stone_type.blue_skies]
+			polished_brumble = true
+
+		[types.stone_type.undergarden]
+			depthrock = true
+			shiverstone = true
+			tremblecrust = true
+
+		[types.stone_type.create]
+			cut_granite = true
+			cut_diorite = true
+			cut_andesite = true
+			cut_calcite = true
+			cut_dripstone = true
+			cut_deepslate = true
+			cut_tuff = true
+			cut_asurine = true
+			cut_crimsite = true
+			cut_limestone = true
+			cut_ochrum = true
+			cut_scoria = true
+			cut_scorchia = true
+			cut_veridium = true
+
+		[types.stone_type.outer_end]
+			violite = true
+
+		[types.stone_type.create_confectionery]
+			black_chocolate = true
+			white_chocolate = true
+			ruby_chocolate = true
+			caramel = true
+
+		[types.stone_type.tfmg]
+			cut_bauxite = true
+
 #Disables specific entries
 [entries]
 
@@ -119,4 +169,9 @@
 
 		[entries.wood_type.vct]
 			crafting_table = true
+
+		[entries.wood_type.beautify]
+			trellis = true
+			blinds = true
+			picture_frame = true
 

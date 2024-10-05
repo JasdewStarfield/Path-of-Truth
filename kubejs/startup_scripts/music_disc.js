@@ -1,7 +1,9 @@
 let music_list = {
   pluto_nocturnus: 426,   // duration in seconds
   quam_admirabile_mundi: 482,
-  yggdrasil_original_mix: 447
+  yggdrasil_original_mix: 447,
+  flame_over_the_ice: 106,
+  the_crimson_sky: 151
 };
 
 // put sound to .minecraft\kubejs\assets\kubejs\sounds (sound must be .ogg mono otherwise it will not be 3-dimensional)

@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
   //下界合金
   event.remove({ id: 'minecraft:netherite_ingot' })
-  event.recipes.create.mixing(['netherite_ingot'], [Fluid.of('tfmg:napalm',500),'#forge:ingots/gold','#forge:ingots/gold','#forge:ingots/gold','#forge:ingots/gold','minecraft:netherite_scrap','minecraft:netherite_scrap','minecraft:netherite_scrap','minecraft:netherite_scrap']).superheated()
+  event.recipes.create.mixing(['netherite_ingot'], [Fluid.of('tfmg:napalm',500),'#forge:ingots/uranium','#forge:ingots/uranium','#forge:ingots/uranium','#forge:ingots/uranium','minecraft:netherite_scrap','minecraft:netherite_scrap','minecraft:netherite_scrap','minecraft:netherite_scrap']).superheated()
 
   //烈焰蛋糕
   event.remove({ id: 'create:compacting/blaze_cake' })

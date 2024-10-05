@@ -89,6 +89,13 @@ ServerEvents.recipes(event => {
         '#forge:ingots/bronze'
     )
 
+    //装配台
+    event.replaceInput(
+      { output:"immersiveengineering:workbench" },
+      '#forge:ingots/iron',
+      '#forge:ingots/steel'
+  )
+
     //高炉炼铁
     event.remove({id:/immersiveengineering:blastfurnace\/steel.*/})
     event.remove({id:/immersiveengineering:blastfurnace\/fuel.*/})
@@ -180,6 +187,18 @@ ServerEvents.recipes(event => {
     })
     //BOP的玫瑰石英碎块
     event.recipes.create.crushing(Item.of('create:rose_quartz').withChance(0.1), 'biomesoplenty:rose_quartz_block')
+
+    //坚固板
+    event.remove({id:'create:sequenced_assembly/sturdy_sheet'})
+    let inter = 'create:unprocessed_obsidian_sheet'
+    event.recipes.create.sequenced_assembly([
+      Item.of('create:sturdy_sheet')
+    ], '#forge:plates/lead', [
+      event.recipes.createDeploying(inter, [inter, '#forge:dusts/obsidian']),
+      event.recipes.createFilling(inter, [inter, Fluid.of("minecraft:lava", 500)]),
+      event.recipes.createPressing(inter, inter),
+      event.recipes.createPressing(inter, inter),
+    ]).transitionalItem(inter).loops(1)
 
     //继电器接线器材料
     event.replaceInput(
@@ -534,11 +553,11 @@ ServerEvents.recipes(event => {
         "ingredients": [
             {
                 "fluid": "immersiveengineering:phenolic_resin",
-                "amount": 1000
+                "amount": 500
             },
             {
                 "fluid": "tfmg:liquid_plastic",
-                "amount": 1000
+                "amount": 500
             }
         ],
         "results": [

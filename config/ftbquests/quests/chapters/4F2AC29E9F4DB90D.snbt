@@ -1,5 +1,5 @@
 {
-	autofocus_id: "0E7C15008078BC90"
+	autofocus_id: "11EC3A84F0C84E65"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "4F2AC29E9F4DB90D"
@@ -370,7 +370,11 @@
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
-			description: ["如果你发现你做不出黄铜手部，考虑发展魔法线！"]
+			description: [
+				"至于为什么配方是用的流体工程块……大约是液压手吧（心虚）"
+				""
+				"如果你发现你做不出魔法手部零件，考虑发展魔法线！"
+			]
 			id: "7F98F9F01F44BA28"
 			subtitle: "两只手不够用就多来几个"
 			tasks: [{
@@ -384,8 +388,8 @@
 		}
 		{
 			dependencies: [
-				"76BE4625CCF2F867"
 				"7F98F9F01F44BA28"
+				"0C1EAC9547A45268"
 			]
 			description: [
 				"虽然这东西叫电子管没错，但是很显然它不能充电，你也没进入电子时代）"
@@ -551,8 +555,9 @@
 		{
 			dependencies: ["11EC3A84F0C84E65"]
 			description: [
-				"获得铁之后，这四种常用（以及接下来会变得常用）的金属就可以实现量产了！（锌可能要晚一些，得等你出粉碎轮之后）"
-				"虽然搭建产线的过程可能比较累，但是全自动还是值得的！"
+				"获得铁之后，四种常用（以及接下来会变得常用）的金属——铜、锌、锡、镍——就可以实现量产了！"
+				"虽然搭建产线的过程可能比较累，但是全自动还是值得的！你可以先从这四种开始，继续研究如何量产后续的材料。为此我们也提供了指南："
+				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1A4352FB579FF77E\" } }"
 			]
 			id: "40840BF9F23BC8A1"
 			rewards: [{
@@ -562,60 +567,14 @@
 			}]
 			shape: "diamond"
 			subtitle: "磨刀不误砍柴工"
-			tasks: [
-				{
-					id: "28455E5231761DC3"
-					item: "create:copper_nugget"
-					type: "item"
-				}
-				{
-					id: "6110BA0EDB39240E"
-					item: "create:zinc_nugget"
-					type: "item"
-				}
-				{
-					id: "548DF0EC0EF6ADD5"
-					item: "immersiveengineering:nugget_nickel"
-					type: "item"
-				}
-				{
-					id: "011B549B3A74134C"
-					item: "simplemetals_tin:tin_nugget"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "19B97E76877E5AA8"
+				title: "知道了"
+				type: "checkmark"
+			}]
 			title: "粒粒皆辛苦"
 			x: 0.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["40840BF9F23BC8A1"]
-			description: ["用泥胚获得铁……就是麻烦点，而且你还是逃不过高炉这一步（"]
-			icon: "create:crushed_raw_iron"
-			id: "0E7C15008078BC90"
-			rewards: [{
-				count: 2
-				id: "590B27B386DDAD83"
-				item: "create:crushing_wheel"
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "铁自己也行"
-			tasks: [
-				{
-					id: "4D66FAB81E1FFA01"
-					item: "minecraft:packed_mud"
-					type: "item"
-				}
-				{
-					id: "14D2CEDEEA806023"
-					item: "create:crushed_raw_iron"
-					type: "item"
-				}
-			]
-			title: "粒粒皆辛苦2"
-			x: 0.0d
-			y: -2.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["73CD9D2DD215B5F5"]
@@ -817,6 +776,34 @@
 			title: "无尽岩浆"
 			x: 2.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["76BE4625CCF2F867"]
+			description: [
+				"玫瑰石英是一种具有电学性质的材料，在受到特定刺激后会产生电压……然而，你并不能指望用这点微弱的电压来积累电力。"
+				"即便如此，它还是有用的。为了制造它，你需要一种叫红石酸的导电流体……。"
+				"当然了，制作完成后它也不能直接使用，还是要用砂纸打磨之后才能正常安装（"
+				""
+				"聪明的小伙伴可能已经发现了，红石酸加上一点点活石，就能用来量产红石粉……没事，你的电子元件不会介意这点掺进来的杂质的，对吧？"
+			]
+			icon: "create:polished_rose_quartz"
+			id: "0C1EAC9547A45268"
+			subtitle: "哦还没有"
+			tasks: [
+				{
+					id: "4A2263932B0BFE7C"
+					item: "immersiveengineering:redstone_acid_bucket"
+					type: "item"
+				}
+				{
+					id: "659533F07C4ECFB1"
+					item: "create:polished_rose_quartz"
+					type: "item"
+				}
+			]
+			title: "有电了……吗？"
+			x: -2.5d
+			y: 12.5d
 		}
 	]
 	subtitle: ["Exotic Alloys"]
