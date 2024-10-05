@@ -9,6 +9,8 @@
 		"Ice Block Spell Can Cause Ice Patches" = true
 		#When enabled the Firefly Swarm Spell will give the glowing effect to nearby enemies
 		"Firefly Swarm Spell Can Give Glowing Effect" = true
+		#When enabled Holy Spells that deal damage do extra damage to undead mobs. When enabled with Consecration installed, Holy Spells will cause smite weakness
+		"Holy Spells Do Extra Damage To Undead Mobs" = true
 
 	#Settings for letting a spell hurt the player who casted it
 	["Spells Gone Wrong Config"."Spell Can Hurt Caster Settings"]
