@@ -111,6 +111,12 @@
   "item.botania.twig_wand.tooltip.condition2":"Shift+右键空气时",
   "item.botania.twig_wand.tooltip.behaviour2":"切换绑定模式和工作模式，工作模式下法杖不会进行任何选定操作。",
   "item.botania.twig_wand.tooltip.condition3":"Shift+右键可旋转方块时",
-  "item.botania.twig_wand.tooltip.behaviour3":"旋转该方块的朝向，如箱子和铁砧。"
+  "item.botania.twig_wand.tooltip.behaviour3":"旋转该方块的朝向，如箱子和铁砧。",
+
+
+  "item.immersiveengineering.seed.tooltip":"工业大麻种子",
+  "item.immersiveengineering.seed.tooltip.summary":"可以种植在耕地上以收获工业大麻纤维。",
+  "item.immersiveengineering.hemp_fiber.tooltip":"工业大麻纤维",
+  "item.immersiveengineering.hemp_fiber.tooltip.summary":"可以通过在耕地上种植工业大麻种子收获。"
 
 }
