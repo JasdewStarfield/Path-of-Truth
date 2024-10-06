@@ -622,24 +622,45 @@
 		{
 			dependencies: ["1AB48D8D4E2767F6"]
 			description: [
-				"如果你想要跑图的话，就用这个吧！简单好做，还能漂移！"
+				"本整合包在原版之外，提供了多种用途不一的交通工具。"
+				""
+				"游戏前期，如果你想要跑图的话，就用&b雪橇&r吧！简单好做，还能漂移！"
 				"&o&m&b滑雪大冒险3D VER&r&r&r"
+				""
+				"中期之后，你可以制作各种来自“沉浸式飞行器”的&9飞行器&r，它们能从空中飞跃复杂的地形，把你轻松带到目的地！"
+				""
+				"另一种交通方式是&6列车&r！虽然你需要巨量的材料来搭建列车和铺设铁路，但一旦制作完成，它就可以自动运行（甚至可以在不加载的区块上运行，还能跨越下界传送门！）。它也可以负担起你的物流任务，是个强有力的帮手。（具体可以搜索“列车机壳”并查看相关思索界面）"
 			]
+			icon: "minecraft:minecart"
 			id: "265C4AEB2E006996"
-			subtitle: "起飞！（仅限雪地）"
-			tasks: [{
-				id: "39F1C8F6EF93A8E5"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "snowyspirit:sleds"
+			subtitle: "起飞！"
+			tasks: [
+				{
+					id: "39F1C8F6EF93A8E5"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "snowyspirit:sleds"
+						}
 					}
+					title: "任意雪橇"
+					type: "item"
 				}
-				title: "Any #snowyspirit:sleds"
-				type: "item"
-			}]
-			title: "雪橇"
+				{
+					id: "7CE9D9644C84059B"
+					item: "immersive_aircraft:airship"
+					type: "item"
+				}
+				{
+					advancement: "create:train"
+					criterion: ""
+					id: "0ECB38FAD23C80CD"
+					title: "组装列车！"
+					type: "advancement"
+				}
+			]
+			title: "交通工具"
 			x: 3.5d
 			y: -1.5d
 		}
