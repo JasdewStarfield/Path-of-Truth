@@ -325,7 +325,7 @@ ServerEvents.recipes(event => {
     event.remove({output:'botania:mana_fluxfield'})
     event.recipes.botania.runic_altar('botania:mana_fluxfield', 
         [
-            'immersiveengineering:heavy_engineering', 
+            'kubejs:electronic_engineering', 
             'botania:redstone_root',
             'immersiveengineering:generator',
             'bloodmagic:strengthenedcatalyst'
