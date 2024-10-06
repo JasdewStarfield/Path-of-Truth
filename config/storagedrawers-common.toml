@@ -32,7 +32,6 @@
 [StorageUpgrades]
 	#Storage upgrades multiply storage capacity by the given amount.
 	#When multiple storage upgrades are used together, their multipliers are added before being applied.
-	#Storage upgrades start at the level 2 multiplier.  The resistance upgrade uses level 1.
 	level1Mult = 4
 	level2Mult = 16
 	level3Mult = 64
