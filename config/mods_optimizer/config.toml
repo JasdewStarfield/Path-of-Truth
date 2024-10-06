@@ -326,6 +326,8 @@ jecharacters = "client"
 imblocker = "client"
 musicmanager = "client"
 createdynlight = "server"
+gpu_tape = "client"
+sodiumdynamiclights = "client"
 
 [Debug]
 debugForceSide = "default"
