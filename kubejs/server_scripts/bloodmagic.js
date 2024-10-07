@@ -1560,4 +1560,7 @@ ServerEvents.recipes(event => {
             'kubejs:tin_dust'
         ]
     )
+
+    //刷怪蛋自动生产LP
+    event.recipes.create.mixing(Fluid.of('bloodmagic:life_essence_fluid',1000), ['artifacts:mimic_spawn_egg'])
 })
