@@ -466,6 +466,21 @@ ServerEvents.recipes(event => {
         },
         "upgradeLevel": 2
     })
+    //三级血魔法宝珠（法师宝珠）合成方式修改
+    event.remove({id:'bloodmagic:altar/magicianbloodorb'})
+    event.custom({
+        "type": "bloodmagic:altar",
+        "altarSyphon": 25000,
+        "consumptionRate": 20,
+        "drainRate": 20,
+        "input": {
+            "item": 'botania:terrasteel_ingot'
+        },
+        "output": {
+            "item": "bloodmagic:magicianbloodorb"
+        },
+        "upgradeLevel": 2
+    })
     //四级血魔法宝珠（导师宝珠）合成方式修改
     event.remove({id:'bloodmagic:altar/masterbloodorb'})
     event.custom({
