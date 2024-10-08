@@ -1,0 +1,20 @@
+{
+  "config.deathcounter.prop.broadcastOnDeath.desc": "当玩家死亡时，我们应该向他们广播排行榜吗？\n接受：NONE、SELF、ALL",
+  "config.deathcounter.prop.broadcastOnDeath.name": "死亡广播",
+  "commands.deathcounter.leaderboard.broadcasted": "排行榜已播出！",
+  "config.deathcounter.prop.leaderboardCount.desc": "排行榜中显示的名字数量",
+  "config.deathcounter.prop.singleSession.name": "单次会议",
+  "config.deathcounter.prop.commandPermissionLevel.desc": "使用死亡计数器的操作命令所需的权限级别",
+  "commands.deathcounter.transfer.fail": "无法转移 %s 的死亡人数。",
+  "config.deathcounter.prop.leaderboardCount.name": "排行榜计数",
+  "commands.deathcounter.leaderboard.none": "该服务器上还没有死亡。",
+  "commands.deathcounter.transfer": "将 %s 死亡从 %s 转移到 %s。",
+  "config.deathcounter.prop.messageType.name": "消息类型",
+  "config.deathcounter.prop.messageType.desc": "当玩家死亡时我们应该向他们发送什么样的消息？\n接受：NONE、SHORT、LONG",
+  "commands.deathcounter.get.none": "%s 尚未在此服务器上死亡！他们真幸运！",
+  "config.deathcounter.prop.hideDeathCounterMessages.name": "隐藏死亡计数器消息",
+  "config.deathcounter.prop.singleSession.desc": "不要在会话中持续死亡？打开此功能将禁用将死亡保存到服务器文件夹。",
+  "commands.deathcounter.get": "%s 已死亡 %s 人，在此服务器上的排名为 %s。",
+  "config.deathcounter.prop.commandPermissionLevel.name": "命令权限级别",
+  "config.deathcounter.prop.hideDeathCounterMessages.desc": "启用此功能，死亡计数器消息将不会显示在聊天中。这包括使用命令手动查询时的排行榜！"
+}

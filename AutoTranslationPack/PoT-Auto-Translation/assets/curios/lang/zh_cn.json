@@ -1,0 +1,7 @@
+{
+  "gui.curios.toggle.cosmetics": "切换 化妆品",
+  "gui.curios.page": "页 %s / %s",
+  "commands.curios.replace.success": "将 %s 的插槽 %s 替换为 %s",
+  "commands.curios.drop.success": "已将 %s 的物品丢弃在插槽 %s 中",
+  "commands.curios.dropAll.success": "已在 %s 的所有槽位中丢弃物品"
+}

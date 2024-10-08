@@ -9,6 +9,26 @@ const engineeringBlocks = [
     'kubejs:electronic_engineering'
 ]
 
+const LeatherLikeBoots = [
+    'alexsmobs:roadrunner_boots',
+    'cold_sweat:goat_fur_boots',
+    'botania:manaweave_boots',
+    'immersive_armors:warrior_boots',
+    'immersive_armors:robe_boots',
+    'immersive_armors:divine_boots',
+    'irons_spellbooks:wandering_magician_boots',
+    'irons_spellbooks:pumpkin_boots',
+    'irons_spellbooks:pyromancer_boots',
+    'irons_spellbooks:electromancer_boots',
+    'irons_spellbooks:archevoker_boots',
+    'irons_spellbooks:cultist_boots',
+    'irons_spellbooks:cryomancer_boots',
+    'irons_spellbooks:shadowwalker_boots',
+    'irons_spellbooks:priest_boots',
+    'irons_spellbooks:plagued_boots',
+    'irons_spellbooks:netherite_mage_boots'
+]
+
 
 ServerEvents.tags("item", (event) => {
     //工程块
@@ -85,6 +105,15 @@ ServerEvents.tags("item", (event) => {
 
     //others
     event.add("forge:plates","kubejs:frostfire_double_plate")
+
+    //类皮革靴子物品（防细雪）
+    //似乎坏了，先注释掉吧
+    /*
+    LeatherLikeBoots.forEach((id) => {
+        event.add("quad:snow/boots", id)
+        event.add("quad:snow/acts_solid", id)
+    })
+    */
 })
 
 ServerEvents.tags("block", (event) => {
