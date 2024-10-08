@@ -85,20 +85,17 @@
 				"{image:kubejs:textures/waterwheel.png width:140 height:80 align:1}"
 			]
 			id: "0E41103FFC1FC96A"
-			min_required_tasks: 1
+			rewards: [{
+				id: "05319AC98D93ECF2"
+				item: "create:windmill_bearing"
+				type: "item"
+			}]
 			subtitle: "转起来了，站起来了"
-			tasks: [
-				{
-					id: "50B3A1CC2C49EEA3"
-					item: "create:water_wheel"
-					type: "item"
-				}
-				{
-					id: "65A86CB9144A5B15"
-					item: "create:windmill_bearing"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "50B3A1CC2C49EEA3"
+				item: "create:water_wheel"
+				type: "item"
+			}]
 			title: "青铜时代，前进四！"
 			x: 4.0d
 			y: 8.5d
@@ -283,7 +280,7 @@
 							value: "forge:plates"
 						}
 					}
-					title: "Any #forge:plates"
+					title: "任意板材"
 					type: "item"
 				}
 			]

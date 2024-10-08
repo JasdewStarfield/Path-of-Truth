@@ -266,8 +266,6 @@ function randomSpread(server, player) {
             // 完成
             // 清除无敌状态      //
             server.runCommandSilent(`/execute as ${player.username} at ${player.username} run spawnpoint`)
-            server.runCommandSilent(`/effect clear ${player.username}`)
-            server.runCommandSilent(`/effect give ${player.username} cold_sweat:grace 300 0 true`)
         })
     }
 
@@ -287,9 +285,8 @@ FTBQuestsEvents.completed('170E4E15DBE89604', event => {
         //callback.reschedule(2 * MINUTE) //两分钟以后再通知一次
     })
 })
-FTBQuestsEvents.completed('7B54E20910D7008D', event => {
+FTBQuestsEvents.completed('6A1B42D208C780BD', event => {
     event.server.runCommandSilent(`/effect clear ${event.player.username}`)
-    event.server.runCommandSilent(`/effect give ${event.player.username} cold_sweat:grace 300 0 true`)
 })
 
 

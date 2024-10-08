@@ -439,7 +439,7 @@
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["获得原版，维度模组以及alex的生物中（几乎）所有可以被处理为鱼的东西）"]
 			hide: true
-			icon: "tide:twilight_angler_bucket"
+			icon: "tide:guppy_bucket"
 			id: "725308B81E925449"
 			rewards: [
 				{
@@ -1112,7 +1112,7 @@
 				}
 			]
 			title: "神器专家"
-			x: 0.0d
+			x: 2.0d
 			y: 4.0d
 		}
 		{
@@ -1176,137 +1176,8 @@
 				}
 			]
 			title: "古生物学家"
-			x: -1.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["6A1B42D208C780BD"]
-			description: ["出于为您的肝考虑，我们只要求收集任意15种陶片……"]
-			hide: true
-			id: "268A62891A5A104A"
-			min_required_tasks: 15
-			rewards: [{
-				id: "2836DC6D480087C3"
-				item: {
-					Count: 1
-					id: "irons_spellbooks:netherite_spell_book"
-					tag: {
-						ISB_Spells: {
-							data: [ ]
-							maxSpells: 12
-							mustEquip: 1b
-							spellWheel: 1b
-						}
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "考古#3"
-			tasks: [
-				{
-					id: "0AF6540217DF8DFA"
-					item: "minecraft:angler_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "6C25B67838E72CD7"
-					item: "minecraft:archer_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "4A3B950B4670A4D1"
-					item: "minecraft:arms_up_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "6703CDAEC5EE8FC4"
-					item: "minecraft:blade_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "1B832D049B4DD483"
-					item: "minecraft:brewer_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "79D1F616C8E29E2F"
-					item: "minecraft:burn_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "017433831012EDB4"
-					item: "minecraft:danger_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "39340CCDC1311943"
-					item: "minecraft:explorer_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "347BC3DAA7656966"
-					item: "minecraft:friend_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "2FD3784E07F64E5A"
-					item: "minecraft:heart_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "179672B2558F0CFA"
-					item: "minecraft:heartbreak_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "274C1781C08C0338"
-					item: "minecraft:howl_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "42342A0F4DABBAC2"
-					item: "minecraft:miner_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "22BF4AB537CD33DB"
-					item: "minecraft:mourner_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "5FD8D73B1A4157B1"
-					item: "minecraft:plenty_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "55737A3CE9763AED"
-					item: "minecraft:prize_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "78A632900B7B2B4E"
-					item: "minecraft:sheaf_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "7FE5B63861C1CBB2"
-					item: "minecraft:shelter_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "549D56B8799E05E5"
-					item: "minecraft:skull_pottery_sherd"
-					type: "item"
-				}
-				{
-					id: "62E3B0812431B091"
-					item: "minecraft:snort_pottery_sherd"
-					type: "item"
-				}
-			]
-			title: "文物修复师"
-			x: 1.0d
-			y: 5.0d
+			x: -2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -1618,7 +1489,6 @@
 				}
 				type: "item"
 			}]
-			secret: true
 			subtitle: "收集铁魔法所有的战斗用魔杖和剑！"
 			tasks: [
 				{
@@ -1715,7 +1585,7 @@
 			]
 			title: "制杖与贩剑"
 			x: 0.0d
-			y: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["722556B2244FD56A"]
@@ -1980,7 +1850,7 @@
 			]
 			title: "我爱读书"
 			x: 0.0d
-			y: 7.5d
+			y: 6.0d
 		}
 	]
 	subtitle: ["The Way to Legend"]

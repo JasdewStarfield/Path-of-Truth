@@ -335,14 +335,9 @@
 			}]
 			subtitle: "哦布莱克斯！"
 			tasks: [{
-				checkItem: false
-				entity: "corpse:corpse"
-				icon: "minecraft:zombie_head"
-				id: "324D09B473001AA1"
-				nbt: { }
-				title: "查看你的尸体"
-				type: "questsadditions:interaction"
-				value: 1L
+				id: "290DA61A42335E98"
+				title: "死……死了吗？"
+				type: "checkmark"
 			}]
 			title: "你死啦？"
 			x: 3.5d

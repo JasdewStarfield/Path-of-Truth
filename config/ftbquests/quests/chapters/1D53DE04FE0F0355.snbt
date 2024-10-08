@@ -38,7 +38,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"&a【完成后解锁本整合包起始章节】&r"
+				"&a【完成后解锁本整合包起始章节，并允许移动】&r"
 				"欢迎来到“真理之路”整合包。"
 				"本整合包由&b狂野工程师JasdewStarfield&r与&a抽象魔法师MidnightPigeon&r联合创作。"
 				"在这个世界，你将进行持续的探索发现，直至终末。"
@@ -286,16 +286,17 @@
 			description: [
 				"选择独自开始，你将会&9获得一个自己的小屋&r，但是&b代价是与已有人烟的区域分隔开来。&r"
 				"该选项适用于&c希望独自探索的服务器玩家。&r"
+				"请注意：即使你已选择留在世界出生点，仍可通过完成本任务来进行一次随机传送（并获得一个新的初始小屋）。"
 				""
 				"While you choose start your game alone, you will &9get a random spawnpoint and a gift structure.&r However, this means &byou will be spawned without other players around.&r"
 				"This option is suitable for &cserver players who want to explore alone.&r"
-				"{@pagebreak}"
+				"Please note that even if you have already chosen to stay at the worldspawn, you can still complete this quest in order to get a random teleport (and a new house)."
+				""
 				"&c警告：&r这一步对服务端性能要求较高，且会对所有玩家造成卡顿！请谨慎使用。（你可以使用Chunky预生成区块来避免这个问题）"
 				"&cWarning: &rThis step will cause significant lag to all players!!! Use it carefully. (You may use Chunky to pre-generate some chunks to reduce the lag)."
 			]
 			icon: "createdeco:decal_left"
 			id: "170E4E15DBE89604"
-			incompatible: ["7B54E20910D7008D"]
 			subtitle: "考虑周全……"
 			tasks: [
 				{
@@ -324,7 +325,6 @@
 			]
 			icon: "createdeco:decal_right"
 			id: "7B54E20910D7008D"
-			incompatible: ["170E4E15DBE89604"]
 			subtitle: "考虑周全……"
 			tasks: [
 				{
