@@ -114,6 +114,9 @@ ServerEvents.tags("item", (event) => {
         event.add("quad:snow/acts_solid", id)
     })
     */
+
+    //Tide-FarmersDelight Fix
+    event.add("c:tools/knives","#forge:tools/knives")
 })
 
 ServerEvents.tags("block", (event) => {
