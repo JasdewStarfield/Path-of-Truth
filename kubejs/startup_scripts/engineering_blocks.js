@@ -25,6 +25,9 @@ StartupEvents.registry('block', (event) => {
 		.opaque(true)
 		.fullBlock(true)
 		.renderType('solid')
+		.item(item => {
+			item.rarity('uncommon')
+		})
 		.model('kubejs:block/andesite_engineering')
 	//流体工程块
 	event.create('fluid_engineering')
@@ -39,6 +42,9 @@ StartupEvents.registry('block', (event) => {
 		.opaque(true)
 		.fullBlock(true)
 		.renderType('solid')
+		.item(item => {
+			item.rarity('uncommon')
+		})
 		.model('kubejs:block/fluid_engineering')
 	//精密工程块
 	event.create('precise_engineering')
@@ -53,6 +59,9 @@ StartupEvents.registry('block', (event) => {
 		.opaque(true)
 		.fullBlock(true)
 		.renderType('solid')
+		.item(item => {
+			item.rarity('rare')
+		})
 		.model('kubejs:block/precise_engineering')
 	//电子工程块
 	event.create('electronic_engineering')
@@ -67,6 +76,9 @@ StartupEvents.registry('block', (event) => {
 		.opaque(true)
 		.fullBlock(true)
 		.renderType('solid')
+		.item(item => {
+			item.rarity('epic')
+		})
 		.model('kubejs:block/electronic_engineering')
 	//物流工程块
 	event.create('logistical_engineering')
@@ -81,5 +93,8 @@ StartupEvents.registry('block', (event) => {
 		.opaque(true)
 		.fullBlock(true)
 		.renderType('solid')
+		.item(item => {
+			item.rarity('uncommon')
+		})
 		.model('kubejs:block/logistical_engineering')
 })

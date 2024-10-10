@@ -609,6 +609,17 @@
 					item: "ftbquests:book"
 					type: "item"
 				}
+				{
+					id: "5A76C6D4341FF502"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "alexsmobsinteraction:ami_interaction_wiki"
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "知识掌控者"
 			x: 2.5d

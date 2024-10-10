@@ -69,7 +69,7 @@
 						value: "forge:workbench"
 					}
 				}
-				title: "Any #forge:workbench"
+				title: "任意工作台"
 				type: "item"
 			}]
 			title: "【起点】从原始工具开始"

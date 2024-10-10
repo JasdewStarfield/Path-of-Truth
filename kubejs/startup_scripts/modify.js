@@ -59,4 +59,15 @@ ItemEvents.modification(event => {
       tier.level = 2
     }
   })
+
+  //IE工程块稀有度设定
+  event.modify('immersiveengineering:light_engineering', item => {
+    item.rarity = "RARE"
+  })
+  event.modify('immersiveengineering:rs_engineering', item => {
+    item.rarity = "RARE"
+  })
+  event.modify('immersiveengineering:heavy_engineering', item => {
+    item.rarity = "EPIC"
+  })
 })

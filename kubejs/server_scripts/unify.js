@@ -142,6 +142,9 @@ ServerEvents.recipes(event => {
         ]
   )
 
+  //AMI指导书
+  event.recipes.create.milling(Item.of('alexsmobsinteraction:ami_book_shattered'), 'alexsmobs:animal_dictionary')
+
   //补充：暗影精华桶和光辉混合物桶均可以通过分液返还流体
   event.recipes.create.emptying([Fluid.of("createchromaticreturn:flowing_refined_mixture",1000), 'bucket'], 'createchromaticreturn:refined_mixture_bucket')
   event.recipes.create.emptying([Fluid.of("createchromaticreturn:flowing_shadow_essence",1000), 'bucket'], 'createchromaticreturn:shadow_essence_bucket')
