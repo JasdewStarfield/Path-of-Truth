@@ -1284,7 +1284,7 @@
 				}
 			]
 			title: "神秘旋律"
-			x: 0.0d
+			x: -2.0d
 			y: -4.0d
 		}
 		{
@@ -1851,6 +1851,55 @@
 			title: "我爱读书"
 			x: 0.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"为什么&a抽象魔法师会写音乐&r这种事情是&a另外的故事&r，但总之有&d更多的曲子&r可以听了）"
+				"两首曲子分别是&9深夜&r和&c暴风雪&r的印象曲，因此会有相对独特的风格——不过因为开局点击就送，所以这个任务没有奖励）"
+			]
+			hide: true
+			id: "5D14EEEDED65B6BF"
+			subtitle: "对吧，达瓦里氏"
+			tasks: [
+				{
+					id: "436B0D20B0CFBDB4"
+					item: "kubejs:music_disc_flame_over_the_ice"
+					type: "item"
+				}
+				{
+					id: "46E358A888EB5224"
+					item: "kubejs:music_disc_the_crimson_sky"
+					type: "item"
+				}
+			]
+			title: "气突苏"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"可能有心细的玩家发现了，我们&c没有给出建筑魔杖&r，也就是说你&c不能&r在铺方块的时候偷懒）"
+				"然而这种方法&b其实是存在的&r，只是需要消耗一些&b魔力&r……以及&6和盖亚进行一轮激♂情对决&r）"
+				"鉴于这个工具&d用的人太少以至于无人知晓&r，所以这个任务出现了）"
+			]
+			hide: true
+			id: "4FF64FFAF952A6E2"
+			rewards: [{
+				id: "4B2F9CF3817B6573"
+				item: "botania:tiny_planet"
+				type: "item"
+			}]
+			subtitle: "魔力是硬需求……"
+			tasks: [{
+				id: "1BB9C355EB8874FB"
+				item: "botania:astrolabe"
+				type: "item"
+			}]
+			title: "魔能建筑法杖"
+			x: 0.0d
+			y: -4.0d
 		}
 	]
 	subtitle: ["The Way to Legend"]
