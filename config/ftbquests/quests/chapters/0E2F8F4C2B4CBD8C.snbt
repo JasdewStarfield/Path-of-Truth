@@ -24,7 +24,7 @@
 				"280307C036B9B6E7"
 			]
 			description: ["得到每一种蔚蓝浩空特有的BOSS掉落物！"]
-			hide: false
+			hide: true
 			icon: "blue_skies:blue_journal"
 			id: "0EBCC9ACD99E6B83"
 			rewards: [{
@@ -534,6 +534,51 @@
 				{
 					id: "47E360501CC621C1"
 					item: "collectorsreap:platinum_bass"
+					type: "item"
+				}
+				{
+					id: "386F70BABE349558"
+					item: "netherdepthsupgrade:lava_pufferfish"
+					type: "item"
+				}
+				{
+					id: "27E605DCC252BEE6"
+					item: "netherdepthsupgrade:obsidianfish"
+					type: "item"
+				}
+				{
+					id: "1FFFCB00C381C75C"
+					item: "netherdepthsupgrade:searing_cod"
+					type: "item"
+				}
+				{
+					id: "242B011505F9CF2A"
+					item: "netherdepthsupgrade:bonefish"
+					type: "item"
+				}
+				{
+					id: "5478B37B6E1E73F5"
+					item: "netherdepthsupgrade:wither_bonefish"
+					type: "item"
+				}
+				{
+					id: "41448081AA848224"
+					item: "netherdepthsupgrade:blazefish"
+					type: "item"
+				}
+				{
+					id: "6635CE415AD5D26C"
+					item: "netherdepthsupgrade:magmacubefish"
+					type: "item"
+				}
+				{
+					id: "3025E78A1F141267"
+					item: "netherdepthsupgrade:glowdine"
+					type: "item"
+				}
+				{
+					id: "6662AB68EF28F9AC"
+					item: "netherdepthsupgrade:soulsucker"
 					type: "item"
 				}
 			]
@@ -1229,6 +1274,11 @@
 					item: "nethersdelight:stuffed_hoglin"
 					type: "item"
 				}
+				{
+					id: "1505869CDCC0258E"
+					item: "netherdepthsupgrade:nether_rice_roll_medley_block"
+					type: "item"
+				}
 			]
 			title: "五星级大厨"
 			x: -4.0d
@@ -1589,7 +1639,6 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["722556B2244FD56A"]
 			description: ["比高中课本还多XD"]
 			hide: true
 			id: "6AFB8B9527F2FEB1"
