@@ -186,9 +186,8 @@
 			]
 			id: "1394E8BA5DD00BFE"
 			rewards: [{
-				count: 32
-				id: "7C564C2BF2645FF3"
-				item: "tide:suspicious_bait"
+				id: "6CA34B1E8340CAC7"
+				item: "netherdepthsupgrade:baked_blazefish_stew"
 				type: "item"
 			}]
 			subtitle: "嗯，上天入地去钓鱼"

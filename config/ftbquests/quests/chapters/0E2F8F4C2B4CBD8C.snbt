@@ -439,7 +439,7 @@
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["获得原版，维度模组以及alex的生物中（几乎）所有可以被处理为鱼的东西）"]
 			hide: true
-			icon: "tide:guppy_bucket"
+			icon: "netherdepthsupgrade:blazefish_bucket"
 			id: "725308B81E925449"
 			rewards: [
 				{

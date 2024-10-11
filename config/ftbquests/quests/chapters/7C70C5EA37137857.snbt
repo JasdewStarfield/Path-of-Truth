@@ -159,7 +159,7 @@
 				item: "bosses_of_mass_destruction:void_lily"
 				type: "item"
 			}]
-			subtitle: "从加的饱食度就可以看出来……"
+			subtitle: "从附加效果就可以看出来……"
 			tasks: [{
 				id: "759962C6923883ED"
 				item: "tide:voidseeker"
