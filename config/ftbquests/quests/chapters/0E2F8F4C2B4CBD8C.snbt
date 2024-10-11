@@ -1446,6 +1446,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["哦天啊，制杖并贩剑（确信"]
+			hide: true
 			id: "722556B2244FD56A"
 			rewards: [{
 				id: "104622516C821057"
@@ -1590,6 +1591,7 @@
 		{
 			dependencies: ["722556B2244FD56A"]
 			description: ["比高中课本还多XD"]
+			hide: true
 			id: "6AFB8B9527F2FEB1"
 			rewards: [
 				{
