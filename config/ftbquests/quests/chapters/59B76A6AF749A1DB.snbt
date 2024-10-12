@@ -660,7 +660,11 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["48E0B5D1F9972D20"]
+			dependencies: [
+				"48E0B5D1F9972D20"
+				"087C118AB8CC51F8"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"你应该可以看到电极有两种生产方式。"
 				"在电弧炉运作的过程中，石墨电极的耐久会被消耗，而常规的金属冲压来制作的电极只有一半的耐久度）"

@@ -62,6 +62,7 @@
 			dependencies: ["143E6A57D69BAE65"]
 			description: ["合格的霉国军人应该在听到石油两个字的时候一跃而起！"]
 			id: "2E8FF0455E304658"
+			optional: true
 			subtitle: "美军前置科技"
 			tasks: [{
 				id: "7322415356A4B9EE"
@@ -90,7 +91,11 @@
 			y: 4.5d
 		}
 		{
-			dependencies: ["2E8FF0455E304658"]
+			dependencies: [
+				"2E8FF0455E304658"
+				"143E6A57D69BAE65"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"在基岩层流淌的黑金被你找到了！"
 				"那么下一个问题来了，你打算怎么把这玩意弄到地面上呢？"
@@ -108,7 +113,7 @@
 				type: "observation"
 			}]
 			title: "找到油田"
-			x: 0.0d
+			x: -2.0d
 			y: 6.5d
 		}
 		{

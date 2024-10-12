@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = about
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1726549435923
+  last_edited_time = 1728742661723
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:cc5c4749-5c4f-4f5a-bc61-15fc928117ef-1726549306705] = [groups:][instances:]
+  [loading_requirement_container_meta:2db52c5e-f5b2-485f-a58a-23f04ef0a0e7-1728742593002] = [groups:][instances:]
 }
 
 customization {
@@ -170,7 +170,7 @@ element {
 
 element {
   button_element_executable_block_identifier = a8cac225-5c03-45af-9a6f-abcd774e9b8b-1716564922864
-  [executable_action_instance:2e4708c2-fc3c-44bc-a264-71d7884afde2-1716564966529][action_type:openlink] = https://www.bilibili.com/video/BV14D421G7hR
+  [executable_action_instance:2e4708c2-fc3c-44bc-a264-71d7884afde2-1716564966529][action_type:openlink] = https://www.bilibili.com/video/BV19M29YFE37
   [executable_block:a8cac225-5c03-45af-9a6f-abcd774e9b8b-1716564922864][type:generic] = [executables:2e4708c2-fc3c-44bc-a264-71d7884afde2-1716564966529;]
   restartbackgroundanimations = true
   loopbackgroundanimations = true
@@ -199,12 +199,12 @@ element {
 
 element {
   copy_client_player = true
-  playername = MysteriousEnder
+  playername = JasdewStarfield
   auto_skin = false
   auto_cape = false
   slim = true
-  skin_source = MysteriousEnder
-  cape_source = MysteriousEnder
+  skin_source = JasdewStarfield
+  cape_source = JasdewStarfield
   scale = 50
   parrot = false
   parrot_left_shoulder = false
