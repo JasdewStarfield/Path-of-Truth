@@ -517,6 +517,7 @@
 				item: "botania:cosmetic_lusitanic_shield"
 				type: "item"
 			}]
+			shape: "diamond"
 			subtitle: "科技就是力量"
 			tasks: [{
 				id: "072D81981D3A5820"
@@ -628,6 +629,36 @@
 			title: "电力转应力"
 			x: 14.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["5700B2AFCCAEE31A"]
+			description: [
+				"如果你此时已经击败了末影龙并获取了鞘翅……你就可以合成这个强大的喷气背包。"
+				"使用方法很简单：用应力为它充气，就像给铜背罐充气一样；装备在胸甲槽位，然后——尽情飞行吧！"
+				""
+				"&o&m另有下界合金版本，你在后面可能能用得上（&r&r"
+			]
+			id: "61E609CC8510BDD1"
+			shape: "diamond"
+			subtitle: "让你飞起来——"
+			tasks: [{
+				id: "619FFB4B98593F62"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "create_jetpack:jetpack"
+					tag: {
+						Air: 900
+					}
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: -2.5d
 		}
 	]
 	subtitle: ["Hearts of Steel"]
