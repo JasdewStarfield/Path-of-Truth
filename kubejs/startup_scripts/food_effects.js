@@ -26,11 +26,41 @@ ItemEvents.modification(event => {
         ["sob:boba_tea", 5, 120],
         ["undergardensdelight:droopstew", 5, 120],
         ["undergardensdelight:gronelunch", 5, 360],
+        ["tide:inferno_guppy", 10, 10],
+        ["tide:volcano_tuna", 10, 10],
+        ["tide:magma_mackerel", 10, 10],
+        ["tide:ashen_perch", 10, 10],
+        ["netherdepthsupgrade:lava_pufferfish", 10, 20],
+        ["netherdepthsupgrade:searing_cod", 10, 20],
+        ["netherdepthsupgrade:blazefish", 10, 40],
+        ["netherdepthsupgrade:magmacubefish", 10, 40],
+        ["netherdepthsupgrade:lava_pufferfish_slice", 10, 10],
+        ["netherdepthsupgrade:searing_cod_slice", 10, 10],
+        ["netherdepthsupgrade:blazefish_slice", 10, 20],
+        ["netherdepthsupgrade:magmacubefish_slice", 10, 20],
+        ["netherdepthsupgrade:cooked_lava_pufferfish_slice", 10, 10],
+        ["netherdepthsupgrade:cooked_searing_cod_slice", 10, 10],
+        ["netherdepthsupgrade:cooked_blazefish_slice", 10, 20],
+        ["netherdepthsupgrade:cooked_magmacubefish_slice", 10, 20],
+        ["netherdepthsupgrade:lava_pufferfish_roll", 10, 20],
+        ["netherdepthsupgrade:searing_cod_roll", 10, 20],
+        ["netherdepthsupgrade:blazefish_roll", 10, 40],
+        ["netherdepthsupgrade:magmacubefish_roll", 10, 40],
+        ["netherdepthsupgrade:grilled_lava_pufferfish", 10, 10],
+        ["netherdepthsupgrade:grilled_searing_cod", 10, 10],
+        ["netherdepthsupgrade:grilled_blazefish", 10, 20],
+        ["netherdepthsupgrade:grilled_magmacubefish", 10, 20],
+        ["netherdepthsupgrade:baked_lava_pufferfish_stew", 10, 10],
+        ["netherdepthsupgrade:baked_searing_cod_stew", 10, 10],
+        ["netherdepthsupgrade:baked_blazefish_stew", 10, 20],
+        ["netherdepthsupgrade:baked_magmacubefish_stew", 10, 20],
     ]
     //寒冷效果的食物
     const chill = [
         ["collectorsreap:lime_popsicle", 5, 60],
-        ["farmersdelight:melon_popsicle", 5, 60]
+        ["farmersdelight:melon_popsicle", 5, 60],
+        ["tide:frostbite_flounder", 5, 10],
+        ["tide:soulscaler", 10, 10],
     ]
 
     let addEffect = (itemid, effectid, lv, duration) => {
