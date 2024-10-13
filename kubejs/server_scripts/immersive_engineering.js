@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
     //移除ie初级动能发电配方
     event.remove({id:'immersiveengineering:crafting/windmill_blade'})
     event.remove({id:'immersiveengineering:crafting/windmill_sail'})
-    event.remove({id:'immersiveengineering:crafting/waterwheel_segment'})
+    event.remove({id:'immersiveengineering:crafting/watermill'})
     event.remove({id:'immersiveengineering:crafting/dynamo'})
 
     //传送带
