@@ -2,6 +2,9 @@
 //魔力满值：100000
 
 ServerEvents.recipes(event => {
+    //移除诱惑酿造配方
+    event.remove({id:'botania:brew/allure'})
+    
     //修改白雏菊合成配方
     event.remove({ output: 'botania:pure_daisy' })
     event.recipes.botania.petal_apothecary('botania:pure_daisy', 
