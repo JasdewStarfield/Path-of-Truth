@@ -22,4 +22,6 @@ ItemEvents.tooltip(e => {
 
     e.add(["kubejs:filled_casting_mold_small"], [Text.yellow({translate:'item.kubejs.filled_casting_mold_small.desc'})])
     e.add(["kubejs:filled_casting_mold_large"], [Text.yellow({translate:'item.kubejs.filled_casting_mold_large.desc'})])
+
+    e.add(["kubejs:broken_snowcap_oven"], [Text.yellow({translate:'item.kubejs.broken_snowcap_oven.desc'})])
 })
