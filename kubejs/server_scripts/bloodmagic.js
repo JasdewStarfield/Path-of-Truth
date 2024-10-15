@@ -309,6 +309,37 @@ ServerEvents.recipes(event => {
         "ticks": 200,
         "upgradeLevel": 5
     })
+    //魔力风暴催化
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "item":'botania:mana_bomb'
+            },
+            {
+                "item":'botania:glimmering_dreamwood'
+            },
+            {
+                "item":'botania:mana_bomb'
+            },
+            {
+                "item":'botania:mana_bomb'
+            },
+            {
+                "item":'botania:glimmering_dreamwood'
+            },
+            {
+                "item":'botania:mana_bomb'
+            }
+        ],
+        "output": {
+          "item": 'botania:mana_bomb',
+          "count": 6
+        },
+        "syphon": 12000,
+        "ticks": 200,
+        "upgradeLevel": 5
+    })
     //晶簇炼金变化
     //腐蚀，破坏，复仇，坚毅
     //腐蚀
