@@ -60,7 +60,23 @@ onEvent("recipes", event => {
     event.recipes.botania.pure_daisy("minecraft:acacia_button", "minecraft:acacia_leaves")
     event.recipes.botania.pure_daisy("minecraft:acacia_button", "minecraft:stone", 1)
     //植物炼药台
-    event.recipes.botania.brew("kubejs:torrent", ["minecraft:acacia_boat"])
+    //需要写进数据包
+    //暂时无法使用，原因未知
+    {
+        "type": "botania:brew",
+        "brew": "cold_sweat:ice_resistance",
+        "ingredients": [
+            {
+                "item": "minecraft:nether_wart"
+            },
+            {
+                "item": "cold_sweat:soul_sprout"
+            },
+            {
+                "item": "minecraft:soul_sand"
+            }
+        ]
+    }
     //花药台合成
     event.recipes.botania.petal_apothecary('item', 
         [
