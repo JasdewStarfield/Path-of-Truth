@@ -581,6 +581,11 @@
 					item: "netherdepthsupgrade:soulsucker"
 					type: "item"
 				}
+				{
+					id: "3296E52F518FF556"
+					item: "netherdepthsupgrade:eyeball_fish"
+					type: "item"
+				}
 			]
 			title: "钓鱼王I"
 			x: -2.0d
@@ -591,6 +596,7 @@
 			description: [
 				"获得所有潮汐（Tide）模组中的鱼！"
 				"（由于主世界的特殊性，不要求全部群系鱼收集）"
+				"注意：传奇鱼类的出现和月相与幸运相关，游戏内会有更多的提示！"
 			]
 			hide: true
 			icon: "tide:crystal_shrimp"
