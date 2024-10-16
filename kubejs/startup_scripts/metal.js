@@ -18,6 +18,9 @@ StartupEvents.registry('item', (event) => {
   event.create("bronze_boots",'boots').displayName('Bronze Boots').tier('bronze')
   */
 
+  //粗制锯条
+  event.create("crude_sawblade").displayName('Crude Sawblade')
+
   //补充：锌粉，锡粉
   event.create("zinc_dust").displayName('Zinc Grit')
   event.create("tin_dust").displayName('Tin Grit')

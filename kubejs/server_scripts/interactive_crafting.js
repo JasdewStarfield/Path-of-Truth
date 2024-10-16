@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     //动力工程块系列（安山系列）
     const andesiteEngineering = [
       ["create:mechanical_roller", "create:crushing_wheel"],
-      ["create:mechanical_saw", "immersiveengineering:sawblade"],
+      ["create:mechanical_saw", "kubejs:crude_sawblade"],
       ["create:mechanical_drill", "immersiveengineering:drillhead_iron"],
       ["create:mechanical_plough", "#forge:plates/iron"],
       ["create:mechanical_harvester", "iron_trapdoor"],

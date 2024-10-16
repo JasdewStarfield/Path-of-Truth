@@ -49,13 +49,21 @@ ServerEvents.recipes(event => {
     //锯条
     event.remove({id:"immersiveengineering:crafting/sawblade"})
     event.shaped('immersiveengineering:sawblade', [ 
-        'CAC', 
+        ' A ', 
         'ABA',
-        'CAC'  
+        ' A '  
     ], {
-        A: '#forge:ingots/iron',
-        B: 'create:andesite_alloy_block',
-        C: '#forge:plates/iron'
+        A: '#forge:nuggets/steel',
+        B: 'kubejs:crude_sawblade'
+    })
+    event.shaped('kubejs:crude_sawblade', [ 
+      'CAC', 
+      'ABA',
+      'CAC'  
+    ], {
+      A: '#forge:ingots/iron',
+      B: 'create:andesite_alloy_block',
+      C: '#forge:plates/iron'
     })
 
     //焦炉砖
