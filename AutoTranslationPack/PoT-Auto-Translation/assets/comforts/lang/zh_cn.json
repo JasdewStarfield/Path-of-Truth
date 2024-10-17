@@ -1,0 +1,13 @@
+{
+  "comforts.skipping_day": "睡过这一天",
+  "gui.comforts.config.hammocksStopPhantoms.name": "吊床阻止幻象",
+  "gui.comforts.config.daySleepingPercentage.description": "有多少百分比的玩家必须睡觉才能跳过这一天。\n百分比值 0 将允许只有 1 名玩家跳过这一天，而百分比值 100 将要求所有玩家在跳过这一天之前睡觉。\n值小于 0 将默认为playerSleepingPercentage 游戏规则。",
+  "gui.comforts.config.dayWakeTimeOffset.description": "一整夜睡眠后在新时间中添加或删除的时间量（以刻度为单位）。",
+  "gui.comforts.config.daySleepingPercentage.name": "日间睡眠百分比",
+  "gui.comforts.config.sleepingBagsStopPhantoms.description": "如果启用，尝试在睡袋中睡觉会阻止幻影生成。",
+  "gui.comforts.config.nightWakeTimeOffset.description": "经过一天睡眠后在新时间中添加或删除的时间量（以刻度为单位）。",
+  "gui.comforts.config.hammocksStopPhantoms.description": "如果启用，尝试在吊床上睡觉会阻止幻影生成。",
+  "gui.comforts.config.dayWakeTimeOffset.name": "夜间与白天的唤醒时间偏移",
+  "gui.comforts.config.nightWakeTimeOffset.name": "白天与晚上的唤醒时间偏移",
+  "gui.comforts.config.sleepingBagsStopPhantoms.name": "睡袋可以阻止幻觉"
+}

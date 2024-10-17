@@ -52,4 +52,22 @@ ItemEvents.modification(event => {
   event.modify('nethersdelight:diamond_machete', item => {
     item.maxDamage = 150
   })
+
+  //魔钢镐挖掘等级削弱
+  event.modify('botania:manasteel_pick', item => {
+    item.tier = tier => {
+      tier.level = 2
+    }
+  })
+
+  //IE工程块稀有度设定
+  event.modify('immersiveengineering:light_engineering', item => {
+    item.rarity = "RARE"
+  })
+  event.modify('immersiveengineering:rs_engineering', item => {
+    item.rarity = "RARE"
+  })
+  event.modify('immersiveengineering:heavy_engineering', item => {
+    item.rarity = "EPIC"
+  })
 })

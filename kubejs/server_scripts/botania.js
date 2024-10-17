@@ -2,6 +2,9 @@
 //魔力满值：100000
 
 ServerEvents.recipes(event => {
+    //移除诱惑酿造配方
+    event.remove({id:'botania:brew/allure'})
+    
     //修改白雏菊合成配方
     event.remove({ output: 'botania:pure_daisy' })
     event.recipes.botania.petal_apothecary('botania:pure_daisy', 
@@ -325,7 +328,7 @@ ServerEvents.recipes(event => {
     event.remove({output:'botania:mana_fluxfield'})
     event.recipes.botania.runic_altar('botania:mana_fluxfield', 
         [
-            'immersiveengineering:heavy_engineering', 
+            'kubejs:electronic_engineering', 
             'botania:redstone_root',
             'immersiveengineering:generator',
             'bloodmagic:strengthenedcatalyst'

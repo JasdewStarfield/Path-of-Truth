@@ -1,0 +1,18 @@
+{
+  "trashslot.hint.deletionDenied": "物品不能被丢弃！",
+  "trashslot.hint.toggledOff": "您已关闭垃圾槽！按 %s 重新启用它。",
+  "config.trashslot.enableDeleteKeysInCreative.tooltip": "如果您希望删除键绑定也能在广告素材中使用，请设置为 true。注意：无论即时删除设置如何，广告素材中的项目都将被永久删除！",
+  "trashslot.hint.toggleOn": "按 %s 启用此屏幕的垃圾槽！",
+  "key.trashslot.toggleLock": "锁定/解锁垃圾槽",
+  "config.trashslot.enableDeleteKeysInCreative": "删除广告素材中的关键点",
+  "config.trashslot.allowDeletionWhileTrashSlotIsInvisible": "当 TrashSlot 不可见时允许删除",
+  "trashslot.hint.unlocked": "垃圾箱已解锁。按 %s 将其锁定。",
+  "config.trashslot.enableHints.tooltip": "第一次关闭垃圾槽或可以在支持的屏幕上启用垃圾槽时，TrashSlot 将显示提示。设置为 false 以禁用。",
+  "config.trashslot.deletionDenyList": "删除拒绝列表",
+  "config.trashslot.instantDeletion.tooltip": "这会导致删除槽立即删除项目，类似于创意模式。",
+  "trashslot.hint.deletedWhileHidden": "物品被扔掉了！",
+  "trashslot.hint.locked": "垃圾槽已锁定。按 %s 将其解锁。",
+  "config.trashslot.enableHints": "启用提示",
+  "config.trashslot.deletionDenyList.tooltip": "无法删除的项目列表，以逗号分隔格式“modid:name”。",
+  "config.trashslot.allowDeletionWhileTrashSlotIsInvisible.tooltip": "不推荐，但这将允许您使用按键绑定来删除项目，即使垃圾槽本身是隐藏的。"
+}

@@ -142,6 +142,9 @@ ServerEvents.recipes(event => {
         ]
   )
 
+  //AMI指导书
+  event.recipes.create.milling(Item.of('alexsmobsinteraction:ami_book_shattered'), 'alexsmobs:animal_dictionary')
+
   //补充：暗影精华桶和光辉混合物桶均可以通过分液返还流体
   event.recipes.create.emptying([Fluid.of("createchromaticreturn:flowing_refined_mixture",1000), 'bucket'], 'createchromaticreturn:refined_mixture_bucket')
   event.recipes.create.emptying([Fluid.of("createchromaticreturn:flowing_shadow_essence",1000), 'bucket'], 'createchromaticreturn:shadow_essence_bucket')
@@ -158,6 +161,8 @@ ServerEvents.recipes(event => {
   event.remove({ id:"tfmg:filling/liquid_asphalt_bucket" })
   event.remove({ id:"everycomp:c/botania/livingwood_slab_from_livingwood_planks_stonecutting" })
   event.remove({ id:"everycomp:c/botania/livingwood_stairs_from_livingwood_planks_stonecutting" })
+  event.remove({ id:"everycomp:c/botania/dreamwood_slab_from_dreamwood_planks_stonecutting" })
+  event.remove({ id:"everycomp:c/botania/dreamwood_stairs_from_dreamwood_planks_stonecutting" })
   event.remove({ id: 'create:industrial_iron_block_from_ingots_iron_stonecutting' })
 
 })

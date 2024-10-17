@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
           "type": {
             "item": 'createchromaticreturn:chromatic_compound'
           },
-          "chance": 0.5,
+          "chance": 0.75,
           "mainchance": 0.0
         },
         {
@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
     },
     //输入液体（可以不写）
     "inputFluid": {
-        "amount": 1000,
+        "amount": 3000,
         "fluid": "minecraft:water"
     },
     //输入数量（大概）
@@ -152,7 +152,7 @@ ServerEvents.recipes(event => {
     },
     //输出液体（可以不写）
     "outputFluid": {
-        "amount": 1000,
+        "amount": 3000,
         "fluid": "createchromaticreturn:refined_mixture"
     },
     //使用工具（必须是血魔法原有工具）

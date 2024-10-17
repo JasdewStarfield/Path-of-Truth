@@ -309,6 +309,37 @@ ServerEvents.recipes(event => {
         "ticks": 200,
         "upgradeLevel": 5
     })
+    //魔力风暴催化
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "item":'botania:mana_bomb'
+            },
+            {
+                "item":'botania:glimmering_dreamwood'
+            },
+            {
+                "item":'botania:mana_bomb'
+            },
+            {
+                "item":'botania:mana_bomb'
+            },
+            {
+                "item":'botania:glimmering_dreamwood'
+            },
+            {
+                "item":'botania:mana_bomb'
+            }
+        ],
+        "output": {
+          "item": 'botania:mana_bomb',
+          "count": 6
+        },
+        "syphon": 12000,
+        "ticks": 200,
+        "upgradeLevel": 5
+    })
     //晶簇炼金变化
     //腐蚀，破坏，复仇，坚毅
     //腐蚀
@@ -463,6 +494,21 @@ ServerEvents.recipes(event => {
         },
         "output": {
             "item": 'minecraft:blaze_powder'
+        },
+        "upgradeLevel": 2
+    })
+    //三级血魔法宝珠（法师宝珠）合成方式修改
+    event.remove({id:'bloodmagic:altar/magicianbloodorb'})
+    event.custom({
+        "type": "bloodmagic:altar",
+        "altarSyphon": 25000,
+        "consumptionRate": 20,
+        "drainRate": 20,
+        "input": {
+            "item": 'botania:terrasteel_ingot'
+        },
+        "output": {
+            "item": "bloodmagic:magicianbloodorb"
         },
         "upgradeLevel": 2
     })
@@ -1545,4 +1591,7 @@ ServerEvents.recipes(event => {
             'kubejs:tin_dust'
         ]
     )
+
+    //刷怪蛋自动生产LP
+    event.recipes.create.mixing(Fluid.of('bloodmagic:life_essence_fluid',1000), ['artifacts:mimic_spawn_egg'])
 })

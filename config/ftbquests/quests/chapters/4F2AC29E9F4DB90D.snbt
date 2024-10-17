@@ -660,11 +660,13 @@
 			id: "6F27F12FD5EBE559"
 			rewards: [
 				{
+					count: 12
 					id: "3483DA9CF7A9BFFE"
 					item: "pipez:item_pipe"
 					type: "item"
 				}
 				{
+					count: 12
 					id: "1898D70FDD518270"
 					item: "pipez:fluid_pipe"
 					type: "item"

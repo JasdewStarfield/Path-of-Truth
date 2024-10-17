@@ -1,0 +1,7 @@
+{
+  "text.autoconfig.betterendisland-fabric-1_20.option.general.resummonedDragonDropsEgg": "召唤龙掉落蛋",
+  "text.autoconfig.betterendisland-fabric-1_20.title": "YUNG的Better End Island",
+  "text.autoconfig.betterendisland-fabric-1_20.option.general.useVanillaSpawnPlatform.@Tooltip": "香草黑曜石平台是否应该在末地而不是改造后的平台中生成",
+  "text.autoconfig.betterendisland-fabric-1_20.option.general.useVanillaSpawnPlatform": "生成香草黑曜石平台",
+  "text.autoconfig.betterendisland-fabric-1_20.option.general.resummonedDragonDropsEgg.@Tooltip": "末影龙每次被击败时是否会掉落蛋"
+}

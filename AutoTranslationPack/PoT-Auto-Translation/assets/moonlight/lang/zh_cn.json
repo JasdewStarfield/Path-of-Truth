@@ -1,0 +1,8 @@
+{
+  "message.moonlight.anti_repost": "您似乎从恶意站点下载了 %1$s :( 获取真实版本 %2$s。",
+  "message.moonlight.anti_repost_link": "这里",
+  "gui.moonlight.open_mod_page": "打开 %s CurseForge 页面",
+  "item.minecraft.potion_splash": "喷溅药水",
+  "item.minecraft.potion_lingering": "滞留药水",
+  "fluid.moonlight.generic_fluid": "无名流体"
+}

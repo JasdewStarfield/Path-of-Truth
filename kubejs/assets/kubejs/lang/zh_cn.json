@@ -21,6 +21,7 @@
   "item.kubejs.bronze_axe": "青铜斧",
   "item.kubejs.bronze_shovel": "青铜铲",
   "item.kubejs.bronze_hoe": "青铜锄",
+  "item.kubejs.crude_sawblade": "粗制锯条",
   "item.kubejs.zinc_dust": "锌粉",
   "item.kubejs.tin_dust": "锡粉",
   "item.kubejs.crushed_raw_bauxite": "粉碎铝土矿",
@@ -48,6 +49,7 @@
   "item.kubejs.incomplete_filled_casting_mold_large": "待处理的铸造模具",
   "item.kubejs.filled_casting_mold_large": "已填充的铸造模具",
   "item.kubejs.filled_casting_mold_large.desc": "内含一个钢块",
+  "item.kubejs.broken_snowcap_oven.desc": "这个熔炉损坏了！你需要先用粗霜钢修复才能使用它。",
   "item.kubejs.buran": "暴风雪",
   "item.kubejs.midnight": "深夜",
 
@@ -75,6 +77,7 @@
   "block.kubejs.electronic_engineering": "电子工程块",
   "block.kubejs.bronze_block": "青铜块",
   "block.kubejs.obelisk_base": "重生石碑基座",
+  "block.kubejs.broken_snowcap_oven": "损坏的雪帽熔炉",
   "item.kubejs.obelisk_base.desc1": "你感到一股强大的力量从其中散发出来……",
   "item.kubejs.obelisk_base.desc2": "如果你把它放在石碑下面，那么石碑就可以被无限充能（但是你不可以再次移动基座方块）",
   "item.kubejs.diamond_gears.desc": "这件钻石装备虽然看起来性能优异，但似乎也极其容易损坏……",

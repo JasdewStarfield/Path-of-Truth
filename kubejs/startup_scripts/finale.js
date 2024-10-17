@@ -13,6 +13,9 @@ StartupEvents.registry('block', (event) => {
   .hardness(50)
   .resistance(1200)
   .noDrops()
+  .item(item => {
+    item.rarity('epic')
+  })
   .opaque(true)
   .fullBlock(true)
   .renderType('solid')

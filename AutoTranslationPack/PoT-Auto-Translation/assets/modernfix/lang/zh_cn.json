@@ -1,0 +1,3 @@
+{
+  "modernfix.option.mixin.bugfix.restore_old_dragon_movement": "修复了 MC-272431，它跟踪末影龙无法像 1.13 及更早版本中那样潜入传送门。这导致龙的飞行方式与现代玩家习惯的方式有很大不同，并且还修补了单循环，因此默认情况下不启用它。感谢 Jukitsu 识别出原始代码中的回归。"
+}

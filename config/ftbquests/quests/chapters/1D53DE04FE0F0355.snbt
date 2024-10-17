@@ -26,6 +26,46 @@
 			x: 0.0d
 			y: -3.5d
 		}
+		{
+			click: "https://www.mcmod.cn/modpack/826.html"
+			height: 1.0d
+			hover: ["链接：MCMod百科页面"]
+			image: "everycomp:block/abnww/ecologics/coconut_bookshelf"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			click: "https://www.curseforge.com/minecraft/modpacks/path-of-truth"
+			height: 1.0d
+			hover: ["链接：Curseforge页面"]
+			image: "supplementaries:textures/gui/book/icon/curseforge.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			click: "https://music.163.com/playlist?id=12438635347&userid=327905232"
+			height: 1.0d
+			hover: ["链接：真理之路OST"]
+			image: "amendments:block/music_discs/music_disc_blocks"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			click: "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=7t34O2Z-HFfUU85mQBM1qhIozXeYxTCS&authKey=ySgIXqp51Qte35rERQiH5Fwzu7eLkccb4cVWEgyoecS4GrWimlAoncRigi6Wkf6p&noverify=0&group_code=631894460"
+			height: 1.0d
+			hover: ["链接：QQ交流群【真理之路路边旅店】"]
+			image: "minecraft:item/campfire"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: 0.0d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]
@@ -38,7 +78,7 @@
 			]
 			dependency_requirement: "one_completed"
 			description: [
-				"&a【完成后解锁本整合包起始章节】&r"
+				"&a【完成后解锁本整合包起始章节，并允许移动】&r"
 				"欢迎来到“真理之路”整合包。"
 				"本整合包由&b狂野工程师JasdewStarfield&r与&a抽象魔法师MidnightPigeon&r联合创作。"
 				"在这个世界，你将进行持续的探索发现，直至终末。"
@@ -51,12 +91,12 @@
 				"同时，由于是魔改整合包，很多常见的配方并不再适用，所以&c请善用JEI进行配方查询。&r"
 				"如果你发现&b某一侧的任务完成后没有出现之后的任务&r，请检查另一侧的任务线。"
 				"以及，前期的任务会比较详尽，后面则只起到引导的作用，很多内容可以自行探索。"
-				"有关于汉化，&b启用一次I18n模组&r会解决大部分问题，而解决不掉的血魔法我们已经追加了资源包。"
+				"有关于汉化，&b我们已经手动追加了许多模组的汉化&r，目前未解决的我们也在尽量处理。"
 				"有关于队伍和任务奖励的事情，请翻到下一页。"
 				"{@pagebreak}"
 				"我们默认&9所有的任务奖励都是队伍奖励&r，也就是说，如果多个玩家进行FTB组队，那么就&a只能拿到一份奖励&r，这避免了新手通过加入队伍拿到高等级奖励的可能。"
 				"如果你希望自己拿到全部的奖励，那就不要随意组队。"
-				"具体参见“世界的表象”中有关组队和圈地的任务线表述。"
+				"具体参见“世界的表象”中有关组队的任务线表述。"
 				"有关于魔改配方和特殊说明的部分，请继续看下一页。"
 				"{@pagebreak}"
 				"好了，现在是作者们最喜欢的&c&l高血压&r&r环节（高攻击性警告）。首先，切记&b&l这首先是一个魔改包，然后是一个硬核包。&r&r"
@@ -286,16 +326,17 @@
 			description: [
 				"选择独自开始，你将会&9获得一个自己的小屋&r，但是&b代价是与已有人烟的区域分隔开来。&r"
 				"该选项适用于&c希望独自探索的服务器玩家。&r"
+				"请注意：即使你已选择留在世界出生点，仍可通过完成本任务来进行一次随机传送（并获得一个新的初始小屋）。"
 				""
 				"While you choose start your game alone, you will &9get a random spawnpoint and a gift structure.&r However, this means &byou will be spawned without other players around.&r"
 				"This option is suitable for &cserver players who want to explore alone.&r"
-				"{@pagebreak}"
+				"Please note that even if you have already chosen to stay at the worldspawn, you can still complete this quest in order to get a random teleport (and a new house)."
+				""
 				"&c警告：&r这一步对服务端性能要求较高，且会对所有玩家造成卡顿！请谨慎使用。（你可以使用Chunky预生成区块来避免这个问题）"
 				"&cWarning: &rThis step will cause significant lag to all players!!! Use it carefully. (You may use Chunky to pre-generate some chunks to reduce the lag)."
 			]
 			icon: "createdeco:decal_left"
 			id: "170E4E15DBE89604"
-			incompatible: ["7B54E20910D7008D"]
 			subtitle: "考虑周全……"
 			tasks: [
 				{
@@ -324,7 +365,6 @@
 			]
 			icon: "createdeco:decal_right"
 			id: "7B54E20910D7008D"
-			incompatible: ["170E4E15DBE89604"]
 			subtitle: "考虑周全……"
 			tasks: [
 				{

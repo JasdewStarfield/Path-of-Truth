@@ -4,9 +4,9 @@ ServerEvents.recipes(event => {
     event.shaped(
         Item.of('pipez:wrench', 1),
         [
-        '  C',
+        '  A',
         ' B ',
-        'A  '
+        'C  '
         ],
         {
         A: '#forge:plates/brass',
@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
     //物品管道
     event.remove({id:"pipez:item_pipe"})
     event.shaped(
-        Item.of('pipez:item_pipe', 12),
+        Item.of('pipez:item_pipe', 24),
         [
         'AAA',
         'CBD',
@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
     //流体管道
     event.remove({id:"pipez:fluid_pipe"})
     event.shaped(
-        Item.of('pipez:fluid_pipe', 12),
+        Item.of('pipez:fluid_pipe', 24),
         [
         'AAA',
         'CBD',
@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
     //电力管道
     event.remove({id:"pipez:energy_pipe"})
     event.shaped(
-        Item.of('pipez:energy_pipe', 12),
+        Item.of('pipez:energy_pipe', 24),
         [
         'AAA',
         'CBD',
@@ -73,6 +73,6 @@ ServerEvents.recipes(event => {
     event.replaceInput(
         { output:"pipez:universal_pipe" },
         '#forge:ingots/iron',
-        '#forge:ingots/terrasteel'
+        '#forge:nuggets/terrasteel'
     )
 })

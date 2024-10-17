@@ -1,0 +1,16 @@
+{
+  "config.ichunutil.prop.bnsTheme.desc": "用于盒子和东西的主题",
+  "config.ichunutil.prop.bnsTheme.name": "主题",
+  "config.ichunutil.prop.bnsDoubleClickSpeed.name": "双击速度",
+  "config.ichunutil.prop.bnsDockBorder.name": "码头边框尺寸",
+  "config.ichunutil.prop.bnsDockBorder.desc": "iChunUtil 认为您正在尝试停靠窗口之前的像素数。",
+  "config.ichunutil.prop.bnsTooltipCooldown.name": "工具提示冷却",
+  "config.ichunutil.prop.bnsTooltipCooldown.desc": "在显示工具提示之前将鼠标悬停在元素上的时间（以刻度为单位）。",
+  "gui.ichunutil.configs.needsRestart": "部分配置更改需要重启才能生效！",
+  "config.ichunutil.prop.bnsDockPadding.name": "码头衬垫",
+  "config.ichunutil.prop.bnsDockPadding.desc": "添加到停靠窗口的填充量。",
+  "gui.ichunutil.configs.configs": "配置",
+  "config.ichunutil.prop.bnsDoubleClickSpeed.desc": "注册双击的速度（以刻度为单位）。",
+  "config.ichunutil.prop.bnsMinecraftStyle.desc": "以 Minecraft 风格渲染 B\u0026S 的 GUI。\n0 \u003d 默认样式\n1 \u003d 香草风格\n2 \u003d 纹理包样式。",
+  "config.ichunutil.prop.bnsMinecraftStyle.name": "Minecraft 风格的 B\u0026S"
+}

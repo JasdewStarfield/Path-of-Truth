@@ -1,0 +1,12 @@
+{
+  "block.supplementaries.cannon": "大炮",
+  "block.supplementaries.lunch_basket": "午餐篮",
+  "block.supplementaries.cannonball": "炮弹",
+  "entity.supplementaries.cannonball": "炮弹",
+  "block.supplementaries.fire_pit": "火坑",
+  "message.supplementaries.cannon_maneuver": "按 %2$s 下马，按 %2$s 开火",
+  "create.item_attributes.present_recipient.inverted": "礼物未寄至：“%1$s”",
+  "gui.supplementaries.blackboard.undo": "撤消",
+  "create.item_attributes.present_recipient": "礼物寄给：“%1$s”",
+  "block.supplementaries.lumisene": "卢米塞内"
+}

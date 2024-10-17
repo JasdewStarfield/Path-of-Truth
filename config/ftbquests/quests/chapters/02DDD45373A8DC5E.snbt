@@ -69,7 +69,7 @@
 						value: "forge:workbench"
 					}
 				}
-				title: "Any #forge:workbench"
+				title: "任意工作台"
 				type: "item"
 			}]
 			title: "【起点】从原始工具开始"
@@ -77,25 +77,33 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["2F791EC2607066B4"]
+			dependencies: [
+				"2F791EC2607066B4"
+				"50BB17FEED3B10D2"
+			]
 			description: [
 				"恭喜你初步摆脱了原始人阶段！"
 				""
 				"&c&l重要提示&r&r&4：水车和风车的运作机制有改动。水车现在需要放在河流群系中才能达到最大运作效率，而且需要附近有足量的流体方块（不需要流动水了）；风车则也需要在开阔的环境才能运作（较高的地方以及海洋一类的特定群系效率较高）。做好你的工业选址！&r"
 				"{image:kubejs:textures/waterwheel.png width:140 height:80 align:1}"
 			]
+			icon: "immersiveengineering:waterwheel_segment"
 			id: "0E41103FFC1FC96A"
-			min_required_tasks: 1
+			rewards: [{
+				id: "05319AC98D93ECF2"
+				item: "create:windmill_bearing"
+				type: "item"
+			}]
 			subtitle: "转起来了，站起来了"
 			tasks: [
 				{
-					id: "50B3A1CC2C49EEA3"
-					item: "create:water_wheel"
+					id: "74375DFE34460F0D"
+					item: "immersiveengineering:waterwheel_segment"
 					type: "item"
 				}
 				{
-					id: "65A86CB9144A5B15"
-					item: "create:windmill_bearing"
+					id: "65C35C8386FD2D8A"
+					item: "create:water_wheel"
 					type: "item"
 				}
 			]
@@ -139,7 +147,11 @@
 		}
 		{
 			dependencies: ["7A6ADC4EE6686110"]
-			description: ["你的齿轮和杠杆也在转，不是吗？"]
+			description: [
+				"你的齿轮和杠杆也在转，不是吗？"
+				""
+				"值得一提的是，利用手搓的方式产出的传动杆的数量降低了。然而，等到你获取铁之后，就可以使用动力锯改变这种粗放的生产方式了。"
+			]
 			hide: true
 			id: "2F791EC2607066B4"
 			subtitle: "地球在转。"
@@ -283,7 +295,7 @@
 							value: "forge:plates"
 						}
 					}
-					title: "Any #forge:plates"
+					title: "任意板材"
 					type: "item"
 				}
 			]

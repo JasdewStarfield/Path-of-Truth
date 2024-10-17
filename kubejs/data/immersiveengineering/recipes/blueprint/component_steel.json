@@ -1,1 +1,1 @@
-{"type":"immersiveengineering:blueprint","category":"components","inputs":[{"base_ingredient":{"tag":"forge:plates/steel"},"count":2},{"tag":"blue_skies:ingots/falsite"}],"result":{"item":"immersiveengineering:component_steel"}}
+{"type":"immersiveengineering:blueprint","category":"components","inputs":[{"base_ingredient":{"tag":"forge:plates/steel"},"count":2},{"tag":"blue_skies:nuggets/falsite"}],"result":{"item":"immersiveengineering:component_steel"}}

@@ -1,0 +1,57 @@
+{
+	/* 筛选模式
+	     RESOURCE: 只要当前语言存在 key，就忽略这个key，无论是否翻译
+	     CORRECTION: 只要当前语言的 key 未翻译，就进行翻译，无论资源文件内是否存在
+	*/
+	"mode": "RESOURCE",
+	// 英语特征
+	"enFeature": "([A-Z]?[a-z]{2,}\\s*)+",
+	// 您的语言的特征，默认的是中日韩
+	"yourLanguageFeature": "[\\u0800-\\u9fa5\\uac00-\\ud7ff]+",
+	// 翻译引擎，默认 Google，如果未安装其他翻译引擎，请勿修改本项
+	"translator": "Google",
+	// 屏幕翻译排除原版屏幕
+	"ignoreOriginalScreen": true,
+	// 是否在翻译后的文本里增加原文显示
+	"appendOriginal": true,
+	// 无需翻译文本, 支持正则, 不区分大小写
+	"wordBlacklist": [],
+	// 开启 DEBUG 模式，开启可能会有日志刷屏
+	"debug": false,
+	// 忽略的命名空间, 支持正则
+	"excludedNamespace": [
+		"minecraft",
+		"forge",
+		"^fabric-.*"
+	],
+	// 翻译图标配置
+	"icon": {
+		// 是否常显图标
+		"alwaysDisplay": false,
+		// 显示位置
+		"displayArea": "TOP_RIGHT",
+		// X 轴偏移量
+		"offsetX": 0,
+		// Y 轴偏移量
+		"offsetY": 0
+	},
+	// Google 翻译相关配置
+	"google": {
+		// Google 翻译备用域名，可以填镜像站，只要 API 跟谷歌相同就行
+		"domain": "translate.google.com",
+		/* Google 服务器 IP，如果您所在地区无法直连域名，可以配置此项
+		    参考 https://github.com/Ponderfly/GoogleTranslateIpCheck
+		*/
+		"dns": [
+			"172.217.218.90",
+			"108.177.126.90",
+			"142.250.1.90",
+			"216.239.32.40",
+			"108.177.97.100",
+			"142.251.1.90",
+			"74.125.196.113",
+			"142.251.171.90",
+			"64.233.189.191"
+		]
+	}
+}

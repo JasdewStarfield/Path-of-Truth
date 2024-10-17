@@ -268,7 +268,7 @@
 		{
 			dependencies: ["1AB48D8D4E2767F6"]
 			description: [
-				"你可能已经发现了，不同的食物会注明其拥有的营养值。这表明你在食用对应的食物时，你的营养都会发生变化，而你需要控制每种类型食物的摄取量，因为每种营养素过多或者过低都会产生Debuff（除了糖分，它只会带来过高时的负收益。少吃糖！）；而当你营养够均衡时，它们又会给你带来正面Buff！"
+				"你可能已经发现了，不同的食物会注明其拥有的营养值。这表明你在食用对应的食物时，你的营养都会发生变化，而你需要控制每种类型食物的摄取量，因为每种营养素&4过多&r或者&2过低&r都会产生Debuff（&4除了糖分，它只会带来过高时的负收益。少吃糖！&r&2另外，蔬菜是没有较高时的副作用的，很适合营养过剩的时候调剂用。&r）；而当你营养够均衡时，它们又会给你带来正面Buff！"
 				"另外，还有一个食物多样性的设定。你可以用奖励的这本食物清单（也可以简单地通过一本书来合成它）查看你最近吃过的食物，你的多样性指数，还有产生的收益——简而言之，吃不同种类的大餐更有利于多样性指数上升，而吃得越丰富，你的生命上限越高！"
 				"&o&m&c虽然最后也不会太高就是了&r&r&r"
 			]
@@ -335,14 +335,9 @@
 			}]
 			subtitle: "哦布莱克斯！"
 			tasks: [{
-				checkItem: false
-				entity: "corpse:corpse"
-				icon: "minecraft:zombie_head"
-				id: "324D09B473001AA1"
-				nbt: { }
-				title: "查看你的尸体"
-				type: "questsadditions:interaction"
-				value: 1L
+				id: "290DA61A42335E98"
+				title: "死……死了吗？"
+				type: "checkmark"
 			}]
 			title: "你死啦？"
 			x: 3.5d
@@ -614,6 +609,17 @@
 					item: "ftbquests:book"
 					type: "item"
 				}
+				{
+					id: "5A76C6D4341FF502"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "alexsmobsinteraction:ami_interaction_wiki"
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "知识掌控者"
 			x: 2.5d
@@ -622,24 +628,45 @@
 		{
 			dependencies: ["1AB48D8D4E2767F6"]
 			description: [
-				"如果你想要跑图的话，就用这个吧！简单好做，还能漂移！"
+				"本整合包在原版之外，提供了多种用途不一的交通工具。"
+				""
+				"游戏前期，如果你想要跑图的话，就用&b雪橇&r吧！简单好做，还能漂移！"
 				"&o&m&b滑雪大冒险3D VER&r&r&r"
+				""
+				"中期之后，你可以制作各种来自“沉浸式飞行器”的&9飞行器&r，它们能从空中飞跃复杂的地形，把你轻松带到目的地！"
+				""
+				"另一种交通方式是&6列车&r！虽然你需要巨量的材料来搭建列车和铺设铁路，但一旦制作完成，它就可以自动运行（甚至可以在不加载的区块上运行，还能跨越下界传送门！）。它也可以负担起你的物流任务，是个强有力的帮手。（具体可以搜索“列车机壳”并查看相关思索界面）"
 			]
+			icon: "minecraft:minecart"
 			id: "265C4AEB2E006996"
-			subtitle: "起飞！（仅限雪地）"
-			tasks: [{
-				id: "39F1C8F6EF93A8E5"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "snowyspirit:sleds"
+			subtitle: "起飞！"
+			tasks: [
+				{
+					id: "39F1C8F6EF93A8E5"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "snowyspirit:sleds"
+						}
 					}
+					title: "任意雪橇"
+					type: "item"
 				}
-				title: "Any #snowyspirit:sleds"
-				type: "item"
-			}]
-			title: "雪橇"
+				{
+					id: "7CE9D9644C84059B"
+					item: "immersive_aircraft:airship"
+					type: "item"
+				}
+				{
+					advancement: "create:train"
+					criterion: ""
+					id: "0ECB38FAD23C80CD"
+					title: "组装列车！"
+					type: "advancement"
+				}
+			]
+			title: "交通工具"
 			x: 3.5d
 			y: -1.5d
 		}
@@ -711,7 +738,7 @@
 		{
 			dependencies: ["4814464FAB9C404C"]
 			description: [
-				"在一些地方，你可以找到盐矿。用它你就能制作食盐，然后给各种食物调味！"
+				"在海洋下方的岩层，你可以找到盐矿。用它你就能制作食盐，然后给各种食物调味！"
 				"调味的食物更有营养，能够额外回复饱食度。"
 			]
 			icon: "salt:salt"

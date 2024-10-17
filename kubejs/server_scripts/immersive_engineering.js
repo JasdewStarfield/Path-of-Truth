@@ -30,7 +30,7 @@ ServerEvents.recipes(event => {
     //移除ie初级动能发电配方
     event.remove({id:'immersiveengineering:crafting/windmill_blade'})
     event.remove({id:'immersiveengineering:crafting/windmill_sail'})
-    event.remove({id:'immersiveengineering:crafting/waterwheel_segment'})
+    event.remove({id:'immersiveengineering:crafting/watermill'})
     event.remove({id:'immersiveengineering:crafting/dynamo'})
 
     //传送带
@@ -49,13 +49,21 @@ ServerEvents.recipes(event => {
     //锯条
     event.remove({id:"immersiveengineering:crafting/sawblade"})
     event.shaped('immersiveengineering:sawblade', [ 
-        'CAC', 
+        ' A ', 
         'ABA',
-        'CAC'  
+        ' A '  
     ], {
-        A: '#forge:ingots/iron',
-        B: 'create:andesite_alloy_block',
-        C: '#forge:plates/iron'
+        A: '#forge:nuggets/steel',
+        B: 'kubejs:crude_sawblade'
+    })
+    event.shaped('kubejs:crude_sawblade', [ 
+      'CAC', 
+      'ABA',
+      'CAC'  
+    ], {
+      A: '#forge:ingots/iron',
+      B: 'create:andesite_alloy_block',
+      C: '#forge:plates/iron'
     })
 
     //焦炉砖

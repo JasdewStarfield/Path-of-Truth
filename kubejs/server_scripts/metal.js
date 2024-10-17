@@ -371,4 +371,19 @@ ServerEvents.recipes(event => {
             D: 'minecraft:furnace'
         }
     )
+    //破碎版
+    event.shaped(
+        Item.of('blue_skies:snowcap_oven', 1),
+        [ 
+        ' B ',
+        'ADA',
+        ' B '
+        ],
+        {
+            A: 'undergarden:raw_froststeel',
+            B: 'blue_skies:turquoise_cobblestone',
+            D: 'kubejs:broken_snowcap_oven'
+        }
+    )
+    event.smelting("kubejs:broken_snowcap_oven", "blue_skies:snowcap_oven")
 })

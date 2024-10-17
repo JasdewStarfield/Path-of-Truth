@@ -18,6 +18,9 @@ StartupEvents.registry('item', (event) => {
   event.create("bronze_boots",'boots').displayName('Bronze Boots').tier('bronze')
   */
 
+  //粗制锯条
+  event.create("crude_sawblade").displayName('Crude Sawblade')
+
   //补充：锌粉，锡粉
   event.create("zinc_dust").displayName('Zinc Grit')
   event.create("tin_dust").displayName('Tin Grit')
@@ -79,4 +82,21 @@ StartupEvents.registry('block', (event) => {
 		.fullBlock(true)
 		.renderType('solid')
 		.textureAll('kubejs:block/bronze_block')
+
+  //损坏的雪帽熔炉
+  event.create('broken_snowcap_oven', "cardinal")
+		.displayName('Broken Snowcap Oven')
+		.stoneSoundType()
+    .mapColor('color_light_blue')
+		.hardness(2.0)
+		.resistance(6.0)
+		.requiresTool(true)
+		.tagBlock("mineable/pickaxe")
+		.opaque(true)
+		.fullBlock(true)
+		.renderType('solid')
+		.texture('top', 'kubejs:block/broken_snowcap_oven/snowcap_oven_top')
+    .texture('front', 'kubejs:block/broken_snowcap_oven/snowcap_oven_front')
+    .texture('side', 'kubejs:block/broken_snowcap_oven/snowcap_oven_side')
+    .texture('bottom', 'kubejs:block/broken_snowcap_oven/snowcap_oven_bottom')
 })

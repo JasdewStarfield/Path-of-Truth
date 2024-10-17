@@ -1,0 +1,9 @@
+{
+  "death.attack.bramble.player": "%1$s 在试图逃跑 %2$s 时陷入了荆棘之中",
+  "subtitles.block.spider_egg.break": "蜘蛛蛋破裂",
+  "death.attack.fumarole": "%1$s被活活蒸死",
+  "death.attack.fumarole.player": "由于%2$s，%1$s 洗了致命的蒸汽浴",
+  "subtitles.block.flesh_tendon.drip": "血滴",
+  "subtitles.block.pus_bubble.pop": "脓泡破裂",
+  "death.attack.bramble": "%1$s被刺死"
+}

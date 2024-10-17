@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         'B',
         'A'
       ], {
-        A: base, 
+        A: base,
         B: material
       })
     }
@@ -15,7 +15,7 @@ ServerEvents.recipes(event => {
     //动力工程块系列（安山系列）
     const andesiteEngineering = [
       ["create:mechanical_roller", "create:crushing_wheel"],
-      ["create:mechanical_saw", "immersiveengineering:sawblade"],
+      ["create:mechanical_saw", "kubejs:crude_sawblade"],
       ["create:mechanical_drill", "immersiveengineering:drillhead_iron"],
       ["create:mechanical_plough", "#forge:plates/iron"],
       ["create:mechanical_harvester", "iron_trapdoor"],
@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
       ["create:encased_fan", "create:propeller"],
       ["create_power_loader:empty_andesite_chunk_loader", "glowstone"]
     ]
-    andesiteEngineering.forEach(([output, material]) => 
+    andesiteEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:andesite_engineering", material)
     )
 
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
       ["create:hose_pulley", "dried_kelp_block"],
       ["create:portable_fluid_interface", "create:chute"]
     ]
-    fluidEngineering.forEach(([output, material]) => 
+    fluidEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:fluid_engineering", material)
     )
 
@@ -64,17 +64,44 @@ ServerEvents.recipes(event => {
       ["create:rotation_speed_controller", "create:precision_mechanism"],
       ["create_power_loader:empty_brass_chunk_loader", "glowstone"]
     ]
-    preciseEngineering.forEach(([output, material]) => 
+    preciseEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:precise_engineering", material)
     )
 
 
     //一些其它的姑且也放这罢
+    //传动杆
+    event.remove({id: "create:crafting/kinetics/shaft"})
+    event.shaped(
+      Item.of('create:shaft', 4),
+      [
+      'A',
+      'A'
+      ],
+      {
+          A: 'create:andesite_alloy'
+      }
+    )
+    //水车部件
+    event.remove({id: "immersiveengineering:crafting/waterwheel_segment"})
+    event.shaped(
+      Item.of('immersiveengineering:waterwheel_segment', 2),
+      [
+      ' A ',
+      'AAA',
+      'BCB'
+      ],
+      {
+          A: 'botania:livingwood_planks',
+          B: 'create:andesite_alloy',
+          C: '#forge:ingots/copper'
+      }
+    )
     //水车
     event.replaceInput(
       { output:/create:.*water_wheel/ },
       '#minecraft:planks',
-      'botania:livingwood_planks'
+      'immersiveengineering:waterwheel_segment'
     )
     //粉碎轮
     event.replaceInput(

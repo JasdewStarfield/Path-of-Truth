@@ -3,7 +3,7 @@
 	#The number of item stacks held in a basic unit of storage.
 	#1x1 drawers hold 8 units, 1x2 drawers hold 4 units, 2x2 drawers hold 2 units.
 	#Half-depth drawers hold half those amounts.
-	baseStackStorage = 1
+	baseStackStorage = 2
 	#Controller range defines how far away a drawer can be connected
 	#on X, Y, or Z planes.  The default value of 50 gives the controller a very
 	#large range, but not beyond the chunk load distance.
@@ -27,7 +27,7 @@
 	#Drawers can still only be inserted into a block with enough capacity for the items held.
 	forceDetachedDrawersMaxCapacityCheck = true
 	#If enabled, carrying filled drawers in your inventory gives slowness debuff, unless a Portability Upgrade is used.
-	heavyDrawers = false
+	heavyDrawers = true
 
 [StorageUpgrades]
 	#Storage upgrades multiply storage capacity by the given amount.
@@ -45,5 +45,5 @@
 	#When true, shows quantity as NxS + R (by stack size) rather than count
 	wailaStackRemainder = true
 	#When true, does not show current quantities unless quantify key was used
-	wailaRespectQuantifyKey = false
+	wailaRespectQuantifyKey = true
 

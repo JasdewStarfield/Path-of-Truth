@@ -1,0 +1,8 @@
+{
+  "botaniamisc.pollidisiac.feed_adults": "喂养成年动物",
+  "botaniamisc.pollidisiac.feed_babies": "喂养小动物",
+  "botaniamisc.pollidisiac.feed_all": "喂养所有动物",
+  "botania.page.teruTeruBozu2": "虽然$(item)Teru Teru Bozu$(0)喜欢$(item)向日葵$(0)，但提供$(item)蓝色兰花$(0)可能会影响他们的情绪和天气。",
+  "botania.page.pollidisiac2": "用$(l:basics/wand)$(item)森林魔杖$(0)$(/l)在花上潜行右键单击（或使用$(item)Dispenser$(0)），$ (thing)Function Mode$(0) 切换花是否只喂养成人、婴儿或所有动物。",
+  "botania.page.manaAlchemyDripleafShrinking": "缩小$(item)大滴叶$(0)"
+}

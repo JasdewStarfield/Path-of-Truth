@@ -1,0 +1,32 @@
+{
+  "type": "create_jetpack:copy_nbt_mechanical_crafting",
+  "pattern": [
+    " PSP ",
+    "PYXYP",
+    "PCECP",
+    " C C "
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:elytra"
+    },
+    "C": {
+      "item": "create:chute"
+    },
+    "X": {
+      "item": "create:netherite_backtank"
+    },
+    "S": {
+      "item": "create:shaft"
+    },
+    "Y": {
+      "item": "immersiveengineering:light_engineering"
+    },
+    "P": {
+      "tag": "forge:plates/brass"
+    }
+  },
+  "result": {
+    "item": "create_jetpack:netherite_jetpack"
+  }
+}
