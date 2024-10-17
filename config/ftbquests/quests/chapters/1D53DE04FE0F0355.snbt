@@ -26,6 +26,46 @@
 			x: 0.0d
 			y: -3.5d
 		}
+		{
+			click: "https://www.mcmod.cn/modpack/826.html"
+			height: 1.0d
+			hover: ["链接：MCMod百科页面"]
+			image: "everycomp:block/abnww/ecologics/coconut_bookshelf"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			click: "https://www.curseforge.com/minecraft/modpacks/path-of-truth"
+			height: 1.0d
+			hover: ["链接：Curseforge页面"]
+			image: "supplementaries:textures/gui/book/icon/curseforge.png"
+			rotation: 0.0d
+			width: 1.0d
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			click: "https://music.163.com/playlist?id=12438635347&userid=327905232"
+			height: 1.0d
+			hover: ["链接：真理之路OST"]
+			image: "amendments:block/music_discs/music_disc_blocks"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			click: "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=7t34O2Z-HFfUU85mQBM1qhIozXeYxTCS&authKey=ySgIXqp51Qte35rERQiH5Fwzu7eLkccb4cVWEgyoecS4GrWimlAoncRigi6Wkf6p&noverify=0&group_code=631894460"
+			height: 1.0d
+			hover: ["链接：QQ交流群【真理之路路边旅店】"]
+			image: "minecraft:item/campfire"
+			rotation: 0.0d
+			width: 1.0d
+			x: 4.0d
+			y: 0.0d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]
