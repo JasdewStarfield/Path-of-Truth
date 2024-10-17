@@ -328,6 +328,7 @@ musicmanager = "client"
 createdynlight = "server"
 gpu_tape = "client"
 sodiumdynamiclights = "client"
+sounds = "client"
 
 [Debug]
 debugForceSide = "default"
