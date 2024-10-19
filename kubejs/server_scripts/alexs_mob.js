@@ -136,6 +136,21 @@ ServerEvents.recipes(event => {
     )
     //龙虾复制
     event.recipes.botania.mana_infusion('2x alexsmobs:spawn_egg_lobster', 'alexsmobs:spawn_egg_lobster', 1000,'botania:conjuration_catalyst')
+    //酋长蟹及其复制
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'immersiveengineering:wirecutter'
+        },
+        "baseinput": {
+            "item": 'alexsmobs:spawn_egg_lobster'
+        },
+        "output": {
+            "item": 'collectorsreap:chieftain_crab_spawn_egg'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
+    event.recipes.botania.mana_infusion('2x collectorsreap:chieftain_crab_spawn_egg', 'collectorsreap:chieftain_crab_spawn_egg', 1000,'botania:conjuration_catalyst')
     //螳螂虾及其复制
     event.custom({
         "type": "bloodmagic:array",

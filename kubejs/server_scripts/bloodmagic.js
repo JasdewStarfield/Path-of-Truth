@@ -571,6 +571,20 @@ ServerEvents.recipes(event => {
     })
 
     //炼金矩阵配方修改
+    //原版蘑菇-双孢菇转化
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'minecraft:red_mushroom'
+        },
+        "baseinput": {
+            "item": 'minecraft:brown_mushroom'
+        },
+        "output": {
+            "item": 'collectorsreap:portobello'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/lavasigil.png"
+    })
     //海潮蛤-鹦鹉螺壳转化
     event.custom({
         "type": "bloodmagic:array",
