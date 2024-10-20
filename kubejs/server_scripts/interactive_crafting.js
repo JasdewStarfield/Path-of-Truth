@@ -38,6 +38,7 @@ ServerEvents.recipes(event => {
       InteractiveCrafting(output, "kubejs:andesite_engineering", material)
     )
 
+    //流体工程块（铜）
     const fluidEngineering = [
       ["create:deployer", "create:brass_hand"],
       ["create:spout", "hopper"],
@@ -51,6 +52,7 @@ ServerEvents.recipes(event => {
       InteractiveCrafting(output, "kubejs:fluid_engineering", material)
     )
 
+    //精密工程块（黄铜）
     const preciseEngineering = [
       ["create:display_link", "create:redstone_link"],
       ["create:clockwork_bearing", "create:adjustable_chain_gearshift"],
@@ -66,6 +68,17 @@ ServerEvents.recipes(event => {
     ]
     preciseEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:precise_engineering", material)
+    )
+
+    //传感工程块
+    const sensoryEngineering = [
+      ['createutilities:void_motor', "create_new_age:advanced_motor"],
+      ['createutilities:void_chest', "ender_chest"],
+      ['createutilities:void_tank', "tfmg:steel_fluid_tank"],
+      ['createutilities:void_battery', "immersiveengineering:capacitor_mv"],
+    ]
+    sensoryEngineering.forEach(([output, material]) =>
+      InteractiveCrafting(output, "immersiveengineering:rs_engineering", material)
     )
 
 

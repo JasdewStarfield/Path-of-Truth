@@ -24,5 +24,6 @@
   "desc.immersiveengineering.info.mineral.frozen_metals":"冰封金属矿",
   "desc.immersiveengineering.info.mineral.clog_coal":"扼塞煤层",
 
-  "block.immersiveengineering.duroplast": "酚醛树脂块"
+  "block.immersiveengineering.duroplast": "酚醛树脂块",
+  "block.immersiveengineering.rs_engineering": "传感工程块"
 }

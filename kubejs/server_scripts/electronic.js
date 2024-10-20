@@ -1,7 +1,11 @@
 ServerEvents.recipes(event => {
-    //机械手和电子管
+    //电子管
     event.remove({id:"create:crafting/materials/electron_tube"})
     event.recipes.create.deploying('create:electron_tube', ['#forge:plates/silver', 'create:polished_rose_quartz'])
+
+    //引力子管
+    event.remove({id:"createutilities:shaped/graviton_tube"})
+    event.recipes.create.deploying('createutilities:graviton_tube', ['createutilities:void_steel_sheet', 'createutilities:polished_amethyst'])
 
     //精密零件
     event.remove({id:"create:sequenced_assembly/precision_mechanism"})

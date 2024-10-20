@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "tfmg:block/steel_casing",
+		"0": "createutilities:block/void_casing",
 		"1": "immersiveengineering:block/metal_decoration/redstone_engineering",
-		"particle": "tfmg:block/steel_casing"
+		"particle": "createutilities:block/void_casing"
 	},
 	"elements": [
 		{

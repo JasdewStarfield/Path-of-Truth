@@ -172,7 +172,7 @@
 			}]
 			title: "天作之合"
 			x: 5.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -188,7 +188,7 @@
 			}]
 			title: "源远流长"
 			x: 11.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -204,7 +204,7 @@
 			}]
 			title: "精益求精"
 			x: 15.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["577E2B9C81B59295"]
@@ -215,7 +215,7 @@
 				type: "item"
 			}]
 			x: 11.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["0D69D8466E9218E1"]
@@ -226,7 +226,7 @@
 				type: "item"
 			}]
 			x: 5.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["21AB683F37938358"]
@@ -237,13 +237,13 @@
 				type: "item"
 			}]
 			x: 15.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4989FE4EDCFFB309"]
 			description: ["冷知识：钢是合金"]
 			id: "657DC1780DCCD565"
-			subtitle: "合金#5"
+			subtitle: "合金#6"
 			tasks: [{
 				id: "20CD9FF547C168A6"
 				item: "tfmg:steel_ingot"
@@ -267,7 +267,7 @@
 			}]
 			title: "轻车熟路"
 			x: 21.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["657DC1780DCCD565"]
@@ -278,10 +278,13 @@
 				type: "item"
 			}]
 			x: 21.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["39F03860B4042EB0"]
+			dependencies: [
+				"39F03860B4042EB0"
+				"32EE8784F8B9200F"
+			]
 			icon: "createdeco:decal_electrical"
 			id: "26BA5A8893BF78C7"
 			tasks: [{
@@ -294,7 +297,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["657DC1780DCCD565"]
+			dependencies: [
+				"4A1D286A2CADDD34"
+				"7E03548BD6891DB5"
+			]
 			id: "32EE8784F8B9200F"
 			subtitle: "工程块#5"
 			tasks: [{
@@ -302,14 +308,14 @@
 				item: "immersiveengineering:rs_engineering"
 				type: "item"
 			}]
-			title: "红光满面"
+			title: "感同身受"
 			x: 19.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["26BA5A8893BF78C7"]
 			id: "0C6B15031009904C"
-			subtitle: "合金#6"
+			subtitle: "合金#7"
 			tasks: [{
 				id: "7F6E57FC8B2E0342"
 				item: "immersiveengineering:ingot_electrum"
@@ -341,7 +347,7 @@
 				type: "item"
 			}]
 			x: 29.5d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -358,7 +364,7 @@
 			}]
 			title: "重于泰山"
 			x: 29.5d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["6EC555AAE7573B3F"]
@@ -371,7 +377,7 @@
 			}]
 			title: "钢正不阿"
 			x: 27.0d
-			y: -1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["38F41C7A2075E5CC"]
@@ -410,7 +416,7 @@
 			}]
 			title: "风驰电掣"
 			x: 33.5d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: [
@@ -462,7 +468,7 @@
 				type: "item"
 			}]
 			x: 17.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["294369EA93792F33"]
@@ -475,10 +481,13 @@
 			}]
 			title: "川流不息"
 			x: 17.0d
-			y: -2.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["6EC555AAE7573B3F"]
+			dependencies: [
+				"6EC555AAE7573B3F"
+				"0E9E3B24CB2D8385"
+			]
 			id: "2E5F0D8FEABE0E50"
 			tasks: [{
 				id: "2ECD118F1B8EB2CD"
@@ -486,7 +495,7 @@
 				type: "item"
 			}]
 			x: 27.0d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["29D490BEC5BBC8E1"]
@@ -536,6 +545,41 @@
 			}]
 			x: 18.5d
 			y: -10.5d
+		}
+		{
+			dependencies: ["657DC1780DCCD565"]
+			id: "4A1D286A2CADDD34"
+			subtitle: "合金#5"
+			tasks: [{
+				id: "3EA7ED6DF68C45A7"
+				item: "createutilities:void_steel_ingot"
+				type: "item"
+			}]
+			title: "……"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A1D286A2CADDD34"]
+			id: "7E03548BD6891DB5"
+			tasks: [{
+				id: "56AB9360E47810C8"
+				item: "createutilities:void_casing"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0C6B15031009904C"]
+			id: "0E9E3B24CB2D8385"
+			tasks: [{
+				id: "3115EA9090B3F1CC"
+				item: "immersiveengineering:component_electronic"
+				type: "item"
+			}]
+			x: 25.0d
+			y: 1.5d
 		}
 	]
 	subtitle: ["Industrial Landmarks"]

@@ -21,7 +21,7 @@
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 13.0d
+			x: 16.0d
 			y: -2.0d
 		}
 		{
@@ -255,8 +255,8 @@
 				type: "item"
 			}]
 			title: "工程基本单元 I"
-			x: 7.0d
-			y: -1.0d
+			x: 9.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -269,6 +269,8 @@
 				"电火花要开始在机械中闪耀了！"
 			]
 			id: "5700B2AFCCAEE31A"
+			shape: "gear"
+			size: 2.0d
 			subtitle: "工业化机械第一步"
 			tasks: [{
 				id: "3D0D2F088126E423"
@@ -276,8 +278,8 @@
 				type: "item"
 			}]
 			title: "工程基本单元 II"
-			x: 8.5d
-			y: -1.0d
+			x: 11.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7A7C0A48248FA32B"]
@@ -315,8 +317,8 @@
 				}
 			]
 			title: "蓝图与工作"
-			x: 8.5d
-			y: 0.5d
+			x: 9.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -346,18 +348,20 @@
 				}
 			]
 			title: "能源通路"
-			x: 10.0d
-			y: -2.5d
+			x: 11.0d
+			y: -1.0d
 		}
 		{
 			dependencies: [
 				"759F8BFB75CBF0B6"
 				"5700B2AFCCAEE31A"
+				"04AAF6565C04DA94"
 			]
 			description: [
 				"通过切割磁感线可以产生电流，这也是把create的应力转化为电力的唯一方式——至少目前这是唯一方式。"
 				"磁铁需要你自己去地下挖——以及自己升级你的磁铁来获得更高的发电功率，磁感应强度和发电量成正比）"
 			]
+			hide_until_deps_complete: true
 			id: "4B2D7C8A59593200"
 			subtitle: "初中物理知识"
 			tasks: [
@@ -373,7 +377,7 @@
 				}
 			]
 			title: "切割磁感线"
-			x: 10.0d
+			x: 13.0d
 			y: -1.0d
 		}
 		{
@@ -403,20 +407,19 @@
 				value: 1000L
 			}]
 			title: "【终点】电火花"
-			x: 12.0d
+			x: 15.0d
 			y: -1.0d
 		}
 		{
 			dependencies: [
 				"242C57AF7F6116E4"
-				"7A7C0A48248FA32B"
+				"4B2D7C8A59593200"
 			]
 			description: [
 				"把它放在你的碳刷旁边就可以自动收集碳刷提供的能量了。下一章会介绍更多传输电力的方式。"
 				"记得要选择对应任务哦。"
 				"当然其它任务也可以用这个来自动提交"
 			]
-			hide_until_deps_complete: true
 			icon: "ftbquests:screen_1"
 			id: "250398995ECDA3CE"
 			subtitle: "以防你不知道，这个东西是用来提交有能量需求的任务的"
@@ -432,20 +435,19 @@
 				}
 			]
 			title: "给我个任务吧！"
-			x: 12.0d
-			y: 0.5d
+			x: 15.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"242C57AF7F6116E4"
-				"7A7C0A48248FA32B"
+				"4B2D7C8A59593200"
 			]
 			description: [
 				"发电必需品）"
 				"最符合物理的一集，正常的转转显然不可能直接发电，因此你需要磁力）"
 				"天然的磁铁是最弱的，所以你显然需要想办法加强——不管是用科技还是魔法）"
 			]
-			hide_until_deps_complete: true
 			id: "6F6699667400028E"
 			subtitle: "看到磁感应强度了对吧）"
 			tasks: [{
@@ -454,8 +456,8 @@
 				type: "item"
 			}]
 			title: "物理人心动时刻"
-			x: 12.0d
-			y: -2.5d
+			x: 15.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["7A7C0A48248FA32B"]
@@ -505,7 +507,7 @@
 			]
 			title: "搭建强化高炉"
 			x: 7.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["7A7C0A48248FA32B"]
@@ -538,28 +540,24 @@
 			}]
 			title: "绝对防御！"
 			x: 7.0d
-			y: 0.5d
+			y: 1.0d
 		}
 		{
-			dependencies: ["2E4B9CF9789B1AF1"]
-			description: [
-				"炮台基本单元1/1"
-				"下一章会很有用"
+			dependencies: [
+				"4EA98676CE0686BD"
+				"41831F6B01965541"
 			]
+			description: [""]
 			id: "04AAF6565C04DA94"
-			rewards: [{
-				id: "7F151019D05288DC"
-				item: "storagedrawers:redstone_upgrade"
-				type: "item"
-			}]
-			subtitle: "自防御装置基本要素"
+			shape: "gear"
+			size: 2.0d
 			tasks: [{
 				id: "4A3C2F09B3D2C958"
 				item: "immersiveengineering:rs_engineering"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 0.5d
+			x: 11.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5B1818D5A1142A16"]
@@ -627,7 +625,7 @@
 				}
 			]
 			title: "电力转应力"
-			x: 14.0d
+			x: 17.0d
 			y: -1.0d
 		}
 		{
@@ -638,6 +636,7 @@
 				""
 				"&o&m另有下界合金版本，你在后面可能能用得上（&r&r"
 			]
+			hide_until_deps_complete: true
 			id: "61E609CC8510BDD1"
 			shape: "diamond"
 			subtitle: "让你飞起来——"
@@ -657,8 +656,63 @@
 				}
 				type: "item"
 			}]
-			x: 8.5d
-			y: -2.5d
+			x: 13.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7A7C0A48248FA32B"]
+			hide_until_deps_complete: true
+			id: "41831F6B01965541"
+			tasks: [{
+				id: "7635EDACF57EC534"
+				item: "createutilities:void_steel_ingot"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["41831F6B01965541"]
+			id: "4EA98676CE0686BD"
+			tasks: [{
+				id: "2878204429A706A4"
+				item: "createutilities:void_casing"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["04AAF6565C04DA94"]
+			hide_until_deps_complete: true
+			icon: "minecraft:ender_eye"
+			id: "253CE41C3E000533"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "01B56EAD4FFCD4BB"
+					item: "createutilities:void_motor"
+					type: "item"
+				}
+				{
+					id: "426ABC2F5533B1B8"
+					item: "createutilities:void_chest"
+					type: "item"
+				}
+				{
+					id: "546CD767DCFDD5EB"
+					item: "createutilities:void_tank"
+					type: "item"
+				}
+				{
+					id: "1A4024C51B7D3A22"
+					item: "createutilities:void_battery"
+					type: "item"
+				}
+			]
+			title: "虚空传输！"
+			x: 13.0d
+			y: 1.0d
 		}
 	]
 	subtitle: ["Hearts of Steel"]

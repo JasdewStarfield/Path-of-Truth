@@ -126,7 +126,7 @@ ServerEvents.recipes(event => {
     'D B D',
     ' DDD '
   ], {
-    A: 'immersiveengineering:light_engineering',
+    A: 'immersiveengineering:rs_engineering',
     B: 'immersiveengineering:component_iron',
     D: '#forge:coal_coke'
   })

@@ -386,4 +386,8 @@ ServerEvents.recipes(event => {
         }
     )
     event.smelting("kubejs:broken_snowcap_oven", "blue_skies:snowcap_oven")
+
+    //虚空钢
+    event.remove({id:"createutilities:mixing/void_steel_ingot"})
+    event.recipes.create.mixing('createutilities:void_steel_ingot', ['#forge:ingots/steel','#endersdelight:enderman_loot', '#endersdelight:enderman_loot']).heated()
 })

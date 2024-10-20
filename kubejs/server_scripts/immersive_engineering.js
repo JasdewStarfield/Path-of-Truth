@@ -97,12 +97,19 @@ ServerEvents.recipes(event => {
         '#forge:ingots/bronze'
     )
 
+    //剪线钳
+    event.replaceInput(
+      { output:"immersiveengineering:wirecutter" },
+      '#forge:ingots/iron',
+      '#forge:ingots/steel'
+    )
+
     //装配台
     event.replaceInput(
       { output:"immersiveengineering:workbench" },
       '#forge:ingots/iron',
       '#forge:ingots/steel'
-  )
+    )
 
     //高炉炼铁
     event.remove({id:/immersiveengineering:blastfurnace\/steel.*/})
@@ -507,10 +514,10 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
         'immersiveengineering:heavy_engineering'
         ], 'tfmg:heavy_machinery_casing', [
-        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/cloggrum']),
+        event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/cloggrum']),
         event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_heavy_engineering', 'kubejs:forgotten_mechanism']),
         event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_heavy_engineering', 'tfmg:steel_mechanism']),
-        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/cloggrum'])
+        event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/cloggrum'])
     ]).transitionalItem('kubejs:incomplete_heavy_engineering').loops(1)
 
     event.shaped('immersiveengineering:rs_engineering', [ 
@@ -518,18 +525,18 @@ ServerEvents.recipes(event => {
         'ABA',
         'CAD'  
     ], {
-        B: 'tfmg:steel_casing',
-        A: '#forge:plates/falsite',
-        D: '#forge:dusts/redstone',
-        C: 'immersiveengineering:electron_tube'
+        B: 'createutilities:void_casing',
+        A: 'createdeco:zinc_sheet',
+        D: 'minecraft:ender_eye',
+        C: 'createutilities:graviton_tube'
     })
     event.recipes.create.sequenced_assembly([
         'immersiveengineering:rs_engineering'
-        ], 'tfmg:steel_casing', [
-        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/falsite']),
-        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', '#forge:dusts/redstone']),
-        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', 'immersiveengineering:electron_tube']),
-        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/falsite'])
+        ], 'createutilities:void_casing', [
+        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_light_engineering', 'createdeco:zinc_sheet']),
+        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', 'minecraft:ender_eye']),
+        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', 'createutilities:graviton_tube']),
+        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_light_engineering', 'createdeco:zinc_sheet'])
     ]).transitionalItem('kubejs:incomplete_rs_engineering').loops(1)
 
     //塑料
