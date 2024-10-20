@@ -283,6 +283,10 @@
 		}
 		{
 			dependencies: ["7A7C0A48248FA32B"]
+			description: [
+				"通过蓝图制作的零部件相对来说会比直接用工作台搓要廉价一些（如果有工作台配方"
+				"但是要消耗的材料类型是不会变的）"
+			]
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:workbench"
 			id: "2E4B9CF9789B1AF1"
@@ -547,10 +551,18 @@
 				"4EA98676CE0686BD"
 				"41831F6B01965541"
 			]
-			description: [""]
+			description: [
+				"虽然用到这个工程块的机器大部分都&3不是必要的&r，但是它们的功能是&d最诱人&r的。"
+				"这一工程块将会&2为机械添加超越时空的能力&r，让你的物品，液体，电力甚至应力传输无视空间阻隔！"
+				"但相应的，这显然&9不是纯机械可以达成的效果&r……"
+				""
+				"&o&a是的这玩意需要用泰拉钢才能做，所以推魔法线去吧&r&r"
+				"&o&6为什么碳刷需要这个？因为碳刷也需要魔法才能通电）&r&r"
+			]
 			id: "04AAF6565C04DA94"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "穿越时空的工程"
 			tasks: [{
 				id: "4A3C2F09B3D2C958"
 				item: "immersiveengineering:rs_engineering"
@@ -661,19 +673,32 @@
 		}
 		{
 			dependencies: ["7A7C0A48248FA32B"]
+			description: [
+				"它和它的同伴们会隔着遥远的距离进行共振……"
+				"但在你没加工前，它们只是能共振而已。"
+			]
 			hide_until_deps_complete: true
 			id: "41831F6B01965541"
+			subtitle: "虚空共振"
 			tasks: [{
 				id: "7635EDACF57EC534"
 				item: "createutilities:void_steel_ingot"
 				type: "item"
 			}]
+			title: "虚空钢锭"
 			x: 9.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["41831F6B01965541"]
+			description: [
+				"通过这一框架，你可以创造突破空间限制的机械组，比如虚空传递应力的马达组……"
+				"但很显然这是个半成品。"
+				""
+				"&b&o当然拿来做装饰还是挺好看的）&r&r"
+			]
 			id: "4EA98676CE0686BD"
+			subtitle: "基本共鸣框架"
 			tasks: [{
 				id: "2878204429A706A4"
 				item: "createutilities:void_casing"
@@ -684,10 +709,19 @@
 		}
 		{
 			dependencies: ["04AAF6565C04DA94"]
+			description: [
+				"&o*这是一个提示性任务！&r"
+				""
+				"通过&5末影之力&r，你现在发现了&9虚空传输一切&r的可能……"
+				"也许是精简产线的最佳选择）"
+				""
+				"&m&o&b这不比pipez好用（笑&r&r&r"
+			]
 			hide_until_deps_complete: true
 			icon: "minecraft:ender_eye"
 			id: "253CE41C3E000533"
 			shape: "diamond"
+			subtitle: "末影住民"
 			tasks: [
 				{
 					id: "01B56EAD4FFCD4BB"
