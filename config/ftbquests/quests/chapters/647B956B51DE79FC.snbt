@@ -45,7 +45,7 @@
 				"仪式启动需要LP，一些功能持续性的仪式需要持续消耗LP，所以请确保你携带的气血宝珠足够多——附近多放几个祭坛也行）"
 				"&o&c注：不同属性的仪式石是通过“喷漆”获得的，这一合成方式在jei中无法查询，可以查询“元素铭文工具”获得想要的东西。当然，更省心的方式是直接使用仪式推测杖来完成——因为它有无限耐久。&r&r"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "bloodmagic:masterritualstone"
 			id: "5A5B1D96C50D1EAE"
 			rewards: [{

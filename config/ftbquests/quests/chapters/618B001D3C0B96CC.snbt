@@ -42,8 +42,8 @@
 				"终于，你获得了一些植物魔法的高级材料，这也意味着你可以合成一些更带劲的东西了。"
 				"现在，泰拉钢的合成需要更少的魔力——但相应的需要更复杂的材料。"
 			]
-			hide: true
 			hide_details_until_startable: true
+			hide_until_deps_complete: true
 			id: "0F9DF1C5137194E4"
 			rewards: [{
 				id: "4855EAF76355F55E"

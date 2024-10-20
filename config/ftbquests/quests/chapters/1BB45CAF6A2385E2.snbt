@@ -49,7 +49,7 @@
 				""
 				"另外你也许会发现，这一章的工业和魔法线已经合二为一了。某种意义上来讲，工业和魔法的最后必将趋于统一，因为本质上都是你探求真理的工具。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "bloodmagic:dungeon_alternator"
 			id: "0D0BEC03C1B26CA3"
 			rewards: [{
@@ -91,7 +91,7 @@
 				""
 				"很符合工业的污染颜色，不是吗？"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "6D54B104118A0FA7"
 			subtitle: "工业之暗"
 			tasks: [{
@@ -253,7 +253,7 @@
 				"通过一些铁魔法材料的聚合，你可以得到它……"
 				"然后把它通过炼金手段融化。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "43F24DD9D0242F26"
 			shape: "circle"
 			size: 1.0d

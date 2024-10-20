@@ -39,7 +39,7 @@
 		{
 			dependencies: ["5FB9514C6DE7AD58"]
 			description: ["通过这个工程块，你可以开始构建一些真正意义上的重型机器了）"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "143E6A57D69BAE65"
 			rewards: [{
 				id: "7E32ADC9F2B7A0CD"
@@ -345,7 +345,7 @@
 				"重油还可以进一步分解——然后获得你需要的一些特定资源）"
 				"提醒：重油到后期还有其它的用途，所以就算你现在用不上，也不推荐你全部扔掉"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "107639F1A8166B9C"
 			shape: "diamond"
 			subtitle: "分，还可以分"
@@ -362,7 +362,7 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "443ED09E810FE23D"
 			shape: "diamond"
 			subtitle: "轰！"
@@ -385,7 +385,7 @@
 				"虽然需要一点小小的魔法手段……"
 				"*注：这似乎不会直接显示在jei里，所以最好去查询磁铁的配方（"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "05EF035C814ADE9B"
 			shape: "diamond"
 			subtitle: "磁铁修整器"
@@ -406,7 +406,7 @@
 				"如果你没有分馏出石脑油，检查一下你的分馏塔是不是偷工减料了）"
 				"石油当中最宝贵的一部分也是最容易消失的一部分（摊手"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "3B7D8BECFF387995"
 			subtitle: "层数不够就会消失"
 			tasks: [{
@@ -422,7 +422,7 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "2718164469D544DF"
 			shape: "diamond"
 			subtitle: "也许是燃料"
@@ -443,7 +443,7 @@
 				"我们其实不提倡这种不人道的行为，但是不得不说凝固汽油在MC里只适合干这个（？"
 				"注意：真的有凝固汽油弹，但是不便宜"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "46A5743F6DC8054D"
 			shape: "diamond"
 			subtitle: "燃烧弹前置"
@@ -461,7 +461,7 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "tfmg:cast_iron_distillation_controller"
 			id: "576A28075CA7077D"
 			subtitle: "实际上这个分馏塔干的是裂化的活"
@@ -601,7 +601,7 @@
 				""
 				"提示：恶魔合金可以做成块然后复制！能批量生产总是好的（"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "538F608DF5017A6A"
 			subtitle: "没有工资"
 			tasks: [{

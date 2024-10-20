@@ -27,7 +27,7 @@
 				"开启方式和地狱门很像，石砖搭一个框架，然后催化石点一下，你就可以进去了）"
 				"进门之后注意安全，深园从来不缺少敌对生物。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "undergarden:catalyst"
 			id: "0E5C63B3D4891362"
 			subtitle: "Deep♂Dark♂Fantasy"
@@ -50,7 +50,7 @@
 				"为什么增加难度呢，因为不想让你到末地死的太难看（确信"
 				"找到末地传送门后，记得做好合适的标记，毕竟现在没有传送石碑让你满地乱放了……"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "193F465F65BC13F1"
 			subtitle: "前往虚空！"
 			tasks: [{

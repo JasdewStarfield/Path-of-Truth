@@ -26,7 +26,7 @@
 				"所以我们推荐大量杂物用箱子和背包储存；大量同类物品用抽屉储存。"
 				"具体细节可以参见“世界的表象”章节——对于抽屉和背包都有说明。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "34610E8F3D1306A9"
 			rewards: [
 				{
@@ -56,8 +56,8 @@
 				"由于alex的生物存在，现在不同的下界群系中增加了额外的危险生物。"
 				"祝你下去的时候被绯红蚊子抱脸（确信"
 			]
-			hide: true
 			hide_details_until_startable: true
+			hide_until_deps_complete: true
 			id: "6C542C19575974DB"
 			subtitle: "下地狱去吧"
 			tasks: [{
@@ -216,8 +216,8 @@
 				""
 				"&o&a（你或许听说过蔚蓝浩空维度的装备限制机制？没关系，现在它被炸了。尽情使用你喜欢的装备吧！）&r&r"
 			]
-			hide: true
 			hide_details_until_startable: true
+			hide_until_deps_complete: true
 			id: "2ADB403A5CDF92C0"
 			subtitle: "守门人珍藏"
 			tasks: [{
@@ -277,7 +277,7 @@
 		{
 			dependencies: ["7A6D4E28C28302FE"]
 			description: ["在主线内容中你很快就会用到其中的一些（至少是前几个）……所以如果不想多跑几趟的话，就多收集一点吧！"]
-			hide: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "blue_skies:turquoise_stone_pickaxe"
@@ -345,7 +345,7 @@
 		{
 			dependencies: ["280307C036B9B6E7"]
 			description: ["在主线内容中你很快就会用到其中的一些（至少是前几个）……所以如果不想多跑几趟的话，就多收集一点吧！"]
-			hide: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "blue_skies:lunar_stone_pickaxe"
@@ -425,8 +425,8 @@
 				"&o&b注意：植魔酿造的“诱惑”药水会造成卡顿，因此该配方被直接删除！&r&r"
 				"&o&6游戏里享受钓鱼佬的人生也是一种乐趣，所以不要用药水加速（确信&r&r"
 			]
-			hide: true
 			hide_details_until_startable: true
+			hide_until_deps_complete: true
 			icon: "tide:shooting_starfish"
 			id: "25D2D0B2CB184527"
 			rewards: [{
@@ -483,7 +483,7 @@
 				"这两种指南针分别可以定位&2群系&r和&c结构&r。当你找不到方向的时候，就用它们吧！"
 				"（注：指南针的定位逻辑是在附近一定范围内搜索。因此，如果这个范围内没有的话，也会显示找不到目标！）"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "minecraft:lodestone"
 			id: "78A026D295CF4593"
 			subtitle: "感到迷茫吗？"

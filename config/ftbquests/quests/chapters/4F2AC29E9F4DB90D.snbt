@@ -31,7 +31,7 @@
 		{
 			dependencies: ["6E0D85E43EDF1994"]
 			description: ["所以，工业的新篇章也对你开启了。"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "11EC3A84F0C84E65"
 			rewards: [{
 				id: "2C399AD7FD10484E"
@@ -265,7 +265,7 @@
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
 			description: ["在我们的设定中，由于铜会生锈，只有康铜才能够抵挡流体的腐蚀，并被铸造为可以容纳流体的器械。"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "28617A52922404CE"
 			subtitle: "这里的铜其实是康铜"
 			tasks: [{
@@ -279,7 +279,7 @@
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
 			description: ["让你的液体动一动（大雾"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "27FD1F76136CBD0B"
 			subtitle: "你甚至可以用它们处理牛奶（笑"
 			tasks: [
@@ -395,7 +395,7 @@
 				"虽然这东西叫电子管没错，但是很显然它不能充电，你也没进入电子时代）"
 				"不过有一些组件还是需要它。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "73CD9D2DD215B5F5"
 			subtitle: "嗯，伪电子时代"
 			tasks: [{
@@ -413,7 +413,7 @@
 				"你应该发现了，在鼓风机前面放某些特定的东西可以实现批量加工）"
 				"但很显然，单格水和单格岩浆都不是很容易放置，而营火又容易烫到自己，所以——这就是解决方案。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "07C921FBCF56E703"
 			shape: "diamond"
 			subtitle: "其实是保护你自己）"
@@ -473,7 +473,7 @@
 				""
 				"&n注意：从这一步开始，你将涉及到永昼之地或者恒晓之地的特殊矿物。如果你还没有涉及到这些维度，出发去探险吧！&r"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "51676EF62E7A17F3"
 			subtitle: "精密元件的基石"
 			tasks: [{
@@ -492,7 +492,7 @@
 				"你&l&b不能&r&r把它们镶嵌在盔甲上增加保护，真是遗憾）"
 				"这里缅怀一下曾经的匠魂（"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "10CF3F30EC2A65E8"
 			subtitle: "这显然比铁硬）"
 			tasks: [{
@@ -510,7 +510,7 @@
 				"由于我们追求真实，你现在不可以通过杂酚油桶简单粗暴的生成这些东西了：你需要注液，不过问题应该也不大。"
 				"*小声：反正杂酚油总会多到你用不完（"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "607A957382E65976"
 			subtitle: "沉浸工业的基础"
 			tasks: [{
@@ -533,7 +533,7 @@
 				"你成功的开启了精密时代，更多的工业和更有趣的历程在像你展开。"
 				"走下去吧，走到世界尽头，真相会在那里等着你。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "242C57AF7F6116E4"
 			rewards: [{
 				id: "6BEEB17986271FAD"
@@ -656,7 +656,7 @@
 				"事实就是：这章有两个工程块（不过这一个目前不是必须项）"
 				"物流工程块允许你合成pipez的强力管道——它们可以输送各种资源，且不需要动力驱动。它们还可以进行升级，就像抽屉那样。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "6F27F12FD5EBE559"
 			rewards: [
 				{
@@ -728,7 +728,7 @@
 				"10CF3F30EC2A65E8"
 			]
 			description: ["提示：这一步任务属于本章的支线，不一定要在现在完成。"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "37C7364F0F3E8C89"
 			subtitle: "它能做什么呢？"
 			tasks: [{

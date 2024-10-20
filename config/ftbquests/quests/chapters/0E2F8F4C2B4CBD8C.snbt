@@ -24,7 +24,7 @@
 				"280307C036B9B6E7"
 			]
 			description: ["得到每一种蔚蓝浩空特有的BOSS掉落物！"]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "blue_skies:blue_journal"
 			id: "0EBCC9ACD99E6B83"
 			rewards: [{
@@ -206,7 +206,7 @@
 				""
 				"&o&c&m打六次盖亚守护者II的感觉怎么样？&r&r&r"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "botania:dice"
 			id: "2C1B7E18AC2064D4"
 			rewards: [
@@ -272,7 +272,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["获得所有种类的巫术卷轴！"]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "irons_spellbooks:eldritch_manuscript"
 			id: "4A795BB15E5110EC"
 			rewards: [{
@@ -438,7 +438,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["获得原版，维度模组以及alex的生物中（几乎）所有可以被处理为鱼的东西）"]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "netherdepthsupgrade:blazefish_bucket"
 			id: "725308B81E925449"
 			rewards: [
@@ -598,7 +598,7 @@
 				"（由于主世界的特殊性，不要求全部群系鱼收集）"
 				"注意：传奇鱼类的出现和月相与幸运相关，游戏内会有更多的提示！"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "tide:crystal_shrimp"
 			id: "76F63C16AEEFA85D"
 			rewards: [
@@ -1120,7 +1120,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["探索古代遗迹并找出所有种类的神奇图腾！"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "70726F375FFF5CF3"
 			rewards: [{
 				id: "186F0BBBFC1FE93B"
@@ -1173,7 +1173,7 @@
 				"看起来有点哈人……"
 				"不同的化石有不同的作用，但这就要你自己探索了。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "21246254369E4A91"
 			rewards: [
 				{
@@ -1236,7 +1236,7 @@
 				"做出农夫乐事系列中的各类大菜！"
 				"&o&m&5“吃穿虚空”&r&r&r"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "34D11CBE75FBEDF5"
 			rewards: [{
 				id: "5F88A80A1B13DB38"
@@ -1298,7 +1298,7 @@
 				""
 				"&o&b致敬神秘初始小屋制作人兼传奇音乐人Jacky_Blackson）&r&r"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "48783396F615D90E"
 			rewards: [{
 				id: "11F0B8AE3D972418"
@@ -1441,7 +1441,7 @@
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "5D6D256D4DE35A5A"
 			subtitle: "三种……呃，垃圾桶"
 			tasks: [
@@ -1502,7 +1502,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["哦天啊，制杖并贩剑（确信"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "722556B2244FD56A"
 			rewards: [{
 				id: "104622516C821057"
@@ -1646,7 +1646,7 @@
 		}
 		{
 			description: ["比高中课本还多XD"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "6AFB8B9527F2FEB1"
 			rewards: [
 				{
@@ -1915,7 +1915,7 @@
 				"为什么&a抽象魔法师会写音乐&r这种事情是&a另外的故事&r，但总之有&d更多的曲子&r可以听了）"
 				"两首曲子分别是&9深夜&r和&c暴风雪&r的印象曲，因此会有相对独特的风格——不过因为开局点击就送，所以这个任务没有奖励）"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "5D14EEEDED65B6BF"
 			subtitle: "对吧，达瓦里氏"
 			tasks: [
@@ -1941,7 +1941,7 @@
 				"然而这种方法&b其实是存在的&r，只是需要消耗一些&b魔力&r……以及&6和盖亚进行一轮激♂情对决&r）"
 				"鉴于这个工具&d用的人太少以至于无人知晓&r，所以这个任务出现了）"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "4FF64FFAF952A6E2"
 			rewards: [{
 				id: "4B2F9CF3817B6573"

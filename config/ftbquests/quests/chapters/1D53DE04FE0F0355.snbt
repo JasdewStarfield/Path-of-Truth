@@ -57,9 +57,9 @@
 			y: -4.0d
 		}
 		{
-			click: "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=7t34O2Z-HFfUU85mQBM1qhIozXeYxTCS&authKey=ySgIXqp51Qte35rERQiH5Fwzu7eLkccb4cVWEgyoecS4GrWimlAoncRigi6Wkf6p&noverify=0&group_code=631894460"
+			click: "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=JhNBfGn481sNSi4kOvZm8b_fC0DNjNid&authKey=W5wrhYkl7nqRjzw0k%2F0wdFdKl2Y9mK%2BdfGF1YLYP9WJhtiVgny2snle1SqdjCZzh&noverify=0&group_code=798699096"
 			height: 1.0d
-			hover: ["链接：QQ交流群【真理之路路边旅店】"]
+			hover: ["链接：QQ交流群【真理之路魔法小屋】"]
 			image: "minecraft:item/campfire"
 			rotation: 0.0d
 			width: 1.0d

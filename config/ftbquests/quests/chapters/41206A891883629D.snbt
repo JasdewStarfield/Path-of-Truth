@@ -31,7 +31,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["&l&4这个章节不是正式任务线！只起到任务线的预告作用！具体请看下方的章节组中的内容！&r&r"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "5F826044A3A07900"
 			subtitle: "纤维素、半纤维素、木质素"
 			tasks: [{
@@ -490,7 +490,7 @@
 		}
 		{
 			dependencies: ["29D490BEC5BBC8E1"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "327D87A05DE4A8F0"
 			subtitle: "“杂质，分析纯”"
 			tasks: [{

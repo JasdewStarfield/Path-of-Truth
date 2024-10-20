@@ -21,7 +21,7 @@
 		{
 			dependencies: ["193F465F65BC13F1"]
 			description: ["很显然，你成功折跃了。也许留一个传送点是比较明智的选择？"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "15E666BAE38566D8"
 			subtitle: "在那开遍紫颂花的原野上……"
 			tasks: [{
@@ -36,7 +36,7 @@
 		{
 			dependencies: ["280307C036B9B6E7"]
 			description: ["剧毒巢穴的最下层，蜘蛛女王欢迎你）"]
-			hide: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "blue_skies:different_sword"
@@ -93,7 +93,7 @@
 		{
 			dependencies: ["7A6D4E28C28302FE"]
 			description: ["自然城堡的最上层，大树守卫等着你）"]
-			hide: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "blue_skies:crushing_hammer"

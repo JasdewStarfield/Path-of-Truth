@@ -122,8 +122,8 @@
 				"&b*默认设置会导致键位冲突，这种时候我们的建议是直接点击重置按键，我们有预设好的无冲突键位，您也可以自行调整。"
 				"&r&a*整合包自带了中键整理，可以通过中键相对简单的整理储存容器，不过不要中键饰品栏，否则后果自负。&r"
 			]
-			hide: true
 			hide_details_until_startable: false
+			hide_until_deps_complete: true
 			icon: "supplementaries:globe"
 			id: "2BC7BDD7E5EC76E5"
 			rewards: [{

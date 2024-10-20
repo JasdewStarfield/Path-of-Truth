@@ -30,7 +30,7 @@
 				"把虫子丢进末地的虚空，开启新世界的大门）"
 				"如果你计划召唤虚空蠕虫，你最好打完后做个雕像，因为可以用魔法进行兑换）"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "48F6D7FEBE279F32"
 			subtitle: "大虫子"
 			tasks: [{

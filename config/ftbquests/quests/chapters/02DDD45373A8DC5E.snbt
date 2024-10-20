@@ -39,7 +39,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["不管干什么，你总归需要从工作台开始的，对吧）"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "46156FBBDCAB4B1D"
 			rewards: [{
 				id: "68889BA4397825CC"
@@ -152,7 +152,7 @@
 				""
 				"值得一提的是，利用手搓的方式产出的传动杆的数量降低了。然而，等到你获取铁之后，就可以使用动力锯改变这种粗放的生产方式了。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "2F791EC2607066B4"
 			subtitle: "地球在转。"
 			tasks: [
@@ -218,7 +218,7 @@
 				"&a如果你不知道怎么制作活石，请看魔法章节（原始萨满）！&r"
 				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"735172F79325756F\" } }"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "489BC5567AF09228"
 			subtitle: "是的，这个世界不只需要科技"
 			tasks: [{
@@ -558,7 +558,7 @@
 				"现在你不能通过把安山合金按到原木上来创建机壳了：你需要在活木上进行加工才可以。"
 				"是的，你首先需要用魔法活化木头，然后它们才能在加工台上被你压成机壳。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "50BB17FEED3B10D2"
 			subtitle: "什么，这不科学！"
 			tasks: [{
@@ -688,7 +688,7 @@
 				""
 				"&l&c比如说，你即将用来炼铁的高炉和用来生产焦煤的焦炉。&r&r"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "336807D048A4EF6A"
 			subtitle: "80！80！"
 			tasks: [

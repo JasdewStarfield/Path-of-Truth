@@ -44,7 +44,7 @@
 				"生命的光芒闪耀于鲜血和火花当中。"
 				"&o&5*注：你可以通过相同的手段活化你的潜影盒！&r&r"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "artifacts:mimic_spawn_egg"
 			id: "12134A3EF6C80C54"
 			shape: "rsquare"

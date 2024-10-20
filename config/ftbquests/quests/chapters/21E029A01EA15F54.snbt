@@ -43,7 +43,7 @@
 				"如果不在，那么你最好自己查一下JEI）"
 				"为什么让你查jei呢，因为配方我们改动的可不少）"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "patchouli:guide_book"

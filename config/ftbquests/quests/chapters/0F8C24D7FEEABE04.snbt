@@ -30,7 +30,7 @@
 				"&b注意：有部分生物合成并未展现于任务线中，请自行探索）"
 				"&r&o&c神奇生物在哪里？神奇生物在锅里（&r&r"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "391DC5DA08CB67C6"
 			shape: "hexagon"
 			size: 1.5d

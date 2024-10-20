@@ -45,8 +45,8 @@
 				""
 				"&o&9*在法师塔的箱子中可以轻松获取这些源质，村庄的牧师和制图师结构宝箱与废弃地狱门的箱子中也会有。当然，你也可以夜间去和亡灵术士对决来获取掉落物……&r&r"
 			]
-			hide: true
 			hide_details_until_startable: true
+			hide_until_deps_complete: true
 			icon: "minecraft:chest"
 			id: "374C430D0AD70D2E"
 			rewards: [{
