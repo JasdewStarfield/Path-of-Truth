@@ -1,0 +1,55 @@
+
+[RealDamage]
+	#
+	#真实伤害计算方式是否为函数计算
+	realDamageCalculationMethodIsFunction = false
+	#
+	#是否启用保护期(保护期内免受真实伤害)
+	isEnableProtection = false
+	#
+	#是否限制真实伤害最大值
+	isLimitMaximumRealDamage = true
+	#
+	#伤害吸收Buff能否抵挡真实伤害
+	isPlayerAbsorptionWithstandRealDamage = true
+
+	[RealDamage.Maximum]
+		#
+		#真实伤害最大值(范围:0-30)
+		#Range: 0 ~ 30
+		realDamageMax = 3
+
+	[RealDamage.FunctionCalculation]
+		#
+		#最大真实伤害比例(范围:0-100%)
+		#Range: 0 ~ 100
+		damageProportionMax = 30
+		#
+		#最小真实伤害比例(范围:0-100%,不得大于最大真实伤害比例)
+		#Range: 0 ~ 100
+		damageProportionMin = 10
+		#
+		#达到最大伤害比例所需的天数(范围:0-500天)
+		#Range: 0 ~ 500
+		reachesMaximumDays = 100
+		#
+		#从第几天开始增算真实伤害比例(范围:0-100天)
+		#Range: 0 ~ 100
+		calculationStartIncreasingFromFewDays = 10
+
+	[RealDamage.ConstantCalculation]
+		#
+		#真实伤害固定比例(范围:0-100%)(当计算方式为函数计算时，此项设置始终无效)
+		#Range: 0 ~ 100
+		damageConstantProportion = 20
+
+	[RealDamage.DebugMode]
+		#
+		#是否启用调试模式(调试模式下将会在控制台与聊天框输出调试信息)
+		isEnableDebugMode = false
+
+	[RealDamage.Protection]
+		#
+		#保护期限(范围:0-100天)
+		#Range: 0 ~ 100
+		protectionDays = 3
