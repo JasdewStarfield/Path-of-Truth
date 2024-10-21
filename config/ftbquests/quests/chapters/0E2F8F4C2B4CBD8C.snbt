@@ -1057,32 +1057,12 @@
 				"&o&d黑曜石巨柱则会生成在末地的大型平台上，需要末影之眼召唤。&r&r"
 			]
 			id: "5EE2152C42721246"
-			rewards: [
-				{
-					id: "13BDA7500373C98F"
-					item: {
-						Count: 1
-						id: "tfmg:quad_potato_cannon"
-						tag: {
-							Damage: 0
-						}
-					}
-					title: "哒哒哒哒哒哒"
-					type: "item"
-				}
-				{
-					id: "6897AB733A3B15CC"
-					item: {
-						Count: 1
-						id: "botania:mana_tablet"
-						tag: {
-							creative: 1b
-							mana: 500000
-						}
-					}
-					type: "item"
-				}
-			]
+			rewards: [{
+				count: 4
+				id: "084E1C6B189000D0"
+				item: "bosses_of_mass_destruction:brimstone_nectar"
+				type: "item"
+			}]
 			shape: "rsquare"
 			size: 1.2d
 			subtitle: "这将是你面对的最终BOSS"
@@ -1105,11 +1085,6 @@
 				{
 					id: "0E921FB3BB592BCE"
 					item: "bosses_of_mass_destruction:void_thorn"
-					type: "item"
-				}
-				{
-					id: "0F953A05D82E62E9"
-					item: "bosses_of_mass_destruction:brimstone_nectar"
 					type: "item"
 				}
 			]

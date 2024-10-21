@@ -267,16 +267,12 @@
 		}
 		{
 			dependencies: ["1AB48D8D4E2767F6"]
-			description: [
-				"你可能已经发现了，不同的食物会注明其拥有的营养值。这表明你在食用对应的食物时，你的营养都会发生变化，而你需要控制每种类型食物的摄取量，因为每种营养素&4过多&r或者&2过低&r都会产生Debuff（&4除了糖分，它只会带来过高时的负收益。少吃糖！&r&2另外，蔬菜是没有较高时的副作用的，很适合营养过剩的时候调剂用。&r）；而当你营养够均衡时，它们又会给你带来正面Buff！"
-				"另外，还有一个食物多样性的设定。你可以用奖励的这本食物清单（也可以简单地通过一本书来合成它）查看你最近吃过的食物，你的多样性指数，还有产生的收益——简而言之，吃不同种类的大餐更有利于多样性指数上升，而吃得越丰富，你的生命上限越高！"
-				"&o&m&c虽然最后也不会太高就是了&r&r&r"
-			]
+			description: ["你可能已经发现了，不同的食物会注明其拥有的营养值。这表明你在食用对应的食物时，你的营养都会发生变化，而你需要控制每种类型食物的摄取量，因为每种营养素&4过多&r或者&2过低&r都会产生Debuff（&4除了糖分，它只会带来过高时的负收益。少吃糖！&r&2另外，蔬菜是没有较高时的副作用的，很适合营养过剩的时候调剂用。&r）；而当你营养够均衡时，它们又会给你带来正面Buff！"]
 			icon: "minecraft:bread"
 			id: "4814464FAB9C404C"
 			rewards: [{
-				id: "7819F0DDE44BE6F5"
-				item: "solapplepie:food_book"
+				id: "24A546DE254FA688"
+				item: "metalbundles:leather_bundle"
 				type: "item"
 			}]
 			subtitle: "吃好喝好"
@@ -288,36 +284,6 @@
 			title: "均衡饮食"
 			x: 4.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["4814464FAB9C404C"]
-			description: [
-				"啥？你觉得背包里面放一堆食物太占地方了？"
-				"试试午餐袋吧！潜行右键就可以把食物放进去了，直接长按使用便能自动吃其中多样性提升最高的一个，非常省心！（请注意，这一点并不适用于均衡饮食的营养素）"
-				"另外，这个东西还可以进行升级。谁会拒绝带上更多食物的能力呢？"
-				"&o&m&b唯一避免物品栏里的食物被海鸥吃掉的方法&r&r&r"
-				""
-				"&n午餐袋升级的时候务必把里面的东西取出来，不然会消失）&r"
-			]
-			id: "0DC81C451504AFAF"
-			subtitle: "四次元口袋.jpg"
-			tasks: [{
-				id: "2BF4CC115FFB7CC1"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
-							Size: 5
-						}
-					}
-					id: "solapplepie:lunchbag"
-				}
-				type: "item"
-			}]
-			title: "午餐袋"
-			x: 5.0d
-			y: 1.0d
 		}
 		{
 			dependencies: ["1AB48D8D4E2767F6"]
@@ -589,11 +555,6 @@
 					type: "item"
 				}
 				{
-					id: "24F155C60081C214"
-					item: "solapplepie:food_book"
-					type: "item"
-				}
-				{
 					id: "74BAA58BC3EAD919"
 					item: {
 						Count: 1
@@ -851,15 +812,8 @@
 			id: "39DA192CE817B365"
 			subtitle: "来骗，来偷袭"
 			tasks: [{
-				id: "6E39E76D541600D3"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "copycats:copycat_block"
-					}
-				}
-				title: "Any #copycats:copycat_block"
+				id: "3C066E19E26B21CA"
+				item: "copycats:copycat_block"
 				type: "item"
 			}]
 			title: "以假乱真"

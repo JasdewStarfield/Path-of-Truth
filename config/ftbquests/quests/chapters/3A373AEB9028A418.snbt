@@ -121,7 +121,7 @@
 						value: "minecraft:beds"
 					}
 				}
-				title: "Any #minecraft:beds"
+				title: "任意床"
 				type: "item"
 			}]
 			title: "复活点"

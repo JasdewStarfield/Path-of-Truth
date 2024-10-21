@@ -240,6 +240,7 @@
 						mana: 500000
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			title: "自体永动机"

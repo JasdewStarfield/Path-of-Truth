@@ -389,5 +389,5 @@ ServerEvents.recipes(event => {
 
     //虚空钢
     event.remove({id:"createutilities:mixing/void_steel_ingot"})
-    event.recipes.create.mixing('createutilities:void_steel_ingot', ['#forge:ingots/steel','#endersdelight:enderman_loot', '#endersdelight:enderman_loot']).heated()
+    event.recipes.create.mixing(Item.of('createutilities:void_steel_ingot').withChance(0.75), ['#forge:ingots/steel','#endersdelight:enderman_loot', '#endersdelight:enderman_loot', 'blaze_powder']).heated()
 })
