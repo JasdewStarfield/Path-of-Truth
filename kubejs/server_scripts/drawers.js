@@ -95,6 +95,21 @@ ServerEvents.recipes(event => {
   )
 
   //压缩抽屉
+  event.remove({id:"storagedrawers:compacting_drawers_2"})
+  event.shaped(
+    Item.of('storagedrawers:compacting_drawers_2', 1),
+    [
+    'DAD',
+    'CBC',
+    'DDD'
+    ],
+    {
+    A: 'create:mechanical_piston',
+    B: '#storagedrawers:full_drawers',
+    C: 'create:cogwheel',
+    D: '#forge:plates/iron'
+    }
+  )
   event.remove({id:"storagedrawers:compacting_drawers_3"})
   event.shaped(
     Item.of('storagedrawers:compacting_drawers_3', 1),
@@ -105,41 +120,55 @@ ServerEvents.recipes(event => {
     ],
     {
     A: 'create:mechanical_piston',
-    B: 'create:andesite_casing',
+    B: '#storagedrawers:full_drawers',
     C: 'create:cogwheel',
     D: '#forge:plates/iron'
     }
   )
-
-  //抽屉控制器
-  event.remove({id:"storagedrawers:controller"})
+  event.remove({id:"storagedrawers:compacting_half_drawers_2"})
   event.shaped(
-    Item.of('storagedrawers:controller', 1),
+    Item.of('storagedrawers:compacting_half_drawers_2', 1),
+    [
+    'DAD',
+    'CBC',
+    'DDD'
+    ],
+    {
+    A: 'create:mechanical_piston',
+    B: '#storagedrawers:half_drawers',
+    C: 'create:cogwheel',
+    D: '#forge:plates/iron'
+    }
+  )
+  event.remove({id:"storagedrawers:compacting_half_drawers_3"})
+  event.shaped(
+    Item.of('storagedrawers:compacting_half_drawers_3', 1),
     [
     'DAD',
     'CBC',
     'DAD'
     ],
     {
-    A: 'create_connected:control_chip',
-    B: 'tfmg:steel_casing',
-    C: 'create:precision_mechanism',
-    D: '#forge:plates/steel'
+    A: 'create:mechanical_piston',
+    B: '#storagedrawers:half_drawers',
+    C: 'create:cogwheel',
+    D: '#forge:plates/iron'
     }
   )
 
-  //抽屉控制器slave♂
-  event.remove({id:"storagedrawers:controller_slave"})
+  //成型台
+  event.remove({id:"storagedrawers:framing_table"})
   event.shaped(
-    Item.of('storagedrawers:controller_slave', 1),
+    Item.of('storagedrawers:framing_table', 1),
     [
-    ' D ',
-    'DBD',
-    ' D '
+    ' C ',
+    'DDD',
+    'B B'
     ],
     {
-    B: 'tfmg:steel_casing',
-    D: '#forge:plates/steel'
+    B: 'create:andesite_alloy',
+    C: 'stonecutter',
+    D: '#forge:stripped_logs'
     }
   )
 })
