@@ -333,31 +333,24 @@
 			icon: "respawnobelisks:respawn_obelisk"
 			id: "3B3403855032F399"
 			rewards: [{
-				id: "3D76F980BF4168A7"
-				item: "minecraft:ender_pearl"
+				id: "069257470BAC8F0A"
+				item: {
+					Count: 1
+					id: "respawnobelisks:radiant_lantern"
+					tag: { }
+				}
 				type: "item"
 			}]
 			subtitle: "床R.I.P."
-			tasks: [
-				{
-					icon: "respawnobelisks:respawn_obelisk"
-					id: "7AFED54A3F6B3AC9"
-					observe_type: 0
-					timer: 0L
-					title: "观察重生石碑"
-					to_observe: "respawnobelisks:respawn_obelisk"
-					type: "observation"
-				}
-				{
-					id: "69DC40BE98762787"
-					item: {
-						Count: 1
-						id: "respawnobelisks:radiant_lantern"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
+			tasks: [{
+				icon: "respawnobelisks:respawn_obelisk"
+				id: "7AFED54A3F6B3AC9"
+				observe_type: 0
+				timer: 0L
+				title: "观察重生石碑"
+				to_observe: "respawnobelisks:respawn_obelisk"
+				type: "observation"
+			}]
 			title: "叮，复活点"
 			x: 5.5d
 			y: 0.0d
@@ -727,9 +720,15 @@
 				"当然，背包的升级需要一些小小的魔法手段……"
 				"以及，由于堆叠升级是抽屉的功能，我们禁止了背包使用的堆叠升级！"
 				"但背包拿来存杂项还是很强大的）"
+				"{@pagebreak}"
+				"如果你希望随身携带更多的东西，那么各个级别的收纳袋将是最合适的处理方案。"
+				"收纳袋的升级只需要不同科技或魔法层级的单个产物，并且升级的时候也会保留内容物！"
+				"但相应的，合成简单的袋子并不能放置，轻松地拿取指定物品或者与世界交互——那真的只是更大的收纳袋。"
+				""
+				"&o&m&7很适合当午餐袋&r&r&r"
 			]
 			id: "3A2CCC29ACE28498"
-			subtitle: "强力存储的两条路径"
+			subtitle: "强力存储的三条路径"
 			tasks: [
 				{
 					id: "0C0155F6F3E27FF3"
@@ -755,8 +754,13 @@
 					title: "背包"
 					type: "item"
 				}
+				{
+					id: "1EFE5B79F0BC58B7"
+					item: "metalbundles:leather_bundle"
+					type: "item"
+				}
 			]
-			title: "抽屉与背包"
+			title: "更多存储空间"
 			x: -3.5d
 			y: -1.5d
 		}
@@ -1134,8 +1138,8 @@
 			description: [
 				"对于&b方块世界的天命人&r而言，你&c拥有不止一条生命&r，然而这并不是你可以&4通过送菜和刮痧解决某些高强度生物&r的理由。"
 				"基于此，我们增加了“逝不过三”体系：如果你在挑战某个BOSS级生物时&6死亡了三次&r，那么它将&l&d当场满血！&r&r"
-				"我们希望大家打BOSS的时候动用大脑而不是拿着石剑进行冲锋……"
-				"同时我们对于终极BOSS有&3特殊的安排&r，它们有阶段，但是如果你死亡三次，那么你需要重回一阶段开始打……"
+				"希望各位打BOSS的时候动用大脑而不是拿着石剑进行冲锋……"
+				"我们对于终极BOSS有&3特殊的安排&r，它们的战斗按血量分阶段，但是如果你死亡三次，那么你需要重回一阶段开始打……"
 				""
 				"&m&o&7勇气可嘉）&r&r&r"
 			]
@@ -1191,7 +1195,7 @@
 				"&5终末武器&r并不被计算在常规武器之内——你打BOSS的时候也拿不到它们。"
 				"需要注意的是，目前的四个终极BOSS都在原有模组的基础上进行了&l&4极大加强&r&r，如果发现效果或数值和百科不同，以游戏内效果为准，并且需要自己寻找解法！"
 				""
-				"&o&7*这里我不会给攻略了，因为在之前的数个版本中BOSS被普遍反映“过于简单”，所以魔改了更强的大宝贝……&r&r"
+				"&o&7*因为在之前的数个版本中BOSS被普遍反映“过于简单”，所以各位将要面对更强的大宝贝……&r&r"
 			]
 			icon: "botania:rainbow_rod"
 			id: "493C646BD6B377DE"
