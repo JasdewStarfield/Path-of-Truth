@@ -267,7 +267,14 @@
 		}
 		{
 			dependencies: ["1AB48D8D4E2767F6"]
-			description: ["你可能已经发现了，不同的食物会注明其拥有的营养值。这表明你在食用对应的食物时，你的营养都会发生变化，而你需要控制每种类型食物的摄取量，因为每种营养素&4过多&r或者&2过低&r都会产生Debuff（&4除了糖分，它只会带来过高时的负收益。少吃糖！&r&2另外，蔬菜是没有较高时的副作用的，很适合营养过剩的时候调剂用。&r）；而当你营养够均衡时，它们又会给你带来正面Buff！"]
+			description: [
+				"你可能已经发现了，不同的食物会注明其拥有的营养值。这表明你在食用对应的食物时，你的营养都会发生变化，而你需要控制每种类型食物的摄取量，因为每种营养素&4过多&r或者&2过低&r都会产生Debuff（&4除了糖分，它只会带来过高时的负收益。少吃糖！&r&2另外，蔬菜是没有较高时的副作用的，很适合营养过剩的时候调剂用。&r）；而当你营养够均衡时，它们又会给你带来正面Buff！"
+				"{@pagebreak}"
+				"一种简单的&c提升食物效果&r的方式是去海底寻找盐矿，撒盐的食物会有饱食度加成。"
+				"然而，高饱食度目前&d不能带来快速回血&r，请探索的时候谨慎思考！"
+				"除蔬菜外，其他的营养值最好不要超过80%，糖类最好不要超过40%。"
+				"营养值会&b随着时间而降低&r，也可以通过&c当场跳崖&r之类的主动控制……"
+			]
 			icon: "minecraft:bread"
 			id: "4814464FAB9C404C"
 			rewards: [{
@@ -282,8 +289,8 @@
 				type: "checkmark"
 			}]
 			title: "均衡饮食"
-			x: 4.0d
-			y: 0.0d
+			x: 3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1AB48D8D4E2767F6"]
@@ -306,8 +313,8 @@
 				type: "checkmark"
 			}]
 			title: "你死啦？"
-			x: 3.5d
-			y: 1.5d
+			x: 4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6A93A46261B6C8F0"]
@@ -352,8 +359,8 @@
 				}
 			]
 			title: "叮，复活点"
-			x: 4.5d
-			y: 2.5d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6E08F7A257BCB99A"]
@@ -430,6 +437,8 @@
 			description: [
 				"现在，你可以收集到许多食材！制作一个厨锅，然后你就可以用全新的方式烹饪它们！"
 				"别忘了收集一些野生作物，它们可以种植，并为你的餐桌增色不少。"
+				""
+				"通过科技的发展，后期你可以通过机械动力和烈焰人厨师实现全自动做菜！"
 			]
 			icon: "farmersdelight:cooking_pot"
 			id: "2E7818CF013586F1"
@@ -446,10 +455,21 @@
 					id: "19930572059A3828"
 					type: "advancement"
 				}
+				{
+					id: "710EDB75F9FE8A2F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "create_central_kitchen:cooking_guide"
+					}
+					type: "item"
+				}
 			]
 			title: "厨神之路"
-			x: 5.5d
-			y: 0.0d
+			x: 4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["34C16BAADA9CC42C"]
@@ -697,31 +717,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["4814464FAB9C404C"]
-			description: [
-				"在海洋下方的岩层，你可以找到盐矿。用它你就能制作食盐，然后给各种食物调味！"
-				"调味的食物更有营养，能够额外回复饱食度。"
-			]
-			icon: "salt:salt"
-			id: "14F65F48FC31A9C9"
-			subtitle: "这饭没味啊"
-			tasks: [
-				{
-					id: "47D4152C11D31CE7"
-					item: "salt:raw_rock_salt"
-					type: "item"
-				}
-				{
-					id: "434F8CFEB938F9FE"
-					item: "salt:salt"
-					type: "item"
-				}
-			]
-			title: "盐"
-			x: 5.0d
-			y: -1.0d
-		}
-		{
 			dependencies: ["724EBEFC6D269712"]
 			description: [
 				"如果有同种物品过多的情况，就试试抽屉吧！"
@@ -903,8 +898,11 @@
 			description: [
 				"现在的村民可以做到更多的事情……"
 				"但也有一些事情永远都做不到了）"
-				"如果你需要种子，多翻翻村民的箱子，因为现在打草不会再掉落任何种子了……"
 				""
+				"交易所已经是&c历史的尘埃&r了，因为现在的村民拥有&b动态交易列表&r：每个游戏日更新！"
+				"&o&m&a这也是混沌理论的一种体现（确信&r&r&r"
+				""
+				"如果你需要种子，多翻翻村民的箱子，因为现在&2打草不会再掉落任何种子&r了……"
 				"&o&6*其实你可以直接掠夺他们的田地）&r&r"
 			]
 			icon: "artifacts:villager_hat"
@@ -974,31 +972,6 @@
 			}]
 			x: -5.0d
 			y: 1.0d
-		}
-		{
-			dependencies: ["2E7818CF013586F1"]
-			description: ["在你发展到一定程度后，你可以让你的烈焰人厨师帮你做饭！"]
-			id: "0ED39B54192E5EDF"
-			rewards: [{
-				id: "18BB578DEB281772"
-				item: "minecraft:blaze_powder"
-				type: "item"
-			}]
-			subtitle: "烈焰人，居家好帮手"
-			tasks: [{
-				id: "0955EAB24EC0EED9"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: { }
-					}
-					id: "create_central_kitchen:cooking_guide"
-				}
-				type: "item"
-			}]
-			title: "全自动做饭！"
-			x: 7.0d
-			y: 0.0d
 		}
 		{
 			dependencies: ["0ED1B830AB45D425"]
@@ -1155,6 +1128,87 @@
 			title: "烟囱"
 			x: -2.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["3B3403855032F399"]
+			description: [
+				"对于&b方块世界的天命人&r而言，你&c拥有不止一条生命&r，然而这并不是你可以&4通过送菜和刮痧解决某些高强度生物&r的理由。"
+				"基于此，我们增加了“逝不过三”体系：如果你在挑战某个BOSS级生物时&6死亡了三次&r，那么它将&l&d当场满血！&r&r"
+				"我们希望大家打BOSS的时候动用大脑而不是拿着石剑进行冲锋……"
+				"同时我们对于终极BOSS有&3特殊的安排&r，它们有阶段，但是如果你死亡三次，那么你需要重回一阶段开始打……"
+				""
+				"&m&o&7勇气可嘉）&r&r&r"
+			]
+			icon: "minecraft:totem_of_undying"
+			id: "41DC0EE4FEF3A084"
+			rewards: [{
+				id: "00969FA6C0EF23D2"
+				item: "biomesoplenty:dead_sapling"
+				type: "item"
+			}]
+			subtitle: "有的时候你不应该死那么多次……"
+			tasks: [{
+				id: "0EE63358676D7693"
+				title: "事不过三"
+				type: "checkmark"
+			}]
+			title: "逝不过三"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A93A46261B6C8F0"]
+			description: [
+				"在这个世界，怪物的打击将&c更加真实&r，你无法凭借护甲来完全抵抗任意攻击的冲击力……"
+				"生物对你的攻击将会&c固定有20%转化为无法通过护甲抵抗的真实伤害！&r这也就意味着，你需要更谨慎的挑战各类生物，或者用&b更强大的保护法术&r）"
+				"当然，有些BOSS的攻击相对较高，所以真实伤害也&a有其上限（3点）&r以保证玩家不会被秒杀。"
+				"不幸的是，剩余的伤害仍然会按常规伤害方式结算到你的身上，所以&9护甲还是需要的&r。"
+				""
+				"&o这可以被&6伤害吸收&r&o抵御，也许应该看看&e神圣系魔法&r"
+			]
+			icon: "immersiveengineering:armor_piercing"
+			id: "22926B2C2701D9C3"
+			rewards: [{
+				id: "36DC39DFB79336A9"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			subtitle: "护甲都是纸"
+			tasks: [{
+				id: "6CEAFC87C0B9B91D"
+				title: "击穿护甲！"
+				type: "checkmark"
+			}]
+			title: "更真实的伤害"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6A93A46261B6C8F0"]
+			description: [
+				"本包并不是以战斗为主线的包，但是有一定的战斗需求。"
+				"&c没有“终极战斗装备”这么一说&r，也&b没有强度碾压其他同类别的盔甲或武器&r，你需要根据自己的需求选择和搭配。"
+				"&5终末武器&r并不被计算在常规武器之内——你打BOSS的时候也拿不到它们。"
+				"需要注意的是，目前的四个终极BOSS都在原有模组的基础上进行了&l&4极大加强&r&r，如果发现效果或数值和百科不同，以游戏内效果为准，并且需要自己寻找解法！"
+				""
+				"&o&7*这里我不会给攻略了，因为在之前的数个版本中BOSS被普遍反映“过于简单”，所以魔改了更强的大宝贝……&r&r"
+			]
+			icon: "botania:rainbow_rod"
+			id: "493C646BD6B377DE"
+			rewards: [{
+				id: "4285335266F9E71B"
+				item: "botania:animated_torch"
+				type: "item"
+			}]
+			subtitle: "不存在的"
+			tasks: [{
+				id: "366937066A907E17"
+				title: "没有最强"
+				type: "checkmark"
+			}]
+			title: "最强装备……？"
+			x: 5.0d
+			y: 1.0d
 		}
 	]
 	subtitle: ["The Representation of This World"]

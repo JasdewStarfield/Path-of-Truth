@@ -908,7 +908,7 @@
 		}
 		{
 			dependencies: ["0E5C63B3D4891362"]
-			description: ["从商人手中获得扼塞战斧，然后升级为最强大斧头！"]
+			description: ["从石生体手中交易获得扼塞战斧，然后升级为最强大斧头！"]
 			id: "5DFEFE3A567A507F"
 			rewards: [
 				{
