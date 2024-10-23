@@ -301,6 +301,8 @@
 			description: [
 				"那就热一下）"
 				"通过大型分馏，现代工业之美将会在你面前展开。"
+				""
+				"结构要严格按照思索搭建。请注意钢流体储罐的规格为2x13x2，别搭错了！"
 			]
 			icon: "tfmg:steel_distillation_controller"
 			id: "3FCEB9256A15A4B2"
