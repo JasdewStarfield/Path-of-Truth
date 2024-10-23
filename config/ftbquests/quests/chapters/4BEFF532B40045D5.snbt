@@ -1009,6 +1009,7 @@
 				"本整合包为了方便游玩，加入了相当一批有效的饰品，可以在饰品栏进行装备。"
 				"然而相应的，有一些工业/魔法的工具也会占据饰品栏，这就需要你自行取舍了。"
 			]
+			icon: "artifacts:mimic_spawn_egg"
 			id: "3C9AD619097D4B8D"
 			rewards: [{
 				id: "63B151E0D0A6E011"
@@ -1017,9 +1018,9 @@
 			}]
 			subtitle: "有用的小玩意"
 			tasks: [{
-				id: "4D52987105704EB5"
-				item: "artifacts:mimic_spawn_egg"
-				type: "item"
+				id: "664EE70AA886314D"
+				title: "有用就好"
+				type: "checkmark"
 			}]
 			title: "更多饰品"
 			x: 0.0d

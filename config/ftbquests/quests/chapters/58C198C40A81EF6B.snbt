@@ -49,11 +49,20 @@
 			hide_until_deps_complete: true
 			icon: "minecraft:chest"
 			id: "374C430D0AD70D2E"
-			rewards: [{
-				id: "0D138338A0B920AE"
-				item: "artifacts:mimic_spawn_egg"
-				type: "item"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "362C6F8A36A23C92"
+					table_id: 3947091887552256602L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5449650F1038AF9C"
+					table_id: 3947091887552256602L
+					type: "random"
+				}
+			]
 			shape: "octagon"
 			size: 1.2d
 			subtitle: "有的时候你需要看看大自然的馈赠"

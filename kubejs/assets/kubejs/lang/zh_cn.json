@@ -120,6 +120,10 @@
   "item.immersiveengineering.seed.tooltip":"工业大麻种子",
   "item.immersiveengineering.seed.tooltip.summary":"可以种植在耕地上以收获工业大麻纤维。",
   "item.immersiveengineering.hemp_fiber.tooltip":"工业大麻纤维",
-  "item.immersiveengineering.hemp_fiber.tooltip.summary":"可以通过在耕地上种植工业大麻种子收获。"
+  "item.immersiveengineering.hemp_fiber.tooltip.summary":"可以通过在耕地上种植工业大麻种子收获。",
 
+  "block.botania.thermalily.tooltip":"炽玫瑰",
+  "block.botania.thermalily.tooltip.summary":"由于内部的热力过于强大，在被破坏后仅能残余火焰符文……",
+  "block.botania.floating_thermalily.tooltip":"浮空炽玫瑰",
+  "block.botania.floating_thermalily.tooltip.summary":"灼热的内核配合极不稳定的浮空功能，使其被破坏后仅能残余最初的草地之种……"
 }
