@@ -6,7 +6,7 @@
 	#Range: 0.01 ~ 1.0
 	lavaVisionOpacity = 0.65
 	#Whether to disable certain aspects of the Lava Vision Potion. Enable if issues with shaders persist.
-	shadersCompat = false
+	shadersCompat = true
 	#Whether bananas should drop from blocks tagged with #alexsmobs:drops_bananas
 	bananasDropFromLeaves = true
 	#1 out of this number chance for leaves to drop a banana when broken. Fortune is automatically factored in
@@ -63,7 +63,7 @@
 	#Range: 0.0 ~ 1.0
 	emuPantsDodgeChance = 0.45
 	#Whether cachalots can destroy wood blocks if angry.
-	cachalotDestruction = true
+	cachalotDestruction = false
 	#Relative volume of cachalot whales compared to other animals. Note that irl they are the loudest animal. Turn this down if you find their clicks annoying.
 	#Range: 0.0 ~ 10.0
 	cachalotVolume = 3.0
@@ -87,10 +87,10 @@
 	voidWormSpawnDimensions = ["minecraft:the_end"]
 	#All void worm damage is scaled to this.
 	#Range: 0.0 ~ 100.0
-	voidWormDamageModifier = 1.0
+	voidWormDamageModifier = 2.0
 	#Max Health of the void worm boss.
 	#Range: 0.0 ~ 1000000.0
-	voidWormMaxHealth = 160.0
+	voidWormMaxHealth = 300.0
 	#Whether the void worm boss is summonable or not, via the mysterious worm item.
 	voidWormSummonable = true
 	#Whether seagulls should steal food out of players' hotbar slots.
@@ -304,10 +304,10 @@
 	soulVultureSpawnRolls = 0
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 	#Range: 0 ~ 1000
-	snowLeopardSpawnWeight = 18
+	snowLeopardSpawnWeight = 9
 	#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 	#Range: > 0
-	snowLeopardSpawnRolls = 0
+	snowLeopardSpawnRolls = 3
 	#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 	#Range: 0 ~ 1000
 	spectreSpawnWeight = 10

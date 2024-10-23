@@ -81,6 +81,15 @@ ServerEvents.recipes(event => {
       InteractiveCrafting(output, "immersiveengineering:rs_engineering", material)
     )
 
+    //物流工程块
+    const logisticalEngineering = [
+      ['storagedrawers:controller', "create:precision_mechanism"],
+      ['storagedrawers:controller_slave', "#forge:plates/brass"]
+    ]
+    logisticalEngineering.forEach(([output, material]) =>
+      InteractiveCrafting(output, "kubejs:logistical_engineering", material)
+    )
+
 
     //一些其它的姑且也放这罢
     //传动杆

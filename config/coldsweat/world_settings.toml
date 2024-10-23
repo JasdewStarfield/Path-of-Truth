@@ -40,13 +40,11 @@
 	#Range: 1 ~ 16
 	"Block Range" = 7
 	#When set to true, uses Cold Sweat's temperature system to determine water freezing behavior
-	"Custom Freezing Check" = true
+	"Custom Freezing Behavior" = false
+	#When set to true, modifies ice blocks to be harvestable with a pickaxe
+	"Custom Ice Drops" = false
 
 [Misc]
-	#The amount of temperature normalization from being deep underground
-	#0.0 = no insulation, 1.0 = full insulation
-	#Range: 0.0 ~ 1.0
-	"Cave Insulation Strength" = 1.0
 	#Overrides the world temperature when the player is within this structure
 	#Format: [["structure_1", temperature1, *units], ["structure_2", temperature2, *units]... etc]
 	#(* = optional)
