@@ -81,7 +81,8 @@ ServerEvents.recipes(event => {
   event.recipes.create.mixing('3x tfmg:blasting_mixture', ['#forge:dusts/iron','#forge:dusts/iron','#forge:dusts/iron','tfmg:limesand'])
 
   //石灰砂可以用方解石磨
-  event.recipes.create.milling(Item.of('tfmg:limesand').withChance(0.5), 'calcite')
+  event.remove({id:"create:milling/calcite"})
+  event.recipes.create.milling([Item.of('tfmg:limesand').withChance(0.5), Item.of('bone_meal').withChance(0.75)], 'calcite')
 
   //我寻思工业大麻也能做绳子
   event.shaped('3x farmersdelight:rope', [ 

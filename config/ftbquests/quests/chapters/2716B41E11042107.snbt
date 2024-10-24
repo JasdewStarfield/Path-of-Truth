@@ -21,8 +21,8 @@
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 14.0d
-			y: 2.0d
+			x: 15.0d
+			y: 4.0d
 		}
 		{
 			height: 2.0d
@@ -426,7 +426,7 @@
 			]
 			hide_until_deps_complete: true
 			id: "2718164469D544DF"
-			shape: "diamond"
+			shape: "circle"
 			subtitle: "也许是燃料"
 			tasks: [{
 				id: "577F1DBBD3F9A3FA"
@@ -447,7 +447,6 @@
 			]
 			hide_until_deps_complete: true
 			id: "46A5743F6DC8054D"
-			shape: "diamond"
 			subtitle: "燃烧弹前置"
 			tasks: [{
 				id: "19988C4F9E13FD19"
@@ -495,6 +494,8 @@
 			description: [
 				"液态沥青冷却也是唯一产生沥青块的方式）"
 				"不过这玩意目前只能拿来铺路……"
+				""
+				"硫磺粉倒是可以用于批量生产烈焰粉！"
 			]
 			id: "22CB2BBE72C04014"
 			rewards: [{
@@ -503,7 +504,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "铺路！"
+			subtitle: "重油裂化副产物"
 			tasks: [
 				{
 					id: "3881E65EF3C152EC"
@@ -516,8 +517,9 @@
 					type: "item"
 				}
 			]
+			title: "沥青与硫磺"
 			x: 6.0d
-			y: 6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -584,6 +586,8 @@
 			description: [
 				"这将是对于你未来（可能存在的）电子厂生涯的第一步预演："
 				"看到纯粹的，还没有焊接任何元件的板子）"
+				""
+				"另：工程塑胶板使用机械动力的粗放方法压制很容易损坏。推荐使用金属冲压机！"
 			]
 			id: "32DA53E6EDA0AC90"
 			subtitle: "焊板子！"
@@ -621,14 +625,15 @@
 				"虽然我们不能在MC里为你提供计算机，但你已经接近这个世界的真相了。"
 			]
 			id: "07B58ED0910776DF"
-			size: 1.0d
+			shape: "gear"
+			size: 2.0d
 			subtitle: "高精尖"
 			tasks: [{
 				id: "5EBFA215B48BC68C"
 				item: "kubejs:electronic_engineering"
 				type: "item"
 			}]
-			x: 16.5d
+			x: 16.0d
 			y: 1.0d
 		}
 		{
@@ -737,8 +742,8 @@
 				type: "item"
 			}]
 			title: "【终点】暴风雪"
-			x: 14.0d
-			y: 4.0d
+			x: 16.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["05EF035C814ADE9B"]
@@ -981,8 +986,36 @@
 				type: "item"
 			}]
 			title: "精致存储"
-			x: 19.0d
+			x: 18.0d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"576A28075CA7077D"
+				"107639F1A8166B9C"
+			]
+			description: [
+				"相信走到这一步的你已经被昂贵的构件中的概率系统折磨过了……"
+				"但现在，通过分馏重油，你有了润滑油！在构件配方的&2每个循环第一步&r中添加一点润滑油，就能降低安装时的磨损，保证该构件的100%产出！"
+				""
+				"&n适用范围：精密构件，钢铁构件，遗忆构件，高级电子元件&r"
+			]
+			id: "36CD0821EDDA721F"
+			rewards: [{
+				id: "402CED88684E13B4"
+				item: "create:bar_of_chocolate"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "某巧克力打钱（不是）"
+			tasks: [{
+				id: "6CC17574DBAF58BD"
+				item: "tfmg:lubrication_oil_bucket"
+				type: "item"
+			}]
+			title: "纵享丝滑"
+			x: 8.0d
+			y: 6.0d
 		}
 	]
 	subtitle: ["Petrochemical Engineering"]

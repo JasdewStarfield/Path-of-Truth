@@ -24,6 +24,14 @@
 			x: 0.0d
 			y: -4.0d
 		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 0.0d
+			y: 18.5d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]

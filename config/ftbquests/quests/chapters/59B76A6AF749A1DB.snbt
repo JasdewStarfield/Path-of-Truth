@@ -224,6 +224,7 @@
 		}
 		{
 			dependencies: ["1E0E5E47E1264279"]
+			description: ["琥珀金是一种在电力系统上应用颇多的金属"]
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:ingot_electrum"
 			id: "3D6CCF4A93478320"
@@ -730,6 +731,7 @@
 				"另一种意义上的冲压）"
 				"好消息是，至少和create的辊压相比，它可以让你选择压制的类型）"
 				"也就是说，不是只能压制板子了）"
+				"（钢板也不用压三次了）"
 			]
 			icon: "immersiveengineering:metal_press"
 			id: "143039C6AC2D8186"
@@ -941,7 +943,10 @@
 		}
 		{
 			dependencies: ["3E60B78B0EE34B75"]
-			description: ["重型机械的基本结构之一"]
+			description: [
+				"由双层特种金属板制成的外壳赋予了这种机壳几乎难以想象的韧性，可以承载大量压力。"
+				"重型机械的基本结构之一"
+			]
 			id: "724A0B71BA342AEE"
 			subtitle: "很重，很重要"
 			tasks: [{

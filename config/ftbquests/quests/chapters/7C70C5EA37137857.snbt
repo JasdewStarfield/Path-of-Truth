@@ -189,7 +189,40 @@
 				type: "item"
 			}]
 			title: "我打我自己"
-			x: 0.0d
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["15E666BAE38566D8"]
+			description: [
+				"虽然在本整合包中鞘翅有许多替代手段，但在某些配方中它仍是重要的材料。"
+				"鞘翅的获取方式和原版无异——你都需要找到末地船。然而，部分末地船不会生成鞘翅……取而代之是一个毁灭催化器。"
+				"&m这里不建议触碰毁灭催化器，否则你可能会瞬间回家……字面意义的&r"
+			]
+			id: "1E764C1B8E3B46A9"
+			rewards: [{
+				id: "58790D95A1E919F7"
+				item: "minecraft:respawn_anchor"
+				type: "item"
+			}]
+			subtitle: "熟悉吗？熟悉就对了"
+			tasks: [{
+				id: "55B7CEFF247B0C49"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
 			y: 2.0d
 		}
 	]

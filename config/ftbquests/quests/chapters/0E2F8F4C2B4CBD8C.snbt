@@ -1616,8 +1616,8 @@
 				}
 			]
 			title: "制杖与贩剑"
-			x: 0.0d
-			y: 4.0d
+			x: 1.0d
+			y: 6.0d
 		}
 		{
 			description: ["比高中课本还多XD"]
@@ -1881,7 +1881,7 @@
 				}
 			]
 			title: "我爱读书"
-			x: 0.0d
+			x: -1.0d
 			y: 6.0d
 		}
 		{
@@ -1931,7 +1931,7 @@
 			}]
 			title: "魔能建筑法杖"
 			x: 0.0d
-			y: -4.0d
+			y: 4.0d
 		}
 	]
 	subtitle: ["The Way to Legend"]
