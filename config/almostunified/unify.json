@@ -38,7 +38,8 @@
     "forge:coal_coke",
     "forge:dough",
     "forge:flour",
-    "forge:rope"
+    "forge:rope",
+    "forge:slag"
   ],
   "materials": [
     "aeternium",

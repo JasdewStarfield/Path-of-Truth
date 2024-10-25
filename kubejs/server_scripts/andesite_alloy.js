@@ -24,4 +24,14 @@ ServerEvents.recipes(event => {
 
     event.recipes.create.mixing('4x kubejs:raw_andesite_alloy', ['#forge:nuggets/tin','#forge:nuggets/tin','#forge:nuggets/tin','#forge:nuggets/tin','minecraft:andesite','minecraft:andesite','minecraft:andesite','minecraft:andesite','botania:livingrock'])
     event.blasting('create:andesite_alloy', 'kubejs:raw_andesite_alloy')
+
+    event.custom({
+        "type":"immersiveengineering:arc_furnace",
+        "additives":[],
+        "energy":12800,
+        "input":{"base_ingredient":{"item":"kubejs:raw_andesite_alloy"}},
+        "results":[{"item":"create:andesite_alloy"}],
+        "secondaries":[{"chance":0.75,"output":{"item":"create:andesite_alloy"}}],
+        "time":100
+    })
 })

@@ -75,7 +75,20 @@ ServerEvents.recipes(event => {
     "time":400
   })
 
-  //钢
+  //电弧炉炼铁
+  event.custom({
+    "type":"immersiveengineering:arc_furnace",
+    "additives":[],
+    "energy":102400,
+    "input":{"tag":"forge:dusts/iron"},
+    "results":[{"tag":"forge:ingots/iron"}],
+    "slag":{"tag":"forge:slag"},
+    "time":400
+  })
+
+
+
+
   //event.shapeless('tfmg:coke_dust', [
   //  'immersiveengineering:coke_dust'
   //])
