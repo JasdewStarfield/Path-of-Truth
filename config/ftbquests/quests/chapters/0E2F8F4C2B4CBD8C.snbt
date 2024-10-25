@@ -1620,6 +1620,7 @@
 			y: 6.0d
 		}
 		{
+			dependencies: ["374C430D0AD70D2E"]
 			description: ["比高中课本还多XD"]
 			hide_until_deps_complete: true
 			id: "6AFB8B9527F2FEB1"
@@ -1932,6 +1933,257 @@
 			title: "魔能建筑法杖"
 			x: 0.0d
 			y: 4.0d
+		}
+		{
+			dependencies: [
+				"48783396F615D90E"
+				"5D14EEEDED65B6BF"
+			]
+			description: ["收集所有的原版唱片！"]
+			id: "3B0F65013925C0B6"
+			rewards: [
+				{
+					id: "7DE7DF772A50DB89"
+					item: "sophisticatedbackpacks:jukebox_upgrade"
+					type: "item"
+				}
+				{
+					id: "7ADE016917FD9E8C"
+					item: "iammusicplayer:cassette_deck"
+					type: "item"
+				}
+				{
+					id: "7BC576B26B7B2066"
+					item: "iammusicplayer:music_manager"
+					type: "item"
+				}
+			]
+			subtitle: "我觉得这包含一种运气问题。"
+			tasks: [
+				{
+					id: "1E7CBA9AD49B51BA"
+					item: "minecraft:music_disc_13"
+					type: "item"
+				}
+				{
+					id: "7186611C78A75D61"
+					item: "minecraft:music_disc_cat"
+					type: "item"
+				}
+				{
+					id: "742B45C728296B93"
+					item: "minecraft:music_disc_blocks"
+					type: "item"
+				}
+				{
+					id: "4F3FA509BDCBEC49"
+					item: "minecraft:music_disc_chirp"
+					type: "item"
+				}
+				{
+					id: "7532B824FBEEA88E"
+					item: "minecraft:music_disc_far"
+					type: "item"
+				}
+				{
+					id: "3B63A4D6EE811CA2"
+					item: "minecraft:music_disc_mall"
+					type: "item"
+				}
+				{
+					id: "76AB543A631CB3D6"
+					item: "minecraft:music_disc_mellohi"
+					type: "item"
+				}
+				{
+					id: "77F1BCC051427102"
+					item: "minecraft:music_disc_stal"
+					type: "item"
+				}
+				{
+					id: "5E15DA5D6A446600"
+					item: "minecraft:music_disc_strad"
+					type: "item"
+				}
+				{
+					id: "69B8E14A4EE739BA"
+					item: "minecraft:music_disc_ward"
+					type: "item"
+				}
+				{
+					id: "35A7D2E4B311EC4E"
+					item: "minecraft:music_disc_11"
+					type: "item"
+				}
+				{
+					id: "07B64D07EC70746D"
+					item: "minecraft:music_disc_wait"
+					type: "item"
+				}
+				{
+					id: "2D28FF56813BAAAE"
+					item: "minecraft:music_disc_otherside"
+					type: "item"
+				}
+				{
+					id: "65DC90C328DFEF6E"
+					item: "minecraft:music_disc_5"
+					type: "item"
+				}
+				{
+					id: "5DD8EE9991AFE421"
+					item: "minecraft:music_disc_pigstep"
+					type: "item"
+				}
+				{
+					id: "349784AEFA8AABA7"
+					item: "minecraft:music_disc_relic"
+					type: "item"
+				}
+			]
+			title: "原教旨主义者"
+			x: 0.0d
+			y: -4.5d
+		}
+		{
+			dependencies: [
+				"5D14EEEDED65B6BF"
+				"48783396F615D90E"
+			]
+			description: [
+				"也许我们应该给唱片机加个耐久度。"
+				"收集所有模组提供的唱片！"
+			]
+			id: "54B7D31714F8BD90"
+			rewards: [
+				{
+					id: "72966D603D35D2FE"
+					item: "supplementaries:speaker_block"
+					type: "item"
+				}
+				{
+					id: "75909705419E8953"
+					item: {
+						Count: 1
+						id: "alexsmobs:echolocator"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B23ACAF06DDEB58"
+					item: "universalgrid:creative_wireless_universal_grid"
+					type: "item"
+				}
+			]
+			subtitle: "你的CD机还没坏掉吗？？？"
+			tasks: [
+				{
+					id: "56402F7DF17379BA"
+					item: "snowyspirit:music_disc_winter"
+					type: "item"
+				}
+				{
+					id: "1AC06225AEA1762F"
+					item: "botania:record_gaia_1"
+					type: "item"
+				}
+				{
+					id: "3B1626DB53499A4A"
+					item: "botania:record_gaia_2"
+					type: "item"
+				}
+				{
+					id: "746E1F4EF39D0283"
+					item: "biomesoplenty:music_disc_wanderer"
+					type: "item"
+				}
+				{
+					id: "303AB82E4BE06A70"
+					item: "blue_skies:population"
+					type: "item"
+				}
+				{
+					id: "1083547E36A846E3"
+					item: "blue_skies:blinding_rage"
+					type: "item"
+				}
+				{
+					id: "500EF5B7EA68F071"
+					item: "blue_skies:defying_starlight"
+					type: "item"
+				}
+				{
+					id: "68DA72C7A0FA1E19"
+					item: "blue_skies:venomous_encounter"
+					type: "item"
+				}
+				{
+					id: "2FD02EAA7D5FBC81"
+					item: "alexsmobs:music_disc_thime"
+					type: "item"
+				}
+				{
+					id: "045029296E849940"
+					item: "alexsmobs:music_disc_daze"
+					type: "item"
+				}
+				{
+					id: "3D75B34AD4704508"
+					item: "undergarden:music_disc_mammoth"
+					type: "item"
+				}
+				{
+					id: "16E94F59BC75794B"
+					item: "undergarden:music_disc_limax_maximus"
+					type: "item"
+				}
+				{
+					id: "1BDC8CF4A9B04C3C"
+					item: "undergarden:music_disc_relict"
+					type: "item"
+				}
+				{
+					id: "5988FECEFE87BDFC"
+					item: "undergarden:music_disc_gloomper_anthem"
+					type: "item"
+				}
+				{
+					id: "433C7AE0283EB339"
+					item: "outer_end:music_disc_galactic_wave"
+					type: "item"
+				}
+				{
+					id: "649AAC9B5C10136D"
+					item: "outer_end:music_disc_unknown_frontier"
+					type: "item"
+				}
+				{
+					id: "409B3BA4D1BAB39B"
+					item: "create_confectionery:the_bright_side"
+					type: "item"
+				}
+				{
+					id: "0A3E10FE9565A564"
+					item: "bloodmagic:bleedingedge"
+					type: "item"
+				}
+				{
+					id: "7BA8650132432C93"
+					item: "create_connected:music_disc_elevator"
+					type: "item"
+				}
+				{
+					id: "0A6D02A9D08E5C77"
+					item: "create_connected:music_disc_interlude"
+					type: "item"
+				}
+			]
+			title: "音乐发烧友"
+			x: 0.0d
+			y: -3.5d
 		}
 	]
 	subtitle: ["The Way to Legend"]
