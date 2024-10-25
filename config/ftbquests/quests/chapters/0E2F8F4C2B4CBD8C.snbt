@@ -908,7 +908,7 @@
 		}
 		{
 			dependencies: ["0E5C63B3D4891362"]
-			description: ["从石生体手中交易获得扼塞战斧，然后升级为最强大斧头！"]
+			description: ["和被遗忘者战斗获得扼塞战斧，然后升级为最强大斧头！"]
 			id: "5DFEFE3A567A507F"
 			rewards: [
 				{
@@ -997,17 +997,30 @@
 				}
 			]
 			subtitle: "深暗之园最强武器"
-			tasks: [{
-				id: "7868FDBB684B6F3A"
-				item: {
-					Count: 1
-					id: "undergarden:forgotten_battleaxe"
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "7868FDBB684B6F3A"
+					item: {
+						Count: 1
+						id: "undergarden:forgotten_battleaxe"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "2698EAC01F12FF18"
+					item: {
+						Count: 1
+						id: "undergarden:cloggrum_battleaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "深园王者"
 			x: 2.0d
 			y: 0.0d
