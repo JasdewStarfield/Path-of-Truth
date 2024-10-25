@@ -76,6 +76,7 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:rope","beautify:rope")
     event.add("forge:plates/netherite","createdeco:netherite_sheet")
     event.add("forge:plates/andesite","createdeco:andesite_sheet")
+    event.add("forge:slag","tfmg:slag")
 
     //Undergarden
     event.add("create:crushed_ores","kubejs:crushed_froststeel_ore")
