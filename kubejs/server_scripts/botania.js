@@ -77,8 +77,9 @@ ServerEvents.recipes(event => {
     )
     */
 
-    //修改魔力池配方
+    //修改魔力池配方以及移除神话魔力池配方
     event.remove({ output: 'botania:mana_pool' })
+    event.remove({id: 'botania:fabulous_pool' })
     event.shaped(Item.of('botania:mana_pool',1),
         ['A A',
         'A A',
