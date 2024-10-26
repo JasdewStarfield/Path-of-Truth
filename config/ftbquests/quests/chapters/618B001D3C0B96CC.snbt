@@ -357,6 +357,8 @@
 				"同时，在放入&e原始燃料单元/熔岩晶体&r的时候，它可以作为长效熔炉使用。"
 				""
 				"经过适配性调整，现在炼金炉可以用来&b对大多数有用的矿物进行更高效的处理&r，也可以用来生产一些工业产品。"
+				""
+				"&o&d贴图缺失是正常的，炉子功能没问题，贴图得怪血魔法……&r&r"
 			]
 			id: "78CCD3E3F5662FCF"
 			rewards: [{
@@ -813,72 +815,24 @@
 				"701A0263F6C6D275"
 			]
 			description: [
-				"这是铁魔法里最硬的套装，没有之一，就是要的下界合金有点多。"
-				"虽然其他的专精套装都各有加成，但这一套套装有无与伦比的优势：硬，真的硬。"
-				"加成都是可以通过法球打上的，但是硬度不行，所以这套套装的底子最好）"
-				"500法力值足够让你成为米尔豪斯法力风暴——虽然还差500（确信"
-				"&o&b你等着，等我有1000点法力值的时候！&r&r"
+				"植魔的神秘手镜——&c只能用来绑定魔力池&r，但这也意味着，如果你有一个稳定产魔的池子，那你就可以开始使用一些超模的植魔装备了）"
+				"需要注意的是，手镜&6无法通过光环之戒充能&r，也就是说如果你希望&a自动充能后使用装备&r，那么你还是需要携带石板……"
+				""
+				"&o&b曾经这个章节有过创造石板，直到抽象魔法师的膝盖被生电玩家射了一箭&r&r"
 			]
 			id: "18F0A4189A37CC69"
 			rewards: [{
-				id: "77866EA0D8D8FDD7"
-				item: "irons_spellbooks:ice_staff"
+				id: "665A311261A1B07E"
+				item: "botania:aura_ring_greater"
 				type: "item"
 			}]
-			subtitle: "巨量法力值！"
-			tasks: [
-				{
-					id: "0E2E6754DA8FF0ED"
-					item: {
-						Count: 1
-						id: "irons_spellbooks:netherite_mage_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "2505EBE45F474CC2"
-					item: {
-						Count: 1
-						id: "irons_spellbooks:netherite_mage_chestplate"
-						tag: {
-							Damage: 0
-							ISB_Spells: {
-								data: [ ]
-								maxSpells: 1
-								mustEquip: 1b
-								spellWheel: 1b
-							}
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "6076EB4A37B5F618"
-					item: {
-						Count: 1
-						id: "irons_spellbooks:netherite_mage_leggings"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "74830D44BDDCF547"
-					item: {
-						Count: 1
-						id: "irons_spellbooks:netherite_mage_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "下界战斗法师"
+			subtitle: "传输魔力，超越时空"
+			tasks: [{
+				id: "7E97E7D81DB6708A"
+				item: "botania:mana_mirror"
+				type: "item"
+			}]
+			title: "远距离传输"
 			x: 3.5d
 			y: 3.5d
 		}

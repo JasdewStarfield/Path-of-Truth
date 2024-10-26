@@ -851,6 +851,39 @@ ServerEvents.recipes(event => {
     */
 
     //炼金反应炉配方修改
+    //增生之种产出
+    event.custom({
+        "type": "bloodmagic:arc",
+        //可能存在的追加输出（可以不写）
+        "addedoutput": [
+            {
+                "type": {
+                    "item": 'botania:overgrowth_seed'
+                },
+                "chance": 0.5,
+                "mainchance": 0.0
+            }
+        ],
+        //消耗配方（？）
+        "consumeingredient": false,
+        //输入材料
+        "input": {
+            "item": 'botania:dandelifeon'
+        },
+        //输入数量（大概）
+        "inputsize": 1,
+        //主要产物输出几率
+        "mainoutputchance": 0.0,
+        //输出产物内容
+        "output": {
+            "count": 1,//输出数量（可以不写）
+            "item": 'botania:overgrowth_seed'
+        },
+        //使用工具（必须是血魔法原有工具）
+        "tool": {
+            "tag": 'bloodmagic:arc/explosive'
+        }
+    })
     //恶魔合金复制
     event.custom({
         "type": "bloodmagic:arc",

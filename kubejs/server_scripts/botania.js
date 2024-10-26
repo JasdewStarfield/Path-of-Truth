@@ -209,6 +209,14 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'botania',output:'botania:spark'},
     'minecraft:gold_nugget', 'botania:elementium_nugget' )
 
+    //手镜配方替换
+    event.replaceInput({mod:'botania',output:'botania:mana_mirror'},
+    'botania:livingrock', 'irons_spellbooks:arcane_anvil' )
+    event.replaceInput({mod:'botania',output:'botania:mana_mirror'},
+    'botania:mana_pearl', 'immersiveengineering:rs_engineering' )
+    event.replaceInput({mod:'botania',output:'botania:mana_mirror'},
+    'botania:terrasteel_ingot', 'botania:life_essence' )
+
     //拉普达碎片I配方替换
     event.replaceInput({mod:'botania',output:'botania:laputa_shard'},
     'botania:dragonstone', 'botania:corporea_spark_master' )
@@ -374,9 +382,9 @@ ServerEvents.recipes(event => {
             'botania:mana_tablet', 
             'botania:terrasteel_block',
             '#forge:storage_blocks/steel',
-            'botania:dandelifeon',
+            'botania:spawner_mover',
             'immersiveengineering:storage_electrum',
-            'minecraft:conduit',
+            'minecraft:netherite_ingot',
             'irons_spellbooks:mana_upgrade_orb',
             'blue_skies:charoite_block'
         ], 
