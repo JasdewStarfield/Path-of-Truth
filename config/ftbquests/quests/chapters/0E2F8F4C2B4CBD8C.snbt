@@ -2085,11 +2085,6 @@
 					}
 					type: "item"
 				}
-				{
-					id: "5B23ACAF06DDEB58"
-					item: "universalgrid:creative_wireless_universal_grid"
-					type: "item"
-				}
 			]
 			subtitle: "你的CD机还没坏掉吗？？？"
 			tasks: [

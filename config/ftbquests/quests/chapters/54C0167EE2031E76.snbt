@@ -24,6 +24,7 @@
 				""
 				"&a&o注：本篇章的内容并不要求全部完成，完成也没有奖励（悲），只是作为一个流程图使用的。希望各位留意。&r&r"
 			]
+			icon: "immersiveengineering:manual"
 			id: "1A4352FB579FF77E"
 			rewards: [{
 				id: "430AC78B3E79E9F5"
@@ -874,6 +875,33 @@
 			title: "遗忆金属"
 			x: 2.0d
 			y: -8.0d
+		}
+		{
+			dependencies: ["325D500216D2EFDC"]
+			icon: "minecraft:quartz"
+			id: "40717610A2317CCE"
+			rewards: [{
+				id: "5E43FF5184328C2F"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "洗涤灵魂沙！"
+			tasks: [
+				{
+					id: "5AE2230AD34421C4"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "3E3811D7B27C46A2"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "下界石英"
+			x: 2.0d
+			y: 4.0d
 		}
 	]
 	subtitle: ["Standardized Production"]
