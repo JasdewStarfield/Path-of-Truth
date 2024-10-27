@@ -392,6 +392,8 @@
 			]
 			description: [
 				"&a【完成后解锁主线章节：4I 机械轰鸣】&r"
+				"注意：create：newage的电线因功能重复已被&c全部禁用&r！请通过&9沉浸工程&r的电路相关工具维系你的电路！"
+				""
 				"电光四射，&m电眼逼人&r"
 			]
 			icon: "createdeco:decal_electrical"
