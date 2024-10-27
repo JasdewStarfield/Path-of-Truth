@@ -25,7 +25,7 @@
 	inventoryPause = false
 	#Framerate limit on window inactive (out of focus or minimized), 0 = no change.
 	#Range: 0 ~ 255
-	framerateInactive = 30
+	framerateInactive = 10
 	#Framerate limit on window minimized, 0 = same as framerate inactive.
 	#This value will be no greater than framerate inactive.
 	#Range: 0 ~ 255
@@ -90,7 +90,7 @@
 	ding = true
 	#Press 'C' key (by default) to zoom 4x, the same as OptiFine's.
 	#This is auto disabled when OptiFine is installed.
-	zoom = true
+	zoom = false
 	#Control the window mode, normal mode does nothing.
 	#Allowed Values: NORMAL, FULLSCREEN, FULLSCREEN_BORDERLESS, MAXIMIZED, MAXIMIZED_BORDERLESS, WINDOWED, WINDOWED_BORDERLESS
 	windowMode = "NORMAL"

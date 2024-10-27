@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = about
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1730039056646
+  last_edited_time = 1730047718536
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:e4d00734-02d7-41dc-a868-384d0a20b491-1730038578334] = [groups:][instances:]
+  [loading_requirement_container_meta:7624fbd8-5f08-4d41-84ad-84f38d4240a5-1730047711693] = [groups:][instances:]
 }
 
 customization {
@@ -21,11 +21,6 @@ customization {
   action = autoscale
   basewidth = 1920
   baseheight = 1001
-}
-
-menu_background {
-  panorama_name = panorama1
-  background_type = panorama
 }
 
 customization {

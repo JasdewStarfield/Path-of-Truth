@@ -4,7 +4,7 @@ checkInterval = 2
 #Matched screens would disable your IME
 screenBlacklist = []
 #Matched screens would enable your IME
-screenWhitelist = ["net.minecraft.client.gui.screens.inventory.BookEditScreen", "net.minecraft.client.gui.screens.inventory.SignEditScreen", "net.minecraft.client.gui.screens.inventory.HangingSignEditScreen", "journeymap.client.ui.waypoint.WaypointEditor", "com.ldtteam.blockout.BOScreen", "dev.ftb.mods.ftblibrary.ui.ScreenWrapper"]
+screenWhitelist = ["net.minecraft.client.gui.screens.inventory.BookEditScreen", "net.minecraft.client.gui.screens.inventory.SignEditScreen", "net.minecraft.client.gui.screens.inventory.HangingSignEditScreen", "journeymap.client.ui.waypoint.WaypointEditor", "com.ldtteam.blockout.BOScreen", "dev.ftb.mods.ftblibrary.ui.ScreenWrapper", "com.simibubi.create.content.equipment.clipboard.ClipboardScreen"]
 #Matched input box would disable your IME
 inputBlacklist = []
 #Matched input box would enable your IME
