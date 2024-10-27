@@ -267,14 +267,14 @@ ServerEvents.recipes(event => {
     event.remove({id:/createchromaticreturn\:.*doubling\.*/})
 
     //泥土到铜
-    event.recipes.create.compacting('dirt', ['#forge:sand','#forge:cobblestone',Fluid.of('water',500)])
-    event.recipes.create.splashing([Item.of('create:copper_nugget').withChance(0.25)], 'dirt')
+    event.recipes.create.mixing('2x dirt', ['#forge:sand','#forge:cobblestone',Fluid.of('water',500)])
+    event.recipes.create.splashing([Item.of('create:copper_nugget').withChance(0.5)], 'dirt')
 
     //燧石出镍
     event.recipes.create.milling(Item.of('#forge:nuggets/nickel').withChance(0.5), 'flint')
 
     //黏土出锌
-    event.recipes.create.milling(Item.of('#forge:nuggets/zinc').withChance(0.2), 'clay_ball')
+    event.recipes.create.milling(Item.of('#forge:nuggets/zinc').withChance(0.5), 'clay_ball')
 
     //泥巴出铁、铝土
     event.recipes.create.crushing([Item.of('create:crushed_raw_iron').withChance(0.14),Item.of('kubejs:crushed_raw_bauxite').withChance(0.07)], 'packed_mud')

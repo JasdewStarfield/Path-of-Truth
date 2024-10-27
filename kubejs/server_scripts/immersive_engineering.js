@@ -262,7 +262,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
       Item.of('tfmg:steel_mechanism')
       ], '#forge:plates/steel', [
-      event.recipes.createFilling('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', Fluid.of('tfmg:lubrication_oil', 100)]),
+      event.recipes.createFilling('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', Fluid.of('tfmg:lubrication_oil', 25)]),
       event.recipes.createDeploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'create:precision_mechanism']),
       event.recipes.createDeploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'tfmg:turbine_blade']),
       event.recipes.createDeploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', '#forge:dusts/aquite']),
@@ -288,7 +288,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
       Item.of('kubejs:forgotten_mechanism')
       ], '#forge:plates/forgotten_metal', [
-      event.recipes.createFilling('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', Fluid.of('tfmg:lubrication_oil', 100)]),
+      event.recipes.createFilling('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', Fluid.of('tfmg:lubrication_oil', 25)]),
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'create:precision_mechanism']),
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'blue_skies:diopside_gem']),
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'immersiveengineering:component_electronic']),
@@ -429,7 +429,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
       Item.of('immersiveengineering:component_electronic_adv')
       ], 'immersiveengineering:circuit_board', [
-      event.recipes.createFilling('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', Fluid.of('tfmg:lubrication_oil', 100)]),
+      event.recipes.createFilling('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', Fluid.of('tfmg:lubrication_oil', 25)]),
       event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:silicon']),
       event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'immersiveengineering:component_electronic']),
       event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:dusts/hellforged']),

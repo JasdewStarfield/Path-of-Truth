@@ -26,6 +26,10 @@ ServerEvents.recipes(event => {
   event.remove({ input: 'createchromaticreturn:andesite_component' })
   event.remove({ input: 'createchromaticreturn:brass_component' })
 
+  //黄铜，安山组件配方
+  event.recipes.create.crushing(Item.of('create:andesite_alloy'), 'createchromaticreturn:andesite_component')
+  event.recipes.create.crushing(Item.of('create:brass_ingot'), 'createchromaticreturn:brass_component')
+
   //环境枪
   event.shapeless(
     Item.of('create:handheld_worldshaper',1),

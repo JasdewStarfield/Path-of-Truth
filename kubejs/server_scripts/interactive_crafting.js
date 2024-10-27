@@ -32,7 +32,8 @@ ServerEvents.recipes(event => {
       ["create:portable_storage_interface", "create:chute"],
       ["create:millstone", "grindstone"],
       ["create:encased_fan", "create:propeller"],
-      ["create_power_loader:empty_andesite_chunk_loader", "glowstone"]
+      ["create_power_loader:empty_andesite_chunk_loader", "glowstone"],
+      ["create_mechanical_extruder:mechanical_extruder", "kubejs:fluid_engineering"]
     ]
     andesiteEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:andesite_engineering", material)

@@ -1,4 +1,7 @@
 {
   "item.create.crushed_raw_aluminum": "粉碎氧化铝",
-  "item.create.brass_hand": "魔法手部零件"
+  "item.create.brass_hand": "魔法手部零件",
+
+  "fluid.create.chocolate": "巧克力",
+  "fluid.create.honey": "蜂蜜"
 }
