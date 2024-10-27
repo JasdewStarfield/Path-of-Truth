@@ -169,17 +169,6 @@
 					type: "item"
 				}
 				{
-					id: "324D5B81B2A82B68"
-					item: {
-						Count: 1
-						id: "tide:blazing_swordfish"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "3CB74630D25CE054"
 					item: "minecraft:blaze_rod"
 					type: "item"
