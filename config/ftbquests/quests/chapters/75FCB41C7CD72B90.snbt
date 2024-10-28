@@ -29,6 +29,7 @@
 			description: [
 				"把虫子丢进末地的虚空，开启新世界的大门）"
 				"如果你计划召唤虚空蠕虫，你最好打完后做个雕像，因为可以用魔法进行兑换）"
+				"&o&5注意：虚空蠕虫在新版本中得到了加强，对战时请注意安全！&r&r"
 				""
 				"&o&b为什么虚空里会有大虫子？因为程序员能够虚空产生bug（&r&r"
 			]
@@ -207,6 +208,12 @@
 				"同样的，相较于其应有的“理论数值”，它们&d在神秘力量的笼罩下得到了强化&r——并且也能汲取玩家的死亡来修复自身。"
 				""
 				"&o&6也许需要更谨慎的思考……&r&r"
+				"{@pagebreak}"
+				"好的，这里是对于翻到第二页的人的优待："
+				"由于我们的UI改良，&b默认无法看到BOSS的数据&r，但能看到相当帅气的BOSS血量条）"
+				"因此将基础数据补充如下："
+				"&c下界铁掌&r-400生命值，10护甲，主要通过飞行后以本体进行拳击&4（附带爆炸）&r进行攻击，且判定点仅有&c掌心眼睛&r一处！"
+				"&5黑曜石柱&r-600生命值，15护甲，本体&6闪烁不同符文&r代表不同的攻击方式，其中&d紫色符文&r的瞬移爆破会造成近似秒杀的高额伤害。"
 			]
 			icon: "botania:lens_warp"
 			id: "2E1CD54E1A4AA272"
@@ -219,12 +226,14 @@
 			tasks: [
 				{
 					entity: "bosses_of_mass_destruction:gauntlet"
+					icon: "bosses_of_mass_destruction:blazing_eye"
 					id: "44A461541F3BA6A0"
 					type: "kill"
 					value: 1L
 				}
 				{
 					entity: "bosses_of_mass_destruction:obsidilith"
+					icon: "bosses_of_mass_destruction:obsidian_heart"
 					id: "66399BA81740911F"
 					type: "kill"
 					value: 1L
@@ -242,6 +251,12 @@
 				"好好想想怎么击败它们吧。"
 				""
 				"&o&6*人类之所以是人类源于智慧和思考，而不是纯粹的力量。&r&r"
+				"{@pagebreak}"
+				"为了奖励有耐心的看到第二页的人……"
+				"基于已有的UI，&c炫酷的BOSS血条&r将遮挡一切，你将&4无法看到BOSS的准确血量&r！"
+				"因此关键数据附加于此："
+				"&9暗夜巫妖&r-500生命值，无护甲，但是会&6一直飞行在远处&r，&7追踪导弹会造成致命的凋零III效果&r。"
+				"&2虚空之花&r-700生命值，6护甲，&a具有荆棘效果&r，主要攻击方式是以自身为圆心的&d棘刺爆发&r。"
 			]
 			icon: "undergarden:frozen_deepturf_block"
 			id: "6E63417700136920"
@@ -254,12 +269,14 @@
 			tasks: [
 				{
 					entity: "bosses_of_mass_destruction:lich"
+					icon: "bosses_of_mass_destruction:ancient_anima"
 					id: "559FAE0C823C5AE6"
 					type: "kill"
 					value: 1L
 				}
 				{
 					entity: "bosses_of_mass_destruction:void_blossom"
+					icon: "bosses_of_mass_destruction:void_thorn"
 					id: "72EE170A2E1B0CA8"
 					type: "kill"
 					value: 1L

@@ -17,7 +17,7 @@
 		#
 		#真实伤害最大值(范围:0-30)
 		#Range: 0 ~ 30
-		realDamageMax = 3
+		realDamageMax = 4
 
 	[RealDamage.FunctionCalculation]
 		#
