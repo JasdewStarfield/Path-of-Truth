@@ -16,6 +16,8 @@
 	BLOOD_DAMAGE_DIFFERENCE_ENABLED = true
 	#Infinite ammo for pocket sand
 	BOTTOMLESS_SAND_ENABLED = true
+	#Gives you the crimson wiki book at start
+	CRIMSON_WIKI_ENABLED = false
 
 [Mobs]
 
@@ -126,6 +128,8 @@
 		FLY_TRANSFORM_ENABLED = true
 		#Lit candles will cause flies to run away from it
 		CANDLE_REPEL_ENABLED = true
+		#Holding a maggot while fishing will cause it to be consumed and increase luck for fishing
+		MAGGOT_FISHING_ENABLED = false
 
 	[Mobs."Grizzly Bear"]
 		#Grizzlies will not attack players when tamed
@@ -208,6 +212,8 @@
 		SOMBRERO_PROTECTION_ENABLED = true
 		#Seagulls below 40% health will not steal food
 		SEAGULL_WEAKEN_ENABLED = true
+		#Seagulls will only snatch food from your main or off hand
+		HELD_FOOD_ENABLED = false
 
 	[Mobs.Skelewag]
 		#Skelewag circle their prey like hammerhead sharks
@@ -265,6 +271,8 @@
 		TUSKLIN_TRUST_ENABLED = true
 		#Tusklins can trample when ridden
 		TUSKLIN_TRAMPLE_ENABLED = true
+		#Tusklin struck by lightning will be converted to zoglins
+		TUSKLIN_STRUCK_ENABLED = true
 
 	[Mobs."Void Worm"]
 		#Void Worm can be stunned and brought down when hit in the head enough
