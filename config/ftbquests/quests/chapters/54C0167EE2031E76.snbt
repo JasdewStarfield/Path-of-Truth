@@ -81,9 +81,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["435DA157EC54D3EA"]
+			dependencies: [
+				"435DA157EC54D3EA"
+				"5012BDA254DF42C1"
+			]
 			id: "325D500216D2EFDC"
-			subtitle: "缠魂沙子"
+			min_required_dependencies: 1
+			subtitle: "缠魂沙子（或红沙）"
 			tasks: [{
 				id: "67097C16AEF3C2C5"
 				item: "minecraft:soul_sand"
@@ -93,16 +97,20 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["325D500216D2EFDC"]
+			dependencies: [
+				"325D500216D2EFDC"
+				"5012BDA254DF42C1"
+			]
 			icon: "minecraft:gold_ingot"
 			id: "6E3F0DA8745CD62F"
+			min_required_dependencies: 1
 			rewards: [{
 				id: "7D17272DB3FBC5B2"
 				type: "xp"
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "洗涤灵魂沙！"
+			subtitle: "洗涤灵魂沙（或者红沙）！"
 			tasks: [
 				{
 					id: "16B73DBEAAD7ABBB"
@@ -185,16 +193,20 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2CA163F35B71E735"]
+			dependencies: [
+				"2CA163F35B71E735"
+				"1F4E96EC3B77F15A"
+			]
 			icon: "minecraft:copper_ingot"
 			id: "73684052050C9EC2"
+			min_required_dependencies: 1
 			rewards: [{
 				id: "4C14B9D6E5DB02D8"
 				type: "xp"
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "洗涤泥土！"
+			subtitle: "洗涤泥土！或者粉碎陶瓦！"
 			tasks: [
 				{
 					id: "23A5B05D0199BA1F"
@@ -209,7 +221,7 @@
 			]
 			title: "铜"
 			x: -2.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["73A4602078813496"]
@@ -351,7 +363,7 @@
 				}
 			]
 			title: "锌"
-			x: 0.0d
+			x: -2.0d
 			y: 4.0d
 		}
 		{
@@ -900,8 +912,8 @@
 				}
 			]
 			title: "下界石英"
-			x: 2.0d
-			y: 4.0d
+			x: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["74581D474C09D62C"]
@@ -932,6 +944,30 @@
 			title: "万事开头难"
 			x: -2.0d
 			y: -6.0d
+		}
+		{
+			dependencies: ["30CAE7CB4F12B7B7"]
+			id: "1F4E96EC3B77F15A"
+			subtitle: "把黏土搓成块，然后烧制"
+			tasks: [{
+				id: "373737468DA9CDEB"
+				item: "minecraft:terracotta"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1F4E96EC3B77F15A"]
+			id: "5012BDA254DF42C1"
+			subtitle: "磨碎陶瓦……"
+			tasks: [{
+				id: "29DD0B09BBAF96D5"
+				item: "minecraft:red_sand"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
 		}
 	]
 	subtitle: ["Standardized Production"]

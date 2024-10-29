@@ -133,7 +133,7 @@
 		}
 		{
 			dependencies: ["6C542C19575974DB"]
-			description: ["获得你应该通过地狱获得的所有资源！"]
+			description: ["获得你应该通过下界获得的所有资源！"]
 			icon: {
 				Count: 1
 				id: "minecraft:netherite_boots"
@@ -184,7 +184,7 @@
 					type: "item"
 				}
 			]
-			title: "地狱行者"
+			title: "下界行者"
 			x: 0.0d
 			y: -2.0d
 		}

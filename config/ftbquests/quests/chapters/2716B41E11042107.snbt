@@ -129,6 +129,9 @@
 			description: [
 				"具体可以参考思索说明"
 				"虽然是古老的磕头机，但也足够你来使用了）"
+				"只需要从动力输入口输入动力，就可以抽出原油了！"
+				""
+				"请注意：组装后，上方的整个横向的杆子都需要用强力胶粘成一个整体，这样才能正常运行！"
 			]
 			icon: "tfmg:pumpjack_crank"
 			id: "08B3DECCC7EBD7CE"
@@ -145,6 +148,7 @@
 					type: "item"
 				}
 				{
+					count: 5L
 					id: "76D35D4CC92E95EF"
 					item: "tfmg:pumpjack_hammer_part"
 					type: "item"
@@ -170,7 +174,13 @@
 					type: "item"
 				}
 				{
-					id: "11F7365EA7861EFA"
+					count: 3L
+					id: "6AD048F09828A1E5"
+					item: "tfmg:steel_truss"
+					type: "item"
+				}
+				{
+					id: "58127A5BBC890877"
 					item: {
 						Count: 1
 						id: "create:super_glue"
