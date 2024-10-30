@@ -83,7 +83,7 @@ ServerEvents.recipes(event => {
     "input":{"tag":"forge:dusts/iron"},
     "results":[{"tag":"forge:ingots/iron"}],
     "slag":{"tag":"forge:slag"},
-    "time":400
+    "time":100
   })
 
 
