@@ -61,8 +61,7 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
-          "quality": 2,
+          "weight": 20,
           "name": "collectorsreap:platinum_bass"
         }
       ],

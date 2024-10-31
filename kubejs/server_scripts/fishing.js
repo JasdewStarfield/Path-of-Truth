@@ -5,4 +5,6 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'tide',output:'tide:angler_workshop'},
     'minecraft:iron_nugget', 'kubejs:bronze_nugget')
 
+    event.remove({id:"netherdepthsupgrade:lava_fishing_rod"})
+
 })

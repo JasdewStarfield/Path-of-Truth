@@ -56,6 +56,21 @@
           "weight": 15,
           "quality": 3,
           "name": "tide:sailfish"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "collectorsreap:tiger_prawn"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 30,
+          "name": "collectorsreap:clam"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "collectorsreap:urchin"
         }
       ],
       "rolls": 1.0
