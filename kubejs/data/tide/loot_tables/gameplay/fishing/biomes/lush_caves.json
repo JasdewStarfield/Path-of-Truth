@@ -1,13 +1,21 @@
 {
+  "type": "minecraft:fishing",
   "pools": [
     {
-      "rolls": 1,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tide:fluttergill"
+          "name": "tide:fluttergill",
+          "weight": 45
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tropical_fish",
+          "weight": 70
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ]
 }

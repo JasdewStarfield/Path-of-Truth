@@ -2,56 +2,56 @@
   "type": "minecraft:fishing",
   "pools": [
     {
-      "rolls": 1,
-      "bonus_rolls": 0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 100,
-          "quality": 0,
-          "name": "tide:trout"
+          "name": "tide:trout",
+          "weight": 100
         },
         {
           "type": "minecraft:item",
-          "weight": 90,
-          "quality": 0,
-          "name": "minecraft:salmon"
+          "name": "minecraft:salmon",
+          "weight": 90
         },
         {
           "type": "minecraft:item",
-          "weight": 50,
+          "name": "tide:yellow_perch",
+          "weight": 85
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tide:bluegill",
+          "weight": 80
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tide:pike",
+          "quality": 1,
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tide:catfish",
           "quality": 2,
-          "name": "tide:pike"
+          "weight": 25
         },
         {
           "type": "minecraft:item",
-          "weight": 30,
+          "name": "tide:clayfish",
           "quality": 3,
-          "name": "tide:catfish"
+          "weight": 18
         },
         {
           "type": "minecraft:item",
-          "weight": 18,
-          "quality": 4,
-          "name": "tide:clayfish"
+          "name": "tide:bass",
+          "weight": 15
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
-          "quality": 0,
-          "name": "tide:bass"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 15,
-          "quality": 1,
-          "name": "tide:yellow_perch"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 15,
-          "quality": 1,
-          "name": "tide:bluegill"
+          "name": "tide:mint_carp",
+          "quality": 2,
+          "weight": 10
         },
         {
           "type": "minecraft:item",
@@ -63,15 +63,10 @@
           "type": "minecraft:item",
           "weight": 10,
           "quality": 2,
-          "name": "tide:mint_carp"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "quality": 2,
           "name": "collectorsreap:platinum_bass"
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ]
 }

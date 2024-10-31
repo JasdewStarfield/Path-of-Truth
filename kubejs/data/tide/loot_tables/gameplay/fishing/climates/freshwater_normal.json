@@ -2,52 +2,65 @@
   "type": "minecraft:fishing",
   "pools": [
     {
-      "rolls": 1,
-      "bonus_rolls": 0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 95,
-          "quality": 0,
-          "name": "tide:bass"
+          "name": "tide:bass",
+          "weight": 95
         },
         {
           "type": "minecraft:item",
-          "weight": 80,
-          "quality": 0,
-          "name": "tide:trout"
+          "name": "tide:bluegill",
+          "weight": 80
         },
         {
           "type": "minecraft:item",
-          "weight": 75,
-          "quality": 0,
-          "name": "minecraft:salmon"
+          "name": "tide:trout",
+          "weight": 80
         },
         {
           "type": "minecraft:item",
-          "weight": 50,
+          "name": "tide:yellow_perch",
+          "weight": 80
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:salmon",
+          "weight": 75
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tide:mint_carp",
+          "quality": 1,
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tide:guppy",
+          "quality": 1,
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tide:pike",
           "quality": 2,
-          "name": "tide:mint_carp"
+          "weight": 20
         },
         {
           "type": "minecraft:item",
-          "weight": 20,
-          "quality": 2,
-          "name": "tide:pike"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 15,
+          "name": "tide:catfish",
           "quality": 3,
-          "name": "tide:catfish"
+          "weight": 15
         },
         {
           "type": "minecraft:item",
-          "weight": 12,
+          "name": "tide:clayfish",
           "quality": 4,
-          "name": "tide:clayfish"
+          "weight": 12
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ]
 }

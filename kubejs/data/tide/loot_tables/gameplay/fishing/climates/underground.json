@@ -2,69 +2,64 @@
   "type": "minecraft:fishing",
   "pools": [
     {
-      "rolls": 1,
-      "bonus_rolls": 0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 100,
-          "quality": 0,
-          "name": "tide:cave_eel"
+          "name": "tide:cave_eel",
+          "weight": 90
         },
         {
           "type": "minecraft:item",
-          "weight": 100,
-          "quality": 0,
-          "name": "tide:cave_crawler"
+          "name": "tide:cave_crawler",
+          "weight": 90
         },
         {
           "type": "minecraft:item",
-          "weight": 70,
-          "quality": 0,
-          "name": "tide:glowfish"
+          "name": "tide:glowfish",
+          "weight": 70
         },
         {
           "type": "minecraft:item",
-          "weight": 70,
-          "quality": 0,
-          "name": "tide:anglerfish"
+          "name": "tide:anglerfish",
+          "weight": 70
         },
         {
           "type": "minecraft:item",
-          "weight": 50,
+          "name": "tide:iron_tetra",
           "quality": 1,
-          "name": "tide:iron_tetra"
+          "weight": 50
         },
         {
           "type": "minecraft:item",
-          "weight": 30,
+          "name": "tide:crystal_shrimp",
           "quality": 2,
-          "name": "tide:crystal_shrimp"
+          "weight": 30
         },
         {
           "type": "minecraft:item",
-          "weight": 20,
-          "name": "minecraft:tropical_fish"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 20,
+          "name": "tide:gilded_minnow",
           "quality": 3,
-          "name": "tide:gilded_minnow"
+          "weight": 10
         },
         {
           "type": "minecraft:item",
-          "weight": 20,
-          "quality": 0,
-          "name": "minecraft:cobblestone"
+          "name": "minecraft:cobblestone",
+          "weight": 25
         },
         {
           "type": "minecraft:item",
-          "weight": 20,
-          "quality": 0,
-          "name": "minecraft:stick"
+          "name": "minecraft:raw_iron",
+          "quality": 2,
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:stick",
+          "weight": 25
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ]
 }
