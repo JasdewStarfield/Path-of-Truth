@@ -79,7 +79,7 @@
 	[[sorting.containerOverrides]]
 		containerClass = "gripe._90.megacells.menu.MEGAInterfaceMenu"
 		sortRange = ""
-	
+
 	[[sorting.containerOverrides]]
 		containerClass = "blusunrize.immersiveengineering.client.gui.ArcFurnaceScreen"
 		sortRange = ""
