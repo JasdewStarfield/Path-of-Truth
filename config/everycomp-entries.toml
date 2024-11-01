@@ -38,6 +38,9 @@
 			magic = true
 			umbran = true
 			hellbark = true
+			pine = true
+			maple = true
+			empyreal = true
 
 		[types.wood_type.undergarden]
 			smogstem = true
@@ -55,9 +58,6 @@
 		[types.leaves_type.biomesoplenty]
 			origin = true
 			flowering_oak = true
-			maple = true
-			orange_autumn = true
-			yellow_autumn = true
 			rainbow_birch = true
 			snowblossom = true
 			fir = true
@@ -70,6 +70,13 @@
 			magic = true
 			umbran = true
 			hellbark = true
+			null = true
+			cypress = true
+			pine = true
+			red_maple = true
+			orange_maple = true
+			yellow_maple = true
+			empyreal = true
 
 		[types.leaves_type.blue_skies]
 			crystallized = true
