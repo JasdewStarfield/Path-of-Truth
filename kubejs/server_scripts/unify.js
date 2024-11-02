@@ -76,6 +76,12 @@ ServerEvents.recipes(event => {
   )
 
 
+  //鲶鱼转化
+  event.shapeless(Item.of('alexsmobs:raw_catfish',1),
+        [
+            'tide:catfish'
+        ]
+  )
 
   //铁矿混合粉也可以用铁粉做
   event.recipes.create.mixing('3x tfmg:blasting_mixture', ['#forge:dusts/iron','#forge:dusts/iron','#forge:dusts/iron','tfmg:limesand'])

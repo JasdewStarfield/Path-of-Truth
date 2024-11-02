@@ -516,11 +516,6 @@
 					type: "item"
 				}
 				{
-					id: "6B62A58F919D85FA"
-					item: "alexsmobs:raw_catfish"
-					type: "item"
-				}
-				{
 					id: "47E360501CC621C1"
 					item: "collectorsreap:platinum_bass"
 					type: "item"
@@ -1477,7 +1472,7 @@
 			y: -5.5d
 		}
 		{
-			dependencies: ["6A1B42D208C780BD"]
+			dependencies: ["374C430D0AD70D2E"]
 			description: ["哦天啊，制杖并贩剑（确信"]
 			hide_until_deps_complete: true
 			id: "722556B2244FD56A"
