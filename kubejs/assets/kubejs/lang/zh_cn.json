@@ -52,6 +52,7 @@
   "item.kubejs.broken_snowcap_oven.desc": "这个熔炉损坏了！你需要先用粗霜钢修复才能使用它。",
   "item.kubejs.buran": "暴风雪",
   "item.kubejs.midnight": "深夜",
+  "item.kubejs.sword_o_justice": "《 正 义 之 剑 》",
 
   "item.kubejs.music_disc_pluto_nocturnus.desc": "Jacky Blackson - Pluto Nocturnus",
   "item.kubejs.music_disc_pluto_nocturnus": "音乐唱片",
@@ -69,6 +70,10 @@
   "item.kubejs.disc_fragment_yggdrasil": "神秘的唱片残片",
   "item.kubejs.disc_fragment_yggdrasil.desc1": "罕见地从蔚蓝浩空中的地牢箱子里发现",
   "item.kubejs.disc_fragment_yggdrasil.desc2": "你只能看到一行模糊的字：Yggdrasil……",
+
+  "item.kubejs.sword_o_justice.desc1": "勇士啊！拿起这把剑吧！",
+  "item.kubejs.sword_o_justice.desc2": "拿上它，你就是最强的！",
+  "item.kubejs.sword_o_justice.desc3": "铸剑人姓名的铭文已经磨损了，你只能看清一个不明所以的表情符号……",
 
   "block.kubejs.andesite_engineering": "动力工程块",
   "block.kubejs.fluid_engineering": "流体工程块",

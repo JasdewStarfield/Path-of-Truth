@@ -106,6 +106,9 @@ ServerEvents.tags("item", (event) => {
 
     //others
     event.add("forge:plates","kubejs:frostfire_double_plate")
+    event.add("minecraft:tools","kubejs:sword_o_justice")
+    event.add("minecraft:swords","kubejs:sword_o_justice")
+    event.add("forge:tools/swords","kubejs:sword_o_justice")
 
     //类皮革靴子物品（防细雪）
     //似乎坏了，先注释掉吧

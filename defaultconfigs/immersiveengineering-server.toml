@@ -229,7 +229,7 @@
 		energyModifier = 1.0
 		#A modifier to apply to the time of every metal press recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 0.5
 
 	[machines.crusher]
 		#A modifier to apply to the energy costs of every crusher recipe
@@ -326,7 +326,7 @@
 		chance = 0.9
 		#The maximum amount of yield one can get out of a chunk with the excavator. Set a number smaller than zero to make it infinite
 		#Range: > -1
-		yield = 38400
+		yield = -0.5
 		#The maximum depletion a vein can start with, as a decimal value. When a vein generates, a random percentage up to this value is depleted from it
 		#Range: 0.0 ~ 1.0
 		initial_depletion = 0.2
@@ -528,5 +528,5 @@
 		consumption = 800
 		#A modifier for the damage of all projectiles fired by the Railgun
 		#Range: 0.0 ~ 1.7976931348623157E308
-		damage_modifier = 1.0
+		damage_modifier = 1.5
 
