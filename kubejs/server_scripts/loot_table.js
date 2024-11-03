@@ -13,8 +13,19 @@ LootJS.modifiers((event) => {
     event.addBlockLootModifier("#minecraft:snow").removeLoot("immersiveengineering:seed")
     event.addLootTypeModifier(LootType.CHEST).removeLoot(Item.of('minecraft:enchanted_book').enchant('supplementaries:stasis', 1))
 
+    //在蔚蓝浩空的地牢箱子中有小概率生成冒险唱片碎片
     event
         .addLootTableModifier(/.*blue_skies:chests.*dungeon.*/)
         .randomChance(0.25)
-        .addLoot("kubejs:disc_fragment_yggdrasil");
+        .addLoot("kubejs:disc_fragment_yggdrasil")
+    //彩蛋物品，流浪商人概率掉落，必须由玩家击败，且玩家必须拥有不祥之兆效果
+    event
+        .addLootTableModifier("minecraft:entities/wandering_trader")
+        .randomChance(0.1)
+        .killedByPlayer()
+        .matchKiller((entity) => {
+            entity.hasEffect("minecraft:bad_omen")
+        })
+        .addLoot("kubejs:sword_o_justice")
+        .damage([0.3, 0.9])
 })
