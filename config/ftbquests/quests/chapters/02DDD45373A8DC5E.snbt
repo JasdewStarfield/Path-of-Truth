@@ -85,7 +85,12 @@
 				"恭喜你初步摆脱了原始人阶段！"
 				""
 				"&c&l重要提示&r&r&4：水车和风车的运作机制有改动。水车现在需要放在河流类群系（包括冻河！）中才能达到最大运作效率，而且需要附近有足量的流体方块（不需要流动水了）；风车则也需要在开阔的环境才能运作（较高的地方以及海洋一类的特定群系效率较高）。做好你的工业选址！&r"
-				"{image:kubejs:textures/waterwheel.png width:140 height:80 align:1}"
+				""
+				"翻到下一页查看水车摆放的具体示例。"
+				""
+				"{@pagebreak}"
+				"{image:kubejs:textures/waterwheel.png width:210 height:120 align:1}"
+				"图为水车的摆放示例。&c请注意水车方块（不含页片）必须要在水面以上，不能浸没在水中！&r"
 			]
 			icon: "immersiveengineering:waterwheel_segment"
 			id: "0E41103FFC1FC96A"
