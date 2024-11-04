@@ -29,6 +29,24 @@ const LeatherLikeBoots = [
     'irons_spellbooks:netherite_mage_boots'
 ]
 
+const BasicFish = [
+    "tide:trout",
+    "minecraft:salmon",
+    "tide:yellow_perch",
+    "tide:bluegill",
+    "tide:bass",
+    "collectorsreap:platinum_bass",
+    "minecraft:cod",
+    "tide:ocean_perch",
+    "tide:tuna",
+    "tide:mackerel",
+    "tide:angelfish",
+    "minecraft:pufferfish",
+    "collectorsreap:tiger_prawn",
+    "collectorsreap:clam",
+    "collectorsreap:urchin"
+]
+
 const Unobtainable = [
     'netherdepthsupgrade:lava_fishing_rod',
     /sophisticatedbackpacks:stack_upgrade.*/,
@@ -138,8 +156,8 @@ ServerEvents.tags("item", (event) => {
     })
     */
 
-    //Tide-FarmersDelight Fix
-    event.add("c:tools/knives","#forge:tools/knives")
+    //基础鱼类
+    BasicFish.forEach((id) => event.add("kubejs:basic_fish", id))
 
     //无法获取的物品
     Unobtainable.forEach((id) => event.add("kubejs:unobtainable", id))

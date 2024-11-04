@@ -246,11 +246,12 @@ ServerEvents.recipes(event => {
     event.remove({id:"tfmg:sequenced_assembly/steel_mechanism"})
 
     event.recipes.create.sequenced_assembly([
-      Item.of('tfmg:steel_mechanism').withChance(120.0),
-      Item.of('#forge:rods/steel').withChance(3.0),
-      Item.of('tfmg:aluminum_ingot').withChance(5.0),
-      Item.of('tfmg:heavy_plate').withChance(8.0),
-      Item.of('create:precision_mechanism').withChance(8.0)
+      Item.of('tfmg:steel_mechanism').withChance(90.0),
+      Item.of('#forge:rods/steel').withChance(2.0),
+      Item.of('tfmg:aluminum_ingot').withChance(2.0),
+      Item.of('tfmg:heavy_plate').withChance(3.0),
+      Item.of('create:precision_mechanism').withChance(2.5),
+      Item.of('supplementaries:ash').withChance(0.5)
       ], '#forge:plates/steel', [
       event.recipes.createDeploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'create:precision_mechanism']),
       event.recipes.createDeploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'tfmg:turbine_blade']),
@@ -272,11 +273,12 @@ ServerEvents.recipes(event => {
 
     //遗忆构件
     event.recipes.create.sequenced_assembly([
-      Item.of('kubejs:forgotten_mechanism').withChance(120.0),
-      Item.of('immersiveengineering:component_electronic').withChance(3.0),
-      Item.of('blue_skies:diopside_gem').withChance(5.0),
-      Item.of('create:precision_mechanism').withChance(8.0),
-      Item.of('kubejs:forgotten_plate').withChance(8.0)
+      Item.of('kubejs:forgotten_mechanism').withChance(90.0),
+      Item.of('immersiveengineering:component_electronic').withChance(2.0),
+      Item.of('blue_skies:diopside_gem').withChance(2.0),
+      Item.of('create:precision_mechanism').withChance(2.5),
+      Item.of('kubejs:forgotten_plate').withChance(3.0),
+      Item.of('supplementaries:ash').withChance(0.5)
       ], '#forge:plates/forgotten_metal', [
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'create:precision_mechanism']),
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'blue_skies:diopside_gem']),
@@ -413,11 +415,12 @@ ServerEvents.recipes(event => {
     //高级电子元件
     event.remove({id:"immersiveengineering:blueprint/component_electronic_adv"})
     event.recipes.create.sequenced_assembly([
-        Item.of('immersiveengineering:component_electronic_adv').withChance(75.0),
-        Item.of('#forge:silicon').withChance(3.0),
-        Item.of('#bloodmagic:gravels/hellforged').withChance(2.0),
-        Item.of('immersiveengineering:component_electronic').withChance(5.0),
-        Item.of('immersiveengineering:circuit_board').withChance(15.0)
+        Item.of('immersiveengineering:component_electronic_adv').withChance(90.0),
+        Item.of('#forge:silicon').withChance(1.2),
+        Item.of('#bloodmagic:gravels/hellforged').withChance(1.2),
+        Item.of('immersiveengineering:component_electronic').withChance(2.6),
+        Item.of('immersiveengineering:circuit_board').withChance(4.5),
+        Item.of('supplementaries:ash').withChance(0.5)
         ], 'immersiveengineering:circuit_board', [
         event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:silicon']),
         event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'immersiveengineering:component_electronic']),
