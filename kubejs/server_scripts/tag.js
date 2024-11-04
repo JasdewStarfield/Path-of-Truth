@@ -29,6 +29,25 @@ const LeatherLikeBoots = [
     'irons_spellbooks:netherite_mage_boots'
 ]
 
+const Unobtainable = [
+    'netherdepthsupgrade:lava_fishing_rod',
+    /sophisticatedbackpacks:stack_upgrade.*/,
+    /structure_gel:.*/,
+    /itemfilters:.*/,
+    /create_new_age:energiser.*/,
+    "create_new_age:electrical_connector",
+    /create_new_age:.*extension/,
+    /create_new_age:heat.*/,
+    "create_new_age:stirling_engine",
+    /create_new_age:.*corium/,
+    "create_new_age:nuclear_fuel",
+    /create_new_age:reactor.*/,
+    /create_new_age:.*solar_heating_plate/,
+    /create_new_age:.*thorium.*/,
+    /create_new_age:overcharged.*/,
+    /create_new_age:.*circuit/,
+    /create_new_age:.*wire/
+]
 
 ServerEvents.tags("item", (event) => {
     //工程块
@@ -121,6 +140,9 @@ ServerEvents.tags("item", (event) => {
 
     //Tide-FarmersDelight Fix
     event.add("c:tools/knives","#forge:tools/knives")
+
+    //无法获取的物品
+    Unobtainable.forEach((id) => event.add("kubejs:unobtainable", id))
 })
 
 ServerEvents.tags("block", (event) => {
