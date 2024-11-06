@@ -239,7 +239,7 @@ ServerEvents.recipes(event => {
         'A A'  
     ], {
         B: '#blue_skies:gems/pyrope',
-        A: '#forge:plates/iron'
+        A: '#forge:ingots/cast_iron'
     })
 
     //钢铁构件

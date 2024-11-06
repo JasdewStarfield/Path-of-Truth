@@ -52,7 +52,6 @@ const Unobtainable = [
     /sophisticatedbackpacks:stack_upgrade.*/,
     /structure_gel:.*/,
     /itemfilters:.*/,
-    /create_new_age:energiser.*/,
     "create_new_age:electrical_connector",
     /create_new_age:.*extension/,
     /create_new_age:heat.*/,
