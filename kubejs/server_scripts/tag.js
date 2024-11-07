@@ -42,6 +42,7 @@ const BasicFish = [
     "tide:mackerel",
     "tide:angelfish",
     "minecraft:pufferfish",
+    "minecraft:tropical_fish",
     "collectorsreap:tiger_prawn",
     "collectorsreap:clam",
     "collectorsreap:urchin"

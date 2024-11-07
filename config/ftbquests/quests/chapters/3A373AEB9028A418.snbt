@@ -390,6 +390,17 @@
 			x: -2.0d
 			y: 2.0d
 		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			id: "5071365CA0D2E37F"
+			tasks: [{
+				id: "6FD49E4E48ACAE69"
+				item: "fishermens_trap:fishtrap"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
 	]
 	subtitle: ["A Long Way to Go"]
 	title: "1A 漫漫长路"

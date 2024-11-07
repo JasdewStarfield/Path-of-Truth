@@ -250,6 +250,7 @@
 	bunting = true
 	fire_pit = true
 	wicker_fence = true
+	cabin_siding = true
 
 	[building.flower_box]
 		enabled = true
