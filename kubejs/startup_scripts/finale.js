@@ -3,8 +3,17 @@ StartupEvents.registry('item', (event) => {
   event.create("incomplete_industrium_book", 'create:sequenced_assembly').displayName('Incomplete Industrium Infused Book')
   event.create("incomplete_durasteel_book", 'create:sequenced_assembly').displayName('Incomplete Durasteel Infused Book')
 
-  event.create("buran").displayName('Buran').tooltip('<工业的最高成就>').rarity('epic')
-  event.create("incomplete_buran", 'create:sequenced_assembly').displayName('Incomplete Buran').texture('kubejs:item/buran').rarity('epic')
+  let buran = (tooltip, texture) => {
+    event.create("buran").displayName('Buran').tooltip(tooltip).texture(texture).rarity('epic')
+    event.create("incomplete_buran", 'create:sequenced_assembly').displayName('Incomplete Buran').texture(texture).rarity('epic')
+  }
+  let today= new Date()
+  if (today.getMonth() + 1 == 12 && today.getDate() == 25) {
+    buran('<她今天好像格外开心……？>','kubejs:item/buran_special')
+  }
+  else {
+    buran('<工业的最高成就>','kubejs:item/buran')
+  }
   event.create("midnight").displayName('Midnight').tooltip('<魔法的终极结晶>').rarity('epic')
 })
 
