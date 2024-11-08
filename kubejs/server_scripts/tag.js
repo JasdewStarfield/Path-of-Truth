@@ -112,6 +112,7 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:flour","tmted:wheat_flour")
     event.add("forge:rope","beautify:rope")
     event.add("forge:plates/netherite","createdeco:netherite_sheet")
+    event.add("forge:plates/zinc","createdeco:zinc_sheet")
     event.add("forge:plates/andesite","createdeco:andesite_sheet")
     event.add("forge:slag","tfmg:slag")
 

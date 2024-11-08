@@ -50,12 +50,20 @@ ServerEvents.recipes(event => {
   event.remove([{ type: 'minecraft:smelting', output: 'iron_ingot' }, { type: 'minecraft:blasting', output: 'iron_ingot' }, { type: 'immersiveengineering:arc_furnace', output: 'iron_ingot' }])
   event.remove([{ type: 'minecraft:smelting', output: 'iron_block' }, { type: 'minecraft:blasting', output: 'iron_block' }])
   event.remove([{id:'create:splashing/crushed_raw_iron'}])
+  event.remove([{id:'create:splashing/crushed_iron_pile'}])
   event.remove([{id:'immersiveengineering:crusher/ingot_iron'}])
   event.custom({
     "type":"immersiveengineering:crusher",
     "energy":6000,
     "input":{"item":"create:crushed_raw_iron"},
     "result":{"base_ingredient":{"tag":"forge:dusts/iron"},"count":2},
+    "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/iron"}}]
+  })
+  event.custom({
+    "type":"immersiveengineering:crusher",
+    "energy":54000,
+    "input":{"item":"create_compressed:crushed_iron_pile"},
+    "result":{"base_ingredient":{"tag":"forge:dusts/iron"},"count":22},
     "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/iron"}}]
   })
   event.replaceOutput(
@@ -71,6 +79,7 @@ ServerEvents.recipes(event => {
 
   //铜
   event.remove([{id:'create:splashing/crushed_raw_copper'}])
+  event.remove([{id:'create:splashing/crushed_copper_pile'}])
   event.custom({
     "type":"immersiveengineering:crusher",
     "energy":6000,
@@ -78,10 +87,18 @@ ServerEvents.recipes(event => {
     "result":{"base_ingredient":{"tag":"forge:dusts/copper"},"count":2},
     "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/copper"}}]
   })
+  event.custom({
+    "type":"immersiveengineering:crusher",
+    "energy":54000,
+    "input":{"item":"create_compressed:crushed_copper_pile"},
+    "result":{"base_ingredient":{"tag":"forge:dusts/copper"},"count":22},
+    "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/copper"}}]
+  })
 
   
   //金
   event.remove([{id:'create:splashing/crushed_raw_gold'}])
+  event.remove([{id:'create:splashing/crushed_gold_pile'}])
   event.custom({
     "type":"immersiveengineering:crusher",
     "energy":6000,
@@ -89,14 +106,29 @@ ServerEvents.recipes(event => {
     "result":{"base_ingredient":{"tag":"forge:dusts/gold"},"count":2},
     "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/gold"}}]
   })
+  event.custom({
+    "type":"immersiveengineering:crusher",
+    "energy":54000,
+    "input":{"item":"create_compressed:crushed_gold_pile"},
+    "result":{"base_ingredient":{"tag":"forge:dusts/gold"},"count":22},
+    "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/gold"}}]
+  })
 
   //锌
   event.remove([{id:'create:splashing/crushed_raw_zinc'}])
+  event.remove([{id:'create:splashing/crushed_zinc_pile'}])
   event.custom({
     "type":"immersiveengineering:crusher",
     "energy":6000,
     "input":{"item":"create:crushed_raw_zinc"},
     "result":{"base_ingredient":{"tag":"forge:dusts/zinc"},"count":2},
+    "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/zinc"}}]
+  })
+  event.custom({
+    "type":"immersiveengineering:crusher",
+    "energy":54000,
+    "input":{"item":"create_compressed:crushed_zinc_pile"},
+    "result":{"base_ingredient":{"tag":"forge:dusts/zinc"},"count":22},
     "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/zinc"}}]
   })
 

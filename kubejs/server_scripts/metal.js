@@ -270,8 +270,12 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing('2x dirt', ['#forge:sand','#forge:cobblestone',Fluid.of('water',500)])
     event.recipes.create.splashing([Item.of('create:copper_nugget').withChance(0.5)], 'dirt')
 
+    //削弱陶瓦出铜
+    event.remove({id:"createchromaticreturn:copper_recipe"})
+    event.recipes.create.crushing([Item.of('minecraft:red_sand'),Item.of('#forge:nuggets/copper').withChance(0.25)], '#minecraft:terracotta')
+
     //燧石出镍
-    event.recipes.create.milling(Item.of('#forge:nuggets/nickel').withChance(0.5), 'flint')
+    event.recipes.create.milling(Item.of('#forge:nuggets/nickel').withChance(0.3), 'flint')
 
     //黏土出锌
     event.recipes.create.milling(Item.of('#forge:nuggets/zinc').withChance(0.5), 'clay_ball')
@@ -280,8 +284,8 @@ ServerEvents.recipes(event => {
     event.recipes.create.crushing([Item.of('create:crushed_raw_iron').withChance(0.14),Item.of('kubejs:crushed_raw_bauxite').withChance(0.07)], 'packed_mud')
 
     //深板岩粉碎出铅，银
-    event.recipes.create.crushing([Item.of('#forge:nuggets/lead').withChance(0.15), Item.of('#forge:nuggets/silver').withChance(0.15)], 'deepslate')
-    event.recipes.create.crushing([Item.of('#forge:nuggets/lead').withChance(0.15), Item.of('#forge:nuggets/silver').withChance(0.15)], 'cobbled_deepslate')
+    event.recipes.create.crushing([Item.of('#forge:nuggets/lead').withChance(0.25), Item.of('#forge:nuggets/silver').withChance(0.25)], 'deepslate')
+    event.recipes.create.crushing([Item.of('#forge:nuggets/lead').withChance(0.25), Item.of('#forge:nuggets/silver').withChance(0.25)], 'cobbled_deepslate')
 
     //黑石粉碎出铀
     event.recipes.create.crushing([Item.of('#forge:nuggets/uranium').withChance(0.15)], 'blackstone')

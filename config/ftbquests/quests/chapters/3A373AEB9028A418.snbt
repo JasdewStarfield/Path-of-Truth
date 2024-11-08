@@ -391,7 +391,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["6A1B42D208C780BD"]
+			dependencies: [
+				"6A1B42D208C780BD"
+				"67A81230FFDEC5B3"
+			]
 			description: [
 				"通常情况下MC里的钓鱼不会空军，但是在这个包里，钓鱼&c需要一些技巧&r……"
 				"连续空军显然是很让人崩溃的事情，这种时候就应该&o&m&d炸鱼塘&r&r&r&5下笼子&r，这可以&a保证你获得特定种类的鱼！&r"
@@ -400,9 +403,16 @@
 				"当然&6不下鱼饵&r也是可以的，代价是笼子&9只会捞上垃圾。&r"
 				"&o&m&3鱼都嫌弃你的吝啬&r&r&r"
 				""
-				"&o&b*注：显然这一结构需要被放在水里，并且需要在海洋、河流或沼泽群系使用，才能正常获得渔获！&r&r"
+				"&o&b*注：显然这一结构需要浸没在水里，并且需要在海洋、河流或沼泽群系使用，才能正常获得渔获！&r&r"
 			]
+			hide_until_deps_complete: true
 			id: "5071365CA0D2E37F"
+			rewards: [{
+				count: 8
+				id: "7F37D1852E305A08"
+				item: "minecraft:bread"
+				type: "item"
+			}]
 			subtitle: "绝不空军"
 			tasks: [{
 				id: "6FD49E4E48ACAE69"
@@ -410,6 +420,71 @@
 				type: "item"
 			}]
 			title: "懒人精选"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			dependency_requirement: "one_started"
+			description: [
+				"基于一些众所周知的原因，木质鱼竿的耐久被狠狠削减了——但你会发现增加了大量&c全新&r的钓竿！"
+				"钓鱼也出现了一些变化，你需要在&a不同的位置&r（包括但不限于群系，深度，甚至维度）钓鱼来获得所有的鱼！相应地，部分鱼也会在对应的群系生成实体鱼，你可以&c直接将其击杀&r来获取它们。"
+				"想要收集各种鱼但苦于没有记录方式？你需要一本&b百鱼全书&r！这里会写着你捕捉过的大部分鱼，并标明其属性和作用。你也可以在持有百鱼全书的情况下右击世界上的实体鱼来快速打开它的图鉴！"
+				"有些鱼拥有&e&l传奇&r&r的功效……"
+				"但你首先需要&6渔夫工坊&r和&5锻造台&r来升级和修改你的鱼竿）"
+				"*由于没有暖水，我们魔改了战利品表，你可以在冷水群系内钓到热带鱼，并且&b没有鹦鹉螺壳！&r你需要&1探索海底神殿&r或&c通过炼金手段&r来获得贝壳！）"
+				"有关于钓鱼机制的变更，请查看下一页。"
+				"{@pagebreak}"
+				"现在的钓鱼分为了三个部分：&b抛竿&r，&c拉钩&r，&a提钩&r。"
+				"你需要通过&b长按右键为你的钓竿蓄力&r，这决定它能抛多远。"
+				"在鱼儿上钩后，通过&c第一次右键（拉钩）&r，我们会进入提钩环节，你需要&a等到标示线在绿色区域（也就是中央区）的时候提钩&r，才有更高几率获得更好的鱼。"
+				"如果你在标示线侧边时提起了钩，那么恭喜你，你&b空军&r了！"
+				""
+				"&o&b注意：植魔酿造的“诱惑”药水会造成卡顿，因此该配方被直接删除！&r&r"
+				"&o&6游戏里享受钓鱼佬的人生也是一种乐趣，所以不要用药水加速（确信&r&r"
+			]
+			hide_details_until_startable: true
+			hide_until_deps_complete: true
+			icon: "tide:fishing_hook"
+			id: "67A81230FFDEC5B3"
+			rewards: [
+				{
+					id: "54044C55DF2B59D9"
+					item: "tide:fishing_line"
+					type: "item"
+				}
+				{
+					id: "54C37141BD94A901"
+					item: "tide:fishing_hook"
+					type: "item"
+				}
+			]
+			subtitle: "组装神杆！"
+			tasks: [
+				{
+					id: "76E1B85897A8750F"
+					item: "tide:angler_workshop"
+					type: "item"
+				}
+				{
+					id: "13D87E3E6C0A5C6C"
+					item: "tide:fishing_journal"
+					type: "item"
+				}
+				{
+					id: "409302625F6CC840"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/fishing_rods"
+						}
+					}
+					title: "任意钓竿"
+					type: "item"
+				}
+			]
+			title: "钓鱼人的准备"
 			x: 0.0d
 			y: 4.0d
 		}

@@ -347,17 +347,17 @@ ServerEvents.recipes(event => {
         'CAD'  
     ], {
         B: 'createutilities:void_casing',
-        A: 'createdeco:zinc_sheet',
+        A: '#forge:plates/zinc',
         D: 'minecraft:ender_eye',
         C: 'createutilities:graviton_tube'
     })
     event.recipes.create.sequenced_assembly([
         'immersiveengineering:rs_engineering'
         ], 'createutilities:void_casing', [
-        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_light_engineering', 'createdeco:zinc_sheet']),
+        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/zinc']),
         event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', 'minecraft:ender_eye']),
         event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', 'createutilities:graviton_tube']),
-        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_light_engineering', 'createdeco:zinc_sheet'])
+        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/zinc'])
     ]).transitionalItem('kubejs:incomplete_rs_engineering').loops(1)
 
     //塑料
