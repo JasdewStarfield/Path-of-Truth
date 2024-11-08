@@ -272,7 +272,7 @@ ServerEvents.recipes(event => {
 
     //削弱陶瓦出铜
     event.remove({id:"createchromaticreturn:copper_recipe"})
-    event.recipes.create.crushing([Item.of('minecraft:red_sand'),Item.of('#forge:nuggets/copper').withChance(0.25)], '#minecraft:terracotta')
+    event.recipes.create.crushing([Item.of('minecraft:red_sand'),Item.of('create:copper_nugget').withChance(0.25)], '#minecraft:terracotta')
 
     //燧石出镍
     event.recipes.create.milling(Item.of('#forge:nuggets/nickel').withChance(0.3), 'flint')
