@@ -64,6 +64,27 @@ ServerEvents.recipes(event => {
         "ticks": 200,
         "upgradeLevel": 1
     })
+    //酋长蟹炼制
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "item": 'minecraft:water_bucket'
+            },
+            {
+                "item": 'collectorsreap:cooked_tiger_prawn'
+            },
+            {
+                "item": 'irons_spellbooks:arcane_ingot'
+            }
+        ],
+        "output": {
+          "item": 'collectorsreap:chieftain_crab_bucket'
+        },
+        "syphon": 500,
+        "ticks": 500,
+        "upgradeLevel": 1
+    })
     //碎铁矿兑换炙铁碎矿
     event.custom({
         "type": "bloodmagic:alchemytable",
