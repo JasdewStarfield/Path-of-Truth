@@ -1,0 +1,64 @@
+# Don't change this! Version used to track needed updates.
+version = 0
+enderPearlTrail = true
+snowballTrailDensity = 0.2
+allayMagicDensity = 0.2
+vexMagicDensity = 0.2
+sheepShearFluff = true
+improvedDragonFireballTrail = true
+commandBlockMinecartParticles = "ON"
+stomachGrowlingThreshold = 6
+heartBeatingThreshold = 6
+endCrystalParticles = true
+minecartLandingSparks = true
+slimeTrails = true
+magmaCubeTrails = true
+replaceSlimeSquishParticles = true
+replaceSpellCasterParticles = true
+ironGolemCrackParticles = true
+spectralArrowParticles = true
+wardenDeathSoulParticles = true
+drowningBubbles = "DEFAULT"
+drowningBubblesDensity = 10
+frostyBreath = "DEFAULT"
+
+[attacked]
+chickenFeathers = true
+parrotFeathers = true
+snowGolemSnowflakes = true
+
+[sleeping]
+playerSnoreChance = 1.0
+villagerSnoreChance = 1.0
+displaySleepingZsOnlyWhenSnoring = false
+foxesHaveSleepingZs = true
+batsHaveSleepingZs = true
+catsHaveSleepingZs = true
+adjustNameTagWhenSleeping = true
+sleepingZs = true
+
+[dustClouds]
+scale = 0.5
+alpha = 0.8
+playerFell = true
+playerRunning = true
+mobFell = true
+mobRunning = true
+landMaceAttack = true
+preventWhenRaining = true
+
+[burning]
+smoke = "DEFAULT"
+flames = true
+sparks = true
+sounds = true
+
+[itemRarity]
+particlesDisplayType = "NOT_COMMON"
+particleColor = "NAME_COLOR"
+particleMaxHeight = 7
+
+[primedTNT]
+updateSmoke = true
+flames = true
+sparks = true

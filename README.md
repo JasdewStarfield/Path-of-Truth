@@ -108,7 +108,7 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 
 1. 先安装原版Minecraft，版本1.20.1（如果启动器支持，建议启用版本独立文件夹）。
-2. 安装Forge，版本47.3.7。
+2. 安装Forge，版本47.3.11。
 3. 克隆本仓库的dev-client分支到你安装版本的目录下（版本独立时通常为versions文件夹的一子文件夹）。
 
 
