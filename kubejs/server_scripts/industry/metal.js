@@ -393,5 +393,32 @@ ServerEvents.recipes(event => {
 
     //虚空钢
     event.remove({id:"createutilities:mixing/void_steel_ingot"})
-    event.recipes.create.mixing(Item.of('createutilities:void_steel_ingot').withChance(0.75), ['#forge:ingots/steel','#endersdelight:enderman_loot', '#endersdelight:enderman_loot', 'blaze_powder']).heated()
+    event.recipes.create.mixing(Item.of('#forge:ingots/voidsteel').withChance(0.75), ['#forge:ingots/steel','#endersdelight:enderman_loot', '#endersdelight:enderman_loot', 'blaze_powder']).heated()
+
+    //补充一些沉浸工程压板配方
+    let IEMetalPressing = (material) => {
+        event.custom({
+            "type":"immersiveengineering:metal_press",
+            "conditions":[],
+            "energy":2400,
+            "input":{"tag":"forge:ingots/"+material},
+            "mold":"immersiveengineering:mold_plate",
+            "result":{
+              "base_ingredient":{"tag":"forge:plates/"+material},
+              "count":1
+            }
+          })
+    }
+    const MissingPressingRecipeMetals = [
+        "voidsteel",
+        "andesite",
+        "zinc",
+        "netherite",
+        "industrial_iron",
+        "forgotten_metal"
+    ]
+    MissingPressingRecipeMetals.forEach(material => {
+        IEMetalPressing(material)
+    });
+
 })

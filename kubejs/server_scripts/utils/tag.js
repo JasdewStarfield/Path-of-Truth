@@ -142,7 +142,20 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:dusts","kubejs:aquite_dust")
     event.add("forge:dusts/aquite","kubejs:aquite_dust")
 
+    //VoidSteel
+    event.add("forge:ingots/voidsteel","createutilities:void_steel_ingot")
+    event.add("forge:ingots","createutilities:void_steel_ingot")
+    event.add("forge:plates/voidsteel","createutilities:void_steel_sheet")
+    event.add("forge:plates","createutilities:void_steel_sheet")
+
+    //IndustrialIron
+    event.add("forge:ingots/industrial_iron","createdeco:industrial_iron_ingot")
+    event.add("forge:ingots","createdeco:industrial_iron_ingot")
+    event.add("forge:plates/industrial_iron","createdeco:industrial_iron_sheet")
+    event.add("forge:plates","createdeco:industrial_iron_sheet")
+
     //others
+    event.add("forge:ingots/andesite","create:andesite_alloy")
     event.add("forge:plates","kubejs:frostfire_double_plate")
     event.add("minecraft:tools","kubejs:sword_o_justice")
     event.add("minecraft:swords","kubejs:sword_o_justice")

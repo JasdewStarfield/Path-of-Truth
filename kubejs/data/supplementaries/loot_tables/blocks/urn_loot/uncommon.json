@@ -35,7 +35,7 @@
               "add": false
             }
           ],
-          "name": "minecraft:copper_nugget"
+          "name": "create:copper_nugget"
         },
         {
           "type": "minecraft:item",

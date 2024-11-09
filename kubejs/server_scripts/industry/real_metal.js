@@ -182,6 +182,17 @@ ServerEvents.recipes(event => {
     "result":{"base_ingredient":{"tag":"forge:dusts/tin"},"count":2},
     "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/tin"}}]
   })
+  event.custom({
+    "type":"immersiveengineering:metal_press",
+    "conditions":[],
+    "energy":2400,
+    "input":{"tag":"forge:ingots/tin"},
+    "mold":"immersiveengineering:mold_plate",
+    "result":{
+      "base_ingredient":{"tag":"forge:plates/tin"},
+      "count":1
+    }
+  })
 
   //蔚蓝浩空适配
   event.remove([{mod:"create_blue_skies_compat", type:"create:splashing"}])
@@ -221,6 +232,17 @@ ServerEvents.recipes(event => {
       "result":{"base_ingredient":{"tag":"forge:dusts/"+material},"count":2},
       "secondaries":[]
     })
+    event.custom({
+      "type":"immersiveengineering:metal_press",
+      "conditions":[],
+      "energy":2400,
+      "input":{"tag":"blue_skies:ingots/"+material},
+      "mold":"immersiveengineering:mold_plate",
+      "result":{
+        "base_ingredient":{"tag":"forge:plates/"+material},
+        "count":1
+      }
+    })
     event.smelting("#blue_skies:ingots/"+material, "#forge:dusts/"+material)
   }
   let blueSkiesIngotNoSmelting = (material) => {
@@ -258,6 +280,17 @@ ServerEvents.recipes(event => {
       "input":{"tag":"blue_skies:ores/"+material},
       "result":{"base_ingredient":{"tag":"forge:dusts/"+material},"count":2},
       "secondaries":[]
+    })
+    event.custom({
+      "type":"immersiveengineering:metal_press",
+      "conditions":[],
+      "energy":2400,
+      "input":{"tag":"blue_skies:ingots/"+material},
+      "mold":"immersiveengineering:mold_plate",
+      "result":{
+        "base_ingredient":{"tag":"forge:plates/"+material},
+        "count":1
+      }
     })
   }
   let blueSkiesGem = (material) => {
@@ -378,6 +411,17 @@ ServerEvents.recipes(event => {
     event.smelting("#forge:ingots/"+material, "#forge:dusts/"+material)
     event.smelting("#forge:ingots/"+material, "kubejs:crushed_"+material+"_ore")
     event.recipes.create.pressing('#forge:plates/'+material, '#forge:ingots/'+material)
+    event.custom({
+      "type":"immersiveengineering:metal_press",
+      "conditions":[],
+      "energy":2400,
+      "input":{"tag":"forge:ingots/"+material},
+      "mold":"immersiveengineering:mold_plate",
+      "result":{
+        "base_ingredient":{"tag":"forge:plates/"+material},
+        "count":1
+      }
+    })
     event.recipes.create.crushing(["kubejs:crushed_"+material+"_ore",Item.of("create:experience_nugget").withChance(0.75)], '#forge:raw_materials/'+material)
     event.recipes.create.crushing(["9x kubejs:crushed_"+material+"_ore",Item.of("create:experience_nugget", 9).withChance(0.75)], '#forge:storage_blocks/raw_'+material)
     event.recipes.create.crushing(["kubejs:crushed_"+material+"_ore",Item.of("kubejs:crushed_"+material+"_ore").withChance(0.75),Item.of("create:experience_nugget").withChance(0.75)], '#forge:ores/'+material)
@@ -420,6 +464,17 @@ ServerEvents.recipes(event => {
       "secondaries":[]
     })
     event.recipes.create.pressing('#forge:plates/'+material, '#forge:ingots/'+material)
+    event.custom({
+      "type":"immersiveengineering:metal_press",
+      "conditions":[],
+      "energy":2400,
+      "input":{"tag":"forge:ingots/"+material},
+      "mold":"immersiveengineering:mold_plate",
+      "result":{
+        "base_ingredient":{"tag":"forge:plates/"+material},
+        "count":1
+      }
+    })
     event.recipes.create.crushing(["kubejs:crushed_"+material+"_ore",Item.of("create:experience_nugget").withChance(0.75)], '#forge:raw_materials/'+material)
     event.recipes.create.crushing(["9x kubejs:crushed_"+material+"_ore",Item.of("create:experience_nugget", 9).withChance(0.75)], '#forge:storage_blocks/raw_'+material)
     event.recipes.create.crushing(["kubejs:crushed_"+material+"_ore",Item.of("kubejs:crushed_"+material+"_ore").withChance(0.75),Item.of("create:experience_nugget").withChance(0.75)], '#forge:ores/'+material)
