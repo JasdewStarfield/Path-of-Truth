@@ -165,7 +165,63 @@ ServerEvents.recipes(event => {
     }
   })
 
-  //添加随机生成两种锭的配方
+  //添加随机生成两种锭的配方，两种液体注册名的版本
+  event.custom({
+    "type": "bloodmagic:arc",
+    //可能存在的追加输出（可以不写）
+    "addedoutput": [
+        {
+        "type": {
+            "item": 'createchromaticreturn:glowing_ingot'
+        },
+        "chance": 0.25,
+        "mainchance": 0.0
+        },
+        {
+          "type": {
+              "item": 'createchromaticreturn:silkstrum'
+          },
+          "chance": 0.25,
+          "mainchance": 0.0
+        },
+        {
+          "type": {
+              "item": 'createchromaticreturn:chromatic_compound'
+          },
+          "chance": 0.25,
+          "mainchance": 0.0
+        }
+    ],
+    //消耗配方（？）
+    "consumeingredient": false,
+    //输入材料
+    "input": {
+        "item": 'botania:gaia_ingot'
+    },
+    //输入液体（可以不写）
+    "inputFluid": {
+        "amount": 1000,
+        "fluid": "createchromaticreturn:flowing_refined_mixture"
+    },
+    //输入数量（大概）
+    "inputsize": 1,
+    //主要产物输出几率
+    "mainoutputchance": 0.0,
+    //输出产物内容
+    "output": {
+      "item": 'botania:gaia_ingot'
+    },
+    //输出液体（可以不写）
+    "outputFluid": {
+        "amount": 1000,
+        "fluid": "minecraft:water"
+    },
+    //使用工具（必须是血魔法原有工具）
+    "tool": {
+        "tag": "bloodmagic:arc/resonator"
+    }
+  })
+
   event.custom({
     "type": "bloodmagic:arc",
     //可能存在的追加输出（可以不写）
@@ -221,6 +277,7 @@ ServerEvents.recipes(event => {
         "tag": "bloodmagic:arc/resonator"
     }
   })
+
 
   //矩阵炼成复制火花
   event.custom({
