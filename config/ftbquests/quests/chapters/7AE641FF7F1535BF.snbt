@@ -46,8 +46,8 @@
 			hide_until_deps_complete: true
 			id: "5B1818D5A1142A16"
 			rewards: [{
-				id: "43DAC37C86ABADB3"
-				item: "create:cogwheel"
+				id: "5560EBF222A833F0"
+				item: "create:precision_mechanism"
 				type: "item"
 			}]
 			shape: "gear"

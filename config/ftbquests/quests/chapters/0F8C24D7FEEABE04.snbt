@@ -33,7 +33,7 @@
 			hide_until_deps_complete: true
 			id: "391DC5DA08CB67C6"
 			shape: "hexagon"
-			size: 1.5d
+			size: 2.0d
 			subtitle: "生命的奥秘从这里启动"
 			tasks: [{
 				id: "4EBA391FCCFCA388"
@@ -68,7 +68,7 @@
 			]
 			id: "335A755CFCC0F671"
 			shape: "octagon"
-			size: 1.2d
+			size: 1.0d
 			subtitle: "丛林系生物的起始"
 			tasks: [{
 				id: "0A4ADD51E745F4EA"
@@ -87,7 +87,7 @@
 			]
 			id: "041DE92019EB4C56"
 			shape: "octagon"
-			size: 1.2d
+			size: 1.0d
 			subtitle: "冰冷与海洋的象征"
 			tasks: [{
 				id: "3484E8FFC84779E6"
@@ -124,7 +124,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			size: 1.5d
+			size: 2.0d
 			subtitle: "最美生物……"
 			tasks: [{
 				id: "52CC1659510CB576"
@@ -133,7 +133,7 @@
 			}]
 			title: "天空中的王者"
 			x: 0.0d
-			y: 7.8d
+			y: 8.0d
 		}
 		{
 			dependencies: ["335A755CFCC0F671"]

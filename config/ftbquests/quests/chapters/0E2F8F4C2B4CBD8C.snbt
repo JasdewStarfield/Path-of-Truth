@@ -1299,7 +1299,7 @@
 				"&o&m&5“吃穿虚空”&r&r&r"
 			]
 			hide_until_deps_complete: true
-			icon: "farmersdelight:cooking_pot"
+			icon: "farmersdelight:cutting_board"
 			id: "34D11CBE75FBEDF5"
 			rewards: [{
 				id: "5F88A80A1B13DB38"
@@ -2460,6 +2460,18 @@
 					count: 64L
 					id: "213B1CD02C34F72F"
 					item: "cratedelight:golden_apple_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "6F01D8EC3E05CB30"
+					item: "cratedelight:stacked_melons"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "5F674483E1751C4B"
+					item: "cratedelight:stacked_pumpkins"
 					type: "item"
 				}
 			]
