@@ -8,7 +8,9 @@ sheepShearFluff = true
 improvedDragonFireballTrail = true
 commandBlockMinecartParticles = "ON"
 stomachGrowlingThreshold = 6
+stomachGrowlingVolume = 1.0
 heartBeatingThreshold = 6
+heartbeatVolume = 1.0
 endCrystalParticles = true
 minecartLandingSparks = true
 slimeTrails = true
@@ -21,6 +23,9 @@ wardenDeathSoulParticles = true
 drowningBubbles = "DEFAULT"
 drowningBubblesDensity = 10
 frostyBreath = "DEFAULT"
+frostyBreathAlpha = 0.5
+frostyBreathTime = 60
+frostyBreathSeasons = "DEFAULT"
 
 [attacked]
 chickenFeathers = true
@@ -29,13 +34,17 @@ snowGolemSnowflakes = true
 
 [sleeping]
 playerSnoreChance = 1.0
+playerSnoreSoundVolume = 1.0
+playersHaveSleepingZs = true
 villagerSnoreChance = 1.0
-displaySleepingZsOnlyWhenSnoring = false
+villagerSnoreSoundVolume = 1.0
+villagersHaveSleepingZs = true
 foxesHaveSleepingZs = true
 batsHaveSleepingZs = true
 catsHaveSleepingZs = true
+otherMobsHaveSleepingZs = true
+displaySleepingZsOnlyWhenSnoring = false
 adjustNameTagWhenSleeping = true
-sleepingZs = true
 
 [dustClouds]
 scale = 0.5

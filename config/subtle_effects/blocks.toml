@@ -53,6 +53,7 @@ sculkShriekerDestroySouls = true
 sculkCatalystDestroySouls = true
 calibratedSculkSensorAmethystSparkle = true
 campfireSizzlingSounds = true
+campfireSizzlingSoundVolume = 0.5
 vegetationFirefliesDensity = 30
 vegetationFirefliesSpawnType = "FLOWERS_ONLY"
 
