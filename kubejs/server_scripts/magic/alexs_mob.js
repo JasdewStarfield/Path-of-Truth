@@ -312,6 +312,50 @@ ServerEvents.recipes(event => {
         "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
     })
 
+    //两栖系
+    //水龟
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'minecraft:scute'
+        },
+        "baseinput": {
+            "item": 'botania:metamorphic_swamp_stone'
+        },
+        "output": {
+            "item": 'alexsmobs:terrapin_egg'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
+    //凯门鳄
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'alexsmobs:crocodile_scute'
+        },
+        "baseinput": {
+            "item": 'botania:metamorphic_swamp_stone'
+        },
+        "output": {
+            "item": 'alexsmobs:caiman_egg'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
+    //大鳄龟
+    event.custom({
+        "type": "bloodmagic:array",
+        "addedinput": {
+            "item": 'alexsmobs:caiman_egg'
+        },
+        "baseinput": {
+            "item": 'alexsmobs:terrapin_egg'
+        },
+        "output": {
+            "item": 'alexsmobs:spawn_egg_alligator_snapping_turtle'
+        },
+        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
+    })
+
     //曦鹤
     event.recipes.botania.terra_plate('alexsmobs:spawn_egg_sunbird', 
         [

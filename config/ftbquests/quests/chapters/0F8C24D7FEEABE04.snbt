@@ -50,7 +50,7 @@
 			id: "4E17E2650C432030"
 			shape: "octagon"
 			size: 1.0d
-			subtitle: "为数不多的不需要蛋就可以创造的……"
+			subtitle: "从宝石开始……"
 			tasks: [{
 				id: "38ADB2CDDF93B6CA"
 				item: "alexsmobs:guster_eye"
@@ -99,7 +99,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["391DC5DA08CB67C6"]
+			dependencies: ["2CD3CB5AA05717CD"]
 			icon: "botania:flugel_eye"
 			id: "160FD1D89EBC02BC"
 			rewards: [{
@@ -124,7 +124,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			size: 1.2d
+			size: 1.5d
 			subtitle: "最美生物……"
 			tasks: [{
 				id: "52CC1659510CB576"
@@ -133,7 +133,7 @@
 			}]
 			title: "天空中的王者"
 			x: 0.0d
-			y: -5.0d
+			y: 7.8d
 		}
 		{
 			dependencies: ["335A755CFCC0F671"]
@@ -364,8 +364,8 @@
 				type: "item"
 			}]
 			title: "飞鱼"
-			x: 1.0d
-			y: -2.5d
+			x: 1.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["391DC5DA08CB67C6"]
@@ -377,8 +377,69 @@
 				type: "item"
 			}]
 			title: "沙漠蛛蜂"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["498F704A4728FC95"]
+			description: ["特定的宝箱内可以找到鳞甲，而且数量并不少。"]
+			id: "27771935698FF7D1"
+			subtitle: "没有王八只有龟"
+			tasks: [{
+				id: "2077F84304DB8990"
+				item: "alexsmobs:terrapin_egg"
+				type: "item"
+			}]
 			x: -1.0d
-			y: -2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["498F704A4728FC95"]
+			description: ["……但你需要先击杀鳄鱼以获得鳞甲，才能炼制它）"]
+			id: "21FC3548571ECF20"
+			subtitle: "至少比鳄鱼安全一点……"
+			tasks: [{
+				id: "000A645A4CAA426B"
+				item: "alexsmobs:caiman_egg"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"21FC3548571ECF20"
+				"27771935698FF7D1"
+			]
+			id: "3F4621E0E0112E05"
+			subtitle: "生物融合……"
+			tasks: [{
+				id: "3698F8E813E3F91A"
+				item: "alexsmobs:spawn_egg_alligator_snapping_turtle"
+				type: "item"
+			}]
+			title: "大鳄龟"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["391DC5DA08CB67C6"]
+			description: [
+				"两栖类的构建从变质沼泽石头开始。"
+				"也许你首先需要一朵&a异构花&r……"
+			]
+			id: "498F704A4728FC95"
+			shape: "octagon"
+			size: 1.0d
+			subtitle: "至少能上岸"
+			tasks: [{
+				id: "4444A9648860AE7C"
+				item: "botania:metamorphic_swamp_stone"
+				type: "item"
+			}]
+			title: "两栖类……？"
+			x: 0.0d
+			y: -2.0d
 		}
 	]
 	subtitle: ["Biodiversity"]
