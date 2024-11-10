@@ -200,10 +200,15 @@ ServerEvents.tags("block", (event) => {
     event.remove("minecraft:mineable/pickaxe","tfmg:oil_deposit")
 })
 
+//液体标签添加
 ServerEvents.tags("fluid", (event) => {
     event.add("forge:ethylene","tfmg:ethylene")
     event.add("forge:propylene","tfmg:propylene")
     event.add("forge:lubrication_oil","tfmg:lubrication_oil")
+    event.add("forge:shadow_essence","createchromaticreturn:shadow_essence")
+    event.add("forge:shadow_essence","createchromaticreturn:flowing_shadow_essence")
+    event.add("forge:refined_mixture","createchromaticreturn:refined_mixture")
+    event.add("forge:refined_mixture","createchromaticreturn:flowing_refined_mixture")
 })
 
 ServerEvents.tags("block", (event) => {
