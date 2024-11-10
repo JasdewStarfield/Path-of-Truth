@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
   event.remove({id:'createchromaticreturn:multiplite_recipe'})
   event.remove({id:'createchromaticreturn:antiplite_recipe'})
 
-  event.recipes.create.mixing(['createchromaticreturn:industrium_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [Fluid.of("createchromaticreturn:shadow_essence",1000),'create:deployer','create:mechanical_arm','immersiveengineering:powerpack','tfmg:large_radial_engine']).superheated()
+  event.recipes.create.mixing(['createchromaticreturn:industrium_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [{fluidTag:'forge:shadow_essence', amount:1000},'create:deployer','create:mechanical_arm','immersiveengineering:powerpack','tfmg:large_radial_engine']).superheated()
   event.recipes.create.sequenced_assembly([
     Item.of('createchromaticreturn:industrium_book')
     ], '#forge:plates/plastic', [
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
     event.recipes.createFilling('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', Fluid.of('create_enchantment_industry:hyper_experience',50)])
   ]).transitionalItem('kubejs:incomplete_industrium_book').loops(2)
 
-  event.recipes.create.compacting(['createchromaticreturn:durasteel_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [Fluid.of("createchromaticreturn:shadow_essence",1000),'#forge:storage_blocks/steel','#forge:storage_blocks/lead','#forge:storage_blocks/cast_iron','#forge:storage_blocks/netherite']).superheated()
+  event.recipes.create.compacting(['createchromaticreturn:durasteel_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [{fluidTag:'forge:shadow_essence', amount:1000},'#forge:storage_blocks/steel','#forge:storage_blocks/lead','#forge:storage_blocks/cast_iron','#forge:storage_blocks/netherite']).superheated()
   event.recipes.create.sequenced_assembly([
     Item.of('createchromaticreturn:durasteel_book')
     ], '#forge:plates/obsidian', [
