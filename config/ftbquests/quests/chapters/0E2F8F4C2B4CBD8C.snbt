@@ -1,5 +1,5 @@
 {
-	autofocus_id: "48783396F615D90E"
+	autofocus_id: "3B0F65013925C0B6"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "0E2F8F4C2B4CBD8C"
@@ -7,14 +7,88 @@
 	hide_quest_details_until_startable: true
 	icon: "botania:fork_light_relay"
 	id: "0E2F8F4C2B4CBD8C"
-	images: [{
-		height: 3.0d
-		image: "kubejs:textures/quests/challenge.png"
-		rotation: 0.0d
-		width: 7.807894736842105d
-		x: 0.0d
-		y: -7.5d
-	}]
+	images: [
+		{
+			height: 3.0d
+			image: "kubejs:textures/quests/challenge.png"
+			rotation: 0.0d
+			width: 7.807894736842105d
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			height: 5.0d
+			image: "everycomp:block/abnww/architects_palette/twisted_beehive_end"
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			height: 5.0d
+			image: "irons_spellbooks:block/scroll_forge_paper"
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			height: 3.0d
+			image: "tide:item/golden_fishing_rod"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			height: 3.0d
+			image: "betterarcheology:item/brushes/diamond_brush"
+			rotation: 0.0d
+			width: 3.0d
+			x: -3.5d
+			y: 5.0d
+		}
+		{
+			height: 3.0d
+			image: "botania:item/obedience_stick"
+			rotation: 0.0d
+			width: 3.0d
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			height: 5.0d
+			image: "irons_spellbooks:item/energized_core_energy"
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			height: 5.0d
+			image: "amendments:block/music_discs/music_disc_precipice"
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			height: 4.0d
+			image: "farmersdelight:block/basket_side"
+			rotation: 0.0d
+			width: 4.0d
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			height: 4.0d
+			image: "everycomp:block/abnww/ecologics/coconut_bookshelf"
+			rotation: 0.0d
+			width: 4.0d
+			x: -4.5d
+			y: 1.0d
+		}
+	]
 	order_index: 6
 	quest_links: [ ]
 	quests: [
@@ -128,8 +202,8 @@
 				}
 			]
 			title: "蔚蓝浩空收割者"
-			x: -2.0d
-			y: 0.0d
+			x: -1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6C542C19575974DB"]
@@ -186,7 +260,7 @@
 			]
 			title: "下界行者"
 			x: 0.0d
-			y: -2.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -255,11 +329,11 @@
 				}
 			]
 			title: "遗物收藏家"
-			x: 2.0d
-			y: 2.0d
+			x: 4.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["6A1B42D208C780BD"]
+			dependencies: ["374C430D0AD70D2E"]
 			description: ["获得所有种类的巫术卷轴！"]
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:eldritch_manuscript"
@@ -421,8 +495,8 @@
 				}
 			]
 			title: "巫术卷轴"
-			x: 2.0d
-			y: -2.0d
+			x: -0.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -572,8 +646,8 @@
 				}
 			]
 			title: "钓鱼王I"
-			x: -2.0d
-			y: 2.0d
+			x: -0.5d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -887,12 +961,19 @@
 				}
 			]
 			title: "钓鱼王II"
-			x: -2.0d
-			y: -2.0d
+			x: 0.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["0E5C63B3D4891362"]
 			description: ["和被遗忘者战斗获得扼塞战斧，然后升级为最强大斧头！"]
+			icon: {
+				Count: 1
+				id: "undergarden:cloggrum_battleaxe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "5DFEFE3A567A507F"
 			rewards: [
 				{
@@ -1006,8 +1087,8 @@
 				}
 			]
 			title: "深园王者"
-			x: 2.0d
-			y: 0.0d
+			x: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["193F465F65BC13F1"]
@@ -1037,7 +1118,7 @@
 			}]
 			title: "巨龙悲歌"
 			x: 0.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["15E666BAE38566D8"]
@@ -1053,6 +1134,7 @@
 				"&o&c下界铁掌会生成在类似猪灵堡垒的结构，需要破开中心柱体。&r&r"
 				"&o&d黑曜石巨柱则会生成在末地的大型平台上，需要末影之眼召唤。&r&r"
 			]
+			icon: "bosses_of_mass_destruction:brimstone_nectar"
 			id: "5EE2152C42721246"
 			rewards: [{
 				count: 4
@@ -1061,7 +1143,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			size: 1.2d
+			size: 2.0d
 			subtitle: "这将是你面对的最终BOSS"
 			tasks: [
 				{
@@ -1087,12 +1169,19 @@
 			]
 			title: "战斗！爽！"
 			x: 0.0d
-			y: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["探索古代遗迹并找出所有种类的神奇图腾！"]
 			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "betterarcheology:torrent_totem"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "70726F375FFF5CF3"
 			rewards: [{
 				id: "186F0BBBFC1FE93B"
@@ -1135,8 +1224,8 @@
 				}
 			]
 			title: "神器专家"
-			x: 2.0d
-			y: 4.0d
+			x: -3.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -1146,6 +1235,7 @@
 				"不同的化石有不同的作用，但这就要你自己探索了。"
 			]
 			hide_until_deps_complete: true
+			icon: "betterarcheology:creeper_fossil"
 			id: "21246254369E4A91"
 			rewards: [
 				{
@@ -1199,8 +1289,8 @@
 				}
 			]
 			title: "古生物学家"
-			x: -2.0d
-			y: 4.0d
+			x: -4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -1209,6 +1299,7 @@
 				"&o&m&5“吃穿虚空”&r&r&r"
 			]
 			hide_until_deps_complete: true
+			icon: "farmersdelight:cooking_pot"
 			id: "34D11CBE75FBEDF5"
 			rewards: [{
 				id: "5F88A80A1B13DB38"
@@ -1259,8 +1350,8 @@
 				}
 			]
 			title: "五星级大厨"
-			x: -4.0d
-			y: 0.0d
+			x: 4.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -1271,6 +1362,7 @@
 				"&o&b致敬神秘初始小屋制作人兼传奇音乐人Jacky_Blackson）&r&r"
 			]
 			hide_until_deps_complete: true
+			icon: "immersiveengineering:earmuffs"
 			id: "48783396F615D90E"
 			rewards: [{
 				id: "11F0B8AE3D972418"
@@ -1312,8 +1404,8 @@
 				}
 			]
 			title: "神秘旋律"
-			x: -2.0d
-			y: -4.0d
+			x: -1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["0B043034C7178F75"]
@@ -1408,12 +1500,13 @@
 				}
 			]
 			title: "地质专家"
-			x: 4.0d
+			x: -5.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			hide_until_deps_complete: true
+			icon: "trashcans:item_trash_can"
 			id: "5D6D256D4DE35A5A"
 			subtitle: "三种……呃，垃圾桶"
 			tasks: [
@@ -1434,8 +1527,8 @@
 				}
 			]
 			title: "环保卫士"
-			x: -1.0d
-			y: -5.5d
+			x: -3.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5D6D256D4DE35A5A"]
@@ -1468,13 +1561,14 @@
 				type: "item"
 			}]
 			title: "【隐藏任务】还有高手？"
-			x: 1.0d
-			y: -5.5d
+			x: -4.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
 			description: ["哦天啊，制杖并贩剑（确信"]
 			hide_until_deps_complete: true
+			icon: "irons_spellbooks:blood_staff"
 			id: "722556B2244FD56A"
 			rewards: [{
 				id: "104622516C821057"
@@ -1613,13 +1707,25 @@
 				}
 			]
 			title: "制杖与贩剑"
-			x: 1.0d
-			y: 6.0d
+			x: 0.5d
+			y: 9.0d
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
 			description: ["比高中课本还多XD"]
 			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:netherite_spell_book"
+				tag: {
+					ISB_Spells: {
+						data: [ ]
+						maxSpells: 12
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
+			}
 			id: "6AFB8B9527F2FEB1"
 			rewards: [
 				{
@@ -1879,8 +1985,8 @@
 				}
 			]
 			title: "我爱读书"
-			x: -1.0d
-			y: 6.0d
+			x: -0.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -1889,6 +1995,7 @@
 				"两首曲子分别是&9深夜&r和&c暴风雪&r的印象曲，因此会有相对独特的风格——不过因为开局点击就送，所以这个任务没有奖励）"
 			]
 			hide_until_deps_complete: true
+			icon: "handcrafted:red_sheet"
 			id: "5D14EEEDED65B6BF"
 			subtitle: "对吧，达瓦里氏"
 			tasks: [
@@ -1904,8 +2011,8 @@
 				}
 			]
 			title: "气突苏"
-			x: 2.0d
-			y: -4.0d
+			x: 1.5d
+			y: -3.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -1928,8 +2035,8 @@
 				type: "item"
 			}]
 			title: "魔能建筑法杖"
-			x: 0.0d
-			y: 4.0d
+			x: 3.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -1937,6 +2044,7 @@
 				"5D14EEEDED65B6BF"
 			]
 			description: ["收集所有的原版唱片！"]
+			icon: "minecraft:jukebox"
 			id: "3B0F65013925C0B6"
 			rewards: [
 				{
@@ -2051,6 +2159,7 @@
 				"也许我们应该给唱片机加个耐久度。"
 				"收集所有模组提供的唱片！"
 			]
+			icon: "minecraft:note_block"
 			id: "54B7D31714F8BD90"
 			rewards: [
 				{
@@ -2175,7 +2284,276 @@
 			]
 			title: "音乐发烧友"
 			x: 0.0d
-			y: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			icon: {
+				Count: 1
+				id: "blue_skies:loot_bag"
+				tag: { }
+			}
+			id: "0E1F92E4A628487B"
+			subtitle: "小袋装起来了"
+			tasks: [
+				{
+					count: 64L
+					id: "3F71638DFB21CEBD"
+					item: "cratedelight:cocoabeans_bag"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "19A4021BE7277C41"
+					item: "cratedelight:sugar_bag"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "0B6798A0E95462CD"
+					item: "cratedelight:gunpowder_bag"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "6EB2BB813F4BC684"
+					item: "cratedelight:cookie_bag"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "66723D452E7BCC7F"
+					item: "cratedelight:wheat_flour_bag"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "6EE05E2DF77589BD"
+					item: "cratedelight:powdered_obsidian_bag"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "0765B1C23B410612"
+					item: "cratedelight:cinder_flour_bag"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "69DE270741C81D8B"
+					item: "farmersdelight:rice_bag"
+					type: "item"
+				}
+			]
+			title: "装袋狂人"
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_hoe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3B55AC7B99F377E3"
+			tasks: [
+				{
+					count: 64L
+					id: "4600862132D64C5F"
+					item: "collectorsreap:lime_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "469A589F5F0E040A"
+					item: "collectorsreap:pomegranate_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "1328FAF2DE9DA232"
+					item: "endersdelight:chorus_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "108CDAB039D5A395"
+					item: "farmersdelight:carrot_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "72F879B648EA38EF"
+					item: "farmersdelight:potato_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "37AFD2A311C14E8C"
+					item: "farmersdelight:beetroot_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "4C7B33CB598137A7"
+					item: "farmersdelight:cabbage_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "0B2ECEEAF50F6691"
+					item: "farmersdelight:tomato_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "39E1F2BE69B058D0"
+					item: "farmersdelight:onion_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "3DAA5F28F03C747A"
+					item: "cratedelight:apple_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "35A1652AC61AF43B"
+					item: "cratedelight:berry_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "19D7ED6988354351"
+					item: "cratedelight:glowberry_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "7FC5B8DF0025C1C6"
+					item: "cratedelight:banana_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "65FAE073AEEF3F12"
+					item: "cratedelight:red_mushroom_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "4571073CE65FC8A0"
+					item: "cratedelight:brown_mushroom_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "036FBDF2FCB26F6B"
+					item: "cratedelight:golden_carrot_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "213B1CD02C34F72F"
+					item: "cratedelight:golden_apple_crate"
+					type: "item"
+				}
+			]
+			title: "农业大亨"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			icon: "villagersellanimals:crate_chick"
+			id: "04BFA1A4FAC092C9"
+			tasks: [
+				{
+					count: 16L
+					id: "6E1635362553524A"
+					item: "cratedelight:egg_crate"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "615D000D86524324"
+					item: "cratedelight:salmon_crate"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "51CE7BEBF3036829"
+					item: "cratedelight:cod_crate"
+					type: "item"
+				}
+				{
+					id: "5B719FA3DCF32C76"
+					item: "cratedelight:emu_egg_crate"
+					type: "item"
+				}
+				{
+					id: "25C5C8594C4EE5A8"
+					item: "cratedelight:terrapin_egg_crate"
+					type: "item"
+				}
+				{
+					id: "1D4E528BA990853C"
+					item: "cratedelight:crocodile_egg_crate"
+					type: "item"
+				}
+				{
+					id: "4B1903E67B37A6D7"
+					item: "cratedelight:caiman_egg_crate"
+					type: "item"
+				}
+			]
+			title: "牧场主"
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			icon: "createchromaticreturn:magmatic_mechanism"
+			id: "7FB0E3BD81383AF7"
+			tasks: [
+				{
+					count: 64L
+					id: "444B9F852696E65B"
+					item: "create_compressed:shaft_bundle"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "665BF9781FF37026"
+					item: "create_compressed:cogwheel_block"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "1CEA7660C4AF0518"
+					item: "create_compressed:large_cogwheel_block"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "4A56739FCD48028E"
+					item: "create_compressed:mechanism_block"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "461CE9412E9A0F81"
+					item: "create_compressed:belt_block"
+					type: "item"
+				}
+			]
+			title: "五金批发商"
+			x: 3.5d
+			y: 0.0d
 		}
 	]
 	subtitle: ["The Way to Legend"]
