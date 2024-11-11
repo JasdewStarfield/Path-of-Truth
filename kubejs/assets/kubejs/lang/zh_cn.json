@@ -51,6 +51,8 @@
   "item.kubejs.filled_casting_mold_large.desc": "内含一个钢块",
   "item.kubejs.broken_snowcap_oven.desc": "这个熔炉损坏了！你需要先用粗霜钢修复才能使用它。",
   "item.kubejs.asphalt.desc": "将液态沥青泼出来，使其凝固，就可以得到固态的沥青块。",
+  "item.kubejs.amethyst_shard.desc": "靠近幽匿块时，会发出阵阵回响……",
+  "item.kubejs.echo_shard.desc": "似乎是被幽匿物质渗透覆盖的一种矿物碎片……",
   "item.kubejs.buran": "暴风雪",
   "item.kubejs.midnight": "深夜",
   "item.kubejs.sword_o_justice": "《 正 义 之 剑 》",

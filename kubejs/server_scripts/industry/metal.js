@@ -393,7 +393,7 @@ ServerEvents.recipes(event => {
 
     //虚空钢
     event.remove({id:"createutilities:mixing/void_steel_ingot"})
-    event.recipes.create.mixing(Item.of('#forge:ingots/voidsteel').withChance(0.75), ['#forge:ingots/steel','#endersdelight:enderman_loot', '#endersdelight:enderman_loot', 'blaze_powder']).heated()
+    event.recipes.create.mixing(Item.of('#forge:ingots/voidsteel').withChance(0.75), ['#forge:ingots/steel','#endersdelight:enderman_loot', '#endersdelight:enderman_loot', 'echo_shard']).heated()
 
     //补充一些沉浸工程压板配方
     let IEMetalPressing = (material) => {

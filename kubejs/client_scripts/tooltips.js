@@ -28,5 +28,8 @@ ItemEvents.tooltip(e => {
     e.add(["tfmg:asphalt"], [Text.yellow({translate:'item.kubejs.asphalt.desc'})])
     e.add(["tfmg:liquid_asphalt_bucket"], [Text.yellow({translate:'item.kubejs.asphalt.desc'})])
 
+    e.add(["minecraft:amethyst_shard"], [Text.aqua({translate:'item.kubejs.amethyst_shard.desc'})])
+    e.add(["minecraft:echo_shard"], [Text.aqua({translate:'item.kubejs.echo_shard.desc'})])
+
     e.add(["kubejs:sword_o_justice"], [Text.yellow({translate:'item.kubejs.sword_o_justice.desc1'}),Text.red({translate:'item.kubejs.sword_o_justice.desc2'}),Text.gray({translate:'item.kubejs.sword_o_justice.desc3'})])
 })
