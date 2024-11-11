@@ -284,4 +284,24 @@ ServerEvents.recipes(event => {
     }
   })
 
+  //终极彩蛋：可睡觉的床
+  event.remove({id:'undergarden:depthrock_bed'})
+  //符文祭坛
+  event.recipes.botania.runic_altar('undergarden:depthrock_bed', 
+    [
+      'create:handheld_worldshaper',
+      'immersiveengineering:coke_oven', 
+      'immersiveengineering:blast_furnace',
+      'immersiveengineering:advanced_blast_furnace', 
+      'immersiveengineering:metal_press',
+      'immersiveengineering:crusher', 
+      'immersiveengineering:fermenter',
+      'immersiveengineering:squeezer', 
+      'immersiveengineering:diesel_generator',
+      'immersiveengineering:arc_furnace', 
+      'immersiveengineering:excavator',
+      'immersiveengineering:bucket_wheel'
+    ], 
+    50000
+  )
 })

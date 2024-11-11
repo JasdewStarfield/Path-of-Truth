@@ -18,7 +18,6 @@
         */
         "bannedRespawnBlocks": [
             "minecraft:respawn_anchor",
-            "undergarden:depthrock_bed",
             "#minecraft:beds"
         ],
         // Whether vanilla's nether respawn anchors should be repurposed and turned into 'Destruction Catalysts'

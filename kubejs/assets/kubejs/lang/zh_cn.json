@@ -136,13 +136,13 @@
   "block.botania.floating_thermalily.tooltip.summary":"灼热的内核配合极不稳定的浮空功能，使其被破坏后仅能残余最初的草地之种……",
 
   "block.mechanicalbotania.spinerette.tooltip":"织法者",
-  "block.mechanicalbotania.spinerette.tooltip.summary":"编织魔法并将其转化为可以用于工业的动力。下方的泥土种类影响其转速。",
+  "block.mechanicalbotania.spinerette.tooltip.summary":"在魔力池旁编织魔法并将其转化为可以用于工业的动力。下方的泥土种类影响其关联的马达转速。",
   "block.mechanicalbotania.spinerette.tooltip.condition1":"用森林法杖shift+右键时",
   "block.mechanicalbotania.spinerette.tooltip.behaviour1":"选定这朵花，用另一次shift+右键即可关联至魔动马达。",
   "block.mechanicalbotania.spinerette.tooltip.condition2":"在下方布设泥土/缠根泥土/草方块/灰化土/蕴魔土时",
   "block.mechanicalbotania.spinerette.tooltip.behaviour2":"对接马达启动转速为 8/16/32/64/128 rpm（应力不变）。",
   "block.mechanicalbotania.spinerette_floating.tooltip":"浮空织法者",
-  "block.mechanicalbotania.spinerette_floating.tooltip.summary":"编织魔法并将其转化为可以用于工业的动力。下方的泥土种类影响其转速。",
+  "block.mechanicalbotania.spinerette_floating.tooltip.summary":"在魔力池旁编织魔法并将其转化为可以用于工业的动力。下方的泥土种类影响其关联的马达转速。",
   "block.mechanicalbotania.spinerette_floating.tooltip.condition1":"用森林法杖shift+右键时",
   "block.mechanicalbotania.spinerette_floating.tooltip.behaviour1":"选定这朵花，用另一次shift+右键即可关联至魔动马达。",
   "block.mechanicalbotania.spinerette_floating.tooltip.condition2":"在下方布设泥土/缠根泥土/草方块/灰化土/蕴魔土时",
@@ -150,5 +150,11 @@
   "block.mechanicalbotania.mana_motor.tooltip":"魔动马达",
   "block.mechanicalbotania.mana_motor.tooltip.summary":"消耗极低的魔力量就可以驱动的应力源……这一点也不魔法。",
   "block.mechanicalbotania.mana_motor.tooltip.condition1":"选定织法者后用森林法杖shift+右键时",
-  "block.mechanicalbotania.mana_motor.tooltip.behaviour1":"若织法者已关联魔力池，则会以极低的速率消耗魔力，以特定转速产生应力。"
+  "block.mechanicalbotania.mana_motor.tooltip.behaviour1":"若织法者已关联魔力池，则会以极低的速率消耗魔力，以特定转速产生应力。",
+
+  "block.undergarden.depthrock_bed.tooltip":"渊邃石床",
+  "block.undergarden.depthrock_bed.tooltip.summary":"世界最后的真实，心灵最终的归宿，古老力量的结晶。",
+  "block.undergarden.depthrock_bed.tooltip.condition1":"在右键时",
+  "block.undergarden.depthrock_bed.tooltip.behaviour1":"进行一次_完全正常的_重生点设置并尝试睡眠。"
+
 }

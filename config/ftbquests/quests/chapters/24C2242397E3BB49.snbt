@@ -147,6 +147,8 @@
 				"&a恭喜你完成了这一整合包的所有挑战——&r"
 				"享受神的力量吧，现在，你就是世界的真理。"
 				"~~完结撒花~~"
+				"{@pagebreak}"
+				"但是，这真的是一切的结束吗？"
 			]
 			id: "6D9B7D2CD86693AF"
 			rewards: [{
@@ -156,7 +158,7 @@
 			}]
 			shape: "diamond"
 			size: 4.0d
-			subtitle: "无限。"
+			subtitle: "终末结算"
 			tasks: [{
 				id: "7FD89303532E9EA7"
 				item: "create:handheld_worldshaper"
@@ -307,6 +309,40 @@
 			}]
 			x: 3.0d
 			y: 9.0d
+		}
+		{
+			dependencies: ["6D9B7D2CD86693AF"]
+			description: [
+				"&a这是最后一项挑战，一些……超越想象的事情。&r"
+				"&6“这个世界是一个巨大的草台班子。”&r"
+				""
+				"从理论上来讲，&c床就是拿来睡觉的&r，但&4在扭曲规则的侵染下&r，这个世界只剩下了一种&d能让你感受到家一般温暖&r的床铺。"
+				""
+				"这看起来&5似乎不太可能实现&r……但你手中的工具也不太可能出现在人类双手上。"
+				"{@pagebreak}"
+				"你需要一种可以让你&9精确获得机器&r的工具……"
+				""
+				"也许应该看看那些&3融合了工业与魔法&r的独特力量。"
+				""
+				"&o&7大概这个终年覆雪的世界也是一个更大的雪景球吧。&r&r"
+			]
+			id: "43D8F6D77823709C"
+			rewards: [{
+				id: "6FF83ED6C18B4E8B"
+				item: "snowyspirit:snow_globe"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 0.5d
+			subtitle: "归于平静。"
+			tasks: [{
+				id: "56256C6247EC840D"
+				item: "undergarden:depthrock_bed"
+				type: "item"
+			}]
+			title: "真正的终点……"
+			x: 0.0d
+			y: -1.0d
 		}
 	]
 	subtitle: ["The Truth Lies Here"]

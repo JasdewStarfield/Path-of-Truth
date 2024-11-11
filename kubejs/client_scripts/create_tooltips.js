@@ -14,7 +14,8 @@ const CreateTooltipsItems = [
     "botania:floating_thermalily",
     "mechanicalbotania:spinerette",
     "mechanicalbotania:spinerette_floating",
-    "mechanicalbotania:mana_motor"
+    "mechanicalbotania:mana_motor",
+    "undergarden:depthrock_bed"
 ]
 
 //下面是格式，写在assets/kubejs/lang/zh_cn.json（或者英文的就在en_us.json）
