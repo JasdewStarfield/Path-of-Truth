@@ -64,6 +64,27 @@ ServerEvents.recipes(event => {
         "ticks": 200,
         "upgradeLevel": 1
     })
+    //幽匿催发体炼制
+    event.custom({
+        "type": "bloodmagic:alchemytable",
+        "input": [
+            {
+                "item": 'botania:drum_gathering'
+            },
+            {
+                "item":'minecraft:echo_shard'
+            },
+            {
+                "item":'irons_spellbooks:ender_rune'
+            }
+        ],
+        "output": {
+          "item": 'minecraft:sculk_catalyst'
+        },
+        "syphon": 5000,
+        "ticks": 200,
+        "upgradeLevel": 3
+    })
     //酋长蟹炼制
     event.custom({
         "type": "bloodmagic:alchemytable",
