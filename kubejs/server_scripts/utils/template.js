@@ -40,9 +40,6 @@ event.remove({id:'名字'})
 /*
 植物魔法系列配方记录：
 onEvent("recipes", event => {
-    //删除配方
-    event.remove({ output: "botania:livingrock" })
-
     //法力充能
     event.recipes.botania.mana_infusion("产出物", "原材料", 200, "下方催化方块")
     //精灵门交换

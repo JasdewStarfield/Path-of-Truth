@@ -11,7 +11,10 @@ const CreateTooltipsItems = [
     "immersiveengineering:seed",
     "immersiveengineering:hemp_fiber",
     "botania:thermalily",
-    "botania:floating_thermalily"
+    "botania:floating_thermalily",
+    "mechanicalbotania:spinerette",
+    "mechanicalbotania:spinerette_floating",
+    "mechanicalbotania:mana_motor"
 ]
 
 //下面是格式，写在assets/kubejs/lang/zh_cn.json（或者英文的就在en_us.json）

@@ -5,6 +5,32 @@ ServerEvents.recipes(event => {
     //移除诱惑酿造配方
     event.remove({id:'botania:brew/allure'})
     
+    //添加魔动工业相关
+    event.remove({id:'mechanicalbotania:floating_spinerette'})
+    event.remove({id:'mechanicalbotania:manamotor'})
+    event.recipes.botania.petal_apothecary('mechanicalbotania:spinerette', 
+        [
+            '#botania:petals/yellow',
+            '#botania:petals/cyan',
+            'minecraft:echo_shard',
+            'botania:terrasteel_ingot',
+            'botania:rune_fire',
+            'botania:rune_mana'
+        ]
+    )
+    event.shaped(Item.of('mechanicalbotania:mana_motor',1),
+    ['ABA',
+    'CDC',
+    'ABA'],
+    {
+        A:'botania:manasteel_ingot',
+        B:'irons_spellbooks:arcane_salvage',
+        C:'irons_spellbooks:mana_ring',
+        D:'create_new_age:basic_motor'
+    }
+)
+
+
     //修改白雏菊合成配方
     event.remove({ output: 'botania:pure_daisy' })
     event.recipes.botania.petal_apothecary('botania:pure_daisy', 
