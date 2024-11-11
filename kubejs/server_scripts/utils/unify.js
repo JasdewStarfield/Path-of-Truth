@@ -150,8 +150,8 @@ ServerEvents.recipes(event => {
   )
 
   //补充：暗影精华桶和光辉混合物桶均可以通过分液返还流体
-  event.recipes.create.emptying([Fluid.of("createchromaticreturn:flowing_refined_mixture",1000), 'bucket'], 'createchromaticreturn:refined_mixture_bucket')
-  event.recipes.create.emptying([Fluid.of("createchromaticreturn:flowing_shadow_essence",1000), 'bucket'], 'createchromaticreturn:shadow_essence_bucket')
+  event.recipes.create.emptying([Fluid.of("createchromaticreturn:refined_mixture",1000), 'bucket'], 'createchromaticreturn:refined_mixture_bucket')
+  event.recipes.create.emptying([Fluid.of("createchromaticreturn:shadow_essence",1000), 'bucket'], 'createchromaticreturn:shadow_essence_bucket')
 
   //血魔法植物油-植物油流体
   event.recipes.create.emptying([Fluid.of("immersiveengineering:plantoil",100), 'air'], 'bloodmagic:plantoil')
