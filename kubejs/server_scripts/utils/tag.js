@@ -67,6 +67,24 @@ const Unobtainable = [
     /create_new_age:.*wire/
 ]
 
+const LivingArmourSocket = [
+    'bloodmagic:growthsigil',
+    'bloodmagic:miningsigil',
+    'bloodmagic:sigilofmagnetism',
+    'bloodmagic:icesigil',
+    'bloodmagic:sigilofholding',
+    'bloodmagic:sigilofsuppression',
+    'bloodmagic:divinationsigil',
+    'bloodmagic:seersigil',
+    'bloodmagic:soulgempetty',
+    'bloodmagic:soulgemlesser',
+    'bloodmagic:soulgemcommon',
+    'bloodmagic:soulgemgreater',
+    'bloodmagic:experiencebook',
+    'bloodmagic:upgradetrainer',
+    'bloodmagic:demonwillgauge'
+]
+
 ServerEvents.tags("item", (event) => {
     //工程块
     engineeringBlocks.forEach((id) => event.add("kubejs:engineering_block", id))
@@ -160,6 +178,9 @@ ServerEvents.tags("item", (event) => {
     event.add("minecraft:tools","kubejs:sword_o_justice")
     event.add("minecraft:swords","kubejs:sword_o_justice")
     event.add("forge:tools/swords","kubejs:sword_o_justice")
+
+    //血魔法槽位移除
+    event.remove("curios:living_armour_socket",LivingArmourSocket)
 
     //类皮革靴子物品（防细雪）
     //似乎坏了，先注释掉吧
