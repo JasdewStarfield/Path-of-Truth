@@ -440,6 +440,17 @@ ServerEvents.recipes(event => {
       event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'tfmg:screwdriver'])
     ]).transitionalItem('kubejs:incomplete_component_electronic_adv').loops(5)
 
+    //散热器模块
+    event.remove({id:"immersiveengineering:crafting/radiator"})
+    event.recipes.create.sequenced_assembly([
+      'immersiveengineering:radiator'
+      ], '#forge:sheetmetals/steel', [
+          event.recipes.createDeploying('kubejs:incomplete_radiator', ['kubejs:incomplete_radiator', 'kubejs:frostfire_double_plate']),
+          event.recipes.createFilling('kubejs:incomplete_radiator', ['kubejs:incomplete_radiator', Fluid.of('immersiveengineering:biodiesel', 250)]),
+          event.recipes.createPressing('kubejs:incomplete_radiator', 'kubejs:incomplete_radiator')
+    ]).transitionalItem('kubejs:incomplete_radiator').loops(1)
+
+
     //电子工程块
     event.shaped('kubejs:electronic_engineering', [ 
         'CAD', 

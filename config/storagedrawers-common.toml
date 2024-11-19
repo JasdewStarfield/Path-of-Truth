@@ -68,3 +68,26 @@
 	#Add CoFH Core specific features if the mod is loaded
 	enableCoFHIntegration = true
 
+[Conversion]
+	#
+	#Each type will be combined with each material to create a set of whitelist entries.
+	#This is mainly a convenience for common ore-based materials.
+	oreTypeWhitelist = ["forge:storage_blocks", "forge:ingots", "forge:nuggets"]
+	#
+	#Each type will be combined with each material to create a set of whitelist entries.
+	#This is mainly a convenience for common ore-based materials.
+	oreMaterialWhitelist = ["aluminum", "constantan", "steel", "uranium", "invar", "tin", "lead", "silver", "platinum", "nickel", "osmium", "bronze", "electrum"]
+	#
+	#Each whitelist entry should be a fully namespaced tag, e.g. c:ingots/copper
+	tagWhitelist = []
+	#
+	#Each blacklist entry should be a fully namespaced tag, e.g. c:ingots/copper.
+	#All items not on the whitelist are blacklisted implicitly.  This can be used to exclude
+	#specific entries created from the ore whitelist set.
+	tagBlacklist = []
+	#
+	#Each entry is a semicolon-separated list of fully-namespaced items. All items within the
+	#same entry are considered equivalent and convertible/interchangeable.
+	#Example: ["thermal:nickel_ore;immersiveengineering:ore_nickel"]
+	itemEquivalenceGroups = []
+

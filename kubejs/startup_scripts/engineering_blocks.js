@@ -7,6 +7,7 @@ StartupEvents.registry('item', (event) => {
 	event.create("incomplete_heavy_engineering", 'create:sequenced_assembly').parentModel("kubejs:item/incomplete_heavy_engineering").displayName('Incomplete Heavy Engineering Block')
 	event.create("incomplete_rs_engineering", 'create:sequenced_assembly').parentModel("kubejs:item/incomplete_rs_engineering").displayName('Incomplete Sensory Engineering Block')
 	event.create("incomplete_component_electronic_adv", 'create:sequenced_assembly').displayName('Incomplete Advanced Electronic Component')
+	event.create("incomplete_radiator", 'create:sequenced_assembly').parentModel("immersiveengineering:block/radiator").displayName('Incomplete Radiator Block')
 	event.create("incomplete_logistical_engineering", 'create:sequenced_assembly').parentModel("kubejs:item/incomplete_logistical_engineering").displayName('Incomplete Logistical Engineering Block')
 	event.create("incomplete_electronic_engineering", 'create:sequenced_assembly').parentModel("kubejs:item/incomplete_electronic_engineering").displayName('Incomplete Electronic Engineering Block')
 })
