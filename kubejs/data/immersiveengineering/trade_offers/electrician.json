@@ -6,6 +6,45 @@
       "trades": [
         {
           "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:wirecoil_copper",
+            "price": 8,
+            "max_uses": 16,
+            "experience": 2
+          },
+          "level": "novice",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "createdeco:andesite_sheet",
+            "price": 5,
+            "max_uses": 12,
+            "experience": 2
+          },
+          "level": "novice",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:light_bulb",
+            "price": 6,
+            "max_uses": 12,
+            "experience": 2
+          },
+          "level": "novice",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
             "type": "minecraft:sell_item",
             "item": "irons_spellbooks:arcane_ingot",
             "price": 16,
@@ -24,6 +63,32 @@
     },
     "2_apprentice": {
       "trades": [
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:wirecoil_electrum",
+            "price": 4,
+            "max_uses": 12,
+            "experience": 6
+          },
+          "level": "apprentice",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "create:brass_sheet",
+            "price": 3,
+            "max_uses": 12,
+            "experience": 8
+          },
+          "level": "apprentice",
+          "attributes": {
+            "other": 1.0
+          }
+        },
         {
           "offer": {
             "type": "minecraft:sell_item",
@@ -46,6 +111,32 @@
       "trades": [
         {
           "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:wirecoil_steel",
+            "price": 2,
+            "max_uses": 8,
+            "experience": 10
+          },
+          "level": "journeyman",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:component_steel",
+            "price": 2,
+            "max_uses": 12,
+            "experience": 10
+          },
+          "level": "journeyman",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
             "type": "minecraft:sell_item",
             "item": "irons_spellbooks:lightning_rune",
             "price": 32,
@@ -64,6 +155,32 @@
     },
     "4_expert": {
       "trades": [
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:electron_tube",
+            "price": 1,
+            "max_uses": 6,
+            "experience": 16
+          },
+          "level": "expert",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "kubejs:frostfire_double_plate",
+            "price": 1,
+            "max_uses": 6,
+            "experience": 12
+          },
+          "level": "expert",
+          "attributes": {
+            "other": 1.0
+          }
+        },
         {
           "offer": {
             "type": "minecraft:sell_item",
@@ -96,11 +213,24 @@
           "attributes": {
             "other": 1.0
           }
+        },
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:plate_duroplast",
+            "price": 1,
+            "max_uses": 8,
+            "experience": 12
+          },
+          "level": "master",
+          "attributes": {
+            "other": 1.0
+          }
         }
       ],
       "replace": true,
-      "min_trades": 2,
-      "max_trades": 2
+      "min_trades": 1,
+      "max_trades": 1
     }
   }
 }

@@ -6,6 +6,32 @@
       "trades": [
         {
           "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "create:cogwheel",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 2
+          },
+          "level": "novice",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:survey_tools",
+            "price": 1,
+            "max_uses": 4,
+            "experience": 4
+          },
+          "level": "novice",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
             "type": "minecraft:sell_item",
             "item": "irons_spellbooks:magic_cloth",
             "price": 16,
@@ -24,6 +50,32 @@
     },
     "2_apprentice": {
       "trades": [
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:drillhead_steel",
+            "price": 1,
+            "max_uses": 6,
+            "experience": 10
+          },
+          "level": "apprentice",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "create:mechanical_pump",
+            "price": 4,
+            "max_uses": 12,
+            "experience": 6
+          },
+          "level": "apprentice",
+          "attributes": {
+            "other": 1.0
+          }
+        },
         {
           "offer": {
             "type": "minecraft:sell_item",
@@ -46,6 +98,32 @@
       "trades": [
         {
           "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:dust_wood",
+            "price": 10,
+            "max_uses": 16,
+            "experience": 4
+          },
+          "level": "journeyman",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "create:sturdy_sheet",
+            "price": 2,
+            "max_uses": 10,
+            "experience": 8
+          },
+          "level": "journeyman",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
             "type": "minecraft:sell_item",
             "item": "irons_spellbooks:ice_rune",
             "price": 32,
@@ -64,6 +142,32 @@
     },
     "4_expert": {
       "trades": [
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "create:experience_nugget",
+            "price": 16,
+            "max_uses": 12,
+            "experience": 8
+          },
+          "level": "expert",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "create:crushed_raw_aluminum",
+            "price": 10,
+            "max_uses": 12,
+            "experience": 10
+          },
+          "level": "expert",
+          "attributes": {
+            "other": 1.0
+          }
+        },
         {
           "offer": {
             "type": "minecraft:sell_item",
@@ -86,6 +190,19 @@
       "trades": [
         {
           "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:redstone_acid_bucket",
+            "price": 1,
+            "max_uses": 5,
+            "experience": 16
+          },
+          "level": "expert",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
             "type": "minecraft:sell_item",
             "item": "irons_spellbooks:ice_upgrade_orb",
             "price": 64,
@@ -99,8 +216,8 @@
         }
       ],
       "replace": true,
-      "min_trades": 2,
-      "max_trades": 2
+      "min_trades": 1,
+      "max_trades": 1
     }
   }
 }

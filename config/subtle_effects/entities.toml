@@ -33,11 +33,11 @@ parrotFeathers = true
 snowGolemSnowflakes = true
 
 [sleeping]
-playerSnoreChance = 1.0
-playerSnoreSoundVolume = 1.0
+playerSnoreChance = 0.3366013071895423
+playerSnoreSoundVolume = 0.19607843
 playersHaveSleepingZs = true
-villagerSnoreChance = 1.0
-villagerSnoreSoundVolume = 1.0
+villagerSnoreChance = 0.20261437908496752
+villagerSnoreSoundVolume = 0.19607843
 villagersHaveSleepingZs = true
 foxesHaveSleepingZs = true
 batsHaveSleepingZs = true

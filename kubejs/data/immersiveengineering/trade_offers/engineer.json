@@ -20,10 +20,10 @@
         {
           "offer": {
             "type": "minecraft:buy_for_one_emerald",
-            "item": "immersiveengineering:treated_fence",
-            "price": 6,
-            "max_uses": 16,
-            "experience": 1
+            "item": "immersiveengineering:waterwheel_segment",
+            "price": 4,
+            "max_uses": 12,
+            "experience": 2
           },
           "level": "novice",
           "attributes": {
@@ -215,9 +215,9 @@
           }
         }
       ],
-      "replace": true,
-      "min_trades": 2,
-      "max_trades": 2
+      "replace": false,
+      "min_trades": 1,
+      "max_trades": 1
     }
   }
 }
