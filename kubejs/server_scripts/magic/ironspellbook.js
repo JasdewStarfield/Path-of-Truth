@@ -227,21 +227,4 @@ ServerEvents.recipes(event => {
         }
     )
 
-    /*
-    event.shaped(Item.of('createchromaticreturn:multiplite_ingot',1),
-        ['ABC',
-        'DEF',
-        'GHI'],
-        {
-            A:'createchromaticreturn:glowing_ingot',
-            B:'createchromaticreturn:refined_radiance',
-            C:'createchromaticreturn:silkstrum',
-            D:'createchromaticreturn:silkstrum_book',
-            E:'createchromaticreturn:industrium_book',
-            F:'createchromaticreturn:durasteel_book',
-            G:'createchromaticreturn:shadow_steel',
-            H:'createchromaticreturn:industrium_ingot',
-            I:'createchromaticreturn:durasteel_ingot'
-        }
-    )*/
 })

@@ -1,0 +1,106 @@
+{
+    "profession": "immersiveengineering:machinist",
+    "replace": true,
+    "offers": {
+    "1_novice": {
+      "trades": [
+        {
+          "offer": {
+            "type": "minecraft:sell_item",
+            "item": "irons_spellbooks:magic_cloth",
+            "price": 16,
+            "max_uses": 4,
+            "experience": 3
+          },
+          "level": "novice",
+          "attributes": {
+            "other": 1.0
+          }
+        }
+      ],
+      "replace": true,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "2_apprentice": {
+      "trades": [
+        {
+          "offer": {
+            "type": "minecraft:sell_item",
+            "item": "irons_spellbooks:iron_spell_book",
+            "price": 32,
+            "max_uses": 2,
+            "experience": 10
+            },
+          "level": "apprentice",
+          "attributes": {
+            "other": 1.0
+            }
+        }
+      ],
+      "replace": true,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "3_journeyman": {
+      "trades": [
+        {
+          "offer": {
+            "type": "minecraft:sell_item",
+            "item": "irons_spellbooks:ice_rune",
+            "price": 32,
+            "max_uses": 4,
+            "experience": 10
+        },
+          "level": "journeyman",
+          "attributes": {
+            "other": 1.0
+          }
+        }
+      ],
+      "replace": true,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "4_expert": {
+      "trades": [
+        {
+          "offer": {
+            "type": "minecraft:sell_item",
+            "item": "irons_spellbooks:permafrost_shard",
+            "price": 64,
+            "max_uses": 1,
+            "experience": 20
+        },
+          "level": "expert",
+          "attributes": {
+            "other": 1.0
+          }
+        }
+      ],
+      "replace": true,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "5_master": {
+      "trades": [
+        {
+          "offer": {
+            "type": "minecraft:sell_item",
+            "item": "irons_spellbooks:ice_upgrade_orb",
+            "price": 64,
+            "max_uses": 4,
+            "experience": 20
+        },
+          "level": "master",
+          "attributes": {
+            "other": 1.0
+          }
+        }
+      ],
+      "replace": true,
+      "min_trades": 2,
+      "max_trades": 2
+    }
+  }
+}

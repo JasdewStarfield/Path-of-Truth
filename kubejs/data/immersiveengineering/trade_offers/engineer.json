@@ -29,11 +29,24 @@
           "attributes": {
             "other": 1.0
           }
+        },
+        {
+          "offer": {
+            "type": "minecraft:sell_item",
+            "item": "irons_spellbooks:arcane_essence",
+            "price": 4,
+            "max_uses": 16,
+            "experience": 1
+          },
+          "level": "novice",
+          "attributes": {
+            "other": 1.0
+          }
         }
       ],
       "replace": true,
-      "min_trades": 1,
-      "max_trades": 1
+      "min_trades": 2,
+      "max_trades": 2
     },
     "2_apprentice": {
       "trades": [
@@ -62,11 +75,24 @@
           "attributes": {
             "other": 1.0
           }
+        },
+        {
+          "offer": {
+            "type": "minecraft:sell_item",
+            "item": "irons_spellbooks:iron_spell_book",
+            "price": 32,
+            "max_uses": 2,
+            "experience": 10
+            },
+          "level": "apprentice",
+          "attributes": {
+            "other": 1.0
+            }
         }
       ],
       "replace": true,
-      "min_trades": 1,
-      "max_trades": 1
+      "min_trades": 2,
+      "max_trades": 2
     },
     "3_journeyman": {
       "trades": [
@@ -95,11 +121,24 @@
           "attributes": {
             "other": 1.0
           }
+        },
+        {
+          "offer": {
+            "type": "minecraft:sell_item",
+            "item": "irons_spellbooks:ender_rune",
+            "price": 32,
+            "max_uses": 4,
+            "experience": 10
+        },
+          "level": "journeyman",
+          "attributes": {
+            "other": 1.0
+          }
         }
       ],
       "replace": true,
-      "min_trades": 1,
-      "max_trades": 1
+      "min_trades": 2,
+      "max_trades": 2
     },
     "4_expert": {
       "trades": [
@@ -128,11 +167,24 @@
           "attributes": {
             "other": 1.0
           }
+        },
+        {
+          "offer": {
+            "type": "minecraft:sell_item",
+            "item": "irons_spellbooks:lesser_spell_slot_upgrade",
+            "price": 64,
+            "max_uses": 4,
+            "experience": 20
+        },
+          "level": "expert",
+          "attributes": {
+            "other": 1.0
+          }
         }
       ],
       "replace": true,
-      "min_trades": 1,
-      "max_trades": 1
+      "min_trades": 2,
+      "max_trades": 2
     },
     "5_master": {
       "trades": [
@@ -148,11 +200,24 @@
           "attributes": {
             "other": 1.0
           }
+        },
+        {
+          "offer": {
+            "type": "minecraft:sell_item",
+            "item": "irons_spellbooks:ender_upgrade_orb",
+            "price": 64,
+            "max_uses": 1,
+            "experience": 20
+        },
+          "level": "master",
+          "attributes": {
+            "other": 1.0
+          }
         }
       ],
       "replace": true,
-      "min_trades": 1,
-      "max_trades": 1
+      "min_trades": 2,
+      "max_trades": 2
     }
   }
 }
