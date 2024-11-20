@@ -1,5 +1,6 @@
 {
     "item.kubejs.broken_snowcap_oven.desc": "This furnace is broken! You have to repair it with raw froststeel in order to make it functional.",
+    "item.kubejs.asphalt.desc": "Pour liquid asphalt onto the ground to make it soild and obtain asphalt block.",
     "item.kubejs.filled_casting_mold_small.desc": "A steel ingot is sealed within",
     "item.kubejs.filled_casting_mold_large.desc": "A block of steel is sealed within",
     
@@ -17,6 +18,8 @@
     "item.kubejs.incomplete_music_disc_pluto_nocturnus.desc2": "\"Unreleased\"",
     "item.kubejs.disc_fragment_yggdrasil.desc1": "Rarely found in chests of Blue Skies Dungeons",
     "item.kubejs.disc_fragment_yggdrasil.desc2": "You can only see a faint line of text: Yggdrasil...",
+    "item.kubejs.amethyst_shard.desc": "Emits echo when being close to skulk blocks...",
+    "item.kubejs.echo_shard.desc": "Seems like a kind of mineral shard being corrupted by skulks...",
 
     "item.kubejs.obelisk_base.desc1": "You feel a strong power emitting from this block...",
     "item.kubejs.obelisk_base.desc2": "If you put it under the obelisk, then it will recieve infinite charge (but you cannot move the base after placement)",

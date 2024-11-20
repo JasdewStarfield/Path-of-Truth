@@ -31,7 +31,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["&l&4这个章节不是正式任务线！只起到任务线的预告作用！具体请看下方的章节组中的内容！&r&r"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "5BC62338A9F6E65B"
 			subtitle: "触碰魔法边缘"
 			tasks: [{
@@ -250,33 +250,26 @@
 		{
 			dependencies: ["4D484051A8CF29F2"]
 			id: "71BF98560860C0AB"
-			subtitle: "调用物品"
+			subtitle: "生命之力"
 			tasks: [{
-				id: "094ACB879F77DCD4"
-				item: "botania:corporea_index"
+				id: "4EECEE2C4DD71928"
+				item: "botania:dandelifeon"
 				type: "item"
 			}]
-			title: "魔能CPU"
+			title: "生命花开"
 			x: 2.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["71BF98560860C0AB"]
 			id: "309ED82498C4F2D1"
-			subtitle: "永动机（个人版）"
+			subtitle: "植物之力"
 			tasks: [{
-				id: "137EB8297FD4C37B"
-				item: {
-					Count: 1
-					id: "botania:mana_tablet"
-					tag: {
-						creative: 1b
-						mana: 500000
-					}
-				}
+				id: "3F1587357E1294A3"
+				item: "botania:overgrowth_seed"
 				type: "item"
 			}]
-			title: "无尽魔力"
+			title: "生命分解"
 			x: -2.0d
 			y: -11.0d
 		}
@@ -349,10 +342,7 @@
 			y: -13.0d
 		}
 		{
-			dependencies: [
-				"2022E86F75370929"
-				"7A0D894A5227359D"
-			]
+			dependencies: ["7A0D894A5227359D"]
 			id: "0A2BE67F3E9F7225"
 			subtitle: "活化水晶？"
 			tasks: [{
@@ -366,19 +356,20 @@
 		{
 			dependencies: ["7B4BE516F4D4E494"]
 			id: "2022E86F75370929"
-			subtitle: "噫，大虫子"
+			subtitle: "接近永恒"
 			tasks: [{
-				id: "0832B35B18824218"
+				id: "707DDD11BE3C6C0F"
 				item: {
 					Count: 1
-					id: "alexsmobs:dimensional_carver"
+					id: "botania:mana_tablet"
 					tag: {
-						Damage: 0
+						creative: 1b
+						mana: 500000
 					}
 				}
 				type: "item"
 			}]
-			title: "撕裂维度"
+			title: "无尽魔力"
 			x: 0.0d
 			y: -14.0d
 		}
@@ -401,7 +392,7 @@
 		}
 		{
 			dependencies: ["697B1277B1C95490"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "547BE1E974BA2186"
 			subtitle: "转化，合成，凝聚"
 			tasks: [{

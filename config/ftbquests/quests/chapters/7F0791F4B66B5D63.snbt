@@ -26,7 +26,7 @@
 				"所以我们推荐大量杂物用箱子和背包储存；大量同类物品用抽屉储存。"
 				"具体细节可以参见“世界的表象”章节——对于抽屉和背包都有说明。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "34610E8F3D1306A9"
 			rewards: [
 				{
@@ -47,8 +47,8 @@
 				type: "item"
 			}]
 			title: "升级你的背包"
-			x: -1.5d
-			y: 1.5d
+			x: 1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["003B99516797BF14"]
@@ -56,8 +56,8 @@
 				"由于alex的生物存在，现在不同的下界群系中增加了额外的危险生物。"
 				"祝你下去的时候被绯红蚊子抱脸（确信"
 			]
-			hide: true
 			hide_details_until_startable: true
+			hide_until_deps_complete: true
 			id: "6C542C19575974DB"
 			subtitle: "下地狱去吧"
 			tasks: [{
@@ -184,6 +184,13 @@
 				"同时，你在地表，浅层洞穴，深板岩洞穴乃至于下界和末地，都可以钓到全新的鱼！"
 				"去下界钓鱼之前，最好升级一下你的钓竿以防止被岩浆吞没……"
 			]
+			icon: {
+				Count: 1
+				id: "tide:blazing_swordfish"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "1394E8BA5DD00BFE"
 			rewards: [{
 				id: "6CA34B1E8340CAC7"
@@ -192,18 +199,12 @@
 			}]
 			subtitle: "嗯，上天入地去钓鱼"
 			tasks: [{
-				id: "6E709DFBB1DCE608"
-				item: {
-					Count: 1
-					id: "tide:blazing_swordfish"
-					tag: {
-						Damage: 0
-					}
-				}
+				id: "2B5E8D78F0266D2E"
+				item: "tide:lavaproof_fishing_hook"
 				type: "item"
 			}]
 			title: "钓鱼之王"
-			x: 0.0d
+			x: -1.5d
 			y: 1.5d
 		}
 		{
@@ -216,8 +217,8 @@
 				""
 				"&o&a（你或许听说过蔚蓝浩空维度的装备限制机制？没关系，现在它被炸了。尽情使用你喜欢的装备吧！）&r&r"
 			]
-			hide: true
 			hide_details_until_startable: true
+			hide_until_deps_complete: true
 			id: "2ADB403A5CDF92C0"
 			subtitle: "守门人珍藏"
 			tasks: [{
@@ -227,7 +228,7 @@
 			}]
 			title: "说明书"
 			x: 0.0d
-			y: -1.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["636824522AD771D1"]
@@ -277,7 +278,7 @@
 		{
 			dependencies: ["7A6D4E28C28302FE"]
 			description: ["在主线内容中你很快就会用到其中的一些（至少是前几个）……所以如果不想多跑几趟的话，就多收集一点吧！"]
-			hide: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "blue_skies:turquoise_stone_pickaxe"
@@ -345,7 +346,7 @@
 		{
 			dependencies: ["280307C036B9B6E7"]
 			description: ["在主线内容中你很快就会用到其中的一些（至少是前几个）……所以如果不想多跑几趟的话，就多收集一点吧！"]
-			hide: true
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "blue_skies:lunar_stone_pickaxe"
@@ -407,83 +408,13 @@
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
-			dependency_requirement: "one_started"
-			description: [
-				"基于一些众所周知的原因，木质鱼竿的耐久被狠狠削减了——但你会发现增加了大量&c全新&r的钓竿！"
-				"钓鱼也出现了一些变化，你需要在&a不同的位置&r（包括但不限于群系，深度，甚至维度）钓鱼来获得所有的鱼！相应地，部分鱼也会在对应的群系生成实体鱼，你可以&c直接将其击杀&r来获取它们。"
-				"想要收集各种鱼但苦于没有记录方式？你需要一本&b百鱼全书&r！这里会写着你捕捉过的大部分鱼，并标明其属性和作用。你也可以在持有百鱼全书的情况下右击世界上的实体鱼来快速打开它的图鉴！"
-				"有些鱼拥有&e&l传奇&r&r的功效……"
-				"但你首先需要&6渔夫工坊&r和&5锻造台&r来升级和修改你的鱼竿）"
-				"*由于没有暖水，我们魔改了战利品表，你可以在冷水群系内钓到热带鱼，并且&b没有鹦鹉螺壳！&r你需要&1探索海底神殿&r或&c通过炼金手段&r来获得贝壳！）"
-				"有关于钓鱼机制的变更，请查看下一页。"
-				"{@pagebreak}"
-				"现在的钓鱼分为了三个部分：&b抛竿&r，&c拉钩&r，&a提钩&r。"
-				"你需要通过&b长按右键为你的钓竿蓄力&r，这决定它能抛多远。"
-				"在鱼儿上钩后，通过&c第一次右键（拉钩）&r，我们会进入提钩环节，你需要&a等到标示线在绿色区域（也就是中央区）的时候提钩&r，才有更高几率获得更好的鱼。"
-				"如果你在标示线侧边时提起了钩，那么恭喜你，你&b空军&r了！"
-				""
-				"&o&b注意：植魔酿造的“诱惑”药水会造成卡顿，因此该配方被直接删除！&r&r"
-				"&o&6游戏里享受钓鱼佬的人生也是一种乐趣，所以不要用药水加速（确信&r&r"
-			]
-			hide: true
-			hide_details_until_startable: true
-			icon: "tide:shooting_starfish"
-			id: "25D2D0B2CB184527"
-			rewards: [{
-				id: "3B767198DEC47050"
-				item: {
-					Count: 1
-					id: "tide:crystal_fishing_rod"
-					tag: {
-						Damage: 0
-						modifier: {
-							bobber: 14
-							hook: 0
-							line: 0
-						}
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "组装神杆！"
-			tasks: [
-				{
-					id: "114CB1572542ED07"
-					item: "tide:angler_workshop"
-					type: "item"
-				}
-				{
-					id: "0935BEA0F10E6D16"
-					item: "minecraft:smithing_table"
-					type: "item"
-				}
-				{
-					id: "1F50037ED7A7273F"
-					item: "tide:fishing_line"
-					type: "item"
-				}
-				{
-					id: "33BFEF9DDD6E00A8"
-					item: "tide:lavaproof_fishing_hook"
-					type: "item"
-				}
-				{
-					id: "1DCD22B01EDA16D5"
-					item: "tide:fishing_journal"
-					type: "item"
-				}
-			]
-			title: "钓鱼人的准备"
-			x: 0.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["6A1B42D208C780BD"]
 			description: [
 				"这两种指南针分别可以定位&2群系&r和&c结构&r。当你找不到方向的时候，就用它们吧！"
-				"（注：指南针的定位逻辑是在附近一定范围内搜索。因此，如果这个范围内没有的话，也会显示找不到目标！）"
+				""
+				"*注1：指南针的定位逻辑是在附近一定范围内搜索。因此，&3如果这个范围内没有的话&r，也会显示&4找不到目标！&r"
+				"*注2：如果要搜索海底神殿/下界要塞等原版结构但&c无法找到&r，尝试&b搜索yung的结构变体&r，因为它们全部被替换了）"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "minecraft:lodestone"
 			id: "78A026D295CF4593"
 			subtitle: "感到迷茫吗？"
@@ -508,7 +439,7 @@
 				}
 			]
 			title: "指南针们"
-			x: 0.0d
+			x: -1.5d
 			y: 3.0d
 		}
 	]

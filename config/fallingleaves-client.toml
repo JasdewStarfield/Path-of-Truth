@@ -8,11 +8,11 @@ leafLifespan = 200
 #modifies the amount of leaves that are spawning
 #Values over 10000 are not recommend
 #Range: > 0
-leafSpawnRate = 10
+leafSpawnRate = 2
 #modifier the amount of leaves are spawning from conifer trees
 #Values over 10000 are not recommend
 #Range: > 0
-coniferLeafSpawnRate = 2
+coniferLeafSpawnRate = 0.5
 #whether player placed blocks should also drop leaves
 dropFromPlayerPlacedBlocks = true
 #how much room below the leaves block is needed for the leaves to spawn
@@ -21,5 +21,5 @@ minimumFreeSpaceBelow = 1
 #disable wind effects
 disableWind = false
 #windless dimensions
-windlessDimension = ["minecraft:the_nether", "minecraft:the_end"]
+windlessDimension = ["minecraft:the_nether", "minecraft:the_end", "undergarden:undergarden"]
 

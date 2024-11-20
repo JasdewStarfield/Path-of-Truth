@@ -2,48 +2,50 @@
   "type": "minecraft:fishing",
   "pools": [
     {
-      "rolls": 1,
-      "bonus_rolls": 0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 80,
-          "name": "minecraft:tropical_fish"
+          "name": "minecraft:tropical_fish",
+          "weight": 70
         },
         {
           "type": "minecraft:item",
-          "weight": 30,
-          "name": "tide:angelfish"
+          "name": "tide:tuna",
+          "weight": 45
         },
         {
           "type": "minecraft:item",
-          "weight": 35,
-          "name": "minecraft:pufferfish"
+          "name": "tide:mackerel",
+          "weight": 40
         },
         {
           "type": "minecraft:item",
-          "weight": 45,
-          "quality": 2,
-          "name": "tide:tuna"
+          "name": "minecraft:pufferfish",
+          "weight": 35
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
-          "quality": 2,
-          "name": "tide:barracuda"
+          "name": "tide:angelfish",
+          "weight": 30
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
-          "quality": 4,
-          "name": "tide:sailfish"
+          "name": "minecraft:cod",
+          "weight": 25
         },
         {
           "type": "minecraft:item",
-          "weight": 20,
-          "name": "minecraft:cod"
+          "name": "tide:sailfish",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tide:barracuda",
+          "weight": 15
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ]
 }

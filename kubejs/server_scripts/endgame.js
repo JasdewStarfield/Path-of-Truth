@@ -26,6 +26,10 @@ ServerEvents.recipes(event => {
   event.remove({ input: 'createchromaticreturn:andesite_component' })
   event.remove({ input: 'createchromaticreturn:brass_component' })
 
+  //黄铜，安山组件配方
+  event.recipes.create.crushing(Item.of('create:andesite_alloy'), 'createchromaticreturn:andesite_component')
+  event.recipes.create.crushing(Item.of('create:brass_ingot'), 'createchromaticreturn:brass_component')
+
   //环境枪
   event.shapeless(
     Item.of('create:handheld_worldshaper',1),
@@ -66,7 +70,7 @@ ServerEvents.recipes(event => {
   event.remove({id:'createchromaticreturn:multiplite_recipe'})
   event.remove({id:'createchromaticreturn:antiplite_recipe'})
 
-  event.recipes.create.mixing(['createchromaticreturn:industrium_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [Fluid.of("createchromaticreturn:shadow_essence",1000),'create:deployer','create:mechanical_arm','immersiveengineering:powerpack','tfmg:large_radial_engine']).superheated()
+  event.recipes.create.mixing(['createchromaticreturn:industrium_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [{fluidTag:'forge:shadow_essence', amount:1000},'create:deployer','create:mechanical_arm','immersiveengineering:powerpack','tfmg:large_radial_engine']).superheated()
   event.recipes.create.sequenced_assembly([
     Item.of('createchromaticreturn:industrium_book')
     ], '#forge:plates/plastic', [
@@ -77,7 +81,7 @@ ServerEvents.recipes(event => {
     event.recipes.createFilling('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', Fluid.of('create_enchantment_industry:hyper_experience',50)])
   ]).transitionalItem('kubejs:incomplete_industrium_book').loops(2)
 
-  event.recipes.create.compacting(['createchromaticreturn:durasteel_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [Fluid.of("createchromaticreturn:shadow_essence",1000),'#forge:storage_blocks/steel','#forge:storage_blocks/lead','#forge:storage_blocks/cast_iron','#forge:storage_blocks/netherite']).superheated()
+  event.recipes.create.compacting(['createchromaticreturn:durasteel_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [{fluidTag:'forge:shadow_essence', amount:1000},'#forge:storage_blocks/steel','#forge:storage_blocks/lead','#forge:storage_blocks/cast_iron','#forge:storage_blocks/netherite']).superheated()
   event.recipes.create.sequenced_assembly([
     Item.of('createchromaticreturn:durasteel_book')
     ], '#forge:plates/obsidian', [
@@ -161,7 +165,7 @@ ServerEvents.recipes(event => {
     }
   })
 
-  //添加随机生成两种锭的配方
+  //添加随机生成两种锭的配方，两种液体注册名的版本
   event.custom({
     "type": "bloodmagic:arc",
     //可能存在的追加输出（可以不写）
@@ -197,7 +201,7 @@ ServerEvents.recipes(event => {
     //输入液体（可以不写）
     "inputFluid": {
         "amount": 1000,
-        "fluid": "createchromaticreturn:refined_mixture"
+        "tag": "forge:refined_mixture"
     },
     //输入数量（大概）
     "inputsize": 1,
@@ -280,4 +284,24 @@ ServerEvents.recipes(event => {
     }
   })
 
+  //终极彩蛋：可睡觉的床
+  event.remove({id:'undergarden:depthrock_bed'})
+  //符文祭坛
+  event.recipes.botania.runic_altar('undergarden:depthrock_bed', 
+    [
+      'create:handheld_worldshaper',
+      'immersiveengineering:coke_oven', 
+      'immersiveengineering:blast_furnace',
+      'immersiveengineering:advanced_blast_furnace', 
+      'immersiveengineering:metal_press',
+      'immersiveengineering:crusher', 
+      'immersiveengineering:fermenter',
+      'immersiveengineering:squeezer', 
+      'immersiveengineering:diesel_generator',
+      'immersiveengineering:arc_furnace', 
+      'immersiveengineering:excavator',
+      'immersiveengineering:bucket_wheel'
+    ], 
+    50000
+  )
 })

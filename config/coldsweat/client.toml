@@ -48,4 +48,6 @@
 	"Hearth Debug" = true
 	#Hides insulation tooltips for items, armor, and curios unless SHIFT is held
 	"Hide Tooltips" = false
+	#Automatically expands all collapsible tooltips
+	"Expand Tooltips" = false
 

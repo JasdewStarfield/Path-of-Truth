@@ -2,58 +2,58 @@
   "type": "minecraft:fishing",
   "pools": [
     {
-      "rolls": 1,
-      "bonus_rolls": 0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 100,
-          "name": "minecraft:cod"
+          "name": "minecraft:cod",
+          "weight": 100
         },
         {
           "type": "minecraft:item",
-          "weight": 70,
-          "name": "tide:mackerel"
+          "name": "tide:mackerel",
+          "weight": 70
         },
         {
           "type": "minecraft:item",
-          "weight": 60,
-          "name": "minecraft:salmon"
+          "name": "minecraft:salmon",
+          "weight": 60
         },
         {
           "type": "minecraft:item",
-          "weight": 50,
-          "name": "tide:ocean_perch"
+          "name": "tide:ocean_perch",
+          "weight": 50
         },
         {
           "type": "minecraft:item",
-          "weight": 25,
-          "name": "tide:trout"
+          "name": "tide:trout",
+          "weight": 25
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
+          "name": "tide:tuna",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pufferfish",
           "quality": 2,
-          "name": "minecraft:pufferfish"
+          "weight": 15
         },
         {
           "type": "minecraft:item",
-          "weight": 8,
+          "name": "tide:barracuda",
           "quality": 2,
-          "name": "tide:barracuda"
+          "weight": 8
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "name": "tide:sailfish",
           "quality": 4,
-          "name": "tide:sailfish"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 20,
-          "name": "tide:tuna"
+          "weight": 5
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ]
 }

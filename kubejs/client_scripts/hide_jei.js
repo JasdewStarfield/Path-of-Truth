@@ -1,8 +1,7 @@
 const bannedItems = [
     "immersiveengineering:potion_bucket",
-    /sophisticatedbackpacks:stack_upgrade.*/,
-    /structure_gel:.*/,
-    /itemfilters:.*/
+    "kubejs:sword_o_justice",
+    "#kubejs:unobtainable"
 ]
 
 JEIEvents.hideItems((event) => {

@@ -45,15 +45,24 @@
 				""
 				"&o&9*在法师塔的箱子中可以轻松获取这些源质，村庄的牧师和制图师结构宝箱与废弃地狱门的箱子中也会有。当然，你也可以夜间去和亡灵术士对决来获取掉落物……&r&r"
 			]
-			hide: true
 			hide_details_until_startable: true
+			hide_until_deps_complete: true
 			icon: "minecraft:chest"
 			id: "374C430D0AD70D2E"
-			rewards: [{
-				id: "0D138338A0B920AE"
-				item: "artifacts:mimic_spawn_egg"
-				type: "item"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "362C6F8A36A23C92"
+					table_id: 3947091887552256602L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5449650F1038AF9C"
+					table_id: 3947091887552256602L
+					type: "random"
+				}
+			]
 			shape: "octagon"
 			size: 1.2d
 			subtitle: "有的时候你需要看看大自然的馈赠"
@@ -69,12 +78,10 @@
 		{
 			dependencies: ["374C430D0AD70D2E"]
 			description: [
-				"所以你需要寻求自然中的力量——"
-				"比如找找那些地上的和地下的朋友。"
+				"所以你需要寻求自然中的力量——比如找找那些地上的和地下的朋友。"
 				"&l&2由于没有铁，你可以先用木头装水）&r&r"
 				""
-				"如果你实在找不到白色花瓣……可以试试花肥。"
-				""
+				"如果你实在找不到白色花瓣……可以试试花肥。植魔的大部分设备&d需要你直接扔东西进去&r——当然右键灌水还是可以做到的。"
 				"如果你实在看不懂合成方式到底是怎么操作的，&l&a请先读书！&r&r"
 				"当然书里的配方不一定对，因为经过了魔改，在配方上JEI优先级高于指导书……"
 			]
@@ -126,6 +133,9 @@
 				"……这应该也是你前期唯一能做到的施法手段。"
 				"默认施法按键是V，但你可以通过制作法杖来进行右键施法。"
 				"当然，你也可以去抢劫术士的抄写台——但你更可能被术士打死就是了。"
+				""
+				"&o&c注意：所有的法术都有友伤，释放范围法术或连锁型法术时请注意自己的安全！&r&r"
+				"&m&6&o施法不规范亲人两行泪&r&r&r"
 			]
 			icon: "irons_spellbooks:ender_upgrade_orb"
 			id: "28A1C39EF1446334"

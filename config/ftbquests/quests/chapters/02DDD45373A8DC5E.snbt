@@ -39,7 +39,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["不管干什么，你总归需要从工作台开始的，对吧）"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "46156FBBDCAB4B1D"
 			rewards: [{
 				id: "68889BA4397825CC"
@@ -84,8 +84,13 @@
 			description: [
 				"恭喜你初步摆脱了原始人阶段！"
 				""
-				"&c&l重要提示&r&r&4：水车和风车的运作机制有改动。水车现在需要放在河流群系中才能达到最大运作效率，而且需要附近有足量的流体方块（不需要流动水了）；风车则也需要在开阔的环境才能运作（较高的地方以及海洋一类的特定群系效率较高）。做好你的工业选址！&r"
-				"{image:kubejs:textures/waterwheel.png width:140 height:80 align:1}"
+				"&c&l重要提示&r&r&4：水车和风车的运作机制有改动。水车现在需要放在河流类群系（包括冻河！）中才能达到最大运作效率，而且需要附近有足量的流体方块（不需要流动水了）；风车则也需要在开阔的环境才能运作（较高的地方以及海洋一类的特定群系效率较高）。做好你的工业选址！&r"
+				""
+				"翻到下一页查看水车摆放的具体示例。"
+				""
+				"{@pagebreak}"
+				"{image:kubejs:textures/waterwheel.png width:210 height:120 align:1}"
+				"图为水车的摆放示例。&c请注意水车方块（不含页片）必须要在水面以上，不能浸没在水中！&r"
 			]
 			icon: "immersiveengineering:waterwheel_segment"
 			id: "0E41103FFC1FC96A"
@@ -152,7 +157,7 @@
 				""
 				"值得一提的是，利用手搓的方式产出的传动杆的数量降低了。然而，等到你获取铁之后，就可以使用动力锯改变这种粗放的生产方式了。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "2F791EC2607066B4"
 			subtitle: "地球在转。"
 			tasks: [
@@ -218,7 +223,7 @@
 				"&a如果你不知道怎么制作活石，请看魔法章节（原始萨满）！&r"
 				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"735172F79325756F\" } }"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "489BC5567AF09228"
 			subtitle: "是的，这个世界不只需要科技"
 			tasks: [{
@@ -558,7 +563,7 @@
 				"现在你不能通过把安山合金按到原木上来创建机壳了：你需要在活木上进行加工才可以。"
 				"是的，你首先需要用魔法活化木头，然后它们才能在加工台上被你压成机壳。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "50BB17FEED3B10D2"
 			subtitle: "什么，这不科学！"
 			tasks: [{
@@ -577,6 +582,8 @@
 				"多 多 益 善）"
 			]
 			id: "2D883E21C72F5947"
+			shape: "gear"
+			size: 2.0d
 			subtitle: "你疑似有点过于城市化了"
 			tasks: [{
 				id: "426215F2BF5D4D54"
@@ -688,7 +695,7 @@
 				""
 				"&l&c比如说，你即将用来炼铁的高炉和用来生产焦煤的焦炉。&r&r"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "336807D048A4EF6A"
 			subtitle: "80！80！"
 			tasks: [
@@ -746,6 +753,7 @@
 				"作为一个更加真实的整合包，你会发现所有的部件都会造成一定程度的应力损耗。"
 				"这也就意味着，你&b&l不能使用&r齿轮链进行长距离的动能传输。"
 			]
+			icon: "create:clipboard"
 			id: "105CB8690DCE4DCC"
 			rewards: [{
 				id: "4E5CF728545D3799"
@@ -797,9 +805,11 @@
 		{
 			dependencies: ["2D883E21C72F5947"]
 			description: [
+				"&6本整合包的工业侧核心就在于生产各种各样的工程块……你会在每个章节都遇到一个（或者一些）！&r"
 				"虽然现在你还做不到，不过如果你有了机械手，那么你就可以通过序列组装的方式来量产工程块！&2通过这种方式生产的工程块除了机壳以外，耗材全部减半！"
 				"&r顺便一提，这条规则对今后的工程块也都起效。"
 			]
+			icon: "create:clipboard"
 			id: "5284E06C5BAE5831"
 			rewards: [{
 				id: "7A6FC01C3FEC1539"

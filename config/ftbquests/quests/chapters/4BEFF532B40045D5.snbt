@@ -32,12 +32,19 @@
 			dependencies: ["2BC7BDD7E5EC76E5"]
 			description: [
 				"相信你已经发现了，这个世界&b&l到处都是冰天雪地&r&r——这是设定的一部分。"
-				"在没有温度计的情况下，你的体感会通过物品栏右侧的菱形标志展示，过冷会出现&b寒霜&r，而过热会出现&c火焰&r。具体来说，这分为环境温度和体温两个系统。环境温度高于6度以及低于38度都是安全的，超出这个范围，你的体温就会变化，这时就要注意了！"
-				"在温度过冷或过热的情况下，你不能上床睡眠来跳过长夜，体温偏离过大还会受到伤害以及获得Debuff。"
+				"在没有温度计的情况下，你的体感会通过物品栏右侧的菱形标志展示，过冷会出现&b寒霜&r，而过热会出现&c火焰&r。具体来说，这分为环境温度和体温两个系统。环境温度高于&b6度&r以及低于&c38度&r都是安全的，超出这个范围，你的体温就会变化，这时就要注意了！"
+				"在温度过冷或过热的情况下，你&4不能上床睡眠&r来跳过长夜，体温偏离过大还会受到伤害以及获得Debuff。体温的偏移度&a在极端环境下&r随着时间积累。"
+				"该数值会显示在经验条的上方，数值达到50即会出现负面效果。"
+				"关于温度的“免疫”方式，请翻到下一页。"
+				"{@pagebreak}"
 				"不想过多地考虑温度？可以，但你要做出抗火药水或者抗寒药水，这样才能在药效持续时间内抵御相应的效果。"
 				"基于“真实性深度修正”，现在看起来能发热或者降温的东西一般来说有效……"
-				"比如（大部分）各类火把和一些特殊的矿物。"
+				"比如（大部分）各类火把，一些特殊的矿物以及一些植物。"
+				"另外，在这个世界观里，灵魂火是&b冷&r的……不要搞错了（"
+				""
 				"&o&b*注：能亮≠能热，不服打我呀&r&r"
+				"{@pagebreak}"
+				"&o（已知的一个冷汗Bug：切换维度后，篝火等方块的温度影响会无效化，如果重新进入存档则温度恢复正常。目前只测试了篝火，但是是可复现的。目前暂不清楚是冷汗自身的问题还是其它模组的问题。）&r"
 			]
 			icon: "irons_spellbooks:holy_upgrade_orb"
 			id: "6E08F7A257BCB99A"
@@ -122,8 +129,8 @@
 				"&b*默认设置会导致键位冲突，这种时候我们的建议是直接点击重置按键，我们有预设好的无冲突键位，您也可以自行调整。"
 				"&r&a*整合包自带了中键整理，可以通过中键相对简单的整理储存容器，不过不要中键饰品栏，否则后果自负。&r"
 			]
-			hide: true
 			hide_details_until_startable: false
+			hide_until_deps_complete: true
 			icon: "supplementaries:globe"
 			id: "2BC7BDD7E5EC76E5"
 			rewards: [{
@@ -192,6 +199,7 @@
 			description: [
 				"最新型的望远镜可以装备在配饰栏上！按下放大键（默认C）直接使用它吧！"
 				"它还可以在放大时使用滚轮自由缩放！"
+				"这可以让你看到很远的结构……"
 			]
 			id: "454AAF454EF68F8D"
 			rewards: [{
@@ -239,7 +247,7 @@
 				""
 				"请谨慎规划你的工业区，以及在一些需要加载的地方&5留出应力输出结构&r，以便装配区块加载器。"
 				""
-				"相较于&7固定位置的安山区块加载器&r而言，黄铜加载器更加强大：不仅可以&b配置范围（最多5x5）&r，而且可以&c在动态结构（比如火车）上运作&r。"
+				"相较于&7固定位置且只能加载所在的单个区块的的安山区块加载器&r而言，黄铜加载器更加强大：不仅可以&b配置范围（最多5x5）&r，而且可以&c在动态结构（比如火车）上运作&r。"
 			]
 			icon: "create_power_loader:brass_chunk_loader"
 			id: "05D1CDF00503DCB2"
@@ -269,14 +277,17 @@
 			dependencies: ["1AB48D8D4E2767F6"]
 			description: [
 				"你可能已经发现了，不同的食物会注明其拥有的营养值。这表明你在食用对应的食物时，你的营养都会发生变化，而你需要控制每种类型食物的摄取量，因为每种营养素&4过多&r或者&2过低&r都会产生Debuff（&4除了糖分，它只会带来过高时的负收益。少吃糖！&r&2另外，蔬菜是没有较高时的副作用的，很适合营养过剩的时候调剂用。&r）；而当你营养够均衡时，它们又会给你带来正面Buff！"
-				"另外，还有一个食物多样性的设定。你可以用奖励的这本食物清单（也可以简单地通过一本书来合成它）查看你最近吃过的食物，你的多样性指数，还有产生的收益——简而言之，吃不同种类的大餐更有利于多样性指数上升，而吃得越丰富，你的生命上限越高！"
-				"&o&m&c虽然最后也不会太高就是了&r&r&r"
+				"{@pagebreak}"
+				"一种简单的&c提升食物效果&r的方式是去海底寻找盐矿，撒盐的食物会有饱食度加成。"
+				"然而，高饱食度目前&d不能带来快速回血&r，请探索的时候谨慎思考！"
+				"除蔬菜外，其他的营养值最好不要超过80%，糖类最好不要超过40%。"
+				"营养值会&b随着时间而降低&r，也可以通过&c当场跳崖&r之类的主动控制……"
 			]
 			icon: "minecraft:bread"
 			id: "4814464FAB9C404C"
 			rewards: [{
-				id: "7819F0DDE44BE6F5"
-				item: "solapplepie:food_book"
+				id: "24A546DE254FA688"
+				item: "metalbundles:leather_bundle"
 				type: "item"
 			}]
 			subtitle: "吃好喝好"
@@ -286,38 +297,8 @@
 				type: "checkmark"
 			}]
 			title: "均衡饮食"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4814464FAB9C404C"]
-			description: [
-				"啥？你觉得背包里面放一堆食物太占地方了？"
-				"试试午餐袋吧！潜行右键就可以把食物放进去了，直接长按使用便能自动吃其中多样性提升最高的一个，非常省心！（请注意，这一点并不适用于均衡饮食的营养素）"
-				"另外，这个东西还可以进行升级。谁会拒绝带上更多食物的能力呢？"
-				"&o&m&b唯一避免物品栏里的食物被海鸥吃掉的方法&r&r&r"
-				""
-				"&n午餐袋升级的时候务必把里面的东西取出来，不然会消失）&r"
-			]
-			id: "0DC81C451504AFAF"
-			subtitle: "四次元口袋.jpg"
-			tasks: [{
-				id: "2BF4CC115FFB7CC1"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
-							Size: 5
-						}
-					}
-					id: "solapplepie:lunchbag"
-				}
-				type: "item"
-			}]
-			title: "午餐袋"
-			x: 5.0d
-			y: 1.0d
+			x: 3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["1AB48D8D4E2767F6"]
@@ -340,8 +321,8 @@
 				type: "checkmark"
 			}]
 			title: "你死啦？"
-			x: 3.5d
-			y: 1.5d
+			x: 4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6A93A46261B6C8F0"]
@@ -360,34 +341,27 @@
 			icon: "respawnobelisks:respawn_obelisk"
 			id: "3B3403855032F399"
 			rewards: [{
-				id: "3D76F980BF4168A7"
-				item: "minecraft:ender_pearl"
+				id: "069257470BAC8F0A"
+				item: {
+					Count: 1
+					id: "respawnobelisks:radiant_lantern"
+					tag: { }
+				}
 				type: "item"
 			}]
 			subtitle: "床R.I.P."
-			tasks: [
-				{
-					icon: "respawnobelisks:respawn_obelisk"
-					id: "7AFED54A3F6B3AC9"
-					observe_type: 0
-					timer: 0L
-					title: "观察重生石碑"
-					to_observe: "respawnobelisks:respawn_obelisk"
-					type: "observation"
-				}
-				{
-					id: "69DC40BE98762787"
-					item: {
-						Count: 1
-						id: "respawnobelisks:radiant_lantern"
-						tag: { }
-					}
-					type: "item"
-				}
-			]
+			tasks: [{
+				icon: "respawnobelisks:respawn_obelisk"
+				id: "7AFED54A3F6B3AC9"
+				observe_type: 0
+				timer: 0L
+				title: "观察重生石碑"
+				to_observe: "respawnobelisks:respawn_obelisk"
+				type: "observation"
+			}]
 			title: "叮，复活点"
-			x: 4.5d
-			y: 2.5d
+			x: 5.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6E08F7A257BCB99A"]
@@ -464,6 +438,8 @@
 			description: [
 				"现在，你可以收集到许多食材！制作一个厨锅，然后你就可以用全新的方式烹饪它们！"
 				"别忘了收集一些野生作物，它们可以种植，并为你的餐桌增色不少。"
+				""
+				"通过科技的发展，后期你可以通过机械动力和烈焰人厨师实现全自动做菜！"
 			]
 			icon: "farmersdelight:cooking_pot"
 			id: "2E7818CF013586F1"
@@ -480,10 +456,21 @@
 					id: "19930572059A3828"
 					type: "advancement"
 				}
+				{
+					id: "710EDB75F9FE8A2F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+						}
+						id: "create_central_kitchen:cooking_guide"
+					}
+					type: "item"
+				}
 			]
 			title: "厨神之路"
-			x: 5.5d
-			y: 0.0d
+			x: 4.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["34C16BAADA9CC42C"]
@@ -586,11 +573,6 @@
 				{
 					id: "1A0BFF413B55D5B0"
 					item: "immersiveengineering:manual"
-					type: "item"
-				}
-				{
-					id: "24F155C60081C214"
-					item: "solapplepie:food_book"
 					type: "item"
 				}
 				{
@@ -736,31 +718,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["4814464FAB9C404C"]
-			description: [
-				"在海洋下方的岩层，你可以找到盐矿。用它你就能制作食盐，然后给各种食物调味！"
-				"调味的食物更有营养，能够额外回复饱食度。"
-			]
-			icon: "salt:salt"
-			id: "14F65F48FC31A9C9"
-			subtitle: "这饭没味啊"
-			tasks: [
-				{
-					id: "47D4152C11D31CE7"
-					item: "salt:raw_rock_salt"
-					type: "item"
-				}
-				{
-					id: "434F8CFEB938F9FE"
-					item: "salt:salt"
-					type: "item"
-				}
-			]
-			title: "盐"
-			x: 5.0d
-			y: -1.0d
-		}
-		{
 			dependencies: ["724EBEFC6D269712"]
 			description: [
 				"如果有同种物品过多的情况，就试试抽屉吧！"
@@ -771,9 +728,15 @@
 				"当然，背包的升级需要一些小小的魔法手段……"
 				"以及，由于堆叠升级是抽屉的功能，我们禁止了背包使用的堆叠升级！"
 				"但背包拿来存杂项还是很强大的）"
+				"{@pagebreak}"
+				"如果你希望随身携带更多的东西，那么各个级别的收纳袋将是最合适的处理方案。"
+				"收纳袋的升级只需要不同科技或魔法层级的单个产物，并且升级的时候也会保留内容物！"
+				"但相应的，合成简单的袋子并不能放置，轻松地拿取指定物品或者与世界交互——那真的只是更大的收纳袋。"
+				""
+				"&o&m&7很适合当午餐袋&r&r&r"
 			]
 			id: "3A2CCC29ACE28498"
-			subtitle: "强力存储的两条路径"
+			subtitle: "强力存储的三条路径"
 			tasks: [
 				{
 					id: "0C0155F6F3E27FF3"
@@ -799,8 +762,13 @@
 					title: "背包"
 					type: "item"
 				}
+				{
+					id: "1EFE5B79F0BC58B7"
+					item: "metalbundles:leather_bundle"
+					type: "item"
+				}
 			]
-			title: "抽屉与背包"
+			title: "更多存储空间"
 			x: -3.5d
 			y: -1.5d
 		}
@@ -809,7 +777,8 @@
 			description: [
 				"在我们的修改下，如果抽屉不进行升级，那么它的储量将会相当有限。"
 				"用升级模板可以逐级做出多种升级，功能包括但不限于增大储量，销毁物品等等。"
-				"背包同样可以进行升级，但升级的方向不是存储而是其功能性。"
+				"背包同样可以通过插件进行升级，但升级的方向不是存储而是其功能性。"
+				"收纳袋显然不支持插件升级——因为没有槽位。"
 			]
 			icon: "storagedrawers:diamond_storage_upgrade"
 			id: "360CCFCD57F813D7"
@@ -825,7 +794,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "叮"
+			subtitle: "插件"
 			tasks: [
 				{
 					id: "09A462DE1CB10D92"
@@ -851,15 +820,8 @@
 			id: "39DA192CE817B365"
 			subtitle: "来骗，来偷袭"
 			tasks: [{
-				id: "6E39E76D541600D3"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "copycats:copycat_block"
-					}
-				}
-				title: "Any #copycats:copycat_block"
+				id: "3C066E19E26B21CA"
+				item: "copycats:copycat_block"
 				type: "item"
 			}]
 			title: "以假乱真"
@@ -949,10 +911,28 @@
 			description: [
 				"现在的村民可以做到更多的事情……"
 				"但也有一些事情永远都做不到了）"
-				"如果你需要种子，多翻翻村民的箱子，因为现在打草不会再掉落任何种子了……"
+				""
+				"如果你需要种子，多翻翻村民的箱子，因为现在&2打草不会再掉落任何种子&r了……"
+				"&o&6*其实你可以直接掠夺他们的田地）&r&r"
+				""
+				"有关于村民交易，请翻到下一页。"
+				"{@pagebreak}"
+				"由于村民&c被关进交易所&r的次数实在是太多了，他们觉醒了……"
+				"交易所已经是&c历史的尘埃&r了，因为现在的村民拥有&b动态交易列表&r：每个游戏日更新！"
+				"&o&m&a这也是混沌理论的一种体现（确信&r&r&r"
+				""
+				"同时，部分&2学习沉浸工程&r的村民们发现自己熟悉的配件配方被大幅修改，因此&e投入了魔法的怀抱&r。"
+				"&9机械师，电工与结构工程师&r在收购一些工业制品的同时，将会分别售卖&b不同系别的魔法材料&r！"
+				"他们&a在二级，三级和五级&r的时候分别有几率售卖&7铁箍卷册&r，&d特定系别符文&r与&5特定系别法球&r！"
+				"&o&6&m但是很贵（&r&r&r"
 			]
 			icon: "artifacts:villager_hat"
 			id: "1F2E99A74CDFBD68"
+			rewards: [{
+				id: "40901E89D87988D4"
+				item: "supplementaries:present_lime"
+				type: "item"
+			}]
 			subtitle: "村民崛起！"
 			tasks: [{
 				id: "7061709B5C76DDBD"
@@ -970,6 +950,7 @@
 				"但是钓鱼板条箱和宝箱还是有几率出现经验修补的，多去探险吧，朋友！"
 				"如果你希望保存你的经验，可以通过血魔法的经验手册/create的分液池/精妙背包的经验泵保存在外部，这样不至于死亡后有太大损失……"
 				"&o&a*友情提示：一旦你获得一本经验修补附魔书，那么就可以通过create的一些神秘方式进行复制，所以不要直接用掉了）&r&r"
+				"{image:kubejs:textures/meme_mending.png width:150 height:90 align:center}"
 			]
 			icon: "create:experience_nugget"
 			id: "6052F74DFBBEC018"
@@ -1020,31 +1001,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["2E7818CF013586F1"]
-			description: ["在你发展到一定程度后，你可以让你的烈焰人厨师帮你做饭！"]
-			id: "0ED39B54192E5EDF"
-			rewards: [{
-				id: "18BB578DEB281772"
-				item: "minecraft:blaze_powder"
-				type: "item"
-			}]
-			subtitle: "烈焰人，居家好帮手"
-			tasks: [{
-				id: "0955EAB24EC0EED9"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: { }
-					}
-					id: "create_central_kitchen:cooking_guide"
-				}
-				type: "item"
-			}]
-			title: "全自动做饭！"
-			x: 7.0d
-			y: 0.0d
-		}
-		{
 			dependencies: ["0ED1B830AB45D425"]
 			description: [
 				"&a【完成后解锁额外章节：生物多样性】&r"
@@ -1076,6 +1032,7 @@
 				"本整合包为了方便游玩，加入了相当一批有效的饰品，可以在饰品栏进行装备。"
 				"然而相应的，有一些工业/魔法的工具也会占据饰品栏，这就需要你自行取舍了。"
 			]
+			icon: "artifacts:mimic_spawn_egg"
 			id: "3C9AD619097D4B8D"
 			rewards: [{
 				id: "63B151E0D0A6E011"
@@ -1084,9 +1041,9 @@
 			}]
 			subtitle: "有用的小玩意"
 			tasks: [{
-				id: "4D52987105704EB5"
-				item: "artifacts:mimic_spawn_egg"
-				type: "item"
+				id: "664EE70AA886314D"
+				title: "有用就好"
+				type: "checkmark"
 			}]
 			title: "更多饰品"
 			x: 0.0d
@@ -1199,6 +1156,87 @@
 			title: "烟囱"
 			x: -2.5d
 			y: -5.0d
+		}
+		{
+			dependencies: ["3B3403855032F399"]
+			description: [
+				"对于&b方块世界的天命人&r而言，你&c拥有不止一条生命&r，然而这并不是你可以&4通过送菜和刮痧解决某些高强度生物&r的理由。"
+				"基于此，我们增加了“逝不过三”体系：如果你在挑战某个BOSS级生物时&6死亡了三次&r，那么它将&l&d当场满血！&r&r"
+				"希望各位打BOSS的时候动用大脑而不是拿着石剑进行冲锋……"
+				"我们对于终极BOSS有&3特殊的安排&r，它们的战斗按血量分阶段，但是如果你死亡三次，那么你需要重回一阶段开始打……"
+				""
+				"&m&o&7勇气可嘉）&r&r&r"
+			]
+			icon: "minecraft:totem_of_undying"
+			id: "41DC0EE4FEF3A084"
+			rewards: [{
+				id: "00969FA6C0EF23D2"
+				item: "biomesoplenty:dead_sapling"
+				type: "item"
+			}]
+			subtitle: "有的时候你不应该死那么多次……"
+			tasks: [{
+				id: "0EE63358676D7693"
+				title: "事不过三"
+				type: "checkmark"
+			}]
+			title: "逝不过三"
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A93A46261B6C8F0"]
+			description: [
+				"在这个世界，怪物的打击将&c更加真实&r，你无法凭借护甲来完全抵抗任意攻击的冲击力……"
+				"生物对你的攻击将会&c固定有20%转化为无法通过护甲抵抗的真实伤害！&r这也就意味着，你需要更谨慎的挑战各类生物，或者用&b更强大的保护法术&r）"
+				"当然，有些BOSS的攻击相对较高，所以真实伤害也&a有其上限（4点）&r以保证玩家不会被秒杀。"
+				"不幸的是，剩余的伤害仍然会按常规伤害方式结算到你的身上，所以&9护甲还是需要的&r。"
+				""
+				"&o这可以被&6伤害吸收&r&o抵御，也许应该看看&e神圣系魔法&r"
+			]
+			icon: "immersiveengineering:armor_piercing"
+			id: "22926B2C2701D9C3"
+			rewards: [{
+				id: "36DC39DFB79336A9"
+				item: "minecraft:paper"
+				type: "item"
+			}]
+			subtitle: "护甲都是纸"
+			tasks: [{
+				id: "6CEAFC87C0B9B91D"
+				title: "击穿护甲！"
+				type: "checkmark"
+			}]
+			title: "更真实的伤害"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6A93A46261B6C8F0"]
+			description: [
+				"本包并不是以战斗为主线的包，但是有一定的战斗需求。"
+				"&c没有“终极战斗装备”这么一说&r，也&b没有强度碾压其他同类别的盔甲或武器&r，你需要根据自己的需求选择和搭配。"
+				"&5终末武器&r并不被计算在常规武器之内——你打BOSS的时候也拿不到它们。"
+				"需要注意的是，目前的四个终极BOSS都在原有模组的基础上进行了&l&4极大加强&r&r，如果发现效果或数值和百科不同，以游戏内效果为准，并且需要自己寻找解法！"
+				""
+				"&o&7*因为在之前的数个版本中BOSS被普遍反映“过于简单”，所以各位将要面对更强的大宝贝……&r&r"
+			]
+			icon: "botania:rainbow_rod"
+			id: "493C646BD6B377DE"
+			rewards: [{
+				id: "4285335266F9E71B"
+				item: "botania:animated_torch"
+				type: "item"
+			}]
+			subtitle: "不存在的"
+			tasks: [{
+				id: "366937066A907E17"
+				title: "没有最强"
+				type: "checkmark"
+			}]
+			title: "最强装备……？"
+			x: 5.0d
+			y: 1.0d
 		}
 	]
 	subtitle: ["The Representation of This World"]

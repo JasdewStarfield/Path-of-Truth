@@ -1,6 +1,6 @@
 ServerEvents.loaded(e => {
     global.worldSeed = Utils.server.getLevel('minecraft:overworld').seed
-    Utils.server.runCommandSilent('reload')
+//    Utils.server.runCommandSilent('reload')
 })
 
 ServerEvents.recipes(event => {

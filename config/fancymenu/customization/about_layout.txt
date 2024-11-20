@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = about
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1728742661723
+  last_edited_time = 1730047718536
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:2db52c5e-f5b2-485f-a58a-23f04ef0a0e7-1728742593002] = [groups:][instances:]
+  [loading_requirement_container_meta:7624fbd8-5f08-4d41-84ad-84f38d4240a5-1730047711693] = [groups:][instances:]
 }
 
 customization {
@@ -21,11 +21,6 @@ customization {
   action = autoscale
   basewidth = 1920
   baseheight = 1001
-}
-
-menu_background {
-  panorama_name = panorama1
-  background_type = panorama
 }
 
 customization {
@@ -53,12 +48,21 @@ element {
   nine_slice_border_y = 5
   label = 返回主菜单
   navigatable = true
+  widget_active_state_requirement_container_identifier = 2691d9e1-d267-4cba-a9b2-3bde6f057e1a-1729520847654
+  [loading_requirement_container_meta:2691d9e1-d267-4cba-a9b2-3bde6f057e1a-1729520847654] = [groups:][instances:]
   element_type = custom_button
   instance_identifier = b5d18bb6-4a39-44ee-b399-43b3143b3d18-1714482412888
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
-  fade_in = false
+  fade_in_v2 = no_fading
   fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1002
+  sticky_anchor = false
   anchor_point = bottom-centered
   x = -91
   y = -45
@@ -73,7 +77,7 @@ element {
 
 element {
   interactable = true
-  source = # 鸣谢%n%## 主要作者%n%- **茉露星圃**，Jasdew Starfield，负责科技侧内容编写，以及整体框架。%n%- **深夜鸽子**，MidnightPigeon，负责魔法侧内容编写，以及文本设计。%n%## %n%## 贡献者%n%- **JackyBlackson**，我们敬爱的腐竹，为我们写了很多js脚本并提供了%n%   建筑和音乐支持（你现在正听到的音乐就是由他作曲的）。%n%- **KEYboradManDesu**，一位热心大佬，主动且无偿地帮助我们%n%   重置了许多贴图和模型。%n%- **YukkuriC**，从交流群来的大佬，提供了许多思路和灵感，并写了一部分%n%   终末配方的相关代码。%n%## %n%## 赞助者%n%- 来自爱发电的**落花**，感谢你的10元赞助！%n%%n%- 还有你，**{"placeholder":"playername"}**。真诚感谢你的游玩，%n%   我们期待你的反馈！%n%%n%（欢迎点击下方的Github链接来了解更多，以及讨论和汇报问题！）%n%整合包QQ讨论群：*631894460*，欢迎加群反馈或者聊天
+  source = # 鸣谢（以下排名不分先后）%n%## 主要作者%n%- **茉露星圃**，Jasdew Starfield，负责科技侧内容编写，以及整体框架。%n%- **深夜鸽子**，MidnightPigeon，负责魔法侧内容编写，以及文本设计。%n%## %n%## 贡献者%n%- **JackyBlackson**，我们敬爱的腐竹，为我们写了很多js脚本并提供了%n%   建筑和音乐支持（你现在正听到的音乐就是由他作曲的）。%n%- **KEYboradManDesu**，一位热心大佬，主动且无偿地帮助我们%n%   重置了许多贴图和模型。%n%- **YukkuriC**，从交流群来的大佬，提供了许多思路和灵感，并写了一部分%n%   终末配方的相关代码。%n%- **环航的伺服器群组**，一群热心于在酒馆里点炒饭的玩家们，为我们%n%   “贴心”地指出了许多漏洞（咬牙切齿），不管怎样感谢他们！%n%## %n%## 赞助者%n%- 来自爱发电的**落花**，感谢你的10元赞助！%n%- 来自爱发电的**爱发电用户_a75d9**，感谢你的200元赞助！%n%- 来自爱发电的**Yukkuric**（自己人客气啥），感谢你的11.4元赞助！%n%- 来自爱发电的**乐壹**，感谢你的20元赞助！%n%- 来自爱发电的**甩miku的葱**，感谢你的200元赞助！%n%- 来自爱发电的**独角戏**，感谢你的20元赞助！%n%- 来自爱发电的**wm**，感谢你的30元赞助！%n%%n%- 还有你，**{"placeholder":"playername"}**。真诚感谢你的游玩，%n%   我们期待你的反馈！%n%%n%（欢迎点击下方的Github链接来了解更多，以及讨论和汇报问题！）%n%整合包QQ讨论群：631894460（一群，近满），%n%*798699096*（二群，推荐），欢迎加群反馈或者聊天
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -101,8 +105,15 @@ element {
   instance_identifier = 2b159cf6-2879-440f-9f8f-55cc2ff4fffd-1714482665535
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
-  fade_in = true
+  fade_in_v2 = no_fading
   fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1002
+  sticky_anchor = false
   anchor_point = mid-centered
   x = -136
   y = -52
@@ -126,12 +137,21 @@ element {
   nine_slice_border_y = 5
   label = Github仓库
   navigatable = true
+  widget_active_state_requirement_container_identifier = 583d399c-99ba-424d-8b90-f51c739bc36a-1729520847654
+  [loading_requirement_container_meta:583d399c-99ba-424d-8b90-f51c739bc36a-1729520847654] = [groups:][instances:]
   element_type = custom_button
   instance_identifier = e55049df-e309-4c5c-bcce-c682a699557b-1714483399793
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
-  fade_in = false
+  fade_in_v2 = no_fading
   fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 0
+  auto_sizing_base_screen_height = 0
+  sticky_anchor = false
   anchor_point = bottom-centered
   x = -91
   y = -76
@@ -154,8 +174,15 @@ element {
   instance_identifier = b1328302-6a2a-44f6-9a08-e08b41dde60f-1716266860040
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
-  fade_in = false
+  fade_in_v2 = no_fading
   fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 0
+  auto_sizing_base_screen_height = 0
+  sticky_anchor = false
   anchor_point = top-centered
   x = -228
   y = 30
@@ -179,12 +206,21 @@ element {
   nine_slice_border_y = 5
   label = Bilibili宣传片
   navigatable = true
+  widget_active_state_requirement_container_identifier = 687a3aee-b146-43a0-ba85-bdb69ccb7754-1729520847654
+  [loading_requirement_container_meta:687a3aee-b146-43a0-ba85-bdb69ccb7754-1729520847654] = [groups:][instances:]
   element_type = custom_button
   instance_identifier = aac4440b-b086-43b6-84eb-2a482d9b58d7-1716564922864
   appearance_delay = no_delay
   appearance_delay_seconds = 1.0
-  fade_in = false
+  fade_in_v2 = no_fading
   fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 0
+  auto_sizing_base_screen_height = 0
+  sticky_anchor = false
   anchor_point = mid-centered
   x = 10
   y = 91
@@ -204,7 +240,6 @@ element {
   auto_cape = false
   slim = true
   skin_source = JasdewStarfield
-  cape_source = JasdewStarfield
   scale = 50
   parrot = false
   parrot_left_shoulder = false
@@ -234,8 +269,15 @@ element {
   instance_identifier = 3245b5bf-49e7-4913-bbb0-e10a8500df96-1716565199036
   appearance_delay = no_delay
   appearance_delay_seconds = 0.8
-  fade_in = true
+  fade_in_v2 = no_fading
   fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 1920
+  auto_sizing_base_screen_height = 1002
+  sticky_anchor = false
   anchor_point = mid-centered
   x = 174
   y = -9
@@ -262,12 +304,21 @@ element {
   nine_slice_border_y = 5
   hoverlabel = 茉露星圃
   navigatable = false
+  widget_active_state_requirement_container_identifier = 92f3296e-400d-467b-8999-0240a6138847-1729520847655
+  [loading_requirement_container_meta:92f3296e-400d-467b-8999-0240a6138847-1729520847655] = [groups:][instances:]
   element_type = custom_button
   instance_identifier = 7a4704b6-fb73-4f34-8bd5-4d23fe5dfaa2-1726548746813
   appearance_delay = every_time
   appearance_delay_seconds = 0.2
-  fade_in = true
+  fade_in_v2 = every_time
   fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 0
+  auto_sizing_base_screen_height = 0
+  sticky_anchor = false
   anchor_point = mid-centered
   advanced_width = 55
   advanced_height = 55
@@ -296,12 +347,21 @@ element {
   nine_slice_border_y = 5
   hoverlabel = 深夜鸽子
   navigatable = false
+  widget_active_state_requirement_container_identifier = a5ba7288-744e-4a52-a8bd-9586e174ca7a-1729520847655
+  [loading_requirement_container_meta:a5ba7288-744e-4a52-a8bd-9586e174ca7a-1729520847655] = [groups:][instances:]
   element_type = custom_button
   instance_identifier = 04b3e7f4-4051-4887-b14d-aece0b97efe9-1726548994382
   appearance_delay = every_time
   appearance_delay_seconds = 0.4
-  fade_in = true
+  fade_in_v2 = every_time
   fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 0
+  auto_sizing_base_screen_height = 0
+  sticky_anchor = false
   anchor_point = mid-centered
   advanced_width = 55
   advanced_height = 55
@@ -330,12 +390,21 @@ element {
   nine_slice_border_y = 5
   hoverlabel = JackyBlackson
   navigatable = false
+  widget_active_state_requirement_container_identifier = 23b4d043-bef1-4319-8eca-31090eea817f-1729520847655
+  [loading_requirement_container_meta:23b4d043-bef1-4319-8eca-31090eea817f-1729520847655] = [groups:][instances:]
   element_type = custom_button
   instance_identifier = f178e788-f4df-4a5e-853d-736f6494e157-1726549115518
   appearance_delay = every_time
   appearance_delay_seconds = 0.6
-  fade_in = true
+  fade_in_v2 = every_time
   fade_in_speed = 1.0
+  fade_out = no_fading
+  fade_out_speed = 1.0
+  base_opacity = 1.0
+  auto_sizing = false
+  auto_sizing_base_screen_width = 0
+  auto_sizing_base_screen_height = 0
+  sticky_anchor = false
   anchor_point = mid-centered
   advanced_width = 55
   advanced_height = 55

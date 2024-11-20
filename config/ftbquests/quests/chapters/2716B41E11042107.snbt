@@ -21,8 +21,8 @@
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 14.0d
-			y: 2.0d
+			x: 15.0d
+			y: 4.0d
 		}
 		{
 			height: 2.0d
@@ -38,8 +38,13 @@
 	quests: [
 		{
 			dependencies: ["5FB9514C6DE7AD58"]
-			description: ["通过这个工程块，你可以开始构建一些真正意义上的重型机器了）"]
-			hide: true
+			description: [
+				"通过这个工程块，你可以开始构建一些真正意义上的重型机器了）"
+				""
+				"&o&m&c当然，更沉重的地方大抵是它的造价&r&r&r"
+				"&o&b更悲凉的是后续你会需要很多……&r&r"
+			]
+			hide_until_deps_complete: true
 			id: "143E6A57D69BAE65"
 			rewards: [{
 				id: "7E32ADC9F2B7A0CD"
@@ -124,6 +129,9 @@
 			description: [
 				"具体可以参考思索说明"
 				"虽然是古老的磕头机，但也足够你来使用了）"
+				"只需要从动力输入口输入动力，就可以抽出原油了！"
+				""
+				"请注意：组装后，上方的整个横向的杆子都需要用强力胶粘成一个整体，这样才能正常运行！"
 			]
 			icon: "tfmg:pumpjack_crank"
 			id: "08B3DECCC7EBD7CE"
@@ -140,6 +148,7 @@
 					type: "item"
 				}
 				{
+					count: 5L
 					id: "76D35D4CC92E95EF"
 					item: "tfmg:pumpjack_hammer_part"
 					type: "item"
@@ -165,7 +174,13 @@
 					type: "item"
 				}
 				{
-					id: "11F7365EA7861EFA"
+					count: 3L
+					id: "6AD048F09828A1E5"
+					item: "tfmg:steel_truss"
+					type: "item"
+				}
+				{
+					id: "58127A5BBC890877"
 					item: {
 						Count: 1
 						id: "create:super_glue"
@@ -301,6 +316,8 @@
 			description: [
 				"那就热一下）"
 				"通过大型分馏，现代工业之美将会在你面前展开。"
+				""
+				"结构要严格按照思索搭建。请注意钢流体储罐的规格为2x13x2，别搭错了！"
 			]
 			icon: "tfmg:steel_distillation_controller"
 			id: "3FCEB9256A15A4B2"
@@ -345,7 +362,7 @@
 				"重油还可以进一步分解——然后获得你需要的一些特定资源）"
 				"提醒：重油到后期还有其它的用途，所以就算你现在用不上，也不推荐你全部扔掉"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "107639F1A8166B9C"
 			shape: "diamond"
 			subtitle: "分，还可以分"
@@ -362,7 +379,7 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "443ED09E810FE23D"
 			shape: "diamond"
 			subtitle: "轰！"
@@ -385,7 +402,7 @@
 				"虽然需要一点小小的魔法手段……"
 				"*注：这似乎不会直接显示在jei里，所以最好去查询磁铁的配方（"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "05EF035C814ADE9B"
 			shape: "diamond"
 			subtitle: "磁铁修整器"
@@ -406,7 +423,7 @@
 				"如果你没有分馏出石脑油，检查一下你的分馏塔是不是偷工减料了）"
 				"石油当中最宝贵的一部分也是最容易消失的一部分（摊手"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "3B7D8BECFF387995"
 			subtitle: "层数不够就会消失"
 			tasks: [{
@@ -422,9 +439,9 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "2718164469D544DF"
-			shape: "diamond"
+			shape: "circle"
 			subtitle: "也许是燃料"
 			tasks: [{
 				id: "577F1DBBD3F9A3FA"
@@ -440,12 +457,13 @@
 				"1AAD83556BD302DD"
 			]
 			description: [
-				"我们其实不提倡这种不人道的行为，但是不得不说凝固汽油在MC里只适合干这个（？"
+				"不止能拿来做炸弹……凝固汽油的主要作用是作为下界合金的前置。"
+				"是的，你终于要拥有第一块下界合金了（"
+				""
 				"注意：真的有凝固汽油弹，但是不便宜"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "46A5743F6DC8054D"
-			shape: "diamond"
 			subtitle: "燃烧弹前置"
 			tasks: [{
 				id: "19988C4F9E13FD19"
@@ -461,7 +479,7 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "tfmg:cast_iron_distillation_controller"
 			id: "576A28075CA7077D"
 			subtitle: "实际上这个分馏塔干的是裂化的活"
@@ -493,6 +511,8 @@
 			description: [
 				"液态沥青冷却也是唯一产生沥青块的方式）"
 				"不过这玩意目前只能拿来铺路……"
+				""
+				"硫磺粉倒是可以用于批量生产烈焰粉！"
 			]
 			id: "22CB2BBE72C04014"
 			rewards: [{
@@ -501,7 +521,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "铺路！"
+			subtitle: "重油裂化副产物"
 			tasks: [
 				{
 					id: "3881E65EF3C152EC"
@@ -514,8 +534,9 @@
 					type: "item"
 				}
 			]
+			title: "沥青与硫磺"
 			x: 6.0d
-			y: 6.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -525,6 +546,8 @@
 			description: [
 				"是的，干到这里你会发现自己还需要再来一次分馏——用铸铁分馏塔）"
 				"习惯就好，这就是石油工业）"
+				""
+				"&o&3*当年发现塑料的人还是很伟大的。&r&r"
 			]
 			icon: "minecraft:bucket"
 			id: "0B48C7A6F9F81A56"
@@ -582,6 +605,8 @@
 			description: [
 				"这将是对于你未来（可能存在的）电子厂生涯的第一步预演："
 				"看到纯粹的，还没有焊接任何元件的板子）"
+				""
+				"另：工程塑胶板使用机械动力的粗放方法压制很容易损坏。推荐使用金属冲压机！"
 			]
 			id: "32DA53E6EDA0AC90"
 			subtitle: "焊板子！"
@@ -601,7 +626,7 @@
 				""
 				"提示：恶魔合金可以做成块然后复制！能批量生产总是好的（"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "538F608DF5017A6A"
 			subtitle: "没有工资"
 			tasks: [{
@@ -619,18 +644,25 @@
 				"虽然我们不能在MC里为你提供计算机，但你已经接近这个世界的真相了。"
 			]
 			id: "07B58ED0910776DF"
-			size: 1.0d
+			shape: "gear"
+			size: 2.0d
 			subtitle: "高精尖"
 			tasks: [{
 				id: "5EBFA215B48BC68C"
 				item: "kubejs:electronic_engineering"
 				type: "item"
 			}]
-			x: 16.5d
+			x: 16.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
+			description: [
+				"对于枪械爱好者而言，目前终于出现了一些比左轮手枪更高级的东西……"
+				"化学喷射器&d需要特定的液体&r（这是显然的）并造成喷洒效果，而磁轨炮则可以&c发射不同的棒状物&r并造成不同的效果。"
+				""
+				"&o&m&7*一个洒水一个用棒子听起来很奇怪……&r&r&r"
+			]
 			id: "52AF7DAADA5AA0EA"
 			shape: "diamond"
 			subtitle: "哒哒哒哒哒"
@@ -673,6 +705,8 @@
 			description: [
 				"相较于机械动力的工具而言，沉浸工具的好处之一是可以拿在手上）"
 				"不过最好提前准备燃料）"
+				""
+				"&b&o*可能效率不行但建模一定好看&r&r"
 			]
 			id: "7FBBD3EAF8C168D1"
 			shape: "diamond"
@@ -735,8 +769,8 @@
 				type: "item"
 			}]
 			title: "【终点】暴风雪"
-			x: 14.0d
-			y: 4.0d
+			x: 16.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["05EF035C814ADE9B"]
@@ -785,6 +819,8 @@
 				"朋友，你要干什么？"
 				"带我一个（不是"
 				"这个模组为什么有这些东西啊（瘫"
+				""
+				"&o&c*禁止在现实世界尝试！&r&r"
 			]
 			id: "31A0E8AA7E6964CC"
 			rewards: [
@@ -896,7 +932,9 @@
 			dependencies: ["2718164469D544DF"]
 			description: [
 				"烈焰人最喜欢吃的。"
-				"使烈焰人燃烧室进入临时的超级燃烧状态！这很重要，因为部分配方要求必须在这种温度下才能进行……"
+				"使烈焰人燃烧室进入&b临时的超级燃烧状态&r！这很重要，因为部分配方要求必须在这种温度下才能进行……"
+				""
+				"&o&6*既然灌入熔岩就可以让燃烧室正常燃烧，那超级燃烧要汽油也是合理的）&r&r"
 			]
 			id: "2B8294A4CBF6D664"
 			shape: "circle"
@@ -916,10 +954,11 @@
 			]
 			description: [
 				"手搓怎么可能搓出这么宝贵的合金呢，对吧）"
-				"现在你需要真正的冶炼才能得到下界合金！"
-				"当然，你还可以后续用花费盖亚锭进行扩增，但不管怎么样你必须至少弄到应一个"
+				"现在你需要&a真正的冶炼&r才能得到下界合金！"
+				"当然，你还可以后续&b用盖亚锭进行炼金生产&r，但不管怎么样你必须至少拿到第一个……"
+				"等价交换的炼金体系&c不支持无中生有&r（"
 				""
-				"题外话：原版下界合金护甲的防御力被大大提升了。所以还是值得用它升级你的钻石甲的"
+				"题外话：原版下界合金护甲的防御力被&c大大提升&r了。所以还是值得用它升级你的钻石甲的"
 			]
 			id: "7C566E8D9F54FEF9"
 			rewards: [{
@@ -979,8 +1018,36 @@
 				type: "item"
 			}]
 			title: "精致存储"
-			x: 19.0d
+			x: 18.0d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"576A28075CA7077D"
+				"107639F1A8166B9C"
+			]
+			description: [
+				"相信走到这一步的你已经被昂贵的构件中的概率系统折磨过了……"
+				"但现在，通过分馏重油，你有了润滑油！在构件配方的&2每个循环第一步&r中添加一点润滑油，就能降低安装时的磨损，保证该构件的100%产出！"
+				""
+				"&n适用范围：精密构件，钢铁构件，遗忆构件，高级电子元件&r"
+			]
+			id: "36CD0821EDDA721F"
+			rewards: [{
+				id: "402CED88684E13B4"
+				item: "create:bar_of_chocolate"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "某巧克力打钱（不是）"
+			tasks: [{
+				id: "6CC17574DBAF58BD"
+				item: "tfmg:lubrication_oil_bucket"
+				type: "item"
+			}]
+			title: "纵享丝滑"
+			x: 8.0d
+			y: 6.0d
 		}
 	]
 	subtitle: ["Petrochemical Engineering"]

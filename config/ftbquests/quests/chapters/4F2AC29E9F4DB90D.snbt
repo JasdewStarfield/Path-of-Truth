@@ -24,6 +24,14 @@
 			x: 0.0d
 			y: -4.0d
 		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 0.0d
+			y: 19.0d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]
@@ -31,7 +39,7 @@
 		{
 			dependencies: ["6E0D85E43EDF1994"]
 			description: ["所以，工业的新篇章也对你开启了。"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "11EC3A84F0C84E65"
 			rewards: [{
 				id: "2C399AD7FD10484E"
@@ -216,7 +224,7 @@
 			dependencies: ["003B99516797BF14"]
 			description: [
 				"有条件的话可以多抓几只，烈焰人不仅可以帮你加热炉子，开火车也是一把好手。"
-				"烈焰人需要燃料——一般来说是煤炭木炭，但也可以通过流体输入的方式灌入岩浆，而且岩浆很耐烧。"
+				"烈焰人需要燃料——一般来说是煤炭木炭，但也可以通过流体输入（create的泵）的方式灌入岩浆，而且岩浆很耐烧。"
 				""
 				"&o&c*那么从哪里搞那么多岩浆？&r&r"
 			]
@@ -265,7 +273,7 @@
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
 			description: ["在我们的设定中，由于铜会生锈，只有康铜才能够抵挡流体的腐蚀，并被铸造为可以容纳流体的器械。"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "28617A52922404CE"
 			subtitle: "这里的铜其实是康铜"
 			tasks: [{
@@ -279,7 +287,7 @@
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
 			description: ["让你的液体动一动（大雾"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "27FD1F76136CBD0B"
 			subtitle: "你甚至可以用它们处理牛奶（笑"
 			tasks: [
@@ -313,6 +321,8 @@
 				"它几乎出现于所有流体机械的合成配方中，所以——多造一些吧（笑"
 			]
 			id: "1D0D60C89EA75663"
+			shape: "gear"
+			size: 2.0d
 			subtitle: "这很科学，不是吗？"
 			tasks: [{
 				id: "3FF03B9622F19ED2"
@@ -321,7 +331,7 @@
 			}]
 			title: "流体机械的基石"
 			x: 0.0d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
@@ -339,7 +349,7 @@
 			}]
 			title: "注入！"
 			x: 1.5d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -366,7 +376,7 @@
 			}]
 			title: "真正的合金"
 			x: 0.0d
-			y: 10.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
@@ -384,7 +394,7 @@
 			}]
 			title: "更多的“帮手”"
 			x: -1.5d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -394,8 +404,10 @@
 			description: [
 				"虽然这东西叫电子管没错，但是很显然它不能充电，你也没进入电子时代）"
 				"不过有一些组件还是需要它。"
+				""
+				"温馨提示：这个东西你会用到&4很多&r！而且纯靠手搓的话会非常烦人！建议你最晚也从这里就开始考虑自动化的问题……"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "73CD9D2DD215B5F5"
 			subtitle: "嗯，伪电子时代"
 			tasks: [{
@@ -405,7 +417,7 @@
 			}]
 			title: "工业化的结晶"
 			x: -3.5d
-			y: 13.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["76BE4625CCF2F867"]
@@ -413,7 +425,7 @@
 				"你应该发现了，在鼓风机前面放某些特定的东西可以实现批量加工）"
 				"但很显然，单格水和单格岩浆都不是很容易放置，而营火又容易烫到自己，所以——这就是解决方案。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "07C921FBCF56E703"
 			shape: "diamond"
 			subtitle: "其实是保护你自己）"
@@ -424,7 +436,7 @@
 			}]
 			title: "鼓风机输出"
 			x: 2.5d
-			y: 12.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["07C921FBCF56E703"]
@@ -460,7 +472,7 @@
 			]
 			title: "触媒装箱"
 			x: 1.0d
-			y: 12.5d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -473,7 +485,7 @@
 				""
 				"&n注意：从这一步开始，你将涉及到永昼之地或者恒晓之地的特殊矿物。如果你还没有涉及到这些维度，出发去探险吧！&r"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "51676EF62E7A17F3"
 			subtitle: "精密元件的基石"
 			tasks: [{
@@ -483,7 +495,7 @@
 			}]
 			title: "精密工业"
 			x: -5.0d
-			y: 13.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
@@ -492,7 +504,7 @@
 				"你&l&b不能&r&r把它们镶嵌在盔甲上增加保护，真是遗憾）"
 				"这里缅怀一下曾经的匠魂（"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "10CF3F30EC2A65E8"
 			subtitle: "这显然比铁硬）"
 			tasks: [{
@@ -502,7 +514,7 @@
 			}]
 			title: "来硬的"
 			x: 3.5d
-			y: 13.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
@@ -510,7 +522,7 @@
 				"由于我们追求真实，你现在不可以通过杂酚油桶简单粗暴的生成这些东西了：你需要注液，不过问题应该也不大。"
 				"*小声：反正杂酚油总会多到你用不完（"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "607A957382E65976"
 			subtitle: "沉浸工业的基础"
 			tasks: [{
@@ -520,7 +532,7 @@
 			}]
 			title: "防腐措施"
 			x: 5.0d
-			y: 13.5d
+			y: 14.0d
 		}
 		{
 			dependencies: [
@@ -533,7 +545,7 @@
 				"你成功的开启了精密时代，更多的工业和更有趣的历程在像你展开。"
 				"走下去吧，走到世界尽头，真相会在那里等着你。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "242C57AF7F6116E4"
 			rewards: [{
 				id: "6BEEB17986271FAD"
@@ -550,7 +562,7 @@
 			}]
 			title: "【终点】精密时代"
 			x: 0.0d
-			y: 17.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
@@ -612,7 +624,7 @@
 			]
 			title: "智能时代"
 			x: -2.0d
-			y: 13.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
@@ -648,15 +660,15 @@
 			]
 			title: "附魔工业"
 			x: -2.0d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["37C7364F0F3E8C89"]
 			description: [
-				"事实就是：这章有两个工程块（不过这一个目前不是必须项）"
-				"物流工程块允许你合成pipez的强力管道——它们可以输送各种资源，且不需要动力驱动。它们还可以进行升级，就像抽屉那样。"
+				"事实就是：这章有三个工程块（不过这一个目前不是必须项）"
+				"物流工程块允许你合成很多可以用于物流的小工具，尤其是pipez的强力管道——它们可以输送各种资源，且不需要动力驱动。它们还可以进行升级，就像抽屉那样。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "6F27F12FD5EBE559"
 			rewards: [
 				{
@@ -687,7 +699,7 @@
 			}]
 			title: "大物流时代！"
 			x: 0.0d
-			y: 15.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["37C7364F0F3E8C89"]
@@ -720,7 +732,7 @@
 			]
 			title: "铁道运输"
 			x: -1.0d
-			y: 12.5d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -728,7 +740,7 @@
 				"10CF3F30EC2A65E8"
 			]
 			description: ["提示：这一步任务属于本章的支线，不一定要在现在完成。"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "37C7364F0F3E8C89"
 			subtitle: "它能做什么呢？"
 			tasks: [{
@@ -738,13 +750,13 @@
 			}]
 			title: "与众不同的机壳"
 			x: 0.0d
-			y: 13.5d
+			y: 14.0d
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
 			description: [
 				"通过进入下界，你将会看到大量的岩浆，并思考自己能不能利用它们……"
-				"幸运的是，连续流体超过10000单位就视为无限这一规律仍然有效。"
+				"幸运的是，连续流体&b超过10000单位液体源（1单位为一格）就视为无限&r这一规律仍然有效。"
 				"也就是说，你可以通过软管滑轮从下界岩浆池中抽取&c无尽&r的岩浆！"
 				""
 				"&6&o*这下烈焰人吃饱了）&r&r"
@@ -777,7 +789,7 @@
 			]
 			title: "无尽岩浆"
 			x: 2.0d
-			y: 6.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["76BE4625CCF2F867"]
@@ -805,7 +817,7 @@
 			]
 			title: "有电了……吗？"
 			x: -2.5d
-			y: 12.5d
+			y: 13.0d
 		}
 	]
 	subtitle: ["Exotic Alloys"]

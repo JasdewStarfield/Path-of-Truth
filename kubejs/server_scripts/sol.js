@@ -1,3 +1,4 @@
+/*
 ServerEvents.recipes(event => {
   //食物清单
   event.remove({id:"solapplepie:food_book"})
@@ -22,3 +23,4 @@ ServerEvents.recipes(event => {
     '#forge:plates/electrum'
   )
 })
+*/

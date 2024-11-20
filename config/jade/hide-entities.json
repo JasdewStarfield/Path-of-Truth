@@ -4,7 +4,12 @@
     "minecraft:area_effect_cloud",
     "minecraft:firework_rocket",
     "minecraft:interaction",
-    "minecraft:text_display"
+    "minecraft:text_display",
+    "bosses_of_mass_destruction:gauntlet",
+    "bosses_of_mass_destruction:void_blossom",
+    "bosses_of_mass_destruction:lich",
+    "bosses_of_mass_destruction:obsidilith",
+    "alexsmobs:void_worm"
   ],
   "version": 1
 }

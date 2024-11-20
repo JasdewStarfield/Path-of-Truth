@@ -24,6 +24,7 @@
 				""
 				"&a&o注：本篇章的内容并不要求全部完成，完成也没有奖励（悲），只是作为一个流程图使用的。希望各位留意。&r&r"
 			]
+			icon: "immersiveengineering:manual"
 			id: "1A4352FB579FF77E"
 			rewards: [{
 				id: "430AC78B3E79E9F5"
@@ -80,9 +81,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["435DA157EC54D3EA"]
+			dependencies: [
+				"435DA157EC54D3EA"
+				"5012BDA254DF42C1"
+			]
 			id: "325D500216D2EFDC"
-			subtitle: "缠魂沙子"
+			min_required_dependencies: 1
+			subtitle: "缠魂沙子（或红沙）"
 			tasks: [{
 				id: "67097C16AEF3C2C5"
 				item: "minecraft:soul_sand"
@@ -92,16 +97,20 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["325D500216D2EFDC"]
+			dependencies: [
+				"325D500216D2EFDC"
+				"5012BDA254DF42C1"
+			]
 			icon: "minecraft:gold_ingot"
 			id: "6E3F0DA8745CD62F"
+			min_required_dependencies: 1
 			rewards: [{
 				id: "7D17272DB3FBC5B2"
 				type: "xp"
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "洗涤灵魂沙！"
+			subtitle: "洗涤灵魂沙（或者红沙）！"
 			tasks: [
 				{
 					id: "16B73DBEAAD7ABBB"
@@ -124,7 +133,7 @@
 				"74581D474C09D62C"
 			]
 			id: "2CA163F35B71E735"
-			subtitle: "圆石和沙子，加水压制"
+			subtitle: "圆石和沙子，加水搅拌"
 			tasks: [{
 				id: "5371503C55E19FCC"
 				item: "minecraft:dirt"
@@ -184,16 +193,20 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["2CA163F35B71E735"]
+			dependencies: [
+				"2CA163F35B71E735"
+				"1F4E96EC3B77F15A"
+			]
 			icon: "minecraft:copper_ingot"
 			id: "73684052050C9EC2"
+			min_required_dependencies: 1
 			rewards: [{
 				id: "4C14B9D6E5DB02D8"
 				type: "xp"
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "洗涤泥土！"
+			subtitle: "洗涤泥土！或者粉碎陶瓦！"
 			tasks: [
 				{
 					id: "23A5B05D0199BA1F"
@@ -208,7 +221,7 @@
 			]
 			title: "铜"
 			x: -2.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["73A4602078813496"]
@@ -350,7 +363,7 @@
 				}
 			]
 			title: "锌"
-			x: 0.0d
+			x: -2.0d
 			y: 4.0d
 		}
 		{
@@ -874,6 +887,87 @@
 			title: "遗忆金属"
 			x: 2.0d
 			y: -8.0d
+		}
+		{
+			dependencies: ["325D500216D2EFDC"]
+			icon: "minecraft:quartz"
+			id: "40717610A2317CCE"
+			rewards: [{
+				id: "5E43FF5184328C2F"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "洗涤灵魂沙！"
+			tasks: [
+				{
+					id: "5AE2230AD34421C4"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "3E3811D7B27C46A2"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "下界石英"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["74581D474C09D62C"]
+			description: [
+				"觉得传统的钻头/挤压刷石机太卡/太麻烦？"
+				"试试动力造石机！只要相邻的方块满足条件，通入动力，它就可以自动进行流体接触配方的合成！"
+			]
+			id: "7804D40DE4CE8B4D"
+			rewards: [
+				{
+					id: "1273FD85D4F37837"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "2C04C243E9827B05"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "但这里提供了合理的解决方案"
+			tasks: [{
+				id: "2599993E98962C59"
+				item: "create_mechanical_extruder:mechanical_extruder"
+				type: "item"
+			}]
+			title: "万事开头难"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["30CAE7CB4F12B7B7"]
+			id: "1F4E96EC3B77F15A"
+			subtitle: "把黏土搓成块，然后烧制"
+			tasks: [{
+				id: "373737468DA9CDEB"
+				item: "minecraft:terracotta"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1F4E96EC3B77F15A"]
+			id: "5012BDA254DF42C1"
+			subtitle: "磨碎陶瓦……"
+			tasks: [{
+				id: "29DD0B09BBAF96D5"
+				item: "minecraft:red_sand"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
 		}
 	]
 	subtitle: ["Standardized Production"]

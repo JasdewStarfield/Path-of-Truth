@@ -28,10 +28,13 @@
 	forceDetachedDrawersMaxCapacityCheck = true
 	#If enabled, carrying filled drawers in your inventory gives slowness debuff, unless a Portability Upgrade is used.
 	heavyDrawers = true
+	#If enabled, players can lock drawer interactions to just themselves.
+	enablePersonalKey = true
 
 [StorageUpgrades]
 	#Storage upgrades multiply storage capacity by the given amount.
 	#When multiple storage upgrades are used together, their multipliers are added before being applied.
+	#Storage upgrades start at the level 2 multiplier.  The resistance upgrade uses level 1.
 	level1Mult = 4
 	level2Mult = 16
 	level3Mult = 64
@@ -40,10 +43,51 @@
 	#Balance upgrades allow same-item slots to balance out their amounts when items are
 	#added or removed from a lot.  Works across networks when acting through a controller.
 	enableBalanceUpgrade = true
+	#Storage upgrades increase capacity of drawers.
+	enableStorageUpgrade = true
+	#Fill level upgrades add fill bars to the faces of drawers.
+	enableFillLevelUpgrade = true
+	#Adds redstone output to drawers based on fill levels.
+	enableRedstoneUpgrade = true
+	#Renders drawer labels brighter than the surrounding environment would allow.
+	enableIlluminationUpgrade = true
+	#Causes drawers to accept but void compatible items when they are filled to capacity.
+	enableVoidUpgrade = true
+	#Allows drawers with contents to be freely carried when heavy drawers is enabled.
+	enablePortabilityUpgrade = true
+	#Allows a single drawer to connect to a controller remotely.
+	enableRemoteUpgrade = true
+	#Allows a drawer and all drawers connected to it to connect to a controller remotely.
+	enableRemoteGroupUpgrade = true
 
 [Integration]
 	#When true, shows quantity as NxS + R (by stack size) rather than count
 	wailaStackRemainder = true
 	#When true, does not show current quantities unless quantify key was used
 	wailaRespectQuantifyKey = true
+	#Add CoFH Core specific features if the mod is loaded
+	enableCoFHIntegration = true
+
+[Conversion]
+	#
+	#Each type will be combined with each material to create a set of whitelist entries.
+	#This is mainly a convenience for common ore-based materials.
+	oreTypeWhitelist = ["forge:storage_blocks", "forge:ingots", "forge:nuggets"]
+	#
+	#Each type will be combined with each material to create a set of whitelist entries.
+	#This is mainly a convenience for common ore-based materials.
+	oreMaterialWhitelist = ["aluminum", "constantan", "steel", "uranium", "invar", "tin", "lead", "silver", "platinum", "nickel", "osmium", "bronze", "electrum"]
+	#
+	#Each whitelist entry should be a fully namespaced tag, e.g. c:ingots/copper
+	tagWhitelist = []
+	#
+	#Each blacklist entry should be a fully namespaced tag, e.g. c:ingots/copper.
+	#All items not on the whitelist are blacklisted implicitly.  This can be used to exclude
+	#specific entries created from the ore whitelist set.
+	tagBlacklist = []
+	#
+	#Each entry is a semicolon-separated list of fully-namespaced items. All items within the
+	#same entry are considered equivalent and convertible/interchangeable.
+	#Example: ["thermal:nickel_ore;immersiveengineering:ore_nickel"]
+	itemEquivalenceGroups = []
 

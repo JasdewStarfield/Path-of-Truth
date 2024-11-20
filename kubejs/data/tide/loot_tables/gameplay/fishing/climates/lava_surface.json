@@ -2,25 +2,43 @@
   "type": "minecraft:fishing",
   "pools": [
     {
-      "rolls": 1,
-      "bonus_rolls": 0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 80,
-          "name": "tide:inferno_guppy"
+          "name": "tide:obsidian_fragment",
+          "weight": 60
         },
         {
           "type": "minecraft:item",
-          "weight": 30,
-          "name": "tide:fish_bone"
+          "name": "tide:fish_bone",
+          "weight": 40
         },
         {
           "type": "minecraft:item",
-          "weight": 10,
-          "name": "tide:obsidian_fragment"
+          "name": "tide:ember_koi",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tide:inferno_guppy",
+          "quality": 1,
+          "weight": 30
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tide:obsidian_pike",
+          "quality": 1,
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tide:volcano_tuna",
+          "quality": 2,
+          "weight": 8
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ]
 }

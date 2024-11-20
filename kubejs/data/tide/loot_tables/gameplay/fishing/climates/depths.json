@@ -2,70 +2,65 @@
   "type": "minecraft:fishing",
   "pools": [
     {
-      "rolls": 1,
-      "bonus_rolls": 0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 100,
-          "quality": 0,
-          "name": "tide:deep_grouper"
+          "name": "tide:deep_grouper",
+          "weight": 90
         },
         {
           "type": "minecraft:item",
-          "weight": 100,
-          "quality": 0,
-          "name": "tide:shadow_snapper"
+          "name": "tide:shadow_snapper",
+          "weight": 90
         },
         {
           "type": "minecraft:item",
-          "weight": 70,
-          "quality": 0,
-          "name": "tide:luminescent_jellyfish"
+          "name": "tide:luminescent_jellyfish",
+          "weight": 70
         },
         {
           "type": "minecraft:item",
-          "weight": 70,
-          "quality": 0,
-          "name": "tide:abyss_angler"
+          "name": "tide:abyss_angler",
+          "weight": 70
         },
         {
           "type": "minecraft:item",
-          "weight": 50,
+          "name": "tide:lapis_lanternfish",
           "quality": 1,
-          "name": "tide:lapis_lanternfish"
+          "weight": 50
         },
         {
           "type": "minecraft:item",
-          "weight": 40,
+          "name": "tide:crystalline_carp",
           "quality": 1,
-          "name": "tide:crystalline_carp"
+          "weight": 40
         },
         {
           "type": "minecraft:item",
-          "weight": 30,
+          "name": "tide:bedrock_tetra",
           "quality": 1,
-          "name": "tide:bedrock_tetra"
+          "weight": 30
         },
         {
           "type": "minecraft:item",
-          "weight": 20,
-          "quality": 0,
-          "name": "minecraft:cobbled_deepslate"
+          "name": "minecraft:cobbled_deepslate",
+          "weight": 20
         },
         {
           "type": "minecraft:item",
-          "weight": 15,
+          "name": "minecraft:gold_ingot",
+          "quality": 1,
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
           "quality": 2,
-          "name": "minecraft:raw_iron"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 5,
-          "quality": 1,
-          "name": "minecraft:diamond"
+          "weight": 10
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ]
 }

@@ -39,7 +39,7 @@
 		{
 			dependencies: ["504E6502A789DABF"]
 			description: ["所以你现在不得不依赖巨大的动力发电装置）"]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "irons_spellbooks:lightning_bottle"
 			id: "01534DC5812DBA15"
 			rewards: [{
@@ -224,7 +224,8 @@
 		}
 		{
 			dependencies: ["1E0E5E47E1264279"]
-			hide: true
+			description: ["琥珀金是一种在电力系统上应用颇多的金属"]
+			hide_until_deps_complete: true
 			icon: "immersiveengineering:ingot_electrum"
 			id: "3D6CCF4A93478320"
 			rewards: [{
@@ -355,7 +356,7 @@
 		{
 			dependencies: ["3D6CCF4A93478320"]
 			description: ["金-银合金是良好的导体材料，所以你现在可以制作更高级的电力系统了）"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "1997BD2CF61ACBA8"
 			shape: "diamond"
 			subtitle: "琥珀金的光芒"
@@ -392,7 +393,7 @@
 				"3E60B78B0EE34B75"
 			]
 			description: ["你已经开始接近现代工业水准了，柴油发电领先时代！"]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "immersiveengineering:diesel_generator"
 			id: "76EF99C068AA2361"
 			subtitle: "来劲了，朋友"
@@ -521,8 +522,10 @@
 			description: [
 				"最强电动炉子，几乎全额的分解，最强的动力，以及——通往铝锭的通行证。"
 				"提醒一下，这个炉子也是个电老虎，工作时还请留意你的电力储备……"
+				""
+				"&o还能让你的安山合金增产（&r"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "immersiveengineering:arc_furnace"
 			id: "583407C7537AE9C9"
 			subtitle: "全游戏最强炉子"
@@ -607,7 +610,7 @@
 				""
 				"你问我铝土矿在哪找？兄弟，铝可是储量最大的金属之一，如果到了这一阶段你还完全没见过满地的铝土矿，那我得怀疑一下你是不是认真在玩了……"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "tfmg:aluminum_ingot"
 			id: "2BE7BA0BE9F2DBC9"
 			rewards: [{
@@ -648,7 +651,7 @@
 				"其实就是压制后的碳粉（？"
 				"唯一的作用就是烧制石墨锭）"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "48E0B5D1F9972D20"
 			subtitle: "名字好长"
 			tasks: [{
@@ -694,7 +697,7 @@
 				"要使一台电弧炉或者更高级的机器持续运作的话，建议接入多条高压线"
 				"（小提示：高压线没法绝缘——因为绝缘层会被高压电流直接击穿的，所以注意安全）"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "56F4C82F40DFA8F5"
 			shape: "diamond"
 			subtitle: "铝的第一作用"
@@ -730,6 +733,7 @@
 				"另一种意义上的冲压）"
 				"好消息是，至少和create的辊压相比，它可以让你选择压制的类型）"
 				"也就是说，不是只能压制板子了）"
+				"（钢板也不用压三次了）"
 			]
 			icon: "immersiveengineering:metal_press"
 			id: "143039C6AC2D8186"
@@ -833,7 +837,7 @@
 				"由于这张图不能合成，所以你需要去找工程师村民进行一些不太和谐的行为……"
 				"比如在他们面前翻箱倒柜（"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "087C118AB8CC51F8"
 			optional: true
 			shape: "diamond"
@@ -863,7 +867,7 @@
 				"由于柴油性能还是有限，接下来你大概是需要迈入石油和重工业时代）"
 				"而重工业——需要你手里的元件。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "03312D6881CC617D"
 			subtitle: "高级工业必需品"
 			tasks: [{
@@ -882,7 +886,7 @@
 				"为什么一定要这样呢，因为方块手是拧不了螺丝的）"
 				"&m&o&c“你甚至不能进电子厂打工”&r&r&r"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "6D9B785CB93D94D6"
 			subtitle: "工具还是要的"
 			tasks: [{
@@ -909,7 +913,7 @@
 				"&a【完成后解锁主线章节：5I 黑金与化工】&r"
 				"准备好迎接真正的重工业时代了吗）"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "5FB9514C6DE7AD58"
 			rewards: [{
 				id: "1FCB3F21F61EEBA2"
@@ -941,7 +945,10 @@
 		}
 		{
 			dependencies: ["3E60B78B0EE34B75"]
-			description: ["重型机械的基本结构之一"]
+			description: [
+				"由双层特种金属板制成的外壳赋予了这种机壳几乎难以想象的韧性，可以承载大量压力。"
+				"重型机械的基本结构之一"
+			]
 			id: "724A0B71BA342AEE"
 			subtitle: "很重，很重要"
 			tasks: [{
@@ -961,7 +968,7 @@
 				"鉴于这个东西只能在深暗的遗忆守卫身上掉落，我们把它放得很靠后）"
 				"但这也意味着，如果你不去冒险，那么你是没有办法获得这种强大的材料来推进工业的）"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "undergarden:forgotten_nugget"
 			id: "1A19AB31DBCDBCF7"
 			subtitle: "干掉另一种意义上的守卫者"
@@ -984,7 +991,7 @@
 		{
 			dependencies: ["01534DC5812DBA15"]
 			description: [
-				"（虽然之前已经提过了，不过鉴于过了太久所以以防你忘了再说一遍）"
+				"（虽然之前已经提过了，不过鉴于过了太久（而且这章要用到很多的多方块结构）所以以防你忘了再说一遍）"
 				"沉浸工程的多方块结构的搭建方法都可以在这里找到。"
 				""
 				"另外，蓝图结构中也内置了各种多方块结构的nbt文件，可以使用蓝图桌自行导出，投影后手动摆放或者使用蓝图加农炮摆放。"
@@ -1077,10 +1084,10 @@
 				"高压线杀人事件的避免方式：穿一套防电服"
 				"（其实植物魔法的斗篷可以用魔力获得有cd的无敌，但那很浪费魔力"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "217A9CECA6BEB91C"
 			shape: "diamond"
-			subtitle: "安全第一"
+			subtitle: "成为法拉第"
 			tasks: [
 				{
 					id: "52D848C4EC576D25"
@@ -1147,6 +1154,7 @@
 					type: "item"
 				}
 			]
+			title: "理解法拉第"
 			x: 1.5d
 			y: -2.0d
 		}
@@ -1268,7 +1276,7 @@
 		}
 		{
 			dependencies: ["2BE7BA0BE9F2DBC9"]
-			hide: true
+			hide_until_deps_complete: true
 			id: "377948574A940F51"
 			shape: "diamond"
 			subtitle: "I lost a bomb. Do you have it?"
@@ -1323,7 +1331,7 @@
 				"霜钢生成在深暗之园维度的寒霜之地群系，需要用雪帽菇熔炉来“冶炼”（雪帽菇熔炉的材料来自永昼之地的雪帽菇群系）。"
 				"炙铁生成在恒晓之地维度，需要用沉浸工程的炼铁高炉来冶炼。"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "3E60B78B0EE34B75"
 			subtitle: "嗯，复合板材"
 			tasks: [{
@@ -1336,8 +1344,12 @@
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
-			description: ["相比于另一种（你后面会用到的）高级的电路板，木头板子就容易多了，你只需要（在工程师装配台上）手动把石英和芯片往木头上插）"]
-			hide: true
+			description: [
+				"相比于另一种（你后面会用到的）高级的电路板，木头板子就容易多了，你只需要（在工程师装配台上）手动把石英和芯片往木头上插）"
+				""
+				"在这一步后面卡住了？也许你需要先想办法获得一些&7“电气时代的金属”&r来制作螺丝刀……"
+			]
+			hide_until_deps_complete: true
 			id: "671C17CCA1D5FA78"
 			subtitle: "简单的小东西"
 			tasks: [{
@@ -1370,7 +1382,7 @@
 				"在相对的两个面放置温度不同的方块就可以根据温差发电"
 				"最方便的一集"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			id: "786D410103015183"
 			rewards: [
 				{

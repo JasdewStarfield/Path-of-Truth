@@ -329,6 +329,9 @@ createdynlight = "server"
 gpu_tape = "client"
 sodiumdynamiclights = "client"
 sounds = "client"
+enhanced_boss_bars = "client"
+panorama_screens = "client"
+badoptimizations = "client"
 
 [Debug]
 debugForceSide = "default"

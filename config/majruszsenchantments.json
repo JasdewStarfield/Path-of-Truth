@@ -22,7 +22,7 @@
       "experience_multiplier_per_level": 0.125
     },
     "fishing_fanatic": {
-      "is_enabled": true,
+      "is_enabled": false,
       "extra_loot_chance": 0.33333,
       "level_up_chance": {
         "__default": 0.06,

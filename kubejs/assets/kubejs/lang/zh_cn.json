@@ -5,10 +5,11 @@
   "item.kubejs.incomplete_logistical_engineering": "未完成的物流工程块",
   "item.kubejs.incomplete_light_engineering": "未完成的轻型工程块",
   "item.kubejs.incomplete_heavy_engineering": "未完成的重型工程块",
-  "item.kubejs.incomplete_rs_engineering": "未完成的红石工程块",
+  "item.kubejs.incomplete_rs_engineering": "未完成的传感工程块",
   "item.kubejs.incomplete_electronic_engineering": "未完成的电子工程块",
   "item.kubejs.incomplete_forgotten_mechanism": "未完成的遗忆构件",
   "item.kubejs.incomplete_component_electronic_adv": "未完成的高级电子原件",
+  "item.kubejs.incomplete_radiator": "未完成的散热器模块",
   "item.kubejs.incomplete_brass_ingot": "未完成的黄铜锭",
   "item.kubejs.incomplete_buran": "未完成的暴风雪",
 
@@ -50,8 +51,12 @@
   "item.kubejs.filled_casting_mold_large": "已填充的铸造模具",
   "item.kubejs.filled_casting_mold_large.desc": "内含一个钢块",
   "item.kubejs.broken_snowcap_oven.desc": "这个熔炉损坏了！你需要先用粗霜钢修复才能使用它。",
+  "item.kubejs.asphalt.desc": "将液态沥青泼出来，使其凝固，就可以得到固态的沥青块。",
+  "item.kubejs.amethyst_shard.desc": "靠近幽匿块时，会发出阵阵回响……",
+  "item.kubejs.echo_shard.desc": "似乎是被幽匿物质渗透覆盖的一种矿物碎片……",
   "item.kubejs.buran": "暴风雪",
   "item.kubejs.midnight": "深夜",
+  "item.kubejs.sword_o_justice": "《 正 义 之 剑 》",
 
   "item.kubejs.music_disc_pluto_nocturnus.desc": "Jacky Blackson - Pluto Nocturnus",
   "item.kubejs.music_disc_pluto_nocturnus": "音乐唱片",
@@ -69,6 +74,10 @@
   "item.kubejs.disc_fragment_yggdrasil": "神秘的唱片残片",
   "item.kubejs.disc_fragment_yggdrasil.desc1": "罕见地从蔚蓝浩空中的地牢箱子里发现",
   "item.kubejs.disc_fragment_yggdrasil.desc2": "你只能看到一行模糊的字：Yggdrasil……",
+
+  "item.kubejs.sword_o_justice.desc1": "勇士啊！拿起这把剑吧！",
+  "item.kubejs.sword_o_justice.desc2": "拿上它，你就是最强的！",
+  "item.kubejs.sword_o_justice.desc3": "铸剑人姓名的铭文已经磨损了，你只能看清一个不明所以的表情符号……",
 
   "block.kubejs.andesite_engineering": "动力工程块",
   "block.kubejs.fluid_engineering": "流体工程块",
@@ -120,6 +129,33 @@
   "item.immersiveengineering.seed.tooltip":"工业大麻种子",
   "item.immersiveengineering.seed.tooltip.summary":"可以种植在耕地上以收获工业大麻纤维。",
   "item.immersiveengineering.hemp_fiber.tooltip":"工业大麻纤维",
-  "item.immersiveengineering.hemp_fiber.tooltip.summary":"可以通过在耕地上种植工业大麻种子收获。"
+  "item.immersiveengineering.hemp_fiber.tooltip.summary":"可以通过在耕地上种植工业大麻种子收获。",
+
+  "block.botania.thermalily.tooltip":"炽玫瑰",
+  "block.botania.thermalily.tooltip.summary":"由于内部的热力过于强大，在被破坏后仅能残余火焰符文……",
+  "block.botania.floating_thermalily.tooltip":"浮空炽玫瑰",
+  "block.botania.floating_thermalily.tooltip.summary":"灼热的内核配合极不稳定的浮空功能，使其被破坏后仅能残余最初的草地之种……",
+
+  "block.mechanicalbotania.spinerette.tooltip":"织法者",
+  "block.mechanicalbotania.spinerette.tooltip.summary":"在魔力池旁编织魔法并将其转化为可以用于工业的动力。下方的泥土种类影响其关联的马达转速。",
+  "block.mechanicalbotania.spinerette.tooltip.condition1":"用森林法杖shift+右键时",
+  "block.mechanicalbotania.spinerette.tooltip.behaviour1":"选定这朵花，用另一次shift+右键即可关联至魔动马达。",
+  "block.mechanicalbotania.spinerette.tooltip.condition2":"在下方布设泥土/缠根泥土/草方块/灰化土/蕴魔土时",
+  "block.mechanicalbotania.spinerette.tooltip.behaviour2":"对接马达启动转速为 8/16/32/64/128 rpm（应力不变）。",
+  "block.mechanicalbotania.spinerette_floating.tooltip":"浮空织法者",
+  "block.mechanicalbotania.spinerette_floating.tooltip.summary":"在魔力池旁编织魔法并将其转化为可以用于工业的动力。下方的泥土种类影响其关联的马达转速。",
+  "block.mechanicalbotania.spinerette_floating.tooltip.condition1":"用森林法杖shift+右键时",
+  "block.mechanicalbotania.spinerette_floating.tooltip.behaviour1":"选定这朵花，用另一次shift+右键即可关联至魔动马达。",
+  "block.mechanicalbotania.spinerette_floating.tooltip.condition2":"在下方布设泥土/缠根泥土/草方块/灰化土/蕴魔土时",
+  "block.mechanicalbotania.spinerette_floating.tooltip.behaviour2":"对接马达启动转速为 8/16/32/64/128 rpm（应力不变）。",
+  "block.mechanicalbotania.mana_motor.tooltip":"魔动马达",
+  "block.mechanicalbotania.mana_motor.tooltip.summary":"消耗极低的魔力量就可以驱动的应力源……这一点也不魔法。",
+  "block.mechanicalbotania.mana_motor.tooltip.condition1":"选定织法者后用森林法杖shift+右键时",
+  "block.mechanicalbotania.mana_motor.tooltip.behaviour1":"若织法者已关联魔力池，则会以极低的速率消耗魔力，以特定转速产生应力。",
+
+  "block.undergarden.depthrock_bed.tooltip":"渊邃石床",
+  "block.undergarden.depthrock_bed.tooltip.summary":"世界最后的真实，心灵最终的归宿，古老力量的结晶。",
+  "block.undergarden.depthrock_bed.tooltip.condition1":"在右键时",
+  "block.undergarden.depthrock_bed.tooltip.behaviour1":"进行一次_完全正常的_重生点设置并尝试睡眠。"
 
 }

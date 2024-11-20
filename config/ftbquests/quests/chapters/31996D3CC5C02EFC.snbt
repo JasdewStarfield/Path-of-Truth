@@ -44,7 +44,7 @@
 				"生命的光芒闪耀于鲜血和火花当中。"
 				"&o&5*注：你可以通过相同的手段活化你的潜影盒！&r&r"
 			]
-			hide: true
+			hide_until_deps_complete: true
 			icon: "artifacts:mimic_spawn_egg"
 			id: "12134A3EF6C80C54"
 			shape: "rsquare"
@@ -136,10 +136,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"7B6A44193BB4D5FD"
-				"059A741ABF2A9A34"
-			]
+			dependencies: ["12134A3EF6C80C54"]
 			description: [
 				"植物学的生命聚合器可以帮助你对于刷怪笼进行搬迁）"
 				"刷怪笼加生物蛋会发生什么我想……我应该不用多说了）"
@@ -183,6 +180,11 @@
 				"所以发射器要对准了哦（笑"
 			]
 			id: "3BE92D4971A86473"
+			rewards: [{
+				id: "05C22F05E0FA2495"
+				item: "undergarden:boomgourd"
+				type: "item"
+			}]
 			subtitle: "太阳井（确信"
 			tasks: [{
 				id: "6B02DAE7F314777E"
@@ -196,25 +198,32 @@
 		{
 			dependencies: ["3044537D03B81BFF"]
 			description: [
-				"现在，即使你人不在，刷怪笼也可以通过魔力继续运行！"
-				"这也意味着，你开始进入无尽生物资源的时代。"
+				"现在，你可以通过一次&l&9史无前例&r&r的泰拉合成获得无尽的魔力石板。然而，无尽魔力池由于其工业用途，目前还离你相对遥远。"
+				"……不过这至少够你玩你的魔力射线枪和泰拉之刃了（确信"
+				"同时，这也意味着你的植魔盔甲将会恒定自我修补，而你的精酿项链也总是会起效。"
+				""
+				"&m&o&a你的魔力活了！&r&r&r"
 			]
 			id: "57CDFE9B7DBD86EA"
-			subtitle: "魔力人"
+			subtitle: "魔力自有永有"
 			tasks: [{
-				id: "662188F3AD8DBC97"
-				item: "botania:spawner_claw"
+				id: "44B645B61148B9F8"
+				item: {
+					Count: 1
+					id: "botania:mana_tablet"
+					tag: {
+						creative: 1b
+						mana: 500000
+					}
+				}
 				type: "item"
 			}]
-			title: "全自动生物收割"
+			title: "无尽石板"
 			x: -4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"0C99BD24E939A68D"
-				"3BE92D4971A86473"
-			]
+			dependencies: ["12134A3EF6C80C54"]
 			description: [
 				"在正常的生存中，这是你绝对无法获得的东西。"
 				"细心的人可能会发现，我大发慈悲地在第二章送给了你们一块，作为墨水升级的紫水晶产出源。"
@@ -237,7 +246,7 @@
 			description: [
 				"&b【完成后解锁主线章节：6 统合机械，驾驭魔法】&r"
 				"你大概需要做很多个来帮你跨入真理的大门……所以材料都是可以量产的，虽然也没那么容易就是了。"
-				"&c&l这可能是你见过的最奢侈的泰拉合成...&r&r"
+				"&c&l这大抵是本整合包最奢侈的泰拉合成...&r&r"
 				"炼金的本质是改变物品的性质。理论上——在你突破那层界限前，凭空造物是不可行的。"
 				"当然，你很快就可以了——至少后面的复制不会再这样繁琐了。"
 			]
@@ -274,6 +283,11 @@
 				}
 			}
 			id: "7E592EF6A0A80611"
+			rewards: [{
+				id: "03C60BE603D4C2AC"
+				item: "supplementaries:statue"
+				type: "item"
+			}]
 			subtitle: "石墩出动！"
 			tasks: [
 				{

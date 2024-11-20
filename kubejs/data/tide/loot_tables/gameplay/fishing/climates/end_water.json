@@ -2,47 +2,47 @@
   "type": "minecraft:fishing",
   "pools": [
     {
-      "rolls": 1,
-      "bonus_rolls": 0,
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 95,
-          "name": "tide:endstone_perch"
+          "name": "tide:endstone_perch",
+          "weight": 90
         },
         {
           "type": "minecraft:item",
-          "weight": 95,
-          "name": "tide:enderfin"
+          "name": "tide:enderfin",
+          "weight": 95
         },
         {
           "type": "minecraft:item",
-          "weight": 80,
-          "name": "tide:endergazer"
+          "name": "tide:endergazer",
+          "weight": 80
         },
         {
           "type": "minecraft:item",
-          "weight": 80,
-          "name": "tide:purpur_pike"
+          "name": "tide:purpur_pike",
+          "weight": 80
         },
         {
           "type": "minecraft:item",
-          "weight": 70,
-          "name": "tide:chorus_cod"
+          "name": "tide:chorus_cod",
+          "weight": 70
         },
         {
           "type": "minecraft:item",
-          "weight": 20,
+          "name": "tide:elytrout",
           "quality": 2,
-          "name": "tide:elytrout"
+          "weight": 20
         },
         {
           "type": "minecraft:item",
-          "weight": 25,
+          "name": "tide:voidseeker",
           "quality": 1,
-          "name": "tide:voidseeker"
+          "weight": 25
         }
-      ]
+      ],
+      "rolls": 1.0
     }
   ]
 }
