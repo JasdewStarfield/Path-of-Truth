@@ -64,7 +64,7 @@ furnaceSparks = true
 fireSparks = true
 campfireSparks = true
 torchSparks = true
-lanternSparks = true
+lanternSparksDensity = 5
 lavaCauldronSparks = true
 lavaSparks = "ON"
 

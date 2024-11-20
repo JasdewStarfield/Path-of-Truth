@@ -7,10 +7,6 @@ vexMagicDensity = 0.2
 sheepShearFluff = true
 improvedDragonFireballTrail = true
 commandBlockMinecartParticles = "ON"
-stomachGrowlingThreshold = 6
-stomachGrowlingVolume = 1.0
-heartBeatingThreshold = 6
-heartbeatVolume = 1.0
 endCrystalParticles = true
 minecartLandingSparks = true
 slimeTrails = true
@@ -20,12 +16,6 @@ replaceSpellCasterParticles = true
 ironGolemCrackParticles = true
 spectralArrowParticles = true
 wardenDeathSoulParticles = true
-drowningBubbles = "DEFAULT"
-drowningBubblesDensity = 10
-frostyBreath = "DEFAULT"
-frostyBreathAlpha = 0.5
-frostyBreathTime = 60
-frostyBreathSeasons = "DEFAULT"
 
 [attacked]
 chickenFeathers = true
@@ -46,6 +36,22 @@ otherMobsHaveSleepingZs = true
 displaySleepingZsOnlyWhenSnoring = false
 adjustNameTagWhenSleeping = true
 
+[humanoids]
+drowningBubbles = "DEFAULT"
+drowningBubblesDensity = 10
+
+[humanoids.frostyBreath]
+displayType = "DEFAULT"
+alpha = 0.5
+waitTime = 60
+seasons = "DEFAULT"
+
+[humanoids.player]
+stomachGrowlingThreshold = 6
+stomachGrowlingVolume = 1.0
+heartBeatingThreshold = 6
+heartbeatVolume = 1.0
+
 [dustClouds]
 scale = 0.5
 alpha = 0.8
@@ -65,6 +71,7 @@ sounds = true
 [itemRarity]
 particlesDisplayType = "NOT_COMMON"
 particleColor = "NAME_COLOR"
+mixedColorName = true
 particleMaxHeight = 7
 
 [primedTNT]
