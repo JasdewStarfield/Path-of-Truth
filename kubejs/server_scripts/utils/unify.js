@@ -154,7 +154,8 @@ ServerEvents.recipes(event => {
   event.recipes.create.emptying([Fluid.of("createchromaticreturn:shadow_essence",1000), 'bucket'], 'createchromaticreturn:shadow_essence_bucket')
 
   //血魔法植物油-植物油流体
-  event.recipes.create.emptying([Fluid.of("immersiveengineering:plantoil",100), 'air'], 'bloodmagic:plantoil')
+  event.recipes.create.emptying([Fluid.of("immersiveengineering:plantoil",50), Item.of('air')], 'bloodmagic:plantoil')
+  
 
   //下面是一些重复配方的移除
   event.replaceInput(
