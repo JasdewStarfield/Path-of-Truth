@@ -1,0 +1,14 @@
+{
+	"aetherMoaSkinsFeature": true,
+	"quarkContributorCheck": false,
+	"botaniaContributorCheck": false,
+	"ipnUpdateCheckAndUserTracking": false,
+	"kubejsUpdateCheck": false,
+	"xaeroMapPatreonCheck": false,
+	"xaeroMapVersionCheck": false,
+	"citadelAprilFoolsContent": false,
+	"alexModsContributorCheck": false,
+	"petrolparkBadgeCheck": false,
+	"obscureModsCheck": false,
+	"supplementariesCreditsCheck": false
+}
