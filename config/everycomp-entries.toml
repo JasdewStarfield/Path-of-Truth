@@ -11,6 +11,25 @@
 			lime_cake = true
 			pomegranate_cake = true
 
+		[types.cake.createfood]
+			cake_chorus_fruit = true
+			cake_glow_berry = true
+			berry_cream_cake_sweet_berry = true
+			berry_cream_cake_chorus_fruit = true
+			berry_cream_cake_glow_berry = true
+			chocolate_cream_cake_butterscotch = true
+			chocolate_cream_cake_caramel = true
+			chocolate_cream_cake_chocolate = true
+			chocolate_cream_cake_dark_chocolate = true
+			chocolate_cream_cake_toffee = true
+			chocolate_cream_cake_white_chocolate = true
+			chorus_fruit_cream_cake_sweet_berry = true
+			chorus_fruit_cream_cake_chorus_fruit = true
+			chorus_fruit_cream_cake_glow_berry = true
+			glow_berry_cream_cake_sweet_berry = true
+			glow_berry_cream_cake_chorus_fruit = true
+			glow_berry_cream_cake_glow_berry = true
+
 	[types.wood_type]
 
 		[types.wood_type.blue_skies]
@@ -96,6 +115,9 @@
 
 		[types.leaves_type.outer_end]
 			azure = true
+
+		[types.leaves_type.mythicbotany]
+			dreamwood = true
 
 	[types.stone_type]
 
