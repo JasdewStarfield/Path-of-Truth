@@ -62,17 +62,74 @@
 	#Does not affect the block's temperature
 	"Cold Soul Fire" = true
 
-[Hearth]
-	#Allows the hearth to automatically turn on/off based on nearby players' temperature
-	#If false, the hearth turns on/off by redstone signal
-	"Automatic Hearth" = false
-	#How effective the hearth is at normalizing temperature
+["Thermal Sources"]
+	#How effective thermal sources are at normalizing temperature
 	#Range: 0.0 ~ 1.0
-	"Hearth Strength" = 0.75
-	#List of additional blocks that the hearth can spread through
-	#Use this list if the hearth isn't spreading through particular blocks that it should
-	"Hearth Spread Whitelist" = ["minecraft:iron_bars", "minecraft:jungle_leaves", "minecraft:oak_leaves", "minecraft:spruce_leaves", "minecraft:dark_oak_leaves", "minecraft:acacia_leaves", "minecraft:birch_leaves", "minecraft:azalea_leaves", "minecraft:flowering_azalea_leaves", "minecraft:mangrove_leaves", "minecraft:cherry_leaves", "biomesoplenty:origin_leaves", "biomesoplenty:flowering_oak_leaves", "biomesoplenty:snowblossom_leaves", "biomesoplenty:rainbow_birch_leaves", "biomesoplenty:yellow_autumn_leaves", "biomesoplenty:orange_autumn_leaves", "biomesoplenty:maple_leaves", "biomesoplenty:fir_leaves", "biomesoplenty:redwood_leaves", "biomesoplenty:mahogany_leaves", "biomesoplenty:jacaranda_leaves", "biomesoplenty:palm_leaves", "biomesoplenty:willow_leaves", "biomesoplenty:dead_leaves", "biomesoplenty:magic_leaves", "biomesoplenty:umbran_leaves", "biomesoplenty:hellbark_leaves", "blue_skies:bluebright_leaves", "blue_skies:starlit_leaves", "blue_skies:frostbright_leaves", "blue_skies:lunar_leaves", "blue_skies:dusk_leaves", "blue_skies:maple_leaves", "blue_skies:crystallized_leaves", "blue_skies:comet_leaves", "blue_skies:crescent_fruit_leaves", "undergarden:smogstem_leaves", "undergarden:wigglewood_leaves", "undergarden:grongle_leaves", "outer_end:azure_leaves", "snowyspirit:glow_lights_white", "snowyspirit:glow_lights_orange", "snowyspirit:glow_lights_magenta", "snowyspirit:glow_lights_light_blue", "snowyspirit:glow_lights_yellow", "snowyspirit:glow_lights_lime", "snowyspirit:glow_lights_pink", "snowyspirit:glow_lights_gray", "snowyspirit:glow_lights_light_gray", "snowyspirit:glow_lights_cyan", "snowyspirit:glow_lights_purple", "snowyspirit:glow_lights_blue", "snowyspirit:glow_lights_brown", "snowyspirit:glow_lights_green", "snowyspirit:glow_lights_red", "snowyspirit:glow_lights_black", "snowyspirit:glow_lights_prismatic", "create:encased_fluid_pipe"]
-	#List of additional blocks that the hearth cannot spread through
-	#Use this list if the hearth is spreading through particular blocks that it shouldn't
-	"Hearth Spread Blacklist" = []
+	"Thermal Source Strength" = 0.75
+	#List of additional blocks that thermal sources can spread through
+	#Use this list if thermal sources aren't spreading through particular blocks that they should
+	"Thermal Source Spread Whitelist" = ["minecraft:iron_bars", "#minecraft:leaves", "create:encased_fluid_pipe"]
+	#List of additional blocks that thermal sources spread through
+	#Use this list if thermal sources are spreading through particular blocks that they shouldn't
+	"Thermal Source Spread Blacklist" = []
+
+	["Thermal Sources".Hearth]
+		#Allows the hearth to automatically turn on/off based on nearby players' temperature
+		#If false, it turns on/off by redstone signal instead
+		"Automatic Hearth" = false
+		#The distance the hearth's air will travel from a source, like the hearth itself or the end of a pipe
+		#Range: > 0
+		"Hearth Range" = 20
+		#The maximum distance that air can be piped away from the hearth
+		#Range: > 0
+		"Max Hearth Range" = 96
+		#The maximum volume of the hearth's area of effect
+		#Range: > 1
+		"Hearth Volume" = 12000
+		#The time it takes for the hearth to be fully functional after being placed
+		#Range: > 0
+		"Hearth Warm-Up Time" = 1200
+		#The maximum amount of insulation that the hearth can provide
+		#Range: 0 ~ 10
+		"Hearth Chill/Warmth Strength" = 10
+
+	["Thermal Sources".Boiler]
+		#Allows the boiler to automatically turn on/off based on nearby players' temperature
+		#If false, it turns on/off by redstone signal instead
+		"Automatic Boiler" = false
+		#The distance the boiler's air will travel from a source, like the boiler itself or the end of a pipe
+		#Range: > 0
+		"Boiler Range" = 16
+		#The maximum distance that air can be piped away from the boiler
+		#Range: > 0
+		"Max Boiler Range" = 96
+		#The maximum volume of the boiler's area of effect
+		#Range: > 1
+		"Boiler Volume" = 2000
+		#The time it takes for the boiler to be fully functional after being placed
+		#Range: > 0
+		"Boiler Warm-Up Time" = 1200
+		#The maximum amount of insulation that the boiler can provide
+		#Range: 0 ~ 10
+		"Boiler Warmth Strength" = 5
+
+	["Thermal Sources".Icebox]
+		#Allows the icebox to automatically turn on/off based on nearby players' temperature
+		#If false, it turns on/off by redstone signal instead
+		"Automatic Icebox" = false
+		#The distance the icebox's air will travel from a source, like the icebox itself or the end of a pipe
+		#Range: > 0
+		"Icebox Range" = 16
+		#The maximum distance that air can be piped away from the icebox
+		#Range: > 0
+		"Max Icebox Range" = 96
+		#The maximum volume of the icebox's area of effect
+		#Range: > 1
+		"Icebox Volume" = 2000
+		#The time it takes for the icebox to be fully functional after being placed
+		#Range: > 0
+		"Icebox Warm-Up Time" = 1200
+		#The maximum amount of insulation that the icebox can provide
+		#Range: 0 ~ 10
+		"Icebox Chill Strength" = 5
 

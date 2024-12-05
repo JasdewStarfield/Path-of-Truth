@@ -121,17 +121,8 @@
 
 	[types.stone_type]
 
-		[types.stone_type.copperandtuffbackport]
-			chiseled_tuff = true
-
 		[types.stone_type.botania]
 			livingrock = true
-
-		[types.stone_type.biomesoplenty]
-			brimstone = true
-
-		[types.stone_type.blue_skies]
-			polished_brumble = true
 
 		[types.stone_type.undergarden]
 			depthrock = true
@@ -140,6 +131,15 @@
 
 		[types.stone_type.outer_end]
 			violite = true
+
+		[types.stone_type.copperandtuffbackport]
+			chiseled_tuff = true
+
+		[types.stone_type.biomesoplenty]
+			brimstone = true
+
+		[types.stone_type.blue_skies]
+			polished_brumble = true
 
 		[types.stone_type.supplementaries]
 			ash = true
@@ -168,6 +168,7 @@
 
 		[types.stone_type.tfmg]
 			cut_bauxite = true
+			cut_galena = true
 
 #Disables specific entries
 [entries]

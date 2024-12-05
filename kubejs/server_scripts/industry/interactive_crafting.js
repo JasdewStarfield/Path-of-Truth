@@ -93,8 +93,6 @@ ServerEvents.recipes(event => {
 
     //轻型工程块
     const lightEngineering = [
-      ['tfmg:cast_iron_distillation_output', "kubejs:fluid_engineering"],
-      ['tfmg:cast_iron_distillation_controller', "kubejs:precise_engineering"],
       ['create_new_age:energiser_t1', "minecraft:lightning_rod"]
     ]
     lightEngineering.forEach(([output, material]) =>
