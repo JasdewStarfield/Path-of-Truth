@@ -3,3 +3,4 @@ version = 0
 axeStripParticles = true
 waterEvaporateFromBucketSteam = true
 boneMealUsingParticles = true
+flintAndSteelParticles = true

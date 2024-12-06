@@ -16,6 +16,8 @@ replaceSpellCasterParticles = true
 ironGolemCrackParticles = true
 spectralArrowParticles = true
 wardenDeathSoulParticles = true
+xpBottleParticlesDisplayType = "DEFAULT"
+xpBottleParticlesDensity = 10
 
 [attacked]
 chickenFeathers = true
@@ -57,6 +59,7 @@ scale = 0.5
 alpha = 0.8
 playerFell = true
 playerRunning = true
+playerRunningRequiresSpeed = false
 mobFell = true
 mobRunning = true
 landMaceAttack = true
@@ -72,9 +75,13 @@ sounds = true
 particlesDisplayType = "NOT_COMMON"
 particleColor = "NAME_COLOR"
 mixedColorName = true
-particleMaxHeight = 7
+particleMaxHeight = 1.5
+particleMaxSpeed = 1.0
+particleDensity = 1.0
 
-[primedTNT]
-updateSmoke = true
-flames = true
-sparks = true
+[explosives]
+tntUpdateSmoke = true
+tntFlames = true
+tntSparks = true
+creeperSmoke = "UPDATED"
+creeperSparks = true
