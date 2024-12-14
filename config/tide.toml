@@ -8,6 +8,5 @@ minigameDifficulty = 1.0
 rodDurabilityMultiplier = 1.0
 defaultLineColor = false
 hideUnknownFishNames = true
-baseCrateRarity = 20
 [worldgen]
 disableFishingBoat = false
