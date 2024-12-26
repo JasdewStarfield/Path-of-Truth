@@ -13,40 +13,12 @@ ServerEvents.recipes(event => {
     //这会导致死亡爆炸
     event.remove({id:'bloodmagic:alchemytable/curios_upgrade'})
     
-    //修改血祭坛配方
-    //底层青铜，两侧活石，中间初学者手册
-    event.replaceInput({mod:'bloodmagic',output:'bloodmagic:altar'},
-    'minecraft:gold_ingot', 'kubejs:bronze_ingot' )
-    event.replaceInput({mod:'bloodmagic',output:'bloodmagic:altar'},
-    '#balm:stones', 'botania:livingrock' )
-    event.replaceInput({mod:'bloodmagic',output:'bloodmagic:altar'},
-    'minecraft:furnace', 'irons_spellbooks:copper_spell_book' )
-    //修改炼金炉配方
-    event.replaceInput({mod:'bloodmagic',output:'bloodmagic:alchemicalreactionchamber'},
-    'minecraft:furnace', 'immersiveengineering:blastbrick' )
-    event.replaceInput({mod:'bloodmagic',output:'bloodmagic:alchemicalreactionchamber'},
-    'minecraft:iron_block', 'undergarden:cloggrum_block' )
-    //修改主仪式石配方
-    event.replaceInput({mod:'bloodmagic',output:'bloodmagic:masterritualstone'},
-    'minecraft:obsidian', 'tfmg:steel_casing' )
-    //修改血染知书配方
-    event.replaceInput({id:'bloodmagic:guide'},
-        'minecraft:glass' , 'supplementaries:jar')
-
     //磁铁最终升级
     event.smithing(
         'create_new_age:netherite_magnet',
         'create_new_age:fluxuated_magnetite',
         'minecraft:netherite_ingot'
     )
-
-    //删除基岩配方
-    event.remove({id:'bloodmagic:array/day'})
-    event.remove({id:'bloodmagic:array/night'})
-    event.remove({id:'bloodmagic:array/spike'})
-    event.remove({id:'bloodmagic:array/bounce'})
-    event.remove({id:'bloodmagic:array/movement'})
-    event.remove({id:'bloodmagic:array/updraft'})
 
     //炼金术桌配方修改
     //魔力粉-奥术源质兑换
@@ -382,92 +354,6 @@ ServerEvents.recipes(event => {
         "ticks": 200,
         "upgradeLevel": 5
     })
-    //晶簇炼金变化
-    //腐蚀，破坏，复仇，坚毅
-    //腐蚀
-    event.custom({
-        "type": "bloodmagic:alchemytable",
-        "input": [
-            {
-                "item":'bloodmagic:rawdemoncrystal'
-            },
-            {
-                "item":'botania:life_essence'
-            },
-            {
-                "item":'minecraft:poisonous_potato'
-            }
-        ],
-        "output": {
-          "item": 'bloodmagic:corrosivedemoncrystal'
-        },
-        "syphon": 5000,
-        "ticks": 100,
-        "upgradeLevel": 5
-    })
-    //破坏
-    event.custom({
-        "type": "bloodmagic:alchemytable",
-        "input": [
-            {
-                "item":'bloodmagic:rawdemoncrystal'
-            },
-            {
-                "item":'botania:life_essence'
-            },
-            {
-                "item":'bloodmagic:veinmine_charge_2'
-            }
-        ],
-        "output": {
-          "item": 'bloodmagic:destructivedemoncrystal'
-        },
-        "syphon": 5000,
-        "ticks": 100,
-        "upgradeLevel": 5
-    })
-    //复仇
-    event.custom({
-        "type": "bloodmagic:alchemytable",
-        "input": [
-            {
-                "item":'bloodmagic:rawdemoncrystal'
-            },
-            {
-                "item":'botania:life_essence'
-            },
-            {
-                "item":'biomesoplenty:bramble'
-            }
-        ],
-        "output": {
-          "item": 'bloodmagic:vengefuldemoncrystal'
-        },
-        "syphon": 5000,
-        "ticks": 100,
-        "upgradeLevel": 5
-    })
-    //坚毅
-    event.custom({
-        "type": "bloodmagic:alchemytable",
-        "input": [
-            {
-                "item":'bloodmagic:rawdemoncrystal'
-            },
-            {
-                "item":'botania:life_essence'
-            },
-            {
-                "tag":'forge:ingots/steel'
-            }
-        ],
-        "output": {
-          "item": 'bloodmagic:steadfastdemoncrystal'
-        },
-        "syphon": 5000,
-        "ticks": 100,
-        "upgradeLevel": 5
-    })
 
     //祭坛配方修改
     //复刻凝胶变化
@@ -539,50 +425,7 @@ ServerEvents.recipes(event => {
         },
         "upgradeLevel": 2
     })
-    //三级血魔法宝珠（法师宝珠）合成方式修改
-    event.remove({id:'bloodmagic:altar/magicianbloodorb'})
-    event.custom({
-        "type": "bloodmagic:altar",
-        "altarSyphon": 25000,
-        "consumptionRate": 20,
-        "drainRate": 20,
-        "input": {
-            "item": 'botania:terrasteel_ingot'
-        },
-        "output": {
-            "item": "bloodmagic:magicianbloodorb"
-        },
-        "upgradeLevel": 2
-    })
-    //四级血魔法宝珠（导师宝珠）合成方式修改
-    event.remove({id:'bloodmagic:altar/masterbloodorb'})
-    event.custom({
-        "type": "bloodmagic:altar",
-        "altarSyphon": 40000,
-        "consumptionRate": 50,
-        "drainRate": 50,
-        "input": {
-            "item": 'tfmg:steel_block'
-        },
-        "output": {
-            "item": "bloodmagic:masterbloodorb"
-        },
-        "upgradeLevel": 3
-    })
-    //万能仪式石合成
-    event.custom({
-        "type": "bloodmagic:altar",
-        "altarSyphon": 80000,
-        "consumptionRate": 100,
-        "drainRate": 10,
-        "input": {
-            "item": 'undergarden:forgotten_block'
-        },
-        "output": {
-            "item": 'bloodmagic:activationcrystalcreative'
-        },
-        "upgradeLevel": 3
-    })
+
     //盖亚之魂合成奥术残骸
     event.custom({
         "type": "bloodmagic:altar",
@@ -712,19 +555,6 @@ ServerEvents.recipes(event => {
         "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
     })
     //姜饼人活化
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'botania:corporea_spark'
-        },
-        "baseinput": {
-            "item": 'create_confectionery:gingerbread_man'
-        },
-        "output": {
-            "item": 'create_confectionery:little_gingerbread_man_spawn_egg'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/airsigil.png"
-    })
     //点铁成缪铁
     event.custom({
         "type": "bloodmagic:array",
