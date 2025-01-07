@@ -3,4 +3,6 @@ version = 0
 mobSkullShaders = false
 particleRenderDistance = 5
 cullParticlesWithNoAlpha = true
+cullParticlesInUnloadedChunks = true
 sparksScale = 1.0
+fireHeight = 0.0

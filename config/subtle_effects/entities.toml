@@ -47,6 +47,7 @@ displayType = "DEFAULT"
 alpha = 0.5
 waitTime = 60
 seasons = "DEFAULT"
+additionalBiomes = [  ]
 
 [humanoids.player]
 stomachGrowlingThreshold = 6

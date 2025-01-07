@@ -1,6 +1,7 @@
 # Use Cloth Config mod for the descriptions.
 ---
 contributorCosmetic: ''
+cosmeticScreenKeybind: true
 globalTooltip: false
 noMicrosoftTelemetry: true
 debug:

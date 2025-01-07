@@ -27,6 +27,7 @@ fallingBlockDustBlocks = [
     "minecraft:red_concrete_powder",
     "minecraft:black_concrete_powder"
 ]
+fallingBlockDustDistance = 0
 torchflowerSmoke = "DEFAULT"
 torchflowerFlames = true
 dragonEggParticles = true
