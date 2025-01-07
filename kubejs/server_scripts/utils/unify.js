@@ -1,16 +1,4 @@
 ServerEvents.recipes(event => {
-  //我真是sb
-  event.shapeless(Item.of('tfmg:coal_coke_dust',1),
-        [
-            '#forge:dusts/coal_coke'
-        ]
-  )
-  //我不到啊
-  event.shapeless(Item.of('tfmg:aluminum_ingot',1),
-        [
-            '#forge:ingots/aluminum'
-        ]
-  )
   event.shapeless(Item.of('create:copper_nugget',1),
         [
             '#forge:nuggets/copper'
@@ -83,12 +71,14 @@ ServerEvents.recipes(event => {
         ]
   )
 
+  /*
   //铁矿混合粉也可以用铁粉做
   event.recipes.create.mixing('3x tfmg:blasting_mixture', ['#forge:dusts/iron','#forge:dusts/iron','#forge:dusts/iron','tfmg:limesand'])
 
   //石灰砂可以用方解石磨
   event.remove({id:"create:milling/calcite"})
   event.recipes.create.milling([Item.of('tfmg:limesand').withChance(0.5), Item.of('bone_meal').withChance(0.75)], 'calcite')
+  */
 
   //我寻思工业大麻也能做绳子
   event.shaped('3x farmersdelight:rope', [ 
@@ -114,7 +104,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.crushing(Item.of('salt:raw_rock_salt').withChance(0.25), 'biomesoplenty:dried_salt')
 
   //硫磺石就不是硫磺了吗？
-  event.recipes.create.crushing(Item.of('tfmg:sulfur_dust').withChance(0.1), 'biomesoplenty:brimstone')
+  event.recipes.create.crushing(Item.of('#forge:dusts/sulfur').withChance(0.1), 'biomesoplenty:brimstone')
 
   //由于移除了沉浸工程锯木机，补充锯末的获取配方
   event.recipes.create.cutting(Item.of('immersiveengineering:dust_wood').withChance(0.5), 'stick')
@@ -127,13 +117,6 @@ ServerEvents.recipes(event => {
     A: 'immersiveengineering:dust_wood',
     B: 'wheat'
   })
-
-  //大哥我问你话呢？铝脚手架为啥是钢做的啊？？？
-  event.replaceInput(
-    {output:'tfmg:aluminum_scaffolding'},
-    '#forge:ingots/steel',
-    '#forge:ingots/aluminum'
-  )
 
   //工作台的通用性适配
   event.replaceInput(

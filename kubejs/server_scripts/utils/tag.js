@@ -122,17 +122,12 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:tools/shovels","kubejs:bronze_shovel")
 
     //Unify
-    event.add("forge:coal_coke","tfmg:coal_coke")
-    event.add("forge:storage_blocks/coal_coke","tfmg:coal_coke_block")
     event.add("forge:dusts","kubejs:gold_silver_mix")
-    event.add("forge:dusts/sulfur","tfmg:sulfur_dust")
-    event.add("forge:dusts/saltpeter","tfmg:nitrate_dust")
     event.add("forge:flour","tmted:wheat_flour")
     event.add("forge:rope","beautify:rope")
     event.add("forge:plates/netherite","createdeco:netherite_sheet")
     event.add("forge:plates/zinc","createdeco:zinc_sheet")
     event.add("forge:plates/andesite","createdeco:andesite_sheet")
-    event.add("forge:slag","tfmg:slag")
 
     //Undergarden
     event.add("create:crushed_ores","kubejs:crushed_froststeel_ore")
@@ -217,15 +212,14 @@ ServerEvents.tags("block", (event) => {
         'immersiveengineering:blastfurnace_preheater'
     ]
     wrenchPickupList.forEach((id) => event.add("create:wrench_pickup", id))
-
-    event.remove("minecraft:mineable/pickaxe","tfmg:oil_deposit")
 })
 
 //液体标签添加
 ServerEvents.tags("fluid", (event) => {
-    event.add("forge:ethylene","tfmg:ethylene")
-    event.add("forge:propylene","tfmg:propylene")
-    event.add("forge:lubrication_oil","tfmg:lubrication_oil")
+    event.add("forge:lpg","kubejs:lpg")
+    event.add("forge:lubricant","kubejs:lubricant")
+    event.add("forge:heavy_oil","kubejs:heavy_oil")
+    event.add("forge:liquid_plastic","kubejs:liquid_plastic")
     event.add("forge:shadow_essence","createchromaticreturn:shadow_essence")
     event.add("forge:shadow_essence","createchromaticreturn:flowing_shadow_essence")
     event.add("forge:refined_mixture","createchromaticreturn:refined_mixture")

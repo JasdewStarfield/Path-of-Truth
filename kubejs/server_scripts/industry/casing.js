@@ -26,6 +26,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'create:item_application/railway_casing'})
     casing('create:railway_casing', "create:brass_casing", '#forge:plates/obsidian')
 
+    /*
     //钢机壳
     event.remove({id:'tfmg:item_application/steel_casing'})
     casing("tfmg:steel_casing", "immersiveengineering:treated_wood_horizontal", '#forge:plates/steel')
@@ -43,6 +44,7 @@ ServerEvents.recipes(event => {
       'tfmg:heavy_machinery_casing',
       'immersiveengineering:heavy_engineering'
     )
+    */
 
     //齿轮
     event.remove({id:'create:crafting/kinetics/cogwheel'})

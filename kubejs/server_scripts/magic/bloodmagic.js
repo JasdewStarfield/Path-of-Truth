@@ -213,7 +213,7 @@ ServerEvents.recipes(event => {
                 "item":'alexsmobs:void_worm_eye'
             },
             {
-                "item":'tfmg:aluminum_ingot'
+                "tag":'forge:ingots/aluminum'
             },
             {
                 "item":'irons_spellbooks:arcane_salvage'
@@ -371,6 +371,7 @@ ServerEvents.recipes(event => {
         "upgradeLevel": 3
     })
     //耐火黏土生成
+    /*
     event.custom({
         "type": "bloodmagic:altar",
         "altarSyphon": 1000,
@@ -397,6 +398,7 @@ ServerEvents.recipes(event => {
         },
         "upgradeLevel": 1
     })
+    */
     //雷电瓶生成
     event.custom({
         "type": "bloodmagic:altar",
@@ -856,7 +858,7 @@ ServerEvents.recipes(event => {
         //输入液体（可以不写）
         "inputFluid": {
             "amount": 1000,
-            "fluid": 'tfmg:kerosene'
+            "fluid": 'kubejs:lpg'
         },
         //输入数量（大概）
         "inputsize": 1,

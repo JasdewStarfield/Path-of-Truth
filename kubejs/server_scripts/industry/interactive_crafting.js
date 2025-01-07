@@ -101,12 +101,14 @@ ServerEvents.recipes(event => {
 
     //重型工程块
     const heavyEngineering = [
+      /*
       ['tfmg:surface_scanner', "immersiveengineering:rs_engineering"],
       ['tfmg:machine_input', "kubejs:andesite_engineering"],
       ['tfmg:pumpjack_crank', "immersiveengineering:steel_scaffolding_standard"],
       ['tfmg:pumpjack_base', "tfmg:industrial_pipe"],
       ['tfmg:steel_distillation_output', "kubejs:fluid_engineering"],
       ['tfmg:steel_distillation_controller', "kubejs:precise_engineering"],
+      */
       ['create_new_age:energiser_t2', "minecraft:lightning_rod"]
     ]
     heavyEngineering.forEach(([output, material]) =>

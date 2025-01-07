@@ -247,14 +247,14 @@ ServerEvents.recipes(event => {
     //黑曜石支持用石磨处理
     event.recipes.create.milling(Item.of('create:powdered_obsidian').withChance(0.75), '#forge:obsidian')
     //焦煤也是
-    event.recipes.create.milling(Item.of('tfmg:coal_coke_dust').withChance(0.75), '#forge:coal_coke').id('coal_coke_dust_manual_only')
+    event.recipes.create.milling(Item.of('#forge:dusts/coal_coke').withChance(0.75), '#forge:coal_coke').id('coal_coke_dust_manual_only')
 
     //深板岩
     event.recipes.create.filling('magma_block', [Fluid.of('minecraft:lava',500),'minecraft:cobblestone'])
     event.recipes.create.emptying([Fluid.of('minecraft:lava',250), 'minecraft:cobbled_deepslate'], 'magma_block')
 
     //木炭压制焦煤（小概率）
-    event.recipes.create.compacting([Item.of('tfmg:coal_coke').withChance(0.1), Fluid.of('immersiveengineering:creosote', 500)], ['createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder']).heated()
+    event.recipes.create.compacting([Item.of('#forge:coal_coke').withChance(0.1), Fluid.of('immersiveengineering:creosote', 500)], ['createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder']).heated()
 
     //ban掉水搅拌出锌粒，火药烧烈焰粉
     //sb chromatic return

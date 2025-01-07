@@ -39,6 +39,7 @@ ServerEvents.recipes(event => {
   })
 
   event.remove({ id: 'tfmg:crafting/blast_furnace_output' })
+  /*
   event.recipes.create.mechanical_crafting('tfmg:blast_furnace_output', [
     ' DDD ',
     'DBBBD',
@@ -52,6 +53,7 @@ ServerEvents.recipes(event => {
     D: '#forge:ingots/cast_iron',
     E: '#forge:gems/dragonstone'
   })
+  */
 
   //动力合成器
   event.remove({ output: 'create:mechanical_crafter' })
@@ -67,6 +69,7 @@ ServerEvents.recipes(event => {
   })
   
   event.remove({id:'tfmg:mixing/cast_iron_ingot'})
+  /*
   event.custom({
     "type":"immersiveengineering:blast_furnace",
     "input":{"tag":"forge:ingots/iron"},
@@ -74,6 +77,7 @@ ServerEvents.recipes(event => {
     "slag":{"tag":"forge:slag"},
     "time":400
   })
+  */
 
   //电弧炉炼铁
   event.custom({
@@ -102,22 +106,22 @@ ServerEvents.recipes(event => {
   event.recipes.create.sequenced_assembly([
     Item.of('kubejs:filled_casting_mold_small')
     ], 'kubejs:casting_base', [
-      event.recipes.createDeploying('kubejs:incomplete_filled_casting_mold_small', ['kubejs:incomplete_filled_casting_mold_small', 'tfmg:ingot_mold']),
-      event.recipes.createFilling('kubejs:incomplete_filled_casting_mold_small', ['kubejs:incomplete_filled_casting_mold_small', Fluid.of('tfmg:molten_steel',100)]),
+      event.recipes.createDeploying('kubejs:incomplete_filled_casting_mold_small', ['kubejs:incomplete_filled_casting_mold_small', 'clay_ball']),
+      event.recipes.createFilling('kubejs:incomplete_filled_casting_mold_small', ['kubejs:incomplete_filled_casting_mold_small', Fluid.of('kubejs:molten_steel',100)]),
       event.recipes.createDeploying('kubejs:incomplete_filled_casting_mold_small', ['kubejs:incomplete_filled_casting_mold_small', 'kubejs:casting_seal']),
       event.recipes.createFilling('kubejs:incomplete_filled_casting_mold_small', ['kubejs:incomplete_filled_casting_mold_small', Fluid.of('minecraft:water',1000)])
   ]).transitionalItem('kubejs:incomplete_filled_casting_mold_small').loops(1)
   event.recipes.create.sequenced_assembly([
     Item.of('kubejs:filled_casting_mold_large')
     ], 'kubejs:casting_base', [
-      event.recipes.createDeploying('kubejs:incomplete_filled_casting_mold_large', ['kubejs:incomplete_filled_casting_mold_large', 'tfmg:block_mold']),
-      event.recipes.createFilling('kubejs:incomplete_filled_casting_mold_large', ['kubejs:incomplete_filled_casting_mold_large', Fluid.of('tfmg:molten_steel',900)]),
+      event.recipes.createDeploying('kubejs:incomplete_filled_casting_mold_large', ['kubejs:incomplete_filled_casting_mold_large', 'clay']),
+      event.recipes.createFilling('kubejs:incomplete_filled_casting_mold_large', ['kubejs:incomplete_filled_casting_mold_large', Fluid.of('kubejs:molten_steel',900)]),
       event.recipes.createDeploying('kubejs:incomplete_filled_casting_mold_large', ['kubejs:incomplete_filled_casting_mold_large', 'kubejs:casting_seal']),
       event.recipes.createFilling('kubejs:incomplete_filled_casting_mold_large', ['kubejs:incomplete_filled_casting_mold_large', Fluid.of('minecraft:water',1000)])
   ]).transitionalItem('kubejs:incomplete_filled_casting_mold_large').loops(1)
 
-  event.recipes.create.compacting(['tfmg:steel_ingot','kubejs:casting_seal','kubejs:casting_base',Item.of('tfmg:ingot_mold').withChance(0.95)], 'kubejs:filled_casting_mold_small')
-  event.recipes.create.compacting(['tfmg:steel_block','kubejs:casting_seal','kubejs:casting_base',Item.of('tfmg:block_mold').withChance(0.95)], 'kubejs:filled_casting_mold_large')
+  event.recipes.create.compacting(['#forge:ingots/steel','kubejs:casting_seal','kubejs:casting_base',Item.of('clay_ball').withChance(0.95)], 'kubejs:filled_casting_mold_small')
+  event.recipes.create.compacting(['#forge:storage_blocks/steel','kubejs:casting_seal','kubejs:casting_base',Item.of('clay').withChance(0.95)], 'kubejs:filled_casting_mold_large')
 
   //发电
   event.remove({ mod: 'create_new_age'/*, not:[{output:'create_new_age:basic_motor'},{output:'create_new_age:carbon_brushes'},{output:'create_new_age:generator_coil'}]*/ })

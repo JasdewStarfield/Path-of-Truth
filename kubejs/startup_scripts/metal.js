@@ -61,6 +61,9 @@ StartupEvents.registry('item', (event) => {
   //新材料
   event.create("crushed_raw_bauxite").displayName('Crushed Raw Bauxite')
   event.create("frostfire_double_plate").displayName('Frostfire Double Plate').texture('kubejs:item/undergarden_compat/frostfire_double_plate')
+  
+	event.create("steel_mechanism").displayName('Steel Mechanism')
+  event.create("unfinished_steel_mechanism", 'create:sequenced_assembly').displayName('Unfinished Steel Mechanism').texture('kubejs:item/unfinished_steel_mechanism')
   event.create("forgotten_mechanism").displayName('Forgotten Mechanism').texture('kubejs:item/forgotten_mechanism')
   event.create("incomplete_forgotten_mechanism", 'create:sequenced_assembly').displayName('Incomplete Forgotten Mechanism').texture('kubejs:item/incomplete_forgotten_mechanism')
 })
@@ -99,4 +102,18 @@ StartupEvents.registry('block', (event) => {
     .texture('front', 'kubejs:block/broken_snowcap_oven/snowcap_oven_front')
     .texture('side', 'kubejs:block/broken_snowcap_oven/snowcap_oven_side')
     .texture('bottom', 'kubejs:block/broken_snowcap_oven/snowcap_oven_bottom')
+})
+
+StartupEvents.registry('fluid', (event) => {
+  //熔融钢
+  event.create('molten_steel')
+  .thickTexture(0x00FFFF)
+  .bucketColor(0x00FFFF)
+  .displayName('Molten Steel')
+
+  //熔融炉渣
+  event.create('molten_slag')
+  .thickTexture(0x00FFFF)
+  .bucketColor(0x00FFFF)
+  .displayName('Molten Slag')
 })

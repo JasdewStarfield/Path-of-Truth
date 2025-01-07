@@ -1,13 +1,13 @@
 ServerEvents.recipes(event => {
   //下界合金
   event.remove({ id: 'minecraft:netherite_ingot' })
-  event.recipes.create.mixing(['netherite_ingot'], [Fluid.of('tfmg:napalm',500),'#forge:ingots/uranium','#forge:ingots/uranium','#forge:ingots/uranium','#forge:ingots/uranium','minecraft:netherite_scrap','minecraft:netherite_scrap','minecraft:netherite_scrap','minecraft:netherite_scrap']).superheated()
+  event.recipes.create.mixing(['netherite_ingot'], ['#forge:ingots/uranium','#forge:ingots/uranium','#forge:ingots/uranium','#forge:ingots/uranium','minecraft:netherite_scrap','minecraft:netherite_scrap','minecraft:netherite_scrap','minecraft:netherite_scrap']).superheated()
 
   //烈焰蛋糕
   event.remove({ id: 'create:compacting/blaze_cake' })
   event.remove({ id: 'create:filling/blaze_cake' })
   event.recipes.create.compacting(['create:blaze_cake_base'], ['minecraft:sugar','irons_spellbooks:cinder_essence','#forge:plates/horizonite']).heated()
-  event.recipes.create.filling('create:blaze_cake',[Fluid.of('tfmg:gasoline',1000),'create:blaze_cake_base'])
+  event.recipes.create.filling('create:blaze_cake',[{fluidTag: 'forge:gasoline', amount:1000},'create:blaze_cake_base'])
 
   //多彩化合物
   event.remove({ id: 'createchromaticreturn:chromatic_compound_recipe' })
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
   )
 
   //工业侧
-  event.recipes.create.mixing([Item.of('createchromaticreturn:shadow_steel')], ['createchromaticreturn:chromatic_compound',Fluid.of('create_confectionery:black_chocolate',500),Fluid.of('tfmg:heavy_oil',500)]).superheated()
+  event.recipes.create.mixing([Item.of('createchromaticreturn:shadow_steel')], ['createchromaticreturn:chromatic_compound',Fluid.of('create_confectionery:black_chocolate',500),{fluidTag: 'forge:heavy_oil', amount:500}]).superheated()
   event.remove({id:'createchromaticreturn:shadow_essence_recipe'})
   event.custom({
     "type":"immersiveengineering:mixer",
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
   event.remove({id:'createchromaticreturn:multiplite_recipe'})
   event.remove({id:'createchromaticreturn:antiplite_recipe'})
 
-  event.recipes.create.mixing(['createchromaticreturn:industrium_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [{fluidTag:'forge:shadow_essence', amount:1000},'create:deployer','create:mechanical_arm','immersiveengineering:powerpack','tfmg:large_radial_engine']).superheated()
+  event.recipes.create.mixing(['createchromaticreturn:industrium_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [{fluidTag:'forge:shadow_essence', amount:1000},'create:deployer','create:mechanical_arm','immersiveengineering:powerpack'/*,'tfmg:large_radial_engine'*/]).superheated()
   event.recipes.create.sequenced_assembly([
     Item.of('createchromaticreturn:industrium_book')
     ], '#forge:plates/plastic', [

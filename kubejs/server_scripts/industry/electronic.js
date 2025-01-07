@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
         Item.of('create:precision_mechanism')
     ], '#forge:plates/brass', [
-        event.recipes.createFilling(inter, [inter, Fluid.of('tfmg:lubrication_oil', 25)]),
+        event.recipes.createFilling(inter, [inter, {fluidTag: 'forge:lubricant', amount:25}]),
         event.recipes.createDeploying(inter, [inter, 'create:cogwheel']),
         event.recipes.createDeploying(inter, [inter, 'create:large_cogwheel']),
         event.recipes.createDeploying(inter, [inter, '#blue_skies:gems/moonstone_shard']),

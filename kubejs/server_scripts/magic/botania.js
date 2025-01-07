@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
         [
             'botania:black_lotus',
             'irons_spellbooks:ender_upgrade_orb',
-            'tfmg:asphalt'
+            'createdieselgenerators:asphalt_block'
         ]
     )
     //合成注能丝触书籍

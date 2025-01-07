@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
     event.replaceInput(
         { input:"immersiveengineering:fluid_pipe" },
         'immersiveengineering:fluid_pipe',
-        'tfmg:steel_pipe'
+        'create:fluid_pipe'
     )
 
     //防腐木板
@@ -243,33 +243,28 @@ ServerEvents.recipes(event => {
     })
 
     //钢铁构件
-    event.remove({id:"tfmg:sequenced_assembly/steel_mechanism"})
 
     event.recipes.create.sequenced_assembly([
-      Item.of('tfmg:steel_mechanism').withChance(90.0),
+      Item.of('kubejs:steel_mechanism').withChance(90.0),
       Item.of('#forge:rods/steel').withChance(2.0),
-      Item.of('tfmg:aluminum_ingot').withChance(2.0),
-      Item.of('tfmg:heavy_plate').withChance(3.0),
+      Item.of('#forge:ingots/aluminum').withChance(2.0),
+      Item.of('#forge:plates/steel').withChance(3.0),
       Item.of('create:precision_mechanism').withChance(2.5),
       Item.of('supplementaries:ash').withChance(0.5)
       ], '#forge:plates/steel', [
-      event.recipes.createDeploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'create:precision_mechanism']),
-      event.recipes.createDeploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'tfmg:turbine_blade']),
-      event.recipes.createDeploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', '#forge:dusts/aquite']),
-      event.recipes.createDeploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'tfmg:screw']),
-      event.recipes.createDeploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'tfmg:screwdriver'])
-    ]).transitionalItem('tfmg:unfinished_steel_mechanism').loops(4)
+      event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', 'create:precision_mechanism']),
+      event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', 'createdieselgenerators:engine_turbocharger']),
+      event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', '#forge:dusts/aquite'])
+    ]).transitionalItem('kubejs:unfinished_steel_mechanism').loops(4)
 
     event.recipes.create.sequenced_assembly([
-      Item.of('tfmg:steel_mechanism')
+      Item.of('kubejs:steel_mechanism')
       ], '#forge:plates/steel', [
-      event.recipes.createFilling('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', Fluid.of('tfmg:lubrication_oil', 25)]),
-      event.recipes.createDeploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'create:precision_mechanism']),
-      event.recipes.createDeploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'tfmg:turbine_blade']),
-      event.recipes.createDeploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', '#forge:dusts/aquite']),
-      event.recipes.createDeploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'tfmg:screw']),
-      event.recipes.createDeploying('tfmg:unfinished_steel_mechanism', ['tfmg:unfinished_steel_mechanism', 'tfmg:screwdriver'])
-    ]).transitionalItem('tfmg:unfinished_steel_mechanism').loops(4)
+      event.recipes.createFilling('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', {fluidTag: 'forge:lubricant', amount:25}]),
+      event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', 'create:precision_mechanism']),
+      event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', 'createdieselgenerators:engine_turbocharger']),
+      event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', '#forge:dusts/aquite'])
+    ]).transitionalItem('kubejs:unfinished_steel_mechanism').loops(4)
 
     //遗忆构件
     event.recipes.create.sequenced_assembly([
@@ -282,20 +277,16 @@ ServerEvents.recipes(event => {
       ], '#forge:plates/forgotten_metal', [
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'create:precision_mechanism']),
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'blue_skies:diopside_gem']),
-      event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'immersiveengineering:component_electronic']),
-      event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'tfmg:screw']),
-      event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'tfmg:screwdriver'])
+      event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'immersiveengineering:component_electronic'])
     ]).transitionalItem('kubejs:incomplete_forgotten_mechanism').loops(4)
 
     event.recipes.create.sequenced_assembly([
       Item.of('kubejs:forgotten_mechanism')
       ], '#forge:plates/forgotten_metal', [
-      event.recipes.createFilling('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', Fluid.of('tfmg:lubrication_oil', 25)]),
+      event.recipes.createFilling('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', {fluidTag: 'forge:lubricant', amount:25}]),
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'create:precision_mechanism']),
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'blue_skies:diopside_gem']),
-      event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'immersiveengineering:component_electronic']),
-      event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'tfmg:screw']),
-      event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'tfmg:screwdriver'])
+      event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'immersiveengineering:component_electronic'])
     ]).transitionalItem('kubejs:incomplete_forgotten_mechanism').loops(4)
 
     //工程块
@@ -308,14 +299,14 @@ ServerEvents.recipes(event => {
         'ABA',
         'CAD'  
     ], {
-        B: 'tfmg:steel_casing',
+        B: 'create:andesite_casing',
         A: '#forge:plates/ventium',
         D: 'immersiveengineering:component_steel',
         C: 'immersiveengineering:component_iron'
     })
     event.recipes.create.sequenced_assembly([
         'immersiveengineering:light_engineering'
-        ], 'tfmg:steel_casing', [
+        ], 'create:andesite_casing', [
         event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/ventium']),
         event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', 'immersiveengineering:component_steel']),
         event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', 'immersiveengineering:component_iron']),
@@ -327,17 +318,17 @@ ServerEvents.recipes(event => {
         'ABA',
         'CAD'  
     ], {
-        B: 'tfmg:heavy_machinery_casing',
+        B: 'create:andesite_casing',
         A: '#forge:plates/cloggrum',
         D: 'kubejs:forgotten_mechanism',
-        C: 'tfmg:steel_mechanism'
+        C: 'kubejs:steel_mechanism'
     })
     event.recipes.create.sequenced_assembly([
         'immersiveengineering:heavy_engineering'
-        ], 'tfmg:heavy_machinery_casing', [
+        ], 'create:andesite_casing', [
         event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/cloggrum']),
         event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_heavy_engineering', 'kubejs:forgotten_mechanism']),
-        event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_heavy_engineering', 'tfmg:steel_mechanism']),
+        event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_heavy_engineering', 'kubejs:steel_mechanism']),
         event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/cloggrum'])
     ]).transitionalItem('kubejs:incomplete_heavy_engineering').loops(1)
 
@@ -371,16 +362,13 @@ ServerEvents.recipes(event => {
         "catalyst":{"item":"kubejs:frostfire_double_plate"},
         "energy":120,
         "input0":{
-            "amount":8,
-            "tag":"forge:propylene"
-        },
-        "input1":{
             "amount":16,
-            "tag":"forge:ethylene"
+            "tag":"forge:lpg"
         },
+        "input1":{},
         "result":{
             "amount": 16,
-            "fluid":"tfmg:liquid_plastic"
+            "fluid":"kubejs:liquid_plastic"
         }
     })
     
@@ -392,25 +380,17 @@ ServerEvents.recipes(event => {
                 "amount": 500
             },
             {
-                "fluid": "tfmg:liquid_plastic",
+                "fluid": "kubejs:liquid_plastic",
                 "amount": 500
             }
         ],
         "results": [
           {
-            "item": "tfmg:plastic_sheet"
+            "item": "kubejs:plastic_chunk"
           }
         ]
     })
-    event.recipes.create.pressing(Item.of('immersiveengineering:plate_duroplast').withChance(0.5), 'tfmg:plastic_sheet')
-
-    //流体管道
-    const PipeMaterials = ['steel', 'cast_iron', 'brass', 'aluminum', 'plastic']
-    let pipe = (material) => {
-      event.remove({output:"tfmg:"+material+'_pipe'})
-      event.recipes.createItemApplication('tfmg:'+material+'_pipe', ['create:fluid_pipe', '#forge:ingots/'+material])
-    }
-    PipeMaterials.forEach((id) => pipe(id))
+    event.recipes.create.pressing(Item.of('immersiveengineering:plate_duroplast').withChance(0.5), 'kubejs:plastic_chunk')
 
     //高级电子元件
     event.remove({id:"immersiveengineering:blueprint/component_electronic_adv"})
@@ -424,20 +404,16 @@ ServerEvents.recipes(event => {
         ], 'immersiveengineering:circuit_board', [
         event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:silicon']),
         event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'immersiveengineering:component_electronic']),
-        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:dusts/hellforged']),
-        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'tfmg:screw']),
-        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'tfmg:screwdriver'])
+        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:dusts/hellforged'])
     ]).transitionalItem('kubejs:incomplete_component_electronic_adv').loops(5)
 
     event.recipes.create.sequenced_assembly([
       Item.of('immersiveengineering:component_electronic_adv')
       ], 'immersiveengineering:circuit_board', [
-      event.recipes.createFilling('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', Fluid.of('tfmg:lubrication_oil', 25)]),
+      event.recipes.createFilling('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', {fluidTag: 'forge:lubricant', amount:25}]),
       event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:silicon']),
       event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'immersiveengineering:component_electronic']),
-      event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:dusts/hellforged']),
-      event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'tfmg:screw']),
-      event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'tfmg:screwdriver'])
+      event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:dusts/hellforged'])
     ]).transitionalItem('kubejs:incomplete_component_electronic_adv').loops(5)
 
     //散热器模块
@@ -458,16 +434,16 @@ ServerEvents.recipes(event => {
         'DAC'  
     ], {
         B: 'create:brass_casing',
-        A: 'tfmg:plastic_sheet',
+        A: 'kubejs:plastic_chunk',
         C: 'immersiveengineering:component_electronic_adv',
         D: 'immersiveengineering:radiator'
     })
     event.recipes.create.sequenced_assembly([
         'kubejs:electronic_engineering'
         ], 'create:brass_casing', [
-            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'tfmg:plastic_sheet']),
+            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'kubejs:plastic_chunk']),
             event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'immersiveengineering:component_electronic_adv']),
             event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'immersiveengineering:radiator']),
-            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'tfmg:plastic_sheet'])
+            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'kubejs:plastic_chunk'])
     ]).transitionalItem('kubejs:incomplete_electronic_engineering').loops(1)
 })
