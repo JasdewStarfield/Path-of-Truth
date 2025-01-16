@@ -55,22 +55,12 @@ ServerEvents.recipes(event => {
         ]
     )
 
-    //合成破晓仪式石
-    event.recipes.botania.petal_apothecary('bloodmagic:lightritualstone', 
-        [
-            'bloodmagic:masterritualstone',
-            'kubejs:electronic_engineering',
-            'immersiveengineering:component_electronic_adv'
-        ]
-    )
     //锻造血腥法杖
     event.recipes.botania.petal_apothecary('irons_spellbooks:blood_staff', 
         [
             'botania:fire_rod',
             'irons_spellbooks:blood_upgrade_orb',
             'immersiveengineering:steel_post',
-            'bloodmagic:strong_tau',
-            'bloodmagic:weakbloodshard',
             'minecraft:dragon_breath'
         ]
     )
@@ -138,7 +128,6 @@ ServerEvents.recipes(event => {
     event.recipes.botania.runic_altar('irons_spellbooks:blank_rune', 
         [
             'botania:rune_mana', 
-            'bloodmagic:blankrune',
             'botania:mana_powder'
         ], 
         10000
@@ -292,7 +281,7 @@ ServerEvents.recipes(event => {
             A:'botania:terrasteel_ingot',
             B:'botania:ender_air_bottle',
             C:'botania:dragonstone',
-            D:'bloodmagic:magicianbloodorb'
+            D:'minecraft:bedrock'
         }
     )
 
@@ -356,7 +345,7 @@ ServerEvents.recipes(event => {
             '#forge:eggs',
             'alexsmobs:farseer_arm',
             'botania:corporea_spark',
-            'bloodmagic:lightritualstone'
+            'minecraft:bedrock'
         ]
     )
 
@@ -367,7 +356,7 @@ ServerEvents.recipes(event => {
             'kubejs:electronic_engineering', 
             'botania:redstone_root',
             'immersiveengineering:generator',
-            'bloodmagic:strengthenedcatalyst'
+            'minecraft:bedrock'
         ], 
         5000
     )
@@ -442,9 +431,9 @@ ServerEvents.recipes(event => {
             'minecraft:dragon_egg', 
             'irons_spellbooks:mana_upgrade_orb',
             'botania:mana_bomb',
-            'bloodmagic:archmagebloodorb',
+            'minecraft:beacon',
             'minecraft:budding_amethyst',
-            'bloodmagic:lightritualstone',
+            'minecraft:bedrock',
             'alexsmobs:transmutation_table',
             'botania:blacker_lotus'
         ], 
