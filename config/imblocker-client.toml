@@ -1,6 +1,3 @@
-#Checking every tick is not efficient, how about check once every several tick?
-#Range: > 1
-checkInterval = 2
 #Matched screens would disable your IME
 screenBlacklist = []
 #Matched screens would enable your IME
@@ -18,4 +15,7 @@ recoveredScreens = ["forgeconfigscreens:fuzs.forgeconfigscreens.client.gui.scree
 useExperimental = true
 #Disable IME when typing commands
 checkCommandChat = true
+#Check once every several milliseconds
+#Range: > 1
+checkIntervalMilli = 100
 

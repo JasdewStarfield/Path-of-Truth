@@ -3,7 +3,7 @@
 [Builtin]
 	#Range: 0 ~ 4
 	Difficulty = 2
-	Version = "2.3.10e"
+	Version = "2.3.10"
 
 [Difficulty]
 	#Defines the minimum habitable temperature
