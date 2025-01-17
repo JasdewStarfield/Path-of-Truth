@@ -3,8 +3,26 @@
 模组名列表：
 铁魔法：irons_spellbooks
 植物魔法：botania
-血魔法：bloodmagic
+诡厄巫法：goety
 */
+
+/*
+//保留nbt的有序合成
+    //可以用于背包、法术书升级一类的需要保留“内容”的配方
+    //result, shape, keys：你正常写有序合成的部分，直接粘贴就行
+    //source：你需要保留nbt的那个物品
+    //extraNBTs：额外添加的nbt，可以用来改法术书容量之类的
+    function keepNBTShapedCrafting(result, shape, keys, source, extraNBTs) {
+        let resultItem = Item.of(result)
+        event.shaped(resultItem, shape, keys).modifyResult((grid, stack) => {
+            let sourceNBTs = grid.find(source).nbt
+            stack.nbt.merge(sourceNBTs)
+            stack.nbt.merge(extraNBTs)
+            return stack
+        })
+    }
+*/
+
 /*
 加入有序配方模板
 event.shaped(Item.of('名字',数量),

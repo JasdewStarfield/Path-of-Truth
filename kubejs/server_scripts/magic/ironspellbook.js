@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
             A:'botania:mana_diamond',
             B:'irons_spellbooks:hogskin',
             C:'irons_spellbooks:gold_spell_book',
-            D:'bloodmagic:apprenticebloodorb'
+            D:'minecraft:bedrock'
         },
         'irons_spellbooks:gold_spell_book',
         {ISB_Spells: {maxSpells: 10}}
