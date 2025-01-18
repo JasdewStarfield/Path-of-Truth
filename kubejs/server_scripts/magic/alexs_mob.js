@@ -47,41 +47,9 @@ ServerEvents.recipes(event => {
         ]
     )
     //青猪苔藓转化
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'minecraft:porkchop'
-        },
-        "baseinput": {
-            "item": 'minecraft:moss_block'
-        },
-        "output": {
-            "item": 'undergarden:mogmoss'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-    })
+    
     //沙漠蛛蜂合成
-    event.custom({
-        "type": "bloodmagic:soulforge",
-        "drain": 128.0,//单次吸收量
-        "input0": {
-            "tag": 'balm:eggs'
-        },
-        "input1": {
-            "item": 'alexsmobs:guster_eye'
-        },
-        "input2": {
-            "item": 'alexsmobs:cockroach_wing'
-        },
-        "input3": {
-            "item": 'minecraft:spider_eye'
-        },
-        "minimumDrain": 240.0,//要求使用材料内灵魂的最低量
-        "output": {
-            "count": 1,//生成数量
-            "item": 'alexsmobs:spawn_egg_tarantula_hawk'
-        }
-    })
+    
     //走鹃
     event.recipes.botania.runic_altar('alexsmobs:spawn_egg_roadrunner', 
         [
@@ -137,111 +105,23 @@ ServerEvents.recipes(event => {
     //龙虾复制
     event.recipes.botania.mana_infusion('2x alexsmobs:spawn_egg_lobster', 'alexsmobs:spawn_egg_lobster', 1000,'botania:conjuration_catalyst')
     //酋长蟹及其复制
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'immersiveengineering:wirecutter'
-        },
-        "baseinput": {
-            "item": 'alexsmobs:spawn_egg_lobster'
-        },
-        "output": {
-            "item": 'collectorsreap:chieftain_crab_spawn_egg'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-    })
     event.recipes.botania.mana_infusion('2x collectorsreap:chieftain_crab_spawn_egg', 'collectorsreap:chieftain_crab_spawn_egg', 1000,'botania:conjuration_catalyst')
     //螳螂虾及其复制
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'artifacts:fire_gauntlet'
-        },
-        "baseinput": {
-            "item": 'alexsmobs:spawn_egg_lobster'
-        },
-        "output": {
-            "item": 'alexsmobs:spawn_egg_mantis_shrimp'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-    })
     event.recipes.botania.mana_infusion('2x alexsmobs:spawn_egg_mantis_shrimp', 'alexsmobs:spawn_egg_mantis_shrimp', 5000,'botania:conjuration_catalyst')
     //皱鳃鲨和锤头鲨
-    event.custom({
-        "type": "bloodmagic:altar",
-        "altarSyphon": 5000,
-        "consumptionRate": 50,
-        "drainRate": 0,
-        "input": {
-            "item": 'alexsmobs:spawn_egg_lobster'
-        },
-        "output": {
-            "item": 'alexsmobs:spawn_egg_frilled_shark'
-        },
-        "upgradeLevel": 2
-    })
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'immersiveengineering:hammer'
-        },
-        "baseinput": {
-            "item": 'alexsmobs:spawn_egg_frilled_shark'
-        },
-        "output": {
-            "item": 'alexsmobs:spawn_egg_hammerhead_shark'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-    })
+    
     //抹香鲸
     event.shapeless(Item.of('alexsmobs:spawn_egg_cachalot_whale',1),
         [
             'alexsmobs:spawn_egg_hammerhead_shark',
-            'bloodmagic:largebloodstonebrick'
+            'minecraft:bedrock'
         ]
     )
     //拟态章鱼
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'alexsmobs:mimicream'
-        },
-        "baseinput": {
-            "item": 'alexsmobs:spawn_egg_lobster'
-        },
-        "output": {
-            "item": 'alexsmobs:spawn_egg_mimic_octopus'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-    })
+    
     //飞鱼
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'alexsmobs:cockroach_wing'
-        },
-        "baseinput": {
-            "item": 'alexsmobs:spawn_egg_lobster'
-        },
-        "output": {
-            "item": 'alexsmobs:spawn_egg_flying_fish'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-    })
+    
     //鳌虫刷怪蛋（海洋/沙漠交叉）
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'alexsmobs:guster_eye'
-        },
-        "baseinput": {
-            "item": 'alexsmobs:spawn_egg_lobster'
-        },
-        "output": {
-            "item": 'alexsmobs:spawn_egg_triops'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-    })
 
     //丛林系
     //香蕉蛞蝓及其复制
@@ -256,106 +136,20 @@ ServerEvents.recipes(event => {
     )
     event.recipes.botania.mana_infusion('2x alexsmobs:spawn_egg_banana_slug', 'alexsmobs:spawn_egg_banana_slug', 500,'botania:conjuration_catalyst')
     //科莫多巨蜥
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'blue_skies:glowing_poison_stone'
-        },
-        "baseinput": {
-            "item": 'alexsmobs:spawn_egg_banana_slug'
-        },
-        "output": {
-            "item": 'alexsmobs:spawn_egg_komodo_dragon'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-    })
+    
     //弹涂鱼
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'minecraft:mangrove_propagule'
-        },
-        "baseinput": {
-            "item": 'alexsmobs:spawn_egg_banana_slug'
-        },
-        "output": {
-            "item": 'alexsmobs:spawn_egg_mudskipper'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-    })
+    
     //鸭嘴兽
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'minecraft:leather'
-        },
-        "baseinput": {
-            "item": 'alexsmobs:spawn_egg_banana_slug'
-        },
-        "output": {
-            "item": 'alexsmobs:spawn_egg_platypus'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-    })
+    
     //臭鼬
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'artifacts:whoopee_cushion'
-        },
-        "baseinput": {
-            "item": 'alexsmobs:spawn_egg_banana_slug'
-        },
-        "output": {
-            "item": 'alexsmobs:spawn_egg_skunk'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-    })
 
     //两栖系
     //水龟
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'minecraft:scute'
-        },
-        "baseinput": {
-            "item": 'botania:metamorphic_swamp_stone'
-        },
-        "output": {
-            "item": 'alexsmobs:terrapin_egg'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-    })
+    
     //凯门鳄
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'alexsmobs:crocodile_scute'
-        },
-        "baseinput": {
-            "item": 'botania:metamorphic_swamp_stone'
-        },
-        "output": {
-            "item": 'alexsmobs:caiman_egg'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-    })
-    //大鳄龟
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'alexsmobs:caiman_egg'
-        },
-        "baseinput": {
-            "item": 'alexsmobs:terrapin_egg'
-        },
-        "output": {
-            "item": 'alexsmobs:spawn_egg_alligator_snapping_turtle'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-    })
 
+    //大鳄龟
+    
     //曦鹤
     event.recipes.botania.terra_plate('alexsmobs:spawn_egg_sunbird', 
         [
