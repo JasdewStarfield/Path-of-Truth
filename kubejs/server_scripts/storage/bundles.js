@@ -53,12 +53,12 @@ ServerEvents.recipes(event => {
         },
         "template": []
     })
-    //钻石（恶魔合金）
+    //钻石（待修改）
     event.remove({id:'metalbundles:diamond_bundle_smithing_transform'})
     event.custom({
         "type": "metalbundles:legacy_smithing_transform",
         "addition": {
-            "item": 'bloodmagic:ingot_hellforged'
+            "item": 'minecraft:bedrock'
         },
         "base": {
             "item": "metalbundles:golden_bundle"
