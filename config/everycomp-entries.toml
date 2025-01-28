@@ -75,6 +75,12 @@
 		[types.wood_type.createdieselgenerators]
 			chip_wood = true
 
+		[types.wood_type.goety]
+			haunted = true
+			rotten = true
+			windswept = true
+			pine = true
+
 	[types.leaves_type]
 
 		[types.leaves_type.biomesoplenty]
@@ -122,6 +128,12 @@
 		[types.leaves_type.mythicbotany]
 			dreamwood = true
 
+		[types.leaves_type.goety]
+			hardened = true
+			rotten = true
+			windswept = true
+			pine = true
+
 	[types.stone_type]
 
 		[types.stone_type.botania]
@@ -149,6 +161,12 @@
 
 		[types.stone_type.create_confectionery]
 			caramel = true
+
+		[types.stone_type.goety]
+			shade_stone = true
+			crypt_stone = true
+			highrock = true
+			siltstone = true
 
 #Disables specific entries
 [entries]
