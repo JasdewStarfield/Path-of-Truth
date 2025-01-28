@@ -763,7 +763,7 @@
 				"&b需要注意的是，软管滑轮是通过其软管放置面之上的液体量来计算是否无尽的，所以你需要对岩浆池进行一次探底）&r"
 				"&d软管滑轮还可以自动放置岩浆，所以你也许可以在主世界搞一个无尽的岩浆池……大概）&r"
 			]
-			icon: "bloodmagic:lavacrystal"
+			icon: "artifacts:fire_gauntlet"
 			id: "794FE24A776917F2"
 			rewards: [{
 				count: 4

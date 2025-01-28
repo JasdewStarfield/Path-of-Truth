@@ -210,7 +210,7 @@
 				"你获得了钢锭！这意味着你可以在工业和魔法上继续推进了！"
 				"魔法也需要质量更好的金属作为基础发展）"
 			]
-			icon: "tfmg:steel_ingot"
+			icon: "immersiveengineering:ingot_steel"
 			id: "7A7C0A48248FA32B"
 			rewards: [{
 				id: "10F5829FF85C1C4B"
@@ -232,8 +232,15 @@
 			size: 2.0d
 			subtitle: "钢铁雄心 IV"
 			tasks: [{
-				id: "7E42EFEA82C07766"
-				item: "tfmg:steel_ingot"
+				id: "3D88033F132A0248"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/steel"
+					}
+				}
+				title: "Any #forge:ingots/steel"
 				type: "item"
 			}]
 			title: "团结就是力量"
