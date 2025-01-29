@@ -168,6 +168,16 @@
 			highrock = true
 			siltstone = true
 
+		[types.stone_type.outer_end]
+			himmel = true
+
+		[types.stone_type.blue_skies]
+			taratite = true
+			rimestone = true
+			brumble = true
+			umber = true
+			cinderstone = true
+
 #Disables specific entries
 [entries]
 
