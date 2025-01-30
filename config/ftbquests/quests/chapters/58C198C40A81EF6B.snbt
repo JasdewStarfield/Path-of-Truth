@@ -431,38 +431,40 @@
 			]
 			description: [
 				"&b【完成后解锁主线章节：2M 鲜血与灵魂】&r"
-				"你已经初步了解了魔法的力量，那么，做一个血之祭坛出来吧。"
-				"我们的魔法故事将进入新的篇章，你也将感受到鲜血和灵魂的力量。"
+				"你已经初步了解了魔法的力量，那么，准备一个收集灵魂的图腾吧。"
+				"我们的魔法故事将进入新的篇章，你也将感受到属于灵魂的力量。"
 				""
-				"&o&c新篇章：指献祭一本书来做祭坛&r&r"
+				"&o&c新篇章：指献祭一本书来做图腾&r&r"
 			]
 			icon_scale: 1.2d
 			id: "708CC78EEB470115"
-			rewards: [
-				{
-					id: "5543440A93455087"
-					item: {
-						Count: 1
-						id: "bloodmagic:sacrificialdagger"
-						tag: { }
+			rewards: [{
+				id: "596B4FB483640300"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "goety:black_book"
 					}
-					type: "item"
 				}
-				{
-					id: "1D0F630C6D896177"
-					item: "bloodmagic:daggerofsacrifice"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			shape: "pentagon"
 			size: 2.0d
 			subtitle: "你，准备好了吗？"
 			tasks: [{
-				id: "3539EB568810683D"
-				item: "bloodmagic:altar"
+				id: "433D20074EBE5A6E"
+				item: {
+					Count: 1
+					id: "goety:totem_of_roots"
+					tag: {
+						"Max Souls": 100
+						Souls: 0
+					}
+				}
 				type: "item"
 			}]
-			title: "【终点】牺牲与献祭"
+			title: "【终点】灵魂的根源"
 			x: 0.0d
 			y: 2.0d
 		}

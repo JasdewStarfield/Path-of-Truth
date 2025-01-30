@@ -88,11 +88,18 @@
 			id: "59793C79A0C3B12B"
 			subtitle: "基本仪式"
 			tasks: [{
-				id: "4B5822E77E2D37BD"
-				item: "bloodmagic:altar"
+				id: "1B831A36C37E9436"
+				item: {
+					Count: 1
+					id: "goety:totem_of_roots"
+					tag: {
+						"Max Souls": 100
+						Souls: 0
+					}
+				}
 				type: "item"
 			}]
-			title: "鲜血涌动"
+			title: "灵魂根源"
 			x: 0.0d
 			y: -2.0d
 		}
@@ -150,13 +157,20 @@
 		{
 			dependencies: ["59793C79A0C3B12B"]
 			id: "45311CA8EA1B26BA"
-			subtitle: "存血的珠子"
+			subtitle: "无尽重生"
 			tasks: [{
-				id: "5B63E5FD1F9465E0"
-				item: "bloodmagic:weakbloodorb"
+				id: "3D91F2D92D4C1483"
+				item: {
+					Count: 1
+					id: "goety:totem_of_souls"
+					tag: {
+						"Max Souls": 10000
+						Souls: 0
+					}
+				}
 				type: "item"
 			}]
-			title: "血滴子"
+			title: "更强的赝品"
 			x: 3.0d
 			y: -4.0d
 		}

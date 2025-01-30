@@ -5,7 +5,7 @@
 	filename: "21E029A01EA15F54"
 	group: "12EA2EE194EF67D3"
 	hide_quest_details_until_startable: true
-	icon: "bloodmagic:weakbloodorb"
+	icon: "goety:spent_totem"
 	id: "21E029A01EA15F54"
 	images: [
 		{
@@ -39,34 +39,22 @@
 		{
 			dependencies: ["708CC78EEB470115"]
 			description: [
-				"有关于血魔法的大部分内容都在这本书里。"
-				"如果不在，那么你最好自己查一下JEI）"
-				"为什么让你查jei呢，因为配方我们改动的可不少）"
+				"收集灵魂之力当然是为了再次运用它们。"
+				"比如用灵魂稍微激活一下绿宝石真正的力量……"
+				"村民喜欢这些宝石真的只是因为光泽吗？"
 			]
 			hide_until_deps_complete: true
-			icon: {
-				Count: 1
-				id: "patchouli:guide_book"
-				tag: {
-					"patchouli:book": "bloodmagic:guide"
-				}
-			}
+			icon: "goety:magic_emerald"
 			id: "11E3776CE5E23255"
 			shape: "octagon"
 			size: 1.5d
-			subtitle: "首先，你需要找到教程"
+			subtitle: "只要稍微加一点力……"
 			tasks: [{
-				id: "015B595F49230663"
-				item: {
-					Count: 1
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "bloodmagic:guide"
-					}
-				}
+				id: "3EB894FECE754894"
+				item: "goety:magic_emerald"
 				type: "item"
 			}]
-			title: "【起点】了解鲜血之力"
+			title: "【起点】灵魂冲击"
 			x: 0.0d
 			y: 0.0d
 		}
@@ -149,31 +137,42 @@
 		{
 			dependencies: ["11E3776CE5E23255"]
 			description: [
-				"而且你在游戏里也没有可以送戒指的人（"
-				"所以把钻石丢进血祭坛里，让它成为你的力量源泉吧）"
-				"&o&c*右键宝珠可以牺牲自己的血量存入其中，也可以通过血祭坛进行灌注&r&r"
+				"在制作出一个空灵魂图腾后，你需要&a在两侧安装绿宝石&r……让其真正“活”过来。然而灵魂能量的获取仍然&5需要你击杀生物。&r"
+				"当这个图腾的灵魂能量达到2500以上后，因为彻底激怒了灾厄村民，&4一些针对你的猎杀将会到来……&r"
+				"如果你拥有满灵魂能量的图腾，那么它就&b具有重生图腾的性质&r，可以让你&c复活一次&r！这当然会清空灵魂，但是也是值得的，毕竟这个世界死亡的代价可不小。"
+				""
+				"&o&d*也许你应该庆幸这一步不需要机械手……但是之后的一些魔法设备是需要的。&r&r"
+				"{@pagebreak}"
+				"需要注意的是，灵魂能量过高引来的猎杀&c会包括劫掠兽&r，注意你的住所和工地——那些横冲直撞的大家伙可&3不会管自己面前是不是机器（&r"
 			]
-			icon: "bloodmagic:weakbloodorb"
+			icon: "goety:spent_totem"
 			id: "57B126A840CCD6E4"
 			rewards: [{
-				id: "4A9DD1F061EDC83B"
-				item: "botania:black_lotus"
+				id: "341F670CA953D2F3"
+				item: "goety:treasure_pouch"
 				type: "item"
 			}]
-			subtitle: "钻石不是拿来做戒指的"
+			subtitle: "画魂点睛"
 			tasks: [
 				{
-					id: "7EC352F37B08C886"
-					item: "bloodmagic:weakbloodorb"
+					id: "5A1DA7696CA402B0"
+					item: "goety:spent_totem"
 					type: "item"
 				}
 				{
-					id: "132AB4E34ABC5671"
-					item: "minecraft:diamond"
+					id: "61A10C7075AB5467"
+					item: {
+						Count: 1
+						id: "goety:totem_of_souls"
+						tag: {
+							"Max Souls": 10000
+							Souls: 0
+						}
+					}
 					type: "item"
 				}
 			]
-			title: "以血为誓"
+			title: "以鲜血换取灵魂！"
 			x: 0.0d
 			y: -2.0d
 		}
@@ -934,15 +933,20 @@
 		}
 		{
 			dependencies: ["57B126A840CCD6E4"]
-			description: ["按规定放置熏香祭坛，可以让你的自我献祭更加有效……"]
+			description: [
+				"作为最早接触到的元素核心，你现在就可以&6聚合地元素&r，并用其手动量产玉石。"
+				"这下不用&a去山峰上挖矿了&r，对吧……"
+				"元素核心当然&e还有更多的作用&r，所以最好&c不要只做一个。&r"
+			]
+			icon: "goety:jade"
 			id: "41990A4F90A100DA"
-			subtitle: "失血加成"
+			subtitle: "足够的玉，简称玉足"
 			tasks: [{
-				id: "67AC0274A819CCD0"
-				item: "bloodmagic:incensealtar"
+				id: "27593D343BF67B47"
+				item: "kubejs:earth_elemental_core"
 				type: "item"
 			}]
-			title: "虔诚奉献"
+			title: "人造玉石"
 			x: 0.0d
 			y: -4.0d
 		}
