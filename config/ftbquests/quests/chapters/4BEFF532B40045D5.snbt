@@ -545,17 +545,6 @@
 			subtitle: "读万卷书"
 			tasks: [
 				{
-					id: "6623615B26788597"
-					item: {
-						Count: 1
-						id: "patchouli:guide_book"
-						tag: {
-							"patchouli:book": "bloodmagic:guide"
-						}
-					}
-					type: "item"
-				}
-				{
 					id: "5FB37FC267CF4F69"
 					item: "botania:lexicon"
 					type: "item"
@@ -598,6 +587,17 @@
 						id: "patchouli:guide_book"
 						tag: {
 							"patchouli:book": "alexsmobsinteraction:ami_interaction_wiki"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1DB636B29234EA05"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "goety:black_book"
 						}
 					}
 					type: "item"
