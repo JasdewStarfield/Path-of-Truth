@@ -52,6 +52,8 @@ ServerEvents.recipes(event => {
     'irons_spellbooks:arcane_essence', 'irons_spellbooks:magic_cloth' )
     
     //修改法术书系列配方
+    event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:copper_spell_book'},
+        'minecraft:string', 'irons_spellbooks:arcane_essence')
     event.remove({id:'irons_spellbooks:iron_spell_book'})
     event.remove({id:'irons_spellbooks:gold_spell_book'})
     event.remove({id:'irons_spellbooks:diamond_spell_book'})

@@ -40,8 +40,10 @@
 			dependencies: ["708CC78EEB470115"]
 			description: [
 				"收集灵魂之力当然是为了再次运用它们。"
-				"比如用灵魂稍微激活一下绿宝石真正的力量……"
+				"比如用灵魂稍微激活一下&a绿宝石&r真正的力量……"
 				"村民喜欢这些宝石真的只是因为光泽吗？"
+				""
+				"&o&c*注意：利用图腾的合成会消耗1灵魂，如果灵魂不足，那么图腾将被消耗！&r&r"
 			]
 			hide_until_deps_complete: true
 			icon: "goety:magic_emerald"

@@ -125,9 +125,6 @@
 		[types.leaves_type.outer_end]
 			azure = true
 
-		[types.leaves_type.mythicbotany]
-			dreamwood = true
-
 		[types.leaves_type.goety]
 			hardened = true
 			rotten = true

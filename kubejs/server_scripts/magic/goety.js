@@ -40,5 +40,56 @@
     //榴石，月长石，透辉石，霜钢，扼塞，缪铁，镰鼬铁，炙铁，绛紫晶，天闪石，锌，锡
 
 ServerEvents.recipes(event => {
+    //根之图腾移除与合成
+    //根之图腾移除
+    event.remove({output:'goety:totem_of_roots'})
+    //根之图腾合成
+    event.shaped(
+        Item.of('goety:totem_of_roots'),
+        [
+            ' A ',
+            'BCB',
+            ' D '
+        ],
+        {
+            B: '#botania:livingwood_logs',
+            A: 'irons_spellbooks:arcane_essence',
+            C: 'irons_spellbooks:copper_spell_book',
+            D: 'botania:livingrock'
+        }
+    )
+    
+    
+    //灵魂图腾移除与新激活
+    event.remove({output:'goety:totem_of_souls'})
+    //耗尽的灵魂图腾合成
+    event.shaped(
+        Item.of('goety:spent_totem'),
+        [
+            ' A ',
+            'BCB',
+            ' D '
+        ],
+        {
+            A: 'irons_spellbooks:arcane_ingot',
+            C: 'goety:magic_emerald',
+            D: 'goety:totem_of_roots',
+            B: 'botania:livingrock'
+        }
+    )
+    //灵魂图腾合成
+    event.shaped(
+        Item.of('goety:totem_of_souls'),
+        [
+            'A A',
+            ' B ',
+            '   '
+        ],
+        {
+            B: 'goety:spent_totem',
+            A: 'goety:magic_emerald'
+        }
+    )
+    
     //魔力粉-奥术源质兑换
 })
