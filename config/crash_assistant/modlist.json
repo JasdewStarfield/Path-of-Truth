@@ -43,9 +43,9 @@
     "modId": "ambientsounds",
     "version": "6.1.4"
   },
-  "amendments-1.20-1.2.14.jar": {
+  "amendments-1.20-1.2.16.jar": {
     "modId": "amendments",
-    "version": "1.20-1.2.14"
+    "version": "1.20-1.2.16"
   },
   "Amplified_Nether_1.20.x_v1.2.5.jar": {
     "modId": "amplified_nether",
@@ -135,9 +135,9 @@
     "modId": "blue_skies",
     "version": "1.3.31"
   },
-  "blueprint-1.20.1-7.1.0.jar": {
+  "blueprint-1.20.1-7.1.1.jar": {
     "modId": "blueprint",
-    "version": "7.1.0"
+    "version": "7.1.1"
   },
   "bocchium-1.20.1-0.0.3.jar": {
     "modId": "bocchium",
@@ -183,9 +183,9 @@
     "modId": "chat_heads",
     "version": "0.13.11"
   },
-  "chestsearchbar-1.20.1-1.4.5.jar": {
+  "chestsearchbar-1.20.1-1.5.0.jar": {
     "modId": "chestsearchbar",
-    "version": "1.4.5"
+    "version": "1.5.0"
   },
   "ChickenNerf-Reforged+1.20.1-1.0.0.jar": {
     "modId": "chicken_nerf",
@@ -227,9 +227,9 @@
     "modId": "collective",
     "version": "7.87"
   },
-  "collectorsreap-1.20.1-1.3.2.jar": {
+  "collectorsreap-1.20.1-1.3.3.jar": {
     "modId": "collectorsreap",
-    "version": "1.3.2"
+    "version": "1.3.3"
   },
   "comforts-forge-6.4.0+1.20.1.jar": {
     "modId": "comforts",
@@ -287,9 +287,9 @@
     "modId": "createdynlight",
     "version": "1.0.2"
   },
-  "create-food-1.20.1-1.1.7-forge.jar": {
+  "create-food-1.20.1-1.1.8-forge.jar": {
     "modId": "createfood",
-    "version": "1.1.7-forge"
+    "version": "1.1.8-forge"
   },
   "create-new-age-forge-1.20.1-1.1.2.jar": {
     "modId": "create_new_age",
@@ -491,9 +491,9 @@
     "modId": "entityculling",
     "version": "1.7.2"
   },
-  "everycomp-1.20-2.7.14.jar": {
+  "everycomp-1.20-2.7.15.jar": {
     "modId": "everycomp",
-    "version": "1.20-2.7.14"
+    "version": "1.20-2.7.15"
   },
   "ExplorersCompass-1.20.1-1.3.3-forge.jar": {
     "modId": "explorerscompass",
@@ -575,9 +575,9 @@
     "modId": "fusion",
     "version": "1.2.3"
   },
-  "fzzy_config-0.6.3+1.20.1+forge.jar": {
+  "fzzy_config-0.6.4+1.20.1+forge.jar": {
     "modId": "fzzy_config",
-    "version": "0.6.3+1.20.1+forge"
+    "version": "0.6.4+1.20.1+forge"
   },
   "geckolib-forge-1.20.1-4.7.jar": {
     "modId": "geckolib",
@@ -808,7 +808,7 @@
     "modId": "mechanicalbotania",
     "version": "1.0.1"
   },
-  "MEED-1.20.1-5.9.jar": {
+  "MEED-1.20.1-6.0.jar": {
     "modId": "moderately_enough_effect_desc",
     "version": "3.3.0"
   },
@@ -836,9 +836,9 @@
     "modId": "mods_optimizer",
     "version": "2.0.0"
   },
-  "moonlight-1.20-2.13.55-forge.jar": {
+  "moonlight-1.20-2.13.58-forge.jar": {
     "modId": "moonlight",
-    "version": "1.20-2.13.55"
+    "version": "1.20-2.13.58"
   },
   "moremobvariants-forge+1.20.1-1.3.0.1.jar": {
     "modId": "moremobvariants",
@@ -864,9 +864,9 @@
     "modId": "naturescompass",
     "version": "1.20.1-1.11.2-forge"
   },
-  "NekosEnchantedBooks-1.19.3-2.0.0.jar": {
+  "NekosEnchantedBooks-1.19.3-2.0.2.jar": {
     "modId": "nebs",
-    "version": "2.0.0"
+    "version": "2.0.2"
   },
   "Neruina-2.1.2-forge+1.20.1.jar": {
     "modId": "neruina",
@@ -1096,9 +1096,9 @@
     "modId": "snowrealmagic",
     "version": "10.5.4"
   },
-  "snowundertrees-1.20.1-1.4.6.jar": {
+  "snowundertrees-1.20.1-1.4.7.jar": {
     "modId": "snowundertrees",
-    "version": "1.4.6"
+    "version": "1.4.7"
   },
   "snowyspirit-1.20-3.0.10.jar": {
     "modId": "snowyspirit",
@@ -1112,13 +1112,13 @@
     "modId": "sodiumoptionsapi",
     "version": "1.0.8"
   },
-  "sophisticatedbackpacks-1.20.1-3.22.5.1179.jar": {
+  "sophisticatedbackpacks-1.20.1-3.23.1.1184.jar": {
     "modId": "sophisticatedbackpacks",
-    "version": "3.22.5.1179"
+    "version": "3.23.1.1184"
   },
-  "sophisticatedcore-1.20.1-1.1.5.841.jar": {
+  "sophisticatedcore-1.20.1-1.2.1.845.jar": {
     "modId": "sophisticatedcore",
-    "version": "1.1.5.841"
+    "version": "1.2.1.845"
   },
   "sound-physics-remastered-forge-1.20.1-1.4.8.jar": {
     "modId": "sound_physics_remastered",

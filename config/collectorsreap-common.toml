@@ -1,5 +1,5 @@
 
-#Configure Collector's Reap
+#Enabled items
 [Items]
 	adzuki_gummy = true
 	aloe_gummy = true
@@ -138,11 +138,16 @@
 	vanilla_gummy = true
 	yellow_tea_gummy = true
 	yucca_gummy = true
+	pearly_claw = true
+	shimmering_apple = true
+	shimmering_pearl = true
+	stygian_pomegranate = true
+	urchin_dart = true
 
 [Behavior]
 	#Whether Lime Bushes require Bee pollination to reach final growth stage.
 	lime_pollination = false
-	#Whether Pomegranate Bushes require Bee pollination to reach final growth stage in overworld.
+	#Whether Pomegranate Bushes require Bee pollination to reach final growth stage in the Overworld.
 	pomegranate_pollination = false
 	#Whether bee pollination of bushes should occur much quicker (when Bee collides with it) rather than on Bee's AI scheduled timing. Use this if having issues with pollination.
 	fast_pollinate = false
