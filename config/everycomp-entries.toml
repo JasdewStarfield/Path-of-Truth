@@ -156,9 +156,6 @@
 			scoria = true
 			scorchia = true
 
-		[types.stone_type.create_confectionery]
-			caramel = true
-
 		[types.stone_type.goety]
 			shade_stone = true
 			crypt_stone = true

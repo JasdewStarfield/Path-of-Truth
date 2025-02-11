@@ -89,3 +89,10 @@
 	#max_effect: Optional. The maximum temperature effect the item can apply to the entity.
 	"Carried Item Temperatures" = []
 
+#Drains pressure from Create's netherite backtank if the player is in a hot/cold environment
+#Triggered by the set bonus for wearing a full set of netherite diving gear
+#Disabling these settings will not disable the heat/cold protection set bonus
+["Create Backtank"]
+	"Heat Drains Backtank" = true
+	"Cold Drains Backtank" = false
+

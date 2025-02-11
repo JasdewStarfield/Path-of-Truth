@@ -70,7 +70,7 @@
 	"Thermal Source Strength" = 0.75
 	#List of additional blocks that thermal sources can spread through
 	#Use this list if thermal sources aren't spreading through particular blocks that they should
-	"Thermal Source Spread Whitelist" = ["minecraft:iron_bars", "#minecraft:leaves", "create:encased_fluid_pipe"]
+	"Thermal Source Spread Whitelist" = ["minecraft:iron_bars", "minecraft:jungle_leaves", "minecraft:oak_leaves", "minecraft:spruce_leaves", "minecraft:dark_oak_leaves", "minecraft:acacia_leaves", "minecraft:birch_leaves", "minecraft:azalea_leaves", "minecraft:flowering_azalea_leaves", "minecraft:mangrove_leaves", "minecraft:cherry_leaves", "undergarden:smogstem_leaves", "undergarden:wigglewood_leaves", "undergarden:grongle_leaves", "outer_end:azure_leaves", "goety:rotten_leaves", "goety:windswept_leaves", "goety:pine_leaves", "goety:hardened_leaves", "biomesoplenty:null_leaves", "biomesoplenty:origin_leaves", "biomesoplenty:flowering_oak_leaves", "biomesoplenty:cypress_leaves", "biomesoplenty:snowblossom_leaves", "biomesoplenty:rainbow_birch_leaves", "biomesoplenty:fir_leaves", "biomesoplenty:pine_leaves", "biomesoplenty:red_maple_leaves", "biomesoplenty:orange_maple_leaves", "biomesoplenty:yellow_maple_leaves", "biomesoplenty:redwood_leaves", "biomesoplenty:mahogany_leaves", "biomesoplenty:jacaranda_leaves", "biomesoplenty:palm_leaves", "biomesoplenty:willow_leaves", "biomesoplenty:dead_leaves", "biomesoplenty:magic_leaves", "biomesoplenty:umbran_leaves", "biomesoplenty:hellbark_leaves", "biomesoplenty:empyreal_leaves", "blue_skies:bluebright_leaves", "blue_skies:starlit_leaves", "blue_skies:frostbright_leaves", "blue_skies:lunar_leaves", "blue_skies:dusk_leaves", "blue_skies:maple_leaves", "blue_skies:crystallized_leaves", "blue_skies:comet_leaves", "blue_skies:crescent_fruit_leaves", "snowyspirit:glow_lights_white", "snowyspirit:glow_lights_orange", "snowyspirit:glow_lights_magenta", "snowyspirit:glow_lights_light_blue", "snowyspirit:glow_lights_yellow", "snowyspirit:glow_lights_lime", "snowyspirit:glow_lights_pink", "snowyspirit:glow_lights_gray", "snowyspirit:glow_lights_light_gray", "snowyspirit:glow_lights_cyan", "snowyspirit:glow_lights_purple", "snowyspirit:glow_lights_blue", "snowyspirit:glow_lights_brown", "snowyspirit:glow_lights_green", "snowyspirit:glow_lights_red", "snowyspirit:glow_lights_black", "snowyspirit:glow_lights_prismatic", "create:encased_fluid_pipe"]
 	#List of additional blocks that thermal sources spread through
 	#Use this list if thermal sources are spreading through particular blocks that they shouldn't
 	"Thermal Source Spread Blacklist" = []
@@ -94,6 +94,10 @@
 		#The maximum amount of insulation that the hearth can provide
 		#Range: 0 ~ 10
 		"Hearth Effect Strength" = 10
+		#How often the hearth consumes fuel (in ticks)
+		#Lower numbers mean fuel is consumed faster. Setting to 0 disables fuel consumption
+		#Range: > 0
+		"Hearth Fuel Consumption Interval" = 40
 
 	["Thermal Sources".Boiler]
 		#Allows the boiler to automatically turn on/off based on nearby players' temperature
@@ -114,6 +118,10 @@
 		#The maximum amount of insulation that the boiler can provide
 		#Range: 0 ~ 10
 		"Boiler Warmth Strength" = 5
+		#How often the boiler consumes fuel (in ticks)
+		#Lower numbers mean fuel is consumed faster. Setting to 0 disables fuel consumption
+		#Range: > 0
+		"Boiler Fuel Consumption Interval" = 40
 
 	["Thermal Sources".Icebox]
 		#Allows the icebox to automatically turn on/off based on nearby players' temperature
@@ -134,4 +142,8 @@
 		#The maximum amount of insulation that the icebox can provide
 		#Range: 0 ~ 10
 		"Icebox Chill Strength" = 5
+		#How often the icebox consumes fuel (in ticks)
+		#Lower numbers mean fuel is consumed faster. Setting to 0 disables fuel consumption
+		#Range: > 0
+		"Icebox Fuel Consumption Interval" = 40
 
