@@ -601,8 +601,8 @@
 			id: "0ED88CF931E3698F"
 			subtitle: "炼钢！"
 			tasks: [{
-				id: "74DC00D591053690"
-				item: "tfmg:steel_ingot"
+				id: "73D8AD3772DE82AB"
+				item: "immersiveengineering:ingot_steel"
 				type: "item"
 			}]
 			x: -6.0d

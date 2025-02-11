@@ -38,35 +38,14 @@
 			}]
 			title: "背上行囊"
 			x: 0.0d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"你会发现，这个世界的一切地方都是冰冷的。"
-				"但这里没有一个父亲让你干掉……也没有霜之哀伤。"
-				"当然，有亡灵。"
-			]
-			hide_details_until_startable: true
-			hide_until_deps_complete: true
-			icon: "snowyspirit:snow_globe"
-			id: "6CA55CF413645302"
-			subtitle: "永恒寒冬……"
-			tasks: [{
-				id: "6A8DA287B49C1CF7"
-				title: "冰天雪地"
-				type: "checkmark"
-			}]
-			x: -2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6A1B42D208C780BD"]
-			description: [
-				"你会发现夜里这个世界会变得很冷）"
-				"这种时候就需要一些额外的手段来保全自己。"
-				"被冷死在家里是挺整蛊的事情，对吧？"
-				"记得看清自己当前的温度，6度以下或37度以上都是危险的。"
+				"基于二十四节气的变换，这里会有&c很热的夏天&r和&b很冷的冬天&r。"
+				"节气每7个游戏日就会推进，趁着&d春天暂时的温和气候&r，准备抵抗未来某些可能令人不适的节气或环境吧。"
+				"记得看清当前的环境温度，&410度以下或37度以上&r都是危险的。"
 				""
 				"具体的温度系统细节，可以参考&a【世界的表象】&r章节："
 				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6E08F7A257BCB99A\" } }"
@@ -88,7 +67,7 @@
 					type: "item"
 				}
 			]
-			title: "寒来暑往……是不可能的。"
+			title: "寒来暑往，秋收冬藏"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -125,8 +104,8 @@
 				type: "item"
 			}]
 			title: "复活点"
-			x: 0.0d
-			y: -2.0d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -190,7 +169,7 @@
 			]
 			title: "维度旅行者"
 			x: 0.0d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -421,7 +400,7 @@
 			}]
 			title: "懒人精选"
 			x: 0.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -486,7 +465,7 @@
 			]
 			title: "钓鱼人的准备"
 			x: 0.0d
-			y: 4.0d
+			y: 3.0d
 		}
 	]
 	subtitle: ["A Long Way to Go"]
