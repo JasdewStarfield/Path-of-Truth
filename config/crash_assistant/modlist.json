@@ -23,10 +23,6 @@
     "modId": "alltheleaks",
     "version": "0.1.0-beta+1.20.1-forge"
   },
-  "almanac-1.20.x-forge-1.0.2.jar": {
-    "modId": "almanac",
-    "version": "1.0.2"
-  },
   "almostunified-forge-1.20.1-0.9.4.jar": {
     "modId": "almostunified",
     "version": "1.20.1-0.9.4"
@@ -43,9 +39,9 @@
     "modId": "ambientsounds",
     "version": "6.1.4"
   },
-  "amendments-1.20-1.2.17.jar": {
+  "amendments-1.20-1.2.18.jar": {
     "modId": "amendments",
-    "version": "1.20-1.2.17"
+    "version": "1.20-1.2.18"
   },
   "Amplified_Nether_1.20.x_v1.2.5.jar": {
     "modId": "amplified_nether",
@@ -223,9 +219,9 @@
     "modId": "cold_sweat",
     "version": "2.3.12"
   },
-  "collective-1.20.1-7.87.jar": {
+  "collective-1.20.1-7.90.jar": {
     "modId": "collective",
-    "version": "7.87"
+    "version": "7.90"
   },
   "collectorsreap-1.20.1-1.3.3.jar": {
     "modId": "collectorsreap",
@@ -291,10 +287,6 @@
     "modId": "createdynlight",
     "version": "1.0.2"
   },
-  "create-food-1.20.1-1.1.8-forge.jar": {
-    "modId": "createfood",
-    "version": "1.1.8-forge"
-  },
   "create-new-age-forge-1.20.1-1.1.2.jar": {
     "modId": "create_new_age",
     "version": "1.1.2"
@@ -310,6 +302,10 @@
   "create_central_kitchen-1.20.1-for-create-0.5.1.f-1.3.12.jar": {
     "modId": "create_central_kitchen",
     "version": "1.3.12"
+  },
+  "create_cold_sweat-1.1.1.3.jar": {
+    "modId": "create_cold_sweat",
+    "version": "1.1.1.3"
   },
   "create_compressed_1.0.1_forge_1.20.1.jar": {
     "modId": "create_compressed",
@@ -358,6 +354,10 @@
   "createliquidfuel-2.1.1-1.20.1.jar": {
     "modId": "createliquidfuel",
     "version": "2.1.1-1.20.1"
+  },
+  "createnuclear-1.1.3-forge.jar": {
+    "modId": "createnuclear",
+    "version": "1.1.3"
   },
   "createpickywheels-forge-1.20.1-0.5.1.f-c.jar": {
     "modId": "createpickywheels",
@@ -418,6 +418,10 @@
   "defaultoptions-forge-1.20-18.0.1.jar": {
     "modId": "defaultoptions",
     "version": "18.0.1"
+  },
+  "despawntweaks-forge-1.0.0-1.20.1.jar": {
+    "modId": "despawntweaks",
+    "version": "1.0.0"
   },
   "deuf-1.20.1-1.3.jar": {
     "modId": "deuf",
@@ -511,13 +515,9 @@
     "modId": "extremesoundmuffler",
     "version": "3.48"
   },
-  "Fallingleaves-1.20.1-2.1.0.jar": {
-    "modId": "fallingleaves",
-    "version": "2.1.0"
-  },
-  "fancymenu_forge_3.4.0_MC_1.20.1.jar": {
+  "fancymenu_forge_3.4.3_MC_1.20.1.jar": {
     "modId": "fancymenu",
-    "version": "3.4.0"
+    "version": "3.4.3"
   },
   "FarmersDelight-1.20.1-1.2.7.jar": {
     "modId": "farmersdelight",
@@ -579,9 +579,9 @@
     "modId": "fullstackwatchdog",
     "version": "1.0.1+1.19.2-forge"
   },
-  "fusion-1.2.3-forge-mc1.20.1.jar": {
+  "fusion-1.2.4-forge-mc1.20.1.jar": {
     "modId": "fusion",
-    "version": "1.2.3"
+    "version": "1.2.4"
   },
   "fzzy_config-0.6.4+1.20.1+forge.jar": {
     "modId": "fzzy_config",
@@ -768,10 +768,6 @@
     "modId": "leavemybarsalone",
     "version": "8.0.0"
   },
-  "letmedespawn-1.20.x-forge-1.4.4.jar": {
-    "modId": "letmedespawn",
-    "version": "1.4.4"
-  },
   "LibX-1.20.1-5.0.14.jar": {
     "modId": "libx",
     "version": "1.20.1-5.0.14"
@@ -844,9 +840,9 @@
     "modId": "mods_optimizer",
     "version": "2.0.0"
   },
-  "moonlight-1.20-2.13.58-forge.jar": {
+  "moonlight-1.20-2.13.61-forge.jar": {
     "modId": "moonlight",
-    "version": "1.20-2.13.58"
+    "version": "1.20-2.13.61"
   },
   "moremobvariants-forge+1.20.1-1.3.0.1.jar": {
     "modId": "moremobvariants",
@@ -868,9 +864,9 @@
     "modId": "naturescompass",
     "version": "1.20.1-1.11.2-forge"
   },
-  "NekosEnchantedBooks-1.19.3-2.0.2.jar": {
+  "NekosEnchantedBooks-1.19.3-2.0.3.jar": {
     "modId": "nebs",
-    "version": "2.0.2"
+    "version": "2.0.3"
   },
   "Neruina-2.1.2-forge+1.20.1.jar": {
     "modId": "neruina",
@@ -1120,9 +1116,9 @@
     "modId": "sophisticatedbackpacks",
     "version": "3.23.4.1196"
   },
-  "sophisticatedcore-1.20.1-1.2.7.860.jar": {
+  "sophisticatedcore-1.20.1-1.2.8.864.jar": {
     "modId": "sophisticatedcore",
-    "version": "1.2.7.860"
+    "version": "1.2.8.864"
   },
   "sound-physics-remastered-forge-1.20.1-1.4.8.jar": {
     "modId": "sound_physics_remastered",
@@ -1263,6 +1259,10 @@
   "trulytreasures-1.20-3.0.0-forge.jar": {
     "modId": "trulytreasures",
     "version": "1.20-3.0.0"
+  },
+  "txnilib-forge-1.0.22-1.20.1.jar": {
+    "modId": "txnilib",
+    "version": "1.0.21"
   },
   "undergardendelight-1.1.1-forge-1.20.1.jar": {
     "modId": "undergardendelight",
