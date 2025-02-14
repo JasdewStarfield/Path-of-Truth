@@ -151,7 +151,6 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:storage_blocks","createnuclear:raw_uranium_block")
     event.add("forge:storage_blocks","createnuclear:raw_lead_block")
 
-
     //Undergarden
     event.add("create:crushed_ores","kubejs:crushed_froststeel_ore")
     event.add("create:crushed_ores","kubejs:crushed_cloggrum_ore")
