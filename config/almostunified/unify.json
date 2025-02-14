@@ -10,6 +10,10 @@
     "thermal",
     "immersiveengineering",
     "mekanism",
+    "createnuclear",
+    "createdeco",
+    "vintageimprovements",
+    "createchromaticreturn",
     "beautify"
   ],
   "stoneStrata": [
@@ -40,6 +44,7 @@
     "forge:slag"
   ],
   "materials": [
+    "andesite",
     "aeternium",
     "aluminum",
     "amber",

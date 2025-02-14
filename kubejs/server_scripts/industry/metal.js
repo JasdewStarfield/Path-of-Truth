@@ -1,4 +1,9 @@
 ServerEvents.recipes(event => {
+    event.remove({id:/vintageimprovements\:craft\/.*_rod.*/})
+
+    event.remove({id:"createdeco:pressing/netherite_sheet"})
+    event.remove({id:"createdeco:pressing/netherite_sheet"})
+
     //青铜块和锭
     //event.remove({id:'immersive_aircraft:airship'})
     event.shaped(
@@ -254,7 +259,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.emptying([Fluid.of('minecraft:lava',250), 'minecraft:cobbled_deepslate'], 'magma_block')
 
     //木炭压制焦煤（小概率）
-    event.recipes.create.compacting([Item.of('#forge:coal_coke').withChance(0.1), Fluid.of('immersiveengineering:creosote', 500)], ['createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder']).heated()
+    event.recipes.create.compacting([Item.of('#forge:coal_coke').withChance(0.1), Fluid.of('immersiveengineering:creosote', 500)], ['#forge:dusts/coal','#forge:dusts/coal','#forge:dusts/coal','#forge:dusts/coal']).heated()
 
     //ban掉水搅拌出锌粒，火药烧烈焰粉
     //sb chromatic return
@@ -413,7 +418,6 @@ ServerEvents.recipes(event => {
         "voidsteel",
         "andesite",
         "zinc",
-        "netherite",
         "industrial_iron",
         "forgotten_metal"
     ]

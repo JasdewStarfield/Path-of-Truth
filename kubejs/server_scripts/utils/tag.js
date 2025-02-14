@@ -128,6 +128,29 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:plates/netherite","createdeco:netherite_sheet")
     event.add("forge:plates/zinc","createdeco:zinc_sheet")
     event.add("forge:plates/andesite","createdeco:andesite_sheet")
+    event.add("forge:plates","createdeco:netherite_sheet")
+    event.add("forge:plates","createdeco:zinc_sheet")
+    event.add("forge:plates","createdeco:andesite_sheet")
+
+    event.add("forge:dusts/coal",'createchromaticreturn:carbon_powder')
+    event.add("forge:dusts/coal","createnuclear:coal_dust")
+    event.add("forge:dusts/uranium","createnuclear:uranium_powder")
+    event.add("forge:rods/graphite","createnuclear:graphite_rod")
+    event.add("forge:plates/graphite","createnuclear:graphene")
+    event.add("forge:rods/uranium","createnuclear:uranium_rod")
+    event.add("forge:storage_blocks/steel","createnuclear:steel_block")
+    event.add("forge:storage_blocks/lead","createnuclear:lead_block")
+    event.add("forge:storage_blocks/raw_uranium","createnuclear:raw_uranium_block")
+    event.add("forge:storage_blocks/raw_lead","createnuclear:raw_lead_block")
+
+    event.add("forge:dusts",'createchromaticreturn:carbon_powder')
+    event.add("forge:dusts","createnuclear:uranium_powder")
+    event.add("forge:plates/graphite","createnuclear:graphene")
+    event.add("forge:storage_blocks","createnuclear:steel_block")
+    event.add("forge:storage_blocks","createnuclear:lead_block")
+    event.add("forge:storage_blocks","createnuclear:raw_uranium_block")
+    event.add("forge:storage_blocks","createnuclear:raw_lead_block")
+
 
     //Undergarden
     event.add("create:crushed_ores","kubejs:crushed_froststeel_ore")
@@ -168,6 +191,8 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:plates","createdeco:industrial_iron_sheet")
 
     //others
+    event.add("forge:ingots/plastic","kubejs:plastic_chunk")
+    event.add("forge:ingots","kubejs:plastic_chunk")
     event.add("forge:ingots/andesite","create:andesite_alloy")
     event.add("forge:plates","kubejs:frostfire_double_plate")
     event.add("minecraft:tools","kubejs:sword_o_justice")

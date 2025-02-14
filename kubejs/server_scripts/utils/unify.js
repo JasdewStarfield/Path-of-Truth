@@ -147,13 +147,11 @@ ServerEvents.recipes(event => {
     '#forge:flour'
   )
   event.remove({ id: 'beautify:rope' })
-  event.remove({ id: 'tfmg:crushing/saltpeter' })
-  event.remove({ id: 'tfmg:mixing/gun_powder' })
-  event.remove({ id:"tfmg:filling/liquid_asphalt_bucket" })
   event.remove({ id:"everycomp:c/botania/livingwood_slab_from_livingwood_planks_stonecutting" })
   event.remove({ id:"everycomp:c/botania/livingwood_stairs_from_livingwood_planks_stonecutting" })
   event.remove({ id:"everycomp:c/botania/dreamwood_slab_from_dreamwood_planks_stonecutting" })
   event.remove({ id:"everycomp:c/botania/dreamwood_stairs_from_dreamwood_planks_stonecutting" })
   event.remove({ id: 'create:industrial_iron_block_from_ingots_iron_stonecutting' })
+  event.remove({ id: 'createnuclear:crushing/charcoal' })
 
 })
