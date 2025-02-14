@@ -40,7 +40,7 @@
 			click: "https://www.curseforge.com/minecraft/modpacks/path-of-truth"
 			height: 1.0d
 			hover: ["链接：Curseforge页面"]
-			image: "supplementaries:textures/gui/book/icon/curseforge.png"
+			image: "sophisticatedbackpacks:item/anvil_upgrade"
 			rotation: 0.0d
 			width: 1.0d
 			x: -4.0d

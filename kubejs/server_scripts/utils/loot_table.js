@@ -12,7 +12,6 @@ LootJS.modifiers((event) => {
     event.addBlockLootModifier("#minecraft:replaceable_by_trees").removeLoot("immersiveengineering:seed")
     event.addBlockLootModifier("#minecraft:snow").removeLoot("minecraft:wheat_seeds")
     event.addBlockLootModifier("#minecraft:snow").removeLoot("immersiveengineering:seed")
-    event.addLootTypeModifier(LootType.CHEST).removeLoot(Item.of('minecraft:enchanted_book').enchant('supplementaries:stasis', 1))
 
     //在蔚蓝浩空的地牢箱子中有小概率生成冒险唱片碎片
     event

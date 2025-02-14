@@ -125,9 +125,6 @@
 		[types.stone_type.biomesoplenty]
 			brimstone = true
 
-		[types.stone_type.supplementaries]
-			ash = true
-
 		[types.stone_type.create]
 			limestone = true
 			asurine = true

@@ -13,10 +13,9 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
         Item.of('create:precision_mechanism').withChance(90.0),
         Item.of('#forge:plates/silver').withChance(5.0),
-        Item.of('create:cogwheel').withChance(1.0),
+        Item.of('create:cogwheel').withChance(1.5),
         Item.of('create:large_cogwheel').withChance(1.5),
-        Item.of('create:electron_tube').withChance(2.0),
-        Item.of('supplementaries:ash').withChance(0.5)
+        Item.of('create:electron_tube').withChance(2.0)
     ], '#forge:plates/brass', [
         event.recipes.createDeploying(inter, [inter, 'create:cogwheel']),
         event.recipes.createDeploying(inter, [inter, 'create:large_cogwheel']),

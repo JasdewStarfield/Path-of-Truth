@@ -89,17 +89,6 @@ ServerEvents.recipes(event => {
     A: 'immersiveengineering:hemp_fiber'
   })
 
-  //齿轮方块就该是齿轮！
-  event.remove({ id: 'supplementaries:cog_block' })
-  event.shaped('12x supplementaries:cog_block', [ 
-    'AAA', 
-    'ABA',
-    'AAA'  
-  ], {
-    A: 'create:cogwheel',
-    B: '#forge:storage_blocks/redstone'
-  })
-
   //干岩盐怎么就不能磨出盐了
   event.recipes.create.crushing(Item.of('salt:raw_rock_salt').withChance(0.25), 'biomesoplenty:dried_salt')
 

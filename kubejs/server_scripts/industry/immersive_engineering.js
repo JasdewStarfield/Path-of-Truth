@@ -247,10 +247,9 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
       Item.of('kubejs:steel_mechanism').withChance(90.0),
       Item.of('#forge:rods/steel').withChance(2.0),
-      Item.of('#forge:ingots/aluminum').withChance(2.0),
+      Item.of('#forge:ingots/aluminum').withChance(2.5),
       Item.of('#forge:plates/steel').withChance(3.0),
-      Item.of('create:precision_mechanism').withChance(2.5),
-      Item.of('supplementaries:ash').withChance(0.5)
+      Item.of('create:precision_mechanism').withChance(2.5)
       ], '#forge:plates/steel', [
       event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', 'create:precision_mechanism']),
       event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', 'createdieselgenerators:engine_turbocharger']),
@@ -270,10 +269,9 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
       Item.of('kubejs:forgotten_mechanism').withChance(90.0),
       Item.of('immersiveengineering:component_electronic').withChance(2.0),
-      Item.of('blue_skies:diopside_gem').withChance(2.0),
+      Item.of('blue_skies:diopside_gem').withChance(2.5),
       Item.of('create:precision_mechanism').withChance(2.5),
-      Item.of('kubejs:forgotten_plate').withChance(3.0),
-      Item.of('supplementaries:ash').withChance(0.5)
+      Item.of('kubejs:forgotten_plate').withChance(3.0)
       ], '#forge:plates/forgotten_metal', [
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'create:precision_mechanism']),
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'blue_skies:diopside_gem']),
@@ -399,8 +397,7 @@ ServerEvents.recipes(event => {
         Item.of('#forge:silicon').withChance(1.2),
         Item.of('#bloodmagic:gravels/hellforged').withChance(1.2),
         Item.of('immersiveengineering:component_electronic').withChance(2.6),
-        Item.of('immersiveengineering:circuit_board').withChance(4.5),
-        Item.of('supplementaries:ash').withChance(0.5)
+        Item.of('immersiveengineering:circuit_board').withChance(5.0)
         ], 'immersiveengineering:circuit_board', [
         event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:silicon']),
         event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'immersiveengineering:component_electronic']),
