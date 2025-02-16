@@ -132,7 +132,6 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:plates","createdeco:zinc_sheet")
     event.add("forge:plates","createdeco:andesite_sheet")
 
-    event.add("forge:dusts/coal",'createchromaticreturn:carbon_powder')
     event.add("forge:dusts/coal","createnuclear:coal_dust")
     event.add("forge:dusts/uranium","createnuclear:uranium_powder")
     event.add("forge:rods/graphite","createnuclear:graphite_rod")
@@ -143,7 +142,6 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:storage_blocks/raw_uranium","createnuclear:raw_uranium_block")
     event.add("forge:storage_blocks/raw_lead","createnuclear:raw_lead_block")
 
-    event.add("forge:dusts",'createchromaticreturn:carbon_powder')
     event.add("forge:dusts","createnuclear:uranium_powder")
     event.add("forge:plates/graphite","createnuclear:graphene")
     event.add("forge:storage_blocks","createnuclear:steel_block")
@@ -244,10 +242,6 @@ ServerEvents.tags("fluid", (event) => {
     event.add("forge:lubricant","kubejs:lubricant")
     event.add("forge:heavy_oil","kubejs:heavy_oil")
     event.add("forge:liquid_plastic","kubejs:liquid_plastic")
-    event.add("forge:shadow_essence","createchromaticreturn:shadow_essence")
-    event.add("forge:shadow_essence","createchromaticreturn:flowing_shadow_essence")
-    event.add("forge:refined_mixture","createchromaticreturn:refined_mixture")
-    event.add("forge:refined_mixture","createchromaticreturn:flowing_refined_mixture")
 })
 
 ServerEvents.tags("block", (event) => {

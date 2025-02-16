@@ -1,3 +1,4 @@
+/*
 let langMap = JsonIO.read('kubejs/assets/createchromaticreturn/lang/zh_cn.json')
 ItemEvents.tooltip(e => {
     for (let item of Item.list) {
@@ -13,3 +14,4 @@ ItemEvents.tooltip(e => {
         })
     }
 })
+*/

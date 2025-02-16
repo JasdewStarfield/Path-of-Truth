@@ -60,7 +60,6 @@ ServerEvents.recipes(event => {
         '9': 'createchromaticreturn:durasteel_ingot',
     }
     let materialMapShow = Object.assign({ _: 'minecraft:barrier' }, materialMap)
-    */
 
     //两种终极锭
     event.recipes.create.mechanical_crafting('createchromaticreturn:multiplite_ingot', [

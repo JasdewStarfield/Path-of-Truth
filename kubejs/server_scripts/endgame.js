@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.compacting(['create:blaze_cake_base'], ['minecraft:sugar','irons_spellbooks:cinder_essence','#forge:plates/horizonite']).heated()
   event.recipes.create.filling('create:blaze_cake',[{fluidTag: 'forge:gasoline', amount:1000},'create:blaze_cake_base'])
 
+  /*
   //多彩化合物
   event.remove({ id: 'createchromaticreturn:chromatic_compound_recipe' })
   event.shapeless(
@@ -70,7 +71,7 @@ ServerEvents.recipes(event => {
   event.remove({id:'createchromaticreturn:multiplite_recipe'})
   event.remove({id:'createchromaticreturn:antiplite_recipe'})
 
-  event.recipes.create.mixing(['createchromaticreturn:industrium_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [{fluidTag:'forge:shadow_essence', amount:1000},'create:deployer','create:mechanical_arm','immersiveengineering:powerpack'/*,'tfmg:large_radial_engine'*/]).superheated()
+  event.recipes.create.mixing(['createchromaticreturn:industrium_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [{fluidTag:'forge:shadow_essence', amount:1000},'create:deployer','create:mechanical_arm','immersiveengineering:powerpack']).superheated()
   event.recipes.create.sequenced_assembly([
     Item.of('createchromaticreturn:industrium_book')
     ], '#forge:plates/plastic', [
@@ -140,6 +141,8 @@ ServerEvents.recipes(event => {
   )
 
   //丝绸书三本复制四本
+
+  */
  
 
   //终极彩蛋：可睡觉的床

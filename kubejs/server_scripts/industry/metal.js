@@ -262,21 +262,12 @@ ServerEvents.recipes(event => {
     event.recipes.create.compacting([Item.of('#forge:coal_coke').withChance(0.1), Fluid.of('immersiveengineering:creosote', 500)], ['#forge:dusts/coal','#forge:dusts/coal','#forge:dusts/coal','#forge:dusts/coal']).heated()
 
     //ban掉水搅拌出锌粒，火药烧烈焰粉
-    //sb chromatic return
-    event.remove({id:"createchromaticreturn:zinc_recipe"})
-    event.remove({id:"createchromaticreturn:gp_to_bp"})
-    event.remove({id:"createchromaticreturn:cf_to_rs"})
-    event.remove({id:"createchromaticreturn:magma_block_recipe"})
-    event.remove({id:"createchromaticreturn:obsidian_recipe"})
-    event.remove({id:"createchromaticreturn:magma_drain"})
-    event.remove({id:/createchromaticreturn\:.*doubling\.*/})
 
     //泥土到铜
     event.recipes.create.mixing('2x dirt', ['#forge:sand','#forge:cobblestone',Fluid.of('water',500)])
     event.recipes.create.splashing([Item.of('create:copper_nugget').withChance(0.5)], 'dirt')
 
     //削弱陶瓦出铜
-    event.remove({id:"createchromaticreturn:copper_recipe"})
     event.recipes.create.crushing([Item.of('minecraft:red_sand'),Item.of('create:copper_nugget').withChance(0.25)], '#minecraft:terracotta')
 
     //燧石出镍
