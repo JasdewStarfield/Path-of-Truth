@@ -6,6 +6,9 @@
 	#Number of Leapleaves that an individual player can have in total, Default: 16
 	#Range: > 1
 	leapleafLimit = 16
+	#Number of Brood Mother Servants that an individual player can have in total, Default: 2
+	#Range: > 1
+	broodMotherLimit = 2
 	#Total number of Redstone Monstrosities an individual player can have, Default: 1
 	#Range: > 0
 	redstoneMonstrosityPlayerLimit = 1
@@ -558,6 +561,23 @@
 		#Trident Storm Spell Cost, Default: 48
 		#Range: > 0
 		tridentStormCost = 48
+
+	[Spells."Reaping Spell"]
+		#Reaping Spell Summon Down, Default: 300
+		#Range: 0 ~ 72000
+		reaperSummonDown = 300
+		#Time to cast Reaping Spell, Default: 60
+		#Range: 0 ~ 72000
+		reaperTime = 60
+		#Reaping Spell Cost, Default: 24
+		#Range: > 0
+		reaperCost = 24
+		#Number of Reaper Servants that a player can have, Default: 8
+		#Range: > 1
+		reaperLimit = 8
+		#Reaping Spell Cooldown, Default: 100
+		#Range: > 0
+		reaperCoolDown = 100
 
 	[Spells."Glow Light Spell"]
 		#Time to cast Glow Light Spell, Default: 0

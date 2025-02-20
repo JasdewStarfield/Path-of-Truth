@@ -54,6 +54,8 @@
 	warning_after_upload_all_button_press = ""
 	#Replaces "\n" separator between logs to "   |   " to make message vertically smaller.
 	one_line_logs = true
+	#Adds line in log list about this Intel processor can be corrupted.
+	intel_corrupted_notification = true
 
 #Settings of modlist feature.
 #Adds in generated msg block about which mods modpack user added/removed/updated.

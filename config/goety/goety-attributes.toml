@@ -111,6 +111,17 @@
 
 	[Attributes.General]
 
+		[Attributes.General.Reaper]
+			#How much damage Reapers deals, Default: 8.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			reaperDamage = 8.0
+			#How much Max Health Reapers have, Default: 24.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			reaperHealth = 24.0
+			#How much natural Armor Reapers have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			reaperArmor = 0.0
+
 		[Attributes.General."Drowned Necromancer"]
 			#How much natural Armor Drowned Necromancers have, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
@@ -310,6 +321,17 @@
 			#How much damage Whisperer melee attack deals, Default: 2.5
 			#Range: 1.0 ~ 1.7976931348623157E308
 			whispererDamage = 2.5
+
+		[Attributes."Summoned Mobs"."Twilight Goat"]
+			#How much natural Armor Twilight Goats have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			twilightGoatArmor = 0.0
+			#How much damage Twilight Goats melee attack deals, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			twilightGoatDamage = 2.0
+			#How much Max Health Twilight Goats have, Default: 10.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			twilightGoatHealth = 10.0
 
 		[Attributes."Summoned Mobs".Wildfire]
 			#How much melee damage Wildfires deals, Default: 6.0
@@ -606,6 +628,17 @@
 			#How much damage Ice Golems deals, Default: 7.5
 			#Range: 1.0 ~ 1.7976931348623157E308
 			iceGolemDamage = 7.5
+
+		[Attributes."Summoned Mobs"."Brood Mother"]
+			#How much damage Brood Mothers melee attack deals, Default: 6.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			broodMotherDamage = 6.0
+			#How much Max Health Brood Mothers have, Default: 96.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			broodMotherHealth = 96.0
+			#How much natural Armor Brood Mothers have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			broodMotherArmor = 0.0
 
 		[Attributes."Summoned Mobs"."Grave Golem"]
 			#How much Max Health Grave Golems have, Default: 180.0

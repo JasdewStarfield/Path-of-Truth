@@ -64,7 +64,9 @@ const Unobtainable = [
     /create_new_age:.*thorium.*/,
     /create_new_age:overcharged.*/,
     /create_new_age:.*circuit/,
-    /create_new_age:.*wire/
+    /create_new_age:.*wire/,
+    'createutilities:lshaped_gearbox',
+    'createutilities:gearcube'
 ]
 
 const LivingArmourSocket = [

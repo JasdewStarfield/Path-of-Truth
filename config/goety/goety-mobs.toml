@@ -35,6 +35,9 @@
 	#Spawn Weight for Wraith, Default: 20
 	#Range: > 0
 	wraithSpawnWeight = 20
+	#Spawn Weight for Reaper, Default: 10
+	#Range: > 0
+	reaperSpawnWeight = 10
 	#Spawn Weight for Warlock, Default: 5
 	#Range: > 0
 	warlockSpawnWeight = 5
@@ -50,6 +53,9 @@
 	#Spawn Weight for Maverick, Default: 5
 	#Range: > 0
 	maverickSpawnWeight = 5
+	#Spawn Weight for Web Spiders, Default: 40
+	#Range: > 0
+	webSpiderSpawnWeight = 40
 
 	[Misc.Vizier]
 		#Whether Viziers are persistent and do not naturally despawn. Default: false
@@ -398,6 +404,8 @@
 			spiderServantTexture = true
 			#If Bone Spiders Servants have custom textures, Default: true
 			boneSpiderServantTexture = true
+			#If Web Spiders Servants have different textures from hostile versions, Default: true
+			webSpiderServantTexture = true
 			#If Cave Spiders Servants have custom textures, Default: true
 			caveSpiderServantTexture = true
 
@@ -416,6 +424,10 @@
 			blazeServantTexture = true
 			#If Wildfires have custom textures, Default: true
 			wildfireTexture = true
+
+		[Textures."Summoned Mobs"."Squall Golem"]
+			#If Squall Golems have custom textures, Default: true
+			squallGolemTexture = true
 
 		[Textures."Summoned Mobs"."Skeleton Servants"]
 			#If Sunken Skeleton Servants have custom textures, Default: true
