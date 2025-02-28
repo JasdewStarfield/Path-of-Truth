@@ -1,11 +1,24 @@
+function getCachedSeed() {
+    let Long = Java.loadClass('java.lang.Long')
+    try {
+        let raw = JsonIO.read(getCachedSeed.cached_path)
+        return Long.valueOf(raw.seed)
+    } catch (e) {}
+}
+getCachedSeed.cached_path = 'kubejs/data/cached_seed.json'
+
 ServerEvents.loaded(e => {
-    global.worldSeed = Utils.server.getLevel('minecraft:overworld').seed
-//    Utils.server.runCommandSilent('reload')
+    let oldSeed = getCachedSeed()
+    let newSeed = Utils.server.getLevel('minecraft:overworld').seed
+    if (oldSeed != newSeed) {
+        JsonIO.write(getCachedSeed.cached_path, { seed: newSeed.toString() })
+        // Utils.server.runCommandSilent('reload')  // enable this when enable code below
+    }
 })
 
 ServerEvents.recipes(event => {
 /*
-    let seed = global.worldSeed
+    let seed = getCachedSeed()
     if (!seed) return 'wait for reload'
     let filterWan = (r, c) => {
         if (r == 4 || c == 4) return true
