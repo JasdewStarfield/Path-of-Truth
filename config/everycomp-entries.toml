@@ -150,6 +150,9 @@
 			umber = true
 			cinderstone = true
 
+		[types.stone_type.scguns]
+			phosphorite = true
+
 #Disables specific entries
 [entries]
 

@@ -1,0 +1,14 @@
+
+["Scaling Damage"]
+	#If true, gun damage will scale with the days in the world.
+	"Enable Scaling Damage" = false
+	#The decimal amount that gun damage increases per day.
+	#Range: 0.0 ~ Infinity
+	"Damage Increase Rate" = 0.03
+	#The base damage value for the guns.
+	#Range: 0.0 ~ Infinity
+	"Base Damage" = 1.0
+	#The maximum damage that gun scaling can reach.
+	#Range: 0.0 ~ Infinity
+	"Max Scaled Damage" = +inf
+

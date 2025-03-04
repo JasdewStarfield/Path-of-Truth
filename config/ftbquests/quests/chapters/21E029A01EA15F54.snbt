@@ -305,38 +305,35 @@
 		{
 			dependencies: ["60B15529BE147F62"]
 			description: [
-				"很快你就会发现一地的恶魔意志是个很烦人的事情，尤其是它们还不能叠加。"
-				"这种时候，做一块魂石就成为了必要的：将魂石和恶魔意志一起扔在地上，它就会自动进行吸收！"
-				"恶魔意志后续的作用，可以自己在血魔法书中查询。"
-				"你可以通过恶魔意志激活这把剑……并用它代替灵魂投网，直接收割灵魂能量。"
+				"当你做出这个之后，你会发现自己拥有了&a自定义施法&r的能力——虽然法术聚晶的效果还是固定的，但是比起铁魔法而言自由度更高一点，毕竟你可以随时打开法杖更换聚晶。"
+				"聚晶的功能也&b更为繁杂&r，有相当一部分是&6“伤害”之外的生活功能&r，不过这需要你自行探索了。"
+				"这里赠送的基础聚晶可以试试&e放电&r——这一聚晶可以进阶，一部分基础聚晶可以合成为更强大的聚晶。"
 				""
-				"&o&a看不懂？那看我干什么，去看书学习去！&r&r"
+				"&o&a不会装填聚晶？那看我干什么，去看书学习去！&r&r"
 			]
 			id: "643DA6D3D15ED948"
 			rewards: [{
-				id: "589783BB7C61ACED"
-				item: {
-					Count: 1
-					id: "bloodmagic:soulsword"
-					tag: {
-						Damage: 0
-					}
-				}
+				id: "2CB2DAE110C7674B"
+				item: "goety:shocking_focus"
 				type: "item"
 			}]
-			subtitle: "嗯，还是电池"
+			subtitle: "最基本的法杖"
 			tasks: [{
-				id: "20AA130C6EFE623B"
+				id: "34F33A665FA48518"
 				item: {
 					Count: 1
-					id: "bloodmagic:soulgempetty"
-					tag: {
-						souls: 64.0d
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
 					}
+					id: "goety:dark_wand"
 				}
 				type: "item"
 			}]
-			title: "灵魂能量存储"
+			title: "电棍"
 			x: 3.0d
 			y: -4.0d
 		}
@@ -388,7 +385,7 @@
 				item: "irons_spellbooks:scroll_forge"
 				type: "item"
 			}]
-			subtitle: "八种派系，八类材料"
+			subtitle: "九九归一"
 			tasks: [
 				{
 					id: "33C00FE7789AFE4D"
@@ -428,6 +425,11 @@
 				{
 					id: "5F6F2AF0D82D06F7"
 					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					id: "068F5AA307F79E86"
+					item: "minecraft:note_block"
 					type: "item"
 				}
 			]

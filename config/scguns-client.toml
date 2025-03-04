@@ -1,0 +1,112 @@
+#If enabled, hides the config button from the backpack screen
+hideConfigButton = false
+#The alignment of the buttons in the backpack inventory screen
+#Allowed Values: LEFT, RIGHT
+buttonAlignment = "RIGHT"
+
+[client]
+
+	#Control sounds triggered by guns
+	[client.sounds]
+		#If true, a sound will play when you successfully hit a headshot on a entity with a gun
+		playSoundWhenHeadshot = true
+		#The sound to play when a headshot occurs
+		headshotSound = "minecraft:entity.player.attack.knockback"
+		#If true, a sound will play when you successfully hit a critical on a entity with a gun
+		playSoundWhenCritical = true
+		#The sound to play when a critical occurs
+		criticalSound = "minecraft:entity.player.attack.crit"
+		#The maximum distance impact sounds from bullet can be heard
+		#Range: 0.0 ~ 32.0
+		impactSoundDistance = 32.0
+
+	#Configuration for display related options
+	[client.display]
+		#If true, uses the old animation poses for weapons. This is only for nostalgic reasons and not recommended to switch back.
+		oldAnimations = false
+		#The custom crosshair to use for weapons. Go to (Options > Controls > Mouse Settings > Crosshair) in game to change this!
+		crosshair = "scguns:dynamic"
+		#If enabled, renders a cooldown indicator to make it easier to learn when you fire again.
+		cooldownIndicator = true
+		#If enabled, the weapon will sway when the player moves their look direction. This does not affect aiming and is only visual.
+		weaponSway = true
+		#The sensistivity of the visual weapon sway when the player moves their look direciton. The higher the value the more sway.
+		#Range: 0.0 ~ 1.0
+		swaySensitivity = 0.3
+		#The animation to use for sway. Directional follows the camera better while Drag is more immersive
+		#Allowed Values: DIRECTIONAL, DRAG
+		swayType = "DRAG"
+		#If enabled, the camera will roll when strafing while holding a gun. This creates a more immersive feeling.
+		cameraRollEffect = true
+		#When Camera Roll Effect is enabled, this is the absolute maximum angle the roll on the camera can approach.
+		#Range: 0.0 ~ 45.0
+		cameraRollAngle = 1.5
+		#When enabled, the Camera Roll Effect is only applied when holding a weapon.
+		restrictCameraRollToWeapons = true
+		#Enables the sprinting animation on weapons for better immersion. This only applies to weapons that support a sprinting animation.
+		sprintingAnimation = true
+		#If enabled, renders a HUD element displaying the gun's ammo count and ammo capacity, as well as pulse weapon charge.
+		displayGunInfo = true
+		#If enabled, the HUD will display when inspecting the gun.
+		immersiveGunInfo = false
+		#The intensity of the custom bobbing animation while holding a gun
+		#Range: 0.0 ~ 2.0
+		bobbingIntensity = 1.0
+		#If enabled, enables cinematic camera effects on guns 
+		cinematicGunEffects = true
+		#If enabled, enables light sources when firing guns
+		fireLights = true
+		#If enabled, enables purity seals on weapons
+		puritySeals = true
+		#The resting size of the Dynamic Crosshair when spread is zero.
+		#Range: 0.0 ~ 5.0
+		dynamicCrosshairBaseSpread = 1.0
+		#The bloom factor of the Dynamic Crosshair when spread increases.
+		#Range: 1.0 ~ 1.5
+		dynamicCrosshairSpreadMultiplier = 1.0
+		#How reactive the Dynamic Crosshair is to shooting.
+		#Range: 0.0 ~ 10.0
+		dynamicCrosshairReactivity = 2.0
+		#The rendering mode used for the Dynamic Crosshair's center dot. At Min Spread will only render the dot when gun spread is stable.
+		#Allowed Values: NEVER, AT_MIN_SPREAD, THRESHOLD, ALWAYS
+		dynamicCrosshairDotMode = "AT_MIN_SPREAD"
+		#If true, the Dynamic Crosshair's center dot will only render while aiming. Obeys dynamicCrosshairDotMode, and has no effect when mode is set to Never.
+		onlyRenderDotWhileAiming = true
+		#The threshold of spread (including modifiers) below which the Dynamic Crosshair's center dot is rendered. Affects the At Min Spread and Threshold modes only.
+		#Range: 0.0 ~ 90.0
+		dynamicCrosshairDotThreshold = 0.8
+		#The maximum scale factor for the dynamic crosshair when spread is high
+		#Range: 1.0 ~ 20.0
+		dynamicCrosshairMaxScale = 8.0
+		#If true, renders the player's arms when holding a gun
+		renderArms = true
+
+	#Properties relating to particles
+	[client.particle]
+		#The minimum duration in ticks before bullet holes will disappear
+		#Range: > 0
+		bulletHoleLifeMin = 150
+		#The maximum duration in ticks before bullet holes will disappear
+		#Range: > 0
+		bulletHoleLifeMax = 200
+		#The percentage of the maximum life that must pass before particles begin fading away. 0 makes the particles always fade and 1 removes facing completely
+		#Range: 0.0 ~ 1.0
+		bulletHoleFadeThreshold = 0.98
+		#If true, blood will will spawn from entities that are hit from a projectile
+		enableBlood = true
+		#The maximum distance impact particles can be seen from the player
+		#Range: 0.0 ~ 64.0
+		impactParticleDistance = 32.0
+		#If true, particles will spawn when projectiles impact water
+		enableWaterImpactParticles = true
+		#If true, particles will spawn when projectiles impact lava
+		enableLavaImpactParticles = true
+
+	#Properties relating to controls
+	[client.controls]
+		#A value to multiple the mouse sensitivity by when aiming down weapon sights. Go to (Options > Controls > Mouse Settings > ADS Sensitivity) in game to change this!
+		#Range: 0.0 ~ 1.0
+		aimDownSightSensitivity = 0.75
+		#When enabled, switches the shoot and aim controls of weapons. Due to technical reasons, you won't be able to use offhand items if you enable this setting.
+		flipControls = false
+
