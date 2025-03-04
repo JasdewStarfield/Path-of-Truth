@@ -77,6 +77,6 @@ ItemEvents.modification(event => {
         addEffect(itemid, "cold_sweat:warmth", lv, duration)
     )
     chill.forEach(([itemid, lv, duration]) =>
-        addEffect(itemid, "cold_sweat:chill", lv, duration)
+        addEffect(itemid, "cold_sweat:frigidness", lv, duration)
     )
 })

@@ -363,7 +363,6 @@ ServerEvents.recipes(event => {
             "amount":16,
             "tag":"forge:lpg"
         },
-        "input1":{},
         "result":{
             "amount": 16,
             "fluid":"kubejs:liquid_plastic"

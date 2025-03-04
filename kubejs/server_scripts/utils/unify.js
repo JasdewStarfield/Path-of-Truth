@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
   )
 
   //血魔法植物油-植物油流体
-  event.recipes.create.emptying([Fluid.of("immersiveengineering:plantoil",50), Item.of('air')], 'bloodmagic:plantoil')
+  //event.recipes.create.emptying([Fluid.of("immersiveengineering:plantoil",50), Item.of('air')], 'bloodmagic:plantoil')
   
 
   //下面是一些重复配方的移除

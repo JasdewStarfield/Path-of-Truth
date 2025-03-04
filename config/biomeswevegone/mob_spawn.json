@@ -1,6 +1,6 @@
 {
   "spawn": {
-    "man_o_war": true,
+    "man_o_war": false,
     "oddion": true
   }
 }

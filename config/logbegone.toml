@@ -1,5 +1,5 @@
 
 [logbegone]
 	regex = ["Disconnecting VANILLA connection attempt", "Channels "]
-	phrases = ["Disconnecting VANILLA connection attempt", "Channels ", "Creative tab cant be null.", "Redirecting", "Reloaded text layout engine", "Could not apply rainbow color layer to", "Failed to add slimed layer to entity", "Starting version check", "Failed to process update information"]
+	phrases = ["Disconnecting VANILLA connection attempt", "Channels ", "Creative tab cant be null.", "Redirecting", "Reloaded text layout engine", "Could not apply rainbow color layer to", "Failed to add slimed layer to entity", "Starting version check", "Failed to process update information", "should be an integer"]
 
