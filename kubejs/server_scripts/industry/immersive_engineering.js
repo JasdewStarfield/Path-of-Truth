@@ -201,7 +201,7 @@ ServerEvents.recipes(event => {
         ]
     })
     //BOP的玫瑰石英碎块
-    event.recipes.create.crushing(Item.of('create:rose_quartz').withChance(0.1), 'biomesoplenty:rose_quartz_block')
+    //event.recipes.create.crushing(Item.of('create:rose_quartz').withChance(0.1), 'biomesoplenty:rose_quartz_block')
 
     //坚固板
     event.remove({id:'create:sequenced_assembly/sturdy_sheet'})

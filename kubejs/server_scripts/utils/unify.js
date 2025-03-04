@@ -90,10 +90,10 @@ ServerEvents.recipes(event => {
   })
 
   //干岩盐怎么就不能磨出盐了
-  event.recipes.create.crushing(Item.of('salt:raw_rock_salt').withChance(0.25), 'biomesoplenty:dried_salt')
+  //event.recipes.create.crushing(Item.of('salt:raw_rock_salt').withChance(0.25), 'biomesoplenty:dried_salt')
 
   //硫磺石就不是硫磺了吗？
-  event.recipes.create.crushing(Item.of('#forge:dusts/sulfur').withChance(0.1), 'biomesoplenty:brimstone')
+  //event.recipes.create.crushing(Item.of('#forge:dusts/sulfur').withChance(0.1), 'biomesoplenty:brimstone')
 
   //由于移除了沉浸工程锯木机，补充锯末的获取配方
   event.recipes.create.cutting(Item.of('immersiveengineering:dust_wood').withChance(0.5), 'stick')

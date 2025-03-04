@@ -16,6 +16,13 @@
 	DynamicDaylightDuration = true
 	#Which dimensions will have season effects? Note that it must be natrual and have time lapse.
 	ValidDimensions = ["minecraft:overworld"]
+	#If snow falls during cold weather, it will gradually cover all solid blocks and grass.
+	SnowyWinter = true
+	#Snow will not appear in overly bright areas, here define restriction levels.
+	NotSnowyNearGlowingBlock = true
+	#Snow will not appear in overly bright areas.
+	#Range: 1 ~ 15
+	NotSnowyNearGlowingBlockLevel = 10
 
 [Weather]
 	#Enable solar term weather system with biome.
@@ -30,6 +37,10 @@
 [Temperature]
 	#Add heat stroke effect in summer noon while in hot biome.
 	HeatStroke = false
+	#Ice or snow layer will melt in warm time.
+	IceAndSnowMelt = false
+	#It will snow in cold time.
+	IceAndSnow = false
 
 [Crop]
 	#Enable crop season control.
@@ -69,8 +80,6 @@
 	LogIllegalUse = false
 	#Without snowy block under the light blocks which level is 0.
 	NotSnowyUnderLight0 = false
-	#Enables legacy mode for snow and ice, where snow accumulates when it's cold in snowy day and melts when it's hot.
-	LegacySnowAndMelt = false
 	#Snow overlay block if has full collision shape not just full render shape.
 	SnowyFullCollisionShape = false
 	#Snow can cover the block which would lights.

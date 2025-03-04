@@ -14,17 +14,10 @@
 	EnhancementChunkRenderUpdate = false
 	#Determines whether snow is falling based on vanilla lighting checks.
 	UseVanillaCheck = false
-	#If snow falls during cold weather, it will gradually cover all solid blocks and grass.
-	SnowyWinter = true
 	#When the block is updated, the snow cover will not refresh immediately, but will be updated after a delay. Please note that this will consume more performance..
 	RealisticSnowyChange = true
 	#Blocks underneath fences etc. may also be covered with snow.
 	SnowUnderFence = true
-	#Snow will not appear in overly bright areas, here define restriction levels.
-	NotSnowyNearGlowingBlock = true
-	#Snow will not appear in overly bright areas.
-	#Range: 1 ~ 15
-	NotSnowyNearGlowingBlockLevel = 10
 	#The colors of the grass and leaves change with the time of year.
 	SeasonalGrassColorChange = true
 	#In spring, grass blocks will occasionally have small flowers on them.

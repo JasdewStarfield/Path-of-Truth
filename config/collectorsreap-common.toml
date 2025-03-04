@@ -143,6 +143,8 @@
 	shimmering_pearl = true
 	stygian_pomegranate = true
 	urchin_dart = true
+	platinum_bass_roe = true
+	tiger_prawn_roe = true
 
 [Behavior]
 	#Whether Lime Bushes require Bee pollination to reach final growth stage.

@@ -13,6 +13,8 @@
 	#0: Off, 1: Particles, 2: On-Screen, 3: Both
 	#Range: 0 ~ 3
 	"Show Water Effect" = 3
+	#The scale of the water droplets on-screen, in scaled "pixels"
+	"Water Droplet Scale" = [40, 48]
 
 ["UI Options"]
 	"Custom hotbar layout" = true

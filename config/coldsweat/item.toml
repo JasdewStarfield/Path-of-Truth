@@ -56,7 +56,7 @@
 	"Insulation Slots" = ["static", 4, 6, 5, 4]
 	#Defines the effectiveness of insulating items in protecting against temperature
 	#Range: 0.0 ~ 1.7976931348623157E308
-	"Insulation Strength" = 1.0
+	"Insulation Strength" = 1.5
 	#Defines wearable items that cannot be insulated
 	#Format: ["item_id", "item_id", ...etc]
 	"Insulation Blacklist" = []
@@ -88,11 +88,4 @@
 	#nbt: Optional. The NBT data the item must have to apply to the entity.
 	#max_effect: Optional. The maximum temperature effect the item can apply to the entity.
 	"Carried Item Temperatures" = []
-
-#Drains pressure from Create's netherite backtank if the player is in a hot/cold environment
-#Triggered by the set bonus for wearing a full set of netherite diving gear
-#Disabling these settings will not disable the heat/cold protection set bonus
-["Create Backtank"]
-	"Heat Drains Backtank" = true
-	"Cold Drains Backtank" = false
 

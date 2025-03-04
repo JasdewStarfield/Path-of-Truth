@@ -40,12 +40,12 @@ ServerEvents.recipes(event => {
         2500
     )
     //苔藓转化
-    event.shapeless(Item.of('biomesoplenty:glowing_moss_block',1),
+    /*event.shapeless(Item.of('biomesoplenty:glowing_moss_block',1),
         [
             'minecraft:moss_block',
             'biomesoplenty:glowworm_silk'
         ]
-    )
+    )*/
     //青猪苔藓转化
     
     //沙漠蛛蜂合成

@@ -100,6 +100,8 @@
 	#How many seconds it takes before Ravager can manually roar again, Default: 10
 	#Range: > 0
 	ravagerRoarCooldown = 10
+	#Whether Servants can teleport to Players, Default: false
+	servantTeleport = false
 	#Whether Servants can attack Creepers if Mob Griefing Rule is False, Default: true
 	servantsAttackCreepers = true
 	#How many seconds a servant can't heal through Soul Energy after being injured, Default: 5
@@ -166,8 +168,6 @@
 		#How frequent Undead Servants heal, count seconds, Default: 1
 		#Range: > 0
 		undeadServantsHealTime = 1
-		#Whether Undead Servants can teleport to Players, Default: false
-		undeadTeleport = false
 		#Chance that a zombie (or subclass) servant is summoned as a baby, Default: 0.05
 		#Range: 0.0 ~ 1.0
 		zombieServantBabyChance = 0.05

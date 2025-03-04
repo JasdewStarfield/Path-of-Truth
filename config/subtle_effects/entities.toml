@@ -8,16 +8,19 @@ sheepShearFluff = true
 improvedDragonFireballTrail = true
 commandBlockMinecartParticles = "ON"
 endCrystalParticles = true
-minecartLandingSparks = true
+minecartSparksDisplayType = "DEFAULT"
+minecartSparksDensity = 0.5
 slimeTrails = true
 magmaCubeTrails = true
 replaceSlimeSquishParticles = true
+replaceOozingEffectParticles = true
 replaceSpellCasterParticles = true
 ironGolemCrackParticles = true
 spectralArrowParticles = true
 wardenDeathSoulParticles = true
 xpBottleParticlesDisplayType = "DEFAULT"
 xpBottleParticlesDensity = 10
+eggSmashSound = true
 
 [attacked]
 chickenFeathers = true
@@ -39,8 +42,12 @@ displaySleepingZsOnlyWhenSnoring = false
 adjustNameTagWhenSleeping = true
 
 [humanoids]
-drowningBubbles = "DEFAULT"
+drowningBubblesDisplayType = "DEFAULT"
 drowningBubblesDensity = 10
+drowningBubbleAlpha = 1.0
+potionRingsDisplayType = "DEFAULT"
+potionRingsParticleType = "BOTH"
+NPCsHavePotionRings = true
 
 [humanoids.frostyBreath]
 displayType = "DEFAULT"
@@ -58,31 +65,35 @@ heartbeatVolume = 1.0
 [dustClouds]
 scale = 0.5
 alpha = 0.8
-playerFell = true
-playerRunning = true
-playerRunningRequiresSpeed = false
-mobFell = true
-mobRunning = true
-landMaceAttack = true
 preventWhenRaining = true
+flyIntoWall = true
+lessViewBlocking = false
+playerFell = true
+mobFell = true
+landMaceAttack = true
+playerRunning = true
+mobRunning = true
+playerRunningRequiresSpeed = false
 
 [burning]
 smoke = "DEFAULT"
 flames = true
 sparks = true
 sounds = true
+extinguishSteam = true
 
 [itemRarity]
 particlesDisplayType = "NOT_COMMON"
-particleColor = "NAME_COLOR"
+particleColorType = "NAME_COLOR"
 mixedColorName = true
+useItemBorder = true
 particleMaxHeight = 1.5
 particleMaxSpeed = 1.0
 particleDensity = 1.0
 
 [explosives]
 tntUpdateSmoke = true
-tntFlames = true
+tntFlamesDensity = 1
 tntSparks = true
 creeperSmoke = "UPDATED"
 creeperSparks = true

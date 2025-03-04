@@ -502,6 +502,17 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			zombieVindicatorArmor = 2.0
 
+		[Attributes."Summoned Mobs"."Tamed Ravager"]
+			#How much damage Tamed Ravagers deals, Default: 12.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			ravagerDamage = 12.0
+			#How much natural Armor Tamed Ravagers have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			ravagerArmor = 0.0
+			#How much Max Health Tamed Ravagers have when saddled, Default: 100.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			ravagerSaddleHealth = 100.0
+
 		[Attributes."Summoned Mobs"."Wither Skeleton Servant"]
 			#How much extra damage Wither Skeleton Servants range attack deals, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
@@ -553,12 +564,12 @@
 			#How much damage Poison-Quill Vines' quills deals, Default: 2.5
 			#Range: 1.0 ~ 1.7976931348623157E308
 			poisonQuillVineDamage = 2.5
-			#How much natural Armor Poison-Quill Vines have, Default: 0.0
-			#Range: 0.0 ~ 1.7976931348623157E308
-			quickGrowingVineArmor = 0.0
 			#How much Max Health Poison-Quill Vines have, Default: 40.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			poisonQuillVineHealth = 40.0
+			#How much natural Armor Poison-Quill Vines have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			poisonQuillVineArmor = 0.0
 
 		[Attributes."Summoned Mobs"."Skeleton Wolf"]
 			#How much Max Health Skeleton Wolves have, Default: 10.0

@@ -3,9 +3,6 @@
 	#Number of Bound Illager Servants that an individual player can have in total, Default: 2
 	#Range: > 1
 	boundIllagerLimit = 2
-	#Number of Leapleaves that an individual player can have in total, Default: 16
-	#Range: > 1
-	leapleafLimit = 16
 	#Number of Brood Mother Servants that an individual player can have in total, Default: 2
 	#Range: > 1
 	broodMotherLimit = 2
@@ -550,6 +547,23 @@
 		#Time to cast Ghost Fire Spell, Default: 40
 		#Range: 0 ~ 72000
 		ghostFireTime = 40
+
+	[Spells."Leaping Spell"]
+		#Leaping Spell Cost, Default: 32
+		#Range: > 0
+		leapingCost = 32
+		#Leaping Spell Summon Down, Default: 300
+		#Range: 300 ~ 72000
+		leapingSummonDown = 300
+		#Number of Leapleaves that an individual player can have in total, Default: 16
+		#Range: > 1
+		leapleafLimit = 16
+		#Leaping Spell Cooldown, Default: 1200
+		#Range: > 0
+		leapingCoolDown = 1200
+		#Time to cast Leaping Spell, Default: 100
+		#Range: 0 ~ 72000
+		leapingTime = 100
 
 	[Spells."Trident Storm Spell"]
 		#Trident Storm Spell Cooldown, Default: 200
