@@ -157,12 +157,6 @@
 		}
 		{
 			dependencies: ["0F9DF1C5137194E4"]
-			description: [
-				"目前你可以获得的两本传说级法术书是远古典籍和龙皮法术书。"
-				"这两本法术书现在都需要泰拉钢，其中远古典籍还需要下界合金。"
-				"在深暗的古城中可以找到“残破的书”作为主材料，用你的实力证明你能够承载这传说级的力量吧。"
-				"&o&a*小声：别被监守者踹死了&r&r"
-			]
 			id: "4A24B3DB9C49B7CB"
 			rewards: [{
 				id: "786CC8FDB139D0E4"
@@ -185,15 +179,13 @@
 				}
 				type: "item"
 			}]
-			subtitle: "更多的法术槽，更强的力量"
+			subtitle: "魔法力量的源泉"
 			tasks: [{
-				biome: "minecraft:deep_dark"
-				icon: "minecraft:echo_shard"
-				id: "4B3AF05FE45101EC"
-				title: "访问深暗"
-				type: "biome"
+				id: "555B1EB04F8B776C"
+				item: "irons_spellbooks:arcane_salvage"
+				type: "item"
 			}]
-			title: "传说级法师"
+			title: "奥能涌动"
 			x: 1.5d
 			y: -1.5d
 		}

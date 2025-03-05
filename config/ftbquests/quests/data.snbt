@@ -6,6 +6,7 @@
 	default_reward_team: true
 	detection_delay: 20
 	disable_gui: false
+	drop_book_on_death: false
 	drop_loot_crates: false
 	emergency_items: [{ Count: 1, id: "ftbquests:book" }]
 	emergency_items_cooldown: 300

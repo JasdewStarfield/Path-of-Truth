@@ -264,10 +264,9 @@
 		{
 			dependencies: ["13313120B0D22371"]
 			description: [
-				"除了需要一点小小的牺牲，这两种符咒基本全是优点）"
-				"右键就可以放置水/岩浆，但是要消耗生命值。"
-				"另外，不要随便对着容器右键——一些容器不能灌进去）"
-				"&l*神秘建议&r：你可以使用熔岩印记作为&b攻击武器&r和&c无限火把&r——但小心不要烫到自己！"
+				"对于魔法的本源认知终将归于对于元素的操纵。"
+				"通过凝聚元素，你将能够以&b灵魂&r换取实体化的&9水流&r或&6岩浆&r。"
+				"然而，元素的压缩总是艰难的……"
 			]
 			id: "76E3812C8219949B"
 			rewards: [{
@@ -275,26 +274,16 @@
 				item: "create:fluid_tank"
 				type: "item"
 			}]
-			subtitle: "无尽水和无尽岩浆的前置"
+			subtitle: "我将，点燃大海！"
 			tasks: [
 				{
-					id: "3DE88F9C0B4B6D6F"
-					item: "bloodmagic:reagentwater"
+					id: "7BCB99A2ACA9015A"
+					item: "kubejs:water_elemental_core"
 					type: "item"
 				}
 				{
-					id: "4889EF35AA2CFC94"
-					item: "bloodmagic:reagentlava"
-					type: "item"
-				}
-				{
-					id: "4AB8D784BCB3B4C8"
-					item: "bloodmagic:watersigil"
-					type: "item"
-				}
-				{
-					id: "2C56788977C52021"
-					item: "bloodmagic:lavasigil"
+					id: "42DB625FD6644DBA"
+					item: "kubejs:fire_elemental_core"
 					type: "item"
 				}
 			]
@@ -502,14 +491,26 @@
 		}
 		{
 			dependencies: ["7CCCB823C49F78E8"]
-			description: ["升级不同级别的墨水需要不同级别的矿物，所以最好找个紫水晶洞（确信"]
+			description: [
+				"升级不同级别的墨水需要不同级别的矿物。"
+				"理论上紫水晶碎片需要一个晶洞，然而有一类树可以自己缓慢长出紫水晶。"
+				""
+				"&o&m&d*恭喜紫水晶母岩荣获本包Joker称号！&r&r&r"
+			]
 			icon: "sophisticatedbackpacks:advanced_restock_upgrade"
 			id: "21667ABCD50F787E"
-			rewards: [{
-				id: "1D7B3D909CDA72EB"
-				item: "minecraft:budding_amethyst"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "2508A1E240481E25"
+					item: "biomeswevegone:blue_enchanted_sapling"
+					type: "item"
+				}
+				{
+					id: "43BAD28F07754EA9"
+					item: "biomeswevegone:green_enchanted_sapling"
+					type: "item"
+				}
+			]
 			subtitle: "墨水升级也需要核心材料"
 			tasks: [
 				{

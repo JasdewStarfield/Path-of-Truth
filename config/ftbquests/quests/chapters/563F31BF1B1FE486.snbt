@@ -195,32 +195,25 @@
 		{
 			dependencies: ["56FEAEAF9D5FF405"]
 			id: "172CC4DA91E7C588"
-			subtitle: "更多的血液……"
+			subtitle: "基础元素"
 			tasks: [{
 				id: "79A0928486E965D1"
 				item: "bloodmagic:magicianbloodorb"
 				type: "item"
 			}]
-			title: "三阶祭坛"
+			title: "地水火风"
 			x: -2.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["56FEAEAF9D5FF405"]
 			id: "67DD665888D130CB"
-			subtitle: "12个法术槽让你可以为所欲为"
-			tasks: [
-				{
-					id: "45D048A878D5D46B"
-					item: "irons_spellbooks:legendary_ink"
-					type: "item"
-				}
-				{
-					id: "79F7E27605C3BC00"
-					item: "minecraft:echo_shard"
-					type: "item"
-				}
-			]
+			subtitle: "最强大的法术需要最珍贵的墨水"
+			tasks: [{
+				id: "45D048A878D5D46B"
+				item: "irons_spellbooks:legendary_ink"
+				type: "item"
+			}]
 			title: "传说级法师"
 			x: 2.0d
 			y: -7.0d

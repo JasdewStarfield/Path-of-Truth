@@ -99,3 +99,9 @@ config/sounds/chat.json
 config/embeddium++.toml
 /config/crash_assistant/lang
 kubejs/data/cached_seed.json
+config/default.json
+config/biomeswevegone/world_generation.json5
+config/biomeswevegone/trades.json
+config/biomeswevegone/mob_spawn.json
+config/world_preview/config.json
+config/world_preview/renderConfig.json
