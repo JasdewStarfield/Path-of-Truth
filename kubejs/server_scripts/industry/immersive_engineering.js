@@ -171,7 +171,7 @@ ServerEvents.recipes(event => {
             "item": "minecraft:quartz"
           },
           {
-            "amount": 1000,
+            "amount": 125,
             "fluid": "immersiveengineering:redstone_acid",
           }
         ],
@@ -182,24 +182,20 @@ ServerEvents.recipes(event => {
         ]
     })
     event.remove({id:'immersiveengineering:crafting/redstone_acid'})
-    event.custom({
-        "type": "create:mixing",
-        "ingredients": [
-          {
-            "tag": "forge:dusts/redstone"
-          },
-          {
-            "amount": 125,
-            "fluid": "minecraft:water",
-          }
-        ],
-        "results": [
-          {
-            "amount": 125,
-            "fluid": "immersiveengineering:redstone_acid"
-          }
-        ]
-    })
+    event.recipes.vintageimprovements.pressurizing([
+      Fluid.of("immersiveengineering:redstone_acid", 250)
+    ], [
+      Item.of("#forge:dusts/redstone"),
+      Item.of("#forge:dusts/redstone"),
+      Item.of("#forge:dusts/redstone"),
+      Item.of("#forge:dusts/redstone"),
+      Item.of("#forge:dusts/redstone"),
+      Item.of("#forge:dusts/redstone"),
+      Item.of("#forge:dusts/redstone"),
+      Item.of("#forge:dusts/redstone"),
+      Fluid.of("minecraft:water", 250),
+    ]).heated().secondaryFluidInput(0)
+
     //BOP的玫瑰石英碎块
     //event.recipes.create.crushing(Item.of('create:rose_quartz').withChance(0.1), 'biomesoplenty:rose_quartz_block')
 
@@ -210,6 +206,7 @@ ServerEvents.recipes(event => {
       Item.of('create:sturdy_sheet')
     ], '#forge:plates/lead', [
       event.recipes.createDeploying(inter, [inter, '#forge:dusts/obsidian']),
+      event.recipes.vintageimprovements.vibrating(inter, inter),
       event.recipes.createFilling(inter, [inter, Fluid.of("minecraft:lava", 500)]),
       event.recipes.createPressing(inter, inter),
       event.recipes.createPressing(inter, inter),

@@ -33,7 +33,9 @@ ServerEvents.recipes(event => {
       ["create:millstone", "grindstone"],
       ["create:encased_fan", "create:propeller"],
       ["create_power_loader:empty_andesite_chunk_loader", "glowstone"],
-      ["create_mechanical_extruder:mechanical_extruder", "kubejs:fluid_engineering"]
+      ["create_mechanical_extruder:mechanical_extruder", "kubejs:fluid_engineering"],
+      ['vintageimprovements:spring_coiling_machine', 'vintageimprovements:spring_coiling_machine_wheel'],
+      ['vintageimprovements:vibrating_table', "vintageimprovements:iron_spring"]
     ]
     andesiteEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:andesite_engineering", material)
@@ -47,7 +49,8 @@ ServerEvents.recipes(event => {
       ["create_enchantment_industry:printer", "create:sturdy_sheet"],
       ["create_enchantment_industry:disenchanter", "#create:sandpaper"],
       ["create:hose_pulley", "dried_kelp_block"],
-      ["create:portable_fluid_interface", "create:chute"]
+      ["create:portable_fluid_interface", "create:chute"],
+      ["vintageimprovements:vacuum_chamber", "vintageimprovements:iron_spring"]
     ]
     fluidEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:fluid_engineering", material)

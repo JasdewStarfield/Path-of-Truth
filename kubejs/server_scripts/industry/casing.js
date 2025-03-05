@@ -67,6 +67,13 @@ ServerEvents.recipes(event => {
     ])
     event.recipes.create.deploying('create:large_cogwheel', ['create:cogwheel', 'botania:livingwood_planks'])
 
+    //卷簧机
+    event.replaceInput(
+      { output:"vintageimprovements:spring_coiling_machine_wheel" },
+      'create:andesite_alloy',
+      '#forge:nuggets/constantan'
+    )
+
     //安山工程块及替换机壳
     event.shaped('kubejs:andesite_engineering', [ 
       'DAC', 
@@ -95,7 +102,7 @@ ServerEvents.recipes(event => {
       ], {
       B: 'create:copper_casing',
       A: '#forge:plates/bronze',
-      C: 'create:fluid_pipe',
+      C: 'vintageimprovements:iron_spring',
       D: 'create:mechanical_pump'
     })
     event.recipes.create.sequenced_assembly([
@@ -103,7 +110,7 @@ ServerEvents.recipes(event => {
     ], 'create:copper_casing', [
       event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', '#forge:plates/bronze']),
       event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', 'create:mechanical_pump']),
-      event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', 'create:fluid_pipe']),
+      event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', 'vintageimprovements:iron_spring']),
       event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', '#forge:plates/bronze'])
     ]).transitionalItem('kubejs:incomplete_fluid_engineering').loops(1)
 

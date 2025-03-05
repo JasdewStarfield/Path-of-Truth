@@ -66,7 +66,16 @@ const Unobtainable = [
     /create_new_age:.*circuit/,
     /create_new_age:.*wire/,
     'createutilities:lshaped_gearbox',
-    'createutilities:gearcube'
+    'createutilities:gearcube',
+    "scguns:cryoniter",
+    "scguns:thermolith",
+    "scguns:polar_generator",
+    "scguns:lightning_battery",
+    "scguns:lightning_rod_connector",
+    "scguns:macerator",
+    "scguns:powered_macerator",
+    "scguns:mechanical_press",
+    "scguns:powered_mechanical_press"
 ]
 
 const LivingArmourSocket = [

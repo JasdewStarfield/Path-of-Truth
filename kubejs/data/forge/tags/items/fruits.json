@@ -1,0 +1,9 @@
+{
+    "replace": "false",
+    "values": [
+        "biomeswevegone:baobab_fruit",
+        "biomeswevegone:yucca_fruit",
+        "biomeswevegone:green_apple",
+        "biomeswevegone:blueberries"
+    ]
+}

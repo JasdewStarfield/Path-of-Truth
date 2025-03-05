@@ -75,10 +75,6 @@
     "modId": "attributefix",
     "version": "21.0.4"
   },
-  "AutoScgunsmod.jar": {
-    "modId": "automatable_scorched_guns",
-    "version": "1.0.0"
-  },
   "BadOptimizations-2.2.1-1.20.1.jar": {
     "modId": "badoptimizations",
     "version": "2.2.1"

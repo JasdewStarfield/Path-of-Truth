@@ -40,6 +40,7 @@
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["不管干什么，你总归需要从工作台开始的，对吧）"]
 			hide_until_deps_complete: true
+			icon: "minecraft:oak_log"
 			id: "46156FBBDCAB4B1D"
 			rewards: [{
 				id: "68889BA4397825CC"
@@ -314,6 +315,7 @@
 				"通过工业手段，你可以在工作盆里批量混合和组装物品。"
 				"这也是工业优于魔法的一点（确信"
 			]
+			icon: "create:mechanical_mixer"
 			id: "29B3F884515FC9DB"
 			subtitle: "加一点毒蘑菇，再加一个旧鞋跟……"
 			tasks: [
@@ -351,6 +353,7 @@
 		}
 		{
 			dependencies: ["4252F0F8AD1C5A60"]
+			icon: "kubejs:bronze_dust"
 			id: "69864E61F37B2AA3"
 			subtitle: "铜和锡，三比一"
 			tasks: [
@@ -431,6 +434,13 @@
 		}
 		{
 			dependencies: ["3BECB3D53E17F80B"]
+			icon: {
+				Count: 1
+				id: "kubejs:bronze_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "40E4071636BA7BB1"
 			rewards: [{
 				count: 8
@@ -597,6 +607,7 @@
 		{
 			dependencies: ["27E166AF7BA5BDB1"]
 			description: ["你怎么能忍住不用的？"]
+			icon: "create:goggles"
 			id: "63B4B5472513A83F"
 			rewards: [{
 				id: "53D1AE7DFA54E8AE"
@@ -696,6 +707,13 @@
 				"&l&c比如说，你即将用来炼铁的高炉和用来生产焦煤的焦炉。&r&r"
 			]
 			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "immersiveengineering:hammer"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "336807D048A4EF6A"
 			subtitle: "80！80！"
 			tasks: [
@@ -738,8 +756,8 @@
 					type: "item"
 				}
 				{
-					id: "559144140D12B35D"
-					item: "tfmg:coal_coke_dust"
+					id: "03EF66F09D5177E6"
+					item: "immersiveengineering:dust_coke"
 					type: "item"
 				}
 			]
@@ -772,6 +790,7 @@
 		{
 			dependencies: ["6D46668D63E83ED7"]
 			description: ["使用垃圾桶来批量销毁物品和流体。"]
+			icon: "trashcans:item_trash_can"
 			id: "1A5534E853393823"
 			rewards: [{
 				id: "4C489927ADE219CB"
