@@ -152,6 +152,16 @@ ServerEvents.recipes(event => {
     //竹子转化
     event.recipes.botania.mana_infusion('minecraft:bamboo', 'botania:livingwood_twig', 500)
 
+    //鸡蛋的生产和复制
+    event.recipes.botania.petal_apothecary('minecraft:egg', 
+        [
+            'minecraft:clay_ball',
+            'minecraft:feather',
+            'minecraft:string'
+        ]
+    )
+    event.recipes.botania.mana_infusion('2x minecraft:egg', 'minecraft:egg', 500)
+    
     //魔钢-奥术源质兑换
     event.recipes.botania.mana_infusion('4x irons_spellbooks:arcane_essence', 'botania:manasteel_ingot', 1000, 'botania:alchemy_catalyst')
     //变色龙蛋生产

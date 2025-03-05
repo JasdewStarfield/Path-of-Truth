@@ -195,26 +195,30 @@
 		{
 			dependencies: ["56FEAEAF9D5FF405"]
 			id: "172CC4DA91E7C588"
-			subtitle: "基础元素"
+			subtitle: "以魔力击穿世界"
 			tasks: [{
-				id: "79A0928486E965D1"
-				item: "bloodmagic:magicianbloodorb"
+				id: "2B2C54C9A20ED921"
+				item: {
+					Count: 1
+					id: "botania:mana_gun"
+					tag: { }
+				}
 				type: "item"
 			}]
-			title: "地水火风"
+			title: "魔能枪"
 			x: -2.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["56FEAEAF9D5FF405"]
 			id: "67DD665888D130CB"
-			subtitle: "最强大的法术需要最珍贵的墨水"
+			subtitle: "从饰品到碎片"
 			tasks: [{
-				id: "45D048A878D5D46B"
-				item: "irons_spellbooks:legendary_ink"
+				id: "20393A584D230BBD"
+				item: "irons_spellbooks:arcane_salvage"
 				type: "item"
 			}]
-			title: "传说级法师"
+			title: "奥术提纯"
 			x: 2.0d
 			y: -7.0d
 		}
@@ -224,20 +228,20 @@
 				"67DD665888D130CB"
 			]
 			id: "4D484051A8CF29F2"
-			subtitle: "新的世界，新的资源"
+			subtitle: "祈求世界的回应"
 			tasks: [
 				{
-					id: "692CF09C93BB14AE"
-					item: "bloodmagic:ritualstone"
+					id: "31F2382A98D387B4"
+					item: "goety:pedestal"
 					type: "item"
 				}
 				{
-					id: "7EF02C911BC7DD85"
-					item: "bloodmagic:ingot_hellforged"
+					id: "64CE5BEB88E72392"
+					item: "goety:dark_altar"
 					type: "item"
 				}
 			]
-			title: "仪式与恶魔维度"
+			title: "仪式群"
 			x: 0.0d
 			y: -8.0d
 		}

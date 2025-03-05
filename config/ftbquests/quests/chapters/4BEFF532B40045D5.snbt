@@ -131,11 +131,11 @@
 			]
 			hide_details_until_startable: false
 			hide_until_deps_complete: true
-			icon: "supplementaries:globe"
+			icon: "botania:animated_torch"
 			id: "2BC7BDD7E5EC76E5"
 			rewards: [{
-				id: "26D1957DEBF0C88B"
-				item: "supplementaries:globe"
+				id: "502364921D638AEA"
+				item: "botania:world_seed"
 				type: "item"
 			}]
 			shape: "octagon"
@@ -880,7 +880,7 @@
 				""
 				"&o&9*你要是在自己房子里塞机器和传送带那我无话可说:(&r&r"
 			]
-			icon: "biomesoplenty:magic_door"
+			icon: "biomeswevegone:skyris_door"
 			id: "724EBEFC6D269712"
 			shape: "hexagon"
 			size: 1.5d
@@ -932,8 +932,8 @@
 			icon: "artifacts:villager_hat"
 			id: "1F2E99A74CDFBD68"
 			rewards: [{
-				id: "40901E89D87988D4"
-				item: "supplementaries:present_lime"
+				id: "12DAB628915CF262"
+				item: "betterarcheology:villager_fossil_head"
 				type: "item"
 			}]
 			subtitle: "村民崛起！"
@@ -989,11 +989,18 @@
 		{
 			dependencies: ["1F2E99A74CDFBD68"]
 			description: [
-				"现在的游商会有几率售卖一些有用的东西——尤其是魔法侧的特殊道具和一些你无法在正常条件下获得的树苗。"
+				"现在的游商会有几率售卖一些有用的东西——尤其是魔法侧的特殊道具。"
 				"如果刷出了游商，请不要把它视为行走的拴绳，先看一下商品清单……"
+				""
+				"&o&7*如果你身上缠绕着灾厄的气息，那么你将有几率通过击杀掠夺流浪商人从不售卖的神器……&r&r"
 			]
 			icon: "minecraft:lead"
 			id: "7965ADF51F23E326"
+			rewards: [{
+				id: "3EEF24C909C45855"
+				item: "minecraft:lead"
+				type: "item"
+			}]
 			subtitle: "不要上来就抽刀子！"
 			tasks: [{
 				id: "6401CAB776E74BB0"
@@ -1165,8 +1172,8 @@
 			icon: "minecraft:totem_of_undying"
 			id: "41DC0EE4FEF3A084"
 			rewards: [{
-				id: "00969FA6C0EF23D2"
-				item: "biomesoplenty:dead_sapling"
+				id: "7734C1BEF2F28D17"
+				item: "goety:dead_pottery_sherd"
 				type: "item"
 			}]
 			subtitle: "有的时候你不应该死那么多次……"
