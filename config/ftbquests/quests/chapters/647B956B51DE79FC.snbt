@@ -5,7 +5,7 @@
 	filename: "647B956B51DE79FC"
 	group: "560257DD7915FBBC"
 	hide_quest_details_until_startable: true
-	icon: "bloodmagic:ritualdiviner"
+	icon: "goety:shade_soul_brazier"
 	id: "647B956B51DE79FC"
 	images: [
 		{
@@ -37,39 +37,24 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["0AC1013759C98150"]
-			description: [
-				"首先你需要四级祭坛和“钢铁之心”来产生你的第一枚导师气血宝珠。"
-				"然后，你就可以准备进行一些神秘的仪式了）"
-				"通常的仪式是放置主仪式石后，用仪式石建造框架，然后进行铭文。"
-				"仪式启动需要LP，一些功能持续性的仪式需要持续消耗LP，所以请确保你携带的气血宝珠足够多——附近多放几个祭坛也行）"
-				"&o&c注：不同属性的仪式石是通过“喷漆”获得的，这一合成方式在jei中无法查询，可以查询“元素铭文工具”获得想要的东西。当然，更省心的方式是直接使用仪式推测杖来完成——因为它有无限耐久。&r&r"
-			]
+			dependencies: ["736407504A1AB9E0"]
 			hide_until_deps_complete: true
-			icon: "bloodmagic:masterritualstone"
+			icon: "aquamirae:ship_graveyard_echo"
 			id: "5A5B1D96C50D1EAE"
 			rewards: [{
-				count: 16
-				id: "16947EBD559EC8D8"
-				item: "bloodmagic:ritualstone"
+				id: "1899AFC6006C1725"
+				item: "netherexp:soul_skeleton_skull_candle"
 				type: "item"
 			}]
 			shape: "octagon"
 			size: 1.5d
-			subtitle: "你要折腾一些大家伙了）"
-			tasks: [
-				{
-					id: "71FC2BEF8E5ECB52"
-					item: "bloodmagic:masterbloodorb"
-					type: "item"
-				}
-				{
-					id: "428AC6A1DFB72BD8"
-					item: "bloodmagic:masterritualstone"
-					type: "item"
-				}
-			]
-			title: "【起点】大型仪式的基础"
+			subtitle: "方舟，启动！"
+			tasks: [{
+				id: "1E28F60648CA8024"
+				item: "goety:arca"
+				type: "item"
+			}]
+			title: "【起点】灵魂方舟"
 			x: 0.0d
 			y: 0.0d
 		}

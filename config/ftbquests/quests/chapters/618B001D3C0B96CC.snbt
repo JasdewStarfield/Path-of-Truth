@@ -22,7 +22,7 @@
 			rotation: 0.0d
 			width: 1.1149863760217984d
 			x: 0.0d
-			y: -2.7d
+			y: 6.0d
 		}
 		{
 			height: 2.0d
@@ -84,7 +84,12 @@
 			subtitle: "甚至多功能）"
 			tasks: [
 				{
-					id: "5D710D0F2741FE98"
+					id: "328FF40ABDF60BD5"
+					item: "botania:lens_normal"
+					type: "item"
+				}
+				{
+					id: "13B87C68E93717DE"
 					item: {
 						Count: 1
 						id: "botania:mana_gun"
@@ -92,91 +97,51 @@
 					}
 					type: "item"
 				}
-				{
-					id: "00DD32E8C6FC66ED"
-					item: "botania:lens_storm"
-					type: "item"
-				}
 			]
 			title: "植魔最强工具"
 			x: -1.5d
-			y: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0F9DF1C5137194E4"]
 			description: [
-				"钻石是MC世界的稀有资源，但偏偏魔法用量不算小。"
-				"这种时候，你就需要考虑一下用炼金矩阵点石成金的技术了。"
-				"祝你好运！"
-				"*会有很劲爆的场面但不会伤到你的（笑"
+				"钻石和绿宝石是MC世界的稀有资源，但魔法上的用量不算小。"
+				"这种时候，你就需要考虑一下点石成金的某些方式……"
 			]
-			icon: "minecraft:diamond_block"
+			icon: "goety:gold_holder_marble"
 			id: "7B4573440B7AD85C"
 			subtitle: "很显然，你需要点石成金"
 			tasks: [
-				{
-					id: "5831C237BF6C95EC"
-					item: {
-						Count: 1
-						id: "bloodmagic:arcaneashes"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "142ED80FE1C366EB"
-					item: "minecraft:iron_ingot"
-					type: "item"
-				}
-				{
-					id: "00B70B465487FAF9"
-					item: "minecraft:gold_ingot"
-					type: "item"
-				}
 				{
 					id: "595341A51DCCB7B8"
 					item: "minecraft:diamond"
 					type: "item"
 				}
 				{
-					id: "7912D69EEB40ADB6"
-					item: "botania:mana_powder"
+					id: "46163255CBDED376"
+					item: "minecraft:emerald"
 					type: "item"
 				}
 				{
-					id: "6350A3AD047F73FC"
-					item: "botania:terrasteel_nugget"
+					id: "3D27852AA7EBEFAB"
+					item: "goety:cursed_infuser"
 					type: "item"
 				}
 			]
 			title: "真正的炼金术"
-			x: -2.0d
-			y: 0.0d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0F9DF1C5137194E4"]
+			description: [
+				"在你找到的铁魔法的饰品中，往往&9有源源不断的魔力从金属中产出&r，并为饰品提供能量以实现长效加成。但现在，你需要这种金属本身……来完成一些更伟大的创造。"
+				"&c熔炼部分铁魔法饰品&r或&b通过特定方式采掘奥术残骸&r可以找到这种奇妙的金属。"
+			]
 			id: "4A24B3DB9C49B7CB"
 			rewards: [{
-				id: "786CC8FDB139D0E4"
-				item: {
-					Count: 1
-					id: "irons_spellbooks:scroll"
-					tag: {
-						ISB_Spells: {
-							data: [{
-								id: "irons_spellbooks:black_hole"
-								index: 0
-								level: 1
-								locked: 1b
-							}]
-							maxSpells: 1
-							mustEquip: 0b
-							spellWheel: 0b
-						}
-					}
-				}
+				id: "5B07461AD85E058C"
+				item: "irons_spellbooks:arcane_rune"
 				type: "item"
 			}]
 			subtitle: "魔法力量的源泉"
@@ -187,14 +152,14 @@
 			}]
 			title: "奥能涌动"
 			x: 1.5d
-			y: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["0F9DF1C5137194E4"]
 			description: [
 				"……然后干掉ta来获得你需要的资源以及一些……宝贵的遗物。"
-				"请做好准备，因为这真的很困难。"
-				"……至少，至少，比你干掉凋零要难，所以&l&4请谨慎阅读辞典上的注意事项&r&r。"
+				"请做好准备，因为这真的很困难，至少比你干掉凋零要难，所以&l&4请谨慎阅读辞典上的注意事项&r&r。"
+				"在&c获得4份盖亚之魂后&r，就可以&b通过一些神秘的魔法操作来获取更多&r，而不需要一直战斗了。"
 				"你问我为什么没给你设置干掉凋零的任务？这不是MC玩家的基本操作吗？"
 				"*注：仪式需要足够开阔的大面积实心平地，以及&c记得去掉辅助放置水晶的方块&r。如果出现了错误，聊天栏会弹出提示，注意场地上闪烁的&d粉红色光点&r，那就是你需要去处理的地方。"
 			]
@@ -215,29 +180,8 @@
 				}
 			]
 			title: "盖亚仪式"
-			x: 0.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["0F9DF1C5137194E4"]
-			description: [
-				"&b【完成后解锁主线章节：4M 诡秘仪式】&r"
-				"法师宝珠，三阶血祭坛的产物，更大的LP储存器）"
-				"当然，也是后续很多魔法合成的必需品。"
-				"你可以用自己的血来完成它——也可以献祭很多别的生物。"
-				"一些更强更有趣的印记你也可以制造了）"
-				"&c&o*记得去开启“隐域仪式”，否则你获取不了四级血祭坛所需的血石砖）&r&r"
-			]
-			id: "0AC1013759C98150"
-			subtitle: "以及流更多血）"
-			tasks: [{
-				id: "07B1E67BA4C09E90"
-				item: "bloodmagic:magicianbloodorb"
-				type: "item"
-			}]
-			title: "【终点】更大，更高，更强"
-			x: 0.0d
-			y: -2.0d
+			x: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0F9DF1C5137194E4"]
@@ -275,7 +219,7 @@
 				type: "item"
 			}]
 			title: "固化法术"
-			x: 2.0d
+			x: 1.5d
 			y: 0.0d
 		}
 		{
@@ -309,89 +253,17 @@
 			]
 			title: "神秘遗物"
 			x: -1.5d
-			y: 1.5d
+			y: -1.5d
 		}
 		{
-			dependencies: ["0F9DF1C5137194E4"]
-			description: [
-				"在主世界挖掘的时候，你会遇到白色的“奥术残骸”，这需要下界合金级的镐子才可以挖掘。"
-				"记得保存它们的地点，因为你的盔甲升级就靠它们了。"
-				"至于灰烬源质——建议带抢夺剑下地狱，去古战场遗迹打灰烬骑士。"
-				"遗迹的特征是巨大的废弃地狱门和一地散落的盔甲，挖掉散落的盔甲就会在原地出现灰烬骑士。"
-			]
-			icon: "irons_spellbooks:mana_upgrade_orb"
-			id: "20942DA97CA0E5D0"
-			subtitle: "让你的所有盔甲都打上法术加成！"
-			tasks: [
-				{
-					id: "3AC5B256A5AEF1E8"
-					item: "irons_spellbooks:cinder_essence"
-					type: "item"
-				}
-				{
-					id: "729EBF22400A577E"
-					item: "irons_spellbooks:arcane_salvage"
-					type: "item"
-				}
-			]
-			title: "升级你的盔甲"
-			x: 1.5d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"7B4573440B7AD85C"
-				"0AC1013759C98150"
-			]
-			description: [
-				"我们炼金术士有自己的炉子！"
-				"通过&c注入液体和/或放入特定组件&r，炼金炉可以&6对材料进行加工、分解、调整&r等操作。"
-				"同时，在放入&e原始燃料单元/熔岩晶体&r的时候，它可以作为长效熔炉使用。"
-				""
-				"经过适配性调整，现在炼金炉可以用来&b对大多数有用的矿物进行更高效的处理&r，也可以用来生产一些工业产品。"
-				""
-				"&o&d贴图缺失是正常的，炉子功能没问题，贴图得怪血魔法……&r&r"
-			]
-			id: "78CCD3E3F5662FCF"
-			rewards: [{
-				id: "3DBEACAC947D8065"
-				item: {
-					Count: 1
-					id: "bloodmagic:furnacecell_primitive"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "血液炼金术"
-			tasks: [{
-				id: "5AA654B3165E7E62"
-				item: "bloodmagic:alchemicalreactionchamber"
-				type: "item"
-			}]
-			title: "鲜血熔炉"
-			x: -3.5d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"1512F0EED2C94AD6"
-				"0AC1013759C98150"
-			]
+			dependencies: ["1512F0EED2C94AD6"]
 			description: [
 				"通过&c次级槽位升级卷轴&r，你可以在&d奥术铁砧&r上为你的法术书升级槽位至最高12个！"
 				"这下不用拼命去搞高级法术书了——这也会让一些独特的法术书更加有用）"
 				""
 				"一些更暴力的东西从这个&b充能核心&r开始，也许你可以试试雷暴的时候用它来右键轰击避雷针……"
 			]
-			icon: {
-				Count: 1
-				id: "botania:thunder_sword"
-				tag: {
-					Damage: 0
-				}
-			}
+			icon: "goety:fire_blast_focus"
 			id: "7627B3B94BB6C9BE"
 			subtitle: "现在，你可以升级你的法术书槽位了！"
 			tasks: [
@@ -407,116 +279,8 @@
 				}
 			]
 			title: "更暴力的法术！"
-			x: 3.5d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"4A24B3DB9C49B7CB"
-				"761B189A2DBC58B3"
-			]
-			description: [
-				"通过特殊的魔力透镜和特定的法术，你可以用魔法进行高速开采。"
-				"当然前提是，你有充足的魔力来完成这一切。"
-			]
-			icon: "botania:lens_explosive"
-			id: "7F53611A7CF99B04"
-			rewards: [
-				{
-					id: "33A8F0BA5E32AAC0"
-					item: "botania:lens_explosive"
-					type: "item"
-				}
-				{
-					id: "5AC95327852F9099"
-					item: {
-						Count: 1
-						id: "irons_spellbooks:scroll"
-						tag: {
-							ISB_Spells: {
-								data: [{
-									id: "irons_spellbooks:spectral_hammer"
-									index: 0
-									level: 5
-									locked: 1b
-								}]
-								maxSpells: 1
-								mustEquip: 0b
-								spellWheel: 0b
-							}
-						}
-					}
-					type: "item"
-				}
-			]
-			subtitle: "是的，你可以用魔力炸石头了"
-			tasks: [
-				{
-					id: "514A6850C0007C72"
-					item: "botania:lens_storm"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "10834ECEA24F9468"
-					item: "minecraft:emerald"
-					type: "item"
-				}
-				{
-					consume_items: true
-					id: "7B8ADB1401E813CE"
-					item: "irons_spellbooks:legendary_ink"
-					type: "item"
-				}
-			]
-			title: "魔力开采"
-			x: 0.0d
-			y: -5.0d
-		}
-		{
-			dependencies: [
-				"7B4573440B7AD85C"
-				"701A0263F6C6D275"
-			]
-			description: [
-				"炼金矩阵是个很神奇的东西，但同样遵循等价交换原则。如果你需要很宝贵的东西，那么你需要投入同样宝贵的材料——以及高昂的转换费用。"
-				"利用炼金矩阵的催化，你可以利用少量的下界合金将盖亚魂锭同化为一块下界合金！但是前提是你得先用正常的工业手段制作出下界合金才行（大概在工业第五章的位置）。"
-				"注：盖亚之魂可以通过血魔法的另一种方式——献祭——转化为奥术残骸）"
-			]
-			icon: "botania:gaia_ingot"
-			id: "6F959F4A55D178EF"
-			rewards: [{
-				id: "1839D359F234AD38"
-				item: "minecraft:netherite_ingot"
-				type: "item"
-			}]
-			subtitle: "是的，这可以变成下界合金"
-			tasks: [
-				{
-					id: "65B98CCCE944693A"
-					item: "botania:gaia_ingot"
-					type: "item"
-				}
-				{
-					id: "2CD1526B91F29BEC"
-					item: "createdeco:netherite_nugget"
-					type: "item"
-				}
-				{
-					id: "171F0DB5DDC67BFA"
-					item: {
-						Count: 1
-						id: "bloodmagic:arcaneashes"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "下界合金转化器"
-			x: -3.5d
-			y: 3.5d
+			x: 3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -524,9 +288,8 @@
 				"761B189A2DBC58B3"
 			]
 			description: [
-				"植物魔法的工具和盖亚守护者掉落的遗物在拥有强大能力的同时，往往需要消耗大量的魔力。"
-				"尽管魔力生产可以工业化，但每次给板子充能也会让人很烦。"
-				"不必担心，在下一章，你将获得最强的被动产能方式——以及触碰永恒魔力的边缘。"
+				"植物魔法的工具和盖亚守护者掉落的遗物在拥有强大能力的同时，往往需要&b消耗大量的魔力&r。"
+				"如果需要使用它们，尽量&6使用魔力手镜&r并&3工业化你的植物魔法魔力生产&r吧）"
 			]
 			id: "210E43CDA18C6505"
 			rewards: [{
@@ -566,15 +329,15 @@
 		{
 			dependencies: [
 				"2F114B04C2EA45F4"
-				"20942DA97CA0E5D0"
+				"76D04861231F6C27"
 			]
 			description: [
-				"在你击败二挡的盖亚守护者后，它会掉落随机角色的祝福，能够和泰拉钢头盔进行合成。"
-				"所以，你可以为自己的头盔额外添加特效——也可以将法球升级打入其中。"
+				"在你击败二挡的盖亚守护者后，它会&a掉落随机角色的祝福&r，能够和泰拉钢头盔进行合成。"
+				"你还可以为自己的头盔和其他部位的泰拉盔甲额外添加特效——也可以&b将法球升级打入其中&r。"
 				"当然，我们提供的盔甲显然不会只有植魔的这一套……"
 			]
 			id: "13ED6E893B4A6238"
-			subtitle: "植魔和铁魔法的力量结晶"
+			subtitle: "魔能铠甲"
 			tasks: [{
 				id: "1546C3FADDC50C9B"
 				item: {
@@ -588,13 +351,10 @@
 			}]
 			title: "泰拉的意志"
 			x: 0.0d
-			y: 5.0d
+			y: -5.0d
 		}
 		{
-			dependencies: [
-				"1512F0EED2C94AD6"
-				"701A0263F6C6D275"
-			]
+			dependencies: ["701A0263F6C6D275"]
 			description: [
 				"植魔的神秘手镜——&c只能用来绑定魔力池&r，但这也意味着，如果你有一个稳定产魔的池子，那你就可以开始使用一些超模的植魔装备了）"
 				"需要注意的是，手镜&6无法通过光环之戒充能&r，也就是说如果你希望&a自动充能后使用装备&r，那么你还是需要携带石板……"
@@ -614,13 +374,13 @@
 				type: "item"
 			}]
 			title: "远距离传输"
-			x: 3.5d
-			y: 3.5d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
-				"20942DA97CA0E5D0"
 				"4A24B3DB9C49B7CB"
+				"76D04861231F6C27"
 			]
 			description: [
 				"在你集齐地底深藏的&9深暗&r与&7奥术&r之力后，你将能用这种力量催生出一种奇特的植物——可以&b用魔力扰动现实，驱动马达&r的植物。"
@@ -645,6 +405,77 @@
 			title: "魔动工业"
 			x: 5.0d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"701A0263F6C6D275"
+				"1512F0EED2C94AD6"
+			]
+			description: [
+				"通过用紫水晶做成的工匠砧，你发现可以以此手动为物品注入魔能。"
+				"用&d盖亚的力量&r和&9黑暗的材料&r对其稍稍进行催化，你就得到了一种可以为某些特定的存在供能的基座……但这只是基座，也许&c需要一个核心&r？"
+			]
+			id: "1E3A4F1CB304BBFC"
+			rewards: [{
+				id: "1F12A38B40F33E9B"
+				item: "irons_spellbooks:pedestal"
+				type: "item"
+			}]
+			subtitle: "那么，古尔丹，代价是什么呢？"
+			tasks: [{
+				id: "4F9F08784B20A945"
+				item: "goety:pedestal"
+				type: "item"
+			}]
+			title: "奉献精神"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"1E3A4F1CB304BBFC"
+				"761B189A2DBC58B3"
+				"4A24B3DB9C49B7CB"
+			]
+			description: [
+				"&b【完成后解锁主线章节：4M 诡秘仪式】&r"
+				"准备好基座后，一些&9深邃黑暗充满幻想的仪式&r就可以开始了（大雾"
+				"但显然你&0需要一座合适的祭坛&r作为魔力焦点来冲破世界的限制。"
+				"借由魔力爆发和金属框架的支持，&6一次魔力聚合能够制作出多个能够作为核心的祭坛&r，这也意味着你可以尝试更多种类的仪式，而不用每次都将祭坛搬走）"
+			]
+			id: "736407504A1AB9E0"
+			rewards: [{
+				id: "39298AB0EC7935C6"
+				item: "minecraft:enchanting_table"
+				type: "item"
+			}]
+			subtitle: "凝聚魔力……穿透帷幕。"
+			tasks: [{
+				id: "6BF142DEA2CF45A2"
+				item: "goety:dark_altar"
+				type: "item"
+			}]
+			title: "【终点】仪式开始"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0F9DF1C5137194E4"]
+			description: [
+				"&5用紫水晶碎片对幽匿块右键&r有25%的几率获得这种被侵染的碎片，紫水晶与幽匿块都会被消耗。"
+				"通过&a泰拉钢与元素核心&r，你可以人为造出幽匿催发体，不过这很贵。"
+				"虽然这一碎片常出现于古城的宝箱中，但&9监守者因为世界线的变动而变得异常强大&r。如果一定要去古城，那么千万小心不要惊动它们……"
+			]
+			id: "76D04861231F6C27"
+			subtitle: "通 灵 最 强 音"
+			tasks: [{
+				id: "2E44E703EBBBF5EA"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			title: "地底回音"
+			x: 1.5d
+			y: -1.5d
 		}
 	]
 	subtitle: ["Mana Within"]

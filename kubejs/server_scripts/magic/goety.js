@@ -90,6 +90,61 @@ ServerEvents.recipes(event => {
             A: 'goety:magic_emerald'
         }
     )
+
+    //诅咒之笼移除
+    event.remove({output:'goety:cursed_cage'})
+    //诅咒之笼合成
+    event.shaped(
+        Item.of('goety:cursed_cage'),
+        [
+            'ABA',
+            'BCB',
+            'ABA'
+        ],
+        {
+            C: 'goety:empty_focus',
+            B: 'irons_spellbooks:arcane_essence',
+            A: 'goety:cursed_bars'
+        }
+    )
     
+    //祭坛底座移除
+    event.remove({output:'goety:pedestal'})
+    //祭坛底座合成
+    event.shaped(
+        Item.of('8x goety:pedestal'),
+        [
+            'AAA',
+            ' B ',
+            'CDC'
+        ],
+        {
+            D: 'botania:life_essence',
+            B: 'irons_spellbooks:arcane_anvil',
+            C: 'goety:haunted_planks',
+            A: 'goety:shade_stone'
+        }
+    )
+
+    //祭坛移除
+    event.remove({output:'goety:dark_altar'})
+    //祭坛合成
+    event.shaped(
+        Item.of('4x goety:dark_altar'),
+        [
+            'ABA',
+            ' C ',
+            'DED'
+        ],
+        {
+            D: 'irons_spellbooks:arcane_salvage',
+            C: 'goety:pedestal',
+            E: 'goety:cursed_ingot',
+            B: 'botania:mana_gun',
+            A: 'goety:shade_stone_bricks'
+        }
+    )
+
+
     //魔力粉-奥术源质兑换
 })

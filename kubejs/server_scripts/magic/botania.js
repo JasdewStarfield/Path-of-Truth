@@ -217,7 +217,7 @@ ServerEvents.recipes(event => {
             D:'botania:elementium_block',
             E:'botania:rune_water',
             F:'botania:rune_fire',
-            G:'botania:rune_mana',
+            G:'goety:cursed_cage',
             H:'botania:rune_air'
         }
     )
@@ -260,7 +260,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'botania',output:'botania:mana_gun'},
     'minecraft:tnt', 'botania:terrasteel_ingot' )
     event.replaceInput({mod:'botania',output:'botania:mana_gun'},
-    'botania:redstone_spreader', 'bloodmagic:magicianbloodorb' )
+    'botania:redstone_spreader', 'kubejs:fire_elemental_core' )
     event.replaceInput({mod:'botania',output:'botania:mana_gun'},
     'botania:mana_diamond', 'create:precision_mechanism' )
 
@@ -281,7 +281,7 @@ ServerEvents.recipes(event => {
             A:'botania:terrasteel_ingot',
             B:'botania:ender_air_bottle',
             C:'botania:dragonstone',
-            D:'minecraft:bedrock'
+            D:'kubejs:water_elemental_core'
         }
     )
 
@@ -398,6 +398,142 @@ ServerEvents.recipes(event => {
             'botania:terrasteel_block'
         ]
     )
+
+    //幽匿催发体合成
+    event.shaped(
+        Item.of('minecraft:sculk_catalyst'),
+        [
+            ' A ',
+            'BCD',
+            ' E '
+        ],
+        {
+            A: 'kubejs:earth_elemental_core',
+            B: 'kubejs:water_elemental_core',
+            E: 'minecraft:amethyst_block',
+            C: 'botania:terrasteel_ingot',
+            D: 'kubejs:fire_elemental_core'
+        }
+    )
+
+    //泰拉盔甲系列配方替换
+    //泰拉头盔替换
+    event.remove({id:'botania:terrasteel_helmet'})
+    event.custom({
+        "type": "botania:armor_upgrade",
+        "category": "equipment",
+        "key": {
+            "A": {
+            "item": "botania:manasteel_helmet"
+            },
+            "R": {
+            "item": "botania:rune_spring"
+            },
+            "S": {
+            "tag": "botania:terrasteel_ingots"
+            },
+            "T": {
+            "item": "minecraft:echo_shard"
+            }
+        },
+        "pattern": [
+            "TRT",
+            "SAS",
+            " S "
+        ],
+        "result": {
+            "item": "botania:terrasteel_helmet"
+        },
+        "show_notification": true
+    })
+    //泰拉胸甲替换
+    event.remove({id:'botania:terrasteel_chestplate'})
+    event.custom({
+        "type": "botania:armor_upgrade",
+        "category": "equipment",
+        "key": {
+            "A": {
+            "item": "botania:manasteel_chestplate"
+            },
+            "R": {
+            "item": "botania:rune_summer"
+            },
+            "S": {
+            "tag": "botania:terrasteel_ingots"
+            },
+            "T": {
+            "item": "minecraft:echo_shard"
+            }
+        },
+        "pattern": [
+            "TRT",
+            "SAS",
+            " S "
+        ],
+        "result": {
+            "item": "botania:terrasteel_chestplate"
+        },
+        "show_notification": true
+    })
+    //泰拉护腿替换
+    event.remove({id:'botania:terrasteel_leggings'})
+    event.custom({
+        "type": "botania:armor_upgrade",
+        "category": "equipment",
+        "key": {
+            "A": {
+            "item": "botania:manasteel_leggings"
+            },
+            "R": {
+            "item": "botania:rune_autumn"
+            },
+            "S": {
+            "tag": "botania:terrasteel_ingots"
+            },
+            "T": {
+            "item": "minecraft:echo_shard"
+            }
+        },
+        "pattern": [
+            "TRT",
+            "SAS",
+            " S "
+        ],
+        "result": {
+            "item": "botania:terrasteel_leggings"
+        },
+        "show_notification": true
+    })
+    //泰拉靴子替换
+    event.remove({id:'botania:terrasteel_boots'})
+    event.custom({
+        "type": "botania:armor_upgrade",
+        "category": "equipment",
+        "key": {
+            "A": {
+            "item": "botania:manasteel_boots"
+            },
+            "R": {
+            "item": "botania:rune_winter"
+            },
+            "S": {
+            "tag": "botania:terrasteel_ingots"
+            },
+            "T": {
+            "item": "minecraft:echo_shard"
+            }
+        },
+        "pattern": [
+            "TRT",
+            "SAS",
+            " S "
+        ],
+        "result": {
+            "item": "botania:terrasteel_boots"
+        },
+        "show_notification": true
+    })
+    
     //创造魔力石板合成
     event.recipes.botania.terra_plate(Item.of('botania:mana_tablet', '{creative:1b,mana:500000}'), 
         [
@@ -439,6 +575,7 @@ ServerEvents.recipes(event => {
         ], 
         500000
     )
+
     /*
     //异彩化合物魔法合成
     event.recipes.botania.terra_plate('createchromaticreturn:chromatic_compound', 

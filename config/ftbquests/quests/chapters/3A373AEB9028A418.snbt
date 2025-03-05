@@ -272,14 +272,8 @@
 			hide_until_deps_complete: true
 			id: "7099BD66C194C8C2"
 			rewards: [{
-				id: "24B362A7459A94A4"
-				item: {
-					Count: 1
-					id: "minecraft:potion"
-					tag: {
-						Potion: "tide:long_resistance"
-					}
-				}
+				id: "3C4D9FCBA28B184F"
+				item: "artifacts:cross_necklace"
 				type: "item"
 			}]
 			subtitle: "护甲都是纸"

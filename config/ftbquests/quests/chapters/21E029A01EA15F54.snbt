@@ -21,8 +21,8 @@
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 6.0d
-			y: -1.0d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			height: 2.0d
@@ -44,6 +44,7 @@
 				"村民喜欢这些宝石真的只是因为光泽吗？"
 				""
 				"&o&c*注意：利用图腾的合成会消耗1灵魂，如果灵魂不足，那么图腾将被消耗！&r&r"
+				"&o&2*绿宝石通过探索可以找到很多，挖矿获得的则会很少，建议通过翻箱倒柜解决前中期的绿宝石需求。&r&r"
 			]
 			hide_until_deps_complete: true
 			icon: "goety:magic_emerald"
@@ -83,8 +84,8 @@
 				type: "item"
 			}]
 			title: "我煮我自己"
-			x: -2.0d
-			y: 0.0d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["11E3776CE5E23255"]
@@ -133,8 +134,8 @@
 				}
 			]
 			title: "打开精灵之门"
-			x: 2.0d
-			y: 0.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["11E3776CE5E23255"]
@@ -175,8 +176,8 @@
 				}
 			]
 			title: "以鲜血换取灵魂！"
-			x: 0.0d
-			y: -2.0d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["11E3776CE5E23255"]
@@ -218,8 +219,8 @@
 				}
 			]
 			title: "魔能材料"
-			x: 0.0d
-			y: 2.0d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["57B126A840CCD6E4"]
@@ -245,8 +246,8 @@
 				}
 			]
 			title: "灵魂侵染"
-			x: -1.0d
-			y: -4.0d
+			x: 4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["57B126A840CCD6E4"]
@@ -258,47 +259,17 @@
 				type: "item"
 			}]
 			title: "灵魂聚合"
-			x: 1.0d
-			y: -4.0d
+			x: 4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["13313120B0D22371"]
-			description: [
-				"对于魔法的本源认知终将归于对于元素的操纵。"
-				"通过凝聚元素，你将能够以&b灵魂&r换取实体化的&9水流&r或&6岩浆&r。"
-				"然而，元素的压缩总是艰难的……"
-			]
-			id: "76E3812C8219949B"
-			rewards: [{
-				id: "63AF9724E033F83F"
-				item: "create:fluid_tank"
-				type: "item"
-			}]
-			subtitle: "我将，点燃大海！"
-			tasks: [
-				{
-					id: "7BCB99A2ACA9015A"
-					item: "kubejs:water_elemental_core"
-					type: "item"
-				}
-				{
-					id: "42DB625FD6644DBA"
-					item: "kubejs:fire_elemental_core"
-					type: "item"
-				}
-			]
-			title: "水与火的试炼"
-			x: -3.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["60B15529BE147F62"]
 			description: [
 				"当你做出这个之后，你会发现自己拥有了&a自定义施法&r的能力——虽然法术聚晶的效果还是固定的，但是比起铁魔法而言自由度更高一点，毕竟你可以随时打开法杖更换聚晶。"
 				"聚晶的功能也&b更为繁杂&r，有相当一部分是&6“伤害”之外的生活功能&r，不过这需要你自行探索了。"
 				"这里赠送的基础聚晶可以试试&e放电&r——这一聚晶可以进阶，一部分基础聚晶可以合成为更强大的聚晶。"
 				""
-				"&o&a不会装填聚晶？那看我干什么，去看书学习去！&r&r"
+				"&o&a容量有限……&r&r"
 			]
 			id: "643DA6D3D15ED948"
 			rewards: [{
@@ -306,7 +277,7 @@
 				item: "goety:shocking_focus"
 				type: "item"
 			}]
-			subtitle: "最基本的法杖"
+			subtitle: "帅otto"
 			tasks: [{
 				id: "34F33A665FA48518"
 				item: {
@@ -323,26 +294,38 @@
 				type: "item"
 			}]
 			title: "电棍"
-			x: 3.0d
-			y: -4.0d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"13313120B0D22371"
 				"60B15529BE147F62"
 			]
+			description: [
+				"当你需要导出灵魂并用于更强力的合成时，简单的图腾显然会有些让人力不从心，而一个&b能够禁锢灵魂之力的笼子&r显然是更好的选项。"
+				"将图腾置入笼子后，它就会成为&9灵魂储存和释放的载体&r——然而图腾的充能仍需你亲自动手。"
+				"这也是后续几乎所有灵魂之力调用的基础。"
+				""
+				"&o&7*它也可以变成刷怪笼并被你抽取能量——它和刷怪笼长得很像是有原因的）&r&r"
+			]
 			id: "7338DDFCE4617258"
+			rewards: [{
+				id: "04C465EEB0F26F68"
+				item: "goety:soul_light_focus"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "更魔法的“电池”"
+			subtitle: "灵魂下沉……"
 			tasks: [{
 				id: "4C25BB7C1147C36F"
 				item: "goety:cursed_cage"
 				type: "item"
 			}]
 			title: "刷怪笼……？"
-			x: 0.0d
-			y: -6.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4320B37354ECBC14"]
@@ -358,8 +341,8 @@
 				type: "item"
 			}]
 			title: "传奇之路"
-			x: -4.0d
-			y: -1.0d
+			x: 1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4320B37354ECBC14"]
@@ -423,8 +406,8 @@
 				}
 			]
 			title: "自然要素"
-			x: -4.0d
-			y: 1.0d
+			x: -1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -486,8 +469,8 @@
 				}
 			]
 			title: "地狱的馈赠"
-			x: -6.0d
-			y: 0.0d
+			x: 0.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["7CCCB823C49F78E8"]
@@ -535,8 +518,8 @@
 				}
 			]
 			title: "基本升级材料"
-			x: -4.0d
-			y: -3.0d
+			x: 3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1B2D939907CB4DF0"]
@@ -564,8 +547,8 @@
 				}
 			]
 			title: "性质变化与无中生有"
-			x: -1.0d
-			y: 4.0d
+			x: -4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["719876BE47F58EE6"]
@@ -582,8 +565,8 @@
 				type: "item"
 			}]
 			title: "填写元素"
-			x: -4.0d
-			y: 3.0d
+			x: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1B2D939907CB4DF0"]
@@ -616,8 +599,8 @@
 				}
 			]
 			title: "魔法炼药"
-			x: 1.0d
-			y: 4.0d
+			x: -4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -645,15 +628,15 @@
 				type: "item"
 			}]
 			title: "长效加成"
-			x: 0.0d
-			y: 6.0d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["532F8BFB9374238B"]
 			description: [
-				"我们讨论炼金的时候本质是物质的转变，而对于特定产物的拆分和重组显然也是其中一部分。"
-				"这里提供三个例子：将魔力钢锭拆分为奥术源质；将粘液球转化为末影珍珠，将血魔法的气血宝珠逆向还原为钻石。"
-				"更多的神秘配方就要自己探索了，话说的太明白就没意思了）"
+				"我们讨论炼金的时候本质是&6物质的转变&r，而对于特定产物的&c拆分和重组&r显然也是其中一部分。"
+				"这里提供几个例子：将魔力钢锭拆分为奥术源质；将粘液球转化为末影珍珠。"
+				"更多的神秘配方就要自己探索了哦）"
 			]
 			icon: "botania:mana_void"
 			id: "01ABDF6D02F461D6"
@@ -666,11 +649,6 @@
 				{
 					id: "436043AD02B27677"
 					item: "minecraft:slime_ball"
-					type: "item"
-				}
-				{
-					id: "65563A865AE4ED42"
-					item: "bloodmagic:weakbloodorb"
 					type: "item"
 				}
 			]
@@ -686,15 +664,10 @@
 					item: "minecraft:ender_pearl"
 					type: "item"
 				}
-				{
-					id: "1AEABD7370315090"
-					item: "minecraft:diamond"
-					type: "item"
-				}
 			]
 			title: "裂解与重组"
-			x: -3.0d
-			y: 4.0d
+			x: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["588310807CE42A4A"]
@@ -729,8 +702,8 @@
 				}
 			]
 			title: "短暂，但有效"
-			x: 3.0d
-			y: 4.0d
+			x: -4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2EA11306B3076434"]
@@ -760,8 +733,8 @@
 				}
 			]
 			title: "PY交易"
-			x: 4.0d
-			y: -1.0d
+			x: 1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2EA11306B3076434"]
@@ -778,8 +751,8 @@
 				type: "item"
 			}]
 			title: "魔力传输"
-			x: 4.0d
-			y: 1.0d
+			x: -1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6FA24342A82507F6"]
@@ -808,8 +781,8 @@
 				}
 			]
 			title: "炫彩装备"
-			x: 4.0d
-			y: -3.0d
+			x: 3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5F1578F61B3B2D32"]
@@ -840,8 +813,8 @@
 				}
 			]
 			title: "充魔站"
-			x: 4.0d
-			y: 3.0d
+			x: -3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -852,8 +825,9 @@
 				"&b【完成后解锁主线章节：3M 魔力流淌】&r"
 				"作为后续高级凝聚操作的核心部件，麻烦一点也是正常的。"
 				"请准备好足够多的材料来完成这一切……然后搭建凝聚结构，你就可以准备迎接泰拉钢时代了。"
-				"有一点要注意，这个板子还会拿来合成别的，别以为只有泰拉钢……"
+				"有一点要注意，它不止会被用来凝聚泰拉钢。"
 			]
+			icon: "botania:terra_plate"
 			id: "27ABB5338B46217F"
 			rewards: [{
 				id: "1195091C3344D91C"
@@ -869,31 +843,54 @@
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "嗯，很复杂"
-			tasks: [{
-				id: "03194BBDEF9F93B8"
-				item: "botania:terra_plate"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "03194BBDEF9F93B8"
+					item: "botania:terra_plate"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0A823BB5D75BA783"
+					item: { Count: 5, id: "botania:livingrock" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "73B0B22F98182C4F"
+					item: { Count: 4, id: "minecraft:lapis_block" }
+					type: "item"
+				}
+			]
 			title: "【终点】泰拉之光"
-			x: 6.0d
-			y: 0.0d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1B2D939907CB4DF0"]
 			description: [
-				"由于实在太难找，你可以通过魔力将陆地上的叶子转化为海里的叶子！"
-				"有传送带了（确信）"
+				"魔力能做到一些奇妙的转换，比如把一些内在具有共同点的事物视为一个相似组进行转变……"
+				"&2比如叶子，也比如种子。&r"
+				""
+				"&o&7*请记住，种子是可以直接种植到耕地上的。&r&r"
 			]
 			id: "19CAA60981A6A8E8"
-			subtitle: "冰海确实不太行，但魔力可以！"
-			tasks: [{
-				id: "25A9EBF1200D1329"
-				item: "minecraft:kelp"
-				type: "item"
-			}]
+			subtitle: "嬗变魔法"
+			tasks: [
+				{
+					id: "25A9EBF1200D1329"
+					item: "minecraft:kelp"
+					type: "item"
+				}
+				{
+					id: "42704BC21B0A9752"
+					item: "immersiveengineering:seed"
+					type: "item"
+				}
+			]
 			title: "罕见作物"
-			x: 0.0d
-			y: 4.0d
+			x: -4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["57B126A840CCD6E4"]
@@ -911,8 +908,30 @@
 				type: "item"
 			}]
 			title: "人造玉石"
-			x: 0.0d
-			y: -4.0d
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60B15529BE147F62"]
+			description: [
+				"尽管刷怪笼本身难以获取，但魔法可以直接提取笼中的生命之火，并将其转移。"
+				"右键刷怪笼后&9原本的刷怪笼将碎裂&r，但对应生物的火焰将在你的聚晶中燃起——将其&c在诅咒之笼中点燃&r，你就能够获得一个全新的，由你指定位置的刷怪笼！"
+			]
+			id: "092CD716FC19EF76"
+			rewards: [{
+				id: "4308D3408297310F"
+				item: "irons_spellbooks:firefly_jar"
+				type: "item"
+			}]
+			subtitle: "牺牲一个，成就另一个"
+			tasks: [{
+				id: "624D690BF0E882D8"
+				item: "goety:flame_capture"
+				type: "item"
+			}]
+			title: "刷怪笼的第一步"
+			x: 4.0d
+			y: 3.0d
 		}
 	]
 	subtitle: ["Blood and Soul"]
