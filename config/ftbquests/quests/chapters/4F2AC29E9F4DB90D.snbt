@@ -29,8 +29,8 @@
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 0.0d
-			y: 19.0d
+			x: 1.5d
+			y: 21.0d
 		}
 	]
 	order_index: 0
@@ -299,18 +299,13 @@
 					type: "item"
 				}
 				{
-					id: "1E492131DABC2BCD"
-					item: "create:fluid_tank"
-					type: "item"
-				}
-				{
 					id: "7D2C738F52D8C1BD"
 					item: "create:mechanical_pump"
 					type: "item"
 				}
 			]
 			title: "流淌……"
-			x: 2.0d
+			x: 0.0d
 			y: 6.0d
 		}
 		{
@@ -334,7 +329,7 @@
 			}]
 			title: "流体机械的基石"
 			x: 0.0d
-			y: 9.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
@@ -351,13 +346,13 @@
 				type: "item"
 			}]
 			title: "注入！"
-			x: 2.0d
-			y: 11.5d
+			x: 0.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
 				"1DC10C93572BD016"
-				"7F98F9F01F44BA28"
+				"370AE293C357A2D5"
 			]
 			description: [
 				"嗯，相信你已经查看过合金的配方了，有没有骂人的冲动？有就骂出来，反正骂了也没用。"
@@ -379,10 +374,10 @@
 			}]
 			title: "真正的合金"
 			x: 0.0d
-			y: 13.5d
+			y: 12.0d
 		}
 		{
-			dependencies: ["1D0D60C89EA75663"]
+			dependencies: ["76BE4625CCF2F867"]
 			description: [
 				"至于为什么配方是用的流体工程块……大约是液压手吧（心虚）"
 				""
@@ -397,7 +392,7 @@
 			}]
 			title: "更多的“帮手”"
 			x: -2.0d
-			y: 11.5d
+			y: 16.0d
 		}
 		{
 			dependencies: [
@@ -419,8 +414,8 @@
 				type: "item"
 			}]
 			title: "工业化的结晶"
-			x: -3.5d
-			y: 17.0d
+			x: -3.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["76BE4625CCF2F867"]
@@ -438,8 +433,8 @@
 				type: "item"
 			}]
 			title: "鼓风机输出"
-			x: -0.5d
-			y: 11.5d
+			x: 0.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["07C921FBCF56E703"]
@@ -475,7 +470,7 @@
 			]
 			title: "触媒装箱"
 			x: 0.5d
-			y: 11.5d
+			y: 14.5d
 		}
 		{
 			dependencies: [
@@ -497,8 +492,8 @@
 				type: "item"
 			}]
 			title: "精密工业"
-			x: -5.0d
-			y: 17.0d
+			x: -4.0d
+			y: 16.0d
 		}
 		{
 			dependencies: [
@@ -519,8 +514,8 @@
 				type: "item"
 			}]
 			title: "来硬的"
-			x: 3.5d
-			y: 17.0d
+			x: 2.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
@@ -537,8 +532,8 @@
 				type: "item"
 			}]
 			title: "防腐措施"
-			x: 5.0d
-			y: 17.0d
+			x: 4.0d
+			y: 16.0d
 		}
 		{
 			dependencies: [
@@ -630,8 +625,8 @@
 				}
 			]
 			title: "智能时代"
-			x: -1.5d
-			y: 18.5d
+			x: -2.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
@@ -667,7 +662,7 @@
 			]
 			title: "附魔工业"
 			x: -2.0d
-			y: 9.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["37C7364F0F3E8C89"]
@@ -706,7 +701,7 @@
 			}]
 			title: "大物流时代！"
 			x: 0.0d
-			y: 18.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["37C7364F0F3E8C89"]
@@ -739,7 +734,7 @@
 			]
 			title: "铁道运输"
 			x: -1.0d
-			y: 17.0d
+			y: 16.0d
 		}
 		{
 			dependencies: [
@@ -795,11 +790,14 @@
 				}
 			]
 			title: "无尽岩浆"
-			x: 2.0d
-			y: 9.5d
+			x: -2.0d
+			y: 8.5d
 		}
 		{
-			dependencies: ["2365843CB7C02588"]
+			dependencies: [
+				"1DC10C93572BD016"
+				"3ACA6DDA21386252"
+			]
 			description: [
 				"玫瑰石英是一种具有电学性质的材料，在受到特定刺激后会产生电压……然而，你并不能指望用这点微弱的电压来积累电力。"
 				"即便如此，它还是有用的。为了制造它，你需要一种叫红石酸的导电流体……。"
@@ -812,19 +810,19 @@
 			subtitle: "哦还没有"
 			tasks: [
 				{
-					id: "4A2263932B0BFE7C"
-					item: "immersiveengineering:redstone_acid_bucket"
+					id: "5D0AA9CE056CA4DC"
+					item: "create:rose_quartz"
 					type: "item"
 				}
 				{
-					id: "659533F07C4ECFB1"
+					id: "660364282DB27C0D"
 					item: "create:polished_rose_quartz"
 					type: "item"
 				}
 			]
 			title: "有电了……吗？"
-			x: -2.5d
-			y: 16.0d
+			x: -2.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
@@ -836,41 +834,53 @@
 				type: "item"
 			}]
 			title: "卷起来了"
-			x: 0.0d
+			x: 2.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["3EFEF14D70B01F51"]
+			icon: "kubejs:basic_spring_set"
 			id: "62214C4C462BB308"
 			tasks: [{
-				id: "2EE37FE1CB630935"
-				item: "vintageimprovements:iron_spring"
+				id: "0ECDCFDFF1BE216E"
+				item: "kubejs:basic_spring_set"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 7.5d
+			x: 2.0d
+			y: 8.0d
 		}
 		{
-			dependencies: ["76BE4625CCF2F867"]
+			dependencies: ["1D0D60C89EA75663"]
 			id: "2365843CB7C02588"
 			tasks: [{
 				id: "1BF501746E83267C"
 				item: "vintageimprovements:vacuum_chamber"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 15.0d
+			x: -2.0d
+			y: 10.0d
 		}
 		{
-			dependencies: ["76BE4625CCF2F867"]
+			dependencies: ["62214C4C462BB308"]
 			id: "370AE293C357A2D5"
 			tasks: [{
 				id: "24899BE40D7190F6"
 				item: "vintageimprovements:vibrating_table"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 15.0d
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2365843CB7C02588"]
+			id: "3ACA6DDA21386252"
+			tasks: [{
+				id: "3CA0380EB5FA21C0"
+				item: "immersiveengineering:redstone_acid_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 11.5d
 		}
 	]
 	subtitle: ["Exotic Alloys"]

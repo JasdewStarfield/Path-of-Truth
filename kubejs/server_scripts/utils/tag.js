@@ -78,24 +78,6 @@ const Unobtainable = [
     "scguns:powered_mechanical_press"
 ]
 
-const LivingArmourSocket = [
-    'bloodmagic:growthsigil',
-    'bloodmagic:miningsigil',
-    'bloodmagic:sigilofmagnetism',
-    'bloodmagic:icesigil',
-    'bloodmagic:sigilofholding',
-    'bloodmagic:sigilofsuppression',
-    'bloodmagic:divinationsigil',
-    'bloodmagic:seersigil',
-    'bloodmagic:soulgempetty',
-    'bloodmagic:soulgemlesser',
-    'bloodmagic:soulgemcommon',
-    'bloodmagic:soulgemgreater',
-    'bloodmagic:experiencebook',
-    'bloodmagic:upgradetrainer',
-    'bloodmagic:demonwillgauge'
-]
-
 ServerEvents.tags("item", (event) => {
     //工程块
     engineeringBlocks.forEach((id) => event.add("kubejs:engineering_block", id))
@@ -133,6 +115,8 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:tools/shovels","kubejs:bronze_shovel")
 
     //Unify
+    event.add("forge:ingots","kubejs:failed_brass_ingot")
+    event.add("forge:dusts","kubejs:brass_blend")
     event.add("forge:dusts","kubejs:gold_silver_mix")
     event.add("forge:flour","tmted:wheat_flour")
     event.add("forge:rope","beautify:rope")
@@ -206,9 +190,6 @@ ServerEvents.tags("item", (event) => {
     event.add("minecraft:tools","kubejs:sword_o_justice")
     event.add("minecraft:swords","kubejs:sword_o_justice")
     event.add("forge:tools/swords","kubejs:sword_o_justice")
-
-    //血魔法槽位移除
-    event.remove("curios:living_armour_socket",LivingArmourSocket)
 
     //类皮革靴子物品（防细雪）
     //似乎坏了，先注释掉吧

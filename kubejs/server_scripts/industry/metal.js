@@ -235,19 +235,38 @@ ServerEvents.recipes(event => {
         '#forge:plates/constantan'
     )
 
+    //弹簧组
+    event.shaped('kubejs:basic_spring_set', [ 
+        'AA', 
+        'AB',
+        'AA'  
+    ], {
+        A: 'vintageimprovements:iron_spring',
+        B: 'vintageimprovements:small_copper_spring'
+    })
+    event.recipes.create.sequenced_assembly([
+        Item.of('kubejs:basic_spring_set')
+    ], 'vintageimprovements:small_copper_spring', [
+        event.recipes.createDeploying("kubejs:incomplete_basic_spring_set", ["kubejs:incomplete_basic_spring_set", 'vintageimprovements:iron_spring']),
+    ]).transitionalItem("kubejs:incomplete_basic_spring_set").loops(4)
+
     //黄铜
     event.remove({id:"create:mixing/brass_ingot"})
+
+    event.recipes.create.mixing('kubejs:brass_blend', ['#forge:dusts/copper','#forge:dusts/zinc']).heated()
+
     let inter = 'kubejs:incomplete_brass_ingot'
     event.recipes.create.sequenced_assembly([
         Item.of('create:brass_ingot').withChance(80.0),
-        Item.of('create:zinc_ingot').withChance(10.0),
-        Item.of('copper_ingot').withChance(10.0)
-    ], 'minecraft:copper_ingot', [
-        event.recipes.createFilling(inter, [inter, Fluid.lava(250)]),
-        event.recipes.createDeploying(inter, [inter, 'kubejs:zinc_dust']),
-        event.recipes.createFilling(inter, [inter, Fluid.water(250)]),
+        Item.of('kubejs:failed_brass_ingot').withChance(20.0)
+    ], 'kubejs:brass_blend', [
+        event.recipes.createFilling(inter, [inter, Fluid.lava(50)]),
+        event.recipes.vintageimprovements.vibrating(inter, inter),
+        event.recipes.createFilling(inter, [inter, Fluid.water(100)]),
         event.recipes.createPressing(inter, inter)
-    ]).transitionalItem(inter).loops(1)
+    ]).transitionalItem(inter).loops(3)
+
+    event.recipes.create.milling([Item.of('#forge:dusts/copper').withChance(0.9),Item.of('#forge:dusts/zinc').withChance(0.9)], 'kubejs:failed_brass_ingot')
 
     //黑曜石支持用石磨处理
     event.recipes.create.milling(Item.of('create:powdered_obsidian').withChance(0.75), '#forge:obsidian')

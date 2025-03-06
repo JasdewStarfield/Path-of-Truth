@@ -29,7 +29,15 @@ StartupEvents.registry('item', (event) => {
   event.create("raw_andesite_alloy").displayName('Raw Andesite Alloy')
 
   //未完成的黄铜
+  event.create("brass_blend").displayName('Copper-Zinc Mix')
   event.create("incomplete_brass_ingot", 'create:sequenced_assembly').displayName('Incomplete Brass Ingot')
+  event.create("failed_brass_ingot").displayName('Failed Brass Ingot')
+
+  //弹簧组
+  event.create("basic_spring_set").displayName('Basic Spring Set')
+  event.create("incomplete_basic_spring_set", 'create:sequenced_assembly').displayName('Incomplete Basic Spring Set')
+  event.create("advanced_spring_set").displayName('Advanced Spring Set')
+  event.create("incomplete_advanced_spring_set", 'create:sequenced_assembly').displayName('Incomplete Advanced Spring Set')
 
   //钢铸造相关
   event.create("casting_base").displayName('Casting Base')
