@@ -442,6 +442,29 @@
 			x: -1.5d
 			y: 3.0d
 		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"在海边，有时你会看到灾厄村民群聚在一些破烂不堪的船的旁边。"
+				"也许搜索一下那些残骸，可以找到一些被遗忘的历史……"
+			]
+			hide_until_deps_complete: true
+			icon: "aquamirae:rune_of_the_storm"
+			id: "3B3B39FE9A88ED71"
+			rewards: [{
+				id: "4B322618601A51D8"
+				item: "aquamirae:dead_sea_scroll"
+				type: "item"
+			}]
+			subtitle: "灾厄村民：怎么哪儿都有你！"
+			tasks: [{
+				id: "4882A59E802B7E47"
+				title: "被遗忘的大海"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
 	]
 	subtitle: ["Spirt of Exploration"]
 	title: "2A 探索精神"
