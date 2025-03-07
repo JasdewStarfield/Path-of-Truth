@@ -34,6 +34,8 @@ ServerEvents.recipes(event => {
       ["create:encased_fan", "create:propeller"],
       ["create_power_loader:empty_andesite_chunk_loader", "glowstone"],
       ["create_mechanical_extruder:mechanical_extruder", "kubejs:fluid_engineering"],
+      ['createaddition:rolling_mill', '#forge:storage_blocks/iron'],
+      ['vintageimprovements:belt_grinder', 'vintageimprovements:grinder_belt'],
       ['vintageimprovements:spring_coiling_machine', 'vintageimprovements:spring_coiling_machine_wheel'],
       ['vintageimprovements:vibrating_table', "kubejs:basic_spring_set"]
     ]
@@ -76,7 +78,7 @@ ServerEvents.recipes(event => {
 
     //传感工程块
     const sensoryEngineering = [
-      ['createutilities:void_motor', "create_new_age:advanced_motor"],
+      //['createutilities:void_motor', "create_new_age:advanced_motor"],
       ['createutilities:void_chest', "ender_chest"],
       ['createutilities:void_tank', "tfmg:steel_fluid_tank"],
       ['createutilities:void_battery', "immersiveengineering:capacitor_mv"],
@@ -96,7 +98,7 @@ ServerEvents.recipes(event => {
 
     //轻型工程块
     const lightEngineering = [
-      ['create_new_age:energiser_t1', "minecraft:lightning_rod"]
+      //['create_new_age:energiser_t1', "minecraft:lightning_rod"]
     ]
     lightEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "immersiveengineering:light_engineering", material)
@@ -111,8 +113,8 @@ ServerEvents.recipes(event => {
       ['tfmg:pumpjack_base', "tfmg:industrial_pipe"],
       ['tfmg:steel_distillation_output', "kubejs:fluid_engineering"],
       ['tfmg:steel_distillation_controller', "kubejs:precise_engineering"],
-      */
       ['create_new_age:energiser_t2', "minecraft:lightning_rod"]
+      */
     ]
     heavyEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "immersiveengineering:heavy_engineering", material)
@@ -120,7 +122,7 @@ ServerEvents.recipes(event => {
 
     //电子工程块
     const electronicEngineering = [
-      ['create_new_age:energiser_t3', "minecraft:lightning_rod"]
+      //['create_new_age:energiser_t3', "minecraft:lightning_rod"]
     ]
     electronicEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:electronic_engineering", material)

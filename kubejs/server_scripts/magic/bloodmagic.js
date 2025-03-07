@@ -11,11 +11,13 @@
 ServerEvents.recipes(event => {
     
     //磁铁最终升级
+    /*
     event.smithing(
         'create_new_age:netherite_magnet',
         'create_new_age:fluxuated_magnetite',
         'minecraft:netherite_ingot'
     )
+    */
 
     //需求配方列表
     //魔力粉-奥术源质兑换

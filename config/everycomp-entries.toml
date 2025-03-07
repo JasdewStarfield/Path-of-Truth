@@ -11,6 +11,10 @@
 			lime_cake = true
 			pomegranate_cake = true
 
+		[types.cake.createaddition]
+			chocolate_cake = true
+			honey_cake = true
+
 	[types.wood_type]
 
 		[types.wood_type.blue_skies]

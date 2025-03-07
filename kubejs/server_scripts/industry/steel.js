@@ -124,7 +124,8 @@ ServerEvents.recipes(event => {
   event.recipes.create.compacting(['#forge:storage_blocks/steel','kubejs:casting_seal','kubejs:casting_base',Item.of('clay').withChance(0.95)], 'kubejs:filled_casting_mold_large')
 
   //发电
-  event.remove({ mod: 'create_new_age'/*, not:[{output:'create_new_age:basic_motor'},{output:'create_new_age:carbon_brushes'},{output:'create_new_age:generator_coil'}]*/ })
+  /*
+  event.remove({ mod: 'create_new_age', not:[{output:'create_new_age:basic_motor'},{output:'create_new_age:carbon_brushes'},{output:'create_new_age:generator_coil'}] })
   event.recipes.create.mechanical_crafting('create_new_age:generator_coil', [
     ' DDD ',
     'D B D',
@@ -178,4 +179,5 @@ ServerEvents.recipes(event => {
     C: 'immersiveengineering:light_engineering',
     D: 'immersiveengineering:coil_hv'
   })
+  */
 })

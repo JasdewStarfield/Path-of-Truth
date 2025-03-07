@@ -73,6 +73,7 @@ ServerEvents.recipes(event => {
     //这玩意配方比较神秘，只能用数据覆盖的方法改。参见data文件夹
 
     //初级磁铁磁化量产
+    /*
     event.custom({
         "type": "create_new_age:energising",
         "energy_needed": 4000,
@@ -87,6 +88,7 @@ ServerEvents.recipes(event => {
           }
         ]
     })
+    */
 
     //终极合成！
     let inter2 = 'kubejs:incomplete_buran'

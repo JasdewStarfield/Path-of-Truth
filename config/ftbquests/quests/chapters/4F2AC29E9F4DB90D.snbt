@@ -14,7 +14,7 @@
 			rotation: 0.0d
 			width: 1.3285714285714287d
 			x: 0.0d
-			y: 1.5d
+			y: -2.5d
 		}
 		{
 			height: 2.0d
@@ -22,15 +22,15 @@
 			rotation: 0.0d
 			width: 9.385321100917432d
 			x: 0.0d
-			y: -4.0d
+			y: -5.0d
 		}
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 1.5d
-			y: 21.0d
+			x: 0.0d
+			y: 22.0d
 		}
 	]
 	order_index: 0
@@ -56,7 +56,7 @@
 			}]
 			title: "【起点】工业基石"
 			x: 0.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
@@ -97,7 +97,7 @@
 			]
 			title: "更多的自动化选项！"
 			x: -2.0d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
@@ -119,7 +119,7 @@
 			}]
 			title: "好看吗？"
 			x: 2.0d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2B406E71D5BDF8F6"]
@@ -140,7 +140,7 @@
 			}]
 			title: "全自动装饰方块生产器"
 			x: 2.0d
-			y: -1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7678AE43CAD02807"]
@@ -184,10 +184,10 @@
 			]
 			title: "神秘转转"
 			x: -2.0d
-			y: -1.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["11EC3A84F0C84E65"]
+			dependencies: ["5584865A3F339D6E"]
 			description: [
 				"&a【完成后解锁任务线：下界之旅】&r"
 				"你获得了一个笼子，但很显然你需要给里面找到合适的房客。"
@@ -374,7 +374,7 @@
 			}]
 			title: "真正的合金"
 			x: 0.0d
-			y: 12.0d
+			y: 13.0d
 		}
 		{
 			dependencies: ["76BE4625CCF2F867"]
@@ -433,8 +433,8 @@
 				type: "item"
 			}]
 			title: "鼓风机输出"
-			x: 0.5d
-			y: 13.5d
+			x: 1.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["07C921FBCF56E703"]
@@ -469,8 +469,8 @@
 				}
 			]
 			title: "触媒装箱"
-			x: 0.5d
-			y: 14.5d
+			x: 1.0d
+			y: 15.5d
 		}
 		{
 			dependencies: [
@@ -587,7 +587,7 @@
 			}]
 			title: "粒粒皆辛苦"
 			x: 0.0d
-			y: -2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["73CD9D2DD215B5F5"]
@@ -881,6 +881,17 @@
 			}]
 			x: -2.0d
 			y: 11.5d
+		}
+		{
+			dependencies: ["11EC3A84F0C84E65"]
+			id: "5584865A3F339D6E"
+			tasks: [{
+				id: "4E61DFFE814C6921"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
 		}
 	]
 	subtitle: ["Exotic Alloys"]

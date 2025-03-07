@@ -18,6 +18,7 @@ ServerEvents.recipes(event => {
             'botania:rune_mana'
         ]
     )
+    /*
     event.shaped(Item.of('mechanicalbotania:mana_motor',1),
     ['ABA',
     'CDC',
@@ -29,6 +30,7 @@ ServerEvents.recipes(event => {
         D:'create_new_age:basic_motor'
     }
 )
+    */
 
 
     //修改白雏菊合成配方

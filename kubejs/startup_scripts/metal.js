@@ -113,6 +113,12 @@ StartupEvents.registry('block', (event) => {
 })
 
 StartupEvents.registry('fluid', (event) => {
+  //熔融铁
+  event.create('molten_iron')
+  .thickTexture(0x00FFFF)
+  .bucketColor(0x00FFFF)
+  .displayName('Molten Iron')
+
   //熔融钢
   event.create('molten_steel')
   .thickTexture(0x00FFFF)

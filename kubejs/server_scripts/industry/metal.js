@@ -201,6 +201,13 @@ ServerEvents.recipes(event => {
     event.remove({id:/alloyed\.*/})
     event.recipes.create.mixing('2x kubejs:bronze_ingot', ['#forge:ingots/tin','#forge:ingots/copper','#forge:ingots/copper','#forge:ingots/copper']).heated()
 
+    //燃烧室
+    event.replaceInput(
+        { output:"create:empty_blaze_burner" },
+        '#forge:plates/iron',
+        '#forge:wires/iron'
+    )
+
     //康铜
     //移除合成康铜粉配方
     event.remove({id:"immersiveengineering:crafting/constantan_mix"})

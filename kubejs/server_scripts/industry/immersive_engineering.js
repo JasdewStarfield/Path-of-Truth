@@ -6,6 +6,8 @@ ServerEvents.recipes(event => {
     event.remove({id:/immersiveengineering\:crafting\/plate_\.*/})
     event.remove({id:/immersiveengineering\:crafting\/raw_hammercrushing_\.*/})
     event.remove({id:/immersiveengineering\:crafting\/hammercrushing_\.*/})
+    event.remove({id:/immersiveengineering\:crafting\/wire_\.*/})
+    event.remove({id:"createnuclear:mixing/steel"})
 
     //机械动力适配IE的敲板子
     let plates = (material) => {

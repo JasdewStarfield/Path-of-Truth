@@ -1,10 +1,4 @@
 ServerEvents.recipes(event => {
-  event.shapeless(Item.of('create:copper_nugget',1),
-        [
-            '#forge:nuggets/copper'
-        ]
-  )
-
   //背包
   //基础材料替换
   event.replaceInput(
@@ -94,6 +88,16 @@ ServerEvents.recipes(event => {
 
   //硫磺石就不是硫磺了吗？
   //event.recipes.create.crushing(Item.of('#forge:dusts/sulfur').withChance(0.1), 'biomesoplenty:brimstone')
+
+  //更真实的铁栅栏
+  event.replaceInput(
+    {id:"minecraft:iron_bars"},
+    '#forge:ingots/iron',
+    '#forge:rods/iron'
+  )
+
+  //所有沙子都可以洗涤成为原版沙子
+  event.recipes.create.splashing([Item.of('sand')], '#minecraft:sand')
 
   //由于移除了沉浸工程锯木机，补充锯末的获取配方
   event.recipes.create.cutting(Item.of('immersiveengineering:dust_wood').withChance(0.5), 'stick')
