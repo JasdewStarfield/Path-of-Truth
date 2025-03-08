@@ -237,7 +237,7 @@
 				"不同的矿石催生方法不同，有的&c需要炼金台进行炼制&r，有的需要&b通过炼金矩阵转化&r，还有的需要&a通过魔力池催化&r。"
 				"如果觉得材料不够用，工业的大型挖矿机器又暂时做不出来，不妨看看魔法手段？"
 			]
-			icon: "bloodmagic:alchemicalreactionchamber"
+			icon: "botania:smelt_rod"
 			id: "31E9607DF423C550"
 			subtitle: "魔法也是生产力"
 			tasks: [
@@ -447,6 +447,8 @@
 			description: [
 				"在海边，有时你会看到灾厄村民群聚在一些破烂不堪的船的旁边。"
 				"也许搜索一下那些残骸，可以找到一些被遗忘的历史……"
+				""
+				"&o&7*注意：卷轴具有随机正负面效果，请小心使用！&r&r"
 			]
 			hide_until_deps_complete: true
 			icon: "aquamirae:rune_of_the_storm"

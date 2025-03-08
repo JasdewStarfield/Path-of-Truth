@@ -202,8 +202,8 @@
 				}
 			]
 			title: "蔚蓝浩空收割者"
-			x: 0.0d
-			y: -0.5d
+			x: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6C542C19575974DB"]
@@ -259,8 +259,8 @@
 				}
 			]
 			title: "下界行者"
-			x: -1.5d
-			y: 1.0d
+			x: -1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -1087,8 +1087,8 @@
 				}
 			]
 			title: "深园王者"
-			x: 0.0d
-			y: 2.5d
+			x: 1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["193F465F65BC13F1"]
@@ -1117,8 +1117,8 @@
 				type: "item"
 			}]
 			title: "巨龙悲歌"
-			x: 1.5d
-			y: 1.0d
+			x: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["15E666BAE38566D8"]
@@ -1136,13 +1136,27 @@
 			]
 			icon: "bosses_of_mass_destruction:brimstone_nectar"
 			id: "5EE2152C42721246"
-			rewards: [{
-				count: 4
-				id: "084E1C6B189000D0"
-				item: "bosses_of_mass_destruction:brimstone_nectar"
-				type: "item"
-			}]
-			shape: "rsquare"
+			rewards: [
+				{
+					count: 4
+					id: "084E1C6B189000D0"
+					item: "bosses_of_mass_destruction:brimstone_nectar"
+					type: "item"
+				}
+				{
+					id: "231A83BCFB84949C"
+					item: {
+						Count: 1
+						id: "scguns:flayed_god"
+						tag: {
+							AmmoCount: 55
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "pentagon"
 			size: 2.0d
 			subtitle: "这将是你面对的最终BOSS"
 			tasks: [
@@ -1571,39 +1585,13 @@
 			icon: "irons_spellbooks:blood_staff"
 			id: "722556B2244FD56A"
 			rewards: [{
-				id: "104622516C821057"
+				id: "26CFC52066A8609A"
 				item: {
 					Count: 1
-					id: "irons_spellbooks:necronomicon_spell_book"
+					id: "alshanex_familiars:familiar_spellbook"
 					tag: {
-						ISBEnhance: "irons_spellbooks:raise_dead"
 						ISB_Spells: {
-							data: [
-								{
-									id: "irons_spellbooks:blood_slash"
-									index: 0
-									level: 5
-									locked: 1b
-								}
-								{
-									id: "irons_spellbooks:blood_step"
-									index: 1
-									level: 5
-									locked: 1b
-								}
-								{
-									id: "irons_spellbooks:ray_of_siphoning"
-									index: 2
-									level: 5
-									locked: 1b
-								}
-								{
-									id: "irons_spellbooks:blaze_storm"
-									index: 3
-									level: 5
-									locked: 1b
-								}
-							]
+							data: [ ]
 							maxSpells: 10
 							mustEquip: 1b
 							spellWheel: 1b
@@ -1703,6 +1691,11 @@
 							}
 						}
 					}
+					type: "item"
+				}
+				{
+					id: "68FCA51BD2D0A93B"
+					item: "alshanex_familiars:bard_harp"
 					type: "item"
 				}
 			]
@@ -1975,6 +1968,22 @@
 										locked: 1b
 									}
 								]
+								maxSpells: 10
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5C61EAE5C2AA3922"
+					item: {
+						Count: 1
+						id: "alshanex_familiars:familiar_spellbook"
+						tag: {
+							ISB_Spells: {
+								data: [ ]
 								maxSpells: 10
 								mustEquip: 1b
 								spellWheel: 1b
@@ -2481,18 +2490,6 @@
 					item: "cratedelight:golden_apple_crate"
 					type: "item"
 				}
-				{
-					count: 64L
-					id: "6F01D8EC3E05CB30"
-					item: "cratedelight:stacked_melons"
-					type: "item"
-				}
-				{
-					count: 64L
-					id: "5F674483E1751C4B"
-					item: "cratedelight:stacked_pumpkins"
-					type: "item"
-				}
 			]
 			title: "农业大亨"
 			x: 5.5d
@@ -2557,7 +2554,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["朋友，你对零件有什么执念吗……？"]
-			icon: "createchromaticreturn:magmatic_mechanism"
+			icon: "immersive_aircraft:industrial_gears"
 			id: "7FB0E3BD81383AF7"
 			rewards: [{
 				id: "27F65331369FE3E0"
@@ -2808,6 +2805,69 @@
 			title: "专精与全通"
 			x: 0.5d
 			y: 10.0d
+		}
+		{
+			dependencies: ["3B3B39FE9A88ED71"]
+			description: [
+				"发掘海洋暗藏的秘密……以及力量。"
+				"当你手持&c贝壳号角&r并在&9寒冰迷宫（群系）的海边&r按住右键吹响，船长科妮莉亚的亡灵会从水中浮现，而你需要想办法获得她的武器……来证明自己。"
+				"&o&4然而这注定艰难……&r&r"
+				"{@pagebreak}"
+				"由于船长本身特殊的技能，其&c血量上限并不代表其真正总血量&r，因此玩家在挑战她前应务必做好准备。"
+				"第一、二次&c血量低于48点&r时，船长会获得“生命恢复8”效果10秒和“漂浮”效果5秒。在漂浮状态下，她拥有惊人的移速。同时，船长会&b召唤三个持续30秒的剧毒环刃或迷宫玫瑰&r并使其环绕于她四周。"
+				"船长会&e用多种武器（每35秒进行切换）&r进行进攻，具有牵引玩家的能力，并在手持长矛的状态下有&c最高21点破盾伤害（取决于游戏难度）&r。"
+				"{@pagebreak}"
+				"船长免疫一切弹射物伤害、爆炸伤害、火焰伤害、摔落伤害、闪电伤害和熔岩灼烧伤害（但是不免疫铁魔法的法术伤害和焦焰枪火的枪械伤害）。"
+				"船长拥有&c&l抗拒斩首&r&r的能力，在其血量在16点以下时，血量会以每秒8点的速度回复至16点以上。"
+				"建议通过高伤害法术，高频率伤害法术或高DPS枪械进行斩杀。"
+				""
+				"&o&7长矛掉落率极低，请做好“赢了但是输了”的心理准备。&r&r"
+			]
+			id: "6BB2985D2E9224A2"
+			rewards: [
+				{
+					count: 16
+					id: "1989D921787AA920"
+					item: "aquamirae:ship_graveyard_echo"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2166560013264EEC"
+					item: "aquamirae:abyssal_amethyst"
+					type: "item"
+				}
+				{
+					id: "0381E71B0B31D58C"
+					item: {
+						Count: 1
+						id: "aquamirae:sweet_lance"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "征服深海"
+			tasks: [{
+				id: "08CDA34E0BC16CE1"
+				item: {
+					Count: 1
+					id: "aquamirae:coral_lance"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 4s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			title: "海王"
+			x: 0.0d
+			y: -0.5d
 		}
 	]
 	subtitle: ["The Way to Legend"]

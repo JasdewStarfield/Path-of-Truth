@@ -123,11 +123,6 @@
 					item: "minecraft:emerald"
 					type: "item"
 				}
-				{
-					id: "3D27852AA7EBEFAB"
-					item: "goety:cursed_infuser"
-					type: "item"
-				}
 			]
 			title: "真正的炼金术"
 			x: 0.0d

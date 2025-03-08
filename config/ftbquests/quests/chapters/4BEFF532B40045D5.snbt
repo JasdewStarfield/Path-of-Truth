@@ -607,6 +607,17 @@
 					}
 					type: "item"
 				}
+				{
+					id: "0CC704FAD7D2756F"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "goety:witches_brew"
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "知识掌控者"
 			x: 2.5d
@@ -780,7 +791,7 @@
 		{
 			dependencies: ["3A2CCC29ACE28498"]
 			description: [
-				"在我们的修改下，如果抽屉不进行升级，那么它的储量将会相当有限。"
+				"在“真实性修改”下，如果抽屉不进行升级，那么它的储量将会相当有限。"
 				"用升级模板可以逐级做出多种升级，功能包括但不限于增大储量，销毁物品等等。"
 				"背包同样可以通过插件进行升级，但升级的方向不是存储而是其功能性。"
 				"收纳袋显然不支持插件升级——因为没有槽位。"

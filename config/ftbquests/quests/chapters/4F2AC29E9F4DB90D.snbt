@@ -274,7 +274,7 @@
 		}
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
-			description: ["在我们的设定中，由于铜会生锈，只有康铜才能够抵挡流体的腐蚀，并被铸造为可以容纳流体的器械。"]
+			description: ["由于铜会生锈，只有康铜才能够抵挡流体的腐蚀，并被铸造为可以容纳流体的器械。"]
 			hide_until_deps_complete: true
 			id: "28617A52922404CE"
 			subtitle: "这里的铜其实是康铜"
@@ -800,7 +800,7 @@
 			]
 			description: [
 				"玫瑰石英是一种具有电学性质的材料，在受到特定刺激后会产生电压……然而，你并不能指望用这点微弱的电压来积累电力。"
-				"即便如此，它还是有用的。为了制造它，你需要一种叫红石酸的导电流体……。"
+				"即便如此，它还是有用的。为了制造它，你需要一种叫&c红石酸&r的导电流体……。"
 				"当然了，制作完成后它也不能直接使用，还是要用砂纸打磨之后才能正常安装（"
 				""
 				"聪明的小伙伴可能已经发现了，红石酸加上一点点活石，就能用来量产红石粉……没事，你的电子元件不会介意这点掺进来的杂质的，对吧？"
@@ -826,8 +826,13 @@
 		}
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
+			description: [
+				"至少它确实增加了一些弹性（）"
+				"所有的弹簧都需要一台足够卷的机器来完成制造。"
+			]
 			hide_until_deps_complete: true
 			id: "3EFEF14D70B01F51"
+			subtitle: "老北京机内卷"
 			tasks: [{
 				id: "27A6A7C13580E12F"
 				item: "vintageimprovements:spring_coiling_machine"
@@ -839,8 +844,15 @@
 		}
 		{
 			dependencies: ["3EFEF14D70B01F51"]
+			description: [
+				"单个的弹簧显然不足以支撑起机械工作的力量，因此需要将其组合。"
+				"有的时候你甚至需要将其压入工程块作为模块化的组件。"
+				""
+				"&o&7*看名字你就能猜到，后面显然会有更多的弹簧组）&r&r"
+			]
 			icon: "kubejs:basic_spring_set"
 			id: "62214C4C462BB308"
+			subtitle: "装配，行动，完美"
 			tasks: [{
 				id: "0ECDCFDFF1BE216E"
 				item: "kubejs:basic_spring_set"
@@ -857,17 +869,24 @@
 				item: "vintageimprovements:vacuum_chamber"
 				type: "item"
 			}]
+			title: "液压之力"
 			x: -2.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["62214C4C462BB308"]
+			description: [
+				"简单的振动显然无法&b独立完成&r太多的工作，但是帮你拆分一下方块和树叶还是可以的。"
+				"然而很多更加复杂的合成需要&c在加工过程中进行这一操作&r，所以最好多做一些，方便之后产线的搭建。"
+			]
 			id: "370AE293C357A2D5"
+			subtitle: "可惜没有离心机"
 			tasks: [{
 				id: "24899BE40D7190F6"
 				item: "vintageimprovements:vibrating_table"
 				type: "item"
 			}]
+			title: "振荡"
 			x: 2.0d
 			y: 10.0d
 		}
