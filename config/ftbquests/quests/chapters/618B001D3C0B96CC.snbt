@@ -126,7 +126,7 @@
 			]
 			title: "真正的炼金术"
 			x: 0.0d
-			y: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["0F9DF1C5137194E4"]
@@ -428,7 +428,7 @@
 			}]
 			title: "奉献精神"
 			x: 0.0d
-			y: 2.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -478,6 +478,23 @@
 			title: "地底回音"
 			x: 1.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["7B4573440B7AD85C"]
+			description: [
+				"通过灵魂能量，你可以快速修复自己受到损伤的物品，在没有经验修补的时候，有个手动挡也说得过去。"
+				"唯一的例外大概是贪婪匕首——那是无法修复的。"
+			]
+			id: "6594C973C66811E2"
+			subtitle: "手动，但是无限耐久"
+			tasks: [{
+				id: "687EFC15A99B4E81"
+				item: "goety:soul_mender"
+				type: "item"
+			}]
+			title: "灵魂修补"
+			x: 0.0d
+			y: -3.0d
 		}
 	]
 	subtitle: ["Mana Within"]

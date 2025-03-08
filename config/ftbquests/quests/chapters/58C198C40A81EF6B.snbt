@@ -22,7 +22,7 @@
 			rotation: 0.0d
 			width: 1.1149863760217984d
 			x: 0.0d
-			y: 3.3d
+			y: 4.0d
 		}
 		{
 			height: 2.0d
@@ -63,8 +63,8 @@
 					type: "random"
 				}
 			]
-			shape: "octagon"
-			size: 1.2d
+			shape: "square"
+			size: 1.6d
 			subtitle: "有的时候你需要看看大自然的馈赠"
 			tasks: [{
 				id: "6E5FCD00F7C67EA4"
@@ -467,7 +467,41 @@
 			}]
 			title: "【终点】灵魂的根源"
 			x: 0.0d
-			y: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["374C430D0AD70D2E"]
+			description: [
+				"在世界上游荡的不仅仅是你，还有一些魔法道路上的同行者。"
+				"有时，你会在特定的群系发现一些圆滚滚的小东西，但是&9穿着法师的衣服&r。用&5奥术源质&r可以驯服它们，然后你就拥有了可以施法的魔宠！"
+				"不同系别的魔宠需要不同的材料来治愈，但施法治疗应该更快。"
+				"你可以&9用魔盒&r装起来你的一部分魔宠，也可以&d用饰品绑定&r后快捷键召唤和收回它们。"
+				""
+				"据说&a给自己的德鲁伊一瓶剧毒试剂&r，&e用治愈之环净化还没驯服的死灵魔宠&r，或者&3在野生魔宠的附近用竖琴施放音乐魔法&r，能够产生一些奇妙的变化……"
+			]
+			icon: "goety:crystal_ball"
+			id: "03965CF8706E3031"
+			rewards: [
+				{
+					id: "535B9B37A47C834C"
+					item: "alshanex_familiars:pandora_box"
+					type: "item"
+				}
+				{
+					id: "17F7E67EFBE64B88"
+					item: "alshanex_familiars:pet_bed"
+					type: "item"
+				}
+			]
+			subtitle: "没有红白球怎么办？"
+			tasks: [{
+				id: "7EB1CE9597E9903B"
+				title: "就决定是你了！"
+				type: "checkmark"
+			}]
+			title: "魔法道路上的伙伴"
+			x: 0.0d
+			y: 1.5d
 		}
 	]
 	subtitle: ["Primal Shaman"]
