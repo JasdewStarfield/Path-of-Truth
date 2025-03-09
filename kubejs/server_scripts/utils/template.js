@@ -62,6 +62,22 @@ event.replaceInput({mod:'模组名',output:'输出产物'},
 删除配方：
 event.remove({id:'名字'})
 */
+
+/*
+实体表现修改
+EntityJSEvents.attributes(event => {
+    event.modify('kubejs:redacted', attribute => {
+        attribute.add("minecraft:generic.max_health", 100)
+        attribute.add("minecraft:generic.armor", 10)
+        attribute.add("minecraft:generic.armor_toughness", 5)
+        attribute.add("minecraft:generic.movement_speed", 0.25)
+        attribute.add("irons_spellbooks:spell_power", 1.5)
+        attribute.add("irons_spellbooks:spell_resist", 1.5)
+        attribute.add("additional_attributes:spell_general", 2)
+    })
+})
+*/
+
 /*
 植物魔法系列配方记录：
 onEvent("recipes", event => {
