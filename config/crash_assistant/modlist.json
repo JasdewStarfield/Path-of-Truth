@@ -331,10 +331,6 @@
     "modId": "createdieselgenerators",
     "version": "1.20.1-1.2i"
   },
-  "createliquidfuel-2.1.1-1.20.1.jar": {
-    "modId": "createliquidfuel",
-    "version": "2.1.1-1.20.1"
-  },
   "createnuclear-1.2.0-forge.jar": {
     "modId": "createnuclear",
     "version": "1.2.0"
@@ -482,6 +478,10 @@
   "entityculling-forge-1.7.3-mc1.20.1.jar": {
     "modId": "entityculling",
     "version": "1.7.3"
+  },
+  "entityjs-0.4.3-1.20.1.jar": {
+    "modId": "entityjs",
+    "version": "0.4.3-1.20.1"
   },
   "everycomp-1.20-2.7.18.jar": {
     "modId": "everycomp",

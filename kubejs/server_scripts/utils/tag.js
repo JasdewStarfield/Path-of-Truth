@@ -211,7 +211,8 @@ ServerEvents.tags("block", (event) => {
         'immersiveengineering:fluid_pump',
         'immersiveengineering:sample_drill',
         'immersiveengineering:tesla_coil',
-        'immersiveengineering:blastfurnace_preheater'
+        'immersiveengineering:blastfurnace_preheater',
+        'kubejs:steel_casing'
     ]
     wrenchPickupList.forEach((id) => event.add("create:wrench_pickup", id))
 })

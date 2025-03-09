@@ -47,6 +47,9 @@ StartupEvents.registry('item', (event) => {
   event.create("incomplete_filled_casting_mold_large", 'create:sequenced_assembly').displayName('Incomplete Filled Casting Mold').texture('kubejs:item/incomplete_filled_casting_mold')
   event.create("filled_casting_mold_large").displayName('Filled Casting Mold').texture('kubejs:item/filled_casting_mold')
 
+  event.create("unformed_steel_ingot").displayName('Unformed Steel Ingot')
+  event.create("incomplete_steel_ingot", 'create:sequenced_assembly').displayName('Incomplete Steel Ingot')
+
   //金-银混合物
   event.create("gold_silver_mix").displayName('Gold-Silver Mix')
 

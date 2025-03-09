@@ -90,7 +90,13 @@ ServerEvents.recipes(event => {
     //物流工程块
     const logisticalEngineering = [
       ['storagedrawers:controller', "create:precision_mechanism"],
-      ['storagedrawers:controller_slave', "#forge:plates/brass"]
+      ['storagedrawers:controller_slave', "#forge:plates/brass"],
+      ['create:controls', "lever"],
+      ['create:track_observer', "observer"],
+      ['create:track_station', "compass"],
+      ['create:track_signal', "create:electron_tube"],
+      ['railways:portable_fuel_interface', "create:chute"],
+      ['railways:track_coupler', "#forge:plates/iron"]
     ]
     logisticalEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:logistical_engineering", material)

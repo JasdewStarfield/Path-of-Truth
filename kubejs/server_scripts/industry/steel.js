@@ -1,8 +1,4 @@
 ServerEvents.recipes(event => {
-  //铸铁
-  event.remove({ id: 'tfmg:crafting/casting_spout' })
-  event.remove({ id: 'tfmg:crafting/casting_basin' })
-  event.remove({ id: 'tfmg:casting/steel' })
   /*
   event.recipes.create.mechanical_crafting('tfmg:casting_spout', [
     ' DDD ',
@@ -17,7 +13,6 @@ ServerEvents.recipes(event => {
     D: '#forge:ingots/cast_iron',
     E: '#forge:ingots/elementium'
   })
-  */
 
   event.recipes.create.mechanical_crafting('kubejs:casting_seal', [
     ' DDD ',
@@ -39,7 +34,6 @@ ServerEvents.recipes(event => {
   })
 
   event.remove({ id: 'tfmg:crafting/blast_furnace_output' })
-  /*
   event.recipes.create.mechanical_crafting('tfmg:blast_furnace_output', [
     ' DDD ',
     'DBBBD',
@@ -67,17 +61,6 @@ ServerEvents.recipes(event => {
     A: 'create:cogwheel',
     C: '#forge:workbench'
   })
-  
-  event.remove({id:'tfmg:mixing/cast_iron_ingot'})
-  /*
-  event.custom({
-    "type":"immersiveengineering:blast_furnace",
-    "input":{"tag":"forge:ingots/iron"},
-    "result":{"tag":"forge:ingots/cast_iron"},
-    "slag":{"tag":"forge:slag"},
-    "time":400
-  })
-  */
 
   //电弧炉炼铁
   event.custom({
@@ -89,20 +72,9 @@ ServerEvents.recipes(event => {
     "slag":{"tag":"forge:slag"},
     "time":100
   })
+  
 
-
-
-
-  //event.shapeless('tfmg:coke_dust', [
-  //  'immersiveengineering:coke_dust'
-  //])
-  event.remove({ output: 'tfmg:rebar' })
-  event.replaceInput(
-    { input:"tfmg:rebar" },
-    'tfmg:rebar',
-    '#forge:rods/steel'
-  )
-
+  /*
   event.recipes.create.sequenced_assembly([
     Item.of('kubejs:filled_casting_mold_small')
     ], 'kubejs:casting_base', [
@@ -122,6 +94,26 @@ ServerEvents.recipes(event => {
 
   event.recipes.create.compacting(['#forge:ingots/steel','kubejs:casting_seal','kubejs:casting_base',Item.of('clay_ball').withChance(0.95)], 'kubejs:filled_casting_mold_small')
   event.recipes.create.compacting(['#forge:storage_blocks/steel','kubejs:casting_seal','kubejs:casting_base',Item.of('clay').withChance(0.95)], 'kubejs:filled_casting_mold_large')
+  */
+
+  //融化铁粉
+  event.recipes.create.mixing(Fluid.of('kubejs:molten_iron',100), '#forge:dusts/iron').heated()
+
+  //转炉炼钢法
+  event.recipes.vintageimprovements.pressurizing([
+    Fluid.of("kubejs:molten_steel", 150),
+    Item.of('kubejs:fire_elemental_core'),
+    Fluid.of('kubejs:molten_slag', 50)
+  ], [
+    Item.of("#create:stone_types/limestone"),
+    Item.of('kubejs:fire_elemental_core'),
+    Fluid.of("kubejs:molten_iron", 200)
+  ]).heated()
+
+  //熔融钢、炉渣处理
+  event.recipes.create.compacting("kubejs:unformed_steel_ingot", Fluid.of("kubejs:molten_steel", 100))
+  event.recipes.create.compacting("#forge:slag", Fluid.of("kubejs:molten_slag", 100))
+  
 
   //发电
   /*

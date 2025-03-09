@@ -26,16 +26,10 @@ ServerEvents.recipes(event => {
     event.remove({id:'create:item_application/railway_casing'})
     casing('create:railway_casing', "create:brass_casing", '#forge:plates/obsidian')
 
-    /*
     //钢机壳
-    event.remove({id:'tfmg:item_application/steel_casing'})
-    casing("tfmg:steel_casing", "immersiveengineering:treated_wood_horizontal", '#forge:plates/steel')
-    event.replaceInput(
-      {input:"tfmg:steel_casing", not: {output:'tfmg:steel_door'}},
-      'tfmg:steel_casing',
-      'immersiveengineering:light_engineering'
-    )
+    casing("kubejs:steel_casing", "immersiveengineering:treated_wood_horizontal", '#forge:plates/steel')
 
+    /*
     //重型机械机壳
     event.remove({id:'tfmg:item_application/heavy_machinery_casing'})
     casing("tfmg:heavy_machinery_casing", "tfmg:steel_casing", 'kubejs:frostfire_double_plate')

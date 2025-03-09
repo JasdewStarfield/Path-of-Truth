@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
     event.remove({id:/scguns\:immersiveengineering\/hammercrushing\.*/})
+    event.remove({id:/scguns\:create\/recycling\.*/})
     //移除scguns默认的机器，改用机械动力合成
     event.remove({type:"scguns:macerating"})
     event.remove({type:"scguns:powered_macerating"})

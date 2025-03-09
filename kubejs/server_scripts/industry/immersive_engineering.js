@@ -224,22 +224,6 @@ ServerEvents.recipes(event => {
     //零件
     event.remove({id:"immersiveengineering:crafting/component_steel"})
     event.remove({id:"immersiveengineering:crafting/component_iron"})
-    event.shaped('immersiveengineering:component_steel', [ 
-        'A A', 
-        ' B ',
-        'A A'  
-    ], {
-        B: '#blue_skies:nuggets/falsite',
-        A: '#forge:plates/steel'
-    })
-    event.shaped('immersiveengineering:component_iron', [ 
-        'A A', 
-        ' B ',
-        'A A'  
-    ], {
-        B: '#blue_skies:gems/pyrope',
-        A: '#forge:ingots/cast_iron'
-    })
 
     //钢铁构件
 

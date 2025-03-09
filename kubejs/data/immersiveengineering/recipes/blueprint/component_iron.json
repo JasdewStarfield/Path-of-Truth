@@ -1,1 +1,1 @@
-{"type":"immersiveengineering:blueprint","category":"components","inputs":[{"base_ingredient":{"tag":"forge:ingots/cast_iron"},"count":2},{"tag":"blue_skies:gems/pyrope"}],"result":{"item":"immersiveengineering:component_iron"}}
+{"type":"immersiveengineering:blueprint","category":"components","inputs":[{"base_ingredient":{"tag":"forge:ingots/lead"},"count":2},{"tag":"blue_skies:gems/pyrope"}],"result":{"item":"immersiveengineering:component_iron"}}

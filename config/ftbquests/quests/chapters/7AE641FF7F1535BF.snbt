@@ -63,149 +63,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["241E68C9313210AD"]
-			description: [
-				"所以你需要一个盆——以及一个合适的模板来压制钢锭）"
-				"请注意：黏土铸模在破开模具取出钢时有小概率损坏，好在这东西很便宜，记得多准备一些用来补充。"
-			]
-			icon: "kubejs:casting_base"
-			id: "3A3413B00445526E"
-			subtitle: "炼钢的本质其实是把铁水变成钢水）"
-			tasks: [
-				{
-					id: "0A869FAD6E9169D2"
-					item: "tfmg:ingot_mold"
-					type: "item"
-				}
-				{
-					id: "0374F9F32DE169D2"
-					item: "tfmg:block_mold"
-					type: "item"
-				}
-				{
-					id: "4E634AF6488347B6"
-					item: "kubejs:casting_base"
-					type: "item"
-				}
-			]
-			title: "选择模板"
-			x: 5.0d
-			y: 1.0d
-		}
-		{
-			dependencies: [
-				"241E68C9313210AD"
-				"5B1818D5A1142A16"
-				"34F7983B4915B789"
-			]
-			description: [
-				"不过这只是一个盖子，所以你应该可以猜到还有一半……"
-				"至于为什么你可以拿起来装了一个钢块的铸造盆，还是当史蒂夫天生神力吧（"
-			]
-			id: "3FE201936DBB127F"
-			subtitle: "用小盒子炼钢"
-			tasks: [{
-				id: "1CD02DA65BDD60D1"
-				item: "kubejs:casting_seal"
-				type: "item"
-			}]
-			title: "铸造盆封口"
-			x: 2.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["242C57AF7F6116E4"]
-			description: ["康铜可承受不了钢水的灼热，所以你需要铸铁来为你制造模具。"]
-			hide_until_deps_complete: true
-			id: "241E68C9313210AD"
-			subtitle: "铸铁管道和机器是必要的）"
-			tasks: [{
-				id: "1E690C7D6912DEB3"
-				item: "tfmg:cast_iron_ingot"
-				type: "item"
-			}]
-			title: "焦炉与焦煤"
-			x: 3.5d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"0CF2DD3DB7F76FB2"
-				"5B1818D5A1142A16"
-				"34F7983B4915B789"
-			]
-			description: [
-				"钢水会很烫，而且有副产物（？"
-				"但我相信你会有办法的（什么"
-				""
-				"这是第三个高炉！我们叫它炼钢高炉就好，因为它只能炼钢（（"
-				"&n具体建造方式请参照思索说明&r"
-				"&c目前，此高炉有以下Bug：每次投入原料时，实际进入的数量会比投入的数量&o少一个&r&c。因此，建议一次性投入较多的原料！&r"
-				""
-				"&c注意&r：请&l不要&r一看思索的延伸就端着铸造盆准备去炼钢。TFMG的铸造盆有让配方崩溃的特性，因此我们已将其从制造序列中移除。具体的钢铁炼制方式请直接从钢锭查询配方。"
-			]
-			id: "309524B4033437AF"
-			subtitle: "钢水输出点"
-			tasks: [{
-				id: "1A0B1B856B1D1340"
-				item: "tfmg:blast_furnace_output"
-				type: "item"
-			}]
-			title: "高炉核心"
-			x: 2.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["0CF2DD3DB7F76FB2"]
-			description: [
-				"防火的外墙（必需品"
-				"某种程度上来说，这大概是你的血汗工程（对吧"
-				"&n具体建造方式请参照思索说明&r"
-			]
-			id: "5863CFB1CDBEBEC9"
-			subtitle: "外墙"
-			tasks: [
-				{
-					id: "6474BE02E12DA62F"
-					item: "tfmg:fireproof_bricks"
-					type: "item"
-				}
-				{
-					id: "71E0B9C5A6B8DF46"
-					item: "tfmg:fireproof_brick_reinforcement"
-					type: "item"
-				}
-			]
-			title: "高炉保护层"
-			x: 5.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["242C57AF7F6116E4"]
-			description: [
-				"建造高炉首先需要能承载高温的黏土）"
-				"理论上它会自然生成在世界上，但很显然，有的时候你不一定运气够好）"
-				"所以你也可以用鲜血对黏土进行防火处理（大草），支持单个黏土球和整个黏土块哦）"
-			]
-			hide_until_deps_complete: true
-			id: "0CF2DD3DB7F76FB2"
-			subtitle: "传奇耐烧王"
-			tasks: [{
-				id: "0C74014F9A4994EF"
-				item: "tfmg:fireclay_ball"
-				type: "item"
-			}]
-			title: "血与火"
-			x: 3.5d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"5863CFB1CDBEBEC9"
-				"309524B4033437AF"
-				"3A3413B00445526E"
-				"3FE201936DBB127F"
-			]
 			description: [
 				"你获得了钢锭！这意味着你可以在工业和魔法上继续推进了！"
 				"魔法也需要质量更好的金属作为基础发展）"
@@ -258,8 +115,8 @@
 			id: "2974EA098C1280C1"
 			subtitle: "进度：0.5"
 			tasks: [{
-				id: "58ED4D9D39320EF4"
-				item: "tfmg:steel_casing"
+				id: "72806086C003174D"
+				item: "kubejs:steel_casing"
 				type: "item"
 			}]
 			title: "工程基本单元 I"
@@ -611,7 +468,6 @@
 				item: "createdeco:decal_skull"
 				type: "item"
 			}]
-			shape: "diamond"
 			subtitle: "真是一对大家伙"
 			tasks: [{
 				count: 2L
@@ -619,8 +475,8 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -1.0d
+			x: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["504E6502A789DABF"]
@@ -765,6 +621,61 @@
 			title: "虚空传输！"
 			x: 13.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["146261DF72C96BF4"]
+			id: "2EB6991862E12244"
+			tasks: [{
+				id: "4A876BFE97C5F7AA"
+				item: "immersiveengineering:dust_iron"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2EB6991862E12244"]
+			id: "17263B7F0163FEA4"
+			tasks: [{
+				id: "4AB5398A6D8A1634"
+				item: "kubejs:molten_iron_bucket"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["17263B7F0163FEA4"]
+			id: "1A5AC0B8CD25635E"
+			tasks: [{
+				id: "5D6A6DD4A2B1F6B9"
+				item: "kubejs:molten_steel_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1A5AC0B8CD25635E"]
+			id: "429B458F0AADA253"
+			tasks: [{
+				id: "0F4D5E0A7AA72402"
+				item: "kubejs:unformed_steel_ingot"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["17263B7F0163FEA4"]
+			id: "5FBE0E83E329AC46"
+			tasks: [{
+				id: "47AC67C1B30BDF4B"
+				item: "kubejs:molten_slag_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
 		}
 	]
 	subtitle: ["Hearts of Steel"]
