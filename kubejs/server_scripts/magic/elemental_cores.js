@@ -63,4 +63,22 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //幽匿催发体合成
+    event.shaped(
+        Item.of('4x minecraft:sculk_catalyst'),
+        [
+            'FAF',
+            'BCD',
+            'FEF'
+        ],
+        {
+            A: 'kubejs:earth_elemental_core',
+            B: 'kubejs:water_elemental_core',
+            E: 'minecraft:sculk_catalyst',
+            C: 'botania:terrasteel_ingot',
+            D: 'kubejs:fire_elemental_core',
+            F: 'minecraft:amethyst_shard'
+        }
+    )
+
 })

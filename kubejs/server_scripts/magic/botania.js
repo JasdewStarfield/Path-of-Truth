@@ -411,23 +411,6 @@ ServerEvents.recipes(event => {
         ]
     )
 
-    //幽匿催发体合成
-    event.shaped(
-        Item.of('minecraft:sculk_catalyst'),
-        [
-            ' A ',
-            'BCD',
-            ' E '
-        ],
-        {
-            A: 'kubejs:earth_elemental_core',
-            B: 'kubejs:water_elemental_core',
-            E: 'minecraft:amethyst_block',
-            C: 'botania:terrasteel_ingot',
-            D: 'kubejs:fire_elemental_core'
-        }
-    )
-
     //泰拉盔甲系列配方替换
     //泰拉头盔替换
     event.remove({id:'botania:terrasteel_helmet'})
