@@ -20,7 +20,8 @@ spectralArrowParticles = true
 wardenDeathSoulParticles = true
 xpBottleParticlesDisplayType = "DEFAULT"
 xpBottleParticlesDensity = 10
-eggSmashSound = true
+eggSmashSoundVolume = 0.5
+freezingSnowFlakes = true
 
 [attacked]
 chickenFeathers = true

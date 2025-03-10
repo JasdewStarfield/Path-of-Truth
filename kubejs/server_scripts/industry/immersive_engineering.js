@@ -132,7 +132,7 @@ ServerEvents.recipes(event => {
     })
     event.custom({
         "type":"immersiveengineering:blast_furnace",
-        "input":{"tag":"forge:dusts/iron"},
+        "input":{"tag":"forge:dusts/raw_iron"},
         "result":{"tag":"forge:ingots/iron"},
         "slag":{"tag":"forge:slag"},
         "time":200
@@ -153,16 +153,17 @@ ServerEvents.recipes(event => {
 
     //防腐木板
     event.remove({id:"immersiveengineering:crafting/treated_wood_horizontal"})
+    event.remove({id:"createaddition:filling/treated_wood_planks"})
     event.custom({
-		"type":"create:filling",
-		"ingredients":[
-			{"item":"botania:livingwood_planks"},
-			{"fluid":"immersiveengineering:creosote", "amount":125}
-		],
-		"results":[
-			{"item":"immersiveengineering:treated_wood_horizontal"},
-		]
-	})
+      "type":"create:filling",
+      "ingredients":[
+        {"item":"botania:livingwood_planks"},
+        {"fluid":"immersiveengineering:creosote", "amount":125}
+      ],
+      "results":[
+        {"item":"immersiveengineering:treated_wood_horizontal"},
+      ]
+	  })
 
     //玫瑰石英
     event.remove({output:'create:rose_quartz'})
@@ -280,17 +281,17 @@ ServerEvents.recipes(event => {
         'ABA',
         'CAD'  
     ], {
-        B: 'create:andesite_casing',
+        B: 'kubejs:steel_casing',
         A: '#forge:plates/ventium',
         D: 'immersiveengineering:component_steel',
-        C: 'immersiveengineering:component_iron'
+        C: 'kubejs:leyden_jar'
     })
     event.recipes.create.sequenced_assembly([
         'immersiveengineering:light_engineering'
-        ], 'create:andesite_casing', [
+        ], 'kubejs:steel_casing', [
         event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/ventium']),
         event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', 'immersiveengineering:component_steel']),
-        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', 'immersiveengineering:component_iron']),
+        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', 'kubejs:leyden_jar']),
         event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/ventium'])
     ]).transitionalItem('kubejs:incomplete_light_engineering').loops(1)
 

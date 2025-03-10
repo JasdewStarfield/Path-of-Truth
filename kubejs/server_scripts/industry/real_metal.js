@@ -11,10 +11,11 @@ ServerEvents.recipes(event => {
       '#forge:ingots/steel'
   )
 
+  event.remove({id:/create_compressed\:splashing\/.*/})
+  event.remove({id:/scguns\:create\/.*_splashing.*/, not: { output: "create_compressed:dough_block" }})
   //铝
-  
   event.replaceOutput(
-    { output: 'create:crushed_raw_aluminum' }, // Arg 1: the filter
+    { output: 'create:crushed_raw_aluminum', not: { id: "create_compressed:crushed_raw_aluminum" }}, // Arg 1: the filter
     'create:crushed_raw_aluminum',            // Arg 2: the item to replace
     'kubejs:crushed_raw_bauxite'
   )
@@ -49,22 +50,42 @@ ServerEvents.recipes(event => {
   event.remove([{ type: 'minecraft:blasting', input: '#forge:ingots/iron' }])
   event.remove([{ type: 'minecraft:smelting', output: 'iron_ingot' }, { type: 'minecraft:blasting', output: 'iron_ingot' }, { type: 'immersiveengineering:arc_furnace', output: 'iron_ingot' }])
   event.remove([{ type: 'minecraft:smelting', output: 'iron_block' }, { type: 'minecraft:blasting', output: 'iron_block' }])
+  event.remove([{ type: 'immersiveengineering:crusher', output: '#forge:dusts/iron'}])
   event.remove([{id:'create:splashing/crushed_raw_iron'}])
-  event.remove([{id:'create:splashing/crushed_iron_pile'}])
-  event.remove([{id:'immersiveengineering:crusher/ingot_iron'}])
   event.custom({
     "type":"immersiveengineering:crusher",
     "energy":6000,
     "input":{"item":"create:crushed_raw_iron"},
-    "result":{"base_ingredient":{"tag":"forge:dusts/iron"},"count":2},
-    "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/iron"}}]
+    "result":{"base_ingredient":{"tag":"forge:dusts/raw_iron"},"count":2},
+    "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/raw_iron"}}]
   })
   event.custom({
     "type":"immersiveengineering:crusher",
     "energy":54000,
     "input":{"item":"create_compressed:crushed_iron_pile"},
-    "result":{"base_ingredient":{"tag":"forge:dusts/iron"},"count":22},
-    "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/iron"}}]
+    "result":{"base_ingredient":{"tag":"forge:dusts/raw_iron"},"count":22},
+    "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/raw_iron"}}]
+  })
+  event.custom({
+    "type":"immersiveengineering:crusher",
+    "energy":6000,
+    "input":{"tag":"forge:ores/iron"},
+    "result":{"base_ingredient":{"tag":"forge:dusts/raw_iron"},"count":2},
+    "secondaries":[{"chance":0.1,"output":{"tag":"forge:dusts/nickel"}}]
+  })
+  event.custom({
+    "type":"immersiveengineering:crusher",
+    "energy":54000,
+    "input":{"tag":"forge:storage_blocks/raw_iron"},
+    "result":{"base_ingredient":{"tag":"forge:dusts/raw_iron"},"count":12},
+    "secondaries":[]
+  })
+  event.custom({
+    "type":"immersiveengineering:crusher",
+    "energy":3000,
+    "input":{"tag":"forge:ingots/iron"},
+    "result":{"tag":"forge:dusts/iron"},
+    "secondaries":[]
   })
   event.replaceOutput(
     { id: 'create:splashing/gravel' }, // Arg 1: the filter
@@ -79,7 +100,6 @@ ServerEvents.recipes(event => {
 
   //铜
   event.remove([{id:'create:splashing/crushed_raw_copper'}])
-  event.remove([{id:'create:splashing/crushed_copper_pile'}])
   event.custom({
     "type":"immersiveengineering:crusher",
     "energy":6000,
@@ -98,7 +118,6 @@ ServerEvents.recipes(event => {
   
   //金
   event.remove([{id:'create:splashing/crushed_raw_gold'}])
-  event.remove([{id:'create:splashing/crushed_gold_pile'}])
   event.custom({
     "type":"immersiveengineering:crusher",
     "energy":6000,
@@ -116,7 +135,6 @@ ServerEvents.recipes(event => {
 
   //锌
   event.remove([{id:'create:splashing/crushed_raw_zinc'}])
-  event.remove([{id:'create:splashing/crushed_zinc_pile'}])
   event.custom({
     "type":"immersiveengineering:crusher",
     "energy":6000,
@@ -153,7 +171,6 @@ ServerEvents.recipes(event => {
   })
 
   //铀
-  event.remove([{id:'immersiveengineering:mineral/uraninite'}])
   event.remove([{id:'create:splashing/immersiveengineering/crushed_raw_uranium'}])
   event.custom({
     "type":"immersiveengineering:crusher",

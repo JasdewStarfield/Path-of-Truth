@@ -69,12 +69,20 @@ const Unobtainable = [
 ServerEvents.tags("item", (event) => {
     //工程块
     engineeringBlocks.forEach((id) => event.add("kubejs:engineering_block", id))
+    
+    event.add("create:casing","kubejs:steel_casing")
 
     //锌粉、锡粉
     event.add("forge:dusts","kubejs:zinc_dust")
     event.add("forge:dusts/zinc","kubejs:zinc_dust")
     event.add("forge:dusts","kubejs:tin_dust")
     event.add("forge:dusts/tin","kubejs:tin_dust")
+
+    //铁粉
+    event.add("forge:dusts","kubejs:iron_ingot_dust")
+    event.add("forge:dusts/iron","kubejs:iron_ingot_dust")
+    event.remove("forge:dusts/iron","immersiveengineering:dust_iron")
+    event.add("forge:dusts/raw_iron","immersiveengineering:dust_iron")
     
     //青铜
     event.add("forge:dusts","kubejs:bronze_dust")
@@ -198,6 +206,8 @@ ServerEvents.tags("item", (event) => {
 ServerEvents.tags("block", (event) => {
     //工程块
     engineeringBlocks.forEach((id) => event.add("kubejs:engineering_block", id))
+
+    event.add("create:casing","kubejs:steel_casing")
 
     //扳手可拆卸拓展
     engineeringBlocks.forEach((id) => event.add("create:wrench_pickup", id))

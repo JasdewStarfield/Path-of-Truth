@@ -58,6 +58,8 @@ calibratedSculkSensorAmethystSparkle = true
 campfireSizzlingSoundVolume = 0.5
 vegetationFirefliesDensity = 30
 vegetationFirefliesSpawnType = "FLOWERS_ONLY"
+replacePowderSnowFlakes = true
+lavaCauldronEffects = true
 
 [sparks]
 removeVanillaCampfireSparks = true
@@ -67,7 +69,6 @@ fireSparks = true
 campfireSparks = true
 torchSparks = true
 lanternSparksDensity = 5
-lavaCauldronSparks = true
 lavaSparks = "ON"
 
 [updatedSmoke]

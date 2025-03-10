@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
     "type":"immersiveengineering:arc_furnace",
     "additives":[],
     "energy":102400,
-    "input":{"tag":"forge:dusts/iron"},
+    "input":{"tag":"forge:dusts/raw_iron"},
     "results":[{"tag":"forge:ingots/iron"}],
     "slag":{"tag":"forge:slag"},
     "time":100
@@ -114,6 +114,33 @@ ServerEvents.recipes(event => {
   event.recipes.create.compacting("kubejs:unformed_steel_ingot", Fluid.of("kubejs:molten_steel", 100))
   event.recipes.create.compacting("#forge:slag", Fluid.of("kubejs:molten_slag", 100))
   
+  //锻造钢锭
+  event.recipes.create.sequenced_assembly([
+    Item.of('immersiveengineering:ingot_steel').withChance(0.90),
+    Item.of('kubejs:unformed_steel_ingot').withChance(0.10)
+    ], 'kubejs:unformed_steel_ingot', [
+      event.recipes.createDeploying('kubejs:incomplete_steel_ingot', ['kubejs:incomplete_steel_ingot', '#forge:nuggets/anthralite']),
+      event.recipes.createPressing('kubejs:incomplete_steel_ingot', 'kubejs:incomplete_steel_ingot')
+  ]).transitionalItem('kubejs:incomplete_steel_ingot').loops(6)
+
+  //钢板
+  event.remove({ id: 'createaddition:pressing/steel_ingot' })
+  event.remove({ id: 'vintageimprovements:rolling/steel_ingot' })
+  event.remove({ id: 'vintageimprovements:rolling/steel_plate' })
+  event.remove({ id: 'vintageimprovements:mechanical_crafting/helve_hammer'})
+  event.recipes.create.mechanical_crafting('vintageimprovements:helve_hammer', [
+    ' D AA',
+    'DBBBC',
+    'DD  E'
+  ], {
+    A: 'kubejs:basic_spring_set',
+    B: '#forge:treated_wood',
+    C: 'kubejs:precise_engineering',
+    D: '#forge:storage_blocks/steel',
+    E: 'create:shaft'
+  })
+  event.recipes.vintageimprovementsHammering(Item.of('#forge:plates/steel'), '#forge:ingots/steel').hammerBlows(3)
+
 
   //发电
   /*

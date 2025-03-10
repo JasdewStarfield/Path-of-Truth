@@ -13,8 +13,8 @@
 			image: "kubejs:textures/quests/start.png"
 			rotation: 0.0d
 			width: 1.3285714285714287d
-			x: 0.0d
-			y: -2.3d
+			x: -4.0d
+			y: -1.5d
 		}
 		{
 			height: 0.4d
@@ -22,15 +22,23 @@
 			rotation: 0.0d
 			width: 1.1149863760217984d
 			x: 16.0d
-			y: -2.0d
+			y: -1.0d
 		}
 		{
 			height: 2.0d
 			image: "kubejs:textures/quests/i3.png"
 			rotation: 0.0d
 			width: 10.941176470588236d
-			x: 2.5d
-			y: -5.0d
+			x: 6.0d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "scguns:item/spitfire_flame"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	order_index: 0
@@ -59,10 +67,11 @@
 				type: "item"
 			}]
 			title: "【起点】基本元件"
-			x: 0.0d
-			y: -1.0d
+			x: -4.0d
+			y: 0.0d
 		}
 		{
+			dependencies: ["429B458F0AADA253"]
 			description: [
 				"你获得了钢锭！这意味着你可以在工业和魔法上继续推进了！"
 				"魔法也需要质量更好的金属作为基础发展）"
@@ -89,23 +98,16 @@
 			size: 2.0d
 			subtitle: "钢铁雄心 IV"
 			tasks: [{
-				id: "3D88033F132A0248"
-				item: {
-					Count: 1
-					id: "itemfilters:tag"
-					tag: {
-						value: "forge:ingots/steel"
-					}
-				}
-				title: "Any #forge:ingots/steel"
+				id: "42FAC7DBA007D304"
+				item: "immersiveengineering:ingot_steel"
 				type: "item"
 			}]
 			title: "团结就是力量"
-			x: 5.0d
-			y: -1.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["7A7C0A48248FA32B"]
+			dependencies: ["77918DE5A223B3CD"]
 			description: [
 				"通过这个机壳，你将意识到某些部件不是为了小型机器服务的，而是为了组装更大的机器）"
 				"比如说，钢机壳除了做门就只能做工程块）"
@@ -120,13 +122,14 @@
 				type: "item"
 			}]
 			title: "工程基本单元 I"
-			x: 9.0d
-			y: -3.0d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
 				"2974EA098C1280C1"
-				"2E4B9CF9789B1AF1"
+				"5184969E829D39FA"
+				"786828EE220E93A3"
 			]
 			description: [
 				"你获得了一款可以组成多方块结构机器的工程块——也是最简单的一种工程块）"
@@ -143,8 +146,8 @@
 				type: "item"
 			}]
 			title: "工程基本单元 II"
-			x: 11.0d
-			y: -3.0d
+			x: 12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7A7C0A48248FA32B"]
@@ -174,58 +177,13 @@
 					item: "immersiveengineering:workbench"
 					type: "item"
 				}
-				{
-					id: "3CFBFA097D9EC3C2"
-					item: "immersiveengineering:component_iron"
-					type: "item"
-				}
-				{
-					id: "289E8506756C06E6"
-					item: "immersiveengineering:component_steel"
-					type: "item"
-				}
 			]
 			title: "蓝图与工作"
-			x: 9.0d
+			x: 8.0d
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"242C57AF7F6116E4"
-				"7A7C0A48248FA32B"
-			]
-			hide_until_deps_complete: true
-			icon: "immersiveengineering:wirecoil_copper"
-			id: "759F8BFB75CBF0B6"
-			subtitle: "就是电线（"
-			tasks: [
-				{
-					id: "06297AABD34B63D9"
-					item: {
-						Count: 1
-						id: "immersiveengineering:wirecutter"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "4FC869F367DEA450"
-					item: "immersiveengineering:wirecoil_copper"
-					type: "item"
-				}
-			]
-			title: "能源通路"
-			x: 11.0d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"759F8BFB75CBF0B6"
-				"5700B2AFCCAEE31A"
-				"04AAF6565C04DA94"
-			]
+			dependencies: ["5700B2AFCCAEE31A"]
 			description: [
 				"通过切割磁感线可以产生电流，这也是把create的应力转化为电力的唯一方式——至少目前这是唯一方式。"
 				"磁铁需要你自己去地下挖——以及自己升级你的磁铁来获得更高的发电功率，磁感应强度和发电量成正比）"
@@ -233,31 +191,23 @@
 			hide_until_deps_complete: true
 			id: "4B2D7C8A59593200"
 			subtitle: "初中物理知识"
-			tasks: [
-				{
-					id: "65A4A60A92995D8D"
-					item: "create_new_age:generator_coil"
-					type: "item"
-				}
-				{
-					id: "27BA4EE42BADE50D"
-					item: "create_new_age:carbon_brushes"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "33A6AE30D681BC7D"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
 			title: "切割磁感线"
-			x: 13.0d
-			y: -1.0d
+			x: 14.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"4B2D7C8A59593200"
 				"250398995ECDA3CE"
-				"6F6699667400028E"
 			]
 			description: [
 				"&a【完成后解锁主线章节：4I 机械轰鸣】&r"
-				"注意：create：newage的电线因功能重复已被&c全部禁用&r！请通过&9沉浸工程&r的电路相关工具维系你的电路！"
+				"注意：“Create Crafts \\& Additions”模组的电线因功能重复已被&c全部禁用&r！请通过&9沉浸工程&r的电路相关工具维系你的电路！"
 				""
 				"电光四射，&m电眼逼人&r"
 			]
@@ -278,8 +228,8 @@
 				value: 1000L
 			}]
 			title: "【终点】电火花"
-			x: 15.0d
-			y: -1.0d
+			x: 16.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -306,42 +256,17 @@
 				}
 			]
 			title: "给我个任务吧！"
-			x: 15.0d
-			y: -3.0d
+			x: 14.0d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"242C57AF7F6116E4"
-				"4B2D7C8A59593200"
-			]
-			description: [
-				"&m理论上这章以前你就应该在地下见过无数次这个东西了（）&r"
-				""
-				"发电必需品）"
-				"最符合物理的一集，正常的转转显然不可能直接发电，因此你需要磁力）"
-				"天然的磁铁是最弱的，所以你显然需要想办法加强——不管是用科技还是魔法）"
-				""
-				"你还可以使用激发器来将粗铁块磁化——但是前提是你至少得先有电才行！"
-			]
-			id: "6F6699667400028E"
-			subtitle: "看到磁感应强度了对吧）"
-			tasks: [{
-				id: "2D6FD4297BF580BC"
-				item: "create_new_age:magnetite_block"
-				type: "item"
-			}]
-			title: "物理人心动时刻"
-			x: 15.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["7A7C0A48248FA32B"]
+			dependencies: ["77918DE5A223B3CD"]
 			description: [
 				"好吧，这其实应该才是第三个高炉，不过按顺序是第四个了。"
 				"它叫沉浸工程强化高炉，基本用途和粗制的那个没区别，只是自动化更加便捷，以及支持使用预热器加速。"
 			]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:blastbrick_reinforced"
+			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "598BB8D8FCB30B61"
 			rewards: [{
 				id: "742D112099E39F8C"
@@ -381,11 +306,11 @@
 				}
 			]
 			title: "搭建强化高炉"
-			x: 7.0d
-			y: -3.0d
+			x: 9.0d
+			y: 3.0d
 		}
 		{
-			dependencies: ["7A7C0A48248FA32B"]
+			dependencies: ["77918DE5A223B3CD"]
 			description: ["感受钢铁的厚重……"]
 			hide_until_deps_complete: true
 			id: "068A7A1F8FB54E98"
@@ -414,14 +339,11 @@
 				type: "item"
 			}]
 			title: "绝对防御！"
-			x: 7.0d
-			y: 1.0d
+			x: 11.0d
+			y: 3.0d
 		}
 		{
-			dependencies: [
-				"4EA98676CE0686BD"
-				"41831F6B01965541"
-			]
+			dependencies: ["4EA98676CE0686BD"]
 			description: [
 				"虽然用这个工程块也是（你后面会用到的）沉浸工程多方块机器的必要组成部分，因而看上去&3略显普通&r，但是由它为核心的机械动力&3虚空元件&r拥有&d最诱人&r的效果。"
 				"这一工程块将会藉由量子管的同频共振，&2为机械添加超越时空的能力&r，让你的物品，液体，电力甚至应力传输无视空间阻隔！"
@@ -439,8 +361,8 @@
 				item: "immersiveengineering:rs_engineering"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 1.0d
+			x: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5B1818D5A1142A16"]
@@ -453,8 +375,8 @@
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -1.0d
+			x: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["34F7983B4915B789"]
@@ -475,8 +397,8 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 0.5d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["504E6502A789DABF"]
@@ -489,60 +411,17 @@
 			}]
 			shape: "diamond"
 			subtitle: "当然也可以反着来！"
-			tasks: [
-				{
-					id: "67BC95A36E14545F"
-					item: "create_new_age:basic_motor"
-					type: "item"
-				}
-				{
-					id: "2B2613B6C28332F6"
-					item: "create_new_age:advanced_motor"
-					type: "item"
-				}
-				{
-					id: "40C5ADB9C69907CE"
-					item: "create_new_age:reinforced_motor"
-					type: "item"
-				}
-			]
-			title: "电力转应力"
-			x: 17.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["5700B2AFCCAEE31A"]
-			description: [
-				"如果你此时已经击败了末影龙并获取了鞘翅……你就可以合成这个强大的喷气背包。"
-				"使用方法很简单：用应力为它充气，就像给铜背罐充气一样；装备在背部饰品槽位，然后——尽情飞行吧！"
-				""
-				"&o&m另有下界合金版本，你在后面可能能用得上（&r&r"
-			]
-			hide_until_deps_complete: true
-			id: "61E609CC8510BDD1"
-			shape: "diamond"
-			subtitle: "让你飞起来——"
 			tasks: [{
-				id: "619FFB4B98593F62"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"cold_sweat:item_insulation": {
-							Insulation: [ ]
-						}
-					}
-					id: "create_jetpack:jetpack"
-					tag: {
-						Air: 900
-					}
-				}
+				id: "6F762E2D5EF09161"
+				item: "createaddition:electric_motor"
 				type: "item"
 			}]
-			x: 13.0d
-			y: -3.0d
+			title: "电力转应力"
+			x: 18.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["7A7C0A48248FA32B"]
+			dependencies: ["429B458F0AADA253"]
 			description: [
 				"它和它的同伴们会隔着遥远的距离进行共振……"
 				"但在你没加工前，它们只是能共振而已。"
@@ -559,8 +438,8 @@
 				type: "item"
 			}]
 			title: "虚空钢锭"
-			x: 9.0d
-			y: 0.0d
+			x: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["41831F6B01965541"]
@@ -577,8 +456,8 @@
 				item: "createutilities:void_casing"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 1.0d
+			x: 4.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["04AAF6565C04DA94"]
@@ -619,19 +498,19 @@
 				}
 			]
 			title: "虚空传输！"
-			x: 13.0d
-			y: 1.0d
+			x: 8.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["146261DF72C96BF4"]
 			id: "2EB6991862E12244"
 			tasks: [{
-				id: "4A876BFE97C5F7AA"
-				item: "immersiveengineering:dust_iron"
+				id: "7349570EE748E3CC"
+				item: "kubejs:iron_ingot_dust"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["2EB6991862E12244"]
@@ -641,8 +520,8 @@
 				item: "kubejs:molten_iron_bucket"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 3.5d
+			x: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["17263B7F0163FEA4"]
@@ -653,7 +532,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 5.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1A5AC0B8CD25635E"]
@@ -663,8 +542,8 @@
 				item: "kubejs:unformed_steel_ingot"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 6.5d
+			x: 4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["17263B7F0163FEA4"]
@@ -674,8 +553,74 @@
 				item: "kubejs:molten_slag_bucket"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A7C0A48248FA32B"]
+			icon: "vintageimprovements:helve_hammer"
+			id: "40129F9AE9DCE1EF"
+			tasks: [
+				{
+					id: "2F2AD8CCB0B007F8"
+					item: "vintageimprovements:helve_hammer"
+					type: "item"
+				}
+				{
+					id: "266B7071E99DD4AE"
+					item: "immersiveengineering:plate_steel"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2E4B9CF9789B1AF1"
+				"77918DE5A223B3CD"
+			]
+			id: "5184969E829D39FA"
+			tasks: [{
+				id: "16005BAE7C2D42BC"
+				item: "immersiveengineering:component_steel"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["40129F9AE9DCE1EF"]
+			id: "77918DE5A223B3CD"
+			tasks: [{
+				id: "2C335901DD5881AE"
+				item: "immersiveengineering:plate_steel"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["429B458F0AADA253"]
+			id: "68A34C290A68575C"
+			tasks: [{
+				id: "593479E4DED6B396"
+				item: "scguns:treated_iron_ingot"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["77918DE5A223B3CD"]
+			id: "786828EE220E93A3"
+			tasks: [{
+				id: "4F7AB4E750229D70"
+				item: "kubejs:leyden_jar"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.0d
 		}
 	]
 	subtitle: ["Hearts of Steel"]

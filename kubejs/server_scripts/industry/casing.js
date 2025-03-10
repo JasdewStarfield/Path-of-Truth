@@ -5,29 +5,29 @@ ServerEvents.recipes(event => {
     }
 
     //安山机壳
+    /*
     event.remove({id:'create:item_application/andesite_casing_from_wood'})
     event.remove({id:'create:item_application/andesite_casing_from_log'})
     casing("create:andesite_casing", "botania:stripped_livingwood", "create:andesite_alloy")
     casing("create:andesite_casing", "botania:stripped_livingwood_log", "create:andesite_alloy")
+    */
     
     //铜机壳
     event.remove({id:'create:item_application/copper_casing_from_wood'})
     event.remove({id:'create:item_application/copper_casing_from_log'})
-    casing('create:copper_casing', "botania:stripped_livingwood", '#forge:plates/constantan')
-    casing('create:copper_casing', "botania:stripped_livingwood_log", '#forge:plates/constantan')
+    casing('create:copper_casing', "createdeco:andesite_sheet_metal", '#forge:plates/constantan')
 
     //黄铜机壳
     event.remove({id:'create:item_application/brass_casing_from_wood'})
     event.remove({id:'create:item_application/brass_casing_from_log'})
-    casing('create:brass_casing', "botania:stripped_livingwood", '#forge:plates/brass')
-    casing('create:brass_casing', "botania:stripped_livingwood_log", '#forge:plates/brass')
+    casing('create:brass_casing', "#forge:treated_wood", '#forge:plates/brass')
 
     //火车机壳
     event.remove({id:'create:item_application/railway_casing'})
     casing('create:railway_casing', "create:brass_casing", '#forge:plates/obsidian')
 
     //钢机壳
-    casing("kubejs:steel_casing", "immersiveengineering:treated_wood_horizontal", '#forge:plates/steel')
+    casing("kubejs:steel_casing", "create:brass_casing", '#forge:plates/steel')
 
     /*
     //重型机械机壳
@@ -130,17 +130,17 @@ ServerEvents.recipes(event => {
       'CAD'  
       ], {
       B: 'create:brass_casing',
-      A: '#forge:treated_wood',
+      A: '#forge:plates/obsidian',
       C: 'create:precision_mechanism',
-      D: '#forge:plates/obsidian'
+      D: '#forge:wires/brass'
     })
     event.recipes.create.sequenced_assembly([
       'kubejs:precise_engineering'
     ], 'create:brass_casing', [
-      event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', '#forge:treated_wood']),
-      event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', 'create:precision_mechanism']),
       event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', '#forge:plates/obsidian']),
-      event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', '#forge:treated_wood'])
+      event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', 'create:precision_mechanism']),
+      event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', '#forge:wires/brass']),
+      event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', '#forge:plates/obsidian'])
     ]).transitionalItem('kubejs:incomplete_precise_engineering').loops(1)
 
     //物流工程块（来源列车机壳）

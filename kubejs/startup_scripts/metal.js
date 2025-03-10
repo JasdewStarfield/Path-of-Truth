@@ -40,14 +40,18 @@ StartupEvents.registry('item', (event) => {
   event.create("incomplete_advanced_spring_set", 'create:sequenced_assembly').displayName('Incomplete Advanced Spring Set')
 
   //钢铸造相关
+  /*
   event.create("casting_base").displayName('Casting Base')
   event.create("casting_seal").displayName('Casting Seal')
   event.create("incomplete_filled_casting_mold_small", 'create:sequenced_assembly').displayName('Incomplete Filled Casting Mold').texture('kubejs:item/incomplete_filled_casting_mold')
   event.create("filled_casting_mold_small").displayName('Filled Casting Mold').texture('kubejs:item/filled_casting_mold')
   event.create("incomplete_filled_casting_mold_large", 'create:sequenced_assembly').displayName('Incomplete Filled Casting Mold').texture('kubejs:item/incomplete_filled_casting_mold')
   event.create("filled_casting_mold_large").displayName('Filled Casting Mold').texture('kubejs:item/filled_casting_mold')
+  */
 
-  event.create("unformed_steel_ingot").displayName('Unformed Steel Ingot')
+  event.create("iron_ingot_dust").displayName('Iron dust')
+  event.create("leyden_jar").displayName('Leyden Jar')
+  event.create("unformed_steel_ingot").displayName('Unformed Steel Forging Blank')
   event.create("incomplete_steel_ingot", 'create:sequenced_assembly').displayName('Incomplete Steel Ingot')
 
   //金-银混合物
@@ -118,19 +122,20 @@ StartupEvents.registry('block', (event) => {
 StartupEvents.registry('fluid', (event) => {
   //熔融铁
   event.create('molten_iron')
-  .thickTexture(0x00FFFF)
-  .bucketColor(0x00FFFF)
+  .thickTexture(0xFDB057)
+  .bucketColor(0xFDB057)
   .displayName('Molten Iron')
 
   //熔融钢
   event.create('molten_steel')
-  .thickTexture(0x00FFFF)
-  .bucketColor(0x00FFFF)
+  .thickTexture(0xFCCA91)
+  .bucketColor(0xFCCA91)
   .displayName('Molten Steel')
+
 
   //熔融炉渣
   event.create('molten_slag')
-  .thickTexture(0x00FFFF)
-  .bucketColor(0x00FFFF)
+  .thickTexture(0xE9D9B3)
+  .bucketColor(0xE9D9B3)
   .displayName('Molten Slag')
 })

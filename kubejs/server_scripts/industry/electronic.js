@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
     event.remove({id:"createutilities:shaped/graviton_tube"})
     event.recipes.create.deploying('createutilities:graviton_tube', ['createutilities:void_steel_sheet', 'createutilities:polished_amethyst'])
 
-    //精密零件
+    //精密构件
     event.remove({id:"create:sequenced_assembly/precision_mechanism"})
     let inter = 'create:incomplete_precision_mechanism'
     event.recipes.create.sequenced_assembly([
@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
         Item.of('create:cogwheel').withChance(1.5),
         Item.of('create:large_cogwheel').withChance(1.5),
         Item.of('create:electron_tube').withChance(2.0)
-    ], '#forge:plates/brass', [
+    ], '#forge:plates/gold', [
         event.recipes.createDeploying(inter, [inter, 'create:cogwheel']),
         event.recipes.createDeploying(inter, [inter, 'create:large_cogwheel']),
         event.recipes.createDeploying(inter, [inter, '#blue_skies:gems/moonstone_shard']),
@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.create.sequenced_assembly([
         Item.of('create:precision_mechanism')
-    ], '#forge:plates/brass', [
+    ], '#forge:plates/gold', [
         event.recipes.createFilling(inter, [inter, {fluidTag: 'forge:lubricant', amount:25}]),
         event.recipes.createDeploying(inter, [inter, 'create:cogwheel']),
         event.recipes.createDeploying(inter, [inter, 'create:large_cogwheel']),

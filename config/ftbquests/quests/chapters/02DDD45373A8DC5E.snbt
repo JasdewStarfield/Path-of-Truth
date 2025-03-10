@@ -159,6 +159,7 @@
 				"值得一提的是，利用手搓的方式产出的传动杆的数量降低了。然而，等到你获取铁之后，就可以使用动力锯改变这种粗放的生产方式了。"
 			]
 			hide_until_deps_complete: true
+			icon: "create:large_cogwheel"
 			id: "2F791EC2607066B4"
 			subtitle: "地球在转。"
 			tasks: [
@@ -569,10 +570,7 @@
 		}
 		{
 			dependencies: ["7A6ADC4EE6686110"]
-			description: [
-				"现在你不能通过把安山合金按到原木上来创建机壳了：你需要在活木上进行加工才可以。"
-				"是的，你首先需要用魔法活化木头，然后它们才能在加工台上被你压成机壳。"
-			]
+			description: [""]
 			hide_until_deps_complete: true
 			id: "50BB17FEED3B10D2"
 			subtitle: "什么，这不科学！"

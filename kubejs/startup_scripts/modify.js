@@ -71,3 +71,16 @@ ItemEvents.modification(event => {
     item.rarity = "EPIC"
   })
 })
+
+BlockEvents.modification(event => {
+  //使得熔融流体也能发光
+  event.modify('kubejs:molten_iron', block => {
+    block.lightEmission = 15
+  })
+  event.modify('kubejs:molten_steel', block => {
+    block.lightEmission = 15
+  })
+  event.modify('kubejs:molten_slag', block => {
+    block.lightEmission = 15
+  })
+})
