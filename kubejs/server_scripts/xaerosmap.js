@@ -20,13 +20,13 @@ PlayerEvents.decorateChat(event => {
     let add_command = `/xaero_waypoint_add:${name}:${name.slice(0,1).toUpperCase()}:${x}:${y}:${z}:4:false:0:${dim}`
     let base = Component.string('')
     let texts = [
-      Component.string('分享了一个位置：').noColor(),
+      Component.translate("msg.xearosmap.share_waypoint").noColor(),
       //dim_translate.green().underlined(),
-      Component.green(`[x: ${x} y: ${y} z: ${z} @ ${dim_key.split('.')[2]}]`).underlined(),
+      Component.green(`[x: ${x}, y: ${y}, z: ${z}, @${dim_key.split('.')[2]}]`).underlined(),
     ]
     texts.forEach(ele => base.append(ele))
     //base.clickRunCommand(add_command).hover('' + dim_translate.getString() + '\n点击添加路径点')
-    base.clickRunCommand(add_command).hover('点击添加路径点')
+    base.clickRunCommand(add_command).hover('点击添加路径点 | Click to Add Waypoint')
     event.setMessage(base)
   }
 })

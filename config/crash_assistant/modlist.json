@@ -67,6 +67,10 @@
     "modId": "artifacts",
     "version": "9.5.13"
   },
+  "AsyncParticles-1.8.0+1.20.1-beta.4.jar": {
+    "modId": "asyncparticles",
+    "version": "1.8.0+1.20.1-beta.4"
+  },
   "AttributeFix-Forge-1.20.1-21.0.4.jar": {
     "modId": "attributefix",
     "version": "21.0.4"
@@ -643,10 +647,6 @@
     "modId": "imblocker",
     "version": "5.0.2"
   },
-  "ImmediatelyFast-Forge-1.3.6+1.20.4.jar": {
-    "modId": "immediatelyfast",
-    "version": "1.3.6+1.20.4"
-  },
   "immersive_aircraft-1.2.1+1.20.1-forge.jar": {
     "modId": "immersive_aircraft",
     "version": "1.2.1+1.20.1"
@@ -1163,10 +1163,6 @@
   "spark-1.10.53-forge.jar": {
     "modId": "spark",
     "version": "1.10.53"
-  },
-  "sparsestructuresreforged-1.20.1-0.0.1.jar": {
-    "modId": "sparsestructuresreforged",
-    "version": "1.20.1-0.0.1"
   },
   "spells_gone_wrong-1.20.1-V1.0.2.jar": {
     "modId": "spells_gone_wrong",

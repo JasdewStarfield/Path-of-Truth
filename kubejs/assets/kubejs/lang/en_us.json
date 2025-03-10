@@ -24,5 +24,7 @@
 
     "item.kubejs.obelisk_base.desc1": "You feel a strong power emitting from this block...",
     "item.kubejs.obelisk_base.desc2": "If you put it under the obelisk, then it will recieve infinite charge (but you cannot move the base after placement)",
-    "item.kubejs.diamond_gears.desc": "Although this diamond gear seems to have an excellent capability, it is quite easy for it to be damaged and destroyed..."
+    "item.kubejs.diamond_gears.desc": "Although this diamond gear seems to have an excellent capability, it is quite easy for it to be damaged and destroyed...",
+
+    "msg.xearosmap.share_waypoint":"Shared a location:"
 }

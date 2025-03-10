@@ -73,6 +73,9 @@
   "fluid.kubejs.molten_iron": "熔融铁",
   "fluid.kubejs.molten_steel": "熔融钢",
   "fluid.kubejs.molten_slag": "熔融炉渣",
+  "block.kubejs.molten_iron": "熔融铁",
+  "block.kubejs.molten_steel": "熔融钢",
+  "block.kubejs.molten_slag": "熔融炉渣",
 
   "item.scguns.gun_bench.desc": "当前仅作为军火匠村民的工作方块。请使用动力合成器组装枪械。",
   "item.kubejs.music_disc_pluto_nocturnus.desc": "Jacky Blackson - Pluto Nocturnus",
@@ -175,6 +178,7 @@
   "block.undergarden.depthrock_bed.tooltip":"渊邃石床",
   "block.undergarden.depthrock_bed.tooltip.summary":"世界最后的真实，心灵最终的归宿，古老力量的结晶。",
   "block.undergarden.depthrock_bed.tooltip.condition1":"在右键时",
-  "block.undergarden.depthrock_bed.tooltip.behaviour1":"进行一次_完全正常的_重生点设置并尝试睡眠。"
+  "block.undergarden.depthrock_bed.tooltip.behaviour1":"进行一次_完全正常的_重生点设置并尝试睡眠。",
 
+  "msg.xearosmap.share_waypoint":"分享了一个位置："
 }
