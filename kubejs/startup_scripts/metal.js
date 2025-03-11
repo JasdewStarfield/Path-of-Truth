@@ -128,14 +128,14 @@ StartupEvents.registry('fluid', (event) => {
 
   //熔融钢
   event.create('molten_steel')
-  .thickTexture(0xFCCA91)
-  .bucketColor(0xFCCA91)
+  .thickTexture(0xE9D9B3)
+  .bucketColor(0xE9D9B3)
   .displayName('Molten Steel')
 
 
   //熔融炉渣
   event.create('molten_slag')
-  .thickTexture(0xE9D9B3)
-  .bucketColor(0xE9D9B3)
-  .displayName('Molten Slag')
+  .thickTexture(0xFCCA91)
+  .bucketColor(0xFCCA91)
+  .displayName('Molten Steel-Slag Mix')
 })

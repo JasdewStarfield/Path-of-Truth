@@ -1,4 +1,6 @@
 ServerEvents.recipes(event => {
+
+  event.remove({output:/createaddition\:crafting\/wire_\.*/})
   /*
   event.recipes.create.mechanical_crafting('tfmg:casting_spout', [
     ' DDD ',
@@ -101,9 +103,8 @@ ServerEvents.recipes(event => {
 
   //转炉炼钢法
   event.recipes.vintageimprovements.pressurizing([
-    Fluid.of("kubejs:molten_steel", 150),
     Item.of('kubejs:fire_elemental_core'),
-    Fluid.of('kubejs:molten_slag', 50)
+    Fluid.of('kubejs:molten_slag', 200)
   ], [
     Item.of("#create:stone_types/limestone"),
     Item.of('kubejs:fire_elemental_core'),
@@ -111,8 +112,21 @@ ServerEvents.recipes(event => {
   ]).heated()
 
   //熔融钢、炉渣处理
+  event.remove({id:"vintageimprovements:craft/centrifuge"})
+  event.recipes.create.mechanical_crafting('vintageimprovements:centrifuge', [
+    '  A  ',
+    ' BDB ',
+    'ADCDA',
+    ' BDB ',
+    '  A  '
+  ], {
+    A: 'create:portable_storage_interface',
+    B: 'kubejs:basic_spring_set',
+    C: 'kubejs:precise_engineering',
+    D: '#forge:treated_wood'
+  })
+  event.recipes.vintageimprovements.centrifugation([Fluid.of('kubejs:molten_steel', 150), "#forge:slag"], Fluid.of('kubejs:molten_slag', 200)).minimalRPM(128)
   event.recipes.create.compacting("kubejs:unformed_steel_ingot", Fluid.of("kubejs:molten_steel", 100))
-  event.recipes.create.compacting("#forge:slag", Fluid.of("kubejs:molten_slag", 100))
   
   //锻造钢锭
   event.recipes.create.sequenced_assembly([
@@ -140,6 +154,34 @@ ServerEvents.recipes(event => {
     E: 'create:shaft'
   })
   event.recipes.vintageimprovementsHammering(Item.of('#forge:plates/steel'), '#forge:ingots/steel').hammerBlows(3)
+
+  //莱顿瓶
+  event.recipes.create.mechanical_crafting('kubejs:leyden_jar', [
+    ' D ',
+    ' B ',
+    'CAC',
+    ' B '
+  ], {
+    A: 'glass_bottle',
+    B: '#forge:plates/steel',
+    C: 'goety:ectoplasm',
+    D: '#forge:wires/constantan'
+  })
+
+  //末影碎片
+  event.remove({id:"endersdelight:cutting/ender_shard"})
+  event.remove({id:"endersdelight:cutting/ender_shard_using_deployer"})
+  event.recipes.farmersdelight.cutting(
+    '#forge:ender_pearls',
+    '#forge:tools/pickaxes',
+    [
+      Item.of('endersdelight:ender_shard',2)
+    ]
+  )
+  
+  //虚空钢
+  event.remove({id:"createutilities:mixing/void_steel_ingot"})
+  event.recipes.create.mixing(Item.of('#forge:ingots/voidsteel').withChance(0.75), ['kubejs:unformed_steel_ingot', 'kubejs:unformed_steel_ingot', '#endersdelight:enderman_loot', '#endersdelight:enderman_loot', 'echo_shard']).heated()
 
 
   //发电

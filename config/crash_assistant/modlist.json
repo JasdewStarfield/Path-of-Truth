@@ -507,6 +507,10 @@
     "modId": "farmersdelight",
     "version": "1.20.1-1.2.7"
   },
+  "farmersrespite-1.20.1-2.1.2.jar": {
+    "modId": "farmersrespite",
+    "version": "1.20.1-2.1"
+  },
   "farsight-1.20.1-3.7.jar": {
     "modId": "farsight_view",
     "version": "1.20.1-3.7"
@@ -643,9 +647,9 @@
     "modId": "ichunutil",
     "version": "1.0.3"
   },
-  "IMBlocker-5.0.2-1.19.4-1.20.4.jar": {
+  "IMBlocker_4.0.5+1.20.jar": {
     "modId": "imblocker",
-    "version": "5.0.2"
+    "version": "4.0.5"
   },
   "immersive_aircraft-1.2.1+1.20.1-forge.jar": {
     "modId": "immersive_aircraft",
@@ -912,6 +916,10 @@
     "modId": "noisium",
     "version": "2.3.0+mc1.20-1.20.1"
   },
+  "nomowanderer-1.20.1_1.6.4.jar": {
+    "modId": "nomowanderer",
+    "version": "1.20.1_1.6.4"
+  },
   "NonConflictKeys-Forge-1.19.X-1.20-1.0.0.jar": {
     "modId": "nckey",
     "version": "1.0.0"
@@ -1023,6 +1031,10 @@
   "recipeessentials-1.20.1-4.0.jar": {
     "modId": "recipeessentials",
     "version": "1.20.1-4.0"
+  },
+  "redirected-forge-1.0.0-1.20.1.jar": {
+    "modId": "redirected",
+    "version": "1.0.0"
   },
   "refinedpolymorph-0.1.1-1.20.1.jar": {
     "modId": "refinedpolymorph",

@@ -14,15 +14,15 @@
 			rotation: 0.0d
 			width: 1.3285714285714287d
 			x: -4.0d
-			y: -1.5d
+			y: 1.5d
 		}
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 16.0d
-			y: -1.0d
+			x: 15.0d
+			y: 1.5d
 		}
 		{
 			height: 2.0d
@@ -37,8 +37,8 @@
 			image: "scguns:item/spitfire_flame"
 			rotation: 0.0d
 			width: 1.0d
-			x: 0.0d
-			y: 0.0d
+			x: -1.0d
+			y: -4.0d
 		}
 	]
 	order_index: 0
@@ -197,7 +197,7 @@
 				type: "item"
 			}]
 			title: "切割磁感线"
-			x: 14.0d
+			x: 13.0d
 			y: 0.0d
 		}
 		{
@@ -228,7 +228,7 @@
 				value: 1000L
 			}]
 			title: "【终点】电火花"
-			x: 16.0d
+			x: 15.0d
 			y: 0.0d
 		}
 		{
@@ -256,8 +256,8 @@
 				}
 			]
 			title: "给我个任务吧！"
-			x: 14.0d
-			y: -2.0d
+			x: 15.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
@@ -376,7 +376,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["34F7983B4915B789"]
@@ -397,7 +397,7 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -3.0d
 			y: -2.0d
 		}
 		{
@@ -417,7 +417,7 @@
 				type: "item"
 			}]
 			title: "电力转应力"
-			x: 18.0d
+			x: 17.0d
 			y: 0.0d
 		}
 		{
@@ -509,8 +509,8 @@
 				item: "kubejs:iron_ingot_dust"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -1.0d
+			x: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["2EB6991862E12244"]
@@ -521,17 +521,20 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 1.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["17263B7F0163FEA4"]
+			dependencies: [
+				"14A2B5756D42DD23"
+				"5FBE0E83E329AC46"
+			]
 			id: "1A5AC0B8CD25635E"
 			tasks: [{
 				id: "5D6A6DD4A2B1F6B9"
 				item: "kubejs:molten_steel_bucket"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -553,8 +556,8 @@
 				item: "kubejs:molten_slag_bucket"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7A7C0A48248FA32B"]
@@ -621,6 +624,26 @@
 			}]
 			x: 11.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["34F7983B4915B789"]
+			icon: "vintageimprovements:centrifuge"
+			id: "14A2B5756D42DD23"
+			tasks: [
+				{
+					id: "2DED066F07B9F3DE"
+					item: "vintageimprovements:centrifuge"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6FF25CA2462DC357"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 2.0d
 		}
 	]
 	subtitle: ["Hearts of Steel"]

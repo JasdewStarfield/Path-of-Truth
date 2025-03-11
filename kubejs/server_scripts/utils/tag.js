@@ -48,6 +48,14 @@ const BasicFish = [
     "collectorsreap:urchin"
 ]
 
+const CreateAdditionRemoval = [
+    'createaddition:creative_generator',
+    'createaddition:connector',
+    'createaddition:small_light_connector',
+    'createaddition:large_connector',
+    'createaddition:redstone_relay',
+]
+
 const Unobtainable = [
     'netherdepthsupgrade:lava_fishing_rod',
     /sophisticatedbackpacks:stack_upgrade.*/,

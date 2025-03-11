@@ -217,7 +217,7 @@
 				}
 			]
 			title: "烧起来了……吗？"
-			x: -1.0d
+			x: -2.0d
 			y: 2.0d
 		}
 		{
@@ -248,7 +248,7 @@
 				}
 			]
 			title: "真·烧起来了"
-			x: 1.0d
+			x: 0.0d
 			y: 2.0d
 		}
 		{
@@ -922,6 +922,21 @@
 			}]
 			x: 2.0d
 			y: 17.5d
+		}
+		{
+			dependencies: [
+				"079D9B3E0E12C25C"
+				"5584865A3F339D6E"
+			]
+			id: "0E9D500DED0B76E7"
+			shape: "diamond"
+			tasks: [{
+				id: "5D5CF30B38FB21DC"
+				item: "createaddition:straw"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
 		}
 	]
 	subtitle: ["Exotic Alloys"]

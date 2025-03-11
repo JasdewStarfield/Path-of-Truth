@@ -69,13 +69,13 @@
 
   "item.kubejs.molten_iron_bucket": "熔融铁桶",
   "item.kubejs.molten_steel_bucket": "熔融钢桶",
-  "item.kubejs.molten_slag_bucket": "熔融炉渣桶",
+  "item.kubejs.molten_slag_bucket": "熔融钢-炉渣混合物桶",
   "fluid.kubejs.molten_iron": "熔融铁",
   "fluid.kubejs.molten_steel": "熔融钢",
-  "fluid.kubejs.molten_slag": "熔融炉渣",
+  "fluid.kubejs.molten_slag": "熔融钢-炉渣混合物",
   "block.kubejs.molten_iron": "熔融铁",
   "block.kubejs.molten_steel": "熔融钢",
-  "block.kubejs.molten_slag": "熔融炉渣",
+  "block.kubejs.molten_slag": "熔融钢-炉渣混合物",
 
   "item.scguns.gun_bench.desc": "当前仅作为军火匠村民的工作方块。请使用动力合成器组装枪械。",
   "item.kubejs.music_disc_pluto_nocturnus.desc": "Jacky Blackson - Pluto Nocturnus",
