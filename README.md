@@ -92,21 +92,21 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 #### 主要模组
 
-**科技模组：**
+##### 科技模组
 - [机械动力](https://www.curseforge.com/minecraft/mc-mods/create)及其附属
 - [沉浸工程](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
 
-**魔法模组：**
+##### 魔法模组
 - [植物魔法](https://www.curseforge.com/minecraft/mc-mods/botania)
 - [诡厄巫法](https://www.curseforge.com/minecraft/mc-mods/goety)
 - [铁魔法](https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks)
 
-**探索模组：**
+##### 探索模组
 - [蔚蓝浩空](https://www.curseforge.com/minecraft/mc-mods/blue-skies)
 - [深暗之园](https://www.curseforge.com/minecraft/mc-mods/the-undergarden)
 - [Alex的生物](https://www.curseforge.com/minecraft/mc-mods/alexs-mobs)
 
-**农业美食模组：**
+##### 农业美食模组
 - [农夫乐事](https://www.curseforge.com/minecraft/mc-mods/farmers-delight)及其附属
 - [潮汐](https://www.curseforge.com/minecraft/mc-mods/tide)
 - [均衡饮食](https://www.curseforge.com/minecraft/mc-mods/diet)
