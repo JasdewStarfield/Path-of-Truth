@@ -90,6 +90,57 @@ goety系列配方记录
         "result": "产出",
         "cookingTime": 处理时间
     })
+    //仪式相关
+    //仪式类型列表
+    主类型：craft(制作),summon(召唤生物),summon_tamed(召唤驯服生物),convert_complete_tamed(转化驯服生物)
+    副类型：
+    forge(锻造),animation(活力),frost(冰霜),geoturgy(大地),magic(魔法),storm(风暴),deep(深渊),sabbath(安息),sky(天空),necromancy(死灵)
+    (adept/expert_)nether((进阶/专家)下界)
+    制作类模板：
+    event.custom({
+        "type": "goety:ritual",
+        "ritual_type": "goety:craft",//仪式主类型（制作）
+        "activation_item": {
+            "item": "goety:cursed_cage"//中心物品
+        },
+        "craftType": "forge",//仪式副类型（锻造）
+        "soulCost": 1,//每秒消耗
+        "duration": 30,//时长
+        "ingredients": [
+            {
+            "item": "1"
+            },
+            {
+            "tag": "2"
+            }
+        ],
+        "result": {
+            "item": "3"
+        }
+    })
+    召唤生物类模板：
+    event.custom({
+        "type": "goety:ritual",
+        "ritual_type": "goety:summon_tamed",//仪式主类型（生成生物）
+        "activation_item": {
+            "item": "minecraft:goat_horn"//输入材料
+        },
+        "craftType": "animation",//仪式副类型（活力）
+        "entity_to_summon": "goety:twilight_goat",//即将生成的生物
+        "soulCost": 1,
+        "duration": 10,
+        "ingredients": [
+            {
+            "item": "minecraft:wheat"
+            },
+            {
+            "tag": "forge:bones"
+            }
+        ],
+        "result": {
+            "item": "goety:jei_dummy/none"//空输出
+        }
+    })
 */
 
 /*

@@ -11,10 +11,11 @@
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/start.png"
+			order: 1
 			rotation: 0.0d
 			width: 1.3285714285714287d
 			x: 0.0d
-			y: -0.9d
+			y: 1.0d
 		}
 		{
 			height: 0.4d
@@ -31,6 +32,14 @@
 			width: 8.385245901639344d
 			x: 0.0d
 			y: -6.5d
+		}
+		{
+			height: 3.0d
+			image: "botania:block/terra_plate_overlay"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	order_index: 1
@@ -106,7 +115,7 @@
 		{
 			dependencies: ["0F9DF1C5137194E4"]
 			description: [
-				"通过某种意义上的无尽能源，现在的你可以轻松的&9诅咒一些物品&r，也可以通过魔力介质将刷怪笼的&b灵魂能量&r实体化。"
+				"通过某种意义上的无尽能源，现在的你可以轻松的&9诅咒一些物品&r而不再是通过工作台艰难合成，也可以通过魔力介质将刷怪笼的&b灵魂能量&r实体化。"
 				"这些实体化的灵魂是重要的介质……而且不仅仅用于施法。"
 				""
 				"&o&7刷怪笼：我没意见&r&r"
@@ -450,11 +459,6 @@
 				"借由魔力爆发和金属框架的支持，&6一次魔力聚合能够制作出多个能够作为核心的祭坛&r，这也意味着你可以尝试更多种类的仪式，而不用每次都将祭坛搬走）"
 			]
 			id: "736407504A1AB9E0"
-			rewards: [{
-				id: "39298AB0EC7935C6"
-				item: "minecraft:enchanting_table"
-				type: "item"
-			}]
 			shape: "diamond"
 			size: 1.6d
 			subtitle: "凝聚魔力……穿透帷幕。"
@@ -485,6 +489,37 @@
 			title: "地底回音"
 			x: 1.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["7B4573440B7AD85C"]
+			description: [
+				"黑暗也是需要回火的，而且回火真的能&6产出火焰&r。"
+				"在二次注入后，金属原有的形态将消失不见，但&7灵魂诅咒产出的黑暗将被保留下来&r，然后凝结成实体。"
+				"如果你有太多的灵魂能量，那么黑暗将会凝结成&c孤魂尸鬼&r，然后自己来找你……"
+				""
+				"&o&4*这股力量还可以帮助你找到黑暗的聚集地。小心墓穴中的亡灵……&r&r"
+			]
+			id: "0F48550D5C48437F"
+			rewards: [{
+				id: "45566D19E1252DD7"
+				item: {
+					Count: 1
+					id: "goety:cryptic_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "诅咒一切……"
+			tasks: [{
+				id: "594F86E8BD42BD63"
+				item: "goety:shadow_essence"
+				type: "item"
+			}]
+			title: "浓缩黑暗"
+			x: 0.0d
+			y: -3.0d
 		}
 	]
 	subtitle: ["Mana Within"]

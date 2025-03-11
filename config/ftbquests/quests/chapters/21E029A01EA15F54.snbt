@@ -11,6 +11,7 @@
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/start.png"
+			order: 1
 			rotation: 0.0d
 			width: 1.3285714285714287d
 			x: 0.0d
@@ -31,6 +32,14 @@
 			width: 10.128712871287128d
 			x: 0.0d
 			y: -8.0d
+		}
+		{
+			height: 3.0d
+			image: "vct:block/greenheart_crafting_table_top"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	order_index: 1

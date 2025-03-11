@@ -1722,18 +1722,24 @@
 			id: "6AFB8B9527F2FEB1"
 			rewards: [
 				{
-					id: "64A64D3BA6050995"
-					item: "createchromaticreturn:silkstrum_book"
+					id: "4A615F858AF6ED73"
+					item: {
+						Count: 1
+						id: "blue_skies:summoning_tome"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "4179BBD536FDB9F1"
-					item: "createchromaticreturn:industrium_book"
+					id: "2B47D41C245AC305"
+					item: "goety:forbidden_scroll"
 					type: "item"
 				}
 				{
-					id: "71328210269A661B"
-					item: "createchromaticreturn:durasteel_book"
+					id: "2D4AD1549F11BA9F"
+					item: "goety:glow_light_focus"
 					type: "item"
 				}
 			]
@@ -2988,7 +2994,67 @@
 				}
 			]
 			title: "知识不朽"
-			x: 0.0d
+			x: -0.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["374C430D0AD70D2E"]
+			description: [
+				"雷霆之锤需要用雷电强化粉碎者后，它才有几率掉落。"
+				"霜冻之刃来自墓穴的白骨领主，但也有几率在陶瓷坛内发现。"
+				"堕落之刃是缠魂甲胄的装备。"
+			]
+			id: "3ABDF141ABA6CA8C"
+			rewards: [{
+				id: "79428E1F8AC61C87"
+				item: {
+					Count: 1
+					id: "scguns:nervepinch"
+					tag: {
+						AmmoCount: 8
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "获得诡厄巫法的三把特殊武器！"
+			tasks: [
+				{
+					id: "11695387EBA3B86A"
+					item: {
+						Count: 1
+						id: "goety:stormlander"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D9BA5564A790E5B"
+					item: {
+						Count: 1
+						id: "goety:frozen_blade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1181355C982999B4"
+					item: {
+						Count: 1
+						id: "goety:fell_blade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "魔能武装"
+			x: 0.5d
 			y: 9.0d
 		}
 	]

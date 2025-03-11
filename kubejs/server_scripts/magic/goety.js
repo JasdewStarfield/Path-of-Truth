@@ -59,6 +59,9 @@ ServerEvents.recipes(event => {
         }
     )
     
+    //磁石替换核心（灵魂方舟要用）
+    event.replaceInput({mod:'minecraft',output:'minecraft:lodestone'},
+        'minecraft:netherite_ingot' , '#forge:ingots/steel')
     
     //灵魂图腾移除与新激活
     event.remove({output:'goety:totem_of_souls'})
@@ -161,7 +164,16 @@ ServerEvents.recipes(event => {
         "result": 'goety:ectoplasm',
         "cookingTime": 40
     })
+    //暗影精粹
+    event.custom({
+        "type": "goety:cursed_infuser_recipes",
+        "ingredient": {
+            "item": 'goety:cursed_metal_block'
+        },
+        "result": 'goety:shadow_essence',
+        "cookingTime": 1200
+    })
 
 
-    //魔力粉-奥术源质兑换
+    //魔力尘-奥术源质兑换
 })

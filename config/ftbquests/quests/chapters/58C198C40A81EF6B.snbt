@@ -11,6 +11,7 @@
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/start.png"
+			order: 2
 			rotation: 0.0d
 			width: 1.3285714285714287d
 			x: 0.0d
@@ -19,6 +20,7 @@
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
+			order: 1
 			rotation: 0.0d
 			width: 1.1149863760217984d
 			x: 0.0d
@@ -31,6 +33,14 @@
 			width: 10.23d
 			x: 0.0d
 			y: -2.5d
+		}
+		{
+			height: 3.0d
+			image: "bosses_of_mass_destruction:textures/particle/magic_circle_18.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: 3.0d
 		}
 	]
 	order_index: 1
