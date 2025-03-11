@@ -38,6 +38,13 @@
 	quests: [
 		{
 			dependencies: ["736407504A1AB9E0"]
+			description: [
+				"在一切开始之前，也许你已经发现了&6灵魂图腾的局限性&r，以及&b浪费了大量的灵魂能量&r。"
+				"探寻黑暗的解答后，你获得了一种将图腾转化为&d更加强大的灵魂核心&r的功能。"
+				"从此，你将不再需要将灵魂图腾放在诅咒之笼中进行供能，取而代之的是&9多个连接宝石&r——以及一个&5永远与你绑定的灵魂方舟&r作为灵魂的源头。"
+				""
+				"&o&4*人只有一个灵魂，所以你只能绑定一个灵魂方舟。&r&r"
+			]
 			hide_until_deps_complete: true
 			icon: "aquamirae:ship_graveyard_echo"
 			id: "5A5B1D96C50D1EAE"
@@ -48,12 +55,19 @@
 			}]
 			shape: "octagon"
 			size: 1.5d
-			subtitle: "方舟，启动！"
-			tasks: [{
-				id: "1E28F60648CA8024"
-				item: "goety:arca"
-				type: "item"
-			}]
+			subtitle: "**方舟，启动！"
+			tasks: [
+				{
+					id: "1E28F60648CA8024"
+					item: "goety:arca"
+					type: "item"
+				}
+				{
+					id: "60E0597F4D1E3D2A"
+					item: "goety:soul_transfer"
+					type: "item"
+				}
+			]
 			title: "【起点】灵魂方舟"
 			x: 0.0d
 			y: 0.0d

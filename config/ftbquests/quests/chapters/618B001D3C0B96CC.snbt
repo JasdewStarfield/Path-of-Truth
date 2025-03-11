@@ -106,25 +106,32 @@
 		{
 			dependencies: ["0F9DF1C5137194E4"]
 			description: [
-				"钻石和绿宝石是MC世界的稀有资源，但魔法上的用量不算小。"
-				"这种时候，你就需要考虑一下点石成金的某些方式……"
+				"通过某种意义上的无尽能源，现在的你可以轻松的&9诅咒一些物品&r，也可以通过魔力介质将刷怪笼的&b灵魂能量&r实体化。"
+				"这些实体化的灵魂是重要的介质……而且不仅仅用于施法。"
+				""
+				"&o&7刷怪笼：我没意见&r&r"
 			]
 			icon: "goety:gold_holder_marble"
 			id: "7B4573440B7AD85C"
-			subtitle: "很显然，你需要点石成金"
+			rewards: [{
+				id: "5A577E770048C32C"
+				item: "goety:ectoplasm"
+				type: "item"
+			}]
+			subtitle: "灵魂甩卖：一组一朵生命之火"
 			tasks: [
 				{
-					id: "595341A51DCCB7B8"
-					item: "minecraft:diamond"
+					id: "680760FDA2260686"
+					item: "goety:ectoplasm"
 					type: "item"
 				}
 				{
-					id: "46163255CBDED376"
-					item: "minecraft:emerald"
+					id: "7B5EC5FF5ED86861"
+					item: "goety:cursed_infuser"
 					type: "item"
 				}
 			]
-			title: "真正的炼金术"
+			title: "凝聚灵魂"
 			x: 0.0d
 			y: -1.5d
 		}
@@ -478,23 +485,6 @@
 			title: "地底回音"
 			x: 1.5d
 			y: -1.5d
-		}
-		{
-			dependencies: ["7B4573440B7AD85C"]
-			description: [
-				"通过灵魂能量，你可以快速修复自己受到损伤的物品，在没有经验修补的时候，有个手动挡也说得过去。"
-				"唯一的例外大概是贪婪匕首——那是无法修复的。"
-			]
-			id: "6594C973C66811E2"
-			subtitle: "手动，但是无限耐久"
-			tasks: [{
-				id: "687EFC15A99B4E81"
-				item: "goety:soul_mender"
-				type: "item"
-			}]
-			title: "灵魂修补"
-			x: 0.0d
-			y: -3.0d
 		}
 	]
 	subtitle: ["Mana Within"]

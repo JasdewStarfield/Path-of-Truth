@@ -1701,7 +1701,7 @@
 			]
 			title: "制杖与贩剑"
 			x: 0.5d
-			y: 8.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
@@ -1995,7 +1995,7 @@
 			]
 			title: "我爱读书"
 			x: -0.5d
-			y: 9.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -2896,6 +2896,100 @@
 			title: "海王"
 			x: 0.0d
 			y: -0.5d
+		}
+		{
+			dependencies: ["374C430D0AD70D2E"]
+			description: ["卷轴易碎，知识永存。"]
+			id: "2CC30C12A97CA45F"
+			rewards: [{
+				id: "7EFCAF5712F89130"
+				item: {
+					Count: 1
+					id: "goety:death_scythe"
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:mending"
+								lvl: 1s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 2s
+							}
+							{
+								id: "minecraft:looting"
+								lvl: 3s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "获得所有的诡厄巫法知识卷轴！"
+			tasks: [
+				{
+					id: "0382F06D8C063787"
+					item: "goety:ravaging_scroll"
+					type: "item"
+				}
+				{
+					id: "51FFF2F2D087AFDA"
+					item: "goety:warred_scroll"
+					type: "item"
+				}
+				{
+					id: "68178CE7C75974E0"
+					item: "goety:buried_scroll"
+					type: "item"
+				}
+				{
+					id: "3A65304E68540332"
+					item: "goety:haunting_scroll"
+					type: "item"
+				}
+				{
+					id: "326ADD1A2FE15D97"
+					item: "goety:front_scroll"
+					type: "item"
+				}
+				{
+					id: "0AA8D286BED96B40"
+					item: "goety:mistral_scroll"
+					type: "item"
+				}
+				{
+					id: "4CD2BBEEA848F367"
+					item: "goety:floral_scroll"
+					type: "item"
+				}
+				{
+					id: "737C6EFE387AB2C8"
+					item: "goety:bygone_scroll"
+					type: "item"
+				}
+				{
+					id: "41A6556293B81D1E"
+					item: "goety:terminus_scroll"
+					type: "item"
+				}
+				{
+					id: "1710910615D9C2C7"
+					item: "goety:forbidden_scroll"
+					type: "item"
+				}
+			]
+			title: "知识不朽"
+			x: 0.0d
+			y: 9.0d
 		}
 	]
 	subtitle: ["The Way to Legend"]

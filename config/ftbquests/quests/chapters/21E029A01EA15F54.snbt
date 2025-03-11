@@ -150,11 +150,18 @@
 			]
 			icon: "goety:spent_totem"
 			id: "57B126A840CCD6E4"
-			rewards: [{
-				id: "341F670CA953D2F3"
-				item: "goety:treasure_pouch"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "341F670CA953D2F3"
+					item: "goety:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "788132A00F8E3A3C"
+					item: "biomeswevegone:green_enchanted_sapling"
+					type: "item"
+				}
+			]
 			subtitle: "画魂点睛"
 			tasks: [
 				{
@@ -231,11 +238,6 @@
 			]
 			icon: "alexsmobs:skreecher_soul"
 			id: "13313120B0D22371"
-			rewards: [{
-				id: "450B1C0336845554"
-				item: "goety:cursed_infuser"
-				type: "item"
-			}]
 			subtitle: "黑暗注入……"
 			tasks: [
 				{
@@ -498,13 +500,13 @@
 			id: "21667ABCD50F787E"
 			rewards: [
 				{
-					id: "2508A1E240481E25"
-					item: "biomeswevegone:blue_enchanted_sapling"
+					id: "4E60B711DFC315EA"
+					item: "minecraft:amethyst_cluster"
 					type: "item"
 				}
 				{
-					id: "43BAD28F07754EA9"
-					item: "biomeswevegone:green_enchanted_sapling"
+					id: "4CBC47D7849FE305"
+					item: "biomeswevegone:blue_enchanted_sapling"
 					type: "item"
 				}
 			]

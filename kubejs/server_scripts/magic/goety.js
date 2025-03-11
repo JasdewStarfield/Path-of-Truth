@@ -145,6 +145,23 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //诅咒注入器配方替换
+    event.replaceInput({mod:'goety',output:'goety:cursed_infuser'},
+        'minecraft:cauldron' , 'botania:terrasteel_ingot')
+    event.replaceInput({mod:'goety',output:'goety:cursed_infuser'},
+        'minecraft:lapis_lazuli' , 'goety:cursed_ingot')
+
+    //诅咒注入系列配方
+    //灵质转化
+    event.custom({
+        "type": "goety:cursed_infuser_recipes",
+        "ingredient": {
+            "item": 'botania:mana_powder'
+        },
+        "result": 'goety:ectoplasm',
+        "cookingTime": 40
+    })
+
 
     //魔力粉-奥术源质兑换
 })

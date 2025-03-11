@@ -25,42 +25,42 @@
 
 /*
 借用模板的合成
-event.custom({
-    "取决于其他mod的合成json"
-})
+    event.custom({
+        "取决于其他mod的合成json"
+    })
 */
 
 /*
 加入有序配方模板
-event.shaped(Item.of('名字',数量),
-    ['***',
-    '***',
-    '***'],
-    {
-        *:'',
-        *:'',
-        *:''
-    }
-)
+    event.shaped(Item.of('名字',数量),
+        ['***',
+        '***',
+        '***'],
+        {
+            *:'',
+            *:'',
+            *:''
+        }
+    )
 */
 /*
 加入无序配方模板
-event.shapeless(Item.of('名字',数量),
-    [
-        '材料1',
-        '材料2',
-        '材料3'
-    ]
-)
+    event.shapeless(Item.of('名字',数量),
+        [
+            '材料1',
+            '材料2',
+            '材料3'
+        ]
+    )
 */
 /*
 替换配方系列
-event.replaceInput({mod:'模组名',output:'输出产物'},
-    '要被替换的物品名' , '要替换成的物品名')
+    event.replaceInput({mod:'模组名',output:'输出产物'},
+        '要被替换的物品名' , '要替换成的物品名')
 */
 /*
 删除配方：
-event.remove({id:'名字'})
+    event.remove({id:'名字'})
 */
 
 /*
@@ -76,6 +76,20 @@ EntityJSEvents.attributes(event => {
         attribute.add("additional_attributes:spell_general", 2)
     })
 })
+*/
+
+/*
+goety系列配方记录
+时间单位：tick, 20tick=1s
+    //诅咒注入器
+    event.custom({
+        "type": "goety:cursed_infuser_recipes",
+        "ingredient": {
+            "item/tag": "材料"
+        },
+        "result": "产出",
+        "cookingTime": 处理时间
+    })
 */
 
 /*
