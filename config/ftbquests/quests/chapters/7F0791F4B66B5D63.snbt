@@ -53,8 +53,11 @@
 		{
 			dependencies: ["003B99516797BF14"]
 			description: [
-				"由于alex的生物存在，现在不同的下界群系中增加了额外的危险生物。"
-				"祝你下去的时候被绯红蚊子抱脸（确信"
+				"由于alex的生物存在，现在不同的下界群系中增加了&c额外的危险生物&r。"
+				"下界还会有一些&3神秘的结构&r，等待你的探索……"
+				"小心各类喷口，它们有一定的温度影响。"
+				""
+				"&o&d*祝你下去的时候被绯红蚊子抱脸（确信&r&r"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true

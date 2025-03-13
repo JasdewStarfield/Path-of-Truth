@@ -108,10 +108,10 @@ goety系列配方记录
         "duration": 30,//时长
         "ingredients": [
             {
-            "item": "1"
+                "item": "1"
             },
             {
-            "tag": "2"
+                "tag": "2"
             }
         ],
         "result": {
@@ -131,14 +131,30 @@ goety系列配方记录
         "duration": 10,
         "ingredients": [
             {
-            "item": "minecraft:wheat"
+                "item": "minecraft:wheat"
             },
             {
-            "tag": "forge:bones"
+                "tag": "forge:bones"
             }
         ],
         "result": {
             "item": "goety:jei_dummy/none"//空输出
+        }
+    })
+    //死灵火盆模板
+    event.custom({
+        "type": "goety:brazier",
+        "soulCost": 2000,
+        "ingredients": [
+            {
+                "item": "1"
+            },
+            {
+                "tag": "2"
+            }
+        ],
+        "result": {
+            "item": "3"
         }
     })
 */

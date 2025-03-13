@@ -20,6 +20,7 @@
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.1149863760217984d
 			x: 0.0d
@@ -31,7 +32,7 @@
 			rotation: 0.0d
 			width: 8.385245901639344d
 			x: 0.0d
-			y: -6.5d
+			y: -7.0d
 		}
 		{
 			height: 3.0d
@@ -40,6 +41,38 @@
 			width: 3.0d
 			x: 0.0d
 			y: 0.0d
+		}
+		{
+			height: 3.0d
+			image: "goety:item/focus/rotation_spell"
+			rotation: 0.0d
+			width: 3.0d
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			height: 3.0d
+			image: "nebs:item/spells_and_shields/mana_blade"
+			rotation: 0.0d
+			width: 3.0d
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			height: 2.4d
+			image: "irons_spellbooks:textures/gui/spell_icons/shield.png"
+			rotation: 0.0d
+			width: 2.4d
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			height: 2.6d
+			image: "botania:block/chiseled_dark_quartz_end"
+			rotation: 0.0d
+			width: 2.6d
+			x: 0.0d
+			y: 5.0d
 		}
 	]
 	order_index: 1
@@ -127,6 +160,7 @@
 				item: "goety:ectoplasm"
 				type: "item"
 			}]
+			shape: "diamond"
 			subtitle: "灵魂甩卖：一组一朵生命之火"
 			tasks: [
 				{
@@ -148,7 +182,7 @@
 			dependencies: ["0F9DF1C5137194E4"]
 			description: [
 				"在你找到的铁魔法的饰品中，往往&9有源源不断的魔力从金属中产出&r，并为饰品提供能量以实现长效加成。但现在，你需要这种金属本身……来完成一些更伟大的创造。"
-				"&c熔炼部分铁魔法饰品&r或&b通过特定方式采掘奥术残骸&r可以找到这种奇妙的金属。"
+				"通过在&b主世界地底采掘奥术残骸&r可以找到这种奇妙的金属。它可以&a通过魔力复制自身&r。"
 			]
 			id: "4A24B3DB9C49B7CB"
 			rewards: [{
@@ -178,6 +212,7 @@
 			]
 			icon: "botania:gaia_head"
 			id: "701A0263F6C6D275"
+			shape: "diamond"
 			subtitle: "你需要召唤并不仁慈的大地母亲……"
 			tasks: [
 				{
@@ -225,6 +260,7 @@
 				}
 				type: "item"
 			}]
+			shape: "diamond"
 			subtitle: "法术护体！"
 			tasks: [{
 				id: "6B6B4238F400C292"
@@ -495,6 +531,7 @@
 			description: [
 				"黑暗也是需要回火的，而且回火真的能&6产出火焰&r。"
 				"在二次注入后，金属原有的形态将消失不见，但&7灵魂诅咒产出的黑暗将被保留下来&r，然后凝结成实体。"
+				"这可以被用于凝结&9水元素&r与&6火元素&r的核心。"
 				"如果你有太多的灵魂能量，那么黑暗将会凝结成&c孤魂尸鬼&r，然后自己来找你……"
 				""
 				"&o&4*这股力量还可以帮助你找到黑暗的聚集地。小心墓穴中的亡灵……&r&r"
@@ -511,6 +548,7 @@
 				}
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "诅咒一切……"
 			tasks: [{
 				id: "594F86E8BD42BD63"
@@ -519,6 +557,42 @@
 			}]
 			title: "浓缩黑暗"
 			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0F48550D5C48437F"]
+			description: [
+				"呼唤熔岩的力量，以魔力水晶为引，异位面的金属为载体，你将聚合出这一珍贵的核心。"
+				"似乎有取之不尽的烈焰藏在内部……"
+			]
+			id: "55B96E1D3BF09085"
+			shape: "hexagon"
+			subtitle: "纯粹炽热"
+			tasks: [{
+				id: "22FC7EEEA41E7A43"
+				item: "kubejs:fire_elemental_core"
+				type: "item"
+			}]
+			title: "烈焰熔铸"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0F48550D5C48437F"]
+			description: [
+				"呼唤冰霜的力量，以魔力水晶为引，异位面的金属为载体，你将聚合出这一珍贵的核心。"
+				"似乎有用之不竭的水流藏在内部……"
+			]
+			id: "6E1C390C50FEA9E2"
+			shape: "hexagon"
+			subtitle: "魔力流淌"
+			tasks: [{
+				id: "4D56B7E22BACCF50"
+				item: "kubejs:water_elemental_core"
+				type: "item"
+			}]
+			title: "流水不腐"
+			x: -2.0d
 			y: -3.0d
 		}
 	]

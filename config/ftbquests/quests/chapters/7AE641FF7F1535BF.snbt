@@ -503,7 +503,9 @@
 		}
 		{
 			dependencies: ["146261DF72C96BF4"]
+			description: ["获得成品钢之前，显然你需要先从铁粉开始——方便融化，也方便调和。"]
 			id: "2EB6991862E12244"
+			subtitle: "准备炼钢"
 			tasks: [{
 				id: "7349570EE748E3CC"
 				item: "kubejs:iron_ingot_dust"
@@ -515,11 +517,13 @@
 		{
 			dependencies: ["2EB6991862E12244"]
 			id: "17263B7F0163FEA4"
+			subtitle: "另一种熔岩"
 			tasks: [{
 				id: "4AB5398A6D8A1634"
 				item: "kubejs:molten_iron_bucket"
 				type: "item"
 			}]
+			title: "打铁花"
 			x: 0.0d
 			y: -4.0d
 		}
@@ -551,6 +555,7 @@
 		{
 			dependencies: ["17263B7F0163FEA4"]
 			id: "5FBE0E83E329AC46"
+			subtitle: "是魔法，他们用了魔法"
 			tasks: [{
 				id: "47AC67C1B30BDF4B"
 				item: "kubejs:molten_slag_bucket"
@@ -627,8 +632,13 @@
 		}
 		{
 			dependencies: ["34F7983B4915B789"]
+			description: [
+				"工业化处理某些材料的时候，离心是一种相当有效的操作。"
+				"当然你也可以把这作为一种娱乐设施然后自己坐进去（"
+			]
 			icon: "vintageimprovements:centrifuge"
 			id: "14A2B5756D42DD23"
+			subtitle: "原始人的力大砖飞"
 			tasks: [
 				{
 					id: "2DED066F07B9F3DE"

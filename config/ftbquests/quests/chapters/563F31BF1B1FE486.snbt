@@ -125,8 +125,8 @@
 				}
 			]
 			title: "老三样"
-			x: -3.0d
-			y: -4.0d
+			x: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["59793C79A0C3B12B"]
@@ -138,21 +138,8 @@
 				type: "item"
 			}]
 			title: "开门法"
-			x: -1.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["59793C79A0C3B12B"]
-			id: "3E3808F2227BD332"
-			subtitle: "水里的炼金术"
-			tasks: [{
-				id: "1D1302B74496C3CB"
-				item: "irons_spellbooks:alchemist_cauldron"
-				type: "item"
-			}]
-			title: "冒泡泡"
-			x: 1.0d
-			y: -4.0d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["59793C79A0C3B12B"]
@@ -171,13 +158,12 @@
 				type: "item"
 			}]
 			title: "更强的赝品"
-			x: 3.0d
-			y: -4.0d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"3EF388DBCA593501"
-				"3E3808F2227BD332"
 				"0719D8D05F672C29"
 				"45311CA8EA1B26BA"
 			]
@@ -190,7 +176,7 @@
 			}]
 			title: "绿色的光"
 			x: 0.0d
-			y: -6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["56FEAEAF9D5FF405"]
@@ -207,7 +193,7 @@
 			}]
 			title: "魔能枪"
 			x: -2.0d
-			y: -7.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["56FEAEAF9D5FF405"]
@@ -220,7 +206,7 @@
 			}]
 			title: "奥术提纯"
 			x: 2.0d
-			y: -7.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -243,20 +229,37 @@
 			]
 			title: "仪式群"
 			x: 0.0d
-			y: -8.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["4D484051A8CF29F2"]
 			id: "5393EC343AD0EC83"
-			subtitle: "触碰血魔法的巅峰"
-			tasks: [{
-				id: "351B76FA191E3E06"
-				item: "bloodmagic:archmagebloodorb"
-				type: "item"
-			}]
-			title: "顶级祭坛"
+			subtitle: "这是基本元素，华生"
+			tasks: [
+				{
+					id: "4C2DBD4B7647DFE8"
+					item: "kubejs:earth_elemental_core"
+					type: "item"
+				}
+				{
+					id: "585C2F415B09A804"
+					item: "kubejs:water_elemental_core"
+					type: "item"
+				}
+				{
+					id: "74079C7FF6EB9E88"
+					item: "kubejs:fire_elemental_core"
+					type: "item"
+				}
+				{
+					id: "0C2791152088B270"
+					item: "kubejs:wind_elemental_core"
+					type: "item"
+				}
+			]
+			title: "元素之力"
 			x: -2.0d
-			y: -9.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["4D484051A8CF29F2"]
@@ -269,7 +272,7 @@
 			}]
 			title: "生命花开"
 			x: 2.0d
-			y: -9.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["71BF98560860C0AB"]
@@ -280,22 +283,22 @@
 				item: "botania:overgrowth_seed"
 				type: "item"
 			}]
-			title: "生命分解"
+			title: "生命集成"
 			x: -2.0d
-			y: -11.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["5393EC343AD0EC83"]
 			id: "0BE788F0317226D0"
-			subtitle: "溜门撬锁必备"
+			subtitle: "撼动规则"
 			tasks: [{
-				id: "51FDFFBEC4A66E6B"
-				item: "bloodmagic:activationcrystalcreative"
+				id: "728DB57B0C2E3580"
+				item: "goety:rupture_focus"
 				type: "item"
 			}]
-			title: "无门槛激活"
+			title: "破碎虚空"
 			x: 2.0d
-			y: -11.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -311,7 +314,7 @@
 			}]
 			title: "活化物品"
 			x: 0.0d
-			y: -12.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["56FEAEAF9D5FF405"]
@@ -324,7 +327,7 @@
 			}]
 			title: "风暴之力"
 			x: 0.0d
-			y: -7.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["79EE6BAFA5E153E5"]
@@ -338,7 +341,7 @@
 			}]
 			title: "更多的蛋"
 			x: 2.0d
-			y: -15.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["7B4BE516F4D4E494"]
@@ -350,7 +353,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -13.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["7A0D894A5227359D"]
@@ -362,7 +365,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -15.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["7B4BE516F4D4E494"]
@@ -382,7 +385,7 @@
 			}]
 			title: "无尽魔力"
 			x: 0.0d
-			y: -14.0d
+			y: -12.0d
 		}
 		{
 			dependencies: [
@@ -399,7 +402,7 @@
 			}]
 			title: "嗯，作者之一"
 			x: 0.0d
-			y: -16.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["697B1277B1C95490"]
@@ -413,7 +416,7 @@
 			}]
 			title: "异彩化合物"
 			x: 0.0d
-			y: -17.0d
+			y: -15.5d
 		}
 		{
 			dependencies: [
@@ -430,7 +433,7 @@
 			}]
 			title: "最魔法的"
 			x: 0.0d
-			y: -20.0d
+			y: -18.5d
 		}
 		{
 			dependencies: ["7B4BE516F4D4E494"]
@@ -442,19 +445,25 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -13.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["4D484051A8CF29F2"]
 			id: "747404689C3EB6D7"
-			subtitle: "实体化灵魂"
+			subtitle: "云端的城堡"
 			tasks: [{
-				id: "09F643905DB0DDCF"
-				item: "bloodmagic:demoncrystallizer"
+				id: "5B0C27847FAAF033"
+				item: {
+					Count: 1
+					id: "botania:flight_tiara"
+					tag: {
+						variant: 0
+					}
+				}
 				type: "item"
 			}]
 			x: 0.0d
-			y: -9.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["0254FBCBA50B97F1"]
@@ -467,7 +476,7 @@
 			}]
 			title: "辉光锭"
 			x: 2.0d
-			y: -19.0d
+			y: -17.5d
 		}
 		{
 			dependencies: ["0254FBCBA50B97F1"]
@@ -480,7 +489,7 @@
 			}]
 			title: "丝绸锭"
 			x: -2.0d
-			y: -19.0d
+			y: -17.5d
 		}
 		{
 			dependencies: ["547BE1E974BA2186"]
@@ -493,7 +502,7 @@
 			}]
 			title: "光辉石"
 			x: 0.0d
-			y: -18.0d
+			y: -16.5d
 		}
 	]
 	subtitle: ["Magic Progressions"]

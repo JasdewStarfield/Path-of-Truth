@@ -8,6 +8,7 @@ LootJS.modifiers((event) => {
     event.addLootTypeModifier(LootType.ENTITY).replaceLoot("iron_ingot", "raw_iron", true)
     event.addLootTableModifier(/.*/).removeLoot("netherite_ingot")
     event.addLootTableModifier(/.*/).removeLoot("goety:spent_totem")
+    event.addLootTableModifier(/.*/).removeLoot("botania:overgrowth_seed")
     event.addBlockLootModifier("#minecraft:replaceable_by_trees").removeLoot("minecraft:wheat_seeds")
     event.addBlockLootModifier("#minecraft:replaceable_by_trees").removeLoot("immersiveengineering:seed")
     event.addBlockLootModifier("#minecraft:snow").removeLoot("minecraft:wheat_seeds")

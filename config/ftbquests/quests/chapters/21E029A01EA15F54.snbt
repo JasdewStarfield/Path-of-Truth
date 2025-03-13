@@ -86,6 +86,7 @@
 				item: "irons_spellbooks:blood_vial"
 				type: "item"
 			}]
+			shape: "circle"
 			subtitle: "是雪啊（悲"
 			tasks: [{
 				id: "1A11EC0554E3322F"
@@ -105,9 +106,9 @@
 				"下一页会有详细的搭建说明。"
 				"{@pagebreak}"
 				"*搭建说明："
-				"门的整体结构是围绕3*3的竖正方形进行搭建的（框架是5*5），其中每一条边都需要两个活木和一个微光活木，底边的微光活木则由精灵门核心进行替代。"
+				"门的整体结构是围绕3*3的竖正方形进行搭建的（框架是5*5），其中三条边为&a活木-微光活木-活木&r结构，底边的微光活木则由精灵门核心进行替代。"
 				"搭建好门结构后，&a需要将两个精灵水晶放置在两个不同的魔力池上&r，然后用森林法杖右键精灵门核心开门。"
-				"外围框架5*5正方形的四个角可以填充任意方块也可以不填，&a两个精灵水晶-魔力池结构需要在半径11单位范围内，而且魔力池内都需要四分之一池以上的魔力。&r"
+				"外围框架5*5正方形的四个角可以填充任意方块也可以不填，&a两个精灵水晶-魔力池结构需要在核心半径11单位范围内，而且魔力池内都需要四分之一池以上的魔力。&r"
 			]
 			icon: "botania:light_relay"
 			id: "2EA11306B3076434"
@@ -116,6 +117,7 @@
 				item: "botania:elementium_ingot"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "你开了也过不去"
 			tasks: [
 				{
@@ -171,6 +173,7 @@
 					type: "item"
 				}
 			]
+			shape: "rsquare"
 			subtitle: "画魂点睛"
 			tasks: [
 				{
@@ -211,6 +214,7 @@
 				item: "botania:blacker_lotus"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "充能后变蓝"
 			tasks: [
 				{
@@ -247,6 +251,7 @@
 			]
 			icon: "alexsmobs:skreecher_soul"
 			id: "13313120B0D22371"
+			shape: "rsquare"
 			subtitle: "黑暗注入……"
 			tasks: [
 				{
@@ -277,6 +282,7 @@
 				"当然，它不止能被拿来制作法术聚晶。"
 			]
 			id: "60B15529BE147F62"
+			shape: "rsquare"
 			subtitle: "简易载体"
 			tasks: [{
 				id: "3722B3D1522B29BE"
@@ -462,7 +468,7 @@
 				item: "irons_spellbooks:epic_ink"
 				type: "item"
 			}]
-			shape: "hexagon"
+			shape: "circle"
 			size: 1.5d
 			subtitle: "杀猪爆装备，一刀999！"
 			tasks: [
@@ -558,6 +564,7 @@
 				item: "botania:black_lotus"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "很显然，炼金不科学"
 			tasks: [
 				{
@@ -610,6 +617,7 @@
 				item: "minecraft:soul_sand"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "魔力当然也可以拿来炼制药水。"
 			tasks: [
 				{
@@ -732,8 +740,14 @@
 		}
 		{
 			dependencies: ["2EA11306B3076434"]
-			description: ["但是它还是会吃你的魔力（虽然开门后就不吃了），所以你得找靠谱且稳定的魔力生产方式。"]
+			description: [
+				"但是它还是会吃你的魔力（虽然开门后就基本不吃了），所以你得找靠谱且稳定的魔力生产方式。"
+				"除了交换精灵特有的一些物资，你还可以让精灵帮你&3反转一些物品的能量&r，比如用诅咒金属锭交换魔力钢。虽然这种反转是单向的，但仍然足够实用。"
+				""
+				"&o&c*注意：不要一次投入能多次反应的材料，会导致世界崩溃，只能回档解决！&r&r"
+			]
 			id: "6FA24342A82507F6"
+			shape: "rsquare"
 			subtitle: "这个大门其实只是个交易入口）"
 			tasks: [
 				{
@@ -769,6 +783,7 @@
 				"火花的用量会很大，所以别随便就把烈焰人笼子挖掉了（"
 			]
 			id: "5F1578F61B3B2D32"
+			shape: "rsquare"
 			subtitle: "闪耀的魔法之光"
 			tasks: [{
 				id: "5A3CAB8C0D47DD50"

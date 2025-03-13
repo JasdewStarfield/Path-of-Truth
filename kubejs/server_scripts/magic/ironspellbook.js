@@ -138,6 +138,9 @@ ServerEvents.recipes(event => {
             E:'undergarden:cloggrum_block'
         }
     )
+    //充能核心配方替换
+    event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:energized_core'},
+        'minecraft:copper_block', 'immersiveengineering:storage_constantan' )
 
     //泰拉钢锭加入各系胸甲配方
     event.remove({id:'irons_spellbooks:cryomancer_chestplate'})

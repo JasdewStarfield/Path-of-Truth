@@ -81,4 +81,82 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //水元素核心合成
+    event.shaped(
+        Item.of('kubejs:water_elemental_core'),
+        [
+            ' A ',
+            'BCB',
+            ' D '
+        ],
+        {
+            C: 'goety:frost_breath_focus',
+            D: 'goety:shadow_essence',
+            A: 'blue_skies:falsite_block',
+            B: 'botania:mana_pylon'
+        }
+    )
+    //火元素核心合成
+    event.shaped(
+        Item.of('kubejs:fire_elemental_core'),
+        [
+            ' A ',
+            'BCB',
+            ' D '
+        ],
+        {
+            C: 'goety:fire_breath_focus',
+            D: 'goety:shadow_essence',
+            A: 'blue_skies:horizonite_block',
+            B: 'botania:mana_pylon'
+        }
+    )
+    //灰烬源质催化
+    event.shaped(
+        Item.of('irons_spellbooks:cinder_essence', 8),
+        [
+            'AAA',
+            'ABA',
+            'AAA'
+        ],
+        {
+            A: 'irons_spellbooks:magic_cloth',
+            B: 'kubejs:fire_elemental_core'
+        }
+    )
+    //风元素核心合成
+    event.custom({
+        "type": "goety:ritual",
+        "ritual_type": "goety:craft",//仪式主类型（制作）
+        "activation_item": {
+            "item": 'goety:lightning_focus'//中心物品
+        },
+        "craftType": "storm",//仪式副类型（风暴）
+        "soulCost": 50,//每秒消耗
+        "duration": 30,//时长
+        "ingredients": [
+            {
+                "item": 'goety:dark_ingot'
+            },
+            {
+                "item": 'kubejs:leyden_jar'
+            },
+            {
+                "item": 'aquamirae:ship_graveyard_echo'
+            },
+            {
+                "item": 'botania:rune_air'
+            },
+            {
+                "item": 'botania:ender_air_bottle'
+            },
+            {
+                "item": 'alexsmobs:lava_bottle'
+            }
+        ],
+        "result": {
+            "item": 'kubejs:wind_elemental_core'//实际产出
+        }
+    })
+
 })

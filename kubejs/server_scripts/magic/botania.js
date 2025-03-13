@@ -184,6 +184,8 @@ ServerEvents.recipes(event => {
     event.recipes.botania.mana_infusion('2x minecraft:heart_of_the_sea', 'minecraft:heart_of_the_sea', 50000,'botania:mana_bomb')
     //疣猪兽皮复制
     event.recipes.botania.mana_infusion('2x irons_spellbooks:hogskin', 'irons_spellbooks:hogskin', 1000,'botania:mana_bomb')
+    //奥术残骸碎片复制
+    event.recipes.botania.mana_infusion('2x irons_spellbooks:arcane_salvage', 'irons_spellbooks:arcane_salvage', 10000,'botania:conjuration_catalyst')
     //瞻远者蛋转化瞻远者之臂
     event.recipes.botania.mana_infusion('alexsmobs:farseer_arm', 'alexsmobs:spawn_egg_farseer', 50000,'botania:mana_bomb')
 
@@ -201,6 +203,23 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //天翼族之冠配方修改
+    event.remove({id:'botania:flighttiara_0'})
+    event.shaped(
+        Item.of('botania:flight_tiara'),
+        [
+            'ABA',
+            'CDC',
+            'AEA'
+        ],
+        {
+            B: 'botania:elementium_ingot',
+            A: 'botania:life_essence',
+            D: 'kubejs:wind_elemental_core',
+            E: 'botania:dandelifeon',
+            C: 'irons_spellbooks:cinder_essence'
+        }
+    )
 
     //末地空气转化扼塞锭和铁锭
     event.shapeless(Item.of('minecraft:iron_ingot',1),
@@ -268,6 +287,10 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'botania',output:'botania:alfheim_portal'},
     'botania:terrasteel_nugget', 'create:brass_nugget' )
 
+    //魔力水晶配方替换
+    event.replaceInput({mod:'botania',output:'botania:mana_pylon'},
+        'minecraft:gold_ingot', 'irons_spellbooks:arcane_ingot' )
+
     //魔力枪配方替换
     event.replaceInput({mod:'botania',output:'botania:mana_gun'},
     'minecraft:tnt', 'botania:terrasteel_ingot' )
@@ -310,7 +333,8 @@ ServerEvents.recipes(event => {
         }
     )
 
-    //精灵门交换奥术源质-魔力粉
+    //精灵门交换系列
+    //奥术源质-魔力粉
     event.recipes.botania.elven_trade(
         [
             'botania:mana_powder'
@@ -319,8 +343,43 @@ ServerEvents.recipes(event => {
             'irons_spellbooks:arcane_essence'
         ]
     )
-
-    //精灵门产出冰封骨头
+    //诅咒金属-魔力钢
+    event.recipes.botania.elven_trade(
+        [
+            'botania:manasteel_ingot'
+        ], 
+        [
+            'goety:cursed_ingot'
+        ]
+    )
+    //奥术锭-诅咒金属
+    event.recipes.botania.elven_trade(
+        [
+            'goety:cursed_ingot'
+        ], 
+        [
+            'irons_spellbooks:arcane_ingot'
+        ]
+    )
+    //阴影石头-活石
+    event.recipes.botania.elven_trade(
+        [
+            'botania:livingrock'
+        ], 
+        [
+            'goety:shade_stone'
+        ]
+    )
+    //缠魂木-活木
+    event.recipes.botania.elven_trade(
+        [
+            'botania:livingwood_log'
+        ], 
+        [
+            '#goety:haunted_logs'
+        ]
+    )
+    //骨头-冰封骨头
     event.recipes.botania.elven_trade(
         [
             'irons_spellbooks:frozen_bone'
@@ -368,7 +427,7 @@ ServerEvents.recipes(event => {
             'kubejs:electronic_engineering', 
             'botania:redstone_root',
             'immersiveengineering:generator',
-            'minecraft:bedrock'
+            'mechanicalbotania:mana_motor'
         ], 
         5000
     )
@@ -389,11 +448,12 @@ ServerEvents.recipes(event => {
     event.remove({output:'botania:terrasteel_ingot'})
     event.recipes.botania.terra_plate('botania:terrasteel_ingot', 
         [
-            'botania:manasteel_ingot', 
+            'botania:elementium_ingot', 
             'botania:mana_pearl',
             'botania:mana_diamond',
             '#forge:ingots/brass',
-            'irons_spellbooks:arcane_ingot'
+            'irons_spellbooks:arcane_ingot',
+            'goety:cursed_ingot'
         ], 
         50000
     )
@@ -750,7 +810,7 @@ ServerEvents.recipes(event => {
             'botania:corporea_spark',
             'irons_spellbooks:arcane_salvage',
             '#forge:ingots/aluminum',
-            'botania:terrasteel_ingot',
+            'goety:dark_ingot',
             'botania:rune_water',
             'botania:rune_fire',
             'botania:rune_air',

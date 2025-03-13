@@ -14,31 +14,57 @@
 			rotation: 0.0d
 			width: 1.3285714285714287d
 			x: 0.0d
-			y: 5.5d
+			y: 5.0d
 		}
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
+			order: 2
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 3.5d
-			y: 0.0d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
 			height: 2.0d
 			image: "kubejs:textures/quests/m4.png"
+			order: 2
 			rotation: 0.0d
 			width: 8.2834008097166d
 			x: 0.0d
 			y: -5.5d
 		}
 		{
-			height: 1.0d
+			height: 0.8d
 			image: "createnuclear:block/enriching/fire/fire_0"
 			rotation: 0.0d
-			width: 1.0d
+			width: 0.8d
 			x: 0.0d
 			y: 3.0d
+		}
+		{
+			height: 1.4d
+			image: "vct:block/eco_flowering_azalea_crafting_table_top"
+			rotation: 0.0d
+			width: 1.4d
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			height: 1.6d
+			image: "goety:textures/particle/wind_blast_9.png"
+			rotation: 0.0d
+			width: 1.6d
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			height: 3.0d
+			image: "aquamirae:textures/particle/shine_4.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: -3.5d
 		}
 	]
 	order_index: 1
@@ -50,17 +76,25 @@
 				"在一切开始之前，也许你已经发现了&6灵魂图腾的局限性&r，以及&b浪费了大量的灵魂能量&r。"
 				"探寻黑暗的解答后，你获得了一种将图腾转化为&d更加强大的灵魂核心&r的功能。"
 				"从此，你将不再需要将灵魂图腾放在诅咒之笼中进行供能，取而代之的是&9多个连接宝石&r——以及一个&5永远与你绑定的灵魂方舟&r作为灵魂的源头。"
+				"灵魂方舟&c不能直接放入图腾&r，但你可以将吸收器放在其上，然后将图腾放入吸收器进行注能。"
 				""
 				"&o&4*人只有一个灵魂，所以你只能绑定一个灵魂方舟。&r&r"
 			]
 			hide_until_deps_complete: true
-			icon: "aquamirae:ship_graveyard_echo"
+			icon: "alexsmobs:soul_heart"
 			id: "5A5B1D96C50D1EAE"
-			rewards: [{
-				id: "1899AFC6006C1725"
-				item: "netherexp:soul_skeleton_skull_candle"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1899AFC6006C1725"
+					item: "netherexp:soul_skeleton_skull_candle"
+					type: "item"
+				}
+				{
+					id: "2674128EA7F3F0FC"
+					item: "goety:soul_absorber"
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 1.5d
 			subtitle: "**方舟，启动！"
@@ -78,33 +112,15 @@
 			]
 			title: "【起点】灵魂方舟"
 			x: 0.0d
-			y: 4.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["4CD0C386D02D482E"]
 			description: [
-				"主媒体火花是所有多媒体网络的核心，你可以通过主媒体火花建立一个跨越距离（但不能跨越维度）的物品管理系统！"
-				"可以通过多媒体水晶来查询网络里有什么）"
-				"具体构建方式，请自己查看辞典）"
-			]
-			id: "3502E7A3A9BB5220"
-			subtitle: "魔力AE"
-			tasks: [{
-				icon: "botania:corporea_spark_master"
-				id: "577EA34F988FEF5C"
-				item: "botania:corporea_spark_master"
-				type: "item"
-			}]
-			title: "魔动工业基础"
-			x: 1.5d
-			y: 1.5d
-		}
-		{
-			description: [
 				"终于，你碰到了占地最大，功能最强的一种被动产能花。"
 				"&o&m&c虽然产魔速率甚至不如火红莲&r&r&r"
 				"现在的你才有能力去制造和使用它。"
-				"请善用这朵花……为你的魔法事业添砖加瓦。"
+				"为什么最极致的黑暗可以催生出最强的生命力，这仍是一个谜团。"
 				""
 				"&o&b这玩意本体产魔烂的要死，所以还是看看下一个任务吧&r&r"
 			]
@@ -115,23 +131,24 @@
 				item: "botania:cell_block"
 				type: "item"
 			}]
-			shape: "hexagon"
-			size: 1.2d
-			subtitle: "“这就是生活”"
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "生命集成"
 			tasks: [{
 				id: "6AE125F671370B8A"
 				item: "botania:dandelifeon"
 				type: "item"
 			}]
-			title: "最强被动产魔"
-			x: -5.3999999999999995d
-			y: 4.2d
+			title: "物极必反"
+			x: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["13FCEF26D0A44844"]
 			description: [
-				"虽然正常来说这一神秘的种子只能通过探索发现，但是启命英的生命能量能够超越这一规则限制。"
-				"通过&c“不太恰当的方式”&r粉碎启命英，你将获得&2植物的生长精粹&r……并翻倍你的产能花的工作效率）"
+				"虽然这一种子&c已经不再能被探索发现&r了，但是启命英的生命能量能够超越这一规则限制。"
+				"通过&c“不太恰当的方式”&r粉碎并浓缩启命英，你将获得&2植物的生长精粹&r……并翻倍你的产能花的工作效率）"
+				"然而，这样浓烈的生命精华应该拿来做比魔化草地更伟大的事。"
 				""
 				"&o&a所以为什么作者把这个动态结构画的这么丑呢（&r"
 			]
@@ -141,18 +158,22 @@
 				item: "minecraft:grass_block"
 				type: "item"
 			}]
-			subtitle: "效率++"
+			shape: "diamond"
+			subtitle: "生命精华"
 			tasks: [{
 				id: "2006B5FB0E525366"
 				item: "botania:overgrowth_seed"
 				type: "item"
 			}]
 			title: "狂野植物"
-			x: -5.5d
-			y: 2.5d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["13FCEF26D0A44844"]
+			dependencies: [
+				"13FCEF26D0A44844"
+				"6160C4A2B47CBBBC"
+			]
 			description: [
 				"通过这个小东西，你可以利用植物魔法的魔力飞行。然而相应的是，它有CD，并且会消耗不少的魔力。"
 				"建议合成手镜后再畅玩）"
@@ -171,28 +192,9 @@
 				}
 				type: "item"
 			}]
-			title: "天空之梦I"
-			x: -6.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["3502E7A3A9BB5220"]
-			description: [
-				"将主媒体火花放置在多媒体索引上，你就可以通过简单的命令全网调用你需要的物品）"
-				"这也是后续一些神秘合成的基础要素之一）"
-				"具体使用方法还是参见辞典和JEI）"
-				"&o&a不会读书你为什么要来玩MC（？&r&r"
-			]
-			id: "0B50AAAD0722641F"
-			subtitle: "CPU与指令调用"
-			tasks: [{
-				id: "3ECCEBA2C384D683"
-				item: "botania:corporea_index"
-				type: "item"
-			}]
-			title: "多媒体核心"
-			x: 3.0d
-			y: 3.5d
+			title: "天空之梦"
+			x: 0.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["566537583B144D15"]
@@ -210,8 +212,8 @@
 				type: "item"
 			}]
 			title: "空中游泳！"
-			x: -8.0d
-			y: 5.0d
+			x: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5A5B1D96C50D1EAE"]
@@ -220,6 +222,8 @@
 				"只有在&1深暗之域群系&r，这一火盆才能被点燃。它通过燃烧灵魂来汲取这个世界最黑暗的能量。"
 				"要使用它，你需要准备好&b足够多的灵魂&r，然后使用&9灵魂蜡烛&r引导&5诅咒之笼&r，将燃烧的灵魂注入火焰中。"
 				"如果你打断了反应过程，那么所有已经消耗的灵魂都将&a逸散于虚无&r中。"
+				""
+				"&o&d*为了掀掉怪物的脑壳，也许你需要植魔的少女心斧头……&r&r"
 			]
 			icon: "decorative_blocks:soul_brazier"
 			id: "4CD0C386D02D482E"
@@ -240,11 +244,14 @@
 			]
 			title: "燃烧灵魂"
 			x: 0.0d
-			y: 1.7999999999999998d
+			y: 1.9000000000000004d
 		}
 		{
 			dependencies: ["5A5B1D96C50D1EAE"]
-			description: ["至少这一次，你可以同时处理多个物品的注入和输出了——大概吧。"]
+			description: [
+				"至少这一次，你可以同时处理多个物品的注入和输出了——大概吧。"
+				"然而制作它需要更多的知识。也许应该去墓穴找找卷轴？"
+			]
 			id: "3E8F411D26582E85"
 			subtitle: "压缩注入"
 			tasks: [{
@@ -254,7 +261,7 @@
 			}]
 			title: "更黑，更快，更强"
 			x: -1.5d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["5A5B1D96C50D1EAE"]
@@ -263,6 +270,27 @@
 				"也许你需要一个聚晶袋来解决一下传送地点的问题……？"
 			]
 			id: "1A4E9D167F5F2535"
+			rewards: [{
+				id: "2AD815343B92B94B"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:recall"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
 			subtitle: "单人纯享版"
 			tasks: [{
 				id: "61C6E926973B05A2"
@@ -271,7 +299,106 @@
 			}]
 			title: "自由传送"
 			x: 1.5d
-			y: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4CD0C386D02D482E"]
+			description: [
+				"唯一需要仪式来凝聚的核心，借用风暴之力，结合要素将其固化。"
+				"为了&b寒风中的灵魂回响&r，也许你需要去&9冰冻深海&r……那里的危险生物会带有灵魂的执念。"
+				"至此，你集齐了&6地&r&b水&r&c火&r&a风&r四大基本元素的力量，并对&4生命&r和&0死亡&r有了深入的了解。"
+				"通往世界奥秘的大门正在为你敞开。"
+			]
+			id: "6160C4A2B47CBBBC"
+			shape: "diamond"
+			subtitle: "高天之上"
+			tasks: [{
+				id: "7C6DB903737B111A"
+				item: "kubejs:wind_elemental_core"
+				type: "item"
+			}]
+			title: "从地底到天空"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5A5B1D96C50D1EAE"]
+			description: [
+				"在拥有一个&5足够大的灵魂容器&r后，&a自动收集&r也应该提上日程了。"
+				"利用&9幽匿&r的特性，将发散逆转为回收，你就获得了可以&b在一定范围内收集亡者灵魂&r的单元。"
+				"至少这意味着你不用总是出门亲自猎杀了……"
+			]
+			id: "728982443FC5DBE8"
+			subtitle: "无尽的贪婪"
+			tasks: [{
+				id: "3CA0B6F540F82AB5"
+				item: "goety:sculk_devourer"
+				type: "item"
+			}]
+			title: "自动收割"
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5A5B1D96C50D1EAE"]
+			description: [
+				"厌倦了每次在方尖碑复活的过程？不想成为人类了？那么现在机会摆在你的面前！"
+				"用&5禁书&r学会仪式，在&5合适的时机&r喝下这瓶药，你将成为一个&b与你的灵魂方舟绑定的巫妖&r——法术方面更加强大，但是肉体更加脆弱，而且——是亡灵生物（会被阳光点燃）。"
+				"好处是你&c不会饿，也不会死亡&r了——毕竟你已经死了。只要灵魂方舟还在，你就可以&l&d无限复活&r&r——但是如果灵魂不足以进行奥术复活（即10000点），那你将要承受一段时间的诅咒……"
+				"巫妖还&5拥有一些独特的能力&r，比如永久夜视，不过这就需要你自行探索了。"
+			]
+			id: "0E6FB072C7B55324"
+			subtitle: "亡灵王者"
+			tasks: [{
+				id: "000995B0BD032EC9"
+				item: "goety:undeath_potion"
+				type: "item"
+			}]
+			title: "不死巫妖"
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6160C4A2B47CBBBC"]
+			description: [
+				"你就能够获得一枚&d部分超越世界规则&r的聚晶。"
+				"它会让你的注视的能短暂撕裂这个世界……"
+				"从实际伤害来讲确实有限，它并没有像铁魔法的黑洞一样强化末影的侵蚀，然而它代表的是&5对世界规则的暂时破坏&r。"
+				"也许你可以从其中&b知晓更多&r……"
+			]
+			id: "5B719CC45C168F8C"
+			shape: "diamond"
+			subtitle: "当基本元素和空间力量组合……"
+			tasks: [{
+				id: "4DDBF988DEA31F9C"
+				item: "goety:rupture_focus"
+				type: "item"
+			}]
+			title: "破碎虚空"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"63F56C428E164122"
+				"5B719CC45C168F8C"
+			]
+			description: [
+				"当你强行撕裂并掌握了生命的规则，你就获得了一部分造物主的能力，比如……真正意义上的&c活化可掌控的生命&r。"
+				"虽然只是活化刷怪笼，但这证明你开始拥有了造物对应的权柄，不再是&7曾经需要窃夺笼中生命火焰&r的普通人。"
+			]
+			id: "301A6952E3B16C88"
+			shape: "octagon"
+			size: 1.2d
+			subtitle: "创世先创生"
+			tasks: [{
+				id: "08A795D4148AB53B"
+				item: "minecraft:spawner"
+				type: "item"
+			}]
+			title: "点燃生命之火"
+			x: 0.0d
+			y: -3.5d
 		}
 	]
 	subtitle: ["Eerie Ritual"]
