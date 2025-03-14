@@ -96,6 +96,31 @@ ServerEvents.recipes(event => {
             B: 'botania:mana_pylon'
         }
     )
+    //缪铁催化
+    event.shaped(
+        Item.of('blue_skies:falsite_block', 8),
+        [
+            'AAA',
+            'ABA',
+            'AAA'
+        ],
+        {
+            A: 'minecraft:iron_block',
+            B: 'kubejs:water_elemental_core'
+        }
+    )
+    event.shaped(
+        Item.of('blue_skies:raw_falsite_block', 8),
+        [
+            'AAA',
+            'ABA',
+            'AAA'
+        ],
+        {
+            B: 'kubejs:water_elemental_core',
+            A: 'minecraft:raw_iron_block'
+        }
+    )
     //火元素核心合成
     event.shaped(
         Item.of('kubejs:fire_elemental_core'),
@@ -109,6 +134,31 @@ ServerEvents.recipes(event => {
             D: 'goety:shadow_essence',
             A: 'blue_skies:horizonite_block',
             B: 'botania:mana_pylon'
+        }
+    )
+    //炙铁催化
+    event.shaped(
+        Item.of('blue_skies:horizonite_block', 8),
+        [
+            'AAA',
+            'ABA',
+            'AAA'
+        ],
+        {
+            A: 'minecraft:iron_block',
+            B: 'kubejs:fire_elemental_core'
+        }
+    )
+    event.shaped(
+        Item.of('blue_skies:raw_horizonite_block', 8),
+        [
+            'AAA',
+            'ABA',
+            'AAA'
+        ],
+        {
+            B: 'kubejs:fire_elemental_core',
+            A: 'minecraft:raw_iron_block'
         }
     )
     //灰烬源质催化

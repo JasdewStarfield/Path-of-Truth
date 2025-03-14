@@ -257,6 +257,14 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'botania',output:'botania:spark'},
     'minecraft:gold_nugget', 'botania:elementium_nugget' )
 
+    //污血吊坠配方替换
+    event.replaceInput({mod:'botania',output:'botania:blood_pendant'},
+    'minecraft:prismarine_crystals', 'goety:cursed_ingot' )
+
+    //炼金催化器配方修改
+    event.replaceInput({mod:'botania',output:'botania:alchemy_catalyst'},
+    'minecraft:gold_ingot', 'create:brass_ingot' )
+
     //手镜配方替换
     event.replaceInput({mod:'botania',output:'botania:mana_mirror'},
     'botania:livingrock', 'irons_spellbooks:arcane_anvil' )
