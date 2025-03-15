@@ -20,7 +20,7 @@ ItemEvents.tooltip(e => {
         e.add([id], [Text.red({translate:'item.kubejs.diamond_gears.desc'})])
     )
 
-    e.add(["scguns:gun_bench"], [Text.yellow({translate:'item.scguns.gun_bench.desc'})])
+    // e.add(["scguns:gun_bench"], [Text.yellow({translate:'item.scguns.gun_bench.desc'})])
 
     e.add(["kubejs:broken_snowcap_oven"], [Text.yellow({translate:'item.kubejs.broken_snowcap_oven.desc'})])
 

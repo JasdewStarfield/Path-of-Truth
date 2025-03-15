@@ -784,26 +784,22 @@
 		}
 		{
 			dependencies: ["143039C6AC2D8186"]
-			description: ["看看你冲（指冲压机）出来的棒子）"]
+			description: [
+				"看看你冲（指冲压机）出来的棒子）"
+				"钢过于坚固以至于通常的轧机无法处理……还是交给电动的冲压机吧"
+			]
 			icon: "immersiveengineering:mold_rod"
 			id: "22631A52B9D81A49"
 			subtitle: "嗯……"
 			tasks: [
 				{
-					id: "0609FD0C01142C51"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:rods/all_metal"
-						}
-					}
-					title: "Any #forge:rods/all_metal"
+					id: "165229DECB174540"
+					item: "immersiveengineering:mold_rod"
 					type: "item"
 				}
 				{
-					id: "165229DECB174540"
-					item: "immersiveengineering:mold_rod"
+					id: "0F9700EC9732EFAB"
+					item: "immersiveengineering:stick_steel"
 					type: "item"
 				}
 			]

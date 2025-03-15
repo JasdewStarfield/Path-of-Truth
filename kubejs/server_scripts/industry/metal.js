@@ -193,10 +193,10 @@ ServerEvents.recipes(event => {
     '#forge:plates/iron', '#forge:plates/andesite' )
 
     //石磨粉碎铜锭锡锭镍锭锌锭
-    event.recipes.create.milling(Item.of('kubejs:tin_dust').withChance(0.5), '#forge:ingots/tin').id('tin_dust_manual_only')
-    event.recipes.create.milling(Item.of('immersiveengineering:dust_copper').withChance(0.5), '#forge:ingots/copper').id('copper_dust_manual_only')
-    event.recipes.create.milling(Item.of('immersiveengineering:dust_nickel').withChance(0.5), '#forge:ingots/nickel').id('nickel_dust_manual_only')
-    event.recipes.create.milling(Item.of('kubejs:zinc_dust').withChance(0.5), '#forge:ingots/zinc').id('zinc_dust_manual_only')
+    event.recipes.create.milling(Item.of('kubejs:tin_dust').withChance(0.75), '#forge:ingots/tin').id('tin_dust_manual_only')
+    event.recipes.create.milling(Item.of('immersiveengineering:dust_copper').withChance(0.75), '#forge:ingots/copper').id('copper_dust_manual_only')
+    event.recipes.create.milling(Item.of('immersiveengineering:dust_nickel').withChance(0.75), '#forge:ingots/nickel').id('nickel_dust_manual_only')
+    event.recipes.create.milling(Item.of('kubejs:zinc_dust').withChance(0.75), '#forge:ingots/zinc').id('zinc_dust_manual_only')
 
     event.recipes.create.crushing(Item.of('kubejs:tin_dust'), '#forge:ingots/tin')
     event.recipes.create.crushing(Item.of('immersiveengineering:dust_copper'), '#forge:ingots/copper')
@@ -224,11 +224,6 @@ ServerEvents.recipes(event => {
     //补充辊压配方
     event.recipes.create.pressing('#forge:plates/constantan', '#forge:ingots/constantan')
     //康铜代替铜
-    event.replaceInput(
-        { input:"#forge:ingots/copper",mod:"immersiveengineering",not:{output:"#forge:nuggets/copper"} },
-        '#forge:ingots/copper',
-        '#forge:ingots/constantan'
-    )
     event.replaceInput(
         { output:"create:fluid_pipe" },
         '#forge:ingots/copper',

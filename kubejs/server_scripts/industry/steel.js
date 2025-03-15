@@ -1,6 +1,27 @@
 ServerEvents.recipes(event => {
 
   event.remove({output:/createaddition\:crafting\/wire_\.*/})
+  event.remove({id:"createaddition:compacting/seed_oil"})
+  event.remove({id:"createaddition:mixing/bioethanol"})
+
+  const CreateAdditionDupeItems = [
+    'createaddition:creative_generator',
+    'createaddition:connector',
+    'createaddition:small_light_connector',
+    'createaddition:large_connector',
+    'createaddition:redstone_relay',
+    'createaddition:spool',
+    'createaddition:copper_spool',
+    'createaddition:gold_spool',
+    'createaddition:electrum_spool',
+    'createaddition:festive_spool',
+    'createaddition:seed_oil_bucket',
+    'createaddition:bioethanol_bucket',
+    'createaddition:capacitor'
+  ]
+
+  CreateAdditionDupeItems.forEach(id => {event.remove({output:id})})
+
   /*
   event.recipes.create.mechanical_crafting('tfmg:casting_spout', [
     ' DDD ',
@@ -154,18 +175,66 @@ ServerEvents.recipes(event => {
     E: 'create:shaft'
   })
   event.recipes.vintageimprovementsHammering(Item.of('#forge:plates/steel'), '#forge:ingots/steel').hammerBlows(3)
+  //泰拉钢？！
+  event.recipes.vintageimprovementsHammering(Item.of('#forge:plates/terrasteel'), '#forge:ingots/terrasteel').hammerBlows(3)
 
   //莱顿瓶
   event.recipes.create.mechanical_crafting('kubejs:leyden_jar', [
-    ' D ',
-    ' B ',
-    'CAC',
-    ' B '
+    'D',
+    'B',
+    'A',
+    'B'
   ], {
-    A: 'glass_bottle',
+    A: 'irons_spellbooks:lightning_bottle',
     B: '#forge:plates/steel',
-    C: 'goety:ectoplasm',
     D: '#forge:wires/constantan'
+  })
+
+  //电容器
+  event.recipes.create.deploying('createaddition:capacitor', ['#forge:plates/terrasteel', '#forge:plates/constantan'])
+  event.recipes.create.deploying('createaddition:capacitor', ['#forge:plates/constantan', '#forge:plates/terrasteel'])
+
+  //闪电瓶充电
+  event.custom({
+    "type":"createaddition:charging",
+    "input": {
+          "item": "minecraft:glass_bottle",
+      "count": 1
+    },
+    "result": {
+      "item": "irons_spellbooks:lightning_bottle",
+      "count": 1
+    },
+    "energy": 16000,
+    "maxChargeRate": 200
+  })
+
+  //电动机、发电机
+  event.remove({ id: 'createaddition:mechanical_crafting/alternator'})
+  event.remove({ id: 'createaddition:mechanical_crafting/electric_motor'})
+  event.recipes.create.mechanical_crafting('createaddition:alternator', [
+    '  E  ',
+    ' ACA ',
+    'ACDCA',
+    ' ABA '
+  ], {
+    A: '#forge:plates/steel',
+    B: 'createaddition:capacitor',
+    C: 'immersiveengineering:coil_lv',
+    D: 'immersiveengineering:light_engineering',
+    E: 'create:shaft'
+  })
+  event.recipes.create.mechanical_crafting('createaddition:electric_motor', [
+    '  E  ',
+    ' ACA ',
+    'ACDCA',
+    ' ABA '
+  ], {
+    A: '#forge:plates/brass',
+    B: 'createaddition:capacitor',
+    C: 'immersiveengineering:coil_lv',
+    D: 'immersiveengineering:light_engineering',
+    E: 'create:shaft'
   })
 
   //末影碎片

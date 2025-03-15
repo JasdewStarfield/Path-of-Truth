@@ -184,10 +184,7 @@
 		}
 		{
 			dependencies: ["5700B2AFCCAEE31A"]
-			description: [
-				"通过切割磁感线可以产生电流，这也是把create的应力转化为电力的唯一方式——至少目前这是唯一方式。"
-				"磁铁需要你自己去地下挖——以及自己升级你的磁铁来获得更高的发电功率，磁感应强度和发电量成正比）"
-			]
+			description: [""]
 			hide_until_deps_complete: true
 			id: "4B2D7C8A59593200"
 			subtitle: "初中物理知识"
@@ -432,13 +429,13 @@
 			]
 			hide_until_deps_complete: true
 			id: "41831F6B01965541"
-			subtitle: "虚空共振"
+			subtitle: "你为什么要召唤我——"
 			tasks: [{
 				id: "7635EDACF57EC534"
 				item: "createutilities:void_steel_ingot"
 				type: "item"
 			}]
-			title: "虚空钢锭"
+			title: "虚空共振"
 			x: 4.0d
 			y: 2.0d
 		}
@@ -504,7 +501,10 @@
 		}
 		{
 			dependencies: ["146261DF72C96BF4"]
-			description: ["获得成品钢之前，显然你需要先从铁粉开始——方便融化，也方便调和。"]
+			description: [
+				"获得成品钢之前，显然你需要先从铁粉开始——方便融化，也方便调和。"
+				"铁的硬度高很多，不会轻易被石磨粉碎，所以这也是需要粉碎轮的缘故了。"
+			]
 			id: "2EB6991862E12244"
 			subtitle: "准备炼钢"
 			tasks: [{
@@ -555,7 +555,7 @@
 				item: "kubejs:unformed_steel_ingot"
 				type: "item"
 			}]
-			title: "钢坯"
+			title: "分岔路口"
 			x: 4.0d
 			y: 0.0d
 		}
@@ -617,13 +617,22 @@
 		}
 		{
 			dependencies: ["429B458F0AADA253"]
+			icon: "scguns:treated_iron_ingot"
 			id: "68A34C290A68575C"
-			subtitle: "枪炮轰鸣！"
-			tasks: [{
-				id: "593479E4DED6B396"
-				item: "scguns:treated_iron_ingot"
-				type: "item"
-			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "2AD49C432D3D2431"
+					item: "scguns:treated_iron_blend"
+					type: "item"
+				}
+				{
+					id: "7FBFAD0AE23897C4"
+					item: "scguns:treated_iron_ingot"
+					type: "item"
+				}
+			]
+			title: "我勒个硝钢"
 			x: 4.0d
 			y: -2.0d
 		}
@@ -664,6 +673,113 @@
 			]
 			x: -1.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["77918DE5A223B3CD"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						Insulation: [ ]
+					}
+				}
+				id: "immersiveengineering:armor_steel_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3C1BDE999ED57ABD"
+			shape: "diamond"
+			tasks: [
+				{
+					id: "12EF2686682DE8FA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "immersiveengineering:armor_steel_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7AA83934E84229EF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "immersiveengineering:armor_steel_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4FB40CB24F3D973D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "immersiveengineering:armor_steel_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E70D716C2D440E4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "immersiveengineering:armor_steel_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7B9831B93C41139A"
+					item: {
+						Count: 1
+						id: "immersiveengineering:sword_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7D2512415EA1BCAB"
+					item: {
+						Count: 1
+						id: "immersiveengineering:pickaxe_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 1.0d
 		}
 	]
 	subtitle: ["Hearts of Steel"]

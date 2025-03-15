@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
 
     //轻型工程块
     const lightEngineering = [
-      //['create_new_age:energiser_t1', "minecraft:lightning_rod"]
+      ['createaddition:tesla_coil', "immersiveengineering:coil_mv"]
     ]
     lightEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "immersiveengineering:light_engineering", material)

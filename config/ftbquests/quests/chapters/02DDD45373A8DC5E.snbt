@@ -844,6 +844,28 @@
 			x: -3.0d
 			y: 10.0d
 		}
+		{
+			dependencies: ["46156FBBDCAB4B1D"]
+			description: ["&a【完成后解锁附加章节：军械师生涯】&r"]
+			icon: {
+				Count: 1
+				id: "scguns:flintlock_pistol"
+				tag: {
+					AmmoCount: 1
+					Damage: 0
+				}
+			}
+			id: "4BED26108E90A0CC"
+			shape: "diamond"
+			tasks: [{
+				id: "373CA25FF3071BD5"
+				item: "scguns:gun_bench"
+				type: "item"
+			}]
+			title: "时代变了！"
+			x: 1.5d
+			y: -2.5d
+		}
 	]
 	subtitle: ["Age of Bronze"]
 	title: "1I 青铜时代"

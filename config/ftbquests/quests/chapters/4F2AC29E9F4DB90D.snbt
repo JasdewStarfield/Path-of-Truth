@@ -569,10 +569,12 @@
 		{
 			dependencies: ["11EC3A84F0C84E65"]
 			description: [
+				"&a【完成后解锁附加章节：标准化生产】&r"
 				"获得铁之后，四种常用（以及接下来会变得常用）的金属——铜、锌、锡、镍——就可以实现量产了！"
 				"虽然搭建产线的过程可能比较累，但是全自动还是值得的！你可以先从这四种开始，继续研究如何量产后续的材料。为此我们也提供了指南："
 				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1A4352FB579FF77E\" } }"
 			]
+			icon: "farmersdelight:rice"
 			id: "40840BF9F23BC8A1"
 			rewards: [{
 				id: "1BD1CF2FAF04A5CA"

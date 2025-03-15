@@ -48,15 +48,7 @@ const BasicFish = [
     "collectorsreap:urchin"
 ]
 
-const CreateAdditionRemoval = [
-    'createaddition:creative_generator',
-    'createaddition:connector',
-    'createaddition:small_light_connector',
-    'createaddition:large_connector',
-    'createaddition:redstone_relay',
-]
-
-const Unobtainable = [
+const UnobtainableItems = [
     'netherdepthsupgrade:lava_fishing_rod',
     /sophisticatedbackpacks:stack_upgrade.*/,
     /structure_gel:.*/,
@@ -71,7 +63,24 @@ const Unobtainable = [
     "scguns:macerator",
     "scguns:powered_macerator",
     "scguns:mechanical_press",
-    "scguns:powered_mechanical_press"
+    "scguns:powered_mechanical_press",
+    'createaddition:creative_generator',
+    'createaddition:connector',
+    'createaddition:small_light_connector',
+    'createaddition:large_connector',
+    'createaddition:redstone_relay',
+    'createaddition:spool',
+    'createaddition:copper_spool',
+    'createaddition:gold_spool',
+    'createaddition:electrum_spool',
+    'createaddition:festive_spool',
+    'createaddition:seed_oil_bucket',
+    'createaddition:bioethanol_bucket'
+]
+
+const UnobtainableFluids = [
+    'createaddition:seed_oil',
+    'createaddition:bioethanol'
 ]
 
 ServerEvents.tags("item", (event) => {
@@ -124,6 +133,8 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:dusts","kubejs:gold_silver_mix")
     event.add("forge:flour","tmted:wheat_flour")
     event.add("forge:rope","beautify:rope")
+    event.add("forge:dusts/saltpeter","scguns:niter_dust")
+    event.add("forge:dusts","scguns:niter_dust")
     event.add("forge:plates/netherite","createdeco:netherite_sheet")
     event.add("forge:plates/zinc","createdeco:zinc_sheet")
     event.add("forge:plates/andesite","createdeco:andesite_sheet")
@@ -191,6 +202,8 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:ingots","kubejs:plastic_chunk")
     event.add("forge:ingots/andesite","create:andesite_alloy")
     event.add("forge:plates","kubejs:frostfire_double_plate")
+    event.add("forge:plates","kubejs:terrasteel_sheet")
+    event.add("forge:plates/terrasteel","kubejs:terrasteel_sheet")
     event.add("minecraft:tools","kubejs:sword_o_justice")
     event.add("minecraft:swords","kubejs:sword_o_justice")
     event.add("forge:tools/swords","kubejs:sword_o_justice")
@@ -208,7 +221,7 @@ ServerEvents.tags("item", (event) => {
     BasicFish.forEach((id) => event.add("kubejs:basic_fish", id))
 
     //无法获取的物品
-    Unobtainable.forEach((id) => event.add("kubejs:unobtainable", id))
+    UnobtainableItems.forEach((id) => event.add("kubejs:unobtainable", id))
 })
 
 ServerEvents.tags("block", (event) => {
@@ -241,6 +254,9 @@ ServerEvents.tags("fluid", (event) => {
     event.add("forge:lubricant","kubejs:lubricant")
     event.add("forge:heavy_oil","kubejs:heavy_oil")
     event.add("forge:liquid_plastic","kubejs:liquid_plastic")
+
+    //无法获取的流体
+    UnobtainableFluids.forEach((id) => event.add("kubejs:unobtainable", id))
 })
 
 ServerEvents.tags("block", (event) => {

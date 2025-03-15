@@ -6,7 +6,6 @@ ServerEvents.recipes(event => {
     event.remove({type:"scguns:powered_macerating"})
     event.remove({type:"scguns:mechanical_pressing"})
     event.remove({type:"scguns:powered_mechanical_pressing"})
-    event.remove({type:"scguns:gun_bench"})
     let SCGunsRemoved = [
         "cryoniter",
         "thermolith",
@@ -21,4 +20,69 @@ ServerEvents.recipes(event => {
     SCGunsRemoved.forEach((item) =>
         event.remove({output:"scguns:"+item})
     )
+    event.remove({id:"immersiveengineering:crafting/gunpowder_from_dusts"})
+    event.remove({id:"salt:gunpowder"})
+
+    //各级蓝图
+    event.shaped(Item.of('scguns:copper_blueprint'), [ 
+        'DAD',
+        'ABA',
+        'DAD'
+    ], {
+        A: 'paper',
+        B: '#forge:storage_blocks/copper',
+        D: '#forge:ingots/copper'
+    })
+    event.shaped(Item.of('scguns:iron_blueprint'), [ 
+        'DAD',
+        'ABA',
+        'DAD'
+    ], {
+        A: 'paper',
+        B: '#forge:storage_blocks/iron',
+        D: 'scguns:copper_blueprint'
+    })
+    event.shaped(Item.of('scguns:treated_brass_blueprint'), [ 
+        'DAD',
+        'ABA',
+        'DAD'
+    ], {
+        A: 'paper',
+        B: 'scguns:treated_brass_block',
+        D: 'scguns:iron_blueprint'
+    })
+    event.shaped(Item.of('scguns:diamond_steel_blueprint'), [ 
+        'DAD',
+        'ABA',
+        'DAD'
+    ], {
+        A: 'paper',
+        B: 'scguns:diamond_steel_block',
+        D: 'scguns:treated_brass_blueprint'
+    })
+
+    //枪械台
+    event.remove({id:"scguns:gun_bench"})
+    event.shaped(Item.of('scguns:gun_bench'), [ 
+        'DD',
+        'AA' 
+    ], {
+        A: '#minecraft:planks',
+        D: 'flint'
+    })
+
+    //握把
+    event.remove({id:"scguns:gun_grip"})
+    event.shaped(Item.of('scguns:gun_grip'), [ 
+        'AA',
+        'A ' 
+    ], {
+        A: '#minecraft:planks'
+    })
+
+    //黄铜合金
+
+    //硝钢
+    event.remove({id:"scguns:create/treated_iron_blend_from_mixing"})
+    event.recipes.create.mixing(Item.of('scguns:treated_iron_blend'), ['kubejs:unformed_steel_ingot','charcoal','flint','scguns:niter_dust']).heated()
 })
