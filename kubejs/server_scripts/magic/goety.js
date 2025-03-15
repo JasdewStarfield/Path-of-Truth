@@ -161,6 +161,17 @@ ServerEvents.recipes(event => {
             C: 'goety:philosophers_stone'
         }
     )
+    event.shapeless(Item.of('alexsmobs:mimicream', 16),
+        [
+            'minecraft:spawner',
+            'botania:corporea_spark',
+            'alexsmobs:mimicream',
+            'alexsmobs:mimicream',
+            'alexsmobs:mimicream',
+            'alexsmobs:mimicream',
+            'goety:philosophers_stone'
+        ]
+    )
     //不洁之血复制
     event.shaped(
         Item.of('goety:unholy_blood', 4),

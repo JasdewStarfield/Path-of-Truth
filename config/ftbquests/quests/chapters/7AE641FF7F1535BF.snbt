@@ -638,9 +638,9 @@
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
-			description: ["通过简易的灵质填充，你用魔法获得了一点点操纵电的力量……"]
+			description: ["通过简易的雷电填充，你用魔法获得了一点点操纵电的力量……"]
 			id: "786828EE220E93A3"
-			subtitle: "科学使用灵魂"
+			subtitle: "科学使用魔法"
 			tasks: [{
 				id: "4F7AB4E750229D70"
 				item: "kubejs:leyden_jar"

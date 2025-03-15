@@ -403,7 +403,7 @@ ServerEvents.recipes(event => {
             '#forge:eggs',
             'alexsmobs:farseer_arm',
             'botania:corporea_spark',
-            'minecraft:bedrock'
+            'goety:philosophers_stone'
         ]
     )
 
@@ -596,7 +596,7 @@ ServerEvents.recipes(event => {
         [
             'goety:philosophers_stone',
             'botania:gaia_ingot',
-            'kubejs:frostfire_double_plate',
+            'goety:soul_emerald',
             'minecraft:conduit',
             'botania:dragonstone_block',
             'botania:corporea_spark'
