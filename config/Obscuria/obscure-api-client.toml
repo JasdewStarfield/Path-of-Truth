@@ -11,5 +11,5 @@
 	#Display food properties in tooltips
 	"Food Icons" = false
 	#Display equipment attributes in tooltips
-	"Equipment Icons" = true
+	"Equipment Icons" = false
 
