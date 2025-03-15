@@ -8,6 +8,7 @@ function getCachedSeed() {
 getCachedSeed.cached_path = 'kubejs/data/cached_seed.json'
 
 ServerEvents.loaded(e => {
+    Utils.server.runCommandSilent('reload')
     let oldSeed = getCachedSeed()
     let newSeed = Utils.server.getLevel('minecraft:overworld').seed
     if (oldSeed != newSeed) {
