@@ -67,10 +67,6 @@
     "modId": "artifacts",
     "version": "9.5.13"
   },
-  "AsyncParticles-1.8.0+1.20.1-beta.6.jar": {
-    "modId": "asyncparticles",
-    "version": "1.8.0+1.20.1-beta.6"
-  },
   "AttributeFix-Forge-1.20.1-21.0.4.jar": {
     "modId": "attributefix",
     "version": "21.0.4"

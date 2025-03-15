@@ -1,7 +1,7 @@
 ServerEvents.recipes(event => {
     //电子管
     event.remove({id:"create:crafting/materials/electron_tube"})
-    event.recipes.create.deploying('create:electron_tube', ['#forge:plates/silver', 'create:polished_rose_quartz'])
+    event.recipes.create.deploying('create:electron_tube', ['#forge:plates/iron', 'create:polished_rose_quartz'])
 
     //引力子管
     event.remove({id:"createutilities:shaped/graviton_tube"})

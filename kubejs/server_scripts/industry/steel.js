@@ -237,6 +237,20 @@ ServerEvents.recipes(event => {
     E: 'create:shaft'
   })
 
+  //车床
+  event.remove({ id: 'vintageimprovements:mechanical_crafting/lathe'})
+  event.recipes.create.mechanical_crafting('vintageimprovements:lathe', [
+    'ACCCA',
+    'DE  B',
+    'ACCCA'
+  ], {
+    A: '#forge:storage_blocks/iron',
+    B: 'immersiveengineering:light_engineering',
+    C: '#forge:rods/steel',
+    D: 'kubejs:precise_engineering',
+    E: 'create:shaft'
+  })
+
   //末影碎片
   event.remove({id:"endersdelight:cutting/ender_shard"})
   event.remove({id:"endersdelight:cutting/ender_shard_using_deployer"})
@@ -251,7 +265,12 @@ ServerEvents.recipes(event => {
   //虚空钢
   event.remove({id:"createutilities:mixing/void_steel_ingot"})
   event.recipes.create.mixing(Item.of('#forge:ingots/voidsteel').withChance(0.75), ['kubejs:unformed_steel_ingot', 'kubejs:unformed_steel_ingot', '#endersdelight:enderman_loot', '#endersdelight:enderman_loot', 'echo_shard']).heated()
+  event.remove({id:"createutilities:pressing/void_steel_sheet"})
+  event.recipes.vintageimprovementsHammering(Item.of('#forge:plates/voidsteel'), '#forge:ingots/voidsteel').hammerBlows(3)
 
+  //紫水晶
+  event.remove({id:"createutilities:sandpaper_polishing/polished_amethyst"})
+  event.recipes.vintageimprovements.polishing('createutilities:polished_amethyst', '#forge:gems/amethyst').speedLimits(2).fragile()
 
   //发电
   /*

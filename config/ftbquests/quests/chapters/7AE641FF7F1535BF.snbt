@@ -14,15 +14,15 @@
 			rotation: 0.0d
 			width: 1.3285714285714287d
 			x: -4.0d
-			y: 1.5d
+			y: -1.0d
 		}
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 15.0d
-			y: 1.5d
+			x: 16.0d
+			y: 1.0d
 		}
 		{
 			height: 2.0d
@@ -37,7 +37,7 @@
 			image: "scguns:item/spitfire_flame"
 			rotation: 0.0d
 			width: 1.0d
-			x: -1.0d
+			x: 0.0d
 			y: -4.0d
 		}
 	]
@@ -73,7 +73,8 @@
 		{
 			dependencies: ["429B458F0AADA253"]
 			description: [
-				"你获得了钢锭！这意味着你可以在工业和魔法上继续推进了！"
+				"不断添加致密碳粒，并且锻压，就会得到……"
+				"你获得了&6真正意义上的钢锭&r！这意味着你可以在工业和魔法上继续推进了！"
 				"魔法也需要质量更好的金属作为基础发展）"
 			]
 			icon: "immersiveengineering:ingot_steel"
@@ -194,8 +195,8 @@
 				type: "item"
 			}]
 			title: "切割磁感线"
-			x: 13.0d
-			y: 0.0d
+			x: 14.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -253,8 +254,8 @@
 				}
 			]
 			title: "给我个任务吧！"
-			x: 15.0d
-			y: -1.5d
+			x: 16.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
@@ -336,18 +337,20 @@
 				type: "item"
 			}]
 			title: "绝对防御！"
-			x: 11.0d
-			y: 3.0d
+			x: 10.0d
+			y: 3.5d
 		}
 		{
-			dependencies: ["4EA98676CE0686BD"]
+			dependencies: [
+				"4EA98676CE0686BD"
+				"635A0221044B2A2A"
+			]
 			description: [
 				"虽然用这个工程块也是（你后面会用到的）沉浸工程多方块机器的必要组成部分，因而看上去&3略显普通&r，但是由它为核心的机械动力&3虚空元件&r拥有&d最诱人&r的效果。"
 				"这一工程块将会藉由量子管的同频共振，&2为机械添加超越时空的能力&r，让你的物品，液体，电力甚至应力传输无视空间阻隔！"
 				"但相应的，这显然&9不是纯机械可以达成的效果&r……"
 				""
 				"&o&a是的这玩意需要用泰拉钢才能做，所以推魔法线去吧&r&r"
-				"&o&6为什么碳刷需要这个？因为碳刷也需要魔法才能通电）&r&r"
 			]
 			id: "04AAF6565C04DA94"
 			shape: "gear"
@@ -394,7 +397,7 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.0d
 			y: -2.0d
 		}
 		{
@@ -421,7 +424,9 @@
 		{
 			dependencies: ["429B458F0AADA253"]
 			description: [
-				"它和它的同伴们会隔着遥远的距离进行共振……"
+				"加入末影与幽匿物质，你便会得到……"
+				""
+				"&1虚空钢&r。它和它的同伴们会隔着遥远的距离进行共振……"
 				"但在你没加工前，它们只是能共振而已。"
 				""
 				"提示：你需要前往&9深暗&r，寻找&9回响碎片&r才能完成这一配方。你可以使用&2自然指南针&r！"
@@ -440,7 +445,10 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["41831F6B01965541"]
+			dependencies: [
+				"41831F6B01965541"
+				"40129F9AE9DCE1EF"
+			]
 			description: [
 				"通过这一框架，你可以创造突破空间限制的机械组，比如虚空传递应力的马达组……"
 				"但很显然这是个半成品。"
@@ -454,8 +462,8 @@
 				item: "createutilities:void_casing"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 4.0d
+			x: 6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["04AAF6565C04DA94"]
@@ -512,7 +520,7 @@
 				item: "kubejs:iron_ingot_dust"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -1.0d
 			y: -4.0d
 		}
 		{
@@ -525,7 +533,7 @@
 				type: "item"
 			}]
 			title: "打铁花"
-			x: 0.0d
+			x: 1.0d
 			y: -4.0d
 		}
 		{
@@ -539,7 +547,7 @@
 				item: "kubejs:molten_steel_bucket"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -568,13 +576,18 @@
 				item: "kubejs:molten_slag_bucket"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 2.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["7A7C0A48248FA32B"]
+			description: [
+				"显然，钢太硬了，你无法直接用辊压机将它压成板，这行不通。"
+				"你需要一些更大更暴力的设备……当然，这种设备也有一些额外的自动化功能"
+			]
 			icon: "vintageimprovements:helve_hammer"
 			id: "40129F9AE9DCE1EF"
+			subtitle: "大力出奇迹，兄弟"
 			tasks: [
 				{
 					id: "2F2AD8CCB0B007F8"
@@ -593,7 +606,7 @@
 		{
 			dependencies: [
 				"2E4B9CF9789B1AF1"
-				"77918DE5A223B3CD"
+				"7F70BCE1EBD2C73E"
 			]
 			id: "5184969E829D39FA"
 			tasks: [{
@@ -671,8 +684,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: 2.0d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
@@ -778,8 +791,52 @@
 					type: "item"
 				}
 			]
-			x: 9.0d
-			y: 1.0d
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5700B2AFCCAEE31A"]
+			id: "56229BD92474D24C"
+			tasks: [{
+				id: "31BF7C74CB552026"
+				item: "vintageimprovements:lathe"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77918DE5A223B3CD"]
+			id: "7F70BCE1EBD2C73E"
+			tasks: [{
+				id: "50F72EAE8EBF61C2"
+				item: "kubejs:advanced_spring_set"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B1818D5A1142A16"]
+			id: "1FB6A2B277331552"
+			tasks: [{
+				id: "07BE81872FF465D3"
+				item: "vintageimprovements:belt_grinder"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1FB6A2B277331552"]
+			id: "635A0221044B2A2A"
+			tasks: [{
+				id: "6F499C4253A31237"
+				item: "createutilities:polished_amethyst"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
 		}
 	]
 	subtitle: ["Hearts of Steel"]

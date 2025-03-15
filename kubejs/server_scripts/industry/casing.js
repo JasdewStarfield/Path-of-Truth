@@ -29,6 +29,10 @@ ServerEvents.recipes(event => {
     //钢机壳
     casing("kubejs:steel_casing", "create:brass_casing", '#forge:plates/steel')
 
+    //虚空机壳
+    event.remove({id:'createutilities:item_application/void_casing'})
+    casing("createutilities:void_casing", "obsidian", '#forge:plates/voidsteel')
+
     /*
     //重型机械机壳
     event.remove({id:'tfmg:item_application/heavy_machinery_casing'})

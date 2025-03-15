@@ -65,6 +65,7 @@
 				"但你至少有电了，不是吗？"
 				"准备好搞一些巨大的机器和产线吧）"
 			]
+			icon: "immersiveengineering:wirecoil_copper"
 			id: "56F7012826597C35"
 			shape: "diamond"
 			subtitle: "这应该是你目前唯一能做出来的电力系统"
@@ -226,11 +227,22 @@
 			dependencies: ["1E0E5E47E1264279"]
 			description: ["琥珀金是一种在电力系统上应用颇多的金属"]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:ingot_electrum"
+			icon: "oreganized:electrum_ingot"
 			id: "3D6CCF4A93478320"
 			rewards: [{
-				id: "71A2780A7585490D"
-				item: "supplementaries:gold_door"
+				id: "6DF766C70AE45772"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "oreganized:electrum_shield"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			shape: "gear"
@@ -243,8 +255,8 @@
 					type: "item"
 				}
 				{
-					id: "27B781704345D1FD"
-					item: "immersiveengineering:ingot_electrum"
+					id: "577C8A58E5098FF8"
+					item: "oreganized:electrum_ingot"
 					type: "item"
 				}
 			]
@@ -261,16 +273,11 @@
 			]
 			icon: "immersiveengineering:plantoil_bucket"
 			id: "1404B54F1747DE16"
-			rewards: [{
-				id: "5676B9596046ACB9"
-				item: "bloodmagic:plantoil"
-				type: "item"
-			}]
 			subtitle: "能拿来炒菜吗？"
 			tasks: [{
-				id: "1C087B5F221D57DF"
-				title: "植物油"
-				type: "checkmark"
+				id: "03CB465C1B13E40F"
+				item: "immersiveengineering:plantoil_bucket"
+				type: "item"
 			}]
 			x: 0.0d
 			y: 1.5d
@@ -287,9 +294,9 @@
 			}]
 			subtitle: "禁止酗酒"
 			tasks: [{
-				id: "55EDC4FAFB6E8875"
-				title: "乙醇"
-				type: "checkmark"
+				id: "00E39AA616DC82DF"
+				item: "immersiveengineering:ethanol_bucket"
+				type: "item"
 			}]
 			title: "工业酒精"
 			x: 0.0d
@@ -357,6 +364,7 @@
 			dependencies: ["3D6CCF4A93478320"]
 			description: ["金-银合金是良好的导体材料，所以你现在可以制作更高级的电力系统了）"]
 			hide_until_deps_complete: true
+			icon: "immersiveengineering:wirecoil_electrum"
 			id: "1997BD2CF61ACBA8"
 			shape: "diamond"
 			subtitle: "琥珀金的光芒"
@@ -579,7 +587,7 @@
 				{
 					count: 6L
 					id: "6ADB0D5CF731E92A"
-					item: "tfmg:steel_block"
+					item: "immersiveengineering:storage_steel"
 					type: "item"
 				}
 				{
@@ -611,7 +619,7 @@
 				"你问我铝土矿在哪找？兄弟，铝可是储量最大的金属之一，如果到了这一阶段你还完全没见过满地的铝土矿，那我得怀疑一下你是不是认真在玩了……"
 			]
 			hide_until_deps_complete: true
-			icon: "tfmg:aluminum_ingot"
+			icon: "immersiveengineering:ingot_aluminum"
 			id: "2BE7BA0BE9F2DBC9"
 			rewards: [{
 				id: "274597A581C787E4"
@@ -624,7 +632,7 @@
 			tasks: [
 				{
 					id: "70186FD6D7DB9684"
-					item: "tfmg:bauxite"
+					item: "immersiveengineering:raw_aluminum"
 					type: "item"
 				}
 				{
@@ -634,7 +642,7 @@
 				}
 				{
 					id: "1C5AD55FCFAA1395"
-					item: "tfmg:aluminum_ingot"
+					item: "immersiveengineering:ingot_aluminum"
 					type: "item"
 				}
 			]
@@ -698,6 +706,7 @@
 				"（小提示：高压线没法绝缘——因为绝缘层会被高压电流直接击穿的，所以注意安全）"
 			]
 			hide_until_deps_complete: true
+			icon: "immersiveengineering:wirecoil_steel"
 			id: "56F4C82F40DFA8F5"
 			shape: "diamond"
 			subtitle: "铝的第一作用"
@@ -724,8 +733,8 @@
 				}
 			]
 			title: "高压电力系统"
-			x: 0.0d
-			y: -3.0d
+			x: 1.5d
+			y: -5.5d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -855,10 +864,7 @@
 			y: 1.5d
 		}
 		{
-			dependencies: [
-				"2BE7BA0BE9F2DBC9"
-				"6D9B785CB93D94D6"
-			]
+			dependencies: ["2BE7BA0BE9F2DBC9"]
 			description: [
 				"由于柴油性能还是有限，接下来你大概是需要迈入石油和重工业时代）"
 				"而重工业——需要你手里的元件。"
@@ -868,36 +874,11 @@
 			subtitle: "高级工业必需品"
 			tasks: [{
 				id: "1F69FA726AA73BD9"
-				item: "tfmg:steel_mechanism"
+				item: "kubejs:steel_mechanism"
 				type: "item"
 			}]
 			x: 9.0d
 			y: -3.0d
-		}
-		{
-			dependencies: ["2BE7BA0BE9F2DBC9"]
-			description: [
-				"螺丝刀一般用于制造工业元件）"
-				"比如在你的流水线机械臂上安装一个螺丝刀来拧螺丝（乐"
-				"为什么一定要这样呢，因为方块手是拧不了螺丝的）"
-				"&m&o&c“你甚至不能进电子厂打工”&r&r&r"
-			]
-			hide_until_deps_complete: true
-			id: "6D9B785CB93D94D6"
-			subtitle: "工具还是要的"
-			tasks: [{
-				id: "147D1D7C0FBC9106"
-				item: {
-					Count: 1
-					id: "tfmg:screwdriver"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 9.5d
-			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1072,15 +1053,24 @@
 			y: 2.5d
 		}
 		{
-			dependencies: [
-				"56F4C82F40DFA8F5"
-				"2BE7BA0BE9F2DBC9"
-			]
+			dependencies: ["2BE7BA0BE9F2DBC9"]
 			description: [
 				"高压线杀人事件的避免方式：穿一套防电服"
 				"（其实植物魔法的斗篷可以用魔力获得有cd的无敌，但那很浪费魔力"
 			]
 			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						Insulation: [ ]
+					}
+				}
+				id: "immersiveengineering:armor_faraday_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "217A9CECA6BEB91C"
 			shape: "diamond"
 			subtitle: "成为法拉第"
@@ -1151,8 +1141,8 @@
 				}
 			]
 			title: "理解法拉第"
-			x: 1.5d
-			y: -2.0d
+			x: 0.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["22631A52B9D81A49"]
@@ -1187,8 +1177,8 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
-			y: -2.0d
+			x: -5.5d
+			y: -4.0d
 		}
 		{
 			dependencies: ["22631A52B9D81A49"]
@@ -1233,7 +1223,7 @@
 				}
 			]
 			x: -4.5d
-			y: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -1249,40 +1239,6 @@
 			title: "精细化农业"
 			x: -6.0d
 			y: 2.0d
-		}
-		{
-			dependencies: ["03312D6881CC617D"]
-			description: ["装填烈焰蛋糕以感受最大威力"]
-			id: "2CA584555112E772"
-			shape: "diamond"
-			subtitle: "哒哒哒哒哒"
-			tasks: [{
-				id: "0ADE2F4D3B0B083C"
-				item: {
-					Count: 1
-					id: "tfmg:quad_potato_cannon"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 7.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["2BE7BA0BE9F2DBC9"]
-			hide_until_deps_complete: true
-			id: "377948574A940F51"
-			shape: "diamond"
-			subtitle: "I lost a bomb. Do you have it?"
-			tasks: [{
-				id: "386E09FE2436BCC9"
-				item: "tfmg:thermite_grenade"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1360,7 +1316,6 @@
 			dependencies: [
 				"1A19AB31DBCDBCF7"
 				"671C17CCA1D5FA78"
-				"6D9B785CB93D94D6"
 			]
 			id: "41E56A9D68E36043"
 			subtitle: "众所周知，有时候科技发展靠考古"
@@ -1456,6 +1411,18 @@
 			title: "组装粉碎机"
 			x: -3.0d
 			y: -3.5d
+		}
+		{
+			dependencies: ["3D6CCF4A93478320"]
+			id: "1999D24A0619F440"
+			shape: "diamond"
+			tasks: [{
+				id: "4CF9D9DCC1FB0FAB"
+				item: "createaddition:electrum_amulet"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
 		}
 	]
 	subtitle: ["Roaring Machinery"]

@@ -260,6 +260,20 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying("kubejs:incomplete_basic_spring_set", ["kubejs:incomplete_basic_spring_set", 'vintageimprovements:iron_spring']),
     ]).transitionalItem("kubejs:incomplete_basic_spring_set").loops(4)
 
+    event.shaped('kubejs:advanced_spring_set', [ 
+        'AA', 
+        'AB',
+        'AA'  
+    ], {
+        A: 'vintageimprovements:steel_spring',
+        B: 'vintageimprovements:small_brass_spring'
+    })
+    event.recipes.create.sequenced_assembly([
+        Item.of('kubejs:advanced_spring_set')
+    ], 'vintageimprovements:small_brass_spring', [
+        event.recipes.createDeploying("kubejs:incomplete_advanced_spring_set", ["kubejs:incomplete_advanced_spring_set", 'vintageimprovements:steel_spring']),
+    ]).transitionalItem("kubejs:incomplete_advanced_spring_set").loops(4)
+
     //黄铜
     event.remove({id:"create:mixing/brass_ingot"})
 
