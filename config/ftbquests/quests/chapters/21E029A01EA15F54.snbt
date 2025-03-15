@@ -207,15 +207,14 @@
 			description: [
 				"这些材料保留了传统的充能方式）"
 				"但需要的魔力量仍然不小）"
-				"所以你可能需要考虑如何获取大量魔力了。"
-				"黑莲花现阶段不可再生，只能让你应急一下）"
-				"植魔的材料可以和其他方面的材料通过一些手段相互转化，所以建议多生产一点。"
+				"所以你可能需要考虑&b如何稳定获取魔力&r了。"
+				"植魔的材料可以和其他方面的材料&6通过一些手段相互转化&r，所以建议多生产一点。"
 				"具体转化方式参见JEI）"
 			]
 			id: "1B2D939907CB4DF0"
 			rewards: [{
-				id: "5668C87C4C42AE5A"
-				item: "botania:blacker_lotus"
+				id: "2A1EF0022C3BC444"
+				item: "botania:black_lotus"
 				type: "item"
 			}]
 			shape: "rsquare"
@@ -382,7 +381,7 @@
 		{
 			dependencies: ["4320B37354ECBC14"]
 			description: [
-				"如果你要书写法术卷轴，你需要纸以及对应派系的材料。"
+				"如果你要书写法术卷轴，你需要纸，对应派系的材料以及合适的墨水。"
 				"现在，所有材料都可以通过特定的方式获得，所以——祝你好运！"
 				"&o&4*注：那个鲜血瓶子其实你自己跳进锅里也行&r&r"
 			]
@@ -564,8 +563,8 @@
 			]
 			id: "532F8BFB9374238B"
 			rewards: [{
-				id: "23579AC3A7AB39EC"
-				item: "botania:black_lotus"
+				id: "33F64C25BAD66921"
+				item: "botania:mutated_seeds"
 				type: "item"
 			}]
 			shape: "rsquare"

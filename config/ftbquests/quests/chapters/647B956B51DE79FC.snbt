@@ -48,7 +48,7 @@
 			rotation: 0.0d
 			width: 1.4d
 			x: -1.5d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			height: 1.6d
@@ -56,7 +56,7 @@
 			rotation: 0.0d
 			width: 1.6d
 			x: 1.5d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			height: 3.0d
@@ -65,6 +65,14 @@
 			width: 3.0d
 			x: 0.0d
 			y: -3.5d
+		}
+		{
+			height: 2.0d
+			image: "irons_spellbooks:textures/mob_effect/angel_wings.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: 0.0d
 		}
 	]
 	order_index: 1
@@ -82,9 +90,10 @@
 				"{@pagebreak}"
 				"需要注意的是，更高的灵魂能量存储量将会召来&c更强大的敌人&r，比如统领灾厄村民的……&7灾厄教父&r。"
 				"如果你在林地府邸内使用&5黑暗卷轴&r，那么可以召唤&9更加强大的灾厄宰相&r，并借此夺取灾厄村民的力量。"
+				"灾厄宰相的具体能力参见本章冒险任务，&2“4A 世界尽头”&r。"
 			]
 			hide_until_deps_complete: true
-			icon: "alexsmobs:soul_heart"
+			icon: "goety:star_amulet"
 			id: "5A5B1D96C50D1EAE"
 			rewards: [
 				{
@@ -361,6 +370,7 @@
 				"巫妖还&5拥有一些独特的能力&r，比如永久夜视，不过这就需要你自行探索了。"
 				"{@pagebreak}"
 				"为了获取&5禁书卷轴&r，你需要进行一些合成或者前往坟墓探索；为了获取&4不洁之血&r，也许你需要&9用安息仪式&r在主世界召唤一个使徒……"
+				"使徒的具体机制参见本章冒险任务，&2“4A 世界尽头”&r。"
 				"使徒现在&c不会再掉落暗夜信标&r。这一强大的黑暗物品只能通过魔法创造。"
 				"如果你希望获得&4更纯净的血液&r，那么你需要在&6下界&r召唤使徒，这会净化他们的血液，但也会让他们&a更加强大&r。"
 				"然而下界合金的获取也变得&e更加艰难&r，也许应该&7多借助一些工业的力量&r。"

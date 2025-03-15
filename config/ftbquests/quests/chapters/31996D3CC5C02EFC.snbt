@@ -23,7 +23,7 @@
 			order: 2
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 6.0d
+			x: 6.5d
 			y: 0.0d
 		}
 		{
@@ -35,11 +35,11 @@
 			y: -5.5d
 		}
 		{
-			height: 2.0d
+			height: 3.0d
 			image: "storagedrawers:block/indicator/void_icon"
 			rotation: 0.0d
-			width: 2.0d
-			x: -4.0d
+			width: 3.0d
+			x: -3.5d
 			y: 0.0d
 		}
 		{
@@ -47,7 +47,7 @@
 			image: "minecraft:textures/mob_effect/darkness.png"
 			rotation: 0.0d
 			width: 2.0d
-			x: 1.5d
+			x: 2.0d
 			y: -2.5d
 		}
 		{
@@ -55,7 +55,7 @@
 			image: "goety:item/focus/witherskull_spell"
 			rotation: 0.0d
 			width: 2.0d
-			x: 1.5d
+			x: 2.0d
 			y: 2.5d
 		}
 		{
@@ -63,7 +63,7 @@
 			image: "alexsmobs:item/soul_heart"
 			rotation: 0.0d
 			width: 2.0d
-			x: 1.0d
+			x: 1.5d
 			y: 0.0d
 		}
 		{
@@ -71,8 +71,24 @@
 			image: "botania:block/mana_void"
 			rotation: 0.0d
 			width: 3.0d
-			x: 4.0d
+			x: 4.5d
 			y: 0.0d
+		}
+		{
+			height: 2.0d
+			image: "irons_spellbooks:item/dragonskin_spell_book"
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			height: 2.0d
+			image: "botania:item/mana_ring_greater"
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: 2.5d
 		}
 	]
 	order_index: 1
@@ -81,7 +97,7 @@
 		{
 			dependencies: ["301A6952E3B16C88"]
 			description: [
-				"以仪式配合&4使徒的血液&r压缩刷怪笼，就可以得到&5炼金术一道的终极成就：贤者之石&r。"
+				"以&a死灵的火焰&r配合&4使徒的血液&r压缩刷怪笼，就可以在一场&6漫长的熔铸&r后得到&5炼金术一道的终极成就：贤者之石&r。"
 				"它显然可以被用来&6复制黄金&r——但那是它最粗糙的用法。"
 				"虽然使用过程中显然会消耗能量，但是可以通过&b灵魂修补器&r来填补，毕竟最重要的是载体。"
 				""
@@ -110,7 +126,7 @@
 				type: "item"
 			}]
 			title: "【起点】生命源泉"
-			x: -4.0d
+			x: -3.5d
 			y: 0.0d
 		}
 		{
@@ -118,19 +134,13 @@
 			description: [
 				"现在你可以通过特定的手段创建和复制顶级生命。"
 				"其中，&d瞻远者需要通过魔法手段创造&r，而相对应的&a遗忆守卫需要通过工业元件创造&r。"
-				"虚空蠕虫比较特殊，你可以用打败蠕虫后的材料制作一个雕像，以此为凭据找精灵们兑换神秘蠕虫）"
-				"&o&9*有别的生命也可以通过材料创造并用魔力复制，但这需要你自行探究。&r&r"
+				"&o&9*有别的生命也可以通过材料创造并用魔力复制，但这需要你自行探究，例如神秘蠕虫。&r&r"
 			]
 			icon: "artifacts:crystal_heart"
 			id: "059A741ABF2A9A34"
 			shape: "diamond"
 			subtitle: "以魔法复刻生命！"
 			tasks: [
-				{
-					id: "1A39BE641C3A581C"
-					item: "alexsmobs:mysterious_worm"
-					type: "item"
-				}
 				{
 					id: "1E82DD823E1D0ED9"
 					item: "alexsmobs:spawn_egg_farseer"
@@ -143,7 +153,7 @@
 				}
 			]
 			title: "巅峰炼金术"
-			x: -2.0d
+			x: -1.0d
 			y: 0.0d
 		}
 		{
@@ -155,7 +165,7 @@
 			]
 			id: "0C99BD24E939A68D"
 			shape: "diamond"
-			subtitle: "哦，伟大的炼金术"
+			subtitle: "终末诗篇（2x）"
 			tasks: [{
 				count: 2L
 				id: "71D9BEAB1BAEE21C"
@@ -163,7 +173,7 @@
 				type: "item"
 			}]
 			title: "更多的蛋"
-			x: -2.5d
+			x: -2.0d
 			y: -2.5d
 		}
 		{
@@ -188,7 +198,7 @@
 				type: "item"
 			}]
 			title: "毁灭……"
-			x: -2.5d
+			x: -2.0d
 			y: 2.5d
 		}
 		{
@@ -215,7 +225,7 @@
 				type: "item"
 			}]
 			title: "无尽石板"
-			x: -5.5d
+			x: -5.0d
 			y: -1.5d
 		}
 		{
@@ -228,6 +238,7 @@
 				"&b【完成后解锁主线章节：6 统合机械，驾驭魔法】&r"
 				"在捅破窗户纸之前，作者仍然是作者，对吧？"
 				"但你已经站在世界背后秘密的最后一堵墙前了。"
+				"集合&b魔力与灵魂&r，&c生命与死亡&r，&5黑暗与末影&r，三相归一后即可凝聚出&o&6不属于这个世界的物质&r&r。"
 				"和工业侧不同，魔法追求的是&b个体能力与逻辑的极致&r，因此这将是一场&c注定艰难&r的仪式，但你&5只需要创造一份“深夜”&r，因为复制产物并不是很困难的事情。"
 				""
 				"&o&7炼金的本质是改变和复刻物品的性质。理论上——在你突破那层界限前，凭空造物是不可行的。&r&r"
@@ -247,7 +258,7 @@
 				type: "item"
 			}]
 			title: "【终点】通往终末的钥匙"
-			x: 4.0d
+			x: 4.5d
 			y: 0.0d
 		}
 		{
@@ -300,8 +311,8 @@
 				}
 			]
 			title: "盔甲铸魂"
-			x: -0.5d
-			y: 1.0d
+			x: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
@@ -320,17 +331,19 @@
 				type: "item"
 			}]
 			title: "魔电工艺"
-			x: -4.0d
+			x: -3.5d
 			y: -2.0d
 		}
 		{
 			dependencies: ["059A741ABF2A9A34"]
-			description: [
-				"是的，这也是可以制造的，但是需要你……&b付出灵魂&r。"
-				"相应的，&6下界之星也可以通过近似的方式复制&r，但这就需要你自行寻找了……"
-			]
+			description: ["是的，这也是可以制造的，但是需要你……&b付出灵魂&r。同时，你需要获取一些凋零的力量，来完成这一催化。"]
 			icon: "minecraft:wither_skeleton_skull"
 			id: "3C38B10AFBEA5CEE"
+			rewards: [{
+				id: "0A527D9DC2F3D866"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
 			subtitle: "腐蚀性产物"
 			tasks: [{
 				id: "5A25C8F89EBC9419"
@@ -338,12 +351,18 @@
 				type: "item"
 			}]
 			title: "万物凋零"
-			x: -0.5d
-			y: -1.0d
+			x: 1.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
+			description: [
+				"虽然不能施法，但是贤者之杖&c几乎可以秒破任何能够被破坏的方块&r（掉落仍然遵循基本规则），甚至包括强化深板岩。"
+				"在解析了万物的基本结构后，破开它们就成为了一件很简单的事情。"
+				"如果用它打击生物，那&e迈达斯之触&r将会生效，死亡的生物将会给予你一定的金粒。"
+			]
 			id: "5753E12789B0BBE9"
+			subtitle: "点金杖——不能施法"
 			tasks: [{
 				id: "41276A7823F3106E"
 				item: {
@@ -355,7 +374,8 @@
 				}
 				type: "item"
 			}]
-			x: -5.5d
+			title: "点化万物"
+			x: -5.0d
 			y: 1.5d
 		}
 		{
@@ -378,11 +398,16 @@
 				type: "item"
 			}]
 			title: "生命爆发"
-			x: -4.0d
+			x: -3.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["059A741ABF2A9A34"]
+			description: [
+				"将&b最强大的魔力材料与灵魂共振&r，并将其在仪式中融为一炉，魔力与灵魂之间的关联就将被你固化为实体——并用于&5击穿世界规则的屏障&r。"
+				"当然，它也可以&c击穿所有敌人的护甲&r。"
+				"&o&7用于在终末仪式中作为魔力与灵魂的载体。&r&r"
+			]
 			id: "07755877DAE443D1"
 			shape: "hexagon"
 			subtitle: "灵魂鸣泣之时"
@@ -391,12 +416,17 @@
 				item: "goety:sonic_boom_focus"
 				type: "item"
 			}]
-			title: "灵魂的极致"
-			x: 1.0d
+			title: "魔力与灵魂的极致"
+			x: 1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7716E5CB171F049A"]
+			description: [
+				"通过对&d黑莲花&r进一步的催化，你终于获得了它。"
+				"虽然将其直接丢入魔力池中可以&b生成大量魔力&r，但黑暗核心将会&c直接逸散并浪费掉&r。"
+				"&o&7用于在终末仪式中渲染黑暗与末影。&r&r"
+			]
 			id: "4AB31A29B0259561"
 			shape: "hexagon"
 			subtitle: "绽放的黑暗之花"
@@ -406,11 +436,16 @@
 				type: "item"
 			}]
 			title: "最纯粹的暗影"
-			x: 1.5d
+			x: 2.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["71BB0BEA50C791E2"]
+			description: [
+				"在&3最黑暗的地方&r，聚合生与死对应的材料，将其强行压入聚晶，你就会获得“以命换命”的力量。"
+				"虽然你的生命&c很难支撑起对于强大生物的一换一&r，但这至少证明你通晓了这一规则。"
+				"&o&7用于在终末仪式中注入生死规则。&r&r"
+			]
 			id: "735DE2EF56DEF309"
 			shape: "hexagon"
 			subtitle: "一线之隔……"
@@ -420,16 +455,21 @@
 				type: "item"
 			}]
 			title: "生与死的奥义"
-			x: 1.5d
+			x: 2.0d
 			y: 2.5d
 		}
 		{
-			dependencies: ["0C99BD24E939A68D"]
+			dependencies: [
+				"0C99BD24E939A68D"
+				"61B0D0DB73C67D53"
+			]
 			description: [
 				"信标作为一种强能量的载体，将其&5用黑暗与末影侵蚀&r是相当费力的操作，好在你至少还能完成它。"
 				"如果将其放置在下界传送门上，那么世界时间将被&9恒定于满月的午夜&r……"
 				"&m&o&7（很适合拿来进行巫妖仪式）&r&r&r"
 				"此外，它还可以进一步辅助黑莲花&5凝练黑暗&r……"
+				""
+				"&o&7*它本身其实还是区块加载器，但是用它加载未免有些奢侈了。&r&r"
 			]
 			id: "7716E5CB171F049A"
 			shape: "pentagon"
@@ -439,21 +479,73 @@
 				item: "goety:night_beacon"
 				type: "item"
 			}]
-			x: -0.5d
+			x: 0.0d
 			y: -2.5d
 		}
 		{
-			dependencies: ["3BE92D4971A86473"]
+			dependencies: [
+				"3BE92D4971A86473"
+				"7879C0C411C82BB7"
+			]
+			description: [
+				"尽管魔力的爆裂会带来毁灭性的灾难，但&a以这种强大的魔力流催化猩红神杖&r后，它将绽放出相当美妙的花朵状结构。"
+				"用于在仪式中&2对聚晶注入极强的生命力量&r。"
+				""
+				"&o&7*它同样可以移动刷怪笼，并且不需要诅咒之笼作为载体，但是是一次性的——这显然不值得。&r&r"
+			]
 			id: "71BB0BEA50C791E2"
 			shape: "pentagon"
+			subtitle: "生之花于魔力浇灌中绽放"
 			tasks: [{
 				id: "7251F769FCFAD9FF"
 				item: "botania:spawner_mover"
 				type: "item"
 			}]
 			title: "怒放的生命"
-			x: -0.5d
+			x: 0.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["12134A3EF6C80C54"]
+			description: [
+				"通过下界之星碎片和贤者之石，以及一些其他的辅助材料，你可以催生出完整的下界之星作为材料。"
+				"但这仍然要求你至少直面一次凋零。"
+			]
+			icon: "minecraft:nether_star"
+			id: "61B0D0DB73C67D53"
+			subtitle: "凋零补完计划"
+			tasks: [
+				{
+					id: "3DF90EB645E9CB75"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					id: "368606C8304335B7"
+					item: "scguns:nether_star_fragment"
+					type: "item"
+				}
+			]
+			title: "聚合星辰"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["12134A3EF6C80C54"]
+			description: [
+				"以贤者之石作为核心，承载足够的鲜血与黑暗魔力，你就可以强行制作这柄本属于死者之王的权杖。"
+				"当然，你也可以直接找他讨要……"
+			]
+			id: "7879C0C411C82BB7"
+			subtitle: "血之证"
+			tasks: [{
+				id: "0AA4DAE872A7BD8A"
+				item: "irons_spellbooks:blood_staff"
+				type: "item"
+			}]
+			title: "孤高之红"
+			x: -1.0d
+			y: 1.5d
 		}
 	]
 	subtitle: ["It's Alive!"]

@@ -22,7 +22,7 @@
     //下界之星聚合
     //矿物处理（其他矿脉适配）
     //感谢工业完成的碎矿，这样魔法就可以直接接入了
-    //榴石，月长石，透辉石，霜钢，扼塞，缪铁，镰鼬铁，炙铁，绛紫晶，天闪石，锌，锡
+    //榴石，月长石，透辉石，霜钢，扼塞，缪铁，炙铁，绛紫晶，锌，锡
 
 ServerEvents.recipes(event => {
     //根之图腾移除与合成
@@ -161,6 +161,20 @@ ServerEvents.recipes(event => {
             C: 'goety:philosophers_stone'
         }
     )
+    //不洁之血复制
+    event.shaped(
+        Item.of('goety:unholy_blood', 4),
+        [
+            ' A ',
+            'ABA',
+            ' C '
+        ],
+        {
+            B: 'goety:unholy_blood',
+            C: 'botania:blood_pendant',
+            A: 'irons_spellbooks:blood_upgrade_orb'
+        }
+    )
 
     //诅咒注入系列配方
     //灵质转化
@@ -189,6 +203,15 @@ ServerEvents.recipes(event => {
         },
         "result": 'minecraft:ender_pearl',
         "cookingTime": 600
+    })
+    //硫磺转化火药
+    event.custom({
+        "type": "goety:cursed_infuser_recipes",
+        "ingredient": {
+            "item": 'vintageimprovements:sulfur'
+        },
+        "result": 'minecraft:gunpowder',
+        "cookingTime": 60
     })
 
 
@@ -282,6 +305,35 @@ ServerEvents.recipes(event => {
         ],
         "result": {
             "item": "botania:overgrowth_seed"
+        }
+    })
+    //贤者之石合成
+    event.remove({id:'goety:philosophers_stone'})
+    event.custom({
+        "type": "goety:brazier",
+        "soulCost": 50000,
+        "ingredients": [
+            {
+                "item": "goety:unholy_blood"
+            },
+            {
+                "item": "minecraft:spawner"
+            },
+            {
+                "item": "minecraft:netherite_scrap"
+            },
+            {
+                "item": "irons_spellbooks:arcane_salvage"
+            },
+            {
+                "item": "kubejs:charoite_dust"
+            },
+            {
+                "item": "goety:empty_focus"
+            }
+        ],
+        "result": {
+            "item": "goety:philosophers_stone"
         }
     })
 })
