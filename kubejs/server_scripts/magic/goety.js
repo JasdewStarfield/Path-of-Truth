@@ -15,8 +15,6 @@
     //点盖亚成下界合金
     //点下界合金成遗忆锭
     //下界合金盔甲注入盖亚之魂活化
-    //姜饼人活化
-    //点铁成缪铁
     //点钻成绛紫晶
     //磁铁升级（红石-铁金）
     //龙蛋催化
@@ -149,6 +147,20 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'goety',output:'goety:cursed_infuser'},
         'minecraft:lapis_lazuli' , 'goety:cursed_ingot')
 
+    //复刻凝胶复制
+    event.shaped(
+        Item.of('alexsmobs:mimicream', 16),
+        [
+            'ABA',
+            'BCB',
+            'ABA'
+        ],
+        {
+            A: 'botania:overgrowth_seed',
+            B: 'alexsmobs:mimicream',
+            C: 'goety:philosophers_stone'
+        }
+    )
 
     //诅咒注入系列配方
     //灵质转化

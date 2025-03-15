@@ -306,10 +306,16 @@
 				"309ED82498C4F2D1"
 			]
 			id: "7B4BE516F4D4E494"
-			subtitle: "芙莉莲——"
+			subtitle: "最最伟大的炼金术"
 			tasks: [{
-				id: "01E7DB25BE0C772B"
-				item: "artifacts:mimic_spawn_egg"
+				id: "1AF2F188558502ED"
+				item: {
+					Count: 1
+					id: "goety:philosophers_stone"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "活化物品"
@@ -330,7 +336,7 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["79EE6BAFA5E153E5"]
+			dependencies: ["7B4BE516F4D4E494"]
 			id: "11809308EF757592"
 			subtitle: "末影之王"
 			tasks: [{
@@ -341,7 +347,7 @@
 			}]
 			title: "更多的蛋"
 			x: 2.0d
-			y: -13.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["7B4BE516F4D4E494"]
@@ -354,18 +360,6 @@
 			}]
 			x: -2.0d
 			y: -11.0d
-		}
-		{
-			dependencies: ["7A0D894A5227359D"]
-			id: "0A2BE67F3E9F7225"
-			subtitle: "活化水晶？"
-			tasks: [{
-				id: "106B3E5E1EB2E1C7"
-				item: "minecraft:budding_amethyst"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -13.0d
 		}
 		{
 			dependencies: ["7B4BE516F4D4E494"]
@@ -384,14 +378,11 @@
 				type: "item"
 			}]
 			title: "无尽魔力"
-			x: 0.0d
-			y: -12.0d
+			x: -1.0d
+			y: -11.5d
 		}
 		{
-			dependencies: [
-				"0A2BE67F3E9F7225"
-				"11809308EF757592"
-			]
+			dependencies: ["1704AC9884507C0B"]
 			id: "697B1277B1C95490"
 			shape: "hexagon"
 			subtitle: "真相的通行证"
@@ -434,18 +425,6 @@
 			title: "最魔法的"
 			x: 0.0d
 			y: -18.5d
-		}
-		{
-			dependencies: ["7B4BE516F4D4E494"]
-			id: "79EE6BAFA5E153E5"
-			subtitle: "工业的破晓带来魔法的推进"
-			tasks: [{
-				id: "151D8A5730F981B3"
-				item: "bloodmagic:lightritualstone"
-				type: "item"
-			}]
-			x: 2.0d
-			y: -11.0d
 		}
 		{
 			dependencies: ["4D484051A8CF29F2"]
@@ -503,6 +482,37 @@
 			title: "光辉石"
 			x: 0.0d
 			y: -16.5d
+		}
+		{
+			dependencies: ["7B4BE516F4D4E494"]
+			id: "2E0C20F69A138C81"
+			subtitle: "最坚硬的物质"
+			tasks: [{
+				id: "7CB7D7CCE7A1C88C"
+				item: {
+					Count: 1
+					id: "goety:philosophers_mace"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "多功能工具"
+			x: 1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["7B4BE516F4D4E494"]
+			id: "1704AC9884507C0B"
+			subtitle: "集成灵魂"
+			tasks: [{
+				id: "0C1D16C3C4437557"
+				item: "goety:sonic_boom_focus"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.0d
 		}
 	]
 	subtitle: ["Magic Progressions"]

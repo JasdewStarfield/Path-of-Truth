@@ -402,6 +402,7 @@
 		}
 		{
 			dependencies: ["504E6502A789DABF"]
+			description: ["这台机器只能输入电力来产生应力，但你可以进行一些小小的&b“魔改”&r）"]
 			hide_until_deps_complete: true
 			id: "0728C35476FC5EE2"
 			rewards: [{
@@ -543,12 +544,18 @@
 		}
 		{
 			dependencies: ["1A5AC0B8CD25635E"]
+			description: [
+				"你获得了一份看似很混乱的原材料，而这样状态下的钢坯显然是易于扰动和处理的。"
+				"那么你希望它变成什么呢？"
+			]
 			id: "429B458F0AADA253"
+			subtitle: "万用材料"
 			tasks: [{
 				id: "0F4D5E0A7AA72402"
 				item: "kubejs:unformed_steel_ingot"
 				type: "item"
 			}]
+			title: "钢坯"
 			x: 4.0d
 			y: 0.0d
 		}
@@ -611,6 +618,7 @@
 		{
 			dependencies: ["429B458F0AADA253"]
 			id: "68A34C290A68575C"
+			subtitle: "枪炮轰鸣！"
 			tasks: [{
 				id: "593479E4DED6B396"
 				item: "scguns:treated_iron_ingot"
@@ -621,7 +629,9 @@
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
+			description: ["通过简易的灵质填充，你用魔法获得了一点点操纵电的力量……"]
 			id: "786828EE220E93A3"
+			subtitle: "科学使用灵魂"
 			tasks: [{
 				id: "4F7AB4E750229D70"
 				item: "kubejs:leyden_jar"

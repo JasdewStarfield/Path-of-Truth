@@ -18,19 +18,20 @@ ServerEvents.recipes(event => {
             'botania:rune_mana'
         ]
     )
-    /*
-    event.shaped(Item.of('mechanicalbotania:mana_motor',1),
-    ['ABA',
-    'CDC',
-    'ABA'],
-    {
-        A:'botania:manasteel_ingot',
-        B:'irons_spellbooks:arcane_salvage',
-        C:'irons_spellbooks:mana_ring',
-        D:'create_new_age:basic_motor'
-    }
-)
-    */
+    event.shaped(
+        Item.of('mechanicalbotania:mana_motor'),
+        [
+            'ABA',
+            'CDC',
+            'ABA'
+        ],
+        {
+            B: 'irons_spellbooks:arcane_salvage',
+            D: 'createaddition:electric_motor',
+            C: 'goety:cursed_ingot',
+            A: 'botania:manasteel_ingot'
+        }
+    )
 
 
     //修改白雏菊合成配方
@@ -168,13 +169,12 @@ ServerEvents.recipes(event => {
     event.recipes.botania.mana_infusion('4x irons_spellbooks:arcane_essence', 'botania:manasteel_ingot', 1000, 'botania:alchemy_catalyst')
     //变色龙蛋生产
     event.recipes.botania.mana_infusion('cold_sweat:chameleon_spawn_egg', 'botania:mutated_seeds', 100000, 'botania:mana_bomb')
-    //刷怪蛋复制：遗忆守卫，瞻远者，宝箱怪，潜影贝，凋零骷髅，变色龙，远古骑士
+    //刷怪蛋复制：遗忆守卫，瞻远者，宝箱怪，潜影贝，凋零骷髅，远古骑士
     event.recipes.botania.mana_infusion('2x undergarden:forgotten_guardian_spawn_egg', 'undergarden:forgotten_guardian_spawn_egg', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x alexsmobs:spawn_egg_farseer', 'alexsmobs:spawn_egg_farseer', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x artifacts:mimic_spawn_egg', 'artifacts:mimic_spawn_egg', 25000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x minecraft:shulker_spawn_egg', 'minecraft:shulker_spawn_egg', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x minecraft:wither_skeleton_spawn_egg', 'minecraft:wither_skeleton_spawn_egg', 25000,'botania:conjuration_catalyst')
-    event.recipes.botania.mana_infusion('2x cold_sweat:chameleon_spawn_egg', 'cold_sweat:chameleon_spawn_egg', 25000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x irons_spellbooks:armor_pile', 'irons_spellbooks:armor_pile', 50000,'botania:conjuration_catalyst')
     //遗忆锭转化钻石1:2
     event.recipes.botania.mana_infusion('2x minecraft:diamond', 'undergarden:forgotten_ingot', 1000,'botania:alchemy_catalyst')
@@ -408,7 +408,6 @@ ServerEvents.recipes(event => {
             'alexsmobs:void_worm_effigy',
             'minecraft:end_crystal',
             'botania:corporea_index',
-            'botania:blacker_lotus'
         ]
     )
 
@@ -434,7 +433,7 @@ ServerEvents.recipes(event => {
         [
             'kubejs:electronic_engineering', 
             'botania:redstone_root',
-            'immersiveengineering:generator',
+            'goety:philosophers_stone',
             'mechanicalbotania:mana_motor'
         ], 
         5000
