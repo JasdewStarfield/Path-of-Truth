@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
   event.recipes.create.splashing([Item.of('sand')], '#minecraft:sand')
 
   //由于移除了沉浸工程锯木机，补充锯末的获取配方
-  event.recipes.create.cutting(Item.of('immersiveengineering:dust_wood').withChance(0.5), 'stick')
+  event.recipes.create.cutting(Item.of('immersiveengineering:dust_wood'), 'createdieselgenerators:wood_chip')
 
   //锯末面包……
   event.shaped('2x bread', [ 

@@ -1244,31 +1244,24 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"（尽可能）找到并组装每一种生物的化石！"
+				"找到并组装每一种生物的化石！"
 				"看起来有点哈人……"
 				"不同的化石有不同的作用，但这就要你自己探索了。"
 			]
 			hide_until_deps_complete: true
 			icon: "betterarcheology:creeper_fossil"
 			id: "21246254369E4A91"
-			rewards: [
-				{
-					id: "297586588106AE0B"
-					item: "betterarcheology:ocelot_fossil"
-					type: "item"
-				}
-				{
-					id: "2B23C2B80ABA8283"
-					item: {
-						Count: 1
-						id: "betterarcheology:netherite_brush"
-						tag: {
-							Damage: 0
-						}
+			rewards: [{
+				id: "2B23C2B80ABA8283"
+				item: {
+					Count: 1
+					id: "betterarcheology:netherite_brush"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			subtitle: "考古#1"
 			tasks: [
 				{
@@ -1299,6 +1292,11 @@
 				{
 					id: "08C0923E7CF6F45F"
 					item: "betterarcheology:chicken_fossil"
+					type: "item"
+				}
+				{
+					id: "6BFE380DC000D3E7"
+					item: "betterarcheology:ocelot_fossil"
 					type: "item"
 				}
 			]
@@ -1546,26 +1544,12 @@
 		}
 		{
 			dependencies: ["5D6D256D4DE35A5A"]
-			description: [
-				"老实说，现在该怀疑你是不是对垃圾桶有奇怪的癖好了"
-				"奖励你一个配色相同的盾牌好了（"
-			]
+			description: ["老实说，现在该怀疑你是不是对垃圾桶有奇怪的癖好了"]
 			id: "15FED36DE787B730"
 			invisible: true
 			rewards: [{
-				id: "128144164E5F396B"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"cold_sweat:item_insulation": {
-							Insulation: [ ]
-						}
-					}
-					id: "shieldexp:paragon_shield"
-					tag: {
-						Damage: 0
-					}
-				}
+				id: "409BDF8DC7709324"
+				item: "alexsmobs:chorus_on_a_stick"
 				type: "item"
 			}]
 			subtitle: "陷入沉思"

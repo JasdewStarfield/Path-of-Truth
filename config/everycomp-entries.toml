@@ -2,7 +2,62 @@
 #Disables certain types. Note that all these configs, like in any other mod, only hide stuff from tabs and disable their recipes
 [types]
 
+	[types.stone_type]
+
+		[types.stone_type.outer_end]
+			himmel = true
+
+		[types.stone_type.biomeswevegone]
+			white_sandstone = true
+			blue_sandstone = true
+			black_sandstone = true
+			purple_sandstone = true
+			pink_sandstone = true
+			windswept_sandstone = true
+			red_rock = true
+			dacite = true
+
+		[types.stone_type.create]
+			limestone = true
+			asurine = true
+			crimsite = true
+			ochrum = true
+			veridium = true
+			scoria = true
+			scorchia = true
+
+		[types.stone_type.botania]
+			livingrock = false
+
+		[types.stone_type.undergarden]
+			depthrock = true
+			shiverstone = true
+			tremblecrust = true
+
+		[types.stone_type.goety]
+			shade_stone = true
+			crypt_stone = true
+			highrock = true
+			siltstone = true
+
+		[types.stone_type.scguns]
+			phosphorite = true
+
+		[types.stone_type.blue_skies]
+			taratite = true
+			rimestone = true
+			brumble = true
+			umber = true
+			cinderstone = false
+
 	[types.cake]
+
+		[types.cake.farmersrespite]
+			coffee_cake = true
+
+		[types.cake.createaddition]
+			chocolate_cake = true
+			honey_cake = true
 
 		[types.cake.blue_skies]
 			comet_berry_pie = true
@@ -11,14 +66,13 @@
 			lime_cake = true
 			pomegranate_cake = true
 
-		[types.cake.createaddition]
-			chocolate_cake = true
-			honey_cake = true
-
-		[types.cake.farmersrespite]
-			coffee_cake = true
-
 	[types.wood_type]
+
+		[types.wood_type.createdieselgenerators]
+			chip_wood = true
+
+		[types.wood_type.netherexp]
+			claret = true
 
 		[types.wood_type.blue_skies]
 			crystallized = true
@@ -45,17 +99,11 @@
 		[types.wood_type.betterarcheology]
 			rotten = true
 
-		[types.wood_type.createdieselgenerators]
-			chip_wood = true
-
 		[types.wood_type.goety]
 			haunted = true
 			rotten = true
 			windswept = true
 			pine = true
-
-		[types.wood_type.netherexp]
-			claret = true
 
 		[types.wood_type.biomeswevegone]
 			aspen = true
@@ -170,88 +218,10 @@
 			yellow_spruce = true
 			firecracker = true
 
-	[types.stone_type]
-
-		[types.stone_type.botania]
-			livingrock = true
-
-		[types.stone_type.undergarden]
-			depthrock = true
-			shiverstone = true
-			tremblecrust = true
-
-		[types.stone_type.create]
-			limestone = true
-			asurine = true
-			crimsite = true
-			ochrum = true
-			veridium = true
-			scoria = true
-			scorchia = true
-
-		[types.stone_type.goety]
-			shade_stone = true
-			crypt_stone = true
-			highrock = true
-			siltstone = true
-
-		[types.stone_type.outer_end]
-			himmel = true
-
-		[types.stone_type.blue_skies]
-			taratite = true
-			rimestone = true
-			brumble = true
-			umber = true
-			cinderstone = true
-
-		[types.stone_type.scguns]
-			phosphorite = true
-
-		[types.stone_type.biomeswevegone]
-			white_sandstone = true
-			blue_sandstone = true
-			black_sandstone = true
-			purple_sandstone = true
-			pink_sandstone = true
-			windswept_sandstone = true
-			red_rock = true
-			dacite = true
-
 #Disables specific entries
 [entries]
 
 	[entries.wood_type]
-
-		[entries.wood_type.storagedrawers]
-			full_drawers_2 = true
-			half_drawers_1 = true
-			full_drawers_4 = true
-			half_drawers_4 = true
-			trim = true
-			half_drawers_2 = true
-			full_drawers_1 = true
-
-		[entries.wood_type.decorative_blocks]
-			beam = true
-			support = true
-			seat = true
-			palisade = true
-
-		[entries.wood_type.create]
-			window = true
-			window_pane = true
-
-		[entries.wood_type.farmersdelight]
-			cabinet = true
-
-		[entries.wood_type.vct]
-			crafting_table = true
-
-		[entries.wood_type.beautify]
-			trellis = true
-			blinds = true
-			picture_frame = true
 
 		[entries.wood_type.handcrafted]
 			counter = true
@@ -269,4 +239,34 @@
 			drawer = true
 			pillar_trim = true
 			side_table = true
+
+		[entries.wood_type.storagedrawers]
+			trim = true
+			full_drawers_2 = true
+			half_drawers_1 = true
+			full_drawers_4 = true
+			half_drawers_4 = true
+			half_drawers_2 = true
+			full_drawers_1 = true
+
+		[entries.wood_type.beautify]
+			trellis = true
+			blinds = true
+			picture_frame = true
+
+		[entries.wood_type.decorative_blocks]
+			beam = true
+			support = true
+			seat = true
+			palisade = true
+
+		[entries.wood_type.create]
+			window = true
+			window_pane = true
+
+		[entries.wood_type.farmersdelight]
+			cabinet = true
+
+		[entries.wood_type.vct]
+			crafting_table = true
 
