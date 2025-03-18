@@ -33,7 +33,6 @@ ServerEvents.recipes(event => {
       ["create:millstone", "grindstone"],
       ["create:encased_fan", "create:propeller"],
       ["create_power_loader:empty_andesite_chunk_loader", "glowstone"],
-      ["create_mechanical_extruder:mechanical_extruder", "kubejs:fluid_engineering"],
       ['createaddition:rolling_mill', '#forge:storage_blocks/iron'],
       ['vintageimprovements:spring_coiling_machine', 'vintageimprovements:spring_coiling_machine_wheel'],
       ['vintageimprovements:vibrating_table', "kubejs:basic_spring_set"]
@@ -70,7 +69,8 @@ ServerEvents.recipes(event => {
       ["create:stockpile_switch", "comparator"],
       ["create:rotation_speed_controller", "create:precision_mechanism"],
       ["create_power_loader:empty_brass_chunk_loader", "glowstone"],
-      ['vintageimprovements:belt_grinder', 'vintageimprovements:grinder_belt']
+      ['vintageimprovements:belt_grinder', 'vintageimprovements:grinder_belt'],
+      ["createcobblestone:mechanical_generator", "kubejs:fluid_engineering"]
     ]
     preciseEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:precise_engineering", material)

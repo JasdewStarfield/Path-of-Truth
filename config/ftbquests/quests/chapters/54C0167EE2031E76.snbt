@@ -578,7 +578,7 @@
 		}
 		{
 			dependencies: ["745F05143DD3D683"]
-			icon: "tfmg:aluminum_ingot"
+			icon: "immersiveengineering:ingot_aluminum"
 			id: "3ED6E1789C0B7C55"
 			rewards: [{
 				id: "13855F1646EDF90B"
@@ -919,7 +919,9 @@
 			dependencies: ["74581D474C09D62C"]
 			description: [
 				"觉得传统的钻头/挤压刷石机太卡/太麻烦？"
-				"试试动力造石机！只要相邻的方块满足条件，通入动力，它就可以自动进行流体接触配方的合成！"
+				"试试动力造石机！只要选择需要产出的石头种类（必须是正常情况下流体接触能产生的），通入动力，它就可以自动生成这个石头！"
+				""
+				"支持的石头类型：石头、圆石、玄武岩、熔渣、石灰岩。"
 			]
 			id: "7804D40DE4CE8B4D"
 			rewards: [
@@ -937,8 +939,16 @@
 			shape: "gear"
 			subtitle: "但这里提供了合理的解决方案"
 			tasks: [{
-				id: "2599993E98962C59"
-				item: "create_mechanical_extruder:mechanical_extruder"
+				id: "4208CB87F5272500"
+				item: {
+					Count: 1
+					id: "createcobblestone:mechanical_generator"
+					tag: {
+						BlockEntityTag: {
+							type: "none"
+						}
+					}
+				}
 				type: "item"
 			}]
 			title: "万事开头难"

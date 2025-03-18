@@ -3,8 +3,6 @@
 
 	#Properties relating to gameplay
 	[common.gameplay]
-		#If true, enables the draw animation for weapons
-		drawAnimation = true
 		#Multiplier to adjust the capacity of all ammo boxes.
 		#Range: 0.1 ~ 100.0
 		ammoBoxCapacityMultiplier = 1.0
@@ -38,10 +36,6 @@
 		#Energy produced per tick by the Polar Generator. Adjust this value to balance the generator's output.
 		#Range: > 1
 		energyProductionRate = 50
-		#If true, guns will always use energy system even if Create mod is loaded NOT WORKING.
-		forceEnergyGuns = false
-		#If true, guns will toggle ADS mode.
-		toggleADS = false
 
 		#Properties related to gun griefing
 		[common.gameplay.griefing]
@@ -56,10 +50,8 @@
 			fragileBlockBreakChance = 1.0
 			#If true, allows guns enchanted with Fire Starter to light and spread fires on blocks
 			setFireToBlocks = true
-			#If true, allows heavy rounds to break blocks
+			#If true, allows guns/lasers to break blocks
 			enableBlockBreaking = true
-			#If true, allows beam weapons to mine blocks
-			enableBeamMining = true
 
 		[common.gameplay.gameplay]
 			#Set to false to disable the spawning of casing items when firing guns.

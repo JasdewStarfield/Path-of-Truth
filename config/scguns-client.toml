@@ -1,5 +1,5 @@
 #If enabled, hides the config button from the backpack screen
-hideConfigButton = false
+hideConfigButton = true
 #The alignment of the buttons in the backpack inventory screen
 #Allowed Values: LEFT, RIGHT
 buttonAlignment = "RIGHT"
@@ -47,8 +47,6 @@ buttonAlignment = "RIGHT"
 		sprintingAnimation = true
 		#If enabled, renders a HUD element displaying the gun's ammo count and ammo capacity, as well as pulse weapon charge.
 		displayGunInfo = true
-		#If enabled, the HUD will display when inspecting the gun.
-		immersiveGunInfo = false
 		#The intensity of the custom bobbing animation while holding a gun
 		#Range: 0.0 ~ 2.0
 		bobbingIntensity = 1.0
@@ -56,30 +54,6 @@ buttonAlignment = "RIGHT"
 		cinematicGunEffects = true
 		#If enabled, enables light sources when firing guns
 		fireLights = true
-		#If enabled, enables purity seals on weapons
-		puritySeals = true
-		#The resting size of the Dynamic Crosshair when spread is zero.
-		#Range: 0.0 ~ 5.0
-		dynamicCrosshairBaseSpread = 1.0
-		#The bloom factor of the Dynamic Crosshair when spread increases.
-		#Range: 1.0 ~ 1.5
-		dynamicCrosshairSpreadMultiplier = 1.0
-		#How reactive the Dynamic Crosshair is to shooting.
-		#Range: 0.0 ~ 10.0
-		dynamicCrosshairReactivity = 2.0
-		#The rendering mode used for the Dynamic Crosshair's center dot. At Min Spread will only render the dot when gun spread is stable.
-		#Allowed Values: NEVER, AT_MIN_SPREAD, THRESHOLD, ALWAYS
-		dynamicCrosshairDotMode = "AT_MIN_SPREAD"
-		#If true, the Dynamic Crosshair's center dot will only render while aiming. Obeys dynamicCrosshairDotMode, and has no effect when mode is set to Never.
-		onlyRenderDotWhileAiming = true
-		#The threshold of spread (including modifiers) below which the Dynamic Crosshair's center dot is rendered. Affects the At Min Spread and Threshold modes only.
-		#Range: 0.0 ~ 90.0
-		dynamicCrosshairDotThreshold = 0.8
-		#The maximum scale factor for the dynamic crosshair when spread is high
-		#Range: 1.0 ~ 20.0
-		dynamicCrosshairMaxScale = 8.0
-		#If true, renders the player's arms when holding a gun
-		renderArms = true
 
 	#Properties relating to particles
 	[client.particle]
