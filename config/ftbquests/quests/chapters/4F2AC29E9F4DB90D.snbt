@@ -897,7 +897,9 @@
 		}
 		{
 			dependencies: ["2365843CB7C02588"]
+			description: [" 在高温高压下，红石溶解于水，生成红石酸"]
 			id: "3ACA6DDA21386252"
+			subtitle: "非常规手段"
 			tasks: [{
 				id: "3CA0380EB5FA21C0"
 				item: "immersiveengineering:redstone_acid_bucket"

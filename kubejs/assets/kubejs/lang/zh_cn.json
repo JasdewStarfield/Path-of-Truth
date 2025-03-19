@@ -55,6 +55,7 @@
   "item.kubejs.fire_elemental_core":"火元素核心",
   "item.kubejs.wind_elemental_core":"风元素核心",
   "item.kubejs.frostfire_double_plate": "霜火复合板",
+  "item.kubejs.battery_component": "电池组件",
   "item.kubejs.steel_mechanism": "钢铁构件",
   "item.kubejs.forgotten_mechanism": "遗忆构件",
   "item.kubejs.basic_spring_set": "基础弹簧组",
@@ -105,6 +106,7 @@
   "block.kubejs.logistical_engineering": "物流工程块",
   "block.kubejs.electronic_engineering": "电子工程块",
   "block.kubejs.steel_casing": "钢机壳",
+  "block.kubejs.factory_casing": "工厂机壳",
   "block.kubejs.bronze_block": "青铜块",
   "block.kubejs.broken_snowcap_oven": "损坏的雪帽熔炉",
 

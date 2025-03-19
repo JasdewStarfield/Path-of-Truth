@@ -300,14 +300,14 @@ ServerEvents.recipes(event => {
         'ABA',
         'CAD'  
     ], {
-        B: 'create:andesite_casing',
+        B: 'kubejs:factory_casing',
         A: '#forge:plates/cloggrum',
         D: 'kubejs:forgotten_mechanism',
         C: 'kubejs:steel_mechanism'
     })
     event.recipes.create.sequenced_assembly([
         'immersiveengineering:heavy_engineering'
-        ], 'create:andesite_casing', [
+        ], 'kubejs:factory_casing', [
         event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/cloggrum']),
         event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_heavy_engineering', 'kubejs:forgotten_mechanism']),
         event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_heavy_engineering', 'kubejs:steel_mechanism']),

@@ -516,7 +516,7 @@
 				id: "3428E89B02D0D20C"
 				max_input: 1000L
 				type: "forge_energy"
-				value: 114514L
+				value: 1145140L
 			}]
 			title: "证明你的能量霸权！"
 			x: 1.5d
@@ -668,7 +668,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 3.0d
+			y: 2.5d
 		}
 		{
 			dependencies: [
@@ -929,8 +929,8 @@
 			id: "724A0B71BA342AEE"
 			subtitle: "很重，很重要"
 			tasks: [{
-				id: "01630D7BDD3D44BF"
-				item: "tfmg:heavy_machinery_casing"
+				id: "7EE023596BA04852"
+				item: "kubejs:factory_casing"
 				type: "item"
 			}]
 			x: 8.0d

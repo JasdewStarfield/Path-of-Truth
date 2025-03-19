@@ -78,7 +78,8 @@ StartupEvents.registry('item', (event) => {
   event.create("crushed_raw_bauxite").displayName('Crushed Raw Bauxite')
   event.create("frostfire_double_plate").displayName('Frostfire Double Plate').texture('kubejs:item/undergarden_compat/frostfire_double_plate')
   
-	event.create("steel_mechanism").displayName('Steel Mechanism')
+	event.create("battery_component").displayName('Battery Component')
+  event.create("steel_mechanism").displayName('Steel Mechanism')
   event.create("unfinished_steel_mechanism", 'create:sequenced_assembly').displayName('Unfinished Steel Mechanism').texture('kubejs:item/unfinished_steel_mechanism')
   event.create("forgotten_mechanism").displayName('Forgotten Mechanism').texture('kubejs:item/forgotten_mechanism')
   event.create("incomplete_forgotten_mechanism", 'create:sequenced_assembly').displayName('Incomplete Forgotten Mechanism').texture('kubejs:item/incomplete_forgotten_mechanism')
