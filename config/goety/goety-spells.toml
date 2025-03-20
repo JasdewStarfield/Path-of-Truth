@@ -555,9 +555,9 @@
 		#Leaping Spell Summon Down, Default: 300
 		#Range: 300 ~ 72000
 		leapingSummonDown = 300
-		#Number of Leapleaves that an individual player can have in total, Default: 16
+		#Number of Leapleaves that an individual player can have in total, Default: 2
 		#Range: > 1
-		leapleafLimit = 16
+		leapleafLimit = 2
 		#Leaping Spell Cooldown, Default: 1200
 		#Range: > 0
 		leapingCoolDown = 1200

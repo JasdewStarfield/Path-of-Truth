@@ -72,7 +72,7 @@
 			chip_wood = true
 
 		[types.wood_type.netherexp]
-			cerebrage_claret = true
+			claret = true
 
 		[types.wood_type.blue_skies]
 			crystallized = true

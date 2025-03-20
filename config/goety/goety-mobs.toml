@@ -56,6 +56,9 @@
 	#Spawn Weight for Web Spiders, Default: 40
 	#Range: > 0
 	webSpiderSpawnWeight = 40
+	#Spawn Weight for Icy Spiders, Default: 40
+	#Range: > 0
+	icySpiderSpawnWeight = 40
 
 	[Misc.Vizier]
 		#Whether Viziers are persistent and do not naturally despawn. Default: false
@@ -140,6 +143,8 @@
 		#How much Soul Energy it cost per second for a Nether Servant to heal, Default: 1
 		#Range: > 0
 		netherMinionHealCost = 1
+		#Whether owned Wildfires drop Blazing Helms, Default: true
+		wildfireBlazingHelm = true
 		#Whether Nether Servants can heal if summoned while wearing Nether Robe, Default: true
 		netherMinionHeal = true
 
