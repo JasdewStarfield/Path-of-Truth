@@ -107,10 +107,6 @@
     "modId": "betterarcheology",
     "version": "1.2.1-1.20.1"
   },
-  "betterchunkloading-1.20.1-5.4.jar": {
-    "modId": "betterchunkloading",
-    "version": "1.20.1-5.4"
-  },
   "BetterCompatibilityChecker-forge-4.0.8+mc1.20.1.jar": {
     "modId": "bcc",
     "version": "4.0.8"
@@ -447,9 +443,9 @@
     "modId": "eccentrictome",
     "version": "1.20.1-1.10.3"
   },
-  "EclipticSeasons-1.20.1-forge-0.10-pre11-all.jar": {
+  "EclipticSeasons-1.20.1-forge-0.10-pre12-all.jar": {
     "modId": "eclipticseasons",
-    "version": "0.10-pre11"
+    "version": "0.10-pre12"
   },
   "ElysiumAPI-1.20.1-1.0.2.jar": {
     "modId": "elysium_api",
@@ -896,10 +892,6 @@
     "modId": "nebs",
     "version": "2.0.3"
   },
-  "Neruina-2.1.2-forge+1.20.1.jar": {
-    "modId": "neruina",
-    "version": "2.1.2"
-  },
   "netherdepthsupgrade-3.1.5-1.20.jar": {
     "modId": "netherdepthsupgrade",
     "version": "3.1.5-1.20"
@@ -1055,10 +1047,6 @@
   "refinedstorageaddons-0.10.0.jar": {
     "modId": "refinedstorageaddons",
     "version": "0.10.0"
-  },
-  "repurposed_structures-7.1.15+1.20.1-forge.jar": {
-    "modId": "repurposed_structures",
-    "version": "7.1.15+1.20.1-forge"
   },
   "resourcefulconfig-forge-1.20.1-2.1.3.jar": {
     "modId": "resourcefulconfig",
@@ -1284,9 +1272,9 @@
     "modId": "toofast",
     "version": "0.4.3.5"
   },
-  "trailandtales_delight-0.3.1-all.jar": {
+  "trailandtales_delight-0.3.5-all.jar": {
     "modId": "trailandtales_delight",
-    "version": "0.3.1"
+    "version": "0.3.5"
   },
   "trashcans-1.0.18b-forge-mc1.20.jar": {
     "modId": "trashcans",
@@ -1332,6 +1320,10 @@
     "modId": "vintageimprovements",
     "version": "1.20.1-0.2.0.3"
   },
+  "visual_keybinder-1.20.1 - 0.1.7.jar": {
+    "modId": "visual_keybinder",
+    "version": "1.20.1 - 0.1.7"
+  },
   "visuality-forge-2.0.2.jar": {
     "modId": "visuality",
     "version": "2.0.2"
@@ -1371,38 +1363,6 @@
   "YungsApi-1.20-Forge-4.0.6.jar": {
     "modId": "yungsapi",
     "version": "1.20-Forge-4.0.6"
-  },
-  "YungsBetterDesertTemples-1.20-Forge-3.0.3.jar": {
-    "modId": "betterdeserttemples",
-    "version": "1.20-Forge-3.0.3"
-  },
-  "YungsBetterEndIsland-1.20-Forge-2.0.6.jar": {
-    "modId": "betterendisland",
-    "version": "1.20-Forge-2.0.6"
-  },
-  "YungsBetterJungleTemples-1.20-Forge-2.0.5.jar": {
-    "modId": "betterjungletemples",
-    "version": "1.20-Forge-2.0.5"
-  },
-  "YungsBetterMineshafts-1.20-Forge-4.0.4.jar": {
-    "modId": "bettermineshafts",
-    "version": "1.20-Forge-4.0.4"
-  },
-  "YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar": {
-    "modId": "betterfortresses",
-    "version": "1.20-Forge-2.0.6"
-  },
-  "YungsBetterOceanMonuments-1.20-Forge-3.0.4.jar": {
-    "modId": "betteroceanmonuments",
-    "version": "1.20-Forge-3.0.4"
-  },
-  "YungsBetterStrongholds-1.20-Forge-4.0.3.jar": {
-    "modId": "betterstrongholds",
-    "version": "1.20-Forge-4.0.3"
-  },
-  "YungsBetterWitchHuts-1.20-Forge-3.0.3.jar": {
-    "modId": "betterwitchhuts",
-    "version": "1.20-Forge-3.0.3"
   },
   "YungsMenuTweaks-1.20.1-Forge-1.0.2.jar": {
     "modId": "yungsmenutweaks",
