@@ -152,6 +152,16 @@ ServerEvents.recipes(event => {
         ],
         50000
     )
+    //炼制凋零骷髅刷怪蛋
+    event.recipes.botania.runic_altar('minecraft:wither_skeleton_spawn_egg', 
+        [
+            '#forge:eggs', 
+            'minecraft:wither_skeleton_skull',
+            'scguns:nether_star_fragment',
+            'botania:spark'
+        ], 
+        50000
+    )
 
     //魔力充能配方修正
     //种子转化
@@ -609,6 +619,7 @@ ServerEvents.recipes(event => {
         "show_notification": true
     })
     
+    //泰拉合成系列修改
     //创造魔力石板合成
     event.recipes.botania.terra_plate(Item.of('botania:mana_tablet', '{creative:1b,mana:500000}'), 
         [
@@ -635,6 +646,17 @@ ServerEvents.recipes(event => {
             'botania:corporea_spark'
         ],
         50000
+    )
+    //音爆聚晶合成
+    event.remove({id:'goety:focus/sonic_boom_focus'})
+    event.recipes.botania.terra_plate('goety:sonic_boom_focus',
+        [
+            'goety:blink_focus',
+            'irons_spellbooks:upgrade_orb',   
+            'goety:arca_compass',
+            'alexsmobs:farseer_arm'
+        ],
+        200000
     )
     //个人头像合成（终末产物）
     event.recipes.botania.terra_plate('kubejs:midnight', 

@@ -42,7 +42,7 @@
 				"0C46182EC4B33189"
 			]
 			description: [
-				"如果你发现你缺少合成异彩化合物的材料……请确保你已经做完了整个工业线和魔法线。"
+				"如果你发现你缺少某些材料……请确保你已经做完了整个工业线和魔法线。"
 				""
 				"现在，喝杯咖啡平静一下，做好心理准备，因为你即将触及游戏的边界，触及“真理”。（好吧，也没有"
 				"那么快）"
@@ -70,11 +70,6 @@
 				{
 					id: "5CAA50EB0779626E"
 					item: "kubejs:midnight"
-					type: "item"
-				}
-				{
-					id: "2093C3E9E4788595"
-					item: "createchromaticreturn:chromatic_compound"
 					type: "item"
 				}
 			]

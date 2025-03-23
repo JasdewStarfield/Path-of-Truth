@@ -383,7 +383,7 @@ ServerEvents.recipes(event => {
         "soulCost": 50000,
         "ingredients": [
             {
-                "item": "goety:unholy_blood"
+                "item": 'botania:gaia_ingot'
             },
             {
                 "item": "minecraft:spawner"
@@ -447,6 +447,26 @@ ServerEvents.recipes(event => {
         ],
         "result": {
             "item": 'goety:night_beacon'
+        }
+    })
+    //索命聚晶修改
+    event.remove({id:'goety:focus/killing_focus'})
+    event.custom({
+        "type": "goety:brazier",
+        "soulCost": 50000,
+        "ingredients": [
+            {
+                "item": 'goety:osseous_focus'
+            },
+            {
+                "item": 'botania:spawner_mover'
+            },
+            {
+                "item": 'goety:unholy_blood'
+            }
+        ],
+        "result": {
+            "item": 'goety:killing_focus'
         }
     })
 

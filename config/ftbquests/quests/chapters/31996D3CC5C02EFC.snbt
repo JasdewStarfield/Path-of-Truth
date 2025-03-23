@@ -90,6 +90,14 @@
 			x: -2.0d
 			y: 2.5d
 		}
+		{
+			height: 1.6d
+			image: "minecraft:textures/particle/goldheart_2.png"
+			rotation: 0.0d
+			width: 1.6d
+			x: -1.0d
+			y: 0.0d
+		}
 	]
 	order_index: 1
 	quest_links: [ ]
@@ -97,7 +105,7 @@
 		{
 			dependencies: ["301A6952E3B16C88"]
 			description: [
-				"以&a死灵的火焰&r配合&4使徒的血液&r压缩刷怪笼，就可以在一场&6漫长的熔铸&r后得到&5炼金术一道的终极成就：贤者之石&r。"
+				"以&a死灵的火焰&r配合&3盖亚的灵魂&r压缩刷怪笼，就可以在一场&6漫长的熔铸&r后得到&5炼金术一道的终极成就：贤者之石&r。"
 				"它显然可以被用来&6复制黄金&r——但那是它最粗糙的用法。"
 				"虽然使用过程中显然会消耗能量，但是它能通过&b自动抽取灵魂能量或置入灵魂修补器&r来填补，毕竟最重要的是载体。"
 				""
@@ -134,24 +142,23 @@
 			description: [
 				"现在你可以通过特定的手段创建和复制顶级生命。"
 				"其中，&d瞻远者需要通过魔法手段创造&r，而相对应的&a遗忆守卫需要通过工业元件创造&r。"
+				"瞻远者&b经边境之地淬炼过的激光长臂&r将帮助你压制魔力核心。"
 				"&o&9*有别的生命也可以通过材料创造并用魔力复制，但这需要你自行探究，例如神秘蠕虫。&r&r"
 			]
 			icon: "artifacts:crystal_heart"
 			id: "059A741ABF2A9A34"
+			rewards: [{
+				id: "5552238381243D72"
+				item: "undergarden:forgotten_ingot"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "以魔法复刻生命！"
-			tasks: [
-				{
-					id: "1E82DD823E1D0ED9"
-					item: "alexsmobs:spawn_egg_farseer"
-					type: "item"
-				}
-				{
-					id: "7C1C84A966E8A5A3"
-					item: "undergarden:forgotten_guardian_spawn_egg"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1E82DD823E1D0ED9"
+				item: "alexsmobs:spawn_egg_farseer"
+				type: "item"
+			}]
 			title: "巅峰炼金术"
 			x: -1.0d
 			y: 0.0d
@@ -392,7 +399,7 @@
 		{
 			dependencies: ["12134A3EF6C80C54"]
 			description: [
-				"通过&d贤者之石炼制&r和&a增生之种的生命催化&r，现在你可以复制复刻凝胶了。"
+				"通过&d贤者之石炼制&r和&a增生之种的生命催化&r，现在你可以复制&5末地城复刻怪掉落的复刻凝胶&r了。"
 				"只要你有一件装备，足够的增生之种和&b足够的灵魂能量&r，那么你就拥有了更多的装备——然而这个过程&4需要手动&r，复制出的装备也需要灵魂能量修复。"
 				"炼金与生命的结合魅力就在于此。"
 			]
@@ -415,11 +422,16 @@
 		{
 			dependencies: ["059A741ABF2A9A34"]
 			description: [
-				"将&b最强大的魔力材料与灵魂共振&r，并将其在仪式中融为一炉，魔力与灵魂之间的关联就将被你固化为实体——并用于&5击穿世界规则的屏障&r。"
+				"将&b最强大的魔力材料与灵魂共振&r，并将其在魔能振荡中融为一炉，魔力与灵魂之间的关联就将被你固化为实体——并用于&5击穿世界规则的屏障&r。"
 				"当然，它也可以&c击穿所有敌人的护甲&r。"
 				"&o&7用于在终末仪式中作为魔力与灵魂的载体。&r&r"
 			]
 			id: "07755877DAE443D1"
+			rewards: [{
+				id: "0E764B750758C0E2"
+				item: "alexsmobs:soul_heart"
+				type: "item"
+			}]
 			shape: "hexagon"
 			subtitle: "灵魂鸣泣之时"
 			tasks: [{
@@ -439,6 +451,11 @@
 				"&o&7用于在终末仪式中渲染黑暗与末影。&r&r"
 			]
 			id: "4AB31A29B0259561"
+			rewards: [{
+				id: "7B32A31AE3D20C68"
+				item: "goety:corruption_focus"
+				type: "item"
+			}]
 			shape: "hexagon"
 			subtitle: "绽放的黑暗之花"
 			tasks: [{
@@ -454,10 +471,15 @@
 			dependencies: ["71BB0BEA50C791E2"]
 			description: [
 				"在&3最黑暗的地方&r，聚合生与死对应的材料，将其强行压入聚晶，你就会获得“以命换命”的力量。"
-				"虽然你的生命&c很难支撑起对于强大生物的一换一&r，但这至少证明你通晓了这一规则。"
+				"虽然你的生命&c只能支撑起对于强大生物的一换一&r，但这至少证明你通晓了这一规则，你也可以通过&d铁魔法的“止心术”&r来临时压制这一规则……烧半管血换天下无敌。"
 				"&o&7用于在终末仪式中注入生死规则。&r&r"
 			]
 			id: "735DE2EF56DEF309"
+			rewards: [{
+				id: "768E964B4CF6DC6B"
+				item: "betterarcheology:creeper_fossil"
+				type: "item"
+			}]
 			shape: "hexagon"
 			subtitle: "一线之隔……"
 			tasks: [{
@@ -501,7 +523,7 @@
 			]
 			description: [
 				"尽管魔力的爆裂会带来毁灭性的灾难，但&a以这种强大的魔力流催化猩红神杖&r后，它将绽放出相当美妙的花朵状结构。"
-				"用于在仪式中&2对聚晶注入极强的生命力量&r。"
+				"&2可以为聚晶注入极强的生命力量&r。"
 				""
 				"&o&7*它同样可以移动刷怪笼，并且不需要诅咒之笼作为载体，但是是一次性的——这显然不值得。&r&r"
 			]
