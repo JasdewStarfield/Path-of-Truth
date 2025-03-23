@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
                 "item":'sophisticatedbackpacks:iron_backpack'
             },
             "D":{
-                "item":'minecraft:bedrock'
+                "item":'goety:soul_emerald'
             },
             "E":{
                 "item":'botania:terrasteel_ingot'
@@ -79,10 +79,10 @@ ServerEvents.recipes(event => {
                 "item":'sophisticatedbackpacks:gold_backpack'
             },
             "D":{
-                "item":'minecraft:bedrock'
+                "item":'goety:dark_ingot'
             },
             "E":{
-                "item":'minecraft:bedrock'
+                "item":'botania:gaia_ingot'
             },
             "F":{
                 "item":'botania:mana_diamond'

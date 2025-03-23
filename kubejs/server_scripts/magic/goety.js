@@ -29,6 +29,25 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'minecraft',output:'minecraft:lodestone'},
         'minecraft:netherite_ingot' , '#forge:ingots/steel')
     
+    //灵质-灵质桶互相转化
+    event.shaped(
+        Item.of('netherexp:ectoplasm_bucket'),
+        [
+            'AAA',
+            'ABA',
+            'AAA'
+        ],
+        {
+            B: 'minecraft:bucket',
+            A: 'goety:ectoplasm'
+        }
+    )
+    event.shapeless(Item.of('goety:ectoplasm', 8),
+        [
+            'netherexp:ectoplasm_bucket'
+        ]
+    )
+
     //灵魂图腾移除与新激活
     event.remove({output:'goety:totem_of_souls'})
     //耗尽的灵魂图腾合成
