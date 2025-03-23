@@ -17,6 +17,10 @@
 	quests: [
 		{
 			dependencies: ["4BED26108E90A0CC"]
+			description: [
+				"右键瞄准，左键发射！"
+				"一个全新的战斗时代已经在你面前展开……"
+			]
 			icon: {
 				Count: 1
 				id: "scguns:flintlock_pistol"
@@ -28,6 +32,7 @@
 			id: "40D34B60BD7011DD"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "从最基础的枪械开始……"
 			tasks: [{
 				id: "4510A9F401CC26C1"
 				title: "好耶"
@@ -42,6 +47,7 @@
 			icon: "ftbquests:book"
 			id: "7D72C735D145F763"
 			shape: "diamond"
+			subtitle: "简易枪械"
 			tasks: [
 				{
 					id: "54082D6060DEFE53"
@@ -114,6 +120,7 @@
 			dependencies: ["40D34B60BD7011DD"]
 			id: "0AA2D4BA3B7F99BF"
 			shape: "diamond"
+			subtitle: "枪总是需要火药的"
 			tasks: [{
 				id: "51979227F5C1917C"
 				item: "minecraft:gunpowder"
@@ -224,6 +231,7 @@
 			id: "548E55016926A7C4"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "超越想象"
 			tasks: [{
 				id: "6B37F6FC8AA15B87"
 				item: "scguns:scorched_blueprint"

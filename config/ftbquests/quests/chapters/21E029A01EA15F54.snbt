@@ -20,10 +20,11 @@
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
+			order: 2
 			rotation: 0.0d
 			width: 1.1149863760217984d
 			x: 0.0d
-			y: 5.0d
+			y: 7.0d
 		}
 		{
 			height: 2.0d
@@ -39,6 +40,38 @@
 			rotation: 0.0d
 			width: 3.0d
 			x: 0.0d
+			y: 0.0d
+		}
+		{
+			height: 4.0d
+			image: "irons_spellbooks:item/hogskin"
+			rotation: -90.0d
+			width: 4.0d
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			height: 4.0d
+			image: "refinedstorage:block/controller/cutouts/light_blue"
+			rotation: 0.0d
+			width: 4.0d
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			height: 3.0d
+			image: "irons_spellbooks:item/affinity_ring_blood"
+			rotation: 0.0d
+			width: 3.0d
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			height: 2.5d
+			image: "minecraft:block/respawn_anchor_top"
+			rotation: 45.0d
+			width: 2.5d
+			x: 6.0d
 			y: 0.0d
 		}
 	]
@@ -357,7 +390,7 @@
 				item: "goety:cursed_cage"
 				type: "item"
 			}]
-			title: "刷怪笼……？"
+			title: "刷怪笼（伪）"
 			x: 6.0d
 			y: 0.0d
 		}

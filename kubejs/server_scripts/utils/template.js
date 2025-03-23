@@ -141,7 +141,7 @@ goety系列配方记录
             "item": "goety:jei_dummy/none"//空输出
         }
     })
-    //死灵火盆模板
+    //死灵火盆模板（最多只能有五个输入）
     event.custom({
         "type": "goety:brazier",
         "soulCost": 2000,

@@ -58,14 +58,48 @@ ServerEvents.recipes(event => {
         ]
     )
 
-    //暗黑莲花修改
-    event.recipes.botania.petal_apothecary('botania:blacker_lotus', 
+    //黑莲花修改
+    event.shaped(
+        Item.of('botania:black_lotus'),
         [
-            'botania:black_lotus',
-            'irons_spellbooks:ender_upgrade_orb',
-            'createdieselgenerators:asphalt_block'
-        ]
+            'ABA',
+            'BCB',
+            'ABA'
+        ],
+        {
+            A: 'botania:ender_air_bottle',
+            B: 'botania:black_petal',
+            C: 'create:powdered_obsidian'
+        }
     )
+    //暗黑莲花修改
+    event.custom({
+        "type": "goety:ritual",
+        "ritual_type": "goety:craft",//仪式主类型（制作）
+        "activation_item": {
+            "item": 'goety:night_beacon'//中心物品
+        },
+        "craftType": "sabbath",//仪式副类型（安息）
+        "soulCost": 100,//每秒消耗
+        "duration": 60,//时长
+        "ingredients": [
+            {
+                "item": 'botania:black_lotus'
+            },
+            {
+                "item": 'botania:black_lotus'
+            },
+            {
+                "item": 'botania:black_lotus'
+            },
+            {
+                "item": 'botania:black_lotus'
+            }
+        ],
+        "result": {
+            "item": 'botania:blacker_lotus'//实际产出
+        }
+    })
 
     //修改魔力池配方以及移除神话魔力池配方
     event.remove({ output: 'botania:mana_pool' })
@@ -154,6 +188,8 @@ ServerEvents.recipes(event => {
     event.recipes.botania.mana_infusion('vintageimprovements:sulfur', 'minecraft:blaze_powder', 100, 'botania:alchemy_catalyst')
     //移除原有火药配方
     event.remove({id:'botania:mana_infusion/flint_to_gunpowder'})
+    //禁书碎片转化远古知识碎片
+    event.recipes.botania.mana_infusion('goety:forbidden_piece', 'irons_spellbooks:ancient_knowledge_fragment', 10000, 'botania:alchemy_catalyst')
     //刷怪蛋复制：遗忆守卫，瞻远者，宝箱怪，潜影贝，凋零骷髅，远古骑士
     event.recipes.botania.mana_infusion('2x undergarden:forgotten_guardian_spawn_egg', 'undergarden:forgotten_guardian_spawn_egg', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x alexsmobs:spawn_egg_farseer', 'alexsmobs:spawn_egg_farseer', 50000,'botania:conjuration_catalyst')
@@ -163,14 +199,12 @@ ServerEvents.recipes(event => {
     event.recipes.botania.mana_infusion('2x irons_spellbooks:armor_pile', 'irons_spellbooks:armor_pile', 50000,'botania:conjuration_catalyst')
     //遗忆锭转化钻石1:2
     event.recipes.botania.mana_infusion('2x minecraft:diamond', 'undergarden:forgotten_ingot', 1000,'botania:alchemy_catalyst')
-    //龙皮复制
+    //龙皮，海洋之心，疣猪兽皮，奥术残骸，龙息复制
     event.recipes.botania.mana_infusion('2x irons_spellbooks:dragonskin', 'irons_spellbooks:dragonskin', 5000,'botania:conjuration_catalyst')
-    //海洋之心复制
     event.recipes.botania.mana_infusion('2x minecraft:heart_of_the_sea', 'minecraft:heart_of_the_sea', 50000,'botania:mana_bomb')
-    //疣猪兽皮复制
     event.recipes.botania.mana_infusion('2x irons_spellbooks:hogskin', 'irons_spellbooks:hogskin', 1000,'botania:mana_bomb')
-    //奥术残骸碎片复制
     event.recipes.botania.mana_infusion('2x irons_spellbooks:arcane_salvage', 'irons_spellbooks:arcane_salvage', 10000,'botania:conjuration_catalyst')
+    event.recipes.botania.mana_infusion('2x minecraft:dragon_breath', 'minecraft:dragon_breath', 500,'botania:conjuration_catalyst')
     //瞻远者蛋转化瞻远者之臂
     event.recipes.botania.mana_infusion('alexsmobs:farseer_arm', 'alexsmobs:spawn_egg_farseer', 50000,'botania:mana_bomb')
     //生命聚合器配方替换
@@ -401,7 +435,6 @@ ServerEvents.recipes(event => {
             'minecraft:dragon_egg',
             'minecraft:end_crystal',
             '#forge:eggs',
-            'alexsmobs:farseer_arm',
             'botania:corporea_spark',
             'goety:philosophers_stone'
         ]
@@ -606,14 +639,12 @@ ServerEvents.recipes(event => {
     //个人头像合成（终末产物）
     event.recipes.botania.terra_plate('kubejs:midnight', 
         [
-            'minecraft:dragon_egg', 
+            'goety:sonic_boom_focus', 
             'irons_spellbooks:mana_upgrade_orb',
-            'botania:mana_bomb',
-            'minecraft:beacon',
-            'minecraft:budding_amethyst',
-            'minecraft:bedrock',
-            'alexsmobs:transmutation_table',
-            'botania:blacker_lotus'
+            'goety:killing_focus',
+            'irons_spellbooks:cooldown_upgrade_orb',
+            'botania:blacker_lotus',
+            'irons_spellbooks:protection_upgrade_orb'
         ], 
         500000
     )

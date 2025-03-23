@@ -35,10 +35,10 @@
 			y: -5.5d
 		}
 		{
-			height: 0.8d
+			height: 2.0d
 			image: "createnuclear:block/enriching/fire/fire_0"
 			rotation: 0.0d
-			width: 0.8d
+			width: 2.0d
 			x: 0.0d
 			y: 3.0d
 		}
@@ -127,7 +127,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["4CD0C386D02D482E"]
+			dependencies: ["5A5B1D96C50D1EAE"]
 			description: [
 				"终于，你碰到了占地最大，功能最强的一种被动产能花。"
 				"&o&m&c虽然产魔速率甚至不如火红莲&r&r&r"
@@ -239,21 +239,20 @@
 			]
 			icon: "decorative_blocks:soul_brazier"
 			id: "4CD0C386D02D482E"
+			rewards: [{
+				count: 4
+				id: "5474CB019BA74E16"
+				item: "goety:soul_candlestick"
+				type: "item"
+			}]
 			shape: "hexagon"
 			size: 1.2d
 			subtitle: "照亮深暗"
-			tasks: [
-				{
-					id: "2D1F4F4EB2CD376C"
-					item: "goety:necro_brazier"
-					type: "item"
-				}
-				{
-					id: "1D33E0FF96E3717B"
-					item: "goety:soul_candlestick"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2D1F4F4EB2CD376C"
+				item: "goety:necro_brazier"
+				type: "item"
+			}]
 			title: "燃烧灵魂"
 			x: 0.0d
 			y: 1.9000000000000004d
@@ -324,7 +323,7 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["4CD0C386D02D482E"]
+			dependencies: ["5A5B1D96C50D1EAE"]
 			description: [
 				"唯一需要仪式来凝聚的核心，借用风暴之力，结合要素将其固化。"
 				"为了&b寒风中的灵魂回响&r，也许你需要去&9冰冻深海&r……那里的危险生物会带有灵魂的执念。"

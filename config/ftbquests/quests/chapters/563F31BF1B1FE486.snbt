@@ -318,7 +318,7 @@
 				}
 				type: "item"
 			}]
-			title: "活化物品"
+			title: "哲人石"
 			x: 0.0d
 			y: -10.0d
 		}
@@ -350,16 +350,17 @@
 			y: -11.0d
 		}
 		{
-			dependencies: ["7B4BE516F4D4E494"]
+			dependencies: ["07FA33846E7A5B3D"]
 			id: "7A0D894A5227359D"
 			subtitle: "无羁魔力"
 			tasks: [{
-				id: "1B6941284D379213"
-				item: "botania:mana_bomb"
+				id: "3BCCF21AE183461F"
+				item: "goety:killing_focus"
 				type: "item"
 			}]
+			title: "生死一线"
 			x: -2.0d
-			y: -11.0d
+			y: -13.0d
 		}
 		{
 			dependencies: ["7B4BE516F4D4E494"]
@@ -382,7 +383,11 @@
 			y: -11.5d
 		}
 		{
-			dependencies: ["1704AC9884507C0B"]
+			dependencies: [
+				"1704AC9884507C0B"
+				"316031CF88C55DEB"
+				"7A0D894A5227359D"
+			]
 			id: "697B1277B1C95490"
 			shape: "hexagon"
 			subtitle: "真相的通行证"
@@ -505,7 +510,7 @@
 		{
 			dependencies: ["7B4BE516F4D4E494"]
 			id: "1704AC9884507C0B"
-			subtitle: "集成灵魂"
+			subtitle: "魔力-灵魂集成体"
 			tasks: [{
 				id: "0C1D16C3C4437557"
 				item: "goety:sonic_boom_focus"
@@ -513,6 +518,30 @@
 			}]
 			x: 0.0d
 			y: -12.0d
+		}
+		{
+			dependencies: ["7B4BE516F4D4E494"]
+			id: "07FA33846E7A5B3D"
+			subtitle: "无羁魔力"
+			tasks: [{
+				id: "0F01A8E05E982E5F"
+				item: "botania:mana_bomb"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["11809308EF757592"]
+			id: "316031CF88C55DEB"
+			subtitle: "至暗时刻"
+			tasks: [{
+				id: "49EB98441BA1904D"
+				item: "botania:blacker_lotus"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -13.0d
 		}
 	]
 	subtitle: ["Magic Progressions"]

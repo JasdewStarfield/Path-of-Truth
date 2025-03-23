@@ -1,28 +1,9 @@
 //需求配方列表
-    //酋长蟹炼制
     //碎铁矿兑换炙铁碎矿
     //榴石，月长和透辉的兑换
-    //虚空蠕虫之眼制造瞻远者刷怪蛋
-    //箱子炼制宝箱怪
-    //潜影盒活化为潜影贝
-    //魔力风暴催化
-    //复刻凝胶变化
-    //硫磺转烈焰粉
-    //盖亚之魂合成奥术残骸
-    //灰烬源质转化
-    //原版蘑菇-双孢菇转化
-    //海潮蛤-鹦鹉螺壳转化
     //点盖亚成下界合金
     //点下界合金成遗忆锭
-    //下界合金盔甲注入盖亚之魂活化
     //点钻成绛紫晶
-    //磁铁升级（红石-铁金）
-    //龙蛋催化
-    //凋零骷髅刷怪蛋合成
-    //下界之星聚合
-    //矿物处理（其他矿脉适配）
-    //感谢工业完成的碎矿，这样魔法就可以直接接入了
-    //榴石，月长石，透辉石，霜钢，扼塞，缪铁，炙铁，绛紫晶，锌，锡
 
 ServerEvents.recipes(event => {
     //根之图腾移除与合成
@@ -186,6 +167,21 @@ ServerEvents.recipes(event => {
             A: 'irons_spellbooks:blood_upgrade_orb'
         }
     )
+    //下界之星复制
+    event.shaped(
+        Item.of('minecraft:nether_star', 4),
+        [
+            'ABC',
+            'BDB',
+            'CBA'
+        ],
+        {
+            C: 'aquamirae:ship_graveyard_echo',
+            A: 'minecraft:ender_eye',
+            D: 'goety:philosophers_stone',
+            B: 'scguns:nether_star_fragment'
+        }
+    )
 
     //诅咒注入系列配方
     //灵质转化
@@ -223,6 +219,15 @@ ServerEvents.recipes(event => {
         },
         "result": 'minecraft:gunpowder',
         "cookingTime": 60
+    })
+    //远古知识碎片转化禁书碎片
+    event.custom({
+        "type": "goety:cursed_infuser_recipes",
+        "ingredient": {
+            "item": 'irons_spellbooks:ancient_knowledge_fragment'
+        },
+        "result": 'goety:forbidden_piece',
+        "cookingTime": 1200
     })
 
 
@@ -296,6 +301,40 @@ ServerEvents.recipes(event => {
             "item": 'minecraft:spawner'//实际产出
         }
     })
+    //瞻远者刷怪蛋合成
+    event.custom({
+        "type": "goety:ritual",
+        "ritual_type": "goety:craft",//仪式主类型（制作）
+        "activation_item": {
+            "item": "goety:cursed_cage"//中心物品
+        },
+        "craftType": "animation",//仪式副类型（活力）
+        "soulCost": 500,//每秒消耗
+        "duration": 60,//时长
+        "ingredients": [
+            {
+                "item": 'goety:philosophers_stone'
+            },
+            {
+                "tag": 'forge:eggs'
+            },
+            {
+                "item": 'goety:soul_emerald'
+            },
+            {
+                "item": 'botania:light_relay'
+            },
+            {
+                "item": 'alexsmobs:void_worm_eye'
+            },
+            {
+                "item": 'kubejs:charoite_dust'
+            }
+        ],
+        "result": {
+            "item": 'alexsmobs:spawn_egg_farseer'//实际产出
+        }
+    })
     
 
     //死灵火盆系列配方
@@ -337,9 +376,6 @@ ServerEvents.recipes(event => {
                 "item": "irons_spellbooks:arcane_salvage"
             },
             {
-                "item": "kubejs:charoite_dust"
-            },
-            {
                 "item": "goety:empty_focus"
             }
         ],
@@ -347,4 +383,52 @@ ServerEvents.recipes(event => {
             "item": "goety:philosophers_stone"
         }
     })
+    //下界合金盔甲催化
+    event.custom({
+        "type": "goety:brazier",
+        "soulCost": 10000,
+        "ingredients": [
+            {
+                "item": 'minecraft:netherite_chestplate'
+            },
+            {
+                "item": 'botania:life_essence'
+            },
+            {
+                "item": 'goety:ectoplasm'
+            },
+            {
+                "item": 'minecraft:soul_lantern'
+            }
+        ],
+        "result": {
+            "item": 'irons_spellbooks:armor_pile'
+        }
+    })
+    //暗夜信标制作
+    event.custom({
+        "type": "goety:brazier",
+        "soulCost": 25000,
+        "ingredients": [
+            {
+                "item": 'minecraft:beacon'
+            },
+            {
+                "item": 'goety:dark_anvil'
+            },
+            {
+                "item": 'botania:black_hole_talisman'
+            },
+            {
+                "item": 'minecraft:dragon_egg'
+            },
+            {
+                "item": 'irons_spellbooks:ender_upgrade_orb'
+            }
+        ],
+        "result": {
+            "item": 'goety:night_beacon'
+        }
+    })
+
 })
