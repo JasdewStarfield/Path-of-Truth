@@ -187,7 +187,7 @@ ServerEvents.recipes(event => {
   ], {
     A: 'irons_spellbooks:lightning_bottle',
     B: '#forge:plates/steel',
-    D: '#forge:wires/constantan'
+    D: 'immersiveengineering:component_iron'
   })
 
   //电容器
@@ -250,6 +250,27 @@ ServerEvents.recipes(event => {
     D: 'kubejs:precise_engineering',
     E: 'create:shaft'
   })
+  event.recipes.vintageimprovements.turning(Item.of('create:fluid_pipe', 16), '#forge:storage_blocks/constantan')
+
+  //零件（直接合成）
+  event.shaped('immersiveengineering:component_iron', [ 
+    'CAC', 
+    'ABA',
+    'CAC'  
+    ], {
+    A: '#blue_skies:gems/pyrope',
+    B: 'kubejs:advanced_spring_set',
+    C: '#forge:plates/iron'
+  })
+  event.shaped('immersiveengineering:component_steel', [ 
+    'CAC', 
+    'ABA',
+    'CAC'  
+    ], {
+    A: '#blue_skies:nuggets/falsite',
+    B: 'kubejs:advanced_spring_set',
+    C: '#forge:plates/steel'
+  })
 
   //末影碎片
   event.remove({id:"endersdelight:cutting/ender_shard"})
@@ -271,6 +292,22 @@ ServerEvents.recipes(event => {
   //紫水晶
   event.remove({id:"createutilities:sandpaper_polishing/polished_amethyst"})
   event.recipes.vintageimprovements.polishing('createutilities:polished_amethyst', '#forge:gems/amethyst').speedLimits(2).fragile()
+
+  //模具
+  const moldTypes = [
+    "mold_plate",
+    "mold_gear",
+    "mold_rod",
+    "mold_bullet_casing",
+    "mold_wire",
+    "mold_packing_4",
+    "mold_packing_9",
+    "mold_unpacking"
+  ]
+  moldTypes.forEach( id => {
+    event.remove({id:"immersiveengineering:blueprint/"+id})
+    event.recipes.vintageimprovements.turning(Item.of('immersiveengineering:'+id), 'kubejs:mold_blank_steel')
+  })
 
   //发电
   /*

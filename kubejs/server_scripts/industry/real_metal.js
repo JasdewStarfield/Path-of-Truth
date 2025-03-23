@@ -5,11 +5,6 @@ ServerEvents.recipes(event => {
     '#forge:ingots/iron',            // Arg 2: the item to replace
     '#forge:storage_blocks/copper'
   )
-  event.replaceInput(
-      { id: 'immersiveengineering:crafting/blueprint_components' }, // Arg 1: the filter
-      '#forge:ingots/aluminum',            // Arg 2: the item to replace
-      '#forge:ingots/steel'
-  )
 
   event.remove({id:/create_compressed\:splashing\/.*/})
   event.remove({id:/scguns\:create\/.*_splashing.*/, not: { output: "create_compressed:dough_block" }})

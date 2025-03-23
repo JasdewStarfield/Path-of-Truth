@@ -110,7 +110,7 @@ ServerEvents.recipes(event => {
     event.replaceInput(
       { output:"immersiveengineering:workbench" },
       '#forge:ingots/iron',
-      '#forge:ingots/steel'
+      'immersiveengineering:component_iron'
     )
 
     //高炉炼铁

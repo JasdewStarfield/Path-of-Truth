@@ -61,6 +61,19 @@ ServerEvents.recipes(event => {
         D: 'scguns:treated_brass_blueprint'
     })
 
+    //模具
+    const moldTypesSCGuns = [
+        "small_casing_mold",
+        "medium_casing_mold",
+        "large_casing_mold",
+        "bullet_mold",
+        "gun_parts_mold",
+        "disc_mold"
+    ]
+    moldTypesSCGuns.forEach( id => {
+        event.recipes.vintageimprovements.turning([Item.of('scguns:'+id), Item.of('scguns:anthralite_nugget',5), Item.of('scguns:anthralite_nugget',8).withChance(0.5)], 'scguns:blank_mold')
+    })
+
     //枪械台
     event.remove({id:"scguns:gun_bench"})
     event.shaped(Item.of('scguns:gun_bench'), [ 

@@ -13,8 +13,8 @@
 			image: "kubejs:textures/quests/start.png"
 			rotation: 0.0d
 			width: 1.3285714285714287d
-			x: -6.5d
-			y: -1.0d
+			x: -8.0d
+			y: -1.5d
 		}
 		{
 			height: 0.4d
@@ -29,8 +29,8 @@
 			image: "kubejs:textures/quests/i4.png"
 			rotation: 0.0d
 			width: 12.853503184713375d
-			x: -6.5d
-			y: 4.0d
+			x: -7.0d
+			y: 4.5d
 		}
 	]
 	order_index: 0
@@ -56,7 +56,7 @@
 				type: "checkmark"
 			}]
 			title: "【起点】电力驱动！"
-			x: -6.5d
+			x: -8.0d
 			y: 0.0d
 		}
 		{
@@ -92,7 +92,7 @@
 				}
 			]
 			title: "低压电力系统"
-			x: -8.5d
+			x: -10.5d
 			y: 0.0d
 		}
 		{
@@ -788,11 +788,14 @@
 				}
 			]
 			title: "搭建金属冲压机"
-			x: -4.5d
-			y: 0.0d
+			x: -6.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["143039C6AC2D8186"]
+			dependencies: [
+				"143039C6AC2D8186"
+				"7379C5AA51648FC1"
+			]
 			description: [
 				"看看你冲（指冲压机）出来的棒子）"
 				"钢过于坚固以至于通常的轧机无法处理……还是交给电动的冲压机吧"
@@ -814,7 +817,7 @@
 			]
 			title: "看看你的棒子"
 			x: -4.5d
-			y: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["22631A52B9D81A49"]
@@ -1000,16 +1003,18 @@
 				}
 			]
 			title: "多方块指南"
-			x: -9.0d
+			x: -11.0d
 			y: -2.5d
 		}
 		{
-			dependencies: ["143039C6AC2D8186"]
-			description: ["你生产金属线的效率现在能翻倍了！别忘了！"]
+			dependencies: [
+				"143039C6AC2D8186"
+				"7379C5AA51648FC1"
+			]
+			description: [""]
 			icon: "immersiveengineering:mold_wire"
 			id: "4BBD74D56BC12AEE"
 			shape: "diamond"
-			subtitle: "成双成对"
 			tasks: [
 				{
 					id: "18EC031E6DC5AF3C"
@@ -1030,8 +1035,8 @@
 				}
 			]
 			title: "工艺升级"
-			x: -4.5d
-			y: 1.5d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -1049,7 +1054,7 @@
 				item: "immersiveengineering:blastfurnace_preheater"
 				type: "item"
 			}]
-			x: -9.0d
+			x: -11.0d
 			y: 2.5d
 		}
 		{
@@ -1146,42 +1151,6 @@
 		}
 		{
 			dependencies: ["22631A52B9D81A49"]
-			id: "7D8F040FDC419C80"
-			rewards: [{
-				id: "0E8D3E5B8959465C"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
-							Size: 8
-						}
-					}
-					id: "immersiveengineering:speedloader"
-				}
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "午时已到"
-			tasks: [{
-				id: "43124CC78A2EF0DD"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
-							Size: 21
-						}
-					}
-					id: "immersiveengineering:revolver"
-				}
-				type: "item"
-			}]
-			x: -5.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["22631A52B9D81A49"]
 			description: ["提示：你需要在蓄电池背包内放入某种规格的蓄电池后它才能被正常充电（使用工程师装配台，具体请参照工程师手册）。"]
 			icon: {
 				Count: 1
@@ -1223,7 +1192,7 @@
 				}
 			]
 			x: -4.5d
-			y: -4.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -1237,7 +1206,7 @@
 				type: "item"
 			}]
 			title: "精细化农业"
-			x: -6.0d
+			x: -8.0d
 			y: 2.0d
 		}
 		{
@@ -1423,6 +1392,30 @@
 			}]
 			x: -0.5d
 			y: 4.0d
+		}
+		{
+			dependencies: ["01534DC5812DBA15"]
+			icon: {
+				Count: 1
+				id: "immersiveengineering:blueprint"
+				tag: {
+					blueprint: "components"
+				}
+			}
+			id: "7379C5AA51648FC1"
+			tasks: [{
+				id: "37F4E985B2C33E2F"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "molds"
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.5d
 		}
 	]
 	subtitle: ["Roaring Machinery"]

@@ -151,39 +151,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["7A7C0A48248FA32B"]
-			description: [
-				"通过蓝图制作的零部件相对来说会比直接用工作台搓要廉价一些（如果有工作台配方"
-				"但是要消耗的材料类型是不会变的）"
-			]
-			hide_until_deps_complete: true
-			icon: "immersiveengineering:workbench"
-			id: "2E4B9CF9789B1AF1"
-			subtitle: "手搓零件！"
-			tasks: [
-				{
-					id: "24572984897793A8"
-					item: {
-						Count: 1
-						id: "immersiveengineering:blueprint"
-						tag: {
-							blueprint: "components"
-						}
-					}
-					match_nbt: true
-					type: "item"
-				}
-				{
-					id: "7A4DCA3255B08F1C"
-					item: "immersiveengineering:workbench"
-					type: "item"
-				}
-			]
-			title: "蓝图与工作"
-			x: 8.0d
-			y: -2.0d
-		}
-		{
 			dependencies: ["5700B2AFCCAEE31A"]
 			description: [""]
 			hide_until_deps_complete: true
@@ -605,16 +572,25 @@
 		}
 		{
 			dependencies: [
-				"2E4B9CF9789B1AF1"
 				"7F70BCE1EBD2C73E"
+				"7A7C0A48248FA32B"
 			]
+			icon: "immersiveengineering:component_steel"
 			id: "5184969E829D39FA"
-			tasks: [{
-				id: "16005BAE7C2D42BC"
-				item: "immersiveengineering:component_steel"
-				type: "item"
-			}]
-			x: 10.0d
+			tasks: [
+				{
+					id: "16005BAE7C2D42BC"
+					item: "immersiveengineering:component_steel"
+					type: "item"
+				}
+				{
+					id: "2FAD8CA91F8FF74E"
+					item: "immersiveengineering:component_iron"
+					type: "item"
+				}
+			]
+			title: "钢铁零件"
+			x: 8.0d
 			y: -2.0d
 		}
 		{
@@ -650,7 +626,10 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["77918DE5A223B3CD"]
+			dependencies: [
+				"77918DE5A223B3CD"
+				"5184969E829D39FA"
+			]
 			description: ["通过简易的雷电填充，你用魔法获得了一点点操纵电的力量……"]
 			id: "786828EE220E93A3"
 			subtitle: "科学使用魔法"
@@ -796,14 +775,23 @@
 		}
 		{
 			dependencies: ["5700B2AFCCAEE31A"]
+			icon: "vintageimprovements:lathe"
 			id: "56229BD92474D24C"
-			tasks: [{
-				id: "31BF7C74CB552026"
-				item: "vintageimprovements:lathe"
-				type: "item"
-			}]
-			x: 13.0d
-			y: 0.0d
+			subtitle: "这是之后要用到的神奇妙妙工具.jpg"
+			tasks: [
+				{
+					id: "31BF7C74CB552026"
+					item: "vintageimprovements:lathe"
+					type: "item"
+				}
+				{
+					id: "25F5FE77A2C2A122"
+					item: "kubejs:mold_blank_steel"
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
@@ -813,7 +801,7 @@
 				item: "kubejs:advanced_spring_set"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -830,13 +818,49 @@
 		{
 			dependencies: ["1FB6A2B277331552"]
 			id: "635A0221044B2A2A"
+			subtitle: "小心点磨"
 			tasks: [{
 				id: "6F499C4253A31237"
 				item: "createutilities:polished_amethyst"
 				type: "item"
 			}]
+			title: "易碎品"
 			x: 4.0d
 			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5184969E829D39FA"
+				"786828EE220E93A3"
+			]
+			description: [
+				"从两种简单的电容器和一些零件上汲取灵感，你学会了更高级的机械知识！现在你可以以更低的成本制作机器零件了！"
+				"在工程师装配台上放置蓝图就可以把它转化为一个简单的工作台。"
+				"更多的蓝图也会在后续解锁使用，所以这是一个必须完成的任务，但你目前不一定要完成。"
+			]
+			icon: "immersiveengineering:workbench"
+			id: "1F915E94D0E8AA15"
+			subtitle: "更划算的装配"
+			tasks: [
+				{
+					id: "68AA813339E0F4FB"
+					item: "immersiveengineering:workbench"
+					type: "item"
+				}
+				{
+					id: "5DF36818BE9BFDBD"
+					item: {
+						Count: 1
+						id: "immersiveengineering:blueprint"
+						tag: {
+							blueprint: "components"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 9.5d
+			y: 0.0d
 		}
 	]
 	subtitle: ["Hearts of Steel"]

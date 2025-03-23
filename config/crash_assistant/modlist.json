@@ -443,9 +443,9 @@
     "modId": "eccentrictome",
     "version": "1.20.1-1.10.3"
   },
-  "EclipticSeasons-1.20.1-forge-0.10-pre12-all.jar": {
+  "EclipticSeasons-1.20.1-forge-0.10.2-all.jar": {
     "modId": "eclipticseasons",
-    "version": "0.10-pre12"
+    "version": "0.10.2"
   },
   "ElysiumAPI-1.20.1-1.0.2.jar": {
     "modId": "elysium_api",
@@ -587,13 +587,13 @@
     "modId": "fusion",
     "version": "1.2.5"
   },
-  "fzzy_config-0.6.6+1.20.1+forge.jar": {
+  "fzzy_config-0.6.7+1.20.1+forge.jar": {
     "modId": "fzzy_config",
-    "version": "0.6.6+1.20.1+forge"
+    "version": "0.6.7+1.20.1+forge"
   },
-  "geckolib-forge-1.20.1-4.7.1.1.jar": {
+  "geckolib-forge-1.20.1-4.7.1.2.jar": {
     "modId": "geckolib",
-    "version": "4.7.1.1"
+    "version": "4.7.1.2"
   },
   "GeophilicReforged-v1.2.0.jar": {
     "modId": "geophilic_reforged",
