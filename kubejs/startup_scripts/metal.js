@@ -130,12 +130,14 @@ StartupEvents.registry('fluid', (event) => {
   .thickTexture(0xFDB057)
   .bucketColor(0xFDB057)
   .displayName('Molten Iron')
+  .temperature(1300)
 
   //熔融钢
   event.create('molten_steel')
   .thickTexture(0xE9D9B3)
   .bucketColor(0xE9D9B3)
   .displayName('Molten Steel')
+  .temperature(1300)
 
 
   //熔融炉渣
@@ -143,4 +145,5 @@ StartupEvents.registry('fluid', (event) => {
   .thickTexture(0xFCCA91)
   .bucketColor(0xFCCA91)
   .displayName('Molten Steel-Slag Mix')
+  .temperature(1300)
 })
