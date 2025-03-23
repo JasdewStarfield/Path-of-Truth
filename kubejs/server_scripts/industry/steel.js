@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
   event.remove({id:"createaddition:compacting/seed_oil"})
   event.remove({id:"createaddition:mixing/bioethanol"})
 
-  const CreateAdditionDupeItems = [
+  const CreateDupeItems = [
     'createaddition:creative_generator',
     'createaddition:connector',
     'createaddition:small_light_connector',
@@ -17,10 +17,13 @@ ServerEvents.recipes(event => {
     'createaddition:festive_spool',
     'createaddition:seed_oil_bucket',
     'createaddition:bioethanol_bucket',
-    'createaddition:capacitor'
+    'createaddition:capacitor',
+    'createdieselgenerators:plant_oil_bucket',
+    'createdieselgenerators:ethanol_bucket',
+    'createdieselgenerators:biodiesel_bucket',
   ]
 
-  CreateAdditionDupeItems.forEach(id => {event.remove({output:id})})
+  CreateDupeItems.forEach(id => {event.remove({output:id})})
 
   /*
   event.recipes.create.mechanical_crafting('tfmg:casting_spout', [

@@ -198,6 +198,9 @@ ServerEvents.recipes(event => {
     event.recipes.create.milling(Item.of('immersiveengineering:dust_nickel').withChance(0.75), '#forge:ingots/nickel').id('nickel_dust_manual_only')
     event.recipes.create.milling(Item.of('kubejs:zinc_dust').withChance(0.75), '#forge:ingots/zinc').id('zinc_dust_manual_only')
 
+    event.recipes.create.milling(Item.of('immersiveengineering:dust_gold').withChance(0.25), '#forge:ingots/gold').id('gold_dust_manual_only')
+    event.recipes.create.milling(Item.of('immersiveengineering:dust_silver').withChance(0.25), '#forge:ingots/silver').id('silver_dust_manual_only')
+
     event.recipes.create.crushing(Item.of('kubejs:tin_dust'), '#forge:ingots/tin')
     event.recipes.create.crushing(Item.of('immersiveengineering:dust_copper'), '#forge:ingots/copper')
     event.recipes.create.crushing(Item.of('immersiveengineering:dust_nickel'), '#forge:ingots/nickel')

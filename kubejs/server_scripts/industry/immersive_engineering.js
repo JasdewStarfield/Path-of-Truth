@@ -215,6 +215,92 @@ ServerEvents.recipes(event => {
       event.recipes.createPressing(inter, inter),
     ]).transitionalItem(inter).loops(1)
 
+    event.remove({id:'createdieselgenerators:mixing/biodiesel'}) 
+    event.remove({id:'createdieselgenerators:compacting/plant_oil'}) 
+    //生物质初发酵
+    event.remove({type:'create:mixing',output:'createaddition:biomass'})
+    event.remove({type:'createdieselgenerators:basin_fermenting'})
+    event.remove({output:'createdieselgenerators:basin_lid'}) 
+    event.shaped(
+      Item.of('createdieselgenerators:basin_lid', 1),
+      [ 
+        'BCB', 
+        'AAA'
+      ],
+      {
+        A: 'create:andesite_alloy',
+        B: '#forge:rods/steel',
+        C: 'immersiveengineering:light_engineering'
+      }
+    )
+    event.custom({
+      "type": "createdieselgenerators:basin_fermenting",
+      "ingredients": [
+        {
+          "fluid": "create:honey",
+          "amount": 50
+        },
+        {
+          "tag": "forge:fermentable"
+        },
+        {
+          "tag": "forge:fermentable"
+        }
+      ],
+      "heatRequirement": "none",
+      "processingTime": 200,
+      "results": [
+        {
+          "item": "createaddition:biomass"
+        }
+      ]
+    })
+    event.custom({
+      "type": "createdieselgenerators:basin_fermenting",
+      "ingredients": [
+        {
+          "fluid": "minecraft:water",
+          "amount": 200
+        },
+        {
+          "tag": "forge:fermentable"
+        },
+        {
+          "tag": "forge:fermentable"
+        },
+        {
+          "tag": "forge:fermentable"
+        },
+        {
+          "tag": "forge:fermentable"
+        }
+      ],
+      "heatRequirement": "none",
+      "processingTime": 400,
+      "results": [
+        {
+          "item": "createaddition:biomass"
+        }
+      ]
+    })
+
+    //二次发酵
+    event.remove({id:'createaddition:compacting/biomass_pellet'})
+    event.remove({type:'immersiveengineering:fermenter'})
+    event.custom({
+      "type":"immersiveengineering:crusher",
+      "energy":3200,"input":{"item":"createaddition:biomass"},
+      "result":{"count":6,"item":"createaddition:biomass_pellet"},
+      "secondaries":[{"chance":0.5,"output":{"count":3,"item":"createaddition:biomass_pellet"}}]
+    })
+    event.custom({
+      "type":"immersiveengineering:fermenter",
+      "energy":3200,
+      "fluid":{"amount":20,"fluid":"immersiveengineering:ethanol"},
+      "input":{"item":"createaddition:biomass_pellet"}
+    })
+
+
     //继电器接线器材料
     event.replaceInput(
       { output:/immersiveengineering:connector.*/ },

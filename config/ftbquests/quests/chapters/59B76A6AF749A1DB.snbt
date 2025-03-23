@@ -96,7 +96,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["0EA7E42D07C4BC01"]
+			dependencies: ["02D2280F57251219"]
 			description: [
 				"其实主要作用是生产工业乙醇）"
 				"我们不允许玩家在游戏内酗酒，真的"
@@ -153,7 +153,7 @@
 				}
 			]
 			title: "组装发酵机"
-			x: -2.0d
+			x: 1.5d
 			y: -2.5d
 		}
 		{
@@ -299,8 +299,8 @@
 				type: "item"
 			}]
 			title: "工业酒精"
-			x: 0.0d
-			y: -1.5d
+			x: 1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
@@ -357,7 +357,7 @@
 				}
 			]
 			title: "组装炼油厂"
-			x: -0.5d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -1210,39 +1210,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"48A3FEF7D02104E5"
-				"0FD551E50150A7AD"
-			]
-			description: [""]
-			id: "6A04606B02D87EF0"
-			subtitle: "氧化乙醇你就得到了……"
-			tasks: [{
-				id: "70505299AC3A9C07"
-				item: "immersiveengineering:acetaldehyde_bucket"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"6A04606B02D87EF0"
-				"0FD551E50150A7AD"
-			]
-			description: ["到下一章你就会用到它！"]
-			icon: "immersiveengineering:phenolic_resin_bucket"
-			id: "6CBC49DEC79E819E"
-			subtitle: "不完全是塑胶"
-			tasks: [{
-				id: "5990032AE52EC1B6"
-				item: "immersiveengineering:phenolic_resin_bucket"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 1.0d
-		}
-		{
 			dependencies: ["3B29D716A3D5AAF0"]
 			description: [
 				"有着奇特性质的两种金属的结合。"
@@ -1378,8 +1345,8 @@
 				}
 			]
 			title: "组装粉碎机"
-			x: -3.0d
-			y: -3.5d
+			x: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
@@ -1416,6 +1383,51 @@
 			}]
 			x: -6.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["0EA7E42D07C4BC01"]
+			icon: "createdieselgenerators:basin_lid"
+			id: "0F4EDD4535A9D928"
+			tasks: [
+				{
+					id: "07D23BFCC1C3C154"
+					item: "createdieselgenerators:basin_lid"
+					type: "item"
+				}
+				{
+					id: "3B4A023D9CC89803"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0F4EDD4535A9D928"]
+			icon: "createaddition:biomass"
+			id: "2410B7B4F5FBA323"
+			tasks: [{
+				id: "009BBB3673F91A72"
+				item: "createaddition:biomass"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"585C0F11261551FD"
+				"2410B7B4F5FBA323"
+			]
+			id: "02D2280F57251219"
+			tasks: [{
+				id: "41BB3EA31DD399B4"
+				item: "createaddition:biomass_pellet"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.5d
 		}
 	]
 	subtitle: ["Roaring Machinery"]
