@@ -78,7 +78,9 @@ const UnobtainableItems = [
     'createaddition:bioethanol_bucket',
     'createdieselgenerators:plant_oil_bucket',
     'createdieselgenerators:ethanol_bucket',
-    'createdieselgenerators:biodiesel_bucket'
+    'createdieselgenerators:biodiesel_bucket',
+    'immersiveengineering:charging_station',
+    'immersiveengineering:tesla_coil'
 ]
 
 const UnobtainableFluids = [
@@ -129,6 +131,16 @@ ServerEvents.tags("item", (event) => {
     event.add("minecraft:tools","kubejs:bronze_shovel")
     event.add("minecraft:shovels","kubejs:bronze_shovel")
     event.add("forge:tools/shovels","kubejs:bronze_shovel")
+
+    //锌铝合金
+    event.add("forge:dusts","kubejs:za_dust")
+    event.add("forge:dusts/za","kubejs:za_dust")
+    event.add("forge:plates","kubejs:za_sheet")
+    event.add("forge:plates/za","kubejs:za_sheet")
+    event.add("forge:ingots","kubejs:za_ingot")
+    event.add("forge:ingots/za","kubejs:za_ingot")
+    event.add("forge:nuggets","kubejs:za_nugget")
+    event.add("forge:nuggets/za","kubejs:za_nugget")
 
     //Unify
     event.add("forge:fermentable","#forge:grain/rice")

@@ -3,12 +3,6 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'minecraft:netherite_ingot' })
   event.recipes.create.mixing(['netherite_ingot'], ['#forge:ingots/uranium','#forge:ingots/uranium','#forge:ingots/uranium','#forge:ingots/uranium','minecraft:netherite_scrap','minecraft:netherite_scrap','minecraft:netherite_scrap','minecraft:netherite_scrap']).superheated()
 
-  //烈焰蛋糕
-  event.remove({ id: 'create:compacting/blaze_cake' })
-  event.remove({ id: 'create:filling/blaze_cake' })
-  event.recipes.create.compacting(['create:blaze_cake_base'], ['minecraft:sugar','irons_spellbooks:cinder_essence','#forge:plates/horizonite']).heated()
-  event.recipes.create.filling('create:blaze_cake',[{fluidTag: 'forge:gasoline', amount:1000},'create:blaze_cake_base'])
-
   /*
   //多彩化合物
   event.remove({ id: 'createchromaticreturn:chromatic_compound_recipe' })

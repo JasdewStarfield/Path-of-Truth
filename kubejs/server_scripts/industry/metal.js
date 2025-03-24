@@ -17,14 +17,9 @@ ServerEvents.recipes(event => {
         A: '#forge:ingots/bronze'
         }
     )
-    event.shaped(
+    event.shapeless(
         Item.of('kubejs:bronze_ingot', 9),
-        [ 
-        'A'
-        ],
-        {
-        A: '#forge:storage_blocks/bronze'
-        }
+        '#forge:storage_blocks/bronze'
     )
 
     //青铜粒和锭
@@ -39,17 +34,13 @@ ServerEvents.recipes(event => {
         A: '#forge:nuggets/bronze'
         }
     )
-    event.shaped(
+    event.shapeless(
         Item.of('kubejs:bronze_nugget', 9),
-        [ 
-        'A'
-        ],
-        {
-        A: '#forge:ingots/bronze'
-        }
+        '#forge:ingots/bronze'
     )
 
     //青铜粉和锭
+    event.smelting('#forge:ingots/bronze', '#forge:dusts/bronze')
     event.blasting('#forge:ingots/bronze', '#forge:dusts/bronze')
 
     //青铜压板
@@ -339,6 +330,54 @@ ServerEvents.recipes(event => {
     //霜火双层板
     event.recipes.create.compacting('kubejs:frostfire_double_plate', ['#forge:plates/froststeel','#forge:slimeballs','#forge:plates/horizonite'])
 
+    //锌铝块和锭
+    event.shaped(
+        Item.of('kubejs:za_block', 1),
+        [ 
+        'AAA', 
+        'AAA',
+        'AAA'
+        ],
+        {
+        A: '#forge:ingots/za'
+        }
+    )
+    event.shapeless(
+        Item.of('kubejs:za_ingot', 9),
+        '#forge:storage_blocks/za'
+    )
+
+    //锌铝粒和锭
+    event.shaped(
+        Item.of('kubejs:za_ingot', 1),
+        [ 
+        'AAA', 
+        'AAA',
+        'AAA'
+        ],
+        {
+        A: '#forge:nuggets/za'
+        }
+    )
+    event.shapeless(
+        Item.of('kubejs:za_nugget', 9),
+        '#forge:ingots/za'
+    )
+
+    //锌铝粉和锭
+    event.smelting('#forge:ingots/za', '#forge:dusts/za')
+    event.blasting('#forge:ingots/za', '#forge:dusts/za')
+    event.custom({
+        "type":"immersiveengineering:crusher",
+        "energy":3000,
+        "input":{"tag":"forge:ingots/za"},
+        "result":{"base_ingredient":{"tag":"forge:dusts/za"},"count":1},
+        "secondaries":[]
+    })
+
+    //锌铝压板
+    event.recipes.create.pressing('#forge:plates/za', '#forge:ingots/za')
+
     //一些沉浸盔甲修改
     event.replaceInput(
         { output:/immersive_armors:divine_.*/ },
@@ -445,14 +484,16 @@ ServerEvents.recipes(event => {
               "base_ingredient":{"tag":"forge:plates/"+material},
               "count":1
             }
-          })
+        })
     }
     const MissingPressingRecipeMetals = [
         "voidsteel",
         "andesite",
         "zinc",
         "industrial_iron",
-        "forgotten_metal"
+        "forgotten_metal",
+        "za",
+        "terrasteel"
     ]
     MissingPressingRecipeMetals.forEach(material => {
         IEMetalPressing(material)

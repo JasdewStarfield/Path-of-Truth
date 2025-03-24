@@ -308,9 +308,33 @@ ServerEvents.recipes(event => {
       'botania:glimmering_stripped_dreamwood'
     )
 
-    //零件
+    //零件（配方用data写了）
     event.remove({id:"immersiveengineering:crafting/component_steel"})
     event.remove({id:"immersiveengineering:crafting/component_iron"})
+
+    //烈焰蛋糕
+    event.remove({ id: 'sob:sob/crafting/cinder_dough' })
+    event.remove({ id: 'sob:sob/splashing/cinder_flour' })
+    event.remove({ id: 'sob:sob/mixing/cinder_dough_by_mixing' })
+    event.remove({ id: 'create:compacting/blaze_cake' })
+    event.remove({ id: 'create:filling/blaze_cake' })
+    event.recipes.create.mixing('sob:cinder_dough', [Fluid.of('minecraft:lava',500),'create:cinder_flour','irons_spellbooks:cinder_essence','#forge:dusts/horizonite']).heated()
+    event.recipes.vintageimprovements.curving('create:blaze_cake_base', ['sob:cinder_dough','sob:cinder_dough','sob:cinder_dough']).mode(1)
+    event.recipes.create.filling('create:blaze_cake',[{fluidTag: 'forge:biodiesel', amount:1000},'create:blaze_cake_base'])
+
+    //锌铝合金
+    event.recipes.create.mixing('kubejs:za_ingot', [
+      Fluid.of('minecraft:lava',100),
+      '#forge:ingots/zinc',
+      '#forge:ingots/zinc',
+      '#forge:ingots/zinc',
+      '#forge:ingots/zinc',
+      '#forge:ingots/aluminum',
+      '#forge:ingots/aluminum',
+    ]).superheated()
+
+    //工程混凝土ban掉合成配方
+    event.remove({ id: 'immersiveengineering:crafting/concrete' })
 
     //钢铁构件
 

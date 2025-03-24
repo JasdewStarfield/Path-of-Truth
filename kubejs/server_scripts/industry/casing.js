@@ -33,16 +33,8 @@ ServerEvents.recipes(event => {
     event.remove({id:'createutilities:item_application/void_casing'})
     casing("createutilities:void_casing", "obsidian", '#forge:plates/voidsteel')
 
-    /*
-    //重型机械机壳
-    event.remove({id:'tfmg:item_application/heavy_machinery_casing'})
-    casing("tfmg:heavy_machinery_casing", "tfmg:steel_casing", 'kubejs:frostfire_double_plate')
-    event.replaceInput(
-      {input:"tfmg:heavy_machinery_casing", not: {output:'tfmg:heavy_casing_door'}},
-      'tfmg:heavy_machinery_casing',
-      'immersiveengineering:heavy_engineering'
-    )
-    */
+    //工厂机壳
+    casing("kubejs:factory_casing", "immersiveengineering:concrete_leaded", 'kubejs:za_sheet')
 
     //齿轮
     event.remove({id:'create:crafting/kinetics/cogwheel'})

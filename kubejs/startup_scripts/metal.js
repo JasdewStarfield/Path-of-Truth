@@ -11,6 +11,12 @@ StartupEvents.registry('item', (event) => {
   event.create("bronze_shovel",'shovel').displayName('Bronze Shovel').tier('bronze').texture('kubejs:item/bronze/bronze_shovel')
   event.create("bronze_hoe",'hoe').displayName('Bronze Hoe').tier('bronze').texture('kubejs:item/bronze/bronze_hoe')
 
+  //锌铝合金
+  event.create("za_dust").displayName('ZA Grit').texture('kubejs:item/za/za_dust')
+  event.create("za_ingot").displayName('ZA Ingot').texture('kubejs:item/za/za_ingot')
+  event.create("za_nugget").displayName('ZA Nugget').texture('kubejs:item/za/za_nugget')
+  event.create("za_sheet").displayName('ZA Sheet').texture('kubejs:item/za/za_sheet')
+
   /*
   event.create("bronze_helmet",'helmet').displayName('Bronze Helmet').tier('bronze')
   event.create("bronze_chestplate",'chestplate').displayName('Bronze Chestplate').tier('bronze')
@@ -99,12 +105,29 @@ StartupEvents.registry('block', (event) => {
 		.requiresTool(true)
 		.tagBlock("mineable/pickaxe")
 		.tagBlock("minecraft:needs_stone_tool")
-    .tagItem("forge:storage_blocks")
-    .tagItem("forge:storage_blocks/bronze")
+    .tagBoth("forge:storage_blocks")
+    .tagBoth("forge:storage_blocks/bronze")
 		.opaque(true)
 		.fullBlock(true)
 		.renderType('solid')
 		.textureAll('kubejs:block/bronze_block')
+  
+  //锌铝合金块
+  event.create('za_block')
+		.displayName('Block of ZA')
+		.soundType("copper")
+		.mapColor("metal")
+		.hardness(6.0)
+		.resistance(6.0)
+		.requiresTool(true)
+		.tagBlock("mineable/pickaxe")
+		.tagBlock("minecraft:needs_iron_tool")
+    .tagBoth("forge:storage_blocks")
+    .tagBoth("forge:storage_blocks/za")
+		.opaque(true)
+		.fullBlock(true)
+		.renderType('solid')
+		.textureAll('kubejs:block/za_block')
 
   //损坏的雪帽熔炉
   event.create('broken_snowcap_oven', "cardinal")

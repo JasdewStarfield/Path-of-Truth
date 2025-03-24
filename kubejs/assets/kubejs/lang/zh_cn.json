@@ -25,6 +25,10 @@
   "item.kubejs.bronze_axe": "青铜斧",
   "item.kubejs.bronze_shovel": "青铜铲",
   "item.kubejs.bronze_hoe": "青铜锄",
+  "item.kubejs.za_dust": "锌铝合金粉",
+  "item.kubejs.za_ingot": "锌铝合金锭",
+  "item.kubejs.za_nugget": "锌铝合金粒",
+  "item.kubejs.za_sheet": "锌铝合金板",
   "item.kubejs.crude_sawblade": "粗制锯条",
   "item.kubejs.mold_blank_steel": "空白钢模具",
   "item.kubejs.leyden_jar": "莱顿瓶",
@@ -80,7 +84,6 @@
   "block.kubejs.molten_steel": "熔融钢",
   "block.kubejs.molten_slag": "熔融钢-炉渣混合物",
 
-  "item.scguns.gun_bench.desc": "当前仅作为军火匠村民的工作方块。请使用动力合成器组装枪械。",
   "item.kubejs.music_disc_pluto_nocturnus.desc": "Jacky Blackson - Pluto Nocturnus",
   "item.kubejs.music_disc_pluto_nocturnus": "音乐唱片",
   "item.kubejs.music_disc_quam_admirabile_mundi.desc": "Jacky Blackson - Quam Admirabile Mundi",
@@ -110,6 +113,7 @@
   "block.kubejs.steel_casing": "钢机壳",
   "block.kubejs.factory_casing": "工厂机壳",
   "block.kubejs.bronze_block": "青铜块",
+  "block.kubejs.za_block": "锌铝合金块",
   "block.kubejs.broken_snowcap_oven": "损坏的雪帽熔炉",
 
   "block.kubejs.obelisk_base": "重生石碑基座",

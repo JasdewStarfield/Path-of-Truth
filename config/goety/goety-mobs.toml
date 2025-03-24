@@ -89,6 +89,8 @@
 	RedstoneCubeBlockFind = true
 	#Mobs will automatically be hostile to servants, if servant is hostile towards the mob, Default: true
 	mobSense = true
+	#Whether certain servants being ridden by other servants will not be controlled by their rider., Default: false
+	servantRideAutonomous = false
 	#Owners can't attack or hurt their servants, Default: true
 	ownerAttackCancel = true
 	#Whether Servants or their owner are immune to attacks made by other servants that are summoned by the same owner, Default: true
@@ -365,6 +367,8 @@
 			ministerRaid = true
 
 [Textures]
+	#If Brood Mothers uses their old textures, Default: false
+	broodMotherOldTexture = false
 	#If certain mobs have a different texture during some holiday months, Default: true
 	holidaySkins = true
 
@@ -405,6 +409,8 @@
 			ghastServantTexture = true
 
 		[Textures."Summoned Mobs"."Spider Servants"]
+			#If Icy Spiders Servants have different textures from hostile versions, Default: true
+			icySpiderServantTexture = true
 			#If Spiders Servants have custom textures, Default: true
 			spiderServantTexture = true
 			#If Bone Spiders Servants have custom textures, Default: true

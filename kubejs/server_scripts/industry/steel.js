@@ -21,6 +21,8 @@ ServerEvents.recipes(event => {
     'createdieselgenerators:plant_oil_bucket',
     'createdieselgenerators:ethanol_bucket',
     'createdieselgenerators:biodiesel_bucket',
+    'immersiveengineering:charging_station',
+    'immersiveengineering:tesla_coil'
   ]
 
   CreateDupeItems.forEach(id => {event.remove({output:id})})
