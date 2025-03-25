@@ -192,6 +192,11 @@
 				"另外，这可是真正的“创造飞行”体验，即使有时限也是值得的。"
 			]
 			id: "566537583B144D15"
+			rewards: [{
+				id: "30061D7AC03F354B"
+				item: "botania:quartz_elven"
+				type: "item"
+			}]
 			subtitle: "魔力飞行"
 			tasks: [{
 				id: "6371D1A37FF75D74"
@@ -216,6 +221,15 @@
 				"以及：移动速度受到游泳速度加成，并且你可以变成卑鄙的一格人）"
 			]
 			id: "3557A195504496D7"
+			rewards: [{
+				id: "5C55685A2A20C73B"
+				item: {
+					Count: 1
+					id: "immersiveengineering:balloon"
+					tag: { }
+				}
+				type: "item"
+			}]
 			shape: "circle"
 			subtitle: "廉价的伪飞行）"
 			tasks: [{
@@ -233,7 +247,7 @@
 				"也许我们需要一些更强大的……"
 				"只有在&1深暗之域群系&r，这一火盆才能被点燃。它通过燃烧灵魂来汲取这个世界最黑暗的能量。"
 				"要使用它，你需要准备好&b足够多的灵魂&r，然后使用&9灵魂蜡烛&r引导&5诅咒之笼&r，将燃烧的灵魂注入火焰中。"
-				"如果你打断了反应过程，那么所有已经消耗的灵魂都将&a逸散于虚无&r中。"
+				"如果你&c打断了反应过程或者灵魂储量不够&r，那么所有已经消耗的灵魂都将&a逸散于虚无&r中。"
 				""
 				"&o&d*为了掀掉怪物的脑壳，也许你需要植魔的少女心斧头……&r&r"
 			]
@@ -394,6 +408,27 @@
 				"也许你可以从其中&b知晓更多&r……"
 			]
 			id: "5B719CC45C168F8C"
+			rewards: [{
+				id: "4134847A5394662F"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:black_hole"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "当基本元素和空间力量组合……"
 			tasks: [{
@@ -413,9 +448,15 @@
 			description: [
 				"&b【完成后解锁主线章节：5M 生命炼成】&r"
 				"当你强行撕裂并掌握了生命的规则，你就获得了一部分造物主的能力，比如……真正意义上的&c活化可掌控的生命&r。"
-				"虽然只是活化刷怪笼，但这证明你开始操作造物对应的权柄，不再是&7曾经需要窃夺笼中生命火焰&r的普通人。"
+				"虽然只是创造出刷怪笼，但这证明你开始操作造物对应的权柄，不再是&7曾经需要窃夺笼中生命火焰&r的普通人。"
 			]
 			id: "301A6952E3B16C88"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "63C5288F621515ED"
+				table_id: 3947091887552256602L
+				type: "choice"
+			}]
 			shape: "octagon"
 			size: 1.2d
 			subtitle: "创世先创生"
@@ -427,6 +468,43 @@
 			title: "点燃生命之火"
 			x: 0.0d
 			y: -3.5d
+		}
+		{
+			dependencies: ["6160C4A2B47CBBBC"]
+			description: [
+				"把元素核心压进贝壳就可以获得一个&b对寒冷群系战斗有奇效&r的符文。"
+				"但这真的值得吗……？"
+			]
+			icon: "goety:trident_storm_focus"
+			id: "1E9A7D4525E97575"
+			subtitle: "粗暴的聚合"
+			tasks: [{
+				id: "58C0CABFE1945470"
+				item: "aquamirae:rune_of_the_storm"
+				type: "item"
+			}]
+			title: "风暴之力"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["13FCEF26D0A44844"]
+			description: ["对于启命英的解析可以让你&a通晓植物们的秘密&r……然后操纵它们。"]
+			id: "6888FE5BDE76F635"
+			rewards: [{
+				id: "1651E2DB2DCBDC20"
+				item: "goety:ravaging_scroll"
+				type: "item"
+			}]
+			subtitle: "植物大战……灾厄村民？"
+			tasks: [{
+				id: "458FCD9462DFF70B"
+				item: "goety:floral_scroll"
+				type: "item"
+			}]
+			title: "生之花的绽放"
+			x: -3.5d
+			y: 0.5d
 		}
 	]
 	subtitle: ["Eerie Ritual"]

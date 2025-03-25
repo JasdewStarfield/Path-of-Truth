@@ -1,7 +1,6 @@
 //需求配方列表
     //碎铁矿兑换炙铁碎矿
     //榴石，月长和透辉的兑换
-    //点盖亚成下界合金
     //点下界合金成遗忆锭
     //点钻成绛紫晶
 
@@ -29,6 +28,35 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'minecraft',output:'minecraft:lodestone'},
         'minecraft:netherite_ingot' , '#forge:ingots/steel')
     
+    //启命英制作花纹卷轴
+    event.shaped(
+        Item.of('goety:floral_scroll'),
+        [
+            '   ',
+            'ABA',
+            '   '
+        ],
+        {
+            B: 'goety:dark_scroll',
+            A: 'botania:dandelifeon'
+        }
+    )
+
+    //海潮蛤转换风暴符文
+    event.shaped(
+        Item.of('aquamirae:rune_of_the_storm'),
+        [
+            ' A ',
+            ' B ',
+            ' C '
+        ],
+        {
+            A: 'kubejs:wind_elemental_core',
+            B: 'collectorsreap:clam',
+            C: 'kubejs:water_elemental_core'
+        }
+    )
+
     //灵质-灵质桶互相转化
     event.shaped(
         Item.of('netherexp:ectoplasm_bucket'),
@@ -234,7 +262,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "goety:cursed_infuser_recipes",
         "ingredient": {
-            "item": 'vintageimprovements:sulfur'
+            "tag": 'forge:dusts/sulfur'
         },
         "result": 'minecraft:gunpowder',
         "cookingTime": 60
@@ -246,6 +274,15 @@ ServerEvents.recipes(event => {
             "item": 'irons_spellbooks:ancient_knowledge_fragment'
         },
         "result": 'goety:forbidden_piece',
+        "cookingTime": 1200
+    })
+    //下界合金转换遗忆
+    event.custom({
+        "type": "goety:cursed_infuser_recipes",
+        "ingredient": {
+            "item": 'minecraft:netherite_ingot'
+        },
+        "result": 'undergarden:forgotten_ingot',
         "cookingTime": 1200
     })
 

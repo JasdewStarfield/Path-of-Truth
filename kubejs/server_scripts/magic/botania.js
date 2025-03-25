@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
     event.recipes.botania.petal_apothecary('undergarden:forgotten_guardian_spawn_egg', 
         [
             '#forge:eggs',
-            'immersiveengineering:component_electronic_adv',
+            'create_connected:sequenced_pulse_generator',
             'goety:philosophers_stone',
             'kubejs:forgotten_mechanism'
         ]
@@ -195,7 +195,7 @@ ServerEvents.recipes(event => {
     //魔钢-奥术源质兑换
     event.recipes.botania.mana_infusion('4x irons_spellbooks:arcane_essence', 'botania:manasteel_ingot', 1000, 'botania:alchemy_catalyst')
     //烈焰粉转化硫磺
-    event.recipes.botania.mana_infusion('vintageimprovements:sulfur', 'minecraft:blaze_powder', 100, 'botania:alchemy_catalyst')
+    event.recipes.botania.mana_infusion('scguns:sulfur_dust', 'minecraft:blaze_powder', 100, 'botania:alchemy_catalyst')
     //移除原有火药配方
     event.remove({id:'botania:mana_infusion/flint_to_gunpowder'})
     //禁书碎片转化远古知识碎片
@@ -625,12 +625,10 @@ ServerEvents.recipes(event => {
         [
             'botania:mana_tablet', 
             'botania:terrasteel_block',
-            '#forge:storage_blocks/steel',
-            'botania:spawner_mover',
-            'immersiveengineering:storage_electrum',
+            'minecraft:nether_star',
             'minecraft:netherite_ingot',
             'irons_spellbooks:mana_upgrade_orb',
-            'blue_skies:charoite_block'
+            'goety:philosophers_stone'
         ], 
         100000
     )
