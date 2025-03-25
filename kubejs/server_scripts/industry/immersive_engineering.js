@@ -323,8 +323,9 @@ ServerEvents.recipes(event => {
     event.recipes.create.filling('create:blaze_cake',[{fluidTag: 'forge:biodiesel', amount:1000},'create:blaze_cake_base'])
 
     //锌铝合金
-    event.recipes.create.mixing('kubejs:za_ingot', [
+    event.recipes.create.mixing(['kubejs:za_ingot','kubejs:wind_elemental_core'], [
       Fluid.of('minecraft:lava',100),
+      'kubejs:wind_elemental_core',
       '#forge:ingots/zinc',
       '#forge:ingots/zinc',
       '#forge:ingots/zinc',
@@ -393,14 +394,14 @@ ServerEvents.recipes(event => {
     ], {
         B: 'kubejs:steel_casing',
         A: '#forge:plates/ventium',
-        D: 'immersiveengineering:component_steel',
+        D: 'kubejs:battery_component',
         C: 'kubejs:leyden_jar'
     })
     event.recipes.create.sequenced_assembly([
         'immersiveengineering:light_engineering'
         ], 'kubejs:steel_casing', [
         event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/ventium']),
-        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', 'immersiveengineering:component_steel']),
+        event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', 'kubejs:battery_component']),
         event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', 'kubejs:leyden_jar']),
         event.recipes.createDeploying('kubejs:incomplete_light_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/ventium'])
     ]).transitionalItem('kubejs:incomplete_light_engineering').loops(1)

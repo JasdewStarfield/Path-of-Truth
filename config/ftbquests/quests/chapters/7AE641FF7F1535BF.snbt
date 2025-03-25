@@ -13,8 +13,8 @@
 			image: "kubejs:textures/quests/start.png"
 			rotation: 0.0d
 			width: 1.3285714285714287d
-			x: -4.0d
-			y: -1.0d
+			x: -5.5d
+			y: 0.0d
 		}
 		{
 			height: 0.4d
@@ -38,7 +38,7 @@
 			rotation: 0.0d
 			width: 1.0d
 			x: 0.0d
-			y: -4.0d
+			y: 3.0d
 		}
 	]
 	order_index: 0
@@ -129,8 +129,8 @@
 		{
 			dependencies: [
 				"2974EA098C1280C1"
-				"5184969E829D39FA"
 				"786828EE220E93A3"
+				"6DCA03A4B843B686"
 			]
 			description: [
 				"你获得了一款可以组成多方块结构机器的工程块——也是最简单的一种沉浸工程工程块）"
@@ -162,7 +162,7 @@
 				type: "item"
 			}]
 			title: "切割磁感线"
-			x: 14.0d
+			x: 15.0d
 			y: -2.0d
 		}
 		{
@@ -193,7 +193,7 @@
 				value: 1000L
 			}]
 			title: "【终点】电火花"
-			x: 15.0d
+			x: 16.0d
 			y: 0.0d
 		}
 		{
@@ -221,7 +221,7 @@
 				}
 			]
 			title: "给我个任务吧！"
-			x: 16.0d
+			x: 17.0d
 			y: -2.0d
 		}
 		{
@@ -365,7 +365,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["504E6502A789DABF"]
@@ -385,7 +385,7 @@
 				type: "item"
 			}]
 			title: "电力转应力"
-			x: 17.0d
+			x: 18.0d
 			y: 0.0d
 		}
 		{
@@ -488,7 +488,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: -4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2EB6991862E12244"]
@@ -501,7 +501,7 @@
 			}]
 			title: "打铁花"
 			x: 1.0d
-			y: -4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -544,7 +544,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: -2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["7A7C0A48248FA32B"]
@@ -631,14 +631,22 @@
 				"5184969E829D39FA"
 			]
 			description: ["通过简易的雷电填充，你用魔法获得了一点点操纵电的力量……"]
+			icon: "kubejs:leyden_jar"
 			id: "786828EE220E93A3"
 			subtitle: "科学使用魔法"
-			tasks: [{
-				id: "4F7AB4E750229D70"
-				item: "kubejs:leyden_jar"
-				type: "item"
-			}]
-			x: 11.0d
+			tasks: [
+				{
+					id: "4F7AB4E750229D70"
+					item: "kubejs:leyden_jar"
+					type: "item"
+				}
+				{
+					id: "39A6EA67ADDB9233"
+					item: "createaddition:capacitor"
+					type: "item"
+				}
+			]
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -791,7 +799,7 @@
 				}
 			]
 			x: 14.0d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
@@ -836,7 +844,7 @@
 			description: [
 				"从两种简单的电容器和一些零件上汲取灵感，你学会了更高级的机械知识！现在你可以以更低的成本制作机器零件了！"
 				"在工程师装配台上放置蓝图就可以把它转化为一个简单的工作台。"
-				"更多的蓝图也会在后续解锁使用，所以这是一个必须完成的任务，但你目前不一定要完成。"
+				"更多的蓝图也会在后续解锁使用。"
 			]
 			icon: "immersiveengineering:workbench"
 			id: "1F915E94D0E8AA15"
@@ -859,8 +867,78 @@
 					type: "item"
 				}
 			]
-			x: 9.5d
-			y: 0.0d
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"14A2B5756D42DD23"
+				"750FAE62628DB185"
+			]
+			icon: "vintageimprovements:sulfur"
+			id: "5F4027766CCD6DEC"
+			tasks: [
+				{
+					id: "67C6C87C760E1D4D"
+					item: "vintageimprovements:sulfur_chunk"
+					type: "item"
+				}
+				{
+					id: "15C1FB47B85BFDB7"
+					item: "vintageimprovements:sulfur"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5B1818D5A1142A16"]
+			id: "750FAE62628DB185"
+			tasks: [{
+				id: "536BCD6EE727CC4F"
+				item: "scguns:sheol"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5F4027766CCD6DEC"]
+			id: "75DA5648FA7A43C2"
+			tasks: [{
+				id: "6178CE9CCE34124C"
+				item: "vintageimprovements:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"1F915E94D0E8AA15"
+				"3FCF15CEE440DFC4"
+				"5184969E829D39FA"
+			]
+			id: "6DCA03A4B843B686"
+			tasks: [{
+				id: "3B57B147ADD29839"
+				item: "kubejs:battery_component"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["75DA5648FA7A43C2"]
+			id: "3FCF15CEE440DFC4"
+			tasks: [{
+				id: "1B4CF7F614A21A21"
+				item: "vintageimprovements:redstone_module"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
 		}
 	]
 	subtitle: ["Hearts of Steel"]

@@ -124,6 +124,43 @@ ServerEvents.recipes(event => {
   event.recipes.create.compacting(['#forge:storage_blocks/steel','kubejs:casting_seal','kubejs:casting_base',Item.of('clay').withChance(0.95)], 'kubejs:filled_casting_mold_large')
   */
 
+  //硫酸
+  event.remove({ id: "vintageimprovements:pressurizing/sulfur_trioxide" })
+  event.recipes.vintageimprovements.centrifugation([Fluid.of('minecraft:lava', 20), '3x vintageimprovements:sulfur_chunk', Item.of('3x vintageimprovements:sulfur_chunk').withChance(0.5), Item.of("#forge:slag").withChance(0.25)], [Fluid.of('immersiveengineering:redstone_acid', 50),'scguns:sheol']).minimalRPM(128)
+  event.recipes.vintageimprovements.pressurizing([
+    Fluid.of("vintageimprovements:sulfur_trioxide", 250)
+  ], [
+    Item.of('goety:ectoplasm'),
+    Fluid.of('vintageimprovements:sulfur_dioxide', 250)
+  ]).heated().secondaryFluidOutput(0)
+
+  //铅酸构件（原名红石构件）
+  event.remove({ id: "vintageimprovements:sequenced_assembly/redstone_module" })
+  let inter = 'vintageimprovements:incomplete_redstone_module'
+  event.recipes.create.sequenced_assembly([
+    Item.of('vintageimprovements:redstone_module').withChance(90.0),
+    Item.of('#forge:rods/lead').withChance(2.5),
+    Item.of('#forge:dusts/redstone').withChance(2.5),
+    Item.of('create:sturdy_sheet').withChance(5.0)
+  ], 'create:sturdy_sheet', [
+    event.recipes.createDeploying(inter, [inter, '#forge:rods/lead']),
+    event.recipes.createDeploying(inter, [inter, '#forge:dusts/redstone']),
+    event.recipes.vintageimprovements.vibrating(inter, inter),
+    event.recipes.createFilling(inter, [inter, Fluid.of("vintageimprovements:sulfuric_acid", 100)]),
+  ]).transitionalItem(inter).loops(3)
+  event.recipes.create.sequenced_assembly([
+    Item.of('vintageimprovements:redstone_module')
+  ], 'create:sturdy_sheet', [
+    event.recipes.createFilling(inter, [inter, {fluidTag: 'forge:lubricant', amount:25}]),
+    event.recipes.createDeploying(inter, [inter, '#forge:rods/lead']),
+    event.recipes.createDeploying(inter, [inter, '#forge:dusts/redstone']),
+    event.recipes.vintageimprovements.vibrating(inter, inter),
+    event.recipes.createFilling(inter, [inter, Fluid.of("vintageimprovements:sulfuric_acid", 100)]),
+  ]).transitionalItem(inter).loops(3)
+
+  //电池组件
+  
+
   //融化铁粉
   event.recipes.create.mixing(Fluid.of('kubejs:molten_iron',100), '#forge:dusts/iron').heated()
 
