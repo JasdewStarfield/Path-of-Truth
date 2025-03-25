@@ -29,7 +29,8 @@ EntityJSEvents.addGoalSelectors('minecraft:zombie', e => {
 })
 */
 
-EntityJSEvents.addGoalSelectors('botania:doppleganger', e => {
+//僵尸修改
+EntityJSEvents.addGoalSelectors('minecraft:zombie', e => {
     e.customGoal(
         'follow_target',
         1,
@@ -42,9 +43,59 @@ EntityJSEvents.addGoalSelectors('botania:doppleganger', e => {
         mob => {
             let target = mob.target//进入战斗状态
             if (target != null) {
-                if (mob.age % 600 == 0)//并列：纯粹按照周期施法
+                if (mob.age % 1800 == 0)//并列：纯粹按照周期施法
                     return mob.initiateCastSpell(SpellRegistry.HEARTSTOP_SPELL.get(), 1)//止心术
             }
         }
     )
 })
+
+//骷髅修改
+EntityJSEvents.addGoalSelectors('minecraft:skeleton', e => {
+    e.customGoal(
+        'follow_target',
+        1,
+        mob => true,
+        mob => true,
+        true,
+        mob => { },
+        mob => { },
+        true,
+        mob => {
+            let target = mob.target//进入战斗状态
+            if (target != null) {
+                if (mob.age % 400 == 0) {
+                    mob.lookAt("eyes", new Vec3d(target.x, target.y, target.z))//释放指向性法术需要视线
+                    return mob.initiateCastSpell(SpellRegistry.MAGIC_ARROW_SPELL.get(), 1)//魔法箭
+                } 
+
+            }
+        }
+    )
+})
+
+//监守者修改
+/*
+EntityJSEvents.addGoalSelectors('minecraft:guardian', e => {
+    e.customGoal(
+        'follow_target',
+        1,
+        mob => true,
+        mob => true,
+        true,
+        mob => { },
+        mob => { },
+        true,
+        mob => {
+            let target = mob.target//进入战斗状态
+            if (target != null) {
+                if (mob.age % 400 == 0) {
+                    return mob.initiateCastSpell(SpellRegistry.EVASION_SPELL.get(), 5)//末影闪避
+                } 
+
+            }
+        }
+    )
+})
+*/
+
