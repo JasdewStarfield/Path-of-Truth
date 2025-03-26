@@ -111,7 +111,7 @@
 			dependencies: ["77918DE5A223B3CD"]
 			description: [
 				"通过这个机壳，你将意识到某些部件不是为了小型机器服务的，而是为了组装更大的机器）"
-				"比如说，钢机壳除了做门就只能做工程块）"
+				"比如说，钢机壳只能用来做工程块）"
 				"&o&m&c但你需要很多的工程块，哈哈哈哈（逃&r&r&r"
 			]
 			hide_until_deps_complete: true
@@ -152,7 +152,10 @@
 		}
 		{
 			dependencies: ["5700B2AFCCAEE31A"]
-			description: [""]
+			description: [
+				"通过转动对线圈的扰动，你终于获得了可以工业化使用的电流。"
+				"也许之后可以试试工业充能瓶子……？"
+			]
 			hide_until_deps_complete: true
 			id: "4B2D7C8A59593200"
 			subtitle: "初中物理知识"
@@ -172,7 +175,7 @@
 			]
 			description: [
 				"&a【完成后解锁主线章节：4I 机械轰鸣】&r"
-				"注意：“Create Crafts \\& Additions”模组的电线因功能重复已被&c全部禁用&r！请通过&9沉浸工程&r的电路相关工具维系你的电路！"
+				"注意：&6Creare Crafts \\& Additions&r的线路相关因为功能重复已被&c&l全部禁用&r&r！请通过&9沉浸工程&r的电路相关工具维系你的电路！"
 				""
 				"电光四射，&m电眼逼人&r"
 			]
@@ -202,9 +205,9 @@
 				"4B2D7C8A59593200"
 			]
 			description: [
-				"把它放在你的碳刷旁边就可以自动收集碳刷提供的能量了。下一章会介绍更多传输电力的方式。"
+				"把它放在发电机输出处就可以接收电力了。下一章会介绍更多传输电力的方式。"
 				"&n记得要点开这个方块选择对应任务哦。&r"
-				"当然其它任务也可以用这个来自动提交"
+				"当然其它任务也可以用这个来自动提交）"
 			]
 			icon: "ftbquests:screen_1"
 			id: "250398995ECDA3CE"
@@ -227,8 +230,8 @@
 		{
 			dependencies: ["77918DE5A223B3CD"]
 			description: [
-				"好吧，这其实应该才是第三个高炉，不过按顺序是第四个了。"
-				"它叫沉浸工程强化高炉，基本用途和粗制的那个没区别，只是自动化更加便捷，以及支持使用预热器加速。"
+				"这是最后一个高炉了。物如其名，强化高炉，基本用途和粗制的那个没区别，只是自动化更加便捷，以及支持使用预热器加速。"
+				"但只是加速，不能不用燃料……"
 			]
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:advanced_blast_furnace"
@@ -313,7 +316,7 @@
 				"635A0221044B2A2A"
 			]
 			description: [
-				"虽然用这个工程块也是（你后面会用到的）沉浸工程多方块机器的必要组成部分，因而看上去&3略显普通&r，但是由它为核心的机械动力&3虚空元件&r拥有&d最诱人&r的效果。"
+				"虽然这个工程块也是（你后面会用到的）沉浸工程多方块机器的必要组成部分，因而看上去&3略显普通&r，但是由它为核心的机械动力&3虚空元件&r拥有&d最诱人&r的效果。"
 				"这一工程块将会藉由量子管的同频共振，&2为机械添加超越时空的能力&r，让你的物品，液体，电力甚至应力传输无视空间阻隔！"
 				"但相应的，这显然&9不是纯机械可以达成的效果&r……"
 				""
@@ -492,6 +495,11 @@
 		}
 		{
 			dependencies: ["2EB6991862E12244"]
+			description: [
+				"将铁粉进行融化……"
+				"熔融铁显然是不能制作钢铁的，所以还需要一些额外的步骤。"
+				"然而它和熔岩一样热，所以你也可以用它来加热自己的房间）"
+			]
 			id: "17263B7F0163FEA4"
 			subtitle: "另一种熔岩"
 			tasks: [{
@@ -508,12 +516,19 @@
 				"14A2B5756D42DD23"
 				"5FBE0E83E329AC46"
 			]
+			description: [
+				"处理混合物最好的办法当然是离心！"
+				"通过离心机，熔融钢与炉渣将被分离，纯净的钢水将在你面前闪耀工业的光芒。"
+				"然而它仍然很烫。"
+			]
 			id: "1A5AC0B8CD25635E"
+			subtitle: "终于……"
 			tasks: [{
 				id: "5D6A6DD4A2B1F6B9"
 				item: "kubejs:molten_steel_bucket"
 				type: "item"
 			}]
+			title: "热门话题"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -536,6 +551,13 @@
 		}
 		{
 			dependencies: ["17263B7F0163FEA4"]
+			description: [
+				"将足量的石灰岩配合火元素核心压入铁水中，你就获得了炉渣与钢水的混合产物……"
+				"火元素核心不会消耗。"
+				""
+				"&o&6这就是魔法的烈焰之力！&r&r"
+				"&o&e如果石灰岩不够，试试把刷石机的水换成蜂蜜。&r&r"
+			]
 			id: "5FBE0E83E329AC46"
 			subtitle: "是魔法，他们用了魔法"
 			tasks: [{
@@ -543,6 +565,7 @@
 				item: "kubejs:molten_slag_bucket"
 				type: "item"
 			}]
+			title: "融为一炉"
 			x: 2.0d
 			y: 1.5d
 		}
@@ -550,7 +573,7 @@
 			dependencies: ["7A7C0A48248FA32B"]
 			description: [
 				"显然，钢太硬了，你无法直接用辊压机将它压成板，这行不通。"
-				"你需要一些更大更暴力的设备……当然，这种设备也有一些额外的自动化功能"
+				"你需要一些更大更暴力的设备……当然，这种设备也有一些额外的自动化功能。"
 			]
 			icon: "vintageimprovements:helve_hammer"
 			id: "40129F9AE9DCE1EF"
@@ -575,8 +598,13 @@
 				"7F70BCE1EBD2C73E"
 				"7A7C0A48248FA32B"
 			]
+			description: [
+				"将钢铁弹簧与蔚蓝维度的一些矿物结合，就可以形成性能极佳的零件。"
+				"尽管这可以直接通过工作台制作，但仍然略显浪费，也许有更好的办法？"
+			]
 			icon: "immersiveengineering:component_steel"
 			id: "5184969E829D39FA"
+			subtitle: "起于微末"
 			tasks: [
 				{
 					id: "16005BAE7C2D42BC"
@@ -589,13 +617,15 @@
 					type: "item"
 				}
 			]
-			title: "钢铁零件"
+			title: "工业基础"
 			x: 8.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["40129F9AE9DCE1EF"]
+			description: ["这就是只有货真价实的大锤才能干的事情了）"]
 			id: "77918DE5A223B3CD"
+			subtitle: "80！80！"
 			tasks: [{
 				id: "2C335901DD5881AE"
 				item: "immersiveengineering:plate_steel"
@@ -606,9 +636,14 @@
 		}
 		{
 			dependencies: ["429B458F0AADA253"]
+			description: [
+				"经过处理后的硝钢可以作为枪械框架和改装件的基底，也就是说，你可以开始组合铁质枪械了。"
+				"硝钢为硝烟而生。"
+			]
 			icon: "scguns:treated_iron_ingot"
 			id: "68A34C290A68575C"
 			shape: "diamond"
+			subtitle: "硝烟弥漫"
 			tasks: [
 				{
 					id: "2AD49C432D3D2431"
@@ -676,20 +711,26 @@
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
+			description: [
+				"全套的钢铁护具和工具将让你的生存轻松一些……大概吧。"
+				""
+				"&o&b至少物理防御是足够了）&r&r"
+			]
 			icon: {
 				Count: 1
-				ForgeCaps: {
-					"cold_sweat:item_insulation": {
-						Insulation: [ ]
-					}
-				}
 				id: "immersiveengineering:armor_steel_helmet"
 				tag: {
 					Damage: 0
 				}
 			}
 			id: "3C1BDE999ED57ABD"
+			rewards: [{
+				id: "025FBAA900C1E6B6"
+				item: "immersiveengineering:storage_steel"
+				type: "item"
+			}]
 			shape: "diamond"
+			subtitle: "更上一层"
 			tasks: [
 				{
 					id: "12EF2686682DE8FA"
@@ -778,11 +819,16 @@
 					type: "item"
 				}
 			]
+			title: "钢铁意志"
 			x: 11.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["5700B2AFCCAEE31A"]
+			description: [
+				"在制作模具的过程中，车床是必不可少的。"
+				"但相应的，你需要一定的技术来操作它，不然你根本车不出你想要的模板）"
+			]
 			icon: "vintageimprovements:lathe"
 			id: "56229BD92474D24C"
 			subtitle: "这是之后要用到的神奇妙妙工具.jpg"
@@ -803,7 +849,13 @@
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
+			description: [
+				"在大型机械中，小弹簧的小打小闹显然无法满足需求了，所以需要用钢来制作更加强力的弹簧结构。"
+				""
+				"&o&b很可惜的是它并不能把你弹飞（真的可惜吗？&r&r"
+			]
 			id: "7F70BCE1EBD2C73E"
+			subtitle: "更加强大"
 			tasks: [{
 				id: "50F72EAE8EBF61C2"
 				item: "kubejs:advanced_spring_set"
@@ -814,7 +866,9 @@
 		}
 		{
 			dependencies: ["5B1818D5A1142A16"]
+			description: ["虽然实际上用得上这种工业加工的只有玫瑰石英和紫水晶……但这下不用拿着砂纸手搓了。"]
 			id: "1FB6A2B277331552"
+			subtitle: "无尽砂纸"
 			tasks: [{
 				id: "07BE81872FF465D3"
 				item: "vintageimprovements:belt_grinder"
@@ -825,6 +879,7 @@
 		}
 		{
 			dependencies: ["1FB6A2B277331552"]
+			description: ["作为以脆弱出名的水晶，在打磨时需要严格控制转速……否则你将白费力气。"]
 			id: "635A0221044B2A2A"
 			subtitle: "小心点磨"
 			tasks: [{
@@ -875,8 +930,13 @@
 				"14A2B5756D42DD23"
 				"750FAE62628DB185"
 			]
+			description: [
+				"焦化硫显然并不是一种合格的工业硫磺，所以你需要通过将其&6组合进烈性火药&r后&c配合红石酸&r进行离心才能获得足够纯净的硫磺。"
+				"如果你没有离心机，那最好先准备一台足够大的动力合成器。"
+			]
 			icon: "vintageimprovements:sulfur"
 			id: "5F4027766CCD6DEC"
+			subtitle: "离心提纯"
 			tasks: [
 				{
 					id: "67C6C87C760E1D4D"
@@ -894,7 +954,12 @@
 		}
 		{
 			dependencies: ["5B1818D5A1142A16"]
+			description: [
+				"除了用于工业之外，用于弹药是一条显然的途径。"
+				"可以生产火箭弹以使用一些有趣的枪械了（笑"
+			]
 			id: "750FAE62628DB185"
+			subtitle: "剧烈燃烧"
 			tasks: [{
 				id: "536BCD6EE727CC4F"
 				item: "scguns:sheol"
@@ -905,7 +970,9 @@
 		}
 		{
 			dependencies: ["5F4027766CCD6DEC"]
+			description: ["这确实可以对生物造成伤害……"]
 			id: "75DA5648FA7A43C2"
+			subtitle: "这不是化学课"
 			tasks: [{
 				id: "6178CE9CCE34124C"
 				item: "vintageimprovements:sulfuric_acid_bucket"
@@ -920,7 +987,9 @@
 				"3FCF15CEE440DFC4"
 				"5184969E829D39FA"
 			]
+			description: ["距离你可以在机器中操纵电力已经很近了，虽然目前只有小电池，但足够多的电池组合起来也能够供应相应的机械。"]
 			id: "6DCA03A4B843B686"
+			subtitle: "以小见大"
 			tasks: [{
 				id: "3B57B147ADD29839"
 				item: "kubejs:battery_component"
@@ -931,7 +1000,9 @@
 		}
 		{
 			dependencies: ["75DA5648FA7A43C2"]
+			description: ["铅酸蓄电池当然需要铅酸构件）"]
 			id: "3FCF15CEE440DFC4"
+			subtitle: "化学生电"
 			tasks: [{
 				id: "1B4CF7F614A21A21"
 				item: "vintageimprovements:redstone_module"

@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
             E: 'botania:grass_seeds'
         }
     )
-    //元素核心催化玉石系列
+    //元素核心催化宝石系列
     //goety玉石
     event.shaped(
         Item.of('goety:jade_block'),
@@ -30,10 +30,16 @@ ServerEvents.recipes(event => {
             A: 'goety:jade'
         }
     )
-    //月长玉石
+    //月长，日长玉石
     event.shapeless(Item.of('blue_skies:moonstone_crystal'),
         [
             'blue_skies:moonstone',
+            'blue_skies:moonstone',
+            'blue_skies:moonstone'
+        ]
+    )
+    event.shapeless(Item.of('blue_skies:moonstone_shard', 2),
+        [
             'blue_skies:moonstone'
         ]
     )
@@ -49,7 +55,6 @@ ServerEvents.recipes(event => {
             A: 'blue_skies:moonstone_crystal'
         }
     )
-    //日长玉石
     event.shaped(
         Item.of('blue_skies:sunstone_block'),
         [
@@ -61,6 +66,53 @@ ServerEvents.recipes(event => {
             B: 'kubejs:earth_elemental_core',
             A: 'blue_skies:sunstone_crystal'
         }
+    )
+    //榴石，透辉石，水蓝石，绛紫晶
+    event.shapeless(Item.of('blue_skies:everdawn_pyrope_ore', 4),
+        [
+            'blue_skies:pyrope_gem',
+            'kubejs:earth_elemental_core'
+        ]
+    )
+    event.shapeless(Item.of('blue_skies:everdawn_diopside_ore', 4),
+        [
+            'blue_skies:diopside_gem',
+            'kubejs:earth_elemental_core'
+        ]
+    )
+    event.shapeless(Item.of('blue_skies:everdawn_aquite_ore', 4),
+        [
+            'blue_skies:raw_aquite',
+            'kubejs:earth_elemental_core'
+        ]
+    )
+    event.shapeless(Item.of('blue_skies:everdawn_charoite_ore', 4),
+        [
+            'blue_skies:raw_charoite',
+            'kubejs:earth_elemental_core'
+        ]
+    )
+    //钻石，绿宝石
+    event.shapeless(Item.of('minecraft:deepslate_diamond_ore', 16),
+        [
+            'botania:mana_diamond_block',
+            'kubejs:earth_elemental_core'
+        ]
+    )
+    event.shapeless(Item.of('minecraft:deepslate_emerald_ore', 16),
+        [
+            'goety:awakened_emerald_block',
+            'kubejs:earth_elemental_core'
+        ]
+    )
+    //镰鼬铁
+    event.shapeless(Item.of('blue_skies:raw_ventium_block'),
+        [
+            'kubejs:earth_elemental_core',
+            'blue_skies:raw_ventium',
+            'irons_spellbooks:arcane_ingot',
+            'botania:mana_powder'
+        ]
     )
 
     //幽匿催发体合成

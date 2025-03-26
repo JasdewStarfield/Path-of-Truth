@@ -38,7 +38,11 @@
 	quests: [
 		{
 			dependencies: ["6E0D85E43EDF1994"]
-			description: ["所以，工业的新篇章也对你开启了。"]
+			description: [
+				"所以，工业的新篇章也对你开启了。"
+				""
+				"&o&3真实的炼铁就是这么困难……炼钢其实也是如此。&r&r"
+			]
 			hide_until_deps_complete: true
 			id: "11EC3A84F0C84E65"
 			rewards: [{
@@ -124,7 +128,10 @@
 		}
 		{
 			dependencies: ["2B406E71D5BDF8F6"]
-			description: ["什么，你说一次凿一组都无法满足你？那还是试试自动产线吧）"]
+			description: [
+				"什么，你说一次凿一组都无法满足你？那还是试试自动产线吧）"
+				"它同样可以帮助你调整某些方块的形态以满足工业需求，比如切制石灰岩。"
+			]
 			id: "73E629F1A17FB01C"
 			rewards: [{
 				count: 32
@@ -228,7 +235,7 @@
 				"有条件的话可以多抓几只，烈焰人不仅可以帮你加热炉子，开火车也是一把好手。"
 				"烈焰人需要燃料——一般来说是煤炭木炭，但也可以通过流体输入（create的泵）的方式灌入岩浆，而且岩浆很耐烧。"
 				""
-				"&a提示：你可以使用探险家指南针搜索Fortress来寻找下界要塞！&r"
+				"&a提示：你可以使用探险家指南针寻找下界要塞！&r"
 				""
 				"&o&c*那么从哪里搞那么多岩浆？&r&r"
 			]
@@ -290,7 +297,7 @@
 		}
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
-			description: ["让你的液体动一动（大雾"]
+			description: ["液体总是要流淌的，然而抗腐蚀的材料不多"]
 			hide_until_deps_complete: true
 			id: "27FD1F76136CBD0B"
 			subtitle: "你甚至可以用它们处理牛奶（笑"
@@ -488,7 +495,7 @@
 			]
 			hide_until_deps_complete: true
 			id: "51676EF62E7A17F3"
-			subtitle: "精密元件的基石"
+			subtitle: "基础元件的基础"
 			tasks: [{
 				id: "5D18D64F0341F617"
 				item: "create:precision_mechanism"
@@ -897,25 +904,29 @@
 		}
 		{
 			dependencies: ["2365843CB7C02588"]
-			description: [" 在高温高压下，红石溶解于水，生成红石酸"]
+			description: [" 在高温高压下，红石溶解于水，生成红石酸……所以你应该狠狠加压了）"]
 			id: "3ACA6DDA21386252"
-			subtitle: "非常规手段"
+			subtitle: "压力上来了"
 			tasks: [{
 				id: "3CA0380EB5FA21C0"
 				item: "immersiveengineering:redstone_acid_bucket"
 				type: "item"
 			}]
+			title: "红石酸"
 			x: -2.0d
 			y: 11.5d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
+			description: ["将金属压制成线……以方便一些精细加工。"]
 			id: "5584865A3F339D6E"
+			subtitle: "金属版"
 			tasks: [{
 				id: "4E61DFFE814C6921"
 				item: "createaddition:rolling_mill"
 				type: "item"
 			}]
+			title: "纺线机？"
 			x: 0.0d
 			y: 0.5d
 		}
@@ -935,8 +946,10 @@
 				"079D9B3E0E12C25C"
 				"5584865A3F339D6E"
 			]
+			description: ["在你给烈焰人吸管后，它们就可以在笼子里利用岩浆来燃烧了！"]
 			id: "0E9D500DED0B76E7"
 			shape: "diamond"
+			subtitle: "顶级饮品"
 			tasks: [{
 				id: "5D5CF30B38FB21DC"
 				item: "createaddition:straw"
