@@ -21,7 +21,7 @@
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 14.0d
+			x: 13.5d
 			y: 0.0d
 		}
 		{
@@ -31,6 +31,14 @@
 			width: 12.853503184713375d
 			x: -10.0d
 			y: 4.5d
+		}
+		{
+			height: 4.0d
+			image: "immersiveengineering:item/tool_hammer"
+			rotation: 45.0d
+			width: 4.0d
+			x: 1.0d
+			y: 4.0d
 		}
 	]
 	order_index: 0
@@ -515,7 +523,7 @@
 				value: 1145140L
 			}]
 			title: "证明你的能量霸权！"
-			x: 3.0d
+			x: 5.0d
 			y: 4.0d
 		}
 		{
@@ -1125,7 +1133,7 @@
 			dependencies: ["3B29D716A3D5AAF0"]
 			description: [
 				"有着奇特性质的两种金属的结合。"
-				"似乎拥有极强的导热性……同时硬度也十分优异"
+				"似乎拥有极强的导热性，是制作散热器的绝佳材料"
 				""
 				"以防你不知道，提示一下……"
 				"霜钢生成在深暗之园维度的寒霜之地群系，需要用雪帽菇熔炉来“冶炼”（雪帽菇熔炉的材料来自永昼之地的雪帽菇群系）。"

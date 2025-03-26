@@ -21,7 +21,7 @@
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 16.0d
+			x: 15.0d
 			y: 1.0d
 		}
 		{
@@ -124,7 +124,7 @@
 			}]
 			title: "工程基本单元 I"
 			x: 12.0d
-			y: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -165,7 +165,7 @@
 				type: "item"
 			}]
 			title: "切割磁感线"
-			x: 15.0d
+			x: 14.0d
 			y: -2.0d
 		}
 		{
@@ -196,7 +196,7 @@
 				value: 1000L
 			}]
 			title: "【终点】电火花"
-			x: 16.0d
+			x: 14.0d
 			y: 0.0d
 		}
 		{
@@ -224,8 +224,8 @@
 				}
 			]
 			title: "给我个任务吧！"
-			x: 17.0d
-			y: -2.0d
+			x: 16.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
@@ -274,8 +274,8 @@
 				}
 			]
 			title: "搭建强化高炉"
-			x: 9.0d
-			y: 3.0d
+			x: 12.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
@@ -308,7 +308,7 @@
 			}]
 			title: "绝对防御！"
 			x: 10.0d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -388,8 +388,8 @@
 				type: "item"
 			}]
 			title: "电力转应力"
-			x: 18.0d
-			y: 0.0d
+			x: 14.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["429B458F0AADA253"]
@@ -681,6 +681,7 @@
 					type: "item"
 				}
 			]
+			title: "简单电容器"
 			x: 10.0d
 			y: 0.0d
 		}
@@ -820,8 +821,8 @@
 				}
 			]
 			title: "钢铁意志"
-			x: 11.0d
-			y: 3.0d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5700B2AFCCAEE31A"]
@@ -844,8 +845,8 @@
 					type: "item"
 				}
 			]
-			x: 14.0d
-			y: 0.0d
+			x: 12.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
