@@ -13,7 +13,7 @@
 			image: "kubejs:textures/quests/start.png"
 			rotation: 0.0d
 			width: 1.3285714285714287d
-			x: -8.0d
+			x: -10.0d
 			y: -1.5d
 		}
 		{
@@ -29,8 +29,8 @@
 			image: "kubejs:textures/quests/i4.png"
 			rotation: 0.0d
 			width: 12.853503184713375d
-			x: -7.5d
-			y: 7.0d
+			x: -10.0d
+			y: 4.5d
 		}
 	]
 	order_index: 0
@@ -56,7 +56,7 @@
 				type: "checkmark"
 			}]
 			title: "【起点】电力驱动！"
-			x: -8.0d
+			x: -10.0d
 			y: 0.0d
 		}
 		{
@@ -92,11 +92,11 @@
 				}
 			]
 			title: "低压电力系统"
-			x: -10.0d
+			x: -12.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["02D2280F57251219"]
+			dependencies: ["0EA7E42D07C4BC01"]
 			description: [
 				"其实主要作用是生产工业乙醇）"
 				"我们不允许玩家在游戏内酗酒，真的"
@@ -153,8 +153,8 @@
 				}
 			]
 			title: "组装发酵机"
-			x: 2.0d
-			y: -2.0d
+			x: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
@@ -220,8 +220,8 @@
 				}
 			]
 			title: "组装挤压机"
-			x: -2.0d
-			y: 2.0d
+			x: -4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["19EA7F4C42FCA4BA"]
@@ -254,8 +254,8 @@
 				type: "item"
 			}]
 			title: "金色传说！"
-			x: 3.0d
-			y: 4.0d
+			x: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1E0E5E47E1264279"]
@@ -276,7 +276,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["11F2CDF608EA11DA"]
+			dependencies: [
+				"11F2CDF608EA11DA"
+				"02D2280F57251219"
+			]
 			description: ["“对，说你呢，罗蒙诺索夫同志！这玩意不是给你喝的！这不是伏特加！”"]
 			icon: "immersiveengineering:ethanol_bucket"
 			id: "48A3FEF7D02104E5"
@@ -384,8 +387,8 @@
 				}
 			]
 			title: "中压电力系统"
-			x: 5.5d
-			y: 5.5d
+			x: 6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -447,8 +450,8 @@
 				}
 			]
 			title: "组装柴油发电机"
-			x: 3.0d
-			y: 2.5d
+			x: 4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -512,8 +515,8 @@
 				value: 1145140L
 			}]
 			title: "证明你的能量霸权！"
-			x: 0.0d
-			y: 3.0d
+			x: 3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -597,13 +600,13 @@
 			]
 			title: "组装电弧炉"
 			x: 4.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"583407C7537AE9C9"
 				"66E52E485A1A4139"
-				"122C029E687234EA"
+				"68A8BCB8BCBC8C1B"
 			]
 			description: [
 				"首先经过一些工序将铝土矿加工为氧化铝，然后利用电弧炉电解，你终于获得了这一珍贵的金属）"
@@ -622,32 +625,17 @@
 			shape: "gear"
 			size: 2.0d
 			subtitle: "电解，嗯"
-			tasks: [
-				{
-					id: "70186FD6D7DB9684"
-					item: "immersiveengineering:raw_aluminum"
-					type: "item"
-				}
-				{
-					id: "6E090919BA7349F7"
-					item: "create:crushed_raw_aluminum"
-					type: "item"
-				}
-				{
-					id: "1C5AD55FCFAA1395"
-					item: "immersiveengineering:ingot_aluminum"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1C5AD55FCFAA1395"
+				item: "immersiveengineering:ingot_aluminum"
+				type: "item"
+			}]
 			title: "工业明珠"
 			x: 4.0d
-			y: -4.0d
+			y: -6.0d
 		}
 		{
-			dependencies: [
-				"1E0E5E47E1264279"
-				"3B29D716A3D5AAF0"
-			]
+			dependencies: ["1E0E5E47E1264279"]
 			description: [
 				"其实就是压制后的碳粉（？"
 				"唯一的作用就是烧制石墨锭）"
@@ -660,14 +648,11 @@
 				item: "immersiveengineering:dust_hop_graphite"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 2.0d
+			x: -4.0d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"48E0B5D1F9972D20"
-				"087C118AB8CC51F8"
-			]
+			dependencies: ["48E0B5D1F9972D20"]
 			dependency_requirement: "one_completed"
 			description: [
 				"你应该可以看到电极有两种生产方式。"
@@ -688,8 +673,8 @@
 				type: "item"
 			}]
 			title: "电弧炉核心"
-			x: 7.0d
-			y: 0.0d
+			x: -4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2BE7BA0BE9F2DBC9"]
@@ -726,8 +711,8 @@
 				}
 			]
 			title: "高压电力系统"
-			x: 5.0d
-			y: -6.0d
+			x: 6.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -781,7 +766,7 @@
 				}
 			]
 			title: "搭建金属冲压机"
-			x: -6.0d
+			x: -8.0d
 			y: 0.0d
 		}
 		{
@@ -809,7 +794,7 @@
 				}
 			]
 			title: "看看你的棒子"
-			x: -4.0d
+			x: -6.0d
 			y: 0.0d
 		}
 		{
@@ -830,37 +815,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"504E6502A789DABF"
-				"48E0B5D1F9972D20"
-			]
-			description: [
-				"由于这张图不能合成，所以你需要去找工程师村民进行一些不太和谐的行为……"
-				"比如在他们面前翻箱倒柜（"
-			]
-			hide_until_deps_complete: true
-			id: "087C118AB8CC51F8"
-			optional: true
-			shape: "diamond"
-			subtitle: "嗯，宝藏……"
-			tasks: [{
-				id: "26DA5121AA920A2A"
-				item: {
-					Count: 1
-					id: "immersiveengineering:blueprint"
-					tag: {
-						blueprint: "electrode"
-					}
-				}
-				match_nbt: true
-				type: "item"
-			}]
-			title: "我电极呢？"
-			x: 8.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["2BE7BA0BE9F2DBC9"]
+			dependencies: ["55C58DBE6BE16B1C"]
 			description: [
 				"由于柴油性能还是有限，接下来你大概是需要迈入石油和重工业时代）"
 				"而重工业——需要你手里的元件。"
@@ -873,8 +828,8 @@
 				item: "kubejs:steel_mechanism"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -4.0d
+			x: 12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -913,13 +868,13 @@
 				type: "item"
 			}]
 			title: "【终点】工业的重压！"
-			x: 12.5d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
 			dependencies: [
-				"55C58DBE6BE16B1C"
-				"5603929D7B14B8ED"
+				"726AC9F2DA602E72"
+				"2415442F916846C5"
 			]
 			description: [
 				"由双层特种金属板制成的外壳赋予了这种机壳几乎难以想象的韧性，可以承载大量压力。"
@@ -932,7 +887,7 @@
 				item: "kubejs:factory_casing"
 				type: "item"
 			}]
-			x: 9.5d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -961,7 +916,7 @@
 				}
 			]
 			title: "下去吧你！"
-			x: 7.5d
+			x: 8.0d
 			y: 4.0d
 		}
 		{
@@ -999,7 +954,7 @@
 				}
 			]
 			title: "多方块指南"
-			x: -10.0d
+			x: -12.0d
 			y: -2.0d
 		}
 		{
@@ -1018,7 +973,7 @@
 				item: "immersiveengineering:blastfurnace_preheater"
 				type: "item"
 			}]
-			x: -10.0d
+			x: -12.0d
 			y: 2.0d
 		}
 		{
@@ -1110,8 +1065,8 @@
 				}
 			]
 			title: "理解法拉第"
-			x: 1.0d
-			y: -6.0d
+			x: 2.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["011BB3E4881AA3F2"]
@@ -1148,8 +1103,8 @@
 				}
 				type: "item"
 			}]
-			x: 3.0d
-			y: 7.0d
+			x: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -1163,7 +1118,7 @@
 				type: "item"
 			}]
 			title: "精细化农业"
-			x: -8.0d
+			x: -10.0d
 			y: 2.0d
 		}
 		{
@@ -1184,7 +1139,7 @@
 				item: "kubejs:frostfire_double_plate"
 				type: "item"
 			}]
-			x: 5.5d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -1202,13 +1157,14 @@
 				item: "immersiveengineering:component_electronic"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 3.0d
+			x: 8.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
 				"1A19AB31DBCDBCF7"
 				"671C17CCA1D5FA78"
+				"506AC24B2EAF854D"
 			]
 			id: "41E56A9D68E36043"
 			subtitle: "众所周知，有时候科技发展靠考古"
@@ -1217,8 +1173,8 @@
 				item: "kubejs:forgotten_mechanism"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 4.0d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
@@ -1247,8 +1203,8 @@
 				item: "immersiveengineering:thermoelectric_generator"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 6.0d
+			x: 4.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
@@ -1303,7 +1259,7 @@
 			]
 			title: "组装粉碎机"
 			x: -2.0d
-			y: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
@@ -1314,8 +1270,8 @@
 				item: "createaddition:electrum_amulet"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 5.5d
+			x: 2.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -1338,7 +1294,7 @@
 				}
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.0d
 			y: 2.0d
 		}
 		{
@@ -1358,7 +1314,7 @@
 				}
 			]
 			x: -1.0d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0F4EDD4535A9D928"]
@@ -1370,7 +1326,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -1383,8 +1339,8 @@
 				item: "createaddition:biomass_pellet"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.0d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1E0E5E47E1264279"]
@@ -1402,19 +1358,8 @@
 					type: "item"
 				}
 			]
-			x: -2.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["585C0F11261551FD"]
-			id: "122C029E687234EA"
-			tasks: [{
-				id: "4D14517A765BDB40"
-				item: "kubejs:crushed_raw_bauxite"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -4.0d
+			x: -4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
@@ -1424,8 +1369,8 @@
 				item: "createaddition:tesla_coil"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 6.0d
+			x: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["143039C6AC2D8186"]
@@ -1444,7 +1389,7 @@
 					type: "item"
 				}
 			]
-			x: -6.0d
+			x: -8.0d
 			y: -2.0d
 		}
 		{
@@ -1463,8 +1408,8 @@
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			x: 5.5d
-			y: -1.0d
+			x: 6.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1477,10 +1422,11 @@
 				item: "kubejs:za_ingot"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.5d
+			x: 8.0d
+			y: -6.0d
 		}
 		{
+			dependencies: ["1CBD49955AFAF545"]
 			icon: "immersiveengineering:concrete_bucket"
 			id: "5603929D7B14B8ED"
 			tasks: [
@@ -1495,8 +1441,125 @@
 					type: "item"
 				}
 			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0EA7E42D07C4BC01"]
+			description: [
+				"虽然占地不小，但你大概率需要不止一台——因为你需要一台来持续的为你压种子）"
+				"唯一的植物油量产方案……没有其他。"
+				"当然，压制琥珀金粉也需要这台机器）"
+			]
+			icon: "immersiveengineering:mixer"
+			id: "1CBD49955AFAF545"
+			subtitle: "压力山大"
+			tasks: [
+				{
+					count: 4L
+					id: "67DD3016AAF23795"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "3D27CDF969EA9D33"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					id: "31FA7AFD99629E5F"
+					item: "immersiveengineering:steel_fence"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "186D52BAA5EEDD88"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "781816426F625D40"
+					item: "immersiveengineering:sheetmetal_iron"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "212694FB371262DE"
+					item: "kubejs:fluid_engineering"
+					type: "item"
+				}
+				{
+					id: "21E20CB5933B696A"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "组装搅拌机"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5603929D7B14B8ED"]
+			id: "726AC9F2DA602E72"
+			tasks: [{
+				id: "6678792B99F4EAA7"
+				item: "immersiveengineering:concrete_leaded"
+				type: "item"
+			}]
 			x: 8.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["585C0F11261551FD"]
+			id: "68A8BCB8BCBC8C1B"
+			tasks: [{
+				id: "7902A64DAF139629"
+				item: "immersiveengineering:dust_aluminum"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["55C58DBE6BE16B1C"]
+			id: "2415442F916846C5"
+			tasks: [{
+				id: "57771278C9D9F15F"
+				item: "kubejs:za_sheet"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["011BB3E4881AA3F2"]
+			id: "506AC24B2EAF854D"
+			tasks: [{
+				id: "1C27A78FD6364A0A"
+				item: "scguns:charged_amethyst_shard"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1CBD49955AFAF545"]
+			id: "5FBA1CE252E08940"
+			shape: "diamond"
+			tasks: [{
+				id: "1BFDF583454895A8"
+				item: "immersiveengineering:redstone_acid_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
 		}
 	]
 	subtitle: ["Roaring Machinery"]

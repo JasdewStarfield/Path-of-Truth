@@ -341,24 +341,28 @@ ServerEvents.recipes(event => {
 
     event.recipes.create.sequenced_assembly([
       Item.of('kubejs:steel_mechanism').withChance(90.0),
-      Item.of('#forge:rods/steel').withChance(2.0),
-      Item.of('#forge:ingots/aluminum').withChance(2.5),
-      Item.of('#forge:plates/steel').withChance(3.0),
+      Item.of('immersiveengineering:rods_steel').withChance(2.0),
+      Item.of('immersiveengineering:ingots_aluminum').withChance(2.5),
+      Item.of('immersiveengineering:plate_teel').withChance(3.0),
       Item.of('create:precision_mechanism').withChance(2.5)
       ], '#forge:plates/steel', [
       event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', 'create:precision_mechanism']),
-      event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', 'createdieselgenerators:engine_turbocharger']),
-      event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', '#forge:dusts/aquite'])
-    ]).transitionalItem('kubejs:unfinished_steel_mechanism').loops(4)
+      event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', 'createdieselgenerators:engine_piston']),
+      event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', '#forge:dusts/aquite']),
+      event.recipes.vintageimprovements.vibrating('kubejs:unfinished_steel_mechanism', 'kubejs:unfinished_steel_mechanism'),
+      event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', 'createdieselgenerators:engine_turbocharger'])
+    ]).transitionalItem('kubejs:unfinished_steel_mechanism').loops(4).id('kubejs:steel_mechanism_1')
 
     event.recipes.create.sequenced_assembly([
       Item.of('kubejs:steel_mechanism')
       ], '#forge:plates/steel', [
       event.recipes.createFilling('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', {fluidTag: 'forge:lubricant', amount:25}]),
       event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', 'create:precision_mechanism']),
+      event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', 'createdieselgenerators:engine_piston']),
+      event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', '#forge:dusts/aquite']),
+      event.recipes.vintageimprovements.vibrating('kubejs:unfinished_steel_mechanism', 'kubejs:unfinished_steel_mechanism'),
       event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', 'createdieselgenerators:engine_turbocharger']),
-      event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', '#forge:dusts/aquite'])
-    ]).transitionalItem('kubejs:unfinished_steel_mechanism').loops(4)
+    ]).transitionalItem('kubejs:unfinished_steel_mechanism').loops(4).id('kubejs:steel_mechanism_2')
 
     //遗忆构件
     event.recipes.create.sequenced_assembly([
@@ -369,18 +373,22 @@ ServerEvents.recipes(event => {
       Item.of('kubejs:forgotten_plate').withChance(3.0)
       ], '#forge:plates/forgotten_metal', [
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'create:precision_mechanism']),
+      event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'scguns:charged_amethyst_shard']),
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'blue_skies:diopside_gem']),
+      event.recipes.vintageimprovements.polishing('kubejs:incomplete_forgotten_mechanism', 'kubejs:incomplete_forgotten_mechanism').speedLimits(3),
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'immersiveengineering:component_electronic'])
-    ]).transitionalItem('kubejs:incomplete_forgotten_mechanism').loops(4)
+    ]).transitionalItem('kubejs:incomplete_forgotten_mechanism').loops(4).id('kubejs:forgotten_mechanism_1')
 
     event.recipes.create.sequenced_assembly([
       Item.of('kubejs:forgotten_mechanism')
       ], '#forge:plates/forgotten_metal', [
       event.recipes.createFilling('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', {fluidTag: 'forge:lubricant', amount:25}]),
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'create:precision_mechanism']),
+      event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'scguns:charged_amethyst_shard']),
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'blue_skies:diopside_gem']),
+      event.recipes.vintageimprovements.polishing('kubejs:incomplete_forgotten_mechanism', 'kubejs:incomplete_forgotten_mechanism').speedLimits(3),
       event.recipes.createDeploying('kubejs:incomplete_forgotten_mechanism', ['kubejs:incomplete_forgotten_mechanism', 'immersiveengineering:component_electronic'])
-    ]).transitionalItem('kubejs:incomplete_forgotten_mechanism').loops(4)
+    ]).transitionalItem('kubejs:incomplete_forgotten_mechanism').loops(4).id('kubejs:forgotten_mechanism_2')
 
     //工程块
     event.remove({id:"immersiveengineering:crafting/light_engineering"})

@@ -3,6 +3,34 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'minecraft:netherite_ingot' })
   event.recipes.create.mixing(['netherite_ingot'], ['#forge:ingots/uranium','#forge:ingots/uranium','#forge:ingots/uranium','#forge:ingots/uranium','minecraft:netherite_scrap','minecraft:netherite_scrap','minecraft:netherite_scrap','minecraft:netherite_scrap']).superheated()
 
+  //第五章工业：将Diesel Generators的配方中所有锌锭替换为锌铝合金
+  event.replaceInput(
+    { mod:"createdieselgenerators" },
+    '#forge:ingots/zinc',
+    '#forge:ingots/za'
+  )
+  event.replaceInput(
+    { mod:"createdieselgenerators" },
+    '#forge:nuggets/zinc',
+    '#forge:nuggets/za'
+  )
+  //铁替换为钢
+  event.replaceInput(
+    { mod:"createdieselgenerators" },
+    '#forge:rods/iron',
+    'immersiveengineering:rod_steel'
+  )
+  event.replaceInput(
+    { mod:"createdieselgenerators" },
+    '#forge:plates/iron',
+    'immersiveengineering:plate_steel'
+  )
+  event.replaceInput(
+    { mod:"createdieselgenerators" },
+    '#forge:ingots/iron',
+    'immersiveengineering:ingot_steel'
+  )
+
   /*
   //多彩化合物
   event.remove({ id: 'createchromaticreturn:chromatic_compound_recipe' })

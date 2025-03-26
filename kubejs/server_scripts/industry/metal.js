@@ -184,13 +184,13 @@ ServerEvents.recipes(event => {
     '#forge:plates/iron', '#forge:plates/andesite' )
 
     //石磨粉碎铜锭锡锭镍锭锌锭
-    event.recipes.create.milling(Item.of('kubejs:tin_dust').withChance(0.75), '#forge:ingots/tin').id('tin_dust_manual_only')
-    event.recipes.create.milling(Item.of('immersiveengineering:dust_copper').withChance(0.75), '#forge:ingots/copper').id('copper_dust_manual_only')
-    event.recipes.create.milling(Item.of('immersiveengineering:dust_nickel').withChance(0.75), '#forge:ingots/nickel').id('nickel_dust_manual_only')
-    event.recipes.create.milling(Item.of('kubejs:zinc_dust').withChance(0.75), '#forge:ingots/zinc').id('zinc_dust_manual_only')
+    event.recipes.create.milling(Item.of('kubejs:tin_dust').withChance(0.75), '#forge:ingots/tin').id('kubejs:tin_dust_manual_only')
+    event.recipes.create.milling(Item.of('immersiveengineering:dust_copper').withChance(0.75), '#forge:ingots/copper').id('kubejs:copper_dust_manual_only')
+    event.recipes.create.milling(Item.of('immersiveengineering:dust_nickel').withChance(0.75), '#forge:ingots/nickel').id('kubejs:nickel_dust_manual_only')
+    event.recipes.create.milling(Item.of('kubejs:zinc_dust').withChance(0.75), '#forge:ingots/zinc').id('kubejs:zinc_dust_manual_only')
 
-    event.recipes.create.milling(Item.of('immersiveengineering:dust_gold').withChance(0.25), '#forge:ingots/gold').id('gold_dust_manual_only')
-    event.recipes.create.milling(Item.of('immersiveengineering:dust_silver').withChance(0.25), '#forge:ingots/silver').id('silver_dust_manual_only')
+    event.recipes.create.milling(Item.of('immersiveengineering:dust_gold').withChance(0.25), '#forge:ingots/gold').id('kubejs:gold_dust_manual_only')
+    event.recipes.create.milling(Item.of('immersiveengineering:dust_silver').withChance(0.25), '#forge:ingots/silver').id('kubejs:silver_dust_manual_only')
 
     event.recipes.create.crushing(Item.of('kubejs:tin_dust'), '#forge:ingots/tin')
     event.recipes.create.crushing(Item.of('immersiveengineering:dust_copper'), '#forge:ingots/copper')
@@ -374,9 +374,6 @@ ServerEvents.recipes(event => {
         "result":{"base_ingredient":{"tag":"forge:dusts/za"},"count":1},
         "secondaries":[]
     })
-
-    //锌铝压板
-    event.recipes.create.pressing('#forge:plates/za', '#forge:ingots/za')
 
     //一些沉浸盔甲修改
     event.replaceInput(

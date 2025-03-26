@@ -29,12 +29,23 @@ ServerEvents.recipes(event => {
     "result":{"base_ingredient":{"tag":"forge:dusts/aluminum"},"count":2},
     "secondaries":[{"chance":0.5,"output":{"tag":"forge:dusts/aluminum"}}]
   })
-  event.recipes.create.mixing([Item.of('mud'),Fluid.of('immersiveengineering:redstone_acid',50),Item.of('create:crushed_raw_aluminum').withChance(0.1)], [Fluid.of('minecraft:water',1000),'kubejs:crushed_raw_bauxite']).heated()
+  event.recipes.vintageimprovements.centrifugation([Item.of('mud').withChance(0.9),Fluid.of('immersiveengineering:redstone_acid',50),Item.of('create:crushed_raw_aluminum').withChance(0.1)], [Fluid.of('minecraft:water',500),'kubejs:crushed_raw_bauxite']).minimalRPM(256)
+  event.custom({
+    "type":"immersiveengineering:arc_furnace",
+    "additives":[],
+    "energy":204800,
+    "additives":[{"tag":"forge:dusts/glowstone"}],
+    "input":{"tag":"forge:dusts/aluminum"},
+    "results":[{"tag":"forge:ingots/aluminum"}],
+    "slag":{"tag":"forge:slag"},
+    "time":400
+  })
 
   event.remove([{id:'create:splashing/immersiveengineering/crushed_raw_aluminum'}])
   event.remove([{ type: 'minecraft:smelting', output: '#forge:ingots/aluminum' }, { type: 'minecraft:blasting', output: '#forge:ingots/aluminum' }])
   event.remove([{id:'immersiveengineering:crusher/ingot_aluminum'}])
   event.remove([{id:'immersiveengineering:crusher/raw_ore_aluminum'}])
+  event.remove([{id:'immersiveengineering:arcfurnace/dust_aluminum'}])
   event.remove([{id:'immersiveengineering:arcfurnace/ore_aluminum'}])
   event.remove([{id:'immersiveengineering:arcfurnace/raw_ore_aluminum'}])
   event.remove([{id:'immersiveengineering:arcfurnace/raw_block_aluminum'}])

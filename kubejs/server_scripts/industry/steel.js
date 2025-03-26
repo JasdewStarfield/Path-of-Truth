@@ -250,6 +250,19 @@ ServerEvents.recipes(event => {
     "energy": 16000,
     "maxChargeRate": 200
   })
+  event.custom({
+    "type":"createaddition:charging",
+    "input": {
+          "tag": "forge:storage_blocks/constantan",
+      "count": 1
+    },
+    "result": {
+      "item": "irons_spellbooks:energized_core",
+      "count": 1
+    },
+    "energy": 128000,
+    "maxChargeRate": 1600
+  })
 
   //电动机、发电机
   event.remove({ id: 'createaddition:mechanical_crafting/alternator'})
