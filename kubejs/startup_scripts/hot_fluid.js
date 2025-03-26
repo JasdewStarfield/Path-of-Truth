@@ -12,8 +12,8 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingEvent$LivingTi
 })
 
 let ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
-//let Registries = Java.loadClass
-let acidDamageSource = global.getFromRegistry(Registries.DAMAGE_TYPE, "immersiveengineering:acid")
+let Registries = Java.loadClass('net.minecraft.core.registries.Registries')
+//let acidDamageSource = global.getFromRegistry(Registries.DAMAGE_TYPE, "immersiveengineering:acid")
 
 /**
 * 
