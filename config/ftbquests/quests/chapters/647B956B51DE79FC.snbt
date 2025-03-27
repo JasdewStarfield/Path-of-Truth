@@ -74,6 +74,22 @@
 			x: 0.0d
 			y: 0.0d
 		}
+		{
+			height: 3.0d
+			image: "biomeswevegone:block/cactus_flower"
+			rotation: 0.0d
+			width: 3.0d
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			height: 2.0d
+			image: "irons_spellbooks:textures/mob_effect/thunderstorm.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.5d
+			y: 0.5d
+		}
 	]
 	order_index: 1
 	quest_links: [ ]
@@ -386,7 +402,7 @@
 				"使徒的具体机制参见本章冒险任务，&2“4A 世界尽头”&r。"
 				"如果你希望获得&4更纯净的血液&r，那么你需要在&6下界&r召唤使徒，这会净化他们的血液，但也会让他们&a更加强大&r，可能直接掉落暗夜信标。"
 				"然而下界合金的获取也变得&e更加艰难&r，也许应该&7多借助一些工业的力量&r。"
-				"&o&4不要在虚空中召唤使徒……&r&r"
+				"&o&3有一种戒指可以让你避免被点燃的命运……&r&r"
 			]
 			id: "0E6FB072C7B55324"
 			subtitle: "亡灵王者"
