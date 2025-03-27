@@ -594,10 +594,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"7F70BCE1EBD2C73E"
-				"7A7C0A48248FA32B"
-			]
+			dependencies: ["7F70BCE1EBD2C73E"]
 			description: [
 				"将钢铁弹簧与蔚蓝维度的一些矿物结合，就可以形成性能极佳的零件。"
 				"尽管这可以直接通过工作台制作，但仍然略显浪费，也许有更好的办法？"
@@ -665,7 +662,10 @@
 				"77918DE5A223B3CD"
 				"5184969E829D39FA"
 			]
-			description: ["通过简易的雷电填充，你用魔法获得了一点点操纵电的力量……"]
+			description: [
+				"通过简易的雷电填充，你用魔法获得了一点点操纵电的力量……"
+				"使用泰拉钢板还能制作另一种电容器……泰拉钢还有这功能？"
+			]
 			icon: "kubejs:leyden_jar"
 			id: "786828EE220E93A3"
 			subtitle: "科学使用魔法"
@@ -971,7 +971,10 @@
 		}
 		{
 			dependencies: ["5F4027766CCD6DEC"]
-			description: ["这确实可以对生物造成伤害……"]
+			description: [
+				"这确实可以对生物造成伤害……"
+				"*浓硫酸会让铁钝化，所以确实可以装在铁桶里，不要再问了（）"
+			]
 			id: "75DA5648FA7A43C2"
 			subtitle: "这不是化学课"
 			tasks: [{
@@ -979,7 +982,7 @@
 				item: "vintageimprovements:sulfuric_acid_bucket"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 2.0d
 			y: -4.0d
 		}
 		{

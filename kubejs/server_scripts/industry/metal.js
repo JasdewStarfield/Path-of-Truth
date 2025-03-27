@@ -268,6 +268,9 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying("kubejs:incomplete_advanced_spring_set", ["kubejs:incomplete_advanced_spring_set", 'vintageimprovements:steel_spring']),
     ]).transitionalItem("kubejs:incomplete_advanced_spring_set").loops(4)
 
+    event.remove({id:"vintageimprovements:coiling/steel_rod"})
+    event.recipes.vintageimprovements.coiling('vintageimprovements:steel_spring', '#forge:plates/steel')
+
     //黄铜
     event.remove({id:"create:mixing/brass_ingot"})
 
@@ -308,7 +311,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.crushing([Item.of('minecraft:red_sand'),Item.of('create:copper_nugget').withChance(0.25)], '#minecraft:terracotta')
 
     //燧石出镍
-    event.recipes.create.milling(Item.of('immersiveengineering:nugget_nickle').withChance(0.3), 'flint')
+    event.recipes.create.milling(Item.of('immersiveengineering:nugget_nickel').withChance(0.3), 'flint')
 
     //黏土出锌
     event.recipes.create.milling(Item.of('create:zinc_nugget').withChance(0.5), 'clay_ball')
@@ -469,6 +472,9 @@ ServerEvents.recipes(event => {
     )
     event.smelting("kubejs:broken_snowcap_oven", "blue_skies:snowcap_oven")
 
+    //石墨
+    event.remove({id: "createnuclear:pressing/graphene"})
+
     //补充一些沉浸工程压板配方
     let IEMetalPressing = (material) => {
         event.custom({
@@ -490,7 +496,8 @@ ServerEvents.recipes(event => {
         "industrial_iron",
         "forgotten_metal",
         "za",
-        "terrasteel"
+        "terrasteel",
+        "hop_graphite"
     ]
     MissingPressingRecipeMetals.forEach(material => {
         IEMetalPressing(material)

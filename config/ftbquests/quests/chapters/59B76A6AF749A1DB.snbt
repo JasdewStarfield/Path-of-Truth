@@ -272,9 +272,8 @@
 		{
 			dependencies: ["1E0E5E47E1264279"]
 			description: [
-				"从物理上你无法点燃它）"
-				"但是是燃料必需品）"
-				"注：你同样可以通过魔法手段获得，但魔法手段显然无法量产）"
+				"很可惜不行。"
+				"一种低级油脂，仍需进一步加工以获得工业价值。"
 			]
 			icon: "immersiveengineering:plantoil_bucket"
 			id: "1404B54F1747DE16"
@@ -408,10 +407,14 @@
 				"3B29D716A3D5AAF0"
 				"3E60B78B0EE34B75"
 			]
-			description: ["你已经开始接近现代工业水准了，柴油发电领先时代！"]
+			description: [
+				"一台发电巨兽，拥有4096Fe/t的巨大发电量——前提是你供得上它的胃口。"
+				"你已经开始接近现代工业水准了，柴油发电领先时代！"
+			]
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:diesel_generator"
 			id: "76EF99C068AA2361"
+			shape: "diamond"
 			subtitle: "来劲了，朋友"
 			tasks: [
 				{
@@ -482,8 +485,7 @@
 				item: "farmersdelight:wild_potatoes"
 				type: "item"
 			}]
-			shape: "gear"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "获得高效燃料"
 			tasks: [
 				{
@@ -623,8 +625,6 @@
 			description: [
 				"首先经过一些工序将铝土矿加工为氧化铝，然后利用电弧炉电解，你终于获得了这一珍贵的金属）"
 				"现在，你可以利用它的优良性能来解决更多工业方面的问题了）"
-				""
-				"&o&6*你问我铝土矿在哪找？兄弟，铝可是储量最大的金属之一，如果到了这一阶段你还完全没见过满地表的铝土矿带，那我得怀疑一下你是不是认真在玩了……&r&r"
 			]
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:ingot_aluminum"
@@ -816,6 +816,8 @@
 				"虽然这个东西是脚手架没错，但同样也是机器框架）"
 			]
 			id: "0EA7E42D07C4BC01"
+			shape: "gear"
+			size: 2.0d
 			subtitle: "你的工程块比较松弛"
 			tasks: [{
 				id: "2B3D45F9C0B744F9"
@@ -889,7 +891,7 @@
 				"2415442F916846C5"
 			]
 			description: [
-				"由双层特种金属板制成的外壳赋予了这种机壳几乎难以想象的韧性，可以承载大量压力。"
+				"由特种合金金属板制成的外壳赋予了这种机壳几乎难以想象的强度，可以承载大量压力。"
 				"重型机械的基本结构之一"
 			]
 			id: "724A0B71BA342AEE"
@@ -1084,7 +1086,10 @@
 		}
 		{
 			dependencies: ["011BB3E4881AA3F2"]
-			description: ["提示：你需要在蓄电池背包内放入某种规格的蓄电池后它才能被正常充电（使用工程师装配台，具体请参照工程师手册）。"]
+			description: [
+				"自动为你身上的耗能装备供能。很可惜你需要从它和你储物用的背包之间抉择一下。"
+				"提示：你需要在蓄电池背包内放入某种规格的蓄电池后它才能被正常充电（使用工程师装配台，具体请参照工程师手册）。"
+			]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -1278,7 +1283,10 @@
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
-			description: ["不知道有什么用但是可以试试"]
+			description: [
+				"或许能在生命垂危时救你一命？"
+				"不会占用饰品槽位的饰品（）"
+			]
 			id: "1999D24A0619F440"
 			shape: "diamond"
 			subtitle: "幸运儿……？"
@@ -1407,7 +1415,10 @@
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
-			description: ["用于为某些特定的设备充能……或者灌入电力以改变某些材料的性质。"]
+			description: [
+				"并不能直接攻击敌方英雄（但提供红石信号时可以对附近生物造成伤害）"
+				"用于为某些特定的设备（比如充电背包、磁轨炮等）充能……或者灌入电力以改变某些材料的性质。"
+			]
 			id: "011BB3E4881AA3F2"
 			subtitle: "冲锋（Charge）"
 			tasks: [{
@@ -1435,6 +1446,7 @@
 					type: "item"
 				}
 			]
+			title: "搞定硬家伙"
 			x: -8.0d
 			y: -2.0d
 		}
@@ -1462,7 +1474,10 @@
 				"2CB1E7FC5CBF6B2C"
 				"2BE7BA0BE9F2DBC9"
 			]
-			description: ["通过&b超级加热&r与&a风元素核心的风暴之力&r，你可以强行融合两种不算太稳定的金属来获得性能更强的合金。"]
+			description: [
+				"通过&b超级加热&r与&a风元素核心的风暴之力&r，你可以强行融合两种不算太稳定的金属来获得性能更强的合金。"
+				"锌铝合金耐腐蚀、硬度高，可以作为石油化工时代的理想入门材料。"
+			]
 			id: "55C58DBE6BE16B1C"
 			subtitle: "暴风熔炼"
 			tasks: [{
@@ -1565,7 +1580,7 @@
 			dependencies: ["5603929D7B14B8ED"]
 			description: ["用铅板包裹后，混凝土的结构强度就足以承受进一步的加工了）"]
 			id: "726AC9F2DA602E72"
-			subtitle: "沉重但有效"
+			subtitle: "你变强了，快送！"
 			tasks: [{
 				id: "6678792B99F4EAA7"
 				item: "immersiveengineering:concrete_leaded"
@@ -1578,11 +1593,11 @@
 		{
 			dependencies: ["585C0F11261551FD"]
 			description: [
-				"在寻找铝土矿并将其粉碎后，你需要经过一次离心来获得……氧化铝。"
+				"在寻找铝土矿并将其粉碎后，你需要经过一次产率极低的离心来获得……纯粹的氧化铝。"
 				"它太容易被氧化了，所以你目前只能尝试粉碎氧化铝来获得算得上能用的铝粉。"
 			]
 			id: "68A8BCB8BCBC8C1B"
-			subtitle: "氧化杀人事件"
+			subtitle: "电子都去哪了？"
 			tasks: [{
 				id: "7902A64DAF139629"
 				item: "immersiveengineering:dust_aluminum"
@@ -1593,6 +1608,10 @@
 		}
 		{
 			dependencies: ["55C58DBE6BE16B1C"]
+			description: [
+				"硬度和脆性都很高，所以你既不能用锻锤也不能用辊压机来处理它。"
+				"只能请金属冲压机了。"
+			]
 			id: "2415442F916846C5"
 			subtitle: "强硬且坚韧"
 			tasks: [{
@@ -1633,6 +1652,30 @@
 			title: "更高效的生产"
 			x: -2.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["56F4C82F40DFA8F5"]
+			description: [
+				"这两种高级蓄电池可以互相转化。"
+				"虽然容量是高压蓄电池的一半，并且无法保留电量拆卸，但是具有多面可输入输出、可以堆叠组合的特点，并且可以在机械动力动态结构上使用！根据你的具体需求选择合适的蓄电池吧。"
+			]
+			id: "0840ADE2B5089286"
+			rewards: [{
+				count: 3
+				id: "445624EC783335F4"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "我们联合！"
+			tasks: [{
+				id: "0C96361017719BA2"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			title: "模块化蓄电池"
+			x: 4.0d
+			y: -8.0d
 		}
 	]
 	subtitle: ["Roaring Machinery"]

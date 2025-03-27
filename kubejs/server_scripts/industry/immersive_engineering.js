@@ -9,22 +9,6 @@ ServerEvents.recipes(event => {
     event.remove({id:/immersiveengineering\:crafting\/wire_\.*/})
     event.remove({id:"createnuclear:mixing/steel"})
 
-    //机械动力适配IE的敲板子
-    let plates = (material) => {
-        event.recipes.create.pressing('#forge:plates/'+material, '#forge:ingots/'+material)
-    }
-
-    const IEMetals=[
-        "aluminum",
-        "electrum",
-        "uranium",
-        "nickel",
-        "silver",
-        "lead"
-    ]
-
-    IEMetals.forEach((id) => plates(id))
-
     //按分类移除
     event.remove({type:'immersiveengineering:alloy'})
     event.remove({type:'immersiveengineering:sawmill'})
@@ -308,6 +292,69 @@ ServerEvents.recipes(event => {
       'botania:glimmering_stripped_dreamwood'
     )
 
+    //各级电池
+    event.remove({id:"immersiveengineering:crafting/capacitor_lv"})
+    event.remove({id:"immersiveengineering:crafting/capacitor_mv"})
+    event.remove({id:"immersiveengineering:crafting/capacitor_hv"})
+    event.remove({output:"createaddition:modular_accumulator"})
+
+    event.shaped(
+      Item.of('immersiveengineering:capacitor_lv', 1),
+      [ 
+        'ABA',
+        'CCC', 
+        'ABA'
+      ],
+      {
+        A: '#forge:plates/steel',
+        B: '#forge:treated_wood',
+        C: 'kubejs:battery_component'
+      }
+    )
+    event.shaped(
+      Item.of('immersiveengineering:capacitor_mv', 1),
+      [ 
+        'ADA',
+        'CBC', 
+        'AEA'
+      ],
+      {
+        A: '#forge:plates/steel',
+        B: 'immersiveengineering:capacitor_lv',
+        C: 'kubejs:battery_component',
+        D: '#forge:plates/electrum',
+        E: '#forge:plates/constantan'
+      }
+    )
+    event.shaped(
+      Item.of('immersiveengineering:capacitor_hv', 1),
+      [ 
+        'ADA',
+        'CBC', 
+        'AEA'
+      ],
+      {
+        A: '#forge:plates/steel',
+        B: 'immersiveengineering:capacitor_mv',
+        C: 'kubejs:battery_component',
+        D: '#forge:plates/aluminum',
+        E: '#forge:plates/hop_graphite'
+      }
+    )
+    event.shapeless(
+      Item.of('createaddition:modular_accumulator', 1),
+      [ 
+        'immersiveengineering:capacitor_hv'
+      ]
+    )
+    event.shapeless(
+      Item.of('immersiveengineering:capacitor_hv', 1),
+      [ 
+        'createaddition:modular_accumulator'
+      ]
+    )
+
+
     //零件（配方用data写了）
     event.remove({id:"immersiveengineering:crafting/component_steel"})
     event.remove({id:"immersiveengineering:crafting/component_iron"})
@@ -320,7 +367,8 @@ ServerEvents.recipes(event => {
     event.remove({ id: 'create:filling/blaze_cake' })
     event.recipes.create.mixing('sob:cinder_dough', [Fluid.of('minecraft:lava',500),'create:cinder_flour','irons_spellbooks:cinder_essence','#forge:dusts/horizonite']).heated()
     event.recipes.vintageimprovements.curving('create:blaze_cake_base', ['sob:cinder_dough','sob:cinder_dough','sob:cinder_dough']).mode(1)
-    event.recipes.create.filling('create:blaze_cake',[{fluidTag: 'forge:biodiesel', amount:1000},'create:blaze_cake_base'])
+    event.recipes.create.filling('create:blaze_cake',[{fluidTag: 'forge:biodiesel', amount:500},'create:blaze_cake_base'])
+    event.recipes.create.filling('create:blaze_cake',[{fluidTag: 'forge:diesel', amount:250},'create:blaze_cake_base'])
 
     //锌铝合金
     event.recipes.create.mixing(['kubejs:za_ingot','kubejs:wind_elemental_core'], [
@@ -520,11 +568,19 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
       'immersiveengineering:radiator'
       ], '#forge:sheetmetals/steel', [
-          event.recipes.createDeploying('kubejs:incomplete_radiator', ['kubejs:incomplete_radiator', 'kubejs:frostfire_double_plate']),
-          event.recipes.createFilling('kubejs:incomplete_radiator', ['kubejs:incomplete_radiator', Fluid.of('immersiveengineering:biodiesel', 250)]),
-          event.recipes.createPressing('kubejs:incomplete_radiator', 'kubejs:incomplete_radiator')
-    ]).transitionalItem('kubejs:incomplete_radiator').loops(1)
-
+        event.recipes.createFilling('kubejs:incomplete_radiator', ['kubejs:incomplete_radiator', Fluid.of('immersiveengineering:biodiesel', 250)]),
+        event.recipes.createDeploying('kubejs:incomplete_radiator', ['kubejs:incomplete_radiator', 'kubejs:frostfire_double_plate']),
+        event.recipes.createPressing('kubejs:incomplete_radiator', 'kubejs:incomplete_radiator')
+      ]
+    ).transitionalItem('kubejs:incomplete_radiator').loops(1)
+    event.recipes.create.sequenced_assembly([
+      'immersiveengineering:radiator'
+      ], '#forge:sheetmetals/steel', [
+        event.recipes.createFilling('kubejs:incomplete_radiator', ['kubejs:incomplete_radiator', Fluid.of('createdieselgenerators:diesel', 125)]),
+        event.recipes.createDeploying('kubejs:incomplete_radiator', ['kubejs:incomplete_radiator', 'kubejs:frostfire_double_plate']),
+        event.recipes.createPressing('kubejs:incomplete_radiator', 'kubejs:incomplete_radiator')
+      ]
+    ).transitionalItem('kubejs:incomplete_radiator').loops(1)
 
     //电子工程块
     event.shaped('kubejs:electronic_engineering', [ 
