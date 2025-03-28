@@ -371,8 +371,11 @@ ServerEvents.recipes(event => {
     event.recipes.create.filling('create:blaze_cake',[{fluidTag: 'forge:diesel', amount:250},'create:blaze_cake_base'])
 
     //锌铝合金
-    event.recipes.create.mixing(['kubejs:za_ingot','kubejs:wind_elemental_core'], [
-      Fluid.of('minecraft:lava',100),
+    event.recipes.vintageimprovements.pressurizing([
+      'kubejs:wind_elemental_core',
+      Fluid.of('kubejs:molten_za',100)
+    ], [
+      Fluid.of('minecraft:lava',200),
       'kubejs:wind_elemental_core',
       '#forge:ingots/zinc',
       '#forge:ingots/zinc',
@@ -380,13 +383,23 @@ ServerEvents.recipes(event => {
       '#forge:ingots/zinc',
       '#forge:ingots/aluminum',
       '#forge:ingots/aluminum',
-    ]).superheated()
+    ]).superheated().secondaryFluidInput(0)
+    event.custom({
+      "type":"immersiveengineering:bottling_machine",
+      "fluid":{"amount":100,"tag":"forge:molten_za"},
+      "inputs":[
+        {"item":"kubejs:mold_ingot"}
+      ],
+      "results":[
+        {"item":"kubejs:mold_ingot"},
+        {"item":"kubejs:za_ingot"}
+      ]
+    })
 
     //工程混凝土ban掉合成配方
     event.remove({ id: 'immersiveengineering:crafting/concrete' })
 
     //钢铁构件
-
     event.recipes.create.sequenced_assembly([
       Item.of('kubejs:steel_mechanism').withChance(90.0),
       Item.of('immersiveengineering:rods_steel').withChance(2.0),
@@ -502,43 +515,45 @@ ServerEvents.recipes(event => {
 
     //塑料
     event.remove({id:"immersiveengineering:bottling/duroplast_plate"})
-    event.remove({id:"tfmg:compacting/plastic_molding"})
-
-    event.remove({id:"tfmg:mixing/liquid_plastic_from_propylene"})
-    event.remove({id:"tfmg:mixing/liquid_plastic_from_ethylene"})
     event.custom({
         "type":"immersiveengineering:refinery",
         "catalyst":{"item":"kubejs:frostfire_double_plate"},
         "energy":120,
         "input0":{
-            "amount":16,
-            "tag":"forge:lpg"
+          "amount": 8,
+          "tag":"forge:lpg"
+        },
+        "input1":{
+          "tag": "forge:phenolic_resin",
+          "amount": 8
         },
         "result":{
-            "amount": 16,
-            "fluid":"kubejs:liquid_plastic"
+          "amount": 8,
+          "fluid":"kubejs:liquid_plastic"
         }
     })
-    
     event.custom({
-        "type": "create:compacting",
-        "ingredients": [
-            {
-                "fluid": "immersiveengineering:phenolic_resin",
-                "amount": 500
-            },
-            {
-                "fluid": "kubejs:liquid_plastic",
-                "amount": 500
-            }
-        ],
-        "results": [
-          {
-            "item": "kubejs:plastic_chunk"
-          }
-        ]
+      "type":"immersiveengineering:bottling_machine",
+      "fluid":{"amount":100,"tag":"forge:liquid_plastic"},
+      "inputs":[
+        {"item":"kubejs:mold_ingot"}
+      ],
+      "results":[
+        {"item":"kubejs:mold_ingot"},
+        {"item":"kubejs:plastic_chunk"}
+      ]
     })
-    event.recipes.create.pressing(Item.of('immersiveengineering:plate_duroplast').withChance(0.5), 'kubejs:plastic_chunk')
+    event.custom({
+      "type":"immersiveengineering:bottling_machine",
+      "fluid":{"amount":100,"tag":"forge:liquid_plastic"},
+      "inputs":[
+        {"item":"immersiveengineering:mold_plate"}
+      ],
+      "results":[
+        {"item":"immersiveengineering:mold_plate"},
+        {"item":"immersiveengineering:plate_duroplast"}
+      ]
+    })
 
     //高级电子元件
     event.remove({id:"immersiveengineering:blueprint/component_electronic_adv"})

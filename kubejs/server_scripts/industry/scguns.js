@@ -73,6 +73,7 @@ ServerEvents.recipes(event => {
     moldTypesSCGuns.forEach( id => {
         event.recipes.vintageimprovements.turning([Item.of('scguns:'+id), Item.of('scguns:anthralite_nugget',5), Item.of('scguns:anthralite_nugget',8).withChance(0.5)], 'scguns:blank_mold')
     })
+    event.recipes.vintageimprovements.turning([Item.of('kubejs:mold_ingot'), Item.of('scguns:anthralite_nugget',5), Item.of('scguns:anthralite_nugget',8).withChance(0.5)], 'scguns:blank_mold')
 
     //枪械台
     event.remove({id:"scguns:gun_bench"})

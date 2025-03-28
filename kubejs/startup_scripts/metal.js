@@ -30,6 +30,9 @@ StartupEvents.registry('item', (event) => {
   //空白钢模具
   event.create("mold_blank_steel").displayName('Blank Steel Mold')
 
+  //锭模具
+  event.create("mold_ingot").displayName('Ingot Mold')
+
   //补充：锌粉，锡粉
   event.create("zinc_dust").displayName('Zinc Grit')
   event.create("tin_dust").displayName('Tin Grit')
@@ -169,4 +172,18 @@ StartupEvents.registry('fluid', (event) => {
   .bucketColor(0xFCCA91)
   .displayName('Molten Steel-Slag Mix')
   .temperature(1300)
+
+  //熔融锌铝合金
+  event.create('molten_za')
+  .thickTexture(0xE8EDAD)
+  .bucketColor(0xE8EDAD)
+  .displayName('Molten ZA')
+  .temperature(1800)
+
+  //熔融下界合金
+  event.create('molten_netherite')
+  .thickTexture(0x9D4E3D)
+  .bucketColor(0x9D4E3D)
+  .displayName('Molten Netherite')
+  .temperature(2000)
 })

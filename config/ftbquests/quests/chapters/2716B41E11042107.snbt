@@ -67,59 +67,40 @@
 			dependencies: ["143E6A57D69BAE65"]
 			description: ["合格的霉国军人应该在听到石油两个字的时候一跃而起！"]
 			id: "2E8FF0455E304658"
-			optional: true
 			subtitle: "美军前置科技"
 			tasks: [{
-				id: "7322415356A4B9EE"
-				item: "tfmg:surface_scanner"
+				id: "38E7CABF96749223"
+				item: "createdieselgenerators:oil_scanner"
 				type: "item"
 			}]
 			x: -2.0d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["586F09D1FB8860DD"]
+			dependencies: ["2E8FF0455E304658"]
 			description: [
 				"现在，你的现代工业基础需要经过长途跋涉来到地面，所以——你至少得给人家弄条路）"
 				"“拼命也要挖出大油田！”"
 			]
+			icon: "createdieselgenerators:pumpjack_hole"
 			id: "22B1EE261A88D9D1"
 			subtitle: "注入动力"
-			tasks: [{
-				count: 64L
-				id: "7E75D3CA3B487C74"
-				item: "tfmg:industrial_pipe"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 64L
+					id: "7E75D3CA3B487C74"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "07470EB8699EF6CC"
+					item: "createdieselgenerators:pumpjack_hole"
+					type: "item"
+				}
+			]
 			title: "工业血管"
 			x: 0.0d
-			y: 4.5d
-		}
-		{
-			dependencies: [
-				"2E8FF0455E304658"
-				"143E6A57D69BAE65"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"在基岩层流淌的黑金被你找到了！"
-				"那么下一个问题来了，你打算怎么把这玩意弄到地面上呢？"
-			]
-			icon: "tfmg:oil_deposit"
-			id: "586F09D1FB8860DD"
-			subtitle: "地底宝藏"
-			tasks: [{
-				icon: "tfmg:oil_deposit"
-				id: "5B96E1D30EE9455E"
-				observe_type: 0
-				timer: 0L
-				title: "观察油田方块"
-				to_observe: "tfmg:oil_deposit"
-				type: "observation"
-			}]
-			title: "找到油田"
-			x: -2.0d
-			y: 6.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -133,52 +114,10 @@
 				""
 				"请注意：组装后，上方的整个横向的杆子都需要用强力胶粘成一个整体，这样才能正常运行！"
 			]
-			icon: "tfmg:pumpjack_crank"
+			icon: "createdieselgenerators:pumpjack_crank"
 			id: "08B3DECCC7EBD7CE"
 			subtitle: "美军战时科技"
 			tasks: [
-				{
-					id: "5C826AEB85CD3E79"
-					item: "tfmg:pumpjack_base"
-					type: "item"
-				}
-				{
-					id: "6C9BC4E13415DF74"
-					item: "tfmg:pumpjack_crank"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "76D35D4CC92E95EF"
-					item: "tfmg:pumpjack_hammer_part"
-					type: "item"
-				}
-				{
-					id: "4B436C4F7310AF88"
-					item: "tfmg:pumpjack_hammer_head"
-					type: "item"
-				}
-				{
-					id: "26423D76F89C59A2"
-					item: "tfmg:pumpjack_hammer_connector"
-					type: "item"
-				}
-				{
-					id: "4A5E141F12F09486"
-					item: "tfmg:pumpjack_hammer"
-					type: "item"
-				}
-				{
-					id: "1C339FBF83B4FF73"
-					item: "tfmg:machine_input"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "6AD048F09828A1E5"
-					item: "tfmg:steel_truss"
-					type: "item"
-				}
 				{
 					id: "58127A5BBC890877"
 					item: {
@@ -190,10 +129,25 @@
 					}
 					type: "item"
 				}
+				{
+					id: "44604D81B06840F1"
+					item: "createdieselgenerators:pumpjack_crank"
+					type: "item"
+				}
+				{
+					id: "78FC94DC3ACA22FB"
+					item: "createdieselgenerators:pumpjack_bearing"
+					type: "item"
+				}
+				{
+					id: "7BB10B5C90BB4970"
+					item: "createdieselgenerators:pumpjack_head"
+					type: "item"
+				}
 			]
 			title: "组装抽油机"
 			x: 0.0d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["08B3DECCC7EBD7CE"]
@@ -204,13 +158,13 @@
 			id: "1AAD83556BD302DD"
 			subtitle: "黏糊糊"
 			tasks: [{
-				id: "4BBF84D92E8CABE3"
-				item: "tfmg:crude_oil_fluid_bucket"
+				id: "1BAB34C7031C612D"
+				item: "createdieselgenerators:crude_oil_bucket"
 				type: "item"
 			}]
 			title: "液体宝藏"
 			x: 2.0d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
@@ -263,7 +217,7 @@
 				{
 					count: 9L
 					id: "4C6929FE38D0F838"
-					item: "tfmg:steel_block"
+					item: "immersiveengineering:storage_steel"
 					type: "item"
 				}
 				{
@@ -280,7 +234,7 @@
 			]
 			title: "搭建斗轮式采矿机"
 			x: -2.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["71B673D310440EBC"]
@@ -305,8 +259,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: -0.5d
+			x: -3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -316,42 +270,31 @@
 			description: [
 				"那就热一下）"
 				"通过大型分馏，现代工业之美将会在你面前展开。"
-				""
-				"结构要严格按照思索搭建。请注意钢流体储罐的规格为2x13x2，别搭错了！"
 			]
-			icon: "tfmg:steel_distillation_controller"
+			icon: "createdieselgenerators:distillation_controller"
 			id: "3FCEB9256A15A4B2"
 			subtitle: "静置无法分层……"
 			tasks: [
 				{
-					id: "4AA95EBD3CDCB288"
-					item: "tfmg:steel_fluid_tank"
-					type: "item"
-				}
-				{
 					id: "421CA7F325EAB59A"
-					item: "tfmg:steel_distillation_output"
+					item: "createdieselgenerators:distillation_controller"
 					type: "item"
 				}
 				{
-					id: "5CD3DA4AB5972515"
-					item: "tfmg:steel_distillation_controller"
+					count: 6L
+					id: "0AC26E7B6DD073F2"
+					item: { Count: 6, id: "create:fluid_tank" }
 					type: "item"
 				}
 				{
-					id: "27C4EEF50FD07665"
-					item: "tfmg:industrial_pipe"
-					type: "item"
-				}
-				{
-					id: "4A688382AB720907"
+					id: "4CAE0027218E1C46"
 					item: "create:blaze_burner"
 					type: "item"
 				}
 			]
-			title: "搭建钢分馏塔"
+			title: "搭建分馏塔"
 			x: 2.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -364,15 +307,14 @@
 			]
 			hide_until_deps_complete: true
 			id: "107639F1A8166B9C"
-			shape: "diamond"
 			subtitle: "分，还可以分"
 			tasks: [{
-				id: "44DCF7BA286EA6C3"
-				item: "tfmg:heavy_oil_bucket"
+				id: "0586BF2CC0F85178"
+				item: "kubejs:heavy_oil_bucket"
 				type: "item"
 			}]
 			x: 4.0d
-			y: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -384,55 +326,12 @@
 			shape: "diamond"
 			subtitle: "轰！"
 			tasks: [{
-				id: "53A6FDD422729299"
-				item: "tfmg:diesel_bucket"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"3FCEB9256A15A4B2"
-				"1AAD83556BD302DD"
-			]
-			description: [
-				"你是否苦于自己的磁铁磁感应强度太低，发电效率不行？"
-				"现在你可以通过煤油升级自己的磁铁！"
-				"虽然需要一点小小的魔法手段……"
-				"*注：这似乎不会直接显示在jei里，所以最好去查询磁铁的配方（"
-			]
-			hide_until_deps_complete: true
-			id: "05EF035C814ADE9B"
-			shape: "diamond"
-			subtitle: "磁铁修整器"
-			tasks: [{
-				id: "49C958F2E71847C4"
-				item: "tfmg:kerosene_bucket"
+				id: "77B2B9F4B798D3F8"
+				item: "createdieselgenerators:diesel_bucket"
 				type: "item"
 			}]
 			x: 4.0d
 			y: 2.0d
-		}
-		{
-			dependencies: [
-				"3FCEB9256A15A4B2"
-				"1AAD83556BD302DD"
-			]
-			description: [
-				"如果你没有分馏出石脑油，检查一下你的分馏塔是不是偷工减料了）"
-				"石油当中最宝贵的一部分也是最容易消失的一部分（摊手"
-			]
-			hide_until_deps_complete: true
-			id: "3B7D8BECFF387995"
-			subtitle: "层数不够就会消失"
-			tasks: [{
-				id: "0A94C80A2B72D692"
-				item: "tfmg:naphtha_bucket"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -444,12 +343,12 @@
 			shape: "circle"
 			subtitle: "也许是燃料"
 			tasks: [{
-				id: "577F1DBBD3F9A3FA"
-				item: "tfmg:gasoline_bucket"
+				id: "70D5188BB7D36B40"
+				item: "createdieselgenerators:gasoline_bucket"
 				type: "item"
 			}]
 			x: 4.0d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -466,112 +365,25 @@
 			id: "46A5743F6DC8054D"
 			subtitle: "燃烧弹前置"
 			tasks: [{
-				id: "19988C4F9E13FD19"
-				item: "tfmg:napalm_bucket"
+				id: "62E21C117613BBBE"
+				item: "kubejs:lpg_bucket"
 				type: "item"
 			}]
 			x: 4.0d
-			y: -4.0d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"5FB9514C6DE7AD58"
-				"3FCEB9256A15A4B2"
-				"1AAD83556BD302DD"
-			]
-			hide_until_deps_complete: true
-			icon: "tfmg:cast_iron_distillation_controller"
-			id: "576A28075CA7077D"
-			subtitle: "实际上这个分馏塔干的是裂化的活"
-			tasks: [
-				{
-					id: "629822FE746AF116"
-					item: "tfmg:cast_iron_distillation_output"
-					type: "item"
-				}
-				{
-					id: "16B08063E1527DB8"
-					item: "tfmg:cast_iron_distillation_controller"
-					type: "item"
-				}
-				{
-					id: "289C493060369DE4"
-					item: "create:blaze_burner"
-					type: "item"
-				}
-			]
-			x: 6.0d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"576A28075CA7077D"
-				"107639F1A8166B9C"
-			]
-			description: [
-				"液态沥青冷却也是唯一产生沥青块的方式）"
-				"不过这玩意目前只能拿来铺路……"
-				""
-				"硫磺粉倒是可以用于批量生产烈焰粉！"
-			]
-			id: "22CB2BBE72C04014"
-			rewards: [{
-				id: "235E8E70182C0D80"
-				item: "create:mechanical_roller"
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "重油裂化副产物"
-			tasks: [
-				{
-					id: "3881E65EF3C152EC"
-					item: "tfmg:bitumen"
-					type: "item"
-				}
-				{
-					id: "3C582CE720A9930B"
-					item: "tfmg:sulfur_dust"
-					type: "item"
-				}
-			]
-			title: "沥青与硫磺"
-			x: 6.0d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"576A28075CA7077D"
-				"3B7D8BECFF387995"
-			]
-			description: [
-				"是的，干到这里你会发现自己还需要再来一次分馏——用铸铁分馏塔）"
-				"习惯就好，这就是石油工业）"
-				""
-				"&o&3*当年发现塑料的人还是很伟大的。&r&r"
-			]
-			icon: "minecraft:bucket"
-			id: "0B48C7A6F9F81A56"
-			subtitle: "石脑油的组成"
-			tasks: [{
-				id: "39AC678F2E9625AE"
-				title: "乙烯、丙烯"
-				type: "checkmark"
-			}]
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["0B48C7A6F9F81A56"]
+			dependencies: ["46A5743F6DC8054D"]
 			description: ["你开始接近现代了，你找到了塑料，但是我们不提供免费垃圾袋（"]
 			id: "27AC0014531AA954"
 			subtitle: "塑料！文明之光！"
 			tasks: [{
-				id: "7F99956FC3A5E8C3"
-				item: "tfmg:liquid_plastic_bucket"
+				id: "5249485F3375C40B"
+				item: "kubejs:liquid_plastic_bucket"
 				type: "item"
 			}]
 			x: 8.0d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["27AC0014531AA954"]
@@ -590,12 +402,12 @@
 			size: 2.0d
 			subtitle: "你疑似有点城市化了"
 			tasks: [{
-				id: "03BDB368AA49BEFF"
-				item: "tfmg:plastic_sheet"
+				id: "09AF0949CDF6DB32"
+				item: "immersiveengineering:plate_duroplast"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 0.0d
+			x: 12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -658,12 +470,25 @@
 		{
 			dependencies: ["143E6A57D69BAE65"]
 			description: [
-				"对于枪械爱好者而言，目前终于出现了一些比左轮手枪更高级的东西……"
+				"对于武器爱好者而言，目前终于出现了一些比一般枪械更高级的东西……"
 				"化学喷射器&d需要特定的液体&r（这是显然的）并造成喷洒效果，而磁轨炮则可以&c发射不同的棒状物&r并造成不同的效果。"
 				""
 				"&o&m&7*一个洒水一个用棒子听起来很奇怪……&r&r&r"
 			]
 			id: "52AF7DAADA5AA0EA"
+			rewards: [
+				{
+					count: 8
+					id: "3CE71E82F7BBCA05"
+					item: "immersiveengineering:stick_steel"
+					type: "item"
+				}
+				{
+					id: "5A0FA4ABE73F0B6E"
+					item: "immersiveengineering:biodiesel_bucket"
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			subtitle: "哒哒哒哒哒"
 			tasks: [
@@ -709,6 +534,24 @@
 				"&b&o*可能效率不行但建模一定好看&r&r"
 			]
 			id: "7FBBD3EAF8C168D1"
+			rewards: [
+				{
+					id: "1972DCE3A17A6059"
+					item: "immersiveengineering:drillhead_steel"
+					type: "item"
+				}
+				{
+					id: "26F484DF4BF0A312"
+					item: {
+						Count: 1
+						id: "immersiveengineering:sawblade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			subtitle: "电动工具"
 			tasks: [
@@ -773,185 +616,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["05EF035C814ADE9B"]
-			description: [
-				"在这里，你需要通过炼金手段升级自己的工业磁铁（？"
-				"看起来似乎没什么问题，实际上应该也没什么问题"
-				"（笑死）"
-			]
-			id: "55EE9E5A85FD12B2"
-			rewards: [{
-				id: "5216D7B088A5E5F1"
-				item: "artifacts:universal_attractor"
-				type: "item"
-			}]
-			shape: "square"
-			subtitle: "来点磁铁炼金"
-			tasks: [
-				{
-					id: "2700F5288AD2B560"
-					item: "create_new_age:redstone_magnet"
-					type: "item"
-				}
-				{
-					id: "5E8F50B2CC9F685B"
-					item: "create_new_age:layered_magnet"
-					type: "item"
-				}
-				{
-					id: "6904AAF7119B4EA2"
-					item: "create_new_age:fluxuated_magnetite"
-					type: "item"
-				}
-				{
-					id: "126C9909B8C61F51"
-					item: "create_new_age:netherite_magnet"
-					type: "item"
-				}
-			]
-			title: "升级你的磁铁"
-			x: 5.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["46A5743F6DC8054D"]
-			description: [
-				"朋友，你要干什么？"
-				"带我一个（不是"
-				"这个模组为什么有这些东西啊（瘫"
-				""
-				"&o&c*禁止在现实世界尝试！&r&r"
-			]
-			id: "31A0E8AA7E6964CC"
-			rewards: [
-				{
-					id: "57C3B604BF1DB28D"
-					item: "tfmg:thermite_grenade"
-					type: "item"
-				}
-				{
-					id: "2FFE759DB8EBDEC4"
-					item: "tfmg:zinc_grenade"
-					type: "item"
-				}
-				{
-					id: "7BF4A6E3653E1BDC"
-					item: "tfmg:copper_grenade"
-					type: "item"
-				}
-			]
-			shape: "square"
-			subtitle: "WTF"
-			tasks: [{
-				id: "09C5A58BB68F17D3"
-				item: "tfmg:napalm_bomb"
-				type: "item"
-			}]
-			x: 5.0d
-			y: -5.0d
-		}
-		{
 			dependencies: ["2718164469D544DF"]
-			description: [
-				"确实是燃料没错，呃……就是燃料不太容易产出。"
-				"注意：液化石油气也有独有的引擎，可以用来产生应力）"
-			]
-			id: "7FB5CC590808D9EA"
-			rewards: [
-				{
-					id: "020EE4C553BD2FDB"
-					item: "tfmg:lpg_engine"
-					type: "item"
-				}
-				{
-					id: "7B271E189708437F"
-					item: "tfmg:lpg_engine_back"
-					type: "item"
-				}
-			]
-			shape: "square"
-			subtitle: "现代化引擎"
-			tasks: [
-				{
-					id: "4211A7F395B64564"
-					item: "tfmg:gasoline_engine"
-					type: "item"
-				}
-				{
-					id: "76838053DCC5CD1A"
-					item: "tfmg:gasoline_engine_back"
-					type: "item"
-				}
-			]
-			title: "更强大的引擎"
-			x: 5.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["443ED09E810FE23D"]
-			description: [
-				"柴油机需要传动杆才能提供应力，所以请注意结构性差异！"
-				"你可以通过扩充件输入润滑油之类的来提升效率）"
-			]
-			id: "79DBFA990528F827"
-			rewards: [{
-				count: 2
-				id: "1E705D047EEF95F6"
-				item: "tfmg:engine_base"
-				type: "item"
-			}]
-			shape: "square"
-			subtitle: "传统农具"
-			tasks: [
-				{
-					id: "494840B5C69ACD08"
-					item: "tfmg:diesel_engine"
-					type: "item"
-				}
-				{
-					id: "0C6D3D40CF5C6131"
-					item: "tfmg:diesel_engine_expansion"
-					type: "item"
-				}
-				{
-					id: "24194990C01FF1C1"
-					item: "railways:smokestack_diesel"
-					type: "item"
-				}
-				{
-					id: "515B92DF9C2B001D"
-					item: "railways:smokestack_oilburner"
-					type: "item"
-				}
-			]
-			title: "可升级引擎"
-			x: 5.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["2718164469D544DF"]
-			description: [
-				"烈焰人最喜欢吃的。"
-				"使烈焰人燃烧室进入&b临时的超级燃烧状态&r！这很重要，因为部分配方要求必须在这种温度下才能进行……"
-				""
-				"&o&6*既然灌入熔岩就可以让燃烧室正常燃烧，那超级燃烧要汽油也是合理的）&r&r"
-			]
-			id: "2B8294A4CBF6D664"
-			shape: "circle"
-			subtitle: "超级加热！"
-			tasks: [{
-				id: "06AFE6597408DE5C"
-				item: "create:blaze_cake"
-				type: "item"
-			}]
-			x: 10.0d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"2B8294A4CBF6D664"
-				"46A5743F6DC8054D"
-			]
 			description: [
 				"手搓怎么可能搓出这么宝贵的合金呢，对吧）"
 				"现在你需要&a真正的冶炼&r才能得到下界合金！"
@@ -975,11 +640,11 @@
 				type: "item"
 			}]
 			title: "另一种黑金"
-			x: 12.0d
-			y: -4.0d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["7B7978B0964080F3"]
+			dependencies: ["71B673D310440EBC"]
 			description: ["不仅如此，岩芯摆放下来也是很好的装饰品"]
 			id: "0B043034C7178F75"
 			rewards: [{
@@ -994,8 +659,8 @@
 				item: "immersiveengineering:sample_drill"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -0.5d
+			x: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["07B58ED0910776DF"]
@@ -1022,10 +687,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"576A28075CA7077D"
-				"107639F1A8166B9C"
-			]
+			dependencies: ["107639F1A8166B9C"]
 			description: [
 				"相信走到这一步的你已经被昂贵的构件中的概率系统折磨过了……"
 				"但现在，通过分馏重油，你有了润滑油！在构件配方的&2每个循环第一步&r中添加一点润滑油，就能降低安装时的磨损，保证该构件的100%产出！"
@@ -1041,13 +703,24 @@
 			shape: "diamond"
 			subtitle: "某巧克力打钱（不是）"
 			tasks: [{
-				id: "6CC17574DBAF58BD"
-				item: "tfmg:lubrication_oil_bucket"
+				id: "2854B9B83C087E71"
+				item: "kubejs:lubricant_bucket"
 				type: "item"
 			}]
 			title: "纵享丝滑"
-			x: 8.0d
-			y: 6.0d
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["107639F1A8166B9C"]
+			id: "0A20C8766DEA529B"
+			tasks: [{
+				id: "65A520F21476E743"
+				item: "createdieselgenerators:asphalt_block"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.0d
 		}
 	]
 	subtitle: ["Petrochemical Engineering"]

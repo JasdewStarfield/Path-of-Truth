@@ -63,17 +63,17 @@
     "modId": "architectury",
     "version": "9.2.14"
   },
-  "artifacts-forge-9.5.14.jar": {
+  "artifacts-forge-9.5.15.jar": {
     "modId": "artifacts",
-    "version": "9.5.14"
+    "version": "9.5.15"
   },
   "AttributeFix-Forge-1.20.1-21.0.4.jar": {
     "modId": "attributefix",
     "version": "21.0.4"
   },
-  "balm-forge-1.20.1-7.3.25-all.jar": {
+  "balm-forge-1.20.1-7.3.26-all.jar": {
     "modId": "balm",
-    "version": "7.3.25"
+    "version": "7.3.26"
   },
   "beautify-2.0.2.jar": {
     "modId": "beautify",
@@ -435,9 +435,9 @@
     "modId": "eccentrictome",
     "version": "1.20.1-1.10.3"
   },
-  "EclipticSeasons-1.20.1-forge-0.10.2.1-all.jar": {
+  "EclipticSeasons-1.20.1-forge-0.10.3.1-all.jar": {
     "modId": "eclipticseasons",
-    "version": "0.10.2.1"
+    "version": "0.10.3.1"
   },
   "ElysiumAPI-1.20.1-1.0.2.jar": {
     "modId": "elysium_api",
@@ -928,9 +928,9 @@
     "modId": "nckey",
     "version": "1.0.0"
   },
-  "notenoughanimations-forge-1.9.2-mc1.20.1.jar": {
+  "notenoughanimations-forge-1.9.3-mc1.20.1.jar": {
     "modId": "notenoughanimations",
-    "version": "1.9.2"
+    "version": "1.9.3"
   },
   "obscure_api-15.jar": {
     "modId": "obscure_api",
@@ -1120,9 +1120,9 @@
     "modId": "simplemetals_tin",
     "version": "3.1"
   },
-  "skinlayers3d-forge-1.7.4-mc1.20.1.jar": {
+  "skinlayers3d-forge-1.7.5-mc1.20.1.jar": {
     "modId": "skinlayers3d",
-    "version": "1.7.4"
+    "version": "1.7.5"
   },
   "SkyBreaker-1.20.1-1.0.5.jar": {
     "modId": "skybreaker",
@@ -1136,9 +1136,9 @@
     "modId": "smoothboot",
     "version": "0.0.4"
   },
-  "smsn-forge-1.1.4+mc1.20.1.jar": {
+  "smsn-forge-1.1.5+mc1.20.1.jar": {
     "modId": "smsn",
-    "version": "1.1.4+mc1.20.1"
+    "version": "1.1.5+mc1.20.1"
   },
   "SneakyCurses-v8.0.2-1.20.1-Forge.jar": {
     "modId": "sneakycurses",
@@ -1160,13 +1160,13 @@
     "modId": "sophisticatedbackpacks",
     "version": "3.23.6.1211"
   },
-  "sophisticatedcore-1.20.1-1.2.23.902.jar": {
+  "sophisticatedcore-1.20.1-1.2.24.907.jar": {
     "modId": "sophisticatedcore",
-    "version": "1.2.23.902"
+    "version": "1.2.24.907"
   },
-  "sound-physics-remastered-forge-1.20.1-1.4.8.jar": {
+  "sound-physics-remastered-forge-1.20.1-1.4.10.jar": {
     "modId": "sound_physics_remastered",
-    "version": "1.20.1-1.4.8"
+    "version": "1.20.1-1.4.10"
   },
   "Sounds-2.2.1+1.20.1+forge.jar": {
     "modId": "sounds",
@@ -1336,9 +1336,9 @@
     "modId": "visualworkbench",
     "version": "8.0.0"
   },
-  "waveycapes-forge-1.5.1-mc1.20.1.jar": {
+  "waveycapes-forge-1.5.2-mc1.20.1.jar": {
     "modId": "waveycapes",
-    "version": "1.5.1"
+    "version": "1.5.2"
   },
   "woodenbucket-1.20.1-2.1.0.0.jar": {
     "modId": "woodenbucket",

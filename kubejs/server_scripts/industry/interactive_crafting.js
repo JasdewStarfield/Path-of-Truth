@@ -121,6 +121,8 @@ ServerEvents.recipes(event => {
       ['tfmg:steel_distillation_controller', "kubejs:precise_engineering"],
       ['create_new_age:energiser_t2', "minecraft:lightning_rod"]
       */
+      ['createdieselgenerators:pumpjack_hole', "kubejs:fluid_engineering"],
+      ['createdieselgenerators:pumpjack_bearing', "create:mechanical_bearing"]
     ]
     heavyEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "immersiveengineering:heavy_engineering", material)

@@ -79,6 +79,8 @@ const UnobtainableItems = [
     'createdieselgenerators:plant_oil_bucket',
     'createdieselgenerators:ethanol_bucket',
     'createdieselgenerators:biodiesel_bucket',
+    'createdieselgenerators:chemical_sprayer',
+    'createdieselgenerators:chemical_sprayer_lighter',
     'immersiveengineering:charging_station',
     'immersiveengineering:tesla_coil'
 ]
@@ -162,10 +164,8 @@ ServerEvents.tags("item", (event) => {
 
     event.add("forge:dusts/coal","createnuclear:coal_dust")
     event.add("forge:dusts/uranium","createnuclear:uranium_powder")
-    event.add("forge:rods/hop_graphite","createnuclear:graphite_rod")
     event.add("forge:plates/hop_graphite","createnuclear:graphene")
     event.add("forge:dusts/uranium","createnuclear:uranium_powder")
-    event.add("forge:rods/uranium","createnuclear:uranium_rod")
     event.add("forge:storage_blocks/steel","createnuclear:steel_block")
     event.add("forge:storage_blocks/lead","createnuclear:lead_block")
     event.add("forge:storage_blocks/raw_uranium","createnuclear:raw_uranium_block")
@@ -285,6 +285,10 @@ ServerEvents.tags("fluid", (event) => {
     event.add("forge:lubricant","kubejs:lubricant")
     event.add("forge:heavy_oil","kubejs:heavy_oil")
     event.add("forge:liquid_plastic","kubejs:liquid_plastic")
+    event.add("forge:molten_steel","kubejs:molten_steel")
+    event.add("forge:molten_slag","kubejs:molten_slag")
+    event.add("forge:molten_za","kubejs:molten_za")
+    event.add("forge:molten_netherite","kubejs:molten_netherite")
 
     //无法获取的流体
     UnobtainableFluids.forEach((id) => event.add("kubejs:unobtainable", id))

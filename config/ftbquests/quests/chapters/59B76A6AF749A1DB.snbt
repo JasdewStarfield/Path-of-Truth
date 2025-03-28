@@ -1151,13 +1151,22 @@
 				"炙铁生成在&6恒晓之地&r维度，需要用沉浸工程的炼铁高炉来冶炼。"
 			]
 			hide_until_deps_complete: true
+			icon: "immersiveengineering:radiator"
 			id: "3E60B78B0EE34B75"
 			subtitle: "嗯，复合板材"
-			tasks: [{
-				id: "76A65BC6B5E46BA6"
-				item: "kubejs:frostfire_double_plate"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "76A65BC6B5E46BA6"
+					item: "kubejs:frostfire_double_plate"
+					type: "item"
+				}
+				{
+					id: "7D364899FCD6B0F6"
+					item: "immersiveengineering:radiator"
+					type: "item"
+				}
+			]
+			title: "散热器"
 			x: 6.0d
 			y: 0.0d
 		}
@@ -1473,6 +1482,7 @@
 			dependencies: [
 				"2CB1E7FC5CBF6B2C"
 				"2BE7BA0BE9F2DBC9"
+				"213682223D73A690"
 			]
 			description: [
 				"通过&b超级加热&r与&a风元素核心的风暴之力&r，你可以强行融合两种不算太稳定的金属来获得性能更强的合金。"
@@ -1619,8 +1629,8 @@
 				item: "kubejs:za_sheet"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -2.0d
+			x: 9.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["011BB3E4881AA3F2"]
@@ -1676,6 +1686,69 @@
 			title: "模块化蓄电池"
 			x: 4.0d
 			y: -8.0d
+		}
+		{
+			dependencies: ["3E60B78B0EE34B75"]
+			description: [""]
+			icon: "immersiveengineering:bottling_machine"
+			id: "213682223D73A690"
+			subtitle: "也就是高级注液器"
+			tasks: [
+				{
+					count: 2L
+					id: "5A7981B11C068977"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "63E79F0CF358B3CB"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "68107DE08B1FC5B2"
+					item: "immersiveengineering:steel_fence"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "1C1F2FC8DEADEA31"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					id: "71785F67E2E86F93"
+					item: "kubejs:fluid_engineering"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "025E9916C4C018DA"
+					item: { Count: 3, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2A10781D1CF85551"
+					item: { Count: 2, id: "immersiveengineering:radiator" }
+					type: "item"
+				}
+				{
+					id: "4736D7C3D7D60504"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "组装灌装机"
+			x: 7.0d
+			y: -3.0d
 		}
 	]
 	subtitle: ["Roaring Machinery"]

@@ -21,6 +21,8 @@ ServerEvents.recipes(event => {
     'createdieselgenerators:plant_oil_bucket',
     'createdieselgenerators:ethanol_bucket',
     'createdieselgenerators:biodiesel_bucket',
+    'createdieselgenerators:chemical_sprayer',
+    'createdieselgenerators:chemical_sprayer_lighter',
     'immersiveengineering:charging_station',
     'immersiveengineering:tesla_coil'
   ]
@@ -189,7 +191,8 @@ ServerEvents.recipes(event => {
     D: '#forge:treated_wood'
   })
   event.recipes.vintageimprovements.centrifugation([Fluid.of('kubejs:molten_steel', 150), "#forge:slag"], Fluid.of('kubejs:molten_slag', 200)).minimalRPM(128)
-  event.recipes.create.compacting("kubejs:unformed_steel_ingot", Fluid.of("kubejs:molten_steel", 100))
+  event.recipes.create.filling(["kubejs:unformed_steel_ingot",'kubejs:mold_ingot'], ['kubejs:mold_ingot', Fluid.of("kubejs:molten_steel", 100)])
+  event.stonecutting('kubejs:mold_ingot', 'scguns:blank_mold')
   
   //锻造钢锭
   event.recipes.create.sequenced_assembly([

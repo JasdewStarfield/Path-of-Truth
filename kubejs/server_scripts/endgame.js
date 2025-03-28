@@ -1,7 +1,30 @@
 ServerEvents.recipes(event => {
   //下界合金
   event.remove({ id: 'minecraft:netherite_ingot' })
-  event.recipes.create.mixing(['netherite_ingot'], ['#forge:ingots/uranium','#forge:ingots/uranium','#forge:ingots/uranium','#forge:ingots/uranium','minecraft:netherite_scrap','minecraft:netherite_scrap','minecraft:netherite_scrap','minecraft:netherite_scrap']).superheated()
+  event.recipes.vintageimprovements.pressurizing([
+    'nether_star',
+    Fluid.of('kubejs:molten_netherite',100),
+  ], [
+    Fluid.of('createdieselgenerators:gasoline',500),
+    'nether_star',
+    'createnuclear:enriched_yellowcake',
+    'createnuclear:enriched_yellowcake',
+    'minecraft:netherite_scrap',
+    'minecraft:netherite_scrap',
+    'minecraft:netherite_scrap',
+    'minecraft:netherite_scrap'
+  ]).superheated().secondaryFluidInput(0)
+  event.custom({
+    "type":"immersiveengineering:bottling_machine",
+    "fluid":{"amount":100,"tag":"forge:molten_netherite"},
+    "inputs":[
+      {"item":"kubejs:mold_ingot"}
+    ],
+    "results":[
+      {"item":"kubejs:mold_ingot"},
+      {"item":"minecraft:netherite_ingot"}
+    ]
+  })
 
   //第五章工业：将Diesel Generators的配方中所有锌锭替换为锌铝合金
   event.replaceInput(
@@ -30,6 +53,48 @@ ServerEvents.recipes(event => {
     '#forge:ingots/iron',
     'immersiveengineering:ingot_steel'
   )
+  //时钟替换为重型工程块
+  event.replaceInput(
+    { mod:"createdieselgenerators" },
+    'clock',
+    'immersiveengineering:heavy_engineering'
+  )
+
+  //分馏
+  event.remove({id:"createdieselgenerators:distillation/crude_oil"})
+  event.custom({
+    "type": "createdieselgenerators:distillation",
+    "ingredients": [
+      {
+        "fluid": "createdieselgenerators:crude_oil",
+        "amount": 100
+      }
+    ],
+    "heatRequirement": "heated",
+    "processingTime": 100,
+    "results": [
+      {
+        "fluid": "kubejs:heavy_oil",
+        "amount": 25
+      },
+      {
+        "fluid": "kubejs:lubricant",
+        "amount": 25
+      },
+      {
+        "fluid": "createdieselgenerators:diesel",
+        "amount": 50
+      },
+      {
+        "fluid": "createdieselgenerators:gasoline",
+        "amount": 50
+      },
+      {
+        "fluid": "kubejs:lpg",
+        "amount": 50
+      }
+    ]
+  })
 
   /*
   //多彩化合物
@@ -41,6 +106,26 @@ ServerEvents.recipes(event => {
       'kubejs:midnight'
     ]
   )
+    {
+        "fluid": "kubejs:heavy_oil",
+        "amount": 25
+      },
+      {
+        "fluid": "kubejs:lubricant",
+        "amount": 25
+      },
+      {
+        "fluid": "createdieselgenerators:diesel",
+        "amount": 50
+      },
+      {
+        "fluid": "createdieselgenerators:gasoline",
+        "amount": 50
+      },
+      {
+        "fluid": "kubejs:lpg",
+        "amount": 50
+      }
 
   //移除一些原有配方
   event.remove({ id: 'createchromaticreturn:bedrock_shard_crushing' })

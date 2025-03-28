@@ -1,7 +1,9 @@
 const hotFluids = [
   "kubejs:molten_iron",
   "kubejs:molten_steel",
-  "kubejs:molten_slag"
+  "kubejs:molten_slag",
+  "kubejs:molten_za",
+  "kubejs:molten_netherite"
 ]
 const acidFluids = [
   "vintageimprovements:sulfuric_acid"
