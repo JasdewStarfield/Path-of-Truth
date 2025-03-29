@@ -650,7 +650,7 @@
 			dependencies: ["1E0E5E47E1264279"]
 			description: [
 				"其实就是压制后的碳粉（？"
-				"唯一的作用就是烧制石墨锭）"
+				"主要作用是烧制石墨锭……但也可以拿来调和一些比较危险的东西）"
 			]
 			hide_until_deps_complete: true
 			id: "48E0B5D1F9972D20"

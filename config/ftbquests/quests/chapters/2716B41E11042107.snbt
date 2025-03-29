@@ -42,7 +42,7 @@
 				"通过这个工程块，你可以开始构建一些真正意义上的重型机器了）"
 				""
 				"&o&m&c当然，更沉重的地方大抵是它的造价&r&r&r"
-				"&o&b更悲凉的是后续你会需要很多……&r&r"
+				"&o&b更悲凉的是后续你会需要很多……也许应该看看怎么通过魔法创造遗忆守卫？&r&r"
 			]
 			hide_until_deps_complete: true
 			id: "143E6A57D69BAE65"
@@ -65,7 +65,7 @@
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
-			description: ["合格的霉国军人应该在听到石油两个字的时候一跃而起！"]
+			description: ["合格的霉国军人应该在听到石油这个词的时候一跃而起！"]
 			id: "2E8FF0455E304658"
 			subtitle: "美军前置科技"
 			tasks: [{
@@ -110,9 +110,9 @@
 			description: [
 				"具体可以参考思索说明"
 				"虽然是古老的磕头机，但也足够你来使用了）"
-				"只需要从动力输入口输入动力，就可以抽出原油了！"
+				"只需要从抽油机曲柄输入动力，就可以抽出原油了！"
 				""
-				"请注意：组装后，上方的整个横向的杆子都需要用强力胶粘成一个整体，这样才能正常运行！"
+				"请注意：组装后，上方的整个横向杆状结构都需要用强力胶粘成一个整体（思索内有示意图），这样才能正常运行！"
 			]
 			icon: "createdieselgenerators:pumpjack_crank"
 			id: "08B3DECCC7EBD7CE"
@@ -303,11 +303,11 @@
 			]
 			description: [
 				"重油还可以进一步分解——然后获得你需要的一些特定资源）"
-				"提醒：重油到后期还有其它的用途，所以就算你现在用不上，也不推荐你全部扔掉"
+				"这可以让你的某些被精度干扰概率的配方成功率提升到百分百……"
 			]
 			hide_until_deps_complete: true
 			id: "107639F1A8166B9C"
-			subtitle: "分，还可以分"
+			subtitle: "沉重坚实"
 			tasks: [{
 				id: "0586BF2CC0F85178"
 				item: "kubejs:heavy_oil_bucket"
@@ -321,6 +321,7 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
+			description: ["生物柴油对应的本体……以及某些发动机的燃料。"]
 			hide_until_deps_complete: true
 			id: "443ED09E810FE23D"
 			subtitle: "轰！"
@@ -336,6 +337,11 @@
 			dependencies: [
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
+			]
+			description: [
+				"下界合金易溶于汽油，但显然合成下界合金的过程中，除了残骸碎片，我们还需要一些黄色的东西……"
+				""
+				"&o&e*你就说浓缩黄饼是不是黄金色的吧）&r&r"
 			]
 			hide_until_deps_complete: true
 			id: "2718164469D544DF"
@@ -355,14 +361,12 @@
 				"1AAD83556BD302DD"
 			]
 			description: [
-				"不止能拿来做炸弹……凝固汽油的主要作用是作为下界合金的前置。"
-				"是的，你终于要拥有第一块下界合金了（"
-				""
-				"注意：真的有凝固汽油弹，但是不便宜"
+				"现代工业最大的依靠之一就是塑料，而塑料的来源就是石油。"
+				"现在你需要尝试复刻这一过程，来触及到这一世界的工业巅峰。"
 			]
 			hide_until_deps_complete: true
 			id: "46A5743F6DC8054D"
-			subtitle: "燃烧弹前置"
+			subtitle: "现代工业第一步"
 			tasks: [{
 				id: "62E21C117613BBBE"
 				item: "kubejs:lpg_bucket"
@@ -416,8 +420,11 @@
 				"10F4740EEDA142EE"
 			]
 			description: [
-				"这将是对于你未来（可能存在的）电子厂生涯的第一步预演："
+				"这将是对于你未来&b（可能存在的）电子厂生涯的第一步&r预演："
 				"看到纯粹的，还没有焊接任何元件的板子）"
+				"另外，激光蚀刻的失败率本身确实很高，所以如果发现&c连续失败了&r，请放平心态。"
+				""
+				"&o&7*反正塑料便宜。&r&r"
 			]
 			id: "32DA53E6EDA0AC90"
 			subtitle: "焊板子！"
@@ -437,9 +444,9 @@
 			]
 			description: [
 				"自己给自己焊板子你还想要工资？不可能的，朋友）"
-				"哦对了，如果出现了废料那一定是你的运气问题，人不行不能怪路不平（x"
+				"为了在这个世界顺利使用精密的电子元件，你需要使用性质更好的材料……并且需要一些魔法的力量。"
 				""
-				"提示：恶魔合金可以做成块然后复制！能批量生产总是好的（"
+				"&o&b提示：盖亚魂锭可以通过贤者之石分别炼制泰拉钢锭和盖亚之魂组合而成！&r&r"
 			]
 			hide_until_deps_complete: true
 			id: "538F608DF5017A6A"
@@ -460,7 +467,7 @@
 			]
 			description: [
 				"终于，你进入了电子时代）"
-				"虽然我们不能在MC里为你提供计算机，但你已经接近这个世界的真相了。"
+				"虽然MC不能为你提供完整的计算机，但你已经接近这个世界的真相了。"
 			]
 			id: "07B58ED0910776DF"
 			shape: "gear"
@@ -628,9 +635,7 @@
 				"手搓怎么可能搓出这么宝贵的合金呢，对吧）"
 				"现在你需要&a真正的冶炼&r才能得到下界合金！"
 				""
-				""
-				""
-				"题外话：原版下界合金护甲的防御力被&c大大提升&r了。所以还是值得用它升级你的钻石甲的"
+				"&o&7注：原版下界合金护甲的防御力被&c大大提升&r&o&7了。所以还是值得用它升级你的钻石甲的&r&r"
 			]
 			id: "7C566E8D9F54FEF9"
 			rewards: [{
@@ -675,8 +680,9 @@
 		{
 			dependencies: ["07B58ED0910776DF"]
 			description: [
-				"你解锁了本整合包内最强大的物流兼存储管理模组——精致存储！"
-				"功能非常强大，所以我们才把它放在了这里……如果你要向着终末章节冲刺，那么像这样方便的物流会使你搭建产线方便不少。"
+				"&c你解锁了本整合包内最强大的物流兼存储管理模组——精致存储！&r"
+				"&o&7进入电子时代才能合成电脑，这很合理吧……&r&r"
+				"如果你要向着终末章节冲刺，那么像这样方便的物流会使你搭建产线方便不少。"
 				"至于具体用法，请参考网络教程，这里不再赘述。"
 			]
 			id: "142E14F831B0F7BE"
@@ -723,7 +729,12 @@
 		}
 		{
 			dependencies: ["107639F1A8166B9C"]
+			description: [
+				"通过重油混合沙石，就能够获得沥青——可以拿来铺路，不过这也有些浪费……"
+				"毕竟沥青更适合拿来做核反应堆）"
+			]
 			id: "0A20C8766DEA529B"
+			subtitle: "黑暗侵染（物理）"
 			tasks: [{
 				id: "65A520F21476E743"
 				item: "createdieselgenerators:asphalt_block"
@@ -737,12 +748,18 @@
 				"143E6A57D69BAE65"
 				"443ED09E810FE23D"
 			]
+			description: [
+				"通过搅拌机，你可以将铀粉和柴油进行调和，获得一些足够绿的液体……"
+				"当然，也足够危险。"
+			]
 			id: "718195A4744D12C1"
+			subtitle: "头顶绿油油的"
 			tasks: [{
 				id: "3BDEEA9CB2941461"
 				item: "createnuclear:uranium_bucket"
 				type: "item"
 			}]
+			title: "放射性物质"
 			x: 2.0d
 			y: 4.0d
 		}
@@ -751,18 +768,26 @@
 				"718195A4744D12C1"
 				"3FCEB9256A15A4B2"
 			]
+			description: ["这个不能喝。真的不能。"]
 			id: "10786A8DC61BD418"
+			subtitle: "倍率：10x"
 			tasks: [{
 				id: "44C7A3EFEDE37838"
 				item: "kubejs:molten_enriched_uranium_bucket"
 				type: "item"
 			}]
+			title: "升腾！"
 			x: 4.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["10786A8DC61BD418"]
+			description: [
+				"记得穿好防护服再来处理这些东西……"
+				"有点过于危险了。"
+			]
 			id: "1BD268D137CFF394"
+			subtitle: "也不能吃！"
 			tasks: [{
 				id: "713903ADD21CE285"
 				item: "createnuclear:yellowcake"
@@ -776,18 +801,26 @@
 				"1BD268D137CFF394"
 				"392E8FC01684BDEC"
 			]
+			description: [
+				"终于，能够压制成铀棒的合格黄饼出现了。"
+				"跳跃的能量弧让它&a看起来就很可疑&r，但你总得用的，毕竟没有这些魔法能量，它们也无法帮你&c把残骸碎片融合成下界合金&r。"
+			]
 			id: "17A821D8A88F11E4"
+			subtitle: "再多看一眼就会爆炸"
 			tasks: [{
 				id: "6BB0FA76D90E6E36"
 				item: "createnuclear:enriched_yellowcake"
 				type: "item"
 			}]
+			title: "附魔黄饼"
 			x: 8.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["2718164469D544DF"]
+			description: ["获得真正意义上的终极金属，只差一次灌装成型了！"]
 			id: "3CA5BEEE4B787688"
+			subtitle: "只差一步！"
 			tasks: [{
 				id: "1F9CA26BB20B5A1E"
 				item: "kubejs:molten_netherite_bucket"
@@ -798,8 +831,14 @@
 		}
 		{
 			dependencies: ["17A821D8A88F11E4"]
+			description: [
+				"想要控制一个核反应堆，铀棒和石墨棒是需要&c同时插入&r的，单独插入铀棒会导致一些不可控事件的发生。"
+				""
+				"&o&a*希望你不要想着放个大烟花玩玩……&r&r"
+			]
 			icon: "createnuclear:uranium_rod"
 			id: "034ED4F84F07207A"
+			subtitle: "双管齐下"
 			tasks: [
 				{
 					id: "3A2BA86DDFEB266C"
@@ -812,6 +851,7 @@
 					type: "item"
 				}
 			]
+			title: "控制棒"
 			x: 9.0d
 			y: 5.0d
 		}
@@ -820,7 +860,9 @@
 				"0A20C8766DEA529B"
 				"7C566E8D9F54FEF9"
 			]
+			description: ["最硬核的保护，将你和反应堆运行产生的辐射隔绝开来。"]
 			id: "7D6BF4F6E28213D6"
+			subtitle: "高墙常筑"
 			tasks: [{
 				id: "1AF43DA34FB9AA48"
 				item: "createnuclear:reactor_casing"
@@ -831,7 +873,13 @@
 		}
 		{
 			dependencies: ["7C566E8D9F54FEF9"]
+			description: [
+				"只有下界合金才能永久承受住激光的灼烧……"
+				"接下来你将在游戏里享受拥有光刻机的快感（x"
+				"不过很明显的一点是它的精度不高。"
+			]
 			id: "10F4740EEDA142EE"
+			subtitle: "高能高热"
 			tasks: [{
 				id: "0F1FAF424F5151D4"
 				item: "vintageimprovements:laser"
@@ -845,8 +893,10 @@
 				"07B58ED0910776DF"
 				"034ED4F84F07207A"
 			]
+			description: ["不仅能用来控制反应堆……"]
 			id: "5842F5E1694C4F74"
 			shape: "diamond"
+			subtitle: "外接大脑"
 			tasks: [{
 				id: "1673EC25B17F9B8D"
 				item: "createnuclear:reactor_controller"
@@ -857,7 +907,12 @@
 		}
 		{
 			dependencies: ["034ED4F84F07207A"]
+			description: [
+				"核能，输出最长效的能源之一。"
+				"当然也是短效输出最为杰出的能源之一，但这里&c没有核弹&r，所以还是想想如何利用这些电池把自己变成核动力战士吧。"
+			]
 			id: "68A3C3EE83073415"
+			subtitle: "长效动力"
 			tasks: [{
 				id: "603B831F0FAB4FC3"
 				item: "kubejs:fission_cell"
@@ -868,12 +923,18 @@
 		}
 		{
 			dependencies: ["1BD268D137CFF394"]
+			description: [
+				"想要再次压缩黄饼，就不得不依靠一些&c魔法的力量&r。"
+				"通过&b灵魂与魔力集成的核心&r，以&8黑暗金属&r为框架压制&9富饶的灵魂土&r，你就能借此为燃料，点燃这种灼烧灵魂的火焰。"
+			]
 			id: "392E8FC01684BDEC"
+			subtitle: "我的邪焰会焚尽天空！"
 			tasks: [{
 				id: "55608BB2524BE870"
 				item: "createnuclear:enriching_campfire"
 				type: "item"
 			}]
+			title: "燃烧军团打进来了？"
 			x: 7.0d
 			y: 5.0d
 		}

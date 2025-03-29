@@ -666,8 +666,10 @@ ServerEvents.recipes(event => {
     event.recipes.botania.terra_plate('goety:sonic_boom_focus',
         [
             'irons_spellbooks:eldritch_manuscript',
-            'irons_spellbooks:upgrade_orb',   
-            'goety:arca_compass',
+            'goety:ghost_fire_focus',
+            'botania:gaia_ingot',
+            'irons_spellbooks:upgrade_orb',
+            'goety:resonance_crystal',
             'alexsmobs:farseer_arm'
         ],
         200000
