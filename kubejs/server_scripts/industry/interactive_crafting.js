@@ -104,7 +104,8 @@ ServerEvents.recipes(event => {
 
     //轻型工程块
     const lightEngineering = [
-      ['createaddition:tesla_coil', "immersiveengineering:coil_mv"]
+      ['createaddition:tesla_coil', "immersiveengineering:coil_mv"],
+      ['vintageimprovements:curving_press', "kubejs:advanced_spring_set"]
     ]
     lightEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "immersiveengineering:light_engineering", material)

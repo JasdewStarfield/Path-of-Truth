@@ -1015,6 +1015,34 @@
 			x: 8.0d
 			y: -4.0d
 		}
+		{
+			dependencies: [
+				"56229BD92474D24C"
+				"5700B2AFCCAEE31A"
+			]
+			icon: "vintageimprovements:curving_press"
+			id: "123C1ECCE0F09AC1"
+			tasks: [
+				{
+					id: "6EA298E9E586CD0C"
+					item: "vintageimprovements:curving_press"
+					type: "item"
+				}
+				{
+					id: "7E05B659E655B375"
+					item: {
+						Count: 1
+						id: "vintageimprovements:convex_curving_head"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: -4.0d
+		}
 	]
 	subtitle: ["Hearts of Steel"]
 	title: "3I 钢铁雄心"

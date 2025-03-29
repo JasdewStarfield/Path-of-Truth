@@ -13,24 +13,24 @@
 			image: "kubejs:textures/quests/start.png"
 			rotation: 0.0d
 			width: 1.3285714285714287d
-			x: 0.0d
-			y: -1.3d
+			x: 1.0d
+			y: 1.0d
 		}
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 15.0d
-			y: 4.0d
+			x: 12.0d
+			y: 10.0d
 		}
 		{
 			height: 2.0d
 			image: "kubejs:textures/quests/i5.png"
 			rotation: 0.0d
 			width: 18.770642201834864d
-			x: 0.0d
-			y: -6.0d
+			x: 4.5d
+			y: -8.5d
 		}
 	]
 	order_index: 0
@@ -323,7 +323,6 @@
 			]
 			hide_until_deps_complete: true
 			id: "443ED09E810FE23D"
-			shape: "diamond"
 			subtitle: "轰！"
 			tasks: [{
 				id: "77B2B9F4B798D3F8"
@@ -382,8 +381,8 @@
 				item: "kubejs:liquid_plastic_bucket"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -2.0d
+			x: 6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["27AC0014531AA954"]
@@ -392,6 +391,7 @@
 				"塑胶是电子元件的基础材料——或者说底板）"
 				"很真实吧&m&o&b（很复杂吧&r&r&r"
 			]
+			icon: "kubejs:plastic_chunk"
 			id: "3E21C675D4F61E6B"
 			rewards: [{
 				id: "6DF3368F11CA92C9"
@@ -401,18 +401,26 @@
 			shape: "gear"
 			size: 2.0d
 			subtitle: "你疑似有点城市化了"
-			tasks: [{
-				id: "09AF0949CDF6DB32"
-				item: "immersiveengineering:plate_duroplast"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "46EB27E97B7A4B90"
+					item: "kubejs:plastic_chunk"
+					type: "item"
+				}
+				{
+					id: "484A50EA23068A83"
+					item: "immersiveengineering:plate_duroplast"
+					type: "item"
+				}
+			]
+			title: "塑胶"
 			x: 12.0d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
 				"3E21C675D4F61E6B"
-				"7C566E8D9F54FEF9"
+				"10F4740EEDA142EE"
 			]
 			description: [
 				"这将是对于你未来（可能存在的）电子厂生涯的第一步预演："
@@ -427,11 +435,14 @@
 				item: "immersiveengineering:circuit_board"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 1.0d
+			x: 14.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["32DA53E6EDA0AC90"]
+			dependencies: [
+				"32DA53E6EDA0AC90"
+				"10F4740EEDA142EE"
+			]
 			description: [
 				"自己给自己焊板子你还想要工资？不可能的，朋友）"
 				"哦对了，如果出现了废料那一定是你的运气问题，人不行不能怪路不平（x"
@@ -447,10 +458,13 @@
 				type: "item"
 			}]
 			x: 14.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["538F608DF5017A6A"]
+			dependencies: [
+				"538F608DF5017A6A"
+				"7D6BF4F6E28213D6"
+			]
 			description: [
 				"终于，你进入了电子时代）"
 				"虽然我们不能在MC里为你提供计算机，但你已经接近这个世界的真相了。"
@@ -464,8 +478,8 @@
 				item: "kubejs:electronic_engineering"
 				type: "item"
 			}]
-			x: 16.0d
-			y: 1.0d
+			x: 12.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
@@ -585,8 +599,8 @@
 				}
 			]
 			title: "机械化工具"
-			x: 1.0d
-			y: -2.0d
+			x: -1.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["07B58ED0910776DF"]
@@ -612,16 +626,19 @@
 				type: "item"
 			}]
 			title: "【终点】暴风雪"
-			x: 16.0d
-			y: 6.0d
+			x: 12.0d
+			y: 8.0d
 		}
 		{
-			dependencies: ["2718164469D544DF"]
+			dependencies: [
+				"2718164469D544DF"
+				"3CA5BEEE4B787688"
+			]
 			description: [
 				"手搓怎么可能搓出这么宝贵的合金呢，对吧）"
 				"现在你需要&a真正的冶炼&r才能得到下界合金！"
-				"当然，你还可以后续&b用盖亚锭进行炼金生产&r，但不管怎么样你必须至少拿到第一个……"
-				"等价交换的炼金体系&c不支持无中生有&r（"
+				""
+				""
 				""
 				"题外话：原版下界合金护甲的防御力被&c大大提升&r了。所以还是值得用它升级你的钻石甲的"
 			]
@@ -640,7 +657,7 @@
 				type: "item"
 			}]
 			title: "另一种黑金"
-			x: 8.0d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -683,8 +700,8 @@
 				type: "item"
 			}]
 			title: "精致存储"
-			x: 18.0d
-			y: 0.0d
+			x: 14.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["107639F1A8166B9C"]
@@ -708,8 +725,8 @@
 				type: "item"
 			}]
 			title: "纵享丝滑"
-			x: 5.5d
-			y: 3.0d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["107639F1A8166B9C"]
@@ -719,8 +736,118 @@
 				item: "createdieselgenerators:asphalt_block"
 				type: "item"
 			}]
-			x: 5.5d
-			y: 5.0d
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["143E6A57D69BAE65"]
+			id: "718195A4744D12C1"
+			tasks: [{
+				id: "3BDEEA9CB2941461"
+				item: "createnuclear:uranium_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"718195A4744D12C1"
+				"3FCEB9256A15A4B2"
+			]
+			id: "10786A8DC61BD418"
+			tasks: [{
+				id: "3B150DAA9760A469"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["10786A8DC61BD418"]
+			id: "1BD268D137CFF394"
+			tasks: [{
+				id: "713903ADD21CE285"
+				item: "createnuclear:yellowcake"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1BD268D137CFF394"]
+			id: "17A821D8A88F11E4"
+			tasks: [{
+				id: "6BB0FA76D90E6E36"
+				item: "createnuclear:enriched_yellowcake"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["17A821D8A88F11E4"]
+			id: "3CA5BEEE4B787688"
+			tasks: [{
+				id: "1F9CA26BB20B5A1E"
+				item: "kubejs:molten_netherite_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["17A821D8A88F11E4"]
+			id: "034ED4F84F07207A"
+			shape: "diamond"
+			tasks: [{
+				id: "3A2BA86DDFEB266C"
+				item: "createnuclear:uranium_rod"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"0A20C8766DEA529B"
+				"7C566E8D9F54FEF9"
+			]
+			id: "7D6BF4F6E28213D6"
+			tasks: [{
+				id: "1AF43DA34FB9AA48"
+				item: "createnuclear:reactor_casing"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7C566E8D9F54FEF9"]
+			id: "10F4740EEDA142EE"
+			tasks: [{
+				id: "0F1FAF424F5151D4"
+				item: "vintageimprovements:laser"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"07B58ED0910776DF"
+				"034ED4F84F07207A"
+			]
+			id: "5842F5E1694C4F74"
+			shape: "diamond"
+			tasks: [{
+				id: "1673EC25B17F9B8D"
+				item: "createnuclear:reactor_controller"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
 		}
 	]
 	subtitle: ["Petrochemical Engineering"]
