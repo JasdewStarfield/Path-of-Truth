@@ -130,6 +130,22 @@ ServerEvents.recipes(event => {
             F:'minecraft:bone'
         }
     )
+    //盖亚之魂复制
+    event.shaped(
+        Item.of('botania:life_essence', 4),
+        [
+            ' A ',
+            'BCD',
+            ' E '
+        ],
+        {
+            A: 'botania:life_essence',
+            E: 'botania:pixie_dust',
+            B: 'minecraft:echo_shard',
+            D: 'minecraft:ghast_tear',
+            C: 'goety:philosophers_stone'
+        }
+    )
 
     //符文祭坛配方
     //炼制铁魔法空白符文
@@ -649,7 +665,7 @@ ServerEvents.recipes(event => {
     event.remove({id:'goety:focus/sonic_boom_focus'})
     event.recipes.botania.terra_plate('goety:sonic_boom_focus',
         [
-            'goety:blink_focus',
+            'irons_spellbooks:eldritch_manuscript',
             'irons_spellbooks:upgrade_orb',   
             'goety:arca_compass',
             'alexsmobs:farseer_arm'

@@ -155,6 +155,23 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //简易泰拉钢制作（第五章开放）
+    event.shaped(
+        Item.of('botania:terrasteel_ingot'),
+        [
+            ' A ',
+            'BCD',
+            ' E '
+        ],
+        {
+            A: 'botania:mana_pearl',
+            D: 'create:brass_ingot',
+            E: 'irons_spellbooks:arcane_essence',
+            B: 'goety:cursed_ingot',
+            C: 'goety:philosophers_stone'
+        }
+    )
+
     //幽匿收集器配方修改
     event.replaceInput({mod:'goety',output:'goety:sculk_devourer'},
         'goety:magic_emerald' , 'goety:pedestal')
@@ -278,6 +295,15 @@ ServerEvents.recipes(event => {
         },
         "result": 'undergarden:forgotten_ingot',
         "cookingTime": 1200
+    })
+    //霜火复合板转换恶魂之泪
+    event.custom({
+        "type": "goety:cursed_infuser_recipes",
+        "ingredient": {
+            "item": 'kubejs:frostfire_double_plate'
+        },
+        "result": 'minecraft:ghast_tear',
+        "cookingTime": 100
     })
 
 

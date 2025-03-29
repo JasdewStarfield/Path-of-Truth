@@ -106,7 +106,7 @@
 			dependencies: ["301A6952E3B16C88"]
 			description: [
 				"以&a死灵的火焰&r配合&3盖亚的灵魂&r压缩刷怪笼，就可以在一场&6漫长的熔铸&r后得到&5炼金术一道的终极成就：贤者之石&r。"
-				"它显然可以被用来&6点石成金&r——但那是它最粗糙的用法。"
+				"它显然可以被用来&e点石成金&r——但那是它最粗糙的用法。更巧妙的使用方式&9需要自己探索&r，不过有一点是确定的：其内部的永恒魔力将会帮助你&2省去一部分材料聚合上的烦恼&r。"
 				"虽然使用过程中会消耗能量，但是它能通过&b自动抽取灵魂能量或置入灵魂修补器&r来填补，毕竟最重要的是载体。"
 				""
 				"&d&o*法师的注释：在需要消耗整颗贤者之石的时候，尝试使用复刻凝胶复制而不是新做一个，不然我会为你的肝感到悲哀的。&r&r"
@@ -120,6 +120,28 @@
 				}
 			}
 			id: "12134A3EF6C80C54"
+			rewards: [{
+				id: "367CC6C84094F32B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "irons_spellbooks:archevoker_chestplate"
+					tag: {
+						Damage: 0
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 1
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
 			shape: "hexagon"
 			subtitle: "炼金术最高成就"
 			tasks: [{
@@ -547,6 +569,7 @@
 			]
 			icon: "minecraft:nether_star"
 			id: "61B0D0DB73C67D53"
+			shape: "diamond"
 			subtitle: "凋零补完计划"
 			tasks: [
 				{
@@ -571,6 +594,7 @@
 				"当然，你也可以直接找他讨要……"
 			]
 			id: "7879C0C411C82BB7"
+			shape: "diamond"
 			subtitle: "血之证"
 			tasks: [{
 				id: "0AA4DAE872A7BD8A"
