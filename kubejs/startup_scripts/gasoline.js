@@ -1,8 +1,3 @@
-StartupEvents.registry('item', (event) => {
-	//塑胶
-	event.create("plastic_chunk").displayName('Plastic Chunk')
-})
-
 StartupEvents.registry('block', (event) => {
 
 })

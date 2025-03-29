@@ -95,6 +95,8 @@ StartupEvents.registry('item', (event) => {
   event.create("unfinished_steel_mechanism", 'create:sequenced_assembly').displayName('Unfinished Steel Mechanism').texture('kubejs:item/unfinished_steel_mechanism')
   event.create("forgotten_mechanism").displayName('Forgotten Mechanism').texture('kubejs:item/forgotten_mechanism')
   event.create("incomplete_forgotten_mechanism", 'create:sequenced_assembly').displayName('Incomplete Forgotten Mechanism').texture('kubejs:item/incomplete_forgotten_mechanism')
+  event.create("fission_cell").displayName('Fission Cell')
+  event.create("incomplete_fission_cell", 'create:sequenced_assembly').displayName('Incomplete Fission Cell')
 })
 
 StartupEvents.registry('block', (event) => {
@@ -185,5 +187,12 @@ StartupEvents.registry('fluid', (event) => {
   .thickTexture(0x9D4E3D)
   .bucketColor(0x9D4E3D)
   .displayName('Molten Netherite')
+  .temperature(2400)
+
+  //熔融浓缩铀
+  event.create('molten_enriched_uranium')
+  .thickTexture(0x7FF60C)
+  .bucketColor(0x7FF60C)
+  .displayName('Molten Enriched Uranium')
   .temperature(2000)
 })

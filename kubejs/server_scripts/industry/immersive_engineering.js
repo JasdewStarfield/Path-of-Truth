@@ -534,18 +534,7 @@ ServerEvents.recipes(event => {
     })
     event.custom({
       "type":"immersiveengineering:bottling_machine",
-      "fluid":{"amount":100,"tag":"forge:liquid_plastic"},
-      "inputs":[
-        {"item":"kubejs:mold_ingot"}
-      ],
-      "results":[
-        {"item":"kubejs:mold_ingot"},
-        {"item":"kubejs:plastic_chunk"}
-      ]
-    })
-    event.custom({
-      "type":"immersiveengineering:bottling_machine",
-      "fluid":{"amount":100,"tag":"forge:liquid_plastic"},
+      "fluid":{"amount":250,"tag":"forge:liquid_plastic"},
       "inputs":[
         {"item":"immersiveengineering:mold_plate"}
       ],
@@ -560,22 +549,26 @@ ServerEvents.recipes(event => {
     event.recipes.create.sequenced_assembly([
         Item.of('immersiveengineering:component_electronic_adv').withChance(90.0),
         Item.of('#forge:silicon').withChance(1.2),
-        Item.of('#bloodmagic:gravels/hellforged').withChance(1.2),
+        Item.of('#forge:wires/netherite').withChance(1.2),
         Item.of('immersiveengineering:component_electronic').withChance(2.6),
-        Item.of('immersiveengineering:circuit_board').withChance(5.0)
-        ], 'immersiveengineering:circuit_board', [
+        Item.of('kubejs:electronic_circuit_board').withChance(5.0)
+        ], 'kubejs:electronic_circuit_board', [
         event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:silicon']),
+        event.recipes.vintageimprovements.laser_cutting('kubejs:incomplete_component_electronic_adv', 'kubejs:incomplete_component_electronic_adv'),
         event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'immersiveengineering:component_electronic']),
-        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:dusts/hellforged'])
+        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:wires/netherite']),
+        event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'botania:gaia_ingot'])
     ]).transitionalItem('kubejs:incomplete_component_electronic_adv').loops(5)
 
     event.recipes.create.sequenced_assembly([
       Item.of('immersiveengineering:component_electronic_adv')
-      ], 'immersiveengineering:circuit_board', [
+      ], 'kubejs:electronic_circuit_board', [
       event.recipes.createFilling('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', {fluidTag: 'forge:lubricant', amount:25}]),
       event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:silicon']),
+      event.recipes.vintageimprovements.laser_cutting('kubejs:incomplete_component_electronic_adv', 'kubejs:incomplete_component_electronic_adv'),
       event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'immersiveengineering:component_electronic']),
-      event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:dusts/hellforged'])
+      event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:wires/netherite']),
+      event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'botania:gaia_ingot'])
     ]).transitionalItem('kubejs:incomplete_component_electronic_adv').loops(5)
 
     //散热器模块
@@ -604,16 +597,16 @@ ServerEvents.recipes(event => {
         'DAC'  
     ], {
         B: 'create:brass_casing',
-        A: 'kubejs:plastic_chunk',
+        A: 'goety:cursed_ingot',
         C: 'immersiveengineering:component_electronic_adv',
-        D: 'immersiveengineering:radiator'
+        D: 'kubejs:fission_cell'
     })
     event.recipes.create.sequenced_assembly([
         'kubejs:electronic_engineering'
         ], 'create:brass_casing', [
-            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'kubejs:plastic_chunk']),
+            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'goety:cursed_ingot']),
             event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'immersiveengineering:component_electronic_adv']),
-            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'immersiveengineering:radiator']),
-            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'kubejs:plastic_chunk'])
+            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'kubejs:fission_cell']),
+            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'goety:cursed_ingot'])
     ]).transitionalItem('kubejs:incomplete_electronic_engineering').loops(1)
 })

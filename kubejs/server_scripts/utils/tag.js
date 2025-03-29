@@ -233,8 +233,6 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:plates","createdeco:industrial_iron_sheet")
 
     //others
-    event.add("forge:ingots/plastic","kubejs:plastic_chunk")
-    event.add("forge:ingots","kubejs:plastic_chunk")
     event.add("forge:ingots/andesite","create:andesite_alloy")
     event.add("forge:plates","kubejs:frostfire_double_plate")
     event.add("forge:plates","kubejs:terrasteel_sheet")

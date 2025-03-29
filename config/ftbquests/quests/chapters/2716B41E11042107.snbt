@@ -13,7 +13,7 @@
 			image: "kubejs:textures/quests/start.png"
 			rotation: 0.0d
 			width: 1.3285714285714287d
-			x: 1.0d
+			x: 0.0d
 			y: 1.0d
 		}
 		{
@@ -29,8 +29,8 @@
 			image: "kubejs:textures/quests/i5.png"
 			rotation: 0.0d
 			width: 18.770642201834864d
-			x: 4.5d
-			y: -8.5d
+			x: 0.0d
+			y: 8.0d
 		}
 	]
 	order_index: 0
@@ -61,7 +61,7 @@
 			}]
 			title: "【起点】现代工业基石"
 			x: 0.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
@@ -74,7 +74,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2E8FF0455E304658"]
@@ -100,7 +100,7 @@
 			]
 			title: "工业血管"
 			x: 0.0d
-			y: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -147,7 +147,7 @@
 			]
 			title: "组装抽油机"
 			x: 0.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["08B3DECCC7EBD7CE"]
@@ -234,7 +234,7 @@
 			]
 			title: "搭建斗轮式采矿机"
 			x: -2.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["71B673D310440EBC"]
@@ -260,7 +260,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -281,9 +281,9 @@
 					type: "item"
 				}
 				{
-					count: 6L
+					count: 5L
 					id: "0AC26E7B6DD073F2"
-					item: { Count: 6, id: "create:fluid_tank" }
+					item: "create:fluid_tank"
 					type: "item"
 				}
 				{
@@ -381,8 +381,8 @@
 				item: "kubejs:liquid_plastic_bucket"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -4.0d
+			x: 8.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["27AC0014531AA954"]
@@ -391,7 +391,7 @@
 				"塑胶是电子元件的基础材料——或者说底板）"
 				"很真实吧&m&o&b（很复杂吧&r&r&r"
 			]
-			icon: "kubejs:plastic_chunk"
+			icon: "immersiveengineering:plate_duroplast"
 			id: "3E21C675D4F61E6B"
 			rewards: [{
 				id: "6DF3368F11CA92C9"
@@ -401,21 +401,14 @@
 			shape: "gear"
 			size: 2.0d
 			subtitle: "你疑似有点城市化了"
-			tasks: [
-				{
-					id: "46EB27E97B7A4B90"
-					item: "kubejs:plastic_chunk"
-					type: "item"
-				}
-				{
-					id: "484A50EA23068A83"
-					item: "immersiveengineering:plate_duroplast"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "484A50EA23068A83"
+				item: "immersiveengineering:plate_duroplast"
+				type: "item"
+			}]
 			title: "塑胶"
 			x: 12.0d
-			y: -4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -425,23 +418,22 @@
 			description: [
 				"这将是对于你未来（可能存在的）电子厂生涯的第一步预演："
 				"看到纯粹的，还没有焊接任何元件的板子）"
-				""
-				"另：工程塑胶板使用机械动力的粗放方法压制很容易损坏。推荐使用金属冲压机！"
 			]
 			id: "32DA53E6EDA0AC90"
 			subtitle: "焊板子！"
 			tasks: [{
-				id: "6186760AB2B79629"
-				item: "immersiveengineering:circuit_board"
+				id: "48C588AD1B77239B"
+				item: "kubejs:electronic_circuit_board"
 				type: "item"
 			}]
 			x: 14.0d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"32DA53E6EDA0AC90"
 				"10F4740EEDA142EE"
+				"7C566E8D9F54FEF9"
 			]
 			description: [
 				"自己给自己焊板子你还想要工资？不可能的，朋友）"
@@ -457,13 +449,14 @@
 				item: "immersiveengineering:component_electronic_adv"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 12.0d
 			y: 2.0d
 		}
 		{
 			dependencies: [
 				"538F608DF5017A6A"
 				"7D6BF4F6E28213D6"
+				"68A3C3EE83073415"
 			]
 			description: [
 				"终于，你进入了电子时代）"
@@ -537,7 +530,7 @@
 			]
 			title: "现代军武库"
 			x: -1.0d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
@@ -599,8 +592,8 @@
 				}
 			]
 			title: "机械化工具"
-			x: -1.5d
-			y: -1.0d
+			x: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["07B58ED0910776DF"]
@@ -630,10 +623,7 @@
 			y: 8.0d
 		}
 		{
-			dependencies: [
-				"2718164469D544DF"
-				"3CA5BEEE4B787688"
-			]
+			dependencies: ["3CA5BEEE4B787688"]
 			description: [
 				"手搓怎么可能搓出这么宝贵的合金呢，对吧）"
 				"现在你需要&a真正的冶炼&r才能得到下界合金！"
@@ -661,7 +651,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["71B673D310440EBC"]
+			dependencies: [
+				"71B673D310440EBC"
+				"7B7978B0964080F3"
+			]
 			description: ["不仅如此，岩芯摆放下来也是很好的装饰品"]
 			id: "0B043034C7178F75"
 			rewards: [{
@@ -677,7 +670,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["07B58ED0910776DF"]
@@ -701,7 +694,7 @@
 			}]
 			title: "精致存储"
 			x: 14.0d
-			y: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["107639F1A8166B9C"]
@@ -725,7 +718,7 @@
 				type: "item"
 			}]
 			title: "纵享丝滑"
-			x: 2.0d
+			x: 6.0d
 			y: 4.0d
 		}
 		{
@@ -736,19 +729,22 @@
 				item: "createdieselgenerators:asphalt_block"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 4.0d
+			x: 6.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["143E6A57D69BAE65"]
+			dependencies: [
+				"143E6A57D69BAE65"
+				"443ED09E810FE23D"
+			]
 			id: "718195A4744D12C1"
 			tasks: [{
 				id: "3BDEEA9CB2941461"
 				item: "createnuclear:uranium_bucket"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.0d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -757,12 +753,12 @@
 			]
 			id: "10786A8DC61BD418"
 			tasks: [{
-				id: "3B150DAA9760A469"
-				item: "minecraft:bucket"
+				id: "44C7A3EFEDE37838"
+				item: "kubejs:molten_enriched_uranium_bucket"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -2.0d
+			x: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["10786A8DC61BD418"]
@@ -772,42 +768,52 @@
 				item: "createnuclear:yellowcake"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -4.0d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["1BD268D137CFF394"]
+			dependencies: [
+				"1BD268D137CFF394"
+				"392E8FC01684BDEC"
+			]
 			id: "17A821D8A88F11E4"
 			tasks: [{
 				id: "6BB0FA76D90E6E36"
 				item: "createnuclear:enriched_yellowcake"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.0d
+			x: 8.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["17A821D8A88F11E4"]
+			dependencies: ["2718164469D544DF"]
 			id: "3CA5BEEE4B787688"
 			tasks: [{
 				id: "1F9CA26BB20B5A1E"
 				item: "kubejs:molten_netherite_bucket"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -2.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["17A821D8A88F11E4"]
+			icon: "createnuclear:uranium_rod"
 			id: "034ED4F84F07207A"
-			shape: "diamond"
-			tasks: [{
-				id: "3A2BA86DDFEB266C"
-				item: "createnuclear:uranium_rod"
-				type: "item"
-			}]
-			x: 6.0d
-			y: 6.0d
+			tasks: [
+				{
+					id: "3A2BA86DDFEB266C"
+					item: "createnuclear:uranium_rod"
+					type: "item"
+				}
+				{
+					id: "455C11DAC2DC2873"
+					item: "createnuclear:graphite_rod"
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: 5.0d
 		}
 		{
 			dependencies: [
@@ -847,7 +853,29 @@
 				type: "item"
 			}]
 			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["034ED4F84F07207A"]
+			id: "68A3C3EE83073415"
+			tasks: [{
+				id: "603B831F0FAB4FC3"
+				item: "kubejs:fission_cell"
+				type: "item"
+			}]
+			x: 10.0d
 			y: 6.0d
+		}
+		{
+			dependencies: ["1BD268D137CFF394"]
+			id: "392E8FC01684BDEC"
+			tasks: [{
+				id: "55608BB2524BE870"
+				item: "createnuclear:enriching_campfire"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.0d
 		}
 	]
 	subtitle: ["Petrochemical Engineering"]

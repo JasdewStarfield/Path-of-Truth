@@ -67,19 +67,15 @@ ServerEvents.recipes(event => {
     "ingredients": [
       {
         "fluid": "createdieselgenerators:crude_oil",
-        "amount": 100
+        "amount": 200
       }
     ],
     "heatRequirement": "heated",
-    "processingTime": 100,
+    "processingTime": 200,
     "results": [
       {
         "fluid": "kubejs:heavy_oil",
-        "amount": 25
-      },
-      {
-        "fluid": "kubejs:lubricant",
-        "amount": 25
+        "amount": 50
       },
       {
         "fluid": "createdieselgenerators:diesel",
@@ -95,6 +91,92 @@ ServerEvents.recipes(event => {
       }
     ]
   })
+
+  //铀处理
+  event.remove({ id: 'createnuclear:mixing/uranium_fluid' })
+  event.remove({ id: 'createnuclear:compacting/uranium_fluid_to_yellowcake' })
+  event.remove({ id: 'createnuclear:crafting/enriched_soul_soil' })
+  event.remove({ id: 'createnuclear:mechanical_crafting/uranium_rod' })
+  event.custom({
+    "type":"immersiveengineering:mixer",
+    "energy":12800,
+    "fluid":{"amount":500,"tag":"forge:diesel"},
+    "inputs":[
+      {"base_ingredient":{"tag":"forge:dusts/uranium"},"count":4},
+      {"base_ingredient":{"tag":"forge:dusts/hop_graphite"},"count":1},
+    ],
+    "result":{"amount":500,"fluid":"createnuclear:uranium"}
+  })
+  event.custom({
+    "type": "createdieselgenerators:distillation",
+    "ingredients": [
+      {
+        "fluid": "createnuclear:uranium",
+        "amount": 100
+      }
+    ],
+    "heatRequirement": "superheated",
+    "processingTime": 400,
+    "results": [
+      {
+        "fluid": "kubejs:molten_enriched_uranium",
+        "amount": 10
+      },
+      {
+        "fluid": "minecraft:lava",
+        "amount": 90
+      }
+    ]
+  })
+  event.recipes.vintageimprovements.centrifugation([
+      Item.of("immersiveengineering:nugget_uranium", 4).withChance(0.5),
+      Item.of("immersiveengineering:slag").withChance(0.5),
+      "createnuclear:yellowcake"
+    ],
+    Fluid.of('kubejs:molten_enriched_uranium', 50)
+  ).minimalRPM(256)
+  event.recipes.create.mixing('createnuclear:enriched_soul_soil', ['goety:sonic_boom_focus','goety:dark_metal_block','goety:dark_metal_block','goety:dark_metal_block','goety:dark_metal_block','nethersdelight:rich_soul_soil','nethersdelight:rich_soul_soil','nethersdelight:rich_soul_soil','nethersdelight:rich_soul_soil']).superheated()
+
+  //裂变电池
+  event.recipes.create.sequenced_assembly([
+      Item.of('kubejs:fission_cell').withChance(90.0),
+      Item.of('createnuclear:graphite_rod').withChance(1.2),
+      Item.of('createnuclear:uranium_rod').withChance(1.2),
+      Item.of('immersiveengineering:radiator').withChance(2.6),
+      Item.of('protection_pixel:heatresistantceramicsheet').withChance(5.0)
+    ], 'protection_pixel:heatresistantceramicsheet', [
+      event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'kubejs:za_sheet']),
+      event.recipes.createPressing('kubejs:incomplete_fission_cell', 'kubejs:incomplete_fission_cell'),
+      event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'createnuclear:uranium_rod']),
+      event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'createnuclear:graphite_rod']),
+      event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'immersiveengineering:radiator'])
+  ]).transitionalItem('kubejs:incomplete_fission_cell').loops(5)
+  event.recipes.create.sequenced_assembly([
+    Item.of('kubejs:fission_cell')
+  ], 'protection_pixel:heatresistantceramicsheet', [
+    event.recipes.createFilling('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', {fluidTag: 'forge:lubricant', amount:25}]),
+    event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'kubejs:za_sheet']),
+    event.recipes.createPressing('kubejs:incomplete_fission_cell', 'kubejs:incomplete_fission_cell'),
+    event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'createnuclear:uranium_rod']),
+    event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'createnuclear:graphite_rod']),
+    event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'immersiveengineering:radiator'])
+]).transitionalItem('kubejs:incomplete_fission_cell').loops(5)
+
+  //电路板
+  event.remove({id:"vintageimprovements:mechanical_crafting/laser"})
+  event.recipes.create.mechanical_crafting('vintageimprovements:laser_item', [
+    ' A ',
+    'ABA',
+    'ACA',
+    'ADA',
+    'ADA'
+  ], {
+    A: '#forge:plates/netherite',
+    B: 'immersiveengineering:toolupgrade_revolver_electro',
+    C: 'scguns:laser_sight',
+    D: '#forge:glass'
+  })
+  event.recipes.vintageimprovements.laser_cutting(Item.of('kubejs:electronic_circuit_board').withChance(0.5), ['#forge:plates/plastic']).energyCost(12800).maxChargeRate(3200)
 
   /*
   //多彩化合物

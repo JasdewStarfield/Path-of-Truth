@@ -123,7 +123,8 @@ ServerEvents.recipes(event => {
       ['create_new_age:energiser_t2', "minecraft:lightning_rod"]
       */
       ['createdieselgenerators:pumpjack_hole', "kubejs:fluid_engineering"],
-      ['createdieselgenerators:pumpjack_bearing', "create:mechanical_bearing"]
+      ['createdieselgenerators:pumpjack_bearing', "create:mechanical_bearing"],
+      ['vintageimprovements:laser', "vintageimprovements:laser_item"]
     ]
     heavyEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "immersiveengineering:heavy_engineering", material)
