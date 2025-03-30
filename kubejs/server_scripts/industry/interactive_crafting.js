@@ -133,9 +133,22 @@ ServerEvents.recipes(event => {
     //电子工程块
     const electronicEngineering = [
       //['create_new_age:energiser_t3', "minecraft:lightning_rod"]
+      ['createnuclear:reactor_input', "create:portable_storage_interface"],
+      ['createnuclear:reactor_output', "createdieselgenerators:engine_turbocharger"],
+      ['createnuclear:reactor_controller', "kubejs:precise_engineering"],
     ]
     electronicEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:electronic_engineering", material)
+    )
+
+    //反应堆机壳
+    const reactorCasing = [
+      ['createnuclear:reactor_core', "irons_spellbooks:energized_core"],
+      ['createnuclear:reactor_frame', "createnuclear:reinforced_glass"],
+      ['createnuclear:reactor_cooler', "blue_ice"]
+    ]
+    reactorCasing.forEach(([output, material]) =>
+      InteractiveCrafting(output, "createnuclear:reactor_casing", material)
     )
 
     //一些其它的姑且也放这罢

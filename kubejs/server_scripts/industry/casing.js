@@ -36,6 +36,9 @@ ServerEvents.recipes(event => {
     //工厂机壳
     casing("kubejs:factory_casing", "immersiveengineering:concrete_leaded", 'kubejs:za_sheet')
 
+    //反应堆机壳
+    casing("createnuclear:reactor_casing", "createdieselgenerators:asphalt_block", '#forge:plates/netherite')
+
     //齿轮
     event.remove({id:'create:crafting/kinetics/cogwheel'})
     event.remove({id:'create:deploying/cogwheel'})

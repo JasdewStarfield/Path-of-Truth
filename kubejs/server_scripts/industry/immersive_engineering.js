@@ -596,17 +596,17 @@ ServerEvents.recipes(event => {
         'ABA',
         'DAC'  
     ], {
-        B: 'create:brass_casing',
-        A: 'goety:cursed_ingot',
+        B: 'createnuclear:reactor_casing',
+        A: 'goety:dark_ingot',
         C: 'immersiveengineering:component_electronic_adv',
         D: 'kubejs:fission_cell'
     })
     event.recipes.create.sequenced_assembly([
         'kubejs:electronic_engineering'
-        ], 'create:brass_casing', [
-            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'goety:cursed_ingot']),
+        ], 'createnuclear:reactor_casing', [
+            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'goety:dark_ingot']),
             event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'immersiveengineering:component_electronic_adv']),
             event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'kubejs:fission_cell']),
-            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'goety:cursed_ingot'])
+            event.recipes.createDeploying('kubejs:incomplete_electronic_engineering', ['kubejs:incomplete_electronic_engineering', 'goety:dark_ingot'])
     ]).transitionalItem('kubejs:incomplete_electronic_engineering').loops(1)
 })
