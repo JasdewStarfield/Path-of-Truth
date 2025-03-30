@@ -166,11 +166,10 @@
 				"5B74E17C06C14B35"
 				"0D2EEDEACB542342"
 				"3CA3B66481E3AFF9"
-				"49FE5FA4AD8E2692"
 				"39E40DE0BFC3304A"
 				"6D54B104118A0FA7"
-				"43F24DD9D0242F26"
 				"30D60CA0144F675E"
+				"43F24DD9D0242F26"
 			]
 			description: [
 				"&a【完成后解锁主线章节：** ******】&r"
@@ -220,104 +219,82 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["43F24DD9D0242F26"]
+			dependencies: ["0D0BEC03C1B26CA3"]
 			description: [
-				"在炼金反应炉中，使用光辉锭与水可以合成一种神秘的白色光流体。"
-				"如果你足够富有，也许你可以用它去制作红石酸……"
-				""
-				"&c&o在使用它合成的时候，我想你会对混沌理论有更加“深入心底”的认识）&r&r"
+				"只有这种瓶子才能承载的住&a世界极限的魔法力量&r。因此，拥有它之后，你才有能力对于工业和魔法的巅峰进行一些魔法上的操作和提炼。"
+				"相较于曾经&b粗糙的将某些要素通过魔法造物暂时融合&r，现在你可以尝试&5直接掌控其本质&r。"
 			]
-			icon: "createchromaticreturn:refined_mixture_bucket"
+			icon: "create_enchantment_industry:hyper_experience_bottle"
 			id: "31B7298A33ACA4A7"
 			shape: "circle"
 			size: 1.0d
-			subtitle: "一种“水”"
+			subtitle: "最强瓶子"
 			tasks: [{
-				id: "6DBEAEF5CDC8092D"
-				item: "createchromaticreturn:refined_mixture_bucket"
+				id: "404A61ACF249380F"
+				item: "kubejs:reinforced_bottle"
 				type: "item"
 			}]
-			title: "光辉流淌"
-			x: 5.0d
+			title: "浓缩世界"
+			x: 3.5d
 			y: -1.0d
 		}
 		{
-			dependencies: ["0D0BEC03C1B26CA3"]
+			dependencies: ["31B7298A33ACA4A7"]
 			description: [
-				"终极魔法从凝聚光辉石开始——这是奥术智慧的光辉。"
-				"通过一些铁魔法材料的聚合，你可以得到它……"
-				"然后把它通过炼金手段融化。"
+				"生与死之间的那一丝规则&a本质是平衡&r，自然也正是因为互相制约的相对平衡才能稳定发展。"
+				"通过二次提炼，你将能&b凝缩平衡的精髓&r——也可以通过&d服用&r来&c部分掌握平衡的本质&r。"
 			]
 			hide_until_deps_complete: true
 			id: "43F24DD9D0242F26"
 			shape: "circle"
 			size: 1.0d
-			subtitle: "其实不会发光"
+			subtitle: "对立由平衡调节"
 			tasks: [{
-				id: "4A285D929C22AC81"
-				item: "createchromaticreturn:refined_radiance"
+				id: "7C5B9262A41AC2C6"
+				item: "kubejs:potion_of_balance"
 				type: "item"
 			}]
-			title: "更亮，更强"
-			x: 3.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["39E40DE0BFC3304A"]
-			description: [
-				"除了基础的锭和书本之外，合成这本书你还需要去击杀四种特殊BOSS——你需要它们的力量精华来将力量压入法术书。"
-				"这本书可以为你的暗影钢工具添加超级精准采集，也是终末锭的必要配方——之一。"
-				"不同于工业的机械伟力，魔法需要你通过研究和战斗来综合证明自己。"
-				""
-				"&b&o*当你完成三本书的制作后，其中的魔法力量就可以通过灵魂和法术书共鸣……也是某种意义上的“事不过三”。&r&r"
-			]
-			id: "49FE5FA4AD8E2692"
-			shape: "circle"
-			size: 1.0d
-			subtitle: "力量与耐心的证明"
-			tasks: [{
-				id: "63E1DD338968EFFD"
-				item: "createchromaticreturn:silkstrum_book"
-				type: "item"
-			}]
-			title: "强化精准采集"
-			x: 2.5d
-			y: 0.0d
+			title: "合并生死"
+			x: 1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["31B7298A33ACA4A7"]
 			description: [
-				"通过血魔法炼金炉的浇灌，你随机到了一种丝滑的材料）"
-				"也许可以拿来制作手柄？"
+				"庞大的魔力与强大的灵魂代表着&d个体天赋的巅峰&r。现如今，你可以通过一些辅助材料，将其&6蕴藏的那一丝天赋&r提炼而出。"
+				"可以饮用以&e提升自身的天赋&r。"
 			]
 			id: "39E40DE0BFC3304A"
 			shape: "circle"
 			size: 1.0d
-			subtitle: "精准采集其实是丝绸之触"
+			subtitle: "魔力与灵魂铸就天赋"
 			tasks: [{
-				id: "2DCD06FD0E983B5E"
-				item: "createchromaticreturn:silkstrum"
+				id: "19F422B983BBA8FB"
+				item: "kubejs:potion_of_talent"
 				type: "item"
 			}]
-			title: "丝滑体验"
-			x: 2.5d
-			y: -2.0d
+			title: "熔炼魔魂"
+			x: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["31B7298A33ACA4A7"]
-			description: ["通过光辉液体和一系列的随机过程，你找到了一种更强大的材料：辉光锭。"]
+			description: [
+				"当你再次&b回到世界最黑暗的地方&r，你将能借助那超越世俗的材料压制出&9一丝虚空的本源规则&r。"
+				"可以通过饮用来&5掌控末影并无视黑暗&r。"
+			]
 			id: "30D60CA0144F675E"
 			shape: "circle"
 			size: 1.0d
-			subtitle: "闪起来了"
+			subtitle: "万物源于虚空"
 			tasks: [{
-				id: "26F4B91EBE6144BF"
-				item: "createchromaticreturn:glowing_ingot"
+				id: "46C2413816F73EA0"
+				item: "kubejs:potion_of_void"
 				type: "item"
 			}]
-			title: "法力辉光"
-			x: 3.0d
-			y: 2.0d
+			title: "触摸虚无"
+			x: 1.0d
+			y: 0.5d
 		}
 	]
 	subtitle: ["Mastery of Tech \\& Magic"]

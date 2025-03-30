@@ -305,7 +305,15 @@ ServerEvents.recipes(event => {
         "result": 'minecraft:ghast_tear',
         "cookingTime": 100
     })
-
+    //星盘注入获得唱片
+    event.custom({
+        "type": "goety:cursed_infuser_recipes",
+        "ingredient": {
+            "item": 'blue_skies:astrolabe'
+        },  
+        "result": 'kubejs:music_disc_quam_admirabile_mundi',
+        "cookingTime": 1200
+    })
 
     //仪式配方修改系列
     //撕裂聚晶合成

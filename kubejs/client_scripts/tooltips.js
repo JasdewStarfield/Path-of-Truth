@@ -21,6 +21,9 @@ ItemEvents.tooltip(e => {
     )
 
     // e.add(["scguns:gun_bench"], [Text.yellow({translate:'item.scguns.gun_bench.desc'})])
+    e.add(["kubejs:potion_of_void"], [Text.blue({translate:'item.kubejs.potion_of_void.desc'})])
+    e.add(["kubejs:potion_of_talent"], [Text.blue({translate:'item.kubejs.potion_of_talent.desc'})])
+    e.add(["kubejs:potion_of_balance"], [Text.blue({translate:'item.kubejs.potion_of_balance.desc'})])
 
     e.add(["kubejs:broken_snowcap_oven"], [Text.yellow({translate:'item.kubejs.broken_snowcap_oven.desc'})])
 
