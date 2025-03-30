@@ -233,7 +233,7 @@
 			]
 			title: "组装挤压机"
 			x: -4.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["19EA7F4C42FCA4BA"]
@@ -685,7 +685,7 @@
 				type: "item"
 			}]
 			title: "电弧炉核心"
-			x: -4.0d
+			x: -2.0d
 			y: -6.0d
 		}
 		{
@@ -1419,7 +1419,7 @@
 				}
 			]
 			title: "优良导体"
-			x: -4.0d
+			x: -2.0d
 			y: 6.0d
 		}
 		{
@@ -1475,19 +1475,15 @@
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 5.0d
 			y: -3.0d
 		}
 		{
 			dependencies: [
-				"2CB1E7FC5CBF6B2C"
-				"2BE7BA0BE9F2DBC9"
 				"213682223D73A690"
+				"37AA8441440BF673"
 			]
-			description: [
-				"通过&b超级加热&r与&a风元素核心的风暴之力&r，你可以强行融合两种不算太稳定的金属来获得性能更强的合金。"
-				"锌铝合金耐腐蚀、硬度高，可以作为石油化工时代的理想入门材料。"
-			]
+			description: ["锌铝合金耐腐蚀、硬度高，可以作为石油化工时代的理想入门材料。"]
 			id: "55C58DBE6BE16B1C"
 			subtitle: "暴风熔炼"
 			tasks: [{
@@ -1583,7 +1579,7 @@
 				}
 			]
 			title: "组装搅拌机"
-			x: -2.0d
+			x: 0.0d
 			y: 2.0d
 		}
 		{
@@ -1660,8 +1656,8 @@
 				type: "item"
 			}]
 			title: "更高效的生产"
-			x: -2.0d
-			y: 4.0d
+			x: -1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["56F4C82F40DFA8F5"]
@@ -1749,6 +1745,22 @@
 			title: "组装灌装机"
 			x: 7.0d
 			y: -3.0d
+		}
+		{
+			dependencies: [
+				"2BE7BA0BE9F2DBC9"
+				"2CB1E7FC5CBF6B2C"
+			]
+			description: ["通过&b超级加热&r与&a风元素核心的风暴之力&r，你可以强行融合两种不算太稳定的金属来获得性能更强的合金。"]
+			id: "37AA8441440BF673"
+			subtitle: "加压融合"
+			tasks: [{
+				id: "1A21E526FE05FFC6"
+				item: "kubejs:molten_za_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
 		}
 	]
 	subtitle: ["Roaring Machinery"]

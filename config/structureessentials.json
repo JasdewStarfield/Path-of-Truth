@@ -39,15 +39,20 @@
   },
   "autoBiomeCompat": {
     "desc:": "Automatically analyzes present biomes and adjust structure spawning to include fitting ones. Default: true",
-    "autoBiomeCompat": true
-  },
-  "autoBiomeCompatLogging": {
-    "desc:": "Enables logging for the autoBiomeCompat feature. Default: false",
-    "autoBiomeCompatLogging": false
-  },
-  "autoBiomeCompatStrictness": {
-    "desc:": "Sets a modifier for how strict the autoBiomeCompat is, lower allows adding less similar biomes to be added. E.g. 0.5 decreases the similarity requirements by 50% . Default: 1.0",
-    "autoBiomeCompatStrictness": 1.0
+    "enabled": true,
+    "enableLogging": false,
+    "strictness": {
+      "desc:": "Sets a modifier for how strict the autoBiomeCompat is, lower allows adding less similar biomes to be added. E.g. 0.5 decreases the similarity requirements by 50% . Default: 1.0",
+      "autoBiomeCompatStrictness": 1.0
+    },
+    "dimensionWhitelist": {
+      "desc:": "List of allowed dimensions for automatic structure compat, by default only vanilla dimensions",
+      "dimensions": [
+        "minecraft:overworld",
+        "minecraft:the_nether",
+        "minecraft:the_end"
+      ]
+    }
   },
   "warnMissingRegistryEntry": {
     "desc:": "Prevents crashes due to missing registry entries (e.g., changes in mod structure IDs) by converting them into log error messages instead. Default: true",

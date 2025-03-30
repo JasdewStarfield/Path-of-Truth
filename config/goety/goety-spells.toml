@@ -9,6 +9,9 @@
 	#Total number of Redstone Monstrosities an individual player can have, Default: 1
 	#Range: > 0
 	redstoneMonstrosityPlayerLimit = 1
+	#Number of Wither Necromancer Servants that an individual player can have in total, Default: 2
+	#Range: > 1
+	witherNecromancerLimit = 2
 	#Number of Spider Servants that an individual player can have in total, Default: 32
 	#Range: > 1
 	spiderLimit = 32
