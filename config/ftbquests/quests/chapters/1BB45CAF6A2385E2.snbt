@@ -107,7 +107,7 @@
 			subtitle: "由世上最硬的金属聚合而来"
 			title: "工业2"
 			x: -2.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["6D54B104118A0FA7"]
@@ -129,10 +129,14 @@
 				"30D60CA0144F675E"
 				"43F24DD9D0242F26"
 				"38F3E1D924DDE502"
+				"4C8C5F555938B8D3"
+				"7648A6D221C10DEC"
+				"3B85E476CBE11F1B"
 			]
 			description: [
 				"&a【完成后解锁主线章节：** ******】&r"
 				"当你的魔法与工业都走到极致，你将获得这一创造的入门通行证。"
+				"分离后再统合方能使得万象归一。"
 			]
 			id: "1E235F6753976501"
 			rewards: [{
@@ -162,20 +166,24 @@
 			subtitle: "“黑色黄金”"
 			title: "工业3"
 			x: -2.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
 			description: [
-				"只有这种瓶子才能承载的住&a世界极限的魔法力量&r。因此，拥有它之后，你才有能力对于工业和魔法的巅峰进行一些魔法上的操作和提炼。"
+				"只有这种瓶子才能承载的住&a世界极限的魔法力量&r。因此，拥有它之后，你才有能力对万象石进行一些魔法上的操作和提炼。"
 				"相较于曾经&9粗糙地将某些要素通过魔法造物暂时融合&r，现在你可以尝试&5直接掌控其本质&r。"
-				"也许该试试通过炼金仪式提取&b万象石中的魔法特质&r？"
+				"也许该试试通过炼金方式提取&b万象石中的魔法特质&r？"
+				"&o&1*成为斯内普教授吧！&r&r"
+				"尽管瓶子永恒，但&e你的灵魂渴望世界的本源特质&r。点击右键饮用即会将特质注入自身。"
+				""
+				"&o&7*如果你饮用对应的特质，那么你可以获得相应的永恒加成。但如果你的灵魂崩毁后再通过方尖碑重聚，那么加成仍然会消失。&r&r"
 			]
 			icon: "create_enchantment_industry:hyper_experience_bottle"
 			id: "31B7298A33ACA4A7"
 			shape: "circle"
 			size: 1.0d
-			subtitle: "最强瓶子"
+			subtitle: "最坚固的容器"
 			tasks: [{
 				id: "404A61ACF249380F"
 				item: "kubejs:reinforced_bottle"
@@ -189,7 +197,7 @@
 			dependencies: ["31B7298A33ACA4A7"]
 			description: [
 				"生与死之间的那一丝规则&a本质是平衡&r，自然也正是因为互相制约的相对平衡才能稳定发展。"
-				"通过二次提炼，你将能&b凝缩平衡的精髓&r——也可以通过&d服用&r来&c部分掌握平衡的本质&r。"
+				"通过元素进行二次提炼，你将能&b凝缩平衡的精髓&r——也可以通过&d服用&r来&c部分掌握平衡的本质&r。"
 			]
 			hide_until_deps_complete: true
 			id: "43F24DD9D0242F26"
@@ -222,7 +230,7 @@
 			}]
 			title: "熔炼魔魂"
 			x: 2.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["31B7298A33ACA4A7"]
@@ -241,7 +249,7 @@
 			}]
 			title: "触摸虚无"
 			x: 2.0d
-			y: 1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -268,8 +276,8 @@
 				title: "合并材料2"
 				type: "checkmark"
 			}]
-			x: -0.5d
-			y: 1.0d
+			x: -1.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -282,8 +290,8 @@
 				title: "合并材料3"
 				type: "checkmark"
 			}]
-			x: 0.5d
-			y: 1.0d
+			x: 1.0d
+			y: 2.0d
 		}
 	]
 	subtitle: ["Mastery of Tech \\& Magic"]

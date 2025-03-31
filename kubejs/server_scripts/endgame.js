@@ -298,6 +298,33 @@ ServerEvents.recipes(event => {
 */
   //魔法侧终极修改
   
+  //头像复制
+  event.shapeless(Item.of('kubejs:midnight',4),
+        [
+            'goety:philosophers_stone',
+            'kubejs:raw_world_base',
+            'minecraft:echo_shard',
+            'aquamirae:ship_graveyard_echo'
+        ]
+    )
+
+  //永固之瓶制作
+  event.shaped(
+    Item.of('kubejs:reinforced_bottle', 8),
+    [
+        'AEC',
+        'BDB',
+        'CEA'
+    ],
+    {
+        B: 'botania:ender_air_bottle',
+        A: 'minecraft:netherite_ingot',
+        D: 'kubejs:raw_world_base',
+        C: 'botania:gaia_ingot',
+        E: 'kubejs:leyden_jar'
+    }
+  )
+
   //亡灵火盆催化虚空精华
   event.custom({
     "type": "goety:brazier",
@@ -319,7 +346,48 @@ ServerEvents.recipes(event => {
     "result": {
         "item": 'kubejs:potion_of_void'
     }
-})
+  })
+
+  //花药台合成平衡精华
+  event.recipes.botania.petal_apothecary('kubejs:potion_of_balance', 
+    [
+        'kubejs:reinforced_bottle',
+        'kubejs:raw_world_base',
+        'kubejs:earth_elemental_core',
+        'kubejs:water_elemental_core',
+        'kubejs:fire_elemental_core',
+        'kubejs:wind_elemental_core'
+    ]
+  )
+
+  //魔法仪式合成天赋精华
+  event.custom({
+    "type": "goety:ritual",
+    "ritual_type": "goety:craft",//仪式主类型（制作）
+    "activation_item": {
+        "item": 'kubejs:reinforced_bottle'//中心物品
+    },
+    "craftType": "magic",//仪式副类型（魔法）
+    "soulCost": 1000,//每秒消耗
+    "duration": 50,//时长
+    "ingredients": [
+        {
+            "item": 'bosses_of_mass_destruction:ancient_anima'
+        },
+        {
+            "item": 'goety:forbidden_scroll'
+        },
+        {
+            "item": 'kubejs:raw_world_base'
+        },
+        {
+            "item": 'irons_spellbooks:legendary_ink'
+        }
+    ],
+    "result": {
+        "item": 'kubejs:potion_of_talent'//实际产出
+    }
+  })
 
   //炼成复制火花
   event.custom({

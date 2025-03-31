@@ -176,7 +176,7 @@
 			]
 			hide_until_deps_complete: true
 			id: "59C668DE4E479AD9"
-			shape: "gear"
+			shape: "hexagon"
 			size: 2.0d
 			subtitle: "走出最后一段路。"
 			tasks: [{
@@ -208,11 +208,17 @@
 		{
 			dependencies: ["59C668DE4E479AD9"]
 			description: [
+				"&o&d压入过量的火焰后……&r&r"
 				"现在，只要你拥有某件物品，那么你将永远不再缺乏它。"
 				"使用方法与一般的多媒体火花一致。"
 			]
 			hide_until_deps_complete: true
 			id: "00BBB61C39207A0F"
+			rewards: [{
+				id: "7BFEA6F05F3C4932"
+				item: "botania:corporea_crystal_cube"
+				type: "item"
+			}]
 			subtitle: "唯一即永恒。"
 			tasks: [{
 				id: "387353577E838962"
@@ -313,7 +319,7 @@
 				""
 				"这看起来&5似乎不太可能实现&r……但你手中的工具也不太可能出现在人类双手上。"
 				"{@pagebreak}"
-				"也许应该看看那些&3融合了工业与魔法&r的独特力量是否能让一切归于平静。"
+				"漱石枕流，天地为家。"
 				""
 				"&o&7世界因你入眠而终于平静下来。&r&r"
 			]
