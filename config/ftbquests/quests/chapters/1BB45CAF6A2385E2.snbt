@@ -30,7 +30,7 @@
 			rotation: 0.0d
 			width: 1.393732970027248d
 			x: 0.0d
-			y: 0.5d
+			y: -2.0d
 		}
 	]
 	order_index: 0
@@ -44,20 +44,19 @@
 			description: [
 				"如果你发现你缺少某些材料……请确保你已经做完了整个工业线和魔法线。"
 				""
-				"现在，喝杯咖啡平静一下，做好心理准备，因为你即将触及游戏的边界，触及“真理”。（好吧，也没有"
-				"那么快）"
+				"现在，喝杯咖啡平静一下，做好心理准备，因为你即将触及游戏的边界，&b触及“真理”&r。（好吧，也没有那么快）"
 				""
-				"另外你也许会发现，这一章的工业和魔法线已经合二为一了。某种意义上来讲，工业和魔法的最后必将趋于统一，因为本质上都是你探求真理的工具。"
+				"通过工业与魔法的聚合，你获得了一种&a流光溢彩的……石头&r。然而怎么把其中的那一丝真理分离出来呢？"
 			]
 			hide_until_deps_complete: true
-			icon: "bloodmagic:dungeon_alternator"
+			icon: "kubejs:raw_world_base"
 			id: "0D0BEC03C1B26CA3"
 			rewards: [{
 				id: "0E96E7EF246B99DD"
 				item: "create_confectionery:soothing_hot_chocolate"
 				type: "item"
 			}]
-			shape: "gear"
+			shape: "pentagon"
 			size: 2.0d
 			subtitle: "机械与魔法的终末是……无限。"
 			tasks: [
@@ -70,6 +69,11 @@
 				{
 					id: "5CAA50EB0779626E"
 					item: "kubejs:midnight"
+					type: "item"
+				}
+				{
+					id: "2DC3C5AED4E4CE5C"
+					item: "kubejs:raw_world_base"
 					type: "item"
 				}
 			]
@@ -88,17 +92,12 @@
 			]
 			hide_until_deps_complete: true
 			id: "6D54B104118A0FA7"
-			subtitle: "工业之暗"
-			tasks: [{
-				id: "7CFCDA07E478D590"
-				item: "createchromaticreturn:shadow_steel"
-				type: "item"
-			}]
-			x: -3.0d
-			y: -4.0d
+			subtitle: "工业中转"
+			x: -4.0d
+			y: -3.0d
 		}
 		{
-			dependencies: ["38F3E1D924DDE502"]
+			dependencies: ["6D54B104118A0FA7"]
 			description: [
 				"看配方就知道为什么它可以让暗影刚装备永不磨损了（确信）"
 				""
@@ -106,70 +105,30 @@
 			]
 			id: "0D2EEDEACB542342"
 			subtitle: "由世上最硬的金属聚合而来"
-			tasks: [{
-				id: "12E64818FC7BF260"
-				item: "createchromaticreturn:durasteel_ingot"
-				type: "item"
-			}]
-			title: "硬钢锭"
-			x: -2.5d
-			y: -2.0d
+			title: "工业2"
+			x: -2.0d
+			y: -1.0d
 		}
 		{
-			dependencies: ["38F3E1D924DDE502"]
-			description: ["这其实挺魔法的：把这样多的机械压制成一块金属锭……大概是金属？"]
-			id: "3CA3B66481E3AFF9"
-			subtitle: "由涌动着澎湃动力的工业机械组合而来"
-			tasks: [{
-				id: "04168B13D9B9D351"
-				item: "createchromaticreturn:industrium_ingot"
-				type: "item"
-			}]
-			title: "工业合金"
-			x: -3.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["3CA3B66481E3AFF9"]
-			description: ["让你的暗影钢工具可以成为扳手！"]
-			id: "6AFD6EB681F51557"
-			subtitle: "扳手强化"
-			tasks: [{
-				id: "536798D2D0A6709C"
-				item: "createchromaticreturn:industrium_book"
-				type: "item"
-			}]
-			title: "工业结晶"
-			x: 0.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["0D2EEDEACB542342"]
+			dependencies: ["6D54B104118A0FA7"]
 			description: [
 				"可以让你的暗影钢工具——以及砂纸——永恒存在！"
 				"也是终末锭的必须材料之一。"
 			]
 			id: "5B74E17C06C14B35"
 			subtitle: "永恒强化"
-			tasks: [{
-				id: "572B875454198CB8"
-				item: "createchromaticreturn:durasteel_book"
-				type: "item"
-			}]
-			title: "不破之力"
-			x: -2.5d
-			y: 0.0d
+			title: "工业1"
+			x: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
-				"6AFD6EB681F51557"
 				"5B74E17C06C14B35"
 				"0D2EEDEACB542342"
-				"3CA3B66481E3AFF9"
 				"39E40DE0BFC3304A"
-				"6D54B104118A0FA7"
 				"30D60CA0144F675E"
 				"43F24DD9D0242F26"
+				"38F3E1D924DDE502"
 			]
 			description: [
 				"&a【完成后解锁主线章节：** ******】&r"
@@ -181,21 +140,14 @@
 				item: "immersiveengineering:shader_bag_epic"
 				type: "item"
 			}]
-			shape: "gear"
+			shape: "pentagon"
 			size: 2.0d
-			subtitle: "代表创造的紫色光芒"
-			tasks: [
-				{
-					id: "2F6629F5CBFC7050"
-					item: "createchromaticreturn:multiplite_ingot"
-					type: "item"
-				}
-				{
-					id: "76E692632B6C4F3A"
-					item: "createchromaticreturn:antiplite_ingot"
-					type: "item"
-				}
-			]
+			subtitle: "万象归一"
+			tasks: [{
+				id: "2CE3E52DCD6FE61D"
+				item: "kubejs:world_base_gem"
+				type: "item"
+			}]
 			title: "【终点】多模态"
 			x: 0.0d
 			y: -1.0d
@@ -206,23 +158,18 @@
 				"本游戏最珍贵的黑色液体之一……"
 				"当然制作方式没那么难，但你会发现……要用很多。"
 			]
-			icon: "createchromaticreturn:shadow_essence_bucket"
 			id: "38F3E1D924DDE502"
 			subtitle: "“黑色黄金”"
-			tasks: [{
-				id: "626B0DD095892643"
-				item: "createchromaticreturn:shadow_essence_bucket"
-				type: "item"
-			}]
-			title: "暗影精华"
-			x: -5.0d
-			y: -1.0d
+			title: "工业3"
+			x: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
 			description: [
 				"只有这种瓶子才能承载的住&a世界极限的魔法力量&r。因此，拥有它之后，你才有能力对于工业和魔法的巅峰进行一些魔法上的操作和提炼。"
-				"相较于曾经&b粗糙的将某些要素通过魔法造物暂时融合&r，现在你可以尝试&5直接掌控其本质&r。"
+				"相较于曾经&9粗糙地将某些要素通过魔法造物暂时融合&r，现在你可以尝试&5直接掌控其本质&r。"
+				"也许该试试通过炼金仪式提取&b万象石中的魔法特质&r？"
 			]
 			icon: "create_enchantment_industry:hyper_experience_bottle"
 			id: "31B7298A33ACA4A7"
@@ -235,8 +182,8 @@
 				type: "item"
 			}]
 			title: "浓缩世界"
-			x: 3.5d
-			y: -1.0d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["31B7298A33ACA4A7"]
@@ -255,13 +202,13 @@
 				type: "item"
 			}]
 			title: "合并生死"
-			x: 1.0d
-			y: -2.5d
+			x: 2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["31B7298A33ACA4A7"]
 			description: [
-				"庞大的魔力与强大的灵魂代表着&d个体天赋的巅峰&r。现如今，你可以通过一些辅助材料，将其&6蕴藏的那一丝天赋&r提炼而出。"
+				"庞大的魔力与强大的灵魂代表着&d个体天赋的巅峰&r。现如今，你可以通过一些辅助材料，将其&6蕴藏的那一丝天赋&r转化而出。"
 				"可以饮用以&e提升自身的天赋&r。"
 			]
 			id: "39E40DE0BFC3304A"
@@ -293,8 +240,50 @@
 				type: "item"
 			}]
 			title: "触摸虚无"
-			x: 1.0d
-			y: 0.5d
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"43F24DD9D0242F26"
+				"5B74E17C06C14B35"
+			]
+			id: "4C8C5F555938B8D3"
+			tasks: [{
+				id: "5A9216FE0D635E39"
+				title: "合并材料1"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"38F3E1D924DDE502"
+				"39E40DE0BFC3304A"
+			]
+			id: "3B85E476CBE11F1B"
+			tasks: [{
+				id: "147DA70806CCBCAD"
+				title: "合并材料2"
+				type: "checkmark"
+			}]
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0D2EEDEACB542342"
+				"30D60CA0144F675E"
+			]
+			id: "7648A6D221C10DEC"
+			tasks: [{
+				id: "121B2B4EC3A92741"
+				title: "合并材料3"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 1.0d
 		}
 	]
 	subtitle: ["Mastery of Tech \\& Magic"]

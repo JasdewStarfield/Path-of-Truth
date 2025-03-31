@@ -2,6 +2,10 @@ StartupEvents.registry('item', (event) => {
   //书
   //event.create("incomplete_industrium_book", 'create:sequenced_assembly').displayName('Incomplete Industrium Infused Book')
   //event.create("incomplete_durasteel_book", 'create:sequenced_assembly').displayName('Incomplete Durasteel Infused Book')
+  
+  //注册终末起始物品与融合产物
+  event.create("raw_world_base").displayName('Raw World Base').texture('kubejs:item/final_items/raw_world_base').tooltip('「一即是万」').rarity('uncommon')
+  event.create("world_base_gem").displayName('World Base Gem').texture('kubejs:item/final_items/world_base_gem').tooltip('「万象归一」').rarity('epic')
 
   let buran = (tooltip, texture) => {
     event.create("buran").displayName('Buran').tooltip(tooltip).texture(texture).rarity('epic')

@@ -5,7 +5,7 @@
 	filename: "24C2242397E3BB49"
 	group: "60E63434E814893B"
 	hide_quest_details_until_startable: true
-	icon: "createchromaticreturn:multiplite_tube"
+	icon: "botania:world_seed"
 	id: "24C2242397E3BB49"
 	images: [
 		{
@@ -152,8 +152,8 @@
 			]
 			id: "6D9B7D2CD86693AF"
 			rewards: [{
-				id: "664060AFCACAC5B2"
-				item: "snowyspirit:wreath"
+				id: "27CA96EC883E8546"
+				item: "biomeswevegone:witch_hazel_blossom"
 				type: "item"
 			}]
 			shape: "diamond"
@@ -164,7 +164,7 @@
 				item: "create:handheld_worldshaper"
 				type: "item"
 			}]
-			title: "【终点】神的力量"
+			title: "【终点】于此创世"
 			x: 0.0d
 			y: -3.0d
 		}
@@ -172,26 +172,19 @@
 			dependencies: ["1E235F6753976501"]
 			description: [
 				"越到末尾的章节，节点就越少）"
-				"因为你不需要我再给你讲故事了，你需要的就是走下去，因为马上你就能看到了。"
+				"因为你不需要任何的故事了，你需要的就是走下去，因为马上你就能看到了。"
 			]
 			hide_until_deps_complete: true
 			id: "59C668DE4E479AD9"
 			shape: "gear"
 			size: 2.0d
 			subtitle: "走出最后一段路。"
-			tasks: [
-				{
-					id: "2622B81FA3F7DFD7"
-					item: "createchromaticreturn:multiplite_ingot"
-					type: "item"
-				}
-				{
-					id: "3AC7042677FA340D"
-					item: "createchromaticreturn:antiplite_ingot"
-					type: "item"
-				}
-			]
-			title: "【起点】真理之锭"
+			tasks: [{
+				id: "7E95C6C240E4D200"
+				item: "kubejs:world_base_gem"
+				type: "item"
+			}]
+			title: "【起点】万象之源"
 			x: 0.0d
 			y: 7.0d
 		}
@@ -261,7 +254,7 @@
 		}
 		{
 			dependencies: ["59C668DE4E479AD9"]
-			description: ["在创造的力量之下，你的烈焰人将不再需要额外的燃料，因为它们通过蛋糕触碰了部分永恒。"]
+			description: ["在世界的力量之下，你的烈焰人将不再需要额外的燃料，因为它们通过蛋糕触碰了部分永恒。"]
 			hide_until_deps_complete: true
 			id: "3111841E3A7C8262"
 			rewards: [{
@@ -320,16 +313,14 @@
 				""
 				"这看起来&5似乎不太可能实现&r……但你手中的工具也不太可能出现在人类双手上。"
 				"{@pagebreak}"
-				"你需要一种可以让你&9精确获得机器&r的工具……"
+				"也许应该看看那些&3融合了工业与魔法&r的独特力量是否能让一切归于平静。"
 				""
-				"也许应该看看那些&3融合了工业与魔法&r的独特力量。"
-				""
-				"&o&7大概这个终年覆雪的世界也是一个更大的雪景球吧。&r&r"
+				"&o&7世界因你入眠而终于平静下来。&r&r"
 			]
 			id: "43D8F6D77823709C"
 			rewards: [{
-				id: "6FF83ED6C18B4E8B"
-				item: "snowyspirit:snow_globe"
+				id: "64E1AC164C05ED71"
+				item: "botania:world_seed"
 				type: "item"
 			}]
 			shape: "hexagon"

@@ -212,44 +212,24 @@ ServerEvents.recipes(event => {
   })
   event.recipes.vintageimprovements.laser_cutting(Item.of('kubejs:electronic_circuit_board').withChance(0.5), ['#forge:plates/plastic']).energyCost(12800).maxChargeRate(3200)
 
-  /*
-  //多彩化合物
-  event.remove({ id: 'createchromaticreturn:chromatic_compound_recipe' })
-  event.shapeless(
-    Item.of('createchromaticreturn:chromatic_compound',1),
+  //原始万象石
+  event.shaped(
+    Item.of('kubejs:raw_world_base'),
     [
-      'kubejs:buran',
-      'kubejs:midnight'
-    ]
-  )
+        ' A ',
+        'BCD',
+        ' E '
+    ],
     {
-        "fluid": "kubejs:heavy_oil",
-        "amount": 25
-      },
-      {
-        "fluid": "kubejs:lubricant",
-        "amount": 25
-      },
-      {
-        "fluid": "createdieselgenerators:diesel",
-        "amount": 50
-      },
-      {
-        "fluid": "createdieselgenerators:gasoline",
-        "amount": 50
-      },
-      {
-        "fluid": "kubejs:lpg",
-        "amount": 50
-      }
+        B: 'kubejs:midnight',
+        E: 'createnuclear:enriched_yellowcake',
+        D: 'kubejs:buran',
+        C: 'goety:philosophers_stone',
+        A: 'alexsmobs:farseer_arm'
+    }
+  )
 
-  //移除一些原有配方
-  event.remove({ id: 'createchromaticreturn:bedrock_shard_crushing' })
-  event.remove({ id: 'createchromaticreturn:andesite_component_recipe' })
-  event.remove({ id: 'createchromaticreturn:brass_component_recipe' })
-  event.remove({ input: 'createchromaticreturn:andesite_component' })
-  event.remove({ input: 'createchromaticreturn:brass_component' })
-
+  /*
   //黄铜，安山组件配方
   event.recipes.create.crushing(Item.of('create:andesite_alloy'), 'createchromaticreturn:andesite_component')
   event.recipes.create.crushing(Item.of('create:brass_ingot'), 'createchromaticreturn:brass_component')
@@ -315,34 +295,46 @@ ServerEvents.recipes(event => {
     event.recipes.createDeploying('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', 'minecraft:paper']),
     event.recipes.createFilling('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', Fluid.of('create_enchantment_industry:hyper_experience',50)])
   ]).transitionalItem('kubejs:incomplete_durasteel_book').loops(2)
-
-  //魔法侧终极锭修改
-  //光辉石
-  event.shaped(Item.of('createchromaticreturn:refined_radiance',1),
-      [' A ',
-       'BCD',
-       ' E '],
-      {
-          A:'irons_spellbooks:lesser_spell_slot_upgrade',
-          B:'irons_spellbooks:arcane_ingot',
-          C:'createchromaticreturn:chromatic_compound',
-          D:'irons_spellbooks:shriving_stone',
-          E:'irons_spellbooks:upgrade_orb'
-      }
-  )
-  //删除光辉流体原有配方
-  event.remove({id:'createchromaticreturn:refined_mixture_recipe'})
-  //添加融化配方
+*/
+  //魔法侧终极修改
   
+  //亡灵火盆催化虚空精华
+  event.custom({
+    "type": "goety:brazier",
+    "soulCost": 10000,
+    "ingredients": [
+        {
+            "item": 'kubejs:reinforced_bottle'
+        },
+        {
+            "item": 'kubejs:raw_world_base'
+        },
+        {
+            "item": 'bosses_of_mass_destruction:void_thorn'
+        },
+        {
+            "item": 'goety:shadow_essence'
+        }
+    ],
+    "result": {
+        "item": 'kubejs:potion_of_void'
+    }
+})
 
-  //添加随机生成两种锭的配方，两种液体注册名的版本
-  
   //炼成复制火花
+  event.custom({
+        "type": "goety:cursed_infuser_recipes",
+        "ingredient": {
+            "item": 'kubejs:world_base_gem'
+        },
+        "result": 'botania:corporea_spark_creative',
+        "cookingTime": 2400
+  })
   
   //符文祭坛炼制永恒魔力池
   event.recipes.botania.runic_altar('botania:creative_pool',
     [
-        'createchromaticreturn:multiplite_ingot',
+        'kubejs:world_base_gem',
         'botania:fabulous_pool',
         'botania:mana_bomb',
         'create:creative_fluid_tank'
@@ -350,23 +342,6 @@ ServerEvents.recipes(event => {
     100000
   )
 
-  //符文祭坛炼制丝触书籍
-  event.recipes.botania.runic_altar('createchromaticreturn:silkstrum_book',
-    [
-        'createchromaticreturn:silkstrum', 
-        'bosses_of_mass_destruction:void_thorn',
-        'bosses_of_mass_destruction:blazing_eye',
-        'irons_spellbooks:gold_spell_book',
-        'bosses_of_mass_destruction:ancient_anima',
-        'bosses_of_mass_destruction:obsidian_heart'
-    ],
-    100000
-  )
-
-  //丝绸书三本复制四本
-
-  */
- 
 
   //终极彩蛋：可睡觉的床
   event.remove({id:'undergarden:depthrock_bed'})
@@ -374,17 +349,7 @@ ServerEvents.recipes(event => {
   event.recipes.botania.runic_altar('undergarden:depthrock_bed', 
     [
       'create:handheld_worldshaper',
-      'immersiveengineering:coke_oven', 
-      'immersiveengineering:blast_furnace',
-      'immersiveengineering:advanced_blast_furnace', 
-      'immersiveengineering:metal_press',
-      'immersiveengineering:crusher', 
-      'immersiveengineering:fermenter',
-      'immersiveengineering:squeezer', 
-      'immersiveengineering:diesel_generator',
-      'immersiveengineering:arc_furnace', 
-      'immersiveengineering:excavator',
-      'immersiveengineering:bucket_wheel'
+      'kubejs:world_base_gem'
     ], 
     50000
   )
