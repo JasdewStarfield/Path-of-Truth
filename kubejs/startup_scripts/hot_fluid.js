@@ -41,7 +41,14 @@ let Registries = Java.loadClass('net.minecraft.core.registries.Registries')
 */
 global.entitytick = event => {
   const { entity } = event
-  let acidDamageSource = DamageSource(global.getFromRegistry(Registries.DAMAGE_TYPE, "immersiveengineering:acid"))
+  if (!global.entitytick.acidDamageSource) {
+    try {
+      global.entitytick.acidDamageSource = DamageSource(global.getFromRegistry(Registries.DAMAGE_TYPE, "immersiveengineering:acid"))
+    } catch(e) {
+      return
+    }
+  }
+  let acidDamageSource = global.entitytick.acidDamageSource
   hotFluids.forEach((fluidName) => {
     if (entity.isInFluidType(Fluid.of(fluidName).fluid.fluidType)) {
       entity.lavaHurt()
@@ -73,6 +80,7 @@ global.entitytick = event => {
     }
   })
 }
+global.entitytick.acidDamageSource = null
 
 global.getFromRegistry = (regKey, id) => {
   var Level = Utils.server.overworld()
