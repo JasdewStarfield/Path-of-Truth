@@ -105,6 +105,11 @@
 			]
 			id: "0D2EEDEACB542342"
 			subtitle: "由世上最硬的金属聚合而来"
+			tasks: [{
+				id: "34A6845464DFC520"
+				item: "kubejs:code_destruction"
+				type: "item"
+			}]
 			title: "工业2"
 			x: -2.0d
 			y: -0.5d
@@ -117,6 +122,11 @@
 			]
 			id: "5B74E17C06C14B35"
 			subtitle: "永恒强化"
+			tasks: [{
+				id: "039FBCBAFB5C60C3"
+				item: "kubejs:code_perfection"
+				type: "item"
+			}]
 			title: "工业1"
 			x: -2.0d
 			y: -3.0d
@@ -164,6 +174,11 @@
 			]
 			id: "38F3E1D924DDE502"
 			subtitle: "“黑色黄金”"
+			tasks: [{
+				id: "4AE3DE96FF481631"
+				item: "kubejs:code_formation"
+				type: "item"
+			}]
 			title: "工业3"
 			x: -2.0d
 			y: 2.0d

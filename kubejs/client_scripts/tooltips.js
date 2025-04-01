@@ -25,6 +25,10 @@ ItemEvents.tooltip(e => {
     e.add(["kubejs:potion_of_talent"], [Text.blue({translate:'item.kubejs.potion_of_talent.desc'})])
     e.add(["kubejs:potion_of_balance"], [Text.blue({translate:'item.kubejs.potion_of_balance.desc'})])
 
+    e.add(["kubejs:code_destruction"], [Text.red({translate:'item.kubejs.code_destruction.desc'})])
+    e.add(["kubejs:code_formation"], [Text.red({translate:'item.kubejs.code_formation.desc'})])
+    e.add(["kubejs:code_perfection"], [Text.red({translate:'item.kubejs.code_perfection.desc'})])
+
     e.add(["kubejs:broken_snowcap_oven"], [Text.yellow({translate:'item.kubejs.broken_snowcap_oven.desc'})])
 
     e.add(["minecraft:amethyst_shard"], [Text.aqua({translate:'item.kubejs.amethyst_shard.desc'})])

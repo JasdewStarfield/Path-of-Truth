@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
     let inter2 = 'kubejs:incomplete_buran'
     event.recipes.create.sequenced_assembly([
         'kubejs:buran'
-    ], 'immersiveengineering:plate_duroplast', [
+    ], 'create:crafting_blueprint', [
         event.recipes.createDeploying(inter2, [inter2, 'kubejs:andesite_engineering']),
         event.recipes.createDeploying(inter2, [inter2, 'kubejs:fluid_engineering']),
         event.recipes.createDeploying(inter2, [inter2, 'kubejs:precise_engineering']),
@@ -103,5 +103,5 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:rs_engineering']),
         event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:heavy_engineering']),
         event.recipes.createDeploying(inter2, [inter2, 'kubejs:electronic_engineering']),
-    ]).transitionalItem(inter2).loops(8)
+    ]).transitionalItem(inter2).loops(4)
 })
