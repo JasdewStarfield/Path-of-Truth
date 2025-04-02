@@ -1,4 +1,5 @@
 StartupEvents.registry('item', (event) => {
+	const INFINITE = Java.loadClass("java.lang.Integer").MAX_VALUE;
 	//元素核心
 	event.create("earth_elemental_core").displayName('Earth Elemental Core').texture('kubejs:item/elemental_core/earth').rarity('uncommon')
 	event.create("water_elemental_core").displayName('Water Elemental Core').texture('kubejs:item/elemental_core/water').rarity('rare')
@@ -22,8 +23,8 @@ StartupEvents.registry('item', (event) => {
     	.use((level, player, hand) => true)
 		.finishUsing((itemstack, level, entity) => {
 			let effects = entity.potionEffects
-			effects.add('cold_sweat:grace',2147483647,0)
-			effects.add('irons_spellbooks:oakskin',2147483647,2)
+			effects.add('cold_sweat:grace', INFINITE, 0, true, false)
+			effects.add('irons_spellbooks:oakskin', INFINITE, 2, true, false)
 			entity.give('kubejs:reinforced_bottle')
 		})
 
@@ -37,8 +38,8 @@ StartupEvents.registry('item', (event) => {
     	.use((level, player, hand) => true)
 		.finishUsing((itemstack, level, entity) => {
 			let effects = entity.potionEffects
-			effects.add('minecraft:night_vision',2147483647,0)
-			effects.add('irons_spellbooks:echoing_strikes',2147483647,4)
+			effects.add('minecraft:night_vision', INFINITE, 0, true, false)
+			effects.add('irons_spellbooks:echoing_strikes', INFINITE, 4, true, false)
 			entity.give('kubejs:reinforced_bottle')
 		})
 		
@@ -52,8 +53,8 @@ StartupEvents.registry('item', (event) => {
     	.use((level, player, hand) => true)
 		.finishUsing((itemstack, level, entity) => {
 			let effects = entity.potionEffects
-			effects.add('goety:insight',2147483647,2)
-			effects.add('irons_spellbooks:instant_mana',2147483647,2)
+			effects.add('goety:insight', INFINITE, 2, true, false)
+			effects.add('irons_spellbooks:instant_mana', INFINITE, 2, true, false)
 			entity.give('kubejs:reinforced_bottle')
 		})
 })

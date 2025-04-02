@@ -8,9 +8,18 @@ StartupEvents.registry('item', (event) => {
   event.create("world_base_gem").displayName('World Base Gem').texture('kubejs:item/final_items/world_base_gem').tooltip('「万象归一」').rarity('epic')
 
   //工业终极代码
+  event.create("code_vessel").displayName('Code Vessel').rarity('uncommon')
   event.create("code_formation").displayName('Code: Formation').rarity('epic')
   event.create("code_destruction").displayName('Code: Destruction').rarity('epic')
   event.create("code_perfection").displayName('Code: Perfection').rarity('epic')
+  event.create("incomplete_code_formation", 'create:sequenced_assembly').displayName('Incomplete Code: Formation').texture('kubejs:item/incomplete_code').rarity('rare')
+  event.create("incomplete_code_destruction", 'create:sequenced_assembly').displayName('Incomplete Code: Destruction').texture('kubejs:item/incomplete_code').rarity('rare')
+  event.create("incomplete_code_perfection", 'create:sequenced_assembly').displayName('Incomplete Code: Perfection').texture('kubejs:item/incomplete_code').rarity('rare')
+
+  //联合饰品
+  event.create("arcane_charger").displayName('Arcane Charger').rarity('epic')
+  event.create("soul_battery").displayName('Soul Battery').rarity('epic')
+  event.create("divine_shield_system").displayName('Divine Shield System').rarity('epic')
 
   let buran = (tooltip, texture) => {
     event.create("buran").displayName('Buran').tooltip(tooltip).texture(texture).rarity('epic')

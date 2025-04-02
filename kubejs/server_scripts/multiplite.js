@@ -18,7 +18,7 @@ ServerEvents.loaded(e => {
 })
 
 ServerEvents.recipes(event => {
-
+    /*
     let seed = getCachedSeed()
     if (!seed) return 'wait for reload'
     let filterWan = (r, c) => {
@@ -75,4 +75,5 @@ ServerEvents.recipes(event => {
             materialMapShow,
         )
         .id(`endgamexxx`)
+    */
 })

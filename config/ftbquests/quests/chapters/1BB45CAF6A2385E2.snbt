@@ -93,6 +93,11 @@
 			hide_until_deps_complete: true
 			id: "6D54B104118A0FA7"
 			subtitle: "工业中转"
+			tasks: [{
+				id: "573FB5488D66E094"
+				item: "kubejs:code_vessel"
+				type: "item"
+			}]
 			x: -4.0d
 			y: -3.0d
 		}
@@ -110,7 +115,7 @@
 				item: "kubejs:code_destruction"
 				type: "item"
 			}]
-			title: "工业2"
+			title: "毁灭"
 			x: -2.0d
 			y: 0.0d
 		}
@@ -127,7 +132,7 @@
 				item: "kubejs:code_perfection"
 				type: "item"
 			}]
-			title: "工业1"
+			title: "完美"
 			x: -2.0d
 			y: -3.0d
 		}
@@ -190,7 +195,7 @@
 				item: "kubejs:code_formation"
 				type: "item"
 			}]
-			title: "工业3"
+			title: "构成"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -205,7 +210,7 @@
 				""
 				"&o&7*如果你饮用对应的特质，那么你可以获得相应的永恒加成。但如果你的灵魂崩毁后再通过方尖碑重聚，那么加成仍然会消失。&r&r"
 			]
-			icon: "create_enchantment_industry:hyper_experience_bottle"
+			icon: "kubejs:reinforced_bottle"
 			id: "31B7298A33ACA4A7"
 			shape: "circle"
 			size: 1.0d
@@ -281,9 +286,9 @@
 			dependencies: ["0D0BEC03C1B26CA3"]
 			id: "4C8C5F555938B8D3"
 			tasks: [{
-				id: "5A9216FE0D635E39"
-				title: "合并材料1"
-				type: "checkmark"
+				id: "716B01796A9493F4"
+				item: "kubejs:divine_shield_system"
+				type: "item"
 			}]
 			x: 0.0d
 			y: -2.5d
@@ -292,9 +297,9 @@
 			dependencies: ["0D0BEC03C1B26CA3"]
 			id: "3B85E476CBE11F1B"
 			tasks: [{
-				id: "147DA70806CCBCAD"
-				title: "合并材料2"
-				type: "checkmark"
+				id: "3CC5DB57D18A4894"
+				item: "kubejs:soul_battery"
+				type: "item"
 			}]
 			x: -2.0d
 			y: -1.5d
@@ -303,9 +308,9 @@
 			dependencies: ["0D0BEC03C1B26CA3"]
 			id: "7648A6D221C10DEC"
 			tasks: [{
-				id: "121B2B4EC3A92741"
-				title: "合并材料3"
-				type: "checkmark"
+				id: "78C8AE837008612D"
+				item: "kubejs:arcane_charger"
+				type: "item"
 			}]
 			x: 2.0d
 			y: -1.5d
