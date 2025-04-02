@@ -18,7 +18,7 @@ ServerEvents.loaded(e => {
 })
 
 ServerEvents.recipes(event => {
-/*
+
     let seed = getCachedSeed()
     if (!seed) return 'wait for reload'
     let filterWan = (r, c) => {
@@ -32,7 +32,6 @@ ServerEvents.recipes(event => {
     }
 
     let sudokus = [
-        // [answer, hollowed]
         GenSudoku(
             seed,
             filterByTemplate([
@@ -46,95 +45,34 @@ ServerEvents.recipes(event => {
                 ' x  x  x ',
                 '  xxxxx  ',
             ]),
-        ),
-        GenSudoku(
-            -seed,
-            filterByTemplate([
-                'xxx   xxx',
-                'xxx   xxx',
-                'xxx   xxx',
-                '   xxx   ',
-                '   xxx   ',
-                '   xxx   ',
-                'xxx   xxx',
-                'xxx   xxx',
-                'xxx   xxx',
-            ]),
-        ),
+        )
     ]
     let materialMap = {
-        '1': 'createchromaticreturn:glowing_ingot',
-        '2': 'createchromaticreturn:refined_radiance',
-        '3': 'createchromaticreturn:silkstrum',
-        '4': 'createchromaticreturn:silkstrum_book',
-        '5': 'createchromaticreturn:industrium_book',
-        '6': 'createchromaticreturn:durasteel_book',
-        '7': 'createchromaticreturn:shadow_steel',
-        '8': 'createchromaticreturn:industrium_ingot',
-        '9': 'createchromaticreturn:durasteel_ingot',
+        '1': 'kubejs:code_formation',
+        '2': 'kubejs:code_destruction',
+        '3': 'kubejs:code_perfection',
+        '4': 'kubejs:potion_of_balance',
+        '5': 'kubejs:potion_of_void',
+        '6': 'kubejs:potion_of_talent',
+        '7': 'botania:manasteel_ingot',
+        '8': 'botania:mana_diamond',
+        '9': 'botania:mana_pearl',
     }
     let materialMapShow = Object.assign({ _: 'minecraft:barrier' }, materialMap)
 
-    //两种终极锭
-    event.recipes.create.mechanical_crafting('createchromaticreturn:multiplite_ingot', [
-        'AIHGFEDCB',
-        'BAIHGFEDC',
-        'CBAIHGFED',
-        'DCBAIHGFE',
-        'EDCBAIHGF',
-        'FEDCBAIHG',
-        'GFEDCBAIH',
-        'HGFEDCBAI',
-        'IHGFEDCBA'
-    ], {
-        A:'createchromaticreturn:glowing_ingot',
-        B:'createchromaticreturn:refined_radiance',
-        C:'createchromaticreturn:silkstrum',
-        D:'createchromaticreturn:silkstrum_book',
-        E:'createchromaticreturn:industrium_book',
-        F:'createchromaticreturn:durasteel_book',
-        G:'createchromaticreturn:shadow_steel',
-        H:'createchromaticreturn:industrium_ingot',
-        I:'createchromaticreturn:durasteel_ingot'
-    })
-    event.recipes.create.mechanical_crafting('createchromaticreturn:antiplite_ingot', [
-        'AIHGFEDCB',
-        'BAIHGFEDC',
-        'CBAIHGFED',
-        'DCBAIHGFE',
-        'EDCBAIHGF',
-        'FEDCBAIHG',
-        'GFEDCBAIH',
-        'HGFEDCBAI',
-        'IHGFEDCBA'
-    ], {
-        I:'createchromaticreturn:glowing_ingot',
-        H:'createchromaticreturn:refined_radiance',
-        G:'createchromaticreturn:silkstrum',
-        F:'createchromaticreturn:silkstrum_book',
-        E:'createchromaticreturn:industrium_book',
-        D:'createchromaticreturn:durasteel_book',
-        C:'createchromaticreturn:shadow_steel',
-        B:'createchromaticreturn:industrium_ingot',
-        A:'createchromaticreturn:durasteel_ingot'
-    })
-    /*
-    let targets = ['createchromaticreturn:multiplite_ingot', 'createchromaticreturn:antiplite_ingot']
-    for (let i = 0; i < 2; i++) {
-        event.recipes.create
-            .mechanical_crafting(
-                targets[i],
-                sudokus[i][0].map(x => x.join('')),
-                materialMap,
-            )
-            .id(`endgame${i + 1}`)
-        event.recipes.create
-            .mechanical_crafting(
-                targets[i],
-                sudokus[i][1].map(x => x.map(v => v || '_').join('')),
-                materialMapShow,
-            )
-            .id(`endgame${i + 1}_show`)
-    }
-    */
+    let target = '2x kubejs:world_base_gem'
+    event.recipes.create
+        .mechanical_crafting(
+            target,
+            sudokus[0][0].map(x => x.join('')),
+            materialMap,
+        )
+        .id(`endgamex`)
+    event.recipes.create
+        .mechanical_crafting(
+            target,
+            sudokus[0][1].map(x => x.map(v => v || '_').join('')),
+            materialMapShow,
+        )
+        .id(`endgamexxx`)
 })
