@@ -18,7 +18,7 @@ StartupEvents.registry('item', (event) => {
 
   //联合饰品
   event.create("arcane_charger").displayName('Arcane Charger').rarity('epic')
-  event.create("soul_battery").displayName('Soul Battery').rarity('epic')
+  event.create("soul_furnace").displayName('Soul Furnace').rarity('epic')
   event.create("divine_shield_system").displayName('Divine Shield System').rarity('epic')
 
   let buran = (tooltip, texture) => {

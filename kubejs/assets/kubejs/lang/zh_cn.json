@@ -92,6 +92,12 @@
   "item.kubejs.sword_o_justice": "《 正 义 之 剑 》",
   "item.kubejs.raw_world_base":"原始万象石",
   "item.kubejs.world_base_gem":"万象宝石",
+  "item.kubejs.arcane_charger":"奥术充能器",
+  "item.kubejs.arcane_charger.desc":"奥术之力在机械中涌动：携带时自动为设备充电并为你附加超负荷",
+  "item.kubejs:soul_furnace":"灵魂熔炉",
+  "item.kubejs:soul_furnace.desc":"熔炉渴望灵魂力量的注入：为你附加急迫与吞噬残魂的能力",
+  "item.kubejs:divine_shield_system":"神圣护盾系统",
+  "item.kubejs.divine_shield_system.desc":"工业化的神圣赐福：定时附加全效护盾与短暂的治疗",
 
   "item.kubejs.molten_iron_bucket": "熔融铁桶",
   "item.kubejs.molten_steel_bucket": "熔融钢桶",

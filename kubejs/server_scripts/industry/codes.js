@@ -53,7 +53,7 @@ PlayerEvents.tick(event => {
             chargeEnergy(mainHandItem, 1000)
             chargeEnergy(offHandItem, 1000)
         }
-        if (event.player.inventory.find("kubejs:soul_battery") != -1) {    //灵魂电池：每0.5s给予携带者5s铁魔法急迫2和诡厄巫法食尸3
+        if (event.player.inventory.find("kubejs:soul_furnace") != -1) {    //灵魂电池：每0.5s给予携带者5s铁魔法急迫2和诡厄巫法食尸3
             event.player.potionEffects.add("irons_spellbooks:hastened", 100, 1, true, false)
             event.player.potionEffects.add("goety:corpse_eater", 100, 2, true, false) 
         }
