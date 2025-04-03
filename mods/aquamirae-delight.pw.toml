@@ -1,0 +1,13 @@
+name = "Aquamirae Delight"
+filename = "aquamirae_delight-1.5.2-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3486cd1765ed0f84144f57ba039b818852b2cf54"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6169315
+project-id = 1094104

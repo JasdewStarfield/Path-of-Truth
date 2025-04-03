@@ -1,0 +1,13 @@
+name = "Bedspreads (Fabric/Forge/Quilt)"
+filename = "bedspreads-forge-6.2.0+1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "dd231d7a0bc85a690460cf2d03fd69516c4358cf"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4597918
+project-id = 308653

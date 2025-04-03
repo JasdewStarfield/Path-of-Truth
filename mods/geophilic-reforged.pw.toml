@@ -1,0 +1,13 @@
+name = "Geophilic Reforged – Biome Additions"
+filename = "GeophilicReforged-v1.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "412650ce355803e91d54ad8c44cdcf8857c09e2a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4875199
+project-id = 936730

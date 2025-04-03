@@ -1,0 +1,13 @@
+name = "Pop!"
+filename = "pop-1.20.1-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "aceade93c4e3792700b59ac512682cfcd26a1140"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4593704
+project-id = 457826

@@ -1,0 +1,13 @@
+name = "Obscure API (Forge)"
+filename = "obscure_api-15.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "30e37354519b4ca06bc617ccb2698cc696fdae9b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4616364
+project-id = 638417

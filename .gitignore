@@ -101,3 +101,11 @@ config/embeddium++.toml
 kubejs/data/cached_seed.json
 config/world_preview/renderConfig.json
 *.txt
+
+# Exclude exported CurseForge zip files
+*.zip
+
+# Exclude exported Modrinth modpacks
+*.mrpack
+
+old/

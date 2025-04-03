@@ -1,5 +1,0 @@
-{
-  "seamless.resource_pack": "默认无缝资源",
-  "options.fast_seamless": "快速无缝",
-  "options.fast_seamless.tooltip": "这使得 Seamless 在查看新位置时只需检查一次连接块，从而提高了性能。缺点是，当放置一些双块时，轮廓尚未连接，直到您移开视线。连接块的更改也不会被检测到。"
-}

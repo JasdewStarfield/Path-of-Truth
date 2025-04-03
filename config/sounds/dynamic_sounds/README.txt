@@ -1,1 +1,0 @@
-This folder contains various dynamic sound definitions, you should consult the documentation site for more information: https://docs.imb11.dev/sounds

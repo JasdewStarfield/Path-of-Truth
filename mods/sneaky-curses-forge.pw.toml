@@ -1,0 +1,13 @@
+name = "Sneaky Curses [Forge & Fabric]"
+filename = "SneakyCurses-v8.0.2-1.20.1-Forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7a3586c3c22ddf95d4c438a842ae7857f7e62684"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4872492
+project-id = 322733

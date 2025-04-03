@@ -1,0 +1,13 @@
+name = "Otyacraft Engine [Forge/Fabric]"
+filename = "otyacraftengine-forge-mc1.20-3.7.0-alpha.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4c129437845f8d808ee56663fb7413dfed2f8daf"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4619771
+project-id = 400337

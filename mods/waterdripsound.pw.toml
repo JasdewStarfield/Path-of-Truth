@@ -1,0 +1,13 @@
+name = "Drip Sounds (Forge)"
+filename = "DripSounds-1.19.4-0.3.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e91743f0e4a1b8d2e1b795f3ccd4bd4190f5d4c3"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4579519
+project-id = 390986

@@ -1,0 +1,13 @@
+name = "Majrusz Library"
+filename = "majrusz-library-forge-1.20.1-7.0.8.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "be0e1b5808206abcc2ff6a369ce0c2ba53968c55"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5302100
+project-id = 437409

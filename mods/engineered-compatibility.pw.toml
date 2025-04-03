@@ -1,0 +1,13 @@
+name = "Engineered Compatibility"
+filename = "engineeredcompatibility-2.4.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "923c367f1656f3eea882a446172e2a78cb4d1549"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5397781
+project-id = 958266

@@ -1,1 +1,0 @@
-{"type":"minecraft:crafting_shaped","category":"misc","key":{"a":{"item":"scguns:blank_mold"},"e":{"item":"create:empty_schematic"}},"pattern":[" a ","aea"," a "],"result":{"item":"immersiveengineering:blueprint","nbt":{"blueprint":"molds"}},"show_notification":true}

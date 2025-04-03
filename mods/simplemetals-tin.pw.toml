@@ -1,0 +1,13 @@
+name = "Simple Metals: Tin"
+filename = "simplemetals-tin-3.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "87665fa6e22f610ff9a6e51491b4145548ba5ed0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5512367
+project-id = 693358

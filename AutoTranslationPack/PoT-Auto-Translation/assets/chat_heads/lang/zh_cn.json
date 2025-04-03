@@ -1,6 +1,0 @@
-{
-  "text.autoconfig.chat_heads.option.renderPosition": "渲染位置",
-  "text.autoconfig.chat_heads.option.renderPosition.BEFORE_NAME": "名字之前",
-  "text.autoconfig.chat_heads.option.renderPosition.BEFORE_LINE": "行前",
-  "text.autoconfig.chat_heads.option.renderPosition.@Tooltip": "在哪里渲染聊天头"
-}

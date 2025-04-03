@@ -1,0 +1,13 @@
+name = "Create Nuclear"
+filename = "createnuclear-1.2.0-forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "76c9726cb11109e74232239830e5c7ae67bda946"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6257600
+project-id = 989797

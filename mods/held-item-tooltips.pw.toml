@@ -1,0 +1,13 @@
+name = "Held Item Tooltips [Forge & Fabric]"
+filename = "HeldItemTooltips-v8.0.0-1.20.1-Forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a022976a33affa5a16e0d98b3f112a1276b407c9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4613438
+project-id = 852671

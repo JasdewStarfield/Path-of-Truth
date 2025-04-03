@@ -1,0 +1,13 @@
+name = "Fisherman's Trap"
+filename = "fishermens_trap-2.1.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "f3a4cf1ff9f320c85900f8acf0f17629ed795dc6"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5665939
+project-id = 883029

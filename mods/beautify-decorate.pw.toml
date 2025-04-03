@@ -1,0 +1,13 @@
+name = "Beautify!"
+filename = "beautify-2.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "497ab2ebccbf89f15845428cf0e26ca5d9c4ce76"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4781709
+project-id = 633252

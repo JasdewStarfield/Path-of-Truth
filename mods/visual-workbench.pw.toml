@@ -1,0 +1,13 @@
+name = "Visual Workbench"
+filename = "VisualWorkbench-v8.0.0-1.20.1-Forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7ebf579edcf2440eadf1ed6c8c895e1bc2d77bf1"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4612695
+project-id = 500273

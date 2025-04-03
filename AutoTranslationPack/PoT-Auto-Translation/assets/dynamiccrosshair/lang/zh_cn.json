@@ -1,6 +1,0 @@
-{
-  "dynamiccrosshair.option.additionalInteractableBlocks": "额外的可交互块",
-  "dynamiccrosshair.option.additionalInteractableBlocks.description": "方块名称或标签列表，例如“minecraft:oak_log”或“#minecraft:stairs”。这些块将被添加到可交互块类别中。",
-  "dynamiccrosshair.option.hideWithMap": "拿着地图时隐藏",
-  "dynamiccrosshair.option.hideWithMap.description": "当双手握住地图时隐藏，这样它就不会被十字准线阻挡"
-}

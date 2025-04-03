@@ -1,0 +1,13 @@
+name = "Bosses of Mass Destruction [Forge | NeoForge]"
+filename = "BOMD-Forge-1.20.1-1.1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2caa8739ed9702c5ad87b6c5436432f8be755217"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5067728
+project-id = 941573

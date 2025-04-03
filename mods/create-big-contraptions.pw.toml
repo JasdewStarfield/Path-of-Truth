@@ -1,0 +1,13 @@
+name = "Create: Big Contraptions"
+filename = "bigcontraptions-1.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3bebfb40c2d232ac69214126012dd28106c3a917"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5108576
+project-id = 877334

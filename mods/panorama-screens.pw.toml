@@ -1,0 +1,13 @@
+name = "Panorama Screens"
+filename = "panorama_screens-1.0+forge+mc1.20.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "5ce53c726965c223c3a0d082ba029b33701f919f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4575777
+project-id = 854176

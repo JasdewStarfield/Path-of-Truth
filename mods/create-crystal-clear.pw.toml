@@ -1,0 +1,13 @@
+name = "Create: Crystal Clear"
+filename = "Crystal-Clear-2.1-Beta-forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "90f0a118263a91661e58b2c56acccbbcf8afdc1c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5402291
+project-id = 669724

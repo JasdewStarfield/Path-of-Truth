@@ -1,0 +1,13 @@
+name = "Create Picky Wheels"
+filename = "createpickywheels-forge-1.20.1-0.5.1.f-c.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "21ed7cbd64609d38767e8d5209ffe50f0bfde18b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5201809
+project-id = 866839

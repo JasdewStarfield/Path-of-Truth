@@ -1,0 +1,13 @@
+name = "Forge Config Screens [Forge & Fabric]"
+filename = "ForgeConfigScreens-v8.0.2-1.20.1-Forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e727fcba7efe04bc173211ba5cdf49eea768a9a3"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4672356
+project-id = 544048

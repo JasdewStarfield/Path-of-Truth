@@ -1,0 +1,13 @@
+name = "bendy-lib"
+filename = "bendy-lib-forge-4.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d1e77cc4534cecc753a7d2ba4e84dec412a55025"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4550371
+project-id = 623373

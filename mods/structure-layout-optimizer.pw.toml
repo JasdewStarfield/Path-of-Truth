@@ -1,0 +1,13 @@
+name = "Structure Layout Optimizer"
+filename = "structure_layout_optimizer-forge-1.0.10.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a2814121453424f510d06689c6b10fc17fe00309"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6125412
+project-id = 1087831

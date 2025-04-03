@@ -1,6 +1,0 @@
-
-[DeathButThree]
-	#Before ';': boss' registry name
-	#After ';': its max death times
-	ValidBossesAndMaxDeathTimes = ["bosses_of_mass_destruction:gauntlet;3", "bosses_of_mass_destruction:void_blossom;3", "bosses_of_mass_destruction:lich;3", "bosses_of_mass_destruction:obsidilith;3", "blue_skies:arachnarch;3", "blue_skies:alchemist;3", "blue_skies:starlit_crusher;3", "blue_skies:summoner;3", "irons_spellbooks:dead_king;3", "minecraft:ender_dragon;3", "minecraft:wither;3", "minecraft:warden;3", "alexsmobs:void_worm;3", "botania:doppleganger;3"]
-

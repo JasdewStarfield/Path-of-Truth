@@ -1,0 +1,13 @@
+name = "Villagers Sell Animals [NoCube's Mods]"
+filename = "nocube's_villagers_sell_animals_1.2.1_forge_1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "394818a1f121d51c7db0e11fd6992db734d09871"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4711140
+project-id = 664014

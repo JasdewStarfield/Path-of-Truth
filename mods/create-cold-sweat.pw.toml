@@ -1,0 +1,13 @@
+name = "Create: Cold Sweat"
+filename = "create_cold_sweat-1.1.1.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "203b5247ef46dc2ddaccf8442c5d6c0622c6a45a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6232569
+project-id = 1184450

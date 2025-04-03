@@ -1,0 +1,13 @@
+name = "Blue Skies"
+filename = "blue_skies-1.20.1-1.3.31.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "9d86230565f9262e845da2065f138e470eaed44c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5010316
+project-id = 312918

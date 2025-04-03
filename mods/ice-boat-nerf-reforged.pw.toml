@@ -1,0 +1,13 @@
+name = "Ice Boat Nerf - Reforged"
+filename = "iceboatnerf-1.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "603c9b1a9f390153c1b3c68968fe2c1bfe883225"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5097023
+project-id = 897459

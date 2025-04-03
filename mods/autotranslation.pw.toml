@@ -1,0 +1,16 @@
+name = "AutoTranslation"
+filename = "AutoTranslation-1.2.1+mc1.20.2-forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d9eebe7f32e8fa828ac114c96a6f3e4244012492"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4993676
+project-id = 919497
+
+[option]
+optional = true

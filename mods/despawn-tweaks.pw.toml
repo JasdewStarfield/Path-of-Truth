@@ -1,0 +1,13 @@
+name = "Despawn Tweaks"
+filename = "despawntweaks-forge-1.0.0-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "2a46154c5b58aa803aca4eb0a0e9682557e4422f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6145371
+project-id = 1191080

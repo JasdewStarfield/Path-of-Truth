@@ -1,0 +1,13 @@
+name = "Create Utilities (Fabric/Forge)"
+filename = "createutilities-0.3.0+1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "cd53635cf37bd8c72e890abc49d72057b7f82980"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5225304
+project-id = 881586

@@ -1,0 +1,13 @@
+name = "Create: Armor Trim"
+filename = "create_armor_trims-1.20.1-2.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d47ef027154e5dcaf1ea8bea3fb70e8824c01f60"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5359591
+project-id = 1020165

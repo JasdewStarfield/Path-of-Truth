@@ -1,0 +1,13 @@
+name = "Death Counter (Forge)"
+filename = "DeathCounter-1.20.1-Forge-1.4.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b96e875e3891804646a72f772d81b42e94be2c7b"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5477582
+project-id = 229068

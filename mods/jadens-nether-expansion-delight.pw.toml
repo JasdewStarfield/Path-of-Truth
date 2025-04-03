@@ -1,0 +1,13 @@
+name = "Jaden's Nether Expansion Delight"
+filename = "jadensnetherexpansiondelight-1.0.2-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bb89c9f1503bd03e1c24c293d676090768036c89"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6239161
+project-id = 1190275

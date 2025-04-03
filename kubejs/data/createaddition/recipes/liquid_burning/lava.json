@@ -1,8 +1,0 @@
-{
-	"type":"createaddition:liquid_burning",
-	"input": {
-      	"fluidTag": "minecraft:lava",
-      	"amount": 1000
-	},
-	"burnTime": 5000
-}

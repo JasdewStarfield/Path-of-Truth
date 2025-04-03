@@ -1,9 +1,0 @@
-{
-	"type":"createaddition:liquid_burning",
-	"input": {
-      	"fluidTag": "forge:biodiesel",
-      	"amount": 1000
-	},
-	"burnTime": 48000,
-	"superheated": false
-}

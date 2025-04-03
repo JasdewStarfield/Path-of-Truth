@@ -1,0 +1,13 @@
+name = "NonConflictKeys [Forge]"
+filename = "NonConflictKeys-Forge-1.19.X-1.20-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c6fcb7aedbc36bc51776fa71a8bac1161a5103e0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4580489
+project-id = 864845

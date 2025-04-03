@@ -1,0 +1,13 @@
+name = "Fish No Stuck"
+filename = "fishnostuck-mc1.20.1-v1.0.3-forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "cb5aa9e27ff3bcd6b6bb41501968c26385816a05"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 5345079
+project-id = 907390

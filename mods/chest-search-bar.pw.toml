@@ -1,0 +1,13 @@
+name = "Chest Search Bar"
+filename = "chestsearchbar-1.20.1-1.5.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "c6c3a8042626e2a924d730201f32ff8e6720c8a9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 6137586
+project-id = 1050325

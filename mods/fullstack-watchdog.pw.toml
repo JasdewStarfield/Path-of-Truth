@@ -1,0 +1,13 @@
+name = "FullStack Watchdog"
+filename = "fullstackwatchdog-1.0.1+1.19.2-forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6f1e3a25c4a0258c2592fefb837f95a24eb3bfa0"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4488549
+project-id = 849817

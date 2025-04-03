@@ -1,0 +1,13 @@
+name = "Screenshot to Clipboard (Forge)"
+filename = "screenshot-to-clipboard-1.0.9-forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "52c91669e2be8f73b3d1493b3692311008b4d5a9"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 3643026
+project-id = 326950
