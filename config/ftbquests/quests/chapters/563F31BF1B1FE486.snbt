@@ -14,7 +14,7 @@
 			rotation: 0.0d
 			width: 1.3285714285714287d
 			x: 0.0d
-			y: -0.8d
+			y: -1.0d
 		}
 		{
 			height: 2.0d
@@ -33,6 +33,8 @@
 			description: ["&l&4这个章节不是正式任务线！只起到任务线的预告作用！具体请看下方的章节组中的内容！&r&r"]
 			hide_until_deps_complete: true
 			id: "5BC62338A9F6E65B"
+			shape: "hexagon"
+			size: 1.6d
 			subtitle: "触碰魔法边缘"
 			tasks: [{
 				id: "15B65D00737081D8"
@@ -198,7 +200,7 @@
 		{
 			dependencies: ["56FEAEAF9D5FF405"]
 			id: "67DD665888D130CB"
-			subtitle: "从饰品到碎片"
+			subtitle: "深埋地底"
 			tasks: [{
 				id: "20393A584D230BBD"
 				item: "irons_spellbooks:arcane_salvage"
@@ -390,6 +392,7 @@
 			]
 			id: "697B1277B1C95490"
 			shape: "hexagon"
+			size: 1.6d
 			subtitle: "真相的通行证"
 			tasks: [{
 				id: "09891F03B5381DDB"
@@ -399,37 +402,6 @@
 			title: "嗯，作者之一"
 			x: 0.0d
 			y: -14.0d
-		}
-		{
-			dependencies: ["697B1277B1C95490"]
-			hide_until_deps_complete: true
-			id: "547BE1E974BA2186"
-			subtitle: "转化，合成，凝聚"
-			tasks: [{
-				id: "4C9E7E2BAAD67B3C"
-				item: "createchromaticreturn:chromatic_compound"
-				type: "item"
-			}]
-			title: "异彩化合物"
-			x: 0.0d
-			y: -15.5d
-		}
-		{
-			dependencies: [
-				"5C9661302B37F26F"
-				"57792EACF9438430"
-			]
-			id: "0D3C086EDB80E9AB"
-			shape: "octagon"
-			subtitle: "终局开端"
-			tasks: [{
-				id: "022297A7CFF38214"
-				item: "createchromaticreturn:multiplite_ingot"
-				type: "item"
-			}]
-			title: "最魔法的"
-			x: 0.0d
-			y: -18.5d
 		}
 		{
 			dependencies: ["4D484051A8CF29F2"]
@@ -448,45 +420,6 @@
 			}]
 			x: 0.0d
 			y: -7.0d
-		}
-		{
-			dependencies: ["0254FBCBA50B97F1"]
-			id: "57792EACF9438430"
-			subtitle: "光芒万丈"
-			tasks: [{
-				id: "7EC3BF6674D397C9"
-				item: "createchromaticreturn:glowing_ingot"
-				type: "item"
-			}]
-			title: "辉光锭"
-			x: 2.0d
-			y: -17.5d
-		}
-		{
-			dependencies: ["0254FBCBA50B97F1"]
-			id: "5C9661302B37F26F"
-			subtitle: "丝滑体验——"
-			tasks: [{
-				id: "455E4D6193809635"
-				item: "createchromaticreturn:silkstrum"
-				type: "item"
-			}]
-			title: "丝绸锭"
-			x: -2.0d
-			y: -17.5d
-		}
-		{
-			dependencies: ["547BE1E974BA2186"]
-			id: "0254FBCBA50B97F1"
-			subtitle: "更亮，更强"
-			tasks: [{
-				id: "07ACAB2B1345C4A9"
-				item: "createchromaticreturn:refined_radiance"
-				type: "item"
-			}]
-			title: "光辉石"
-			x: 0.0d
-			y: -16.5d
 		}
 		{
 			dependencies: ["7B4BE516F4D4E494"]

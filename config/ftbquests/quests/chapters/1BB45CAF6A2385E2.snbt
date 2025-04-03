@@ -297,8 +297,8 @@
 			dependencies: ["0D0BEC03C1B26CA3"]
 			id: "3B85E476CBE11F1B"
 			tasks: [{
-				id: "3CC5DB57D18A4894"
-				item: "kubejs:soul_battery"
+				id: "45AF76FE1F8F7F50"
+				item: "kubejs:soul_furnace"
 				type: "item"
 			}]
 			x: -2.0d
