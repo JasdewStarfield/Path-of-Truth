@@ -486,7 +486,7 @@ ServerEvents.recipes(event => {
             "tag": 'minecraft:beds'
         },
         {
-            "item": 'alshanex_familiars:pet_bed'
+            "item": 'scguns:scorched_blueprint'
         }
     ],
     "result": {
