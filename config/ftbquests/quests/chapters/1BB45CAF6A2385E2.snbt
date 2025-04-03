@@ -58,7 +58,7 @@
 			}]
 			shape: "pentagon"
 			size: 2.0d
-			subtitle: "机械与魔法的终末是……无限。"
+			subtitle: "一即是万"
 			tasks: [
 				{
 					id: "574D4B148744FE70"
@@ -84,55 +84,45 @@
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
 			description: [
-				"异彩化合物丢进黑巧克力和重油的混合物里，你就得到了……"
-				""
-				"也是超级装备的基础材料。"
-				""
-				"很符合工业的污染颜色，不是吗？"
+				"将万象石打造成&e最“包罗万象”的磁盘&r，然后再进行&6合理的工业压制和程序编辑&r，也许就能分离出其中的工业特质……"
+				"某种意义上来讲&b直击本源的编程&r是所有程序员的梦想。"
+				"至少这一次你的代码不会有bug……但有&c一点点概率&r实现的并不是你想要的（？"
 			]
 			hide_until_deps_complete: true
 			id: "6D54B104118A0FA7"
-			subtitle: "工业中转"
+			subtitle: "最强大的磁盘"
 			tasks: [{
 				id: "573FB5488D66E094"
 				item: "kubejs:code_vessel"
 				type: "item"
 			}]
+			title: "承载真理"
 			x: -4.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["6D54B104118A0FA7"]
-			description: [
-				"看配方就知道为什么它可以让暗影刚装备永不磨损了（确信）"
-				""
-				"&9&o*不要因为下界合金块骂街——这是真理的代价（之一），而且也没那么难。&r&r"
-			]
 			id: "0D2EEDEACB542342"
-			subtitle: "由世上最硬的金属聚合而来"
+			subtitle: "机魂大悦"
 			tasks: [{
 				id: "34A6845464DFC520"
 				item: "kubejs:code_destruction"
 				type: "item"
 			}]
-			title: "毁灭"
+			title: "极致毁灭"
 			x: -2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6D54B104118A0FA7"]
-			description: [
-				"可以让你的暗影钢工具——以及砂纸——永恒存在！"
-				"也是终末锭的必须材料之一。"
-			]
 			id: "5B74E17C06C14B35"
-			subtitle: "永恒强化"
+			subtitle: "做个精致的人"
 			tasks: [{
 				id: "039FBCBAFB5C60C3"
 				item: "kubejs:code_perfection"
 				type: "item"
 			}]
-			title: "完美"
+			title: "永远完美"
 			x: -2.0d
 			y: -3.0d
 		}
@@ -184,18 +174,14 @@
 		}
 		{
 			dependencies: ["6D54B104118A0FA7"]
-			description: [
-				"本游戏最珍贵的黑色液体之一……"
-				"当然制作方式没那么难，但你会发现……要用很多。"
-			]
 			id: "38F3E1D924DDE502"
-			subtitle: "“黑色黄金”"
+			subtitle: "定义存在"
 			tasks: [{
 				id: "4AE3DE96FF481631"
 				item: "kubejs:code_formation"
 				type: "item"
 			}]
-			title: "构成"
+			title: "解析构成"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -285,6 +271,7 @@
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
 			id: "4C8C5F555938B8D3"
+			subtitle: "圣盾（抵挡一次攻击）"
 			tasks: [{
 				id: "716B01796A9493F4"
 				item: "kubejs:divine_shield_system"
@@ -296,6 +283,7 @@
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
 			id: "3B85E476CBE11F1B"
+			subtitle: "燃烧灵魂"
 			tasks: [{
 				id: "45AF76FE1F8F7F50"
 				item: "kubejs:soul_furnace"
@@ -307,6 +295,7 @@
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
 			id: "7648A6D221C10DEC"
+			subtitle: "奥能涌动"
 			tasks: [{
 				id: "78C8AE837008612D"
 				item: "kubejs:arcane_charger"

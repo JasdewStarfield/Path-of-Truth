@@ -240,6 +240,17 @@ ServerEvents.recipes(event => {
             B: 'scguns:nether_star_fragment'
         }
     )
+    //禁书卷轴复制
+    event.shapeless(Item.of('goety:forbidden_scroll', 2),
+        [
+            'goety:philosophers_stone',
+            'goety:forbidden_scroll',
+            'irons_spellbooks:legendary_ink',
+            'goety:shadow_essence',
+            'createaddition:diamond_grit_sandpaper'
+        ]
+
+    )
 
     //诅咒注入系列配方
     //灵质转化
