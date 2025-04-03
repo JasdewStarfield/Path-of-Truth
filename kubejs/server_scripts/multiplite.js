@@ -1,38 +1,32 @@
 function getCachedSeed() {
-    let Long = Java.loadClass('java.lang.Long')
-    try {
-        let raw = JsonIO.read(getCachedSeed.cached_path)
-        return Long.valueOf(raw.seed)
-    } catch (e) {}
+    let raw = Utils.server.persistentData.get('seed')
+    if (!raw) return null
+    return Utils.server.persistentData.getLong('seed')
 }
-getCachedSeed.cached_path = 'kubejs/data/cached_seed.json'
 
 ServerEvents.loaded(e => {
-    //e.server.runCommandSilent('reload')
     let oldSeed = getCachedSeed()
-    let newSeed = Utils.server.getLevel('minecraft:overworld').seed
+    let newSeed = Utils.server.overworld().seed
     if (oldSeed != newSeed) {
-        JsonIO.write(getCachedSeed.cached_path, { seed: newSeed.toString() })
-        // Utils.server.runCommandSilent('reload')  // enable this when enable code below
+        Utils.server.persistentData.putLong('seed', newSeed)
+        Utils.server.persistentData.remove('cached_sudoku')
+        Utils.server.runCommandSilent('reload') // enable this when enable code below
     }
 })
 
 ServerEvents.recipes(event => {
-    /*
     let seed = getCachedSeed()
     if (!seed) return 'wait for reload'
-    let filterWan = (r, c) => {
-        if (r == 4 || c == 4) return true
-        if (c % 8 == 0 && r < 4 == (c == 0)) return true
-        if (r % 8 == 0 && c < 4 == (r == 8)) return true
-    }
 
     let filterByTemplate = tmpl => {
         return (r, c) => tmpl[r][c] == 'x'
     }
 
-    let sudokus = [
-        GenSudoku(
+    let sudokus = null
+    try {
+        sudokus = JSON.parse(Utils.server.persistentData.getString('cached_sudoku'))
+    } catch (e) {
+        sudokus = GenSudoku(
             seed,
             filterByTemplate([
                 '  xxxxx  ',
@@ -46,7 +40,8 @@ ServerEvents.recipes(event => {
                 '  xxxxx  ',
             ]),
         )
-    ]
+        Utils.server.persistentData.cached_sudoku = JSON.stringify(sudokus)
+    }
     let materialMap = {
         '1': 'kubejs:code_formation',
         '2': 'kubejs:code_destruction',
@@ -64,16 +59,15 @@ ServerEvents.recipes(event => {
     event.recipes.create
         .mechanical_crafting(
             target,
-            sudokus[0][0].map(x => x.join('')),
+            sudokus[0].map(x => x.join('')),
             materialMap,
         )
         .id(`endgamex`)
     event.recipes.create
         .mechanical_crafting(
             target,
-            sudokus[0][1].map(x => x.map(v => v || '_').join('')),
+            sudokus[1].map(x => x.map(v => v || '_').join('')),
             materialMapShow,
         )
         .id(`endgamexxx`)
-    */
 })
