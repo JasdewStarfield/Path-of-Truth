@@ -278,13 +278,13 @@ ServerEvents.recipes(event => {
         "result": 'minecraft:gunpowder',
         "cookingTime": 60
     })
-    //远古知识碎片转化禁书碎片
+    //禁书碎片转化远古知识碎片
     event.custom({
         "type": "goety:cursed_infuser_recipes",
         "ingredient": {
-            "item": 'irons_spellbooks:ancient_knowledge_fragment'
+            "item": 'goety:forbidden_piece'
         },
-        "result": 'goety:forbidden_piece',
+        "result": 'irons_spellbooks:ancient_knowledge_fragment',
         "cookingTime": 1200
     })
     //下界合金转换遗忆

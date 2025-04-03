@@ -49,9 +49,9 @@ ServerEvents.recipes(event => {
         '4': 'kubejs:potion_of_balance',
         '5': 'kubejs:potion_of_void',
         '6': 'kubejs:potion_of_talent',
-        '7': 'botania:manasteel_ingot',
-        '8': 'botania:mana_diamond',
-        '9': 'botania:mana_pearl',
+        '7': 'kubejs:arcane_charger',
+        '8': 'kubejs:soul_furnace',
+        '9': 'kubejs:divine_shield_system',
     }
     let materialMapShow = Object.assign({ _: 'minecraft:barrier' }, materialMap)
 

@@ -410,15 +410,87 @@ ServerEvents.recipes(event => {
     100000
   )
 
-
+  //环境枪：创造集成
+  //铸造仪式
+  event.custom({
+    "type": "goety:ritual",
+    "ritual_type": "goety:craft",//仪式主类型（制作）
+    "activation_item": {
+        "item": 'kubejs:world_base_gem'//中心物品
+    },
+    "craftType": "forge",//仪式副类型（铸造）
+    "soulCost": 1000,//每秒消耗
+    "duration": 50,//时长
+    "ingredients": [
+        {
+            "item": 'botania:corporea_spark_creative'
+        },
+        {
+            "item": 'create:creative_blaze_cake'
+        },
+        {
+            "item": 'botania:creative_pool'
+        },
+        {
+            "item": 'create:creative_crate'
+        },
+        {
+            "item": 'create:creative_fluid_tank'
+        },
+        {
+            "item": 'create:creative_motor'
+        },
+        {
+            "item": 'immersiveengineering:capacitor_creative'
+        },
+        {
+            "item": 'scguns:creative_ammo_box'
+        },
+    ],
+    "result": {
+        "item": 'create:handheld_worldshaper'//实际产出
+    }
+  })
   //终极彩蛋：可睡觉的床
   event.remove({id:'undergarden:depthrock_bed'})
-  //符文祭坛
-  event.recipes.botania.runic_altar('undergarden:depthrock_bed', 
-    [
-      'create:handheld_worldshaper',
-      'kubejs:world_base_gem'
-    ], 
-    50000
-  )
+  //安息仪式
+  event.custom({
+    "type": "goety:ritual",
+    "ritual_type": "goety:craft",//仪式主类型（制作）
+    "activation_item": {
+        "item": 'create:handheld_worldshaper'//中心物品
+    },
+    "craftType": "sabbath",//仪式副类型（安息）
+    "soulCost": 1000,//每秒消耗
+    "duration": 50,//时长
+    "ingredients": [
+        {
+            "item": 'goety:unholy_hat'
+        },
+        {
+            "item": 'goety:soul_ruby'
+        },
+        {
+            "item": 'aquamirae:coral_lance'
+        },
+        {
+            "item": 'alexsmobs:shattered_dimensional_carver'
+        },
+        {
+            "item": 'bosses_of_mass_destruction:monolith_block'
+        },
+        {
+            "item": 'bosses_of_mass_destruction:charged_ender_pearl'
+        },
+        {
+            "tag": 'minecraft:beds'
+        },
+        {
+            "item": 'alshanex_familiars:pet_bed'
+        }
+    ],
+    "result": {
+        "item": 'undergarden:depthrock_bed'//实际产出
+    }
+  })
 })
