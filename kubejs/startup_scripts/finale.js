@@ -38,17 +38,29 @@ StartupEvents.registry('item', (event) => {
 StartupEvents.registry('block', (event) => {
   //重生碑底座
   event.create('obelisk_base')
-  .displayName('Obelisk Base')
-  .soundType("copper")
-  .mapColor("metal")
-  .hardness(50)
-  .resistance(1200)
-  .noDrops()
-  .item(item => {
-    item.rarity('epic')
-  })
-  .opaque(true)
-  .fullBlock(true)
-  .renderType('solid')
-  .textureAll('kubejs:block/obelisk_base')
+    .displayName('Obelisk Base')
+    .soundType("copper")
+    .mapColor("metal")
+    .hardness(50)
+    .resistance(1200)
+    .noDrops()
+    .item(item => {
+      item.rarity('epic')
+    })
+    .opaque(true)
+    .fullBlock(true)
+    .renderType('solid')
+    .textureAll('kubejs:block/obelisk_base')
+})
+
+StartupEvents.registry('mob_effect', (event) => {
+  event.create('perfection')
+    .displayName(Text.translate("mob_effect.kubejs.perfection"))
+    .color(Color.DARK_RED)
+    .harmful()
+})
+
+ForgeEvents.onEvent('net.minecraftforge.event.entity.living.MobEffectEvent$Added', event => {
+  let effect = event.effectInstance
+  if (effect.descriptionId === "effect.kubejs.perfection") effect.curativeItems = []
 })
