@@ -53,9 +53,9 @@ PlayerEvents.tick(event => {
             chargeEnergy(mainHandItem, 1000)
             chargeEnergy(offHandItem, 1000)
         }
-        if (event.player.inventory.find("kubejs:soul_battery") != -1) {    //灵魂电池：每0.5s给予携带者5s铁魔法急迫2和某神秘效果
+        if (event.player.inventory.find("kubejs:soul_battery") != -1) {    //灵魂电池：每0.5s给予携带者5s铁魔法急迫2和诡厄巫法食尸3
             event.player.potionEffects.add("irons_spellbooks:hastened", 100, 1, true, false)
-            event.player.potionEffects.add("minecraft:regeneration", 100, 1, true, false) //占位符，有时间改一下这个
+            event.player.potionEffects.add("goety:corpse_eater", 100, 2, true, false) 
         }
         if (event.player.age % 200 == 0) {  //每10秒触发一次
             if (event.player.inventory.find("kubejs:divine_shield_system") != -1) {    //神圣护盾系统：每10s给予携带者20s伤害吸收2（8点临时护盾），以及5s生命回复1
