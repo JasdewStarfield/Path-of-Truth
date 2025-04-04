@@ -229,73 +229,6 @@ ServerEvents.recipes(event => {
     }
   )
 
-  /*
-  //黄铜，安山组件配方
-  event.recipes.create.crushing(Item.of('create:andesite_alloy'), 'createchromaticreturn:andesite_component')
-  event.recipes.create.crushing(Item.of('create:brass_ingot'), 'createchromaticreturn:brass_component')
-
-  //环境枪
-  event.shapeless(
-    Item.of('create:handheld_worldshaper',1),
-    [
-      'createchromaticreturn:industrium_charm',
-      'createchromaticreturn:shadow_charm',
-      'createchromaticreturn:refined_charm',
-      'createchromaticreturn:multiplite_charm',
-      'createchromaticreturn:silkstrum_charm',
-      'createchromaticreturn:antiplite_charm'
-    ]
-  )
-
-  //工业侧
-  event.recipes.create.mixing([Item.of('createchromaticreturn:shadow_steel')], ['createchromaticreturn:chromatic_compound',Fluid.of('create_confectionery:black_chocolate',500),{fluidTag: 'forge:heavy_oil', amount:500}]).superheated()
-  event.remove({id:'createchromaticreturn:shadow_essence_recipe'})
-  event.custom({
-    "type":"immersiveengineering:mixer",
-    "energy":12800,
-    "fluid":{"amount":1000,"tag":"minecraft:lava"},
-    "inputs":[{"item":"createchromaticreturn:shadow_steel"}],
-    "result":{"amount":1000,"fluid":"createchromaticreturn:shadow_essence"}
-  })
-
-  //终极锭
-  event.remove({ id: 'createchromaticreturn:shadow_steel_recipe' })
-  event.remove({ id: 'createchromaticreturn:industrium_recipe' })
-  event.remove({ id: 'createchromaticreturn:durasteel_recipe' })
-
-  event.remove({id:'createchromaticreturn:refined_radiance_recipe'})
-  event.remove({id:'createchromaticreturn:silkstrum_recipe'})
-  event.remove({id:'createchromaticreturn:glowing_ingot_recipe'})
-
-  event.remove({ id: 'createchromaticreturn:industrium_book_recipe' })
-  event.remove({ id: 'createchromaticreturn:durasteel_book_recipe' })
-  event.remove({id:'createchromaticreturn:silkstrum_book_recipe'})
-
-  event.remove({id:'createchromaticreturn:multiplite_recipe'})
-  event.remove({id:'createchromaticreturn:antiplite_recipe'})
-
-  event.recipes.create.mixing(['createchromaticreturn:industrium_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [{fluidTag:'forge:shadow_essence', amount:1000},'create:deployer','create:mechanical_arm','immersiveengineering:powerpack']).superheated()
-  event.recipes.create.sequenced_assembly([
-    Item.of('createchromaticreturn:industrium_book')
-    ], '#forge:plates/plastic', [
-    event.recipes.createDeploying('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', 'createchromaticreturn:industrium_ingot']),
-    event.recipes.createDeploying('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', 'minecraft:paper']),
-    event.recipes.createFilling('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', Fluid.of('create_enchantment_industry:hyper_experience',50)]),
-    event.recipes.createDeploying('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', 'minecraft:paper']),
-    event.recipes.createFilling('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', Fluid.of('create_enchantment_industry:hyper_experience',50)])
-  ]).transitionalItem('kubejs:incomplete_industrium_book').loops(2)
-
-  event.recipes.create.compacting(['createchromaticreturn:durasteel_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [{fluidTag:'forge:shadow_essence', amount:1000},'#forge:storage_blocks/steel','#forge:storage_blocks/lead','#forge:storage_blocks/cast_iron','#forge:storage_blocks/netherite']).superheated()
-  event.recipes.create.sequenced_assembly([
-    Item.of('createchromaticreturn:durasteel_book')
-    ], '#forge:plates/obsidian', [
-    event.recipes.createDeploying('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', 'createchromaticreturn:durasteel_ingot']),
-    event.recipes.createDeploying('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', 'minecraft:paper']),
-    event.recipes.createFilling('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', Fluid.of('create_enchantment_industry:hyper_experience',50)]),
-    event.recipes.createDeploying('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', 'minecraft:paper']),
-    event.recipes.createFilling('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', Fluid.of('create_enchantment_industry:hyper_experience',50)])
-  ]).transitionalItem('kubejs:incomplete_durasteel_book').loops(2)
-*/
   //魔法侧终极修改
   
   //头像复制
@@ -389,6 +322,56 @@ ServerEvents.recipes(event => {
     }
   })
 
+  //混合终末修改
+  //神圣护盾系统
+  event.shaped(
+    Item.of('kubejs:divine_shield_system'),
+    [
+        ' A ',
+        'BCD',
+        ' E '
+    ],
+    {
+        A: 'shieldexp:netherite_shield',
+        B: 'irons_spellbooks:holy_upgrade_orb',
+        C: 'kubejs:raw_world_base',
+        D: 'minecraft:dragon_egg',
+        E: 'kubejs:electronic_engineering'
+    }
+  )
+  //灵魂熔炉
+  event.shaped(
+    Item.of('kubejs:soul_furnace'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'goety:sculk_devourer',
+        A: 'immersiveengineering:blastbrick_reinforced',
+        D: 'kubejs:raw_world_base',
+        C: 'goety:reinforced_redstone_block'
+    }
+  )
+  //奥术充能器
+  event.shaped(
+    Item.of('kubejs:arcane_charger'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        C: 'kubejs:fission_cell',
+        A: 'irons_spellbooks:lightning_upgrade_orb',
+        B: 'irons_spellbooks:arcane_anvil',
+        D: 'irons_spellbooks:energized_core'
+    }
+  )
+
+
+  //魔法创造系合成
   //炼成复制火花
   event.custom({
         "type": "goety:cursed_infuser_recipes",

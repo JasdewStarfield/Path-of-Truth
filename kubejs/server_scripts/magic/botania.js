@@ -146,6 +146,22 @@ ServerEvents.recipes(event => {
             C: 'goety:philosophers_stone'
         }
     )
+    //生命聚合器复制
+    event.shaped(
+        Item.of('botania:spawner_mover', 4),
+        [
+            ' A ',
+            ' B ',
+            'CDE'
+        ],
+        {
+            B: 'botania:spawner_mover',
+            E: 'goety:unholy_blood',
+            C: 'irons_spellbooks:blood_vial',
+            A: 'botania:spawner_claw',
+            D: 'goety:philosophers_stone'
+        }
+    )
 
     //符文祭坛配方
     //炼制铁魔法空白符文
