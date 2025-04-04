@@ -1,0 +1,10 @@
+{
+  "values": [
+    "#minecraft:is_ocean",
+    "#minecraft:is_deep_ocean",
+    "#minecraft:is_badlands",
+    "#forge:is_desert",
+    "#forge:is_peak",
+    "#forge:is_plains"
+  ]
+}

@@ -1,0 +1,5 @@
+#Vanilla only has translation keys for a few roman numerals (used for enchantment levels and mob effect amplifiers), this option dynamically adds full support.
+#Resource packs must be reloaded to apply by pressing F3+T.
+#Allowed Values: NONE, ARABIC, ROMAN
+fix_roman_numerals = "ROMAN"
+

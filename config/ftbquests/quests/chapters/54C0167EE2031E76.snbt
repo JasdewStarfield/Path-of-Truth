@@ -1,0 +1,986 @@
+{
+	autofocus_id: "1A4352FB579FF77E"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "54C0167EE2031E76"
+	group: ""
+	icon: "kubejs:logistical_engineering"
+	id: "54C0167EE2031E76"
+	images: [{
+		height: 1.2d
+		image: "kubejs:textures/quests/standardized_production.png"
+		rotation: 0.0d
+		width: 17.066666666666666d
+		x: 0.0d
+		y: -9.5d
+	}]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["11EC3A84F0C84E65"]
+			description: [
+				"生产线有三大要素：原材料、加工流程、产物。在这三大要素之中，因为原材料是一切生产的物资基础，因而在生产线的规划中，优先性是第一位的。如果能在生产的过程中，获得用之不竭的原材料，也能使玩家无比愉快。而在现实生活中，存在对原材料自动化生产执着追求的人，我们一般把这种人称之为自动化爱好者。而本指南，就是为了那些不清楚如何在“真理之路”进行自动化的人，量体裁衣，提供符合他们需求的指南。（鞠躬）"
+				""
+				"&a&o注：本篇章的内容并不要求全部完成，完成也没有奖励（悲），只是作为一个流程图使用的。希望各位留意。&r&r"
+			]
+			icon: "immersiveengineering:manual"
+			id: "1A4352FB579FF77E"
+			rewards: [{
+				id: "430AC78B3E79E9F5"
+				item: "immersiveengineering:shader_bag_uncommon"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "会员制工厂"
+			tasks: [{
+				id: "3A7A3E27A39EFBE9"
+				title: "开启流水线！"
+				type: "checkmark"
+			}]
+			title: "【起点】量产指南"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1A4352FB579FF77E"]
+			description: ["总之，你需要一个自动刷石机或者类似的东西。这个就不用我教了吧？"]
+			id: "74581D474C09D62C"
+			subtitle: "万物之源"
+			tasks: [{
+				id: "1E0FFBA8F8D1BEB9"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["74581D474C09D62C"]
+			id: "4247C42D1F36561B"
+			subtitle: "粉碎……"
+			tasks: [{
+				id: "5F8F89AE035E0949"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4247C42D1F36561B"]
+			id: "435DA157EC54D3EA"
+			subtitle: "再粉碎……"
+			tasks: [{
+				id: "4234BA5BE2ED7A98"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"435DA157EC54D3EA"
+				"5012BDA254DF42C1"
+			]
+			id: "325D500216D2EFDC"
+			min_required_dependencies: 1
+			subtitle: "缠魂沙子（或红沙）"
+			tasks: [{
+				id: "67097C16AEF3C2C5"
+				item: "minecraft:soul_sand"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"325D500216D2EFDC"
+				"5012BDA254DF42C1"
+			]
+			icon: "minecraft:gold_ingot"
+			id: "6E3F0DA8745CD62F"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "7D17272DB3FBC5B2"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "洗涤灵魂沙（或者红沙）！"
+			tasks: [
+				{
+					id: "16B73DBEAAD7ABBB"
+					item: "minecraft:gold_nugget"
+					type: "item"
+				}
+				{
+					id: "456E46E57F28913A"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "金"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"435DA157EC54D3EA"
+				"74581D474C09D62C"
+			]
+			id: "2CA163F35B71E735"
+			subtitle: "圆石和沙子，加水搅拌"
+			tasks: [{
+				id: "5371503C55E19FCC"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2CA163F35B71E735"]
+			id: "038A6F292DC597E2"
+			subtitle: "再加水搅拌……"
+			tasks: [{
+				id: "0C549938EBBCB556"
+				item: "minecraft:mud"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["038A6F292DC597E2"]
+			id: "745F05143DD3D683"
+			subtitle: "加入纤维材料……"
+			tasks: [{
+				id: "5B7032B5DD0F86AB"
+				item: "minecraft:packed_mud"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["745F05143DD3D683"]
+			icon: "minecraft:iron_ingot"
+			id: "3008F198E9F12E38"
+			rewards: [{
+				id: "0A90209C33FA6990"
+				type: "xp"
+				xp: 3
+			}]
+			subtitle: "粉碎泥坯！"
+			tasks: [
+				{
+					id: "1C0EE65FEEAFD17F"
+					item: "create:crushed_raw_iron"
+					type: "item"
+				}
+				{
+					id: "0695C772ED653F27"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "铁"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2CA163F35B71E735"
+				"1F4E96EC3B77F15A"
+			]
+			icon: "minecraft:copper_ingot"
+			id: "73684052050C9EC2"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "4C14B9D6E5DB02D8"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "洗涤泥土！或者粉碎陶瓦！"
+			tasks: [
+				{
+					id: "23A5B05D0199BA1F"
+					item: "create:copper_nugget"
+					type: "item"
+				}
+				{
+					id: "574DCCD325F4EF94"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "铜"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["73A4602078813496"]
+			id: "47D5AC7D15327B25"
+			subtitle: "白雏菊处理"
+			tasks: [{
+				id: "171CA42D02F21F7C"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["47D5AC7D15327B25"]
+			icon: "minecraft:redstone"
+			id: "59123A9E8CF4BCB3"
+			rewards: [{
+				id: "0AF6437C913B5768"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "用红石酸浇活石，形成自循环！"
+			tasks: [
+				{
+					id: "61EBBFF071FF2D6C"
+					item: "minecraft:redstone_block"
+					type: "item"
+				}
+				{
+					id: "31E44BBE37CB9D3A"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "红石"
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["74581D474C09D62C"]
+			id: "73A4602078813496"
+			subtitle: "烧一下"
+			tasks: [{
+				id: "59E564E1B8874857"
+				item: "minecraft:stone"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1A4352FB579FF77E"]
+			icon: "bloodmagic:ingot_hellforged"
+			id: "6C5FEFEFE141126D"
+			rewards: [{
+				id: "0DAD4AE1E6C594A1"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "炼金反应炉处理恶魔合金块，形成自循环！"
+			tasks: [
+				{
+					id: "00F56796BDB47F53"
+					item: "bloodmagic:dungeon_metal"
+					type: "item"
+				}
+				{
+					id: "3A35E72A550212E9"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "恶魔合金"
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6E3F0DA8745CD62F"]
+			icon: "minecraft:diamond"
+			id: "6E704D2B9075758E"
+			rewards: [{
+				id: "127CB03D63E8A8CB"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "用泰拉钢粒和金锭炼金！"
+			tasks: [
+				{
+					id: "6B5FE951073C908E"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "2D1E13CA146362F7"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["435DA157EC54D3EA"]
+			id: "30CAE7CB4F12B7B7"
+			subtitle: "洗涤沙子"
+			tasks: [{
+				id: "3BAA9C14B30EF5AC"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["30CAE7CB4F12B7B7"]
+			icon: "create:zinc_ingot"
+			id: "34DCE3F630A63930"
+			rewards: [{
+				id: "2200CEB05ADEAD79"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "磨碎黏土！"
+			tasks: [
+				{
+					id: "1ED1B578E85160EB"
+					item: "create:zinc_nugget"
+					type: "item"
+				}
+				{
+					id: "18FE47D567D9B8DD"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "锌"
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["74581D474C09D62C"]
+			id: "07EDB8930476DBC7"
+			subtitle: "向圆石注入岩浆"
+			tasks: [{
+				id: "12E66CBD791D7FA9"
+				item: "minecraft:magma_block"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["07EDB8930476DBC7"]
+			id: "1E247B452EF05459"
+			subtitle: "再排出岩浆……"
+			tasks: [{
+				id: "6D7D48CBB03108D4"
+				item: "minecraft:cobbled_deepslate"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1E247B452EF05459"]
+			icon: "immersiveengineering:ingot_silver"
+			id: "4DE040C127C62C16"
+			rewards: [{
+				id: "19B3A726E63BE640"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "粉碎深板岩！"
+			tasks: [
+				{
+					id: "2BD9EAA81A6D11BD"
+					item: "immersiveengineering:nugget_silver"
+					type: "item"
+				}
+				{
+					id: "7008E16B1F2E23EF"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "银"
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1E247B452EF05459"]
+			icon: "immersiveengineering:ingot_lead"
+			id: "2D7AA0BD8291858A"
+			rewards: [{
+				id: "6C120BDF5B920F3C"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "粉碎深板岩！"
+			tasks: [
+				{
+					id: "585EF4B352F5CE64"
+					item: "immersiveengineering:nugget_lead"
+					type: "item"
+				}
+				{
+					id: "6F33B3D13D2D7E97"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "铅"
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4247C42D1F36561B"]
+			icon: "simplemetals_tin:tin_ingot"
+			id: "1A5264CDF9253994"
+			rewards: [{
+				id: "0DB30E0FE66B03DA"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "洗涤沙砾！"
+			tasks: [
+				{
+					id: "32961D56557F71B8"
+					item: "simplemetals_tin:tin_nugget"
+					type: "item"
+				}
+				{
+					id: "365D7E0F8268C854"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "锡"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["74581D474C09D62C"]
+			id: "640E68E50644C51D"
+			subtitle: "缠魂圆石"
+			tasks: [{
+				id: "3F22A9C79A5480BA"
+				item: "minecraft:blackstone"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["640E68E50644C51D"]
+			icon: "immersiveengineering:ingot_uranium"
+			id: "757C9CEEDC437271"
+			rewards: [{
+				id: "4A6FF49F19DE36E1"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "粉碎黑石！"
+			tasks: [
+				{
+					id: "2975E6BE0256C762"
+					item: "immersiveengineering:nugget_uranium"
+					type: "item"
+				}
+				{
+					id: "3FD46B5FF4EB5BAD"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "铀"
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4247C42D1F36561B"]
+			id: "2A4061F6354FD43D"
+			subtitle: "洗涤沙砾产出的副产物……"
+			tasks: [{
+				id: "7A856C843F2409A3"
+				item: "minecraft:flint"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2A4061F6354FD43D"]
+			icon: "immersiveengineering:ingot_nickel"
+			id: "1F15CF2537659CA5"
+			rewards: [{
+				id: "2B2129FE5F21DBCD"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "磨碎燧石！"
+			tasks: [
+				{
+					id: "729582387D3E6072"
+					item: "immersiveengineering:nugget_nickel"
+					type: "item"
+				}
+				{
+					id: "5E5A9444665C9EE2"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "镍"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3008F198E9F12E38"]
+			icon: "undergarden:cloggrum_ingot"
+			id: "4AC710EC228F6A22"
+			rewards: [{
+				id: "12268F213D224570"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "铁锭与末地空气混合！"
+			tasks: [
+				{
+					id: "38E710AD9B857CE0"
+					item: "undergarden:cloggrum_ingot"
+					title: "扼塞"
+					type: "item"
+				}
+				{
+					id: "134DBAC709B40A16"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			x: -10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["745F05143DD3D683"]
+			icon: "immersiveengineering:ingot_aluminum"
+			id: "3ED6E1789C0B7C55"
+			rewards: [{
+				id: "13855F1646EDF90B"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "粉碎泥坯！"
+			tasks: [{
+				id: "4E975F93AD98886A"
+				item: "kubejs:crushed_raw_bauxite"
+				type: "item"
+			}]
+			title: "铝"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3008F198E9F12E38"]
+			id: "0ED88CF931E3698F"
+			subtitle: "炼钢！"
+			tasks: [{
+				id: "73D8AD3772DE82AB"
+				item: "immersiveengineering:ingot_steel"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0ED88CF931E3698F"]
+			id: "0AD582715391DEE4"
+			subtitle: "彻底磨碎钢锭……"
+			tasks: [{
+				id: "24878E431E5DDBA3"
+				item: "immersiveengineering:dust_steel"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0AD582715391DEE4"]
+			icon: "undergarden:froststeel_ingot"
+			id: "4F63F4EF9023B9AD"
+			rewards: [{
+				id: "3EFBEC6BEDBB8699"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "在雪帽菇熔炉中逆熵冷冻！"
+			tasks: [
+				{
+					id: "5CD70A854663B05F"
+					item: "kubejs:froststeel_dust"
+					type: "item"
+				}
+				{
+					id: "0F21120ED2644984"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "霜钢"
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["640E68E50644C51D"]
+			icon: "blue_skies:pyrope_gem"
+			id: "28157223D840F237"
+			rewards: [{
+				id: "078B078637BB6BE9"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "利用炼金术桌将榴石还原为原矿，实现自循环！"
+			tasks: [
+				{
+					id: "4AF1595DBC9F9ACB"
+					item: "blue_skies:everdawn_pyrope_ore"
+					type: "item"
+				}
+				{
+					id: "53B1FCA0FD6E9793"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "榴石"
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["640E68E50644C51D"]
+			icon: "blue_skies:diopside_gem"
+			id: "0A9BEAAC5CF53160"
+			rewards: [{
+				id: "0E51840148E1C18D"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "利用炼金术桌将透辉石还原为原矿，实现自循环！"
+			tasks: [
+				{
+					id: "159CFE28A5FAD6D6"
+					item: "blue_skies:everdawn_diopside_ore"
+					type: "item"
+				}
+				{
+					id: "45644661A4EEE0D9"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "透辉石"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6E704D2B9075758E"]
+			icon: "blue_skies:charoite"
+			id: "0BA74E3F0231A1A0"
+			rewards: [{
+				id: "69EDF17AB7C74D28"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "用紫水晶块和钻石炼金！"
+			tasks: [
+				{
+					id: "11F794074B0BAE17"
+					item: "blue_skies:charoite"
+					type: "item"
+				}
+				{
+					id: "5C1DA73E7A6B9043"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["640E68E50644C51D"]
+			icon: "blue_skies:moonstone_shard"
+			id: "66A2127A9B53A5FB"
+			rewards: [{
+				id: "191F051C21040057"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "利用炼金术桌将月长石碎片还原为原矿，实现自循环！"
+			tasks: [
+				{
+					id: "2B01A2AFC5580EB0"
+					item: "blue_skies:everdawn_moonstone_ore"
+					type: "item"
+				}
+				{
+					id: "20A241A4B644AC90"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "月长石"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3008F198E9F12E38"]
+			icon: "blue_skies:aquite"
+			id: "05BD3E5ED6201A8A"
+			rewards: [{
+				id: "38E14EFA52538F0C"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "对粉碎铁矿石进行魔力灌注！"
+			tasks: [
+				{
+					id: "6B52DA9A635048E1"
+					item: "create_blue_skies_compat:crushed_aquite_ore"
+					type: "item"
+				}
+				{
+					id: "78A3E314CA0787FA"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "水蓝石"
+			x: -10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3008F198E9F12E38"]
+			icon: "blue_skies:horizonite_ingot"
+			id: "2C668F500DFF33A7"
+			rewards: [{
+				id: "6A3D7DFE67839ED3"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "用炼金术桌转化粉碎铁矿石！"
+			tasks: [
+				{
+					id: "5CAA0F8A82C43D33"
+					item: "create_blue_skies_compat:crushed_horizonite_ore"
+					type: "item"
+				}
+				{
+					id: "1EEEE03BCE7DC577"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "炙铁"
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3008F198E9F12E38"]
+			icon: "blue_skies:falsite_ingot"
+			id: "6F1F217D2139310D"
+			rewards: [{
+				id: "1E242B5A352B758D"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "炼金矩阵转化紫水晶和铁锭！"
+			tasks: [
+				{
+					id: "1E2878991CE99E15"
+					item: "blue_skies:falsite_ingot"
+					type: "item"
+				}
+				{
+					id: "238002CB7838E027"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			x: -10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3008F198E9F12E38"]
+			icon: "blue_skies:ventium_ingot"
+			id: "792CFDA67B0568A2"
+			rewards: [{
+				id: "7A69AC41ACE23FAE"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "对粉碎铁矿石进行魔力灌注！"
+			tasks: [
+				{
+					id: "1BBD1568D3EC0E71"
+					item: "create_blue_skies_compat:crushed_ventium_ore"
+					type: "item"
+				}
+				{
+					id: "17FD465CE1BE610D"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "镰鼬铁"
+			x: -10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A4352FB579FF77E"]
+			icon: "undergarden:forgotten_ingot"
+			id: "5B92A3E71ABB5CC7"
+			rewards: [{
+				id: "51FF75A761D03022"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "设法组装遗忆守卫刷怪蛋，然后击败它获取！"
+			tasks: [
+				{
+					id: "6265CC065CFCE2FB"
+					item: "undergarden:forgotten_guardian_spawn_egg"
+					type: "item"
+				}
+				{
+					id: "784385066FA211DA"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "遗忆金属"
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["325D500216D2EFDC"]
+			icon: "minecraft:quartz"
+			id: "40717610A2317CCE"
+			rewards: [{
+				id: "5E43FF5184328C2F"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "洗涤灵魂沙！"
+			tasks: [
+				{
+					id: "5AE2230AD34421C4"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "3E3811D7B27C46A2"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			title: "下界石英"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["74581D474C09D62C"]
+			description: [
+				"觉得传统的钻头/挤压刷石机太卡/太麻烦？"
+				"试试动力造石机！只要选择需要产出的石头种类（必须是正常情况下流体接触能产生的），通入动力，它就可以自动生成这个石头！"
+				""
+				"支持的石头类型：石头、圆石、玄武岩、熔渣、石灰岩。"
+				"产出速率：1圆石/rpm*s^-1"
+			]
+			id: "7804D40DE4CE8B4D"
+			rewards: [
+				{
+					id: "1273FD85D4F37837"
+					item: "minecraft:water_bucket"
+					type: "item"
+				}
+				{
+					id: "2C04C243E9827B05"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			subtitle: "但这里提供了合理的解决方案"
+			tasks: [{
+				id: "4208CB87F5272500"
+				item: {
+					Count: 1
+					id: "createcobblestone:mechanical_generator"
+					tag: {
+						BlockEntityTag: {
+							type: "none"
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "万事开头难"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["30CAE7CB4F12B7B7"]
+			id: "1F4E96EC3B77F15A"
+			subtitle: "把黏土搓成块，然后烧制"
+			tasks: [{
+				id: "373737468DA9CDEB"
+				item: "minecraft:terracotta"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1F4E96EC3B77F15A"]
+			id: "5012BDA254DF42C1"
+			subtitle: "磨碎陶瓦……"
+			tasks: [{
+				id: "29DD0B09BBAF96D5"
+				item: "minecraft:red_sand"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+	]
+	subtitle: ["Standardized Production"]
+	title: "【附加】标准化生产"
+}

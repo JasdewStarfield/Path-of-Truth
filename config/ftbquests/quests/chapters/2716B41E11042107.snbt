@@ -1,0 +1,960 @@
+{
+	autofocus_id: "143E6A57D69BAE65"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2716B41E11042107"
+	group: "58EDF058942F253F"
+	hide_quest_details_until_startable: true
+	icon: "immersiveengineering:component_electronic_adv"
+	id: "2716B41E11042107"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 12.0d
+			y: 10.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/i5.png"
+			rotation: 0.0d
+			width: 18.770642201834864d
+			x: 0.0d
+			y: 8.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["5FB9514C6DE7AD58"]
+			description: [
+				"通过这个工程块，你可以开始构建一些真正意义上的重型机器了）"
+				""
+				"&o&m&c当然，更沉重的地方大抵是它的造价&r&r&r"
+				"&o&b更悲凉的是后续你会需要很多……也许应该看看怎么通过魔法创造遗忆守卫？&r&r"
+			]
+			hide_until_deps_complete: true
+			id: "143E6A57D69BAE65"
+			rewards: [{
+				id: "7E32ADC9F2B7A0CD"
+				item: "irons_spellbooks:heavy_chain_necklace"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "重大工程"
+			tasks: [{
+				id: "55ACF0AF13FB158B"
+				item: "immersiveengineering:heavy_engineering"
+				type: "item"
+			}]
+			title: "【起点】现代工业基石"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["143E6A57D69BAE65"]
+			description: ["合格的霉国军人应该在听到石油这个词的时候一跃而起！"]
+			id: "2E8FF0455E304658"
+			subtitle: "美军前置科技"
+			tasks: [{
+				id: "38E7CABF96749223"
+				item: "createdieselgenerators:oil_scanner"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2E8FF0455E304658"]
+			description: [
+				"现在，你的现代工业基础需要经过长途跋涉来到地面，所以——你至少得给人家弄条路）"
+				"“拼命也要挖出大油田！”"
+			]
+			icon: "createdieselgenerators:pumpjack_hole"
+			id: "22B1EE261A88D9D1"
+			subtitle: "注入动力"
+			tasks: [
+				{
+					count: 64L
+					id: "7E75D3CA3B487C74"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "07470EB8699EF6CC"
+					item: "createdieselgenerators:pumpjack_hole"
+					type: "item"
+				}
+			]
+			title: "工业血管"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"22B1EE261A88D9D1"
+				"143E6A57D69BAE65"
+			]
+			description: [
+				"具体可以参考思索说明"
+				"虽然是古老的磕头机，但也足够你来使用了）"
+				"只需要从抽油机曲柄输入动力，就可以抽出原油了！"
+				""
+				"请注意：组装后，上方的整个横向杆状结构都需要用强力胶粘成一个整体（思索内有示意图），这样才能正常运行！"
+			]
+			icon: "createdieselgenerators:pumpjack_crank"
+			id: "08B3DECCC7EBD7CE"
+			subtitle: "美军战时科技"
+			tasks: [
+				{
+					id: "58127A5BBC890877"
+					item: {
+						Count: 1
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "44604D81B06840F1"
+					item: "createdieselgenerators:pumpjack_crank"
+					type: "item"
+				}
+				{
+					id: "78FC94DC3ACA22FB"
+					item: "createdieselgenerators:pumpjack_bearing"
+					type: "item"
+				}
+				{
+					id: "7BB10B5C90BB4970"
+					item: "createdieselgenerators:pumpjack_head"
+					type: "item"
+				}
+			]
+			title: "组装抽油机"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["08B3DECCC7EBD7CE"]
+			description: [
+				"普通的原油什么都做不了，但是相应的，处理后的原油能做的事情太多了。"
+				"所以，现在你需要分馏塔——而且需要不止一个！"
+			]
+			id: "1AAD83556BD302DD"
+			subtitle: "黏糊糊"
+			tasks: [{
+				id: "1BAB34C7031C612D"
+				item: "createdieselgenerators:crude_oil_bucket"
+				type: "item"
+			}]
+			title: "液体宝藏"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["143E6A57D69BAE65"]
+			description: [
+				"&4一切矿物需求的终极解决手段&r"
+				""
+				"通过斗轮式采矿机，你可以几乎凭空产出矿物）"
+				"虽然理论上是矿脉开采没错，也需要你提前测定就是了，但矿物的产量仍然惊人。"
+			]
+			icon: "immersiveengineering:excavator"
+			id: "71B673D310440EBC"
+			shape: "diamond"
+			subtitle: "矿来！"
+			tasks: [
+				{
+					count: 16L
+					id: "23A211BF5ED324E7"
+					item: "immersiveengineering:sheetmetal_steel"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "4DC0B8B13AD3B66C"
+					item: "immersiveengineering:radiator"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "4423AE835BC911EE"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "790FD0EBDA4C037F"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4B2958FB210578CA"
+					item: "immersiveengineering:heavy_engineering"
+					type: "item"
+				}
+				{
+					count: 26L
+					id: "248BDFBFD58BD25F"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "4C6929FE38D0F838"
+					item: "immersiveengineering:storage_steel"
+					type: "item"
+				}
+				{
+					id: "1C74408D889CB8AF"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "搭建斗轮式采矿机"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["71B673D310440EBC"]
+			description: [
+				"斗轮式采矿机的采矿量取决于一片区域的矿物储量（非物理意义上）"
+				"而这就是检查储量的工具（笑"
+				""
+				"想要知道具体有哪些矿脉，以及每个矿脉产出什么类型的矿产，请看工程师手册的资源章节"
+				"&a我们很贴心地为除了（原来就没有矿脉的）末地以外的所有维度添加了自定义的矿脉&r，所以你可以成为跨维度矿业老板了（"
+			]
+			id: "7B7978B0964080F3"
+			shape: "diamond"
+			subtitle: "我矿脉呢？"
+			tasks: [{
+				id: "6F18410C24225D27"
+				item: {
+					Count: 1
+					id: "immersiveengineering:survey_tools"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"143E6A57D69BAE65"
+				"1AAD83556BD302DD"
+			]
+			description: [
+				"那就热一下）"
+				"通过大型分馏，现代工业之美将会在你面前展开。"
+			]
+			icon: "createdieselgenerators:distillation_controller"
+			id: "3FCEB9256A15A4B2"
+			subtitle: "静置无法分层……"
+			tasks: [
+				{
+					id: "421CA7F325EAB59A"
+					item: "createdieselgenerators:distillation_controller"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0AC26E7B6DD073F2"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+				{
+					id: "4CAE0027218E1C46"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+			]
+			title: "搭建分馏塔"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3FCEB9256A15A4B2"
+				"1AAD83556BD302DD"
+			]
+			description: [
+				"重油还可以进一步分解——然后获得你需要的一些特定资源）"
+				"这可以让你的某些被精度干扰概率的配方成功率提升到百分百……"
+			]
+			hide_until_deps_complete: true
+			id: "107639F1A8166B9C"
+			subtitle: "沉重坚实"
+			tasks: [{
+				id: "0586BF2CC0F85178"
+				item: "kubejs:heavy_oil_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"3FCEB9256A15A4B2"
+				"1AAD83556BD302DD"
+			]
+			description: ["生物柴油对应的本体……以及某些发动机的燃料。"]
+			hide_until_deps_complete: true
+			id: "443ED09E810FE23D"
+			subtitle: "轰！"
+			tasks: [{
+				id: "77B2B9F4B798D3F8"
+				item: "createdieselgenerators:diesel_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"3FCEB9256A15A4B2"
+				"1AAD83556BD302DD"
+			]
+			description: [
+				"下界合金易溶于汽油，但显然合成下界合金的过程中，除了残骸碎片，我们还需要一些黄色的东西……"
+				""
+				"&o&e*你就说琥珀金是不是金吧）&r&r"
+			]
+			hide_until_deps_complete: true
+			id: "2718164469D544DF"
+			shape: "circle"
+			subtitle: "也许是燃料"
+			tasks: [{
+				id: "70D5188BB7D36B40"
+				item: "createdieselgenerators:gasoline_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3FCEB9256A15A4B2"
+				"1AAD83556BD302DD"
+			]
+			description: [
+				"现代工业最大的依靠之一就是塑料，而塑料的来源就是石油。"
+				"现在你需要尝试复刻这一过程，来触及到这一世界的工业巅峰。"
+			]
+			hide_until_deps_complete: true
+			id: "46A5743F6DC8054D"
+			subtitle: "现代工业第一步"
+			tasks: [{
+				id: "62E21C117613BBBE"
+				item: "kubejs:lpg_bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["46A5743F6DC8054D"]
+			description: ["你开始接近现代了，你找到了塑料，但是我们不提供免费垃圾袋（"]
+			id: "27AC0014531AA954"
+			subtitle: "塑料！文明之光！"
+			tasks: [{
+				id: "5249485F3375C40B"
+				item: "kubejs:liquid_plastic_bucket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["27AC0014531AA954"]
+			description: [
+				"但是你不能把塑料做成眼镜框，也不可以在这里唱《看，猫头鹰》"
+				"塑胶是电子元件的基础材料——或者说底板）"
+				"很真实吧&m&o&b（很复杂吧&r&r&r"
+			]
+			icon: "immersiveengineering:plate_duroplast"
+			id: "3E21C675D4F61E6B"
+			rewards: [{
+				id: "6DF3368F11CA92C9"
+				item: "immersiveengineering:shader_bag_epic"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "你疑似有点城市化了"
+			tasks: [{
+				id: "484A50EA23068A83"
+				item: "immersiveengineering:plate_duroplast"
+				type: "item"
+			}]
+			title: "塑胶"
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"3E21C675D4F61E6B"
+				"10F4740EEDA142EE"
+			]
+			description: [
+				"这将是对于你未来&b（可能存在的）电子厂生涯的第一步&r预演："
+				"看到纯粹的，还没有焊接任何元件的板子）"
+				"另外，激光蚀刻的失败率本身确实很高，所以如果发现&c连续失败了&r，请放平心态。"
+				""
+				"&o&7*反正塑料便宜。&r&r"
+			]
+			id: "32DA53E6EDA0AC90"
+			subtitle: "焊板子！"
+			tasks: [{
+				id: "48C588AD1B77239B"
+				item: "kubejs:electronic_circuit_board"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"32DA53E6EDA0AC90"
+				"10F4740EEDA142EE"
+				"7C566E8D9F54FEF9"
+			]
+			description: [
+				"自己给自己焊板子你还想要工资？不可能的，朋友）"
+				"为了在这个世界顺利使用精密的电子元件，你需要使用性质更好的材料……并且需要一些魔法的力量。"
+				""
+				"&o&b提示：盖亚魂锭可以通过贤者之石分别炼制泰拉钢锭和盖亚之魂组合而成！&r&r"
+			]
+			hide_until_deps_complete: true
+			id: "538F608DF5017A6A"
+			subtitle: "没有工资"
+			tasks: [{
+				id: "4BE26B418AD3ABE6"
+				item: "immersiveengineering:component_electronic_adv"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"538F608DF5017A6A"
+				"7D6BF4F6E28213D6"
+				"68A3C3EE83073415"
+			]
+			description: [
+				"终于，你进入了电子时代）"
+				"虽然MC不能为你提供完整的计算机，但你已经接近这个世界的真相了。"
+			]
+			id: "07B58ED0910776DF"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "高精尖"
+			tasks: [{
+				id: "5EBFA215B48BC68C"
+				item: "kubejs:electronic_engineering"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["143E6A57D69BAE65"]
+			description: [
+				"对于武器爱好者而言，目前终于出现了一些比一般枪械更高级的东西……"
+				"化学喷射器&d需要特定的液体&r（这是显然的）并造成喷洒效果，而磁轨炮则可以&c发射不同的棒状物&r并造成不同的效果。"
+				""
+				"&o&m&7*一个洒水一个用棒子听起来很奇怪……&r&r&r"
+			]
+			id: "52AF7DAADA5AA0EA"
+			rewards: [
+				{
+					count: 8
+					id: "3CE71E82F7BBCA05"
+					item: "immersiveengineering:stick_steel"
+					type: "item"
+				}
+				{
+					id: "5A0FA4ABE73F0B6E"
+					item: "immersiveengineering:biodiesel_bucket"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "哒哒哒哒哒"
+			tasks: [
+				{
+					id: "14D9A7AD66EB0E8E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 3
+							}
+						}
+						id: "immersiveengineering:railgun"
+					}
+					type: "item"
+				}
+				{
+					id: "3794154469C43BE9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 4
+							}
+						}
+						id: "immersiveengineering:chemthrower"
+					}
+					type: "item"
+				}
+			]
+			title: "现代军武库"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["143E6A57D69BAE65"]
+			description: [
+				"相较于机械动力的工具而言，沉浸工具的好处之一是可以拿在手上）"
+				"不过最好提前准备燃料）"
+				""
+				"&b&o*可能效率不行但建模一定好看&r&r"
+			]
+			id: "7FBBD3EAF8C168D1"
+			rewards: [
+				{
+					id: "1972DCE3A17A6059"
+					item: "immersiveengineering:drillhead_steel"
+					type: "item"
+				}
+				{
+					id: "26F484DF4BF0A312"
+					item: {
+						Count: 1
+						id: "immersiveengineering:sawblade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "电动工具"
+			tasks: [
+				{
+					id: "01A2A7EE3E4B6CE5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 5
+							}
+						}
+						id: "immersiveengineering:drill"
+					}
+					type: "item"
+				}
+				{
+					id: "71AC37C7FF3388AD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: {
+								Items: [ ]
+								Size: 5
+							}
+						}
+						id: "immersiveengineering:buzzsaw"
+					}
+					type: "item"
+				}
+			]
+			title: "机械化工具"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["07B58ED0910776DF"]
+			description: [
+				"&a【完成后解锁主线章节：6 统合机械，驾驭魔法】&r"
+				"工业侧的作者oc之一——非常可爱）"
+				"也是通往世界真相的通行证）"
+				"&l&c这大抵是难以置信的序列组装配方（&r&r"
+				"工业的本质就是以机械直达无限，而很快你就将能触碰到这一概念的边缘。"
+			]
+			id: "2D906487EC6F1A01"
+			rewards: [{
+				id: "3FC007C95BF523E1"
+				item: "minecraft:heart_pottery_sherd"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 4.0d
+			subtitle: "很可爱，对吧"
+			tasks: [{
+				id: "5DB8E7650A917BFD"
+				item: "kubejs:buran"
+				type: "item"
+			}]
+			title: "【终点】暴风雪"
+			x: 12.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3CA5BEEE4B787688"]
+			description: [
+				"手搓怎么可能搓出这么宝贵的合金呢，对吧）"
+				"现在你需要&a真正的冶炼&r才能得到下界合金！"
+				""
+				"&o&7注：原版下界合金护甲的防御力被&c大大提升&r&o&7了。所以还是值得用它升级你的钻石甲的&r&r"
+			]
+			id: "7C566E8D9F54FEF9"
+			rewards: [{
+				id: "288277FCDB0A4956"
+				item: "nethersdelight:nether_skewer"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "难度++"
+			tasks: [{
+				id: "1A8DCD9556C0A248"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			title: "另一种黑金"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"71B673D310440EBC"
+				"7B7978B0964080F3"
+			]
+			description: ["不仅如此，岩芯摆放下来也是很好的装饰品"]
+			id: "0B043034C7178F75"
+			rewards: [{
+				id: "0428279BAF7C1220"
+				item: "minecraft:minecart"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "更精确的矿脉采样工具"
+			tasks: [{
+				id: "67B5112D5F9FF788"
+				item: "immersiveengineering:sample_drill"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["07B58ED0910776DF"]
+			description: [
+				"&c你解锁了本整合包内最强大的物流兼存储管理模组——精致存储！&r"
+				"&o&7进入电子时代才能合成电脑，这很合理吧……&r&r"
+				"如果你要向着终末章节冲刺，那么像这样方便的物流会使你搭建产线方便不少。"
+				"至于具体用法，请参考网络教程，这里不再赘述。"
+			]
+			id: "142E14F831B0F7BE"
+			rewards: [{
+				id: "2EAFCE05DDE964FA"
+				item: "refinedstorage:wireless_grid"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "别想太多，会头疼的"
+			tasks: [{
+				id: "5D1B5A24E2694FCF"
+				item: "refinedstorage:grid"
+				type: "item"
+			}]
+			title: "精致存储"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["107639F1A8166B9C"]
+			description: [
+				"相信走到这一步的你已经被昂贵的构件中的概率系统折磨过了……"
+				"但现在，通过分馏重油，你有了润滑油！在构件配方的&2每个循环第一步&r中添加一点润滑油，就能降低安装时的磨损，保证该构件的100%产出！"
+				""
+				"&n适用范围：精密构件、铅酸构件、钢铁构件、遗忆构件、裂变电池、高级电子元件&r"
+			]
+			id: "36CD0821EDDA721F"
+			rewards: [{
+				id: "402CED88684E13B4"
+				item: "create:bar_of_chocolate"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "某巧克力打钱（不是）"
+			tasks: [{
+				id: "2854B9B83C087E71"
+				item: "kubejs:lubricant_bucket"
+				type: "item"
+			}]
+			title: "纵享丝滑"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["107639F1A8166B9C"]
+			description: [
+				"通过重油混合沙石，就能够获得沥青——可以拿来铺路，不过这也有些浪费……"
+				"毕竟沥青更适合拿来做核反应堆）"
+			]
+			id: "0A20C8766DEA529B"
+			subtitle: "黑暗侵染（物理）"
+			tasks: [{
+				id: "65A520F21476E743"
+				item: "createdieselgenerators:asphalt_block"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"143E6A57D69BAE65"
+				"443ED09E810FE23D"
+			]
+			description: [
+				"通过搅拌机，你可以将铀粉和柴油进行调和，获得一些足够绿的液体……"
+				"当然，也足够危险。"
+			]
+			id: "718195A4744D12C1"
+			subtitle: "头顶绿油油的"
+			tasks: [{
+				id: "3BDEEA9CB2941461"
+				item: "createnuclear:uranium_bucket"
+				type: "item"
+			}]
+			title: "放射性物质"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"718195A4744D12C1"
+				"3FCEB9256A15A4B2"
+			]
+			description: ["这个不能喝。真的不能。"]
+			id: "10786A8DC61BD418"
+			subtitle: "倍率：10x"
+			tasks: [{
+				id: "44C7A3EFEDE37838"
+				item: "kubejs:molten_enriched_uranium_bucket"
+				type: "item"
+			}]
+			title: "升腾！"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["10786A8DC61BD418"]
+			description: [
+				"记得穿好防护服再来处理这些东西……"
+				"有点过于危险了。"
+			]
+			id: "1BD268D137CFF394"
+			subtitle: "也不能吃！"
+			tasks: [{
+				id: "713903ADD21CE285"
+				item: "createnuclear:yellowcake"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"1BD268D137CFF394"
+				"392E8FC01684BDEC"
+			]
+			description: [
+				"终于，能够压制成铀棒的合格黄饼出现了。"
+				"跳跃的能量弧让它&a看起来就很可疑&r，但你总得用的，毕竟没有这些魔法能量，它们也无法当作&c核反应燃料&r。"
+			]
+			id: "17A821D8A88F11E4"
+			subtitle: "再多看一眼就会爆炸"
+			tasks: [{
+				id: "6BB0FA76D90E6E36"
+				item: "createnuclear:enriched_yellowcake"
+				type: "item"
+			}]
+			title: "附魔黄饼"
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2718164469D544DF"]
+			description: ["获得真正意义上的终极金属，只差一次灌装成型了！"]
+			id: "3CA5BEEE4B787688"
+			subtitle: "只差一步！"
+			tasks: [{
+				id: "1F9CA26BB20B5A1E"
+				item: "kubejs:molten_netherite_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17A821D8A88F11E4"]
+			description: [
+				"想要控制一个核反应堆，铀棒和石墨棒是需要&c同时插入&r的，单独插入铀棒会导致一些不可控事件的发生。"
+				""
+				"&o&a*希望你不要想着放个大烟花玩玩……&r&r"
+			]
+			icon: "createnuclear:uranium_rod"
+			id: "034ED4F84F07207A"
+			subtitle: "双管齐下"
+			tasks: [
+				{
+					id: "3A2BA86DDFEB266C"
+					item: "createnuclear:uranium_rod"
+					type: "item"
+				}
+				{
+					id: "455C11DAC2DC2873"
+					item: "createnuclear:graphite_rod"
+					type: "item"
+				}
+			]
+			title: "控制棒"
+			x: 9.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"0A20C8766DEA529B"
+				"7C566E8D9F54FEF9"
+			]
+			description: ["最硬核的保护，将你和反应堆运行产生的辐射隔绝开来。"]
+			id: "7D6BF4F6E28213D6"
+			subtitle: "高墙常筑"
+			tasks: [{
+				id: "1AF43DA34FB9AA48"
+				item: "createnuclear:reactor_casing"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7C566E8D9F54FEF9"]
+			description: [
+				"只有下界合金才能永久承受住激光的灼烧……"
+				"接下来你将在游戏里享受拥有光刻机的快感（x"
+				"不过很明显的一点是它的精度不高。"
+			]
+			id: "10F4740EEDA142EE"
+			subtitle: "高能高热"
+			tasks: [{
+				id: "0F1FAF424F5151D4"
+				item: "vintageimprovements:laser"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"07B58ED0910776DF"
+				"034ED4F84F07207A"
+				"7D6BF4F6E28213D6"
+			]
+			description: [
+				"按照思索搭建，投入材料，你就能收获数以百万计的应力……前提是你要维持它的运作。"
+				""
+				"你可以使用反应堆控制蓝图配置投料的配比。投料包括铀棒和石墨棒，会逐渐消耗，配置的数量越多消耗越快。一根铀棒+25堆温，一根石墨棒-10堆温。当两种棒任意一种用完，核反应堆就会自动停机。"
+				"至少需要三个铀棒、一个石墨棒才能启动反应堆。核反应堆输出的应力与堆温挂钩。"
+				"当核反应堆堆温超过1000，核反应堆就会停机并在数min后爆炸。"
+			]
+			icon: "createnuclear:reactor_blueprint_item"
+			id: "5842F5E1694C4F74"
+			shape: "diamond"
+			subtitle: "（真正的）应力自由"
+			tasks: [
+				{
+					id: "1673EC25B17F9B8D"
+					item: "createnuclear:reactor_controller"
+					type: "item"
+				}
+				{
+					id: "21D7D29B755A2659"
+					item: "createnuclear:reactor_blueprint_item"
+					type: "item"
+				}
+			]
+			title: "核反应堆"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["034ED4F84F07207A"]
+			description: [
+				"核能，输出最长效的能源之一。"
+				"当然也是短效输出最为杰出的能源之一，但这里&c没有核弹&r，所以还是想想如何利用这些电池把自己变成核动力战士吧。"
+			]
+			id: "68A3C3EE83073415"
+			subtitle: "长效动力"
+			tasks: [{
+				id: "603B831F0FAB4FC3"
+				item: "kubejs:fission_cell"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1BD268D137CFF394"]
+			description: [
+				"想要再次压缩黄饼，就不得不依靠一些&c魔法的力量&r。"
+				"通过&b灵魂与魔力集成的核心&r，以&8黑暗金属&r为框架压制&9富饶的灵魂土&r，你就能借此为燃料，点燃这种灼烧灵魂的火焰。"
+			]
+			id: "392E8FC01684BDEC"
+			subtitle: "我的邪焰会焚尽天空！"
+			tasks: [{
+				id: "55608BB2524BE870"
+				item: "createnuclear:enriching_campfire"
+				type: "item"
+			}]
+			title: "燃烧军团打进来了？"
+			x: 7.0d
+			y: 5.0d
+		}
+	]
+	subtitle: ["Petrochemical Engineering"]
+	title: "5I 黑金与化工"
+}

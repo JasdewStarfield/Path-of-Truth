@@ -1,0 +1,10 @@
+{
+  "sodium.console.game_restart": "必须重新启动游戏才能应用一项或多项视频设置！",
+  "sodium.options.use_no_error_context.name": "使用无错误上下文",
+  "sodium.console.pojav_launcher": "使用 Embeddium 时不支持 PojavLauncher。\n * 您很可能会遇到极端的性能问题、图形错误和崩溃。\n * 如果您决定继续，您将只能靠自己 - 我们不会帮助您任何错误或崩溃！",
+  "sodium.console.core_shaders_warn": "以下资源包可能与 Embeddium 不兼容：",
+  "sodium.console.core_shaders_error": "以下资源包与 Embeddium 不兼容：",
+  "sodium.console.core_shaders_info": "检查游戏日志以获取详细信息。",
+  "sodium.options.use_no_error_context.tooltip": "如果启用，将创建 OpenGL 上下文并禁用错误检查。这可能会稍微提高性能，但也会增加游戏崩溃的风险，而不是优雅地处理 OpenGL 错误。如果您遇到突然的无法解释的崩溃，您应该禁用此选项。",
+  "sodium.console.broken_nvidia_driver": "您的 NVIDIA 显卡驱动程序已过期！\n * 安装 Embeddium 时，这将导致严重的性能问题和崩溃。\n * 请将您的显卡驱动程序更新到最新版本（版本 536.23 或更高版本。）"
+}

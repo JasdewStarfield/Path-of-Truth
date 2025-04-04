@@ -1,0 +1,7 @@
+{
+  "embeddium.options.added_by_mod_string": "由模组添加：%s",
+  "embeddium.search_bar_empty": "搜索选项...",
+  "embeddium.options.use_quad_normals_for_lighting.tooltip": "启用后，Embeddium 将根据非普通块面所面向的真实方向（而不是其轴对齐方向）将着色应用于非普通块面。当禁用 Forge 实验光管道时（建议这样做以获得最佳性能），这可以提高照明质量。\n\n如果启用实验光管道，则不会产生任何影响。",
+  "embeddium.options.fullscreen.resolution.tooltip": "控制全屏模式下游戏的分辨率。",
+  "embeddium.options.use_quad_normals_for_lighting.name": "使用精确的四边形着色"
+}

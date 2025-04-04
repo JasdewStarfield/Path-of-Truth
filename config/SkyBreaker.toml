@@ -1,0 +1,5 @@
+
+["Sky Breaker Config"]
+	#Besides vanilla AxeItem, the additional Items that can be used to break the Starlit Wall
+	"Item Whitelist" = ["mekanism:atomicdisassembler"]
+

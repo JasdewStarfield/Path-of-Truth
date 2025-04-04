@@ -1,0 +1,31 @@
+{
+  "type": "sophisticatedcore:upgrade_next_tier",
+  "conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:advanced_feeding_upgrade"
+    }
+  ],
+  "key": {
+    "D": {
+      "tag": "forge:gems/mana_diamond"
+    },
+    "G": {
+      "tag": "forge:ingots/brass"
+    },
+    "R": {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    "V": {
+      "item": "sophisticatedbackpacks:feeding_upgrade"
+    }
+  },
+  "pattern": [
+    " D ",
+    "GVG",
+    "RRR"
+  ],
+  "result": {
+    "item": "sophisticatedbackpacks:advanced_feeding_upgrade"
+  }
+}

@@ -1,0 +1,49 @@
+
+["Spells Gone Wrong Config"]
+
+	#Enable some bonus features for spells!
+	["Spells Gone Wrong Config"."Spell Additions Settings"]
+		#When enabled the Black Hole Spell will become unstable just before the spell expires and cause random explosions around the black hole. When enabled the Black Hole Spell will also display explosion particles (Don't cause damage) in the middle of the black hole when the spell expires
+		"Black Hole Spell Can Cause Explosions Just Before The Spell Expires" = true
+		#When enabled the Ice Block Spell can cause Ice Patches when hitting the ground or when hitting water. Ice Patches will place Ice on blocks with the #spells_gone_wrong:ice_patch_replaceable tag and will turn Ice into Packed Ice.
+		"Ice Block Spell Can Cause Ice Patches" = true
+		#When enabled the Firefly Swarm Spell will give the glowing effect to nearby enemies
+		"Firefly Swarm Spell Can Give Glowing Effect" = true
+		#When enabled Holy Spells that deal damage do extra damage to undead mobs. When enabled with Consecration installed, Holy Spells will cause smite weakness
+		"Holy Spells Do Extra Damage To Undead Mobs" = true
+
+	#Settings for letting a spell hurt the player who casted it
+	["Spells Gone Wrong Config"."Spell Can Hurt Caster Settings"]
+		#Should the Black Hole Spell hurt the player who casted it?
+		"Black Hole Spell Can Hurt Owner" = true
+		#Should the Ice Block Spell hurt the player who casted it?
+		"Ice Block Spell Can Hurt Owner" = true
+		#Should the Comets spawned by the Starfall Spell hurt the player who casted it?
+		"Starfall Spell Can Hurt Owner" = true
+		#Should the Acid Orbs spawned by the Acid Spit Spell hurt the player who casted it?
+		"Acid Spit Spell Can Hurt Owner" = true
+		#Should the Poison Arrow and the Poison Clouds spawned by the Poison Arrow Spell hurt the player who casted it?
+		"Poison Arrow Spell Can Hurt Owner" = true
+		#Should the Fireflies spawned by the Firefly Swarm Spell hurt the player who casted it?
+		"Firefly Swarm Spell Can Hurt Owner" = true
+		#Should the Earthquake Spell hurt the player who casted it?
+		"Earthquake Spell Can Hurt Owner" = true
+		#Should the Magma Bomb and the Fire Field spawned by the Magma Bomb Spell hurt the player who casted it?
+		"Magma Bomb Spell Can Hurt Owner" = true
+		#Should the Wall Of Fire Spell hurt the player who casted it?
+		"Wall Of Fire Spell Can Hurt Owner" = true
+		#Should the Void Tentacles spawned by the Sculk Tentacles Spell hurt the player who casted it?
+		"Sculk Tentacles Spell Can Hurt Owner" = true
+		#Should the Chain Lightning Spell hurt the player who casted it?
+		"Chain Lightning Spell Can Hurt Owner" = true
+		#Should the Slow Spell slow down the player who casted it?
+		"Slow Spell Can Hurt Owner" = true
+		#Should the Lightning Bolt Spell hurt the player who casted it?
+		"Lightning Bolt Spell Can Hurt Owner" = true
+		#Should the Lightning Lance Spell hurt the player who casted it?
+		"Lightning Lance Spell Can Hurt Owner" = true
+		#Should the Blood Needles Spell and Acupuncture Spell hurt the player who casted it?
+		"Blood Needles Spell And Acupuncture Spell Can Hurt Owner" = true
+		#Should the Fang Strike Spell and Fang Ward Spell hurt the player who casted it?
+		"Fang Strike Spell And Fang Ward Spell Can Hurt Owner" = true
+

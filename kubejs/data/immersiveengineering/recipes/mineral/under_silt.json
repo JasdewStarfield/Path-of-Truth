@@ -1,0 +1,16 @@
+{
+    "type":"immersiveengineering:mineral_mix",
+    "dimensions":["undergarden:undergarden"],
+    "fail_chance":0.1,
+    "ores":[
+        {"chance":0.69,"output":{"item":"undergarden:sediment"}},
+        {"chance":0.3,"output":{"item":"minecraft:clay"}},
+        {"chance":0.01,"output":{"item":"undergarden:forgotten_nugget"}}
+    ],
+    "spoils":[
+        {"chance":0.7,"output":{"item":"undergarden:depthrock"}},
+        {"chance":0.2,"output":{"item":"undergarden:shiverstone"}},
+        {"chance":0.1,"output":{"item":"undergarden:deepsoil"}}
+    ],
+    "weight":10
+}

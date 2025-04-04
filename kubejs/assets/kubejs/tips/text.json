@@ -1,0 +1,11 @@
+{
+    "title": {
+      "text": "任务与提示文本",
+      "bold": true,
+      "underlined": true,
+      "color": "red"
+    },
+    "tip": {
+      "text": "如果你看到部分文本攻击性很强，请不要自己对号入座，对于被AOE到本开发组概不负责）"
+    }
+}

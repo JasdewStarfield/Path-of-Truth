@@ -1,0 +1,145 @@
+
+[Execution]
+	#Determines the mininmum amount of health to execute a target. The operation is (this number x execution leve)
+	"Min health threshold" = 2.5
+	#Determines wether execution should work on bosses
+	"Can execute bosses" = true
+	#Should Execution exist?
+	"Allow Execution" = true
+	#Determines the possibility per level of Execution to drop a head of the mob/player killed. Set to 0 to never apply or to 100 to always apply.
+	"Head Drop Chance" = 0.5
+	#Should this enchantment be found on the Enchanting Table?
+	"Find on Enchanting Table" = false
+
+[Wave]
+	#Determines wether the wave enchantment should show particles
+	"Show Wave" = true
+	#Determines by how much each level of Wave should pull
+	"Wave kb" = 1.7
+	#Determines whether Wave should activate on melee hit
+	"Pull on Melee hit" = false
+	#Should Wave exist?
+	"Allow Wave" = true
+	#Should Wave be incompatible with Channeling?
+	"Incompatible with Channeling" = false
+	#Should Wave be incompatible with Riptide?
+	"Incompatible with Riptide" = true
+	#Should Wave not work in the nether?
+	"Doesn't work in Nether" = true
+	#Should this enchantment be found on the Enchanting Table?
+	"Find on Enchanting Table" = false
+
+["Poison Aspect"]
+	#Determines the amount of ticks Poison Aspect should poison for
+	"Poison Ticks" = 120.0
+	#Should Poison Aspect exist?
+	"Allow Poison Aspect" = true
+	#Should Poison Aspect be incompatible with Fire Aspect?
+	"Incompatible with Fire Aspect" = true
+	#Should Poison Aspect be incompatible with Ice Aspect?
+	"Incompatible with Ice Aspect" = true
+	#Should this enchantment be found on the Enchanting Table?
+	"Find on Enchanting Table" = true
+
+[Auto-Smelting]
+	#Should Auto Smelting drop additional xp? (Not much)
+	"Drop extra xp" = true
+	#Should Auto-Smelting exist?
+	"Allow Auto Smelting" = true
+	#Should Auto-Smelting be incompatible with Fortune? 
+	"Incompatible with Fortune (Beta)" = true
+	#Should Auto-Smelting be incompatible with Enhancement?
+	"Incompatible with Enhancement" = true
+	#Should this enchantment be found on the Enchanting Table?
+	"Find on Enchanting Table" = true
+
+[Rebirth]
+	#Determines whether Rebirth should take a totem from the inventory and save you from death (true) or  Destroy the shield compeletely to save you from death (false)
+	"Use Totems" = false
+	#How much damage should Rebirth do to a shield?
+	"Rebirth Damage" = 50.0
+	#Should Rebirth exist?
+	"Allow Rebirth" = true
+	#Should this enchantment be found on the Enchanting Table?
+	"Find on Enchanting Table" = false
+
+[Stunning]
+	#How many ticks should Stunning slow for? (set to 0 to disable its slow effect)
+	SlownessTicks = 60.0
+	#How many ticks should Stunning weaken the enemy for?
+	"Weakness Ticks" = 60.0
+	#Should Stunning make noise after a succesful stun?
+	"Make noise" = true
+	#Determines the cooldown in seconds after which you're able to stun again
+	"Stunning Cooldown" = 10.0
+	#Should Stunning exist?
+	"Allow Stunning" = true
+	#Should this enchantment be found on the Enchanting Table?
+	"Find on Enchanting Table" = false
+
+[Agility]
+	#This value determines the percentage of speed that Agility should add
+	"Speed Percentage" = 15.0
+	#Should Agility exist?
+	"Allow Agility" = true
+	#Should Agility be incompatible with Curse of Slowness?
+	"Incompatible with Curse of Slowness" = true
+	#Should Agility be incompatible with Jumper
+	"Incompatible with Jumper" = true
+	#Should Agility be incompatible with Swift Sneak?
+	"Incompatible with Swift Sneak" = true
+	#Should this enchantment be found on the Enchanting Table?
+	"Find on Enchanting Table" = false
+
+["Blood Blade"]
+	#Determines the amount of HP divided by 3 that Blood Blade will recuperate each level
+	"HP recuperated" = 1.0
+	#Should Blood Blade exist?
+	"Allow Blood Blade" = true
+	#Should Blood Blade be incompatible with Boosting?
+	"Incompatible with Boosting" = true
+	#Should Blood Blade be incompatible with Looting?
+	"Incompatible with Looting" = true
+	#Should this enchantment be found on the Enchanting Table?
+	"Find on Enchanting Table" = true
+
+["Sunlight's Blessing"]
+	#Determines the amount of seconds Sunlight's Blessing takes to repair a single use of an item
+	"Sunlight Seconds" = 4.0
+	#Should Sunlight's Blessing exist?
+	"Allow Sunlight's Blessing" = true
+	#Should Sunlight's Blessing be incompatible with Mending?
+	"Incompatible with Mending" = true
+	#Should Sunlight's Blessing be incompatible with Curse of Moonlight?
+	"Incompatible with Curse of Moonlight" = true
+	#Should this enchantment be found on the Enchanting Table?
+	"Find on Enchanting Table" = false
+
+[Jumper]
+	#Determines the amount of jump boost (in blocks) that Jumper should add
+	"Jump Blocks" = 1.0
+	#Should Jumper exist?
+	"Allow Jumper" = true
+	#Should Jumper be incompatible with Agility?
+	"Incompatible with Agility" = true
+	#Should Jumper be incompatible with Curse of Slowness?
+	"Incompatible with Curse of Slowness" = true
+	#Should Jumper be incompatible with Swift Sneak?
+	"Incompatible with Swift Sneak" = true
+	#Should this enchantment be found on the Enchanting Table?
+	"Find on Enchanting Table" = false
+
+["Pain Power"]
+	#Determines the HP percentage at which Pain Power should apply its effects
+	"Low Health Threshold" = 100.0
+	#Determines the modifier to the speed increase that this enchantment should grant (set to 0 to disable)
+	"Speed Modifier" = 0.5
+	#Determines the modifier to the resistance increase that this enchantment should grant (set to 0 to disable)
+	"Resistance Modifier" = 1.0
+	#Determines the modifier to the damage increase that this enchantment should grant (set to 0 to disable)
+	"Damage Modifier" = 0.0
+	#Should Pain Power exist?
+	"Allow Pain Power" = true
+	#Should this enchantment be found on the Enchanting Table?
+	"Find on Enchanting Table" = false
+

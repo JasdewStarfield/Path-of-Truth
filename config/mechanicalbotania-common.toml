@@ -1,0 +1,7 @@
+#Amount of mana used by the spinerette every 20 ticks (1 second)
+manaCost = 50
+#Base Stress value that is divided by number of bound flowers to produce total stress created by mana motor 
+baseStressValue = 2048
+#Values of how much RPM each tier of soil generates, in ascending order
+rpmvalues = [8, 16, 32, 64, 128]
+

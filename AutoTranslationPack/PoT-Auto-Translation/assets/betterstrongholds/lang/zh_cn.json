@@ -1,0 +1,19 @@
+{
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.lanternSpawnRate.@Tooltip[1]": "默认值：0.2",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.cobwebReplacementChanceSpawner": "蜘蛛网生成率 (SPAWNER)",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general": "常规设置",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.cobwebReplacementChanceSpawner.@Tooltip[1]": "默认值：0.3",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.cobwebReplacementChanceNormal": "蛛网生成率（正常）",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.lanternSpawnRate.@Tooltip[0]": "灯笼在整个要塞中生成的速度。",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.lanternSpawnRate": "灯笼生成率",
+  "text.autoconfig.betterstrongholds-fabric-1_20.title": "YUNG更好的据点",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.cobwebReplacementChanceSpawner.@Tooltip[0]": "蜘蛛网在图书馆的蜘蛛生成器周围生成的速率。",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.torchSpawnRate": "火炬生成率",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.cobwebReplacementChanceNormal.@Tooltip[1]": "默认值：0.1",
+  "Use /locate structure betterstrongholds:stronghold instead!": "使用 /locate 结构 betterstrongholds:stronghold 代替！",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds": "YUNG更好的据点",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.torchSpawnRate.@Tooltip[0]": "整个要塞中火把的生成速度。",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.@Tooltip": "常规设置。",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.torchSpawnRate.@Tooltip[1]": "默认值：0.1",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.cobwebReplacementChanceNormal.@Tooltip[0]": "蜘蛛网在要塞各个部分生成的速度。"
+}

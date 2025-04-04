@@ -1,0 +1,43 @@
+
+["battlemusic configs"]
+	#Volume of battle music, set to zero to mute
+	#Range: 0.0 ~ 5.0
+	volume = 0.7
+	#
+	#Whether battle music's volume is affected by the music slider
+	linked_to_music_volume = true
+	#
+	#How much the battle music changes in pitch when at low health    
+	#    > Values below zero shift the pitch down, above zero shift the pitch up    
+	#    > Set to zero to disable   
+	#Range: -0.5 ~ 1.0
+	health_pitch_amount = 0.05
+	#
+	#How much the battle music changes in pitch during the second phase of the Ender Dragon fight    
+	#    > Values below zero shift the pitch down, above zero shift the pitch up  
+	#    > Set to zero to disable     
+	#Range: -0.5 ~ 1.0
+	dragon_pitch_amount = 0.05
+	#
+	#At what HP should the battle music shift in pitch
+	#Range: > 1
+	health_pitch_thresh = 6
+	#
+	#Is the health threshold a percentage value?    
+	#    > If it is, the above value must be between 1 and 100    
+	health_pitch_percent = false
+	#
+	#How many seconds songs take to fade in and out
+	#Range: 0.0 ~ 10.0
+	fade_time = 1.0
+	#
+	#Entites and their respective songs, write in entity;song;priority format       
+	#    > entity = the entity's ID, eg. "minecraft:pig"       
+	#    > song = the song's ID, eg. "battlemusic:mini1"       
+	#    > priority = what precedence this song takes over other entity's music, eg. a priority of 1 will fade out and play over a priority of 0.      
+	entities_songs = ["minecraft:elder_guardian;battlemusic:mini1;0", "minecraft:warden;battlemusic:necromancer;1", "minecraft:wither;battlemusic:wither_storm;2", "minecraft:ender_dragon;battlemusic:enderman;5", "iter_rpg:hobgoblin;battlemusic:mini1;0", "queen_bee:queen_bee;battlemusic:mini1;0", "irons_spellbooks:dead_king;battlemusic:boss;2", "irons_spellbooks:citadel_keeper;battlemusic:mini1;0", "irons_spellbooks:archevoker;battlemusic:mini1;0", "dawnera:tyrannosaurus;battlemusic:mini1;0", "upgrade_aquatic:great_thrasher;battlemusic:mini1;0", "born_in_chaos_v1:dire_hound_leader;battlemusic:mini1;0", "born_in_chaos_v1:supreme_bonescaller;battlemusic:mini1;0", "alexscaves:luxtructosaurus;battlemusic:menta_menardi;3", "alexscaves:tremorzilla;battlemusic:metaluna;2", "alexscaves:magnetron;battlemusic:mini2;0", "alexscaves:forsaken;battlemusic:mini2;1", "alexscaves:brainiac;battlemusic:mini1;0", "alexsmobs:void_worm;battlemusic:ghast;4", "alexsmobs:warped_mosco;battlemusic:mini1;0", "plenty_of_golems:ancient_of_prismarine;battlemusic:mini2;3", "born_in_chaos_v1:lord_pumpkinhead;battlemusic:mini2;0", "endergetic:brood_eetle;battlemusic:cauldron;2", "aether:slider;battlemusic:mini2;2", "aether:valkyrie;battlemusic:mini1;0", "aether:sun_god;battlemusic:summit;3", "aether:valkyrie_queen;battlemusic:mini2;2", "cataclysm:ender_golem;battlemusic:mini2;0", "cataclysm:ignited_revenant;battlemusic:mini2;0", "cataclysm:ender_guardian;battlemusic:porcus_humungous;4", "cataclysm:netherite_monstrosity;battlemusic:redstone_monstrosity;4", "cataclysm:ignis;battlemusic:wildfire;4", "cataclysm:the_harbinger;battlemusic:ancient;4", "cataclysm:the_leviathan;battlemusic:ancient_guardian;4", "cataclysm:the_prowler;battlemusic:mini1;0", "cataclysm:amethyst_crab;battlemusic:mini2;0", "cataclysm:coralssus;battlemusic:mini1;0", "cataclysm:ancient_remnant;battlemusic:ascension;3", "cataclysm:deepling_brute;battlemusic:mini1;0", "mowziesmobs:ferrous_wroughtnaut;mowziesmobs:music.ferrous_wroughtnaut_theme;1", "mowziesmobs:umvuthi;mowziesmobs:music.umvuthi_theme;2", "mowziesmobs:frostmaw;mowziesmobs:music.frostmaw_theme;2", "bosses_of_mass_destruction:void_blossom;battlemusic:arena2;1", "bosses_of_mass_destruction:lich;battlemusic:boss;2", "bosses_of_mass_destruction:gauntlet;battlemusic:kermetic;3", "bosses_of_mass_destruction:obsidilith;battlemusic:broken_heart_of_ender;3", "twilightforest:naga;battlemusic:arena2;2", "twilightforest:lich;battlemusic:boss;3", "twilightforest:hydra;battlemusic:arena1;3", "twilightforest:minoshroom;battlemusic:mini1;0", "twilightforest:alpha_yeti;battlemusic:mini2;1", "twilightforest:phantom_knight;battlemusic:mini2;1", "twilightforest:ur_ghast;battlemusic:metaluna;3", "twilightforest:snow_queen;battlemusic:ascension;3", "mutant_mobs:mutant_zombie;battlemusic:mini1;0", "mutant_mobs:mutant_skeleton;battlemusic:mini1;0", "mutant_mobs:mutant_creeper;battlemusic:mini2;0", "mutant_mobs:mutant_enderman;battlemusic:shattered;1", "mutant_more:mutant_blaze;battlemusic:mini2;1", "mutant_more:mutant_shulker;battlemusic:mini2;1", "mutant_more:mutant_wither_skeleton;battlemusic:mini1;0", "rottencreatures:dead_beard;battlemusic:mini1;0", "rottencreatures:immortal;battlemusic:mini1;0"]
+	#
+	#A generic battle song to play for any other undefined hostile entity      
+	#    > Leave blank for no default battle music       
+	default_song = ""
+

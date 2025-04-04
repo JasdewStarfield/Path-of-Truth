@@ -1,0 +1,5 @@
+#Render food bar when riding a mount.
+food_bar = true
+#Render experience bar when not jumping with a mount.
+experience_bar = true
+

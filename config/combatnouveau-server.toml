@@ -1,0 +1,92 @@
+#Player is knocked back by attacks which do not cause any damage, such as when hit by snowballs, eggs, and fishing rod hooks.
+weak_attacks_knock_back_players = true
+#Force all entity hitboxes to have a cubic size of at least 0.9 blocks, making them easier to hit and shoot.
+#This only affects targeting an entity, no collisions or whatsoever. Useful for hitting e.g. bats, rabbits, silverfish, fish, and most baby animals.
+min_hitbox_size = true
+#Makes knockback stronger towards targets not on the ground (does not apply when in water).
+upwards_knockback = true
+#Health regenerates every 2 seconds, which requires more than 6 food points. Also food points will be directly consumed when healing. Surplus saturation does not yield quick health regeneration.
+balanced_food_mechanics = false
+#Sprinting and attacking no longer interfere with each other, making critical hits possible at all times.
+critical_hits_while_sprinting = true
+#Expand all entity hitboxes by 10%, making hitting a target possible from a slightly greater range and with much increased accuracy.
+inflate_hitboxes = true
+#Attacking will no longer stop the player from sprinting. Very useful when swimming, so you can fight underwater without being stopped on every hit.
+sprint_attacks = true
+#Disables damage immunity when hit by a projectile. Makes it possible for entities to be hit by multiple projectiles at once (useful for the multishot enchantment).
+no_projectile_immunity = true
+
+[shield]
+	#Shields knock back attackers (see MC-147694).
+	#NONE: Vanilla behavior, no knockback is dealt to attackers.
+	#CONSTANT: Always the same knockback is dealth to attackers.
+	#VARIABLE: The knockback strength is greater the more precisely the shield block is timed in regards to the attack.
+	#Allowed Values: NONE, CONSTANT, VARIABLE
+	shield_knockback = "VARIABLE"
+	#Amount of ticks after starting to block in which an attacker will be knocked back further than usual when "shield_knockback" is set to VARIABLE.
+	#Range: > 0
+	variable_shield_knockback_delay = 20
+	#Skip 5 tick warm-up delay when activating a shield, so they become effective instantly.
+	remove_shield_delay = true
+	#Arc of available protection depending on what angle the attack is coming from and where the player is looking (means the lower this angle the closer you need to be facing your attacker).
+	#Vanilla protection arc is 180 degrees, which has been reduced to around 100 in combat tests.
+	#This does not change the protection arc for projectiles which remains at 180 degress.
+	#Range: 0.0 ~ 360.0
+	shield_protection_arc = 100.0
+
+[items]
+	#It only takes 20 ticks to drink liquid foods (such as potions, milk, and bottled liquids) instead of 32 or 40.
+	fast_drinking = true
+	#Only damages axes by 1 durability instead of 2 when attacking so they properly be used as weapons.
+	no_axe_attack_penalty = true
+	#Add a delay of 4 ticks between throwing snowballs or eggs, just like with ender pearls.
+	throwables_delay = true
+	#Increase snowball and egg stack size from 16 to 64, and potion stack size from 1 to 16 (only for potions of the same type of course).
+	increase_stack_size = true
+	#Eating and drinking both are interrupted if the player is damaged.
+	eating_interruption = true
+
+[cooldown]
+	#Disable attacking when attack cooldown is below a certain percentage.
+	#Setting this to 0.0 means attacking is possible with any strength as in vanilla.
+	#Range: 0.0 ~ 1.0
+	min_attack_strength = 1.0
+	#Holding down the attack button keeps attacking continuously. No more spam clicking required.
+	hold_attack_button = false
+	#Delay in ticks between attacks when holding the attack button is enabled.
+	#This basically also puts a cap on the max spam clicking speed.
+	#Range: > 0
+	hold_attack_button_delay = 5
+	#Attack cooldown is unaffected by switching hotbar items.
+	fast_switching = true
+	#Melee attacks that don't hit a target won't trigger the attack cooldown.
+	retain_energy_on_miss = false
+
+[attributes]
+	#Makes it so that swords, hoes, and tridents have an increased reach when attacking.
+	additional_attack_reach = true
+	#Overrides for setting and balancing attack reach values of items.
+	#Takes precedence over any changes made by "additional_attack_reach" option.
+	#As with all items, this value is added on top of the default attack reach of the player (which is 3.0 by default, and has a hard cap at 6.0).
+	#Format for every entry is "<namespace>:<path>,<amount>". Tags are supported, must be in the format of "#<namespace>:<path>". Namespace may be omitted to use "minecraft" by default. May use asterisk as wildcard parameter via pattern matching, e.g. "minecraft:*_shulker_box" to match all shulker boxes no matter of color.
+	attack_reach_overrides = []
+	#Overrides for setting and balancing attack speed values of items.
+	#As with all items, this value is added on top of the default attack speed of the player (which is 4.0 by default).
+	#Format for every entry is "<namespace>:<path>,<amount>". Tags are supported, must be in the format of "#<namespace>:<path>". Namespace may be omitted to use "minecraft" by default. May use asterisk as wildcard parameter via pattern matching, e.g. "minecraft:*_shulker_box" to match all shulker boxes no matter of color.
+	attack_speed_overrides = []
+	#Overrides for setting and balancing attack damage values of items.
+	#As with all items, this value is added on top of the default attack strength of the player (which is 1.0 by default).
+	#Format for every entry is "<namespace>:<path>,<amount>". Tags are supported, must be in the format of "#<namespace>:<path>". Namespace may be omitted to use "minecraft" by default. May use asterisk as wildcard parameter via pattern matching, e.g. "minecraft:*_shulker_box" to match all shulker boxes no matter of color.
+	attack_damage_overrides = []
+
+[sweeping]
+	#Is the sweeping edge enchantment required to perform a sweep attack.
+	require_sweeping_edge = true
+	#Allow sweep attack without hitting mobs, just by attacking air basically.
+	#This attack will not work when the attack button is held for continuous attacking.
+	air_sweep_attack = true
+	#Only apply half the sweeping damage to indirectly hit mobs for better balancing of the sweeping feature.
+	half_sweeping_damage = true
+	#Do not perform sweep attacks when sneaking.
+	no_sweeping_when_sneaking = false
+

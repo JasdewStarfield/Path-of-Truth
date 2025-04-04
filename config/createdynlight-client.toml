@@ -1,0 +1,15 @@
+#.
+#Enable dynamic light for LambDynamicLight.
+"enable Lamb dynamic light" = true
+#.
+#The multiplier of the luminance of the light.
+#Range: 0.0 ~ 2.0
+"luminance multiplier" = 1.0
+#.
+#Whether to ignore the Lamb mode setting. If true, the lamb's update interval will be ignored.
+"ignore Lamb mode setting" = true
+#.
+#The interval of updating the light. 0 means update every tick. If ignore Lamb mode setting is true, this value will completely replace the Lamb's update interval, otherwise, it will be added to the Lamb's update interval.
+#Range: 0 ~ 500
+"update interval" = 0
+

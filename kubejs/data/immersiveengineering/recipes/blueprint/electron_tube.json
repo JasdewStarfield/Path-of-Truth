@@ -1,0 +1,1 @@
+{"type":"immersiveengineering:blueprint","category":"components","inputs":[{"tag":"forge:glass"},{"tag":"forge:wires/copper"},{"item":"create:electron_tube"},{"item":"createutilities:graviton_tube"}],"result":{"count":1,"item":"immersiveengineering:electron_tube"}}

@@ -1,0 +1,1 @@
+{"type":"immersiveengineering:blueprint","category":"components","inputs":[{"base_ingredient":{"tag":"forge:plates/iron"},"count":2},{"base_ingredient":{"tag":"blue_skies:gems/pyrope"},"count":2},{"base_ingredient":{"item":"kubejs:advanced_spring_set"},"count":1}],"result":{"item":"immersiveengineering:component_iron"}}

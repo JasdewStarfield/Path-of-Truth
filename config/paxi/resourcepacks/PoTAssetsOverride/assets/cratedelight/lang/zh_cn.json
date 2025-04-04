@@ -1,0 +1,40 @@
+{
+  "block.cratedelight.apple_crate": "箱装苹果",
+  "block.cratedelight.berry_crate": "箱装甜浆果",
+  "block.cratedelight.glowberry_crate": "箱装发光浆果",
+  "block.cratedelight.egg_crate": "箱装鸡蛋",
+  "block.cratedelight.salmon_crate": "箱装生鲑鱼",
+  "block.cratedelight.cod_crate": "箱装生鳕鱼",
+  "block.cratedelight.cocoabeans_bag": "可可豆袋",
+  "block.cratedelight.sugar_bag": "糖袋",
+  "block.cratedelight.salt_bag": "盐袋",
+  "block.cratedelight.gunpowder_bag": "火药袋",
+  "block.cratedelight.golden_apple_crate": "箱装金苹果",
+
+  "block.cratedelight.end_fish_crate": "箱装生末地鱼",
+  "block.cratedelight.duck_egg_crate": "箱装鸭蛋",
+  "block.cratedelight.catfish_crate": "箱装生鲶鱼",
+  "block.cratedelight.bass_crate": "箱装生鲈鱼",
+  "block.cratedelight.wheat_flour_bag": "小麦粉袋",
+  "block.cratedelight.powdered_obsidian_bag": "黑曜石粉末袋",
+  "block.cratedelight.cinder_flour_bag": "余烬面粉袋",
+  "block.cratedelight.blueberry_crate": "箱装蓝莓",
+  "block.cratedelight.red_mushroom_crate": "箱装红蘑菇",
+  "block.cratedelight.brown_mushroom_crate": "箱装棕蘑菇",
+
+  "block.cratedelight.emu_egg_crate": "箱装鸸鹋蛋",
+  "block.cratedelight.terrapin_egg_crate": "箱装水龟蛋",
+  "block.cratedelight.crocodile_egg_crate": "箱装鳄鱼蛋",
+  "block.cratedelight.caiman_egg_crate": "箱装凯门鳄蛋",
+  "block.cratedelight.platypus_egg_crate": "箱装鸭嘴兽蛋",
+  "block.cratedelight.banana_crate": "箱装香蕉",
+  "block.cratedelight.golden_carrot_crate": "箱装金胡萝卜",
+
+  "block.cratedelight.carrot_crate": "箱装胡萝卜",
+  "block.cratedelight.potato_crate": "箱装土豆",
+  "block.cratedelight.beetroot_crate": "箱装甜菜根",
+
+  "block.cratedelight.stacked_melons": "堆叠的西瓜",
+  "block.cratedelight.stacked_pumpkins": "堆叠的南瓜",
+  "block.cratedelight.cookie_bag": "曲奇袋"
+}

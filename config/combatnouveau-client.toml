@@ -1,0 +1,9 @@
+#Improved arm swing animation to emphasize the rhythm of the attacks from combat test snapshots.
+alternative_swing_animation = true
+#Render armor attributes with green text instead of blue one, just like with tools and weapons.
+special_armor_attributes = true
+#Show a shield indicator similar to the attack indicator when actively blocking.
+shield_indicator = true
+#Items that will not be rendered as being held in first person when placed in the offhand.
+hidden_offhand_items = ["minecraft:totem_of_undying"]
+

@@ -1,0 +1,24 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{
+        "item":"blue_skies:scalefruit_seeds"
+    },
+    "render":{
+        "type":"crop",
+        "block":"blue_skies:scalefruits"
+    },
+    "results":[
+        {
+            "count":2,
+            "item":"blue_skies:scalefruit"
+        },
+        {
+            "count":1,
+            "item":"blue_skies:scalefruit_seeds"
+        }
+    ],
+    "soil":{
+        "item":"minecraft:dirt"
+    },
+    "time":800
+}

@@ -1,0 +1,5 @@
+
+["Balance Options"]
+	#Whether or not Infinity enchantment for modded buckets filled with fluids of the tag "bucketlib:infinity_enchantable" should be enabled.
+	infinityEnchantmentEnabled = false
+

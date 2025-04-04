@@ -1,0 +1,9 @@
+{
+  "log.error.loadAnchorList": "ESM: 加载锚点列表时出错:\n %s",
+  "log.error.saveAnchorList": "ESM: 保存锚点列表时出错\n %s",
+  "log.warn.loadAnchorList": "ESM：未找到锚列表；创建空锚点列表",
+  "main_screen.side_screen.radius_edit": "半径： ",
+  "log.error.loadMuffledList": "ESM: 加载低沉声音列表时出错:\n %s",
+  "log.warn.loadMuffledList": "ESM：未找到模糊列表；创建空的静音列表",
+  "log.error.saveMuffledList": "ESM: 保存低沉声音列表时出错:\n %s"
+}

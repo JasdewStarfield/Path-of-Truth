@@ -1,0 +1,6 @@
+{
+  "text.autoconfig.betteroceanmonuments-fabric-1_20.option.general.disableVanillaMonuments": "禁用香草海洋纪念碑",
+  "text.autoconfig.betteroceanmonuments-fabric-1_20.option.general.disableVanillaMonuments.@Tooltip": "是否应禁用香草海洋纪念碑。",
+  "text.autoconfig.betteroceanmonuments-fabric-1_20.title": "YUNG 更好的海洋纪念碑",
+  "Use /locate structure betteroceanmonuments:ocean_monument instead!": "使用 /locate 结构 betteroceanmonuments:ocean_monument 代替！"
+}

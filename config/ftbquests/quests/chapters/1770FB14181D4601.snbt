@@ -1,0 +1,259 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1770FB14181D4601"
+	group: ""
+	icon: {
+		Count: 1
+		id: "scguns:flintlock_pistol"
+		tag: {
+			AmmoCount: 1
+			Damage: 0
+		}
+	}
+	id: "1770FB14181D4601"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4BED26108E90A0CC"]
+			description: [
+				"右键瞄准，左键发射！"
+				"一个全新的战斗时代已经在你面前展开……"
+			]
+			icon: {
+				Count: 1
+				id: "scguns:flintlock_pistol"
+				tag: {
+					AmmoCount: 1
+					Damage: 0
+				}
+			}
+			id: "40D34B60BD7011DD"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "从最基础的枪械开始……"
+			tasks: [{
+				id: "4510A9F401CC26C1"
+				title: "好耶"
+				type: "checkmark"
+			}]
+			title: "新的开始"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			icon: "ftbquests:book"
+			id: "7D72C735D145F763"
+			shape: "diamond"
+			subtitle: "简易枪械"
+			tasks: [
+				{
+					id: "54082D6060DEFE53"
+					item: {
+						Count: 1
+						id: "scguns:flintlock_pistol"
+						tag: {
+							AmmoCount: 1
+							Damage: 0
+							GeckoLibID: 3L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "50D36DA3D72551E4"
+					item: {
+						Count: 1
+						id: "scguns:handcannon"
+						tag: {
+							AmmoCount: 1
+							Damage: 0
+							GeckoLibID: 4L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "173A3F6118E1586B"
+					item: {
+						Count: 1
+						id: "scguns:musket"
+						tag: {
+							AmmoCount: 1
+							Damage: 0
+							GeckoLibID: 5L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "613546A60458078B"
+					item: {
+						Count: 1
+						id: "scguns:blunderbuss"
+						tag: {
+							AmmoCount: 1
+							Damage: 0
+							GeckoLibID: 6L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "21E7601A73123E1D"
+					item: "scguns:powder_and_ball"
+					type: "item"
+				}
+				{
+					id: "3D5C6D9681DBA5FE"
+					item: "scguns:grapeshot"
+					type: "item"
+				}
+			]
+			title: "新手上路"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			id: "0AA2D4BA3B7F99BF"
+			shape: "diamond"
+			subtitle: "枪总是需要火药的"
+			tasks: [{
+				id: "51979227F5C1917C"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			id: "09AB3BC179AF7529"
+			tasks: [{
+				id: "488AD339F05E83E0"
+				item: "scguns:copper_blueprint"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			id: "143180BE1973BA96"
+			tasks: [{
+				id: "73E8B44629623673"
+				item: "scguns:iron_blueprint"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			id: "05C273A40186A578"
+			tasks: [{
+				id: "34456F092B925694"
+				item: "scguns:treated_brass_blueprint"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			id: "46243596A537F0AF"
+			tasks: [{
+				id: "424BC505720043AC"
+				item: "scguns:diamond_steel_blueprint"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			id: "250253A026170224"
+			tasks: [{
+				id: "62B8D29EA2D601E9"
+				item: "scguns:ocean_blueprint"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			id: "661C38A15ACA2062"
+			tasks: [{
+				id: "6380600E3ABD839A"
+				item: "scguns:piglin_blueprint"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			id: "7A92FF4BFD84065C"
+			tasks: [{
+				id: "720BDDBCD673D704"
+				item: "scguns:deep_dark_blueprint"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			id: "5D03D83CF29BF288"
+			tasks: [{
+				id: "6B47C5B6827CE0C2"
+				item: "scguns:end_blueprint"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"250253A026170224"
+				"7A92FF4BFD84065C"
+				"661C38A15ACA2062"
+				"05C273A40186A578"
+				"143180BE1973BA96"
+				"46243596A537F0AF"
+				"09AB3BC179AF7529"
+				"5D03D83CF29BF288"
+			]
+			id: "548E55016926A7C4"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "超越想象"
+			tasks: [{
+				id: "6B37F6FC8AA15B87"
+				item: "scguns:scorched_blueprint"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			id: "1EEC479FB889EAEC"
+			shape: "diamond"
+			tasks: [{
+				id: "22580B6C931971B2"
+				title: "对……对吗？"
+				type: "checkmark"
+			}]
+			title: "动力护甲"
+			x: 0.0d
+			y: -2.0d
+		}
+	]
+	subtitle: ["Life of a Gunsmith"]
+	title: "【附加】军械师生涯"
+}

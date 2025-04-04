@@ -1,0 +1,490 @@
+{
+	autofocus_id: "5BC62338A9F6E65B"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "563F31BF1B1FE486"
+	group: ""
+	hide_quest_details_until_startable: true
+	icon: "botania:sextant"
+	id: "563F31BF1B1FE486"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: -0.8d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/m0.png"
+			rotation: 0.0d
+			width: 6.730263157894737d
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: ["{ftbquests.chapter.563F31BF1B1FE486.quest1.description1}"]
+			hide_until_deps_complete: true
+			id: "5BC62338A9F6E65B"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest1.subtitle}"
+			tasks: [{
+				id: "15B65D00737081D8"
+				item: "irons_spellbooks:arcane_essence"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest1.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5BC62338A9F6E65B"]
+			id: "47CB45634A921A43"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest2.subtitle}"
+			tasks: [{
+				id: "13617813AF0BF970"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest2.title}"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5BC62338A9F6E65B"]
+			id: "2A13E8CAD8E90E20"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest3.subtitle}"
+			tasks: [{
+				id: "335AC39A26B19ED1"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:copper_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 5
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest3.title}"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"2A13E8CAD8E90E20"
+				"47CB45634A921A43"
+			]
+			id: "59793C79A0C3B12B"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest4.subtitle}"
+			tasks: [{
+				id: "4B5822E77E2D37BD"
+				item: "bloodmagic:altar"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest4.title}"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["59793C79A0C3B12B"]
+			id: "0719D8D05F672C29"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest5.subtitle}"
+			tasks: [
+				{
+					id: "69087BD1E049995D"
+					item: "botania:manasteel_ingot"
+					type: "item"
+				}
+				{
+					id: "28C1EC20EBA47B9A"
+					item: "botania:mana_pearl"
+					type: "item"
+				}
+				{
+					id: "3D3293626E528F2C"
+					item: "botania:mana_diamond"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest5.title}"
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["59793C79A0C3B12B"]
+			id: "3EF388DBCA593501"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest6.subtitle}"
+			tasks: [{
+				id: "71770626C2FAE836"
+				item: "botania:alfheim_portal"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest6.title}"
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["59793C79A0C3B12B"]
+			id: "3E3808F2227BD332"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest7.subtitle}"
+			tasks: [{
+				id: "1D1302B74496C3CB"
+				item: "irons_spellbooks:alchemist_cauldron"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest7.title}"
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["59793C79A0C3B12B"]
+			id: "45311CA8EA1B26BA"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest8.subtitle}"
+			tasks: [{
+				id: "5B63E5FD1F9465E0"
+				item: "bloodmagic:weakbloodorb"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest8.title}"
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3EF388DBCA593501"
+				"3E3808F2227BD332"
+				"0719D8D05F672C29"
+				"45311CA8EA1B26BA"
+			]
+			id: "56FEAEAF9D5FF405"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest9.subtitle}"
+			tasks: [{
+				id: "78C27ACEDC63E1DE"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest9.title}"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["56FEAEAF9D5FF405"]
+			id: "172CC4DA91E7C588"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest10.subtitle}"
+			tasks: [{
+				id: "79A0928486E965D1"
+				item: "bloodmagic:magicianbloodorb"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest10.title}"
+			x: -2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["56FEAEAF9D5FF405"]
+			id: "67DD665888D130CB"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest11.subtitle}"
+			tasks: [
+				{
+					id: "45D048A878D5D46B"
+					item: "irons_spellbooks:legendary_ink"
+					type: "item"
+				}
+				{
+					id: "79F7E27605C3BC00"
+					item: "minecraft:echo_shard"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest11.title}"
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"172CC4DA91E7C588"
+				"67DD665888D130CB"
+			]
+			id: "4D484051A8CF29F2"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest12.subtitle}"
+			tasks: [
+				{
+					id: "692CF09C93BB14AE"
+					item: "bloodmagic:ritualstone"
+					type: "item"
+				}
+				{
+					id: "7EF02C911BC7DD85"
+					item: "bloodmagic:ingot_hellforged"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest12.title}"
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4D484051A8CF29F2"]
+			id: "5393EC343AD0EC83"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest13.subtitle}"
+			tasks: [{
+				id: "351B76FA191E3E06"
+				item: "bloodmagic:archmagebloodorb"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest13.title}"
+			x: -2.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["4D484051A8CF29F2"]
+			id: "71BF98560860C0AB"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest14.subtitle}"
+			tasks: [{
+				id: "4EECEE2C4DD71928"
+				item: "botania:dandelifeon"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest14.title}"
+			x: 2.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["71BF98560860C0AB"]
+			id: "309ED82498C4F2D1"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest15.subtitle}"
+			tasks: [{
+				id: "3F1587357E1294A3"
+				item: "botania:overgrowth_seed"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest15.title}"
+			x: -2.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["5393EC343AD0EC83"]
+			id: "0BE788F0317226D0"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest16.subtitle}"
+			tasks: [{
+				id: "51FDFFBEC4A66E6B"
+				item: "bloodmagic:activationcrystalcreative"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest16.title}"
+			x: 2.0d
+			y: -11.0d
+		}
+		{
+			dependencies: [
+				"0BE788F0317226D0"
+				"309ED82498C4F2D1"
+			]
+			id: "7B4BE516F4D4E494"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest17.subtitle}"
+			tasks: [{
+				id: "01E7DB25BE0C772B"
+				item: "artifacts:mimic_spawn_egg"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest17.title}"
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["56FEAEAF9D5FF405"]
+			id: "4069A80598955B8F"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest18.subtitle}"
+			tasks: [{
+				id: "1B991680B02FAB20"
+				item: "botania:lens_storm"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest18.title}"
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["79EE6BAFA5E153E5"]
+			id: "11809308EF757592"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest19.subtitle}"
+			tasks: [{
+				count: 2L
+				id: "47E21A0CAC53FC78"
+				item: "minecraft:dragon_egg"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest19.title}"
+			x: 2.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["7B4BE516F4D4E494"]
+			id: "7A0D894A5227359D"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest20.subtitle}"
+			tasks: [{
+				id: "1B6941284D379213"
+				item: "botania:mana_bomb"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["7A0D894A5227359D"]
+			id: "0A2BE67F3E9F7225"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest21.subtitle}"
+			tasks: [{
+				id: "106B3E5E1EB2E1C7"
+				item: "minecraft:budding_amethyst"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["7B4BE516F4D4E494"]
+			id: "2022E86F75370929"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest22.subtitle}"
+			tasks: [{
+				id: "707DDD11BE3C6C0F"
+				item: {
+					Count: 1
+					id: "botania:mana_tablet"
+					tag: {
+						creative: 1b
+						mana: 500000
+					}
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest22.title}"
+			x: 0.0d
+			y: -14.0d
+		}
+		{
+			dependencies: [
+				"0A2BE67F3E9F7225"
+				"11809308EF757592"
+			]
+			id: "697B1277B1C95490"
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest23.subtitle}"
+			tasks: [{
+				id: "09891F03B5381DDB"
+				item: "kubejs:midnight"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest23.title}"
+			x: 0.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["697B1277B1C95490"]
+			hide_until_deps_complete: true
+			id: "547BE1E974BA2186"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest24.subtitle}"
+			tasks: [{
+				id: "4C9E7E2BAAD67B3C"
+				item: "createchromaticreturn:chromatic_compound"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest24.title}"
+			x: 0.0d
+			y: -17.0d
+		}
+		{
+			dependencies: [
+				"5C9661302B37F26F"
+				"57792EACF9438430"
+			]
+			id: "0D3C086EDB80E9AB"
+			shape: "octagon"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest25.subtitle}"
+			tasks: [{
+				id: "022297A7CFF38214"
+				item: "createchromaticreturn:multiplite_ingot"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest25.title}"
+			x: 0.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["7B4BE516F4D4E494"]
+			id: "79EE6BAFA5E153E5"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest26.subtitle}"
+			tasks: [{
+				id: "151D8A5730F981B3"
+				item: "bloodmagic:lightritualstone"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["4D484051A8CF29F2"]
+			id: "747404689C3EB6D7"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest27.subtitle}"
+			tasks: [{
+				id: "09F643905DB0DDCF"
+				item: "bloodmagic:demoncrystallizer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["0254FBCBA50B97F1"]
+			id: "57792EACF9438430"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest28.subtitle}"
+			tasks: [{
+				id: "7EC3BF6674D397C9"
+				item: "createchromaticreturn:glowing_ingot"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest28.title}"
+			x: 2.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["0254FBCBA50B97F1"]
+			id: "5C9661302B37F26F"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest29.subtitle}"
+			tasks: [{
+				id: "455E4D6193809635"
+				item: "createchromaticreturn:silkstrum"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest29.title}"
+			x: -2.0d
+			y: -19.0d
+		}
+		{
+			dependencies: ["547BE1E974BA2186"]
+			id: "0254FBCBA50B97F1"
+			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest30.subtitle}"
+			tasks: [{
+				id: "07ACAB2B1345C4A9"
+				item: "createchromaticreturn:refined_radiance"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.563F31BF1B1FE486.quest30.title}"
+			x: 0.0d
+			y: -18.0d
+		}
+	]
+	subtitle: ["{ftbquests.chapter.563F31BF1B1FE486.subtitle}"]
+	title: "{ftbquests.chapter.563F31BF1B1FE486.title}"
+}

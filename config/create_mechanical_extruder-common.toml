@@ -1,0 +1,13 @@
+
+#Settings for the mechanical extruder
+[mechanical_extruder]
+	#Stress impact
+	#Range: 0.0 ~ 64.0
+	stressImpact = 4.0
+	#Minimum required speed
+	#Range: 0.0 ~ 254.0
+	minimumSpeed = 0.0
+	#Duration of the extrudding cycle. In ticks
+	#Range: 0 ~ 1000
+	cycle = 200
+

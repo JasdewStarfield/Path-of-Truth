@@ -1,0 +1,467 @@
+{
+	autofocus_id: "046F1DAD921FD2E8"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3A373AEB9028A418"
+	group: "461ABC15BE939FA8"
+	hide_quest_details_until_startable: true
+	icon: "sophisticatedbackpacks:backpack"
+	id: "3A373AEB9028A418"
+	images: [{
+		height: 2.0d
+		image: "kubejs:textures/quests/a1.png"
+		rotation: 0.0d
+		width: 10.893617021276595d
+		x: 0.0d
+		y: -3.5d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"由于本整合包需求的模组物品不少，我们加入了背包）"
+				"然而你会发现，为了基本的平衡性，我们&a删除了所有的堆叠升级，并修改了背包的部分升级配方！&r"
+				"这意味着如果你要&c运送和存储大量物品&r，你需要想想别的办法，比如rs和抽屉）"
+				""
+				"*注：怪物目前不再掉落背包以及相关的内容物。所以&c请不要考虑通过堆叠升级来用背包当大型仓库的想法&r……我们提供了&b正经的物流途径&r，所以不要惦记着用背包逃课）"
+			]
+			hide_details_until_startable: true
+			hide_until_deps_complete: true
+			id: "7CFD3110EF8E53E2"
+			subtitle: "万里长征第一步，把你的东西装好）"
+			tasks: [{
+				id: "0892FA3D926099E0"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			title: "背上行囊"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"基于二十四节气的变换，这里会有&c很热的夏天&r和&b很冷的冬天&r。"
+				"节气每7个游戏日就会推进，趁着&d春天暂时的温和气候&r，准备抵抗未来某些可能令人不适的节气或环境吧。"
+				"记得看清当前的环境温度，&410度以下或37度以上&r都是危险的。"
+				""
+				"具体的温度系统细节，可以参考&a【世界的表象】&r章节："
+				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6E08F7A257BCB99A\" } }"
+			]
+			hide_details_until_startable: true
+			hide_until_deps_complete: true
+			icon: "cold_sweat:thermometer"
+			id: "409A09512BF023FC"
+			subtitle: "烧起来了！"
+			tasks: [
+				{
+					id: "3136B1174AAF8C7E"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+				{
+					id: "13ECA29BF654E255"
+					item: "cold_sweat:thermometer"
+					type: "item"
+				}
+			]
+			title: "寒来暑往，秋收冬藏"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"床的重生点功能消失了，取而代之的是重生方尖碑。"
+				"你有一次设定自己重生点的机会——请谨慎选择。"
+				"小提示：方尖碑是需要充能的，所以……请尽量求生，朋友）"
+				"方尖碑的充能可以通过末影之眼、末影珍珠或奥术源质完成，拿着这些东西对着方尖碑右键即可。"
+				""
+				"具体的重生系统细节，可以参考&a【世界的表象】&r章节："
+				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3B3403855032F399\" } }"
+			]
+			hide_details_until_startable: true
+			hide_until_deps_complete: true
+			id: "046F1DAD921FD2E8"
+			rewards: [{
+				id: "2AC9D0E9AC9CAC9D"
+				item: "irons_spellbooks:arcane_essence"
+				type: "item"
+			}]
+			subtitle: "你不能再用床成为无敌的人"
+			tasks: [{
+				id: "26C5D84BA231F17D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:beds"
+					}
+				}
+				title: "任意床"
+				type: "item"
+			}]
+			title: "复活点"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"本整合包内置了几个有趣的世界"
+				"深园，恒晓，永昼是三个主要的冒险维度。"
+				"多走走，多看看，顺便找到你所需要的材料。"
+			]
+			hide_details_until_startable: true
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "alexsmobs:dimensional_carver"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2F41E7FB9071F484"
+			rewards: [{
+				id: "5C8FF7137948EED1"
+				item: "bosses_of_mass_destruction:charged_ender_pearl"
+				type: "item"
+			}]
+			subtitle: "送你去另一个世界！"
+			tasks: [
+				{
+					dimension: "undergarden:undergarden"
+					icon: "undergarden:catalyst"
+					id: "108B1529DAA1BF44"
+					title: "访问深暗之园"
+					type: "dimension"
+				}
+				{
+					dimension: "blue_skies:everbright"
+					icon: "blue_skies:everbright_portal"
+					id: "5D1DAE30F9514726"
+					title: "访问永昼之地"
+					type: "dimension"
+				}
+				{
+					dimension: "blue_skies:everdawn"
+					icon: "blue_skies:everdawn_portal"
+					id: "6B3BCA57A1092DAE"
+					title: "访问恒晓之地"
+					type: "dimension"
+				}
+				{
+					dimension: "minecraft:the_nether"
+					icon: "minecraft:nether_star"
+					id: "4AC4C4DE3BBD2FEB"
+					title: "访问下界"
+					type: "dimension"
+				}
+				{
+					dimension: "minecraft:the_end"
+					icon: "minecraft:end_portal_frame"
+					id: "3C4C2257B8596DC6"
+					title: "访问末地"
+					type: "dimension"
+				}
+			]
+			title: "维度旅行者"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"本整合包中，盾牌的机制出现了&b一定的变动&r，需要&3选择合适的时机进行招架&r才能进行防御。同时，一部分特殊的盾牌具有&c反伤&r功能，一部分盾牌则拥有特殊的抗性，与新增的护甲近似。"
+				""
+				"盾牌新增了&6防御耐力值&r，在&d连续格挡数次攻击&r后，盾牌会有一次较长的冷却，次数与防御耐力相等。根据盾牌下方的属性值，各位可以根据需求自选盾牌。（任务需求中的是一些前期比较方便制作的盾牌，还有更多盾牌等你探索）"
+			]
+			hide_until_deps_complete: true
+			id: "3A1777C57ADC79BD"
+			rewards: [{
+				id: "4CEAD346304B83BF"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "alexsmobs:long_knockback_resistance"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "防守反击"
+			tasks: [
+				{
+					id: "5C2F4248E6546517"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "shieldexp:wooden_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3CA690AD2CCB11B6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "minecraft:shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2C01A0B14BE6C1C7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "shieldexp:golden_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6D7B1C33D6367936"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "shieldexp:iron_shield"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "更多的盾牌"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"由于原版和模组原有的护甲获取难度都&c有一定提升&r（如果你还不知道，这里提一下所有钻石的工具和护甲耐久度都进行了极大的削减），然而大家需要在前期活下来，因此我们追加了一批&b相对容易获得的护甲&r，并且带有一些特殊功能！"
+				""
+				"其中有一部分包含套装效果或特殊效果，&4并非仅有任务中的几种&r（任务的这几个只是前期比较方便制作的），希望各位&a自行进行探索&r——不过这些系列的护甲值都没有&o那么&r高，因此也需要自行抉择选用。"
+			]
+			hide_until_deps_complete: true
+			id: "7099BD66C194C8C2"
+			rewards: [{
+				id: "3C4D9FCBA28B184F"
+				item: "artifacts:cross_necklace"
+				type: "item"
+			}]
+			subtitle: "护甲都是纸"
+			tasks: [
+				{
+					id: "169C8B8E341A1B63"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "immersive_armors:wooden_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5F38C5BB85B0951E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "immersive_armors:bone_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4D058B7452D6E393"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "immersive_armors:warrior_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7E4D1CF7EAFD7C42"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "immersive_armors:heavy_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "170EB25532D3DC53"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "immersive_armors:slime_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "更多的护甲"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6A1B42D208C780BD"
+				"67A81230FFDEC5B3"
+			]
+			description: [
+				"通常情况下MC里的钓鱼不会空军，但是在这个包里，钓鱼&c需要一些技巧&r……"
+				"连续空军显然是很让人崩溃的事情，这种时候就应该&o&m&d炸鱼塘&r&r&r&5下笼子&r，这可以&a保证你获得特定种类的鱼！&r"
+				"不同的鱼类会有不同的喜好，选择你的鱼饵……"
+				"面包是&2特别的通用鱼饵&r，可以钓上来更多种类的鱼！"
+				"当然&6不下鱼饵&r也是可以的，代价是笼子&9只会捞上垃圾。&r"
+				"&o&m&3鱼都嫌弃你的吝啬&r&r&r"
+				""
+				"&o&b*注：显然这一结构需要浸没在水里，并且需要在海洋、河流或沼泽群系使用，才能正常获得渔获！&r&r"
+			]
+			hide_until_deps_complete: true
+			id: "5071365CA0D2E37F"
+			rewards: [{
+				count: 8
+				id: "7F37D1852E305A08"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			subtitle: "绝不空军"
+			tasks: [{
+				id: "6FD49E4E48ACAE69"
+				item: "fishermens_trap:fishtrap"
+				type: "item"
+			}]
+			title: "懒人精选"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			dependency_requirement: "one_started"
+			description: [
+				"基于一些众所周知的原因，木质鱼竿的耐久被狠狠削减了——但你会发现增加了大量&c全新&r的钓竿！"
+				"钓鱼也出现了一些变化，你需要在&a不同的位置&r（包括但不限于群系，深度，甚至维度）钓鱼来获得所有的鱼！相应地，部分鱼也会在对应的群系生成实体鱼，你可以&c直接将其击杀&r来获取它们。"
+				"想要收集各种鱼但苦于没有记录方式？你需要一本&b百鱼全书&r！这里会写着你捕捉过的大部分鱼，并标明其属性和作用。你也可以在持有百鱼全书的情况下右击世界上的实体鱼来快速打开它的图鉴！"
+				"有些鱼拥有&e&l传奇&r&r的功效……"
+				"但你首先需要&6渔夫工坊&r和&5锻造台&r来升级和修改你的鱼竿）"
+				"*由于没有暖水，我们魔改了战利品表，你可以在冷水群系内钓到热带鱼，并且&b没有鹦鹉螺壳！&r你需要&1探索海底神殿&r或&c通过炼金手段&r来获得贝壳！）"
+				"有关于钓鱼机制的变更，请查看下一页。"
+				"{@pagebreak}"
+				"现在的钓鱼分为了三个部分：&b抛竿&r，&c拉钩&r，&a提钩&r。"
+				"你需要通过&b长按右键为你的钓竿蓄力&r，这决定它能抛多远。"
+				"在鱼儿上钩后，通过&c第一次右键（拉钩）&r，我们会进入提钩环节，你需要&a等到标示线在绿色区域（也就是中央区）的时候提钩&r，才有更高几率获得更好的鱼。"
+				"如果你在标示线侧边时提起了钩，那么恭喜你，你&b空军&r了！"
+				""
+				"&o&b注意：植魔酿造的“诱惑”药水会造成卡顿，因此该配方被直接删除！&r&r"
+				"&o&6游戏里享受钓鱼佬的人生也是一种乐趣，所以不要用药水加速（确信&r&r"
+			]
+			hide_details_until_startable: true
+			hide_until_deps_complete: true
+			icon: "tide:fishing_hook"
+			id: "67A81230FFDEC5B3"
+			rewards: [
+				{
+					id: "54044C55DF2B59D9"
+					item: "tide:fishing_line"
+					type: "item"
+				}
+				{
+					id: "54C37141BD94A901"
+					item: "tide:fishing_hook"
+					type: "item"
+				}
+			]
+			subtitle: "组装神杆！"
+			tasks: [
+				{
+					id: "76E1B85897A8750F"
+					item: "tide:angler_workshop"
+					type: "item"
+				}
+				{
+					id: "13D87E3E6C0A5C6C"
+					item: "tide:fishing_journal"
+					type: "item"
+				}
+				{
+					id: "409302625F6CC840"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/fishing_rods"
+						}
+					}
+					title: "任意钓竿"
+					type: "item"
+				}
+			]
+			title: "钓鱼人的准备"
+			x: 0.0d
+			y: 3.0d
+		}
+	]
+	subtitle: ["A Long Way to Go"]
+	title: "1A 漫漫长路"
+}

@@ -1,0 +1,14 @@
+{
+  "create.hint.waterwheel_infinite.title": "水不够",
+  "create.hint.picky_biome_boost": "生物群落效率",
+  "create.hint.waterwheel_source": "太多或太少的水源试图转动这个水车。",
+  "create.hint.waterwheel_source.title": "缺乏电源",
+  "create.hint.windmill_flow": "这个风车周围缺乏足够的空白空间。不然的话，那些风从哪里来呢？",
+  "create.hint.windmill_flow.title": "空气流量不足",
+  "create.hint.windmill_biome": "风车对它们的生物群系很挑剔。",
+  "create.hint.waterwheel_infinite": "目标流体体不够大。",
+  "create.hint.windmill_biome.title": "无效生物群系",
+  "create.hint.waterwheel_biome.title": "无效生物群系",
+  "create.hint.picky_height_boost": "高度效率",
+  "create.hint.waterwheel_biome": "水车对它们的生物群系很挑剔。"
+}

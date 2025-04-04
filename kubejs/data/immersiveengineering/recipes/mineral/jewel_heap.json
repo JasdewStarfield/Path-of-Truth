@@ -1,0 +1,17 @@
+{
+    "type":"immersiveengineering:mineral_mix",
+    "dimensions":["undergarden:undergarden"],
+    "fail_chance":0.5,
+    "ores":[
+        {"chance":0.1,"output":{"item":"undergarden:depthrock_diamond_ore"}},
+        {"chance":0.1,"output":{"item":"undergarden:shiverstone_diamond_ore"}},
+        {"chance":0.4,"output":{"item":"undergarden:depthrock_regalium_ore"}},
+        {"chance":0.4,"output":{"item":"undergarden:shiverstone_regalium_ore"}}
+    ],
+    "spoils":[
+        {"chance":0.7,"output":{"item":"undergarden:depthrock"}},
+        {"chance":0.2,"output":{"item":"undergarden:shiverstone"}},
+        {"chance":0.1,"output":{"item":"undergarden:deepsoil"}}
+    ],
+    "weight":5
+}

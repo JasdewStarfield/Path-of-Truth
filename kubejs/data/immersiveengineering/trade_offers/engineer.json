@@ -1,0 +1,223 @@
+{
+    "profession": "immersiveengineering:engineer",
+    "replace": true,
+    "offers": {
+    "1_novice": {
+      "trades": [
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:treated_scaffold",
+            "price": 12,
+            "max_uses": 16,
+            "experience": 1
+          },
+          "level": "novice",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:waterwheel_segment",
+            "price": 4,
+            "max_uses": 12,
+            "experience": 2
+          },
+          "level": "novice",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:sell_item",
+            "item": "irons_spellbooks:arcane_essence",
+            "price": 4,
+            "max_uses": 16,
+            "experience": 1
+          },
+          "level": "novice",
+          "attributes": {
+            "other": 1.0
+          }
+        }
+      ],
+      "replace": true,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "2_apprentice": {
+      "trades": [
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:stick_iron",
+            "price": 5,
+            "max_uses": 12,
+            "experience": 3
+            },
+          "level": "apprentice",
+          "attributes": {
+            "other": 1.0
+            }
+        },
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "tfmg:steel_block",
+            "price": 1,
+            "max_uses": 6,
+            "experience": 10
+        },
+          "level": "apprentice",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:sell_item",
+            "item": "irons_spellbooks:iron_spell_book",
+            "price": 32,
+            "max_uses": 2,
+            "experience": 10
+            },
+          "level": "apprentice",
+          "attributes": {
+            "other": 1.0
+            }
+        }
+      ],
+      "replace": true,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "3_journeyman": {
+      "trades": [
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:wirecoil_structure_rope",
+            "price": 6,
+            "max_uses": 12,
+            "experience": 5
+        },
+          "level": "journeyman",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:concrete",
+            "price": 8,
+            "max_uses": 12,
+            "experience": 5
+        },
+          "level": "journeyman",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:sell_item",
+            "item": "irons_spellbooks:ender_rune",
+            "price": 32,
+            "max_uses": 4,
+            "experience": 10
+        },
+          "level": "journeyman",
+          "attributes": {
+            "other": 1.0
+          }
+        }
+      ],
+      "replace": true,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "4_expert": {
+      "trades": [
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:insulating_glass",
+            "price": 6,
+            "max_uses": 12,
+            "experience": 10
+        },
+          "level": "expert",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:alu_fence",
+            "price": 4,
+            "max_uses": 12,
+            "experience": 10
+        },
+          "level": "expert",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:sell_item",
+            "item": "irons_spellbooks:lesser_spell_slot_upgrade",
+            "price": 64,
+            "max_uses": 4,
+            "experience": 20
+        },
+          "level": "expert",
+          "attributes": {
+            "other": 1.0
+          }
+        }
+      ],
+      "replace": true,
+      "min_trades": 2,
+      "max_trades": 2
+    },
+    "5_master": {
+      "trades": [
+        {
+          "offer": {
+            "type": "minecraft:buy_for_one_emerald",
+            "item": "immersiveengineering:coresample",
+            "price": 1,
+            "max_uses": 4,
+            "experience": 20
+        },
+          "level": "master",
+          "attributes": {
+            "other": 1.0
+          }
+        },
+        {
+          "offer": {
+            "type": "minecraft:sell_item",
+            "item": "irons_spellbooks:ender_upgrade_orb",
+            "price": 64,
+            "max_uses": 1,
+            "experience": 20
+        },
+          "level": "master",
+          "attributes": {
+            "other": 1.0
+          }
+        }
+      ],
+      "replace": false,
+      "min_trades": 1,
+      "max_trades": 1
+    }
+  }
+}

@@ -1,0 +1,7 @@
+#Checked Mods Name List
+willMonsterMountBoat = ["minecraft:zombie_villager", "minecraft:vex"]
+#Checked Mods Name List
+willMonsterNotLeaveBoat = ["minecraft:zombie_villager"]
+#Checked Mods Name List
+willMonsterNotHitBoat = ["minecraft:zombie_villager", "minecraft:zombie", "minecraft:creeper", "minecraft:skeleton", "nasty:skeleton", "minecraft:vex"]
+

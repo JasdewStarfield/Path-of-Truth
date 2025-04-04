@@ -1,0 +1,11 @@
+{
+    "title": {
+      "text": "沉浸工程高炉燃料",
+      "bold": true,
+      "underlined": true,
+      "color": "yellow"
+    },
+    "tip": {
+      "text": "沉浸工程的高炉只接受焦煤粉作为燃料。"
+    }
+}

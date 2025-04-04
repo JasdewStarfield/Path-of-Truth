@@ -1,0 +1,226 @@
+{
+	autofocus_id: "0C34A91AD3EBF977"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "54FEB8EFCDFE57CF"
+	group: "5B3B99F7ECC70789"
+	hide_quest_details_until_startable: true
+	icon: "minecraft:end_crystal"
+	id: "54FEB8EFCDFE57CF"
+	images: [{
+		height: 2.0d
+		image: "kubejs:textures/quests/a3.png"
+		rotation: 0.0d
+		width: 14.01388888888889d
+		x: 0.0d
+		y: -3.5d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"0F9DF1C5137194E4"
+				"76BE4625CCF2F867"
+			]
+			description: [
+				"开启方式和地狱门很像，石砖搭一个框架，然后催化石点一下，你就可以进去了）"
+				"进门之后注意安全，深园从来不缺少敌对生物。"
+			]
+			hide_until_deps_complete: true
+			icon: "undergarden:catalyst"
+			id: "0E5C63B3D4891362"
+			subtitle: "Deep♂Dark♂Fantasy"
+			tasks: [{
+				id: "6284E777A07EA445"
+				item: "undergarden:catalyst"
+				type: "item"
+			}]
+			title: "深园之行"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"76BE4625CCF2F867"
+				"0F9DF1C5137194E4"
+			]
+			description: [
+				"你会发现末影之眼的合成难度增加了，但还是能做的。"
+				"打开末地传送门需要更高强度的魔力了，因此末影之眼也需要更高级的材料。"
+				"找到末地传送门后，记得做好合适的标记，毕竟现在没有传送石碑让你满地乱放了……"
+			]
+			hide_until_deps_complete: true
+			id: "193F465F65BC13F1"
+			subtitle: "前往虚空！"
+			tasks: [{
+				count: 12L
+				icon: "minecraft:ender_eye"
+				id: "606164797E57E03A"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			title: "虚空之路"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["193F465F65BC13F1"]
+			description: [
+				"你可能会发现末影龙很难打（不能床炸了，水晶也有保护）——这种时候我们的建议是&a战略性撤退&r。"
+				"检查一下&d你的法术列表&r确保你可以在打不过的时候跑路……"
+				"另外，带好储存龙息用的瓶子。虽然它可以催化，但你&c必须&r拿到第一瓶。"
+				"（其实应该比盖亚守护者简单，所以可以先打完守护者再来打末影龙）"
+			]
+			id: "0C34A91AD3EBF977"
+			subtitle: "呃，打不过就走不丢人"
+			tasks: [{
+				id: "0BF9DA5D6D9EB2E2"
+				item: "botania:ender_air_bottle"
+				type: "item"
+			}]
+			title: "纪念品"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0E5C63B3D4891362"]
+			description: [
+				"深暗之园常见而独有的材料，也是T3科技与魔法的必需品（"
+				"多整点（确信），你会喜欢上它的。"
+			]
+			id: "52A63601F3E154C8"
+			subtitle: "基本材料"
+			tasks: [{
+				id: "5EDA0A2EF656D716"
+				item: "undergarden:raw_cloggrum"
+				type: "item"
+			}]
+			title: "扼腕叹息"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"0C34A91AD3EBF977"
+				"52A63601F3E154C8"
+			]
+			description: [
+				"末地空气可以转化铁和扼塞锭，同理魔法还有类似的手段转化遗忆锭和钻石——但那很亏。"
+				"炼金术就是材料互相转来转去）"
+			]
+			icon: "botania:mutated_grass"
+			id: "066C04C6A6CBCCB3"
+			rewards: [
+				{
+					id: "0A41AE9EF78E19E5"
+					item: "botania:ender_air_bottle"
+					type: "item"
+				}
+				{
+					id: "0039F9F8117D719E"
+					item: "undergarden:cloggrum_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "末地空气的妙用"
+			tasks: [
+				{
+					id: "49BD74DC5C0E9AD5"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "1499C88B78F0C14F"
+					item: "botania:ender_air_bottle"
+					type: "item"
+				}
+			]
+			title: "转化！"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C34A91AD3EBF977"]
+			description: ["在你击杀末影龙后，会有一些龙皮悬浮于空中——找到它们，然后你就可以制作强大的传说法术书。"]
+			id: "5067D48BC8E1CBEF"
+			rewards: [{
+				id: "598C2AA55B81A613"
+				item: "irons_spellbooks:dragonskin"
+				type: "item"
+			}]
+			subtitle: "你还是赢了，对吧）"
+			tasks: [{
+				id: "25E63FEC90BEA00B"
+				item: "irons_spellbooks:dragonskin"
+				type: "item"
+			}]
+			title: "末影龙的馈赠"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["52A63601F3E154C8"]
+			description: [
+				"击杀深暗之园遗迹中的遗忆守卫就可以掉落这种金属。正如你所见，如果你找到合适的模板，这种神秘的金属锭可以升级你的装备。"
+				"同时，一些特殊的魔法和工业配方也需要它。"
+				""
+				"*注：遗迹中不会刷新新的遗忆守卫，如果你需要更多，那么就要自己探索！"
+			]
+			id: "424B64AA9BB30C18"
+			subtitle: "深暗顶级材料"
+			tasks: [{
+				id: "1BE9B516904B496A"
+				item: "undergarden:forgotten_ingot"
+				type: "item"
+			}]
+			title: "另一种下界合金"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["193F465F65BC13F1"]
+			description: [
+				"这也是合成材料之一，惊不惊喜？意不意外？"
+				"末地水晶的魔力性质不太稳定，所以不要放置在家里……"
+			]
+			id: "2839D8EE20877BD1"
+			subtitle: "高强度魔力水晶"
+			tasks: [{
+				id: "3962D8B1E8A1B5BF"
+				item: "minecraft:end_crystal"
+				type: "item"
+			}]
+			title: "BOOM"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0E5C63B3D4891362"]
+			description: [
+				"霜钢矿只能在深暗之园的&b寒霜之地群系&r找到。因此，请善用你的自然指南针。"
+				"这种金属特殊的性质使你不能用常规的方式冶炼它。相反的是，你需要使其进一步降温才能从粗矿中萃取出纯净的霜钢。来自永昼之地的雪帽菇熔炉可以办到这一点（注意粗霜钢是放在燃料的位置的，释放热量后产生霜钢锭。违反了热力学第二定律，但这就是雪帽菇熔炉的原理）。"
+				"同理，钢粉也可以像这样冷冻为霜钢粉。这就是一种量产的方式了。"
+			]
+			icon: "undergarden:raw_froststeel"
+			id: "626F9C80F646AD96"
+			subtitle: "霜染深暗"
+			tasks: [
+				{
+					id: "1184DCB63511C140"
+					item: "undergarden:raw_froststeel"
+					type: "item"
+				}
+				{
+					id: "14881ADE8D1F01DE"
+					item: "blue_skies:snowcap_oven"
+					type: "item"
+				}
+			]
+			x: -2.0d
+			y: 2.0d
+		}
+	]
+	subtitle: ["The Void and Beneath"]
+	title: "3A 深暗与虚空"
+}

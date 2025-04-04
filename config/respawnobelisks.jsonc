@@ -1,0 +1,322 @@
+{
+    /*
+    WARNING: OVERRIDES ALL OTHER VALUES - Quickly determines values for the config. Available presets:
+    FORGIVING: A more forgiving preset with less expense and less difficulty.
+    VANILLA_COMPLEMENTARY: A preset to make the mod tack on to vanilla's respawning rather than completely overriding it.
+                           Allows players to have multiple respawn points and makes obelisks give passive respawn perks.
+    OBELISKS_AS_CHECKPOINTS: A preset to make obelisks act as "checkpoints."
+                             Players can have multiple respawn points, but obelisks take priority.
+    */
+    "preset": "none",
+    // Whether players are allowed to respawn at an obelisk in hardcore mode.
+    "allowHardcoreRespawning": true,
+    "behaviorOverrides": {
+        /*
+        A list of blocks that players cannot respawn at.
+        Tags are supported. To use them, use a hashtag before the name. Eg. #minecraft:beds
+        Note: This will not prevent spawn point from being set at the block with commands. If anything "forces" the respawn point, it won't be prevented.
+        */
+        "bannedRespawnBlocks": [
+            "minecraft:respawn_anchor",
+            "#minecraft:beds"
+        ],
+        // Whether vanilla's nether respawn anchors should be repurposed and turned into 'Destruction Catalysts'
+        "destructionCatalysts": true
+    },
+    "secondarySpawnPoints": {
+        // Whether secondary spawn points should be enabled. Secondary respawn points can be used to have multiple respawn points, triggered at various times.
+        "enableSecondarySpawnPoints": true,
+        // Determines the overall maximum amount of secondary respawn points you can have. -1 is infinite.
+        "overallMaxPoints": -1,
+        /*
+        Determines a per-block cap on the amount of respawn points you can have. -1 is infinite.
+        Tags(which get treated as a single entry) are supported by beginning the entry with a #.
+        Example: {"#minecraft:beds": 5, "respawnobelisks:respawn_obelisk": 5} // this would allow you to have 5 bed respawn points and 5 obelisk respawn points
+        */
+        "maxPointsPerBlock": {},
+        // Determines the maximum amount of secondary respawn points you can have at any block not specified in 'maxPointsPerBlock'. -1 is infinite.
+        "defaultMaxPoints": -1,
+        // Whether players can forcefully change the order of their secondary respawn points by shift right clicking a respawn point.
+        "allowPriorityShifting": true,
+        // Whether blocks should be given a specific order for respawning. This will not work well with 'allowPriorityShifting.'
+        "enableBlockPriorities": false,
+        /*
+        Determines a per-block priority in which to order secondary respawn points. Default value is 0. Higher numbers have higher priority.
+        Tags(which get treated as a single entry) are supported by beginning the entry with a #.
+        */
+        "blockPriorities": {},
+        // Whether attempting to set your spawn point when you are unable to overrides an existing spawn point.
+        "forceSpawnSetting": false,
+        /*
+        When players are allowed to choose to spawn at a secondary respawn point.
+        NEVER: Players can never choose.
+        ALWAYS: Players can always choose.
+        IF_CHARGED: Players can only choose if their respawn point is an obelisk that has charge.
+        UNLESS_CHARGED: Players can only choose if their respawn point is an obelisk that does not have charge.
+        UNLESS_CHARGED_OBELISK: Players can only choose if their obelisk does not have charge, or if their respawn point isn't an obelisk.
+        IF_OBELISK: Players can only choose if their respawn point is an obelisk.
+        UNLESS_OBELISK: Players can only choose if their respawn point is not an obelisk.
+        IF_FLAME: Players can only choose if their respawn point is a radiant flame.
+        UNLESS_FLAME: Players can only choose if their respawn point is not a radiant flame.
+        */
+        "secondarySpawnMode": "ALWAYS",
+        // A list of block ids which players are not allowed to choose to respawn at, unless it is their main respawn point.
+        "secondarySpawnBlockBlacklist": [],
+        // Whether 'secondarySpawnBlockBlacklist' should act as a whitelist instead of a blacklist.
+        "secondarySpawnBlocksAsWhitelist": false,
+        /*
+        When players are allowed to choose to respawn at world spawn.
+        NEVER: Players can never choose.
+        ALWAYS: Players can always choose.
+        IF_CHARGED: Players can only choose if their respawn point is an obelisk that has charge.
+        UNLESS_CHARGED: Players can only choose if their respawn point is an obelisk that does not have charge.
+        UNLESS_CHARGED_OBELISK: Players can only choose if their obelisk does not have charge, or if their respawn point isn't an obelisk.
+        IF_OBELISK: Players can only choose if their respawn point is an obelisk.
+        UNLESS_OBELISK: Players can only choose if their respawn point is not an obelisk.
+        IF_FLAME: Players can only choose if their respawn point is a radiant flame.
+        UNLESS_FLAME: Players can only choose if their respawn point is not a radiant flame.
+        */
+        "worldSpawnMode": "ALWAYS"
+    },
+    "immortalityCurse": {
+        // Whether the curse of immortality should be enabled or not.
+        "enableCurse": false,
+        // Sound to play when respawning with the immortality curse.
+        "curseSound": "minecraft:entity.elder_guardian.curse",
+        /*
+        Max level of the immortality curse.
+        The player will be sent to world spawn the death after getting the max level.
+        */
+        "curseMaxLevel": 5,
+        // How much each death should increment the immortality curse by.
+        "curseLevelIncrement": 2,
+        // How long the immortality curse should last after respawning. (In ticks)
+        "curseDuration": 6000
+    },
+    "radiance": {
+        /*
+        The items used for charging an obelisk.
+        Syntax: {"<ITEM_ID>": <CHARGE_AMOUNT>, ...}
+        Ex:     {"minecraft:stick":35}
+        */
+        "chargingItems": {
+            "minecraft:ender_eye": 25.0,
+            "minecraft:ender_pearl": 10.0,
+            "irons_spellbooks:arcane_essence": 5.0
+        },
+        // Whether dispensers can be used to charge obelisks.
+        "allowDispenserCharging": true,
+        // Sound to play when charging an obelisk.
+        "chargingSound": "minecraft:block.respawn_anchor.charge",
+        // Sound to play when removing radiance from an obelisk or respawning at an obelisk.
+        "depletingSound": "minecraft:block.respawn_anchor.deplete",
+        // Sound to play when setting your spawn at an obelisk.
+        "spawnSettingSound": "minecraft:block.respawn_anchor.set_spawn",
+        // How much radiance should be consumed when respawning at an obelisk. (a normal obelisk has 100 max radiance)
+        "respawnCost": 10.0,
+        // A list of blocks that can be used to provide an obelisk with infinite radiance.
+        "infiniteRadianceBlocks": [
+            "minecraft:beacon",
+            "kubejs:obelisk_base"
+        ],
+        // The beacon level required for it to provide infinite radiance.
+        "requiredBeaconLevel": 3,
+        // Whether players can set their spawn at obelisks with no radiance.
+        "allowEmptySpawnSetting": false
+    },
+    "teleportation": {
+        // Whether players can teleport to obelisks by binding a recovery compass to a lodestone under the obelisk.
+        "enableTeleportation": true,
+        // A list of blocks that players can bind recovery compasses to.
+        "allowedBindingBlocks": [
+            "minecraft:lodestone"
+        ],
+        /*
+        The delay before being able to teleport again. (In ticks)
+        Keep this above 100, otherwise issues will arise.
+        Default value: 3 minutes/3600 ticks
+        */
+        "teleportationCooldown": 3600,
+        // The delay before being able to teleport again after an unsuccessful teleport. (Eg. player moves or switches items, etc.
+        "teleportationBackupCooldown": 200,
+        // Whether players drop their items when teleporting. If enabled, all enabled perks in the 'perks' section will apply.
+        "dropItemsOnTeleport": false,
+        // Whether players drop their recovery compass when teleporting.
+        "dropCompassOnTp": true,
+        /*
+        The amount of experience(points, not levels) consumed when teleporting to an obelisk.
+        Useful numbers: https://minecraft.fandom.com/wiki/Experience#Leveling_up (See 'Total XP')
+        Default value: 27 points/3 levels
+        */
+        "xpCost": 27,
+        /*
+        The amount of experience(levels, not points) consumed when teleporting to an obelisk.
+        This is different to 'xpCost' as the cost to teleport will technically get more expensive the more levels you have.
+        This is similar to how Waystones works.
+        */
+        "levelCost": 0,
+        // Whether players can teleport whilst having the immortality curse.
+        "allowCursedTeleportation": false,
+        /*
+        Whether the immortality curse should be forcefully applied when teleporting.
+        Regardless of this value, you will still receive the curse when teleporting to uncharged obelisks.
+        */
+        "forcedCurseOnTp": false,
+        // Minimum radiance required to teleport. Values of 0 or lower will disable this requirement.
+        "minimumTpRadiance": 1.0,
+        // Amount of radiance lost when teleporting to an obelisk.
+        "teleportationCost": 20.0
+    },
+    "revival": {
+        // Whether entity revival via respawn obelisk should be enabled.
+        "enableRevival": true,
+        // Item used to revive an obelisk's saved entities.
+        "revivalItem": "minecraft:totem_of_undying",
+        // Max number of entities that can be revived at once.
+        "maxEntities": 3,
+        /*
+        Whitelist for all entities that can be revived. (Tags are supported)
+        Any entry beginning with '$' is a hardcoded option that allows for the respective type to pass through.
+        Available '$'s:
+        '$tamables' (any tamable entity),
+        '$animals' (pigs, cows, sheep, etc.),
+        '$merchants' (villagers)
+        */
+        "revivableEntities": [
+            "$tamables",
+            "$animals",
+            "$merchants"
+        ],
+        // Whether the revivable entities list should act as a blacklist.
+        "entitiesIsBlacklist": false,
+        // Obelisk radiance depletion amount when reviving entities.
+        "revivalCost": 10.0
+    },
+    "playerTrusting": {
+        // Whether players can be trusted/banned from accessing certain obelisks.
+        "enablePlayerTrust": true,
+        // Whether untrusted players can break the obelisk.
+        "allowObeliskBreaking": false,
+        // Whether untrusted players can respawn at the obelisk.
+        "allowObeliskRespawning": false,
+        // Whether untrusted players can interact with the obelisk.
+        "allowObeliskInteraction": false
+    },
+    "cores": {
+        /*
+        Max number of revive entities that a core can hold.
+        I recommend keeping this at a low amount, as large amounts (>10? Haven't tested values greater.) can cause issues with data storage.
+        */
+        "maxStoredEntities": 5,
+        // The maximum amount of 'max radiance' an obelisk can have. (Cores can be upgraded in order to reach this amount, but cannot go over.)
+        "maxMaxRadiance": 1000,
+        // The default core inside wild obelisks. (Addons can easily create new cores, this is used for that.)
+        "defaultCore": "respawnobelisks:obelisk_core",
+        // The chance for wild obelisks to have a core. (in %)
+        "wildCoreChance": 100.0,
+        // The minimum amount of radiance a wild obelisk will spawn with. (inclusive)
+        "wildMinRadiance": 100,
+        // The maximum amount of radiance a wild obelisk will spawn with. (exclusive)
+        "wildMaxRadiance": 101,
+        // The minimum amount of max radiance a wild obelisk will spawn with. (inclusive)
+        "wildMinMaxRadiance": 100,
+        // The maximum amount of max radiance a wild obelisk will spawn with. (exclusive)
+        "wildMaxMaxRadiancee": 101
+    },
+    "respawnPerks": {
+        // Minimum radiance required to keep items on death when respawning at obelisks. Negative amounts (or 0) will disable this requirement.
+        "minKeepItemRadiance": 1.0,
+        // Whether players can keep items on death even when they have the immortality curse.
+        "allowCursedItemKeeping": false,
+        "enchantment": {
+            // Whether the obeliskbound enchantment should be enabled.
+            "enableEnchantment": true,
+            // Whether the obeliskbound enchantment should be treasure only. (Can't find in enchantment table)
+            "treasureOnly": true,
+            // Whether the obeliskbound enchantment can be found in villager trades.
+            "tradeable": false,
+            // Whether the obeliskbound enchantment can be discoverable. (Found throughout chests in world)
+            "discoverable": true,
+            // The chance (%) per level to keep items with the obeliskbound enchantment.
+            "chancePerLevel": 25.0,
+            // The highest level the obeliskbound enchantment can have.
+            "maxLevel": 3
+        },
+        "inventory": {
+            // Whether you should keep your inventory (discluding armor and offhand) when respawning at an obelisk.
+            "keepInventory": false,
+            // The chance (%) to keep each item in your inventory.
+            "keepInventoryChance": 100.0
+        },
+        "hotbar": {
+            // Whether you should keep your hotbar when respawning at an obelisk.
+            "keepHotbar": false,
+            // The chance (%) to keep each item in your hotbar.
+            "keepHotbarChance": 100.0
+        },
+        "armor": {
+            // Whether you should keep your armor when respawning at an obelisk.
+            "keepArmor": false,
+            // The chance (%) to keep each armor piece.
+            "keepArmorChance": 100.0
+        },
+        "offhand": {
+            // Whether you should keep your offhand item when respawning at an obelisk.
+            "keepOffhand": false,
+            // The chance (%) to keep the item in your offhand.
+            "keepOffhandChance": 100.0
+        },
+        "experience": {
+            // Whether you should keep experience after death when respawning at an obelisk.
+            "keepExperience": false,
+            // How much (%) experience should be kept when respawning at an obelisk.
+            "keepExperiencePercent": 100.0
+        },
+        "trinkets": {
+            // Whether you should keep your curios/trinkets (if installed) when respawning at an obelisk.
+            "keepTrinkets": false,
+            // The chance (%) to keep each trinket in your trinket inventory.
+            "keepTrinketsChance": 100.0
+        }
+    },
+    "dimensions": {
+        // A whitelist of dimensions (by id) overworld respawn obelisks can be used in.
+        "overworldObeliskDimensions": [
+            "minecraft:overworld"
+        ],
+        // A whitelist of dimensions (by id) nether respawn obelisks can be used in.
+        "netherObeliskDimensions": [
+            "minecraft:the_nether"
+        ],
+        // A whitelist of dimensions (by id) end respawn obelisks can be used in.
+        "endObeliskDimensions": [
+            "minecraft:the_end"
+        ],
+        // Whether the '...ObeliskDimensions' fields should act as blacklists instead of whitelists.
+        "dimensionsAsBlacklist": false,
+        /*
+        Determines where you should spawn at after teleporting through an end portal. Available options:
+        WORLD_SPAWN: Teleports you to the world spawn.
+        SET_SPAWN: Vanilla behavior; you will be sent to wherever your set spawn is, even if it's in the end.
+        NON_END_SECONDARY: Only works if secondary respawn points are enabled. It teleports you to your first secondary spawn point that isn't in the end.
+        WORLD_SPAWN_IF_IN_END: Teleports you to the world spawn if your set spawn is in the end, otherwise it will teleport to your spawn.
+        */
+        "endSpawnMode": "WORLD_SPAWN_IF_IN_END"
+    },
+    "radiantFlame": {
+        // How many ticks players have to wait before they can place another radiant flame.
+        "placementCooldown": 18000,
+        // How long radiant flames can exist before automatically despawning. Set to -1 to allow flames to exist forever.
+        "lifetime": 12000,
+        // How much radiance flames should lose each second.
+        "radianceReduction": 0.0,
+        // Multiplier for the radiance radiant lanterns take from obelisks. Ex. 0.5 would make it so that an obelisk with 100 radiance only fills the lantern up to 50.
+        "radianceEfficiency": 0.6,
+        // The maximum amount of radiance radiant lanterns can take from obelisks. (before the radiance efficiency multiplier is applied)
+        "maxLanternRadiance": 100.0,
+        // Whether radiant flames are bound to the player that placed them.
+        "playerBound": true,
+        // Whether radiant lanterns can be reused.
+        "allowMultipleUses": false
+    }
+}

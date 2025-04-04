@@ -1,0 +1,16 @@
+{
+  "text.autoconfig.smoothboot.option.threadPriority.bootstrap": "Bootstrap Worker 优先级",
+  "text.autoconfig.smoothboot.option.threadCount.bootstrap.@Tooltip[0]": "注意：众所周知，增加会降低性能。",
+  "text.autoconfig.smoothboot.option.threadCount.main.@Tooltip[0]": "该值极大地影响加载时间。",
+  "text.autoconfig.smoothboot.option.threadPriority.io": "IO 工作线程优先级",
+  "text.autoconfig.smoothboot.option.threadPriority.integratedServer": "集成服务器线程优先级",
+  "text.autoconfig.smoothboot.option.threadCount.main.@Tooltip[1]": "也可能会影响游戏中的表现。",
+  "text.autoconfig.smoothboot.option.threadPriority.game": "游戏线程优先级",
+  "text.autoconfig.smoothboot.title": "顺利启动",
+  "text.autoconfig.smoothboot.option.threadCount.bootstrap": "Bootstrap工作线程数",
+  "text.autoconfig.smoothboot.option.threadCount": "线程数",
+  "text.autoconfig.smoothboot.option.threadPriority.main": "主要工人优先",
+  "text.autoconfig.smoothboot.option.threadPriority": "线程优先级",
+  "text.autoconfig.smoothboot.option.threadCount.bootstrap.@Tooltip[1]": "最好留在 1。",
+  "text.autoconfig.smoothboot.option.threadCount.main": "主工作线程数"
+}

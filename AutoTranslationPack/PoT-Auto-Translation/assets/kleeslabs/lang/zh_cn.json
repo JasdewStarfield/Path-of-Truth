@@ -1,0 +1,9 @@
+{
+  "config.kleeslabs.mode": "模式",
+  "config.kleeslabs.disabledCompat": "禁用兼容性",
+  "config.kleeslabs.disabledCompat.tooltip": "应禁用兼容性的模组 ID。",
+  "config.kleeslabs.title": "克利板",
+  "config.kleeslabs.mode.tooltip": "控制 KleeSlabs 是否应始终触发、ONLY_WHEN_SNEAKING 或 ONLY_WHEN_NOT_SNEAKING",
+  "config.kleeslabs.dumpSlabs": "调试转储板",
+  "config.kleeslabs.dumpSlabs.tooltip": "出于发展目的。设置为 true 可以让 KleeSlabs 在世界加载时转储名称中包含单词“slab”的项目列表。"
+}

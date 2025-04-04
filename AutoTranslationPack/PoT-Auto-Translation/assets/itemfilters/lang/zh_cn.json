@@ -1,0 +1,5 @@
+{
+  "itemfilters.help_text.filter": "过滤器（右键单击清除）",
+  "itemfilters.help_text.variants": "选项卡、滚轮、光标向上/向下：调整突出显示\nEnter：选择突出显示",
+  "itemfilters.variants": "变体[%s]"
+}

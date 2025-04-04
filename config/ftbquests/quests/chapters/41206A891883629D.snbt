@@ -1,0 +1,596 @@
+{
+	autofocus_id: "01D5299D241B8599"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "41206A891883629D"
+	group: ""
+	hide_quest_details_until_startable: true
+	icon: "farmersdelight:black_canvas_sign"
+	id: "41206A891883629D"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/i0.png"
+			rotation: 0.0d
+			width: 6.133738601823708d
+			x: 19.0d
+			y: -4.5d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: ["&l&4这个章节不是正式任务线！只起到任务线的预告作用！具体请看下方的章节组中的内容！&r&r"]
+			hide_until_deps_complete: true
+			icon: "minecraft:oak_log"
+			id: "5F826044A3A07900"
+			subtitle: "纤维素、半纤维素、木质素"
+			tasks: [{
+				id: "075C620C31120419"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "Any #minecraft:logs"
+				type: "item"
+			}]
+			title: "本源"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F826044A3A07900"]
+			id: "335B306F8F3F1C95"
+			subtitle: "Cu"
+			tasks: [{
+				id: "2E9C350294D52542"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			title: "经典"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5F826044A3A07900"]
+			id: "6BC55C5CE417B194"
+			subtitle: "Sn"
+			tasks: [{
+				id: "641C3386FFB09CB8"
+				item: "simplemetals_tin:tin_ingot"
+				type: "item"
+			}]
+			title: "柔韧"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6BC55C5CE417B194"]
+			id: "0D69D8466E9218E1"
+			subtitle: "合金#1"
+			tasks: [{
+				id: "607971A794133D1E"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			title: "支点"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3A4A7FDA4D752774"
+				"335B306F8F3F1C95"
+				"6BC55C5CE417B194"
+			]
+			id: "0DD8AAA01622241D"
+			subtitle: "合金#2"
+			tasks: [{
+				id: "3430E9FF36B48DA5"
+				item: "kubejs:bronze_ingot"
+				type: "item"
+			}]
+			title: "传承"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0DD8AAA01622241D"]
+			id: "3C070D0F43132EF1"
+			subtitle: "Fe"
+			tasks: [{
+				id: "5CEEA32771EAF942"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "基石"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C070D0F43132EF1"]
+			id: "577E2B9C81B59295"
+			subtitle: "合金#3"
+			tasks: [{
+				id: "632C04CAA8AD096A"
+				item: "immersiveengineering:ingot_constantan"
+				type: "item"
+			}]
+			title: "热敏"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2739985E562929B2"]
+			id: "3197074BD2FDC954"
+			subtitle: "合金#4"
+			tasks: [{
+				id: "37EDF12A8D14B420"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "精英"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3197074BD2FDC954"]
+			id: "21AB683F37938358"
+			subtitle: "构件#1"
+			tasks: [{
+				id: "4F55351B5FAD37E7"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			title: "差分"
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2A65BC75A3C922E7"
+				"0D69D8466E9218E1"
+			]
+			id: "3A4A7FDA4D752774"
+			subtitle: "工程块#1"
+			tasks: [{
+				id: "79FEBD990A555FE6"
+				item: "kubejs:andesite_engineering"
+				type: "item"
+			}]
+			title: "安山机巧"
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"3FADEC6A05255B1A"
+				"577E2B9C81B59295"
+			]
+			id: "2739985E562929B2"
+			subtitle: "工程块#2"
+			tasks: [{
+				id: "208D33D8F8E6964E"
+				item: "kubejs:fluid_engineering"
+				type: "item"
+			}]
+			title: "铜之导流"
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"736DD90EBB2F6694"
+				"21AB683F37938358"
+			]
+			id: "4989FE4EDCFFB309"
+			subtitle: "工程块#3"
+			tasks: [{
+				id: "5A590F374AD5A837"
+				item: "kubejs:precise_engineering"
+				type: "item"
+			}]
+			title: "精益求精"
+			x: 15.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["577E2B9C81B59295"]
+			id: "3FADEC6A05255B1A"
+			subtitle: "机壳#2"
+			tasks: [{
+				id: "4FF816A1CB59F44A"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0D69D8466E9218E1"]
+			id: "2A65BC75A3C922E7"
+			subtitle: "机壳#1"
+			tasks: [{
+				id: "5E2A2AA8ACCF1B6D"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["21AB683F37938358"]
+			id: "736DD90EBB2F6694"
+			subtitle: "机壳#3"
+			tasks: [{
+				id: "0907B250A37B8812"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["38DDB999C0EE6C57"]
+			description: ["冷知识：钢是合金"]
+			id: "657DC1780DCCD565"
+			subtitle: "合金#4"
+			tasks: [{
+				id: "618D9FD1B88EFB6C"
+				item: "immersiveengineering:ingot_steel"
+				type: "item"
+			}]
+			title: "骨骼"
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4AB5A119442468ED"
+				"657DC1780DCCD565"
+			]
+			id: "39F03860B4042EB0"
+			subtitle: "工程块#5"
+			tasks: [{
+				id: "68BD208C909CF950"
+				item: "immersiveengineering:light_engineering"
+				type: "item"
+			}]
+			title: "钢铁之韧"
+			x: 19.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["657DC1780DCCD565"]
+			id: "4AB5A119442468ED"
+			subtitle: "机壳#5"
+			tasks: [{
+				id: "71ACCFF04C48557D"
+				item: "kubejs:steel_casing"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["39F03860B4042EB0"]
+			icon: "createdeco:decal_electrical"
+			id: "26BA5A8893BF78C7"
+			tasks: [{
+				id: "198BFAE011F5C6EE"
+				title: "电！！！"
+				type: "checkmark"
+			}]
+			title: "苏醒"
+			x: 22.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4A1D286A2CADDD34"
+				"7E03548BD6891DB5"
+			]
+			id: "32EE8784F8B9200F"
+			subtitle: "工程块#6"
+			tasks: [{
+				id: "1E5501FBE6BC9BCF"
+				item: "immersiveengineering:rs_engineering"
+				type: "item"
+			}]
+			title: "末影共振"
+			x: 21.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["26BA5A8893BF78C7"]
+			id: "0C6B15031009904C"
+			subtitle: "合金#7"
+			tasks: [{
+				id: "7F6E57FC8B2E0342"
+				item: "immersiveengineering:ingot_electrum"
+				type: "item"
+			}]
+			title: "琥珀"
+			x: 23.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["26BA5A8893BF78C7"]
+			id: "6EC555AAE7573B3F"
+			subtitle: "Al"
+			tasks: [{
+				id: "16F5F8E6BC37C4EA"
+				item: "immersiveengineering:ingot_aluminum"
+				type: "item"
+			}]
+			title: "电气"
+			x: 23.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3A21FDE52042BCC3"]
+			id: "49DDB0B007118737"
+			subtitle: "机壳#7"
+			tasks: [{
+				id: "4F73B3FA34FE872E"
+				item: "kubejs:factory_casing"
+				type: "item"
+			}]
+			x: 28.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"49DDB0B007118737"
+				"77460436CF5BE7FE"
+				"2E5F0D8FEABE0E50"
+			]
+			id: "38F41C7A2075E5CC"
+			subtitle: "工程块#7"
+			tasks: [{
+				id: "22FA6F5A1C661C8C"
+				item: "immersiveengineering:heavy_engineering"
+				type: "item"
+			}]
+			title: "失落科技"
+			x: 28.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3A21FDE52042BCC3"]
+			id: "77460436CF5BE7FE"
+			subtitle: "构件#4"
+			tasks: [{
+				id: "1785B35EE51062D9"
+				item: "kubejs:steel_mechanism"
+				type: "item"
+			}]
+			title: "铁律"
+			x: 26.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["38F41C7A2075E5CC"]
+			id: "559A8B5CEBF0AD88"
+			subtitle: "高分子聚合材料"
+			tasks: [{
+				id: "6AFAE0277602E944"
+				item: "immersiveengineering:plate_duroplast"
+				type: "item"
+			}]
+			title: "聚合"
+			x: 30.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"559A8B5CEBF0AD88"
+				"2C6E3A4F6D346E33"
+			]
+			id: "46CB7AD4CEB87D61"
+			subtitle: "构件#6"
+			tasks: [{
+				id: "126D13CA77F8C408"
+				item: "immersiveengineering:component_electronic_adv"
+				type: "item"
+			}]
+			title: "集成"
+			x: 32.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"46CB7AD4CEB87D61"
+				"12FDC49E10C37F8E"
+				"3630DD2BC37F9806"
+			]
+			id: "69691E179156C1AB"
+			subtitle: "工程块#8"
+			tasks: [{
+				id: "37A34DCFC48FA58E"
+				item: "kubejs:electronic_engineering"
+				type: "item"
+			}]
+			title: "算力迭代"
+			x: 34.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"69691E179156C1AB"
+				"3A4A7FDA4D752774"
+				"4989FE4EDCFFB309"
+				"39F03860B4042EB0"
+				"38F41C7A2075E5CC"
+				"2739985E562929B2"
+				"32EE8784F8B9200F"
+				"01D5299D241B8599"
+			]
+			id: "29D490BEC5BBC8E1"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "她真可爱"
+			tasks: [{
+				id: "0149599B05074F3C"
+				item: "kubejs:buran"
+				type: "item"
+			}]
+			x: 19.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["736DD90EBB2F6694"]
+			id: "294369EA93792F33"
+			subtitle: "机壳#4"
+			tasks: [{
+				id: "7373D4939D2B48AF"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["294369EA93792F33"]
+			id: "01D5299D241B8599"
+			subtitle: "工程块#4"
+			tasks: [{
+				id: "19BAB9F7572C0B97"
+				item: "kubejs:logistical_engineering"
+				type: "item"
+			}]
+			title: "川流不息"
+			x: 17.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0C6B15031009904C"]
+			id: "2E5F0D8FEABE0E50"
+			subtitle: "构件#3"
+			tasks: [{
+				id: "2ECD118F1B8EB2CD"
+				item: "kubejs:forgotten_mechanism"
+				type: "item"
+			}]
+			title: "先古"
+			x: 26.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["657DC1780DCCD565"]
+			id: "4A1D286A2CADDD34"
+			subtitle: "合金#5"
+			tasks: [{
+				id: "3EA7ED6DF68C45A7"
+				item: "createutilities:void_steel_ingot"
+				type: "item"
+			}]
+			title: "纠缠"
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A1D286A2CADDD34"]
+			id: "7E03548BD6891DB5"
+			subtitle: "机壳#6"
+			tasks: [{
+				id: "56AB9360E47810C8"
+				item: "createutilities:void_casing"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["41166655AAE4F26C"]
+			id: "12FDC49E10C37F8E"
+			subtitle: "构件#5"
+			tasks: [{
+				id: "0EB4DCD7B2A3B6DD"
+				item: "kubejs:fission_cell"
+				type: "item"
+			}]
+			title: "能源"
+			x: 32.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["38F41C7A2075E5CC"]
+			id: "2C6E3A4F6D346E33"
+			subtitle: "合金#8"
+			tasks: [{
+				id: "0967FB2BBF009D0B"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			title: "异域"
+			x: 30.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["38F41C7A2075E5CC"]
+			id: "41166655AAE4F26C"
+			subtitle: "U"
+			tasks: [{
+				id: "059D771CDD0E19DA"
+				item: "createnuclear:enriched_yellowcake"
+				type: "item"
+			}]
+			title: "辐照"
+			x: 30.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2C6E3A4F6D346E33"]
+			id: "3630DD2BC37F9806"
+			subtitle: "机壳#8"
+			tasks: [{
+				id: "04EFB25F0A9CF9E5"
+				item: "createnuclear:reactor_casing"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6EC555AAE7573B3F"]
+			id: "3A21FDE52042BCC3"
+			subtitle: "合金#8"
+			tasks: [{
+				id: "2CC3AB7BCF28BB6D"
+				item: "kubejs:za_ingot"
+				type: "item"
+			}]
+			title: "铿锵"
+			x: 24.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4989FE4EDCFFB309"]
+			id: "38DDB999C0EE6C57"
+			subtitle: "构件#2"
+			tasks: [{
+				id: "1F28BBD79C6FCF14"
+				item: "vintageimprovements:redstone_module"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+	]
+	subtitle: ["Industrial Landmarks"]
+	title: "【总览】工业里程碑"
+}

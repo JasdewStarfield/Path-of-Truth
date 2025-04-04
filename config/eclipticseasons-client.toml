@@ -1,0 +1,58 @@
+
+[Debug]
+	#Info used for development.
+	DebugInfo = false
+
+[GUI]
+	#Displays the season and humidity levels suitable for growing crops.
+	AgriculturalInformation = true
+
+[Renderer]
+	#Force to update chunk rendering.
+	ForceChunkRenderUpdate = true
+	#Enhanced reload, which will refresh all sections periodically.
+	EnhancementChunkRenderUpdate = false
+	#Determines whether snow is falling based on vanilla lighting checks.
+	UseVanillaCheck = false
+	#When the block is updated, the snow cover will not refresh immediately, but will be updated after a delay. Please note that this will consume more performance..
+	RealisticSnowyChange = true
+	#Blocks underneath fences etc. may also be covered with snow.
+	SnowUnderFence = true
+	#The colors of the grass and leaves change with the time of year.
+	SeasonalGrassColorChange = true
+	#In spring, grass blocks will occasionally have small flowers on them.
+	FlowerOnGrass = true
+
+[Sound]
+	#Ambient Sound.
+	Sound = true
+
+[Particle]
+	#See butterflies in the spring, fireflies in the summer, and fallen leaves.
+	SeasonParticle = true
+	#In spring, butterflies fly over the flowers.
+	Butterfly = true
+	#The difficulty multiplier of butterfly particles, the value should be between 1-10000, the default is 10.
+	#Range: 1 ~ 10000
+	butterflySpawnWeight = 10
+	#Leaf blocks will drop leaves, and most frequently in the fall.
+	FallenLeaves = true
+	#The difficulty multiplier of fallen leaves particles, the value should be between 1-10000, the default is 10.
+	#Range: 1 ~ 10000
+	FallenLeavesDropWeight = 10
+	#In the summer evenings, you can see fireflies beside the flowers.
+	Firefly = true
+	#The difficulty multiplier of firefly particles, the value should be between 1-10000, the default is 10.
+	#Range: 1 ~ 10000
+	FireflySpawnWeight = 10
+	#When the grass and trees turn yellow, the wild geese fly south.
+	WildGoose = true
+	#The difficulty multiplier of wild geese particles, the value should be between 1-10000, the default is 10.
+	#Range: 1 ~ 10000
+	WildGooseSpawnWeight = 10
+
+[Weather]
+	#Modify the buffer distance for local weather changes.
+	#Range: 1 ~ 80
+	WeatherBufferDistance = 16
+

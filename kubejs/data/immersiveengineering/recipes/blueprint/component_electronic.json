@@ -1,0 +1,1 @@
+{"type":"immersiveengineering:blueprint","category":"components","inputs":[{"tag":"forge:treated_wood_slab"},{"base_ingredient":{"tag":"forge:dusts/redstone"},"count":4},{"item":"immersiveengineering:electron_tube"},{"base_ingredient":{"tag":"forge:wires/electrum"},"count":3}],"result":{"item":"immersiveengineering:component_electronic"}}

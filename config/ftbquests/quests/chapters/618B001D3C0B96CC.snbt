@@ -1,0 +1,603 @@
+{
+	autofocus_id: "7F53611A7CF99B04"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "618B001D3C0B96CC"
+	group: "5B3B99F7ECC70789"
+	hide_quest_details_until_startable: true
+	icon: "botania:mana_bottle"
+	id: "618B001D3C0B96CC"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			order: 1
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			order: 3
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/m3.png"
+			rotation: 0.0d
+			width: 8.385245901639344d
+			x: 0.0d
+			y: -7.0d
+		}
+		{
+			height: 3.0d
+			image: "botania:block/terra_plate_overlay"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			height: 3.0d
+			image: "goety:item/focus/rotation_spell"
+			rotation: 0.0d
+			width: 3.0d
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			height: 3.0d
+			image: "nebs:item/spells_and_shields/mana_blade"
+			rotation: 0.0d
+			width: 3.0d
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			height: 2.4d
+			image: "irons_spellbooks:textures/gui/spell_icons/shield.png"
+			rotation: 0.0d
+			width: 2.4d
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			height: 2.6d
+			image: "botania:block/chiseled_dark_quartz_end"
+			rotation: 0.0d
+			width: 2.6d
+			x: 0.0d
+			y: 5.0d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["27ABB5338B46217F"]
+			description: [
+				"终于，你获得了一些植物魔法的高级材料，这也意味着你可以合成一些更带劲的东西了。"
+				"现在，泰拉钢的合成需要更少的魔力——但相应的需要更复杂的材料。魔力的精华是这样的。"
+			]
+			hide_details_until_startable: true
+			hide_until_deps_complete: true
+			id: "0F9DF1C5137194E4"
+			rewards: [{
+				id: "4855EAF76355F55E"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			shape: "octagon"
+			size: 1.5d
+			subtitle: "爱是一道光……"
+			tasks: [{
+				id: "1D4B13BA4AF02BCE"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			title: "【起点】泰拉之力"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F9DF1C5137194E4"]
+			description: [
+				"这可能是植魔内部最强大的工具之一，配合不同的透镜可以打出不同的神秘效果。"
+				"基于这个工具出现的位置，&d风暴透镜&r现在可以合成了！"
+				"用你的魔力去征服这个世界吧！"
+				"这是你迈向真理的第一步——后面还会有更多&5直击规则的物品&r，但你需要通过规则内的探索去找到它们。"
+			]
+			icon: {
+				Count: 1
+				id: "botania:mana_gun"
+				tag: { }
+			}
+			id: "761B189A2DBC58B3"
+			rewards: [{
+				id: "51A55AF8B2E72467"
+				item: "botania:clip"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "甚至多功能）"
+			tasks: [
+				{
+					id: "328FF40ABDF60BD5"
+					item: "botania:lens_normal"
+					type: "item"
+				}
+				{
+					id: "13B87C68E93717DE"
+					item: {
+						Count: 1
+						id: "botania:mana_gun"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "植魔最强工具"
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0F9DF1C5137194E4"]
+			description: [
+				"通过某种意义上的无尽能源，现在的你可以轻松的&9诅咒一些物品&r而不再是通过工作台艰难合成，也可以通过魔力介质将刷怪笼的&b灵魂能量&r实体化。"
+				"这些实体化的灵魂是重要的介质……而且不仅仅用于施法。"
+				""
+				"&o&7刷怪笼：我没意见&r&r"
+			]
+			icon: "goety:gold_holder_marble"
+			id: "7B4573440B7AD85C"
+			rewards: [{
+				id: "5A577E770048C32C"
+				item: "goety:ectoplasm"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "灵魂甩卖：一组一朵生命之火"
+			tasks: [
+				{
+					id: "680760FDA2260686"
+					item: "goety:ectoplasm"
+					type: "item"
+				}
+				{
+					id: "7B5EC5FF5ED86861"
+					item: "goety:cursed_infuser"
+					type: "item"
+				}
+			]
+			title: "凝聚灵魂"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0F9DF1C5137194E4"]
+			description: [
+				"在你找到的铁魔法的饰品中，往往&9有源源不断的魔力从金属中产出&r，并为饰品提供能量以实现长效加成。但现在，你需要这种金属本身……来完成一些更伟大的创造。"
+				"通过在&b主世界地底采掘奥术残骸&r可以找到这种奇妙的金属。它可以&a通过魔力复制自身&r。"
+			]
+			id: "4A24B3DB9C49B7CB"
+			rewards: [{
+				id: "5B07461AD85E058C"
+				item: "irons_spellbooks:arcane_rune"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "魔法力量的源泉"
+			tasks: [{
+				id: "555B1EB04F8B776C"
+				item: "irons_spellbooks:arcane_salvage"
+				type: "item"
+			}]
+			title: "奥能涌动"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0F9DF1C5137194E4"]
+			description: [
+				"……然后干掉ta来获得你需要的资源以及一些……宝贵的遗物。"
+				"请做好准备，因为这真的很困难，至少比你干掉凋零要难，所以&l&4请谨慎阅读辞典上的注意事项&r&r。"
+				"在&c获得4份盖亚之魂后&r，就可以&b通过一些神秘的魔法操作来获取更多&r，而不需要一直战斗了。"
+				"你问我为什么没给你设置干掉凋零的任务？这不是MC玩家的基本操作吗？"
+				"*注：仪式需要足够开阔的大面积实心平地，以及&c记得去掉辅助放置水晶的方块&r。如果出现了错误，聊天栏会弹出提示，注意场地上闪烁的&d粉红色光点&r，那就是你需要去处理的地方。"
+			]
+			icon: "botania:gaia_head"
+			id: "701A0263F6C6D275"
+			shape: "diamond"
+			subtitle: "你需要召唤并不仁慈的大地母亲……"
+			tasks: [
+				{
+					count: 4L
+					id: "6F349FA30E97FD4B"
+					item: "botania:gaia_pylon"
+					type: "item"
+				}
+				{
+					id: "075DEF7DBC4FEB17"
+					item: "minecraft:beacon"
+					type: "item"
+				}
+			]
+			title: "盖亚仪式"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F9DF1C5137194E4"]
+			description: [
+				"你的武器和胸甲通常来说都有一个额外的法术槽位，而获得了泰拉钢意味着你可以制造这一神奇的铁砧：你将获得两个额外的，恒定的法术槽！"
+				"请谨慎选择你注入的法术，因为本质上施法方式没变（即你不能通过法术书和剑同时释放两个法术）。"
+				"同时，如果你要更换注入的法术，原有的法术会被销毁而不是替换。"
+			]
+			id: "1512F0EED2C94AD6"
+			rewards: [{
+				id: "5D04AA7F5BF708F8"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:evasion"
+								index: 0
+								level: 4
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "法术护体！"
+			tasks: [{
+				id: "6B6B4238F400C292"
+				item: "irons_spellbooks:arcane_anvil"
+				type: "item"
+			}]
+			title: "固化法术"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F9DF1C5137194E4"]
+			description: [
+				"是的，盖亚仪式有进阶版。"
+				"在本整合包中，盖亚魂锭也是&c通向终极的合成物之一&r，不再是除了召唤大BOSS之外完全无用的合金。"
+				"盖亚仪式II会更加艰难，你需要&d选择合理的方式保护自己&r，击杀守护者，然后获得遗物。"
+				"遗物是随机的，盖亚之魂是更多的，难度是倍增的。"
+				"盖亚守护者II会在神秘遗物之外掉落随机的植魔符文，以及极大加强泰拉钢头盔的神秘掉落物。"
+			]
+			icon: "botania:infinite_fruit"
+			id: "2F114B04C2EA45F4"
+			rewards: [{
+				id: "32C23F6C0A2532DA"
+				item: "botania:gaia_spreader"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "嗯……如果你拿得到的话。"
+			tasks: [
+				{
+					id: "2482BC8B4F4B8353"
+					item: "botania:dice"
+					type: "item"
+				}
+				{
+					id: "78A44FD2F1156491"
+					item: "botania:gaia_ingot"
+					type: "item"
+				}
+			]
+			title: "神秘遗物"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1512F0EED2C94AD6"]
+			description: [
+				"通过&c次级槽位升级卷轴&r，你可以在&d奥术铁砧&r上为你的法术书升级槽位至最高12个！"
+				"这下不用拼命去搞高级法术书了——这也会让一些独特的法术书更加有用）"
+				""
+				"一些更暴力的东西从这个&b充能核心&r开始，也许你可以试试雷暴的时候用它来右键轰击避雷针……"
+			]
+			icon: "goety:fire_blast_focus"
+			id: "7627B3B94BB6C9BE"
+			subtitle: "现在，你可以升级你的法术书槽位了！"
+			tasks: [
+				{
+					id: "17D0F7C920508295"
+					item: "irons_spellbooks:lesser_spell_slot_upgrade"
+					type: "item"
+				}
+				{
+					id: "398B314CC88DF439"
+					item: "irons_spellbooks:energized_core"
+					type: "item"
+				}
+			]
+			title: "更暴力的法术！"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2F114B04C2EA45F4"
+				"761B189A2DBC58B3"
+			]
+			description: [
+				"植物魔法的工具和盖亚守护者掉落的遗物在拥有强大能力的同时，往往需要&b消耗大量的魔力&r。"
+				"如果需要使用它们，尽量&6使用魔力手镜&r并&3工业化你的植物魔法魔力生产&r吧）"
+			]
+			id: "210E43CDA18C6505"
+			rewards: [{
+				id: "72A93482DBE32948"
+				item: "botania:blacker_lotus"
+				type: "item"
+			}]
+			subtitle: "植魔的高端工具"
+			tasks: [
+				{
+					id: "3E529C15C067AAED"
+					item: {
+						Count: 1
+						id: "botania:terra_pick"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5835EED124EFB2DD"
+					item: {
+						Count: 1
+						id: "botania:terra_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "魔力冲击"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2F114B04C2EA45F4"
+				"76D04861231F6C27"
+			]
+			description: [
+				"在你击败二挡的盖亚守护者后，它会&a掉落随机角色的祝福&r，能够和泰拉钢头盔进行合成。"
+				"你还可以为自己的头盔和其他部位的泰拉盔甲额外添加特效——也可以&b将法球升级打入其中&r。"
+				"然而相应的，现在铁魔法的盔甲也需要泰拉钢作为魔力核心……来撑起强大的法术效能。"
+			]
+			id: "13ED6E893B4A6238"
+			subtitle: "魔能铠甲"
+			tasks: [{
+				id: "1546C3FADDC50C9B"
+				item: {
+					Count: 1
+					id: "botania:terrasteel_helmet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "泰拉的意志"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["701A0263F6C6D275"]
+			description: [
+				"植魔的神秘手镜——&c只能用来绑定魔力池&r，但这也意味着，如果你有一个稳定产魔的池子，那你就可以开始使用一些超模的植魔装备了）"
+				"需要注意的是，手镜&6无法通过光环之戒充能&r，也就是说如果你希望&a自动充能后使用装备&r，那么你还是需要携带石板……"
+				""
+				"&o&b曾经这个章节有过创造石板，直到抽象魔法师的膝盖被生电玩家射了一箭&r&r"
+			]
+			id: "18F0A4189A37CC69"
+			rewards: [{
+				id: "665A311261A1B07E"
+				item: "botania:aura_ring_greater"
+				type: "item"
+			}]
+			subtitle: "传输魔力，超越时空"
+			tasks: [{
+				id: "7E97E7D81DB6708A"
+				item: "botania:mana_mirror"
+				type: "item"
+			}]
+			title: "远距离传输"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"4A24B3DB9C49B7CB"
+				"76D04861231F6C27"
+			]
+			description: [
+				"在你集齐地底深藏的&9深暗&r与&7奥术&r之力后，你将能用这种力量催生出一种奇特的植物——可以&b用魔力扰动现实，驱动马达&r的植物。"
+				""
+				"也就是说，你可以用魔法来推动你的工业发展了）"
+			]
+			icon: "botania:mana_pylon"
+			id: "68E15D5A4E21EEEA"
+			subtitle: "这不魔法！"
+			tasks: [
+				{
+					id: "4755F24A57F57F43"
+					item: "mechanicalbotania:spinerette"
+					type: "item"
+				}
+				{
+					id: "06A7FBC6A08262AA"
+					item: "mechanicalbotania:mana_motor"
+					type: "item"
+				}
+			]
+			title: "魔动工业"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"701A0263F6C6D275"
+				"1512F0EED2C94AD6"
+			]
+			description: [
+				"通过用紫水晶做成的工匠砧，你发现可以以此手动为物品注入魔能。"
+				"用&d盖亚的力量&r和&9黑暗的材料&r对其稍稍进行催化，你就得到了一种可以为某些特定的存在供能的基座……但这只是基座，也许&c需要一个核心&r？"
+			]
+			id: "1E3A4F1CB304BBFC"
+			rewards: [{
+				id: "1F12A38B40F33E9B"
+				item: "irons_spellbooks:pedestal"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "那么，古尔丹，代价是什么呢？"
+			tasks: [{
+				id: "4F9F08784B20A945"
+				item: "goety:pedestal"
+				type: "item"
+			}]
+			title: "奉献精神"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"1E3A4F1CB304BBFC"
+				"761B189A2DBC58B3"
+				"4A24B3DB9C49B7CB"
+			]
+			description: [
+				"&b【完成后解锁主线章节：4M 诡秘仪式】&r"
+				"准备好基座后，一些&9深邃黑暗充满幻想的仪式&r就可以开始了（大雾"
+				"但显然你&0需要一座合适的祭坛&r作为魔力焦点。"
+				"借由魔力爆发和金属框架的支持，&6一次魔力聚合能够制作出多个能够作为核心的祭坛&r，这也意味着你可以尝试更多种类的仪式，而不用每次都将祭坛搬走）"
+			]
+			id: "736407504A1AB9E0"
+			shape: "diamond"
+			size: 1.6d
+			subtitle: "凝聚魔力……穿透帷幕。"
+			tasks: [{
+				id: "6BF142DEA2CF45A2"
+				item: "goety:dark_altar"
+				type: "item"
+			}]
+			title: "【终点】仪式开始"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0F9DF1C5137194E4"]
+			description: [
+				"&5用紫水晶碎片对幽匿块右键&r有25%的几率获得这种被侵染的碎片，紫水晶与幽匿块都会被消耗。"
+				"通过&a泰拉钢与元素核心&r，你可以人为复制少量的幽匿催发体用于制作。"
+				"虽然这一碎片常出现于古城的宝箱中，但&9监守者因为世界线的变动而变得异常强大&r。如果一定要去古城，那么千万小心不要惊动它们……"
+				"{@pagebreak}"
+				"远古的城市中会出现一些&5禁忌知识的碎片&r，有的&2和魔法相关&r，有的&3和灵魂相关&r。它们可以通过魔法互相转化。"
+			]
+			id: "76D04861231F6C27"
+			shape: "hexagon"
+			subtitle: "通 灵 最 强 音"
+			tasks: [{
+				id: "2E44E703EBBBF5EA"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			title: "地底回音"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B4573440B7AD85C"]
+			description: [
+				"黑暗也是需要回火的，而且回火真的能&6产出火焰&r。"
+				"在二次注入后，金属原有的形态将消失不见，但&7灵魂诅咒产出的黑暗将被保留下来&r，然后凝结成实体。"
+				"这可以被用于凝结&9水元素&r与&6火元素&r的核心。"
+				"如果你有太多的灵魂能量，那么黑暗将会凝结成&c孤魂尸鬼&r，然后自己来找你……"
+				""
+				"&o&4*这股力量还可以帮助你找到黑暗的聚集地。小心墓穴中的亡灵……&r&r"
+			]
+			id: "0F48550D5C48437F"
+			rewards: [{
+				id: "45566D19E1252DD7"
+				item: {
+					Count: 1
+					id: "goety:cryptic_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "诅咒一切……"
+			tasks: [{
+				id: "594F86E8BD42BD63"
+				item: "goety:shadow_essence"
+				type: "item"
+			}]
+			title: "浓缩黑暗"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0F48550D5C48437F"]
+			description: [
+				"呼唤熔岩的力量，以魔力水晶为引，异位面的金属为载体，你将聚合出这一珍贵的核心。"
+				"似乎有取之不尽的烈焰藏在内部……"
+			]
+			id: "55B96E1D3BF09085"
+			shape: "hexagon"
+			subtitle: "纯粹炽热"
+			tasks: [{
+				id: "22FC7EEEA41E7A43"
+				item: "kubejs:fire_elemental_core"
+				type: "item"
+			}]
+			title: "烈焰熔铸"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0F48550D5C48437F"]
+			description: [
+				"呼唤冰霜的力量，以魔力水晶为引，异位面的金属为载体，你将聚合出这一珍贵的核心。"
+				"似乎有用之不竭的水流藏在内部……"
+			]
+			id: "6E1C390C50FEA9E2"
+			shape: "hexagon"
+			subtitle: "魔力流淌"
+			tasks: [{
+				id: "4D56B7E22BACCF50"
+				item: "kubejs:water_elemental_core"
+				type: "item"
+			}]
+			title: "流水不腐"
+			x: -2.0d
+			y: -3.0d
+		}
+	]
+	subtitle: ["Mana Within"]
+	title: "3M 魔力流淌"
+}

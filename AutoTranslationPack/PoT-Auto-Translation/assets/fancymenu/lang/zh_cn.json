@@ -1,0 +1,18 @@
+{
+  "fancymenu.file_types.fma": "花式菜单动画",
+  "fancymenu.actions.open_screen.error": "无法打开屏幕！\n\nFancyMenu 无法通过“打开屏幕”操作打开给定屏幕！\n在大多数情况下，这意味着 FancyMenu 不支持该屏幕，\n因为它是来自另一个 mod 的非香草屏幕。\\ n\n如果屏幕是 Vanilla 屏幕，请通过 GitHub 报告此错误。",
+  "fancymenu.commands.variable.set.error": "[FANCYMENU] 无法通过 /fmvariable 命令设置变量！",
+  "fancymenu.editor.background.show_overlay_on_custom_background.desc": "如果由 Vanilla Minecraft\n 渲染的深色叠加层应该在自定义背景上可见。",
+  "fancymenu.commands.closeguiscreen.error": "[FANCYMENU] 无法通过 /closeguiscreen 命令关闭 GUI 屏幕！",
+  "fancymenu.elements.music_controller.desc": "用于控制在菜单中播放的原版音乐的元素。\n\n此元素无法控制在未打开屏幕的情况下在世界中播放的音乐。\n它只能在屏幕打开时控制音乐。",
+  "fancymenu.editor.background.blur_background": "应用原版背景模糊：%s",
+  "fancymenu.commands.variable.get.error": "[FANCYMENU] 无法通过 /fmvariable 命令获取变量！",
+  "fancymenu.actions.mimic_button.error": "无法模拟按钮！\n\nFancyMenu 无法模拟按钮的单击操作。\n在大多数情况下，这意味着 FancyMenu 无法打开原始屏幕\n此按钮所属的屏幕，因为该屏幕不受支持。\n大多数不支持的屏幕是来自其他 mod 的非 Vanilla 屏幕。\n\n如果屏幕是 Vanilla 屏幕，请通过 GitHub 报告此错误。",
+  "fancymenu.elements.music_controller.play_world_music": "播放世界音乐：%s",
+  "fancymenu.editor.background.blur_background.desc": "是否应将原版背景模糊应用于\n自定义背景。",
+  "fancymenu.elements.music_controller.play_menu_music.desc": "当没有加载世界时，这种类型的音乐会在菜单中播放，\n例如在标题屏幕中。",
+  "fancymenu.elements.music_controller": "音乐控制器",
+  "fancymenu.editor.background.show_overlay_on_custom_background": "在自定义背景上显示深色叠加层：%s",
+  "fancymenu.elements.music_controller.play_menu_music": "播放菜单音乐：%s",
+  "fancymenu.elements.music_controller.play_world_music.desc": "加载世界时，这种类型的音乐会在菜单中播放。\n它基本上是在不暂停游戏的菜单中继续播放的正常世界音乐，\n就像 SP 中的库存和 MP 中的每个菜单。"
+}

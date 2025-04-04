@@ -1,0 +1,5 @@
+#netherdepthsupgrade Config
+#Config for the Nether Depths Upgrade
+#When set to true it will allow you to fish entities instead of items (default is true)
+fish_entities = true
+

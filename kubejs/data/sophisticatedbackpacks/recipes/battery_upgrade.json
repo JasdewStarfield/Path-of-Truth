@@ -1,0 +1,28 @@
+{
+  "type": "sophisticatedcore:upgrade_next_tier",
+  "conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:battery_upgrade"
+    }
+  ],
+  "key": {
+    "B": {
+      "item": "sophisticatedbackpacks:upgrade_base"
+    },
+    "G": {
+      "tag": "forge:ingots/brass"
+    },
+    "R": {
+      "item": "immersiveengineering:capacitor_mv"
+    }
+  },
+  "pattern": [
+    "GRG",
+    "RBR",
+    "GRG"
+  ],
+  "result": {
+    "item": "sophisticatedbackpacks:battery_upgrade"
+  }
+}

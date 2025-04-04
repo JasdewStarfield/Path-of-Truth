@@ -1,0 +1,34 @@
+{
+  "type": "sophisticatedcore:upgrade_next_tier",
+  "conditions": [
+    {
+      "type": "sophisticatedcore:item_enabled",
+      "itemRegistryName": "sophisticatedbackpacks:auto_smoking_upgrade"
+    }
+  ],
+  "key": {
+    "D": {
+      "tag": "forge:gems/mana_diamond"
+    },
+    "G": {
+      "tag": "forge:ingots/brass"
+    },
+    "H": {
+      "item": "minecraft:hopper"
+    },
+    "R": {
+      "item": "irons_spellbooks:arcane_essence"
+    },
+    "S": {
+      "item": "sophisticatedbackpacks:smoking_upgrade"
+    }
+  },
+  "pattern": [
+    "DHD",
+    "RSH",
+    "GHG"
+  ],
+  "result": {
+    "item": "sophisticatedbackpacks:auto_smoking_upgrade"
+  }
+}
