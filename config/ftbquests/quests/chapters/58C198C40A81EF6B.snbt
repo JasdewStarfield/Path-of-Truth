@@ -232,6 +232,7 @@
 				item: "kubejs:raw_andesite_alloy"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "在纯洁的白雏菊帮助下……"
 			tasks: [
 				{
@@ -262,7 +263,7 @@
 				item: "botania:rune_mana"
 				type: "item"
 			}]
-			shape: "circle"
+			shape: "hexagon"
 			subtitle: "拉出去祭天！"
 			tasks: [{
 				id: "626B38A8103DFA61"
@@ -406,7 +407,7 @@
 				"很合理的催化过程，不是吗？而且你需要的花瓣也变少了（乐"
 				"如果你拿不到金属核心，这说明你需要&6发展你的工业体系&r了。"
 				""
-				"&o&a*黑莲花只能探索/战斗获取，且后续用于暗黑莲花（不再能探索/战斗获取）的催化，请勿浪费。&r&r"
+				"&o&a*黑莲花可以用花瓣合成来临时产魔，但同样后续用于暗黑莲花（不再能探索/战斗获取）的催化，请勿浪费。&r&r"
 			]
 			icon: "botania:creative_pool"
 			id: "71D2AC46FA223631"
@@ -415,6 +416,7 @@
 				item: "botania:obedience_stick"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "容纳能源的池子就是电池（确信"
 			tasks: [
 				{

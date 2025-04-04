@@ -102,8 +102,8 @@
 			icon: "blue_skies:blue_journal"
 			id: "0EBCC9ACD99E6B83"
 			rewards: [{
-				id: "41671EF77FD3AF4F"
-				item: "storagedrawers:creative_storage_upgrade"
+				id: "2DC5B6C872F0CBFD"
+				item: "refinedstorage:creative_storage_disk"
 				type: "item"
 			}]
 			subtitle: "击穿一切！"

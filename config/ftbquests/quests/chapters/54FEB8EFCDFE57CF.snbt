@@ -7,14 +7,32 @@
 	hide_quest_details_until_startable: true
 	icon: "minecraft:end_crystal"
 	id: "54FEB8EFCDFE57CF"
-	images: [{
-		height: 2.0d
-		image: "kubejs:textures/quests/a3.png"
-		rotation: 0.0d
-		width: 14.01388888888889d
-		x: 0.0d
-		y: -3.5d
-	}]
+	images: [
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/a3.png"
+			rotation: 0.0d
+			width: 14.01388888888889d
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:textures/entity/end_portal.png"
+			rotation: 45.0d
+			width: 2.0d
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			image: "undergarden:block/undergarden_portal"
+			rotation: 45.0d
+			width: 2.0d
+			x: -2.0d
+			y: 0.0d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [

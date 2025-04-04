@@ -237,7 +237,7 @@
 			dependencies: ["636824522AD771D1"]
 			description: [
 				"通过一些魔法手段，你可以复制或者催生蔚蓝浩空的矿石。"
-				"不同的矿石催生方法不同，有的&c需要炼金台进行炼制&r，有的需要&b通过炼金矩阵转化&r，还有的需要&a通过魔力池催化&r。"
+				"通过&e地元素核心&r的催化，相当一部分&b宝石的原矿&r都可以被生产出来。然而缪铁和炙铁比较特殊，它们的元素性质使得它们需要的是&d水火元素核心&r。"
 				"如果觉得材料不够用，工业的大型挖矿机器又暂时做不出来，不妨看看魔法手段？"
 			]
 			icon: "botania:smelt_rod"
@@ -250,13 +250,13 @@
 					type: "item"
 				}
 				{
-					id: "7518E6F3ABD93C49"
-					item: "blue_skies:falsite_ingot"
+					id: "31FC7A72E0CEFEBF"
+					item: "blue_skies:raw_aquite"
 					type: "item"
 				}
 				{
-					id: "7AE872C213621A9B"
-					item: "create_blue_skies_compat:crushed_ventium_ore"
+					id: "28EF61A470B86B68"
+					item: "blue_skies:raw_horizonite_block"
 					type: "item"
 				}
 			]
@@ -414,8 +414,7 @@
 			description: [
 				"这两种指南针分别可以定位&2群系&r和&c结构&r。当你找不到方向的时候，就用它们吧！"
 				""
-				"*注1：指南针的定位逻辑是在附近一定范围内搜索。因此，&3如果这个范围内没有的话&r，也会显示&4找不到目标！&r"
-				"*注2：如果要搜索海底神殿/下界要塞等原版结构但&c无法找到&r，尝试&b搜索yung的结构变体&r，因为它们全部被替换了）"
+				"*注：指南针的定位逻辑是在附近一定范围内搜索。因此，&3如果这个范围内没有的话&r，也会显示&4找不到目标！&r"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:lodestone"

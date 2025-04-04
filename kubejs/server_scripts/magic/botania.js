@@ -223,6 +223,19 @@ ServerEvents.recipes(event => {
         ]
     )
     event.recipes.botania.mana_infusion('2x minecraft:egg', 'minecraft:egg', 500)
+    //增生之种复制
+    event.recipes.botania.petal_apothecary('8x botania:overgrowth_seed', 
+        [
+            'botania:spawner_mover',
+            'goety:quick_growing_seed',
+            'goety:quick_growing_seed',
+            'goety:quick_growing_seed',
+            'botania:overgrowth_seed',
+            'goety:quick_growing_seed',
+            'goety:quick_growing_seed',
+            'goety:quick_growing_seed'
+        ]
+    )
     
     //魔钢-奥术源质兑换
     event.recipes.botania.mana_infusion('4x irons_spellbooks:arcane_essence', 'botania:manasteel_ingot', 1000, 'botania:alchemy_catalyst')

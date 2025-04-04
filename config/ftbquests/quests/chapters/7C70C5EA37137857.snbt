@@ -7,14 +7,24 @@
 	hide_quest_details_until_startable: true
 	icon: "minecraft:chorus_flower"
 	id: "7C70C5EA37137857"
-	images: [{
-		height: 2.0d
-		image: "kubejs:textures/quests/a4.png"
-		rotation: 0.0d
-		width: 10.448979591836734d
-		x: 0.0d
-		y: -3.5d
-	}]
+	images: [
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/a4.png"
+			rotation: 0.0d
+			width: 10.448979591836734d
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			height: 7.0d
+			image: "goety:textures/mob_effect/ender_flux.png"
+			rotation: 0.0d
+			width: 7.0d
+			x: 0.0d
+			y: 0.0d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
