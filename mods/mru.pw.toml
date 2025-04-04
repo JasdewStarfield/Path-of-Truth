@@ -3,11 +3,11 @@ filename = "MRU-1.0.4+1.20.1+forge.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "c92d6d7cf2ffa333d64752edcde2b3c5a3e6edab"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "be202bfeb3724ff4433b51e02764c2498c36ed01229306492260c0bc2f3c62b9f8a3f500baf083210fc683723a60793db8c3e384b28e7da599806cf3c489fdac"
+url = "https://cdn.modrinth.com/data/SNVQ2c0g/versions/nKL4LKzM/MRU-1.0.4%2B1.20.1%2Bforge.jar"
 
 [update]
-[update.curseforge]
-file-id = 5848512
-project-id = 669659
+[update.modrinth]
+mod-id = "SNVQ2c0g"
+file-id = "nKL4LKzM"

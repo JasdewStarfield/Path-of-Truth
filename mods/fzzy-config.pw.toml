@@ -3,11 +3,11 @@ filename = "fzzy_config-0.6.8+1.20.1+forge.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "b3780fbad18b8b8a7829e44461a722be70a1bfbb"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "8ef1609b4e492f490d7f10e4f8d0cef94af445192663aa874d9b9a5fae87fad448639b677029954ae8fd9e5f582ca72c15aea8f3a7b504226c6b6cb29980b120"
+url = "https://cdn.modrinth.com/data/hYykXjDp/versions/BoyuNpEg/fzzy_config-0.6.8%2B1.20.1%2Bforge.jar"
 
 [update]
-[update.curseforge]
-file-id = 6364869
-project-id = 1005914
+[update.modrinth]
+mod-id = "hYykXjDp"
+file-id = "BoyuNpEg"

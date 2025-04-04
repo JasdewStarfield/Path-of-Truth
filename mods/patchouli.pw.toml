@@ -3,11 +3,11 @@ filename = "Patchouli-1.20.1-84.1-FORGE.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "e91d2e2f251375d647d592b670ea6f310c2554eb"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "d87143ae5dc979e8d65dd35ff0916077a355c503c4a906bed0d9dbe600ff0602e5296800cbdf2260d47033f664691b54e1b18a1b9835339c4e13d69fc4251f1b"
+url = "https://cdn.modrinth.com/data/nU0bVIaL/versions/8Qyw08ld/Patchouli-1.20.1-84.1-FORGE.jar"
 
 [update]
-[update.curseforge]
-file-id = 6164575
-project-id = 306770
+[update.modrinth]
+mod-id = "nU0bVIaL"
+file-id = "8Qyw08ld"

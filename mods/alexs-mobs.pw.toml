@@ -3,11 +3,11 @@ filename = "alexsmobs-1.22.9.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "dbf93d2f1da19e16739e91e8ea0fc6f4bc2f228f"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "b50280057926d750f9ffbf6a8df36deb37529356895f6bf59f25d272ecf69afccec65ec1a5c3a8bfad24f9475c15b93c5ec4666447b1fce26a90c41445bbfb04"
+url = "https://cdn.modrinth.com/data/2cMuAZAp/versions/XoIASRVU/alexsmobs-1.22.9.jar"
 
 [update]
-[update.curseforge]
-file-id = 5698791
-project-id = 426558
+[update.modrinth]
+mod-id = "2cMuAZAp"
+file-id = "XoIASRVU"

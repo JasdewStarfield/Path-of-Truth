@@ -3,11 +3,11 @@ filename = "Jadens-Nether-Expansion-2.2.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "4e56450c08e6c20b10d228debc758875ab5a9df2"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "8dce7f163fddf782583a34dbd4489f47b6f22554d09eb72b51263099f58de7ac4b502c995de623a127a1b2e4a2a797d152043ae007d664a09fa99b4c200a4b0b"
+url = "https://cdn.modrinth.com/data/v3UlehfS/versions/XdJULDkG/Jadens-Nether-Expansion-2.2.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 6058897
-project-id = 1111833
+[update.modrinth]
+mod-id = "v3UlehfS"
+file-id = "XdJULDkG"

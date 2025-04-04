@@ -1,13 +1,13 @@
 name = "Forge Config Screens [Forge & Fabric]"
 filename = "ForgeConfigScreens-v8.0.2-1.20.1-Forge.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "e727fcba7efe04bc173211ba5cdf49eea768a9a3"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "9ccac591f559f1098c374839c3e341315434f3b4bc19e84a16b7ac95061c0f3fe26f227c71f462eab13d465ead6d3228f3eda3120e3479c164508fca786e2c02"
+url = "https://cdn.modrinth.com/data/5WeWGLoJ/versions/YUDLu26S/ForgeConfigScreens-v8.0.2-1.20.1-Forge.jar"
 
 [update]
-[update.curseforge]
-file-id = 4672356
-project-id = 544048
+[update.modrinth]
+mod-id = "5WeWGLoJ"
+file-id = "YUDLu26S"

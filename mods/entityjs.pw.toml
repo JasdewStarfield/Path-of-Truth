@@ -3,11 +3,11 @@ filename = "entityjs-0.4.7-1.20.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "d59f7540c5a47382442605dd5c1ddd98c796ef79"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "e5815bf34aa6ed2b2e6d1882a85d00345e31827721d93e2427cf75bdd2a279454e4aaf31fac4d12ce39a3a10ecf6ef45f19d63a2f687b9579d8c1e8aa96bd1e0"
+url = "https://cdn.modrinth.com/data/OvPZ16yX/versions/ODRE1VKg/entityjs-0.4.7-1.20.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 6348712
-project-id = 967617
+[update.modrinth]
+mod-id = "OvPZ16yX"
+file-id = "ODRE1VKg"

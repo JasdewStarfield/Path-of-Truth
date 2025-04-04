@@ -1,13 +1,13 @@
 name = "Oculus"
 filename = "oculus-mc1.20.1-1.8.0.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "984f774e71790deaec674c7587bd24e0711871b2"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "1bb4ac77400d6684347988ed298a692c2cb15cf7923693607eb8739b171a20fef7412259e9e157111d9ce21779badab386029956f7d2283a9e611722a373e9d5"
+url = "https://cdn.modrinth.com/data/GchcoXML/versions/iQ1SwGc3/oculus-mc1.20.1-1.8.0.jar"
 
 [update]
-[update.curseforge]
-file-id = 6020952
-project-id = 581495
+[update.modrinth]
+mod-id = "GchcoXML"
+file-id = "iQ1SwGc3"

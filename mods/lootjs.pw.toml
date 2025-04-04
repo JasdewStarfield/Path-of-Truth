@@ -3,11 +3,11 @@ filename = "lootjs-forge-1.20.1-2.12.0.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "5e0d8b4d398780946f295b31b7b65bf201d7dcc7"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "50d79869601a81375fcb5d60635abbb901770107c675e07a0d5aade4c235bb3ff6879310b821583df856fa034b839045ae5f5fe7d543280195c4c2405b83dc4f"
+url = "https://cdn.modrinth.com/data/fJFETWDN/versions/72Tq9bfK/lootjs-forge-1.20.1-2.12.0.jar"
 
 [update]
-[update.curseforge]
-file-id = 5404565
-project-id = 570630
+[update.modrinth]
+mod-id = "fJFETWDN"
+file-id = "72Tq9bfK"

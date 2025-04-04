@@ -3,11 +3,11 @@ filename = "JadeAddons-1.20.1-Forge-5.3.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "140a393ae43519bcb9018a7e00c300f930d659dc"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "f892ddfd0551a4c813343507c511707253f30808972228f506e4541750c91e8af15ca460bd88d17fd512a83fe8c280703064afb2b6d56b32f1ee082a8d69b302"
+url = "https://cdn.modrinth.com/data/xuDOzCLy/versions/PSP77dD5/JadeAddons-1.20.1-Forge-5.3.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 5693124
-project-id = 583345
+[update.modrinth]
+mod-id = "xuDOzCLy"
+file-id = "PSP77dD5"

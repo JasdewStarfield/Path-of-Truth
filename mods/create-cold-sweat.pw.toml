@@ -3,11 +3,11 @@ filename = "create_cold_sweat-1.1.1.7.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "203b5247ef46dc2ddaccf8442c5d6c0622c6a45a"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "0f6b443f6192cc58d97ebb87cd1256d9a62943c85ad28cbaf3bfad548e4f27f5af265526577571d4b1b5a6ce469cde9c6622bd978ca332743b1f57acdd3986e0"
+url = "https://cdn.modrinth.com/data/Arx7g8V4/versions/VSBGWjs9/create_cold_sweat-1.1.1.7.jar"
 
 [update]
-[update.curseforge]
-file-id = 6232569
-project-id = 1184450
+[update.modrinth]
+mod-id = "Arx7g8V4"
+file-id = "VSBGWjs9"

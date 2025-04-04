@@ -3,11 +3,11 @@ filename = "moonlight-1.20-2.13.79-forge.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "b1055497427daf8627a7e409e83e0303b7d57da0"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "ad1fa91e0c9ba9a90f728a8af6291c28182008c92b8352b51c3396d446f675f43d32831225f12572d28ca424b8aaaf8ff46a609da1b19831ef24b1b282623379"
+url = "https://cdn.modrinth.com/data/twkfQtEc/versions/ijfcawUq/moonlight-1.20-2.13.79-forge.jar"
 
 [update]
-[update.curseforge]
-file-id = 6323374
-project-id = 499980
+[update.modrinth]
+mod-id = "twkfQtEc"
+file-id = "ijfcawUq"

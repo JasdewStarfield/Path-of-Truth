@@ -1,13 +1,13 @@
 name = "Stylish Effects"
 filename = "StylishEffects-v8.0.2-1.20.1-Forge.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "90f812020dcbbd854d4e3bab25237250f2e5f84e"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "43824e71075cffdb5e25d085cb485128cc298c18d6086e7caa744a37e476db2d197baf48cef446939daed76c85c063f3e2557f865eb46636ba3b48492b4925c6"
+url = "https://cdn.modrinth.com/data/onDuQF5e/versions/riXnUJMs/StylishEffects-v8.0.2-1.20.1-Forge.jar"
 
 [update]
-[update.curseforge]
-file-id = 5096987
-project-id = 543661
+[update.modrinth]
+mod-id = "onDuQF5e"
+file-id = "riXnUJMs"

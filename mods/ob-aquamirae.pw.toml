@@ -3,11 +3,11 @@ filename = "aquamirae-6.API15.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "40b317060f6984db109fca1e117ba929dcf3d58c"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "9a134941b020d33dcdbc8843eefcb3bfa9f5e68a7269b2f48f86f8c5dae1d0759c8431a94e77377ce001b72ef11014728bf83a2ac9fc590bf94496f4aef47ef7"
+url = "https://cdn.modrinth.com/data/k23mNPhZ/versions/7lX4KLFc/aquamirae-6.API15.jar"
 
 [update]
-[update.curseforge]
-file-id = 4616373
-project-id = 536254
+[update.modrinth]
+mod-id = "k23mNPhZ"
+file-id = "7lX4KLFc"

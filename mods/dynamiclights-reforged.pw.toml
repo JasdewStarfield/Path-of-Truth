@@ -1,13 +1,13 @@
 name = "Sodium/Embeddium Dynamic Lights"
 filename = "sodiumdynamiclights-forge-1.0.9-1.20.1.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "b8a1fedc1245e074806769f6fb2b2d8bc1772426"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "b0048635dd7d3a8c7899a16995a93f0eace695d311005dc5fb076ec41029a14b2359078809ec3998c322c71a0aee8fb7d88ba65ca4af0b254600fca06f552049"
+url = "https://cdn.modrinth.com/data/PxQSWIcD/versions/ICS39k7F/sodiumdynamiclights-forge-1.0.9-1.20.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 5807537
-project-id = 551736
+[update.modrinth]
+mod-id = "PxQSWIcD"
+file-id = "ICS39k7F"

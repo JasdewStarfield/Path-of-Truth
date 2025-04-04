@@ -3,11 +3,11 @@ filename = "salt-1.20.1-1.2.6.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "92816bacd4466551bef80b1fa054676cf28dc629"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "0897ad98223e4142eb6b9ab0b2308297f73ad74b6e1e60495f3933087cd7281c614e8e93329373122f8396ee69a130d883223cd92aa56223c8111a1da8436533"
+url = "https://cdn.modrinth.com/data/CrDd9QcD/versions/8A75yWDg/salt-1.20.1-1.2.6.jar"
 
 [update]
-[update.curseforge]
-file-id = 5503525
-project-id = 832006
+[update.modrinth]
+mod-id = "CrDd9QcD"
+file-id = "8A75yWDg"

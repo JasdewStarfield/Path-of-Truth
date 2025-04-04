@@ -3,11 +3,11 @@ filename = "everycomp-1.20-2.7.18.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "e3e8cbadc78ee49ae1317b838e9d5f08bd8d7e66"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "fece3631982e27d3da67ea8b3423902d3ba4244ddf1fec20479cd390d9b68c527123f33d8f723425d9e5272ee997b7e1858af1569e0c5a9e84d725a133968d85"
+url = "https://cdn.modrinth.com/data/eiktJyw1/versions/F0T76RLh/everycomp-1.20-2.7.18.jar"
 
 [update]
-[update.curseforge]
-file-id = 6205854
-project-id = 628539
+[update.modrinth]
+mod-id = "eiktJyw1"
+file-id = "F0T76RLh"

@@ -3,11 +3,11 @@ filename = "staaaaaaaaaaaack-forge-1.20.1-1.5-71.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "ba0aeb23f3d90ef45a91b190756784212815c1e3"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "05f43b82f609bb93a93f2a0ffc578e71ac816f4913f7337edaa8e848c0fbcffe3893565a6de2fcb89246a1843b9fa8b12ade155d97e9ba7a22507121777fe6d6"
+url = "https://cdn.modrinth.com/data/myL7fuqp/versions/hDO0z6X4/staaaaaaaaaaaack-forge-1.20.1-1.5-71.jar"
 
 [update]
-[update.curseforge]
-file-id = 5164617
-project-id = 866957
+[update.modrinth]
+mod-id = "myL7fuqp"
+file-id = "hDO0z6X4"

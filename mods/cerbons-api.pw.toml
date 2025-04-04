@@ -3,11 +3,11 @@ filename = "CerbonsAPI-Forge-1.20.1-1.1.0.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "83cccb66e679d72345a5194e4ca520f647bc97e6"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "757e11d6bda175025b88688becd0e70fec8f00d50ee0861537968a79f1053853c4c8845ba62bb689b8734ec7f0c8c2f1029fb1daf897152337662bbc5b47c438"
+url = "https://cdn.modrinth.com/data/GkIc6rRo/versions/XWZQbKsr/CerbonsAPI-Forge-1.20.1-1.1.0.jar"
 
 [update]
-[update.curseforge]
-file-id = 5050080
-project-id = 955605
+[update.modrinth]
+mod-id = "GkIc6rRo"
+file-id = "XWZQbKsr"

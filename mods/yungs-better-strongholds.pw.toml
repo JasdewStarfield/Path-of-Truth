@@ -1,16 +1,13 @@
 name = "YUNG's Better Strongholds (Forge)"
 filename = "YungsBetterStrongholds-1.20-Forge-4.0.3.jar"
-side = "both"
+side = "server"
 
 [download]
-hash-format = "sha1"
-hash = "3730238c56edca4bb5b2238e1314aec572ced385"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "7fbb51f761ca1a514ce95e9967bcc93c09766a8929f19029390d46b18d7e876c4354d11350a5f8410dc28e485680f4eaf1019e4bd074cff34e8cfc5b232480d4"
+url = "https://cdn.modrinth.com/data/kidLKymU/versions/rwiShgsc/YungsBetterStrongholds-1.20-Forge-4.0.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 4769083
-project-id = 465575
-
-[option]
-optional = true
+[update.modrinth]
+mod-id = "kidLKymU"
+file-id = "rwiShgsc"

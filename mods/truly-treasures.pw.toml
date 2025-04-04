@@ -1,13 +1,13 @@
 name = "Truly Treasures"
 filename = "trulytreasures-1.20-3.0.0-forge.jar"
-side = "both"
+side = "server"
 
 [download]
-hash-format = "sha1"
-hash = "2aa739995843e9719c368b470ed9aff962e968c8"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "7639f3da6cd068818cc653472a638b7e3577c5873276f683a77ea6c240d1790e116bf7036ced3d5547c0f98919d2d89fc9c12e4785c9a9a827ff11c4a4e4503a"
+url = "https://cdn.modrinth.com/data/YUTKRI5S/versions/yLDxxokl/trulytreasures-1.20-3.0.0-forge.jar"
 
 [update]
-[update.curseforge]
-file-id = 4610755
-project-id = 508348
+[update.modrinth]
+mod-id = "YUTKRI5S"
+file-id = "yLDxxokl"

@@ -3,11 +3,11 @@ filename = "cratedelight-24.11.29-1.20-forge.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "09dfd040c58998d964eb3cea8f16eec39f55c457"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "d91f997a293dc6629aa6d7030e7a23583001d575251b1d15bb040be860ce05122ae3cbe8a721741b7ccb68f2209e6638d2fbd8e6a5c1835569b78a8768cdcfd3"
+url = "https://cdn.modrinth.com/data/9rlXSyLg/versions/RAaOvXO9/cratedelight-24.11.29-1.20-forge.jar"
 
 [update]
-[update.curseforge]
-file-id = 5947291
-project-id = 958291
+[update.modrinth]
+mod-id = "9rlXSyLg"
+file-id = "RAaOvXO9"

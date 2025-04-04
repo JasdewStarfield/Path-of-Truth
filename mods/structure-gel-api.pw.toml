@@ -3,11 +3,11 @@ filename = "structure_gel-1.20.1-2.16.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "ec8c59d2a69eca3249a8da673f572b40b6d59895"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "643f7ae81418e2a473824f35dc06df357a16e17ae1dd0f4c6dd00958aebacc83fb15386240d4767b6ad41d6b89735778bb564080ce6174a0a374f9ac63f9ced8"
+url = "https://cdn.modrinth.com/data/T8TGycIQ/versions/xavY0MZc/structure_gel-1.20.1-2.16.2.jar"
 
 [update]
-[update.curseforge]
-file-id = 5278429
-project-id = 378802
+[update.modrinth]
+mod-id = "T8TGycIQ"
+file-id = "xavY0MZc"

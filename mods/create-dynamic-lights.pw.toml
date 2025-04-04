@@ -3,11 +3,11 @@ filename = "create-dyn-light-forge1.20.1+1.0.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "3c740353448b4bd21e1d0ae1bf919c6fc4ee4855"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "91e487d2aa2ddd2528b58e0cb40e58b7d1f0a29525f07c8c1bdb487f9f70e2d9821da42bace3bb63d6646cf0c9838981a05f3b36b2fa6e9019fe1a414eb7337e"
+url = "https://cdn.modrinth.com/data/evMQRxqV/versions/A0VugLKf/create-dyn-light-forge1.20.1%2B1.0.2.jar"
 
 [update]
-[update.curseforge]
-file-id = 5724524
-project-id = 1076861
+[update.modrinth]
+mod-id = "evMQRxqV"
+file-id = "A0VugLKf"

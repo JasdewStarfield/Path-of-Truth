@@ -1,13 +1,13 @@
 name = "Nimble (Forge)"
 filename = "Nimble-1.20.1-forge-5.0.1.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "292bca520a28ca84ebd4cf892555683126cdd0d4"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "c7df41fa95681ef8a7a222c7fa3fe1460af30754eb65dde8d71de16210ab53381bdfe3a3bb03b9774842fed5d34f77c1aa6abab77d0df85643b3d5f848e4c3e2"
+url = "https://cdn.modrinth.com/data/Q5UvqqQd/versions/SjlMVAhq/Nimble-1.20.1-forge-5.0.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 4914721
-project-id = 311927
+[update.modrinth]
+mod-id = "Q5UvqqQd"
+file-id = "SjlMVAhq"

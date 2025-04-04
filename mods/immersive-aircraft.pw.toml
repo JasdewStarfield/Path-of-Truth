@@ -3,11 +3,11 @@ filename = "immersive_aircraft-1.2.2+1.20.1-forge.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "5f1c9fb4a9825557a951bd5f97465fe44fc01df7"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "51131231da1e9953e6c5850b103cb87b04de7767d2771e7cc1477b6c8ef83a7088c0823ade27ab9e45c075924043151af34c716c7a051296b9b1ff13d6b328af"
+url = "https://cdn.modrinth.com/data/x3HZvrj6/versions/X2smCkoc/immersive_aircraft-1.2.2%2B1.20.1-forge.jar"
 
 [update]
-[update.curseforge]
-file-id = 6316345
-project-id = 666014
+[update.modrinth]
+mod-id = "x3HZvrj6"
+file-id = "X2smCkoc"

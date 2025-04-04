@@ -3,11 +3,11 @@ filename = "NoChatReports-FORGE-1.20.1-v2.2.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "069396e689ae887d065c8d61b7945e685fbcc65b"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "39aa2e120a10ee68e9b03e3d5bd6f2d5def2fa7fcd914f55f018a85381eb0bb52055abce53a64cb0b0fba10f24da12caef085733e715907598ce468bcf59df51"
+url = "https://cdn.modrinth.com/data/qQyHxfxd/versions/ksEG6N5E/NoChatReports-FORGE-1.20.1-v2.2.2.jar"
 
 [update]
-[update.curseforge]
-file-id = 4610474
-project-id = 634062
+[update.modrinth]
+mod-id = "qQyHxfxd"
+file-id = "ksEG6N5E"

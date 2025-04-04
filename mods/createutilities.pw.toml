@@ -3,11 +3,11 @@ filename = "createutilities-0.3.0+1.20.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "cd53635cf37bd8c72e890abc49d72057b7f82980"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "1fe93022d09d8dded205f71251009ddf490142208fbdfe666cde6c35b333a508b195eb32ed8586411006bf0612010fe542d7de2660b368206bec53bc6c326cff"
+url = "https://cdn.modrinth.com/data/PRHeWeBs/versions/K5L9tf5R/createutilities-0.3.0%2B1.20.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 5225304
-project-id = 881586
+[update.modrinth]
+mod-id = "PRHeWeBs"
+file-id = "K5L9tf5R"

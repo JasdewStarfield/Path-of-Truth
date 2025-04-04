@@ -1,13 +1,13 @@
 name = "Overflowing Bars [Forge & Fabric]"
 filename = "OverflowingBars-v8.0.1-1.20.1-Forge.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "047ac47549ae0a21b05f70d74bcf436ee0221eef"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "4854cac7069e1140dd9b567e04414c0acc865f66433b7c8cb79269e4c1a20c38f30b2d393e9920ff7f9c732fdf01408a22b07f5d1532756623072470dfc24248"
+url = "https://cdn.modrinth.com/data/XD7XOrAF/versions/w90XIUWB/OverflowingBars-v8.0.1-1.20.1-Forge.jar"
 
 [update]
-[update.curseforge]
-file-id = 5763974
-project-id = 852662
+[update.modrinth]
+mod-id = "XD7XOrAF"
+file-id = "w90XIUWB"

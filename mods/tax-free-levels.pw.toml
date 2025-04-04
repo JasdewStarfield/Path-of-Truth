@@ -3,11 +3,11 @@ filename = "TaxFreeLevels-1.4.8-forge-1.20.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "d8d975ea8c0fed5ef11f3bc20535b19f67cf6cb2"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "5456814c85b6a8676085c51fe3ccf005918267aede76d1415d9e9ef0d16fc20e768b27301e70c0765c9c07fedc5895f3c378d74c6df113b98654d044f2d2dc5d"
+url = "https://cdn.modrinth.com/data/jCBrrLTs/versions/1SZb4aej/TaxFreeLevels-1.4.8-forge-1.20.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 6213743
-project-id = 462128
+[update.modrinth]
+mod-id = "jCBrrLTs"
+file-id = "1SZb4aej"

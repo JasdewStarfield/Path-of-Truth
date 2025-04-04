@@ -1,13 +1,13 @@
 name = "Starter Structure"
 filename = "starterstructure-1.20.1-4.0.jar"
-side = "both"
+side = "server"
 
 [download]
-hash-format = "sha1"
-hash = "a6c42e7eeeb5ccf81b5d0051f3ec6fcf1287e914"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "292ed51c11b339371e8472b542027ad15706d43408adf49136d6fec94bc10d9b073c532b2495d97357353c9c38da08803e912ff47f6a40f0625c8d602925291a"
+url = "https://cdn.modrinth.com/data/gi80Z09B/versions/FKGpmAzJ/starterstructure-1.20.1-4.0.jar"
 
 [update]
-[update.curseforge]
-file-id = 6185089
-project-id = 746391
+[update.modrinth]
+mod-id = "gi80Z09B"
+file-id = "FKGpmAzJ"

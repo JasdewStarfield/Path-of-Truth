@@ -1,13 +1,13 @@
 name = "FlickerFix"
 filename = "flickerfix-1.20.1-4.0.1.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "ffcf6207d71ba069a8baf18f6ac4ee8668376490"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "067e66d2ab3f8b538b03964cc98dbe25141a858b0cd38eec1dc15192e312fe2da9a0c1b17bb7c27341e54ebdfe59c2f538d254fdea0834062292505448203bf6"
+url = "https://cdn.modrinth.com/data/KSyWOxT5/versions/tgbHZ6aV/flickerfix-1.20.1-4.0.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 4731559
-project-id = 431430
+[update.modrinth]
+mod-id = "KSyWOxT5"
+file-id = "tgbHZ6aV"

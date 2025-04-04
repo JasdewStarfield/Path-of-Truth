@@ -3,11 +3,11 @@ filename = "fishermens_trap-2.1.4.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "f3a4cf1ff9f320c85900f8acf0f17629ed795dc6"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "e45cc1e09d13da0256420a8c7ef6d6643719cdee217f2b961e01c3dc20ef48d7170b9645fb35b1e8280ca3dfb40ddbacb51a3be7945ad8db3c46e08e0d6a32bf"
+url = "https://cdn.modrinth.com/data/ltRggnDx/versions/1zultZuQ/fishermens_trap-2.1.4.jar"
 
 [update]
-[update.curseforge]
-file-id = 5665939
-project-id = 883029
+[update.modrinth]
+mod-id = "ltRggnDx"
+file-id = "1zultZuQ"

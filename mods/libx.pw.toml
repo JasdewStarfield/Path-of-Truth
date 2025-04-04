@@ -3,11 +3,11 @@ filename = "LibX-1.20.1-5.0.14.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "d75610b0c34626cea8b1155a47d28333cc1f58a2"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "af096d18c3bb1ee5e0fc765ccbe5e63882865f16884e005f23a537f14009edf0f8dcd82254fcbc76081757430abc3a825001f89e120a7415aa1dbe2772f7a922"
+url = "https://cdn.modrinth.com/data/qEH6GYul/versions/YHTMDq85/LibX-1.20.1-5.0.14.jar"
 
 [update]
-[update.curseforge]
-file-id = 5207625
-project-id = 412525
+[update.modrinth]
+mod-id = "qEH6GYul"
+file-id = "YHTMDq85"

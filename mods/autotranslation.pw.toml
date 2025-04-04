@@ -1,16 +1,13 @@
 name = "AutoTranslation"
 filename = "AutoTranslation-1.2.1+mc1.20.2-forge.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "d9eebe7f32e8fa828ac114c96a6f3e4244012492"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "cbc7a68850bee4e554cef17cc416743d995804490246c3dd36d4572b06e2c99d8e84284b487331e98733f77611b1a7b84705eb00505537c867fe9a8ef3379a5b"
+url = "https://cdn.modrinth.com/data/rXiN1g54/versions/vByh6rf1/AutoTranslation-1.2.1%2Bmc1.20.2-forge.jar"
 
 [update]
-[update.curseforge]
-file-id = 4993676
-project-id = 919497
-
-[option]
-optional = true
+[update.modrinth]
+mod-id = "rXiN1g54"
+file-id = "vByh6rf1"

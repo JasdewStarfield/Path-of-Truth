@@ -1,16 +1,13 @@
 name = "YUNG's Better Nether Fortresses (Forge)"
 filename = "YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar"
-side = "both"
+side = "server"
 
 [download]
-hash-format = "sha1"
-hash = "889cd16a93764d1d6af2e2dda5bbc286a2683e7a"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "bceefeaf84dffd7386a61118d6b1c6c2107e17e7a8f4340eff2c1f0234dba0e6d8f43903521d5a70334362ab6e4069788e5b29cf42d8ee9cd4f2a98feb64112b"
+url = "https://cdn.modrinth.com/data/Z2mXHnxP/versions/2nUEz0zq/YungsBetterNetherFortresses-1.20-Forge-2.0.6.jar"
 
 [update]
-[update.curseforge]
-file-id = 5193465
-project-id = 817651
-
-[option]
-optional = true
+[update.modrinth]
+mod-id = "Z2mXHnxP"
+file-id = "2nUEz0zq"

@@ -3,11 +3,11 @@ filename = "createcobblestone-1.4.4+forge-1.20.1-95.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "612ad22e6914ceb9f6ea69538d59b167025c21b5"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "2e8fc2ba5d9b00d5e518313185a8cf9bd3b4d642438b566cac2eb5e39f42af5a6d699858da82fa88737c3dbfe85519cb9c77ca0650216de7477a91dffecfbcab"
+url = "https://cdn.modrinth.com/data/ihpnEd80/versions/lTPDaqeK/createcobblestone-1.4.4%2Bforge-1.20.1-95.jar"
 
 [update]
-[update.curseforge]
-file-id = 6250724
-project-id = 1023532
+[update.modrinth]
+mod-id = "ihpnEd80"
+file-id = "lTPDaqeK"

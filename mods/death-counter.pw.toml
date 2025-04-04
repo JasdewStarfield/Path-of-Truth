@@ -3,11 +3,11 @@ filename = "DeathCounter-1.20.1-Forge-1.4.0.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "b96e875e3891804646a72f772d81b42e94be2c7b"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "1335d58faa8dda443de00c774fa20e3dc362197041d3fe2fcea88a9966aa2c8110f9a20aca123f9bd18dc27a8f71f5991763454251fb725c8c8447e129ebecb4"
+url = "https://cdn.modrinth.com/data/PPtJBZAV/versions/GtI3a9NT/DeathCounter-1.20.1-Forge-1.4.0.jar"
 
 [update]
-[update.curseforge]
-file-id = 5477582
-project-id = 229068
+[update.modrinth]
+mod-id = "PPtJBZAV"
+file-id = "GtI3a9NT"

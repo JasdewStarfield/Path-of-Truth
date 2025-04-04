@@ -3,11 +3,11 @@ filename = "artifacts-forge-9.5.15.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "159f2c9ae8422fcac882808f7c4ba4f5dbe6fdaa"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "ae418b29eebbe8ec3fd0bb71d981c97ef1a262a7b9f3670da2e107f01b1b876232844b19422c864fa923b76087ffdcf807e9795bcf6b973412a4ab5c455c363d"
+url = "https://cdn.modrinth.com/data/P0Mu4wcQ/versions/Y36wl9Ap/artifacts-forge-9.5.15.jar"
 
 [update]
-[update.curseforge]
-file-id = 6351716
-project-id = 312353
+[update.modrinth]
+mod-id = "P0Mu4wcQ"
+file-id = "Y36wl9Ap"

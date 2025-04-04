@@ -3,11 +3,11 @@ filename = "showcaseitem-1.20.1-1.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "282e08fc46b7e4bab61a8651b5fcc1ee1befddd9"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "255c51b15703de0e7b6c4ea6ee4e00cbadf830619ea5eb872144c2a29ca7b60f7727bff5899b7a035448dad4dda4cc57ae2a4b3a112bea4ac6fb1da88016ee66"
+url = "https://cdn.modrinth.com/data/P5Jjjezm/versions/Q5HI3IfP/showcaseitem-1.20.1-1.2.jar"
 
 [update]
-[update.curseforge]
-file-id = 5090810
-project-id = 627196
+[update.modrinth]
+mod-id = "P5Jjjezm"
+file-id = "Q5HI3IfP"

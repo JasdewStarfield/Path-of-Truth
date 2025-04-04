@@ -1,13 +1,13 @@
 name = "Spells Gone Wrong (Iron's Spells N Spellbooks)"
 filename = "spells_gone_wrong-1.20.1-V1.0.2.jar"
-side = "both"
+side = "server"
 
 [download]
-hash-format = "sha1"
-hash = "64b8b42f5cdb3a4a7c29c1bcc856b7d63feee912"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "9daf94205c86138aa66a09d2e593a6d52996231daf527525c674eec787e000c39e57763005f3080b354c7b9efc2e1b45d0b3c8d9b7b4f515248d056731d46369"
+url = "https://cdn.modrinth.com/data/4ugLsKOh/versions/5vUkrKGu/spells_gone_wrong-1.20.1-V1.0.2.jar"
 
 [update]
-[update.curseforge]
-file-id = 5783657
-project-id = 1009162
+[update.modrinth]
+mod-id = "4ugLsKOh"
+file-id = "5vUkrKGu"

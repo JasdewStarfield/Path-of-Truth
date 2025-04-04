@@ -3,11 +3,11 @@ filename = "universalgrid-1.20.1-1.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "68296d5aec31299bebfba7f8572409447b9a5fe7"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "a70c721e06fc2a099f2045f3b9db335c1d749f068dcb582bbb0992d7f2f0fb4d793991d69d3177976dab40036eb969b610acfbb8d7cf4941392d7534d94fed2d"
+url = "https://cdn.modrinth.com/data/kpMfA312/versions/jl1ouh7x/universalgrid-1.20.1-1.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 4839781
-project-id = 536160
+[update.modrinth]
+mod-id = "kpMfA312"
+file-id = "jl1ouh7x"

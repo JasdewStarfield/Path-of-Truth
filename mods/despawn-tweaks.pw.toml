@@ -1,13 +1,13 @@
 name = "Despawn Tweaks"
 filename = "despawntweaks-forge-1.0.0-1.20.1.jar"
-side = "both"
+side = "server"
 
 [download]
-hash-format = "sha1"
-hash = "2a46154c5b58aa803aca4eb0a0e9682557e4422f"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "6fbd35923e395f7ae398bf3f1d97fa8754119f6db7463fc1e6efa81d40fd7eec6b8911e6b6cbc3d0eaf0359574fb165dd42202255904d94f005c1beb682c501a"
+url = "https://cdn.modrinth.com/data/ahQrpeXp/versions/AL5vFSzb/despawntweaks-forge-1.0.0-1.20.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 6145371
-project-id = 1191080
+[update.modrinth]
+mod-id = "ahQrpeXp"
+file-id = "AL5vFSzb"

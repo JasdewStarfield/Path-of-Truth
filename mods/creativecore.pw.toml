@@ -3,11 +3,11 @@ filename = "CreativeCore_FORGE_v2.12.31_mc1.20.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "0a4331b9670a3ad2467aac1d766d12cb9c0d4629"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "def780dc76c9701ad3947c5f4dba4f75a4717c51bd1b9433967ed5f5ae88a23e03dab61a32b1d8217f86fe9cbaa230a76b8d07c3926bf5b7ff54989602d476b1"
+url = "https://cdn.modrinth.com/data/OsZiaDHq/versions/ERxjjtmi/CreativeCore_FORGE_v2.12.31_mc1.20.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 6109933
-project-id = 257814
+[update.modrinth]
+mod-id = "OsZiaDHq"
+file-id = "ERxjjtmi"

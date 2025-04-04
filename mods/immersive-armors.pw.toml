@@ -3,11 +3,11 @@ filename = "immersive_armors-1.6.1+1.20.1-forge.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "ce960c031636eb7b1ca0e830496806f380d0be9c"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "865652f1eb98214e5bf8e33a195279beb28ca22e0a87b7bb16c4034f95098191d1d0462c50a6958d982b192605a924eaae4f4e3533fffc25e652d036231306ae"
+url = "https://cdn.modrinth.com/data/eE2Db4YU/versions/g70ZMcU2/immersive_armors-1.6.1%2B1.20.1-forge.jar"
 
 [update]
-[update.curseforge]
-file-id = 4664264
-project-id = 580681
+[update.modrinth]
+mod-id = "eE2Db4YU"
+file-id = "g70ZMcU2"

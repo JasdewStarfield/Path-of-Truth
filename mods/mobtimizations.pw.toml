@@ -3,11 +3,11 @@ filename = "mobtimizations-forge-1.20.1-1.0.0.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "1e7de73072e0adc9f09494cd79a79b1db030c293"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "6b4687616bbeb1afe6dc13fd291373ee4af2bdc26a5a3367ec20500f9afac4706a3b26a65e52bded5d8cb4a7d8782c0e742002bf7ca2d66b54f5ea35879f413a"
+url = "https://cdn.modrinth.com/data/Kbz7UydC/versions/mEhoYk0d/mobtimizations-forge-1.20.1-1.0.0.jar"
 
 [update]
-[update.curseforge]
-file-id = 5135998
-project-id = 974401
+[update.modrinth]
+mod-id = "Kbz7UydC"
+file-id = "mEhoYk0d"

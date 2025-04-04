@@ -3,11 +3,11 @@ filename = "ScorchedGuns-0.3.9-1.20.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "6625c174e6439c87ec73620ada1acf6eee99f8c1"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "645e87ab27a7ef714a94d32dacbc6df6f1ac1e2b016034f9b2be093ca8c51ef02418187e275ae2c4fd29ea0eb298a0f762e7b7fcdb24f5d913628d1d40f1f988"
+url = "https://cdn.modrinth.com/data/lDzXAiqs/versions/6dVgXVmJ/ScorchedGuns-0.3.9-1.20.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 5931109
-project-id = 802940
+[update.modrinth]
+mod-id = "lDzXAiqs"
+file-id = "6dVgXVmJ"

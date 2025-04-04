@@ -3,11 +3,11 @@ filename = "create_compressed-2.0.0-forge-1.20.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "01ecbaa1ee198cac6fa43e58634add5995331256"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "6ea737ac00cab9ebbc95755b130d09431f8fdde120ddc81102f8cfbec3e27d4cc90acc655cae9251dd8345e02c59c5406c346b11abbf5844380288299020be70"
+url = "https://cdn.modrinth.com/data/Sy4Box1J/versions/k48PAeOy/create_compressed-2.0.0-forge-1.20.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 6251917
-project-id = 886773
+[update.modrinth]
+mod-id = "Sy4Box1J"
+file-id = "k48PAeOy"

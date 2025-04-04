@@ -3,11 +3,11 @@ filename = "rechiseled-1.1.6-forge-mc1.20.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "cacec8ace7987d33e76873bf574704aea7564a4e"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "2be090e73f8ded2c140d277a1997020286f344ecb2e87e762e0d9ce5d29e9f158381c0100e257136dd2460e2e320cbeed956f656d4b36e58040b9bb07517935e"
+url = "https://cdn.modrinth.com/data/B0g2vT6l/versions/C384ujVf/rechiseled-1.1.6-forge-mc1.20.jar"
 
 [update]
-[update.curseforge]
-file-id = 5286306
-project-id = 558998
+[update.modrinth]
+mod-id = "B0g2vT6l"
+file-id = "C384ujVf"

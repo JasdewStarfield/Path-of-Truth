@@ -3,11 +3,11 @@ filename = "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "2019d821bed9071daabed43979433a5473ceee49"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "df79a0c64da14ca2b27dc04a72d85ce5c8e7c498e7b72da4d7bfddd592bb4bac165e70afe33fac97446e4996fffd8003350df07ede2a77233dddec77b8ff0ee7"
+url = "https://cdn.modrinth.com/data/J81TRJWm/versions/skYziQQL/konkrete_forge_1.8.0_MC_1.20-1.20.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 5028413
-project-id = 410295
+[update.modrinth]
+mod-id = "J81TRJWm"
+file-id = "skYziQQL"

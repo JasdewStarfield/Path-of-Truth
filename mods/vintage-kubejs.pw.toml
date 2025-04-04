@@ -3,11 +3,11 @@ filename = "vintage_kubejs-1.20.1-1.0.0rc-2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "ca49a4163794cc0f94a31a17f6956be11979db53"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "d1bab6515b6353294adc98f0bd44e184ecb08d4091b5654d86edef1735c4a8260e46300acb5431bced3a1994e8326f5fdee33effb81e438176a3685900f20d20"
+url = "https://cdn.modrinth.com/data/u2r2GYRW/versions/TUKYnKui/vintage_kubejs-1.20.1-1.0.0rc-2.jar"
 
 [update]
-[update.curseforge]
-file-id = 5607145
-project-id = 1077532
+[update.modrinth]
+mod-id = "u2r2GYRW"
+file-id = "TUKYnKui"

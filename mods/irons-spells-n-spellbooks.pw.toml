@@ -3,11 +3,11 @@ filename = "irons_spellbooks-1.20.1-3.4.0.7.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "d1d1584f35fe4c9fa00fafa06380ad51b0ac2c8c"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "ecf1e027467afe438368e3f561c72f18dbca5435ccafc41b9613c7457afac5b5bde68a2b524563a585eb7fccf01353e76457feb67d1c6e1df65258675ba3cf59"
+url = "https://cdn.modrinth.com/data/s4OWxYQQ/versions/84HmrYr3/irons_spellbooks-1.20.1-3.4.0.7.jar"
 
 [update]
-[update.curseforge]
-file-id = 6054196
-project-id = 855414
+[update.modrinth]
+mod-id = "s4OWxYQQ"
+file-id = "84HmrYr3"

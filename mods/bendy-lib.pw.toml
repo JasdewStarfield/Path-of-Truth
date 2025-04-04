@@ -1,13 +1,13 @@
 name = "bendy-lib"
 filename = "bendy-lib-forge-4.0.0.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "d1e77cc4534cecc753a7d2ba4e84dec412a55025"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "34f07b7d611dd07a0646609c61a3566987b6f56cdedc40caa18708fdc9e7be9d0786f5c5e7b14217a027998a1bf82761777787315c60ea63112cb54503c29e7c"
+url = "https://cdn.modrinth.com/data/aRnIEV0F/versions/df4Yfl6J/bendy-lib-forge-4.0.0.jar"
 
 [update]
-[update.curseforge]
-file-id = 4550371
-project-id = 623373
+[update.modrinth]
+mod-id = "aRnIEV0F"
+file-id = "df4Yfl6J"

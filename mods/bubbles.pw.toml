@@ -1,13 +1,13 @@
 name = "Pop!"
 filename = "pop-1.20.1-1.0.0.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "aceade93c4e3792700b59ac512682cfcd26a1140"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "fbde9d7e0ba7d181a0fb6571bf98d3bec0d1210449ed4954882d88c39cfa9247d18261d40239135b70589ce8a5d4274acf5cdcd8c0d08ac397d665adadbe890e"
+url = "https://cdn.modrinth.com/data/nlFgvj7M/versions/QZezsdyT/pop-1.20.1-1.0.0.jar"
 
 [update]
-[update.curseforge]
-file-id = 4593704
-project-id = 457826
+[update.modrinth]
+mod-id = "nlFgvj7M"
+file-id = "QZezsdyT"

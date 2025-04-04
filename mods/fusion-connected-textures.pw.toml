@@ -1,13 +1,13 @@
 name = "Fusion (Connected Textures)"
 filename = "fusion-1.2.5-forge-mc1.20.1.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "7257a5baf56b945a324945cdb3cd19e4f0067531"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "21a7003b5c58e1317fae1743ae3ee03d7d3fa11b9e62fc25ccd9ad0d334493ce1acb48adf8975d8b0faba58fea2963c361d30cd6d28ac96e3d755d84ff0905b0"
+url = "https://cdn.modrinth.com/data/p19vrgc2/versions/PnnohXSc/fusion-1.2.5-forge-mc1.20.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 6316096
-project-id = 854949
+[update.modrinth]
+mod-id = "p19vrgc2"
+file-id = "PnnohXSc"

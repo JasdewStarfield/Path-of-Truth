@@ -3,11 +3,11 @@ filename = "trashcans-1.0.18b-forge-mc1.20.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "4bc991b861a981921d06b731368239ce6ea571d3"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "fc8f2bc217bdfa9d7a7902159cefb091d768ab6f05cf0c2343d1f3066fec9525d044ddf46454142699366341188f87fdb1340d5cedd9b535ed7bf4109f3b996a"
+url = "https://cdn.modrinth.com/data/4QrnfueM/versions/Q0Ym1HHm/trashcans-1.0.18b-forge-mc1.20.jar"
 
 [update]
-[update.curseforge]
-file-id = 4712179
-project-id = 394535
+[update.modrinth]
+mod-id = "4QrnfueM"
+file-id = "Q0Ym1HHm"

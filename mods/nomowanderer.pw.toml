@@ -3,11 +3,11 @@ filename = "nomowanderer-1.20.1_1.6.4.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "5413f310abbb7e5936accb635bcc1323867af305"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "e3263cda75713ab2f13eb34ffe4f9a8b3df9164851f630b0ba8940748435ed0c96be6fdfa0c751722cd760de48812b1f857751ec3c08f6643e9cd1722b8e4430"
+url = "https://cdn.modrinth.com/data/BAGslLB8/versions/7mwUPkA7/nomowanderer-1.20.1_1.6.4.jar"
 
 [update]
-[update.curseforge]
-file-id = 5060170
-project-id = 354428
+[update.modrinth]
+mod-id = "BAGslLB8"
+file-id = "7mwUPkA7"

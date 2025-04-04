@@ -3,11 +3,11 @@ filename = "bellsandwhistles-0.4.3-1.20.x.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "7cb1e1dc365c43f08ee7616f1505759e547b11be"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "8b78879a2d2a4b450892a97701dd594b78002006072d38c7a2d67e58e32fd5af1de831c71d826365c976903fc8208c4f61b17d9b1d703107a995a1ae190b65ab"
+url = "https://cdn.modrinth.com/data/gJ5afkVv/versions/uvnfNUsp/bellsandwhistles-0.4.3-1.20.x.jar"
 
 [update]
-[update.curseforge]
-file-id = 4860141
-project-id = 905040
+[update.modrinth]
+mod-id = "gJ5afkVv"
+file-id = "uvnfNUsp"

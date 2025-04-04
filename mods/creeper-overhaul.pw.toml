@@ -3,11 +3,11 @@ filename = "creeperoverhaul-3.0.2-forge.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "01e3275d3eb586c953ac786b1afee6e473eef947"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "ce8b526b0d673566ee1aecfe14521818b183d73dafde838b7b4a9376e629cb2bf3d36219c8a03e974c8d93550d387a3ea1e33b9ca64c26cd934ded937d065d94"
+url = "https://cdn.modrinth.com/data/MI1LWe93/versions/Ap1DSAzz/creeperoverhaul-3.0.2-forge.jar"
 
 [update]
-[update.curseforge]
-file-id = 5125710
-project-id = 561625
+[update.modrinth]
+mod-id = "MI1LWe93"
+file-id = "Ap1DSAzz"

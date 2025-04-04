@@ -1,13 +1,13 @@
 name = "CullLessLeaves Reforged (Unofficial)"
 filename = "CullLessLeaves-Reforged-1.20.1-1.0.5.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "71b1603071461e036a3ba2aaeeb52cc10fa3d348"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "1d037fd49a9b80eecf2ed8e3b64178d1fbae7cc2a511813ab8b627479713e79a98af0896366e1ad2a3fa3f9849eab086166c1a27227f6d9370c2738132d859e6"
+url = "https://cdn.modrinth.com/data/qthuEuVy/versions/wPOb8yEG/CullLessLeaves-Reforged-1.20.1-1.0.5.jar"
 
 [update]
-[update.curseforge]
-file-id = 4917082
-project-id = 840788
+[update.modrinth]
+mod-id = "qthuEuVy"
+file-id = "wPOb8yEG"

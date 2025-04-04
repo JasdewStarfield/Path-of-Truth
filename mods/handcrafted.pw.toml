@@ -3,11 +3,11 @@ filename = "handcrafted-forge-1.20.1-3.0.6.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "f1b9a009529134c736c59d6d192d53a4a25e5e5f"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "d3c2eb6fad0c274d4ce9e121749252bcbc19a1b0ff5b619255a08f22e3aade51d3f3fd454712de5b1cb8242e78c2f320ab99d2c94f96f372b4089dbc66a8d78e"
+url = "https://cdn.modrinth.com/data/pJmCFF0p/versions/N7wZwOFy/handcrafted-forge-1.20.1-3.0.6.jar"
 
 [update]
-[update.curseforge]
-file-id = 5118729
-project-id = 538214
+[update.modrinth]
+mod-id = "pJmCFF0p"
+file-id = "N7wZwOFy"

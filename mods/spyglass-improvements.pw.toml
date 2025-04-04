@@ -1,13 +1,13 @@
 name = "Spyglass Improvements: Zoom, Quick Access... [Fabric/NeoForge]"
 filename = "spyglass_improvements-1.5+mc1.20+forge.jar"
-side = "both"
+side = "client"
 
 [download]
-hash-format = "sha1"
-hash = "16166f37208282f35d1b16e780f282fc06c9872c"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "fab096bb353cd5982d3f2a0cb405cdfd7be0a985440b17b7eae44e3ec0dd10d19254b95c6c2ba28f8d51e913e7802230d426165404c0125d7475090d2926db36"
+url = "https://cdn.modrinth.com/data/Z6ykjRlM/versions/chgnA6zJ/spyglass_improvements-1.5%2Bmc1.20%2Bforge.jar"
 
 [update]
-[update.curseforge]
-file-id = 5071983
-project-id = 571264
+[update.modrinth]
+mod-id = "Z6ykjRlM"
+file-id = "chgnA6zJ"

@@ -3,11 +3,11 @@ filename = "Kiwi-1.20.1-Forge-11.8.30.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "0469d08eb4195c6b4f5563c02af6cb8d7cda5758"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "4466a5a553804fe853a462c6055a5ae74b151da65b9872d5389c77dcd53b5c538066403c4b4ed48dc8bede8d35e131d976cb105433bcb3180b6aaca459b7ef4c"
+url = "https://cdn.modrinth.com/data/ufdDoWPd/versions/SpmpxVSh/Kiwi-1.20.1-Forge-11.8.30.jar"
 
 [update]
-[update.curseforge]
-file-id = 6184688
-project-id = 303657
+[update.modrinth]
+mod-id = "ufdDoWPd"
+file-id = "SpmpxVSh"

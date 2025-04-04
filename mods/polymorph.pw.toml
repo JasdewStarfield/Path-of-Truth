@@ -3,11 +3,11 @@ filename = "polymorph-forge-0.49.8+1.20.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "60be345312d425fc1cff5af7ae1acd46d941dc62"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "97e88f8ce0de13f8d9b87d1acb57e54a96d68313b657f547645d43153b6dd50c0daf9678fd3947b39ce8b5ec2091619c16a477d1a7a67b9a6d03eef4bf80bcfb"
+url = "https://cdn.modrinth.com/data/tagwiZkJ/versions/f95jImsh/polymorph-forge-0.49.8%2B1.20.1.jar"
 
 [update]
-[update.curseforge]
-file-id = 5995253
-project-id = 388800
+[update.modrinth]
+mod-id = "tagwiZkJ"
+file-id = "f95jImsh"

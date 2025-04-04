@@ -1,13 +1,13 @@
 name = "Alternate Current"
 filename = "alternate_current-mc1.20-1.7.0.jar"
-side = "both"
+side = "server"
 
 [download]
-hash-format = "sha1"
-hash = "02def44a2c416459ee5daecbe1caa6d78571e205"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "d9ae21a3a389c63466bf22b36d4a78c859f30c901397622f1f1438737901a2c67e4d911c83831e0d4f1edabf0b86b58f4192d9980ecef8278393fd4af64a9585"
+url = "https://cdn.modrinth.com/data/r0v8vy1s/versions/kC6SY4Zp/alternate_current-mc1.20-1.7.0.jar"
 
 [update]
-[update.curseforge]
-file-id = 4721662
-project-id = 548115
+[update.modrinth]
+mod-id = "r0v8vy1s"
+file-id = "kC6SY4Zp"

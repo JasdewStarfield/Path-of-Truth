@@ -3,11 +3,11 @@ filename = "immersive_machinery-0.1.1+1.20.1-forge.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "32347fb4c914d4ab153fb4229084feb1c5d66e82"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "51d341989f2647e6a327ebc647941f480a362f1a93e930eba6a21e8769d08c26307e6b3a9fb9651972e229895643a19764f97ddfffe8479bc4c97c1dd15cb99b"
+url = "https://cdn.modrinth.com/data/kGP3J2TW/versions/ix7dxCMH/immersive_machinery-0.1.1%2B1.20.1-forge.jar"
 
 [update]
-[update.curseforge]
-file-id = 6236499
-project-id = 1068736
+[update.modrinth]
+mod-id = "kGP3J2TW"
+file-id = "ix7dxCMH"

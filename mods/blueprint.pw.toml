@@ -3,11 +3,11 @@ filename = "blueprint-1.20.1-7.1.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "864937a8ac3e8a5ea209d558143fc5ea42663d05"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "0efe9677537967a3dd430d56df2355b59e6988e9a9ede6805cd335f679c05db66f5f57895720d0fabd9ad6e3aa577c84c5989491900e3b9bffc7f8d69b4e142d"
+url = "https://cdn.modrinth.com/data/VsM5EDoI/versions/z4m8zvm5/blueprint-1.20.1-7.1.2.jar"
 
 [update]
-[update.curseforge]
-file-id = 6267669
-project-id = 382216
+[update.modrinth]
+mod-id = "VsM5EDoI"
+file-id = "z4m8zvm5"

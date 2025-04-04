@@ -3,11 +3,11 @@ filename = "endermanoverhaul-forge-1.20.1-1.0.4.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "636a2b20a5973fcb80016370865cb4251e029b6a"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "febe0456384ecc71d1366535ac49c4852820bba19704f4f23e453f9855e1494dfe1c7d9ac617e353baf18a805bfb6fbd9728c5f0641120cd8e5d93ead0c29bd0"
+url = "https://cdn.modrinth.com/data/Lq6ojcWv/versions/yjxych8u/endermanoverhaul-forge-1.20.1-1.0.4.jar"
 
 [update]
-[update.curseforge]
-file-id = 5019620
-project-id = 574409
+[update.modrinth]
+mod-id = "Lq6ojcWv"
+file-id = "yjxych8u"

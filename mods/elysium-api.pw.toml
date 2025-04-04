@@ -3,11 +3,11 @@ filename = "ElysiumAPI-1.20.1-1.0.2.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "5718c2ac58fbc48d9e96140db3307a57973c28bf"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "0dc8510db7fd6f035423ce44a24d7d7e386b111322f9a5efad6b17effee772a65440eaf39185799710389cc74926ca74f48de0791d8f131b71c9a23bb4c88ecc"
+url = "https://cdn.modrinth.com/data/6YTvv3aI/versions/wcq14XyS/ElysiumAPI-1.20.1-1.0.2.jar"
 
 [update]
-[update.curseforge]
-file-id = 5998863
-project-id = 1158628
+[update.modrinth]
+mod-id = "6YTvv3aI"
+file-id = "wcq14XyS"

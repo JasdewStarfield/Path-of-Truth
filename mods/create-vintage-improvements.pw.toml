@@ -3,11 +3,11 @@ filename = "vintageimprovements-1.20.1-0.2.0.3.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "7a0f9807a148ae1a433149ef88c5c6dd4ed93d5a"
-mode = "metadata:curseforge"
+hash-format = "sha512"
+hash = "0fbba07b81eaa1ec752135909520732aef3f9207aefa7d1c8c3c4f7cb3f53875f6acf607d1a106dec8a7dc413c3c91442a100839aec6b08ca1f54b7f6e018a80"
+url = "https://cdn.modrinth.com/data/S27aYArf/versions/a7TBDYtd/vintageimprovements-1.20.1-0.2.0.3.jar"
 
 [update]
-[update.curseforge]
-file-id = 5661407
-project-id = 946579
+[update.modrinth]
+mod-id = "S27aYArf"
+file-id = "a7TBDYtd"
