@@ -954,6 +954,30 @@
 			x: 7.0d
 			y: 5.0d
 		}
+		{
+			dependencies: ["07B58ED0910776DF"]
+			id: "31A409238967A7E8"
+			shape: "diamond"
+			tasks: [{
+				id: "69D43304D0DC8337"
+				item: "scguns:creative_ammo_box"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["07B58ED0910776DF"]
+			id: "51C0DFB50C1A4A5B"
+			shape: "diamond"
+			tasks: [{
+				id: "2DE1E47665A2393D"
+				item: "storagedrawers:creative_storage_upgrade"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 5.5d
+		}
 	]
 	subtitle: ["Petrochemical Engineering"]
 	title: "5I 黑金与化工"

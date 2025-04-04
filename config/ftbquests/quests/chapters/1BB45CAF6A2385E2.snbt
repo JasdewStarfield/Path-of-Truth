@@ -275,7 +275,7 @@
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
 			id: "4C8C5F555938B8D3"
-			subtitle: "圣盾（抵挡一次攻击）"
+			subtitle: "圣盾（抵挡不止一次攻击）"
 			tasks: [{
 				id: "716B01796A9493F4"
 				item: "kubejs:divine_shield_system"

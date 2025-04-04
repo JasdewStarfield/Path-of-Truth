@@ -72,10 +72,13 @@
   "item.kubejs.code_vessel":"代码容器",
   "item.kubejs.code_destruction":"代码：毁灭",
   "item.kubejs.code_destruction.desc":"工业的重锤砸向大地——使用这段代码，立即破坏任何指定方块。",
+  "item.kubejs.incomplete_code_destruction":"未编译的代码：毁灭",
   "item.kubejs.code_formation":"代码：构成",
   "item.kubejs.code_formation.desc":"生命如今由我们定义——使用这段代码，将指定生物的生命设为最大值一半。",
+  "item.kubejs.incomplete_code_formation":"未编译的代码：构成",
   "item.kubejs.code_perfection":"代码：完美",
   "item.kubejs.code_perfection.desc":"科技的结晶不应含有缺陷——使用这段代码，将你的饮食状态调整为最佳值。",
+  "item.kubejs.incomplete_code_perfection":"未编译的代码：完美",
   "item.kubejs.code_perfection.cooldown":"你已经处于完美形态！",
   "item.kubejs.frostfire_double_plate": "霜火复合板",
   "item.kubejs.battery_component": "电池组件",
@@ -237,5 +240,5 @@
   "block.undergarden.depthrock_bed.tooltip.behaviour1":"进行一次_完全正常的_重生点设置并尝试睡眠。",
 
   "msg.xearosmap.share_waypoint":"分享了一个位置：",
-  "mob_effect.kubejs.perfection":"完美"
+  "effect.kubejs.perfection":"完美"
 }

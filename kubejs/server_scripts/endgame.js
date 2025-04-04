@@ -229,6 +229,76 @@ ServerEvents.recipes(event => {
     }
   )
 
+  //代码容器
+  event.recipes.create.compacting('kubejs:code_vessel', [
+    "kubejs:electronic_circuit_board",
+    "kubejs:raw_world_base",
+    "#forge:plates/netherite",
+    "#forge:plates/netherite",
+    "#forge:wires/electrum",
+    "#forge:wires/electrum",
+    "#forge:wires/electrum",
+    "#forge:wires/electrum"
+  ]).superheated()
+
+  //完美代码
+  event.recipes.create.sequenced_assembly([
+      Item.of('kubejs:code_perfection').withChance(0.8),
+      Item.of('kubejs:code_formation').withChance(0.1),
+      Item.of('kubejs:code_destruction').withChance(0.1)
+    ], 'kubejs:code_vessel', [
+      event.recipes.createDeploying('kubejs:incomplete_code_perfection', ['kubejs:incomplete_code_perfection', 'farmersdelight:rice_roll_medley_block']),
+      event.recipes.createDeploying('kubejs:incomplete_code_perfection', ['kubejs:incomplete_code_perfection', 'refinedstorage:controller']),
+      event.recipes.createDeploying('kubejs:incomplete_code_perfection', ['kubejs:incomplete_code_perfection', 'bosses_of_mass_destruction:obsidian_heart']),
+      event.recipes.createDeploying('kubejs:incomplete_code_perfection', ['kubejs:incomplete_code_perfection', 'createnuclear:reactor_controller']),
+      event.recipes.vintageimprovements.vibrating('kubejs:incomplete_code_perfection', 'kubejs:incomplete_code_perfection'),
+      event.recipes.createFilling('kubejs:incomplete_code_perfection', ['kubejs:incomplete_code_perfection', Fluid.of('create_enchantment_industry:hyper_experience',200)])
+  ]).transitionalItem('kubejs:incomplete_code_perfection').loops(1)
+
+  //构成代码
+  event.recipes.create.sequenced_assembly([
+      Item.of('kubejs:code_formation').withChance(0.8),
+      Item.of('kubejs:code_perfection').withChance(0.1),
+      Item.of('kubejs:code_destruction').withChance(0.1)
+    ], 'kubejs:code_vessel', [
+      event.recipes.createDeploying('kubejs:incomplete_code_formation', ['kubejs:incomplete_code_formation', 'botania:spawner_mover']),
+      event.recipes.createDeploying('kubejs:incomplete_code_formation', ['kubejs:incomplete_code_formation', 'alexsmobs:enderiophage_rocket']),
+      event.recipes.createDeploying('kubejs:incomplete_code_formation', ['kubejs:incomplete_code_formation', 'create_confectionery:gingerbread_man']),
+      event.recipes.createDeploying('kubejs:incomplete_code_formation', ['kubejs:incomplete_code_formation', 'alexsmobs:blood_sprayer']),
+      event.recipes.vintageimprovements.laser_cutting('kubejs:incomplete_code_formation', 'kubejs:incomplete_code_formation'),
+      event.recipes.createFilling('kubejs:incomplete_code_formation', ['kubejs:incomplete_code_formation', Fluid.of('create_enchantment_industry:hyper_experience',200)])
+  ]).transitionalItem('kubejs:incomplete_code_formation').loops(1)
+
+  //毁灭代码
+  event.recipes.create.sequenced_assembly([
+    Item.of('kubejs:code_destruction').withChance(0.8),
+    Item.of('kubejs:code_formation').withChance(0.1),
+    Item.of('kubejs:code_perfection').withChance(0.1)
+  ], 'kubejs:code_vessel', [
+    event.recipes.createDeploying('kubejs:incomplete_code_destruction', ['kubejs:incomplete_code_destruction', 'scguns:osborne_slug']),
+    event.recipes.createDeploying('kubejs:incomplete_code_destruction', ['kubejs:incomplete_code_destruction', 'botania:astrolabe']),
+    event.recipes.createDeploying('kubejs:incomplete_code_destruction', ['kubejs:incomplete_code_destruction', 'bosses_of_mass_destruction:blazing_eye']),
+    event.recipes.createDeploying('kubejs:incomplete_code_destruction', ['kubejs:incomplete_code_destruction', 'minecraft:netherite_pickaxe']),
+    event.recipes.vintageimprovementsHammering('kubejs:incomplete_code_destruction', 'kubejs:incomplete_code_destruction'),
+    event.recipes.createFilling('kubejs:incomplete_code_destruction', ['kubejs:incomplete_code_destruction', Fluid.of('create_enchantment_industry:hyper_experience',200)])
+  ]).transitionalItem('kubejs:incomplete_code_destruction').loops(1)
+
+  //创造板条箱
+  event.recipes.create.deploying("create:creative_crate", ['createutilities:void_chest', 'botania:corporea_spark_creative'])
+
+  //创造流体储罐
+  event.recipes.create.deploying("create:creative_fluid_tank", ['createutilities:void_tank', 'kubejs:world_base_gem'])
+
+  //创造马达
+  event.recipes.create.deploying("create:creative_motor", ['createutilities:void_motor', 'kubejs:world_base_gem'])
+
+  //创造蓄电池
+  event.recipes.create.deploying("immersiveengineering:capacitor_creative", ['createutilities:void_battery', 'kubejs:world_base_gem'])
+
+  //创造烈焰蛋糕
+  event.recipes.create.deploying("create:creative_blaze_cake", ['create:blaze_cake', 'kubejs:world_base_gem'])
+
+  
   //魔法侧终极修改
   
   //头像复制

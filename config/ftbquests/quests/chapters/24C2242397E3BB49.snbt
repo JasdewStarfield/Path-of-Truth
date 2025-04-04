@@ -169,7 +169,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 5.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["59C668DE4E479AD9"]
@@ -186,7 +186,7 @@
 				item: "create:creative_motor"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.5d
 			y: 0.5d
 		}
 		{
@@ -200,7 +200,7 @@
 				item: "immersiveengineering:capacitor_creative"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.5d
 			y: 0.5d
 		}
 		{

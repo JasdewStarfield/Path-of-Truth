@@ -55,7 +55,7 @@ StartupEvents.registry('block', (event) => {
 
 StartupEvents.registry('mob_effect', (event) => {
   event.create('perfection')
-    .displayName(Text.translate("mob_effect.kubejs.perfection"))
+    .displayName('Perfection')
     .color(Color.DARK_RED)
     .harmful()
 })
