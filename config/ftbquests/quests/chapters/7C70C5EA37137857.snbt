@@ -17,10 +17,10 @@
 			y: -3.5d
 		}
 		{
-			height: 7.0d
-			image: "goety:textures/mob_effect/ender_flux.png"
+			height: 3.0d
+			image: "respawnobelisks:item/obelisk_core_end"
 			rotation: 0.0d
-			width: 7.0d
+			width: 3.0d
 			x: 0.0d
 			y: 0.0d
 		}
