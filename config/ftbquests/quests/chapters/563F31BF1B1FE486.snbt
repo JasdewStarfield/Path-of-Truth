@@ -354,7 +354,7 @@
 		{
 			dependencies: ["07FA33846E7A5B3D"]
 			id: "7A0D894A5227359D"
-			subtitle: "无羁魔力"
+			subtitle: "以牙还牙"
 			tasks: [{
 				id: "3BCCF21AE183461F"
 				item: "goety:killing_focus"
@@ -393,13 +393,13 @@
 			id: "697B1277B1C95490"
 			shape: "hexagon"
 			size: 1.6d
-			subtitle: "真相的通行证"
+			subtitle: "次元边界"
 			tasks: [{
 				id: "09891F03B5381DDB"
 				item: "kubejs:midnight"
 				type: "item"
 			}]
-			title: "嗯，作者之一"
+			title: "魔法大成"
 			x: 0.0d
 			y: -14.0d
 		}
