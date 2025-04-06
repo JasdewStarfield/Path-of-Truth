@@ -594,7 +594,7 @@
 			]
 			id: "6E1C390C50FEA9E2"
 			shape: "hexagon"
-			subtitle: "魔力流淌"
+			subtitle: "冰河流淌"
 			tasks: [{
 				id: "4D56B7E22BACCF50"
 				item: "kubejs:water_elemental_core"

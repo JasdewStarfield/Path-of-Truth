@@ -233,7 +233,7 @@
 			dependencies: ["003B99516797BF14"]
 			description: [
 				"有条件的话可以多抓几只，烈焰人不仅可以帮你加热炉子，开火车也是一把好手。"
-				"烈焰人需要燃料——一般来说是煤炭木炭，但也可以通过流体输入（create的泵）的方式灌入岩浆，而且岩浆很耐烧。"
+				"烈焰人需要燃料——一般来说是煤炭木炭，但也可以通过流体（插入吸管后输入）的方式灌入岩浆，而且岩浆很耐烧。"
 				""
 				"&a提示：你可以使用探险家指南针寻找下界要塞！&r"
 				""
@@ -242,27 +242,18 @@
 			icon: "create:blaze_burner"
 			id: "079D9B3E0E12C25C"
 			subtitle: "我TM莱纳！"
-			tasks: [
-				{
-					id: "5C39BB7A279025A1"
-					item: "create:blaze_burner"
-					type: "item"
-				}
-				{
-					icon: "minecraft:nether_brick_fence"
-					id: "4A1C90282864B5EC"
-					structure: "betterfortresses:fortress"
-					title: "发现下界要塞"
-					type: "structure"
-				}
-			]
+			tasks: [{
+				id: "5C39BB7A279025A1"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
 			title: "真·烧起来了"
 			x: 0.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["079D9B3E0E12C25C"]
-			description: ["嗯，你获得了一些可以用来处理液体的金属，这也意味着流体方面的篇章要开启了。"]
+			description: ["你获得了一些可以用来处理液体的耐腐蚀金属，这也意味着流体方面的篇章要开启了。"]
 			icon: "immersiveengineering:ingot_constantan"
 			id: "4D493DCB4C0B99C0"
 			rewards: [{
