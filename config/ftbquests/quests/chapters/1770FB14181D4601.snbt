@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "1770FB14181D4601"
 	group: ""
+	hide_quest_details_until_startable: true
 	icon: {
 		Count: 1
 		id: "scguns:flintlock_pistol"
@@ -12,7 +13,15 @@
 		}
 	}
 	id: "1770FB14181D4601"
-	order_index: 6
+	images: [{
+		height: 1.0d
+		image: "kubejs:textures/quests/life_of_a_gunsmith.png"
+		rotation: 0.0d
+		width: 10.0d
+		x: 0.0d
+		y: 7.5d
+	}]
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -20,6 +29,8 @@
 			description: [
 				"右键瞄准，左键发射！"
 				"一个全新的战斗时代已经在你面前展开……"
+				""
+				"下面的蓝图任务分为两个分支：左侧和右侧，分别代表材料蓝图和探索蓝图。其中，材料蓝图可以在获得对应材料后直接制作，而探索蓝图则需要探索对应结构才能获取。"
 			]
 			icon: {
 				Count: 1
@@ -44,6 +55,7 @@
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
+			description: ["只用石头和木头就能做出堪堪能用的基础枪械"]
 			icon: "ftbquests:book"
 			id: "7D72C735D145F763"
 			shape: "diamond"
@@ -228,6 +240,7 @@
 				"09AB3BC179AF7529"
 				"5D03D83CF29BF288"
 			]
+			description: ["收集齐全部蓝图后，你就可以解锁全游戏最强的枪械种类：焦化枪械。"]
 			id: "548E55016926A7C4"
 			shape: "gear"
 			size: 2.0d
@@ -242,6 +255,7 @@
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
+			description: ["这部分还没写完，如果你看到了，请踢一脚茉露，谢谢"]
 			id: "1EEC479FB889EAEC"
 			shape: "diamond"
 			tasks: [{

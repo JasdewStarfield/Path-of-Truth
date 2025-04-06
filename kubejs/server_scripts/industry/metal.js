@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
     */
 
     //用铜粉、锡粉合成青铜粉
-    event.recipes.create.mixing('2x kubejs:bronze_dust', ['#forge:dusts/tin','#forge:dusts/copper','#forge:dusts/copper','#forge:dusts/copper'])
+    event.recipes.create.mixing('2x kubejs:bronze_dust', ['#forge:dusts/tin','#forge:dusts/copper','#forge:dusts/copper','#forge:dusts/copper', '#forge:dusts/sulfur']).heated()
 
     //修改搅拌器配方
     event.replaceInput({mod:'create',output:'create:whisk'},
@@ -214,7 +214,7 @@ ServerEvents.recipes(event => {
     //移除合成康铜粉配方
     event.remove({id:"immersiveengineering:crafting/constantan_mix"})
     //新增加热搅拌配方
-    event.recipes.create.mixing('2x #forge:dusts/constantan', ['#forge:dusts/nickel','#forge:dusts/copper']).heated()
+    event.recipes.create.mixing('2x #forge:dusts/constantan', ['#forge:dusts/nickel', '#forge:dusts/copper', '#forge:dusts/phosphor']).heated()
     //补充辊压配方
     event.recipes.create.pressing('#forge:plates/constantan', '#forge:ingots/constantan')
     //康铜代替铜
@@ -274,7 +274,7 @@ ServerEvents.recipes(event => {
     //黄铜
     event.remove({id:"create:mixing/brass_ingot"})
 
-    event.recipes.create.mixing('kubejs:brass_blend', ['#forge:dusts/copper','#forge:dusts/zinc']).heated()
+    event.recipes.create.mixing('kubejs:brass_blend', ['#forge:dusts/copper','#forge:dusts/zinc','#forge:dusts/saltpeter']).heated()
 
     let inter = 'kubejs:incomplete_brass_ingot'
     event.recipes.create.sequenced_assembly([
@@ -298,10 +298,11 @@ ServerEvents.recipes(event => {
     event.recipes.create.filling('magma_block', [Fluid.of('minecraft:lava',500),'minecraft:cobblestone'])
     event.recipes.create.emptying([Fluid.of('minecraft:lava',250), 'minecraft:cobbled_deepslate'], 'magma_block')
 
-    //木炭压制焦煤（小概率）
-    event.recipes.create.compacting([Item.of('#forge:coal_coke').withChance(0.1), Fluid.of('immersiveengineering:creosote', 500)], ['#forge:dusts/coal','#forge:dusts/coal','#forge:dusts/coal','#forge:dusts/coal']).heated()
+    //木炭缠魂到煤炭
+    event.recipes.create.haunting(Item.of('minecraft:coal').withChance(0.5), 'minecraft:charcoal')
 
-    //ban掉水搅拌出锌粒，火药烧烈焰粉
+    //致密碳
+    event.recipes.create.compacting('scguns:anthralite_nugget', ['#forge:dusts/coal','#forge:dusts/coal','#forge:dusts/saltpeter']).heated()
 
     //泥土到铜
     event.recipes.create.mixing('2x dirt', ['#forge:sand','#forge:cobblestone',Fluid.of('water',500)])
@@ -320,14 +321,27 @@ ServerEvents.recipes(event => {
     event.recipes.create.crushing([Item.of('create:crushed_raw_iron').withChance(0.14),Item.of('kubejs:crushed_raw_bauxite').withChance(0.07)], 'packed_mud')
 
     //深板岩粉碎出铅，银
-    event.recipes.create.crushing([Item.of('oreganized:silver_nugget').withChance(0.2), Item.of('oreganized:lead_nugget').withChance(0.5)], 'deepslate')
-    event.recipes.create.crushing([Item.of('oreganized:silver_nugget').withChance(0.2), Item.of('oreganized:lead_nugget').withChance(0.5)], 'cobbled_deepslate')
+    event.recipes.create.crushing([Item.of('oreganized:silver_nugget').withChance(0.2)], 'deepslate')
+    event.recipes.create.crushing([Item.of('oreganized:silver_nugget').withChance(0.2)], 'cobbled_deepslate')
 
-    //黑石粉碎出铀
-    event.recipes.create.crushing([Item.of('#forge:nuggets/uranium').withChance(0.15)], 'blackstone')
+    //花岗岩粉碎出铀
+    event.recipes.create.crushing([Item.of('#forge:nuggets/uranium').withChance(0.15)], 'granite')
 
     //红石量产
-    event.recipes.create.filling('redstone_block', [Fluid.of('immersiveengineering:redstone_acid',1000),'botania:livingrock'])
+    event.recipes.create.filling('redstone_block', [Fluid.of('immersiveengineering:redstone_acid',250),'botania:livingrock'])
+    //玄武岩粉碎产青金石
+    event.recipes.create.crushing([Item.of('kubejs:lapis_lazuli').withChance(0.3)], 'basalt')
+
+    //焦黑熔渣粉碎生成硫粉
+    event.recipes.create.crushing([Item.of('scguns:sulfur_dust').withChance(0.3)], 'create:scoria')
+
+    //禁止粉碎生成硫
+    event.remove({id:"vintageimprovements:crushing/scoria"})
+    event.remove({id:"vintageimprovements:crushing/scoria_recycling"})
+    event.remove({id:"scguns:create/basalt_recycling"})
+
+    //禁止致密碳
+    event.remove({id:"scguns:create/soul_soil"})
 
 
     //霜火双层板

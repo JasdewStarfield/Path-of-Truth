@@ -305,7 +305,6 @@
 				"重油还可以进一步分解——然后获得你需要的一些特定资源）"
 				"这可以让你的某些被精度干扰概率的配方成功率提升到百分百……"
 			]
-			hide_until_deps_complete: true
 			id: "107639F1A8166B9C"
 			subtitle: "沉重坚实"
 			tasks: [{
@@ -322,7 +321,6 @@
 				"1AAD83556BD302DD"
 			]
 			description: ["生物柴油对应的本体……以及某些发动机的燃料。"]
-			hide_until_deps_complete: true
 			id: "443ED09E810FE23D"
 			subtitle: "轰！"
 			tasks: [{
@@ -343,7 +341,6 @@
 				""
 				"&o&e*你就说琥珀金是不是金吧）&r&r"
 			]
-			hide_until_deps_complete: true
 			id: "2718164469D544DF"
 			shape: "circle"
 			subtitle: "也许是燃料"
@@ -364,7 +361,6 @@
 				"现代工业最大的依靠之一就是塑料，而塑料的来源就是石油。"
 				"现在你需要尝试复刻这一过程，来触及到这一世界的工业巅峰。"
 			]
-			hide_until_deps_complete: true
 			id: "46A5743F6DC8054D"
 			subtitle: "现代工业第一步"
 			tasks: [{
@@ -448,7 +444,6 @@
 				""
 				"&o&b提示：盖亚魂锭可以通过贤者之石分别炼制泰拉钢锭和盖亚之魂组合而成！&r&r"
 			]
-			hide_until_deps_complete: true
 			id: "538F608DF5017A6A"
 			subtitle: "没有工资"
 			tasks: [{

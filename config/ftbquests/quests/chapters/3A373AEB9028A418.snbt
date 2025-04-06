@@ -378,7 +378,6 @@
 				""
 				"&o&b*注：显然这一结构需要浸没在水里，并且需要在海洋、河流或沼泽群系使用，才能正常获得渔获！&r&r"
 			]
-			hide_until_deps_complete: true
 			id: "5071365CA0D2E37F"
 			rewards: [{
 				count: 8

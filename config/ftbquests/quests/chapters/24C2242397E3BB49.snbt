@@ -110,7 +110,6 @@
 				"现在，只要你拥有某件物品，那么你将永远不再缺乏它。"
 				"使用方法与一般的多媒体火花一致。"
 			]
-			hide_until_deps_complete: true
 			id: "00BBB61C39207A0F"
 			rewards: [{
 				id: "7BFEA6F05F3C4932"
@@ -129,7 +128,6 @@
 		{
 			dependencies: ["59C668DE4E479AD9"]
 			description: ["流体与真理的碰撞带来无尽的甘泉。"]
-			hide_until_deps_complete: true
 			id: "537B5AA8E2C3244A"
 			subtitle: "无尽流淌"
 			tasks: [{
@@ -159,7 +157,6 @@
 		{
 			dependencies: ["59C668DE4E479AD9"]
 			description: ["在世界的力量之下，你的烈焰人将不再需要额外的燃料，因为它们通过蛋糕触碰了部分永恒。"]
-			hide_until_deps_complete: true
 			id: "3111841E3A7C8262"
 			rewards: [{
 				id: "5A6EF9373C21B934"
@@ -182,7 +179,6 @@
 				""
 				"&o&7*希望你干的第一件事不是把这玩意放在发电机上……&r&r"
 			]
-			hide_until_deps_complete: true
 			id: "7237285ADC05FC5C"
 			subtitle: "无尽动能"
 			tasks: [{
@@ -196,7 +192,6 @@
 		{
 			dependencies: ["59C668DE4E479AD9"]
 			description: ["万物之源对于电的催化让你从现在起开始拥有无尽的电力。"]
-			hide_until_deps_complete: true
 			id: "43913160B28A2E0F"
 			subtitle: "雷霆领主"
 			tasks: [{
@@ -222,6 +217,7 @@
 				"&r"
 				"&o&7世界因你入眠而终于平静下来。&r&r"
 			]
+			hide_until_deps_complete: true
 			id: "43D8F6D77823709C"
 			rewards: [{
 				id: "64E1AC164C05ED71"

@@ -78,6 +78,7 @@
 				"永远明亮的世界会有冰冻的怪物，而且自带寒冷光环。"
 				"你需要搞一点威力足够大的法术——以及一些提供温度的东西。"
 			]
+			hide_until_deps_complete: true
 			icon: "blue_skies:everbright_portal"
 			id: "7A6D4E28C28302FE"
 			subtitle: "冰天雪地"
@@ -114,6 +115,7 @@
 				""
 				"&o&7友情提示：这个世界产出粘液球。&r&r"
 			]
+			hide_until_deps_complete: true
 			icon: "blue_skies:everdawn_portal"
 			id: "280307C036B9B6E7"
 			subtitle: "诸神黄昏（确信"
@@ -411,7 +413,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6A1B42D208C780BD"]
+			dependencies: ["6E0D85E43EDF1994"]
 			description: [
 				"这两种指南针分别可以定位&2群系&r和&c结构&r。当你找不到方向的时候，就用它们吧！"
 				""
