@@ -177,7 +177,7 @@ ServerEvents.recipes(event => {
     */
 
     //用铜粉、锡粉合成青铜粉
-    event.recipes.create.mixing('2x kubejs:bronze_dust', ['#forge:dusts/tin','#forge:dusts/copper','#forge:dusts/copper','#forge:dusts/copper', '#forge:dusts/sulfur']).heated()
+    event.recipes.create.mixing('2x kubejs:bronze_dust', ['#forge:dusts/tin','#forge:dusts/copper','#forge:dusts/copper','#forge:dusts/copper', '#forge:dusts/sulfur'])
 
     //修改搅拌器配方
     event.replaceInput({mod:'create',output:'create:whisk'},
@@ -201,7 +201,6 @@ ServerEvents.recipes(event => {
     event.recipes.create.crushing(Item.of('#forge:dusts/iron').withChance(0.75), '#forge:ingots/iron')
 
     event.remove({id:/alloyed\.*/})
-    event.recipes.create.mixing('2x kubejs:bronze_ingot', ['#forge:ingots/tin','#forge:ingots/copper','#forge:ingots/copper','#forge:ingots/copper']).heated()
 
     //燃烧室
     event.replaceInput(
