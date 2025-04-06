@@ -347,9 +347,9 @@
     "modId": "createutilities",
     "version": "0.3.0+1.20.1"
   },
-  "CreativeCore_FORGE_v2.12.31_mc1.20.1.jar": {
+  "CreativeCore_FORGE_v2.12.32_mc1.20.1.jar": {
     "modId": "creativecore",
-    "version": "2.12.31"
+    "version": "2.12.32"
   },
   "creeperoverhaul-3.0.2-forge.jar": {
     "modId": "creeperoverhaul",
@@ -443,9 +443,9 @@
     "modId": "eccentrictome",
     "version": "1.20.1-1.10.3"
   },
-  "EclipticSeasons-1.20.1-forge-0.10.4-all.jar": {
+  "EclipticSeasons-1.20.1-forge-0.10.5.1.2-all.jar": {
     "modId": "eclipticseasons",
-    "version": "0.10.4"
+    "version": "0.10.5.1.2"
   },
   "ElysiumApi-1.20.1-1.1.0.jar": {
     "modId": "elysium_api",
@@ -715,9 +715,9 @@
     "modId": "jadeaddons",
     "version": "5.3.1+forge"
   },
-  "Jadens-Nether-Expansion-2.3.0.jar": {
+  "Jadens-Nether-Expansion-2.3.2.jar": {
     "modId": "netherexp",
-    "version": "2.3.0"
+    "version": "2.3.2"
   },
   "jadensnetherexpansiondelight-1.0.2-1.20.1.jar": {
     "modId": "jadensnetherexpansiondelight",
@@ -844,7 +844,7 @@
     "modId": "mechanicalbotania",
     "version": "1.0.1"
   },
-  "MEED-1.20.1-6.6.jar": {
+  "MEED-1.20.1-6.7.jar": {
     "modId": "moderately_enough_effect_desc",
     "version": "3.3.0"
   },
@@ -876,9 +876,9 @@
     "modId": "mods_optimizer",
     "version": "3.0.0"
   },
-  "moonlight-1.20-2.13.79-forge.jar": {
+  "moonlight-1.20-2.13.81-forge.jar": {
     "modId": "moonlight",
-    "version": "1.20-2.13.79"
+    "version": "1.20-2.13.81"
   },
   "moremobvariants-forge+1.20.1-1.3.0.1.jar": {
     "modId": "moremobvariants",
@@ -952,13 +952,13 @@
     "modId": "oculus",
     "version": "1.8.0"
   },
-  "Oh-The-Biomes-Weve-Gone-Forge-1.5.9.jar": {
+  "Oh-The-Biomes-Weve-Gone-Forge-1.5.10.jar": {
     "modId": "biomeswevegone",
-    "version": "1.5.9"
+    "version": "1.5.10"
   },
-  "Oh-The-Trees-Youll-Grow-forge-1.20.1-1.3.7.jar": {
+  "Oh-The-Trees-Youll-Grow-forge-1.20.1-1.3.8.jar": {
     "modId": "ohthetreesyoullgrow",
-    "version": "1.20.1-1.3.7"
+    "version": "1.3.8"
   },
   "Oreganized 1.20.1-3.1.2.jar": {
     "modId": "oreganized",
@@ -992,9 +992,9 @@
     "modId": "pickupnotifier",
     "version": "8.0.0"
   },
-  "pipez-forge-1.20.1-1.2.20.jar": {
+  "pipez-forge-1.20.1-1.2.21.jar": {
     "modId": "pipez",
-    "version": "1.20.1-1.2.20"
+    "version": "1.20.1-1.2.21"
   },
   "Placebo-1.20.1-8.6.3.jar": {
     "modId": "placebo",
@@ -1024,9 +1024,9 @@
     "modId": "protection_pixel",
     "version": "1.1.6"
   },
-  "PuzzlesLib-v8.1.29-1.20.1-Forge.jar": {
+  "PuzzlesLib-v8.1.32-1.20.1-Forge.jar": {
     "modId": "puzzleslib",
-    "version": "8.1.29"
+    "version": "8.1.32"
   },
   "radiantgear-forge-2.2.0+1.20.1.jar": {
     "modId": "radiantgear",
@@ -1168,9 +1168,9 @@
     "modId": "sophisticatedbackpacks",
     "version": "3.23.8.1215"
   },
-  "sophisticatedcore-1.20.1-1.2.35.928.jar": {
+  "sophisticatedcore-1.20.1-1.2.38.936.jar": {
     "modId": "sophisticatedcore",
-    "version": "1.2.35.928"
+    "version": "1.2.38.936"
   },
   "sound-physics-remastered-forge-1.20.1-1.4.10.jar": {
     "modId": "sound_physics_remastered",
