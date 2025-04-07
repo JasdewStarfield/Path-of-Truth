@@ -29,8 +29,8 @@ ItemEvents.tooltip(e => {
     e.add(["kubejs:code_formation"], [Text.red({translate:'item.kubejs.code_formation.desc'})])
     e.add(["kubejs:code_perfection"], [Text.red({translate:'item.kubejs.code_perfection.desc'})])
 
-    e.add(["kubejs:arcane_charger"], [Text.green({translate:'item.kubejs.arcane_charger.desc'})])
-    e.add(["kubejs:soul_furnace"], [Text.green({translate:'item.kubejs.soul_furnace.desc'})])
+    e.add(["kubejs:arcane_charger"], [Text.green({translate:'item.kubejs:arcane_charger.desc'})])
+    e.add(["kubejs:soul_furnace"], [Text.green({translate:'item.kubejs:soul_furnace.desc'})])
     e.add(["kubejs:divine_shield_system"], [Text.green({translate:'item.kubejs.divine_shield_system.desc'})])
 
     e.add(["kubejs:broken_snowcap_oven"], [Text.yellow({translate:'item.kubejs.broken_snowcap_oven.desc'})])

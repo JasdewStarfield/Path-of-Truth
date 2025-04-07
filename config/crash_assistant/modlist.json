@@ -19,9 +19,9 @@
     "modId": "alexsmobs",
     "version": "1.22.9"
   },
-  "alltheleaks-0.1.3-beta+1.20.1-forge.jar": {
+  "alltheleaks-0.1.2-beta+1.20.1-forge.jar": {
     "modId": "alltheleaks",
-    "version": "0.1.3-beta+1.20.1-forge"
+    "version": "0.1.2-beta+1.20.1-forge"
   },
   "almostunified-forge-1.20.1-0.9.4.jar": {
     "modId": "almostunified",
@@ -70,10 +70,6 @@
   "artifacts-forge-9.5.15.jar": {
     "modId": "artifacts",
     "version": "9.5.15"
-  },
-  "AsyncParticles-1.10.0+1.20.1-alpha.3.jar": {
-    "modId": "asyncparticles",
-    "version": "1.10.0+1.20.1-alpha.3"
   },
   "AttributeFix-Forge-1.20.1-21.0.4.jar": {
     "modId": "attributefix",
@@ -207,9 +203,9 @@
     "modId": "cold_sweat",
     "version": "2.4-b01a"
   },
-  "collective-1.20.1-8.1.jar": {
+  "collective-1.20.1-8.0.jar": {
     "modId": "collective",
-    "version": "8.1"
+    "version": "8.0"
   },
   "collectorsreap-1.20.1-1.3.4.jar": {
     "modId": "collectorsreap",
@@ -347,9 +343,9 @@
     "modId": "createutilities",
     "version": "0.3.0+1.20.1"
   },
-  "CreativeCore_FORGE_v2.12.32_mc1.20.1.jar": {
+  "CreativeCore_FORGE_v2.12.31_mc1.20.1.jar": {
     "modId": "creativecore",
-    "version": "2.12.32"
+    "version": "2.12.31"
   },
   "creeperoverhaul-3.0.2-forge.jar": {
     "modId": "creeperoverhaul",
@@ -443,13 +439,13 @@
     "modId": "eccentrictome",
     "version": "1.20.1-1.10.3"
   },
-  "EclipticSeasons-1.20.1-forge-0.10.5.1.2-all.jar": {
+  "EclipticSeasons-1.20.1-forge-0.10.3.1-all.jar": {
     "modId": "eclipticseasons",
-    "version": "0.10.5.1.2"
+    "version": "0.10.3.1"
   },
-  "ElysiumApi-1.20.1-1.1.0.jar": {
+  "ElysiumAPI-1.20.1-1.0.2.jar": {
     "modId": "elysium_api",
-    "version": "1.1.0"
+    "version": "1.0.2"
   },
   "embeddium-0.3.31+mc1.20.1.jar": {
     "modId": "embeddium",
@@ -547,9 +543,9 @@
     "modId": "fishnostuck",
     "version": "1.0.3"
   },
-  "flerovium-forge-1.20.1-1.2.7-all.jar": {
+  "flerovium-forge-1.20.1-1.2.6-all.jar": {
     "modId": "flerovium",
-    "version": "1.2.7"
+    "version": "1.2.6"
   },
   "flickerfix-1.20.1-4.0.1.jar": {
     "modId": "flickerfix",
@@ -691,9 +687,9 @@
     "modId": "invtweaks",
     "version": "1.2.0"
   },
-  "irons_spellbooks-1.20.1-3.4.0.8.jar": {
+  "irons_spellbooks-1.20.1-3.4.0.7.jar": {
     "modId": "irons_spellbooks",
-    "version": "1.20.1-3.4.0.8"
+    "version": "1.20.1-3.4.0.7"
   },
   "irons_spells_js-1.20.1-3.1.1-release.jar": {
     "modId": "irons_spells_js",
@@ -715,9 +711,9 @@
     "modId": "jadeaddons",
     "version": "5.3.1+forge"
   },
-  "Jadens-Nether-Expansion-2.3.2.jar": {
+  "Jadens-Nether-Expansion-2.2.1.jar": {
     "modId": "netherexp",
-    "version": "2.3.2"
+    "version": "2.2.1"
   },
   "jadensnetherexpansiondelight-1.0.2-1.20.1.jar": {
     "modId": "jadensnetherexpansiondelight",
@@ -844,7 +840,7 @@
     "modId": "mechanicalbotania",
     "version": "1.0.1"
   },
-  "MEED-1.20.1-6.7.jar": {
+  "MEED-1.20.1-6.6.jar": {
     "modId": "moderately_enough_effect_desc",
     "version": "3.3.0"
   },
@@ -872,13 +868,13 @@
     "modId": "modernui",
     "version": "3.11.1.6"
   },
-  "mods_optimizer-forge-1.20.1-3.0.0.jar": {
+  "mods_optimizer-forge-1.20.1-2.0.0.jar": {
     "modId": "mods_optimizer",
-    "version": "3.0.0"
+    "version": "2.0.0"
   },
-  "moonlight-1.20-2.13.81-forge.jar": {
+  "moonlight-1.20-2.13.79-forge.jar": {
     "modId": "moonlight",
-    "version": "1.20-2.13.81"
+    "version": "1.20-2.13.79"
   },
   "moremobvariants-forge+1.20.1-1.3.0.1.jar": {
     "modId": "moremobvariants",
@@ -952,13 +948,13 @@
     "modId": "oculus",
     "version": "1.8.0"
   },
-  "Oh-The-Biomes-Weve-Gone-Forge-1.5.10.jar": {
+  "Oh-The-Biomes-Weve-Gone-Forge-1.5.9.jar": {
     "modId": "biomeswevegone",
-    "version": "1.5.10"
+    "version": "1.5.9"
   },
-  "Oh-The-Trees-Youll-Grow-forge-1.20.1-1.3.8.jar": {
+  "Oh-The-Trees-Youll-Grow-forge-1.20.1-1.3.7.jar": {
     "modId": "ohthetreesyoullgrow",
-    "version": "1.3.8"
+    "version": "1.20.1-1.3.7"
   },
   "Oreganized 1.20.1-3.1.2.jar": {
     "modId": "oreganized",
@@ -992,9 +988,9 @@
     "modId": "pickupnotifier",
     "version": "8.0.0"
   },
-  "pipez-forge-1.20.1-1.2.21.jar": {
+  "pipez-forge-1.20.1-1.2.20.jar": {
     "modId": "pipez",
-    "version": "1.20.1-1.2.21"
+    "version": "1.20.1-1.2.20"
   },
   "Placebo-1.20.1-8.6.3.jar": {
     "modId": "placebo",
@@ -1004,9 +1000,9 @@
     "modId": "playeranimator",
     "version": "1.0.2-rc1+1.20"
   },
-  "polymorph-forge-0.49.9+1.20.1.jar": {
+  "polymorph-forge-0.49.8+1.20.1.jar": {
     "modId": "polymorph",
-    "version": "0.49.9+1.20.1"
+    "version": "0.49.8+1.20.1"
   },
   "ponderjs-1.20.1-1.4.0.jar": {
     "modId": "ponderjs",
@@ -1024,9 +1020,9 @@
     "modId": "protection_pixel",
     "version": "1.1.6"
   },
-  "PuzzlesLib-v8.1.32-1.20.1-Forge.jar": {
+  "PuzzlesLib-v8.1.29-1.20.1-Forge.jar": {
     "modId": "puzzleslib",
-    "version": "8.1.32"
+    "version": "8.1.29"
   },
   "radiantgear-forge-2.2.0+1.20.1.jar": {
     "modId": "radiantgear",
@@ -1152,9 +1148,9 @@
     "modId": "sneakycurses",
     "version": "8.0.2"
   },
-  "snowundertrees-1.20.1-1.4.10.jar": {
+  "snowundertrees-1.20.1-1.4.9.jar": {
     "modId": "snowundertrees",
-    "version": "1.4.10"
+    "version": "1.4.9"
   },
   "sodiumdynamiclights-forge-1.0.9-1.20.1.jar": {
     "modId": "sodiumdynamiclights",
@@ -1164,13 +1160,13 @@
     "modId": "sodiumoptionsapi",
     "version": "1.0.8"
   },
-  "sophisticatedbackpacks-1.20.1-3.23.8.1215.jar": {
+  "sophisticatedbackpacks-1.20.1-3.23.6.1211.jar": {
     "modId": "sophisticatedbackpacks",
-    "version": "3.23.8.1215"
+    "version": "3.23.6.1211"
   },
-  "sophisticatedcore-1.20.1-1.2.38.936.jar": {
+  "sophisticatedcore-1.20.1-1.2.26.909.jar": {
     "modId": "sophisticatedcore",
-    "version": "1.2.38.936"
+    "version": "1.2.26.909"
   },
   "sound-physics-remastered-forge-1.20.1-1.4.10.jar": {
     "modId": "sound_physics_remastered",
@@ -1204,9 +1200,9 @@
     "modId": "stardew_fishing",
     "version": "2.1"
   },
-  "starterstructure-1.20.1-4.2.jar": {
+  "starterstructure-1.20.1-4.0.jar": {
     "modId": "starterstructure",
-    "version": "4.2"
+    "version": "4.0"
   },
   "Steam_Rails-1.6.7+forge-mc1.20.1.jar": {
     "modId": "railways",
@@ -1240,9 +1236,9 @@
     "modId": "stylisheffects",
     "version": "8.0.2"
   },
-  "SubtleEffects-forge-1.20.1-1.9.4-hotfix.1.jar": {
+  "SubtleEffects-forge-1.20.1-1.9.3.jar": {
     "modId": "subtle_effects",
-    "version": "1.9.4-hotfix.1"
+    "version": "1.9.3"
   },
   "supermartijn642configlib-1.1.8-forge-mc1.20.jar": {
     "modId": "supermartijn642configlib",

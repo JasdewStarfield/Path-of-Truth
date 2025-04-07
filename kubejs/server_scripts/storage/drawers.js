@@ -19,9 +19,9 @@ ServerEvents.recipes(event => {
   event.shaped(
     Item.of('storagedrawers:obsidian_storage_upgrade', 1),
     [
-    'CCC',
-    'ACB',
-    'CCC'
+    ' C ',
+    'ABA',
+    ' C '
     ],
     {
     A: 'storagedrawers:upgrade_template',
@@ -35,9 +35,9 @@ ServerEvents.recipes(event => {
   event.shaped(
     Item.of('storagedrawers:iron_storage_upgrade', 1),
     [
-    'CCC',
-    'ACB',
-    'CCC'
+    ' C ',
+    'ABA',
+    ' C '
     ],
     {
     A: 'storagedrawers:obsidian_storage_upgrade',
@@ -51,9 +51,9 @@ ServerEvents.recipes(event => {
   event.shaped(
     Item.of('storagedrawers:gold_storage_upgrade', 1),
     [
-    'CCC',
-    'ACB',
-    'CCC'
+    ' C ',
+    'ABA',
+    ' C '
     ],
     {
     A: 'storagedrawers:iron_storage_upgrade',
@@ -67,9 +67,9 @@ ServerEvents.recipes(event => {
   event.shaped(
     Item.of('storagedrawers:diamond_storage_upgrade', 1),
     [
-    'CCC',
-    'ACB',
-    'CCC'
+    ' C ',
+    'ABA',
+    ' C '
     ],
     {
     A: 'storagedrawers:gold_storage_upgrade',
@@ -83,28 +83,14 @@ ServerEvents.recipes(event => {
   event.shaped(
     Item.of('storagedrawers:emerald_storage_upgrade', 1),
     [
-    'CCC',
-    'ACB',
-    'CCC'
+    ' C ',
+    'ABA',
+    ' C '
     ],
     {
     A: 'storagedrawers:diamond_storage_upgrade',
     B: 'kubejs:electronic_engineering',
     C: '#forge:plates/netherite'
-    }
-  )
-
-  //创造升级
-  event.shaped(
-    Item.of('storagedrawers:creative_storage_upgrade', 1),
-    [
-    'AAA',
-    'ABA',
-    'AAA'
-    ],
-    {
-    A: 'storagedrawers:emerald_storage_upgrade',
-    B: 'goety:philosophers_stone'
     }
   )
 

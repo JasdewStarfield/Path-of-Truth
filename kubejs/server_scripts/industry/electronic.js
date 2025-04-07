@@ -50,7 +50,6 @@ ServerEvents.recipes(event => {
     //琥珀金（解锁中压传输）
     event.recipes.create.mixing('kubejs:gold_silver_mix', ['#forge:dusts/silver','#forge:dusts/silver','#forge:dusts/silver','#forge:dusts/gold','#forge:dusts/gold','#forge:dusts/gold','#forge:dusts/gold','#forge:dusts/gold'])
     event.remove({id:"immersiveengineering:crafting/electrum_mix"})
-    event.remove({id:"immersiveengineering:arcfurnace/alloy_electrum"})
     event.custom({
         "type":"immersiveengineering:squeezer",
         "energy":6400,
@@ -61,15 +60,6 @@ ServerEvents.recipes(event => {
         "result":{
             "tag":"forge:dusts/electrum"
         }
-    })
-    event.custom({
-        "type":"immersiveengineering:arc_furnace",
-        "additives":[],
-        "energy":102400,
-        "additives":[{"base_ingredient":{"tag":"forge:dusts/silver"},"count":3}],
-        "input":{"base_ingredient":{"tag":"forge:dusts/gold"},"count":5},
-        "results":[{"tag":"forge:ingots/electrum"}],
-        "time":200
     })
 
     //限制热传导发电

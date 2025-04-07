@@ -99,15 +99,4 @@ ServerEvents.recipes(event => {
     //硝钢
     event.remove({id:"scguns:create/treated_iron_blend_from_mixing"})
     event.recipes.create.mixing(Item.of('scguns:treated_iron_blend'), ['kubejs:unformed_steel_ingot','charcoal','flint','scguns:niter_dust']).heated()
-
-    //创造子弹盒
-    event.shaped(Item.of('scguns:creative_ammo_box'), [ 
-        'BBB',
-        'ACA',
-        'BBB' 
-    ], {
-        A: 'scguns:scorched_blueprint',
-        B: 'kubejs:electronic_engineering',
-        C: 'scguns:special_ammo_box'
-    })
 })

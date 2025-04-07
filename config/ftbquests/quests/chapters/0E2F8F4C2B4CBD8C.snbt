@@ -5,7 +5,6 @@
 	filename: "0E2F8F4C2B4CBD8C"
 	group: ""
 	hide_quest_details_until_startable: true
-	hide_quest_until_deps_complete: true
 	icon: "botania:fork_light_relay"
 	id: "0E2F8F4C2B4CBD8C"
 	images: [
@@ -90,7 +89,7 @@
 			y: 1.0d
 		}
 	]
-	order_index: 6
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
@@ -103,8 +102,8 @@
 			icon: "blue_skies:blue_journal"
 			id: "0EBCC9ACD99E6B83"
 			rewards: [{
-				id: "2DC5B6C872F0CBFD"
-				item: "refinedstorage:creative_storage_disk"
+				id: "41671EF77FD3AF4F"
+				item: "storagedrawers:creative_storage_upgrade"
 				type: "item"
 			}]
 			subtitle: "击穿一切！"
@@ -2312,7 +2311,6 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["粉尘爆炸的前置任务（大嘘"]
-			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "blue_skies:loot_bag"
@@ -2382,7 +2380,6 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["农民中的王者，真正的终极奉献"]
-			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "minecraft:netherite_hoe"
@@ -2514,7 +2511,6 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["你的蛋疑似有点太多了）"]
-			hide_until_deps_complete: true
 			icon: "villagersellanimals:crate_chick"
 			id: "04BFA1A4FAC092C9"
 			rewards: [{
@@ -2571,7 +2567,6 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["朋友，你对零件有什么执念吗……？"]
-			hide_until_deps_complete: true
 			icon: "immersive_aircraft:industrial_gears"
 			id: "7FB0E3BD81383AF7"
 			rewards: [{
