@@ -1,0 +1,13 @@
+name = "Alshanex's Familiars"
+filename = "alshanex_familiars-1.20.1_v1.1.2_HotFix.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "3b66f9dff629009093c98eb4b4ed851ccb10e1db53df33c00c6b924af0ea3e58e1cb0c1b4c6f94d32931bae57cee41168efc4c563b63e6b4ee4d9229fc4ad27d"
+url = "https://cdn.modrinth.com/data/GmF3uubs/versions/vvMgpPkX/alshanex_familiars-1.20.1_v1.1.2_HotFix.jar"
+
+[update]
+[update.modrinth]
+mod-id = "GmF3uubs"
+file-id = "vvMgpPkX"

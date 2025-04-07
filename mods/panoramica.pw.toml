@@ -1,0 +1,16 @@
+name = "Panoramica [Forge]"
+filename = "panoramica_forge_1.2.1_MC_1.19-1.19.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "36817745eec71eb32b09f7eeb104055f86554379"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4019292
+project-id = 426082
+
+[option]
+optional = true

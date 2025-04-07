@@ -1,0 +1,13 @@
+name = "Drawers Tooltip"
+filename = "DrawersTooltip-1.20.1-forge-8.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "c3bcd0094b0fc45f9ed2c685186422c550768f66a80e961098da049fd1863a3f9ca937468008573272779105ffc7e41673774f59478dfebaa342a9ae4364c94b"
+url = "https://cdn.modrinth.com/data/eM9ZvCo1/versions/F6vabgwF/DrawersTooltip-1.20.1-forge-8.0.0.jar"
+
+[update]
+[update.modrinth]
+mod-id = "eM9ZvCo1"
+file-id = "F6vabgwF"

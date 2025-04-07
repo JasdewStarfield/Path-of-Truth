@@ -1,0 +1,13 @@
+name = "Amplified Nether"
+filename = "Amplified_Nether_1.20.x_v1.2.5.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "53f12d659d3e5fb1e03aab50a0a647b5093c633c5baf639d0773de1425526a2049b28bcef1097978bbd91f06f179a3fe8a81817b7ca48ce0f5325bf251d4fd1c"
+url = "https://cdn.modrinth.com/data/wXiGiyGX/versions/qO36KEYQ/Amplified_Nether_1.20.x_v1.2.5.jar"
+
+[update]
+[update.modrinth]
+mod-id = "wXiGiyGX"
+file-id = "qO36KEYQ"

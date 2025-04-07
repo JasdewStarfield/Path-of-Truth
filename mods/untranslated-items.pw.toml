@@ -1,0 +1,13 @@
+name = "Untranslated Items"
+filename = "UntranslatedItems-forge-1.20.1-1.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "51a3029a535775cc294748aeac8a04e50cbed39d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4711897
+project-id = 401770

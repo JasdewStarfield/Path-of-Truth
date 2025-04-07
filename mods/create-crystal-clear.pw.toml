@@ -1,0 +1,13 @@
+name = "Create: Crystal Clear"
+filename = "Crystal-Clear-2.1-Beta-forge.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "418f6a46dcf6d25f79e66da6d1df8b0ec7f573f4aef213dd0d160ddbf8089bc8e136a637fcae7b19a5719bd89d67c5610c488bb5929b3b7227e436ec10675463"
+url = "https://cdn.modrinth.com/data/h7QgiH72/versions/sOYtDSLp/Crystal-Clear-2.1-Beta-forge.jar"
+
+[update]
+[update.modrinth]
+mod-id = "h7QgiH72"
+file-id = "sOYtDSLp"

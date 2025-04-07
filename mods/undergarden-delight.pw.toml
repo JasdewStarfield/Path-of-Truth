@@ -1,0 +1,13 @@
+name = "Undergarden Delight (A Farmer's Delight Add-on)"
+filename = "undergardendelight-1.1.2-forge-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "f083de445ceb3c5724723786f274bb91cbeeec6dab67a19ec85e6718fc344fc7a37e1d54030485e602c34396ac33d6345764197c6636b0535d85dba2b3f70cdc"
+url = "https://cdn.modrinth.com/data/H340jsJv/versions/eeiPgx5I/undergardendelight-1.1.2-forge-1.20.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "H340jsJv"
+file-id = "eeiPgx5I"

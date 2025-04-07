@@ -1,0 +1,13 @@
+name = "Radiant Gear (Fabric/Forge/Quilt)"
+filename = "radiantgear-forge-2.2.0+1.20.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha512"
+hash = "0929e33369614b98ea477066191c22b4dda58983a5291d45c8f6f339da1429b539b88431cba92e8c81e43cfbbdc0f032047afc899f422ecb01b85451e6ee161c"
+url = "https://cdn.modrinth.com/data/AtT9wm5O/versions/dQfDugX5/radiantgear-forge-2.2.0%2B1.20.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "AtT9wm5O"
+file-id = "dQfDugX5"

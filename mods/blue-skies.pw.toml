@@ -1,0 +1,13 @@
+name = "Blue Skies"
+filename = "blue_skies-1.20.1-1.3.31.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "9b3adb424cff067b5299cd4bfbb377d1cac6d7695d139e561eaf20901b67cc2e5f5fce242d68d8286f2d123b649b25a7f6d406a93d9bc65447772ddc6fe4016d"
+url = "https://cdn.modrinth.com/data/DOSy3C4M/versions/YGq4rvX4/blue_skies-1.20.1-1.3.31.jar"
+
+[update]
+[update.modrinth]
+mod-id = "DOSy3C4M"
+file-id = "YGq4rvX4"

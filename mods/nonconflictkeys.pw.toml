@@ -1,0 +1,13 @@
+name = "NonConflictKeys [Forge]"
+filename = "NonConflictKeys-Forge-1.19.X-1.20-1.0.0.jar"
+side = "client"
+
+[download]
+hash-format = "sha512"
+hash = "fa183e34b1de03bbe2bcea60eb6fab3c1823350be45844601cdc3f44171801646c6b1d8d528a3d983b72d0721df8c6c98d15d0caa05e291294e5417667d493b3"
+url = "https://cdn.modrinth.com/data/XU9gCifV/versions/uQBmTzeZ/NonConflictKeys-Forge-1.19.X-1.0.0.jar"
+
+[update]
+[update.modrinth]
+mod-id = "XU9gCifV"
+file-id = "uQBmTzeZ"

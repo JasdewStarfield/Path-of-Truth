@@ -1,0 +1,13 @@
+name = "Harder Natural Healing"
+filename = "hardernaturalhealing-1.20-46.1.14.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "9e8ca50c2dfeef163bae55f44f7d2b4fef40769d83e195c8bb0eb6bdbff60776e290eef6d1354f6ca4d6f91b1443635de55c3eb8711609abca043f3424b0e516"
+url = "https://cdn.modrinth.com/data/PJbBnV4i/versions/HOzRtkbs/hardernaturalhealing-1.20-46.1.14.jar"
+
+[update]
+[update.modrinth]
+mod-id = "PJbBnV4i"
+file-id = "HOzRtkbs"

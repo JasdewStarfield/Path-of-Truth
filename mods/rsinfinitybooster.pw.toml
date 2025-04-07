@@ -1,0 +1,13 @@
+name = "RSInfinityBooster"
+filename = "RSInfinityBooster-1.20.1-1.0+32.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "dac68a04403f3170d0fc73c7e428ef54d4541baa27dbe1c5e4910b6667cdd801cb80eca3156e72d88cf74a9dac2e8e35281abebe9b7046a091345ef44f4ea3b9"
+url = "https://cdn.modrinth.com/data/Sjzdj2cy/versions/Z7mEmckn/RSInfinityBooster-1.20.1-1.0%2B32.jar"
+
+[update]
+[update.modrinth]
+mod-id = "Sjzdj2cy"
+file-id = "Z7mEmckn"

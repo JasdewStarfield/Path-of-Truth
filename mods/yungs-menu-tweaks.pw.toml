@@ -1,0 +1,13 @@
+name = "YUNG's Menu Tweaks (Forge)"
+filename = "YungsMenuTweaks-1.20.1-Forge-1.0.2.jar"
+side = "client"
+
+[download]
+hash-format = "sha512"
+hash = "63085c7e9b668cb381bb2c654953d17420fab93d4be661879251ebc98de90ae1452e51dc7df5450539f5d13b06f48f3fae03f1130e92ae55c2fb098c92684495"
+url = "https://cdn.modrinth.com/data/Hcy2DFKF/versions/3FmFt8jI/YungsMenuTweaks-1.20.1-Forge-1.0.2.jar"
+
+[update]
+[update.modrinth]
+mod-id = "Hcy2DFKF"
+file-id = "3FmFt8jI"

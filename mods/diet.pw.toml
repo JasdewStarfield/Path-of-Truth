@@ -1,0 +1,13 @@
+name = "Diet (Fabric/Forge/Quilt)"
+filename = "diet-forge-2.1.1+1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "e8ecbd64c8b35f7758ddac572c5127003702bf7fa365c19f9a2eb92c476823c5ab8598836b87f7a50823bafdc23a9235a5285160ed0ba4be875f698263b8fcb9"
+url = "https://cdn.modrinth.com/data/SsIkH9rZ/versions/oHxMouff/diet-forge-2.1.1%2B1.20.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "SsIkH9rZ"
+file-id = "oHxMouff"

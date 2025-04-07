@@ -1,0 +1,13 @@
+name = "Otyacraft Engine [Forge/Fabric]"
+filename = "otyacraftengine-forge-mc1.20-3.7.0-alpha.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "da336b49edd1b55c5927f148246c6f29b97d020fca575c9ee5fa1c4dc5e399e021965e4c16399c7f93a27243f143d1c1f52a5810ec930d7ece9d106d615d1aa9"
+url = "https://cdn.modrinth.com/data/iu3upNjC/versions/B7tw4g49/otyacraftengine-forge-mc1.20-3.7.0-alpha.2.jar"
+
+[update]
+[update.modrinth]
+mod-id = "iu3upNjC"
+file-id = "B7tw4g49"

@@ -1,0 +1,13 @@
+name = "StackablePotions [Forge]"
+filename = "Stackable Potions-forge-1.20.1-1.0.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "dafaeba2507ffc8b301f62569044536e795b8404"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4627634
+project-id = 599436

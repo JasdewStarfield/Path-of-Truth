@@ -1,0 +1,13 @@
+name = "Enderman Overhaul"
+filename = "endermanoverhaul-forge-1.20.1-1.0.4.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "febe0456384ecc71d1366535ac49c4852820bba19704f4f23e453f9855e1494dfe1c7d9ac617e353baf18a805bfb6fbd9728c5f0641120cd8e5d93ead0c29bd0"
+url = "https://cdn.modrinth.com/data/Lq6ojcWv/versions/yjxych8u/endermanoverhaul-forge-1.20.1-1.0.4.jar"
+
+[update]
+[update.modrinth]
+mod-id = "Lq6ojcWv"
+file-id = "yjxych8u"

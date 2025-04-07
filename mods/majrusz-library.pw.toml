@@ -1,0 +1,13 @@
+name = "Majrusz Library"
+filename = "majrusz-library-forge-1.20.1-7.0.8.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "82ec00a6486a67f3270ca3bdf708b1a58fd1e1f7b463e5cd7f5e6189fea57b79a25989f9d0fb5a9aadc323ed2110ab42fe11c740923eb538710059198c5a64a7"
+url = "https://cdn.modrinth.com/data/PYQD8noM/versions/BZzTRseC/majrusz-library-forge-1.20.1-7.0.8.jar"
+
+[update]
+[update.modrinth]
+mod-id = "PYQD8noM"
+file-id = "BZzTRseC"

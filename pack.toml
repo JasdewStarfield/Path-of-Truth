@@ -1,0 +1,13 @@
+name = "Path of Truth"
+author = "JasdewStarfield"
+version = "3.0-beta"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "45d0bd2c5b4e67bd0864741bc6457c0cd25aa5422cbd68aeee39cdc26f0d84a1"
+
+[versions]
+forge = "47.4.0"
+minecraft = "1.20.1"

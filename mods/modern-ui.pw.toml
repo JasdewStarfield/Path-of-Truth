@@ -1,0 +1,13 @@
+name = "Modern UI"
+filename = "ModernUI-Forge-1.20.1-3.11.1.6-universal.jar"
+side = "client"
+
+[download]
+hash-format = "sha512"
+hash = "a9589a4ee47941bf52b8c79dfb96887bcafab72ddb789f7a2ce1d540f3d1e231bb2dc0d1754d420860a20e5f80f018079b10fb41189d565da8313079e57535da"
+url = "https://cdn.modrinth.com/data/3sjzyvGR/versions/bFqOmRXG/ModernUI-Forge-1.20.1-3.11.1.6-universal.jar"
+
+[update]
+[update.modrinth]
+mod-id = "3sjzyvGR"
+file-id = "bFqOmRXG"

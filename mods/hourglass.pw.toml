@@ -1,0 +1,13 @@
+name = "Hourglass"
+filename = "hourglass-1.20-1.2.1.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "451720aa35cc7df4a3de0d971b2933863fc93379751ad0e6bce03de065db2d7ea878271ff753f2d2ca03075218e57019af1cfeae707aa5e3fca8d773d82315a6"
+url = "https://cdn.modrinth.com/data/1ZqmoFFP/versions/G7VDa3zX/hourglass-1.20-1.2.1.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "1ZqmoFFP"
+file-id = "G7VDa3zX"

@@ -1,0 +1,13 @@
+name = "Geophilic Reforged – Biome Additions"
+filename = "GeophilicReforged-v1.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "95ae991693b91965958129f2e850751ae30e10286e49e5834282c1965579d3c66623e173a9312dc0a12dfc4e56284ef09db534f571c41849b8fb525f68af7b92"
+url = "https://cdn.modrinth.com/data/d47NdDkH/versions/VF0bzh6B/GeophilicReforged-v1.2.0.jar"
+
+[update]
+[update.modrinth]
+mod-id = "d47NdDkH"
+file-id = "VF0bzh6B"

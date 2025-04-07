@@ -1,0 +1,13 @@
+name = "Better Compatibility Checker"
+filename = "BetterCompatibilityChecker-forge-4.0.8+mc1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "9bc033b764d50bf9563a11ebe3cceee6d071bd68b96715ddef23419103d09d1380276975e1e1ea981418bee281af89fadb250ec09a270ffa1c41c1788ce0028a"
+url = "https://cdn.modrinth.com/data/KJhXPbHQ/versions/YLJKBPTh/BetterCompatibilityChecker-forge-4.0.8%2Bmc1.20.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "KJhXPbHQ"
+file-id = "YLJKBPTh"

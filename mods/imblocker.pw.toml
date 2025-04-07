@@ -1,0 +1,13 @@
+name = "IMBlocker"
+filename = "IMBlocker_4.0.5+1.20.jar"
+side = "client"
+
+[download]
+hash-format = "sha512"
+hash = "abf42bb8dffd22e00b5d71bede806772811245947e0061a9b3547415c55852557256e792e39224b11af0f6792c7cae98fddf728672367a6a24c8e169fe9fcd3e"
+url = "https://cdn.modrinth.com/data/WMDesFsZ/versions/jqQmD1Dx/IMBlocker_4.0.5%2B1.20.jar"
+
+[update]
+[update.modrinth]
+mod-id = "WMDesFsZ"
+file-id = "jqQmD1Dx"

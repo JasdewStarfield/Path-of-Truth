@@ -1,0 +1,13 @@
+name = "Refined Storage: Requestify"
+filename = "rsrequestify-1.20.1-2.3.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha512"
+hash = "659ecd53d356c7dd493a188a5f3ee75b29b5a2045482ac6bfecdeaba77cffed90df7041e32f4b07195bbc9973fabff9aa8f2402fa235afe4ea343c8a8415f45c"
+url = "https://cdn.modrinth.com/data/dSxaHfLO/versions/Eze5cpB3/rsrequestify-1.20.1-2.3.3.jar"
+
+[update]
+[update.modrinth]
+mod-id = "dSxaHfLO"
+file-id = "Eze5cpB3"

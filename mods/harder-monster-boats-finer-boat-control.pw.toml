@@ -1,0 +1,13 @@
+name = "Harder Monster Boats  (finer boat control)"
+filename = "hardermonsterboats-1.20-46.1.1.jar"
+side = "server"
+
+[download]
+hash-format = "sha512"
+hash = "6cd89243b25fbfffe7505dbf849ad9a80298b69f53c55cd3e9db17fe369aa9cc8bfde1346491855cebb1576872baf76c440b7127e1699b2430b973d288fdb25e"
+url = "https://cdn.modrinth.com/data/kfWxjJzd/versions/4wFSqYMN/hardermonsterboats-1.20-46.1.1.jar"
+
+[update]
+[update.modrinth]
+mod-id = "kfWxjJzd"
+file-id = "4wFSqYMN"

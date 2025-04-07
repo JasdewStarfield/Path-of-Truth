@@ -1,0 +1,13 @@
+name = "Subtle Effects"
+filename = "SubtleEffects-forge-1.20.1-1.9.3.jar"
+side = "client"
+
+[download]
+hash-format = "sha512"
+hash = "624a2b2a8a33e7bb47f4ca802fc1e68ad97cea3a04e91b756cd27da24076d8de25136de2c46af74946b82f4721471035aa74dc83f66af5405c8fca11246b07c6"
+url = "https://cdn.modrinth.com/data/4q8UOK1d/versions/xQTLrjLN/SubtleEffects-forge-1.20.1-1.9.3.jar"
+
+[update]
+[update.modrinth]
+mod-id = "4q8UOK1d"
+file-id = "xQTLrjLN"
