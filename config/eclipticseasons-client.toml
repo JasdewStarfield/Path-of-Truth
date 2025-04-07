@@ -22,8 +22,6 @@
 	SeasonalGrassColorChange = true
 	#In spring, grass blocks will occasionally have small flowers on them.
 	FlowerOnGrass = true
-	#Whether to reset the renderer after waking up.
-	ResetRendererAfterSleep = false
 
 [Sound]
 	#Ambient Sound.

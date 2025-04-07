@@ -238,6 +238,7 @@
 		{
 			dependencies: ["19EA7F4C42FCA4BA"]
 			description: ["琥珀金是一种在电力系统上应用颇多的金属"]
+			hide_until_deps_complete: true
 			icon: "oreganized:electrum_ingot"
 			id: "3D6CCF4A93478320"
 			rewards: [{
@@ -410,6 +411,7 @@
 				"一台发电巨兽，拥有4096Fe/t的巨大发电量——前提是你供得上它的胃口。"
 				"你已经开始接近现代工业水准了，柴油发电领先时代！"
 			]
+			hide_until_deps_complete: true
 			icon: "immersiveengineering:diesel_generator"
 			id: "76EF99C068AA2361"
 			shape: "diamond"
@@ -541,6 +543,7 @@
 				""
 				"&o&7还能让你的安山合金增产（&r&r"
 			]
+			hide_until_deps_complete: true
 			icon: "immersiveengineering:arc_furnace"
 			id: "583407C7537AE9C9"
 			subtitle: "全游戏最强炉子"
@@ -623,6 +626,7 @@
 				"首先经过一些工序将铝土矿加工为氧化铝，然后利用电弧炉电解，你终于获得了这一珍贵的金属）"
 				"现在，你可以利用它的优良性能来解决更多工业方面的问题了）"
 			]
+			hide_until_deps_complete: true
 			icon: "immersiveengineering:ingot_aluminum"
 			id: "2BE7BA0BE9F2DBC9"
 			rewards: [{
@@ -648,6 +652,7 @@
 				"其实就是压制后的碳粉（？"
 				"主要作用是烧制石墨锭……但也可以拿来调和一些比较危险的东西）"
 			]
+			hide_until_deps_complete: true
 			id: "48E0B5D1F9972D20"
 			subtitle: "名字好长"
 			tasks: [{
@@ -690,6 +695,7 @@
 				"要使一台电弧炉或者更高级的机器持续运作的话，建议接入多条高压线"
 				"（小提示：高压线没法绝缘——因为绝缘层会被高压电流直接击穿的，所以注意安全）"
 			]
+			hide_until_deps_complete: true
 			icon: "immersiveengineering:wirecoil_steel"
 			id: "56F4C82F40DFA8F5"
 			shape: "diamond"
@@ -828,6 +834,7 @@
 				"由于柴油性能还是有限，接下来你大概是需要迈入石油和重工业时代）"
 				"而重工业——需要你手里的元件。"
 			]
+			hide_until_deps_complete: true
 			id: "03312D6881CC617D"
 			subtitle: "高级工业必需品"
 			tasks: [{
@@ -848,6 +855,7 @@
 				"&a【完成后解锁主线章节：5I 黑金与化工】&r"
 				"准备好迎接真正的重工业时代了吗）"
 			]
+			hide_until_deps_complete: true
 			id: "5FB9514C6DE7AD58"
 			rewards: [{
 				id: "1FCB3F21F61EEBA2"
@@ -907,6 +915,7 @@
 				""
 				"&o&b*显然遗忆守卫的数量是有限的，但你可以通过遗忆构件来制作它们……以满足你日益增长的材料需求。&r&r"
 			]
+			hide_until_deps_complete: true
 			icon: "undergarden:forgotten_nugget"
 			id: "1A19AB31DBCDBCF7"
 			subtitle: "干掉另一种意义上的守卫者"
@@ -989,8 +998,14 @@
 				"高压线杀人事件的避免方式：穿一套防电服"
 				"（其实植物魔法的斗篷可以用魔力获得有cd的无敌，但那很浪费魔力"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						Insulation: [ ]
+					}
+				}
 				id: "immersiveengineering:armor_faraday_helmet"
 				tag: {
 					Damage: 0
@@ -1135,6 +1150,7 @@
 				"霜钢生成在&2深暗之园维度&r的&b寒霜之地&r群系，需要用雪帽菇熔炉来“冶炼”（雪帽菇熔炉的材料来自&b永昼之地&r的&3雪帽菇群系&r）。"
 				"炙铁生成在&6恒晓之地&r维度，需要用沉浸工程的炼铁高炉来冶炼。"
 			]
+			hide_until_deps_complete: true
 			icon: "immersiveengineering:radiator"
 			id: "3E60B78B0EE34B75"
 			subtitle: "嗯，复合板材"
@@ -1161,6 +1177,7 @@
 				""
 				"在这一步后面卡住了？也许你需要先想办法获得一些&7“电气时代的金属”&r来制作螺丝刀……"
 			]
+			hide_until_deps_complete: true
 			id: "671C17CCA1D5FA78"
 			subtitle: "简单的小东西"
 			tasks: [{
@@ -1668,10 +1685,7 @@
 		}
 		{
 			dependencies: ["3E60B78B0EE34B75"]
-			description: [
-				"能够进行精密操作和控制高温流体的注液器。"
-				"需要电力供应才能运作。"
-			]
+			description: [""]
 			icon: "immersiveengineering:bottling_machine"
 			id: "213682223D73A690"
 			subtitle: "也就是高级注液器"
@@ -1701,7 +1715,7 @@
 				}
 				{
 					id: "71785F67E2E86F93"
-					item: "immersiveengineering:fluid_pump"
+					item: "kubejs:fluid_engineering"
 					type: "item"
 				}
 				{

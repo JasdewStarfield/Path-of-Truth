@@ -155,8 +155,6 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:rope","beautify:rope")
     event.add("forge:dusts/saltpeter","scguns:niter_dust")
     event.add("forge:dusts","scguns:niter_dust")
-    event.add("forge:dusts/phosphor","scguns:phosphor_dust")
-    event.add("forge:dusts","scguns:phosphor_dust")
     event.add("forge:plates/netherite","createdeco:netherite_sheet")
     event.add("forge:plates/zinc","createdeco:zinc_sheet")
     event.add("forge:plates/andesite","createdeco:andesite_sheet")

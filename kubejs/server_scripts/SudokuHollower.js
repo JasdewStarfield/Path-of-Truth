@@ -49,9 +49,6 @@ function GenSudoku(seed, keepPredicate) {
     ShuffleArray(fillChoices, rng)
 
     // 2. backtracking
-    let counter = 0,
-        success = false
-    let early_terminate = 1e6
     function validAt(r, c) {
         let self = pool[r][c]
         for (let i = 0; i < 9; i++) {
@@ -72,8 +69,6 @@ function GenSudoku(seed, keepPredicate) {
         return true
     }
     function fillAt(idx) {
-        counter++
-        if (counter >= early_terminate) throw 'stop'
         if (rng() < 0.5) ShuffleArray(fillChoices, rng)
         let choices = Array.from(fillChoices)
         if (idx >= fillSeq.length) return true
@@ -85,24 +80,7 @@ function GenSudoku(seed, keepPredicate) {
         }
         pool[r][c] = 0
     }
-    for (let t = 0; t < 10; t++) {
-        try {
-            counter = 0
-            fillAt(0)
-            success = true
-            break
-        } catch (e) {
-            // reset array
-            fillChoices = Array(9)
-                .fill(0)
-                .map((_, i) => i + 1)
-        }
-    }
-    // fallback
-    if (!success) {
-        rng = GetSeededRandom(114514)
-        fillAt(0)
-    }
+    fillAt(0)
 
     // 3. hollow for question
     /**@type {(number|null)[][]}*/

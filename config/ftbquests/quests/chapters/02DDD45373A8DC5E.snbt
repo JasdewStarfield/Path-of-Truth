@@ -159,6 +159,7 @@
 				"很好，看来你意识到了还有第二页（）"
 				"这是一个小小的提示：如果你需要改变齿轮的转速，考虑将大小齿轮啮合！但请注意，机器转速翻倍的同时，应力消耗也会翻倍，反之亦然。"
 			]
+			hide_until_deps_complete: true
 			icon: "create:large_cogwheel"
 			id: "2F791EC2607066B4"
 			subtitle: "地球在转。"
@@ -225,6 +226,7 @@
 				"&a如果你不知道怎么制作活石，请看魔法章节（原始萨满）！&r"
 				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"735172F79325756F\" } }"
 			]
+			hide_until_deps_complete: true
 			id: "489BC5567AF09228"
 			subtitle: "是的，这个世界不只需要科技"
 			tasks: [{
@@ -353,7 +355,6 @@
 		}
 		{
 			dependencies: ["4252F0F8AD1C5A60"]
-			description: ["为什么还要加硫？"]
 			icon: "kubejs:bronze_dust"
 			id: "69864E61F37B2AA3"
 			subtitle: "铜和锡，三比一"
@@ -366,11 +367,6 @@
 				{
 					id: "7D32C7D35BBDC475"
 					item: "kubejs:tin_dust"
-					type: "item"
-				}
-				{
-					id: "5818EF5E56A9363C"
-					item: "scguns:sulfur_dust"
 					type: "item"
 				}
 			]
@@ -576,6 +572,7 @@
 		{
 			dependencies: ["7A6ADC4EE6686110"]
 			description: ["对去皮原木使用安山合金！"]
+			hide_until_deps_complete: true
 			id: "50BB17FEED3B10D2"
 			subtitle: "只是壳子"
 			tasks: [{
@@ -711,6 +708,7 @@
 				""
 				"&l&c比如说，你即将用来炼铁的高炉和用来生产焦煤的焦炉。&r&r"
 			]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "immersiveengineering:hammer"
@@ -863,7 +861,6 @@
 			}
 			id: "4BED26108E90A0CC"
 			shape: "diamond"
-			subtitle: "这玩意可比剑好用多了"
 			tasks: [{
 				id: "373CA25FF3071BD5"
 				item: "scguns:gun_bench"
