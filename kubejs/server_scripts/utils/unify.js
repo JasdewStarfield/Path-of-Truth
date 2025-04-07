@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
   event.replaceInput(
     {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'#forge:ingots/gold'},
     '#forge:ingots/gold',
-    'dirt'
+    'create:brass_ingot'
   )
   event.replaceInput(
     {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'#forge:gems/diamond'},

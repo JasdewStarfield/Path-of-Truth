@@ -15,6 +15,30 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //磁铁升级
+    event.shapeless(Item.of('sophisticatedbackpacks:magnet_upgrade',1),
+        [
+            'sophisticatedbackpacks:upgrade_base',
+            'artifacts:universal_attractor'
+        ]
+    )
+    event.shaped(
+        Item.of('sophisticatedbackpacks:magnet_upgrade'),
+        [
+            'ABA',
+            'CDE',
+            ' F '
+        ],
+        {
+            A: 'create:brass_ingot',
+            B: 'botania:magnet_ring',
+            E: 'blue_skies:horizonite_ingot',
+            D: 'sophisticatedbackpacks:upgrade_base',
+            C: 'blue_skies:falsite_ingot',
+            F: 'blue_skies:ventium_ingot'
+        }
+    )
+
     //金和钻石背包修改
     event.remove({id:'sophisticatedbackpacks:gold_backpack'})   
     event.custom({
