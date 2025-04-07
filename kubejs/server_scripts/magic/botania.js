@@ -213,6 +213,8 @@ ServerEvents.recipes(event => {
 
     //竹子转化
     event.recipes.botania.mana_infusion('minecraft:bamboo', 'botania:livingwood_twig', 500)
+    //明月石砖转化绿松石砖
+    event.recipes.botania.mana_infusion('blue_skies:turquoise_stonebrick', 'blue_skies:lunar_stonebrick', 100)
 
     //鸡蛋的生产和复制
     event.recipes.botania.petal_apothecary('minecraft:egg', 

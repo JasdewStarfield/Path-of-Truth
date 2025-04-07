@@ -325,6 +325,15 @@ ServerEvents.recipes(event => {
         "result": 'kubejs:music_disc_quam_admirabile_mundi',
         "cookingTime": 1200
     })
+    //绿松石砖转化明月石砖
+    event.custom({
+        "type": "goety:cursed_infuser_recipes",
+        "ingredient": {
+            "item": 'blue_skies:turquoise_stonebrick'
+        },
+        "result": 'blue_skies:lunar_stonebrick',
+        "cookingTime": 20
+    })
 
     //仪式配方修改系列
     //撕裂聚晶合成
