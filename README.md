@@ -76,10 +76,10 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 ### 上手指南
 
-本整合包的主要科技模组有[沉浸工程](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)、[机械动力](https://www.curseforge.com/minecraft/mc-mods/create)（及附属），主要魔法模组有[植物魔法](https://www.curseforge.com/minecraft/mc-mods/botania)、[血魔法](https://www.curseforge.com/minecraft/mc-mods/blood-magic)、[铁魔法](https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks)等，探索向模组有[蔚蓝浩空](https://www.curseforge.com/minecraft/mc-mods/blue-skies)、[深暗之园](https://www.curseforge.com/minecraft/mc-mods/the-undergarden)等，还有以[农夫乐事](https://www.curseforge.com/minecraft/mc-mods/farmers-delight)为主的农业美食模组等等。熟悉这些模组的朋友们可以较快上手（但切记这是一个高度魔改的整合包（使用[KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs)）——你熟悉的知识很有可能不再实用。所以别太依赖惯性思维了！）。
+本整合包的主要科技模组有[沉浸工程](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)、[机械动力](https://www.curseforge.com/minecraft/mc-mods/create)（及附属），主要魔法模组有[植物魔法](https://www.curseforge.com/minecraft/mc-mods/botania)、[诡厄巫法](https://www.curseforge.com/minecraft/mc-mods/goety)、[铁魔法](https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks)等，探索向模组有[蔚蓝浩空](https://www.curseforge.com/minecraft/mc-mods/blue-skies)、[深暗之园](https://www.curseforge.com/minecraft/mc-mods/the-undergarden)等，还有以[农夫乐事](https://www.curseforge.com/minecraft/mc-mods/farmers-delight)为主的农业美食模组等等。熟悉这些模组的朋友们可以较快上手（但切记这是一个高度魔改的整合包（使用[KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs)）——你熟悉的知识很有可能不再实用。所以别太依赖惯性思维了！）。
 
 
-为了增加难度和丰富体验，整合包调整了地形生成，使得世界中只有寒冷的群系，同时加入了需要玩家注意体温管理的[冷汗](https://www.curseforge.com/minecraft/mc-mods/cold-sweat)模组，这会给你的开拓之旅带来一些生存上的挑战！
+为了增加难度和丰富体验，整合包使用[节气](https://www.curseforge.com/minecraft/mc-mods/ecliptic-seasons)系统添加了四季，同时加入了需要玩家注意体温管理的[冷汗](https://www.curseforge.com/minecraft/mc-mods/cold-sweat)模组，这会给你的开拓之旅带来一些生存上的挑战！
 
 
 对于不熟悉这些模组的朋友，也可以参考本整合包详尽的任务指引系统以及模组自带的说明教程。它们会指引你从茹毛饮血的青铜时代开始，跨越铁器时代、精密仪器时代、电气时代等，在一片冰天雪地中展开工业和魔法革命，最终接近这个世界的真相。
@@ -108,7 +108,7 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 
 1. 先安装原版Minecraft，版本1.20.1（如果启动器支持，建议启用版本独立文件夹）。
-2. 安装Forge，版本47.3.11。
+2. 安装Forge，版本47.4.0。
 3. 克隆本仓库的dev-client分支到你安装版本的目录下（版本独立时通常为versions文件夹的一子文件夹）。
 
 
