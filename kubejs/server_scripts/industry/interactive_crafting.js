@@ -67,7 +67,7 @@ ServerEvents.recipes(event => {
       ["create:redstone_link", "redstone_torch"],
       //["create:mechanical_crafter", "#forge:workbench"],
       ["create:stockpile_switch", "comparator"],
-      ["create:rotation_speed_controller", "create:precision_mechanism"],
+      ["create:rotation_speed_controller", "create_connected:control_chip"],
       ["create_power_loader:empty_brass_chunk_loader", "glowstone"],
       ['vintageimprovements:belt_grinder', 'vintageimprovements:grinder_belt'],
       ["createcobblestone:mechanical_generator", "kubejs:fluid_engineering"]
@@ -78,9 +78,9 @@ ServerEvents.recipes(event => {
 
     //传感工程块
     const sensoryEngineering = [
-      //['createutilities:void_motor', "create_new_age:advanced_motor"],
+      ['createutilities:void_motor', "createaddition:electric_motor"],
       ['createutilities:void_chest', "ender_chest"],
-      ['createutilities:void_tank', "tfmg:steel_fluid_tank"],
+      ['createutilities:void_tank', "create:fluid_tank"],
       ['createutilities:void_battery', "immersiveengineering:capacitor_mv"],
     ]
     sensoryEngineering.forEach(([output, material]) =>
@@ -89,7 +89,7 @@ ServerEvents.recipes(event => {
 
     //物流工程块
     const logisticalEngineering = [
-      ['storagedrawers:controller', "create:precision_mechanism"],
+      ['storagedrawers:controller', "create_connected:control_chip"],
       ['storagedrawers:controller_slave', "#forge:plates/brass"],
       ['create:controls', "lever"],
       ['create:track_observer', "observer"],
@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
       //['create_new_age:energiser_t3', "minecraft:lightning_rod"]
       ['createnuclear:reactor_input', "create:portable_storage_interface"],
       ['createnuclear:reactor_output', "createdieselgenerators:engine_turbocharger"],
-      ['createnuclear:reactor_controller', "kubejs:precise_engineering"],
+      ['createnuclear:reactor_controller', "create_connected:control_chip"],
     ]
     electronicEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:electronic_engineering", material)

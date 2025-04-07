@@ -69,12 +69,17 @@
   "item.kubejs.potion_of_void.desc":"无尽虚空凝缩于此……服下后将为自身附加虚空之力。",
   "item.kubejs.potion_of_balance":"平衡精华",
   "item.kubejs.potion_of_balance.desc":"包罗万象的平衡之力……服下后将通晓自然的平衡。",
+  "item.kubejs.code_vessel":"代码容器",
   "item.kubejs.code_destruction":"代码：毁灭",
   "item.kubejs.code_destruction.desc":"工业的重锤砸向大地——使用这段代码，立即破坏任何指定方块。",
+  "item.kubejs.incomplete_code_destruction":"未编译的代码：毁灭",
   "item.kubejs.code_formation":"代码：构成",
   "item.kubejs.code_formation.desc":"生命如今由我们定义——使用这段代码，将指定生物的生命设为最大值一半。",
+  "item.kubejs.incomplete_code_formation":"未编译的代码：构成",
   "item.kubejs.code_perfection":"代码：完美",
   "item.kubejs.code_perfection.desc":"科技的结晶不应含有缺陷——使用这段代码，将你的饮食状态调整为最佳值。",
+  "item.kubejs.incomplete_code_perfection":"未编译的代码：完美",
+  "item.kubejs.code_perfection.cooldown":"你已经处于完美形态！",
   "item.kubejs.frostfire_double_plate": "霜火复合板",
   "item.kubejs.battery_component": "电池组件",
   "item.kubejs.steel_mechanism": "钢铁构件",
@@ -93,10 +98,10 @@
   "item.kubejs.raw_world_base":"原始万象石",
   "item.kubejs.world_base_gem":"万象宝石",
   "item.kubejs.arcane_charger":"奥术充能器",
-  "item.kubejs.arcane_charger.desc":"奥术之力在机械中涌动：携带时自动为设备充电并为你附加超负荷",
-  "item.kubejs:soul_furnace":"灵魂熔炉",
-  "item.kubejs:soul_furnace.desc":"熔炉渴望灵魂力量的注入：为你附加急迫与吞噬残魂的能力",
-  "item.kubejs:divine_shield_system":"神圣护盾系统",
+  "item.kubejs.arcane_charger.desc":"奥术之力在机械中涌动：自动为设备充电并为你附加超负荷",
+  "item.kubejs.soul_furnace":"灵魂熔炉",
+  "item.kubejs.soul_furnace.desc":"熔炉渴望灵魂力量的注入：为你附加急迫与吞噬残魂的能力",
+  "item.kubejs.divine_shield_system":"神圣护盾系统",
   "item.kubejs.divine_shield_system.desc":"工业化的神圣赐福：定时附加全效护盾与短暂的治疗",
 
   "item.kubejs.molten_iron_bucket": "熔融铁桶",
@@ -234,5 +239,6 @@
   "block.undergarden.depthrock_bed.tooltip.condition1":"在右键时",
   "block.undergarden.depthrock_bed.tooltip.behaviour1":"进行一次_完全正常的_重生点设置并尝试睡眠。",
 
-  "msg.xearosmap.share_waypoint":"分享了一个位置："
+  "msg.xearosmap.share_waypoint":"分享了一个位置：",
+  "effect.kubejs.perfection":"完美"
 }

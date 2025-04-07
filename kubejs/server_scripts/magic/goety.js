@@ -240,6 +240,17 @@ ServerEvents.recipes(event => {
             B: 'scguns:nether_star_fragment'
         }
     )
+    //禁书卷轴复制
+    event.shapeless(Item.of('goety:forbidden_scroll', 2),
+        [
+            'goety:philosophers_stone',
+            'goety:forbidden_scroll',
+            'irons_spellbooks:legendary_ink',
+            'goety:shadow_essence',
+            'createaddition:diamond_grit_sandpaper'
+        ]
+
+    )
 
     //诅咒注入系列配方
     //灵质转化
@@ -278,13 +289,13 @@ ServerEvents.recipes(event => {
         "result": 'minecraft:gunpowder',
         "cookingTime": 60
     })
-    //远古知识碎片转化禁书碎片
+    //禁书碎片转化远古知识碎片
     event.custom({
         "type": "goety:cursed_infuser_recipes",
         "ingredient": {
-            "item": 'irons_spellbooks:ancient_knowledge_fragment'
+            "item": 'goety:forbidden_piece'
         },
-        "result": 'goety:forbidden_piece',
+        "result": 'irons_spellbooks:ancient_knowledge_fragment',
         "cookingTime": 1200
     })
     //下界合金转换遗忆
@@ -313,6 +324,15 @@ ServerEvents.recipes(event => {
         },  
         "result": 'kubejs:music_disc_quam_admirabile_mundi',
         "cookingTime": 1200
+    })
+    //绿松石砖转化明月石砖
+    event.custom({
+        "type": "goety:cursed_infuser_recipes",
+        "ingredient": {
+            "item": 'blue_skies:turquoise_stonebrick'
+        },
+        "result": 'blue_skies:lunar_stonebrick',
+        "cookingTime": 20
     })
 
     //仪式配方修改系列

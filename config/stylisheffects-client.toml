@@ -13,7 +13,7 @@
 		tooltip_duration = true
 		#Maximum amount of status effects rendered in a single row.
 		#Range: 1 ~ 255
-		max_columns = 5
+		max_columns = 3
 		#Space between individual effect widgets on y-axis.
 		#Range: > 0
 		widget_space_y = 1
@@ -25,11 +25,11 @@
 		widget_space_x = 1
 		#Custom scale for effect renderer.
 		#Range: 1.0 ~ 12.0
-		scale = 4.0
+		scale = 2.0
 		#Respect vanilla's "hideParticles" flag which prevents a status effect from showing when set via commands.
 		respect_hide_particles = false
 		#Exclude certain menus from showing active status effects. Useful when effect icons overlap with other screen elements.
-		menu_blacklist = ["curios:curios_container", "tconstruct:*", "mekanism:*", "sophisticatedbackpacks:*"]
+		menu_blacklist = ["curios:curios_container", "tconstruct:*", "mekanism:*"]
 		#Maximum amount of status effects rendered in a single column.
 		#Range: 1 ~ 255
 		max_rows = 255

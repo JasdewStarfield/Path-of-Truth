@@ -114,7 +114,6 @@
 				"比如说，钢机壳只能用来做工程块）"
 				"&o&m&c但你需要很多的工程块，哈哈哈哈（逃&r&r&r"
 			]
-			hide_until_deps_complete: true
 			id: "2974EA098C1280C1"
 			subtitle: "进度：0.5"
 			tasks: [{
@@ -156,7 +155,6 @@
 				"通过转动对线圈的扰动，你终于获得了可以工业化使用的电流。"
 				"也许之后可以试试工业充能瓶子……？"
 			]
-			hide_until_deps_complete: true
 			id: "4B2D7C8A59593200"
 			subtitle: "初中物理知识"
 			tasks: [{
@@ -200,10 +198,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"242C57AF7F6116E4"
-				"4B2D7C8A59593200"
-			]
+			dependencies: ["4B2D7C8A59593200"]
 			description: [
 				"把它放在发电机输出处就可以接收电力了。下一章会介绍更多传输电力的方式。"
 				"&n记得要点开这个方块选择对应任务哦。&r"
@@ -373,7 +368,6 @@
 		{
 			dependencies: ["504E6502A789DABF"]
 			description: ["这台机器只能输入电力来产生应力，但你可以进行一些小小的&b“魔改”&r）"]
-			hide_until_deps_complete: true
 			id: "0728C35476FC5EE2"
 			rewards: [{
 				id: "3B7DE4AC74138629"
@@ -402,7 +396,6 @@
 				"提示：你需要前往&9深暗&r，寻找&9回响碎片&r才能完成这一配方。你可以使用&2自然指南针&r！"
 				"觉得在监守者面前翻找回响碎片太危险？你可以尝试对那里的幽匿块使用&5紫水晶碎片&r来概率获取回响碎片……这一流程也是&6可以自动化&r的。当然，如何自动生成幽匿块……就要看你的游戏理解了。"
 			]
-			hide_until_deps_complete: true
 			id: "41831F6B01965541"
 			subtitle: "你为什么要召唤我——"
 			tasks: [{
@@ -446,7 +439,6 @@
 				""
 				"&m&o&b这不比pipez好用（笑&r&r&r"
 			]
-			hide_until_deps_complete: true
 			icon: "minecraft:ender_eye"
 			id: "253CE41C3E000533"
 			shape: "diamond"
@@ -932,7 +924,7 @@
 				"750FAE62628DB185"
 			]
 			description: [
-				"焦化硫显然并不是一种合格的工业硫磺，所以你需要通过将其&6组合进烈性火药&r后&c配合红石酸&r进行离心才能获得足够纯净的硫磺。"
+				"焦化硫显然并不是一种合格的工业硫磺，所以你需要通过将其&6组合进下界火药&r后&c配合红石酸&r进行离心才能获得足够纯净的硫磺。"
 				"如果你没有离心机，那最好先准备一台足够大的动力合成器。"
 			]
 			icon: "vintageimprovements:sulfur"

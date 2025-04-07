@@ -4,6 +4,8 @@
     "item.kubejs.asphalt.desc": "Pour liquid asphalt onto the ground to make it soild and obtain asphalt block.",
     "item.kubejs.filled_casting_mold_small.desc": "A steel ingot is sealed within",
     "item.kubejs.filled_casting_mold_large.desc": "A block of steel is sealed within",
+
+    "item.kubejs.code_perfection.cooldown":"You are already in your perfect form!",
     
     "item.kubejs.music_disc_pluto_nocturnus.desc": "Jacky Blackson - Pluto Nocturnus",
     "item.kubejs.music_disc_pluto_nocturnus": "Music Disc",

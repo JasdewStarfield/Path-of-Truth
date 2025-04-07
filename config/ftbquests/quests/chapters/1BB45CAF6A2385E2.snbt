@@ -58,7 +58,7 @@
 			}]
 			shape: "pentagon"
 			size: 2.0d
-			subtitle: "机械与魔法的终末是……无限。"
+			subtitle: "一即是万"
 			tasks: [
 				{
 					id: "574D4B148744FE70"
@@ -84,55 +84,48 @@
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
 			description: [
-				"异彩化合物丢进黑巧克力和重油的混合物里，你就得到了……"
-				""
-				"也是超级装备的基础材料。"
-				""
-				"很符合工业的污染颜色，不是吗？"
+				"将万象石打造成&e最“包罗万象”的磁盘&r，然后再进行&6合理的工业压制和程序编辑&r，也许就能分离出其中的工业特质……"
+				"某种意义上来讲&b直击本源的编程&r是所有程序员的梦想。"
+				"至少这一次你的代码不会有bug，&9产出的一定是代码&r……但有&c一点点概率&r实现的并不是你想要的（？"
 			]
-			hide_until_deps_complete: true
 			id: "6D54B104118A0FA7"
-			subtitle: "工业中转"
+			subtitle: "最强大的磁盘"
 			tasks: [{
 				id: "573FB5488D66E094"
 				item: "kubejs:code_vessel"
 				type: "item"
 			}]
+			title: "承载真理"
 			x: -4.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["6D54B104118A0FA7"]
-			description: [
-				"看配方就知道为什么它可以让暗影刚装备永不磨损了（确信）"
-				""
-				"&9&o*不要因为下界合金块骂街——这是真理的代价（之一），而且也没那么难。&r&r"
-			]
 			id: "0D2EEDEACB542342"
-			subtitle: "由世上最硬的金属聚合而来"
+			subtitle: "机魂大悦"
 			tasks: [{
 				id: "34A6845464DFC520"
 				item: "kubejs:code_destruction"
 				type: "item"
 			}]
-			title: "毁灭"
+			title: "极致毁灭"
 			x: -2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6D54B104118A0FA7"]
 			description: [
-				"可以让你的暗影钢工具——以及砂纸——永恒存在！"
-				"也是终末锭的必须材料之一。"
+				"最方便的&a一键美容养颜&r……？"
+				"最完美的代码，它甚至能帮助你&d修复自身的不完美之处&r。唯一的缺陷是……运行需要比较长的时间来准备。"
 			]
 			id: "5B74E17C06C14B35"
-			subtitle: "永恒强化"
+			subtitle: "做个精致的人"
 			tasks: [{
 				id: "039FBCBAFB5C60C3"
 				item: "kubejs:code_perfection"
 				type: "item"
 			}]
-			title: "完美"
+			title: "永远完美"
 			x: -2.0d
 			y: -3.0d
 		}
@@ -158,11 +151,11 @@
 				"{@pagebreak}"
 				"数独，一款基础且风靡世界的数学游戏。"
 				"游戏规则很简单，&l&b任意行、列，以及均匀划分出的九个3*3区域都需要以不重复的1-9填满&r&r。"
-				"在这里，1-9替换为了工业与魔法的九种终末产物。"
-				"&6我们相信你的智慧&r，&c你需要自己判断被隐藏的区域应该放置什么！&r"
+				"在这里，1-9替换为了&5原始万象石激发而出的九种超越规则的产物&r。"
+				"&6我们相信你的智慧&r，&c你需要自己判断被屏障隐藏的区域应该放置什么！&r"
 				"&9真理是唯一的，所以这场游戏的解法也是。&r"
 				""
-				"&o&7*注：行/列/3*3区域缺一个就是秒填，缺两三个就排查一下对应的行列格子然后填，缺四个及以上就等等别的格子再填。&r&r"
+				"&o&7*法师的规则探测小技巧：行/列/3*3区域缺一个就是秒填，缺两三个就排查一下对应的行列格子然后填，缺四个及以上就等等别的格子再填。&r&r"
 			]
 			id: "1E235F6753976501"
 			rewards: [{
@@ -185,17 +178,18 @@
 		{
 			dependencies: ["6D54B104118A0FA7"]
 			description: [
-				"本游戏最珍贵的黑色液体之一……"
-				"当然制作方式没那么难，但你会发现……要用很多。"
+				"通过科学的方式&b解析生命的存在&r，并在刻录中&a融入足够的生命要素&r，你就可以获得一份能够编辑生物构成的代码！"
+				""
+				"&o&7*只能修正至最大生命值的1/2，因为你需要给生命一条活路）&r&r"
 			]
 			id: "38F3E1D924DDE502"
-			subtitle: "“黑色黄金”"
+			subtitle: "定义存在"
 			tasks: [{
 				id: "4AE3DE96FF481631"
 				item: "kubejs:code_formation"
 				type: "item"
 			}]
-			title: "构成"
+			title: "解析构成"
 			x: -2.0d
 			y: 1.5d
 		}
@@ -230,7 +224,6 @@
 				"生与死之间的那一丝规则&a本质是平衡&r，自然也正是因为互相制约的相对平衡才能稳定发展。"
 				"通过元素进行二次提炼，你将能&b凝缩平衡的精髓&r——也可以通过&d服用&r来&c部分掌握平衡的本质&r。"
 			]
-			hide_until_deps_complete: true
 			id: "43F24DD9D0242F26"
 			shape: "circle"
 			size: 1.0d
@@ -284,7 +277,12 @@
 		}
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
+			description: [
+				"将&e神圣要素&r融入你的盾牌当中，以&5龙蛋&r作为能量供应激发万象石的神圣源头，你就获得了一个&6可以持续给你附加护盾&r的神秘装置）"
+				"保护自己也是保护世界的一环。"
+			]
 			id: "4C8C5F555938B8D3"
+			subtitle: "圣盾（抵挡不止一次攻击）"
 			tasks: [{
 				id: "716B01796A9493F4"
 				item: "kubejs:divine_shield_system"
@@ -295,10 +293,15 @@
 		}
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
+			description: [
+				"&9深入暗影侵染的区域&r后，你听到它们&b对灵魂的渴望&r。以此为基底对万象石进行激发和压制，就可以获得一台&3总在渴求灵魂&r的熔炉。"
+				"需要更多燃料……"
+			]
 			id: "3B85E476CBE11F1B"
+			subtitle: "燃烧灵魂"
 			tasks: [{
-				id: "3CC5DB57D18A4894"
-				item: "kubejs:soul_battery"
+				id: "45AF76FE1F8F7F50"
+				item: "kubejs:soul_furnace"
 				type: "item"
 			}]
 			x: -2.0d
@@ -306,7 +309,12 @@
 		}
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
+			description: [
+				"以奥术铁砧作为载体，用&2核能&r激发并控制万象石中&b闪电的力量&r，你就能获得一台为你&3持续附加风暴之力并为你的设备充电&r的机械。"
+				"电总是很重要的）"
+			]
 			id: "7648A6D221C10DEC"
+			subtitle: "奥能涌动"
 			tasks: [{
 				id: "78C8AE837008612D"
 				item: "kubejs:arcane_charger"
