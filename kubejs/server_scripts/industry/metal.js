@@ -328,8 +328,11 @@ ServerEvents.recipes(event => {
 
     //红石量产
     event.recipes.create.filling('redstone_block', [Fluid.of('immersiveengineering:redstone_acid',250),'botania:livingrock'])
+
     //玄武岩粉碎产青金石
-    event.recipes.create.crushing([Item.of('kubejs:lapis_lazuli').withChance(0.3)], 'basalt')
+    event.remove({id:"vintageimprovements:crushing/basalt"})
+    event.remove({id:"vintageimprovements:crushing/basalt_recycling"})
+    event.recipes.create.crushing([Item.of('minecraft:lapis_lazuli').withChance(0.3)], 'basalt')
 
     //焦黑熔渣粉碎生成硫粉
     event.recipes.create.crushing([Item.of('scguns:sulfur_dust').withChance(0.3)], 'create:scoria')

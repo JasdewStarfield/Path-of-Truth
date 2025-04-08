@@ -17,7 +17,7 @@
 	default_lang = "en_us"
 	#Append comment text with notice about sending screenshot of this gui tells nothing to modpack creators.
 	show_dont_send_screenshot_of_gui_notice = true
-	#List of blacklisted log files. This files won't show in GUI logs list.
+	#List of blacklisted log files (checked with startswith()). This files won't show in GUI logs list.
 	blacklisted_logs = []
 
 #Here you can change text of lang placeHolders.

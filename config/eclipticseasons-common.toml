@@ -7,7 +7,7 @@
 	#Range: 1 ~ 24
 	InitialSolarTermIndex = 1
 	#Enable solar term change inform.
-	EnableInform = true
+	EnableInform = false
 	#Whether send inform with icon.
 	EnableInformIcon = true
 	#Whether to pop up the solar term reminder when the calendar item cannot be placed.
