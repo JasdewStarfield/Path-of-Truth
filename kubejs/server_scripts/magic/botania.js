@@ -146,6 +146,22 @@ ServerEvents.recipes(event => {
             C: 'goety:philosophers_stone'
         }
     )
+    //生命聚合器复制
+    event.shaped(
+        Item.of('botania:spawner_mover', 4),
+        [
+            ' A ',
+            ' B ',
+            'CDE'
+        ],
+        {
+            B: 'botania:spawner_mover',
+            E: 'goety:unholy_blood',
+            C: 'irons_spellbooks:blood_vial',
+            A: 'botania:spawner_claw',
+            D: 'goety:philosophers_stone'
+        }
+    )
 
     //符文祭坛配方
     //炼制铁魔法空白符文
@@ -197,6 +213,8 @@ ServerEvents.recipes(event => {
 
     //竹子转化
     event.recipes.botania.mana_infusion('minecraft:bamboo', 'botania:livingwood_twig', 500)
+    //明月石砖转化绿松石砖
+    event.recipes.botania.mana_infusion('blue_skies:turquoise_stonebrick', 'blue_skies:lunar_stonebrick', 100)
 
     //鸡蛋的生产和复制
     event.recipes.botania.petal_apothecary('minecraft:egg', 
@@ -207,6 +225,19 @@ ServerEvents.recipes(event => {
         ]
     )
     event.recipes.botania.mana_infusion('2x minecraft:egg', 'minecraft:egg', 500)
+    //增生之种复制
+    event.recipes.botania.petal_apothecary('8x botania:overgrowth_seed', 
+        [
+            'botania:spawner_mover',
+            'goety:quick_growing_seed',
+            'goety:quick_growing_seed',
+            'goety:quick_growing_seed',
+            'botania:overgrowth_seed',
+            'goety:quick_growing_seed',
+            'goety:quick_growing_seed',
+            'goety:quick_growing_seed'
+        ]
+    )
     
     //魔钢-奥术源质兑换
     event.recipes.botania.mana_infusion('4x irons_spellbooks:arcane_essence', 'botania:manasteel_ingot', 1000, 'botania:alchemy_catalyst')

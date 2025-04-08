@@ -67,10 +67,10 @@
 			y: -5.0d
 		}
 		{
-			height: 2.6d
+			height: 2.7d
 			image: "botania:block/chiseled_dark_quartz_end"
 			rotation: 0.0d
-			width: 2.6d
+			width: 2.7d
 			x: 0.0d
 			y: 5.0d
 		}
@@ -82,7 +82,7 @@
 			dependencies: ["27ABB5338B46217F"]
 			description: [
 				"终于，你获得了一些植物魔法的高级材料，这也意味着你可以合成一些更带劲的东西了。"
-				"现在，泰拉钢的合成需要更少的魔力——但相应的需要更复杂的材料。魔力的精华是这样的。"
+				"现在，泰拉钢的合成需要更少的魔力——但相应的需要更复杂的材料，工业代替了一部分魔力的消耗。"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
@@ -206,7 +206,7 @@
 			description: [
 				"……然后干掉ta来获得你需要的资源以及一些……宝贵的遗物。"
 				"请做好准备，因为这真的很困难，至少比你干掉凋零要难，所以&l&4请谨慎阅读辞典上的注意事项&r&r。"
-				"在&c获得4份盖亚之魂后&r，就可以&b通过一些神秘的魔法操作来获取更多&r，而不需要一直战斗了。"
+				"在&c获得盖亚之魂并取得贤者之石（魔法第五章产物）后&r，就可以&b通过一些神秘的魔法操作来获取更多&r，而不需要一直战斗了。"
 				"你问我为什么没给你设置干掉凋零的任务？这不是MC玩家的基本操作吗？"
 				"*注：仪式需要足够开阔的大面积实心平地，以及&c记得去掉辅助放置水晶的方块&r。如果出现了错误，聊天栏会弹出提示，注意场地上闪烁的&d粉红色光点&r，那就是你需要去处理的地方。"
 			]
@@ -343,9 +343,10 @@
 			]
 			id: "210E43CDA18C6505"
 			rewards: [{
-				id: "72A93482DBE32948"
-				item: "botania:blacker_lotus"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "67F443FA88818A75"
+				table_id: 3947091887552256602L
+				type: "random"
 			}]
 			subtitle: "植魔的高端工具"
 			tasks: [
@@ -439,6 +440,12 @@
 			]
 			icon: "botania:mana_pylon"
 			id: "68E15D5A4E21EEEA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0101E49A749C6646"
+				table_id: 3947091887552256602L
+				type: "random"
+			}]
 			subtitle: "这不魔法！"
 			tasks: [
 				{
@@ -587,7 +594,7 @@
 			]
 			id: "6E1C390C50FEA9E2"
 			shape: "hexagon"
-			subtitle: "魔力流淌"
+			subtitle: "冰河流淌"
 			tasks: [{
 				id: "4D56B7E22BACCF50"
 				item: "kubejs:water_elemental_core"

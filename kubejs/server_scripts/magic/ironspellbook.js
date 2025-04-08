@@ -142,6 +142,22 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:energized_core'},
         'minecraft:copper_block', 'immersiveengineering:storage_constantan' )
 
+    //添加竖琴配方
+    event.shaped(
+        Item.of('alshanex_familiars:bard_harp'),
+        [
+            'ABC',
+            'BCD',
+            'CD '
+        ],
+        {
+            C: 'botania:mana_string',
+            D: 'immersiveengineering:dust_silver',
+            B: 'scguns:diamond_steel_ingot',
+            A: 'alshanex_familiars:sound_upgrade_orb'
+        }
+    )
+
     //泰拉钢锭加入各系胸甲配方
     event.remove({id:'irons_spellbooks:cryomancer_chestplate'})
     event.shaped(Item.of('irons_spellbooks:cryomancer_chestplate',1),

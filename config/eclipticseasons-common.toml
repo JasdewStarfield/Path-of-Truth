@@ -13,7 +13,7 @@
 	#Whether to pop up the solar term reminder when the calendar item cannot be placed.
 	CalendarItemHint = false
 	#In summer, the days are long and the nights are short, while in winter, the days are short and the nights are long.
-	DynamicDaylightDuration = true
+	DynamicDaylightDuration = false
 	#Which dimensions will have season effects? Note that it must be natrual and have time lapse.
 	ValidDimensions = ["minecraft:overworld"]
 	#If snow falls during cold weather, it will gradually cover all solid blocks and grass.
@@ -54,7 +54,7 @@
 	#Range: 1.0E-4 ~ 0.9999
 	CropGrowChanceInWrongHumidity = 0.25
 	#The maximum effective diameter of the greenhouse.
-	#Range: 3 ~ 128
+	#Range: 5 ~ 256
 	GreenHouseMaxDiameter = 32
 	#Whether to enable complex shape checking.
 	ComplexGreenHouseCheck = true
@@ -63,6 +63,9 @@
 	#The possibility of crops not growing when there is insufficient sunlight in green house.
 	#Range: 0 ~ 10000
 	DarkGreenhouseFailChance = 2000
+	#The maximum effective diameter of the greenhouse.
+	#Range: 3 ~ 128
+	GreenHouseMaxHeight = 10
 
 [Compat]
 	#Compatible with mods using SereneSeasons' CropTag.

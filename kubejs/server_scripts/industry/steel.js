@@ -171,7 +171,7 @@ ServerEvents.recipes(event => {
     Item.of('kubejs:fire_elemental_core'),
     Fluid.of('kubejs:molten_slag', 200)
   ], [
-    Item.of("#create:stone_types/limestone"),
+    Item.of("create:limestone"),
     Item.of('kubejs:fire_elemental_core'),
     Fluid.of("kubejs:molten_iron", 200)
   ]).heated()

@@ -305,7 +305,6 @@
 				"重油还可以进一步分解——然后获得你需要的一些特定资源）"
 				"这可以让你的某些被精度干扰概率的配方成功率提升到百分百……"
 			]
-			hide_until_deps_complete: true
 			id: "107639F1A8166B9C"
 			subtitle: "沉重坚实"
 			tasks: [{
@@ -322,7 +321,6 @@
 				"1AAD83556BD302DD"
 			]
 			description: ["生物柴油对应的本体……以及某些发动机的燃料。"]
-			hide_until_deps_complete: true
 			id: "443ED09E810FE23D"
 			subtitle: "轰！"
 			tasks: [{
@@ -343,7 +341,6 @@
 				""
 				"&o&e*你就说琥珀金是不是金吧）&r&r"
 			]
-			hide_until_deps_complete: true
 			id: "2718164469D544DF"
 			shape: "circle"
 			subtitle: "也许是燃料"
@@ -364,7 +361,6 @@
 				"现代工业最大的依靠之一就是塑料，而塑料的来源就是石油。"
 				"现在你需要尝试复刻这一过程，来触及到这一世界的工业巅峰。"
 			]
-			hide_until_deps_complete: true
 			id: "46A5743F6DC8054D"
 			subtitle: "现代工业第一步"
 			tasks: [{
@@ -427,7 +423,7 @@
 				"&o&7*反正塑料便宜。&r&r"
 			]
 			id: "32DA53E6EDA0AC90"
-			subtitle: "焊板子！"
+			subtitle: "空板子"
 			tasks: [{
 				id: "48C588AD1B77239B"
 				item: "kubejs:electronic_circuit_board"
@@ -448,7 +444,6 @@
 				""
 				"&o&b提示：盖亚魂锭可以通过贤者之石分别炼制泰拉钢锭和盖亚之魂组合而成！&r&r"
 			]
-			hide_until_deps_complete: true
 			id: "538F608DF5017A6A"
 			subtitle: "没有工资"
 			tasks: [{
@@ -730,7 +725,7 @@
 		{
 			dependencies: ["107639F1A8166B9C"]
 			description: [
-				"通过重油混合沙石，就能够获得沥青——可以拿来铺路，不过这也有些浪费……"
+				"通过&5虚空的力量&r催化重油，就能够获得沥青——可以拿来铺路，不过这也有些浪费……"
 				"毕竟沥青更适合拿来做核反应堆）"
 			]
 			id: "0A20C8766DEA529B"
@@ -895,11 +890,11 @@
 				"7D6BF4F6E28213D6"
 			]
 			description: [
-				"按照思索搭建，投入材料，你就能收获数以百万计的应力……前提是你要维持它的运作。"
+				"按照思索搭建，投入材料，你就能收获数以百万计的应力……前提是&c你要维持它的运作&r。"
 				""
-				"你可以使用反应堆控制蓝图配置投料的配比。投料包括铀棒和石墨棒，会逐渐消耗，配置的数量越多消耗越快。一根铀棒+25堆温，一根石墨棒-10堆温。当两种棒任意一种用完，核反应堆就会自动停机。"
-				"至少需要三个铀棒、一个石墨棒才能启动反应堆。核反应堆输出的应力与堆温挂钩。"
-				"当核反应堆堆温超过1000，核反应堆就会停机并在数min后爆炸。"
+				"你可以使用反应堆控制蓝图配置投料的配比。投料包括铀棒和石墨棒，会逐渐消耗，配置的数量越多消耗越快。&b一根铀棒+25堆温，一根石墨棒-10堆温。&r当两种棒任意一种用完，核反应堆就会自动停机。"
+				"&3至少需要三个铀棒、一个石墨棒才能启动反应堆。&r核反应堆输出的应力与堆温挂钩。"
+				"当核反应堆&4堆温超过1000&r，核反应堆就会&4停机并在数分钟后爆炸&r。"
 			]
 			icon: "createnuclear:reactor_blueprint_item"
 			id: "5842F5E1694C4F74"
@@ -942,6 +937,8 @@
 			description: [
 				"想要再次压缩黄饼，就不得不依靠一些&c魔法的力量&r。"
 				"通过&b灵魂与魔力集成的核心&r，以&8黑暗金属&r为框架压制&9富饶的灵魂土&r，你就能借此为燃料，点燃这种灼烧灵魂的火焰。"
+				""
+				"&o&7*如果位置放错了挖掉重做即可，核心的富集灵魂土不会损耗。&r&r"
 			]
 			id: "392E8FC01684BDEC"
 			subtitle: "我的邪焰会焚尽天空！"
@@ -953,6 +950,39 @@
 			title: "燃烧军团打进来了？"
 			x: 7.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["07B58ED0910776DF"]
+			description: [
+				"通过焦化蓝图和足够精密的计算结构，你可以复制任何你使用的弹药了！"
+				"&o&7本关无限制火力供应.jpg&r&r"
+			]
+			id: "31A409238967A7E8"
+			shape: "diamond"
+			subtitle: "Fire！"
+			tasks: [{
+				id: "69D43304D0DC8337"
+				item: "scguns:creative_ammo_box"
+				type: "item"
+			}]
+			title: "无限制火力"
+			x: 13.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["07B58ED0910776DF"]
+			description: ["通过魔法的炼金之力整合抽屉升级，你部分触碰了存储方面的无限……"]
+			id: "51C0DFB50C1A4A5B"
+			shape: "diamond"
+			subtitle: "大肚能容……"
+			tasks: [{
+				id: "2DE1E47665A2393D"
+				item: "storagedrawers:creative_storage_upgrade"
+				type: "item"
+			}]
+			title: "无尽存储"
+			x: 13.5d
+			y: 5.5d
 		}
 	]
 	subtitle: ["Petrochemical Engineering"]
