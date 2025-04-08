@@ -84,9 +84,9 @@ EntityJSEvents.addGoalSelectors('minecraft:skeleton', e => {
         mob => {
             let target = mob.target//进入战斗状态
             if (target != null) {
-                if (mob.age % 400 == 0) {
+                if (mob.age % 800 == 0) {
                     mob.lookAt("eyes", new Vec3d(target.x, target.y, target.z))//释放指向性法术需要视线
-                    return mob.initiateCastSpell(SpellRegistry.MAGIC_ARROW_SPELL.get(), 1)//魔法箭
+                    return mob.initiateCastSpell(SpellRegistry.MAGIC_ARROW_SPELL.get(), 2)//魔法箭
                 } 
 
             }
