@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
     event.custom({
         "type": "metalbundles:legacy_smithing_transform",
         "addition": {
-            "item": 'minecraft:bedrock'
+            "item": 'goety:dark_ingot'
         },
         "base": {
             "item": "metalbundles:golden_bundle"
