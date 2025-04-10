@@ -212,6 +212,8 @@ ServerEvents.recipes(event => {
     //康铜
     //移除合成康铜粉配方
     event.remove({id:"immersiveengineering:crafting/constantan_mix"})
+    //移除直接合金配方
+    event.remove({id:"createaddition:compat/immersiveengineering/constantan"})
     //新增加热搅拌配方
     event.recipes.create.mixing('2x #forge:dusts/constantan', ['#forge:dusts/nickel', '#forge:dusts/copper', '#forge:dusts/phosphor']).heated()
     //补充辊压配方

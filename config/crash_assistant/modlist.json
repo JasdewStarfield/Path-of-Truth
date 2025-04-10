@@ -39,9 +39,9 @@
     "modId": "ambientenvironment",
     "version": "11.0.0.1"
   },
-  "AmbientSounds_FORGE_v6.1.6_mc1.20.1.jar": {
+  "AmbientSounds_FORGE_v6.1.8_mc1.20.1.jar": {
     "modId": "ambientsounds",
-    "version": "6.1.6"
+    "version": "6.1.8"
   },
   "amendments-1.20-1.2.19.jar": {
     "modId": "amendments",
@@ -67,9 +67,9 @@
     "modId": "architectury",
     "version": "9.2.14"
   },
-  "artifacts-forge-9.5.15.jar": {
+  "artifacts-forge-9.5.16.jar": {
     "modId": "artifacts",
-    "version": "9.5.15"
+    "version": "9.5.16"
   },
   "AsyncParticles-1.10.0+1.20.1-alpha.5.jar": {
     "modId": "asyncparticles",
@@ -91,9 +91,9 @@
     "modId": "bedsdontexplode",
     "version": "1.0"
   },
-  "bedspreads-forge-6.2.0+1.20.1.jar": {
+  "bedspreads-forge-6.3.0+1.20.1.jar": {
     "modId": "bedspreads",
-    "version": "6.2.0+1.20.1"
+    "version": "6.3.0+1.20.1"
   },
   "bellsandwhistles-0.4.3-1.20.x.jar": {
     "modId": "bellsandwhistles",
@@ -110,6 +110,10 @@
   "betterarcheology-1.2.1-1.20.1.jar": {
     "modId": "betterarcheology",
     "version": "1.2.1-1.20.1"
+  },
+  "betterchunkloading-1.20.1-5.4.jar": {
+    "modId": "betterchunkloading",
+    "version": "1.20.1-5.4"
   },
   "BetterCompatibilityChecker-forge-4.0.8+mc1.20.1.jar": {
     "modId": "bcc",
@@ -162,10 +166,6 @@
   "catalogue-forge-1.20.1-1.8.0.jar": {
     "modId": "catalogue",
     "version": "1.8.0"
-  },
-  "caveoverhaul-forge-1.20.1-1.3.4.jar": {
-    "modId": "caveoverhaul",
-    "version": "1.3.4"
   },
   "CerbonsAPI-Forge-1.20.1-1.1.0.jar": {
     "modId": "cerbons_api",
@@ -259,9 +259,9 @@
     "modId": "craftingtweaks",
     "version": "18.2.5"
   },
-  "crash_assistant-forge-1.6.1.jar": {
+  "crash_assistant-forge-1.6.4.jar": {
     "modId": "crash_assistant",
-    "version": "1.6.1"
+    "version": "1.6.4"
   },
   "cratedelight-24.11.29-1.20-forge.jar": {
     "modId": "cratedelight",
@@ -290,10 +290,6 @@
   "create_central_kitchen-1.20.1-for-create-0.5.1.j-1.3.13.jar": {
     "modId": "create_central_kitchen",
     "version": "1.3.13"
-  },
-  "create_cold_sweat-1.1.1.7.jar": {
-    "modId": "create_cold_sweat",
-    "version": "1.1.1.7"
   },
   "create_compressed-2.0.0-forge-1.20.1.jar": {
     "modId": "create_compressed",
@@ -367,9 +363,9 @@
     "modId": "cupboard",
     "version": "1.20.1-2.7"
   },
-  "curios-forge-5.12.1+1.20.1.jar": {
+  "curios-forge-5.14.0+1.20.1.jar": {
     "modId": "curios",
-    "version": "5.12.1+1.20.1"
+    "version": "5.14.0+1.20.1"
   },
   "curiouslanterns-1.20.1-1.3.6.jar": {
     "modId": "curiouslanterns",
@@ -579,9 +575,9 @@
     "modId": "ftbteams",
     "version": "2001.3.1"
   },
-  "ftb-xmod-compat-forge-2.1.2.jar": {
+  "ftb-xmod-compat-forge-2.1.3.jar": {
     "modId": "ftbxmodcompat",
-    "version": "2.1.2"
+    "version": "2.1.3"
   },
   "ftbquestlocalizer-1.20.1-forge-3.2.0.jar": {
     "modId": "ftbquestlocalizer",
@@ -591,13 +587,13 @@
     "modId": "fullstackwatchdog",
     "version": "1.0.1+1.19.2-forge"
   },
-  "fusion-1.2.6a-forge-mc1.20.1.jar": {
+  "fusion-1.2.6b-forge-mc1.20.1.jar": {
     "modId": "fusion",
-    "version": "1.2.6+a"
+    "version": "1.2.6+b"
   },
-  "fzzy_config-0.6.8+1.20.1+forge.jar": {
+  "fzzy_config-0.6.9+1.20.1+forge.jar": {
     "modId": "fzzy_config",
-    "version": "0.6.8+1.20.1+forge"
+    "version": "0.6.9+1.20.1+forge"
   },
   "geckolib-forge-1.20.1-4.7.1.2.jar": {
     "modId": "geckolib",
@@ -1160,17 +1156,17 @@
     "modId": "sodiumoptionsapi",
     "version": "1.0.8"
   },
-  "sophisticatedbackpacks-1.20.1-3.23.8.1215.jar": {
+  "sophisticatedbackpacks-1.20.1-3.23.10.1220.jar": {
     "modId": "sophisticatedbackpacks",
-    "version": "3.23.8.1215"
+    "version": "3.23.10.1220"
   },
-  "sophisticatedcore-1.20.1-1.2.38.936.jar": {
+  "sophisticatedcore-1.20.1-1.2.40.940.jar": {
     "modId": "sophisticatedcore",
-    "version": "1.2.38.936"
+    "version": "1.2.40.940"
   },
-  "sound-physics-remastered-forge-1.20.1-1.4.12.jar": {
+  "sound-physics-remastered-forge-1.20.1-1.4.13.jar": {
     "modId": "sound_physics_remastered",
-    "version": "1.20.1-1.4.12"
+    "version": "1.20.1-1.4.13"
   },
   "Sounds-2.2.1+1.20.1+forge.jar": {
     "modId": "sounds",

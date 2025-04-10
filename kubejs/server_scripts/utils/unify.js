@@ -57,6 +57,42 @@ ServerEvents.recipes(event => {
     'create:filter'
   )
 
+  const UndergardenWoodType = [
+    'smogstem',
+    'wigglewood',
+    'grongle'
+  ]
+
+  const GoetyWoodType = [
+      'haunted',
+      'rotten',
+      'windswept',
+      'pine'
+  ]
+
+  UndergardenWoodType.forEach((id) => {
+    event.recipes.create.cutting(`undergarden:stripped_${id}_log`, `undergarden:${id}_log`)
+    event.recipes.create.cutting(`undergarden:stripped_${id}_wood`, `undergarden:${id}_wood`)
+    event.recipes.create.cutting(`6x undergarden:${id}_planks`, `undergarden:stripped_${id}_log`)
+    event.recipes.create.cutting(`6x undergarden:${id}_planks`, `undergarden:stripped_${id}_wood`)
+  })
+
+  GoetyWoodType.forEach((id) => {
+    event.recipes.create.cutting(`goety:stripped_${id}_log`, `goety:${id}_log`)
+    event.recipes.create.cutting(`goety:stripped_${id}_wood`, `goety:${id}_wood`)
+    event.recipes.create.cutting(`6x goety:${id}_planks`, `goety:stripped_${id}_log`)
+    event.recipes.create.cutting(`6x goety:${id}_planks`, `goety:stripped_${id}_wood`)
+  })
+
+  event.recipes.create.cutting(`outer_end:azure_stripped_stem`, `outer_end:azure_stem`)
+  event.recipes.create.cutting(`outer_end:azure_stripped_pith`, `outer_end:azure_pith`)
+  event.recipes.create.cutting(`6x outer_end:azure_planks`, `outer_end:azure_stripped_stem`)
+  event.recipes.create.cutting(`6x outer_end:azure_planks`, `outer_end:azure_stripped_pith`)
+  event.recipes.create.cutting(`netherexp:stripped_claret_stem`, 'netherexp:claret_stem')
+  event.recipes.create.cutting(`netherexp:stripped_claret_hyphae`, 'netherexp:claret_hyphae')
+  event.recipes.create.cutting(`6x netherexp:claret_planks`, 'netherexp:stripped_claret_stem')
+  event.recipes.create.cutting(`6x netherexp:claret_planks`, 'netherexp:stripped_claret_hyphae')
+
 
   //鲶鱼转化
   event.shapeless(Item.of('alexsmobs:raw_catfish',1),

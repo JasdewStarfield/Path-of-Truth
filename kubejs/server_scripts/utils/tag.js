@@ -90,11 +90,79 @@ const UnobtainableFluids = [
     'createaddition:bioethanol'
 ]
 
+const BWGWoodType = [
+    'aspen',
+    'baobab',
+    'blue_enchanted',
+    'cika',
+    'cypress',
+    'ebony',
+    'fir',
+    'florus',
+    'green_enchanted',
+    'holly',
+    'ironwood',
+    'jacaranda',
+    'mahogany',
+    'maple',
+    'palm',
+    'palo',
+    'pine',
+    'rainbow_eucalyptus',
+    'redwood',
+    'sakura',
+    'skyris',
+    'white_mangrove',
+    'willow',
+    'witch_hazel',
+    'zelkova'
+]
+
+const UndergardenWoodType = [
+    'smogstem',
+    'wigglewood',
+    'grongle'
+]
+
+const GoetyWoodType = [
+    'haunted',
+    'rotten',
+    'windswept',
+    'pine'
+]
+
+
+
+
 ServerEvents.tags("item", (event) => {
     //工程块
     engineeringBlocks.forEach((id) => event.add("kubejs:engineering_block", id))
     
     event.add("create:casing","kubejs:steel_casing")
+    event.add("create:casing","kubejs:factory_casing")
+
+    //为去皮原木和木头添加对应tag
+    BWGWoodType.forEach((id) => {
+        event.add(`forge:stripped_logs`, `biomeswevegone:stripped_${id}_log`)
+        event.add(`forge:stripped_wood`, `biomeswevegone:stripped_${id}_wood`)
+    })
+
+    UndergardenWoodType.forEach((id) => {
+        event.add(`forge:stripped_logs`, `undergarden:stripped_${id}_log`)
+        event.add(`forge:stripped_wood`, `undergarden:stripped_${id}_wood`)
+    })
+
+    GoetyWoodType.forEach((id) => {
+        event.add(`forge:stripped_logs`, `goety:stripped_${id}_log`)
+        event.add(`forge:stripped_wood`, `goety:stripped_${id}_wood`)
+    })
+
+    event.add(`forge:stripped_logs`, 'outer_end:azure_stripped_stem')
+    event.add(`forge:stripped_wood`, 'outer_end:azure_stripped_pith')
+    event.add(`forge:stripped_logs`, 'netherexp:stripped_claret_stem')
+    event.add(`forge:stripped_wood`, 'netherexp:stripped_claret_hyphae')
+    event.add(`minecraft:logs`, 'netherexp:stripped_claret_stem')
+    event.add(`minecraft:logs`, 'netherexp:stripped_claret_hyphae')
 
     //锌粉、锡粉
     event.add("forge:dusts","kubejs:zinc_dust")
@@ -302,4 +370,11 @@ ServerEvents.tags("block", (event) => {
     //幽冥锤添加
     event.add("irons_spellbooks:spectral_hammer_mineable","#forge:stone")
     event.add("irons_spellbooks:spectral_hammer_mineable","#undergarden:base_stone_undergarden")
+
+    //为原木和木头添加对应tag
+    event.add(`minecraft:logs`, 'outer_end:azure_stripped_stem')
+    event.add(`minecraft:logs`, 'outer_end:azure_stripped_pith')
+    event.add(`minecraft:logs`, 'outer_end:stripped_pith')
+    event.add(`minecraft:logs`, 'netherexp:stripped_claret_stem')
+    event.add(`minecraft:logs`, 'netherexp:stripped_claret_hyphae')
 })

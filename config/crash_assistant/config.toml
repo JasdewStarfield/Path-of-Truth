@@ -102,3 +102,13 @@
 	#Show funny related gif in warning message.
 	show_gif = true
 
+#Settings of analysis feature.
+#Analysing logs for most common reasons of crashes and displaying recommendations with fixes.
+[analysis]
+	#Enable feature.
+	enabled = true
+	#Here you can disable some Analysis by class names.
+	#List of them can be found here: dev.kostromdan.mods.crash_assistant.app.logs_analyser.crash_reasons
+	#For example "Create6Addons"
+	blacklisted_reasons = []
+
