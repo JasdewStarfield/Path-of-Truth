@@ -67,6 +67,10 @@
     "modId": "architectury",
     "version": "9.2.14"
   },
+  "armordamagescale-1.20.1-3.1.jar": {
+    "modId": "armordamagescale",
+    "version": "1.20.1-3.1"
+  },
   "artifacts-forge-9.5.16.jar": {
     "modId": "artifacts",
     "version": "9.5.16"
@@ -102,6 +106,10 @@
   "bendy-lib-forge-4.0.0.jar": {
     "modId": "bendylib",
     "version": "4.0.0"
+  },
+  "better_climbing-forge-3.jar": {
+    "modId": "better_climbing",
+    "version": "3"
   },
   "BetterAdvancements-NeoForge-1.20.1-0.4.2.25.jar": {
     "modId": "betteradvancements",
@@ -470,10 +478,6 @@
   "enhanced_boss_bars-1.20.1-1.0.0.jar": {
     "modId": "enhanced_boss_bars",
     "version": "1.20.1-1.0.0"
-  },
-  "entityculling-forge-1.7.4-mc1.20.1.jar": {
-    "modId": "entityculling",
-    "version": "1.7.4"
   },
   "entityjs-0.4.7-1.20.1.jar": {
     "modId": "entityjs",
@@ -1083,6 +1087,10 @@
   "salt-1.20.1-1.2.6.jar": {
     "modId": "salt",
     "version": "1.2.6"
+  },
+  "saturn-mc1.20.1-0.1.3.jar": {
+    "modId": "saturn",
+    "version": "0.1.3"
   },
   "scg-1.20.1-air.jar": {
     "modId": "starcarefree_game",

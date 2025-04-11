@@ -210,7 +210,7 @@ ServerEvents.recipes(event => {
     C: 'scguns:laser_sight',
     D: '#forge:glass'
   })
-  event.recipes.vintageimprovements.laser_cutting(Item.of('kubejs:electronic_circuit_board').withChance(0.5), ['#forge:plates/plastic']).energyCost(12800).maxChargeRate(3200)
+  event.recipes.vintageimprovements.laser_cutting(Item.of('kubejs:electronic_circuit_board'), '#forge:plates/plastic').energyCost(51200).maxChargeRate(3200)
 
   //原始万象石
   event.shaped(

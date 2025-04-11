@@ -534,7 +534,7 @@ ServerEvents.recipes(event => {
     })
     event.custom({
       "type":"immersiveengineering:bottling_machine",
-      "fluid":{"amount":250,"tag":"forge:liquid_plastic"},
+      "fluid":{"amount":1000,"tag":"forge:liquid_plastic"},
       "inputs":[
         {"item":"immersiveengineering:mold_plate"}
       ],
