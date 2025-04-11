@@ -402,7 +402,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "粉碎黑石！"
+			subtitle: "粉碎花岗岩！"
 			tasks: [
 				{
 					id: "2975E6BE0256C762"

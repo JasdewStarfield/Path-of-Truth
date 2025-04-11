@@ -326,7 +326,8 @@ ServerEvents.recipes(event => {
     event.recipes.create.crushing([Item.of('oreganized:silver_nugget').withChance(0.2)], 'cobbled_deepslate')
 
     //花岗岩粉碎出铀
-    event.recipes.create.crushing([Item.of('#forge:nuggets/uranium').withChance(0.15)], 'granite')
+    event.remove({id:"createnuclear:crushing/granite"})
+    event.recipes.create.crushing([Item.of('#forge:nuggets/uranium').withChance(0.15), Item.of("minecraft:red_sand")], 'granite')
 
     //红石量产
     event.recipes.create.filling('redstone_block', [Fluid.of('immersiveengineering:redstone_acid',250),'botania:livingrock'])
