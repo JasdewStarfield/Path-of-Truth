@@ -57,6 +57,8 @@ ServerEvents.recipes(event => {
     event.remove({id:'irons_spellbooks:iron_spell_book'})
     event.remove({id:'irons_spellbooks:gold_spell_book'})
     event.remove({id:'irons_spellbooks:diamond_spell_book'})
+    event.remove({id:'alshanex_familiars:sound_spell_book'})
+    event.remove({id:'alshanex_familiars:familiar_spellbook'})
 
     keepNBTShapedCrafting('irons_spellbooks:iron_spell_book',
         ['ABB',
@@ -98,6 +100,36 @@ ServerEvents.recipes(event => {
         'irons_spellbooks:gold_spell_book',
         {ISB_Spells: {maxSpells: 10}}
     )
+
+    keepNBTShapedCrafting('alshanex_familiars:sound_spell_book',
+        ['ABB',
+        'ACD',
+        'ABB'],
+        {
+            A:'immersiveengineering:plate_electrum',
+            B:'kubejs:terrasteel_sheet',
+            C:'irons_spellbooks:diamond_spell_book',
+            D:'alshanex_familiars:sound_upgrade_orb'
+        },
+        'irons_spellbooks:diamond_spell_book',
+        {ISB_Spells: {maxSpells: 10}}
+    )
+
+    
+    keepNBTShapedCrafting('alshanex_familiars:familiar_spellbook',
+        ['ABB',
+        'ACD',
+        'ABB'],
+        {
+            A:'goety:dark_ingot',
+            B:'irons_spellbooks:dragonskin',
+            C:'alshanex_familiars:sound_spell_book',
+            D:'minecraft:netherite_ingot'
+        },
+        'alshanex_familiars:sound_spell_book',
+        {ISB_Spells: {maxSpells: 10}}
+    )
+    
 
     //添加普通墨水配方
     event.custom({
