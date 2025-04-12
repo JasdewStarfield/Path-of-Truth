@@ -1,5 +1,3 @@
-const $ForgeCapabilities = Java.loadClass("net.minecraftforge.common.capabilities.ForgeCapabilities")
-
 //毁灭代码：右击破坏视线上16格以内任何方块，0.5秒冷却
 ItemEvents.rightClicked("kubejs:code_destruction", event => {
     const block = event.player.level.getBlock(event.player.rayTrace(16).block)
@@ -39,35 +37,4 @@ ItemEvents.rightClicked("kubejs:code_perfection", event => {
         player.tell(Text.translate("item.kubejs.code_perfection.cooldown"))
     }
     event.player.addItemCooldown(event.item, 0.5*20)
-})
-
-PlayerEvents.tick(event => {
-    //event.player.tell(event.player.inventory.find("kubejs:arcane_charger").toString())
-    if (event.player.age % 10 == 0) {   //减轻计算压力
-        if (event.player.inventory.find("kubejs:arcane_charger") != -1) {   //奥术充能器：每0.5s给予携带者5s超负荷2，并为其主手和副手物品充能1000FE
-            event.player.potionEffects.add("irons_spellbooks:charged", 100, 1, true, false)
-            let mainHandItem = event.player.getMainHandItem()
-            let offHandItem = event.player.getOffHandItem()
-            let chargeEnergy = (item, amount) => {
-                if (item != 'immersiveengineering:powerpack') {
-                    item.getCapability($ForgeCapabilities.ENERGY).ifPresent((energy) =>{
-                        energy.receiveEnergy(amount, false)
-                        //event.player.tell(energy.getEnergyStored().toString())
-                    })
-                }
-            }
-            chargeEnergy(mainHandItem, 1000)
-            chargeEnergy(offHandItem, 1000)
-        }
-        if (event.player.inventory.find("kubejs:soul_furnace") != -1) {    //灵魂电池：每0.5s给予携带者5s铁魔法急迫2和诡厄巫法食尸3
-            event.player.potionEffects.add("irons_spellbooks:hastened", 100, 1, true, false)
-            event.player.potionEffects.add("goety:corpse_eater", 100, 2, true, false) 
-        }
-        if (event.player.age % 200 == 0) {  //每10秒触发一次
-            if (event.player.inventory.find("kubejs:divine_shield_system") != -1) {    //神圣护盾系统：每10s给予携带者20s伤害吸收2（8点临时护盾），以及5s生命回复1
-                event.player.potionEffects.add("minecraft:absorption", 400, 1, true, false)
-                event.player.potionEffects.add("minecraft:regeneration", 100, 0, false, false)
-            }
-        }
-    }
 })

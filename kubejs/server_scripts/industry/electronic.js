@@ -12,7 +12,7 @@ ServerEvents.recipes(event => {
     let inter = 'create:incomplete_precision_mechanism'
     event.recipes.create.sequenced_assembly([
         Item.of('create:precision_mechanism').withChance(90.0),
-        Item.of('#forge:plates/silver').withChance(5.0),
+        Item.of('create:iron_sheet').withChance(5.0),
         Item.of('create:cogwheel').withChance(1.5),
         Item.of('create:large_cogwheel').withChance(1.5),
         Item.of('create:electron_tube').withChance(2.0)

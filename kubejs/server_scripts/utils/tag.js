@@ -131,7 +131,29 @@ const GoetyWoodType = [
     'pine'
 ]
 
-
+const Radioactive = [
+    'create:crushed_raw_uranium',
+    '#forge:ingots/uranium',
+    '#forge:nuggets/uranium',
+    '#forge:storage_blocks/uranium',
+    '#forge:storage_blocks/raw_uranium',
+    '#forge:ores/uranium',
+    '#forge:raw_materials/uranium',
+    '#forge:plates/uranium',
+    '#forge:dusts/uranium',
+    '#forge:rods/uranium',
+    '#forge:wires/uranium',
+    '#forge:sheetmetals/uranium',
+    'immersiveengineering:slab_sheetmetal_uranium',
+    'immersiveengineering:slab_storage_uranium',
+    'createnuclear:uranium_bucket',
+    'kubejs:molten_enriched_uranium_bucket',
+    'createnuclear:yellowcake',
+    'createnuclear:enriched_yellowcake',
+    'createnuclear:uranium_rod',
+    '#vintageimprovements:small_springs/uranium',
+    '#vintageimprovements:springs/uranium',
+]
 
 
 ServerEvents.tags("item", (event) => {
@@ -325,6 +347,9 @@ ServerEvents.tags("item", (event) => {
 
     //无法获取的物品
     UnobtainableItems.forEach((id) => event.add("kubejs:unobtainable", id))
+
+    //造成辐射的物品
+    Radioactive.forEach((id) => event.add("kubejs:radioactive", id))
 })
 
 ServerEvents.tags("block", (event) => {

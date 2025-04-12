@@ -40,11 +40,8 @@ ServerEvents.recipes(event => {
     )
 
     //青铜粉和锭
-    event.smelting('#forge:ingots/bronze', '#forge:dusts/bronze')
-    event.blasting('#forge:ingots/bronze', '#forge:dusts/bronze')
-
-    //青铜压板
-    event.recipes.create.pressing('#forge:plates/bronze', '#forge:ingots/bronze')
+    event.smelting('kubejs:bronze_ingot', '#forge:dusts/bronze')
+    event.blasting('kubejs:bronze_ingot', '#forge:dusts/bronze')
 
     //青铜工具，护甲
     event.shaped(
@@ -198,7 +195,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.crushing(Item.of('kubejs:zinc_dust'), '#forge:ingots/zinc')
     
     //粉碎轮出铁粉
-    event.recipes.create.crushing(Item.of('#forge:dusts/iron').withChance(0.75), '#forge:ingots/iron')
+    event.recipes.create.crushing(Item.of('kubejs:iron_ingot_dust').withChance(0.75), '#forge:ingots/iron')
 
     event.remove({id:/alloyed\.*/})
 
@@ -215,9 +212,7 @@ ServerEvents.recipes(event => {
     //移除直接合金配方
     event.remove({id:"createaddition:compat/immersiveengineering/constantan"})
     //新增加热搅拌配方
-    event.recipes.create.mixing('2x #forge:dusts/constantan', ['#forge:dusts/nickel', '#forge:dusts/copper', '#forge:dusts/phosphor']).heated()
-    //补充辊压配方
-    event.recipes.create.pressing('#forge:plates/constantan', '#forge:ingots/constantan')
+    event.recipes.create.mixing('2x immersiveengineering:dust_constantan', ['#forge:dusts/nickel', '#forge:dusts/copper', '#forge:dusts/phosphor']).heated()
     //康铜代替铜
     event.replaceInput(
         { output:"create:fluid_pipe" },
@@ -288,12 +283,12 @@ ServerEvents.recipes(event => {
         event.recipes.createPressing(inter, inter)
     ]).transitionalItem(inter).loops(3)
 
-    event.recipes.create.milling([Item.of('#forge:dusts/copper').withChance(0.9),Item.of('#forge:dusts/zinc').withChance(0.9)], 'kubejs:failed_brass_ingot')
+    event.recipes.create.milling([Item.of('immersiveengineering:dust_copper').withChance(0.9),Item.of('kubejs:zinc_dust').withChance(0.9)], 'kubejs:failed_brass_ingot')
 
     //黑曜石支持用石磨处理
     event.recipes.create.milling(Item.of('create:powdered_obsidian').withChance(0.75), '#forge:obsidian')
     //焦煤也是
-    event.recipes.create.milling(Item.of('#forge:dusts/coal_coke').withChance(0.75), '#forge:coal_coke').id('coal_coke_dust_manual_only')
+    event.recipes.create.milling(Item.of('immersiveengineering:dust_coke').withChance(0.75), '#forge:coal_coke').id('coal_coke_dust_manual_only')
 
     //深板岩
     event.recipes.create.filling('magma_block', [Fluid.of('minecraft:lava',500),'minecraft:cobblestone'])
@@ -327,7 +322,7 @@ ServerEvents.recipes(event => {
 
     //花岗岩粉碎出铀
     event.remove({id:"createnuclear:crushing/granite"})
-    event.recipes.create.crushing([Item.of('#forge:nuggets/uranium').withChance(0.15), Item.of("minecraft:red_sand")], 'granite')
+    event.recipes.create.crushing([Item.of('immersiveengineering:nugget_uranium').withChance(0.15), Item.of("minecraft:red_sand")], 'granite')
 
     //红石量产
     event.recipes.create.filling('redstone_block', [Fluid.of('immersiveengineering:redstone_acid',250),'botania:livingrock'])

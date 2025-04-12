@@ -828,6 +828,10 @@
     "modId": "majruszsenchantments",
     "version": "1.10.8"
   },
+  "make_bubbles_pop-0.3.0-forge-mc1.19.4-1.20.4.jar": {
+    "modId": "make_bubbles_pop",
+    "version": "${file.jarVersion}-forge"
+  },
   "man_of_many_planes-0.2.0+1.20.1-forge.jar": {
     "modId": "man_of_many_planes",
     "version": "0.2.0+1.20.1"
@@ -1007,10 +1011,6 @@
   "ponderjs-1.20.1-1.4.0.jar": {
     "modId": "ponderjs",
     "version": "1.4.0"
-  },
-  "pop-1.20.1-1.0.0.jar": {
-    "modId": "pop",
-    "version": "1.0.0"
   },
   "probejs-7.0.1-forge.jar": {
     "modId": "probejs",

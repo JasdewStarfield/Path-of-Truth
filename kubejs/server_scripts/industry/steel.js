@@ -24,7 +24,9 @@ ServerEvents.recipes(event => {
     'createdieselgenerators:chemical_sprayer',
     'createdieselgenerators:chemical_sprayer_lighter',
     'immersiveengineering:charging_station',
-    'immersiveengineering:tesla_coil'
+    'immersiveengineering:tesla_coil',
+    'createutilities:gearcube',
+    'createutilities:lshaped_gearbox',
   ]
 
   CreateDupeItems.forEach(id => {event.remove({output:id})})

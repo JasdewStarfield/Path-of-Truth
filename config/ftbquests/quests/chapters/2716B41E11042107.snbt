@@ -921,6 +921,8 @@
 			description: [
 				"核能，输出最长效的能源之一。"
 				"当然也是短效输出最为杰出的能源之一，但这里&c没有核弹&r，所以还是想想如何利用这些电池把自己变成核动力战士吧。"
+				""
+				"由于已经安全封装，携带这件物品并不会带来辐射。"
 			]
 			id: "68A3C3EE83073415"
 			subtitle: "长效动力"
@@ -983,6 +985,121 @@
 			title: "无尽存储"
 			x: 13.5d
 			y: 5.5d
+		}
+		{
+			dependencies: ["63227B2783602134"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						Insulation: [ ]
+					}
+				}
+				id: "createnuclear:orange_anti_radiation_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "256A5C15558571F0"
+			rewards: [{
+				id: "6DC7ED792F39D072"
+				item: "createnuclear:chicken_irradiated_spawn_egg"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "现在你就不怕辐射了！"
+			tasks: [
+				{
+					id: "61709282956B786A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "createnuclear:anti_radiation_helmet_full_dye"
+						}
+					}
+					title: "Any #createnuclear:anti_radiation_helmet_full_dye"
+					type: "item"
+				}
+				{
+					id: "23890988A46C78A3"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "createnuclear:anti_radiation_chestplate_full_dye"
+						}
+					}
+					title: "Any #createnuclear:anti_radiation_chestplate_full_dye"
+					type: "item"
+				}
+				{
+					id: "1155EFA5B063288D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "createnuclear:anti_radiation_leggings_full_dye"
+						}
+					}
+					title: "Any #createnuclear:anti_radiation_leggings_full_dye"
+					type: "item"
+				}
+				{
+					id: "20F79180E7C70386"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "createnuclear:anti_radiation_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "防辐射措施"
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["143E6A57D69BAE65"]
+			description: ["携带放射性物品可能会让你进入不良状态！严重等级与你携带的放射性物品总数有关：只要数量大于16个，放射性症状就会开始显现……"]
+			icon: "createdeco:decal_radioactive"
+			id: "63227B2783602134"
+			rewards: [{
+				id: "5BD660441DC770CB"
+				item: "createdeco:decal_radioactive"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "总之就是安全第一"
+			tasks: [
+				{
+					id: "61F8B7CB762D992B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:radioactive"
+						}
+					}
+					title: "放射性物品"
+					type: "item"
+				}
+				{
+					id: "0233AF7BB91AB279"
+					title: "好口怕"
+					type: "checkmark"
+				}
+			]
+			title: "小心辐射！"
+			x: 2.0d
+			y: 6.0d
 		}
 	]
 	subtitle: ["Petrochemical Engineering"]

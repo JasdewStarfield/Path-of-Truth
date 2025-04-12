@@ -1244,7 +1244,7 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["6D80959BDCD42FFB"]
+			dependencies: ["1C90C1CA66200C92"]
 			id: "3150095AA2A8CBFE"
 			rewards: [{
 				id: "0313844036492908"
@@ -1252,14 +1252,66 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "粉碎荧石粉！"
+			subtitle: "粉碎海晶沙砾！"
 			tasks: [{
 				id: "504EF2AB2C1F12C0"
 				item: "minecraft:quartz"
 				type: "item"
 			}]
-			x: -10.0d
-			y: -4.0d
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["74581D474C09D62C"]
+			id: "0A2862B24EFB6487"
+			subtitle: "缠魂圆石"
+			tasks: [{
+				id: "53DE07F008395AF0"
+				item: "minecraft:blackstone"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"0A2862B24EFB6487"
+				"40717610A2317CCE"
+			]
+			id: "43BB332647AB6F59"
+			subtitle: "用黑石和石英合成"
+			tasks: [{
+				id: "1CDD00204B17BDE6"
+				item: "scguns:phosphorite"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["43BB332647AB6F59"]
+			id: "214744E19F32B00E"
+			rewards: [{
+				id: "3BF7F25B7C6865FB"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "粉碎磷灰岩！"
+			tasks: [
+				{
+					id: "6F1AF49A3C8AE24D"
+					item: "scguns:phosphor_dust"
+					type: "item"
+				}
+				{
+					id: "1A340F091647EE72"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			x: 12.0d
+			y: -6.0d
 		}
 	]
 	subtitle: ["Standardized Production"]
