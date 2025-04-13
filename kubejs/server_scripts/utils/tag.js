@@ -342,6 +342,10 @@ ServerEvents.tags("item", (event) => {
     })
     */
 
+    //烈性煤移除超级加热功能，变成普通燃料
+    event.remove("create:blaze_burner_fuel/special","scguns:vehement_coal")
+    event.add("create:blaze_burner_fuel/regular","scguns:vehement_coal")
+
     //基础鱼类
     BasicFish.forEach((id) => event.add("kubejs:basic_fish", id))
 
