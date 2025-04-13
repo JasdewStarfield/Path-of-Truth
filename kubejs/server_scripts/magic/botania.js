@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
     )
 
     //支持机械动力的活木、活石配方
-    event.recipes.create.mixing(['botania:livingwood_log', Item.of('botania:pure_daisy').withChance(0.99)], ['#minecraft:logs','botania:pure_daisy']).heated()
+    event.recipes.create.mixing(['botania:livingwood_log', Item.of('botania:pure_daisy').withChance(0.99)], [Ingredient.of("#minecraft:logs").subtract('botania:livingwood_log'),'botania:pure_daisy']).heated()
     event.recipes.create.mixing(['botania:livingrock', Item.of('botania:pure_daisy').withChance(0.99)], ['minecraft:stone','botania:pure_daisy']).heated()
 
     //遗忆守卫炼制配方

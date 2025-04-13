@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
   )
 
   //所有沙子都可以洗涤成为原版沙子
-  event.recipes.create.splashing([Item.of('sand')], '#minecraft:sand')
+  event.recipes.create.splashing([Item.of('sand')], Ingredient.of("#minecraft:sand").subtract('minecraft:sand'))
 
   //由于移除了沉浸工程锯木机，补充锯末的获取配方
   event.recipes.create.cutting(Item.of('immersiveengineering:dust_wood'), 'createdieselgenerators:wood_chip')
