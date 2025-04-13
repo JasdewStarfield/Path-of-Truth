@@ -119,6 +119,10 @@
     "modId": "betterarcheology",
     "version": "1.2.1-1.20.1"
   },
+  "BetterBurning-Forge-1.20.1-9.0.2.jar": {
+    "modId": "betterburning",
+    "version": "9.0.2"
+  },
   "betterchunkloading-1.20.1-5.4.jar": {
     "modId": "betterchunkloading",
     "version": "1.20.1-5.4"
@@ -130,6 +134,10 @@
   "BetterPingDisplay-1.20.1-1.1.jar": {
     "modId": "betterpingdisplay",
     "version": "1.1"
+  },
+  "bettertaskbar-forge-mc1.20-1.7.0.jar": {
+    "modId": "bettertaskbar",
+    "version": "1.7.0"
   },
   "bigcontraptions-1.0.jar": {
     "modId": "bigcontraptions",
