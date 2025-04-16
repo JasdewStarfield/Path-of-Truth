@@ -369,7 +369,6 @@
 		{
 			dependencies: ["3D6CCF4A93478320"]
 			description: ["金-银合金是良好的导体材料，所以你现在可以制作更高级的电力系统了）"]
-			hide_until_deps_complete: true
 			icon: "immersiveengineering:wirecoil_electrum"
 			id: "1997BD2CF61ACBA8"
 			shape: "diamond"
@@ -897,10 +896,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"504E6502A789DABF"
-				"3D6CCF4A93478320"
-			]
+			dependencies: ["3D6CCF4A93478320"]
 			description: [
 				"鉴于这个东西只能在&2深暗之园&r的&3遗忆守卫&r身上掉落，我们把它放得很靠后）"
 				"但这也意味着，如果你不去冒险，那么你是没有办法获得这种强大的材料来推进工业的）"
@@ -1194,7 +1190,6 @@
 				"在相对的两个面放置温度不同的方块就可以根据温差发电"
 				"最方便的一集（就是产率感人）"
 			]
-			hide_until_deps_complete: true
 			id: "786D410103015183"
 			rewards: [
 				{

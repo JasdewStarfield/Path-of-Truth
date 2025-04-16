@@ -19,6 +19,10 @@
 	show_dont_send_screenshot_of_gui_notice = true
 	#List of blacklisted log files (checked with startswith()). This files won't show in GUI logs list.
 	blacklisted_logs = []
+	#Animate border to request user attention even more.
+	screenshot_of_gui_notice_animated_border = true
+	#Animate border to request user attention even more.
+	upload_all_animated_border = true
 
 #Here you can change text of lang placeHolders.
 #Also you can change any text in lang files.

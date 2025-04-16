@@ -418,9 +418,6 @@
 			description: [
 				"这将是对于你未来&b（可能存在的）电子厂生涯的第一步&r预演："
 				"看到纯粹的，还没有焊接任何元件的板子）"
-				"另外，激光蚀刻的失败率本身确实很高，所以如果发现&c连续失败了&r，请放平心态。"
-				""
-				"&o&7*反正塑料便宜。&r&r"
 			]
 			id: "32DA53E6EDA0AC90"
 			subtitle: "空板子"
@@ -871,7 +868,6 @@
 			description: [
 				"只有下界合金才能永久承受住激光的灼烧……"
 				"接下来你将在游戏里享受拥有光刻机的快感（x"
-				"不过很明显的一点是它的精度不高。"
 			]
 			id: "10F4740EEDA142EE"
 			subtitle: "高能高热"
@@ -1018,7 +1014,7 @@
 							value: "createnuclear:anti_radiation_helmet_full_dye"
 						}
 					}
-					title: "Any #createnuclear:anti_radiation_helmet_full_dye"
+					title: "任意防辐射头盔"
 					type: "item"
 				}
 				{
@@ -1030,7 +1026,7 @@
 							value: "createnuclear:anti_radiation_chestplate_full_dye"
 						}
 					}
-					title: "Any #createnuclear:anti_radiation_chestplate_full_dye"
+					title: "任意防辐射胸甲"
 					type: "item"
 				}
 				{
@@ -1042,7 +1038,7 @@
 							value: "createnuclear:anti_radiation_leggings_full_dye"
 						}
 					}
-					title: "Any #createnuclear:anti_radiation_leggings_full_dye"
+					title: "任意防辐射护腿"
 					type: "item"
 				}
 				{

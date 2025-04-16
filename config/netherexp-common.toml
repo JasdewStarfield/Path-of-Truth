@@ -67,7 +67,7 @@
 	potion_stack_size = 16
 	#The stack size for Will O' Wisps
 	#Range: 1 ~ 64
-	will_o_wisp_stack_size = 40.0
+	will_o_wisp_stack_size = 40
 	#The amount of time Black Icicle deal Freezing Damage when shot or skewered
 	black_icicle_freeze_ticks = 500
 	#Forcefully disables stack size changes on Potions & Antidotes 
@@ -145,7 +145,7 @@
 	#Soul Sand movement speed reduction will be less intrusive when enabled
 	reduce_soul_sand_slowness = false
 	#Soul Speed will no longer damage your boots when enabled
-	remove_soul_speed_durability_penalty = false
+	remove_soul_speed_durability_penalty = true
 	#Developer Mode enables various Loggers and other technical information for debugging sake 
 	#If you aren't a dev or someone with technical knowledge then keep it at "false" lol
 	dev_test_mode = false

@@ -1,0 +1,81 @@
+
+[Prices]
+	#Value from 0 to 1, influences how much price changes relative to a villager's comfort
+	#for example, if the value is 0.5, the base price is 8 emeralds, and comfort is at its max, the new price will be 4 emeralds
+	#if the value was 1.0 instead, the price for a villager at max. comfort would be 1 emerald
+	comfortInfluenceOnPrice = 0.8
+
+["Interiors dimensions"]
+	#Values relative to the size of the different rooms villagers usually spend time in,
+	#mind that the bigger this values get, the more imprecise evaluations may be (i.e if you have a wide opening to a courtyard
+	#without any blocks to separate it from the inside, the courtyard will be included in the calculations.
+	#Having more blocks to check is also heavier to evaluate performance-wise, so don't go overboard with these values
+	#Max. diameter for a bedroom (beyond which size won't matter to comfort)
+	maxBedroomDiameter = 10
+	#Max. diameter for a workplace (beyond which size won't matter to comfort)
+	maxWorkplaceDiameter = 10
+
+["Bedroom comfort values"]
+	#Various parameters relative to how comfortable is a villager's bedroom
+	#How much empty space (in blocks) should the average bedroom have
+	averageBedroomSize = 9
+	#Amount of empty blocks above which the extra space doesn't add comfort to the bedroom
+	maxBedroomSize = 48
+	#Maximum variation in comfort if the bedroom is smaller than average
+	minBedroomSizeComfort = -12
+	#Maximum variation in comfort if the bedroom is bigger than average
+	maxBedroomSizeComfort = 12
+	#Number of beds in the same room above which comfort starts changing
+	bedsThreshold = 2
+	#Variation in comfort relative to each extra bed in a bedroom
+	comfortPerBed = -10
+	#Max light level (even on a single block) the average bedroom should have
+	bedroomLightAverage = 7
+	#If the max light level in the room is below average, comfort variation per light level difference
+	comfortPerLessBedroomLight = -5
+	#If the max light level in the room is above average, comfort variation per light level difference
+	comfortPerMoreBedroomLight = 0
+	#Variation in comfort if the villager's workstation is in their bedroom
+	workstationInBedroomComfort = -20
+
+["Workplace comfort values"]
+	#Various parameters relative to how comfortable is a villager's workplace
+	#How much empty space (in blocks) should the average workplace have
+	averageWorkplaceSize = 9
+	#Amount of empty blocks above which the extra space doesn't add comfort to the workplace
+	maxWorkplaceSize = 48
+	#Maximum variation in comfort if the workplace is smaller than average
+	minWorkplaceSizeComfort = -25
+	#Maximum variation in comfort if the workplace is bigger than average
+	maxWorkplaceSizeComfort = 25
+	#Number of workstations in the same room above which a variation in comfort will occur
+	workstationsThreshold = 3
+	#Variation in comfort relative to each extra workstation in the room
+	comfortPerWorkstation = -5
+	#Max light level (even on a single block) the average workplace should have
+	workplaceLightAverage = 7
+	#If the max light level in the room is below average, comfort variation per light level difference
+	comfortPerLessWorkplaceLight = -5
+	#If the max light level in the room is above average, comfort variation per light level difference
+	comfortPerMoreWorkplaceLight = 0
+
+["Other comfort values"]
+	#The average distance (in blocks) between a villager's bed and their workplace
+	averageDistanceBedWorkplace = 12
+	#The distance (in blocks) between a villager's bed and their workplace above which no comfort variation will occur
+	maxBedWorkplaceDistance = 24
+	#The variation in comfort for each block above average between a villager's bed and their workplace
+	comfortPerMoreBedWorkplaceDistance = 1
+	#The variation in comfort for each block below average between a villager's bed and their workplace
+	comfortPerLessBedWorkplaceDistance = -1
+	#Average minutes a villager spends outside
+	averageTimeOutside = 60
+	#Comfort variation for each day a villager spends without spending their average time outside
+	comfortPerDayWithoutOutside = -5
+	#Comfort variation for each day a villager spends without getting scared by a zombie
+	comfortPerDayWithoutZombie = 5
+	#Number of days after which a villager's comfort won't vary while not getting scared by zombies
+	maxDaysWithoutZombie = 7
+	#Comfort variation for each day a villager spends without sleeping
+	comfortPerDayWithoutSleep = -5
+
