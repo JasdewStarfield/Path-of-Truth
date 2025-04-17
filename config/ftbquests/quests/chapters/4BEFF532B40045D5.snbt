@@ -715,7 +715,7 @@
 				item: "botania:cosmetic_orange_shades"
 				type: "item"
 			}]
-			subtitle: "不建议在冬日使用"
+			subtitle: "跳过极端气候"
 			tasks: [
 				{
 					id: "5AA9D18E750203DC"
@@ -1085,6 +1085,7 @@
 			]
 			description: [
 				"这是温度方面最强的一种材料——没有之一，但是变色龙需要你自己想办法寻找并喂养……毕竟死掉的变色龙不会给你合格的变色龙皮。"
+				"它们喜欢&c比较炎热&r的地方……"
 				""
 				"&o&a*神奇动物在哪里.jpg&r&r"
 			]

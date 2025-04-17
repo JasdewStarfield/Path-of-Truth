@@ -173,6 +173,19 @@ ServerEvents.recipes(event => {
             A: 'minecraft:raw_iron_block'
         }
     )
+    //稀有墨水催化
+    event.shaped(
+        Item.of('irons_spellbooks:rare_ink', 8),
+        [
+            'AAA',
+            'ABA',
+            'AAA'
+        ],
+        {
+            A: 'irons_spellbooks:lightning_bottle',
+            B: 'kubejs:water_elemental_core'
+        }
+    )
     //火元素核心合成
     event.shaped(
         Item.of('kubejs:fire_elemental_core'),
@@ -224,6 +237,21 @@ ServerEvents.recipes(event => {
         {
             A: 'irons_spellbooks:magic_cloth',
             B: 'kubejs:fire_elemental_core'
+        }
+    )
+    //水火合并产出岩浆
+    event.shaped(
+        Item.of('minecraft:magma_block', 64),
+        [
+            ' A ',
+            'BCD',
+            ' A '
+        ],
+        {
+            A: 'botania:black_lotus',
+            B: 'kubejs:water_elemental_core',
+            C: 'botania:livingrock',
+            D: 'kubejs:fire_elemental_core'
         }
     )
     //风元素核心合成
