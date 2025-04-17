@@ -4,7 +4,7 @@
 	#List of items that are not allowed to be put in backpacks - e.g. "minecraft:shulker_box"
 	disallowedItems = []
 	#Determines if container items (those that override canFitInsideContainerItems to false) are able to fit in backpacks
-	containerItemsDisallowed = false
+	containerItemsDisallowed = true
 	#List of blocks that inventory interaction upgrades can't interact with - e.g. "minecraft:shulker_box"
 	noInteractionBlocks = []
 	#List of blocks that are not allowed to connect to backpacks - e.g. "refinedstorage:external_storage"
@@ -401,7 +401,7 @@
 	[server.entityBackpackAdditions]
 		#Chance of an entity spawning with Backpack
 		#Range: 0.0 ~ 1.0
-		chance = 0.01
+		chance = 0.0
 		#Turns on/off addition of loot into backpacks
 		addLoot = false
 		#Turns on/off buffing the entity that wears backpack with potion effects. These are scaled based on how much loot is added.
@@ -427,13 +427,22 @@
 
 	[server.nerfs]
 		#Determines if too many backpacks in player's inventory cause slowness to the player
-		tooManyBackpacksSlowness = false
+		tooManyBackpacksSlowness = true
 		#Maximum number of backpacks in player's inventory that will not cause slowness
 		#Range: 1 ~ 27
-		maxNumberOfBackpacks = 3
+		maxNumberOfBackpacks = 2
 		#Ratio of slowness levels per every backpack above the maximum number allowed. (number of backpacks above the max gets multiplied by this number and ceiled)
 		#Range: 0.1 ~ 5.0
-		slownessLevelsPerAdditionalBackpack = 1.0
+		slownessLevelsPerAdditionalBackpack = 3.0
 		#Determines if active upgrades will only work in the backpack that's worn by the player. Active upgrades are for example magnet, pickup, cooking, feeding upgrades.
-		onlyWornBackpackTriggersUpgrades = false
+		onlyWornBackpackTriggersUpgrades = true
+
+	#Advanced Jukebox Upgrade Settings
+	[server.advancedJukeboxUpgrade]
+		#Number of slots for discs in jukebox upgrade
+		#Range: 1 ~ 16
+		numberOfSlots = 12
+		#Number of lots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
 

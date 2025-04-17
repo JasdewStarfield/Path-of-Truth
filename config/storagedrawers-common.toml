@@ -27,7 +27,7 @@
 	#Drawers can still only be inserted into a block with enough capacity for the items held.
 	forceDetachedDrawersMaxCapacityCheck = true
 	#If enabled, carrying filled drawers in your inventory gives slowness debuff, unless a Portability Upgrade is used.
-	heavyDrawers = true
+	heavyDrawers = false
 	#If enabled, players can lock drawer interactions to just themselves.
 	enablePersonalKey = true
 

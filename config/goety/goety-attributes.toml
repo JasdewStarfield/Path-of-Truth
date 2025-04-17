@@ -876,9 +876,9 @@
 			#How much natural Armor Crushers have, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			crusherArmor = 0.0
-			#How much damage Crushers deals, Default: 10.0
+			#How much damage Crushers deals, Default: 12.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			crusherDamage = 10.0
+			crusherDamage = 12.0
 
 		[Attributes.Illagers.Cryologer]
 			#How much damage Cryologers deals, Default: 5.0

@@ -1,0 +1,25 @@
+#The minimum accuracy that grants an item of quality 1.
+#Range: 0.0 ~ 1.0
+quality1Threshold = 0.75
+#The minimum accuracy that grants an item of quality 2.
+#Range: 0.0 ~ 1.0
+quality2Threshold = 0.9
+#The minimum accuracy that grants an item of quality 3.
+#Range: 0.0 ~ 1.0
+quality3Threshold = 1.0
+#The multiplier that is applied to experience gained from fishing a quality 1 reward.
+#Range: 1.0 ~ 10.0
+quality1Multiplier = 1.5
+#The multiplier that is applied to experience gained from fishing a quality 2 reward.
+#Range: 1.0 ~ 10.0
+quality2Multiplier = 2.5
+#The multiplier that is applied to experience gained from fishing a quality 3 reward.
+#Range: 1.0 ~ 10.0
+quality3Multiplier = 4.0
+#The multiplier that is applied to experience gained from fishing with a quality bobber equipped.
+#Range: 1.0 ~ 10.0
+qualityBobberMultiplier = 1.4
+#The multiplier that is applied to the time it takes for a fish to bite after casting your rod.
+#Range: 0.0 ~ 1.0
+biteTimeMultiplier = 0.1
+

@@ -219,13 +219,13 @@
     "modId": "clumps",
     "version": "12.0.0.4"
   },
-  "ColdSweat-2.4-b02b.jar": {
+  "ColdSweat-2.4-b02c.jar": {
     "modId": "cold_sweat",
-    "version": "2.4-b02b"
+    "version": "2.4-b02c"
   },
-  "collective-1.20.1-8.1.jar": {
+  "collective-1.20.1-8.3.jar": {
     "modId": "collective",
-    "version": "8.1"
+    "version": "8.3"
   },
   "collectorsreap-1.20.1-1.3.4.jar": {
     "modId": "collectorsreap",
@@ -275,9 +275,9 @@
     "modId": "craftingtweaks",
     "version": "18.2.5"
   },
-  "crash_assistant-forge-1.19.2-1.20.1-1.7.4.jar": {
+  "crash_assistant-forge-1.19.2-1.20.1-1.7.5.jar": {
     "modId": "crash_assistant",
-    "version": "1.7.4"
+    "version": "1.7.5"
   },
   "cratedelight-24.11.29-1.20-forge.jar": {
     "modId": "cratedelight",
@@ -451,9 +451,9 @@
     "modId": "eccentrictome",
     "version": "1.20.1-1.10.3"
   },
-  "EclipticSeasons-1.20.1-forge-0.10.5.1.5-all.jar": {
+  "EclipticSeasons-1.20.1-forge-0.10.5.2.2-all.jar": {
     "modId": "eclipticseasons",
-    "version": "0.10.5.1.5"
+    "version": "0.10.5.2.2"
   },
   "ElysiumApi-1.20.1-1.1.0.jar": {
     "modId": "elysium_api",
@@ -491,11 +491,11 @@
     "modId": "entityjs",
     "version": "0.4.8-1.20.1"
   },
-  "everycomp-1.20-2.7.18.jar": {
+  "everycomp-1.20-2.7.19.jar": {
     "modId": "everycomp",
-    "version": "1.20-2.7.18"
+    "version": "1.20-2.7.19"
   },
-  "ExplorersCompass-1.20.1-1.3.3-forge.jar": {
+  "explorerscompass-edited-1.20.1-1.3.7-forge.jar": {
     "modId": "explorerscompass",
     "version": "1.20.1-1.3.3-forge"
   },
@@ -551,9 +551,9 @@
     "modId": "fishnostuck",
     "version": "1.0.3"
   },
-  "flerovium-forge-1.20.1-1.2.7-all.jar": {
+  "flerovium-forge-1.20.1-1.2.9-all.jar": {
     "modId": "flerovium",
-    "version": "1.2.7"
+    "version": "1.2.9"
   },
   "flickerfix-1.20.1-4.0.1.jar": {
     "modId": "flickerfix",
@@ -579,9 +579,9 @@
     "modId": "ftblibrary",
     "version": "2001.2.9"
   },
-  "ftb-quests-forge-2001.4.12.jar": {
+  "ftb-quests-forge-2001.4.13.jar": {
     "modId": "ftbquests",
-    "version": "2001.4.12"
+    "version": "2001.4.13"
   },
   "ftb-teams-forge-2001.3.1.jar": {
     "modId": "ftbteams",
@@ -615,9 +615,9 @@
     "modId": "geophilic_reforged",
     "version": "1.2.0"
   },
-  "goety-2.5.31.5.jar": {
+  "goety-2.5.32.0.jar": {
     "modId": "goety",
-    "version": "2.5.31.5"
+    "version": "2.5.32.0"
   },
   "GPUTape-1.18x-1.21x-1.0.5.1.jar": {
     "modId": "gpu_tape",
@@ -766,6 +766,10 @@
   "kleeslabs-forge-1.20.1-15.0.6.jar": {
     "modId": "kleeslabs",
     "version": "15.0.6"
+  },
+  "Kleiders Custom Renderer API 7.2.0 1.20.1.jar": {
+    "modId": "kleiders_custom_renderer",
+    "version": "7.2.0"
   },
   "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar": {
     "modId": "konkrete",
@@ -1020,9 +1024,9 @@
     "modId": "probejs",
     "version": "7.0.1"
   },
-  "protection_pixel-1.1.6-forge-1.20.1.jar": {
+  "protection_pixel-1.9.1-forge-1.20.1.jar": {
     "modId": "protection_pixel",
-    "version": "1.1.6"
+    "version": "1.9.1"
   },
   "PuzzlesLib-v8.1.32-1.20.1-Forge.jar": {
     "modId": "puzzleslib",
@@ -1168,13 +1172,13 @@
     "modId": "sodiumoptionsapi",
     "version": "1.0.8"
   },
-  "sophisticatedbackpacks-1.20.1-3.23.11.1222.jar": {
+  "sophisticatedbackpacks-1.20.1-3.23.13.1229.jar": {
     "modId": "sophisticatedbackpacks",
-    "version": "3.23.11.1222"
+    "version": "3.23.13.1229"
   },
-  "sophisticatedcore-1.20.1-1.2.43.949.jar": {
+  "sophisticatedcore-1.20.1-1.2.45.953.jar": {
     "modId": "sophisticatedcore",
-    "version": "1.2.43.949"
+    "version": "1.2.45.953"
   },
   "sound-physics-remastered-forge-1.20.1-1.4.13.jar": {
     "modId": "sound_physics_remastered",

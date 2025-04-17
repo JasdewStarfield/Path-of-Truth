@@ -133,6 +133,8 @@
 	lichArcaRemove = true
 	#Enable to get infinite Night Vision when being a Lich, Default: true
 	lichNightVision = true
+	#Whether players lose their lichdom if they don't have enough Soul Energy to revive, Default: true
+	lichNoSERemove = true
 
 [General]
 	#Arca will save the Player if past Totem Maximum Soul Count, Default: true

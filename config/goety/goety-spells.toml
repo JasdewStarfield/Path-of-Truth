@@ -1470,6 +1470,57 @@
 		#Range: 0 ~ 72000
 		biomineTime = 40
 
+	[Spells."Bombardment Spell"]
+		#Bombardment Spell Cost, Default: 8
+		#Range: > 0
+		bombardmentCost = 8
+		#How many ticks the Bombardment Spell much charge before casting, Default: 60
+		#Range: > 0
+		bombardmentChargeUp = 60
+		#How many shots are allowed to be fired before spell ends, set 0 to allow spell to be cast indefinitely, Default: 6
+		#Range: 0 ~ 72000
+		bombardmentShots = 6
+		#Time to cast Bombardment Spell per second, Default: 6
+		#Range: 0 ~ 72000
+		bombardmentTime = 6
+		#Bombardment Spell Cooldown, Default: 100
+		#Range: 0 ~ 72000
+		bombardmentCoolDown = 100
+
+	[Spells."Meteor Shower Spell"]
+		#Meteor Shower Spell Cost, Default: 64
+		#Range: > 0
+		meteorShowerCost = 64
+		#How many ticks the Meteor Shower Spell much charge before casting, Default: 60
+		#Range: > 0
+		meteorShowerChargeUp = 60
+		#How many shots are allowed to be fired before spell ends, set 0 to allow spell to be cast indefinitely, Default: 20
+		#Range: 0 ~ 72000
+		meteorShowerShots = 20
+		#Time to cast Meteor Shower Spell per second, Default: 10
+		#Range: 0 ~ 72000
+		meteorShowerTime = 10
+		#Meteor Shower Spell Cooldown, Default: 400
+		#Range: 0 ~ 72000
+		meteorShowerCoolDown = 400
+
+	[Spells."Guardian Spell"]
+		#Guardian Spell Cost, Default: 16
+		#Range: > 0
+		guardianCost = 16
+		#Time to cast Guardian Spell, Default: 20
+		#Range: 0 ~ 72000
+		guardianTime = 20
+		#Guardian Spell Cooldown, Default: 600
+		#Range: > 0
+		guardianCoolDown = 600
+		#Guardian Spell Summon Down, Default: 150
+		#Range: 0 ~ 72000
+		guardianSummonDown = 150
+		#Number of Guardian Servants that can exist around the player, Default: 8
+		#Range: > 1
+		guardianLimit = 8
+
 [Enchantments]
 	#Soul Eater Maximum Enchantment Level, Default: 5
 	#Range: 1 ~ 10

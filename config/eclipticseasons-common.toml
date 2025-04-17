@@ -13,7 +13,7 @@
 	#Whether to pop up the solar term reminder when the calendar item cannot be placed.
 	CalendarItemHint = false
 	#In summer, the days are long and the nights are short, while in winter, the days are short and the nights are long.
-	DynamicDaylightDuration = false
+	DynamicDaylightDuration = true
 	#Which dimensions will have season effects? Note that it must be natrual and have time lapse.
 	ValidDimensions = ["minecraft:overworld"]
 	#If snow falls during cold weather, it will gradually cover all solid blocks and grass.
@@ -23,6 +23,8 @@
 	#Snow will not appear in overly bright areas.
 	#Range: 1 ~ 15
 	NotSnowyNearGlowingBlockLevel = 10
+	#Set it true to initialize weather and snow when loading the mod or level for the first time.
+	ShouldInitWeather = true
 
 [Weather]
 	#Enable solar term weather system with biome.

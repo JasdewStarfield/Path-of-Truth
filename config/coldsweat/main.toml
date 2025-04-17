@@ -4,7 +4,7 @@
 	#Range: 0 ~ 4
 	Difficulty = 4
 	#The current version of Cold Sweat. This is used by the auto-updater
-	Version = "2.4-b02b"
+	Version = "2.4-b02c"
 	#Allows Cold Sweat's configs to be automatically updated with new additions & formatting changes
 	"Auto Update" = true
 
@@ -57,6 +57,15 @@
 		#Represented as a percentage in decimal form
 		#Range: 0.0 ~ 1.0
 		"Freezing Mining Impairment" = 0.5
+
+	["Temperature Effects".Acclimation]
+		#The speed at which the player acclimates to hot or cold environments
+		#Range: 0.0 ~ Infinity
+		"Acclimation Speed" = 0.0011
+		#The offset to the player's minimum habitable temperature when they acclimate to cold (first value) or hot (second value) environments
+		"Min Acclimation Range" = [-0.46, 0.23]
+		#The offset to the player's maximum habitable temperature when they acclimate to cold (first value) or hot (second value) environments
+		"Max Acclimation Range" = [-0.23, 0.46]
 
 ["Grace Period"]
 	#The amount of time (in ticks) after the player spawns during which they are immune to temperature effects

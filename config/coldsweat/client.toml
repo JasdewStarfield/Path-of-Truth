@@ -40,6 +40,18 @@
 	"Distortion Effects" = true
 	#Enables high contrast mode for UI elements
 	"High Contrast" = false
+	#The intensity of the shivering effect when the player is too cold
+	#Range: 0.0 ~ 2.0
+	"Shiver Intensity" = 1.0
+	#The amount of blur applied to the screen when the player is too hot
+	#Range: 0.0 ~ 1.0
+	"Heatstroke Blur Strength" = 1.0
+	#The amount of camera sway applied when the player is too hot
+	#Range: 0.0 ~ 2.0
+	"Heatstroke Sway Amount" = 1.0
+	#The speed of the camera sway applied when the player is too hot
+	#Range: 0.0 ~ 2.0
+	"Heatstroke Sway Speed" = 1.0
 
 [Misc]
 	#Show the config menu button in the Options menu

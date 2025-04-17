@@ -1,0 +1,39 @@
+
+[server]
+	#If true, enables camera recoil when firing a weapon
+	enableCameraRecoil = true
+	#The maximum amount of cooldown time remaining before the server will accept another shoot packet from a client. This allows for a litle slack since the server may be lagging
+	#Range: 75 ~ 1000
+	cooldownThreshold = 75
+
+	#Stun Grenade related properties
+	[server.grenade]
+		#After the duration drops to this many ticks, the transparency of the overlay when blinded will gradually fade to 0 alpha.
+		#Range: 0 ~ 255
+		alphaOverlay = 255
+		#Transparency of the overlay when blinded will be this alpha value, before eventually fading to 0 alpha.
+		#Range: > 0
+		alphaFadeThreshold = 40
+		#Volume of most game sounds when deafened will play at this percent, before eventually fading back to %100.
+		#Range: 0.0 ~ 1.0
+		soundPercentage = 0.05
+		#After the duration drops to this many ticks, the ringing volume will gradually fade to 0 and other sound volumes will fade back to %100.
+		#Range: > 0
+		soundFadeThreshold = 90
+		#Volume of the ringing sound when deafened will play at this volume, before eventually fading to 0.
+		#Range: 0.0 ~ 1.0
+		ringVolume = 1.0
+
+	#Audio properties
+	[server.audio]
+		#The maximum distance weapons can be heard by players.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		gunShotMaxDistance = 100.0
+		#The maximum distance reloading can be heard by players.
+		#Range: 0.0 ~ 1.7976931348623157E308
+		reloadMaxDistance = 24.0
+
+	[server.experimental]
+		#Forces all attachments to be dyeable regardless if they have an affect on the model. This is useful if your server uses custom models for attachments and the models have dyeable elements
+		forceDyeableAttachments = false
+

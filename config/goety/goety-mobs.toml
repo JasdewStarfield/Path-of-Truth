@@ -15,50 +15,16 @@
 	villagerHateSpells = 0
 
 [Misc]
-	#How many ticks it takes for Wights to spawn, Default: 24000
-	#Range: > 0
-	wightSpawnFreq = 24000
-	#Spawn Chance for Wights spawning near the Player every Spawn Frequency, the lower the more likelier, Default: 10
-	#Range: > 0
-	wightSpawnChance = 10
-	#Whether Goety Mobs can spawn in Overworld-like modded dimensions, Default: false
-	interDimensionalMobs = false
 	#Whether Wraiths should teleport towards their targets if they can't see them instead of just teleporting away when they're near them, Default: true
 	wraithAggressiveTeleport = true
 	#Whether Hellfire damage is mitigated by Fire Protection enchantment, Default: true
 	hellfireFireProtection = true
-	#Spawn Weight for Necromancer, Default: 1
-	#Range: > 0
-	necromancerSpawnWeight = 1
 	#Whether undead mobs in the Crypts remain hostile even if players wear Necro Set, Default: true
 	hostileCryptUndead = true
-	#Spawn Weight for Wraith, Default: 20
-	#Range: > 0
-	wraithSpawnWeight = 20
-	#Spawn Weight for Reaper, Default: 10
-	#Range: > 0
-	reaperSpawnWeight = 10
-	#Spawn Weight for Warlock, Default: 5
-	#Range: > 0
-	warlockSpawnWeight = 5
-	#Whether Wights can spawn near players that have a high amount of Soul Energy, Default: true
-	wightSpawn = true
 	#Whether Mobs with Tall Heads(ie. Villagers, Illagers, etc.) will drop Tall Skulls, Default: true
 	tallSkullDrop = true
-	#Spawn Weight for Heretic, Default: 5
-	#Range: > 0
-	hereticSpawnWeight = 5
 	#Whether Hellfire damage is halved on entities that are fire-immune, Default: true
 	hellfireFireImmune = true
-	#Spawn Weight for Maverick, Default: 5
-	#Range: > 0
-	maverickSpawnWeight = 5
-	#Spawn Weight for Web Spiders, Default: 40
-	#Range: > 0
-	webSpiderSpawnWeight = 40
-	#Spawn Weight for Icy Spiders, Default: 40
-	#Range: > 0
-	icySpiderSpawnWeight = 40
 
 	[Misc.Vizier]
 		#Whether Viziers are persistent and do not naturally despawn. Default: false
@@ -170,7 +136,7 @@
 	[Servants."Undead Servants"]
 		#Whether Undead Servants burn in Sunlight if not wearing helmet, Default: true
 		undeadServantSunlightBurn = true
-		#Whether owned Necromancers drop Soul Jars, Default: true
+		#Whether owned Necromancers fills Empty Soul Jars, Default: true
 		necromancerSoulJar = true
 		#How frequent Undead Servants heal, count seconds, Default: 1
 		#Range: > 0
@@ -473,4 +439,119 @@
 		[Textures."Summoned Mobs"."Redstone Monstrosity"]
 			#If Redstone Monstrosities have custom textures, Default: true
 			redstoneMonstrosityTexture = true
+
+		[Textures."Summoned Mobs"."Guardian Servants"]
+			#If Guardian Servants have custom textures, Default: true
+			guardianServantTexture = true
+
+[Spawning]
+
+	[Spawning.Wight]
+		#Whether Wights can spawn near players that have a high amount of Soul Energy, Default: true
+		wightSpawn = true
+		#How many ticks it takes for Wights to spawn, Default: 24000
+		#Range: > 0
+		wightSpawnFreq = 24000
+		#Spawn Chance for Wights spawning near the Player every Spawn Frequency, the lower the more likelier, Default: 10
+		#Range: > 0
+		wightSpawnChance = 10
+
+	[Spawning.Warlock]
+		#Spawn Weight for Warlock, Default: 5
+		#Range: > 0
+		warlockSpawnWeight = 5
+		#Spawn minimum group count for Warlock, Default: 1
+		#Range: > 1
+		warlockSpawnMinCount = 1
+		#Spawn maximum group count for Warlock, must be equal or higher than min count, Default: 1
+		#Range: > 1
+		warlockSpawnMaxCount = 1
+
+	[Spawning.Reaper]
+		#Spawn Weight for Reaper, Default: 10
+		#Range: > 0
+		reaperSpawnWeight = 10
+		#Spawn minimum group count for Reaper, Default: 1
+		#Range: > 1
+		reaperSpawnMinCount = 1
+		#Spawn maximum group count for Reaper, must be equal or higher than min count, Default: 1
+		#Range: > 1
+		reaperSpawnMaxCount = 1
+
+	[Spawning.Wraith]
+		#Spawn Weight for Wraith, Default: 20
+		#Range: > 0
+		wraithSpawnWeight = 20
+		#Spawn minimum group count for Wraith, Default: 1
+		#Range: > 1
+		wraithSpawnMinCount = 1
+		#Spawn maximum group count for Wraith, must be equal or higher than min count, Default: 1
+		#Range: > 1
+		wraithSpawnMaxCount = 1
+
+	[Spawning."Muck Wraith"]
+		#Spawn Weight for Muck Wraith, Default: 20
+		#Range: > 0
+		muckWraithSpawnWeight = 20
+		#Spawn minimum group count for Muck Wraith, Default: 1
+		#Range: > 1
+		muckWraithSpawnMinCount = 1
+		#Spawn maximum group count for Muck Wraith, must be equal or higher than min count, Default: 1
+		#Range: > 1
+		muckWraithSpawnMaxCount = 1
+
+	[Spawning."Web Spider"]
+		#Spawn Weight for Web Spiders, Default: 40
+		#Range: > 0
+		webSpiderSpawnWeight = 40
+		#Spawn minimum group count for Web Spiders, Default: 4
+		#Range: > 1
+		webSpiderSpawnMinCount = 4
+		#Spawn maximum group count for Web Spiders, must be equal or higher than min count, Default: 4
+		#Range: > 1
+		webSpiderSpawnMaxCount = 4
+
+	[Spawning."Icy Spider"]
+		#Spawn Weight for Icy Spiders, Default: 40
+		#Range: > 0
+		icySpiderSpawnWeight = 40
+		#Spawn minimum group count for Icy Spiders, Default: 4
+		#Range: > 1
+		icySpiderSpawnMinCount = 4
+		#Spawn maximum group count for Icy Spiders, must be equal or higher than min count, Default: 4
+		#Range: > 1
+		icySpiderSpawnMaxCount = 4
+
+	[Spawning.Necromancer]
+		#Spawn Weight for Necromancer, Default: 1
+		#Range: > 0
+		necromancerSpawnWeight = 1
+		#Spawn minimum group count for Necromancer, Default: 1
+		#Range: > 1
+		necromancerSpawnMinCount = 1
+		#Spawn maximum group count for Necromancer, must be equal or higher than min count, Default: 1
+		#Range: > 1
+		necromancerSpawnMaxCount = 1
+
+	[Spawning.Heretic]
+		#Spawn Weight for Heretic, Default: 5
+		#Range: > 0
+		hereticSpawnWeight = 5
+		#Spawn minimum group count for Heretic, Default: 1
+		#Range: > 1
+		hereticSpawnMinCount = 1
+		#Spawn maximum group count for Heretic, must be equal or higher than min count, Default: 1
+		#Range: > 1
+		hereticSpawnMaxCount = 1
+
+	[Spawning.Maverick]
+		#Spawn Weight for Maverick, Default: 5
+		#Range: > 0
+		maverickSpawnWeight = 5
+		#Spawn minimum group count for Maverick, Default: 1
+		#Range: > 1
+		maverickSpawnMinCount = 1
+		#Spawn maximum group count for Maverick, must be equal or higher than min count, Default: 1
+		#Range: > 1
+		maverickSpawnMaxCount = 1
 
