@@ -380,6 +380,12 @@ ServerEvents.tags("item", (event) => {
 
     //造成辐射的物品
     Radioactive.forEach((id) => event.add("kubejs:radioactive", id))
+
+    //修复非蛋白质物品可以用来制作卷心菜卷
+    event.remove("farmersdelight:cabbage_roll_ingredients","#forge:mushrooms")
+    event.remove("farmersdelight:cabbage_roll_ingredients","minecraft:carrot")
+    event.remove("farmersdelight:cabbage_roll_ingredients","minecraft:potato")
+    event.remove("farmersdelight:cabbage_roll_ingredients","minecraft:beetroot")
 })
 
 ServerEvents.tags("block", (event) => {
