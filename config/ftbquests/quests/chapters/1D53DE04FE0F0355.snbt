@@ -4,7 +4,6 @@
 	default_quest_shape: ""
 	filename: "1D53DE04FE0F0355"
 	group: ""
-	hide_quest_details_until_startable: true
 	icon: "goety:skull_focus"
 	id: "1D53DE04FE0F0355"
 	images: [
@@ -126,6 +125,7 @@
 				""
 				"&l&b感谢大家的下载、游玩与支持。&r&r"
 			]
+			hide_until_deps_visible: false
 			icon: "minecraft:writable_book"
 			id: "6A1B42D208C780BD"
 			rewards: [{
@@ -375,7 +375,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["4543C26614BBBE4C"]
 			description: [
 				"联机开服推荐 - 星遥游戏"
 				"我们致力于提供良好的联机服务，"

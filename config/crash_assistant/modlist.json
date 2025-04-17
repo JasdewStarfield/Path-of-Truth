@@ -235,6 +235,10 @@
     "modId": "comforts",
     "version": "6.4.0+1.20.1"
   },
+  "compressed_create_recipes-1.2.3.jar": {
+    "modId": "compressed_create_recipes",
+    "version": "1.2.3"
+  },
   "configured-forge-1.20.1-2.2.3.jar": {
     "modId": "configured",
     "version": "2.2.3"
