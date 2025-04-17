@@ -155,6 +155,32 @@ const Radioactive = [
     '#vintageimprovements:springs/uranium',
 ]
 
+const NonMovable = [
+    //所有多方块
+    'immersiveengineering:crusher',
+    'immersiveengineering:arc_furnace',
+    'immersiveengineering:assembler',
+    'immersiveengineering:auto_workbench',
+    'immersiveengineering:fermenter',
+    'immersiveengineering:squeezer',
+    'immersiveengineering:refinery',
+    'immersiveengineering:mixer',
+    'immersiveengineering:tank',
+    'immersiveengineering:silo',
+    'immersiveengineering:metal_press',
+    'immersiveengineering:diesel_generator',
+    'immersiveengineering:coke_oven',
+    'immersiveengineering:blast_furnace',
+    'immersiveengineering:advanced_blast_furnace',
+    'immersiveengineering:bottling_machine',
+    'immersiveengineering:bucket_wheel',
+    'immersiveengineering:excavator',
+    'immersiveengineering:lightning_rod',
+    //喷口
+    'scguns:geothermal_vent',
+    'scguns:sulfur_vent'
+]
+
 
 ServerEvents.tags("item", (event) => {
     //工程块
@@ -406,4 +432,7 @@ ServerEvents.tags("block", (event) => {
     event.add(`minecraft:logs`, 'outer_end:stripped_pith')
     event.add(`minecraft:logs`, 'netherexp:stripped_claret_stem')
     event.add(`minecraft:logs`, 'netherexp:stripped_claret_hyphae')
+
+    //无法被动态结构移动的方块
+    NonMovable.forEach((id) => event.add("create:non_movable", id))
 })

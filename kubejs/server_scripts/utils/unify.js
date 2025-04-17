@@ -147,6 +147,15 @@ ServerEvents.recipes(event => {
     B: 'wheat'
   })
 
+  //钟(?)
+  event.shaped('bell', [ 
+    'B', 
+    'A' 
+  ], {
+    A: '#forge:plates/bronze',
+    B: '#forge:storage_blocks/bronze'
+  })
+
   //工作台的通用性适配
   event.replaceInput(
     {input:'minecraft:crafting_table'},

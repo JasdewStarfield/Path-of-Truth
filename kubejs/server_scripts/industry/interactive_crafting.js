@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
       ["create:elevator_pulley", "#forge:rope"],
       ["create:content_observer", "observer"],
       ["iammusicplayer:music_manager", "jukebox"],
-      ["create:redstone_link", "redstone_torch"],
+      //["create:redstone_link", "redstone_torch"],
       //["create:mechanical_crafter", "#forge:workbench"],
       ["create:stockpile_switch", "comparator"],
       ["create:rotation_speed_controller", "create_connected:control_chip"],
@@ -152,6 +152,20 @@ ServerEvents.recipes(event => {
     )
 
     //一些其它的姑且也放这罢
+    //无线红石
+    event.remove({id: "create:crafting/logistics/redstone_link"})
+    event.shaped(
+      Item.of('create:redstone_link', 8),
+      [
+      'AAA',
+      'ACA',
+      'AAA'
+      ],
+      {
+          A: 'iammusicplayer:radio_antenna',
+          C: 'kubejs:precise_engineering'
+      }
+    )
     //传动杆
     event.remove({id: "create:crafting/kinetics/shaft"})
     event.shaped(

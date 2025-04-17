@@ -13,8 +13,12 @@ LootJS.modifiers((event) => {
     event.addLootTableModifier(/.*/).removeLoot("botania:overgrowth_seed")
     event.addBlockLootModifier("#minecraft:replaceable_by_trees").removeLoot("minecraft:wheat_seeds")
     event.addBlockLootModifier("#minecraft:replaceable_by_trees").removeLoot("immersiveengineering:seed")
-    event.addBlockLootModifier("#minecraft:snow").removeLoot("minecraft:wheat_seeds")
-    event.addBlockLootModifier("#minecraft:snow").removeLoot("immersiveengineering:seed")
+    event.addBlockLootModifier("#minecraft:replaceable").removeLoot("minecraft:wheat_seeds")
+    event.addBlockLootModifier("#minecraft:replaceable").removeLoot("immersiveengineering:seed")
+    event.addBlockLootModifier("#minecraft:replaceable_by_trees").removeLoot("minecraft:wheat_seeds")
+    event.addBlockLootModifier("#minecraft:replaceable_by_trees").removeLoot("immersiveengineering:seed")
+    event.addBlockLootModifier("scguns:geothermal_vent").removeLoot("scguns:geothermal_vent")
+    event.addBlockLootModifier("scguns:sulfur_vent").removeLoot("scguns:sulfur_vent")
 
     //在蔚蓝浩空的地牢箱子中有小概率生成冒险唱片碎片
     event
