@@ -98,6 +98,9 @@ ServerEvents.recipes(event => {
     B: '#forge:storage_blocks/bronze'
   })
 
+  //工业肥料搅拌配方
+  event.recipes.create.mixing('3x immersiveengineering:fertilizer', ['#forge:dusts/sulfur', '#forge:dusts/saltpeter', '#forge:slag', Fluid.of('minecraft:water', 1000)])
+
   //工作台的通用性适配
   event.replaceInput(
     {input:'minecraft:crafting_table'},
