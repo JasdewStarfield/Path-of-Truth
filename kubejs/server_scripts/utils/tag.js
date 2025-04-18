@@ -155,6 +155,15 @@ const Radioactive = [
     '#vintageimprovements:springs/uranium',
 ]
 
+const Backpacks = [
+    'sophisticatedbackpacks:backpack',
+    'sophisticatedbackpacks:copper_backpack',
+    'sophisticatedbackpacks:iron_backpack',
+    'sophisticatedbackpacks:gold_backpack',
+    'sophisticatedbackpacks:diamond_backpack',
+    'sophisticatedbackpacks:netherite_backpack'
+]
+
 const NonMovable = [
     //所有多方块
     'immersiveengineering:crusher',
@@ -377,6 +386,9 @@ ServerEvents.tags("item", (event) => {
 
     //无法获取的物品
     UnobtainableItems.forEach((id) => event.add("kubejs:unobtainable", id))
+
+    //背包
+    Backpacks.forEach((id) => event.add("kubejs:backpacks", id))
 
     //造成辐射的物品
     Radioactive.forEach((id) => event.add("kubejs:radioactive", id))

@@ -47,12 +47,12 @@
 [Crop]
 	#Enable crop season control.
 	EnableSeasonalCrop = true
-	#How much chance can crop grow in wrong season.
+	#[Deprecated]How much chance can crop grow in wrong season.
 	#Range: 0.0 ~ 1.0
 	CropGrowChanceInWrongSeason = 0.25
 	#Enable crop humidity control.
 	EnableCropHumidityControl = true
-	#How much base chance can crop grow in wrong humidity.
+	#[Deprecated]How much base chance can crop grow in wrong humidity.
 	#Range: 1.0E-4 ~ 0.9999
 	CropGrowChanceInWrongHumidity = 0.25
 	#The maximum effective diameter of the greenhouse.
@@ -60,7 +60,7 @@
 	GreenHouseMaxDiameter = 32
 	#Whether to enable complex shape checking.
 	ComplexGreenHouseCheck = true
-	#If a crop is not registered for a season or humid type, default values will be used.
+	#[Deprecated]If a crop is not registered for a season or humid type, default values will be used.
 	RegisterCropDefaultValue = false
 	#The possibility of crops not growing when there is insufficient sunlight in green house.
 	#Range: 0 ~ 10000
@@ -68,6 +68,8 @@
 	#The maximum effective diameter of the greenhouse.
 	#Range: 3 ~ 128
 	GreenHouseMaxHeight = 10
+	#Force all crops to use compatibility mode for growth control, not just those tagged as eclipticseasons:natural_plants.
+	ForceCompatMode = false
 
 [Compat]
 	#Compatible with mods using SereneSeasons' CropTag.

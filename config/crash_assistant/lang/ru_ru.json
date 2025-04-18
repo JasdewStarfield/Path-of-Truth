@@ -87,6 +87,7 @@
   "warnings.jemalloc": "$DEFAULT",
   "msg.mb": "$DEFAULT",
   "gui.comment_under_title_cant_resolve": "$DEFAULT",
+  "gui.modlist_loading": "$DEFAULT",
   "gui.title_crashed_without_report": "$DEFAULT",
   "gui.upload_all_button_delayed": "$DEFAULT",
   "gui.error": "$DEFAULT",

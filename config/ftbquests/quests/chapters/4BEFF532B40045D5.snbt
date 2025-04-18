@@ -2,6 +2,7 @@
 	autofocus_id: "63475C4CE3D204B4"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
+	disable_toast: true
 	filename: "4BEFF532B40045D5"
 	group: ""
 	icon: "botania:infused_grass"
@@ -118,8 +119,7 @@
 				"这些知识的跨度可能会很大，有些直到游戏的后期也很有用，这也是我们为什么要把这部分单独列出来。所以遇到不懂的可以先跳过，以后再看就好。"
 				"……但是总之，记得看。&e因此，本章节的内容是&o&l完全解锁&r&r&e的，不需要完成前置内容也可以查看！&r"
 				""
-				"&b*默认设置会导致键位冲突，这种时候我们的建议是直接点击重置按键，我们有预设好的无冲突键位，您也可以自行调整。"
-				"&r&a*整合包自带了中键整理，可以通过中键相对简单的整理储存容器，不过不要中键饰品栏，否则后果自负。&r"
+				"&b*默认设置按理来说不会导致键位冲突，如果发生了，这种时候我们的建议是直接点击重置按键，我们有预设好的无冲突键位，您也可以自行调整。"
 			]
 			hide_details_until_startable: false
 			hide_until_deps_complete: true
@@ -752,14 +752,11 @@
 				"以及，由于堆叠升级是抽屉的功能，我们禁止了背包使用的堆叠升级！"
 				"但背包拿来存杂项还是很强大的）"
 				"{@pagebreak}"
-				"如果你希望随身携带更多的东西，那么各个级别的收纳袋将是最合适的处理方案。"
-				"收纳袋的升级只需要不同科技或魔法层级的单个产物，并且升级的时候也会保留内容物！"
-				"但相应的，合成简单的袋子并不能放置，轻松地拿取指定物品或者与世界交互——那真的只是更大的收纳袋。"
-				""
-				"&o&m&7很适合当午餐袋&r&r&r"
+				"同时拿太多的背包或者抽屉会负重！"
+				"你最多可以拿两个背包或者有物品的抽屉，否则就会获得负面效果……"
 			]
 			id: "3A2CCC29ACE28498"
-			subtitle: "强力存储的三条路径"
+			subtitle: "强力存储的两条路径"
 			tasks: [
 				{
 					id: "0C0155F6F3E27FF3"
@@ -774,20 +771,15 @@
 					type: "item"
 				}
 				{
-					id: "53E0687F0A0B1A50"
+					id: "5EEF83FA458423DB"
 					item: {
 						Count: 1
 						id: "itemfilters:tag"
 						tag: {
-							value: "curios:back"
+							value: "kubejs:backpacks"
 						}
 					}
-					title: "背包"
-					type: "item"
-				}
-				{
-					id: "1EFE5B79F0BC58B7"
-					item: "metalbundles:leather_bundle"
+					title: "Any #kubejs:backpacks"
 					type: "item"
 				}
 			]

@@ -1,4 +1,62 @@
 ServerEvents.recipes(event => {
+    //背包
+    //基础材料替换
+    event.replaceInput(
+        {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'#forge:ingots/iron'},
+        '#forge:ingots/iron',
+        '#forge:plates/andesite'
+    )
+    event.replaceInput(
+        {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'#forge:ingots/gold'},
+        '#forge:ingots/gold',
+        'create:brass_ingot'
+    )
+    event.replaceInput(
+        {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'#forge:gems/diamond'},
+        '#forge:gems/diamond',
+        '#forge:gems/dragonstone'
+    )
+    event.replaceInput(
+        {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'#forge:dusts/redstone'},
+        '#forge:dusts/redstone',
+        'irons_spellbooks:arcane_essence'
+    )
+    event.replaceInput(
+        {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'experience_bottle'},
+        'experience_bottle',
+        'create:experience_nugget'
+    )
+    event.replaceInput(
+        {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'#forge:glass'},
+        '#forge:glass',
+        'create:fluid_tank'
+    )
+    event.replaceInput(
+        {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'dispenser'},
+        'dispenser',
+        'kubejs:logistical_engineering'
+    )
+    event.replaceInput(
+        {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'piston', not:{output:"sophisticatedbackpacks:compacting_upgrade"}},
+        'piston',
+        'create:andesite_tunnel'
+    )
+    event.replaceInput(
+        {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'sticky_piston'},
+        'sticky_piston',
+        'create:andesite_funnel'
+    )
+    event.replaceInput(
+        {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'#forge:chests'},
+        '#forge:chests',
+        'kubejs:logistical_engineering'
+    )
+    event.replaceInput(
+        {id:/sophisticatedbackpacks\:.*filter_upgrade.*/, input:'#forge:strings'},
+        '#forge:strings',
+        'create:filter'
+    )
+
 
     //修改初始背包配方
     event.remove({id:'sophisticatedbackpacks:backpack'})
