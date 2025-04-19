@@ -186,6 +186,12 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'goety',output:'goety:cursed_infuser'},
         'minecraft:lapis_lazuli' , 'goety:cursed_ingot')
 
+    //恐怖之剑配方替换
+    event.replaceInput({mod:'aquamirae',output:'aquamirae:terrible_sword'},
+        'minecraft:iron_ingot' , 'goety:dark_ingot')
+    event.replaceInput({mod:'aquamirae',output:'aquamirae:terrible_sword'},
+        'minecraft:stick' , 'createnuclear:uranium_rod')
+
     //复刻凝胶复制
     event.shaped(
         Item.of('alexsmobs:mimicream', 16),

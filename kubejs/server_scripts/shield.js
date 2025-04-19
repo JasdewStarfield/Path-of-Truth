@@ -1,6 +1,4 @@
 ServerEvents.recipes(event => {
-  //破坏者盾牌
-
   //月长石盾牌
   event.remove({id:'blue_skies:moonstone_shield'})
   event.shaped(

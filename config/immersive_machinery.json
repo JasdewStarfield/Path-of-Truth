@@ -1,0 +1,10 @@
+{
+  "waterRenderingFixForCopperfin": true,
+  "redstoneSheepMinHorizontalScanRange": 5,
+  "fuelTicksPerHarvest": 20,
+  "validCrops": {
+    "minecraft:grass": true
+  },
+  "version": 1,
+  "name": "immersive_machinery"
+}
