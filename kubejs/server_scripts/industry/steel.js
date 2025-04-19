@@ -193,7 +193,19 @@ ServerEvents.recipes(event => {
     D: '#forge:treated_wood'
   })
   event.recipes.vintageimprovements.centrifugation([Fluid.of('kubejs:molten_steel', 150), "#forge:slag"], Fluid.of('kubejs:molten_slag', 200)).minimalRPM(128)
-  event.recipes.create.filling(["kubejs:unformed_steel_ingot",'kubejs:mold_ingot'], ['kubejs:mold_ingot', Fluid.of("kubejs:molten_steel", 100)])
+  event.recipes.create.filling("kubejs:steel_ingot_with_mold", ['kubejs:mold_ingot', Fluid.of("kubejs:molten_steel", 100)])
+  event.recipes.create.splashing(["kubejs:unformed_steel_ingot",'kubejs:mold_ingot'], "kubejs:steel_ingot_with_mold")
+  event.custom({
+    "type":"immersiveengineering:bottling_machine",
+    "fluid":{"amount":100,"tag":"forge:molten_steel"},
+    "inputs":[
+      {"item":"kubejs:mold_ingot"}
+    ],
+    "results":[
+      {"item":"kubejs:mold_ingot"},
+      {"item":"kubejs:unformed_steel_ingot"}
+    ]
+  })
   event.stonecutting('kubejs:mold_ingot', 'scguns:blank_mold')
   
   //锻造钢锭

@@ -703,6 +703,10 @@
     "modId": "irons_spells_js",
     "version": "3.1.1"
   },
+  "iswydt-1.0.5-1.20.1-FORGE.jar": {
+    "modId": "iswydt",
+    "version": "1.0.5"
+  },
   "item-filters-forge-2001.1.0-build.59.jar": {
     "modId": "itemfilters",
     "version": "2001.1.0-build.59"

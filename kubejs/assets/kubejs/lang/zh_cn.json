@@ -33,6 +33,8 @@
   "item.kubejs.crude_sawblade": "粗制锯条",
   "item.kubejs.mold_blank_steel": "空白钢模具",
   "item.kubejs.mold_ingot": "锭型模具",
+  "item.kubejs.steel_ingot_with_mold": "锭型模具",
+  "item.kubejs.steel_ingot_with_mold.desc": "模具内装有熔融钢",
   "item.kubejs.leyden_jar": "莱顿瓶",
   "item.kubejs.zinc_dust": "锌粉",
   "item.kubejs.tin_dust": "锡粉",

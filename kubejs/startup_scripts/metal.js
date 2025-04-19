@@ -32,6 +32,7 @@ StartupEvents.registry('item', (event) => {
 
   //锭模具
   event.create("mold_ingot").displayName('Ingot Mold')
+  event.create("steel_ingot_with_mold").displayName('Ingot Mold')
 
   //补充：锌粉，锡粉
   event.create("zinc_dust").displayName('Zinc Grit')
