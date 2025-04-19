@@ -80,8 +80,8 @@
 				}
 			]
 			title: "冰火两重天"
-			x: -1.5d
-			y: -5.5d
+			x: -2.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["6E08F7A257BCB99A"]
@@ -399,8 +399,8 @@
 				}
 				type: "item"
 			}]
-			x: 1.5d
-			y: -5.5d
+			x: 2.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["34C16BAADA9CC42C"]
@@ -1089,8 +1089,8 @@
 				type: "item"
 			}]
 			title: "变温材料"
-			x: 2.5d
-			y: -5.0d
+			x: 3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["6E08F7A257BCB99A"]
@@ -1116,8 +1116,8 @@
 				type: "checkmark"
 			}]
 			title: "危险的生物"
-			x: -0.5d
-			y: -6.5d
+			x: -1.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["6E08F7A257BCB99A"]
@@ -1153,8 +1153,8 @@
 				}
 			]
 			title: "影响体温的食物"
-			x: 0.5d
-			y: -6.5d
+			x: 1.0d
+			y: -5.5d
 		}
 		{
 			dependencies: [
@@ -1175,8 +1175,8 @@
 				type: "item"
 			}]
 			title: "烟囱"
-			x: -2.5d
-			y: -5.0d
+			x: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["3B3403855032F399"]
@@ -1258,6 +1258,38 @@
 			title: "最强装备……？"
 			x: 5.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["6E08F7A257BCB99A"]
+			description: [
+				"这里提供对于节气系统的一些关键点表述。"
+				"本整合包的季节系统通过&l&e二十四节气&r&r实现，每7游戏日一个节气阶段，每6节气一个季节，环境温度会&c随着节气变更而出现波动。"
+				"&r大部分作物有其&a适合的季节和环境&r（有的作物不止一个季节），在适宜季节之外它们&9不会生长&r——除非你拥有对应季节的温室。"
+				"&2温室心髓&r有两种获得方式：&b完成季节对应的进度&r，或者&3用祈年令装饰悬挂告示牌&r来获取当前季节对应的任务。"
+				"将做好的温室之心置于&5密闭空间&r中，即可完成&6对应季节温室&r的构建。"
+			]
+			id: "427C47874F61D7D2"
+			rewards: [
+				{
+					id: "34F0EF17F535F3B1"
+					item: "eclipticseasons:seasonal_prayer_scroll"
+					type: "item"
+				}
+				{
+					id: "12FA895E040F846D"
+					item: "minecraft:oak_hanging_sign"
+					type: "item"
+				}
+			]
+			subtitle: "寒来暑往"
+			tasks: [{
+				id: "02B038943A17B061"
+				item: "eclipticseasons:calendar"
+				type: "item"
+			}]
+			title: "二十四节气"
+			x: 0.0d
+			y: -6.0d
 		}
 	]
 	subtitle: ["The Representation of This World"]
