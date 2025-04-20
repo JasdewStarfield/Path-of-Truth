@@ -67,9 +67,11 @@
 
                 //beds
                 if (cap.getBedsCount() > CommonConfig.BEDS_THRESHOLD.get().intValue())
-                    comfort +=
+                    addComfortChange(
+                        'BED_COUNT',
                         (cap.getBedsCount() - CommonConfig.BEDS_THRESHOLD.get().intValue()) *
-                        CommonConfig.COMFORT_PER_BED.get().intValue()
+                            CommonConfig.COMFORT_PER_BED.get().intValue(),
+                    )
 
                 //bedroom light
                 if (cap.getBedroomLight() > CommonConfig.BEDROOM_LIGHT_AVERAGE.get().intValue()) {
@@ -195,12 +197,12 @@
                 )
 
             // days without sleeping
-            if (villager.getBrain().getMemory(MemoryModuleType.LAST_SLEPT).orElse(0) > 24000)
-                addComfortChange(
-                    '!!GLICHED!! DAYS_WITHOUT_SLEEP',
-                    (villager.getBrain().getMemory(MemoryModuleType.LAST_SLEPT).orElse(0) / 24000) *
-                        CommonConfig.COMFORT_PER_DAY_WITHOUT_SLEEP.get().intValue(),
-                )
+            // if (villager.getBrain().getMemory(MemoryModuleType.LAST_SLEPT).orElse(0) > 24000)
+            //     addComfortChange(
+            //         '!!GLICHED!! DAYS_WITHOUT_SLEEP',
+            //         (villager.getBrain().getMemory(MemoryModuleType.LAST_SLEPT).orElse(0) / 24000) *
+            //             CommonConfig.COMFORT_PER_DAY_WITHOUT_SLEEP.get().intValue(),
+            //     )
 
             comfort = Mth.clamp(comfort, -100, 100)
         }
