@@ -19,6 +19,14 @@ ServerEvents.recipes(event => {
     event.remove({id:'immersiveengineering:crafting/watermill'})
     event.remove({id:'immersiveengineering:crafting/dynamo'})
 
+    //移除铝粒套回收配方
+    event.remove({output:"#forge:nuggets/aluminum", type:"blasting"})
+    event.remove({output:"#forge:nuggets/aluminum", type:"smelting"})
+
+    //移除铁粒回收配方
+    event.remove({output:"#forge:nuggets/iron", type:"blasting"})
+    event.remove({output:"#forge:nuggets/iron", type:"smelting"})
+
     //传送带
     event.remove({id:"immersiveengineering:crafting/conveyor_basic"})
     event.shaped(Item.of('immersiveengineering:conveyor_basic', 6), [ 
@@ -402,9 +410,9 @@ ServerEvents.recipes(event => {
     //钢铁构件
     event.recipes.create.sequenced_assembly([
       Item.of('kubejs:steel_mechanism').withChance(90.0),
-      Item.of('immersiveengineering:rods_steel').withChance(2.0),
-      Item.of('immersiveengineering:ingots_aluminum').withChance(2.5),
-      Item.of('immersiveengineering:plate_teel').withChance(3.0),
+      Item.of('createdieselgenerators:engine_turbocharger').withChance(2.0),
+      Item.of('createdieselgenerators:engine_piston').withChance(2.5),
+      Item.of('immersiveengineering:plate_steel').withChance(3.0),
       Item.of('create:precision_mechanism').withChance(2.5)
       ], '#forge:plates/steel', [
       event.recipes.createDeploying('kubejs:unfinished_steel_mechanism', ['kubejs:unfinished_steel_mechanism', 'create:precision_mechanism']),

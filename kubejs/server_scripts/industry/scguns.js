@@ -116,6 +116,16 @@ ServerEvents.recipes(event => {
         ['scguns:small_copper_casing', 'paper', "scguns:buckshot", 'paper', "scguns:buckshot"]
     )
 
+    //古代黄铜平衡
+    event.remove({id:"scguns:create/ancient_brass_brass_from_mixing"})
+    event.recipes.create.mixing([
+        Item.of('create:brass_nugget', 12),
+        Item.of('create:brass_nugget', 4).withChance(0.5)
+    ], [
+        '#forge:ingots/brass',
+        "scguns:ancient_brass",
+    ]).heated()
+
     //烈性煤
     event.recipes.vintageimprovements.pressurizing([
         Item.of('scguns:vehement_coal', 2)

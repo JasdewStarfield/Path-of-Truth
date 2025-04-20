@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#forge:is_general",
+  "spawners": {
+    "type": "scguns:redcoat",
+    "weight":50,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}
