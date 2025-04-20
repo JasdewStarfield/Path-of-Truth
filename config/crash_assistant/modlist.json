@@ -703,6 +703,10 @@
     "modId": "irons_spells_js",
     "version": "3.1.1"
   },
+  "iswydt-1.0.5-1.20.1-FORGE.jar": {
+    "modId": "iswydt",
+    "version": "1.0.5"
+  },
   "item-filters-forge-2001.1.0-build.59.jar": {
     "modId": "itemfilters",
     "version": "2001.1.0-build.59"
@@ -1020,9 +1024,9 @@
     "modId": "probejs",
     "version": "6.0.1"
   },
-  "protection_pixel-1.9.1-forge-1.20.1.jar": {
+  "protection_pixel-1.9.2-forge-1.20.1.jar": {
     "modId": "protection_pixel",
-    "version": "1.9.1"
+    "version": "1.9.2"
   },
   "PuzzlesLib-v8.1.32-1.20.1-Forge.jar": {
     "modId": "puzzleslib",

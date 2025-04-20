@@ -190,6 +190,38 @@ const NonMovable = [
     'scguns:sulfur_vent'
 ]
 
+//Boss
+const Bosses = [
+    'alexsmobs:void_worm',
+    'alexsmobs:void_worm_part',
+    'blue_skies:alchemist',
+    'blue_skies:arachnarch',
+    'blue_skies:starlit_crusher',
+    'blue_skies:summoner',
+    'irons_spellbooks:dead_king',
+    'irons_spellbooks:dead_king_corpse',
+    'bosses_of_mass_destruction:gauntlet',
+    'bosses_of_mass_destruction:lich',
+    'bosses_of_mass_destruction:obsidilith',
+    'bosses_of_mass_destruction:void_blossom',
+    'botania:doppleganger'
+]
+
+const MiniBosses = [
+    'alexsmobs:warped_mosco',
+    'blue_skies:gatekepper',
+    '#goety:mini_bosses',
+    'minecraft:warden',
+    'minecraft:elder_guardian',
+    'irons_spellbooks:apothecarist',
+    'irons_spellbooks:archevoker',
+    'irons_spellbooks:citadel_keeper',
+    'irons_spellbooks:cryomancer',
+    'irons_spellbooks:cultist',
+    'irons_spellbooks:priest',
+    'irons_spellbooks:pyromancer',  
+]
+
 
 ServerEvents.tags("item", (event) => {
     //工程块
@@ -454,4 +486,20 @@ ServerEvents.tags("block", (event) => {
 
     //无法被动态结构移动的方块
     NonMovable.forEach((id) => event.add("create:non_movable", id))
+})
+
+ServerEvents.tags("entity_type", (event) => {
+    //补充Boss标签
+    Bosses.forEach((id) => event.add("forge:bosses", id))
+    MiniBosses.forEach((id) => event.add("forge:mini_bosses", id))
+
+    //为所有的boss添加防止控制标签
+    event.add("irons_spellbooks:cant_root","#forge:bosses")
+    event.add("irons_spellbooks:cant_root","#forge:mini_bosses")
+    event.add("irons_spellbooks:cant_use_portal","#forge:bosses")
+    event.add("irons_spellbooks:cant_use_portal","#forge:mini_bosses")
+    event.add("create:ignore_seat","#forge:bosses")
+    event.add("create:ignore_seat","#forge:mini_bosses")
+    event.add("endermanoverhaul:cant_be_teleported","#forge:bosses")
+    event.add("endermanoverhaul:cant_be_teleported","#forge:mini_bosses")
 })
