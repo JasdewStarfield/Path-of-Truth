@@ -442,6 +442,7 @@ ServerEvents.tags("fluid", (event) => {
 ServerEvents.tags("block", (event) => {
     //幽冥锤添加
     event.add("irons_spellbooks:spectral_hammer_mineable","#forge:stone")
+    event.add("irons_spellbooks:spectral_hammer_mineable","#forge:sandstone")
     event.add("irons_spellbooks:spectral_hammer_mineable","#undergarden:base_stone_undergarden")
 
     //为原木和木头添加对应tag
