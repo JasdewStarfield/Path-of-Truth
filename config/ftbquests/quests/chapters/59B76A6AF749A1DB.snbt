@@ -1453,7 +1453,7 @@
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 6.0d
 			y: -3.0d
 		}
 		{
@@ -1742,6 +1742,31 @@
 			}]
 			x: 6.0d
 			y: -6.0d
+		}
+		{
+			dependencies: [
+				"583407C7537AE9C9"
+				"2CB1E7FC5CBF6B2C"
+			]
+			icon: "scguns:diamond_steel_ingot"
+			id: "5B6C1785EDD9BC65"
+			shape: "diamond"
+			subtitle: "可以揽瓷器活了"
+			tasks: [
+				{
+					id: "150BE482A3F4CC2C"
+					item: "scguns:diamond_steel_blend"
+					type: "item"
+				}
+				{
+					id: "59927C8283555494"
+					item: "scguns:diamond_steel_ingot"
+					type: "item"
+				}
+			]
+			title: "金刚钻"
+			x: 5.0d
+			y: -4.0d
 		}
 	]
 	subtitle: ["Roaring Machinery"]

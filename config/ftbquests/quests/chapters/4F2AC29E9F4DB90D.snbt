@@ -965,6 +965,48 @@
 			x: 0.5d
 			y: 15.0d
 		}
+		{
+			dependencies: ["079D9B3E0E12C25C"]
+			description: [
+				"经过处理后的硝钢可以作为枪械框架和改装件的基底，也就是说，你可以开始组合铁质枪械了。"
+				"硝钢为硝烟而生。"
+			]
+			icon: "scguns:treated_iron_ingot"
+			id: "4F0468E7373CD68A"
+			shape: "diamond"
+			subtitle: "硝烟弥漫"
+			tasks: [
+				{
+					id: "61C8C1019F627A5D"
+					item: "scguns:treated_iron_blend"
+					type: "item"
+				}
+				{
+					id: "45A98C8BE6D15B94"
+					item: "scguns:treated_iron_ingot"
+					type: "item"
+				}
+			]
+			title: "我勒个硝钢"
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["079D9B3E0E12C25C"]
+			description: ["在你获得烈焰人燃烧室之后，你也可以使用搅拌来强行生产活木和活石……代价就是白雏菊有微小的概率因为这种粗暴的行为而毁坏。"]
+			icon: "botania:pure_daisy"
+			id: "07A2484514957C02"
+			shape: "diamond"
+			subtitle: "整个好活"
+			tasks: [{
+				id: "355F99F51DD60211"
+				title: "好嘞"
+				type: "checkmark"
+			}]
+			title: "暴力活化"
+			x: -2.0d
+			y: 3.5d
+		}
 	]
 	subtitle: ["Exotic Alloys"]
 	title: "2I 奇异合金"

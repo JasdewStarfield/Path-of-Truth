@@ -116,6 +116,7 @@
 		}
 		{
 			dependencies: ["46156FBBDCAB4B1D"]
+			description: ["同时，你也可以制作较为简易的铜质枪械了！"]
 			id: "3C34EE3C3BAB33EC"
 			subtitle: "铜，一种很好得到也很容易冶炼的东西"
 			tasks: [{
@@ -861,7 +862,7 @@
 			}
 			id: "4BED26108E90A0CC"
 			shape: "diamond"
-			subtitle: "这玩意可比剑好用多了"
+			subtitle: "这玩意可比魔杖好用多了，罗恩"
 			tasks: [{
 				id: "373CA25FF3071BD5"
 				item: "scguns:gun_bench"

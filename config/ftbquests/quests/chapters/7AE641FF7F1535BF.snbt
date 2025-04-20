@@ -624,32 +624,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["429B458F0AADA253"]
-			description: [
-				"经过处理后的硝钢可以作为枪械框架和改装件的基底，也就是说，你可以开始组合铁质枪械了。"
-				"硝钢为硝烟而生。"
-			]
-			icon: "scguns:treated_iron_ingot"
-			id: "68A34C290A68575C"
-			shape: "diamond"
-			subtitle: "硝烟弥漫"
-			tasks: [
-				{
-					id: "2AD49C432D3D2431"
-					item: "scguns:treated_iron_blend"
-					type: "item"
-				}
-				{
-					id: "7FBFAD0AE23897C4"
-					item: "scguns:treated_iron_ingot"
-					type: "item"
-				}
-			]
-			title: "我勒个硝钢"
-			x: 4.0d
-			y: -2.0d
-		}
-		{
 			dependencies: [
 				"77918DE5A223B3CD"
 				"5184969E829D39FA"
@@ -1034,6 +1008,29 @@
 			]
 			x: 14.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["429B458F0AADA253"]
+			description: ["黄铜和钢的特种合金"]
+			icon: "scguns:treated_brass_ingot"
+			id: "2B5473A35DA1DFB2"
+			shape: "diamond"
+			subtitle: "并非小状元"
+			tasks: [
+				{
+					id: "0761A80834171C19"
+					item: "scguns:treated_brass_blend"
+					type: "item"
+				}
+				{
+					id: "1CACCDDDFF1DBF6F"
+					item: "scguns:treated_brass_ingot"
+					type: "item"
+				}
+			]
+			title: "黄钢？"
+			x: 4.0d
+			y: -2.0d
 		}
 	]
 	subtitle: ["Hearts of Steel"]

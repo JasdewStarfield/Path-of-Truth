@@ -332,6 +332,14 @@
 			#Whether Ministers appear in Raids, Default: true
 			ministerRaid = true
 
+		[Illagers.Raid.Heretic]
+			#Whether Heretics appear in Raids, Default: true
+			hereticRaid = true
+			#How many Heretics each wave
+			#Requires game restart
+			#Must have no more and no less than 8 integers
+			hereticRaidCount = [0, 0, 0, 1, 0, 0, 2, 1]
+
 [Textures]
 	#If Brood Mothers uses their old textures, Default: false
 	broodMotherOldTexture = false

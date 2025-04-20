@@ -259,9 +259,9 @@
 			id: "1EEC479FB889EAEC"
 			shape: "diamond"
 			tasks: [{
-				id: "22580B6C931971B2"
-				title: "对……对吗？"
-				type: "checkmark"
+				id: "1874350D5C8D72DB"
+				item: "protection_pixel:armorloadplatform"
+				type: "item"
 			}]
 			title: "动力护甲"
 			x: 0.0d

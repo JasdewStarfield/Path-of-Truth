@@ -1097,6 +1097,28 @@
 			x: 2.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["7C566E8D9F54FEF9"]
+			icon: "scguns:scorched_ingot"
+			id: "509A8421F88CE498"
+			shape: "diamond"
+			subtitle: "响啊，很响啊（指枪械激发声）"
+			tasks: [
+				{
+					id: "0E77AA317B63BAEB"
+					item: "scguns:scorched_blend"
+					type: "item"
+				}
+				{
+					id: "532F4CDA6791DE69"
+					item: "scguns:scorched_ingot"
+					type: "item"
+				}
+			]
+			title: "香啊，很香啊（指焦香味）"
+			x: 9.0d
+			y: 1.0d
+		}
 	]
 	subtitle: ["Petrochemical Engineering"]
 	title: "5I 黑金与化工"

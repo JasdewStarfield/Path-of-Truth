@@ -94,11 +94,123 @@ ServerEvents.recipes(event => {
         A: '#minecraft:planks'
     })
 
-    //黄铜合金
+    //铜级别弹药增加低科技生产路径
+    event.stonecutting(
+        Item.of('scguns:small_copper_casing', 6),
+        '#forge:ingots/copper'
+    )
+    event.stonecutting(
+        Item.of('scguns:medium_copper_casing', 4),
+        '#forge:ingots/copper'
+    )
+    event.shapeless(
+        Item.of('scguns:compact_copper_round'),
+        ['scguns:small_copper_casing', '#scguns:gunpowder_dust', "#scguns:stan_bullet_tips", '#scguns:gunpowder_dust', "#scguns:stan_bullet_tips"]
+    )
+    event.shapeless(
+        Item.of('scguns:standard_copper_round'),
+        ['scguns:medium_copper_casing', '#scguns:gunpowder_dust', "#scguns:stan_bullet_tips", '#scguns:gunpowder_dust', "#scguns:stan_bullet_tips"]
+    )
+    event.shapeless(
+        Item.of('scguns:shotgun_shell'),
+        ['scguns:small_copper_casing', 'paper', "scguns:buckshot", 'paper', "scguns:buckshot"]
+    )
+
+    //烈性煤
+    event.recipes.vintageimprovements.pressurizing([
+        Item.of('scguns:vehement_coal', 2)
+    ], [
+        Item.of('scguns:vehement_coal'),
+        Item.of('#forge:coal_coke'),
+        Item.of('scguns:sheol'),
+        Fluid.of("minecraft:lava", 500)
+    ]).superheated()
 
     //硝钢
     event.remove({id:"scguns:create/treated_iron_blend_from_mixing"})
-    event.recipes.create.mixing(Item.of('scguns:treated_iron_blend'), ['kubejs:unformed_steel_ingot','charcoal','flint','scguns:niter_dust']).heated()
+    event.recipes.create.mixing([
+        Item.of('scguns:treated_iron_blend'),
+        Item.of('scguns:treated_iron_blend').withChance(0.5)
+    ], [
+        '#forge:ingots/iron',
+        'scguns:anthralite_ingot',
+        'flint',
+        '#forge:dusts/saltpeter'
+    ]).heated()
+    event.custom({
+        "type":"immersiveengineering:arc_furnace",
+        "additives":[],
+        "energy":51200,
+        "input":{"item":"scguns:treated_iron_blend"},
+        "results":[{"item":"scguns:treated_iron_ingot"}],
+        "time":40
+    })
+
+    //黄铜合金
+    event.remove({id:"scguns:create/treated_brass_blend_from_mixing"})
+    event.remove({id:"scguns:create/treated_brass_ingot_from_mixing"})
+    event.recipes.create.mixing([
+        Item.of('scguns:treated_brass_blend'),
+        Item.of('scguns:treated_brass_blend').withChance(0.5)
+    ], [
+        '#forge:ingots/brass',
+        'kubejs:unformed_steel_ingot',
+        'botania:quartz_blaze',
+        '#forge:dusts/redstone'
+    ]).heated()
+    event.custom({
+        "type":"immersiveengineering:arc_furnace",
+        "additives":[],
+        "energy":51200,
+        "input":{"item":"scguns:treated_brass_blend"},
+        "results":[{"item":"scguns:treated_brass_ingot"}],
+        "time":40
+    })
+
+    //钢化钻石
+    event.remove({id:"scguns:create/diamond_steel_blend_from_mixing"})
+    event.remove({id:"scguns:create/diamond_steel_ingot_from_mixing"})
+    event.remove({id:"scguns:diamond_steel_ingot_from_smelting_diamond_steel_blend"})
+    event.remove({id:"scguns:diamond_steel_ingot_from_blasting_diamond_steel_blend"})
+    event.recipes.create.mixing([
+        Item.of('scguns:diamond_steel_blend'),
+        Item.of('scguns:diamond_steel_blend').withChance(0.5)
+    ], [
+        '#forge:gems/mana_diamond',
+        '#forge:ingots/voidsteel',
+        '#forge:gems/prismarine',
+        'vintageimprovements:copper_sulfate',
+    ]).superheated()
+    event.custom({
+        "type":"immersiveengineering:arc_furnace",
+        "additives":[],
+        "energy":102400,
+        "input":{"item":"scguns:diamond_steel_blend"},
+        "results":[{"item":"scguns:diamond_steel_ingot"}],
+        "time":100
+    })
+
+    //焦化锭
+    event.remove({id:"scguns:create/scorched_blend_from_mixing"})
+    event.remove({id:"scguns:scorched_ingot_from_smelting_scorched_blend"})
+    event.remove({id:"scguns:scorched_ingot_from_blasting_scorched_blend"})
+    event.recipes.create.mixing([
+        Item.of('scguns:scorched_blend'),
+        Item.of('scguns:scorched_blend').withChance(0.5)
+    ], [
+        'scguns:vehement_coal',
+        '#forge:ingots/netherite',
+        'dragon_breath',
+        'botania:life_essence'
+    ]).superheated()
+    event.custom({
+        "type":"immersiveengineering:arc_furnace",
+        "additives":[],
+        "energy":204800,
+        "input":{"item":"scguns:scorched_blend"},
+        "results":[{"item":"scguns:scorched_ingot"}],
+        "time":200
+    })
 
     //创造子弹盒
     event.shaped(Item.of('scguns:creative_ammo_box'), [ 
