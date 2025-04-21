@@ -15,8 +15,6 @@ launcher_profiles.json
 /assets/skins
 config/embeddium-options.json
 config/embeddium-fingerprint.json
-config/fml.toml
-config/modernfix-mixins.properties
 config/oculus.properties
 config/sodium-extra-options.json
 /resourcepacks
@@ -25,7 +23,6 @@ config/sodium-extra-options.json
 /XaeroWorldMap
 options.txt
 /XaeroWaypoints_BACKUP*
-config/enchdesc.json
 config/jade/sort-order.json
 config/xaerominimap_entities.json
 config/ambientsounds-client.json
@@ -35,7 +32,6 @@ config/xaerominimap.txt
 /screenshots
 /debug
 /.mixin.out
-config/everycomp-hazardous.properties
 /config/sound_physics_remastered
 .$caotu.drawio.bkp
 route.drawio
@@ -43,15 +39,12 @@ route.drawio
 /fancymenu_data
 /config/konkrete/locals
 config/jei/ingredient-list-mod-sort-order.ini
-config/attributefix.json
-config/terrablender.toml
 config/immediatelyfast.json
 config/modernfix-mixins.properties
 /config/spark
 hmclversion.cfg
 servers.dat
 servers.dat_old
-config/smoothboot.json
 mods/worldedit-mod-7.2.15.jar
 config/worldedit/worldedit.properties
 /config/worldedit
@@ -97,8 +90,8 @@ config/jei/jei-client.ini
 config/fabric/indigo-renderer.properties
 config/sounds/chat.json
 config/embeddium++.toml
-/config/crash_assistant/lang
 kubejs/data/cached_seed.json
 config/world_preview/renderConfig.json
 *.txt
 BTLib.dll
+config/attributefix.json
