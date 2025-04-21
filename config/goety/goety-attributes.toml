@@ -71,7 +71,7 @@
 		[Attributes.Mini-Bosses.Crone]
 			#How much Max Health Crones have, Default: 130.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			croneHealth = 130.0
+			croneHealth = 60.0
 
 		[Attributes.Mini-Bosses.Wight]
 			#How much Max Health Wights have, Default: 200.0
@@ -85,7 +85,7 @@
 			wightSoulAbsorb = 10
 			#How much health Wights can heal up per Soul Energy absorption, Default: 10
 			#Range: > 0
-			wightSoulHeal = 10
+			wightSoulHeal = 5
 
 		[Attributes.Mini-Bosses.Minister]
 			#How much Max Health Ministers have, Default: 128.0
