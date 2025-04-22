@@ -693,7 +693,7 @@
 						value: "comforts:sleeping_bags"
 					}
 				}
-				title: "Any #comforts:sleeping_bags"
+				title: "任意睡袋"
 				type: "item"
 			}]
 			title: "睡袋"
@@ -726,7 +726,7 @@
 							value: "comforts:hammocks"
 						}
 					}
-					title: "Any #comforts:hammocks"
+					title: "任意吊床布"
 					type: "item"
 				}
 				{
@@ -779,7 +779,7 @@
 							value: "kubejs:backpacks"
 						}
 					}
-					title: "Any #kubejs:backpacks"
+					title: "任意背包"
 					type: "item"
 				}
 			]
@@ -936,8 +936,13 @@
 				"{@pagebreak}"
 				"由于村民&c被关进交易所&r的次数实在是太多了，他们觉醒了……"
 				"交易所已经是&c历史的尘埃&r了，因为现在的村民拥有&b动态交易列表&r：每个游戏日更新！"
+				"同时，村民现在有舒适度设定。这包含：房屋大小（越大越好，且最好不要和其它村民共处一室）、住所与工作区距离（越远越好）、威胁度（尽量不要使它们感到恐慌），住所的透光度，以及白天能否在外面呼吸新鲜空气等等。"
+				"舒适度越高，村民物品售价就越低；反之则越高。"
+				"你可以使用&4虞美人&rShift+右击村民来询问它当前的舒适度。（目前暂未本地化）"
 				"&o&m&a这也是混沌理论的一种体现（确信&r&r&r"
 				""
+				"有关交易项目变动，请翻到下一页。"
+				"{@pagebreak}"
 				"同时，部分&2学习沉浸工程&r的村民们发现自己熟悉的配件配方被大幅修改，因此&e投入了魔法的怀抱&r。"
 				"&9机械师，电工与结构工程师&r在收购一些工业制品的同时，将会分别售卖&b不同系别的魔法材料&r！"
 				"他们&a在二级，三级和五级&r的时候分别有几率售卖&7铁箍卷册&r，&d特定系别符文&r与&5特定系别法球&r！"
@@ -946,8 +951,8 @@
 			icon: "artifacts:villager_hat"
 			id: "1F2E99A74CDFBD68"
 			rewards: [{
-				id: "12DAB628915CF262"
-				item: "betterarcheology:villager_fossil_head"
+				id: "57F0AE76FD7ECD83"
+				item: "minecraft:poppy"
 				type: "item"
 			}]
 			subtitle: "村民崛起！"
@@ -971,6 +976,11 @@
 			]
 			icon: "create:experience_nugget"
 			id: "6052F74DFBBEC018"
+			rewards: [{
+				id: "1D6178A71BB22E7A"
+				item: "betterarcheology:villager_fossil_head"
+				type: "item"
+			}]
 			subtitle: "由于直接从村民手里买太简单……"
 			tasks: [{
 				id: "5B5265A11A240989"
@@ -1289,7 +1299,7 @@
 			}]
 			title: "二十四节气"
 			x: 0.0d
-			y: -6.0d
+			y: -6.5d
 		}
 	]
 	subtitle: ["The Representation of This World"]

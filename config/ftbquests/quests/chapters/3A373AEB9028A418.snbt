@@ -409,7 +409,7 @@
 				"{@pagebreak}"
 				"本包钓鱼使用星露谷的机制：点击时&a提高判定区&r，松手时&b判定区自然下坠&r，保持鱼（和宝箱）在判定区内即可成功钓鱼！"
 				"{image:kubejs:textures/stardew_fishing.png width:100 height:100 align:center}"
-				"&o&9注意：植魔酿造的“诱惑”药水会造成判定错误，因此该配方已被移除！&r&r"
+				"&o&9注意：植魔酿造的“诱惑”药水会造成判定错误，因此该配方已被移除！狂热垂钓（钓鱼爱好者）附魔也无法直接获取。&r&r"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true

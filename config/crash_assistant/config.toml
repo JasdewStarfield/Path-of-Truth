@@ -60,6 +60,8 @@
 	one_line_logs = true
 	#Adds line in log list about this Intel processor can be corrupted.
 	intel_corrupted_notification = true
+	#Puts problematic frame from hs_err to message.
+	put_problematic_frame_to_message = true
 
 #Settings of modlist feature.
 #Adds in generated msg block about which mods modpack user added/removed/updated.

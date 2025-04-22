@@ -77,6 +77,10 @@
   "balm": {
     "jade": true
   },
+  "eclipticseasons": {
+    "crop": true,
+    "crop.shift_hint": true
+  },
   "jadeaddons": {
     "equipment_requirement": ""
   },

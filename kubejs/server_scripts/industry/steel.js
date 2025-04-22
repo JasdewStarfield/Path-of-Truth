@@ -316,9 +316,9 @@ ServerEvents.recipes(event => {
     'DE  B',
     'ACCCA'
   ], {
-    A: '#forge:storage_blocks/iron',
+    A: '#forge:storage_blocks/steel',
     B: 'immersiveengineering:light_engineering',
-    C: '#forge:rods/steel',
+    C: '#forge:rods/iron',
     D: 'kubejs:precise_engineering',
     E: 'create:shaft'
   })
@@ -349,7 +349,7 @@ ServerEvents.recipes(event => {
   event.remove({id:"endersdelight:cutting/ender_shard_using_deployer"})
   event.recipes.farmersdelight.cutting(
     '#forge:ender_pearls',
-    '#forge:tools/pickaxes',
+    '#minecraft:pickaxes',
     [
       Item.of('endersdelight:ender_shard',2)
     ]
