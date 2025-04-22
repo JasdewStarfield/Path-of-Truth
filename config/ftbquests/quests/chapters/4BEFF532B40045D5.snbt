@@ -281,11 +281,6 @@
 			]
 			icon: "minecraft:bread"
 			id: "4814464FAB9C404C"
-			rewards: [{
-				id: "24A546DE254FA688"
-				item: "metalbundles:leather_bundle"
-				type: "item"
-			}]
 			subtitle: "吃好喝好"
 			tasks: [{
 				id: "44B67682076D8F37"
