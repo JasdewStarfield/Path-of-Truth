@@ -71,7 +71,7 @@
 		[Attributes.Mini-Bosses.Crone]
 			#How much Max Health Crones have, Default: 130.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			croneHealth = 60.0
+			croneHealth = 50.0
 
 		[Attributes.Mini-Bosses.Wight]
 			#How much Max Health Wights have, Default: 200.0

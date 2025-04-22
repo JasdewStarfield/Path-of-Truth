@@ -1562,7 +1562,7 @@
 	environmentalCost = true
 	#Multiplies the damage of spells by this amount, Default: 1
 	#Range: > 1
-	spellDamageMultiplier = 1.2
+	spellDamageMultiplier = 1.5
 	#Whether Servants change navigation modes by hitting them, put false to make them change by right-clicking on them, Default: true
 	ownerHitCommand = true
 
