@@ -96,3 +96,4 @@ config/world_preview/renderConfig.json
 BTLib.dll
 config/attributefix.json
 config/everycomp-hazardous.properties
+config/cubes_without_borders.json

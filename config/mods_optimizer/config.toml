@@ -332,6 +332,8 @@ sounds = "client"
 enhanced_boss_bars = "client"
 panorama_screens = "client"
 badoptimizations = "client"
+cubes_without_borders = "client"
+clickthrough = "client"
 
 [Debug]
 debugForceSide = "default"
