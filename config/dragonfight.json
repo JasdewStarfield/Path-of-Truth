@@ -47,7 +47,7 @@
   "spawnoncrystaldestroy": {
     "desc:": "List of mobs spawning when a crystal is destroyed at range, intended to be flying or ranged to close the gap: e.g. format :  [\"minecraft:zombie\", \"minecraft:creeper\"]",
     "spawnoncrystaldestroy": [
-      "minecraft:phantom"
+      "minecraft:blaze"
     ]
   },
   "spawnoncrystalrespawn": {
@@ -59,7 +59,7 @@
   "spawnwhilelanded": {
     "desc:": "List of mobs spawning while the dragon is sitting in the middle, intended to be melee and not vulnerable to ranged: e.g. format :  [\"minecraft:zombie\", \"minecraft:creeper\"]",
     "spawnwhilelanded": [
-      "minecraft:enderman"
+      "minecraft:blaze"
     ]
   }
 }
