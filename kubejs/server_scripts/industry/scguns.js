@@ -23,6 +23,15 @@ ServerEvents.recipes(event => {
     event.remove({id:"immersiveengineering:crafting/gunpowder_from_dusts"})
     event.remove({id:"salt:gunpowder"})
 
+    //切石机
+    event.shaped(Item.of('minecraft:stonecutter'), [ 
+        ' B ',
+        'AAA'
+    ], {
+        A: '#forge:stone',
+        B: 'create:andesite_alloy'
+    })
+
     //各级蓝图
     event.shaped(Item.of('scguns:copper_blueprint'), [ 
         'DAD',
@@ -115,6 +124,29 @@ ServerEvents.recipes(event => {
         Item.of('scguns:shotgun_shell'),
         ['scguns:small_copper_casing', 'paper', "scguns:buckshot", 'paper', "scguns:buckshot"]
     )
+
+    //枪械零件增加另一条途径（可用锡替换）
+    event.recipes.create.sequenced_assembly([
+        Item.of('scguns:gun_parts', 2)
+    ], '#forge:storage_blocks/tin', [
+        event.recipes.createCutting('scguns:unfinished_gun_parts', 'scguns:unfinished_gun_parts'),
+        event.recipes.createPressing('scguns:unfinished_gun_parts', 'scguns:unfinished_gun_parts'),
+        event.recipes.createPressing('scguns:unfinished_gun_parts', 'scguns:unfinished_gun_parts'),
+        event.recipes.createPressing('scguns:unfinished_gun_parts', 'scguns:unfinished_gun_parts'),
+    ]).transitionalItem('scguns:unfinished_gun_parts').loops(1)
+    event.stonecutting(
+        Item.of('scguns:gun_parts'),
+        '#forge:storage_blocks/tin'
+    )
+    event.stonecutting(
+        Item.of('scguns:gun_parts'),
+        '#forge:storage_blocks/iron'
+    )
+    event.stonecutting(
+        Item.of('scguns:heavy_gun_parts'),
+        'scguns:anthralite_block'
+    )
+
 
     //古代黄铜平衡
     event.remove({id:"scguns:create/ancient_brass_brass_from_mixing"})

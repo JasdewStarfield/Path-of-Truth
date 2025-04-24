@@ -304,6 +304,7 @@ ServerEvents.tags("item", (event) => {
     //Unify
     event.add("forge:fermentable","#forge:grain/rice")
     event.add("forge:fermentable","#forge:dough/wheat")
+    event.add("scguns:weak_fertilizer","#forge:seeds")
 
     event.add("forge:ingots","kubejs:failed_brass_ingot")
     event.add("forge:dusts","kubejs:brass_blend")
