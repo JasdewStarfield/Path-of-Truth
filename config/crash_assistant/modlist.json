@@ -39,9 +39,9 @@
     "modId": "ambientenvironment",
     "version": "11.0.0.1"
   },
-  "AmbientSounds_FORGE_v6.1.8_mc1.20.1.jar": {
+  "AmbientSounds_FORGE_v6.1.9_mc1.20.1.jar": {
     "modId": "ambientsounds",
-    "version": "6.1.8"
+    "version": "6.1.9"
   },
   "amendments-1.20-1.2.19.jar": {
     "modId": "amendments",
@@ -75,9 +75,9 @@
     "modId": "artifacts",
     "version": "9.5.16"
   },
-  "AsyncParticles-1.10.0+1.20.1-beta.0.jar": {
+  "AsyncParticles-1.10.1+1.20.1-alpha.4.jar": {
     "modId": "asyncparticles",
-    "version": "1.10.0+1.20.1-beta.0"
+    "version": "1.10.1+1.20.1-alpha.4"
   },
   "AttributeFix-Forge-1.20.1-21.0.4.jar": {
     "modId": "attributefix",
@@ -102,10 +102,6 @@
   "bellsandwhistles-0.4.3-1.20.x.jar": {
     "modId": "bellsandwhistles",
     "version": "0.4.3-1.20.x"
-  },
-  "bendy-lib-forge-4.0.0.jar": {
-    "modId": "bendylib",
-    "version": "4.0.0"
   },
   "better_climbing-forge-3.jar": {
     "modId": "better_climbing",
@@ -211,6 +207,10 @@
     "modId": "citadel",
     "version": "2.6.1"
   },
+  "clickthrough-plus-forge-3.4.1+1.20.1.jar": {
+    "modId": "clickthrough",
+    "version": "3.4.1+1.20.1"
+  },
   "cloth-config-11.1.136-forge.jar": {
     "modId": "cloth_config",
     "version": "11.1.136"
@@ -219,9 +219,9 @@
     "modId": "clumps",
     "version": "12.0.0.4"
   },
-  "ColdSweat-2.4-b02c.jar": {
+  "ColdSweat-2.4-b02d.jar": {
     "modId": "cold_sweat",
-    "version": "2.4-b02c"
+    "version": "2.4-b02d"
   },
   "collective-1.20.1-8.3.jar": {
     "modId": "collective",
@@ -279,9 +279,9 @@
     "modId": "craftingtweaks",
     "version": "18.2.5"
   },
-  "crash_assistant-forge-1.19.2-1.20.1-1.7.7.jar": {
+  "crash_assistant-forge-1.19.2-1.20.1-1.7.12.jar": {
     "modId": "crash_assistant",
-    "version": "1.7.7"
+    "version": "1.7.12"
   },
   "cratedelight-24.11.29-1.20-forge.jar": {
     "modId": "cratedelight",
@@ -431,6 +431,10 @@
     "modId": "doubledoors",
     "version": "7.0"
   },
+  "dragonfight-1.20.1-4.6.jar": {
+    "modId": "dragonfight",
+    "version": "1.20.1-4.6"
+  },
   "DrawersTooltip-1.20.1-forge-8.0.0.jar": {
     "modId": "drawerstooltip",
     "version": "8.0.0"
@@ -439,9 +443,21 @@
     "modId": "drippyloadingscreen",
     "version": "3.0.12"
   },
-  "DripSounds-1.19.4-0.3.2.jar": {
-    "modId": "waterdripsound",
-    "version": "0.3.2"
+  "dungeons-and-taverns-3.0.3.f.jar": {
+    "modId": "mr_dungeons_andtaverns",
+    "version": "3.0.3.f"
+  },
+  "dungeons-and-taverns-ancient-city-overhaul-1.jar": {
+    "modId": "mr_dungeons_andtavernsancientcityoverhaul",
+    "version": "1"
+  },
+  "dungeons-and-taverns-pillager-outpost-rework-1.1.jar": {
+    "modId": "mr_dungeons_andtavernspillageroutpostrework",
+    "version": "1.1"
+  },
+  "dungeons-and-taverns-swamp-hut-rework-1.jar": {
+    "modId": "mr_dungeons_andtavernsswamphutrework",
+    "version": "1"
   },
   "dynamiccrosshair-9.3+1.20.1-forge.jar": {
     "modId": "dynamiccrosshair",
@@ -451,17 +467,13 @@
     "modId": "dynamicvillagertrades",
     "version": "1.3.1"
   },
-  "EasyAnvils-v8.0.2-1.20.1-Forge.jar": {
-    "modId": "easyanvils",
-    "version": "8.0.2"
-  },
   "eccentrictome-1.20.1-1.10.3.jar": {
     "modId": "eccentrictome",
     "version": "1.20.1-1.10.3"
   },
-  "EclipticSeasons-1.20.1-forge-0.10.6-fix-all.jar": {
+  "EclipticSeasons-1.20.1-forge-0.10.8-all.jar": {
     "modId": "eclipticseasons",
-    "version": "0.10.6-fix"
+    "version": "0.10.8"
   },
   "ElysiumApi-1.20.1-1.1.0.jar": {
     "modId": "elysium_api",
@@ -531,9 +543,9 @@
     "modId": "fastfurnace",
     "version": "8.0.2"
   },
-  "FastItemFrames-v20.1.1-1.20.1-Forge.jar": {
-    "modId": "fastitemframes",
-    "version": "20.1.1"
+  "Fastquit-3.0.1+1.20.1forge.jar": {
+    "modId": "fastquit",
+    "version": "3.0.1+1.20.1forge"
   },
   "FastWorkbench-1.20.1-8.0.4.jar": {
     "modId": "fastbench",
@@ -555,9 +567,9 @@
     "modId": "fishnostuck",
     "version": "1.0.3"
   },
-  "flerovium-forge-1.20.1-1.2.9-all.jar": {
+  "flerovium-forge-1.20.1-1.2.10-all.jar": {
     "modId": "flerovium",
-    "version": "1.2.9"
+    "version": "1.2.10"
   },
   "flickerfix-1.20.1-4.0.1.jar": {
     "modId": "flickerfix",
@@ -603,21 +615,21 @@
     "modId": "fullstackwatchdog",
     "version": "1.0.1+1.19.2-forge"
   },
-  "fusion-1.2.7-forge-mc1.20.1.jar": {
+  "fusion-1.2.7b-forge-mc1.20.1.jar": {
     "modId": "fusion",
-    "version": "1.2.7"
+    "version": "1.2.7+b"
   },
   "fzzy_config-0.6.9+1.20.1+forge.jar": {
     "modId": "fzzy_config",
     "version": "0.6.9+1.20.1+forge"
   },
+  "gallery-1.20.1-1.0.3.jar": {
+    "modId": "gallery",
+    "version": "1.0.3"
+  },
   "geckolib-forge-1.20.1-4.7.1.2.jar": {
     "modId": "geckolib",
     "version": "4.7.1.2"
-  },
-  "GeophilicReforged-v1.2.0.jar": {
-    "modId": "geophilic_reforged",
-    "version": "1.2.0"
   },
   "goety-2.5.32.1.jar": {
     "modId": "goety",
@@ -654,10 +666,6 @@
   "hourglass-1.20-1.2.1.1.jar": {
     "modId": "hourglass",
     "version": "1.2.1.1"
-  },
-  "iceboatnerf-1.1.1.jar": {
-    "modId": "iceboatnerf",
-    "version": "1.1.1"
   },
   "iChunUtil-1.20.1-Forge-1.0.3.jar": {
     "modId": "ichunutil",
@@ -816,10 +824,6 @@
     "modId": "leavemybarsalone",
     "version": "8.0.0"
   },
-  "LibX-1.20.1-5.0.14.jar": {
-    "modId": "libx",
-    "version": "1.20.1-5.0.14"
-  },
   "lmft-1.0.4+1.20.1-forge.jar": {
     "modId": "lmft",
     "version": "1.0.4+1.20.1"
@@ -924,17 +928,9 @@
     "modId": "nethersdelight",
     "version": "1.20.1-4.0"
   },
-  "Nimble-1.20.1-forge-5.0.1.jar": {
-    "modId": "nimble",
-    "version": "5.0.1"
-  },
   "NoChatReports-FORGE-1.20.1-v2.2.2.jar": {
     "modId": "nochatreports",
     "version": "1.20.1-v2.2.2"
-  },
-  "nocube\u0027s_villagers_sell_animals_1.2.1_forge_1.20.1.jar": {
-    "modId": "villagersellanimals",
-    "version": "1.2.1"
   },
   "noisium-forge-2.3.0+mc1.20-1.20.1.jar": {
     "modId": "noisium",
@@ -1016,13 +1012,17 @@
     "modId": "playeranimator",
     "version": "1.0.2-rc1+1.20"
   },
-  "polymorph-forge-0.49.9+1.20.1.jar": {
+  "polymorph-forge-0.49.10+1.20.1.jar": {
     "modId": "polymorph",
-    "version": "0.49.9+1.20.1"
+    "version": "0.49.10+1.20.1"
   },
   "ponderjs-1.20.1-1.4.0.jar": {
     "modId": "ponderjs",
     "version": "1.4.0"
+  },
+  "Pretty Rain-1.20.1-Forge-1.1.3.jar": {
+    "modId": "particlerain",
+    "version": "1.1.3"
   },
   "probejs-6.0.1-forge.jar": {
     "modId": "probejs",
@@ -1096,6 +1096,10 @@
     "modId": "rsrequestify",
     "version": "2.3.3"
   },
+  "RuOK-1.7.1_1.20.1-Forge.jar": {
+    "modId": "ruokmod",
+    "version": "1.7.1"
+  },
   "salt-1.20.1-1.2.6.jar": {
     "modId": "salt",
     "version": "1.2.6"
@@ -1168,10 +1172,6 @@
     "modId": "sneakycurses",
     "version": "8.0.2"
   },
-  "snowundertrees-1.20.1-1.4.10.jar": {
-    "modId": "snowundertrees",
-    "version": "1.4.10"
-  },
   "sodiumdynamiclights-forge-1.0.9-1.20.1.jar": {
     "modId": "sodiumdynamiclights",
     "version": "1.0.9"
@@ -1180,13 +1180,13 @@
     "modId": "sodiumoptionsapi",
     "version": "1.0.8"
   },
-  "sophisticatedbackpacks-1.20.1-3.23.13.1229.jar": {
+  "sophisticatedbackpacks-1.20.1-3.23.13.1230.jar": {
     "modId": "sophisticatedbackpacks",
-    "version": "3.23.13.1229"
+    "version": "3.23.13.1230"
   },
-  "sophisticatedcore-1.20.1-1.2.45.953.jar": {
+  "sophisticatedcore-1.20.1-1.2.49.962.jar": {
     "modId": "sophisticatedcore",
-    "version": "1.2.45.953"
+    "version": "1.2.49.962"
   },
   "sound-physics-remastered-forge-1.20.1-1.4.13.jar": {
     "modId": "sound_physics_remastered",
@@ -1391,6 +1391,18 @@
   "YungsApi-1.20-Forge-4.0.6.jar": {
     "modId": "yungsapi",
     "version": "1.20-Forge-4.0.6"
+  },
+  "YungsBetterMineshafts-1.20-Forge-4.0.4.jar": {
+    "modId": "bettermineshafts",
+    "version": "1.20-Forge-4.0.4"
+  },
+  "YungsBetterStrongholds-1.20-Forge-4.0.3.jar": {
+    "modId": "betterstrongholds",
+    "version": "1.20-Forge-4.0.3"
+  },
+  "YungsExtras-1.20-Forge-4.0.3.jar": {
+    "modId": "yungsextras",
+    "version": "1.20-Forge-4.0.3"
   },
   "YungsMenuTweaks-1.20.1-Forge-1.0.2.jar": {
     "modId": "yungsmenutweaks",
