@@ -1,18 +1,23 @@
 {
-  "profile.item.blue_skies.municipal_monkfish": "",
-  "profile.item.blue_skies.grittle_flatfish": "",
-  "profile.item.blue_skies.charscale_moki": "",
-  "profile.item.blue_skies.horizofin_tunid": "",
-  "profile.item.netherdepthsupgrade.lava_pufferfish": "",
-  "profile.item.netherdepthsupgrade.obsidianfish": "",
-  "profile.item.netherdepthsupgrade.searing_cod": "",
-  "profile.item.netherdepthsupgrade.bonefish": "",
-  "profile.item.netherdepthsupgrade.wither_bonefish": "",
-  "profile.item.netherdepthsupgrade.blazefish": "",
-  "profile.item.netherdepthsupgrade.magmacubefish": "",
-  "profile.item.netherdepthsupgrade.glowdine": "",
-  "profile.item.netherdepthsupgrade.soulsucker": "",
+  "profile.item.blue_skies.municipal_monkfish": "至少它们适应了冰冷的河流。",
+  "profile.item.blue_skies.grittle_flatfish": "那我问你，你的身体为什么扁扁的？",
+  "profile.item.blue_skies.charscale_moki": "也许把它做熟需要更高的温度。",
+  "profile.item.blue_skies.horizofin_tunid": "继承了黄昏的颜色。",
+  "profile.item.netherdepthsupgrade.lava_pufferfish": "总会倾向于自毁。可以用来提炼一丝凋灵的力量。",
+  "profile.item.netherdepthsupgrade.obsidianfish": "这下你知道为什么它可以在岩浆里游泳了。",
+  "profile.item.netherdepthsupgrade.searing_cod": "拆分冷却后是相当好用的燃料。",
+  "profile.item.netherdepthsupgrade.bonefish": "肉被烧没了……",
+  "profile.item.netherdepthsupgrade.wither_bonefish": "凋灵鳍的近亲，不过没有那么骨感。",
+  "profile.item.netherdepthsupgrade.blazefish": "也许是那些坠入岩浆海的烈焰人留下的？",
+  "profile.item.netherdepthsupgrade.magmacubefish": "适应并融入了岩浆……但是还没长成岩浆怪。",
+  "profile.item.netherdepthsupgrade.glowdine": "金色……普通！",
+  "profile.item.netherdepthsupgrade.soulsucker": "灵魂的力量让它们能以自身的鱼皮抵抗岩浆的灼烧。",
   "profile.item.netherdepthsupgrade.fortress_grouper": "虽然不在要塞附近巡游，但是至少可以让你短时间内有要塞一样的防御力。多一颗心怎么样？",
   "profile.item.netherdepthsupgrade.eyeball_fish": "“我会永远视奸你……”",
-  "profile.item.aquamirae.spinefish": ""
+  "profile.item.aquamirae.spinefish": "和冰海鮟鱇同居一处的危险生物。",
+
+  "profile.info.location.undergarden": "深暗之园水域",
+
+  "item.tide.aquathorn": "神殿之矛",
+  "profile.item.tide.aquathorn": "自从海底神殿建成以来，这种鱼类便已存在。尽管大多数同类已经进化为体型更大、力量更强的物种，这些鱼依然凭借它们出色的防御机制存续至今。"
 }

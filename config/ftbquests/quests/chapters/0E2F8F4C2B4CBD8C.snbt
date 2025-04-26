@@ -960,6 +960,11 @@
 					item: "tide:shooting_starfish"
 					type: "item"
 				}
+				{
+					id: "0D6D45252FC35B77"
+					item: "tide:aquathorn"
+					type: "item"
+				}
 			]
 			title: "钓鱼王II"
 			x: 0.5d
