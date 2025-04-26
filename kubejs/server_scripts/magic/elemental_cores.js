@@ -259,7 +259,7 @@ ServerEvents.recipes(event => {
         "type": "goety:ritual",
         "ritual_type": "goety:craft",//仪式主类型（制作）
         "activation_item": {
-            "item": 'goety:lightning_focus'//中心物品
+            "item": 'goety:thunderbolt_focus'//中心物品
         },
         "craftType": "storm",//仪式副类型（风暴）
         "soulCost": 50,//每秒消耗
