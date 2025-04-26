@@ -79,6 +79,7 @@
   },
   "eclipticseasons": {
     "crop": true,
+    "snowy_status": true,
     "crop.shift_hint": true
   },
   "jadeaddons": {

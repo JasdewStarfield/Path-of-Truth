@@ -115,6 +115,9 @@ ServerEvents.recipes(event => {
         ]
   )
 
+  //灵质流体物品搅拌转化
+  event.recipes.create.mixing('goety:ectoplasm', Fluid.of('netherexp:ectoplasm', 125))
+
   //蛋糕！
   //其它蛋糕的统一慢慢做吧
   event.remove({output:"minecraft:cake", type: "minecraft:crafting"})

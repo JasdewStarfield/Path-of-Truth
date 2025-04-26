@@ -12,7 +12,7 @@
 	"doSandParticles": true,
 	"doShrubParticles": true,
 	"doFogParticles": false,
-	"doGroundFogParticles": true,
+	"doGroundFogParticles": false,
 	"doRainSounds": true,
 	"doSnowSounds": true,
 	"doSandSounds": true,
