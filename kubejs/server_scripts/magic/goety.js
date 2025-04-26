@@ -340,6 +340,15 @@ ServerEvents.recipes(event => {
         "result": 'blue_skies:lunar_stonebrick',
         "cookingTime": 20
     })
+    //点金鱼转化贤者之杖
+    event.custom({
+        "type": "goety:cursed_infuser_recipes",
+        "ingredient": {
+            "item": 'tide:midas_fish'
+        },
+        "result": 'goety:philosophers_mace',
+        "cookingTime": 36000
+    })
 
     //仪式配方修改系列
     //撕裂聚晶合成

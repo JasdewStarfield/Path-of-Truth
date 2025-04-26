@@ -1569,22 +1569,23 @@
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:blood_staff"
 			id: "722556B2244FD56A"
-			rewards: [{
-				id: "26CFC52066A8609A"
-				item: {
-					Count: 1
-					id: "alshanex_familiars:familiar_spellbook"
-					tag: {
-						ISB_Spells: {
-							data: [ ]
-							maxSpells: 10
-							mustEquip: 1b
-							spellWheel: 1b
-						}
-					}
+			rewards: [
+				{
+					id: "5A4DA1AA91AA2644"
+					item: "goety:unholy_blood"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "13036CF909DF7069"
+					item: "goety:unholy_hat"
+					type: "item"
+				}
+				{
+					id: "6693CBA8386FCE14"
+					item: "goety:unholy_robe"
+					type: "item"
+				}
+			]
 			subtitle: "收集铁魔法所有的战斗用魔杖和剑！"
 			tasks: [
 				{
@@ -2515,7 +2516,18 @@
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["你的蛋疑似有点太多了）"]
 			hide_until_deps_complete: true
-			icon: "villagersellanimals:crate_chick"
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						Insulation: [ ]
+					}
+				}
+				id: "scguns:ridgetop"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "04BFA1A4FAC092C9"
 			rewards: [{
 				count: 4
@@ -2835,7 +2847,7 @@
 				"第一、二次&c血量低于48点&r时，船长会获得“生命恢复8”效果10秒和“漂浮”效果5秒。在漂浮状态下，她拥有惊人的移速。同时，船长会&b召唤三个持续30秒的剧毒环刃或迷宫玫瑰&r并使其环绕于她四周。"
 				"船长会&e用多种武器（每35秒进行切换）&r进行进攻，具有牵引玩家的能力，并在手持长矛的状态下有&c最高21点破盾伤害（取决于游戏难度）&r。"
 				"{@pagebreak}"
-				"船长免疫一切弹射物伤害、爆炸伤害、火焰伤害、摔落伤害、闪电伤害和熔岩灼烧伤害（但是不免疫铁魔法的法术伤害和焦焰枪火的枪械伤害）。"
+				"船长免疫一切弹射物伤害、爆炸伤害、火焰伤害、摔落伤害、闪电伤害和熔岩灼烧伤害&b（但是不免疫铁魔法的法术伤害和焦焰枪火的枪械伤害）&r。"
 				"船长拥有&c&l抗拒斩首&r&r的能力，在其血量在16点以下时，血量会以每秒8点的速度回复至16点以上。"
 				"建议通过高伤害法术，高频率伤害法术或高DPS枪械进行斩杀。"
 				""
