@@ -90,6 +90,7 @@ StartupEvents.registry('item', (event) => {
   event.create("terrasteel_sheet").displayName('Terrasteel Sheet')
   event.create("crushed_raw_bauxite").displayName('Crushed Raw Bauxite')
   event.create("frostfire_double_plate").displayName('Frostfire Double Plate').texture('kubejs:item/undergarden_compat/frostfire_double_plate')
+  event.create("slag_chunk").displayName('Slag Chunk')
   
 	event.create("battery_component").displayName('Battery Component')
   event.create("steel_mechanism").displayName('Steel Mechanism')
@@ -154,6 +155,12 @@ StartupEvents.registry('block', (event) => {
 })
 
 StartupEvents.registry('fluid', (event) => {
+  //矿渣泥浆
+  event.create('slurry_slag')
+  .thickTexture(0xFCCA91)
+  .bucketColor(0xFCCA91)
+  .displayName('Slurry Slag')
+  
   //熔融铁
   event.create('molten_iron')
   .thickTexture(0xFDB057)
@@ -168,8 +175,7 @@ StartupEvents.registry('fluid', (event) => {
   .displayName('Molten Steel')
   .temperature(1300)
 
-
-  //熔融炉渣
+  //熔融钢-炉渣
   event.create('molten_slag')
   .thickTexture(0xFCCA91)
   .bucketColor(0xFCCA91)

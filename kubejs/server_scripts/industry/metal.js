@@ -489,6 +489,24 @@ ServerEvents.recipes(event => {
     //石墨
     event.remove({id: "createnuclear:pressing/graphene"})
 
+    //矿渣再利用
+    event.recipes.create.crushing([Item.of("kubejs:slag_chunk",2),Item.of("kubejs:slag_chunk",2).withChance(0.5)], "#forge:slag")
+    event.recipes.create.mixing(Fluid.of("kubejs:slurry_slag", 100), [Fluid.of("minecraft:water", 100), Item.of("kubejs:slag_chunk")])
+    event.recipes.vintageimprovements.centrifugation([
+        Fluid.of("minecraft:water", 100),
+        Item.of("mud"),
+        Item.of("gold_nugget").withChance(0.01),
+        Item.of("create:copper_nugget").withChance(0.03),
+        Item.of("create:zinc_nugget").withChance(0.03),
+        Item.of("immersiveengineering:nugget_nickel").withChance(0.03),
+        Item.of("oreganized:lead_nugget").withChance(0.02),
+        Item.of("oreganized:silver_nugget").withChance(0.01),
+        Item.of("immersiveengineering:nugget_uranium").withChance(0.01),
+        Item.of("simplemetals_tin:tin_nugget").withChance(0.03),
+        Item.of("scguns:anthralite_nugget").withChance(0.02),
+    ],
+    Fluid.of('kubejs:slurry_slag', 200)).minimalRPM(128)
+
     //玉石增殖
     event.custom({
         "type":"immersiveengineering:cloche",

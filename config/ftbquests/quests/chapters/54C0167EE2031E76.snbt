@@ -1291,6 +1291,7 @@
 		}
 		{
 			dependencies: ["43BB332647AB6F59"]
+			icon: "scguns:phosphor_dust"
 			id: "214744E19F32B00E"
 			rewards: [{
 				id: "3BF7F25B7C6865FB"

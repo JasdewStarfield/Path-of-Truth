@@ -19,7 +19,8 @@ const flammableFluids = [
 const slownessFluids = [
   "kubejs:heavy_oil",
   "kubejs:liquid_plastic",
-  "createdieselgenerators:crude_oil"
+  "createdieselgenerators:crude_oil",
+  "kubejs:slurry_slag"
 ]
 const slipperyFluids = [
   "kubejs:lubricant"
