@@ -779,17 +779,17 @@
     "modId": "justenoughprofessions",
     "version": "3.0.1"
   },
-  "Kiwi-1.20.1-Forge-11.8.30.jar": {
+  "Kiwi-1.20.1-Forge-11.8.31.jar": {
     "modId": "kiwi",
-    "version": "11.8.30+forge"
+    "version": "11.8.31+forge"
   },
   "kleeslabs-forge-1.20.1-15.0.6.jar": {
     "modId": "kleeslabs",
     "version": "15.0.6"
   },
-  "kleiders_custom_renderer-7.3.0-forge-1.20.1.jar": {
+  "kleiders_custom_renderer-7.4.0-forge-1.20.1.jar": {
     "modId": "kleiders_custom_renderer",
-    "version": "7.3.0"
+    "version": "7.4.0"
   },
   "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar": {
     "modId": "konkrete",
@@ -1192,9 +1192,9 @@
     "modId": "sophisticatedbackpacks",
     "version": "3.23.13.1230"
   },
-  "sophisticatedcore-1.20.1-1.2.49.962.jar": {
+  "sophisticatedcore-1.20.1-1.2.51.966.jar": {
     "modId": "sophisticatedcore",
-    "version": "1.2.49.962"
+    "version": "1.2.51.966"
   },
   "sound-physics-remastered-forge-1.20.1-1.4.13.jar": {
     "modId": "sound_physics_remastered",

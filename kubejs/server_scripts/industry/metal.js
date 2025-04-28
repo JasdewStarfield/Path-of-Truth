@@ -489,6 +489,59 @@ ServerEvents.recipes(event => {
     //石墨
     event.remove({id: "createnuclear:pressing/graphene"})
 
+    //玉石增殖
+    event.custom({
+        "type":"immersiveengineering:cloche",
+        "input":{"item":"blue_skies:sunstone_crystal"},
+        "render":{"type":"generic","block":"blue_skies:sunstone_crystal"},
+        "results":[
+            {"count": 1, "item":"blue_skies:sunstone_crystal"}
+        ],
+        "soil":{"item":"blue_skies:lunar_stone"},
+        "time":800
+    })
+    event.custom({
+        "type":"immersiveengineering:cloche",
+        "input":{"item":"blue_skies:moonstone_crystal"},
+        "render":{"type":"generic","block":"blue_skies:moonstone_crystal"},
+        "results":[
+            {"count": 1, "item":"blue_skies:moonstone_crystal"}
+        ],
+        "soil":{"item":"blue_skies:turquoise_stone"},
+        "time":800
+    })
+    event.recipes.create.crushing([Item.of('blue_skies:moonstone_shard',2).withChance(0.5),Item.of('blue_skies:moonstone_shard',4)], Item.of('blue_skies:moonstone_crystal'))
+    event.recipes.create.mixing("goety:jade", [Item.of('blue_skies:moonstone_crystal'),Item.of('blue_skies:sunstone_crystal')])
+
+    //炽铁
+    event.recipes.create.compacting('blue_skies:horizonite_block', [
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#blue_skies:ingots/horizonite',
+        '#blue_skies:ingots/horizonite',
+        '#blue_skies:ingots/horizonite',
+        'blue_skies:sunstone_crystal'
+    ]).heated()
+
+    //缪铁
+    event.recipes.create.compacting('blue_skies:falsite_block', [
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#blue_skies:ingots/falsite',
+        '#blue_skies:ingots/falsite',
+        '#blue_skies:ingots/falsite',
+        'blue_skies:moonstone_crystal'
+    ])
+
+
     //补充一些沉浸工程压板配方
     let IEMetalPressing = (material) => {
         event.custom({
