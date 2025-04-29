@@ -3,7 +3,7 @@
 	#The time interval consumed each time: time>-11
 	Time = 0.0
 	#Show time left of reactor in inventury
-	"Tip in inventury" = true
+	"Tip in inventury" = false
 
 ["Brass plates"]
 	#change armor value
@@ -23,9 +23,9 @@
 
 ["Alloy plates"]
 	#change armor value
-	Armor = 2.0
+	Armor = 3.0
 	#change toughness value
-	Toughness = 1.0
+	Toughness = 1.5
 	#change weight value
 	Weight = 1.5
 
