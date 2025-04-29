@@ -12,6 +12,9 @@ ItemEvents.modification(event => {
   event.modify('minecraft:netherite_boots', item => {
     item.armorProtection = 5
   })
+  event.modify('minecraft:netherite_ingot', item => {
+    item.rarity = "epic"
+  })
 
   //雪球堆叠64
   event.modify('minecraft:snowball', item => {
