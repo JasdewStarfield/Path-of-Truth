@@ -55,6 +55,7 @@ PlayerEvents.tick(event => {
                 event.player.feetArmorItem
             ]
             let radioactiveArmorCount = armorPieces.filter(armor => armor != null && armor.hasTag("createnuclear:anti_radiation_armor")).length;
+            let regenerativeArmorCount = armorPieces.filter(armor => armor != null && armor.hasTag("kubejs:regenerative_armor")).length;
             if (radioactiveArmorCount != 4) {   //未穿戴全套防辐射装备
                 if (radioactiveItemCount >= 16 && radioactiveItemCount <= 64) {    //物品栏内有铀物品16-64个，则给予携带者3s中毒1
                     event.player.potionEffects.add("minecraft:poison", 60, 0, false, true)
@@ -67,6 +68,9 @@ PlayerEvents.tick(event => {
                     event.player.potionEffects.add("createnuclear:radiation", 600, 2, false, true)
                     event.player.potionEffects.add("minecraft:nausea", 600, 0, false, true)
                 }
+            }
+            if (regenerativeArmorCount == 4) {   //穿戴全套再生装备
+                event.player.potionEffects.add("minecraft:regeneration", 200, 2, true, false)   //给予携带者10s再生3
             }
             //event.player.tell(event.player.inventory.count(Ingredient.of("#kubejs:radioactive")).toString())
             //event.player.tell(armorPieces.filter(armor => armor != null && armor.hasTag("createnuclear:anti_radiation_armor")).length.toString())
@@ -100,9 +104,9 @@ PlayerEvents.tick(event => {
 
 
         if (event.player.age % 200 == 0) {  //每10秒触发一次
-            if (event.player.inventory.find("kubejs:divine_shield_system") != -1) {    //神圣护盾系统：每10s给予携带者20s伤害吸收2（8点临时护盾），以及5s生命回复1
+            if (event.player.inventory.find("kubejs:divine_shield_system") != -1) {    //神圣护盾系统：每10s给予携带者20s伤害吸收2（8点临时护盾），以及3s生命回复5
                 event.player.potionEffects.add("minecraft:absorption", 400, 1, true, false)
-                event.player.potionEffects.add("minecraft:regeneration", 100, 0, false, false)
+                event.player.potionEffects.add("minecraft:regeneration", 60, 4, false, false)
             }
         }
     }

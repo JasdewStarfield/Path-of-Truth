@@ -9,6 +9,20 @@ const engineeringBlocks = [
     'kubejs:electronic_engineering'
 ]
 
+const RegenerativeArmor = [
+    'minecraft:netherite_helmet',
+    'minecraft:netherite_chestplate',
+    'minecraft:netherite_leggings',
+    'minecraft:netherite_boots',
+    'irons_spellbooks:netherite_mage_helmet',
+    'irons_spellbooks:netherite_mage_chestplate',
+    'irons_spellbooks:netherite_mage_leggings',
+    'irons_spellbooks:netherite_mage_boots',
+    'create:netherite_diving_helmet',
+    'create:netherite_backtank',
+    'scguns:netherite_respirator'
+]
+
 const LeatherLikeBoots = [
     'alexsmobs:roadrunner_boots',
     'cold_sweat:goat_fur_boots',
@@ -425,6 +439,9 @@ ServerEvents.tags("item", (event) => {
 
     //造成辐射的物品
     Radioactive.forEach((id) => event.add("kubejs:radioactive", id))
+
+    //给予生命恢复效果的护甲
+    RegenerativeArmor.forEach((id) => event.add("kubejs:regenerative_armor", id))
 
     //修复非蛋白质物品可以用来制作卷心菜卷
     event.remove("farmersdelight:cabbage_roll_ingredients","#forge:mushrooms")
