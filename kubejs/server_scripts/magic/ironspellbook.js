@@ -41,6 +41,22 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //添加雷霆之杖配方
+    event.shaped(
+        Item.of('irons_spellbooks:lightning_rod'),
+        [
+            ' A ',
+            'BCB',
+            ' D '
+        ],
+        {
+            C: 'irons_spellbooks:energized_core',
+            D: 'kubejs:leyden_jar',
+            B: 'kubejs:terrasteel_sheet',
+            A: 'minecraft:lightning_rod'
+        }
+    )
+
     //修改法师护甲配方
     event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:wandering_magician_helmet'},
     'irons_spellbooks:arcane_essence', 'irons_spellbooks:magic_cloth' )
