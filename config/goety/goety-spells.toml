@@ -49,6 +49,9 @@
 		#Time to cast Killing Spell, Default: 60
 		#Range: 0 ~ 72000
 		killingTime = 60
+		#How much damage percentage multiplier of the target's health is applied back to caster, Default: 1.25
+		#Range: 0.0 ~ 1.7976931348623157E308
+		killingFeedback = 1.25
 
 	[Spells."Whirlwind Spell"]
 		#Whirlwind Spell Cost, Default: 4
@@ -121,7 +124,7 @@
 		#How many ticks the Feasting Spell much charge before casting, Default: 0
 		#Range: > 0
 		feastChargeUp = 0
-		#Feasting Spell Cost, Default: 8
+		#Feasting Spell Cost, Default: 16
 		#Range: > 0
 		feastCost = 8
 		#Time to cast Feasting Spell per second, Default: 20

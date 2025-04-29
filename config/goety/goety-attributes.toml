@@ -140,6 +140,9 @@
 			#How much Max Health Haunted Armor have, Default: 25.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			hauntedArmorHealth = 25.0
+			#How much damage Haunted Armor deals, Default: 3.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			hauntedArmorDamage = 3.0
 
 		[Attributes.General.Necromancer]
 			#How much following/detection range Necromancers have, Default: 16.0

@@ -85,6 +85,8 @@
 	#How far servants can patrol from their patrol location, Default: 16
 	#Range: > 2
 	servantPatrolRange = 16
+	#Whether mobs owned by player outside of Goety Servants can heal while wearing appropriate robes, Default: true
+	compatMinionHeal = true
 
 	[Servants."Water Servants"]
 		#How frequent Water Servants heal, count seconds, Default: 1
@@ -451,6 +453,10 @@
 		[Textures."Summoned Mobs"."Guardian Servants"]
 			#If Guardian Servants have custom textures, Default: true
 			guardianServantTexture = true
+
+		[Textures."Summoned Mobs"."Reaper Servants"]
+			#If Reaper Servants have custom textures, Default: true
+			reaperServantTexture = true
 
 [Spawning]
 

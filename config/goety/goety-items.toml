@@ -287,6 +287,9 @@
 		#How fast Special Tools mines, the higher the better, Default: 8.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		specialToolsBreakSpeed = 8.0
+		#How many seconds Rampaging Axe gives Rampage for, Default: 10
+		#Range: > 1
+		rampagingAxeDuration = 10
 
 	["Tools & Weapons"."Dark Tools"]
 		#How much damage Dark Tools deals, the configured number is added to Tool Base Damage, Default: 3.0
