@@ -41,45 +41,47 @@ let Registries = Java.loadClass('net.minecraft.core.registries.Registries')
 * @param {Internal.LivingEvent$LivingTickEvent} event 
 */
 global.entitytick = event => {
-  const { entity } = event
-  if (!global.entitytick.acidDamageSource) {
-    try {
-      global.entitytick.acidDamageSource = DamageSource(global.getFromRegistry(Registries.DAMAGE_TYPE, "immersiveengineering:acid"))
-    } catch(e) {
-      return
+  if (entity.age % 4 == 0) {
+    const { entity } = event
+    if (!global.entitytick.acidDamageSource) {
+      try {
+        global.entitytick.acidDamageSource = DamageSource(global.getFromRegistry(Registries.DAMAGE_TYPE, "immersiveengineering:acid"))
+      } catch(e) {
+        return
+      }
     }
+    let acidDamageSource = global.entitytick.acidDamageSource
+    hotFluids.forEach((fluidName) => {
+      if (entity.isInFluidType(Fluid.of(fluidName).fluid.fluidType)) {
+        entity.lavaHurt()
+      }
+    })
+    acidFluids.forEach((fluidName) => {
+      if (entity.isInFluidType(Fluid.of(fluidName).fluid.fluidType)) {
+        entity.attack(acidDamageSource, 2)
+      }
+    })
+    flammableFluids.forEach((fluidName) => {
+      if (entity.isInFluidType(Fluid.of(fluidName).fluid.fluidType)) {
+        entity.potionEffects.add("immersiveengineering:flammable", 100, 1, false, true)
+      }
+    })
+    slownessFluids.forEach((fluidName) => {
+      if (entity.isInFluidType(Fluid.of(fluidName).fluid.fluidType)) {
+        entity.potionEffects.add("minecraft:slowness", 20, 3, false, true)
+      }
+    })
+    slipperyFluids.forEach((fluidName) => {
+      if (entity.isInFluidType(Fluid.of(fluidName).fluid.fluidType)) {
+        entity.potionEffects.add("immersiveengineering:slippery", 200, 0, false, true)
+      }
+    })
+    radiationFluids.forEach((fluidName) => {
+      if (entity.isInFluidType(Fluid.of(fluidName).fluid.fluidType)) {
+        entity.potionEffects.add("createnuclear:radiation", 80, 0, false, true)
+      }
+    })
   }
-  let acidDamageSource = global.entitytick.acidDamageSource
-  hotFluids.forEach((fluidName) => {
-    if (entity.isInFluidType(Fluid.of(fluidName).fluid.fluidType)) {
-      entity.lavaHurt()
-    }
-  })
-  acidFluids.forEach((fluidName) => {
-    if (entity.isInFluidType(Fluid.of(fluidName).fluid.fluidType)) {
-      entity.attack(acidDamageSource, 2)
-    }
-  })
-  flammableFluids.forEach((fluidName) => {
-    if (entity.isInFluidType(Fluid.of(fluidName).fluid.fluidType)) {
-      entity.potionEffects.add("immersiveengineering:flammable", 100, 1, false, true)
-    }
-  })
-  slownessFluids.forEach((fluidName) => {
-    if (entity.isInFluidType(Fluid.of(fluidName).fluid.fluidType)) {
-      entity.potionEffects.add("minecraft:slowness", 20, 3, false, true)
-    }
-  })
-  slipperyFluids.forEach((fluidName) => {
-    if (entity.isInFluidType(Fluid.of(fluidName).fluid.fluidType)) {
-      entity.potionEffects.add("immersiveengineering:slippery", 200, 0, false, true)
-    }
-  })
-  radiationFluids.forEach((fluidName) => {
-    if (entity.isInFluidType(Fluid.of(fluidName).fluid.fluidType)) {
-      entity.potionEffects.add("createnuclear:radiation", 80, 0, false, true)
-    }
-  })
 }
 global.entitytick.acidDamageSource = null
 
