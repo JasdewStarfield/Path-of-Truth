@@ -1,0 +1,8 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{"item":"collectorsreap:portobello"},
+    "render":{"type":"generic","block":"collectorsreap:portobello"},
+    "results":[{"item":"collectorsreap:portobello"}],
+    "soil":[{"item":"minecraft:mycelium"},{"item":"minecraft:podzol"}],
+    "time":480
+}

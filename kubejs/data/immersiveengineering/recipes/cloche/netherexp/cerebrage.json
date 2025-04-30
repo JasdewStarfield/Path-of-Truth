@@ -1,0 +1,8 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{"item":"netherexp:cerebrage_seeds"},
+    "render":{"type":"crop","block":"netherexp:cerebrage_skull"},
+    "results":[{"count":2,"item":"netherexp:cerebrage"}],
+    "soil":{"item":"minecraft:skeleton_skull"},
+    "time":500
+}

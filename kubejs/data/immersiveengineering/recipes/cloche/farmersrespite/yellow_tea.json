@@ -1,0 +1,8 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{"item":"farmersrespite:tea_seeds"},
+    "render":{"type":"generic","block":"farmersrespite:small_tea_bush"},
+    "results":[{"count":1,"item":"farmersrespite:yellow_tea_leaves"}],
+    "soil":{"item":"minecraft:dirt"},
+    "time":800
+}

@@ -1,0 +1,8 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{"item":"endersdelight:voidpepper"},
+    "render":{"type":"generic","block":"endersdelight:voidpepper_block"},
+    "results":[{"item":"endersdelight:voidpepper"}],
+    "soil":{"item":"minecraft:end_stone"},
+    "time":480
+}

@@ -3,8 +3,9 @@
     "dimensions":["blue_skies:everdawn"],
     "fail_chance":0.15,
     "ores":[
-        {"chance":0.8,"output":{"item":"blue_skies:horizonite_ore"}},
-        {"chance":0.2,"output":{"tag":"forge:dusts/sulfur"}}
+        {"chance":0.7,"output":{"item":"blue_skies:horizonite_ore"}},
+        {"chance":0.15,"output":{"tag":"forge:dusts/phosphor"}},
+        {"chance":0.15,"output":{"tag":"forge:dusts/sulfur"}}
     ],
     "spoils":[
         {"chance":0.7,"output":{"item":"blue_skies:lunar_cobblestone"}},
