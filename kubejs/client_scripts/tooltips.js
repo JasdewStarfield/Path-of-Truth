@@ -25,6 +25,8 @@ ItemEvents.tooltip(e => {
     e.add(["kubejs:potion_of_talent"], [Text.blue({translate:'item.kubejs.potion_of_talent.desc'})])
     e.add(["kubejs:potion_of_balance"], [Text.blue({translate:'item.kubejs.potion_of_balance.desc'})])
 
+    e.add(["kubejs:max_magic_ring"], [Text.gold({translate:'item.kubejs.max_magic_ring.desc'})])
+
     e.add(["kubejs:code_destruction"], [Text.red({translate:'item.kubejs.code_destruction.desc'})])
     e.add(["kubejs:code_formation"], [Text.red({translate:'item.kubejs.code_formation.desc'})])
     e.add(["kubejs:code_perfection"], [Text.red({translate:'item.kubejs.code_perfection.desc'})])

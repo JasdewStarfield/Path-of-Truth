@@ -454,6 +454,34 @@ ServerEvents.recipes(event => {
             "item": 'alexsmobs:spawn_egg_farseer'//实际产出
         }
     })
+    //魔戒锻造
+    event.custom({
+        "type": "goety:ritual",
+        "ritual_type": "goety:craft",//仪式主类型（制作）
+        "activation_item": {
+            "item": 'minecraft:netherite_ingot'//中心物品
+        },
+        "craftType": "forge",//仪式副类型（锻造）
+        "soulCost": 1000,//每秒消耗
+        "duration": 60,//时长
+        "ingredients": [
+            {
+                "item": 'botania:aura_ring_greater'
+            },
+            {
+                "item": 'irons_spellbooks:frostward_ring'
+            },
+            {
+                "item": 'irons_spellbooks:poisonward_ring'
+            },
+            {
+                "item": 'irons_spellbooks:fireward_ring'
+            }
+        ],
+        "result": {
+            "item": 'kubejs:max_magic_ring'//实际产出
+        }
+    })
     
 
     //死灵火盆系列配方

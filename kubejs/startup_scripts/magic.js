@@ -6,6 +6,14 @@ StartupEvents.registry('item', (event) => {
 	event.create("fire_elemental_core").displayName('Fire Elemental Core').texture('kubejs:item/elemental_core/fire').rarity('rare')
 	event.create("wind_elemental_core").displayName('Wind Elemental Core').texture('kubejs:item/elemental_core/wind').rarity('epic')
 
+	//魔戒
+	event.create("max_magic_ring")
+		.maxStackSize(1)
+		.displayName('Magic Ring')
+		.texture('kubejs:item/max_magic_ring')
+		.rarity('epic')
+		.tag('curios:ring')
+
 	//瓶子和三种药剂
 	event.create("reinforced_bottle")
 		.maxStackSize(16)

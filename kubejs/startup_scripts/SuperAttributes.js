@@ -9,14 +9,19 @@
     // 攻击伤害
     let attrIncDamage1 = new AttributeModifier('add damage', 2.5, AttributeModifier.Operation.ADDITION)
     let attrIncDamage2 = new AttributeModifier('add damage', 3, AttributeModifier.Operation.ADDITION)
+    let curiosAttrIncDamage = new AttributeModifier('add damage', 0.5, AttributeModifier.Operation.MULTIPLY_TOTAL)
     // 最大魔法值
     let attrIncMana1 = new AttributeModifier('add mana', 200, AttributeModifier.Operation.ADDITION)
     let attrIncMana2 = new AttributeModifier('add mana', 150, AttributeModifier.Operation.ADDITION)
+    let curiosAttrIncMana = new AttributeModifier('add mana', 0.75, AttributeModifier.Operation.MULTIPLY_TOTAL)
     // 法术强度
     let attrIncPower1 = new AttributeModifier('add power', 0.2, AttributeModifier.Operation.MULTIPLY_BASE)
     let attrIncPower2 = new AttributeModifier('add power', 0.15, AttributeModifier.Operation.MULTIPLY_BASE)
     // 冷却缩减
     let attrIncCD = new AttributeModifier('add cd', 0.05, AttributeModifier.Operation.MULTIPLY_TOTAL)
+    let curiosAttrIncCD = new AttributeModifier('add cd', 0.15, AttributeModifier.Operation.MULTIPLY_TOTAL)
+    // 生命值削减
+    let attrIncHP = new AttributeModifier('add hp', -0.5, AttributeModifier.Operation.MULTIPLY_TOTAL)
 
     ForgeEvents.onEvent('net.minecraftforge.event.ItemAttributeModifierEvent', e => global.InjectNetheriteArmor(e))
     //修改下界合金法师护甲
@@ -48,14 +53,15 @@
     }
 
     ForgeEvents.onEvent('top.theillusivec4.curios.api.event.CurioAttributeModifierEvent', e => global.InjectCurios(e))
-    //修改饰品
+    //修改魔戒
     global.InjectCurios = (/**@type {Internal.CurioAttributeModifierEvent}*/ e) => {
         let { itemStack, slotType: slot } = e
-        if (itemStack.id == 'irons_spellbooks:emerald_stoneplate_ring') {
-            e.addModifier(Attributes.ATTACK_DAMAGE, attrIncDamage1)
-            e.addModifier(AttributeRegistry.MAX_MANA.get(), attrIncMana1)           
-            e.addModifier(AttributeRegistry.SPELL_POWER.get(), attrIncPower)
-            e.addModifier(AttributeRegistry.COOLDOWN_REDUCTION.get(), attrIncCD)
+        if (itemStack.id == 'kubejs:max_magic_ring') {
+            e.addModifier(Attributes.ATTACK_DAMAGE, curiosAttrIncDamage)
+            e.addModifier(AttributeRegistry.MAX_MANA.get(), curiosAttrIncMana)           
+            e.addModifier(AttributeRegistry.SPELL_POWER.get(), attrIncPower1)
+            e.addModifier(AttributeRegistry.COOLDOWN_REDUCTION.get(), curiosAttrIncCD)
+            e.addModifier(Attributes.MAX_HEALTH, attrIncHP)
         }
     }
 
