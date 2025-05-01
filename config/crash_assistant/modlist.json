@@ -19,9 +19,9 @@
     "modId": "alexsmobs",
     "version": "1.22.9"
   },
-  "alltheleaks-0.1.3-beta+1.20.1-forge.jar": {
+  "alltheleaks-0.1.4-beta+1.20.1-forge.jar": {
     "modId": "alltheleaks",
-    "version": "0.1.3-beta+1.20.1-forge"
+    "version": "0.1.4-beta+1.20.1-forge"
   },
   "almostunified-forge-1.20.1-0.9.4.jar": {
     "modId": "almostunified",
@@ -187,9 +187,9 @@
     "modId": "cerbons_api",
     "version": "1.1.0"
   },
-  "chat_heads-0.13.17-forge-1.20.jar": {
+  "chat_heads-0.13.18-forge-1.20.jar": {
     "modId": "chat_heads",
-    "version": "0.13.17"
+    "version": "0.13.18"
   },
   "chestsearchbar-1.20.1-1.5.0.jar": {
     "modId": "chestsearchbar",
@@ -242,6 +242,10 @@
   "compressed_create_recipes-1.2.3.jar": {
     "modId": "compressed_create_recipes",
     "version": "1.2.3"
+  },
+  "compressedengineering-1.4.3.jar": {
+    "modId": "compressedengineering",
+    "version": "1.4.3"
   },
   "configured-forge-1.20.1-2.2.3.jar": {
     "modId": "configured",

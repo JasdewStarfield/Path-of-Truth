@@ -1,0 +1,11 @@
+
+["Compressed Engineering Config"]
+	#A list of multipliers on the fuel duration in the Improved Blast Furnace, in order of 'No preheater', 'One preheater' and 'Two preheaters' Higher values means the fuel lasts longer.
+	"IBF Fuel Efficiency" = [1.0, 1.0, 1.0]
+	#List of multipliers for the speed of the Improved Blast Furnace, in order of 'No preheater', 'One preheater' and 'Two preheaters'
+	"IBF Speed Multipliers" = [1, 2, 3]
+	#Enable an alternative implementation of liquid concrete drying, where it dries all at once, starting from the source. Far from perfect, but should prevent permanent infinite concrete setups.
+	"Liquid Concrete Rework" = true
+	#Allows automatic insertion of graphite electrodes in the arc furnace through the holder on top.
+	"Arc Furnace Electrode Automation" = true
+
