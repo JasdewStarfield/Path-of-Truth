@@ -29,7 +29,6 @@ function ShuffleArray(arr, rng) {
 }
 
 function GenSudoku(seed, keepPredicate) {
-    console.log(seed)
     let rng = GetSeededRandom(seed)
     /**@type {number[][]}*/
     let pool = Array(9)
