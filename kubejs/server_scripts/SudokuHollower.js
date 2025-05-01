@@ -25,9 +25,11 @@ function ShuffleArray(arr, rng) {
         let pick = Math.floor(rng() * (1 + i))
         if (pick != i) [arr[i], arr[pick]] = [arr[pick], arr[i]]
     }
+    return arr
 }
 
 function GenSudoku(seed, keepPredicate) {
+    console.log(seed)
     let rng = GetSeededRandom(seed)
     /**@type {number[][]}*/
     let pool = Array(9)
@@ -35,23 +37,22 @@ function GenSudoku(seed, keepPredicate) {
         .map(() => [])
 
     // 1. gen fill seq
-    let fillSeq = []
-    let offset = Math.floor(81 * rng())
-    for (let i = 0; i < 81; i++) {
-        let j = (i + offset) % 81
-        fillSeq.push([j % 9, Math.floor(j / 9)])
+    let getInitSeq = () => {
+        let ret = []
+        let offset = Math.floor(81 * rng())
+        for (let i = 0; i < 81; i++) {
+            let j = (i + offset) % 81
+            ret.push([j % 9, Math.floor(j / 9)])
+        }
+        return ret
     }
-    // ShuffleArray(fillSeq, rng)
-    // 随机填充位置必爆，改固定位置随机数字顺序
-    let fillChoices = Array(9)
-        .fill(0)
-        .map((_, i) => i + 1)
-    ShuffleArray(fillChoices, rng)
+    let getInitChoices = () => ShuffleArray([1, 2, 3, 4, 5, 6, 7, 8, 9], rng)
+    let fillChoices, fillSeq // init later
 
     // 2. backtracking
     let counter = 0,
         success = false
-    let early_terminate = 1e6
+    let early_terminate = 2085
     function validAt(r, c) {
         let self = pool[r][c]
         for (let i = 0; i < 9; i++) {
@@ -72,6 +73,13 @@ function GenSudoku(seed, keepPredicate) {
         return true
     }
     function fillAt(idx) {
+        // init
+        if (idx === 0) {
+            for (let row of pool) row.length = 0
+            fillSeq = getInitSeq()
+            fillChoices = getInitChoices()
+            counter = 0
+        }
         counter++
         if (counter >= early_terminate) throw 'stop'
         if (rng() < 0.5) ShuffleArray(fillChoices, rng)
@@ -87,16 +95,10 @@ function GenSudoku(seed, keepPredicate) {
     }
     for (let t = 0; t < 10; t++) {
         try {
-            counter = 0
             fillAt(0)
             success = true
             break
-        } catch (e) {
-            // reset array
-            fillChoices = Array(9)
-                .fill(0)
-                .map((_, i) => i + 1)
-        }
+        } catch (e) {}
     }
     // fallback
     if (!success) {
