@@ -1119,6 +1119,24 @@
 			x: 9.0d
 			y: 1.0d
 		}
+		{
+			dependencies: ["7C566E8D9F54FEF9"]
+			description: [
+				"下界合金的魔法性质同样强大。"
+				"套装将拥有强大的加成，而且还可以聚合锻造出神秘的戒指。"
+				"但你不是指环王……"
+			]
+			id: "1BD543D35165DD57"
+			shape: "diamond"
+			subtitle: "没有咕噜"
+			tasks: [{
+				id: "28015EE7F35A709F"
+				item: "kubejs:max_magic_ring"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
 	]
 	subtitle: ["Petrochemical Engineering"]
 	title: "5I 黑金与化工"
