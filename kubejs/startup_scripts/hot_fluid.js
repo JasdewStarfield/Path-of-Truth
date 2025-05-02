@@ -41,8 +41,8 @@ let Registries = Java.loadClass('net.minecraft.core.registries.Registries')
 * @param {Internal.LivingEvent$LivingTickEvent} event 
 */
 global.entitytick = event => {
+  const { entity } = event
   if (entity.age % 4 == 0) {
-    const { entity } = event
     if (!global.entitytick.acidDamageSource) {
       try {
         global.entitytick.acidDamageSource = DamageSource(global.getFromRegistry(Registries.DAMAGE_TYPE, "immersiveengineering:acid"))
