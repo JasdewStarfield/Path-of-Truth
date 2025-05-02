@@ -75,9 +75,9 @@
     "modId": "artifacts",
     "version": "9.5.16"
   },
-  "AsyncParticles-1.10.1+1.20.1-alpha.6.jar": {
+  "AsyncParticles-1.10.1+1.20.1-beta.1.jar": {
     "modId": "asyncparticles",
-    "version": "1.10.1+1.20.1-alpha.6"
+    "version": "1.10.1+1.20.1-beta.1"
   },
   "AttributeFix-Forge-1.20.1-21.0.4.jar": {
     "modId": "attributefix",
@@ -275,6 +275,10 @@
     "modId": "corpse",
     "version": "1.20.1-1.0.20"
   },
+  "corpsecurioscompat-1.18.x-1.20.x-Forge-2.2.2.jar": {
+    "modId": "corpsecurioscompat",
+    "version": "2.2.2"
+  },
   "cosmeticarmorreworked-1.20.1-v1a.jar": {
     "modId": "cosmeticarmorreworked",
     "version": "1.20.1-v1a"
@@ -287,9 +291,9 @@
     "modId": "craftingtweaks",
     "version": "18.2.5"
   },
-  "crash_assistant-forge-1.19.2-1.20.1-1.7.16.jar": {
+  "crash_assistant-forge-1.19.2-1.20.1-1.7.17.jar": {
     "modId": "crash_assistant",
-    "version": "1.7.16"
+    "version": "1.7.17"
   },
   "cratedelight-24.11.29-1.20-forge.jar": {
     "modId": "cratedelight",
@@ -1395,10 +1399,6 @@
   "XaeroZoomout-Forge-1.20-1.1.0.jar": {
     "modId": "xaerozoomout",
     "version": "1.1.0"
-  },
-  "YetAnotherConfigLib-3.6.2+1.20.1-forge.jar": {
-    "modId": "yet_another_config_lib_v3",
-    "version": "3.6.2+1.20.1-forge"
   },
   "YungsApi-1.20-Forge-4.0.6.jar": {
     "modId": "yungsapi",
