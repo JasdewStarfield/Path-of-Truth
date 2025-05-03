@@ -2325,11 +2325,18 @@
 				tag: { }
 			}
 			id: "0E1F92E4A628487B"
-			rewards: [{
-				id: "46C5D1B1ADAB3CE5"
-				item: "metalbundles:netherite_bundle"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "46C5D1B1ADAB3CE5"
+					item: "aquamirae:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "1F5EB6C79CA1C5C9"
+					item: "immersiveengineering:shader_bag_epic"
+					type: "item"
+				}
+			]
 			subtitle: "小袋装起来了"
 			tasks: [
 				{
