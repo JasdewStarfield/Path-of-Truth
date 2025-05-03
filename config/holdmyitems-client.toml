@@ -1,0 +1,28 @@
+
+[animations]
+	#Choose your preferred animation speed (1-15)
+	#Range: 1.0 ~ 15.0
+	animationSpeed = 8.0
+	#Enable or disable swimming animation
+	enableSwimmingAnimation = true
+	#Swing animation speed (6-12)
+	#Range: 6 ~ 12
+	swingSpeed = 9
+	#Enable or disable climb and crawl animation
+	enableclimbandcrawlAnimation = true
+
+[positions]
+	#Viewmodel X Offset
+	#Range: -10.0 ~ 10.0
+	viewmodelXOffset = 0.0
+	#Viewmodel Y Offset
+	#Range: -10.0 ~ 10.0
+	viewmodelYOffset = 0.0
+	#Viewmodel Z Offset
+	#Range: -10.0 ~ 10.0
+	viewmodelZOffset = 0.0
+
+[misc]
+	#Enable MB3D compatibility mode
+	mb3DCompat = false
+
