@@ -723,9 +723,9 @@
     "modId": "immersive_armors",
     "version": "1.6.1+1.20.1"
   },
-  "immersive_machinery-0.1.1+1.20.1-forge.jar": {
+  "immersive_machinery-0.2.0+1.20.1-forge.jar": {
     "modId": "immersive_machinery",
-    "version": "0.1.1+1.20.1"
+    "version": "0.2.0+1.20.1"
   },
   "immersive_paintings-0.6.7+1.20.1-forge.jar": {
     "modId": "immersive_paintings",
@@ -907,10 +907,6 @@
   "melody_forge_1.0.3_MC_1.20.1-1.20.4.jar": {
     "modId": "melody",
     "version": "1.0.2"
-  },
-  "miningspeedtooltips-forge-1.0.0-1.20.1.jar": {
-    "modId": "miningspeedtooltips",
-    "version": "1.0.0"
   },
   "mobtimizations-forge-1.20.1-1.0.0.jar": {
     "modId": "mobtimizations",
@@ -1324,9 +1320,9 @@
     "modId": "tipsmod",
     "version": "12.1.8"
   },
-  "trailandtales_delight-1.2.5-all.jar": {
+  "trailandtales_delight-1.3-all.jar": {
     "modId": "trailandtales_delight",
-    "version": "1.2.5"
+    "version": "1.3"
   },
   "trashcans-1.0.18b-forge-mc1.20.jar": {
     "modId": "trashcans",

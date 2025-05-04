@@ -67,9 +67,9 @@ ServerEvents.recipes(event => {
         'ABA',
         'CAC'  
     ], {
-        B: 'minecraft:calcite',
+        B: 'minecraft:mud_bricks',
         A: 'minecraft:brick',
-        C: 'minecraft:clay_ball'
+        C: '#forge:nuggets/zinc'
     })
 
     //高炉砖
