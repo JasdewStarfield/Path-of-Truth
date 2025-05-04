@@ -17,7 +17,6 @@ config/embeddium-options.json
 config/embeddium-fingerprint.json
 config/oculus.properties
 config/sodium-extra-options.json
-/resourcepacks
 /shaderpacks
 /XaeroWaypoints
 /XaeroWorldMap

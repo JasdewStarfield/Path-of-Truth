@@ -1,0 +1,65 @@
+#This should under no circumstances be set to true in modpacks
+#If set to true, the mod creates a new global folder, that is global for your user on your computer.
+#The created folders will be:
+# <user_home>/.minecraft_global_packs/required_datapacks
+# <user_home>/.minecraft_global_packs/optional_datapacks
+# <user_home>/.minecraft_global_packs/required_resourcepacks
+# <user_home>/.minecraft_global_packs/optional_resourcepacks
+enable_system_global_packs = false
+
+#This config allows you to add or remove folders or single files as Data-/Resourcepacks
+#For that simply specify the file path to the folder/file relative to your .minecraft or instance folder
+#With the current config you can place a Datapack into '.minecraft/global_packs/required_data' to force enable a datapack.
+[resourcepacks]
+required = [
+    "resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.20.1.zip",
+    "resourcepacks/CN_Comforts.zip",
+    "resourcepacks/CN_CompressedCreateRecipes.zip",
+    "resourcepacks/CN_CompressedEngineering.zip",
+    "resourcepacks/CN_CopperTuffBackport.zip",
+    "resourcepacks/CN_CreateBlueSkiesCompat.zip",
+    "resourcepacks/CN_CreateCompressed.zip",
+    "resourcepacks/CN_CreatePickyWheels.zip",
+    "resourcepacks/CN_CreateUtilities.zip",
+    "resourcepacks/CN_EndersDelight.zip",
+    "resourcepacks/CN_JustEnoughMultiblocks.zip",
+    "resourcepacks/CN_MechanicalBotania.zip",
+    "resourcepacks/CN_ObscureAPI.zip",
+    "resourcepacks/CN_ReChiseled.zip",
+    "resourcepacks/CN_ReChiseledCreate.zip",
+    "resourcepacks/CN_RespawnObelisks.zip",
+    "resourcepacks/CN_SCORCHEDGUNS2.zip",
+    "resourcepacks/CN_SimpleMetalsTin.zip",
+    "resourcepacks/CN_SmidgeonOBliss.zip",
+    "resourcepacks/CN_StardewFishing.zip",
+    "resourcepacks/CN_StorageDrawers.zip",
+    "resourcepacks/CN_Tide.zip",
+    "resourcepacks/CN_VCT.zip",
+    "resourcepacks/[Moonsu] Better GUI for Sophisticated Backpacks 2.0 1.20-1.zip",
+    "resourcepacks/Better_Enderdragon.zip",
+    "resourcepacks/Comforts Modernized - V1.1.zip",
+    "resourcepacks/Create Immersive Aircraft Warship ResoucePack v1.2.zip",
+    "resourcepacks/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip",
+    "resourcepacks/SmoothDrawers_1.20.1_v2.zip",
+    "resourcepacks/Create Tweaks Compats.zip",
+    "resourcepacks/Nekos Enhanced Tools and Armour Plus V1.1.zip",
+    "resourcepacks/Lopy-Create-Pipez.zip",
+    "resourcepacks/CreateSophisticatedBackpacks.zip",
+    "resourcepacks/Midnighttiggers-FCT-Default_1.20_V6.zip",
+    "resourcepacks/Refined Storage - ReCreated v0.5.zip",
+    "resourcepacks/Simple Grass Flowers v1.9.5.zip",
+    "resourcepacks/SRU_1-3.zip",
+    "resourcepacks/Updated_Engineering_v1.7.zip",
+    "resourcepacks/FusionPixelFont-12px-monospaced-ttf.zip",
+    "resourcepacks/0-PoTAssetsOverride"
+]
+
+[datapacks]
+required = [
+    "resourcepacks/datapacks/",
+    "global_packs/required_data/"
+]
+
+optional = [
+    "global_packs/optional_data/"
+]

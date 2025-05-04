@@ -655,6 +655,10 @@
     "modId": "geckolib",
     "version": "4.7.1.2"
   },
+  "global_packs-forge-1.19.4-1.16.2_forge.jar": {
+    "modId": "globalpacks",
+    "version": "1.16.2_forge"
+  },
   "goety-2.5.33.0.jar": {
     "modId": "goety",
     "version": "2.5.33.0"
@@ -1019,10 +1023,6 @@
   "Patchouli-1.20.1-84.1-FORGE.jar": {
     "modId": "patchouli",
     "version": "1.20.1-84.1-FORGE"
-  },
-  "Paxi-1.20-Forge-4.0.jar": {
-    "modId": "paxi",
-    "version": "1.20-Forge-4.0"
   },
   "PickUpNotifier-v8.0.0-1.20.1-Forge.jar": {
     "modId": "pickupnotifier",
