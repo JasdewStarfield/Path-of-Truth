@@ -11,6 +11,7 @@
   "warnings.disk_space_ended": "$DEFAULT",
   "warnings.rubidium": "$DEFAULT",
   "msg.removed_mods": "$DEFAULT",
+  "warnings.version1_21": "$DEFAULT",
   "gui.codex_logs_analyser": "$DEFAULT",
   "commands.crash_command_validation_failed": "$DEFAULT",
   "warnings.insufficient_memory.page_file_disabled": "$DEFAULT",

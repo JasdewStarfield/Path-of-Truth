@@ -299,9 +299,9 @@
     "modId": "craftingtweaks",
     "version": "18.2.5"
   },
-  "CrashAssistant-forge-1.19.2-1.20.1-1.7.18.jar": {
+  "CrashAssistant-forge-1.19.2-1.20.1-1.7.19.jar": {
     "modId": "crash_assistant",
-    "version": "1.7.18"
+    "version": "1.7.19"
   },
   "cratedelight-24.11.29-1.20-forge.jar": {
     "modId": "cratedelight",
@@ -723,9 +723,9 @@
     "modId": "immersive_aircraft",
     "version": "1.2.2+1.20.1"
   },
-  "immersive_armors-1.6.1+1.20.1-forge.jar": {
+  "immersive_armors-1.7.0+1.20.1-forge.jar": {
     "modId": "immersive_armors",
-    "version": "1.6.1+1.20.1"
+    "version": "1.7.0+1.20.1"
   },
   "immersive_machinery-0.2.0+1.20.1-forge.jar": {
     "modId": "immersive_machinery",
@@ -779,9 +779,9 @@
     "modId": "netherexp",
     "version": "2.3.2"
   },
-  "jadensnetherexpansiondelight-1.0.2-1.20.1.jar": {
+  "jadensnetherexpansiondelight-1.0.3-1.20.1-forge.jar": {
     "modId": "jadensnetherexpansiondelight",
-    "version": "1.0.2-1.20.1"
+    "version": "1.0.3-1.20.1-forge"
   },
   "jearchaeology-1.20.1-1.0.4.jar": {
     "modId": "jearchaeology",
@@ -1195,10 +1195,6 @@
   "smsn-forge-1.1.6+mc1.20.1.jar": {
     "modId": "smsn",
     "version": "1.1.6+mc1.20.1"
-  },
-  "SneakyCurses-v8.0.2-1.20.1-Forge.jar": {
-    "modId": "sneakycurses",
-    "version": "8.0.2"
   },
   "sodiumdynamiclights-forge-1.0.9-1.20.1.jar": {
     "modId": "sodiumdynamiclights",

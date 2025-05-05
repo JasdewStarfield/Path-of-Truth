@@ -2,6 +2,9 @@
     "replace": "false",
     "values": [
         "trailandtales_delight:cherry_cake",
-        "trailandtales_delight:cherry_cheese_pie"
+        "trailandtales_delight:cherry_cheese_pie",
+        "jadensnetherexpansiondelight:lightspores_cheesecake",
+        "jadensnetherexpansiondelight:nightspores_cheesecake",
+        "jadensnetherexpansiondelight:wisp_pie"
     ]
 }
