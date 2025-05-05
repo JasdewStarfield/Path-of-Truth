@@ -13,5 +13,5 @@
 	#If this option is enabled, then show the structures that have been searched in the past.
 	showHaveFound = true
 	#If true, a new Xaero's Map way point will be add when you have search successfully
-	newWayPoint = true
+	newWayPoint = false
 
