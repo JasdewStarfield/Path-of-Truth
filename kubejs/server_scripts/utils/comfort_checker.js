@@ -8,7 +8,6 @@
     let ModCapabilities = Java.loadClass('dev.ghen.villagercomfort.common.capabilty.ModCapabilities')
     let CommonConfig = Java.loadClass('dev.ghen.villagercomfort.core.config.CommonConfig')
     let MathHelper = Java.loadClass('dev.ghen.villagercomfort.core.math.MathHelper')
-    let Mth = Java.loadClass('net.minecraft.util.Mth')
     let MemoryModuleType = Java.loadClass('net.minecraft.world.entity.ai.memory.MemoryModuleType')
     let Villager = Java.loadClass('net.minecraft.world.entity.npc.Villager')
 
@@ -202,7 +201,7 @@
         //             CommonConfig.COMFORT_PER_DAY_WITHOUT_SLEEP.get().intValue(),
         //     )
 
-        comfort = Mth.clamp(comfort, -100, 100)
+        comfort = Math.min(100, Math.max(-100, comfort))
 
         checker.tell(Text.translate('villagercomfort.ext.summary', comfort).yellow())
         villager.potionEffects.add('glowing', 10)
