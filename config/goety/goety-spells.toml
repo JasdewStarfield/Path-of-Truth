@@ -135,12 +135,12 @@
 		#Frost Nova Spell Cost, Default: 40
 		#Range: > 0
 		frostNovaCost = 40
-		#How much base minimum damage Frost Nova Spell deals, Default: 3.0
+		#How much base minimum damage Frost Nova Spell deals, Default: 5.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		frostNovaMinDamage = 5.0
-		#How much base maximum damage Frost Nova Spell deals, Default: 6.0
+		frostNovaMinDamage = 7.5
+		#How much base maximum damage Frost Nova Spell deals, Default: 10.0
 		#Range: 2.0 ~ 1.7976931348623157E308
-		frostNovaMaxDamage = 7.5
+		frostNovaMaxDamage = 15
 		#Frost Nova Spell Cooldown, Default: 100
 		#Range: > 0
 		frostNovaCoolDown = 100

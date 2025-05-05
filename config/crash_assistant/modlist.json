@@ -75,9 +75,9 @@
     "modId": "artifacts",
     "version": "9.5.16"
   },
-  "AsyncParticles-1.10.1+1.20.1-beta.1.jar": {
+  "AsyncParticles-1.10.1+1.20.1-beta.3.jar": {
     "modId": "asyncparticles",
-    "version": "1.10.1+1.20.1-beta.1"
+    "version": "1.10.1+1.20.1-beta.3"
   },
   "AttributeFix-Forge-1.20.1-21.0.4.jar": {
     "modId": "attributefix",
@@ -659,9 +659,9 @@
     "modId": "globalpacks",
     "version": "1.16.2_forge"
   },
-  "goety-2.5.33.0.jar": {
+  "goety-2.5.33.1.jar": {
     "modId": "goety",
-    "version": "2.5.33.0"
+    "version": "2.5.33.1"
   },
   "GPUTape-1.18x-1.21x-1.0.5.1.jar": {
     "modId": "gpu_tape",
@@ -1212,9 +1212,9 @@
     "modId": "sophisticatedbackpacks",
     "version": "3.23.14.1233"
   },
-  "sophisticatedcore-1.20.1-1.2.51.966.jar": {
+  "sophisticatedcore-1.20.1-1.2.52.967.jar": {
     "modId": "sophisticatedcore",
-    "version": "1.2.51.966"
+    "version": "1.2.52.967"
   },
   "sound-physics-remastered-forge-1.20.1-1.4.13.jar": {
     "modId": "sound_physics_remastered",

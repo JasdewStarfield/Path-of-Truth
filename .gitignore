@@ -97,3 +97,4 @@ config/everycomp-hazardous.properties
 config/cubes_without_borders.json
 .blinkload/mod_and_enabled_resource_pack_list_hash
 .blinkload/atlas_textures_cache.json
+config/world_preview/missing-colors.json
