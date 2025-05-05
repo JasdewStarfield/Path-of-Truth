@@ -1,0 +1,18 @@
+{
+    "villagercomfort.ext.error.invalid": "%s is not a villager",
+    "villagercomfort.ext.error.missing_cap": "villager lacks forge cap",
+    "villagercomfort.ext.header": "Comfort status of %s",
+    "villagercomfort.ext.formula": "[%s] %s %s %s = %s",
+    "villagercomfort.ext.target.BEDROOM_SIZE": "Bedroom Size",
+    "villagercomfort.ext.target.BED_COUNT": "Bed Count",
+    "villagercomfort.ext.target.BEDROOM_LIGHT": "Bedroom Light",
+    "villagercomfort.ext.target.WORKSTATION_IN_BEDROOM": "Workstation In Bedroom",
+    "villagercomfort.ext.target.WORKPLACE_SIZE": "Workplace Size",
+    "villagercomfort.ext.target.WORKSTATION_COUNT": "Workstation Count",
+    "villagercomfort.ext.target.WORKPLACE_LIGHT": "Workplace Light",
+    "villagercomfort.ext.target.WORK_DISTANCE": "Work Distance",
+    "villagercomfort.ext.target.DAYS_OUTSIDE": "Days Outside",
+    "villagercomfort.ext.target.DAYS_WITHOUT_ZOMBIE": "Days Without Threat",
+    "villagercomfort.ext.target.DAYS_WITHOUT_SLEEP": "!!GLITCHED!! Days Without Sleep",
+    "villagercomfort.ext.summary": "Total comfort: %s"
+}
