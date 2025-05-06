@@ -180,6 +180,8 @@
   "item.kubejs.obelisk_base.desc2": "如果你把它放在石碑下面，那么石碑就可以被无限充能（但是你不可以再次移动基座方块）",
   "item.kubejs.diamond_gears.desc": "这件钻石装备虽然看起来性能优异，但似乎也极其容易损坏……",
 
+  "item.eclipticseasons.calendar.desc": "把日历挂在墙上以查看当前节气！",
+
   "item.immersiveengineering.hammer.tooltip": "工程师锤",
   "item.immersiveengineering.hammer.tooltip.summary": "工程师的好帮手！用来组装_多方块结构_或者旋转一些方块，还能调整一些机器的输入和输出。",
   "item.immersiveengineering.hammer.tooltip.condition1": "对尚未组装的多方块结构的核心方块使用时",

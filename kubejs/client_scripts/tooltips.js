@@ -39,6 +39,8 @@ ItemEvents.tooltip(e => {
 
     e.add(["kubejs:steel_ingot_with_mold"], [Text.yellow({translate:'item.kubejs.steel_ingot_with_mold.desc'})])
 
+    e.add(["eclipticseasons:calendar"], [Text.aqua({translate:'item.eclipticseasons.calendar.desc'})])
+
     e.add(["minecraft:amethyst_shard"], [Text.aqua({translate:'item.kubejs.amethyst_shard.desc'})])
     e.add(["minecraft:echo_shard"], [Text.aqua({translate:'item.kubejs.echo_shard.desc'})])
 
