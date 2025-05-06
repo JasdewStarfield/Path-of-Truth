@@ -26,9 +26,22 @@ function grabPage(camelCasedName, num, maxDepth) {
 }
 function parseBotaniaPageSyntax(str) {
     return str
-        .replace(/\$\((p)?([^)]*)\)/g, (match, p1) => (p1 ? "" : "_")) // clean book references and replace with bold (_)
-        .replace(/(\.\s*)([A-Z])/g, ". $2") //add a space after a period if it's followed by an uppercase letter without a space
-        .replace(/__/g, "_")
+        .replace(/\$\((p|.*?)\)/g, (match, content) => {
+            switch (content) {
+                default:
+                    return '_' // starts
+                case 'p':
+                    return ''
+                case '':
+                case '0':
+                case '/l':
+                    return '@' // ends
+            }
+        }) // clean book references and replace with bold (_)
+        .replace(/(\.\s*)([A-Z])/g, '. $2') //add a space after a period if it's followed by an uppercase letter without a space
+        .replace(/__/g, '_')
+        .replace(/@@/g, '@')
+        .replace(/@/g, '_')
 }
 
 function sortObjectByKey(obj) {
@@ -81,9 +94,19 @@ function replaceInconsistentNames(str) {
     });
     return str;
 }
-ClientEvents.highPriorityAssets((event) => {
-  let obj = {};
-  Ingredient.of(/^botania:/).stacks.forEach((item) => {
+// gen function body
+global.doCreateBotaniaTooltipGen = (event) => {
+    let obj = {};
+    let cachedTargets = {};
+    let langType = detectLanguage()
+    let addAndCache = (item, description) => {
+        if (item.isEmpty()) return
+        let { id, descriptionId } = item
+        AddCreateTooltips(id)
+        cachedTargets[id] = 1
+        obj[`${descriptionId}.tooltip.summary`] = description
+    }
+    Ingredient.of(/^botania:/).stacks.forEach((item) => {
         let cameCaseName = snakeToCamel(item.id.split(":")[1] + "");
         cameCaseName = replaceInconsistentNames(cameCaseName);
         let key = `botania.tagline.${cameCaseName}`;
@@ -92,39 +115,40 @@ ClientEvents.highPriorityAssets((event) => {
             console.info(`missing description for ${item} key ${key}`);
             return;
         }
-        let description = `_${translated}._ ${parseBotaniaPageSyntax(
-        grabPage(cameCaseName, 0)
-        )}`;
+        let description = langType == 'zh_cn' ? `「_${translated}_」` : `"_${translated}_"`
+        description += ` ${parseBotaniaPageSyntax(grabPage(cameCaseName, 0))}`
         // also add floating and chibi versions
         let floatingVersion = Item.of(
         item.id.split(":")[0] + ":floating_" + item.id.split(":")[1]
         );
         let chibiVersion = Item.of(item.id + "_chibi");
         let floatingChibiVersion = Item.of(floatingVersion.id + "_chibi");
-        if (item.getDescriptionId() != "block.minecraft.air")
-            AddCreateTooltips(item.getId())
-            obj[`${item.getDescriptionId()}.tooltip.summary`] = description;
-        if (floatingVersion.getDescriptionId() != "block.minecraft.air")
-            AddCreateTooltips(floatingVersion.getId())
-            obj[`${floatingVersion.getDescriptionId()}.tooltip.summary`] = description;
-        if (chibiVersion.getDescriptionId() != "block.minecraft.air")
-            AddCreateTooltips(chibiVersion.getId())
-            obj[`${chibiVersion.getDescriptionId()}.tooltip.summary`] = description;
-        if (floatingChibiVersion.getDescriptionId() != "block.minecraft.air")
-            AddCreateTooltips(floatingChibiVersion.getId())
-            obj[`${floatingChibiVersion.getDescriptionId()}.tooltip.summary`] = description;
+        addAndCache(item, description)
+        addAndCache(floatingVersion, description)
+        addAndCache(chibiVersion, description)
+        addAndCache(floatingChibiVersion, description)
     });
-    /*
+
     if (Object.keys(obj).length > 0)
-        if (detectLanguage() == "zh_cn")
+        if (langType == "zh_cn")
             JsonIO.write(
                 "kubejs/assets/generated_tooltips/lang/zh_cn.json",
                 sortObjectByKey(obj)
             );
-        else if (detectLanguage() == "en_us")
+        else if (langType == "en_us")
             JsonIO.write(
                 "kubejs/assets/generated_tooltips/lang/en_us.json",
                 sortObjectByKey(obj)
             );
-    */
-});
+
+    if (Object.keys(cachedTargets).length > 0) JsonIO.write("kubejs/assets/generated_tooltips/cached_targets.json", sortObjectByKey(cachedTargets))
+}
+// auto gen or manual call
+// e@global.doCreateBotaniaTooltipGen()
+// ClientEvents.highPriorityAssets(global.doCreateBotaniaTooltipGen);
+
+// show tooltip with cache
+ClientEvents.highPriorityAssets(()=>{
+    let cachedTargets = Object.keys(JsonIO.read("kubejs/assets/generated_tooltips/cached_targets.json"))
+    for (let id of cachedTargets) AddCreateTooltips(id)
+})
