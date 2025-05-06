@@ -43,6 +43,20 @@ ServerEvents.recipes(event => {
         ]
   )
 
+  //凝胶复刻示意图
+  event.shaped(
+    Item.of('minecraft:barrier'),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        A: 'alexsmobs:mimicream',
+        B: 'minecraft:barrier'
+    }
+)
+
   /*
   //铁矿混合粉也可以用铁粉做
   event.recipes.create.mixing('3x tfmg:blasting_mixture', ['#forge:dusts/iron','#forge:dusts/iron','#forge:dusts/iron','tfmg:limesand'])
