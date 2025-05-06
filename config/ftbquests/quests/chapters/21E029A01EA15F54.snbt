@@ -91,6 +91,12 @@
 			hide_until_deps_complete: true
 			icon: "goety:magic_emerald"
 			id: "11E3776CE5E23255"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3EC581C14BCC073C"
+				table_id: 5567297392411284388L
+				type: "random"
+			}]
 			shape: "octagon"
 			size: 1.5d
 			subtitle: "只要稍微加一点力……"
@@ -198,18 +204,6 @@
 			]
 			icon: "goety:spent_totem"
 			id: "57B126A840CCD6E4"
-			rewards: [
-				{
-					id: "341F670CA953D2F3"
-					item: "goety:treasure_pouch"
-					type: "item"
-				}
-				{
-					id: "788132A00F8E3A3C"
-					item: "biomeswevegone:green_enchanted_sapling"
-					type: "item"
-				}
-			]
 			shape: "rsquare"
 			subtitle: "画魂点睛"
 			tasks: [
@@ -403,6 +397,11 @@
 				"&b&o*如果缺少墨水，工业可以合成普通墨水，而魔法催化可以产出稀有墨水。&r&r"
 			]
 			id: "7CCCB823C49F78E8"
+			rewards: [{
+				id: "0EED987BB86B8B9A"
+				item: "biomeswevegone:green_enchanted_sapling"
+				type: "item"
+			}]
 			subtitle: "哇，金色传说！"
 			tasks: [{
 				id: "2001D70EA3440122"

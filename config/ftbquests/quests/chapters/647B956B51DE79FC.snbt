@@ -480,7 +480,7 @@
 			id: "301A6952E3B16C88"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "63C5288F621515ED"
+				id: "5421401F2FB70E8B"
 				table_id: 3947091887552256602L
 				type: "choice"
 			}]

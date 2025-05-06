@@ -87,11 +87,19 @@
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
 			id: "0F9DF1C5137194E4"
-			rewards: [{
-				id: "4855EAF76355F55E"
-				item: "botania:terrasteel_ingot"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "4855EAF76355F55E"
+					item: "botania:terrasteel_ingot"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7A00B227BC01E30A"
+					table_id: 3947091887552256602L
+					type: "random"
+				}
+			]
 			shape: "octagon"
 			size: 1.5d
 			subtitle: "爱是一道光……"

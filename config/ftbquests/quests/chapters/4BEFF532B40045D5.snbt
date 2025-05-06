@@ -42,9 +42,10 @@
 			icon: "irons_spellbooks:holy_upgrade_orb"
 			id: "6E08F7A257BCB99A"
 			rewards: [{
-				id: "66FA7CD75AEC7D45"
-				item: "nethersdelight:propelplant_torch"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "2370984588161A20"
+				table_id: 2676674884076664802L
+				type: "choice"
 			}]
 			shape: "hexagon"
 			size: 1.5d
@@ -302,9 +303,11 @@
 			icon: "minecraft:zombie_head"
 			id: "6A93A46261B6C8F0"
 			rewards: [{
-				id: "5B900D928A5E081B"
-				item: "goety:tall_skull"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "399B81E50A8D9B16"
+				table_id: 5215467300486525274L
+				title: "扶我起来！"
+				type: "choice"
 			}]
 			subtitle: "哦布莱克斯！"
 			tasks: [{
