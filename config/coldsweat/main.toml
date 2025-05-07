@@ -4,7 +4,7 @@
 	#Range: 0 ~ 4
 	Difficulty = 4
 	#The current version of Cold Sweat. This is used by the auto-updater
-	Version = "2.4-b02d"
+	Version = "2.4-b03a"
 	#Allows Cold Sweat's configs to be automatically updated with new additions & formatting changes
 	"Auto Update" = true
 

@@ -86,4 +86,19 @@ BlockEvents.modification(event => {
   event.modify('kubejs:molten_slag', block => {
     block.lightEmission = 15
   })
+  event.modify('kubejs:molten_za', block => {
+    block.lightEmission = 15
+  })
+  event.modify('kubejs:molten_netherite', block => {
+    block.lightEmission = 15
+  })
+  event.modify('kubejs:molten_enriched_uranium', block => {
+    block.lightEmission = 15
+  })
+  event.modify('createnuclear:uranium', block => {
+    block.lightEmission = 15
+  })
+  event.modify('oreganized:molten_lead', block => {
+    block.lightEmission = 15
+  })
 })

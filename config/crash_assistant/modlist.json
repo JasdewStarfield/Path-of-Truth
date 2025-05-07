@@ -227,9 +227,9 @@
     "modId": "clumps",
     "version": "12.0.0.4"
   },
-  "ColdSweat-2.4-b02d.jar": {
+  "ColdSweat-2.4-b03a.jar": {
     "modId": "cold_sweat",
-    "version": "2.4-b02d"
+    "version": "2.4-b03a"
   },
   "collective-1.20.1-8.3.jar": {
     "modId": "collective",
@@ -295,9 +295,9 @@
     "modId": "craftingtweaks",
     "version": "18.2.5"
   },
-  "CrashAssistant-forge-1.19.2-1.20.1-1.7.19.jar": {
+  "CrashAssistant-forge-1.19.2-1.20.1-1.7.22.jar": {
     "modId": "crash_assistant",
-    "version": "1.7.19"
+    "version": "1.7.22"
   },
   "cratedelight-24.11.29-1.20-forge.jar": {
     "modId": "cratedelight",
@@ -487,9 +487,9 @@
     "modId": "eccentrictome",
     "version": "1.20.1-1.10.3"
   },
-  "EclipticSeasons-1.20.1-forge-0.10.10-all.jar": {
+  "EclipticSeasons-1.20.1-forge-0.10.11-all.jar": {
     "modId": "eclipticseasons",
-    "version": "0.10.10"
+    "version": "0.10.11"
   },
   "ElysiumApi-1.20.1-1.1.0.jar": {
     "modId": "elysium_api",
@@ -630,10 +630,6 @@
   "ftbquestlocalizer-1.20.1-forge-3.2.0.jar": {
     "modId": "ftbquestlocalizer",
     "version": "3.2.0"
-  },
-  "ftbquestsfreezefix-forge-1.0.0-1.20.1.jar": {
-    "modId": "ftbquestsfreezefix",
-    "version": "1.0.0"
   },
   "fullstackwatchdog-1.0.1+1.19.2-forge.jar": {
     "modId": "fullstackwatchdog",
@@ -872,9 +868,9 @@
     "modId": "longerchathistory",
     "version": "1.3"
   },
-  "lootintegrations-1.20.1-4.3.jar": {
+  "lootintegrations-1.20.1-4.4.jar": {
     "modId": "lootintegrations",
-    "version": "1.20.1-4.3"
+    "version": "1.20.1-4.4"
   },
   "lootjs-forge-1.20.1-2.12.0.jar": {
     "modId": "lootjs",
@@ -924,9 +920,9 @@
     "modId": "mods_optimizer",
     "version": "3.0.0"
   },
-  "moonlight-1.20-2.13.83-forge.jar": {
+  "moonlight-1.20-2.14.0-forge.jar": {
     "modId": "moonlight",
-    "version": "1.20-2.13.83"
+    "version": "1.20-2.14.0"
   },
   "moremobvariants-forge+1.20.1-1.3.0.1.jar": {
     "modId": "moremobvariants",
@@ -1007,6 +1003,10 @@
   "panorama_screens-1.0+forge+mc1.20.jar": {
     "modId": "panorama_screens",
     "version": "1.0+forge+mc1.20"
+  },
+  "particular-1.20.1-Forge-1.2.1.jar": {
+    "modId": "particular",
+    "version": "1.2.1"
   },
   "PassiveSearchBar+Forge+1.20.2-1.0.0.jar": {
     "modId": "passivesearchbar",

@@ -1284,6 +1284,11 @@
 					item: "minecraft:oak_hanging_sign"
 					type: "item"
 				}
+				{
+					id: "0C5A2CD3A4EC517D"
+					item: "eclipticseasons:growth_detector"
+					type: "item"
+				}
 			]
 			subtitle: "寒来暑往"
 			tasks: [{
