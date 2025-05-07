@@ -3,6 +3,10 @@
     "item.kubejs.broken_snowcap_oven.desc": "This furnace is broken! You have to repair it with raw froststeel in order to make it functional.",
     "item.kubejs.asphalt.desc": "Pour liquid asphalt onto the ground to make it soild and obtain asphalt block.",
 
+    "item.kubejs.midnight": "Midnight",
+    "item.kubejs.midnight.info": "Avada Kedavra!!!",
+    "item.kubejs.midnight.tooltip": "<The Ultimate Crystal of Magic>",
+
     "item.kubejs.steel_ingot_with_mold.desc": "Molten steel is within this mold",
 
     "item.kubejs.code_perfection.cooldown":"You are already in your perfect form!",
