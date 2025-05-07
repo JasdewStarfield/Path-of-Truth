@@ -19,10 +19,9 @@ function grabPage(camelCasedName, num, maxDepth) {
     maxDepth = maxDepth || 2;
     if (num > maxDepth) return "...";
     let key = `botania.page.${camelCasedName}${num}`;
-    let translated = Text.translate(key);
-    if (translated.getString() === key) return "";
-    if (translated.getString() === "") return "";
-    return " " + translated.getString() + grabPage(camelCasedName, num + 1);
+    let translated = Text.translate(key).getString()
+    if (!translated || translated === key || translated.startsWith('$(o)')) return ''
+    return " " + translated + grabPage(camelCasedName, num + 1);
 }
 function parseBotaniaPageSyntax(str) {
     return str
