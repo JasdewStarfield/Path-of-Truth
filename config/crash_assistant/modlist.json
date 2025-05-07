@@ -731,6 +731,10 @@
     "modId": "immersiveengineering",
     "version": "1.20.1-10.2.0-183"
   },
+  "ImmersiveIndustry-1.20.1-0.2.1.jar": {
+    "modId": "immersiveindustry",
+    "version": "1.20.1-0.2.1"
+  },
   "interiors-0.5.6+forge-mc1.20.1-build.104.jar": {
     "modId": "interiors",
     "version": "0.5.6"
