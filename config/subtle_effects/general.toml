@@ -1,7 +1,7 @@
 # Don't change this! Version used to track needed updates.
 version = 0
 enableParticleCulling = true
-particleRenderDistance = 5
+particleRenderDistance = 24
 cullParticlesWithNoAlpha = true
 cullParticlesInUnloadedChunks = true
 lavaSparkSmoke = true
@@ -14,4 +14,4 @@ fluidDropsEvaporate = true
 fluidDropsEvaporationVolume = 0.25
 dropLandSounds = true
 mobSkullShaders = false
-fireHeight = 0.0
+fireHeight = -0.2

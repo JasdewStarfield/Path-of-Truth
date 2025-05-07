@@ -11,7 +11,7 @@
 		#Enable waterfall spray particles
 		waterfallSpray = true
 		#Enable firefly particles
-		fireflies = true
+		fireflies = false
 		#Enable falling leaves particles
 		fallingLeaves = false
 		#Enable cave dust particles
@@ -23,7 +23,7 @@
 		#Enable barrel bubbles
 		barrelBubbles = true
 		#Enable popping bubbles
-		poppingBubbles = true
+		poppingBubbles = false
 		#Enable rain ripples
 		rainRipples = true
 		#Enable water drip ripples
@@ -31,7 +31,7 @@
 		#Enable cake eating particles
 		cakeEatingParticles = true
 		#Enable emissive lava drips
-		emissiveLavaDrips = true
+		emissiveLavaDrips = false
 
 	#Advanced Particle Settings
 	[general.advancedSettings]

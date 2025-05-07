@@ -65,6 +65,8 @@
 	intel_corrupted_notification = true
 	#Puts problematic frame from hs_err to message.
 	put_problematic_frame_to_message = true
+	#Puts analysis result(names of crash reasons) to message, instead of just count.
+	put_analysis_result_to_message = true
 
 #Settings of modlist feature.
 #Adds in generated msg block about which mods modpack user added/removed/updated.
