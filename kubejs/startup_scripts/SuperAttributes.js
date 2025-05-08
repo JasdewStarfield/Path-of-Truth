@@ -37,7 +37,7 @@
          * @returns
          */
         add(attr, value, op) {
-            let key = `${this.itemId};${this.slot};${attr.descriptionId}`
+            let key = `${this.itemId};${this.slot};${attr.descriptionId||attr}`
             if (!(key in this.cache)) this.cache[key] = new AttributeModifier('PoT', value, op || this.OP_ADD)
             this.event.addModifier(attr, this.cache[key])
             return this
