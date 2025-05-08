@@ -49,6 +49,20 @@
             itemStack: { id, item },
             slotType: slot,
         } = e
+        if (slot == 'mainhand' && id.startsWith('minecraft:netherite_')) {
+            //修改下界合金工具
+            if (item?.type?.slot)
+                return
+            let OriginalAttackDamage = item.damage||item.attackDamage
+            if (OriginalAttackDamage != null) {
+                e.removeAttribute(Attributes.ATTACK_DAMAGE)
+                Attrs.init(e)
+                    .add(Attributes.ATTACK_DAMAGE, OriginalAttackDamage*1.5)
+            }
+            Attrs.init(e)
+                .add("forge:block_reach", 2)
+                .add("forge:entity_reach", 2)
+        }
         if (slot !== item?.type?.slot) return
         //修改下界合金法师护甲
         if (id.startsWith('irons_spellbooks:netherite_mage_')) {

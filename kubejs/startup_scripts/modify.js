@@ -2,15 +2,34 @@ ItemEvents.modification(event => {
   //下界合金增强
   event.modify('minecraft:netherite_helmet', item => {
     item.armorProtection = 5
+    item.rarity = "epic"
   })
   event.modify('minecraft:netherite_chestplate', item => {
     item.armorProtection = 10
+    item.rarity = "epic"
   })
   event.modify('minecraft:netherite_leggings', item => {
     item.armorProtection = 8
+    item.rarity = "epic"
   })
   event.modify('minecraft:netherite_boots', item => {
     item.armorProtection = 5
+    item.rarity = "epic"
+  })
+  event.modify('minecraft:netherite_sword', item => {
+    item.rarity = "epic"
+  })
+  event.modify('minecraft:netherite_pickaxe', item => {
+    item.rarity = "epic"
+  })
+  event.modify('minecraft:netherite_axe', item => {
+    item.rarity = "epic"
+  })
+  event.modify('minecraft:netherite_shovel', item => {
+    item.rarity = "epic"
+  })
+  event.modify('minecraft:netherite_hoe', item => {
+    item.rarity = "epic"
   })
   event.modify('minecraft:netherite_ingot', item => {
     item.rarity = "epic"
