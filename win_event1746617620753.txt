@@ -1,0 +1,36 @@
+Detected that Windows has terminated one or more processes within the last minute leading up to the moment of the current Minecraft JVM instance termination,
+so with a very high probability that one of these processes is the Minecraft JVM itself.
+Command used to identify terminated processes:
+ 
+$ErrorActionPreference = 'Continue'; 
+Get-WinEvent -FilterHashtable @{ 
+  LogName='Application'; 
+  Level=2; 
+  StartTime=(Get-Date).AddMinutes(-1) 
+} *>&1 | Format-Table -Wrap -AutoSize | Out-File "win_event1746617620753.txt" -Encoding UTF8
+ 
+If no java.exe (or related JVM processes) are listed below, you can disregard this message.
+To get more information about such errors:
+1) Open Windows Event Viewer (Win+R -> eventvwr.msc -> Enter).
+2) Click "Windows Logs" -> "Application".
+3) Look for the latest Error you have.
+ 
+ ﻿
+
+   ProviderName:Application Error
+
+TimeCreated         Id LevelDisplayName Message                                                                        
+-----------         -- ---------------- -------                                                                        
+2025/5/7 19:33:38 1000 错误               出错应用程序名称： javaw.exe，版本： 17.0.13.0，时间戳： 0xd11359ba                              
+                                        出错模块名称： ucrtbase.dll， 版本： 10.0.26100.3624，时间戳： 0x45295404                      
+                                        异常代码： 0xc0000409                                                               
+                                        错误偏移： 0x00000000000a4ace                                                       
+                                        出错进程 ID： 0x522C                                                                
+                                        出错应用程序开始时间： 0x1DBBF3081BFF811                                                  
+                                        Faulting 应用程序路径： D:\jdk-17.0.13.11-hotspot\bin\javaw.exe                       
+                                        Faulting 模块路径： C:\WINDOWS\System32\ucrtbase.dll                                
+                                        Report ID： 4665b4bd-8e77-4801-aaec-15ca84910070                                
+                                        Faulting 包全名：                                                                  
+                                        Faulting 程序包相对应用程序 ID：  个                                                      
+
+
