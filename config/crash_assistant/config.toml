@@ -123,3 +123,9 @@
 	#For example "Create6Addons"
 	blacklisted_reasons = []
 
+#Checks crash_assistant compatibility with other incompatible mods.
+#Highly unrecommended to disable!
+[compatibility]
+	#Enable feature.
+	enabled = true
+

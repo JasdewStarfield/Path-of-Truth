@@ -63,6 +63,20 @@ ServerEvents.recipes(event => {
   )
 
   //分馏
+  event.remove({ id: 'createdieselgenerators:crafting/distillation_controller' })
+  event.shaped(
+    Item.of('createdieselgenerators:distillation_controller', 5),
+    [
+      'ABA',
+      'CDC'
+    ],
+    {
+      A: 'create:fluid_pipe',
+      C: 'create:andesite_alloy',
+      D: '#forge:plates/za',
+      B: 'immersiveengineering:heavy_engineering'
+    }
+  )
   event.remove({id:"createdieselgenerators:distillation/crude_oil"})
   event.custom({
     "type": "createdieselgenerators:distillation",

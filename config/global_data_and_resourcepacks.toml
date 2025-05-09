@@ -12,7 +12,7 @@ enable_system_global_packs = false
 #With the current config you can place a Datapack into '.minecraft/global_packs/required_data' to force enable a datapack.
 [resourcepacks]
 required = [
-    "resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.20.1.zip",
+    "resourcepacks/0-Minecraft-Mod-Language-Modpack-Converted-1.20.1.zip",
     "resourcepacks/CN_Comforts.zip",
     "resourcepacks/CN_CompressedCreateRecipes.zip",
     "resourcepacks/CN_CompressedEngineering.zip",
@@ -52,7 +52,7 @@ required = [
     "resourcepacks/SRU_1-3.zip",
     "resourcepacks/Updated_Engineering_v1.7.zip",
     "resourcepacks/FusionPixelFont-12px-monospaced-ttf.zip",
-    "resourcepacks/0-PoTAssetsOverride"
+    "resourcepacks/zzz-PoTAssetsOverride"
 ]
 
 [datapacks]
