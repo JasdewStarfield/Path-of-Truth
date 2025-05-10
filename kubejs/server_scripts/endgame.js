@@ -114,11 +114,14 @@ ServerEvents.recipes(event => {
   event.recipes.vintageimprovements.pressurizing([
     Fluid.of('kubejs:lubricant',250),
     '2x createdieselgenerators:asphalt_block',
-    'goety:rupture_focus'
+    'kubejs:fire_elemental_core',
+    'kubejs:water_elemental_core',
   ], [
     Fluid.of('kubejs:heavy_oil',500),
-    'goety:rupture_focus',
-  ]).superheated().secondaryFluidInput(0)
+    'kubejs:fire_elemental_core',
+    'kubejs:water_elemental_core',
+    '#forge:dusts/sulfur',
+  ]).superheated()
 
   //反应堆机壳
   event.remove({ id: 'createnuclear:item_application/reactor_casing_from_steel_and_brass_casing' })

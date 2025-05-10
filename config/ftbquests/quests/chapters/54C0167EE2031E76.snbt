@@ -1432,6 +1432,46 @@
 			x: 1.5d
 			y: -10.5d
 		}
+		{
+			dependencies: ["1A4352FB579FF77E"]
+			description: [
+				"许多矿业产线都会产出矿渣副产物，这些矿渣的主要成分是各种杂质，但“垃圾只是放错了地方的财宝”……"
+				"继续处理矿渣，你最终可以获取少量的随机矿粒！"
+			]
+			icon: "immersiveengineering:slag"
+			id: "6BB15961F92B5E4F"
+			rewards: [{
+				id: "13F06AEF693449B3"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "变废为宝"
+			tasks: [
+				{
+					id: "4E6C71DDE9199128"
+					item: "immersiveengineering:slag"
+					type: "item"
+				}
+				{
+					id: "168DF2A40BE9CCED"
+					item: "kubejs:slag_chunk"
+					type: "item"
+				}
+				{
+					id: "5E9F568CC5C95CB5"
+					item: "kubejs:slurry_slag_bucket"
+					type: "item"
+				}
+				{
+					id: "4BCE96AD4E9850AA"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: -8.0d
+		}
 	]
 	subtitle: ["Standardized Production"]
 	title: "【附加】标准化生产"

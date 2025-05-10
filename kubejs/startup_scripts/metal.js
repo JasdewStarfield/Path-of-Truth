@@ -160,6 +160,7 @@ StartupEvents.registry('fluid', (event) => {
   .thickTexture(0xFCCA91)
   .bucketColor(0xFCCA91)
   .displayName('Slurry Slag')
+  .createAttributes().dropOff(2).tickDelay(40)
   
   //熔融铁
   event.create('molten_iron')
@@ -167,6 +168,7 @@ StartupEvents.registry('fluid', (event) => {
   .bucketColor(0xFDB057)
   .displayName('Molten Iron')
   .temperature(1300)
+  .createAttributes().dropOff(2).tickDelay(40)
 
   //熔融钢
   event.create('molten_steel')
@@ -174,6 +176,7 @@ StartupEvents.registry('fluid', (event) => {
   .bucketColor(0xE9D9B3)
   .displayName('Molten Steel')
   .temperature(1300)
+  .createAttributes().dropOff(2).tickDelay(40)
 
   //熔融钢-炉渣
   event.create('molten_slag')
@@ -181,6 +184,7 @@ StartupEvents.registry('fluid', (event) => {
   .bucketColor(0xFCCA91)
   .displayName('Molten Steel-Slag Mix')
   .temperature(1300)
+  .createAttributes().dropOff(2).tickDelay(40)
 
   //熔融锌铝合金
   event.create('molten_za')
@@ -188,6 +192,7 @@ StartupEvents.registry('fluid', (event) => {
   .bucketColor(0xE8EDAD)
   .displayName('Molten ZA')
   .temperature(1800)
+  .createAttributes().dropOff(2).tickDelay(40)
 
   //熔融下界合金
   event.create('molten_netherite')
@@ -195,6 +200,7 @@ StartupEvents.registry('fluid', (event) => {
   .bucketColor(0x9D4E3D)
   .displayName('Molten Netherite')
   .temperature(2400)
+  .createAttributes().dropOff(2).tickDelay(40)
 
   //熔融浓缩铀
   event.create('molten_enriched_uranium')
@@ -202,4 +208,5 @@ StartupEvents.registry('fluid', (event) => {
   .bucketColor(0x7FF60C)
   .displayName('Molten Enriched Uranium')
   .temperature(2000)
+  .createAttributes().dropOff(2).tickDelay(40)
 })
