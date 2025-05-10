@@ -4,7 +4,6 @@ holdToCast = true
 showUnread = true
 showToasts = true
 defaultLineColor = false
-hideUnknownFishNames = true
 rodDurabilityMultiplier = 1.0
 crateWeight = 6
 crateQuality = 1
@@ -16,3 +15,4 @@ doFailSound = true
 minigameDifficulty = 1.0
 [worldgen]
 disableFishingBoat = false
+disableEndOases = false

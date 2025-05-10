@@ -100,3 +100,5 @@ config/cubes_without_borders.json
 config/world_preview/missing-colors.json
 win_event*.txt
 /config/crash_assistant/lang
+config/mods_optimizer/mods-database.json
+config/mods_optimizer/mods-database.json.sha256
