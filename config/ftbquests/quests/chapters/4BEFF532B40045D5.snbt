@@ -959,11 +959,10 @@
 		{
 			dependencies: ["1F2E99A74CDFBD68"]
 			description: [
-				"我们禁止了村民售卖经验修补附魔书！"
-				"所以，刷不出来是正常现象，不用一直刷……"
-				"但是钓鱼板条箱和宝箱还是有几率出现经验修补的，多去探险吧，朋友！"
-				"如果你希望保存你的经验，可以通过create的分液池/精妙背包的经验泵保存在外部，这样不至于死亡后有太大损失……"
-				"&o&a*友情提示：一旦你获得一本经验修补附魔书，那么就可以通过create的一些神秘方式进行复制，所以不要直接用掉了）&r&r"
+				"我们加入了更多的附魔，村民出现经验修补的几率被大幅度稀释了……"
+				"钓鱼板条箱和宝箱有更高几率出现经验修补，多去探险吧，朋友！"
+				"如果你希望储存经验，可以通过create的袪魔池/精妙背包的经验泵保存为液体形式。"
+				"&o&a*友情提示：一旦你获得一本经验修补附魔书，那么就可以通过附魔工业（见工业第二章）进行复制，所以不要直接用掉了）&r&r"
 				"{image:kubejs:textures/meme_mending.png width:150 height:90 align:center}"
 			]
 			icon: "create:experience_nugget"
@@ -973,7 +972,7 @@
 				item: "betterarcheology:villager_fossil_head"
 				type: "item"
 			}]
-			subtitle: "由于直接从村民手里买太简单……"
+			subtitle: "过于混乱的奖池"
 			tasks: [{
 				id: "5B5265A11A240989"
 				title: "消失了哈哈"
@@ -1014,6 +1013,7 @@
 			description: [
 				"现在的游商会有几率售卖一些有用的东西——尤其是魔法侧的特殊道具。"
 				"如果刷出了游商，请不要把它视为行走的拴绳，先看一下商品清单……"
+				"同时，如果你不希望他们出现在你的机器上，那你可以“禁止推销”。"
 				""
 				"&o&7*如果你身上缠绕着灾厄的气息，那么你将有几率通过击杀流浪商人掠夺其从不售卖的“神器”……&r&r"
 			]
@@ -1024,12 +1024,13 @@
 				item: "minecraft:lead"
 				type: "item"
 			}]
-			subtitle: "不要上来就抽刀子！"
+			subtitle: "再您的见"
 			tasks: [{
-				id: "6401CAB776E74BB0"
-				title: "注意游商"
-				type: "checkmark"
+				id: "243EE435C8DFCBC6"
+				item: "nomowanderer:no_soliciting_sign"
+				type: "item"
 			}]
+			title: "注意游商"
 			x: -5.0d
 			y: 1.0d
 		}
