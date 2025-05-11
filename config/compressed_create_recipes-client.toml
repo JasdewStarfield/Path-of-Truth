@@ -1,0 +1,5 @@
+
+["Compressed Create Recipes Config"]
+	#Whether to modify the JEI category for sequenced assembly to show random salvage. Does nothing if Create: Cyber Goggles is present
+	"Random Salvage Display" = true
+

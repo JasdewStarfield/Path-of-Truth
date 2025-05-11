@@ -6,7 +6,7 @@
 	traderConvertMaverick = true
 	#Villagers have a chance of converting into Warlocks if they're underneath a Block of Crying Obsidian, Default: true
 	villagerConvertToWarlock = true
-	#Villagers have a chance of converting into Heretics if they're near an active Nether Portal, Default: false
+	#Villagers have a chance of converting into Heretics if they're sleeping near an active Nether Portal, Default: false
 	villagerConvertToHeretic = false
 	#Having an owned Ravaged or Ravager, causes Villagers around the Player to have a negative Reputation, Default: false
 	villagerHateRavager = false
@@ -198,7 +198,7 @@
 		#Range: > 0
 		illagerAssaultRestMinister = 10
 		#Spawn Chance for Illagers Hunting the Player every Spawn Frequency, the lower the more likelier, Default: 5
-		#Range: > 0
+		#Range: > 1
 		illagerAssaultSpawnChance = 5
 		#Hitting the Illager Assault Limit of Soul Energy have a chance of giving Player Bad Omen effect, Default: true
 		soulEnergyBadOmen = true
@@ -467,7 +467,7 @@
 		#Range: > 0
 		wightSpawnFreq = 24000
 		#Spawn Chance for Wights spawning near the Player every Spawn Frequency, the lower the more likelier, Default: 10
-		#Range: > 0
+		#Range: > 1
 		wightSpawnChance = 10
 
 	[Spawning.Warlock]

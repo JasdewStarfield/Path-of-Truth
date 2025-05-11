@@ -272,26 +272,6 @@
 			x: 0.0d
 			y: 6.0d
 		}
-		{
-			dependencies: ["40D34B60BD7011DD"]
-			description: [
-				"在那些&b充斥着元素和魔法力量&r的法师套装之外，你发现了另一条足以保护自身的途径……"
-				"尝试通过装卸台来强化自己的护甲吧——&6机素防护系列护甲&r可以通过平台为自己添加插板来强化自身！"
-				"它们还会附带一些&e科技聚合而出的特殊效果&r，但这就要你自己去体验了。"
-				"插板&3具有独立的耐久，并且受到插槽数量限制&r，按shift可以检查插槽状态。"
-			]
-			id: "1EEC479FB889EAEC"
-			shape: "diamond"
-			subtitle: "机械降神"
-			tasks: [{
-				id: "1874350D5C8D72DB"
-				item: "protection_pixel:armorloadplatform"
-				type: "item"
-			}]
-			title: "动力护甲"
-			x: 0.0d
-			y: -2.0d
-		}
 	]
 	subtitle: ["Life of a Gunsmith"]
 	title: "【附加】军械师生涯"

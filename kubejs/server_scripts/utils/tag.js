@@ -319,6 +319,8 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:fermentable","#forge:grain/rice")
     event.add("forge:fermentable","#forge:dough/wheat")
     event.add("scguns:weak_compost","#forge:seeds")
+    event.add("forge:workbench","#biomeswevegone:crafting_tables")
+    event.add("forge:workbench","#blue_skies:crafting_tables")
 
     event.add("forge:ingots","kubejs:failed_brass_ingot")
     event.add("forge:dusts","kubejs:brass_blend")

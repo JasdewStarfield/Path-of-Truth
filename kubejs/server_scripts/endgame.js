@@ -179,8 +179,8 @@ ServerEvents.recipes(event => {
       Item.of('createnuclear:graphite_rod').withChance(1.2),
       Item.of('createnuclear:uranium_rod').withChance(1.2),
       Item.of('immersiveengineering:radiator').withChance(2.6),
-      Item.of('protection_pixel:heatresistantceramicsheet').withChance(5.0)
-    ], 'protection_pixel:heatresistantceramicsheet', [
+      Item.of('create:sturdy_sheet').withChance(5.0)
+    ], 'create:sturdy_sheet', [
       event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'immersiveengineering:connector_mv']),
       event.recipes.createPressing('kubejs:incomplete_fission_cell', 'kubejs:incomplete_fission_cell'),
       event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'createnuclear:uranium_rod']),
@@ -189,7 +189,7 @@ ServerEvents.recipes(event => {
   ]).transitionalItem('kubejs:incomplete_fission_cell').loops(5)
   event.recipes.create.sequenced_assembly([
     Item.of('kubejs:fission_cell')
-  ], 'protection_pixel:heatresistantceramicsheet', [
+  ], 'create:sturdy_sheet', [
     event.recipes.createFilling('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', {fluidTag: 'forge:lubricant', amount:25}]),
     event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'immersiveengineering:connector_mv']),
     event.recipes.createPressing('kubejs:incomplete_fission_cell', 'kubejs:incomplete_fission_cell'),
@@ -198,6 +198,7 @@ ServerEvents.recipes(event => {
     event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'immersiveengineering:radiator'])
   ]).transitionalItem('kubejs:incomplete_fission_cell').loops(5)
 
+  /*
   event.remove({id:"protection_pixel:hrcsheetloot"})
   event.recipes.create.compacting(
     'protection_pixel:heatresistantceramicsheet', [
@@ -211,6 +212,7 @@ ServerEvents.recipes(event => {
       '#forge:plates/za'
     ]
   ).superheated()
+  */
 
 
   //电路板

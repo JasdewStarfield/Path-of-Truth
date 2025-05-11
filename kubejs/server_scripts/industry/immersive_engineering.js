@@ -562,7 +562,7 @@ ServerEvents.recipes(event => {
         Item.of('kubejs:electronic_circuit_board').withChance(5.0)
         ], 'kubejs:electronic_circuit_board', [
         event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:silicon']),
-        event.recipes.vintageimprovements.laser_cutting('kubejs:incomplete_component_electronic_adv', 'kubejs:incomplete_component_electronic_adv'),
+        event.recipes.createFilling('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', Fluid.of('vintageimprovements:sulfuric_acid', 250)]),
         event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'immersiveengineering:component_electronic']),
         event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:wires/netherite']),
         event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'botania:gaia_ingot'])
@@ -573,7 +573,7 @@ ServerEvents.recipes(event => {
       ], 'kubejs:electronic_circuit_board', [
       event.recipes.createFilling('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', {fluidTag: 'forge:lubricant', amount:25}]),
       event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:silicon']),
-      event.recipes.vintageimprovements.laser_cutting('kubejs:incomplete_component_electronic_adv', 'kubejs:incomplete_component_electronic_adv'),
+      event.recipes.createFilling('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', Fluid.of('vintageimprovements:sulfuric_acid', 250)]),
       event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'immersiveengineering:component_electronic']),
       event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', '#forge:wires/netherite']),
       event.recipes.createDeploying('kubejs:incomplete_component_electronic_adv', ['kubejs:incomplete_component_electronic_adv', 'botania:gaia_ingot'])

@@ -227,9 +227,9 @@
     "modId": "clumps",
     "version": "12.0.0.4"
   },
-  "ColdSweat-2.4-b03a.jar": {
+  "ColdSweat-2.4-b02d.jar": {
     "modId": "cold_sweat",
-    "version": "2.4-b03a"
+    "version": "2.4-b02d"
   },
   "collective-1.20.1-8.3.jar": {
     "modId": "collective",
@@ -243,9 +243,9 @@
     "modId": "comforts",
     "version": "6.4.0+1.20.1"
   },
-  "compressed_create_recipes-1.2.3.jar": {
+  "compressed_create_recipes-1.2.4.jar": {
     "modId": "compressed_create_recipes",
-    "version": "1.2.3"
+    "version": "1.2.4"
   },
   "compressedengineering-1.4.3.jar": {
     "modId": "compressedengineering",
@@ -295,9 +295,9 @@
     "modId": "craftingtweaks",
     "version": "18.2.5"
   },
-  "CrashAssistant-forge-1.19.2-1.20.1-1.7.26.jar": {
+  "CrashAssistant-forge-1.19.2-1.20.1-1.7.27.jar": {
     "modId": "crash_assistant",
-    "version": "1.7.26"
+    "version": "1.7.27"
   },
   "cratedelight-24.11.29-1.20-forge.jar": {
     "modId": "cratedelight",
@@ -587,9 +587,9 @@
     "modId": "fishnostuck",
     "version": "1.0.3"
   },
-  "flerovium-forge-1.20.1-1.2.10-all.jar": {
+  "flerovium-forge-1.20.1-1.2.11-all.jar": {
     "modId": "flerovium",
-    "version": "1.2.10"
+    "version": "1.2.11"
   },
   "flickerfix-1.20.1-4.0.1.jar": {
     "modId": "flickerfix",
@@ -651,9 +651,9 @@
     "modId": "globalpacks",
     "version": "1.16.2_forge"
   },
-  "goety-2.5.33.1.jar": {
+  "goety-2.5.33.3.jar": {
     "modId": "goety",
-    "version": "2.5.33.1"
+    "version": "2.5.33.3"
   },
   "GPUTape-1.18x-1.21x-1.0.5.1.jar": {
     "modId": "gpu_tape",
@@ -810,10 +810,6 @@
   "kleeslabs-forge-1.20.1-15.0.6.jar": {
     "modId": "kleeslabs",
     "version": "15.0.6"
-  },
-  "kleiders_custom_renderer-7.4.1-forge-1.20.1.jar": {
-    "modId": "kleiders_custom_renderer",
-    "version": "7.4.0"
   },
   "konkrete_forge_1.8.0_MC_1.20-1.20.1.jar": {
     "modId": "konkrete",
@@ -1043,10 +1039,6 @@
   "probejs-6.0.1-forge.jar": {
     "modId": "probejs",
     "version": "6.0.1"
-  },
-  "protection_pixel-1.9.2-forge-1.20.1.jar": {
-    "modId": "protection_pixel",
-    "version": "1.9.2"
   },
   "PuzzlesLib-v8.1.32-1.20.1-Forge.jar": {
     "modId": "puzzleslib",
@@ -1380,9 +1372,9 @@
     "modId": "world_preview",
     "version": "1.3.1"
   },
-  "Xaeros_Minimap_25.2.0_Forge_1.20.jar": {
+  "Xaeros_Minimap_25.2.6_Forge_1.20.jar": {
     "modId": "xaerominimap",
-    "version": "25.2.0"
+    "version": "25.2.6"
   },
   "XaerosWorldMap_1.39.4_Forge_1.20.jar": {
     "modId": "xaeroworldmap",

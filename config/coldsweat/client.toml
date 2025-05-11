@@ -66,7 +66,4 @@
 	"Hide Tooltips" = false
 	#Automatically expands all collapsible tooltips
 	"Expand Tooltips" = false
-	#Enables the animated soul spring lamp model
-	#Disable this if there are visual errors like missing textures
-	"Animated Soul Spring Lamp" = true
 

@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
       ["create_power_loader:empty_brass_chunk_loader", "glowstone"],
       ['vintageimprovements:belt_grinder', 'vintageimprovements:grinder_belt'],
       ["createcobblestone:mechanical_generator", "kubejs:fluid_engineering"],
-      ["protection_pixel:armorloadplatform", "kubejs:advanced_spring_set"],
+      //["protection_pixel:armorloadplatform", "kubejs:advanced_spring_set"],
     ]
     preciseEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:precise_engineering", material)
