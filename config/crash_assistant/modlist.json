@@ -83,9 +83,9 @@
     "modId": "attributefix",
     "version": "21.0.4"
   },
-  "balm-forge-1.20.1-7.3.28-all.jar": {
+  "balm-forge-1.20.1-7.3.29-all.jar": {
     "modId": "balm",
-    "version": "7.3.28"
+    "version": "7.3.29"
   },
   "beautify-2.0.2.jar": {
     "modId": "beautify",
@@ -587,9 +587,9 @@
     "modId": "fishnostuck",
     "version": "1.0.3"
   },
-  "flerovium-forge-1.20.1-1.2.11-all.jar": {
+  "flerovium-forge-1.20.1-1.2.12-all.jar": {
     "modId": "flerovium",
-    "version": "1.2.11"
+    "version": "1.2.12"
   },
   "flickerfix-1.20.1-4.0.1.jar": {
     "modId": "flickerfix",
@@ -646,10 +646,6 @@
   "geckolib-forge-1.20.1-4.7.1.2.jar": {
     "modId": "geckolib",
     "version": "4.7.1.2"
-  },
-  "global_packs-forge-1.19.4-1.16.2_forge.jar": {
-    "modId": "globalpacks",
-    "version": "1.16.2_forge"
   },
   "goety-2.5.33.3.jar": {
     "modId": "goety",
@@ -1083,6 +1079,10 @@
   "resourcefullib-forge-1.20.1-2.1.29.jar": {
     "modId": "resourcefullib",
     "version": "2.1.29"
+  },
+  "ResourcePackOverrides-v8.0.3-1.20.1-Forge.jar": {
+    "modId": "resourcepackoverrides",
+    "version": "8.0.3"
   },
   "respawnobelisks-2.6-b.jar": {
     "modId": "respawnobelisks",
