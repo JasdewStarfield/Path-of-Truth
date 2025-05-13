@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
 
     //火车机壳
     event.remove({id:'create:item_application/railway_casing'})
-    casing('create:railway_casing', "crystal_clear:brass_glass_casing", '#forge:plates/obsidian')
+    casing('create:railway_casing', "createdeco:brass_sheet_metal", '#forge:plates/obsidian')
 
     //钢机壳
     casing("kubejs:steel_casing", "create:brass_casing", '#forge:plates/steel')
@@ -150,15 +150,15 @@ ServerEvents.recipes(event => {
       ], {
       B: 'create:railway_casing',
       A: 'dried_kelp_block',
-      C: '#forge:leather',
-      D: 'immersiveengineering:hemp_fabric'
+      C: 'immersiveengineering:ersatz_leather',
+      D: 'create:cardboard'
     })
     event.recipes.create.sequenced_assembly([
       'kubejs:logistical_engineering'
     ], 'create:railway_casing', [
       event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'dried_kelp_block']),
-      event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', '#forge:leather']),
-      event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'immersiveengineering:hemp_fabric']),
+      event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'immersiveengineering:ersatz_leather']),
+      event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'create:cardboard']),
       event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'dried_kelp_block'])
     ]).transitionalItem('kubejs:incomplete_logistical_engineering').loops(1)
 })

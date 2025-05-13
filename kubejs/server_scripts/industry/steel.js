@@ -357,7 +357,7 @@ ServerEvents.recipes(event => {
   
   //虚空钢
   event.remove({id:"createutilities:mixing/void_steel_ingot"})
-  event.recipes.create.mixing(Item.of('#forge:ingots/voidsteel').withChance(0.75), ['kubejs:unformed_steel_ingot', 'kubejs:unformed_steel_ingot', '#endersdelight:enderman_loot', '#endersdelight:enderman_loot', 'echo_shard']).heated()
+  event.recipes.create.mixing([Item.of('createutilities:void_steel_ingot'), Item.of('scguns:nether_star_fragment').withChance(0.9)], ['kubejs:unformed_steel_ingot', 'kubejs:unformed_steel_ingot', '#endersdelight:enderman_loot', '#endersdelight:enderman_loot', 'echo_shard', 'scguns:nether_star_fragment']).heated()
   event.remove({id:"createutilities:pressing/void_steel_sheet"})
   event.recipes.vintageimprovementsHammering(Item.of('#forge:plates/voidsteel'), '#forge:ingots/voidsteel').hammerBlows(3)
 

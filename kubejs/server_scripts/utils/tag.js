@@ -341,6 +341,7 @@ ServerEvents.tags("item", (event) => {
     event.add("forge:nuggets","createdeco:netherite_nugget")
     event.add("forge:nuggets/industrial_iron","createdeco:industrial_iron_nugget")
     event.add("forge:nuggets","createdeco:industrial_iron_nugget")
+    event.add("forge:storage_blocks/electrum","createaddition:electrum_block")
 
     event.add("forge:dusts/coal","createnuclear:coal_dust")
     event.add("forge:dusts/uranium","createnuclear:uranium_powder")

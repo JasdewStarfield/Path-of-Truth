@@ -12,6 +12,11 @@ ServerEvents.recipes(event => {
     //按分类移除
     event.remove({type:'immersiveengineering:alloy'})
     event.remove({type:'immersiveengineering:sawmill'})
+    event.remove({type:'createdieselgenerators:hammering'})
+    event.remove({type:'createdieselgenerators:wire_cutting'})
+    event.remove({type:'createdieselgenerators:bluk_fermenting'})
+    event.remove({type:'createdieselgenerators:compression_molding'})
+    event.remove({type:'createdieselgenerators:casting'})
 
     //移除ie初级动能发电配方
     event.remove({id:'immersiveengineering:crafting/windmill_blade'})
@@ -26,6 +31,15 @@ ServerEvents.recipes(event => {
     //移除铁粒回收配方
     event.remove({output:"#forge:nuggets/iron", type:"blasting"})
     event.remove({output:"#forge:nuggets/iron", type:"smelting"})
+
+    //移除create diesel generators的部分配方
+    event.remove({id:'createdieselgenerators:crafting/wire_cutters'})
+    event.remove({id:'createdieselgenerators:crafting/hammer'})
+    event.remove({id:'createdieselgenerators:crafting/bulk_fermenter'})
+    event.remove({id:'createdieselgenerators:crafting/burner'})
+    event.remove({id:'createdieselgenerators:crafting/chemical_turret'})
+    event.remove({id:'createdieselgenerators:crafting/chemical_turret_lighter'})
+    event.remove({output:'createdieselgenerators:mold'})
 
     //传送带
     event.remove({id:"immersiveengineering:crafting/conveyor_basic"})

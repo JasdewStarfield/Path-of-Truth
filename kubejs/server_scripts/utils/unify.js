@@ -30,8 +30,8 @@ ServerEvents.recipes(event => {
   event.recipes.create.cutting(`outer_end:azure_stripped_pith`, `outer_end:azure_pith`)
   event.recipes.create.cutting(`6x outer_end:azure_planks`, `outer_end:azure_stripped_stem`)
   event.recipes.create.cutting(`6x outer_end:azure_planks`, `outer_end:azure_stripped_pith`)
-  event.recipes.create.cutting(`netherexp:stripped_claret_stem`, 'netherexp:claret_stem')
-  event.recipes.create.cutting(`netherexp:stripped_claret_hyphae`, 'netherexp:claret_hyphae')
+  event.recipes.create.cutting(`netherexp:stripped_claret_stem`, 'netherexp:cerebrage_claret_stem')
+  event.recipes.create.cutting(`netherexp:stripped_claret_hyphae`, 'netherexp:cerebrage_claret_hyphae')
   event.recipes.create.cutting(`6x netherexp:claret_planks`, 'netherexp:stripped_claret_stem')
   event.recipes.create.cutting(`6x netherexp:claret_planks`, 'netherexp:stripped_claret_hyphae')
 

@@ -39,9 +39,9 @@
     "modId": "ambientenvironment",
     "version": "11.0.0.1"
   },
-  "AmbientSounds_FORGE_v6.1.9_mc1.20.1.jar": {
+  "AmbientSounds_FORGE_v6.1.10_mc1.20.1.jar": {
     "modId": "ambientsounds",
-    "version": "6.1.9"
+    "version": "6.1.10"
   },
   "amendments-1.20-1.2.19.jar": {
     "modId": "amendments",
@@ -99,7 +99,7 @@
     "modId": "bedspreads",
     "version": "6.3.0+1.20.1"
   },
-  "bellsandwhistles-0.4.3-1.20.x.jar": {
+  "bellsandwhistles-0.4.5-1.20.x-Create6.0+.jar": {
     "modId": "bellsandwhistles",
     "version": "0.4.3-1.20.x"
   },
@@ -263,9 +263,9 @@
     "modId": "copperandtuffbackport",
     "version": "1.2"
   },
-  "copycats-2.2.2+mc.1.20.1-forge.jar": {
+  "copycats-3.0.0+mc.1.20.1-forge.jar": {
     "modId": "copycats",
-    "version": "2.2.2+mc.1.20.1-forge"
+    "version": "3.0.0+mc.1.20.1-forge"
   },
   "Corgilib-Forge-1.20.1-4.0.3.3.jar": {
     "modId": "corgilib",
@@ -295,25 +295,21 @@
     "modId": "craftingtweaks",
     "version": "18.2.5"
   },
-  "CrashAssistant-forge-1.19.2-1.20.1-1.7.27.jar": {
+  "CrashAssistant-forge-1.19.2-1.20.1-1.7.28.jar": {
     "modId": "crash_assistant",
-    "version": "1.7.27"
+    "version": "1.7.28"
   },
   "cratedelight-24.11.29-1.20-forge.jar": {
     "modId": "cratedelight",
     "version": "24.11.29-1.20-forge"
   },
-  "create-1.20.1-0.5.1.j.jar": {
+  "create-1.20.1-6.0.4.jar": {
     "modId": "create",
-    "version": "0.5.1.j"
+    "version": "6.0.4"
   },
   "create-confectionery1.20.1_v1.1.0.jar": {
     "modId": "create_confectionery",
     "version": "1.1.0"
-  },
-  "create-dyn-light-forge1.20.1+1.0.2.jar": {
-    "modId": "createdynlight",
-    "version": "1.0.2"
   },
   "create_armor_trims-1.20.1-2.0.1.jar": {
     "modId": "create_armor_trims",
@@ -323,61 +319,61 @@
     "modId": "create_blue_skies_compat",
     "version": "1.0.1"
   },
-  "create_central_kitchen-1.20.1-for-create-0.5.1.j-1.3.13.jar": {
+  "create_central_kitchen-1.20.1-for-create-6.0.4-1.4.1.jar": {
     "modId": "create_central_kitchen",
-    "version": "1.3.13"
+    "version": "1.4.1"
   },
-  "create_compressed-2.0.0-forge-1.20.1.jar": {
+  "create_compressed-2.1.0-forge-1.20.1.jar": {
     "modId": "create_compressed",
-    "version": "2.0.0"
+    "version": "2.1.0"
   },
-  "create_connected-0.9.4-mc1.20.1-all.jar": {
+  "create_connected-1.0.1-mc1.20.1-all.jar": {
     "modId": "create_connected",
-    "version": "0.9.4-mc1.20.1"
+    "version": "1.0.1-mc1.20.1"
   },
-  "create_enchantment_industry-1.20.1-for-create-0.5.1.f-1.2.9.d.jar": {
+  "create_enchantment_industry-1.3.2-for-create-6.0.4.jar": {
     "modId": "create_enchantment_industry",
-    "version": "1.2.9.d"
+    "version": "1.3.2-for-create-6.0.4"
   },
-  "create_power_loader-1.5.0-mc1.20.1.jar": {
+  "create_power_loader-2.0.0-mc1.20.1.jar": {
     "modId": "create_power_loader",
-    "version": "1.5.0-mc1.20.1"
+    "version": "2.0.0-mc1.20.1"
   },
-  "createaddition-1.20.1-1.2.5.jar": {
+  "createaddition-1.20.1-1.3.1.jar": {
     "modId": "createaddition",
-    "version": "1.20.1-1.2.5"
+    "version": "1.20.1-1.3.1"
   },
-  "createaddoncompatibility-0.2.3.jar": {
+  "createaddoncompatibility-0.2.4.jar": {
     "modId": "createaddoncompatibility",
-    "version": "0.2.3"
+    "version": "0.2.4"
   },
-  "createcobblestone-1.4.4+forge-1.20.1-95.jar": {
+  "createcobblestone-1.4.5+forge-1.20.1-106.jar": {
     "modId": "createcobblestone",
-    "version": "1.4.4+forge-1.20.1-95"
+    "version": "1.4.5+forge-1.20.1-106"
   },
-  "createdeco-2.0.2-1.20.1-forge.jar": {
+  "createdeco-2.0.3-1.20.1-forge.jar": {
     "modId": "createdeco",
-    "version": "2.0.2-1.20.1-forge"
+    "version": "2.0.3-1.20.1-forge"
   },
-  "createdieselgenerators-1.20.1-1.2i.jar": {
+  "createdieselgenerators-1.20.1-1.3.1.jar": {
     "modId": "createdieselgenerators",
-    "version": "1.20.1-1.2i"
+    "version": "1.20.1-1.3.1"
   },
-  "createnuclear-1.2.0-forge.jar": {
+  "createnuclear-1.2.2-forge.jar": {
     "modId": "createnuclear",
-    "version": "1.2.0"
+    "version": "1.2.2"
   },
-  "createpickywheels-forge-1.20.1-0.5.1.f-c.jar": {
+  "createpickywheels-forge-1.20.1-6.0.0-1.jar": {
     "modId": "createpickywheels",
-    "version": "1.20.1-0.5.1.f-c"
+    "version": "1.20.1-6.0.0-1"
   },
   "createsongsandspeakers-forge-mc1.20-0.5 - Fork of 3.22.0-alpha.3.jar": {
     "modId": "iammusicplayer",
     "version": "0.5 - Fork of iammusic 3.22.0-alpha.3"
   },
-  "createutilities-0.3.0+1.20.1.jar": {
+  "createutilities-0.3.1+1.20.1.jar": {
     "modId": "createutilities",
-    "version": "0.3.0+1.20.1"
+    "version": "0.3.1+1.20.1"
   },
   "CreativeCore_FORGE_v2.12.32_mc1.20.1.jar": {
     "modId": "creativecore",
@@ -386,10 +382,6 @@
   "creeperoverhaul-3.0.2-forge.jar": {
     "modId": "creeperoverhaul",
     "version": "3.0.2"
-  },
-  "Crystal-Clear-2.1-Beta-forge.jar": {
-    "modId": "crystal_clear",
-    "version": "2.1-Beta"
   },
   "CullLessLeaves-Reforged-1.20.1-1.0.5.jar": {
     "modId": "culllessleaves",
@@ -491,9 +483,9 @@
     "modId": "eclipticseasons",
     "version": "0.10.11"
   },
-  "ElysiumAPI-1.20.1-1.1.1.jar": {
+  "ElysiumAPI-1.20.1-1.1.2.jar": {
     "modId": "elysium_api",
-    "version": "1.1.1"
+    "version": "1.1.2"
   },
   "embeddium-0.3.31+mc1.20.1.jar": {
     "modId": "embeddium",
@@ -531,9 +523,9 @@
     "modId": "eventjs",
     "version": "1.3.0"
   },
-  "everycomp-1.20-2.7.19.jar": {
+  "everycomp-1.20-2.8.3-forge.jar": {
     "modId": "everycomp",
-    "version": "1.20-2.7.19"
+    "version": "1.20-2.8.3"
   },
   "explorerscompass-edited-1.20.1-1.3.8-forge.jar": {
     "modId": "explorerscompass",
@@ -543,9 +535,9 @@
     "modId": "extremesoundmuffler",
     "version": "3.48"
   },
-  "fancymenu_forge_3.5.0_MC_1.20.1.jar": {
+  "fancymenu_forge_3.5.2_MC_1.20.1.jar": {
     "modId": "fancymenu",
-    "version": "3.5.0"
+    "version": "3.5.2"
   },
   "FarmersDelight-1.20.1-1.2.7.jar": {
     "modId": "farmersdelight",
@@ -587,9 +579,9 @@
     "modId": "fishnostuck",
     "version": "1.0.3"
   },
-  "flerovium-forge-1.20.1-1.2.12-all.jar": {
+  "flerovium-forge-1.20.1-1.2.13-all.jar": {
     "modId": "flerovium",
-    "version": "1.2.12"
+    "version": "1.2.13"
   },
   "flickerfix-1.20.1-4.0.1.jar": {
     "modId": "flickerfix",
@@ -723,7 +715,7 @@
     "modId": "immersiveengineering",
     "version": "1.20.1-10.2.0-183"
   },
-  "interiors-0.5.6+forge-mc1.20.1-build.104.jar": {
+  "interiors-0.5.6+forge-mc1.20.1-local.jar": {
     "modId": "interiors",
     "version": "0.5.6"
   },
@@ -755,9 +747,9 @@
     "modId": "jade",
     "version": "11.13.1+forge"
   },
-  "JadeAddons-1.20.1-Forge-5.3.1.jar": {
+  "JadeAddons-1.20.1-Forge-5.5.0.jar": {
     "modId": "jadeaddons",
-    "version": "5.3.1+forge"
+    "version": "5.5.0+forge"
   },
   "Jadens-Nether-Expansion-2.3.2.jar": {
     "modId": "netherexp",
@@ -812,9 +804,9 @@
     "version": "1.8.0"
   },
   "kotlinforforge-4.11.0-all.jar": {},
-  "kubejs-create-forge-2001.2.5-build.2.jar": {
+  "kubejs-create-forge-2001.3.0-build.8.jar": {
     "modId": "kubejs_create",
-    "version": "2001.2.5-build.2"
+    "version": "2001.3.0-build.8"
   },
   "kubejs-forge-2001.6.5-build.16.jar": {
     "modId": "kubejs",
@@ -880,9 +872,9 @@
     "modId": "maxhealthfix",
     "version": "12.0.3"
   },
-  "mechanicalbotania-1.0.1.jar": {
+  "mechanicalbotania-1.0.2.jar": {
     "modId": "mechanicalbotania",
-    "version": "1.0.1"
+    "version": "1.0.2"
   },
   "MEED-1.20.1-6.7.jar": {
     "modId": "moderately_enough_effect_desc",
@@ -960,10 +952,6 @@
     "modId": "obscure_api",
     "version": "15"
   },
-  "oculus-flywheel-compat-forge1.20.1+1.1.4.jar": {
-    "modId": "irisflw",
-    "version": "1.1.4"
-  },
   "oculus-mc1.20.1-1.8.0.jar": {
     "modId": "oculus",
     "version": "1.8.0"
@@ -976,9 +964,9 @@
     "modId": "ohthetreesyoullgrow",
     "version": "1.3.9"
   },
-  "Oreganized 1.20.1-3.1.2.jar": {
+  "Oreganized 1.20.1-4.0.0.carcinogenious.jar": {
     "modId": "oreganized",
-    "version": "3.1.2"
+    "version": "3.1.4.fool"
   },
   "otyacraftengine-forge-mc1.20-3.7.0-alpha.2.jar": {
     "modId": "otyacraftengine",
@@ -1008,10 +996,6 @@
     "modId": "pickupnotifier",
     "version": "8.0.0"
   },
-  "pipez-forge-1.20.1-1.2.21.jar": {
-    "modId": "pipez",
-    "version": "1.20.1-1.2.21"
-  },
   "Placebo-1.20.1-8.6.3.jar": {
     "modId": "placebo",
     "version": "8.6.3"
@@ -1024,9 +1008,13 @@
     "modId": "polymorph",
     "version": "0.49.10+1.20.1"
   },
-  "ponderjs-1.20.1-1.4.0.jar": {
+  "Ponder-Forge-1.20.1-1.0.0.jar": {
+    "modId": "ponder",
+    "version": "1.0.0"
+  },
+  "ponderjs-1.20.1-2.0.5.jar": {
     "modId": "ponderjs",
-    "version": "1.4.0"
+    "version": "2.0.5"
   },
   "Pretty Rain-1.20.1-Forge-1.1.3.jar": {
     "modId": "particlerain",
@@ -1052,9 +1040,9 @@
     "modId": "rechiseled",
     "version": "1.1.6"
   },
-  "rechiseledcreate-1.0.2-forge-mc1.20.jar": {
+  "rechiseledcreate-1.0.2a-forge-mc1.20.jar": {
     "modId": "rechiseledcreate",
-    "version": "1.0.2"
+    "version": "1.0.2+a"
   },
   "recipeessentials-1.20.1-4.0.jar": {
     "modId": "recipeessentials",
@@ -1220,13 +1208,9 @@
     "modId": "starterstructure",
     "version": "4.2"
   },
-  "Steam_Rails-1.6.7+forge-mc1.20.1.jar": {
-    "modId": "railways",
-    "version": "1.6.7+forge-mc1.20.1"
-  },
-  "stonezone-1.20-2.7.9.jar": {
+  "stonezone-1.20-2.8.2.jar": {
     "modId": "stonezone",
-    "version": "1.20-2.7.9"
+    "version": "1.20-2.8.2"
   },
   "StorageDrawers-1.20.1-12.9.13.jar": {
     "modId": "storagedrawers",
@@ -1344,9 +1328,9 @@
     "modId": "vintage_kubejs",
     "version": "1.20.1-1.0.0rc-2"
   },
-  "vintageimprovements-1.20.1-0.2.0.3.jar": {
+  "vintageimprovements-1.20.1-0.3.3.0.jar": {
     "modId": "vintageimprovements",
-    "version": "1.20.1-0.2.0.3"
+    "version": "1.20.1-0.3.3.0"
   },
   "visual_keybinder-1.20.1 - 0.1.7.jar": {
     "modId": "visual_keybinder",
