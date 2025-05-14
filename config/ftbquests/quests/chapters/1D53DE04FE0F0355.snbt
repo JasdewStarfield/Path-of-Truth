@@ -470,8 +470,8 @@
 				type: "checkmark"
 			}]
 			title: "关于字体"
-			x: 1.5d
-			y: 1.5d
+			x: -0.75d
+			y: 3.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -527,8 +527,105 @@
 				}
 			]
 			title: "万象无常，真理恒常"
-			x: 0.0d
-			y: 1.0d
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: ["提示：如果不想背包被一堆奇奇怪怪的东西塞满的话，不建议勾选完成此任务"]
+			icon: "create:weathered_iron_window_pane"
+			id: "63ED210584D9A4E3"
+			rewards: [
+				{
+					id: "6C2779AE9F20832E"
+					item: {
+						Count: 1
+						id: "botania:starfield"
+						tag: {
+							display: {
+								Lore: ["\"Jasdew Starfield\""]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3EA3FAE4F637D89B"
+					item: {
+						Count: 1
+						id: "blue_skies:midnight_glass"
+						tag: {
+							display: {
+								Lore: ["\"Midnight Pigeon\""]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "21424BCCC0490F77"
+					item: {
+						Count: 1
+						id: "minecraft:jukebox"
+						tag: {
+							display: {
+								Lore: ["\"Jacky Blackson\""]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "47386AFE352F12F7"
+					item: {
+						Count: 1
+						id: "handcrafted:kitchen_hood"
+						tag: {
+							display: {
+								Lore: ["\"YukkuriC\""]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "20F368BFD931B31E"
+					item: {
+						Count: 1
+						id: "create:blue_postbox"
+						tag: {
+							display: {
+								Lore: ["\"KEYboradManDesu\""]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "62D344567B4E11F4"
+					item: {
+						Count: 1
+						id: "minecraft:map"
+						tag: {
+							display: {
+								Lore: ["\"sakurayang\""]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "致贡献者们"
+			tasks: [{
+				id: "07CD47FA78D6B948"
+				title: "但我是垃圾佬"
+				type: "checkmark"
+			}]
+			title: "真理名人堂"
+			x: 0.75d
+			y: 3.0d
 		}
 	]
 	subtitle: ["Ahead of Everything Else"]

@@ -22,7 +22,7 @@ vesselMaxLevel = 18
 
 	#.
 	#Fine tune the kinetic stats of individual components
-	[stressValues.v2]
+	[stressValues.v1]
 		#.
 		#Stress impact of a powered brake [in Stress Units]
 		#Range: -Infinity ~ Infinity
@@ -32,23 +32,23 @@ vesselMaxLevel = 18
 		#.
 		#[in Stress Units]
 		#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
-		[stressValues.v2.impact]
+		[stressValues.v1.impact]
+			encased_chain_cogwheel = 0.2
+			brass_gearbox = 0.4
+			brake = 0.1
 			inverted_gearshift = 0.4
 			six_way_gearbox = 0.6
-			centrifugal_clutch = 0.1
-			overstress_clutch = 0.1
-			brake = 0.1
-			encased_chain_cogwheel = 0.2
 			inverted_clutch = 0.1
-			parallel_gearbox = 0.5
-			freewheel_clutch = 0.1
-			brass_gearbox = 0.4
 			shear_pin = 0.1
+			overstress_clutch = 0.1
+			freewheel_clutch = 0.1
+			centrifugal_clutch = 0.1
+			parallel_gearbox = 0.5
 
 		#.
 		#[in Stress Units]
 		#Configure how much stress a source can accommodate for.
-		[stressValues.v2.capacity]
+		[stressValues.v1.capacity]
 			crank_wheel = 8.0
 			large_crank_wheel = 8.0
 

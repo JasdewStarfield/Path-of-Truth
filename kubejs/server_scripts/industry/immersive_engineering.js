@@ -14,7 +14,7 @@ ServerEvents.recipes(event => {
     event.remove({type:'immersiveengineering:sawmill'})
     event.remove({type:'createdieselgenerators:hammering'})
     event.remove({type:'createdieselgenerators:wire_cutting'})
-    event.remove({type:'createdieselgenerators:bluk_fermenting'})
+    event.remove({type:'createdieselgenerators:bulk_fermenting'})
     event.remove({type:'createdieselgenerators:compression_molding'})
     event.remove({type:'createdieselgenerators:casting'})
 

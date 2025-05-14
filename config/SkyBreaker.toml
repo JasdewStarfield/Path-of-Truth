@@ -2,4 +2,15 @@
 ["Sky Breaker Config"]
 	#Besides vanilla AxeItem, the additional Items that can be used to break the Starlit Wall
 	"Item Whitelist" = ["mekanism:atomicdisassembler"]
+	#Besides vanilla AxeItem, the additional Items that can deal full damage to Starlit Crusher
+	"Item Whitelist for the Tree" = ["mekanism:atomic_disassembler"]
+	#When using whitelisted items, damage dealt to non-stunned Starlit Crusher will be multiplied by [coefficient].
+	#Range: 0.0 ~ 1.0
+	Coefficient = 1.0
+	#When using non-whitelisted items, damage dealt to Starlit Crusher will be multiplied by [coefficient2].
+	#When set to 1, all weapons will deal full damage without triggering the weakening notification.
+	#Range: 0.0 ~ 1.0
+	Coefficient2 = 1.0
+	#Besides SpearEntity, the additional Projectiles that can be used to stun the Starlit Crusher
+	"Projectile Whitelist" = ["minecraft:trident"]
 

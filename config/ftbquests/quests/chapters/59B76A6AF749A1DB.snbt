@@ -1108,7 +1108,10 @@
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
-			description: ["现已支持各种模组作物！"]
+			description: [
+				"可以让你的作物无视季节大量产出。"
+				"现已支持各种模组作物！"
+			]
 			id: "3A25C9E033482CEB"
 			shape: "diamond"
 			subtitle: "一种更优雅的种植解决方式"

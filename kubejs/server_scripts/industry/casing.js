@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
 
     //火车机壳
     event.remove({id:'create:item_application/railway_casing'})
-    casing('create:railway_casing', "createdeco:brass_sheet_metal", '#forge:plates/obsidian')
+    casing('create:railway_casing', "create:copper_casing", '#forge:plates/obsidian')
 
     //钢机壳
     casing("kubejs:steel_casing", "create:brass_casing", '#forge:plates/steel')

@@ -103,6 +103,10 @@ ServerEvents.recipes(event => {
     B: 'wheat'
   })
 
+  //纸浆
+  event.remove({id: 'create:mixing/cardboard_pulp'})
+  event.recipes.create.mixing('create:pulp', ['immersiveengineering:dust_wood', 'immersiveengineering:dust_wood', 'farmersdelight:straw', 'farmersdelight:straw', Fluid.of('immersiveengineering:creosote', 100), Fluid.of('minecraft:water', 100)])
+
   //钟(?)
   event.shaped('bell', [ 
     'B', 

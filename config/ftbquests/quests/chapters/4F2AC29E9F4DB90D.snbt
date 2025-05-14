@@ -296,6 +296,7 @@
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
 			description: ["液体总是要流淌的，然而抗腐蚀的材料不多"]
+			icon: "create:mechanical_pump"
 			id: "27FD1F76136CBD0B"
 			subtitle: "你甚至可以用它们处理牛奶（笑"
 			tasks: [
@@ -976,7 +977,10 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["607A957382E65976"]
+			dependencies: [
+				"607A957382E65976"
+				"76BE4625CCF2F867"
+			]
 			id: "2D0DAA028D9B2249"
 			tasks: [{
 				id: "196F24099478B230"
@@ -1065,7 +1069,13 @@
 		{
 			dependencies: ["1D0D60C89EA75663"]
 			id: "45BA353C2006974A"
+			rewards: [{
+				id: "2F268ADC67CB2A3D"
+				item: "create:steam_whistle"
+				type: "item"
+			}]
 			shape: "diamond"
+			subtitle: "S T E A M P O W E R E D"
 			tasks: [{
 				id: "7396DDAE21A05F3B"
 				item: "create:steam_engine"
