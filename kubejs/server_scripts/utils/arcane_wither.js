@@ -1,15 +1,16 @@
 // requires: irons_spellbooks
 // requires: irons_spells_js
 {
-    let MeleeAttackGoal = Java.loadClass('net.minecraft.world.entity.ai.goal.MeleeAttackGoal')
+    let RangedAttackGoal = Java.loadClass('net.minecraft.world.entity.ai.goal.RangedAttackGoal')
     let attackInterval = 30
     EntityEvents.spawned(e => {
         let { entity } = e
         if (entity.type != 'minecraft:wither') return
-        const customAttacker = new JavaAdapter(
-            MeleeAttackGoal,
+        let customAttacker = new JavaAdapter(
+            RangedAttackGoal,
             {
-                m_6739_() {
+                m_8037_() {
+                    this.super$m_8037_()
                     let { target, age } = entity
                     if (!target || age % attackInterval) return
                     let spell =
@@ -23,8 +24,11 @@
             },
             entity,
             1,
-            true,
+            40,
+            20,
         )
-        entity.goalSelector.addGoal(1, customAttacker)
+        // thx PinkWither from Botania
+        entity.goalSelector.availableGoals.removeIf(entry => entry.goal instanceof RangedAttackGoal)
+        entity.goalSelector.addGoal(2, customAttacker)
     })
 }
