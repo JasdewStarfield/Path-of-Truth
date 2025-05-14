@@ -1,18 +1,14 @@
 // priority: 100
 //实验性添加机械动力形式的tooltips支持
-/*
 const ItemDescription = Java.loadClass("com.simibubi.create.foundation.item.ItemDescription$Modifier")
 const TooltipModifier = Java.loadClass("com.simibubi.create.foundation.item.TooltipModifier")
-const Palette = Java.loadClass("com.simibubi.create.foundation.item.TooltipHelper$Palette")
-*/
+const Palette = Java.loadClass("net.createmod.catnip.lang.FontHelper").Palette
 
 function AddCreateTooltips(id) {
-  /*
   TooltipModifier.REGISTRY.register(
-    id,
+    Item.of(id).item, // resloc to item
     new ItemDescription(id, Palette.STANDARD_CREATE)
   )
-  */
 }
 
 const CreateTooltipsItems = [
