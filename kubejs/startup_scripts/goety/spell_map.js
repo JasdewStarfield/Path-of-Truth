@@ -22,7 +22,7 @@
                 delta = delta.normalize()
                 for (let i = 1; i < dist; i += 0.3) {
                     let pos = frm.add(delta.scale(i))
-                    worldIn.tell(pos)
+                    // worldIn.tell(pos)
                     worldIn.sendParticles(ModParticleTypes.GREEN_FLAME.get(), pos.x(), pos.y(), pos.z(), 1, 0, 0, 0, 0.2)
                 }
                 worldIn.sendParticles(ModParticleTypes.PLASMA_EXPLOSION.get(), to.x(), to.y(), to.z(), 1, 0, 0, 0, 0)
