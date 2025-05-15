@@ -83,6 +83,10 @@
     "modId": "attributefix",
     "version": "21.0.4"
   },
+  "baguettelib-1.20.1-Forge-1.0.0.jar": {
+    "modId": "baguettelib",
+    "version": "1.0.0"
+  },
   "balm-forge-1.20.1-7.3.29-all.jar": {
     "modId": "balm",
     "version": "7.3.29"
@@ -279,9 +283,9 @@
     "modId": "corpse",
     "version": "1.20.1-1.0.20"
   },
-  "corpsecurioscompat-1.18.x-1.20.x-Forge-2.2.2.jar": {
+  "corpsecurioscompat-1.20.x-Forge-3.0.1.jar": {
     "modId": "corpsecurioscompat",
-    "version": "2.2.2"
+    "version": "3.0.1"
   },
   "cosmeticarmorreworked-1.20.1-v1a.jar": {
     "modId": "cosmeticarmorreworked",
@@ -479,9 +483,9 @@
     "modId": "eccentrictome",
     "version": "1.20.1-1.10.3"
   },
-  "EclipticSeasons-1.20.1-forge-0.10.11-all.jar": {
+  "EclipticSeasons-1.20.1-forge-0.11.0-pre3-1-all.jar": {
     "modId": "eclipticseasons",
-    "version": "0.10.11"
+    "version": "0.11.0-pre3-1"
   },
   "ElysiumAPI-1.20.1-1.1.2.jar": {
     "modId": "elysium_api",
@@ -523,9 +527,9 @@
     "modId": "eventjs",
     "version": "1.3.0"
   },
-  "everycomp-1.20-2.8.4-forge.jar": {
+  "everycomp-1.20-2.8.5-forge.jar": {
     "modId": "everycomp",
-    "version": "1.20-2.8.4"
+    "version": "1.20-2.8.5"
   },
   "explorerscompass-edited-1.20.1-1.3.8-forge.jar": {
     "modId": "explorerscompass",
