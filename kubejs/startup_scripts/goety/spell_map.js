@@ -69,6 +69,11 @@
                 } else worldIn.playSeededSound(null, caster.x, caster.y, caster.z, 'scguns:item.plasma.fire', 'neutral', 0.2, 0, 0)
                 if (entity && entity.living && entity.alive) this.doHit(caster, entity)
             },
+            stopSpell(worldIn, caster, staff, useTimeRemaining) {
+                let focus = staff.item.getFocus(staff)
+                focus.damageValue++
+                if (focus.damageValue >= focus.maxDamage) focus.shrink(1)
+            }
         },
     }
     let buildSpell = (key, cost, duration, cd) => {
