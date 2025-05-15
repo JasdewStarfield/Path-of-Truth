@@ -151,7 +151,7 @@
 				"&2A   A&r"
 				"&2*ACA*&r"
 				"搭建好门结构后，&a需要将两个精灵水晶放置在两个不同的魔力池上&r，然后用森林法杖右键精灵门核心开门。"
-				"外围框架5*5正方形的四个角可以填充任意方块也可以不填，&a两个精灵水晶-魔力池结构需要在核心半径11单位范围内，而且魔力池内都需要四分之一池以上的魔力。&r"
+				"外围框架5*5正方形的四个角可以填充任意方块也可以不填，&a两个精灵水晶-魔力池结构需要在核心半径6单位范围内，而且魔力池内都需要四分之一池以上的魔力。&r"
 			]
 			icon: "botania:light_relay"
 			id: "2EA11306B3076434"
@@ -175,15 +175,15 @@
 					type: "item"
 				}
 				{
-					count: 8L
-					id: "134C60B18ABA501C"
-					item: "botania:livingwood"
-					type: "item"
-				}
-				{
 					count: 3L
 					id: "0C52EF97E23DB119"
 					item: "botania:glimmering_livingwood"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2BDE83253EB50E99"
+					item: { Count: 8, id: "botania:livingwood_log" }
 					type: "item"
 				}
 			]
