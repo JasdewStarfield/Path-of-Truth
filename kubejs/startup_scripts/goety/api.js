@@ -3,7 +3,7 @@
     let MagicFocus = Java.loadClass('com.Polarice3.Goety.common.items.magic.MagicFocus')
     let Rarity = Java.loadClass('net.minecraft.world.item.Rarity')
 
-    global.createMagicFocus = (event, id, tooltipLine, rarity) => {
+    global.createMagicFocus = (event, id, tooltipLine, rarity, onCreate) => {
         if (id.indexOf(':') < 0) id = 'kubejs:' + id
         if (!(id in global.goetySpellMap)) throw `missing focus id: ${id}`
         let proto = {
@@ -23,7 +23,11 @@
             proto.m_41460_ = function () {
                 return Rarity[rarity]
             }
-        let getter = () => new JavaAdapter(MagicFocus, proto, global.goetySpellMap[id])
+        let getter = () => {
+            let ret = new JavaAdapter(MagicFocus, proto, global.goetySpellMap[id])
+            if (onCreate) onCreate(ret)
+            return ret
+        }
         event.createCustom(id, getter)
     }
 }

@@ -33,7 +33,10 @@ StartupEvents.registry('item', (event) => {
     buran('<工业的最高成就>','kubejs:item/buran')
   }
   // event.create("midnight").displayName('Midnight').tooltip('<魔法的终极结晶>').rarity('epic')
-  global.createMagicFocus(event, 'midnight', 'item.kubejs.midnight.tooltip', 'EPIC')
+  global.createMagicFocus(event, 'midnight', 'item.kubejs.midnight.tooltip', 'EPIC', item => {
+    item.maxDamage = 10
+    item.maxStackSize = 64
+  })
 })
 
 StartupEvents.registry('block', (event) => {
