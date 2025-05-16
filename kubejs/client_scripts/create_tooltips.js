@@ -5,10 +5,12 @@ const TooltipModifier = Java.loadClass("com.simibubi.create.foundation.item.Tool
 const Palette = Java.loadClass("net.createmod.catnip.lang.FontHelper").Palette
 
 function AddCreateTooltips(id) {
-  TooltipModifier.REGISTRY.register(
-    Item.of(id).item, // resloc to item
-    new ItemDescription(id, Palette.STANDARD_CREATE)
-  )
+    try {
+        TooltipModifier.REGISTRY.register(
+            Item.of(id).item, // resloc to item
+            new ItemDescription(id, Palette.STANDARD_CREATE),
+        )
+    } catch {}
 }
 
 const CreateTooltipsItems = [
