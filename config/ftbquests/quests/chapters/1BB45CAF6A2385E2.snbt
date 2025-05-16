@@ -68,7 +68,13 @@
 				}
 				{
 					id: "5CAA50EB0779626E"
-					item: "kubejs:midnight"
+					item: {
+						Count: 1
+						id: "kubejs:midnight"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{

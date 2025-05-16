@@ -283,7 +283,13 @@
 			subtitle: "你将触碰——真理之源。"
 			tasks: [{
 				id: "353C425A4E0BBD22"
-				item: "kubejs:midnight"
+				item: {
+					Count: 1
+					id: "kubejs:midnight"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "【终点】通往终末的钥匙"

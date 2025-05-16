@@ -396,7 +396,13 @@
 			subtitle: "次元边界"
 			tasks: [{
 				id: "09891F03B5381DDB"
-				item: "kubejs:midnight"
+				item: {
+					Count: 1
+					id: "kubejs:midnight"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "魔法大成"
