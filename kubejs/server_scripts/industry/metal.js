@@ -559,6 +559,16 @@ ServerEvents.recipes(event => {
         'blue_skies:moonstone_crystal'
     ])
 
+    //批量炼焦
+    event.recipes.vintageimprovements.pressurizing([
+        Item.of('immersiveengineering:coal_coke', 1),
+        Item.of('immersiveengineering:coal_coke', 1).withChance(0.25),
+        Fluid.of('immersiveengineering:creosote', 500)
+    ], [
+        Item.of('goety:ectoplasm'),
+        Item.of('minecraft:coal', 1),
+    ]).heated()
+
 
     //补充一些沉浸工程压板配方
     let IEMetalPressing = (material) => {

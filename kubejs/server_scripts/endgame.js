@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
   event.custom({
     "type":"immersiveengineering:mixer",
     "energy":12800,
-    "fluid":{"amount":500,"tag":"forge:diesel"},
+    "fluid":{"amount":50,"tag":"forge:diesel"},
     "inputs":[
       {"base_ingredient":{"tag":"forge:dusts/uranium"},"count":4},
       {"base_ingredient":{"tag":"forge:dusts/hop_graphite"},"count":1},
