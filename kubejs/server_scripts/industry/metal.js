@@ -214,26 +214,38 @@ ServerEvents.recipes(event => {
     //新增加热搅拌配方
     event.recipes.create.mixing('2x immersiveengineering:dust_constantan', ['#forge:dusts/nickel', '#forge:dusts/copper', '#forge:dusts/phosphor']).heated()
     //康铜代替铜
-    event.replaceInput(
-        { output:"create:fluid_pipe" },
-        '#forge:ingots/copper',
-        '#forge:ingots/constantan'
-    )
-    event.replaceInput(
-        { output:"create:fluid_pipe" },
-        '#forge:plates/copper',
-        '#forge:plates/constantan'
-    )
-    event.replaceInput(
-        { output:"create:fluid_tank" },
-        '#forge:plates/copper',
-        '#forge:plates/constantan'
-    )
-    event.replaceInput(
-        { output:"create_connected:fluid_vessel" },
-        '#forge:plates/copper',
-        '#forge:plates/constantan'
-    )
+    event.remove({id:"create:crafting/kinetics/fluid_pipe"})
+    event.remove({id:"create:crafting/kinetics/fluid_pipe_vertical"})
+    event.shaped('4x create:fluid_pipe', [ 
+        'ABA', 
+    ], {
+        A: '#forge:plates/constantan',
+        B: '#forge:ingots/constantan'
+    })
+    event.shaped('4x create:fluid_pipe', [ 
+        'A',
+        'B',
+        'A' 
+    ], {
+        A: '#forge:plates/constantan',
+        B: '#forge:ingots/constantan'
+    })
+    event.remove({id:"create:crafting/kinetics/fluid_tank"})
+    event.remove({id:"create_connected:crafting/kinetics/fluid_vessel"})
+    event.shaped('create_connected:fluid_vessel', [ 
+        'ABA', 
+    ], {
+        A: '#forge:plates/constantan',
+        B: 'minecraft:barrel'
+    })
+    event.shaped('create:fluid_tank', [ 
+        'A',
+        'B',
+        'A' 
+    ], {
+        A: '#forge:plates/constantan',
+        B: 'minecraft:barrel'
+    })
 
     //弹簧组
     event.shaped('kubejs:basic_spring_set', [ 
@@ -314,7 +326,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.milling(Item.of('create:zinc_nugget').withChance(0.5), 'clay_ball')
 
     //泥巴出铁、铝土
-    event.recipes.create.crushing([Item.of('create:crushed_raw_iron').withChance(0.14),Item.of('kubejs:crushed_raw_bauxite').withChance(0.07)], 'packed_mud')
+    event.recipes.create.crushing([Item.of('create:crushed_raw_iron').withChance(0.2),Item.of('kubejs:crushed_raw_bauxite').withChance(0.1)], 'packed_mud')
 
     //深板岩粉碎出铅，银
     event.recipes.create.crushing([Item.of('oreganized:silver_nugget').withChance(0.2)], 'deepslate')

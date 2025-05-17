@@ -345,6 +345,6 @@
 
 		[entries.mud_type.betterarcheology]
 			cracked_brick_stairs = true
-			cracked_bricks = true
 			cracked_brick_slab = true
+			cracked_bricks = true
 

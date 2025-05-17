@@ -3,10 +3,6 @@
     "modId": "forge",
     "version": "fmlloader-1.20.1-47.4.0.jar"
   },
-  "0Pack2Reload-Forge-1.20.1-1.0.1.jar": {
-    "modId": "opack2reload",
-    "version": "1.0.1"
-  },
   "0World2Create-Universal-1.19-1.20.X-1.0.0.jar": {
     "modId": "oworld2create",
     "version": "1.0.0"
@@ -355,10 +351,6 @@
     "modId": "createaddoncompatibility",
     "version": "0.2.4"
   },
-  "createcobblestone-1.4.5+forge-1.20.1-106.jar": {
-    "modId": "createcobblestone",
-    "version": "1.4.5+forge-1.20.1-106"
-  },
   "createdeco-2.0.3-1.20.1-forge.jar": {
     "modId": "createdeco",
     "version": "2.0.3-1.20.1-forge"
@@ -491,9 +483,9 @@
     "modId": "eccentrictome",
     "version": "1.20.1-1.10.3"
   },
-  "EclipticSeasons-1.20.1-forge-0.11.0-pre4-all.jar": {
+  "EclipticSeasons-1.20.1-forge-0.11.0-pre4-1-all.jar": {
     "modId": "eclipticseasons",
-    "version": "0.11.0-pre4"
+    "version": "0.11.0-pre4-1"
   },
   "ElysiumAPI-1.20.1-1.1.2.jar": {
     "modId": "elysium_api",

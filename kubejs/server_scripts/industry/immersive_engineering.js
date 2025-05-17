@@ -74,6 +74,18 @@ ServerEvents.recipes(event => {
       C: '#forge:plates/iron'
     })
 
+    //钻头
+    event.remove({id:"immersive_machinery:iron_drill"})
+    event.shaped('immersiveengineering:drillhead_iron', [ 
+        '  A', 
+        'AA ',
+        'BA '  
+    ], {
+        A: '#forge:ingots/iron',
+        B: '#forge:storage_blocks/andesite_alloy'
+    })
+    event.shapeless('immersive_machinery:iron_drill','immersiveengineering:drillhead_iron')
+
     //焦炉砖
     event.remove({id:"immersiveengineering:crafting/cokebrick"})
     event.shaped('immersiveengineering:cokebrick', [ 

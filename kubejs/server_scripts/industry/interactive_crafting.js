@@ -72,9 +72,9 @@ ServerEvents.recipes(event => {
       ["create:rotation_speed_controller", "create_connected:control_chip"],
       ["create_power_loader:empty_brass_chunk_loader", "glowstone"],
       ['vintageimprovements:belt_grinder', 'vintageimprovements:grinder_belt'],
-      ["createcobblestone:mechanical_generator", "kubejs:fluid_engineering"],
       //["protection_pixel:armorloadplatform", "kubejs:advanced_spring_set"],
       ['create_connected:inventory_access_port', 'create:chute'],
+      ['create_mobile_packages:drone_port', 'create:transmitter'],
     ]
     preciseEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:precise_engineering", material)
@@ -113,7 +113,7 @@ ServerEvents.recipes(event => {
     //轻型工程块
     const lightEngineering = [
       ['createaddition:tesla_coil', "immersiveengineering:coil_mv"],
-      ['vintageimprovements:curving_press', "kubejs:advanced_spring_set"]
+      ['vintageimprovements:curving_press', "kubejs:advanced_spring_set"],
     ]
     lightEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "immersiveengineering:light_engineering", material)
