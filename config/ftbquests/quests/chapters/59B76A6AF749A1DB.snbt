@@ -1687,12 +1687,6 @@
 				}
 				{
 					count: 3L
-					id: "68107DE08B1FC5B2"
-					item: "immersiveengineering:steel_fence"
-					type: "item"
-				}
-				{
-					count: 3L
 					id: "1C1F2FC8DEADEA31"
 					item: "immersiveengineering:steel_scaffolding_standard"
 					type: "item"
