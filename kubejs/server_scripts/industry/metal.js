@@ -310,7 +310,7 @@ ServerEvents.recipes(event => {
     event.recipes.create.haunting(Item.of('minecraft:coal').withChance(0.5), 'minecraft:charcoal')
 
     //致密碳
-    event.recipes.create.compacting('scguns:anthralite_nugget', ['#forge:dusts/coal','#forge:dusts/coal','#forge:dusts/saltpeter']).heated()
+    event.recipes.create.compacting([Item.of('scguns:anthralite_nugget', 2), Item.of('scguns:anthralite_nugget', 1).withChance(0.5)], ['#forge:dusts/coal','#forge:dusts/coal','#forge:dusts/saltpeter', '#forge:dusts/phosphor']).heated()
 
     //泥土到铜
     event.recipes.create.mixing('2x dirt', ['#forge:sand','#forge:cobblestone',Fluid.of('water',500)])

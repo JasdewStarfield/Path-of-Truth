@@ -1060,7 +1060,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "压制碳粉与硝粉！"
+			subtitle: "压制碳粉、硝粉与磷粉！"
 			tasks: [
 				{
 					id: "366B3F3F403B6E45"
