@@ -483,9 +483,9 @@
     "modId": "eccentrictome",
     "version": "1.20.1-1.10.3"
   },
-  "EclipticSeasons-1.20.1-forge-0.11.0-pre4-2-all.jar": {
+  "EclipticSeasons-1.20.1-forge-0.11.0-pre4-3-all.jar": {
     "modId": "eclipticseasons",
-    "version": "0.11.0-pre4-2"
+    "version": "0.11.0-pre4-3"
   },
   "ElysiumAPI-1.20.1-1.1.2.jar": {
     "modId": "elysium_api",
@@ -603,9 +603,9 @@
     "modId": "forgeconfigscreens",
     "version": "8.0.2"
   },
-  "framework-forge-1.20.1-0.7.12.jar": {
+  "framework-forge-1.20.1-0.7.15.jar": {
     "modId": "framework",
-    "version": "0.7.12"
+    "version": "0.7.15"
   },
   "ftb-library-forge-2001.2.9.jar": {
     "modId": "ftblibrary",
@@ -1308,9 +1308,9 @@
     "modId": "trulytreasures",
     "version": "1.20-3.0.0"
   },
-  "txnilib-forge-1.0.23-1.20.1.jar": {
+  "txnilib-forge-1.0.24-1.20.1.jar": {
     "modId": "txnilib",
-    "version": "1.0.23"
+    "version": "1.0.24"
   },
   "undergardendelight-1.1.2-forge-1.20.1.jar": {
     "modId": "undergardendelight",
