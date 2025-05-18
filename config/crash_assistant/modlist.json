@@ -483,9 +483,9 @@
     "modId": "eccentrictome",
     "version": "1.20.1-1.10.3"
   },
-  "EclipticSeasons-1.20.1-forge-0.11.0-pre4-1-all.jar": {
+  "EclipticSeasons-1.20.1-forge-0.11.0-pre4-2-all.jar": {
     "modId": "eclipticseasons",
-    "version": "0.11.0-pre4-1"
+    "version": "0.11.0-pre4-2"
   },
   "ElysiumAPI-1.20.1-1.1.2.jar": {
     "modId": "elysium_api",
@@ -1216,9 +1216,9 @@
     "modId": "starterstructure",
     "version": "4.2"
   },
-  "stonezone-1.20-2.8.3.jar": {
+  "stonezone-1.20-2.8.4.jar": {
     "modId": "stonezone",
-    "version": "1.20-2.8.3"
+    "version": "1.20-2.8.4"
   },
   "StorageDrawers-1.20.1-12.9.13.jar": {
     "modId": "storagedrawers",
