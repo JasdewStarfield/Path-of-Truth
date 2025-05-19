@@ -59,8 +59,8 @@ ServerEvents.loaded(e => {
     }
     if (cacheDirty) {
         JsonIO.write(cachePath, theCache)
-        e.server.runCommandSilent('reload')
     }
+    e.server.runCommandSilent('reload') // temp fix recipe errors
 })
 
 ServerEvents.recipes(event => {
