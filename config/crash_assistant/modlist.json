@@ -327,9 +327,9 @@
     "modId": "create_compressed",
     "version": "2.1.0"
   },
-  "create_connected-1.0.1-mc1.20.1-all.jar": {
+  "create_connected-1.0.2-mc1.20.1-all.jar": {
     "modId": "create_connected",
-    "version": "1.0.1-mc1.20.1"
+    "version": "1.0.2-mc1.20.1"
   },
   "create_enchantment_industry-1.3.2-for-create-6.0.4.jar": {
     "modId": "create_enchantment_industry",
@@ -884,7 +884,7 @@
     "modId": "mechanicalbotania",
     "version": "1.0.2"
   },
-  "MEED-1.20.1-6.7.jar": {
+  "MEED-1.20.1-6.8.jar": {
     "modId": "moderately_enough_effect_desc",
     "version": "3.3.0"
   },
@@ -896,9 +896,9 @@
     "modId": "modelfix",
     "version": "1.15"
   },
-  "modernfix-forge-5.22.0+mc1.20.1.jar": {
+  "modernfix-forge-5.21.0+mc1.20.1.jar": {
     "modId": "modernfix",
-    "version": "5.22.0+mc1.20.1"
+    "version": "5.21.0+mc1.20.1"
   },
   "ModernUI-Forge-1.20.1-3.11.1.6-universal.jar": {
     "modId": "modernui",
@@ -1368,9 +1368,9 @@
     "modId": "xaerominimap",
     "version": "25.2.6"
   },
-  "XaerosWorldMap_1.39.4_Forge_1.20.jar": {
+  "XaerosWorldMap_1.39.9_Forge_1.20.jar": {
     "modId": "xaeroworldmap",
-    "version": "1.39.4"
+    "version": "1.39.9"
   },
   "XaeroZoomout-Forge-1.20-1.1.0.jar": {
     "modId": "xaerozoomout",
