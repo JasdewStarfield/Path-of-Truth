@@ -1,4 +1,5 @@
 {
+  "tooltip.anvil.tax": "修复花费：%s",
   "item.kubejs.incomplete_andesite_engineering": "未完成的动力工程块",
   "item.kubejs.incomplete_fluid_engineering": "未完成的流体工程块",
   "item.kubejs.incomplete_precise_engineering": "未完成的精密工程块",
