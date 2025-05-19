@@ -10,7 +10,7 @@ function AddCreateTooltips(id) {
             Item.of(id).item, // resloc to item
             new ItemDescription(id, Palette.STANDARD_CREATE),
         )
-    } catch {}
+    } catch (e) {}
 }
 
 const CreateTooltipsItems = [
