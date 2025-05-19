@@ -2,7 +2,7 @@
 // requires: irons_spells_js
 {
     let RangedAttackGoal = Java.loadClass('net.minecraft.world.entity.ai.goal.RangedAttackGoal')
-    let attackInterval = 30
+    let attackInterval = 60
     EntityEvents.spawned(e => {
         let { entity } = e
         if (entity.type != 'minecraft:wither') return
@@ -13,13 +13,10 @@
                     this.super$m_8037_()
                     let { target, age } = entity
                     if (!target || age % attackInterval) return
-                    let spell =
-                        SpellRegistry[
-                            entity.position().distanceTo(target.position()) >= 20 ? 'ELDRITCH_BLAST_SPELL' : 'CHAIN_LIGHTNING_SPELL'
-                        ].get()
+                    let spell = SpellRegistry.CHAIN_LIGHTNING_SPELL.get()
                     let { magicData, level } = entity
                     magicData.additionalCastData = TargetEntityCastData(target)
-                    spell.onCast(level, spell.maxLevel, entity, 'mob', magicData)
+                    spell.onCast(level, 1 /* spell.maxLevel */, entity, 'mob', magicData)
                 },
             },
             entity,
