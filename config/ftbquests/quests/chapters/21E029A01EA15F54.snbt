@@ -204,6 +204,12 @@
 			]
 			icon: "goety:spent_totem"
 			id: "57B126A840CCD6E4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "09A6FCAC11443A6B"
+				table_id: 5567297392411284388L
+				type: "random"
+			}]
 			shape: "rsquare"
 			subtitle: "画魂点睛"
 			tasks: [
