@@ -151,7 +151,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "heatRequirement": "superheated",
-    "processingTime": 400,
+    "processingTime": 20,
     "results": [
       {
         "fluid": "kubejs:molten_enriched_uranium",

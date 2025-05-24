@@ -295,9 +295,9 @@
     "modId": "craftingtweaks",
     "version": "18.2.5"
   },
-  "CrashAssistant-forge-1.19.2-1.20.1-1.8.1.jar": {
+  "CrashAssistant-forge-1.19.2-1.20.1-1.8.2.jar": {
     "modId": "crash_assistant",
-    "version": "1.8.1"
+    "version": "1.8.2"
   },
   "cratedelight-24.11.29-1.20-forge.jar": {
     "modId": "cratedelight",
@@ -483,9 +483,9 @@
     "modId": "eccentrictome",
     "version": "1.20.1-1.10.3"
   },
-  "EclipticSeasons-1.20.1-forge-0.11.0-pre4-3-all.jar": {
+  "EclipticSeasons-1.20.1-forge-0.11.0-pre4-4.1-all.jar": {
     "modId": "eclipticseasons",
-    "version": "0.11.0-pre4-3"
+    "version": "0.11.0-pre4-4.1"
   },
   "ElysiumAPI-1.20.1-1.1.2.jar": {
     "modId": "elysium_api",
