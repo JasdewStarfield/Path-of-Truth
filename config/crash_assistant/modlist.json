@@ -19,9 +19,9 @@
     "modId": "alltheleaks",
     "version": "0.1.4-beta+1.20.1-forge"
   },
-  "almostunified-forge-1.20.1-0.9.5.jar": {
+  "almostunified-forge-1.20.1-0.10.0.jar": {
     "modId": "almostunified",
-    "version": "1.20.1-0.9.5"
+    "version": "1.20.1-0.10.0"
   },
   "alshanex_familiars-1.20.1_v1.1.2_HotFix.jar": {
     "modId": "alshanex_familiars",
@@ -988,9 +988,9 @@
     "modId": "panorama_screens",
     "version": "1.0+forge+mc1.20"
   },
-  "particular-1.20.1-Forge-1.2.1.jar": {
+  "particular-1.20.1-Forge-1.2.2.jar": {
     "modId": "particular",
-    "version": "1.2.1"
+    "version": "1.2.2"
   },
   "PassiveSearchBar+Forge+1.20.2-1.0.0.jar": {
     "modId": "passivesearchbar",
