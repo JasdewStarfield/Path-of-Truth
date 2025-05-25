@@ -1366,6 +1366,21 @@
 					item: "netherdepthsupgrade:nether_rice_roll_medley_block"
 					type: "item"
 				}
+				{
+					id: "63F6985388382AA4"
+					item: "largemeals:omurice_block"
+					type: "item"
+				}
+				{
+					id: "6D586AF0CF364464"
+					item: "largemeals:mushroom_pot_pie_block"
+					type: "item"
+				}
+				{
+					id: "4E0EEDB13F9C9154"
+					item: "largemeals:roasted_mutton_rack_block"
+					type: "item"
+				}
 			]
 			title: "五星级大厨"
 			x: 4.5d

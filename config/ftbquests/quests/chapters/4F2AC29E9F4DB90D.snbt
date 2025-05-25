@@ -32,6 +32,30 @@
 			x: 0.0d
 			y: 23.5d
 		}
+		{
+			height: 1.0d
+			image: "irons_spellbooks:textures/mob_effect/burning_dash.png"
+			rotation: -90.0d
+			width: 1.0d
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "create:block/controller_rail_powered"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5d
+			y: 17.5d
+		}
+		{
+			height: 1.0d
+			image: "createdeco:block/palettes/decals/decal_fluid"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: 7.0d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]

@@ -20,7 +20,7 @@ config/sodium-extra-options.json
 /shaderpacks
 /XaeroWaypoints
 /XaeroWorldMap
-options.txt
+/options.txt
 /XaeroWaypoints_BACKUP*
 config/jade/sort-order.json
 config/xaerominimap_entities.json
