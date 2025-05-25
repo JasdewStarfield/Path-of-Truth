@@ -3,13 +3,13 @@ type = fancymenu_layout
 layout-meta {
   identifier = about
   render_custom_elements_behind_vanilla = false
-  last_edited_time = 1748155077847
+  last_edited_time = 1748157377713
   is_enabled = true
   randommode = false
   randomgroup = 1
   randomonlyfirsttime = false
   layout_index = 0
-  [loading_requirement_container_meta:d524ef25-1791-4f01-b10e-e9d1129b8d78-1748155072109] = [groups:][instances:]
+  [loading_requirement_container_meta:0a431276-b907-442e-b799-7c1bb43ef04f-1748157287958] = [groups:][instances:]
 }
 
 customization {
@@ -379,7 +379,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 7abb59f2-0104-4ce2-9499-2fdf70cf467e-1726548746813
-  [executable_action_instance:8ba0b591-224b-46b4-8738-7d9161841266-1726549345811][action_type:openlink] = https://github.com/JasdewStarfield
+  [executable_action_instance:8ba0b591-224b-46b4-8738-7d9161841266-1726549345811][action_type:openlink] = https://github.com/KEYboradManDesu
   [executable_block:7abb59f2-0104-4ce2-9499-2fdf70cf467e-1726548746813][type:generic] = [executables:8ba0b591-224b-46b4-8738-7d9161841266-1726549345811;]
   backgroundnormal = [source:local]/config/fancymenu/assets/keyboradmandesu.jpeg
   backgroundhovered = [source:local]/config/fancymenu/assets/keyboradmandesu.jpeg
@@ -627,7 +627,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 7abb59f2-0104-4ce2-9499-2fdf70cf467e-1726548746813
-  [executable_action_instance:8ba0b591-224b-46b4-8738-7d9161841266-1726549345811][action_type:openlink] = https://github.com/JasdewStarfield
+  [executable_action_instance:8ba0b591-224b-46b4-8738-7d9161841266-1726549345811][action_type:openlink] = https://github.com/YukkuriC
   [executable_block:7abb59f2-0104-4ce2-9499-2fdf70cf467e-1726548746813][type:generic] = [executables:8ba0b591-224b-46b4-8738-7d9161841266-1726549345811;]
   backgroundnormal = [source:local]/config/fancymenu/assets/yukkuric.jpeg
   backgroundhovered = [source:local]/config/fancymenu/assets/yukkuric.jpeg
@@ -689,7 +689,7 @@ element {
 
 element {
   button_element_executable_block_identifier = 7abb59f2-0104-4ce2-9499-2fdf70cf467e-1726548746813
-  [executable_action_instance:8ba0b591-224b-46b4-8738-7d9161841266-1726549345811][action_type:openlink] = https://github.com/JasdewStarfield
+  [executable_action_instance:8ba0b591-224b-46b4-8738-7d9161841266-1726549345811][action_type:openlink] = https://github.com/sakurayang
   [executable_block:7abb59f2-0104-4ce2-9499-2fdf70cf467e-1726548746813][type:generic] = [executables:8ba0b591-224b-46b4-8738-7d9161841266-1726549345811;]
   backgroundnormal = [source:local]/config/fancymenu/assets/gerardyang.jpeg
   backgroundhovered = [source:local]/config/fancymenu/assets/gerardyang.jpeg
@@ -769,11 +769,12 @@ element {
   auto_sizing_base_screen_width = 1920
   auto_sizing_base_screen_height = 1002
   sticky_anchor = false
-  anchor_point = top-left
+  anchor_point = element
+  anchor_point_element = ffbb78d1-57e6-49f3-aaeb-828bcc4cfd48-1748153682584
   advanced_width = 55
   advanced_height = 55
-  x = 37
-  y = 50
+  x = 0
+  y = -58
   width = 50
   height = 50
   stretch_x = false
