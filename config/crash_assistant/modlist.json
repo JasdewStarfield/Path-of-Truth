@@ -175,9 +175,9 @@
     "modId": "botarium",
     "version": "2.3.4"
   },
-  "bucketlib-1.20.1-2.3.6.0.jar": {
+  "bucketlib-1.20.1-2.3.7.0.jar": {
     "modId": "bucketlib",
-    "version": "1.20.1-2.3.6.0"
+    "version": "1.20.1-2.3.7.0"
   },
   "caelus-forge-3.2.0+1.20.1.jar": {
     "modId": "caelus",
@@ -483,9 +483,9 @@
     "modId": "eccentrictome",
     "version": "1.20.1-1.10.3"
   },
-  "EclipticSeasons-1.20.1-forge-0.11.0-pre4-4.1-all.jar": {
+  "EclipticSeasons-1.20.1-forge-0.11.0-pre4-5-all.jar": {
     "modId": "eclipticseasons",
-    "version": "0.11.0-pre4-4.1"
+    "version": "0.11.0-pre4-5"
   },
   "ElysiumAPI-1.20.1-1.1.2.jar": {
     "modId": "elysium_api",
@@ -984,10 +984,6 @@
     "modId": "overflowingbars",
     "version": "8.0.1"
   },
-  "panorama_screens-1.0+forge+mc1.20.jar": {
-    "modId": "panorama_screens",
-    "version": "1.0+forge+mc1.20"
-  },
   "particular-1.20.1-Forge-1.2.2.jar": {
     "modId": "particular",
     "version": "1.2.2"
@@ -1216,9 +1212,9 @@
     "modId": "starterstructure",
     "version": "4.2"
   },
-  "stonezone-1.20-2.8.4.jar": {
+  "stonezone-1.20-2.8.5.jar": {
     "modId": "stonezone",
-    "version": "1.20-2.8.4"
+    "version": "1.20-2.8.5"
   },
   "StorageDrawers-1.20.1-12.9.14.jar": {
     "modId": "storagedrawers",

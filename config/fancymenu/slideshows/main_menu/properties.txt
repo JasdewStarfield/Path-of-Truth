@@ -1,0 +1,12 @@
+type = slideshow
+
+slideshow-meta {
+   name = main_menu
+   width = 1920
+   height = 1001
+   x = 0
+   y = 0
+   duration = 10.0
+   fadespeed = 2.0
+   randomize = true
+}
