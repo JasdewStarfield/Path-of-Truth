@@ -99,6 +99,12 @@
 				"&o&7祝你好运！&r&r"
 			]
 			id: "0C34A91AD3EBF977"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "16EFB249D488127B"
+				table_id: 3947091887552256602L
+				type: "random"
+			}]
 			subtitle: "呃，打不过就走不丢人"
 			tasks: [{
 				id: "3B46679929EC94E9"
@@ -168,9 +174,13 @@
 		}
 		{
 			dependencies: ["0C34A91AD3EBF977"]
-			description: ["在你击杀末影龙后，会有一些龙鳞悬浮于空中——找到它们，然后你就可以制作强大的传说法术书。"]
+			description: [
+				"在你击杀末影龙后，会有一些龙鳞悬浮于空中——找到它们，然后你就可以制作强大的传说法术书。"
+				"&o&3如果没拿到或者完全没看见，也许应该把龙蛋先拿走以证明你击杀了末影龙。这将给你一次补充龙鳞的机会……&r&r"
+			]
 			id: "5067D48BC8E1CBEF"
 			rewards: [{
+				count: 8
 				id: "598C2AA55B81A613"
 				item: "irons_spellbooks:dragonskin"
 				type: "item"
@@ -191,9 +201,15 @@
 				"击杀深暗之园遗迹中的遗忆守卫就可以掉落这种金属。正如你所见，如果你找到合适的模板，这种神秘的金属锭可以升级你的装备。"
 				"同时，一些特殊的魔法和工业配方也需要它。"
 				""
-				"*注：遗迹中不会刷新新的遗忆守卫，如果你需要更多，那么就要自己探索——或制作遗忆守卫刷怪蛋。"
+				"&o&a*注：遗迹中不会刷新新的遗忆守卫，如果你需要更多，那么就要自己探索——或制作遗忆守卫刷怪蛋。&r&r"
 			]
 			id: "424B64AA9BB30C18"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "61549DF84C9DA6F6"
+				table_id: 5567297392411284388L
+				type: "random"
+			}]
 			subtitle: "深暗顶级材料"
 			tasks: [{
 				id: "1BE9B516904B496A"
@@ -243,6 +259,7 @@
 					type: "item"
 				}
 			]
+			title: "冰寒彻骨"
 			x: -2.0d
 			y: 2.0d
 		}

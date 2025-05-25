@@ -49,7 +49,7 @@
 			click: "https://music.163.com/playlist?id=12438635347&userid=327905232"
 			height: 1.0d
 			hover: ["链接：真理之路OST"]
-			image: "amendments:block/music_discs/music_disc_blocks"
+			image: "amendments:block/music_discs/music_disc_generic"
 			rotation: 0.0d
 			width: 1.0d
 			x: 4.0d
