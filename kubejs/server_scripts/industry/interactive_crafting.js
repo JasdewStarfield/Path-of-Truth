@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
       ['vintageimprovements:belt_grinder', 'vintageimprovements:grinder_belt'],
       //["protection_pixel:armorloadplatform", "kubejs:advanced_spring_set"],
       ['create_connected:inventory_access_port', 'create:chute'],
-      ['create_mobile_packages:drone_port', 'create:transmitter'],
+      ['create_mobile_packages:bee_port', 'create:transmitter'],
     ]
     preciseEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:precise_engineering", material)
