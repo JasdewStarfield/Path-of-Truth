@@ -231,21 +231,6 @@ ServerEvents.recipes(event => {
             A: 'irons_spellbooks:blood_upgrade_orb'
         }
     )
-    //下界之星复制
-    event.shaped(
-        Item.of('minecraft:nether_star', 4),
-        [
-            'ABC',
-            'BDB',
-            'CBA'
-        ],
-        {
-            C: 'aquamirae:ship_graveyard_echo',
-            A: 'minecraft:ender_eye',
-            D: 'goety:philosophers_stone',
-            B: 'scguns:nether_star_fragment'
-        }
-    )
     //禁书卷轴复制
     event.shapeless(Item.of('goety:forbidden_scroll', 2),
         [
