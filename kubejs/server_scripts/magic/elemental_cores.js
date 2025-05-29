@@ -261,7 +261,7 @@ ServerEvents.recipes(event => {
         "activation_item": {
             "item": 'goety:thunderbolt_focus'//中心物品
         },
-        "craftType": "storm",//仪式副类型（风暴）
+        "craftType": "sky",//仪式副类型（天空）
         "soulCost": 50,//每秒消耗
         "duration": 30,//时长
         "ingredients": [
