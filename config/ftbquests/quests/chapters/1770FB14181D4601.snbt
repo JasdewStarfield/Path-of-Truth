@@ -1,0 +1,296 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1770FB14181D4601"
+	group: ""
+	hide_quest_details_until_startable: true
+	icon: {
+		Count: 1
+		id: "scguns:flintlock_pistol"
+		tag: {
+			AmmoCount: 1
+			Damage: 0
+		}
+	}
+	id: "1770FB14181D4601"
+	images: [
+		{
+			height: 1.0d
+			image: "kubejs:textures/quests/life_of_a_gunsmith.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			height: 2.0d
+			image: "scguns:item/unfinished_shotgun_shell"
+			rotation: 0.0d
+			width: 2.0d
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			height: 2.0d
+			image: "immersiveengineering:item/material_gunpart_drum"
+			rotation: 0.0d
+			width: 2.0d
+			x: 1.5d
+			y: 4.5d
+		}
+	]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4BED26108E90A0CC"]
+			description: [
+				"右键瞄准，左键发射！"
+				"一个全新的战斗时代已经在你面前展开……"
+				""
+				"下面的蓝图任务分为两个分支：左侧和右侧，分别代表材料蓝图和探索蓝图。其中，材料蓝图可以在获得对应材料后直接制作，而探索蓝图则需要探索对应结构才能获取。"
+			]
+			icon: {
+				Count: 1
+				id: "scguns:flintlock_pistol"
+				tag: {
+					AmmoCount: 1
+					Damage: 0
+				}
+			}
+			id: "40D34B60BD7011DD"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "从最基础的枪械开始……"
+			tasks: [{
+				id: "4510A9F401CC26C1"
+				title: "好耶"
+				type: "checkmark"
+			}]
+			title: "新的开始"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["只用石头和木头就能做出堪堪能用的基础枪械"]
+			icon: "ftbquests:book"
+			id: "7D72C735D145F763"
+			shape: "diamond"
+			subtitle: "简易枪械"
+			tasks: [
+				{
+					id: "54082D6060DEFE53"
+					item: {
+						Count: 1
+						id: "scguns:flintlock_pistol"
+						tag: {
+							AmmoCount: 1
+							Damage: 0
+							GeckoLibID: 3L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "50D36DA3D72551E4"
+					item: {
+						Count: 1
+						id: "scguns:handcannon"
+						tag: {
+							AmmoCount: 1
+							Damage: 0
+							GeckoLibID: 4L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "173A3F6118E1586B"
+					item: {
+						Count: 1
+						id: "scguns:musket"
+						tag: {
+							AmmoCount: 1
+							Damage: 0
+							GeckoLibID: 5L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "613546A60458078B"
+					item: {
+						Count: 1
+						id: "scguns:blunderbuss"
+						tag: {
+							AmmoCount: 1
+							Damage: 0
+							GeckoLibID: 6L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "21E7601A73123E1D"
+					item: "scguns:powder_and_ball"
+					type: "item"
+				}
+				{
+					id: "3D5C6D9681DBA5FE"
+					item: "scguns:grapeshot"
+					type: "item"
+				}
+			]
+			title: "新手上路"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			id: "0AA2D4BA3B7F99BF"
+			shape: "diamond"
+			subtitle: "枪总是需要火药的"
+			tasks: [{
+				id: "51979227F5C1917C"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["但是枪械基本零件还是要铁。"]
+			id: "09AB3BC179AF7529"
+			subtitle: "如此简单！"
+			tasks: [{
+				id: "488AD339F05E83E0"
+				item: "scguns:copper_blueprint"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["普普通通，但至少能做出算得上有威力的枪械了。"]
+			id: "143180BE1973BA96"
+			subtitle: "一般通过"
+			tasks: [{
+				id: "73E8B44629623673"
+				item: "scguns:iron_blueprint"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["更稳定的输出！"]
+			id: "05C273A40186A578"
+			subtitle: "高级合金"
+			tasks: [{
+				id: "34456F092B925694"
+				item: "scguns:treated_brass_blueprint"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["总还是比它的几位前辈要硬一些的。"]
+			id: "46243596A537F0AF"
+			subtitle: "钻石风暴"
+			tasks: [{
+				id: "424BC505720043AC"
+				item: "scguns:diamond_steel_blueprint"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["大部分海洋系的枪械对火焰系目标有克制效果。"]
+			id: "250253A026170224"
+			subtitle: "是谁住在深海的大菠萝里？"
+			tasks: [{
+				id: "62B8D29EA2D601E9"
+				item: "scguns:ocean_blueprint"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: [
+				"某种意义上和下界合金锻造模板同样重要。"
+				"有一种枪需要通过烈焰人刷怪笼完成组装……"
+			]
+			id: "661C38A15ACA2062"
+			subtitle: "堡垒珍藏"
+			tasks: [{
+				id: "6380600E3ABD839A"
+				item: "scguns:piglin_blueprint"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["你的枪在低语……"]
+			id: "7A92FF4BFD84065C"
+			subtitle: "深邃黑暗幻想"
+			tasks: [{
+				id: "720BDDBCD673D704"
+				item: "scguns:deep_dark_blueprint"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["并不能让人打出潜影弹"]
+			id: "5D03D83CF29BF288"
+			subtitle: "游戏尽头的蓝图"
+			tasks: [{
+				id: "6B47C5B6827CE0C2"
+				item: "scguns:end_blueprint"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"250253A026170224"
+				"7A92FF4BFD84065C"
+				"661C38A15ACA2062"
+				"05C273A40186A578"
+				"143180BE1973BA96"
+				"46243596A537F0AF"
+				"09AB3BC179AF7529"
+				"5D03D83CF29BF288"
+			]
+			description: ["收集齐全部蓝图后，你就可以解锁全游戏最强的枪械种类：焦化枪械。"]
+			id: "548E55016926A7C4"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "超越想象"
+			tasks: [{
+				id: "6B37F6FC8AA15B87"
+				item: "scguns:scorched_blueprint"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+	subtitle: ["Life of a Gunsmith"]
+	title: "【附加】军械师生涯"
+}

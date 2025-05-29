@@ -1,13 +1,18 @@
 [general]
 giveJournal = false
 holdToCast = true
-doMinigame = true
 showUnread = true
 showToasts = true
-minigameDifficulty = 1.0
-rodDurabilityMultiplier = 1.0
 defaultLineColor = false
-hideUnknownFishNames = true
-baseCrateRarity = 20
+rodDurabilityMultiplier = 1.0
+crateWeight = 6
+crateQuality = 1
+[minigame]
+doMinigame = true
+doFeedback = true
+doSuccessSound = true
+doFailSound = true
+minigameDifficulty = 1.0
 [worldgen]
 disableFishingBoat = false
+disableEndOases = false

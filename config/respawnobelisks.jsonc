@@ -25,9 +25,9 @@
     },
     "secondarySpawnPoints": {
         // Whether secondary spawn points should be enabled. Secondary respawn points can be used to have multiple respawn points, triggered at various times.
-        "enableSecondarySpawnPoints": true,
+        "enableSecondarySpawnPoints": false,
         // Determines the overall maximum amount of secondary respawn points you can have. -1 is infinite.
-        "overallMaxPoints": -1,
+        "overallMaxPoints": 0,
         /*
         Determines a per-block cap on the amount of respawn points you can have. -1 is infinite.
         Tags(which get treated as a single entry) are supported by beginning the entry with a #.
@@ -35,9 +35,9 @@
         */
         "maxPointsPerBlock": {},
         // Determines the maximum amount of secondary respawn points you can have at any block not specified in 'maxPointsPerBlock'. -1 is infinite.
-        "defaultMaxPoints": -1,
+        "defaultMaxPoints": 0,
         // Whether players can forcefully change the order of their secondary respawn points by shift right clicking a respawn point.
-        "allowPriorityShifting": true,
+        "allowPriorityShifting": false,
         // Whether blocks should be given a specific order for respawning. This will not work well with 'allowPriorityShifting.'
         "enableBlockPriorities": false,
         /*
@@ -59,7 +59,7 @@
         IF_FLAME: Players can only choose if their respawn point is a radiant flame.
         UNLESS_FLAME: Players can only choose if their respawn point is not a radiant flame.
         */
-        "secondarySpawnMode": "ALWAYS",
+        "secondarySpawnMode": "NEVER",
         // A list of block ids which players are not allowed to choose to respawn at, unless it is their main respawn point.
         "secondarySpawnBlockBlacklist": [],
         // Whether 'secondarySpawnBlockBlacklist' should act as a whitelist instead of a blacklist.
@@ -76,7 +76,7 @@
         IF_FLAME: Players can only choose if their respawn point is a radiant flame.
         UNLESS_FLAME: Players can only choose if their respawn point is not a radiant flame.
         */
-        "worldSpawnMode": "ALWAYS"
+        "worldSpawnMode": "NEVER"
     },
     "immortalityCurse": {
         // Whether the curse of immortality should be enabled or not.
@@ -100,9 +100,9 @@
         Ex:     {"minecraft:stick":35}
         */
         "chargingItems": {
-            "minecraft:ender_eye": 25.0,
-            "minecraft:ender_pearl": 10.0,
-            "irons_spellbooks:arcane_essence": 5.0
+            "minecraft:ender_eye": 100.0,
+            "minecraft:ender_pearl": 20.0,
+            "irons_spellbooks:arcane_essence": 10.0
         },
         // Whether dispensers can be used to charge obelisks.
         "allowDispenserCharging": true,

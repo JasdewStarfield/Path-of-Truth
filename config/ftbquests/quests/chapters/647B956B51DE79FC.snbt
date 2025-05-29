@@ -5,7 +5,7 @@
 	filename: "647B956B51DE79FC"
 	group: "560257DD7915FBBC"
 	hide_quest_details_until_startable: true
-	icon: "bloodmagic:ritualdiviner"
+	icon: "goety:shade_soul_brazier"
 	id: "647B956B51DE79FC"
 	images: [
 		{
@@ -14,193 +14,141 @@
 			rotation: 0.0d
 			width: 1.3285714285714287d
 			x: 0.0d
-			y: -0.8d
+			y: 5.0d
 		}
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
+			order: 2
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 0.8d
-			y: -2.4d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
 			height: 2.0d
 			image: "kubejs:textures/quests/m4.png"
+			order: 2
 			rotation: 0.0d
 			width: 8.2834008097166d
 			x: 0.0d
 			y: -5.5d
+		}
+		{
+			height: 2.0d
+			image: "createnuclear:block/enriching/fire/fire_0"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			height: 1.4d
+			image: "vct:block/eco_flowering_azalea_crafting_table_top"
+			rotation: 0.0d
+			width: 1.4d
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			height: 1.6d
+			image: "goety:textures/particle/wind_blast_9.png"
+			rotation: 0.0d
+			width: 1.6d
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			height: 3.0d
+			image: "aquamirae:textures/particle/shine_4.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			height: 2.0d
+			image: "irons_spellbooks:textures/mob_effect/angel_wings.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			height: 3.0d
+			image: "biomeswevegone:block/cactus_flower"
+			rotation: 0.0d
+			width: 3.0d
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			height: 2.0d
+			image: "irons_spellbooks:textures/mob_effect/thunderstorm.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 3.5d
+			y: 0.5d
 		}
 	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["0AC1013759C98150"]
+			dependencies: ["736407504A1AB9E0"]
 			description: [
-				"首先你需要四级祭坛和“钢铁之心”来产生你的第一枚导师气血宝珠。"
-				"然后，你就可以准备进行一些神秘的仪式了）"
-				"通常的仪式是放置主仪式石后，用仪式石建造框架，然后进行铭文。"
-				"仪式启动需要LP，一些功能持续性的仪式需要持续消耗LP，所以请确保你携带的气血宝珠足够多——附近多放几个祭坛也行）"
-				"&o&c注：不同属性的仪式石是通过“喷漆”获得的，这一合成方式在jei中无法查询，可以查询“元素铭文工具”获得想要的东西。当然，更省心的方式是直接使用仪式推测杖来完成——因为它有无限耐久。&r&r"
+				"在一切开始之前，也许你已经发现了&6灵魂图腾的局限性&r，以及&b浪费了大量的灵魂能量&r。"
+				"探寻黑暗的解答后，你获得了一种将图腾转化为&d更加强大的灵魂核心&r的功能。"
+				"从此，你将不再需要将灵魂图腾放在诅咒之笼中进行供能，取而代之的是&9多个连接宝石&r——以及一个&5永远与你绑定的灵魂方舟&r作为灵魂的源头。"
+				"灵魂方舟&c不能直接放入图腾&r，但你可以将吸收器放在其上，然后将图腾放入吸收器进行注能。"
+				""
+				"&o&4*人只有一个灵魂，所以你只能绑定一个灵魂方舟。&r&r"
+				"{@pagebreak}"
+				"需要注意的是，更高的灵魂能量存储量将会召来&c更强大的敌人&r，比如统领灾厄村民的……&7灾厄教父&r。"
+				"如果你在林地府邸内使用&5黑暗卷轴&r，那么可以召唤&9更加强大的灾厄宰相&r，并借此夺取灾厄村民的力量。"
+				"灾厄宰相的具体能力参见本章冒险任务，&2“4A 世界尽头”&r。"
 			]
 			hide_until_deps_complete: true
-			icon: "bloodmagic:masterritualstone"
+			icon: "goety:star_amulet"
 			id: "5A5B1D96C50D1EAE"
-			rewards: [{
-				count: 16
-				id: "16947EBD559EC8D8"
-				item: "bloodmagic:ritualstone"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "1899AFC6006C1725"
+					item: "netherexp:soul_skeleton_skull_candle"
+					type: "item"
+				}
+				{
+					id: "2674128EA7F3F0FC"
+					item: "goety:soul_absorber"
+					type: "item"
+				}
+			]
 			shape: "octagon"
 			size: 1.5d
-			subtitle: "你要折腾一些大家伙了）"
+			subtitle: "**方舟，启动！"
 			tasks: [
 				{
-					id: "71FC2BEF8E5ECB52"
-					item: "bloodmagic:masterbloodorb"
+					id: "1E28F60648CA8024"
+					item: "goety:arca"
 					type: "item"
 				}
 				{
-					id: "428AC6A1DFB72BD8"
-					item: "bloodmagic:masterritualstone"
+					id: "60E0597F4D1E3D2A"
+					item: "goety:soul_transfer"
 					type: "item"
 				}
 			]
-			title: "【起点】大型仪式的基础"
+			title: "【起点】灵魂方舟"
 			x: 0.0d
-			y: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5A5B1D96C50D1EAE"]
-			description: [
-				"所以你可以从熔岩中提取恶魂的眼泪！"
-				"就是需要一些炼金手段（笑"
-			]
-			icon: "alexsmobs:lava_bottle"
-			id: "6D0730EAA3483E08"
-			subtitle: "对着熔岩流泪的恶魂"
-			tasks: [
-				{
-					id: "66A7AC66DAF733EF"
-					item: "minecraft:ghast_tear"
-					type: "item"
-				}
-				{
-					id: "5F1F5E37E339921A"
-					item: "alexsmobs:lava_bottle"
-					type: "item"
-				}
-			]
-			title: "熔岩中的泪水"
-			x: -2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5A5B1D96C50D1EAE"]
-			description: [
-				"血魔法的盔甲很可能是后期功能最全的盔甲。"
-				"虽然它们一开始很好制造，但这并不意味着升级很容易。"
-				"不同的升级需要不同的训练方式和点数，而具体的可以参见血染知书，升级则通过这个手镯。"
-				"&o&b……这玩意最好是手镯。&r&r"
-				"如果你希望你的盔甲有更多的点数能够容纳升级，那么你需要一个仪式来升级你的盔甲，将点数上限从100变为300（"
-				""
-				"&c&o*注意：由于束灵盔甲槽位升级有几率导致玩家死亡/通过仪式去除升级时直接爆炸，我们删除了槽位升级的配方，也请不要在创造模式尝试，后果会很严重。原束灵盔甲槽位饰品已合理处理槽位需求。&r&r"
-			]
-			id: "1F71A5FD2A6CA453"
-			subtitle: "你拥有活着的盔甲！"
-			tasks: [{
-				id: "3283831A8F833132"
-				item: "bloodmagic:upgradetrainer"
-				type: "item"
-			}]
-			title: "另一种盔甲升级"
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["5A5B1D96C50D1EAE"]
-			description: [
-				"&b【完成后解锁主线章节：5M 生命炼成】&r"
-				"在血魔法的书中，你应该能找到两种进入地牢的仪式，分别对应&b小型地牢&r和&c大型地牢&r。"
-				"其中，&b小型地牢（隐域仪式）&r的危险性和收获都比较小，也无法让你获取恶魔金属；而&c大型地牢（无尽之路仪式）&r则非常复杂，战利品也非常多。"
-				"两种地牢的仪式都只需要进行一次，因为入口是固化的，你可以一直通过核心的柱状结构反复出入地牢。"
-				"如果你发现有的房间打不开，那就回去自己合成钥匙吧）"
-				"&4&o当你收集了一整个恶魔合金块后，你就可以通过鲜血进行恶魔合金的催化了）&r&r"
-			]
-			icon: "bloodmagic:dungeon_ore"
-			id: "7CA6215959E08F1F"
-			subtitle: "深入地牢）"
-			tasks: [{
-				id: "55A54BDA2D73D1B3"
-				item: "bloodmagic:ingot_hellforged"
-				type: "item"
-			}]
-			title: "【终点】恶魔的金属"
-			x: 0.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["5A5B1D96C50D1EAE"]
-			description: [
-				"主媒体火花是所有多媒体网络的核心，你可以通过主媒体火花建立一个跨越距离（但不能跨越维度）的物品管理系统！"
-				"可以通过多媒体水晶来查询网络里有什么）"
-				"具体构建方式，请自己查看辞典）"
-			]
-			id: "3502E7A3A9BB5220"
-			subtitle: "魔力AE"
-			tasks: [{
-				icon: "botania:corporea_spark_master"
-				id: "577EA34F988FEF5C"
-				item: "botania:corporea_spark_master"
-				type: "item"
-			}]
-			title: "魔动工业基础"
-			x: 0.0d
-			y: 2.0d
-		}
-		{
-			dependencies: [
-				"7CA6215959E08F1F"
-				"5A5B1D96C50D1EAE"
-			]
-			description: [
-				"你会在书里发现一些描述，大致内容是“我们还没写完这个模组”"
-				"……所以很显然，作为魔法师兼整合包作者，有一部分内容被我进行了补完。"
-				"如果你发现用到了一些书里没有或者没说清楚的东西，请自行查询jei，因为我要说的话都在配方里了。"
-				"&o&a你不会以为我会给你在帕秋莉手册上面补全吧？不会吧不会吧？&r&r"
-			]
-			id: "0B5ECEDAA15BA54A"
-			shape: "hexagon"
-			size: 1.2d
-			subtitle: "这个魔法模组的作者不是很负责任（瘫"
-			tasks: [{
-				id: "2B2539E01BA27370"
-				item: {
-					Count: 1
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "bloodmagic:guide"
-					}
-				}
-				type: "item"
-			}]
-			title: "魔法补完计划"
-			x: 1.5d
-			y: -1.5d
-		}
-		{
-			dependencies: [
-				"3502E7A3A9BB5220"
-				"5A5B1D96C50D1EAE"
-			]
 			description: [
 				"终于，你碰到了占地最大，功能最强的一种被动产能花。"
 				"&o&m&c虽然产魔速率甚至不如火红莲&r&r&r"
 				"现在的你才有能力去制造和使用它。"
-				"请善用这朵花……为你的魔法事业添砖加瓦。"
+				"为什么最极致的黑暗可以催生出最强的生命力，这仍是一个谜团。"
 				""
 				"&o&b这玩意本体产魔烂的要死，所以还是看看下一个任务吧&r&r"
 			]
@@ -211,25 +159,26 @@
 				item: "botania:cell_block"
 				type: "item"
 			}]
-			shape: "hexagon"
-			size: 1.2d
-			subtitle: "“这就是生活”"
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "生命集成"
 			tasks: [{
 				id: "6AE125F671370B8A"
 				item: "botania:dandelifeon"
 				type: "item"
 			}]
-			title: "最强被动产魔"
+			title: "物极必反"
 			x: -1.5d
-			y: 1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["13FCEF26D0A44844"]
 			description: [
-				"虽然正常来说这一神秘的种子只能通过探索发现，但是启命英的生命能量能够超越这一规则限制。"
-				"通过&c“不太恰当的方式”&r粉碎启命英，你将获得&2植物的生长精粹&r……并翻倍你的产能花的工作效率）"
+				"虽然这一种子&c已经不再能被探索发现&r了，但是启命英的生命能量能够超越这一规则限制。"
+				"通过&c“不太恰当的方式”&r粉碎并浓缩启命英，你将获得&2植物的生长精粹&r……并翻倍你的产能花的工作效率）"
+				"然而，这样浓烈的生命精华应该拿来做比&d魔化草地&r更伟大的事。"
 				""
-				"&o&a所以为什么作者把这个动态结构画的这么丑呢&r（&r"
+				"&o&a所以为什么作者把这个动态结构画的这么丑呢（&r"
 			]
 			id: "63F56C428E164122"
 			rewards: [{
@@ -237,92 +186,33 @@
 				item: "minecraft:grass_block"
 				type: "item"
 			}]
-			subtitle: "效率++"
+			shape: "diamond"
+			subtitle: "生命精华"
 			tasks: [{
 				id: "2006B5FB0E525366"
 				item: "botania:overgrowth_seed"
 				type: "item"
 			}]
 			title: "狂野植物"
-			x: 2.0d
-			y: 1.0d
+			x: -1.5d
+			y: -2.0d
 		}
 		{
-			dependencies: ["0B5ECEDAA15BA54A"]
-			description: [
-				"仪式水晶是个很烦人的东西，尤其是有种类限制的时候。"
-				"所以，最终的解决方案是一块万用水晶！"
-				"虽然材料不是很好找，但我相信你们现在的阶段应该是可以解决的。"
+			dependencies: [
+				"13FCEF26D0A44844"
+				"6160C4A2B47CBBBC"
 			]
-			id: "1D012CE5422522D7"
-			subtitle: "永恒的边缘是万能"
-			tasks: [{
-				id: "1A1BFBD5A83E10B8"
-				item: "bloodmagic:activationcrystalcreative"
-				type: "item"
-			}]
-			title: "万用水晶"
-			x: -2.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["7CA6215959E08F1F"]
-			description: [
-				"在你献祭了足够多的血液后，你终于成为了合格的大法师）"
-				"同时，你可以使用瞬间传送了！不限制维度的那种！（但你需要正确配置传送点方块——并放入核心元件）"
-				"缺点是需要LP（呃……但你可以随时献血"
-				"另一个坏消息，传送符咒和传送点方块也是一对一的，所以你们还是需要传送大厅）"
-			]
-			id: "4C16917337A2AA2F"
-			rewards: [
-				{
-					count: 4
-					id: "3EEA540441EA6512"
-					item: "bloodmagic:teleposer"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "124376D1E1361B81"
-					item: "bloodmagic:teleposerfocus"
-					type: "item"
-				}
-			]
-			subtitle: "顶级宝珠与跨维度移动"
-			tasks: [
-				{
-					id: "4394C17E6D7815F7"
-					item: "bloodmagic:archmagebloodorb"
-					type: "item"
-				}
-				{
-					id: "1313ACB170CA0E82"
-					item: "bloodmagic:teleposerfocus"
-					type: "item"
-				}
-				{
-					id: "109DFB74D8067754"
-					item: "bloodmagic:teleposer"
-					type: "item"
-				}
-				{
-					id: "19C71FC5B79F3E19"
-					item: "bloodmagic:telepositionsigil"
-					type: "item"
-				}
-			]
-			title: "高档魔法"
-			x: 0.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["13FCEF26D0A44844"]
 			description: [
 				"通过这个小东西，你可以利用植物魔法的魔力飞行。然而相应的是，它有CD，并且会消耗不少的魔力。"
 				"建议合成手镜后再畅玩）"
 				"另外，这可是真正的“创造飞行”体验，即使有时限也是值得的。"
 			]
 			id: "566537583B144D15"
+			rewards: [{
+				id: "30061D7AC03F354B"
+				item: "botania:quartz_elven"
+				type: "item"
+			}]
 			subtitle: "魔力飞行"
 			tasks: [{
 				id: "6371D1A37FF75D74"
@@ -335,143 +225,9 @@
 				}
 				type: "item"
 			}]
-			title: "天空之梦I"
-			x: -3.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["0B5ECEDAA15BA54A"]
-			description: [
-				"通过相对简单的合成，你可以获得另一种飞行形式：准备好装有LP的宝珠，和你自己绑定，然后拿着这个符文右键你想飞往的方向）"
-				"它的消耗显然不算高，但相应的会占据你双手中的一个槽位）"
-				"*注：这个飞行方式由于本质是冲击飞行，所以比创造飞行的速度快得多"
-			]
-			id: "75F796D92A1DE33B"
-			subtitle: "血液飞行（啊？"
-			tasks: [{
-				id: "2FA291D1865EE982"
-				item: "bloodmagic:airsigil"
-				type: "item"
-			}]
-			title: "天空之梦II"
-			x: 3.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["3502E7A3A9BB5220"]
-			description: [
-				"将主媒体火花放置在多媒体索引上，你就可以通过简单的命令全网调用你需要的物品）"
-				"这也是后续一些神秘合成的基础要素之一）"
-				"具体使用方法还是参见辞典和JEI）"
-				"&o&a不会读书你为什么要来玩MC（？&r&r"
-			]
-			id: "0B50AAAD0722641F"
-			subtitle: "CPU与指令调用"
-			tasks: [{
-				id: "3ECCEBA2C384D683"
-				item: "botania:corporea_index"
-				type: "item"
-			}]
-			title: "多媒体核心"
-			x: 1.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["5A5B1D96C50D1EAE"]
-			description: [
-				"血魔法的仪式可以做到很多事情，而且也不止有打开恶魔维度传送门的这种一次性仪式。"
-				"不同仪式的要求和效果都不同，具体还是参见那本指示书。"
-				"这些不会被写在任务里，但作者个人希望你善用它们。"
-			]
-			icon: "botania:flare_chakram"
-			id: "7D0A74797DBC071B"
-			subtitle: "仪式其实很强大。"
-			tasks: [{
-				id: "4495C7F59ED932AF"
-				title: "一些说明"
-				type: "checkmark"
-			}]
-			x: -3.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["5A5B1D96C50D1EAE"]
-			description: [
-				"植物魔法的多媒体网络是通过&9多媒体火花&r和&b主媒体火花&r组成的。"
-				"一个主媒体火花和&d同样颜色的一系列多媒体火花&r代表一个网络，内部的物品可以互相流通。"
-				"多媒体火花可以染色，并且只能放置在存储方块或者多媒体方块上。"
-				"多媒体火花有距离限制，但具体是多少我建议你自己测量，所以组网的时候不要拿着一个火花跑老远。"
-				"多媒体索引的指令参见植物魔法辞典。"
-			]
-			icon: "minecraft:cobweb"
-			id: "4EE8F15C56069C68"
-			subtitle: "组网基础知识"
-			tasks: [{
-				id: "7C94112F716CB6D4"
-				title: "网络入门"
-				type: "checkmark"
-			}]
-			x: 3.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["7D0A74797DBC071B"]
-			description: [
-				"你会发现有一种仪式石不仅没有用到，也没有合成配方，而且还没有对应的铭文工具！"
-				"然而现在，它有了额外的作用——我写的）"
-				"应该说抛开没写完不谈，血魔法的设计还是不错的。"
-				"由于这个东西叫破晓仪式石但是我不想写一个新的铭文工具，它也不能被用于仪式，所以它的合成方式有别于别的仪式石）"
-				"从目前来讲，它代表工业的破晓，而具体的用途在下一章揭晓）"
-			]
-			id: "7794ECF3F13D8BBB"
-			shape: "hexagon"
-			subtitle: "模组作者背大锅"
-			tasks: [{
-				id: "0CB44E3B8EA0BB2B"
-				item: "bloodmagic:lightritualstone"
-				type: "item"
-			}]
-			title: "不应存在的方块"
-			x: -4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["4EE8F15C56069C68"]
-			description: [
-				"如果你想要拓展自己的网络但是又不想放一路箱子来承载火花，那么这就是更好的选择。"
-				"当然，拿来做装饰也行）"
-				""
-				"&m&o&b至少这方块挺漂亮的（&r&r&r"
-			]
-			id: "5ABBC509074C06A9"
-			shape: "hexagon"
-			subtitle: "虚假的存储结构"
-			tasks: [{
-				id: "6C1F4E364DA889AC"
-				item: "botania:corporea_block"
-				type: "item"
-			}]
-			title: "空节点"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["75F796D92A1DE33B"]
-			description: [
-				"但实际上，你可以进行物理存储，生命源质也是液体的一种）"
-				"试试存大量LP到沉浸的大型储罐结构中，在关键时刻反向输入血祭坛来使用！"
-			]
-			id: "5803C7E02E8597D4"
-			shape: "hexagon"
-			subtitle: "通常我们习惯用宝珠存储LP……"
-			tasks: [{
-				id: "16E8CA487B4BFBC6"
-				item: "bloodmagic:life_essence_bucket"
-				type: "item"
-			}]
-			title: "生命源质的存储"
+			title: "天空之梦"
 			x: 0.0d
-			y: -4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["566537583B144D15"]
@@ -481,7 +237,16 @@
 				"以及：移动速度受到游泳速度加成，并且你可以变成卑鄙的一格人）"
 			]
 			id: "3557A195504496D7"
-			shape: "hexagon"
+			rewards: [{
+				id: "5C55685A2A20C73B"
+				item: {
+					Count: 1
+					id: "immersiveengineering:balloon"
+					tag: { }
+				}
+				type: "item"
+			}]
+			shape: "circle"
 			subtitle: "廉价的伪飞行）"
 			tasks: [{
 				id: "73FC4490F98D7BAE"
@@ -490,104 +255,283 @@
 			}]
 			title: "空中游泳！"
 			x: 0.0d
-			y: 4.0d
+			y: -1.0d
 		}
 		{
-			dependencies: ["7CA6215959E08F1F"]
+			dependencies: ["5A5B1D96C50D1EAE"]
 			description: [
-				"通过恶魔意志的结晶与储存，现在你可以通过灵魂网络进行自动物品传输！"
-				"刷怪掉落的多余恶魔意志有地方用了，不是吗？"
-				"通过仪式，你甚至可以获得更多种类的恶魔结晶！"
+				"也许我们需要一些更强大的……"
+				"只有在&1深暗之域群系&r，这一火盆才能被点燃。它通过燃烧灵魂来汲取这个世界最黑暗的能量。"
+				"要使用它，你需要准备好&b足够多的灵魂&r，然后使用&9灵魂蜡烛&r引导&5诅咒之笼&r，将燃烧的灵魂注入火焰中。"
+				"如果你&c打断了反应过程或者灵魂储量不够&r，那么所有已经消耗的灵魂都将&a逸散于虚无&r中。"
+				""
+				"&o&d*为了掀掉怪物的脑壳，也许你需要植魔的少女心斧头……&r&r"
 			]
-			id: "41AFE28EADD07A7C"
-			subtitle: "恶魔意志的结晶"
-			tasks: [
-				{
-					id: "0C0A40E33A3FCBB1"
-					item: "bloodmagic:demoncrystallizer"
-					type: "item"
-				}
-				{
-					id: "20133877E140293B"
-					item: "bloodmagic:demoncrucible"
-					type: "item"
-				}
-				{
-					id: "6246CACFB06B7667"
-					item: "bloodmagic:demonpylon"
-					type: "item"
-				}
-			]
-			title: "实体化的灵魂"
-			x: -1.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["41AFE28EADD07A7C"]
-			id: "45D676CD9F197E2D"
-			subtitle: "调试你的灵魂网络"
-			tasks: [
-				{
-					id: "54AC408AD1C4B5B2"
-					item: "bloodmagic:noderouter"
-					type: "item"
-				}
-				{
-					id: "48536F1BDA587360"
-					item: "bloodmagic:itemroutingnode"
-					type: "item"
-				}
-				{
-					id: "7E0F0EE0D583A169"
-					item: "bloodmagic:masterroutingnode"
-					type: "item"
-				}
-			]
-			title: "灵魂网络节点"
-			x: -1.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["0B50AAAD0722641F"]
-			id: "4C87CAE7F56DEDB9"
-			subtitle: "调试你的物品网络"
-			tasks: [{
-				id: "41D9A0AE6A4D5001"
-				item: "botania:corporea_spark"
+			icon: "decorative_blocks:soul_brazier"
+			id: "4CD0C386D02D482E"
+			rewards: [{
+				count: 4
+				id: "5474CB019BA74E16"
+				item: "goety:soul_candlestick"
 				type: "item"
 			}]
-			title: "火花网络节点"
-			x: 1.5d
-			y: 3.5d
+			shape: "hexagon"
+			size: 1.2d
+			subtitle: "照亮深暗"
+			tasks: [{
+				id: "2D1F4F4EB2CD376C"
+				item: "goety:necro_brazier"
+				type: "item"
+			}]
+			title: "燃烧灵魂"
+			x: 0.0d
+			y: 1.9000000000000004d
 		}
 		{
-			dependencies: ["3502E7A3A9BB5220"]
+			dependencies: ["5A5B1D96C50D1EAE"]
 			description: [
-				"当大地在魔力的托举下升空……"
-				""
-				"警告：不推荐对着你家使用。后果自负（"
+				"至少这一次，你可以&6同时处理多个物品的注入和输出&r了——大概吧。"
+				"同时，你也可以&b通过灵魂修复你的物品&r了。"
+				"然而制作某些机器需要更多的知识。也许应该&5去墓穴找找卷轴&r？"
 			]
-			id: "793E8DE00C384C1D"
+			id: "3E8F411D26582E85"
 			rewards: [{
-				id: "78343A838FA4B7F1"
+				id: "05D1009740B600AF"
 				item: {
 					Count: 1
-					id: "botania:laputa_shard"
+					id: "blue_skies:soulbound_spear"
 					tag: {
-						level: 19
+						Damage: 0
 					}
 				}
 				type: "item"
 			}]
-			subtitle: "飞吧！"
-			tasks: [{
-				id: "5077FB7204E933E0"
-				item: "botania:laputa_shard"
+			subtitle: "压缩注入"
+			tasks: [
+				{
+					id: "1B4B04FAD078D222"
+					item: "goety:grim_infuser"
+					type: "item"
+				}
+				{
+					id: "3EF3EC36E7EDA73A"
+					item: "goety:soul_mender"
+					type: "item"
+				}
+			]
+			title: "更黑，更快，更强"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5A5B1D96C50D1EAE"]
+			description: [
+				"比起铁魔法的回溯而言，诡厄巫法的优势在于你可以选定自己要往哪里传送。"
+				"虽然&5只能SHIFT+右键绑定在床/灵魂方舟/毁灭催化器上&r，但是也是一种自由传送。"
+				"&a现在下界和末地的床不会再爆炸了……但是毁灭催化器直接右键会炸！&r"
+				"也许你需要一个聚晶袋来解决一下传送地点的问题……？"
+			]
+			id: "1A4E9D167F5F2535"
+			rewards: [{
+				id: "2AD815343B92B94B"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:recall"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
 				type: "item"
 			}]
-			title: "天空之城"
+			subtitle: "单人纯享版"
+			tasks: [{
+				id: "61C6E926973B05A2"
+				item: "goety:recall_focus"
+				type: "item"
+			}]
+			title: "自由传送"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5A5B1D96C50D1EAE"]
+			description: [
+				"唯一需要仪式来凝聚的核心，借用风暴之力，结合要素将其固化。"
+				"为了&b寒风中的灵魂回响&r，也许你需要去&9冰冻深海&r……那里的危险生物会带有灵魂的执念。"
+				"至此，你集齐了&6地&r&b水&r&c火&r&a风&r四大基本元素的力量，并对&4生命&r和&0死亡&r有了深入的了解。"
+				"通往世界奥秘的大门正在为你敞开。"
+			]
+			id: "6160C4A2B47CBBBC"
+			shape: "diamond"
+			subtitle: "高天之上"
+			tasks: [{
+				id: "7C6DB903737B111A"
+				item: "kubejs:wind_elemental_core"
+				type: "item"
+			}]
+			title: "从地底到天空"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5A5B1D96C50D1EAE"]
+			description: [
+				"在拥有一个&5足够大的灵魂容器&r后，&a自动收集&r也应该提上日程了。"
+				"利用&9幽匿&r的特性，将发散逆转为回收，你就获得了可以&b在一定范围内收集亡者灵魂&r的单元。"
+				"至少这意味着你不用总是出门亲自猎杀了……"
+			]
+			id: "728982443FC5DBE8"
+			subtitle: "无尽的贪婪"
+			tasks: [{
+				id: "3CA0B6F540F82AB5"
+				item: "goety:sculk_devourer"
+				type: "item"
+			}]
+			title: "自动收割"
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5A5B1D96C50D1EAE"]
+			description: [
+				"厌倦了每次在方尖碑复活的过程？不想成为人类了？那么现在机会摆在你的面前！"
+				"用&5禁书&r学会仪式，在&5合适的时机&r喝下这瓶药，你将成为一个&b与你的灵魂方舟绑定的巫妖&r——法术方面更加强大，但是肉体更加脆弱，而且——是亡灵生物（会被阳光点燃）。"
+				"好处是你&c不会饿，也不会死亡&r了——毕竟你已经死了。只要灵魂方舟还在，你就可以&l&d无限复活&r&r——但是如果灵魂不足以进行奥术复活（即10000点），那你将要承受一段时间的诅咒……"
+				"巫妖还&5拥有一些独特的能力&r，比如永久夜视，不过这就需要你自行探索了。"
+				"{@pagebreak}"
+				"为了获取&5禁书卷轴&r，你需要进行一些合成或者前往坟墓探索；为了获取&4不洁之血&r，也许你需要&9用安息仪式&r在主世界召唤一个使徒……"
+				"使徒的具体机制参见本章冒险任务，&2“4A 世界尽头”&r。"
+				"如果你希望获得&4更纯净的血液&r，那么你需要在&6下界&r召唤使徒，这会净化他们的血液，但也会让他们&a更加强大&r。"
+				"然而下界合金的获取也变得&e更加艰难&r，也许应该&7多借助一些工业的力量&r。"
+				"&o&3有一种戒指可以让你避免被点燃的命运……&r&r"
+			]
+			id: "0E6FB072C7B55324"
+			subtitle: "亡灵王者"
+			tasks: [{
+				id: "000995B0BD032EC9"
+				item: "goety:undeath_potion"
+				type: "item"
+			}]
+			title: "不死巫妖"
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6160C4A2B47CBBBC"]
+			description: [
+				"你就能够获得一枚&d部分超越世界规则&r的聚晶。"
+				"它会让你的注视的能短暂撕裂这个世界……"
+				"从实际伤害来讲确实有限，它并没有像铁魔法的黑洞一样强化末影的侵蚀，然而它代表的是&5对世界规则的暂时破坏&r。"
+				"也许你可以从其中&b知晓更多&r……"
+			]
+			id: "5B719CC45C168F8C"
+			rewards: [{
+				id: "4134847A5394662F"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:black_hole"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "当基本元素和空间力量组合……"
+			tasks: [{
+				id: "4DDBF988DEA31F9C"
+				item: "goety:rupture_focus"
+				type: "item"
+			}]
+			title: "破碎虚空"
+			x: 1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"63F56C428E164122"
+				"5B719CC45C168F8C"
+			]
+			description: [
+				"&b【完成后解锁主线章节：5M 生命炼成】&r"
+				"当你强行撕裂并掌握了生命的规则，你就获得了一部分造物主的能力，比如……真正意义上的&c活化可掌控的生命&r。"
+				"虽然只是创造出刷怪笼，但这证明你开始操作造物对应的权柄，不再是&7曾经需要窃夺笼中生命火焰&r的普通人。"
+			]
+			id: "301A6952E3B16C88"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5421401F2FB70E8B"
+				table_id: 3947091887552256602L
+				type: "choice"
+			}]
+			shape: "octagon"
+			size: 1.2d
+			subtitle: "创世先创生"
+			tasks: [{
+				id: "08A795D4148AB53B"
+				item: "minecraft:spawner"
+				type: "item"
+			}]
+			title: "点燃生命之火"
 			x: 0.0d
-			y: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6160C4A2B47CBBBC"]
+			description: [
+				"把元素核心压进贝壳就可以获得一个&b对寒冷群系战斗有奇效&r的符文。"
+				"但这真的值得吗……？"
+			]
+			icon: "goety:trident_storm_focus"
+			id: "1E9A7D4525E97575"
+			subtitle: "粗暴的聚合"
+			tasks: [{
+				id: "58C0CABFE1945470"
+				item: "aquamirae:rune_of_the_storm"
+				type: "item"
+			}]
+			title: "风暴之力"
+			x: 3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["13FCEF26D0A44844"]
+			description: ["对于启命英的解析可以让你&a通晓植物们的秘密&r……然后操纵它们。"]
+			id: "6888FE5BDE76F635"
+			rewards: [{
+				id: "1651E2DB2DCBDC20"
+				item: "goety:ravaging_scroll"
+				type: "item"
+			}]
+			subtitle: "植物大战……灾厄村民？"
+			tasks: [{
+				id: "458FCD9462DFF70B"
+				item: "goety:floral_scroll"
+				type: "item"
+			}]
+			title: "生之花的绽放"
+			x: -3.5d
+			y: 0.5d
 		}
 	]
 	subtitle: ["Eerie Ritual"]

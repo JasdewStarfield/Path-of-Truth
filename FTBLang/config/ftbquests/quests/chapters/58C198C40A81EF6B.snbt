@@ -1,0 +1,472 @@
+{
+	autofocus_id: "374C430D0AD70D2E"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "58C198C40A81EF6B"
+	group: "461ABC15BE939FA8"
+	hide_quest_details_until_startable: true
+	icon: "irons_spellbooks:lightning_bottle"
+	id: "58C198C40A81EF6B"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 0.0d
+			y: 3.3d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/m1.png"
+			rotation: 0.0d
+			width: 10.23d
+			x: 0.0d
+			y: -2.5d
+		}
+	]
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description1}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description2}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description3}"
+				""
+				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description4}"
+			]
+			hide_details_until_startable: true
+			hide_until_deps_complete: true
+			icon: "minecraft:chest"
+			id: "374C430D0AD70D2E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "362C6F8A36A23C92"
+					table_id: 3947091887552256602L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5449650F1038AF9C"
+					table_id: 3947091887552256602L
+					type: "random"
+				}
+			]
+			shape: "octagon"
+			size: 1.2d
+			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest1.subtitle}"
+			tasks: [{
+				id: "6E5FCD00F7C67EA4"
+				item: "irons_spellbooks:arcane_essence"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.58C198C40A81EF6B.quest1.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["374C430D0AD70D2E"]
+			description: [
+				"{ftbquests.chapter.58C198C40A81EF6B.quest2.description1}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest2.description2}"
+				""
+				"{ftbquests.chapter.58C198C40A81EF6B.quest2.description3}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest2.description4}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest2.description5}"
+			]
+			icon: "botania:cosmetic_botanist_emblem"
+			id: "788F3EC85AC1172E"
+			rewards: [{
+				id: "3F3621978CB3318B"
+				item: "botania:flower_bag"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest2.subtitle}"
+			tasks: [
+				{
+					id: "59A31B2BD0665A8D"
+					item: "botania:apothecary_default"
+					type: "item"
+				}
+				{
+					id: "6699E477287E0D16"
+					item: "botania:pure_daisy"
+					type: "item"
+				}
+				{
+					id: "35B1398FEE514782"
+					item: {
+						Count: 1
+						id: "woodenbucket:wooden_bucket"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "513AC58DBB67B60E"
+					item: "botania:lexicon"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.58C198C40A81EF6B.quest2.title}"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["374C430D0AD70D2E"]
+			description: [
+				"{ftbquests.chapter.58C198C40A81EF6B.quest3.description1}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest3.description2}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest3.description3}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest3.description4}"
+				""
+				"{ftbquests.chapter.58C198C40A81EF6B.quest3.description5}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest3.description6}"
+			]
+			icon: "irons_spellbooks:ender_upgrade_orb"
+			id: "28A1C39EF1446334"
+			rewards: [{
+				id: "300AC1A510B03C11"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:magic_missile"
+								index: 0
+								level: 3
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest3.subtitle}"
+			tasks: [
+				{
+					id: "150978E8B38FB4B1"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:copper_spell_book"
+						tag: {
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 5
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "677928AAFA743D41"
+					item: "irons_spellbooks:inscription_table"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.58C198C40A81EF6B.quest3.title}"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["28A1C39EF1446334"]
+			description: [
+				"{ftbquests.chapter.58C198C40A81EF6B.quest4.description1}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest4.description2}"
+			]
+			id: "5F5CA37CCE531CAA"
+			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest4.subtitle}"
+			tasks: [{
+				id: "03B305793FF64434"
+				item: "irons_spellbooks:magic_cloth"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.58C198C40A81EF6B.quest4.title}"
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["788F3EC85AC1172E"]
+			description: [
+				"{ftbquests.chapter.58C198C40A81EF6B.quest5.description1}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest5.description2}"
+				""
+				"{ftbquests.chapter.58C198C40A81EF6B.quest5.description3}"
+			]
+			icon: "botania:pure_daisy"
+			id: "735172F79325756F"
+			rewards: [{
+				id: "10ACEE589E13F8C0"
+				item: "kubejs:raw_andesite_alloy"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest5.subtitle}"
+			tasks: [
+				{
+					id: "1959A768803842EB"
+					item: "botania:livingwood_log"
+					type: "item"
+				}
+				{
+					id: "3A8BA784740F45BD"
+					item: "botania:livingrock"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.58C198C40A81EF6B.quest5.title}"
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"735172F79325756F"
+				"71D2AC46FA223631"
+			]
+			description: ["{ftbquests.chapter.58C198C40A81EF6B.quest6.description1}"]
+			icon: "botania:runic_altar"
+			id: "5DC5D0BF9E2C91CC"
+			rewards: [{
+				id: "6216BE3098275FE7"
+				item: "botania:rune_mana"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest6.subtitle}"
+			tasks: [{
+				id: "626B38A8103DFA61"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.58C198C40A81EF6B.quest6.title}"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5F5CA37CCE531CAA"
+				"66D6C25EC4F7A966"
+			]
+			description: [
+				"{ftbquests.chapter.58C198C40A81EF6B.quest7.description1}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest7.description2}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest7.description3}"
+			]
+			icon: {
+				Count: 1
+				id: "irons_spellbooks:wandering_magician_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7E9EA8A40086E7CA"
+			rewards: [{
+				id: "2E8CEE4E69C62BA9"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:scroll"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "irons_spellbooks:magic_arrow"
+								index: 0
+								level: 2
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 0b
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest7.subtitle}"
+			tasks: [
+				{
+					id: "3FAC8ECB05056EFE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:wandering_magician_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "541CE495BFBB3894"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:wandering_magician_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "074299C70529C038"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:wandering_magician_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "68CB6A8EDBFAE4AD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "irons_spellbooks:wandering_magician_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.58C198C40A81EF6B.quest7.title}"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["28A1C39EF1446334"]
+			description: ["{ftbquests.chapter.58C198C40A81EF6B.quest8.description1}"]
+			id: "66D6C25EC4F7A966"
+			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest8.subtitle}"
+			tasks: [{
+				id: "465956FE248BE3E4"
+				item: "irons_spellbooks:graybeard_staff"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.58C198C40A81EF6B.quest8.title}"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["788F3EC85AC1172E"]
+			description: [
+				"{ftbquests.chapter.58C198C40A81EF6B.quest9.description1}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest9.description2}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest9.description3}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest9.description4}"
+			]
+			icon: "botania:creative_pool"
+			id: "71D2AC46FA223631"
+			rewards: [{
+				id: "704DD1E0D902324F"
+				item: "botania:obedience_stick"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest9.subtitle}"
+			tasks: [
+				{
+					id: "0E280060FEFFD99A"
+					item: "botania:mana_pool"
+					type: "item"
+				}
+				{
+					id: "228B8AFC60958577"
+					item: "botania:endoflame"
+					type: "item"
+				}
+				{
+					id: "0B77ABCA3F437F14"
+					item: "botania:mana_spreader"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.58C198C40A81EF6B.quest9.title}"
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"788F3EC85AC1172E"
+				"28A1C39EF1446334"
+			]
+			description: [
+				"{ftbquests.chapter.58C198C40A81EF6B.quest10.description1}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest10.description2}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest10.description3}"
+				""
+				"{ftbquests.chapter.58C198C40A81EF6B.quest10.description4}"
+			]
+			icon_scale: 1.2d
+			id: "708CC78EEB470115"
+			rewards: [
+				{
+					id: "5543440A93455087"
+					item: {
+						Count: 1
+						id: "bloodmagic:sacrificialdagger"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "1D0F630C6D896177"
+					item: "bloodmagic:daggerofsacrifice"
+					type: "item"
+				}
+			]
+			shape: "pentagon"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest10.subtitle}"
+			tasks: [{
+				id: "3539EB568810683D"
+				item: "bloodmagic:altar"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.58C198C40A81EF6B.quest10.title}"
+			x: 0.0d
+			y: 2.0d
+		}
+	]
+	subtitle: ["{ftbquests.chapter.58C198C40A81EF6B.subtitle}"]
+	title: "{ftbquests.chapter.58C198C40A81EF6B.title}"
+}

@@ -34,4 +34,11 @@ ServerEvents.recipes(event => {
         "secondaries":[{"chance":0.75,"output":{"item":"create:andesite_alloy"}}],
         "time":100
     })
+
+    //工作盆
+    event.replaceInput(
+        { output:"create:basin" },
+        '#forge:ingots/andesite',
+        '#forge:plates/andesite'
+    )
 })

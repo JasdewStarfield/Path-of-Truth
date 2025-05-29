@@ -1,0 +1,19 @@
+
+[paintings]
+
+	[paintings.painting_drops]
+		#If Paintings drop their variants when broken
+		"Paintings drop variants" = true
+		#If Paintings only drop their variants when broken with Shears
+		"Paintings drop variants with Shears" = true
+		#If Paintings only drop their variants when broken with Silk Touch
+		"Paintings drop variants with Silk Touch" = true
+
+	[paintings.painting_selector]
+		#If right-clicking with a Painting item opens up a Painting selector menu
+		"Painting selector" = true
+		#If you must be crouching to open the Painting selector
+		"Painting selector requires crouching" = false
+		#If the Painting selector can be opened while right-clicking the top or bottom face of a block
+		"Painting selector can open on blocks" = true
+

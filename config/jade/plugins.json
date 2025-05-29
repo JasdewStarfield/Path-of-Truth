@@ -56,20 +56,21 @@
     "show_tree_block_counts": true,
     "show_num_chops_remaining": true
   },
-  "jadeaddons": {
-    "equipment_requirement": ""
-  },
-  "pipez": {
-    "pipe": true
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
   },
   "immersiveengineering": {
     "multiblock_icon": true
   },
   "collectorsreap": {
     "crop_progress": true
-  },
-  "supplementaries": {
-    "hat_stand": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -79,23 +80,34 @@
     "registry_name": "OFF",
     "mod_name": true
   },
-  "create": {
-    "filter": true,
-    "backtank_capacity": true,
-    "goggles.requires_goggles": true,
-    "goggles": false,
-    "blaze_burner": true,
-    "exact_block": true,
-    "crafting_blueprint": true,
-    "goggles.detailed": false,
-    "placard": true
-  },
   "uti": {
     "entity_name": true,
     "object_name": true
   },
+  "balm": {
+    "jade": true
+  },
+  "eclipticseasons": {
+    "crop": true,
+    "snowy_status": true,
+    "crop.shift_hint": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "pipez": {
+    "pipe": true
+  },
   "corpse": {
     "corpse": true
+  },
+  "goety": {
+    "block_owner": true,
+    "soul_energy": true,
+    "servant_mode": true,
+    "zombie_villager": true,
+    "villager_profession": true,
+    "summon_lifespan": true
   },
   "storagedrawers": {
     "display.stacklimit": true,

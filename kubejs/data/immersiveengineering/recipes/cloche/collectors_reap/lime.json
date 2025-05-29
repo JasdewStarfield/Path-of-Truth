@@ -1,0 +1,8 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{"item":"collectorsreap:lime_seeds"},
+    "render":{"type":"crop","block":"collectorsreap:lime_bush"},
+    "results":[{"count":1,"item":"collectorsreap:lime"}],
+    "soil":{"item":"farmersdelight:rich_soil"},
+    "time":560
+}

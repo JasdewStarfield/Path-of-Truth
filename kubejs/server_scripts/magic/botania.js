@@ -18,17 +18,20 @@ ServerEvents.recipes(event => {
             'botania:rune_mana'
         ]
     )
-    event.shaped(Item.of('mechanicalbotania:mana_motor',1),
-    ['ABA',
-    'CDC',
-    'ABA'],
-    {
-        A:'botania:manasteel_ingot',
-        B:'irons_spellbooks:arcane_salvage',
-        C:'irons_spellbooks:mana_ring',
-        D:'create_new_age:basic_motor'
-    }
-)
+    event.shaped(
+        Item.of('mechanicalbotania:mana_motor'),
+        [
+            'ABA',
+            'CDC',
+            'ABA'
+        ],
+        {
+            B: 'irons_spellbooks:arcane_salvage',
+            D: 'createaddition:electric_motor',
+            C: 'goety:cursed_ingot',
+            A: 'botania:manasteel_ingot'
+        }
+    )
 
 
     //修改白雏菊合成配方
@@ -42,66 +45,61 @@ ServerEvents.recipes(event => {
     )
 
     //支持机械动力的活木、活石配方
-    event.recipes.create.mixing(['botania:livingwood_log', Item.of('botania:pure_daisy').withChance(0.99)], ['#minecraft:logs','botania:pure_daisy']).heated()
+    event.recipes.create.mixing(['botania:livingwood_log', Item.of('botania:pure_daisy').withChance(0.99)], [Ingredient.of("#minecraft:logs").subtract('botania:livingwood_log'),'botania:pure_daisy']).heated()
     event.recipes.create.mixing(['botania:livingrock', Item.of('botania:pure_daisy').withChance(0.99)], ['minecraft:stone','botania:pure_daisy']).heated()
 
     //遗忆守卫炼制配方
     event.recipes.botania.petal_apothecary('undergarden:forgotten_guardian_spawn_egg', 
         [
             '#forge:eggs',
-            'immersiveengineering:component_electronic_adv',
-            'botania:aura_ring_greater',
+            'create_connected:sequenced_pulse_generator',
+            'goety:philosophers_stone',
             'kubejs:forgotten_mechanism'
         ]
     )
 
-    //合成破晓仪式石
-    event.recipes.botania.petal_apothecary('bloodmagic:lightritualstone', 
-        [
-            'bloodmagic:masterritualstone',
-            'kubejs:electronic_engineering',
-            'immersiveengineering:component_electronic_adv'
-        ]
-    )
-    //锻造血腥法杖
-    event.recipes.botania.petal_apothecary('irons_spellbooks:blood_staff', 
-        [
-            'botania:fire_rod',
-            'irons_spellbooks:blood_upgrade_orb',
-            'immersiveengineering:steel_post',
-            'bloodmagic:strong_tau',
-            'bloodmagic:weakbloodshard',
-            'minecraft:dragon_breath'
-        ]
-    )
     //黑莲花修改
-    event.recipes.botania.petal_apothecary('botania:black_lotus', 
+    event.shaped(
+        Item.of('botania:black_lotus'),
         [
-            'minecraft:lily_pad',
-            'botania:black_mystical_flower',
-            'botania:pixie_dust'
-        ]
+            'ABA',
+            'BCB',
+            'ABA'
+        ],
+        {
+            A: 'botania:ender_air_bottle',
+            B: 'botania:black_petal',
+            C: 'create:powdered_obsidian'
+        }
     )
     //暗黑莲花修改
-    event.recipes.botania.petal_apothecary('botania:blacker_lotus', 
-        [
-            'botania:black_lotus',
-            'irons_spellbooks:ender_upgrade_orb',
-            'tfmg:asphalt'
-        ]
-    )
-    //合成注能丝触书籍
-    /*
-    
-    event.recipes.botania.petal_apothecary('createchromaticreturn:silkstrum_book', 
-        [
-            'createchromaticreturn:silkstrum',
-            'createchromaticreturn:refined_radiance',
-            'bosses_of_mass_destruction:levitation_block',
-            'irons_spellbooks:ruined_book'
-        ]
-    )
-    */
+    event.custom({
+        "type": "goety:ritual",
+        "ritual_type": "goety:craft",//仪式主类型（制作）
+        "activation_item": {
+            "item": 'goety:night_beacon'//中心物品
+        },
+        "craftType": "sabbath",//仪式副类型（安息）
+        "soulCost": 100,//每秒消耗
+        "duration": 60,//时长
+        "ingredients": [
+            {
+                "item": 'botania:black_lotus'
+            },
+            {
+                "item": 'botania:black_lotus'
+            },
+            {
+                "item": 'botania:black_lotus'
+            },
+            {
+                "item": 'botania:black_lotus'
+            }
+        ],
+        "result": {
+            "item": 'botania:blacker_lotus'//实际产出
+        }
+    })
 
     //修改魔力池配方以及移除神话魔力池配方
     event.remove({ output: 'botania:mana_pool' })
@@ -132,16 +130,69 @@ ServerEvents.recipes(event => {
             F:'minecraft:bone'
         }
     )
+    //盖亚之魂复制
+    event.shaped(
+        Item.of('botania:life_essence', 4),
+        [
+            ' A ',
+            'BCD',
+            ' E '
+        ],
+        {
+            A: 'botania:life_essence',
+            E: 'botania:pixie_dust',
+            B: 'minecraft:echo_shard',
+            D: 'minecraft:ghast_tear',
+            C: 'goety:philosophers_stone'
+        }
+    )
+    //生命聚合器复制
+    event.shaped(
+        Item.of('botania:spawner_mover', 4),
+        [
+            ' A ',
+            ' B ',
+            'CDE'
+        ],
+        {
+            B: 'botania:spawner_mover',
+            E: 'goety:unholy_blood',
+            C: 'irons_spellbooks:blood_vial',
+            A: 'botania:spawner_claw',
+            D: 'goety:philosophers_stone'
+        }
+    )
 
     //符文祭坛配方
     //炼制铁魔法空白符文
     event.recipes.botania.runic_altar('irons_spellbooks:blank_rune', 
         [
             'botania:rune_mana', 
-            'bloodmagic:blankrune',
             'botania:mana_powder'
         ], 
         10000
+    )
+    //锻造血腥法杖
+    event.recipes.botania.runic_altar('irons_spellbooks:blood_staff', 
+        [
+            'goety:philosophers_stone',
+            'irons_spellbooks:blood_upgrade_orb',
+            'vintageimprovements:steel_spring',
+            'createaddition:electrum_rod',
+            'minecraft:dragon_breath',
+            'goety:unholy_blood'
+        ],
+        50000
+    )
+    //炼制凋零骷髅刷怪蛋
+    event.recipes.botania.runic_altar('minecraft:wither_skeleton_spawn_egg', 
+        [
+            '#forge:eggs', 
+            'minecraft:wither_skeleton_skull',
+            'scguns:nether_star_fragment',
+            'botania:spark'
+        ], 
+        50000
     )
 
     //魔力充能配方修正
@@ -162,29 +213,60 @@ ServerEvents.recipes(event => {
 
     //竹子转化
     event.recipes.botania.mana_infusion('minecraft:bamboo', 'botania:livingwood_twig', 500)
+    //明月石砖转化绿松石砖
+    event.recipes.botania.mana_infusion('blue_skies:turquoise_stonebrick', 'blue_skies:lunar_stonebrick', 100)
 
+    //鸡蛋的生产和复制
+    event.recipes.botania.petal_apothecary('minecraft:egg', 
+        [
+            'minecraft:clay_ball',
+            'minecraft:feather',
+            'minecraft:string'
+        ]
+    )
+    event.recipes.botania.mana_infusion('2x minecraft:egg', 'minecraft:egg', 500)
+    //增生之种复制
+    event.recipes.botania.petal_apothecary('8x botania:overgrowth_seed', 
+        [
+            'botania:spawner_mover',
+            'goety:quick_growing_seed',
+            'goety:quick_growing_seed',
+            'goety:quick_growing_seed',
+            'botania:overgrowth_seed',
+            'goety:quick_growing_seed',
+            'goety:quick_growing_seed',
+            'goety:quick_growing_seed'
+        ]
+    )
+    
     //魔钢-奥术源质兑换
     event.recipes.botania.mana_infusion('4x irons_spellbooks:arcane_essence', 'botania:manasteel_ingot', 1000, 'botania:alchemy_catalyst')
-    //变色龙蛋生产
-    event.recipes.botania.mana_infusion('cold_sweat:chameleon_spawn_egg', 'botania:mutated_seeds', 100000, 'botania:mana_bomb')
-    //刷怪蛋复制：遗忆守卫，瞻远者，宝箱怪，潜影贝，凋零骷髅，变色龙，远古骑士
+    //烈焰粉转化硫磺
+    event.recipes.botania.mana_infusion('scguns:sulfur_dust', 'minecraft:blaze_powder', 100, 'botania:alchemy_catalyst')
+    //移除原有火药配方
+    event.remove({id:'botania:mana_infusion/flint_to_gunpowder'})
+    //禁书碎片转化远古知识碎片
+    event.recipes.botania.mana_infusion('goety:forbidden_piece', 'irons_spellbooks:ancient_knowledge_fragment', 10000, 'botania:alchemy_catalyst')
+    //刷怪蛋复制：遗忆守卫，瞻远者，宝箱怪，潜影贝，凋零骷髅，远古骑士
     event.recipes.botania.mana_infusion('2x undergarden:forgotten_guardian_spawn_egg', 'undergarden:forgotten_guardian_spawn_egg', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x alexsmobs:spawn_egg_farseer', 'alexsmobs:spawn_egg_farseer', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x artifacts:mimic_spawn_egg', 'artifacts:mimic_spawn_egg', 25000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x minecraft:shulker_spawn_egg', 'minecraft:shulker_spawn_egg', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x minecraft:wither_skeleton_spawn_egg', 'minecraft:wither_skeleton_spawn_egg', 25000,'botania:conjuration_catalyst')
-    event.recipes.botania.mana_infusion('2x cold_sweat:chameleon_spawn_egg', 'cold_sweat:chameleon_spawn_egg', 25000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x irons_spellbooks:armor_pile', 'irons_spellbooks:armor_pile', 50000,'botania:conjuration_catalyst')
     //遗忆锭转化钻石1:2
     event.recipes.botania.mana_infusion('2x minecraft:diamond', 'undergarden:forgotten_ingot', 1000,'botania:alchemy_catalyst')
-    //龙皮复制
+    //龙皮，海洋之心，疣猪兽皮，奥术残骸，龙息复制
     event.recipes.botania.mana_infusion('2x irons_spellbooks:dragonskin', 'irons_spellbooks:dragonskin', 5000,'botania:conjuration_catalyst')
-    //海洋之心复制
     event.recipes.botania.mana_infusion('2x minecraft:heart_of_the_sea', 'minecraft:heart_of_the_sea', 50000,'botania:mana_bomb')
-    //疣猪兽皮复制
     event.recipes.botania.mana_infusion('2x irons_spellbooks:hogskin', 'irons_spellbooks:hogskin', 1000,'botania:mana_bomb')
+    event.recipes.botania.mana_infusion('2x irons_spellbooks:arcane_salvage', 'irons_spellbooks:arcane_salvage', 10000,'botania:conjuration_catalyst')
+    event.recipes.botania.mana_infusion('2x minecraft:dragon_breath', 'minecraft:dragon_breath', 500,'botania:conjuration_catalyst')
     //瞻远者蛋转化瞻远者之臂
     event.recipes.botania.mana_infusion('alexsmobs:farseer_arm', 'alexsmobs:spawn_egg_farseer', 50000,'botania:mana_bomb')
+    //生命聚合器配方替换
+    event.remove({id:'botania:spawner_mover'})
+    event.recipes.botania.mana_infusion('botania:spawner_mover', 'irons_spellbooks:blood_staff', 100000,'botania:mana_bomb')
 
     //铁矿转化天闪石矿和镰鼬铁矿
     event.recipes.botania.mana_infusion('create_blue_skies_compat:crushed_aquite_ore', 'create:crushed_raw_iron', 100, 'blue_skies:moonstone_lantern')
@@ -200,6 +282,23 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //天翼族之冠配方修改
+    event.remove({id:'botania:flighttiara_0'})
+    event.shaped(
+        Item.of('botania:flight_tiara'),
+        [
+            'ABA',
+            'CDC',
+            'AEA'
+        ],
+        {
+            B: 'botania:elementium_ingot',
+            A: 'botania:life_essence',
+            D: 'kubejs:wind_elemental_core',
+            E: 'botania:dandelifeon',
+            C: 'irons_spellbooks:cinder_essence'
+        }
+    )
 
     //末地空气转化扼塞锭和铁锭
     event.shapeless(Item.of('minecraft:iron_ingot',1),
@@ -228,7 +327,7 @@ ServerEvents.recipes(event => {
             D:'botania:elementium_block',
             E:'botania:rune_water',
             F:'botania:rune_fire',
-            G:'botania:rune_mana',
+            G:'goety:cursed_cage',
             H:'botania:rune_air'
         }
     )
@@ -236,6 +335,14 @@ ServerEvents.recipes(event => {
     //火花配方替换
     event.replaceInput({mod:'botania',output:'botania:spark'},
     'minecraft:gold_nugget', 'botania:elementium_nugget' )
+
+    //污血吊坠配方替换
+    event.replaceInput({mod:'botania',output:'botania:blood_pendant'},
+    'minecraft:prismarine_crystals', 'goety:cursed_ingot' )
+
+    //炼金催化器配方修改
+    event.replaceInput({mod:'botania',output:'botania:alchemy_catalyst'},
+    'minecraft:gold_ingot', 'create:brass_ingot' )
 
     //手镜配方替换
     event.replaceInput({mod:'botania',output:'botania:mana_mirror'},
@@ -255,23 +362,19 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'botania',output:'botania:natura_pylon'},
     'botania:terrasteel_nugget', 'create:brass_nugget' )
 
-    //生命聚合器配方替换
-    event.replaceInput({mod:'botania',output:'botania:spawner_mover'},
-    'botania:dragonstone', 'irons_spellbooks:blood_staff' )
-    event.replaceInput({mod:'botania',output:'botania:spawner_mover'},
-    'botania:elementium_ingot', 'botania:terrasteel_ingot' )
-    event.replaceInput({mod:'botania',output:'botania:spawner_mover'},
-    'botania:ender_air_bottle', 'irons_spellbooks:upgrade_orb' )
-
     //精灵门核心配方替换
     event.replaceInput({mod:'botania',output:'botania:alfheim_portal'},
     'botania:terrasteel_nugget', 'create:brass_nugget' )
+
+    //魔力水晶配方替换
+    event.replaceInput({mod:'botania',output:'botania:mana_pylon'},
+        'minecraft:gold_ingot', 'irons_spellbooks:arcane_ingot' )
 
     //魔力枪配方替换
     event.replaceInput({mod:'botania',output:'botania:mana_gun'},
     'minecraft:tnt', 'botania:terrasteel_ingot' )
     event.replaceInput({mod:'botania',output:'botania:mana_gun'},
-    'botania:redstone_spreader', 'bloodmagic:magicianbloodorb' )
+    'botania:redstone_spreader', 'kubejs:fire_elemental_core' )
     event.replaceInput({mod:'botania',output:'botania:mana_gun'},
     'botania:mana_diamond', 'create:precision_mechanism' )
 
@@ -292,7 +395,25 @@ ServerEvents.recipes(event => {
             A:'botania:terrasteel_ingot',
             B:'botania:ender_air_bottle',
             C:'botania:dragonstone',
-            D:'bloodmagic:magicianbloodorb'
+            D:'kubejs:water_elemental_core'
+        }
+    )
+
+    //彩虹桥法杖配方追加
+    event.shaped(Item.of('botania:rainbow_rod',1),
+        ['ABC',
+        'HID',
+        'GFE'],
+        {
+            A:'vintageimprovements:andesite_spring',
+            B:'vintageimprovements:copper_spring',
+            C:'vintageimprovements:golden_spring',
+            D:'vintageimprovements:tin_spring',
+            E:'vintageimprovements:zinc_spring',
+            F:'vintageimprovements:blaze_spring',
+            G:'vintageimprovements:bronze_spring',
+            H:'vintageimprovements:constantan_spring',
+            I:'create_confectionery:caramelized_marshmellow_on_a_stick'
         }
     )
 
@@ -309,7 +430,8 @@ ServerEvents.recipes(event => {
         }
     )
 
-    //精灵门交换奥术源质-魔力粉
+    //精灵门交换系列
+    //奥术源质-魔力粉
     event.recipes.botania.elven_trade(
         [
             'botania:mana_powder'
@@ -318,8 +440,43 @@ ServerEvents.recipes(event => {
             'irons_spellbooks:arcane_essence'
         ]
     )
-
-    //精灵门产出冰封骨头
+    //诅咒金属-魔力钢
+    event.recipes.botania.elven_trade(
+        [
+            'botania:manasteel_ingot'
+        ], 
+        [
+            'goety:cursed_ingot'
+        ]
+    )
+    //奥术锭-诅咒金属
+    event.recipes.botania.elven_trade(
+        [
+            'goety:cursed_ingot'
+        ], 
+        [
+            'irons_spellbooks:arcane_ingot'
+        ]
+    )
+    //阴影石头-活石
+    event.recipes.botania.elven_trade(
+        [
+            'botania:livingrock'
+        ], 
+        [
+            'goety:shade_stone'
+        ]
+    )
+    //缠魂木-活木
+    event.recipes.botania.elven_trade(
+        [
+            'botania:livingwood_log'
+        ], 
+        [
+            '#goety:haunted_logs'
+        ]
+    )
+    //骨头-冰封骨头
     event.recipes.botania.elven_trade(
         [
             'irons_spellbooks:frozen_bone'
@@ -340,7 +497,6 @@ ServerEvents.recipes(event => {
             'alexsmobs:void_worm_effigy',
             'minecraft:end_crystal',
             'botania:corporea_index',
-            'botania:blacker_lotus'
         ]
     )
 
@@ -354,9 +510,8 @@ ServerEvents.recipes(event => {
             'minecraft:dragon_egg',
             'minecraft:end_crystal',
             '#forge:eggs',
-            'alexsmobs:farseer_arm',
             'botania:corporea_spark',
-            'bloodmagic:lightritualstone'
+            'goety:philosophers_stone'
         ]
     )
 
@@ -366,8 +521,8 @@ ServerEvents.recipes(event => {
         [
             'kubejs:electronic_engineering', 
             'botania:redstone_root',
-            'immersiveengineering:generator',
-            'bloodmagic:strengthenedcatalyst'
+            'goety:philosophers_stone',
+            'mechanicalbotania:mana_motor'
         ], 
         5000
     )
@@ -388,11 +543,12 @@ ServerEvents.recipes(event => {
     event.remove({output:'botania:terrasteel_ingot'})
     event.recipes.botania.terra_plate('botania:terrasteel_ingot', 
         [
-            'botania:manasteel_ingot', 
+            'botania:elementium_ingot', 
             'botania:mana_pearl',
             'botania:mana_diamond',
             '#forge:ingots/brass',
-            'irons_spellbooks:arcane_ingot'
+            'irons_spellbooks:arcane_ingot',
+            'goety:cursed_ingot'
         ], 
         50000
     )
@@ -409,17 +565,135 @@ ServerEvents.recipes(event => {
             'botania:terrasteel_block'
         ]
     )
+
+    //泰拉盔甲系列配方替换
+    //泰拉头盔替换
+    event.remove({id:'botania:terrasteel_helmet'})
+    event.custom({
+        "type": "botania:armor_upgrade",
+        "category": "equipment",
+        "key": {
+            "A": {
+            "item": "botania:manasteel_helmet"
+            },
+            "R": {
+            "item": "botania:rune_spring"
+            },
+            "S": {
+            "tag": "botania:terrasteel_ingots"
+            },
+            "T": {
+            "item": "minecraft:echo_shard"
+            }
+        },
+        "pattern": [
+            "TRT",
+            "SAS",
+            " S "
+        ],
+        "result": {
+            "item": "botania:terrasteel_helmet"
+        },
+        "show_notification": true
+    })
+    //泰拉胸甲替换
+    event.remove({id:'botania:terrasteel_chestplate'})
+    event.custom({
+        "type": "botania:armor_upgrade",
+        "category": "equipment",
+        "key": {
+            "A": {
+            "item": "botania:manasteel_chestplate"
+            },
+            "R": {
+            "item": "botania:rune_summer"
+            },
+            "S": {
+            "tag": "botania:terrasteel_ingots"
+            },
+            "T": {
+            "item": "minecraft:echo_shard"
+            }
+        },
+        "pattern": [
+            "TRT",
+            "SAS",
+            " S "
+        ],
+        "result": {
+            "item": "botania:terrasteel_chestplate"
+        },
+        "show_notification": true
+    })
+    //泰拉护腿替换
+    event.remove({id:'botania:terrasteel_leggings'})
+    event.custom({
+        "type": "botania:armor_upgrade",
+        "category": "equipment",
+        "key": {
+            "A": {
+            "item": "botania:manasteel_leggings"
+            },
+            "R": {
+            "item": "botania:rune_autumn"
+            },
+            "S": {
+            "tag": "botania:terrasteel_ingots"
+            },
+            "T": {
+            "item": "minecraft:echo_shard"
+            }
+        },
+        "pattern": [
+            "TRT",
+            "SAS",
+            " S "
+        ],
+        "result": {
+            "item": "botania:terrasteel_leggings"
+        },
+        "show_notification": true
+    })
+    //泰拉靴子替换
+    event.remove({id:'botania:terrasteel_boots'})
+    event.custom({
+        "type": "botania:armor_upgrade",
+        "category": "equipment",
+        "key": {
+            "A": {
+            "item": "botania:manasteel_boots"
+            },
+            "R": {
+            "item": "botania:rune_winter"
+            },
+            "S": {
+            "tag": "botania:terrasteel_ingots"
+            },
+            "T": {
+            "item": "minecraft:echo_shard"
+            }
+        },
+        "pattern": [
+            "TRT",
+            "SAS",
+            " S "
+        ],
+        "result": {
+            "item": "botania:terrasteel_boots"
+        },
+        "show_notification": true
+    })
+    
+    //泰拉合成系列修改
     //创造魔力石板合成
     event.recipes.botania.terra_plate(Item.of('botania:mana_tablet', '{creative:1b,mana:500000}'), 
         [
             'botania:mana_tablet', 
             'botania:terrasteel_block',
-            '#forge:storage_blocks/steel',
-            'botania:spawner_mover',
-            'immersiveengineering:storage_electrum',
+            'minecraft:nether_star',
             'minecraft:netherite_ingot',
             'irons_spellbooks:mana_upgrade_orb',
-            'blue_skies:charoite_block'
+            'goety:philosophers_stone'
         ], 
         100000
     )
@@ -427,60 +701,41 @@ ServerEvents.recipes(event => {
     event.remove({id:'botania:mana_bomb'})
     event.recipes.botania.terra_plate('botania:mana_bomb',
         [
-            'minecraft:tnt_minecart',
+            'goety:philosophers_stone',
             'botania:gaia_ingot',
-            'kubejs:frostfire_double_plate',
+            'goety:soul_emerald',
             'minecraft:conduit',
             'botania:dragonstone_block',
             'botania:corporea_spark'
         ],
         50000
     )
+    //音爆聚晶合成
+    event.remove({id:'goety:focus/sonic_boom_focus'})
+    event.recipes.botania.terra_plate('goety:sonic_boom_focus',
+        [
+            'irons_spellbooks:eldritch_manuscript',
+            'goety:ghost_fire_focus',
+            'botania:gaia_ingot',
+            'irons_spellbooks:upgrade_orb',
+            'goety:resonance_crystal',
+            'alexsmobs:farseer_arm'
+        ],
+        200000
+    )
     //个人头像合成（终末产物）
     event.recipes.botania.terra_plate('kubejs:midnight', 
         [
-            'minecraft:dragon_egg', 
+            'goety:sonic_boom_focus', 
             'irons_spellbooks:mana_upgrade_orb',
-            'botania:mana_bomb',
-            'bloodmagic:archmagebloodorb',
-            'minecraft:budding_amethyst',
-            'bloodmagic:lightritualstone',
-            'alexsmobs:transmutation_table',
-            'botania:blacker_lotus'
-        ], 
-        500000
-    )
-    /*
-    //异彩化合物魔法合成
-    event.recipes.botania.terra_plate('createchromaticreturn:chromatic_compound', 
-        [
-            'bloodmagic:rawdemoncrystal', 
-            'bloodmagic:corrosivedemoncrystal',
-            'bloodmagic:destructivedemoncrystal',
-            'bloodmagic:vengefuldemoncrystal',
-            'bloodmagic:steadfastdemoncrystal',
-            'botania:gaia_ingot',
-            'botania:corporea_spark_creative',
-            'kubejs:midnight'
+            'goety:killing_focus',
+            'irons_spellbooks:cooldown_upgrade_orb',
+            'botania:blacker_lotus',
+            'irons_spellbooks:protection_upgrade_orb'
         ], 
         500000
     )
 
-    //辉光锭合成
-    
-    event.recipes.botania.terra_plate('createchromaticreturn:glowing_ingot', 
-        [
-            'createchromaticreturn:chromatic_compound', 
-            'botania:thor_ring',
-            'botania:odin_ring',
-            'botania:loki_ring',
-            'bosses_of_mass_destruction:levitation_block',
-            'botania:infinite_fruit',
-            'botania:king_key',
-            'botania:flugel_eye'
-        ], 
-        500000
-    )*/
 
     //产能花系列配方修改
     //火红莲
@@ -629,7 +884,7 @@ ServerEvents.recipes(event => {
             'botania:corporea_spark',
             'irons_spellbooks:arcane_salvage',
             '#forge:ingots/aluminum',
-            'botania:terrasteel_ingot',
+            'goety:dark_ingot',
             'botania:rune_water',
             'botania:rune_fire',
             'botania:rune_air',

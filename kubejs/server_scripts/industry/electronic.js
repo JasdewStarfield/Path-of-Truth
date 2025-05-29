@@ -1,23 +1,22 @@
 ServerEvents.recipes(event => {
     //电子管
     event.remove({id:"create:crafting/materials/electron_tube"})
-    event.recipes.create.deploying('create:electron_tube', ['#forge:plates/silver', 'create:polished_rose_quartz'])
+    event.recipes.create.deploying('create:electron_tube', ['#forge:plates/iron', 'create:polished_rose_quartz'])
 
     //引力子管
     event.remove({id:"createutilities:shaped/graviton_tube"})
     event.recipes.create.deploying('createutilities:graviton_tube', ['createutilities:void_steel_sheet', 'createutilities:polished_amethyst'])
 
-    //精密零件
+    //精密构件
     event.remove({id:"create:sequenced_assembly/precision_mechanism"})
     let inter = 'create:incomplete_precision_mechanism'
     event.recipes.create.sequenced_assembly([
         Item.of('create:precision_mechanism').withChance(90.0),
-        Item.of('#forge:plates/silver').withChance(5.0),
-        Item.of('create:cogwheel').withChance(1.0),
+        Item.of('create:iron_sheet').withChance(5.0),
+        Item.of('create:cogwheel').withChance(1.5),
         Item.of('create:large_cogwheel').withChance(1.5),
-        Item.of('create:electron_tube').withChance(2.0),
-        Item.of('supplementaries:ash').withChance(0.5)
-    ], '#forge:plates/brass', [
+        Item.of('create:electron_tube').withChance(2.0)
+    ], '#forge:plates/gold', [
         event.recipes.createDeploying(inter, [inter, 'create:cogwheel']),
         event.recipes.createDeploying(inter, [inter, 'create:large_cogwheel']),
         event.recipes.createDeploying(inter, [inter, '#blue_skies:gems/moonstone_shard']),
@@ -27,8 +26,8 @@ ServerEvents.recipes(event => {
 
     event.recipes.create.sequenced_assembly([
         Item.of('create:precision_mechanism')
-    ], '#forge:plates/brass', [
-        event.recipes.createFilling(inter, [inter, Fluid.of('tfmg:lubrication_oil', 25)]),
+    ], '#forge:plates/gold', [
+        event.recipes.createFilling(inter, [inter, {fluidTag: 'forge:lubricant', amount:25}]),
         event.recipes.createDeploying(inter, [inter, 'create:cogwheel']),
         event.recipes.createDeploying(inter, [inter, 'create:large_cogwheel']),
         event.recipes.createDeploying(inter, [inter, '#blue_skies:gems/moonstone_shard']),
@@ -49,8 +48,9 @@ ServerEvents.recipes(event => {
     )
 
     //琥珀金（解锁中压传输）
-    event.recipes.create.mixing('kubejs:gold_silver_mix', ['#forge:dusts/silver','#forge:dusts/gold'])
+    event.recipes.create.mixing('kubejs:gold_silver_mix', ['#forge:dusts/silver','#forge:dusts/silver','#forge:dusts/silver','#forge:dusts/gold','#forge:dusts/gold','#forge:dusts/gold','#forge:dusts/gold','#forge:dusts/gold'])
     event.remove({id:"immersiveengineering:crafting/electrum_mix"})
+    event.remove({id:"immersiveengineering:arcfurnace/alloy_electrum"})
     event.custom({
         "type":"immersiveengineering:squeezer",
         "energy":6400,
@@ -61,6 +61,15 @@ ServerEvents.recipes(event => {
         "result":{
             "tag":"forge:dusts/electrum"
         }
+    })
+    event.custom({
+        "type":"immersiveengineering:arc_furnace",
+        "additives":[],
+        "energy":102400,
+        "additives":[{"base_ingredient":{"tag":"forge:ingots/silver"},"count":3}],
+        "input":{"base_ingredient":{"tag":"forge:ingots/gold"},"count":5},
+        "results":[{"tag":"forge:ingots/electrum"}],
+        "time":200
     })
 
     //限制热传导发电
@@ -74,6 +83,7 @@ ServerEvents.recipes(event => {
     //这玩意配方比较神秘，只能用数据覆盖的方法改。参见data文件夹
 
     //初级磁铁磁化量产
+    /*
     event.custom({
         "type": "create_new_age:energising",
         "energy_needed": 4000,
@@ -88,12 +98,13 @@ ServerEvents.recipes(event => {
           }
         ]
     })
+    */
 
     //终极合成！
     let inter2 = 'kubejs:incomplete_buran'
     event.recipes.create.sequenced_assembly([
         'kubejs:buran'
-    ], 'immersiveengineering:plate_duroplast', [
+    ], 'create:crafting_blueprint', [
         event.recipes.createDeploying(inter2, [inter2, 'kubejs:andesite_engineering']),
         event.recipes.createDeploying(inter2, [inter2, 'kubejs:fluid_engineering']),
         event.recipes.createDeploying(inter2, [inter2, 'kubejs:precise_engineering']),
@@ -102,5 +113,5 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:rs_engineering']),
         event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:heavy_engineering']),
         event.recipes.createDeploying(inter2, [inter2, 'kubejs:electronic_engineering']),
-    ]).transitionalItem(inter2).loops(8)
+    ]).transitionalItem(inter2).loops(4)
 })

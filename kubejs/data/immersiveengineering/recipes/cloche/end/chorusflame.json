@@ -1,0 +1,8 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{"item":"endersdelight:chorusflame"},
+    "render":{"type":"crop","block":"endersdelight:chorus_flame_block"},
+    "results":[{"item":"endersdelight:chorusflame"}],
+    "soil":{"item":"minecraft:end_stone"},
+    "time":480
+}

@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "tfmg:block/steel_casing",
+		"0": "kubejs:block/casing/factory/factory_casing",
 		"1": "immersiveengineering:block/metal_decoration/heavy_engineering",
-		"particle": "tfmg:block/steel_casing"
+		"particle": "kubejs:block/casing/factory/factory_casing_single"
 	},
 	"elements": [
 		{

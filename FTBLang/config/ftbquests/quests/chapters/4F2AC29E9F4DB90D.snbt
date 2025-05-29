@@ -1,0 +1,825 @@
+{
+	autofocus_id: "11EC3A84F0C84E65"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4F2AC29E9F4DB90D"
+	group: "12EA2EE194EF67D3"
+	hide_quest_details_until_startable: true
+	icon: "create:brass_ingot"
+	id: "4F2AC29E9F4DB90D"
+	images: [
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/start.png"
+			rotation: 0.0d
+			width: 1.3285714285714287d
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/i2.png"
+			rotation: 0.0d
+			width: 9.385321100917432d
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			height: 0.4d
+			image: "kubejs:textures/quests/next.png"
+			rotation: 0.0d
+			width: 1.1149863760217984d
+			x: 0.0d
+			y: 19.0d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6E0D85E43EDF1994"]
+			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest1.description1}"]
+			hide_until_deps_complete: true
+			id: "11EC3A84F0C84E65"
+			rewards: [{
+				id: "2C399AD7FD10484E"
+				item: "minecraft:raw_iron"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest1.subtitle}"
+			tasks: [{
+				id: "22AC8380896E7FE2"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest1.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11EC3A84F0C84E65"]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest2.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest2.description2}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest2.description3}"
+			]
+			id: "7678AE43CAD02807"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest2.subtitle}"
+			tasks: [
+				{
+					id: "48234F51A3513B8A"
+					item: "create:mechanical_drill"
+					type: "item"
+				}
+				{
+					id: "6619F45A4AA2D1D2"
+					item: "create:mechanical_saw"
+					type: "item"
+				}
+				{
+					id: "507BEC2FEDB301FB"
+					item: "create:mechanical_harvester"
+					type: "item"
+				}
+				{
+					id: "707CBC1FA35E277F"
+					item: "create:mechanical_plough"
+					type: "item"
+				}
+				{
+					id: "5F7106FD19254060"
+					item: "create:encased_fan"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest2.title}"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["11EC3A84F0C84E65"]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest3.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest3.description2}"
+			]
+			id: "2B406E71D5BDF8F6"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest3.subtitle}"
+			tasks: [{
+				id: "0C0BF712FDF13068"
+				item: {
+					Count: 1
+					id: "rechiseled:chisel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest3.title}"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2B406E71D5BDF8F6"]
+			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest4.description1}"]
+			id: "73E629F1A17FB01C"
+			rewards: [{
+				count: 32
+				id: "185C51B9F60FAD04"
+				item: "rechiseled:cobbled_deepslate_tiles"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest4.subtitle}"
+			tasks: [{
+				id: "540638E716CDF4C8"
+				item: "rechiseledcreate:mechanical_chisel"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest4.title}"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7678AE43CAD02807"]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest5.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest5.description2}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest5.description3}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest5.description4}"
+			]
+			id: "6FCB66E5BB478C58"
+			rewards: [{
+				count: 8
+				id: "0FDFE735B2E8ACD6"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest5.subtitle}"
+			tasks: [
+				{
+					id: "21460245451253F6"
+					item: "create:mechanical_bearing"
+					type: "item"
+				}
+				{
+					id: "6E47C3BF35277032"
+					item: "create:linear_chassis"
+					type: "item"
+				}
+				{
+					id: "7A64A0B95B883F16"
+					item: {
+						Count: 1
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest5.title}"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["11EC3A84F0C84E65"]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest6.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest6.description2}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest6.description3}"
+			]
+			icon: "create:empty_blaze_burner"
+			id: "003B99516797BF14"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest6.subtitle}"
+			tasks: [
+				{
+					id: "3B61818AD5CFF549"
+					item: "create:empty_blaze_burner"
+					type: "item"
+				}
+				{
+					dimension: "minecraft:the_nether"
+					icon: {
+						Count: 1
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					id: "53B8DE7861B4088E"
+					title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest6.task.title1}"
+					type: "dimension"
+				}
+			]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest6.title}"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["003B99516797BF14"]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest7.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest7.description2}"
+				""
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest7.description3}"
+			]
+			icon: "create:blaze_burner"
+			id: "079D9B3E0E12C25C"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest7.subtitle}"
+			tasks: [
+				{
+					id: "5C39BB7A279025A1"
+					item: "create:blaze_burner"
+					type: "item"
+				}
+				{
+					icon: "minecraft:nether_brick_fence"
+					id: "4A1C90282864B5EC"
+					structure: "betterfortresses:fortress"
+					title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest7.task.title1}"
+					type: "structure"
+				}
+			]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest7.title}"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["079D9B3E0E12C25C"]
+			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest8.description1}"]
+			id: "4D493DCB4C0B99C0"
+			rewards: [{
+				id: "2CF90314F968BCAE"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest8.subtitle}"
+			tasks: [{
+				id: "6F6E71B404D74CDF"
+				item: "immersiveengineering:ingot_constantan"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest8.title}"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4D493DCB4C0B99C0"]
+			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest9.description1}"]
+			hide_until_deps_complete: true
+			id: "28617A52922404CE"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest9.subtitle}"
+			tasks: [{
+				id: "36A3FEAB539C0157"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4D493DCB4C0B99C0"]
+			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest10.description1}"]
+			hide_until_deps_complete: true
+			id: "27FD1F76136CBD0B"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest10.subtitle}"
+			tasks: [
+				{
+					id: "3D101CE978CB5A33"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "1E492131DABC2BCD"
+					item: "create:fluid_tank"
+					type: "item"
+				}
+				{
+					id: "7D2C738F52D8C1BD"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest10.title}"
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"28617A52922404CE"
+				"27FD1F76136CBD0B"
+			]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest11.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest11.description2}"
+			]
+			id: "1D0D60C89EA75663"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest11.subtitle}"
+			tasks: [{
+				id: "3FF03B9622F19ED2"
+				item: "kubejs:fluid_engineering"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest11.title}"
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1D0D60C89EA75663"]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest12.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest12.description2}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest12.description3}"
+			]
+			id: "1DC10C93572BD016"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest12.subtitle}"
+			tasks: [{
+				id: "49A93F92B22C146D"
+				item: "create:spout"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest12.title}"
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"1DC10C93572BD016"
+				"7F98F9F01F44BA28"
+			]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest13.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest13.description2}"
+			]
+			id: "76BE4625CCF2F867"
+			rewards: [{
+				id: "3361959F57CB84B4"
+				item: "create:brass_hand"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest13.subtitle}"
+			tasks: [{
+				id: "2515C545DCD9791F"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest13.title}"
+			x: 0.0d
+			y: 10.5d
+		}
+		{
+			dependencies: ["1D0D60C89EA75663"]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest14.description1}"
+				""
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest14.description2}"
+			]
+			id: "7F98F9F01F44BA28"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest14.subtitle}"
+			tasks: [{
+				id: "0FE1F810BAA152F4"
+				item: "create:deployer"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest14.title}"
+			x: -1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"7F98F9F01F44BA28"
+				"0C1EAC9547A45268"
+			]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest15.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest15.description2}"
+				""
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest15.description3}"
+			]
+			hide_until_deps_complete: true
+			id: "73CD9D2DD215B5F5"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest15.subtitle}"
+			tasks: [{
+				id: "157376255721FB4A"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest15.title}"
+			x: -3.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["76BE4625CCF2F867"]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest16.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest16.description2}"
+			]
+			hide_until_deps_complete: true
+			id: "07C921FBCF56E703"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest16.subtitle}"
+			tasks: [{
+				id: "3EFB40B9190D79FE"
+				item: "create_connected:empty_fan_catalyst"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest16.title}"
+			x: 2.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["07C921FBCF56E703"]
+			id: "1D20F56DDBBD6370"
+			rewards: [{
+				id: "0C6E4638235D6397"
+				item: "create_connected:empty_fan_catalyst"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest17.subtitle}"
+			tasks: [
+				{
+					id: "16064AFB54D631EB"
+					item: "create_connected:fan_blasting_catalyst"
+					type: "item"
+				}
+				{
+					id: "7FB22F9F510A1EF6"
+					item: "create_connected:fan_smoking_catalyst"
+					type: "item"
+				}
+				{
+					id: "35AD8E13624F875D"
+					item: "create_connected:fan_splashing_catalyst"
+					type: "item"
+				}
+				{
+					id: "19800195D04ADC2C"
+					item: "create_connected:fan_haunting_catalyst"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest17.title}"
+			x: 1.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"73CD9D2DD215B5F5"
+				"7F98F9F01F44BA28"
+			]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest18.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest18.description2}"
+				""
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest18.description3}"
+			]
+			hide_until_deps_complete: true
+			id: "51676EF62E7A17F3"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest18.subtitle}"
+			tasks: [{
+				id: "5D18D64F0341F617"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest18.title}"
+			x: -5.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1DC10C93572BD016"]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest19.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest19.description2}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest19.description3}"
+			]
+			hide_until_deps_complete: true
+			id: "10CF3F30EC2A65E8"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest19.subtitle}"
+			tasks: [{
+				id: "1EB36C7B8E90771D"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest19.title}"
+			x: 3.5d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1DC10C93572BD016"]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest20.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest20.description2}"
+			]
+			hide_until_deps_complete: true
+			id: "607A957382E65976"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest20.subtitle}"
+			tasks: [{
+				id: "482B4DBFF340F535"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest20.title}"
+			x: 5.0d
+			y: 14.0d
+		}
+		{
+			dependencies: [
+				"51676EF62E7A17F3"
+				"10CF3F30EC2A65E8"
+				"607A957382E65976"
+			]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest21.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest21.description2}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest21.description3}"
+			]
+			hide_until_deps_complete: true
+			id: "242C57AF7F6116E4"
+			rewards: [{
+				id: "6BEEB17986271FAD"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest21.subtitle}"
+			tasks: [{
+				id: "5192B0EA05B4611F"
+				item: "kubejs:precise_engineering"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest21.title}"
+			x: 0.0d
+			y: 17.5d
+		}
+		{
+			dependencies: ["11EC3A84F0C84E65"]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest22.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest22.description2}"
+				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.4F2AC29E9F4DB90D.quest22.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1A4352FB579FF77E\"}}]"
+			]
+			id: "40840BF9F23BC8A1"
+			rewards: [{
+				id: "1BD1CF2FAF04A5CA"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest22.subtitle}"
+			tasks: [{
+				id: "19B97E76877E5AA8"
+				title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest22.task.title1}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest22.title}"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["73CD9D2DD215B5F5"]
+			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest23.description1}"]
+			id: "029AA89F07AEE09D"
+			rewards: [{
+				count: 4
+				id: "53B38B9B74121EEF"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest23.subtitle}"
+			tasks: [
+				{
+					id: "0D53DA1B91F52319"
+					item: "create:brass_funnel"
+					type: "item"
+				}
+				{
+					id: "137C04CA23ACC439"
+					item: "create:brass_tunnel"
+					type: "item"
+				}
+				{
+					id: "1C76A2B72514DDF7"
+					item: "create:smart_chute"
+					type: "item"
+				}
+				{
+					id: "5F5E85ED77BD90D6"
+					item: "create:smart_fluid_pipe"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest23.title}"
+			x: -2.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1D0D60C89EA75663"]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest24.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest24.description2}"
+			]
+			icon: "create_enchantment_industry:enchanting_guide"
+			id: "18A0D2E7A8E61D45"
+			rewards: [{
+				id: "1ACCBF4DB427B9B6"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest24.subtitle}"
+			tasks: [
+				{
+					id: "70805C73F6CC79A2"
+					item: "create_enchantment_industry:disenchanter"
+					type: "item"
+				}
+				{
+					id: "6DA319DEEFA1F635"
+					item: "create_enchantment_industry:printer"
+					type: "item"
+				}
+				{
+					id: "14FB64E02E7F04EB"
+					item: "create_enchantment_industry:enchanting_guide"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest24.title}"
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["37C7364F0F3E8C89"]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest25.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest25.description2}"
+			]
+			hide_until_deps_complete: true
+			id: "6F27F12FD5EBE559"
+			rewards: [
+				{
+					count: 12
+					id: "3483DA9CF7A9BFFE"
+					item: "pipez:item_pipe"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "1898D70FDD518270"
+					item: "pipez:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "56CD886F627854E9"
+					item: "pipez:wrench"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest25.subtitle}"
+			tasks: [{
+				id: "5151D84AFEC27F12"
+				item: "kubejs:logistical_engineering"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest25.title}"
+			x: 0.0d
+			y: 15.5d
+		}
+		{
+			dependencies: ["37C7364F0F3E8C89"]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest26.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest26.description2}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest26.description3}"
+			]
+			icon: "railways:track_biomesoplenty_willow"
+			id: "3DD1A739EA5EDB1D"
+			rewards: [{
+				count: 24
+				id: "65D303F0CC11B324"
+				item: "create:track"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest26.subtitle}"
+			tasks: [
+				{
+					id: "4FF8EABCEF4709B2"
+					item: "create:track_station"
+					type: "item"
+				}
+				{
+					id: "130CDC56C69A4279"
+					item: "create:controls"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest26.title}"
+			x: -1.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"76BE4625CCF2F867"
+				"10CF3F30EC2A65E8"
+			]
+			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest27.description1}"]
+			hide_until_deps_complete: true
+			id: "37C7364F0F3E8C89"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest27.subtitle}"
+			tasks: [{
+				id: "5CA376BDC1069E53"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest27.title}"
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1D0D60C89EA75663"]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest28.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest28.description2}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest28.description3}"
+				""
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest28.description4}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest28.description5}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest28.description6}"
+			]
+			icon: "bloodmagic:lavacrystal"
+			id: "794FE24A776917F2"
+			rewards: [{
+				count: 4
+				id: "2EE8A5DA64A6A6D9"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.0d
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest28.subtitle}"
+			tasks: [
+				{
+					id: "2D51661924528B20"
+					item: "create:hose_pulley"
+					type: "item"
+				}
+				{
+					advancement: "create:hose_pulley_lava"
+					criterion: ""
+					id: "7A8A8A824350CBFF"
+					type: "advancement"
+				}
+			]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest28.title}"
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["76BE4625CCF2F867"]
+			description: [
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest29.description1}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest29.description2}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest29.description3}"
+				""
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest29.description4}"
+			]
+			icon: "create:polished_rose_quartz"
+			id: "0C1EAC9547A45268"
+			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest29.subtitle}"
+			tasks: [
+				{
+					id: "4A2263932B0BFE7C"
+					item: "immersiveengineering:redstone_acid_bucket"
+					type: "item"
+				}
+				{
+					id: "659533F07C4ECFB1"
+					item: "create:polished_rose_quartz"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest29.title}"
+			x: -2.5d
+			y: 13.0d
+		}
+	]
+	subtitle: ["{ftbquests.chapter.4F2AC29E9F4DB90D.subtitle}"]
+	title: "{ftbquests.chapter.4F2AC29E9F4DB90D.title}"
+}

@@ -2,15 +2,37 @@ ItemEvents.modification(event => {
   //下界合金增强
   event.modify('minecraft:netherite_helmet', item => {
     item.armorProtection = 5
+    item.rarity = "epic"
   })
   event.modify('minecraft:netherite_chestplate', item => {
     item.armorProtection = 10
+    item.rarity = "epic"
   })
   event.modify('minecraft:netherite_leggings', item => {
     item.armorProtection = 8
+    item.rarity = "epic"
   })
   event.modify('minecraft:netherite_boots', item => {
     item.armorProtection = 5
+    item.rarity = "epic"
+  })
+  event.modify('minecraft:netherite_sword', item => {
+    item.rarity = "epic"
+  })
+  event.modify('minecraft:netherite_pickaxe', item => {
+    item.rarity = "epic"
+  })
+  event.modify('minecraft:netherite_axe', item => {
+    item.rarity = "epic"
+  })
+  event.modify('minecraft:netherite_shovel', item => {
+    item.rarity = "epic"
+  })
+  event.modify('minecraft:netherite_hoe', item => {
+    item.rarity = "epic"
+  })
+  event.modify('minecraft:netherite_ingot', item => {
+    item.rarity = "epic"
   })
 
   //雪球堆叠64
@@ -69,5 +91,33 @@ ItemEvents.modification(event => {
   })
   event.modify('immersiveengineering:heavy_engineering', item => {
     item.rarity = "EPIC"
+  })
+})
+
+BlockEvents.modification(event => {
+  //使得熔融流体也能发光
+  event.modify('kubejs:molten_iron', block => {
+    block.lightEmission = 15
+  })
+  event.modify('kubejs:molten_steel', block => {
+    block.lightEmission = 15
+  })
+  event.modify('kubejs:molten_slag', block => {
+    block.lightEmission = 15
+  })
+  event.modify('kubejs:molten_za', block => {
+    block.lightEmission = 15
+  })
+  event.modify('kubejs:molten_netherite', block => {
+    block.lightEmission = 15
+  })
+  event.modify('kubejs:molten_enriched_uranium', block => {
+    block.lightEmission = 15
+  })
+  event.modify('createnuclear:uranium', block => {
+    block.lightEmission = 15
+  })
+  event.modify('oreganized:molten_lead', block => {
+    block.lightEmission = 15
   })
 })

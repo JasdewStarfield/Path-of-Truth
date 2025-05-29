@@ -81,6 +81,30 @@
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
+		containerClass = "cofh.thermal.core.client.gui.*"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "ironfurnaces.gui.furnaces.*"
+		sortRange = "0-45"
+
+	[[sorting.containerOverrides]]
+		containerClass = "com.direwolf20.justdirethings.client.screens.*"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "com.direwolf20.laserio.client.screens.*"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "com.stal111.forbidden_arcanus.client.gui.screen.*"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "aztech.modern_industrialization.*.gui.*Screen"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
 		containerClass = "blusunrize.immersiveengineering.client.gui.ArcFurnaceScreen"
 		sortRange = ""
 
@@ -142,7 +166,7 @@
 	#Range: 0 ~ 3
 	enableButtons = 3
 	#Enable auto-refill
-	autoRefill = false
+	autoRefill = true
 	#0 = disable sorting
 	#1 = player sorting only
 	#2 = external sorting only

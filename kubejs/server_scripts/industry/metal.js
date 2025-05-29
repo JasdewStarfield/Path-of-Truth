@@ -1,4 +1,9 @@
 ServerEvents.recipes(event => {
+    event.remove({id:/vintageimprovements\:craft\/.*_rod.*/})
+
+    event.remove({id:"createdeco:pressing/netherite_sheet"})
+    event.remove({id:"createdeco:pressing/netherite_sheet"})
+
     //青铜块和锭
     //event.remove({id:'immersive_aircraft:airship'})
     event.shaped(
@@ -12,14 +17,9 @@ ServerEvents.recipes(event => {
         A: '#forge:ingots/bronze'
         }
     )
-    event.shaped(
+    event.shapeless(
         Item.of('kubejs:bronze_ingot', 9),
-        [ 
-        'A'
-        ],
-        {
-        A: '#forge:storage_blocks/bronze'
-        }
+        '#forge:storage_blocks/bronze'
     )
 
     //青铜粒和锭
@@ -34,21 +34,14 @@ ServerEvents.recipes(event => {
         A: '#forge:nuggets/bronze'
         }
     )
-    event.shaped(
+    event.shapeless(
         Item.of('kubejs:bronze_nugget', 9),
-        [ 
-        'A'
-        ],
-        {
-        A: '#forge:ingots/bronze'
-        }
+        '#forge:ingots/bronze'
     )
 
     //青铜粉和锭
-    event.blasting('#forge:ingots/bronze', '#forge:dusts/bronze')
-
-    //青铜压板
-    event.recipes.create.pressing('#forge:plates/bronze', '#forge:ingots/bronze')
+    event.smelting('kubejs:bronze_ingot', '#forge:dusts/bronze')
+    event.blasting('kubejs:bronze_ingot', '#forge:dusts/bronze')
 
     //青铜工具，护甲
     event.shaped(
@@ -181,121 +174,235 @@ ServerEvents.recipes(event => {
     */
 
     //用铜粉、锡粉合成青铜粉
-    event.recipes.create.mixing('2x kubejs:bronze_dust', ['#forge:dusts/tin','#forge:dusts/copper','#forge:dusts/copper','#forge:dusts/copper'])
+    event.recipes.create.mixing('2x kubejs:bronze_dust', ['#forge:dusts/tin','#forge:dusts/copper','#forge:dusts/copper','#forge:dusts/copper', '#forge:dusts/sulfur'])
 
     //修改搅拌器配方
     event.replaceInput({mod:'create',output:'create:whisk'},
     '#forge:plates/iron', '#forge:plates/andesite' )
 
     //石磨粉碎铜锭锡锭镍锭锌锭
-    event.recipes.create.milling(Item.of('kubejs:tin_dust').withChance(0.5), '#forge:ingots/tin')
-    event.recipes.create.milling(Item.of('immersiveengineering:dust_copper').withChance(0.5), '#forge:ingots/copper')
-    event.recipes.create.milling(Item.of('immersiveengineering:dust_nickel').withChance(0.5), '#forge:ingots/nickel')
-    event.recipes.create.milling(Item.of('kubejs:zinc_dust').withChance(0.5), '#forge:ingots/zinc')
+    event.recipes.create.milling(Item.of('kubejs:tin_dust').withChance(0.75), '#forge:ingots/tin').id('kubejs:tin_dust_manual_only')
+    event.recipes.create.milling(Item.of('immersiveengineering:dust_copper').withChance(0.75), '#forge:ingots/copper').id('kubejs:copper_dust_manual_only')
+    event.recipes.create.milling(Item.of('immersiveengineering:dust_nickel').withChance(0.75), '#forge:ingots/nickel').id('kubejs:nickel_dust_manual_only')
+    event.recipes.create.milling(Item.of('kubejs:zinc_dust').withChance(0.75), '#forge:ingots/zinc').id('kubejs:zinc_dust_manual_only')
+
+    event.recipes.create.milling(Item.of('immersiveengineering:dust_gold').withChance(0.25), '#forge:ingots/gold').id('kubejs:gold_dust_manual_only')
+    event.recipes.create.milling(Item.of('immersiveengineering:dust_silver').withChance(0.25), '#forge:ingots/silver').id('kubejs:silver_dust_manual_only')
+
+    event.recipes.create.crushing(Item.of('kubejs:tin_dust'), '#forge:ingots/tin')
+    event.recipes.create.crushing(Item.of('immersiveengineering:dust_copper'), '#forge:ingots/copper')
+    event.recipes.create.crushing(Item.of('immersiveengineering:dust_nickel'), '#forge:ingots/nickel')
+    event.recipes.create.crushing(Item.of('kubejs:zinc_dust'), '#forge:ingots/zinc')
+    
+    //粉碎轮出铁粉
+    event.recipes.create.crushing(Item.of('kubejs:iron_ingot_dust').withChance(0.75), '#forge:ingots/iron')
 
     event.remove({id:/alloyed\.*/})
-    event.recipes.create.mixing('2x kubejs:bronze_ingot', ['#forge:ingots/tin','#forge:ingots/copper','#forge:ingots/copper','#forge:ingots/copper']).heated()
+
+    //燃烧室
+    event.replaceInput(
+        { output:"create:empty_blaze_burner" },
+        '#forge:plates/iron',
+        '#forge:wires/iron'
+    )
 
     //康铜
     //移除合成康铜粉配方
     event.remove({id:"immersiveengineering:crafting/constantan_mix"})
+    //移除直接合金配方
+    event.remove({id:"createaddition:compat/immersiveengineering/constantan"})
     //新增加热搅拌配方
-    event.recipes.create.mixing('2x #forge:dusts/constantan', ['#forge:dusts/nickel','#forge:dusts/copper']).heated()
-    //补充辊压配方
-    event.recipes.create.pressing('#forge:plates/constantan', '#forge:ingots/constantan')
+    event.recipes.create.mixing('2x immersiveengineering:dust_constantan', ['#forge:dusts/nickel', '#forge:dusts/copper', '#forge:dusts/phosphor']).heated()
     //康铜代替铜
-    event.replaceInput(
-        { input:"#forge:ingots/copper",mod:"immersiveengineering",not:{output:"#forge:nuggets/copper"} },
-        '#forge:ingots/copper',
-        '#forge:ingots/constantan'
-    )
-    event.replaceInput(
-        { output:"create:fluid_pipe" },
-        '#forge:ingots/copper',
-        '#forge:ingots/constantan'
-    )
-    event.replaceInput(
-        { output:"create:fluid_pipe" },
-        '#forge:plates/copper',
-        '#forge:plates/constantan'
-    )
-    event.replaceInput(
-        { output:"create:fluid_tank" },
-        '#forge:plates/copper',
-        '#forge:plates/constantan'
-    )
-    event.replaceInput(
-        { output:"create_connected:fluid_vessel" },
-        '#forge:plates/copper',
-        '#forge:plates/constantan'
-    )
+    event.remove({id:"create:crafting/kinetics/fluid_pipe"})
+    event.remove({id:"create:crafting/kinetics/fluid_pipe_vertical"})
+    event.shaped('4x create:fluid_pipe', [ 
+        'ABA', 
+    ], {
+        A: '#forge:plates/constantan',
+        B: '#forge:ingots/constantan'
+    })
+    event.shaped('4x create:fluid_pipe', [ 
+        'A',
+        'B',
+        'A' 
+    ], {
+        A: '#forge:plates/constantan',
+        B: '#forge:ingots/constantan'
+    })
+    event.remove({id:"create:crafting/kinetics/fluid_tank"})
+    event.remove({id:"create_connected:crafting/kinetics/fluid_vessel"})
+    event.shaped('create_connected:fluid_vessel', [ 
+        'ABA', 
+    ], {
+        A: '#forge:plates/constantan',
+        B: 'minecraft:barrel'
+    })
+    event.shaped('create:fluid_tank', [ 
+        'A',
+        'B',
+        'A' 
+    ], {
+        A: '#forge:plates/constantan',
+        B: 'minecraft:barrel'
+    })
+
+    //弹簧组
+    event.shaped('kubejs:basic_spring_set', [ 
+        'AA', 
+        'AB',
+        'AA'  
+    ], {
+        A: 'vintageimprovements:iron_spring',
+        B: 'vintageimprovements:small_bronze_spring'
+    })
+    event.recipes.create.sequenced_assembly([
+        Item.of('kubejs:basic_spring_set')
+    ], 'vintageimprovements:small_bronze_spring', [
+        event.recipes.createDeploying("kubejs:incomplete_basic_spring_set", ["kubejs:incomplete_basic_spring_set", 'vintageimprovements:iron_spring']),
+    ]).transitionalItem("kubejs:incomplete_basic_spring_set").loops(4)
+
+    event.shaped('kubejs:advanced_spring_set', [ 
+        'AA', 
+        'AB',
+        'AA'  
+    ], {
+        A: 'vintageimprovements:steel_spring',
+        B: 'vintageimprovements:small_brass_spring'
+    })
+    event.recipes.create.sequenced_assembly([
+        Item.of('kubejs:advanced_spring_set')
+    ], 'vintageimprovements:small_brass_spring', [
+        event.recipes.createDeploying("kubejs:incomplete_advanced_spring_set", ["kubejs:incomplete_advanced_spring_set", 'vintageimprovements:steel_spring']),
+    ]).transitionalItem("kubejs:incomplete_advanced_spring_set").loops(4)
+
+    event.remove({id:"vintageimprovements:coiling/steel_rod"})
+    event.recipes.vintageimprovements.coiling('vintageimprovements:steel_spring', '#forge:plates/steel')
 
     //黄铜
     event.remove({id:"create:mixing/brass_ingot"})
+
+    event.recipes.create.mixing('kubejs:brass_blend', ['#forge:dusts/copper','#forge:dusts/zinc','#forge:dusts/saltpeter']).heated()
+
     let inter = 'kubejs:incomplete_brass_ingot'
     event.recipes.create.sequenced_assembly([
         Item.of('create:brass_ingot').withChance(80.0),
-        Item.of('create:zinc_ingot').withChance(10.0),
-        Item.of('copper_ingot').withChance(10.0)
-    ], 'minecraft:copper_ingot', [
-        event.recipes.createFilling(inter, [inter, Fluid.lava(250)]),
-        event.recipes.createDeploying(inter, [inter, 'kubejs:zinc_dust']),
-        event.recipes.createFilling(inter, [inter, Fluid.water(250)]),
+        Item.of('kubejs:failed_brass_ingot').withChance(20.0)
+    ], 'kubejs:brass_blend', [
+        event.recipes.createFilling(inter, [inter, Fluid.lava(50)]),
+        event.recipes.vintageimprovements.vibrating(inter, inter),
+        event.recipes.createFilling(inter, [inter, Fluid.water(100)]),
         event.recipes.createPressing(inter, inter)
-    ]).transitionalItem(inter).loops(1)
+    ]).transitionalItem(inter).loops(3)
+
+    event.recipes.create.milling([Item.of('immersiveengineering:dust_copper').withChance(0.9),Item.of('kubejs:zinc_dust').withChance(0.9)], 'kubejs:failed_brass_ingot')
 
     //黑曜石支持用石磨处理
     event.recipes.create.milling(Item.of('create:powdered_obsidian').withChance(0.75), '#forge:obsidian')
     //焦煤也是
-    event.recipes.create.milling(Item.of('tfmg:coal_coke_dust').withChance(0.75), '#forge:coal_coke').id('coal_coke_dust_manual_only')
+    event.recipes.create.milling(Item.of('immersiveengineering:dust_coke').withChance(0.75), '#forge:coal_coke').id('coal_coke_dust_manual_only')
 
     //深板岩
     event.recipes.create.filling('magma_block', [Fluid.of('minecraft:lava',500),'minecraft:cobblestone'])
     event.recipes.create.emptying([Fluid.of('minecraft:lava',250), 'minecraft:cobbled_deepslate'], 'magma_block')
 
-    //木炭压制焦煤（小概率）
-    event.recipes.create.compacting([Item.of('tfmg:coal_coke').withChance(0.1), Fluid.of('immersiveengineering:creosote', 500)], ['createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder','createchromaticreturn:carbon_powder']).heated()
+    //木炭缠魂到煤炭
+    event.recipes.create.haunting(Item.of('minecraft:coal').withChance(0.5), 'minecraft:charcoal')
 
-    //ban掉水搅拌出锌粒，火药烧烈焰粉
-    //sb chromatic return
-    event.remove({id:"createchromaticreturn:zinc_recipe"})
-    event.remove({id:"createchromaticreturn:gp_to_bp"})
-    event.remove({id:"createchromaticreturn:cf_to_rs"})
-    event.remove({id:"createchromaticreturn:magma_block_recipe"})
-    event.remove({id:"createchromaticreturn:obsidian_recipe"})
-    event.remove({id:"createchromaticreturn:magma_drain"})
-    event.remove({id:/createchromaticreturn\:.*doubling\.*/})
+    //致密碳
+    event.recipes.create.compacting([Item.of('scguns:anthralite_nugget', 2), Item.of('scguns:anthralite_nugget', 1).withChance(0.5)], ['#forge:dusts/coal','#forge:dusts/coal','#forge:dusts/saltpeter', '#forge:dusts/phosphor']).heated()
 
     //泥土到铜
     event.recipes.create.mixing('2x dirt', ['#forge:sand','#forge:cobblestone',Fluid.of('water',500)])
     event.recipes.create.splashing([Item.of('create:copper_nugget').withChance(0.5)], 'dirt')
 
     //削弱陶瓦出铜
-    event.remove({id:"createchromaticreturn:copper_recipe"})
     event.recipes.create.crushing([Item.of('minecraft:red_sand'),Item.of('create:copper_nugget').withChance(0.25)], '#minecraft:terracotta')
 
     //燧石出镍
-    event.recipes.create.milling(Item.of('#forge:nuggets/nickel').withChance(0.3), 'flint')
+    event.recipes.create.milling(Item.of('immersiveengineering:nugget_nickel').withChance(0.3), 'flint')
 
     //黏土出锌
-    event.recipes.create.milling(Item.of('#forge:nuggets/zinc').withChance(0.5), 'clay_ball')
+    event.recipes.create.milling(Item.of('create:zinc_nugget').withChance(0.5), 'clay_ball')
 
     //泥巴出铁、铝土
-    event.recipes.create.crushing([Item.of('create:crushed_raw_iron').withChance(0.14),Item.of('kubejs:crushed_raw_bauxite').withChance(0.07)], 'packed_mud')
+    event.recipes.create.crushing([Item.of('create:crushed_raw_iron').withChance(0.2),Item.of('kubejs:crushed_raw_bauxite').withChance(0.1)], 'packed_mud')
 
     //深板岩粉碎出铅，银
-    event.recipes.create.crushing([Item.of('#forge:nuggets/lead').withChance(0.25), Item.of('#forge:nuggets/silver').withChance(0.25)], 'deepslate')
-    event.recipes.create.crushing([Item.of('#forge:nuggets/lead').withChance(0.25), Item.of('#forge:nuggets/silver').withChance(0.25)], 'cobbled_deepslate')
+    event.recipes.create.crushing([Item.of('oreganized:silver_nugget').withChance(0.2)], 'deepslate')
+    event.recipes.create.crushing([Item.of('oreganized:silver_nugget').withChance(0.2)], 'cobbled_deepslate')
 
-    //黑石粉碎出铀
-    event.recipes.create.crushing([Item.of('#forge:nuggets/uranium').withChance(0.15)], 'blackstone')
+    //花岗岩粉碎出铀
+    event.remove({id:"createnuclear:crushing/granite"})
+    event.recipes.create.crushing([Item.of('immersiveengineering:nugget_uranium').withChance(0.15), Item.of("minecraft:red_sand")], 'granite')
 
     //红石量产
-    event.recipes.create.filling('redstone_block', [Fluid.of('immersiveengineering:redstone_acid',1000),'botania:livingrock'])
+    event.recipes.create.filling('redstone_block', [Fluid.of('immersiveengineering:redstone_acid',250),'botania:livingrock'])
+
+    //玄武岩粉碎产青金石
+    event.remove({id:"vintageimprovements:crushing/basalt"})
+    event.remove({id:"vintageimprovements:crushing/basalt_recycling"})
+    event.recipes.create.crushing([Item.of('minecraft:lapis_lazuli').withChance(0.3)], 'basalt')
+
+    //焦黑熔渣粉碎生成硫粉
+    event.recipes.create.crushing([Item.of('scguns:sulfur_dust').withChance(0.3)], 'create:scoria')
+
+    //禁止粉碎生成硫
+    event.remove({id:"vintageimprovements:crushing/scoria"})
+    event.remove({id:"vintageimprovements:crushing/scoria_recycling"})
+    event.remove({id:"scguns:create/basalt_recycling"})
+
+    //禁止致密碳
+    event.remove({id:"scguns:create/soul_soil"})
 
 
     //霜火双层板
     event.recipes.create.compacting('kubejs:frostfire_double_plate', ['#forge:plates/froststeel','#forge:slimeballs','#forge:plates/horizonite'])
+
+    //锌铝块和锭
+    event.shaped(
+        Item.of('kubejs:za_block', 1),
+        [ 
+        'AAA', 
+        'AAA',
+        'AAA'
+        ],
+        {
+        A: '#forge:ingots/za'
+        }
+    )
+    event.shapeless(
+        Item.of('kubejs:za_ingot', 9),
+        '#forge:storage_blocks/za'
+    )
+
+    //锌铝粒和锭
+    event.shaped(
+        Item.of('kubejs:za_ingot', 1),
+        [ 
+        'AAA', 
+        'AAA',
+        'AAA'
+        ],
+        {
+        A: '#forge:nuggets/za'
+        }
+    )
+    event.shapeless(
+        Item.of('kubejs:za_nugget', 9),
+        '#forge:ingots/za'
+    )
+
+    //锌铝粉和锭
+    event.smelting('#forge:ingots/za', '#forge:dusts/za')
+    event.blasting('#forge:ingots/za', '#forge:dusts/za')
+    event.custom({
+        "type":"immersiveengineering:crusher",
+        "energy":3000,
+        "input":{"tag":"forge:ingots/za"},
+        "result":{"base_ingredient":{"tag":"forge:dusts/za"},"count":1},
+        "secondaries":[]
+    })
 
     //一些沉浸盔甲修改
     event.replaceInput(
@@ -391,9 +498,89 @@ ServerEvents.recipes(event => {
     )
     event.smelting("kubejs:broken_snowcap_oven", "blue_skies:snowcap_oven")
 
-    //虚空钢
-    event.remove({id:"createutilities:mixing/void_steel_ingot"})
-    event.recipes.create.mixing(Item.of('#forge:ingots/voidsteel').withChance(0.75), ['#forge:ingots/steel','#endersdelight:enderman_loot', '#endersdelight:enderman_loot', 'echo_shard']).heated()
+    //石墨
+    event.remove({id: "createnuclear:pressing/graphene"})
+
+    //矿渣再利用
+    event.recipes.create.crushing([Item.of("kubejs:slag_chunk",2),Item.of("kubejs:slag_chunk",2).withChance(0.5)], "#forge:slag")
+    event.recipes.create.mixing(Fluid.of("kubejs:slurry_slag", 100), [Fluid.of("minecraft:water", 100), Item.of("kubejs:slag_chunk")])
+    event.recipes.vintageimprovements.centrifugation([
+        Fluid.of("minecraft:water", 100),
+        Item.of("mud"),
+        Item.of("gold_nugget").withChance(0.01),
+        Item.of("create:copper_nugget").withChance(0.03),
+        Item.of("create:zinc_nugget").withChance(0.03),
+        Item.of("immersiveengineering:nugget_nickel").withChance(0.03),
+        Item.of("oreganized:lead_nugget").withChance(0.02),
+        Item.of("oreganized:silver_nugget").withChance(0.01),
+        Item.of("immersiveengineering:nugget_uranium").withChance(0.01),
+        Item.of("simplemetals_tin:tin_nugget").withChance(0.03),
+        Item.of("scguns:anthralite_nugget").withChance(0.02),
+    ],
+    Fluid.of('kubejs:slurry_slag', 200)).minimalRPM(128)
+
+    //玉石增殖
+    event.custom({
+        "type":"immersiveengineering:cloche",
+        "input":{"item":"blue_skies:sunstone_crystal"},
+        "render":{"type":"generic","block":"blue_skies:sunstone_crystal"},
+        "results":[
+            {"count": 1, "item":"blue_skies:sunstone_crystal"}
+        ],
+        "soil":{"item":"blue_skies:lunar_stone"},
+        "time":800
+    })
+    event.custom({
+        "type":"immersiveengineering:cloche",
+        "input":{"item":"blue_skies:moonstone_crystal"},
+        "render":{"type":"generic","block":"blue_skies:moonstone_crystal"},
+        "results":[
+            {"count": 1, "item":"blue_skies:moonstone_crystal"}
+        ],
+        "soil":{"item":"blue_skies:turquoise_stone"},
+        "time":800
+    })
+    event.recipes.create.crushing([Item.of('blue_skies:moonstone_shard',2).withChance(0.5),Item.of('blue_skies:moonstone_shard',4)], Item.of('blue_skies:moonstone_crystal'))
+    event.recipes.create.mixing("goety:jade", [Item.of('blue_skies:moonstone_crystal'),Item.of('blue_skies:sunstone_crystal')])
+
+    //炽铁
+    event.recipes.create.compacting('blue_skies:horizonite_block', [
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#blue_skies:ingots/horizonite',
+        '#blue_skies:ingots/horizonite',
+        '#blue_skies:ingots/horizonite',
+        'blue_skies:sunstone_crystal'
+    ]).heated()
+
+    //缪铁
+    event.recipes.create.compacting('blue_skies:falsite_block', [
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#forge:ingots/iron',
+        '#blue_skies:ingots/falsite',
+        '#blue_skies:ingots/falsite',
+        '#blue_skies:ingots/falsite',
+        'blue_skies:moonstone_crystal'
+    ])
+
+    //批量炼焦
+    event.recipes.vintageimprovements.pressurizing([
+        Item.of('immersiveengineering:coal_coke', 1),
+        Item.of('immersiveengineering:coal_coke', 1).withChance(0.25),
+        Fluid.of('immersiveengineering:creosote', 500)
+    ], [
+        Item.of('goety:ectoplasm'),
+        Item.of('minecraft:coal', 1),
+    ]).heated()
+
 
     //补充一些沉浸工程压板配方
     let IEMetalPressing = (material) => {
@@ -407,15 +594,17 @@ ServerEvents.recipes(event => {
               "base_ingredient":{"tag":"forge:plates/"+material},
               "count":1
             }
-          })
+        })
     }
     const MissingPressingRecipeMetals = [
         "voidsteel",
         "andesite",
         "zinc",
-        "netherite",
         "industrial_iron",
-        "forgotten_metal"
+        "forgotten_metal",
+        "za",
+        "terrasteel",
+        "hop_graphite"
     ]
     MissingPressingRecipeMetals.forEach(material => {
         IEMetalPressing(material)

@@ -1,7 +1,7 @@
 
 ["Balance Options"]
 	#Whether or not obtaining fish with a Wooden Bucket should be enabled.
-	fishObtainingEnabled = true
+	fishObtainingEnabled = false
 	#Minimum temperature of fluid at which the Wooden Bucket breaks when emptied.
 	#Range: -10000 ~ 10000
 	crackingTemperature = 1000

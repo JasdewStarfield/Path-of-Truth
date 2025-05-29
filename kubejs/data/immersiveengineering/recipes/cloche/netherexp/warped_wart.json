@@ -1,0 +1,8 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{"item":"netherexp:warped_wart"},
+    "render":{"type":"crop","block":"netherexp:warped_wart"},
+    "results":[{"count":2,"item":"netherexp:warped_wart"}],
+    "soil":{"item":"minecraft:soul_sand"},
+    "time":800
+}

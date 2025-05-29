@@ -1,20 +1,4 @@
 ServerEvents.recipes(event => {
-  //破坏者盾牌
-  event.remove({id:'shieldexp:griefer_shield'})
-  event.custom({
-    "type": "bloodmagic:array",
-    "addedinput": {
-        "item": 'minecraft:emerald_block'
-    },
-    "baseinput": {
-        "item": 'shieldexp:golden_shield'
-    },
-    "output": {
-        "item": 'shieldexp:griefer_shield'
-    },
-    "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-  })
-
   //月长石盾牌
   event.remove({id:'blue_skies:moonstone_shield'})
   event.shaped(

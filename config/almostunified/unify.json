@@ -4,14 +4,16 @@
     "kubejs",
     "crafttweaker",
     "farmersdelight",
-    "supplementaries",
     "create",
+    "simplemetals_tin",
     "tmted",
-    "thermal",
-    "tfmg",
+    "oreganized",
+    "scguns",
     "immersiveengineering",
-    "bloodmagic",
-    "mekanism",
+    "createnuclear",
+    "createdeco",
+    "createaddition",
+    "vintageimprovements",
     "beautify"
   ],
   "stoneStrata": [
@@ -42,6 +44,7 @@
     "forge:slag"
   ],
   "materials": [
+    "andesite",
     "aeternium",
     "aluminum",
     "amber",
@@ -60,7 +63,6 @@
     "diamond",
     "electrum",
     "elementium",
-    "emerald",
     "enderium",
     "fluorite",
     "gold",

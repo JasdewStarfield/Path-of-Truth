@@ -3,40 +3,162 @@
 模组名列表：
 铁魔法：irons_spellbooks
 植物魔法：botania
-血魔法：bloodmagic
+诡厄巫法：goety
 */
+
+/*
+//保留nbt的有序合成
+    //可以用于背包、法术书升级一类的需要保留“内容”的配方
+    //result, shape, keys：你正常写有序合成的部分，直接粘贴就行
+    //source：你需要保留nbt的那个物品
+    //extraNBTs：额外添加的nbt，可以用来改法术书容量之类的
+    function keepNBTShapedCrafting(result, shape, keys, source, extraNBTs) {
+        let resultItem = Item.of(result)
+        event.shaped(resultItem, shape, keys).modifyResult((grid, stack) => {
+            let sourceNBTs = grid.find(source).nbt
+            stack.nbt.merge(sourceNBTs)
+            stack.nbt.merge(extraNBTs)
+            return stack
+        })
+    }
+*/
+
+/*
+借用模板的合成
+    event.custom({
+        "取决于其他mod的合成json"
+    })
+*/
+
 /*
 加入有序配方模板
-event.shaped(Item.of('名字',数量),
-    ['***',
-    '***',
-    '***'],
-    {
-        *:'',
-        *:'',
-        *:''
-    }
-)
+    event.shaped(Item.of('名字',数量),
+        ['***',
+        '***',
+        '***'],
+        {
+            *:'',
+            *:'',
+            *:''
+        }
+    )
 */
 /*
 加入无序配方模板
-event.shapeless(Item.of('名字',数量),
-    [
-        '材料1',
-        '材料2',
-        '材料3'
-    ]
-)
+    event.shapeless(Item.of('名字',数量),
+        [
+            '材料1',
+            '材料2',
+            '材料3'
+        ]
+    )
 */
 /*
 替换配方系列
-event.replaceInput({mod:'模组名',output:'输出产物'},
-    '要被替换的物品名' , '要替换成的物品名')
+    event.replaceInput({mod:'模组名',output:'输出产物'},
+        '要被替换的物品名' , '要替换成的物品名')
 */
 /*
 删除配方：
-event.remove({id:'名字'})
+    event.remove({id:'名字'})
 */
+
+/*
+实体表现修改
+EntityJSEvents.attributes(event => {
+    event.modify('kubejs:redacted', attribute => {
+        attribute.add("minecraft:generic.max_health", 100)
+        attribute.add("minecraft:generic.armor", 10)
+        attribute.add("minecraft:generic.armor_toughness", 5)
+        attribute.add("minecraft:generic.movement_speed", 0.25)
+        attribute.add("irons_spellbooks:spell_power", 1.5)
+        attribute.add("irons_spellbooks:spell_resist", 1.5)
+        attribute.add("additional_attributes:spell_general", 2)
+    })
+})
+*/
+
+/*
+goety系列配方记录
+时间单位：tick, 20tick=1s
+    //诅咒注入器
+    event.custom({
+        "type": "goety:cursed_infuser_recipes",
+        "ingredient": {
+            "item/tag": "材料"
+        },
+        "result": "产出",
+        "cookingTime": 处理时间
+    })
+    //仪式相关
+    //仪式类型列表
+    主类型：craft(制作),summon(召唤生物),summon_tamed(召唤驯服生物),convert_complete_tamed(转化驯服生物)
+    副类型：
+    forge(锻造),animation(活力),frost(冰霜),geoturgy(大地),magic(魔法),storm(风暴),deep(深渊),sabbath(安息),sky(天空),necromancy(死灵)
+    (adept/expert_)nether((进阶/专家)下界)
+    制作类模板：
+    event.custom({
+        "type": "goety:ritual",
+        "ritual_type": "goety:craft",//仪式主类型（制作）
+        "activation_item": {
+            "item": "goety:cursed_cage"//中心物品
+        },
+        "craftType": "forge",//仪式副类型（锻造）
+        "soulCost": 1,//每秒消耗
+        "duration": 30,//时长
+        "ingredients": [
+            {
+                "item": "1"
+            },
+            {
+                "tag": "2"
+            }
+        ],
+        "result": {
+            "item": "3"//实际产出
+        }
+    })
+    召唤生物类模板：
+    event.custom({
+        "type": "goety:ritual",
+        "ritual_type": "goety:summon_tamed",//仪式主类型（生成生物）
+        "activation_item": {
+            "item": "minecraft:goat_horn"//输入材料
+        },
+        "craftType": "animation",//仪式副类型（活力）
+        "entity_to_summon": "goety:twilight_goat",//即将生成的生物
+        "soulCost": 1,
+        "duration": 10,
+        "ingredients": [
+            {
+                "item": "minecraft:wheat"
+            },
+            {
+                "tag": "forge:bones"
+            }
+        ],
+        "result": {
+            "item": "goety:jei_dummy/none"//空输出
+        }
+    })
+    //死灵火盆模板（最多只能有五个输入）
+    event.custom({
+        "type": "goety:brazier",
+        "soulCost": 2000,
+        "ingredients": [
+            {
+                "item": "1"
+            },
+            {
+                "tag": "2"
+            }
+        ],
+        "result": {
+            "item": "3"
+        }
+    })
+*/
+
 /*
 植物魔法系列配方记录：
 onEvent("recipes", event => {
@@ -105,119 +227,4 @@ onEvent("recipes", event => {
     //？
     event.recipes.botania.marimorphosis("minecraft:acacia_door", "minecraft:acacia_fence_gate", 1, ["plains"], 10)
 })
-*/
-/*
-血魔法修改模板
-//炼金术桌
-event.custom({
-    "type": "bloodmagic:alchemytable",
-    "input": [
-        {
-            "item": "bloodmagic:weak_tau"
-        },
-        {
-            "item": "bloodmagic:weak_tau"
-        },
-        {
-            "item": "bloodmagic:weak_tau"
-        },
-        {
-            "item": "minecraft:bone_meal"
-        }
-    ],
-    "output": {
-        "item": "bloodmagic:tauoil"
-    },
-    "syphon": 500,
-    "ticks": 200,
-    "upgradeLevel": 3
-})
-//祭坛
-event.custom({
-    "type": "bloodmagic:altar",
-    "altarSyphon": 2000,
-    "consumptionRate": 5,
-    "drainRate": 1,
-    "input": {
-        "tag": "forge:gems/diamond"
-    },
-    "output": {
-        "item": "bloodmagic:weakbloodorb"
-    },
-    "upgradeLevel": 0
-})
-//炼金矩阵
-event.custom({
-    "type": "bloodmagic:array",
-    "addedinput": {
-        "item": "第二输入"
-    },
-    "baseinput": {
-        "item": "第一输入"
-    },
-    "output": {
-        "item": "输出"
-    },
-    "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-})
-//灵魂锻炉
-event.custom({
-    "type": "bloodmagic:soulforge",
-    "drain": 2.0,//单次吸收量
-    "input0": {
-        "tag": "forge:stone"
-    },
-    "input1": {
-        "tag": "forge:glass"
-    },
-    "minimumDrain": 10.0,//要求使用材料的最低容量
-    "output": {
-        "count": 8,//生成数量
-        "item": "bloodmagic:throwing_dagger_syringe"
-    }
-})
-//抽象炼金台
-event.custom({
-    "type": "bloodmagic:arc",
-    //可能存在的追加输出（可以不写）
-    "addedoutput": [
-        {
-        "type": {
-            "item": "minecraft:clay_ball"
-        },
-        "chance": 0.5,
-        "mainchance": 0.0
-        }
-    ],
-    //消耗配方（？）
-    "consumeingredient": false,
-    //输入材料
-    "input": {
-        "tag": "forge:sand"
-    },
-    //输入液体（可以不写）
-    "inputFluid": {
-        "amount": 200,
-        "fluid": "minecraft:water"
-    },
-    //输入数量（大概）
-    "inputsize": 1,
-    //主要产物输出几率
-    "mainoutputchance": 0.0,
-    //输出产物内容
-    "output": {
-        "count": 3,//输出数量（可以不写）
-        "item": "minecraft:clay_ball"
-    },
-    //输出液体（可以不写）
-    "outputFluid": {
-        "amount": 50,
-        "fluid": "minecraft:lava"
-    },
-    //使用工具（必须是血魔法原有工具）
-    "tool": {
-        "tag": "bloodmagic:arc/hydrate"
-    }
-})
-
 */

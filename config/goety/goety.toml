@@ -1,0 +1,188 @@
+
+["Mod Compatibility"]
+	#If Iron's Spells and Spellbooks is installed, certain robes provides Spell resistances. Default: true
+	robesIronResist = true
+	#If Iron's Spells and Spellbooks is installed, certain curios provides Spell buffs. Default: true
+	ironBuff = true
+	#If enabled, Ender Dragon's Fireballs will leave clouds that damages even undead and will not hit itself. Default: false
+	betterDragonFireball = false
+	#If L_Ender Cataclysm is installed, certain loots are modified and change between this and the latter mod. Default: true
+	cataclysmLootCompat = true
+
+[Blocks]
+	#Whether Night Beacons are allowed to function, turning Daytime to Midnight so long as it's activated, Default: true
+	enableNightBeacon = true
+	#Allow used Crystal Balls to spawn Crones again when right-clicked with respawn_boss tagged item, Default: true
+	crystalBallRespawn = true
+	#Whether Shrieking Obelisk can prevent or stop Raids, Default: true
+	ShriekObeliskRaid = true
+	#How much Charges is given to the Sculk Grower whenever it absorbs Soul Energy, Default: 100
+	#Range: > 0
+	sculkGrowerCharge = 100
+	#Whether Sculk Grower can accept Potency enchantment, which allows the Grower to grow plants faster, Default: true
+	sculkGrowerPotency = true
+	#Whether creating items through Rituals will transfer enchantments from the original item, Default: true
+	ritualCraftEnchant = true
+	#The amount of Soul Energy used to power the Shrieking Obelisk, Default: 100
+	#Range: > 0
+	shriekObeliskCost = 100
+	#Allow looted Pithos to regenerate Loot and spawn Skull Lord again when right-clicked with respawn_boss tagged item, Default: true
+	pithosRespawn = true
+	#Whether Sculk Grower continues to grow plants without Redstone if it still contains charges. Setting it to false will cause the Sculk Grower to slowly decay its charges, Default: true
+	sculkGrowerContinue = true
+	#How much Soul Energy is required for the Dark Anvil to repair itself, Default: 1000
+	#Range: > 0
+	darkAnvilSoulCost = 1000
+	#The amount of Soul Energy used to give Charges to the Sculk Grower, Default: 20
+	#Range: > 0
+	sculkGrowerCost = 20
+	#Add mobs that Hook Bells don't work on. 
+	#To do so, enter the namespace ID of the mob, like "minecraft:zombie, minecraft:skeleton".
+	hookBellBlackList = []
+	#Whether enchanting through Rituals are enabled, Default: true
+	ritualEnchants = true
+	#Whether Dark Anvils ignores enchantment max levels when combining same enchantments, Default: true
+	darkAnvilIgnoreMaxLevels = true
+	#Whether Dark Anvils have a cap that prevents items from being repaired or enchanted if repair cost is exceeded, Default: false
+	darkAnvilCap = false
+	#How many seconds the Soul Menderer repairs 1 durability from an item, Default: 0.5
+	#Range: 0.0 ~ 1.7976931348623157E308
+	soulMenderSeconds = 0.5
+	#Whether creating items through Rituals will transfer damage from the original item, Default: false
+	ritualCraftDamage = false
+	#The amount of Soul Energy used to power the Animator per block distance, Default: 10
+	#Range: > 0
+	animatorCost = 10
+	#Maximum level of experience the Dark Anvil will stick to instead of capping if Cap is disabled, Default: 30
+	#Range: > 1
+	darkAnvilRepairCost = 30
+	#Whether Dark Anvils will take Experience Points instead of Levels, Default: false
+	darkAnvilTakePoints = false
+	#The amount of Soul Energy used up to repair Items per the configured amount of seconds, Default: 1
+	#Range: > 0
+	soulMenderCost = 1
+
+["Soul Taken"]
+	#Animals Killed, Default: 5
+	#Range: > 0
+	animalSouls = 5
+	#Multiplies the amount of Souls taken by this amount, Default: 2
+	#Range: > 1
+	soulTakenMultiplier = 2
+	#Non-Undead Piglin Killed, Default: 10
+	#Range: > 0
+	piglinSouls = 10
+	#Players Killed, Default: 100
+	#Range: > 0
+	playerSouls = 100
+	#Enderman Killed, Default: 10
+	#Range: > 0
+	endermanSouls = 10
+	#Others Killed, Default: 5
+	#Range: > 0
+	otherSouls = 5
+	#Anthropods Killed, Default: 5
+	#Range: > 0
+	anthropodSouls = 5
+	#Villagers Killed, Default: 100
+	#Range: > 0
+	villagerSouls = 100
+	#Illagers, Witches, Cultists Killed, Default: 25
+	#Range: > 0
+	illagerSouls = 25
+	#Undead Killed, Default: 5
+	#Range: > 0
+	undeadSouls = 5
+
+[Lich]
+	#Undead Mobs will not attack you if you're a Lich and will even defend you if you're attack by another mob and wearing the Necro Set, Default: true
+	lichUndeadFriendly = true
+	#Enable Liches healing be stunted when hurt by Smite Enchantment, Default: true
+	lichSmite = true
+	#If Villagers provide negative Reputation to Liches and non-Player Iron Golems are automatically aggressive against them, Default: true
+	lichVillagerHate = true
+	#How much Soul Energy is cost to heal the Player per configured second if they've become a Lich, Default: 5
+	#Range: > 0
+	lichHealCost = 5
+	#Whether the player needs to read a Forbidden Scroll to start the Potion of Transformation ritual, Default: true
+	lichScrollRequirement = true
+	#Whether the player in Lich Mode will emit Lich sounds, Default: true
+	lichModeSounds = true
+	#Whether players can obtain Lichdom without commands, Default: true
+	lichEnable = true
+	#How much health Lich Players heals using Soul Energy, Default: 1.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	lichHealAmount = 1.0
+	#How many seconds until Lich Players heals using Soul Energy, Default: 1
+	#Range: > 0
+	lichHealSeconds = 1
+	#Enable to make Liches 85% more resistant to Magic Attacks, Default: false
+	lichMagicResist = false
+	#If Liches bare-handed attacks inflicts negative effects, Default: true
+	lichTouch = true
+	#If Lich Undead Friendly is set to true, Only undead that have lower than 'lichPowerfulFoesHealth' max health are friendly, Default: true
+	lichPowerfulHostile = true
+	#If 'lichPowerfulHostile' is enabled, the highest max health an Undead mob can be without being hostile, Default: 100.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	lichPowerfulFoesHealth = 100.0
+	#Enable Liches healing using Soul Energy, Default: true
+	lichSoulHeal = true
+	#Wearing Helmet in Sunlight as a Lich periodically damages it, Default: true
+	lichDamageHelmet = true
+	#Whether players lose their lichdom if their Arca is removed, Default: true
+	lichArcaRemove = true
+	#Enable to get infinite Night Vision when being a Lich, Default: true
+	lichNightVision = true
+	#Whether players lose their lichdom if they don't have enough Soul Energy to revive, Default: true
+	lichNoSERemove = true
+
+[General]
+	#Arca will save the Player if past Totem Maximum Soul Count, Default: true
+	arcaUndying = true
+	#Totem of Souls will save the Player if full of Soul Energy and its in Curio Slot, hotbar or off-hand, Default: true
+	totemUndying = true
+	#Move where the equipped Focus is located vertically from its original position (- = Up, + = Down), Default: 0
+	#Range: > -2147483647
+	focusGuiVertical = 0
+	#Gives Players a Totem of Roots when first entering World, Default: false
+	starterTotem = false
+	#Bosses from the Mod has custom Music Playing. Default: true
+	bossMusic = true
+	#Vertical Position of where the Soul Energy Bar is located, Default: -5
+	#Range: > -2147483647
+	soulGuiVertical = -5
+	#Players camera can shake. Default: true
+	cameraShake = true
+	#Horizontal Position of where the Soul Energy Bar is located, Default: 100
+	#Range: > -2147483647
+	soulGuiHorizontal = 100
+	#Show the Soul Energy Bar if Player has Totem of Souls/Arca, Default: true
+	soulGuiShow = true
+	#Gives Players the Black Book when first entering World and Patchouli is loaded, Default: false
+	starterBook = false
+	#Whether Wands and Staffs show cooldown if the focus it's equipped with is, Default: true
+	showWandCooldown = true
+	#Move where the equipped Focus is located horizontally from its original position (- = Left, + = Right), Default: 0
+	#Range: > -2147483647
+	focusGuiHorizontal = 0
+	#Entities part of a Player's Book of Goodwill will not take most damage from said Player rather than just spells, Default: false
+	goodwillNoDamage = false
+	#Show currently equipped focus on Wand/Staff in Gui, Default: true
+	focusGuiShow = true
+	#Show numerical amount of Souls on the Soul Energy Bar, Default: false
+	showNumber = false
+	#Using an item while holding a wand or staff on main/offhand will cause the wand or staff to be put on cooldown to prevent accidental spellcasting, Default: true
+	wandCoolItemUse = true
+	#Gives Players the Witch's Brew when first entering World and Patchouli is loaded, Default: false
+	starterWitchBook = false
+	#Bosses from the Mod has custom looking Boss Bars. Default: true
+	specialBossBar = true
+	#Totem Maximum Soul Count and Threshold to save the Player, Default: 10000
+	#Range: > 10
+	maxSouls = 10000
+	#Arca Maximum Soul Count, Default: 100000
+	#Range: > 10
+	maxArcaSouls = 100000
+	#Allows player movement if Focus/Brew Wheel are open, Default: true
+	wheelGuiMovement = true
+

@@ -33,7 +33,10 @@ ServerEvents.recipes(event => {
       ["create:millstone", "grindstone"],
       ["create:encased_fan", "create:propeller"],
       ["create_power_loader:empty_andesite_chunk_loader", "glowstone"],
-      ["create_mechanical_extruder:mechanical_extruder", "kubejs:fluid_engineering"]
+      ['createaddition:rolling_mill', '#forge:storage_blocks/iron'],
+      ['vintageimprovements:spring_coiling_machine', 'vintageimprovements:spring_coiling_machine_wheel'],
+      ['vintageimprovements:vibrating_table', "kubejs:basic_spring_set"],
+      ['create:sticker', '#forge:slimeballs'],
     ]
     andesiteEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:andesite_engineering", material)
@@ -47,7 +50,9 @@ ServerEvents.recipes(event => {
       ["create_enchantment_industry:printer", "create:sturdy_sheet"],
       ["create_enchantment_industry:disenchanter", "#create:sandpaper"],
       ["create:hose_pulley", "dried_kelp_block"],
-      ["create:portable_fluid_interface", "create:chute"]
+      ["create:portable_fluid_interface", "create:chute"],
+      ["vintageimprovements:vacuum_chamber", "create:mechanical_pump"],
+      ['create:steam_engine', 'create:mechanical_piston'],
     ]
     fluidEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:fluid_engineering", material)
@@ -61,11 +66,15 @@ ServerEvents.recipes(event => {
       ["create:elevator_pulley", "#forge:rope"],
       ["create:content_observer", "observer"],
       ["iammusicplayer:music_manager", "jukebox"],
-      ["create:redstone_link", "redstone_torch"],
+      //["create:redstone_link", "redstone_torch"],
       //["create:mechanical_crafter", "#forge:workbench"],
       ["create:stockpile_switch", "comparator"],
-      ["create:rotation_speed_controller", "create:precision_mechanism"],
-      ["create_power_loader:empty_brass_chunk_loader", "glowstone"]
+      ["create:rotation_speed_controller", "create_connected:control_chip"],
+      ["create_power_loader:empty_brass_chunk_loader", "glowstone"],
+      ['vintageimprovements:belt_grinder', 'vintageimprovements:grinder_belt'],
+      //["protection_pixel:armorloadplatform", "kubejs:advanced_spring_set"],
+      ['create_connected:inventory_access_port', 'create:chute'],
+      ['create_mobile_packages:bee_port', 'create:transmitter'],
     ]
     preciseEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:precise_engineering", material)
@@ -73,9 +82,9 @@ ServerEvents.recipes(event => {
 
     //传感工程块
     const sensoryEngineering = [
-      ['createutilities:void_motor', "create_new_age:advanced_motor"],
+      ['createutilities:void_motor', "createaddition:electric_motor"],
       ['createutilities:void_chest', "ender_chest"],
-      ['createutilities:void_tank', "tfmg:steel_fluid_tank"],
+      ['createutilities:void_tank', "create:fluid_tank"],
       ['createutilities:void_battery', "immersiveengineering:capacitor_mv"],
     ]
     sensoryEngineering.forEach(([output, material]) =>
@@ -84,8 +93,18 @@ ServerEvents.recipes(event => {
 
     //物流工程块
     const logisticalEngineering = [
-      ['storagedrawers:controller', "create:precision_mechanism"],
-      ['storagedrawers:controller_slave', "#forge:plates/brass"]
+      ['storagedrawers:controller', "create_connected:control_chip"],
+      ['storagedrawers:controller_slave', "#forge:plates/brass"],
+      ['create:controls', "lever"],
+      ['create:track_observer', "observer"],
+      ['create:track_station', "compass"],
+      ['create:track_signal', "create:electron_tube"],
+      //['railways:portable_fuel_interface', "create:chute"],
+      //['railways:track_coupler', "#forge:plates/iron"],
+      ['create:chain_conveyor', 'create:large_cogwheel'],
+      ['create:cart_assembler', 'create:gantry_carriage'],
+      ['create:packager', 'create:cardboard_block'],
+      ['create:package_frogport', '#forge:slimeballs'],
     ]
     logisticalEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:logistical_engineering", material)
@@ -93,9 +112,8 @@ ServerEvents.recipes(event => {
 
     //轻型工程块
     const lightEngineering = [
-      ['tfmg:cast_iron_distillation_output', "kubejs:fluid_engineering"],
-      ['tfmg:cast_iron_distillation_controller', "kubejs:precise_engineering"],
-      ['create_new_age:energiser_t1', "minecraft:lightning_rod"]
+      ['createaddition:tesla_coil', "immersiveengineering:coil_mv"],
+      ['vintageimprovements:curving_press', "kubejs:advanced_spring_set"],
     ]
     lightEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "immersiveengineering:light_engineering", material)
@@ -103,6 +121,7 @@ ServerEvents.recipes(event => {
 
     //重型工程块
     const heavyEngineering = [
+      /*
       ['tfmg:surface_scanner', "immersiveengineering:rs_engineering"],
       ['tfmg:machine_input', "kubejs:andesite_engineering"],
       ['tfmg:pumpjack_crank', "immersiveengineering:steel_scaffolding_standard"],
@@ -110,6 +129,10 @@ ServerEvents.recipes(event => {
       ['tfmg:steel_distillation_output', "kubejs:fluid_engineering"],
       ['tfmg:steel_distillation_controller', "kubejs:precise_engineering"],
       ['create_new_age:energiser_t2', "minecraft:lightning_rod"]
+      */
+      ['createdieselgenerators:pumpjack_hole', "kubejs:fluid_engineering"],
+      ['createdieselgenerators:pumpjack_bearing', "create:mechanical_bearing"],
+      ['vintageimprovements:laser', "vintageimprovements:laser_item"]
     ]
     heavyEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "immersiveengineering:heavy_engineering", material)
@@ -117,13 +140,53 @@ ServerEvents.recipes(event => {
 
     //电子工程块
     const electronicEngineering = [
-      ['create_new_age:energiser_t3', "minecraft:lightning_rod"]
+      //['create_new_age:energiser_t3', "minecraft:lightning_rod"]
+      ['createnuclear:reactor_input', "create:portable_storage_interface"],
+      ['createnuclear:reactor_output', "createdieselgenerators:engine_turbocharger"],
+      ['createnuclear:reactor_controller', "create_connected:control_chip"],
     ]
     electronicEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:electronic_engineering", material)
     )
 
+    //反应堆机壳
+    const reactorCasing = [
+      ['createnuclear:reactor_core', "irons_spellbooks:energized_core"],
+      ['createnuclear:reactor_frame', "createnuclear:reinforced_glass"],
+      ['createnuclear:reactor_cooler', "blue_ice"]
+    ]
+    reactorCasing.forEach(([output, material]) =>
+      InteractiveCrafting(output, "createnuclear:reactor_casing", material)
+    )
+
     //一些其它的姑且也放这罢
+    //无线红石
+    event.remove({id: "create:crafting/logistics/redstone_link"})
+    event.shaped(
+      Item.of('create:redstone_link', 4),
+      [
+      ' A ',
+      'ACA',
+      ' A '
+      ],
+      {
+          A: 'create:transmitter',
+          C: 'kubejs:andesite_engineering'
+      }
+    )
+    event.remove({id: "create:crafting/logistics/stock_link"})
+    event.shaped(
+      Item.of('create:stock_link', 4),
+      [
+      ' A ',
+      'ACA',
+      ' A '
+      ],
+      {
+          A: 'create:transmitter',
+          C: 'kubejs:logistical_engineering'
+      }
+    )
     //传动杆
     event.remove({id: "create:crafting/kinetics/shaft"})
     event.shaped(

@@ -11,19 +11,7 @@ ServerEvents.recipes(event => {
     ]).transitionalItem('kubejs:incomplete_music_disc_pluto_nocturnus').loops(4)
 
     //魔法唱片合成
-    event.custom({
-        "type": "bloodmagic:array",
-        "addedinput": {
-            "item": 'bloodmagic:apprenticebloodorb'
-        },
-        "baseinput": {
-            "item": 'botania:lens_normal'
-        },
-        "output": {
-            "item": 'kubejs:music_disc_quam_admirabile_mundi'
-        },
-        "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-    })
+    //"item": 'kubejs:music_disc_quam_admirabile_mundi'
 
     //探险唱片碎片合成
     event.shaped("kubejs:music_disc_yggdrasil_original_mix", [ 

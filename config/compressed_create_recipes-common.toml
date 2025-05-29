@@ -1,0 +1,18 @@
+
+["Compressed Create Recipes Config"]
+	#Capacity of the basin's tanks, in millibuckets. (Default: 1000)
+	#Range: > 1
+	"Basin Capacity" = 1000
+	#Duration of the sandpaper polishing animation in ticks. Lower values mean you polish faster. (Default: 32)
+	#Range: > 1
+	"Sandpaper Speed" = 32
+	#The radius in which items rising from the void will search for an available spot. Low values might get the item stuck under bedrock. High values might cause performance issues. (Default: 20)
+	#Range: 1 ~ 100
+	"Un-Voiding Radius" = 20
+	#A multiplier on the momentum applied to items created from radiant conversion (Default: 1)
+	#Range: 0.0 ~ 50.0
+	"Radiant Momentum Multiplier" = 1.0
+	#The delay in ticks before an item created from radiant conversion can be picked up. Set to 0 to allow instant pickup. Very high values are not recommended. (Default: 10)
+	#Range: > 0
+	"Radiant Pickup Delay" = 10
+

@@ -1,0 +1,618 @@
+{
+    "type": "minecraft:fishing",
+    "pools": [
+      {
+        "rolls": 1,
+        "bonus_rolls": 0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bone",
+            "weight": 14,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 3,
+                  "max": 8
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:flint",
+            "weight": 8,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 5,
+                  "max": 8
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:netherrack",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 16,
+                  "max": 32
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nether_bricks",
+            "weight": 8,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 9,
+                  "max": 30
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:warped_stem",
+            "weight": 9,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 16,
+                  "max": 32
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:redstone",
+            "weight": 9,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 4
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:gold_nugget",
+            "weight": 9,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 4
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:soul_sand",
+            "weight": 7,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:raw_gold",
+            "weight": 7,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 6
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_boots",
+            "weight": 4,
+            "functions": [
+              {
+                "function": "minecraft:enchant_randomly",
+                "enchantments": [
+                  "minecraft:fire_protection",
+                  "minecraft:protection",
+                  "minecraft:unbreaking"
+                ]
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:fire_charge",
+            "weight": 4,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:magma_cream",
+            "weight": 4,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nether_brick",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 3,
+                  "max": 8
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:arrow",
+            "weight": 7,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 5,
+                  "max": 21
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:spectral_arrow",
+            "weight": 6,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 5,
+                  "max": 8
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:gold_ingot",
+            "weight": 5,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:quartz",
+            "weight": 7,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 8
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:name_tag",
+            "weight": 2,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:experience_bottle",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 5
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:ender_pearl",
+            "weight": 1
+          },
+          {
+            "type": "stardew_fishing:optional",
+            "name": "netherdepthsupgrade:fortress_grouper_plate",
+            "weight": 2,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 4
+                }
+              }
+            ]
+          },
+          {
+            "type": "stardew_fishing:optional",
+            "name": "netherdepthsupgrade:lava_glass",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 2,
+                  "max": 7
+                }
+              }
+            ]
+          },
+          {
+            "type": "stardew_fishing:optional",
+            "name": "netherdepthsupgrade:soul_sucker_leather",
+            "weight": 3,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 4
+                }
+              }
+            ]
+          },
+          {
+            "type": "stardew_fishing:optional",
+            "name": "netherdepthsupgrade:eyeball",
+            "weight": 4,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 4
+                }
+              }
+            ]
+          },
+          {
+            "type": "stardew_fishing:optional",
+            "name": "aquaculture:box",
+            "weight": 7,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:experience_bottle",
+            "weight": 30,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 5,
+                  "max": 18
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:amethyst_shard",
+            "weight": 25,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 3,
+                  "max": 16
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:gold_ingot",
+            "weight": 25,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 5,
+                  "max": 18
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:group",
+            "children": [
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:music_disc_11",
+                "weight": 1
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:music_disc_13",
+                "weight": 2
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:music_disc_blocks",
+                "weight": 1
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:music_disc_cat",
+                "weight": 2
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:music_disc_chirp",
+                "weight": 1
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:music_disc_far",
+                "weight": 1
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:music_disc_mall",
+                "weight": 1
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:music_disc_mellohi",
+                "weight": 1
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:music_disc_otherside",
+                "weight": 1
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:music_disc_stal",
+                "weight": 1
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:music_disc_strad",
+                "weight": 1
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:music_disc_wait",
+                "weight": 1
+              },
+              {
+                "type": "minecraft:item",
+                "name": "minecraft:music_disc_ward",
+                "weight": 1
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond",
+            "weight": 20,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 3
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_apple",
+            "weight": 18,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 2
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:trident",
+            "weight": 5
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:rib_armor_trim_smithing_template",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nether_wart",
+            "weight": 8,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 12
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond_horse_armor",
+            "weight": 12
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:wither_skeleton_skull",
+            "weight": 2
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bell",
+            "weight": 9
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:skeleton_skull",
+            "weight": 5
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:enchanted_golden_apple",
+            "weight": 4
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:netherite_scrap",
+            "weight": 1
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:lava_bucket",
+            "weight": 6
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_carrot",
+            "weight": 4,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 4,
+                  "max": 19
+                }
+              }
+            ]
+          },
+          {
+            "type": "stardew_fishing:optional",
+            "name": "aquaculture:neptunium_nugget",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 1,
+                  "max": 9
+                }
+              }
+            ]
+          },
+          {
+            "type": "stardew_fishing:optional",
+            "name": "aquaculture:treasure_chest",
+            "weight": 4
+          },
+          {
+            "type": "stardew_fishing:optional",
+            "name": "supplementaries:antique_ink",
+            "weight": 7
+          },
+          {
+            "type": "stardew_fishing:optional",
+            "name": "supplementaries:bomb_blue",
+            "weight": 6
+          },
+          {
+            "type": "stardew_fishing:optional",
+            "name": "quark:diamond_heart",
+            "weight": 3
+          },
+          {
+            "type": "stardew_fishing:optional",
+            "name": "quark:smithing_template_rune",
+            "weight": 6
+          },
+          {
+            "type": "minecraft:item",
+            "weight": 20,
+            "quality":40,
+            "name": "minecraft:book",
+            "functions": [
+              {
+                "function": "minecraft:enchant_randomly",
+                "treasure": true
+              }
+            ]
+         }
+        ]
+      }
+    ]
+  }
+  

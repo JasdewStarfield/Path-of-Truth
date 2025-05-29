@@ -1,0 +1,8 @@
+#.
+#Place a light source block to light up the area.
+enableLightBlock = false
+#.
+#Blocks with light emission value greater than this value will be considered as a light source. If a block's light emission value is less than this value, no light block will be placed.
+#Range: 0 ~ 15
+lightBlockEmissionLowerLimit = 1
+

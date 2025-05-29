@@ -20,13 +20,26 @@ ItemEvents.tooltip(e => {
         e.add([id], [Text.red({translate:'item.kubejs.diamond_gears.desc'})])
     )
 
-    e.add(["kubejs:filled_casting_mold_small"], [Text.yellow({translate:'item.kubejs.filled_casting_mold_small.desc'})])
-    e.add(["kubejs:filled_casting_mold_large"], [Text.yellow({translate:'item.kubejs.filled_casting_mold_large.desc'})])
+    // e.add(["scguns:gun_bench"], [Text.yellow({translate:'item.scguns.gun_bench.desc'})])
+    e.add(["kubejs:potion_of_void"], [Text.blue({translate:'item.kubejs.potion_of_void.desc'})])
+    e.add(["kubejs:potion_of_talent"], [Text.blue({translate:'item.kubejs.potion_of_talent.desc'})])
+    e.add(["kubejs:potion_of_balance"], [Text.blue({translate:'item.kubejs.potion_of_balance.desc'})])
+
+    e.add(["kubejs:max_magic_ring"], [Text.gold({translate:'item.kubejs.max_magic_ring.desc'})])
+
+    e.add(["kubejs:code_destruction"], [Text.red({translate:'item.kubejs.code_destruction.desc'})])
+    e.add(["kubejs:code_formation"], [Text.red({translate:'item.kubejs.code_formation.desc'})])
+    e.add(["kubejs:code_perfection"], [Text.red({translate:'item.kubejs.code_perfection.desc'})])
+
+    e.add(["kubejs:arcane_charger"], [Text.green({translate:'item.kubejs.arcane_charger.desc'})])
+    e.add(["kubejs:soul_furnace"], [Text.green({translate:'item.kubejs.soul_furnace.desc'})])
+    e.add(["kubejs:divine_shield_system"], [Text.green({translate:'item.kubejs.divine_shield_system.desc'})])
 
     e.add(["kubejs:broken_snowcap_oven"], [Text.yellow({translate:'item.kubejs.broken_snowcap_oven.desc'})])
 
-    e.add(["tfmg:asphalt"], [Text.yellow({translate:'item.kubejs.asphalt.desc'})])
-    e.add(["tfmg:liquid_asphalt_bucket"], [Text.yellow({translate:'item.kubejs.asphalt.desc'})])
+    e.add(["kubejs:steel_ingot_with_mold"], [Text.yellow({translate:'item.kubejs.steel_ingot_with_mold.desc'})])
+
+    e.add(["eclipticseasons:calendar"], [Text.aqua({translate:'item.eclipticseasons.calendar.desc'})])
 
     e.add(["minecraft:amethyst_shard"], [Text.aqua({translate:'item.kubejs.amethyst_shard.desc'})])
     e.add(["minecraft:echo_shard"], [Text.aqua({translate:'item.kubejs.echo_shard.desc'})])

@@ -1,0 +1,8 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{"item":"farmersrespite:coffee_beans"},
+    "render":{"type":"generic","block":"farmersrespite:coffee_bush"},
+    "results":[{"count":1,"item":"farmersrespite:coffee_beans"}],
+    "soil":{"item":"minecraft:basalt"},
+    "time":800
+}

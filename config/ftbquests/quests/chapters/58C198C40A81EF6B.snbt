@@ -11,6 +11,7 @@
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/start.png"
+			order: 2
 			rotation: 0.0d
 			width: 1.3285714285714287d
 			x: 0.0d
@@ -19,10 +20,11 @@
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
+			order: 1
 			rotation: 0.0d
 			width: 1.1149863760217984d
 			x: 0.0d
-			y: 3.3d
+			y: 4.0d
 		}
 		{
 			height: 2.0d
@@ -32,6 +34,14 @@
 			x: 0.0d
 			y: -2.5d
 		}
+		{
+			height: 3.0d
+			image: "bosses_of_mass_destruction:textures/particle/magic_circle_18.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: 3.0d
+		}
 	]
 	order_index: 1
 	quest_links: [ ]
@@ -39,11 +49,16 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"你的魔法之路要从路边箱子里的一些泛着蓝紫色光芒的垃圾开始……"
-				"请注意收集它们，这是奥术的基石。"
-				"至于奖励，你可以理解为新手福利，但你能抽到什么就要看脸了）"
+				"你的魔法之路要从路边箱子里的一些泛着蓝紫色光芒的物质开始……"
+				"请注意收集它们，这是&9奥术的基石&r。"
+				"至于奖励，你可以理解为受到奥术感召而产生的新手福利。&b这里甚至能获取相当强大的魔法力量……&r）"
+				"后续魔法任务线中，主线内容将&l&a使用非圆形图标&r&r以便于识别。"
 				""
 				"&o&9*在法师塔的箱子中可以轻松获取这些源质，村庄的牧师和制图师结构宝箱与废弃地狱门的箱子中也会有。当然，你也可以夜间去和亡灵术士对决来获取掉落物……&r&r"
+				"{@pagebreak}"
+				"魔法侧的特征是&a需求个体的力量与“人”的参与操作&r，相应的&c相当一部分产物是不能自动化的&r，但&9可以通过炼金术复刻或手动批量生产&r。"
+				"同时，魔法侧任务并不会如同工业侧那样&6把每一环都详细展现&r，你需要通过JEI查看一部分物品的合成需求。"
+				"不同于&7工业的规整与机械化&r，魔法要求&d活跃的思维与灵魂&r。"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
@@ -63,9 +78,9 @@
 					type: "random"
 				}
 			]
-			shape: "octagon"
-			size: 1.2d
-			subtitle: "有的时候你需要看看大自然的馈赠"
+			shape: "square"
+			size: 1.6d
+			subtitle: "受到奥术感召"
 			tasks: [{
 				id: "6E5FCD00F7C67EA4"
 				item: "irons_spellbooks:arcane_essence"
@@ -211,8 +226,6 @@
 			description: [
 				"你会发现活石可以催化一些工业的原料。"
 				"至于活木，它是很好的魔力载体。"
-				""
-				"在你获得烈焰人燃烧室之后，你也可以使用搅拌来强行生产活木和活石……代价就是白雏菊有微小的概率因为这种粗暴的行为而毁坏。当然，这是后话了。"
 			]
 			icon: "botania:pure_daisy"
 			id: "735172F79325756F"
@@ -221,6 +234,7 @@
 				item: "kubejs:raw_andesite_alloy"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "在纯洁的白雏菊帮助下……"
 			tasks: [
 				{
@@ -251,7 +265,7 @@
 				item: "botania:rune_mana"
 				type: "item"
 			}]
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "拉出去祭天！"
 			tasks: [{
 				id: "626B38A8103DFA61"
@@ -301,7 +315,7 @@
 				}
 				type: "item"
 			}]
-			shape: "rsquare"
+			shape: "circle"
 			subtitle: "这意味着你穿上后可以出去浪了"
 			tasks: [
 				{
@@ -391,9 +405,11 @@
 			dependencies: ["788F3EC85AC1172E"]
 			description: [
 				"现在你需要一点火力……来帮助你产出魔力。"
-				"你会发现，基本所有初级产能花的配方都变成了花瓣+奥术源质+金属核心的配方。"
+				"你会发现，基本所有初级产能花的配方都变成了&b花瓣+奥术源质+金属核心&r的配方。"
 				"很合理的催化过程，不是吗？而且你需要的花瓣也变少了（乐"
-				"如果你拿不到金属核心，这说明你需要发展你的工业体系了。"
+				"如果你拿不到金属核心，这说明你需要&6发展你的工业体系&r了。"
+				""
+				"&o&a*黑莲花可以用花瓣合成来临时产魔，但同样后续用于暗黑莲花（不再能探索/战斗获取）的催化，请勿浪费。&r&r"
 			]
 			icon: "botania:creative_pool"
 			id: "71D2AC46FA223631"
@@ -402,6 +418,7 @@
 				item: "botania:obedience_stick"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "容纳能源的池子就是电池（确信"
 			tasks: [
 				{
@@ -431,40 +448,77 @@
 			]
 			description: [
 				"&b【完成后解锁主线章节：2M 鲜血与灵魂】&r"
-				"你已经初步了解了魔法的力量，那么，做一个血之祭坛出来吧。"
-				"我们的魔法故事将进入新的篇章，你也将感受到鲜血和灵魂的力量。"
+				"你已经初步了解了魔法的力量，那么，准备一个收集灵魂的图腾吧。"
+				"我们的魔法故事将进入新的篇章，你也将感受到属于灵魂的力量。"
+				"也许应该把它&9安装在你的护符槽位&r，然后&b去收割一些灵魂……&r"
 				""
-				"&o&c新篇章：指献祭一本书来做祭坛&r&r"
+				"&o&c新篇章：指献祭一本书来做图腾&r&r"
 			]
 			icon_scale: 1.2d
 			id: "708CC78EEB470115"
-			rewards: [
-				{
-					id: "5543440A93455087"
-					item: {
-						Count: 1
-						id: "bloodmagic:sacrificialdagger"
-						tag: { }
+			rewards: [{
+				id: "596B4FB483640300"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "goety:black_book"
 					}
-					type: "item"
 				}
-				{
-					id: "1D0F630C6D896177"
-					item: "bloodmagic:daggerofsacrifice"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			shape: "pentagon"
 			size: 2.0d
 			subtitle: "你，准备好了吗？"
 			tasks: [{
-				id: "3539EB568810683D"
-				item: "bloodmagic:altar"
+				id: "433D20074EBE5A6E"
+				item: {
+					Count: 1
+					id: "goety:totem_of_roots"
+					tag: {
+						"Max Souls": 100
+						Souls: 0
+					}
+				}
 				type: "item"
 			}]
-			title: "【终点】牺牲与献祭"
+			title: "【终点】灵魂的根源"
 			x: 0.0d
-			y: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["374C430D0AD70D2E"]
+			description: [
+				"在世界上游荡的不仅仅是你，还有一些魔法道路上的同行者。"
+				"有时，你会在特定的群系发现一些圆滚滚的小东西，但是&9穿着法师的衣服&r。用&5奥术源质&r可以驯服它们，然后你就拥有了可以施法的魔宠！"
+				"不同系别的魔宠需要不同的材料来治愈，但施法治疗应该更快。"
+				"你可以&9用魔盒&r装起来你的一部分魔宠，也可以&d用饰品绑定&r后快捷键召唤和收回它们。"
+				""
+				"据说&a给自己的德鲁伊一瓶剧毒试剂&r，&e用治愈之环净化还没驯服的死灵魔宠&r，或者&3在野生魔宠的附近用竖琴施放音乐魔法&r，能够产生一些奇妙的变化……"
+			]
+			icon: "goety:crystal_ball"
+			id: "03965CF8706E3031"
+			rewards: [
+				{
+					id: "535B9B37A47C834C"
+					item: "alshanex_familiars:pandora_box"
+					type: "item"
+				}
+				{
+					id: "17F7E67EFBE64B88"
+					item: "alshanex_familiars:pet_bed"
+					type: "item"
+				}
+			]
+			subtitle: "没有红白球怎么办？"
+			tasks: [{
+				id: "7EB1CE9597E9903B"
+				title: "就决定是你了！"
+				type: "checkmark"
+			}]
+			title: "魔法道路上的伙伴"
+			x: 0.0d
+			y: 1.5d
 		}
 	]
 	subtitle: ["Primal Shaman"]

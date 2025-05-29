@@ -1,0 +1,16 @@
+{
+    "villagercomfort.ext.error.invalid": "%s并非村民",
+    "villagercomfort.ext.error.missing_cap": "村民缺失ForgeCap",
+    "villagercomfort.ext.header": "村民%s的舒适度：",
+    "villagercomfort.ext.target.BEDROOM_SIZE": "卧室尺寸",
+    "villagercomfort.ext.target.BED_COUNT": "床铺拥挤度",
+    "villagercomfort.ext.target.BEDROOM_LIGHT": "卧室照明",
+    "villagercomfort.ext.target.WORKSTATION_IN_BEDROOM": "不许居家办公",
+    "villagercomfort.ext.target.WORKPLACE_SIZE": "工作环境尺寸",
+    "villagercomfort.ext.target.WORKSTATION_COUNT": "工作站拥挤度",
+    "villagercomfort.ext.target.WORKPLACE_LIGHT": "工作环境照明",
+    "villagercomfort.ext.target.WORK_DISTANCE": "上班路程",
+    "villagercomfort.ext.target.DAYS_OUTSIDE": "外出天数",
+    "villagercomfort.ext.target.DAYS_WITHOUT_ZOMBIE": "无威胁天数",
+    "villagercomfort.ext.summary": "总舒适度：%s"
+}

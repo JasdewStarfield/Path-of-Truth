@@ -5,8 +5,9 @@
     "ores":[
         {"chance":0.1,"output":{"item":"undergarden:depthrock_diamond_ore"}},
         {"chance":0.1,"output":{"item":"undergarden:shiverstone_diamond_ore"}},
-        {"chance":0.4,"output":{"item":"undergarden:depthrock_regalium_ore"}},
-        {"chance":0.4,"output":{"item":"undergarden:shiverstone_regalium_ore"}}
+        {"chance":0.1,"output":{"item":"goety:jade"}},
+        {"chance":0.35,"output":{"item":"undergarden:depthrock_regalium_ore"}},
+        {"chance":0.35,"output":{"item":"undergarden:shiverstone_regalium_ore"}}
     ],
     "spoils":[
         {"chance":0.7,"output":{"item":"undergarden:depthrock"}},

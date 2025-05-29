@@ -40,6 +40,7 @@
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["不管干什么，你总归需要从工作台开始的，对吧）"]
 			hide_until_deps_complete: true
+			icon: "minecraft:oak_log"
 			id: "46156FBBDCAB4B1D"
 			rewards: [{
 				id: "68889BA4397825CC"
@@ -77,16 +78,13 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"2F791EC2607066B4"
-				"50BB17FEED3B10D2"
-			]
+			dependencies: ["2F791EC2607066B4"]
 			description: [
 				"恭喜你初步摆脱了原始人阶段！"
 				""
 				"&c&l重要提示&r&r&4：水车和风车的运作机制有改动。水车现在需要放在河流类群系（包括冻河！）中才能达到最大运作效率，而且需要附近有足量的流体方块（不需要流动水了）；风车则也需要在开阔的环境才能运作（较高的地方以及海洋一类的特定群系效率较高）。做好你的工业选址！&r"
 				""
-				"翻到下一页查看水车摆放的具体示例。"
+				"&6通过岩浆转动水车要求一致。&r翻到下一页查看水车摆放的具体示例。"
 				""
 				"{@pagebreak}"
 				"{image:kubejs:textures/waterwheel.png width:210 height:120 align:1}"
@@ -118,6 +116,7 @@
 		}
 		{
 			dependencies: ["46156FBBDCAB4B1D"]
+			description: ["同时，你也可以制作较为简易的铜质枪械了！"]
 			id: "3C34EE3C3BAB33EC"
 			subtitle: "铜，一种很好得到也很容易冶炼的东西"
 			tasks: [{
@@ -154,10 +153,14 @@
 			dependencies: ["7A6ADC4EE6686110"]
 			description: [
 				"你的齿轮和杠杆也在转，不是吗？"
+				"齿轮现在需要活木制作了，毕竟只有活着的木头才能抵消机器运转的磨损。"
 				""
 				"值得一提的是，利用手搓的方式产出的传动杆的数量降低了。然而，等到你获取铁之后，就可以使用动力锯改变这种粗放的生产方式了。"
+				"{@pagebreak}"
+				"很好，看来你意识到了还有第二页（）"
+				"这是一个小小的提示：如果你需要改变齿轮的转速，考虑将大小齿轮啮合！但请注意，机器转速翻倍的同时，应力消耗也会翻倍，反之亦然。"
 			]
-			hide_until_deps_complete: true
+			icon: "create:large_cogwheel"
 			id: "2F791EC2607066B4"
 			subtitle: "地球在转。"
 			tasks: [
@@ -201,7 +204,7 @@
 		{
 			dependencies: ["3C34EE3C3BAB33EC"]
 			description: [
-				"这个整合包有&4&l四个&r&r高炉！！！"
+				"这个整合包有&4&l三个&r&r高炉！！！"
 				"这是第一个，我们姑且称之为原版高炉。"
 			]
 			id: "05545789C11E97FE"
@@ -223,7 +226,6 @@
 				"&a如果你不知道怎么制作活石，请看魔法章节（原始萨满）！&r"
 				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"735172F79325756F\" } }"
 			]
-			hide_until_deps_complete: true
 			id: "489BC5567AF09228"
 			subtitle: "是的，这个世界不只需要科技"
 			tasks: [{
@@ -314,6 +316,7 @@
 				"通过工业手段，你可以在工作盆里批量混合和组装物品。"
 				"这也是工业优于魔法的一点（确信"
 			]
+			icon: "create:mechanical_mixer"
 			id: "29B3F884515FC9DB"
 			subtitle: "加一点毒蘑菇，再加一个旧鞋跟……"
 			tasks: [
@@ -351,6 +354,8 @@
 		}
 		{
 			dependencies: ["4252F0F8AD1C5A60"]
+			description: ["为什么还要加硫？"]
+			icon: "kubejs:bronze_dust"
 			id: "69864E61F37B2AA3"
 			subtitle: "铜和锡，三比一"
 			tasks: [
@@ -362,6 +367,11 @@
 				{
 					id: "7D32C7D35BBDC475"
 					item: "kubejs:tin_dust"
+					type: "item"
+				}
+				{
+					id: "5818EF5E56A9363C"
+					item: "scguns:sulfur_dust"
 					type: "item"
 				}
 			]
@@ -431,6 +441,13 @@
 		}
 		{
 			dependencies: ["3BECB3D53E17F80B"]
+			icon: {
+				Count: 1
+				id: "kubejs:bronze_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "40E4071636BA7BB1"
 			rewards: [{
 				count: 8
@@ -523,8 +540,6 @@
 				"你会惊讶的发现，在这个包里，炼铁需要更高的技术力）"
 				"所以你需要从青铜时代开始——并构建自己的高炉来解决铁的问题。"
 				""
-				"&c*注：烧制青铜用的是原版高炉，炼铁用的是沉浸工程的高炉，炼钢用的是机械动力:工业长路的高炉，&l请不要搞混了！&r&r"
-				""
 				"对于没有铁请不要着急，我们允许从冒险中获取铁质盔甲和工具并直接使用，如果真的着急请看下一页。"
 				"{@pagebreak}"
 				"首先，青铜工具是和铁同一等级的，而且没那么难获得，你通过机械动力的石磨就可以磨铜粉和锌粉。"
@@ -559,13 +574,9 @@
 		}
 		{
 			dependencies: ["7A6ADC4EE6686110"]
-			description: [
-				"现在你不能通过把安山合金按到原木上来创建机壳了：你需要在活木上进行加工才可以。"
-				"是的，你首先需要用魔法活化木头，然后它们才能在加工台上被你压成机壳。"
-			]
-			hide_until_deps_complete: true
+			description: ["对去皮原木使用安山合金！"]
 			id: "50BB17FEED3B10D2"
-			subtitle: "什么，这不科学！"
+			subtitle: "只是壳子"
 			tasks: [{
 				id: "627EF45054EFDE2B"
 				item: "create:andesite_casing"
@@ -576,7 +587,10 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["50BB17FEED3B10D2"]
+			dependencies: [
+				"50BB17FEED3B10D2"
+				"2F791EC2607066B4"
+			]
 			description: [
 				"这是安山系列机械的核心组件。"
 				"多 多 益 善）"
@@ -597,6 +611,7 @@
 		{
 			dependencies: ["27E166AF7BA5BDB1"]
 			description: ["你怎么能忍住不用的？"]
+			icon: "create:goggles"
 			id: "63B4B5472513A83F"
 			rewards: [{
 				id: "53D1AE7DFA54E8AE"
@@ -695,7 +710,13 @@
 				""
 				"&l&c比如说，你即将用来炼铁的高炉和用来生产焦煤的焦炉。&r&r"
 			]
-			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "immersiveengineering:hammer"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "336807D048A4EF6A"
 			subtitle: "80！80！"
 			tasks: [
@@ -738,8 +759,8 @@
 					type: "item"
 				}
 				{
-					id: "559144140D12B35D"
-					item: "tfmg:coal_coke_dust"
+					id: "03EF66F09D5177E6"
+					item: "immersiveengineering:dust_coke"
 					type: "item"
 				}
 			]
@@ -772,6 +793,7 @@
 		{
 			dependencies: ["6D46668D63E83ED7"]
 			description: ["使用垃圾桶来批量销毁物品和流体。"]
+			icon: "trashcans:item_trash_can"
 			id: "1A5534E853393823"
 			rewards: [{
 				id: "4C489927ADE219CB"
@@ -826,6 +848,29 @@
 			title: "关于工程块……"
 			x: -3.0d
 			y: 10.0d
+		}
+		{
+			dependencies: ["46156FBBDCAB4B1D"]
+			description: ["&a【完成后解锁附加章节：军械师生涯】&r"]
+			icon: {
+				Count: 1
+				id: "scguns:flintlock_pistol"
+				tag: {
+					AmmoCount: 1
+					Damage: 0
+				}
+			}
+			id: "4BED26108E90A0CC"
+			shape: "diamond"
+			subtitle: "这玩意可比魔杖好用多了，罗恩"
+			tasks: [{
+				id: "373CA25FF3071BD5"
+				item: "scguns:gun_bench"
+				type: "item"
+			}]
+			title: "时代变了！"
+			x: 1.5d
+			y: -2.5d
 		}
 	]
 	subtitle: ["Age of Bronze"]

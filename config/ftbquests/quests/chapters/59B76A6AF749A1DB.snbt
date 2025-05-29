@@ -13,15 +13,15 @@
 			image: "kubejs:textures/quests/start.png"
 			rotation: 0.0d
 			width: 1.3285714285714287d
-			x: -6.5d
-			y: -1.0d
+			x: -10.0d
+			y: -1.5d
 		}
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 14.0d
+			x: 13.5d
 			y: 0.0d
 		}
 		{
@@ -29,7 +29,15 @@
 			image: "kubejs:textures/quests/i4.png"
 			rotation: 0.0d
 			width: 12.853503184713375d
-			x: -6.5d
+			x: -10.0d
+			y: 4.5d
+		}
+		{
+			height: 4.0d
+			image: "immersiveengineering:item/tool_hammer"
+			rotation: 45.0d
+			width: 4.0d
+			x: 1.0d
 			y: 4.0d
 		}
 	]
@@ -38,7 +46,11 @@
 	quests: [
 		{
 			dependencies: ["504E6502A789DABF"]
-			description: ["所以你现在不得不依赖巨大的动力发电装置）"]
+			description: [
+				"所以你现在不得不依赖一整套合理的的动力发电装置）"
+				"尽管存在更高档的发电方法，但目前你能依靠的确实只有应力。"
+				"至少齿轮不会背叛你……虽然会应力过载。"
+			]
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:lightning_bottle"
 			id: "01534DC5812DBA15"
@@ -56,7 +68,7 @@
 				type: "checkmark"
 			}]
 			title: "【起点】电力驱动！"
-			x: -6.5d
+			x: -10.0d
 			y: 0.0d
 		}
 		{
@@ -65,6 +77,7 @@
 				"但你至少有电了，不是吗？"
 				"准备好搞一些巨大的机器和产线吧）"
 			]
+			icon: "immersiveengineering:wirecoil_copper"
 			id: "56F7012826597C35"
 			shape: "diamond"
 			subtitle: "这应该是你目前唯一能做出来的电力系统"
@@ -91,7 +104,7 @@
 				}
 			]
 			title: "低压电力系统"
-			x: -8.5d
+			x: -12.0d
 			y: 0.0d
 		}
 		{
@@ -152,8 +165,8 @@
 				}
 			]
 			title: "组装发酵机"
-			x: -2.0d
-			y: -2.5d
+			x: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
@@ -219,64 +232,64 @@
 				}
 			]
 			title: "组装挤压机"
-			x: -2.0d
-			y: 2.5d
+			x: -4.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["1E0E5E47E1264279"]
+			dependencies: ["19EA7F4C42FCA4BA"]
 			description: ["琥珀金是一种在电力系统上应用颇多的金属"]
-			hide_until_deps_complete: true
-			icon: "immersiveengineering:ingot_electrum"
+			icon: "oreganized:electrum_ingot"
 			id: "3D6CCF4A93478320"
 			rewards: [{
-				id: "71A2780A7585490D"
-				item: "supplementaries:gold_door"
+				id: "6DF766C70AE45772"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "oreganized:electrum_shield"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "琥珀金也是金）"
-			tasks: [
-				{
-					id: "3A4BE85609E8FB9D"
-					item: "kubejs:gold_silver_mix"
-					type: "item"
-				}
-				{
-					id: "27B781704345D1FD"
-					item: "immersiveengineering:ingot_electrum"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "577C8A58E5098FF8"
+				item: "oreganized:electrum_ingot"
+				type: "item"
+			}]
 			title: "金色传说！"
-			x: 3.0d
-			y: 4.0d
+			x: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1E0E5E47E1264279"]
 			description: [
-				"从物理上你无法点燃它）"
-				"但是是燃料必需品）"
-				"注：你同样可以通过魔法手段获得，但魔法手段显然无法量产）"
+				"很可惜不行。"
+				"一种低级油脂，仍需进一步加工以获得工业价值。"
 			]
 			icon: "immersiveengineering:plantoil_bucket"
 			id: "1404B54F1747DE16"
-			rewards: [{
-				id: "5676B9596046ACB9"
-				item: "bloodmagic:plantoil"
-				type: "item"
-			}]
 			subtitle: "能拿来炒菜吗？"
 			tasks: [{
-				id: "1C087B5F221D57DF"
-				title: "植物油"
-				type: "checkmark"
+				id: "03CB465C1B13E40F"
+				item: "immersiveengineering:plantoil_bucket"
+				type: "item"
 			}]
-			x: 0.0d
-			y: 1.5d
+			x: 2.0d
+			y: 1.0d
 		}
 		{
-			dependencies: ["11F2CDF608EA11DA"]
+			dependencies: [
+				"11F2CDF608EA11DA"
+				"02D2280F57251219"
+			]
 			description: ["“对，说你呢，罗蒙诺索夫同志！这玩意不是给你喝的！这不是伏特加！”"]
 			icon: "immersiveengineering:ethanol_bucket"
 			id: "48A3FEF7D02104E5"
@@ -287,13 +300,13 @@
 			}]
 			subtitle: "禁止酗酒"
 			tasks: [{
-				id: "55EDC4FAFB6E8875"
-				title: "乙醇"
-				type: "checkmark"
+				id: "00E39AA616DC82DF"
+				item: "immersiveengineering:ethanol_bucket"
+				type: "item"
 			}]
 			title: "工业酒精"
-			x: 0.0d
-			y: -1.5d
+			x: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
@@ -350,13 +363,13 @@
 				}
 			]
 			title: "组装炼油厂"
-			x: -0.5d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
 			description: ["金-银合金是良好的导体材料，所以你现在可以制作更高级的电力系统了）"]
-			hide_until_deps_complete: true
+			icon: "immersiveengineering:wirecoil_electrum"
 			id: "1997BD2CF61ACBA8"
 			shape: "diamond"
 			subtitle: "琥珀金的光芒"
@@ -383,8 +396,8 @@
 				}
 			]
 			title: "中压电力系统"
-			x: 1.5d
-			y: 5.5d
+			x: 6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -392,10 +405,13 @@
 				"3B29D716A3D5AAF0"
 				"3E60B78B0EE34B75"
 			]
-			description: ["你已经开始接近现代工业水准了，柴油发电领先时代！"]
-			hide_until_deps_complete: true
+			description: [
+				"一台发电巨兽，拥有4096Fe/t的巨大发电量——前提是你供得上它的胃口。"
+				"你已经开始接近现代工业水准了，柴油发电领先时代！"
+			]
 			icon: "immersiveengineering:diesel_generator"
 			id: "76EF99C068AA2361"
+			shape: "diamond"
 			subtitle: "来劲了，朋友"
 			tasks: [
 				{
@@ -446,8 +462,8 @@
 				}
 			]
 			title: "组装柴油发电机"
-			x: 3.0d
-			y: 2.0d
+			x: 4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -466,8 +482,7 @@
 				item: "farmersdelight:wild_potatoes"
 				type: "item"
 			}]
-			shape: "gear"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "获得高效燃料"
 			tasks: [
 				{
@@ -481,7 +496,7 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
@@ -508,11 +523,11 @@
 				id: "3428E89B02D0D20C"
 				max_input: 1000L
 				type: "forge_energy"
-				value: 114514L
+				value: 1145140L
 			}]
 			title: "证明你的能量霸权！"
-			x: 1.5d
-			y: 2.0d
+			x: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -523,9 +538,8 @@
 				"最强电动炉子，几乎全额的分解，最强的动力，以及——通往铝锭的通行证。"
 				"提醒一下，这个炉子也是个电老虎，工作时还请留意你的电力储备……"
 				""
-				"&o还能让你的安山合金增产（&r"
+				"&o&7还能让你的安山合金增产（&r&r"
 			]
-			hide_until_deps_complete: true
 			icon: "immersiveengineering:arc_furnace"
 			id: "583407C7537AE9C9"
 			subtitle: "全游戏最强炉子"
@@ -579,7 +593,7 @@
 				{
 					count: 6L
 					id: "6ADB0D5CF731E92A"
-					item: "tfmg:steel_block"
+					item: "immersiveengineering:storage_steel"
 					type: "item"
 				}
 				{
@@ -595,23 +609,20 @@
 				}
 			]
 			title: "组装电弧炉"
-			x: 3.0d
-			y: -2.0d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"583407C7537AE9C9"
 				"66E52E485A1A4139"
-				"585C0F11261551FD"
+				"68A8BCB8BCBC8C1B"
 			]
 			description: [
 				"首先经过一些工序将铝土矿加工为氧化铝，然后利用电弧炉电解，你终于获得了这一珍贵的金属）"
 				"现在，你可以利用它的优良性能来解决更多工业方面的问题了）"
-				""
-				"你问我铝土矿在哪找？兄弟，铝可是储量最大的金属之一，如果到了这一阶段你还完全没见过满地的铝土矿，那我得怀疑一下你是不是认真在玩了……"
 			]
-			hide_until_deps_complete: true
-			icon: "tfmg:aluminum_ingot"
+			icon: "immersiveengineering:ingot_aluminum"
 			id: "2BE7BA0BE9F2DBC9"
 			rewards: [{
 				id: "274597A581C787E4"
@@ -621,37 +632,21 @@
 			shape: "gear"
 			size: 2.0d
 			subtitle: "电解，嗯"
-			tasks: [
-				{
-					id: "70186FD6D7DB9684"
-					item: "tfmg:bauxite"
-					type: "item"
-				}
-				{
-					id: "6E090919BA7349F7"
-					item: "create:crushed_raw_aluminum"
-					type: "item"
-				}
-				{
-					id: "1C5AD55FCFAA1395"
-					item: "tfmg:aluminum_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1C5AD55FCFAA1395"
+				item: "immersiveengineering:ingot_aluminum"
+				type: "item"
+			}]
 			title: "工业明珠"
-			x: 3.0d
-			y: -4.0d
+			x: 4.0d
+			y: -6.0d
 		}
 		{
-			dependencies: [
-				"1E0E5E47E1264279"
-				"3B29D716A3D5AAF0"
-			]
+			dependencies: ["1E0E5E47E1264279"]
 			description: [
 				"其实就是压制后的碳粉（？"
-				"唯一的作用就是烧制石墨锭）"
+				"主要作用是烧制石墨锭……但也可以拿来调和一些比较危险的东西）"
 			]
-			hide_until_deps_complete: true
 			id: "48E0B5D1F9972D20"
 			subtitle: "名字好长"
 			tasks: [{
@@ -659,14 +654,11 @@
 				item: "immersiveengineering:dust_hop_graphite"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.0d
+			x: -4.0d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"48E0B5D1F9972D20"
-				"087C118AB8CC51F8"
-			]
+			dependencies: ["48E0B5D1F9972D20"]
 			dependency_requirement: "one_completed"
 			description: [
 				"你应该可以看到电极有两种生产方式。"
@@ -687,8 +679,8 @@
 				type: "item"
 			}]
 			title: "电弧炉核心"
-			x: 7.5d
-			y: 1.5d
+			x: -2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2BE7BA0BE9F2DBC9"]
@@ -697,7 +689,7 @@
 				"要使一台电弧炉或者更高级的机器持续运作的话，建议接入多条高压线"
 				"（小提示：高压线没法绝缘——因为绝缘层会被高压电流直接击穿的，所以注意安全）"
 			]
-			hide_until_deps_complete: true
+			icon: "immersiveengineering:wirecoil_steel"
 			id: "56F4C82F40DFA8F5"
 			shape: "diamond"
 			subtitle: "铝的第一作用"
@@ -724,8 +716,8 @@
 				}
 			]
 			title: "高压电力系统"
-			x: 0.0d
-			y: -3.0d
+			x: 6.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -779,37 +771,36 @@
 				}
 			]
 			title: "搭建金属冲压机"
-			x: -4.5d
+			x: -8.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["143039C6AC2D8186"]
-			description: ["看看你冲（指冲压机）出来的棒子）"]
+			dependencies: [
+				"143039C6AC2D8186"
+				"7379C5AA51648FC1"
+			]
+			description: [
+				"看看你冲（指冲压机）出来的棒子）"
+				"钢过于坚固以至于通常的轧机无法处理……还是交给电动的冲压机吧"
+			]
 			icon: "immersiveengineering:mold_rod"
 			id: "22631A52B9D81A49"
 			subtitle: "嗯……"
 			tasks: [
 				{
-					id: "0609FD0C01142C51"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:rods/all_metal"
-						}
-					}
-					title: "Any #forge:rods/all_metal"
-					type: "item"
-				}
-				{
 					id: "165229DECB174540"
 					item: "immersiveengineering:mold_rod"
 					type: "item"
 				}
+				{
+					id: "0F9700EC9732EFAB"
+					item: "immersiveengineering:stick_steel"
+					type: "item"
+				}
 			]
 			title: "看看你的棒子"
-			x: -4.5d
-			y: -1.5d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["22631A52B9D81A49"]
@@ -818,6 +809,8 @@
 				"虽然这个东西是脚手架没错，但同样也是机器框架）"
 			]
 			id: "0EA7E42D07C4BC01"
+			shape: "gear"
+			size: 2.0d
 			subtitle: "你的工程块比较松弛"
 			tasks: [{
 				id: "2B3D45F9C0B744F9"
@@ -825,83 +818,24 @@
 				type: "item"
 			}]
 			title: "钢门"
-			x: -3.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"504E6502A789DABF"
-				"48E0B5D1F9972D20"
-			]
-			description: [
-				"由于这张图不能合成，所以你需要去找工程师村民进行一些不太和谐的行为……"
-				"比如在他们面前翻箱倒柜（"
-			]
-			hide_until_deps_complete: true
-			id: "087C118AB8CC51F8"
-			optional: true
-			shape: "diamond"
-			subtitle: "嗯，宝藏……"
-			tasks: [{
-				id: "26DA5121AA920A2A"
-				item: {
-					Count: 1
-					id: "immersiveengineering:blueprint"
-					tag: {
-						blueprint: "electrode"
-					}
-				}
-				match_nbt: true
-				type: "item"
-			}]
-			title: "我电极呢？"
-			x: 6.0d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"2BE7BA0BE9F2DBC9"
-				"6D9B785CB93D94D6"
-			]
+			dependencies: ["55C58DBE6BE16B1C"]
 			description: [
 				"由于柴油性能还是有限，接下来你大概是需要迈入石油和重工业时代）"
 				"而重工业——需要你手里的元件。"
 			]
-			hide_until_deps_complete: true
 			id: "03312D6881CC617D"
 			subtitle: "高级工业必需品"
 			tasks: [{
 				id: "1F69FA726AA73BD9"
-				item: "tfmg:steel_mechanism"
+				item: "kubejs:steel_mechanism"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["2BE7BA0BE9F2DBC9"]
-			description: [
-				"螺丝刀一般用于制造工业元件）"
-				"比如在你的流水线机械臂上安装一个螺丝刀来拧螺丝（乐"
-				"为什么一定要这样呢，因为方块手是拧不了螺丝的）"
-				"&m&o&c“你甚至不能进电子厂打工”&r&r&r"
-			]
-			hide_until_deps_complete: true
-			id: "6D9B785CB93D94D6"
-			subtitle: "工具还是要的"
-			tasks: [{
-				id: "147D1D7C0FBC9106"
-				item: {
-					Count: 1
-					id: "tfmg:screwdriver"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 9.5d
-			y: -0.5d
+			x: 12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -913,7 +847,6 @@
 				"&a【完成后解锁主线章节：5I 黑金与化工】&r"
 				"准备好迎接真正的重工业时代了吗）"
 			]
-			hide_until_deps_complete: true
 			id: "5FB9514C6DE7AD58"
 			rewards: [{
 				id: "1FCB3F21F61EEBA2"
@@ -940,35 +873,36 @@
 				type: "item"
 			}]
 			title: "【终点】工业的重压！"
-			x: 12.5d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["3E60B78B0EE34B75"]
+			dependencies: [
+				"726AC9F2DA602E72"
+				"2415442F916846C5"
+			]
 			description: [
-				"由双层特种金属板制成的外壳赋予了这种机壳几乎难以想象的韧性，可以承载大量压力。"
+				"由特种合金金属板制成的外壳赋予了这种机壳几乎难以想象的强度，可以承载大量压力。"
 				"重型机械的基本结构之一"
 			]
 			id: "724A0B71BA342AEE"
 			subtitle: "很重，很重要"
 			tasks: [{
-				id: "01630D7BDD3D44BF"
-				item: "tfmg:heavy_machinery_casing"
+				id: "7EE023596BA04852"
+				item: "kubejs:factory_casing"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"504E6502A789DABF"
-				"3D6CCF4A93478320"
-			]
+			dependencies: ["3D6CCF4A93478320"]
 			description: [
-				"鉴于这个东西只能在深暗的遗忆守卫身上掉落，我们把它放得很靠后）"
+				"鉴于这个东西只能在&2深暗之园&r的&3遗忆守卫&r身上掉落，我们把它放得很靠后）"
 				"但这也意味着，如果你不去冒险，那么你是没有办法获得这种强大的材料来推进工业的）"
+				""
+				"&o&b*显然遗忆守卫的数量是有限的，但你可以通过遗忆构件来制作它们……以满足你日益增长的材料需求。&r&r"
 			]
-			hide_until_deps_complete: true
 			icon: "undergarden:forgotten_nugget"
 			id: "1A19AB31DBCDBCF7"
 			subtitle: "干掉另一种意义上的守卫者"
@@ -985,8 +919,8 @@
 				}
 			]
 			title: "下去吧你！"
-			x: 6.5d
-			y: 5.0d
+			x: 8.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -1023,38 +957,8 @@
 				}
 			]
 			title: "多方块指南"
-			x: -9.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["143039C6AC2D8186"]
-			description: ["你生产金属线的效率现在能翻倍了！别忘了！"]
-			icon: "immersiveengineering:mold_wire"
-			id: "4BBD74D56BC12AEE"
-			shape: "diamond"
-			subtitle: "成双成对"
-			tasks: [
-				{
-					id: "18EC031E6DC5AF3C"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:wires"
-						}
-					}
-					title: "Any #forge:wires"
-					type: "item"
-				}
-				{
-					id: "699315A05F8B51E6"
-					item: "immersiveengineering:mold_wire"
-					type: "item"
-				}
-			]
-			title: "工艺升级"
-			x: -4.5d
-			y: 1.5d
+			x: -12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -1072,19 +976,22 @@
 				item: "immersiveengineering:blastfurnace_preheater"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 2.5d
+			x: -12.0d
+			y: 2.0d
 		}
 		{
-			dependencies: [
-				"56F4C82F40DFA8F5"
-				"2BE7BA0BE9F2DBC9"
-			]
+			dependencies: ["2BE7BA0BE9F2DBC9"]
 			description: [
 				"高压线杀人事件的避免方式：穿一套防电服"
 				"（其实植物魔法的斗篷可以用魔力获得有cd的无敌，但那很浪费魔力"
 			]
-			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "immersiveengineering:armor_faraday_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "217A9CECA6BEB91C"
 			shape: "diamond"
 			subtitle: "成为法拉第"
@@ -1155,48 +1062,15 @@
 				}
 			]
 			title: "理解法拉第"
-			x: 1.5d
-			y: -2.0d
+			x: 2.0d
+			y: -8.0d
 		}
 		{
-			dependencies: ["22631A52B9D81A49"]
-			id: "7D8F040FDC419C80"
-			rewards: [{
-				id: "0E8D3E5B8959465C"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
-							Size: 8
-						}
-					}
-					id: "immersiveengineering:speedloader"
-				}
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "午时已到"
-			tasks: [{
-				id: "43124CC78A2EF0DD"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
-							Size: 21
-						}
-					}
-					id: "immersiveengineering:revolver"
-				}
-				type: "item"
-			}]
-			x: -6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["22631A52B9D81A49"]
-			description: ["提示：你需要在蓄电池背包内放入某种规格的蓄电池后它才能被正常充电（使用工程师装配台，具体请参照工程师手册）。"]
+			dependencies: ["011BB3E4881AA3F2"]
+			description: [
+				"自动为你身上的耗能装备供能。很可惜你需要从它和你储物用的背包之间抉择一下。"
+				"提示：你需要在蓄电池背包内放入某种规格的蓄电池后它才能被正常充电（使用工程师装配台，具体请参照工程师手册）。"
+			]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -1215,33 +1089,29 @@
 			}]
 			shape: "diamond"
 			subtitle: "装备充能"
-			tasks: [
-				{
-					id: "6CCFCB005D52E4DA"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								Items: [ ]
-								Size: 4
-							}
+			tasks: [{
+				id: "6CCFCB005D52E4DA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 4
 						}
-						id: "immersiveengineering:powerpack"
 					}
-					type: "item"
+					id: "immersiveengineering:powerpack"
 				}
-				{
-					id: "7FE5AEDE6AFA8236"
-					item: "immersiveengineering:charging_station"
-					type: "item"
-				}
-			]
-			x: -4.5d
-			y: -3.0d
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
-			description: ["现已支持各种模组作物！"]
+			description: [
+				"可以让你的作物无视季节大量产出。"
+				"现已支持各种模组作物！"
+			]
 			id: "3A25C9E033482CEB"
 			shape: "diamond"
 			subtitle: "一种更优雅的种植解决方式"
@@ -1251,95 +1121,36 @@
 				type: "item"
 			}]
 			title: "精细化农业"
-			x: -6.0d
+			x: -10.0d
 			y: 2.0d
-		}
-		{
-			dependencies: ["03312D6881CC617D"]
-			description: ["装填烈焰蛋糕以感受最大威力"]
-			id: "2CA584555112E772"
-			shape: "diamond"
-			subtitle: "哒哒哒哒哒"
-			tasks: [{
-				id: "0ADE2F4D3B0B083C"
-				item: {
-					Count: 1
-					id: "tfmg:quad_potato_cannon"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 7.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["2BE7BA0BE9F2DBC9"]
-			hide_until_deps_complete: true
-			id: "377948574A940F51"
-			shape: "diamond"
-			subtitle: "I lost a bomb. Do you have it?"
-			tasks: [{
-				id: "386E09FE2436BCC9"
-				item: "tfmg:thermite_grenade"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -5.5d
-		}
-		{
-			dependencies: [
-				"48A3FEF7D02104E5"
-				"0FD551E50150A7AD"
-			]
-			description: [""]
-			id: "6A04606B02D87EF0"
-			subtitle: "氧化乙醇你就得到了……"
-			tasks: [{
-				id: "70505299AC3A9C07"
-				item: "immersiveengineering:acetaldehyde_bucket"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"6A04606B02D87EF0"
-				"0FD551E50150A7AD"
-			]
-			description: ["到下一章你就会用到它！"]
-			icon: "immersiveengineering:phenolic_resin_bucket"
-			id: "6CBC49DEC79E819E"
-			subtitle: "不完全是塑胶"
-			tasks: [{
-				id: "5990032AE52EC1B6"
-				item: "immersiveengineering:phenolic_resin_bucket"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 1.0d
 		}
 		{
 			dependencies: ["3B29D716A3D5AAF0"]
 			description: [
 				"有着奇特性质的两种金属的结合。"
-				"似乎拥有极强的导热性……同时硬度也十分优异"
+				"似乎拥有极强的导热性，是制作散热器的绝佳材料"
 				""
 				"以防你不知道，提示一下……"
-				"霜钢生成在深暗之园维度的寒霜之地群系，需要用雪帽菇熔炉来“冶炼”（雪帽菇熔炉的材料来自永昼之地的雪帽菇群系）。"
-				"炙铁生成在恒晓之地维度，需要用沉浸工程的炼铁高炉来冶炼。"
+				"霜钢生成在&2深暗之园维度&r的&b寒霜之地&r群系，需要用雪帽菇熔炉来“冶炼”（雪帽菇熔炉的材料来自&b永昼之地&r的&3雪帽菇群系&r）。"
+				"炙铁生成在&6恒晓之地&r维度，需要用沉浸工程的炼铁高炉来冶炼。"
 			]
-			hide_until_deps_complete: true
+			icon: "immersiveengineering:radiator"
 			id: "3E60B78B0EE34B75"
 			subtitle: "嗯，复合板材"
-			tasks: [{
-				id: "76A65BC6B5E46BA6"
-				item: "kubejs:frostfire_double_plate"
-				type: "item"
-			}]
-			x: 5.0d
+			tasks: [
+				{
+					id: "76A65BC6B5E46BA6"
+					item: "kubejs:frostfire_double_plate"
+					type: "item"
+				}
+				{
+					id: "7D364899FCD6B0F6"
+					item: "immersiveengineering:radiator"
+					type: "item"
+				}
+			]
+			title: "散热器"
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -1349,7 +1160,6 @@
 				""
 				"在这一步后面卡住了？也许你需要先想办法获得一些&7“电气时代的金属”&r来制作螺丝刀……"
 			]
-			hide_until_deps_complete: true
 			id: "671C17CCA1D5FA78"
 			subtitle: "简单的小东西"
 			tasks: [{
@@ -1357,15 +1167,16 @@
 				item: "immersiveengineering:component_electronic"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 4.0d
+			x: 8.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
 				"1A19AB31DBCDBCF7"
 				"671C17CCA1D5FA78"
-				"6D9B785CB93D94D6"
+				"506AC24B2EAF854D"
 			]
+			description: ["古代金属的力量会将你推进到下一个时代）"]
 			id: "41E56A9D68E36043"
 			subtitle: "众所周知，有时候科技发展靠考古"
 			tasks: [{
@@ -1373,16 +1184,15 @@
 				item: "kubejs:forgotten_mechanism"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 3.0d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
 			description: [
 				"在相对的两个面放置温度不同的方块就可以根据温差发电"
-				"最方便的一集"
+				"最方便的一集（就是产率感人）"
 			]
-			hide_until_deps_complete: true
 			id: "786D410103015183"
 			rewards: [
 				{
@@ -1403,8 +1213,8 @@
 				item: "immersiveengineering:thermoelectric_generator"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: 4.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
@@ -1458,8 +1268,502 @@
 				}
 			]
 			title: "组装粉碎机"
-			x: -3.0d
-			y: -3.5d
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3D6CCF4A93478320"]
+			description: [
+				"或许能在生命垂危时救你一命？"
+				"不会占用饰品槽位的饰品（）"
+			]
+			id: "1999D24A0619F440"
+			shape: "diamond"
+			subtitle: "幸运儿……？"
+			tasks: [{
+				id: "4CF9D9DCC1FB0FAB"
+				item: "createaddition:electrum_amulet"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["01534DC5812DBA15"]
+			description: ["通过装配台和合适的蓝图，你可以用一种更节约的方式制作空白模具！"]
+			icon: {
+				Count: 1
+				id: "immersiveengineering:blueprint"
+				tag: {
+					blueprint: "components"
+				}
+			}
+			id: "7379C5AA51648FC1"
+			subtitle: "给压力一个方向"
+			tasks: [{
+				id: "37F4E985B2C33E2F"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "molds"
+					}
+				}
+				type: "item"
+			}]
+			title: "金属模具蓝图"
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0EA7E42D07C4BC01"]
+			description: [
+				"玩过星露谷或者酿过酒的朋友都知道，如果把作物扔进小桶，那么它就会被发酵。"
+				"为了生产柴油，你需要一个合格的小桶来发酵作物……"
+			]
+			icon: "createdieselgenerators:basin_lid"
+			id: "0F4EDD4535A9D928"
+			rewards: [{
+				id: "55E8F491E4572646"
+				item: "sob:lava_top_cocktail"
+				type: "item"
+			}]
+			subtitle: "小桶"
+			tasks: [
+				{
+					id: "07D23BFCC1C3C154"
+					item: "createdieselgenerators:basin_lid"
+					type: "item"
+				}
+				{
+					id: "3B4A023D9CC89803"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0F4EDD4535A9D928"]
+			description: [
+				"将作物和水一同装桶，一段时间后你就会得到这种黏糊糊的绿色混合物。"
+				""
+				"&2&o*富有生机！&r&r"
+			]
+			icon: "createaddition:biomass"
+			id: "2410B7B4F5FBA323"
+			subtitle: "不能喝"
+			tasks: [{
+				id: "009BBB3673F91A72"
+				item: "createaddition:biomass"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"585C0F11261551FD"
+				"2410B7B4F5FBA323"
+			]
+			description: [
+				"由于生物质实在是太黏了，只有粉碎机才能把它打成大小合适的颗粒。"
+				"大型团块显然不能被放入发酵机……"
+			]
+			id: "02D2280F57251219"
+			subtitle: "过于粘稠"
+			tasks: [{
+				id: "41BB3EA31DD399B4"
+				item: "createaddition:biomass_pellet"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1E0E5E47E1264279"]
+			description: ["按比例混合并挤压金银粉，你就能获得一种导电性能极佳的合金——虽然目前它还是粉末。"]
+			icon: "immersiveengineering:dust_electrum"
+			id: "19EA7F4C42FCA4BA"
+			subtitle: "的粉末"
+			tasks: [
+				{
+					id: "7798E7A2453C61BD"
+					item: "kubejs:gold_silver_mix"
+					type: "item"
+				}
+				{
+					id: "3BA843A73E33ED0F"
+					item: "immersiveengineering:dust_electrum"
+					type: "item"
+				}
+			]
+			title: "优良导体"
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3D6CCF4A93478320"]
+			description: [
+				"并不能直接攻击敌方英雄（但提供红石信号时可以对附近生物造成伤害）"
+				"用于为某些特定的设备（比如充电背包、磁轨炮等）充能……或者灌入电力以改变某些材料的性质。"
+			]
+			id: "011BB3E4881AA3F2"
+			subtitle: "冲锋（Charge）"
+			tasks: [{
+				id: "2E3CECB9A0B699EA"
+				item: "createaddition:tesla_coil"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["143039C6AC2D8186"]
+			icon: "immersiveengineering:mold_plate"
+			id: "6776DC02136791D2"
+			subtitle: "省去了捶打的麻烦"
+			tasks: [
+				{
+					id: "5843C833BAA39968"
+					item: "immersiveengineering:mold_plate"
+					type: "item"
+				}
+				{
+					id: "6B843CD3230D4A5F"
+					item: "immersiveengineering:plate_steel"
+					type: "item"
+				}
+			]
+			title: "搞定硬家伙"
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3B29D716A3D5AAF0"]
+			description: [
+				"烈焰人最喜欢吃的。"
+				"使烈焰人燃烧室进入&b临时的超级燃烧状态&r！这很重要，因为部分配方要求必须在这种温度下才能进行……"
+				""
+				"&o&6*既然灌入熔岩就可以让燃烧室正常燃烧，那超级燃烧要柴油也是合理的）&r&r"
+			]
+			id: "2CB1E7FC5CBF6B2C"
+			shape: "circle"
+			subtitle: "超级加热！"
+			tasks: [{
+				id: "740F743EDE92CF3A"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"213682223D73A690"
+				"37AA8441440BF673"
+			]
+			description: ["锌铝合金耐腐蚀、硬度高，可以作为石油化工时代的理想入门材料。"]
+			id: "55C58DBE6BE16B1C"
+			subtitle: "暴风熔炼"
+			tasks: [{
+				id: "13865CE8A30B795E"
+				item: "kubejs:za_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1CBD49955AFAF545"]
+			description: ["如果想要获得固态的混凝土，也许你需要等待液体干透……"]
+			icon: "immersiveengineering:concrete_bucket"
+			id: "5603929D7B14B8ED"
+			subtitle: "也不能喝"
+			tasks: [
+				{
+					id: "2B60A68649A7EBC9"
+					item: "immersiveengineering:concrete_bucket"
+					type: "item"
+				}
+				{
+					id: "0A93D7631B853C00"
+					item: "immersiveengineering:concrete_leaded"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0EA7E42D07C4BC01"]
+			description: [
+				"用于生产混凝土，以此为基础构建更大的机器。"
+				"当然你也可以用它进行其他的液体加工，比如更高效地生产红石酸，或者批量炼药。"
+				""
+				"&o&7意大利面就应该配42号混凝土）&r&r"
+			]
+			icon: "immersiveengineering:mixer"
+			id: "1CBD49955AFAF545"
+			rewards: [{
+				id: "2D0802892FDBAD18"
+				item: "largemeals:pasta_with_mushroom_sauce"
+				type: "item"
+			}]
+			subtitle: "充分搅拌"
+			tasks: [
+				{
+					count: 4L
+					id: "67DD3016AAF23795"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "3D27CDF969EA9D33"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					id: "31FA7AFD99629E5F"
+					item: "immersiveengineering:steel_fence"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "186D52BAA5EEDD88"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "781816426F625D40"
+					item: "immersiveengineering:sheetmetal_iron"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "212694FB371262DE"
+					item: "kubejs:fluid_engineering"
+					type: "item"
+				}
+				{
+					id: "21E20CB5933B696A"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "组装搅拌机"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5603929D7B14B8ED"]
+			description: ["用铅板包裹后，混凝土的结构强度就足以承受进一步的加工了）"]
+			id: "726AC9F2DA602E72"
+			subtitle: "你变强了，快送！"
+			tasks: [{
+				id: "6678792B99F4EAA7"
+				item: "immersiveengineering:concrete_leaded"
+				type: "item"
+			}]
+			title: "强化镀层"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["585C0F11261551FD"]
+			description: [
+				"在寻找铝土矿并将其粉碎后，你需要经过一次产率极低的离心来获得……纯粹的氧化铝。"
+				"它太容易被氧化了，所以你目前只能尝试粉碎氧化铝来获得算得上能用的铝粉。"
+			]
+			id: "68A8BCB8BCBC8C1B"
+			subtitle: "电子都去哪了？"
+			tasks: [{
+				id: "7902A64DAF139629"
+				item: "immersiveengineering:dust_aluminum"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["55C58DBE6BE16B1C"]
+			description: [
+				"硬度和脆性都很高，所以你既不能用锻锤也不能用辊压机来处理它。"
+				"只能请金属冲压机了。"
+			]
+			id: "2415442F916846C5"
+			subtitle: "强硬且坚韧"
+			tasks: [{
+				id: "57771278C9D9F15F"
+				item: "kubejs:za_sheet"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["011BB3E4881AA3F2"]
+			description: ["让紫水晶碎片精神焕发）"]
+			id: "506AC24B2EAF854D"
+			subtitle: "脸怎么红了？"
+			tasks: [{
+				id: "1C27A78FD6364A0A"
+				item: "scguns:charged_amethyst_shard"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1CBD49955AFAF545"]
+			description: [
+				"在拥有搅拌机后，红石酸的生产将不再需要通过过量红石加压进行。"
+				"曾经需要8个红石的压制过程现在只需要1红石，工业发展的力量于此得到充分体现。"
+			]
+			id: "5FBA1CE252E08940"
+			shape: "diamond"
+			subtitle: "快速混合"
+			tasks: [{
+				id: "1BFDF583454895A8"
+				item: "immersiveengineering:redstone_acid_bucket"
+				type: "item"
+			}]
+			title: "更高效的生产"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["56F4C82F40DFA8F5"]
+			description: [
+				"这两种高级蓄电池可以互相转化。"
+				"虽然容量是高压蓄电池的一半，并且无法保留电量拆卸，但是具有多面可输入输出、可以堆叠组合的特点，并且可以在机械动力动态结构上使用！根据你的具体需求选择合适的蓄电池吧。"
+			]
+			id: "0840ADE2B5089286"
+			rewards: [{
+				count: 3
+				id: "445624EC783335F4"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "我们联合！"
+			tasks: [{
+				id: "0C96361017719BA2"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			title: "模块化蓄电池"
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3E60B78B0EE34B75"]
+			description: [
+				"能够进行精密操作和控制高温流体的注液器。"
+				"需要电力供应才能运作。"
+			]
+			icon: "immersiveengineering:bottling_machine"
+			id: "213682223D73A690"
+			subtitle: "也就是高级注液器"
+			tasks: [
+				{
+					count: 2L
+					id: "5A7981B11C068977"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "63E79F0CF358B3CB"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "1C1F2FC8DEADEA31"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					id: "71785F67E2E86F93"
+					item: "immersiveengineering:fluid_pump"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "025E9916C4C018DA"
+					item: { Count: 3, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2A10781D1CF85551"
+					item: { Count: 2, id: "immersiveengineering:radiator" }
+					type: "item"
+				}
+				{
+					id: "4736D7C3D7D60504"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "组装灌装机"
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"2BE7BA0BE9F2DBC9"
+				"2CB1E7FC5CBF6B2C"
+			]
+			description: ["通过&b超级加热&r与&a风元素核心的风暴之力&r，你可以强行融合两种不算太稳定的金属来获得性能更强的合金。"]
+			id: "37AA8441440BF673"
+			subtitle: "加压融合"
+			tasks: [{
+				id: "1A21E526FE05FFC6"
+				item: "kubejs:molten_za_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"583407C7537AE9C9"
+				"2CB1E7FC5CBF6B2C"
+			]
+			icon: "scguns:diamond_steel_ingot"
+			id: "5B6C1785EDD9BC65"
+			shape: "diamond"
+			subtitle: "可以揽瓷器活了"
+			tasks: [
+				{
+					id: "150BE482A3F4CC2C"
+					item: "scguns:diamond_steel_blend"
+					type: "item"
+				}
+				{
+					id: "59927C8283555494"
+					item: "scguns:diamond_steel_ingot"
+					type: "item"
+				}
+			]
+			title: "金刚钻"
+			x: 5.0d
+			y: -4.0d
 		}
 	]
 	subtitle: ["Roaring Machinery"]

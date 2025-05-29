@@ -1,0 +1,231 @@
+{
+	autofocus_id: "10CAF35A5551DC8F"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7C70C5EA37137857"
+	group: "560257DD7915FBBC"
+	hide_quest_details_until_startable: true
+	icon: "minecraft:chorus_flower"
+	id: "7C70C5EA37137857"
+	images: [{
+		height: 2.0d
+		image: "kubejs:textures/quests/a4.png"
+		rotation: 0.0d
+		width: 10.448979591836734d
+		x: 0.0d
+		y: -3.5d
+	}]
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["193F465F65BC13F1"]
+			description: ["{ftbquests.chapter.7C70C5EA37137857.quest1.description1}"]
+			hide_until_deps_complete: true
+			id: "15E666BAE38566D8"
+			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest1.subtitle}"
+			tasks: [{
+				id: "2EEDEF968ECEA456"
+				item: "minecraft:chorus_flower"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.7C70C5EA37137857.quest1.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["280307C036B9B6E7"]
+			description: ["{ftbquests.chapter.7C70C5EA37137857.quest2.description1}"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "blue_skies:different_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5AEAA6FCB2862FD9"
+			rewards: [{
+				id: "1B9C784A847FF2D1"
+				item: {
+					Count: 1
+					id: "blue_skies:loot_bag_arachnarch"
+					tag: {
+						LootTable: "blue_skies:loot_bags/arachnarch/common"
+						Rarity: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest2.subtitle}"
+			tasks: [
+				{
+					id: "057162BE11E594E2"
+					item: {
+						Count: 1
+						id: "blue_skies:arachnarch_trophy"
+						tag: {
+							BlockStateTag: {
+								tier: "bronze"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D8AB2E089CB256E"
+					item: {
+						Count: 1
+						id: "blue_skies:alchemist_trophy"
+						tag: {
+							BlockStateTag: {
+								tier: "bronze"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.7C70C5EA37137857.quest2.title}"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7A6D4E28C28302FE"]
+			description: ["{ftbquests.chapter.7C70C5EA37137857.quest3.description1}"]
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "blue_skies:crushing_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "67987443A4B5265E"
+			rewards: [{
+				id: "72E4CA60C692BA1A"
+				item: {
+					Count: 1
+					id: "blue_skies:loot_bag_starlit_crusher"
+					tag: {
+						LootTable: "blue_skies:loot_bags/starlit_crusher/common"
+						Rarity: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest3.subtitle}"
+			tasks: [
+				{
+					id: "387A50530A0BE1BB"
+					item: {
+						Count: 1
+						id: "blue_skies:starlit_crusher_trophy"
+						tag: {
+							BlockStateTag: {
+								tier: "bronze"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "09C7545F2D1F0813"
+					item: {
+						Count: 1
+						id: "blue_skies:summoner_trophy"
+						tag: {
+							BlockStateTag: {
+								tier: "bronze"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.7C70C5EA37137857.quest3.title}"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["15E666BAE38566D8"]
+			description: [
+				"{ftbquests.chapter.7C70C5EA37137857.quest4.description1}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest4.description2}"
+			]
+			id: "10CAF35A5551DC8F"
+			rewards: [{
+				id: "3AD219F053125447"
+				item: "bosses_of_mass_destruction:void_lily"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest4.subtitle}"
+			tasks: [{
+				id: "759962C6923883ED"
+				item: "tide:voidseeker"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.7C70C5EA37137857.quest4.title}"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["15E666BAE38566D8"]
+			description: [
+				"{ftbquests.chapter.7C70C5EA37137857.quest5.description1}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest5.description2}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest5.description3}"
+			]
+			id: "10D75D0FB345A298"
+			rewards: [{
+				id: "3987711A047E4F38"
+				item: "botania:cosmetic_anaglyph_glasses"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest5.subtitle}"
+			tasks: [{
+				id: "60F4CB02290B867E"
+				item: "alexsmobs:mimicream"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.7C70C5EA37137857.quest5.title}"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["15E666BAE38566D8"]
+			description: [
+				"{ftbquests.chapter.7C70C5EA37137857.quest6.description1}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest6.description2}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest6.description3}"
+			]
+			id: "1E764C1B8E3B46A9"
+			rewards: [{
+				id: "58790D95A1E919F7"
+				item: "minecraft:respawn_anchor"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest6.subtitle}"
+			tasks: [{
+				id: "55B7CEFF247B0C49"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+	]
+	subtitle: ["{ftbquests.chapter.7C70C5EA37137857.subtitle}"]
+	title: "{ftbquests.chapter.7C70C5EA37137857.title}"
+}

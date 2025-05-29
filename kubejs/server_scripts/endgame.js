@@ -1,301 +1,504 @@
 ServerEvents.recipes(event => {
   //下界合金
   event.remove({ id: 'minecraft:netherite_ingot' })
-  event.recipes.create.mixing(['netherite_ingot'], [Fluid.of('tfmg:napalm',500),'#forge:ingots/uranium','#forge:ingots/uranium','#forge:ingots/uranium','#forge:ingots/uranium','minecraft:netherite_scrap','minecraft:netherite_scrap','minecraft:netherite_scrap','minecraft:netherite_scrap']).superheated()
-
-  //烈焰蛋糕
-  event.remove({ id: 'create:compacting/blaze_cake' })
-  event.remove({ id: 'create:filling/blaze_cake' })
-  event.recipes.create.compacting(['create:blaze_cake_base'], ['minecraft:sugar','irons_spellbooks:cinder_essence','#forge:plates/horizonite']).heated()
-  event.recipes.create.filling('create:blaze_cake',[Fluid.of('tfmg:gasoline',1000),'create:blaze_cake_base'])
-
-  //多彩化合物
-  event.remove({ id: 'createchromaticreturn:chromatic_compound_recipe' })
-  event.shapeless(
-    Item.of('createchromaticreturn:chromatic_compound',1),
-    [
-      'kubejs:buran',
-      'kubejs:midnight'
+  event.recipes.vintageimprovements.pressurizing([
+    'nether_star',
+    Fluid.of('kubejs:molten_netherite',100),
+  ], [
+    Fluid.of('createdieselgenerators:gasoline',500),
+    'nether_star',
+    '#forge:dusts/electrum',
+    '#forge:dusts/electrum',
+    '#forge:dusts/electrum',
+    '#forge:dusts/electrum',
+    'minecraft:netherite_scrap',
+    'minecraft:netherite_scrap',
+    'minecraft:netherite_scrap',
+    'minecraft:netherite_scrap'
+  ]).superheated().secondaryFluidInput(0)
+  event.custom({
+    "type":"immersiveengineering:bottling_machine",
+    "fluid":{"amount":100,"tag":"forge:molten_netherite"},
+    "inputs":[
+      {"item":"kubejs:mold_ingot"}
+    ],
+    "results":[
+      {"item":"kubejs:mold_ingot"},
+      {"item":"minecraft:netherite_ingot"}
     ]
+  })
+
+  //自动化下界之星
+  event.recipes.create.mixing([
+    'botania:blacker_lotus',
+    '4x nether_star'
+  ], [
+    'botania:blacker_lotus',
+    'aquamirae:ship_graveyard_echo',
+    'aquamirae:ship_graveyard_echo',
+    'minecraft:ender_eye',
+    'minecraft:ender_eye',
+    'scguns:nether_star_fragment',
+    'scguns:nether_star_fragment',
+    'scguns:nether_star_fragment',
+    'scguns:nether_star_fragment'
+  ]).superheated()
+  event.recipes.create.mixing([
+    'kubejs:water_elemental_core',
+    '2x aquamirae:ship_graveyard_echo'
+  ], [
+    'kubejs:water_elemental_core',
+    'aquamirae:ship_graveyard_echo',
+    Fluid.of('netherexp:ectoplasm', 500),
+  ]).heated()
+
+  //第五章工业：将Diesel Generators的配方中所有锌锭替换为锌铝合金
+  event.replaceInput(
+    { mod:"createdieselgenerators" },
+    '#forge:ingots/zinc',
+    '#forge:ingots/za'
+  )
+  event.replaceInput(
+    { mod:"createdieselgenerators" },
+    '#forge:nuggets/zinc',
+    '#forge:nuggets/za'
+  )
+  //铁替换为钢
+  event.replaceInput(
+    { mod:"createdieselgenerators" },
+    '#forge:rods/iron',
+    'immersiveengineering:rod_steel'
+  )
+  event.replaceInput(
+    { mod:"createdieselgenerators" },
+    '#forge:plates/iron',
+    'immersiveengineering:plate_steel'
+  )
+  event.replaceInput(
+    { mod:"createdieselgenerators" },
+    '#forge:ingots/iron',
+    'immersiveengineering:ingot_steel'
+  )
+  //时钟替换为重型工程块
+  event.replaceInput(
+    { mod:"createdieselgenerators" },
+    'clock',
+    'immersiveengineering:heavy_engineering'
   )
 
-  //移除一些原有配方
-  event.remove({ id: 'createchromaticreturn:bedrock_shard_crushing' })
-  event.remove({ id: 'createchromaticreturn:andesite_component_recipe' })
-  event.remove({ id: 'createchromaticreturn:brass_component_recipe' })
-  event.remove({ input: 'createchromaticreturn:andesite_component' })
-  event.remove({ input: 'createchromaticreturn:brass_component' })
-
-  //黄铜，安山组件配方
-  event.recipes.create.crushing(Item.of('create:andesite_alloy'), 'createchromaticreturn:andesite_component')
-  event.recipes.create.crushing(Item.of('create:brass_ingot'), 'createchromaticreturn:brass_component')
-
-  //环境枪
-  event.shapeless(
-    Item.of('create:handheld_worldshaper',1),
+  //分馏
+  event.remove({ id: 'createdieselgenerators:crafting/distillation_controller' })
+  event.shaped(
+    Item.of('createdieselgenerators:distillation_controller', 5),
     [
-      'createchromaticreturn:industrium_charm',
-      'createchromaticreturn:shadow_charm',
-      'createchromaticreturn:refined_charm',
-      'createchromaticreturn:multiplite_charm',
-      'createchromaticreturn:silkstrum_charm',
-      'createchromaticreturn:antiplite_charm'
-    ]
+      'ABA',
+      'CDC'
+    ],
+    {
+      A: 'create:fluid_pipe',
+      C: 'create:andesite_alloy',
+      D: '#forge:plates/za',
+      B: 'immersiveengineering:heavy_engineering'
+    }
   )
+  event.remove({id:"createdieselgenerators:distillation/crude_oil"})
+  event.custom({
+    "type": "createdieselgenerators:distillation",
+    "ingredients": [
+      {
+        "fluid": "createdieselgenerators:crude_oil",
+        "amount": 200
+      }
+    ],
+    "heatRequirement": "heated",
+    "processingTime": 200,
+    "results": [
+      {
+        "fluid": "kubejs:heavy_oil",
+        "amount": 50
+      },
+      {
+        "fluid": "createdieselgenerators:diesel",
+        "amount": 50
+      },
+      {
+        "fluid": "createdieselgenerators:gasoline",
+        "amount": 50
+      },
+      {
+        "fluid": "kubejs:lpg",
+        "amount": 50
+      }
+    ]
+  })
 
-  //工业侧
-  event.recipes.create.mixing([Item.of('createchromaticreturn:shadow_steel')], ['createchromaticreturn:chromatic_compound',Fluid.of('create_confectionery:black_chocolate',500),Fluid.of('tfmg:heavy_oil',500)]).superheated()
-  event.remove({id:'createchromaticreturn:shadow_essence_recipe'})
+  //沥青
+  event.remove({ id: 'createdieselgenerators:mixing/asphalt_block' })
+  event.remove({ id: 'createdieselgenerators:crafting/asphalt_block' })
+  event.recipes.vintageimprovements.pressurizing([
+    Fluid.of('kubejs:lubricant',250),
+    '2x createdieselgenerators:asphalt_block',
+    'kubejs:fire_elemental_core',
+    'kubejs:water_elemental_core',
+  ], [
+    Fluid.of('kubejs:heavy_oil',500),
+    'kubejs:fire_elemental_core',
+    'kubejs:water_elemental_core',
+    '#forge:dusts/sulfur',
+  ]).superheated()
+
+  //反应堆机壳
+  event.remove({ id: 'createnuclear:item_application/reactor_casing_from_steel_and_brass_casing' })
+
+  //铀处理
+  event.remove({ id: 'createnuclear:mixing/uranium_fluid' })
+  event.remove({ id: 'createnuclear:compacting/uranium_fluid_to_yellowcake' })
+  event.remove({ id: 'createnuclear:crafting/enriched_soul_soil' })
+  event.remove({ id: 'createnuclear:mechanical_crafting/uranium_rod' })
+  event.remove({ id: 'createnuclear:mechanical_crafting/graphite_rod' })
   event.custom({
     "type":"immersiveengineering:mixer",
     "energy":12800,
-    "fluid":{"amount":1000,"tag":"minecraft:lava"},
-    "inputs":[{"item":"createchromaticreturn:shadow_steel"}],
-    "result":{"amount":1000,"fluid":"createchromaticreturn:shadow_essence"}
+    "fluid":{"amount":50,"tag":"forge:diesel"},
+    "inputs":[
+      {"base_ingredient":{"tag":"forge:dusts/uranium"},"count":4},
+      {"base_ingredient":{"tag":"forge:dusts/hop_graphite"},"count":1},
+    ],
+    "result":{"amount":500,"fluid":"createnuclear:uranium"}
   })
-
-  //终极锭
-  event.remove({ id: 'createchromaticreturn:shadow_steel_recipe' })
-  event.remove({ id: 'createchromaticreturn:industrium_recipe' })
-  event.remove({ id: 'createchromaticreturn:durasteel_recipe' })
-
-  event.remove({id:'createchromaticreturn:refined_radiance_recipe'})
-  event.remove({id:'createchromaticreturn:silkstrum_recipe'})
-  event.remove({id:'createchromaticreturn:glowing_ingot_recipe'})
-
-  event.remove({ id: 'createchromaticreturn:industrium_book_recipe' })
-  event.remove({ id: 'createchromaticreturn:durasteel_book_recipe' })
-  event.remove({id:'createchromaticreturn:silkstrum_book_recipe'})
-
-  event.remove({id:'createchromaticreturn:multiplite_recipe'})
-  event.remove({id:'createchromaticreturn:antiplite_recipe'})
-
-  event.recipes.create.mixing(['createchromaticreturn:industrium_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [{fluidTag:'forge:shadow_essence', amount:1000},'create:deployer','create:mechanical_arm','immersiveengineering:powerpack','tfmg:large_radial_engine']).superheated()
-  event.recipes.create.sequenced_assembly([
-    Item.of('createchromaticreturn:industrium_book')
-    ], '#forge:plates/plastic', [
-    event.recipes.createDeploying('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', 'createchromaticreturn:industrium_ingot']),
-    event.recipes.createDeploying('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', 'minecraft:paper']),
-    event.recipes.createFilling('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', Fluid.of('create_enchantment_industry:hyper_experience',50)]),
-    event.recipes.createDeploying('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', 'minecraft:paper']),
-    event.recipes.createFilling('kubejs:incomplete_industrium_book', ['kubejs:incomplete_industrium_book', Fluid.of('create_enchantment_industry:hyper_experience',50)])
-  ]).transitionalItem('kubejs:incomplete_industrium_book').loops(2)
-
-  event.recipes.create.compacting(['createchromaticreturn:durasteel_ingot',Item.of('createchromaticreturn:shadow_steel').withChance(0.75)], [{fluidTag:'forge:shadow_essence', amount:1000},'#forge:storage_blocks/steel','#forge:storage_blocks/lead','#forge:storage_blocks/cast_iron','#forge:storage_blocks/netherite']).superheated()
-  event.recipes.create.sequenced_assembly([
-    Item.of('createchromaticreturn:durasteel_book')
-    ], '#forge:plates/obsidian', [
-    event.recipes.createDeploying('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', 'createchromaticreturn:durasteel_ingot']),
-    event.recipes.createDeploying('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', 'minecraft:paper']),
-    event.recipes.createFilling('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', Fluid.of('create_enchantment_industry:hyper_experience',50)]),
-    event.recipes.createDeploying('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', 'minecraft:paper']),
-    event.recipes.createFilling('kubejs:incomplete_durasteel_book', ['kubejs:incomplete_durasteel_book', Fluid.of('create_enchantment_industry:hyper_experience',50)])
-  ]).transitionalItem('kubejs:incomplete_durasteel_book').loops(2)
-
-  //魔法侧终极锭修改
-  //光辉石
-  event.shaped(Item.of('createchromaticreturn:refined_radiance',1),
-      [' A ',
-       'BCD',
-       ' E '],
+  event.custom({
+    "type": "createdieselgenerators:distillation",
+    "ingredients": [
       {
-          A:'irons_spellbooks:lesser_spell_slot_upgrade',
-          B:'irons_spellbooks:arcane_ingot',
-          C:'createchromaticreturn:chromatic_compound',
-          D:'irons_spellbooks:shriving_stone',
-          E:'irons_spellbooks:upgrade_orb'
+        "fluid": "createnuclear:uranium",
+        "amount": 100
       }
+    ],
+    "heatRequirement": "superheated",
+    "processingTime": 20,
+    "results": [
+      {
+        "fluid": "kubejs:molten_enriched_uranium",
+        "amount": 10
+      },
+      {
+        "fluid": "minecraft:lava",
+        "amount": 90
+      }
+    ]
+  })
+  event.recipes.vintageimprovements.centrifugation([
+      Item.of("immersiveengineering:nugget_uranium", 4).withChance(0.5),
+      Item.of("immersiveengineering:slag").withChance(0.5),
+      "createnuclear:yellowcake"
+    ],
+    Fluid.of('kubejs:molten_enriched_uranium', 50)
+  ).minimalRPM(256)
+  event.recipes.create.mixing('createnuclear:enriched_soul_soil', ['goety:sonic_boom_focus','goety:dark_metal_block','goety:dark_metal_block','goety:dark_metal_block','goety:dark_metal_block','nethersdelight:rich_soul_soil','nethersdelight:rich_soul_soil','nethersdelight:rich_soul_soil','nethersdelight:rich_soul_soil']).superheated()
+  event.recipes.createItemApplication("createnuclear:graphite_rod", ["#forge:rods/steel", "#forge:plates/hop_graphite"])
+
+  //裂变电池
+  event.recipes.create.sequenced_assembly([
+      Item.of('kubejs:fission_cell').withChance(90.0),
+      Item.of('createnuclear:graphite_rod').withChance(1.2),
+      Item.of('createnuclear:uranium_rod').withChance(1.2),
+      Item.of('immersiveengineering:radiator').withChance(2.6),
+      Item.of('create:sturdy_sheet').withChance(5.0)
+    ], 'create:sturdy_sheet', [
+      event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'immersiveengineering:connector_mv']),
+      event.recipes.createPressing('kubejs:incomplete_fission_cell', 'kubejs:incomplete_fission_cell'),
+      event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'createnuclear:uranium_rod']),
+      event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'createnuclear:graphite_rod']),
+      event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'immersiveengineering:radiator'])
+  ]).transitionalItem('kubejs:incomplete_fission_cell').loops(5)
+  event.recipes.create.sequenced_assembly([
+    Item.of('kubejs:fission_cell')
+  ], 'create:sturdy_sheet', [
+    event.recipes.createFilling('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', {fluidTag: 'forge:lubricant', amount:25}]),
+    event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'immersiveengineering:connector_mv']),
+    event.recipes.createPressing('kubejs:incomplete_fission_cell', 'kubejs:incomplete_fission_cell'),
+    event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'createnuclear:uranium_rod']),
+    event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'createnuclear:graphite_rod']),
+    event.recipes.createDeploying('kubejs:incomplete_fission_cell', ['kubejs:incomplete_fission_cell', 'immersiveengineering:radiator'])
+  ]).transitionalItem('kubejs:incomplete_fission_cell').loops(5)
+
+  /*
+  event.remove({id:"protection_pixel:hrcsheetloot"})
+  event.recipes.create.compacting(
+    'protection_pixel:heatresistantceramicsheet', [
+      Fluid.of("minecraft:lava",200),
+      '#forge:clay',
+      '#forge:clay',
+      '#forge:clay',
+      '#forge:clay',
+      'create:rose_quartz',
+      'create:rose_quartz',
+      '#forge:plates/za'
+    ]
+  ).superheated()
+  */
+
+
+  //电路板
+  event.remove({id:"vintageimprovements:mechanical_crafting/laser"})
+  event.recipes.create.mechanical_crafting('vintageimprovements:laser_item', [
+    ' A ',
+    'ABA',
+    'ACA',
+    'ADA',
+    'ADA'
+  ], {
+    A: '#forge:plates/netherite',
+    B: 'immersiveengineering:toolupgrade_revolver_electro',
+    C: 'scguns:laser_sight',
+    D: '#forge:glass'
+  })
+  event.recipes.vintageimprovements.laser_cutting(Item.of('kubejs:electronic_circuit_board'), '#forge:plates/plastic').energyCost(51200).maxChargeRate(3200)
+
+  //原始万象石
+  event.shaped(
+    Item.of('kubejs:raw_world_base'),
+    [
+        ' A ',
+        'BCD',
+        ' E '
+    ],
+    {
+        B: 'kubejs:midnight',
+        E: 'createnuclear:enriched_yellowcake',
+        D: 'kubejs:buran',
+        C: 'goety:philosophers_stone',
+        A: 'alexsmobs:farseer_arm'
+    }
   )
-  //删除光辉流体原有配方
-  event.remove({id:'createchromaticreturn:refined_mixture_recipe'})
-  //添加融化配方
+
+  //代码容器
+  event.recipes.create.compacting('kubejs:code_vessel', [
+    "kubejs:electronic_circuit_board",
+    "kubejs:raw_world_base",
+    "#forge:plates/netherite",
+    "#forge:plates/netherite",
+    "#forge:wires/electrum",
+    "#forge:wires/electrum",
+    "#forge:wires/electrum",
+    "#forge:wires/electrum"
+  ]).superheated()
+
+  //完美代码
+  event.recipes.create.sequenced_assembly([
+      Item.of('kubejs:code_perfection').withChance(0.8),
+      Item.of('kubejs:code_formation').withChance(0.1),
+      Item.of('kubejs:code_destruction').withChance(0.1)
+    ], 'kubejs:code_vessel', [
+      event.recipes.createDeploying('kubejs:incomplete_code_perfection', ['kubejs:incomplete_code_perfection', 'farmersdelight:rice_roll_medley_block']),
+      event.recipes.createDeploying('kubejs:incomplete_code_perfection', ['kubejs:incomplete_code_perfection', 'refinedstorage:controller']),
+      event.recipes.createDeploying('kubejs:incomplete_code_perfection', ['kubejs:incomplete_code_perfection', 'bosses_of_mass_destruction:obsidian_heart']),
+      event.recipes.createDeploying('kubejs:incomplete_code_perfection', ['kubejs:incomplete_code_perfection', 'createnuclear:reactor_controller']),
+      event.recipes.vintageimprovements.vibrating('kubejs:incomplete_code_perfection', 'kubejs:incomplete_code_perfection'),
+      event.recipes.createFilling('kubejs:incomplete_code_perfection', ['kubejs:incomplete_code_perfection', Fluid.of('create_enchantment_industry:hyper_experience',200)])
+  ]).transitionalItem('kubejs:incomplete_code_perfection').loops(1)
+
+  //构成代码
+  event.recipes.create.sequenced_assembly([
+      Item.of('kubejs:code_formation').withChance(0.8),
+      Item.of('kubejs:code_perfection').withChance(0.1),
+      Item.of('kubejs:code_destruction').withChance(0.1)
+    ], 'kubejs:code_vessel', [
+      event.recipes.createDeploying('kubejs:incomplete_code_formation', ['kubejs:incomplete_code_formation', 'botania:spawner_mover']),
+      event.recipes.createDeploying('kubejs:incomplete_code_formation', ['kubejs:incomplete_code_formation', 'alexsmobs:enderiophage_rocket']),
+      event.recipes.createDeploying('kubejs:incomplete_code_formation', ['kubejs:incomplete_code_formation', 'create_confectionery:gingerbread_man']),
+      event.recipes.createDeploying('kubejs:incomplete_code_formation', ['kubejs:incomplete_code_formation', 'alexsmobs:blood_sprayer']),
+      event.recipes.vintageimprovements.laser_cutting('kubejs:incomplete_code_formation', 'kubejs:incomplete_code_formation'),
+      event.recipes.createFilling('kubejs:incomplete_code_formation', ['kubejs:incomplete_code_formation', Fluid.of('create_enchantment_industry:hyper_experience',200)])
+  ]).transitionalItem('kubejs:incomplete_code_formation').loops(1)
+
+  //毁灭代码
+  event.recipes.create.sequenced_assembly([
+    Item.of('kubejs:code_destruction').withChance(0.8),
+    Item.of('kubejs:code_formation').withChance(0.1),
+    Item.of('kubejs:code_perfection').withChance(0.1)
+  ], 'kubejs:code_vessel', [
+    event.recipes.createDeploying('kubejs:incomplete_code_destruction', ['kubejs:incomplete_code_destruction', 'scguns:osborne_slug']),
+    event.recipes.createDeploying('kubejs:incomplete_code_destruction', ['kubejs:incomplete_code_destruction', 'botania:astrolabe']),
+    event.recipes.createDeploying('kubejs:incomplete_code_destruction', ['kubejs:incomplete_code_destruction', 'bosses_of_mass_destruction:blazing_eye']),
+    event.recipes.createDeploying('kubejs:incomplete_code_destruction', ['kubejs:incomplete_code_destruction', 'minecraft:netherite_pickaxe']),
+    event.recipes.vintageimprovementsHammering('kubejs:incomplete_code_destruction', 'kubejs:incomplete_code_destruction'),
+    event.recipes.createFilling('kubejs:incomplete_code_destruction', ['kubejs:incomplete_code_destruction', Fluid.of('create_enchantment_industry:hyper_experience',200)])
+  ]).transitionalItem('kubejs:incomplete_code_destruction').loops(1)
+
+  //创造板条箱
+  event.recipes.create.deploying("create:creative_crate", ['createutilities:void_chest', 'botania:corporea_spark_creative'])
+
+  //创造流体储罐
+  event.recipes.create.deploying("create:creative_fluid_tank", ['createutilities:void_tank', 'kubejs:world_base_gem'])
+
+  //创造马达
+  event.recipes.create.deploying("create:creative_motor", ['createutilities:void_motor', 'kubejs:world_base_gem'])
+
+  //创造蓄电池
+  event.recipes.create.deploying("immersiveengineering:capacitor_creative", ['createutilities:void_battery', 'kubejs:world_base_gem'])
+
+  //创造烈焰蛋糕
+  event.recipes.create.deploying("create:creative_blaze_cake", ['create:blaze_cake', 'kubejs:world_base_gem'])
+
+  
+  //魔法侧终极修改
+  
+  //头像复制
+  event.shapeless(Item.of('kubejs:midnight',4),
+        [
+            'goety:philosophers_stone',
+            'kubejs:raw_world_base',
+            'minecraft:echo_shard',
+            'aquamirae:ship_graveyard_echo'
+        ]
+    )
+
+  //永固之瓶制作
+  event.shaped(
+    Item.of('kubejs:reinforced_bottle', 8),
+    [
+        'AEC',
+        'BDB',
+        'CEA'
+    ],
+    {
+        B: 'botania:ender_air_bottle',
+        A: 'minecraft:netherite_ingot',
+        D: 'kubejs:raw_world_base',
+        C: 'botania:gaia_ingot',
+        E: 'kubejs:leyden_jar'
+    }
+  )
+
+  //亡灵火盆催化虚空精华
   event.custom({
-    "type": "bloodmagic:arc",
-    //可能存在的追加输出（可以不写）
-    "addedoutput": [
+    "type": "goety:brazier",
+    "soulCost": 10000,
+    "ingredients": [
         {
-          "type": {
-            "item": 'createchromaticreturn:chromatic_compound'
-          },
-          "chance": 0.75,
-          "mainchance": 0.0
+            "item": 'kubejs:reinforced_bottle'
         },
         {
-          "type": {
-              "item": "botania:manasteel_ingot"
-          },
-          "chance": 0.5,
-          "mainchance": 0.0
+            "item": 'kubejs:raw_world_base'
         },
         {
-          "type": {
-              "item": "irons_spellbooks:arcane_ingot"
-          },
-          "chance": 0.5,
-          "mainchance": 0.0
+            "item": 'bosses_of_mass_destruction:void_thorn'
+        },
+        {
+            "item": 'goety:shadow_essence'
         }
     ],
-    //消耗配方（？）
-    "consumeingredient": false,
-    //输入材料
-    "input": {
-        "item": 'createchromaticreturn:refined_radiance'
-    },
-    //输入液体（可以不写）
-    "inputFluid": {
-        "amount": 3000,
-        "fluid": "minecraft:water"
-    },
-    //输入数量（大概）
-    "inputsize": 1,
-    //主要产物输出几率
-    "mainoutputchance": 0.0,
-    //输出产物内容
-    "output": {
-      "item": 'botania:mana_powder'
-    },
-    //输出液体（可以不写）
-    "outputFluid": {
-        "amount": 3000,
-        "fluid": "createchromaticreturn:refined_mixture"
-    },
-    //使用工具（必须是血魔法原有工具）
-    "tool": {
-        "tag": "bloodmagic:arc/hydrate"
+    "result": {
+        "item": 'kubejs:potion_of_void'
     }
   })
 
-  //添加随机生成两种锭的配方，两种液体注册名的版本
+  //花药台合成平衡精华
+  event.recipes.botania.petal_apothecary('kubejs:potion_of_balance', 
+    [
+        'kubejs:reinforced_bottle',
+        'kubejs:raw_world_base',
+        'kubejs:earth_elemental_core',
+        'kubejs:water_elemental_core',
+        'kubejs:fire_elemental_core',
+        'kubejs:wind_elemental_core'
+    ]
+  )
+
+  //魔法仪式合成天赋精华
   event.custom({
-    "type": "bloodmagic:arc",
-    //可能存在的追加输出（可以不写）
-    "addedoutput": [
+    "type": "goety:ritual",
+    "ritual_type": "goety:craft",//仪式主类型（制作）
+    "activation_item": {
+        "item": 'kubejs:reinforced_bottle'//中心物品
+    },
+    "craftType": "magic",//仪式副类型（魔法）
+    "soulCost": 1000,//每秒消耗
+    "duration": 50,//时长
+    "ingredients": [
         {
-        "type": {
-            "item": 'createchromaticreturn:glowing_ingot'
-        },
-        "chance": 0.25,
-        "mainchance": 0.0
-        },
-        {
-          "type": {
-              "item": 'createchromaticreturn:silkstrum'
-          },
-          "chance": 0.25,
-          "mainchance": 0.0
+            "item": 'bosses_of_mass_destruction:ancient_anima'
         },
         {
-          "type": {
-              "item": 'createchromaticreturn:chromatic_compound'
-          },
-          "chance": 0.25,
-          "mainchance": 0.0
+            "item": 'goety:forbidden_scroll'
+        },
+        {
+            "item": 'kubejs:raw_world_base'
+        },
+        {
+            "item": 'irons_spellbooks:legendary_ink'
         }
     ],
-    //消耗配方（？）
-    "consumeingredient": false,
-    //输入材料
-    "input": {
-        "item": 'botania:gaia_ingot'
-    },
-    //输入液体（可以不写）
-    "inputFluid": {
-        "amount": 1000,
-        "fluid": "createchromaticreturn:refined_mixture"
-    },
-    //输入数量（大概）
-    "inputsize": 1,
-    //主要产物输出几率
-    "mainoutputchance": 0.0,
-    //输出产物内容
-    "output": {
-      "item": 'botania:gaia_ingot'
-    },
-    //输出液体（可以不写）
-    "outputFluid": {
-        "amount": 1000,
-        "fluid": "minecraft:water"
-    },
-    //使用工具（必须是血魔法原有工具）
-    "tool": {
-        "tag": "bloodmagic:arc/resonator"
-    }
-  })
-  event.custom({
-    "type": "bloodmagic:arc",
-    //可能存在的追加输出（可以不写）
-    "addedoutput": [
-        {
-        "type": {
-            "item": 'createchromaticreturn:glowing_ingot'
-        },
-        "chance": 0.25,
-        "mainchance": 0.0
-        },
-        {
-          "type": {
-              "item": 'createchromaticreturn:silkstrum'
-          },
-          "chance": 0.25,
-          "mainchance": 0.0
-        },
-        {
-          "type": {
-              "item": 'createchromaticreturn:chromatic_compound'
-          },
-          "chance": 0.25,
-          "mainchance": 0.0
-        }
-    ],
-    //消耗配方（？）
-    "consumeingredient": false,
-    //输入材料
-    "input": {
-        "item": 'botania:gaia_ingot'
-    },
-    //输入液体（可以不写）
-    "inputFluid": {
-        "amount": 1000,
-        "fluid": "createchromaticreturn:flowing_refined_mixture"
-    },
-    //输入数量（大概）
-    "inputsize": 1,
-    //主要产物输出几率
-    "mainoutputchance": 0.0,
-    //输出产物内容
-    "output": {
-      "item": 'botania:gaia_ingot'
-    },
-    //输出液体（可以不写）
-    "outputFluid": {
-        "amount": 1000,
-        "fluid": "minecraft:water"
-    },
-    //使用工具（必须是血魔法原有工具）
-    "tool": {
-        "tag": "bloodmagic:arc/resonator"
+    "result": {
+        "item": 'kubejs:potion_of_talent'//实际产出
     }
   })
 
-  //矩阵炼成复制火花
-  event.custom({
-    "type": "bloodmagic:array",
-    "addedinput": {
-        "item": 'createchromaticreturn:multiplite_ingot'
-    },
-    "baseinput": {
-        "item": 'botania:corporea_spark_master'
-    },
-    "output": {
-        "item": 'botania:corporea_spark_creative'
-    },
-    "texture": "bloodmagic:textures/models/alchemyarrays/bindingarray.png"
-  })
+  //混合终末修改
+  //神圣护盾系统
+  event.shaped(
+    Item.of('kubejs:divine_shield_system'),
+    [
+        ' A ',
+        'BCD',
+        ' E '
+    ],
+    {
+        A: 'shieldexp:netherite_shield',
+        B: 'irons_spellbooks:holy_upgrade_orb',
+        C: 'kubejs:raw_world_base',
+        D: 'minecraft:dragon_egg',
+        E: 'kubejs:electronic_engineering'
+    }
+  )
+  //灵魂熔炉
+  event.shaped(
+    Item.of('kubejs:soul_furnace'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        B: 'goety:sculk_devourer',
+        A: 'immersiveengineering:blastbrick_reinforced',
+        D: 'kubejs:raw_world_base',
+        C: 'goety:reinforced_redstone_block'
+    }
+  )
+  //奥术充能器
+  event.shaped(
+    Item.of('kubejs:arcane_charger'),
+    [
+        'ABA',
+        'CDC',
+        'ABA'
+    ],
+    {
+        C: 'kubejs:fission_cell',
+        A: 'irons_spellbooks:lightning_upgrade_orb',
+        B: 'irons_spellbooks:arcane_anvil',
+        D: 'irons_spellbooks:energized_core'
+    }
+  )
 
+
+  //魔法创造系合成
+  //炼成复制火花
+  event.custom({
+        "type": "goety:cursed_infuser_recipes",
+        "ingredient": {
+            "item": 'kubejs:world_base_gem'
+        },
+        "result": 'botania:corporea_spark_creative',
+        "cookingTime": 2400
+  })
+  
   //符文祭坛炼制永恒魔力池
   event.recipes.botania.runic_altar('botania:creative_pool',
     [
-        'createchromaticreturn:multiplite_ingot',
+        'kubejs:world_base_gem',
         'botania:fabulous_pool',
         'botania:mana_bomb',
         'create:creative_fluid_tank'
@@ -303,60 +506,87 @@ ServerEvents.recipes(event => {
     100000
   )
 
-  //符文祭坛炼制丝触书籍
-  event.recipes.botania.runic_altar('createchromaticreturn:silkstrum_book',
-    [
-        'createchromaticreturn:silkstrum', 
-        'bosses_of_mass_destruction:void_thorn',
-        'bosses_of_mass_destruction:blazing_eye',
-        'irons_spellbooks:gold_spell_book',
-        'bosses_of_mass_destruction:ancient_anima',
-        'bosses_of_mass_destruction:obsidian_heart'
-    ],
-    100000
-  )
-
-  //灵魂锻炉丝绸书三本复制四本
+  //环境枪：创造集成
+  //铸造仪式
   event.custom({
-    "type": "bloodmagic:soulforge",
-    "drain": 512.0,//单次吸收量
-    "input0": {
-        "item": 'createchromaticreturn:silkstrum_book'
+    "type": "goety:ritual",
+    "ritual_type": "goety:craft",//仪式主类型（制作）
+    "activation_item": {
+        "item": 'kubejs:world_base_gem'//中心物品
     },
-    "input1": {
-        "item": 'createchromaticreturn:silkstrum_book'
-    },
-    "input2": {
-        "item": 'createchromaticreturn:silkstrum_book'
-    },
-    "input3": {
-        "item": 'irons_spellbooks:gold_spell_book'
-    },
-    "minimumDrain": 2048.0,//要求使用材料的最低容量
-    "output": {
-        "count": 4,//生成数量
-        "item": 'createchromaticreturn:silkstrum_book'
+    "craftType": "forge",//仪式副类型（铸造）
+    "soulCost": 1000,//每秒消耗
+    "duration": 50,//时长
+    "ingredients": [
+        {
+            "item": 'botania:corporea_spark_creative'
+        },
+        {
+            "item": 'create:creative_blaze_cake'
+        },
+        {
+            "item": 'botania:creative_pool'
+        },
+        {
+            "item": 'create:creative_crate'
+        },
+        {
+            "item": 'create:creative_fluid_tank'
+        },
+        {
+            "item": 'create:creative_motor'
+        },
+        {
+            "item": 'immersiveengineering:capacitor_creative'
+        },
+        {
+            "item": 'scguns:creative_ammo_box'
+        },
+    ],
+    "result": {
+        "item": 'create:handheld_worldshaper'//实际产出
     }
   })
-
   //终极彩蛋：可睡觉的床
   event.remove({id:'undergarden:depthrock_bed'})
-  //符文祭坛
-  event.recipes.botania.runic_altar('undergarden:depthrock_bed', 
-    [
-      'create:handheld_worldshaper',
-      'immersiveengineering:coke_oven', 
-      'immersiveengineering:blast_furnace',
-      'immersiveengineering:advanced_blast_furnace', 
-      'immersiveengineering:metal_press',
-      'immersiveengineering:crusher', 
-      'immersiveengineering:fermenter',
-      'immersiveengineering:squeezer', 
-      'immersiveengineering:diesel_generator',
-      'immersiveengineering:arc_furnace', 
-      'immersiveengineering:excavator',
-      'immersiveengineering:bucket_wheel'
-    ], 
-    50000
-  )
+  //安息仪式
+  event.custom({
+    "type": "goety:ritual",
+    "ritual_type": "goety:craft",//仪式主类型（制作）
+    "activation_item": {
+        "item": 'create:handheld_worldshaper'//中心物品
+    },
+    "craftType": "sabbath",//仪式副类型（安息）
+    "soulCost": 1000,//每秒消耗
+    "duration": 50,//时长
+    "ingredients": [
+        {
+            "item": 'goety:unholy_hat'
+        },
+        {
+            "item": 'goety:soul_ruby'
+        },
+        {
+            "item": 'aquamirae:coral_lance'
+        },
+        {
+            "item": 'alexsmobs:shattered_dimensional_carver'
+        },
+        {
+            "item": 'bosses_of_mass_destruction:monolith_block'
+        },
+        {
+            "item": 'bosses_of_mass_destruction:charged_ender_pearl'
+        },
+        {
+            "tag": 'minecraft:beds'
+        },
+        {
+            "item": 'scguns:scorched_blueprint'
+        }
+    ],
+    "result": {
+        "item": 'undergarden:depthrock_bed'//实际产出
+    }
+  })
 })

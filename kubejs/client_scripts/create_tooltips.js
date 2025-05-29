@@ -1,7 +1,17 @@
+// priority: 100
 //实验性添加机械动力形式的tooltips支持
 const ItemDescription = Java.loadClass("com.simibubi.create.foundation.item.ItemDescription$Modifier")
 const TooltipModifier = Java.loadClass("com.simibubi.create.foundation.item.TooltipModifier")
-const Palette = Java.loadClass("com.simibubi.create.foundation.item.TooltipHelper$Palette")
+const Palette = Java.loadClass("net.createmod.catnip.lang.FontHelper").Palette
+
+function AddCreateTooltips(id) {
+    try {
+        TooltipModifier.REGISTRY.register(
+            Item.of(id).item, // resloc to item
+            new ItemDescription(id, Palette.STANDARD_CREATE),
+        )
+    } catch (e) {}
+}
 
 const CreateTooltipsItems = [
     "immersiveengineering:hammer",
@@ -33,9 +43,6 @@ const CreateTooltipsItems = [
 
 ClientEvents.loggedIn(event => {
     CreateTooltipsItems.forEach((id) => 
-            TooltipModifier.REGISTRY.register(
-            id,
-            new ItemDescription(id, Palette.STANDARD_CREATE)
-            )
+      AddCreateTooltips(id)
     )
 })

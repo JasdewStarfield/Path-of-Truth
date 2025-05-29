@@ -1,0 +1,21 @@
+
+["Config for More legal Storage on Contraption !"]
+	#Weather default uses all storage blocks
+	#Instructions:
+	#If you set it true,the mod will open all of you contraption's storage by default
+	#If you set it false, your block will close by default,also,as the result you can't open it until they become block.
+	#And in any circumstances you can use Contraption Control Block to change the action it performed
+	#
+	DefaultOpen = true
+	#Search range for neighboring block (best bigger than 9, because Vault maxsize is 9)
+	SearchRange = 10
+	#When contraption want to store any item which can save fluid (such as water bucket),
+	#we will automatically dump fluid into tanks and return an empty tankItem and
+	#automatically fill bucket with fluid when contraption extract it (such as extracting water bucket, and make water bucket right now)
+	#
+	AutoDumping = true
+	#Allow to use AE2 on contraption
+	AE2_Support = false
+	#Load Spatial chunks those are used on contraptions
+	load_chunk_auto = true
+

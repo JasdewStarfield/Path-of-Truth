@@ -1,79 +1,39 @@
 ServerEvents.recipes(event => {
-  //我真是sb
-  event.shapeless(Item.of('tfmg:coal_coke_dust',1),
-        [
-            '#forge:dusts/coal_coke'
-        ]
-  )
-  //我不到啊
-  event.shapeless(Item.of('tfmg:aluminum_ingot',1),
-        [
-            '#forge:ingots/aluminum'
-        ]
-  )
-  event.shapeless(Item.of('create:copper_nugget',1),
-        [
-            '#forge:nuggets/copper'
-        ]
-  )
+  const UndergardenWoodType = [
+    'smogstem',
+    'wigglewood',
+    'grongle'
+  ]
 
-  //背包
-  //基础材料替换
-  event.replaceInput(
-    {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'#forge:ingots/iron'},
-    '#forge:ingots/iron',
-    '#forge:plates/andesite'
-  )
-  event.replaceInput(
-    {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'#forge:ingots/gold'},
-    '#forge:ingots/gold',
-    'dirt'
-  )
-  event.replaceInput(
-    {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'#forge:gems/diamond'},
-    '#forge:gems/diamond',
-    '#forge:gems/dragonstone'
-  )
-  event.replaceInput(
-    {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'#forge:dusts/redstone'},
-    '#forge:dusts/redstone',
-    'irons_spellbooks:arcane_essence'
-  )
-  event.replaceInput(
-    {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'experience_bottle'},
-    'experience_bottle',
-    'create:experience_nugget'
-  )
-  event.replaceInput(
-    {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'#forge:glass'},
-    '#forge:glass',
-    'create:fluid_tank'
-  )
-  event.replaceInput(
-    {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'dispenser'},
-    'dispenser',
-    'kubejs:logistical_engineering'
-  )
-  event.replaceInput(
-    {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'piston', not:{output:"sophisticatedbackpacks:compacting_upgrade"}},
-    'piston',
-    'create:andesite_tunnel'
-  )
-  event.replaceInput(
-    {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'sticky_piston'},
-    'sticky_piston',
-    'create:andesite_funnel'
-  )
-  event.replaceInput(
-    {id:/sophisticatedbackpacks\:.*upgrade.*/, input:'#forge:chests'},
-    '#forge:chests',
-    'kubejs:logistical_engineering'
-  )
-  event.replaceInput(
-    {id:/sophisticatedbackpacks\:.*filter_upgrade.*/, input:'#forge:strings'},
-    '#forge:strings',
-    'create:filter'
-  )
+  const GoetyWoodType = [
+      'haunted',
+      'rotten',
+      'windswept',
+      'pine'
+  ]
+
+  UndergardenWoodType.forEach((id) => {
+    event.recipes.create.cutting(`undergarden:stripped_${id}_log`, `undergarden:${id}_log`)
+    event.recipes.create.cutting(`undergarden:stripped_${id}_wood`, `undergarden:${id}_wood`)
+    event.recipes.create.cutting(`6x undergarden:${id}_planks`, `undergarden:stripped_${id}_log`)
+    event.recipes.create.cutting(`6x undergarden:${id}_planks`, `undergarden:stripped_${id}_wood`)
+  })
+
+  GoetyWoodType.forEach((id) => {
+    event.recipes.create.cutting(`goety:stripped_${id}_log`, `goety:${id}_log`)
+    event.recipes.create.cutting(`goety:stripped_${id}_wood`, `goety:${id}_wood`)
+    event.recipes.create.cutting(`6x goety:${id}_planks`, `goety:stripped_${id}_log`)
+    event.recipes.create.cutting(`6x goety:${id}_planks`, `goety:stripped_${id}_wood`)
+  })
+
+  event.recipes.create.cutting(`outer_end:azure_stripped_stem`, `outer_end:azure_stem`)
+  event.recipes.create.cutting(`outer_end:azure_stripped_pith`, `outer_end:azure_pith`)
+  event.recipes.create.cutting(`6x outer_end:azure_planks`, `outer_end:azure_stripped_stem`)
+  event.recipes.create.cutting(`6x outer_end:azure_planks`, `outer_end:azure_stripped_pith`)
+  event.recipes.create.cutting(`netherexp:stripped_claret_stem`, 'netherexp:cerebrage_claret_stem')
+  event.recipes.create.cutting(`netherexp:stripped_claret_hyphae`, 'netherexp:cerebrage_claret_hyphae')
+  event.recipes.create.cutting(`6x netherexp:claret_planks`, 'netherexp:stripped_claret_stem')
+  event.recipes.create.cutting(`6x netherexp:claret_planks`, 'netherexp:stripped_claret_hyphae')
 
 
   //鲶鱼转化
@@ -83,12 +43,28 @@ ServerEvents.recipes(event => {
         ]
   )
 
+  //凝胶复刻示意图
+  event.shaped(
+    Item.of('minecraft:barrier'),
+    [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],
+    {
+        A: 'alexsmobs:mimicream',
+        B: 'minecraft:barrier'
+    }
+)
+
+  /*
   //铁矿混合粉也可以用铁粉做
   event.recipes.create.mixing('3x tfmg:blasting_mixture', ['#forge:dusts/iron','#forge:dusts/iron','#forge:dusts/iron','tfmg:limesand'])
 
   //石灰砂可以用方解石磨
   event.remove({id:"create:milling/calcite"})
   event.recipes.create.milling([Item.of('tfmg:limesand').withChance(0.5), Item.of('bone_meal').withChance(0.75)], 'calcite')
+  */
 
   //我寻思工业大麻也能做绳子
   event.shaped('3x farmersdelight:rope', [ 
@@ -99,25 +75,24 @@ ServerEvents.recipes(event => {
     A: 'immersiveengineering:hemp_fiber'
   })
 
-  //齿轮方块就该是齿轮！
-  event.remove({ id: 'supplementaries:cog_block' })
-  event.shaped('12x supplementaries:cog_block', [ 
-    'AAA', 
-    'ABA',
-    'AAA'  
-  ], {
-    A: 'create:cogwheel',
-    B: '#forge:storage_blocks/redstone'
-  })
-
   //干岩盐怎么就不能磨出盐了
-  event.recipes.create.crushing(Item.of('salt:raw_rock_salt').withChance(0.25), 'biomesoplenty:dried_salt')
+  //event.recipes.create.crushing(Item.of('salt:raw_rock_salt').withChance(0.25), 'biomesoplenty:dried_salt')
 
   //硫磺石就不是硫磺了吗？
-  event.recipes.create.crushing(Item.of('tfmg:sulfur_dust').withChance(0.1), 'biomesoplenty:brimstone')
+  //event.recipes.create.crushing(Item.of('#forge:dusts/sulfur').withChance(0.1), 'biomesoplenty:brimstone')
+
+  //更真实的铁栅栏
+  event.replaceInput(
+    {id:"minecraft:iron_bars"},
+    '#forge:ingots/iron',
+    '#forge:rods/iron'
+  )
+
+  //所有沙子都可以注水成为原版沙子
+  event.recipes.create.filling(Item.of('sand'), [Ingredient.of("#minecraft:sand").subtract('minecraft:sand'), Fluid.of('minecraft:water', 100)])
 
   //由于移除了沉浸工程锯木机，补充锯末的获取配方
-  event.recipes.create.cutting(Item.of('immersiveengineering:dust_wood').withChance(0.5), 'stick')
+  event.recipes.create.cutting(Item.of('immersiveengineering:dust_wood'), 'createdieselgenerators:wood_chip')
 
   //锯末面包……
   event.shaped('2x bread', [ 
@@ -128,12 +103,21 @@ ServerEvents.recipes(event => {
     B: 'wheat'
   })
 
-  //大哥我问你话呢？铝脚手架为啥是钢做的啊？？？
-  event.replaceInput(
-    {output:'tfmg:aluminum_scaffolding'},
-    '#forge:ingots/steel',
-    '#forge:ingots/aluminum'
-  )
+  //纸浆
+  event.remove({id: 'create:mixing/cardboard_pulp'})
+  event.recipes.create.mixing('create:pulp', ['immersiveengineering:dust_wood', 'immersiveengineering:dust_wood', 'farmersdelight:straw', 'farmersdelight:straw', Fluid.of('immersiveengineering:creosote', 100), Fluid.of('minecraft:water', 100)])
+
+  //钟(?)
+  event.shaped('bell', [ 
+    'B', 
+    'A' 
+  ], {
+    A: '#forge:plates/bronze',
+    B: '#forge:storage_blocks/bronze'
+  })
+
+  //工业肥料搅拌配方
+  event.recipes.create.mixing('3x immersiveengineering:fertilizer', ['#forge:dusts/sulfur', '#forge:dusts/saltpeter', '#forge:slag', Fluid.of('minecraft:water', 1000)])
 
   //工作台的通用性适配
   event.replaceInput(
@@ -149,12 +133,12 @@ ServerEvents.recipes(event => {
         ]
   )
 
-  //补充：暗影精华桶和光辉混合物桶均可以通过分液返还流体
-  event.recipes.create.emptying([Fluid.of("createchromaticreturn:refined_mixture",1000), 'bucket'], 'createchromaticreturn:refined_mixture_bucket')
-  event.recipes.create.emptying([Fluid.of("createchromaticreturn:shadow_essence",1000), 'bucket'], 'createchromaticreturn:shadow_essence_bucket')
+  //灵质流体物品搅拌转化
+  event.recipes.create.mixing('goety:ectoplasm', Fluid.of('netherexp:ectoplasm', 125))
 
-  //血魔法植物油-植物油流体
-  event.recipes.create.emptying([Fluid.of("immersiveengineering:plantoil",50), Item.of('air')], 'bloodmagic:plantoil')
+  //蛋糕！
+  //其它蛋糕的统一慢慢做吧
+  event.remove({output:"minecraft:cake", type: "minecraft:crafting"})
   
 
   //下面是一些重复配方的移除
@@ -164,13 +148,20 @@ ServerEvents.recipes(event => {
     '#forge:flour'
   )
   event.remove({ id: 'beautify:rope' })
-  event.remove({ id: 'tfmg:crushing/saltpeter' })
-  event.remove({ id: 'tfmg:mixing/gun_powder' })
-  event.remove({ id:"tfmg:filling/liquid_asphalt_bucket" })
   event.remove({ id:"everycomp:c/botania/livingwood_slab_from_livingwood_planks_stonecutting" })
   event.remove({ id:"everycomp:c/botania/livingwood_stairs_from_livingwood_planks_stonecutting" })
   event.remove({ id:"everycomp:c/botania/dreamwood_slab_from_dreamwood_planks_stonecutting" })
   event.remove({ id:"everycomp:c/botania/dreamwood_stairs_from_dreamwood_planks_stonecutting" })
   event.remove({ id: 'create:industrial_iron_block_from_ingots_iron_stonecutting' })
+  event.remove({ id: 'createnuclear:crushing/charcoal' })
+  event.remove({ id: 'create:crushing/tuff' })
+  event.remove({ id: 'create:crushing/tuff_recycling' })
+  event.remove({ id: 'createaddition:mixing/electrum' })
+  event.remove({ id: 'oreganized:create/mixing/electrum_ingot' })
+  event.remove({ id: 'oreganized:create/splashing/crushed_lead_ore' })
+  event.remove({ id: 'oreganized:create/splashing/crushed_silver_ore' })
+  event.remove({ input: 'oreganized:bush_hammer' })
+  event.remove({ output: 'oreganized:bush_hammer' })
+  event.remove({ id: 'farmersdelight:cutting/saddle' })
 
 })

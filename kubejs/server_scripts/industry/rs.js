@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
     event.replaceInput(
         { output:"refinedstorage:cable" },
         '#forge:glass',
-        'pipez:universal_pipe'
+        'kubejs:logistical_engineering'
     )
 
     //替换范围卡配方
@@ -35,5 +35,5 @@ ServerEvents.recipes(event => {
     'minecraft:ender_eye', 'bosses_of_mass_destruction:obsidian_heart' )
     //无限范围增幅
     event.replaceInput({mod:'rsinfinitybooster',output:'rsinfinitybooster:infinity_card'},
-    'minecraft:nether_star', 'createchromaticreturn:chromatic_compound' )
+    'minecraft:nether_star', 'bosses_of_mass_destruction:obsidian_heart' )
 })

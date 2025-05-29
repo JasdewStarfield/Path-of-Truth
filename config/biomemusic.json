@@ -1,0 +1,61 @@
+{
+  "delayModifier": {
+    "desc:": "Modifies the delay between songs(requires a game restart), lower = shorter delay (1.0 = vanilla). Default = 0.25",
+    "delayModifier": 0.1
+  },
+  "pitchVariance": {
+    "desc:": "Adds randomized pitch variance of up to the given value (e.g. 0.1), makes songs sound slightly different. default = 0",
+    "pitchVariance": 0.1
+  },
+  "musicVariance": {
+    "desc:": "Enables more varied music to be available for biomes chosen from similar other biomes, default = true",
+    "musicVariance": true
+  },
+  "smartMusic": {
+    "desc:": "Enables smart stopping of music, when the biome changes or player leaves a cave/water/night is over, default = true",
+    "smartMusic": true
+  },
+  "musicConditions": {
+    "desc:": "Sets the condition under which music from their respective categories is allowed to play. Required conditions need to be all met, a single matched disallowed conditions prevents it. Possible conditions are: [OVERWORLD, CAVE, WATER, NETHER, END, NIGHT, OTHERDIMENSIONS]",
+    "Biome": {
+      "requires": "[]",
+      "disallowed": "[OTHERDIMENSIONS]"
+    },
+    "Cave": {
+      "requires": "[CAVE]",
+      "disallowed": "[NETHER, WATER, END, OTHERDIMENSIONS]"
+    },
+    "Night": {
+      "requires": "[NIGHT]",
+      "disallowed": "[END, NETHER, CAVE, WATER, OTHERDIMENSIONS]"
+    },
+    "Water": {
+      "requires": "[WATER]",
+      "disallowed": "[END, NETHER, OTHERDIMENSIONS]"
+    },
+    "Game": {
+      "requires": "[]",
+      "disallowed": "[NETHER, END, WATER, OTHERDIMENSIONS]"
+    },
+    "End": {
+      "requires": "[END]",
+      "disallowed": "[OTHERDIMENSIONS]"
+    },
+    "Nether": {
+      "requires": "[NETHER]",
+      "disallowed": "[OTHERDIMENSIONS]"
+    }
+  },
+  "displayMusicPlayed": {
+    "desc:": "Shows currently played music in chat/log, default = false",
+    "displayMusicPlayed": false
+  },
+  "logloadedmusic": {
+    "desc:": "Prints the music files getting loaded into the latest.log, default = false",
+    "logloadedmusic": false
+  },
+  "maxConcurrentSounds": {
+    "desc:": "Set the maximum amount of times the same sound can play at the same time. Limits the amount of lag spamming sounds can create. Default = 10",
+    "maxConcurrentSounds": 100
+  }
+}

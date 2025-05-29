@@ -5,44 +5,39 @@ ServerEvents.recipes(event => {
     }
 
     //安山机壳
+    /*
     event.remove({id:'create:item_application/andesite_casing_from_wood'})
     event.remove({id:'create:item_application/andesite_casing_from_log'})
     casing("create:andesite_casing", "botania:stripped_livingwood", "create:andesite_alloy")
     casing("create:andesite_casing", "botania:stripped_livingwood_log", "create:andesite_alloy")
+    */
     
     //铜机壳
     event.remove({id:'create:item_application/copper_casing_from_wood'})
     event.remove({id:'create:item_application/copper_casing_from_log'})
-    casing('create:copper_casing', "botania:stripped_livingwood", '#forge:plates/constantan')
-    casing('create:copper_casing', "botania:stripped_livingwood_log", '#forge:plates/constantan')
+    casing('create:copper_casing', "createdeco:andesite_sheet_metal", '#forge:plates/constantan')
 
     //黄铜机壳
     event.remove({id:'create:item_application/brass_casing_from_wood'})
     event.remove({id:'create:item_application/brass_casing_from_log'})
-    casing('create:brass_casing', "botania:stripped_livingwood", '#forge:plates/brass')
-    casing('create:brass_casing', "botania:stripped_livingwood_log", '#forge:plates/brass')
+    casing('create:brass_casing', "#forge:treated_wood", '#forge:plates/brass')
 
     //火车机壳
     event.remove({id:'create:item_application/railway_casing'})
-    casing('create:railway_casing', "create:brass_casing", '#forge:plates/obsidian')
+    casing('create:railway_casing', "create:copper_casing", '#forge:plates/obsidian')
 
     //钢机壳
-    event.remove({id:'tfmg:item_application/steel_casing'})
-    casing("tfmg:steel_casing", "immersiveengineering:treated_wood_horizontal", '#forge:plates/steel')
-    event.replaceInput(
-      {input:"tfmg:steel_casing", not: {output:'tfmg:steel_door'}},
-      'tfmg:steel_casing',
-      'immersiveengineering:light_engineering'
-    )
+    casing("kubejs:steel_casing", "create:brass_casing", '#forge:plates/steel')
 
-    //重型机械机壳
-    event.remove({id:'tfmg:item_application/heavy_machinery_casing'})
-    casing("tfmg:heavy_machinery_casing", "tfmg:steel_casing", 'kubejs:frostfire_double_plate')
-    event.replaceInput(
-      {input:"tfmg:heavy_machinery_casing", not: {output:'tfmg:heavy_casing_door'}},
-      'tfmg:heavy_machinery_casing',
-      'immersiveengineering:heavy_engineering'
-    )
+    //虚空机壳
+    event.remove({id:'createutilities:item_application/void_casing'})
+    casing("createutilities:void_casing", "obsidian", '#forge:plates/voidsteel')
+
+    //工厂机壳
+    casing("kubejs:factory_casing", "immersiveengineering:concrete_leaded", 'kubejs:za_sheet')
+
+    //反应堆机壳
+    casing("createnuclear:reactor_casing", "createdieselgenerators:asphalt_block", '#forge:plates/netherite')
 
     //齿轮
     event.remove({id:'create:crafting/kinetics/cogwheel'})
@@ -64,6 +59,13 @@ ServerEvents.recipes(event => {
       '2x botania:livingwood_planks',
     ])
     event.recipes.create.deploying('create:large_cogwheel', ['create:cogwheel', 'botania:livingwood_planks'])
+
+    //卷簧机
+    event.replaceInput(
+      { output:"vintageimprovements:spring_coiling_machine_wheel" },
+      'create:andesite_alloy',
+      '#forge:nuggets/constantan'
+    )
 
     //安山工程块及替换机壳
     event.shaped('kubejs:andesite_engineering', [ 
@@ -93,7 +95,7 @@ ServerEvents.recipes(event => {
       ], {
       B: 'create:copper_casing',
       A: '#forge:plates/bronze',
-      C: 'create:fluid_pipe',
+      C: 'kubejs:basic_spring_set',
       D: 'create:mechanical_pump'
     })
     event.recipes.create.sequenced_assembly([
@@ -101,7 +103,7 @@ ServerEvents.recipes(event => {
     ], 'create:copper_casing', [
       event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', '#forge:plates/bronze']),
       event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', 'create:mechanical_pump']),
-      event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', 'create:fluid_pipe']),
+      event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', 'kubejs:basic_spring_set']),
       event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', '#forge:plates/bronze'])
     ]).transitionalItem('kubejs:incomplete_fluid_engineering').loops(1)
 
@@ -111,7 +113,7 @@ ServerEvents.recipes(event => {
       'CBC',
       ' C '  
       ], {
-      B: 'botania:mana_powder',
+      B: '#forge:ingots/brass',
       A: 'create:andesite_alloy',
       C: 'botania:manasteel_ingot'
     })
@@ -127,17 +129,17 @@ ServerEvents.recipes(event => {
       'CAD'  
       ], {
       B: 'create:brass_casing',
-      A: '#forge:treated_wood',
+      A: '#forge:plates/obsidian',
       C: 'create:precision_mechanism',
-      D: '#forge:plates/obsidian'
+      D: '#forge:wires/brass'
     })
     event.recipes.create.sequenced_assembly([
       'kubejs:precise_engineering'
     ], 'create:brass_casing', [
-      event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', '#forge:treated_wood']),
-      event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', 'create:precision_mechanism']),
       event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', '#forge:plates/obsidian']),
-      event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', '#forge:treated_wood'])
+      event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', 'create:precision_mechanism']),
+      event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', '#forge:wires/brass']),
+      event.recipes.createDeploying('kubejs:incomplete_precise_engineering', ['kubejs:incomplete_precise_engineering', '#forge:plates/obsidian'])
     ]).transitionalItem('kubejs:incomplete_precise_engineering').loops(1)
 
     //物流工程块（来源列车机壳）
@@ -148,15 +150,15 @@ ServerEvents.recipes(event => {
       ], {
       B: 'create:railway_casing',
       A: 'dried_kelp_block',
-      C: '#forge:leather',
-      D: 'immersiveengineering:hemp_fabric'
+      C: 'immersiveengineering:ersatz_leather',
+      D: 'create:cardboard'
     })
     event.recipes.create.sequenced_assembly([
       'kubejs:logistical_engineering'
     ], 'create:railway_casing', [
       event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'dried_kelp_block']),
-      event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', '#forge:leather']),
-      event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'immersiveengineering:hemp_fabric']),
+      event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'immersiveengineering:ersatz_leather']),
+      event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'create:cardboard']),
       event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'dried_kelp_block'])
     ]).transitionalItem('kubejs:incomplete_logistical_engineering').loops(1)
 })

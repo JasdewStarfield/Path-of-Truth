@@ -1,0 +1,7 @@
+{
+  "fireRememberTicks": 200,
+  "fluidRememberTicks": 200,
+  "pushRememberTicks": 80,
+  "placeAnvilRememberTicks": 300,
+  "igniteCreeperRememberTicks": 150
+}

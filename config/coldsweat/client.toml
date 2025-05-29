@@ -9,8 +9,12 @@
 	#A value of 1 has no smoothing
 	#Range: 1.0 ~ 2.147483647E9
 	"Temperature Smoothing" = 10.0
-	#Displays a dripping water effect on-screen when the player is wet
-	"Show Water Effect" = true
+	#Displays a dripping water effect on-screen and/or with particles when the player is wet
+	#0: Off, 1: Particles, 2: On-Screen, 3: Both
+	#Range: 0 ~ 3
+	"Show Water Effect" = 3
+	#The scale of the water droplets on-screen, in scaled "pixels"
+	"Water Droplet Scale" = [40, 48]
 
 ["UI Options"]
 	"Custom hotbar layout" = true
@@ -36,6 +40,18 @@
 	"Distortion Effects" = true
 	#Enables high contrast mode for UI elements
 	"High Contrast" = false
+	#The intensity of the shivering effect when the player is too cold
+	#Range: 0.0 ~ 2.0
+	"Shiver Intensity" = 1.0
+	#The amount of blur applied to the screen when the player is too hot
+	#Range: 0.0 ~ 1.0
+	"Heatstroke Blur Strength" = 1.0
+	#The amount of camera sway applied when the player is too hot
+	#Range: 0.0 ~ 2.0
+	"Heatstroke Sway Amount" = 1.0
+	#The speed of the camera sway applied when the player is too hot
+	#Range: 0.0 ~ 2.0
+	"Heatstroke Sway Speed" = 1.0
 
 [Misc]
 	#Show the config menu button in the Options menu

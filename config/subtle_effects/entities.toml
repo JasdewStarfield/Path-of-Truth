@@ -8,14 +8,20 @@ sheepShearFluff = true
 improvedDragonFireballTrail = true
 commandBlockMinecartParticles = "ON"
 endCrystalParticles = true
-minecartLandingSparks = true
+minecartSparksDisplayType = "DEFAULT"
+minecartSparksDensity = 0.5
 slimeTrails = true
 magmaCubeTrails = true
 replaceSlimeSquishParticles = true
+replaceOozingEffectParticles = true
 replaceSpellCasterParticles = true
 ironGolemCrackParticles = true
 spectralArrowParticles = true
 wardenDeathSoulParticles = true
+xpBottleParticlesDisplayType = "DEFAULT"
+xpBottleParticlesDensity = 10
+eggSmashSoundVolume = 0.5
+freezingSnowFlakes = true
 
 [attacked]
 chickenFeathers = true
@@ -37,44 +43,61 @@ displaySleepingZsOnlyWhenSnoring = false
 adjustNameTagWhenSleeping = true
 
 [humanoids]
-drowningBubbles = "DEFAULT"
+drowningBubblesDisplayType = "DEFAULT"
 drowningBubblesDensity = 10
+drowningBubbleAlpha = 1.0
+potionRingsDisplayType = "DEFAULT"
+potionRingsParticleType = "BOTH"
+NPCsHavePotionRings = true
 
 [humanoids.frostyBreath]
 displayType = "DEFAULT"
 alpha = 0.5
 waitTime = 60
 seasons = "DEFAULT"
+additionalBiomes = [  ]
 
 [humanoids.player]
 stomachGrowlingThreshold = 6
 stomachGrowlingVolume = 1.0
+stomachGrowlingWaitTime = 15
 heartBeatingThreshold = 6
 heartbeatVolume = 1.0
+heartBeatingWaitTime = 3
 
 [dustClouds]
 scale = 0.5
 alpha = 0.8
-playerFell = true
-playerRunning = true
-mobFell = true
-mobRunning = true
-landMaceAttack = true
 preventWhenRaining = true
+flyIntoWall = true
+lessViewBlocking = false
+playerFell = true
+mobFell = true
+landMaceAttack = true
+playerRunning = true
+mobRunning = true
+playerRunningRequiresSpeed = false
 
 [burning]
 smoke = "DEFAULT"
 flames = true
 sparks = true
 sounds = true
+extinguishSteam = true
 
 [itemRarity]
 particlesDisplayType = "NOT_COMMON"
-particleColor = "NAME_COLOR"
+particleColorType = "NAME_COLOR"
 mixedColorName = true
-particleMaxHeight = 7
+useItemBorder = true
+colorOverrides = [  ]
+particleMaxHeight = 1.5
+particleMaxSpeed = 1.0
+particleDensity = 1.0
 
-[primedTNT]
-updateSmoke = true
-flames = true
-sparks = true
+[explosives]
+tntUpdateSmoke = true
+tntFlamesDensity = 1
+tntSparks = true
+creeperSmoke = "UPDATED"
+creeperSparks = true

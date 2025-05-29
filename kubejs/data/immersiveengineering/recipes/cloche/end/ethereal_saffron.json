@@ -1,0 +1,8 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{"item":"endersdelight:ethereal_saffron"},
+    "render":{"type":"generic","block":"endersdelight:ethereal_saffron_bush"},
+    "results":[{"item":"endersdelight:ethereal_saffron"}],
+    "soil":{"item":"minecraft:end_stone"},
+    "time":480
+}

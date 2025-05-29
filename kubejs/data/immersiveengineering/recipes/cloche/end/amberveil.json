@@ -1,0 +1,8 @@
+{
+    "type":"immersiveengineering:cloche",
+    "input":{"item":"endersdelight:amberveil"},
+    "render":{"type":"generic","block":"endersdelight:amberveil_mushroom"},
+    "results":[{"item":"endersdelight:amberveil"}],
+    "soil":{"item":"minecraft:end_stone"},
+    "time":480
+}
