@@ -20,7 +20,7 @@ config/sodium-extra-options.json
 /shaderpacks
 /XaeroWaypoints
 /XaeroWorldMap
-options.txt
+/options.txt
 /XaeroWaypoints_BACKUP*
 config/jade/sort-order.json
 config/xaerominimap_entities.json
@@ -39,7 +39,6 @@ route.drawio
 /config/konkrete/locals
 config/jei/ingredient-list-mod-sort-order.ini
 config/immediatelyfast.json
-config/modernfix-mixins.properties
 /config/spark
 hmclversion.cfg
 servers.dat
@@ -102,3 +101,4 @@ win_event*.txt
 /config/crash_assistant/lang
 config/mods_optimizer/mods-database.json
 config/mods_optimizer/mods-database.json.sha256
+config/asyncparticles/asyncparticles-mixin.properties

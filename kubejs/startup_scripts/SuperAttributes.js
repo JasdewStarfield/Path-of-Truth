@@ -4,6 +4,7 @@
     let AttributeRegistry = Java.loadClass('io.redspace.ironsspellbooks.api.registry.AttributeRegistry')
     let AttributeModifier = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier')
     let Attributes = Java.loadClass('net.minecraft.world.entity.ai.attributes.Attributes')
+    let TieredItem = Java.loadClass('net.minecraft.world.item.TieredItem')
 
     //attribute cache
     let Attrs = {
@@ -49,7 +50,7 @@
             itemStack: { id, item },
             slotType: slot,
         } = e
-        if (slot == 'mainhand' && id.startsWith('minecraft:netherite_')) {
+        if (slot == 'mainhand' && id.startsWith('minecraft:netherite_') && item instanceof TieredItem) {
             //修改下界合金工具
             if (item?.type?.slot)
                 return

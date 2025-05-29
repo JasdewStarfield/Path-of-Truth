@@ -399,6 +399,24 @@ ServerEvents.recipes(event => {
         }
     )
 
+    //彩虹桥法杖配方追加
+    event.shaped(Item.of('botania:rainbow_rod',1),
+        ['ABC',
+        'HID',
+        'GFE'],
+        {
+            A:'vintageimprovements:andesite_spring',
+            B:'vintageimprovements:copper_spring',
+            C:'vintageimprovements:golden_spring',
+            D:'vintageimprovements:tin_spring',
+            E:'vintageimprovements:zinc_spring',
+            F:'vintageimprovements:blaze_spring',
+            G:'vintageimprovements:bronze_spring',
+            H:'vintageimprovements:constantan_spring',
+            I:'create_confectionery:caramelized_marshmellow_on_a_stick'
+        }
+    )
+
     //末影之眼配方重写
     event.remove({output:'minecraft:ender_eye'})
     event.shaped(Item.of('minecraft:ender_eye',3),

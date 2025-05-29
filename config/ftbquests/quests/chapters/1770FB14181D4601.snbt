@@ -13,14 +13,32 @@
 		}
 	}
 	id: "1770FB14181D4601"
-	images: [{
-		height: 1.0d
-		image: "kubejs:textures/quests/life_of_a_gunsmith.png"
-		rotation: 0.0d
-		width: 10.0d
-		x: 0.0d
-		y: 7.5d
-	}]
+	images: [
+		{
+			height: 1.0d
+			image: "kubejs:textures/quests/life_of_a_gunsmith.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			height: 2.0d
+			image: "scguns:item/unfinished_shotgun_shell"
+			rotation: 0.0d
+			width: 2.0d
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			height: 2.0d
+			image: "immersiveengineering:item/material_gunpart_drum"
+			rotation: 0.0d
+			width: 2.0d
+			x: 1.5d
+			y: 4.5d
+		}
+	]
 	order_index: 5
 	quest_links: [ ]
 	quests: [

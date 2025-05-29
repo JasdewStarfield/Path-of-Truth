@@ -1100,7 +1100,7 @@
 			dependencies: ["193F465F65BC13F1"]
 			description: [
 				"通过随便什么方式获得龙蛋——这是真理的一部分）"
-				"&m&b*小声：这也是对于一些倒霉蛋的补偿——有的人捡不到漂浮在空中的龙皮）&r&r"
+				"&m&b*小声：这也是对于一些倒霉蛋的补偿——有的人捡不到漂浮在空中的龙鳞）&r&r"
 			]
 			id: "583D1483CCA6EA3F"
 			rewards: [
@@ -1364,6 +1364,21 @@
 				{
 					id: "1505869CDCC0258E"
 					item: "netherdepthsupgrade:nether_rice_roll_medley_block"
+					type: "item"
+				}
+				{
+					id: "63F6985388382AA4"
+					item: "largemeals:omurice_block"
+					type: "item"
+				}
+				{
+					id: "6D586AF0CF364464"
+					item: "largemeals:mushroom_pot_pie_block"
+					type: "item"
+				}
+				{
+					id: "4E0EEDB13F9C9154"
+					item: "largemeals:roasted_mutton_rack_block"
 					type: "item"
 				}
 			]

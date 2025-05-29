@@ -35,7 +35,8 @@ ServerEvents.recipes(event => {
       ["create_power_loader:empty_andesite_chunk_loader", "glowstone"],
       ['createaddition:rolling_mill', '#forge:storage_blocks/iron'],
       ['vintageimprovements:spring_coiling_machine', 'vintageimprovements:spring_coiling_machine_wheel'],
-      ['vintageimprovements:vibrating_table', "kubejs:basic_spring_set"]
+      ['vintageimprovements:vibrating_table', "kubejs:basic_spring_set"],
+      ['create:sticker', '#forge:slimeballs'],
     ]
     andesiteEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:andesite_engineering", material)
@@ -50,7 +51,8 @@ ServerEvents.recipes(event => {
       ["create_enchantment_industry:disenchanter", "#create:sandpaper"],
       ["create:hose_pulley", "dried_kelp_block"],
       ["create:portable_fluid_interface", "create:chute"],
-      ["vintageimprovements:vacuum_chamber", "create:mechanical_pump"]
+      ["vintageimprovements:vacuum_chamber", "create:mechanical_pump"],
+      ['create:steam_engine', 'create:mechanical_piston'],
     ]
     fluidEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:fluid_engineering", material)
@@ -70,8 +72,9 @@ ServerEvents.recipes(event => {
       ["create:rotation_speed_controller", "create_connected:control_chip"],
       ["create_power_loader:empty_brass_chunk_loader", "glowstone"],
       ['vintageimprovements:belt_grinder', 'vintageimprovements:grinder_belt'],
-      ["createcobblestone:mechanical_generator", "kubejs:fluid_engineering"],
       //["protection_pixel:armorloadplatform", "kubejs:advanced_spring_set"],
+      ['create_connected:inventory_access_port', 'create:chute'],
+      ['create_mobile_packages:bee_port', 'create:transmitter'],
     ]
     preciseEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:precise_engineering", material)
@@ -96,8 +99,12 @@ ServerEvents.recipes(event => {
       ['create:track_observer', "observer"],
       ['create:track_station', "compass"],
       ['create:track_signal', "create:electron_tube"],
-      ['railways:portable_fuel_interface', "create:chute"],
-      ['railways:track_coupler', "#forge:plates/iron"]
+      //['railways:portable_fuel_interface', "create:chute"],
+      //['railways:track_coupler', "#forge:plates/iron"],
+      ['create:chain_conveyor', 'create:large_cogwheel'],
+      ['create:cart_assembler', 'create:gantry_carriage'],
+      ['create:packager', 'create:cardboard_block'],
+      ['create:package_frogport', '#forge:slimeballs'],
     ]
     logisticalEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:logistical_engineering", material)
@@ -106,7 +113,7 @@ ServerEvents.recipes(event => {
     //轻型工程块
     const lightEngineering = [
       ['createaddition:tesla_coil', "immersiveengineering:coil_mv"],
-      ['vintageimprovements:curving_press', "kubejs:advanced_spring_set"]
+      ['vintageimprovements:curving_press', "kubejs:advanced_spring_set"],
     ]
     lightEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "immersiveengineering:light_engineering", material)
@@ -156,15 +163,28 @@ ServerEvents.recipes(event => {
     //无线红石
     event.remove({id: "create:crafting/logistics/redstone_link"})
     event.shaped(
-      Item.of('create:redstone_link', 8),
+      Item.of('create:redstone_link', 4),
       [
-      'AAA',
+      ' A ',
       'ACA',
-      'AAA'
+      ' A '
       ],
       {
-          A: 'iammusicplayer:radio_antenna',
-          C: 'kubejs:precise_engineering'
+          A: 'create:transmitter',
+          C: 'kubejs:andesite_engineering'
+      }
+    )
+    event.remove({id: "create:crafting/logistics/stock_link"})
+    event.shaped(
+      Item.of('create:stock_link', 4),
+      [
+      ' A ',
+      'ACA',
+      ' A '
+      ],
+      {
+          A: 'create:transmitter',
+          C: 'kubejs:logistical_engineering'
       }
     )
     //传动杆

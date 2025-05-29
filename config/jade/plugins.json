@@ -56,6 +56,16 @@
     "show_tree_block_counts": true,
     "show_num_chops_remaining": true
   },
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
+  },
   "immersiveengineering": {
     "multiblock_icon": true
   },
@@ -87,17 +97,6 @@
   },
   "pipez": {
     "pipe": true
-  },
-  "create": {
-    "filter": true,
-    "backtank_capacity": true,
-    "goggles.requires_goggles": true,
-    "goggles": false,
-    "blaze_burner": true,
-    "exact_block": true,
-    "crafting_blueprint": true,
-    "goggles.detailed": false,
-    "placard": true
   },
   "corpse": {
     "corpse": true

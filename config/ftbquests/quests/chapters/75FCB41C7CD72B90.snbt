@@ -13,14 +13,24 @@
 		}
 	}
 	id: "75FCB41C7CD72B90"
-	images: [{
-		height: 2.0d
-		image: "kubejs:textures/quests/a5.png"
-		rotation: 0.0d
-		width: 17.210084033613445d
-		x: 0.0d
-		y: -3.5d
-	}]
+	images: [
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/a5.png"
+			rotation: 0.0d
+			width: 17.210084033613445d
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			height: 5.0d
+			image: "supermartijn642corelib:textures/gui/background.png"
+			rotation: 0.0d
+			width: 5.0d
+			x: 0.0d
+			y: 0.0d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [

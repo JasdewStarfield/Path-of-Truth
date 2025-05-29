@@ -28,6 +28,30 @@ ServerEvents.recipes(event => {
     ]
   })
 
+  //自动化下界之星
+  event.recipes.create.mixing([
+    'botania:blacker_lotus',
+    '4x nether_star'
+  ], [
+    'botania:blacker_lotus',
+    'aquamirae:ship_graveyard_echo',
+    'aquamirae:ship_graveyard_echo',
+    'minecraft:ender_eye',
+    'minecraft:ender_eye',
+    'scguns:nether_star_fragment',
+    'scguns:nether_star_fragment',
+    'scguns:nether_star_fragment',
+    'scguns:nether_star_fragment'
+  ]).superheated()
+  event.recipes.create.mixing([
+    'kubejs:water_elemental_core',
+    '2x aquamirae:ship_graveyard_echo'
+  ], [
+    'kubejs:water_elemental_core',
+    'aquamirae:ship_graveyard_echo',
+    Fluid.of('netherexp:ectoplasm', 500),
+  ]).heated()
+
   //第五章工业：将Diesel Generators的配方中所有锌锭替换为锌铝合金
   event.replaceInput(
     { mod:"createdieselgenerators" },
@@ -135,7 +159,7 @@ ServerEvents.recipes(event => {
   event.custom({
     "type":"immersiveengineering:mixer",
     "energy":12800,
-    "fluid":{"amount":500,"tag":"forge:diesel"},
+    "fluid":{"amount":50,"tag":"forge:diesel"},
     "inputs":[
       {"base_ingredient":{"tag":"forge:dusts/uranium"},"count":4},
       {"base_ingredient":{"tag":"forge:dusts/hop_graphite"},"count":1},
@@ -151,7 +175,7 @@ ServerEvents.recipes(event => {
       }
     ],
     "heatRequirement": "superheated",
-    "processingTime": 400,
+    "processingTime": 20,
     "results": [
       {
         "fluid": "kubejs:molten_enriched_uranium",

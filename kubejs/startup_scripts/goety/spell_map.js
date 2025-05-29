@@ -7,9 +7,9 @@
         avada: {
             doHit(caster, entity) {
                 caster.health += entity.health
-                caster.maxHealth += entity.maxHealth
-                entity.attack(caster.damageSources().playerAttack(caster), 1)
-                entity.kill()
+                // caster.maxHealth += entity.maxHealth
+                entity.attack(caster.damageSources().playerAttack(caster), entity.health / 2) // nerfed
+                // entity.kill()
             },
             /**
              * @param {Internal.ServerLevel} worldIn

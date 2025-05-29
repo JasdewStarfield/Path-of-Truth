@@ -8,10 +8,6 @@
 	"Capacity Addition of Capacity Enchantment in Canisters" = 1000
 	#Canister can be filled by spouts
 	"Canister can be filled by spouts" = true
-	#Capacity of Tools requiring Fluids in mB
-	"Capacity of Tools requiring Fluids" = 200
-	#Tool Capacity Enchantment Capacity Addition in mB
-	"Capacity Addition of Tools with Capacity Enchantment" = 10
 	#Combustibles do boom boom when on fire
 	"Combustibles blow up" = true
 
@@ -27,7 +23,9 @@
 		#Whenever Huge Diesel Engines are enabled
 		"Huge Diesel Engines" = true
 		#Whenever Diesel Engines can be filled with an Item
-		"Engines can be filled with a bucket" = false
+		"Engines filled with a bucket" = false
+		#Whenever Diesel Engines can be disabled with redstone
+		"Engines disabled with redstone" = true
 
 	["Server Configs"."Oil Config"]
 		#Whenever crude oil deposits are infinite
@@ -44,11 +42,4 @@
 		#High oil chunks percentage
 		#Range: 0.0 ~ 100.0
 		"High oil chunks percentage" = 10.0
-
-		["Server Configs"."Oil Config".Distillation]
-			#Whenever wide Distillation Towers go faster than the thin ones
-			"Wide Distillation Tower Distill Faster" = true
-			#Height of Distillation Tower level
-			#Range: 1 ~ 3
-			"Height of Distillation Tower level" = 1
 

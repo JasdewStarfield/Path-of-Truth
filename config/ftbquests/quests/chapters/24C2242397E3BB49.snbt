@@ -19,10 +19,20 @@
 		{
 			height: 0.5d
 			image: "kubejs:textures/quests/start.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.6607142857142858d
 			x: 0.0d
 			y: 6.0d
+		}
+		{
+			alpha: 72
+			height: 9.0d
+			image: "gallery:textures/painting/endboss.png"
+			rotation: 0.0d
+			width: 9.0d
+			x: 0.0d
+			y: 3.0d
 		}
 	]
 	order_index: 0

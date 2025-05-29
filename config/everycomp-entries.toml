@@ -5,7 +5,7 @@
 	[types.stone_type]
 
 		[types.stone_type.outer_end]
-			himmel = true
+			violite = true
 
 		[types.stone_type.biomeswevegone]
 			white_sandstone = true
@@ -16,6 +16,8 @@
 			windswept_sandstone = true
 			red_rock = true
 			dacite = true
+			mossy_stone = true
+			rocky_stone = true
 
 		[types.stone_type.create]
 			limestone = true
@@ -28,6 +30,7 @@
 
 		[types.stone_type.botania]
 			livingrock = false
+			shimmerrock = true
 
 		[types.stone_type.undergarden]
 			depthrock = true
@@ -39,6 +42,8 @@
 			crypt_stone = true
 			highrock = true
 			siltstone = true
+			marble = true
+			cragrocks = true
 
 		[types.stone_type.scguns]
 			phosphorite = true
@@ -49,6 +54,13 @@
 			brumble = true
 			umber = true
 			cinderstone = false
+			blinding_stone = true
+			nature_stone = true
+			poison_stone = true
+			aquatic_stone = true
+			life_stone = true
+			turquoise_stone = true
+			lunar_stone = true
 
 	[types.cake]
 
@@ -269,4 +281,70 @@
 
 		[entries.wood_type.vct]
 			crafting_table = true
+
+	[entries.stone_type]
+
+		[entries.stone_type.rechiseled]
+			squares = true
+			smooth_large_tiles = true
+			brick_paving_connecting = true
+			brick_pattern_connecting = true
+			brick_pattern = true
+			waves_connecting = true
+			small_bricks = true
+			smooth_large_tiles_connecting = true
+			small_bricks_connecting = true
+			path_connecting = true
+			bordered = true
+			rotated_bricks_connecting = true
+			smooth_rotated_bricks = true
+			rotated_bricks = true
+			big_tiles_connecting = true
+			smooth_brick_paving = true
+			diagonal_bricks = true
+			big_tiles = true
+			smooth_rotated_bricks_connecting = true
+			tiles_connecting = true
+			brick_paving = true
+			small_tiles_connecting = true
+			bordered_connecting = true
+			waves = true
+			crushed_connecting = true
+			tiles = true
+			squares_connecting = true
+			path = true
+			smooth_tiles_connecting = true
+			diagonal_bricks_connecting = true
+			smooth_tiles = true
+			crushed = true
+			small_tiles = true
+			smooth_brick_paving_connecting = true
+			slated = true
+
+		[entries.stone_type.create]
+			cut_wall = true
+			small_bricks = true
+			layered = true
+			cut_brick_wall = true
+			pillar = true
+			cut_brick_stairs = true
+			cut_brick_slab = true
+			polished_cut_slab = true
+			polished_cut_wall = true
+			cut_slab = true
+			small_brick_wall = true
+			cut = true
+			polished_cut = true
+			small_brick_slab = true
+			cut_stairs = true
+			small_brick_stairs = true
+			cut_bricks = true
+			polished_cut_stairs = true
+
+	[entries.mud_type]
+
+		[entries.mud_type.betterarcheology]
+			cracked_brick_stairs = true
+			cracked_brick_slab = true
+			cracked_bricks = true
 

@@ -21,7 +21,7 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 <p align="center">
   
   <a href="https://www.curseforge.com/minecraft/modpacks/path-of-truth">
-    <img src="https://github.com/JasdewStarfield/Path-of-Truth/blob/master/config/fancymenu/assets/logo_new.png" alt="Logo" width="560" height="80">
+    <img src="config/fancymenu/assets/logo_new.png" alt="Logo" width="560" height="80">
   </a>
   <br />
   <a href="https://github.com/JasdewStarfield">
@@ -33,7 +33,7 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
   <h3 align="center">综合向1.20.1Forge整合包</h3>
   <p align="center">
-    整合包反馈交流群：631894460
+    整合包反馈交流群：631894460，798699096
     <br />
     <a href="https://www.curseforge.com/minecraft/modpacks/path-of-truth"><strong>在Curseforge上下载整合包正式版 »</strong></a>
     <br />
@@ -105,13 +105,14 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 - [蔚蓝浩空](https://www.curseforge.com/minecraft/mc-mods/blue-skies)
 - [深暗之园](https://www.curseforge.com/minecraft/mc-mods/the-undergarden)
 - [Alex的生物](https://www.curseforge.com/minecraft/mc-mods/alexs-mobs)
+- [Jaden的下界拓展](https://www.curseforge.com/minecraft/mc-mods/jadens-nether-expansion)
 
 ##### 农业美食模组
 - [农夫乐事](https://www.curseforge.com/minecraft/mc-mods/farmers-delight)及其附属
 - [潮汐](https://www.curseforge.com/minecraft/mc-mods/tide)
 - [均衡饮食](https://www.curseforge.com/minecraft/mc-mods/diet)
 
-熟悉这些模组的玩家可以快速上手，但请注意，这是一个**高度魔改**的整合包（使用[KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs)），不仅更改了**半数以上**关键配方，还添加了数十种**原创**材料。你熟悉的玩法可能需要重新适应。不要依赖惯性思维，迎接新的挑战吧！
+熟悉这些模组的玩家可以快速上手，但请注意，这是一个**高度魔改**的整合包（使用[KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs)），不仅更改了**半数以上**关键配方，还添加了数十种**原创**材料，已有的机制也进行了**大幅修改**。你熟悉的玩法可能需要重新适应。不要依赖惯性思维，迎接新的挑战吧！
 
 #### 独特挑战
 
@@ -153,7 +154,7 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 
 
 1. 先安装原版Minecraft，版本1.20.1（如果启动器支持，建议启用版本独立文件夹）。
-2. 安装Forge，版本47.3.11。
+2. 安装Forge，版本47.4.0。
 3. 克隆本仓库的dev-client分支到你安装版本的目录下（版本独立时通常为versions文件夹的一子文件夹）。
 
 ---
@@ -164,6 +165,9 @@ A Minecraft 1.20.1 Forge tech & magic modpack
 filetree 
 ├── README.md
 ├── LICENSE
+├── config  //模组本地配置
+├── defaultconfigs  //模组默认服务端配置
+├── hotai  //邪恶的模组Class覆盖（）
 ├── kubejs  //魔改内容
 │  ├── assests
 │  ├── data
@@ -171,9 +175,8 @@ filetree
 │  ├── client_scripts
 │  ├── server_scripts
 │  └── startup_scripts
-├── config  //模组本地配置
-├── defaultconfigs  //模组默认服务端配置
-├── schematics
+├── resourcepacks  //内置资源包
+├── schematics  //内置蓝图
 └── mods  //模组
 
 ```
@@ -221,7 +224,7 @@ filetree
 
 该项目签署了 MIT* 授权许可，详情请参阅 [LICENSE.txt](https://github.com/JasdewStarfield/Path-of-Truth/blob/master/LICENSE.txt)
 
-*本项目使用 MIT 协议的范围不包含 /mods 目录中的所有文件，以及 /config/paxi 目录的子目录内的所有 .zip 文件。这些文件的协议解释权归其原作者所有。
+*本项目使用 MIT 协议的范围不包含 /mods 目录中的所有文件，以及 /resourcepacks 目录内的所有未声明由Yourscraft制作的 .zip 文件。这些文件的协议解释权归其原作者所有。部分内置的开源项目有不同的协议要求，具体以其协议内容为准。
 
 ---
 

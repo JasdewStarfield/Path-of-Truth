@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
     event.replaceInput(
         { output:"refinedstorage:cable" },
         '#forge:glass',
-        'pipez:universal_pipe'
+        'kubejs:logistical_engineering'
     )
 
     //替换范围卡配方

@@ -32,6 +32,30 @@
 			x: 0.0d
 			y: 23.5d
 		}
+		{
+			height: 1.0d
+			image: "irons_spellbooks:textures/mob_effect/burning_dash.png"
+			rotation: -90.0d
+			width: 1.0d
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "create:block/controller_rail_powered"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5d
+			y: 17.5d
+		}
+		{
+			height: 1.0d
+			image: "createdeco:block/palettes/decals/decal_fluid"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: 7.0d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]
@@ -296,6 +320,7 @@
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
 			description: ["液体总是要流淌的，然而抗腐蚀的材料不多"]
+			icon: "create:mechanical_pump"
 			id: "27FD1F76136CBD0B"
 			subtitle: "你甚至可以用它们处理牛奶（笑"
 			tasks: [
@@ -340,9 +365,8 @@
 		{
 			dependencies: ["1D0D60C89EA75663"]
 			description: [
-				"为了让液体进入一些东西，你需要足够强力的喷射器（大雾）"
-				"所以，注液器就成为了生产的必需品（更大的雾）"
-				"是的，工业生产——真的只是工业生产。"
+				"为了让液体进入一些东西，你需要足够强力的喷射器（虽然其实也没那么强）"
+				"所以，注液器就成为了生产的必需品……虽然只能用来涂涂抹抹，但也足够了不是吗）"
 			]
 			id: "1DC10C93572BD016"
 			subtitle: "呃，有什么东西灌进来了"
@@ -389,6 +413,8 @@
 				"至于为什么配方是用的流体工程块……大约是液压手吧（心虚）"
 				""
 				"如果你发现你做不出魔法手部零件，考虑发展魔法线！"
+				""
+				"（不喜欢改版的机械手材质的话，可以手动将内置的“Revert Brass Hand”资源包覆盖到“0-PoTAssetsOverride”内）"
 			]
 			id: "7F98F9F01F44BA28"
 			subtitle: "两只手不够用就多来几个"
@@ -667,31 +693,78 @@
 			]
 			title: "附魔工业"
 			x: -2.0d
-			y: 7.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["37C7364F0F3E8C89"]
 			description: [
 				"事实就是：这章有三个工程块（不过这一个目前不是必须项）"
-				"物流工程块允许你合成很多可以用于物流的小工具，尤其是pipez的强力管道——它们可以输送各种资源，且不需要动力驱动。它们还可以进行升级，就像抽屉那样。"
+				"物流工程块允许你合成很多可以用于物流的小工具，尤其是机械动力在6.0中新增的强大物流工具。它们将帮助你实现工厂化物流和自动下单等功能！"
 			]
 			id: "6F27F12FD5EBE559"
 			rewards: [
 				{
-					count: 12
-					id: "3483DA9CF7A9BFFE"
-					item: "pipez:item_pipe"
+					id: "6BD7C506F2008EF3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "create:cardboard_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					count: 12
-					id: "1898D70FDD518270"
-					item: "pipez:fluid_pipe"
+					id: "3EE1E76C6C09BCDD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "create:cardboard_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "56CD886F627854E9"
-					item: "pipez:wrench"
+					id: "2D7C705025A75CFB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "create:cardboard_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2654BCD920148CCD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "create:cardboard_boots"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -716,12 +789,23 @@
 			]
 			icon: "create:track"
 			id: "3DD1A739EA5EDB1D"
-			rewards: [{
-				count: 24
-				id: "65D303F0CC11B324"
-				item: "create:track"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 24
+					id: "65D303F0CC11B324"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "37903B5AE714CEA3"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:track_layers_bag"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			subtitle: "滴滴"
 			tasks: [
@@ -737,14 +821,11 @@
 				}
 			]
 			title: "铁道运输"
-			x: 0.0d
-			y: 20.5d
+			x: -1.5d
+			y: 18.0d
 		}
 		{
-			dependencies: [
-				"10CF3F30EC2A65E8"
-				"2D0DAA028D9B2249"
-			]
+			dependencies: ["10CF3F30EC2A65E8"]
 			description: ["提示：这一步任务属于本章的支线，不一定要在现在完成。"]
 			id: "37C7364F0F3E8C89"
 			subtitle: "它能做什么呢？"
@@ -761,12 +842,12 @@
 			dependencies: ["1D0D60C89EA75663"]
 			description: [
 				"通过进入下界，你将会看到大量的岩浆，并思考自己能不能利用它们……"
-				"幸运的是，连续流体&b超过10000单位液体源（1单位为一格）就视为无限&r这一规律仍然有效。"
+				"幸运的是，连续流体&b超过10000单位液体源（1单位为一格）就视为无限&r这一规律仍然部分有效。"
 				"也就是说，你可以通过软管滑轮从下界岩浆池中抽取&c无尽&r的岩浆！"
 				""
 				"&6&o*这下烈焰人吃饱了）&r&r"
 				"&b需要注意的是，软管滑轮是通过其软管放置面之上的液体量来计算是否无尽的，所以你需要对岩浆池进行一次探底）&r"
-				"&d软管滑轮还可以自动放置岩浆，所以你也许可以在主世界搞一个无尽的岩浆池……大概）&r"
+				"&d基于某些神秘限制，只有下界才能产出无尽的岩浆……&r"
 			]
 			icon: "artifacts:fire_gauntlet"
 			id: "794FE24A776917F2"
@@ -794,7 +875,7 @@
 			]
 			title: "无尽岩浆"
 			x: -2.0d
-			y: 8.5d
+			y: 9.0d
 		}
 		{
 			dependencies: [
@@ -865,7 +946,9 @@
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
+			description: ["对于某些配方，你需要比注液器更加强力的压制工具……"]
 			id: "2365843CB7C02588"
+			subtitle: "强行灌注"
 			tasks: [{
 				id: "1BF501746E83267C"
 				item: "vintageimprovements:vacuum_chamber"
@@ -921,7 +1004,10 @@
 			y: 0.5d
 		}
 		{
-			dependencies: ["607A957382E65976"]
+			dependencies: [
+				"607A957382E65976"
+				"76BE4625CCF2F867"
+			]
 			id: "2D0DAA028D9B2249"
 			tasks: [{
 				id: "196F24099478B230"
@@ -1006,6 +1092,24 @@
 			title: "暴力活化"
 			x: -2.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["1D0D60C89EA75663"]
+			id: "45BA353C2006974A"
+			rewards: [{
+				id: "2F268ADC67CB2A3D"
+				item: "create:steam_whistle"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "S T E A M P O W E R E D"
+			tasks: [{
+				id: "7396DDAE21A05F3B"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.0d
 		}
 	]
 	subtitle: ["Exotic Alloys"]

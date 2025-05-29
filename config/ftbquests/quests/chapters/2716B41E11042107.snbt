@@ -32,6 +32,14 @@
 			x: 0.0d
 			y: 8.0d
 		}
+		{
+			height: 2.0d
+			image: "createdeco:block/palettes/decals/decal_radioactive"
+			rotation: 0.0d
+			width: 2.0d
+			x: 8.0d
+			y: 3.5d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]

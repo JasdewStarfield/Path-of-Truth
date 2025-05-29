@@ -32,6 +32,15 @@
 			x: 0.0d
 			y: 0.5d
 		}
+		{
+			color: 8026746
+			height: 11.0d
+			image: "respawnobelisks:block/rainbow"
+			rotation: 0.0d
+			width: 11.0d
+			x: 0.0d
+			y: -2.5d
+		}
 	]
 	order_index: 0
 	quest_links: [ ]
@@ -68,7 +77,13 @@
 				}
 				{
 					id: "5CAA50EB0779626E"
-					item: "kubejs:midnight"
+					item: {
+						Count: 1
+						id: "kubejs:midnight"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{

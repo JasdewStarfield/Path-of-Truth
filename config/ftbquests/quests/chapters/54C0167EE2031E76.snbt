@@ -233,8 +233,8 @@
 				item: "botania:livingrock"
 				type: "item"
 			}]
-			x: 4.0d
-			y: -8.0d
+			x: 8.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["47D5AC7D15327B25"]
@@ -260,8 +260,8 @@
 				}
 			]
 			title: "红石"
-			x: 6.0d
-			y: -8.0d
+			x: 12.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["74581D474C09D62C"]
@@ -272,7 +272,7 @@
 				item: "minecraft:stone"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 4.0d
 			y: -6.0d
 		}
 		{
@@ -416,7 +416,7 @@
 				}
 			]
 			title: "铀"
-			x: 14.0d
+			x: 16.0d
 			y: 6.0d
 		}
 		{
@@ -428,7 +428,7 @@
 				item: "minecraft:flint"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 14.0d
 			y: -4.0d
 		}
 		{
@@ -455,7 +455,7 @@
 				}
 			]
 			title: "镍"
-			x: 14.0d
+			x: 16.0d
 			y: -4.0d
 		}
 		{
@@ -797,11 +797,8 @@
 				"1A4352FB579FF77E"
 			]
 			description: [
-				"觉得传统的钻头/挤压刷石机太卡/太麻烦？"
-				"试试动力造石机！只要选择需要产出的石头种类（必须是正常情况下流体接触能产生的），通入动力，它就可以自动生成这个石头！"
-				""
-				"支持的石头类型：石头、圆石、玄武岩、熔渣、石灰岩。"
-				"产出速率：1圆石/rpm*s^-1"
+				"如果你玩过Create6.0前的版本，那么你肯定会很熟悉粒子刷石机一类的圆石生产方式。这些方式效率很高，但是它会生成大量粒子和掉落物，对你的渲染和服务器造成压力。"
+				"在Create6.0更新中，官方引入了动力钻头的造石机逻辑：如果固定的钻头破坏了传统刷石机刷出的圆石，且该位置下方有一个开放容器（漏斗、溜槽等），则会直接在该容器内加入一个圆石，并且该圆石实际上不会被破坏。这不仅增加了效率，同时也避免了粒子和掉落物的生成。"
 			]
 			id: "7804D40DE4CE8B4D"
 			rewards: [
@@ -819,16 +816,8 @@
 			shape: "gear"
 			subtitle: "但这里提供了合理的解决方案"
 			tasks: [{
-				id: "4208CB87F5272500"
-				item: {
-					Count: 1
-					id: "createcobblestone:mechanical_generator"
-					tag: {
-						BlockEntityTag: {
-							type: "none"
-						}
-					}
-				}
+				id: "2ABAEB79AB0C4B2D"
+				item: "create:mechanical_drill"
 				type: "item"
 			}]
 			title: "万事开头难"
@@ -866,18 +855,19 @@
 				"31EEBF235BB74190"
 			]
 			id: "60B63A0708C8CD25"
-			subtitle: "红沙燧石岩浆压制，或者闪长岩+石英合成"
+			subtitle: "红沙燧石岩浆压制，或者闪长岩+石英合成，也可以魔力转化"
 			tasks: [{
 				id: "56B47155D9B6DDBB"
 				item: "minecraft:granite"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 14.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["40717610A2317CCE"]
 			id: "31EEBF235BB74190"
+			subtitle: "直接合成，或者使用魔力转化"
 			tasks: [{
 				id: "1DF7603A6E7F462B"
 				item: "minecraft:diorite"
@@ -1071,7 +1061,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "压制碳粉与硝粉！"
+			subtitle: "压制碳粉、硝粉与磷粉！"
 			tasks: [
 				{
 					id: "366B3F3F403B6E45"
@@ -1272,7 +1262,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -6.0d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -1287,7 +1277,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: -6.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["43BB332647AB6F59"]
@@ -1313,7 +1303,7 @@
 				}
 			]
 			x: 12.0d
-			y: -6.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["1A4352FB579FF77E"]
@@ -1471,6 +1461,51 @@
 			]
 			x: -4.0d
 			y: -8.0d
+		}
+		{
+			dependencies: [
+				"31EEBF235BB74190"
+				"40717610A2317CCE"
+			]
+			id: "38C2B161E5D3441A"
+			subtitle: "搅拌或合成，或者魔力转化"
+			tasks: [{
+				id: "1920547C72CEA8EF"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"38C2B161E5D3441A"
+				"1A5264CDF9253994"
+				"47D5AC7D15327B25"
+			]
+			icon: "create:andesite_alloy"
+			id: "748C46D3AE230EF8"
+			rewards: [{
+				id: "2EBE9651FC399854"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "搅拌！"
+			tasks: [
+				{
+					id: "0576A43C784FEEC4"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "3D839A17D2C436C0"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			x: 12.0d
+			y: -2.0d
 		}
 	]
 	subtitle: ["Standardized Production"]
