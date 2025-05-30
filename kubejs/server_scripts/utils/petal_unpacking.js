@@ -25,20 +25,9 @@ ServerEvents.recipes(e => {
     ]
     for (let color of colors) {
         for (let [name, count] of types)
-            e.custom({
-                type: 'vintageimprovements:vibrating',
-                ingredients: [
-                    {
-                        item: `botania:${color}_${name}_flower`,
-                    },
-                ],
-                results: [
-                    {
-                        item: `botania:${color}_petal`,
-                        count: count,
-                    },
-                ],
-                processingTime: count * 10,
-            }).id(`kubejs:vibrating_${color}_${name}_flower`)
+            e.recipes.vintageimprovements
+                .vibrating(Item.of(`botania:${color}_petal`, count), `botania:${color}_${name}_flower`)
+                .processingTime(count * 10)
+                .id(`kubejs:vibrating_${color}_${name}_flower`)
     }
 })
