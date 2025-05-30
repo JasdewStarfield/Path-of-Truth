@@ -5,6 +5,7 @@
 	filename: "0E2F8F4C2B4CBD8C"
 	group: ""
 	hide_quest_details_until_startable: true
+	hide_quest_until_deps_complete: true
 	icon: "botania:fork_light_relay"
 	id: "0E2F8F4C2B4CBD8C"
 	images: [
@@ -102,8 +103,8 @@
 			icon: "blue_skies:blue_journal"
 			id: "0EBCC9ACD99E6B83"
 			rewards: [{
-				id: "41671EF77FD3AF4F"
-				item: "storagedrawers:creative_storage_upgrade"
+				id: "2DC5B6C872F0CBFD"
+				item: "refinedstorage:creative_storage_disk"
 				type: "item"
 			}]
 			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest1.subtitle}"
@@ -202,8 +203,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest1.title}"
-			x: 0.0d
-			y: -0.5d
+			x: -1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6C542C19575974DB"]
@@ -259,8 +260,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest2.title}"
-			x: -1.5d
-			y: 1.0d
+			x: -1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -959,6 +960,11 @@
 					item: "tide:shooting_starfish"
 					type: "item"
 				}
+				{
+					id: "0D6D45252FC35B77"
+					item: "tide:aquathorn"
+					type: "item"
+				}
 			]
 			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest6.title}"
 			x: 0.5d
@@ -1087,8 +1093,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest7.title}"
-			x: 0.0d
-			y: 2.5d
+			x: 1.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["193F465F65BC13F1"]
@@ -1117,8 +1123,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest8.title}"
-			x: 1.5d
-			y: 1.0d
+			x: 1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["15E666BAE38566D8"]
@@ -1136,13 +1142,27 @@
 			]
 			icon: "bosses_of_mass_destruction:brimstone_nectar"
 			id: "5EE2152C42721246"
-			rewards: [{
-				count: 4
-				id: "084E1C6B189000D0"
-				item: "bosses_of_mass_destruction:brimstone_nectar"
-				type: "item"
-			}]
-			shape: "rsquare"
+			rewards: [
+				{
+					count: 4
+					id: "084E1C6B189000D0"
+					item: "bosses_of_mass_destruction:brimstone_nectar"
+					type: "item"
+				}
+				{
+					id: "231A83BCFB84949C"
+					item: {
+						Count: 1
+						id: "scguns:flayed_god"
+						tag: {
+							AmmoCount: 55
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "pentagon"
 			size: 2.0d
 			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest9.subtitle}"
 			tasks: [
@@ -1237,24 +1257,17 @@
 			hide_until_deps_complete: true
 			icon: "betterarcheology:creeper_fossil"
 			id: "21246254369E4A91"
-			rewards: [
-				{
-					id: "297586588106AE0B"
-					item: "betterarcheology:ocelot_fossil"
-					type: "item"
-				}
-				{
-					id: "2B23C2B80ABA8283"
-					item: {
-						Count: 1
-						id: "betterarcheology:netherite_brush"
-						tag: {
-							Damage: 0
-						}
+			rewards: [{
+				id: "2B23C2B80ABA8283"
+				item: {
+					Count: 1
+					id: "betterarcheology:netherite_brush"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest11.subtitle}"
 			tasks: [
 				{
@@ -1285,6 +1298,11 @@
 				{
 					id: "08C0923E7CF6F45F"
 					item: "betterarcheology:chicken_fossil"
+					type: "item"
+				}
+				{
+					id: "6BFE380DC000D3E7"
+					item: "betterarcheology:ocelot_fossil"
 					type: "item"
 				}
 			]
@@ -1346,6 +1364,21 @@
 				{
 					id: "1505869CDCC0258E"
 					item: "netherdepthsupgrade:nether_rice_roll_medley_block"
+					type: "item"
+				}
+				{
+					id: "63F6985388382AA4"
+					item: "largemeals:omurice_block"
+					type: "item"
+				}
+				{
+					id: "6D586AF0CF364464"
+					item: "largemeals:mushroom_pot_pie_block"
+					type: "item"
+				}
+				{
+					id: "4E0EEDB13F9C9154"
+					item: "largemeals:roasted_mutton_rack_block"
 					type: "item"
 				}
 			]
@@ -1438,7 +1471,7 @@
 						}
 					}
 					match_nbt: true
-					title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.task.title1}"
+					title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.task_1196660279068102856.title}"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -1452,7 +1485,7 @@
 						}
 					}
 					match_nbt: true
-					title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.task.title2}"
+					title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.task_6266986016447365671.title}"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -1466,7 +1499,7 @@
 						}
 					}
 					match_nbt: true
-					title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.task.title3}"
+					title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.task_8419237618566645317.title}"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -1480,7 +1513,7 @@
 						}
 					}
 					match_nbt: true
-					title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.task.title4}"
+					title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.task_8956122255254880033.title}"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -1494,7 +1527,7 @@
 						}
 					}
 					match_nbt: true
-					title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.task.title5}"
+					title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.task_7646430804141100666.title}"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -1532,26 +1565,12 @@
 		}
 		{
 			dependencies: ["5D6D256D4DE35A5A"]
-			description: [
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest16.description1}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest16.description2}"
-			]
+			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest16.description1}"]
 			id: "15FED36DE787B730"
 			invisible: true
 			rewards: [{
-				id: "128144164E5F396B"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"cold_sweat:item_insulation": {
-							Insulation: [ ]
-						}
-					}
-					id: "shieldexp:paragon_shield"
-					tag: {
-						Damage: 0
-					}
-				}
+				id: "409BDF8DC7709324"
+				item: "alexsmobs:chorus_on_a_stick"
 				type: "item"
 			}]
 			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest16.subtitle}"
@@ -1570,48 +1589,23 @@
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:blood_staff"
 			id: "722556B2244FD56A"
-			rewards: [{
-				id: "104622516C821057"
-				item: {
-					Count: 1
-					id: "irons_spellbooks:necronomicon_spell_book"
-					tag: {
-						ISBEnhance: "irons_spellbooks:raise_dead"
-						ISB_Spells: {
-							data: [
-								{
-									id: "irons_spellbooks:blood_slash"
-									index: 0
-									level: 5
-									locked: 1b
-								}
-								{
-									id: "irons_spellbooks:blood_step"
-									index: 1
-									level: 5
-									locked: 1b
-								}
-								{
-									id: "irons_spellbooks:ray_of_siphoning"
-									index: 2
-									level: 5
-									locked: 1b
-								}
-								{
-									id: "irons_spellbooks:blaze_storm"
-									index: 3
-									level: 5
-									locked: 1b
-								}
-							]
-							maxSpells: 10
-							mustEquip: 1b
-							spellWheel: 1b
-						}
-					}
+			rewards: [
+				{
+					id: "5A4DA1AA91AA2644"
+					item: "goety:unholy_blood"
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "13036CF909DF7069"
+					item: "goety:unholy_hat"
+					type: "item"
+				}
+				{
+					id: "6693CBA8386FCE14"
+					item: "goety:unholy_robe"
+					type: "item"
+				}
+			]
 			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest17.subtitle}"
 			tasks: [
 				{
@@ -1705,10 +1699,15 @@
 					}
 					type: "item"
 				}
+				{
+					id: "68FCA51BD2D0A93B"
+					item: "alshanex_familiars:bard_harp"
+					type: "item"
+				}
 			]
 			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest17.title}"
 			x: 0.5d
-			y: 8.5d
+			y: 8.0d
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
@@ -1729,18 +1728,24 @@
 			id: "6AFB8B9527F2FEB1"
 			rewards: [
 				{
-					id: "64A64D3BA6050995"
-					item: "createchromaticreturn:silkstrum_book"
+					id: "4A615F858AF6ED73"
+					item: {
+						Count: 1
+						id: "blue_skies:summoning_tome"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "4179BBD536FDB9F1"
-					item: "createchromaticreturn:industrium_book"
+					id: "2B47D41C245AC305"
+					item: "goety:forbidden_scroll"
 					type: "item"
 				}
 				{
-					id: "71328210269A661B"
-					item: "createchromaticreturn:durasteel_book"
+					id: "2D4AD1549F11BA9F"
+					item: "goety:glow_light_focus"
 					type: "item"
 				}
 			]
@@ -1983,10 +1988,26 @@
 					}
 					type: "item"
 				}
+				{
+					id: "5C61EAE5C2AA3922"
+					item: {
+						Count: 1
+						id: "alshanex_familiars:familiar_spellbook"
+						tag: {
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 10
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest18.title}"
 			x: -0.5d
-			y: 9.5d
+			y: 10.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -2161,31 +2182,19 @@
 			]
 			icon: "minecraft:note_block"
 			id: "54B7D31714F8BD90"
-			rewards: [
-				{
-					id: "72966D603D35D2FE"
-					item: "supplementaries:speaker_block"
-					type: "item"
-				}
-				{
-					id: "75909705419E8953"
-					item: {
-						Count: 1
-						id: "alexsmobs:echolocator"
-						tag: {
-							Damage: 0
-						}
+			rewards: [{
+				id: "75909705419E8953"
+				item: {
+					Count: 1
+					id: "alexsmobs:echolocator"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-			]
+				type: "item"
+			}]
 			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest22.subtitle}"
 			tasks: [
-				{
-					id: "56402F7DF17379BA"
-					item: "snowyspirit:music_disc_winter"
-					type: "item"
-				}
 				{
 					id: "1AC06225AEA1762F"
 					item: "botania:record_gaia_1"
@@ -2194,11 +2203,6 @@
 				{
 					id: "3B1626DB53499A4A"
 					item: "botania:record_gaia_2"
-					type: "item"
-				}
-				{
-					id: "746E1F4EF39D0283"
-					item: "biomesoplenty:music_disc_wanderer"
 					type: "item"
 				}
 				{
@@ -2267,11 +2271,6 @@
 					type: "item"
 				}
 				{
-					id: "0A3E10FE9565A564"
-					item: "bloodmagic:bleedingedge"
-					type: "item"
-				}
-				{
 					id: "7BA8650132432C93"
 					item: "create_connected:music_disc_elevator"
 					type: "item"
@@ -2279,6 +2278,51 @@
 				{
 					id: "0A6D02A9D08E5C77"
 					item: "create_connected:music_disc_interlude"
+					type: "item"
+				}
+				{
+					id: "36885F34AE76B98F"
+					item: "netherexp:music_disc_buckshot_wonderland"
+					type: "item"
+				}
+				{
+					id: "0F21B9E8754599A4"
+					item: "goety:music_disc_vizier"
+					type: "item"
+				}
+				{
+					id: "4443365CC9AB37A7"
+					item: "goety:music_disc_apostle"
+					type: "item"
+				}
+				{
+					id: "4A0775958ADF0A92"
+					item: "scguns:music_disc_mass_production"
+					type: "item"
+				}
+				{
+					id: "23541FEFEF4A510F"
+					item: "scguns:music_disc_mass_destruction"
+					type: "item"
+				}
+				{
+					id: "34550DB68BF98745"
+					item: "scguns:music_disc_mass_destruction_extended"
+					type: "item"
+				}
+				{
+					id: "2EE40F7DE3FCA5B3"
+					item: "aquamirae:music_disc_horizon"
+					type: "item"
+				}
+				{
+					id: "7EF5BFC94FA7AA5A"
+					item: "aquamirae:music_disc_forsaken_drownage"
+					type: "item"
+				}
+				{
+					id: "33F6A0BE4C6C00E3"
+					item: "biomeswevegone:music_disc_pixie_club"
 					type: "item"
 				}
 			]
@@ -2289,17 +2333,25 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest23.description1}"]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "blue_skies:loot_bag"
 				tag: { }
 			}
 			id: "0E1F92E4A628487B"
-			rewards: [{
-				id: "46C5D1B1ADAB3CE5"
-				item: "metalbundles:netherite_bundle"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "46C5D1B1ADAB3CE5"
+					item: "aquamirae:treasure_pouch"
+					type: "item"
+				}
+				{
+					id: "1F5EB6C79CA1C5C9"
+					item: "immersiveengineering:shader_bag_epic"
+					type: "item"
+				}
+			]
 			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest23.subtitle}"
 			tasks: [
 				{
@@ -2358,6 +2410,7 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest24.description1}"]
+			hide_until_deps_complete: true
 			icon: {
 				Count: 1
 				id: "minecraft:netherite_hoe"
@@ -2481,18 +2534,6 @@
 					item: "cratedelight:golden_apple_crate"
 					type: "item"
 				}
-				{
-					count: 64L
-					id: "6F01D8EC3E05CB30"
-					item: "cratedelight:stacked_melons"
-					type: "item"
-				}
-				{
-					count: 64L
-					id: "5F674483E1751C4B"
-					item: "cratedelight:stacked_pumpkins"
-					type: "item"
-				}
 			]
 			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest24.title}"
 			x: 5.5d
@@ -2501,7 +2542,19 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest25.description1}"]
-			icon: "villagersellanimals:crate_chick"
+			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						Insulation: [ ]
+					}
+				}
+				id: "scguns:ridgetop"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "04BFA1A4FAC092C9"
 			rewards: [{
 				count: 4
@@ -2557,7 +2610,8 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest26.description1}"]
-			icon: "createchromaticreturn:magmatic_mechanism"
+			hide_until_deps_complete: true
+			icon: "immersive_aircraft:industrial_gears"
 			id: "7FB0E3BD81383AF7"
 			rewards: [{
 				id: "27F65331369FE3E0"
@@ -2809,7 +2863,229 @@
 			x: 0.5d
 			y: 10.0d
 		}
+		{
+			dependencies: ["3B3B39FE9A88ED71"]
+			description: [
+				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description1}"
+				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description2}"
+				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description3}"
+				"{@pagebreak}"
+				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description4}"
+				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description5}"
+				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description6}"
+				"{@pagebreak}"
+				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description7}"
+				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description8}"
+				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description9}"
+				""
+				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description10}"
+			]
+			id: "6BB2985D2E9224A2"
+			rewards: [
+				{
+					count: 16
+					id: "2166560013264EEC"
+					item: "aquamirae:abyssal_amethyst"
+					type: "item"
+				}
+				{
+					id: "0381E71B0B31D58C"
+					item: {
+						Count: 1
+						id: "aquamirae:sweet_lance"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0B59CDF51BCED890"
+					item: {
+						Count: 1
+						id: "aquamirae:whisper_of_the_abyss"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.subtitle}"
+			tasks: [{
+				id: "08CDA34E0BC16CE1"
+				item: {
+					Count: 1
+					id: "aquamirae:coral_lance"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:unbreaking"
+							lvl: 4s
+						}]
+					}
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.title}"
+			x: 0.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["374C430D0AD70D2E"]
+			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest29.description1}"]
+			id: "2CC30C12A97CA45F"
+			rewards: [{
+				id: "7EFCAF5712F89130"
+				item: {
+					Count: 1
+					id: "goety:death_scythe"
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								id: "minecraft:sharpness"
+								lvl: 5s
+							}
+							{
+								id: "minecraft:mending"
+								lvl: 1s
+							}
+							{
+								id: "minecraft:unbreaking"
+								lvl: 3s
+							}
+							{
+								id: "minecraft:fire_aspect"
+								lvl: 2s
+							}
+							{
+								id: "minecraft:looting"
+								lvl: 3s
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest29.subtitle}"
+			tasks: [
+				{
+					id: "0382F06D8C063787"
+					item: "goety:ravaging_scroll"
+					type: "item"
+				}
+				{
+					id: "51FFF2F2D087AFDA"
+					item: "goety:warred_scroll"
+					type: "item"
+				}
+				{
+					id: "68178CE7C75974E0"
+					item: "goety:buried_scroll"
+					type: "item"
+				}
+				{
+					id: "3A65304E68540332"
+					item: "goety:haunting_scroll"
+					type: "item"
+				}
+				{
+					id: "326ADD1A2FE15D97"
+					item: "goety:front_scroll"
+					type: "item"
+				}
+				{
+					id: "0AA8D286BED96B40"
+					item: "goety:mistral_scroll"
+					type: "item"
+				}
+				{
+					id: "4CD2BBEEA848F367"
+					item: "goety:floral_scroll"
+					type: "item"
+				}
+				{
+					id: "737C6EFE387AB2C8"
+					item: "goety:bygone_scroll"
+					type: "item"
+				}
+				{
+					id: "41A6556293B81D1E"
+					item: "goety:terminus_scroll"
+					type: "item"
+				}
+				{
+					id: "1710910615D9C2C7"
+					item: "goety:forbidden_scroll"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest29.title}"
+			x: -0.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["374C430D0AD70D2E"]
+			description: [
+				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest30.description1}"
+				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest30.description2}"
+				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest30.description3}"
+			]
+			id: "3ABDF141ABA6CA8C"
+			rewards: [{
+				id: "79428E1F8AC61C87"
+				item: {
+					Count: 1
+					id: "scguns:nervepinch"
+					tag: {
+						AmmoCount: 8
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest30.subtitle}"
+			tasks: [
+				{
+					id: "11695387EBA3B86A"
+					item: {
+						Count: 1
+						id: "goety:stormlander"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5D9BA5564A790E5B"
+					item: {
+						Count: 1
+						id: "goety:frozen_blade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1181355C982999B4"
+					item: {
+						Count: 1
+						id: "goety:fell_blade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest30.title}"
+			x: 0.5d
+			y: 9.0d
+		}
 	]
-	subtitle: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.subtitle}"]
+	subtitle: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.subtitle0}"]
 	title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.title}"
 }

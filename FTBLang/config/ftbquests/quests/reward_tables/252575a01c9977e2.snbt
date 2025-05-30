@@ -1,0 +1,11 @@
+{
+	icon: "cold_sweat:thermometer"
+	id: "252575A01C9977E2"
+	loot_size: 1
+	order_index: 1
+	rewards: [
+		{ count: 3, item: "decorative_blocks:brazier" }
+		{ count: 3, item: "decorative_blocks:soul_brazier" }
+	]
+	title: "{ftbquests.loot_table_2676674884076664802.title}"
+}

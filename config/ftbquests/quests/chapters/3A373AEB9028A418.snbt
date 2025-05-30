@@ -21,40 +21,40 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"由于本整合包需求的模组物品不少，我们加入了背包）"
-				"然而你会发现，为了基本的平衡性，我们&a删除了所有的堆叠升级，并修改了背包的部分升级配方！&r"
-				"这意味着如果你要&c运送和存储大量物品&r，你需要想想别的办法，比如火车和抽屉）"
+				"{ftbquests.chapter.3A373AEB9028A418.quest1.description1}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest1.description2}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest1.description3}"
 				""
-				"*注：怪物目前不再掉落背包以及相关的内容物，&e堆叠升级也已经被删除&r，同时背包过多会有缓慢效果。所以&c请不要考虑通过堆叠升级来用背包当大型仓库的想法&r……我们提供了&b正经的物流途径&r，所以不要惦记着用背包逃课）"
+				"{ftbquests.chapter.3A373AEB9028A418.quest1.description4}"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
 			id: "7CFD3110EF8E53E2"
-			subtitle: "万里长征第一步，把你的东西装好）"
+			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest1.subtitle}"
 			tasks: [{
 				id: "0892FA3D926099E0"
 				item: "sophisticatedbackpacks:backpack"
 				type: "item"
 			}]
-			title: "背上行囊"
+			title: "{ftbquests.chapter.3A373AEB9028A418.quest1.title}"
 			x: 0.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"基于二十四节气的变换，这里会有&c很热的夏天&r和&b很冷的冬天&r。"
-				"节气每7个游戏日就会推进，趁着&d春天暂时的温和气候&r，准备抵抗未来某些可能令人不适的节气或环境吧。"
-				"记得看清当前的环境温度，&410度以下或37度以上&r都是危险的。"
+				"{ftbquests.chapter.3A373AEB9028A418.quest2.description1}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest2.description2}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest2.description3}"
 				""
-				"具体的温度系统细节，可以参考&a【世界的表象】&r章节："
-				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"6E08F7A257BCB99A\" } }"
+				"{ftbquests.chapter.3A373AEB9028A418.quest2.description4}"
+				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.3A373AEB9028A418.quest2.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"6E08F7A257BCB99A\"}}]"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
 			icon: "cold_sweat:thermometer"
 			id: "409A09512BF023FC"
-			subtitle: "烧起来了！"
+			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest2.subtitle}"
 			tasks: [
 				{
 					id: "3136B1174AAF8C7E"
@@ -67,20 +67,20 @@
 					type: "item"
 				}
 			]
-			title: "寒来暑往，秋收冬藏"
+			title: "{ftbquests.chapter.3A373AEB9028A418.quest2.title}"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"床的重生点功能消失了，取而代之的是重生方尖碑。"
-				"你有一次设定自己重生点的机会——请谨慎选择。"
-				"小提示：方尖碑是需要充能的，所以……请尽量求生，朋友）"
-				"方尖碑的充能可以通过末影之眼、末影珍珠或奥术源质完成，拿着这些东西对着方尖碑右键即可。"
+				"{ftbquests.chapter.3A373AEB9028A418.quest3.description1}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest3.description2}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest3.description3}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest3.description4}"
 				""
-				"具体的重生系统细节，可以参考&a【世界的表象】&r章节："
-				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"3B3403855032F399\" } }"
+				"{ftbquests.chapter.3A373AEB9028A418.quest3.description5}"
+				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.3A373AEB9028A418.quest3.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3B3403855032F399\"}}]"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
@@ -90,7 +90,7 @@
 				item: "irons_spellbooks:arcane_essence"
 				type: "item"
 			}]
-			subtitle: "你不能再用床成为无敌的人"
+			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest3.subtitle}"
 			tasks: [{
 				id: "26C5D84BA231F17D"
 				item: {
@@ -100,19 +100,19 @@
 						value: "minecraft:beds"
 					}
 				}
-				title: "任意床"
+				title: "{ftbquests.chapter.3A373AEB9028A418.quest3.task_2793876963208589693.title}"
 				type: "item"
 			}]
-			title: "复活点"
+			title: "{ftbquests.chapter.3A373AEB9028A418.quest3.title}"
 			x: -2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"本整合包内置了几个有趣的世界"
-				"深园，恒晓，永昼是三个主要的冒险维度。"
-				"多走走，多看看，顺便找到你所需要的材料。"
+				"{ftbquests.chapter.3A373AEB9028A418.quest4.description1}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest4.description2}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest4.description3}"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
@@ -129,54 +129,54 @@
 				item: "bosses_of_mass_destruction:charged_ender_pearl"
 				type: "item"
 			}]
-			subtitle: "送你去另一个世界！"
+			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest4.subtitle}"
 			tasks: [
 				{
 					dimension: "undergarden:undergarden"
 					icon: "undergarden:catalyst"
 					id: "108B1529DAA1BF44"
-					title: "访问深暗之园"
+					title: "{ftbquests.chapter.3A373AEB9028A418.quest4.task_1192069795875503940.title}"
 					type: "dimension"
 				}
 				{
 					dimension: "blue_skies:everbright"
 					icon: "blue_skies:everbright_portal"
 					id: "5D1DAE30F9514726"
-					title: "访问永昼之地"
+					title: "{ftbquests.chapter.3A373AEB9028A418.quest4.task_6709710545216423718.title}"
 					type: "dimension"
 				}
 				{
 					dimension: "blue_skies:everdawn"
 					icon: "blue_skies:everdawn_portal"
 					id: "6B3BCA57A1092DAE"
-					title: "访问恒晓之地"
+					title: "{ftbquests.chapter.3A373AEB9028A418.quest4.task_7726992063396916654.title}"
 					type: "dimension"
 				}
 				{
 					dimension: "minecraft:the_nether"
 					icon: "minecraft:nether_star"
 					id: "4AC4C4DE3BBD2FEB"
-					title: "访问下界"
+					title: "{ftbquests.chapter.3A373AEB9028A418.quest4.task_5387647513005993963.title}"
 					type: "dimension"
 				}
 				{
 					dimension: "minecraft:the_end"
 					icon: "minecraft:end_portal_frame"
 					id: "3C4C2257B8596DC6"
-					title: "访问末地"
+					title: "{ftbquests.chapter.3A373AEB9028A418.quest4.task_4344885500656053702.title}"
 					type: "dimension"
 				}
 			]
-			title: "维度旅行者"
+			title: "{ftbquests.chapter.3A373AEB9028A418.quest4.title}"
 			x: 0.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"本整合包中，盾牌的机制出现了&b一定的变动&r，需要&3选择合适的时机进行招架&r才能进行防御。同时，一部分特殊的盾牌具有&c反伤&r功能，一部分盾牌则拥有特殊的抗性，与新增的护甲近似。"
+				"{ftbquests.chapter.3A373AEB9028A418.quest5.description1}"
 				""
-				"盾牌新增了&6防御耐力值&r，在&d连续格挡数次攻击&r后，盾牌会有一次较长的冷却，次数与防御耐力相等。根据盾牌下方的属性值，各位可以根据需求自选盾牌。（任务需求中的是一些前期比较方便制作的盾牌，还有更多盾牌等你探索）"
+				"{ftbquests.chapter.3A373AEB9028A418.quest5.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "3A1777C57ADC79BD"
@@ -191,7 +191,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "防守反击"
+			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest5.subtitle}"
 			tasks: [
 				{
 					id: "5C2F4248E6546517"
@@ -258,16 +258,16 @@
 					type: "item"
 				}
 			]
-			title: "更多的盾牌"
+			title: "{ftbquests.chapter.3A373AEB9028A418.quest5.title}"
 			x: 2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"由于原版和模组原有的护甲获取难度都&c有一定提升&r（如果你还不知道，这里提一下所有钻石的工具和护甲耐久度都进行了极大的削减），然而大家需要在前期活下来，因此我们追加了一批&b相对容易获得的护甲&r，并且带有一些特殊功能！"
+				"{ftbquests.chapter.3A373AEB9028A418.quest6.description1}"
 				""
-				"其中有一部分包含套装效果或特殊效果，&4并非仅有任务中的几种&r（任务的这几个只是前期比较方便制作的），希望各位&a自行进行探索&r——不过这些系列的护甲值都没有&o那么&r高，因此也需要自行抉择选用。"
+				"{ftbquests.chapter.3A373AEB9028A418.quest6.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "7099BD66C194C8C2"
@@ -276,7 +276,7 @@
 				item: "artifacts:cross_necklace"
 				type: "item"
 			}]
-			subtitle: "护甲都是纸"
+			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest6.subtitle}"
 			tasks: [
 				{
 					id: "169C8B8E341A1B63"
@@ -359,21 +359,21 @@
 					type: "item"
 				}
 			]
-			title: "更多的护甲"
+			title: "{ftbquests.chapter.3A373AEB9028A418.quest6.title}"
 			x: -2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["67A81230FFDEC5B3"]
 			description: [
-				"通常情况下MC里的钓鱼不会空军，但是在这个包里，钓鱼&c需要一些技巧&r……"
-				"连续空军显然是很让人崩溃的事情，这种时候就应该&o&m&d炸鱼塘&r&r&r&5下笼子&r，这可以&a保证你获得特定种类的鱼！&r"
-				"不同的鱼类会有不同的喜好，选择你的鱼饵……"
-				"面包是&2特别的通用鱼饵&r，可以钓上来更多种类的鱼！"
-				"当然&6不下鱼饵&r也是可以的，代价是笼子&9只会捞上垃圾。&r"
-				"&o&m&3鱼都嫌弃你的吝啬&r&r&r"
+				"{ftbquests.chapter.3A373AEB9028A418.quest7.description1}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest7.description2}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest7.description3}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest7.description4}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest7.description5}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest7.description6}"
 				""
-				"&o&b*注：显然这一结构需要浸没在水里，并且需要在海洋、河流或沼泽群系使用，才能正常获得渔获！&r&r"
+				"{ftbquests.chapter.3A373AEB9028A418.quest7.description7}"
 			]
 			id: "5071365CA0D2E37F"
 			rewards: [{
@@ -382,13 +382,13 @@
 				item: "minecraft:bread"
 				type: "item"
 			}]
-			subtitle: "绝不空军"
+			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest7.subtitle}"
 			tasks: [{
 				id: "6FD49E4E48ACAE69"
 				item: "fishermens_trap:fishtrap"
 				type: "item"
 			}]
-			title: "懒人精选"
+			title: "{ftbquests.chapter.3A373AEB9028A418.quest7.title}"
 			x: 0.0d
 			y: 4.5d
 		}
@@ -396,17 +396,17 @@
 			dependencies: ["6A1B42D208C780BD"]
 			dependency_requirement: "one_started"
 			description: [
-				"基于一些众所周知的原因，木质鱼竿的耐久被狠狠削减了——但你会发现增加了大量&c全新&r的钓竿！"
-				"钓鱼也出现了一些变化，你需要在&a不同的位置&r（包括但不限于群系，深度，甚至维度）钓鱼来获得所有的鱼！相应地，部分鱼也会在对应的群系生成实体鱼，你可以&c直接将其击杀&r来获取它们。"
-				"想要收集各种鱼但苦于没有记录方式？你需要一本&b百鱼全书&r！这里会写着你捕捉过的大部分鱼，并标明其属性和作用。你也可以在持有百鱼全书的情况下右击世界上的实体鱼来快速打开它的图鉴！"
-				"有些鱼拥有&e&l传奇&r&r的功效……"
-				"但你首先需要&6渔夫工坊&r和&5锻造台&r来升级和修改你的鱼竿）"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.description1}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.description2}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.description3}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.description4}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.description5}"
 				""
-				"有关于钓鱼机制的变更，请查看下一页。"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.description6}"
 				"{@pagebreak}"
-				"本包钓鱼使用星露谷的机制：点击时&a提高判定区&r，松手时&b判定区自然下坠&r，保持鱼（和宝箱）在判定区内即可成功钓鱼！"
-				"{image:kubejs:textures/stardew_fishing.png width:100 height:100 align:center}"
-				"&o&9注意：植魔酿造的“诱惑”药水会造成判定错误，因此该配方已被移除！狂热垂钓（钓鱼爱好者）附魔也无法直接获取。&r&r"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.description7}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.image0}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.description8}"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
@@ -424,7 +424,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "组装神杆！"
+			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest8.subtitle}"
 			tasks: [
 				{
 					id: "76E1B85897A8750F"
@@ -445,15 +445,15 @@
 							value: "forge:tools/fishing_rods"
 						}
 					}
-					title: "任意钓竿"
+					title: "{ftbquests.chapter.3A373AEB9028A418.quest8.task_4653065461534869568.title}"
 					type: "item"
 				}
 			]
-			title: "钓鱼人的准备"
+			title: "{ftbquests.chapter.3A373AEB9028A418.quest8.title}"
 			x: 0.0d
 			y: 3.0d
 		}
 	]
-	subtitle: ["A Long Way to Go"]
-	title: "1A 漫漫长路"
+	subtitle: ["{ftbquests.chapter.3A373AEB9028A418.subtitle0}"]
+	title: "{ftbquests.chapter.3A373AEB9028A418.title}"
 }

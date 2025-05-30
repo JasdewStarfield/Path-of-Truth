@@ -34,5 +34,5 @@
 		{ item: "sophisticatedbackpacks:backpack", weight: 0.5f }
 		{ item: "kubejs:max_magic_ring", weight: 0.3f }
 	]
-	title: "随机饰品"
+	title: "{ftbquests.loot_table_3947091887552256602.title}"
 }

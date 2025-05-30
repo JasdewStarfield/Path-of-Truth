@@ -21,9 +21,9 @@
 		{
 			dependencies: ["11EC3A84F0C84E65"]
 			description: [
-				"生产线有三大要素：原材料、加工流程、产物。在这三大要素之中，因为原材料是一切生产的物资基础，因而在生产线的规划中，优先性是第一位的。如果能在生产的过程中，获得用之不竭的原材料，也能使玩家无比愉快。而在现实生活中，存在对原材料自动化生产执着追求的人，我们一般把这种人称之为自动化爱好者。而本指南，就是为了那些不清楚如何在“真理之路”进行自动化的人，量体裁衣，提供符合他们需求的指南。（鞠躬）"
+				"{ftbquests.chapter.54C0167EE2031E76.quest1.description1}"
 				""
-				"&a&o注：本篇章的内容并不要求全部完成，完成也没有奖励（悲），只是作为一个流程图使用的。希望各位留意。&r&r"
+				"{ftbquests.chapter.54C0167EE2031E76.quest1.description2}"
 			]
 			icon: "immersiveengineering:manual"
 			id: "1A4352FB579FF77E"
@@ -34,21 +34,21 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "会员制工厂"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest1.subtitle}"
 			tasks: [{
 				id: "3A7A3E27A39EFBE9"
-				title: "开启流水线！"
+				title: "{ftbquests.chapter.54C0167EE2031E76.quest1.task_4213748741328272361.title}"
 				type: "checkmark"
 			}]
-			title: "【起点】量产指南"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest1.title}"
 			x: 0.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["1A4352FB579FF77E"]
-			description: ["总之，你需要一个自动刷石机或者类似的东西。这个就不用我教了吧？"]
+			description: ["{ftbquests.chapter.54C0167EE2031E76.quest2.description1}"]
 			id: "74581D474C09D62C"
-			subtitle: "万物之源"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest2.subtitle}"
 			tasks: [{
 				id: "1E0FFBA8F8D1BEB9"
 				item: "minecraft:cobblestone"
@@ -60,7 +60,7 @@
 		{
 			dependencies: ["74581D474C09D62C"]
 			id: "4247C42D1F36561B"
-			subtitle: "粉碎……"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest3.subtitle}"
 			tasks: [{
 				id: "5F8F89AE035E0949"
 				item: "minecraft:gravel"
@@ -72,7 +72,7 @@
 		{
 			dependencies: ["4247C42D1F36561B"]
 			id: "435DA157EC54D3EA"
-			subtitle: "再粉碎……"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest4.subtitle}"
 			tasks: [{
 				id: "4234BA5BE2ED7A98"
 				item: "minecraft:sand"
@@ -88,7 +88,7 @@
 			]
 			id: "325D500216D2EFDC"
 			min_required_dependencies: 1
-			subtitle: "缠魂沙子（或红沙）"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest5.subtitle}"
 			tasks: [{
 				id: "67097C16AEF3C2C5"
 				item: "minecraft:soul_sand"
@@ -111,7 +111,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "洗涤灵魂沙（或者红沙）！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest6.subtitle}"
 			tasks: [
 				{
 					id: "16B73DBEAAD7ABBB"
@@ -120,11 +120,11 @@
 				}
 				{
 					id: "456E46E57F28913A"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest6.task_5003014187550019898.title}"
 					type: "checkmark"
 				}
 			]
-			title: "金"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest6.title}"
 			x: 8.0d
 			y: 4.0d
 		}
@@ -134,7 +134,7 @@
 				"74581D474C09D62C"
 			]
 			id: "2CA163F35B71E735"
-			subtitle: "圆石和沙子，加水搅拌"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest7.subtitle}"
 			tasks: [{
 				id: "5371503C55E19FCC"
 				item: "minecraft:dirt"
@@ -146,7 +146,7 @@
 		{
 			dependencies: ["2CA163F35B71E735"]
 			id: "038A6F292DC597E2"
-			subtitle: "再加水搅拌……"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest8.subtitle}"
 			tasks: [{
 				id: "0C549938EBBCB556"
 				item: "minecraft:mud"
@@ -158,7 +158,7 @@
 		{
 			dependencies: ["038A6F292DC597E2"]
 			id: "745F05143DD3D683"
-			subtitle: "加入纤维材料……"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest9.subtitle}"
 			tasks: [{
 				id: "5B7032B5DD0F86AB"
 				item: "minecraft:packed_mud"
@@ -176,7 +176,7 @@
 				type: "xp"
 				xp: 3
 			}]
-			subtitle: "粉碎泥坯！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest10.subtitle}"
 			tasks: [
 				{
 					id: "1C0EE65FEEAFD17F"
@@ -185,11 +185,11 @@
 				}
 				{
 					id: "0695C772ED653F27"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest10.task_474504632180490023.title}"
 					type: "checkmark"
 				}
 			]
-			title: "铁"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest10.title}"
 			x: -8.0d
 			y: 0.0d
 		}
@@ -207,7 +207,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "洗涤泥土！或者粉碎陶瓦！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest11.subtitle}"
 			tasks: [
 				{
 					id: "23A5B05D0199BA1F"
@@ -216,18 +216,18 @@
 				}
 				{
 					id: "574DCCD325F4EF94"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest11.task_6290909461753425812.title}"
 					type: "checkmark"
 				}
 			]
-			title: "铜"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest11.title}"
 			x: 2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["73A4602078813496"]
 			id: "47D5AC7D15327B25"
-			subtitle: "白雏菊处理"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest12.subtitle}"
 			tasks: [{
 				id: "171CA42D02F21F7C"
 				item: "botania:livingrock"
@@ -246,7 +246,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "用红石酸浇活石，形成自循环！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest13.subtitle}"
 			tasks: [
 				{
 					id: "61EBBFF071FF2D6C"
@@ -255,18 +255,18 @@
 				}
 				{
 					id: "31E44BBE37CB9D3A"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest13.task_3595081682900458810.title}"
 					type: "checkmark"
 				}
 			]
-			title: "红石"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest13.title}"
 			x: 12.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["74581D474C09D62C"]
 			id: "73A4602078813496"
-			subtitle: "烧一下"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest14.subtitle}"
 			tasks: [{
 				id: "59E564E1B8874857"
 				item: "minecraft:stone"
@@ -278,7 +278,7 @@
 		{
 			dependencies: ["435DA157EC54D3EA"]
 			id: "30CAE7CB4F12B7B7"
-			subtitle: "洗涤沙子"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest15.subtitle}"
 			tasks: [{
 				id: "3BAA9C14B30EF5AC"
 				item: "minecraft:clay_ball"
@@ -297,7 +297,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "磨碎黏土！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest16.subtitle}"
 			tasks: [
 				{
 					id: "1ED1B578E85160EB"
@@ -306,18 +306,18 @@
 				}
 				{
 					id: "18FE47D567D9B8DD"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest16.task_1800955882890705117.title}"
 					type: "checkmark"
 				}
 			]
-			title: "锌"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest16.title}"
 			x: 4.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["74581D474C09D62C"]
 			id: "07EDB8930476DBC7"
-			subtitle: "向圆石注入岩浆"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest17.subtitle}"
 			tasks: [{
 				id: "12E66CBD791D7FA9"
 				item: "minecraft:magma_block"
@@ -329,7 +329,7 @@
 		{
 			dependencies: ["07EDB8930476DBC7"]
 			id: "1E247B452EF05459"
-			subtitle: "再排出岩浆……"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest18.subtitle}"
 			tasks: [{
 				id: "6D7D48CBB03108D4"
 				item: "minecraft:cobbled_deepslate"
@@ -348,7 +348,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "粉碎深板岩！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest19.subtitle}"
 			tasks: [
 				{
 					id: "570529996B0B5467"
@@ -357,11 +357,11 @@
 				}
 				{
 					id: "29E7552C96337A97"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest19.task_3019475725162085015.title}"
 					type: "checkmark"
 				}
 			]
-			title: "银"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest19.title}"
 			x: -4.0d
 			y: -2.0d
 		}
@@ -375,7 +375,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "洗涤沙砾！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest20.subtitle}"
 			tasks: [
 				{
 					id: "32961D56557F71B8"
@@ -384,11 +384,11 @@
 				}
 				{
 					id: "365D7E0F8268C854"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest20.task_3917425855959713876.title}"
 					type: "checkmark"
 				}
 			]
-			title: "锡"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest20.title}"
 			x: 8.0d
 			y: -2.0d
 		}
@@ -402,7 +402,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "粉碎花岗岩！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest21.subtitle}"
 			tasks: [
 				{
 					id: "2975E6BE0256C762"
@@ -411,18 +411,18 @@
 				}
 				{
 					id: "3FD46B5FF4EB5BAD"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest21.task_4599419179327249325.title}"
 					type: "checkmark"
 				}
 			]
-			title: "铀"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest21.title}"
 			x: 16.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["4247C42D1F36561B"]
 			id: "2A4061F6354FD43D"
-			subtitle: "洗涤沙砾产出的副产物……"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest22.subtitle}"
 			tasks: [{
 				id: "7A856C843F2409A3"
 				item: "minecraft:flint"
@@ -441,7 +441,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "磨碎燧石！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest23.subtitle}"
 			tasks: [
 				{
 					id: "729582387D3E6072"
@@ -450,11 +450,11 @@
 				}
 				{
 					id: "5E5A9444665C9EE2"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest23.task_6798909608965218018.title}"
 					type: "checkmark"
 				}
 			]
-			title: "镍"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest23.title}"
 			x: 16.0d
 			y: -4.0d
 		}
@@ -468,17 +468,17 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "铁锭与末地空气混合！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest24.subtitle}"
 			tasks: [
 				{
 					id: "38E710AD9B857CE0"
 					item: "undergarden:cloggrum_ingot"
-					title: "扼塞"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest24.task_4100264323568729312.title}"
 					type: "item"
 				}
 				{
 					id: "134DBAC709B40A16"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest24.task_1390973223951403542.title}"
 					type: "checkmark"
 				}
 			]
@@ -495,20 +495,20 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "粉碎泥坯！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest25.subtitle}"
 			tasks: [{
 				id: "4E975F93AD98886A"
 				item: "kubejs:crushed_raw_bauxite"
 				type: "item"
 			}]
-			title: "铝"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest25.title}"
 			x: -2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["3008F198E9F12E38"]
 			id: "0ED88CF931E3698F"
-			subtitle: "炼钢！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest26.subtitle}"
 			tasks: [{
 				id: "73D8AD3772DE82AB"
 				item: "immersiveengineering:ingot_steel"
@@ -520,7 +520,7 @@
 		{
 			dependencies: ["0ED88CF931E3698F"]
 			id: "0AD582715391DEE4"
-			subtitle: "彻底磨碎钢锭……"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest27.subtitle}"
 			tasks: [{
 				id: "24878E431E5DDBA3"
 				item: "immersiveengineering:dust_steel"
@@ -539,7 +539,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "在雪帽菇熔炉中逆熵冷冻！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest28.subtitle}"
 			tasks: [
 				{
 					id: "5CD70A854663B05F"
@@ -548,11 +548,11 @@
 				}
 				{
 					id: "0F21120ED2644984"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest28.task_1090172439669000580.title}"
 					type: "checkmark"
 				}
 			]
-			title: "霜钢"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest28.title}"
 			x: -4.0d
 			y: 2.0d
 		}
@@ -566,7 +566,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "使用地元素核心可以复制这些矿物"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest29.subtitle}"
 			tasks: [
 				{
 					id: "4AF1595DBC9F9ACB"
@@ -620,11 +620,11 @@
 				}
 				{
 					id: "089ADBF39FE74EB4"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest29.task_620049738123136692.title}"
 					type: "checkmark"
 				}
 			]
-			title: "地元素转化"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest29.title}"
 			x: -2.0d
 			y: -8.0d
 		}
@@ -638,7 +638,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "对粉碎铁矿石进行魔力灌注！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest30.subtitle}"
 			tasks: [
 				{
 					id: "6B52DA9A635048E1"
@@ -647,11 +647,11 @@
 				}
 				{
 					id: "78A3E314CA0787FA"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest30.task_8693041384183531514.title}"
 					type: "checkmark"
 				}
 			]
-			title: "水蓝石"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest30.title}"
 			x: -12.0d
 			y: -2.0d
 		}
@@ -665,7 +665,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "火元素核心转化铁块！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest31.subtitle}"
 			tasks: [
 				{
 					id: "6ED7962344DB3DCB"
@@ -674,11 +674,11 @@
 				}
 				{
 					id: "5F6B0595AF094614"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest31.task_6875595396556080660.title}"
 					type: "checkmark"
 				}
 			]
-			title: "炙铁"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest31.title}"
 			x: -12.0d
 			y: 2.0d
 		}
@@ -692,7 +692,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "水元素核心转化铁块！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest32.subtitle}"
 			tasks: [
 				{
 					id: "1E2878991CE99E15"
@@ -701,11 +701,11 @@
 				}
 				{
 					id: "238002CB7838E027"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest32.task_2558047661265051687.title}"
 					type: "checkmark"
 				}
 			]
-			title: "缪铁"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest32.title}"
 			x: -12.0d
 			y: 4.0d
 		}
@@ -719,7 +719,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "对粉碎铁矿石进行魔力灌注！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest33.subtitle}"
 			tasks: [
 				{
 					id: "1BBD1568D3EC0E71"
@@ -728,11 +728,11 @@
 				}
 				{
 					id: "17FD465CE1BE610D"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest33.task_1728615196718424333.title}"
 					type: "checkmark"
 				}
 			]
-			title: "镰鼬铁"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest33.title}"
 			x: -12.0d
 			y: 0.0d
 		}
@@ -746,7 +746,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "设法组装遗忆守卫刷怪蛋，然后击败它获取！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest34.subtitle}"
 			tasks: [
 				{
 					id: "6265CC065CFCE2FB"
@@ -755,11 +755,11 @@
 				}
 				{
 					id: "784385066FA211DA"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest34.task_8665916370680156634.title}"
 					type: "checkmark"
 				}
 			]
-			title: "遗忆金属"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest34.title}"
 			x: 2.0d
 			y: -8.0d
 		}
@@ -773,7 +773,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "洗涤灵魂沙！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest35.subtitle}"
 			tasks: [
 				{
 					id: "5AE2230AD34421C4"
@@ -782,11 +782,11 @@
 				}
 				{
 					id: "3E3811D7B27C46A2"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest35.task_4483353047157458594.title}"
 					type: "checkmark"
 				}
 			]
-			title: "下界石英"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest35.title}"
 			x: 10.0d
 			y: 0.0d
 		}
@@ -797,8 +797,8 @@
 				"1A4352FB579FF77E"
 			]
 			description: [
-				"如果你玩过Create6.0前的版本，那么你肯定会很熟悉粒子刷石机一类的圆石生产方式。这些方式效率很高，但是它会生成大量粒子和掉落物，对你的渲染和服务器造成压力。"
-				"在Create6.0更新中，官方引入了动力钻头的造石机逻辑：如果固定的钻头破坏了传统刷石机刷出的圆石，且该位置下方有一个开放容器（漏斗、溜槽等），则会直接在该容器内加入一个圆石，并且该圆石实际上不会被破坏。这不仅增加了效率，同时也避免了粒子和掉落物的生成。"
+				"{ftbquests.chapter.54C0167EE2031E76.quest36.description1}"
+				"{ftbquests.chapter.54C0167EE2031E76.quest36.description2}"
 			]
 			id: "7804D40DE4CE8B4D"
 			rewards: [
@@ -814,20 +814,20 @@
 				}
 			]
 			shape: "gear"
-			subtitle: "但这里提供了合理的解决方案"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest36.subtitle}"
 			tasks: [{
 				id: "2ABAEB79AB0C4B2D"
 				item: "create:mechanical_drill"
 				type: "item"
 			}]
-			title: "万事开头难"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest36.title}"
 			x: 0.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["30CAE7CB4F12B7B7"]
 			id: "1F4E96EC3B77F15A"
-			subtitle: "把黏土搓成块，然后烧制"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest37.subtitle}"
 			tasks: [{
 				id: "373737468DA9CDEB"
 				item: "minecraft:terracotta"
@@ -839,7 +839,7 @@
 		{
 			dependencies: ["1F4E96EC3B77F15A"]
 			id: "5012BDA254DF42C1"
-			subtitle: "磨碎陶瓦……"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest38.subtitle}"
 			tasks: [{
 				id: "29DD0B09BBAF96D5"
 				item: "minecraft:red_sand"
@@ -855,7 +855,7 @@
 				"31EEBF235BB74190"
 			]
 			id: "60B63A0708C8CD25"
-			subtitle: "红沙燧石岩浆压制，或者闪长岩+石英合成，也可以魔力转化"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest39.subtitle}"
 			tasks: [{
 				id: "56B47155D9B6DDBB"
 				item: "minecraft:granite"
@@ -867,7 +867,7 @@
 		{
 			dependencies: ["40717610A2317CCE"]
 			id: "31EEBF235BB74190"
-			subtitle: "直接合成，或者使用魔力转化"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest40.subtitle}"
 			tasks: [{
 				id: "1DF7603A6E7F462B"
 				item: "minecraft:diorite"
@@ -886,7 +886,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "闪长岩和铅粒合成方铅岩，再粉碎，是能回本的……大概率"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest41.subtitle}"
 			tasks: [
 				{
 					id: "6048BB784ED762E8"
@@ -900,17 +900,17 @@
 				}
 				{
 					id: "4E40708D6D2501DF"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest41.task_5638630486191702495.title}"
 					type: "checkmark"
 				}
 			]
-			title: "铅"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest41.title}"
 			x: 10.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["1A4352FB579FF77E"]
-			description: ["在喷口（硫喷口生成在下界，硝喷口生成在深海）上面放置，并填充复合滤芯（或者羊毛）以收集它们。"]
+			description: ["{ftbquests.chapter.54C0167EE2031E76.quest42.description1}"]
 			icon: "scguns:vent_collector"
 			id: "1CA572621904A69F"
 			rewards: [{
@@ -919,7 +919,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "用于收集焦化硫粉和硝粉"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest42.subtitle}"
 			tasks: [
 				{
 					id: "78BAD975F50E834C"
@@ -938,7 +938,7 @@
 				}
 				{
 					id: "36C159ED2A9BB041"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest42.task_3945533623710232641.title}"
 					type: "checkmark"
 				}
 			]
@@ -947,7 +947,7 @@
 		}
 		{
 			dependencies: ["1A4352FB579FF77E"]
-			description: ["使用改良堆肥桶堆肥可以产出磷和硝。"]
+			description: ["{ftbquests.chapter.54C0167EE2031E76.quest43.description1}"]
 			icon: "scguns:advanced_composter"
 			id: "42287BE3A8460047"
 			rewards: [{
@@ -956,7 +956,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "用于收集磷粉和硝粉"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest43.subtitle}"
 			tasks: [
 				{
 					id: "029395DAF1AEA476"
@@ -975,7 +975,7 @@
 				}
 				{
 					id: "174B7DFF862A0930"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest43.task_1678573822546676016.title}"
 					type: "checkmark"
 				}
 			]
@@ -986,7 +986,7 @@
 			dependencies: ["1A4352FB579FF77E"]
 			icon: "minecraft:oak_log"
 			id: "56751B70F25216FE"
-			subtitle: "显然需要一个树厂"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest44.subtitle}"
 			tasks: [{
 				id: "0D6D5B7D8B2E9DF0"
 				item: {
@@ -996,17 +996,17 @@
 						value: "minecraft:logs"
 					}
 				}
-				title: "任意原木"
+				title: "{ftbquests.chapter.54C0167EE2031E76.quest44.task_967530089718652400.title}"
 				type: "item"
 			}]
-			title: "木头"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest44.title}"
 			x: -2.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["56751B70F25216FE"]
 			id: "63A713AAFF153632"
-			subtitle: "烧一下"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest45.subtitle}"
 			tasks: [{
 				id: "6DA068BB63551C25"
 				item: "minecraft:charcoal"
@@ -1018,7 +1018,7 @@
 		{
 			dependencies: ["63A713AAFF153632"]
 			id: "16B49CB814FD29CF"
-			subtitle: "缠魂木炭"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest46.subtitle}"
 			tasks: [{
 				id: "1D60BFDBB72B27B9"
 				item: "minecraft:coal"
@@ -1030,7 +1030,7 @@
 		{
 			dependencies: ["16B49CB814FD29CF"]
 			id: "2D7B382634800BB5"
-			subtitle: "煤炭炼焦"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest47.subtitle}"
 			tasks: [{
 				id: "39CB3C5221D66BDF"
 				item: "immersiveengineering:coal_coke"
@@ -1042,7 +1042,7 @@
 		{
 			dependencies: ["16B49CB814FD29CF"]
 			id: "766275B86E770BDB"
-			subtitle: "粉碎煤炭"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest48.subtitle}"
 			tasks: [{
 				id: "752A7B80C6CF9F4F"
 				item: "createnuclear:coal_dust"
@@ -1061,7 +1061,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "压制碳粉、硝粉与磷粉！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest49.subtitle}"
 			tasks: [
 				{
 					id: "366B3F3F403B6E45"
@@ -1070,11 +1070,11 @@
 				}
 				{
 					id: "6F4BAA2105CF795B"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest49.task_8019690620271425883.title}"
 					type: "checkmark"
 				}
 			]
-			title: "致密碳"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest49.title}"
 			x: -8.0d
 			y: -8.0d
 		}
@@ -1088,7 +1088,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "粉碎焦煤！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest50.subtitle}"
 			tasks: [
 				{
 					id: "719641832EE97A0C"
@@ -1097,7 +1097,7 @@
 				}
 				{
 					id: "196A351CFB6E0EE6"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest50.task_1831334597073178342.title}"
 					type: "checkmark"
 				}
 			]
@@ -1107,7 +1107,7 @@
 		{
 			dependencies: ["1A4352FB579FF77E"]
 			id: "23B40C86CEE1A8EB"
-			subtitle: "由岩浆、蓝冰组成的刷石机的产物"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest51.subtitle}"
 			tasks: [{
 				id: "42FC85F66BE45C82"
 				item: "minecraft:basalt"
@@ -1119,7 +1119,7 @@
 		{
 			dependencies: ["23B40C86CEE1A8EB"]
 			id: "59CEA83C3E03585B"
-			subtitle: "粉碎玄武岩"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest52.subtitle}"
 			tasks: [{
 				id: "3002457251D6FA63"
 				item: "minecraft:lapis_lazuli"
@@ -1131,7 +1131,7 @@
 		{
 			dependencies: ["1C90C1CA66200C92"]
 			id: "6D80959BDCD42FFB"
-			subtitle: "粉碎海晶沙砾"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest53.subtitle}"
 			tasks: [{
 				id: "377D1D9D4211A6BD"
 				item: "minecraft:glowstone_dust"
@@ -1143,7 +1143,7 @@
 		{
 			dependencies: ["59CEA83C3E03585B"]
 			id: "1C90C1CA66200C92"
-			subtitle: "缠魂青金石"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest54.subtitle}"
 			tasks: [{
 				id: "36ADBB7D7FD59DDD"
 				item: "minecraft:prismarine_crystals"
@@ -1161,7 +1161,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "粉碎荧石粉！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest55.subtitle}"
 			tasks: [{
 				id: "484CC7585BA88D6D"
 				item: "scguns:phosphor_dust"
@@ -1180,7 +1180,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "用粉碎机粉碎沙石"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest56.subtitle}"
 			tasks: [
 				{
 					id: "56C35509D99CFA99"
@@ -1189,7 +1189,7 @@
 				}
 				{
 					id: "3539DA6C088E1CE1"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest56.task_3835336715217542369.title}"
 					type: "checkmark"
 				}
 			]
@@ -1199,7 +1199,7 @@
 		{
 			dependencies: ["325D500216D2EFDC"]
 			id: "358F2CFB3ECA295D"
-			subtitle: "熔炼灵魂沙，或者直接使用刷石机产出"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest57.subtitle}"
 			tasks: [{
 				id: "720BFF64826EADD3"
 				item: "create:scoria"
@@ -1218,7 +1218,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "粉碎熔渣"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest58.subtitle}"
 			tasks: [
 				{
 					id: "0952F2D17E709921"
@@ -1227,7 +1227,7 @@
 				}
 				{
 					id: "00DB7A49872B7F8D"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest58.task_61777476118609805.title}"
 					type: "checkmark"
 				}
 			]
@@ -1243,7 +1243,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "粉碎海晶沙砾！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest59.subtitle}"
 			tasks: [{
 				id: "504EF2AB2C1F12C0"
 				item: "minecraft:quartz"
@@ -1255,7 +1255,7 @@
 		{
 			dependencies: ["74581D474C09D62C"]
 			id: "0A2862B24EFB6487"
-			subtitle: "缠魂圆石"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest60.subtitle}"
 			tasks: [{
 				id: "53DE07F008395AF0"
 				item: "minecraft:blackstone"
@@ -1270,7 +1270,7 @@
 				"40717610A2317CCE"
 			]
 			id: "43BB332647AB6F59"
-			subtitle: "用黑石和石英合成"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest61.subtitle}"
 			tasks: [{
 				id: "1CDD00204B17BDE6"
 				item: "scguns:phosphorite"
@@ -1289,7 +1289,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "粉碎磷灰岩！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest62.subtitle}"
 			tasks: [
 				{
 					id: "6F1AF49A3C8AE24D"
@@ -1298,7 +1298,7 @@
 				}
 				{
 					id: "1A340F091647EE72"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest62.task_1888150675478015602.title}"
 					type: "checkmark"
 				}
 			]
@@ -1315,7 +1315,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "虽然不是植物，但晶体也可以生长"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest63.subtitle}"
 			tasks: [
 				{
 					id: "094953F6886DAF7B"
@@ -1334,11 +1334,11 @@
 				}
 				{
 					id: "10E8D77DE8AC649C"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest63.task_1218460634978215068.title}"
 					type: "checkmark"
 				}
 			]
-			title: "结晶"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest63.title}"
 			x: 0.0d
 			y: -10.0d
 		}
@@ -1352,7 +1352,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "糅合两种玉石晶体！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest64.subtitle}"
 			tasks: [
 				{
 					id: "7692707E00DEE25C"
@@ -1361,7 +1361,7 @@
 				}
 				{
 					id: "14F7DB0DAD17102A"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest64.task_1510917051791118378.title}"
 					type: "checkmark"
 				}
 			]
@@ -1378,7 +1378,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "日长石催化铁锭！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest65.subtitle}"
 			tasks: [
 				{
 					id: "7A9152690B1ECB49"
@@ -1387,11 +1387,11 @@
 				}
 				{
 					id: "0C5D61C1AC67F66C"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest65.task_890975785738303084.title}"
 					type: "checkmark"
 				}
 			]
-			title: "炙铁"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest65.title}"
 			x: -1.5d
 			y: -10.5d
 		}
@@ -1405,7 +1405,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "月长石催化铁锭！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest66.subtitle}"
 			tasks: [
 				{
 					id: "7D43C7F96CD32D64"
@@ -1414,19 +1414,19 @@
 				}
 				{
 					id: "0DD0B70B855C67F2"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest66.task_995496777758828530.title}"
 					type: "checkmark"
 				}
 			]
-			title: "缪铁"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest66.title}"
 			x: 1.5d
 			y: -10.5d
 		}
 		{
 			dependencies: ["1A4352FB579FF77E"]
 			description: [
-				"许多矿业产线都会产出矿渣副产物，这些矿渣的主要成分是各种杂质，但“垃圾只是放错了地方的财宝”……"
-				"继续处理矿渣，你最终可以获取少量的随机矿粒！"
+				"{ftbquests.chapter.54C0167EE2031E76.quest67.description1}"
+				"{ftbquests.chapter.54C0167EE2031E76.quest67.description2}"
 			]
 			icon: "immersiveengineering:slag"
 			id: "6BB15961F92B5E4F"
@@ -1436,7 +1436,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "变废为宝"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest67.subtitle}"
 			tasks: [
 				{
 					id: "4E6C71DDE9199128"
@@ -1455,7 +1455,7 @@
 				}
 				{
 					id: "4BCE96AD4E9850AA"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest67.task_5462469069139103914.title}"
 					type: "checkmark"
 				}
 			]
@@ -1468,7 +1468,7 @@
 				"40717610A2317CCE"
 			]
 			id: "38C2B161E5D3441A"
-			subtitle: "搅拌或合成，或者魔力转化"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest68.subtitle}"
 			tasks: [{
 				id: "1920547C72CEA8EF"
 				item: "minecraft:andesite"
@@ -1491,7 +1491,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "搅拌！"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest69.subtitle}"
 			tasks: [
 				{
 					id: "0576A43C784FEEC4"
@@ -1500,7 +1500,7 @@
 				}
 				{
 					id: "3D839A17D2C436C0"
-					title: "已完成自动化"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest69.task_4432555885373699776.title}"
 					type: "checkmark"
 				}
 			]
@@ -1508,6 +1508,6 @@
 			y: -2.0d
 		}
 	]
-	subtitle: ["Standardized Production"]
-	title: "【附加】标准化生产"
+	subtitle: ["{ftbquests.chapter.54C0167EE2031E76.subtitle0}"]
+	title: "{ftbquests.chapter.54C0167EE2031E76.title}"
 }

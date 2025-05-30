@@ -14,7 +14,7 @@
 			rotation: 0.0d
 			width: 1.3285714285714287d
 			x: 0.0d
-			y: -0.8d
+			y: -1.0d
 		}
 		{
 			height: 2.0d
@@ -33,6 +33,8 @@
 			description: ["&l&4这个章节不是正式任务线！只起到任务线的预告作用！具体请看下方的章节组中的内容！&r&r"]
 			hide_until_deps_complete: true
 			id: "5BC62338A9F6E65B"
+			shape: "hexagon"
+			size: 1.6d
 			subtitle: "触碰魔法边缘"
 			tasks: [{
 				id: "15B65D00737081D8"
@@ -88,11 +90,18 @@
 			id: "59793C79A0C3B12B"
 			subtitle: "基本仪式"
 			tasks: [{
-				id: "4B5822E77E2D37BD"
-				item: "bloodmagic:altar"
+				id: "1B831A36C37E9436"
+				item: {
+					Count: 1
+					id: "goety:totem_of_roots"
+					tag: {
+						"Max Souls": 100
+						Souls: 0
+					}
+				}
 				type: "item"
 			}]
-			title: "鲜血涌动"
+			title: "灵魂根源"
 			x: 0.0d
 			y: -2.0d
 		}
@@ -118,8 +127,8 @@
 				}
 			]
 			title: "老三样"
-			x: -3.0d
-			y: -4.0d
+			x: -2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["59793C79A0C3B12B"]
@@ -131,39 +140,32 @@
 				type: "item"
 			}]
 			title: "开门法"
-			x: -1.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["59793C79A0C3B12B"]
-			id: "3E3808F2227BD332"
-			subtitle: "水里的炼金术"
-			tasks: [{
-				id: "1D1302B74496C3CB"
-				item: "irons_spellbooks:alchemist_cauldron"
-				type: "item"
-			}]
-			title: "冒泡泡"
-			x: 1.0d
-			y: -4.0d
+			x: 0.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["59793C79A0C3B12B"]
 			id: "45311CA8EA1B26BA"
-			subtitle: "存血的珠子"
+			subtitle: "无尽重生"
 			tasks: [{
-				id: "5B63E5FD1F9465E0"
-				item: "bloodmagic:weakbloodorb"
+				id: "3D91F2D92D4C1483"
+				item: {
+					Count: 1
+					id: "goety:totem_of_souls"
+					tag: {
+						"Max Souls": 10000
+						Souls: 0
+					}
+				}
 				type: "item"
 			}]
-			title: "血滴子"
-			x: 3.0d
-			y: -4.0d
+			title: "更强的赝品"
+			x: 2.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"3EF388DBCA593501"
-				"3E3808F2227BD332"
 				"0719D8D05F672C29"
 				"45311CA8EA1B26BA"
 			]
@@ -176,40 +178,37 @@
 			}]
 			title: "绿色的光"
 			x: 0.0d
-			y: -6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["56FEAEAF9D5FF405"]
 			id: "172CC4DA91E7C588"
-			subtitle: "更多的血液……"
+			subtitle: "以魔力击穿世界"
 			tasks: [{
-				id: "79A0928486E965D1"
-				item: "bloodmagic:magicianbloodorb"
+				id: "2B2C54C9A20ED921"
+				item: {
+					Count: 1
+					id: "botania:mana_gun"
+					tag: { }
+				}
 				type: "item"
 			}]
-			title: "三阶祭坛"
+			title: "魔能枪"
 			x: -2.0d
-			y: -7.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["56FEAEAF9D5FF405"]
 			id: "67DD665888D130CB"
-			subtitle: "12个法术槽让你可以为所欲为"
-			tasks: [
-				{
-					id: "45D048A878D5D46B"
-					item: "irons_spellbooks:legendary_ink"
-					type: "item"
-				}
-				{
-					id: "79F7E27605C3BC00"
-					item: "minecraft:echo_shard"
-					type: "item"
-				}
-			]
-			title: "传说级法师"
+			subtitle: "深埋地底"
+			tasks: [{
+				id: "20393A584D230BBD"
+				item: "irons_spellbooks:arcane_salvage"
+				type: "item"
+			}]
+			title: "奥术提纯"
 			x: 2.0d
-			y: -7.0d
+			y: -5.0d
 		}
 		{
 			dependencies: [
@@ -217,35 +216,52 @@
 				"67DD665888D130CB"
 			]
 			id: "4D484051A8CF29F2"
-			subtitle: "新的世界，新的资源"
+			subtitle: "祈求世界的回应"
 			tasks: [
 				{
-					id: "692CF09C93BB14AE"
-					item: "bloodmagic:ritualstone"
+					id: "31F2382A98D387B4"
+					item: "goety:pedestal"
 					type: "item"
 				}
 				{
-					id: "7EF02C911BC7DD85"
-					item: "bloodmagic:ingot_hellforged"
+					id: "64CE5BEB88E72392"
+					item: "goety:dark_altar"
 					type: "item"
 				}
 			]
-			title: "仪式与恶魔维度"
+			title: "仪式群"
 			x: 0.0d
-			y: -8.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["4D484051A8CF29F2"]
 			id: "5393EC343AD0EC83"
-			subtitle: "触碰血魔法的巅峰"
-			tasks: [{
-				id: "351B76FA191E3E06"
-				item: "bloodmagic:archmagebloodorb"
-				type: "item"
-			}]
-			title: "顶级祭坛"
+			subtitle: "这是基本元素，华生"
+			tasks: [
+				{
+					id: "4C2DBD4B7647DFE8"
+					item: "kubejs:earth_elemental_core"
+					type: "item"
+				}
+				{
+					id: "585C2F415B09A804"
+					item: "kubejs:water_elemental_core"
+					type: "item"
+				}
+				{
+					id: "74079C7FF6EB9E88"
+					item: "kubejs:fire_elemental_core"
+					type: "item"
+				}
+				{
+					id: "0C2791152088B270"
+					item: "kubejs:wind_elemental_core"
+					type: "item"
+				}
+			]
+			title: "元素之力"
 			x: -2.0d
-			y: -9.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["4D484051A8CF29F2"]
@@ -258,7 +274,7 @@
 			}]
 			title: "生命花开"
 			x: 2.0d
-			y: -9.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["71BF98560860C0AB"]
@@ -269,22 +285,22 @@
 				item: "botania:overgrowth_seed"
 				type: "item"
 			}]
-			title: "生命分解"
+			title: "生命集成"
 			x: -2.0d
-			y: -11.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["5393EC343AD0EC83"]
 			id: "0BE788F0317226D0"
-			subtitle: "溜门撬锁必备"
+			subtitle: "撼动规则"
 			tasks: [{
-				id: "51FDFFBEC4A66E6B"
-				item: "bloodmagic:activationcrystalcreative"
+				id: "728DB57B0C2E3580"
+				item: "goety:rupture_focus"
 				type: "item"
 			}]
-			title: "无门槛激活"
+			title: "破碎虚空"
 			x: 2.0d
-			y: -11.0d
+			y: -9.0d
 		}
 		{
 			dependencies: [
@@ -292,15 +308,21 @@
 				"309ED82498C4F2D1"
 			]
 			id: "7B4BE516F4D4E494"
-			subtitle: "芙莉莲——"
+			subtitle: "最最伟大的炼金术"
 			tasks: [{
-				id: "01E7DB25BE0C772B"
-				item: "artifacts:mimic_spawn_egg"
+				id: "1AF2F188558502ED"
+				item: {
+					Count: 1
+					id: "goety:philosophers_stone"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
-			title: "活化物品"
+			title: "哲人石"
 			x: 0.0d
-			y: -12.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["56FEAEAF9D5FF405"]
@@ -313,10 +335,10 @@
 			}]
 			title: "风暴之力"
 			x: 0.0d
-			y: -7.0d
+			y: -5.0d
 		}
 		{
-			dependencies: ["79EE6BAFA5E153E5"]
+			dependencies: ["7B4BE516F4D4E494"]
 			id: "11809308EF757592"
 			subtitle: "末影之王"
 			tasks: [{
@@ -327,31 +349,20 @@
 			}]
 			title: "更多的蛋"
 			x: 2.0d
-			y: -15.0d
+			y: -11.0d
 		}
 		{
-			dependencies: ["7B4BE516F4D4E494"]
+			dependencies: ["07FA33846E7A5B3D"]
 			id: "7A0D894A5227359D"
-			subtitle: "无羁魔力"
+			subtitle: "以牙还牙"
 			tasks: [{
-				id: "1B6941284D379213"
-				item: "botania:mana_bomb"
+				id: "3BCCF21AE183461F"
+				item: "goety:killing_focus"
 				type: "item"
 			}]
+			title: "生死一线"
 			x: -2.0d
 			y: -13.0d
-		}
-		{
-			dependencies: ["7A0D894A5227359D"]
-			id: "0A2BE67F3E9F7225"
-			subtitle: "活化水晶？"
-			tasks: [{
-				id: "106B3E5E1EB2E1C7"
-				item: "minecraft:budding_amethyst"
-				type: "item"
-			}]
-			x: -2.0d
-			y: -15.0d
 		}
 		{
 			dependencies: ["7B4BE516F4D4E494"]
@@ -370,119 +381,106 @@
 				type: "item"
 			}]
 			title: "无尽魔力"
+			x: -1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: [
+				"1704AC9884507C0B"
+				"316031CF88C55DEB"
+				"7A0D894A5227359D"
+			]
+			id: "697B1277B1C95490"
+			shape: "hexagon"
+			size: 1.6d
+			subtitle: "次元边界"
+			tasks: [{
+				id: "09891F03B5381DDB"
+				item: {
+					Count: 1
+					id: "kubejs:midnight"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "魔法大成"
 			x: 0.0d
 			y: -14.0d
 		}
 		{
-			dependencies: [
-				"0A2BE67F3E9F7225"
-				"11809308EF757592"
-			]
-			id: "697B1277B1C95490"
-			shape: "hexagon"
-			subtitle: "真相的通行证"
+			dependencies: ["4D484051A8CF29F2"]
+			id: "747404689C3EB6D7"
+			subtitle: "云端的城堡"
 			tasks: [{
-				id: "09891F03B5381DDB"
-				item: "kubejs:midnight"
+				id: "5B0C27847FAAF033"
+				item: {
+					Count: 1
+					id: "botania:flight_tiara"
+					tag: {
+						variant: 0
+					}
+				}
 				type: "item"
 			}]
-			title: "嗯，作者之一"
 			x: 0.0d
-			y: -16.0d
-		}
-		{
-			dependencies: ["697B1277B1C95490"]
-			hide_until_deps_complete: true
-			id: "547BE1E974BA2186"
-			subtitle: "转化，合成，凝聚"
-			tasks: [{
-				id: "4C9E7E2BAAD67B3C"
-				item: "createchromaticreturn:chromatic_compound"
-				type: "item"
-			}]
-			title: "异彩化合物"
-			x: 0.0d
-			y: -17.0d
-		}
-		{
-			dependencies: [
-				"5C9661302B37F26F"
-				"57792EACF9438430"
-			]
-			id: "0D3C086EDB80E9AB"
-			shape: "octagon"
-			subtitle: "终局开端"
-			tasks: [{
-				id: "022297A7CFF38214"
-				item: "createchromaticreturn:multiplite_ingot"
-				type: "item"
-			}]
-			title: "最魔法的"
-			x: 0.0d
-			y: -20.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["7B4BE516F4D4E494"]
-			id: "79EE6BAFA5E153E5"
-			subtitle: "工业的破晓带来魔法的推进"
+			id: "2E0C20F69A138C81"
+			subtitle: "最坚硬的物质"
 			tasks: [{
-				id: "151D8A5730F981B3"
-				item: "bloodmagic:lightritualstone"
+				id: "7CB7D7CCE7A1C88C"
+				item: {
+					Count: 1
+					id: "goety:philosophers_mace"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "多功能工具"
+			x: 1.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["7B4BE516F4D4E494"]
+			id: "1704AC9884507C0B"
+			subtitle: "魔力-灵魂集成体"
+			tasks: [{
+				id: "0C1D16C3C4437557"
+				item: "goety:sonic_boom_focus"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["7B4BE516F4D4E494"]
+			id: "07FA33846E7A5B3D"
+			subtitle: "无羁魔力"
+			tasks: [{
+				id: "0F01A8E05E982E5F"
+				item: "botania:mana_bomb"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["11809308EF757592"]
+			id: "316031CF88C55DEB"
+			subtitle: "至暗时刻"
+			tasks: [{
+				id: "49EB98441BA1904D"
+				item: "botania:blacker_lotus"
 				type: "item"
 			}]
 			x: 2.0d
 			y: -13.0d
-		}
-		{
-			dependencies: ["4D484051A8CF29F2"]
-			id: "747404689C3EB6D7"
-			subtitle: "实体化灵魂"
-			tasks: [{
-				id: "09F643905DB0DDCF"
-				item: "bloodmagic:demoncrystallizer"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -9.0d
-		}
-		{
-			dependencies: ["0254FBCBA50B97F1"]
-			id: "57792EACF9438430"
-			subtitle: "光芒万丈"
-			tasks: [{
-				id: "7EC3BF6674D397C9"
-				item: "createchromaticreturn:glowing_ingot"
-				type: "item"
-			}]
-			title: "辉光锭"
-			x: 2.0d
-			y: -19.0d
-		}
-		{
-			dependencies: ["0254FBCBA50B97F1"]
-			id: "5C9661302B37F26F"
-			subtitle: "丝滑体验——"
-			tasks: [{
-				id: "455E4D6193809635"
-				item: "createchromaticreturn:silkstrum"
-				type: "item"
-			}]
-			title: "丝绸锭"
-			x: -2.0d
-			y: -19.0d
-		}
-		{
-			dependencies: ["547BE1E974BA2186"]
-			id: "0254FBCBA50B97F1"
-			subtitle: "更亮，更强"
-			tasks: [{
-				id: "07ACAB2B1345C4A9"
-				item: "createchromaticreturn:refined_radiance"
-				type: "item"
-			}]
-			title: "光辉石"
-			x: 0.0d
-			y: -18.0d
 		}
 	]
 	subtitle: ["Magic Progressions"]

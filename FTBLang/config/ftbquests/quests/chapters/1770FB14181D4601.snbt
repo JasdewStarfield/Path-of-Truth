@@ -1,0 +1,296 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1770FB14181D4601"
+	group: ""
+	hide_quest_details_until_startable: true
+	icon: {
+		Count: 1
+		id: "scguns:flintlock_pistol"
+		tag: {
+			AmmoCount: 1
+			Damage: 0
+		}
+	}
+	id: "1770FB14181D4601"
+	images: [
+		{
+			height: 1.0d
+			image: "kubejs:textures/quests/life_of_a_gunsmith.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			height: 2.0d
+			image: "scguns:item/unfinished_shotgun_shell"
+			rotation: 0.0d
+			width: 2.0d
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			height: 2.0d
+			image: "immersiveengineering:item/material_gunpart_drum"
+			rotation: 0.0d
+			width: 2.0d
+			x: 1.5d
+			y: 4.5d
+		}
+	]
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4BED26108E90A0CC"]
+			description: [
+				"{ftbquests.chapter.1770FB14181D4601.quest1.description1}"
+				"{ftbquests.chapter.1770FB14181D4601.quest1.description2}"
+				""
+				"{ftbquests.chapter.1770FB14181D4601.quest1.description3}"
+			]
+			icon: {
+				Count: 1
+				id: "scguns:flintlock_pistol"
+				tag: {
+					AmmoCount: 1
+					Damage: 0
+				}
+			}
+			id: "40D34B60BD7011DD"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest1.subtitle}"
+			tasks: [{
+				id: "4510A9F401CC26C1"
+				title: "{ftbquests.chapter.1770FB14181D4601.quest1.task_4976664453711668929.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.1770FB14181D4601.quest1.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["{ftbquests.chapter.1770FB14181D4601.quest2.description1}"]
+			icon: "ftbquests:book"
+			id: "7D72C735D145F763"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest2.subtitle}"
+			tasks: [
+				{
+					id: "54082D6060DEFE53"
+					item: {
+						Count: 1
+						id: "scguns:flintlock_pistol"
+						tag: {
+							AmmoCount: 1
+							Damage: 0
+							GeckoLibID: 3L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "50D36DA3D72551E4"
+					item: {
+						Count: 1
+						id: "scguns:handcannon"
+						tag: {
+							AmmoCount: 1
+							Damage: 0
+							GeckoLibID: 4L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "173A3F6118E1586B"
+					item: {
+						Count: 1
+						id: "scguns:musket"
+						tag: {
+							AmmoCount: 1
+							Damage: 0
+							GeckoLibID: 5L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "613546A60458078B"
+					item: {
+						Count: 1
+						id: "scguns:blunderbuss"
+						tag: {
+							AmmoCount: 1
+							Damage: 0
+							GeckoLibID: 6L
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "21E7601A73123E1D"
+					item: "scguns:powder_and_ball"
+					type: "item"
+				}
+				{
+					id: "3D5C6D9681DBA5FE"
+					item: "scguns:grapeshot"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.1770FB14181D4601.quest2.title}"
+			x: 1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			id: "0AA2D4BA3B7F99BF"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest3.subtitle}"
+			tasks: [{
+				id: "51979227F5C1917C"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["{ftbquests.chapter.1770FB14181D4601.quest4.description1}"]
+			id: "09AB3BC179AF7529"
+			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest4.subtitle}"
+			tasks: [{
+				id: "488AD339F05E83E0"
+				item: "scguns:copper_blueprint"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["{ftbquests.chapter.1770FB14181D4601.quest5.description1}"]
+			id: "143180BE1973BA96"
+			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest5.subtitle}"
+			tasks: [{
+				id: "73E8B44629623673"
+				item: "scguns:iron_blueprint"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["{ftbquests.chapter.1770FB14181D4601.quest6.description1}"]
+			id: "05C273A40186A578"
+			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest6.subtitle}"
+			tasks: [{
+				id: "34456F092B925694"
+				item: "scguns:treated_brass_blueprint"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["{ftbquests.chapter.1770FB14181D4601.quest7.description1}"]
+			id: "46243596A537F0AF"
+			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest7.subtitle}"
+			tasks: [{
+				id: "424BC505720043AC"
+				item: "scguns:diamond_steel_blueprint"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["{ftbquests.chapter.1770FB14181D4601.quest8.description1}"]
+			id: "250253A026170224"
+			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest8.subtitle}"
+			tasks: [{
+				id: "62B8D29EA2D601E9"
+				item: "scguns:ocean_blueprint"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: [
+				"{ftbquests.chapter.1770FB14181D4601.quest9.description1}"
+				"{ftbquests.chapter.1770FB14181D4601.quest9.description2}"
+			]
+			id: "661C38A15ACA2062"
+			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest9.subtitle}"
+			tasks: [{
+				id: "6380600E3ABD839A"
+				item: "scguns:piglin_blueprint"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["{ftbquests.chapter.1770FB14181D4601.quest10.description1}"]
+			id: "7A92FF4BFD84065C"
+			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest10.subtitle}"
+			tasks: [{
+				id: "720BDDBCD673D704"
+				item: "scguns:deep_dark_blueprint"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["{ftbquests.chapter.1770FB14181D4601.quest11.description1}"]
+			id: "5D03D83CF29BF288"
+			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest11.subtitle}"
+			tasks: [{
+				id: "6B47C5B6827CE0C2"
+				item: "scguns:end_blueprint"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"250253A026170224"
+				"7A92FF4BFD84065C"
+				"661C38A15ACA2062"
+				"05C273A40186A578"
+				"143180BE1973BA96"
+				"46243596A537F0AF"
+				"09AB3BC179AF7529"
+				"5D03D83CF29BF288"
+			]
+			description: ["{ftbquests.chapter.1770FB14181D4601.quest12.description1}"]
+			id: "548E55016926A7C4"
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest12.subtitle}"
+			tasks: [{
+				id: "6B37F6FC8AA15B87"
+				item: "scguns:scorched_blueprint"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.0d
+		}
+	]
+	subtitle: ["{ftbquests.chapter.1770FB14181D4601.subtitle0}"]
+	title: "{ftbquests.chapter.1770FB14181D4601.title}"
+}

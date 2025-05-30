@@ -14,7 +14,7 @@
 			rotation: 0.0d
 			width: 1.3285714285714287d
 			x: 0.0d
-			y: 1.5d
+			y: -2.5d
 		}
 		{
 			height: 2.0d
@@ -22,7 +22,7 @@
 			rotation: 0.0d
 			width: 9.385321100917432d
 			x: 0.0d
-			y: -4.0d
+			y: -5.0d
 		}
 		{
 			height: 0.4d
@@ -30,7 +30,31 @@
 			rotation: 0.0d
 			width: 1.1149863760217984d
 			x: 0.0d
-			y: 19.0d
+			y: 23.5d
+		}
+		{
+			height: 1.0d
+			image: "irons_spellbooks:textures/mob_effect/burning_dash.png"
+			rotation: -90.0d
+			width: 1.0d
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			height: 1.0d
+			image: "create:block/controller_rail_powered"
+			rotation: 0.0d
+			width: 1.0d
+			x: -1.5d
+			y: 17.5d
+		}
+		{
+			height: 1.0d
+			image: "createdeco:block/palettes/decals/decal_fluid"
+			rotation: 0.0d
+			width: 1.0d
+			x: 1.0d
+			y: 7.0d
 		}
 	]
 	order_index: 0
@@ -38,7 +62,11 @@
 	quests: [
 		{
 			dependencies: ["6E0D85E43EDF1994"]
-			description: ["所以，工业的新篇章也对你开启了。"]
+			description: [
+				"所以，工业的新篇章也对你开启了。"
+				""
+				"&o&3真实的炼铁就是这么困难……炼钢其实也是如此。&r&r"
+			]
 			hide_until_deps_complete: true
 			id: "11EC3A84F0C84E65"
 			rewards: [{
@@ -56,7 +84,7 @@
 			}]
 			title: "【起点】工业基石"
 			x: 0.0d
-			y: 0.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
@@ -65,6 +93,7 @@
 				"挖矿，砍树，收割，清理路面，以及批量加工。"
 				"做好你的自动化区域，这样你才有资本继续探索下去——翻箱倒柜能收获的资源终归有限。"
 			]
+			icon: "refinedstorage:wrench"
 			id: "7678AE43CAD02807"
 			shape: "diamond"
 			subtitle: "全自动基本生活"
@@ -97,7 +126,7 @@
 			]
 			title: "更多的自动化选项！"
 			x: -2.0d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
@@ -119,11 +148,14 @@
 			}]
 			title: "好看吗？"
 			x: 2.0d
-			y: 1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["2B406E71D5BDF8F6"]
-			description: ["什么，你说一次凿一组都无法满足你？那还是试试自动产线吧）"]
+			description: [
+				"什么，你说一次凿一组都无法满足你？那还是试试自动产线吧）"
+				"它同样可以帮助你调整某些方块的形态以满足工业需求，比如切制石灰岩。"
+			]
 			id: "73E629F1A17FB01C"
 			rewards: [{
 				count: 32
@@ -140,7 +172,7 @@
 			}]
 			title: "全自动装饰方块生产器"
 			x: 2.0d
-			y: -1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["7678AE43CAD02807"]
@@ -150,6 +182,7 @@
 				"虽然底盘本身可以组成整体结构，但相比之下，强力胶粘一下无疑是更廉价的。（而且可以连接更多种类的方块）"
 				"&o&b哈利路大旋风！&r&r"
 			]
+			icon: "goety:rotation_focus"
 			id: "6FCB66E5BB478C58"
 			rewards: [{
 				count: 8
@@ -184,10 +217,10 @@
 			]
 			title: "神秘转转"
 			x: -2.0d
-			y: -1.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["11EC3A84F0C84E65"]
+			dependencies: ["5584865A3F339D6E"]
 			description: [
 				"&a【完成后解锁任务线：下界之旅】&r"
 				"你获得了一个笼子，但很显然你需要给里面找到合适的房客。"
@@ -217,41 +250,35 @@
 				}
 			]
 			title: "烧起来了……吗？"
-			x: -1.0d
+			x: -2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["003B99516797BF14"]
 			description: [
 				"有条件的话可以多抓几只，烈焰人不仅可以帮你加热炉子，开火车也是一把好手。"
-				"烈焰人需要燃料——一般来说是煤炭木炭，但也可以通过流体输入（create的泵）的方式灌入岩浆，而且岩浆很耐烧。"
+				"烈焰人需要燃料——一般来说是煤炭木炭，但也可以通过流体（插入吸管后输入）的方式灌入岩浆，而且岩浆很耐烧。"
+				""
+				"&a提示：你可以使用探险家指南针输入Fortress寻找下界要塞！&r"
 				""
 				"&o&c*那么从哪里搞那么多岩浆？&r&r"
 			]
 			icon: "create:blaze_burner"
 			id: "079D9B3E0E12C25C"
 			subtitle: "我TM莱纳！"
-			tasks: [
-				{
-					id: "5C39BB7A279025A1"
-					item: "create:blaze_burner"
-					type: "item"
-				}
-				{
-					icon: "minecraft:nether_brick_fence"
-					id: "4A1C90282864B5EC"
-					structure: "betterfortresses:fortress"
-					title: "发现下界要塞"
-					type: "structure"
-				}
-			]
+			tasks: [{
+				id: "5C39BB7A279025A1"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
 			title: "真·烧起来了"
-			x: 1.0d
+			x: 0.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["079D9B3E0E12C25C"]
-			description: ["嗯，你获得了一些可以用来处理液体的金属，这也意味着流体方面的篇章要开启了。"]
+			description: ["你获得了一些可以用来处理液体的耐腐蚀金属，这也意味着流体方面的篇章要开启了。"]
+			icon: "immersiveengineering:ingot_constantan"
 			id: "4D493DCB4C0B99C0"
 			rewards: [{
 				id: "2CF90314F968BCAE"
@@ -261,19 +288,25 @@
 			shape: "gear"
 			size: 2.0d
 			subtitle: "玩弄液体让你很开心吗"
-			tasks: [{
-				id: "6F6E71B404D74CDF"
-				item: "immersiveengineering:ingot_constantan"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6F6E71B404D74CDF"
+					item: "immersiveengineering:dust_constantan"
+					type: "item"
+				}
+				{
+					id: "43B07E95A71F5DE8"
+					item: "immersiveengineering:ingot_constantan"
+					type: "item"
+				}
+			]
 			title: "容纳流体的金属"
 			x: 0.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
-			description: ["在我们的设定中，由于铜会生锈，只有康铜才能够抵挡流体的腐蚀，并被铸造为可以容纳流体的器械。"]
-			hide_until_deps_complete: true
+			description: ["由于铜会生锈，只有康铜才能够抵挡流体的腐蚀，并被铸造为可以容纳流体的器械。"]
 			id: "28617A52922404CE"
 			subtitle: "这里的铜其实是康铜"
 			tasks: [{
@@ -281,13 +314,13 @@
 				item: "create:copper_casing"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 5.5d
+			x: -2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
-			description: ["让你的液体动一动（大雾"]
-			hide_until_deps_complete: true
+			description: ["液体总是要流淌的，然而抗腐蚀的材料不多"]
+			icon: "create:mechanical_pump"
 			id: "27FD1F76136CBD0B"
 			subtitle: "你甚至可以用它们处理牛奶（笑"
 			tasks: [
@@ -297,24 +330,20 @@
 					type: "item"
 				}
 				{
-					id: "1E492131DABC2BCD"
-					item: "create:fluid_tank"
-					type: "item"
-				}
-				{
 					id: "7D2C738F52D8C1BD"
 					item: "create:mechanical_pump"
 					type: "item"
 				}
 			]
 			title: "流淌……"
-			x: 1.0d
-			y: 5.5d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
 				"28617A52922404CE"
 				"27FD1F76136CBD0B"
+				"62214C4C462BB308"
 			]
 			description: [
 				"所有流体机械都需要核心，而我们设定的核心就是流体工程块。"
@@ -331,14 +360,13 @@
 			}]
 			title: "流体机械的基石"
 			x: 0.0d
-			y: 7.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
 			description: [
-				"为了让液体进入一些东西，你需要足够强力的喷射器（大雾）"
-				"所以，注液器就成为了生产的必需品（更大的雾）"
-				"是的，工业生产——真的只是工业生产。"
+				"为了让液体进入一些东西，你需要足够强力的喷射器（虽然其实也没那么强）"
+				"所以，注液器就成为了生产的必需品……虽然只能用来涂涂抹抹，但也足够了不是吗）"
 			]
 			id: "1DC10C93572BD016"
 			subtitle: "呃，有什么东西灌进来了"
@@ -348,17 +376,18 @@
 				type: "item"
 			}]
 			title: "注入！"
-			x: 1.5d
-			y: 9.0d
+			x: 0.0d
+			y: 10.0d
 		}
 		{
 			dependencies: [
 				"1DC10C93572BD016"
-				"7F98F9F01F44BA28"
+				"370AE293C357A2D5"
 			]
 			description: [
 				"嗯，相信你已经查看过合金的配方了，有没有骂人的冲动？有就骂出来，反正骂了也没用。"
-				"压制，水和岩浆注入，还有锌粉，这意味着你需要一条产线来生产黄铜。"
+				"&7压制&r，&b水和岩浆注入&r，以及&a振动&r，也就是说你需要一条产线来生产黄铜。"
+				"好消息是打怪获得的古代黄铜可以被简单转化为黄铜，这意味着只要你生产出第一个，那么后续就不算太难。"
 			]
 			id: "76BE4625CCF2F867"
 			rewards: [{
@@ -376,14 +405,16 @@
 			}]
 			title: "真正的合金"
 			x: 0.0d
-			y: 10.5d
+			y: 13.0d
 		}
 		{
-			dependencies: ["1D0D60C89EA75663"]
+			dependencies: ["76BE4625CCF2F867"]
 			description: [
 				"至于为什么配方是用的流体工程块……大约是液压手吧（心虚）"
 				""
 				"如果你发现你做不出魔法手部零件，考虑发展魔法线！"
+				""
+				"（不喜欢改版的机械手材质的话，可以手动将内置的“Revert Brass Hand”资源包覆盖到“0-PoTAssetsOverride”内）"
 			]
 			id: "7F98F9F01F44BA28"
 			subtitle: "两只手不够用就多来几个"
@@ -393,8 +424,8 @@
 				type: "item"
 			}]
 			title: "更多的“帮手”"
-			x: -1.5d
-			y: 9.0d
+			x: -2.0d
+			y: 16.0d
 		}
 		{
 			dependencies: [
@@ -402,12 +433,11 @@
 				"0C1EAC9547A45268"
 			]
 			description: [
-				"虽然这东西叫电子管没错，但是很显然它不能充电，你也没进入电子时代）"
+				"虽然这东西叫电子管没错，但是很显然它不能充电，只能通过一些微弱的压电效应达成部分有限的智能化，你也没进入电子时代）"
 				"不过有一些组件还是需要它。"
 				""
 				"温馨提示：这个东西你会用到&4很多&r！而且纯靠手搓的话会非常烦人！建议你最晚也从这里就开始考虑自动化的问题……"
 			]
-			hide_until_deps_complete: true
 			id: "73CD9D2DD215B5F5"
 			subtitle: "嗯，伪电子时代"
 			tasks: [{
@@ -416,8 +446,8 @@
 				type: "item"
 			}]
 			title: "工业化的结晶"
-			x: -3.5d
-			y: 14.0d
+			x: -3.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["76BE4625CCF2F867"]
@@ -425,7 +455,6 @@
 				"你应该发现了，在鼓风机前面放某些特定的东西可以实现批量加工）"
 				"但很显然，单格水和单格岩浆都不是很容易放置，而营火又容易烫到自己，所以——这就是解决方案。"
 			]
-			hide_until_deps_complete: true
 			id: "07C921FBCF56E703"
 			shape: "diamond"
 			subtitle: "其实是保护你自己）"
@@ -435,8 +464,8 @@
 				type: "item"
 			}]
 			title: "鼓风机输出"
-			x: 2.5d
-			y: 13.0d
+			x: -0.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["07C921FBCF56E703"]
@@ -471,8 +500,8 @@
 				}
 			]
 			title: "触媒装箱"
-			x: 1.0d
-			y: 13.0d
+			x: 0.0d
+			y: 16.0d
 		}
 		{
 			dependencies: [
@@ -485,26 +514,29 @@
 				""
 				"&n注意：从这一步开始，你将涉及到永昼之地或者恒晓之地的特殊矿物。如果你还没有涉及到这些维度，出发去探险吧！&r"
 			]
-			hide_until_deps_complete: true
 			id: "51676EF62E7A17F3"
-			subtitle: "精密元件的基石"
+			subtitle: "基础元件的基础"
 			tasks: [{
 				id: "5D18D64F0341F617"
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
 			title: "精密工业"
-			x: -5.0d
-			y: 14.0d
+			x: -4.0d
+			y: 16.0d
 		}
 		{
-			dependencies: ["1DC10C93572BD016"]
+			dependencies: [
+				"1DC10C93572BD016"
+				"370AE293C357A2D5"
+			]
 			description: [
 				"硬邦邦的黑曜石板子显然是很合适的工程材料，对吧）"
 				"你&l&b不能&r&r把它们镶嵌在盔甲上增加保护，真是遗憾）"
 				"这里缅怀一下曾经的匠魂（"
+				""
+				"挖掘铅矿前请做好准备，否则容易铅中毒！"
 			]
-			hide_until_deps_complete: true
 			id: "10CF3F30EC2A65E8"
 			subtitle: "这显然比铁硬）"
 			tasks: [{
@@ -513,8 +545,8 @@
 				type: "item"
 			}]
 			title: "来硬的"
-			x: 3.5d
-			y: 14.0d
+			x: 2.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
@@ -522,7 +554,6 @@
 				"由于我们追求真实，你现在不可以通过杂酚油桶简单粗暴的生成这些东西了：你需要注液，不过问题应该也不大。"
 				"*小声：反正杂酚油总会多到你用不完（"
 			]
-			hide_until_deps_complete: true
 			id: "607A957382E65976"
 			subtitle: "沉浸工业的基础"
 			tasks: [{
@@ -531,21 +562,20 @@
 				type: "item"
 			}]
 			title: "防腐措施"
-			x: 5.0d
-			y: 14.0d
+			x: 3.0d
+			y: 14.5d
 		}
 		{
 			dependencies: [
 				"51676EF62E7A17F3"
 				"10CF3F30EC2A65E8"
-				"607A957382E65976"
+				"2D0DAA028D9B2249"
 			]
 			description: [
 				"&a【完成后解锁主线章节：3I 钢铁雄心】&r"
 				"你成功的开启了精密时代，更多的工业和更有趣的历程在像你展开。"
 				"走下去吧，走到世界尽头，真相会在那里等着你。"
 			]
-			hide_until_deps_complete: true
 			id: "242C57AF7F6116E4"
 			rewards: [{
 				id: "6BEEB17986271FAD"
@@ -562,15 +592,17 @@
 			}]
 			title: "【终点】精密时代"
 			x: 0.0d
-			y: 17.5d
+			y: 22.0d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
 			description: [
+				"&a【完成后解锁附加章节：标准化生产】&r"
 				"获得铁之后，四种常用（以及接下来会变得常用）的金属——铜、锌、锡、镍——就可以实现量产了！"
 				"虽然搭建产线的过程可能比较累，但是全自动还是值得的！你可以先从这四种开始，继续研究如何量产后续的材料。为此我们也提供了指南："
 				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1A4352FB579FF77E\" } }"
 			]
+			icon: "farmersdelight:rice"
 			id: "40840BF9F23BC8A1"
 			rewards: [{
 				id: "1BD1CF2FAF04A5CA"
@@ -586,11 +618,12 @@
 			}]
 			title: "粒粒皆辛苦"
 			x: 0.0d
-			y: -2.0d
+			y: -3.5d
 		}
 		{
 			dependencies: ["73CD9D2DD215B5F5"]
 			description: ["终于可以用简单的方式分拣物品了，不是吗？"]
+			icon: "create:attribute_filter"
 			id: "029AA89F07AEE09D"
 			rewards: [{
 				count: 4
@@ -624,7 +657,7 @@
 			]
 			title: "智能时代"
 			x: -2.0d
-			y: 14.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
@@ -666,26 +699,72 @@
 			dependencies: ["37C7364F0F3E8C89"]
 			description: [
 				"事实就是：这章有三个工程块（不过这一个目前不是必须项）"
-				"物流工程块允许你合成很多可以用于物流的小工具，尤其是pipez的强力管道——它们可以输送各种资源，且不需要动力驱动。它们还可以进行升级，就像抽屉那样。"
+				"物流工程块允许你合成很多可以用于物流的小工具，尤其是机械动力在6.0中新增的强大物流工具。它们将帮助你实现工厂化物流和自动下单等功能！"
 			]
-			hide_until_deps_complete: true
 			id: "6F27F12FD5EBE559"
 			rewards: [
 				{
-					count: 12
-					id: "3483DA9CF7A9BFFE"
-					item: "pipez:item_pipe"
+					id: "6BD7C506F2008EF3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "create:cardboard_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					count: 12
-					id: "1898D70FDD518270"
-					item: "pipez:fluid_pipe"
+					id: "3EE1E76C6C09BCDD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "create:cardboard_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "56CD886F627854E9"
-					item: "pipez:wrench"
+					id: "2D7C705025A75CFB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "create:cardboard_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2654BCD920148CCD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "create:cardboard_boots"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -699,23 +778,34 @@
 			}]
 			title: "大物流时代！"
 			x: 0.0d
-			y: 15.5d
+			y: 19.0d
 		}
 		{
-			dependencies: ["37C7364F0F3E8C89"]
+			dependencies: ["6F27F12FD5EBE559"]
 			description: [
 				"铁路系统是机械动力的一大特色。它可以用于物流，抑或是单纯地观光。"
-				"铁路系统最突出的优势在于很适合远距离的运输，因为它可以跨越下界传送门，且不需要途径的区块被加载也能正常运行（但如果你要在站台装卸货的话，还是需要强加载站台）。"
+				"铁路系统最突出的优势在于很适合远距离的运输，因为它可以跨越传送门（下界、蔚蓝浩空、深暗之园的传送门都可以！），且不需要途径的区块被加载也能正常运行（但如果你要在站台装卸货的话，还是需要强加载站台）。"
 				"具体的教程，请参考思索系统。"
 			]
-			icon: "railways:track_biomesoplenty_willow"
+			icon: "create:track"
 			id: "3DD1A739EA5EDB1D"
-			rewards: [{
-				count: 24
-				id: "65D303F0CC11B324"
-				item: "create:track"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 24
+					id: "65D303F0CC11B324"
+					item: "create:track"
+					type: "item"
+				}
+				{
+					id: "37903B5AE714CEA3"
+					item: {
+						Count: 1
+						id: "createdieselgenerators:track_layers_bag"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			subtitle: "滴滴"
 			tasks: [
@@ -731,16 +821,12 @@
 				}
 			]
 			title: "铁道运输"
-			x: -1.0d
-			y: 13.0d
+			x: -1.5d
+			y: 18.0d
 		}
 		{
-			dependencies: [
-				"76BE4625CCF2F867"
-				"10CF3F30EC2A65E8"
-			]
+			dependencies: ["10CF3F30EC2A65E8"]
 			description: ["提示：这一步任务属于本章的支线，不一定要在现在完成。"]
-			hide_until_deps_complete: true
 			id: "37C7364F0F3E8C89"
 			subtitle: "它能做什么呢？"
 			tasks: [{
@@ -750,20 +836,20 @@
 			}]
 			title: "与众不同的机壳"
 			x: 0.0d
-			y: 14.0d
+			y: 17.0d
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
 			description: [
 				"通过进入下界，你将会看到大量的岩浆，并思考自己能不能利用它们……"
-				"幸运的是，连续流体&b超过10000单位液体源（1单位为一格）就视为无限&r这一规律仍然有效。"
+				"幸运的是，连续流体&b超过10000单位液体源（1单位为一格）就视为无限&r这一规律仍然部分有效。"
 				"也就是说，你可以通过软管滑轮从下界岩浆池中抽取&c无尽&r的岩浆！"
 				""
 				"&6&o*这下烈焰人吃饱了）&r&r"
 				"&b需要注意的是，软管滑轮是通过其软管放置面之上的液体量来计算是否无尽的，所以你需要对岩浆池进行一次探底）&r"
-				"&d软管滑轮还可以自动放置岩浆，所以你也许可以在主世界搞一个无尽的岩浆池……大概）&r"
+				"&d基于某些神秘限制，只有下界才能产出无尽的岩浆……&r"
 			]
-			icon: "bloodmagic:lavacrystal"
+			icon: "artifacts:fire_gauntlet"
 			id: "794FE24A776917F2"
 			rewards: [{
 				count: 4
@@ -788,14 +874,17 @@
 				}
 			]
 			title: "无尽岩浆"
-			x: 2.0d
-			y: 7.0d
+			x: -2.0d
+			y: 9.0d
 		}
 		{
-			dependencies: ["76BE4625CCF2F867"]
+			dependencies: [
+				"1DC10C93572BD016"
+				"3ACA6DDA21386252"
+			]
 			description: [
 				"玫瑰石英是一种具有电学性质的材料，在受到特定刺激后会产生电压……然而，你并不能指望用这点微弱的电压来积累电力。"
-				"即便如此，它还是有用的。为了制造它，你需要一种叫红石酸的导电流体……。"
+				"即便如此，它还是有用的。为了制造它，你需要一种叫&c红石酸&r的导电流体……。"
 				"当然了，制作完成后它也不能直接使用，还是要用砂纸打磨之后才能正常安装（"
 				""
 				"聪明的小伙伴可能已经发现了，红石酸加上一点点活石，就能用来量产红石粉……没事，你的电子元件不会介意这点掺进来的杂质的，对吧？"
@@ -805,19 +894,222 @@
 			subtitle: "哦还没有"
 			tasks: [
 				{
-					id: "4A2263932B0BFE7C"
-					item: "immersiveengineering:redstone_acid_bucket"
+					id: "5D0AA9CE056CA4DC"
+					item: "create:rose_quartz"
 					type: "item"
 				}
 				{
-					id: "659533F07C4ECFB1"
+					id: "660364282DB27C0D"
 					item: "create:polished_rose_quartz"
 					type: "item"
 				}
 			]
 			title: "有电了……吗？"
-			x: -2.5d
+			x: -2.0d
 			y: 13.0d
+		}
+		{
+			dependencies: ["4D493DCB4C0B99C0"]
+			description: [
+				"至少它确实增加了一些弹性（）"
+				"所有的弹簧都需要一台足够卷的机器来完成制造。"
+			]
+			id: "3EFEF14D70B01F51"
+			subtitle: "老北京机内卷"
+			tasks: [{
+				id: "27A6A7C13580E12F"
+				item: "vintageimprovements:spring_coiling_machine"
+				type: "item"
+			}]
+			title: "卷起来了"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3EFEF14D70B01F51"]
+			description: [
+				"单个的弹簧显然不足以支撑起机械工作的力量，因此需要将其组合。"
+				"有的时候你甚至需要将其压入工程块作为模块化的组件。"
+				""
+				"&o&7*看名字你就能猜到，后面显然会有更多的弹簧组）&r&r"
+			]
+			icon: "kubejs:basic_spring_set"
+			id: "62214C4C462BB308"
+			subtitle: "装配，行动，完美"
+			tasks: [{
+				id: "0ECDCFDFF1BE216E"
+				item: "kubejs:basic_spring_set"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1D0D60C89EA75663"]
+			description: ["对于某些配方，你需要比注液器更加强力的压制工具……"]
+			id: "2365843CB7C02588"
+			subtitle: "强行灌注"
+			tasks: [{
+				id: "1BF501746E83267C"
+				item: "vintageimprovements:vacuum_chamber"
+				type: "item"
+			}]
+			title: "液压之力"
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["62214C4C462BB308"]
+			description: [
+				"简单的振动显然无法&b独立完成&r太多的工作，但是帮你拆分一下方块和树叶还是可以的。"
+				"然而很多更加复杂的合成需要&c在加工过程中进行这一操作&r，所以最好多做一些，方便之后产线的搭建。"
+			]
+			id: "370AE293C357A2D5"
+			subtitle: "可惜没有试管"
+			tasks: [{
+				id: "24899BE40D7190F6"
+				item: "vintageimprovements:vibrating_table"
+				type: "item"
+			}]
+			title: "振荡"
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2365843CB7C02588"]
+			description: [" 在高温高压下，红石溶解于水，生成红石酸……所以你应该狠狠加压了）"]
+			id: "3ACA6DDA21386252"
+			subtitle: "压力上来了"
+			tasks: [{
+				id: "3CA0380EB5FA21C0"
+				item: "immersiveengineering:redstone_acid_bucket"
+				type: "item"
+			}]
+			title: "红石酸"
+			x: -2.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["11EC3A84F0C84E65"]
+			description: ["将金属压制成线……以方便一些精细加工。"]
+			id: "5584865A3F339D6E"
+			subtitle: "金属版"
+			tasks: [{
+				id: "4E61DFFE814C6921"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			title: "纺线机？"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"607A957382E65976"
+				"76BE4625CCF2F867"
+			]
+			id: "2D0DAA028D9B2249"
+			tasks: [{
+				id: "196F24099478B230"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 16.0d
+		}
+		{
+			dependencies: [
+				"079D9B3E0E12C25C"
+				"5584865A3F339D6E"
+			]
+			description: ["在你给烈焰人吸管后，它们就可以在笼子里利用岩浆来燃烧了！"]
+			id: "0E9D500DED0B76E7"
+			shape: "diamond"
+			subtitle: "顶级饮品"
+			tasks: [{
+				id: "5D5CF30B38FB21DC"
+				item: "createaddition:straw"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["76BE4625CCF2F867"]
+			description: [
+				"可以灌入可燃流体的打火机"
+				"小心火灾！"
+			]
+			id: "4547A48AEAA539A0"
+			shape: "diamond"
+			subtitle: "这个不能咬"
+			tasks: [{
+				id: "3AA1D5B42C49F70E"
+				item: "createdieselgenerators:lighter"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 15.0d
+		}
+		{
+			dependencies: ["079D9B3E0E12C25C"]
+			description: [
+				"经过处理后的硝钢可以作为枪械框架和改装件的基底，也就是说，你可以开始组合铁质枪械了。"
+				"硝钢为硝烟而生。"
+			]
+			icon: "scguns:treated_iron_ingot"
+			id: "4F0468E7373CD68A"
+			shape: "diamond"
+			subtitle: "硝烟弥漫"
+			tasks: [
+				{
+					id: "61C8C1019F627A5D"
+					item: "scguns:treated_iron_blend"
+					type: "item"
+				}
+				{
+					id: "45A98C8BE6D15B94"
+					item: "scguns:treated_iron_ingot"
+					type: "item"
+				}
+			]
+			title: "我勒个硝钢"
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["079D9B3E0E12C25C"]
+			description: ["在你获得烈焰人燃烧室之后，你也可以使用搅拌来强行生产活木和活石……代价就是白雏菊有微小的概率因为这种粗暴的行为而毁坏。"]
+			icon: "botania:pure_daisy"
+			id: "07A2484514957C02"
+			shape: "diamond"
+			subtitle: "整个好活"
+			tasks: [{
+				id: "355F99F51DD60211"
+				title: "好嘞"
+				type: "checkmark"
+			}]
+			title: "暴力活化"
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1D0D60C89EA75663"]
+			id: "45BA353C2006974A"
+			rewards: [{
+				id: "2F268ADC67CB2A3D"
+				item: "create:steam_whistle"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "S T E A M P O W E R E D"
+			tasks: [{
+				id: "7396DDAE21A05F3B"
+				item: "create:steam_engine"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 8.0d
 		}
 	]
 	subtitle: ["Exotic Alloys"]

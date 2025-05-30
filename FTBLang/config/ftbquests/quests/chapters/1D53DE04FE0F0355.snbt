@@ -4,8 +4,7 @@
 	default_quest_shape: ""
 	filename: "1D53DE04FE0F0355"
 	group: ""
-	hide_quest_details_until_startable: true
-	icon: "minecraft:skeleton_skull"
+	icon: "goety:skull_focus"
 	id: "1D53DE04FE0F0355"
 	images: [
 		{
@@ -19,7 +18,7 @@
 		{
 			click: "https://started.ink/"
 			height: 1.0d
-			hover: ["前往推荐链接"]
+			hover: ["ftbquests.chapter.1D53DE04FE0F0355.image.hovertext1"]
 			image: "botania:block/alfheim_portal_swirl"
 			rotation: 0.0d
 			width: 1.0d
@@ -29,7 +28,7 @@
 		{
 			click: "https://www.mcmod.cn/modpack/826.html"
 			height: 1.0d
-			hover: ["链接：MCMod百科页面"]
+			hover: ["ftbquests.chapter.1D53DE04FE0F0355.image.hovertext2"]
 			image: "everycomp:block/abnww/ecologics/coconut_bookshelf"
 			rotation: 0.0d
 			width: 1.0d
@@ -39,8 +38,8 @@
 		{
 			click: "https://www.curseforge.com/minecraft/modpacks/path-of-truth"
 			height: 1.0d
-			hover: ["链接：Curseforge页面"]
-			image: "supplementaries:textures/gui/book/icon/curseforge.png"
+			hover: ["ftbquests.chapter.1D53DE04FE0F0355.image.hovertext3"]
+			image: "sophisticatedbackpacks:item/anvil_upgrade"
 			rotation: 0.0d
 			width: 1.0d
 			x: -4.0d
@@ -49,8 +48,8 @@
 		{
 			click: "https://music.163.com/playlist?id=12438635347&userid=327905232"
 			height: 1.0d
-			hover: ["链接：真理之路OST"]
-			image: "amendments:block/music_discs/music_disc_blocks"
+			hover: ["ftbquests.chapter.1D53DE04FE0F0355.image.hovertext4"]
+			image: "amendments:block/music_discs/music_disc_generic"
 			rotation: 0.0d
 			width: 1.0d
 			x: 4.0d
@@ -59,7 +58,7 @@
 		{
 			click: "http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=JhNBfGn481sNSi4kOvZm8b_fC0DNjNid&authKey=W5wrhYkl7nqRjzw0k%2F0wdFdKl2Y9mK%2BdfGF1YLYP9WJhtiVgny2snle1SqdjCZzh&noverify=0&group_code=798699096"
 			height: 1.0d
-			hover: ["链接：QQ交流群【真理之路魔法小屋】"]
+			hover: ["ftbquests.chapter.1D53DE04FE0F0355.image.hovertext5"]
 			image: "minecraft:item/campfire"
 			rotation: 0.0d
 			width: 1.0d
@@ -86,8 +85,8 @@
 				"{ftbquests.chapter.1D53DE04FE0F0355.quest1.description6}"
 				"{ftbquests.chapter.1D53DE04FE0F0355.quest1.description7}"
 				"{ftbquests.chapter.1D53DE04FE0F0355.quest1.description8}"
-				"{@pagebreak}"
 				"{ftbquests.chapter.1D53DE04FE0F0355.quest1.description9}"
+				"{@pagebreak}"
 				"{ftbquests.chapter.1D53DE04FE0F0355.quest1.description10}"
 				"{ftbquests.chapter.1D53DE04FE0F0355.quest1.description11}"
 				"{ftbquests.chapter.1D53DE04FE0F0355.quest1.description12}"
@@ -122,9 +121,11 @@
 				"{ftbquests.chapter.1D53DE04FE0F0355.quest1.description37}"
 				"{ftbquests.chapter.1D53DE04FE0F0355.quest1.description38}"
 				"{ftbquests.chapter.1D53DE04FE0F0355.quest1.description39}"
-				""
 				"{ftbquests.chapter.1D53DE04FE0F0355.quest1.description40}"
+				""
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest1.description41}"
 			]
+			hide_until_deps_visible: false
 			icon: "minecraft:writable_book"
 			id: "6A1B42D208C780BD"
 			rewards: [{
@@ -138,27 +139,27 @@
 			tasks: [
 				{
 					id: "2172F4EA05003DC8"
-					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest1.task.title1}"
+					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest1.task_2410258036540063176.title}"
 					type: "checkmark"
 				}
 				{
 					id: "121305C4E037E866"
-					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest1.task.title2}"
+					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest1.task_1302391060373694566.title}"
 					type: "checkmark"
 				}
 				{
 					id: "027A17090FEDEC21"
-					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest1.task.title3}"
+					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest1.task_178480462923951137.title}"
 					type: "checkmark"
 				}
 				{
 					id: "28F7B9819E2F8660"
-					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest1.task.title4}"
+					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest1.task_2952032047120483936.title}"
 					type: "checkmark"
 				}
 				{
 					id: "6A2BBF87F1819F34"
-					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest1.task.title5}"
+					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest1.task_7650418982612213556.title}"
 					type: "checkmark"
 				}
 			]
@@ -212,19 +213,8 @@
 			}]
 			subtitle: "{ftbquests.chapter.1D53DE04FE0F0355.quest3.subtitle}"
 			tasks: [{
-				id: "3CD3C78774C56D24"
-				item: {
-					Count: 1
-					id: "irons_spellbooks:copper_spell_book"
-					tag: {
-						ISB_Spells: {
-							data: [ ]
-							maxSpells: 5
-							mustEquip: 1b
-							spellWheel: 1b
-						}
-					}
-				}
+				id: "0FEC5A4F8D2F1377"
+				item: "botania:pure_daisy"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.1D53DE04FE0F0355.quest3.title}"
@@ -264,7 +254,7 @@
 				dimension: "minecraft:the_end"
 				icon: "minecraft:end_portal_frame"
 				id: "6EC2F12667DE1667"
-				title: "{ftbquests.chapter.1D53DE04FE0F0355.quest4.task.title1}"
+				title: "{ftbquests.chapter.1D53DE04FE0F0355.quest4.task_7981206636907599463.title}"
 				type: "dimension"
 			}]
 			title: "{ftbquests.chapter.1D53DE04FE0F0355.quest4.title}"
@@ -310,12 +300,12 @@
 			tasks: [
 				{
 					id: "46C07CCEE74734F5"
-					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest6.task.title1}"
+					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest6.task_5098212006268712181.title}"
 					type: "checkmark"
 				}
 				{
 					id: "37F1F323F81DC6A6"
-					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest6.task.title2}"
+					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest6.task_4031270477285410470.title}"
 					type: "checkmark"
 				}
 			]
@@ -343,12 +333,12 @@
 			tasks: [
 				{
 					id: "1B31A712CF22EEBF"
-					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest7.task.title1}"
+					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest7.task_1959531012109299391.title}"
 					type: "checkmark"
 				}
 				{
 					id: "79CCBB2AA91935AA"
-					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest7.task.title2}"
+					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest7.task_8776595565738276266.title}"
 					type: "checkmark"
 				}
 			]
@@ -371,12 +361,12 @@
 			tasks: [
 				{
 					id: "0E8EB110249EE98D"
-					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest8.task.title1}"
+					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest8.task_1048970446115891597.title}"
 					type: "checkmark"
 				}
 				{
 					id: "1E3678EB4321AFF8"
-					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest8.task.title2}"
+					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest8.task_2177060421719142392.title}"
 					type: "checkmark"
 				}
 			]
@@ -385,7 +375,6 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["4543C26614BBBE4C"]
 			description: [
 				"{ftbquests.chapter.1D53DE04FE0F0355.quest9.description1}"
 				"{ftbquests.chapter.1D53DE04FE0F0355.quest9.description2}"
@@ -406,7 +395,7 @@
 			subtitle: "{ftbquests.chapter.1D53DE04FE0F0355.quest9.subtitle}"
 			tasks: [{
 				id: "4D9529C274E7A8F4"
-				title: "{ftbquests.chapter.1D53DE04FE0F0355.quest9.task.title1}"
+				title: "{ftbquests.chapter.1D53DE04FE0F0355.quest9.task_5590420427612072180.title}"
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.1D53DE04FE0F0355.quest9.title}"
@@ -444,11 +433,11 @@
 			subtitle: "{ftbquests.chapter.1D53DE04FE0F0355.quest10.subtitle}"
 			tasks: [{
 				id: "286C4060341D903A"
-				title: "{ftbquests.chapter.1D53DE04FE0F0355.quest10.task.title1}"
+				title: "{ftbquests.chapter.1D53DE04FE0F0355.quest10.task_2912773840937259066.title}"
 				type: "checkmark"
 			}]
-			x: -0.75d
-			y: 0.75d
+			x: -1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -477,14 +466,168 @@
 			subtitle: "{ftbquests.chapter.1D53DE04FE0F0355.quest11.subtitle}"
 			tasks: [{
 				id: "0D17B149172E240D"
-				title: "{ftbquests.chapter.1D53DE04FE0F0355.quest11.task.title1}"
+				title: "{ftbquests.chapter.1D53DE04FE0F0355.quest11.task_943417574437037069.title}"
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.1D53DE04FE0F0355.quest11.title}"
+			x: -0.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description1}"
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description2}"
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description3}"
+				""
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description4}"
+				"{@pagebreak}"
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description5}"
+				""
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description6}"
+				"{@pagebreak}"
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description7}"
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description8}"
+				""
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description9}"
+				"{@pagebreak}"
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description10}"
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description11}"
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description12}"
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description13}"
+				"{@pagebreak}"
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description14}"
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description15}"
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description16}"
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description17}"
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description18}"
+				""
+				"{ftbquests.chapter.1D53DE04FE0F0355.quest12.description19}"
+			]
+			icon: "minecraft:nether_star"
+			id: "254884C71A01998E"
+			rewards: [{
+				id: "228FDE1E2242CBF1"
+				item: "minecraft:book"
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "{ftbquests.chapter.1D53DE04FE0F0355.quest12.subtitle}"
+			tasks: [
+				{
+					id: "6686D2CB7887D440"
+					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest12.task_7387824010090239040.title}"
+					type: "checkmark"
+				}
+				{
+					id: "3A5D5CF7497783E1"
+					title: "{ftbquests.chapter.1D53DE04FE0F0355.quest12.task_4205619844193158113.title}"
+					type: "checkmark"
+				}
+			]
+			title: "{ftbquests.chapter.1D53DE04FE0F0355.quest12.title}"
+			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: ["{ftbquests.chapter.1D53DE04FE0F0355.quest13.description1}"]
+			icon: "create:weathered_iron_window_pane"
+			id: "63ED210584D9A4E3"
+			rewards: [
+				{
+					id: "6C2779AE9F20832E"
+					item: {
+						Count: 1
+						id: "botania:starfield"
+						tag: {
+							display: {
+								Lore: ["\"Jasdew Starfield\""]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3EA3FAE4F637D89B"
+					item: {
+						Count: 1
+						id: "blue_skies:midnight_glass"
+						tag: {
+							display: {
+								Lore: ["\"Midnight Pigeon\""]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "21424BCCC0490F77"
+					item: {
+						Count: 1
+						id: "minecraft:jukebox"
+						tag: {
+							display: {
+								Lore: ["\"Jacky Blackson\""]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "47386AFE352F12F7"
+					item: {
+						Count: 1
+						id: "handcrafted:kitchen_hood"
+						tag: {
+							display: {
+								Lore: ["\"YukkuriC\""]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "20F368BFD931B31E"
+					item: {
+						Count: 1
+						id: "create:blue_postbox"
+						tag: {
+							display: {
+								Lore: ["\"KEYboradManDesu\""]
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "62D344567B4E11F4"
+					item: {
+						Count: 1
+						id: "minecraft:map"
+						tag: {
+							display: {
+								Lore: ["\"sakurayang\""]
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			subtitle: "{ftbquests.chapter.1D53DE04FE0F0355.quest13.subtitle}"
+			tasks: [{
+				id: "07CD47FA78D6B948"
+				title: "{ftbquests.chapter.1D53DE04FE0F0355.quest13.task_562184669585914184.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.1D53DE04FE0F0355.quest13.title}"
 			x: 0.75d
-			y: 0.75d
+			y: 3.0d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.1D53DE04FE0F0355.subtitle}"]
+	subtitle: ["{ftbquests.chapter.1D53DE04FE0F0355.subtitle0}"]
 	title: "{ftbquests.chapter.1D53DE04FE0F0355.title}"
 }

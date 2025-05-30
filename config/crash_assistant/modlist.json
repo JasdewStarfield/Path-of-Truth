@@ -71,9 +71,9 @@
     "modId": "artifacts",
     "version": "9.5.16"
   },
-  "AsyncParticles-2.0.0-beta.1+1.20.1.jar": {
+  "AsyncParticles-2.0.0-beta.2+1.20.1.jar": {
     "modId": "asyncparticles",
-    "version": "2.0.0-beta.1"
+    "version": "2.0.0-beta.2"
   },
   "AttributeFix-Forge-1.20.1-21.0.4.jar": {
     "modId": "attributefix",
@@ -83,9 +83,9 @@
     "modId": "baguettelib",
     "version": "1.0.0"
   },
-  "balm-forge-1.20.1-7.3.30-all.jar": {
+  "balm-forge-1.20.1-7.3.31-all.jar": {
     "modId": "balm",
-    "version": "7.3.30"
+    "version": "7.3.31"
   },
   "beautify-2.0.2.jar": {
     "modId": "beautify",
@@ -118,10 +118,6 @@
   "BetterBurning-Forge-1.20.1-9.0.2.jar": {
     "modId": "betterburning",
     "version": "9.0.2"
-  },
-  "betterchunkloading-1.20.1-5.4.jar": {
-    "modId": "betterchunkloading",
-    "version": "1.20.1-5.4"
   },
   "BetterCompatibilityChecker-forge-4.0.8+mc1.20.1.jar": {
     "modId": "bcc",
@@ -291,9 +287,9 @@
     "modId": "craftingtweaks",
     "version": "18.2.5"
   },
-  "CrashAssistant-forge-1.19.2-1.20.1-1.8.2.jar": {
+  "CrashAssistant-forge-1.19.2-1.20.1-1.9.0.jar": {
     "modId": "crash_assistant",
-    "version": "1.8.2"
+    "version": "1.9.0"
   },
   "cratedelight-24.11.29-1.20-forge.jar": {
     "modId": "cratedelight",
@@ -323,9 +319,9 @@
     "modId": "create_compressed",
     "version": "2.1.0"
   },
-  "create_connected-1.0.3-mc1.20.1-all.jar": {
+  "create_connected-1.1.2-mc1.20.1-all.jar": {
     "modId": "create_connected",
-    "version": "1.0.3-mc1.20.1"
+    "version": "1.1.2-mc1.20.1"
   },
   "create_enchantment_industry-1.3.2-for-create-6.0.4.jar": {
     "modId": "create_enchantment_industry",
@@ -539,9 +535,9 @@
     "modId": "fancymenu",
     "version": "3.5.2"
   },
-  "FarmersDelight-1.20.1-1.2.7.jar": {
+  "FarmersDelight-1.20.1-1.2.8.jar": {
     "modId": "farmersdelight",
-    "version": "1.20.1-1.2.7"
+    "version": "1.20.1-1.2.8"
   },
   "farmersrespite-1.20.1-2.1.2.jar": {
     "modId": "farmersrespite",
@@ -583,9 +579,9 @@
     "modId": "fishnostuck",
     "version": "1.0.3"
   },
-  "flerovium-forge-1.20.1-1.2.13-all.jar": {
+  "flerovium-forge-1.20.1-1.2.14-all.jar": {
     "modId": "flerovium",
-    "version": "1.2.13"
+    "version": "1.2.14"
   },
   "flickerfix-1.20.1-4.0.1.jar": {
     "modId": "flickerfix",
@@ -1204,9 +1200,9 @@
     "modId": "starterstructure",
     "version": "4.2"
   },
-  "stonezone-1.20-2.8.6.jar": {
+  "stonezone-1.20-2.8.7.jar": {
     "modId": "stonezone",
-    "version": "1.20-2.8.6"
+    "version": "1.20-2.8.7"
   },
   "StorageDrawers-1.20.1-12.9.14.jar": {
     "modId": "storagedrawers",

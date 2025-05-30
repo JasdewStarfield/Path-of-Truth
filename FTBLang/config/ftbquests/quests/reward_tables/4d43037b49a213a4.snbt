@@ -1,0 +1,17 @@
+{
+	icon: "botania:mana_pylon"
+	id: "4D43037B49A213A4"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ count: 4, item: "minecraft:experience_bottle" }
+		{ count: 4, item: "botania:manasteel_ingot" }
+		{ item: "botania:rune_mana" }
+		{ count: 4, item: "goety:cursed_ingot" }
+		{ item: "minecraft:enchanted_golden_apple" }
+		{ count: 4, item: "scguns:enchanted_bandage" }
+		{ count: 4, item: "irons_spellbooks:arcane_ingot" }
+		{ count: 4, item: "goety:magic_emerald" }
+	]
+	title: "{ftbquests.loot_table_5567297392411284388.title}"
+}

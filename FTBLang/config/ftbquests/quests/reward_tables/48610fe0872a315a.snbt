@@ -1,0 +1,38 @@
+{
+	icon: "artifacts:crystal_heart"
+	id: "48610FE0872A315A"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ item: "goety:soul_heal_focus" }
+		{
+			item: {
+				Count: 1
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "irons_spellbooks:heal"
+							index: 0
+							level: 5
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "botania:blood_pendant"
+				tag: {
+					brewKey: "botania:regen"
+				}
+			}
+		}
+	]
+	title: "{ftbquests.loot_table_5215467300486525274.title}"
+}

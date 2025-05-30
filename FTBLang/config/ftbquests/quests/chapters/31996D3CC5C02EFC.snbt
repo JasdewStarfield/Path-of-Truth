@@ -11,17 +11,19 @@
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/start.png"
+			order: 2
 			rotation: 0.0d
 			width: 1.3285714285714287d
-			x: 0.0d
-			y: -1.0d
+			x: -5.5d
+			y: 0.0d
 		}
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
+			order: 2
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 5.5d
+			x: 6.5d
 			y: 0.0d
 		}
 		{
@@ -32,42 +34,129 @@
 			x: 0.0d
 			y: -5.5d
 		}
+		{
+			height: 3.0d
+			image: "storagedrawers:block/indicator/void_icon"
+			rotation: 0.0d
+			width: 3.0d
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:textures/mob_effect/darkness.png"
+			rotation: 0.0d
+			width: 2.0d
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			height: 2.0d
+			image: "goety:item/focus/witherskull_spell"
+			rotation: 0.0d
+			width: 2.0d
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			height: 2.0d
+			image: "alexsmobs:item/soul_heart"
+			rotation: 0.0d
+			width: 2.0d
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			height: 3.0d
+			image: "botania:block/mana_void"
+			rotation: 0.0d
+			width: 3.0d
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			image: "irons_spellbooks:item/dragonskin_spell_book"
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			height: 2.0d
+			image: "botania:item/mana_ring_greater"
+			rotation: 0.0d
+			width: 2.0d
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			height: 1.6d
+			image: "minecraft:textures/particle/goldheart_2.png"
+			rotation: 0.0d
+			width: 1.6d
+			x: -1.0d
+			y: 0.0d
+		}
 	]
 	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["7CA6215959E08F1F"]
+			dependencies: ["301A6952E3B16C88"]
 			description: [
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest1.description1}"
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest1.description2}"
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest1.description3}"
+				""
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest1.description4}"
 			]
 			hide_until_deps_complete: true
-			icon: "artifacts:mimic_spawn_egg"
+			icon: {
+				Count: 1
+				id: "goety:philosophers_stone"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "12134A3EF6C80C54"
-			shape: "rsquare"
+			rewards: [{
+				id: "367CC6C84094F32B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "irons_spellbooks:archevoker_chestplate"
+					tag: {
+						Damage: 0
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 1
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
 			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest1.subtitle}"
-			tasks: [
-				{
-					id: "1376A92197AC643B"
-					item: "artifacts:mimic_spawn_egg"
-					type: "item"
+			tasks: [{
+				id: "1CF04E8C9CF299A6"
+				item: {
+					Count: 1
+					id: "goety:philosophers_stone"
+					tag: {
+						Damage: 0
+					}
 				}
-				{
-					id: "38D4F419FDC97AF8"
-					item: "botania:spark"
-					type: "item"
-				}
-				{
-					id: "683329F0F2EC8C27"
-					item: "bloodmagic:archmagebloodorb"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest1.title}"
-			x: 0.0d
+			x: -3.5d
 			y: 0.0d
 		}
 		{
@@ -77,31 +166,24 @@
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest2.description2}"
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest2.description3}"
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest2.description4}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest2.description5}"
 			]
-			icon: {
-				Count: 1
-				id: "irons_spellbooks:tarnished_helmet"
-				tag: {
-					Damage: 0
-					ISB_Spells: {
-						data: [ ]
-						maxSpells: 1
-						mustEquip: 1b
-						spellWheel: 1b
-					}
-				}
-			}
-			id: "7B6A44193BB4D5FD"
+			icon: "artifacts:crystal_heart"
+			id: "059A741ABF2A9A34"
+			rewards: [{
+				id: "5552238381243D72"
+				item: "undergarden:forgotten_ingot"
+				type: "item"
+			}]
+			shape: "diamond"
 			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest2.subtitle}"
 			tasks: [{
-				id: "05505D853225C269"
-				item: "irons_spellbooks:blood_staff"
+				id: "1E82DD823E1D0ED9"
+				item: "alexsmobs:spawn_egg_farseer"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest2.title}"
-			x: -1.5d
-			y: -1.5d
+			x: -1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
@@ -109,75 +191,27 @@
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest3.description1}"
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest3.description2}"
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest3.description3}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest3.description4}"
-			]
-			icon: "artifacts:crystal_heart"
-			id: "059A741ABF2A9A34"
-			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest3.subtitle}"
-			tasks: [
-				{
-					id: "1A39BE641C3A581C"
-					item: "alexsmobs:mysterious_worm"
-					type: "item"
-				}
-				{
-					id: "1E82DD823E1D0ED9"
-					item: "alexsmobs:spawn_egg_farseer"
-					type: "item"
-				}
-				{
-					id: "7C1C84A966E8A5A3"
-					item: "undergarden:forgotten_guardian_spawn_egg"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest3.title}"
-			x: -1.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["12134A3EF6C80C54"]
-			description: [
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest4.description1}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest4.description2}"
-			]
-			id: "3044537D03B81BFF"
-			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest4.subtitle}"
-			tasks: [{
-				id: "27795803FBF6D039"
-				item: "botania:spawner_mover"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest4.title}"
-			x: -2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["12134A3EF6C80C54"]
-			description: [
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest5.description1}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest5.description2}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest5.description3}"
 			]
 			id: "0C99BD24E939A68D"
-			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest5.subtitle}"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest3.subtitle}"
 			tasks: [{
 				count: 2L
 				id: "71D9BEAB1BAEE21C"
 				item: "minecraft:dragon_egg"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest5.title}"
-			x: 1.5d
-			y: -1.5d
+			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest3.title}"
+			x: -2.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
 			description: [
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest6.description1}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest6.description2}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest6.description3}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest6.description4}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest4.description1}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest4.description2}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest4.description3}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest4.description4}"
 			]
 			id: "3BE92D4971A86473"
 			rewards: [{
@@ -185,27 +219,28 @@
 				item: "undergarden:boomgourd"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest6.subtitle}"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest4.subtitle}"
 			tasks: [{
 				id: "6B02DAE7F314777E"
 				item: "botania:mana_bomb"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest6.title}"
-			x: 1.5d
-			y: 1.5d
+			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest4.title}"
+			x: -2.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["3044537D03B81BFF"]
+			dependencies: ["12134A3EF6C80C54"]
 			description: [
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest7.description1}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest7.description2}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest7.description3}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest5.description1}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest5.description2}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest5.description3}"
 				""
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest7.description4}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest5.description4}"
 			]
 			id: "57CDFE9B7DBD86EA"
-			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest7.subtitle}"
+			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest5.subtitle}"
 			tasks: [{
 				id: "44B645B61148B9F8"
 				item: {
@@ -218,37 +253,24 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest7.title}"
-			x: -4.0d
-			y: 0.0d
+			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest5.title}"
+			x: -5.0d
+			y: -1.5d
 		}
 		{
-			dependencies: ["12134A3EF6C80C54"]
-			description: [
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest8.description1}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest8.description2}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest8.description3}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest8.description4}"
+			dependencies: [
+				"07755877DAE443D1"
+				"735DE2EF56DEF309"
+				"4AB31A29B0259561"
 			]
-			id: "1A10DCB76F3AE6F2"
-			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest8.subtitle}"
-			tasks: [{
-				id: "6D9EBBD338BB3818"
-				item: "minecraft:budding_amethyst"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest8.title}"
-			x: 2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["1A10DCB76F3AE6F2"]
 			description: [
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest9.description1}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest9.description2}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest9.description3}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest9.description4}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest9.description5}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest6.description1}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest6.description2}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest6.description3}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest6.description4}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest6.description5}"
+				""
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest6.description6}"
 			]
 			id: "0C46182EC4B33189"
 			rewards: [{
@@ -257,23 +279,29 @@
 				type: "item"
 			}]
 			shape: "octagon"
-			size: 2.0d
-			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest9.subtitle}"
+			size: 1.4d
+			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest6.subtitle}"
 			tasks: [{
 				id: "353C425A4E0BBD22"
-				item: "kubejs:midnight"
+				item: {
+					Count: 1
+					id: "kubejs:midnight"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest9.title}"
-			x: 4.0d
+			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest6.title}"
+			x: 4.5d
 			y: 0.0d
 		}
 		{
-			dependencies: ["12134A3EF6C80C54"]
+			dependencies: ["059A741ABF2A9A34"]
 			description: [
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest10.description1}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest10.description2}"
-				"{ftbquests.chapter.31996D3CC5C02EFC.quest10.description3}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest7.description1}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest7.description2}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest7.description3}"
 			]
 			icon: {
 				Count: 1
@@ -284,11 +312,11 @@
 			}
 			id: "7E592EF6A0A80611"
 			rewards: [{
-				id: "03C60BE603D4C2AC"
-				item: "supplementaries:statue"
+				id: "38286D4F42FAAD11"
+				item: "alshanex_familiars:statue_curio"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest10.subtitle}"
+			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest7.subtitle}"
 			tasks: [
 				{
 					id: "5568E65CD216F102"
@@ -317,127 +345,274 @@
 					type: "item"
 				}
 			]
+			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest7.title}"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["12134A3EF6C80C54"]
+			description: [
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest8.description1}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest8.description2}"
+				""
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest8.description3}"
+			]
+			icon: "botania:enchanter"
+			id: "1DFAF813825EE8B8"
+			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest8.subtitle}"
+			tasks: [{
+				id: "3E0FF71DC64C6FDE"
+				item: "botania:mana_fluxfield"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest8.title}"
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["059A741ABF2A9A34"]
+			description: ["{ftbquests.chapter.31996D3CC5C02EFC.quest9.description1}"]
+			icon: "minecraft:wither_skeleton_skull"
+			id: "3C38B10AFBEA5CEE"
+			rewards: [{
+				id: "0A527D9DC2F3D866"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest9.subtitle}"
+			tasks: [{
+				id: "5A25C8F89EBC9419"
+				item: "minecraft:wither_skeleton_spawn_egg"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest9.title}"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["12134A3EF6C80C54"]
+			description: [
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest10.description1}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest10.description2}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest10.description3}"
+			]
+			id: "5753E12789B0BBE9"
+			rewards: [{
+				id: "78740F13AB4CBD52"
+				item: {
+					Count: 1
+					id: "goety:philosophers_stone"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest10.subtitle}"
+			tasks: [{
+				id: "41276A7823F3106E"
+				item: {
+					Count: 1
+					id: "goety:philosophers_mace"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
 			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest10.title}"
-			x: 0.0d
-			y: 4.0d
+			x: -5.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["12134A3EF6C80C54"]
 			description: [
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest11.description1}"
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest11.description2}"
-				""
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest11.description3}"
 			]
-			icon: "botania:enchanter"
-			id: "1DFAF813825EE8B8"
+			id: "1EF2CF7595AE3452"
+			rewards: [{
+				id: "1FB94956099394A3"
+				item: "alexsmobs:mimicream"
+				type: "item"
+			}]
 			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest11.subtitle}"
 			tasks: [{
-				id: "3E0FF71DC64C6FDE"
-				item: "botania:mana_fluxfield"
+				id: "0D995BCE314CE1DD"
+				item: "alexsmobs:mimicream"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest11.title}"
-			x: 0.0d
-			y: -4.0d
+			x: -3.5d
+			y: 2.0d
 		}
 		{
-			dependencies: ["7B6A44193BB4D5FD"]
+			dependencies: ["059A741ABF2A9A34"]
 			description: [
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest12.description1}"
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest12.description2}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest12.description3}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest12.description4}"
 			]
-			id: "413A1D80B0F01801"
+			id: "07755877DAE443D1"
+			rewards: [{
+				id: "0E764B750758C0E2"
+				item: "alexsmobs:soul_heart"
+				type: "item"
+			}]
+			shape: "hexagon"
 			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest12.subtitle}"
 			tasks: [{
-				id: "29B54D28219ABB47"
-				item: "botania:blacker_lotus"
+				id: "0A8A042EF5636EA4"
+				item: "goety:sonic_boom_focus"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest12.title}"
-			x: -3.0d
-			y: -3.0d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["0C99BD24E939A68D"]
+			dependencies: ["7716E5CB171F049A"]
 			description: [
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest13.description1}"
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest13.description2}"
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest13.description3}"
 			]
-			id: "3D9FF250D16A46C2"
+			id: "4AB31A29B0259561"
+			rewards: [{
+				id: "7B32A31AE3D20C68"
+				item: "goety:corruption_focus"
+				type: "item"
+			}]
+			shape: "hexagon"
 			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest13.subtitle}"
 			tasks: [{
-				id: "20EEC8DB99B00208"
-				item: "minecraft:dragon_head"
+				id: "0D97FD360087C445"
+				item: "botania:blacker_lotus"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest13.title}"
-			x: 3.0d
-			y: -3.0d
+			x: 2.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["059A741ABF2A9A34"]
+			dependencies: ["71BB0BEA50C791E2"]
 			description: [
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest14.description1}"
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest14.description2}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest14.description3}"
 			]
-			icon: "minecraft:wither_skeleton_skull"
-			id: "3C38B10AFBEA5CEE"
+			id: "735DE2EF56DEF309"
+			rewards: [{
+				id: "768E964B4CF6DC6B"
+				item: "betterarcheology:creeper_fossil"
+				type: "item"
+			}]
+			shape: "hexagon"
 			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest14.subtitle}"
 			tasks: [{
-				id: "5A25C8F89EBC9419"
-				item: "minecraft:wither_skeleton_spawn_egg"
+				id: "75044240157ED02B"
+				item: "goety:killing_focus"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest14.title}"
-			x: -3.0d
-			y: 3.0d
+			x: 2.0d
+			y: 2.5d
 		}
 		{
-			dependencies: ["3BE92D4971A86473"]
+			dependencies: [
+				"0C99BD24E939A68D"
+				"61B0D0DB73C67D53"
+			]
 			description: [
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest15.description1}"
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest15.description2}"
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest15.description3}"
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest15.description4}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest15.description5}"
+				""
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest15.description6}"
 			]
-			icon: "cold_sweat:chameleon_molt"
-			id: "2F259F3824D83D9D"
-			rewards: [{
-				id: "4995CF24C7F999B6"
-				item: "cold_sweat:chameleon_molt"
-				type: "item"
-			}]
+			id: "7716E5CB171F049A"
+			shape: "pentagon"
 			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest15.subtitle}"
 			tasks: [{
-				id: "2402A22F7A53F487"
-				item: "cold_sweat:chameleon_spawn_egg"
+				id: "7BE6F49852DEEACD"
+				item: "goety:night_beacon"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest15.title}"
-			x: 3.0d
-			y: 3.0d
+			x: 0.0d
+			y: -2.5d
 		}
 		{
-			dependencies: ["7E592EF6A0A80611"]
+			dependencies: [
+				"3BE92D4971A86473"
+				"7879C0C411C82BB7"
+			]
 			description: [
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest16.description1}"
 				"{ftbquests.chapter.31996D3CC5C02EFC.quest16.description2}"
+				""
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest16.description3}"
 			]
-			id: "779DCD928E061AC2"
-			shape: "square"
+			id: "71BB0BEA50C791E2"
+			shape: "pentagon"
 			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest16.subtitle}"
 			tasks: [{
-				id: "1F1C37DC247DA7E3"
-				item: "irons_spellbooks:cinder_essence"
+				id: "7251F769FCFAD9FF"
+				item: "botania:spawner_mover"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest16.title}"
 			x: 0.0d
-			y: 6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["12134A3EF6C80C54"]
+			description: [
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest17.description1}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest17.description2}"
+			]
+			icon: "minecraft:nether_star"
+			id: "61B0D0DB73C67D53"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest17.subtitle}"
+			tasks: [
+				{
+					id: "3DF90EB645E9CB75"
+					item: "minecraft:nether_star"
+					type: "item"
+				}
+				{
+					id: "368606C8304335B7"
+					item: "scguns:nether_star_fragment"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest17.title}"
+			x: -1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["12134A3EF6C80C54"]
+			description: [
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest18.description1}"
+				"{ftbquests.chapter.31996D3CC5C02EFC.quest18.description2}"
+			]
+			id: "7879C0C411C82BB7"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.31996D3CC5C02EFC.quest18.subtitle}"
+			tasks: [{
+				id: "0AA4DAE872A7BD8A"
+				item: "irons_spellbooks:blood_staff"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.31996D3CC5C02EFC.quest18.title}"
+			x: -1.0d
+			y: 1.5d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.31996D3CC5C02EFC.subtitle}"]
+	subtitle: ["{ftbquests.chapter.31996D3CC5C02EFC.subtitle0}"]
 	title: "{ftbquests.chapter.31996D3CC5C02EFC.title}"
 }

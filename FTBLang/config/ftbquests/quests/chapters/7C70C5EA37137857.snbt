@@ -7,14 +7,24 @@
 	hide_quest_details_until_startable: true
 	icon: "minecraft:chorus_flower"
 	id: "7C70C5EA37137857"
-	images: [{
-		height: 2.0d
-		image: "kubejs:textures/quests/a4.png"
-		rotation: 0.0d
-		width: 10.448979591836734d
-		x: 0.0d
-		y: -3.5d
-	}]
+	images: [
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/a4.png"
+			rotation: 0.0d
+			width: 10.448979591836734d
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			height: 3.0d
+			image: "respawnobelisks:item/obelisk_core_end"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: 0.0d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -23,6 +33,11 @@
 			description: ["{ftbquests.chapter.7C70C5EA37137857.quest1.description1}"]
 			hide_until_deps_complete: true
 			id: "15E666BAE38566D8"
+			rewards: [{
+				id: "70D6107D30738C9F"
+				item: "tide:chorus_fishing_bobber"
+				type: "item"
+			}]
 			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest1.subtitle}"
 			tasks: [{
 				id: "2EEDEF968ECEA456"
@@ -155,8 +170,8 @@
 			]
 			id: "10CAF35A5551DC8F"
 			rewards: [{
-				id: "3AD219F053125447"
-				item: "bosses_of_mass_destruction:void_lily"
+				id: "167DAB5567615675"
+				item: "sophisticatedbackpacks:advanced_void_upgrade"
 				type: "item"
 			}]
 			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest4.subtitle}"
@@ -175,6 +190,8 @@
 				"{ftbquests.chapter.7C70C5EA37137857.quest5.description1}"
 				"{ftbquests.chapter.7C70C5EA37137857.quest5.description2}"
 				"{ftbquests.chapter.7C70C5EA37137857.quest5.description3}"
+				""
+				"{ftbquests.chapter.7C70C5EA37137857.quest5.description4}"
 			]
 			id: "10D75D0FB345A298"
 			rewards: [{
@@ -190,13 +207,14 @@
 			}]
 			title: "{ftbquests.chapter.7C70C5EA37137857.quest5.title}"
 			x: -1.5d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["15E666BAE38566D8"]
 			description: [
 				"{ftbquests.chapter.7C70C5EA37137857.quest6.description1}"
 				"{ftbquests.chapter.7C70C5EA37137857.quest6.description2}"
+				""
 				"{ftbquests.chapter.7C70C5EA37137857.quest6.description3}"
 			]
 			id: "1E764C1B8E3B46A9"
@@ -223,9 +241,94 @@
 				type: "item"
 			}]
 			x: 1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3B3B39FE9A88ED71"]
+			description: [
+				"{ftbquests.chapter.7C70C5EA37137857.quest7.description1}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest7.description2}"
+			]
+			hide_until_deps_complete: true
+			id: "1C64E7ABAAD62C45"
+			rewards: [{
+				count: 4
+				id: "17DCF1A940170696"
+				item: "aquamirae:ship_graveyard_echo"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest7.subtitle}"
+			tasks: [{
+				id: "66E909EF18B8F4E7"
+				item: "aquamirae:shell_horn"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.7C70C5EA37137857.quest7.title}"
+			x: 0.0d
 			y: 2.0d
 		}
+		{
+			dependencies: ["11E3776CE5E23255"]
+			description: [
+				"{ftbquests.chapter.7C70C5EA37137857.quest8.description1}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest8.description2}"
+				"{@pagebreak}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest8.description3}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest8.description4}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest8.description5}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest8.description6}"
+				"{@pagebreak}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest8.description7}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest8.description8}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest8.description9}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest8.description10}"
+				"{@pagebreak}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest8.description11}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest8.description12}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest8.description13}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest8.description14}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest8.description15}"
+			]
+			icon: "goety:unholy_hat"
+			id: "3DA20497E91418C0"
+			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest8.subtitle}"
+			tasks: [{
+				id: "2C8A65676736BA94"
+				item: "goety:unholy_blood"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.7C70C5EA37137857.quest8.title}"
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["11E3776CE5E23255"]
+			description: [
+				"{ftbquests.chapter.7C70C5EA37137857.quest9.description1}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest9.description2}"
+				""
+				"{ftbquests.chapter.7C70C5EA37137857.quest9.description3}"
+				"{@pagebreak}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest9.description4}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest9.description5}"
+				"{@pagebreak}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest9.description6}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest9.description7}"
+				"{ftbquests.chapter.7C70C5EA37137857.quest9.description8}"
+			]
+			icon: "goety:grand_turban"
+			id: "44854234424A8DAE"
+			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest9.subtitle}"
+			tasks: [{
+				id: "7723049264BC1C9C"
+				item: "goety:dark_scroll"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.7C70C5EA37137857.quest9.title}"
+			x: 1.5d
+			y: -1.5d
+		}
 	]
-	subtitle: ["{ftbquests.chapter.7C70C5EA37137857.subtitle}"]
+	subtitle: ["{ftbquests.chapter.7C70C5EA37137857.subtitle0}"]
 	title: "{ftbquests.chapter.7C70C5EA37137857.title}"
 }

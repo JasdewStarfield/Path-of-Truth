@@ -47,8 +47,8 @@
 		{
 			dependencies: ["242C57AF7F6116E4"]
 			description: [
-				"现在，你应该要准备炼钢了，但炼钢显然需要炉子，而炉子显然需要机械。"
-				"土高炉？土法炼钢？不存在的）"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest1.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest1.description2}"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
@@ -60,22 +60,22 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "机 械 动 力"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest1.subtitle}"
 			tasks: [{
 				id: "23F01D262DE866AD"
 				item: "kubejs:precise_engineering"
 				type: "item"
 			}]
-			title: "【起点】基本元件"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest1.title}"
 			x: -4.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["429B458F0AADA253"]
 			description: [
-				"不断添加致密碳粒，并且锻压，就会得到……"
-				"你获得了&6真正意义上的钢锭&r！这意味着你可以在工业和魔法上继续推进了！"
-				"魔法也需要质量更好的金属作为基础发展）"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest2.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest2.description2}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest2.description3}"
 			]
 			icon: "immersiveengineering:ingot_steel"
 			id: "7A7C0A48248FA32B"
@@ -97,31 +97,31 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "钢铁雄心 IV"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest2.subtitle}"
 			tasks: [{
 				id: "42FAC7DBA007D304"
 				item: "immersiveengineering:ingot_steel"
 				type: "item"
 			}]
-			title: "团结就是力量"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest2.title}"
 			x: 6.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
 			description: [
-				"通过这个机壳，你将意识到某些部件不是为了小型机器服务的，而是为了组装更大的机器）"
-				"比如说，钢机壳只能用来做工程块）"
-				"&o&m&c但你需要很多的工程块，哈哈哈哈（逃&r&r&r"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest3.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest3.description2}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest3.description3}"
 			]
 			id: "2974EA098C1280C1"
-			subtitle: "进度：0.5"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest3.subtitle}"
 			tasks: [{
 				id: "72806086C003174D"
 				item: "kubejs:steel_casing"
 				type: "item"
 			}]
-			title: "工程基本单元 I"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest3.title}"
 			x: 12.0d
 			y: 0.0d
 		}
@@ -132,37 +132,37 @@
 				"6DCA03A4B843B686"
 			]
 			description: [
-				"你获得了一款可以组成多方块结构机器的工程块——也是最简单的一种沉浸工程工程块）"
-				"去试试吧，朋友）"
-				"电火花要开始在机械中闪耀了！"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest4.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest4.description2}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest4.description3}"
 			]
 			id: "5700B2AFCCAEE31A"
 			shape: "gear"
 			size: 2.0d
-			subtitle: "工业化机械第一步"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest4.subtitle}"
 			tasks: [{
 				id: "3D0D2F088126E423"
 				item: "immersiveengineering:light_engineering"
 				type: "item"
 			}]
-			title: "工程基本单元 II"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest4.title}"
 			x: 12.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["5700B2AFCCAEE31A"]
 			description: [
-				"通过转动对线圈的扰动，你终于获得了可以工业化使用的电流。"
-				"也许之后可以试试工业充能瓶子……？"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest5.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest5.description2}"
 			]
 			id: "4B2D7C8A59593200"
-			subtitle: "初中物理知识"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest5.subtitle}"
 			tasks: [{
 				id: "33A6AE30D681BC7D"
 				item: "createaddition:alternator"
 				type: "item"
 			}]
-			title: "切割磁感线"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest5.title}"
 			x: 14.0d
 			y: -2.0d
 		}
@@ -172,10 +172,10 @@
 				"250398995ECDA3CE"
 			]
 			description: [
-				"&a【完成后解锁主线章节：4I 机械轰鸣】&r"
-				"注意：&6Create Crafts \\& Additions&r的线路相关因为功能重复已被&c&l全部禁用&r&r！请通过&9沉浸工程&r的电路相关工具维系你的电路！"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest6.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest6.description2}"
 				""
-				"电光四射，&m电眼逼人&r"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest6.description3}"
 			]
 			icon: "createdeco:decal_electrical"
 			id: "504E6502A789DABF"
@@ -186,27 +186,27 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "滋啦"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest6.subtitle}"
 			tasks: [{
 				id: "7D75B5055412D2C0"
 				max_input: 1000L
 				type: "forge_energy"
 				value: 1000L
 			}]
-			title: "【终点】电火花"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest6.title}"
 			x: 14.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["4B2D7C8A59593200"]
 			description: [
-				"把它放在发电机输出处就可以接收电力了。下一章会介绍更多传输电力的方式。"
-				"&n记得要点开这个方块选择对应任务哦。&r"
-				"当然其它任务也可以用这个来自动提交）"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest7.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest7.description2}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest7.description3}"
 			]
 			icon: "ftbquests:screen_1"
 			id: "250398995ECDA3CE"
-			subtitle: "以防你不知道，这个东西是用来提交有能量需求的任务的"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest7.subtitle}"
 			tasks: [
 				{
 					id: "16A0EAF298B2EF94"
@@ -218,15 +218,15 @@
 					type: "checkmark"
 				}
 			]
-			title: "给我个任务吧！"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest7.title}"
 			x: 16.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
 			description: [
-				"这是最后一个高炉了。物如其名，强化高炉，基本用途和粗制的那个没区别，只是自动化更加便捷，以及支持使用预热器加速。"
-				"但只是加速，不能不用燃料……"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest8.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest8.description2}"
 			]
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:advanced_blast_furnace"
@@ -243,7 +243,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "更方便的自动化"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest8.subtitle}"
 			tasks: [
 				{
 					count: 27L
@@ -268,13 +268,13 @@
 					type: "item"
 				}
 			]
-			title: "搭建强化高炉"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest8.title}"
 			x: 12.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
-			description: ["感受钢铁的厚重……"]
+			description: ["{ftbquests.chapter.7AE641FF7F1535BF.quest9.description1}"]
 			hide_until_deps_complete: true
 			id: "068A7A1F8FB54E98"
 			rewards: [{
@@ -283,7 +283,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "科技就是力量"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest9.subtitle}"
 			tasks: [{
 				id: "072D81981D3A5820"
 				item: {
@@ -301,7 +301,7 @@
 				}
 				type: "item"
 			}]
-			title: "绝对防御！"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest9.title}"
 			x: 10.0d
 			y: 4.0d
 		}
@@ -311,16 +311,16 @@
 				"635A0221044B2A2A"
 			]
 			description: [
-				"虽然这个工程块也是（你后面会用到的）沉浸工程多方块机器的必要组成部分，因而看上去&3略显普通&r，但是由它为核心的机械动力&3虚空元件&r拥有&d最诱人&r的效果。"
-				"这一工程块将会藉由量子管的同频共振，&2为机械添加超越时空的能力&r，让你的物品，液体，电力甚至应力传输无视空间阻隔！"
-				"但相应的，这显然&9不是纯机械可以达成的效果&r……"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest10.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest10.description2}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest10.description3}"
 				""
-				"&o&a是的这玩意需要用泰拉钢才能做，所以推魔法线去吧&r&r"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest10.description4}"
 			]
 			id: "04AAF6565C04DA94"
 			shape: "gear"
 			size: 2.0d
-			subtitle: "穿越时空的工程"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest10.subtitle}"
 			tasks: [{
 				id: "4A3C2F09B3D2C958"
 				item: "immersiveengineering:rs_engineering"
@@ -331,9 +331,9 @@
 		}
 		{
 			dependencies: ["5B1818D5A1142A16"]
-			description: ["多造一些这个，用它们组合成阵列，你就可以合成很多有趣的，工作台无法制作的东西了……"]
+			description: ["{ftbquests.chapter.7AE641FF7F1535BF.quest11.description1}"]
 			id: "34F7983B4915B789"
-			subtitle: "Anything（指可以合成任何东西）"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest11.subtitle}"
 			tasks: [{
 				count: 21L
 				id: "3B1CB63D662B2B0E"
@@ -346,8 +346,8 @@
 		{
 			dependencies: ["34F7983B4915B789"]
 			description: [
-				"你最好的垃圾处理器……"
-				"小心自己别掉进去了"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest12.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest12.description2}"
 			]
 			id: "146261DF72C96BF4"
 			rewards: [{
@@ -355,7 +355,7 @@
 				item: "createdeco:decal_skull"
 				type: "item"
 			}]
-			subtitle: "真是一对大家伙"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest12.subtitle}"
 			tasks: [{
 				count: 2L
 				id: "61849FE3A163CC0C"
@@ -367,7 +367,7 @@
 		}
 		{
 			dependencies: ["504E6502A789DABF"]
-			description: ["这台机器只能输入电力来产生应力，但你可以进行一些小小的&b“魔改”&r）"]
+			description: ["{ftbquests.chapter.7AE641FF7F1535BF.quest13.description1}"]
 			id: "0728C35476FC5EE2"
 			rewards: [{
 				id: "3B7DE4AC74138629"
@@ -375,35 +375,35 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "当然也可以反着来！"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest13.subtitle}"
 			tasks: [{
 				id: "6F762E2D5EF09161"
 				item: "createaddition:electric_motor"
 				type: "item"
 			}]
-			title: "电力转应力"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest13.title}"
 			x: 14.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["429B458F0AADA253"]
 			description: [
-				"加入末影与幽匿物质，以及强大生物的残片，你便会得到……"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest14.description1}"
 				""
-				"&1虚空钢&r。它和它的同伴们会隔着遥远的距离进行共振……"
-				"但在你没加工前，它们只是能共振而已。"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest14.description2}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest14.description3}"
 				""
-				"提示：你需要前往&9深暗&r，寻找&9回响碎片&r才能完成这一配方。你可以使用&2自然指南针&r！"
-				"觉得在监守者面前翻找回响碎片太危险？你可以尝试对那里的幽匿块使用&5紫水晶碎片&r来概率获取回响碎片……这一流程也是&6可以自动化&r的（提示：机械手）。当然，如何自动生成幽匿块……就要看你的游戏理解了。"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest14.description4}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest14.description5}"
 			]
 			id: "41831F6B01965541"
-			subtitle: "你为什么要召唤我——"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest14.subtitle}"
 			tasks: [{
 				id: "7635EDACF57EC534"
 				item: "createutilities:void_steel_ingot"
 				type: "item"
 			}]
-			title: "虚空共振"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest14.title}"
 			x: 4.0d
 			y: 2.0d
 		}
@@ -413,13 +413,13 @@
 				"40129F9AE9DCE1EF"
 			]
 			description: [
-				"通过这一框架，你可以创造突破空间限制的机械组，比如虚空传递应力的马达组……"
-				"但很显然这是个半成品。"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest15.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest15.description2}"
 				""
-				"&b&o当然拿来做装饰还是挺好看的）&r&r"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest15.description3}"
 			]
 			id: "4EA98676CE0686BD"
-			subtitle: "基本共鸣框架"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest15.subtitle}"
 			tasks: [{
 				id: "2878204429A706A4"
 				item: "createutilities:void_casing"
@@ -431,18 +431,18 @@
 		{
 			dependencies: ["04AAF6565C04DA94"]
 			description: [
-				"&o*这是一个提示性任务！&r"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest16.description1}"
 				""
-				"通过&5末影之力&r，你现在发现了&9虚空传输一切&r的可能……"
-				"虽然现在你可能还没办法制作其中的大部分物品，但它们也许是后续精简产线的最佳选择）"
-				"具体使用方法，请看思索——"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest16.description2}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest16.description3}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest16.description4}"
 				""
-				"&m&o&b这不比pipez好用（笑&r&r&r"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest16.description5}"
 			]
 			icon: "minecraft:ender_eye"
 			id: "253CE41C3E000533"
 			shape: "diamond"
-			subtitle: "末影住民"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest16.subtitle}"
 			tasks: [
 				{
 					id: "01B56EAD4FFCD4BB"
@@ -465,18 +465,18 @@
 					type: "item"
 				}
 			]
-			title: "虚空传输！"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest16.title}"
 			x: 8.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["146261DF72C96BF4"]
 			description: [
-				"获得成品钢之前，显然你需要先从铁粉开始——方便融化，也方便调和。"
-				"铁的硬度高很多，不会轻易被石磨粉碎，所以这也是需要粉碎轮的缘故了。"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest17.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest17.description2}"
 			]
 			id: "2EB6991862E12244"
-			subtitle: "准备炼钢"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest17.subtitle}"
 			tasks: [{
 				id: "7349570EE748E3CC"
 				item: "kubejs:iron_ingot_dust"
@@ -488,18 +488,18 @@
 		{
 			dependencies: ["2EB6991862E12244"]
 			description: [
-				"将铁粉进行融化……"
-				"熔融铁显然是不能制作钢铁的，所以还需要一些额外的步骤。"
-				"然而它和熔岩一样热，所以你也可以用它来加热自己的房间）"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest18.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest18.description2}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest18.description3}"
 			]
 			id: "17263B7F0163FEA4"
-			subtitle: "另一种熔岩"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest18.subtitle}"
 			tasks: [{
 				id: "4AB5398A6D8A1634"
 				item: "kubejs:molten_iron_bucket"
 				type: "item"
 			}]
-			title: "打铁花"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest18.title}"
 			x: 1.0d
 			y: 3.0d
 		}
@@ -509,67 +509,67 @@
 				"5FBE0E83E329AC46"
 			]
 			description: [
-				"处理混合物最好的办法当然是离心！"
-				"通过离心机，熔融钢与炉渣将被分离，纯净的钢水将在你面前闪耀工业的光芒。"
-				"然而它仍然很烫。"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest19.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest19.description2}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest19.description3}"
 			]
 			id: "1A5AC0B8CD25635E"
-			subtitle: "终于……"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest19.subtitle}"
 			tasks: [{
 				id: "5D6A6DD4A2B1F6B9"
 				item: "kubejs:molten_steel_bucket"
 				type: "item"
 			}]
-			title: "热门话题"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest19.title}"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1A5AC0B8CD25635E"]
 			description: [
-				"你获得了一份看似很混乱的原材料，而这样状态下的钢坯显然是易于扰动和处理的。"
-				"那么你希望它变成什么呢？"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest20.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest20.description2}"
 			]
 			id: "429B458F0AADA253"
-			subtitle: "万用材料"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest20.subtitle}"
 			tasks: [{
 				id: "0F4D5E0A7AA72402"
 				item: "kubejs:unformed_steel_ingot"
 				type: "item"
 			}]
-			title: "分岔路口"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest20.title}"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["17263B7F0163FEA4"]
 			description: [
-				"将足量的石灰岩配合火元素核心压入铁水中，你就获得了炉渣与钢水的混合产物……"
-				"火元素核心不会消耗。"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest21.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest21.description2}"
 				""
-				"&o&6这就是魔法的烈焰之力！&r&r"
-				"&o&e如果石灰岩不够，试试把刷石机的水换成蜂蜜。&r&r"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest21.description3}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest21.description4}"
 			]
 			id: "5FBE0E83E329AC46"
-			subtitle: "是魔法，他们用了魔法"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest21.subtitle}"
 			tasks: [{
 				id: "47AC67C1B30BDF4B"
 				item: "kubejs:molten_slag_bucket"
 				type: "item"
 			}]
-			title: "融为一炉"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest21.title}"
 			x: 2.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["7A7C0A48248FA32B"]
 			description: [
-				"显然，钢太硬了，你无法直接用辊压机将它压成板，这行不通。"
-				"你需要一些更大更暴力的设备……当然，这种设备也有一些额外的自动化功能。"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest22.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest22.description2}"
 			]
 			icon: "vintageimprovements:helve_hammer"
 			id: "40129F9AE9DCE1EF"
-			subtitle: "大力出奇迹，兄弟"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest22.subtitle}"
 			tasks: [
 				{
 					id: "2F2AD8CCB0B007F8"
@@ -588,12 +588,12 @@
 		{
 			dependencies: ["7F70BCE1EBD2C73E"]
 			description: [
-				"将钢铁弹簧与蔚蓝维度的一些矿物结合，就可以形成性能极佳的零件。"
-				"尽管这可以直接通过工作台制作，但仍然略显浪费，也许有更好的办法？"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest23.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest23.description2}"
 			]
 			icon: "immersiveengineering:component_steel"
 			id: "5184969E829D39FA"
-			subtitle: "起于微末"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest23.subtitle}"
 			tasks: [
 				{
 					id: "16005BAE7C2D42BC"
@@ -606,15 +606,15 @@
 					type: "item"
 				}
 			]
-			title: "工业基础"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest23.title}"
 			x: 8.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["40129F9AE9DCE1EF"]
-			description: ["这就是只有货真价实的大锤才能干的事情了）"]
+			description: ["{ftbquests.chapter.7AE641FF7F1535BF.quest24.description1}"]
 			id: "77918DE5A223B3CD"
-			subtitle: "80！80！"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest24.subtitle}"
 			tasks: [{
 				id: "2C335901DD5881AE"
 				item: "immersiveengineering:plate_steel"
@@ -629,14 +629,14 @@
 				"5184969E829D39FA"
 			]
 			description: [
-				"通过简易的雷电填充，你用魔法获得了一点点操纵电的力量……"
-				"使用泰拉钢板还能制作另一种电容器……泰拉钢还有这功能？"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest25.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest25.description2}"
 				""
-				"&a你可以在铁魔法的结构战利品中找到雷电瓶！&r"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest25.description3}"
 			]
 			icon: "kubejs:leyden_jar"
 			id: "786828EE220E93A3"
-			subtitle: "科学使用魔法"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest25.subtitle}"
 			tasks: [
 				{
 					id: "4F7AB4E750229D70"
@@ -649,21 +649,21 @@
 					type: "item"
 				}
 			]
-			title: "简单电容器"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest25.title}"
 			x: 10.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["34F7983B4915B789"]
 			description: [
-				"工业化处理某些材料的时候，离心是一种相当有效的操作。"
-				"当然你也可以把这作为一种娱乐设施然后自己坐进去（"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest26.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest26.description2}"
 				""
-				"&o小Bug：使用离心机的配方的输入物品在JEI中不正确地被视为了输出物品。必须按R（或左键点击）才能查找某个物品用在离心机中的配方。&r"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest26.description3}"
 			]
 			icon: "vintageimprovements:centrifuge"
 			id: "14A2B5756D42DD23"
-			subtitle: "原始人的力大砖飞"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest26.subtitle}"
 			tasks: [
 				{
 					id: "2DED066F07B9F3DE"
@@ -683,9 +683,9 @@
 		{
 			dependencies: ["77918DE5A223B3CD"]
 			description: [
-				"全套的钢铁护具和工具将让你的生存轻松一些……大概吧。"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest27.description1}"
 				""
-				"&o&b至少物理防御是足够了）&r&r"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest27.description2}"
 			]
 			icon: {
 				Count: 1
@@ -701,7 +701,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "更上一层"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest27.subtitle}"
 			tasks: [
 				{
 					id: "12EF2686682DE8FA"
@@ -790,19 +790,19 @@
 					type: "item"
 				}
 			]
-			title: "钢铁意志"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest27.title}"
 			x: 12.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["5700B2AFCCAEE31A"]
 			description: [
-				"在制作模具的过程中，车床是必不可少的。"
-				"但相应的，你需要一定的技术来操作它，不然你根本车不出你想要的模板）"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest28.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest28.description2}"
 			]
 			icon: "vintageimprovements:lathe"
 			id: "56229BD92474D24C"
-			subtitle: "这是之后要用到的神奇妙妙工具.jpg"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest28.subtitle}"
 			tasks: [
 				{
 					id: "31BF7C74CB552026"
@@ -821,12 +821,12 @@
 		{
 			dependencies: ["77918DE5A223B3CD"]
 			description: [
-				"在大型机械中，小弹簧的小打小闹显然无法满足需求了，所以需要用钢来制作更加强力的弹簧结构。"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest29.description1}"
 				""
-				"&o&b很可惜的是它并不能把你弹飞（真的可惜吗？&r&r"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest29.description2}"
 			]
 			id: "7F70BCE1EBD2C73E"
-			subtitle: "更加强大"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest29.subtitle}"
 			tasks: [{
 				id: "50F72EAE8EBF61C2"
 				item: "kubejs:advanced_spring_set"
@@ -837,9 +837,9 @@
 		}
 		{
 			dependencies: ["5B1818D5A1142A16"]
-			description: ["虽然实际上用得上这种工业加工的只有玫瑰石英和紫水晶……但这下不用拿着砂纸手搓了。"]
+			description: ["{ftbquests.chapter.7AE641FF7F1535BF.quest30.description1}"]
 			id: "1FB6A2B277331552"
-			subtitle: "无尽砂纸"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest30.subtitle}"
 			tasks: [{
 				id: "07BE81872FF465D3"
 				item: "vintageimprovements:belt_grinder"
@@ -850,15 +850,15 @@
 		}
 		{
 			dependencies: ["1FB6A2B277331552"]
-			description: ["作为以脆弱出名的水晶，在打磨时需要严格控制转速……否则你将白费力气。"]
+			description: ["{ftbquests.chapter.7AE641FF7F1535BF.quest31.description1}"]
 			id: "635A0221044B2A2A"
-			subtitle: "小心点磨"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest31.subtitle}"
 			tasks: [{
 				id: "6F499C4253A31237"
 				item: "createutilities:polished_amethyst"
 				type: "item"
 			}]
-			title: "易碎品"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest31.title}"
 			x: 4.0d
 			y: 4.0d
 		}
@@ -868,13 +868,13 @@
 				"786828EE220E93A3"
 			]
 			description: [
-				"从两种简单的电容器和一些零件上汲取灵感，你学会了更高级的机械知识！现在你可以以更低的成本制作机器零件了！"
-				"在工程师装配台上放置蓝图就可以把它转化为一个简单的工作台。"
-				"更多的蓝图也会在后续解锁使用。"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest32.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest32.description2}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest32.description3}"
 			]
 			icon: "immersiveengineering:workbench"
 			id: "1F915E94D0E8AA15"
-			subtitle: "更划算的装配"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest32.subtitle}"
 			tasks: [
 				{
 					id: "68AA813339E0F4FB"
@@ -902,12 +902,12 @@
 				"750FAE62628DB185"
 			]
 			description: [
-				"焦化硫显然并不是一种合格的工业硫磺，所以你需要通过将其&6组合进下界火药&r后&c配合红石酸&r进行离心才能获得足够纯净的硫磺。"
-				"如果你没有离心机，那最好先准备一台足够大的动力合成器。"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest33.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest33.description2}"
 			]
 			icon: "vintageimprovements:sulfur"
 			id: "5F4027766CCD6DEC"
-			subtitle: "离心提纯"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest33.subtitle}"
 			tasks: [
 				{
 					id: "67C6C87C760E1D4D"
@@ -926,11 +926,11 @@
 		{
 			dependencies: ["5B1818D5A1142A16"]
 			description: [
-				"除了用于工业之外，用于弹药是一条显然的途径。"
-				"可以生产火箭弹以使用一些有趣的枪械了（笑"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest34.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest34.description2}"
 			]
 			id: "750FAE62628DB185"
-			subtitle: "剧烈燃烧"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest34.subtitle}"
 			tasks: [{
 				id: "536BCD6EE727CC4F"
 				item: "scguns:sheol"
@@ -942,11 +942,11 @@
 		{
 			dependencies: ["5F4027766CCD6DEC"]
 			description: [
-				"这确实可以对生物造成伤害……"
-				"*浓硫酸会让铁钝化，所以确实可以装在铁桶里，不要再问了（）"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest35.description1}"
+				"{ftbquests.chapter.7AE641FF7F1535BF.quest35.description2}"
 			]
 			id: "75DA5648FA7A43C2"
-			subtitle: "这不是化学课"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest35.subtitle}"
 			tasks: [{
 				id: "6178CE9CCE34124C"
 				item: "vintageimprovements:sulfuric_acid_bucket"
@@ -961,9 +961,9 @@
 				"3FCF15CEE440DFC4"
 				"5184969E829D39FA"
 			]
-			description: ["距离你可以在机器中操纵电力已经很近了，虽然目前只有小电池，但足够多的电池组合起来也能够供应相应的机械。"]
+			description: ["{ftbquests.chapter.7AE641FF7F1535BF.quest36.description1}"]
 			id: "6DCA03A4B843B686"
-			subtitle: "以小见大"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest36.subtitle}"
 			tasks: [{
 				id: "3B57B147ADD29839"
 				item: "kubejs:battery_component"
@@ -974,9 +974,9 @@
 		}
 		{
 			dependencies: ["75DA5648FA7A43C2"]
-			description: ["铅酸蓄电池当然需要铅酸构件）"]
+			description: ["{ftbquests.chapter.7AE641FF7F1535BF.quest37.description1}"]
 			id: "3FCF15CEE440DFC4"
-			subtitle: "化学生电"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest37.subtitle}"
 			tasks: [{
 				id: "1B4CF7F614A21A21"
 				item: "vintageimprovements:redstone_module"
@@ -1015,11 +1015,11 @@
 		}
 		{
 			dependencies: ["429B458F0AADA253"]
-			description: ["黄铜和钢的特种合金"]
+			description: ["{ftbquests.chapter.7AE641FF7F1535BF.quest39.description1}"]
 			icon: "scguns:treated_brass_ingot"
 			id: "2B5473A35DA1DFB2"
 			shape: "diamond"
-			subtitle: "并非小状元"
+			subtitle: "{ftbquests.chapter.7AE641FF7F1535BF.quest39.subtitle}"
 			tasks: [
 				{
 					id: "0761A80834171C19"
@@ -1032,11 +1032,11 @@
 					type: "item"
 				}
 			]
-			title: "黄钢？"
+			title: "{ftbquests.chapter.7AE641FF7F1535BF.quest39.title}"
 			x: 4.0d
 			y: -2.0d
 		}
 	]
-	subtitle: ["Hearts of Steel"]
-	title: "3I 钢铁雄心"
+	subtitle: ["{ftbquests.chapter.7AE641FF7F1535BF.subtitle0}"]
+	title: "{ftbquests.chapter.7AE641FF7F1535BF.title}"
 }
