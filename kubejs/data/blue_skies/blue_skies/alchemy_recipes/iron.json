@@ -1,7 +1,0 @@
-{
-    "type": "blue_skies:transmute",
-    "items": [
-      "minecraft:command_block",
-      "minecraft:structure_block"
-    ]
-}

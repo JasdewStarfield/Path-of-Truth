@@ -287,9 +287,9 @@
     "modId": "craftingtweaks",
     "version": "18.2.5"
   },
-  "CrashAssistant-forge-1.19.2-1.20.1-1.9.0.jar": {
+  "CrashAssistant-forge-1.19.2-1.20.1-1.9.1.jar": {
     "modId": "crash_assistant",
-    "version": "1.9.0"
+    "version": "1.9.1"
   },
   "cratedelight-24.11.29-1.20-forge.jar": {
     "modId": "cratedelight",
@@ -319,9 +319,9 @@
     "modId": "create_compressed",
     "version": "2.1.0"
   },
-  "create_connected-1.1.2-mc1.20.1-all.jar": {
+  "create_connected-1.1.3-mc1.20.1-all.jar": {
     "modId": "create_connected",
-    "version": "1.1.2-mc1.20.1"
+    "version": "1.1.3-mc1.20.1"
   },
   "create_enchantment_industry-1.3.2-for-create-6.0.4.jar": {
     "modId": "create_enchantment_industry",
@@ -511,9 +511,9 @@
     "modId": "enhanced_boss_bars",
     "version": "1.20.1-1.0.0"
   },
-  "entityjs-0.4.9-1.20.1.jar": {
+  "entityjs-0.5.0-1.20.1.jar": {
     "modId": "entityjs",
-    "version": "0.4.9-1.20.1"
+    "version": "0.5.0-1.20.1"
   },
   "EventJS-1.20.1-1.4.0.jar": {
     "modId": "eventjs",
@@ -731,10 +731,6 @@
     "modId": "irons_spells_js",
     "version": "3.1.1"
   },
-  "iswydt-1.0.5-1.20.1-FORGE.jar": {
-    "modId": "iswydt",
-    "version": "1.0.5"
-  },
   "item-filters-forge-2001.1.0-build.59.jar": {
     "modId": "itemfilters",
     "version": "2001.1.0-build.59"
@@ -771,9 +767,9 @@
     "modId": "jeed",
     "version": "1.20-2.2.5"
   },
-  "jei-1.20.1-forge-15.20.0.110.jar": {
+  "jei-1.20.1-forge-15.20.0.112.jar": {
     "modId": "jei",
-    "version": "15.20.0.110"
+    "version": "15.20.0.112"
   },
   "jeiintegration_1.20.1-10.0.0.jar": {
     "modId": "jeiintegration",
@@ -1348,13 +1344,13 @@
     "modId": "world_preview",
     "version": "1.3.1"
   },
-  "Xaeros_Minimap_25.2.6_Forge_1.20.jar": {
+  "Xaeros_Minimap_25.2.0_Forge_1.20.jar": {
     "modId": "xaerominimap",
-    "version": "25.2.6"
+    "version": "25.2.0"
   },
-  "XaerosWorldMap_1.39.9_Forge_1.20.jar": {
+  "XaerosWorldMap_1.39.4_Forge_1.20.jar": {
     "modId": "xaeroworldmap",
-    "version": "1.39.9"
+    "version": "1.39.4"
   },
   "XaeroZoomout-Forge-1.20-1.1.0.jar": {
     "modId": "xaerozoomout",
