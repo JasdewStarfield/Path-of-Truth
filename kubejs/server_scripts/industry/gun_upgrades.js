@@ -1,4 +1,13 @@
 {
+    let Gun = Java.class.forName('top.ribs.scguns.common.Gun')
+    let gf = name => {
+        let field = Gun.getDeclaredField(name)
+        field.accessible = true
+        return field
+    }
+    let fGeneral = gf('general')
+    let fReloads = gf('reloads')
+    let fProjectile = gf('projectile')
     let upgradeGun = (gun, level) => {
         let original = gun.item.gun
 
@@ -10,14 +19,14 @@
             buranLvl: level,
             Gun: {
                 General: {
-                    Rate: Math.ceil(original.general.rate * ratioReducer),
-                    MeleeDamage: ratioBooster * original.general.meleeDamage,
+                    Rate: Math.ceil(fGeneral.get(original).rate * ratioReducer),
+                    MeleeDamage: ratioBooster * fGeneral.get(original).meleeDamage,
                 },
                 Reloads: {
-                    ReloadTimer: Math.ceil(original.reloads.reloadTimer * ratioReducer),
+                    ReloadTimer: Math.ceil(fReloads.get(original).reloadTimer * ratioReducer),
                 },
                 Projectile: {
-                    Damage: ratioBooster * original.projectile.damage,
+                    Damage: ratioBooster * fProjectile.get(original).damage,
                 },
             },
         })
