@@ -54,12 +54,6 @@ dynamic:
       increment: 1
       interval: 15
 
-    - setting: 'VIEW_DISTANCE'
-      max: 10
-      min: 4
-      increment: 1
-      interval: 150
-
 
 # A special mobcap that only affects the breeding of animals and villagers.
 breeding-cap:

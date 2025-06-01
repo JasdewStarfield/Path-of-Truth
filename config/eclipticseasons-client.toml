@@ -27,7 +27,7 @@
 	#Not just the top layer—now even the leaves below are dusted with frost and snow.
 	SnowyTree = true
 	#Blocks under tree may also be covered with snow, note that this is only a client-side effect.
-	snowUnderTree = false
+	snowUnderTree = true
 
 [Sound]
 	#Ambient Sound.

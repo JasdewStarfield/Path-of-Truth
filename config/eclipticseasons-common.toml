@@ -26,7 +26,7 @@
 
 [Weather]
 	#Enable solar term weather system with biome.
-	UseSolarWeather = true
+	UseSolarWeather = false
 	#Set the percentage multiplier of the probability of rain, the range should be between 0 and 1000.
 	#Range: 0 ~ 1000
 	RainChancePercentMultiplier = 60
@@ -67,7 +67,7 @@
 	DarkGreenhouseFailChance = 2000
 	#The maximum effective diameter of the greenhouse.
 	#Range: 3 ~ 128
-	GreenHouseMaxHeight = 10
+	GreenHouseMaxHeight = 20
 	#Force all crops to use compatibility mode for growth control, not just those tagged as eclipticseasons:natural_plants.
 	ForceCompatMode = false
 	#Build a simple greenhouse without core blocks and humidity modifiers.
