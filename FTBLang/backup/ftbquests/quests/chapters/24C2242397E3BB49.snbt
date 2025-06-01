@@ -5,7 +5,7 @@
 	filename: "24C2242397E3BB49"
 	group: "60E63434E814893B"
 	hide_quest_details_until_startable: true
-	icon: "createchromaticreturn:multiplite_tube"
+	icon: "botania:world_seed"
 	id: "24C2242397E3BB49"
 	images: [
 		{
@@ -14,15 +14,25 @@
 			rotation: 0.0d
 			width: 5.789173789173789d
 			x: 0.0d
-			y: 3.0d
+			y: 9.0d
 		}
 		{
 			height: 0.5d
 			image: "kubejs:textures/quests/start.png"
+			order: 3
 			rotation: 0.0d
 			width: 1.6607142857142858d
 			x: 0.0d
-			y: 8.5d
+			y: 6.0d
+		}
+		{
+			alpha: 72
+			height: 9.0d
+			image: "gallery:textures/painting/endboss.png"
+			rotation: 0.0d
+			width: 9.0d
+			x: 0.0d
+			y: 3.0d
 		}
 	]
 	order_index: 0
@@ -30,168 +40,59 @@
 	quests: [
 		{
 			dependencies: [
-				"0D0BEC03C1B26CA3"
-				"59C668DE4E479AD9"
+				"43913160B28A2E0F"
+				"7237285ADC05FC5C"
+				"0F10088DCC4F6FDB"
+				"21454EF3D8D8DCF1"
+				"3111841E3A7C8262"
 			]
-			hide_until_deps_complete: true
-			id: "6077CDDF1D3A011E"
-			shape: "octagon"
-			subtitle: "终末光剑"
-			tasks: [{
-				id: "417832F588AA0F03"
-				item: "createchromaticreturn:radiant_glow_saber"
-				type: "item"
-			}]
-			title: "砍瓜切菜"
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6077CDDF1D3A011E"]
-			id: "60D336DE781B656A"
-			subtitle: "能够破碎基岩的激光爪！"
-			tasks: [{
-				id: "3189FC1681D11F93"
-				item: "createchromaticreturn:radiant_glow_claws"
-				type: "item"
-			}]
-			title: "粉碎万物"
-			x: -3.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["60D336DE781B656A"]
 			description: [
-				"激光爪右键基岩就有概率掉落碎片"
-				"可别掉虚空里面了"
-			]
-			id: "5A910900A5C2135A"
-			subtitle: "祝你好运"
-			tasks: [{
-				id: "108DA76A62DA32C9"
-				item: "createchromaticreturn:bedrock_shard"
-				type: "item"
-			}]
-			title: "基岩的馈赠"
-			x: 0.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["5A910900A5C2135A"]
-			id: "5CD99468F17FD0AC"
-			subtitle: "浓缩世界精华"
-			tasks: [
-				{
-					id: "72EB9A27B749319F"
-					item: "createchromaticreturn:bedrock_charm_base"
-					type: "item"
-				}
-				{
-					id: "5D449FA5C154D62B"
-					item: "createchromaticreturn:charm_base"
-					type: "item"
-				}
-			]
-			title: "压制核心"
-			x: 3.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["5CD99468F17FD0AC"]
-			description: [
-				"在你贯穿世界后，万物都将加持与你。"
-				"你即将成功探究这个世界——"
-				"很近了，真的很近了。"
-			]
-			id: "40DDCA5F57C2C680"
-			subtitle: "集成式世界精华"
-			tasks: [
-				{
-					id: "331782C5E1FA0A6A"
-					item: "createchromaticreturn:industrium_charm"
-					type: "item"
-				}
-				{
-					id: "33EB7F1CDD3EAF1C"
-					item: "createchromaticreturn:shadow_charm"
-					type: "item"
-				}
-				{
-					id: "5CDF68AC9961DF44"
-					item: "createchromaticreturn:refined_charm"
-					type: "item"
-				}
-				{
-					id: "0CDAD4ADBFC289B6"
-					item: "createchromaticreturn:multiplite_charm"
-					type: "item"
-				}
-				{
-					id: "0075D10829EF543F"
-					item: "createchromaticreturn:silkstrum_charm"
-					type: "item"
-				}
-				{
-					id: "79CCEA73DCECAF5D"
-					item: "createchromaticreturn:antiplite_charm"
-					type: "item"
-				}
-			]
-			title: "万物之理，集于一身"
-			x: 1.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["40DDCA5F57C2C680"]
-			description: [
+				"&5&o凡分离的必聚合。&r&r"
+				"当你以万象宝石具象化各类物品的源头，并以枪械的形态将其铸造后……"
 				"&a恭喜你完成了这一整合包的所有挑战——&r"
-				"享受神的力量吧，现在，你就是世界的真理。"
+				"享受创世的力量吧，现在，你就是世界的真理。"
 				"~~完结撒花~~"
 				"{@pagebreak}"
 				"但是，这真的是一切的结束吗？"
+				"也许你注意到，&c只包含了物质的规则导致世界仍有些微的缺失……"
+				"&r看看新出现的任务吧。"
 			]
 			id: "6D9B7D2CD86693AF"
 			rewards: [{
-				id: "664060AFCACAC5B2"
-				item: "snowyspirit:wreath"
+				id: "27CA96EC883E8546"
+				item: "biomeswevegone:witch_hazel_blossom"
 				type: "item"
 			}]
 			shape: "diamond"
 			size: 4.0d
-			subtitle: "终末结算"
+			subtitle: "终末整合"
 			tasks: [{
 				id: "7FD89303532E9EA7"
 				item: "create:handheld_worldshaper"
 				type: "item"
 			}]
-			title: "【终点】神的力量"
+			title: "【终点】于此创世"
 			x: 0.0d
-			y: -3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1E235F6753976501"]
 			description: [
-				"越到末尾的章节，节点就越少）"
-				"因为你不需要我再给你讲故事了，你需要的就是走下去，因为马上你就能看到了。"
+				"&5&o凡聚合的必分离……&r"
+				"&r越到末尾的章节，节点就越少）"
+				"因为你不需要任何的故事了，你需要的就是走下去，因为马上你就能看到了。"
 			]
 			hide_until_deps_complete: true
 			id: "59C668DE4E479AD9"
-			shape: "gear"
+			shape: "hexagon"
 			size: 2.0d
 			subtitle: "走出最后一段路。"
-			tasks: [
-				{
-					id: "2622B81FA3F7DFD7"
-					item: "createchromaticreturn:multiplite_ingot"
-					type: "item"
-				}
-				{
-					id: "3AC7042677FA340D"
-					item: "createchromaticreturn:antiplite_ingot"
-					type: "item"
-				}
-			]
-			title: "【起点】真理之锭"
+			tasks: [{
+				id: "7E95C6C240E4D200"
+				item: "kubejs:world_base_gem"
+				type: "item"
+			}]
+			title: "【起点】万象之源"
 			x: 0.0d
 			y: 7.0d
 		}
@@ -215,11 +116,16 @@
 		{
 			dependencies: ["59C668DE4E479AD9"]
 			description: [
+				"&o&d压入过量的火焰后……&r&r"
 				"现在，只要你拥有某件物品，那么你将永远不再缺乏它。"
 				"使用方法与一般的多媒体火花一致。"
 			]
-			hide_until_deps_complete: true
 			id: "00BBB61C39207A0F"
+			rewards: [{
+				id: "7BFEA6F05F3C4932"
+				item: "botania:corporea_crystal_cube"
+				type: "item"
+			}]
 			subtitle: "唯一即永恒。"
 			tasks: [{
 				id: "387353577E838962"
@@ -232,7 +138,6 @@
 		{
 			dependencies: ["59C668DE4E479AD9"]
 			description: ["流体与真理的碰撞带来无尽的甘泉。"]
-			hide_until_deps_complete: true
 			id: "537B5AA8E2C3244A"
 			subtitle: "无尽流淌"
 			tasks: [{
@@ -261,31 +166,29 @@
 		}
 		{
 			dependencies: ["59C668DE4E479AD9"]
-			description: ["在创造的力量之下，你的烈焰人将不再需要额外的燃料，因为它们通过蛋糕触碰了部分永恒。"]
-			hide_until_deps_complete: true
+			description: ["在世界的力量之下，你的烈焰人将不再需要额外的燃料，因为它们通过蛋糕触碰了部分永恒。"]
 			id: "3111841E3A7C8262"
 			rewards: [{
 				id: "5A6EF9373C21B934"
 				item: "create:blaze_burner"
 				type: "item"
 			}]
-			subtitle: "给你的烈焰人来块士力架！"
+			subtitle: "能量集成"
 			tasks: [{
 				id: "0266BC865A9B984E"
 				item: "create:creative_blaze_cake"
 				type: "item"
 			}]
 			x: 0.0d
-			y: 10.5d
+			y: 4.5d
 		}
 		{
 			dependencies: ["59C668DE4E479AD9"]
 			description: [
-				"通过真理对于马达的压缩和催化，你现在拥有了无穷无尽的应力。"
+				"通过万物之源对于马达的压缩和催化，你现在拥有了无穷无尽的应力。"
 				""
 				"&o&7*希望你干的第一件事不是把这玩意放在发电机上……&r&r"
 			]
-			hide_until_deps_complete: true
 			id: "7237285ADC05FC5C"
 			subtitle: "无尽动能"
 			tasks: [{
@@ -293,13 +196,12 @@
 				item: "create:creative_motor"
 				type: "item"
 			}]
-			x: -3.0d
-			y: 9.0d
+			x: -2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["59C668DE4E479AD9"]
-			description: ["真理对于电的催化让你从现在起开始拥有无尽的电力。"]
-			hide_until_deps_complete: true
+			description: ["万物之源对于电的催化让你从现在起开始拥有无尽的电力。"]
 			id: "43913160B28A2E0F"
 			subtitle: "雷霆领主"
 			tasks: [{
@@ -307,8 +209,8 @@
 				item: "immersiveengineering:capacitor_creative"
 				type: "item"
 			}]
-			x: 3.0d
-			y: 9.0d
+			x: 2.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["6D9B7D2CD86693AF"]
@@ -320,20 +222,20 @@
 				""
 				"这看起来&5似乎不太可能实现&r……但你手中的工具也不太可能出现在人类双手上。"
 				"{@pagebreak}"
-				"你需要一种可以让你&9精确获得机器&r的工具……"
-				""
-				"也许应该看看那些&3融合了工业与魔法&r的独特力量。"
-				""
-				"&o&7大概这个终年覆雪的世界也是一个更大的雪景球吧。&r&r"
+				"漱石枕流，天地为家。"
+				"&9「集成世间各地的异动源头……以让世界安息。」"
+				"&r"
+				"&o&7世界因你入眠而终于平静下来。&r&r"
 			]
+			hide_until_deps_complete: true
 			id: "43D8F6D77823709C"
 			rewards: [{
-				id: "6FF83ED6C18B4E8B"
-				item: "snowyspirit:snow_globe"
+				id: "64E1AC164C05ED71"
+				item: "botania:world_seed"
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 0.5d
+			size: 0.4d
 			subtitle: "归于平静。"
 			tasks: [{
 				id: "56256C6247EC840D"
@@ -342,7 +244,7 @@
 			}]
 			title: "真正的终点……"
 			x: 0.0d
-			y: -1.0d
+			y: 0.0d
 		}
 	]
 	subtitle: ["The Truth Lies Here"]

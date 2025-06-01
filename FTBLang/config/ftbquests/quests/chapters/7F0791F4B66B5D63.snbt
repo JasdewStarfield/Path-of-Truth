@@ -55,6 +55,9 @@
 			description: [
 				"{ftbquests.chapter.7F0791F4B66B5D63.quest2.description1}"
 				"{ftbquests.chapter.7F0791F4B66B5D63.quest2.description2}"
+				"{ftbquests.chapter.7F0791F4B66B5D63.quest2.description3}"
+				""
+				"{ftbquests.chapter.7F0791F4B66B5D63.quest2.description4}"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
@@ -75,6 +78,7 @@
 				"{ftbquests.chapter.7F0791F4B66B5D63.quest3.description1}"
 				"{ftbquests.chapter.7F0791F4B66B5D63.quest3.description2}"
 			]
+			hide_until_deps_complete: true
 			icon: "blue_skies:everbright_portal"
 			id: "7A6D4E28C28302FE"
 			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest3.subtitle}"
@@ -108,8 +112,10 @@
 				"{ftbquests.chapter.7F0791F4B66B5D63.quest4.description1}"
 				"{ftbquests.chapter.7F0791F4B66B5D63.quest4.description2}"
 				"{ftbquests.chapter.7F0791F4B66B5D63.quest4.description3}"
+				""
 				"{ftbquests.chapter.7F0791F4B66B5D63.quest4.description4}"
 			]
+			hide_until_deps_complete: true
 			icon: "blue_skies:everdawn_portal"
 			id: "280307C036B9B6E7"
 			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest4.subtitle}"
@@ -237,7 +243,7 @@
 				"{ftbquests.chapter.7F0791F4B66B5D63.quest8.description2}"
 				"{ftbquests.chapter.7F0791F4B66B5D63.quest8.description3}"
 			]
-			icon: "bloodmagic:alchemicalreactionchamber"
+			icon: "botania:smelt_rod"
 			id: "31E9607DF423C550"
 			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest8.subtitle}"
 			tasks: [
@@ -247,13 +253,13 @@
 					type: "item"
 				}
 				{
-					id: "7518E6F3ABD93C49"
-					item: "blue_skies:falsite_ingot"
+					id: "31FC7A72E0CEFEBF"
+					item: "blue_skies:raw_aquite"
 					type: "item"
 				}
 				{
-					id: "7AE872C213621A9B"
-					item: "create_blue_skies_compat:crushed_ventium_ore"
+					id: "28EF61A470B86B68"
+					item: "blue_skies:raw_horizonite_block"
 					type: "item"
 				}
 			]
@@ -407,12 +413,11 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6A1B42D208C780BD"]
+			dependencies: ["6E0D85E43EDF1994"]
 			description: [
 				"{ftbquests.chapter.7F0791F4B66B5D63.quest12.description1}"
 				""
 				"{ftbquests.chapter.7F0791F4B66B5D63.quest12.description2}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest12.description3}"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:lodestone"
@@ -442,7 +447,34 @@
 			x: -1.5d
 			y: 3.0d
 		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			description: [
+				"{ftbquests.chapter.7F0791F4B66B5D63.quest13.description1}"
+				"{ftbquests.chapter.7F0791F4B66B5D63.quest13.description2}"
+				"{ftbquests.chapter.7F0791F4B66B5D63.quest13.description3}"
+				"{ftbquests.chapter.7F0791F4B66B5D63.quest13.description4}"
+				""
+				"{ftbquests.chapter.7F0791F4B66B5D63.quest13.description5}"
+			]
+			hide_until_deps_complete: true
+			icon: "aquamirae:rune_of_the_storm"
+			id: "3B3B39FE9A88ED71"
+			rewards: [{
+				id: "4B322618601A51D8"
+				item: "aquamirae:dead_sea_scroll"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest13.subtitle}"
+			tasks: [{
+				id: "4882A59E802B7E47"
+				title: "{ftbquests.chapter.7F0791F4B66B5D63.quest13.task_5224920617876946503.title}"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
 	]
-	subtitle: ["{ftbquests.chapter.7F0791F4B66B5D63.subtitle}"]
+	subtitle: ["{ftbquests.chapter.7F0791F4B66B5D63.subtitle0}"]
 	title: "{ftbquests.chapter.7F0791F4B66B5D63.title}"
 }

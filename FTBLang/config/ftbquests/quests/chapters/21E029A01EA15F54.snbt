@@ -5,12 +5,13 @@
 	filename: "21E029A01EA15F54"
 	group: "12EA2EE194EF67D3"
 	hide_quest_details_until_startable: true
-	icon: "bloodmagic:weakbloodorb"
+	icon: "goety:spent_totem"
 	id: "21E029A01EA15F54"
 	images: [
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/start.png"
+			order: 1
 			rotation: 0.0d
 			width: 1.3285714285714287d
 			x: 0.0d
@@ -19,10 +20,11 @@
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
+			order: 2
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 6.0d
-			y: -1.0d
+			x: 0.0d
+			y: 7.0d
 		}
 		{
 			height: 2.0d
@@ -31,6 +33,46 @@
 			width: 10.128712871287128d
 			x: 0.0d
 			y: -8.0d
+		}
+		{
+			height: 3.0d
+			image: "vct:block/greenheart_crafting_table_top"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			height: 4.0d
+			image: "irons_spellbooks:item/hogskin"
+			rotation: -90.0d
+			width: 4.0d
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			height: 4.0d
+			image: "refinedstorage:block/controller/cutouts/light_blue"
+			rotation: 0.0d
+			width: 4.0d
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			height: 3.0d
+			image: "irons_spellbooks:item/affinity_ring_blood"
+			rotation: 0.0d
+			width: 3.0d
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			height: 2.5d
+			image: "minecraft:block/respawn_anchor_top"
+			rotation: 45.0d
+			width: 2.5d
+			x: 6.0d
+			y: 0.0d
 		}
 	]
 	order_index: 1
@@ -42,28 +84,25 @@
 				"{ftbquests.chapter.21E029A01EA15F54.quest1.description1}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest1.description2}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest1.description3}"
+				""
+				"{ftbquests.chapter.21E029A01EA15F54.quest1.description4}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest1.description5}"
 			]
 			hide_until_deps_complete: true
-			icon: {
-				Count: 1
-				id: "patchouli:guide_book"
-				tag: {
-					"patchouli:book": "bloodmagic:guide"
-				}
-			}
+			icon: "goety:magic_emerald"
 			id: "11E3776CE5E23255"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3EC581C14BCC073C"
+				table_id: 5567297392411284388L
+				type: "random"
+			}]
 			shape: "octagon"
 			size: 1.5d
 			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest1.subtitle}"
 			tasks: [{
-				id: "015B595F49230663"
-				item: {
-					Count: 1
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "bloodmagic:guide"
-					}
-				}
+				id: "3EB894FECE754894"
+				item: "goety:magic_emerald"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.21E029A01EA15F54.quest1.title}"
@@ -77,7 +116,6 @@
 				"{ftbquests.chapter.21E029A01EA15F54.quest2.description2}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest2.description3}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest2.description4}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest2.description5}"
 			]
 			icon: "irons_spellbooks:alchemist_cauldron"
 			id: "4320B37354ECBC14"
@@ -86,6 +124,7 @@
 				item: "irons_spellbooks:blood_vial"
 				type: "item"
 			}]
+			shape: "circle"
 			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest2.subtitle}"
 			tasks: [{
 				id: "1A11EC0554E3322F"
@@ -93,8 +132,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.21E029A01EA15F54.quest2.title}"
-			x: -2.0d
-			y: 0.0d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["11E3776CE5E23255"]
@@ -108,6 +147,11 @@
 				"{ftbquests.chapter.21E029A01EA15F54.quest3.description6}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest3.description7}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest3.description8}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest3.description9}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest3.description10}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest3.description11}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest3.description12}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest3.description13}"
 			]
 			icon: "botania:light_relay"
 			id: "2EA11306B3076434"
@@ -116,6 +160,7 @@
 				item: "botania:elementium_ingot"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest3.subtitle}"
 			tasks: [
 				{
@@ -130,21 +175,21 @@
 					type: "item"
 				}
 				{
-					count: 8L
-					id: "134C60B18ABA501C"
-					item: "botania:livingwood"
-					type: "item"
-				}
-				{
 					count: 3L
 					id: "0C52EF97E23DB119"
 					item: "botania:glimmering_livingwood"
 					type: "item"
 				}
+				{
+					count: 8L
+					id: "2BDE83253EB50E99"
+					item: { Count: 8, id: "botania:livingwood_log" }
+					type: "item"
+				}
 			]
 			title: "{ftbquests.chapter.21E029A01EA15F54.quest3.title}"
-			x: 2.0d
-			y: 0.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["11E3776CE5E23255"]
@@ -152,30 +197,43 @@
 				"{ftbquests.chapter.21E029A01EA15F54.quest4.description1}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest4.description2}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest4.description3}"
+				""
+				"{ftbquests.chapter.21E029A01EA15F54.quest4.description4}"
+				"{@pagebreak}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest4.description5}"
 			]
-			icon: "bloodmagic:weakbloodorb"
+			icon: "goety:spent_totem"
 			id: "57B126A840CCD6E4"
 			rewards: [{
-				id: "4A9DD1F061EDC83B"
-				item: "botania:black_lotus"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "09A6FCAC11443A6B"
+				table_id: 5567297392411284388L
+				type: "random"
 			}]
+			shape: "rsquare"
 			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest4.subtitle}"
 			tasks: [
 				{
-					id: "7EC352F37B08C886"
-					item: "bloodmagic:weakbloodorb"
+					id: "5A1DA7696CA402B0"
+					item: "goety:spent_totem"
 					type: "item"
 				}
 				{
-					id: "132AB4E34ABC5671"
-					item: "minecraft:diamond"
+					id: "61A10C7075AB5467"
+					item: {
+						Count: 1
+						id: "goety:totem_of_souls"
+						tag: {
+							"Max Souls": 10000
+							Souls: 0
+						}
+					}
 					type: "item"
 				}
 			]
 			title: "{ftbquests.chapter.21E029A01EA15F54.quest4.title}"
-			x: 0.0d
-			y: -2.0d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["11E3776CE5E23255"]
@@ -185,14 +243,14 @@
 				"{ftbquests.chapter.21E029A01EA15F54.quest5.description3}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest5.description4}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest5.description5}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest5.description6}"
 			]
 			id: "1B2D939907CB4DF0"
 			rewards: [{
-				id: "5668C87C4C42AE5A"
-				item: "botania:blacker_lotus"
+				id: "2A1EF0022C3BC444"
+				item: "botania:black_lotus"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest5.subtitle}"
 			tasks: [
 				{
@@ -217,8 +275,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.21E029A01EA15F54.quest5.title}"
-			x: 0.0d
-			y: 2.0d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["57B126A840CCD6E4"]
@@ -226,43 +284,31 @@
 				"{ftbquests.chapter.21E029A01EA15F54.quest6.description1}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest6.description2}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest6.description3}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest6.description4}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest6.description5}"
-				"{@pagebreak}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest6.description6}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest6.description7}"
-				""
-				"{ftbquests.chapter.21E029A01EA15F54.quest6.description8}"
 			]
-			icon: "bloodmagic:alchemytable"
+			icon: "alexsmobs:skreecher_soul"
 			id: "13313120B0D22371"
+			shape: "rsquare"
 			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest6.subtitle}"
 			tasks: [
 				{
-					id: "39D1D040B332B33C"
-					item: "bloodmagic:alchemytable"
+					id: "40E93E4FCF656CA4"
+					item: "goety:haunted_sapling"
 					type: "item"
 				}
 				{
-					id: "19798221916B0DF8"
-					item: {
-						Count: 1
-						id: "bloodmagic:arcaneashes"
-						tag: {
-							Damage: 0
-						}
-					}
+					id: "630CE5BA53B4BA61"
+					item: "goety:shade_stone"
 					type: "item"
 				}
 				{
-					id: "33D55A3F57C9AFA7"
-					item: "bloodmagic:divinationsigil"
+					id: "7870A3EA7CDE7F44"
+					item: "goety:cursed_ingot"
 					type: "item"
 				}
 			]
 			title: "{ftbquests.chapter.21E029A01EA15F54.quest6.title}"
-			x: -1.0d
-			y: -4.0d
+			x: 4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["57B126A840CCD6E4"]
@@ -270,24 +316,18 @@
 				"{ftbquests.chapter.21E029A01EA15F54.quest7.description1}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest7.description2}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest7.description3}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest7.description4}"
 			]
 			id: "60B15529BE147F62"
-			rewards: [{
-				count: 10
-				id: "32CE8FA3A263AC0D"
-				item: "bloodmagic:soulsnare"
-				type: "item"
-			}]
+			shape: "rsquare"
 			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest7.subtitle}"
 			tasks: [{
-				id: "68B353027C9FC43D"
-				item: "bloodmagic:soulforge"
+				id: "3722B3D1522B29BE"
+				item: "goety:empty_focus"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.21E029A01EA15F54.quest7.title}"
-			x: 1.0d
-			y: -4.0d
+			x: 4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["13313120B0D22371"]
@@ -295,78 +335,34 @@
 				"{ftbquests.chapter.21E029A01EA15F54.quest8.description1}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest8.description2}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest8.description3}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest8.description4}"
-			]
-			id: "76E3812C8219949B"
-			rewards: [{
-				id: "63AF9724E033F83F"
-				item: "create:fluid_tank"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest8.subtitle}"
-			tasks: [
-				{
-					id: "3DE88F9C0B4B6D6F"
-					item: "bloodmagic:reagentwater"
-					type: "item"
-				}
-				{
-					id: "4889EF35AA2CFC94"
-					item: "bloodmagic:reagentlava"
-					type: "item"
-				}
-				{
-					id: "4AB8D784BCB3B4C8"
-					item: "bloodmagic:watersigil"
-					type: "item"
-				}
-				{
-					id: "2C56788977C52021"
-					item: "bloodmagic:lavasigil"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest8.title}"
-			x: -3.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["60B15529BE147F62"]
-			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest9.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest9.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest9.description3}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest9.description4}"
 				""
-				"{ftbquests.chapter.21E029A01EA15F54.quest9.description5}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest8.description4}"
 			]
 			id: "643DA6D3D15ED948"
 			rewards: [{
-				id: "589783BB7C61ACED"
-				item: {
-					Count: 1
-					id: "bloodmagic:soulsword"
-					tag: {
-						Damage: 0
-					}
-				}
+				id: "2CB2DAE110C7674B"
+				item: "goety:shocking_focus"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest9.subtitle}"
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest8.subtitle}"
 			tasks: [{
-				id: "20AA130C6EFE623B"
+				id: "34F33A665FA48518"
 				item: {
 					Count: 1
-					id: "bloodmagic:soulgempetty"
-					tag: {
-						souls: 64.0d
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
 					}
+					id: "goety:dark_wand"
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest9.title}"
-			x: 3.0d
-			y: -4.0d
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest8.title}"
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -374,53 +370,60 @@
 				"60B15529BE147F62"
 			]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest10.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest10.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest10.description3}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest10.description4}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest9.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest9.description2}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest9.description3}"
+				""
+				"{ftbquests.chapter.21E029A01EA15F54.quest9.description4}"
 			]
 			id: "7338DDFCE4617258"
 			rewards: [{
-				id: "71FB62697851C374"
-				item: "bloodmagic:orbcapacityrune"
+				id: "04C465EEB0F26F68"
+				item: "goety:soul_light_focus"
 				type: "item"
 			}]
 			shape: "hexagon"
 			size: 1.5d
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest9.subtitle}"
+			tasks: [{
+				id: "4C25BB7C1147C36F"
+				item: "goety:cursed_cage"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest9.title}"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4320B37354ECBC14"]
+			description: [
+				"{ftbquests.chapter.21E029A01EA15F54.quest10.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest10.description2}"
+				""
+				"{ftbquests.chapter.21E029A01EA15F54.quest10.description3}"
+			]
+			id: "7CCCB823C49F78E8"
+			rewards: [{
+				id: "0EED987BB86B8B9A"
+				item: "biomeswevegone:green_enchanted_sapling"
+				type: "item"
+			}]
 			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest10.subtitle}"
 			tasks: [{
-				count: 8L
-				id: "3A94890A0628B0D8"
-				item: "bloodmagic:blankrune"
+				id: "2001D70EA3440122"
+				item: "irons_spellbooks:legendary_ink"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.21E029A01EA15F54.quest10.title}"
-			x: 0.0d
-			y: -6.0d
+			x: 1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4320B37354ECBC14"]
 			description: [
 				"{ftbquests.chapter.21E029A01EA15F54.quest11.description1}"
 				"{ftbquests.chapter.21E029A01EA15F54.quest11.description2}"
-			]
-			id: "7CCCB823C49F78E8"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest11.subtitle}"
-			tasks: [{
-				id: "2001D70EA3440122"
-				item: "irons_spellbooks:legendary_ink"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest11.title}"
-			x: -4.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["4320B37354ECBC14"]
-			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest12.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest12.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest12.description3}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest11.description3}"
 			]
 			id: "719876BE47F58EE6"
 			rewards: [{
@@ -428,7 +431,7 @@
 				item: "irons_spellbooks:scroll_forge"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest12.subtitle}"
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest11.subtitle}"
 			tasks: [
 				{
 					id: "33C00FE7789AFE4D"
@@ -470,10 +473,15 @@
 					item: "minecraft:blaze_rod"
 					type: "item"
 				}
+				{
+					id: "068F5AA307F79E86"
+					item: "minecraft:note_block"
+					type: "item"
+				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest12.title}"
-			x: -4.0d
-			y: 1.0d
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest11.title}"
+			x: -1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -481,9 +489,9 @@
 				"7CCCB823C49F78E8"
 			]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest13.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest13.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest13.description3}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest12.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest12.description2}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest12.description3}"
 			]
 			icon: {
 				Count: 1
@@ -503,9 +511,9 @@
 				item: "irons_spellbooks:epic_ink"
 				type: "item"
 			}]
-			shape: "hexagon"
+			shape: "circle"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest13.subtitle}"
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest12.subtitle}"
 			tasks: [
 				{
 					id: "6B17EEA23E83F679"
@@ -534,21 +542,33 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest13.title}"
-			x: -6.0d
-			y: 0.0d
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest12.title}"
+			x: 0.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["7CCCB823C49F78E8"]
-			description: ["{ftbquests.chapter.21E029A01EA15F54.quest14.description1}"]
+			description: [
+				"{ftbquests.chapter.21E029A01EA15F54.quest13.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest13.description2}"
+				""
+				"{ftbquests.chapter.21E029A01EA15F54.quest13.description3}"
+			]
 			icon: "sophisticatedbackpacks:advanced_restock_upgrade"
 			id: "21667ABCD50F787E"
-			rewards: [{
-				id: "1D7B3D909CDA72EB"
-				item: "minecraft:budding_amethyst"
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest14.subtitle}"
+			rewards: [
+				{
+					id: "4E60B711DFC315EA"
+					item: "minecraft:amethyst_cluster"
+					type: "item"
+				}
+				{
+					id: "4CBC47D7849FE305"
+					item: "biomeswevegone:blue_enchanted_sapling"
+					type: "item"
+				}
+			]
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest13.subtitle}"
 			tasks: [
 				{
 					id: "54EFED2F5BBEF4B6"
@@ -571,23 +591,24 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest14.title}"
-			x: -4.0d
-			y: -3.0d
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest13.title}"
+			x: 3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1B2D939907CB4DF0"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest15.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest15.description2}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest14.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest14.description2}"
 			]
 			id: "532F8BFB9374238B"
 			rewards: [{
-				id: "23579AC3A7AB39EC"
-				item: "botania:black_lotus"
+				id: "33F64C25BAD66921"
+				item: "botania:mutated_seeds"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest15.subtitle}"
+			shape: "rsquare"
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest14.subtitle}"
 			tasks: [
 				{
 					id: "66AFC49D8DEA9E12"
@@ -600,36 +621,36 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest15.title}"
-			x: -1.0d
-			y: 4.0d
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest14.title}"
+			x: -4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["719876BE47F58EE6"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest16.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest16.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest16.description3}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest15.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest15.description2}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest15.description3}"
 			]
 			id: "33A4BFBA62AFC0BB"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest16.subtitle}"
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest15.subtitle}"
 			tasks: [{
 				id: "0296C8D6C4F9A384"
 				item: "irons_spellbooks:blank_rune"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest16.title}"
-			x: -4.0d
-			y: 3.0d
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest15.title}"
+			x: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1B2D939907CB4DF0"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest17.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest17.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest17.description3}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest16.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest16.description2}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest16.description3}"
 				""
-				"{ftbquests.chapter.21E029A01EA15F54.quest17.description4}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest16.description4}"
 			]
 			icon: "botania:brewery"
 			id: "588310807CE42A4A"
@@ -639,7 +660,8 @@
 				item: "minecraft:soul_sand"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest17.subtitle}"
+			shape: "rsquare"
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest16.subtitle}"
 			tasks: [
 				{
 					id: "3FA3D58899C45DA4"
@@ -652,9 +674,9 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest17.title}"
-			x: 1.0d
-			y: 4.0d
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest16.title}"
+			x: -4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -662,9 +684,9 @@
 				"588310807CE42A4A"
 			]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest18.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest18.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest18.description3}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest17.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest17.description2}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest17.description3}"
 			]
 			id: "718DE6A22EEBDD50"
 			rewards: [{
@@ -675,22 +697,22 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest18.subtitle}"
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest17.subtitle}"
 			tasks: [{
 				id: "30020DAB711D4621"
 				item: "botania:blood_pendant"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest18.title}"
-			x: 0.0d
-			y: 6.0d
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest17.title}"
+			x: -6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["532F8BFB9374238B"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest19.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest19.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest19.description3}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest18.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest18.description2}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest18.description3}"
 			]
 			icon: "botania:mana_void"
 			id: "01ABDF6D02F461D6"
@@ -705,13 +727,8 @@
 					item: "minecraft:slime_ball"
 					type: "item"
 				}
-				{
-					id: "65563A865AE4ED42"
-					item: "bloodmagic:weakbloodorb"
-					type: "item"
-				}
 			]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest19.subtitle}"
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest18.subtitle}"
 			tasks: [
 				{
 					id: "0313C565F0FCA771"
@@ -723,21 +740,16 @@
 					item: "minecraft:ender_pearl"
 					type: "item"
 				}
-				{
-					id: "1AEABD7370315090"
-					item: "minecraft:diamond"
-					type: "item"
-				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest19.title}"
-			x: -3.0d
-			y: 4.0d
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest18.title}"
+			x: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["588310807CE42A4A"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest20.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest20.description2}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest19.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest19.description2}"
 			]
 			icon: "botania:incense_stick"
 			id: "5F8D901373EA1182"
@@ -752,7 +764,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest20.subtitle}"
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest19.subtitle}"
 			tasks: [
 				{
 					id: "7F5D64BEBAFC5D8D"
@@ -765,15 +777,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest20.title}"
-			x: 3.0d
-			y: 4.0d
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest19.title}"
+			x: -4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2EA11306B3076434"]
-			description: ["{ftbquests.chapter.21E029A01EA15F54.quest21.description1}"]
+			description: [
+				"{ftbquests.chapter.21E029A01EA15F54.quest20.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest20.description2}"
+				""
+				"{ftbquests.chapter.21E029A01EA15F54.quest20.description3}"
+			]
 			id: "6FA24342A82507F6"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest21.subtitle}"
+			shape: "rsquare"
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest20.subtitle}"
 			tasks: [
 				{
 					id: "7A1B73EB8DFDBD82"
@@ -796,34 +814,35 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest21.title}"
-			x: 4.0d
-			y: -1.0d
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest20.title}"
+			x: 1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2EA11306B3076434"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest22.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest22.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest22.description3}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest21.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest21.description2}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest21.description3}"
 			]
 			id: "5F1578F61B3B2D32"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest22.subtitle}"
+			shape: "rsquare"
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest21.subtitle}"
 			tasks: [{
 				id: "5A3CAB8C0D47DD50"
 				item: "botania:spark"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest22.title}"
-			x: 4.0d
-			y: 1.0d
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest21.title}"
+			x: -1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6FA24342A82507F6"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest23.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest23.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest23.description3}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest22.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest22.description2}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest22.description3}"
 			]
 			id: "6F89A8F4809FAED1"
 			rewards: [{
@@ -831,7 +850,7 @@
 				item: "botania:rainbow_rod"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest23.subtitle}"
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest22.subtitle}"
 			tasks: [
 				{
 					id: "63B652DDC29B935E"
@@ -844,17 +863,17 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest23.title}"
-			x: 4.0d
-			y: -3.0d
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest22.title}"
+			x: 3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5F1578F61B3B2D32"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest24.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest24.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest24.description3}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest24.description4}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest23.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest23.description2}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest23.description3}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest23.description4}"
 			]
 			icon: "botania:fabulous_pool"
 			id: "5DDEF3279BE872D5"
@@ -863,7 +882,7 @@
 				item: "botania:fabulous_pool"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest24.subtitle}"
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest23.subtitle}"
 			tasks: [
 				{
 					id: "5C8772B9B34153CB"
@@ -876,9 +895,9 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest24.title}"
-			x: 4.0d
-			y: 3.0d
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest23.title}"
+			x: -3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -886,11 +905,12 @@
 				"6FA24342A82507F6"
 			]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest25.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest25.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest25.description3}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest25.description4}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest24.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest24.description2}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest24.description3}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest24.description4}"
 			]
+			icon: "botania:terra_plate"
 			id: "27ABB5338B46217F"
 			rewards: [{
 				id: "1195091C3344D91C"
@@ -905,48 +925,115 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest25.subtitle}"
-			tasks: [{
-				id: "03194BBDEF9F93B8"
-				item: "botania:terra_plate"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest25.title}"
-			x: 6.0d
-			y: 0.0d
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest24.subtitle}"
+			tasks: [
+				{
+					id: "03194BBDEF9F93B8"
+					item: "botania:terra_plate"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0A823BB5D75BA783"
+					item: { Count: 5, id: "botania:livingrock" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "73B0B22F98182C4F"
+					item: { Count: 4, id: "minecraft:lapis_block" }
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest24.title}"
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1B2D939907CB4DF0"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest26.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest26.description2}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest25.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest25.description2}"
+				""
+				"{ftbquests.chapter.21E029A01EA15F54.quest25.description3}"
 			]
 			id: "19CAA60981A6A8E8"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest26.subtitle}"
-			tasks: [{
-				id: "25A9EBF1200D1329"
-				item: "minecraft:kelp"
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest26.title}"
-			x: 0.0d
-			y: 4.0d
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest25.subtitle}"
+			tasks: [
+				{
+					id: "25A9EBF1200D1329"
+					item: "minecraft:kelp"
+					type: "item"
+				}
+				{
+					id: "42704BC21B0A9752"
+					item: "immersiveengineering:seed"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest25.title}"
+			x: -4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["57B126A840CCD6E4"]
-			description: ["{ftbquests.chapter.21E029A01EA15F54.quest27.description1}"]
+			description: [
+				"{ftbquests.chapter.21E029A01EA15F54.quest26.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest26.description2}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest26.description3}"
+			]
+			icon: "goety:jade"
 			id: "41990A4F90A100DA"
+			rewards: [
+				{
+					id: "7A9EB5922ECE204C"
+					item: "goety:jade"
+					type: "item"
+				}
+				{
+					id: "1CE7789F04D6ACE1"
+					item: "blue_skies:moonstone_crystal"
+					type: "item"
+				}
+				{
+					id: "64D5EDD814AD304F"
+					item: "blue_skies:sunstone_crystal"
+					type: "item"
+				}
+			]
+			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest26.subtitle}"
+			tasks: [{
+				id: "27593D343BF67B47"
+				item: "kubejs:earth_elemental_core"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.21E029A01EA15F54.quest26.title}"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60B15529BE147F62"]
+			description: [
+				"{ftbquests.chapter.21E029A01EA15F54.quest27.description1}"
+				"{ftbquests.chapter.21E029A01EA15F54.quest27.description2}"
+			]
+			id: "092CD716FC19EF76"
+			rewards: [{
+				id: "4308D3408297310F"
+				item: "irons_spellbooks:firefly_jar"
+				type: "item"
+			}]
 			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest27.subtitle}"
 			tasks: [{
-				id: "67AC0274A819CCD0"
-				item: "bloodmagic:incensealtar"
+				id: "624D690BF0E882D8"
+				item: "goety:flame_capture"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.21E029A01EA15F54.quest27.title}"
-			x: 0.0d
-			y: -4.0d
+			x: 4.0d
+			y: 3.0d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.21E029A01EA15F54.subtitle}"]
+	subtitle: ["{ftbquests.chapter.21E029A01EA15F54.subtitle0}"]
 	title: "{ftbquests.chapter.21E029A01EA15F54.title}"
 }

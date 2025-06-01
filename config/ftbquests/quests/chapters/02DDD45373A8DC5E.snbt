@@ -38,7 +38,7 @@
 	quests: [
 		{
 			dependencies: ["6A1B42D208C780BD"]
-			description: ["不管干什么，你总归需要从工作台开始的，对吧）"]
+			description: ["{ftbquests.chapter.02DDD45373A8DC5E.quest1.description1}"]
 			hide_until_deps_complete: true
 			icon: "minecraft:oak_log"
 			id: "46156FBBDCAB4B1D"
@@ -60,7 +60,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "自己动手，丰衣足食"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest1.subtitle}"
 			tasks: [{
 				id: "66B578110EFCF7EA"
 				item: {
@@ -70,25 +70,25 @@
 						value: "forge:workbench"
 					}
 				}
-				title: "任意工作台"
+				title: "{ftbquests.chapter.02DDD45373A8DC5E.quest1.task_7400953577314514922.title}"
 				type: "item"
 			}]
-			title: "【起点】从原始工具开始"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest1.title}"
 			x: 0.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["2F791EC2607066B4"]
 			description: [
-				"恭喜你初步摆脱了原始人阶段！"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest2.description1}"
 				""
-				"&c&l重要提示&r&r&4：水车和风车的运作机制有改动。水车现在需要放在河流类群系（包括冻河！）中才能达到最大运作效率，而且需要附近有足量的流体方块（不需要流动水了）；风车则也需要在开阔的环境才能运作（较高的地方以及海洋一类的特定群系效率较高）。做好你的工业选址！&r"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest2.description2}"
 				""
-				"&6通过岩浆转动水车要求一致。&r翻到下一页查看水车摆放的具体示例。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest2.description3}"
 				""
 				"{@pagebreak}"
-				"{image:kubejs:textures/waterwheel.png width:210 height:120 align:1}"
-				"图为水车的摆放示例。&c请注意水车方块（不含页片）必须要在水面以上，不能浸没在水中！&r"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest2.image0}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest2.description4}"
 			]
 			icon: "immersiveengineering:waterwheel_segment"
 			id: "0E41103FFC1FC96A"
@@ -97,7 +97,7 @@
 				item: "create:windmill_bearing"
 				type: "item"
 			}]
-			subtitle: "转起来了，站起来了"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest2.subtitle}"
 			tasks: [
 				{
 					id: "74375DFE34460F0D"
@@ -110,21 +110,21 @@
 					type: "item"
 				}
 			]
-			title: "青铜时代，前进四！"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest2.title}"
 			x: 4.0d
 			y: 8.5d
 		}
 		{
 			dependencies: ["46156FBBDCAB4B1D"]
-			description: ["同时，你也可以制作较为简易的铜质枪械了！"]
+			description: ["{ftbquests.chapter.02DDD45373A8DC5E.quest3.description1}"]
 			id: "3C34EE3C3BAB33EC"
-			subtitle: "铜，一种很好得到也很容易冶炼的东西"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest3.subtitle}"
 			tasks: [{
 				id: "4561B0E5F3385141"
 				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
-			title: "原始人的金属"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest3.title}"
 			x: -4.5d
 			y: 0.0d
 		}
@@ -135,34 +135,34 @@
 				"06AA85338A57DB33"
 			]
 			description: [
-				"个人的力量来探究真理显然是难以为继的，所以你需要帮助。"
-				"比如，机械神教的力量。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest4.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest4.description2}"
 			]
 			id: "177304E3D3C7EFC3"
-			subtitle: "这里不是龙傲天小说"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest4.subtitle}"
 			tasks: [{
 				id: "2EC2F3324E9E5CAF"
 				item: "kubejs:raw_andesite_alloy"
 				type: "item"
 			}]
-			title: "人力终有尽头"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest4.title}"
 			x: 0.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["7A6ADC4EE6686110"]
 			description: [
-				"你的齿轮和杠杆也在转，不是吗？"
-				"齿轮现在需要活木制作了，毕竟只有活着的木头才能抵消机器运转的磨损。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest5.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest5.description2}"
 				""
-				"值得一提的是，利用手搓的方式产出的传动杆的数量降低了。然而，等到你获取铁之后，就可以使用动力锯改变这种粗放的生产方式了。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest5.description3}"
 				"{@pagebreak}"
-				"很好，看来你意识到了还有第二页（）"
-				"这是一个小小的提示：如果你需要改变齿轮的转速，考虑将大小齿轮啮合！但请注意，机器转速翻倍的同时，应力消耗也会翻倍，反之亦然。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest5.description4}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest5.description5}"
 			]
 			icon: "create:large_cogwheel"
 			id: "2F791EC2607066B4"
-			subtitle: "地球在转。"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest5.subtitle}"
 			tasks: [
 				{
 					id: "0495BABE3FB28BAF"
@@ -180,35 +180,35 @@
 					type: "item"
 				}
 			]
-			title: "基本工具"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest5.title}"
 			x: 2.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["46156FBBDCAB4B1D"]
 			description: [
-				"很符合原始人的身份，不是吗？"
-				"如果你在这一步卡住的话，考虑去完成一下魔法侧的任务。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest6.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest6.description2}"
 			]
 			id: "05A75CB67C986F21"
-			subtitle: "一种很容易融化成液体的材料"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest6.subtitle}"
 			tasks: [{
 				id: "0D891A9B01788793"
 				item: "simplemetals_tin:tin_ingot"
 				type: "item"
 			}]
-			title: "容易融化"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest6.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3C34EE3C3BAB33EC"]
 			description: [
-				"这个整合包有&4&l三个&r&r高炉！！！"
-				"这是第一个，我们姑且称之为原版高炉。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest7.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest7.description2}"
 			]
 			id: "05545789C11E97FE"
-			subtitle: "冶炼一些特殊矿材所必须用的……"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest7.subtitle}"
 			tasks: [{
 				id: "3A1A0025BA4364CE"
 				item: "minecraft:blast_furnace"
@@ -220,37 +220,37 @@
 		{
 			dependencies: ["46156FBBDCAB4B1D"]
 			description: [
-				"想要把普通的材料变成安山合金，你需要一点小小的……催化剂）"
-				"它并不难获得，甚至可以说无穷无尽，但需要一点你的耐心。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest8.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest8.description2}"
 				""
-				"&a如果你不知道怎么制作活石，请看魔法章节（原始萨满）！&r"
-				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"735172F79325756F\" } }"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest8.description3}"
+				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.02DDD45373A8DC5E.quest8.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"735172F79325756F\"}}]"
 			]
 			id: "489BC5567AF09228"
-			subtitle: "是的，这个世界不只需要科技"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest8.subtitle}"
 			tasks: [{
 				id: "7DA793B57D4A9855"
 				item: "botania:livingrock"
 				type: "item"
 			}]
-			title: "魔法之力"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest8.title}"
 			x: -2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["46156FBBDCAB4B1D"]
 			description: [
-				"温馨提示：如果找不到安山岩，可以多探索洞穴，找到与某些岩石层共生的安山岩。"
-				"实在不行的话，闪长岩也可以用来合成安山岩。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest9.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest9.description2}"
 			]
 			id: "06AA85338A57DB33"
-			subtitle: "是的，从石头干起"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest9.subtitle}"
 			tasks: [{
 				id: "56A21895A51FA871"
 				item: "minecraft:andesite"
 				type: "item"
 			}]
-			title: "安山科技"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest9.title}"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -260,13 +260,13 @@
 				"05545789C11E97FE"
 			]
 			description: [
-				"终于，你获得了一些可以用来干活的金属。"
-				"遗憾的是，它们不能为你制造护甲和工具，也许你得想想别的办法？"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest10.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest10.description2}"
 			]
 			id: "7A6ADC4EE6686110"
 			shape: "gear"
 			size: 2.0d
-			subtitle: "科技的起始"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest10.subtitle}"
 			tasks: [{
 				id: "3D846FB73882E9B7"
 				item: "create:andesite_alloy"
@@ -281,12 +281,12 @@
 				"2D883E21C72F5947"
 			]
 			description: [
-				"工业的第一步是物理加工，所以你需要压几块板子。"
-				"而为了压板子，辊压机自然是必不可少的。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest11.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest11.description2}"
 			]
 			icon: "create:mechanical_press"
 			id: "27E166AF7BA5BDB1"
-			subtitle: "你铁砧临头了（确信"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest11.subtitle}"
 			tasks: [
 				{
 					id: "71F611ED457CE3E5"
@@ -302,23 +302,23 @@
 							value: "forge:plates"
 						}
 					}
-					title: "任意板材"
+					title: "{ftbquests.chapter.02DDD45373A8DC5E.quest11.task_2397868721838039410.title}"
 					type: "item"
 				}
 			]
-			title: "Duang！"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest11.title}"
 			x: 0.0d
 			y: 8.5d
 		}
 		{
 			dependencies: ["27E166AF7BA5BDB1"]
 			description: [
-				"通过工业手段，你可以在工作盆里批量混合和组装物品。"
-				"这也是工业优于魔法的一点（确信"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest12.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest12.description2}"
 			]
 			icon: "create:mechanical_mixer"
 			id: "29B3F884515FC9DB"
-			subtitle: "加一点毒蘑菇，再加一个旧鞋跟……"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest12.subtitle}"
 			tasks: [
 				{
 					id: "3F171A67419EAF9D"
@@ -331,33 +331,33 @@
 					type: "item"
 				}
 			]
-			title: "工业化女巫"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest12.title}"
 			x: 0.0d
 			y: 10.5d
 		}
 		{
 			dependencies: ["0E41103FFC1FC96A"]
 			description: [
-				"有些东西需要你通过早期手段来处理。"
-				"你可以用石磨磨面粉——也可以用它粉碎一些相对脆弱的金属。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest13.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest13.description2}"
 			]
 			id: "4252F0F8AD1C5A60"
-			subtitle: "当然，你没有粉碎轮"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest13.subtitle}"
 			tasks: [{
 				id: "6B269D995C1F2D37"
 				item: "create:millstone"
 				type: "item"
 			}]
-			title: "粉碎性打击"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest13.title}"
 			x: 3.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["4252F0F8AD1C5A60"]
-			description: ["为什么还要加硫？"]
+			description: ["{ftbquests.chapter.02DDD45373A8DC5E.quest14.description1}"]
 			icon: "kubejs:bronze_dust"
 			id: "69864E61F37B2AA3"
-			subtitle: "铜和锡，三比一"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest14.subtitle}"
 			tasks: [
 				{
 					id: "6FA0C714DB1BC9CF"
@@ -375,7 +375,7 @@
 					type: "item"
 				}
 			]
-			title: "至关重要的粉末"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest14.title}"
 			x: 1.5d
 			y: 12.0d
 		}
@@ -384,7 +384,7 @@
 				"29B3F884515FC9DB"
 				"69864E61F37B2AA3"
 			]
-			description: ["现在你掌握了青铜的冶炼技术，也就是说，你可以制作一些相对趁手的——石头以上的——工具了。"]
+			description: ["{ftbquests.chapter.02DDD45373A8DC5E.quest15.description1}"]
 			icon: "kubejs:bronze_ingot"
 			id: "3BECB3D53E17F80B"
 			rewards: [{
@@ -394,7 +394,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "你好，商朝人"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest15.subtitle}"
 			tasks: [
 				{
 					id: "69E0DF208053971B"
@@ -407,13 +407,13 @@
 					type: "item"
 				}
 			]
-			title: "钟鸣鼎食"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest15.title}"
 			x: 0.0d
 			y: 14.0d
 		}
 		{
 			dependencies: ["29B3F884515FC9DB"]
-			description: ["利用搅拌，你可以以更经济的方式倍增安山合金的产率！"]
+			description: ["{ftbquests.chapter.02DDD45373A8DC5E.quest16.description1}"]
 			icon: "kubejs:raw_andesite_alloy"
 			id: "47C5992588416736"
 			rewards: [{
@@ -422,7 +422,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "冒泡泡，冒泡泡"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest16.subtitle}"
 			tasks: [
 				{
 					id: "4CFECA6BDF000DA8"
@@ -431,11 +431,11 @@
 				}
 				{
 					id: "20FD93CFBE648A51"
-					title: "懂"
+					title: "{ftbquests.chapter.02DDD45373A8DC5E.quest16.task_2377218698783263313.title}"
 					type: "checkmark"
 				}
 			]
-			title: "另一种生产方式"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest16.title}"
 			x: 1.5d
 			y: 10.5d
 		}
@@ -456,7 +456,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "嘿伙计，我想你需要一些工具"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest17.subtitle}"
 			tasks: [
 				{
 					id: "353B0257275D6612"
@@ -530,23 +530,23 @@
 					type: "item"
 				}
 			]
-			title: "生存的必要手段"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest17.title}"
 			x: -1.5d
 			y: 12.0d
 		}
 		{
 			dependencies: ["46156FBBDCAB4B1D"]
 			description: [
-				"你会惊讶的发现，在这个包里，炼铁需要更高的技术力）"
-				"所以你需要从青铜时代开始——并构建自己的高炉来解决铁的问题。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest18.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest18.description2}"
 				""
-				"对于没有铁请不要着急，我们允许从冒险中获取铁质盔甲和工具并直接使用，如果真的着急请看下一页。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest18.description3}"
 				"{@pagebreak}"
-				"首先，青铜工具是和铁同一等级的，而且没那么难获得，你通过机械动力的石磨就可以磨铜粉和锌粉。"
-				"其次，花药台用木桶可以灌水，不是必须铁桶。"
-				"最后，你可以去蔚蓝浩空来获取天闪石和镰鼬铁来代替原版的铁以制造工具和盔甲。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest18.description4}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest18.description5}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest18.description6}"
 				""
-				"&c&o*法师的留言：谁再问没有铁桶怎么启动花药台我直接一发炎爆术糊你脸上！&r&r"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest18.description7}"
 			]
 			icon: "minecraft:raw_iron"
 			id: "7D7F5D6CF26C1636"
@@ -562,27 +562,27 @@
 					type: "item"
 				}
 			]
-			subtitle: "老铁，我请问呢？"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest18.subtitle}"
 			tasks: [{
 				id: "6D4AFC5DECCC56A4"
 				item: "minecraft:raw_iron"
 				type: "item"
 			}]
-			title: "不能直接烧"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest18.title}"
 			x: 5.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7A6ADC4EE6686110"]
-			description: ["对去皮原木使用安山合金！"]
+			description: ["{ftbquests.chapter.02DDD45373A8DC5E.quest19.description1}"]
 			id: "50BB17FEED3B10D2"
-			subtitle: "只是壳子"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest19.subtitle}"
 			tasks: [{
 				id: "627EF45054EFDE2B"
 				item: "create:andesite_casing"
 				type: "item"
 			}]
-			title: "来点壳子"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest19.title}"
 			x: -2.0d
 			y: 6.5d
 		}
@@ -592,25 +592,25 @@
 				"2F791EC2607066B4"
 			]
 			description: [
-				"这是安山系列机械的核心组件。"
-				"多 多 益 善）"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest20.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest20.description2}"
 			]
 			id: "2D883E21C72F5947"
 			shape: "gear"
 			size: 2.0d
-			subtitle: "你疑似有点过于城市化了"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest20.subtitle}"
 			tasks: [{
 				id: "426215F2BF5D4D54"
 				item: "kubejs:andesite_engineering"
 				type: "item"
 			}]
-			title: "工业化的方块"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest20.title}"
 			x: -4.0d
 			y: 8.5d
 		}
 		{
 			dependencies: ["27E166AF7BA5BDB1"]
-			description: ["你怎么能忍住不用的？"]
+			description: ["{ftbquests.chapter.02DDD45373A8DC5E.quest21.description1}"]
 			icon: "create:goggles"
 			id: "63B4B5472513A83F"
 			rewards: [{
@@ -619,7 +619,7 @@
 				xp: 10
 			}]
 			shape: "diamond"
-			subtitle: "很好，这使我机器旋转"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest21.subtitle}"
 			tasks: [
 				{
 					id: "53A50D0E4A211DBF"
@@ -632,7 +632,7 @@
 					type: "item"
 				}
 			]
-			title: "工程师必备"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest21.title}"
 			x: -1.5d
 			y: 10.5d
 		}
@@ -642,22 +642,22 @@
 				"336807D048A4EF6A"
 			]
 			description: [
-				"终于，你看到了炼铁的曙光，但——你需要先去满世界找岩浆块。"
-				"这是第二个高炉，我们姑且称之为沉浸工程粗制高炉。它的作用是冶炼粗铁，以及将铁锭炼为铸铁锭。"
-				"找找废弃的地狱门，记得打个标记，哭泣的黑曜石你以后还会用到的。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest22.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest22.description2}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest22.description3}"
 				""
-				"&n&c注意：沉浸工程的高炉燃料只能使用焦煤粉！&r&r"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest22.description4}"
 			]
 			icon: "immersiveengineering:blast_furnace"
 			id: "2C15AA9278830174"
-			subtitle: "离亮闪闪的小可爱更进一步"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest22.subtitle}"
 			tasks: [{
 				count: 27L
 				id: "765F2C43E4E65DDA"
 				item: "immersiveengineering:blastbrick"
 				type: "item"
 			}]
-			title: "高炉炼铁"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest22.title}"
 			x: -3.0d
 			y: 16.0d
 		}
@@ -667,8 +667,8 @@
 				"6D46668D63E83ED7"
 			]
 			description: [
-				"&a【完成后解锁主线章节：2I 奇异合金】&r"
-				"奖励有点臭但我相信你不会介意的（笑"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest23.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest23.description2}"
 			]
 			id: "6E0D85E43EDF1994"
 			rewards: [
@@ -692,23 +692,23 @@
 			]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "恭喜你完成了第一章！"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest23.subtitle}"
 			tasks: [{
 				id: "72B82CDECCBEAB96"
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			title: "【终点】事铁啊！"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest23.title}"
 			x: 0.0d
 			y: 18.0d
 		}
 		{
 			dependencies: ["3BECB3D53E17F80B"]
 			description: [
-				"在这章你会提前接触到一些沉浸工程的多方块结构。（就当是为电气时代做预习了吧）"
-				"多方块结构，顾名思义，你要把它按指定的方法摆出来（手册里都有写），然后拿锤子右击一下某个特定的位置以将它组装为有功能的完整多方块结构。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest24.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest24.description2}"
 				""
-				"&l&c比如说，你即将用来炼铁的高炉和用来生产焦煤的焦炉。&r&r"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest24.description3}"
 			]
 			icon: {
 				Count: 1
@@ -718,7 +718,7 @@
 				}
 			}
 			id: "336807D048A4EF6A"
-			subtitle: "80！80！"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest24.subtitle}"
 			tasks: [
 				{
 					id: "2CC1960A4B0CF73D"
@@ -737,20 +737,20 @@
 					type: "item"
 				}
 			]
-			title: "工程师的活"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest24.title}"
 			x: 0.0d
 			y: 16.0d
 		}
 		{
 			dependencies: ["336807D048A4EF6A"]
 			description: [
-				"比如：焦煤。"
-				"多余的杂酚油你可以看着办（？）反正处理不掉杂酚油是沉浸的通病。"
-				"小声：拿来洗澡也行。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest25.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest25.description2}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest25.description3}"
 			]
 			icon: "immersiveengineering:coke_oven"
 			id: "6D46668D63E83ED7"
-			subtitle: "为了炼铁，你需要比煤更强的燃料"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest25.subtitle}"
 			tasks: [
 				{
 					count: 27L
@@ -764,15 +764,15 @@
 					type: "item"
 				}
 			]
-			title: "基本生产要素"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest25.title}"
 			x: 3.0d
 			y: 16.0d
 		}
 		{
 			dependencies: ["2F791EC2607066B4"]
 			description: [
-				"作为一个更加真实的整合包，你会发现所有的部件都会造成一定程度的应力损耗。"
-				"这也就意味着，你&b&l不能使用&r齿轮链进行长距离的动能传输。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest26.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest26.description2}"
 			]
 			icon: "create:clipboard"
 			id: "105CB8690DCE4DCC"
@@ -781,10 +781,10 @@
 				item: "create_connected:crank_wheel"
 				type: "item"
 			}]
-			subtitle: "是的，符合现实"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest26.subtitle}"
 			tasks: [{
 				id: "7D7679617FDA45B3"
-				title: "动力损耗"
+				title: "{ftbquests.chapter.02DDD45373A8DC5E.quest26.task_9040546761656649139.title}"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -792,7 +792,7 @@
 		}
 		{
 			dependencies: ["6D46668D63E83ED7"]
-			description: ["使用垃圾桶来批量销毁物品和流体。"]
+			description: ["{ftbquests.chapter.02DDD45373A8DC5E.quest27.description1}"]
 			icon: "trashcans:item_trash_can"
 			id: "1A5534E853393823"
 			rewards: [{
@@ -807,7 +807,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "不用岩浆或者仙人掌了。"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest27.subtitle}"
 			tasks: [
 				{
 					id: "20F712C4AF6453C9"
@@ -820,16 +820,16 @@
 					type: "item"
 				}
 			]
-			title: "温暖的家（大嘘）"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest27.title}"
 			x: 1.5d
 			y: 15.0d
 		}
 		{
 			dependencies: ["2D883E21C72F5947"]
 			description: [
-				"&6本整合包的工业侧核心就在于生产各种各样的工程块……你会在每个章节都遇到一个（或者一些）！&r"
-				"虽然现在你还做不到，不过如果你有了机械手，那么你就可以通过序列组装的方式来量产工程块！&2通过这种方式生产的工程块除了机壳以外，耗材全部减半！"
-				"&r顺便一提，这条规则对今后的工程块也都起效。"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest28.description1}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest28.description2}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest28.description3}"
 			]
 			icon: "create:clipboard"
 			id: "5284E06C5BAE5831"
@@ -839,19 +839,19 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "量产小贴士"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest28.subtitle}"
 			tasks: [{
 				id: "20382D7DE9325214"
-				title: "明白"
+				title: "{ftbquests.chapter.02DDD45373A8DC5E.quest28.task_2321655626716041748.title}"
 				type: "checkmark"
 			}]
-			title: "关于工程块……"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest28.title}"
 			x: -3.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["46156FBBDCAB4B1D"]
-			description: ["&a【完成后解锁附加章节：军械师生涯】&r"]
+			description: ["{ftbquests.chapter.02DDD45373A8DC5E.quest29.description1}"]
 			icon: {
 				Count: 1
 				id: "scguns:flintlock_pistol"
@@ -862,17 +862,17 @@
 			}
 			id: "4BED26108E90A0CC"
 			shape: "diamond"
-			subtitle: "这玩意可比魔杖好用多了，罗恩"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest29.subtitle}"
 			tasks: [{
 				id: "373CA25FF3071BD5"
 				item: "scguns:gun_bench"
 				type: "item"
 			}]
-			title: "时代变了！"
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest29.title}"
 			x: 1.5d
 			y: -2.5d
 		}
 	]
-	subtitle: ["Age of Bronze"]
-	title: "1I 青铜时代"
+	subtitle: ["{ftbquests.chapter.02DDD45373A8DC5E.subtitle0}"]
+	title: "{ftbquests.chapter.02DDD45373A8DC5E.title}"
 }

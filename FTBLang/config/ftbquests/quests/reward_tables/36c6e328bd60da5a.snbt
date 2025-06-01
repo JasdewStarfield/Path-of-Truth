@@ -22,16 +22,17 @@
 		{ item: "artifacts:umbrella" }
 		{ item: "artifacts:cloud_in_a_bottle" }
 		{ item: "artifacts:antidote_vessel" }
-		{ item: "botania:aura_ring_greater", weight: 0.3f }
+		{ item: "botania:aura_ring_greater", weight: 0.5f }
 		{ item: "irons_spellbooks:fireward_ring" }
 		{ item: "irons_spellbooks:poisonward_ring" }
 		{ item: "irons_spellbooks:frostward_ring" }
-		{ item: "irons_spellbooks:invisibility_ring", weight: 0.3f }
+		{ item: "irons_spellbooks:invisibility_ring", weight: 0.5f }
 		{ item: "artifacts:bunny_hoppers" }
 		{ item: "artifacts:kitty_slippers" }
 		{ item: "artifacts:aqua_dashers" }
 		{ item: "artifacts:rooted_boots" }
-		{ item: "sophisticatedbackpacks:backpack", weight: 0.3f }
+		{ item: "sophisticatedbackpacks:backpack", weight: 0.5f }
+		{ item: "kubejs:max_magic_ring", weight: 0.3f }
 	]
-	title: "{ftbquests.loot_table.title1}"
+	title: "{ftbquests.loot_table_3947091887552256602.title}"
 }

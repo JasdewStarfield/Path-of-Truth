@@ -13,24 +13,32 @@
 			image: "kubejs:textures/quests/start.png"
 			rotation: 0.0d
 			width: 1.3285714285714287d
-			x: 0.0d
-			y: -2.3d
+			x: -5.5d
+			y: 0.0d
 		}
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 16.0d
-			y: -2.0d
+			x: 15.0d
+			y: 1.0d
 		}
 		{
 			height: 2.0d
 			image: "kubejs:textures/quests/i3.png"
 			rotation: 0.0d
 			width: 10.941176470588236d
-			x: 2.5d
-			y: -5.0d
+			x: 6.0d
+			y: -5.5d
+		}
+		{
+			height: 1.0d
+			image: "scguns:item/spitfire_flame"
+			rotation: 0.0d
+			width: 1.0d
+			x: 0.0d
+			y: 3.0d
 		}
 	]
 	order_index: 0
@@ -59,158 +67,17 @@
 				type: "item"
 			}]
 			title: "【起点】基本元件"
-			x: 0.0d
-			y: -1.0d
+			x: -4.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["241E68C9313210AD"]
+			dependencies: ["429B458F0AADA253"]
 			description: [
-				"所以你需要一个盆——以及一个合适的模板来压制钢锭）"
-				"请注意：黏土铸模在破开模具取出钢时有小概率损坏，好在这东西很便宜，记得多准备一些用来补充。"
-			]
-			icon: "kubejs:casting_base"
-			id: "3A3413B00445526E"
-			subtitle: "炼钢的本质其实是把铁水变成钢水）"
-			tasks: [
-				{
-					id: "0A869FAD6E9169D2"
-					item: "tfmg:ingot_mold"
-					type: "item"
-				}
-				{
-					id: "0374F9F32DE169D2"
-					item: "tfmg:block_mold"
-					type: "item"
-				}
-				{
-					id: "4E634AF6488347B6"
-					item: "kubejs:casting_base"
-					type: "item"
-				}
-			]
-			title: "选择模板"
-			x: 5.0d
-			y: 1.0d
-		}
-		{
-			dependencies: [
-				"241E68C9313210AD"
-				"5B1818D5A1142A16"
-				"34F7983B4915B789"
-			]
-			description: [
-				"不过这只是一个盖子，所以你应该可以猜到还有一半……"
-				"至于为什么你可以拿起来装了一个钢块的铸造盆，还是当史蒂夫天生神力吧（"
-			]
-			id: "3FE201936DBB127F"
-			subtitle: "用小盒子炼钢"
-			tasks: [{
-				id: "1CD02DA65BDD60D1"
-				item: "kubejs:casting_seal"
-				type: "item"
-			}]
-			title: "铸造盆封口"
-			x: 2.5d
-			y: 0.5d
-		}
-		{
-			dependencies: ["242C57AF7F6116E4"]
-			description: ["康铜可承受不了钢水的灼热，所以你需要铸铁来为你制造模具。"]
-			hide_until_deps_complete: true
-			id: "241E68C9313210AD"
-			subtitle: "铸铁管道和机器是必要的）"
-			tasks: [{
-				id: "1E690C7D6912DEB3"
-				item: "tfmg:cast_iron_ingot"
-				type: "item"
-			}]
-			title: "焦炉与焦煤"
-			x: 3.5d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"0CF2DD3DB7F76FB2"
-				"5B1818D5A1142A16"
-				"34F7983B4915B789"
-			]
-			description: [
-				"钢水会很烫，而且有副产物（？"
-				"但我相信你会有办法的（什么"
-				""
-				"这是第三个高炉！我们叫它炼钢高炉就好，因为它只能炼钢（（"
-				"&n具体建造方式请参照思索说明&r"
-				"&c目前，此高炉有以下Bug：每次投入原料时，实际进入的数量会比投入的数量&o少一个&r&c。因此，建议一次性投入较多的原料！&r"
-				""
-				"&c注意&r：请&l不要&r一看思索的延伸就端着铸造盆准备去炼钢。TFMG的铸造盆有让配方崩溃的特性，因此我们已将其从制造序列中移除。具体的钢铁炼制方式请直接从钢锭查询配方。"
-			]
-			id: "309524B4033437AF"
-			subtitle: "钢水输出点"
-			tasks: [{
-				id: "1A0B1B856B1D1340"
-				item: "tfmg:blast_furnace_output"
-				type: "item"
-			}]
-			title: "高炉核心"
-			x: 2.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["0CF2DD3DB7F76FB2"]
-			description: [
-				"防火的外墙（必需品"
-				"某种程度上来说，这大概是你的血汗工程（对吧"
-				"&n具体建造方式请参照思索说明&r"
-			]
-			id: "5863CFB1CDBEBEC9"
-			subtitle: "外墙"
-			tasks: [
-				{
-					id: "6474BE02E12DA62F"
-					item: "tfmg:fireproof_bricks"
-					type: "item"
-				}
-				{
-					id: "71E0B9C5A6B8DF46"
-					item: "tfmg:fireproof_brick_reinforcement"
-					type: "item"
-				}
-			]
-			title: "高炉保护层"
-			x: 5.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["242C57AF7F6116E4"]
-			description: [
-				"建造高炉首先需要能承载高温的黏土）"
-				"理论上它会自然生成在世界上，但很显然，有的时候你不一定运气够好）"
-				"所以你也可以用鲜血对黏土进行防火处理（大草），支持单个黏土球和整个黏土块哦）"
-			]
-			hide_until_deps_complete: true
-			id: "0CF2DD3DB7F76FB2"
-			subtitle: "传奇耐烧王"
-			tasks: [{
-				id: "0C74014F9A4994EF"
-				item: "tfmg:fireclay_ball"
-				type: "item"
-			}]
-			title: "血与火"
-			x: 3.5d
-			y: -3.5d
-		}
-		{
-			dependencies: [
-				"5863CFB1CDBEBEC9"
-				"309524B4033437AF"
-				"3A3413B00445526E"
-				"3FE201936DBB127F"
-			]
-			description: [
-				"你获得了钢锭！这意味着你可以在工业和魔法上继续推进了！"
+				"不断添加致密碳粒，并且锻压，就会得到……"
+				"你获得了&6真正意义上的钢锭&r！这意味着你可以在工业和魔法上继续推进了！"
 				"魔法也需要质量更好的金属作为基础发展）"
 			]
-			icon: "tfmg:steel_ingot"
+			icon: "immersiveengineering:ingot_steel"
 			id: "7A7C0A48248FA32B"
 			rewards: [{
 				id: "10F5829FF85C1C4B"
@@ -232,40 +99,40 @@
 			size: 2.0d
 			subtitle: "钢铁雄心 IV"
 			tasks: [{
-				id: "7E42EFEA82C07766"
-				item: "tfmg:steel_ingot"
+				id: "42FAC7DBA007D304"
+				item: "immersiveengineering:ingot_steel"
 				type: "item"
 			}]
 			title: "团结就是力量"
-			x: 5.0d
-			y: -1.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["7A7C0A48248FA32B"]
+			dependencies: ["77918DE5A223B3CD"]
 			description: [
 				"通过这个机壳，你将意识到某些部件不是为了小型机器服务的，而是为了组装更大的机器）"
-				"比如说，钢机壳除了做门就只能做工程块）"
+				"比如说，钢机壳只能用来做工程块）"
 				"&o&m&c但你需要很多的工程块，哈哈哈哈（逃&r&r&r"
 			]
-			hide_until_deps_complete: true
 			id: "2974EA098C1280C1"
 			subtitle: "进度：0.5"
 			tasks: [{
-				id: "58ED4D9D39320EF4"
-				item: "tfmg:steel_casing"
+				id: "72806086C003174D"
+				item: "kubejs:steel_casing"
 				type: "item"
 			}]
 			title: "工程基本单元 I"
-			x: 9.0d
-			y: -3.0d
+			x: 12.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
 				"2974EA098C1280C1"
-				"2E4B9CF9789B1AF1"
+				"786828EE220E93A3"
+				"6DCA03A4B843B686"
 			]
 			description: [
-				"你获得了一款可以组成多方块结构机器的工程块——也是最简单的一种工程块）"
+				"你获得了一款可以组成多方块结构机器的工程块——也是最简单的一种沉浸工程工程块）"
 				"去试试吧，朋友）"
 				"电火花要开始在机械中闪耀了！"
 			]
@@ -279,121 +146,34 @@
 				type: "item"
 			}]
 			title: "工程基本单元 II"
-			x: 11.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["7A7C0A48248FA32B"]
-			description: [
-				"通过蓝图制作的零部件相对来说会比直接用工作台搓要廉价一些（如果有工作台配方"
-				"但是要消耗的材料类型是不会变的）"
-			]
-			hide_until_deps_complete: true
-			icon: "immersiveengineering:workbench"
-			id: "2E4B9CF9789B1AF1"
-			subtitle: "手搓零件！"
-			tasks: [
-				{
-					id: "24572984897793A8"
-					item: {
-						Count: 1
-						id: "immersiveengineering:blueprint"
-						tag: {
-							blueprint: "components"
-						}
-					}
-					match_nbt: true
-					type: "item"
-				}
-				{
-					id: "7A4DCA3255B08F1C"
-					item: "immersiveengineering:workbench"
-					type: "item"
-				}
-				{
-					id: "3CFBFA097D9EC3C2"
-					item: "immersiveengineering:component_iron"
-					type: "item"
-				}
-				{
-					id: "289E8506756C06E6"
-					item: "immersiveengineering:component_steel"
-					type: "item"
-				}
-			]
-			title: "蓝图与工作"
-			x: 9.0d
+			x: 12.0d
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"242C57AF7F6116E4"
-				"7A7C0A48248FA32B"
-			]
-			hide_until_deps_complete: true
-			icon: "immersiveengineering:wirecoil_copper"
-			id: "759F8BFB75CBF0B6"
-			subtitle: "就是电线（"
-			tasks: [
-				{
-					id: "06297AABD34B63D9"
-					item: {
-						Count: 1
-						id: "immersiveengineering:wirecutter"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "4FC869F367DEA450"
-					item: "immersiveengineering:wirecoil_copper"
-					type: "item"
-				}
-			]
-			title: "能源通路"
-			x: 11.0d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"759F8BFB75CBF0B6"
-				"5700B2AFCCAEE31A"
-				"04AAF6565C04DA94"
-			]
+			dependencies: ["5700B2AFCCAEE31A"]
 			description: [
-				"通过切割磁感线可以产生电流，这也是把create的应力转化为电力的唯一方式——至少目前这是唯一方式。"
-				"磁铁需要你自己去地下挖——以及自己升级你的磁铁来获得更高的发电功率，磁感应强度和发电量成正比）"
+				"通过转动对线圈的扰动，你终于获得了可以工业化使用的电流。"
+				"也许之后可以试试工业充能瓶子……？"
 			]
-			hide_until_deps_complete: true
 			id: "4B2D7C8A59593200"
 			subtitle: "初中物理知识"
-			tasks: [
-				{
-					id: "65A4A60A92995D8D"
-					item: "create_new_age:generator_coil"
-					type: "item"
-				}
-				{
-					id: "27BA4EE42BADE50D"
-					item: "create_new_age:carbon_brushes"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "33A6AE30D681BC7D"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
 			title: "切割磁感线"
-			x: 13.0d
-			y: -1.0d
+			x: 14.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
 				"4B2D7C8A59593200"
 				"250398995ECDA3CE"
-				"6F6699667400028E"
 			]
 			description: [
 				"&a【完成后解锁主线章节：4I 机械轰鸣】&r"
-				"注意：create：newage的电线因功能重复已被&c全部禁用&r！请通过&9沉浸工程&r的电路相关工具维系你的电路！"
+				"注意：&6Create Crafts \\& Additions&r的线路相关因为功能重复已被&c&l全部禁用&r&r！请通过&9沉浸工程&r的电路相关工具维系你的电路！"
 				""
 				"电光四射，&m电眼逼人&r"
 			]
@@ -414,18 +194,15 @@
 				value: 1000L
 			}]
 			title: "【终点】电火花"
-			x: 15.0d
-			y: -1.0d
+			x: 14.0d
+			y: 0.0d
 		}
 		{
-			dependencies: [
-				"242C57AF7F6116E4"
-				"4B2D7C8A59593200"
-			]
+			dependencies: ["4B2D7C8A59593200"]
 			description: [
-				"把它放在你的碳刷旁边就可以自动收集碳刷提供的能量了。下一章会介绍更多传输电力的方式。"
+				"把它放在发电机输出处就可以接收电力了。下一章会介绍更多传输电力的方式。"
 				"&n记得要点开这个方块选择对应任务哦。&r"
-				"当然其它任务也可以用这个来自动提交"
+				"当然其它任务也可以用这个来自动提交）"
 			]
 			icon: "ftbquests:screen_1"
 			id: "250398995ECDA3CE"
@@ -442,42 +219,17 @@
 				}
 			]
 			title: "给我个任务吧！"
-			x: 15.0d
-			y: -3.0d
+			x: 16.0d
+			y: 0.0d
 		}
 		{
-			dependencies: [
-				"242C57AF7F6116E4"
-				"4B2D7C8A59593200"
-			]
+			dependencies: ["77918DE5A223B3CD"]
 			description: [
-				"&m理论上这章以前你就应该在地下见过无数次这个东西了（）&r"
-				""
-				"发电必需品）"
-				"最符合物理的一集，正常的转转显然不可能直接发电，因此你需要磁力）"
-				"天然的磁铁是最弱的，所以你显然需要想办法加强——不管是用科技还是魔法）"
-				""
-				"你还可以使用激发器来将粗铁块磁化——但是前提是你至少得先有电才行！"
-			]
-			id: "6F6699667400028E"
-			subtitle: "看到磁感应强度了对吧）"
-			tasks: [{
-				id: "2D6FD4297BF580BC"
-				item: "create_new_age:magnetite_block"
-				type: "item"
-			}]
-			title: "物理人心动时刻"
-			x: 15.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["7A7C0A48248FA32B"]
-			description: [
-				"好吧，这其实应该才是第三个高炉，不过按顺序是第四个了。"
-				"它叫沉浸工程强化高炉，基本用途和粗制的那个没区别，只是自动化更加便捷，以及支持使用预热器加速。"
+				"这是最后一个高炉了。物如其名，强化高炉，基本用途和粗制的那个没区别，只是自动化更加便捷，以及支持使用预热器加速。"
+				"但只是加速，不能不用燃料……"
 			]
 			hide_until_deps_complete: true
-			icon: "immersiveengineering:blastbrick_reinforced"
+			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "598BB8D8FCB30B61"
 			rewards: [{
 				id: "742D112099E39F8C"
@@ -517,11 +269,11 @@
 				}
 			]
 			title: "搭建强化高炉"
-			x: 7.0d
-			y: -3.0d
+			x: 12.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["7A7C0A48248FA32B"]
+			dependencies: ["77918DE5A223B3CD"]
 			description: ["感受钢铁的厚重……"]
 			hide_until_deps_complete: true
 			id: "068A7A1F8FB54E98"
@@ -550,21 +302,20 @@
 				type: "item"
 			}]
 			title: "绝对防御！"
-			x: 7.0d
-			y: 1.0d
+			x: 10.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
 				"4EA98676CE0686BD"
-				"41831F6B01965541"
+				"635A0221044B2A2A"
 			]
 			description: [
-				"虽然用这个工程块也是（你后面会用到的）沉浸工程多方块机器的必要组成部分，因而看上去&3略显普通&r，但是由它为核心的机械动力&3虚空元件&r拥有&d最诱人&r的效果。"
+				"虽然这个工程块也是（你后面会用到的）沉浸工程多方块机器的必要组成部分，因而看上去&3略显普通&r，但是由它为核心的机械动力&3虚空元件&r拥有&d最诱人&r的效果。"
 				"这一工程块将会藉由量子管的同频共振，&2为机械添加超越时空的能力&r，让你的物品，液体，电力甚至应力传输无视空间阻隔！"
 				"但相应的，这显然&9不是纯机械可以达成的效果&r……"
 				""
 				"&o&a是的这玩意需要用泰拉钢才能做，所以推魔法线去吧&r&r"
-				"&o&6为什么碳刷需要这个？因为碳刷也需要魔法才能通电）&r&r"
 			]
 			id: "04AAF6565C04DA94"
 			shape: "gear"
@@ -575,8 +326,8 @@
 				item: "immersiveengineering:rs_engineering"
 				type: "item"
 			}]
-			x: 11.0d
-			y: 1.0d
+			x: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5B1818D5A1142A16"]
@@ -589,8 +340,8 @@
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -1.0d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["34F7983B4915B789"]
@@ -604,7 +355,6 @@
 				item: "createdeco:decal_skull"
 				type: "item"
 			}]
-			shape: "diamond"
 			subtitle: "真是一对大家伙"
 			tasks: [{
 				count: 2L
@@ -612,12 +362,12 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: 3.5d
-			y: -1.0d
+			x: -2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["504E6502A789DABF"]
-			hide_until_deps_complete: true
+			description: ["这台机器只能输入电力来产生应力，但你可以进行一些小小的&b“魔改”&r）"]
 			id: "0728C35476FC5EE2"
 			rewards: [{
 				id: "3B7DE4AC74138629"
@@ -626,81 +376,42 @@
 			}]
 			shape: "diamond"
 			subtitle: "当然也可以反着来！"
-			tasks: [
-				{
-					id: "67BC95A36E14545F"
-					item: "create_new_age:basic_motor"
-					type: "item"
-				}
-				{
-					id: "2B2613B6C28332F6"
-					item: "create_new_age:advanced_motor"
-					type: "item"
-				}
-				{
-					id: "40C5ADB9C69907CE"
-					item: "create_new_age:reinforced_motor"
-					type: "item"
-				}
-			]
-			title: "电力转应力"
-			x: 17.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["5700B2AFCCAEE31A"]
-			description: [
-				"如果你此时已经击败了末影龙并获取了鞘翅……你就可以合成这个强大的喷气背包。"
-				"使用方法很简单：用应力为它充气，就像给铜背罐充气一样；装备在背部饰品槽位，然后——尽情飞行吧！"
-				""
-				"&o&m另有下界合金版本，你在后面可能能用得上（&r&r"
-			]
-			hide_until_deps_complete: true
-			id: "61E609CC8510BDD1"
-			shape: "diamond"
-			subtitle: "让你飞起来——"
 			tasks: [{
-				id: "619FFB4B98593F62"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"cold_sweat:item_insulation": {
-							Insulation: [ ]
-						}
-					}
-					id: "create_jetpack:jetpack"
-					tag: {
-						Air: 900
-					}
-				}
+				id: "6F762E2D5EF09161"
+				item: "createaddition:electric_motor"
 				type: "item"
 			}]
-			x: 13.0d
-			y: -3.0d
+			title: "电力转应力"
+			x: 14.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["7A7C0A48248FA32B"]
+			dependencies: ["429B458F0AADA253"]
 			description: [
-				"它和它的同伴们会隔着遥远的距离进行共振……"
+				"加入末影与幽匿物质，以及强大生物的残片，你便会得到……"
+				""
+				"&1虚空钢&r。它和它的同伴们会隔着遥远的距离进行共振……"
 				"但在你没加工前，它们只是能共振而已。"
 				""
 				"提示：你需要前往&9深暗&r，寻找&9回响碎片&r才能完成这一配方。你可以使用&2自然指南针&r！"
-				"觉得在监守者面前翻找回响碎片太危险？你可以尝试对那里的幽匿块使用&5紫水晶碎片&r来概率获取回响碎片……这一流程也是&6可以自动化&r的。当然，如何自动生成幽匿块……就要看你的游戏理解了。"
+				"觉得在监守者面前翻找回响碎片太危险？你可以尝试对那里的幽匿块使用&5紫水晶碎片&r来概率获取回响碎片……这一流程也是&6可以自动化&r的（提示：机械手）。当然，如何自动生成幽匿块……就要看你的游戏理解了。"
 			]
-			hide_until_deps_complete: true
 			id: "41831F6B01965541"
-			subtitle: "虚空共振"
+			subtitle: "你为什么要召唤我——"
 			tasks: [{
 				id: "7635EDACF57EC534"
 				item: "createutilities:void_steel_ingot"
 				type: "item"
 			}]
-			title: "虚空钢锭"
-			x: 9.0d
-			y: 0.0d
+			title: "虚空共振"
+			x: 4.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["41831F6B01965541"]
+			dependencies: [
+				"41831F6B01965541"
+				"40129F9AE9DCE1EF"
+			]
 			description: [
 				"通过这一框架，你可以创造突破空间限制的机械组，比如虚空传递应力的马达组……"
 				"但很显然这是个半成品。"
@@ -714,8 +425,8 @@
 				item: "createutilities:void_casing"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 1.0d
+			x: 6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["04AAF6565C04DA94"]
@@ -728,7 +439,6 @@
 				""
 				"&m&o&b这不比pipez好用（笑&r&r&r"
 			]
-			hide_until_deps_complete: true
 			icon: "minecraft:ender_eye"
 			id: "253CE41C3E000533"
 			shape: "diamond"
@@ -756,8 +466,575 @@
 				}
 			]
 			title: "虚空传输！"
-			x: 13.0d
-			y: 1.0d
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["146261DF72C96BF4"]
+			description: [
+				"获得成品钢之前，显然你需要先从铁粉开始——方便融化，也方便调和。"
+				"铁的硬度高很多，不会轻易被石磨粉碎，所以这也是需要粉碎轮的缘故了。"
+			]
+			id: "2EB6991862E12244"
+			subtitle: "准备炼钢"
+			tasks: [{
+				id: "7349570EE748E3CC"
+				item: "kubejs:iron_ingot_dust"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2EB6991862E12244"]
+			description: [
+				"将铁粉进行融化……"
+				"熔融铁显然是不能制作钢铁的，所以还需要一些额外的步骤。"
+				"然而它和熔岩一样热，所以你也可以用它来加热自己的房间）"
+			]
+			id: "17263B7F0163FEA4"
+			subtitle: "另一种熔岩"
+			tasks: [{
+				id: "4AB5398A6D8A1634"
+				item: "kubejs:molten_iron_bucket"
+				type: "item"
+			}]
+			title: "打铁花"
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"14A2B5756D42DD23"
+				"5FBE0E83E329AC46"
+			]
+			description: [
+				"处理混合物最好的办法当然是离心！"
+				"通过离心机，熔融钢与炉渣将被分离，纯净的钢水将在你面前闪耀工业的光芒。"
+				"然而它仍然很烫。"
+			]
+			id: "1A5AC0B8CD25635E"
+			subtitle: "终于……"
+			tasks: [{
+				id: "5D6A6DD4A2B1F6B9"
+				item: "kubejs:molten_steel_bucket"
+				type: "item"
+			}]
+			title: "热门话题"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A5AC0B8CD25635E"]
+			description: [
+				"你获得了一份看似很混乱的原材料，而这样状态下的钢坯显然是易于扰动和处理的。"
+				"那么你希望它变成什么呢？"
+			]
+			id: "429B458F0AADA253"
+			subtitle: "万用材料"
+			tasks: [{
+				id: "0F4D5E0A7AA72402"
+				item: "kubejs:unformed_steel_ingot"
+				type: "item"
+			}]
+			title: "分岔路口"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17263B7F0163FEA4"]
+			description: [
+				"将足量的石灰岩配合火元素核心压入铁水中，你就获得了炉渣与钢水的混合产物……"
+				"火元素核心不会消耗。"
+				""
+				"&o&6这就是魔法的烈焰之力！&r&r"
+				"&o&e如果石灰岩不够，试试把刷石机的水换成蜂蜜。&r&r"
+			]
+			id: "5FBE0E83E329AC46"
+			subtitle: "是魔法，他们用了魔法"
+			tasks: [{
+				id: "47AC67C1B30BDF4B"
+				item: "kubejs:molten_slag_bucket"
+				type: "item"
+			}]
+			title: "融为一炉"
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7A7C0A48248FA32B"]
+			description: [
+				"显然，钢太硬了，你无法直接用辊压机将它压成板，这行不通。"
+				"你需要一些更大更暴力的设备……当然，这种设备也有一些额外的自动化功能。"
+			]
+			icon: "vintageimprovements:helve_hammer"
+			id: "40129F9AE9DCE1EF"
+			subtitle: "大力出奇迹，兄弟"
+			tasks: [
+				{
+					id: "2F2AD8CCB0B007F8"
+					item: "vintageimprovements:helve_hammer"
+					type: "item"
+				}
+				{
+					id: "266B7071E99DD4AE"
+					item: "immersiveengineering:plate_steel"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7F70BCE1EBD2C73E"]
+			description: [
+				"将钢铁弹簧与蔚蓝维度的一些矿物结合，就可以形成性能极佳的零件。"
+				"尽管这可以直接通过工作台制作，但仍然略显浪费，也许有更好的办法？"
+			]
+			icon: "immersiveengineering:component_steel"
+			id: "5184969E829D39FA"
+			subtitle: "起于微末"
+			tasks: [
+				{
+					id: "16005BAE7C2D42BC"
+					item: "immersiveengineering:component_steel"
+					type: "item"
+				}
+				{
+					id: "2FAD8CA91F8FF74E"
+					item: "immersiveengineering:component_iron"
+					type: "item"
+				}
+			]
+			title: "工业基础"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["40129F9AE9DCE1EF"]
+			description: ["这就是只有货真价实的大锤才能干的事情了）"]
+			id: "77918DE5A223B3CD"
+			subtitle: "80！80！"
+			tasks: [{
+				id: "2C335901DD5881AE"
+				item: "immersiveengineering:plate_steel"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"77918DE5A223B3CD"
+				"5184969E829D39FA"
+			]
+			description: [
+				"通过简易的雷电填充，你用魔法获得了一点点操纵电的力量……"
+				"使用泰拉钢板还能制作另一种电容器……泰拉钢还有这功能？"
+				""
+				"&a你可以在铁魔法的结构战利品中找到雷电瓶！&r"
+			]
+			icon: "kubejs:leyden_jar"
+			id: "786828EE220E93A3"
+			subtitle: "科学使用魔法"
+			tasks: [
+				{
+					id: "4F7AB4E750229D70"
+					item: "kubejs:leyden_jar"
+					type: "item"
+				}
+				{
+					id: "39A6EA67ADDB9233"
+					item: "createaddition:capacitor"
+					type: "item"
+				}
+			]
+			title: "简单电容器"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["34F7983B4915B789"]
+			description: [
+				"工业化处理某些材料的时候，离心是一种相当有效的操作。"
+				"当然你也可以把这作为一种娱乐设施然后自己坐进去（"
+				""
+				"&o小Bug：使用离心机的配方的输入物品在JEI中不正确地被视为了输出物品。必须按R（或左键点击）才能查找某个物品用在离心机中的配方。&r"
+			]
+			icon: "vintageimprovements:centrifuge"
+			id: "14A2B5756D42DD23"
+			subtitle: "原始人的力大砖飞"
+			tasks: [
+				{
+					id: "2DED066F07B9F3DE"
+					item: "vintageimprovements:centrifuge"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6FF25CA2462DC357"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77918DE5A223B3CD"]
+			description: [
+				"全套的钢铁护具和工具将让你的生存轻松一些……大概吧。"
+				""
+				"&o&b至少物理防御是足够了）&r&r"
+			]
+			icon: {
+				Count: 1
+				id: "immersiveengineering:armor_steel_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3C1BDE999ED57ABD"
+			rewards: [{
+				id: "025FBAA900C1E6B6"
+				item: "immersiveengineering:storage_steel"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "更上一层"
+			tasks: [
+				{
+					id: "12EF2686682DE8FA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "immersiveengineering:armor_steel_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7AA83934E84229EF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "immersiveengineering:armor_steel_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4FB40CB24F3D973D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "immersiveengineering:armor_steel_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5E70D716C2D440E4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "immersiveengineering:armor_steel_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7B9831B93C41139A"
+					item: {
+						Count: 1
+						id: "immersiveengineering:sword_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7D2512415EA1BCAB"
+					item: {
+						Count: 1
+						id: "immersiveengineering:pickaxe_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "钢铁意志"
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5700B2AFCCAEE31A"]
+			description: [
+				"在制作模具的过程中，车床是必不可少的。"
+				"但相应的，你需要一定的技术来操作它，不然你根本车不出你想要的模板）"
+			]
+			icon: "vintageimprovements:lathe"
+			id: "56229BD92474D24C"
+			subtitle: "这是之后要用到的神奇妙妙工具.jpg"
+			tasks: [
+				{
+					id: "31BF7C74CB552026"
+					item: "vintageimprovements:lathe"
+					type: "item"
+				}
+				{
+					id: "25F5FE77A2C2A122"
+					item: "kubejs:mold_blank_steel"
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["77918DE5A223B3CD"]
+			description: [
+				"在大型机械中，小弹簧的小打小闹显然无法满足需求了，所以需要用钢来制作更加强力的弹簧结构。"
+				""
+				"&o&b很可惜的是它并不能把你弹飞（真的可惜吗？&r&r"
+			]
+			id: "7F70BCE1EBD2C73E"
+			subtitle: "更加强大"
+			tasks: [{
+				id: "50F72EAE8EBF61C2"
+				item: "kubejs:advanced_spring_set"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5B1818D5A1142A16"]
+			description: ["虽然实际上用得上这种工业加工的只有玫瑰石英和紫水晶……但这下不用拿着砂纸手搓了。"]
+			id: "1FB6A2B277331552"
+			subtitle: "无尽砂纸"
+			tasks: [{
+				id: "07BE81872FF465D3"
+				item: "vintageimprovements:belt_grinder"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1FB6A2B277331552"]
+			description: ["作为以脆弱出名的水晶，在打磨时需要严格控制转速……否则你将白费力气。"]
+			id: "635A0221044B2A2A"
+			subtitle: "小心点磨"
+			tasks: [{
+				id: "6F499C4253A31237"
+				item: "createutilities:polished_amethyst"
+				type: "item"
+			}]
+			title: "易碎品"
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"5184969E829D39FA"
+				"786828EE220E93A3"
+			]
+			description: [
+				"从两种简单的电容器和一些零件上汲取灵感，你学会了更高级的机械知识！现在你可以以更低的成本制作机器零件了！"
+				"在工程师装配台上放置蓝图就可以把它转化为一个简单的工作台。"
+				"更多的蓝图也会在后续解锁使用。"
+			]
+			icon: "immersiveengineering:workbench"
+			id: "1F915E94D0E8AA15"
+			subtitle: "更划算的装配"
+			tasks: [
+				{
+					id: "68AA813339E0F4FB"
+					item: "immersiveengineering:workbench"
+					type: "item"
+				}
+				{
+					id: "5DF36818BE9BFDBD"
+					item: {
+						Count: 1
+						id: "immersiveengineering:blueprint"
+						tag: {
+							blueprint: "components"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"14A2B5756D42DD23"
+				"750FAE62628DB185"
+			]
+			description: [
+				"焦化硫显然并不是一种合格的工业硫磺，所以你需要通过将其&6组合进下界火药&r后&c配合红石酸&r进行离心才能获得足够纯净的硫磺。"
+				"如果你没有离心机，那最好先准备一台足够大的动力合成器。"
+			]
+			icon: "vintageimprovements:sulfur"
+			id: "5F4027766CCD6DEC"
+			subtitle: "离心提纯"
+			tasks: [
+				{
+					id: "67C6C87C760E1D4D"
+					item: "vintageimprovements:sulfur_chunk"
+					type: "item"
+				}
+				{
+					id: "15C1FB47B85BFDB7"
+					item: "vintageimprovements:sulfur"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5B1818D5A1142A16"]
+			description: [
+				"除了用于工业之外，用于弹药是一条显然的途径。"
+				"可以生产火箭弹以使用一些有趣的枪械了（笑"
+			]
+			id: "750FAE62628DB185"
+			subtitle: "剧烈燃烧"
+			tasks: [{
+				id: "536BCD6EE727CC4F"
+				item: "scguns:sheol"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5F4027766CCD6DEC"]
+			description: [
+				"这确实可以对生物造成伤害……"
+				"*浓硫酸会让铁钝化，所以确实可以装在铁桶里，不要再问了（）"
+			]
+			id: "75DA5648FA7A43C2"
+			subtitle: "这不是化学课"
+			tasks: [{
+				id: "6178CE9CCE34124C"
+				item: "vintageimprovements:sulfuric_acid_bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"1F915E94D0E8AA15"
+				"3FCF15CEE440DFC4"
+				"5184969E829D39FA"
+			]
+			description: ["距离你可以在机器中操纵电力已经很近了，虽然目前只有小电池，但足够多的电池组合起来也能够供应相应的机械。"]
+			id: "6DCA03A4B843B686"
+			subtitle: "以小见大"
+			tasks: [{
+				id: "3B57B147ADD29839"
+				item: "kubejs:battery_component"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["75DA5648FA7A43C2"]
+			description: ["铅酸蓄电池当然需要铅酸构件）"]
+			id: "3FCF15CEE440DFC4"
+			subtitle: "化学生电"
+			tasks: [{
+				id: "1B4CF7F614A21A21"
+				item: "vintageimprovements:redstone_module"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"56229BD92474D24C"
+				"5700B2AFCCAEE31A"
+			]
+			icon: "vintageimprovements:curving_press"
+			id: "123C1ECCE0F09AC1"
+			tasks: [
+				{
+					id: "6EA298E9E586CD0C"
+					item: "vintageimprovements:curving_press"
+					type: "item"
+				}
+				{
+					id: "7E05B659E655B375"
+					item: {
+						Count: 1
+						id: "vintageimprovements:convex_curving_head"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["429B458F0AADA253"]
+			description: ["黄铜和钢的特种合金"]
+			icon: "scguns:treated_brass_ingot"
+			id: "2B5473A35DA1DFB2"
+			shape: "diamond"
+			subtitle: "并非小状元"
+			tasks: [
+				{
+					id: "0761A80834171C19"
+					item: "scguns:treated_brass_blend"
+					type: "item"
+				}
+				{
+					id: "1CACCDDDFF1DBF6F"
+					item: "scguns:treated_brass_ingot"
+					type: "item"
+				}
+			]
+			title: "黄钢？"
+			x: 4.0d
+			y: -2.0d
 		}
 	]
 	subtitle: ["Hearts of Steel"]

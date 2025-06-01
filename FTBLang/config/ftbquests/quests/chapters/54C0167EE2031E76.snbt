@@ -2,6 +2,7 @@
 	autofocus_id: "1A4352FB579FF77E"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
+	disable_toast: true
 	filename: "54C0167EE2031E76"
 	group: ""
 	icon: "kubejs:logistical_engineering"
@@ -12,9 +13,9 @@
 		rotation: 0.0d
 		width: 17.066666666666666d
 		x: 0.0d
-		y: -9.5d
+		y: -14.0d
 	}]
-	order_index: 5
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -36,7 +37,7 @@
 			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest1.subtitle}"
 			tasks: [{
 				id: "3A7A3E27A39EFBE9"
-				title: "{ftbquests.chapter.54C0167EE2031E76.quest1.task.title1}"
+				title: "{ftbquests.chapter.54C0167EE2031E76.quest1.task_4213748741328272361.title}"
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.54C0167EE2031E76.quest1.title}"
@@ -53,7 +54,7 @@
 				item: "minecraft:cobblestone"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 2.0d
 			y: -4.0d
 		}
 		{
@@ -65,8 +66,8 @@
 				item: "minecraft:gravel"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -2.0d
+			x: 8.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4247C42D1F36561B"]
@@ -77,7 +78,7 @@
 				item: "minecraft:sand"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
@@ -93,8 +94,8 @@
 				item: "minecraft:soul_sand"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -119,12 +120,12 @@
 				}
 				{
 					id: "456E46E57F28913A"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest6.task.title1}"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest6.task_5003014187550019898.title}"
 					type: "checkmark"
 				}
 			]
 			title: "{ftbquests.chapter.54C0167EE2031E76.quest6.title}"
-			x: 4.0d
+			x: 8.0d
 			y: 4.0d
 		}
 		{
@@ -139,8 +140,8 @@
 				item: "minecraft:dirt"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -2.0d
+			x: 2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2CA163F35B71E735"]
@@ -151,7 +152,7 @@
 				item: "minecraft:mud"
 				type: "item"
 			}]
-			x: -4.0d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -163,7 +164,7 @@
 				item: "minecraft:packed_mud"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
@@ -184,7 +185,7 @@
 				}
 				{
 					id: "0695C772ED653F27"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest10.task.title1}"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest10.task_474504632180490023.title}"
 					type: "checkmark"
 				}
 			]
@@ -215,12 +216,12 @@
 				}
 				{
 					id: "574DCCD325F4EF94"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest11.task.title1}"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest11.task_6290909461753425812.title}"
 					type: "checkmark"
 				}
 			]
 			title: "{ftbquests.chapter.54C0167EE2031E76.quest11.title}"
-			x: -2.0d
+			x: 2.0d
 			y: 2.0d
 		}
 		{
@@ -232,7 +233,7 @@
 				item: "botania:livingrock"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 8.0d
 			y: -6.0d
 		}
 		{
@@ -254,12 +255,12 @@
 				}
 				{
 					id: "31E44BBE37CB9D3A"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest13.task.title1}"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest13.task_3595081682900458810.title}"
 					type: "checkmark"
 				}
 			]
 			title: "{ftbquests.chapter.54C0167EE2031E76.quest13.title}"
-			x: 6.0d
+			x: 12.0d
 			y: -6.0d
 		}
 		{
@@ -271,72 +272,19 @@
 				item: "minecraft:stone"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 4.0d
 			y: -6.0d
-		}
-		{
-			dependencies: ["1A4352FB579FF77E"]
-			icon: "bloodmagic:ingot_hellforged"
-			id: "6C5FEFEFE141126D"
-			rewards: [{
-				id: "0DAD4AE1E6C594A1"
-				type: "xp"
-				xp: 3
-			}]
-			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest15.subtitle}"
-			tasks: [
-				{
-					id: "00F56796BDB47F53"
-					item: "bloodmagic:dungeon_metal"
-					type: "item"
-				}
-				{
-					id: "3A35E72A550212E9"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest15.task.title1}"
-					type: "checkmark"
-				}
-			]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest15.title}"
-			x: -2.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["6E3F0DA8745CD62F"]
-			icon: "minecraft:diamond"
-			id: "6E704D2B9075758E"
-			rewards: [{
-				id: "127CB03D63E8A8CB"
-				type: "xp"
-				xp: 3
-			}]
-			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest16.subtitle}"
-			tasks: [
-				{
-					id: "6B5FE951073C908E"
-					item: "minecraft:diamond"
-					type: "item"
-				}
-				{
-					id: "2D1E13CA146362F7"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest16.task.title1}"
-					type: "checkmark"
-				}
-			]
-			x: 6.0d
-			y: 2.0d
 		}
 		{
 			dependencies: ["435DA157EC54D3EA"]
 			id: "30CAE7CB4F12B7B7"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest17.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest15.subtitle}"
 			tasks: [{
 				id: "3BAA9C14B30EF5AC"
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 4.0d
 			y: 2.0d
 		}
 		{
@@ -349,7 +297,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest18.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest16.subtitle}"
 			tasks: [
 				{
 					id: "1ED1B578E85160EB"
@@ -358,41 +306,41 @@
 				}
 				{
 					id: "18FE47D567D9B8DD"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest18.task.title1}"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest16.task_1800955882890705117.title}"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest18.title}"
-			x: -2.0d
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest16.title}"
+			x: 4.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["74581D474C09D62C"]
 			id: "07EDB8930476DBC7"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest19.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest17.subtitle}"
 			tasks: [{
 				id: "12E66CBD791D7FA9"
 				item: "minecraft:magma_block"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -4.0d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["07EDB8930476DBC7"]
 			id: "1E247B452EF05459"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest20.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest18.subtitle}"
 			tasks: [{
 				id: "6D7D48CBB03108D4"
 				item: "minecraft:cobbled_deepslate"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -4.0d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1E247B452EF05459"]
-			icon: "immersiveengineering:ingot_silver"
+			icon: "oreganized:silver_ingot"
 			id: "4DE040C127C62C16"
 			rewards: [{
 				id: "19B3A726E63BE640"
@@ -400,49 +348,22 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest21.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest19.subtitle}"
 			tasks: [
 				{
-					id: "2BD9EAA81A6D11BD"
-					item: "immersiveengineering:nugget_silver"
+					id: "570529996B0B5467"
+					item: "oreganized:silver_nugget"
 					type: "item"
 				}
 				{
-					id: "7008E16B1F2E23EF"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest21.task.title1}"
+					id: "29E7552C96337A97"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest19.task_3019475725162085015.title}"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest21.title}"
-			x: -6.0d
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest19.title}"
+			x: -4.0d
 			y: -2.0d
-		}
-		{
-			dependencies: ["1E247B452EF05459"]
-			icon: "immersiveengineering:ingot_lead"
-			id: "2D7AA0BD8291858A"
-			rewards: [{
-				id: "6C120BDF5B920F3C"
-				type: "xp"
-				xp: 3
-			}]
-			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest22.subtitle}"
-			tasks: [
-				{
-					id: "585EF4B352F5CE64"
-					item: "immersiveengineering:nugget_lead"
-					type: "item"
-				}
-				{
-					id: "6F33B3D13D2D7E97"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest22.task.title1}"
-					type: "checkmark"
-				}
-			]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest22.title}"
-			x: -6.0d
-			y: -6.0d
 		}
 		{
 			dependencies: ["4247C42D1F36561B"]
@@ -454,7 +375,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest23.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest20.subtitle}"
 			tasks: [
 				{
 					id: "32961D56557F71B8"
@@ -463,28 +384,16 @@
 				}
 				{
 					id: "365D7E0F8268C854"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest23.task.title1}"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest20.task_3917425855959713876.title}"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest23.title}"
-			x: 2.0d
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest20.title}"
+			x: 8.0d
 			y: -2.0d
 		}
 		{
-			dependencies: ["74581D474C09D62C"]
-			id: "640E68E50644C51D"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest24.subtitle}"
-			tasks: [{
-				id: "3F22A9C79A5480BA"
-				item: "minecraft:blackstone"
-				type: "item"
-			}]
-			x: 6.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["640E68E50644C51D"]
+			dependencies: ["60B63A0708C8CD25"]
 			icon: "immersiveengineering:ingot_uranium"
 			id: "757C9CEEDC437271"
 			rewards: [{
@@ -493,7 +402,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest25.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest21.subtitle}"
 			tasks: [
 				{
 					id: "2975E6BE0256C762"
@@ -502,25 +411,25 @@
 				}
 				{
 					id: "3FD46B5FF4EB5BAD"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest25.task.title1}"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest21.task_4599419179327249325.title}"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest25.title}"
-			x: 10.0d
-			y: -4.0d
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest21.title}"
+			x: 16.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["4247C42D1F36561B"]
 			id: "2A4061F6354FD43D"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest26.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest22.subtitle}"
 			tasks: [{
 				id: "7A856C843F2409A3"
 				item: "minecraft:flint"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 0.0d
+			x: 14.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["2A4061F6354FD43D"]
@@ -532,7 +441,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest27.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest23.subtitle}"
 			tasks: [
 				{
 					id: "729582387D3E6072"
@@ -541,13 +450,13 @@
 				}
 				{
 					id: "5E5A9444665C9EE2"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest27.task.title1}"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest23.task_6798909608965218018.title}"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest27.title}"
-			x: 4.0d
-			y: 0.0d
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest23.title}"
+			x: 16.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["3008F198E9F12E38"]
@@ -559,26 +468,26 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest28.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest24.subtitle}"
 			tasks: [
 				{
 					id: "38E710AD9B857CE0"
 					item: "undergarden:cloggrum_ingot"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest28.task.title1}"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest24.task_4100264323568729312.title}"
 					type: "item"
 				}
 				{
 					id: "134DBAC709B40A16"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest28.task.title2}"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest24.task_1390973223951403542.title}"
 					type: "checkmark"
 				}
 			]
-			x: -10.0d
+			x: -12.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["745F05143DD3D683"]
-			icon: "tfmg:aluminum_ingot"
+			icon: "immersiveengineering:ingot_aluminum"
 			id: "3ED6E1789C0B7C55"
 			rewards: [{
 				id: "13855F1646EDF90B"
@@ -586,39 +495,39 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest29.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest25.subtitle}"
 			tasks: [{
 				id: "4E975F93AD98886A"
 				item: "kubejs:crushed_raw_bauxite"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest29.title}"
-			x: -4.0d
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest25.title}"
+			x: -2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["3008F198E9F12E38"]
 			id: "0ED88CF931E3698F"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest30.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest26.subtitle}"
 			tasks: [{
-				id: "74DC00D591053690"
-				item: "tfmg:steel_ingot"
+				id: "73D8AD3772DE82AB"
+				item: "immersiveengineering:ingot_steel"
 				type: "item"
 			}]
-			x: -6.0d
+			x: -8.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["0ED88CF931E3698F"]
 			id: "0AD582715391DEE4"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest31.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest27.subtitle}"
 			tasks: [{
 				id: "24878E431E5DDBA3"
 				item: "immersiveengineering:dust_steel"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 4.0d
+			x: -6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0AD582715391DEE4"]
@@ -630,7 +539,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest32.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest28.subtitle}"
 			tasks: [
 				{
 					id: "5CD70A854663B05F"
@@ -639,17 +548,17 @@
 				}
 				{
 					id: "0F21120ED2644984"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest32.task.title1}"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest28.task_1090172439669000580.title}"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest32.title}"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest28.title}"
 			x: -4.0d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["640E68E50644C51D"]
-			icon: "blue_skies:pyrope_gem"
+			dependencies: ["1A4352FB579FF77E"]
+			icon: "kubejs:earth_elemental_core"
 			id: "28157223D840F237"
 			rewards: [{
 				id: "078B078637BB6BE9"
@@ -657,7 +566,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest33.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest29.subtitle}"
 			tasks: [
 				{
 					id: "4AF1595DBC9F9ACB"
@@ -665,94 +574,59 @@
 					type: "item"
 				}
 				{
-					id: "53B1FCA0FD6E9793"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest33.task.title1}"
-					type: "checkmark"
+					id: "0978E779F6A3A9B2"
+					item: "minecraft:deepslate_emerald_ore"
+					type: "item"
 				}
-			]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest33.title}"
-			x: 4.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["640E68E50644C51D"]
-			icon: "blue_skies:diopside_gem"
-			id: "0A9BEAAC5CF53160"
-			rewards: [{
-				id: "0E51840148E1C18D"
-				type: "xp"
-				xp: 3
-			}]
-			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest34.subtitle}"
-			tasks: [
 				{
-					id: "159CFE28A5FAD6D6"
+					id: "5A4CE77A1A20B13A"
+					item: "blue_skies:everdawn_charoite_ore"
+					type: "item"
+				}
+				{
+					id: "126212A0A0624BBC"
+					item: "blue_skies:sunstone_block"
+					type: "item"
+				}
+				{
+					id: "08E6AF71C2F4D593"
+					item: "blue_skies:moonstone_block"
+					type: "item"
+				}
+				{
+					id: "6A320481EAB09EC5"
+					item: "blue_skies:raw_ventium_block"
+					type: "item"
+				}
+				{
+					id: "34D62E9D4DB8FD95"
+					item: "blue_skies:everdawn_aquite_ore"
+					type: "item"
+				}
+				{
+					id: "0D2464F77F107BC6"
 					item: "blue_skies:everdawn_diopside_ore"
 					type: "item"
 				}
 				{
-					id: "45644661A4EEE0D9"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest34.task.title1}"
-					type: "checkmark"
-				}
-			]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest34.title}"
-			x: 8.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["6E704D2B9075758E"]
-			icon: "blue_skies:charoite"
-			id: "0BA74E3F0231A1A0"
-			rewards: [{
-				id: "69EDF17AB7C74D28"
-				type: "xp"
-				xp: 3
-			}]
-			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest35.subtitle}"
-			tasks: [
-				{
-					id: "11F794074B0BAE17"
-					item: "blue_skies:charoite"
+					id: "2C3F28CB17EA9D8B"
+					item: "minecraft:deepslate_diamond_ore"
 					type: "item"
 				}
 				{
-					id: "5C1DA73E7A6B9043"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest35.task.title1}"
-					type: "checkmark"
-				}
-			]
-			x: 8.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["640E68E50644C51D"]
-			icon: "blue_skies:moonstone_shard"
-			id: "66A2127A9B53A5FB"
-			rewards: [{
-				id: "191F051C21040057"
-				type: "xp"
-				xp: 3
-			}]
-			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest36.subtitle}"
-			tasks: [
-				{
-					id: "2B01A2AFC5580EB0"
-					item: "blue_skies:everdawn_moonstone_ore"
+					id: "7FB2EC5817A97374"
+					item: "goety:jade_block"
 					type: "item"
 				}
 				{
-					id: "20A241A4B644AC90"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest36.task.title1}"
+					id: "089ADBF39FE74EB4"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest29.task_620049738123136692.title}"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest36.title}"
-			x: 6.0d
-			y: -2.0d
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest29.title}"
+			x: -2.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["3008F198E9F12E38"]
@@ -764,7 +638,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest37.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest30.subtitle}"
 			tasks: [
 				{
 					id: "6B52DA9A635048E1"
@@ -773,12 +647,12 @@
 				}
 				{
 					id: "78A3E314CA0787FA"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest37.task.title1}"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest30.task_8693041384183531514.title}"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest37.title}"
-			x: -10.0d
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest30.title}"
+			x: -12.0d
 			y: -2.0d
 		}
 		{
@@ -791,21 +665,21 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest38.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest31.subtitle}"
 			tasks: [
 				{
-					id: "5CAA0F8A82C43D33"
-					item: "create_blue_skies_compat:crushed_horizonite_ore"
+					id: "6ED7962344DB3DCB"
+					item: "blue_skies:horizonite_block"
 					type: "item"
 				}
 				{
-					id: "1EEEE03BCE7DC577"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest38.task.title1}"
+					id: "5F6B0595AF094614"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest31.task_6875595396556080660.title}"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest38.title}"
-			x: -10.0d
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest31.title}"
+			x: -12.0d
 			y: 2.0d
 		}
 		{
@@ -818,20 +692,21 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest39.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest32.subtitle}"
 			tasks: [
 				{
 					id: "1E2878991CE99E15"
-					item: "blue_skies:falsite_ingot"
+					item: "blue_skies:falsite_block"
 					type: "item"
 				}
 				{
 					id: "238002CB7838E027"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest39.task.title1}"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest32.task_2558047661265051687.title}"
 					type: "checkmark"
 				}
 			]
-			x: -10.0d
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest32.title}"
+			x: -12.0d
 			y: 4.0d
 		}
 		{
@@ -844,7 +719,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest40.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest33.subtitle}"
 			tasks: [
 				{
 					id: "1BBD1568D3EC0E71"
@@ -853,12 +728,12 @@
 				}
 				{
 					id: "17FD465CE1BE610D"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest40.task.title1}"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest33.task_1728615196718424333.title}"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest40.title}"
-			x: -10.0d
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest33.title}"
+			x: -12.0d
 			y: 0.0d
 		}
 		{
@@ -871,7 +746,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest41.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest34.subtitle}"
 			tasks: [
 				{
 					id: "6265CC065CFCE2FB"
@@ -880,11 +755,11 @@
 				}
 				{
 					id: "784385066FA211DA"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest41.task.title1}"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest34.task_8665916370680156634.title}"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest41.title}"
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest34.title}"
 			x: 2.0d
 			y: -8.0d
 		}
@@ -898,7 +773,7 @@
 				xp: 3
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest42.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest35.subtitle}"
 			tasks: [
 				{
 					id: "5AE2230AD34421C4"
@@ -907,19 +782,23 @@
 				}
 				{
 					id: "3E3811D7B27C46A2"
-					title: "{ftbquests.chapter.54C0167EE2031E76.quest42.task.title1}"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest35.task_4483353047157458594.title}"
 					type: "checkmark"
 				}
 			]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest42.title}"
-			x: 4.0d
-			y: 2.0d
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest35.title}"
+			x: 10.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["74581D474C09D62C"]
+			dependencies: [
+				"74581D474C09D62C"
+				"23B40C86CEE1A8EB"
+				"1A4352FB579FF77E"
+			]
 			description: [
-				"{ftbquests.chapter.54C0167EE2031E76.quest43.description1}"
-				"{ftbquests.chapter.54C0167EE2031E76.quest43.description2}"
+				"{ftbquests.chapter.54C0167EE2031E76.quest36.description1}"
+				"{ftbquests.chapter.54C0167EE2031E76.quest36.description2}"
 			]
 			id: "7804D40DE4CE8B4D"
 			rewards: [
@@ -935,41 +814,700 @@
 				}
 			]
 			shape: "gear"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest43.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest36.subtitle}"
 			tasks: [{
-				id: "2599993E98962C59"
-				item: "create_mechanical_extruder:mechanical_extruder"
+				id: "2ABAEB79AB0C4B2D"
+				item: "create:mechanical_drill"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.54C0167EE2031E76.quest43.title}"
-			x: -2.0d
-			y: -6.0d
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest36.title}"
+			x: 0.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["30CAE7CB4F12B7B7"]
 			id: "1F4E96EC3B77F15A"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest44.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest37.subtitle}"
 			tasks: [{
 				id: "373737468DA9CDEB"
 				item: "minecraft:terracotta"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 4.0d
+			x: 2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1F4E96EC3B77F15A"]
 			id: "5012BDA254DF42C1"
-			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest45.subtitle}"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest38.subtitle}"
 			tasks: [{
 				id: "29DD0B09BBAF96D5"
 				item: "minecraft:red_sand"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"2A4061F6354FD43D"
+				"5012BDA254DF42C1"
+				"31EEBF235BB74190"
+			]
+			id: "60B63A0708C8CD25"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest39.subtitle}"
+			tasks: [{
+				id: "56B47155D9B6DDBB"
+				item: "minecraft:granite"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["40717610A2317CCE"]
+			id: "31EEBF235BB74190"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest40.subtitle}"
+			tasks: [{
+				id: "1DF7603A6E7F462B"
+				item: "minecraft:diorite"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["31EEBF235BB74190"]
+			icon: "oreganized:lead_ingot"
+			id: "303305FA14F041C1"
+			rewards: [{
+				id: "6DB9B4D0CB780CD6"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest41.subtitle}"
+			tasks: [
+				{
+					id: "6048BB784ED762E8"
+					item: "oreganized:glance"
+					type: "item"
+				}
+				{
+					id: "1932B35DB907AB6A"
+					item: "oreganized:lead_nugget"
+					type: "item"
+				}
+				{
+					id: "4E40708D6D2501DF"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest41.task_5638630486191702495.title}"
+					type: "checkmark"
+				}
+			]
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest41.title}"
+			x: 10.0d
 			y: 4.0d
 		}
+		{
+			dependencies: ["1A4352FB579FF77E"]
+			description: ["{ftbquests.chapter.54C0167EE2031E76.quest42.description1}"]
+			icon: "scguns:vent_collector"
+			id: "1CA572621904A69F"
+			rewards: [{
+				id: "7CEC16ACA1526A29"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest42.subtitle}"
+			tasks: [
+				{
+					id: "78BAD975F50E834C"
+					item: "scguns:vent_collector"
+					type: "item"
+				}
+				{
+					id: "0FD47824C9B22015"
+					item: "scguns:sulfur_dust"
+					type: "item"
+				}
+				{
+					id: "6F82AAD6268F0E74"
+					item: "scguns:niter_dust"
+					type: "item"
+				}
+				{
+					id: "36C159ED2A9BB041"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest42.task_3945533623710232641.title}"
+					type: "checkmark"
+				}
+			]
+			x: -1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1A4352FB579FF77E"]
+			description: ["{ftbquests.chapter.54C0167EE2031E76.quest43.description1}"]
+			icon: "scguns:advanced_composter"
+			id: "42287BE3A8460047"
+			rewards: [{
+				id: "4C9F92EAC5AF8021"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest43.subtitle}"
+			tasks: [
+				{
+					id: "029395DAF1AEA476"
+					item: "scguns:advanced_composter"
+					type: "item"
+				}
+				{
+					id: "77C3CCD7B4E7568C"
+					item: "scguns:phosphor_dust"
+					type: "item"
+				}
+				{
+					id: "16FBA5FE4DB0010E"
+					item: "scguns:niter_dust"
+					type: "item"
+				}
+				{
+					id: "174B7DFF862A0930"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest43.task_1678573822546676016.title}"
+					type: "checkmark"
+				}
+			]
+			x: 1.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["1A4352FB579FF77E"]
+			icon: "minecraft:oak_log"
+			id: "56751B70F25216FE"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest44.subtitle}"
+			tasks: [{
+				id: "0D6D5B7D8B2E9DF0"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "{ftbquests.chapter.54C0167EE2031E76.quest44.task_967530089718652400.title}"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest44.title}"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["56751B70F25216FE"]
+			id: "63A713AAFF153632"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest45.subtitle}"
+			tasks: [{
+				id: "6DA068BB63551C25"
+				item: "minecraft:charcoal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["63A713AAFF153632"]
+			id: "16B49CB814FD29CF"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest46.subtitle}"
+			tasks: [{
+				id: "1D60BFDBB72B27B9"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["16B49CB814FD29CF"]
+			id: "2D7B382634800BB5"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest47.subtitle}"
+			tasks: [{
+				id: "39CB3C5221D66BDF"
+				item: "immersiveengineering:coal_coke"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["16B49CB814FD29CF"]
+			id: "766275B86E770BDB"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest48.subtitle}"
+			tasks: [{
+				id: "752A7B80C6CF9F4F"
+				item: "createnuclear:coal_dust"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["766275B86E770BDB"]
+			icon: "scguns:anthralite_ingot"
+			id: "2D9F28CACD6EADF4"
+			rewards: [{
+				id: "32F6D877B7917C0E"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest49.subtitle}"
+			tasks: [
+				{
+					id: "366B3F3F403B6E45"
+					item: "scguns:anthralite_nugget"
+					type: "item"
+				}
+				{
+					id: "6F4BAA2105CF795B"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest49.task_8019690620271425883.title}"
+					type: "checkmark"
+				}
+			]
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest49.title}"
+			x: -8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2D7B382634800BB5"]
+			icon: "immersiveengineering:dust_coke"
+			id: "2BD07A3DDBE6C200"
+			rewards: [{
+				id: "06FFB7EDEBAF7BDE"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest50.subtitle}"
+			tasks: [
+				{
+					id: "719641832EE97A0C"
+					item: "immersiveengineering:dust_coke"
+					type: "item"
+				}
+				{
+					id: "196A351CFB6E0EE6"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest50.task_1831334597073178342.title}"
+					type: "checkmark"
+				}
+			]
+			x: -10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1A4352FB579FF77E"]
+			id: "23B40C86CEE1A8EB"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest51.subtitle}"
+			tasks: [{
+				id: "42FC85F66BE45C82"
+				item: "minecraft:basalt"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["23B40C86CEE1A8EB"]
+			id: "59CEA83C3E03585B"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest52.subtitle}"
+			tasks: [{
+				id: "3002457251D6FA63"
+				item: "minecraft:lapis_lazuli"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1C90C1CA66200C92"]
+			id: "6D80959BDCD42FFB"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest53.subtitle}"
+			tasks: [{
+				id: "377D1D9D4211A6BD"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["59CEA83C3E03585B"]
+			id: "1C90C1CA66200C92"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest54.subtitle}"
+			tasks: [{
+				id: "36ADBB7D7FD59DDD"
+				item: "minecraft:prismarine_crystals"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6D80959BDCD42FFB"]
+			id: "7527F6B8A490DFC8"
+			rewards: [{
+				id: "4F567CB7D7DC1DA7"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest55.subtitle}"
+			tasks: [{
+				id: "484CC7585BA88D6D"
+				item: "scguns:phosphor_dust"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["435DA157EC54D3EA"]
+			icon: "scguns:niter_dust"
+			id: "702739CAD60E7915"
+			rewards: [{
+				id: "37C35FAE42F741FB"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest56.subtitle}"
+			tasks: [
+				{
+					id: "56C35509D99CFA99"
+					item: "scguns:niter_dust"
+					type: "item"
+				}
+				{
+					id: "3539DA6C088E1CE1"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest56.task_3835336715217542369.title}"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["325D500216D2EFDC"]
+			id: "358F2CFB3ECA295D"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest57.subtitle}"
+			tasks: [{
+				id: "720BFF64826EADD3"
+				item: "create:scoria"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["358F2CFB3ECA295D"]
+			icon: "scguns:sulfur_dust"
+			id: "281BC3ACC0B8C2D3"
+			rewards: [{
+				id: "2AC9571F96531D49"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest58.subtitle}"
+			tasks: [
+				{
+					id: "0952F2D17E709921"
+					item: "scguns:sulfur_dust"
+					type: "item"
+				}
+				{
+					id: "00DB7A49872B7F8D"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest58.task_61777476118609805.title}"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1C90C1CA66200C92"]
+			id: "3150095AA2A8CBFE"
+			rewards: [{
+				id: "0313844036492908"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest59.subtitle}"
+			tasks: [{
+				id: "504EF2AB2C1F12C0"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["74581D474C09D62C"]
+			id: "0A2862B24EFB6487"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest60.subtitle}"
+			tasks: [{
+				id: "53DE07F008395AF0"
+				item: "minecraft:blackstone"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"0A2862B24EFB6487"
+				"40717610A2317CCE"
+			]
+			id: "43BB332647AB6F59"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest61.subtitle}"
+			tasks: [{
+				id: "1CDD00204B17BDE6"
+				item: "scguns:phosphorite"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["43BB332647AB6F59"]
+			icon: "scguns:phosphor_dust"
+			id: "214744E19F32B00E"
+			rewards: [{
+				id: "3BF7F25B7C6865FB"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest62.subtitle}"
+			tasks: [
+				{
+					id: "6F1AF49A3C8AE24D"
+					item: "scguns:phosphor_dust"
+					type: "item"
+				}
+				{
+					id: "1A340F091647EE72"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest62.task_1888150675478015602.title}"
+					type: "checkmark"
+				}
+			]
+			x: 12.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1A4352FB579FF77E"]
+			icon: "immersiveengineering:cloche"
+			id: "096D2A5847B05F00"
+			rewards: [{
+				id: "642F0581D3F0FF0A"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest63.subtitle}"
+			tasks: [
+				{
+					id: "094953F6886DAF7B"
+					item: "immersiveengineering:cloche"
+					type: "item"
+				}
+				{
+					id: "03BCB7B862FD0041"
+					item: "blue_skies:moonstone_crystal"
+					type: "item"
+				}
+				{
+					id: "55EEC55AB45F3E8D"
+					item: "blue_skies:sunstone_crystal"
+					type: "item"
+				}
+				{
+					id: "10E8D77DE8AC649C"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest63.task_1218460634978215068.title}"
+					type: "checkmark"
+				}
+			]
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest63.title}"
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["096D2A5847B05F00"]
+			icon: "goety:jade"
+			id: "13FF02C173845901"
+			rewards: [{
+				id: "2576FE4C9E2E0F48"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest64.subtitle}"
+			tasks: [
+				{
+					id: "7692707E00DEE25C"
+					item: "goety:jade"
+					type: "item"
+				}
+				{
+					id: "14F7DB0DAD17102A"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest64.task_1510917051791118378.title}"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: -11.5d
+		}
+		{
+			dependencies: ["096D2A5847B05F00"]
+			icon: "blue_skies:horizonite_ingot"
+			id: "5574ECE5E25D57C8"
+			rewards: [{
+				id: "1130DA66597E299E"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest65.subtitle}"
+			tasks: [
+				{
+					id: "7A9152690B1ECB49"
+					item: "blue_skies:horizonite_block"
+					type: "item"
+				}
+				{
+					id: "0C5D61C1AC67F66C"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest65.task_890975785738303084.title}"
+					type: "checkmark"
+				}
+			]
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest65.title}"
+			x: -1.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["096D2A5847B05F00"]
+			icon: "blue_skies:falsite_ingot"
+			id: "68CB2C9C206F7D80"
+			rewards: [{
+				id: "7917ACA41F3D4956"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest66.subtitle}"
+			tasks: [
+				{
+					id: "7D43C7F96CD32D64"
+					item: "blue_skies:falsite_block"
+					type: "item"
+				}
+				{
+					id: "0DD0B70B855C67F2"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest66.task_995496777758828530.title}"
+					type: "checkmark"
+				}
+			]
+			title: "{ftbquests.chapter.54C0167EE2031E76.quest66.title}"
+			x: 1.5d
+			y: -10.5d
+		}
+		{
+			dependencies: ["1A4352FB579FF77E"]
+			description: [
+				"{ftbquests.chapter.54C0167EE2031E76.quest67.description1}"
+				"{ftbquests.chapter.54C0167EE2031E76.quest67.description2}"
+			]
+			icon: "immersiveengineering:slag"
+			id: "6BB15961F92B5E4F"
+			rewards: [{
+				id: "13F06AEF693449B3"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest67.subtitle}"
+			tasks: [
+				{
+					id: "4E6C71DDE9199128"
+					item: "immersiveengineering:slag"
+					type: "item"
+				}
+				{
+					id: "168DF2A40BE9CCED"
+					item: "kubejs:slag_chunk"
+					type: "item"
+				}
+				{
+					id: "5E9F568CC5C95CB5"
+					item: "kubejs:slurry_slag_bucket"
+					type: "item"
+				}
+				{
+					id: "4BCE96AD4E9850AA"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest67.task_5462469069139103914.title}"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"31EEBF235BB74190"
+				"40717610A2317CCE"
+			]
+			id: "38C2B161E5D3441A"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest68.subtitle}"
+			tasks: [{
+				id: "1920547C72CEA8EF"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"38C2B161E5D3441A"
+				"1A5264CDF9253994"
+				"47D5AC7D15327B25"
+			]
+			icon: "create:andesite_alloy"
+			id: "748C46D3AE230EF8"
+			rewards: [{
+				id: "2EBE9651FC399854"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.54C0167EE2031E76.quest69.subtitle}"
+			tasks: [
+				{
+					id: "0576A43C784FEEC4"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "3D839A17D2C436C0"
+					title: "{ftbquests.chapter.54C0167EE2031E76.quest69.task_4432555885373699776.title}"
+					type: "checkmark"
+				}
+			]
+			x: 12.0d
+			y: -2.0d
+		}
 	]
-	subtitle: ["{ftbquests.chapter.54C0167EE2031E76.subtitle}"]
+	subtitle: ["{ftbquests.chapter.54C0167EE2031E76.subtitle0}"]
 	title: "{ftbquests.chapter.54C0167EE2031E76.title}"
 }

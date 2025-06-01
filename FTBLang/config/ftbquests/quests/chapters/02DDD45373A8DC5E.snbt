@@ -40,6 +40,7 @@
 			dependencies: ["6A1B42D208C780BD"]
 			description: ["{ftbquests.chapter.02DDD45373A8DC5E.quest1.description1}"]
 			hide_until_deps_complete: true
+			icon: "minecraft:oak_log"
 			id: "46156FBBDCAB4B1D"
 			rewards: [{
 				id: "68889BA4397825CC"
@@ -69,7 +70,7 @@
 						value: "forge:workbench"
 					}
 				}
-				title: "{ftbquests.chapter.02DDD45373A8DC5E.quest1.task.title1}"
+				title: "{ftbquests.chapter.02DDD45373A8DC5E.quest1.task_7400953577314514922.title}"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest1.title}"
@@ -77,10 +78,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: [
-				"2F791EC2607066B4"
-				"50BB17FEED3B10D2"
-			]
+			dependencies: ["2F791EC2607066B4"]
 			description: [
 				"{ftbquests.chapter.02DDD45373A8DC5E.quest2.description1}"
 				""
@@ -118,6 +116,7 @@
 		}
 		{
 			dependencies: ["46156FBBDCAB4B1D"]
+			description: ["{ftbquests.chapter.02DDD45373A8DC5E.quest3.description1}"]
 			id: "3C34EE3C3BAB33EC"
 			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest3.subtitle}"
 			tasks: [{
@@ -154,10 +153,14 @@
 			dependencies: ["7A6ADC4EE6686110"]
 			description: [
 				"{ftbquests.chapter.02DDD45373A8DC5E.quest5.description1}"
-				""
 				"{ftbquests.chapter.02DDD45373A8DC5E.quest5.description2}"
+				""
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest5.description3}"
+				"{@pagebreak}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest5.description4}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest5.description5}"
 			]
-			hide_until_deps_complete: true
+			icon: "create:large_cogwheel"
 			id: "2F791EC2607066B4"
 			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest5.subtitle}"
 			tasks: [
@@ -223,7 +226,6 @@
 				"{ftbquests.chapter.02DDD45373A8DC5E.quest8.description3}"
 				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.02DDD45373A8DC5E.quest8.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"735172F79325756F\"}}]"
 			]
-			hide_until_deps_complete: true
 			id: "489BC5567AF09228"
 			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest8.subtitle}"
 			tasks: [{
@@ -300,7 +302,7 @@
 							value: "forge:plates"
 						}
 					}
-					title: "{ftbquests.chapter.02DDD45373A8DC5E.quest11.task.title1}"
+					title: "{ftbquests.chapter.02DDD45373A8DC5E.quest11.task_2397868721838039410.title}"
 					type: "item"
 				}
 			]
@@ -314,6 +316,7 @@
 				"{ftbquests.chapter.02DDD45373A8DC5E.quest12.description1}"
 				"{ftbquests.chapter.02DDD45373A8DC5E.quest12.description2}"
 			]
+			icon: "create:mechanical_mixer"
 			id: "29B3F884515FC9DB"
 			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest12.subtitle}"
 			tasks: [
@@ -351,6 +354,8 @@
 		}
 		{
 			dependencies: ["4252F0F8AD1C5A60"]
+			description: ["{ftbquests.chapter.02DDD45373A8DC5E.quest14.description1}"]
+			icon: "kubejs:bronze_dust"
 			id: "69864E61F37B2AA3"
 			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest14.subtitle}"
 			tasks: [
@@ -362,6 +367,11 @@
 				{
 					id: "7D32C7D35BBDC475"
 					item: "kubejs:tin_dust"
+					type: "item"
+				}
+				{
+					id: "5818EF5E56A9363C"
+					item: "scguns:sulfur_dust"
 					type: "item"
 				}
 			]
@@ -421,7 +431,7 @@
 				}
 				{
 					id: "20FD93CFBE648A51"
-					title: "{ftbquests.chapter.02DDD45373A8DC5E.quest16.task.title1}"
+					title: "{ftbquests.chapter.02DDD45373A8DC5E.quest16.task_2377218698783263313.title}"
 					type: "checkmark"
 				}
 			]
@@ -431,6 +441,13 @@
 		}
 		{
 			dependencies: ["3BECB3D53E17F80B"]
+			icon: {
+				Count: 1
+				id: "kubejs:bronze_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "40E4071636BA7BB1"
 			rewards: [{
 				count: 8
@@ -524,14 +541,12 @@
 				"{ftbquests.chapter.02DDD45373A8DC5E.quest18.description2}"
 				""
 				"{ftbquests.chapter.02DDD45373A8DC5E.quest18.description3}"
-				""
-				"{ftbquests.chapter.02DDD45373A8DC5E.quest18.description4}"
 				"{@pagebreak}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest18.description4}"
 				"{ftbquests.chapter.02DDD45373A8DC5E.quest18.description5}"
 				"{ftbquests.chapter.02DDD45373A8DC5E.quest18.description6}"
-				"{ftbquests.chapter.02DDD45373A8DC5E.quest18.description7}"
 				""
-				"{ftbquests.chapter.02DDD45373A8DC5E.quest18.description8}"
+				"{ftbquests.chapter.02DDD45373A8DC5E.quest18.description7}"
 			]
 			icon: "minecraft:raw_iron"
 			id: "7D7F5D6CF26C1636"
@@ -559,11 +574,7 @@
 		}
 		{
 			dependencies: ["7A6ADC4EE6686110"]
-			description: [
-				"{ftbquests.chapter.02DDD45373A8DC5E.quest19.description1}"
-				"{ftbquests.chapter.02DDD45373A8DC5E.quest19.description2}"
-			]
-			hide_until_deps_complete: true
+			description: ["{ftbquests.chapter.02DDD45373A8DC5E.quest19.description1}"]
 			id: "50BB17FEED3B10D2"
 			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest19.subtitle}"
 			tasks: [{
@@ -576,7 +587,10 @@
 			y: 6.5d
 		}
 		{
-			dependencies: ["50BB17FEED3B10D2"]
+			dependencies: [
+				"50BB17FEED3B10D2"
+				"2F791EC2607066B4"
+			]
 			description: [
 				"{ftbquests.chapter.02DDD45373A8DC5E.quest20.description1}"
 				"{ftbquests.chapter.02DDD45373A8DC5E.quest20.description2}"
@@ -597,6 +611,7 @@
 		{
 			dependencies: ["27E166AF7BA5BDB1"]
 			description: ["{ftbquests.chapter.02DDD45373A8DC5E.quest21.description1}"]
+			icon: "create:goggles"
 			id: "63B4B5472513A83F"
 			rewards: [{
 				id: "53D1AE7DFA54E8AE"
@@ -695,7 +710,13 @@
 				""
 				"{ftbquests.chapter.02DDD45373A8DC5E.quest24.description3}"
 			]
-			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "immersiveengineering:hammer"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "336807D048A4EF6A"
 			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest24.subtitle}"
 			tasks: [
@@ -738,8 +759,8 @@
 					type: "item"
 				}
 				{
-					id: "559144140D12B35D"
-					item: "tfmg:coal_coke_dust"
+					id: "03EF66F09D5177E6"
+					item: "immersiveengineering:dust_coke"
 					type: "item"
 				}
 			]
@@ -763,7 +784,7 @@
 			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest26.subtitle}"
 			tasks: [{
 				id: "7D7679617FDA45B3"
-				title: "{ftbquests.chapter.02DDD45373A8DC5E.quest26.task.title1}"
+				title: "{ftbquests.chapter.02DDD45373A8DC5E.quest26.task_9040546761656649139.title}"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -772,6 +793,7 @@
 		{
 			dependencies: ["6D46668D63E83ED7"]
 			description: ["{ftbquests.chapter.02DDD45373A8DC5E.quest27.description1}"]
+			icon: "trashcans:item_trash_can"
 			id: "1A5534E853393823"
 			rewards: [{
 				id: "4C489927ADE219CB"
@@ -820,14 +842,37 @@
 			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest28.subtitle}"
 			tasks: [{
 				id: "20382D7DE9325214"
-				title: "{ftbquests.chapter.02DDD45373A8DC5E.quest28.task.title1}"
+				title: "{ftbquests.chapter.02DDD45373A8DC5E.quest28.task_2321655626716041748.title}"
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest28.title}"
 			x: -3.0d
 			y: 10.0d
 		}
+		{
+			dependencies: ["46156FBBDCAB4B1D"]
+			description: ["{ftbquests.chapter.02DDD45373A8DC5E.quest29.description1}"]
+			icon: {
+				Count: 1
+				id: "scguns:flintlock_pistol"
+				tag: {
+					AmmoCount: 1
+					Damage: 0
+				}
+			}
+			id: "4BED26108E90A0CC"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.02DDD45373A8DC5E.quest29.subtitle}"
+			tasks: [{
+				id: "373CA25FF3071BD5"
+				item: "scguns:gun_bench"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.02DDD45373A8DC5E.quest29.title}"
+			x: 1.5d
+			y: -2.5d
+		}
 	]
-	subtitle: ["{ftbquests.chapter.02DDD45373A8DC5E.subtitle}"]
+	subtitle: ["{ftbquests.chapter.02DDD45373A8DC5E.subtitle0}"]
 	title: "{ftbquests.chapter.02DDD45373A8DC5E.title}"
 }

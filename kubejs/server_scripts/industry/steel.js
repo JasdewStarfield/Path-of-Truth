@@ -219,6 +219,7 @@ ServerEvents.recipes(event => {
 
   //钢板
   event.remove({ id: 'createaddition:pressing/steel_ingot' })
+  event.remove({ id: 'create:pressing/compat/immersiveengineering/plate_steel' })
   event.remove({ id: 'vintageimprovements:rolling/steel_ingot' })
   event.remove({ id: 'vintageimprovements:rolling/steel_plate' })
   event.remove({ id: 'vintageimprovements:mechanical_crafting/helve_hammer'})

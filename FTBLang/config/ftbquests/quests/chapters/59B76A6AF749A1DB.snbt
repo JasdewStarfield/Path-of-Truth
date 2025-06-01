@@ -13,15 +13,15 @@
 			image: "kubejs:textures/quests/start.png"
 			rotation: 0.0d
 			width: 1.3285714285714287d
-			x: -6.5d
-			y: -1.0d
+			x: -10.0d
+			y: -1.5d
 		}
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 14.0d
+			x: 13.5d
 			y: 0.0d
 		}
 		{
@@ -29,7 +29,15 @@
 			image: "kubejs:textures/quests/i4.png"
 			rotation: 0.0d
 			width: 12.853503184713375d
-			x: -6.5d
+			x: -10.0d
+			y: 4.5d
+		}
+		{
+			height: 4.0d
+			image: "immersiveengineering:item/tool_hammer"
+			rotation: 45.0d
+			width: 4.0d
+			x: 1.0d
 			y: 4.0d
 		}
 	]
@@ -38,7 +46,11 @@
 	quests: [
 		{
 			dependencies: ["504E6502A789DABF"]
-			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest1.description1}"]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest1.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest1.description2}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest1.description3}"
+			]
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:lightning_bottle"
 			id: "01534DC5812DBA15"
@@ -52,11 +64,11 @@
 			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest1.subtitle}"
 			tasks: [{
 				id: "569F1900B0E099D3"
-				title: "{ftbquests.chapter.59B76A6AF749A1DB.quest1.task.title1}"
+				title: "{ftbquests.chapter.59B76A6AF749A1DB.quest1.task_6241735099317000659.title}"
 				type: "checkmark"
 			}]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest1.title}"
-			x: -6.5d
+			x: -10.0d
 			y: 0.0d
 		}
 		{
@@ -65,6 +77,7 @@
 				"{ftbquests.chapter.59B76A6AF749A1DB.quest2.description1}"
 				"{ftbquests.chapter.59B76A6AF749A1DB.quest2.description2}"
 			]
+			icon: "immersiveengineering:wirecoil_copper"
 			id: "56F7012826597C35"
 			shape: "diamond"
 			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest2.subtitle}"
@@ -91,7 +104,7 @@
 				}
 			]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest2.title}"
-			x: -8.5d
+			x: -12.0d
 			y: 0.0d
 		}
 		{
@@ -152,8 +165,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest3.title}"
-			x: -2.0d
-			y: -2.5d
+			x: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
@@ -219,64 +232,64 @@
 				}
 			]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest4.title}"
-			x: -2.0d
-			y: 2.5d
+			x: -4.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["1E0E5E47E1264279"]
+			dependencies: ["19EA7F4C42FCA4BA"]
 			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest5.description1}"]
-			hide_until_deps_complete: true
-			icon: "immersiveengineering:ingot_electrum"
+			icon: "oreganized:electrum_ingot"
 			id: "3D6CCF4A93478320"
 			rewards: [{
-				id: "71A2780A7585490D"
-				item: "supplementaries:gold_door"
+				id: "6DF766C70AE45772"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"cold_sweat:item_insulation": {
+							Insulation: [ ]
+						}
+					}
+					id: "oreganized:electrum_shield"
+					tag: {
+						Damage: 0
+					}
+				}
 				type: "item"
 			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest5.subtitle}"
-			tasks: [
-				{
-					id: "3A4BE85609E8FB9D"
-					item: "kubejs:gold_silver_mix"
-					type: "item"
-				}
-				{
-					id: "27B781704345D1FD"
-					item: "immersiveengineering:ingot_electrum"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "577C8A58E5098FF8"
+				item: "oreganized:electrum_ingot"
+				type: "item"
+			}]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest5.title}"
-			x: 3.0d
-			y: 4.0d
+			x: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1E0E5E47E1264279"]
 			description: [
 				"{ftbquests.chapter.59B76A6AF749A1DB.quest6.description1}"
 				"{ftbquests.chapter.59B76A6AF749A1DB.quest6.description2}"
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest6.description3}"
 			]
 			icon: "immersiveengineering:plantoil_bucket"
 			id: "1404B54F1747DE16"
-			rewards: [{
-				id: "5676B9596046ACB9"
-				item: "bloodmagic:plantoil"
-				type: "item"
-			}]
 			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest6.subtitle}"
 			tasks: [{
-				id: "1C087B5F221D57DF"
-				title: "{ftbquests.chapter.59B76A6AF749A1DB.quest6.task.title1}"
-				type: "checkmark"
+				id: "03CB465C1B13E40F"
+				item: "immersiveengineering:plantoil_bucket"
+				type: "item"
 			}]
-			x: 0.0d
-			y: 1.5d
+			x: 2.0d
+			y: 1.0d
 		}
 		{
-			dependencies: ["11F2CDF608EA11DA"]
+			dependencies: [
+				"11F2CDF608EA11DA"
+				"02D2280F57251219"
+			]
 			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest7.description1}"]
 			icon: "immersiveengineering:ethanol_bucket"
 			id: "48A3FEF7D02104E5"
@@ -287,13 +300,13 @@
 			}]
 			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest7.subtitle}"
 			tasks: [{
-				id: "55EDC4FAFB6E8875"
-				title: "{ftbquests.chapter.59B76A6AF749A1DB.quest7.task.title1}"
-				type: "checkmark"
+				id: "00E39AA616DC82DF"
+				item: "immersiveengineering:ethanol_bucket"
+				type: "item"
 			}]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest7.title}"
-			x: 0.0d
-			y: -1.5d
+			x: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
@@ -350,13 +363,13 @@
 				}
 			]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest8.title}"
-			x: -0.5d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
 			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest9.description1}"]
-			hide_until_deps_complete: true
+			icon: "immersiveengineering:wirecoil_electrum"
 			id: "1997BD2CF61ACBA8"
 			shape: "diamond"
 			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest9.subtitle}"
@@ -383,8 +396,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest9.title}"
-			x: 1.5d
-			y: 5.5d
+			x: 6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -392,10 +405,13 @@
 				"3B29D716A3D5AAF0"
 				"3E60B78B0EE34B75"
 			]
-			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest10.description1}"]
-			hide_until_deps_complete: true
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest10.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest10.description2}"
+			]
 			icon: "immersiveengineering:diesel_generator"
 			id: "76EF99C068AA2361"
+			shape: "diamond"
 			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest10.subtitle}"
 			tasks: [
 				{
@@ -446,8 +462,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest10.title}"
-			x: 3.0d
-			y: 2.0d
+			x: 4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -466,13 +482,12 @@
 				item: "farmersdelight:wild_potatoes"
 				type: "item"
 			}]
-			shape: "gear"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest11.subtitle}"
 			tasks: [
 				{
 					id: "728AB7BF739D2BBE"
-					title: "{ftbquests.chapter.59B76A6AF749A1DB.quest11.task.title1}"
+					title: "{ftbquests.chapter.59B76A6AF749A1DB.quest11.task_8253611300016171966.title}"
 					type: "checkmark"
 				}
 				{
@@ -481,7 +496,7 @@
 					type: "item"
 				}
 			]
-			x: 3.0d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
@@ -508,11 +523,11 @@
 				id: "3428E89B02D0D20C"
 				max_input: 1000L
 				type: "forge_energy"
-				value: 114514L
+				value: 1145140L
 			}]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest12.title}"
-			x: 1.5d
-			y: 2.0d
+			x: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -525,7 +540,6 @@
 				""
 				"{ftbquests.chapter.59B76A6AF749A1DB.quest13.description3}"
 			]
-			hide_until_deps_complete: true
 			icon: "immersiveengineering:arc_furnace"
 			id: "583407C7537AE9C9"
 			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest13.subtitle}"
@@ -579,7 +593,7 @@
 				{
 					count: 6L
 					id: "6ADB0D5CF731E92A"
-					item: "tfmg:steel_block"
+					item: "immersiveengineering:storage_steel"
 					type: "item"
 				}
 				{
@@ -595,23 +609,20 @@
 				}
 			]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest13.title}"
-			x: 3.0d
-			y: -2.0d
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
 				"583407C7537AE9C9"
 				"66E52E485A1A4139"
-				"585C0F11261551FD"
+				"68A8BCB8BCBC8C1B"
 			]
 			description: [
 				"{ftbquests.chapter.59B76A6AF749A1DB.quest14.description1}"
 				"{ftbquests.chapter.59B76A6AF749A1DB.quest14.description2}"
-				""
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest14.description3}"
 			]
-			hide_until_deps_complete: true
-			icon: "tfmg:aluminum_ingot"
+			icon: "immersiveengineering:ingot_aluminum"
 			id: "2BE7BA0BE9F2DBC9"
 			rewards: [{
 				id: "274597A581C787E4"
@@ -621,37 +632,21 @@
 			shape: "gear"
 			size: 2.0d
 			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest14.subtitle}"
-			tasks: [
-				{
-					id: "70186FD6D7DB9684"
-					item: "tfmg:bauxite"
-					type: "item"
-				}
-				{
-					id: "6E090919BA7349F7"
-					item: "create:crushed_raw_aluminum"
-					type: "item"
-				}
-				{
-					id: "1C5AD55FCFAA1395"
-					item: "tfmg:aluminum_ingot"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "1C5AD55FCFAA1395"
+				item: "immersiveengineering:ingot_aluminum"
+				type: "item"
+			}]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest14.title}"
-			x: 3.0d
-			y: -4.0d
+			x: 4.0d
+			y: -6.0d
 		}
 		{
-			dependencies: [
-				"1E0E5E47E1264279"
-				"3B29D716A3D5AAF0"
-			]
+			dependencies: ["1E0E5E47E1264279"]
 			description: [
 				"{ftbquests.chapter.59B76A6AF749A1DB.quest15.description1}"
 				"{ftbquests.chapter.59B76A6AF749A1DB.quest15.description2}"
 			]
-			hide_until_deps_complete: true
 			id: "48E0B5D1F9972D20"
 			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest15.subtitle}"
 			tasks: [{
@@ -659,14 +654,11 @@
 				item: "immersiveengineering:dust_hop_graphite"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.0d
+			x: -4.0d
+			y: -2.0d
 		}
 		{
-			dependencies: [
-				"48E0B5D1F9972D20"
-				"087C118AB8CC51F8"
-			]
+			dependencies: ["48E0B5D1F9972D20"]
 			dependency_requirement: "one_completed"
 			description: [
 				"{ftbquests.chapter.59B76A6AF749A1DB.quest16.description1}"
@@ -687,8 +679,8 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest16.title}"
-			x: 7.5d
-			y: 1.5d
+			x: -2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2BE7BA0BE9F2DBC9"]
@@ -697,7 +689,7 @@
 				"{ftbquests.chapter.59B76A6AF749A1DB.quest17.description2}"
 				"{ftbquests.chapter.59B76A6AF749A1DB.quest17.description3}"
 			]
-			hide_until_deps_complete: true
+			icon: "immersiveengineering:wirecoil_steel"
 			id: "56F4C82F40DFA8F5"
 			shape: "diamond"
 			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest17.subtitle}"
@@ -724,8 +716,8 @@
 				}
 			]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest17.title}"
-			x: 0.0d
-			y: -3.0d
+			x: 6.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -779,37 +771,36 @@
 				}
 			]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest18.title}"
-			x: -4.5d
+			x: -8.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["143039C6AC2D8186"]
-			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest19.description1}"]
+			dependencies: [
+				"143039C6AC2D8186"
+				"7379C5AA51648FC1"
+			]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest19.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest19.description2}"
+			]
 			icon: "immersiveengineering:mold_rod"
 			id: "22631A52B9D81A49"
 			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest19.subtitle}"
 			tasks: [
 				{
-					id: "0609FD0C01142C51"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:rods/all_metal"
-						}
-					}
-					title: "{ftbquests.chapter.59B76A6AF749A1DB.quest19.task.title1}"
-					type: "item"
-				}
-				{
 					id: "165229DECB174540"
 					item: "immersiveengineering:mold_rod"
 					type: "item"
 				}
+				{
+					id: "0F9700EC9732EFAB"
+					item: "immersiveengineering:stick_steel"
+					type: "item"
+				}
 			]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest19.title}"
-			x: -4.5d
-			y: -1.5d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["22631A52B9D81A49"]
@@ -818,6 +809,8 @@
 				"{ftbquests.chapter.59B76A6AF749A1DB.quest20.description2}"
 			]
 			id: "0EA7E42D07C4BC01"
+			shape: "gear"
+			size: 2.0d
 			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest20.subtitle}"
 			tasks: [{
 				id: "2B3D45F9C0B744F9"
@@ -825,83 +818,24 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest20.title}"
-			x: -3.0d
+			x: -2.0d
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"504E6502A789DABF"
-				"48E0B5D1F9972D20"
-			]
+			dependencies: ["55C58DBE6BE16B1C"]
 			description: [
 				"{ftbquests.chapter.59B76A6AF749A1DB.quest21.description1}"
 				"{ftbquests.chapter.59B76A6AF749A1DB.quest21.description2}"
 			]
-			hide_until_deps_complete: true
-			id: "087C118AB8CC51F8"
-			optional: true
-			shape: "diamond"
+			id: "03312D6881CC617D"
 			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest21.subtitle}"
 			tasks: [{
-				id: "26DA5121AA920A2A"
-				item: {
-					Count: 1
-					id: "immersiveengineering:blueprint"
-					tag: {
-						blueprint: "electrode"
-					}
-				}
-				match_nbt: true
-				type: "item"
-			}]
-			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest21.title}"
-			x: 6.0d
-			y: 1.5d
-		}
-		{
-			dependencies: [
-				"2BE7BA0BE9F2DBC9"
-				"6D9B785CB93D94D6"
-			]
-			description: [
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest22.description1}"
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest22.description2}"
-			]
-			hide_until_deps_complete: true
-			id: "03312D6881CC617D"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest22.subtitle}"
-			tasks: [{
 				id: "1F69FA726AA73BD9"
-				item: "tfmg:steel_mechanism"
+				item: "kubejs:steel_mechanism"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["2BE7BA0BE9F2DBC9"]
-			description: [
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest23.description1}"
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest23.description2}"
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest23.description3}"
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest23.description4}"
-			]
-			hide_until_deps_complete: true
-			id: "6D9B785CB93D94D6"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest23.subtitle}"
-			tasks: [{
-				id: "147D1D7C0FBC9106"
-				item: {
-					Count: 1
-					id: "tfmg:screwdriver"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 9.5d
-			y: -0.5d
+			x: 12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -910,10 +844,9 @@
 				"41E56A9D68E36043"
 			]
 			description: [
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest24.description1}"
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest24.description2}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest22.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest22.description2}"
 			]
-			hide_until_deps_complete: true
 			id: "5FB9514C6DE7AD58"
 			rewards: [{
 				id: "1FCB3F21F61EEBA2"
@@ -933,45 +866,46 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest24.subtitle}"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest22.subtitle}"
 			tasks: [{
 				id: "28BE4BF6221D2F19"
 				item: "immersiveengineering:heavy_engineering"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest24.title}"
-			x: 12.5d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3E60B78B0EE34B75"]
-			description: [
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest25.description1}"
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest25.description2}"
-			]
-			id: "724A0B71BA342AEE"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest25.subtitle}"
-			tasks: [{
-				id: "01630D7BDD3D44BF"
-				item: "tfmg:heavy_machinery_casing"
-				type: "item"
-			}]
-			x: 8.0d
+			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest22.title}"
+			x: 12.0d
 			y: 0.0d
 		}
 		{
 			dependencies: [
-				"504E6502A789DABF"
-				"3D6CCF4A93478320"
+				"726AC9F2DA602E72"
+				"2415442F916846C5"
 			]
 			description: [
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest26.description1}"
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest26.description2}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest23.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest23.description2}"
 			]
-			hide_until_deps_complete: true
+			id: "724A0B71BA342AEE"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest23.subtitle}"
+			tasks: [{
+				id: "7EE023596BA04852"
+				item: "kubejs:factory_casing"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D6CCF4A93478320"]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest24.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest24.description2}"
+				""
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest24.description3}"
+			]
 			icon: "undergarden:forgotten_nugget"
 			id: "1A19AB31DBCDBCF7"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest26.subtitle}"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest24.subtitle}"
 			tasks: [
 				{
 					id: "631AF2A0043BCBA8"
@@ -984,17 +918,17 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest26.title}"
-			x: 6.5d
-			y: 5.0d
+			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest24.title}"
+			x: 8.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
 			description: [
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest27.description1}"
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest27.description2}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest25.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest25.description2}"
 				""
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest27.description3}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest25.description3}"
 			]
 			icon: "immersiveengineering:manual"
 			id: "1984D2E85CF06BC7"
@@ -1004,7 +938,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest27.subtitle}"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest25.subtitle}"
 			tasks: [
 				{
 					id: "556BBFA49015176C"
@@ -1022,39 +956,9 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest27.title}"
-			x: -9.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["143039C6AC2D8186"]
-			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest28.description1}"]
-			icon: "immersiveengineering:mold_wire"
-			id: "4BBD74D56BC12AEE"
-			shape: "diamond"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest28.subtitle}"
-			tasks: [
-				{
-					id: "18EC031E6DC5AF3C"
-					item: {
-						Count: 1
-						id: "itemfilters:tag"
-						tag: {
-							value: "forge:wires"
-						}
-					}
-					title: "{ftbquests.chapter.59B76A6AF749A1DB.quest28.task.title1}"
-					type: "item"
-				}
-				{
-					id: "699315A05F8B51E6"
-					item: "immersiveengineering:mold_wire"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest28.title}"
-			x: -4.5d
-			y: 1.5d
+			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest25.title}"
+			x: -12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -1065,29 +969,32 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest29.subtitle}"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest26.subtitle}"
 			tasks: [{
 				count: 2L
 				id: "0FB15D52AA8A4CA2"
 				item: "immersiveengineering:blastfurnace_preheater"
 				type: "item"
 			}]
-			x: -9.0d
-			y: 2.5d
+			x: -12.0d
+			y: 2.0d
 		}
 		{
-			dependencies: [
-				"56F4C82F40DFA8F5"
-				"2BE7BA0BE9F2DBC9"
-			]
+			dependencies: ["2BE7BA0BE9F2DBC9"]
 			description: [
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest30.description1}"
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest30.description2}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest27.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest27.description2}"
 			]
-			hide_until_deps_complete: true
+			icon: {
+				Count: 1
+				id: "immersiveengineering:armor_faraday_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "217A9CECA6BEB91C"
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest30.subtitle}"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest27.subtitle}"
 			tasks: [
 				{
 					id: "52D848C4EC576D25"
@@ -1154,49 +1061,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest30.title}"
-			x: 1.5d
-			y: -2.0d
+			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest27.title}"
+			x: 2.0d
+			y: -8.0d
 		}
 		{
-			dependencies: ["22631A52B9D81A49"]
-			id: "7D8F040FDC419C80"
-			rewards: [{
-				id: "0E8D3E5B8959465C"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
-							Size: 8
-						}
-					}
-					id: "immersiveengineering:speedloader"
-				}
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest31.subtitle}"
-			tasks: [{
-				id: "43124CC78A2EF0DD"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						Parent: {
-							Items: [ ]
-							Size: 21
-						}
-					}
-					id: "immersiveengineering:revolver"
-				}
-				type: "item"
-			}]
-			x: -6.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["22631A52B9D81A49"]
-			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest32.description1}"]
+			dependencies: ["011BB3E4881AA3F2"]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest28.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest28.description2}"
+			]
 			icon: {
 				Count: 1
 				ForgeCaps: {
@@ -1214,175 +1088,111 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest32.subtitle}"
-			tasks: [
-				{
-					id: "6CCFCB005D52E4DA"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							Parent: {
-								Items: [ ]
-								Size: 4
-							}
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest28.subtitle}"
+			tasks: [{
+				id: "6CCFCB005D52E4DA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 4
 						}
-						id: "immersiveengineering:powerpack"
 					}
-					type: "item"
+					id: "immersiveengineering:powerpack"
 				}
-				{
-					id: "7FE5AEDE6AFA8236"
-					item: "immersiveengineering:charging_station"
-					type: "item"
-				}
-			]
-			x: -4.5d
-			y: -3.0d
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
-			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest33.description1}"]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest29.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest29.description2}"
+			]
 			id: "3A25C9E033482CEB"
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest33.subtitle}"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest29.subtitle}"
 			tasks: [{
 				id: "0B79AAD8A943099B"
 				item: "immersiveengineering:cloche"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest33.title}"
-			x: -6.0d
+			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest29.title}"
+			x: -10.0d
 			y: 2.0d
-		}
-		{
-			dependencies: ["03312D6881CC617D"]
-			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest34.description1}"]
-			id: "2CA584555112E772"
-			shape: "diamond"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest34.subtitle}"
-			tasks: [{
-				id: "0ADE2F4D3B0B083C"
-				item: {
-					Count: 1
-					id: "tfmg:quad_potato_cannon"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 7.5d
-			y: -2.5d
-		}
-		{
-			dependencies: ["2BE7BA0BE9F2DBC9"]
-			hide_until_deps_complete: true
-			id: "377948574A940F51"
-			shape: "diamond"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest35.subtitle}"
-			tasks: [{
-				id: "386E09FE2436BCC9"
-				item: "tfmg:thermite_grenade"
-				type: "item"
-			}]
-			x: 0.0d
-			y: -5.5d
-		}
-		{
-			dependencies: [
-				"48A3FEF7D02104E5"
-				"0FD551E50150A7AD"
-			]
-			description: [""]
-			id: "6A04606B02D87EF0"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest36.subtitle}"
-			tasks: [{
-				id: "70505299AC3A9C07"
-				item: "immersiveengineering:acetaldehyde_bucket"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"6A04606B02D87EF0"
-				"0FD551E50150A7AD"
-			]
-			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest37.description1}"]
-			icon: "immersiveengineering:phenolic_resin_bucket"
-			id: "6CBC49DEC79E819E"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest37.subtitle}"
-			tasks: [{
-				id: "5990032AE52EC1B6"
-				item: "immersiveengineering:phenolic_resin_bucket"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 1.0d
 		}
 		{
 			dependencies: ["3B29D716A3D5AAF0"]
 			description: [
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest38.description1}"
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest38.description2}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest30.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest30.description2}"
 				""
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest38.description3}"
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest38.description4}"
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest38.description5}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest30.description3}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest30.description4}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest30.description5}"
 			]
-			hide_until_deps_complete: true
+			icon: "immersiveengineering:radiator"
 			id: "3E60B78B0EE34B75"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest38.subtitle}"
-			tasks: [{
-				id: "76A65BC6B5E46BA6"
-				item: "kubejs:frostfire_double_plate"
-				type: "item"
-			}]
-			x: 5.0d
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest30.subtitle}"
+			tasks: [
+				{
+					id: "76A65BC6B5E46BA6"
+					item: "kubejs:frostfire_double_plate"
+					type: "item"
+				}
+				{
+					id: "7D364899FCD6B0F6"
+					item: "immersiveengineering:radiator"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest30.title}"
+			x: 6.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
 			description: [
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest39.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest31.description1}"
 				""
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest39.description2}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest31.description2}"
 			]
-			hide_until_deps_complete: true
 			id: "671C17CCA1D5FA78"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest39.subtitle}"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest31.subtitle}"
 			tasks: [{
 				id: "4998B75DD8C7E7A6"
 				item: "immersiveengineering:component_electronic"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 4.0d
+			x: 8.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
 				"1A19AB31DBCDBCF7"
 				"671C17CCA1D5FA78"
-				"6D9B785CB93D94D6"
+				"506AC24B2EAF854D"
 			]
+			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest32.description1}"]
 			id: "41E56A9D68E36043"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest40.subtitle}"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest32.subtitle}"
 			tasks: [{
 				id: "0765B9537FD3914A"
 				item: "kubejs:forgotten_mechanism"
 				type: "item"
 			}]
-			x: 9.0d
-			y: 3.0d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
 			description: [
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest41.description1}"
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest41.description2}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest33.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest33.description2}"
 			]
-			hide_until_deps_complete: true
 			id: "786D410103015183"
 			rewards: [
 				{
@@ -1397,24 +1207,24 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest41.subtitle}"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest33.subtitle}"
 			tasks: [{
 				id: "08FBADECA0AF3AC3"
 				item: "immersiveengineering:thermoelectric_generator"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 5.0d
+			x: 4.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
 			description: [
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest42.description1}"
-				"{ftbquests.chapter.59B76A6AF749A1DB.quest42.description2}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest34.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest34.description2}"
 			]
 			icon: "immersiveengineering:crusher"
 			id: "585C0F11261551FD"
-			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest42.subtitle}"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest34.subtitle}"
 			tasks: [
 				{
 					count: 10L
@@ -1457,11 +1267,505 @@
 					type: "item"
 				}
 			]
+			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest34.title}"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3D6CCF4A93478320"]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest35.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest35.description2}"
+			]
+			id: "1999D24A0619F440"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest35.subtitle}"
+			tasks: [{
+				id: "4CF9D9DCC1FB0FAB"
+				item: "createaddition:electrum_amulet"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["01534DC5812DBA15"]
+			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest36.description1}"]
+			icon: {
+				Count: 1
+				id: "immersiveengineering:blueprint"
+				tag: {
+					blueprint: "components"
+				}
+			}
+			id: "7379C5AA51648FC1"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest36.subtitle}"
+			tasks: [{
+				id: "37F4E985B2C33E2F"
+				item: {
+					Count: 1
+					id: "immersiveengineering:blueprint"
+					tag: {
+						blueprint: "molds"
+					}
+				}
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest36.title}"
+			x: -8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0EA7E42D07C4BC01"]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest37.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest37.description2}"
+			]
+			icon: "createdieselgenerators:basin_lid"
+			id: "0F4EDD4535A9D928"
+			rewards: [{
+				id: "55E8F491E4572646"
+				item: "sob:lava_top_cocktail"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest37.subtitle}"
+			tasks: [
+				{
+					id: "07D23BFCC1C3C154"
+					item: "createdieselgenerators:basin_lid"
+					type: "item"
+				}
+				{
+					id: "3B4A023D9CC89803"
+					item: "create:basin"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0F4EDD4535A9D928"]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest38.description1}"
+				""
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest38.description2}"
+			]
+			icon: "createaddition:biomass"
+			id: "2410B7B4F5FBA323"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest38.subtitle}"
+			tasks: [{
+				id: "009BBB3673F91A72"
+				item: "createaddition:biomass"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"585C0F11261551FD"
+				"2410B7B4F5FBA323"
+			]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest39.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest39.description2}"
+			]
+			id: "02D2280F57251219"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest39.subtitle}"
+			tasks: [{
+				id: "41BB3EA31DD399B4"
+				item: "createaddition:biomass_pellet"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1E0E5E47E1264279"]
+			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest40.description1}"]
+			icon: "immersiveengineering:dust_electrum"
+			id: "19EA7F4C42FCA4BA"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest40.subtitle}"
+			tasks: [
+				{
+					id: "7798E7A2453C61BD"
+					item: "kubejs:gold_silver_mix"
+					type: "item"
+				}
+				{
+					id: "3BA843A73E33ED0F"
+					item: "immersiveengineering:dust_electrum"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest40.title}"
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3D6CCF4A93478320"]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest41.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest41.description2}"
+			]
+			id: "011BB3E4881AA3F2"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest41.subtitle}"
+			tasks: [{
+				id: "2E3CECB9A0B699EA"
+				item: "createaddition:tesla_coil"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["143039C6AC2D8186"]
+			icon: "immersiveengineering:mold_plate"
+			id: "6776DC02136791D2"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest42.subtitle}"
+			tasks: [
+				{
+					id: "5843C833BAA39968"
+					item: "immersiveengineering:mold_plate"
+					type: "item"
+				}
+				{
+					id: "6B843CD3230D4A5F"
+					item: "immersiveengineering:plate_steel"
+					type: "item"
+				}
+			]
 			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest42.title}"
-			x: -3.0d
-			y: -3.5d
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3B29D716A3D5AAF0"]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest43.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest43.description2}"
+				""
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest43.description3}"
+			]
+			id: "2CB1E7FC5CBF6B2C"
+			shape: "circle"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest43.subtitle}"
+			tasks: [{
+				id: "740F743EDE92CF3A"
+				item: "create:blaze_cake"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"213682223D73A690"
+				"37AA8441440BF673"
+			]
+			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest44.description1}"]
+			id: "55C58DBE6BE16B1C"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest44.subtitle}"
+			tasks: [{
+				id: "13865CE8A30B795E"
+				item: "kubejs:za_ingot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1CBD49955AFAF545"]
+			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest45.description1}"]
+			icon: "immersiveengineering:concrete_bucket"
+			id: "5603929D7B14B8ED"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest45.subtitle}"
+			tasks: [
+				{
+					id: "2B60A68649A7EBC9"
+					item: "immersiveengineering:concrete_bucket"
+					type: "item"
+				}
+				{
+					id: "0A93D7631B853C00"
+					item: "immersiveengineering:concrete_leaded"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0EA7E42D07C4BC01"]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest46.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest46.description2}"
+				""
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest46.description3}"
+			]
+			icon: "immersiveengineering:mixer"
+			id: "1CBD49955AFAF545"
+			rewards: [{
+				id: "2D0802892FDBAD18"
+				item: "largemeals:pasta_with_mushroom_sauce"
+				type: "item"
+			}]
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest46.subtitle}"
+			tasks: [
+				{
+					count: 4L
+					id: "67DD3016AAF23795"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "3D27CDF969EA9D33"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					id: "31FA7AFD99629E5F"
+					item: "immersiveengineering:steel_fence"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "186D52BAA5EEDD88"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "781816426F625D40"
+					item: "immersiveengineering:sheetmetal_iron"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "212694FB371262DE"
+					item: "kubejs:fluid_engineering"
+					type: "item"
+				}
+				{
+					id: "21E20CB5933B696A"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest46.title}"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5603929D7B14B8ED"]
+			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest47.description1}"]
+			id: "726AC9F2DA602E72"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest47.subtitle}"
+			tasks: [{
+				id: "6678792B99F4EAA7"
+				item: "immersiveengineering:concrete_leaded"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest47.title}"
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["585C0F11261551FD"]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest48.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest48.description2}"
+			]
+			id: "68A8BCB8BCBC8C1B"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest48.subtitle}"
+			tasks: [{
+				id: "7902A64DAF139629"
+				item: "immersiveengineering:dust_aluminum"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["55C58DBE6BE16B1C"]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest49.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest49.description2}"
+			]
+			id: "2415442F916846C5"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest49.subtitle}"
+			tasks: [{
+				id: "57771278C9D9F15F"
+				item: "kubejs:za_sheet"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["011BB3E4881AA3F2"]
+			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest50.description1}"]
+			id: "506AC24B2EAF854D"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest50.subtitle}"
+			tasks: [{
+				id: "1C27A78FD6364A0A"
+				item: "scguns:charged_amethyst_shard"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1CBD49955AFAF545"]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest51.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest51.description2}"
+			]
+			id: "5FBA1CE252E08940"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest51.subtitle}"
+			tasks: [{
+				id: "1BFDF583454895A8"
+				item: "immersiveengineering:redstone_acid_bucket"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest51.title}"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["56F4C82F40DFA8F5"]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest52.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest52.description2}"
+			]
+			id: "0840ADE2B5089286"
+			rewards: [{
+				count: 3
+				id: "445624EC783335F4"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest52.subtitle}"
+			tasks: [{
+				id: "0C96361017719BA2"
+				item: "createaddition:modular_accumulator"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest52.title}"
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3E60B78B0EE34B75"]
+			description: [
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest53.description1}"
+				"{ftbquests.chapter.59B76A6AF749A1DB.quest53.description2}"
+			]
+			icon: "immersiveengineering:bottling_machine"
+			id: "213682223D73A690"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest53.subtitle}"
+			tasks: [
+				{
+					count: 2L
+					id: "5A7981B11C068977"
+					item: "immersiveengineering:light_engineering"
+					type: "item"
+				}
+				{
+					id: "63E79F0CF358B3CB"
+					item: "immersiveengineering:rs_engineering"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "1C1F2FC8DEADEA31"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					type: "item"
+				}
+				{
+					id: "71785F67E2E86F93"
+					item: "immersiveengineering:fluid_pump"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "025E9916C4C018DA"
+					item: { Count: 3, id: "immersiveengineering:conveyor_basic" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2A10781D1CF85551"
+					item: { Count: 2, id: "immersiveengineering:radiator" }
+					type: "item"
+				}
+				{
+					id: "4736D7C3D7D60504"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest53.title}"
+			x: 7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"2BE7BA0BE9F2DBC9"
+				"2CB1E7FC5CBF6B2C"
+			]
+			description: ["{ftbquests.chapter.59B76A6AF749A1DB.quest54.description1}"]
+			id: "37AA8441440BF673"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest54.subtitle}"
+			tasks: [{
+				id: "1A21E526FE05FFC6"
+				item: "kubejs:molten_za_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"583407C7537AE9C9"
+				"2CB1E7FC5CBF6B2C"
+			]
+			icon: "scguns:diamond_steel_ingot"
+			id: "5B6C1785EDD9BC65"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.59B76A6AF749A1DB.quest55.subtitle}"
+			tasks: [
+				{
+					id: "150BE482A3F4CC2C"
+					item: "scguns:diamond_steel_blend"
+					type: "item"
+				}
+				{
+					id: "59927C8283555494"
+					item: "scguns:diamond_steel_ingot"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.59B76A6AF749A1DB.quest55.title}"
+			x: 5.0d
+			y: -4.0d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.59B76A6AF749A1DB.subtitle}"]
+	subtitle: ["{ftbquests.chapter.59B76A6AF749A1DB.subtitle0}"]
 	title: "{ftbquests.chapter.59B76A6AF749A1DB.title}"
 }

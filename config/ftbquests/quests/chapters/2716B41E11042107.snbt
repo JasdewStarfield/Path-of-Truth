@@ -47,10 +47,10 @@
 		{
 			dependencies: ["5FB9514C6DE7AD58"]
 			description: [
-				"通过这个工程块，你可以开始构建一些真正意义上的重型机器了）"
+				"{ftbquests.chapter.2716B41E11042107.quest1.description1}"
 				""
-				"&o&m&c当然，更沉重的地方大抵是它的造价&r&r&r"
-				"&o&b更悲凉的是后续你会需要很多……也许应该看看怎么通过魔法创造遗忆守卫？&r&r"
+				"{ftbquests.chapter.2716B41E11042107.quest1.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest1.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "143E6A57D69BAE65"
@@ -61,21 +61,21 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "重大工程"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest1.subtitle}"
 			tasks: [{
 				id: "55ACF0AF13FB158B"
 				item: "immersiveengineering:heavy_engineering"
 				type: "item"
 			}]
-			title: "【起点】现代工业基石"
+			title: "{ftbquests.chapter.2716B41E11042107.quest1.title}"
 			x: 0.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
-			description: ["合格的霉国军人应该在听到石油这个词的时候一跃而起！"]
+			description: ["{ftbquests.chapter.2716B41E11042107.quest2.description1}"]
 			id: "2E8FF0455E304658"
-			subtitle: "美军前置科技"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest2.subtitle}"
 			tasks: [{
 				id: "38E7CABF96749223"
 				item: "createdieselgenerators:oil_scanner"
@@ -87,12 +87,12 @@
 		{
 			dependencies: ["2E8FF0455E304658"]
 			description: [
-				"现在，你的现代工业基础需要经过长途跋涉来到地面，所以——你至少得给人家弄条路）"
-				"“拼命也要挖出大油田！”"
+				"{ftbquests.chapter.2716B41E11042107.quest3.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest3.description2}"
 			]
 			icon: "createdieselgenerators:pumpjack_hole"
 			id: "22B1EE261A88D9D1"
-			subtitle: "注入动力"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest3.subtitle}"
 			tasks: [
 				{
 					count: 64L
@@ -106,7 +106,7 @@
 					type: "item"
 				}
 			]
-			title: "工业血管"
+			title: "{ftbquests.chapter.2716B41E11042107.quest3.title}"
 			x: 0.0d
 			y: 6.0d
 		}
@@ -116,15 +116,15 @@
 				"143E6A57D69BAE65"
 			]
 			description: [
-				"具体可以参考思索说明"
-				"虽然是古老的磕头机，但也足够你来使用了）"
-				"只需要从抽油机曲柄输入动力，就可以抽出原油了！"
+				"{ftbquests.chapter.2716B41E11042107.quest4.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest4.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest4.description3}"
 				""
-				"请注意：组装后，上方的整个横向杆状结构都需要用强力胶粘成一个整体（思索内有示意图），这样才能正常运行！"
+				"{ftbquests.chapter.2716B41E11042107.quest4.description4}"
 			]
 			icon: "createdieselgenerators:pumpjack_crank"
 			id: "08B3DECCC7EBD7CE"
-			subtitle: "美军战时科技"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest4.subtitle}"
 			tasks: [
 				{
 					id: "58127A5BBC890877"
@@ -153,39 +153,39 @@
 					type: "item"
 				}
 			]
-			title: "组装抽油机"
+			title: "{ftbquests.chapter.2716B41E11042107.quest4.title}"
 			x: 0.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["08B3DECCC7EBD7CE"]
 			description: [
-				"普通的原油什么都做不了，但是相应的，处理后的原油能做的事情太多了。"
-				"所以，现在你需要分馏塔——而且需要不止一个！"
+				"{ftbquests.chapter.2716B41E11042107.quest5.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest5.description2}"
 			]
 			id: "1AAD83556BD302DD"
-			subtitle: "黏糊糊"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest5.subtitle}"
 			tasks: [{
 				id: "1BAB34C7031C612D"
 				item: "createdieselgenerators:crude_oil_bucket"
 				type: "item"
 			}]
-			title: "液体宝藏"
+			title: "{ftbquests.chapter.2716B41E11042107.quest5.title}"
 			x: 2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
 			description: [
-				"&4一切矿物需求的终极解决手段&r"
+				"{ftbquests.chapter.2716B41E11042107.quest6.description1}"
 				""
-				"通过斗轮式采矿机，你可以几乎凭空产出矿物）"
-				"虽然理论上是矿脉开采没错，也需要你提前测定就是了，但矿物的产量仍然惊人。"
+				"{ftbquests.chapter.2716B41E11042107.quest6.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest6.description3}"
 			]
 			icon: "immersiveengineering:excavator"
 			id: "71B673D310440EBC"
 			shape: "diamond"
-			subtitle: "矿来！"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest6.subtitle}"
 			tasks: [
 				{
 					count: 16L
@@ -240,22 +240,22 @@
 					type: "item"
 				}
 			]
-			title: "搭建斗轮式采矿机"
+			title: "{ftbquests.chapter.2716B41E11042107.quest6.title}"
 			x: -2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["71B673D310440EBC"]
 			description: [
-				"斗轮式采矿机的采矿量取决于一片区域的矿物储量（非物理意义上）"
-				"而这就是检查储量的工具（笑"
+				"{ftbquests.chapter.2716B41E11042107.quest7.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest7.description2}"
 				""
-				"想要知道具体有哪些矿脉，以及每个矿脉产出什么类型的矿产，请看工程师手册的资源章节"
-				"&a我们很贴心地为除了（原来就没有矿脉的）末地以外的所有维度添加了自定义的矿脉&r，所以你可以成为跨维度矿业老板了（"
+				"{ftbquests.chapter.2716B41E11042107.quest7.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest7.description4}"
 			]
 			id: "7B7978B0964080F3"
 			shape: "diamond"
-			subtitle: "我矿脉呢？"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest7.subtitle}"
 			tasks: [{
 				id: "6F18410C24225D27"
 				item: {
@@ -276,12 +276,12 @@
 				"1AAD83556BD302DD"
 			]
 			description: [
-				"那就热一下）"
-				"通过大型分馏，现代工业之美将会在你面前展开。"
+				"{ftbquests.chapter.2716B41E11042107.quest8.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest8.description2}"
 			]
 			icon: "createdieselgenerators:distillation_controller"
 			id: "3FCEB9256A15A4B2"
-			subtitle: "静置无法分层……"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest8.subtitle}"
 			tasks: [
 				{
 					id: "421CA7F325EAB59A"
@@ -300,7 +300,7 @@
 					type: "item"
 				}
 			]
-			title: "搭建分馏塔"
+			title: "{ftbquests.chapter.2716B41E11042107.quest8.title}"
 			x: 2.0d
 			y: 0.0d
 		}
@@ -310,11 +310,11 @@
 				"1AAD83556BD302DD"
 			]
 			description: [
-				"重油还可以进一步分解——然后获得你需要的一些特定资源）"
-				"这可以让你的某些被精度干扰概率的配方成功率提升到百分百……"
+				"{ftbquests.chapter.2716B41E11042107.quest9.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest9.description2}"
 			]
 			id: "107639F1A8166B9C"
-			subtitle: "沉重坚实"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest9.subtitle}"
 			tasks: [{
 				id: "0586BF2CC0F85178"
 				item: "kubejs:heavy_oil_bucket"
@@ -328,9 +328,9 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
-			description: ["生物柴油对应的本体……以及某些发动机的燃料。"]
+			description: ["{ftbquests.chapter.2716B41E11042107.quest10.description1}"]
 			id: "443ED09E810FE23D"
-			subtitle: "轰！"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest10.subtitle}"
 			tasks: [{
 				id: "77B2B9F4B798D3F8"
 				item: "createdieselgenerators:diesel_bucket"
@@ -345,13 +345,13 @@
 				"1AAD83556BD302DD"
 			]
 			description: [
-				"下界合金易溶于汽油，但显然合成下界合金的过程中，除了残骸碎片，我们还需要一些黄色的东西……"
+				"{ftbquests.chapter.2716B41E11042107.quest11.description1}"
 				""
-				"&o&e*你就说琥珀金是不是金吧）&r&r"
+				"{ftbquests.chapter.2716B41E11042107.quest11.description2}"
 			]
 			id: "2718164469D544DF"
 			shape: "circle"
-			subtitle: "也许是燃料"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest11.subtitle}"
 			tasks: [{
 				id: "70D5188BB7D36B40"
 				item: "createdieselgenerators:gasoline_bucket"
@@ -366,11 +366,11 @@
 				"1AAD83556BD302DD"
 			]
 			description: [
-				"现代工业最大的依靠之一就是塑料，而塑料的来源就是石油。"
-				"现在你需要尝试复刻这一过程，来触及到这一世界的工业巅峰。"
+				"{ftbquests.chapter.2716B41E11042107.quest12.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest12.description2}"
 			]
 			id: "46A5743F6DC8054D"
-			subtitle: "现代工业第一步"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest12.subtitle}"
 			tasks: [{
 				id: "62E21C117613BBBE"
 				item: "kubejs:lpg_bucket"
@@ -381,9 +381,9 @@
 		}
 		{
 			dependencies: ["46A5743F6DC8054D"]
-			description: ["你开始接近现代了，你找到了塑料，但是我们不提供免费垃圾袋（"]
+			description: ["{ftbquests.chapter.2716B41E11042107.quest13.description1}"]
 			id: "27AC0014531AA954"
-			subtitle: "塑料！文明之光！"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest13.subtitle}"
 			tasks: [{
 				id: "5249485F3375C40B"
 				item: "kubejs:liquid_plastic_bucket"
@@ -395,9 +395,9 @@
 		{
 			dependencies: ["27AC0014531AA954"]
 			description: [
-				"但是你不能把塑料做成眼镜框，也不可以在这里唱《看，猫头鹰》"
-				"塑胶是电子元件的基础材料——或者说底板）"
-				"很真实吧&m&o&b（很复杂吧&r&r&r"
+				"{ftbquests.chapter.2716B41E11042107.quest14.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest14.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest14.description3}"
 			]
 			icon: "immersiveengineering:plate_duroplast"
 			id: "3E21C675D4F61E6B"
@@ -408,13 +408,13 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "你疑似有点城市化了"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest14.subtitle}"
 			tasks: [{
 				id: "484A50EA23068A83"
 				item: "immersiveengineering:plate_duroplast"
 				type: "item"
 			}]
-			title: "塑胶"
+			title: "{ftbquests.chapter.2716B41E11042107.quest14.title}"
 			x: 12.0d
 			y: -2.0d
 		}
@@ -424,11 +424,11 @@
 				"10F4740EEDA142EE"
 			]
 			description: [
-				"这将是对于你未来&b（可能存在的）电子厂生涯的第一步&r预演："
-				"看到纯粹的，还没有焊接任何元件的板子）"
+				"{ftbquests.chapter.2716B41E11042107.quest15.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest15.description2}"
 			]
 			id: "32DA53E6EDA0AC90"
-			subtitle: "空板子"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest15.subtitle}"
 			tasks: [{
 				id: "48C588AD1B77239B"
 				item: "kubejs:electronic_circuit_board"
@@ -444,13 +444,13 @@
 				"7C566E8D9F54FEF9"
 			]
 			description: [
-				"自己给自己焊板子你还想要工资？不可能的，朋友）"
-				"为了在这个世界顺利使用精密的电子元件，你需要使用性质更好的材料……并且需要一些魔法的力量。"
+				"{ftbquests.chapter.2716B41E11042107.quest16.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest16.description2}"
 				""
-				"&o&b提示：盖亚魂锭可以通过贤者之石分别炼制泰拉钢锭和盖亚之魂组合而成！&r&r"
+				"{ftbquests.chapter.2716B41E11042107.quest16.description3}"
 			]
 			id: "538F608DF5017A6A"
-			subtitle: "没有工资"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest16.subtitle}"
 			tasks: [{
 				id: "4BE26B418AD3ABE6"
 				item: "immersiveengineering:component_electronic_adv"
@@ -466,13 +466,13 @@
 				"68A3C3EE83073415"
 			]
 			description: [
-				"终于，你进入了电子时代）"
-				"虽然MC不能为你提供完整的计算机，但你已经接近这个世界的真相了。"
+				"{ftbquests.chapter.2716B41E11042107.quest17.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest17.description2}"
 			]
 			id: "07B58ED0910776DF"
 			shape: "gear"
 			size: 2.0d
-			subtitle: "高精尖"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest17.subtitle}"
 			tasks: [{
 				id: "5EBFA215B48BC68C"
 				item: "kubejs:electronic_engineering"
@@ -484,10 +484,10 @@
 		{
 			dependencies: ["143E6A57D69BAE65"]
 			description: [
-				"对于武器爱好者而言，目前终于出现了一些比一般枪械更高级的东西……"
-				"化学喷射器&d需要特定的液体&r（这是显然的）并造成喷洒效果，而磁轨炮则可以&c发射不同的棒状物&r并造成不同的效果。"
+				"{ftbquests.chapter.2716B41E11042107.quest18.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest18.description2}"
 				""
-				"&o&m&7*一个洒水一个用棒子听起来很奇怪……&r&r&r"
+				"{ftbquests.chapter.2716B41E11042107.quest18.description3}"
 			]
 			id: "52AF7DAADA5AA0EA"
 			rewards: [
@@ -504,7 +504,7 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "哒哒哒哒哒"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest18.subtitle}"
 			tasks: [
 				{
 					id: "14D9A7AD66EB0E8E"
@@ -535,17 +535,17 @@
 					type: "item"
 				}
 			]
-			title: "现代军武库"
+			title: "{ftbquests.chapter.2716B41E11042107.quest18.title}"
 			x: -1.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
 			description: [
-				"相较于机械动力的工具而言，沉浸工具的好处之一是可以拿在手上）"
-				"不过最好提前准备燃料）"
+				"{ftbquests.chapter.2716B41E11042107.quest19.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest19.description2}"
 				""
-				"&b&o*可能效率不行但建模一定好看&r&r"
+				"{ftbquests.chapter.2716B41E11042107.quest19.description3}"
 			]
 			id: "7FBBD3EAF8C168D1"
 			rewards: [
@@ -567,7 +567,7 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "电动工具"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest19.subtitle}"
 			tasks: [
 				{
 					id: "01A2A7EE3E4B6CE5"
@@ -598,18 +598,18 @@
 					type: "item"
 				}
 			]
-			title: "机械化工具"
+			title: "{ftbquests.chapter.2716B41E11042107.quest19.title}"
 			x: 1.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["07B58ED0910776DF"]
 			description: [
-				"&a【完成后解锁主线章节：6 统合机械，驾驭魔法】&r"
-				"工业侧的作者oc之一——非常可爱）"
-				"也是通往世界真相的通行证）"
-				"&l&c这大抵是难以置信的序列组装配方（&r&r"
-				"工业的本质就是以机械直达无限，而很快你就将能触碰到这一概念的边缘。"
+				"{ftbquests.chapter.2716B41E11042107.quest20.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest20.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest20.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest20.description4}"
+				"{ftbquests.chapter.2716B41E11042107.quest20.description5}"
 			]
 			id: "2D906487EC6F1A01"
 			rewards: [{
@@ -619,23 +619,23 @@
 			}]
 			shape: "gear"
 			size: 4.0d
-			subtitle: "很可爱，对吧"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest20.subtitle}"
 			tasks: [{
 				id: "5DB8E7650A917BFD"
 				item: "kubejs:buran"
 				type: "item"
 			}]
-			title: "【终点】暴风雪"
+			title: "{ftbquests.chapter.2716B41E11042107.quest20.title}"
 			x: 12.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["3CA5BEEE4B787688"]
 			description: [
-				"手搓怎么可能搓出这么宝贵的合金呢，对吧）"
-				"现在你需要&a真正的冶炼&r才能得到下界合金！"
+				"{ftbquests.chapter.2716B41E11042107.quest21.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest21.description2}"
 				""
-				"&o&7注：原版下界合金护甲的防御力被&c大大提升&r&o&7了。所以还是值得用它升级你的钻石甲的&r&r"
+				"{ftbquests.chapter.2716B41E11042107.quest21.description3}"
 			]
 			id: "7C566E8D9F54FEF9"
 			rewards: [{
@@ -645,13 +645,13 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "难度++"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest21.subtitle}"
 			tasks: [{
 				id: "1A8DCD9556C0A248"
 				item: "minecraft:netherite_ingot"
 				type: "item"
 			}]
-			title: "另一种黑金"
+			title: "{ftbquests.chapter.2716B41E11042107.quest21.title}"
 			x: 10.0d
 			y: 0.0d
 		}
@@ -660,7 +660,7 @@
 				"71B673D310440EBC"
 				"7B7978B0964080F3"
 			]
-			description: ["不仅如此，岩芯摆放下来也是很好的装饰品"]
+			description: ["{ftbquests.chapter.2716B41E11042107.quest22.description1}"]
 			id: "0B043034C7178F75"
 			rewards: [{
 				id: "0428279BAF7C1220"
@@ -668,7 +668,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "更精确的矿脉采样工具"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest22.subtitle}"
 			tasks: [{
 				id: "67B5112D5F9FF788"
 				item: "immersiveengineering:sample_drill"
@@ -680,10 +680,10 @@
 		{
 			dependencies: ["07B58ED0910776DF"]
 			description: [
-				"&c你解锁了本整合包内最强大的物流兼存储管理模组——精致存储！&r"
-				"&o&7进入电子时代才能合成电脑，这很合理吧……&r&r"
-				"如果你要向着终末章节冲刺，那么像这样方便的物流会使你搭建产线方便不少。"
-				"至于具体用法，请参考网络教程，这里不再赘述。"
+				"{ftbquests.chapter.2716B41E11042107.quest23.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest23.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest23.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest23.description4}"
 			]
 			id: "142E14F831B0F7BE"
 			rewards: [{
@@ -692,23 +692,23 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "别想太多，会头疼的"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest23.subtitle}"
 			tasks: [{
 				id: "5D1B5A24E2694FCF"
 				item: "refinedstorage:grid"
 				type: "item"
 			}]
-			title: "精致存储"
+			title: "{ftbquests.chapter.2716B41E11042107.quest23.title}"
 			x: 14.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["107639F1A8166B9C"]
 			description: [
-				"相信走到这一步的你已经被昂贵的构件中的概率系统折磨过了……"
-				"但现在，通过分馏重油，你有了润滑油！在构件配方的&2每个循环第一步&r中添加一点润滑油，就能降低安装时的磨损，保证该构件的100%产出！"
+				"{ftbquests.chapter.2716B41E11042107.quest24.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest24.description2}"
 				""
-				"&n适用范围：精密构件、铅酸构件、钢铁构件、遗忆构件、裂变电池、高级电子元件&r"
+				"{ftbquests.chapter.2716B41E11042107.quest24.description3}"
 			]
 			id: "36CD0821EDDA721F"
 			rewards: [{
@@ -717,24 +717,24 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "某巧克力打钱（不是）"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest24.subtitle}"
 			tasks: [{
 				id: "2854B9B83C087E71"
 				item: "kubejs:lubricant_bucket"
 				type: "item"
 			}]
-			title: "纵享丝滑"
+			title: "{ftbquests.chapter.2716B41E11042107.quest24.title}"
 			x: 6.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["107639F1A8166B9C"]
 			description: [
-				"通过&5水火交融的力量&r催化重油，就能够获得沥青——可以拿来铺路，不过这也有些浪费……"
-				"毕竟沥青更适合拿来做核反应堆）"
+				"{ftbquests.chapter.2716B41E11042107.quest25.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest25.description2}"
 			]
 			id: "0A20C8766DEA529B"
-			subtitle: "黑暗侵染（物理）"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest25.subtitle}"
 			tasks: [{
 				id: "65A520F21476E743"
 				item: "createdieselgenerators:asphalt_block"
@@ -749,17 +749,17 @@
 				"443ED09E810FE23D"
 			]
 			description: [
-				"通过搅拌机，你可以将铀粉和柴油进行调和，获得一些足够绿的液体……"
-				"当然，也足够危险。"
+				"{ftbquests.chapter.2716B41E11042107.quest26.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest26.description2}"
 			]
 			id: "718195A4744D12C1"
-			subtitle: "头顶绿油油的"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest26.subtitle}"
 			tasks: [{
 				id: "3BDEEA9CB2941461"
 				item: "createnuclear:uranium_bucket"
 				type: "item"
 			}]
-			title: "放射性物质"
+			title: "{ftbquests.chapter.2716B41E11042107.quest26.title}"
 			x: 2.0d
 			y: 4.0d
 		}
@@ -768,26 +768,26 @@
 				"718195A4744D12C1"
 				"3FCEB9256A15A4B2"
 			]
-			description: ["这个不能喝。真的不能。"]
+			description: ["{ftbquests.chapter.2716B41E11042107.quest27.description1}"]
 			id: "10786A8DC61BD418"
-			subtitle: "倍率：10x"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest27.subtitle}"
 			tasks: [{
 				id: "44C7A3EFEDE37838"
 				item: "kubejs:molten_enriched_uranium_bucket"
 				type: "item"
 			}]
-			title: "升腾！"
+			title: "{ftbquests.chapter.2716B41E11042107.quest27.title}"
 			x: 4.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["10786A8DC61BD418"]
 			description: [
-				"记得穿好防护服再来处理这些东西……"
-				"有点过于危险了。"
+				"{ftbquests.chapter.2716B41E11042107.quest28.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest28.description2}"
 			]
 			id: "1BD268D137CFF394"
-			subtitle: "也不能吃！"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest28.subtitle}"
 			tasks: [{
 				id: "713903ADD21CE285"
 				item: "createnuclear:yellowcake"
@@ -802,25 +802,25 @@
 				"392E8FC01684BDEC"
 			]
 			description: [
-				"终于，能够压制成铀棒的合格黄饼出现了。"
-				"跳跃的能量弧让它&a看起来就很可疑&r，但你总得用的，毕竟没有这些魔法能量，它们也无法当作&c核反应燃料&r。"
+				"{ftbquests.chapter.2716B41E11042107.quest29.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest29.description2}"
 			]
 			id: "17A821D8A88F11E4"
-			subtitle: "再多看一眼就会爆炸"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest29.subtitle}"
 			tasks: [{
 				id: "6BB0FA76D90E6E36"
 				item: "createnuclear:enriched_yellowcake"
 				type: "item"
 			}]
-			title: "附魔黄饼"
+			title: "{ftbquests.chapter.2716B41E11042107.quest29.title}"
 			x: 8.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["2718164469D544DF"]
-			description: ["获得真正意义上的终极金属，只差一次灌装成型了！"]
+			description: ["{ftbquests.chapter.2716B41E11042107.quest30.description1}"]
 			id: "3CA5BEEE4B787688"
-			subtitle: "只差一步！"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest30.subtitle}"
 			tasks: [{
 				id: "1F9CA26BB20B5A1E"
 				item: "kubejs:molten_netherite_bucket"
@@ -832,13 +832,13 @@
 		{
 			dependencies: ["17A821D8A88F11E4"]
 			description: [
-				"想要控制一个核反应堆，铀棒和石墨棒是需要&c同时插入&r的，单独插入铀棒会导致一些不可控事件的发生。"
+				"{ftbquests.chapter.2716B41E11042107.quest31.description1}"
 				""
-				"&o&a*希望你不要想着放个大烟花玩玩……&r&r"
+				"{ftbquests.chapter.2716B41E11042107.quest31.description2}"
 			]
 			icon: "createnuclear:uranium_rod"
 			id: "034ED4F84F07207A"
-			subtitle: "双管齐下"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest31.subtitle}"
 			tasks: [
 				{
 					id: "3A2BA86DDFEB266C"
@@ -851,7 +851,7 @@
 					type: "item"
 				}
 			]
-			title: "控制棒"
+			title: "{ftbquests.chapter.2716B41E11042107.quest31.title}"
 			x: 9.0d
 			y: 5.0d
 		}
@@ -860,9 +860,9 @@
 				"0A20C8766DEA529B"
 				"7C566E8D9F54FEF9"
 			]
-			description: ["最硬核的保护，将你和反应堆运行产生的辐射隔绝开来。"]
+			description: ["{ftbquests.chapter.2716B41E11042107.quest32.description1}"]
 			id: "7D6BF4F6E28213D6"
-			subtitle: "高墙常筑"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest32.subtitle}"
 			tasks: [{
 				id: "1AF43DA34FB9AA48"
 				item: "createnuclear:reactor_casing"
@@ -874,11 +874,11 @@
 		{
 			dependencies: ["7C566E8D9F54FEF9"]
 			description: [
-				"只有下界合金才能永久承受住激光的灼烧……"
-				"接下来你将在游戏里享受拥有光刻机的快感（x"
+				"{ftbquests.chapter.2716B41E11042107.quest33.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest33.description2}"
 			]
 			id: "10F4740EEDA142EE"
-			subtitle: "高能高热"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest33.subtitle}"
 			tasks: [{
 				id: "0F1FAF424F5151D4"
 				item: "vintageimprovements:laser"
@@ -894,16 +894,16 @@
 				"7D6BF4F6E28213D6"
 			]
 			description: [
-				"按照思索搭建，投入材料，你就能收获数以百万计的应力……前提是&c你要维持它的运作&r。"
+				"{ftbquests.chapter.2716B41E11042107.quest34.description1}"
 				""
-				"你可以使用反应堆控制蓝图配置投料的配比。投料包括铀棒和石墨棒，会逐渐消耗，配置的数量越多消耗越快。&b一根铀棒+25堆温，一根石墨棒-10堆温。&r当两种棒任意一种用完，核反应堆就会自动停机。"
-				"&3至少需要三个铀棒、一个石墨棒才能启动反应堆。&r核反应堆输出的应力与堆温挂钩。"
-				"当核反应堆&4堆温超过1000&r，核反应堆就会&4停机并在数分钟后爆炸&r。"
+				"{ftbquests.chapter.2716B41E11042107.quest34.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest34.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest34.description4}"
 			]
 			icon: "createnuclear:reactor_blueprint_item"
 			id: "5842F5E1694C4F74"
 			shape: "diamond"
-			subtitle: "（真正的）应力自由"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest34.subtitle}"
 			tasks: [
 				{
 					id: "1673EC25B17F9B8D"
@@ -916,20 +916,20 @@
 					type: "item"
 				}
 			]
-			title: "核反应堆"
+			title: "{ftbquests.chapter.2716B41E11042107.quest34.title}"
 			x: 10.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["034ED4F84F07207A"]
 			description: [
-				"核能，输出最长效的能源之一。"
-				"当然也是短效输出最为杰出的能源之一，但这里&c没有核弹&r，所以还是想想如何利用这些电池把自己变成核动力战士吧。"
+				"{ftbquests.chapter.2716B41E11042107.quest35.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest35.description2}"
 				""
-				"由于已经安全封装，携带这件物品并不会带来辐射。"
+				"{ftbquests.chapter.2716B41E11042107.quest35.description3}"
 			]
 			id: "68A3C3EE83073415"
-			subtitle: "长效动力"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest35.subtitle}"
 			tasks: [{
 				id: "603B831F0FAB4FC3"
 				item: "kubejs:fission_cell"
@@ -941,52 +941,52 @@
 		{
 			dependencies: ["1BD268D137CFF394"]
 			description: [
-				"想要再次压缩黄饼，就不得不依靠一些&c魔法的力量&r。"
-				"通过&b灵魂与魔力集成的核心&r，以&8黑暗金属&r为框架压制&9富饶的灵魂土&r，你就能借此为燃料，点燃这种灼烧灵魂的火焰。"
+				"{ftbquests.chapter.2716B41E11042107.quest36.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest36.description2}"
 				""
-				"&o&7*如果位置放错了挖掉重做即可，核心的富集灵魂土不会损耗。&r&r"
+				"{ftbquests.chapter.2716B41E11042107.quest36.description3}"
 			]
 			id: "392E8FC01684BDEC"
-			subtitle: "我的邪焰会焚尽天空！"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest36.subtitle}"
 			tasks: [{
 				id: "55608BB2524BE870"
 				item: "createnuclear:enriching_campfire"
 				type: "item"
 			}]
-			title: "燃烧军团打进来了？"
+			title: "{ftbquests.chapter.2716B41E11042107.quest36.title}"
 			x: 7.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["07B58ED0910776DF"]
 			description: [
-				"通过焦化蓝图和足够精密的计算结构，你可以复制任何你使用的弹药了！"
-				"&o&7本关无限制火力供应.jpg&r&r"
+				"{ftbquests.chapter.2716B41E11042107.quest37.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest37.description2}"
 			]
 			id: "31A409238967A7E8"
 			shape: "diamond"
-			subtitle: "Fire！"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest37.subtitle}"
 			tasks: [{
 				id: "69D43304D0DC8337"
 				item: "scguns:creative_ammo_box"
 				type: "item"
 			}]
-			title: "无限制火力"
+			title: "{ftbquests.chapter.2716B41E11042107.quest37.title}"
 			x: 13.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["07B58ED0910776DF"]
-			description: ["通过魔法的炼金之力整合抽屉升级，你部分触碰了存储方面的无限……"]
+			description: ["{ftbquests.chapter.2716B41E11042107.quest38.description1}"]
 			id: "51C0DFB50C1A4A5B"
 			shape: "diamond"
-			subtitle: "大肚能容……"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest38.subtitle}"
 			tasks: [{
 				id: "2DE1E47665A2393D"
 				item: "storagedrawers:creative_storage_upgrade"
 				type: "item"
 			}]
-			title: "无尽存储"
+			title: "{ftbquests.chapter.2716B41E11042107.quest38.title}"
 			x: 13.5d
 			y: 5.5d
 		}
@@ -1011,7 +1011,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "现在你就不怕辐射了！"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest39.subtitle}"
 			tasks: [
 				{
 					id: "61709282956B786A"
@@ -1022,7 +1022,7 @@
 							value: "createnuclear:anti_radiation_helmet_full_dye"
 						}
 					}
-					title: "任意防辐射头盔"
+					title: "{ftbquests.chapter.2716B41E11042107.quest39.task_7021272908620855402.title}"
 					type: "item"
 				}
 				{
@@ -1034,7 +1034,7 @@
 							value: "createnuclear:anti_radiation_chestplate_full_dye"
 						}
 					}
-					title: "任意防辐射胸甲"
+					title: "{ftbquests.chapter.2716B41E11042107.quest39.task_2560588345615612067.title}"
 					type: "item"
 				}
 				{
@@ -1046,7 +1046,7 @@
 							value: "createnuclear:anti_radiation_leggings_full_dye"
 						}
 					}
-					title: "任意防辐射护腿"
+					title: "{ftbquests.chapter.2716B41E11042107.quest39.task_1249167966573111437.title}"
 					type: "item"
 				}
 				{
@@ -1066,13 +1066,13 @@
 					type: "item"
 				}
 			]
-			title: "防辐射措施"
+			title: "{ftbquests.chapter.2716B41E11042107.quest39.title}"
 			x: 3.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
-			description: ["携带放射性物品可能会让你进入不良状态！严重等级与你携带的放射性物品总数有关：只要数量大于16个，放射性症状就会开始显现……"]
+			description: ["{ftbquests.chapter.2716B41E11042107.quest40.description1}"]
 			icon: "createdeco:decal_radioactive"
 			id: "63227B2783602134"
 			rewards: [{
@@ -1081,7 +1081,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "总之就是安全第一"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest40.subtitle}"
 			tasks: [
 				{
 					id: "61F8B7CB762D992B"
@@ -1092,16 +1092,16 @@
 							value: "kubejs:radioactive"
 						}
 					}
-					title: "放射性物品"
+					title: "{ftbquests.chapter.2716B41E11042107.quest40.task_7059594500392196395.title}"
 					type: "item"
 				}
 				{
 					id: "0233AF7BB91AB279"
-					title: "好口怕"
+					title: "{ftbquests.chapter.2716B41E11042107.quest40.task_158663357809472121.title}"
 					type: "checkmark"
 				}
 			]
-			title: "小心辐射！"
+			title: "{ftbquests.chapter.2716B41E11042107.quest40.title}"
 			x: 2.0d
 			y: 6.0d
 		}
@@ -1110,7 +1110,7 @@
 			icon: "scguns:scorched_ingot"
 			id: "509A8421F88CE498"
 			shape: "diamond"
-			subtitle: "响啊，很响啊（指枪械激发声）"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest41.subtitle}"
 			tasks: [
 				{
 					id: "0E77AA317B63BAEB"
@@ -1123,20 +1123,20 @@
 					type: "item"
 				}
 			]
-			title: "香啊，很香啊（指焦香味）"
+			title: "{ftbquests.chapter.2716B41E11042107.quest41.title}"
 			x: 9.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["7C566E8D9F54FEF9"]
 			description: [
-				"下界合金的魔法性质同样强大。"
-				"套装将拥有强大的加成，而且还可以聚合锻造出神秘的戒指。"
-				"但你不是指环王……"
+				"{ftbquests.chapter.2716B41E11042107.quest42.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest42.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest42.description3}"
 			]
 			id: "1BD543D35165DD57"
 			shape: "diamond"
-			subtitle: "没有咕噜"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest42.subtitle}"
 			tasks: [{
 				id: "28015EE7F35A709F"
 				item: "kubejs:max_magic_ring"
@@ -1146,6 +1146,6 @@
 			y: -1.0d
 		}
 	]
-	subtitle: ["Petrochemical Engineering"]
-	title: "5I 黑金与化工"
+	subtitle: ["{ftbquests.chapter.2716B41E11042107.subtitle0}"]
+	title: "{ftbquests.chapter.2716B41E11042107.title}"
 }

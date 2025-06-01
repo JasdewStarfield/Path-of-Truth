@@ -7,14 +7,32 @@
 	hide_quest_details_until_startable: true
 	icon: "minecraft:end_crystal"
 	id: "54FEB8EFCDFE57CF"
-	images: [{
-		height: 2.0d
-		image: "kubejs:textures/quests/a3.png"
-		rotation: 0.0d
-		width: 14.01388888888889d
-		x: 0.0d
-		y: -3.5d
-	}]
+	images: [
+		{
+			height: 2.0d
+			image: "kubejs:textures/quests/a3.png"
+			rotation: 0.0d
+			width: 14.01388888888889d
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			height: 2.0d
+			image: "minecraft:textures/entity/end_portal.png"
+			rotation: 45.0d
+			width: 2.0d
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			height: 2.0d
+			image: "undergarden:block/undergarden_portal"
+			rotation: 45.0d
+			width: 2.0d
+			x: -2.0d
+			y: 0.0d
+		}
+	]
 	order_index: 2
 	quest_links: [ ]
 	quests: [
@@ -54,7 +72,6 @@
 			id: "193F465F65BC13F1"
 			subtitle: "{ftbquests.chapter.54FEB8EFCDFE57CF.quest2.subtitle}"
 			tasks: [{
-				count: 12L
 				icon: "minecraft:ender_eye"
 				id: "606164797E57E03A"
 				item: "minecraft:ender_eye"
@@ -70,12 +87,28 @@
 				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest3.description1}"
 				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest3.description2}"
 				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest3.description3}"
+				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest3.description4}"
+				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest3.description5}"
+				"{@pagebreak}"
+				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest3.description6}"
+				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest3.description7}"
+				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest3.description8}"
+				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest3.description9}"
+				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest3.description10}"
+				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest3.description11}"
+				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest3.description12}"
 			]
 			id: "0C34A91AD3EBF977"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "16EFB249D488127B"
+				table_id: 3947091887552256602L
+				type: "random"
+			}]
 			subtitle: "{ftbquests.chapter.54FEB8EFCDFE57CF.quest3.subtitle}"
 			tasks: [{
-				id: "0BF9DA5D6D9EB2E2"
-				item: "botania:ender_air_bottle"
+				id: "3B46679929EC94E9"
+				item: "minecraft:dragon_breath"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.54FEB8EFCDFE57CF.quest3.title}"
@@ -141,9 +174,13 @@
 		}
 		{
 			dependencies: ["0C34A91AD3EBF977"]
-			description: ["{ftbquests.chapter.54FEB8EFCDFE57CF.quest6.description1}"]
+			description: [
+				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest6.description1}"
+				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest6.description2}"
+			]
 			id: "5067D48BC8E1CBEF"
 			rewards: [{
+				count: 8
 				id: "598C2AA55B81A613"
 				item: "irons_spellbooks:dragonskin"
 				type: "item"
@@ -163,11 +200,16 @@
 			description: [
 				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest7.description1}"
 				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest7.description2}"
-				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest7.description3}"
 				""
-				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest7.description4}"
+				"{ftbquests.chapter.54FEB8EFCDFE57CF.quest7.description3}"
 			]
 			id: "424B64AA9BB30C18"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "61549DF84C9DA6F6"
+				table_id: 5567297392411284388L
+				type: "random"
+			}]
 			subtitle: "{ftbquests.chapter.54FEB8EFCDFE57CF.quest7.subtitle}"
 			tasks: [{
 				id: "1BE9B516904B496A"
@@ -217,10 +259,11 @@
 					type: "item"
 				}
 			]
+			title: "{ftbquests.chapter.54FEB8EFCDFE57CF.quest9.title}"
 			x: -2.0d
 			y: 2.0d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.54FEB8EFCDFE57CF.subtitle}"]
+	subtitle: ["{ftbquests.chapter.54FEB8EFCDFE57CF.subtitle0}"]
 	title: "{ftbquests.chapter.54FEB8EFCDFE57CF.title}"
 }

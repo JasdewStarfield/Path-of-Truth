@@ -14,15 +14,15 @@
 			rotation: 0.0d
 			width: 1.3285714285714287d
 			x: 0.0d
-			y: -1.3d
+			y: 1.0d
 		}
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 15.0d
-			y: 4.0d
+			x: 12.0d
+			y: 10.0d
 		}
 		{
 			height: 2.0d
@@ -30,7 +30,15 @@
 			rotation: 0.0d
 			width: 18.770642201834864d
 			x: 0.0d
-			y: -6.0d
+			y: 8.0d
+		}
+		{
+			height: 2.0d
+			image: "createdeco:block/palettes/decals/decal_radioactive"
+			rotation: 0.0d
+			width: 2.0d
+			x: 8.0d
+			y: 3.5d
 		}
 	]
 	order_index: 0
@@ -61,65 +69,46 @@
 			}]
 			title: "{ftbquests.chapter.2716B41E11042107.quest1.title}"
 			x: 0.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
 			description: ["{ftbquests.chapter.2716B41E11042107.quest2.description1}"]
 			id: "2E8FF0455E304658"
-			optional: true
 			subtitle: "{ftbquests.chapter.2716B41E11042107.quest2.subtitle}"
 			tasks: [{
-				id: "7322415356A4B9EE"
-				item: "tfmg:surface_scanner"
+				id: "38E7CABF96749223"
+				item: "createdieselgenerators:oil_scanner"
 				type: "item"
 			}]
 			x: -2.0d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
-			dependencies: ["586F09D1FB8860DD"]
+			dependencies: ["2E8FF0455E304658"]
 			description: [
 				"{ftbquests.chapter.2716B41E11042107.quest3.description1}"
 				"{ftbquests.chapter.2716B41E11042107.quest3.description2}"
 			]
+			icon: "createdieselgenerators:pumpjack_hole"
 			id: "22B1EE261A88D9D1"
 			subtitle: "{ftbquests.chapter.2716B41E11042107.quest3.subtitle}"
-			tasks: [{
-				count: 64L
-				id: "7E75D3CA3B487C74"
-				item: "tfmg:industrial_pipe"
-				type: "item"
-			}]
+			tasks: [
+				{
+					count: 64L
+					id: "7E75D3CA3B487C74"
+					item: "create:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "07470EB8699EF6CC"
+					item: "createdieselgenerators:pumpjack_hole"
+					type: "item"
+				}
+			]
 			title: "{ftbquests.chapter.2716B41E11042107.quest3.title}"
 			x: 0.0d
-			y: 4.5d
-		}
-		{
-			dependencies: [
-				"2E8FF0455E304658"
-				"143E6A57D69BAE65"
-			]
-			dependency_requirement: "one_completed"
-			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest4.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest4.description2}"
-			]
-			icon: "tfmg:oil_deposit"
-			id: "586F09D1FB8860DD"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest4.subtitle}"
-			tasks: [{
-				icon: "tfmg:oil_deposit"
-				id: "5B96E1D30EE9455E"
-				observe_type: 0
-				timer: 0L
-				title: "{ftbquests.chapter.2716B41E11042107.quest4.task.title1}"
-				to_observe: "tfmg:oil_deposit"
-				type: "observation"
-			}]
-			title: "{ftbquests.chapter.2716B41E11042107.quest4.title}"
-			x: -2.0d
-			y: 6.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -127,58 +116,16 @@
 				"143E6A57D69BAE65"
 			]
 			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest5.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest5.description2}"
-				"{ftbquests.chapter.2716B41E11042107.quest5.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest4.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest4.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest4.description3}"
 				""
-				"{ftbquests.chapter.2716B41E11042107.quest5.description4}"
+				"{ftbquests.chapter.2716B41E11042107.quest4.description4}"
 			]
-			icon: "tfmg:pumpjack_crank"
+			icon: "createdieselgenerators:pumpjack_crank"
 			id: "08B3DECCC7EBD7CE"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest5.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest4.subtitle}"
 			tasks: [
-				{
-					id: "5C826AEB85CD3E79"
-					item: "tfmg:pumpjack_base"
-					type: "item"
-				}
-				{
-					id: "6C9BC4E13415DF74"
-					item: "tfmg:pumpjack_crank"
-					type: "item"
-				}
-				{
-					count: 5L
-					id: "76D35D4CC92E95EF"
-					item: "tfmg:pumpjack_hammer_part"
-					type: "item"
-				}
-				{
-					id: "4B436C4F7310AF88"
-					item: "tfmg:pumpjack_hammer_head"
-					type: "item"
-				}
-				{
-					id: "26423D76F89C59A2"
-					item: "tfmg:pumpjack_hammer_connector"
-					type: "item"
-				}
-				{
-					id: "4A5E141F12F09486"
-					item: "tfmg:pumpjack_hammer"
-					type: "item"
-				}
-				{
-					id: "1C339FBF83B4FF73"
-					item: "tfmg:machine_input"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "6AD048F09828A1E5"
-					item: "tfmg:steel_truss"
-					type: "item"
-				}
 				{
 					id: "58127A5BBC890877"
 					item: {
@@ -190,40 +137,55 @@
 					}
 					type: "item"
 				}
+				{
+					id: "44604D81B06840F1"
+					item: "createdieselgenerators:pumpjack_crank"
+					type: "item"
+				}
+				{
+					id: "78FC94DC3ACA22FB"
+					item: "createdieselgenerators:pumpjack_bearing"
+					type: "item"
+				}
+				{
+					id: "7BB10B5C90BB4970"
+					item: "createdieselgenerators:pumpjack_head"
+					type: "item"
+				}
 			]
-			title: "{ftbquests.chapter.2716B41E11042107.quest5.title}"
+			title: "{ftbquests.chapter.2716B41E11042107.quest4.title}"
 			x: 0.0d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["08B3DECCC7EBD7CE"]
 			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest6.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest6.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest5.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest5.description2}"
 			]
 			id: "1AAD83556BD302DD"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest6.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest5.subtitle}"
 			tasks: [{
-				id: "4BBF84D92E8CABE3"
-				item: "tfmg:crude_oil_fluid_bucket"
+				id: "1BAB34C7031C612D"
+				item: "createdieselgenerators:crude_oil_bucket"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.2716B41E11042107.quest6.title}"
+			title: "{ftbquests.chapter.2716B41E11042107.quest5.title}"
 			x: 2.0d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
 			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest7.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest6.description1}"
 				""
-				"{ftbquests.chapter.2716B41E11042107.quest7.description2}"
-				"{ftbquests.chapter.2716B41E11042107.quest7.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest6.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest6.description3}"
 			]
 			icon: "immersiveengineering:excavator"
 			id: "71B673D310440EBC"
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest7.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest6.subtitle}"
 			tasks: [
 				{
 					count: 16L
@@ -263,7 +225,7 @@
 				{
 					count: 9L
 					id: "4C6929FE38D0F838"
-					item: "tfmg:steel_block"
+					item: "immersiveengineering:storage_steel"
 					type: "item"
 				}
 				{
@@ -278,22 +240,22 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.2716B41E11042107.quest7.title}"
+			title: "{ftbquests.chapter.2716B41E11042107.quest6.title}"
 			x: -2.0d
-			y: -0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["71B673D310440EBC"]
 			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest8.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest8.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest7.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest7.description2}"
 				""
-				"{ftbquests.chapter.2716B41E11042107.quest8.description3}"
-				"{ftbquests.chapter.2716B41E11042107.quest8.description4}"
+				"{ftbquests.chapter.2716B41E11042107.quest7.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest7.description4}"
 			]
 			id: "7B7978B0964080F3"
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest8.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest7.subtitle}"
 			tasks: [{
 				id: "6F18410C24225D27"
 				item: {
@@ -305,8 +267,8 @@
 				}
 				type: "item"
 			}]
-			x: -4.0d
-			y: -0.5d
+			x: -3.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -314,44 +276,33 @@
 				"1AAD83556BD302DD"
 			]
 			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest9.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest9.description2}"
-				""
-				"{ftbquests.chapter.2716B41E11042107.quest9.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest8.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest8.description2}"
 			]
-			icon: "tfmg:steel_distillation_controller"
+			icon: "createdieselgenerators:distillation_controller"
 			id: "3FCEB9256A15A4B2"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest9.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest8.subtitle}"
 			tasks: [
 				{
-					id: "4AA95EBD3CDCB288"
-					item: "tfmg:steel_fluid_tank"
-					type: "item"
-				}
-				{
 					id: "421CA7F325EAB59A"
-					item: "tfmg:steel_distillation_output"
+					item: "createdieselgenerators:distillation_controller"
 					type: "item"
 				}
 				{
-					id: "5CD3DA4AB5972515"
-					item: "tfmg:steel_distillation_controller"
+					count: 5L
+					id: "0AC26E7B6DD073F2"
+					item: "create:fluid_tank"
 					type: "item"
 				}
 				{
-					id: "27C4EEF50FD07665"
-					item: "tfmg:industrial_pipe"
-					type: "item"
-				}
-				{
-					id: "4A688382AB720907"
+					id: "4CAE0027218E1C46"
 					item: "create:blaze_burner"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.2716B41E11042107.quest9.title}"
+			title: "{ftbquests.chapter.2716B41E11042107.quest8.title}"
 			x: 2.0d
-			y: -0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -359,33 +310,14 @@
 				"1AAD83556BD302DD"
 			]
 			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest10.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest10.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest9.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest9.description2}"
 			]
-			hide_until_deps_complete: true
 			id: "107639F1A8166B9C"
-			shape: "diamond"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest10.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest9.subtitle}"
 			tasks: [{
-				id: "44DCF7BA286EA6C3"
-				item: "tfmg:heavy_oil_bucket"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 6.0d
-		}
-		{
-			dependencies: [
-				"3FCEB9256A15A4B2"
-				"1AAD83556BD302DD"
-			]
-			hide_until_deps_complete: true
-			id: "443ED09E810FE23D"
-			shape: "diamond"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest11.subtitle}"
-			tasks: [{
-				id: "53A6FDD422729299"
-				item: "tfmg:diesel_bucket"
+				id: "0586BF2CC0F85178"
+				item: "kubejs:heavy_oil_bucket"
 				type: "item"
 			}]
 			x: 4.0d
@@ -396,19 +328,12 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
-			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest12.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest12.description2}"
-				"{ftbquests.chapter.2716B41E11042107.quest12.description3}"
-				"{ftbquests.chapter.2716B41E11042107.quest12.description4}"
-			]
-			hide_until_deps_complete: true
-			id: "05EF035C814ADE9B"
-			shape: "diamond"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest12.subtitle}"
+			description: ["{ftbquests.chapter.2716B41E11042107.quest10.description1}"]
+			id: "443ED09E810FE23D"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest10.subtitle}"
 			tasks: [{
-				id: "49C958F2E71847C4"
-				item: "tfmg:kerosene_bucket"
+				id: "77B2B9F4B798D3F8"
+				item: "createdieselgenerators:diesel_bucket"
 				type: "item"
 			}]
 			x: 4.0d
@@ -420,15 +345,16 @@
 				"1AAD83556BD302DD"
 			]
 			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest13.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest13.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest11.description1}"
+				""
+				"{ftbquests.chapter.2716B41E11042107.quest11.description2}"
 			]
-			hide_until_deps_complete: true
-			id: "3B7D8BECFF387995"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest13.subtitle}"
+			id: "2718164469D544DF"
+			shape: "circle"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest11.subtitle}"
 			tasks: [{
-				id: "0A94C80A2B72D692"
-				item: "tfmg:naphtha_bucket"
+				id: "70D5188BB7D36B40"
+				item: "createdieselgenerators:gasoline_bucket"
 				type: "item"
 			}]
 			x: 4.0d
@@ -439,147 +365,41 @@
 				"3FCEB9256A15A4B2"
 				"1AAD83556BD302DD"
 			]
-			hide_until_deps_complete: true
-			id: "2718164469D544DF"
-			shape: "circle"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest14.subtitle}"
+			description: [
+				"{ftbquests.chapter.2716B41E11042107.quest12.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest12.description2}"
+			]
+			id: "46A5743F6DC8054D"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest12.subtitle}"
 			tasks: [{
-				id: "577F1DBBD3F9A3FA"
-				item: "tfmg:gasoline_bucket"
+				id: "62E21C117613BBBE"
+				item: "kubejs:lpg_bucket"
 				type: "item"
 			}]
 			x: 4.0d
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"3FCEB9256A15A4B2"
-				"1AAD83556BD302DD"
-			]
-			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest15.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest15.description2}"
-				""
-				"{ftbquests.chapter.2716B41E11042107.quest15.description3}"
-			]
-			hide_until_deps_complete: true
-			id: "46A5743F6DC8054D"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest15.subtitle}"
-			tasks: [{
-				id: "19988C4F9E13FD19"
-				item: "tfmg:napalm_bucket"
-				type: "item"
-			}]
-			x: 4.0d
-			y: -4.0d
-		}
-		{
-			dependencies: [
-				"5FB9514C6DE7AD58"
-				"3FCEB9256A15A4B2"
-				"1AAD83556BD302DD"
-			]
-			hide_until_deps_complete: true
-			icon: "tfmg:cast_iron_distillation_controller"
-			id: "576A28075CA7077D"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest16.subtitle}"
-			tasks: [
-				{
-					id: "629822FE746AF116"
-					item: "tfmg:cast_iron_distillation_output"
-					type: "item"
-				}
-				{
-					id: "16B08063E1527DB8"
-					item: "tfmg:cast_iron_distillation_controller"
-					type: "item"
-				}
-				{
-					id: "289C493060369DE4"
-					item: "create:blaze_burner"
-					type: "item"
-				}
-			]
-			x: 6.0d
-			y: 3.0d
-		}
-		{
-			dependencies: [
-				"576A28075CA7077D"
-				"107639F1A8166B9C"
-			]
-			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest17.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest17.description2}"
-				""
-				"{ftbquests.chapter.2716B41E11042107.quest17.description3}"
-			]
-			id: "22CB2BBE72C04014"
-			rewards: [{
-				id: "235E8E70182C0D80"
-				item: "create:mechanical_roller"
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest17.subtitle}"
-			tasks: [
-				{
-					id: "3881E65EF3C152EC"
-					item: "tfmg:bitumen"
-					type: "item"
-				}
-				{
-					id: "3C582CE720A9930B"
-					item: "tfmg:sulfur_dust"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.2716B41E11042107.quest17.title}"
-			x: 6.0d
-			y: 5.0d
-		}
-		{
-			dependencies: [
-				"576A28075CA7077D"
-				"3B7D8BECFF387995"
-			]
-			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest18.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest18.description2}"
-				""
-				"{ftbquests.chapter.2716B41E11042107.quest18.description3}"
-			]
-			icon: "minecraft:bucket"
-			id: "0B48C7A6F9F81A56"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest18.subtitle}"
-			tasks: [{
-				id: "39AC678F2E9625AE"
-				title: "{ftbquests.chapter.2716B41E11042107.quest18.task.title1}"
-				type: "checkmark"
-			}]
-			x: 6.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["0B48C7A6F9F81A56"]
-			description: ["{ftbquests.chapter.2716B41E11042107.quest19.description1}"]
+			dependencies: ["46A5743F6DC8054D"]
+			description: ["{ftbquests.chapter.2716B41E11042107.quest13.description1}"]
 			id: "27AC0014531AA954"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest19.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest13.subtitle}"
 			tasks: [{
-				id: "7F99956FC3A5E8C3"
-				item: "tfmg:liquid_plastic_bucket"
+				id: "5249485F3375C40B"
+				item: "kubejs:liquid_plastic_bucket"
 				type: "item"
 			}]
 			x: 8.0d
-			y: -1.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["27AC0014531AA954"]
 			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest20.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest20.description2}"
-				"{ftbquests.chapter.2716B41E11042107.quest20.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest14.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest14.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest14.description3}"
 			]
+			icon: "immersiveengineering:plate_duroplast"
 			id: "3E21C675D4F61E6B"
 			rewards: [{
 				id: "6DF3368F11CA92C9"
@@ -588,84 +408,103 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest20.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest14.subtitle}"
 			tasks: [{
-				id: "03BDB368AA49BEFF"
-				item: "tfmg:plastic_sheet"
+				id: "484A50EA23068A83"
+				item: "immersiveengineering:plate_duroplast"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 0.0d
+			title: "{ftbquests.chapter.2716B41E11042107.quest14.title}"
+			x: 12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
 				"3E21C675D4F61E6B"
-				"7C566E8D9F54FEF9"
+				"10F4740EEDA142EE"
 			]
 			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest21.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest21.description2}"
-				""
-				"{ftbquests.chapter.2716B41E11042107.quest21.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest15.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest15.description2}"
 			]
 			id: "32DA53E6EDA0AC90"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest21.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest15.subtitle}"
 			tasks: [{
-				id: "6186760AB2B79629"
-				item: "immersiveengineering:circuit_board"
-				type: "item"
-			}]
-			x: 12.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["32DA53E6EDA0AC90"]
-			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest22.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest22.description2}"
-				""
-				"{ftbquests.chapter.2716B41E11042107.quest22.description3}"
-			]
-			hide_until_deps_complete: true
-			id: "538F608DF5017A6A"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest22.subtitle}"
-			tasks: [{
-				id: "4BE26B418AD3ABE6"
-				item: "immersiveengineering:component_electronic_adv"
+				id: "48C588AD1B77239B"
+				item: "kubejs:electronic_circuit_board"
 				type: "item"
 			}]
 			x: 14.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["538F608DF5017A6A"]
+			dependencies: [
+				"32DA53E6EDA0AC90"
+				"10F4740EEDA142EE"
+				"7C566E8D9F54FEF9"
+			]
 			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest23.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest23.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest16.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest16.description2}"
+				""
+				"{ftbquests.chapter.2716B41E11042107.quest16.description3}"
+			]
+			id: "538F608DF5017A6A"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest16.subtitle}"
+			tasks: [{
+				id: "4BE26B418AD3ABE6"
+				item: "immersiveengineering:component_electronic_adv"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"538F608DF5017A6A"
+				"7D6BF4F6E28213D6"
+				"68A3C3EE83073415"
+			]
+			description: [
+				"{ftbquests.chapter.2716B41E11042107.quest17.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest17.description2}"
 			]
 			id: "07B58ED0910776DF"
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest23.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest17.subtitle}"
 			tasks: [{
 				id: "5EBFA215B48BC68C"
 				item: "kubejs:electronic_engineering"
 				type: "item"
 			}]
-			x: 16.0d
-			y: 1.0d
+			x: 12.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
 			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest24.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest24.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest18.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest18.description2}"
 				""
-				"{ftbquests.chapter.2716B41E11042107.quest24.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest18.description3}"
 			]
 			id: "52AF7DAADA5AA0EA"
+			rewards: [
+				{
+					count: 8
+					id: "3CE71E82F7BBCA05"
+					item: "immersiveengineering:stick_steel"
+					type: "item"
+				}
+				{
+					id: "5A0FA4ABE73F0B6E"
+					item: "immersiveengineering:biodiesel_bucket"
+					type: "item"
+				}
+			]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest24.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest18.subtitle}"
 			tasks: [
 				{
 					id: "14D9A7AD66EB0E8E"
@@ -696,21 +535,39 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.2716B41E11042107.quest24.title}"
+			title: "{ftbquests.chapter.2716B41E11042107.quest18.title}"
 			x: -1.0d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["143E6A57D69BAE65"]
 			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest25.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest25.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest19.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest19.description2}"
 				""
-				"{ftbquests.chapter.2716B41E11042107.quest25.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest19.description3}"
 			]
 			id: "7FBBD3EAF8C168D1"
+			rewards: [
+				{
+					id: "1972DCE3A17A6059"
+					item: "immersiveengineering:drillhead_steel"
+					type: "item"
+				}
+				{
+					id: "26F484DF4BF0A312"
+					item: {
+						Count: 1
+						id: "immersiveengineering:sawblade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest25.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest19.subtitle}"
 			tasks: [
 				{
 					id: "01A2A7EE3E4B6CE5"
@@ -741,18 +598,18 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.2716B41E11042107.quest25.title}"
+			title: "{ftbquests.chapter.2716B41E11042107.quest19.title}"
 			x: 1.0d
-			y: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["07B58ED0910776DF"]
 			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest26.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest26.description2}"
-				"{ftbquests.chapter.2716B41E11042107.quest26.description3}"
-				"{ftbquests.chapter.2716B41E11042107.quest26.description4}"
-				"{ftbquests.chapter.2716B41E11042107.quest26.description5}"
+				"{ftbquests.chapter.2716B41E11042107.quest20.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest20.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest20.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest20.description4}"
+				"{ftbquests.chapter.2716B41E11042107.quest20.description5}"
 			]
 			id: "2D906487EC6F1A01"
 			rewards: [{
@@ -762,203 +619,23 @@
 			}]
 			shape: "gear"
 			size: 4.0d
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest26.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest20.subtitle}"
 			tasks: [{
 				id: "5DB8E7650A917BFD"
 				item: "kubejs:buran"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.2716B41E11042107.quest26.title}"
-			x: 16.0d
-			y: 6.0d
+			title: "{ftbquests.chapter.2716B41E11042107.quest20.title}"
+			x: 12.0d
+			y: 8.0d
 		}
 		{
-			dependencies: ["05EF035C814ADE9B"]
+			dependencies: ["3CA5BEEE4B787688"]
 			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest27.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest27.description2}"
-				"{ftbquests.chapter.2716B41E11042107.quest27.description3}"
-			]
-			id: "55EE9E5A85FD12B2"
-			rewards: [{
-				id: "5216D7B088A5E5F1"
-				item: "artifacts:universal_attractor"
-				type: "item"
-			}]
-			shape: "square"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest27.subtitle}"
-			tasks: [
-				{
-					id: "2700F5288AD2B560"
-					item: "create_new_age:redstone_magnet"
-					type: "item"
-				}
-				{
-					id: "5E8F50B2CC9F685B"
-					item: "create_new_age:layered_magnet"
-					type: "item"
-				}
-				{
-					id: "6904AAF7119B4EA2"
-					item: "create_new_age:fluxuated_magnetite"
-					type: "item"
-				}
-				{
-					id: "126C9909B8C61F51"
-					item: "create_new_age:netherite_magnet"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.2716B41E11042107.quest27.title}"
-			x: 5.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["46A5743F6DC8054D"]
-			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest28.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest28.description2}"
-				"{ftbquests.chapter.2716B41E11042107.quest28.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest21.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest21.description2}"
 				""
-				"{ftbquests.chapter.2716B41E11042107.quest28.description4}"
-			]
-			id: "31A0E8AA7E6964CC"
-			rewards: [
-				{
-					id: "57C3B604BF1DB28D"
-					item: "tfmg:thermite_grenade"
-					type: "item"
-				}
-				{
-					id: "2FFE759DB8EBDEC4"
-					item: "tfmg:zinc_grenade"
-					type: "item"
-				}
-				{
-					id: "7BF4A6E3653E1BDC"
-					item: "tfmg:copper_grenade"
-					type: "item"
-				}
-			]
-			shape: "square"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest28.subtitle}"
-			tasks: [{
-				id: "09C5A58BB68F17D3"
-				item: "tfmg:napalm_bomb"
-				type: "item"
-			}]
-			x: 5.0d
-			y: -5.0d
-		}
-		{
-			dependencies: ["2718164469D544DF"]
-			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest29.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest29.description2}"
-			]
-			id: "7FB5CC590808D9EA"
-			rewards: [
-				{
-					id: "020EE4C553BD2FDB"
-					item: "tfmg:lpg_engine"
-					type: "item"
-				}
-				{
-					id: "7B271E189708437F"
-					item: "tfmg:lpg_engine_back"
-					type: "item"
-				}
-			]
-			shape: "square"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest29.subtitle}"
-			tasks: [
-				{
-					id: "4211A7F395B64564"
-					item: "tfmg:gasoline_engine"
-					type: "item"
-				}
-				{
-					id: "76838053DCC5CD1A"
-					item: "tfmg:gasoline_engine_back"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.2716B41E11042107.quest29.title}"
-			x: 5.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["443ED09E810FE23D"]
-			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest30.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest30.description2}"
-			]
-			id: "79DBFA990528F827"
-			rewards: [{
-				count: 2
-				id: "1E705D047EEF95F6"
-				item: "tfmg:engine_base"
-				type: "item"
-			}]
-			shape: "square"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest30.subtitle}"
-			tasks: [
-				{
-					id: "494840B5C69ACD08"
-					item: "tfmg:diesel_engine"
-					type: "item"
-				}
-				{
-					id: "0C6D3D40CF5C6131"
-					item: "tfmg:diesel_engine_expansion"
-					type: "item"
-				}
-				{
-					id: "24194990C01FF1C1"
-					item: "railways:smokestack_diesel"
-					type: "item"
-				}
-				{
-					id: "515B92DF9C2B001D"
-					item: "railways:smokestack_oilburner"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.2716B41E11042107.quest30.title}"
-			x: 5.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["2718164469D544DF"]
-			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest31.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest31.description2}"
-				""
-				"{ftbquests.chapter.2716B41E11042107.quest31.description3}"
-			]
-			id: "2B8294A4CBF6D664"
-			shape: "circle"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest31.subtitle}"
-			tasks: [{
-				id: "06AFE6597408DE5C"
-				item: "create:blaze_cake"
-				type: "item"
-			}]
-			x: 10.0d
-			y: -2.0d
-		}
-		{
-			dependencies: [
-				"2B8294A4CBF6D664"
-				"46A5743F6DC8054D"
-			]
-			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest32.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest32.description2}"
-				"{ftbquests.chapter.2716B41E11042107.quest32.description3}"
-				"{ftbquests.chapter.2716B41E11042107.quest32.description4}"
-				""
-				"{ftbquests.chapter.2716B41E11042107.quest32.description5}"
+				"{ftbquests.chapter.2716B41E11042107.quest21.description3}"
 			]
 			id: "7C566E8D9F54FEF9"
 			rewards: [{
@@ -968,19 +645,22 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest32.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest21.subtitle}"
 			tasks: [{
 				id: "1A8DCD9556C0A248"
 				item: "minecraft:netherite_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.2716B41E11042107.quest32.title}"
-			x: 12.0d
-			y: -4.0d
+			title: "{ftbquests.chapter.2716B41E11042107.quest21.title}"
+			x: 10.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["7B7978B0964080F3"]
-			description: ["{ftbquests.chapter.2716B41E11042107.quest33.description1}"]
+			dependencies: [
+				"71B673D310440EBC"
+				"7B7978B0964080F3"
+			]
+			description: ["{ftbquests.chapter.2716B41E11042107.quest22.description1}"]
 			id: "0B043034C7178F75"
 			rewards: [{
 				id: "0428279BAF7C1220"
@@ -988,21 +668,22 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest33.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest22.subtitle}"
 			tasks: [{
 				id: "67B5112D5F9FF788"
 				item: "immersiveengineering:sample_drill"
 				type: "item"
 			}]
-			x: -6.0d
-			y: -0.5d
+			x: -3.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["07B58ED0910776DF"]
 			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest34.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest34.description2}"
-				"{ftbquests.chapter.2716B41E11042107.quest34.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest23.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest23.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest23.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest23.description4}"
 			]
 			id: "142E14F831B0F7BE"
 			rewards: [{
@@ -1011,26 +692,23 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest34.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest23.subtitle}"
 			tasks: [{
 				id: "5D1B5A24E2694FCF"
 				item: "refinedstorage:grid"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.2716B41E11042107.quest34.title}"
-			x: 18.0d
-			y: 0.0d
+			title: "{ftbquests.chapter.2716B41E11042107.quest23.title}"
+			x: 14.0d
+			y: 4.0d
 		}
 		{
-			dependencies: [
-				"576A28075CA7077D"
-				"107639F1A8166B9C"
-			]
+			dependencies: ["107639F1A8166B9C"]
 			description: [
-				"{ftbquests.chapter.2716B41E11042107.quest35.description1}"
-				"{ftbquests.chapter.2716B41E11042107.quest35.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest24.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest24.description2}"
 				""
-				"{ftbquests.chapter.2716B41E11042107.quest35.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest24.description3}"
 			]
 			id: "36CD0821EDDA721F"
 			rewards: [{
@@ -1039,17 +717,435 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.2716B41E11042107.quest35.subtitle}"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest24.subtitle}"
 			tasks: [{
-				id: "6CC17574DBAF58BD"
-				item: "tfmg:lubrication_oil_bucket"
+				id: "2854B9B83C087E71"
+				item: "kubejs:lubricant_bucket"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.2716B41E11042107.quest35.title}"
+			title: "{ftbquests.chapter.2716B41E11042107.quest24.title}"
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["107639F1A8166B9C"]
+			description: [
+				"{ftbquests.chapter.2716B41E11042107.quest25.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest25.description2}"
+			]
+			id: "0A20C8766DEA529B"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest25.subtitle}"
+			tasks: [{
+				id: "65A520F21476E743"
+				item: "createdieselgenerators:asphalt_block"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"143E6A57D69BAE65"
+				"443ED09E810FE23D"
+			]
+			description: [
+				"{ftbquests.chapter.2716B41E11042107.quest26.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest26.description2}"
+			]
+			id: "718195A4744D12C1"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest26.subtitle}"
+			tasks: [{
+				id: "3BDEEA9CB2941461"
+				item: "createnuclear:uranium_bucket"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.2716B41E11042107.quest26.title}"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"718195A4744D12C1"
+				"3FCEB9256A15A4B2"
+			]
+			description: ["{ftbquests.chapter.2716B41E11042107.quest27.description1}"]
+			id: "10786A8DC61BD418"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest27.subtitle}"
+			tasks: [{
+				id: "44C7A3EFEDE37838"
+				item: "kubejs:molten_enriched_uranium_bucket"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.2716B41E11042107.quest27.title}"
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["10786A8DC61BD418"]
+			description: [
+				"{ftbquests.chapter.2716B41E11042107.quest28.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest28.description2}"
+			]
+			id: "1BD268D137CFF394"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest28.subtitle}"
+			tasks: [{
+				id: "713903ADD21CE285"
+				item: "createnuclear:yellowcake"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"1BD268D137CFF394"
+				"392E8FC01684BDEC"
+			]
+			description: [
+				"{ftbquests.chapter.2716B41E11042107.quest29.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest29.description2}"
+			]
+			id: "17A821D8A88F11E4"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest29.subtitle}"
+			tasks: [{
+				id: "6BB0FA76D90E6E36"
+				item: "createnuclear:enriched_yellowcake"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.2716B41E11042107.quest29.title}"
 			x: 8.0d
 			y: 6.0d
 		}
+		{
+			dependencies: ["2718164469D544DF"]
+			description: ["{ftbquests.chapter.2716B41E11042107.quest30.description1}"]
+			id: "3CA5BEEE4B787688"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest30.subtitle}"
+			tasks: [{
+				id: "1F9CA26BB20B5A1E"
+				item: "kubejs:molten_netherite_bucket"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17A821D8A88F11E4"]
+			description: [
+				"{ftbquests.chapter.2716B41E11042107.quest31.description1}"
+				""
+				"{ftbquests.chapter.2716B41E11042107.quest31.description2}"
+			]
+			icon: "createnuclear:uranium_rod"
+			id: "034ED4F84F07207A"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest31.subtitle}"
+			tasks: [
+				{
+					id: "3A2BA86DDFEB266C"
+					item: "createnuclear:uranium_rod"
+					type: "item"
+				}
+				{
+					id: "455C11DAC2DC2873"
+					item: "createnuclear:graphite_rod"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.2716B41E11042107.quest31.title}"
+			x: 9.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"0A20C8766DEA529B"
+				"7C566E8D9F54FEF9"
+			]
+			description: ["{ftbquests.chapter.2716B41E11042107.quest32.description1}"]
+			id: "7D6BF4F6E28213D6"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest32.subtitle}"
+			tasks: [{
+				id: "1AF43DA34FB9AA48"
+				item: "createnuclear:reactor_casing"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7C566E8D9F54FEF9"]
+			description: [
+				"{ftbquests.chapter.2716B41E11042107.quest33.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest33.description2}"
+			]
+			id: "10F4740EEDA142EE"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest33.subtitle}"
+			tasks: [{
+				id: "0F1FAF424F5151D4"
+				item: "vintageimprovements:laser"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"07B58ED0910776DF"
+				"034ED4F84F07207A"
+				"7D6BF4F6E28213D6"
+			]
+			description: [
+				"{ftbquests.chapter.2716B41E11042107.quest34.description1}"
+				""
+				"{ftbquests.chapter.2716B41E11042107.quest34.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest34.description3}"
+				"{ftbquests.chapter.2716B41E11042107.quest34.description4}"
+			]
+			icon: "createnuclear:reactor_blueprint_item"
+			id: "5842F5E1694C4F74"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest34.subtitle}"
+			tasks: [
+				{
+					id: "1673EC25B17F9B8D"
+					item: "createnuclear:reactor_controller"
+					type: "item"
+				}
+				{
+					id: "21D7D29B755A2659"
+					item: "createnuclear:reactor_blueprint_item"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.2716B41E11042107.quest34.title}"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["034ED4F84F07207A"]
+			description: [
+				"{ftbquests.chapter.2716B41E11042107.quest35.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest35.description2}"
+				""
+				"{ftbquests.chapter.2716B41E11042107.quest35.description3}"
+			]
+			id: "68A3C3EE83073415"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest35.subtitle}"
+			tasks: [{
+				id: "603B831F0FAB4FC3"
+				item: "kubejs:fission_cell"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1BD268D137CFF394"]
+			description: [
+				"{ftbquests.chapter.2716B41E11042107.quest36.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest36.description2}"
+				""
+				"{ftbquests.chapter.2716B41E11042107.quest36.description3}"
+			]
+			id: "392E8FC01684BDEC"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest36.subtitle}"
+			tasks: [{
+				id: "55608BB2524BE870"
+				item: "createnuclear:enriching_campfire"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.2716B41E11042107.quest36.title}"
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["07B58ED0910776DF"]
+			description: [
+				"{ftbquests.chapter.2716B41E11042107.quest37.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest37.description2}"
+			]
+			id: "31A409238967A7E8"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest37.subtitle}"
+			tasks: [{
+				id: "69D43304D0DC8337"
+				item: "scguns:creative_ammo_box"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.2716B41E11042107.quest37.title}"
+			x: 13.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["07B58ED0910776DF"]
+			description: ["{ftbquests.chapter.2716B41E11042107.quest38.description1}"]
+			id: "51C0DFB50C1A4A5B"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest38.subtitle}"
+			tasks: [{
+				id: "2DE1E47665A2393D"
+				item: "storagedrawers:creative_storage_upgrade"
+				type: "item"
+			}]
+			title: "{ftbquests.chapter.2716B41E11042107.quest38.title}"
+			x: 13.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["63227B2783602134"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						Insulation: [ ]
+					}
+				}
+				id: "createnuclear:orange_anti_radiation_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "256A5C15558571F0"
+			rewards: [{
+				id: "6DC7ED792F39D072"
+				item: "createnuclear:chicken_irradiated_spawn_egg"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest39.subtitle}"
+			tasks: [
+				{
+					id: "61709282956B786A"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "createnuclear:anti_radiation_helmet_full_dye"
+						}
+					}
+					title: "{ftbquests.chapter.2716B41E11042107.quest39.task_7021272908620855402.title}"
+					type: "item"
+				}
+				{
+					id: "23890988A46C78A3"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "createnuclear:anti_radiation_chestplate_full_dye"
+						}
+					}
+					title: "{ftbquests.chapter.2716B41E11042107.quest39.task_2560588345615612067.title}"
+					type: "item"
+				}
+				{
+					id: "1155EFA5B063288D"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "createnuclear:anti_radiation_leggings_full_dye"
+						}
+					}
+					title: "{ftbquests.chapter.2716B41E11042107.quest39.task_1249167966573111437.title}"
+					type: "item"
+				}
+				{
+					id: "20F79180E7C70386"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								Insulation: [ ]
+							}
+						}
+						id: "createnuclear:anti_radiation_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.2716B41E11042107.quest39.title}"
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["143E6A57D69BAE65"]
+			description: ["{ftbquests.chapter.2716B41E11042107.quest40.description1}"]
+			icon: "createdeco:decal_radioactive"
+			id: "63227B2783602134"
+			rewards: [{
+				id: "5BD660441DC770CB"
+				item: "createdeco:decal_radioactive"
+				type: "item"
+			}]
+			shape: "hexagon"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest40.subtitle}"
+			tasks: [
+				{
+					id: "61F8B7CB762D992B"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "kubejs:radioactive"
+						}
+					}
+					title: "{ftbquests.chapter.2716B41E11042107.quest40.task_7059594500392196395.title}"
+					type: "item"
+				}
+				{
+					id: "0233AF7BB91AB279"
+					title: "{ftbquests.chapter.2716B41E11042107.quest40.task_158663357809472121.title}"
+					type: "checkmark"
+				}
+			]
+			title: "{ftbquests.chapter.2716B41E11042107.quest40.title}"
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7C566E8D9F54FEF9"]
+			icon: "scguns:scorched_ingot"
+			id: "509A8421F88CE498"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest41.subtitle}"
+			tasks: [
+				{
+					id: "0E77AA317B63BAEB"
+					item: "scguns:scorched_blend"
+					type: "item"
+				}
+				{
+					id: "532F4CDA6791DE69"
+					item: "scguns:scorched_ingot"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.2716B41E11042107.quest41.title}"
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7C566E8D9F54FEF9"]
+			description: [
+				"{ftbquests.chapter.2716B41E11042107.quest42.description1}"
+				"{ftbquests.chapter.2716B41E11042107.quest42.description2}"
+				"{ftbquests.chapter.2716B41E11042107.quest42.description3}"
+			]
+			id: "1BD543D35165DD57"
+			shape: "diamond"
+			subtitle: "{ftbquests.chapter.2716B41E11042107.quest42.subtitle}"
+			tasks: [{
+				id: "28015EE7F35A709F"
+				item: "kubejs:max_magic_ring"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
 	]
-	subtitle: ["{ftbquests.chapter.2716B41E11042107.subtitle}"]
+	subtitle: ["{ftbquests.chapter.2716B41E11042107.subtitle0}"]
 	title: "{ftbquests.chapter.2716B41E11042107.title}"
 }

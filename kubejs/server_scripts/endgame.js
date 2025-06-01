@@ -308,7 +308,7 @@ ServerEvents.recipes(event => {
       event.recipes.createDeploying('kubejs:incomplete_code_formation', ['kubejs:incomplete_code_formation', 'alexsmobs:enderiophage_rocket']),
       event.recipes.createDeploying('kubejs:incomplete_code_formation', ['kubejs:incomplete_code_formation', 'create_confectionery:gingerbread_man']),
       event.recipes.createDeploying('kubejs:incomplete_code_formation', ['kubejs:incomplete_code_formation', 'alexsmobs:blood_sprayer']),
-      event.recipes.vintageimprovements.laser_cutting('kubejs:incomplete_code_formation', 'kubejs:incomplete_code_formation'),
+      event.recipes.vintageimprovements.laser_cutting('kubejs:incomplete_code_formation', 'kubejs:incomplete_code_formation').energyCost(409600).maxChargeRate(4096),
       event.recipes.createFilling('kubejs:incomplete_code_formation', ['kubejs:incomplete_code_formation', Fluid.of('create_enchantment_industry:hyper_experience',200)])
   ]).transitionalItem('kubejs:incomplete_code_formation').loops(1)
 

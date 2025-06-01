@@ -38,7 +38,7 @@
 			}]
 			title: "{ftbquests.chapter.3A373AEB9028A418.quest1.title}"
 			x: 0.0d
-			y: 0.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -46,36 +46,15 @@
 				"{ftbquests.chapter.3A373AEB9028A418.quest2.description1}"
 				"{ftbquests.chapter.3A373AEB9028A418.quest2.description2}"
 				"{ftbquests.chapter.3A373AEB9028A418.quest2.description3}"
-			]
-			hide_details_until_startable: true
-			hide_until_deps_complete: true
-			icon: "snowyspirit:snow_globe"
-			id: "6CA55CF413645302"
-			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest2.subtitle}"
-			tasks: [{
-				id: "6A8DA287B49C1CF7"
-				title: "{ftbquests.chapter.3A373AEB9028A418.quest2.task.title1}"
-				type: "checkmark"
-			}]
-			x: -2.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["6A1B42D208C780BD"]
-			description: [
-				"{ftbquests.chapter.3A373AEB9028A418.quest3.description1}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest3.description2}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest3.description3}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest3.description4}"
 				""
-				"{ftbquests.chapter.3A373AEB9028A418.quest3.description5}"
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.3A373AEB9028A418.quest3.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"6E08F7A257BCB99A\"}}]"
+				"{ftbquests.chapter.3A373AEB9028A418.quest2.description4}"
+				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.3A373AEB9028A418.quest2.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"6E08F7A257BCB99A\"}}]"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
 			icon: "cold_sweat:thermometer"
 			id: "409A09512BF023FC"
-			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest3.subtitle}"
+			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest2.subtitle}"
 			tasks: [
 				{
 					id: "3136B1174AAF8C7E"
@@ -88,20 +67,20 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.3A373AEB9028A418.quest3.title}"
+			title: "{ftbquests.chapter.3A373AEB9028A418.quest2.title}"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"{ftbquests.chapter.3A373AEB9028A418.quest4.description1}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest4.description2}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest4.description3}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest4.description4}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest3.description1}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest3.description2}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest3.description3}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest3.description4}"
 				""
-				"{ftbquests.chapter.3A373AEB9028A418.quest4.description5}"
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.3A373AEB9028A418.quest4.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3B3403855032F399\"}}]"
+				"{ftbquests.chapter.3A373AEB9028A418.quest3.description5}"
+				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.3A373AEB9028A418.quest3.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3B3403855032F399\"}}]"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
@@ -111,7 +90,7 @@
 				item: "irons_spellbooks:arcane_essence"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest4.subtitle}"
+			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest3.subtitle}"
 			tasks: [{
 				id: "26C5D84BA231F17D"
 				item: {
@@ -121,19 +100,19 @@
 						value: "minecraft:beds"
 					}
 				}
-				title: "{ftbquests.chapter.3A373AEB9028A418.quest4.task.title2}"
+				title: "{ftbquests.chapter.3A373AEB9028A418.quest3.task_2793876963208589693.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.3A373AEB9028A418.quest4.title}"
-			x: 0.0d
-			y: -2.0d
+			title: "{ftbquests.chapter.3A373AEB9028A418.quest3.title}"
+			x: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"{ftbquests.chapter.3A373AEB9028A418.quest5.description1}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest5.description2}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest5.description3}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest4.description1}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest4.description2}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest4.description3}"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
@@ -150,54 +129,54 @@
 				item: "bosses_of_mass_destruction:charged_ender_pearl"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest5.subtitle}"
+			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest4.subtitle}"
 			tasks: [
 				{
 					dimension: "undergarden:undergarden"
 					icon: "undergarden:catalyst"
 					id: "108B1529DAA1BF44"
-					title: "{ftbquests.chapter.3A373AEB9028A418.quest5.task.title2}"
+					title: "{ftbquests.chapter.3A373AEB9028A418.quest4.task_1192069795875503940.title}"
 					type: "dimension"
 				}
 				{
 					dimension: "blue_skies:everbright"
 					icon: "blue_skies:everbright_portal"
 					id: "5D1DAE30F9514726"
-					title: "{ftbquests.chapter.3A373AEB9028A418.quest5.task.title3}"
+					title: "{ftbquests.chapter.3A373AEB9028A418.quest4.task_6709710545216423718.title}"
 					type: "dimension"
 				}
 				{
 					dimension: "blue_skies:everdawn"
 					icon: "blue_skies:everdawn_portal"
 					id: "6B3BCA57A1092DAE"
-					title: "{ftbquests.chapter.3A373AEB9028A418.quest5.task.title4}"
+					title: "{ftbquests.chapter.3A373AEB9028A418.quest4.task_7726992063396916654.title}"
 					type: "dimension"
 				}
 				{
 					dimension: "minecraft:the_nether"
 					icon: "minecraft:nether_star"
 					id: "4AC4C4DE3BBD2FEB"
-					title: "{ftbquests.chapter.3A373AEB9028A418.quest5.task.title5}"
+					title: "{ftbquests.chapter.3A373AEB9028A418.quest4.task_5387647513005993963.title}"
 					type: "dimension"
 				}
 				{
 					dimension: "minecraft:the_end"
 					icon: "minecraft:end_portal_frame"
 					id: "3C4C2257B8596DC6"
-					title: "{ftbquests.chapter.3A373AEB9028A418.quest5.task.title6}"
+					title: "{ftbquests.chapter.3A373AEB9028A418.quest4.task_4344885500656053702.title}"
 					type: "dimension"
 				}
 			]
-			title: "{ftbquests.chapter.3A373AEB9028A418.quest5.title}"
+			title: "{ftbquests.chapter.3A373AEB9028A418.quest4.title}"
 			x: 0.0d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"{ftbquests.chapter.3A373AEB9028A418.quest6.description1}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest5.description1}"
 				""
-				"{ftbquests.chapter.3A373AEB9028A418.quest6.description2}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest5.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "3A1777C57ADC79BD"
@@ -212,7 +191,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest6.subtitle}"
+			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest5.subtitle}"
 			tasks: [
 				{
 					id: "5C2F4248E6546517"
@@ -279,31 +258,25 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.3A373AEB9028A418.quest6.title}"
+			title: "{ftbquests.chapter.3A373AEB9028A418.quest5.title}"
 			x: 2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"{ftbquests.chapter.3A373AEB9028A418.quest7.description1}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest6.description1}"
 				""
-				"{ftbquests.chapter.3A373AEB9028A418.quest7.description2}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest6.description2}"
 			]
 			hide_until_deps_complete: true
 			id: "7099BD66C194C8C2"
 			rewards: [{
-				id: "24B362A7459A94A4"
-				item: {
-					Count: 1
-					id: "minecraft:potion"
-					tag: {
-						Potion: "tide:long_resistance"
-					}
-				}
+				id: "3C4D9FCBA28B184F"
+				item: "artifacts:cross_necklace"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest7.subtitle}"
+			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest6.subtitle}"
 			tasks: [
 				{
 					id: "169C8B8E341A1B63"
@@ -386,26 +359,22 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.3A373AEB9028A418.quest7.title}"
+			title: "{ftbquests.chapter.3A373AEB9028A418.quest6.title}"
 			x: -2.0d
 			y: 2.0d
 		}
 		{
-			dependencies: [
-				"6A1B42D208C780BD"
-				"67A81230FFDEC5B3"
-			]
+			dependencies: ["67A81230FFDEC5B3"]
 			description: [
-				"{ftbquests.chapter.3A373AEB9028A418.quest8.description1}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest8.description2}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest8.description3}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest8.description4}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest8.description5}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest8.description6}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest7.description1}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest7.description2}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest7.description3}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest7.description4}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest7.description5}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest7.description6}"
 				""
-				"{ftbquests.chapter.3A373AEB9028A418.quest8.description7}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest7.description7}"
 			]
-			hide_until_deps_complete: true
 			id: "5071365CA0D2E37F"
 			rewards: [{
 				count: 8
@@ -413,35 +382,31 @@
 				item: "minecraft:bread"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest8.subtitle}"
+			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest7.subtitle}"
 			tasks: [{
 				id: "6FD49E4E48ACAE69"
 				item: "fishermens_trap:fishtrap"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.3A373AEB9028A418.quest8.title}"
+			title: "{ftbquests.chapter.3A373AEB9028A418.quest7.title}"
 			x: 0.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			dependency_requirement: "one_started"
 			description: [
-				"{ftbquests.chapter.3A373AEB9028A418.quest9.description1}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest9.description2}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest9.description3}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest9.description4}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest9.description5}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest9.description6}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest9.description7}"
-				"{@pagebreak}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest9.description8}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest9.description9}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest9.description10}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest9.description11}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.description1}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.description2}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.description3}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.description4}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.description5}"
 				""
-				"{ftbquests.chapter.3A373AEB9028A418.quest9.description12}"
-				"{ftbquests.chapter.3A373AEB9028A418.quest9.description13}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.description6}"
+				"{@pagebreak}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.description7}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.image0}"
+				"{ftbquests.chapter.3A373AEB9028A418.quest8.description8}"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
@@ -459,7 +424,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest9.subtitle}"
+			subtitle: "{ftbquests.chapter.3A373AEB9028A418.quest8.subtitle}"
 			tasks: [
 				{
 					id: "76E1B85897A8750F"
@@ -480,15 +445,15 @@
 							value: "forge:tools/fishing_rods"
 						}
 					}
-					title: "{ftbquests.chapter.3A373AEB9028A418.quest9.task.title1}"
+					title: "{ftbquests.chapter.3A373AEB9028A418.quest8.task_4653065461534869568.title}"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.3A373AEB9028A418.quest9.title}"
+			title: "{ftbquests.chapter.3A373AEB9028A418.quest8.title}"
 			x: 0.0d
-			y: 4.0d
+			y: 3.0d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.3A373AEB9028A418.subtitle}"]
+	subtitle: ["{ftbquests.chapter.3A373AEB9028A418.subtitle0}"]
 	title: "{ftbquests.chapter.3A373AEB9028A418.title}"
 }

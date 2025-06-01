@@ -55,7 +55,16 @@ ServerEvents.recipes(event => {
         A: 'alexsmobs:mimicream',
         B: 'minecraft:barrier'
     }
-)
+  )
+
+  //墨囊
+  event.recipes.create.filling(
+    Item.of('minecraft:ink_sac', 1),
+    [
+      "#forge:leather",
+      Fluid.of('create_enchantment_industry:ink', 250)
+    ]
+  )
 
   /*
   //铁矿混合粉也可以用铁粉做

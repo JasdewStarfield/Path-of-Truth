@@ -287,6 +287,9 @@ FTBQuestsEvents.completed('170E4E15DBE89604', event => {
 })
 FTBQuestsEvents.completed('6A1B42D208C780BD', event => {
     event.server.runCommandSilent(`/effect clear ${event.player.username}`)
+    if(event.player.stages.has('beginnerQuestsNotCompleted')) {
+        event.player.stages.remove('beginnerQuestsNotCompleted');
+    }
 })
 
 
@@ -331,6 +334,7 @@ PlayerEvents.loggedIn(event => {
         })
         */
         event.player.stages.add('notNewPlayer');
+        event.player.stages.add('beginnerQuestsNotCompleted');
 
 
         isStructureGenratedRecord.init(event);
@@ -368,5 +372,13 @@ PlayerEvents.loggedIn(event => {
         }
         // event.player.tell([Text.lightPurple('[随机出生]'), `已经为玩家设置 notNewPlayer，成功？`, event.player.stages.has('notNewPlayer')]);
         // event.player.tell([Text.lightPurple('[随机出生]'), "执行完毕"]);
+    }
+})
+
+PlayerEvents.tick(event => {
+    if(event.player.age % 100 != 0) return // 每5秒提示一次
+    if(event.player.stages.has('beginnerQuestsNotCompleted')) {
+        // 如果玩家没有完成初始任务，那么每隔一段时间就会提示玩家
+        event.player.tell([Text.lightPurple('[初始任务]'), "请完成初始任务以解除锁定状态！"]);
     }
 })

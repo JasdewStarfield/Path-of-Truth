@@ -451,6 +451,9 @@ ServerEvents.tags("item", (event) => {
     event.remove("farmersdelight:cabbage_roll_ingredients","minecraft:carrot")
     event.remove("farmersdelight:cabbage_roll_ingredients","minecraft:potato")
     event.remove("farmersdelight:cabbage_roll_ingredients","minecraft:beetroot")
+
+    //移除焦煤的煤炭标签
+    event.remove("minecraft:coals","immersiveengineering:coal_coke")
 })
 
 ServerEvents.tags("block", (event) => {

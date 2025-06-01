@@ -47,15 +47,15 @@
 				"3111841E3A7C8262"
 			]
 			description: [
-				"&5&o凡分离的必聚合。&r&r"
-				"当你以万象宝石具象化各类物品的源头，并以枪械的形态将其铸造后……"
-				"&a恭喜你完成了这一整合包的所有挑战——&r"
-				"享受创世的力量吧，现在，你就是世界的真理。"
-				"~~完结撒花~~"
+				"{ftbquests.chapter.24C2242397E3BB49.quest1.description1}"
+				"{ftbquests.chapter.24C2242397E3BB49.quest1.description2}"
+				"{ftbquests.chapter.24C2242397E3BB49.quest1.description3}"
+				"{ftbquests.chapter.24C2242397E3BB49.quest1.description4}"
+				"{ftbquests.chapter.24C2242397E3BB49.quest1.description5}"
 				"{@pagebreak}"
-				"但是，这真的是一切的结束吗？"
-				"也许你注意到，&c只包含了物质的规则导致世界仍有些微的缺失……"
-				"&r看看新出现的任务吧。"
+				"{ftbquests.chapter.24C2242397E3BB49.quest1.description6}"
+				"{ftbquests.chapter.24C2242397E3BB49.quest1.description7}"
+				"{ftbquests.chapter.24C2242397E3BB49.quest1.description8}"
 			]
 			id: "6D9B7D2CD86693AF"
 			rewards: [{
@@ -65,46 +65,46 @@
 			}]
 			shape: "diamond"
 			size: 4.0d
-			subtitle: "终末整合"
+			subtitle: "{ftbquests.chapter.24C2242397E3BB49.quest1.subtitle}"
 			tasks: [{
 				id: "7FD89303532E9EA7"
 				item: "create:handheld_worldshaper"
 				type: "item"
 			}]
-			title: "【终点】于此创世"
+			title: "{ftbquests.chapter.24C2242397E3BB49.quest1.title}"
 			x: 0.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["1E235F6753976501"]
 			description: [
-				"&5&o凡聚合的必分离……&r"
-				"&r越到末尾的章节，节点就越少）"
-				"因为你不需要任何的故事了，你需要的就是走下去，因为马上你就能看到了。"
+				"{ftbquests.chapter.24C2242397E3BB49.quest2.description1}"
+				"{ftbquests.chapter.24C2242397E3BB49.quest2.description2}"
+				"{ftbquests.chapter.24C2242397E3BB49.quest2.description3}"
 			]
 			hide_until_deps_complete: true
 			id: "59C668DE4E479AD9"
 			shape: "hexagon"
 			size: 2.0d
-			subtitle: "走出最后一段路。"
+			subtitle: "{ftbquests.chapter.24C2242397E3BB49.quest2.subtitle}"
 			tasks: [{
 				id: "7E95C6C240E4D200"
 				item: "kubejs:world_base_gem"
 				type: "item"
 			}]
-			title: "【起点】万象之源"
+			title: "{ftbquests.chapter.24C2242397E3BB49.quest2.title}"
 			x: 0.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["537B5AA8E2C3244A"]
 			description: [
-				"魔力自有永有，而你现在能集成无尽的魔力为你所用。"
+				"{ftbquests.chapter.24C2242397E3BB49.quest3.description1}"
 				""
-				"至于为什么需要创造储罐……因为魔力也需要无尽的容器。"
+				"{ftbquests.chapter.24C2242397E3BB49.quest3.description2}"
 			]
 			id: "21454EF3D8D8DCF1"
-			subtitle: "太阳井"
+			subtitle: "{ftbquests.chapter.24C2242397E3BB49.quest3.subtitle}"
 			tasks: [{
 				id: "2165B35BEB3602F3"
 				item: "botania:creative_pool"
@@ -116,9 +116,9 @@
 		{
 			dependencies: ["59C668DE4E479AD9"]
 			description: [
-				"&o&d压入过量的火焰后……&r&r"
-				"现在，只要你拥有某件物品，那么你将永远不再缺乏它。"
-				"使用方法与一般的多媒体火花一致。"
+				"{ftbquests.chapter.24C2242397E3BB49.quest4.description1}"
+				"{ftbquests.chapter.24C2242397E3BB49.quest4.description2}"
+				"{ftbquests.chapter.24C2242397E3BB49.quest4.description3}"
 			]
 			id: "00BBB61C39207A0F"
 			rewards: [{
@@ -126,7 +126,7 @@
 				item: "botania:corporea_crystal_cube"
 				type: "item"
 			}]
-			subtitle: "唯一即永恒。"
+			subtitle: "{ftbquests.chapter.24C2242397E3BB49.quest4.subtitle}"
 			tasks: [{
 				id: "387353577E838962"
 				item: "botania:corporea_spark_creative"
@@ -137,9 +137,9 @@
 		}
 		{
 			dependencies: ["59C668DE4E479AD9"]
-			description: ["流体与真理的碰撞带来无尽的甘泉。"]
+			description: ["{ftbquests.chapter.24C2242397E3BB49.quest5.description1}"]
 			id: "537B5AA8E2C3244A"
-			subtitle: "无尽流淌"
+			subtitle: "{ftbquests.chapter.24C2242397E3BB49.quest5.subtitle}"
 			tasks: [{
 				id: "1ABF6C71BB897718"
 				item: "create:creative_fluid_tank"
@@ -151,11 +151,11 @@
 		{
 			dependencies: ["00BBB61C39207A0F"]
 			description: [
-				"通过压制创造火花核心，你可以通过工业手段从板条箱里无限抽取特定的物资了。"
-				"这也是物流的巅峰。"
+				"{ftbquests.chapter.24C2242397E3BB49.quest6.description1}"
+				"{ftbquests.chapter.24C2242397E3BB49.quest6.description2}"
 			]
 			id: "0F10088DCC4F6FDB"
-			subtitle: "工业化取用"
+			subtitle: "{ftbquests.chapter.24C2242397E3BB49.quest6.subtitle}"
 			tasks: [{
 				id: "188B8C056D3F761E"
 				item: "create:creative_crate"
@@ -166,14 +166,14 @@
 		}
 		{
 			dependencies: ["59C668DE4E479AD9"]
-			description: ["在世界的力量之下，你的烈焰人将不再需要额外的燃料，因为它们通过蛋糕触碰了部分永恒。"]
+			description: ["{ftbquests.chapter.24C2242397E3BB49.quest7.description1}"]
 			id: "3111841E3A7C8262"
 			rewards: [{
 				id: "5A6EF9373C21B934"
 				item: "create:blaze_burner"
 				type: "item"
 			}]
-			subtitle: "能量集成"
+			subtitle: "{ftbquests.chapter.24C2242397E3BB49.quest7.subtitle}"
 			tasks: [{
 				id: "0266BC865A9B984E"
 				item: "create:creative_blaze_cake"
@@ -185,12 +185,12 @@
 		{
 			dependencies: ["59C668DE4E479AD9"]
 			description: [
-				"通过万物之源对于马达的压缩和催化，你现在拥有了无穷无尽的应力。"
+				"{ftbquests.chapter.24C2242397E3BB49.quest8.description1}"
 				""
-				"&o&7*希望你干的第一件事不是把这玩意放在发电机上……&r&r"
+				"{ftbquests.chapter.24C2242397E3BB49.quest8.description2}"
 			]
 			id: "7237285ADC05FC5C"
-			subtitle: "无尽动能"
+			subtitle: "{ftbquests.chapter.24C2242397E3BB49.quest8.subtitle}"
 			tasks: [{
 				id: "18D003645FEF6259"
 				item: "create:creative_motor"
@@ -201,9 +201,9 @@
 		}
 		{
 			dependencies: ["59C668DE4E479AD9"]
-			description: ["万物之源对于电的催化让你从现在起开始拥有无尽的电力。"]
+			description: ["{ftbquests.chapter.24C2242397E3BB49.quest9.description1}"]
 			id: "43913160B28A2E0F"
-			subtitle: "雷霆领主"
+			subtitle: "{ftbquests.chapter.24C2242397E3BB49.quest9.subtitle}"
 			tasks: [{
 				id: "3941B6168227EA0D"
 				item: "immersiveengineering:capacitor_creative"
@@ -215,17 +215,17 @@
 		{
 			dependencies: ["6D9B7D2CD86693AF"]
 			description: [
-				"&a这是最后一项挑战，一些……超越想象的事情。&r"
-				"&6“这个世界是一个巨大的草台班子。”&r"
+				"{ftbquests.chapter.24C2242397E3BB49.quest10.description1}"
+				"{ftbquests.chapter.24C2242397E3BB49.quest10.description2}"
 				""
-				"从理论上来讲，&c床就是拿来睡觉的&r，但&4在扭曲规则的侵染下&r，这个世界只剩下了一种&d能让你感受到家一般温暖&r的床铺。"
+				"{ftbquests.chapter.24C2242397E3BB49.quest10.description3}"
 				""
-				"这看起来&5似乎不太可能实现&r……但你手中的工具也不太可能出现在人类双手上。"
+				"{ftbquests.chapter.24C2242397E3BB49.quest10.description4}"
 				"{@pagebreak}"
-				"漱石枕流，天地为家。"
-				"&9「集成世间各地的异动源头……以让世界安息。」"
-				"&r"
-				"&o&7世界因你入眠而终于平静下来。&r&r"
+				"{ftbquests.chapter.24C2242397E3BB49.quest10.description5}"
+				"{ftbquests.chapter.24C2242397E3BB49.quest10.description6}"
+				"{ftbquests.chapter.24C2242397E3BB49.quest10.description7}"
+				"{ftbquests.chapter.24C2242397E3BB49.quest10.description8}"
 			]
 			hide_until_deps_complete: true
 			id: "43D8F6D77823709C"
@@ -236,17 +236,17 @@
 			}]
 			shape: "hexagon"
 			size: 0.4d
-			subtitle: "归于平静。"
+			subtitle: "{ftbquests.chapter.24C2242397E3BB49.quest10.subtitle}"
 			tasks: [{
 				id: "56256C6247EC840D"
 				item: "undergarden:depthrock_bed"
 				type: "item"
 			}]
-			title: "真正的终点……"
+			title: "{ftbquests.chapter.24C2242397E3BB49.quest10.title}"
 			x: 0.0d
 			y: 0.0d
 		}
 	]
-	subtitle: ["The Truth Lies Here"]
-	title: "∞∞ 真相于此展开"
+	subtitle: ["{ftbquests.chapter.24C2242397E3BB49.subtitle0}"]
+	title: "{ftbquests.chapter.24C2242397E3BB49.title}"
 }

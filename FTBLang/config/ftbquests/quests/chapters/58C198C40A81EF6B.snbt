@@ -11,6 +11,7 @@
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/start.png"
+			order: 2
 			rotation: 0.0d
 			width: 1.3285714285714287d
 			x: 0.0d
@@ -19,10 +20,11 @@
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
+			order: 1
 			rotation: 0.0d
 			width: 1.1149863760217984d
 			x: 0.0d
-			y: 3.3d
+			y: 4.0d
 		}
 		{
 			height: 2.0d
@@ -31,6 +33,14 @@
 			width: 10.23d
 			x: 0.0d
 			y: -2.5d
+		}
+		{
+			height: 3.0d
+			image: "bosses_of_mass_destruction:textures/particle/magic_circle_18.png"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: 3.0d
 		}
 	]
 	order_index: 1
@@ -42,8 +52,13 @@
 				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description1}"
 				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description2}"
 				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description3}"
-				""
 				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description4}"
+				""
+				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description5}"
+				"{@pagebreak}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description6}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description7}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description8}"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
@@ -63,8 +78,8 @@
 					type: "random"
 				}
 			]
-			shape: "octagon"
-			size: 1.2d
+			shape: "square"
+			size: 1.6d
 			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest1.subtitle}"
 			tasks: [{
 				id: "6E5FCD00F7C67EA4"
@@ -211,8 +226,6 @@
 			description: [
 				"{ftbquests.chapter.58C198C40A81EF6B.quest5.description1}"
 				"{ftbquests.chapter.58C198C40A81EF6B.quest5.description2}"
-				""
-				"{ftbquests.chapter.58C198C40A81EF6B.quest5.description3}"
 			]
 			icon: "botania:pure_daisy"
 			id: "735172F79325756F"
@@ -221,6 +234,7 @@
 				item: "kubejs:raw_andesite_alloy"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest5.subtitle}"
 			tasks: [
 				{
@@ -251,7 +265,7 @@
 				item: "botania:rune_mana"
 				type: "item"
 			}]
-			shape: "rsquare"
+			shape: "hexagon"
 			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest6.subtitle}"
 			tasks: [{
 				id: "626B38A8103DFA61"
@@ -301,7 +315,7 @@
 				}
 				type: "item"
 			}]
-			shape: "rsquare"
+			shape: "circle"
 			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest7.subtitle}"
 			tasks: [
 				{
@@ -394,6 +408,8 @@
 				"{ftbquests.chapter.58C198C40A81EF6B.quest9.description2}"
 				"{ftbquests.chapter.58C198C40A81EF6B.quest9.description3}"
 				"{ftbquests.chapter.58C198C40A81EF6B.quest9.description4}"
+				""
+				"{ftbquests.chapter.58C198C40A81EF6B.quest9.description5}"
 			]
 			icon: "botania:creative_pool"
 			id: "71D2AC46FA223631"
@@ -402,6 +418,7 @@
 				item: "botania:obedience_stick"
 				type: "item"
 			}]
+			shape: "hexagon"
 			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest9.subtitle}"
 			tasks: [
 				{
@@ -433,40 +450,77 @@
 				"{ftbquests.chapter.58C198C40A81EF6B.quest10.description1}"
 				"{ftbquests.chapter.58C198C40A81EF6B.quest10.description2}"
 				"{ftbquests.chapter.58C198C40A81EF6B.quest10.description3}"
-				""
 				"{ftbquests.chapter.58C198C40A81EF6B.quest10.description4}"
+				""
+				"{ftbquests.chapter.58C198C40A81EF6B.quest10.description5}"
 			]
 			icon_scale: 1.2d
 			id: "708CC78EEB470115"
-			rewards: [
-				{
-					id: "5543440A93455087"
-					item: {
-						Count: 1
-						id: "bloodmagic:sacrificialdagger"
-						tag: { }
+			rewards: [{
+				id: "596B4FB483640300"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "goety:black_book"
 					}
-					type: "item"
 				}
-				{
-					id: "1D0F630C6D896177"
-					item: "bloodmagic:daggerofsacrifice"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			shape: "pentagon"
 			size: 2.0d
 			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest10.subtitle}"
 			tasks: [{
-				id: "3539EB568810683D"
-				item: "bloodmagic:altar"
+				id: "433D20074EBE5A6E"
+				item: {
+					Count: 1
+					id: "goety:totem_of_roots"
+					tag: {
+						"Max Souls": 100
+						Souls: 0
+					}
+				}
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.58C198C40A81EF6B.quest10.title}"
 			x: 0.0d
-			y: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["374C430D0AD70D2E"]
+			description: [
+				"{ftbquests.chapter.58C198C40A81EF6B.quest11.description1}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest11.description2}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest11.description3}"
+				"{ftbquests.chapter.58C198C40A81EF6B.quest11.description4}"
+				""
+				"{ftbquests.chapter.58C198C40A81EF6B.quest11.description5}"
+			]
+			icon: "goety:crystal_ball"
+			id: "03965CF8706E3031"
+			rewards: [
+				{
+					id: "535B9B37A47C834C"
+					item: "alshanex_familiars:pandora_box"
+					type: "item"
+				}
+				{
+					id: "17F7E67EFBE64B88"
+					item: "alshanex_familiars:pet_bed"
+					type: "item"
+				}
+			]
+			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest11.subtitle}"
+			tasks: [{
+				id: "7EB1CE9597E9903B"
+				title: "{ftbquests.chapter.58C198C40A81EF6B.quest11.task_9129305061550821435.title}"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.58C198C40A81EF6B.quest11.title}"
+			x: 0.0d
+			y: 1.5d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.58C198C40A81EF6B.subtitle}"]
+	subtitle: ["{ftbquests.chapter.58C198C40A81EF6B.subtitle0}"]
 	title: "{ftbquests.chapter.58C198C40A81EF6B.title}"
 }

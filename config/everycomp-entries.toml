@@ -267,10 +267,10 @@
 			picture_frame = true
 
 		[entries.wood_type.decorative_blocks]
-			beam = true
 			support = true
 			seat = true
 			palisade = true
+			beam = true
 
 		[entries.wood_type.create]
 			window = true

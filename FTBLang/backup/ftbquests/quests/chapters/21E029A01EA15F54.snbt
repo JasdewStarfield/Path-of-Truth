@@ -5,12 +5,13 @@
 	filename: "21E029A01EA15F54"
 	group: "12EA2EE194EF67D3"
 	hide_quest_details_until_startable: true
-	icon: "bloodmagic:weakbloodorb"
+	icon: "goety:spent_totem"
 	id: "21E029A01EA15F54"
 	images: [
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/start.png"
+			order: 1
 			rotation: 0.0d
 			width: 1.3285714285714287d
 			x: 0.0d
@@ -19,10 +20,11 @@
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
+			order: 2
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 6.0d
-			y: -1.0d
+			x: 0.0d
+			y: 7.0d
 		}
 		{
 			height: 2.0d
@@ -32,6 +34,46 @@
 			x: 0.0d
 			y: -8.0d
 		}
+		{
+			height: 3.0d
+			image: "vct:block/greenheart_crafting_table_top"
+			rotation: 0.0d
+			width: 3.0d
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			height: 4.0d
+			image: "irons_spellbooks:item/hogskin"
+			rotation: -90.0d
+			width: 4.0d
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			height: 4.0d
+			image: "refinedstorage:block/controller/cutouts/light_blue"
+			rotation: 0.0d
+			width: 4.0d
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			height: 3.0d
+			image: "irons_spellbooks:item/affinity_ring_blood"
+			rotation: 0.0d
+			width: 3.0d
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			height: 2.5d
+			image: "minecraft:block/respawn_anchor_top"
+			rotation: 45.0d
+			width: 2.5d
+			x: 6.0d
+			y: 0.0d
+		}
 	]
 	order_index: 1
 	quest_links: [ ]
@@ -39,45 +81,41 @@
 		{
 			dependencies: ["708CC78EEB470115"]
 			description: [
-				"有关于血魔法的大部分内容都在这本书里。"
-				"如果不在，那么你最好自己查一下JEI）"
-				"为什么让你查jei呢，因为配方我们改动的可不少）"
+				"收集灵魂之力当然是为了再次运用它们。"
+				"比如用灵魂稍微激活一下&a绿宝石&r真正的力量……"
+				"村民喜欢这些宝石真的只是因为光泽吗？"
+				""
+				"&o&c*注意：利用图腾的合成会消耗1灵魂，如果灵魂不足，那么图腾将被消耗！&r&r"
+				"&o&2*绿宝石通过探索可以找到很多，挖矿获得的则会很少，建议通过翻箱倒柜解决前中期的绿宝石需求。&r&r"
 			]
 			hide_until_deps_complete: true
-			icon: {
-				Count: 1
-				id: "patchouli:guide_book"
-				tag: {
-					"patchouli:book": "bloodmagic:guide"
-				}
-			}
+			icon: "goety:magic_emerald"
 			id: "11E3776CE5E23255"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3EC581C14BCC073C"
+				table_id: 5567297392411284388L
+				type: "random"
+			}]
 			shape: "octagon"
 			size: 1.5d
-			subtitle: "首先，你需要找到教程"
+			subtitle: "只要稍微加一点力……"
 			tasks: [{
-				id: "015B595F49230663"
-				item: {
-					Count: 1
-					id: "patchouli:guide_book"
-					tag: {
-						"patchouli:book": "bloodmagic:guide"
-					}
-				}
+				id: "3EB894FECE754894"
+				item: "goety:magic_emerald"
 				type: "item"
 			}]
-			title: "【起点】了解鲜血之力"
+			title: "【起点】灵魂冲击"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["11E3776CE5E23255"]
 			description: [
-				"铁魔法的炼金操作基本都通过这一口锅来实现（当然需要倒水）。"
+				"铁魔法的炼金操作基本都通过这一口锅来实现&3（当然需要倒水）&r。"
 				"你有两种获得这口锅的方式："
-				"去寻找沼泽小屋，抢猪灵术士的锅；或者去下界找古战场，挑战远古骑士获得灰烬源质。"
+				"&2去寻找沼泽小屋，抢猪灵术士的锅&r；或者&6去下界找古战场，挑战远古骑士获得灰烬源质&r。"
 				"推荐第一种，因为第二种选项你目前应该是打不过的（确信"
-				"提示：你可以跳进锅里获得鲜血精华，献祭自己也是献祭）"
 			]
 			icon: "irons_spellbooks:alchemist_cauldron"
 			id: "4320B37354ECBC14"
@@ -86,6 +124,7 @@
 				item: "irons_spellbooks:blood_vial"
 				type: "item"
 			}]
+			shape: "circle"
 			subtitle: "是雪啊（悲"
 			tasks: [{
 				id: "1A11EC0554E3322F"
@@ -93,21 +132,26 @@
 				type: "item"
 			}]
 			title: "我煮我自己"
-			x: -2.0d
-			y: 0.0d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["11E3776CE5E23255"]
 			description: [
 				"但你可以隔着门和对面的精灵交易——对面真的有精灵吗？"
-				"记得把你的植物魔法辞典扔进去——这会解锁新的内容。"
+				"记得把你的&a植物魔法辞典&r扔进去——这会解锁新的内容。"
 				"以及，准备好足够的魔力来迎接这一大门的开启。"
 				"下一页会有详细的搭建说明。"
 				"{@pagebreak}"
 				"*搭建说明："
-				"门的整体结构是围绕3*3的竖正方形进行搭建的（框架是5*5），其中每一条边都需要两个活木和一个微光活木，底边的微光活木则由精灵门核心进行替代。"
+				"门的整体结构是围绕3*3的竖正方形进行搭建的（框架是5*5），其中三条边为&a活木(A)-微光活木(B)-活木&r结构，底边的微光活木则由&6精灵门核心(C)&r进行替代，可视化如下："
+				"&2*ABA*&r"
+				"&2A   A&r"
+				"&2B   B&r"
+				"&2A   A&r"
+				"&2*ACA*&r"
 				"搭建好门结构后，&a需要将两个精灵水晶放置在两个不同的魔力池上&r，然后用森林法杖右键精灵门核心开门。"
-				"外围框架5*5正方形的四个角可以填充任意方块也可以不填，&a两个精灵水晶-魔力池结构需要在半径11单位范围内，而且魔力池内都需要四分之一池以上的魔力。&r"
+				"外围框架5*5正方形的四个角可以填充任意方块也可以不填，&a两个精灵水晶-魔力池结构需要在核心半径6单位范围内，而且魔力池内都需要四分之一池以上的魔力。&r"
 			]
 			icon: "botania:light_relay"
 			id: "2EA11306B3076434"
@@ -116,6 +160,7 @@
 				item: "botania:elementium_ingot"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "你开了也过不去"
 			tasks: [
 				{
@@ -130,69 +175,82 @@
 					type: "item"
 				}
 				{
-					count: 8L
-					id: "134C60B18ABA501C"
-					item: "botania:livingwood"
-					type: "item"
-				}
-				{
 					count: 3L
 					id: "0C52EF97E23DB119"
 					item: "botania:glimmering_livingwood"
 					type: "item"
 				}
+				{
+					count: 8L
+					id: "2BDE83253EB50E99"
+					item: { Count: 8, id: "botania:livingwood_log" }
+					type: "item"
+				}
 			]
 			title: "打开精灵之门"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["11E3776CE5E23255"]
+			description: [
+				"在制作出一个空灵魂图腾后，你需要&a在两侧安装绿宝石&r……让其真正“活”过来。然而灵魂能量的获取仍然&5需要你击杀生物。&r"
+				"当这个图腾的灵魂能量达到2500以上后，因为彻底激怒了灾厄村民，&4一些针对你的猎杀将会到来……&r"
+				"如果你拥有满灵魂能量的图腾，那么它就&b具有重生图腾的性质&r，可以让你&c复活一次&r！这当然会清空灵魂，但是也是值得的，毕竟这个世界死亡的代价可不小。"
+				""
+				"&o&d*也许你应该庆幸这一步不需要机械手……但是之后的一些魔法设备是需要的。&r&r"
+				"{@pagebreak}"
+				"需要注意的是，灵魂能量过高引来的猎杀&c会包括劫掠兽&r，注意你的住所和工地——那些横冲直撞的大家伙可&3不会管自己面前是不是机器（&r"
+			]
+			icon: "goety:spent_totem"
+			id: "57B126A840CCD6E4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "09A6FCAC11443A6B"
+				table_id: 5567297392411284388L
+				type: "random"
+			}]
+			shape: "rsquare"
+			subtitle: "画魂点睛"
+			tasks: [
+				{
+					id: "5A1DA7696CA402B0"
+					item: "goety:spent_totem"
+					type: "item"
+				}
+				{
+					id: "61A10C7075AB5467"
+					item: {
+						Count: 1
+						id: "goety:totem_of_souls"
+						tag: {
+							"Max Souls": 10000
+							Souls: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "以鲜血换取灵魂！"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["11E3776CE5E23255"]
 			description: [
-				"而且你在游戏里也没有可以送戒指的人（"
-				"所以把钻石丢进血祭坛里，让它成为你的力量源泉吧）"
-				"&o&c*右键宝珠可以牺牲自己的血量存入其中，也可以通过血祭坛进行灌注&r&r"
-			]
-			icon: "bloodmagic:weakbloodorb"
-			id: "57B126A840CCD6E4"
-			rewards: [{
-				id: "4A9DD1F061EDC83B"
-				item: "botania:black_lotus"
-				type: "item"
-			}]
-			subtitle: "钻石不是拿来做戒指的"
-			tasks: [
-				{
-					id: "7EC352F37B08C886"
-					item: "bloodmagic:weakbloodorb"
-					type: "item"
-				}
-				{
-					id: "132AB4E34ABC5671"
-					item: "minecraft:diamond"
-					type: "item"
-				}
-			]
-			title: "以血为誓"
-			x: 0.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["11E3776CE5E23255"]
-			description: [
 				"这些材料保留了传统的充能方式）"
 				"但需要的魔力量仍然不小）"
-				"所以你可能需要考虑如何获取大量魔力了。"
-				"黑莲花现阶段不可再生，只能让你应急一下）"
-				"植魔的材料可以和其他方面的材料通过一些手段相互转化，所以建议多生产一点。"
+				"所以你可能需要考虑&b如何稳定获取魔力&r了。"
+				"植魔的材料可以和其他方面的材料&6通过一些手段相互转化&r，所以建议多生产一点。"
 				"具体转化方式参见JEI）"
 			]
 			id: "1B2D939907CB4DF0"
 			rewards: [{
-				id: "5668C87C4C42AE5A"
-				item: "botania:blacker_lotus"
+				id: "2A1EF0022C3BC444"
+				item: "botania:black_lotus"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "充能后变蓝"
 			tasks: [
 				{
@@ -217,156 +275,94 @@
 				}
 			]
 			title: "魔能材料"
-			x: 0.0d
-			y: 2.0d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["57B126A840CCD6E4"]
 			description: [
-				"炼金矩阵，一种神秘的1+1=1的手段，主要用于物质转化。"
-				"对着奥术粉灰按下U，检索并开启你的转化之旅。"
-				"至于炼金术桌，那是你制作试剂的必需品。"
-				"在炼制出占卜印记后，你就可以查询你当前的LP数值了！"
-				"&o&c*通过占卜印记在手里右键，你可以从界面UI中看到自己当前可用的LP数量）&r&r"
-				"{@pagebreak}"
-				"血魔法的炼金术桌同样可以用来炼制血魔法特有的药剂，其中一部分可以饮用，另外一部分则可以&b通过副手右键为工具附加特殊功能&r！"
-				"然而相应的，这一功能有其缺点：如果通过&2附加了某些功能（如精准采集和幸运）&r的工具&d挖掘潜影盒&r，潜影盒内部的物品将会&l&c全部损失&r&r。请谨慎使用……"
-				""
-				"&o&6*炼金术桌还能拿来干别的，比如造螃蟹……？&r&r"
+				"通过收集灵魂，你可以将一些常见的材料&5侵染为黑暗的魔法材料&r。"
+				"然而这些材料的合成方式并不轻松，所以在完成初期的积累后，你需要另一种更加高效的生产方式。"
+				"比如一个刷怪笼来作为无限能源……？"
 			]
-			icon: "bloodmagic:alchemytable"
+			icon: "alexsmobs:skreecher_soul"
 			id: "13313120B0D22371"
-			subtitle: "准备好绘制法阵了吗？"
+			shape: "rsquare"
+			subtitle: "黑暗注入……"
 			tasks: [
 				{
-					id: "39D1D040B332B33C"
-					item: "bloodmagic:alchemytable"
+					id: "40E93E4FCF656CA4"
+					item: "goety:haunted_sapling"
 					type: "item"
 				}
 				{
-					id: "19798221916B0DF8"
-					item: {
-						Count: 1
-						id: "bloodmagic:arcaneashes"
-						tag: {
-							Damage: 0
-						}
-					}
+					id: "630CE5BA53B4BA61"
+					item: "goety:shade_stone"
 					type: "item"
 				}
 				{
-					id: "33D55A3F57C9AFA7"
-					item: "bloodmagic:divinationsigil"
+					id: "7870A3EA7CDE7F44"
+					item: "goety:cursed_ingot"
 					type: "item"
 				}
 			]
-			title: "真正的炼金"
-			x: -1.0d
-			y: -4.0d
+			title: "灵魂侵染"
+			x: 4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["57B126A840CCD6E4"]
 			description: [
-				"你已经准备好获取怪物的灵魂，那么，将投网扔到怪物的身上。"
-				"这会禁锢它们的意志，让你在杀死它们时获得恶魔意志的掉落。"
-				"投网是一次性用品，如果你需要更多，你需要自己制造。"
-				"当然，不会让你一直用一次性投网的——后续你可以通过灵魂之剑达成相同的效果。"
+				"在你选择用灵魂施法的时候，简单地将灵魂释放出去显然不能构成任何法术。"
+				"法术的释放需要&b容纳了定式的晶体&r来转换，但在你没编织定式并注入的时候，它显然就是空白的。"
+				"当然，它不止能被拿来制作法术聚晶。"
 			]
 			id: "60B15529BE147F62"
-			rewards: [{
-				count: 10
-				id: "32CE8FA3A263AC0D"
-				item: "bloodmagic:soulsnare"
-				type: "item"
-			}]
-			subtitle: "抽取怪物的力量！"
+			shape: "rsquare"
+			subtitle: "简易载体"
 			tasks: [{
-				id: "68B353027C9FC43D"
-				item: "bloodmagic:soulforge"
+				id: "3722B3D1522B29BE"
+				item: "goety:empty_focus"
 				type: "item"
 			}]
-			title: "灵魂之力"
-			x: 1.0d
-			y: -4.0d
+			title: "灵魂聚合"
+			x: 4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["13313120B0D22371"]
 			description: [
-				"除了需要一点小小的牺牲，这两种符咒基本全是优点）"
-				"右键就可以放置水/岩浆，但是要消耗生命值。"
-				"另外，不要随便对着容器右键——一些容器不能灌进去）"
-				"&l*神秘建议&r：你可以使用熔岩印记作为&b攻击武器&r和&c无限火把&r——但小心不要烫到自己！"
-			]
-			id: "76E3812C8219949B"
-			rewards: [{
-				id: "63AF9724E033F83F"
-				item: "create:fluid_tank"
-				type: "item"
-			}]
-			subtitle: "无尽水和无尽岩浆的前置"
-			tasks: [
-				{
-					id: "3DE88F9C0B4B6D6F"
-					item: "bloodmagic:reagentwater"
-					type: "item"
-				}
-				{
-					id: "4889EF35AA2CFC94"
-					item: "bloodmagic:reagentlava"
-					type: "item"
-				}
-				{
-					id: "4AB8D784BCB3B4C8"
-					item: "bloodmagic:watersigil"
-					type: "item"
-				}
-				{
-					id: "2C56788977C52021"
-					item: "bloodmagic:lavasigil"
-					type: "item"
-				}
-			]
-			title: "水与火的试炼"
-			x: -3.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["60B15529BE147F62"]
-			description: [
-				"很快你就会发现一地的恶魔意志是个很烦人的事情，尤其是它们还不能叠加。"
-				"这种时候，做一块魂石就成为了必要的：将魂石和恶魔意志一起扔在地上，它就会自动进行吸收！"
-				"恶魔意志后续的作用，可以自己在血魔法书中查询。"
-				"你可以通过恶魔意志激活这把剑……并用它代替灵魂投网，直接收割灵魂能量。"
+				"当你做出这个之后，你会发现自己拥有了&a自定义施法&r的能力——虽然法术聚晶的效果还是固定的，但是比起铁魔法而言自由度更高一点，毕竟你可以随时打开法杖更换聚晶。"
+				"聚晶的功能也&b更为繁杂&r，有相当一部分是&6“伤害”之外的生活功能&r，不过这需要你自行探索了。"
+				"这里赠送的基础聚晶可以试试&e放电&r——这一聚晶可以进阶，一部分基础聚晶可以合成为更强大的聚晶。"
 				""
-				"&o&a看不懂？那看我干什么，去看书学习去！&r&r"
+				"&o&a能力有限……但是可以升级为高级魔杖。&r&r"
 			]
 			id: "643DA6D3D15ED948"
 			rewards: [{
-				id: "589783BB7C61ACED"
-				item: {
-					Count: 1
-					id: "bloodmagic:soulsword"
-					tag: {
-						Damage: 0
-					}
-				}
+				id: "2CB2DAE110C7674B"
+				item: "goety:shocking_focus"
 				type: "item"
 			}]
-			subtitle: "嗯，还是电池"
+			subtitle: "帅otto"
 			tasks: [{
-				id: "20AA130C6EFE623B"
+				id: "34F33A665FA48518"
 				item: {
 					Count: 1
-					id: "bloodmagic:soulgempetty"
-					tag: {
-						souls: 64.0d
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							Size: 1
+							slot: 0
+						}
 					}
+					id: "goety:dark_wand"
 				}
 				type: "item"
 			}]
-			title: "灵魂能量存储"
-			x: 3.0d
-			y: -4.0d
+			title: "电棍"
+			x: 4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -374,37 +370,44 @@
 				"60B15529BE147F62"
 			]
 			description: [
-				"血魔法的祭坛分为5级，每升一级都需要更多的符文和装饰品。"
-				"2级祭坛的具体构建方法已经在血染知书中，这里就不再赘述。"
-				"如果你发现血染知书的汉化略显抽象，不用意外，这是正常的，尝试理解就好——至少主线功能不会出问题。"
-				"不同的符文会给祭坛带来不同的加成，这一点请自行探索。"
+				"当你需要导出灵魂并用于更强力的合成时，简单的图腾显然会有些让人力不从心，而一个&b能够禁锢灵魂之力的笼子&r显然是更好的选项。"
+				"将图腾置入笼子后，它就会成为&9灵魂储存和释放的载体&r——然而图腾的充能仍需你亲自动手。"
+				"这也是后续几乎所有外部灵魂之力调用的基础。"
+				""
+				"&o&7*它也可以变成刷怪笼并被你抽取能量——它和刷怪笼长得很像是有原因的）&r&r"
 			]
 			id: "7338DDFCE4617258"
 			rewards: [{
-				id: "71FB62697851C374"
-				item: "bloodmagic:orbcapacityrune"
+				id: "04C465EEB0F26F68"
+				item: "goety:soul_light_focus"
 				type: "item"
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "是的，你需要升级"
+			subtitle: "灵魂下沉……"
 			tasks: [{
-				count: 8L
-				id: "3A94890A0628B0D8"
-				item: "bloodmagic:blankrune"
+				id: "4C25BB7C1147C36F"
+				item: "goety:cursed_cage"
 				type: "item"
 			}]
-			title: "符文与高阶祭坛"
-			x: 0.0d
-			y: -6.0d
+			title: "刷怪笼（伪）"
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4320B37354ECBC14"]
 			description: [
 				"在得到炼药锅后，你就可以清洗一些你用不着的卷轴，以及将低级墨水合成为高级墨水。"
 				"可以期待一下彩虹色的传说墨水）"
+				""
+				"&b&o*如果缺少墨水，工业可以合成普通墨水，而魔法催化可以产出稀有墨水。&r&r"
 			]
 			id: "7CCCB823C49F78E8"
+			rewards: [{
+				id: "0EED987BB86B8B9A"
+				item: "biomeswevegone:green_enchanted_sapling"
+				type: "item"
+			}]
 			subtitle: "哇，金色传说！"
 			tasks: [{
 				id: "2001D70EA3440122"
@@ -412,13 +415,13 @@
 				type: "item"
 			}]
 			title: "传奇之路"
-			x: -4.0d
-			y: -1.0d
+			x: 1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["4320B37354ECBC14"]
 			description: [
-				"如果你要书写法术卷轴，你需要纸以及对应派系的材料。"
+				"如果你要书写法术卷轴，你需要纸，对应派系的材料以及合适的墨水。"
 				"现在，所有材料都可以通过特定的方式获得，所以——祝你好运！"
 				"&o&4*注：那个鲜血瓶子其实你自己跳进锅里也行&r&r"
 			]
@@ -428,7 +431,7 @@
 				item: "irons_spellbooks:scroll_forge"
 				type: "item"
 			}]
-			subtitle: "八种派系，八类材料"
+			subtitle: "九九归一"
 			tasks: [
 				{
 					id: "33C00FE7789AFE4D"
@@ -470,10 +473,15 @@
 					item: "minecraft:blaze_rod"
 					type: "item"
 				}
+				{
+					id: "068F5AA307F79E86"
+					item: "minecraft:note_block"
+					type: "item"
+				}
 			]
 			title: "自然要素"
-			x: -4.0d
-			y: 1.0d
+			x: -1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -481,7 +489,7 @@
 				"7CCCB823C49F78E8"
 			]
 			description: [
-				"由于我们的修改，现在你需要逐级升级自己的法术书。"
+				"基于真实性修改，现在你需要逐级升级自己的基础法术书。"
 				"下地狱的时候注意温度，注意怪物——以及注意你自己。"
 				"升级法术书的时候，内部的法术也会一并保留，所以可以放心升级。"
 			]
@@ -503,7 +511,7 @@
 				item: "irons_spellbooks:epic_ink"
 				type: "item"
 			}]
-			shape: "hexagon"
+			shape: "circle"
 			size: 1.5d
 			subtitle: "杀猪爆装备，一刀999！"
 			tasks: [
@@ -535,19 +543,31 @@
 				}
 			]
 			title: "地狱的馈赠"
-			x: -6.0d
-			y: 0.0d
+			x: 0.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["7CCCB823C49F78E8"]
-			description: ["升级不同级别的墨水需要不同级别的矿物，所以最好找个紫水晶洞（确信"]
+			description: [
+				"升级不同级别的墨水需要不同级别的矿物。"
+				"理论上紫水晶碎片需要一个晶洞，然而有一类树可以自己缓慢长出紫水晶。"
+				""
+				"&o&m&d*恭喜紫水晶母岩荣获本包Joker称号！&r&r&r"
+			]
 			icon: "sophisticatedbackpacks:advanced_restock_upgrade"
 			id: "21667ABCD50F787E"
-			rewards: [{
-				id: "1D7B3D909CDA72EB"
-				item: "minecraft:budding_amethyst"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "4E60B711DFC315EA"
+					item: "minecraft:amethyst_cluster"
+					type: "item"
+				}
+				{
+					id: "4CBC47D7849FE305"
+					item: "biomeswevegone:blue_enchanted_sapling"
+					type: "item"
+				}
+			]
 			subtitle: "墨水升级也需要核心材料"
 			tasks: [
 				{
@@ -572,21 +592,22 @@
 				}
 			]
 			title: "基本升级材料"
-			x: -4.0d
-			y: -3.0d
+			x: 3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1B2D939907CB4DF0"]
 			description: [
-				"植物魔法的魔力是个很奇怪的东西，你把特定的催化器放置在魔力池下方，就可以起到神秘的作用。"
-				"所以这里我建议你至少准备四个池子：两个普通魔力池用来开门，一个炼金池，一个炼造池。"
+				"植物魔法的魔力是个很奇怪的东西，将特定的催化器放置在魔力池下方，就可以起到神秘的作用。"
+				"所以这里建议至少准备四个池子：两个普通魔力池用来开门，一个炼金池，一个炼造池。"
 			]
 			id: "532F8BFB9374238B"
 			rewards: [{
-				id: "23579AC3A7AB39EC"
-				item: "botania:black_lotus"
+				id: "33F64C25BAD66921"
+				item: "botania:mutated_seeds"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "很显然，炼金不科学"
 			tasks: [
 				{
@@ -601,8 +622,8 @@
 				}
 			]
 			title: "性质变化与无中生有"
-			x: -1.0d
-			y: 4.0d
+			x: -4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["719876BE47F58EE6"]
@@ -619,8 +640,8 @@
 				type: "item"
 			}]
 			title: "填写元素"
-			x: -4.0d
-			y: 3.0d
+			x: -3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["1B2D939907CB4DF0"]
@@ -639,6 +660,7 @@
 				item: "minecraft:soul_sand"
 				type: "item"
 			}]
+			shape: "rsquare"
 			subtitle: "魔力当然也可以拿来炼制药水。"
 			tasks: [
 				{
@@ -653,8 +675,8 @@
 				}
 			]
 			title: "魔法炼药"
-			x: 1.0d
-			y: 4.0d
+			x: -4.0d
+			y: 1.0d
 		}
 		{
 			dependencies: [
@@ -662,9 +684,9 @@
 				"588310807CE42A4A"
 			]
 			description: [
-				"由于药水这种东西是一次性的，而一次性的东西总是很讨厌，所以魔法提供了一种固化效果的手段。"
-				"利用酿造台和魔力，你可以持续获得某种效果的加成！"
-				"当然，你最好带上一块魔力石板在身上……"
+				"由于药水这种东西是&d一次性&r的，而一次性的东西总是很讨厌，所以魔法提供了一种固化效果的手段。"
+				"利用酿造台和魔力，你可以&c持续获得&r某种效果的加成！"
+				"启动效果当然&b需要消耗魔力&r，你最好带上一块魔力石板在身上……"
 			]
 			id: "718DE6A22EEBDD50"
 			rewards: [{
@@ -682,15 +704,15 @@
 				type: "item"
 			}]
 			title: "长效加成"
-			x: 0.0d
-			y: 6.0d
+			x: -6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["532F8BFB9374238B"]
 			description: [
-				"我们讨论炼金的时候本质是物质的转变，而对于特定产物的拆分和重组显然也是其中一部分。"
-				"这里提供三个例子：将魔力钢锭拆分为奥术源质；将粘液球转化为末影珍珠，将血魔法的气血宝珠逆向还原为钻石。"
-				"更多的神秘配方就要自己探索了，话说的太明白就没意思了）"
+				"我们讨论炼金的时候本质是&6物质的转变&r，而对于特定产物的&c拆分和重组&r显然也是其中一部分。"
+				"这里提供几个例子：将魔力钢锭拆分为奥术源质；将粘液球转化为末影珍珠。"
+				"更多的神秘配方就要自己探索了哦）"
 			]
 			icon: "botania:mana_void"
 			id: "01ABDF6D02F461D6"
@@ -703,11 +725,6 @@
 				{
 					id: "436043AD02B27677"
 					item: "minecraft:slime_ball"
-					type: "item"
-				}
-				{
-					id: "65563A865AE4ED42"
-					item: "bloodmagic:weakbloodorb"
 					type: "item"
 				}
 			]
@@ -723,15 +740,10 @@
 					item: "minecraft:ender_pearl"
 					type: "item"
 				}
-				{
-					id: "1AEABD7370315090"
-					item: "minecraft:diamond"
-					type: "item"
-				}
 			]
 			title: "裂解与重组"
-			x: -3.0d
-			y: 4.0d
+			x: -4.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["588310807CE42A4A"]
@@ -766,13 +778,19 @@
 				}
 			]
 			title: "短暂，但有效"
-			x: 3.0d
-			y: 4.0d
+			x: -4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["2EA11306B3076434"]
-			description: ["但是它还是会吃你的魔力（虽然开门后就不吃了），所以你得找靠谱且稳定的魔力生产方式。"]
+			description: [
+				"但是它还是会吃你的魔力（虽然开门后就基本不吃了），所以你得找靠谱且稳定的魔力生产方式。"
+				"除了交换精灵特有的一些物资，你还可以让精灵帮你&3反转一些物品的能量&r，比如用诅咒金属锭交换魔力钢。虽然这种反转是单向的，但仍然足够实用。"
+				""
+				"&o&c*注意：不要一次投入能多次反应的材料，会导致世界崩溃，只能回档解决！&r&r"
+			]
 			id: "6FA24342A82507F6"
+			shape: "rsquare"
 			subtitle: "这个大门其实只是个交易入口）"
 			tasks: [
 				{
@@ -797,17 +815,18 @@
 				}
 			]
 			title: "PY交易"
-			x: 4.0d
-			y: -1.0d
+			x: 1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2EA11306B3076434"]
 			description: [
 				"为了顺利完成后续的一些事情，火花这种远程传输魔力的结构就成为了必需品。"
-				"好处是它还算廉价，坏处是你必须通过和精灵的交易才能开始搞这些。"
-				"火花的用量会很大，所以别随便就把烈焰人笼子挖掉了（"
+				"好处是它还算廉价，坏处是你必须通过&a和精灵的交易&r才能开始搞这些。"
+				"如果不希望每次刷烈焰人都要下地狱，也许应该看看&3诡厄巫法&r的聚晶……"
 			]
 			id: "5F1578F61B3B2D32"
+			shape: "rsquare"
 			subtitle: "闪耀的魔法之光"
 			tasks: [{
 				id: "5A3CAB8C0D47DD50"
@@ -815,8 +834,8 @@
 				type: "item"
 			}]
 			title: "魔力传输"
-			x: 4.0d
-			y: 1.0d
+			x: -1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6FA24342A82507F6"]
@@ -845,8 +864,8 @@
 				}
 			]
 			title: "炫彩装备"
-			x: 4.0d
-			y: -3.0d
+			x: 3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5F1578F61B3B2D32"]
@@ -877,8 +896,8 @@
 				}
 			]
 			title: "充魔站"
-			x: 4.0d
-			y: 3.0d
+			x: -3.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -889,8 +908,9 @@
 				"&b【完成后解锁主线章节：3M 魔力流淌】&r"
 				"作为后续高级凝聚操作的核心部件，麻烦一点也是正常的。"
 				"请准备好足够多的材料来完成这一切……然后搭建凝聚结构，你就可以准备迎接泰拉钢时代了。"
-				"有一点要注意，这个板子还会拿来合成别的，别以为只有泰拉钢……"
+				"有一点要注意，它不止会被用来凝聚泰拉钢。"
 			]
+			icon: "botania:terra_plate"
 			id: "27ABB5338B46217F"
 			rewards: [{
 				id: "1195091C3344D91C"
@@ -906,45 +926,112 @@
 			shape: "hexagon"
 			size: 1.5d
 			subtitle: "嗯，很复杂"
-			tasks: [{
-				id: "03194BBDEF9F93B8"
-				item: "botania:terra_plate"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "03194BBDEF9F93B8"
+					item: "botania:terra_plate"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "0A823BB5D75BA783"
+					item: { Count: 5, id: "botania:livingrock" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "73B0B22F98182C4F"
+					item: { Count: 4, id: "minecraft:lapis_block" }
+					type: "item"
+				}
+			]
 			title: "【终点】泰拉之光"
-			x: 6.0d
-			y: 0.0d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1B2D939907CB4DF0"]
 			description: [
-				"由于实在太难找，你可以通过魔力将陆地上的叶子转化为海里的叶子！"
-				"有传送带了（确信）"
+				"魔力能做到一些奇妙的转换，比如把一些内在具有共同点的事物视为一个相似组进行转变……"
+				"&2比如叶子，也比如种子。&r"
+				""
+				"&o&7*请记住，种子是可以直接种植到耕地上的。&r&r"
 			]
 			id: "19CAA60981A6A8E8"
-			subtitle: "冰海确实不太行，但魔力可以！"
-			tasks: [{
-				id: "25A9EBF1200D1329"
-				item: "minecraft:kelp"
-				type: "item"
-			}]
+			subtitle: "嬗变魔法"
+			tasks: [
+				{
+					id: "25A9EBF1200D1329"
+					item: "minecraft:kelp"
+					type: "item"
+				}
+				{
+					id: "42704BC21B0A9752"
+					item: "immersiveengineering:seed"
+					type: "item"
+				}
+			]
 			title: "罕见作物"
-			x: 0.0d
-			y: 4.0d
+			x: -4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["57B126A840CCD6E4"]
-			description: ["按规定放置熏香祭坛，可以让你的自我献祭更加有效……"]
+			description: [
+				"作为最厚重也是最接地气的元素核心，你现在就可以&6聚合地元素&r，并用其手动量产玉石。"
+				"这下不用&a狂暴挖矿&r了，对吧……"
+				"地元素核心&e可以聚合绝大部分宝石&r，所以最好&c不要只做一个。&r"
+			]
+			icon: "goety:jade"
 			id: "41990A4F90A100DA"
-			subtitle: "失血加成"
+			rewards: [
+				{
+					id: "7A9EB5922ECE204C"
+					item: "goety:jade"
+					type: "item"
+				}
+				{
+					id: "1CE7789F04D6ACE1"
+					item: "blue_skies:moonstone_crystal"
+					type: "item"
+				}
+				{
+					id: "64D5EDD814AD304F"
+					item: "blue_skies:sunstone_crystal"
+					type: "item"
+				}
+			]
+			subtitle: "足够的玉，简称玉足"
 			tasks: [{
-				id: "67AC0274A819CCD0"
-				item: "bloodmagic:incensealtar"
+				id: "27593D343BF67B47"
+				item: "kubejs:earth_elemental_core"
 				type: "item"
 			}]
-			title: "虔诚奉献"
-			x: 0.0d
-			y: -4.0d
+			title: "人造玉石"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60B15529BE147F62"]
+			description: [
+				"尽管刷怪笼本身难以获取，但魔法可以直接提取笼中的生命之火，并将其转移。"
+				"右键刷怪笼后&9原本的刷怪笼将碎裂&r，但对应生物的火焰将在你的聚晶中燃起——将其&c在诅咒之笼中点燃&r，你就能够获得一个全新的，由你指定位置的刷怪笼！"
+			]
+			id: "092CD716FC19EF76"
+			rewards: [{
+				id: "4308D3408297310F"
+				item: "irons_spellbooks:firefly_jar"
+				type: "item"
+			}]
+			subtitle: "牺牲一个，成就另一个"
+			tasks: [{
+				id: "624D690BF0E882D8"
+				item: "goety:flame_capture"
+				type: "item"
+			}]
+			title: "刷怪笼的第一步"
+			x: 4.0d
+			y: 3.0d
 		}
 	]
 	subtitle: ["Blood and Soul"]

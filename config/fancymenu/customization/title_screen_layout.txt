@@ -142,7 +142,7 @@ element {
 
 element {
   interactable = true
-  source = Path of Truth V3.0%n%欢迎你，{"placeholder":"playername"}！
+  source = Path of Truth V3.0.1%n%欢迎你，{"placeholder":"playername"}！
   source_mode = direct
   shadow = true
   scale = 1.0
@@ -1052,4 +1052,3 @@ vanilla_button {
   is_hidden = true
   automated_button_clicks = 0
 }
-
