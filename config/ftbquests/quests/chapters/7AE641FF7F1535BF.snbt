@@ -658,8 +658,6 @@
 			description: [
 				"{ftbquests.chapter.7AE641FF7F1535BF.quest26.description1}"
 				"{ftbquests.chapter.7AE641FF7F1535BF.quest26.description2}"
-				""
-				"{ftbquests.chapter.7AE641FF7F1535BF.quest26.description3}"
 			]
 			icon: "vintageimprovements:centrifuge"
 			id: "14A2B5756D42DD23"
