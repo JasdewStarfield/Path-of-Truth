@@ -253,7 +253,7 @@ filetree
 [issues-url]: https://img.shields.io/github/issues/JasdewStarfield/Path-of-Truth.svg
 [qq-shield1]:https://img.shields.io/badge/QQ1群-631894460-12B7F3?style=flat-square
 [qq-shield2]:https://img.shields.io/badge/QQ2群-798699096-16B3A3?style=flat-square
-[version-shield]:https://img.shields.io/badge/当前版本-V3.0-2CB3A8?style=flat-square
+[version-shield]:https://img.shields.io/badge/当前版本-V3.0.2-2CB3A8?style=flat-square
 [license-shield]: https://img.shields.io/github/license/JasdewStarfield/Path-of-Truth.svg?style=flat-square
 [license-url]: https://github.com/JasdewStarfield/Path-of-Truth/blob/master/LICENSE.txt
 
