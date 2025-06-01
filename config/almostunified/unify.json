@@ -104,7 +104,8 @@
   "ignoredTags": [],
   "ignoredItems": [],
   "ignoredRecipeTypes": [
-    "cucumber:shaped_tag"
+    "cucumber:shaped_tag",
+    "create:crushing"
   ],
   "ignoredRecipes": [],
   "itemsHidingJeiRei": true
