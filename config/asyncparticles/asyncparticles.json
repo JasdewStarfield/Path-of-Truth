@@ -4,7 +4,7 @@
     "particleLimit": 16384,
     "removeIfMissedTick": false,
     "particleLightCache": true,
-    "cullUnderwaterParticleType": true
+    "cullUnderwaterParticleType": false
   },
   "tick": {
     "animationTickMode": "INTERRUPTIBLE",
@@ -15,7 +15,7 @@
   },
   "rendering": {
     "cullParticles": true,
-    "particleRenderingMode": "DELAYED",
+    "particleRenderingMode": "COMPATIBILITY",
     "failPerSecLimit": 20,
     "failBehavior": "MARK_AS_SYNC"
   },
