@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "E",
+    "C"
+  ],
+  "key": {
+    "C": [
+      {
+        "item": "minecraft:compass"
+      }
+    ],
+    "E": [
+      {
+        "item": "create:electron_tube"
+      }
+    ]
+  },
+  "result": {
+    "item": "immersive_aircraft:gyroscope"
+  }
+}

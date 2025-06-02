@@ -1,0 +1,28 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IRI",
+    "ICI"
+  ],
+  "key": {
+    "R": [
+      {
+        "item": "minecraft:redstone_torch"
+      }
+    ],
+    "I": [
+      {
+        "item": "create:iron_sheet"
+      }
+    ],
+    "C": [
+      {
+        "item": "create:chute"
+      }
+    ]
+  },
+  "result": {
+    "item": "immersive_aircraft:bomb_bay"
+  }
+}

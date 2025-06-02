@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BPB",
+    "SES"
+  ],
+  "key": {
+    "P": [
+      {
+        "item": "create:precision_mechanism"
+      }
+    ],
+    "E": [
+      {
+        "item": "immersive_aircraft:boiler"
+      }
+    ],
+    "B": [
+      {
+        "item": "create:brass_sheet"
+      }
+    ],
+    "S": [
+      {
+        "item": "create:sturdy_sheet"
+      }
+    ]
+  },
+  "result": {
+    "item": "immersive_aircraft:engine"
+  }
+}

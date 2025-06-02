@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IHI"
+  ],
+  "key": {
+    "H": [
+      {
+        "item": "immersive_aircraft:hull"
+      }
+    ],
+    "I": [
+      {
+        "item": "create:iron_sheet"
+      }
+    ]
+  },
+  "result": {
+    "item": "immersive_aircraft:hull_reinforcement"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D ",
+    " P ",
+    " C "
+  ],
+  "key": {
+    "D": [
+      {
+        "item": "minecraft:dispenser"
+      }
+    ],
+    "P": [
+      {
+        "item": "create:precision_mechanism"
+      }
+    ],
+    "C": [
+      {
+        "item": "minecraft:copper_ingot"
+      }
+    ]
+  },
+  "result": {
+    "item": "immersive_aircraft:rotary_cannon"
+  }
+}
