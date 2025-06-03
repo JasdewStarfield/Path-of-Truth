@@ -135,6 +135,13 @@ ServerEvents.recipes(event => {
     '#forge:workbench'
   )
 
+  //皮革
+  event.replaceInput(
+    {input:'minecraft:leather'},
+    'minecraft:leather',
+    '#forge:leather'
+  )
+
   //任意末影珍珠合成原版末影珍珠
   event.shapeless(Item.of('minecraft:ender_pearl',1),
         [

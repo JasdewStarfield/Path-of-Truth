@@ -327,9 +327,9 @@
     "modId": "create_enchantment_industry",
     "version": "1.3.2-for-create-6.0.4"
   },
-  "create_mobile_packages-1.20.1-0.5.0.jar": {
+  "create_mobile_packages-1.20.1-0.5.1.jar": {
     "modId": "create_mobile_packages",
-    "version": "0.5.0"
+    "version": "0.5.1"
   },
   "create_power_loader-2.0.3-mc1.20.1.jar": {
     "modId": "create_power_loader",
@@ -475,9 +475,9 @@
     "modId": "eccentrictome",
     "version": "1.20.1-1.10.3"
   },
-  "EclipticSeasons-1.20.1-forge-0.11.0-pre4-7-all.jar": {
+  "EclipticSeasons-1.20.1-forge-0.11.0-pre4-8-all.jar": {
     "modId": "eclipticseasons",
-    "version": "0.11.0-pre4-7"
+    "version": "0.11.0-pre4-8"
   },
   "ElysiumAPI-1.20.1-1.1.3.jar": {
     "modId": "elysium_api",
@@ -507,9 +507,9 @@
     "modId": "enhanced_boss_bars",
     "version": "1.20.1-1.0.0"
   },
-  "entityjs-0.5.0-1.20.1.jar": {
+  "entityjs-0.5.1-1.20.1.jar": {
     "modId": "entityjs",
-    "version": "0.5.0-1.20.1"
+    "version": "0.5.1-1.20.1"
   },
   "EventJS-1.20.1-1.4.0.jar": {
     "modId": "eventjs",
@@ -864,7 +864,7 @@
     "modId": "mechanicalbotania",
     "version": "1.0.2"
   },
-  "MEED-1.20.1-6.8.jar": {
+  "MEED-1.20.1-6.9.jar": {
     "modId": "moderately_enough_effect_desc",
     "version": "3.3.0"
   },
@@ -876,9 +876,9 @@
     "modId": "modelfix",
     "version": "1.15"
   },
-  "modernfix-forge-5.23.0+mc1.20.1.jar": {
+  "modernfix-forge-5.23.1+mc1.20.1.jar": {
     "modId": "modernfix",
-    "version": "5.23.0+mc1.20.1"
+    "version": "5.23.1+mc1.20.1"
   },
   "ModernUI-Forge-1.20.1-3.11.1.6-universal.jar": {
     "modId": "modernui",
@@ -948,9 +948,9 @@
     "modId": "biomeswevegone",
     "version": "1.5.11"
   },
-  "Oh-The-Trees-Youll-Grow-forge-1.20.1-1.3.11.jar": {
+  "Oh-The-Trees-Youll-Grow-forge-1.20.1-1.3.13.jar": {
     "modId": "ohthetreesyoullgrow",
-    "version": "1.3.11"
+    "version": "1.3.13"
   },
   "Oreganized 1.20.1-3.1.4.jar": {
     "modId": "oreganized",
@@ -1076,9 +1076,9 @@
     "modId": "saturn",
     "version": "0.1.3"
   },
-  "sawmill-1.20-1.4.6.jar": {
+  "sawmill-1.20-1.4.7.jar": {
     "modId": "sawmill",
-    "version": "1.20-1.4.6"
+    "version": "1.20-1.4.7"
   },
   "scg-1.20.1-air.jar": {
     "modId": "starcarefree_game",
@@ -1108,9 +1108,9 @@
     "modId": "simple_snowy_fix",
     "version": "2.1.3"
   },
-  "SimpleBackups-1.20.1-3.1.10.jar": {
+  "SimpleBackups-1.20.1-3.1.11.jar": {
     "modId": "simplebackups",
-    "version": "1.20.1-3.1.10"
+    "version": "1.20.1-3.1.11"
   },
   "simplemetals-tin-3.1.jar": {
     "modId": "simplemetals_tin",
