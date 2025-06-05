@@ -1,5 +1,7 @@
 // requires: irons_spellbooks
-EntityEvents.spawned('lightning_bolt', e => {
+let $LightningBolt = Java.loadClass('net.minecraft.world.entity.LightningBolt')
+EntityEvents.spawned(e => {
+    if (!(e.entity instanceof $LightningBolt)) return
     let range = e.entity.boundingBox.inflate(3)
     for (let entity of e.level.getEntitiesWithin(range)) {
         if (entity.type != 'minecraft:item') continue
