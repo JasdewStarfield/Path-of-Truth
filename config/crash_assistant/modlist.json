@@ -235,6 +235,10 @@
     "modId": "collectorsreap",
     "version": "1.3.4"
   },
+  "colorwheel-forge-0.1.0+mc1.20.1.jar": {
+    "modId": "colorwheel",
+    "version": "0.1.0"
+  },
   "comforts-forge-6.4.0+1.20.1.jar": {
     "modId": "comforts",
     "version": "6.4.0+1.20.1"
@@ -1291,6 +1295,10 @@
   "UntranslatedItems-forge-1.20.1-1.7.jar": {
     "modId": "untranslateditems",
     "version": "1.20.1-1.7"
+  },
+  "vanillin-forge-1.20.1-1.1.3.jar": {
+    "modId": "vanillin",
+    "version": "1.1.3"
   },
   "VariantCraftingTables-1.20.1-2.0.2.jar": {
     "modId": "vct",
