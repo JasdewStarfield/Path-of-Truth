@@ -169,6 +169,7 @@ ServerEvents.recipes(event => {
   event.remove({ id:"everycomp:c/botania/dreamwood_slab_from_dreamwood_planks_stonecutting" })
   event.remove({ id:"everycomp:c/botania/dreamwood_stairs_from_dreamwood_planks_stonecutting" })
   event.remove({ id: 'create:industrial_iron_block_from_ingots_iron_stonecutting' })
+  event.remove({ id: 'create:filling/compat/immersiveengineering/treated_wood_in_spout' })
   event.remove({ id: 'createnuclear:crushing/charcoal' })
   event.remove({ id: 'create:crushing/tuff' })
   event.remove({ id: 'create:crushing/tuff_recycling' })
