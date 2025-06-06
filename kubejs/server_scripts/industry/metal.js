@@ -316,6 +316,10 @@ ServerEvents.recipes(event => {
     event.recipes.create.mixing('2x dirt', ['#forge:sand','#forge:cobblestone',Fluid.of('water',500)])
     event.recipes.create.splashing([Item.of('create:copper_nugget').withChance(0.5)], 'dirt')
 
+    //丐版碎沙砾
+    event.remove({id:"create:milling/gravel"})
+    event.recipes.create.milling([Item.of('minecraft:flint'),Item.of('minecraft:sand').withChance(0.75)], 'gravel').id('kubejs:milling/gravel_manual_only')
+
     //削弱陶瓦出铜
     event.recipes.create.crushing([Item.of('minecraft:red_sand'),Item.of('create:copper_nugget').withChance(0.25)], '#minecraft:terracotta')
 
