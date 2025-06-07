@@ -19,6 +19,9 @@
         // radar mode
         let hasRadar = e.player.inventory.find('kubejs:echoing_heart') >= 0
 
+        // spectator override
+        if (e.player.spectator) showCave = hasRadar = true
+
         WorldMapClientWorldDataHelper.currentWorldData.syncedRules = new ClientboundRulesPacket(showCave, showCave)
         MinimapClientWorldDataHelper.currentWorldData.syncedRules = new ClientboundRulesPacketMinimap(
             showCave,
