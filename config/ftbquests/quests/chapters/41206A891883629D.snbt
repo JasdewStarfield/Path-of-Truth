@@ -13,7 +13,7 @@
 			image: "kubejs:textures/quests/start.png"
 			rotation: 0.0d
 			width: 1.3285714285714287d
-			x: 1.0d
+			x: -1.5d
 			y: 0.0d
 		}
 		{
@@ -21,7 +21,7 @@
 			image: "kubejs:textures/quests/i0.png"
 			rotation: 0.0d
 			width: 6.133738601823708d
-			x: 19.0d
+			x: 17.0d
 			y: -4.5d
 		}
 	]
@@ -48,7 +48,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.41206A891883629D.quest1.title}"
-			x: 2.0d
+			x: 0.0d
 			y: 0.0d
 		}
 		{
@@ -61,7 +61,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.41206A891883629D.quest2.title}"
-			x: 3.0d
+			x: 1.0d
 			y: -1.0d
 		}
 		{
@@ -74,7 +74,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.41206A891883629D.quest3.title}"
-			x: 3.0d
+			x: 1.0d
 			y: 1.0d
 		}
 		{
@@ -87,7 +87,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.41206A891883629D.quest4.title}"
-			x: 4.0d
+			x: 2.0d
 			y: 0.0d
 		}
 		{
@@ -104,7 +104,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.41206A891883629D.quest5.title}"
-			x: 6.0d
+			x: 4.0d
 			y: 0.0d
 		}
 		{
@@ -117,7 +117,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.41206A891883629D.quest6.title}"
-			x: 8.0d
+			x: 6.0d
 			y: 0.0d
 		}
 		{
@@ -130,7 +130,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.41206A891883629D.quest7.title}"
-			x: 10.0d
+			x: 8.0d
 			y: 0.0d
 		}
 		{
@@ -172,14 +172,11 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.41206A891883629D.quest10.title}"
-			x: 5.0d
+			x: 3.0d
 			y: -3.0d
 		}
 		{
-			dependencies: [
-				"3FADEC6A05255B1A"
-				"577E2B9C81B59295"
-			]
+			dependencies: ["3FADEC6A05255B1A"]
 			id: "2739985E562929B2"
 			subtitle: "{ftbquests.chapter.41206A891883629D.quest11.subtitle}"
 			tasks: [{
@@ -228,11 +225,11 @@
 				item: "create:andesite_casing"
 				type: "item"
 			}]
-			x: 5.0d
+			x: 3.0d
 			y: 3.0d
 		}
 		{
-			dependencies: ["21AB683F37938358"]
+			dependencies: ["3197074BD2FDC954"]
 			id: "736DD90EBB2F6694"
 			subtitle: "{ftbquests.chapter.41206A891883629D.quest15.subtitle}"
 			tasks: [{
@@ -448,7 +445,7 @@
 				item: "kubejs:buran"
 				type: "item"
 			}]
-			x: 19.0d
+			x: 17.0d
 			y: -7.0d
 		}
 		{
@@ -588,6 +585,20 @@
 				type: "item"
 			}]
 			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2739985E562929B2"
+				"577E2B9C81B59295"
+			]
+			id: "24E7F8358E82569D"
+			tasks: [{
+				id: "1921D989B5D0F7C6"
+				item: "create_factory_logistics:fluid_mechanism"
+				type: "item"
+			}]
+			x: 10.0d
 			y: 0.0d
 		}
 	]

@@ -1,0 +1,42 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "Q": {
+      "item": "scguns:gun_grip"
+    },
+    "L": {
+      "item": "scguns:rapid_firing_unit"
+    },
+    "R": {
+      "item": "scguns:heavy_gun_parts"
+    },
+    "S": {
+      "item": "scguns:heavy_gun_barrel"
+    },
+    "J": {
+      "item": "scguns:heavy_gun_barrel"
+    },
+    "M": {
+      "item": "scguns:scorched_ingot"
+    },
+    "X": {
+      "item": "scguns:scorched_blueprint"
+    },
+    "K": {
+      "item": "scguns:scorched_gun_frame"
+    },
+    "A": {
+      "item": "scguns:gun_magazine"
+    }
+
+  },
+  "pattern": [
+    "MKX ",
+    "LRJS",
+    "Q A "
+  ],
+  "result": {
+    "item": "scguns:locust"
+  }
+}

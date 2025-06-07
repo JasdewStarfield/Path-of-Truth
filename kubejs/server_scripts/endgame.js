@@ -589,4 +589,20 @@ ServerEvents.recipes(event => {
         "item": 'undergarden:depthrock_bed'//实际产出
     }
   })
+
+  //声纳模块
+  event.shaped(
+    Item.of('kubejs:sonic_mechanism'),
+    [
+        'ABA',
+        'ADA',
+        'ACA'
+    ],
+    {
+      A: 'create:precision_mechanism',
+      B: 'stardew_fishing:sonar_bobber',
+      C: 'immersiveengineering:rs_engineering',
+      D: 'alexsmobs:echolocator'
+    }
+  )
 })

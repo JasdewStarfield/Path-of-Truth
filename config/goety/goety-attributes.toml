@@ -789,6 +789,83 @@
 			#Range: 6.0 ~ 1.7976931348623157E308
 			redstoneMonstrosityHurtRange = 20.0
 
+		[Attributes."Summoned Mobs".Neollager]
+			#How much Max Health Neollagers have, Default: 20.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			neollagerHealth = 20.0
+			#How much natural Armor Neollagers have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			neollagerArmor = 0.0
+
+		[Attributes."Summoned Mobs"."Pillager Servant"]
+			#How much Max Health Pillager Servants have, Default: 24.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			pillagerServantHealth = 24.0
+			#How much natural Armor Pillager Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			pillagerServantArmor = 0.0
+			#How much damage Pillager Servants deals, Default: 5.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			pillagerServantDamage = 5.0
+			#How much extra damage Pillager Servants range attack deals, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			pillagerServantRangeDamage = 0.0
+
+		[Attributes."Summoned Mobs"."Vindicator Servant"]
+			#How much Max Health Vindicator Servants have, Default: 24.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			vindicatorServantHealth = 24.0
+			#How much natural armor points Vindicator Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			vindicatorServantArmor = 0.0
+			#How much damage Vindicator Servants deals, Default: 5.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			vindicatorServantDamage = 5.0
+
+		[Attributes."Summoned Mobs"."Evoker Servant"]
+			#How much Max Health Evoker Servants have, Default: 24.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			evokerServantHealth = 24.0
+			#How much natural Armor Evoker Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			evokerServantArmor = 0.0
+			#How much following/detection range Evoker Servants have, Default: 12.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			evokerServantFollowRange = 12.0
+
+		[Attributes."Summoned Mobs"."Geomancer Servant"]
+			#How much Max Health Geomancer Servants have, Default: 18.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			geomancerServantHealth = 18.0
+			#How much natural Armor Geomancer Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			geomancerServantArmor = 0.0
+			#How much following/detection range Geomancer Servants have, Default: 12.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			geomancerServantFollowRange = 12.0
+
+		[Attributes."Summoned Mobs"."Iceologer Servant"]
+			#How much Max Health Iceologer Servants have, Default: 20.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			iceologerServantHealth = 20.0
+			#How much natural Armor Iceologer Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			iceologerServantArmor = 0.0
+			#How much following/detection range Iceologer Servants have, Default: 15.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			iceologerServantFollowRange = 15.0
+
+		[Attributes."Summoned Mobs"."Wind Caller Servant"]
+			#How much Max Health Wind Caller Servants have, Default: 24.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			windCallerServantHealth = 24.0
+			#How much natural Armor Wind Caller Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			windCallerServantArmor = 0.0
+			#How much following/detection range Wind Caller Servants have, Default: 35.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			windCallerServantFollowRange = 35.0
+
 	[Attributes.Illagers]
 		#How much Max Health Conquillager have, Default: 24.0
 		#Range: 1.0 ~ 1.7976931348623157E308

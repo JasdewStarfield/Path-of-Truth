@@ -235,17 +235,17 @@
     "modId": "collectorsreap",
     "version": "1.3.4"
   },
-  "colorwheel-forge-0.1.0+mc1.20.1.jar": {
+  "colorwheel-forge-0.2.0.jar": {
     "modId": "colorwheel",
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
   "comforts-forge-6.4.0+1.20.1.jar": {
     "modId": "comforts",
     "version": "6.4.0+1.20.1"
   },
-  "compressed_create_recipes-1.2.3.jar": {
+  "compressed_create_recipes-1.2.4.jar": {
     "modId": "compressed_create_recipes",
-    "version": "1.2.3"
+    "version": "1.2.4"
   },
   "compressedengineering-1.4.3.jar": {
     "modId": "compressedengineering",
@@ -275,9 +275,9 @@
     "modId": "coroutil",
     "version": "1.20.1-1.3.7"
   },
-  "corpse-forge-1.20.1-1.0.20.jar": {
+  "corpse-forge-1.20.1-1.0.21.jar": {
     "modId": "corpse",
-    "version": "1.20.1-1.0.20"
+    "version": "1.20.1-1.0.21"
   },
   "corpsecurioscompat-1.20.x-Forge-3.0.1.jar": {
     "modId": "corpsecurioscompat",
@@ -331,6 +331,10 @@
     "modId": "create_enchantment_industry",
     "version": "1.3.2-for-create-6.0.4"
   },
+  "create_factory_logistics-1.2.1.0-all.jar": {
+    "modId": "create_factory_logistics",
+    "version": "1.2.1.0"
+  },
   "create_mobile_packages-1.20.1-0.5.2-5-mc1.20.1_main.jar": {
     "modId": "create_mobile_packages",
     "version": "0.5.2"
@@ -359,9 +363,9 @@
     "modId": "createlimiteddraining",
     "version": "0.1.1"
   },
-  "createnuclear-1.2.2-forge.jar": {
+  "createnuclear-1.3.0-forge.jar": {
     "modId": "createnuclear",
-    "version": "1.2.2"
+    "version": "1.3.0"
   },
   "createpickywheels-forge-1.20.1-6.0.0-1.jar": {
     "modId": "createpickywheels",
@@ -527,6 +531,10 @@
     "modId": "explorerscompass",
     "version": "1.20.1-1.3.3-forge"
   },
+  "extra_gauges-1.1.2-all.jar": {
+    "modId": "extra_gauges",
+    "version": "1.1.2"
+  },
   "ExtremeSoundMuffler-3.49.1-forge-1.20.1.jar": {
     "modId": "extremesoundmuffler",
     "version": "3.48"
@@ -631,13 +639,13 @@
     "modId": "gallery",
     "version": "1.0.3"
   },
-  "geckolib-forge-1.20.1-4.7.1.2.jar": {
+  "geckolib-forge-1.20.1-4.7.1.3.jar": {
     "modId": "geckolib",
-    "version": "4.7.1.2"
+    "version": "4.7.1.3"
   },
-  "goety-2.5.33.3.jar": {
+  "goety-2.5.34.0.jar": {
     "modId": "goety",
-    "version": "2.5.33.3"
+    "version": "2.5.34.0"
   },
   "GPUTape-1.18x-1.21x-1.0.5.1.jar": {
     "modId": "gpu_tape",

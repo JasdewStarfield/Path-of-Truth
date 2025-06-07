@@ -1580,7 +1580,7 @@
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest16.title}"
-			x: -4.5d
+			x: -3.5d
 			y: 2.0d
 		}
 		{
@@ -3084,6 +3084,25 @@
 			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest30.title}"
 			x: 0.5d
 			y: 9.0d
+		}
+		{
+			dependencies: ["6A1B42D208C780BD"]
+			icon: "irons_spellbooks:furled_map"
+			id: "24CFF96477F06555"
+			tasks: [
+				{
+					id: "5DEB3AA4D0565AE6"
+					item: "kubejs:sonic_mechanism"
+					type: "item"
+				}
+				{
+					id: "3DA2FC90DAFF2F39"
+					item: "kubejs:echoing_heart"
+					type: "item"
+				}
+			]
+			x: -5.5d
+			y: 2.0d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.subtitle0}"]

@@ -96,13 +96,13 @@ ServerEvents.recipes(event => {
       B: 'create:copper_casing',
       A: '#forge:plates/bronze',
       C: 'kubejs:basic_spring_set',
-      D: 'create:mechanical_pump'
+      D: 'create_factory_logistics:fluid_mechanism'
     })
     event.recipes.create.sequenced_assembly([
       'kubejs:fluid_engineering'
     ], 'create:copper_casing', [
       event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', '#forge:plates/bronze']),
-      event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', 'create:mechanical_pump']),
+      event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', 'create_factory_logistics:fluid_mechanism']),
       event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', 'kubejs:basic_spring_set']),
       event.recipes.createDeploying('kubejs:incomplete_fluid_engineering', ['kubejs:incomplete_fluid_engineering', '#forge:plates/bronze'])
     ]).transitionalItem('kubejs:incomplete_fluid_engineering').loops(1)

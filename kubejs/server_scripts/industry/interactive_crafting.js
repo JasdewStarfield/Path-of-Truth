@@ -105,6 +105,7 @@ ServerEvents.recipes(event => {
       ['create:cart_assembler', 'create:gantry_carriage'],
       ['create:packager', 'create:cardboard_block'],
       ['create:package_frogport', '#forge:slimeballs'],
+      ['create_factory_logistics:jar_packager', 'create_factory_logistics:fluid_mechanism']
     ]
     logisticalEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:logistical_engineering", material)
@@ -235,4 +236,42 @@ ServerEvents.recipes(event => {
     //区块加载器
     event.recipes.botania.mana_infusion('create_power_loader:brass_chunk_loader', 'create_power_loader:empty_brass_chunk_loader', 10000)
     event.recipes.botania.mana_infusion('create_power_loader:andesite_chunk_loader', 'create_power_loader:empty_andesite_chunk_loader', 4000)
+
+    //流体构件
+    event.remove({id: "create_factory_logistics:sequenced_assembly/fluid_mechanism"})
+    event.recipes.create.sequenced_assembly(
+      [
+        Item.of('create_factory_logistics:fluid_mechanism', 1)
+      ],
+      '#forge:plates/constantan',
+      [
+        event.recipes.createDeploying('create_factory_logistics:incomplete_fluid_mechanism', ['create_factory_logistics:incomplete_fluid_mechanism', 'create:mechanical_pump']),
+        event.recipes.createDeploying('create_factory_logistics:incomplete_fluid_mechanism', ['create_factory_logistics:incomplete_fluid_mechanism', '#forge:nuggets/bronze']),
+        event.recipes.createDeploying('create_factory_logistics:incomplete_fluid_mechanism', ['create_factory_logistics:incomplete_fluid_mechanism', '#forge:nuggets/bronze']),
+        event.recipes.createPressing('create_factory_logistics:incomplete_fluid_mechanism', 'create_factory_logistics:incomplete_fluid_mechanism')
+      ]
+    ).transitionalItem('create_factory_logistics:incomplete_fluid_mechanism').loops(2)
+    event.recipes.create.compacting(
+      'create_factory_logistics:fluid_mechanism',
+      [
+        '#forge:plates/constantan',
+        'create:mechanical_pump',
+        'create:mechanical_pump',
+        '#forge:nuggets/bronze',
+        '#forge:nuggets/bronze',
+        '#forge:nuggets/bronze',
+        '#forge:nuggets/bronze',
+        Fluid.of('create:honey', 50)
+      ]
+    ).heated()
+
+    //额外仪表
+    event.remove({id: "extra_gauges:crafting/logistics/logic_gauge"})
+    event.remove({id: "extra_gauges:crafting/logistics/integer_gauge"})
+    event.remove({id: "extra_gauges:crafting/logistics/comparator_gauge"})
+    event.remove({id: "extra_gauges:crafting/logistics/counter_gauge"})
+    event.shapeless(Item.of('extra_gauges:logic_gauge', 1),['redstone_torch', 'create:factory_gauge'])
+    event.shapeless(Item.of('extra_gauges:integer_gauge', 1),['quartz', 'create:factory_gauge'])
+    event.shapeless(Item.of('extra_gauges:comparator_gauge', 1),['comparator', 'create:factory_gauge'])
+    event.shapeless(Item.of('extra_gauges:counter_gauge', 1),['create:transmitter', 'create:factory_gauge'])
 })

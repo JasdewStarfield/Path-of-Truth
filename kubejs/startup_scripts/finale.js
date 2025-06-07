@@ -5,7 +5,7 @@ StartupEvents.registry('item', (event) => {
 
   //虽然不是终末物品但是放在这：回响之心，声波构件
   event.create("echoing_heart").displayName('Echoing Heart').rarity('uncommon')   //打开生物雷达
-  event.create("sonic_mechanism").displayName('Sonic Mechanism').rarity('uncommon')   //打开洞穴雷达
+  event.create("sonic_mechanism").displayName('Sonar Module').rarity('uncommon')   //打开洞穴雷达
   
   //注册终末起始物品与融合产物
   event.create("raw_world_base").displayName('Raw World Base').texture('kubejs:item/final_items/raw_world_base').tooltip('「一即是万」').rarity('uncommon')
