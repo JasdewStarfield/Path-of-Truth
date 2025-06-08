@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    "#minecraft:wooden_stairs",
+    "#minecraft:wooden_fences",
+    "#forge:fence_gates/wooden",
+    "#minecraft:wooden_slabs"
+  ]
+}

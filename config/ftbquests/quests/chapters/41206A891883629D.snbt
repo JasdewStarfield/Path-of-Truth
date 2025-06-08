@@ -165,6 +165,37 @@
 				"0D69D8466E9218E1"
 			]
 			id: "3A4A7FDA4D752774"
+			rewards: [
+				{
+					count: 3
+					id: "310709B133FB31B3"
+					item: "kubejs:andesite_engineering"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					count: 10
+					id: "33DC15FC2472D613"
+					item: "minecraft:copper_ingot"
+					random_bonus: 5
+					type: "item"
+				}
+				{
+					count: 10
+					id: "0E6F6BC43F12CFA5"
+					item: "simplemetals_tin:tin_ingot"
+					random_bonus: 5
+					type: "item"
+				}
+				{
+					count: 10
+					id: "4BD1E45C00FF0EEC"
+					item: "create:andesite_alloy"
+					random_bonus: 5
+					type: "item"
+				}
+			]
+			shape: "gear"
 			subtitle: "{ftbquests.chapter.41206A891883629D.quest10.subtitle}"
 			tasks: [{
 				id: "79FEBD990A555FE6"
@@ -178,6 +209,37 @@
 		{
 			dependencies: ["3FADEC6A05255B1A"]
 			id: "2739985E562929B2"
+			rewards: [
+				{
+					count: 2
+					id: "4CD17ECEE4545020"
+					item: "kubejs:fluid_engineering"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					count: 5
+					id: "4F2A1602B51D248F"
+					item: "kubejs:bronze_ingot"
+					random_bonus: 5
+					type: "item"
+				}
+				{
+					count: 5
+					id: "524032C01C601FE0"
+					item: "minecraft:iron_ingot"
+					random_bonus: 5
+					type: "item"
+				}
+				{
+					count: 5
+					id: "702B64BAF2338C9F"
+					item: "immersiveengineering:ingot_constantan"
+					random_bonus: 5
+					type: "item"
+				}
+			]
+			shape: "gear"
 			subtitle: "{ftbquests.chapter.41206A891883629D.quest11.subtitle}"
 			tasks: [{
 				id: "208D33D8F8E6964E"
@@ -194,6 +256,37 @@
 				"21AB683F37938358"
 			]
 			id: "4989FE4EDCFFB309"
+			rewards: [
+				{
+					count: 2
+					id: "17C81DAB42E476A8"
+					item: "kubejs:precise_engineering"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					count: 5
+					id: "22CFE42A00E3A55A"
+					item: "create:brass_ingot"
+					random_bonus: 5
+					type: "item"
+				}
+				{
+					count: 5
+					id: "54C78D97E16755A6"
+					item: "create:polished_rose_quartz"
+					random_bonus: 5
+					type: "item"
+				}
+				{
+					count: 10
+					id: "5D73BCEF2E69DDF3"
+					item: "create:sturdy_sheet"
+					random_bonus: 5
+					type: "item"
+				}
+			]
+			shape: "gear"
 			subtitle: "{ftbquests.chapter.41206A891883629D.quest12.subtitle}"
 			tasks: [{
 				id: "5A590F374AD5A837"
@@ -260,6 +353,30 @@
 				"657DC1780DCCD565"
 			]
 			id: "39F03860B4042EB0"
+			rewards: [
+				{
+					count: 2
+					id: "0C0D59046325AA08"
+					item: "immersiveengineering:light_engineering"
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					count: 10
+					id: "6A21BCDA263A89D1"
+					item: "immersiveengineering:ingot_steel"
+					random_bonus: 5
+					type: "item"
+				}
+				{
+					count: 10
+					id: "5565F34DFA58B426"
+					item: "vintageimprovements:sulfur"
+					random_bonus: 5
+					type: "item"
+				}
+			]
+			shape: "gear"
 			subtitle: "{ftbquests.chapter.41206A891883629D.quest17.subtitle}"
 			tasks: [{
 				id: "68BD208C909CF950"
@@ -301,6 +418,29 @@
 				"7E03548BD6891DB5"
 			]
 			id: "32EE8784F8B9200F"
+			rewards: [
+				{
+					id: "4438D4449E3A3A48"
+					item: "immersiveengineering:rs_engineering"
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7C3C129113EC246A"
+					item: "createutilities:void_steel_ingot"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					count: 3
+					id: "5C6423D2C4F66708"
+					item: "createutilities:polished_amethyst"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "gear"
 			subtitle: "{ftbquests.chapter.41206A891883629D.quest20.subtitle}"
 			tasks: [{
 				id: "1E5501FBE6BC9BCF"
@@ -356,6 +496,29 @@
 				"2E5F0D8FEABE0E50"
 			]
 			id: "38F41C7A2075E5CC"
+			rewards: [
+				{
+					id: "52E7D6A335D933C5"
+					item: "immersiveengineering:heavy_engineering"
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					count: 3
+					id: "0F832457D7473BEF"
+					item: "oreganized:electrum_ingot"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					count: 3
+					id: "29FE46667A547FE5"
+					item: "kubejs:za_ingot"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "gear"
 			subtitle: "{ftbquests.chapter.41206A891883629D.quest24.subtitle}"
 			tasks: [{
 				id: "22FA6F5A1C661C8C"
@@ -415,6 +578,29 @@
 				"3630DD2BC37F9806"
 			]
 			id: "69691E179156C1AB"
+			rewards: [
+				{
+					id: "6F4373BB3A188C34"
+					item: "kubejs:electronic_engineering"
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					count: 3
+					id: "7AD9E5BA4EC64B5A"
+					item: "immersiveengineering:plate_duroplast"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					count: 3
+					id: "6F3641D87C333EB2"
+					item: "minecraft:netherite_ingot"
+					random_bonus: 2
+					type: "item"
+				}
+			]
+			shape: "gear"
 			subtitle: "{ftbquests.chapter.41206A891883629D.quest28.subtitle}"
 			tasks: [{
 				id: "37A34DCFC48FA58E"
@@ -437,6 +623,13 @@
 				"01D5299D241B8599"
 			]
 			id: "29D490BEC5BBC8E1"
+			rewards: [{
+				count: 2
+				id: "1BED453D4F5DC0EA"
+				item: "kubejs:buran"
+				random_bonus: 1
+				type: "item"
+			}]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "{ftbquests.chapter.41206A891883629D.quest29.subtitle}"
@@ -463,6 +656,30 @@
 		{
 			dependencies: ["294369EA93792F33"]
 			id: "01D5299D241B8599"
+			rewards: [
+				{
+					count: 2
+					id: "1FF5ED803CA73EF9"
+					item: "kubejs:logistical_engineering"
+					random_bonus: 2
+					type: "item"
+				}
+				{
+					count: 11
+					id: "5DF69536FD9949C7"
+					item: "minecraft:dried_kelp"
+					random_bonus: 34
+					type: "item"
+				}
+				{
+					count: 11
+					id: "5927649F52AF5CE9"
+					item: "create:cardboard"
+					random_bonus: 34
+					type: "item"
+				}
+			]
+			shape: "gear"
 			subtitle: "{ftbquests.chapter.41206A891883629D.quest31.subtitle}"
 			tasks: [{
 				id: "19BAB9F7572C0B97"
