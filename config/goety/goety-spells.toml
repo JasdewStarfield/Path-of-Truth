@@ -923,6 +923,9 @@
 		#How many ticks the Arrow Rain Spell much charge before casting, Default: 20
 		#Range: > 0
 		arrowRainChargeUp = 20
+		#How much extra damage the arrows deals, Default: 0.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		arrowRainDamage = 0.0
 
 	[Spells."Thunderbolt Spell"]
 		#How much base damage Thunderbolts deals, Default: 5.0
@@ -1453,6 +1456,9 @@
 		#Time to cast Tidal Spell, Default: 20
 		#Range: 0 ~ 72000
 		tidalTime = 20
+		#How much base damage the spell deals, Default: 1.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		tidalBaseDamage = 1.0
 
 	[Spells."Pulverize Spell"]
 		#Pulverize Spell Cooldown, Default: 20
