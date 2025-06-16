@@ -239,6 +239,13 @@ ServerEvents.recipes(event => {
             B: 'kubejs:fire_elemental_core'
         }
     )
+    event.recipes.create.mixing(
+        Item.of('irons_spellbooks:cinder_essence'),
+        [
+            'irons_spellbooks:magic_cloth',
+            Fluid.of('immersiveengineering:biodiesel', 200)
+        ]
+    ).superheated()
     //水火合并产出岩浆
     event.shaped(
         Item.of('minecraft:magma_block', 64),

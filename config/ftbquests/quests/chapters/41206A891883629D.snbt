@@ -456,8 +456,8 @@
 			id: "0C6B15031009904C"
 			subtitle: "{ftbquests.chapter.41206A891883629D.quest21.subtitle}"
 			tasks: [{
-				id: "7F6E57FC8B2E0342"
-				item: "immersiveengineering:ingot_electrum"
+				id: "141F52DE5FB24936"
+				item: "oreganized:electrum_ingot"
 				type: "item"
 			}]
 			title: "{ftbquests.chapter.41206A891883629D.quest21.title}"
