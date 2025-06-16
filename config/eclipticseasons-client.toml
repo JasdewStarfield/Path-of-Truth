@@ -28,6 +28,8 @@
 	SnowyTree = true
 	#Blocks under tree may also be covered with snow, note that this is only a client-side effect.
 	snowUnderTree = true
+	#Cull the top face if snowy model is applied.
+	TopFaceCulling = false
 
 [Sound]
 	#Ambient Sound.
@@ -56,6 +58,11 @@
 	#The difficulty multiplier of wild geese particles, the value should be between 1-10000, the default is 10.
 	#Range: 1 ~ 10000
 	WildGooseSpawnWeight = 10
+	#When the season core block is active, emits soft light particles to indicate the growth environment.
+	SeasonGreenhouse = true
+	#Number of particles emitted by the season greenhouse effect. The higher the value, the denser the effect.
+	#Range: 0 ~ 160
+	SeasonGreenhouseParticleSpawnCount = 30
 
 [Weather]
 	#Modify the buffer distance for local weather changes.

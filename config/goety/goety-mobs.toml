@@ -205,6 +205,12 @@
 		illagerServantGhostArrows = true
 		#Whether Neollagers gain armor after training if their owner wears Ring of the Forge, Default: true
 		illagerServantTrainArmor = true
+		#How many blocks from their registered chest trained Illagers will attempt to start using it, Default: 16
+		#Range: > 4
+		illagerServantChestRange = 16
+		#How long the cooldown for turning Villagers into Ravaged for Evokers, count in seconds, Default: 1200
+		#Range: > 0
+		evokerServantRavagedCooldown = 1200
 
 [Illagers]
 	#Whether Enviokers, Inquillagers and Conquillagers can steal Totems of Souls or Totems of Undying, Default: true

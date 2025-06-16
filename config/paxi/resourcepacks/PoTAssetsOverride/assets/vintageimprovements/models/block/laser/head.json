@@ -1,0 +1,40 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "block/block",
+	"textures": {
+		"5": "vintageimprovements:block/laser",
+		"particle": "kubejs:block/casing/factory/factory_casing_single"
+	},
+	"elements": [
+		{
+			"from": [6.5, 0, 6.5],
+			"to": [9.5, 3, 9.5],
+			"faces": {
+				"north": {"uv": [0, 0, 1.5, 1.5], "texture": "#5"},
+				"east": {"uv": [0, 0, 1.5, 1.5], "texture": "#5"},
+				"south": {"uv": [0, 0, 1.5, 1.5], "texture": "#5"},
+				"west": {"uv": [0, 0, 1.5, 1.5], "texture": "#5"},
+				"down": {"uv": [0, 1.5, 1.5, 3], "texture": "#5"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, 225, 0],
+			"translation": [0, -2, 0],
+			"scale": [0.55, 0.55, 0.55]
+		},
+		"fixed": {
+			"translation": [0, -2.75, -0.0625],
+			"scale": [0.5, 0.5, 0.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "Frame",
+			"origin": [15, 18, 9],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}
