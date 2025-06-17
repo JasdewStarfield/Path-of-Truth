@@ -323,6 +323,10 @@
 			#Requires game restart
 			#Must have no more and no less than 8 integers
 			hostileRedstoneMonstrosityRaidCount = [0, 0, 0, 0, 0, 0, 0, 1]
+			#Whether Hostile Redstone Monstrosities only appear when all other non-boss raiders are defeated
+			#Requires game restart
+			#Default: true
+			hRMSpawnNoRaiders = true
 
 		[Illagers.Raid.Maverick]
 			#How many Mavericks each wave

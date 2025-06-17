@@ -1557,8 +1557,9 @@
 	maxBurningLevel = 3
 
 [General]
-	#Whether Servants are killed/dismissed by hitting them while crouching, put false to make them change by right-clicking on them while crouching, Default: true
-	ownerHitKill = true
+	#Whether Servants are killed/dismissed by hitting them while crouching with a wand or staff, put 1 to make them change by right-clicking on them while crouching, put 2 to disable it, Default: 0
+	#Range: 0 ~ 2
+	ownerHitKill = 0
 	#Certain spells can damage the Ender Dragon, Default: true
 	spellDamageEnderDragon = true
 	#Casting Spells will cause the caster to completely stop moving, Default: false

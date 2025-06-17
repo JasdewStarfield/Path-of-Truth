@@ -339,9 +339,9 @@
     "modId": "create_enchantment_industry",
     "version": "1.3.3-for-create-6.0.6"
   },
-  "create_factory_logistics-1.2.1.0-all.jar": {
+  "create_factory_logistics-1.20.1-1.4.1.jar": {
     "modId": "create_factory_logistics",
-    "version": "1.2.1.0"
+    "version": "1.4.1"
   },
   "create_mobile_packages-1.20.1-0.5.3.jar": {
     "modId": "create_mobile_packages",
@@ -491,9 +491,9 @@
     "modId": "eccentrictome",
     "version": "1.20.1-1.10.3"
   },
-  "EclipticSeasons-1.20.1-forge-0.11.0-pre7-4-all.jar": {
+  "EclipticSeasons-1.20.1-forge-0.11.0-pre8-all.jar": {
     "modId": "eclipticseasons",
-    "version": "0.11.0-pre7-4"
+    "version": "0.11.0-pre8"
   },
   "ElysiumAPI-1.20.1-1.1.3.jar": {
     "modId": "elysium_api",
@@ -523,9 +523,9 @@
     "modId": "enhanced_boss_bars",
     "version": "1.20.1-1.0.0"
   },
-  "entityjs-0.5.3-1.20.1.jar": {
+  "entityjs-0.5.4-1.20.1.jar": {
     "modId": "entityjs",
-    "version": "0.5.3-1.20.1"
+    "version": "0.5.4-1.20.1"
   },
   "EventJS-1.20.1-1.4.0.jar": {
     "modId": "eventjs",
@@ -647,13 +647,13 @@
     "modId": "gallery",
     "version": "1.0.3"
   },
-  "geckolib-forge-1.20.1-4.7.1.3.jar": {
+  "geckolib-forge-1.20.1-4.7.2.jar": {
     "modId": "geckolib",
-    "version": "4.7.1.3"
+    "version": "4.7.2"
   },
-  "goety-2.5.34.2.jar": {
+  "goety-2.5.34.3.jar": {
     "modId": "goety",
-    "version": "2.5.34.2"
+    "version": "2.5.34.3"
   },
   "GPUTape-1.18x-1.21x-1.0.5.1.jar": {
     "modId": "gpu_tape",
