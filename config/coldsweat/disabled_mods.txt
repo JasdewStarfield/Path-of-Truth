@@ -1,0 +1,2 @@
+# Cold Sweat will not enable extra compatibility features for mods listed here.
+# List one mod ID per line, no spaces or punctuation (including quotes).

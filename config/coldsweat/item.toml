@@ -101,3 +101,11 @@
 	"Heat Drains Backtank" = true
 	"Cold Drains Backtank" = false
 
+["Item Functions"]
+	#Allow fire resistance to block overheating damage
+	"Fire Resistance Immunity" = true
+	#Allow ice resistance to block freezing damage
+	"Ice Resistance Immunity" = true
+	#Thermometer item is required to see detailed world temperature
+	"Require Thermometer" = true
+

@@ -1,10 +1,9 @@
 
 [Builtin]
 	#DO NOT CHANGE THIS SETTING
-	#Range: 0 ~ 4
-	Difficulty = 4
+	Difficulty = "normal"
 	#The current version of Cold Sweat. This is used by the auto-updater
-	Version = "2.4-b03b"
+	Version = "2.4-b03c"
 	#Allows Cold Sweat's configs to be automatically updated with new additions & formatting changes
 	"Auto Update" = true
 
@@ -21,16 +20,8 @@
 	#Damage dealt to the player when they are too hot or too cold
 	#Range: 0.0 ~ Infinity
 	"Temperature Damage" = 2.0
-	#Sets whether damage scales with difficulty
+	#Nullifies temperature damage and effects when the difficulty is set to peaceful
 	"Damage Scaling" = true
-
-[Items]
-	#Allow fire resistance to block overheating damage
-	"Fire Resistance Immunity" = true
-	#Allow ice resistance to block freezing damage
-	"Ice Resistance Immunity" = true
-	#Thermometer item is required to see detailed world temperature
-	"Require Thermometer" = true
 
 ["Temperature Effects"]
 

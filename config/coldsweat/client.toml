@@ -39,6 +39,15 @@
 	#The speed of the camera sway applied when the player is too hot
 	#Range: 0.0 ~ 2.0
 	"Heatstroke Sway Speed" = 1.0
+	#Shows a frozen texture over the player's health bar when they are freezing
+	"Show Frozen Health" = true
+	#The opacity of the icy overlay when the player is freezing
+	#Does not affect Vanilla's powder snow overlay
+	#Range: 0.0 ~ 1.0
+	"Freezing Overlay Opacity" = 1.0
+	#The opacity of the pulsing red border around the screen when the player is too hot
+	#Range: 0.0 ~ 1.0
+	"Heatstroke Border Opacity" = 1.0
 
 [Misc]
 	#Warns the player about a bug that clears armor insulation when in creative mode
