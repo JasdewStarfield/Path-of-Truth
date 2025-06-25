@@ -61,7 +61,7 @@
 	#The amount of Soul Energy used up to repair Items per the configured amount of seconds, Default: 1
 	#Range: > 0
 	soulMenderCost = 1
-	#How big of a range Dark Altars can count blocks to make a ritual and detect sacrifices/conversion victims, Default: 16
+	#How big of a range Dark Altars can count blocks to make a ritual and detect sacrifices/conversion victims, Default: 8
 	#Range: > 1
 	ritualRange = 8
 
