@@ -8,7 +8,7 @@
             doHit(caster, entity) {
                 caster.health += entity.health
                 // caster.maxHealth += entity.maxHealth
-                entity.attack(caster.damageSources().playerAttack(caster), entity.health / 2) // nerfed
+                entity.attack(caster.damageSources().indirectMagic(caster, caster), entity.health / 2) // nerfed but buffed
                 // entity.kill()
             },
             /**
