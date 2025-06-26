@@ -2,13 +2,14 @@
 {
     let Spell = Java.loadClass('com.Polarice3.Goety.common.magic.Spell')
     let ModParticleTypes = Java.loadClass('top.ribs.scguns.init.ModParticleTypes')
+    let ModDamageSource = Java.loadClass('com.Polarice3.Goety.utils.ModDamageSource')
 
     let spellFuncMap = {
         avada: {
             doHit(caster, entity) {
                 caster.health += entity.health
                 // caster.maxHealth += entity.maxHealth
-                entity.attack(caster.damageSources().indirectMagic(caster, caster), entity.health / 2) // nerfed but buffed
+                entity.attack(ModDamageSource.deathCurse(caster), Math.max(10, entity.health / 2)) // nerfed but buffed
                 // entity.kill()
             },
             /**
@@ -70,6 +71,7 @@
                 if (entity && entity.living && entity.alive) this.doHit(caster, entity)
             },
             stopSpell(worldIn, caster, staff, useTimeRemaining) {
+                if (caster.creative) return
                 let focus = staff.item.getFocus(staff)
                 focus.damageValue++
                 if (focus.damageValue >= focus.maxDamage) focus.shrink(1)
