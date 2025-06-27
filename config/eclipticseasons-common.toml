@@ -23,6 +23,18 @@
 	#Snow will not appear in overly bright areas.
 	#Range: 1 ~ 15
 	NotSnowyNearGlowingBlockLevel = 10
+	#Day time length of spring, divided into six periods according to the solar term table.
+	SpringDayTimes = [10500, 11000, 11500, 12000, 12500, 13000]
+	#Day time length of summer, divided into six periods according to the solar term table.
+	SummerDayTimes = [13500, 14000, 14500, 15000, 14500, 14000]
+	#Day time length of autumn, divided into six periods according to the solar term table.
+	AutumnDayTimes = [13500, 13000, 12500, 12000, 11500, 11000]
+	#Day time length of winter, divided into six periods according to the solar term table.
+	WinterDayTimes = [10500, 10000, 9500, 9000, 9500, 10000]
+	#Day time length of none season, divided into six periods according to the solar term table.
+	NoneDayTimes = [12000]
+	#If need to forcibly prevent a certain block from being covered by snow, can use this setting by specifying the block’s ID.
+	ForceBlocksNotSnowy = []
 
 [Weather]
 	#Enable solar term weather system with biome.

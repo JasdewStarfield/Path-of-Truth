@@ -66,8 +66,8 @@ ServerEvents.recipes(event => {
         "type":"immersiveengineering:arc_furnace",
         "additives":[],
         "energy":102400,
-        "additives":[{"base_ingredient":{"tag":"forge:ingots/silver"},"count":3}],
-        "input":{"base_ingredient":{"tag":"forge:ingots/gold"},"count":5},
+        "additives":[{"base_ingredient":{"tag":"forge:ingots/silver"},"count":2}],
+        "input":{"base_ingredient":{"tag":"forge:ingots/gold"},"count":4},
         "results":[{"tag":"forge:ingots/electrum"}],
         "time":200
     })

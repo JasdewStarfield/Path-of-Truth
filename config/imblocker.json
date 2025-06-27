@@ -3,10 +3,12 @@
     "screenWhitelist": [
       "net.minecraft.client.gui.screens.inventory.BookEditScreen",
       "net.mehvahdjukaar.supplementaries.client.screens.TextHolderEditScreen",
-      "net.minecraft.client.gui.screens.inventory.AbstractSignEditScreen"
+      "net.minecraft.client.gui.screens.inventory.AbstractSignEditScreen",
+      "dev.ftb.mods.ftblibrary.ui.ScreenWrapper"
     ],
     "enableScreenRecovering": false,
-    "recoveredScreens": [],
+    "recoveredScreens": [
+    ],
     "commandInputMode": "IM_ENG_STATE"
   },
   "windowsCompatibilitySettings": {

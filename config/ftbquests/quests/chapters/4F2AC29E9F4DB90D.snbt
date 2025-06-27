@@ -1116,7 +1116,7 @@
 			id: "09A8B7A721106DE1"
 			tasks: [{
 				id: "3B9D15E8B932D167"
-				item: "create_factory_logistics:fluid_mechanism"
+				item: "kubejs:fluid_mechanism"
 				type: "item"
 			}]
 			x: 0.0d

@@ -812,7 +812,7 @@
 			id: "24E7F8358E82569D"
 			tasks: [{
 				id: "1921D989B5D0F7C6"
-				item: "create_factory_logistics:fluid_mechanism"
+				item: "kubejs:fluid_mechanism"
 				type: "item"
 			}]
 			x: 10.0d
