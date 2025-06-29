@@ -22,7 +22,7 @@ StartupEvents.registry('item', (event) => {
 		.rarity('uncommon')
 
 	event.create("potion_of_balance")
-		.maxStackSize(1)
+		.maxStackSize(16)
 		.displayName('Potion of Balance')
 		.texture('kubejs:item/final_potions/potion_of_balance')
 		.rarity('epic')
@@ -33,11 +33,15 @@ StartupEvents.registry('item', (event) => {
 			let effects = entity.potionEffects
 			effects.add('cold_sweat:grace', INFINITE, 0, true, false)
 			effects.add('irons_spellbooks:oakskin', INFINITE, 2, true, false)
-			entity.give('kubejs:reinforced_bottle')
+			if (!entity.creative) {
+				entity.give('kubejs:reinforced_bottle')
+				itemstack.shrink(1)
+			}
+			return itemstack
 		})
 
 	event.create("potion_of_void")
-		.maxStackSize(1)
+		.maxStackSize(16)
 		.displayName('Potion of Void')
 		.texture('kubejs:item/final_potions/potion_of_void')
 		.rarity('epic')
@@ -48,11 +52,15 @@ StartupEvents.registry('item', (event) => {
 			let effects = entity.potionEffects
 			effects.add('minecraft:night_vision', INFINITE, 0, true, false)
 			effects.add('irons_spellbooks:echoing_strikes', INFINITE, 4, true, false)
-			entity.give('kubejs:reinforced_bottle')
+			if (!entity.creative) {
+				entity.give('kubejs:reinforced_bottle')
+				itemstack.shrink(1)
+			}
+			return itemstack
 		})
 		
 	event.create("potion_of_talent")
-		.maxStackSize(1)
+		.maxStackSize(16)
 		.displayName('Potion of Talent')
 		.texture('kubejs:item/final_potions/potion_of_talent')
 		.rarity('epic')
@@ -63,6 +71,10 @@ StartupEvents.registry('item', (event) => {
 			let effects = entity.potionEffects
 			effects.add('goety:insight', INFINITE, 2, true, false)
 			effects.add('irons_spellbooks:instant_mana', INFINITE, 2, true, false)
-			entity.give('kubejs:reinforced_bottle')
+			if (!entity.creative) {
+				entity.give('kubejs:reinforced_bottle')
+				itemstack.shrink(1)
+			}
+			return itemstack
 		})
 })
