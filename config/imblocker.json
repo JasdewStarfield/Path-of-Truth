@@ -7,8 +7,7 @@
       "dev.ftb.mods.ftblibrary.ui.ScreenWrapper"
     ],
     "enableScreenRecovering": false,
-    "recoveredScreens": [
-    ],
+    "recoveredScreens": [],
     "commandInputMode": "IM_ENG_STATE"
   },
   "windowsCompatibilitySettings": {

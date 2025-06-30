@@ -245,6 +245,9 @@
 		#How much base damage Wind Staffs deals, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		windStaffDamage = 4.0
+		#How much base damage Geo Staffs deals, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		geoStaffDamage = 4.0
 
 	["Tools & Weapons".Hammers]
 		#How many uses before Hammers breaks, Default: 2500
