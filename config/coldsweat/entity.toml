@@ -1,43 +1,120 @@
 
+#─────────────────────────────────────────────────────────────────────────
+# Anywhere that uses entity IDs also supports:
+# • Tags (e.g. "#minecraft:skeletons")
+# • Comma-separated lists (e.g. "minecraft:zombie,#minecraft:skeletons")
+#     Applies the setting to all listed IDs. Can use tags, regular IDs, and negation interchangeably
+# • Negation (e.g. "!minecraft:evoker")
+#     Useful with lists/tags. Excludes the listed IDs from the setting
+#     i.e. "#minecraft:raiders,!minecraft:evoker" (all raid mobs EXCEPT evokers)
+# Settings with "//v" will list elements vertically. Removing "//v" will list elements in one line
+#─────────────────────────────────────────────────────────────────────────
 ["Entity Temperature"]
-	#List of entities that will insulate the player when riding them
-	#A value of 0 provides no insulation; 1 provides full insulation
-	#Format: [["entity_id", coldResistance, hotResistance], ["entity_id", coldResistance, hotResistance], etc...]
+	#─────────────────────────────────────────────────────────────────────────//v
+	# List of entities that will insulate the player when riding them
+	# A value of 0 provides no insulation; 1 provides full insulation
+	# └── Format: [["entity_id", coldResistance, heatResistance], ["entity_id", coldResistance, heatResistance], etc...]
+	# ⌄ 
 	"Insulated Mounts" = []
-	#Defines temperature-emitting properties for entities
-	#Format: [["entity_id", temperature, range, *units], ["entity_id", temperature, range, *units], etc...]
-	#temperature: The temperature emitted by the entity
-	#range: The range of the effect, in blocks
-	#units: (Optional) The units of the temperature value (MC, F, or C). Defaults to MC
-	"Entity Temperatures" = [["minecraft:blaze", 999, 1], ["minecraft:magma_cube", 0.5, 5], ["alexsmobs:froststalker", -0.2, 5], ["minecraft:elder_guardian", -0.2, 5], ["minecraft:snow_golem", -0.2, 5], ["minecraft:warden", -999, 3], ["blue_skies:armored_frost_spirit", -0.2, 3], ["blue_skies:crynocerous", -0.2, 3], ["blue_skies:crystal_camel", -0.2, 3], ["blue_skies:armored_frost_spirit", -0.2, 3], ["blue_skies:polargeist", -0.2, 3], ["blue_skies:sliv", 0.3, 3], ["blue_skies:firefly", 0.3, 3], ["blue_skies:emberback", 0.3, 3], ["endermanoverhaul:nether_wastes_enderman", 0.3, 3], ["endermanoverhaul:soulsand_valley_enderman", -0.2, 3], ["endermanoverhaul:snowy_enderman", -0.2, 3], ["endermanoverhaul:ice_spikes_enderman", -0.2, 3], ["creeperoverhaul:snowy_creeper", -0.2, 3], ["goety:haunt", -0.2, 3], ["goety:wraith", -0.2, 3], ["goety:border_wraith", -0.2, 3], ["goety:ice_golem", -0.3, 3], ["goety:inferno", 0.3, 3], ["aquamirae:tortured_soul", -0.2, 3], ["netherexp:wisp", -0.2, 3], ["netherexp:apparition", -0.3, 4], ["netherexp:ecto_slab", -0.1, 3], ["netherexp:banshee", -0.3, 5]]
-	#Defines entities that are affected by temperature and the climates they can live in
-	#Format: [["entity_id", min_temp, max_temp, *rate, *units], ["entity_id", min_temp, max_temp, *rate, *units], etc...]
-	#min_temp: The minimum livable temperature, as an offset to the minimum temperature for players
-	#max_temp: The maximum livable temperature, as an offset to the maximum temperature for players
-	#rate: (Optional) A multiplier to the rate at which the entity overheats or freezes, based on players' rate
-	#units: (Optional) The units used for the min/max temperature values (MC, F, or C). Defaults to MC
-	"Entity Climate Settings" = [["minecraft:chicken", 10, 10, 0.6, "F"], ["minecraft:pig", 0, 0, 0.5, "F"], ["minecraft:cow", 0, 20, 0.2, "F"], ["minecraft:mooshroom", 0, 20, 0.2, "F"], ["minecraft:sheep", -20, -10, 0.3, "F"], ["minecraft:goat", -40, -15, 0.4, "F"], ["minecraft:horse", -5, 10, 0.3, "F"], ["minecraft:donkey", -5, 10, 0.3, "F"], ["minecraft:mule", -5, 10, 0.3, "F"], ["minecraft:llama", -10, 0, 0.4, "F"]]
-	#Enables the temperature system for entities
-	#If disabled, entities will not be harmed by temperature
+	#─────────────────────────────────────────────────────────────────────────//v
+	# Defines temperature-emitting properties for entities
+	# ├── Format: [["entity_id", temperature, range, *units], ["entity_id", temperature, range, *units], etc...]
+	# └── [* = optional]
+	# • temperature: The temperature emitted by the entity
+	# • range: The range of the effect, in blocks
+	# • units: (Optional) The units of the temperature value (MC, F, or C). Defaults to MC
+	# ⌄ 
+	"Entity Temperatures" = [
+	    ["minecraft:blaze", 999, 1],
+	    ["minecraft:magma_cube", 0.5, 5],
+	    ["alexsmobs:froststalker", -0.2, 5],
+	    ["minecraft:elder_guardian", -0.2, 5],
+	    ["minecraft:snow_golem", -0.2, 5],
+	    ["minecraft:warden", -999, 3],
+	    ["blue_skies:armored_frost_spirit", -0.2, 3],
+	    ["blue_skies:crynocerous", -0.2, 3],
+	    ["blue_skies:crystal_camel", -0.2, 3],
+	    ["blue_skies:armored_frost_spirit", -0.2, 3],
+	    ["blue_skies:polargeist", -0.2, 3],
+	    ["blue_skies:sliv", 0.3, 3],
+	    ["blue_skies:firefly", 0.3, 3],
+	    ["blue_skies:emberback", 0.3, 3],
+	    ["endermanoverhaul:nether_wastes_enderman", 0.3, 3],
+	    ["endermanoverhaul:soulsand_valley_enderman", -0.2, 3],
+	    ["endermanoverhaul:snowy_enderman", -0.2, 3],
+	    ["endermanoverhaul:ice_spikes_enderman", -0.2, 3],
+	    ["creeperoverhaul:snowy_creeper", -0.2, 3],
+	    ["goety:haunt", -0.2, 3],
+	    ["goety:wraith", -0.2, 3],
+	    ["goety:border_wraith", -0.2, 3],
+	    ["goety:ice_golem", -0.3, 3],
+	    ["goety:inferno", 0.3, 3],
+	    ["aquamirae:tortured_soul", -0.2, 3],
+	    ["netherexp:wisp", -0.2, 3],
+	    ["netherexp:apparition", -0.3, 4],
+	    ["netherexp:ecto_slab", -0.1, 3],
+	    ["netherexp:banshee", -0.3, 5]
+	]
+	#─────────────────────────────────────────────────────────────────────────//v
+	# Defines entities that are affected by temperature and the climates they can live in
+	# ├── Format: [["entity_id", minTemp, maxTemp, *rate, *units], ["entity_id", minTemp, maxTemp, *rate, *units], etc...]
+	# └── [* = optional]
+	# • min_temp: The minimum livable temperature, as an offset to the minimum temperature for players
+	# • max_temp: The maximum livable temperature, as an offset to the maximum temperature for players
+	# • *rate: A multiplier to the rate at which the entity overheats or freezes, based on players' rate
+	# • *units: The units used for the min/max temperature values (MC, F, or C). Defaults to MC
+	# ⌄ 
+	"Entity Climate Settings" = [
+	    ["minecraft:chicken", 10, 10, 0.6, "F"],
+	    ["minecraft:pig", 0, 0, 0.5, "F"],
+	    ["minecraft:cow", 0, 20, 0.2, "F"],
+	    ["minecraft:mooshroom", 0, 20, 0.2, "F"],
+	    ["minecraft:sheep", -20, -10, 0.3, "F"],
+	    ["minecraft:goat", -40, -15, 0.4, "F"],
+	    ["minecraft:horse", -5, 10, 0.3, "F"],
+	    ["minecraft:donkey", -5, 10, 0.3, "F"],
+	    ["minecraft:mule", -5, 10, 0.3, "F"],
+	    ["minecraft:llama", -10, 0, 0.4, "F"]
+	]
+	#─────────────────────────────────────────────────────────────────────────
+	# Enables the temperature system for entities
+	# If disabled, entities will not be harmed by temperature
+	# ⌄ 
 	"Enable Entity Climates" = false
-	#Enables more precise temperature calculations for entities
-	#This option might cause performance issues for large amounts of entities
+	#─────────────────────────────────────────────────────────────────────────
+	# Enables more precise temperature calculations for entities
+	# This option might cause performance issues for large amounts of entities
+	# ⌄ 
 	"Use Advanced Entity Climates" = false
 
 ["Fur Growth & Shedding"]
-	#Defines how often a goat will try to grow its fur, the growth cooldown after shearing, and the chance of it succeeding
-	#Format: [interval, cooldown, chance]
+	#─────────────────────────────────────────────────────────────────────────
+	# Defines how often a goat will try to grow its fur, the growth cooldown after shearing, and the chance of it succeeding
+	# └── Format: [interval, cooldown, chance]
+	# ⌄ 
 	"Goat Fur Growth Timings" = [1200, 2400, 0.2]
-	#Defines how often a chameleon will try to shed its skin, the cooldown after shedding, and the chance of it succeeding
-	#Format: [interval, cooldown, chance]
+	#─────────────────────────────────────────────────────────────────────────
+	# Defines how often a chameleon will try to shed its skin, the cooldown after shedding, and the chance of it succeeding
+	# Format: [interval, cooldown, chance]
+	# ⌄ 
 	"Chameleon Shedding Timings" = [100, 36000, 0.1]
 
 ["Mob Spawning"]
-	#Defines the biomes that Chameleons can spawn in
-	#Format: [["biome_id", weight], ["biome_id", weight], etc...]
-	"Chameleon Spawn Biomes" = [["#c:is_hot/overworld", 5], ["#biomeswevegone:climate/hot", 5]]
-	#Defines additional biomes that goats can spawn in
-	#Format: [["biome_id", weight], ["biome_id", weight], etc...]
-	#Not affected by the "Increase Goat Spawns" option
+	#─────────────────────────────────────────────────────────────────────────//v
+	# Defines the biomes that Chameleons can spawn in
+	# └── Format: [["biome_id", weight], ["biome_id", weight], etc...]
+	# • biome_id: The ID of the biome, e.g. "minecraft:jungle"
+	# • weight: The likelihood for the entity to spawn compared to other entities, higher values mean more common spawns
+	# ⌄ 
+	"Chameleon Spawn Biomes" = [
+	    ["#c:is_hot/overworld", 5],
+	    ["#biomeswevegone:climate/hot", 5]
+	]
+	#─────────────────────────────────────────────────────────────────────────//v
+	# Defines the biomes that Chameleons can spawn in
+	# └── Format: [["biome_id", weight], ["biome_id", weight], etc...]
+	# • biome_id: The ID of the biome, e.g. "minecraft:jungle"
+	# • weight: The likelihood for the entity to spawn compared to other entities, higher values mean more common spawns
+	# ⌄ 
 	"Goat Spawn Biomes" = []
 

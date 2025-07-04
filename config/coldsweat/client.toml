@@ -1,87 +1,158 @@
 
 ["UI Options"]
+	#─────────────────────────────────────────────────────────────────────────
+	# Tweaks the layout of the hotbar to make foom for Cold Sweat UI elements
+	# ⌄ 
 	"Custom hotbar layout" = true
-	#Controls whether UI elements will shake when in critical conditions
+	#─────────────────────────────────────────────────────────────────────────
+	# Controls whether UI elements will shake when in critical conditions
+	# ⌄ 
 	"Icon Bobbing" = true
-	#The position of the body temperature icon relative to default
+	#─────────────────────────────────────────────────────────────────────────
+	# The position of the body temperature icon relative to default
+	# ⌄ 
 	"Body Temperature Icon Offset" = [0, 0]
-	#Enables the body temperature icon above the hotbar
+	#─────────────────────────────────────────────────────────────────────────
+	# Enables the body temperature icon above the hotbar
+	# ⌄ 
 	"Show Body Temperature Icon" = true
-	#Moves the body temperature icon to make way for the advanced readout when a thermometer is equipped
+	#─────────────────────────────────────────────────────────────────────────
+	# Moves the body temperature icon to make way for the advanced readout when a thermometer is equipped
+	# ⌄ 
 	"Move Body Icon For Advanced Info" = true
-	#The position of the body temperature readout relative to default
+	#─────────────────────────────────────────────────────────────────────────
+	# The position of the body temperature readout relative to default
+	# ⌄ 
 	"Body Temperature Readout Offset" = [0, 0]
-	#Enables the body temperature readout above the hotbar
+	#─────────────────────────────────────────────────────────────────────────
+	# Enables the body temperature readout above the hotbar
+	# ⌄ 
 	"Show Body Temperature Readout" = true
-	#The position of the world temperature gauge relative to default
+	#─────────────────────────────────────────────────────────────────────────
+	# The position of the world temperature gauge relative to default
+	# ⌄ 
 	"World Temperature UI Offset" = [34, 0]
-	#Enables the world temperature gauge next to the hotbar
+	#─────────────────────────────────────────────────────────────────────────
+	# Enables the world temperature gauge next to the hotbar
+	# ⌄ 
 	"Show World Temperature Gauge" = true
-	#Show the config menu button in the Options menu
+	#─────────────────────────────────────────────────────────────────────────
+	# Show the config menu button in the Options menu
+	# ⌄ 
 	"Enable In-Game Config" = true
-	#The position (offset) of the config button on the screen
+	#─────────────────────────────────────────────────────────────────────────
+	# The position (offset) of the config button on the screen
+	# ⌄ 
 	"Config Button Position" = [0, 0]
 
 [Accessibility]
-	#Enables visual distortion effects when the player is too hot or cold
+	#─────────────────────────────────────────────────────────────────────────
+	# Enables visual distortion effects when the player is too hot or cold
+	# ⌄ 
 	"Distortion Effects" = true
-	#Enables high contrast mode for UI elements
+	#─────────────────────────────────────────────────────────────────────────
+	# Enables high contrast mode for UI elements
+	# ⌄ 
 	"High Contrast" = false
-	#The intensity of the shivering effect when the player is too cold
+	#─────────────────────────────────────────────────────────────────────────
+	# The intensity of the shivering effect when the player is too cold
+	# ⌄ 
 	#Range: 0.0 ~ 2.0
 	"Shiver Intensity" = 1.0
-	#The amount of blur applied to the screen when the player is too hot
+	#─────────────────────────────────────────────────────────────────────────
+	# The amount of blur applied to the screen when the player is too hot
+	# ⌄ 
 	#Range: 0.0 ~ 1.0
 	"Heatstroke Blur Strength" = 1.0
-	#The amount of camera sway applied when the player is too hot
+	#─────────────────────────────────────────────────────────────────────────
+	# The amount of camera sway applied when the player is too hot
+	# ⌄ 
 	#Range: 0.0 ~ 2.0
 	"Heatstroke Sway Amount" = 1.0
-	#The speed of the camera sway applied when the player is too hot
+	#─────────────────────────────────────────────────────────────────────────
+	# The speed of the camera sway applied when the player is too hot
+	# ⌄ 
 	#Range: 0.0 ~ 2.0
 	"Heatstroke Sway Speed" = 1.0
-	#Shows a frozen texture over the player's health bar when they are freezing
+	#─────────────────────────────────────────────────────────────────────────
+	# Shows a frozen texture over the player's health bar when they are freezing
+	# ⌄ 
 	"Show Frozen Health" = true
-	#The opacity of the icy overlay when the player is freezing
-	#Does not affect Vanilla's powder snow overlay
+	#─────────────────────────────────────────────────────────────────────────
+	# The opacity of the icy overlay when the player is freezing
+	# Does not affect Vanilla's powder snow overlay
+	# ⌄ 
 	#Range: 0.0 ~ 1.0
 	"Freezing Overlay Opacity" = 1.0
-	#The opacity of the pulsing red border around the screen when the player is too hot
+	#─────────────────────────────────────────────────────────────────────────
+	# The opacity of the pulsing red border around the screen when the player is too hot
+	# ⌄ 
 	#Range: 0.0 ~ 1.0
 	"Heatstroke Border Opacity" = 1.0
 
 [Misc]
-	#Warns the player about a bug that clears armor insulation when in creative mode
+	#─────────────────────────────────────────────────────────────────────────
+	# Warns the player about a bug that clears armor insulation when in creative mode
+	# ⌄ 
 	"Enable Creative Mode Warning" = false
-	#Displays areas that the Hearth is affecting when the F3 debug menu is open
+	#─────────────────────────────────────────────────────────────────────────
+	# Displays areas that the Hearth is affecting when the F3 debug menu is open
+	# ⌄ 
 	"Hearth Debug" = true
-	#Hides insulation tooltips for items, armor, and curios unless SHIFT is held
-	"Hide Tooltips" = false
-	#Automatically expands all collapsible tooltips
+	#─────────────────────────────────────────────────────────────────────────
+	# Automatically expands all collapsible tooltips
+	# ⌄ 
 	"Expand Tooltips" = false
-	#Enables the animated soul spring lamp model
-	#Disable this if there are visual errors like missing textures
+	#─────────────────────────────────────────────────────────────────────────
+	# Enables the animated soul spring lamp model
+	# Disable this if there are visual errors like missing textures
+	# ⌄ 
 	"Animated Soul Spring Lamp" = true
+	#─────────────────────────────────────────────────────────────────────────
+	# Determines when armor insulation tooltips should show
+	# One of:
+	# • "always": Always show insulation tooltip
+	# • "if_present": Show insulation tooltip only if the item has insulation (default)
+	# • "on_shift": Show insulation tooltip if shift is held
+	# • "shift_and_present": Show insulation if shift is held AND the armor has any
+	# • "never": Never show insulation tooltips
+	# ⌄ 
+	"Insulation Tooltip Visibility" = "if_present"
 
 [Preferences]
-	#Sets all temperatures to be displayed in Celsius
+	#─────────────────────────────────────────────────────────────────────────
+	# Sets all temperatures to be displayed in Celsius
+	# ⌄ 
 	Celsius = true
-	#Visually offsets the world temperature to better match the user's definition of "hot" and "cold"
+	#─────────────────────────────────────────────────────────────────────────
+	# Visually offsets the world temperature to better match the user's definition of "hot" and "cold"
+	# ⌄ 
 	#Range: > -2147483647
 	"Temperature Offset" = 0
-	#The amount of smoothing applied to gauges in the UI
-	#A value of 1 has no smoothing
+	#─────────────────────────────────────────────────────────────────────────
+	# The amount of smoothing applied to gauges in the UI
+	# A value of 1 has no smoothing
+	# ⌄ 
 	#Range: 1.0 ~ 2.147483647E9
 	"Temperature Smoothing" = 10.0
-	#Displays a dripping water effect on-screen and/or with particles when the player is wet
-	#0: Off, 1: Particles, 2: On-Screen, 3: Both
+	#─────────────────────────────────────────────────────────────────────────
+	# Displays a dripping water effect on-screen and/or with particles when the player is wet
+	# 0: Off, 1: Particles, 2: On-Screen, 3: Both
+	# ⌄ 
 	#Range: 0 ~ 3
 	"Show Water Effect" = 3
-	#The scale of the water droplets on-screen, in scaled "pixels"
+	#─────────────────────────────────────────────────────────────────────────
+	# The scale of the water droplets on-screen, in scaled "pixels"
+	# ⌄ 
 	"Water Droplet Scale" = [40, 48]
-	#Defines the primary (right-click) action for the waterskin
-	#Can be one of "drink", "pour", or "none"
+	#─────────────────────────────────────────────────────────────────────────
+	# Defines the primary (right-click) action for the waterskin
+	# Can be one of "drink", "pour", or "none"
+	# ⌄ 
 	"Waterskin Primary Action" = "pour"
-	#Defines the secondary (sneak-right-click) action for the waterskin
-	#Can be one of "drink", "pour", or "none"
+	#─────────────────────────────────────────────────────────────────────────
+	# Defines the secondary (sneak-right-click) action for the waterskin
+	# Can be one of "drink", "pour", or "none"
+	# ⌄ 
 	"Waterskin Secondary Action" = "none"
 

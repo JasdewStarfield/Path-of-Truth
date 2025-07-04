@@ -1,81 +1,123 @@
 
 [Builtin]
-	#DO NOT CHANGE THIS SETTING
+	#─────────────────────────────────────────────────────────────────────────
+	# This setting doesn't do anything. Change the difficulty using the in-game menu
+	# ⌄ 
 	Difficulty = "normal"
-	#The current version of Cold Sweat. This is used by the auto-updater
-	Version = "2.4-b03c"
-	#Allows Cold Sweat's configs to be automatically updated with new additions & formatting changes
+	#─────────────────────────────────────────────────────────────────────────
+	# The current version of Cold Sweat. This is used by the auto-updater
+	# ⌄ 
+	Version = "2.4-b03d"
+	#─────────────────────────────────────────────────────────────────────────
+	# Allows Cold Sweat's configs to be automatically updated with new additions & formatting changes
+	# ⌄ 
 	"Auto Update" = true
 
 [Difficulty]
-	#Defines the minimum habitable temperature
+	#─────────────────────────────────────────────────────────────────────────
+	# Defines the minimum habitable temperature
+	# ⌄ 
 	#Range: -Infinity ~ Infinity
 	"Minimum Habitable Temperature" = 0.4
-	#Defines the maximum habitable temperature
+	#─────────────────────────────────────────────────────────────────────────
+	# Defines the maximum habitable temperature
+	# ⌄ 
 	#Range: -Infinity ~ Infinity
 	"Maximum Habitable Temperature" = 1.4680000000000002
-	#Rate at which the player's body temperature changes (default: 1.0 (100%))
+	#─────────────────────────────────────────────────────────────────────────
+	# Rate at which the player's body temperature changes (default: 1.0 (100%))
+	# ⌄ 
 	#Range: 0.0 ~ Infinity
 	"Rate Multiplier" = 0.8
-	#Damage dealt to the player when they are too hot or too cold
+	#─────────────────────────────────────────────────────────────────────────
+	# Damage dealt to the player when they are too hot or too cold
+	# ⌄ 
 	#Range: 0.0 ~ Infinity
 	"Temperature Damage" = 2.0
-	#Nullifies temperature damage and effects when the difficulty is set to peaceful
+	#─────────────────────────────────────────────────────────────────────────
+	# Nullifies temperature damage and effects when the difficulty is set to peaceful
+	# ⌄ 
 	"Damage Scaling" = true
 
 ["Temperature Effects"]
 
 	["Temperature Effects".Hot]
-		#Defines the distance at which the player's vision is obscured by heatstroke fog
-		#Set to a value above 64 to disable the effect
+		#─────────────────────────────────────────────────────────────────────────
+		# Defines the distance at which the player's vision is obscured by heatstroke fog
+		# Set to a value above 64 to disable the effect
+		# ⌄ 
 		#Range: 0.0 ~ Infinity
 		"Heatstroke Fog" = 6.0
 
 	["Temperature Effects".Cold]
-		#Up to a certain portion of the player's hearts will freeze over when they are too cold, preventing regeneration
-		#Represented as a percentage in decimal form
+		#─────────────────────────────────────────────────────────────────────────
+		# Up to a certain portion of the player's hearts will freeze over when they are too cold, preventing regeneration
+		# Represented as a percentage in decimal form
+		# ⌄ 
 		#Range: 0.0 ~ 1.0
 		"Max Frozen Health Percentage" = 0.5
-		#The player's attack knockback will be reduced by this amount when they are too cold
-		#Represented as a percentage in decimal form
+		#─────────────────────────────────────────────────────────────────────────
+		# The player's attack knockback will be reduced by this amount when they are too cold
+		# Represented as a percentage in decimal form
+		# ⌄ 
 		#Range: 0.0 ~ 1.0
 		"Freezing Knockback Reduction" = 0.5
-		#The player's movement speed will be reduced by this amount when they are too cold
-		#Represented as a percentage in decimal form
+		#─────────────────────────────────────────────────────────────────────────
+		# The player's movement speed will be reduced by this amount when they are too cold
+		# Represented as a percentage in decimal form
+		# ⌄ 
 		#Range: 0.0 ~ 1.0
 		"Freezing Sluggishness" = 0.5
-		#The player's mining speed will be reduced by this amount when they are too cold
-		#Represented as a percentage in decimal form
+		#─────────────────────────────────────────────────────────────────────────
+		# The player's mining speed will be reduced by this amount when they are too cold
+		# Represented as a percentage in decimal form
+		# ⌄ 
 		#Range: 0.0 ~ 1.0
 		"Freezing Mining Impairment" = 0.5
 
 	["Temperature Effects".Acclimation]
-		#The speed at which the player acclimates to hot or cold environments
+		#─────────────────────────────────────────────────────────────────────────
+		# The speed at which the player acclimates to hot or cold environments
+		# ⌄ 
 		#Range: 0.0 ~ Infinity
 		"Acclimation Speed" = 0.0011
-		#The offset to the player's minimum habitable temperature when they acclimate to cold (first value) or hot (second value) environments
+		#─────────────────────────────────────────────────────────────────────────
+		# The offset to the player's minimum habitable temperature when they acclimate to cold (first value) or hot (second value) environments
+		# ⌄ 
 		"Min Acclimation Range" = [-0.46, 0.23]
-		#The offset to the player's maximum habitable temperature when they acclimate to cold (first value) or hot (second value) environments
+		#─────────────────────────────────────────────────────────────────────────
+		# The offset to the player's maximum habitable temperature when they acclimate to cold (first value) or hot (second value) environments
+		# ⌄ 
 		"Max Acclimation Range" = [-0.23, 0.46]
 
 ["Grace Period"]
-	#The amount of time (in ticks) after the player spawns during which they are immune to temperature effects
+	#─────────────────────────────────────────────────────────────────────────
+	# The amount of time (in ticks) after the player spawns during which they are immune to temperature effects
+	# ⌄ 
 	#Range: > 0
 	"Grace Period Length" = 6000
-	#Enables the grace period
+	#─────────────────────────────────────────────────────────────────────────
+	# Enables the grace period
+	# ⌄ 
 	"Grace Period Enabled" = false
 
 [Misc]
-	#Add TempModifier IDs to this list to disable them
-	#Allows for more granular control of Cold Sweat's features
+	#─────────────────────────────────────────────────────────────────────────//v
+	# Add TempModifier IDs to this list to disable them
+	# Allows for more granular control of Cold Sweat's features
 	# Run "/temp debug @s <trait>" to see IDs of all modifiers affecting the player
-	#See the Cold Sweat documentation for a list of default TempModifiers
+	# See the Cold Sweat documentation for a list of default TempModifiers
+	# ⌄ 
 	"Disabled Temperature Modifiers" = []
-	#Changes the update rate for temperature modifiers on entities
-	#Temperature modifiers control most of Cold Sweat's behavior, so lowering this value will improve performance at the cost of responsiveness
+	#─────────────────────────────────────────────────────────────────────────
+	# Changes the update rate for temperature modifiers on entities
+	# Temperature modifiers control most of Cold Sweat's behavior, so lowering this value will improve performance at the cost of responsiveness
+	# ⌄ 
 	#Range: 0.1 ~ 1.0
 	"Modifier Tick Rate" = 1.0
-	#A multiplier to the speed at which wet players dry off
+	#─────────────────────────────────────────────────────────────────────────
+	# A multiplier to the speed at which wet players dry off
+	# ⌄ 
 	#Range: 0.0 ~ Infinity
 	"Dryoff Speed" = 1.0
 
