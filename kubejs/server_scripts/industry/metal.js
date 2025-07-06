@@ -308,11 +308,11 @@ ServerEvents.recipes(event => {
     event.recipes.create.haunting(Item.of('minecraft:coal').withChance(0.5), 'minecraft:charcoal')
 
     //致密碳
-    event.recipes.create.compacting([Item.of('scguns:anthralite_nugget', 2), Item.of('scguns:anthralite_nugget', 1).withChance(0.5)], ['#forge:dusts/coal', '#forge:dusts/coal', '#forge:dusts/saltpeter', '#forge:dusts/phosphor']).heated()
+    event.recipes.create.compacting([Item.of('scguns:anthralite_nugget', 3), Item.of('scguns:anthralite_nugget', 1).withChance(0.5)], ['#forge:dusts/coal', '#forge:dusts/coal', '#forge:dusts/saltpeter', '#forge:dusts/phosphor']).heated()
 
     //泥土到铜
-    event.recipes.create.mixing('2x dirt', ['#forge:sand', '#forge:cobblestone', Fluid.of('water', 500)])
-    event.recipes.create.splashing([Item.of('create:copper_nugget').withChance(0.5)], 'dirt')
+    event.recipes.create.mixing('4x dirt', ['#forge:sand', '#forge:cobblestone', Fluid.of('water', 500)])
+    event.recipes.create.splashing([Item.of('create:copper_nugget').withChance(0.25)], 'dirt')
 
     //丐版碎沙砾
     event.remove({ id: "create:milling/gravel" })
@@ -327,8 +327,14 @@ ServerEvents.recipes(event => {
     //黏土出锌
     event.recipes.create.milling(Item.of('create:zinc_nugget').withChance(0.5), 'clay_ball')
 
+    //泥巴配方修改
+    event.remove({ id: "minecraft:packed_mud" })
+    event.remove({ id: "farmersdelight:packed_mud_from_straw" })
+    event.shapeless(Item.of('minecraft:packed_mud', 4), ['minecraft:mud', 'minecraft:mud', 'minecraft:mud', 'minecraft:mud', 'farmersdelight:straw'])
+    event.shapeless(Item.of('minecraft:packed_mud', 3), ['minecraft:mud', 'minecraft:mud', 'minecraft:mud', 'minecraft:wheat'])
+
     //泥巴出铁、铝土
-    event.recipes.create.crushing([Item.of('create:crushed_raw_iron').withChance(0.2), Item.of('kubejs:crushed_raw_bauxite').withChance(0.1)], 'packed_mud')
+    event.recipes.create.crushing([Item.of('kubejs:raw_iron_nugget'), Item.of('kubejs:raw_iron_nugget').withChance(0.25), Item.of('kubejs:raw_bauxite_nugget').withChance(0.75)], 'packed_mud')
 
     //深板岩粉碎出铅，银
     event.recipes.create.crushing([Item.of('oreganized:silver_nugget').withChance(0.2)], 'deepslate')
@@ -502,6 +508,33 @@ ServerEvents.recipes(event => {
 
     //石墨
     event.remove({ id: "createnuclear:pressing/graphene" })
+
+    //粗铁、铝合成配方
+    event.shaped(
+        Item.of('create:crushed_raw_iron', 1),
+        [
+            'AAA',
+            'AAA',
+            'AAA'
+        ],
+        {
+            A: 'kubejs:raw_iron_nugget'
+        }
+    )
+    event.shapeless( Item.of('kubejs:raw_iron_nugget', 9), 'create:crushed_raw_iron')
+
+    event.shaped(
+        Item.of('kubejs:crushed_raw_bauxite', 1),
+        [
+            'AAA',
+            'AAA',
+            'AAA'
+        ],
+        {
+            A: 'kubejs:raw_bauxite_nugget'
+        }
+    )
+    event.shapeless( Item.of('kubejs:raw_bauxite_nugget', 9), 'kubejs:crushed_raw_bauxite')
 
     //矿渣再利用
     event.recipes.create.crushing([Item.of("kubejs:slag_chunk", 2), Item.of("kubejs:slag_chunk", 2).withChance(0.5)], "#forge:slag")

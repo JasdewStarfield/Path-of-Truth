@@ -17,6 +17,10 @@ StartupEvents.registry('item', (event) => {
   event.create("za_nugget").displayName('ZA Nugget').texture('kubejs:item/za/za_nugget')
   event.create("za_sheet").displayName('ZA Sheet').texture('kubejs:item/za/za_sheet')
 
+  //粗金属粒
+  event.create("raw_iron_nugget").displayName('Raw Iron Nugget')
+  event.create("raw_bauxite_nugget").displayName('Raw Bauxite Nugget')
+
   /*
   event.create("bronze_helmet",'helmet').displayName('Bronze Helmet').tier('bronze')
   event.create("bronze_chestplate",'chestplate').displayName('Bronze Chestplate').tier('bronze')
