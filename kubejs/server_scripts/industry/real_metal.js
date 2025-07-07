@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
     "result": { "base_ingredient": { "tag": "forge:dusts/aluminum" }, "count": 2 },
     "secondaries": [{ "chance": 0.5, "output": { "tag": "forge:dusts/aluminum" } }]
   })
-  event.recipes.vintageimprovements.centrifugation([Item.of('mud').withChance(0.9), Fluid.of('immersiveengineering:redstone_acid', 50), Item.of('create:crushed_raw_aluminum').withChance(0.1)], [Fluid.of('minecraft:water', 500), 'kubejs:crushed_raw_bauxite']).minimalRPM(256)
+  event.recipes.vintageimprovements.centrifugation([Item.of('mud').withChance(0.9), Fluid.of('immersiveengineering:redstone_acid', 10), Item.of('create:crushed_raw_aluminum').withChance(0.1)], [Fluid.of('minecraft:water', 200), 'kubejs:crushed_raw_bauxite']).minimalRPM(256)
   event.custom({
     "type": "immersiveengineering:arc_furnace",
     "additives": [],

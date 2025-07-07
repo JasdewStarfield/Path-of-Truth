@@ -22,6 +22,8 @@ JEIEvents.hideFluids(event => {
 
 JEIEvents.addItems(event => {
     event.add(Item.of('woodenbucket:wooden_bucket'))
+    event.add(Item.of('createaddition:cake_base'))
+    event.add(Item.of('createaddition:cake_base_baked'))
 })
 
 JEIEvents.removeRecipes(e => {

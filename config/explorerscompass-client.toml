@@ -14,4 +14,6 @@
 	showHaveFound = true
 	#If true, a new Xaero's Map way point will be add when you have search successfully
 	newWayPoint = false
+	#Load config.json
+	customResource = false
 

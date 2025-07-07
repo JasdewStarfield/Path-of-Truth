@@ -605,4 +605,21 @@ ServerEvents.recipes(event => {
       D: 'alexsmobs:echolocator'
     }
   )
+
+
+
+  //终极合成！
+  let inter2 = 'kubejs:incomplete_buran'
+  event.recipes.create.sequenced_assembly([
+    'kubejs:buran'
+  ], 'create:empty_schematic', [
+    event.recipes.createDeploying(inter2, [inter2, 'kubejs:andesite_engineering']),
+    event.recipes.createDeploying(inter2, [inter2, 'kubejs:fluid_engineering']),
+    event.recipes.createDeploying(inter2, [inter2, 'kubejs:precise_engineering']),
+    event.recipes.createDeploying(inter2, [inter2, 'kubejs:logistical_engineering']),
+    event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:light_engineering']),
+    event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:rs_engineering']),
+    event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:heavy_engineering']),
+    event.recipes.createDeploying(inter2, [inter2, 'kubejs:electronic_engineering']),
+  ]).transitionalItem(inter2).loops(4)
 })

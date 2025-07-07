@@ -37,6 +37,8 @@
 	ForceBlocksNotSnowy = []
 	#Not just the top layer, now even the leaves below are dusted with frost and snow.
 	SnowyTree = true
+	#Enable local calendar and local info synchronization.
+	EnableLocalInfoAndCalendar = false
 
 [Weather]
 	#Enable solar term weather system with biome.

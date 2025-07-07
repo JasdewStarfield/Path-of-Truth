@@ -606,6 +606,19 @@ ServerEvents.recipes(event => {
         'blue_skies:moonstone_crystal'
     ])
 
+    //榴石
+    event.recipes.create.compacting(
+        [
+            Item.of('blue_skies:pyrope_gem', 1),
+            Item.of('blue_skies:pyrope_gem', 1).withChance(0.5),
+            'kubejs:fire_elemental_core'
+        ], [
+            'blue_skies:pyrope_gem',
+            'kubejs:fire_elemental_core',
+            Fluid.of("immersiveengineering:acetaldehyde", 100)
+        ]
+    ).heated()
+
     //批量炼焦
     event.recipes.vintageimprovements.pressurizing([
         Item.of('immersiveengineering:coal_coke', 1),
