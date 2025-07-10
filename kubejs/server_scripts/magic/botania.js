@@ -249,11 +249,9 @@ ServerEvents.recipes(event => {
     event.remove({id:'botania:mana_infusion/flint_to_gunpowder'})
     //禁书碎片转化远古知识碎片
     event.recipes.botania.mana_infusion('goety:forbidden_piece', 'irons_spellbooks:ancient_knowledge_fragment', 10000, 'botania:alchemy_catalyst')
-    //刷怪蛋复制：遗忆守卫，瞻远者，宝箱怪，潜影贝，凋零骷髅，远古骑士
+    //刷怪蛋复制：遗忆守卫，瞻远者，凋零骷髅，远古骑士
     event.recipes.botania.mana_infusion('2x undergarden:forgotten_guardian_spawn_egg', 'undergarden:forgotten_guardian_spawn_egg', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x alexsmobs:spawn_egg_farseer', 'alexsmobs:spawn_egg_farseer', 50000,'botania:conjuration_catalyst')
-    event.recipes.botania.mana_infusion('2x artifacts:mimic_spawn_egg', 'artifacts:mimic_spawn_egg', 25000,'botania:conjuration_catalyst')
-    event.recipes.botania.mana_infusion('2x minecraft:shulker_spawn_egg', 'minecraft:shulker_spawn_egg', 50000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x minecraft:wither_skeleton_spawn_egg', 'minecraft:wither_skeleton_spawn_egg', 25000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x irons_spellbooks:armor_pile', 'irons_spellbooks:armor_pile', 50000,'botania:conjuration_catalyst')
     //遗忆锭转化钻石1:2
