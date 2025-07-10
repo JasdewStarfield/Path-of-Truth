@@ -83,7 +83,6 @@ hmclversion.cfg
 kubejs/config/probejs.json
 /ESM
 /config/nucleus
-config/jei/jei-client.ini
 /xaero
 config/fabric/indigo-renderer.properties
 config/sounds/chat.json
