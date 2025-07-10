@@ -794,18 +794,8 @@
 			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest20.subtitle}"
 			tasks: [
 				{
-					id: "7A1B73EB8DFDBD82"
-					item: "botania:pixie_dust"
-					type: "item"
-				}
-				{
 					id: "032B3C0F3679278B"
 					item: "botania:elementium_ingot"
-					type: "item"
-				}
-				{
-					id: "591047D9703153E5"
-					item: "botania:dragonstone"
 					type: "item"
 				}
 				{

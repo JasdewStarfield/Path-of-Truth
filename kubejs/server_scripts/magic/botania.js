@@ -215,6 +215,8 @@ ServerEvents.recipes(event => {
     event.recipes.botania.mana_infusion('minecraft:bamboo', 'botania:livingwood_twig', 500)
     //明月石砖转化绿松石砖
     event.recipes.botania.mana_infusion('blue_skies:turquoise_stonebrick', 'blue_skies:lunar_stonebrick', 100)
+    //海潮蛤转化鹦鹉螺壳
+    event.recipes.botania.mana_infusion('minecraft:nautilus_shell', 'collectorsreap:clam', 500, 'botania:alchemy_catalyst')
 
     //鸡蛋的生产和复制
     event.recipes.botania.petal_apothecary('minecraft:egg', 
@@ -696,6 +698,18 @@ ServerEvents.recipes(event => {
             'goety:philosophers_stone'
         ], 
         100000
+    )
+    //回响之心合成
+    event.recipes.botania.terra_plate('kubejs:echoing_heart',
+        [
+            'alexsmobs:soul_heart',
+            'goety:shadow_essence',
+            'minecraft:sculk_shrieker',
+            'minecraft:calibrated_sculk_sensor',
+            'irons_spellbooks:blood_vial',
+            'botania:red_string'
+        ],
+        25000
     )
     //魔力风暴合成
     event.remove({id:'botania:mana_bomb'})
