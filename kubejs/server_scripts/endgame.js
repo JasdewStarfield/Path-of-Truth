@@ -159,7 +159,7 @@ ServerEvents.recipes(event => {
   event.custom({
     "type": "immersiveengineering:mixer",
     "energy": 12800,
-    "fluid": { "amount": 50, "tag": "forge:diesel" },
+    "fluid": { "amount": 500, "tag": "forge:diesel" },
     "inputs": [
       { "base_ingredient": { "tag": "forge:dusts/uranium" }, "count": 4 },
       { "base_ingredient": { "tag": "forge:dusts/hop_graphite" }, "count": 1 },
@@ -192,7 +192,7 @@ ServerEvents.recipes(event => {
     Item.of("immersiveengineering:slag").withChance(0.5),
     "createnuclear:yellowcake"
   ],
-    Fluid.of('kubejs:molten_enriched_uranium', 50)
+    Fluid.of('kubejs:molten_enriched_uranium', 5)
   ).minimalRPM(256)
   event.recipes.create.mixing('createnuclear:enriched_soul_soil', ['goety:sonic_boom_focus', 'goety:dark_metal_block', 'goety:dark_metal_block', 'goety:dark_metal_block', 'goety:dark_metal_block', 'nethersdelight:rich_soul_soil', 'nethersdelight:rich_soul_soil', 'nethersdelight:rich_soul_soil', 'nethersdelight:rich_soul_soil']).superheated()
   event.recipes.createItemApplication("createnuclear:graphite_rod", ["#forge:rods/steel", "#forge:plates/hop_graphite"])
