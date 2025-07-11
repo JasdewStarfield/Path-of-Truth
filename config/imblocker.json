@@ -10,6 +10,9 @@
     "recoveredScreens": [],
     "commandInputMode": "IM_ENG_STATE"
   },
+  "advanceSettings": {
+    "enableCharSimulation": false
+  },
   "windowsCompatibilitySettings": {
     "enableConversionStatusApi": true,
     "enableCursorPositionTracking": true,
