@@ -1,0 +1,88 @@
+
+[Prices]
+	#Set the comfort value boundaries to be -maxComfortRange to maxComfortRange. Allows for more precise customizability! Impact on price is linear between 0 and maxComfortRange
+	maxComfortRange = 1000
+	#Min percentage of original price that an item can be reduced to. For example, a value of 70 means items can at most be reduced to 70% of their original price. A value of 0 means all items can reach 1 emerald in price. A value of 100 means items cannot go down in price. Only positive comfort values reduce item prices, and maxium comfort means lowest prices! :D
+	minComfortPriceReduction = 10
+	#Max percentage of original price that an item can go up in price. For example, a value of 0 means items cannot go up in price, and a value of 100 means items can at most double in price. 200 means tripling, etc.
+	maxComfortPriceIncrease = 300
+
+["Bedroom comfort values"]
+	#Various parameters relative to how comfortable a villager's bedroom is. A bedroom is defined by the room centered around a villager's last-slept-in bed, with a max radius of maxBedroomRadius.
+	#How much empty space (measured in air blocks) the villager would like to have in their bedroom. Building a bigger room will increase comfort, and a smaller room will decrease comfort.
+	preferredBedroomSize = 27
+	#Minimum bedroom size, at which comfort is the worst and can't decrease further
+	minBedroomSize = 1
+	#Maximum bedroom size, at which comfort is the highest and can't increase further
+	maxBedroomSize = 150
+	#Comfort value for when the bedroom is at minBedroomSize
+	minBedroomSizeComfort = -400
+	#Comfort value for when the bedroom is at maxBedroomSize
+	maxBedroomSizeComfort = 400
+	#Max number of beds that the villager is okay with having in their bedroom. Going above this number affects comfort according to comfortPerExtraBed
+	bedsThreshold = 2
+	#Comfort impact from each bed above bedsThreshold
+	comfortPerExtraBed = -20
+	#The sky light level the villager would like in their room (measured at the brightest air block in the room)
+	preferredBedroomLight = 12
+	#Comfort impact for each light level the brightest air block in the bedroom has below preferredBedroomLight
+	comfortPerLessBedroomLight = -25
+	#Comfort impact for each light level the brightest air block in the bedroom has above preferredBedroomLight
+	comfortPerMoreBedroomLight = 0
+	#Comfort impact if the villager's workstation is in their bedroom
+	workstationInBedroomComfort = -20
+
+["Workplace comfort values"]
+	#Various parameters relative to how comfortable a villager's workplace is. A workplace is defined as the room centered around a villager's last-worked-in workstation, with a max radius of maxWorkplaceRadius.
+	#How much empty space (measured in air blocks) the villager would like to have at their workplace. Building a bigger room will increase comfort, and a smaller room will decrease comfort.
+	averageWorkplaceSize = 18
+	#Minimum workplace size, at which comfort is the worst and can't decrease further
+	minWorkplaceSize = 1
+	#Maximum workplace size, at which comfort is the highest and can't increase further
+	maxWorkplaceSize = 150
+	#Comfort value for when the workplace is at minWorkplaceSize
+	minWorkplaceSizeComfort = -300
+	#Comfort value for when the workplace is at maxWorkplaceSize
+	maxWorkplaceSizeComfort = 350
+	#Max number of workstations that the villager is okay with having present at their workplace (of the same type). Going above this number affects comfort according to comfortPerExtraWorkstation
+	workstationsThreshold = 6
+	#Comfort impact from each workstation above workstationsThreshold
+	comfortPerExtraWorkstation = -20
+	#The sky light level the villager would like at their workplace (measured at the brightest air block in the room)
+	preferredWorkplaceLight = 12
+	#Comfort impact for each light level the brightest air block in the workplace has below preferredWorkplaceLight
+	comfortPerLessWorkplaceLight = -50
+	#Comfort impact for each light level the brightest air block in the workplace has above preferredWorkplaceLight
+	comfortPerMoreWorkplaceLight = 0
+
+["Other comfort values"]
+	#The distance the villager prefers between their bed and workplace (distance is measured in blocks, and is a straight lines that ignores walls). A longer distance will increase comfort, and a shorter distance will decrease comfort.
+	preferredDistanceBetweenBedAndWorkplace = 6
+	#Minimum distance between bed and workplace, at which comfort is the lowest and can't decrease further
+	minBedWorkplaceDistance = 1
+	#Maximum  distance between bed and workplace, at which comfort is the highest and can't increase further
+	maxBedWorkplaceDistance = 6
+	#Comfort value for when the bed-workplace distance is at minBedWorkplaceDistance
+	minBedWorkplaceDistanceComfort = -50
+	#Comfort value for when the bed-workplace distance is at maxBedWorkplaceDistance
+	maxBedWorkplaceDistanceComfort = 0
+	#Minimum time (measured in ticks) a villager would like to spend outside each day (in multiples of 100)
+	minimumTicksOutside = 1200
+	#Comfort impact per each consecutive day the villager spends less than minimumTicksOutside time outside
+	comfortPerDayWithoutOutside = -50
+	#Comfort impact per each consecutive day the villager isn't panicking (usually from zombies, but other hostile mobs can cause panic too! Including being hit by players)
+	comfortPerDayWithoutPanic = 10
+	#Max number of consecutive days for which comfortPerDayWithoutOutside can apply
+	maxDaysWithoutOutside = 6
+	#Max number of consecutive days for which comfortPerDayWithoutPanic can apply
+	maxDaysWithoutPanic = 25
+	#Comfort impact per each consecutive day a villager spends without sleeping
+	comfortPerDayWithoutSleep = -100
+
+["Max radiuses"]
+	#Note that large values may lag the game!
+	#Max number of blocks to go in each direction, starting from the villager's last-slept-in bed, to do bedroom calculations
+	maxBedroomRadius = 10
+	#Max number of blocks to go in each direction, starting from the villager's last-worked-in workstation, to do workplace calculations
+	maxWorkplaceRadius = 10
+
