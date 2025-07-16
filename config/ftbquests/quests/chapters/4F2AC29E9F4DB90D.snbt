@@ -337,13 +337,13 @@
 			]
 			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest10.title}"
 			x: 0.0d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
 				"28617A52922404CE"
-				"27FD1F76136CBD0B"
 				"62214C4C462BB308"
+				"09A8B7A721106DE1"
 			]
 			description: [
 				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest11.description1}"
@@ -388,6 +388,7 @@
 				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest13.description1}"
 				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest13.description2}"
 				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest13.description3}"
+				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest13.description4}"
 			]
 			id: "76BE4625CCF2F867"
 			rewards: [{
@@ -1110,6 +1111,17 @@
 			}]
 			x: -2.0d
 			y: 8.0d
+		}
+		{
+			dependencies: ["27FD1F76136CBD0B"]
+			id: "09A8B7A721106DE1"
+			tasks: [{
+				id: "3B9D15E8B932D167"
+				item: "kubejs:fluid_mechanism"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.4F2AC29E9F4DB90D.subtitle0}"]

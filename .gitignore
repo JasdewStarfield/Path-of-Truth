@@ -83,7 +83,6 @@ hmclversion.cfg
 kubejs/config/probejs.json
 /ESM
 /config/nucleus
-config/jei/jei-client.ini
 /xaero
 config/fabric/indigo-renderer.properties
 config/sounds/chat.json
@@ -102,3 +101,4 @@ win_event*.txt
 config/mods_optimizer/mods-database.json
 config/mods_optimizer/mods-database.json.sha256
 config/asyncparticles/asyncparticles-mixin.properties
+config/flywheel-client.toml

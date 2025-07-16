@@ -108,7 +108,7 @@ ServerEvents.recipes(event => {
     'BAB', 
     'ABA' 
   ], {
-    A: 'immersiveengineering:dust_wood',
+    A: 'createdieselgenerators:wood_chip',
     B: 'wheat'
   })
 
@@ -133,6 +133,13 @@ ServerEvents.recipes(event => {
     {input:'minecraft:crafting_table'},
     'minecraft:crafting_table',
     '#forge:workbench'
+  )
+
+  //皮革
+  event.replaceInput(
+    {input:'minecraft:leather'},
+    'minecraft:leather',
+    '#forge:leather'
   )
 
   //任意末影珍珠合成原版末影珍珠
@@ -162,15 +169,22 @@ ServerEvents.recipes(event => {
   event.remove({ id:"everycomp:c/botania/dreamwood_slab_from_dreamwood_planks_stonecutting" })
   event.remove({ id:"everycomp:c/botania/dreamwood_stairs_from_dreamwood_planks_stonecutting" })
   event.remove({ id: 'create:industrial_iron_block_from_ingots_iron_stonecutting' })
+  event.remove({ id: 'create:filling/compat/immersiveengineering/treated_wood_in_spout' })
+  event.remove({ id: 'createnuclear:splashing/crushed_raw_lead' })
   event.remove({ id: 'createnuclear:crushing/charcoal' })
+  event.remove({ id: 'createnuclear:crushing/fix/crushed_raw_uranium' })
+  event.remove({ id: 'createnuclear:crushing/raw_uranium_block' })
   event.remove({ id: 'create:crushing/tuff' })
   event.remove({ id: 'create:crushing/tuff_recycling' })
   event.remove({ id: 'createaddition:mixing/electrum' })
+  event.remove({ id: 'createaddition:compat/immersiveengineering/crushing/coal_coke'})
+  event.remove({ id: 'createaddition:compat/immersiveengineering/crushing/coke_block'})
   event.remove({ id: 'oreganized:create/mixing/electrum_ingot' })
   event.remove({ id: 'oreganized:create/splashing/crushed_lead_ore' })
   event.remove({ id: 'oreganized:create/splashing/crushed_silver_ore' })
   event.remove({ input: 'oreganized:bush_hammer' })
   event.remove({ output: 'oreganized:bush_hammer' })
   event.remove({ id: 'farmersdelight:cutting/saddle' })
+  event.remove({ id: 'vintageimprovements:centrifugation/mud' })
 
 })

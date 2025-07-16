@@ -51,7 +51,6 @@
 		[types.stone_type.blue_skies]
 			taratite = true
 			rimestone = true
-			brumble = true
 			umber = true
 			cinderstone = false
 			blinding_stone = true

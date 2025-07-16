@@ -454,6 +454,19 @@ ServerEvents.tags("item", (event) => {
 
     //移除焦煤的煤炭标签
     event.remove("minecraft:coals","immersiveengineering:coal_coke")
+
+    event.add('scguns:standard_bullet_material', [
+        '#forge:ingots/iron',
+        '#forge:ingots/lead',
+        '#forge:ingots/zinc'
+    ]);
+    event.add('scguns:stan_bullet_tips', [
+        '#forge:nuggets/iron',
+        '#forge:nuggets/lead',
+        '#forge:nuggets/zinc'
+    ]);
+    event.add('scguns:advanced_bullet_material', '#forge:ingots/steel');
+    event.add('scguns:advanced_bullet_tips', '#forge:nuggets/steel')
 })
 
 ServerEvents.tags("block", (event) => {

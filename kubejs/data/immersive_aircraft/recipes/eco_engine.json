@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IWI",
+    "CEC"
+  ],
+  "key": {
+    "C": [
+      {
+        "item": "create:copper_sheet"
+      }
+    ],
+    "W": [
+      {
+        "item": "minecraft:water_bucket"
+      }
+    ],
+    "I": [
+      {
+        "item": "create:iron_sheet"
+      }
+    ],
+    "E": [
+      {
+        "item": "immersive_aircraft:boiler"
+      }
+    ]
+  },
+  "result": {
+    "item": "immersive_aircraft:eco_engine"
+  }
+}

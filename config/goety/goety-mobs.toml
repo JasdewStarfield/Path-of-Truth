@@ -82,11 +82,17 @@
 	redstoneMonstrosityLeafBreak = true
 	#Servants, when on staying mode, will load chunks around it, Default: true
 	stayingServantChunkLoad = true
-	#How far servants can patrol from their patrol location, Default: 16
-	#Range: > 2
-	servantPatrolRange = 16
 	#Whether mobs owned by player outside of Goety Servants can heal while wearing appropriate robes, Default: true
 	compatMinionHeal = true
+	#Whether wearing Necro Crown and/or Necro Cape gives massive debuffs to non-undead servant, Default: false
+	necroSetDebuff = false
+	#Whether wearing Nameless Crown and/or Nameless Cape gives massive debuffs to non-undead servant, Default: false
+	namelessSetDebuff = false
+	#Whether Nightmare Stalker from Born In Chaos mod no longer gain massive buffs when fighting certain Goety mobs, Default: true
+	compatNightmareStalker = true
+	#How far servants can guard from their guarding location, Default: 16
+	#Range: > 2
+	servantGuardingRange = 16
 
 	[Servants."Water Servants"]
 		#How frequent Water Servants heal, count seconds, Default: 1
@@ -173,6 +179,38 @@
 		#How frequent Frost Servants heal, count seconds, Default: 1
 		#Range: > 0
 		frostMinionHealTime = 1
+
+	[Servants."Illager Servants"]
+		#How long does it take for Illagers to fully train, count in seconds, Default: 1200
+		#Range: > 0
+		illagerServantTrainTime = 1200
+		#How many trained Illagers can reduce training time for training Illagers, Default: 2
+		#Range: > 0
+		illagerServantMaxMentors = 2
+		#Whether eligible Illagers will automatically train just by being near an active Ominous Pyre, instead of having been commanded to it, Default: false
+		illagerServantAutoTrain = false
+		#Whether every Illager Servant type can breed or only Neollagers can, Default: true
+		illagerServantAllBreed = true
+		#Whether Illagers will gain loot based on current offers by killing Villagers, Default: true
+		illagerServantLootVillagers = true
+		#Whether Illagers will gain loot based on current offers by killing Wandering Traders, Default: true
+		illagerServantLootTraders = true
+		#Whether Illagers will take certain items from the ground, Default: true
+		illagerServantPickUpDrops = true
+		#Whether Illagers will instantly store drops from their kills into their inventory, before throwing them back to their owner or store them in bounded chest, Default: true
+		illagerServantCollectLoot = true
+		#Whether every Illagers can open doors when raiding instead of just Vindicators, Default: true
+		illagerServantAllOpenDoors = true
+		#Whether Illagers shoot arrows that pass through allied mobs, Default: true
+		illagerServantGhostArrows = true
+		#Whether Neollagers gain armor after training if their owner wears Ring of the Forge, Default: true
+		illagerServantTrainArmor = true
+		#How many blocks from their registered chest trained Illagers will attempt to start using it, Default: 16
+		#Range: > 4
+		illagerServantChestRange = 16
+		#How long the cooldown for turning Villagers into Ravaged for Evokers, count in seconds, Default: 1200
+		#Range: > 0
+		evokerServantRavagedCooldown = 1200
 
 [Illagers]
 	#Whether Enviokers, Inquillagers and Conquillagers can steal Totems of Souls or Totems of Undying, Default: true
@@ -285,6 +323,10 @@
 			#Requires game restart
 			#Must have no more and no less than 8 integers
 			hostileRedstoneMonstrosityRaidCount = [0, 0, 0, 0, 0, 0, 0, 1]
+			#Whether Hostile Redstone Monstrosities only appear when all other non-boss raiders are defeated
+			#Requires game restart
+			#Default: true
+			hRMSpawnNoRaiders = true
 
 		[Illagers.Raid.Maverick]
 			#How many Mavericks each wave
@@ -457,6 +499,20 @@
 		[Textures."Summoned Mobs"."Reaper Servants"]
 			#If Reaper Servants have custom textures, Default: true
 			reaperServantTexture = true
+
+		[Textures."Summoned Mobs"."Illager Servants"]
+			#If Pillager Servants have custom textures, Default: true
+			pillagerServantTexture = true
+			#If Vindicator Servants have custom textures, Default: true
+			vindicatorServantTexture = true
+			#If Evoker Servants have custom textures, Default: true
+			evokerServantTexture = true
+			#If Geomancer Servants have custom textures, Default: true
+			geomancerServantTexture = true
+			#If Iceologer Servants have custom textures, Default: true
+			iceologerServantTexture = true
+			#If Wind Caller Servants have custom textures, Default: true
+			windCallerServantTexture = true
 
 [Spawning]
 

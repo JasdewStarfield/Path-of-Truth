@@ -192,6 +192,10 @@ ServerEvents.recipes(event => {
     event.replaceInput({mod:'aquamirae',output:'aquamirae:terrible_sword'},
         'minecraft:stick' , 'createnuclear:uranium_rod')
 
+    //黑暗铁砧配方替换
+    event.replaceInput({mod:'goety',output:'goety:dark_anvil'},
+        'goety:dark_ingot' , 'minecraft:netherite_ingot')
+
     //复刻凝胶复制
     event.shaped(
         Item.of('alexsmobs:mimicream', 16),

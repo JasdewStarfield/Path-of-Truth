@@ -66,8 +66,8 @@ ServerEvents.recipes(event => {
         "type":"immersiveengineering:arc_furnace",
         "additives":[],
         "energy":102400,
-        "additives":[{"base_ingredient":{"tag":"forge:ingots/silver"},"count":3}],
-        "input":{"base_ingredient":{"tag":"forge:ingots/gold"},"count":5},
+        "additives":[{"base_ingredient":{"tag":"forge:ingots/silver"},"count":2}],
+        "input":{"base_ingredient":{"tag":"forge:ingots/gold"},"count":4},
         "results":[{"tag":"forge:ingots/electrum"}],
         "time":200
     })
@@ -99,19 +99,4 @@ ServerEvents.recipes(event => {
         ]
     })
     */
-
-    //终极合成！
-    let inter2 = 'kubejs:incomplete_buran'
-    event.recipes.create.sequenced_assembly([
-        'kubejs:buran'
-    ], 'create:crafting_blueprint', [
-        event.recipes.createDeploying(inter2, [inter2, 'kubejs:andesite_engineering']),
-        event.recipes.createDeploying(inter2, [inter2, 'kubejs:fluid_engineering']),
-        event.recipes.createDeploying(inter2, [inter2, 'kubejs:precise_engineering']),
-        event.recipes.createDeploying(inter2, [inter2, 'kubejs:logistical_engineering']),
-        event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:light_engineering']),
-        event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:rs_engineering']),
-        event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:heavy_engineering']),
-        event.recipes.createDeploying(inter2, [inter2, 'kubejs:electronic_engineering']),
-    ]).transitionalItem(inter2).loops(4)
 })

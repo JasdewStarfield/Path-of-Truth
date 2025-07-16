@@ -74,7 +74,6 @@ ServerEvents.recipes(event => {
       ['vintageimprovements:belt_grinder', 'vintageimprovements:grinder_belt'],
       //["protection_pixel:armorloadplatform", "kubejs:advanced_spring_set"],
       ['create_connected:inventory_access_port', 'create:chute'],
-      ['create_mobile_packages:bee_port', 'create:transmitter'],
     ]
     preciseEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:precise_engineering", material)
@@ -235,4 +234,31 @@ ServerEvents.recipes(event => {
     //区块加载器
     event.recipes.botania.mana_infusion('create_power_loader:brass_chunk_loader', 'create_power_loader:empty_brass_chunk_loader', 10000)
     event.recipes.botania.mana_infusion('create_power_loader:andesite_chunk_loader', 'create_power_loader:empty_andesite_chunk_loader', 4000)
+
+    //流体构件
+    event.recipes.create.sequenced_assembly(
+      [
+        Item.of('kubejs:fluid_mechanism', 1)
+      ],
+      '#forge:plates/constantan',
+      [
+        event.recipes.createDeploying('kubejs:incomplete_fluid_mechanism', ['kubejs:incomplete_fluid_mechanism', 'create:mechanical_pump']),
+        event.recipes.createDeploying('kubejs:incomplete_fluid_mechanism', ['kubejs:incomplete_fluid_mechanism', '#forge:nuggets/bronze']),
+        event.recipes.createDeploying('kubejs:incomplete_fluid_mechanism', ['kubejs:incomplete_fluid_mechanism', '#forge:nuggets/bronze']),
+        event.recipes.createPressing('kubejs:incomplete_fluid_mechanism', 'kubejs:incomplete_fluid_mechanism')
+      ]
+    ).transitionalItem('kubejs:incomplete_fluid_mechanism').loops(2)
+    event.recipes.create.compacting(
+      'kubejs:fluid_mechanism',
+      [
+        '#forge:plates/constantan',
+        'create:mechanical_pump',
+        'create:mechanical_pump',
+        '#forge:nuggets/bronze',
+        '#forge:nuggets/bronze',
+        '#forge:nuggets/bronze',
+        '#forge:nuggets/bronze',
+        Fluid.of('create:honey', 50)
+      ]
+    ).heated()
 })

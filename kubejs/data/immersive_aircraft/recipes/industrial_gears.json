@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CB",
+    "IC"
+  ],
+  "key": {
+    "C": [
+      {
+        "item": "create:cogwheel"
+      }
+    ],
+    "B": [
+      {
+        "item": "create:brass_sheet"
+      }
+    ],
+    "I": [
+      {
+        "item": "create:iron_sheet"
+      }
+    ]
+  },
+  "result": {
+    "item": "immersive_aircraft:industrial_gears"
+  }
+}

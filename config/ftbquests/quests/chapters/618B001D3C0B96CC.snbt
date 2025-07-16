@@ -575,7 +575,7 @@
 			}]
 			title: "{ftbquests.chapter.618B001D3C0B96CC.quest16.title}"
 			x: 0.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0F48550D5C48437F"]
@@ -612,6 +612,32 @@
 			title: "{ftbquests.chapter.618B001D3C0B96CC.quest18.title}"
 			x: -2.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["0F48550D5C48437F"]
+			description: [
+				"&3*置入背包以解锁生物雷达*&r"
+				"当你开始深入深暗，你会发现，自己也许可以利用一些深暗的机制来提升自己……"
+				"比如监守者那神奇的&c感知生命&r的能力。"
+				"尽管你暂时放不出音爆，但是通过浓缩灵魂寻觅一下周围的生物还是不难的。"
+				""
+				"&o也许你应该将&r&b&o汲取过五次及以上灵魂&r&r&o的&r&d&o灵魂鹫&r&r&o开膛破肚来寻觅&r&9&o灵魂足够充裕的心脏。&r"
+			]
+			id: "0CB5CD6BC4EF64D5"
+			rewards: [{
+				id: "56189B256264C951"
+				item: "tide:echo_fishing_bobber"
+				type: "item"
+			}]
+			subtitle: "*卷须颤动*"
+			tasks: [{
+				id: "113476C743F79D98"
+				item: "kubejs:echoing_heart"
+				type: "item"
+			}]
+			title: "感知生命……"
+			x: 0.0d
+			y: -3.5d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.618B001D3C0B96CC.subtitle0}"]

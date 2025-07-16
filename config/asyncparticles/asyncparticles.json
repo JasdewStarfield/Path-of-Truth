@@ -4,18 +4,20 @@
     "particleLimit": 16384,
     "removeIfMissedTick": false,
     "particleLightCache": true,
-    "cullUnderwaterParticleType": true
+    "cullUnderwaterParticleType": false
   },
   "tick": {
     "animationTickMode": "INTERRUPTIBLE",
     "particleTickMode": "INTERRUPTIBLE",
+    "tickWeatherAsync": true,
     "failPerSecLimit": 5,
     "failBehavior": "RAISE_CRASH",
     "suppressCME": false
   },
   "rendering": {
-    "cullParticles": true,
-    "particleRenderingMode": "DELAYED",
+    "particleRenderingMode": "COMPATIBILITY",
+    "particleCulling": "AABB",
+    "cullWeathers": true,
     "failPerSecLimit": 20,
     "failBehavior": "MARK_AS_SYNC"
   },

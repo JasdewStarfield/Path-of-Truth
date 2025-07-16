@@ -34,7 +34,7 @@ gamma:0.5
 renderDistance:12
 simulationDistance:10
 entityDistanceScaling:1.0
-guiScale:3
+guiScale:0
 particles:0
 maxFps:70
 graphicsMode:1
@@ -42,8 +42,8 @@ ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","fabric","netherexp:jne_emissive","netherexp:jne_retextures"]
-incompatibleResourcePacks:[]
+resourcePacks:["vanilla","mod_resources","Moonlight Mods Dynamic Assets","fabric","netherexp:jne_emissive","netherexp:jne_retextures","Minecraft-Mod-Language-Modpack-Converted-1.20.1.zip","file/Better_Enderdragon.zip","file/Create Immersive Aircraft Warship ResoucePack v1.2.zip","file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip","file/Create Tweaks Compats.zip","file/FusionPixelFont-12px-monospaced-ttf.zip","file/Nekos Enhanced Tools and Armour Plus V1.1.zip","file/Refined Storage - ReCreated v0.6.zip","file/SRU_1-3.zip","file/[Moonsu] Better GUI for Sophisticated Backpacks 2.0 1.20-1.zip","CN_Comforts.zip","CN_CompressedCreateRecipes.zip","CN_CompressedEngineering.zip","CN_CopperTuffBackport.zip","CN_CreateBlueSkiesCompat.zip","CN_CreateCompressed.zip","CN_CreatePickyWheels.zip","CN_CreateUtilities.zip","CN_EndersDelight.zip","CN_JustEnoughMultiblocks.zip","CN_MechanicalBotania.zip","CN_NetherExpDelight.zip","CN_ObscureAPI.zip","CN_ReChiseled.zip","CN_ReChiseledCreate.zip","CN_RespawnObelisks.zip","CN_SCORCHEDGUNS2.zip","CN_SimpleMetalsTin.zip","CN_SmidgeonOBliss.zip","CN_StardewFishing.zip","CN_Tide.zip","CN_VCT.zip","file/Simple Grass Flowers v1.9.5.zip","file/CreateSophisticatedBackpacks.zip","file/Midnighttiggers-FCT-Default_1.20_V6.zip","file/Comforts Modernized - V1.1.zip","file/SmoothDrawers_1.20.1_v2.zip","file/Updated_Engineering_v1.7.zip","PoTAssetsOverride"]
+incompatibleResourcePacks:["file/Simple Grass Flowers v1.9.5.zip","file/CreateSophisticatedBackpacks.zip","file/Midnighttiggers-FCT-Default_1.20_V6.zip","file/Comforts Modernized - V1.1.zip","file/SmoothDrawers_1.20.1_v2.zip","file/Updated_Engineering_v1.7.zip"]
 lastServer:
 lang:zh_cn
 soundDevice:""

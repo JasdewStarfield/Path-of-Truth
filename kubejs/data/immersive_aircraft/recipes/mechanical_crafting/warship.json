@@ -1,0 +1,56 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "_SSS_",
+    "_SSS_",
+    " ~ ~ ",
+    "CHAEP",
+    " HHH "
+  ],
+  "key": {
+    "P": [
+      {
+        "item": "immersive_aircraft:propeller"
+      }
+    ],
+    "E": [
+      {
+        "item": "immersive_aircraft:engine"
+      }
+    ],
+    "A": [
+      {
+        "item": "immersive_aircraft:cargo_airship"
+      }
+    ],
+    "C": [
+      {
+        "item": "immersive_aircraft:heavy_crossbow"
+      }
+    ],
+    "S": [
+      {
+        "item": "immersive_aircraft:sail"
+      }
+    ],
+    "~": [
+      {
+        "item": "minecraft:string"
+      }
+    ],
+    "_": [
+      {
+        "item": "create:sturdy_sheet"
+      }
+    ],
+    "H": [
+      {
+        "item": "immersive_aircraft:hull"
+      }
+    ]
+  },
+  "result": {
+    "item": "immersive_aircraft:warship"
+  },
+  "acceptMirrored": true
+}

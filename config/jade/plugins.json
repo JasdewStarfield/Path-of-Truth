@@ -95,19 +95,19 @@
   "jadeaddons": {
     "equipment_requirement": ""
   },
-  "pipez": {
-    "pipe": true
-  },
   "corpse": {
     "corpse": true
   },
   "goety": {
     "block_owner": true,
     "soul_energy": true,
+    "raider_leader": true,
     "servant_mode": true,
     "zombie_villager": true,
     "villager_profession": true,
-    "summon_lifespan": true
+    "train_to": true,
+    "summon_lifespan": true,
+    "trainable": true
   },
   "storagedrawers": {
     "display.stacklimit": true,

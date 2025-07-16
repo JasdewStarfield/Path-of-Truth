@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"1": "kubejs:block/electronic_engineering",
-		"particle": "create:block/brass_casing",
-		"os": "create:block/brass_casing"
+		"particle": "createnuclear:block/reactor/casing/reactor_casing",
+		"os": "createnuclear:block/reactor/casing/reactor_casing"
 	},
 	"elements": [
 		{

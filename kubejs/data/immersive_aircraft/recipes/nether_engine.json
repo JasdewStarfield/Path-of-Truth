@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ILI",
+    "SES"
+  ],
+  "key": {
+    "S": [
+      {
+        "item": "create:sturdy_sheet"
+      }
+    ],
+    "L": [
+      {
+        "item": "minecraft:lava_bucket"
+      }
+    ],
+    "I": [
+      {
+        "item": "create:iron_sheet"
+      }
+    ],
+    "E": [
+      {
+        "item": "immersive_aircraft:boiler"
+      }
+    ]
+  },
+  "result": {
+    "item": "immersive_aircraft:nether_engine"
+  }
+}

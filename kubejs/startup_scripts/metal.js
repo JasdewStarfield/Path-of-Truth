@@ -17,6 +17,10 @@ StartupEvents.registry('item', (event) => {
   event.create("za_nugget").displayName('ZA Nugget').texture('kubejs:item/za/za_nugget')
   event.create("za_sheet").displayName('ZA Sheet').texture('kubejs:item/za/za_sheet')
 
+  //粗金属粒
+  event.create("raw_iron_nugget").displayName('Raw Iron Nugget')
+  event.create("raw_bauxite_nugget").displayName('Raw Bauxite Nugget')
+
   /*
   event.create("bronze_helmet",'helmet').displayName('Bronze Helmet').tier('bronze')
   event.create("bronze_chestplate",'chestplate').displayName('Bronze Chestplate').tier('bronze')
@@ -93,6 +97,8 @@ StartupEvents.registry('item', (event) => {
   event.create("slag_chunk").displayName('Slag Chunk')
   
 	event.create("battery_component").displayName('Battery Component')
+  event.create("fluid_mechanism").displayName('Hydraulic Mechanism')
+  event.create("incomplete_fluid_mechanism", 'create:sequenced_assembly').displayName('Incomplete Hydraulic Mechanism')
   event.create("steel_mechanism").displayName('Steel Mechanism')
   event.create("unfinished_steel_mechanism", 'create:sequenced_assembly').displayName('Unfinished Steel Mechanism').texture('kubejs:item/unfinished_steel_mechanism')
   event.create("forgotten_mechanism").displayName('Forgotten Mechanism').texture('kubejs:item/forgotten_mechanism')

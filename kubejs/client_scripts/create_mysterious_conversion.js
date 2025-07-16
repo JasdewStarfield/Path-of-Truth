@@ -10,4 +10,5 @@ JEIEvents.information(event => {
     AddConversion('minecraft:amethyst_shard', 'minecraft:echo_shard')
     AddConversion('immersiveengineering:concrete_bucket', 'immersiveengineering:concrete')
     AddConversion('trailandtales_delight:curd_block', 'trailandtales_delight:cheese_wheel')
+    AddConversion('minecraft:glass_bottle', 'irons_spellbooks:lightning_bottle')
 })

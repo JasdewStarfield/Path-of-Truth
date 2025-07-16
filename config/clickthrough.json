@@ -1,5 +1,19 @@
 {
+  "version": 0,
   "is_active": true,
   "onlycontainers": true,
-  "sneaktodye": false
+  "sneaktodye": false,
+  "containers": [
+    "minecraft:ender_chest",
+    "minecraft:vault",
+    "minecraft:composter",
+    "minecraft:respawn_anchor",
+    "minecraft:jukebox",
+    "minecraft:decorated_pot",
+    "minecraft:chiseled_bookshelf",
+    "minecraft:beacon",
+    "minecraft:stonecutter",
+    "minecraft:grindstone",
+    "minecraft:crafting_table"
+  ]
 }

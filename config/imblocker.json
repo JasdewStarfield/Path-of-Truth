@@ -1,0 +1,21 @@
+{
+  "basicSettings": {
+    "screenWhitelist": [
+      "net.minecraft.client.gui.screens.inventory.BookEditScreen",
+      "net.mehvahdjukaar.supplementaries.client.screens.TextHolderEditScreen",
+      "net.minecraft.client.gui.screens.inventory.AbstractSignEditScreen",
+      "dev.ftb.mods.ftblibrary.ui.ScreenWrapper"
+    ],
+    "enableScreenRecovering": false,
+    "recoveredScreens": [],
+    "commandInputMode": "IM_ENG_STATE"
+  },
+  "advanceSettings": {
+    "enableCharSimulation": false
+  },
+  "windowsCompatibilitySettings": {
+    "enableConversionStatusApi": true,
+    "enableCursorPositionTracking": true,
+    "enableCompositionFontTweaks": true
+  }
+}

@@ -10,7 +10,7 @@
         {
           "type": "minecraft:item",
           "weight": 3,
-          "name": "immersiveengineering:nugget_silver",
+          "name": "oreganized:silver_nugget",
           "functions": [
             {
               "function": "minecraft:set_count",

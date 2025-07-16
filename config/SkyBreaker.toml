@@ -13,4 +13,8 @@
 	Coefficient2 = 1.0
 	#Besides SpearEntity, the additional Projectiles that can be used to stun the Starlit Crusher
 	"Projectile Whitelist" = ["minecraft:trident"]
+	#Range: > 1
+	"The Max Damage A Boss Can Take" = 500
+	#Range: 1.0 ~ 1.7976931348623157E308
+	"Max damage The Tree Takes from Non-Projectile-Whitelisted projectiles" = 500.0
 
