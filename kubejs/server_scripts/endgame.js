@@ -479,7 +479,7 @@ ServerEvents.recipes(event => {
       C: 'kubejs:fission_cell',
       A: 'irons_spellbooks:lightning_upgrade_orb',
       B: 'irons_spellbooks:arcane_anvil',
-      D: 'irons_spellbooks:energized_core'
+      D: 'kubejs:raw_world_base'
     }
   )
 
