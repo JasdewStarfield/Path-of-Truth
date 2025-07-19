@@ -35,5 +35,10 @@
 
     "item.eclipticseasons.calendar.desc": "Hang it on the wall to view the current ecliptic season!",
 
-    "msg.xearosmap.share_waypoint":"Shared a location:"
+    "msg.xearosmap.share_waypoint":"Shared a location:",
+
+    "path_of_truth.advancement.root.title":"Path of Truth 3",
+    "path_of_truth.advancement.root.desc":"The Beginning",
+    "path_of_truth.advancement.blind_challenger.title":"The Blind Challenger",
+    "path_of_truth.advancement.blind_challenger.desc":"Read the f**king quest book!"
 }

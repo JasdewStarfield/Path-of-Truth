@@ -1,0 +1,31 @@
+{
+  "parent":"path_of_truth:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:raw_iron"
+    },
+    "title": {
+      "translate": "block.mechanicalbotania.mana_motor.tooltip",
+      "fallback": "The Blind Challenger"
+    },
+    "description": {
+      "translate": "path_of_truth.advancement.blind_challenger.desc",
+      "fallback": "Read the f**king quest book!"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "r": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "r"
+    ]
+  ],
+  "sends_telemetry_event": false
+}
