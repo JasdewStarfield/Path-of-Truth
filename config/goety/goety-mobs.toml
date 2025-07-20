@@ -212,6 +212,19 @@
 		#Range: > 0
 		evokerServantRavagedCooldown = 1200
 
+	[Servants."Void Servants"]
+		#Whether Void Servants can heal if summoned while wearing Nether Robe, Default: true
+		voidMinionHeal = true
+		#How much Soul Energy it cost per second for a Void Servant to heal, Default: 1
+		#Range: > 0
+		voidMinionHealCost = 1
+		#How frequent Void Servants heal, count seconds, Default: 1
+		#Range: > 0
+		voidMinionHealTime = 1
+		#How much Health Void Servants heal, numerically, Default: 1.0
+		#Range: 0.0 ~ 1.7976931348623157E308
+		voidMinionHealAmount = 1.0
+
 [Illagers]
 	#Whether Enviokers, Inquillagers and Conquillagers can steal Totems of Souls or Totems of Undying, Default: true
 	illagerSteal = true
@@ -513,6 +526,14 @@
 			iceologerServantTexture = true
 			#If Wind Caller Servants have custom textures, Default: true
 			windCallerServantTexture = true
+
+		[Textures."Summoned Mobs"."Void Servants"]
+			#If Watchling servants have custom textures, Default: true
+			watchlingServantTexture = true
+			#If Blastling servants have custom textures, Default: true
+			blastlingServantTexture = true
+			#If Snareling Servants have custom textures, Default: true
+			snarelingServantTexture = true
 
 [Spawning]
 

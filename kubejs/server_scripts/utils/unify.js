@@ -186,5 +186,6 @@ ServerEvents.recipes(event => {
   event.remove({ output: 'oreganized:bush_hammer' })
   event.remove({ id: 'farmersdelight:cutting/saddle' })
   event.remove({ id: 'vintageimprovements:centrifugation/mud' })
+  event.remove({ id: 'vintageimprovements:pressurizing/compat/sulfur_dioxide_from_dust' })
 
 })

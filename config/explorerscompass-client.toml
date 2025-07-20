@@ -10,10 +10,4 @@
 	#The side for information rendered on the HUD. Ex: LEFT, RIGHT
 	#Allowed Values: LEFT, RIGHT
 	overlaySide = "LEFT"
-	#If this option is enabled, then show the structures that have been searched in the past.
-	showHaveFound = true
-	#If true, a new Xaero's Map way point will be add when you have search successfully
-	newWayPoint = false
-	#Load config.json
-	customResource = false
 

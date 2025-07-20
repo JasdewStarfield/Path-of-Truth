@@ -99,6 +99,9 @@
 	#Swift Swim Soul Cost, Default: 25
 	#Range: > 1
 	swiftSwimCost = 25
+	#Void Touched Soul Cost, Default: 25
+	#Range: > 1
+	voidTouchedCost = 25
 
 [Curable]
 	#Whether Snow Skin is curable via Milk or Wartful Egg, Default: false
