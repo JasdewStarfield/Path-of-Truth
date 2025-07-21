@@ -5,12 +5,10 @@
       "item": "minecraft:raw_iron"
     },
     "title": {
-      "translate": "block.mechanicalbotania.mana_motor.tooltip",
-      "fallback": "The Blind Challenger"
+      "text": "目盲的挑战者"
     },
     "description": {
-      "translate": "path_of_truth.advancement.blind_challenger.desc",
-      "fallback": "Read the f**king quest book!"
+      "text": "你他喵能不能看看任务书"
     },
     "frame": "challenge",
     "show_toast": true,

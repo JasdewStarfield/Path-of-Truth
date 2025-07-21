@@ -259,10 +259,5 @@
   "block.undergarden.depthrock_bed.tooltip.behaviour1":"进行一次_完全正常的_重生点设置并尝试睡眠。",
 
   "msg.xearosmap.share_waypoint":"分享了一个位置：",
-  "effect.kubejs.perfection":"完美",
-  
-  "path_of_truth.advancement.root.title":"真理之路 3",
-  "path_of_truth.advancement.root.desc":"一切的开始",
-  "path_of_truth.advancement.blind_challenger.title":"目盲的挑战者",
-  "path_of_truth.advancement.blind_challenger.desc":"请参阅你的任务书"
+  "effect.kubejs.perfection":"完美"
 }

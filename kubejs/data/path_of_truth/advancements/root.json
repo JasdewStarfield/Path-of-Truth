@@ -4,12 +4,10 @@
       "item": "kubejs:buran"
     },
     "title": {
-      "translate": "path_of_truth.advancement.root.title",
-      "fallback": "Path of Truth 3"
+      "text": "真理之路 3"
     },
     "description": {
-      "translate": "path_of_truth.advancement.root.desc",
-      "fallback": "The Beginning"
+      "text": "一切的开始"
     },
     "background": "minecraft:textures/block/bricks.png",
     "frame": "task",
