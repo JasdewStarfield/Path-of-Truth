@@ -1,0 +1,29 @@
+{
+  "parent":"path_of_truth:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:raw_iron"
+    },
+    "title": {
+      "text": "目盲的挑战者"
+    },
+    "description": {
+      "text": "你他喵能不能看看任务书"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "r": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "r"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

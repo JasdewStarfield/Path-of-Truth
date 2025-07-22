@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "kubejs:buran"
+    },
+    "title": {
+      "text": "真理之路 3"
+    },
+    "description": {
+      "text": "一切的开始"
+    },
+    "background": "minecraft:textures/block/bricks.png",
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "criteria": {
+    "r": {
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "r"
+    ]
+  ],
+  "sends_telemetry_event": false
+}
