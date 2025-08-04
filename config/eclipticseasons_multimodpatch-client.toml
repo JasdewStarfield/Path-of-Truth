@@ -1,0 +1,6 @@
+
+#Ambient Sounds
+#The mod is no longer maintained for version 1.20, so we need a mixin to make the sounds work properly during snowfall.
+[ambientsounds]
+	Enable = true
+
