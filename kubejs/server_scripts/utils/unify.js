@@ -176,6 +176,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'createnuclear:crushing/raw_uranium_block' })
   event.remove({ id: 'create:crushing/tuff' })
   event.remove({ id: 'create:crushing/tuff_recycling' })
+  event.remove({ id: 'create:weathered_iron_block_from_ingots_iron_stonecutting' })
   event.remove({ id: 'createaddition:mixing/electrum' })
   event.remove({ id: 'createaddition:compat/immersiveengineering/crushing/coal_coke'})
   event.remove({ id: 'createaddition:compat/immersiveengineering/crushing/coke_block'})

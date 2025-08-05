@@ -658,4 +658,26 @@ ServerEvents.recipes(event => {
         IEMetalPressing(material)
     });
 
+    //盖亚魂量产相关
+    //恶魂之泪
+    event.recipes.create.haunting([Item.of('minecraft:ghast_tear', 2), Item.of('minecraft:ghast_tear').withChance(0.5)], 'kubejs:frostfire_double_plate')
+    //盖亚魂合成
+    event.recipes.vintageimprovements.pressurizing([
+        Item.of('botania:life_essence', 2),
+        Item.of('botania:life_essence', 1).withChance(0.5),
+        Item.of('createnuclear:enriched_yellowcake', 1)
+    ], [
+        Item.of('botania:life_essence', 1),
+        Item.of('minecraft:echo_shard', 1),
+        Item.of('minecraft:ghast_tear', 1),
+        Item.of('createnuclear:enriched_yellowcake', 1)
+    ]).superheated()
+    //盖亚魂锭
+    event.recipes.create.mixing('botania:gaia_ingot', [
+        Item.of('botania:life_essence', 1),
+        Item.of('botania:life_essence', 1),
+        Item.of('botania:life_essence', 1),
+        Item.of('botania:life_essence', 1),
+        Item.of('botania:terrasteel_ingot', 1)
+    ])
 })
