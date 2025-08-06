@@ -866,6 +866,39 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			windCallerServantFollowRange = 35.0
 
+		[Attributes."Summoned Mobs"."Watchling Servant"]
+			#How much Max Health Watchling Servants have, Default: 24.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			watchlingHealth = 24.0
+			#How much natural Armor Watchling Servants  have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			watchlingArmor = 0.0
+			#How much damage Watchling Servants deals, Default: 5.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			watchlingDamage = 5.0
+
+		[Attributes."Summoned Mobs"."Blastling Servant"]
+			#How much Max Health Blastling Servants have, Default: 32.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			blastlingHealth = 32.0
+			#How much natural Armor Blastling Servants  have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			blastlingArmor = 0.0
+			#How much damage Blastling Servants deals, Default: 3.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			blastlingDamage = 3.0
+
+		[Attributes."Summoned Mobs"."Snareling Servant"]
+			#How much Max Health Snareling Servants have, Default: 20.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			snarelingHealth = 20.0
+			#How much natural Armor Snareling Servants  have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			snarelingArmor = 0.0
+			#How much damage Snareling Servants deals, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			snarelingDamage = 2.0
+
 	[Attributes.Illagers]
 		#How much Max Health Conquillager have, Default: 24.0
 		#Range: 1.0 ~ 1.7976931348623157E308

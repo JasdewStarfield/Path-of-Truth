@@ -136,7 +136,7 @@
 	lichArcaRemove = true
 	#Enable to get infinite Night Vision when being a Lich, Default: true
 	lichNightVision = true
-	#Whether players lose their lichdom if they don't have enough Soul Energy to revive, Default: true
+	#Whether players lose their lichdom if they don't have enough Soul Energy to revive, Default: false
 	lichNoSERemove = true
 
 [General]

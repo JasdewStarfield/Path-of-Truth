@@ -1530,6 +1530,57 @@
 		#Range: > 1
 		guardianLimit = 8
 
+	[Spells."Watching Spell"]
+		#Watching Spell Cost, Default: 20
+		#Range: > 0
+		watchlingCost = 20
+		#Time to cast Watching Spell, Default: 40
+		#Range: 0 ~ 72000
+		watchlingTime = 40
+		#Watching Spell Cooldown, Default: 200
+		#Range: > 0
+		watchlingCoolDown = 200
+		#Watching Spell Summon Down, Default: 120
+		#Range: 0 ~ 72000
+		watchlingSummonDown = 120
+		#Number of Watchling Servants that can a player can have, Default: 32
+		#Range: > 1
+		watchlingLimit = 32
+
+	[Spells."Blasting Spell"]
+		#Blasting Spell Cost, Default: 32
+		#Range: > 0
+		blastlingCost = 32
+		#Time to cast Blasting Spell, Default: 60
+		#Range: 0 ~ 72000
+		blastlingTime = 60
+		#Blasting Spell Cooldown, Default: 200
+		#Range: > 0
+		blastlingCoolDown = 200
+		#Blasting Spell Summon Down, Default: 120
+		#Range: 0 ~ 72000
+		blastlingSummonDown = 120
+		#Number of Blastling Servants that an individual player can have in total, Default: 32
+		#Range: > 1
+		blastlingLimit = 32
+
+	[Spells."Snaring Spell"]
+		#Snaring Spell Cost, Default: 24
+		#Range: > 0
+		snarelingCost = 24
+		#Time to cast Snaring Spell, Default: 40
+		#Range: 0 ~ 72000
+		snarelingTime = 40
+		#Snaring Spell Cooldown, Default: 200
+		#Range: > 0
+		snarelingCoolDown = 200
+		#Snaring Spell Summon Down, Default: 120
+		#Range: 0 ~ 72000
+		snarelingSummonDown = 120
+		#Number of Snareling Servants that an individual player can have in total, Default: 32
+		#Range: > 1
+		snarelingLimit = 32
+
 [Enchantments]
 	#Soul Eater Maximum Enchantment Level, Default: 5
 	#Range: 1 ~ 10

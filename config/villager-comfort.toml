@@ -79,10 +79,10 @@
 	#Comfort impact per each consecutive day a villager spends without sleeping
 	comfortPerDayWithoutSleep = -100
 
-["Max radiuses"]
-	#Note that large values may lag the game!
-	#Max number of blocks to go in each direction, starting from the villager's last-slept-in bed, to do bedroom calculations
-	maxBedroomRadius = 10
-	#Max number of blocks to go in each direction, starting from the villager's last-worked-in workstation, to do workplace calculations
-	maxWorkplaceRadius = 10
+["Max volumes"]
+	#bedroom/workplace calculations are done by starting at the villager's bed / workspace, then doing a Flood fill outwards from that position!
+	#Max room volume to take into account when during bedroom calculations (includes air, objects in room and the walls themselves)
+	maxBedroomVolume = 3000
+	#Max room volume to take into account when during workplace calculations (includes air, objects in room and the walls themselves)
+	maxWorkplaceVolume = 3000
 

@@ -6,6 +6,8 @@
 [GUI]
 	#Displays the season and humidity levels suitable for growing crops.
 	AgriculturalInformation = true
+	#Displays the use or source of a item.
+	ItemInformation = true
 
 [Renderer]
 	#When enabled, chunks will be reloaded regularly to fix rendering glitches, but this may impact performance.

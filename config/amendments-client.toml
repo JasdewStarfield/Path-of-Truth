@@ -74,9 +74,6 @@
 	disc_spin = true
 
 [misc]
-	#A scalar multiplier that will be applied to sign text making it brighter, supposedly more legible
-	#Range: 0.0 ~ 5.0
-	sign_text_color_multiplier = 1.2
 	#Gives a special animation to torches when held in hand
 	torch_item_holding = true
 	#Makes Torch and Lantern holding animation be fixed, not changing with player facing
@@ -91,4 +88,29 @@
 	handle_holder_item_size = 0.625
 	#Prevents campfire smoke from rendering if there is a solid block above it
 	campfire_smoke_through_blocks = false
+
+[sign]
+	#Gives signs a pixel consistent model and texture. Also affects other mods
+	pixel_consistent = true
+	#A scalar multiplier that will be applied to sign text making it brighter, supposedly more legible
+	#Range: 0.0 ~ 5.0
+	text_color_multiplier = 1.2
+
+[projectiles]
+	#Makes snowballs render in 3D
+	snowball_3d = false
+	#Makes ghast & blazes fireballs render in 3D
+	fireball_3d = false
+	#Makes ghast & blazes fireballs leave a trail of particles when moving
+	ghast_fireball_trail = false
+	#Makes dragon fireballs leave a trail of particles when moving
+	dragon_fireball_trail = false
+	#Makes 3D charges tumble in the air when moving
+	charges_tumble = false
+	#Makes 3D snowballs and slimeballs (supp compat) tumble in the air when moving
+	projectiles_tumble = false
+
+	[projectiles.dragon_fireball]
+		#Makes dragon's breath particles emissive to better match new visuals
+		dragon_breath_emissive = true
 

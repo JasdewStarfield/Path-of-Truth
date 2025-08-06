@@ -334,6 +334,8 @@ panorama_screens = "client"
 badoptimizations = "client"
 cubes_without_borders = "client"
 clickthrough = "client"
+colorwheel = "client"
+colorwheel_patcher = "client"
 
 [Debug]
 debugForceSide = "default"

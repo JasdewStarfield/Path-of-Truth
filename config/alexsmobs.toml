@@ -31,7 +31,7 @@
 	#Whether mimicream can be used to duplicate items.
 	mimicreamRepair = true
 	#Blacklist for items that mimicream cannot make a copy of. Ex: "minecraft:stone_sword", "alexsmobs:blood_sprayer"
-	mimicreamBlacklist = ["alexsmobs:blood_sprayer", "alexsmobs:hemolymph_blaster"]
+	mimicreamBlacklist = ["alexsmobs:blood_sprayer", "alexsmobs:hemolymph_blaster", "kubejs:midnight"]
 	#Whether wild raccoons steal food from chests.
 	raccoonStealFromChests = true
 	#Whether wild crows steal crops from farmland.

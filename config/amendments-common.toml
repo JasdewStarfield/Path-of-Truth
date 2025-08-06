@@ -24,6 +24,8 @@
 	potion_mixing_limit = 8
 	#Makes cauldrons connect to fences
 	connect_to_fences = true
+	#Makes it so a dripstone drop only increments a cauldron by 1 layer(buttle) instead of a full bottle, making it just like a water cauldron
+	consistent_lava_layers = false
 
 	#Map of potion ids to their inverse ids. Used for potion mixing
 	[cauldron.inverse_potions]
@@ -110,4 +112,21 @@
 	#Duration of the on fire effect applied by torches. In seconds
 	#Range: 1 ~ 60
 	torch_fire_duration = 2
+
+[fireball]
+	#Adds dragons charge item
+	dragon_charge = true
+	#Makes fire & dragon charges have gravity
+	gravity = true
+	#Makes fire charges deflectable by punching
+	deflectable = false
+	#Allows throwing fire & dragon charges
+	throwable = true
+	#Improves ghast & fire charges fireballs by giving them a unique explosion particles and set on fire on hit
+	improved_explosions = true
+
+[snowball]
+	#Allows snowballs to freeze entities on hit. Config is for how many ticks it will freeze
+	#Range: 0 ~ 1000
+	freeze_ticks = 35
 

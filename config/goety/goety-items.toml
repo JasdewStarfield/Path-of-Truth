@@ -198,6 +198,19 @@
 		netherSetMobNeutralHealth = 50.0
 		#Whether wearing a Warlock Robe will cause Witches and Warlocks to be neutral, Default: true
 		warlockRobeWitchNeutral = true
+		#Whether wearing both Void Robe and Crown will cause certain mobs to be neutral, Default: true
+		voidSetMobNeutral = true
+		#Determines the chance of Void Robes wearers can teleport away from incoming attacks, set to 0 to disable, Default: 5
+		#Range: 0 ~ 100
+		voidRobeTeleportChance = 5
+		#If 'voidRobeTeleport' is enabled, teleporting cancels incoming damage, Default: true
+		voidRobeTeleportDamageCancel = true
+		#Determines what level of Sapped is applied while wearing Void Robes in rain or water, set to 0 to disable, Default: 2
+		#Range: 0 ~ 10
+		voidRobeWaterSapped = 2
+		#If 'voidSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		voidSetMobNeutralHealth = 50.0
 
 [General]
 	#Fire Spawn Cage are enabled, Default: true
@@ -248,6 +261,9 @@
 		#How much base damage Geo Staffs deals, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		geoStaffDamage = 4.0
+		#How much base damage Void Staffs deals, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		voidStaffDamage = 4.0
 
 	["Tools & Weapons".Hammers]
 		#How many uses before Hammers breaks, Default: 2500

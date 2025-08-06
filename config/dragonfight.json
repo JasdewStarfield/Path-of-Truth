@@ -19,6 +19,10 @@
     "desc:": "Enables anti-flight ability: default:true",
     "antiflightAbility": true
   },
+  "explosionImmunity": {
+    "desc:": "Enables explosion damage immunity for the dragon, note that beds are always immune regardless of this setting: default:true",
+    "explosionImmunity": true
+  },
   "dragonHealthModifier": {
     "desc:": "Sets the dragon health modifier: default:1.0",
     "dragonHealthModifier": 1.0

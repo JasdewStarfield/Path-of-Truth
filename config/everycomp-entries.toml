@@ -115,6 +115,8 @@
 			rotten = true
 			windswept = true
 			pine = true
+			chorus = true
+			corrupt_chorus = true
 
 		[types.wood_type.biomeswevegone]
 			aspen = true
@@ -168,6 +170,7 @@
 			rotten = true
 			windswept = true
 			pine = true
+			chorus = true
 
 		[types.leaves_type.biomeswevegone]
 			aspen = true
