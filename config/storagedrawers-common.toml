@@ -32,6 +32,12 @@
 	enableItemConversion = true
 	#If enabled, limits framing materials to solid, opaque blocks [by best effort]
 	restrictFramingMaterials = true
+	#If enabled, allows drawers with contents to be stored in another drawer block
+	enableStoreFilledDrawers = false
+	#
+	#Each entry should be a namespace or fully namespaced item, e.g. minecraft:cobblestone
+	#Any items on the blacklist are prevented from being stored in drawers
+	storeBlacklist = ["storagedrawers:creative_vending_upgrade", "sophisticatedbackpacks"]
 
 [StorageUpgrades]
 	level1Mult = 4

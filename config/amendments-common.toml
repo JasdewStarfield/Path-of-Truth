@@ -120,10 +120,12 @@
 	gravity = true
 	#Makes fire charges deflectable by punching
 	deflectable = false
-	#Allows throwing fire & dragon charges
-	throwable = true
 	#Improves ghast & fire charges fireballs by giving them a unique explosion particles and set on fire on hit
 	improved_explosions = true
+	#Allows throwing fire & dragon charges
+	fire_charges_throwable = true
+	#Makes dispensers shoot fire charges (the ones with gravity added by the mod) instead of blaze charges. Technically a breaking changes as it could break existing contraptions while allowing for new ones
+	fire_charges_dispenser_behavior = true
 
 [snowball]
 	#Allows snowballs to freeze entities on hit. Config is for how many ticks it will freeze
