@@ -557,6 +557,16 @@ ServerEvents.recipes(event => {
     //玉石增殖
     event.custom({
         "type": "immersiveengineering:cloche",
+        "input": { "item": "minecraft:amethyst_cluster" },
+        "render": { "type": "generic", "block": "minecraft:amethyst_cluster" },
+        "results": [
+            { "count": 1, "item": "minecraft:amethyst_cluster" }
+        ],
+        "soil": { "item": "minecraft:budding_amethyst" },
+        "time": 800
+    })
+    event.custom({
+        "type": "immersiveengineering:cloche",
         "input": { "item": "blue_skies:sunstone_crystal" },
         "render": { "type": "generic", "block": "blue_skies:sunstone_crystal" },
         "results": [
