@@ -48,7 +48,7 @@
         // title
         let header = Text.translate('villagercomfort.ext.header', villager.name)
         checker.tell(header)
-        let current_day = villager.level.dayTime / 24000
+        let current_day = Math.floor(villager.level.getDayTime() / 24000)
         let last_sleep_day = cap.getLastSleepDay()
         let days_without_sleep = current_day - last_sleep_day - 1
         let has_bed = cap.getBedsCount() > 0 && days_without_sleep <= 0
