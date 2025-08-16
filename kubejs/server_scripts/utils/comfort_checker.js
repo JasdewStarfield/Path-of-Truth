@@ -7,6 +7,7 @@
     let CommonConfig = Java.loadClass('dev.ghen.villagercomfort.core.config.CommonConfig')
     let MathHelper = Java.loadClass('dev.ghen.villagercomfort.core.math.MathHelper')
     let MemoryModuleType = Java.loadClass('net.minecraft.world.entity.ai.memory.MemoryModuleType')
+    let WorkplaceComfortValues = Java.loadClass('dev.ghen.villagercomfort.comfort.WorkplaceComfortValues')
 
     // do comfort check
     // https://gitlab.com/leahx_y2k/villager-comfort-updated/-/blob/main/src/main/java/dev/ghen/villagercomfort/comfort/ComfortHelper.java
@@ -100,6 +101,32 @@
                 reason = 'WORKSTATION_IN_BEDROOM'
                 if (cap.getIsWorkstationInBedroom()) {
                     comfort += CommonConfig.WORKSTATION_IN_BEDROOM_COMFORT.get().intValue()
+                }
+            }
+
+            // https://gitlab.com/leahx_y2k/villager-comfort-updated/-/commit/2281f5b0b65135e09a46fffd6044fa9294b86db3
+            if (Platform.mods.villagercomfort.version > '1.20.1-1.1.0' && villager.getBrain().hasMemoryValue(MemoryModuleType.JOB_SITE)) {
+                if (cap.getWorkstationsCount() == 0) {
+                    villager
+                        .getBrain()
+                        .getMemory(MemoryModuleType.JOB_SITE)
+                        .ifPresent(workstation => {
+                            cap.last_remembered_workstation_pos = workstation.pos().asLong()
+                        })
+
+                    WorkplaceComfortValues.setValuesToCap(villager, cap)
+                } else {
+                    villager
+                        .getBrain()
+                        .getMemory(MemoryModuleType.JOB_SITE)
+                        .ifPresent(workstation => {
+                            let workstation_pos = workstation.pos().asLong()
+
+                            if (workstation_pos != cap.last_remembered_workstation_pos) {
+                                cap.last_remembered_workstation_pos = workstation_pos
+                                WorkplaceComfortValues.setValuesToCap(villager, cap)
+                            }
+                        })
                 }
             }
 
