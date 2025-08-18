@@ -158,7 +158,7 @@
 	cameraShake = true
 	#Horizontal Position of where the Soul Energy Bar is located, Default: 100
 	#Range: > -2147483647
-	soulGuiHorizontal = 100
+	soulGuiHorizontal = 120
 	#Show the Soul Energy Bar if Player has Totem of Souls/Arca, Default: true
 	soulGuiShow = true
 	#Gives Players the Black Book when first entering World and Patchouli is loaded, Default: false

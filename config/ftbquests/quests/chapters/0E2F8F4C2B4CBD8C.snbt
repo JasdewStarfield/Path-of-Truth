@@ -2380,26 +2380,44 @@
 				}
 				{
 					count: 64L
-					id: "66723D452E7BCC7F"
-					item: "cratedelight:wheat_flour_bag"
-					type: "item"
-				}
-				{
-					count: 64L
-					id: "6EE05E2DF77589BD"
-					item: "cratedelight:powdered_obsidian_bag"
-					type: "item"
-				}
-				{
-					count: 64L
-					id: "0765B1C23B410612"
-					item: "cratedelight:cinder_flour_bag"
-					type: "item"
-				}
-				{
-					count: 64L
 					id: "69DE270741C81D8B"
 					item: "farmersdelight:rice_bag"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "431FD539DCDABC07"
+					item: "cratedelight:bread_bag"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "73129F0B87923241"
+					item: { Count: 64, id: "farmersrespite:yellow_tea_leaves_sack" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "48D83A114D3AEE79"
+					item: { Count: 64, id: "farmersrespite:black_tea_leaves_sack" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "7C3E106ED35D724A"
+					item: { Count: 64, id: "farmersrespite:green_tea_leaves_sack" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "6E5C4669B6F75A28"
+					item: { Count: 64, id: "farmersrespite:coffee_beans_sack" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "2266D36CE47F7850"
+					item: { Count: 64, id: "sob:peanut_bag" }
 					type: "item"
 				}
 			]
@@ -2506,12 +2524,6 @@
 				}
 				{
 					count: 64L
-					id: "7FC5B8DF0025C1C6"
-					item: "cratedelight:banana_crate"
-					type: "item"
-				}
-				{
-					count: 64L
 					id: "65FAE073AEEF3F12"
 					item: "cratedelight:red_mushroom_crate"
 					type: "item"
@@ -2532,6 +2544,36 @@
 					count: 64L
 					id: "213B1CD02C34F72F"
 					item: "cratedelight:golden_apple_crate"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "643A08304E3413B5"
+					item: { Count: 64, id: "cratedelight:pumpkin_slice_crate" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "116BACB1E9717BCA"
+					item: { Count: 64, id: "trailandtales_delight:lantern_fruit_crate" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "7C3B041E99D7EAEB"
+					item: { Count: 64, id: "trailandtales_delight:pitcher_taro_crate" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "48C535EB43514695"
+					item: { Count: 64, id: "sob:nopal_crate" }
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "64F1510C50314CE6"
+					item: { Count: 64, id: "sob:prickly_pear_crate" }
 					type: "item"
 				}
 			]
@@ -2582,26 +2624,6 @@
 					item: "cratedelight:cod_crate"
 					type: "item"
 				}
-				{
-					id: "5B719FA3DCF32C76"
-					item: "cratedelight:emu_egg_crate"
-					type: "item"
-				}
-				{
-					id: "25C5C8594C4EE5A8"
-					item: "cratedelight:terrapin_egg_crate"
-					type: "item"
-				}
-				{
-					id: "1D4E528BA990853C"
-					item: "cratedelight:crocodile_egg_crate"
-					type: "item"
-				}
-				{
-					id: "4B1903E67B37A6D7"
-					item: "cratedelight:caiman_egg_crate"
-					type: "item"
-				}
 			]
 			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest25.title}"
 			x: 5.5d
@@ -2648,6 +2670,12 @@
 					count: 64L
 					id: "461CE9412E9A0F81"
 					item: "create_compressed:belt_block"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "3E6AA5845CDCCA76"
+					item: { Count: 64, id: "oreganized:lead_bolt_crate" }
 					type: "item"
 				}
 			]

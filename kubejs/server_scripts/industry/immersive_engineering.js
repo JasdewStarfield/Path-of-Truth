@@ -394,9 +394,9 @@ ServerEvents.recipes(event => {
     event.remove({id:"immersiveengineering:crafting/component_iron"})
 
     //烈焰蛋糕
-    event.remove({ id: 'sob:sob/crafting/cinder_dough' })
-    event.remove({ id: 'sob:sob/splashing/cinder_flour' })
-    event.remove({ id: 'sob:sob/mixing/cinder_dough_by_mixing' })
+    event.remove({ id: 'sob:crafting/cinder_dough' })
+    event.remove({ id: 'sob:splashing/cinder_flour' })
+    event.remove({ id: 'sob:mixing/cinder_dough' })
     event.remove({ id: 'create:compacting/blaze_cake' })
     event.remove({ id: 'create:filling/blaze_cake' })
     event.recipes.create.mixing('sob:cinder_dough', [Fluid.of('minecraft:lava',500),'create:cinder_flour','irons_spellbooks:cinder_essence','#forge:dusts/horizonite']).heated()

@@ -36,5 +36,7 @@
 
   "block.cratedelight.stacked_melons": "堆叠的西瓜",
   "block.cratedelight.stacked_pumpkins": "堆叠的南瓜",
-  "block.cratedelight.cookie_bag": "曲奇袋"
+  "block.cratedelight.cookie_bag": "曲奇袋",
+  "block.cratedelight.bread_bag": "袋装面包",
+  "block.cratedelight.pumpkin_slice_crate": "箱装南瓜片"
 }

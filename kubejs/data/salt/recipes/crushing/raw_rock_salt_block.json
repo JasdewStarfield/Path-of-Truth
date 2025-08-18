@@ -1,0 +1,28 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+      {"item": "salt:raw_rock_salt_block"}
+    ],
+    "results": [
+      {
+        "item": "salt:salt",
+        "count": 18
+      },
+      {
+        "item": "salt:salt",
+        "count": 9,
+        "chance": 0.5
+      }
+    ],
+    "processingTime": 400,
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "create"
+        },
+        {
+            "type": "forge:mod_loaded",
+            "modid": "salt"
+        }
+      ]
+  }

@@ -131,6 +131,8 @@
         "allowedBindingBlocks": [
             "minecraft:lodestone"
         ],
+        // Whether the recovery compass can be bound to the obelisk itself
+        "bindToObelisk": false,
         /*
         The delay before being able to teleport again. (In ticks)
         Keep this above 100, otherwise issues will arise.

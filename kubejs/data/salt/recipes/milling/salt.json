@@ -1,0 +1,27 @@
+{
+    "type": "create:milling",
+    "ingredients": [
+      {"item": "salt:raw_rock_salt"}
+    ],
+    "results": [
+      {
+        "item": "salt:salt",
+        "count": 2
+      },
+      {
+        "item": "salt:salt",
+        "chance": 0.5
+      }
+    ],
+    "processingTime": 100,
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "create"
+        },
+        {
+            "type": "forge:mod_loaded",
+            "modid": "salt"
+        }
+      ]
+  }

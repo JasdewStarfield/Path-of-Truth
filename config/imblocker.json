@@ -8,7 +8,8 @@
     ],
     "enableScreenRecovering": false,
     "recoveredScreens": [],
-    "commandInputMode": "IM_ENG_STATE"
+    "commandInputMode": "IM_ENG_STATE",
+    "primaryEnglishState": "CJK"
   },
   "advanceSettings": {
     "enableCharSimulation": false
