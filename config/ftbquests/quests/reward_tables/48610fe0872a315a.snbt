@@ -33,6 +33,7 @@
 				}
 			}
 		}
+		{ count: 4, item: "sob:echo_rock_candy" }
 	]
 	title: "{ftbquests.loot_table_5215467300486525274.title}"
 }

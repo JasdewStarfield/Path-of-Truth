@@ -302,13 +302,20 @@
 			]
 			icon: "minecraft:zombie_head"
 			id: "6A93A46261B6C8F0"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "399B81E50A8D9B16"
-				table_id: 5215467300486525274L
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest11.reward_4151054302276590358.title}"
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "399B81E50A8D9B16"
+					table_id: 5215467300486525274L
+					title: "{ftbquests.chapter.4BEFF532B40045D5.quest11.reward_4151054302276590358.title}"
+					type: "choice"
+				}
+				{
+					id: "4B357663B864FBB9"
+					item: "sob:echo_rock_candy"
+					type: "item"
+				}
+			]
 			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest11.subtitle}"
 			tasks: [{
 				id: "290DA61A42335E98"
