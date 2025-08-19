@@ -6,8 +6,6 @@
 [cauldron]
 	#Enables enhanced cauldron
 	enhanced_cauldron = true
-	#Allows crafting items using cauldrons by clicking on them
-	crafting = true
 	#Allows dying cauldron water bedrock style and mixing them too
 	dye_water = true
 	#Max amount of items that 1 cauldron layer can recolor.This is a multiplier on top of vanilla crafting recipe amount
@@ -26,6 +24,10 @@
 	connect_to_fences = true
 	#Makes it so a dripstone drop only increments a cauldron by 1 layer(buttle) instead of a full bottle, making it just like a water cauldron
 	consistent_lava_layers = false
+	#Allows crafting items using cauldrons by clicking on them
+	hand_crafting = true
+	#Allows crafting items using cauldrons by throwing items in them
+	in_world_crafting = true
 
 	#Map of potion ids to their inverse ids. Used for potion mixing
 	[cauldron.inverse_potions]

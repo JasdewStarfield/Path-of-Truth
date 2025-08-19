@@ -52,68 +52,6 @@
 		[types.stone_type.oreganized]
 			glance = true
 
-	[types.dust_type]
-
-		[types.dust_type.scguns]
-			sulfur = true
-
-	[types.metal_type]
-
-		[types.metal_type.botania]
-			manasteel = true
-			terrasteel = true
-			elementium = true
-
-		[types.metal_type.vintageimprovements]
-			vanadium = true
-
-		[types.metal_type.undergarden]
-			cloggrum = true
-			froststeel = true
-			forgotten = true
-
-		[types.metal_type.createaddition]
-			electrum = true
-
-		[types.metal_type.scguns]
-			anthralite = true
-			treated_iron = true
-			treated_brass = true
-			diamond_steel = true
-
-		[types.metal_type.createnuclear]
-			lead = true
-			steel = true
-
-		[types.metal_type.createutilities]
-			void_steel = true
-
-		[types.metal_type.blue_skies]
-			falsite = true
-			ventium = true
-			horizonite = true
-
-		[types.metal_type.kubejs]
-			bronze = true
-			za = true
-
-		[types.metal_type.create]
-			zinc = true
-			brass = true
-
-		[types.metal_type.simplemetals_tin]
-			tin = true
-
-		[types.metal_type.oreganized]
-			silver = true
-			lead = true
-			electrum = true
-
-	[types.gem_type]
-
-		[types.gem_type.goety]
-			jade = true
-
 	[types.cake]
 
 		[types.cake.farmersrespite]
@@ -360,28 +298,6 @@
 			cracked_brick_stairs = true
 			cracked_bricks = true
 			cracked_brick_slab = true
-
-	[entries.metal_type]
-
-		[entries.metal_type.minecraft]
-			nugget = true
-			bars = true
-
-		[entries.metal_type.create]
-			table_cloth = true
-			tile_slab = true
-			door = true
-			ornate_window = true
-			ladder = true
-			sheet = true
-			ornate_window_pane = true
-			scaffolding = true
-			shingle_slab = true
-			shingle_stairs = true
-			tiles = true
-			shingles = true
-			tile_stairs = true
-			casing = true
 
 	[entries.wood_type]
 
