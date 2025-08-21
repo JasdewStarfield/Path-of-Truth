@@ -1,0 +1,29 @@
+{
+  "parent":"path_of_truth:root",
+  "display": {
+    "icon": {
+      "item": "minecraft:tall_grass"
+    },
+    "title": {
+      "translate": "草？？？？？？"
+    },
+    "description": {
+      "translate": "您破坏了1000个草，虽然不知道您是为了什么"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "r": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "r"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

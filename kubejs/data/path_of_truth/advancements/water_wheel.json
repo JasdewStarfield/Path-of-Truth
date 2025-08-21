@@ -1,0 +1,29 @@
+{
+  "parent":"path_of_truth:root",
+  "display": {
+    "icon": {
+      "item": "create:water_wheel"
+    },
+    "title": {
+      "translate": "水车仙人"
+    },
+    "description": {
+      "translate": "您一次性持有超过30个水车，虽然不知道是要干嘛，但祝您顺利"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "r": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "r"
+    ]
+  ],
+  "sends_telemetry_event": false
+}
