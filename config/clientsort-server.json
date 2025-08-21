@@ -1,0 +1,12 @@
+{
+  "options": {
+    "classPolicies": {
+      "com.simibubi.create.content.equipment.toolbox.ToolboxMenu": {
+        "className": "com.simibubi.create.content.equipment.toolbox.ToolboxMenu",
+        "sortEnabled": false,
+        "stackFillEnabled": false,
+        "transferEnabled": false
+      }
+    }
+  }
+}

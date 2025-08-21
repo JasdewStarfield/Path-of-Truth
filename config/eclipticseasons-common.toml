@@ -39,6 +39,8 @@
 	SnowyTree = true
 	#Enable local calendar and local info synchronization.
 	EnableLocalInfoAndCalendar = false
+	#The timing of snowfall now varies within a certain range each year.
+	DynamicSnowTerm = true
 
 [Weather]
 	#Enable solar term weather system with biome.

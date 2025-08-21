@@ -30,6 +30,8 @@
 	snowUnderTree = true
 	#Cull the top face if snowy model is applied.
 	TopFaceCulling = false
+	#When applying changes, perform mean calculation based on the percentage progress of the solar term instead of using a fixed value.
+	SmootherSeasonalGrassColorChange = true
 
 [Sound]
 	#Ambient Sound.

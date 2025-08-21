@@ -1,0 +1,89 @@
+{
+  "options": {
+    "interactionInterval": 10,
+    "useServerAcceleration": true,
+    "optimizeCreativeSorting": true,
+    "hotbarScope": "HOTBAR",
+    "extraSlotScope": "EXTRA",
+    "bundlesUseLeftClick": false,
+    "sortOrderStr": "creative",
+    "shiftSortOrderStr": "quantity",
+    "ctrlSortOrderStr": "alphabet",
+    "altSortOrderStr": "rawId",
+    "playSoundSort": true,
+    "playSoundOther": true,
+    "interactionSound": "minecraft:block.note_block.xylophone",
+    "soundInterval": 1,
+    "soundPitchMin": 0.5,
+    "soundPitchMax": 2.0,
+    "soundVolume": 0.2,
+    "allowSoundOverlap": true,
+    "isolateKeybinds": true,
+    "showButtons": true,
+    "firstButtonOp": "SORT",
+    "secondButtonOp": "STACK_FILL",
+    "thirdButtonOp": "TRANSFER",
+    "layoutOffset": {
+      "x": -4,
+      "y": 0
+    },
+    "classPolicies": {
+      "com.simibubi.create.content.equipment.toolbox.ToolboxMenu": {
+        "className": "com.simibubi.create.content.equipment.toolbox.ToolboxMenu",
+        "sortPolicy": "NONE",
+        "stackFillPolicy": "NONE",
+        "transferPolicy": "NONE",
+        "ignoredSlots": []
+      },
+      "net.minecraft.world.entity.player.Inventory": {
+        "className": "net.minecraft.world.entity.player.Inventory",
+        "sortPolicy": "KEYBIND_BUTTON",
+        "stackFillPolicy": "KEYBIND_BUTTON",
+        "transferPolicy": "KEYBIND_BUTTON",
+        "ignoredSlots": []
+      },
+      "net.minecraft.world.inventory.ChestMenu": {
+        "className": "net.minecraft.world.inventory.ChestMenu",
+        "sortPolicy": "KEYBIND_BUTTON",
+        "stackFillPolicy": "KEYBIND_BUTTON",
+        "transferPolicy": "KEYBIND_BUTTON",
+        "ignoredSlots": []
+      },
+      "net.minecraft.world.inventory.HopperMenu": {
+        "className": "net.minecraft.world.inventory.HopperMenu",
+        "sortPolicy": "KEYBIND",
+        "stackFillPolicy": "KEYBIND",
+        "transferPolicy": "KEYBIND_BUTTON",
+        "ignoredSlots": []
+      },
+      "net.minecraft.world.inventory.HorseInventoryMenu": {
+        "className": "net.minecraft.world.inventory.HorseInventoryMenu",
+        "sortPolicy": "NONE",
+        "stackFillPolicy": "NONE",
+        "transferPolicy": "NONE",
+        "ignoredSlots": []
+      },
+      "net.minecraft.world.inventory.PlayerEnderChestContainer": {
+        "className": "net.minecraft.world.inventory.PlayerEnderChestContainer",
+        "sortPolicy": "KEYBIND_BUTTON",
+        "stackFillPolicy": "KEYBIND_BUTTON",
+        "transferPolicy": "KEYBIND_BUTTON",
+        "ignoredSlots": []
+      },
+      "net.minecraft.world.inventory.ShulkerBoxMenu": {
+        "className": "net.minecraft.world.inventory.ShulkerBoxMenu",
+        "sortPolicy": "KEYBIND_BUTTON",
+        "stackFillPolicy": "KEYBIND_BUTTON",
+        "transferPolicy": "KEYBIND_BUTTON",
+        "ignoredSlots": []
+      },
+      "net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity": {
+        "className": "net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity",
+        "sortPolicy": "KEYBIND_BUTTON",
+        "stackFillPolicy": "KEYBIND_BUTTON",
+        "transferPolicy": "KEYBIND_BUTTON",
+        "ignoredSlots": []
+      }
+    }
+  }
+}
