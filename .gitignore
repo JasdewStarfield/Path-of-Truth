@@ -102,3 +102,4 @@ config/mods_optimizer/mods-database.json
 config/mods_optimizer/mods-database.json.sha256
 config/asyncparticles/asyncparticles-mixin.properties
 config/flywheel-client.toml
+etched-sounds/cache.json

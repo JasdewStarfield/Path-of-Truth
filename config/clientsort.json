@@ -6,6 +6,12 @@
     "hotbarScope": "HOTBAR",
     "extraSlotScope": "EXTRA",
     "bundlesUseLeftClick": false,
+    "alwaysMatchByType": false,
+    "typeMatchTags": [
+      "enchantable/weapon",
+      "enchantable/mining",
+      "enchantable/armor"
+    ],
     "sortOrderStr": "creative",
     "shiftSortOrderStr": "quantity",
     "ctrlSortOrderStr": "alphabet",
@@ -22,7 +28,8 @@
     "showButtons": true,
     "firstButtonOp": "SORT",
     "secondButtonOp": "STACK_FILL",
-    "thirdButtonOp": "TRANSFER",
+    "thirdButtonOp": "MATCH_TRANSFER",
+    "fourthButtonOp": "TRANSFER",
     "layoutOffset": {
       "x": -4,
       "y": 0
@@ -32,6 +39,7 @@
         "className": "com.simibubi.create.content.equipment.toolbox.ToolboxMenu",
         "sortPolicy": "NONE",
         "stackFillPolicy": "NONE",
+        "matchTransferPolicy": "NONE",
         "transferPolicy": "NONE",
         "ignoredSlots": []
       },
@@ -39,6 +47,7 @@
         "className": "net.minecraft.world.entity.player.Inventory",
         "sortPolicy": "KEYBIND_BUTTON",
         "stackFillPolicy": "KEYBIND_BUTTON",
+        "matchTransferPolicy": "NONE",
         "transferPolicy": "KEYBIND_BUTTON",
         "ignoredSlots": []
       },
@@ -46,6 +55,7 @@
         "className": "net.minecraft.world.inventory.ChestMenu",
         "sortPolicy": "KEYBIND_BUTTON",
         "stackFillPolicy": "KEYBIND_BUTTON",
+        "matchTransferPolicy": "NONE",
         "transferPolicy": "KEYBIND_BUTTON",
         "ignoredSlots": []
       },
@@ -53,6 +63,7 @@
         "className": "net.minecraft.world.inventory.HopperMenu",
         "sortPolicy": "KEYBIND",
         "stackFillPolicy": "KEYBIND",
+        "matchTransferPolicy": "NONE",
         "transferPolicy": "KEYBIND_BUTTON",
         "ignoredSlots": []
       },
@@ -60,6 +71,7 @@
         "className": "net.minecraft.world.inventory.HorseInventoryMenu",
         "sortPolicy": "NONE",
         "stackFillPolicy": "NONE",
+        "matchTransferPolicy": "NONE",
         "transferPolicy": "NONE",
         "ignoredSlots": []
       },
@@ -67,6 +79,7 @@
         "className": "net.minecraft.world.inventory.PlayerEnderChestContainer",
         "sortPolicy": "KEYBIND_BUTTON",
         "stackFillPolicy": "KEYBIND_BUTTON",
+        "matchTransferPolicy": "NONE",
         "transferPolicy": "KEYBIND_BUTTON",
         "ignoredSlots": []
       },
@@ -74,6 +87,7 @@
         "className": "net.minecraft.world.inventory.ShulkerBoxMenu",
         "sortPolicy": "KEYBIND_BUTTON",
         "stackFillPolicy": "KEYBIND_BUTTON",
+        "matchTransferPolicy": "NONE",
         "transferPolicy": "KEYBIND_BUTTON",
         "ignoredSlots": []
       },
@@ -81,6 +95,7 @@
         "className": "net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity",
         "sortPolicy": "KEYBIND_BUTTON",
         "stackFillPolicy": "KEYBIND_BUTTON",
+        "matchTransferPolicy": "NONE",
         "transferPolicy": "KEYBIND_BUTTON",
         "ignoredSlots": []
       }

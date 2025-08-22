@@ -504,28 +504,42 @@
 				"{ftbquests.chapter.4BEFF532B40045D5.quest18.description1}"
 				"{ftbquests.chapter.4BEFF532B40045D5.quest18.description2}"
 			]
-			icon: "iammusicplayer:cassette_tape"
+			icon: "etched:boombox"
 			id: "68F393AA551F9507"
 			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest18.subtitle}"
 			tasks: [
 				{
-					id: "406D3AF5B1F5DB40"
-					item: "iammusicplayer:music_manager"
+					id: "24472ADB05D27A72"
+					item: "etched:etching_table"
 					type: "item"
 				}
 				{
-					id: "4A4CC2CEAB726078"
-					item: "iammusicplayer:boombox"
+					id: "22C0EB7A74939882"
+					item: "etched:radio"
 					type: "item"
 				}
 				{
-					id: "354E770C14BB1838"
-					item: "iammusicplayer:parabolic_antenna"
+					id: "2500E2AE44E8E3CD"
+					item: {
+						Count: 1
+						id: "etched:music_label"
+						tag: {
+							Label: {
+								Author: "JasdewStarfield"
+								Title: "Custom Music"
+							}
+						}
+					}
 					type: "item"
 				}
 				{
-					id: "65DB6C6159EFDE72"
-					item: "iammusicplayer:cassette_tape"
+					id: "559B6FA9D2A58C27"
+					item: "etched:blank_music_disc"
+					type: "item"
+				}
+				{
+					id: "370EFCD897E2A42B"
+					item: "etched:boombox"
 					type: "item"
 				}
 			]

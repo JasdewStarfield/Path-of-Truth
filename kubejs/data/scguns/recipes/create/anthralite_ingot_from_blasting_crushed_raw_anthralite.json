@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "group": "anthralite_ingot",
+  "cookingtime":100,
+  "experience": 0.7,
+  "ingredient": {
+    "item": "scguns:crushed_raw_anthralite"
+  },
+  "result": "scguns:anthralite_ingot"
+}

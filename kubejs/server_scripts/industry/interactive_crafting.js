@@ -65,7 +65,7 @@ ServerEvents.recipes(event => {
       ["create:mechanical_arm", "create:brass_hand"],
       ["create:elevator_pulley", "#forge:rope"],
       ["create:content_observer", "observer"],
-      ["iammusicplayer:music_manager", "jukebox"],
+      //["iammusicplayer:music_manager", "jukebox"],
       //["create:redstone_link", "redstone_torch"],
       //["create:mechanical_crafter", "#forge:workbench"],
       ["create:stockpile_switch", "comparator"],
