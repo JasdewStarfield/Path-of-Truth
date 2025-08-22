@@ -1,0 +1,38 @@
+{
+  "parent":"path_of_truth:root",
+  "display": {
+    "icon": {
+      "item": "man_of_many_planes:scarlet_biplane"
+    },
+    "title": {
+      "translate": "宇宙最速！"
+    },
+    "description": {
+      "translate": "夜露死苦！"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "riding": {
+      "trigger": "minecraft:started_riding",
+      "conditions": {
+        "player": [{
+          "condition":"minecraft:entity_properties",
+          "entity": "this",
+          "vehicle": {
+            "nbt": "{CustomName:‘{\"text\":\"喧哗上等\"}’}"
+          }
+        }]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "riding"
+    ]
+  ],
+  "sends_telemetry_event": false
+}
