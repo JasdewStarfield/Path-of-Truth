@@ -1367,11 +1367,6 @@
 					type: "item"
 				}
 				{
-					id: "63F6985388382AA4"
-					item: "largemeals:omurice_block"
-					type: "item"
-				}
-				{
 					id: "6D586AF0CF364464"
 					item: "largemeals:mushroom_pot_pie_block"
 					type: "item"
@@ -1379,6 +1374,21 @@
 				{
 					id: "4E0EEDB13F9C9154"
 					item: "largemeals:roasted_mutton_rack_block"
+					type: "item"
+				}
+				{
+					id: "1A0DF30660DECC95"
+					item: "brewinandchewin:fiery_fondue_pot"
+					type: "item"
+				}
+				{
+					id: "721E415E3F47C4A0"
+					item: "sob:red_rum_skull"
+					type: "item"
+				}
+				{
+					id: "784CE7C69EE72DE2"
+					item: "sob:big_soup_block"
 					type: "item"
 				}
 			]
