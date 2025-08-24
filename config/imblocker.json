@@ -18,5 +18,13 @@
     "enableConversionStatusApi": true,
     "enableCursorPositionTracking": true,
     "enableCompositionFontTweaks": true
+  },
+  "linuxCompatibilitySettings": {
+    "enableKeyboardPatch": true,
+    "ibusOnArgName": "libpinyin",
+    "ibusOffArgName": "xkb:us::eng",
+    "fcitx5OnArgName": "-o",
+    "fcitx5OffArgName": "-c",
+    "fcitx5OnStateName": "2"
   }
 }
