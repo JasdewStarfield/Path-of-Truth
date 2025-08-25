@@ -575,7 +575,7 @@
 			}]
 			title: "浓缩黑暗"
 			x: 0.0d
-			y: -3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["0F48550D5C48437F"]

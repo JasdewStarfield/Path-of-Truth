@@ -161,7 +161,7 @@
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
-			description: ["但是枪械基本零件还是要铁。"]
+			description: ["但是一些枪械基本零件还是要铁。"]
 			id: "09AB3BC179AF7529"
 			subtitle: "如此简单！"
 			tasks: [{

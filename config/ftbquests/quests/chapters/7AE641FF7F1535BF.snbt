@@ -570,18 +570,11 @@
 			icon: "vintageimprovements:helve_hammer"
 			id: "40129F9AE9DCE1EF"
 			subtitle: "大力出奇迹，兄弟"
-			tasks: [
-				{
-					id: "2F2AD8CCB0B007F8"
-					item: "vintageimprovements:helve_hammer"
-					type: "item"
-				}
-				{
-					id: "266B7071E99DD4AE"
-					item: "immersiveengineering:plate_steel"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "2F2AD8CCB0B007F8"
+				item: "vintageimprovements:helve_hammer"
+				type: "item"
+			}]
 			x: 8.0d
 			y: 2.0d
 		}
@@ -1033,6 +1026,18 @@
 			title: "黄钢？"
 			x: 4.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["04AAF6565C04DA94"]
+			id: "41066A41812A37E2"
+			shape: "hexagon"
+			tasks: [{
+				id: "67792EC8B82BD094"
+				item: "kubejs:sonic_mechanism"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
 		}
 	]
 	subtitle: ["Hearts of Steel"]
