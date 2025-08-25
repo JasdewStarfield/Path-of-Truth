@@ -237,7 +237,7 @@
 		energyModifier = 1.0
 		#A modifier to apply to the time of every crusher recipe
 		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
+		timeModifier = 4.0
 
 	[machines.squeezer]
 		#A modifier to apply to the energy costs of every squeezer recipe
