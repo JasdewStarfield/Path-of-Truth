@@ -98,7 +98,7 @@
 				"7A6D4E28C28302FE"
 				"280307C036B9B6E7"
 			]
-			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest1.description1}"]
+			description: ["得到每一种蔚蓝浩空特有的BOSS掉落物！"]
 			hide_until_deps_complete: true
 			icon: "blue_skies:blue_journal"
 			id: "0EBCC9ACD99E6B83"
@@ -107,7 +107,7 @@
 				item: "refinedstorage:creative_storage_disk"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest1.subtitle}"
+			subtitle: "击穿一切！"
 			tasks: [
 				{
 					id: "1E5AFC47BE30A9CB"
@@ -202,13 +202,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest1.title}"
+			title: "蔚蓝浩空收割者"
 			x: -1.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["6C542C19575974DB"]
-			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest2.description1}"]
+			description: ["获得你应该通过下界获得的所有资源！"]
 			icon: {
 				Count: 1
 				id: "minecraft:netherite_boots"
@@ -231,7 +231,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest2.subtitle}"
+			subtitle: "你来，你见，你征服"
 			tasks: [
 				{
 					id: "0C36371EFD746915"
@@ -259,16 +259,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest2.title}"
+			title: "下界行者"
 			x: -1.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest3.description1}"
+				"获得所有植物魔法的遗物！"
 				""
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest3.description2}"
+				"&o&c&m打六次盖亚守护者II的感觉怎么样？&r&r&r"
 			]
 			hide_until_deps_complete: true
 			icon: "botania:dice"
@@ -285,7 +285,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest3.subtitle}"
+			subtitle: "植魔的禁忌武装"
 			tasks: [
 				{
 					id: "3D9EEBC5292E68AC"
@@ -329,13 +329,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest3.title}"
+			title: "遗物收藏家"
 			x: 4.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
-			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest4.description1}"]
+			description: ["获得所有种类的巫术卷轴！"]
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:eldritch_manuscript"
 			id: "4A795BB15E5110EC"
@@ -360,7 +360,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest4.subtitle}"
+			subtitle: "铁魔法的至高力量"
 			tasks: [
 				{
 					id: "741296DE9DD90C7D"
@@ -495,13 +495,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest4.title}"
+			title: "巫术卷轴"
 			x: -0.5d
 			y: 8.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
-			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest5.description1}"]
+			description: ["获得原版，维度模组以及alex的生物中（几乎）所有可以被处理为鱼的东西）"]
 			hide_until_deps_complete: true
 			icon: "netherdepthsupgrade:blazefish_bucket"
 			id: "725308B81E925449"
@@ -523,7 +523,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest5.subtitle}"
+			subtitle: "全是鱼……"
 			tasks: [
 				{
 					id: "7B154DB1966B1382"
@@ -646,16 +646,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest5.title}"
+			title: "钓鱼王I"
 			x: -0.5d
 			y: 5.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest6.description1}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest6.description2}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest6.description3}"
+				"获得所有潮汐（Tide）模组中的鱼！"
+				"（由于主世界的特殊性，不要求全部群系鱼收集）"
+				"注意：传奇鱼类的出现和月相与幸运相关，游戏内会有更多的提示！"
 			]
 			hide_until_deps_complete: true
 			icon: "tide:crystal_shrimp"
@@ -727,7 +727,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest6.subtitle}"
+			subtitle: "怎么还有？"
 			tasks: [
 				{
 					id: "6F168B7EF518EEA7"
@@ -966,13 +966,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest6.title}"
+			title: "钓鱼王II"
 			x: 0.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["0E5C63B3D4891362"]
-			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest7.description1}"]
+			description: ["和被遗忘者战斗获得扼塞战斧，然后升级为最强大斧头！"]
 			icon: {
 				Count: 1
 				id: "undergarden:cloggrum_battleaxe"
@@ -1067,7 +1067,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest7.subtitle}"
+			subtitle: "深暗之园最强武器"
 			tasks: [
 				{
 					id: "7868FDBB684B6F3A"
@@ -1092,15 +1092,15 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest7.title}"
+			title: "深园王者"
 			x: 1.5d
 			y: 0.5d
 		}
 		{
 			dependencies: ["193F465F65BC13F1"]
 			description: [
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest8.description1}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest8.description2}"
+				"通过随便什么方式获得龙蛋——这是真理的一部分）"
+				"&m&b*小声：这也是对于一些倒霉蛋的补偿——有的人捡不到漂浮在空中的龙鳞）&r&r"
 			]
 			id: "583D1483CCA6EA3F"
 			rewards: [
@@ -1116,29 +1116,29 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest8.subtitle}"
+			subtitle: "你赢了，然后呢？"
 			tasks: [{
 				id: "33419BDCE26CF831"
 				item: "minecraft:dragon_egg"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest8.title}"
+			title: "巨龙悲歌"
 			x: 1.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["15E666BAE38566D8"]
 			description: [
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest9.description1}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest9.description2}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest9.description3}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest9.description4}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest9.description5}"
+				"本模组提供了四种强大BOSS："
+				"暗夜巫妖，虚空之花，下界铁掌，黑曜石巨柱"
+				"通过击穿他们来证明你身为冒险家的实力！"
+				"你问我BOSS机制？自己探索去！"
+				"注意：由于对于材料的需求，这几种BOSS你可能分别需要打不止一次，请善用硫磺花蜜进行结构重置哦））"
 				""
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest9.description6}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest9.description7}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest9.description8}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest9.description9}"
+				"&o&b暗夜巫妖需要通过灵魂之星找到并用四颗灵魂之星召唤。&r&r"
+				"&o&a虚空之花需要通过虚空百合花粉指引方向找到。&r"
+				"&o&c下界铁掌会生成在类似猪灵堡垒的黑石结构，需要破开中心柱体。&r&r"
+				"&o&d黑曜石巨柱会生成在末地的大型平台上，需要末影之眼召唤。&r&r"
 			]
 			icon: "bosses_of_mass_destruction:brimstone_nectar"
 			id: "5EE2152C42721246"
@@ -1164,7 +1164,7 @@
 			]
 			shape: "pentagon"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest9.subtitle}"
+			subtitle: "这将是你面对的最终BOSS"
 			tasks: [
 				{
 					id: "05327A6F4952B11C"
@@ -1187,13 +1187,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest9.title}"
+			title: "战斗！爽！"
 			x: 0.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
-			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest10.description1}"]
+			description: ["探索古代遗迹并找出所有种类的神奇图腾！"]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -1208,7 +1208,7 @@
 				item: "artifacts:umbrella"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest10.subtitle}"
+			subtitle: "考古#2"
 			tasks: [
 				{
 					id: "2B8B446763C6DC12"
@@ -1243,16 +1243,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest10.title}"
+			title: "神器专家"
 			x: -3.0d
 			y: 4.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest11.description1}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest11.description2}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest11.description3}"
+				"找到并组装每一种生物的化石！"
+				"看起来有点哈人……"
+				"不同的化石有不同的作用，但这就要你自己探索了。"
 			]
 			hide_until_deps_complete: true
 			icon: "betterarcheology:creeper_fossil"
@@ -1268,7 +1268,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest11.subtitle}"
+			subtitle: "考古#1"
 			tasks: [
 				{
 					id: "5EB84F8FE09E233F"
@@ -1306,15 +1306,15 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest11.title}"
+			title: "古生物学家"
 			x: -4.0d
 			y: 5.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest12.description1}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest12.description2}"
+				"做出农夫乐事系列中的各类大菜！"
+				"&o&m&5“吃穿虚空”&r&r&r"
 			]
 			hide_until_deps_complete: true
 			icon: "farmersdelight:cutting_board"
@@ -1324,7 +1324,7 @@
 				item: "sophisticatedbackpacks:advanced_feeding_upgrade"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest12.subtitle}"
+			subtitle: "超级美食家"
 			tasks: [
 				{
 					id: "5F396697B1D48D20"
@@ -1392,17 +1392,17 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest12.title}"
+			title: "五星级大厨"
 			x: 4.5d
 			y: 1.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest13.description1}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest13.description2}"
+				"在探索真理的路上，你会发现通过三种手段分别可以合成一张神秘的唱片……"
+				"集齐三张唱片，你就可以获得这世界上的最强声音!"
 				""
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest13.description3}"
+				"&o&b致敬神秘初始小屋制作人兼传奇音乐人Jacky_Blackson）&r&r"
 			]
 			hide_until_deps_complete: true
 			icon: "immersiveengineering:earmuffs"
@@ -1428,7 +1428,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest13.subtitle}"
+			subtitle: "工业，魔法，探索"
 			tasks: [
 				{
 					id: "3F82AF4F070F9EF7"
@@ -1446,15 +1446,15 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest13.title}"
+			title: "神秘旋律"
 			x: -1.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["0B043034C7178F75"]
 			description: [
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.description1}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.description2}"
+				"其实，我们本意是让你去这些维度开斗轮式挖掘机。"
+				"但是没法检测，所以就这样代表性地写一下了（"
 			]
 			icon: {
 				Count: 1
@@ -1469,7 +1469,7 @@
 				item: "create:mechanical_drill"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.subtitle}"
+			subtitle: "在每个拥有矿脉的维度进行地质勘测！"
 			tasks: [
 				{
 					id: "109B642F02AC90C8"
@@ -1481,7 +1481,7 @@
 						}
 					}
 					match_nbt: true
-					title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.task_1196660279068102856.title}"
+					title: "主世界岩芯样本"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -1495,7 +1495,7 @@
 						}
 					}
 					match_nbt: true
-					title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.task_6266986016447365671.title}"
+					title: "下界岩芯样本"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -1509,7 +1509,7 @@
 						}
 					}
 					match_nbt: true
-					title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.task_8419237618566645317.title}"
+					title: "永昼之地岩芯样本"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -1523,7 +1523,7 @@
 						}
 					}
 					match_nbt: true
-					title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.task_8956122255254880033.title}"
+					title: "恒晓之地岩芯样本"
 					type: "item"
 					weak_nbt_match: true
 				}
@@ -1537,12 +1537,12 @@
 						}
 					}
 					match_nbt: true
-					title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.task_7646430804141100666.title}"
+					title: "深暗之园岩芯样本"
 					type: "item"
 					weak_nbt_match: true
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest14.title}"
+			title: "地质专家"
 			x: -5.5d
 			y: 0.0d
 		}
@@ -1551,7 +1551,7 @@
 			hide_until_deps_complete: true
 			icon: "trashcans:item_trash_can"
 			id: "5D6D256D4DE35A5A"
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest15.subtitle}"
+			subtitle: "三种……呃，垃圾桶"
 			tasks: [
 				{
 					id: "290A4ECEA003960E"
@@ -1569,13 +1569,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest15.title}"
+			title: "环保卫士"
 			x: -3.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5D6D256D4DE35A5A"]
-			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest16.description1}"]
+			description: ["老实说，现在该怀疑你是不是对垃圾桶有奇怪的癖好了"]
 			id: "15FED36DE787B730"
 			invisible: true
 			rewards: [{
@@ -1583,19 +1583,19 @@
 				item: "alexsmobs:chorus_on_a_stick"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest16.subtitle}"
+			subtitle: "陷入沉思"
 			tasks: [{
 				id: "39706D9BE11AF329"
 				item: "trashcans:ultimate_trash_can"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest16.title}"
+			title: "【隐藏任务】还有高手？"
 			x: -3.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
-			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest17.description1}"]
+			description: ["哦天啊，制杖并贩剑（确信"]
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:blood_staff"
 			id: "722556B2244FD56A"
@@ -1616,7 +1616,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest17.subtitle}"
+			subtitle: "收集铁魔法所有的战斗用魔杖和剑！"
 			tasks: [
 				{
 					id: "69ED8C8737277DAA"
@@ -1715,13 +1715,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest17.title}"
+			title: "制杖与贩剑"
 			x: 0.5d
 			y: 8.0d
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
-			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest18.description1}"]
+			description: ["比高中课本还多XD"]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -1759,7 +1759,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest18.subtitle}"
+			subtitle: "收集所有铁魔法模组的法术书！"
 			tasks: [
 				{
 					id: "1651BD972B9CDDDC"
@@ -2015,20 +2015,20 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest18.title}"
+			title: "我爱读书"
 			x: -0.5d
 			y: 10.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest19.description1}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest19.description2}"
+				"为什么&a抽象魔法师会写音乐&r这种事情是&a另外的故事&r，但总之有&d更多的曲子&r可以听了）"
+				"两首曲子分别是&9深夜&r和&c暴风雪&r的印象曲，因此会有相对独特的风格——不过因为开局点击就送，所以这个任务没有奖励）"
 			]
 			hide_until_deps_complete: true
 			icon: "handcrafted:red_sheet"
 			id: "5D14EEEDED65B6BF"
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest19.subtitle}"
+			subtitle: "对吧，达瓦里氏"
 			tasks: [
 				{
 					id: "436B0D20B0CFBDB4"
@@ -2041,16 +2041,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest19.title}"
+			title: "气突苏"
 			x: 1.5d
 			y: -3.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest20.description1}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest20.description2}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest20.description3}"
+				"可能有心细的玩家发现了，我们&c没有给出建筑魔杖&r，也就是说你&c不能&r在铺方块的时候偷懒）"
+				"然而这种方法&b其实是存在的&r，只是需要消耗一些&b魔力&r……以及&6和盖亚进行一轮激♂情对决&r）"
+				"鉴于这个工具&d用的人太少以至于无人知晓&r，所以这个任务出现了）"
 			]
 			hide_until_deps_complete: true
 			id: "4FF64FFAF952A6E2"
@@ -2059,13 +2059,13 @@
 				item: "botania:tiny_planet"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest20.subtitle}"
+			subtitle: "魔力是硬需求……"
 			tasks: [{
 				id: "1BB9C355EB8874FB"
 				item: "botania:astrolabe"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest20.title}"
+			title: "魔能建筑法杖"
 			x: 3.0d
 			y: 5.5d
 		}
@@ -2074,7 +2074,7 @@
 				"48783396F615D90E"
 				"5D14EEEDED65B6BF"
 			]
-			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest21.description1}"]
+			description: ["收集所有的原版唱片！"]
 			icon: "minecraft:jukebox"
 			id: "3B0F65013925C0B6"
 			rewards: [
@@ -2094,7 +2094,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest21.subtitle}"
+			subtitle: "我觉得这包含一种运气问题。"
 			tasks: [
 				{
 					id: "1E7CBA9AD49B51BA"
@@ -2177,7 +2177,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest21.title}"
+			title: "原教旨主义者"
 			x: 0.0d
 			y: -4.5d
 		}
@@ -2187,8 +2187,8 @@
 				"48783396F615D90E"
 			]
 			description: [
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest22.description1}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest22.description2}"
+				"也许我们应该给唱片机加个耐久度。"
+				"收集所有模组提供的唱片！"
 			]
 			icon: "minecraft:note_block"
 			id: "54B7D31714F8BD90"
@@ -2203,7 +2203,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest22.subtitle}"
+			subtitle: "你的CD机还没坏掉吗？？？"
 			tasks: [
 				{
 					id: "1AC06225AEA1762F"
@@ -2336,13 +2336,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest22.title}"
+			title: "音乐发烧友"
 			x: 0.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
-			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest23.description1}"]
+			description: ["粉尘爆炸的前置任务（大嘘"]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -2362,7 +2362,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest23.subtitle}"
+			subtitle: "小袋装起来了"
 			tasks: [
 				{
 					count: 64L
@@ -2431,13 +2431,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest23.title}"
+			title: "装袋狂人"
 			x: 3.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
-			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest24.description1}"]
+			description: ["农民中的王者，真正的终极奉献"]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -2458,7 +2458,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest24.subtitle}"
+			subtitle: "亩产一万五千斤！"
 			tasks: [
 				{
 					count: 64L
@@ -2587,13 +2587,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest24.title}"
+			title: "农业大亨"
 			x: 5.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
-			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest25.description1}"]
+			description: ["你的蛋疑似有点太多了）"]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -2614,7 +2614,7 @@
 				item: "minecraft:sniffer_egg"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest25.subtitle}"
+			subtitle: "从生物学上来讲……"
 			tasks: [
 				{
 					count: 16L
@@ -2635,13 +2635,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest25.title}"
+			title: "牧场主"
 			x: 5.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
-			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest26.description1}"]
+			description: ["朋友，你对零件有什么执念吗……？"]
 			hide_until_deps_complete: true
 			icon: "immersive_aircraft:industrial_gears"
 			id: "7FB0E3BD81383AF7"
@@ -2650,7 +2650,7 @@
 				item: "handcrafted:golden_medium_pot"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest26.subtitle}"
+			subtitle: "一重压缩x64"
 			tasks: [
 				{
 					count: 64L
@@ -2689,16 +2689,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest26.title}"
+			title: "五金批发商"
 			x: 3.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["0F9DF1C5137194E4"]
 			description: [
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest27.description1}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest27.description2}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest27.description3}"
+				"你终将成为全能者。"
+				"法球可以添加在任何一件盔甲（即使不是铁魔法系列盔甲）上，但&l&4不可拆卸&r&r，请谨慎抉择。"
+				"注：为了符合本整合包难度，这些胸甲都需要泰拉钢进行合成来凑齐套装。"
 			]
 			id: "632463395A3B4755"
 			rewards: [
@@ -2758,7 +2758,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest27.subtitle}"
+			subtitle: "在走遍每一条道路后……"
 			tasks: [
 				{
 					id: "5C1B27246D62264B"
@@ -2897,26 +2897,26 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest27.title}"
+			title: "专精与全通"
 			x: 0.5d
 			y: 10.0d
 		}
 		{
 			dependencies: ["3B3B39FE9A88ED71"]
 			description: [
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description1}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description2}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description3}"
+				"发掘海洋暗藏的秘密……以及力量。"
+				"当你手持&c贝壳号角&r并在&9寒冰迷宫（群系）的海边&r按住右键吹响，船长科妮莉亚的亡灵会从水中浮现，而你需要想办法获得她的武器……来证明自己。"
+				"&o&4然而这注定艰难……&r&r"
 				"{@pagebreak}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description4}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description5}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description6}"
+				"由于船长本身特殊的技能，其&c血量上限并不代表其真正总血量&r，因此在挑战她前务必做好准备。"
+				"第一、二次&c血量低于48点&r时，船长会获得“生命恢复8”效果10秒和“漂浮”效果5秒。在漂浮状态下，她拥有惊人的移速。同时，船长会&b召唤三个持续30秒的剧毒环刃或迷宫玫瑰&r并使其环绕于她四周。"
+				"船长会&e用多种武器（每35秒进行切换）&r进行进攻，具有牵引玩家的能力，并在手持长矛的状态下有&c最高21点破盾伤害（取决于游戏难度）&r。"
 				"{@pagebreak}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description7}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description8}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description9}"
+				"船长免疫一切弹射物伤害、爆炸伤害、火焰伤害、摔落伤害、闪电伤害和熔岩灼烧伤害&b（但是不免疫铁魔法的法术伤害和焦焰枪火的枪械伤害）&r。"
+				"船长拥有&c&l抗拒斩首&r&r的能力，在其血量在16点以下时，血量会以每秒8点的速度回复至16点以上。"
+				"建议通过高伤害法术，高频率伤害法术或高DPS枪械进行斩杀。"
 				""
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.description10}"
+				"&o&7长矛掉落率极低，请做好“赢了但是输了”的心理准备。&r&r"
 			]
 			id: "6BB2985D2E9224A2"
 			rewards: [
@@ -2949,7 +2949,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.subtitle}"
+			subtitle: "征服深海"
 			tasks: [{
 				id: "08CDA34E0BC16CE1"
 				item: {
@@ -2965,13 +2965,13 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest28.title}"
+			title: "海王"
 			x: 0.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
-			description: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest29.description1}"]
+			description: ["卷轴易碎，知识永存。"]
 			id: "2CC30C12A97CA45F"
 			rewards: [{
 				id: "7EFCAF5712F89130"
@@ -3006,7 +3006,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest29.subtitle}"
+			subtitle: "获得所有的诡厄巫法知识卷轴！"
 			tasks: [
 				{
 					id: "0382F06D8C063787"
@@ -3059,16 +3059,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest29.title}"
+			title: "知识不朽"
 			x: -0.5d
 			y: 9.0d
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
 			description: [
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest30.description1}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest30.description2}"
-				"{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest30.description3}"
+				"雷霆之锤需要用雷电强化粉碎者后，它才有几率掉落。"
+				"霜冻之刃来自墓穴的白骨领主，但也有几率在陶瓷坛内发现。"
+				"堕落之刃是缠魂甲胄的装备。"
 			]
 			id: "3ABDF141ABA6CA8C"
 			rewards: [{
@@ -3083,7 +3083,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest30.subtitle}"
+			subtitle: "获得诡厄巫法的三把特殊武器！"
 			tasks: [
 				{
 					id: "11695387EBA3B86A"
@@ -3119,7 +3119,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.quest30.title}"
+			title: "魔能武装"
 			x: 0.5d
 			y: 9.0d
 		}
@@ -3143,6 +3143,6 @@
 			y: 2.0d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.0E2F8F4C2B4CBD8C.subtitle0}"]
-	title: "{ftbquests.chapter.0E2F8F4C2B4CBD8C.title}"
+	subtitle: ["The Way to Legend"]
+	title: "【挑战】传说之路"
 }

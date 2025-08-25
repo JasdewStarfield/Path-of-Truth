@@ -51,11 +51,11 @@
 				"0C46182EC4B33189"
 			]
 			description: [
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest1.description1}"
+				"如果你发现你缺少某些材料……请确保你已经做完了整个工业线和魔法线。"
 				""
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest1.description2}"
+				"现在，喝杯咖啡平静一下，做好心理准备，因为你即将触及游戏的边界，&b触及“真理”&r。（好吧，也没有那么快）"
 				""
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest1.description3}"
+				"通过工业与魔法的聚合，你获得了一种&a流光溢彩的……石头&r。然而怎么把其中的那一丝真理分离出来呢？"
 			]
 			hide_until_deps_complete: true
 			icon: "kubejs:raw_world_base"
@@ -67,12 +67,12 @@
 			}]
 			shape: "pentagon"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.1BB45CAF6A2385E2.quest1.subtitle}"
+			subtitle: "一即是万"
 			tasks: [
 				{
 					id: "574D4B148744FE70"
 					item: "kubejs:buran"
-					title: "{ftbquests.chapter.1BB45CAF6A2385E2.quest1.task_6290766806047325808.title}"
+					title: "工业的最高成就……"
 					type: "item"
 				}
 				{
@@ -92,55 +92,55 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.1BB45CAF6A2385E2.quest1.title}"
+			title: "【起点】统合与升华"
 			x: 0.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
 			description: [
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest2.description1}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest2.description2}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest2.description3}"
+				"将万象石打造成&e最“包罗万象”的磁盘&r，然后再进行&6合理的工业压制和程序编辑&r，也许就能分离出其中的工业特质……"
+				"某种意义上来讲&b直击本源的编程&r是所有程序员的梦想。"
+				"至少这一次你的代码不会有bug，&9产出的一定是代码&r……但有&c一点点概率&r实现的并不是你想要的（？"
 			]
 			id: "6D54B104118A0FA7"
-			subtitle: "{ftbquests.chapter.1BB45CAF6A2385E2.quest2.subtitle}"
+			subtitle: "最强大的磁盘"
 			tasks: [{
 				id: "573FB5488D66E094"
 				item: "kubejs:code_vessel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.1BB45CAF6A2385E2.quest2.title}"
+			title: "承载真理"
 			x: -4.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["6D54B104118A0FA7"]
 			id: "0D2EEDEACB542342"
-			subtitle: "{ftbquests.chapter.1BB45CAF6A2385E2.quest3.subtitle}"
+			subtitle: "机魂大悦"
 			tasks: [{
 				id: "34A6845464DFC520"
 				item: "kubejs:code_destruction"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.1BB45CAF6A2385E2.quest3.title}"
+			title: "极致毁灭"
 			x: -2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6D54B104118A0FA7"]
 			description: [
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest4.description1}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest4.description2}"
+				"最方便的&a一键美容养颜&r……？"
+				"最完美的代码，它甚至能帮助你&d修复自身的不完美之处&r。唯一的缺陷是……运行需要比较长的时间来准备。"
 			]
 			id: "5B74E17C06C14B35"
-			subtitle: "{ftbquests.chapter.1BB45CAF6A2385E2.quest4.subtitle}"
+			subtitle: "做个精致的人"
 			tasks: [{
 				id: "039FBCBAFB5C60C3"
 				item: "kubejs:code_perfection"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.1BB45CAF6A2385E2.quest4.title}"
+			title: "永远完美"
 			x: -2.0d
 			y: -3.0d
 		}
@@ -157,20 +157,20 @@
 				"3B85E476CBE11F1B"
 			]
 			description: [
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest5.description1}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest5.description2}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest5.description3}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest5.description4}"
+				"&a【完成后解锁主线章节：** ******】&r"
+				"当你的魔法与工业都走到极致，你将获得这一创造的入门通行证，&9分离后再统合方能使得万象归一&r。"
+				"它在简单的加工后可以用以复制自身，所以&4不要随意将产出的两个都用掉&r。"
+				"通往真理的道路往往是晦涩的。对于&6一场宏大但部分配方缺失的“九九归一”&r，也许你&b需要一些计算&r来确定自己应该&c如何排列规则&r……"
 				""
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest5.description5}"
+				"&o&7*这是一场直击世界核心的数独游戏！&r&r"
 				"{@pagebreak}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest5.description6}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest5.description7}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest5.description8}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest5.description9}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest5.description10}"
+				"数独，一款基础且风靡世界的数学游戏。"
+				"游戏规则很简单，&l&b任意行、列，以及均匀划分出的九个3*3区域都需要以不重复的1-9填满&r&r。"
+				"在这里，1-9替换为了&5原始万象石激发而出的九种超越规则的产物&r。"
+				"&6我们相信你的智慧&r，&c你需要自己判断被屏障隐藏的区域应该放置什么！&r"
+				"&9真理是唯一的，所以这场游戏的解法也是。&r"
 				""
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest5.description11}"
+				"&o&7*法师的规则探测小技巧：行/列/3*3区域缺一个就是秒填，缺两三个就排查一下对应的行列格子然后填，缺四个及以上就等等别的格子再填。&r&r"
 			]
 			id: "1E235F6753976501"
 			rewards: [{
@@ -180,124 +180,124 @@
 			}]
 			shape: "pentagon"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.1BB45CAF6A2385E2.quest5.subtitle}"
+			subtitle: "万象归一"
 			tasks: [{
 				id: "2CE3E52DCD6FE61D"
 				item: "kubejs:world_base_gem"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.1BB45CAF6A2385E2.quest5.title}"
+			title: "【终点】多模态"
 			x: 0.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["6D54B104118A0FA7"]
 			description: [
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest6.description1}"
+				"通过科学的方式&b解析生命的存在&r，并在刻录中&a融入足够的生命要素&r，你就可以获得一份能够编辑生物构成的代码！"
 				""
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest6.description2}"
+				"&o&7*只能修正至最大生命值的1/2，因为你需要给生命一条活路）&r&r"
 			]
 			id: "38F3E1D924DDE502"
-			subtitle: "{ftbquests.chapter.1BB45CAF6A2385E2.quest6.subtitle}"
+			subtitle: "定义存在"
 			tasks: [{
 				id: "4AE3DE96FF481631"
 				item: "kubejs:code_formation"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.1BB45CAF6A2385E2.quest6.title}"
+			title: "解析构成"
 			x: -2.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
 			description: [
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest7.description1}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest7.description2}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest7.description3}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest7.description4}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest7.description5}"
+				"只有这种瓶子才能承载的住&a世界极限的魔法力量&r。因此，拥有它之后，你才有能力对万象石进行一些魔法上的操作和提炼。"
+				"相较于曾经&9粗糙地将某些要素通过魔法造物暂时融合&r，现在你可以尝试&5直接掌控其本质&r。"
+				"也许该试试通过炼金方式提取&b万象石中的魔法特质&r？"
+				"&o&1*成为斯内普教授吧！&r&r"
+				"尽管瓶子永恒，但&e你的灵魂渴望世界的本源特质&r。点击右键饮用即会将特质注入自身。"
 				""
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest7.description6}"
+				"&o&7*如果你饮用对应的特质，那么你可以获得相应的永恒加成。但如果你的灵魂崩毁后再通过方尖碑重聚，那么加成仍然会消失。&r&r"
 			]
 			icon: "kubejs:reinforced_bottle"
 			id: "31B7298A33ACA4A7"
 			shape: "circle"
 			size: 1.0d
-			subtitle: "{ftbquests.chapter.1BB45CAF6A2385E2.quest7.subtitle}"
+			subtitle: "最坚固的容器"
 			tasks: [{
 				id: "404A61ACF249380F"
 				item: "kubejs:reinforced_bottle"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.1BB45CAF6A2385E2.quest7.title}"
+			title: "浓缩世界"
 			x: 4.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["31B7298A33ACA4A7"]
 			description: [
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest8.description1}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest8.description2}"
+				"生与死之间的那一丝规则&a本质是平衡&r，自然也正是因为互相制约的相对平衡才能稳定发展。"
+				"通过元素进行二次提炼，你将能&b凝缩平衡的精髓&r——也可以通过&d服用&r来&c部分掌握平衡的本质&r。"
 			]
 			id: "43F24DD9D0242F26"
 			shape: "circle"
 			size: 1.0d
-			subtitle: "{ftbquests.chapter.1BB45CAF6A2385E2.quest8.subtitle}"
+			subtitle: "对立由平衡调节"
 			tasks: [{
 				id: "7C5B9262A41AC2C6"
 				item: "kubejs:potion_of_balance"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.1BB45CAF6A2385E2.quest8.title}"
+			title: "合并生死"
 			x: 2.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["31B7298A33ACA4A7"]
 			description: [
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest9.description1}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest9.description2}"
+				"庞大的魔力与强大的灵魂代表着&d个体天赋的巅峰&r。现如今，你可以通过一些辅助材料，将其&6蕴藏的那一丝天赋&r转化而出。"
+				"可以饮用以&e提升自身的天赋&r。"
 			]
 			id: "39E40DE0BFC3304A"
 			shape: "circle"
 			size: 1.0d
-			subtitle: "{ftbquests.chapter.1BB45CAF6A2385E2.quest9.subtitle}"
+			subtitle: "魔力与灵魂铸就天赋"
 			tasks: [{
 				id: "19F422B983BBA8FB"
 				item: "kubejs:potion_of_talent"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.1BB45CAF6A2385E2.quest9.title}"
+			title: "熔炼魔魂"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["31B7298A33ACA4A7"]
 			description: [
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest10.description1}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest10.description2}"
+				"当你再次&b回到世界最黑暗的地方&r，你将能借助那超越世俗的材料压制出&9一丝虚空的本源规则&r。"
+				"可以通过饮用来&5掌控末影并无视黑暗&r。"
 			]
 			id: "30D60CA0144F675E"
 			shape: "circle"
 			size: 1.0d
-			subtitle: "{ftbquests.chapter.1BB45CAF6A2385E2.quest10.subtitle}"
+			subtitle: "万物源于虚空"
 			tasks: [{
 				id: "46C2413816F73EA0"
 				item: "kubejs:potion_of_void"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.1BB45CAF6A2385E2.quest10.title}"
+			title: "触摸虚无"
 			x: 2.0d
 			y: 1.5d
 		}
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
 			description: [
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest11.description1}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest11.description2}"
+				"将&e神圣要素&r融入你的盾牌当中，以&5龙蛋&r作为能量供应激发万象石的神圣源头，你就获得了一个&6可以持续给你附加护盾&r的神秘装置）"
+				"保护自己也是保护世界的一环。"
 			]
 			id: "4C8C5F555938B8D3"
-			subtitle: "{ftbquests.chapter.1BB45CAF6A2385E2.quest11.subtitle}"
+			subtitle: "圣盾（抵挡不止一次攻击）"
 			tasks: [{
 				id: "716B01796A9493F4"
 				item: "kubejs:divine_shield_system"
@@ -309,11 +309,11 @@
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
 			description: [
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest12.description1}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest12.description2}"
+				"&9深入暗影侵染的区域&r后，你听到它们&b对灵魂的渴望&r。以此为基底对万象石进行激发和压制，就可以获得一台&3总在渴求灵魂&r的熔炉。"
+				"需要更多燃料……"
 			]
 			id: "3B85E476CBE11F1B"
-			subtitle: "{ftbquests.chapter.1BB45CAF6A2385E2.quest12.subtitle}"
+			subtitle: "燃烧灵魂"
 			tasks: [{
 				id: "45AF76FE1F8F7F50"
 				item: "kubejs:soul_furnace"
@@ -325,11 +325,11 @@
 		{
 			dependencies: ["0D0BEC03C1B26CA3"]
 			description: [
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest13.description1}"
-				"{ftbquests.chapter.1BB45CAF6A2385E2.quest13.description2}"
+				"以奥术铁砧作为载体，用&2核能&r激发并控制万象石中&b闪电的力量&r，你就能获得一台为你&3持续附加风暴之力并为你的设备充电&r的机械。"
+				"电总是很重要的）"
 			]
 			id: "7648A6D221C10DEC"
-			subtitle: "{ftbquests.chapter.1BB45CAF6A2385E2.quest13.subtitle}"
+			subtitle: "奥能涌动"
 			tasks: [{
 				id: "78C8AE837008612D"
 				item: "kubejs:arcane_charger"
@@ -339,6 +339,6 @@
 			y: -1.5d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.1BB45CAF6A2385E2.subtitle0}"]
-	title: "{ftbquests.chapter.1BB45CAF6A2385E2.title}"
+	subtitle: ["Mastery of Tech \\& Magic"]
+	title: "6 统合机械，驾驭魔法"
 }

@@ -13,5 +13,5 @@
 		{ count: 4, item: "irons_spellbooks:arcane_ingot" }
 		{ count: 4, item: "goety:magic_emerald" }
 	]
-	title: "{ftbquests.loot_table_5567297392411284388.title}"
+	title: "规则的反馈"
 }

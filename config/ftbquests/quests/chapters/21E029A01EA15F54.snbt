@@ -81,12 +81,12 @@
 		{
 			dependencies: ["708CC78EEB470115"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest1.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest1.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest1.description3}"
+				"收集灵魂之力当然是为了再次运用它们。"
+				"比如用灵魂稍微激活一下&a绿宝石&r真正的力量……"
+				"村民喜欢这些宝石真的只是因为光泽吗？"
 				""
-				"{ftbquests.chapter.21E029A01EA15F54.quest1.description4}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest1.description5}"
+				"&o&c*注意：利用图腾的合成会消耗1灵魂，如果灵魂不足，那么图腾将被消耗！&r&r"
+				"&o&2*绿宝石通过探索可以找到很多，挖矿获得的则会很少，建议通过翻箱倒柜解决前中期的绿宝石需求。&r&r"
 			]
 			hide_until_deps_complete: true
 			icon: "goety:magic_emerald"
@@ -99,23 +99,23 @@
 			}]
 			shape: "octagon"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest1.subtitle}"
+			subtitle: "只要稍微加一点力……"
 			tasks: [{
 				id: "3EB894FECE754894"
 				item: "goety:magic_emerald"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest1.title}"
+			title: "【起点】灵魂冲击"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["11E3776CE5E23255"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest2.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest2.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest2.description3}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest2.description4}"
+				"铁魔法的炼金操作基本都通过这一口锅来实现&3（当然需要倒水）&r。"
+				"你有两种获得这口锅的方式："
+				"&2去寻找沼泽小屋，抢猪灵术士的锅&r；或者&6去下界找古战场，挑战远古骑士获得灰烬源质&r。"
+				"推荐第一种，因为第二种选项你目前应该是打不过的（确信"
 			]
 			icon: "irons_spellbooks:alchemist_cauldron"
 			id: "4320B37354ECBC14"
@@ -125,33 +125,33 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest2.subtitle}"
+			subtitle: "是雪啊（悲"
 			tasks: [{
 				id: "1A11EC0554E3322F"
 				item: "irons_spellbooks:alchemist_cauldron"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest2.title}"
+			title: "我煮我自己"
 			x: 0.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["11E3776CE5E23255"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest3.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest3.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest3.description3}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest3.description4}"
+				"但你可以隔着门和对面的精灵交易——对面真的有精灵吗？"
+				"记得把你的&a植物魔法辞典&r扔进去——这会解锁新的内容。"
+				"以及，准备好足够的魔力来迎接这一大门的开启。"
+				"下一页会有详细的搭建说明。"
 				"{@pagebreak}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest3.description5}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest3.description6}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest3.description7}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest3.description8}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest3.description9}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest3.description10}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest3.description11}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest3.description12}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest3.description13}"
+				"*搭建说明："
+				"门的整体结构是围绕3*3的竖正方形进行搭建的（框架是5*5），其中三条边为&a活木(A)-微光活木(B)-活木&r结构，底边的微光活木则由&6精灵门核心(C)&r进行替代，可视化如下："
+				"&2*ABA*&r"
+				"&2A   A&r"
+				"&2B   B&r"
+				"&2A   A&r"
+				"&2*ACA*&r"
+				"搭建好门结构后，&a需要将两个精灵水晶放置在两个不同的魔力池上&r，然后用森林法杖右键精灵门核心开门。"
+				"外围框架5*5正方形的四个角可以填充任意方块也可以不填，&a两个精灵水晶-魔力池结构需要在核心半径6单位范围内，而且魔力池内都需要四分之一池以上的魔力。&r"
 			]
 			icon: "botania:light_relay"
 			id: "2EA11306B3076434"
@@ -161,7 +161,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest3.subtitle}"
+			subtitle: "你开了也过不去"
 			tasks: [
 				{
 					count: 2L
@@ -187,20 +187,20 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest3.title}"
+			title: "打开精灵之门"
 			x: 0.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["11E3776CE5E23255"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest4.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest4.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest4.description3}"
+				"在制作出一个空灵魂图腾后，你需要&a在两侧安装绿宝石&r……让其真正“活”过来。然而灵魂能量的获取仍然&5需要你击杀生物。&r"
+				"当这个图腾的灵魂能量达到2500以上后，因为彻底激怒了灾厄村民，&4一些针对你的猎杀将会到来……&r"
+				"如果你拥有满灵魂能量的图腾，那么它就&b具有重生图腾的性质&r，可以让你&c复活一次&r！这当然会清空灵魂，但是也是值得的，毕竟这个世界死亡的代价可不小。"
 				""
-				"{ftbquests.chapter.21E029A01EA15F54.quest4.description4}"
+				"&o&d*也许你应该庆幸这一步不需要机械手……但是之后的一些魔法设备是需要的。&r&r"
 				"{@pagebreak}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest4.description5}"
+				"需要注意的是，灵魂能量过高引来的猎杀&c会包括劫掠兽&r，注意你的住所和工地——那些横冲直撞的大家伙可&3不会管自己面前是不是机器（&r"
 			]
 			icon: "goety:spent_totem"
 			id: "57B126A840CCD6E4"
@@ -211,7 +211,7 @@
 				type: "random"
 			}]
 			shape: "rsquare"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest4.subtitle}"
+			subtitle: "画魂点睛"
 			tasks: [
 				{
 					id: "5A1DA7696CA402B0"
@@ -231,18 +231,18 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest4.title}"
+			title: "以鲜血换取灵魂！"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["11E3776CE5E23255"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest5.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest5.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest5.description3}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest5.description4}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest5.description5}"
+				"这些材料保留了传统的充能方式）"
+				"但需要的魔力量仍然不小）"
+				"所以你可能需要考虑&b如何稳定获取魔力&r了。"
+				"植魔的材料可以和其他方面的材料&6通过一些手段相互转化&r，所以建议多生产一点。"
+				"具体转化方式参见JEI）"
 			]
 			id: "1B2D939907CB4DF0"
 			rewards: [{
@@ -251,7 +251,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest5.subtitle}"
+			subtitle: "充能后变蓝"
 			tasks: [
 				{
 					id: "48A695DC9A20FF35"
@@ -274,21 +274,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest5.title}"
+			title: "魔能材料"
 			x: -2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["57B126A840CCD6E4"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest6.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest6.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest6.description3}"
+				"通过收集灵魂，你可以将一些常见的材料&5侵染为黑暗的魔法材料&r。"
+				"然而这些材料的合成方式并不轻松，所以在完成初期的积累后，你需要另一种更加高效的生产方式。"
+				"比如一个刷怪笼来作为无限能源……？"
 			]
 			icon: "alexsmobs:skreecher_soul"
 			id: "13313120B0D22371"
 			shape: "rsquare"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest6.subtitle}"
+			subtitle: "黑暗注入……"
 			tasks: [
 				{
 					id: "40E93E4FCF656CA4"
@@ -306,37 +306,37 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest6.title}"
+			title: "灵魂侵染"
 			x: 4.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["57B126A840CCD6E4"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest7.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest7.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest7.description3}"
+				"在你选择用灵魂施法的时候，简单地将灵魂释放出去显然不能构成任何法术。"
+				"法术的释放需要&b容纳了定式的晶体&r来转换，但在你没编织定式并注入的时候，它显然就是空白的。"
+				"当然，它不止能被拿来制作法术聚晶。"
 			]
 			id: "60B15529BE147F62"
 			shape: "rsquare"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest7.subtitle}"
+			subtitle: "简易载体"
 			tasks: [{
 				id: "3722B3D1522B29BE"
 				item: "goety:empty_focus"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest7.title}"
+			title: "灵魂聚合"
 			x: 4.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["13313120B0D22371"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest8.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest8.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest8.description3}"
+				"当你做出这个之后，你会发现自己拥有了&a自定义施法&r的能力——虽然法术聚晶的效果还是固定的，但是比起铁魔法而言自由度更高一点，毕竟你可以随时打开法杖更换聚晶。"
+				"聚晶的功能也&b更为繁杂&r，有相当一部分是&6“伤害”之外的生活功能&r，不过这需要你自行探索了。"
+				"这里赠送的基础聚晶可以试试&e放电&r——这一聚晶可以进阶，一部分基础聚晶可以合成为更强大的聚晶。"
 				""
-				"{ftbquests.chapter.21E029A01EA15F54.quest8.description4}"
+				"&o&a能力有限……但是可以升级为高级魔杖。&r&r"
 			]
 			id: "643DA6D3D15ED948"
 			rewards: [{
@@ -344,7 +344,7 @@
 				item: "goety:shocking_focus"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest8.subtitle}"
+			subtitle: "帅otto"
 			tasks: [{
 				id: "34F33A665FA48518"
 				item: {
@@ -360,7 +360,7 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest8.title}"
+			title: "电棍"
 			x: 4.0d
 			y: -3.0d
 		}
@@ -370,11 +370,11 @@
 				"60B15529BE147F62"
 			]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest9.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest9.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest9.description3}"
+				"当你需要导出灵魂并用于更强力的合成时，简单的图腾显然会有些让人力不从心，而一个&b能够禁锢灵魂之力的笼子&r显然是更好的选项。"
+				"将图腾置入笼子后，它就会成为&9灵魂储存和释放的载体&r——然而图腾的充能仍需你亲自动手。"
+				"这也是后续几乎所有外部灵魂之力调用的基础。"
 				""
-				"{ftbquests.chapter.21E029A01EA15F54.quest9.description4}"
+				"&o&7*它也可以变成刷怪笼并被你抽取能量——它和刷怪笼长得很像是有原因的）&r&r"
 			]
 			id: "7338DDFCE4617258"
 			rewards: [{
@@ -384,23 +384,23 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest9.subtitle}"
+			subtitle: "灵魂下沉……"
 			tasks: [{
 				id: "4C25BB7C1147C36F"
 				item: "goety:cursed_cage"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest9.title}"
+			title: "刷怪笼（伪）"
 			x: 6.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["4320B37354ECBC14"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest10.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest10.description2}"
+				"在得到炼药锅后，你就可以清洗一些你用不着的卷轴，以及将低级墨水合成为高级墨水。"
+				"可以期待一下彩虹色的传说墨水）"
 				""
-				"{ftbquests.chapter.21E029A01EA15F54.quest10.description3}"
+				"&b&o*如果缺少墨水，工业可以合成普通墨水，而魔法催化可以产出稀有墨水。&r&r"
 			]
 			id: "7CCCB823C49F78E8"
 			rewards: [{
@@ -408,22 +408,22 @@
 				item: "biomeswevegone:green_enchanted_sapling"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest10.subtitle}"
+			subtitle: "哇，金色传说！"
 			tasks: [{
 				id: "2001D70EA3440122"
 				item: "irons_spellbooks:legendary_ink"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest10.title}"
+			title: "传奇之路"
 			x: 1.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["4320B37354ECBC14"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest11.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest11.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest11.description3}"
+				"如果你要书写法术卷轴，你需要纸，对应派系的材料以及合适的墨水。"
+				"现在，所有材料都可以通过特定的方式获得，所以——祝你好运！"
+				"&o&4*注：那个鲜血瓶子其实你自己跳进锅里也行&r&r"
 			]
 			id: "719876BE47F58EE6"
 			rewards: [{
@@ -431,7 +431,7 @@
 				item: "irons_spellbooks:scroll_forge"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest11.subtitle}"
+			subtitle: "九九归一"
 			tasks: [
 				{
 					id: "33C00FE7789AFE4D"
@@ -479,7 +479,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest11.title}"
+			title: "自然要素"
 			x: -1.0d
 			y: -4.0d
 		}
@@ -489,9 +489,9 @@
 				"7CCCB823C49F78E8"
 			]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest12.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest12.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest12.description3}"
+				"基于真实性修改，现在你需要逐级升级自己的基础法术书。"
+				"下地狱的时候注意温度，注意怪物——以及注意你自己。"
+				"升级法术书的时候，内部的法术也会一并保留，所以可以放心升级。"
 			]
 			icon: {
 				Count: 1
@@ -513,7 +513,7 @@
 			}]
 			shape: "circle"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest12.subtitle}"
+			subtitle: "杀猪爆装备，一刀999！"
 			tasks: [
 				{
 					id: "6B17EEA23E83F679"
@@ -542,17 +542,17 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest12.title}"
+			title: "地狱的馈赠"
 			x: 0.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["7CCCB823C49F78E8"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest13.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest13.description2}"
+				"升级不同级别的墨水需要不同级别的矿物。"
+				"理论上紫水晶碎片需要一个晶洞，然而有一类树可以自己缓慢长出紫水晶。"
 				""
-				"{ftbquests.chapter.21E029A01EA15F54.quest13.description3}"
+				"&o&m&d*恭喜紫水晶母岩荣获本包Joker称号！&r&r&r"
 			]
 			icon: "sophisticatedbackpacks:advanced_restock_upgrade"
 			id: "21667ABCD50F787E"
@@ -568,7 +568,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest13.subtitle}"
+			subtitle: "墨水升级也需要核心材料"
 			tasks: [
 				{
 					id: "54EFED2F5BBEF4B6"
@@ -591,15 +591,15 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest13.title}"
+			title: "基本升级材料"
 			x: 3.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["1B2D939907CB4DF0"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest14.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest14.description2}"
+				"植物魔法的魔力是个很奇怪的东西，将特定的催化器放置在魔力池下方，就可以起到神秘的作用。"
+				"所以这里建议至少准备四个池子：两个普通魔力池用来开门，一个炼金池，一个炼造池。"
 			]
 			id: "532F8BFB9374238B"
 			rewards: [{
@@ -608,7 +608,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest14.subtitle}"
+			subtitle: "很显然，炼金不科学"
 			tasks: [
 				{
 					id: "66AFC49D8DEA9E12"
@@ -621,36 +621,36 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest14.title}"
+			title: "性质变化与无中生有"
 			x: -4.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["719876BE47F58EE6"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest15.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest15.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest15.description3}"
+				"元素符文是铁魔法各职业套装的基础，也是后续装备升级法球的基础。"
+				"尽量多在冒险中收集这样的空白符文吧——白嫖的总是最香的（？"
+				"当然，它也有合理的合成方式，只是难度会比较高）"
 			]
 			id: "33A4BFBA62AFC0BB"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest15.subtitle}"
+			subtitle: "它是空白的"
 			tasks: [{
 				id: "0296C8D6C4F9A384"
 				item: "irons_spellbooks:blank_rune"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest15.title}"
+			title: "填写元素"
 			x: -3.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["1B2D939907CB4DF0"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest16.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest16.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest16.description3}"
+				"通过魔力酿造，你将获得一些&6效果更好，次数更多&r的药水！"
+				"至少能使用多次的药水已经是一大进步了（"
+				"这可以让你多进行几次&c“你被强化了，快上”&r"
 				""
-				"{ftbquests.chapter.21E029A01EA15F54.quest16.description4}"
+				"&o&b*注：“诱惑”精酿因钓鱼系统大改而被直接删除，若强行使用造成的卡顿概不负责！&r&r"
 			]
 			icon: "botania:brewery"
 			id: "588310807CE42A4A"
@@ -661,7 +661,7 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest16.subtitle}"
+			subtitle: "魔力当然也可以拿来炼制药水。"
 			tasks: [
 				{
 					id: "3FA3D58899C45DA4"
@@ -674,7 +674,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest16.title}"
+			title: "魔法炼药"
 			x: -4.0d
 			y: 1.0d
 		}
@@ -684,9 +684,9 @@
 				"588310807CE42A4A"
 			]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest17.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest17.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest17.description3}"
+				"由于药水这种东西是&d一次性&r的，而一次性的东西总是很讨厌，所以魔法提供了一种固化效果的手段。"
+				"利用酿造台和魔力，你可以&c持续获得&r某种效果的加成！"
+				"启动效果当然&b需要消耗魔力&r，你最好带上一块魔力石板在身上……"
 			]
 			id: "718DE6A22EEBDD50"
 			rewards: [{
@@ -697,22 +697,22 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest17.subtitle}"
+			subtitle: "永远存在的药水总是很诱人"
 			tasks: [{
 				id: "30020DAB711D4621"
 				item: "botania:blood_pendant"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest17.title}"
+			title: "长效加成"
 			x: -6.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["532F8BFB9374238B"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest18.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest18.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest18.description3}"
+				"我们讨论炼金的时候本质是&6物质的转变&r，而对于特定产物的&c拆分和重组&r显然也是其中一部分。"
+				"这里提供几个例子：将魔力钢锭拆分为奥术源质；将粘液球转化为末影珍珠。"
+				"更多的神秘配方就要自己探索了哦）"
 			]
 			icon: "botania:mana_void"
 			id: "01ABDF6D02F461D6"
@@ -728,7 +728,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest18.subtitle}"
+			subtitle: "坐下，基本操作"
 			tasks: [
 				{
 					id: "0313C565F0FCA771"
@@ -741,15 +741,15 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest18.title}"
+			title: "裂解与重组"
 			x: -4.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["588310807CE42A4A"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest19.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest19.description2}"
+				"60倍的长效，想想就爽！"
+				"可惜是固定位置的东西）"
 			]
 			icon: "botania:incense_stick"
 			id: "5F8D901373EA1182"
@@ -764,7 +764,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest19.subtitle}"
+			subtitle: "给你自己上香的感觉怎么样？"
 			tasks: [
 				{
 					id: "7F5D64BEBAFC5D8D"
@@ -777,21 +777,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest19.title}"
+			title: "短暂，但有效"
 			x: -4.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["2EA11306B3076434"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest20.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest20.description2}"
+				"但是它还是会吃你的魔力（虽然开门后就基本不吃了），所以你得找靠谱且稳定的魔力生产方式。"
+				"除了交换精灵特有的一些物资，你还可以让精灵帮你&3反转一些物品的能量&r，比如用诅咒金属锭交换魔力钢。虽然这种反转是单向的，但仍然足够实用。"
 				""
-				"{ftbquests.chapter.21E029A01EA15F54.quest20.description3}"
+				"&o&c*注意：不要一次投入能多次反应的材料，会导致世界崩溃，只能回档解决！&r&r"
 			]
 			id: "6FA24342A82507F6"
 			shape: "rsquare"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest20.subtitle}"
+			subtitle: "这个大门其实只是个交易入口）"
 			tasks: [
 				{
 					id: "032B3C0F3679278B"
@@ -804,35 +804,35 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest20.title}"
+			title: "PY交易"
 			x: 1.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["2EA11306B3076434"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest21.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest21.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest21.description3}"
+				"为了顺利完成后续的一些事情，火花这种远程传输魔力的结构就成为了必需品。"
+				"好处是它还算廉价，坏处是你必须通过&a和精灵的交易&r才能开始搞这些。"
+				"如果不希望每次刷烈焰人都要下地狱，也许应该看看&3诡厄巫法&r的聚晶……"
 			]
 			id: "5F1578F61B3B2D32"
 			shape: "rsquare"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest21.subtitle}"
+			subtitle: "闪耀的魔法之光"
 			tasks: [{
 				id: "5A3CAB8C0D47DD50"
 				item: "botania:spark"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest21.title}"
+			title: "魔力传输"
 			x: -1.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["6FA24342A82507F6"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest22.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest22.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest22.description3}"
+				"除了正经材料外，精灵门还可以给你提供更好看的玻璃和石英。"
+				"这允许你制造一些光污染更严重的东西……"
+				"也是某些工业配方的材料）"
 			]
 			id: "6F89A8F4809FAED1"
 			rewards: [{
@@ -840,7 +840,7 @@
 				item: "botania:rainbow_rod"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest22.subtitle}"
+			subtitle: "精灵的东西总是更好看的"
 			tasks: [
 				{
 					id: "63B652DDC29B935E"
@@ -853,17 +853,17 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest22.title}"
+			title: "炫彩装备"
 			x: 3.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["5F1578F61B3B2D32"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest23.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest23.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest23.description3}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest23.description4}"
+				"火花弥散升级可以让魔力池自动给你身上的魔力相关装备充能。"
+				"靠近就能充电——只要有电）"
+				"这下不用每次拿着板子往池子里丢了！"
+				"注：给你的这个炫彩池子和普通池子其实没啥区别，只是有光污染（"
 			]
 			icon: "botania:fabulous_pool"
 			id: "5DDEF3279BE872D5"
@@ -872,7 +872,7 @@
 				item: "botania:fabulous_pool"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest23.subtitle}"
+			subtitle: "这下真的是电池了"
 			tasks: [
 				{
 					id: "5C8772B9B34153CB"
@@ -885,7 +885,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest23.title}"
+			title: "充魔站"
 			x: -3.0d
 			y: 4.0d
 		}
@@ -895,10 +895,10 @@
 				"6FA24342A82507F6"
 			]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest24.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest24.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest24.description3}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest24.description4}"
+				"&b【完成后解锁主线章节：3M 魔力流淌】&r"
+				"作为后续高级凝聚操作的核心部件，麻烦一点也是正常的。"
+				"请准备好足够多的材料来完成这一切……然后搭建凝聚结构，你就可以准备迎接泰拉钢时代了。"
+				"有一点要注意，它不止会被用来凝聚泰拉钢。"
 			]
 			icon: "botania:terra_plate"
 			id: "27ABB5338B46217F"
@@ -915,7 +915,7 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest24.subtitle}"
+			subtitle: "嗯，很复杂"
 			tasks: [
 				{
 					id: "03194BBDEF9F93B8"
@@ -935,20 +935,20 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest24.title}"
+			title: "【终点】泰拉之光"
 			x: 0.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["1B2D939907CB4DF0"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest25.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest25.description2}"
+				"魔力能做到一些奇妙的转换，比如把一些内在具有共同点的事物视为一个相似组进行转变……"
+				"&2比如叶子，也比如种子。&r"
 				""
-				"{ftbquests.chapter.21E029A01EA15F54.quest25.description3}"
+				"&o&7*请记住，种子是可以直接种植到耕地上的。&r&r"
 			]
 			id: "19CAA60981A6A8E8"
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest25.subtitle}"
+			subtitle: "嬗变魔法"
 			tasks: [
 				{
 					id: "25A9EBF1200D1329"
@@ -961,16 +961,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest25.title}"
+			title: "罕见作物"
 			x: -4.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["57B126A840CCD6E4"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest26.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest26.description2}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest26.description3}"
+				"作为最厚重也是最接地气的元素核心，你现在就可以&6聚合地元素&r，并用其手动量产玉石。"
+				"这下不用&a狂暴挖矿&r了，对吧……"
+				"地元素核心&e可以聚合绝大部分宝石&r，所以最好&c不要只做一个。&r"
 			]
 			icon: "goety:jade"
 			id: "41990A4F90A100DA"
@@ -991,21 +991,21 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest26.subtitle}"
+			subtitle: "足够的玉，简称玉足"
 			tasks: [{
 				id: "27593D343BF67B47"
 				item: "kubejs:earth_elemental_core"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest26.title}"
+			title: "人造玉石"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["60B15529BE147F62"]
 			description: [
-				"{ftbquests.chapter.21E029A01EA15F54.quest27.description1}"
-				"{ftbquests.chapter.21E029A01EA15F54.quest27.description2}"
+				"尽管刷怪笼本身难以获取，但魔法可以直接提取笼中的生命之火，并将其转移。"
+				"右键刷怪笼后&9原本的刷怪笼将碎裂&r，但对应生物的火焰将在你的聚晶中燃起——将其&c在诅咒之笼中点燃&r，你就能够获得一个全新的，由你指定位置的刷怪笼！"
 			]
 			id: "092CD716FC19EF76"
 			rewards: [{
@@ -1013,17 +1013,17 @@
 				item: "irons_spellbooks:firefly_jar"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.21E029A01EA15F54.quest27.subtitle}"
+			subtitle: "牺牲一个，成就另一个"
 			tasks: [{
 				id: "624D690BF0E882D8"
 				item: "goety:flame_capture"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.21E029A01EA15F54.quest27.title}"
+			title: "刷怪笼的第一步"
 			x: 4.0d
 			y: 3.0d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.21E029A01EA15F54.subtitle0}"]
-	title: "{ftbquests.chapter.21E029A01EA15F54.title}"
+	subtitle: ["Blood and Soul"]
+	title: "2M 鲜血与灵魂"
 }

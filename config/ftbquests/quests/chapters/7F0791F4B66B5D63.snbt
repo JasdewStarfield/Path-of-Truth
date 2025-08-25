@@ -21,10 +21,10 @@
 		{
 			dependencies: ["7CFD3110EF8E53E2"]
 			description: [
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest1.description1}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest1.description2}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest1.description3}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest1.description4}"
+				"你会惊讶的发现，铁以上的背包升级配方出现了变化，并且&c堆叠升级消失了）&r"
+				"这是我们刻意的设计——大容量的背包加入堆叠升级后在游戏中&b过于强大&r，而且和&a抽屉&r出现了功能重复）"
+				"所以我们推荐大量杂物用箱子和背包储存；大量同类物品用抽屉储存。"
+				"具体细节可以参见“世界的表象”章节——对于抽屉和背包都有说明。"
 			]
 			hide_until_deps_complete: true
 			id: "34610E8F3D1306A9"
@@ -40,48 +40,48 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest1.subtitle}"
+			subtitle: "更强……？"
 			tasks: [{
 				id: "273E945ECB1FDDAC"
 				item: "sophisticatedbackpacks:iron_backpack"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.7F0791F4B66B5D63.quest1.title}"
+			title: "升级你的背包"
 			x: 1.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["003B99516797BF14"]
 			description: [
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest2.description1}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest2.description2}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest2.description3}"
+				"由于alex的生物存在，现在不同的下界群系中增加了&c额外的危险生物&r。"
+				"下界还会有一些&3神秘的结构&r，等待你的探索……"
+				"小心各类喷口，它们有一定的温度影响。"
 				""
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest2.description4}"
+				"&o&d*祝你下去的时候被绯红蚊子抱脸（确信&r&r"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
 			id: "6C542C19575974DB"
-			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest2.subtitle}"
+			subtitle: "下地狱去吧"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "746125215F4246FB"
 				type: "dimension"
 			}]
-			title: "{ftbquests.chapter.7F0791F4B66B5D63.quest2.title}"
+			title: "下界之旅"
 			x: 1.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["2ADB403A5CDF92C0"]
 			description: [
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest3.description1}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest3.description2}"
+				"永远明亮的世界会有冰冻的怪物，而且自带寒冷光环。"
+				"你需要搞一点威力足够大的法术——以及一些提供温度的东西。"
 			]
 			hide_until_deps_complete: true
 			icon: "blue_skies:everbright_portal"
 			id: "7A6D4E28C28302FE"
-			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest3.subtitle}"
+			subtitle: "冰天雪地"
 			tasks: [
 				{
 					count: 10L
@@ -102,23 +102,23 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.7F0791F4B66B5D63.quest3.title}"
+			title: "永远明亮"
 			x: -1.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["2ADB403A5CDF92C0"]
 			description: [
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest4.description1}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest4.description2}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest4.description3}"
+				"昏暗而压抑的世界，以及&6会把你点燃的虫子&r）"
+				"这个世界的怪物以虫子为主，而且风景不是很好，但水晶沙漠很漂亮，建议去看看）"
+				"也许需要一个&b魂火灯&r来清凉一下……？"
 				""
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest4.description4}"
+				"&o&7友情提示：这个世界产出粘液球。&r&r"
 			]
 			hide_until_deps_complete: true
 			icon: "blue_skies:everdawn_portal"
 			id: "280307C036B9B6E7"
-			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest4.subtitle}"
+			subtitle: "诸神黄昏（确信"
 			tasks: [
 				{
 					count: 10L
@@ -138,7 +138,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.7F0791F4B66B5D63.quest4.title}"
+			title: "永恒黄昏"
 			x: 1.5d
 			y: -1.5d
 		}
@@ -148,16 +148,16 @@
 				"280307C036B9B6E7"
 			]
 			description: [
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest5.description1}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest5.description2}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest5.description3}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest5.description4}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest5.description5}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest5.description6}"
+				"低配版传送器是这样的——不过至少能用。"
+				"传送石碑？不存在的。"
+				"如果你希望更准确的定点传送，那你要等一等了——中期的回溯聚晶能做到这一点。"
+				"星盘不能跨维度传送，所以你需要在下界门口——以及某些维度回家的门口放这种东西。"
+				"虽然它只有300单位的传送距离，但至少可以让你接近门口的时候直接回去。"
+				"&o&m&c星盘可以绑定任何一个星辰源，所以进副本要先绑炉石，记住了吗（x&r&r&r"
 				"{@pagebreak}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest5.description7}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest5.description8}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest5.description9}"
+				"很高兴你有耐心看到第二页，所以在这里将会提供一个&a百分百回到重生点&r的方式：通过铁魔法的“回溯”法术可以进行一个高速回传。"
+				"这个法术有很长的CD，并且需要吟唱，但是&b无视维度限制&r，而且只需要绿色墨水就可以用撰写台编写。"
+				"虽然只能拿来回你绑定的方尖碑，但有个真正的回泉水的方式你就偷着乐吧（"
 			]
 			icon: "blue_skies:star_flare"
 			id: "636824522AD771D1"
@@ -166,7 +166,7 @@
 				item: "blue_skies:star_emitter"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest5.subtitle}"
+			subtitle: "照亮回家的路……"
 			tasks: [
 				{
 					id: "4D5ACAF46F6400AA"
@@ -179,16 +179,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.7F0791F4B66B5D63.quest5.title}"
+			title: "星星点灯"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6C542C19575974DB"]
 			description: [
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest6.description1}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest6.description2}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest6.description3}"
+				"现在，我们增加了全新的钓鱼体系：你将在每种群系遇到全新的鱼！"
+				"同时，你在地表，浅层洞穴，深板岩洞穴乃至于下界和末地，都可以钓到全新的鱼！"
+				"去下界钓鱼之前，最好升级一下你的钓竿以防止被岩浆吞没……"
 			]
 			icon: {
 				Count: 1
@@ -203,49 +203,49 @@
 				item: "netherdepthsupgrade:baked_blazefish_stew"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest6.subtitle}"
+			subtitle: "嗯，上天入地去钓鱼"
 			tasks: [{
 				id: "2B5E8D78F0266D2E"
 				item: "tide:lavaproof_fishing_hook"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.7F0791F4B66B5D63.quest6.title}"
+			title: "钓鱼之王"
 			x: -1.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest7.description1}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest7.description2}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest7.description3}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest7.description4}"
+				"用一本书换一本书，用书本记录下自己的足迹。"
+				"通过在世界上的探索，你将会找到&b“守门人小屋”&r结构。通过与守门人交易&b蔚蓝旅记&r和&d御风火石&r，你将打开新世界的大门。"
+				"呃，但是门框需要你抢劫守门人的家——他的家里&9一定会有两种门框之一&r，门框可以通过魔法手段互相转换）"
+				"主线发展&c只需要蔚蓝浩空的矿物&r，战斗是选择性的，因此不用担心BOSS强度的问题！"
 				""
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest7.description5}"
+				"&o&a（你或许听说过蔚蓝浩空维度的装备限制机制？没关系，现在它被炸了。尽情使用你喜欢的装备吧！）&r&r"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
 			id: "2ADB403A5CDF92C0"
-			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest7.subtitle}"
+			subtitle: "守门人珍藏"
 			tasks: [{
 				id: "58FAD6ED3F0129B2"
 				item: "blue_skies:blue_journal"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.7F0791F4B66B5D63.quest7.title}"
+			title: "说明书"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["636824522AD771D1"]
 			description: [
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest8.description1}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest8.description2}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest8.description3}"
+				"通过一些魔法手段，你可以复制或者催生蔚蓝浩空的矿石。"
+				"通过&e地元素核心&r的催化，相当一部分&b宝石的原矿&r都可以被生产出来。然而缪铁和炙铁比较特殊，它们的元素性质使得它们需要的是&d水火元素核心&r。"
+				"如果觉得材料不够用，工业的大型挖矿机器又暂时做不出来，不妨看看魔法手段？"
 			]
 			icon: "botania:smelt_rod"
 			id: "31E9607DF423C550"
-			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest8.subtitle}"
+			subtitle: "魔法也是生产力"
 			tasks: [
 				{
 					id: "2BDD9F6B572B5A7B"
@@ -263,27 +263,27 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.7F0791F4B66B5D63.quest8.title}"
+			title: "矿物炼成"
 			x: -1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["636824522AD771D1"]
-			description: ["{ftbquests.chapter.7F0791F4B66B5D63.quest9.description1}"]
+			description: ["炼金就是换来换去，炼金就是换来换去，炼金就是换来换去……"]
 			id: "756B6F6DEAD2F57F"
-			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest9.subtitle}"
+			subtitle: "拿点带标签的东西试试？"
 			tasks: [{
 				id: "5192F0DB64CC6B90"
 				item: "blue_skies:alchemy_table"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.7F0791F4B66B5D63.quest9.title}"
+			title: "自由变换"
 			x: 1.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7A6D4E28C28302FE"]
-			description: ["{ftbquests.chapter.7F0791F4B66B5D63.quest10.description1}"]
+			description: ["在主线内容中你很快就会用到其中的一些（至少是前几个）……所以如果不想多跑几趟的话，就多收集一点吧！"]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -307,7 +307,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest10.subtitle}"
+			subtitle: "收集永昼之地的所有矿石！"
 			tasks: [
 				{
 					id: "3BEF03785CFA3206"
@@ -345,13 +345,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.7F0791F4B66B5D63.quest10.title}"
+			title: "永昼之地矿工"
 			x: -3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["280307C036B9B6E7"]
-			description: ["{ftbquests.chapter.7F0791F4B66B5D63.quest11.description1}"]
+			description: ["在主线内容中你很快就会用到其中的一些（至少是前几个）……所以如果不想多跑几趟的话，就多收集一点吧！"]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -375,7 +375,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest11.subtitle}"
+			subtitle: "收集所有恒晓之地的矿石！"
 			tasks: [
 				{
 					id: "1B4D19169802B6B1"
@@ -408,21 +408,21 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.7F0791F4B66B5D63.quest11.title}"
+			title: "恒晓之地矿工"
 			x: 3.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6E0D85E43EDF1994"]
 			description: [
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest12.description1}"
+				"这两种指南针分别可以定位&2群系&r和&c结构&r。当你找不到方向的时候，就用它们吧！"
 				""
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest12.description2}"
+				"*注：指南针的定位逻辑是在附近一定范围内搜索。因此，&3如果这个范围内没有的话&r，也会显示&4找不到目标！&r"
 			]
 			hide_until_deps_complete: true
 			icon: "minecraft:lodestone"
 			id: "78A026D295CF4593"
-			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest12.subtitle}"
+			subtitle: "感到迷茫吗？"
 			tasks: [
 				{
 					id: "203AAEC8A2C1ECD6"
@@ -443,19 +443,19 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.7F0791F4B66B5D63.quest12.title}"
+			title: "指南针们"
 			x: -1.5d
 			y: 3.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest13.description1}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest13.description2}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest13.description3}"
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest13.description4}"
+				"在海上，有时你会看到&7灾厄村民&r驾驶着自己的船。"
+				"也许干掉船长，可以找到一些&5被遗忘的历史&r……"
+				"如果需要找到&9冰冻深海&r，记得使用合适的指南针。"
+				"&b深海的亡灵船长及其手下&r和&7林地中的灾厄教父及其手下&r互为死敌，但是&c你要打两个&r，哈哈）"
 				""
-				"{ftbquests.chapter.7F0791F4B66B5D63.quest13.description5}"
+				"&o&7*注意：卷轴具有随机正负面效果，请小心使用！&r&r"
 			]
 			hide_until_deps_complete: true
 			icon: "aquamirae:rune_of_the_storm"
@@ -465,16 +465,16 @@
 				item: "aquamirae:dead_sea_scroll"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.7F0791F4B66B5D63.quest13.subtitle}"
+			subtitle: "灾厄村民：怎么哪儿都有你！"
 			tasks: [{
 				id: "4882A59E802B7E47"
-				title: "{ftbquests.chapter.7F0791F4B66B5D63.quest13.task_5224920617876946503.title}"
+				title: "被遗忘的大海"
 				type: "checkmark"
 			}]
 			x: 0.0d
 			y: 3.0d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.7F0791F4B66B5D63.subtitle0}"]
-	title: "{ftbquests.chapter.7F0791F4B66B5D63.title}"
+	subtitle: ["Spirt of Exploration"]
+	title: "2A 探索精神"
 }

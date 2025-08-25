@@ -49,16 +49,16 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description1}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description2}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description3}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description4}"
+				"你的魔法之路要从路边箱子里的一些泛着蓝紫色光芒的物质开始……"
+				"请注意收集它们，这是&9奥术的基石&r。"
+				"至于奖励，你可以理解为受到奥术感召而产生的新手福利。&b这里甚至能获取相当强大的魔法力量……&r）"
+				"后续魔法任务线中，主线内容将&l&a使用非圆形图标&r&r以便于识别。"
 				""
-				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description5}"
+				"&o&9*在法师塔的箱子中可以轻松获取这些源质，村庄的牧师和制图师结构宝箱与废弃地狱门的箱子中也会有。当然，你也可以夜间去和亡灵术士对决来获取掉落物……&r&r"
 				"{@pagebreak}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description6}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description7}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest1.description8}"
+				"魔法侧的特征是&a需求个体的力量与“人”的参与操作&r，相应的&c相当一部分产物是不能自动化的&r，但&9可以通过炼金术复刻或手动批量生产&r。"
+				"同时，魔法侧任务并不会如同工业侧那样&6把每一环都详细展现&r，你需要通过JEI查看一部分物品的合成需求。"
+				"不同于&7工业的规整与机械化&r，魔法要求&d活跃的思维与灵魂&r。"
 			]
 			hide_details_until_startable: true
 			hide_until_deps_complete: true
@@ -80,25 +80,25 @@
 			]
 			shape: "square"
 			size: 1.6d
-			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest1.subtitle}"
+			subtitle: "受到奥术感召"
 			tasks: [{
 				id: "6E5FCD00F7C67EA4"
 				item: "irons_spellbooks:arcane_essence"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.58C198C40A81EF6B.quest1.title}"
+			title: "【起点】探索自然"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
 			description: [
-				"{ftbquests.chapter.58C198C40A81EF6B.quest2.description1}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest2.description2}"
+				"所以你需要寻求自然中的力量——比如找找那些地上的和地下的朋友。"
+				"&l&2由于没有铁，你可以先用木头装水）&r&r"
 				""
-				"{ftbquests.chapter.58C198C40A81EF6B.quest2.description3}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest2.description4}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest2.description5}"
+				"如果你实在找不到白色花瓣……可以试试花肥。植魔的大部分设备&d需要你直接扔东西进去&r——当然右键灌水还是可以做到的。"
+				"如果你实在看不懂合成方式到底是怎么操作的，&l&a请先读书！&r&r"
+				"当然书里的配方不一定对，因为经过了魔改，在配方上JEI优先级高于指导书……"
 			]
 			icon: "botania:cosmetic_botanist_emblem"
 			id: "788F3EC85AC1172E"
@@ -108,7 +108,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest2.subtitle}"
+			subtitle: "个人的能力终究有限。"
 			tasks: [
 				{
 					id: "59A31B2BD0665A8D"
@@ -137,20 +137,20 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.58C198C40A81EF6B.quest2.title}"
+			title: "外在的帮助"
 			x: -2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
 			description: [
-				"{ftbquests.chapter.58C198C40A81EF6B.quest3.description1}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest3.description2}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest3.description3}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest3.description4}"
+				"作为施法的基本工具，一本法术书和一个抄写台是有必要的。"
+				"……这应该也是你前期唯一能做到的施法手段。"
+				"默认施法按键是V，但你可以通过制作法杖来进行右键施法。"
+				"当然，你也可以去抢劫术士的抄写台——但你更可能被术士打死就是了。"
 				""
-				"{ftbquests.chapter.58C198C40A81EF6B.quest3.description5}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest3.description6}"
+				"&o&c注意：所有的法术都有友伤，释放范围法术或连锁型法术时请注意自己的安全！&r&r"
+				"&m&6&o施法不规范亲人两行泪&r&r&r"
 			]
 			icon: "irons_spellbooks:ender_upgrade_orb"
 			id: "28A1C39EF1446334"
@@ -176,7 +176,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest3.subtitle}"
+			subtitle: "你是一位法师。"
 			tasks: [
 				{
 					id: "150978E8B38FB4B1"
@@ -200,32 +200,32 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.58C198C40A81EF6B.quest3.title}"
+			title: "内心的力量"
 			x: 2.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["28A1C39EF1446334"]
 			description: [
-				"{ftbquests.chapter.58C198C40A81EF6B.quest4.description1}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest4.description2}"
+				"你需要一套自己的衣服）"
+				"所以，先从布料开始吧）"
 			]
 			id: "5F5CA37CCE531CAA"
-			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest4.subtitle}"
+			subtitle: "喔，你最好是不要光溜溜的到处跑"
 			tasks: [{
 				id: "03B305793FF64434"
 				item: "irons_spellbooks:magic_cloth"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.58C198C40A81EF6B.quest4.title}"
+			title: "保护自己"
 			x: 2.5d
 			y: 2.0d
 		}
 		{
 			dependencies: ["788F3EC85AC1172E"]
 			description: [
-				"{ftbquests.chapter.58C198C40A81EF6B.quest5.description1}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest5.description2}"
+				"你会发现活石可以催化一些工业的原料。"
+				"至于活木，它是很好的魔力载体。"
 			]
 			icon: "botania:pure_daisy"
 			id: "735172F79325756F"
@@ -235,7 +235,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest5.subtitle}"
+			subtitle: "在纯洁的白雏菊帮助下……"
 			tasks: [
 				{
 					id: "1959A768803842EB"
@@ -248,7 +248,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.58C198C40A81EF6B.quest5.title}"
+			title: "活化生命"
 			x: -2.5d
 			y: -1.0d
 		}
@@ -257,7 +257,7 @@
 				"735172F79325756F"
 				"71D2AC46FA223631"
 			]
-			description: ["{ftbquests.chapter.58C198C40A81EF6B.quest6.description1}"]
+			description: ["现在，你可以准备沟通一些天地之间的魔力，用它们生产属于你的符文吧。"]
 			icon: "botania:runic_altar"
 			id: "5DC5D0BF9E2C91CC"
 			rewards: [{
@@ -266,13 +266,13 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest6.subtitle}"
+			subtitle: "拉出去祭天！"
 			tasks: [{
 				id: "626B38A8103DFA61"
 				item: "botania:runic_altar"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.58C198C40A81EF6B.quest6.title}"
+			title: "祭祀天地"
 			x: -4.0d
 			y: 0.0d
 		}
@@ -282,9 +282,9 @@
 				"66D6C25EC4F7A966"
 			]
 			description: [
-				"{ftbquests.chapter.58C198C40A81EF6B.quest7.description1}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest7.description2}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest7.description3}"
+				"和常规护甲不同，魔法线的护甲往往自带对于魔法的加成。"
+				"这套护甲是初期最容易获得的法师护甲，它能帮你完成一些法力消耗比较高的法术（"
+				"顺带一提，铁魔法的法力回复是按比例进行的，所以法力总值高一点没什么坏处。"
 			]
 			icon: {
 				Count: 1
@@ -316,7 +316,7 @@
 				type: "item"
 			}]
 			shape: "circle"
-			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest7.subtitle}"
+			subtitle: "这意味着你穿上后可以出去浪了"
 			tasks: [
 				{
 					id: "3FAC8ECB05056EFE"
@@ -383,33 +383,33 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.58C198C40A81EF6B.quest7.title}"
+			title: "流浪法师"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["28A1C39EF1446334"]
-			description: ["{ftbquests.chapter.58C198C40A81EF6B.quest8.description1}"]
+			description: ["为了让你的施法更方便（也就是右键能放法术），也为了前期能简单护身，你最好整上一根。"]
 			id: "66D6C25EC4F7A966"
-			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest8.subtitle}"
+			subtitle: "是的，这也是近战武器"
 			tasks: [{
 				id: "465956FE248BE3E4"
 				item: "irons_spellbooks:graybeard_staff"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.58C198C40A81EF6B.quest8.title}"
+			title: "大 木 棒"
 			x: 2.5d
 			y: -1.0d
 		}
 		{
 			dependencies: ["788F3EC85AC1172E"]
 			description: [
-				"{ftbquests.chapter.58C198C40A81EF6B.quest9.description1}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest9.description2}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest9.description3}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest9.description4}"
+				"现在你需要一点火力……来帮助你产出魔力。"
+				"你会发现，基本所有初级产能花的配方都变成了&b花瓣+奥术源质+金属核心&r的配方。"
+				"很合理的催化过程，不是吗？而且你需要的花瓣也变少了（乐"
+				"如果你拿不到金属核心，这说明你需要&6发展你的工业体系&r了。"
 				""
-				"{ftbquests.chapter.58C198C40A81EF6B.quest9.description5}"
+				"&o&a*黑莲花可以用花瓣合成来临时产魔，但同样后续用于暗黑莲花（不再能探索/战斗获取）的催化，请勿浪费。&r&r"
 			]
 			icon: "botania:creative_pool"
 			id: "71D2AC46FA223631"
@@ -419,7 +419,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest9.subtitle}"
+			subtitle: "容纳能源的池子就是电池（确信"
 			tasks: [
 				{
 					id: "0E280060FEFFD99A"
@@ -437,7 +437,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.58C198C40A81EF6B.quest9.title}"
+			title: "电池，嗯"
 			x: -2.5d
 			y: 2.0d
 		}
@@ -447,12 +447,12 @@
 				"28A1C39EF1446334"
 			]
 			description: [
-				"{ftbquests.chapter.58C198C40A81EF6B.quest10.description1}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest10.description2}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest10.description3}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest10.description4}"
+				"&b【完成后解锁主线章节：2M 鲜血与灵魂】&r"
+				"你已经初步了解了魔法的力量，那么，准备一个收集灵魂的图腾吧。"
+				"我们的魔法故事将进入新的篇章，你也将感受到属于灵魂的力量。"
+				"也许应该把它&9安装在你的护符槽位&r，然后&b去收割一些灵魂……&r"
 				""
-				"{ftbquests.chapter.58C198C40A81EF6B.quest10.description5}"
+				"&o&c新篇章：指献祭一本书来做图腾&r&r"
 			]
 			icon_scale: 1.2d
 			id: "708CC78EEB470115"
@@ -469,7 +469,7 @@
 			}]
 			shape: "pentagon"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest10.subtitle}"
+			subtitle: "你，准备好了吗？"
 			tasks: [{
 				id: "433D20074EBE5A6E"
 				item: {
@@ -482,19 +482,19 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.58C198C40A81EF6B.quest10.title}"
+			title: "【终点】灵魂的根源"
 			x: 0.0d
 			y: 3.0d
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
 			description: [
-				"{ftbquests.chapter.58C198C40A81EF6B.quest11.description1}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest11.description2}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest11.description3}"
-				"{ftbquests.chapter.58C198C40A81EF6B.quest11.description4}"
+				"在世界上游荡的不仅仅是你，还有一些魔法道路上的同行者。"
+				"有时，你会在特定的群系发现一些圆滚滚的小东西，但是&9穿着法师的衣服&r。用&5奥术源质&r可以驯服它们，然后你就拥有了可以施法的魔宠！"
+				"不同系别的魔宠需要不同的材料来治愈，但施法治疗应该更快。"
+				"你可以&9用魔盒&r装起来你的一部分魔宠，也可以&d用饰品绑定&r后快捷键召唤和收回它们。"
 				""
-				"{ftbquests.chapter.58C198C40A81EF6B.quest11.description5}"
+				"据说&a给自己的德鲁伊一瓶剧毒试剂&r，&e用治愈之环净化还没驯服的死灵魔宠&r，或者&3在野生魔宠的附近用竖琴施放音乐魔法&r，能够产生一些奇妙的变化……"
 			]
 			icon: "goety:crystal_ball"
 			id: "03965CF8706E3031"
@@ -510,17 +510,17 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.58C198C40A81EF6B.quest11.subtitle}"
+			subtitle: "没有红白球怎么办？"
 			tasks: [{
 				id: "7EB1CE9597E9903B"
-				title: "{ftbquests.chapter.58C198C40A81EF6B.quest11.task_9129305061550821435.title}"
+				title: "就决定是你了！"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.58C198C40A81EF6B.quest11.title}"
+			title: "魔法道路上的伙伴"
 			x: 0.0d
 			y: 1.5d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.58C198C40A81EF6B.subtitle0}"]
-	title: "{ftbquests.chapter.58C198C40A81EF6B.title}"
+	subtitle: ["Primal Shaman"]
+	title: "1M 原始萨满"
 }

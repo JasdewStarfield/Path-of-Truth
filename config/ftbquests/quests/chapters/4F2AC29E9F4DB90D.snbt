@@ -63,9 +63,9 @@
 		{
 			dependencies: ["6E0D85E43EDF1994"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest1.description1}"
+				"所以，工业的新篇章也对你开启了。"
 				""
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest1.description2}"
+				"&o&3真实的炼铁就是这么困难……炼钢其实也是如此。&r&r"
 			]
 			hide_until_deps_complete: true
 			id: "11EC3A84F0C84E65"
@@ -76,27 +76,27 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest1.subtitle}"
+			subtitle: "现在你获得了铁！"
 			tasks: [{
 				id: "22AC8380896E7FE2"
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest1.title}"
+			title: "【起点】工业基石"
 			x: 0.0d
 			y: -1.5d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest2.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest2.description2}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest2.description3}"
+				"通过这些机械，你可以自动化完成很多事项，包括但不限于："
+				"挖矿，砍树，收割，清理路面，以及批量加工。"
+				"做好你的自动化区域，这样你才有资本继续探索下去——翻箱倒柜能收获的资源终归有限。"
 			]
 			icon: "refinedstorage:wrench"
 			id: "7678AE43CAD02807"
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest2.subtitle}"
+			subtitle: "全自动基本生活"
 			tasks: [
 				{
 					id: "48234F51A3513B8A"
@@ -124,19 +124,19 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest2.title}"
+			title: "更多的自动化选项！"
 			x: -2.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest3.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest3.description2}"
+				"凿子，一种批量加工部分方块产生装饰方块的工具。不仅能自选纹路，而且还没有耐久度限制！"
+				"建筑师的最爱——虽然一次只能处理一组，但应该也够用了）"
 			]
 			id: "2B406E71D5BDF8F6"
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest3.subtitle}"
+			subtitle: "不好看就凿一下换个模板"
 			tasks: [{
 				id: "0C0BF712FDF13068"
 				item: {
@@ -146,15 +146,15 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest3.title}"
+			title: "好看吗？"
 			x: 2.0d
 			y: -0.5d
 		}
 		{
 			dependencies: ["2B406E71D5BDF8F6"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest4.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest4.description2}"
+				"什么，你说一次凿一组都无法满足你？那还是试试自动产线吧）"
+				"它同样可以帮助你调整某些方块的形态以满足工业需求，比如切制石灰岩。"
 			]
 			id: "73E629F1A17FB01C"
 			rewards: [{
@@ -164,23 +164,23 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest4.subtitle}"
+			subtitle: "是的，这个是拿来做装饰的"
 			tasks: [{
 				id: "540638E716CDF4C8"
 				item: "rechiseledcreate:mechanical_chisel"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest4.title}"
+			title: "全自动装饰方块生产器"
 			x: 2.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["7678AE43CAD02807"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest5.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest5.description2}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest5.description3}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest5.description4}"
+				"为了实现真正的全自动，你需要让你的工业结构自己动。"
+				"所以，create的旋转结构就成为了廉价但合理的选择——当然，你最好是不要转的太快，以及不要自己去碰刀片（"
+				"虽然底盘本身可以组成整体结构，但相比之下，强力胶粘一下无疑是更廉价的。（而且可以连接更多种类的方块）"
+				"&o&b哈利路大旋风！&r&r"
 			]
 			icon: "goety:rotation_focus"
 			id: "6FCB66E5BB478C58"
@@ -191,7 +191,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest5.subtitle}"
+			subtitle: "奇怪的旋转结构"
 			tasks: [
 				{
 					id: "21460245451253F6"
@@ -215,20 +215,20 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest5.title}"
+			title: "神秘转转"
 			x: -2.0d
 			y: -2.5d
 		}
 		{
 			dependencies: ["5584865A3F339D6E"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest6.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest6.description2}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest6.description3}"
+				"&a【完成后解锁任务线：下界之旅】&r"
+				"你获得了一个笼子，但很显然你需要给里面找到合适的房客。"
+				"下地狱去吧，朋友！"
 			]
 			icon: "create:empty_blaze_burner"
 			id: "003B99516797BF14"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest6.subtitle}"
+			subtitle: "我人没了"
 			tasks: [
 				{
 					id: "3B61818AD5CFF549"
@@ -245,39 +245,39 @@
 						}
 					}
 					id: "53B8DE7861B4088E"
-					title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest6.task_6032816309479409806.title}"
+					title: "访问下界"
 					type: "dimension"
 				}
 			]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest6.title}"
+			title: "烧起来了……吗？"
 			x: -2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["003B99516797BF14"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest7.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest7.description2}"
+				"有条件的话可以多抓几只，烈焰人不仅可以帮你加热炉子，开火车也是一把好手。"
+				"烈焰人需要燃料——一般来说是煤炭木炭，但也可以通过流体（插入吸管后输入）的方式灌入岩浆，而且岩浆很耐烧。"
 				""
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest7.description3}"
+				"&a提示：你可以使用结构罗盘寻找下界要塞！&r"
 				""
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest7.description4}"
+				"&o&c*那么从哪里搞那么多岩浆？&r&r"
 			]
 			icon: "create:blaze_burner"
 			id: "079D9B3E0E12C25C"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest7.subtitle}"
+			subtitle: "我TM莱纳！"
 			tasks: [{
 				id: "5C39BB7A279025A1"
 				item: "create:blaze_burner"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest7.title}"
+			title: "真·烧起来了"
 			x: 0.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["079D9B3E0E12C25C"]
-			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest8.description1}"]
+			description: ["你获得了一些可以用来处理液体的耐腐蚀金属，这也意味着流体方面的篇章要开启了。"]
 			icon: "immersiveengineering:ingot_constantan"
 			id: "4D493DCB4C0B99C0"
 			rewards: [{
@@ -287,7 +287,7 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest8.subtitle}"
+			subtitle: "玩弄液体让你很开心吗"
 			tasks: [
 				{
 					id: "6F6E71B404D74CDF"
@@ -300,15 +300,15 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest8.title}"
+			title: "容纳流体的金属"
 			x: 0.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
-			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest9.description1}"]
+			description: ["由于铜会生锈，只有康铜才能够抵挡流体的腐蚀，并被铸造为可以容纳流体的器械。"]
 			id: "28617A52922404CE"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest9.subtitle}"
+			subtitle: "这里的铜其实是康铜"
 			tasks: [{
 				id: "36A3FEAB539C0157"
 				item: "create:copper_casing"
@@ -319,10 +319,10 @@
 		}
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
-			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest10.description1}"]
+			description: ["液体总是要流淌的，然而抗腐蚀的材料不多"]
 			icon: "create:mechanical_pump"
 			id: "27FD1F76136CBD0B"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest10.subtitle}"
+			subtitle: "你甚至可以用它们处理牛奶（笑"
 			tasks: [
 				{
 					id: "3D101CE978CB5A33"
@@ -335,47 +335,47 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest10.title}"
+			title: "流淌……"
 			x: 0.0d
-			y: 5.5d
+			y: 6.0d
 		}
 		{
 			dependencies: [
 				"28617A52922404CE"
+				"27FD1F76136CBD0B"
 				"62214C4C462BB308"
-				"09A8B7A721106DE1"
 			]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest11.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest11.description2}"
+				"所有流体机械都需要核心，而我们设定的核心就是流体工程块。"
+				"它几乎出现于所有流体机械的合成配方中，所以——多造一些吧（笑"
 			]
 			id: "1D0D60C89EA75663"
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest11.subtitle}"
+			subtitle: "这很科学，不是吗？"
 			tasks: [{
 				id: "3FF03B9622F19ED2"
 				item: "kubejs:fluid_engineering"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest11.title}"
+			title: "流体机械的基石"
 			x: 0.0d
 			y: 8.0d
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest12.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest12.description2}"
+				"为了让液体进入一些东西，你需要足够强力的喷射器（虽然其实也没那么强）"
+				"所以，注液器就成为了生产的必需品……虽然只能用来涂涂抹抹，但也足够了不是吗）"
 			]
 			id: "1DC10C93572BD016"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest12.subtitle}"
+			subtitle: "呃，有什么东西灌进来了"
 			tasks: [{
 				id: "49A93F92B22C146D"
 				item: "create:spout"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest12.title}"
+			title: "注入！"
 			x: 0.0d
 			y: 10.0d
 		}
@@ -385,10 +385,9 @@
 				"370AE293C357A2D5"
 			]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest13.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest13.description2}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest13.description3}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest13.description4}"
+				"嗯，相信你已经查看过合金的配方了，有没有骂人的冲动？有就骂出来，反正骂了也没用。"
+				"&7压制&r，&b水和岩浆注入&r，以及&a振动&r，也就是说你需要一条产线来生产黄铜。"
+				"好消息是打怪获得的古代黄铜可以被简单转化为黄铜，这意味着只要你生产出第一个，那么后续就不算太难。"
 			]
 			id: "76BE4625CCF2F867"
 			rewards: [{
@@ -398,33 +397,35 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest13.subtitle}"
+			subtitle: "超级难得）"
 			tasks: [{
 				id: "2515C545DCD9791F"
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest13.title}"
+			title: "真正的合金"
 			x: 0.0d
 			y: 13.0d
 		}
 		{
 			dependencies: ["76BE4625CCF2F867"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest14.description1}"
+				"至于为什么配方是用的流体工程块……大约是液压手吧（心虚）"
 				""
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest14.description2}"
+				"如果你发现你做不出魔法手部零件，考虑发展魔法线！"
 				""
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest14.description3}"
+				"（不喜欢改版的机械手材质的话，可以手动启用内置的“Revert Brass Hand”资源包）"
+				""
+				"以免你不知道硝粉的获取方式：使用改良堆肥桶堆肥，或者寻找深海的热泉喷口然后使用喷口收集器收集（收集器需要填充羊毛或复合滤网才能工作）"
 			]
 			id: "7F98F9F01F44BA28"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest14.subtitle}"
+			subtitle: "两只手不够用就多来几个"
 			tasks: [{
 				id: "0FE1F810BAA152F4"
 				item: "create:deployer"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest14.title}"
+			title: "更多的“帮手”"
 			x: -2.0d
 			y: 16.0d
 		}
@@ -434,37 +435,37 @@
 				"0C1EAC9547A45268"
 			]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest15.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest15.description2}"
+				"虽然这东西叫电子管没错，但是很显然它不能充电，只能通过一些微弱的压电效应达成部分有限的智能化，你也没进入电子时代）"
+				"不过有一些组件还是需要它。"
 				""
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest15.description3}"
+				"温馨提示：这个东西你会用到&4很多&r！而且纯靠手搓的话会非常烦人！建议你最晚也从这里就开始考虑自动化的问题……"
 			]
 			id: "73CD9D2DD215B5F5"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest15.subtitle}"
+			subtitle: "嗯，伪电子时代"
 			tasks: [{
 				id: "157376255721FB4A"
 				item: "create:electron_tube"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest15.title}"
+			title: "工业化的结晶"
 			x: -3.0d
 			y: 14.5d
 		}
 		{
 			dependencies: ["76BE4625CCF2F867"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest16.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest16.description2}"
+				"你应该发现了，在鼓风机前面放某些特定的东西可以实现批量加工）"
+				"但很显然，单格水和单格岩浆都不是很容易放置，而营火又容易烫到自己，所以——这就是解决方案。"
 			]
 			id: "07C921FBCF56E703"
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest16.subtitle}"
+			subtitle: "其实是保护你自己）"
 			tasks: [{
 				id: "3EFB40B9190D79FE"
 				item: "create_connected:empty_fan_catalyst"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest16.title}"
+			title: "鼓风机输出"
 			x: -0.5d
 			y: 15.0d
 		}
@@ -477,7 +478,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest17.subtitle}"
+			subtitle: "很好，看来你意识到了"
 			tasks: [
 				{
 					id: "16064AFB54D631EB"
@@ -500,7 +501,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest17.title}"
+			title: "触媒装箱"
 			x: 0.0d
 			y: 16.0d
 		}
@@ -510,19 +511,19 @@
 				"7F98F9F01F44BA28"
 			]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest18.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest18.description2}"
+				"很好，你现在开始接触到精密机械了，希望你以后会习惯序列组装中的废料（？"
+				"序列组装总是有失败几率的，所以如果失败了，不要骂人，再来一次）"
 				""
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest18.description3}"
+				"&n注意：从这一步开始，你将涉及到永昼之地或者恒晓之地的特殊矿物。如果你还没有涉及到这些维度，出发去探险吧！&r"
 			]
 			id: "51676EF62E7A17F3"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest18.subtitle}"
+			subtitle: "基础元件的基础"
 			tasks: [{
 				id: "5D18D64F0341F617"
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest18.title}"
+			title: "精密工业"
 			x: -4.0d
 			y: 16.0d
 		}
@@ -532,37 +533,37 @@
 				"370AE293C357A2D5"
 			]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest19.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest19.description2}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest19.description3}"
+				"硬邦邦的黑曜石板子显然是很合适的工程材料，对吧）"
+				"你&l&b不能&r&r把它们镶嵌在盔甲上增加保护，真是遗憾）"
+				"这里缅怀一下曾经的匠魂（"
 				""
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest19.description4}"
+				"挖掘铅矿前请做好准备，否则容易铅中毒！"
 			]
 			id: "10CF3F30EC2A65E8"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest19.subtitle}"
+			subtitle: "这显然比铁硬）"
 			tasks: [{
 				id: "1EB36C7B8E90771D"
 				item: "create:sturdy_sheet"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest19.title}"
+			title: "来硬的"
 			x: 2.0d
 			y: 16.0d
 		}
 		{
 			dependencies: ["1DC10C93572BD016"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest20.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest20.description2}"
+				"由于我们追求真实，你现在不可以通过杂酚油桶简单粗暴的生成这些东西了：你需要注液，不过问题应该也不大。"
+				"*小声：反正杂酚油总会多到你用不完（"
 			]
 			id: "607A957382E65976"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest20.subtitle}"
+			subtitle: "沉浸工业的基础"
 			tasks: [{
 				id: "482B4DBFF340F535"
 				item: "immersiveengineering:treated_wood_horizontal"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest20.title}"
+			title: "防腐措施"
 			x: 3.0d
 			y: 14.5d
 		}
@@ -573,9 +574,9 @@
 				"2D0DAA028D9B2249"
 			]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest21.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest21.description2}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest21.description3}"
+				"&a【完成后解锁主线章节：3I 钢铁雄心】&r"
+				"你成功的开启了精密时代，更多的工业和更有趣的历程在像你展开。"
+				"走下去吧，走到世界尽头，真相会在那里等着你。"
 			]
 			id: "242C57AF7F6116E4"
 			rewards: [{
@@ -585,23 +586,23 @@
 			}]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest21.subtitle}"
+			subtitle: "新时代的曙光！"
 			tasks: [{
 				id: "5192B0EA05B4611F"
 				item: "kubejs:precise_engineering"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest21.title}"
+			title: "【终点】精密时代"
 			x: 0.0d
 			y: 22.0d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest22.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest22.description2}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest22.description3}"
-				"[\"\",{\"underlined\":1,\"translate\":\"ftbquests.chapter.4F2AC29E9F4DB90D.quest22.rich_description1\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1A4352FB579FF77E\"}}]"
+				"&a【完成后解锁附加章节：标准化生产】&r"
+				"获得铁之后，四种常用（以及接下来会变得常用）的金属——铜、锌、锡、镍——就可以实现量产了！"
+				"虽然搭建产线的过程可能比较累，但是全自动还是值得的！你可以先从这四种开始，继续研究如何量产后续的材料。为此我们也提供了指南："
+				"{ \"text\": \"点击跳转\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"1A4352FB579FF77E\" } }"
 			]
 			icon: "farmersdelight:rice"
 			id: "40840BF9F23BC8A1"
@@ -611,19 +612,19 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest22.subtitle}"
+			subtitle: "磨刀不误砍柴工"
 			tasks: [{
 				id: "19B97E76877E5AA8"
-				title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest22.task_1853651769184115368.title}"
+				title: "知道了"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest22.title}"
+			title: "粒粒皆辛苦"
 			x: 0.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["73CD9D2DD215B5F5"]
-			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest23.description1}"]
+			description: ["终于可以用简单的方式分拣物品了，不是吗？"]
 			icon: "create:attribute_filter"
 			id: "029AA89F07AEE09D"
 			rewards: [{
@@ -633,7 +634,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest23.subtitle}"
+			subtitle: "这居然是过滤器！"
 			tasks: [
 				{
 					id: "0D53DA1B91F52319"
@@ -656,15 +657,15 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest23.title}"
+			title: "智能时代"
 			x: -2.0d
 			y: 14.5d
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest24.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest24.description2}"
+				"祛魔、复印附魔书、经验流体化，甚至打造出超越原有等级上限的附魔……有了附魔工业，你能做到很多事。"
+				"使用思索功能了解更多）"
 			]
 			icon: "create_enchantment_industry:enchanting_guide"
 			id: "18A0D2E7A8E61D45"
@@ -674,7 +675,7 @@
 				xp: 3
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest24.subtitle}"
+			subtitle: "经验+3"
 			tasks: [
 				{
 					id: "70805C73F6CC79A2"
@@ -692,15 +693,15 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest24.title}"
+			title: "附魔工业"
 			x: -2.0d
 			y: 7.0d
 		}
 		{
 			dependencies: ["37C7364F0F3E8C89"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest25.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest25.description2}"
+				"事实就是：这章有三个工程块（不过这一个目前不是必须项）"
+				"物流工程块允许你合成很多可以用于物流的小工具，尤其是机械动力在6.0中新增的强大物流工具。它们将帮助你实现工厂化物流和自动下单等功能！"
 			]
 			id: "6F27F12FD5EBE559"
 			rewards: [
@@ -771,22 +772,22 @@
 			]
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest25.subtitle}"
+			subtitle: "什么？还有工程块？"
 			tasks: [{
 				id: "5151D84AFEC27F12"
 				item: "kubejs:logistical_engineering"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest25.title}"
+			title: "大物流时代！"
 			x: 0.0d
 			y: 19.0d
 		}
 		{
 			dependencies: ["6F27F12FD5EBE559"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest26.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest26.description2}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest26.description3}"
+				"铁路系统是机械动力的一大特色。它可以用于物流，抑或是单纯地观光。"
+				"铁路系统最突出的优势在于很适合远距离的运输，因为它可以跨越传送门（下界、蔚蓝浩空、深暗之园的传送门都可以！），且不需要途径的区块被加载也能正常运行（但如果你要在站台装卸货的话，还是需要强加载站台）。"
+				"具体的教程，请参考思索系统。"
 			]
 			icon: "create:track"
 			id: "3DD1A739EA5EDB1D"
@@ -808,7 +809,7 @@
 				}
 			]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest26.subtitle}"
+			subtitle: "滴滴"
 			tasks: [
 				{
 					id: "4FF8EABCEF4709B2"
@@ -821,34 +822,34 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest26.title}"
+			title: "铁道运输"
 			x: -1.5d
 			y: 18.0d
 		}
 		{
 			dependencies: ["10CF3F30EC2A65E8"]
-			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest27.description1}"]
+			description: ["提示：这一步任务属于本章的支线，不一定要在现在完成。"]
 			id: "37C7364F0F3E8C89"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest27.subtitle}"
+			subtitle: "它能做什么呢？"
 			tasks: [{
 				id: "5CA376BDC1069E53"
 				item: "create:railway_casing"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest27.title}"
+			title: "与众不同的机壳"
 			x: 0.0d
 			y: 17.0d
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest28.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest28.description2}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest28.description3}"
+				"通过进入下界，你将会看到大量的岩浆，并思考自己能不能利用它们……"
+				"幸运的是，连续流体&b超过10000单位液体源（1单位为一格）就视为无限&r这一规律仍然部分有效。"
+				"也就是说，你可以通过软管滑轮从下界岩浆池中抽取&c无尽&r的岩浆！"
 				""
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest28.description4}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest28.description5}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest28.description6}"
+				"&6&o*这下烈焰人吃饱了）&r&r"
+				"&b需要注意的是，软管滑轮是通过其软管放置面之上的液体量来计算是否无尽的，所以你需要对岩浆池进行一次探底）&r"
+				"&d基于某些神秘限制，只有下界才能产出无尽的岩浆……&r"
 			]
 			icon: "artifacts:fire_gauntlet"
 			id: "794FE24A776917F2"
@@ -860,7 +861,7 @@
 			}]
 			shape: "diamond"
 			size: 1.0d
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest28.subtitle}"
+			subtitle: "大型工程"
 			tasks: [
 				{
 					id: "2D51661924528B20"
@@ -874,7 +875,7 @@
 					type: "advancement"
 				}
 			]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest28.title}"
+			title: "无尽岩浆"
 			x: -2.0d
 			y: 9.0d
 		}
@@ -884,15 +885,15 @@
 				"3ACA6DDA21386252"
 			]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest29.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest29.description2}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest29.description3}"
+				"玫瑰石英是一种具有电学性质的材料，在受到特定刺激后会产生电压……然而，你并不能指望用这点微弱的电压来积累电力。"
+				"即便如此，它还是有用的。为了制造它，你需要一种叫&c红石酸&r的导电流体……。"
+				"当然了，制作完成后它也不能直接使用，还是要用砂纸打磨之后才能正常安装（"
 				""
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest29.description4}"
+				"聪明的小伙伴可能已经发现了，红石酸加上一点点活石，就能用来量产红石粉……没事，你的电子元件不会介意这点掺进来的杂质的，对吧？"
 			]
 			icon: "create:polished_rose_quartz"
 			id: "0C1EAC9547A45268"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest29.subtitle}"
+			subtitle: "哦还没有"
 			tasks: [
 				{
 					id: "5D0AA9CE056CA4DC"
@@ -905,38 +906,38 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest29.title}"
+			title: "有电了……吗？"
 			x: -2.0d
 			y: 13.0d
 		}
 		{
 			dependencies: ["4D493DCB4C0B99C0"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest30.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest30.description2}"
+				"至少它确实增加了一些弹性（）"
+				"所有的弹簧都需要一台足够卷的机器来完成制造。"
 			]
 			id: "3EFEF14D70B01F51"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest30.subtitle}"
+			subtitle: "老北京机内卷"
 			tasks: [{
 				id: "27A6A7C13580E12F"
 				item: "vintageimprovements:spring_coiling_machine"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest30.title}"
+			title: "卷起来了"
 			x: 2.0d
 			y: 6.0d
 		}
 		{
 			dependencies: ["3EFEF14D70B01F51"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest31.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest31.description2}"
+				"单个的弹簧显然不足以支撑起机械工作的力量，因此需要将其组合。"
+				"有的时候你甚至需要将其压入工程块作为模块化的组件。"
 				""
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest31.description3}"
+				"&o&7*看名字你就能猜到，后面显然会有更多的弹簧组）&r&r"
 			]
 			icon: "kubejs:basic_spring_set"
 			id: "62214C4C462BB308"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest31.subtitle}"
+			subtitle: "装配，行动，完美"
 			tasks: [{
 				id: "0ECDCFDFF1BE216E"
 				item: "kubejs:basic_spring_set"
@@ -947,60 +948,60 @@
 		}
 		{
 			dependencies: ["1D0D60C89EA75663"]
-			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest32.description1}"]
+			description: ["对于某些配方，你需要比注液器更加强力的压制工具……"]
 			id: "2365843CB7C02588"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest32.subtitle}"
+			subtitle: "强行灌注"
 			tasks: [{
 				id: "1BF501746E83267C"
 				item: "vintageimprovements:vacuum_chamber"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest32.title}"
+			title: "液压之力"
 			x: -2.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["62214C4C462BB308"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest33.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest33.description2}"
+				"简单的振动显然无法&b独立完成&r太多的工作，但是帮你拆分一下方块和树叶还是可以的。"
+				"然而很多更加复杂的合成需要&c在加工过程中进行这一操作&r，所以最好多做一些，方便之后产线的搭建。"
 			]
 			id: "370AE293C357A2D5"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest33.subtitle}"
+			subtitle: "可惜没有试管"
 			tasks: [{
 				id: "24899BE40D7190F6"
 				item: "vintageimprovements:vibrating_table"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest33.title}"
+			title: "振荡"
 			x: 2.0d
 			y: 10.0d
 		}
 		{
 			dependencies: ["2365843CB7C02588"]
-			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest34.description1}"]
+			description: [" 在高温高压下，红石溶解于水，生成红石酸……所以你应该狠狠加压了）"]
 			id: "3ACA6DDA21386252"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest34.subtitle}"
+			subtitle: "压力上来了"
 			tasks: [{
 				id: "3CA0380EB5FA21C0"
 				item: "immersiveengineering:redstone_acid_bucket"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest34.title}"
+			title: "红石酸"
 			x: -2.0d
 			y: 11.5d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
-			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest35.description1}"]
+			description: ["将金属压制成线……以方便一些精细加工。"]
 			id: "5584865A3F339D6E"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest35.subtitle}"
+			subtitle: "金属版"
 			tasks: [{
 				id: "4E61DFFE814C6921"
 				item: "createaddition:rolling_mill"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest35.title}"
+			title: "纺线机？"
 			x: 0.0d
 			y: 0.5d
 		}
@@ -1023,10 +1024,10 @@
 				"079D9B3E0E12C25C"
 				"5584865A3F339D6E"
 			]
-			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest37.description1}"]
+			description: ["在你给烈焰人吸管后，它们就可以在笼子里利用岩浆来燃烧了！"]
 			id: "0E9D500DED0B76E7"
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest37.subtitle}"
+			subtitle: "顶级饮品"
 			tasks: [{
 				id: "5D5CF30B38FB21DC"
 				item: "createaddition:straw"
@@ -1038,12 +1039,12 @@
 		{
 			dependencies: ["76BE4625CCF2F867"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest38.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest38.description2}"
+				"可以灌入可燃流体的打火机"
+				"小心火灾！"
 			]
 			id: "4547A48AEAA539A0"
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest38.subtitle}"
+			subtitle: "这个不能咬"
 			tasks: [{
 				id: "3AA1D5B42C49F70E"
 				item: "createdieselgenerators:lighter"
@@ -1055,13 +1056,13 @@
 		{
 			dependencies: ["079D9B3E0E12C25C"]
 			description: [
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest39.description1}"
-				"{ftbquests.chapter.4F2AC29E9F4DB90D.quest39.description2}"
+				"经过处理后的硝钢可以作为枪械框架和改装件的基底，也就是说，你可以开始组合铁质枪械了。"
+				"硝钢为硝烟而生。"
 			]
 			icon: "scguns:treated_iron_ingot"
 			id: "4F0468E7373CD68A"
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest39.subtitle}"
+			subtitle: "硝烟弥漫"
 			tasks: [
 				{
 					id: "61C8C1019F627A5D"
@@ -1074,23 +1075,23 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest39.title}"
+			title: "我勒个硝钢"
 			x: 2.0d
 			y: 3.5d
 		}
 		{
 			dependencies: ["079D9B3E0E12C25C"]
-			description: ["{ftbquests.chapter.4F2AC29E9F4DB90D.quest40.description1}"]
+			description: ["在你获得烈焰人燃烧室之后，你也可以使用搅拌来强行生产活木和活石……代价就是白雏菊有微小的概率因为这种粗暴的行为而毁坏。"]
 			icon: "botania:pure_daisy"
 			id: "07A2484514957C02"
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest40.subtitle}"
+			subtitle: "整个好活"
 			tasks: [{
 				id: "355F99F51DD60211"
-				title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest40.task_3845961884844294673.title}"
+				title: "好嘞"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest40.title}"
+			title: "暴力活化"
 			x: -2.0d
 			y: 3.5d
 		}
@@ -1103,7 +1104,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.4F2AC29E9F4DB90D.quest41.subtitle}"
+			subtitle: "S T E A M P O W E R E D"
 			tasks: [{
 				id: "7396DDAE21A05F3B"
 				item: "create:steam_engine"
@@ -1124,6 +1125,6 @@
 			y: 6.5d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.4F2AC29E9F4DB90D.subtitle0}"]
-	title: "{ftbquests.chapter.4F2AC29E9F4DB90D.title}"
+	subtitle: ["Exotic Alloys"]
+	title: "2I 奇异合金"
 }
