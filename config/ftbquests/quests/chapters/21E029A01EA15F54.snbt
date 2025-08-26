@@ -792,18 +792,11 @@
 			id: "6FA24342A82507F6"
 			shape: "rsquare"
 			subtitle: "这个大门其实只是个交易入口）"
-			tasks: [
-				{
-					id: "032B3C0F3679278B"
-					item: "botania:elementium_ingot"
-					type: "item"
-				}
-				{
-					id: "495E63F848850701"
-					item: "botania:dreamwood_log"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "032B3C0F3679278B"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
 			title: "PY交易"
 			x: 1.0d
 			y: 4.0d
@@ -813,7 +806,7 @@
 			description: [
 				"为了顺利完成后续的一些事情，火花这种远程传输魔力的结构就成为了必需品。"
 				"好处是它还算廉价，坏处是你必须通过&a和精灵的交易&r才能开始搞这些。"
-				"如果不希望每次刷烈焰人都要下地狱，也许应该看看&3诡厄巫法&r的聚晶……"
+				"如果不希望每次刷烈焰人都要下地狱，也许应该看看&3诡厄巫法&r的捕捉笼……"
 			]
 			id: "5F1578F61B3B2D32"
 			shape: "rsquare"
