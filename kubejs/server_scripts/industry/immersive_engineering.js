@@ -528,7 +528,7 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/cloggrum'])
     ]).transitionalItem('kubejs:incomplete_heavy_engineering').loops(1)
 
-    event.shaped('immersiveengineering:rs_engineering', [ 
+    event.shaped('kubejs:sensory_engineering', [ 
         'DAC', 
         'ABA',
         'CAD'  
@@ -539,13 +539,13 @@ ServerEvents.recipes(event => {
         C: 'createutilities:graviton_tube'
     })
     event.recipes.create.sequenced_assembly([
-        'immersiveengineering:rs_engineering'
+        'kubejs:sensory_engineering'
         ], 'createutilities:void_casing', [
-        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/zinc']),
-        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', 'minecraft:ender_eye']),
-        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', 'createutilities:graviton_tube']),
-        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/zinc'])
-    ]).transitionalItem('kubejs:incomplete_rs_engineering').loops(1)
+        event.recipes.createDeploying('kubejs:incomplete_sensory_engineering', ['kubejs:incomplete_sensory_engineering', '#forge:plates/zinc']),
+        event.recipes.createDeploying('kubejs:incomplete_sensory_engineering', ['kubejs:incomplete_sensory_engineering', 'minecraft:ender_eye']),
+        event.recipes.createDeploying('kubejs:incomplete_sensory_engineering', ['kubejs:incomplete_sensory_engineering', 'createutilities:graviton_tube']),
+        event.recipes.createDeploying('kubejs:incomplete_sensory_engineering', ['kubejs:incomplete_sensory_engineering', '#forge:plates/zinc'])
+    ]).transitionalItem('kubejs:incomplete_sensory_engineering').loops(1)
 
     //塑料
     event.remove({id:"immersiveengineering:bottling/duroplast_plate"})

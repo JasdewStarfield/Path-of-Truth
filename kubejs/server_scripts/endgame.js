@@ -601,7 +601,7 @@ ServerEvents.recipes(event => {
     {
       A: 'create:precision_mechanism',
       B: 'stardew_fishing:sonar_bobber',
-      C: 'immersiveengineering:rs_engineering',
+      C: 'kubejs:sensory_engineering',
       D: 'alexsmobs:echolocator'
     }
   )
@@ -620,6 +620,7 @@ ServerEvents.recipes(event => {
     event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:light_engineering']),
     event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:rs_engineering']),
     event.recipes.createDeploying(inter2, [inter2, 'immersiveengineering:heavy_engineering']),
+    event.recipes.createDeploying(inter2, [inter2, 'kubejs:sensory_engineering']),
     event.recipes.createDeploying(inter2, [inter2, 'kubejs:electronic_engineering']),
   ]).transitionalItem(inter2).loops(4)
 })

@@ -6,6 +6,7 @@ const engineeringBlocks = [
     'immersiveengineering:light_engineering',
     'immersiveengineering:rs_engineering',
     'immersiveengineering:heavy_engineering',
+    'kubejs:sensory_engineering',
     'kubejs:electronic_engineering'
 ]
 

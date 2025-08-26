@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
       ['createutilities:void_battery', "immersiveengineering:capacitor_mv"],
     ]
     sensoryEngineering.forEach(([output, material]) =>
-      InteractiveCrafting(output, "immersiveengineering:rs_engineering", material)
+      InteractiveCrafting(output, "kubejs:sensory_engineering", material)
     )
 
     //物流工程块

@@ -111,6 +111,8 @@
 [Compat]
 	#Compatible with mods using SereneSeasons' CropTag.
 	SereneSeasonsCropTag = true
+	#If a mod tries to query biome precipitation using the raw method, would adjust it to correctly ignore small biomes like rivers.
+	FixBiomePrecipitation = true
 
 [Debug]
 	#Enable debug option to detect illegal use of functions.
