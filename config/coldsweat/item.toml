@@ -218,6 +218,11 @@
 	# ⌄ 
 	#Range: 0.0 ~ Infinity
 	"Waterskin Neutralize Speed" = 1.0
+	#─────────────────────────────────────────────────────────────────────────
+	# Defines how many times a waterskin can be used before becoming empty
+	# ⌄ 
+	#Range: > 1
+	"Waterskin Uses" = 1
 
 [Misc]
 	#─────────────────────────────────────────────────────────────────────────//v
@@ -231,7 +236,7 @@
 	# • *nbt: The NBT data the item must have to apply to the entity.
 	# • *max_effect: The maximum temperature effect the item can apply to the entity.
 	# ⌄ 
-	"Carried Item Temperatures" = []
+	"Item Temperatures" = []
 
 # Drains pressure from Create's netherite backtank if the player is in a hot/cold environment
 # Triggered by the set bonus for wearing a full set of netherite diving gear

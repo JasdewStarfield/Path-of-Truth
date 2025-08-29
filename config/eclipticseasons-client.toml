@@ -2,6 +2,8 @@
 [Debug]
 	#Info used for development.
 	DebugInfo = false
+	#Render snow edge overlay on neighbors for smoother snowy transitions.
+	SnowyEdges = false
 
 [GUI]
 	#Displays the season and humidity levels suitable for growing crops.

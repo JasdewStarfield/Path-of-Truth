@@ -125,6 +125,8 @@
 	NotSnowOverlayGlowingBlock = false
 	#Disable chunk extra info cache cleanup.
 	DisableChunkCacheCleaner = false
+	#Disable unique rebinding for biome tags. Note that after disabling, tags may overlap.
+	DisableUniqueBiomeTagsRebinding = false
 
 [Map]
 	#The map color of blocks will change during snow.

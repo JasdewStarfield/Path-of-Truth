@@ -75,6 +75,7 @@
 
 		[types.wood_type.netherexp]
 			claret = true
+			smokestalk = true
 
 		[types.wood_type.blue_skies]
 			crystallized = true
