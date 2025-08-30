@@ -18,6 +18,7 @@
   "debugMode": false,
   "sleepDelay": 10,
   "hitboxLimit": 50,
+  "captureRate": 5,
   "skipMarkerArmorStands": true,
   "tickCulling": true,
   "tickCullingWhitelist": [
