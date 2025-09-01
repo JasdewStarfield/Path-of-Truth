@@ -623,6 +623,17 @@
 					}
 					type: "item"
 				}
+				{
+					id: "3E804D57EEF1F877"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "eclipticseasons:seasons_chronicle"
+						}
+					}
+					type: "item"
+				}
 			]
 			title: "知识掌控者"
 			x: 2.5d
@@ -762,10 +773,23 @@
 				"以及，由于堆叠升级是抽屉的功能，我们禁止了背包使用的堆叠升级！"
 				"但背包拿来存杂项还是很强大的）"
 				"{@pagebreak}"
-				"同时拿太多的背包或者抽屉会负重！"
+				"同时拿太多的背包或者抽屉会&5负重&r！"
 				"你最多可以拿两个背包或者有物品的抽屉，否则就会获得负面效果……"
+				"抽屉不能装进背包或者其他抽屉里，反过来也不行。&4想都别想。&r"
 			]
 			id: "3A2CCC29ACE28498"
+			rewards: [
+				{
+					id: "7379D45CBAED2919"
+					item: "storagedrawers:drawer_key"
+					type: "item"
+				}
+				{
+					id: "269A9F60BA95D042"
+					item: "sophisticatedbackpacks:pickup_upgrade"
+					type: "item"
+				}
+			]
 			subtitle: "强力存储的两条路径"
 			tasks: [
 				{
@@ -1305,6 +1329,7 @@
 				"&r大部分作物有其&a适合的季节和环境&r（有的作物不止一个季节），在适宜季节之外它们&9不会生长&r——除非你拥有对应季节的温室。"
 				"&2温室心髓&r有两种获得方式：&b完成季节对应的进度&r，或者&3用祈年令装饰悬挂告示牌&r来获取当前季节对应的任务。"
 				"将做好的温室之心置于&5密闭空间&r中，即可完成&6对应季节温室&r的构建。"
+				"更多描述可以参考“岁时记”。"
 			]
 			id: "427C47874F61D7D2"
 			rewards: [

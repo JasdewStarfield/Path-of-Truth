@@ -1,0 +1,6 @@
+multilingualItemSearch = false
+fallbacks = ["en_us"]
+previousFallbacks = []
+language = "zh_cn"
+previousLanguage = "en_us"
+

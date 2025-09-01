@@ -528,6 +528,25 @@ ServerEvents.recipes(event => {
         event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/cloggrum'])
     ]).transitionalItem('kubejs:incomplete_heavy_engineering').loops(1)
 
+    event.shaped('immersiveengineering:rs_engineering', [ 
+        'DAC', 
+        'ABA',
+        'CAD'  
+    ], {
+        B: 'kubejs:steel_casing',
+        A: '#forge:plates/industrial_iron',
+        D: 'createaddition:capacitor',
+        C: 'botania:red_string'
+    })
+    event.recipes.create.sequenced_assembly([
+        'immersiveengineering:rs_engineering'
+        ], 'kubejs:steel_casing', [
+        event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/industrial_iron']),
+        event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_heavy_engineering', 'createaddition:capacitor']),
+        event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_heavy_engineering', 'botania:red_string']),
+        event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/industrial_iron'])
+    ]).transitionalItem('kubejs:incomplete_rs_engineering').loops(1)
+
     event.shaped('kubejs:sensory_engineering', [ 
         'DAC', 
         'ABA',

@@ -15,27 +15,27 @@
 	#When enabled, chunks will be reloaded regularly to fix rendering glitches, but this may impact performance.
 	ForceChunkRenderUpdate = true
 	#Enhanced reload, which will refresh all sections periodically.
-	EnhancementChunkRenderUpdate = true
+	EnhancementChunkRenderUpdate = false
+	#Cull the top face if snowy model is applied.
+	TopFaceCulling = false
+	#Whether to reset the renderer after waking up.
+	ResetRendererAfterSleep = false
 	#Use Minecraft’s default lighting rules to decide if snow should fall.
 	UseVanillaCheck = false
 	#Snow cover updates with a delay after block changes, making it look more natural. This uses more performance. Do not enable if the common config’s 'RealisticSnowyChange' is also enabled.
-	RealisticSnowyChange = false
+	RealisticSnowyChange = true
 	#Blocks underneath fences etc. may also be covered with snow.
 	SnowUnderFence = true
+	#Blocks under tree may also be covered with snow, note that this is only a client-side effect.
+	snowUnderTree = false
 	#The colors of the grass and leaves change with the time of year.
 	SeasonalGrassColorChange = true
-	#In spring, grass blocks will occasionally have small flowers on them.
-	FlowerOnGrass = true
-	#Whether to reset the renderer after waking up.
-	ResetRendererAfterSleep = false
-	#Blocks under tree may also be covered with snow, note that this is only a client-side effect.
-	snowUnderTree = true
-	#Cull the top face if snowy model is applied.
-	TopFaceCulling = false
-	#When applying changes, perform mean calculation based on the percentage progress of the solar term instead of using a fixed value.
-	SmootherSeasonalGrassColorChange = true
 	#Birch, spruce, and mangrove leaves colors also have seasonal changes.
 	SeasonalColorChangeExtend = true
+	#When applying changes, perform mean calculation based on the percentage progress of the solar term instead of using a fixed value.
+	SmootherSeasonalGrassColorChange = true
+	#In spring, grass blocks will occasionally have small flowers on them.
+	FlowerOnGrass = true
 
 [Sound]
 	#Ambient Sound.
@@ -73,7 +73,7 @@
 [Weather]
 	#Radius (in blocks) around the player within which weather is sampled and averaged to create smoother local weather transitions.
 	#Range: 1 ~ 80
-	WeatherBufferDistance = 16
+	WeatherBufferDistance = 6
 	#Speed at which local weather transitions occur. Higher values mean faster transitions.
 	#Range: 8.0E-4 ~ 0.08
 	WeatherTransitionSpeed = 0.008

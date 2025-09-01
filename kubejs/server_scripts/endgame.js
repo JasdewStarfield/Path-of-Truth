@@ -601,7 +601,7 @@ ServerEvents.recipes(event => {
     {
       A: 'create:precision_mechanism',
       B: 'stardew_fishing:sonar_bobber',
-      C: 'kubejs:sensory_engineering',
+      C: 'immersiveengineering:rs_engineering',
       D: 'alexsmobs:echolocator'
     }
   )

@@ -21,8 +21,8 @@
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 17.5d
-			y: -2.0d
+			x: 19.5d
+			y: 0.0d
 		}
 		{
 			height: 2.0d
@@ -146,11 +146,14 @@
 				type: "item"
 			}]
 			title: "工程基本单元 II"
-			x: 12.0d
+			x: 14.0d
 			y: -2.0d
 		}
 		{
-			dependencies: ["5700B2AFCCAEE31A"]
+			dependencies: [
+				"5700B2AFCCAEE31A"
+				"2715A75A36C0FECB"
+			]
 			description: [
 				"通过转动对线圈的扰动，你终于获得了可以工业化使用的电流。"
 				"也许之后可以试试工业充能瓶子……？"
@@ -163,8 +166,8 @@
 				type: "item"
 			}]
 			title: "切割磁感线"
-			x: 14.0d
-			y: -2.0d
+			x: 16.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -194,8 +197,8 @@
 				value: 1000L
 			}]
 			title: "【终点】电火花"
-			x: 16.0d
-			y: -2.0d
+			x: 18.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4B2D7C8A59593200"]
@@ -219,8 +222,8 @@
 				}
 			]
 			title: "给我个任务吧！"
-			x: 16.0d
-			y: -4.0d
+			x: 18.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
@@ -228,7 +231,6 @@
 				"这是最后一个高炉了。物如其名，强化高炉，基本用途和粗制的那个没区别，只是自动化更加便捷，以及支持使用预热器加速。"
 				"但只是加速，不能不用燃料……"
 			]
-			hide_until_deps_complete: true
 			icon: "immersiveengineering:advanced_blast_furnace"
 			id: "598BB8D8FCB30B61"
 			rewards: [{
@@ -269,13 +271,12 @@
 				}
 			]
 			title: "搭建强化高炉"
-			x: 12.0d
-			y: 4.0d
+			x: 11.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
 			description: ["感受钢铁的厚重……"]
-			hide_until_deps_complete: true
 			id: "068A7A1F8FB54E98"
 			rewards: [{
 				id: "602964B65DFAD107"
@@ -302,8 +303,8 @@
 				type: "item"
 			}]
 			title: "绝对防御！"
-			x: 10.0d
-			y: 4.0d
+			x: 9.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -311,12 +312,10 @@
 				"635A0221044B2A2A"
 			]
 			description: [
-				"虽然这个工程块也是（你后面会用到的）沉浸工程多方块机器的必要组成部分，因而看上去&3略显普通&r，但是由它为核心的机械动力&3虚空元件&r拥有&d最诱人&r的效果。"
+				"虽然这个工程块看上去&3略显普通&r，但是由它为核心的机械动力&3虚空元件&r拥有&d最诱人&r的效果。"
 				"这一工程块将会藉由量子管的同频共振，&2为机械添加超越时空的能力&r，让你的物品，液体，电力甚至应力传输无视空间阻隔！"
-				"但相应的，这显然&9不是纯机械可以达成的效果&r……"
-				""
-				"&o&a是的这玩意需要用泰拉钢才能做，所以推魔法线去吧&r&r"
 			]
+			hide_until_deps_complete: true
 			id: "04AAF6565C04DA94"
 			shape: "gear"
 			size: 2.0d
@@ -326,8 +325,8 @@
 				item: "kubejs:sensory_engineering"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 4.0d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5B1818D5A1142A16"]
@@ -382,13 +381,16 @@
 				type: "item"
 			}]
 			title: "电力转应力"
-			x: 16.0d
-			y: 0.0d
+			x: 18.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["429B458F0AADA253"]
+			dependencies: [
+				"429B458F0AADA253"
+				"2CB1E7FC5CBF6B2C"
+			]
 			description: [
-				"加入末影与幽匿物质，以及强大生物的残片，你便会得到……"
+				"随着你解锁了超级加热的能力，你发现向钢坯加入末影与幽匿物质，以及强大生物的残片，便会得到……"
 				""
 				"&1虚空钢&r。它和它的同伴们会隔着遥远的距离进行共振……"
 				"但在你没加工前，它们只是能共振而已。"
@@ -396,6 +398,7 @@
 				"提示：你需要前往&9深暗&r，寻找&9回响碎片&r才能完成这一配方。你可以使用&2自然指南针&r！"
 				"觉得在监守者面前翻找回响碎片太危险？你可以尝试对那里的幽匿块使用&5紫水晶碎片&r来概率获取回响碎片……这一流程也是&6可以自动化&r的（提示：机械手）。当然，如何自动生成幽匿块……就要看你的游戏理解了。"
 			]
+			hide_until_deps_complete: true
 			id: "41831F6B01965541"
 			subtitle: "你为什么要召唤我——"
 			tasks: [{
@@ -405,13 +408,10 @@
 			}]
 			title: "虚空共振"
 			x: 4.0d
-			y: 2.0d
+			y: 4.0d
 		}
 		{
-			dependencies: [
-				"41831F6B01965541"
-				"40129F9AE9DCE1EF"
-			]
+			dependencies: ["41831F6B01965541"]
 			description: [
 				"通过这一框架，你可以创造突破空间限制的机械组，比如虚空传递应力的马达组……"
 				"但很显然这是个半成品。"
@@ -425,8 +425,8 @@
 				item: "createutilities:void_casing"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 2.0d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["04AAF6565C04DA94"]
@@ -434,10 +434,8 @@
 				"&o*这是一个提示性任务！&r"
 				""
 				"通过&5末影之力&r，你现在发现了&9虚空传输一切&r的可能……"
-				"虽然现在你可能还没办法制作其中的大部分物品，但它们也许是后续精简产线的最佳选择）"
+				"它们也许是后续精简产线的最佳选择"
 				"具体使用方法，请看思索——"
-				""
-				"&m&o&b这不比pipez好用（笑&r&r&r"
 			]
 			icon: "minecraft:ender_eye"
 			id: "253CE41C3E000533"
@@ -466,8 +464,8 @@
 				}
 			]
 			title: "虚空传输！"
-			x: 8.0d
-			y: 4.0d
+			x: 0.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["146261DF72C96BF4"]
@@ -600,7 +598,7 @@
 				}
 			]
 			title: "工业基础"
-			x: 8.0d
+			x: 10.0d
 			y: -2.0d
 		}
 		{
@@ -643,7 +641,7 @@
 				}
 			]
 			title: "简单电容器"
-			x: 10.0d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -679,7 +677,6 @@
 			]
 			icon: "vintageimprovements:lathe"
 			id: "56229BD92474D24C"
-			subtitle: "这是之后要用到的神奇妙妙工具.jpg"
 			tasks: [
 				{
 					id: "31BF7C74CB552026"
@@ -722,13 +719,25 @@
 				item: "vintageimprovements:belt_grinder"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -4.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["1FB6A2B277331552"]
-			description: ["作为以脆弱出名的水晶，在打磨时需要严格控制转速……否则你将白费力气。"]
+			description: [
+				"作为以脆弱出名的水晶，在打磨时需要严格控制转速……否则你将白费力气。"
+				""
+				"&o这玩意似乎能够用作一种共振材料，但以目前章节的技术你还无法利用它&r"
+				""
+				"&1不过，一种奇异的力量提前将一部分产物递到了你手中……&r"
+			]
 			id: "635A0221044B2A2A"
+			rewards: [{
+				count: 4
+				id: "5EEB037F4BE85C9A"
+				item: "kubejs:sensory_engineering"
+				type: "item"
+			}]
 			subtitle: "小心点磨"
 			tasks: [{
 				id: "6F499C4253A31237"
@@ -736,7 +745,7 @@
 				type: "item"
 			}]
 			title: "易碎品"
-			x: 4.0d
+			x: -2.0d
 			y: 4.0d
 		}
 		{
@@ -770,7 +779,7 @@
 					type: "item"
 				}
 			]
-			x: 10.0d
+			x: 12.0d
 			y: -2.0d
 		}
 		{
@@ -813,7 +822,7 @@
 				item: "scguns:sheol"
 				type: "item"
 			}]
-			x: -2.0d
+			x: -4.0d
 			y: -4.0d
 		}
 		{
@@ -846,7 +855,7 @@
 				item: "kubejs:battery_component"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 12.0d
 			y: -4.0d
 		}
 		{
@@ -859,13 +868,14 @@
 				item: "vintageimprovements:redstone_module"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 6.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["56229BD92474D24C"]
 			icon: "vintageimprovements:curving_press"
 			id: "123C1ECCE0F09AC1"
+			subtitle: "这是之后要用到的神奇妙妙工具.jpg"
 			tasks: [
 				{
 					id: "6EA298E9E586CD0C"
@@ -884,8 +894,8 @@
 					type: "item"
 				}
 			]
-			x: 16.0d
-			y: 2.0d
+			x: 15.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["429B458F0AADA253"]
@@ -911,21 +921,22 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["04AAF6565C04DA94"]
+			dependencies: ["2715A75A36C0FECB"]
 			id: "41066A41812A37E2"
-			shape: "hexagon"
+			shape: "diamond"
 			tasks: [{
 				id: "67792EC8B82BD094"
 				item: "kubejs:sonic_mechanism"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 6.0d
+			x: 16.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
 				"2974EA098C1280C1"
 				"56229BD92474D24C"
+				"786828EE220E93A3"
 			]
 			id: "2715A75A36C0FECB"
 			shape: "gear"
