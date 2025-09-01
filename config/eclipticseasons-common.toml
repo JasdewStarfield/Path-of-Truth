@@ -34,11 +34,11 @@
 	#Day time length of none season, divided into six periods according to the solar term table.
 	NoneDayTimes = [12000]
 	#Specify block IDs here to prevent those blocks from being covered by snow.
-	ForceBlocksNotSnowy = []
+	ForceBlocksNotSnowy = ["immersiveengineering:crusher", "immersiveengineering:arc_furnace", "immersiveengineering:assembler", "immersiveengineering:auto_workbench", "immersiveengineering:fermenter", "immersiveengineering:squeezer", "immersiveengineering:refinery", "immersiveengineering:mixer", "immersiveengineering:tank", "immersiveengineering:silo", "immersiveengineering:metal_press", "immersiveengineering:diesel_generator", "immersiveengineering:coke_oven", "immersiveengineering:blast_furnace", "immersiveengineering:advanced_blast_furnace", "immersiveengineering:bottling_machine", "immersiveengineering:bucket_wheel", "immersiveengineering:excavator", "immersiveengineering:lightning_rod", "kubejs:andesite_engineering", "kubejs:fluid_engineering", "kubejs:precise_engineering", "kubejs:logistical_engineering", "immersiveengineering:light_engineering", "immersiveengineering:rs_engineering", "immersiveengineering:heavy_engineering", "kubejs:sensory_engineering", "kubejs:electronic_engineering"]
 	#Not just the top layer, now even the leaves below are dusted with frost and snow.
 	SnowyTree = true
 	#Enable local calendar and local info synchronization.
-	EnableLocalInfoAndCalendar = false
+	EnableLocalInfoAndCalendar = true
 	#The timing of snowfall now varies within a certain range each year.
 	DynamicSnowTerm = true
 
@@ -55,6 +55,8 @@
 	ShouldInitWeather = false
 	#Enable weather regions, linking specific biomes to particular weather to prevent scattered patterns.
 	EnableWeatherRegion = true
+	#Prevent rain from occurring in biomes without precipitation like desert.
+	NotRainInDesert = false
 
 [Temperature]
 	#Add heat stroke effect in summer noon while in hot biome.
@@ -67,14 +69,8 @@
 [Crop]
 	#Enable crop season control.
 	EnableSeasonalCrop = true
-	#[Deprecated]How much chance can crop grow in wrong season.
-	#Range: 0.0 ~ 1.0
-	CropGrowChanceInWrongSeason = 0.25
 	#Enable crop humidity control.
 	EnableCropHumidityControl = true
-	#[Deprecated]How much base chance can crop grow in wrong humidity.
-	#Range: 1.0E-4 ~ 0.9999
-	CropGrowChanceInWrongHumidity = 0.25
 	#The maximum effective diameter of the greenhouse.
 	#Range: 5 ~ 256
 	GreenHouseMaxDiameter = 32
@@ -127,6 +123,8 @@
 	DisableChunkCacheCleaner = false
 	#Disable unique rebinding for biome tags. Note that after disabling, tags may overlap.
 	DisableUniqueBiomeTagsRebinding = false
+	#Enable the season definitions system.
+	EnableSeasonDefinition = false
 
 [Map]
 	#The map color of blocks will change during snow.
@@ -147,4 +145,15 @@
 	EnableSeasonalFishing = false
 	#Greenhouse core would also work for animal check but not need a greenhouse.
 	EnableCoreWork = true
+	#Seasons in which bees are able to pollinate crops and flowers.
+	#Default: [SPRING]
+	BeePollinateSeasons = ["SPRING"]
+	#Seasons in which bees are generally active outside the hive.
+	#Default: [SPRING, SUMMER, AUTUMN]
+	BeeActiveSeasons = ["SPRING", "SUMMER", "AUTUMN"]
+	#Seasons during which fishing is allowed or more effective.
+	#Default: [SUMMER]
+	FishingSeasons = ["SUMMER"]
+	#Reduce fish availability during thunderstorms.
+	LessFishInThunder = false
 

@@ -21,8 +21,8 @@
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 15.0d
-			y: 1.0d
+			x: 17.5d
+			y: -2.0d
 		}
 		{
 			height: 2.0d
@@ -123,7 +123,7 @@
 			}]
 			title: "工程基本单元 I"
 			x: 12.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -194,8 +194,8 @@
 				value: 1000L
 			}]
 			title: "【终点】电火花"
-			x: 14.0d
-			y: 0.0d
+			x: 16.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4B2D7C8A59593200"]
@@ -220,7 +220,7 @@
 			]
 			title: "给我个任务吧！"
 			x: 16.0d
-			y: 0.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
@@ -323,7 +323,7 @@
 			subtitle: "穿越时空的工程"
 			tasks: [{
 				id: "4A3C2F09B3D2C958"
-				item: "immersiveengineering:rs_engineering"
+				item: "kubejs:sensory_engineering"
 				type: "item"
 			}]
 			x: 6.0d
@@ -382,8 +382,8 @@
 				type: "item"
 			}]
 			title: "电力转应力"
-			x: 14.0d
-			y: 2.0d
+			x: 16.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["429B458F0AADA253"]
@@ -672,120 +672,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["77918DE5A223B3CD"]
-			description: [
-				"全套的钢铁护具和工具将让你的生存轻松一些……大概吧。"
-				""
-				"&o&b至少物理防御是足够了）&r&r"
-			]
-			icon: {
-				Count: 1
-				id: "immersiveengineering:armor_steel_helmet"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "3C1BDE999ED57ABD"
-			rewards: [{
-				id: "025FBAA900C1E6B6"
-				item: "immersiveengineering:storage_steel"
-				type: "item"
-			}]
-			shape: "diamond"
-			subtitle: "更上一层"
-			tasks: [
-				{
-					id: "12EF2686682DE8FA"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"cold_sweat:item_insulation": {
-								Insulation: [ ]
-							}
-						}
-						id: "immersiveengineering:armor_steel_helmet"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "7AA83934E84229EF"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"cold_sweat:item_insulation": {
-								Insulation: [ ]
-							}
-						}
-						id: "immersiveengineering:armor_steel_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "4FB40CB24F3D973D"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"cold_sweat:item_insulation": {
-								Insulation: [ ]
-							}
-						}
-						id: "immersiveengineering:armor_steel_leggings"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "5E70D716C2D440E4"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"cold_sweat:item_insulation": {
-								Insulation: [ ]
-							}
-						}
-						id: "immersiveengineering:armor_steel_boots"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "7B9831B93C41139A"
-					item: {
-						Count: 1
-						id: "immersiveengineering:sword_steel"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "7D2512415EA1BCAB"
-					item: {
-						Count: 1
-						id: "immersiveengineering:pickaxe_steel"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "钢铁意志"
-			x: 12.0d
-			y: 2.0d
-		}
-		{
 			dependencies: ["5700B2AFCCAEE31A"]
 			description: [
 				"在制作模具的过程中，车床是必不可少的。"
@@ -806,8 +692,8 @@
 					type: "item"
 				}
 			]
-			x: 12.0d
-			y: -4.0d
+			x: 14.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["77918DE5A223B3CD"]
@@ -977,10 +863,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: [
-				"56229BD92474D24C"
-				"5700B2AFCCAEE31A"
-			]
+			dependencies: ["56229BD92474D24C"]
 			icon: "vintageimprovements:curving_press"
 			id: "123C1ECCE0F09AC1"
 			tasks: [
@@ -1001,8 +884,8 @@
 					type: "item"
 				}
 			]
-			x: 14.0d
-			y: -4.0d
+			x: 16.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["429B458F0AADA253"]
@@ -1038,6 +921,22 @@
 			}]
 			x: 6.0d
 			y: 6.0d
+		}
+		{
+			dependencies: [
+				"2974EA098C1280C1"
+				"56229BD92474D24C"
+			]
+			id: "2715A75A36C0FECB"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "5C5E13AD4E9E89A0"
+				item: "immersiveengineering:rs_engineering"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.0d
 		}
 	]
 	subtitle: ["Hearts of Steel"]

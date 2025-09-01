@@ -19,7 +19,7 @@
 	#Use Minecraft’s default lighting rules to decide if snow should fall.
 	UseVanillaCheck = false
 	#Snow cover updates with a delay after block changes, making it look more natural. This uses more performance. Do not enable if the common config’s 'RealisticSnowyChange' is also enabled.
-	RealisticSnowyChange = true
+	RealisticSnowyChange = false
 	#Blocks underneath fences etc. may also be covered with snow.
 	SnowUnderFence = true
 	#The colors of the grass and leaves change with the time of year.
@@ -34,6 +34,8 @@
 	TopFaceCulling = false
 	#When applying changes, perform mean calculation based on the percentage progress of the solar term instead of using a fixed value.
 	SmootherSeasonalGrassColorChange = true
+	#Birch, spruce, and mangrove leaves colors also have seasonal changes.
+	SeasonalColorChangeExtend = true
 
 [Sound]
 	#Ambient Sound.

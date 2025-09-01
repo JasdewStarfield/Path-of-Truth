@@ -31,6 +31,22 @@ ServerEvents.recipes(event => {
   )
 
   //二级
+  event.remove({id:"storagedrawers:copper_storage_upgrade"})
+  event.shaped(
+    Item.of('storagedrawers:copper_storage_upgrade', 1),
+    [
+    'CCC',
+    'ACB',
+    'CCC'
+    ],
+    {
+    A: 'storagedrawers:obsidian_storage_upgrade',
+    B: 'kubejs:fluid_engineering',
+    C: '#forge:plates/constantan'
+    }
+  )
+
+  //三级
   event.remove({id:"storagedrawers:iron_storage_upgrade"})
   event.shaped(
     Item.of('storagedrawers:iron_storage_upgrade', 1),
@@ -40,7 +56,7 @@ ServerEvents.recipes(event => {
     'CCC'
     ],
     {
-    A: 'storagedrawers:obsidian_storage_upgrade',
+    A: 'storagedrawers:copper_storage_upgrade',
     B: 'kubejs:precise_engineering',
     C: '#forge:plates/brass'
     }
@@ -63,9 +79,9 @@ ServerEvents.recipes(event => {
   )
 
   //四级
-  event.remove({id:"storagedrawers:diamond_storage_upgrade"})
+  event.remove({id:"storagedrawers:emerald_storage_upgrade"})
   event.shaped(
-    Item.of('storagedrawers:diamond_storage_upgrade', 1),
+    Item.of('storagedrawers:emerald_storage_upgrade', 1),
     [
     'CCC',
     'ACB',
@@ -79,16 +95,16 @@ ServerEvents.recipes(event => {
   )
 
   //五级
-  event.remove({id:"storagedrawers:emerald_storage_upgrade"})
+  event.remove({id:"storagedrawers:diamond_storage_upgrade"})
   event.shaped(
-    Item.of('storagedrawers:emerald_storage_upgrade', 1),
+    Item.of('storagedrawers:diamond_storage_upgrade', 1),
     [
     'CCC',
     'ACB',
     'CCC'
     ],
     {
-    A: 'storagedrawers:diamond_storage_upgrade',
+    A: 'storagedrawers:emerald_storage_upgrade',
     B: 'kubejs:electronic_engineering',
     C: '#forge:plates/netherite'
     }
