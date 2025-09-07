@@ -28,19 +28,10 @@
 	NoneDayTimes = [12000]
 	#List of dimensions where season effects apply. Must be natural worlds with a day-night cycle.
 	ValidDimensions = ["minecraft:overworld"]
-	#If snow falls during cold weather, it will gradually cover all solid blocks and grass.
-	SnowyWinter = true
-	#Not just the top layer, now even the leaves below are dusted with frost and snow.
-	SnowyTree = true
-	#Snow will not appear in overly bright areas, here define restriction levels.
-	NotSnowyNearGlowingBlock = true
-	#Snow will not appear in overly bright areas.
-	#Range: 1 ~ 15
-	NotSnowyNearGlowingBlockLevel = 10
-	#Specify block IDs here to prevent those blocks from being covered by snow.
-	ForceBlocksNotSnowy = ["immersiveengineering:crusher", "immersiveengineering:arc_furnace", "immersiveengineering:assembler", "immersiveengineering:auto_workbench", "immersiveengineering:fermenter", "immersiveengineering:squeezer", "immersiveengineering:refinery", "immersiveengineering:mixer", "immersiveengineering:tank", "immersiveengineering:silo", "immersiveengineering:metal_press", "immersiveengineering:diesel_generator", "immersiveengineering:coke_oven", "immersiveengineering:blast_furnace", "immersiveengineering:advanced_blast_furnace", "immersiveengineering:bottling_machine", "immersiveengineering:bucket_wheel", "immersiveengineering:excavator", "immersiveengineering:lightning_rod", "kubejs:andesite_engineering", "kubejs:fluid_engineering", "kubejs:precise_engineering", "kubejs:logistical_engineering", "immersiveengineering:light_engineering", "immersiveengineering:rs_engineering", "immersiveengineering:heavy_engineering", "kubejs:sensory_engineering", "kubejs:electronic_engineering"]
 	#The timing of snowfall now varies within a certain range each year.
 	DynamicSnowTerm = true
+	#Enable the season definitions system.
+	EnableSeasonDefinition = false
 
 [Weather]
 	#Enable the Ecliptic local weather system that adapts weather to each biome.
@@ -136,24 +127,41 @@
 	LogIllegalUse = false
 	#Disable snowy blocks beneath light sources with light level 0.
 	NotSnowyUnderLight0 = false
-	#Snow overlay block if has full collision shape not just full render shape.
-	SnowyFullCollisionShape = false
 	#Snow can cover the block which would lights.
 	NotSnowOverlayGlowingBlock = false
-	#Enable the season definitions system.
-	EnableSeasonDefinition = false
 	#Disable chunk extra info cache cleanup.
 	DisableChunkCacheCleaner = false
 	#Disable unique rebinding for biome tags. Note that after disabling, tags may overlap.
 	DisableUniqueBiomeTagsRebinding = false
+	#Set to false to disable tag which stops block from snowy is tagged with "eclipticseasons:snow_overlay_cannot_survive_on".
+	DisableSnowOverlayControlTag = false
 
 [Map]
-	#Delay updating the top block to snowy when height map changes during snowfall.
-	ServerRealisticSnowyChange = false
 	#The map color of blocks will change during snow.
 	ChangeMapColor = true
 
 [Resource]
 	#Enable extra built-in snow definitions resourcepack for game.
 	ExtraSnowDefinitions = false
+
+[Snow]
+	#If snow falls during cold weather in warm biomes, it will gradually cover all solid blocks and grass.
+	SnowyWinter = true
+	#Not just the top layer, now even the leaves below are dusted with frost and snow.
+	SnowyTree = true
+	#Snow will not appear in overly bright areas, here define restriction levels.
+	NotSnowyNearGlowingBlock = true
+	#Snow will not appear in overly bright areas.
+	#Range: 1 ~ 15
+	NotSnowyNearGlowingBlockLevel = 10
+	#Specify block IDs here to prevent those blocks from being covered by snow.
+	ForceBlocksNotSnowy = ["immersiveengineering:crusher", "immersiveengineering:arc_furnace", "immersiveengineering:assembler", "immersiveengineering:auto_workbench", "immersiveengineering:fermenter", "immersiveengineering:squeezer", "immersiveengineering:refinery", "immersiveengineering:mixer", "immersiveengineering:tank", "immersiveengineering:silo", "immersiveengineering:metal_press", "immersiveengineering:diesel_generator", "immersiveengineering:coke_oven", "immersiveengineering:blast_furnace", "immersiveengineering:advanced_blast_furnace", "immersiveengineering:bottling_machine", "immersiveengineering:bucket_wheel", "immersiveengineering:excavator", "immersiveengineering:lightning_rod", "kubejs:andesite_engineering", "kubejs:fluid_engineering", "kubejs:precise_engineering", "kubejs:logistical_engineering", "immersiveengineering:light_engineering", "immersiveengineering:rs_engineering", "immersiveengineering:heavy_engineering", "kubejs:sensory_engineering", "kubejs:electronic_engineering"]
+	#Snowfall is now bound to world position rather than only to biomes. This allows for more location-based operations, such as snow sweeping and localized snowfall events.
+	SnowInWorld = true
+	#When SnowInWorld is enabled, update chunk state on load based on differences from previous state records.
+	ForceSnowyChunkUpdate = true
+	#When SnowInWorld is enabled, blocks like full blocks under snow layers will have a snowy appearance.
+	SnowyUnderSnowLike = true
+	#When SnowInWorld is enabled, snow may melt when stepped on due to heat.
+	StepMelt = false
 

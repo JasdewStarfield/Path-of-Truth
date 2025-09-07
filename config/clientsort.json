@@ -2,6 +2,7 @@
   "options": {
     "interactionInterval": 10,
     "useServerAcceleration": true,
+    "useClientFallback": false,
     "optimizeCreativeSorting": true,
     "hotbarScope": "HOTBAR",
     "extraSlotScope": "EXTRA",

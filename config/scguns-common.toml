@@ -42,6 +42,16 @@
 		forceEnergyGuns = false
 		#If true, guns will toggle ADS mode.
 		toggleADS = false
+		#Global multiplier for all gun damage. 1.0 = normal damage, 0.5 = half damage, 2.0 = double damage. Affects all projectile damage from guns.
+		#Range: 0.01 ~ 10.0
+		globalDamageMultiplier = 1.0
+		#If true, the Brass Mask ritual will never spawn villagers. When disabled, it will spawn Dissidents instead based on the spawn chance below.
+		disableVillagerSpawning = false
+		#When villager spawning is disabled, this is the chance (0.0 to 1.0) that a Dissident will spawn. If a Dissident doesn't spawn, nothing will be created from the ritual.
+		#Range: 0.0 ~ 1.0
+		dissidentSpawnChance = 0.1
+		#If true, guns will automatically start reloading when fired with an empty magazine if ammo is available
+		enableAutoReload = true
 
 		#Properties related to gun griefing
 		[common.gameplay.griefing]
@@ -71,17 +81,24 @@
 		#Range: 1.0 ~ 1.7976931348623157E308
 		projectileTrackingRange = 200.0
 
-	#Properties relating to mob aggression
+	#Properties relating to mob aggression from gunfire
 	[common.aggro_mobs]
-		#If true, nearby mobs are angered and/or scared by the firing of guns.
+		#If true, hostile mobs may become aggressive when guns are fired nearby.
 		enabled = true
-		#If true, in addition to causing peaceful mobs to panic, firing a gun will also cause nearby hostile mobs to target the shooter.
-		angerHostileMobs = true
-		#Any mobs within a sphere of this radius will aggro on the shooter of an unsilenced gun.
+		#Range in which hostile mobs may detect and react to unsilenced gunfire.
 		#Range: 0.0 ~ 1.7976931348623157E308
 		unsilencedRange = 20.0
-		#Any mobs of defined will not aggro on shooters
+		#LEGACY: Entities that will not aggro from gunfire. Use the 'scguns:aggro_from_guns' entity tag for better mod compatibility.
 		exemptMobs = []
+		#Chance (0.0 to 1.0) that a hostile mob will target the shooter when detecting gunfire.
+		#Range: 0.0 ~ 1.0
+		aggroChance = 0.25
+		#Chance (0.0 to 1.0) that nearby mobs of the same type will also aggro when one becomes hostile.
+		#Range: 0.0 ~ 1.0
+		chainAggroChance = 0.5
+		#Radius in which chain aggro effects can spread to similar mobs.
+		#Range: 0.0 ~ 32.0
+		chainAggroRadius = 8.0
 
 	#Properties relating to mob fleeing
 	[common.fleeing_mobs]
@@ -93,7 +110,7 @@
 		#Any mobs within a sphere of this radius will flee from the shooter of a silenced gun.
 		#Range: 0.0 ~ 1.7976931348623157E308
 		silencedRange = 20.0
-		#Any mobs listed here will flee from shooters
+		#LEGACY: Additional entities that will flee from gunshots. Animals are automatically detected. Use the 'scguns:fleeing_from_guns' entity tag instead for better mod compatibility.
 		fleeingEntities = ["minecraft:cow", "minecraft:sheep", "minecraft:pig", "minecraft:chicken", "minecraft:rabbit", "minecraft:horse", "minecraft:villager"]
 
 	#Properties relating to rockets

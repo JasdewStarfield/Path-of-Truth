@@ -22,8 +22,6 @@
 	ResetRendererAfterSleep = false
 	#Use Minecraft’s default lighting rules to decide if snow should fall.
 	UseVanillaCheck = false
-	#Snow cover updates with a delay after block changes, making it look more natural. This uses more performance. Do not enable if the common config’s 'RealisticSnowyChange' is also enabled.
-	RealisticSnowyChange = true
 	#Blocks underneath fences etc. may also be covered with snow.
 	SnowUnderFence = true
 	#Blocks under tree may also be covered with snow, note that this is only a client-side effect.
