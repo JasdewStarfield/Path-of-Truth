@@ -255,6 +255,68 @@ ServerEvents.recipes(event => {
   })
   event.recipes.vintageimprovements.laser_cutting(Item.of('kubejs:electronic_circuit_board'), '#forge:plates/plastic').energyCost(51200).maxChargeRate(3200)
 
+  //B头4产物复制配方
+  //黑曜石之心
+  event.shaped(
+    Item.of('4x bosses_of_mass_destruction:obsidian_heart'),
+    [
+      ' A ',
+      'BCD',
+      ' A '
+    ],
+    {
+      B: 'minecraft:respawn_anchor',
+      D: 'amendments:dragon_charge',
+      C: 'goety:philosophers_stone',
+      A: 'bosses_of_mass_destruction:obsidian_heart'
+    }
+  )
+  //烈焰之眼
+  event.shaped(
+    Item.of('4x bosses_of_mass_destruction:blazing_eye'),
+    [
+      ' A ',
+      'BCD',
+      ' A '
+    ],
+    {
+      B: 'botania:blaze_block',
+      D: 'create:blaze_cake',
+      C: 'goety:philosophers_stone',
+      A: 'bosses_of_mass_destruction:blazing_eye'
+    }
+  )
+  //虚空荆棘
+  event.shaped(
+    Item.of('kubejs:raw_world_base'),
+    [
+      ' A ',
+      'BCD',
+      ' A '
+    ],
+    {
+      B: 'kubejs:midnight',
+      D: 'kubejs:buran',
+      C: 'goety:philosophers_stone',
+      A: 'alexsmobs:farseer_arm'
+    }
+  )
+  //古代灵魂
+  event.shaped(
+    Item.of('kubejs:raw_world_base'),
+    [
+      ' A ',
+      'BCD',
+      ' A '
+    ],
+    {
+      B: 'kubejs:midnight',
+      D: 'kubejs:buran',
+      C: 'goety:philosophers_stone',
+      A: 'alexsmobs:farseer_arm'
+    }
+  )
+
   //原始万象石
   event.shaped(
     Item.of('kubejs:raw_world_base'),

@@ -922,8 +922,13 @@
 		}
 		{
 			dependencies: ["2715A75A36C0FECB"]
+			description: [
+				"尽管以你的肉眼感知无法了解洞穴内的详细情况，但是科技装备可以！"
+				"将其置入背包以解锁洞穴地图视野。"
+			]
 			id: "41066A41812A37E2"
 			shape: "diamond"
+			subtitle: "探测轮廓"
 			tasks: [{
 				id: "67792EC8B82BD094"
 				item: "kubejs:sonic_mechanism"
@@ -938,9 +943,11 @@
 				"56229BD92474D24C"
 				"786828EE220E93A3"
 			]
+			description: ["虽然确实有点魔法混在里面，但总之你可以考虑制作某些电器了）"]
 			id: "2715A75A36C0FECB"
 			shape: "gear"
 			size: 2.0d
+			subtitle: "操纵电流！"
 			tasks: [{
 				id: "5C5E13AD4E9E89A0"
 				item: "immersiveengineering:rs_engineering"
