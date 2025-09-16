@@ -24,7 +24,8 @@
 	    ["#minecraft:logs_that_burn", 37],
 	    ["minecraft:coal_block", 333],
 	    ["minecraft:magma_block", 333],
-	    ["minecraft:lava_bucket", 1000]
+	    ["minecraft:lava_bucket", 1000],
+	    ["minecraft:dried_kelp_block", 92]
 	]
 	#─────────────────────────────────//v
 	Icebox = [
@@ -52,7 +53,8 @@
 	    ["minecraft:ice", -250],
 	    ["minecraft:clay", -333],
 	    ["minecraft:powder_snow_bucket", -100],
-	    ["minecraft:packed_ice", -1000]
+	    ["minecraft:packed_ice", -1000],
+	    ["minecraft:dried_kelp_block", 92]
 	]
 
 ["Soulspring Lamp"]

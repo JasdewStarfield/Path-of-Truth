@@ -1,5 +1,6 @@
 {
   "options": {
+    "validateOperationResults": true,
     "classPolicies": {
       "com.simibubi.create.content.equipment.toolbox.ToolboxMenu": {
         "className": "com.simibubi.create.content.equipment.toolbox.ToolboxMenu",

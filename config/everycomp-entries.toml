@@ -67,6 +67,7 @@
 		[types.cake.collectorsreap]
 			lime_cake = true
 			pomegranate_cake = true
+			pink_dragon_fruit_cake = true
 
 	[types.wood_type]
 

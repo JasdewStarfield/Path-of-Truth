@@ -118,6 +118,17 @@
 		# Each entry should be a namespace or fully namespaced item, e.g. minecraft:cobblestone
 		# Any items on the deny list are prevented from being stored in drawers
 		storeDenyList = ["storagedrawers:creative_vending_upgrade", "sophisticatedbackpacks"]
+		# 
+		# What a drawer should do with its items when broken.  Acceptable values are:
+		# KEEP: Drawer retains all items in the dropped item, like shulker boxes.  This is the default behavior.
+		# DROP: Drawer drops items into the world, up to the dropStackLimit value.  Stored items over that limit are voided.
+		# VOID: Drawer voids all items when dropped.
+		#Allowed Values: KEEP, DROP, VOID
+		dropMode = "KEEP"
+		# 
+		# If dropMode is set to DROP, this is the maximum number of stacks that can be spilled into the world
+		# from the entire block.  By default, this is set to the amount a vanilla chest could drop.
+		dropStackLimit = 32
 
 # Configuration around the controller and drawer networks.
 [Controller]

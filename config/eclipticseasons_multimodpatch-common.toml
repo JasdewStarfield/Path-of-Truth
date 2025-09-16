@@ -11,3 +11,8 @@
 	#Winter Temperatures divided into six periods according to the solar term table.
 	WinterTemps = [-0.3, -0.35, -0.35, -0.5, -0.45, -0.4]
 
+#Goety
+[goety]
+	Enable = true
+	FakeSeasonsLoaded = true
+

@@ -1,5 +1,4 @@
 
-#Enabled items
 [Items]
 	adzuki_gummy = true
 	aloe_gummy = true
@@ -145,6 +144,28 @@
 	urchin_dart = true
 	platinum_bass_roe = true
 	tiger_prawn_roe = true
+	cream_cheese = true
+	deific_blood = true
+	dragon_bush = true
+	dragon_fruit_seeds = true
+	dragon_stew = true
+	dragons_passion = true
+	dried_pink_dragon_fruit = true
+	hermits_sour = true
+	pink_dragon_fruit = true
+	pink_dragon_fruit_cake = true
+	pink_dragon_fruit_cake_slice = true
+	pink_dragon_fruit_crate = true
+	pink_dragon_fruit_gummy = true
+	pink_dragon_fruit_ice_cream = true
+	pink_dragon_fruit_ice_cream_block = true
+	pink_dragon_fruit_milkshake = true
+	pink_noodles = true
+	reanimators_garden = true
+	rose_moon = true
+	strong_limeade = true
+	stygian_pomegranate_crate = true
+	tropical_shaved_ice = true
 
 [Behavior]
 	#Whether Lime Bushes require Bee pollination to reach final growth stage.
@@ -153,4 +174,15 @@
 	pomegranate_pollination = false
 	#Whether bee pollination of bushes should occur much quicker (when Bee collides with it) rather than on Bee's AI scheduled timing. Use this if having issues with pollination.
 	fast_pollinate = false
+
+[Effects]
+	#Attack damage multiplier gained from Surge I.
+	#Range: 1.0 ~ 10.0
+	surge_zero_multiplier = 1.2
+	#Attack damage multiplier gained from Surge II.
+	#Range: 1.0 ~ 10.0
+	surge_one_multiplier = 1.4
+	#Attack damage multiplier gained from Surge III.
+	#Range: 1.0 ~ 10.0
+	surge_two_multiplier = 1.6
 

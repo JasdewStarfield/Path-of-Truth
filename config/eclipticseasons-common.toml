@@ -35,19 +35,21 @@
 
 [Weather]
 	#Enable the Ecliptic local weather system that adapts weather to each biome.
-	UseSolarWeather = false
+	UseSolarWeather = true
 	#Enable weather regions, linking specific biomes to particular weather to prevent scattered patterns.
 	EnableWeatherRegion = true
 	#Prevent rain from occurring in biomes without precipitation like desert.
 	NotRainInDesert = false
 	#Set it true to initialize weather and snow when loading the mod or level for the first time.
 	ShouldInitWeather = false
-	#Multiplier (0-1000) affecting how likely rain will occur.
+	#Multiplier (0-1000) affecting the chance of rain. Higher values make rain more likely.
 	#Range: 0 ~ 1000
 	RainChancePercentMultiplier = 40
-	#Multiplier (0-1000) affecting how likely thunder will occur.
+	#Multiplier (0-1000) affecting the chance of thunder. Higher values make thunder more likely.
 	#Range: 0 ~ 1000
 	ThunderChancePercentMultiplier = 20
+	#Clear rain or thunder status after the player sleeps.
+	ClearAfterSleep = false
 
 [Temperature]
 	#Ice or snow layer will melt in warm time.
@@ -71,12 +73,9 @@
 	#The maximum effective diameter of the greenhouse.
 	#Range: 5 ~ 256
 	GreenHouseMaxDiameter = 32
-	#The maximum effective diameter of the greenhouse.
+	#The maximum effective height of the greenhouse.
 	#Range: 3 ~ 128
 	GreenHouseMaxHeight = 32
-	#Chance that crops fail to grow due to low sunlight inside the greenhouse.
-	#Range: 0 ~ 10000
-	DarkGreenhouseFailChance = 2000
 	#Build a simple greenhouse without core blocks and humidity modifiers.
 	SimpleGreenHouseMode = false
 	#If true, the Humidifier block will no longer consume blocks during conversion.
@@ -94,6 +93,9 @@
 	ForceCompatMode = false
 	#Save environmental humidity modifiers to chunk file.
 	SaveChunkEnvironmentalHumidity = true
+	#Chance that crops fail to grow inside the greenhouse due to insufficient light. Higher values make failure more likely.
+	#Range: 0 ~ 10000
+	LowLightGreenhouseFailChance = 2000
 
 [Animal]
 	#Enable seasonal animal breed.
@@ -113,17 +115,20 @@
 	FishingSeasons = ["SUMMER"]
 	#Reduce fish availability during thunderstorms.
 	LessFishInThunder = false
-	#Greenhouse core would also work for animal check but not need a greenhouse.
-	EnableCoreWork = true
+	#Season Core affects animals even without a greenhouse.
+	SeasonCoreAffectsAnimals = true
 
 [Compat]
 	#Compatible with mods using SereneSeasons' CropTag.
 	SereneSeasonsCropTag = true
 	#If a mod tries to query biome precipitation using the raw method, would adjust it to correctly ignore small biomes like rivers.
 	FixBiomePrecipitation = true
+	#When a mod tries to query global weather parameters directly instead of using our API, Solar Weather will determine the result based on a weighted vote from the areas around players.
+	#Range: 0.0 ~ 1.0
+	WeatherVotePercent = 0.5
 
 [Debug]
-	#Enable debug option to detect illegal use of functions.
+	#“Enable logging for illegal function usage.
 	LogIllegalUse = false
 	#Disable snowy blocks beneath light sources with light level 0.
 	NotSnowyUnderLight0 = false
@@ -160,8 +165,10 @@
 	SnowInWorld = true
 	#When SnowInWorld is enabled, update chunk state on load based on differences from previous state records.
 	ForceSnowyChunkUpdate = true
+	#Snow Line Height, define like ["#c:is_cold/overworld", 200].
+	BiomeSnowLines = []
 	#When SnowInWorld is enabled, blocks like full blocks under snow layers will have a snowy appearance.
-	SnowyUnderSnowLike = true
+	SnowCoverUnderBlocks = true
 	#When SnowInWorld is enabled, snow may melt when stepped on due to heat.
-	StepMelt = false
+	SnowStepMelt = false
 
