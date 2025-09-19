@@ -47,3 +47,24 @@ let grantAdvancement = (player, advancement, mode) => player.server.runCommandSi
    if (count >= 30) { grantAdvancement(player, "path_of_truth:water_wheel", "only"); }
  }));
  
+ItemEvents.dropped("#forge:seeds", event => {
+  let {player} = event;
+  // kubejs 检测这个事件的触发条件是主手物品而不是丢出物品
+  // 也就是说，我主手拿着种子，打开背包丢出任何物品都会触发这个事件
+  // 所以这里加一个过滤
+  if (!event.item.hasTag("forge:seeds")) { return }
+  // 假人与非玩家投掷不计入
+  if (!player.isPlayer() || player.isFake()) { return }
+  // 最远也就扔 4 格，这里设个 8 吧
+  let target = player.rayTrace(8);
+  if(target.type == "block") {
+    // 检测变种花药台
+    if (!target.block.id.startsWith("botania:apothecary")) { return }
+    let ap_items = target.block.entityData['Items'];
+    if (ap_items.length < 4) { return }
+
+    let mystical_white_petal_count = ap_items.filter(item => item.id == "botania:white_petal").length;
+    // 如果有其它含有四个白色花瓣的配方同样会触发，防止以后有之类配方，加个判断
+    if (mystical_white_petal_count == 4 && ap_items.length == 4) { grantAdvancement(player,"path_of_truth:blind_idiot","only"); }
+  }
+});
