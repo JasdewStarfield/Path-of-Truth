@@ -1,0 +1,29 @@
+{
+  "parent":"path_of_truth:root",
+  "display": {
+    "icon": {
+      "item": "botania:white_petal"
+    },
+    "title": {
+      "translate": "盲目痴愚"
+    },
+    "description": {
+      "translate": "阿撒托斯所造之物只在祂的梦中存在"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "r": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "r"
+    ]
+  ],
+  "sends_telemetry_event": false
+}
