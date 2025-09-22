@@ -12,7 +12,8 @@
   ],
   "entityWhitelist": [
     "botania:mana_burst",
-    "drg_flares:drg_flares"
+    "drg_flares:drg_flares",
+    "scguns:scamp_tank"
   ],
   "tracingDistance": 128,
   "debugMode": false,
@@ -20,7 +21,7 @@
   "hitboxLimit": 50,
   "captureRate": 5,
   "skipMarkerArmorStands": true,
-  "tickCulling": true,
+  "tickCulling": false,
   "tickCullingWhitelist": [
     "create:contraption",
     "create:stationary_contraption",

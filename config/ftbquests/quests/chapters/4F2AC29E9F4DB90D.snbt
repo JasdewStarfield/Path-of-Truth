@@ -619,7 +619,7 @@
 				type: "checkmark"
 			}]
 			title: "粒粒皆辛苦"
-			x: 0.0d
+			x: -1.0d
 			y: -3.5d
 		}
 		{
@@ -1123,6 +1123,26 @@
 			}]
 			x: 0.0d
 			y: 6.5d
+		}
+		{
+			dependencies: ["11EC3A84F0C84E65"]
+			id: "6502D31ABEEEB5F6"
+			rewards: [{
+				count: 8
+				id: "37F386D8B8D182B5"
+				item: "brewinandchewin:tankard"
+				type: "item"
+			}]
+			shape: "diamond"
+			subtitle: "听完更迷茫了"
+			tasks: [{
+				id: "3A43F4F0143FC290"
+				item: "brewinandchewin:keg"
+				type: "item"
+			}]
+			title: "当你迷茫的时候，不妨听听小桶怎么说"
+			x: 1.0d
+			y: -3.5d
 		}
 	]
 	subtitle: ["Exotic Alloys"]

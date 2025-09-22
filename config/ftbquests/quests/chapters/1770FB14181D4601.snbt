@@ -73,6 +73,7 @@
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
+			description: ["火药可以通过多种工业方式量产。"]
 			id: "0AA2D4BA3B7F99BF"
 			shape: "diamond"
 			subtitle: "枪总是需要火药的"
@@ -217,27 +218,80 @@
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
+			icon: {
+				Count: 1
+				id: "scguns:flintlock_pistol"
+				tag: {
+					AmmoCount: 1
+					Damage: 0
+					GeckoLibID: 6L
+				}
+			}
 			id: "3B8F97E211EF077C"
 			subtitle: "只用石头和木头就能做出堪堪能用的基础枪械"
-			tasks: [{
-				id: "46DD280FA0FB25E3"
-				item: "scguns:antique_blueprint"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "46DD280FA0FB25E3"
+					item: "scguns:antique_blueprint"
+					type: "item"
+				}
+				{
+					id: "2542F99BAE18C4AF"
+					item: "scguns:frontier_blueprint"
+					type: "item"
+				}
+			]
 			title: "新手上路"
 			x: -1.0d
 			y: 2.5d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
+			icon: "minecraft:emerald"
 			id: "764AEF73C28872DD"
-			tasks: [{
-				id: "6498CDA2122E7FCF"
-				item: "scguns:wrecker_blueprint"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6AB6A4B259E5B51C"
+					item: "scguns:the_pact"
+					type: "item"
+				}
+				{
+					id: "305F3C61CB3F3022"
+					item: "scguns:wrecker_blueprint"
+					type: "item"
+				}
+			]
+			title: "神秘交易"
 			x: 1.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			id: "3270686208C6C37D"
+			tasks: [{
+				id: "2CF1F679A7D01051"
+				item: "scguns:exo_suit_blueprint"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			id: "42008C71DAD852B7"
+			tasks: [{
+				id: "442D6E63CCDFEA2F"
+				item: {
+					Count: 1
+					id: "scguns:cog_locator"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
 		}
 	]
 	subtitle: ["Life of a Gunsmith"]

@@ -185,8 +185,8 @@
   "block.kubejs.bronze_block": "青铜块",
   "block.kubejs.za_block": "锌铝合金块",
   "block.kubejs.broken_snowcap_oven": "损坏的雪帽熔炉",
-  "block.kubejs.sulfur_block": "焦化硫块",
-  "block.kubejs.phosphor_block": "磷块",
+  "block.kubejs.sulfur_block": "焦化硫粉块",
+  "block.kubejs.phosphor_block": "磷粉块",
 
   "block.kubejs.obelisk_base": "重生石碑基座",
   "item.kubejs.obelisk_base.desc1": "你感到一股强大的力量从其中散发出来……",

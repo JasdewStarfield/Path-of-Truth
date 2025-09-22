@@ -161,7 +161,7 @@ StartupEvents.registry('block', (event) => {
 
   //磷粉、焦化硫粉块
   event.create('phosphor_block')
-		.displayName('Block of Phosphor')
+		.displayName('Block of Phosphor Dust')
     .sandSoundType()
 		.hardness(0.5)
 		.resistance(0.5)
@@ -173,7 +173,7 @@ StartupEvents.registry('block', (event) => {
 		.renderType('solid')
 		.textureAll('kubejs:block/phosphor_block')
   event.create('sulfur_block')
-		.displayName('Block of Sulfur')
+		.displayName('Block of Sulfur Dust')
     .sandSoundType()
 		.hardness(0.5)
 		.resistance(0.5)

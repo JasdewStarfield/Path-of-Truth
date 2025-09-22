@@ -5,6 +5,7 @@
 	#Render snow edge overlay on neighbors for smoother snowy transitions.
 	SmoothSnowyEdges = false
 	FrozenWater = false
+	FrozenWaterBreakable = true
 
 [GUI]
 	#Displays the season and humidity levels suitable for growing crops.
