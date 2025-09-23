@@ -247,8 +247,13 @@
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
+			description: [
+				"通过交易协议，你可以召唤一位存在一定时间的“黄铜游商”前来和你交易，而它会提供一些物有所值的商品和&9一种独特的蓝图&r。"
+				"和传统游商不同的是，它在被攻击的时候会呼叫支援，而且远不只是两头羊驼。"
+			]
 			icon: "minecraft:emerald"
 			id: "764AEF73C28872DD"
+			subtitle: "芝麻开门"
 			tasks: [
 				{
 					id: "6AB6A4B259E5B51C"
@@ -267,18 +272,34 @@
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
+			description: [
+				"虽然只能通过击败强大的BOSS掉落，但是它可以让你制作一些特殊的，有槽位的盔甲！"
+				"初始的盔甲很弱是一码事，加装升级后的强度是另一码事，比如现在你可以用电力尝试驱动盔甲的强大功能……"
+			]
 			id: "3270686208C6C37D"
+			rewards: [{
+				id: "4E7B8C7F1C813B9A"
+				item: "scguns:advanced_exo_suit_core"
+				type: "item"
+			}]
+			subtitle: "最难获得的蓝图（之一）"
 			tasks: [{
 				id: "2CF1F679A7D01051"
 				item: "scguns:exo_suit_blueprint"
 				type: "item"
 			}]
+			title: "模块化装甲"
 			x: 0.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
+			description: [
+				"跟随黄铜的指引，你将找到深藏于地下的大型军火库。"
+				"探索的时候要小心&a被释放的怪物&r，&c敌对的自动炮台&r……以及&9可能存在的，巨大而可怖的古代黄铜战争机器&r。"
+			]
 			id: "42008C71DAD852B7"
+			subtitle: "计划一场终身难忘的冒险"
 			tasks: [{
 				id: "442D6E63CCDFEA2F"
 				item: {
@@ -290,6 +311,7 @@
 				}
 				type: "item"
 			}]
+			title: "结构定位"
 			x: 0.0d
 			y: 3.0d
 		}
