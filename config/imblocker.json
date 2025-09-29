@@ -8,7 +8,7 @@
     ],
     "enableScreenRecovering": false,
     "recoveredScreens": [],
-    "commandInputMode": "IM_ENG_STATE",
+    "englishStateImpl": "CONVERSION_STATUS",
     "primaryEnglishState": "CJK"
   },
   "advanceSettings": {

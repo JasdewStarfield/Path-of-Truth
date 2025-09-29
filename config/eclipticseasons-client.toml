@@ -78,3 +78,9 @@
 	#Whether to apply stronger sampling weight in the direction the player is facing.
 	WeatherFrontBias = true
 
+[Compat]
+
+	[Compat.Oculus]
+		#Unify the shading and surface parameters of snow-covered blocks.
+		UnifiedSnowyBlockShading = true
+

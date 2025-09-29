@@ -1,0 +1,15 @@
+
+#Aqueduct system settings
+[aqueduct]
+	#Transfer rate for aqueduct system in mB per tick
+	#Range: 1 ~ 1000
+	transferRate = 50
+	#Fill rate from water source blocks in mB per tick
+	#Range: 1 ~ 1000
+	waterFillRate = 50
+	#Maximum length of a single aqueduct network
+	#Range: 16 ~ 1024
+	maxLength = 256
+	#Whether aqueduct transfer takes priority over pipe transfer
+	prioritizeAqueduct = true
+

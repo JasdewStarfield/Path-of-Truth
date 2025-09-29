@@ -24,37 +24,7 @@
 	# • range: The range of the effect, in blocks
 	# • units: (Optional) The units of the temperature value (MC, F, or C). Defaults to MC
 	# ⌄ 
-	"Entity Temperatures" = [
-	    ["minecraft:blaze", 999, 1],
-	    ["minecraft:magma_cube", 0.5, 5],
-	    ["alexsmobs:froststalker", -0.2, 5],
-	    ["minecraft:elder_guardian", -0.2, 5],
-	    ["minecraft:snow_golem", -0.2, 5],
-	    ["minecraft:warden", -999, 3],
-	    ["blue_skies:armored_frost_spirit", -0.2, 3],
-	    ["blue_skies:crynocerous", -0.2, 3],
-	    ["blue_skies:crystal_camel", -0.2, 3],
-	    ["blue_skies:armored_frost_spirit", -0.2, 3],
-	    ["blue_skies:polargeist", -0.2, 3],
-	    ["blue_skies:sliv", 0.3, 3],
-	    ["blue_skies:firefly", 0.3, 3],
-	    ["blue_skies:emberback", 0.3, 3],
-	    ["endermanoverhaul:nether_wastes_enderman", 0.3, 3],
-	    ["endermanoverhaul:soulsand_valley_enderman", -0.2, 3],
-	    ["endermanoverhaul:snowy_enderman", -0.2, 3],
-	    ["endermanoverhaul:ice_spikes_enderman", -0.2, 3],
-	    ["creeperoverhaul:snowy_creeper", -0.2, 3],
-	    ["goety:haunt", -0.2, 3],
-	    ["goety:wraith", -0.2, 3],
-	    ["goety:border_wraith", -0.2, 3],
-	    ["goety:ice_golem", -0.3, 3],
-	    ["goety:inferno", 0.3, 3],
-	    ["aquamirae:tortured_soul", -0.2, 3],
-	    ["netherexp:wisp", -0.2, 3],
-	    ["netherexp:apparition", -0.3, 4],
-	    ["netherexp:ecto_slab", -0.1, 3],
-	    ["netherexp:banshee", -0.3, 5]
-	]
+	"Entity Temperatures" = [["minecraft:blaze", 999, 1], ["minecraft:magma_cube", 0.5, 5], ["alexsmobs:froststalker", -0.2, 5], ["minecraft:elder_guardian", -0.2, 5], ["minecraft:snow_golem", -0.2, 5], ["minecraft:warden", -999, 3], ["blue_skies:armored_frost_spirit", -0.2, 3], ["blue_skies:crynocerous", -0.2, 3], ["blue_skies:crystal_camel", -0.2, 3], ["blue_skies:armored_frost_spirit", -0.2, 3], ["blue_skies:polargeist", -0.2, 3], ["blue_skies:sliv", 0.3, 3], ["blue_skies:firefly", 0.3, 3], ["blue_skies:emberback", 0.3, 3], ["endermanoverhaul:nether_wastes_enderman", 0.3, 3], ["endermanoverhaul:soulsand_valley_enderman", -0.2, 3], ["endermanoverhaul:snowy_enderman", -0.2, 3], ["endermanoverhaul:ice_spikes_enderman", -0.2, 3], ["creeperoverhaul:snowy_creeper", -0.2, 3], ["goety:haunt", -0.2, 3], ["goety:wraith", -0.2, 3], ["goety:border_wraith", -0.2, 3], ["goety:ice_golem", -0.3, 3], ["goety:inferno", 0.3, 3], ["aquamirae:tortured_soul", -0.2, 3], ["netherexp:wisp", -0.2, 3], ["netherexp:apparition", -0.3, 4], ["netherexp:ecto_slab", -0.1, 3], ["netherexp:banshee", -0.3, 5]]
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Defines entities that are affected by temperature and the climates they can live in
 	# ├── Format: [["entity_id", minTemp, maxTemp, *rate, *units], ["entity_id", minTemp, maxTemp, *rate, *units], etc...]
@@ -64,18 +34,7 @@
 	# • *rate: A multiplier to the rate at which the entity overheats or freezes, based on players' rate
 	# • *units: The units used for the min/max temperature values (MC, F, or C). Defaults to MC
 	# ⌄ 
-	"Entity Climate Settings" = [
-	    ["minecraft:chicken", 10, 10, 0.6, "F"],
-	    ["minecraft:pig", 0, 0, 0.5, "F"],
-	    ["minecraft:cow", 0, 20, 0.2, "F"],
-	    ["minecraft:mooshroom", 0, 20, 0.2, "F"],
-	    ["minecraft:sheep", -20, -10, 0.3, "F"],
-	    ["minecraft:goat", -40, -15, 0.4, "F"],
-	    ["minecraft:horse", -5, 10, 0.3, "F"],
-	    ["minecraft:donkey", -5, 10, 0.3, "F"],
-	    ["minecraft:mule", -5, 10, 0.3, "F"],
-	    ["minecraft:llama", -10, 0, 0.4, "F"]
-	]
+	"Entity Climate Settings" = [["minecraft:chicken", 10, 10, 0.6, "F"], ["minecraft:pig", 0, 0, 0.5, "F"], ["minecraft:cow", 0, 20, 0.2, "F"], ["minecraft:mooshroom", 0, 20, 0.2, "F"], ["minecraft:sheep", -20, -10, 0.3, "F"], ["minecraft:goat", -40, -15, 0.4, "F"], ["minecraft:horse", -5, 10, 0.3, "F"], ["minecraft:donkey", -5, 10, 0.3, "F"], ["minecraft:mule", -5, 10, 0.3, "F"], ["minecraft:llama", -10, 0, 0.4, "F"]]
 	#─────────────────────────────────────────────────────────────────────────
 	# Enables the temperature system for entities
 	# If disabled, entities will not be harmed by temperature
@@ -106,10 +65,7 @@
 	# • biome_id: The ID of the biome, e.g. "minecraft:jungle"
 	# • weight: The likelihood for the entity to spawn compared to other entities, higher values mean more common spawns
 	# ⌄ 
-	"Chameleon Spawn Biomes" = [
-	    ["#c:is_hot/overworld", 5],
-	    ["#biomeswevegone:climate/hot", 5]
-	]
+	"Chameleon Spawn Biomes" = [["#c:is_hot/overworld", 5], ["#biomeswevegone:climate/hot", 5]]
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Defines the biomes that Chameleons can spawn in
 	# └── Format: [["biome_id", weight], ["biome_id", weight], etc...]
