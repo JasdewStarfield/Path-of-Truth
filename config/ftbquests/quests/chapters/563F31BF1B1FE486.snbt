@@ -279,7 +279,7 @@
 		{
 			dependencies: ["71BF98560860C0AB"]
 			id: "309ED82498C4F2D1"
-			subtitle: "植物之力"
+			subtitle: "生长……"
 			tasks: [{
 				id: "3F1587357E1294A3"
 				item: "botania:overgrowth_seed"
@@ -354,7 +354,7 @@
 		{
 			dependencies: ["07FA33846E7A5B3D"]
 			id: "7A0D894A5227359D"
-			subtitle: "以牙还牙"
+			subtitle: "以血还血"
 			tasks: [{
 				id: "3BCCF21AE183461F"
 				item: "goety:killing_focus"
