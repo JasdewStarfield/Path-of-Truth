@@ -427,17 +427,17 @@
 					type: "item"
 				}
 				{
-					count: 3
-					id: "7C3C129113EC246A"
-					item: "createutilities:void_steel_ingot"
+					count: 4
+					id: "658B23DF9A834F9E"
+					item: "minecraft:redstone_block"
 					random_bonus: 2
 					type: "item"
 				}
 				{
-					count: 3
-					id: "5C6423D2C4F66708"
-					item: "createutilities:polished_amethyst"
-					random_bonus: 2
+					count: 10
+					id: "4AEF2915A31613B3"
+					item: "immersiveengineering:ingot_steel"
+					random_bonus: 5
 					type: "item"
 				}
 			]
@@ -448,7 +448,7 @@
 				item: "immersiveengineering:rs_engineering"
 				type: "item"
 			}]
-			title: "末影共振"
+			title: "红石传输"
 			x: 21.0d
 			y: -3.0d
 		}
@@ -829,11 +829,35 @@
 				"4A1D286A2CADDD34"
 			]
 			id: "2BE075C4094927DE"
+			rewards: [
+				{
+					id: "15138D17E35A9FED"
+					item: "kubejs:sensory_engineering"
+					random_bonus: 1
+					type: "item"
+				}
+				{
+					count: 5
+					id: "5A12D5699B0F71E8"
+					item: "createutilities:void_steel_ingot"
+					random_bonus: 3
+					type: "item"
+				}
+				{
+					count: 25
+					id: "4FBBFCA0E8DE884B"
+					item: "minecraft:amethyst_shard"
+					random_bonus: 5
+					type: "item"
+				}
+			]
+			subtitle: "工程块#7"
 			tasks: [{
 				id: "71B1136497236CC9"
 				item: "kubejs:sensory_engineering"
 				type: "item"
 			}]
+			title: "末影共振"
 			x: 23.0d
 			y: -3.0d
 		}

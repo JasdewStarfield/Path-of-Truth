@@ -567,7 +567,7 @@
 			]
 			icon: "vintageimprovements:helve_hammer"
 			id: "40129F9AE9DCE1EF"
-			subtitle: "大力出奇迹，兄弟"
+			subtitle: "大力出奇迹"
 			tasks: [{
 				id: "2F2AD8CCB0B007F8"
 				item: "vintageimprovements:helve_hammer"
@@ -951,8 +951,15 @@
 		}
 		{
 			dependencies: ["5B1818D5A1142A16"]
+			description: [
+				"现在至少你能更轻松地指挥你的机器们了……也算一种工业的艺术。"
+				"然而机器演奏的音乐大概不太好听（"
+				""
+				"&o&7*黄铜协奏曲是隔壁整合包的名字，这里借用一下）&r&r"
+			]
 			id: "33E7363CA1694193"
 			shape: "diamond"
+			subtitle: "黄铜协奏曲（？）"
 			tasks: [{
 				id: "6206E412782C02B4"
 				item: "fluid:baton"

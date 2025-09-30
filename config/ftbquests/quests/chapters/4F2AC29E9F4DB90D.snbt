@@ -1089,6 +1089,12 @@
 			description: ["在你获得烈焰人燃烧室之后，你也可以使用搅拌来强行生产活木和活石……代价就是白雏菊有微小的概率因为这种粗暴的行为而毁坏。"]
 			icon: "botania:pure_daisy"
 			id: "07A2484514957C02"
+			rewards: [{
+				id: "2DD4F5C696CB090B"
+				item: "botania:pure_daisy"
+				title: "试试你的运气！"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "整个好活"
 			tasks: [{
@@ -1120,17 +1126,24 @@
 		}
 		{
 			dependencies: ["27FD1F76136CBD0B"]
+			description: ["用蜂蜜做构件并不意味着它能吃（"]
 			id: "09A8B7A721106DE1"
+			subtitle: "有点太甜蜜了"
 			tasks: [{
 				id: "3B9D15E8B932D167"
 				item: "kubejs:fluid_mechanism"
 				type: "item"
 			}]
+			title: "流体力学"
 			x: 0.0d
 			y: 6.5d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
+			description: [
+				"其实它只会咕嘟咕嘟。"
+				"但也算一种说法，不是吗（"
+			]
 			id: "6502D31ABEEEB5F6"
 			rewards: [{
 				count: 8
@@ -1151,6 +1164,10 @@
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
+			description: [
+				"至少可以用来补全你的工业体系……让你少走两步。"
+				"以及，这不是履带！"
+			]
 			id: "0EC97D8F1B6A5CD4"
 			shape: "diamond"
 			subtitle: "可能移不动，但是联得通"
@@ -1165,8 +1182,10 @@
 		}
 		{
 			dependencies: ["09A8B7A721106DE1"]
+			description: ["往好了想，至少你现在可以以桶为单位进行注入了（"]
 			id: "71C51DB431C3442A"
 			shape: "diamond"
+			subtitle: "更直接的灌注"
 			tasks: [{
 				id: "2B940AB35B782F29"
 				item: "fluid:fluid_interface"
@@ -1177,6 +1196,10 @@
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
+			description: [
+				"相比于需要粘合形成特定结构的直梯，也许自动扶梯是更合理的。"
+				"没有提示音也没有扶手——掉下去就是掉下去了。"
+			]
 			icon: "escalated:metal_walkway_steps"
 			id: "7CD18CF18D4DEEFD"
 			shape: "diamond"
