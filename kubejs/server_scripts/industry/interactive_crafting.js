@@ -53,6 +53,8 @@ ServerEvents.recipes(event => {
       ["create:portable_fluid_interface", "create:chute"],
       ["vintageimprovements:vacuum_chamber", "create:mechanical_pump"],
       ['create:steam_engine', 'create:mechanical_piston'],
+      ['fluid:centrifugal_pump', 'create:propeller'],
+      ['fluid:copper_tap', '#forge:storage_blocks/constantan']
     ]
     fluidEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:fluid_engineering", material)
@@ -65,6 +67,7 @@ ServerEvents.recipes(event => {
       ["create:mechanical_arm", "create:brass_hand"],
       ["create:elevator_pulley", "#forge:rope"],
       ["create:content_observer", "observer"],
+      ["fluid:pipette", "kubejs:fluid_mechanism"],
       //["iammusicplayer:music_manager", "jukebox"],
       //["create:redstone_link", "redstone_torch"],
       //["create:mechanical_crafter", "#forge:workbench"],
@@ -261,4 +264,20 @@ ServerEvents.recipes(event => {
         Fluid.of('create:honey', 50)
       ]
     ).heated()
+
+    //流体接口
+    event.remove({id: "fluid:fluid_interface"})
+    event.shaped(
+      Item.of('fluid:fluid_interface', 1),
+      [
+      ' A ',
+      'BCB',
+      ' A '
+      ],
+      {
+          A: '#forge:nuggets/bronze',
+          B: '#forge:nuggets/constantan',
+          C: 'kubejs:fluid_mechanism'
+      }
+    )
 })

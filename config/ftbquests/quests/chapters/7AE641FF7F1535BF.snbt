@@ -672,11 +672,12 @@
 		{
 			dependencies: ["5700B2AFCCAEE31A"]
 			description: [
-				"在制作模具的过程中，车床是必不可少的。"
+				"你可以用它制作难以压制的工业铁板；同时在制作模具的过程中，车床也是必不可少的。"
 				"但相应的，你需要一定的技术来操作它，不然你根本车不出你想要的模板）"
 			]
 			icon: "vintageimprovements:lathe"
 			id: "56229BD92474D24C"
+			subtitle: "车+床……？"
 			tasks: [
 				{
 					id: "31BF7C74CB552026"
@@ -932,8 +933,8 @@
 		{
 			dependencies: [
 				"2974EA098C1280C1"
-				"56229BD92474D24C"
 				"786828EE220E93A3"
+				"56229BD92474D24C"
 			]
 			description: ["虽然确实有点魔法混在里面，但总之你可以考虑制作某些电器了）"]
 			id: "2715A75A36C0FECB"
@@ -947,6 +948,32 @@
 			}]
 			x: 14.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["5B1818D5A1142A16"]
+			id: "33E7363CA1694193"
+			shape: "diamond"
+			tasks: [{
+				id: "6206E412782C02B4"
+				item: "fluid:baton"
+				type: "item"
+			}]
+			title: "指挥家"
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5B1818D5A1142A16"]
+			id: "27E5EF3358FC99F7"
+			shape: "diamond"
+			subtitle: "真得控制你了"
+			tasks: [{
+				id: "3E600F8DC7CE5E6A"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -1.5d
 		}
 	]
 	subtitle: ["Hearts of Steel"]

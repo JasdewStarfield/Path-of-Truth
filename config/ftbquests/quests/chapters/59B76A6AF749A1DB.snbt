@@ -526,7 +526,7 @@
 				value: 1145140L
 			}]
 			title: "证明你的能量霸权！"
-			x: 5.0d
+			x: 3.0d
 			y: 4.0d
 		}
 		{
@@ -1748,6 +1748,7 @@
 				"583407C7537AE9C9"
 				"2CB1E7FC5CBF6B2C"
 			]
+			description: ["使用经验来活化钢化钻石！"]
 			icon: "scguns:diamond_steel_ingot"
 			id: "5B6C1785EDD9BC65"
 			shape: "diamond"
@@ -1760,6 +1761,11 @@
 				}
 				{
 					id: "59927C8283555494"
+					item: "scguns:depleted_diamond_steel_ingot"
+					type: "item"
+				}
+				{
+					id: "60FDBF75E2BD2693"
 					item: "scguns:diamond_steel_ingot"
 					type: "item"
 				}

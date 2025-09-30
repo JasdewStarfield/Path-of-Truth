@@ -126,7 +126,7 @@
 			]
 			title: "更多的自动化选项！"
 			x: -2.0d
-			y: -0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["11EC3A84F0C84E65"]
@@ -148,7 +148,7 @@
 			}]
 			title: "好看吗？"
 			x: 2.0d
-			y: -0.5d
+			y: -1.5d
 		}
 		{
 			dependencies: ["2B406E71D5BDF8F6"]
@@ -337,13 +337,13 @@
 			]
 			title: "流淌……"
 			x: 0.0d
-			y: 6.0d
+			y: 5.5d
 		}
 		{
 			dependencies: [
 				"28617A52922404CE"
-				"27FD1F76136CBD0B"
 				"62214C4C462BB308"
+				"09A8B7A721106DE1"
 			]
 			description: [
 				"所有流体机械都需要核心，而我们设定的核心就是流体工程块。"
@@ -654,6 +654,11 @@
 				{
 					id: "5F5E85ED77BD90D6"
 					item: "create:smart_fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "4862446542536B7A"
+					item: "fluid:smart_fluid_interface"
 					type: "item"
 				}
 			]
@@ -1143,6 +1148,54 @@
 			title: "当你迷茫的时候，不妨听听小桶怎么说"
 			x: 1.0d
 			y: -3.5d
+		}
+		{
+			dependencies: ["11EC3A84F0C84E65"]
+			id: "0EC97D8F1B6A5CD4"
+			shape: "diamond"
+			subtitle: "可能移不动，但是联得通"
+			tasks: [{
+				id: "7AE247BF68F7270B"
+				item: "createtransmission:transmission_chain"
+				type: "item"
+			}]
+			title: "传送带连接器"
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["09A8B7A721106DE1"]
+			id: "71C51DB431C3442A"
+			shape: "diamond"
+			tasks: [{
+				id: "2B940AB35B782F29"
+				item: "fluid:fluid_interface"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["11EC3A84F0C84E65"]
+			icon: "escalated:metal_walkway_steps"
+			id: "7CD18CF18D4DEEFD"
+			shape: "diamond"
+			subtitle: "Please stand still and hold the handrail..."
+			tasks: [
+				{
+					id: "30FBA89DC5B54C29"
+					item: "escalated:metal_walkway_steps"
+					type: "item"
+				}
+				{
+					id: "78BA182888817ECE"
+					item: "escalated:wooden_walkway_steps"
+					type: "item"
+				}
+			]
+			title: "请站稳扶好……"
+			x: 2.0d
+			y: -0.5d
 		}
 	]
 	subtitle: ["Exotic Alloys"]

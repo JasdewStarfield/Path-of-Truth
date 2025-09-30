@@ -228,7 +228,7 @@ ServerEvents.recipes(event => {
         "additives":[],
         "energy":102400,
         "input":{"item":"scguns:diamond_steel_blend"},
-        "results":[{"item":"scguns:diamond_steel_ingot"}],
+        "results":[{"item":"scguns:depleted_diamond_steel_ingot"}],
         "time":100
     })
 

@@ -410,13 +410,13 @@
 				type: "checkmark"
 			}]
 			title: "苏醒"
-			x: 22.0d
+			x: 24.0d
 			y: 0.0d
 		}
 		{
 			dependencies: [
-				"4A1D286A2CADDD34"
-				"7E03548BD6891DB5"
+				"4AB5A119442468ED"
+				"39F03860B4042EB0"
 			]
 			id: "32EE8784F8B9200F"
 			rewards: [
@@ -462,7 +462,7 @@
 				type: "item"
 			}]
 			title: "琥珀"
-			x: 23.0d
+			x: 25.0d
 			y: -1.0d
 		}
 		{
@@ -475,7 +475,7 @@
 				type: "item"
 			}]
 			title: "电气"
-			x: 23.0d
+			x: 25.0d
 			y: 1.0d
 		}
 		{
@@ -487,7 +487,7 @@
 				item: "kubejs:factory_casing"
 				type: "item"
 			}]
-			x: 27.0d
+			x: 29.0d
 			y: 3.0d
 		}
 		{
@@ -527,7 +527,7 @@
 				type: "item"
 			}]
 			title: "失落科技"
-			x: 27.0d
+			x: 29.0d
 			y: -3.0d
 		}
 		{
@@ -540,7 +540,7 @@
 				type: "item"
 			}]
 			title: "铁律"
-			x: 26.0d
+			x: 28.0d
 			y: 0.0d
 		}
 		{
@@ -553,7 +553,7 @@
 				type: "item"
 			}]
 			title: "聚合"
-			x: 29.0d
+			x: 31.0d
 			y: 0.0d
 		}
 		{
@@ -569,7 +569,7 @@
 				type: "item"
 			}]
 			title: "集成"
-			x: 31.0d
+			x: 33.0d
 			y: 1.0d
 		}
 		{
@@ -609,7 +609,7 @@
 				type: "item"
 			}]
 			title: "算力迭代"
-			x: 33.0d
+			x: 35.0d
 			y: -3.0d
 		}
 		{
@@ -622,6 +622,7 @@
 				"2739985E562929B2"
 				"32EE8784F8B9200F"
 				"01D5299D241B8599"
+				"2BE075C4094927DE"
 			]
 			description: ["然而一切尚未结束……"]
 			id: "29D490BEC5BBC8E1"
@@ -702,11 +703,11 @@
 				type: "item"
 			}]
 			title: "先古"
-			x: 24.5d
+			x: 26.5d
 			y: -1.0d
 		}
 		{
-			dependencies: ["4989FE4EDCFFB309"]
+			dependencies: ["26BA5A8893BF78C7"]
 			id: "4A1D286A2CADDD34"
 			subtitle: "合金#6"
 			tasks: [{
@@ -715,7 +716,7 @@
 				type: "item"
 			}]
 			title: "纠缠"
-			x: 20.0d
+			x: 22.0d
 			y: 0.0d
 		}
 		{
@@ -727,7 +728,7 @@
 				item: "createutilities:void_casing"
 				type: "item"
 			}]
-			x: 21.0d
+			x: 23.0d
 			y: 3.0d
 		}
 		{
@@ -740,7 +741,7 @@
 				type: "item"
 			}]
 			title: "能源"
-			x: 31.0d
+			x: 33.0d
 			y: -1.0d
 		}
 		{
@@ -753,7 +754,7 @@
 				type: "item"
 			}]
 			title: "异域"
-			x: 29.0d
+			x: 31.0d
 			y: 1.0d
 		}
 		{
@@ -766,7 +767,7 @@
 				type: "item"
 			}]
 			title: "辐照"
-			x: 29.0d
+			x: 31.0d
 			y: -1.0d
 		}
 		{
@@ -778,7 +779,7 @@
 				item: "createnuclear:reactor_casing"
 				type: "item"
 			}]
-			x: 33.0d
+			x: 35.0d
 			y: 3.0d
 		}
 		{
@@ -791,7 +792,7 @@
 				type: "item"
 			}]
 			title: "铿锵"
-			x: 24.5d
+			x: 26.5d
 			y: 1.0d
 		}
 		{
@@ -821,6 +822,20 @@
 			}]
 			x: 12.0d
 			y: -1.0d
+		}
+		{
+			dependencies: [
+				"7E03548BD6891DB5"
+				"4A1D286A2CADDD34"
+			]
+			id: "2BE075C4094927DE"
+			tasks: [{
+				id: "71B1136497236CC9"
+				item: "kubejs:sensory_engineering"
+				type: "item"
+			}]
+			x: 23.0d
+			y: -3.0d
 		}
 	]
 	subtitle: ["Industrial Landmarks"]

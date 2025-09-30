@@ -324,6 +324,8 @@ ServerEvents.recipes(event => {
     E: 'create:shaft'
   })
   event.recipes.vintageimprovements.turning(Item.of('create:fluid_pipe', 16), '#forge:storage_blocks/constantan')
+  event.remove({ id: 'createdeco:pressing/industrial_iron_sheet' })
+  event.recipes.vintageimprovements.turning(Item.of('createdeco:industrial_iron_sheet', 9), 'create:industrial_iron_block')
 
   //零件（直接合成）
   event.shaped('immersiveengineering:component_iron', [ 
