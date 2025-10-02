@@ -90,7 +90,7 @@
 	#[Deprecated]If a crop is not registered for a season or humid type, default values will be used.
 	RegisterCropDefaultValue = false
 	#Force all crops to use compatibility mode for growth control, not just those tagged as eclipticseasons:natural_plants.
-	ForceCompatMode = false
+	ForceCompatMode = true
 	#Save environmental humidity modifiers to chunk file.
 	SaveChunkEnvironmentalHumidity = true
 	#Chance that crops fail to grow inside the greenhouse due to insufficient light. Higher values make failure more likely.
@@ -126,6 +126,15 @@
 	#When a mod tries to query global weather parameters directly instead of using our API, Solar Weather will determine the result based on a weighted vote from the areas around players.
 	#Range: 0.0 ~ 1.0
 	WeatherVotePercent = 0.5
+	#If true, saplings will be ignored when applying Serene Seasons crop tags.
+	#Set to false if you want saplings to also follow seasonal crop rules.
+	SereneSeasonsCropTagIgnoreSapling = true
+	#Crops should get automatic humidity values based on seasons from Serene Season Crop Tag.
+	SereneSeasonCropTagBasedHumidity = true
+	#A blacklist of mods whose crops should NOT get automatic humidity values based on seasons.
+	#Add mod IDs here to prevent seasonal humidity assignment.
+	#Example: ["vinery", "meadow"]
+	ModsWithoutSereneSeasonBasedHumidity = []
 
 [Debug]
 	#“Enable logging for illegal function usage.
