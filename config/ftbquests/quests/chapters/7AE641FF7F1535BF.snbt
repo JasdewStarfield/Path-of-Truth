@@ -957,14 +957,27 @@
 				""
 				"&o&7*黄铜协奏曲是隔壁整合包的名字，这里借用一下）&r&r"
 			]
+			icon: "fluid:baton"
 			id: "33E7363CA1694193"
 			shape: "diamond"
 			subtitle: "黄铜协奏曲（？）"
-			tasks: [{
-				id: "6206E412782C02B4"
-				item: "fluid:baton"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "6206E412782C02B4"
+					item: "fluid:baton"
+					type: "item"
+				}
+				{
+					id: "15C163D12662ED3F"
+					item: "create:mechanical_arm"
+					type: "item"
+				}
+				{
+					id: "78C2F2813E43BE57"
+					item: "fluid:pipette"
+					type: "item"
+				}
+			]
 			title: "指挥家"
 			x: -5.5d
 			y: 1.5d

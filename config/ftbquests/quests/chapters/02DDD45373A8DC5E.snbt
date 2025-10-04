@@ -38,7 +38,10 @@
 	quests: [
 		{
 			dependencies: ["6A1B42D208C780BD"]
-			description: ["不管干什么，你总归需要从工作台开始的，对吧）"]
+			description: [
+				"不管干什么，你总归需要从工作台开始的，对吧）"
+				"提前的提醒：建议工业区选址在河流附近！"
+			]
 			hide_until_deps_complete: true
 			icon: "minecraft:oak_log"
 			id: "46156FBBDCAB4B1D"
