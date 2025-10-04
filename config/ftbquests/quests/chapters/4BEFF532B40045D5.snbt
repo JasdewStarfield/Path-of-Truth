@@ -22,22 +22,22 @@
 		{
 			dependencies: ["2BC7BDD7E5EC76E5"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest1.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest1.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest1.description3}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest1.description4}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest1.description5}"
+				"相信你已经发现了，这个世界的&b&l节气会影响环境温度&r&r。"
+				"在没有温度计的情况下，你的体感会通过物品栏上方的头像展示，过冷会出现&b寒霜&r，而过热会出现&c火焰&r。具体来说，这分为环境温度和体温两个系统。环境温度高于&b10度&r以及低于&c38度&r都是安全的，超出这个范围，你的体温就会变化，这时就要注意了！"
+				"在温度过冷或过热的情况下，你&4不能上床睡眠&r来跳过长夜，体温偏离过大还会受到伤害以及获得Debuff。体温的偏移度&a在极端环境下&r随着时间积累。"
+				"该数值会显示在经验条的上方，数值达到50即会出现负面效果。"
+				"关于温度的“免疫”方式，请翻到下一页。"
 				"{@pagebreak}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest1.description6}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest1.description7}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest1.description8}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest1.description9}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest1.description10}"
+				"不想考虑温度？可以，但你要做出&6抗火药水&r或者&3抗寒药水&r，药效持续时间内仍然会积累偏移度，但免疫相应的负面效果。为衣物添加内衬能够&2降低体温的改变速率&r，具体参见“缝缝补补”任务。"
+				"铁魔法的抗冰和抗火戒指有较强的抵御变化效果，但&c不能免疫&r中暑或寒冷伤害。"
+				"基于&a“真实性深度修正”&r，现在看起来能发热或者降温的东西一般来说有效……"
+				"比如（大部分）各类火把，一些特殊的矿物以及一些植物。"
+				"另外，在这个世界观里，灵魂火是&b冷&r的……不要搞错了("
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest1.description11}"
+				"&o&b*注：能亮≠能热，不服打我呀&r&r"
 				"{@pagebreak}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest1.description12}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest1.description13}"
+				"请尽量选择&b温度合适的位置&r定居，典型的反例是&6沙漠中央&r。如果你的&c出生点温度并不合适&r，那么最好尽快搬家。"
+				"&o（已知的一个冷汗Bug：切换维度后，篝火等方块的温度影响会无效化，如果重新进入存档则温度恢复正常。目前只测试了篝火，但是是可复现的。目前暂不清楚是冷汗自身的问题还是其它模组的问题。）&r"
 			]
 			icon: "irons_spellbooks:holy_upgrade_orb"
 			id: "6E08F7A257BCB99A"
@@ -49,25 +49,25 @@
 			}]
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest1.subtitle}"
+			subtitle: "关于这个世界……"
 			tasks: [{
 				id: "291B93D287D7812B"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest1.task_2962123712357695787.title}"
+				title: "我已知悉"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest1.title}"
+			title: "更真实的温度"
 			x: 0.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["2B8EBEC41EC3DED8"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest2.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest2.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest2.description3}"
+				"使用这两个方块可以利用一些物品来加热/制冷其中的水袋，以便外出探险时所用。"
+				"一般来说，水、冰、雪球、粘土可以用来在冰箱里制冷；岩浆块，熔岩，煤炭，木炭之类的则在锅炉里用来加热水袋。"
+				"总之，寒冷的地方要带热水袋，炎热的地方要带冷水袋，明白了吗？"
 			]
 			id: "15D6808FE057E96D"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest2.subtitle}"
+			subtitle: "水袋的配套设备"
 			tasks: [
 				{
 					id: "52AC762AD938720C"
@@ -80,19 +80,19 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest2.title}"
+			title: "冰火两重天"
 			x: -2.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["6E08F7A257BCB99A"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest3.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest3.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest3.description3}"
+				"在你往这些水袋里面装水之后，它们就可以用来为你保温！"
+				"如果把水袋放进快捷栏，那么水袋的温度就会&3逐渐靠近环境温度&r，并使你的体温变冷/变热（取决于水的温度和环境温度）直到水的温度等同于环境温度为止。"
+				"应急方案！如果真的需要快速改变体温，可以手持并使用水袋。这会把水泼出来，并立刻改变你的体温！代价是水袋会变空（当然）"
 			]
 			id: "2B8EBEC41EC3DED8"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest3.subtitle}"
+			subtitle: "不是用来喝的"
 			tasks: [
 				{
 					id: "7211A1823977A337"
@@ -109,18 +109,18 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest3.title}"
+			title: "水袋"
 			x: -1.0d
 			y: -3.5d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest4.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest4.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest4.description3}"
+				"这个章节会专门用来介绍这个世界的不同之处，以便各位能够更好地生存，以及生活。"
+				"这些知识的跨度可能会很大，有些直到游戏的后期也很有用，这也是我们为什么要把这部分单独列出来。所以遇到不懂的可以先跳过，以后再看就好。"
+				"……但是总之，记得看。&e因此，本章节的内容是&o&l完全解锁&r&r&e的，不需要完成前置内容也可以查看！&r"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest4.description4}"
+				"&b*默认设置按理来说不会导致键位冲突，如果发生了，这种时候我们的建议是直接点击重置按键，我们有预设好的无冲突键位，您也可以自行调整。"
 			]
 			hide_details_until_startable: false
 			hide_until_deps_complete: true
@@ -133,22 +133,22 @@
 			}]
 			shape: "octagon"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest4.subtitle}"
+			subtitle: "活着是第一要务"
 			tasks: [{
 				id: "21E82BB886F03DB6"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest4.task_2443250869386362294.title}"
+				title: "明白了"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest4.title}"
+			title: "生存者须知"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6E08F7A257BCB99A"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest5.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest5.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest5.description3}"
+				"壁炉的作用是让一片区域的温度&6正常化&r，前提是你往里面填装了&c对应制冷/制热的材料&r（参考锅炉和冰箱的介绍）。具体来说，从侧面通入红石信号可以激活制冷功能，而从背面或底面则是激活制热功能。这对于封闭的区域更有效，所以适合用来放在你的房子或者地下室里。"
+				"进入这片区域的玩家会获得寒冷/温暖效果，这会改变体感温度，且在离开这片区域后也能持续一段时间。"
+				"如果你已经工业化，可以试着用物流系统来为它自动填装燃料！"
 			]
 			id: "2625676A388DBE44"
 			rewards: [{
@@ -156,7 +156,7 @@
 				item: "farmersdelight:stove"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest5.subtitle}"
+			subtitle: "并不能打炉石传说"
 			tasks: [{
 				id: "10381AC9A6F5B476"
 				item: "cold_sweat:hearth"
@@ -168,12 +168,12 @@
 		{
 			dependencies: ["6E08F7A257BCB99A"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest6.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest6.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest6.description3}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest6.description4}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest6.description5}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest6.description6}"
+				"使用缝纫台，你可以用一些材料来给你的护甲添加内衬！内衬可以降低你暴露在极端温度的情况下的体温变化速率。"
+				"一些盔甲&d天生带有一定的属性&r，但是相应的，它们&c不能被再次缝制&r。"
+				"盔甲上的&3缝制槽位是固定&r的，每一次缝制都&b会且仅会消耗一个槽位&r，所以请尽量缝制高属性的材料！"
+				"需要注意的是，即使速率降低了，你的体温&c仍然会往环境温度偏移&r，所以最好的维持体温的方式是&e改变环境温度&r！"
+				"可以被缝为内衬的材料会在你把鼠标放上去的时候显示它的属性（以及有效程度）。有些内衬&9对寒冷有效（显示为蓝色）&r，而有些则&c对热辐射有效（显示为红色）&r，以及&5对两者均有作用但是效果相应较弱的（显示为紫色）&r。"
+				"据说，还有一种特殊的内衬&2对各种极端温度都具有强大的适应性&r……这就需要你自己去探索了）"
 			]
 			id: "4F3A90AEC7E51F5B"
 			rewards: [{
@@ -181,22 +181,22 @@
 				item: "minecraft:leather"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest6.subtitle}"
+			subtitle: "直接穿着金属很难受吧？"
 			tasks: [{
 				id: "5AE0EA95C2E096C1"
 				item: "cold_sweat:sewing_table"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest6.title}"
+			title: "缝缝补补"
 			x: 2.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["265C4AEB2E006996"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest7.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest7.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest7.description3}"
+				"最新型的望远镜可以装备在配饰栏上！按下放大键（默认C）直接使用它吧！"
+				"它还可以在放大时使用滚轮自由缩放！"
+				"这可以让你看到很远的结构……"
 			]
 			id: "454AAF454EF68F8D"
 			rewards: [{
@@ -204,7 +204,7 @@
 				item: "immersive_aircraft:telescope"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest7.subtitle}"
+			subtitle: "不再鸡肋了"
 			tasks: [{
 				id: "68088A32AC82FB0B"
 				item: "minecraft:spyglass"
@@ -215,36 +215,36 @@
 		}
 		{
 			dependencies: ["34C16BAADA9CC42C"]
-			description: ["{ftbquests.chapter.4BEFF532B40045D5.quest8.description1}"]
+			description: ["&a任务队伍&r：可以通过背包界面左上角进入它的UI。你可以创建或者加入其他人的队伍，也可以邀请在线的玩家加入你的队伍。在同一队伍的玩家任务进度是共享的。（当然奖励也是，所以别想着蹭别人的奖励了！）"]
 			icon: "minecraft:red_banner"
 			id: "07AF78F3534CC8D3"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest8.subtitle}"
+			subtitle: "多人游戏必读"
 			tasks: [{
 				id: "20AFCF6831BCE368"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest8.task_2355329176556069736.title}"
+				title: "知道了！"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest8.title}"
+			title: "组队！"
 			x: -1.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["07AF78F3534CC8D3"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest9.description1}"
+				"由于曾经的圈地模组在区块加载之外还提供了&a各类神秘的保护&r，导致&e植魔和跨维度传输会出现问题&r，该模组现已被弃用，本整合包&c不再提供圈地功能&r。"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest9.description2}"
+				"各位玩家&d如添加圈地模组则需自行调整配置和限制&r使机器正常运行，因调整不到位导致的爆炸我们概不负责。"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest9.description3}"
+				"为了从根源解决问题，我们&6加入了与create适配的区块加载器&r。同时，为了能让大家有相对正常的工业游玩体验，我们在收集恶魂加入加载器这一制作过程之外加入了&3魔力灌注产生恶魂&r的方法。"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest9.description4}"
+				"有关于加载器使用方式，请翻到下一页。"
 				""
 				"{@pagebreak}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest9.description5}"
+				"通过动力输入，你的工业区块就可以实现&c常加载&r——但这&d需要动力，而且不少！&r"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest9.description6}"
+				"请谨慎规划你的工业区，以及在一些需要加载的地方&5留出应力输出结构&r，以便装配区块加载器。"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest9.description7}"
+				"相较于&7固定位置且只能加载所在的单个区块的的安山区块加载器&r而言，黄铜加载器更加强大：不仅可以&b配置范围（最多5x5的区块）&r，而且可以&c在动态结构（比如火车）上运作&r。"
 			]
 			icon: "create_power_loader:brass_chunk_loader"
 			id: "05D1CDF00503DCB2"
@@ -253,7 +253,7 @@
 				item: "create_connected:six_way_gearbox"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest9.subtitle}"
+			subtitle: "工业带动工业"
 			tasks: [
 				{
 					id: "582F68B3AF0C593E"
@@ -266,83 +266,90 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest9.title}"
+			title: "区块加载！"
 			x: -2.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["1AB48D8D4E2767F6"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest10.description1}"
+				"你可能已经发现了，不同的食物会注明其拥有的营养值。这表明你在食用对应的食物时，你的营养都会发生变化，而你需要控制每种类型食物的摄取量，因为每种营养素&4过多&r或者&2过低&r都会产生Debuff（&4除了糖分，它只会带来过高时的负收益。少吃糖！&r&2另外，蔬菜是没有较高时的副作用的，很适合营养过剩的时候调剂用。&r）；而当你营养够均衡时，它们又会给你带来正面Buff！"
 				"{@pagebreak}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest10.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest10.description3}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest10.description4}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest10.description5}"
+				"一种简单的&c提升食物效果&r的方式是去海底寻找盐矿，撒盐的食物会有饱食度加成。"
+				"然而，高饱食度目前&d不能带来快速回血&r，请探索的时候谨慎思考！"
+				"除蔬菜外，其他的营养值最好不要超过80%，糖类最好不要超过40%。"
+				"营养值会&b随着时间而降低&r，也可以通过&c当场跳崖&r之类的主动控制……"
 			]
 			icon: "minecraft:bread"
 			id: "4814464FAB9C404C"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest10.subtitle}"
+			subtitle: "吃好喝好"
 			tasks: [{
 				id: "44B67682076D8F37"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest10.task_4951275141182885687.title}"
+				title: "明白了！"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest10.title}"
+			title: "均衡饮食"
 			x: 3.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["1AB48D8D4E2767F6"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest11.description1}"
+				"担心死了会爆一地装备？现在，死亡会产生一个尸体，并留在原地，不会消失。你可以与尸体互动来取回你的物品。一旦尸体是空的，它就会在一段时间之后自动消失。尸体也不会因掉入岩浆或者虚空而被破坏。多好！"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest11.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest11.description3}"
+				"&o&c*这就是为了让你不要搞什么死亡不掉落……我们不禁止但显然不推荐。&r&r"
+				"&o&b*正常的世界探索本就不应该通过堆命的方式进行，所以我们极大加强了重生的代价。&r&r"
 			]
 			icon: "minecraft:zombie_head"
 			id: "6A93A46261B6C8F0"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "399B81E50A8D9B16"
-				table_id: 5215467300486525274L
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest11.reward_4151054302276590358.title}"
-				type: "choice"
-			}]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest11.subtitle}"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "399B81E50A8D9B16"
+					table_id: 5215467300486525274L
+					title: "{ftbquests.chapter.4BEFF532B40045D5.quest11.reward_4151054302276590358.title}"
+					type: "choice"
+				}
+				{
+					id: "4B357663B864FBB9"
+					item: "sob:echo_rock_candy"
+					type: "item"
+				}
+			]
+			subtitle: "哦布莱克斯！"
 			tasks: [{
 				id: "290DA61A42335E98"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest11.task_2958203161962307224.title}"
+				title: "死……死了吗？"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest11.title}"
+			title: "你死啦？"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6A93A46261B6C8F0"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest12.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest12.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest12.description3}"
+				"&a受到扭曲规则的影响，床铺失去了远古的力量。&r"
+				"现在，你需要找到或者放置&b重生方尖碑&r。它们可以和曾经的床一样设置出生点，但是很难被&9完整地破坏&r。&6你同一时刻只能绑定一个方尖碑，所以谨慎选择你的复活点位！&r"
+				"然而，每一次复活都是需要消耗其中的能量的（将&d初始的基座方块&r或&e三阶及以上的激活信标&r置于其下方可使其&3被动充能&r）。如果你不及时充能，最后耗尽能量会导致丢失复活点！"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest12.description4}"
+				"&2可以用来充能的物品有：&r末影珍珠，末影之眼，奥术源质。奥术源质可能是你前期最容易获取的，但是也只能给予少量充能。"
 				"{@pagebreak}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest12.description5}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest12.description6}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest12.description7}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest12.description8}"
+				"如果你希望有一个&b临时的，便捷的重生点&r，比如你&c要开BOSS战&r了，那么可以通过&l神秘的灯笼&r来达成这一目标。"
+				"通过灯笼右键掠夺方尖碑内的充能（会有倍率损失，灯笼吸收的能量会是&c原储量的0.6x&r），你就获得了一个可以随地放置的一次性重生点。"
+				"右键即可放置&o“魂火”&r，这将生成一个&6持续十分钟的重生火焰&r，但相应的你的灯笼也会消失！"
+				"火焰的能量储量和灯笼掠夺的能量一致，并且&d复活的消耗不变&r，因此即使有复活魂火，你仍然需要谨慎行事……"
 			]
 			icon: "respawnobelisks:respawn_obelisk"
 			id: "3B3403855032F399"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest12.subtitle}"
+			subtitle: "床R.I.P."
 			tasks: [
 				{
 					icon: "respawnobelisks:respawn_obelisk"
 					id: "7AFED54A3F6B3AC9"
 					observe_type: 0
 					timer: 0L
-					title: "{ftbquests.chapter.4BEFF532B40045D5.quest12.task_8862755631580003017.title}"
+					title: "观察重生石碑"
 					to_observe: "respawnobelisks:respawn_obelisk"
 					type: "observation"
 				}
@@ -356,18 +363,18 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest12.title}"
+			title: "叮，复活点"
 			x: 5.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6E08F7A257BCB99A"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest13.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest13.description2}"
+				"在下界，你有时候能找到这种植物。你可以把它们收割，并在灵魂沙上重新种植……"
+				"&o&m&9这玩意确实能吃，而且能给你来一次短暂的冷却）&r&r&r"
 			]
 			id: "528787BEDE2D4CE3"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest13.subtitle}"
+			subtitle: "或许能吃……"
 			tasks: [{
 				id: "0E51D8403ACD9841"
 				item: "cold_sweat:soul_sprout"
@@ -379,12 +386,12 @@
 		{
 			dependencies: ["528787BEDE2D4CE3"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest14.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest14.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest14.description3}"
+				"这可不是普通的灯！如果你觉得下界或者恒晓之地太热的话，就做一个吧！它会在你过热时自动开启，为你抵挡热量，就像一个护盾！"
+				"当然，开启防护是需要充能的，而充能的物品就是灵魂豆芽。现在你知道它不是用来吃的了……"
+				"&o&b*注：如果你直接食用灵魂豆芽，可以实现瞬间快速降温；但是这一效果的CD极长因而只能临时使用）&r&r"
 			]
 			id: "7666DDA6F889A9DD"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest14.subtitle}"
+			subtitle: "海洋与灵魂之力！"
 			tasks: [{
 				id: "24590BA788C1DCE7"
 				item: {
@@ -403,10 +410,10 @@
 		{
 			dependencies: ["34C16BAADA9CC42C"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest15.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest15.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest15.description3}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest15.description4}"
+				"怪奇宝典——正如其名，是本古怪的书。"
+				"它里面没有内容，但正因如此，它似乎能容纳下无限的知识……"
+				"实际使用方法是和其他模组的指导书进行合成，合成后就可以通过右键调用——左键还原回怪奇宝典。"
+				"&m&o&b“随身指导书书架”&r&r&r"
 			]
 			icon: {
 				Count: 1
@@ -416,7 +423,7 @@
 				}
 			}
 			id: "59F2091BF9289EC3"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest15.subtitle}"
+			subtitle: "了解这个充满生机的世界"
 			tasks: [{
 				id: "23C86DB8EBACAD0F"
 				item: {
@@ -426,21 +433,21 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest15.title}"
+			title: "知识就是力量"
 			x: 1.5d
 			y: 3.5d
 		}
 		{
 			dependencies: ["4814464FAB9C404C"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest16.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest16.description2}"
+				"现在，你可以收集到许多食材！制作一个厨锅，然后你就可以用全新的方式烹饪它们！"
+				"别忘了收集一些野生作物，它们可以种植，并为你的餐桌增色不少。"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest16.description3}"
+				"通过科技的发展，后期你可以通过机械动力和烈焰人厨师实现全自动做菜！"
 			]
 			icon: "farmersdelight:cooking_pot"
 			id: "2E7818CF013586F1"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest16.subtitle}"
+			subtitle: "民以食为天"
 			tasks: [
 				{
 					id: "4AB220B966B601E6"
@@ -465,16 +472,16 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest16.title}"
+			title: "厨神之路"
 			x: 4.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["34C16BAADA9CC42C"]
-			description: ["{ftbquests.chapter.4BEFF532B40045D5.quest17.description1}"]
+			description: ["是的，你可以上传你喜欢的图片！"]
 			icon: "immersive_paintings:painting"
 			id: "05BA4137086115E9"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest17.subtitle}"
+			subtitle: "酷"
 			tasks: [
 				{
 					id: "0866AE76275E06BE"
@@ -487,52 +494,57 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest17.title}"
+			title: "艺术家的工作"
 			x: 0.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["05BA4137086115E9"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest18.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest18.description2}"
+				"你可以听自己喜欢的音乐了！&m（而且还能强迫附近的朋友一起听&r"
+				"播放网络音乐有两种办法：一种方法是用蚀刻台录音（需要空白唱片和音乐标签，刻录的唱片可以插入唱片机或者单放音响播放），另一种则是用收音机直接播放。你可以自己尝试一下！"
 			]
-			icon: "iammusicplayer:cassette_tape"
+			icon: "etched:boombox"
 			id: "68F393AA551F9507"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest18.subtitle}"
+			subtitle: "非常酷"
 			tasks: [
 				{
-					id: "406D3AF5B1F5DB40"
-					item: "iammusicplayer:music_manager"
+					id: "24472ADB05D27A72"
+					item: "etched:etching_table"
 					type: "item"
 				}
 				{
-					id: "4A4CC2CEAB726078"
-					item: "iammusicplayer:boombox"
+					id: "22C0EB7A74939882"
+					item: "etched:radio"
 					type: "item"
 				}
 				{
-					id: "354E770C14BB1838"
-					item: "iammusicplayer:parabolic_antenna"
+					id: "2500E2AE44E8E3CD"
+					item: "etched:music_label"
 					type: "item"
 				}
 				{
-					id: "65DB6C6159EFDE72"
-					item: "iammusicplayer:cassette_tape"
+					id: "559B6FA9D2A58C27"
+					item: "etched:blank_music_disc"
+					type: "item"
+				}
+				{
+					id: "370EFCD897E2A42B"
+					item: "etched:boombox"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest18.title}"
+			title: "音乐人的工作"
 			x: -1.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["59F2091BF9289EC3"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest19.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest19.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest19.description3}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest19.description4}"
+				"获得这个世界上所有的手册！"
+				"现在，这些知识都属于你了……你或许应该把它们都放进怪奇宝典里。"
+				"特别注意的一点是，似乎有&9奇怪的力量&r干扰了一些书本的解释。如果&d书本上没有给出答案或者语焉不详&r，也许应该翻翻任务或者JEI。"
+				"&o&a*法师的注释：如果你还没有打开精灵之门，那么也许你不应该把植物魔法辞典放进宝典……&r&r"
 			]
 			id: "7A0B5E901E6F8081"
 			rewards: [{
@@ -540,7 +552,7 @@
 				type: "xp"
 				xp: 1000
 			}]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest19.subtitle}"
+			subtitle: "读万卷书"
 			tasks: [
 				{
 					id: "5FB37FC267CF4F69"
@@ -611,25 +623,36 @@
 					}
 					type: "item"
 				}
+				{
+					id: "3E804D57EEF1F877"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "eclipticseasons:seasons_chronicle"
+						}
+					}
+					type: "item"
+				}
 			]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest19.title}"
+			title: "知识掌控者"
 			x: 2.5d
 			y: 4.5d
 		}
 		{
 			dependencies: ["1AB48D8D4E2767F6"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest20.description1}"
+				"本整合包在原版之外，提供了多种用途不一的交通工具。"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest20.description2}"
+				"游戏前期显然需要依靠双腿，然而你可以尝试通过铁魔法的法术召唤马匹，用临时的四条腿代替两条腿。当然，这需要一个&5卷轴撰写台&r……或者相当好的运气。"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest20.description3}"
+				"中期之后，你可以制作各种来自“沉浸式飞行器”的&9飞行器&r，它们能从空中飞跃复杂的地形，把你轻松带到目的地！你也可以通过法术（天使之翼）或饰品（天翼族之冠）获得临时的飞行能力！"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest20.description4}"
+				"另一种交通方式是&6列车&r！虽然你需要巨量的材料来搭建列车和铺设铁路，但一旦制作完成，它就可以自动运行（甚至可以在不加载的区块上运行，还能跨越下界传送门！）。它也可以负担起你的物流任务。（具体可以搜索“列车机壳”并查看相关思索界面）"
 			]
 			icon: "minecraft:minecart"
 			id: "265C4AEB2E006996"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest20.subtitle}"
+			subtitle: "起飞！"
 			tasks: [
 				{
 					id: "7CE9D9644C84059B"
@@ -640,7 +663,7 @@
 					advancement: "create:train"
 					criterion: ""
 					id: "0ECB38FAD23C80CD"
-					title: "{ftbquests.chapter.4BEFF532B40045D5.quest20.task_1066008386723414221.title}"
+					title: "组装列车！"
 					type: "advancement"
 				}
 				{
@@ -665,23 +688,23 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest20.title}"
+			title: "交通工具"
 			x: 3.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["724EBEFC6D269712"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest21.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest21.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest21.description3}"
+				"显然，比床便宜，还能带着走，为什么不用呢？"
+				"（不过你还是得在够暖和的地方才能睡觉）"
+				"有关回归重生点的方法，请看下一页。"
 				"{@pagebreak}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest21.description4}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest21.description5}"
+				"如果你希望&b一键回到重生点&r，铁魔法的&a回溯法术&r（可以通过卷轴撰写台自行编写）会帮助你在读条后回到你绑定的重生方尖碑。"
+				"诡厄巫法的&5回溯聚晶&r可以&3和床/灵魂方舟/毁灭催化器绑定（方尖碑不行）&r，并以灵魂为代价传送回归，但制作需要到达魔法第四章。"
 			]
 			icon: "comforts:sleeping_bag_white"
 			id: "5143DD7D7F9C7CBA"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest21.subtitle}"
+			subtitle: "便携的床"
 			tasks: [{
 				id: "5E16A992F57E11B8"
 				item: {
@@ -691,20 +714,20 @@
 						value: "comforts:sleeping_bags"
 					}
 				}
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest21.task_6779792737701859768.title}"
+				title: "任意睡袋"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest21.title}"
+			title: "睡袋"
 			x: -3.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["5143DD7D7F9C7CBA"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest22.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest22.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest22.description3}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest22.description4}"
+				"但你都看到这了，为什么不试试呢？"
+				"你可以把吊床挂在两个绳与钉之间，然后你就可以躺在上面了。"
+				"与床和睡袋不同的是，这个东西能且只能用来跳过白天。"
+				"&m&a&o给自己找罪受的悠长假日&r&r&r"
 			]
 			icon: "comforts:hammock_white"
 			id: "22FA1E23310625D7"
@@ -713,7 +736,7 @@
 				item: "botania:cosmetic_orange_shades"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest22.subtitle}"
+			subtitle: "跳过极端气候"
 			tasks: [
 				{
 					id: "5AA9D18E750203DC"
@@ -724,7 +747,7 @@
 							value: "comforts:hammocks"
 						}
 					}
-					title: "{ftbquests.chapter.4BEFF532B40045D5.quest22.task_6532983144256242652.title}"
+					title: "任意吊床布"
 					type: "item"
 				}
 				{
@@ -734,27 +757,40 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest22.title}"
+			title: "吊床"
 			x: -4.5d
 			y: 2.5d
 		}
 		{
 			dependencies: ["724EBEFC6D269712"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest23.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest23.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest23.description3}"
+				"如果有同种物品过多的情况，就试试抽屉吧！"
+				"每个抽屉可以存储众多的单一种类物品（如果有多个格子则能存储对应的种数，但每种能存储的量也会相应降低）。右键抽屉正面可以放入，左键则是拿取（Shift拿取一组）。"
+				"哦对了，它还可以在破坏时保留内容物！这下可以当小潜影盒了。"
 				"{@pagebreak}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest23.description4}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest23.description5}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest23.description6}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest23.description7}"
+				"如果有很多乱七八糟的杂项，抽屉的槽位显然是不够的，这种时候就要用到背包了。"
+				"当然，背包的升级需要一些小小的魔法手段……"
+				"以及，由于堆叠升级是抽屉的功能，我们禁止了背包使用的堆叠升级！"
+				"但背包拿来存杂项还是很强大的）"
 				"{@pagebreak}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest23.description8}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest23.description9}"
+				"同时拿太多的背包或者抽屉会&5负重&r！"
+				"你最多可以拿两个背包或者有物品的抽屉，否则就会获得负面效果……"
+				"抽屉不能装进背包或者其他抽屉里，反过来也不行。&4想都别想。&r"
 			]
 			id: "3A2CCC29ACE28498"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest23.subtitle}"
+			rewards: [
+				{
+					id: "7379D45CBAED2919"
+					item: "storagedrawers:drawer_key"
+					type: "item"
+				}
+				{
+					id: "269A9F60BA95D042"
+					item: "sophisticatedbackpacks:pickup_upgrade"
+					type: "item"
+				}
+			]
+			subtitle: "强力存储的两条路径"
 			tasks: [
 				{
 					id: "0C0155F6F3E27FF3"
@@ -765,7 +801,7 @@
 							value: "storagedrawers:drawers"
 						}
 					}
-					title: "{ftbquests.chapter.4BEFF532B40045D5.quest23.task_865067122573869043.title}"
+					title: "任意抽屉"
 					type: "item"
 				}
 				{
@@ -777,21 +813,21 @@
 							value: "kubejs:backpacks"
 						}
 					}
-					title: "{ftbquests.chapter.4BEFF532B40045D5.quest23.task_6840831469930423259.title}"
+					title: "任意背包"
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest23.title}"
+			title: "更多存储空间"
 			x: -3.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["3A2CCC29ACE28498"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest24.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest24.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest24.description3}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest24.description4}"
+				"在“真实性修改”下，如果抽屉不进行升级，那么它的储量将会相当有限。"
+				"用升级模板可以逐级做出多种升级，功能包括但不限于增大储量，销毁物品等等。"
+				"背包同样可以通过插件进行升级，但升级的方向不是存储而是其功能性。"
+				"收纳袋显然不支持插件升级——因为没有槽位。"
 			]
 			icon: "storagedrawers:diamond_storage_upgrade"
 			id: "360CCFCD57F813D7"
@@ -807,7 +843,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest24.subtitle}"
+			subtitle: "插件"
 			tasks: [
 				{
 					id: "09A462DE1CB10D92"
@@ -820,32 +856,32 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest24.title}"
+			title: "升级！"
 			x: -4.5d
 			y: -2.5d
 		}
 		{
 			dependencies: ["05BA4137086115E9"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest25.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest25.description2}"
+				"这个系列的伪装方块配方很简单，而且可以把任意方块放入以复制其纹理！但它不会产生那个方块应有的特效，所以更适合用来搭建建筑。"
+				"植物魔法的幻影平台也有近似的效果，这里就不再赘述，不过……那个平台会让你掉下去（躺"
 			]
 			id: "39DA192CE817B365"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest25.subtitle}"
+			subtitle: "来骗，来偷袭"
 			tasks: [{
 				id: "3C066E19E26B21CA"
 				item: "copycats:copycat_block"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest25.title}"
+			title: "以假乱真"
 			x: 1.0d
 			y: 5.0d
 		}
 		{
 			dependencies: ["05BA4137086115E9"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest26.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest26.description2}"
+				"在背包界面，你可以打开时装盔甲栏！(也可以关闭某一栏的护甲显示）"
+				"装备在时装栏的护甲会优先显示，但是，它们不会产生任何实际效果。"
 			]
 			icon: {
 				Count: 1
@@ -855,51 +891,51 @@
 				}
 			}
 			id: "3519ED0299640CF4"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest26.subtitle}"
+			subtitle: "这很魔法"
 			tasks: [{
 				id: "709B099176F1DB7F"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest26.task_8114089674008550271.title}"
+				title: "知道了"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest26.title}"
+			title: "护甲幻化"
 			x: 0.0d
 			y: 5.5d
 		}
 		{
 			dependencies: ["2BC7BDD7E5EC76E5"]
-			description: ["{ftbquests.chapter.4BEFF532B40045D5.quest27.description1}"]
+			description: ["这一栏关联了主要和外出相关的一些知识。当然，没有保温相关，因为那是单独一栏。"]
 			icon: "immersive_aircraft:telescope"
 			id: "1AB48D8D4E2767F6"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest27.subtitle}"
+			subtitle: "在外出的时候，你需要注意这些……"
 			tasks: [{
 				id: "2CBBDA795C9A6254"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest27.task_3223410173093241428.title}"
+				title: "外出探索"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest27.title}"
+			title: "行动与饮食"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["2BC7BDD7E5EC76E5"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest28.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest28.description2}"
+				"包括居住，存储与村民和生物互动。"
+				"不包括物流——因为那是工业相关不是生活相关。"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest28.description3}"
+				"&o&9*你要是在自己房子里塞机器和传送带那我无话可说:(&r&r"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest28.description4}"
+				"额外的小贴士：鼠标悬停在物品上按Y键（默认）即可在附近的容器内搜索该物品！"
 			]
 			icon: "biomeswevegone:skyris_door"
 			id: "724EBEFC6D269712"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest28.subtitle}"
+			subtitle: "当你定居的时候，你需要注意这些……"
 			tasks: [{
 				id: "0F40ED21C6E4A957"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest28.task_1099139038404979031.title}"
+				title: "居住与发展"
 				type: "checkmark"
 			}]
 			x: -2.0d
@@ -907,15 +943,15 @@
 		}
 		{
 			dependencies: ["2BC7BDD7E5EC76E5"]
-			description: ["{ftbquests.chapter.4BEFF532B40045D5.quest29.description1}"]
+			description: ["这会让你的生活更有趣！"]
 			icon: "minecraft:writable_book"
 			id: "34C16BAADA9CC42C"
 			shape: "hexagon"
 			size: 1.5d
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest29.subtitle}"
+			subtitle: "多人游戏与杂项"
 			tasks: [{
 				id: "21F55F8823D36F42"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest29.task_2446967010866982722.title}"
+				title: "更多知识"
 				type: "checkmark"
 			}]
 			x: 0.0d
@@ -924,21 +960,21 @@
 		{
 			dependencies: ["724EBEFC6D269712"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest30.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest30.description2}"
+				"现在的村民可以做到更多的事情……"
+				"但也有一些事情永远都做不到了）"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest30.description3}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest30.description4}"
+				"如果你需要种子，多翻翻村民的箱子，因为现在&2打草不会再掉落任何种子&r了……"
+				"&o&6*其实你可以直接掠夺他们的田地）&r&r"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest30.description5}"
+				"有关于村民交易，请翻到下一页。"
 				"{@pagebreak}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest30.description6}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest30.description7}"
+				"由于村民&c被关进交易所&r的次数实在是太多了，他们觉醒了……"
+				"交易所已经是&c历史的尘埃&r了，因为现在的村民拥有&b动态交易列表&r：每次补货都会更新！"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest30.description8}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest30.description9}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest30.description10}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest30.description11}"
+				"同时，部分&2学习沉浸工程&r的村民们发现自己熟悉的配件配方被大幅修改，因此&e投入了魔法的怀抱&r。"
+				"&9机械师，电工与结构工程师&r在收购一些工业制品的同时，将会分别售卖&b不同系别的魔法材料&r！"
+				"他们&a在二级，三级和五级&r的时候分别有几率售卖&7铁箍卷册&r，&d特定系别符文&r与&5特定系别法球&r！"
+				"&o&6&m但是很贵（&r&r&r"
 			]
 			icon: "artifacts:villager_hat"
 			id: "1F2E99A74CDFBD68"
@@ -947,10 +983,10 @@
 				item: "betterarcheology:villager_fossil_body"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest30.subtitle}"
+			subtitle: "村民崛起！"
 			tasks: [{
 				id: "7061709B5C76DDBD"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest30.task_8097877417562398141.title}"
+				title: "神奇的村民"
 				type: "checkmark"
 			}]
 			x: -4.0d
@@ -959,11 +995,11 @@
 		{
 			dependencies: ["1F2E99A74CDFBD68"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest31.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest31.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest31.description3}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest31.description4}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest31.image0}"
+				"我们加入了更多的附魔，村民出现经验修补的几率被大幅度稀释了……"
+				"钓鱼板条箱和宝箱有更高几率出现经验修补，多去探险吧，朋友！"
+				"如果你希望储存经验，可以通过create的袪魔池/精妙背包的经验泵保存为液体形式。"
+				"&o&a*友情提示：一旦你获得一本经验修补附魔书，那么就可以通过附魔工业（见工业第二章）进行复制，所以不要直接用掉了）&r&r"
+				"{image:kubejs:textures/meme_mending.png width:150 height:90 align:center}"
 			]
 			icon: "create:experience_nugget"
 			id: "6052F74DFBBEC018"
@@ -972,26 +1008,26 @@
 				item: "betterarcheology:villager_fossil_head"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest31.subtitle}"
+			subtitle: "过于混乱的奖池"
 			tasks: [{
 				id: "5B5265A11A240989"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest31.task_6580433748144425353.title}"
+				title: "消失了哈哈"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest31.title}"
+			title: "我经验修补呢？"
 			x: -5.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["1F2E99A74CDFBD68"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest32.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest32.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest32.description3}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest32.description4}"
+				"村民现在有舒适度设定：&c他们要求更好的房子！&r"
+				"这包含：房屋大小（越大越好，且最好不要和其它村民共处一室）、住所与工作区距离（越远越好）、威胁度（尽量不要使它们感到恐慌），住所的透光度，以及白天能否在外面呼吸新鲜空气等等。"
+				"&a舒适度越高，村民物品售价就越低；反之则越高。&r"
+				"你可以使用&4虞美人&rShift+右击村民来询问它当前的舒适度）"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest32.description5}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest32.description6}"
+				"（事实上这并非是一个纯负面改动：你会发现自然生活在村庄的村民舒适度都会很高，出售物品的价格一般都自带大幅打折。这一改动的负面影响一般只对村民集中营一类的设施起效）"
+				"&o&m&d模拟殖民地mini版&r&r&r"
 			]
 			icon: "rechiseled:diamond_block_rhombuses"
 			id: "0ED1B830AB45D425"
@@ -1000,24 +1036,24 @@
 				item: "minecraft:poppy"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest32.subtitle}"
+			subtitle: "村民的智慧……"
 			tasks: [{
 				id: "49BF95A3EDF7D61F"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest32.task_5314130616625124895.title}"
+				title: "我感觉不太好！"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest32.title}"
+			title: "高档生活"
 			x: -5.5d
 			y: 0.0d
 		}
 		{
 			dependencies: ["1F2E99A74CDFBD68"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest33.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest33.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest33.description3}"
+				"现在的游商会有几率售卖一些有用的东西——尤其是魔法侧的特殊道具。"
+				"如果刷出了游商，请不要把它视为行走的拴绳，先看一下商品清单……"
+				"同时，如果你不希望他们出现在你的机器上，那你可以“禁止推销”。"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest33.description4}"
+				"&o&7*如果你身上缠绕着灾厄的气息，那么你将有几率通过击杀流浪商人掠夺其从不售卖的“神器”……&r&r"
 			]
 			icon: "minecraft:lead"
 			id: "7965ADF51F23E326"
@@ -1027,7 +1063,7 @@
 				item: "minecraft:lead"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest33.subtitle}"
+			subtitle: "再您的见"
 			tasks: [
 				{
 					id: "243EE435C8DFCBC6"
@@ -1051,33 +1087,33 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest33.title}"
+			title: "注意游商"
 			x: -5.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["0ED1B830AB45D425"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest34.description1}"
+				"在这个包里，一些生命相关的魔法需要从小小的鸡蛋开始……"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest34.description2}"
+				"&b&o*注：鸡蛋有炼金制造的方式，如果实在找不到鸡可以打鸟后手动炼制！&r&r"
 			]
 			id: "6AA0E68AB33475C9"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest34.subtitle}"
+			subtitle: "先有鸡还是先有蛋？"
 			tasks: [{
 				id: "551EC3B5B0B83BCA"
 				item: "minecraft:egg"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest34.title}"
+			title: "生命基本单元"
 			x: -7.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["3519ED0299640CF4"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest35.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest35.description2}"
+				"本整合包为了方便游玩，加入了相当一批有效的饰品，可以在饰品栏进行装备。"
+				"然而相应的，有一些工业/魔法的工具也会占据饰品栏，这就需要你自行取舍了。"
 			]
 			icon: "artifacts:mimic_spawn_egg"
 			id: "3C9AD619097D4B8D"
@@ -1086,13 +1122,13 @@
 				item: "botania:bauble_box"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest35.subtitle}"
+			subtitle: "有用的小玩意"
 			tasks: [{
 				id: "664EE70AA886314D"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest35.task_7372083673015136589.title}"
+				title: "有用就好"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest35.title}"
+			title: "更多饰品"
 			x: 0.0d
 			y: 7.0d
 		}
@@ -1102,29 +1138,29 @@
 				"4F3A90AEC7E51F5B"
 			]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest36.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest36.description2}"
+				"这是温度方面最强的一种材料——没有之一，但是变色龙需要你自己想办法寻找并喂养……毕竟死掉的变色龙不会给你合格的变色龙皮。"
+				"它们喜欢&c比较炎热&r的地方……"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest36.description3}"
+				"&o&a*神奇动物在哪里.jpg&r&r"
 			]
 			id: "63475C4CE3D204B4"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest36.subtitle}"
+			subtitle: "来自一些不会自然生成的动物"
 			tasks: [{
 				id: "7665F567AC56E28B"
 				item: "cold_sweat:chameleon_molt"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest36.title}"
+			title: "变温材料"
 			x: 3.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["6E08F7A257BCB99A"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest37.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest37.description2}"
+				"现在，一部分特定的生物开始&2具有特定的温度以及影响范围&r。比如烈焰人在其一单位半径内会拥有&6&l超级高温&r&r，而坚守者则拥有大范围的&9&l冻结灵魂的寒意&r&r……"
+				"同时，蔚蓝浩空维度的部分生物因其“构成特性”（如&9由冰块组成&r或&c看起来有发热器官&r），将会对周围温度产生&a中等范围和中等程度&r的影响。相应的，为了让人拥有正常的体验，现在魂火灯可以在&c恒晓维度&r让你保持恒温了，但&b永昼维度&r的保暖仍需自行处理。"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest37.description3}"
+				"&o&e*那些“看起来有影响”的生物往往会真的有，所以祝各位好运（确信&r&r"
 			]
 			icon: "bosses_of_mass_destruction:blazing_eye"
 			id: "0F7DF09B624BD447"
@@ -1135,21 +1171,21 @@
 			}]
 			shape: "hexagon"
 			size: 1.0d
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest37.subtitle}"
+			subtitle: "烈焰光环……？"
 			tasks: [{
 				id: "738CB23C960B94FD"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest37.task_8326225784386327805.title}"
+				title: "注意极端温度……"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest37.title}"
+			title: "危险的生物"
 			x: -1.0d
 			y: -5.5d
 		}
 		{
 			dependencies: ["6E08F7A257BCB99A"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest38.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest38.description2}"
+				"有些食物会提供温暖/寒冷效果，藉此影响你的体感温度。"
+				"因此，如果感觉冷的话，不妨喝碗热汤吧！当然，炎热的时候吃一根冰棒也是极好的。"
 			]
 			id: "123BA3F63EE1F6A7"
 			rewards: [
@@ -1165,7 +1201,7 @@
 				}
 			]
 			shape: "hexagon"
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest38.subtitle}"
+			subtitle: "喝汤一样"
 			tasks: [
 				{
 					id: "6AA22918AD88BDCF"
@@ -1178,7 +1214,7 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest38.title}"
+			title: "影响体温的食物"
 			x: 1.0d
 			y: -5.5d
 		}
@@ -1187,32 +1223,32 @@
 				"15D6808FE057E96D"
 				"2625676A388DBE44"
 			]
-			description: ["{ftbquests.chapter.4BEFF532B40045D5.quest39.description1}"]
+			description: ["给你的冰箱/锅炉安装烟囱，使他们也能执行壁炉相应的功能！"]
 			id: "72CABB5B4D069EA5"
 			rewards: [{
 				id: "1CD7C77D4C0F2C2A"
 				item: "createdeco:decal_fire"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest39.subtitle}"
+			subtitle: "造不起壁炉吗？"
 			tasks: [{
 				id: "3EB9ADBE887CA745"
 				item: "cold_sweat:smokestack"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest39.title}"
+			title: "烟囱"
 			x: -3.0d
 			y: -4.5d
 		}
 		{
 			dependencies: ["3B3403855032F399"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest40.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest40.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest40.description3}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest40.description4}"
+				"对于&b方块世界的天命人&r而言，你&c拥有不止一条生命&r，然而这并不是你可以&4通过送菜和刮痧解决某些高强度生物&r的理由。"
+				"基于此，我们增加了“逝不过三”体系：如果你在挑战某个BOSS级生物时&6死亡了三次&r，那么它将&l&d当场满血！&r&r"
+				"希望各位打BOSS的时候动用大脑而不是拿着石剑进行冲锋……"
+				"我们对于终极BOSS有&3特殊的安排&r，它们的战斗按血量分阶段，但是如果你死亡三次，那么你需要重回一阶段开始打……"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest40.description5}"
+				"&m&o&7勇气可嘉）&r&r&r"
 			]
 			icon: "minecraft:totem_of_undying"
 			id: "41DC0EE4FEF3A084"
@@ -1221,25 +1257,25 @@
 				item: "goety:dead_pottery_sherd"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest40.subtitle}"
+			subtitle: "有的时候你不应该死那么多次……"
 			tasks: [{
 				id: "0EE63358676D7693"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest40.task_1073602015959807635.title}"
+				title: "事不过三"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest40.title}"
+			title: "逝不过三"
 			x: 7.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["6A93A46261B6C8F0"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest41.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest41.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest41.description3}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest41.description4}"
+				"在这个世界，怪物的打击将&c更加真实&r，你无法凭借护甲来完全抵抗任意攻击的冲击力……"
+				"生物对你的攻击将会&c固定有20%转化为无法通过护甲抵抗的真实伤害！&r这也就意味着，你需要更谨慎的挑战各类生物，或者用&b更强大的保护法术&r）"
+				"当然，有些BOSS的攻击相对较高，所以真实伤害也&a有其上限（4点）&r以保证玩家不会被秒杀。"
+				"不幸的是，剩余的伤害仍然会按常规伤害方式结算到你的身上，所以&9护甲还是需要的&r。"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest41.description5}"
+				"&o这可以被&6伤害吸收&r&o抵御，也许应该看看&e神圣系魔法&r"
 			]
 			icon: "immersiveengineering:armor_piercing"
 			id: "22926B2C2701D9C3"
@@ -1248,25 +1284,25 @@
 				item: "minecraft:paper"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest41.subtitle}"
+			subtitle: "护甲都是纸"
 			tasks: [{
 				id: "6CEAFC87C0B9B91D"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest41.task_7848362960630692125.title}"
+				title: "击穿护甲！"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest41.title}"
+			title: "更真实的伤害"
 			x: 5.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["6A93A46261B6C8F0"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest42.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest42.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest42.description3}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest42.description4}"
+				"本包并不是以战斗为主线的包，但是有一定的战斗需求。"
+				"&c装备强度与你的发展进度成正比&r，&b强力的武器、盔甲、法杖与法术需要高级的合成方式与材料&r，你需要根据自己的需求和进度选择和搭配。"
+				"战斗是&9同时运用智慧与力量&r的过程，本包的大部分BOSS都有&d不太友好的伤害&r，但可以进行规避。"
+				"需要注意的是，目前的四个终极BOSS都在原有模组的基础上进行了&l&4极大加强&r&r，如果发现效果或数值和百科不同，以游戏内效果为准，并且需要自己寻找解法！"
 				""
-				"{ftbquests.chapter.4BEFF532B40045D5.quest42.description5}"
+				"&o&7*因为在之前的数个版本中BOSS被普遍反映“过于简单”，所以各位将要面对更强的大宝贝……&r&r"
 			]
 			icon: "botania:rainbow_rod"
 			id: "493C646BD6B377DE"
@@ -1275,24 +1311,25 @@
 				item: "botania:animated_torch"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest42.subtitle}"
+			subtitle: "拾级而上"
 			tasks: [{
 				id: "366937066A907E17"
-				title: "{ftbquests.chapter.4BEFF532B40045D5.quest42.task_3920725451299913239.title}"
+				title: "没有最强"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest42.title}"
+			title: "最强装备……？"
 			x: 5.0d
 			y: 1.0d
 		}
 		{
 			dependencies: ["6E08F7A257BCB99A"]
 			description: [
-				"{ftbquests.chapter.4BEFF532B40045D5.quest43.description1}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest43.description2}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest43.description3}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest43.description4}"
-				"{ftbquests.chapter.4BEFF532B40045D5.quest43.description5}"
+				"这里提供对于节气系统的一些关键点表述。"
+				"本整合包的季节系统通过&l&e二十四节气&r&r实现，每7游戏日一个节气阶段，每6节气一个季节，环境温度会&c随着节气变更而出现波动。"
+				"&r大部分作物有其&a适合的季节和环境&r（有的作物不止一个季节），在适宜季节之外它们&9不会生长&r——除非你拥有对应季节的温室。"
+				"&2温室心髓&r有两种获得方式：&b完成季节对应的进度&r，或者&3用祈年令装饰悬挂告示牌&r来获取当前季节对应的任务。"
+				"将做好的温室之心置于&5密闭空间&r中，即可完成&6对应季节温室&r的构建。"
+				"更多描述可以参考“岁时记”。"
 			]
 			id: "427C47874F61D7D2"
 			rewards: [
@@ -1312,17 +1349,17 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.4BEFF532B40045D5.quest43.subtitle}"
+			subtitle: "寒来暑往"
 			tasks: [{
 				id: "02B038943A17B061"
 				item: "eclipticseasons:calendar"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.4BEFF532B40045D5.quest43.title}"
+			title: "二十四节气"
 			x: 0.0d
 			y: -6.5d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.4BEFF532B40045D5.subtitle0}"]
-	title: "{ftbquests.chapter.4BEFF532B40045D5.title}"
+	subtitle: ["The Representation of This World"]
+	title: "【知识】世界的表象"
 }

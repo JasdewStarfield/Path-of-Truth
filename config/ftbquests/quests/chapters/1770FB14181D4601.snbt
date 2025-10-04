@@ -20,7 +20,7 @@
 			rotation: 0.0d
 			width: 10.0d
 			x: 0.0d
-			y: 7.5d
+			y: 9.0d
 		}
 		{
 			height: 2.0d
@@ -28,7 +28,7 @@
 			rotation: 0.0d
 			width: 2.0d
 			x: -1.5d
-			y: 4.5d
+			y: 5.5d
 		}
 		{
 			height: 2.0d
@@ -36,7 +36,7 @@
 			rotation: 0.0d
 			width: 2.0d
 			x: 1.5d
-			y: 4.5d
+			y: 5.5d
 		}
 	]
 	order_index: 5
@@ -45,10 +45,11 @@
 		{
 			dependencies: ["4BED26108E90A0CC"]
 			description: [
-				"{ftbquests.chapter.1770FB14181D4601.quest1.description1}"
-				"{ftbquests.chapter.1770FB14181D4601.quest1.description2}"
+				"右键瞄准，左键发射！"
+				"默认情况下，按“`”可以重新装填，按“z”可以查看配件，“Shift+v”还可以近战攻击……"
+				"一个全新的战斗时代已经在你面前展开……"
 				""
-				"{ftbquests.chapter.1770FB14181D4601.quest1.description3}"
+				"下面的蓝图任务分为两个分支：左侧和右侧，分别代表材料蓝图和探索蓝图。其中，材料蓝图可以在获得对应材料后直接制作，而探索蓝图则需要探索对应结构才能获取。"
 			]
 			icon: {
 				Count: 1
@@ -61,125 +62,38 @@
 			id: "40D34B60BD7011DD"
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest1.subtitle}"
+			subtitle: "从最基础的枪械开始……"
 			tasks: [{
 				id: "4510A9F401CC26C1"
-				title: "{ftbquests.chapter.1770FB14181D4601.quest1.task_4976664453711668929.title}"
+				title: "好耶"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.1770FB14181D4601.quest1.title}"
+			title: "新的开始"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
-			description: ["{ftbquests.chapter.1770FB14181D4601.quest2.description1}"]
-			icon: "ftbquests:book"
-			id: "7D72C735D145F763"
-			shape: "diamond"
-			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest2.subtitle}"
-			tasks: [
-				{
-					id: "54082D6060DEFE53"
-					item: {
-						Count: 1
-						id: "scguns:flintlock_pistol"
-						tag: {
-							AmmoCount: 1
-							Damage: 0
-							GeckoLibID: 3L
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "50D36DA3D72551E4"
-					item: {
-						Count: 1
-						id: "scguns:handcannon"
-						tag: {
-							AmmoCount: 1
-							Damage: 0
-							GeckoLibID: 4L
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "173A3F6118E1586B"
-					item: {
-						Count: 1
-						id: "scguns:musket"
-						tag: {
-							AmmoCount: 1
-							Damage: 0
-							GeckoLibID: 5L
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "613546A60458078B"
-					item: {
-						Count: 1
-						id: "scguns:blunderbuss"
-						tag: {
-							AmmoCount: 1
-							Damage: 0
-							GeckoLibID: 6L
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "21E7601A73123E1D"
-					item: "scguns:powder_and_ball"
-					type: "item"
-				}
-				{
-					id: "3D5C6D9681DBA5FE"
-					item: "scguns:grapeshot"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.1770FB14181D4601.quest2.title}"
-			x: 1.5d
-			y: -1.5d
-		}
-		{
-			dependencies: ["40D34B60BD7011DD"]
+			description: ["火药可以通过多种工业方式量产。"]
 			id: "0AA2D4BA3B7F99BF"
 			shape: "diamond"
-			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest3.subtitle}"
+			subtitle: "枪总是需要火药的"
 			tasks: [{
 				id: "51979227F5C1917C"
 				item: "minecraft:gunpowder"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -1.5d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
-			description: ["{ftbquests.chapter.1770FB14181D4601.quest4.description1}"]
+			description: ["但是一些枪械基本零件还是要铁。"]
 			id: "09AB3BC179AF7529"
-			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest4.subtitle}"
+			subtitle: "如此简单！"
 			tasks: [{
 				id: "488AD339F05E83E0"
 				item: "scguns:copper_blueprint"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 1.5d
-		}
-		{
-			dependencies: ["40D34B60BD7011DD"]
-			description: ["{ftbquests.chapter.1770FB14181D4601.quest5.description1}"]
-			id: "143180BE1973BA96"
-			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest5.subtitle}"
-			tasks: [{
-				id: "73E8B44629623673"
-				item: "scguns:iron_blueprint"
 				type: "item"
 			}]
 			x: -3.0d
@@ -187,12 +101,12 @@
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
-			description: ["{ftbquests.chapter.1770FB14181D4601.quest6.description1}"]
-			id: "05C273A40186A578"
-			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest6.subtitle}"
+			description: ["普普通通，但至少能做出算得上有威力的枪械了。"]
+			id: "143180BE1973BA96"
+			subtitle: "一般通过"
 			tasks: [{
-				id: "34456F092B925694"
-				item: "scguns:treated_brass_blueprint"
+				id: "73E8B44629623673"
+				item: "scguns:iron_blueprint"
 				type: "item"
 			}]
 			x: -4.5d
@@ -200,12 +114,12 @@
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
-			description: ["{ftbquests.chapter.1770FB14181D4601.quest7.description1}"]
-			id: "46243596A537F0AF"
-			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest7.subtitle}"
+			description: ["更稳定的输出！"]
+			id: "05C273A40186A578"
+			subtitle: "高级合金"
 			tasks: [{
-				id: "424BC505720043AC"
-				item: "scguns:diamond_steel_blueprint"
+				id: "34456F092B925694"
+				item: "scguns:treated_brass_blueprint"
 				type: "item"
 			}]
 			x: -6.0d
@@ -213,28 +127,25 @@
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
-			description: ["{ftbquests.chapter.1770FB14181D4601.quest8.description1}"]
-			id: "250253A026170224"
-			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest8.subtitle}"
+			description: ["总还是比它的几位前辈要硬一些的。"]
+			id: "46243596A537F0AF"
+			subtitle: "钻石风暴"
 			tasks: [{
-				id: "62B8D29EA2D601E9"
-				item: "scguns:ocean_blueprint"
+				id: "424BC505720043AC"
+				item: "scguns:diamond_steel_blueprint"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 1.5d
+			x: -7.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
-			description: [
-				"{ftbquests.chapter.1770FB14181D4601.quest9.description1}"
-				"{ftbquests.chapter.1770FB14181D4601.quest9.description2}"
-			]
-			id: "661C38A15ACA2062"
-			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest9.subtitle}"
+			description: ["大部分海洋系的枪械对火焰系目标有克制效果。"]
+			id: "250253A026170224"
+			subtitle: "是谁住在深海的大菠萝里？"
 			tasks: [{
-				id: "6380600E3ABD839A"
-				item: "scguns:piglin_blueprint"
+				id: "62B8D29EA2D601E9"
+				item: "scguns:ocean_blueprint"
 				type: "item"
 			}]
 			x: 3.0d
@@ -242,12 +153,15 @@
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
-			description: ["{ftbquests.chapter.1770FB14181D4601.quest10.description1}"]
-			id: "7A92FF4BFD84065C"
-			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest10.subtitle}"
+			description: [
+				"某种意义上和下界合金锻造模板同样重要。"
+				"有一种枪需要通过烈焰人刷怪笼完成组装……"
+			]
+			id: "661C38A15ACA2062"
+			subtitle: "堡垒珍藏"
 			tasks: [{
-				id: "720BDDBCD673D704"
-				item: "scguns:deep_dark_blueprint"
+				id: "6380600E3ABD839A"
+				item: "scguns:piglin_blueprint"
 				type: "item"
 			}]
 			x: 4.5d
@@ -255,16 +169,29 @@
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
-			description: ["{ftbquests.chapter.1770FB14181D4601.quest11.description1}"]
+			description: ["你的枪在低语……"]
+			id: "7A92FF4BFD84065C"
+			subtitle: "深邃黑暗幻想"
+			tasks: [{
+				id: "720BDDBCD673D704"
+				item: "scguns:deep_dark_blueprint"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["并不能让人打出潜影弹"]
 			id: "5D03D83CF29BF288"
-			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest11.subtitle}"
+			subtitle: "游戏尽头的蓝图"
 			tasks: [{
 				id: "6B47C5B6827CE0C2"
 				item: "scguns:end_blueprint"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 6.0d
+			x: 7.5d
+			y: 7.5d
 		}
 		{
 			dependencies: [
@@ -277,20 +204,119 @@
 				"09AB3BC179AF7529"
 				"5D03D83CF29BF288"
 			]
-			description: ["{ftbquests.chapter.1770FB14181D4601.quest12.description1}"]
+			description: ["收集齐全部蓝图后，你就可以解锁全游戏最强的枪械种类：焦化枪械。"]
 			id: "548E55016926A7C4"
 			shape: "gear"
 			size: 2.0d
-			subtitle: "{ftbquests.chapter.1770FB14181D4601.quest12.subtitle}"
+			subtitle: "超越想象"
 			tasks: [{
 				id: "6B37F6FC8AA15B87"
 				item: "scguns:scorched_blueprint"
 				type: "item"
 			}]
 			x: 0.0d
-			y: 6.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			icon: {
+				Count: 1
+				id: "scguns:flintlock_pistol"
+				tag: {
+					AmmoCount: 1
+					Damage: 0
+					GeckoLibID: 6L
+				}
+			}
+			id: "3B8F97E211EF077C"
+			subtitle: "只用石头和木头就能做出堪堪能用的基础枪械"
+			tasks: [
+				{
+					id: "46DD280FA0FB25E3"
+					item: "scguns:antique_blueprint"
+					type: "item"
+				}
+				{
+					id: "2542F99BAE18C4AF"
+					item: "scguns:frontier_blueprint"
+					type: "item"
+				}
+			]
+			title: "新手上路"
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: [
+				"通过交易协议，你可以召唤一位存在一定时间的“黄铜游商”前来和你交易，而它会提供一些物有所值的商品和&9一种独特的蓝图&r。"
+				"和传统游商不同的是，它在被攻击的时候会呼叫支援，而且远不只是两头羊驼。"
+			]
+			icon: "minecraft:emerald"
+			id: "764AEF73C28872DD"
+			subtitle: "芝麻开门"
+			tasks: [
+				{
+					id: "6AB6A4B259E5B51C"
+					item: "scguns:the_pact"
+					type: "item"
+				}
+				{
+					id: "305F3C61CB3F3022"
+					item: "scguns:wrecker_blueprint"
+					type: "item"
+				}
+			]
+			title: "神秘交易"
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: [
+				"虽然只能通过击败强大的BOSS掉落，但是它可以让你制作一些特殊的，有槽位的盔甲！"
+				"初始的盔甲很弱是一码事，加装升级后的强度是另一码事，比如现在你可以用电力尝试驱动盔甲的强大功能……"
+			]
+			id: "3270686208C6C37D"
+			rewards: [{
+				id: "4E7B8C7F1C813B9A"
+				item: "scguns:advanced_exo_suit_core"
+				type: "item"
+			}]
+			subtitle: "最难获得的蓝图（之一）"
+			tasks: [{
+				id: "2CF1F679A7D01051"
+				item: "scguns:exo_suit_blueprint"
+				type: "item"
+			}]
+			title: "模块化装甲"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: [
+				"跟随黄铜的指引，你将找到深藏于地下的大型军火库。"
+				"探索的时候要小心&a被释放的怪物&r，&c敌对的自动炮台&r……以及&9可能存在的，巨大而可怖的古代黄铜战争机器&r。"
+			]
+			id: "42008C71DAD852B7"
+			subtitle: "计划一场终身难忘的冒险"
+			tasks: [{
+				id: "442D6E63CCDFEA2F"
+				item: {
+					Count: 1
+					id: "scguns:cog_locator"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "结构定位"
+			x: 0.0d
+			y: 3.0d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.1770FB14181D4601.subtitle0}"]
-	title: "{ftbquests.chapter.1770FB14181D4601.title}"
+	subtitle: ["Life of a Gunsmith"]
+	title: "【附加】军械师生涯"
 }

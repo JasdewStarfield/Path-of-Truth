@@ -292,7 +292,7 @@ ServerEvents.recipes(event => {
     ' ABA '
   ], {
     A: '#forge:plates/steel',
-    B: 'createaddition:capacitor',
+    B: 'immersiveengineering:rs_engineering',
     C: 'immersiveengineering:coil_lv',
     D: 'immersiveengineering:light_engineering',
     E: 'create:shaft'
@@ -304,7 +304,7 @@ ServerEvents.recipes(event => {
     ' ABA '
   ], {
     A: '#forge:plates/brass',
-    B: 'createaddition:capacitor',
+    B: 'immersiveengineering:rs_engineering',
     C: 'immersiveengineering:coil_lv',
     D: 'immersiveengineering:light_engineering',
     E: 'create:shaft'
@@ -324,6 +324,8 @@ ServerEvents.recipes(event => {
     E: 'create:shaft'
   })
   event.recipes.vintageimprovements.turning(Item.of('create:fluid_pipe', 16), '#forge:storage_blocks/constantan')
+  event.remove({ id: 'createdeco:pressing/industrial_iron_sheet' })
+  event.recipes.vintageimprovements.turning(Item.of('createdeco:industrial_iron_sheet', 9), 'create:industrial_iron_block')
 
   //零件（直接合成）
   event.shaped('immersiveengineering:component_iron', [ 
@@ -358,7 +360,7 @@ ServerEvents.recipes(event => {
   
   //虚空钢
   event.remove({id:"createutilities:mixing/void_steel_ingot"})
-  event.recipes.create.mixing([Item.of('createutilities:void_steel_ingot'), Item.of('scguns:nether_star_fragment').withChance(0.9)], ['kubejs:unformed_steel_ingot', 'kubejs:unformed_steel_ingot', '#endersdelight:enderman_loot', '#endersdelight:enderman_loot', 'echo_shard', 'scguns:nether_star_fragment']).heated()
+  event.recipes.create.mixing([Item.of('createutilities:void_steel_ingot'), Item.of('scguns:nether_star_fragment').withChance(0.25)], ['kubejs:unformed_steel_ingot', 'kubejs:unformed_steel_ingot', '#endersdelight:enderman_loot', '#endersdelight:enderman_loot', 'echo_shard', 'scguns:nether_star_fragment']).superheated()
   event.remove({id:"createutilities:pressing/void_steel_sheet"})
   event.recipes.vintageimprovementsHammering(Item.of('#forge:plates/voidsteel'), '#forge:ingots/voidsteel').hammerBlows(3)
 

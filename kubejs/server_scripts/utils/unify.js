@@ -155,7 +155,27 @@ ServerEvents.recipes(event => {
   //蛋糕！
   //其它蛋糕的统一慢慢做吧
   event.remove({output:"minecraft:cake", type: "minecraft:crafting"})
-  
+
+  //焦化硫、磷存储
+  event.remove({id: 'vintageimprovements:craft/sulfur_block_to_items'})
+  event.remove({id: 'vintageimprovements:craft/sulfur_items_to_block'})
+  event.shaped('kubejs:sulfur_block', [ 
+    'AAA', 
+    'AAA',
+    'AAA'
+  ], {
+    A: '#forge:dusts/sulfur'
+  })
+  event.shapeless(Item.of('scguns:sulfur_dust', 9), ['#forge:storage_blocks/sulfur'])
+
+  event.shaped('kubejs:phosphor_block', [ 
+    'AAA', 
+    'AAA',
+    'AAA'
+  ], {
+    A: '#forge:dusts/phosphor'
+  })
+  event.shapeless(Item.of('scguns:phosphor_dust', 9), ['#forge:storage_blocks/phosphor'])
 
   //下面是一些重复配方的移除
   event.replaceInput(

@@ -194,8 +194,16 @@ ServerEvents.recipes(event => {
     event.recipes.create.crushing(Item.of('immersiveengineering:dust_nickel'), '#forge:ingots/nickel')
     event.recipes.create.crushing(Item.of('kubejs:zinc_dust'), '#forge:ingots/zinc')
 
+    //补充部分粉的烧炼配方
+    event.smelting('simplemetals_tin:tin_ingot', 'kubejs:tin_dust')
+    event.blasting('simplemetals_tin:tin_ingot', 'kubejs:tin_dust')
+    event.smelting('create:zinc_ingot', 'kubejs:zinc_dust')
+    event.blasting('create:zinc_ingot', 'kubejs:zinc_dust')
+
     //粉碎轮出铁粉
     event.recipes.create.crushing(Item.of('kubejs:iron_ingot_dust').withChance(0.75), '#forge:ingots/iron')
+    event.smelting('iron_ingot', 'kubejs:iron_ingot_dust')
+    event.blasting('iron_ingot', 'kubejs:iron_ingot_dust')
 
     event.remove({ id: /alloyed\.*/ })
 

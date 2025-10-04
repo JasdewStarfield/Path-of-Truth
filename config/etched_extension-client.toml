@@ -1,0 +1,17 @@
+#Configure whether to display API and download related errors
+showWarnings = false
+
+#Configuration for customizing Etched's album covers
+[album_cover]
+	#Controls the color quantization of the album cover. Lower values mean more colors and higher fidelity.
+	#Higher values create a more pixelated, retro look.
+	#1 = Max fidelity (no color reduction).
+	#16 = Etched default.
+	#Recommended range: 1-64
+	#Range: 1 ~ 256
+	colorDivisions = 1
+	#Determines which album cover resource to use.
+	#The cover data is defined in assets/etched_extension/textures/item/album_cover_properties_{coverResolution}.json.
+	#Examples: 16, 32, 64 — each corresponds to a different cover resolution.
+	coverResolution = "16"
+

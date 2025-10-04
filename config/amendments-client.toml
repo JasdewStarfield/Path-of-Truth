@@ -90,7 +90,7 @@
 	campfire_smoke_through_blocks = false
 
 [sign]
-	#Gives signs a pixel consistent model and texture. Also affects other mods
+	#Gives signs a pixel consistent model and texture. Also affects other mods. This also makes them use a Block Model, making them render much much much faster than as block entities
 	pixel_consistent = true
 	#A scalar multiplier that will be applied to sign text making it brighter, supposedly more legible
 	#Range: 0.0 ~ 5.0

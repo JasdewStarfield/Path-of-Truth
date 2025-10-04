@@ -1,0 +1,18 @@
+{
+    "type": "immersiveengineering:metal_press",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+    "energy": 2400,
+    "input": {
+        "item": "scguns:depleted_diamond_steel_ingot"
+    },
+    "mold": "scguns:small_casing_mold",
+    "result": {
+        "count": 14,
+        "item": "scguns:small_diamond_steel_casing"
+    }
+}

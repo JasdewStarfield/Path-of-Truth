@@ -30,38 +30,38 @@
 	quests: [
 		{
 			dependencies: ["6A1B42D208C780BD"]
-			description: ["{ftbquests.chapter.563F31BF1B1FE486.quest1.description1}"]
+			description: ["&l&4这个章节不是正式任务线！只起到任务线的预告作用！具体请看下方的章节组中的内容！&r&r"]
 			hide_until_deps_complete: true
 			id: "5BC62338A9F6E65B"
 			shape: "hexagon"
 			size: 1.6d
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest1.subtitle}"
+			subtitle: "触碰魔法边缘"
 			tasks: [{
 				id: "15B65D00737081D8"
 				item: "irons_spellbooks:arcane_essence"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest1.title}"
+			title: "魔法的残渣"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["5BC62338A9F6E65B"]
 			id: "47CB45634A921A43"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest2.subtitle}"
+			subtitle: "纯洁的生命"
 			tasks: [{
 				id: "13617813AF0BF970"
 				item: "botania:pure_daisy"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest2.title}"
+			title: "第一朵花"
 			x: -2.0d
 			y: -1.0d
 		}
 		{
 			dependencies: ["5BC62338A9F6E65B"]
 			id: "2A13E8CAD8E90E20"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest3.subtitle}"
+			subtitle: "施法工具"
 			tasks: [{
 				id: "335AC39A26B19ED1"
 				item: {
@@ -78,7 +78,7 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest3.title}"
+			title: "第一本法术书"
 			x: 2.0d
 			y: -1.0d
 		}
@@ -88,7 +88,7 @@
 				"47CB45634A921A43"
 			]
 			id: "59793C79A0C3B12B"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest4.subtitle}"
+			subtitle: "基本仪式"
 			tasks: [{
 				id: "1B831A36C37E9436"
 				item: {
@@ -101,14 +101,14 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest4.title}"
+			title: "灵魂根源"
 			x: 0.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["59793C79A0C3B12B"]
 			id: "0719D8D05F672C29"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest5.subtitle}"
+			subtitle: "植魔基本要素"
 			tasks: [
 				{
 					id: "69087BD1E049995D"
@@ -126,27 +126,27 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest5.title}"
+			title: "老三样"
 			x: -2.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["59793C79A0C3B12B"]
 			id: "3EF388DBCA593501"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest6.subtitle}"
+			subtitle: "开门法不开门怎么行"
 			tasks: [{
 				id: "71770626C2FAE836"
 				item: "botania:alfheim_portal"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest6.title}"
+			title: "开门法"
 			x: 0.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["59793C79A0C3B12B"]
 			id: "45311CA8EA1B26BA"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest7.subtitle}"
+			subtitle: "无尽重生"
 			tasks: [{
 				id: "3D91F2D92D4C1483"
 				item: {
@@ -159,7 +159,7 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest7.title}"
+			title: "更强的赝品"
 			x: 2.0d
 			y: -3.0d
 		}
@@ -170,20 +170,20 @@
 				"45311CA8EA1B26BA"
 			]
 			id: "56FEAEAF9D5FF405"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest8.subtitle}"
+			subtitle: "做个帽子"
 			tasks: [{
 				id: "78C27ACEDC63E1DE"
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest8.title}"
+			title: "绿色的光"
 			x: 0.0d
 			y: -4.0d
 		}
 		{
 			dependencies: ["56FEAEAF9D5FF405"]
 			id: "172CC4DA91E7C588"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest9.subtitle}"
+			subtitle: "以魔力击穿世界"
 			tasks: [{
 				id: "2B2C54C9A20ED921"
 				item: {
@@ -193,20 +193,20 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest9.title}"
+			title: "魔能枪"
 			x: -2.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["56FEAEAF9D5FF405"]
 			id: "67DD665888D130CB"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest10.subtitle}"
+			subtitle: "深埋地底"
 			tasks: [{
 				id: "20393A584D230BBD"
 				item: "irons_spellbooks:arcane_salvage"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest10.title}"
+			title: "奥术提纯"
 			x: 2.0d
 			y: -5.0d
 		}
@@ -216,7 +216,7 @@
 				"67DD665888D130CB"
 			]
 			id: "4D484051A8CF29F2"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest11.subtitle}"
+			subtitle: "祈求世界的回应"
 			tasks: [
 				{
 					id: "31F2382A98D387B4"
@@ -229,14 +229,14 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest11.title}"
+			title: "仪式群"
 			x: 0.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["4D484051A8CF29F2"]
 			id: "5393EC343AD0EC83"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest12.subtitle}"
+			subtitle: "这是基本元素，华生"
 			tasks: [
 				{
 					id: "4C2DBD4B7647DFE8"
@@ -259,46 +259,46 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest12.title}"
+			title: "元素之力"
 			x: -2.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["4D484051A8CF29F2"]
 			id: "71BF98560860C0AB"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest13.subtitle}"
+			subtitle: "生命之力"
 			tasks: [{
 				id: "4EECEE2C4DD71928"
 				item: "botania:dandelifeon"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest13.title}"
+			title: "生命花开"
 			x: 2.0d
 			y: -7.0d
 		}
 		{
 			dependencies: ["71BF98560860C0AB"]
 			id: "309ED82498C4F2D1"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest14.subtitle}"
+			subtitle: "生长……"
 			tasks: [{
 				id: "3F1587357E1294A3"
 				item: "botania:overgrowth_seed"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest14.title}"
+			title: "生命集成"
 			x: -2.0d
 			y: -9.0d
 		}
 		{
 			dependencies: ["5393EC343AD0EC83"]
 			id: "0BE788F0317226D0"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest15.subtitle}"
+			subtitle: "撼动规则"
 			tasks: [{
 				id: "728DB57B0C2E3580"
 				item: "goety:rupture_focus"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest15.title}"
+			title: "破碎虚空"
 			x: 2.0d
 			y: -9.0d
 		}
@@ -308,7 +308,7 @@
 				"309ED82498C4F2D1"
 			]
 			id: "7B4BE516F4D4E494"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest16.subtitle}"
+			subtitle: "最最伟大的炼金术"
 			tasks: [{
 				id: "1AF2F188558502ED"
 				item: {
@@ -320,54 +320,54 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest16.title}"
+			title: "哲人石"
 			x: 0.0d
 			y: -10.0d
 		}
 		{
 			dependencies: ["56FEAEAF9D5FF405"]
 			id: "4069A80598955B8F"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest17.subtitle}"
+			subtitle: "爆炸！"
 			tasks: [{
 				id: "1B991680B02FAB20"
 				item: "botania:lens_storm"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest17.title}"
+			title: "风暴之力"
 			x: 0.0d
 			y: -5.0d
 		}
 		{
 			dependencies: ["7B4BE516F4D4E494"]
 			id: "11809308EF757592"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest18.subtitle}"
+			subtitle: "末影之王"
 			tasks: [{
 				count: 2L
 				id: "47E21A0CAC53FC78"
 				item: "minecraft:dragon_egg"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest18.title}"
+			title: "更多的蛋"
 			x: 2.0d
 			y: -11.0d
 		}
 		{
 			dependencies: ["07FA33846E7A5B3D"]
 			id: "7A0D894A5227359D"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest19.subtitle}"
+			subtitle: "以血还血"
 			tasks: [{
 				id: "3BCCF21AE183461F"
 				item: "goety:killing_focus"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest19.title}"
+			title: "生死一线"
 			x: -2.0d
 			y: -13.0d
 		}
 		{
 			dependencies: ["7B4BE516F4D4E494"]
 			id: "2022E86F75370929"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest20.subtitle}"
+			subtitle: "接近永恒"
 			tasks: [{
 				id: "707DDD11BE3C6C0F"
 				item: {
@@ -380,7 +380,7 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest20.title}"
+			title: "无尽魔力"
 			x: -1.0d
 			y: -11.5d
 		}
@@ -390,10 +390,11 @@
 				"316031CF88C55DEB"
 				"7A0D894A5227359D"
 			]
+			description: ["只是边界，不是终末。"]
 			id: "697B1277B1C95490"
 			shape: "hexagon"
 			size: 1.6d
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest21.subtitle}"
+			subtitle: "次元边界"
 			tasks: [{
 				id: "09891F03B5381DDB"
 				item: {
@@ -405,14 +406,14 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest21.title}"
+			title: "魔法大成"
 			x: 0.0d
 			y: -14.0d
 		}
 		{
 			dependencies: ["4D484051A8CF29F2"]
 			id: "747404689C3EB6D7"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest22.subtitle}"
+			subtitle: "云端的城堡"
 			tasks: [{
 				id: "5B0C27847FAAF033"
 				item: {
@@ -430,7 +431,7 @@
 		{
 			dependencies: ["7B4BE516F4D4E494"]
 			id: "2E0C20F69A138C81"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest23.subtitle}"
+			subtitle: "最坚硬的物质"
 			tasks: [{
 				id: "7CB7D7CCE7A1C88C"
 				item: {
@@ -442,14 +443,14 @@
 				}
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.563F31BF1B1FE486.quest23.title}"
+			title: "多功能工具"
 			x: 1.0d
 			y: -11.5d
 		}
 		{
 			dependencies: ["7B4BE516F4D4E494"]
 			id: "1704AC9884507C0B"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest24.subtitle}"
+			subtitle: "魔力-灵魂集成体"
 			tasks: [{
 				id: "0C1D16C3C4437557"
 				item: "goety:sonic_boom_focus"
@@ -461,7 +462,7 @@
 		{
 			dependencies: ["7B4BE516F4D4E494"]
 			id: "07FA33846E7A5B3D"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest25.subtitle}"
+			subtitle: "无羁魔力"
 			tasks: [{
 				id: "0F01A8E05E982E5F"
 				item: "botania:mana_bomb"
@@ -473,7 +474,7 @@
 		{
 			dependencies: ["11809308EF757592"]
 			id: "316031CF88C55DEB"
-			subtitle: "{ftbquests.chapter.563F31BF1B1FE486.quest26.subtitle}"
+			subtitle: "至暗时刻"
 			tasks: [{
 				id: "49EB98441BA1904D"
 				item: "botania:blacker_lotus"
@@ -483,6 +484,6 @@
 			y: -13.0d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.563F31BF1B1FE486.subtitle0}"]
-	title: "{ftbquests.chapter.563F31BF1B1FE486.title}"
+	subtitle: ["Magic Progressions"]
+	title: "【总览】魔法进程表"
 }

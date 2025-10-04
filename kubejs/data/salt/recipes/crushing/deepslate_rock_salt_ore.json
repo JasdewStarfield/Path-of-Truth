@@ -1,0 +1,34 @@
+{
+    "type": "create:crushing",
+    "ingredients": [
+      {"item": "salt:deepslate_rock_salt_ore"}
+    ],
+    "results": [
+      {
+        "item": "salt:raw_rock_salt"
+      },
+      {
+        "item": "salt:raw_rock_salt",
+        "chance": 0.5
+      },
+      {
+        "item": "create:experience_nugget",
+        "chance": 0.5
+      },
+      {
+        "item": "minecraft:cobbled_deepslate",
+        "chance": 0.125
+      }
+    ],
+    "processingTime": 250,
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "create"
+        },
+        {
+            "type": "forge:mod_loaded",
+            "modid": "salt"
+        }
+      ]
+  }

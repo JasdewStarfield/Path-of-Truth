@@ -1,0 +1,36 @@
+{
+    "type": "farmersdelight:cooking",
+    "recipe_book_tab": "drinks",
+    "ingredients": [
+      {
+        "tag": "forge:milk"
+      },
+      {
+        "tag": "forge:milk"
+      },
+      {
+        "tag": "minecraft:leaves"
+      },
+      {
+        "item": "minecraft:sugar"
+      }
+    ],
+    "result": {
+      "item": "create:builders_tea"
+    },
+    "experience": 1.0,
+    "cookingtime": 200,
+    "container": {
+      "item": "minecraft:glass_bottle"
+    },
+    "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "create"
+        },
+        {
+            "type": "forge:mod_loaded",
+            "modid": "farmersdelight"
+        }
+      ]
+  }

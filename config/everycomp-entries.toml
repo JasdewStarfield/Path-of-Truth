@@ -4,9 +4,6 @@
 
 	[types.stone_type]
 
-		[types.stone_type.outer_end]
-			violite = true
-
 		[types.stone_type.biomeswevegone]
 			white_sandstone = true
 			blue_sandstone = true
@@ -16,8 +13,6 @@
 			windswept_sandstone = true
 			red_rock = true
 			dacite = true
-			mossy_stone = true
-			rocky_stone = true
 
 		[types.stone_type.create]
 			limestone = true
@@ -29,21 +24,21 @@
 			scorchia = true
 
 		[types.stone_type.botania]
-			livingrock = false
-			shimmerrock = true
+			livingrock = true
 
 		[types.stone_type.undergarden]
 			depthrock = true
 			shiverstone = true
 			tremblecrust = true
 
+		[types.stone_type.outer_end]
+			violite = true
+
 		[types.stone_type.goety]
 			shade_stone = true
 			crypt_stone = true
 			highrock = true
 			siltstone = true
-			marble = true
-			cragrocks = true
 
 		[types.stone_type.scguns]
 			phosphorite = true
@@ -52,14 +47,10 @@
 			taratite = true
 			rimestone = true
 			umber = true
-			cinderstone = false
-			blinding_stone = true
-			nature_stone = true
-			poison_stone = true
-			aquatic_stone = true
-			life_stone = true
-			turquoise_stone = true
-			lunar_stone = true
+			cinderstone = true
+
+		[types.stone_type.oreganized]
+			glance = true
 
 	[types.cake]
 
@@ -76,14 +67,16 @@
 		[types.cake.collectorsreap]
 			lime_cake = true
 			pomegranate_cake = true
+			pink_dragon_fruit_cake = true
 
 	[types.wood_type]
 
-		[types.wood_type.createdieselgenerators]
-			chip_wood = true
+		[types.wood_type.outer_end]
+			azure = true
 
 		[types.wood_type.netherexp]
 			claret = true
+			smokestalk = true
 
 		[types.wood_type.blue_skies]
 			crystallized = true
@@ -95,6 +88,9 @@
 			maple = true
 			comet = true
 
+		[types.wood_type.createdieselgenerators]
+			chip_wood = true
+
 		[types.wood_type.botania]
 			livingwood = true
 			dreamwood = true
@@ -103,9 +99,6 @@
 			smogstem = true
 			wigglewood = true
 			grongle = true
-
-		[types.wood_type.outer_end]
-			azure = true
 
 		[types.wood_type.betterarcheology]
 			rotten = true
@@ -146,17 +139,6 @@
 
 	[types.leaves_type]
 
-		[types.leaves_type.blue_skies]
-			crystallized = true
-			crescent_fruit = true
-			bluebright = true
-			starlit = true
-			frostbright = true
-			lunar = true
-			dusk = true
-			maple = true
-			comet = true
-
 		[types.leaves_type.undergarden]
 			smogstem = true
 			wigglewood = true
@@ -171,6 +153,17 @@
 			windswept = true
 			pine = true
 			chorus = true
+
+		[types.leaves_type.blue_skies]
+			bluebright = true
+			starlit = true
+			frostbright = true
+			lunar = true
+			dusk = true
+			maple = true
+			crystallized = true
+			comet = true
+			crescent_fruit = true
 
 		[types.leaves_type.biomeswevegone]
 			aspen = true
@@ -235,55 +228,6 @@
 #Disables specific entries
 [entries]
 
-	[entries.wood_type]
-
-		[entries.wood_type.handcrafted]
-			counter = true
-			corner_trim = true
-			fancy_bed = true
-			desk = true
-			shelf = true
-			nightstand = true
-			cupboard = true
-			dining_bench = true
-			bench = true
-			couch = true
-			table = true
-			chair = true
-			drawer = true
-			pillar_trim = true
-			side_table = true
-
-		[entries.wood_type.storagedrawers]
-			trim = true
-			full_drawers_2 = true
-			half_drawers_1 = true
-			full_drawers_4 = true
-			half_drawers_4 = true
-			half_drawers_2 = true
-			full_drawers_1 = true
-
-		[entries.wood_type.beautify]
-			trellis = true
-			blinds = true
-			picture_frame = true
-
-		[entries.wood_type.decorative_blocks]
-			support = true
-			seat = true
-			palisade = true
-			beam = true
-
-		[entries.wood_type.create]
-			window = true
-			window_pane = true
-
-		[entries.wood_type.farmersdelight]
-			cabinet = true
-
-		[entries.wood_type.vct]
-			crafting_table = true
-
 	[entries.stone_type]
 
 		[entries.stone_type.rechiseled]
@@ -323,6 +267,10 @@
 			smooth_brick_paving_connecting = true
 			slated = true
 
+		[entries.stone_type.handcrafted]
+			corner_trim = true
+			pillar_trim = true
+
 		[entries.stone_type.create]
 			cut_wall = true
 			small_bricks = true
@@ -343,10 +291,65 @@
 			cut_bricks = true
 			polished_cut_stairs = true
 
+		[entries.stone_type.decorative_blocks]
+			pillar = true
+
 	[entries.mud_type]
 
 		[entries.mud_type.betterarcheology]
 			cracked_brick_stairs = true
-			cracked_brick_slab = true
 			cracked_bricks = true
+			cracked_brick_slab = true
+
+	[entries.wood_type]
+
+		[entries.wood_type.handcrafted]
+			counter = true
+			corner_trim = true
+			fancy_bed = true
+			desk = true
+			shelf = true
+			nightstand = true
+			cupboard = true
+			dining_bench = true
+			bench = true
+			couch = true
+			table = true
+			chair = true
+			drawer = true
+			pillar_trim = true
+			side_table = true
+
+		[entries.wood_type.storagedrawers]
+			trim = true
+			full_drawers_2 = true
+			half_drawers_1 = true
+			full_drawers_4 = true
+			half_drawers_4 = true
+			half_drawers_2 = true
+			full_drawers_1 = true
+
+		[entries.wood_type.beautify]
+			trellis = true
+			blinds = true
+			picture_frame = true
+
+		[entries.wood_type.decorative_blocks]
+			beam = true
+			support = true
+			seat = true
+			palisade = true
+
+		[entries.wood_type.create]
+			window = true
+			window_pane = true
+
+		[entries.wood_type.farmersdelight]
+			cabinet = true
+
+		[entries.wood_type.sob]
+			counter = true
+
+		[entries.wood_type.vct]
+			crafting_table = true
 

@@ -151,8 +151,8 @@ ServerEvents.recipes(event => {
     //古代黄铜平衡
     event.remove({id:"scguns:create/ancient_brass_brass_from_mixing"})
     event.recipes.create.mixing([
-        Item.of('create:brass_nugget', 12),
-        Item.of('create:brass_nugget', 4).withChance(0.5)
+        Item.of('create:brass_nugget', 10),
+        Item.of('create:brass_nugget', 3).withChance(0.5)
     ], [
         '#forge:ingots/brass',
         "scguns:ancient_brass",
@@ -228,7 +228,7 @@ ServerEvents.recipes(event => {
         "additives":[],
         "energy":102400,
         "input":{"item":"scguns:diamond_steel_blend"},
-        "results":[{"item":"scguns:diamond_steel_ingot"}],
+        "results":[{"item":"scguns:depleted_diamond_steel_ingot"}],
         "time":100
     })
 

@@ -1,50 +1,4 @@
 
-["UI Options"]
-	#─────────────────────────────────────────────────────────────────────────
-	# Tweaks the layout of the hotbar to make foom for Cold Sweat UI elements
-	# ⌄ 
-	"Custom hotbar layout" = true
-	#─────────────────────────────────────────────────────────────────────────
-	# Controls whether UI elements will shake when in critical conditions
-	# ⌄ 
-	"Icon Bobbing" = true
-	#─────────────────────────────────────────────────────────────────────────
-	# The position of the body temperature icon relative to default
-	# ⌄ 
-	"Body Temperature Icon Offset" = [0, 0]
-	#─────────────────────────────────────────────────────────────────────────
-	# Enables the body temperature icon above the hotbar
-	# ⌄ 
-	"Show Body Temperature Icon" = true
-	#─────────────────────────────────────────────────────────────────────────
-	# Moves the body temperature icon to make way for the advanced readout when a thermometer is equipped
-	# ⌄ 
-	"Move Body Icon For Advanced Info" = true
-	#─────────────────────────────────────────────────────────────────────────
-	# The position of the body temperature readout relative to default
-	# ⌄ 
-	"Body Temperature Readout Offset" = [0, 0]
-	#─────────────────────────────────────────────────────────────────────────
-	# Enables the body temperature readout above the hotbar
-	# ⌄ 
-	"Show Body Temperature Readout" = true
-	#─────────────────────────────────────────────────────────────────────────
-	# The position of the world temperature gauge relative to default
-	# ⌄ 
-	"World Temperature UI Offset" = [34, 0]
-	#─────────────────────────────────────────────────────────────────────────
-	# Enables the world temperature gauge next to the hotbar
-	# ⌄ 
-	"Show World Temperature Gauge" = true
-	#─────────────────────────────────────────────────────────────────────────
-	# Show the config menu button in the Options menu
-	# ⌄ 
-	"Enable In-Game Config" = true
-	#─────────────────────────────────────────────────────────────────────────
-	# The position (offset) of the config button on the screen
-	# ⌄ 
-	"Config Button Position" = [0, 0]
-
 [Accessibility]
 	#─────────────────────────────────────────────────────────────────────────
 	# Enables visual distortion effects when the player is too hot or cold
@@ -100,28 +54,26 @@
 	# ⌄ 
 	"Hearth Debug" = true
 	#─────────────────────────────────────────────────────────────────────────
-	# Automatically expands all collapsible tooltips
+	# Show the config menu button in the Options menu
 	# ⌄ 
-	"Expand Tooltips" = false
+	"Enable In-Game Config" = true
+	#─────────────────────────────────────────────────────────────────────────
+	# The position (offset) of the config button on the screen
+	# ⌄ 
+	"Config Button Position" = [0, 0]
 	#─────────────────────────────────────────────────────────────────────────
 	# Enables the animated soul spring lamp model
 	# Disable this if there are visual errors like missing textures
 	# ⌄ 
-	"Animated Soul Spring Lamp" = true
+	"Animated Soulspring Lamp" = true
 	#─────────────────────────────────────────────────────────────────────────
-	# Determines when armor insulation tooltips should show
-	# One of:
-	# • "always": Always show insulation tooltip
-	# • "if_present": Show insulation tooltip only if the item has insulation (default)
-	# • "on_shift": Show insulation tooltip if shift is held
-	# • "shift_and_present": Show insulation if shift is held AND the armor has any
-	# • "never": Never show insulation tooltips
+	# Uses custom player arm posing when holding a soulspring lamp
 	# ⌄ 
-	"Insulation Tooltip Visibility" = "if_present"
+	"Pose Soulspring Lamp" = true
 
 [Preferences]
 	#─────────────────────────────────────────────────────────────────────────
-	# Sets all temperatures to be displayed in Celsius
+	# Displays temperature in Celsius instead of Fahrenheit
 	# ⌄ 
 	Celsius = true
 	#─────────────────────────────────────────────────────────────────────────
@@ -155,4 +107,70 @@
 	# Can be one of "drink", "pour", or "none"
 	# ⌄ 
 	"Waterskin Secondary Action" = "none"
+
+[HUD]
+	#─────────────────────────────────────────────────────────────────────────
+	# Tweaks the layout of the hotbar to make foom for Cold Sweat UI elements
+	# ⌄ 
+	"Custom hotbar layout" = true
+	#─────────────────────────────────────────────────────────────────────────
+	# Controls whether UI elements will shake when in critical conditions
+	# ⌄ 
+	"Icon Bobbing" = true
+	#─────────────────────────────────────────────────────────────────────────
+	# The position of the body temperature icon relative to default
+	# ⌄ 
+	"Body Temperature Icon Offset" = [0, 0]
+	#─────────────────────────────────────────────────────────────────────────
+	# Enables the body temperature icon above the hotbar
+	# ⌄ 
+	"Show Body Temperature Icon" = true
+	#─────────────────────────────────────────────────────────────────────────
+	# Moves the body temperature icon to make way for the advanced readout when a thermometer is equipped
+	# ⌄ 
+	"Move Body Icon For Advanced Info" = true
+	#─────────────────────────────────────────────────────────────────────────
+	# The position of the body temperature readout relative to default
+	# ⌄ 
+	"Body Temperature Readout Offset" = [0, 0]
+	#─────────────────────────────────────────────────────────────────────────
+	# Enables the body temperature readout above the hotbar
+	# ⌄ 
+	"Show Body Temperature Readout" = true
+	#─────────────────────────────────────────────────────────────────────────
+	# The position of the world temperature gauge relative to default
+	# ⌄ 
+	"World Temperature UI Offset" = [0, 0]
+	#─────────────────────────────────────────────────────────────────────────
+	# Enables the world temperature gauge next to the hotbar
+	# ⌄ 
+	"Show World Temperature Gauge" = true
+	#─────────────────────────────────────────────────────────────────────────
+	# The position of the food effects panel relative to default
+	# ⌄ 
+	"Food Effects UI Offset" = [0, 0]
+	#─────────────────────────────────────────────────────────────────────────
+	# Enables the food effects panel
+	# ⌄ 
+	"Show Food Effects" = true
+
+[Tooltips]
+	#─────────────────────────────────────────────────────────────────────────
+	# Determines when armor insulation tooltips should show
+	# One of:
+	# • "always": Always show insulation tooltip
+	# • "if_present": Show insulation tooltip only if the item has insulation (default)
+	# • "on_shift": Show insulation tooltip if shift is held
+	# • "shift_and_present": Show insulation if shift is held AND the armor has any
+	# • "never": Never show insulation tooltips
+	# ⌄ 
+	"Insulation Tooltip Visibility" = "if_present"
+	#─────────────────────────────────────────────────────────────────────────
+	# Always expand collapsible tooltips
+	# ⌄ 
+	"Expand Tooltips" = false
+	#─────────────────────────────────────────────────────────────────────────
+	# Show keybind hints in tooltips, i.e. "Hold [Shift]"
+	# ⌄ 
+	"Enable Hints" = true
 

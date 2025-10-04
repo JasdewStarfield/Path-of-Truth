@@ -182,7 +182,9 @@ EntityJSEvents.addGoalSelectors('minecraft:warden', e => {
                 if (mob.age % 400 == 0) {
                     return mob.initiateCastSpell(SpellRegistry.EVASION_SPELL.get(), 5)//末影闪避
                 } 
-
+                if (mob.age % 200 == 0) {
+                    return mob.initiateCastSpell(SpellRegistry.GREATER_HEAL_SPELL.get(), 1)//满血治疗
+                }
             }
         }
     )

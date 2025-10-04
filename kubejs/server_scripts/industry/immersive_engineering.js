@@ -394,9 +394,9 @@ ServerEvents.recipes(event => {
     event.remove({id:"immersiveengineering:crafting/component_iron"})
 
     //烈焰蛋糕
-    event.remove({ id: 'sob:sob/crafting/cinder_dough' })
-    event.remove({ id: 'sob:sob/splashing/cinder_flour' })
-    event.remove({ id: 'sob:sob/mixing/cinder_dough_by_mixing' })
+    event.remove({ id: 'sob:crafting/cinder_dough' })
+    event.remove({ id: 'sob:splashing/cinder_flour' })
+    event.remove({ id: 'sob:mixing/cinder_dough' })
     event.remove({ id: 'create:compacting/blaze_cake' })
     event.remove({ id: 'create:filling/blaze_cake' })
     event.recipes.create.mixing('sob:cinder_dough', [Fluid.of('minecraft:lava',500),'create:cinder_flour','irons_spellbooks:cinder_essence','#forge:dusts/horizonite']).heated()
@@ -533,19 +533,38 @@ ServerEvents.recipes(event => {
         'ABA',
         'CAD'  
     ], {
+        B: 'kubejs:steel_casing',
+        A: '#forge:plates/industrial_iron',
+        D: 'createaddition:capacitor',
+        C: 'botania:red_string'
+    })
+    event.recipes.create.sequenced_assembly([
+        'immersiveengineering:rs_engineering'
+        ], 'kubejs:steel_casing', [
+        event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/industrial_iron']),
+        event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_heavy_engineering', 'createaddition:capacitor']),
+        event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_heavy_engineering', 'botania:red_string']),
+        event.recipes.createDeploying('kubejs:incomplete_heavy_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/industrial_iron'])
+    ]).transitionalItem('kubejs:incomplete_rs_engineering').loops(1)
+
+    event.shaped('kubejs:sensory_engineering', [ 
+        'DAC', 
+        'ABA',
+        'CAD'  
+    ], {
         B: 'createutilities:void_casing',
         A: '#forge:plates/zinc',
         D: 'minecraft:ender_eye',
         C: 'createutilities:graviton_tube'
     })
     event.recipes.create.sequenced_assembly([
-        'immersiveengineering:rs_engineering'
+        'kubejs:sensory_engineering'
         ], 'createutilities:void_casing', [
-        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/zinc']),
-        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', 'minecraft:ender_eye']),
-        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_rs_engineering', 'createutilities:graviton_tube']),
-        event.recipes.createDeploying('kubejs:incomplete_rs_engineering', ['kubejs:incomplete_light_engineering', '#forge:plates/zinc'])
-    ]).transitionalItem('kubejs:incomplete_rs_engineering').loops(1)
+        event.recipes.createDeploying('kubejs:incomplete_sensory_engineering', ['kubejs:incomplete_sensory_engineering', '#forge:plates/zinc']),
+        event.recipes.createDeploying('kubejs:incomplete_sensory_engineering', ['kubejs:incomplete_sensory_engineering', 'minecraft:ender_eye']),
+        event.recipes.createDeploying('kubejs:incomplete_sensory_engineering', ['kubejs:incomplete_sensory_engineering', 'createutilities:graviton_tube']),
+        event.recipes.createDeploying('kubejs:incomplete_sensory_engineering', ['kubejs:incomplete_sensory_engineering', '#forge:plates/zinc'])
+    ]).transitionalItem('kubejs:incomplete_sensory_engineering').loops(1)
 
     //塑料
     event.remove({id:"immersiveengineering:bottling/duroplast_plate"})

@@ -2,6 +2,10 @@
 [Debug]
 	#Info used for development.
 	DebugInfo = false
+	#Render snow edge overlay on neighbors for smoother snowy transitions.
+	SmoothSnowyEdges = false
+	FrozenWater = false
+	FrozenWaterBreakable = true
 
 [GUI]
 	#Displays the season and humidity levels suitable for growing crops.
@@ -13,64 +17,70 @@
 	#When enabled, chunks will be reloaded regularly to fix rendering glitches, but this may impact performance.
 	ForceChunkRenderUpdate = true
 	#Enhanced reload, which will refresh all sections periodically.
-	EnhancementChunkRenderUpdate = true
-	#Use Minecraft’s default lighting rules to decide if snow should fall.
-	UseVanillaCheck = false
-	#Snow cover updates with a delay after block changes, making it look more natural. This uses more performance. Do not enable if the common config’s 'RealisticSnowyChange' is also enabled.
-	RealisticSnowyChange = true
-	#Blocks underneath fences etc. may also be covered with snow.
-	SnowUnderFence = true
-	#The colors of the grass and leaves change with the time of year.
-	SeasonalGrassColorChange = true
-	#In spring, grass blocks will occasionally have small flowers on them.
-	FlowerOnGrass = true
+	EnhancementChunkRenderUpdate = false
 	#Whether to reset the renderer after waking up.
 	ResetRendererAfterSleep = false
-	#Blocks under tree may also be covered with snow, note that this is only a client-side effect.
-	snowUnderTree = true
+	#Changes grass and leaf colors with seasons visually.
+	SeasonalGrassColorChange = true
+	#Birch, spruce, and mangrove leaves colors also have seasonal changes.
+	SeasonalColorChangeExtend = true
+	#When applying changes, perform mean calculation based on the percentage progress of the solar term instead of using a fixed value.
+	SmootherSeasonalGrassColorChange = true
+	#In spring, grass blocks will occasionally have small flowers on them.
+	FlowerOnGrass = true
 	#Cull the top face if snowy model is applied.
-	TopFaceCulling = false
+	CullTopFaceWithSnow = false
+	#Use Minecraft’s default lighting rules to decide if snow should fall.
+	UseVanillaSnowCheck = false
+	#Blocks underneath solid blocks etc. may also be covered with snow.
+	SnowUnderShadow = false
 
 [Sound]
 	#Ambient Sound.
 	Sound = true
 
 [Particle]
-	#See butterflies in the spring, fireflies in the summer, and fallen leaves.
-	SeasonParticle = true
 	#In spring, butterflies fly over the flowers.
 	Butterfly = true
-	#The difficulty multiplier of butterfly particles, the value should be between 1-10000, the default is 10.
-	#Range: 1 ~ 10000
-	butterflySpawnWeight = 10
 	#Leaf blocks will drop leaves, and most frequently in the fall.
 	FallenLeaves = true
-	#The difficulty multiplier of fallen leaves particles, the value should be between 1-10000, the default is 10.
-	#Range: 1 ~ 10000
-	FallenLeavesDropWeight = 10
 	#In the summer evenings, you can see fireflies beside the flowers.
 	Firefly = true
-	#The difficulty multiplier of firefly particles, the value should be between 1-10000, the default is 10.
-	#Range: 1 ~ 10000
-	FireflySpawnWeight = 10
 	#When the grass and trees turn yellow, the wild geese fly south.
 	WildGoose = true
-	#The difficulty multiplier of wild geese particles, the value should be between 1-10000, the default is 10.
-	#Range: 1 ~ 10000
-	WildGooseSpawnWeight = 10
 	#When the season core block is active, emits soft light particles to indicate the growth environment.
 	SeasonGreenhouse = true
 	#Number of particles emitted by the season greenhouse effect. The higher the value, the denser the effect.
 	#Range: 0 ~ 160
 	SeasonGreenhouseParticleSpawnCount = 30
+	#See butterflies in the spring, fireflies in the summer, and fallen leaves.
+	SeasonalParticles = true
+	#The interval/delay of butterfly particles. Higher values make butterflies appear less frequently.
+	#Range: 1 ~ 10000
+	ButterflySpawnDelay = 10
+	#The interval/delay of fallen leaf particles. Higher values make butterflies appear less frequently.
+	#Range: 1 ~ 10000
+	FallenLeavesDropDelay = 10
+	#The interval/delay of firefly particles. Higher values make butterflies appear less frequently.
+	#Range: 1 ~ 10000
+	FireflySpawnDelay = 10
+	#The interval/delay of wild goose particles. Higher values make butterflies appear less frequently.
+	#Range: 1 ~ 10000
+	WildGooseSpawnDelay = 10
 
 [Weather]
 	#Radius (in blocks) around the player within which weather is sampled and averaged to create smoother local weather transitions.
 	#Range: 1 ~ 80
-	WeatherBufferDistance = 16
+	WeatherBufferDistance = 6
 	#Speed at which local weather transitions occur. Higher values mean faster transitions.
 	#Range: 8.0E-4 ~ 0.08
 	WeatherTransitionSpeed = 0.008
 	#Whether to apply stronger sampling weight in the direction the player is facing.
 	WeatherFrontBias = true
+
+[Compat]
+
+	[Compat.Oculus]
+		#Unify the shading and surface parameters of snow-covered blocks.
+		UnifiedSnowyBlockShading = true
 

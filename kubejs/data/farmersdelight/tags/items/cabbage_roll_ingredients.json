@@ -1,0 +1,24 @@
+{
+    "replace": false,
+    "values": [
+        {"id": "alexsmobs:kangaroo_meat","required": false},
+        {"id": "alexsmobs:moose_ribs","required": false},
+        {"id": "alexsmobs:lobster_tail","required": false},
+
+        {"id": "alexsdelight:kangaroo_shank","required": false},
+        {"id": "alexsdelight:loose_moose_rib","required": false},
+        {"id": "alexsdelight:raw_bison","required": false},
+        {"id": "alexsdelight:bison_mince","required": false},
+        {"id": "alexsdelight:raw_bunfungus","required": false},
+        {"id": "alexsdelight:raw_bunfungus_drumstick","required": false},
+
+        {"id": "autumnity:turkey","required": false},
+        {"id": "autumnity:turkey_piece","required": false},
+
+        {"id": "miners_delight:cave_carrot","required": false},
+        
+        {"id": "undergarden:raw_dweller_meat","required": false},
+
+        {"id": "galosphere:lichen_cordyceps","required": false}
+    ]
+  }

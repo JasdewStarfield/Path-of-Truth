@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        {"id": "undergarden:raw_gwibling","required": false},
+
+        {"id": "alexsmobs:raw_catfish","required": false},
+        
+        {"id": "alexsdelight:raw_catfish_slice","required": false}
+    ]
+  }

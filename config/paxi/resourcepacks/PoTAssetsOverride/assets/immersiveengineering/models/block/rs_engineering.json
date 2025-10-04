@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "createutilities:block/void_casing",
+		"0": "kubejs:block/casing/steel/steel_casing_single",
 		"1": "immersiveengineering:block/metal_decoration/redstone_engineering",
-		"particle": "createutilities:block/void_casing"
+		"particle": "kubejs:block/casing/steel/steel_casing_single"
 	},
 	"elements": [
 		{

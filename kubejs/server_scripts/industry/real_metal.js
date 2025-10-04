@@ -289,6 +289,7 @@ ServerEvents.recipes(event => {
       }
     })
     event.smelting("#blue_skies:ingots/" + material, "#forge:dusts/" + material)
+    event.blasting("#blue_skies:ingots/" + material, "#forge:dusts/" + material)
   }
   let blueSkiesIngotNoSmelting = (material) => {
     event.custom({
@@ -375,6 +376,7 @@ ServerEvents.recipes(event => {
       "secondaries": []
     })
     event.smelting("#blue_skies:gems/" + material, "#forge:dusts/" + material)
+    event.blasting("#blue_skies:gems/" + material, "#forge:dusts/" + material)
   }
   //镰鼬铁
   blueSkiesIngot("ventium")
@@ -455,6 +457,8 @@ ServerEvents.recipes(event => {
     })
     event.smelting("#forge:ingots/" + material, "#forge:dusts/" + material)
     event.smelting("#forge:ingots/" + material, "kubejs:crushed_" + material + "_ore")
+    event.blasting("#forge:ingots/" + material, "#forge:dusts/" + material)
+    event.blasting("#forge:ingots/" + material, "kubejs:crushed_" + material + "_ore")
     event.recipes.create.pressing('#forge:plates/' + material, '#forge:ingots/' + material)
     event.custom({
       "type": "immersiveengineering:metal_press",

@@ -1,0 +1,40 @@
+
+#Game Settings
+[settings]
+	#At what level of Tipsy should the chat scramble?
+	#Range: 1 ~ 10
+	levelChatScramble = 3
+	#At what level of Tipsy should signs scramble?
+	#Range: 1 ~ 10
+	levelSignScramble = 3
+	#At what level of Tipsy should nametags scramble?
+	#Range: 1 ~ 10
+	levelNameScramble = 3
+
+	#Keg
+	[settings.keg]
+		#How much fluid (in millibuckets) can the Keg hold?
+		#Range: 1 ~ 10000
+		kegCapacity = 1000
+		#How many cold blocks are required for a cold temperature in the Keg?
+		#Range: 1 ~ 10
+		kegCold = 2
+		#How many cold blocks are required for a chilly temperature in the Keg?
+		#Range: 1 ~ 10
+		kegChilly = 1
+		#How many hot blocks are required for a warm temperature in the Keg?
+		#Range: 1 ~ 10
+		kegWarm = 1
+		#How many hot blocks are required for a hot temperature in the Keg?
+		#Range: 1 ~ 10
+		kegHot = 2
+		#Should the biome temperature influence the temperature in the Keg?
+		kegBiomeTemp = true
+		#Should the dimension temperature influence the temperature in the Keg?
+		kegDimTemp = true
+
+	#Recipe book
+	[settings.recipe_book]
+		#Should the Keg have a Recipe Book available on its interface?
+		enableRecipeBookKeg = true
+

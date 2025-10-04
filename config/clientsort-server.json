@@ -1,0 +1,36 @@
+{
+  "options": {
+    "validationActiveSingleplayer": false,
+    "validationActiveServer": true,
+    "validateItemType": true,
+    "validateStackSize": true,
+    "validateStackSizeThreshold": 32,
+    "alwaysLogUnexpectedResults": true,
+    "classPolicies": {
+      "com.simibubi.create.content.equipment.toolbox.ToolboxMenu": {
+        "className": "com.simibubi.create.content.equipment.toolbox.ToolboxMenu",
+        "sortEnabled": false,
+        "stackFillEnabled": false,
+        "transferEnabled": false
+      },
+      "com.tiviacz.travelersbackpack.inventory.menu.BackpackSettingsMenu": {
+        "className": "com.tiviacz.travelersbackpack.inventory.menu.BackpackSettingsMenu",
+        "sortEnabled": false,
+        "stackFillEnabled": false,
+        "transferEnabled": false
+      },
+      "com.tom.storagemod.menu.CraftingTerminalMenu": {
+        "className": "com.tom.storagemod.menu.CraftingTerminalMenu",
+        "sortEnabled": false,
+        "stackFillEnabled": false,
+        "transferEnabled": false
+      },
+      "com.tom.storagemod.menu.StorageTerminalMenu": {
+        "className": "com.tom.storagemod.menu.StorageTerminalMenu",
+        "sortEnabled": false,
+        "stackFillEnabled": false,
+        "transferEnabled": false
+      }
+    }
+  }
+}

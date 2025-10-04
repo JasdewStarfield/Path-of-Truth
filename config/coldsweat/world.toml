@@ -98,7 +98,8 @@
 	"Block Temperatures" = [
 	    ["cold_sweat:boiler", 0.27, 7, "mc", 0.88, "lit=true", "", 4],
 	    ["cold_sweat:icebox", -0.27, 7, "mc", 0.88, "frosted=true", "", 0],
-	    ["#minecraft:campfires", 0.476, 7, "mc", 0.9, "lit=true", " ", 8],
+	    ["minecraft:campfire,createnuclear:enriching_campfire", 0.476, 7, "mc", 0.9, "lit=true", " ", 8],
+	    ["minecraft:soul_campfire,netherexp:ancient_campfire", -0.476, 7, "mc", 0.9, "lit=true", " ", -8],
 	    ["minecraft:packed_ice,outer_end:glowing_ancient_ice,outer_end:glowing_ancient_ice_column,outer_end:glowing_ancient_ice_cap", -0.25, 4, "mc", 1.0, "", "", -0.7],
 	    ["minecraft:blue_ice,outer_end:ancient_ice,outer_end:ancient_ice_column,outer_end:ancient_ice_cap", -0.35, 4, "mc", 1.4, "", "", -0.7],
 	    ["#minecraft:ice,collectorsreap:lime_ice_cream_block,collectorsreap:pomegranate_ice_cream_block", -0.15, 4, "mc", 0.6, "", "", -0.7],

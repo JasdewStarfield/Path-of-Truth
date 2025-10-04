@@ -336,6 +336,7 @@ cubes_without_borders = "client"
 clickthrough = "client"
 colorwheel = "client"
 colorwheel_patcher = "client"
+realisticnametag = "client"
 
 [Debug]
 debugForceSide = "default"

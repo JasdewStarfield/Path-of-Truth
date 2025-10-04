@@ -30,7 +30,7 @@
 	quests: [
 		{
 			dependencies: ["193F465F65BC13F1"]
-			description: ["{ftbquests.chapter.7C70C5EA37137857.quest1.description1}"]
+			description: ["很显然，你成功折跃了。也许留一个传送点是比较明智的选择？"]
 			hide_until_deps_complete: true
 			id: "15E666BAE38566D8"
 			rewards: [{
@@ -38,19 +38,19 @@
 				item: "tide:chorus_fishing_bobber"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest1.subtitle}"
+			subtitle: "在那开遍紫颂花的原野上……"
 			tasks: [{
 				id: "2EEDEF968ECEA456"
 				item: "minecraft:chorus_flower"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.7C70C5EA37137857.quest1.title}"
+			title: "另一层末地"
 			x: 0.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["280307C036B9B6E7"]
-			description: ["{ftbquests.chapter.7C70C5EA37137857.quest2.description1}"]
+			description: ["剧毒巢穴的最下层，蜘蛛女王欢迎你）"]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -72,7 +72,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest2.subtitle}"
+			subtitle: "讨厌的大蜘蛛"
 			tasks: [
 				{
 					id: "057162BE11E594E2"
@@ -101,13 +101,13 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.7C70C5EA37137857.quest2.title}"
+			title: "恒晓的破晓"
 			x: -2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["7A6D4E28C28302FE"]
-			description: ["{ftbquests.chapter.7C70C5EA37137857.quest3.description1}"]
+			description: ["自然城堡的最上层，大树守卫等着你）"]
 			hide_until_deps_complete: true
 			icon: {
 				Count: 1
@@ -129,7 +129,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest3.subtitle}"
+			subtitle: "砍树，对吧"
 			tasks: [
 				{
 					id: "387A50530A0BE1BB"
@@ -158,15 +158,15 @@
 					type: "item"
 				}
 			]
-			title: "{ftbquests.chapter.7C70C5EA37137857.quest3.title}"
+			title: "永昼的夜晚"
 			x: 2.0d
 			y: 0.0d
 		}
 		{
 			dependencies: ["15E666BAE38566D8"]
 			description: [
-				"{ftbquests.chapter.7C70C5EA37137857.quest4.description1}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest4.description2}"
+				"钓鱼王之证（确信"
+				"证明一下你是末地最强钓鱼佬怎么样）"
 			]
 			id: "10CAF35A5551DC8F"
 			rewards: [{
@@ -174,24 +174,24 @@
 				item: "sophisticatedbackpacks:advanced_void_upgrade"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest4.subtitle}"
+			subtitle: "从附加效果就可以看出来……"
 			tasks: [{
 				id: "759962C6923883ED"
 				item: "tide:voidseeker"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.7C70C5EA37137857.quest4.title}"
+			title: "最神秘的鱼"
 			x: 0.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["15E666BAE38566D8"]
 			description: [
-				"{ftbquests.chapter.7C70C5EA37137857.quest5.description1}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest5.description2}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest5.description3}"
+				"复刻怪会变成你的样子并且和你有完全一样的装备，然后和你对战）"
+				"这些凝胶也是后续你&c塑造高级生命&r的材料，记得多收集一些）"
+				"八个复刻凝胶可以&5复刻几乎任何有耐久的装备&r（包括其附魔），但是实际耐久度是0，需要自己修复。"
 				""
-				"{ftbquests.chapter.7C70C5EA37137857.quest5.description4}"
+				"&o&7*如果你输了你可以说“我被自己打死了”（笑）&r&r"
 			]
 			id: "10D75D0FB345A298"
 			rewards: [{
@@ -199,23 +199,23 @@
 				item: "botania:cosmetic_anaglyph_glasses"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest5.subtitle}"
+			subtitle: "谜题：镜像"
 			tasks: [{
 				id: "60F4CB02290B867E"
 				item: "alexsmobs:mimicream"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.7C70C5EA37137857.quest5.title}"
+			title: "我打我自己"
 			x: -1.5d
 			y: 1.5d
 		}
 		{
 			dependencies: ["15E666BAE38566D8"]
 			description: [
-				"{ftbquests.chapter.7C70C5EA37137857.quest6.description1}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest6.description2}"
+				"虽然在本整合包中鞘翅有许多替代手段，但在&b通往终末的仪式&r中，它仍是重要的材料。"
+				"鞘翅的获取方式和原版无异——你都需要找到&d末地船&r。然而，&5带有重生方尖碑的末地船&r不会生成鞘翅……取而代之的是一个&c毁灭催化器&r。当然龙首还是会有的。"
 				""
-				"{ftbquests.chapter.7C70C5EA37137857.quest6.description3}"
+				"&m&o&7这里不建议触碰毁灭催化器，否则你可能会瞬间回家……字面意义的&r&r&r"
 			]
 			id: "1E764C1B8E3B46A9"
 			rewards: [{
@@ -223,7 +223,7 @@
 				item: "minecraft:respawn_anchor"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest6.subtitle}"
+			subtitle: "熟悉吗？熟悉就对了"
 			tasks: [{
 				id: "55B7CEFF247B0C49"
 				item: {
@@ -246,8 +246,8 @@
 		{
 			dependencies: ["3B3B39FE9A88ED71"]
 			description: [
-				"{ftbquests.chapter.7C70C5EA37137857.quest7.description1}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest7.description2}"
+				"当你找到危机四伏的冰冻深海后，躲开所有危险的鱼类，找到合适的冰山并吹响这一号角，已是亡者的船长将浮现于你的身侧。迷人，但是也危险。"
+				"船长的具体机制参见“【挑战】传说之路”章节。"
 			]
 			hide_until_deps_complete: true
 			id: "1C64E7ABAAD62C45"
@@ -257,78 +257,78 @@
 				item: "aquamirae:ship_graveyard_echo"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest7.subtitle}"
+			subtitle: "听啊，是大海在哭泣"
 			tasks: [{
 				id: "66E909EF18B8F4E7"
 				item: "aquamirae:shell_horn"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.7C70C5EA37137857.quest7.title}"
+			title: "船长……"
 			x: 0.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["11E3776CE5E23255"]
 			description: [
-				"{ftbquests.chapter.7C70C5EA37137857.quest8.description1}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest8.description2}"
+				"使徒，一种难以想象的黑暗生物。他们拥有从&4下界和亡者之地&r带来的强大力量，这力量流淌于他们的&c血液&r当中。如果在下界召唤并击败，你可以获得&b更加纯净的血液&r。"
+				"通过&5安息仪式&r，你可以将其召唤出来……然后掠夺它的力量。"
 				"{@pagebreak}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest8.description3}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest8.description4}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest8.description5}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest8.description6}"
+				"使徒拥有320点血量与12点护甲，同时具有6点的超高护甲韧性与75%的抗击退。它具有&9每次受伤最高20点&r的特性，在下界这一特性还会被加强到10点。"
+				"使徒的攻击方式包括&b6点的法术伤害&r和&012-16点的死亡之箭伤害&r。使徒的生命值越低，射箭速度越快，且&d箭矢击中后会为其回血（一阶段1点，二阶段4点）&r。"
+				"如果使徒被方块困住，它会&5传送&r到64单位内的玩家附近。"
+				"&m&o&7（但你可以和他一起在黑曜石房间内激♂情决斗）&r&r&r"
 				"{@pagebreak}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest8.description7}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest8.description8}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest8.description9}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest8.description10}"
+				"使徒会随机转化半径32单位内的所有村民类生物为&7灾厄村民&r，范围内的&7灾厄村民&r死亡后会转化为使徒的狱魂。范围内的水将对其中的生物&6每秒造成1点火焰伤害&r，但你可以&e佩戴焰护之戒&r后与其在水中缠斗。"
+				"&c短时间高频受到伤害&r将会导致使徒&5瞬移&r，建议使用&4单次高输出&r的手段。"
+				"使徒在半血后将会暂时无敌，血量回满并进入第二阶段，&9（主世界）天气会强制变为雷雨，并开始坠落下界流星，爆炸威力等同于苦力怕。&r"
+				"使徒会召唤各类仆从来保护自己，建议携带AOE法术并&c优先处决黑曜石柱&r，因其可以给予使徒&d无敌和生命恢复&r。"
 				"{@pagebreak}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest8.description11}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest8.description12}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest8.description13}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest8.description14}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest8.description15}"
+				"使徒对铁魔法的&2自然学派&r拥有50％的法术抗性，对&6火焰学派&r与&c鲜血学派&r免疫，但对&e神圣学派&r拥有75％的易伤。"
+				"使徒召唤的随从伤害&6几乎全部为火焰伤害&r。通过&e佩戴焰护之戒（作者实测戒指优先级甚至高于灼烧魔印）&r可以完成大幅度的伤害减免。"
+				"使徒的头衔&d象征了部分其具有的力量&r，可以通过字面意思&3理解并加以规避&r。"
+				"在仆从足够多的时候，使徒会召唤&c危险的燃烧龙卷风&r，尽量清除它的仆从。"
+				"仆从和下界流星会造成&3大规模的爆炸&r，所以最好找一个结实的地方……"
 			]
 			icon: "goety:unholy_hat"
 			id: "3DA20497E91418C0"
-			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest8.subtitle}"
+			subtitle: "自烈焰中，亡者归来"
 			tasks: [{
 				id: "2C8A65676736BA94"
 				item: "goety:unholy_blood"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.7C70C5EA37137857.quest8.title}"
+			title: "下界代言人"
 			x: -1.5d
 			y: -1.5d
 		}
 		{
 			dependencies: ["11E3776CE5E23255"]
 			description: [
-				"{ftbquests.chapter.7C70C5EA37137857.quest9.description1}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest9.description2}"
+				"通过在林地府邸中使用这一卷轴，你可以召唤&5灾厄村民的宰相&r。"
+				"然而宰相拥有&c相当强大的魔法力量&r，因而建议至少科技与魔法推进到第四章节再来挑战。"
 				""
-				"{ftbquests.chapter.7C70C5EA37137857.quest9.description3}"
+				"&o&7冒犯的前提是拥有取而代之的实力&r&r。"
 				"{@pagebreak}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest9.description4}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest9.description5}"
+				"灾厄宰相拥有300点生命值，并且是&5灵魂红宝石的唯一来源&r。他通常挥舞着一把铁剑（有时铁剑是附魔的），&b可以像恼鬼一样穿过障碍物&r。他会用剑冲向目标进行近战攻击，并施放各种咒语。"
+				"施法时，灾厄宰相将获得&a临时“维齐尔护甲”&r，使&2自身受到的所有伤害减半&r。宰相单次受到的伤害上限为20点。"
 				"{@pagebreak}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest9.description6}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest9.description7}"
-				"{ftbquests.chapter.7C70C5EA37137857.quest9.description8}"
+				"灾厄宰相对铁魔法的&e神圣学派&r和&7唤魔学派&r拥有&c50％的法术抗性&r。"
+				"宰相会通过&b召唤尖牙和飞剑&r进行攻击，但伤害最高的是带有铁剑的&a近战攻击&r。"
+				"在灾厄宰相的生命值下降到最大生命值一半以下时，宰相&3会召唤两个（无敌的）宰相之影&r。宰相之影不会释放尖牙攻击，当灾厄宰相释放尖牙攻击时，宰相之影会环绕灾厄宰相，并且&6对宰相的敌人投掷飞剑&r。"
 			]
 			icon: "goety:grand_turban"
 			id: "44854234424A8DAE"
-			subtitle: "{ftbquests.chapter.7C70C5EA37137857.quest9.subtitle}"
+			subtitle: "宰相，我来加冕为王"
 			tasks: [{
 				id: "7723049264BC1C9C"
 				item: "goety:dark_scroll"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.7C70C5EA37137857.quest9.title}"
+			title: "统领灾厄"
 			x: 1.5d
 			y: -1.5d
 		}
 	]
-	subtitle: ["{ftbquests.chapter.7C70C5EA37137857.subtitle0}"]
-	title: "{ftbquests.chapter.7C70C5EA37137857.title}"
+	subtitle: ["At the Very End"]
+	title: "4A 世界尽头"
 }
