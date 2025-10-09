@@ -89,6 +89,7 @@
   },
   "eclipticseasons": {
     "animal": true,
+    "cauldron": true,
     "crop": true,
     "snowy_status": true,
     "crop.shift_hint": true

@@ -149,6 +149,8 @@
 	DisableUniqueBiomeTagsRebinding = false
 	#Set to false to disable tag which stops block from snowy is tagged with "eclipticseasons:snow_overlay_cannot_survive_on".
 	DisableSnowOverlayControlTag = false
+	#Disable cauldron enhancement, they will no longer turn into snow-filled or ice-filled cauldrons when it snows.
+	DisableIceOrSnowCauldron = false
 
 [Map]
 	#The map color of blocks will change during snow.

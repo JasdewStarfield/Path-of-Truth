@@ -1,0 +1,7 @@
+
+#Stress impact configurations for fluid
+#[in Stress Units]
+[impact]
+	centrifugal_pump = 8.0
+	pipette = 2.0
+
