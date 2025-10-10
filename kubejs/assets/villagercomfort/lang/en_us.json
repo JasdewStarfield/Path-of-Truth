@@ -13,6 +13,6 @@
     "villagercomfort.ext.target.WORK_DISTANCE": "Work Distance",
     "villagercomfort.ext.target.DAYS_OUTSIDE": "Days Outside",
     "villagercomfort.ext.target.DAYS_WITHOUT_ZOMBIE": "Days Without Threat",
-    "villagercomfort.ext.target.DAYS_WITHOUT_SLEEP": "!!GLITCHED!! Days Without Sleep",
+    "villagercomfort.ext.target.DAYS_WITHOUT_SLEEP": "Days Without Sleep",
     "villagercomfort.ext.summary": "Total comfort: %s"
 }
