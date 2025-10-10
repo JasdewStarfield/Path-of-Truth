@@ -12,5 +12,6 @@
     "villagercomfort.ext.target.WORK_DISTANCE": "上班路程",
     "villagercomfort.ext.target.DAYS_OUTSIDE": "外出天数",
     "villagercomfort.ext.target.DAYS_WITHOUT_ZOMBIE": "无威胁天数",
+    "villagercomfort.ext.target.DAYS_WITHOUT_SLEEP": "无睡眠天数",
     "villagercomfort.ext.summary": "总舒适度：%s"
 }
