@@ -6,6 +6,7 @@
 	SmoothSnowyEdges = false
 	FrozenWater = false
 	FrozenWaterBreakable = true
+	frozenWaterCheckLight = true
 
 [GUI]
 	#Displays the season and humidity levels suitable for growing crops.

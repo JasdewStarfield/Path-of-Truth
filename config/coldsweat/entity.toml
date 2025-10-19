@@ -98,6 +98,11 @@
 	# Format: [interval, cooldown, chance]
 	# ⌄ 
 	"Chameleon Shedding Timings" = [100, 36000, 0.1]
+	#─────────────────────────────────────────────────────────────────────────
+	# If true, chameleons will automatically shed their skin over time
+	# If false, chameleons will only shed when a player interacts with them
+	# ⌄ 
+	"Chameleons Shed Automatically" = false
 
 ["Mob Spawning"]
 	#─────────────────────────────────────────────────────────────────────────//v

@@ -147,10 +147,10 @@
 	# ⌄ 
 	"Cold Soul Fire" = true
 	#─────────────────────────────────────────────────────────────────────────
-	# A temperature offset applied when the sky is overcast
+	# A temperature offset applied when in complete shade or when the sky is overcast
 	# └── Format: [offset, *units]
 	# ⌄ 
-	"Overcast Temperature Offset" = [-0.35, "mc"]
+	"Shade Temperature Offset" = [-0.2, "mc"]
 
 #"Thermal sources" are blocks that have a smokestack and give frigidness/warmth, like the hearth, boiler, and iceobx
 ["Thermal Sources"]

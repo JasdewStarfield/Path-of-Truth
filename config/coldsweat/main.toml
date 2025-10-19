@@ -7,7 +7,7 @@
 	#─────────────────────────────────────────────────────────────────────────
 	# The current version of Cold Sweat. This is used by the auto-updater
 	# ⌄ 
-	Version = "2.4-b05a"
+	Version = "2.4-b05d"
 	#─────────────────────────────────────────────────────────────────────────
 	# Allows Cold Sweat's configs to be automatically updated with new additions & formatting changes
 	# ⌄ 
@@ -78,6 +78,7 @@
 	["Temperature Effects".Acclimation]
 		#─────────────────────────────────────────────────────────────────────────
 		# The speed at which the player acclimates to hot or cold environments
+		# Represented as MC units per minute, so a value of 0.1 = 2.5C or 4.5F per minute
 		# ⌄ 
 		#Range: 0.0 ~ Infinity
 		"Acclimation Speed" = 0.0011
