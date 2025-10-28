@@ -80,6 +80,8 @@ buttonAlignment = "RIGHT"
 		dynamicCrosshairMaxScale = 8.0
 		#If true, renders the player's arms when holding a gun
 		renderArms = true
+		#If true, enables a performance mode for the sulfur smoke particle which reduces the max number of particles.
+		enablePerformanceSulfurCloud = false
 
 	#Properties relating to particles
 	[client.particle]

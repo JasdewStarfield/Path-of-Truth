@@ -337,6 +337,8 @@ clickthrough = "client"
 colorwheel = "client"
 colorwheel_patcher = "client"
 realisticnametag = "client"
+certain_questing_additions = "client"
+generalfeedback = "client"
 
 [Debug]
 debugForceSide = "default"

@@ -1,0 +1,5 @@
+
+["Render Radius"]
+	#displayFeedbackButtonOnDeathScreen
+	enable = true
+

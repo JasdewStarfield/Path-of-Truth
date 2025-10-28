@@ -12,6 +12,7 @@ lavaBucketUseParticles = true
 powderSnowBucketUseParticles = true
 lingeringPotionClouds = true
 splashPotionClouds = true
+structureVoidItemMarker = true
 
 [itemRarity]
 particlesDisplayType = "NOT_COMMON"
