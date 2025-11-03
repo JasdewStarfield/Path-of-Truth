@@ -11,7 +11,7 @@
 #─────────────────────────────────────────────────────────────────────────
 #─────────────────────────────────────────────────────────────────────────
 # Defines items that can be used as fuel
-# └── Format: [["item_id", amount], ["item_id", amount], ...etc]
+# └── Format: [["item_id", amount], [...], etc]
 # • item_id: The item's ID (i.e. "minecraft:coal").
 # • amount: The amount of fuel the item provides. Higher values mean the item burns longer
 # ⌄ 
@@ -60,7 +60,7 @@
 ["Soulspring Lamp"]
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Defines items that the Soulspring Lamp can use as fuel
-	# └── Format: [["item_id", amount], ["item_id", amount], ...etc]
+	# └── Format: [["item_id", amount], [...], etc]
 	# • item_id: The item's ID (i.e. "cold_sweat:soul_sprout").
 	# • amount: The amount of fuel the item provides. Higher values mean the item burns longer
 	# ⌄ 
@@ -79,11 +79,12 @@
 [Insulation]
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Defines the items that can be used for insulating armor in the Sewing Table
-	# ├── Format: [["item_id", cold, hot, *"static", *"{nbt}", *fillSlots], ["item_id", amount, adaptSpeed, "adaptive", *"{nbt}", *fillSlots], ...etc]
+	# ├── Format (Static): [["item_id", cold, heat, *"static", *"{nbt}", *fillSlots], [...], etc]
+	# ├── Format (Adaptive): [["item_id", amount, adaptSpeed, "adaptive", *"{nbt}", *fillSlots], [...], etc]
 	# └── [* = optional]
 	# • item_id: The item's ID (i.e. "minecraft:iron_ingot").
 	# • cold: The cold insulation the item provides.
-	# • hot: The heat insulation the item provides.
+	# • heat: The heat insulation the item provides.
 	# • amount: The amount of insulation the item provides.
 	# • adaptSpeed: The speed at which the insulation adapts to the environment.
 	# • *static/adaptive: The type of insulation the item provides. Defaults to "static" if unset
@@ -151,7 +152,7 @@
 	# └─── Format: [head, body, legs, feet]
 	#      • head/body/legs/feet: The number of insulation slots for that armor slot
 	# ┌ Linear: Number of slots increases steadily with protection
-	# ├ Exponential: Number of slots increases rapidly with protection
+	# ├ Exponential: Number of slots increases exponentially with protection
 	# ├ Logarithmic: Number of slots increases with protection, with diminishing returns
 	# └─── Format: [multiplier, max-slots]
 	#      • multiplier: Multiplied by the armor's protection value to get the number of insulation slots
@@ -170,7 +171,7 @@
 	"Insulation Blacklist" = []
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Allows for overriding the number of insulation slots for specific items
-	# └── Format: [["item_id", slotCount, *"{nbt}"], ["item_id", slotCount, *"{nbt}"], ...etc]
+	# └── Format: [["item_id", slotCount, *"{nbt}"], ["item_id", slotCount, *"{nbt}"], [...], etc]
 	# • item_id: The item's ID (i.e. "minecraft:iron_helmet").
 	# • slot_count: The number of insulation slots the item should have.
 	# • *nbt: If set, the item will only have the specified number of insulation slots if it has the specified NBT tag.
@@ -203,7 +204,7 @@
 	"Soulspring Lamp Strength" = 0.6
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Defines items that can be used to dry the player
-	# └── Format: [["item_id", "turns_into"], ["item_id", "turns_into"], ...etc]
+	# └── Format: [["item_id", "turns_into"], [...], etc]
 	# • item_id: The item's ID (i.e. "minecraft:sponge").
 	# • turns_into: The item to be turned into when the item is used (i.e. "minecraft:wet_sponge").
 	# ⌄ 
@@ -229,7 +230,7 @@
 [Misc]
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Defines items that affect the player's temperature when in the inventory
-	# ├── Format: [["item_id", temperature, "slotRange", "trait", *"{nbt}", *maxEffect], ["item_id", temperature, "slotRange", "trait", *"{nbt}", *maxEffect], ...etc]
+	# ├── Format: [["item_id", temperature, "slotRange", "trait", *"{nbt}", *maxEffect, *tempLimit], [...], etc]
 	# └── [* = optional]
 	# • item_id: The item's ID (i.e. "minecraft:lava_bucket").
 	# • temperature: The temperature change the item will apply to the entity. For core temperature, this is applied every tick
@@ -237,6 +238,8 @@
 	# • trait: The temperature trait to apply the effect to. Typical values are "core" for body temperature or "world" for ambient temperature. More on the mod documentation page.
 	# • *nbt: The NBT data the item must have to apply to the entity.
 	# • *max_effect: The maximum temperature effect the item can apply to the entity.
+	# • *tempLimit: The maximum temperature at which this item temp will have any effect.
+	#   (Based on the given trait. Represents the minimum temp if the item temp is negative)
 	# ⌄ 
 	"Item Temperatures" = []
 

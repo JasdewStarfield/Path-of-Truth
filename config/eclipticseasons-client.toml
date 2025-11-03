@@ -4,9 +4,14 @@
 	DebugInfo = false
 	#Render snow edge overlay on neighbors for smoother snowy transitions.
 	SmoothSnowyEdges = false
+	#When it snows, surface water will appear covered by a thin ice layer, making it look as if it has frozen.
 	FrozenWater = false
+	#The thin ice formed by freezing water can be easily broken.
 	FrozenWaterBreakable = true
-	frozenWaterCheckLight = true
+	#Water will not appear frozen under strong light.
+	FrozenWaterCheckLight = true
+	#Experimental feature: enables foggy weather during rainfall.
+	FoggyWeather = false
 
 [GUI]
 	#Displays the season and humidity levels suitable for growing crops.

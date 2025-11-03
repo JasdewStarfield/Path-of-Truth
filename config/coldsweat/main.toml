@@ -5,7 +5,7 @@
 	Difficulty = "normal"
 	#─────────────────────────────────────────────────────────────────────────
 	# The current version of Cold Sweat. This is used by the auto-updater
-	Version = "2.4-b05e"
+	Version = "2.4-b06a"
 	#─────────────────────────────────────────────────────────────────────────
 	# Allows Cold Sweat's configs to be automatically updated with new additions & formatting changes
 	"Auto Update" = true

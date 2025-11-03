@@ -96,6 +96,14 @@
 	#Chance that crops fail to grow inside the greenhouse due to insufficient light. Higher values make failure more likely.
 	#Range: 0 ~ 10000
 	LowLightGreenhouseFailChance = 2000
+	#Inverse factor controlling how much the Seasonal Prayer Ritual boosts crop growth and animal breeding.
+	#The higher the value, the weaker the bonus effect.
+	#Range: > 5
+	SeasonalPrayerRitualCropBonusReduction = 500
+	#Approximate time cost for each stage of the Seasonal Prayer Ritual.
+	#The unit is relative to the duration of one solar term.
+	#Range: 1.0E-5 ~ 5000.0
+	SeasonalPrayerRitualTimeCost = 2.0
 
 [Animal]
 	#Enable seasonal animal breed.
@@ -151,6 +159,8 @@
 	DisableSnowOverlayControlTag = false
 	#Disable cauldron enhancement, they will no longer turn into snow-filled or ice-filled cauldrons when it snows.
 	DisableIceOrSnowCauldron = false
+	#Disable seasonal core prayer ritual.
+	DisableSeasonalPrayerRitual = false
 
 [Map]
 	#The map color of blocks will change during snow.
@@ -159,6 +169,10 @@
 [Resource]
 	#Enable extra built-in snow definitions resourcepack for game.
 	ExtraSnowDefinitions = false
+	#Enable RainTogether datapack for game.
+	RainTogether = false
+	#Enable SnowTogether datapack for game.
+	SnowTogether = false
 
 [Snow]
 	#If snow falls during cold weather in warm biomes, it will gradually cover all solid blocks and grass.
