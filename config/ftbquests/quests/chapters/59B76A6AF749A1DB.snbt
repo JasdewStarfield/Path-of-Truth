@@ -1325,8 +1325,8 @@
 			icon: "createdieselgenerators:basin_lid"
 			id: "0F4EDD4535A9D928"
 			rewards: [{
-				id: "55E8F491E4572646"
-				item: "sob:lava_top_cocktail"
+				id: "28D9FF7A986D8EBD"
+				item: "sob:hard_cider"
 				type: "item"
 			}]
 			subtitle: "小桶"
