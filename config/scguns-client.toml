@@ -82,6 +82,8 @@ buttonAlignment = "RIGHT"
 		renderArms = true
 		#If true, enables a performance mode for the sulfur smoke particle which reduces the max number of particles.
 		enablePerformanceSulfurCloud = false
+		#If enabled, shows messages when unlocking new gun tiers and raid levels
+		showProgressionMessages = false
 
 	#Properties relating to particles
 	[client.particle]

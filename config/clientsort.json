@@ -33,6 +33,7 @@
     "allowSoundOverlap": true,
     "isolateKeybinds": true,
     "showButtons": true,
+    "anchorButtonsLeft": false,
     "firstButtonOp": "SORT",
     "secondButtonOp": "STACK_FILL",
     "thirdButtonOp": "MATCH_TRANSFER",

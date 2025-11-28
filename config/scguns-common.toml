@@ -67,6 +67,9 @@
 		#Global multiplier for mob gun damage. 1.0 = normal damage, 0.5 = half damage, 2.0 = double damage. Affects all projectile damage from mobs.
 		#Range: 0.01 ~ 100.0
 		mobGunDamageMultiplier = 1.0
+		#Chance (0.0 to 1.0) that Cog enemies will spawn a Signal Beacon on death. Set to 0.0 to disable beacon spawning from Cog deaths.
+		#Range: 0.0 ~ 1.0
+		cogBeaconSpawnChance = 0.15
 
 		#Properties related to gun griefing
 		[common.gameplay.griefing]

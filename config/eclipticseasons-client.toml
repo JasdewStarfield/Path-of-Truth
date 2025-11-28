@@ -40,6 +40,8 @@
 	UseVanillaSnowCheck = false
 	#Blocks underneath solid blocks etc. may also be covered with snow.
 	SnowUnderShadow = false
+	#Brownish grass block under trees in autumn.
+	FoliageUnderTree = false
 
 [Sound]
 	#Ambient Sound.
@@ -73,6 +75,8 @@
 	#The interval/delay of wild goose particles. Higher values make butterflies appear less frequently.
 	#Range: 1 ~ 10000
 	WildGooseSpawnDelay = 10
+	#Snow-covered leaves will drop snow particles when broken.
+	SnowLeafParticles = true
 
 [Weather]
 	#Radius (in blocks) around the player within which weather is sampled and averaged to create smoother local weather transitions.

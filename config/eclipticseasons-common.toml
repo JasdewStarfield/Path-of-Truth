@@ -32,6 +32,8 @@
 	DynamicSnowTerm = true
 	#Enable the season definitions system.
 	EnableSeasonDefinition = false
+	#The in-game solar terms will be synchronized with the real world. Note: due to limitations of the old mechanism, enabling this may cause the day display function of this mod or other compatible mods to be confusing.
+	RealWorldSolarTerms = false
 
 [Weather]
 	#Enable the Ecliptic local weather system that adapts weather to each biome.
@@ -58,6 +60,8 @@
 	IceAndSnow = false
 	#Add heat stroke effect in summer noon while in hot biome.
 	HeatStroke = false
+	#If enabled, water placed in frozen biomes will behave as in vanilla and freeze into ice.
+	WaterFreezesInFrozenBiomes = true
 
 [Crop]
 	#Enable crop season control.
@@ -125,6 +129,8 @@
 	LessFishInThunder = false
 	#Season Core affects animals even without a greenhouse.
 	SeasonCoreAffectsAnimals = true
+	#Restrict animal breeding to a specific time of day (daytime or nighttime).
+	EnableTimeBreed = false
 
 [Compat]
 	#Compatible with mods using SereneSeasons' CropTag.
@@ -169,10 +175,16 @@
 [Resource]
 	#Enable extra built-in snow definitions resourcepack for game.
 	ExtraSnowDefinitions = false
-	#Enable RainTogether datapack for game.
+	#Enable Rain Together datapack for game.
 	RainTogether = false
-	#Enable SnowTogether datapack for game.
+	#Enable Snow Together datapack for game.
 	SnowTogether = false
+	#Enable Regional Snow datapack for game.
+	RegionalSnowTime = false
+	#Enable Vanilla Biome Climate Settings datapack for game.
+	VanillaBiomeClimateSettings = true
+	#Enable Not Ignore River datapack for climatic query.
+	NotIgnoreRiver = false
 
 [Snow]
 	#If snow falls during cold weather in warm biomes, it will gradually cover all solid blocks and grass.
@@ -196,4 +208,6 @@
 	SnowCoverUnderBlocks = true
 	#When SnowInWorld is enabled, snow may melt when stepped on due to heat.
 	SnowStepMelt = false
+	#Only force updating the status of chunk when snow should melt.
+	ForceChunkUpdateOnlyWhenMelt = false
 

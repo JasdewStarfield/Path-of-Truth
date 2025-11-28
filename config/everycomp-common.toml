@@ -12,6 +12,8 @@
 	mod_version_check_packet = true
 	#Don't touch unless you are told to
 	debug_packet = false
+	#If set to true, then all of the generated items will not be put into the mod's tab.
+	no_mod_creative_tab = false
 
 	[general.tooltips]
 		#Enabled tooltips showing which mod an EC item is from
