@@ -16,3 +16,8 @@
 	Enable = true
 	FakeSeasonsLoaded = true
 
+#Stardew Fishing
+[stardew_fishing]
+	Enable = true
+	DisableMiniGameIfNotPassCheck = true
+
