@@ -6,8 +6,6 @@
 	ironBuff = true
 	#If enabled, Ender Dragon's Fireballs will leave clouds that damages even undead and will not hit itself. Default: false
 	betterDragonFireball = false
-	#If L_Ender Cataclysm is installed, certain loots are modified and change between this and the latter mod. Default: true
-	cataclysmLootCompat = true
 
 [Blocks]
 	#Whether Night Beacons are allowed to function, turning Daytime to Midnight so long as it's activated, Default: true
@@ -64,6 +62,14 @@
 	#How big of a range Dark Altars can count blocks to make a ritual and detect sacrifices/conversion victims, Default: 8
 	#Range: > 1
 	ritualRange = 8
+	#Whether Ominous Idols can revive Illager Servants, Default: true
+	ominousIdolRevive = true
+	#The amount of Soul Energy required to revive an Illager Servant, Default: 500
+	#Range: > 0
+	ominousIdolReviveCost = 500
+	#The amount of Illager Servants an Ominous Idol can register to revive, Default: 16
+	#Range: > 0
+	ominousIdolLimit = 16
 
 ["Soul Taken"]
 	#Animals Killed, Default: 5

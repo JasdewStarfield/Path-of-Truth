@@ -234,6 +234,9 @@
 		#Entangling Spell Cost, Default: 8
 		#Range: > 0
 		entanglingCost = 8
+		#Maximum amount of targets that can be entangled when cast using Wild Staff, Default: 8
+		#Range: > 1
+		entanglingStaffAmount = 8
 
 	[Spells."Whispering Spell"]
 		#Time to cast Whispering Spell, Default: 100
@@ -383,6 +386,18 @@
 		#Quaking Spell Cooldown, Default: 100
 		#Range: > 0
 		quakingCoolDown = 100
+		#Earth Fist Spell Cost, Default: 8
+		#Range: > 0
+		earthFistCost = 8
+		#Time to cast Earth Fist Spell, Default: 0
+		#Range: 0 ~ 72000
+		earthFistTime = 0
+		#Earth Fist Spell Cooldown, Default: 100
+		#Range: > 0
+		earthFistCoolDown = 60
+		#How much base damage Earth Fists deals, Default: 6.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		earthFistDamage = 6.0
 
 	[Spells."Shockwave Spell"]
 		#How much base maximum damage Shockwave Spell deals, Default: 24.0
@@ -1154,18 +1169,15 @@
 		#Vexing Spell Cost, Default: 18
 		#Range: > 0
 		vexCost = 18
-		#Number of Vex Servants that can be spawn with a wand, without instantly dying, around the player, Default: 8
-		#Range: > 1
-		wandVexLimit = 8
-		#Number of Vex Servants that can be spawn with a staff, without instantly dying, around the player, Default: 16
-		#Range: > 1
-		staffVexLimit = 16
 		#Vexing Spell Summon Down, Default: 340
 		#Range: 0 ~ 72000
 		vexSummonDown = 340
 		#Time to cast Vexing Spell, Default: 100
 		#Range: 0 ~ 72000
 		vexTime = 100
+		#Number of Vex Servants that an individual player can have in total, Default: 8
+		#Range: > 1
+		vexLimit = 8
 
 	[Spells."Ghastly Spell"]
 		#Number of Mini Ghasts that can exist around the player, Default: 8
@@ -1537,7 +1549,7 @@
 		#Time to cast Watching Spell, Default: 40
 		#Range: 0 ~ 72000
 		watchlingTime = 40
-		#Watching Spell Cooldown, Default: 200
+		#Watching Spell Cooldown, Default: 300
 		#Range: > 0
 		watchlingCoolDown = 200
 		#Watching Spell Summon Down, Default: 120
@@ -1554,7 +1566,7 @@
 		#Time to cast Blasting Spell, Default: 60
 		#Range: 0 ~ 72000
 		blastlingTime = 60
-		#Blasting Spell Cooldown, Default: 200
+		#Blasting Spell Cooldown, Default: 400
 		#Range: > 0
 		blastlingCoolDown = 200
 		#Blasting Spell Summon Down, Default: 120
@@ -1571,7 +1583,7 @@
 		#Time to cast Snaring Spell, Default: 40
 		#Range: 0 ~ 72000
 		snarelingTime = 40
-		#Snaring Spell Cooldown, Default: 200
+		#Snaring Spell Cooldown, Default: 350
 		#Range: > 0
 		snarelingCoolDown = 200
 		#Snaring Spell Summon Down, Default: 120
@@ -1580,6 +1592,62 @@
 		#Number of Snareling Servants that an individual player can have in total, Default: 32
 		#Range: > 1
 		snarelingLimit = 32
+
+	[Spells."Illuminate Spell"]
+		#Illuminate Spell Cost, Default: 4
+		#Range: > 0
+		illuminateCost = 4
+		#How many ticks the Illuminate Spell much charge before casting, Default: 0
+		#Range: > 0
+		illuminateChargeUp = 0
+		#Time to cast Illuminate Spell per second, Default: 5
+		#Range: 0 ~ 72000
+		illuminateTime = 5
+		#Minimum block light level below which the spell attempts to light up, Default: 5
+		#Range: 0 ~ 15
+		illuminateMinLightLevel = 5
+
+	[Spells."Razor Wind Spell"]
+		#Razor Wind Spell Cost, Default: 24
+		#Range: > 0
+		razorWindCost = 24
+		#Time to cast Razor Wind Spell, Default: 0
+		#Range: 0 ~ 72000
+		razorWindDuration = 0
+		#Razor Wind Spell Cooldown, Default: 60
+		#Range: > 0
+		razorWindCoolDown = 60
+		#How much base damage Razor Winds deals, Default: 6.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		razorWindDamage = 6.0
+
+	[Spells."Thunderstorm Spell"]
+		#Thunderstorm Spell Cost, Default: 64
+		#Range: > 0
+		thunderstormCost = 64
+		#Time to cast Thunderstorm Spell, Default: 60
+		#Range: 0 ~ 72000
+		thunderstormTime = 60
+		#Thunderstorm Spell Cooldown, Default: 300
+		#Range: > 0
+		thunderstormCoolDown = 300
+		#How much base damage Thunderstorm deals, Default: 5.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		thunderstormDamage = 5.0
+
+	[Spells."Void Shock Spell(NYI)"]
+		#Void Shock Spell Cost, Default: 32
+		#Range: > 0
+		voidShockCost = 32
+		#Time to cast Void Shock Spell, Default: 35
+		#Range: 0 ~ 72000
+		voidShockDuration = 35
+		#Void Shock Spell Cooldown, Default: 100
+		#Range: > 0
+		voidShockCoolDown = 100
+		#How much base damage the Void Shocks deals, Default: 6.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		voidShockDamage = 6.0
 
 [Enchantments]
 	#Soul Eater Maximum Enchantment Level, Default: 5
@@ -1616,7 +1684,7 @@
 	#Casting Spells will cause the caster to completely stop moving, Default: false
 	fullStopCast = false
 	#Spells cost double soul cost if enchanted, Default: true
-	enchantMultiCost = true
+	enchantMultiCost = false
 	#Certain spells that summons servants will give player Summon Down effect, Default: true
 	summonDown = true
 	#Spells have their soul cost reduced or increased depending on the surroundings around the caster, Default: true

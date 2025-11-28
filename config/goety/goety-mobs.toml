@@ -25,6 +25,9 @@
 	tallSkullDrop = true
 	#Whether Hellfire damage is halved on entities that are fire-immune, Default: true
 	hellfireFireImmune = true
+	#How long invulnerability, Default: 15
+	#Range: > 0
+	bossInvulnerabilityTime = 15
 
 	[Misc.Vizier]
 		#Whether Viziers are persistent and do not naturally despawn. Default: false
@@ -37,6 +40,9 @@
 		obsidianMonolithSpread = true
 		#Whether unowned Obsidian Monoliths, empowered by Heretics, change Overworld biomes to Nether biomes, Default: true
 		obsidianMonolithBiome = true
+		#How many Minecraft days, since spawning in, until unowned Obsidian Monoliths start spreading, Default: 3
+		#Range: > 1
+		obsidianMonolithStartUpTime = 3
 
 	[Misc.Apostle]
 		#Whether Apostles causes Villagers within 32 blocks of themselves to have a chance of converting into a Witch or Warlock. Default: true
@@ -93,6 +99,16 @@
 	#How far servants can guard from their guarding location, Default: 16
 	#Range: > 2
 	servantGuardingRange = 16
+	#Servants, when on guarding mode, will load chunks around it, Default: true
+	guardingServantChunkLoad = true
+	#Servants, when on following mode, will load chunks around it, Default: true
+	followingServantChunkLoad = true
+	#Whether Servants be equipped with Carved Pumpkins, which would allow Servants to not be affected by sunlight, Default: false
+	servantsCanWearPumpkin = false
+	#Whether armored Ravagers owned by players will drop their armor, Default: true
+	playerRavagerArmorDrop = true
+	#Whether armor wearing Raider Servants can be equipped with Armor, Default: true
+	raiderServantWearArmor = true
 
 	[Servants."Water Servants"]
 		#How frequent Water Servants heal, count seconds, Default: 1
@@ -140,6 +156,8 @@
 		#How much Soul Energy it cost per second for a Natural Servant to heal, Default: 1
 		#Range: > 0
 		naturalMinionHealCost = 1
+		#Whether Black Beasts chunk load areas around themselves and their target when hunting down with Taglock Kit, Default: true
+		blackBeastChunkLoad = true
 
 	[Servants."Undead Servants"]
 		#Whether Undead Servants burn in Sunlight if not wearing helmet, Default: true
@@ -203,7 +221,7 @@
 		illagerServantAllOpenDoors = true
 		#Whether Illagers shoot arrows that pass through allied mobs, Default: true
 		illagerServantGhostArrows = true
-		#Whether Neollagers gain armor after training if their owner wears Ring of the Forge, Default: true
+		#Whether Neollagers gain armor after training if their owner wears Ring of the Forge, if 'illagerServantWearArmor' is enabled, Default: true
 		illagerServantTrainArmor = true
 		#How many blocks from their registered chest trained Illagers will attempt to start using it, Default: 16
 		#Range: > 4
@@ -211,6 +229,10 @@
 		#How long the cooldown for turning Villagers into Ravaged for Evokers, count in seconds, Default: 1200
 		#Range: > 0
 		evokerServantRavagedCooldown = 1200
+		#Whether Illagers chunk load areas around themselves and their target when hunting down with Taglock Kit, Default: true
+		illagerServantChunkLoadMark = true
+		#Whether Illagers chunk load areas around themselves and their raid position when raiding, Default: true
+		illagerServantChunkLoadRaid = true
 
 	[Servants."Void Servants"]
 		#Whether Void Servants can heal if summoned while wearing Nether Robe, Default: true
@@ -224,6 +246,33 @@
 		#How much Health Void Servants heal, numerically, Default: 1.0
 		#Range: 0.0 ~ 1.7976931348623157E308
 		voidMinionHealAmount = 1.0
+
+	[Servants.Prisoners]
+		#Whether Prisoners can mine ores when given a Pickaxe, Default: true
+		prisonerMining = true
+		#Whether Prisoners can only mine ores they have on line of sight, Default: true
+		prisonerMiningSeeBlocks = true
+		#Whether Prisoners break ore blocks when mining, Default: false
+		prisonerMiningBreakBlocks = false
+		#How many times a Prisoner has to swing their pickaxe before collecting drops when mining, Default: 5
+		#Range: > 0
+		prisonerMiningSwings = 5
+		#How far Prisoners can scan for ores and mine it, in blocks, Default: 4
+		#Range: 1 ~ 64
+		prisonerMiningRange = 4
+		#How much durability is used up on Prisoner's pickaxe after swinging, Default: 1
+		#Range: > 0
+		prisonerMiningDurability = 1
+		#What are the chances of Prisoners successfully mining a block, the lower the number, the more likely, setting to 0 will cause Prisoners to always get the drop, Default: 0
+		#Range: > 0
+		prisonerMiningChance = 0
+		#What are the chances of Prisoners successfully mining a rare ore (ie, Diamonds), the lower the number, the more likely, setting to 0 will cause Prisoners to always get the drop, Default: 10
+		#Range: > 0
+		prisonerMiningRareChance = 10
+		#Whether Prisoners unshackles after taking enough damage away from their owner and or captain, Default: true
+		prisonerUnshackleDamage = true
+		#Whether Prisoners can pick up Pickaxes that are dropped near them and mobGriefing is true, Default: true
+		prisonerPickUpPickaxe = true
 
 [Illagers]
 	#Whether Enviokers, Inquillagers and Conquillagers can steal Totems of Souls or Totems of Undying, Default: true
@@ -526,6 +575,16 @@
 			iceologerServantTexture = true
 			#If Wind Caller Servants have custom textures, Default: true
 			windCallerServantTexture = true
+			#If Piker Servants have custom textures, Default: true
+			pikerServantTexture = true
+			#If Mountaineer Servants have custom textures, Default: true
+			mountaineerServantTexture = true
+			#If Crusher Servants have custom textures, Default: true
+			crusherServantTexture = true
+			#If Cryologer Servants have custom textures, Default: true
+			cryologerServantTexture = true
+			#If Storm Caster Servants have custom textures, Default: true
+			stormCasterServantTexture = true
 
 		[Textures."Summoned Mobs"."Void Servants"]
 			#If Watchling servants have custom textures, Default: true
@@ -534,6 +593,12 @@
 			blastlingServantTexture = true
 			#If Snareling Servants have custom textures, Default: true
 			snarelingServantTexture = true
+
+		[Textures."Summoned Mobs"."Raider Servants"]
+			#If Witch Servants have custom textures, Default: true
+			witchServantTexture = true
+			#If Maverick Servants have custom textures, Default: true
+			maverickServantTexture = true
 
 [Spawning]
 
@@ -623,6 +688,8 @@
 		#Spawn maximum group count for Necromancer, must be equal or higher than min count, Default: 1
 		#Range: > 1
 		necromancerSpawnMaxCount = 1
+		#Whether Necromancers can be part of structure spawn pools. Default: false
+		necromancerSpawnStructure = false
 
 	[Spawning.Heretic]
 		#Spawn Weight for Heretic, Default: 5

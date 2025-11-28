@@ -106,6 +106,7 @@
     "soul_energy": true,
     "raider_leader": true,
     "servant_mode": true,
+    "capture_mode": true,
     "zombie_villager": true,
     "villager_profession": true,
     "train_to": true,
