@@ -1635,19 +1635,33 @@
 		#Range: 1.0 ~ 1.7976931348623157E308
 		thunderstormDamage = 5.0
 
-	[Spells."Void Shock Spell(NYI)"]
-		#Void Shock Spell Cost, Default: 32
+	[Spells."Stellar Spell"]
+		#Stellar Spell Cost, Default: 16
 		#Range: > 0
-		voidShockCost = 32
-		#Time to cast Void Shock Spell, Default: 35
+		stellarCost = 16
+		#Time to cast Stellar Spell, Default: 35
 		#Range: 0 ~ 72000
-		voidShockDuration = 35
-		#Void Shock Spell Cooldown, Default: 100
+		stellarDuration = 35
+		#Stellar Spell Cooldown, Default: 100
 		#Range: > 0
-		voidShockCoolDown = 100
-		#How much base damage the Void Shocks deals, Default: 6.0
+		stellarCoolDown = 100
+		#How much base damage the Void Shocks from Stellar spell deals, Default: 7.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		voidShockDamage = 6.0
+		stellarDamage = 7.0
+
+	[Spells."Void Flash Spell"]
+		#Void Flash Spell Cost, Default: 32
+		#Range: > 0
+		voidFlashCost = 32
+		#Time to cast Void Flash Spell, Default: 86
+		#Range: 0 ~ 72000
+		voidFlashDuration = 86
+		#Void Flash Spell Cooldown, Default: 200
+		#Range: > 0
+		voidFlashCoolDown = 200
+		#How much base damage the Void Shock Bombs from Void Flash spell deals, Default: 7.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		voidFlashDamage = 7.0
 
 [Enchantments]
 	#Soul Eater Maximum Enchantment Level, Default: 5

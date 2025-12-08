@@ -62,6 +62,8 @@
 	HeatStroke = false
 	#If enabled, water placed in frozen biomes will behave as in vanilla and freeze into ice.
 	WaterFreezesInFrozenBiomes = true
+	#If enabled and IceAndSnowMelt same enabled, snow placed in snowy biomes would not melt if in hot time.
+	SnowKeepInSnowyBiomes = true
 
 [Crop]
 	#Enable crop season control.

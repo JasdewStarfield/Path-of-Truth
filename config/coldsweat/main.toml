@@ -5,7 +5,7 @@
 	Difficulty = "normal"
 	#─────────────────────────────────────────────────────────────────────────
 	# The current version of Cold Sweat. This is used by the auto-updater
-	Version = "2.4-b06b"
+	Version = "2.4-b06c"
 	#─────────────────────────────────────────────────────────────────────────
 	# Allows Cold Sweat's configs to be automatically updated with new additions & formatting changes
 	"Auto Update" = true
@@ -28,8 +28,12 @@
 	#Range: 0.0 ~ Infinity
 	"Temperature Damage" = 2.0
 	#─────────────────────────────────────────────────────────────────────────
+	# The time between damage (in ticks) when the player is too hot or too cold
+	#Range: > 1
+	"Temperature Hurt Interval" = 40
+	#─────────────────────────────────────────────────────────────────────────
 	# Nullifies temperature damage and effects when the difficulty is set to peaceful
-	"Damage Scaling" = true
+	"Disable in Peaceful" = true
 
 ["Temperature Effects"]
 

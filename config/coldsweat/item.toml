@@ -21,17 +21,17 @@
 	    ["#minecraft:planks", 10],
 	    ["minecraft:coal", 37],
 	    ["minecraft:charcoal", 37],
-	    ["#minecraft:logs_that_burn", 37],
-	    ["minecraft:coal_block", 333],
+	    ["#minecraft:logs_that_burn", 40],
+	    ["minecraft:coal_block", 500],
 	    ["minecraft:magma_block", 333],
 	    ["minecraft:lava_bucket", 1000],
-	    ["minecraft:dried_kelp_block", 92]
+	    ["minecraft:dried_kelp_block", 40]
 	]
 	#─────────────────────────────────//v
 	Icebox = [
 	    ["minecraft:snowball", 10],
 	    ["minecraft:clay_ball", 37],
-	    ["minecraft:snow_block", 100],
+	    ["minecraft:snow_block", 40],
 	    ["minecraft:ice", 250],
 	    ["minecraft:clay", 333],
 	    ["minecraft:powder_snow_bucket", 100],
@@ -43,18 +43,18 @@
 	    ["#minecraft:planks", 10],
 	    ["minecraft:coal", 37],
 	    ["minecraft:charcoal", 37],
-	    ["#minecraft:logs_that_burn", 37],
-	    ["minecraft:coal_block", 333],
+	    ["#minecraft:logs_that_burn", 40],
+	    ["minecraft:coal_block", 500],
 	    ["minecraft:magma_block", 333],
 	    ["minecraft:lava_bucket", 1000],
 	    ["minecraft:snowball", -10],
 	    ["minecraft:clay_ball", -37],
-	    ["minecraft:snow_block", -100],
+	    ["minecraft:snow_block", -40],
 	    ["minecraft:ice", -250],
 	    ["minecraft:clay", -333],
 	    ["minecraft:powder_snow_bucket", -100],
 	    ["minecraft:packed_ice", -1000],
-	    ["minecraft:dried_kelp_block", 92]
+	    ["minecraft:dried_kelp_block", 40]
 	]
 
 ["Soulspring Lamp"]
@@ -181,12 +181,13 @@
 [Consumables]
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Defines items that affect the player's temperature when consumed
-	# ├── Format: [["item_id", amount, *"{nbt}", *duration], ["item_id", amount, *"{nbt}", *duration], ...etc]
+	# ├── Format: [["item_id", amount, *"{nbt}", *duration, *stack_limit], [...], etc]
 	# └── [* = optional]
 	# • item_id: The item's ID (i.e. "minecraft:apple").
 	# • amount: The amount to change the player's temperature by. Negative values are cold, positive values are hot
 	# • *nbt: If set, the item will only affect the player's temperature if it has the specified NBT tag.
 	# • *duration: If set, the player's temperature will remain increased/decreased for this amount of time (in ticks).
+	# • *stack_limit: If set, consuming multiple of the same item will apply stacking effects up to this limit.
 	# ⌄ 
 	"Temperature-Affecting Foods" = [
 	    ["cold_sweat:soul_sprout", -20.0, "{}", 1200]

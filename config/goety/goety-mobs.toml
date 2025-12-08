@@ -109,6 +109,8 @@
 	playerRavagerArmorDrop = true
 	#Whether armor wearing Raider Servants can be equipped with Armor, Default: true
 	raiderServantWearArmor = true
+	#Whether Servants owned by other Servants benefits from Player Robes and Crown, Default: true
+	servantOwnedServantPlayerBenefit = true
 
 	[Servants."Water Servants"]
 		#How frequent Water Servants heal, count seconds, Default: 1
@@ -172,7 +174,7 @@
 		zombieServantBabyChance = 0.05
 		#Whether Servants would naturally attack Undead mobs if owner wears a full Necro Set, Default: false
 		necroRobeUndead = false
-		#Whether Necromancer's summons have limited lifespans, Default: true
+		#Whether Necromancer's summons have limited lifespans, can be affected by servantOwnedServantPlayerBenefit config, Default: true
 		necromancerSummonsLife = true
 		#Whether Undead Servants' helmet take damage when in Sunlight. Only takes effect if undeadServantSunlightBurn is enabled, Default: true
 		undeadServantSunlightHelmet = true
@@ -313,6 +315,8 @@
 		specialIllagerRaid = true
 		#Whether Armored Ravagers spawn in Raids, Default: true
 		armoredRavagerRaid = true
+		#Whether Armored Tramplers spawn in Raids, Default: true
+		armoredTramplerRaid = true
 
 		[Illagers.Raid.Piker]
 			#Whether Pikers appear in Raids, Default: true
