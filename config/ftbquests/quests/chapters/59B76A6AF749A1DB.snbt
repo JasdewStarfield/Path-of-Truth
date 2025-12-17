@@ -13,32 +13,32 @@
 			image: "kubejs:textures/quests/start.png"
 			rotation: 0.0d
 			width: 1.3285714285714287d
-			x: -10.0d
-			y: -1.5d
+			x: -4.0d
+			y: 11.0d
 		}
 		{
 			height: 0.4d
 			image: "kubejs:textures/quests/next.png"
 			rotation: 0.0d
 			width: 1.1149863760217984d
-			x: 13.5d
-			y: 0.0d
+			x: 19.5d
+			y: 12.5d
 		}
 		{
 			height: 2.0d
 			image: "kubejs:textures/quests/i4.png"
 			rotation: 0.0d
 			width: 12.853503184713375d
-			x: -10.0d
-			y: 4.5d
+			x: -4.0d
+			y: 17.0d
 		}
 		{
 			height: 4.0d
 			image: "immersiveengineering:item/tool_hammer"
 			rotation: 45.0d
 			width: 4.0d
-			x: 1.0d
-			y: 4.0d
+			x: 7.0d
+			y: 16.5d
 		}
 	]
 	order_index: 0
@@ -68,8 +68,8 @@
 				type: "checkmark"
 			}]
 			title: "【起点】电力驱动！"
-			x: -10.0d
-			y: 0.0d
+			x: -4.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -104,8 +104,8 @@
 				}
 			]
 			title: "低压电力系统"
-			x: -12.0d
-			y: 0.0d
+			x: -6.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
@@ -165,8 +165,8 @@
 				}
 			]
 			title: "组装发酵机"
-			x: 0.0d
-			y: -1.0d
+			x: 6.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
@@ -232,8 +232,8 @@
 				}
 			]
 			title: "组装挤压机"
-			x: -4.0d
-			y: 2.0d
+			x: 2.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["19EA7F4C42FCA4BA"]
@@ -265,8 +265,8 @@
 				type: "item"
 			}]
 			title: "金色传说！"
-			x: 4.0d
-			y: 6.0d
+			x: 10.0d
+			y: 18.5d
 		}
 		{
 			dependencies: ["1E0E5E47E1264279"]
@@ -282,8 +282,8 @@
 				item: "immersiveengineering:plantoil_bucket"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 1.0d
+			x: 8.0d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -305,8 +305,8 @@
 				type: "item"
 			}]
 			title: "工业酒精"
-			x: 2.0d
-			y: -1.0d
+			x: 8.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
@@ -363,8 +363,8 @@
 				}
 			]
 			title: "组装炼油厂"
-			x: 0.0d
-			y: 0.0d
+			x: 6.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
@@ -396,8 +396,8 @@
 				}
 			]
 			title: "中压电力系统"
-			x: 6.0d
-			y: 8.0d
+			x: 12.0d
+			y: 20.5d
 		}
 		{
 			dependencies: [
@@ -462,8 +462,8 @@
 				}
 			]
 			title: "组装柴油发电机"
-			x: 4.0d
-			y: 3.0d
+			x: 10.0d
+			y: 15.5d
 		}
 		{
 			dependencies: [
@@ -496,8 +496,8 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
-			y: 0.0d
+			x: 10.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["76EF99C068AA2361"]
@@ -526,8 +526,8 @@
 				value: 1145140L
 			}]
 			title: "证明你的能量霸权！"
-			x: 3.0d
-			y: 4.0d
+			x: 9.0d
+			y: 16.5d
 		}
 		{
 			dependencies: [
@@ -609,8 +609,8 @@
 				}
 			]
 			title: "组装电弧炉"
-			x: 4.0d
-			y: -3.0d
+			x: 10.0d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -638,8 +638,8 @@
 				type: "item"
 			}]
 			title: "工业明珠"
-			x: 4.0d
-			y: -6.0d
+			x: 10.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["1E0E5E47E1264279"]
@@ -654,8 +654,8 @@
 				item: "immersiveengineering:dust_hop_graphite"
 				type: "item"
 			}]
-			x: -4.0d
-			y: -2.0d
+			x: 2.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["48E0B5D1F9972D20"]
@@ -679,8 +679,8 @@
 				type: "item"
 			}]
 			title: "电弧炉核心"
-			x: -2.0d
-			y: -6.0d
+			x: 4.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["2BE7BA0BE9F2DBC9"]
@@ -716,8 +716,8 @@
 				}
 			]
 			title: "高压电力系统"
-			x: 6.0d
-			y: -8.0d
+			x: 12.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -771,8 +771,8 @@
 				}
 			]
 			title: "搭建金属冲压机"
-			x: -8.0d
-			y: 0.0d
+			x: -2.0d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -799,8 +799,8 @@
 				}
 			]
 			title: "看看你的棒子"
-			x: -6.0d
-			y: 0.0d
+			x: 0.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["22631A52B9D81A49"]
@@ -818,8 +818,8 @@
 				type: "item"
 			}]
 			title: "钢门"
-			x: -2.0d
-			y: 0.0d
+			x: 4.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["55C58DBE6BE16B1C"]
@@ -834,8 +834,8 @@
 				item: "kubejs:steel_mechanism"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -2.0d
+			x: 18.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -873,8 +873,8 @@
 				type: "item"
 			}]
 			title: "【终点】工业的重压！"
-			x: 12.0d
-			y: 0.0d
+			x: 18.0d
+			y: 12.5d
 		}
 		{
 			dependencies: [
@@ -892,8 +892,8 @@
 				item: "kubejs:factory_casing"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 0.0d
+			x: 16.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
@@ -919,8 +919,8 @@
 				}
 			]
 			title: "下去吧你！"
-			x: 8.0d
-			y: 4.0d
+			x: 14.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -929,7 +929,28 @@
 				"沉浸工程的多方块结构的搭建方法都可以在这里找到。"
 				""
 				"另外，蓝图结构中也内置了各种多方块结构的nbt文件，可以使用蓝图桌自行导出，投影后手动摆放或者使用蓝图加农炮摆放。"
-				"&c*注：nbt无法使用中文，看不懂英文就去看书，参考中文讲解。&r"
+				"&c*注：nbt无法使用中文，所以后面我给你准备了对照表给你参考。&r"
+				"{@pagebreak}"
+				"&6arcfurnace &f电弧炉"
+				"&6assembler &f装配机"
+				"&6auto_workbench &f自动化工程师装配台"
+				"&6blast_furnace &f粗制高炉"
+				"&6bottling_machine &f灌装机"
+				"&6bucket_wheel &f斗轮"
+				"&6coke_oven &f焦炉"
+				"&6crusher &f粉碎机"
+				"&6diesel_generator &f柴油发电机"
+				"&6excavator &f挖掘机"
+				"&6excavator_full &f带斗轮的挖掘机"
+				"&6fermenter &f工业发酵机"
+				"&6improved_blast_furnace &f改良高炉"
+				"&6lighting_rod &f避雷针"
+				"&6mental_press &f金属冲压机"
+				"&6mixer &f搅拌机"
+				"&6refinery &f精炼厂"
+				"&6sheetmental_tank &f流体储罐"
+				"&6silo &f储物筒仓"
+				"&6squeezer &f工业挤压机"
 			]
 			icon: "immersiveengineering:manual"
 			id: "1984D2E85CF06BC7"
@@ -958,8 +979,8 @@
 				}
 			]
 			title: "多方块指南"
-			x: -12.0d
-			y: -2.0d
+			x: -6.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -977,8 +998,8 @@
 				item: "immersiveengineering:blastfurnace_preheater"
 				type: "item"
 			}]
-			x: -12.0d
-			y: 2.0d
+			x: -6.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["2BE7BA0BE9F2DBC9"]
@@ -1063,8 +1084,8 @@
 				}
 			]
 			title: "理解法拉第"
-			x: 2.0d
-			y: -8.0d
+			x: 8.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["011BB3E4881AA3F2"]
@@ -1104,8 +1125,8 @@
 				}
 				type: "item"
 			}]
-			x: 5.0d
-			y: 3.0d
+			x: 11.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -1122,8 +1143,8 @@
 				type: "item"
 			}]
 			title: "精细化农业"
-			x: -10.0d
-			y: 2.0d
+			x: -4.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["3B29D716A3D5AAF0"]
@@ -1151,8 +1172,8 @@
 				}
 			]
 			title: "散热器"
-			x: 6.0d
-			y: 0.0d
+			x: 12.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
@@ -1168,8 +1189,8 @@
 				item: "immersiveengineering:component_electronic"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 6.0d
+			x: 14.0d
+			y: 18.5d
 		}
 		{
 			dependencies: [
@@ -1185,8 +1206,8 @@
 				item: "kubejs:forgotten_mechanism"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 2.0d
+			x: 18.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
@@ -1214,8 +1235,8 @@
 				item: "immersiveengineering:thermoelectric_generator"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 8.0d
+			x: 10.0d
+			y: 20.5d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
@@ -1269,8 +1290,8 @@
 				}
 			]
 			title: "组装粉碎机"
-			x: -2.0d
-			y: -3.0d
+			x: 4.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
@@ -1286,8 +1307,8 @@
 				item: "createaddition:electrum_amulet"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 8.0d
+			x: 8.0d
+			y: 20.5d
 		}
 		{
 			dependencies: ["01534DC5812DBA15"]
@@ -1313,8 +1334,8 @@
 				type: "item"
 			}]
 			title: "金属模具蓝图"
-			x: -8.0d
-			y: 2.0d
+			x: -2.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
@@ -1342,8 +1363,8 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
-			y: -2.0d
+			x: 5.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["0F4EDD4535A9D928"]
@@ -1360,8 +1381,8 @@
 				item: "createaddition:biomass"
 				type: "item"
 			}]
-			x: 1.0d
-			y: -2.0d
+			x: 7.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -1379,8 +1400,8 @@
 				item: "createaddition:biomass_pellet"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -3.0d
+			x: 8.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["1E0E5E47E1264279"]
@@ -1401,8 +1422,8 @@
 				}
 			]
 			title: "优良导体"
-			x: -2.0d
-			y: 6.0d
+			x: 4.0d
+			y: 18.5d
 		}
 		{
 			dependencies: ["3D6CCF4A93478320"]
@@ -1417,8 +1438,8 @@
 				item: "createaddition:tesla_coil"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 4.0d
+			x: 12.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["143039C6AC2D8186"]
@@ -1438,8 +1459,8 @@
 				}
 			]
 			title: "搞定硬家伙"
-			x: -8.0d
-			y: -2.0d
+			x: -2.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["3B29D716A3D5AAF0"]
@@ -1459,8 +1480,8 @@
 				item: "create:blaze_cake"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -3.0d
+			x: 12.0d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -1475,8 +1496,8 @@
 				item: "kubejs:za_ingot"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -6.0d
+			x: 14.0d
+			y: 6.5d
 		}
 		{
 			dependencies: ["1CBD49955AFAF545"]
@@ -1496,8 +1517,8 @@
 					type: "item"
 				}
 			]
-			x: 6.0d
-			y: 2.0d
+			x: 12.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["0EA7E42D07C4BC01"]
@@ -1563,8 +1584,8 @@
 				}
 			]
 			title: "组装搅拌机"
-			x: 0.0d
-			y: 2.0d
+			x: 6.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["5603929D7B14B8ED"]
@@ -1577,8 +1598,8 @@
 				type: "item"
 			}]
 			title: "强化镀层"
-			x: 8.0d
-			y: 0.0d
+			x: 14.0d
+			y: 12.5d
 		}
 		{
 			dependencies: ["585C0F11261551FD"]
@@ -1593,8 +1614,8 @@
 				item: "immersiveengineering:dust_aluminum"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.0d
+			x: 6.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["55C58DBE6BE16B1C"]
@@ -1609,8 +1630,8 @@
 				item: "kubejs:za_sheet"
 				type: "item"
 			}]
-			x: 9.0d
-			y: -3.0d
+			x: 15.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["011BB3E4881AA3F2"]
@@ -1622,8 +1643,8 @@
 				item: "scguns:charged_amethyst_shard"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 2.0d
+			x: 14.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["1CBD49955AFAF545"]
@@ -1640,8 +1661,8 @@
 				type: "item"
 			}]
 			title: "更高效的生产"
-			x: -1.0d
-			y: 3.0d
+			x: 5.0d
+			y: 15.5d
 		}
 		{
 			dependencies: ["56F4C82F40DFA8F5"]
@@ -1664,8 +1685,8 @@
 				type: "item"
 			}]
 			title: "模块化蓄电池"
-			x: 4.0d
-			y: -8.0d
+			x: 10.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["3E60B78B0EE34B75"]
@@ -1724,8 +1745,8 @@
 				}
 			]
 			title: "组装灌装机"
-			x: 7.0d
-			y: -3.0d
+			x: 13.0d
+			y: 9.5d
 		}
 		{
 			dependencies: [
@@ -1740,8 +1761,8 @@
 				item: "kubejs:molten_za_bucket"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -6.0d
+			x: 12.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
@@ -1771,8 +1792,8 @@
 				}
 			]
 			title: "金刚钻"
-			x: 5.0d
-			y: -4.0d
+			x: 11.0d
+			y: 8.5d
 		}
 	]
 	subtitle: ["Roaring Machinery"]

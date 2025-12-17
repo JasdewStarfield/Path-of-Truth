@@ -583,12 +583,22 @@
 							"patchouli:book": "irons_spellbooks:iss_guide_book"
 						}
 					}
-					match_nbt: true
 					type: "item"
 				}
 				{
 					id: "6AECC6B3C7F88EC0"
 					item: "ftbquests:book"
+					type: "item"
+				}
+				{
+					id: "5A76C6D4341FF502"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "alexsmobsinteraction:ami_interaction_wiki"
+						}
+					}
 					type: "item"
 				}
 				{
@@ -600,7 +610,6 @@
 							"patchouli:book": "goety:black_book"
 						}
 					}
-					match_nbt: true
 					type: "item"
 				}
 				{
@@ -612,7 +621,6 @@
 							"patchouli:book": "goety:witches_brew"
 						}
 					}
-					match_nbt: true
 					type: "item"
 				}
 				{
@@ -624,7 +632,6 @@
 							"patchouli:book": "eclipticseasons:seasons_chronicle"
 						}
 					}
-					match_nbt: true
 					type: "item"
 				}
 			]
