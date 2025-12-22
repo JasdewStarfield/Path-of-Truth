@@ -177,6 +177,10 @@ ServerEvents.recipes(event => {
   })
   event.shapeless(Item.of('scguns:phosphor_dust', 9), ['#forge:storage_blocks/phosphor'])
 
+  //疣猪火腿和疣猪肉的修复
+  event.shapeless(Item.of('nethersdelight:hoglin_loin', 2), ['netherexp:hogham'])
+  event.shapeless(Item.of('nethersdelight:hoglin_sirloin', 2), ['netherexp:cooked_hogham'])
+
   //下面是一些重复配方的移除
   event.replaceInput(
     {id:'bucketlib:farmersdelight/wheat_dough_from_water'},
