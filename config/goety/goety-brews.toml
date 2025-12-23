@@ -348,3 +348,128 @@
 	#Range: > 0
 	maxBottlingLevel = 5
 
+["Vanilla Extra Capacity"]
+	#Absorption Extra Capacity, Default: 1
+	#Range: > 0
+	absorptionCapacity = 1
+	#Harming Extra Capacity, Default: 1
+	#Range: > 0
+	harmingCapacity = 1
+	#Healing Extra Capacity, Default: 1
+	#Range: > 0
+	healingCapacity = 1
+	#Health Boost Extra Capacity, Default: 2
+	#Range: > 0
+	healthBoostCapacity = 2
+	#Levitation Extra Capacity, Default: 2
+	#Range: > 0
+	levitationCapacity = 2
+	#Resistance Extra Capacity, Default: 6
+	#Range: > 0
+	resistanceCapacity = 6
+	#Wither Extra Capacity, Default: 1
+	#Range: > 0
+	witherCapacity = 1
+
+["Modded Capacity"]
+
+	["Modded Capacity"."Status Effects"]
+		#Bottling Extra Capacity, Default: 4
+		#Range: > 0
+		bottlingCapacity = 4
+		#Corpse Eater Extra Capacity, Default: 4
+		#Range: > 0
+		corpseEaterCapacity = 4
+		#Cursed Extra Capacity, Default: 4
+		#Range: > 0
+		cursedCapacity = 4
+		#Deflective Extra Capacity, Default: 4
+		#Range: > 0
+		deflectiveCapacity = 4
+		#Evil Eye Extra Capacity, Default: 4
+		#Range: > 0
+		evilEyeCapacity = 4
+		#Explosive Extra Capacity, Default: 2
+		#Range: > 0
+		explosiveCapacity = 2
+		#Fiery Aura Extra Capacity, Default: 2
+		#Range: > 0
+		fieryAuraCapacity = 2
+		#Fire Trail Extra Capacity, Default: 4
+		#Range: > 0
+		fireTrailCapacity = 4
+		#Fortunate Extra Capacity, Default: 6
+		#Range: > 0
+		fortunateCapacity = 6
+		#Frosty Aura Extra Capacity, Default: 2
+		#Range: > 0
+		frostyAuraCapacity = 2
+		#Gravity Pulse Extra Capacity, Default: 2
+		#Range: > 0
+		gravityPulseCapacity = 2
+		#Nyctophobia Extra Capacity, Default: 4
+		#Range: > 0
+		nyctophobiaCapacity = 4
+		#Plunge Extra Capacity, Default: 4
+		#Range: > 0
+		plungeCapacity = 4
+		#Radiance Extra Capacity, Default: 2
+		#Range: > 0
+		radianceCapacity = 2
+		#Rallying Extra Capacity, Default: 2
+		#Range: > 0
+		rallyingCapacity = 2
+		#Save Effects Extra Capacity, Default: 2
+		#Range: > 0
+		saveEffectsCapacity = 8
+		#Shielding Extra Capacity, Default: 2
+		#Range: > 0
+		shieldingCapacity = 2
+		#Snow Skin Extra Capacity, Default: 4
+		#Range: > 0
+		snowSkinCapacity = 4
+		#Storm's Wrath Extra Capacity, Default: 4
+		#Range: > 0
+		stormsWrathCapacity = 4
+		#Sun Allergy Extra Capacity, Default: 4
+		#Range: > 0
+		sunAllergyCapacity = 4
+		#Swirling Extra Capacity, Default: 2
+		#Range: > 0
+		swirlingCapacity = 2
+		#Wild Rage Extra Capacity, Default: 2
+		#Range: > 0
+		wildRageCapacity = 2
+
+	["Modded Capacity"."Block/Other Effects"]
+		#Bat Burst Extra Capacity, Default: 2
+		#Range: > 0
+		batBurstCapacity = 2
+		#BEEEEES Extra Capacity, Default: 1
+		#Range: > 0
+		beesCapacity = 1
+		#Combust Extra Capacity, Default: 1
+		#Range: > 0
+		combustCapacity = 1
+		#Explode Extra Capacity, Default: 4
+		#Range: > 0
+		explodeCapacity = 4
+		#Flooding Extra Capacity, Default: 2
+		#Range: > 0
+		floodingCapacity = 2
+		#Purify Debuffs Extra Capacity, Default: 2
+		#Range: > 0
+		purifyDebuffsCapacity = 2
+		#Purify Buffs Extra Capacity, Default: 2
+		#Range: > 0
+		purifyBuffsCapacity = 2
+		#Raise Dead Extra Capacity, Default: 2
+		#Range: > 0
+		raiseDeadCapacity = 2
+		#Strip Armor Extra Capacity, Default: 2
+		#Range: > 0
+		stripArmorCapacity = 2
+		#Webbed Extra Capacity, Default: 1
+		#Range: > 0
+		webbedCapacity = 1
+

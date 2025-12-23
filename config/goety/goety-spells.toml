@@ -1490,6 +1490,12 @@
 		#Time to cast Biomine Spell, Default: 40
 		#Range: 0 ~ 72000
 		biomineTime = 40
+		#How much base damage Biomine explosion deals, Default: 3.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		biomineDamage = 3.0
+		#How much base damage Biomine acid cloud deals, Default: 2.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		biomineAcidDamage = 2.0
 
 	[Spells."Bombardment Spell"]
 		#Bombardment Spell Cost, Default: 8
@@ -1640,7 +1646,7 @@
 		#Range: > 0
 		stellarCost = 16
 		#Time to cast Stellar Spell, Default: 35
-		#Range: 0 ~ 72000
+		#Range: 15 ~ 72000
 		stellarDuration = 35
 		#Stellar Spell Cooldown, Default: 100
 		#Range: > 0
@@ -1663,6 +1669,20 @@
 		#Range: 1.0 ~ 1.7976931348623157E308
 		voidFlashDamage = 7.0
 
+	[Spells."Water Whip Spell"]
+		#Water Whip Spell Cost, Default: 16
+		#Range: > 0
+		waterWhipCost = 16
+		#Time to cast Water Whip Spell, Default: 0
+		#Range: 0 ~ 72000
+		waterWhipTime = 0
+		#Water Whip Spell Cooldown, Default: 10
+		#Range: > 0
+		waterWhipCoolDown = 10
+		#How much base damage the spell deals, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		waterWhipDamage = 4.0
+
 [Enchantments]
 	#Soul Eater Maximum Enchantment Level, Default: 5
 	#Range: 1 ~ 10
@@ -1676,7 +1696,7 @@
 	#Wanting Maximum Enchantment Level, Default: 3
 	#Range: 1 ~ 10
 	maxWantingLevel = 3
-	#Range Maximum Enchantment Level, Default: 10
+	#Range Maximum Enchantment Level, Default: 5
 	#Range: 1 ~ 10
 	maxRangeLevel = 10
 	#Duration Maximum Enchantment Level, Default: 3
@@ -1688,6 +1708,11 @@
 	#Burning Maximum Enchantment Level, Default: 3
 	#Range: 1 ~ 10
 	maxBurningLevel = 3
+	#Whether Focus Enchantments can appear on Villager Trade Pools, Default: true
+	focusEnchantsTrades = true
+	#How much power Potency increases, Default: 1
+	#Range: > 1
+	potencyPower = 1
 
 [General]
 	#Whether Servants are killed/dismissed by hitting them while crouching with a wand or staff, put 1 to make them change by right-clicking on them while crouching, put 2 to disable it, Default: 0
@@ -1703,9 +1728,12 @@
 	summonDown = true
 	#Spells have their soul cost reduced or increased depending on the surroundings around the caster, Default: true
 	environmentalCost = true
-	#Multiplies the damage of spells by this amount, Default: 1
+	#Multiplies the damage of spells by this amount, this will will be multiplied by 'spellDamageMultiplierDecimal', Default: 1
 	#Range: > 1
 	spellDamageMultiplier = 1.5
 	#Whether Servants change navigation modes by hitting them, put false to make them change by right-clicking on them, Default: true
 	ownerHitCommand = true
+	#Multiplies the damage of spells by this amount in decimals, this will will be multiplied by 'spellDamageMultiplier', Default: 1.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	spellDamageMultiplierDecimal = 1.0
 

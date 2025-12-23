@@ -339,6 +339,7 @@ colorwheel_patcher = "client"
 realisticnametag = "client"
 certain_questing_additions = "client"
 generalfeedback = "client"
+clientsort = "default"
 
 [Debug]
 debugForceSide = "default"

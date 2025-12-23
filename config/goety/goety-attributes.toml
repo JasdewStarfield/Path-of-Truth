@@ -963,6 +963,28 @@
 			#Range: 1.0 ~ 1.7976931348623157E308
 			snarelingDamage = 2.0
 
+		[Attributes."Summoned Mobs"."Signaler Servant"]
+			#How much Max Health Signaler Servants have, Default: 24.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			signalerServantHealth = 24.0
+			#How much natural Armor Signaler Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			signalerServantArmor = 0.0
+			#How much initial following/detection range Signaler Servants have, Default: 32.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			signalerServantFollowRange = 32.0
+
+		[Attributes."Summoned Mobs".Gnasher]
+			#How much Max Health Gnashers have, Default: 30.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			gnasherHealth = 30.0
+			#How much natural Armor Gnashers have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			gnasherArmor = 0.0
+			#How much damage Gnashers melee attack deals, Default: 6.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			gnasherDamage = 6.0
+
 	[Attributes.Illagers]
 		#How much Max Health Conquillager have, Default: 24.0
 		#Range: 1.0 ~ 1.7976931348623157E308

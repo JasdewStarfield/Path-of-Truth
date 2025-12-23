@@ -43,6 +43,8 @@
 		#How many Minecraft days, since spawning in, until unowned Obsidian Monoliths start spreading, Default: 3
 		#Range: > 1
 		obsidianMonolithStartUpTime = 3
+		#Whether unowned Obsidian Monoliths can spawn Mobs, Default: true
+		obsidianMonolithSpawner = true
 
 	[Misc.Apostle]
 		#Whether Apostles causes Villagers within 32 blocks of themselves to have a chance of converting into a Witch or Warlock. Default: true
@@ -55,6 +57,10 @@
 		apocalypseMode = false
 		#Whether Apostles are persistent and do not naturally despawn. Default: false
 		apostlePersistent = true
+
+	[Misc.Crone]
+		#Whether Crones inflict thorn damage at attackers, when attacked. Default: true
+		croneThornDefense = true
 
 [Servants]
 	#Enable Redstone Cubes block detection mechanic, Default: true
@@ -111,6 +117,8 @@
 	raiderServantWearArmor = true
 	#Whether Servants owned by other Servants benefits from Player Robes and Crown, Default: true
 	servantOwnedServantPlayerBenefit = true
+	#Whether servants can apply harmful status effects to their owner/allies, Default: false
+	servantsHarmEffectApply = false
 
 	[Servants."Water Servants"]
 		#How frequent Water Servants heal, count seconds, Default: 1
