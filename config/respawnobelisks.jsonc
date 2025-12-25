@@ -10,6 +10,18 @@
     "preset": "none",
     // Whether players are allowed to respawn at an obelisk in hardcore mode.
     "allowHardcoreRespawning": true,
+    "clientOptions": {
+        // Minimum texture x value for obelisk rune rendering.
+        "minTextureX": 3,
+        // Maximum texture x value for obelisk rune rendering.
+        "maxTextureX": 12,
+        // Minimum texture y value for obelisk rune rendering.
+        "minTextureY": 2,
+        // Maximum texture y value for obelisk rune rendering.
+        "maxTextureY": 14,
+        // How far inwards/outwards the runes are from the obelisk(in pixels).
+        "zPos": 5.505
+    },
     "behaviorOverrides": {
         /*
         A list of blocks that players cannot respawn at.
@@ -223,7 +235,7 @@
         // The minimum amount of max radiance a wild obelisk will spawn with. (inclusive)
         "wildMinMaxRadiance": 100,
         // The maximum amount of max radiance a wild obelisk will spawn with. (exclusive)
-        "wildMaxMaxRadiancee": 101
+        "wildMaxMaxRadiance": 101
     },
     "respawnPerks": {
         // Minimum radiance required to keep items on death when respawning at obelisks. Negative amounts (or 0) will disable this requirement.

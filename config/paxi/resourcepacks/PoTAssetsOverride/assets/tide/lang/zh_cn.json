@@ -19,5 +19,24 @@
   "profile.info.location.undergarden": "深暗之园水域",
 
   "item.tide.aquathorn": "神殿之矛",
-  "profile.item.tide.aquathorn": "自从海底神殿建成以来，这种鱼类便已存在。尽管大多数同类已经进化为体型更大、力量更强的物种，这些鱼依然凭借它们出色的防御机制存续至今。"
+  "profile.item.tide.aquathorn": "自从海底神殿建成以来，这种鱼类便已存在。尽管大多数同类已经进化为体型更大、力量更强的物种，这些鱼依然凭借它们出色的防御机制存续至今。",
+
+  "accessory.item.hybrid-aquatic.barbed_hook": "有刺钩",
+  "accessory.item.hybrid-aquatic.creepermagnet_hook": "苦力怕磁铁钩",
+  "accessory.item.hybrid-aquatic.glowing_hook": "发光钩",
+  "accessory.item.hybrid-aquatic.magnetic_hook": "磁力钩",
+  "accessory.item.hybrid-aquatic.ominous_hook": "不祥之钩",
+  "item.tide.torn_note": "撕破的笔记",
+  "item.tide.torn_note.variant.desert_well": "沙漠之井",
+  "item.tide.torn_note.variant.empty": "空",
+  "item.tide.torn_note.variant.lucky": "非常幸运",
+  "item.tide.torn_note.variant.stars_over_ocean": "海洋上空的星星",
+  "item.tide.torn_note.variant.the_end": "结局",
+  "journal.content.structure": "这些鱼更喜欢头上有屋顶，在遍布世界各地的建筑物和纪念碑的水域中闲逛。",
+  "journal.title.structure": "结构鱼",
+  "profile.info.location.monument": "海底神殿",
+  "text.tide.rod_tooltip.crystal_bonus": "鱼咬钩时发出声音",
+  "text.tide.rod_tooltip.diamond_bonus": "额外经验值",
+  "text.tide.rod_tooltip.gold_bonus": "额外幸运",
+  "text.tide.rod_tooltip.netherite_bonus": "熔岩里可以钓鱼"
 }

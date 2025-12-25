@@ -1,0 +1,6 @@
+{
+  "block.respawnobelisks.radiant_flame": "耀光火焰",
+  "item.respawnobelisks.radiant_lantern": "耀光灯笼",
+  "text.respawnobelisks.tooltip.radiant_lantern.empty": "一种古老的力量或许能够点燃这盏灯……",
+  "text.respawnobelisks.tooltip.radiant_lantern.full": "也许这灯笼的火焰可以独立存在……"
+}
