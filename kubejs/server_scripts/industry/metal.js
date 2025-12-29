@@ -371,6 +371,13 @@ ServerEvents.recipes(event => {
     //禁止致密碳
     event.remove({ id: "scguns:create/soul_soil" })
 
+    //烈焰粉注液配方
+    event.recipes.create.sequenced_assembly([
+        Item.of('minecraft:light_gray_dye').withChance(0.75),
+        Item.of('minecraft:blaze_powder').withChance(0.25)
+    ], '#forge:dusts/sulfur', [
+        event.recipes.createFilling('minecraft:blaze_powder', ['minecraft:blaze_powder', Fluid.of('minecraft:lava', 200)])
+    ]).transitionalItem('minecraft:blaze_powder').loops(1)
 
     //霜火双层板
     event.recipes.create.compacting('kubejs:frostfire_double_plate', ['#forge:plates/froststeel', '#forge:slimeballs', '#forge:plates/horizonite'])

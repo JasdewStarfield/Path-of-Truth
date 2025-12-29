@@ -138,7 +138,7 @@
 	#- DISABLED: Accelerated Rendering will not accelerate item models that are marked as "too small to make up the cost of acceleration" when rendering it in a container GUI unless mods explicitly enable it temporarily when rendering their own item models.
 	#- ENABLED: Accelerated Rendering will still accelerate item models that are marked as "too small to make up the cost of acceleration" when rendering it in a container GUI unless mods explicitly disable it temporarily when rendering their own item models, which may slightly reduce the FPS but accelerate vanilla-like modded item models with large amount of vertices.
 	#Allowed Values: DISABLED, ENABLED
-	gui_acceleration = "DISABLED"
+	gui_acceleration = "ENABLED"
 	#- DISABLED: Items in the container GUI will be rendered as per item per batch if the GUI Acceleration is enabled, which is inefficient and may cause reduction in FPS, but it has better compatibility in modded container GUI.
 	#- ENABLED: Items in the container will be rendered together in a single batch if the GUI Acceleration is enabled, which is much more efficient but has little compatibility in modded container GUI.
 	#Allowed Values: DISABLED, ENABLED
