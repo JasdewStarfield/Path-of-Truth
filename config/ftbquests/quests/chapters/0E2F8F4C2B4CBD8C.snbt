@@ -2084,13 +2084,8 @@
 					type: "item"
 				}
 				{
-					id: "7ADE016917FD9E8C"
-					item: "iammusicplayer:cassette_deck"
-					type: "item"
-				}
-				{
-					id: "7BC576B26B7B2066"
-					item: "iammusicplayer:music_manager"
+					id: "24E318604B732FCF"
+					item: "etched:album_jukebox"
 					type: "item"
 				}
 			]
@@ -2333,6 +2328,11 @@
 				{
 					id: "33F6A0BE4C6C00E3"
 					item: "biomeswevegone:music_disc_pixie_club"
+					type: "item"
+				}
+				{
+					id: "077342511FE750F1"
+					item: "eclipticseasons:snowless_hometown"
 					type: "item"
 				}
 			]
@@ -2700,6 +2700,24 @@
 				"法球可以添加在任何一件盔甲（即使不是铁魔法系列盔甲）上，但&l&4不可拆卸&r&r，请谨慎抉择。"
 				"注：为了符合本整合包难度，这些胸甲都需要泰拉钢进行合成来凑齐套装。"
 			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						insulation: [ ]
+					}
+				}
+				id: "irons_spellbooks:priest_chestplate"
+				tag: {
+					Damage: 0
+					ISB_Spells: {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
+			}
 			id: "632463395A3B4755"
 			rewards: [
 				{
@@ -2972,6 +2990,7 @@
 		{
 			dependencies: ["374C430D0AD70D2E"]
 			description: ["卷轴易碎，知识永存。"]
+			icon: "goety:bygone_scroll"
 			id: "2CC30C12A97CA45F"
 			rewards: [{
 				id: "7EFCAF5712F89130"
@@ -3070,6 +3089,13 @@
 				"霜冻之刃来自墓穴的白骨领主，但也有几率在陶瓷坛内发现。"
 				"堕落之刃是缠魂甲胄的装备。"
 			]
+			icon: {
+				Count: 1
+				id: "goety:frozen_blade"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "3ABDF141ABA6CA8C"
 			rewards: [{
 				id: "79428E1F8AC61C87"

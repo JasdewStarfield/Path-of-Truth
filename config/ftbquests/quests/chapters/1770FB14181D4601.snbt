@@ -20,7 +20,7 @@
 			rotation: 0.0d
 			width: 10.0d
 			x: 0.0d
-			y: 9.0d
+			y: 12.0d
 		}
 		{
 			height: 2.0d
@@ -49,7 +49,7 @@
 				"默认情况下，按“`”可以重新装填，按“z”可以查看配件，“Shift+v”还可以近战攻击……"
 				"一个全新的战斗时代已经在你面前展开……"
 				""
-				"下面的蓝图任务分为两个分支：左侧和右侧，分别代表材料蓝图和探索蓝图。其中，材料蓝图可以在获得对应材料后直接制作，而探索蓝图则需要探索对应结构才能获取。"
+				"制作枪械需要蓝图。除了最基础的两种蓝图以外，其余蓝图需要战胜特殊袭击后才能获取关键材料。"
 			]
 			icon: {
 				Count: 1
@@ -70,7 +70,7 @@
 			}]
 			title: "新的开始"
 			x: 0.0d
-			y: 0.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
@@ -84,7 +84,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
@@ -96,7 +96,7 @@
 				item: "scguns:copper_blueprint"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.0d
 			y: 3.0d
 		}
 		{
@@ -109,8 +109,8 @@
 				item: "scguns:iron_blueprint"
 				type: "item"
 			}]
-			x: -4.5d
-			y: 4.5d
+			x: -4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
@@ -122,8 +122,8 @@
 				item: "scguns:treated_brass_blueprint"
 				type: "item"
 			}]
-			x: -6.0d
-			y: 6.0d
+			x: -4.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
@@ -135,8 +135,8 @@
 				item: "scguns:diamond_steel_blueprint"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 7.5d
+			x: -2.0d
+			y: 10.5d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
@@ -148,7 +148,7 @@
 				item: "scguns:ocean_blueprint"
 				type: "item"
 			}]
-			x: 3.0d
+			x: 2.0d
 			y: 3.0d
 		}
 		{
@@ -164,8 +164,8 @@
 				item: "scguns:piglin_blueprint"
 				type: "item"
 			}]
-			x: 4.5d
-			y: 4.5d
+			x: 4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
@@ -177,8 +177,8 @@
 				item: "scguns:deep_dark_blueprint"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 6.0d
+			x: 4.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
@@ -190,8 +190,8 @@
 				item: "scguns:end_blueprint"
 				type: "item"
 			}]
-			x: 7.5d
-			y: 7.5d
+			x: 2.0d
+			y: 10.5d
 		}
 		{
 			dependencies: [
@@ -206,6 +206,23 @@
 			]
 			description: ["收集齐全部蓝图后，你就可以解锁全游戏最强的枪械种类：焦化枪械。"]
 			id: "548E55016926A7C4"
+			rewards: [
+				{
+					id: "34EEDF9ABFE1A226"
+					item: "scguns:scorched_blend"
+					type: "item"
+				}
+				{
+					id: "6D2C4B6461BE20C2"
+					item: "scguns:scorched_ingot"
+					type: "item"
+				}
+				{
+					id: "599BDCCA6EC51A0E"
+					item: "scguns:scorched_gun_frame"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 2.0d
 			subtitle: "超越想象"
@@ -215,7 +232,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 7.5d
+			y: 7.0d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
@@ -229,6 +246,20 @@
 				}
 			}
 			id: "3B8F97E211EF077C"
+			rewards: [
+				{
+					count: 16
+					id: "5D6665C5592E8FCD"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "3C57AE47152B4371"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+			]
 			subtitle: "只用石头和木头就能做出堪堪能用的基础枪械"
 			tasks: [
 				{
@@ -243,8 +274,8 @@
 				}
 			]
 			title: "新手上路"
-			x: -1.0d
-			y: 2.5d
+			x: -1.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
@@ -268,11 +299,11 @@
 				}
 			]
 			title: "神秘交易"
-			x: 1.0d
-			y: 2.5d
+			x: 1.5d
+			y: 0.0d
 		}
 		{
-			dependencies: ["40D34B60BD7011DD"]
+			dependencies: ["42008C71DAD852B7"]
 			description: [
 				"虽然只能通过击败强大的BOSS掉落，但是它可以让你制作一些特殊的，有槽位的盔甲！"
 				"初始的盔甲很弱是一码事，加装升级后的强度是另一码事，比如现在你可以用电力尝试驱动盔甲的强大功能……"
@@ -290,8 +321,8 @@
 				type: "item"
 			}]
 			title: "模块化装甲"
-			x: 0.0d
-			y: 4.0d
+			x: 3.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
@@ -313,8 +344,257 @@
 				type: "item"
 			}]
 			title: "结构定位"
-			x: 0.0d
-			y: 3.0d
+			x: 2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6A7A238F9AB6FB41"]
+			icon: {
+				Count: 1
+				id: "minecraft:firework_rocket"
+				tag: {
+					Fireworks: {
+						Flight: 1b
+					}
+				}
+			}
+			id: "6044077C76F0C97F"
+			rewards: [{
+				count: 8
+				id: "5C7BD971930B61A9"
+				item: "scguns:supply_crate"
+				type: "item"
+			}]
+			subtitle: "召唤指定袭击！"
+			tasks: [
+				{
+					id: "550FC58DF028583F"
+					item: "scguns:copper_flare"
+					type: "item"
+				}
+				{
+					id: "4E4E01B3C4B37EAC"
+					item: "scguns:iron_flare"
+					type: "item"
+				}
+				{
+					id: "301985F83EB467C8"
+					item: "scguns:wrecker_flare"
+					type: "item"
+				}
+				{
+					id: "0EA1D29F64A5870C"
+					item: "scguns:ocean_flare"
+					type: "item"
+				}
+				{
+					id: "607DAEF9FB83D4E6"
+					item: "scguns:gold_flare"
+					type: "item"
+				}
+				{
+					id: "33BDE5AED6018A59"
+					item: "scguns:sculk_flare"
+					type: "item"
+				}
+				{
+					id: "0901367E34608F87"
+					item: "scguns:treated_brass_flare"
+					type: "item"
+				}
+				{
+					id: "16DA02A913EF01F6"
+					item: "scguns:diamond_steel_flare"
+					type: "item"
+				}
+			]
+			title: "“自讨苦吃”"
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6044077C76F0C97F"]
+			description: [
+				"收取你的袭击奖励！用以制造蓝图"
+				"（潜影贝核心除外，它稀有掉落自潜影贝）"
+			]
+			icon: "aquamirae:frozen_chest"
+			id: "5B6829236F03C50A"
+			rewards: [{
+				count: 24
+				id: "3753F67B0E7EE373"
+				item: "scguns:blueprint_scrap"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "现在谁才是袭击者？"
+			tasks: [
+				{
+					id: "592560F8EFAD5C92"
+					item: "scguns:rusty_medal"
+					type: "item"
+				}
+				{
+					id: "6B28F800558107C6"
+					item: "scguns:labor_trophy"
+					type: "item"
+				}
+				{
+					id: "75F36A8F6A7B7744"
+					item: "scguns:snapped_cogwheel"
+					type: "item"
+				}
+				{
+					id: "1BEADCF671CBBD07"
+					item: "scguns:leviathan_tooth"
+					type: "item"
+				}
+				{
+					id: "094F0CD2B77EEDCC"
+					item: "scguns:ceremonial_cod"
+					type: "item"
+				}
+				{
+					id: "27048500802E8CAB"
+					item: "scguns:cog_heart"
+					type: "item"
+				}
+				{
+					id: "1DC970BFF58C6817"
+					item: "scguns:gold_idol"
+					type: "item"
+				}
+				{
+					id: "17794CF69C467C5C"
+					item: "scguns:sculk_tome"
+					type: "item"
+				}
+				{
+					id: "1C2A2F603E7BFEA1"
+					item: "scguns:shulker_core"
+					type: "item"
+				}
+			]
+			title: "我可以需求这份装备吗？"
+			x: -5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: ["同时，根据你目前的枪械等级，袭击也会自然产生。"]
+			id: "6A7A238F9AB6FB41"
+			rewards: [{
+				id: "6A26562BBF06432F"
+				item: "scguns:white_flag"
+				type: "item"
+			}]
+			tasks: [{
+				id: "77149D5C67FC55BB"
+				item: "scguns:flare_pistol"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3270686208C6C37D"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						insulation: [ ]
+					}
+				}
+				id: "scguns:exo_suit_helmet"
+				tag: {
+					Damage: 0
+					insulation: [ ]
+				}
+			}
+			id: "68CEF10C15322E97"
+			rewards: [{
+				count: 4
+				id: "2F7500190F65759D"
+				item: "create_compressed:mechanism_block"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			subtitle: "机械飞升！"
+			tasks: [
+				{
+					id: "2790A536E5BB5200"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "scguns:exo_suit_helmet"
+						tag: {
+							Damage: 0
+							insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "341715FAD09941F7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "scguns:exo_suit_chestplate"
+						tag: {
+							Damage: 0
+							insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6578B8F1234B953F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "scguns:exo_suit_leggings"
+						tag: {
+							Damage: 0
+							insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "524DA0CE35491B8A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "scguns:exo_suit_boots"
+						tag: {
+							Damage: 0
+							insulation: [ ]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "血肉苦弱"
+			x: 5.0d
+			y: 1.5d
 		}
 	]
 	subtitle: ["Life of a Gunsmith"]
