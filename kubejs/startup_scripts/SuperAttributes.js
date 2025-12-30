@@ -50,6 +50,13 @@
             itemStack: { id, item },
             slotType: slot,
         } = e
+        if (id == 'immersiveengineering:shield') {
+            if (slot == 'mainhand' || slot == 'offhand') {
+                //修改重型盾牌
+                Attrs.init(e)
+                    .add(Attributes.ARMOR, 6)
+            }
+        }
         if (slot == 'mainhand' && id.startsWith('minecraft:netherite_') && item instanceof TieredItem) {
             //修改下界合金工具
             if (item?.type?.slot)

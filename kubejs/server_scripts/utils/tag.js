@@ -179,6 +179,20 @@ const Backpacks = [
     'sophisticatedbackpacks:netherite_backpack'
 ]
 
+const SteelArmor = [
+    'immersiveengineering:armor_steel_helmet',
+    'immersiveengineering:armor_steel_chestplate',
+    'immersiveengineering:armor_steel_leggings',
+    'immersiveengineering:armor_steel_boots'
+]
+
+const FaradayArmor = [
+    'immersiveengineering:armor_faraday_helmet',
+    'immersiveengineering:armor_faraday_chestplate',
+    'immersiveengineering:armor_faraday_leggings',
+    'immersiveengineering:armor_faraday_boots'
+]
+
 const NonMovable = [
     //所有多方块
     'immersiveengineering:crusher',
@@ -446,6 +460,12 @@ ServerEvents.tags("item", (event) => {
 
     //给予生命恢复效果的护甲
     RegenerativeArmor.forEach((id) => event.add("kubejs:regenerative_armor", id))
+
+    //钢制护甲
+    SteelArmor.forEach((id) => event.add("kubejs:steel_armor", id))
+
+    //法拉第护甲
+    FaradayArmor.forEach((id) => event.add("kubejs:faraday_armor", id))
 
     //修复非蛋白质物品可以用来制作卷心菜卷
     event.remove("farmersdelight:cabbage_roll_ingredients","#forge:mushrooms")

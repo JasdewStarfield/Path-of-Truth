@@ -29,6 +29,9 @@
     "item.kubejs.amethyst_shard.desc": "Emits echo when being close to skulk blocks...",
     "item.kubejs.echo_shard.desc": "Seems like a kind of mineral shard being corrupted by skulks...",
 
+    "item.kubejs.steel_armor.desc": "Wearing a full set of steel armor grants you Resistance II effect",
+    "item.kubejs.faraday_armor.desc": "Wearing a full set of Faraday armor grants you Charged effect",
+
     "item.kubejs.obelisk_base.desc1": "You feel a strong power emitting from this block...",
     "item.kubejs.obelisk_base.desc2": "If you put it under the obelisk, then it will recieve infinite charge (but you cannot move the base after placement)",
     "item.kubejs.diamond_gears.desc": "Although this diamond gear seems to have an excellent capability, it is quite easy for it to be damaged and destroyed...",

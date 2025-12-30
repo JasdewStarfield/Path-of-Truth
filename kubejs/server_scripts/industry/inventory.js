@@ -56,6 +56,8 @@ PlayerEvents.tick(event => {
             ]
             let radioactiveArmorCount = armorPieces.filter(armor => armor != null && armor.hasTag("createnuclear:anti_radiation_armor")).length;
             let regenerativeArmorCount = armorPieces.filter(armor => armor != null && armor.hasTag("kubejs:regenerative_armor")).length;
+            let steelArmorCount = armorPieces.filter(armor => armor != null && armor.hasTag("kubejs:steel_armor")).length;
+            let faradayArmorCount = armorPieces.filter(armor => armor != null && armor.hasTag("kubejs:faraday_armor")).length;
             if (radioactiveArmorCount != 4) {   //未穿戴全套防辐射装备
                 if (radioactiveItemCount >= 16 && radioactiveItemCount <= 64) {    //物品栏内有铀物品16-64个，则给予携带者3s中毒1
                     event.player.potionEffects.add("minecraft:poison", 60, 0, false, true)
@@ -71,6 +73,12 @@ PlayerEvents.tick(event => {
             }
             if (regenerativeArmorCount == 4) {   //穿戴全套再生装备
                 event.player.potionEffects.add("minecraft:regeneration", 200, 2, true, false)   //给予携带者10s再生3
+            }
+            if (steelArmorCount == 4) {   //穿戴全套钢铁装备
+                event.player.potionEffects.add("minecraft:resistance", 200, 1, true, false)   //给予携带者10s抗性提升2
+            }
+            if (faradayArmorCount == 4) {   //穿戴全套法拉第装备
+                event.player.potionEffects.add("irons_spellbooks:charged", 200, 0, true, false)   //给予携带者10s超负荷效果
             }
             //event.player.tell(event.player.inventory.count(Ingredient.of("#kubejs:radioactive")).toString())
             //event.player.tell(armorPieces.filter(armor => armor != null && armor.hasTag("createnuclear:anti_radiation_armor")).length.toString())
