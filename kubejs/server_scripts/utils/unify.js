@@ -181,6 +181,35 @@ ServerEvents.recipes(event => {
   event.shapeless(Item.of('nethersdelight:hoglin_loin', 2), ['netherexp:hogham'])
   event.shapeless(Item.of('nethersdelight:hoglin_sirloin', 2), ['netherexp:cooked_hogham'])
 
+  //新版本配方backport
+  event.remove({id: 'minecraft:lodestone'})
+  event.shaped(Item.of('minecraft:lodestone'), [ 
+    'AAA', 
+    'ABA',
+    'AAA'
+  ], {
+    A: 'chiseled_stone_bricks',
+    B: '#forge:raw_materials/iron'
+  })
+
+  event.remove({id: 'minecraft:lead'})
+  event.remove({id: 'undergarden:undergarden_lead'})
+  event.shaped(Item.of('minecraft:lead', 2), [ 
+    'AA ', 
+    'AA ',
+    '  A'
+  ], {
+    A: '#forge:string'
+  })
+
+  event.shaped(Item.of('minecraft:saddle'), [ 
+    'AAA', 
+    'ABA'
+  ], {
+    A: '#forge:leather',
+    B: '#forge:ingots/iron'
+  })
+
   //下面是一些重复配方的移除
   event.replaceInput(
     {id:'bucketlib:farmersdelight/wheat_dough_from_water'},
@@ -212,5 +241,6 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'farmersdelight:cutting/saddle' })
   event.remove({ id: 'vintageimprovements:centrifugation/mud' })
   event.remove({ id: 'vintageimprovements:pressurizing/compat/sulfur_dioxide_from_dust' })
+  event.remove({ id: 'storagedrawers:detached_drawer' })
 
 })
