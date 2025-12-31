@@ -713,17 +713,22 @@
 					type: "item"
 				}
 				{
-					id: "61229D24AEE38CF0"
+					id: "1C472A163053C01C"
 					item: {
 						Count: 1
 						id: "minecraft:enchanted_book"
 						tag: {
 							StoredEnchantments: [{
 								id: "majruszsenchantments:fishing_fanatic"
-								lvl: 7s
+								lvl: 8s
 							}]
 						}
 					}
+					type: "item"
+				}
+				{
+					id: "66FA12ECD6D41CF0"
+					item: "tide:nautilus_fishing_bobber"
 					type: "item"
 				}
 			]
@@ -1595,7 +1600,10 @@
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
-			description: ["哦天啊，制杖并贩剑（确信"]
+			description: [
+				"哦天啊，制杖并贩剑（确信"
+				"这可以让你跳过攻打使徒的过程……"
+			]
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:blood_staff"
 			id: "722556B2244FD56A"
@@ -2003,6 +2011,22 @@
 					item: {
 						Count: 1
 						id: "alshanex_familiars:familiar_spellbook"
+						tag: {
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 10
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4186048BDD8132DE"
+					item: {
+						Count: 1
+						id: "alshanex_familiars:sound_spell_book"
 						tag: {
 							ISB_Spells: {
 								data: [ ]
@@ -2697,16 +2721,11 @@
 			dependencies: ["0F9DF1C5137194E4"]
 			description: [
 				"你终将成为全能者。"
-				"法球可以添加在任何一件盔甲（即使不是铁魔法系列盔甲）上，但&l&4不可拆卸&r&r，请谨慎抉择。"
+				"法球可以添加在任何一件盔甲（即使不是铁魔法系列盔甲）上，但&l&4不可拆卸仅可删除&r&r，请谨慎抉择。"
 				"注：为了符合本整合包难度，这些胸甲都需要泰拉钢进行合成来凑齐套装。"
 			]
 			icon: {
 				Count: 1
-				ForgeCaps: {
-					"cold_sweat:item_insulation": {
-						insulation: [ ]
-					}
-				}
 				id: "irons_spellbooks:priest_chestplate"
 				tag: {
 					Damage: 0
@@ -2773,6 +2792,11 @@
 				{
 					id: "4E3442A740D7D2B2"
 					item: "irons_spellbooks:protection_upgrade_orb"
+					type: "item"
+				}
+				{
+					id: "055A96661C24B54C"
+					item: "alshanex_familiars:sound_upgrade_orb"
 					type: "item"
 				}
 			]

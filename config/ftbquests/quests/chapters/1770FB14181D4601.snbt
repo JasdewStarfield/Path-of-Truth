@@ -194,7 +194,7 @@
 				type: "xp_levels"
 				xp_levels: 5
 			}]
-			subtitle: "堡垒珍藏"
+			subtitle: "金光闪闪！"
 			tasks: [{
 				id: "6380600E3ABD839A"
 				item: "scguns:piglin_blueprint"
@@ -327,8 +327,8 @@
 		{
 			dependencies: ["40D34B60BD7011DD"]
 			description: [
-				"通过交易协议，你可以召唤一位存在一定时间的“黄铜游商”前来和你交易，而它会提供一些物有所值的商品和&9一种独特的蓝图&r。"
-				"和传统游商不同的是，它在被攻击的时候会呼叫支援，而且远不只是两头羊驼。"
+				"通过契约，你可以召唤一位存在一定时间的“黄铜游商”前来和你交易，而它会提供一些弹药，成品枪械，有几率售卖蓝图核心材料。"
+				"和传统游商不同的是，它在被攻击的时候会呼叫支援，而且远不只是两头羊驼……并且没有掉落物。"
 			]
 			icon: "minecraft:emerald"
 			id: "764AEF73C28872DD"
@@ -339,18 +339,11 @@
 			}]
 			shape: "diamond"
 			subtitle: "芝麻开门"
-			tasks: [
-				{
-					id: "6AB6A4B259E5B51C"
-					item: "scguns:the_pact"
-					type: "item"
-				}
-				{
-					id: "305F3C61CB3F3022"
-					item: "scguns:wrecker_blueprint"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6AB6A4B259E5B51C"
+				item: "scguns:the_pact"
+				type: "item"
+			}]
 			title: "神秘交易"
 			x: 1.5d
 			y: 0.0d
@@ -402,6 +395,13 @@
 		}
 		{
 			dependencies: ["6A7A238F9AB6FB41"]
+			description: [
+				"发射信号弹后，指定类型的袭击将被召唤。"
+				"袭击将会掉落可以制作蓝图的稀有材料以及其他的珍贵战利品。"
+				"需要注意的是，基于“真伤”体系，所有的袭击难度都较高。请确定自己做好准备后再触发它们！"
+				""
+				"&o&7*当然你也可以举白旗……&r&r"
+			]
 			icon: {
 				Count: 1
 				id: "minecraft:firework_rocket"
@@ -418,7 +418,7 @@
 				item: "scguns:supply_crate"
 				type: "item"
 			}]
-			subtitle: "召唤指定袭击！"
+			subtitle: "所有人，都过来！"
 			tasks: [
 				{
 					id: "550FC58DF028583F"
@@ -468,8 +468,8 @@
 		{
 			dependencies: ["6044077C76F0C97F"]
 			description: [
-				"收取你的袭击奖励！用以制造蓝图"
-				"（潜影贝核心除外，它稀有掉落自潜影贝）"
+				"收取你的袭击奖励！它们可用于制造蓝图）"
+				"（潜影贝核心除外，它稀有掉落自潜影贝……真的很稀有。）"
 			]
 			icon: "aquamirae:frozen_chest"
 			id: "5B6829236F03C50A"
@@ -535,13 +535,17 @@
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
-			description: ["同时，根据你目前的枪械等级，袭击也会自然产生。"]
+			description: [
+				"通过装填特定的信号弹，你可以召唤特定种类的袭击！"
+				"同时，根据你目前的枪械等级，袭击也会自然产生。"
+			]
 			id: "6A7A238F9AB6FB41"
 			rewards: [{
 				id: "6A26562BBF06432F"
 				item: "scguns:white_flag"
 				type: "item"
 			}]
+			subtitle: "一支穿云箭……"
 			tasks: [{
 				id: "77149D5C67FC55BB"
 				item: "scguns:flare_pistol"
@@ -659,11 +663,6 @@
 			]
 			icon: {
 				Count: 1
-				ForgeCaps: {
-					"cold_sweat:item_insulation": {
-						insulation: [ ]
-					}
-				}
 				id: "scguns:anthralite_helmet"
 				tag: {
 					Damage: 0
@@ -677,6 +676,7 @@
 				type: "item"
 			}]
 			shape: "diamond"
+			subtitle: "命中+1"
 			tasks: [
 				{
 					id: "7CD8E4065F43EBC7"
