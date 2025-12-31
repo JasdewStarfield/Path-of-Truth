@@ -76,6 +76,12 @@
 			dependencies: ["40D34B60BD7011DD"]
 			description: ["火药可以通过多种工业方式量产。"]
 			id: "0AA2D4BA3B7F99BF"
+			rewards: [{
+				count: 16
+				id: "39E5E773F2648D57"
+				item: "minecraft:gunpowder"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "枪总是需要火药的"
 			tasks: [{
@@ -83,13 +89,18 @@
 				item: "minecraft:gunpowder"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 1.0d
+			x: -0.5d
+			y: 0.5d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
 			description: ["但是一些枪械基本零件还是要铁。"]
 			id: "09AB3BC179AF7529"
+			rewards: [{
+				id: "658617E170971CC8"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			subtitle: "如此简单！"
 			tasks: [{
 				id: "488AD339F05E83E0"
@@ -97,12 +108,17 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
 			description: ["普普通通，但至少能做出算得上有威力的枪械了。"]
 			id: "143180BE1973BA96"
+			rewards: [{
+				id: "0750CCEA3E3CE50C"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			subtitle: "一般通过"
 			tasks: [{
 				id: "73E8B44629623673"
@@ -116,6 +132,11 @@
 			dependencies: ["40D34B60BD7011DD"]
 			description: ["更稳定的输出！"]
 			id: "05C273A40186A578"
+			rewards: [{
+				id: "177F396FA993EB5A"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			subtitle: "高级合金"
 			tasks: [{
 				id: "34456F092B925694"
@@ -129,6 +150,11 @@
 			dependencies: ["40D34B60BD7011DD"]
 			description: ["总还是比它的几位前辈要硬一些的。"]
 			id: "46243596A537F0AF"
+			rewards: [{
+				id: "575D4DAA6D37E8E2"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			subtitle: "钻石风暴"
 			tasks: [{
 				id: "424BC505720043AC"
@@ -142,6 +168,11 @@
 			dependencies: ["40D34B60BD7011DD"]
 			description: ["大部分海洋系的枪械对火焰系目标有克制效果。"]
 			id: "250253A026170224"
+			rewards: [{
+				id: "1DC153BB258FE06E"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			subtitle: "是谁住在深海的大菠萝里？"
 			tasks: [{
 				id: "62B8D29EA2D601E9"
@@ -149,7 +180,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["40D34B60BD7011DD"]
@@ -158,6 +189,11 @@
 				"有一种枪需要通过烈焰人刷怪笼完成组装……"
 			]
 			id: "661C38A15ACA2062"
+			rewards: [{
+				id: "053268AF3959CA37"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			subtitle: "堡垒珍藏"
 			tasks: [{
 				id: "6380600E3ABD839A"
@@ -171,6 +207,11 @@
 			dependencies: ["40D34B60BD7011DD"]
 			description: ["你的枪在低语……"]
 			id: "7A92FF4BFD84065C"
+			rewards: [{
+				id: "5CA815076A76A501"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			subtitle: "深邃黑暗幻想"
 			tasks: [{
 				id: "720BDDBCD673D704"
@@ -184,6 +225,11 @@
 			dependencies: ["40D34B60BD7011DD"]
 			description: ["并不能让人打出潜影弹"]
 			id: "5D03D83CF29BF288"
+			rewards: [{
+				id: "68CF15E2A353392C"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			subtitle: "游戏尽头的蓝图"
 			tasks: [{
 				id: "6B47C5B6827CE0C2"
@@ -249,17 +295,18 @@
 			rewards: [
 				{
 					count: 16
-					id: "5D6665C5592E8FCD"
-					item: "minecraft:copper_ingot"
-					type: "item"
-				}
-				{
-					count: 16
 					id: "3C57AE47152B4371"
 					item: "minecraft:cobblestone"
 					type: "item"
 				}
+				{
+					count: 16
+					id: "68266B04C0C53570"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
 			]
+			shape: "diamond"
 			subtitle: "只用石头和木头就能做出堪堪能用的基础枪械"
 			tasks: [
 				{
@@ -285,6 +332,12 @@
 			]
 			icon: "minecraft:emerald"
 			id: "764AEF73C28872DD"
+			rewards: [{
+				id: "355928185E5F44CE"
+				item: "scguns:the_pact"
+				type: "item"
+			}]
+			shape: "diamond"
 			subtitle: "芝麻开门"
 			tasks: [
 				{
@@ -595,6 +648,104 @@
 			title: "血肉苦弱"
 			x: 5.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["40D34B60BD7011DD"]
+			description: [
+				"好的护甲能让熟练的枪械使用者发挥出超常实力。"
+				"在本整合包中，使用焦枪焰火材料制作的护甲均能够帮助玩家获得额外的枪械加成。有些还有其它特殊加成！"
+				""
+				"注：致密碳装备需要在锻造台上制作（皮革+铁装备+致密碳锭）"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"cold_sweat:item_insulation": {
+						insulation: [ ]
+					}
+				}
+				id: "scguns:anthralite_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2005C6159CF05E93"
+			rewards: [{
+				count: 3
+				id: "747673897BFE38B8"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [
+				{
+					id: "7CD8E4065F43EBC7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "scguns:anthralite_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "35883D26B08BC3FC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "scguns:treated_brass_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0F9BEB32127FE246"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "scguns:adrien_helm"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "72045D97085B78F9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"cold_sweat:item_insulation": {
+								insulation: [ ]
+							}
+						}
+						id: "scguns:diamond_steel_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "身外之物"
+			x: 0.5d
+			y: 0.5d
 		}
 	]
 	subtitle: ["Life of a Gunsmith"]

@@ -2,6 +2,7 @@
 
 {
     let AttributeRegistry = Java.loadClass('io.redspace.ironsspellbooks.api.registry.AttributeRegistry')
+    let SCAttribute = Java.loadClass('top.ribs.scguns.attributes.SCAttributes')
     let AttributeModifier = Java.loadClass('net.minecraft.world.entity.ai.attributes.AttributeModifier')
     let Attributes = Java.loadClass('net.minecraft.world.entity.ai.attributes.Attributes')
     let TieredItem = Java.loadClass('net.minecraft.world.item.TieredItem')
@@ -57,6 +58,7 @@
                     .add(Attributes.ARMOR, 6)
             }
         }
+
         if (slot == 'mainhand' && id.startsWith('minecraft:netherite_') && item instanceof TieredItem) {
             //修改下界合金工具
             if (item?.type?.slot)
@@ -71,7 +73,9 @@
                 .add("forge:block_reach", 2)
                 .add("forge:entity_reach", 2)
         }
+
         if (slot !== item?.type?.slot) return
+        
         //修改下界合金法师护甲
         if (id.startsWith('irons_spellbooks:netherite_mage_')) {
             e.removeAttribute(AttributeRegistry.MAX_MANA.get())
@@ -83,11 +87,37 @@
                 .add(AttributeRegistry.COOLDOWN_REDUCTION.get(), 0.05, 'multiply_total')
         }
         //修改下界合金普通护甲
-        else if (id.startsWith('minecraft:netherite_')) {
+        else if (id.startsWith('minecraft:netherite_') || id.startsWith('scguns:netherite_')) {
             Attrs.init(e)
                 .add(Attributes.ATTACK_DAMAGE, 3)
                 .add(AttributeRegistry.MAX_MANA.get(), 150)
                 .add(AttributeRegistry.SPELL_POWER.get(), 0.15, 'multiply_base')
+        }
+        //致密碳
+        else if (id.startsWith('scguns:anthralite_')) {
+            Attrs.init(e)
+                .add(SCAttribute.RELOAD_SPEED.get(), 0.05, 'multiply_base')
+        }
+        //硝钢
+        else if (id.startsWith('scguns:adrien_')) {
+            Attrs.init(e)
+                .add(SCAttribute.RELOAD_SPEED.get(), 0.025, 'multiply_base')
+                .add(SCAttribute.BULLET_DAMAGE_MULTIPLIER.get(), 0.075, 'multiply_base')
+                .add(Attributes.ATTACK_DAMAGE, 0.05, 'multiply_base')
+        }
+        //黄铜合金
+        else if (id.startsWith('scguns:treated_brass_')) {
+            Attrs.init(e)
+                .add(SCAttribute.RELOAD_SPEED.get(), 0.075, 'multiply_base')
+                .add(SCAttribute.BULLET_DAMAGE_MULTIPLIER.get(), 0.025, 'multiply_base')
+                .add(Attributes.SPEED, 0.05, 'multiply_base')
+        }
+        //钢化钻石
+        else if (id.startsWith('scguns:diamond_steel_')) {
+            Attrs.init(e)
+                .add(SCAttribute.RELOAD_SPEED.get(), 0.075, 'multiply_base')
+                .add(SCAttribute.BULLET_DAMAGE_MULTIPLIER.get(), 0.075, 'multiply_base')
+                .add(Attributes.MAX_HEALTH, 3)
         }
     })
 
