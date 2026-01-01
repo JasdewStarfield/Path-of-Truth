@@ -233,4 +233,6 @@ ServerEvents.recipes(event => {
         'scguns:treated_brass_ingot',
         '#forge:ingots/gold'
     )
+
+    //少部分特殊蓝图物品可合成（基于材料的）
 })
