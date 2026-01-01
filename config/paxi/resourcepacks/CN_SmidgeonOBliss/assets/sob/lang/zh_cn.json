@@ -1,0 +1,52 @@
+{
+    "sob.sob": "一点点幸福",
+    
+    "item.sob.cinder_dough": "余烬面团",
+    "item.sob.cinder_bread": "余烬面包",
+    "item.sob.caldera_roll": "火山喷发卷",
+    "item.sob.maple_bread": "枫叶面包",
+    "item.sob.holy_sticky_bun": "神圣粘包",
+    "item.sob.unholy_sticky_bun": "邪恶粘包",
+
+    "item.sob.sap_bucket": "树液桶",
+    "item.sob.holy_sap_bucket": "神圣树液桶",
+    "item.sob.unholy_sap_bucket": "邪恶树液桶",
+    "item.sob.syrup_bucket": "糖浆桶",
+    "item.sob.holy_syrup_bucket": "神圣糖浆桶",
+    "item.sob.unholy_syrup_bucket": "邪恶糖浆桶",
+    "item.sob.mulberry_jam_bucket": "桑葚果酱桶",
+    "item.sob.aloe_gel_bucket": "芦荟凝胶桶",
+
+    "item.sob.boba_tea": "珍珠奶茶",
+    "item.sob.nether_nectar": "下界甘露",
+    "item.sob.aloe_tea": "芦荟茶",
+    "item.sob.vanilla_passion_soda": "香草百香汽水",
+    "item.sob.duality_tea": "二元茶",
+    "item.sob.lava_top_cocktail": "熔岩顶鸡尾酒",
+    "item.sob.slome_slush": "Slome泥浆",
+    "item.sob.ambrosia": "仙果茶",
+    "item.sob.saffron_tisane": "藏红花草药茶",
+
+    "item.sob.propelpearl_caviar": "枪药珠鱼子酱",
+    "item.sob.exotic_fruit_salad": "异国水果沙拉",
+
+    "item.sob.sweet_berry_smoothie": "甜浆果沙冰",
+    "item.sob.glow_berry_smoothie": "发光浆果沙冰",
+    "item.sob.mulberry_smoothie": "桑椹沙冰",
+    "item.sob.foul_berry_smoothie": "肮脏浆果沙冰",
+    "item.sob.cherry_smoothie": "樱桃沙冰",
+    "item.sob.passionfruit_smoothie": "百香果沙冰",
+
+    "item.sob.strawberry_milk": "草莓牛奶",
+    "item.sob.chocolate_milk": "巧克力牛奶",
+    "item.sob.vanilla_milk": "香草牛奶",
+
+    "fluid.sob.sap": "树液",
+    "fluid.sob.holy_sap": "神圣树液",
+    "fluid.sob.unholy_sap": "邪恶树液",
+    "fluid.sob.syrup": "糖浆",
+    "fluid.sob.holy_syrup": "神圣糖浆",
+    "fluid.sob.unholy_syrup": "邪恶糖浆",
+    "fluid.sob.mulberry_jam": "桑椹果酱",
+    "fluid.sob.aloe_gel": "芦荟胶"
+}

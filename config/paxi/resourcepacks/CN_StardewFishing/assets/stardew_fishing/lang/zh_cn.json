@@ -1,0 +1,21 @@
+{
+  "entity.stardew_fishing.stardew_fishing_hook": "钓鱼浮漂",
+  "itemGroup.stardewFishing": "星露谷钓鱼",
+  "item.stardew_fishing.trap_bobber": "陷阱浮漂",
+  "item.stardew_fishing.cork_bobber": "软木浮漂",
+  "item.stardew_fishing.sonar_bobber": "声纳浮漂",
+  "item.stardew_fishing.treasure_bobber": "宝藏浮漂",
+  "item.stardew_fishing.quality_bobber": "优质浮漂",
+  "accessory.item.stardew_fishing.trap_bobber": "陷阱浮漂",
+  "accessory.item.stardew_fishing.cork_bobber": "软木浮漂",
+  "accessory.item.stardew_fishing.sonar_bobber": "声纳浮漂",
+  "accessory.item.stardew_fishing.treasure_bobber": "宝藏浮漂",
+  "accessory.item.stardew_fishing.quality_bobber": "优质浮漂",
+  "item.stardew_fishing.trap_bobber.tooltip": "在你未收线时，鱼逃跑的速度变慢",
+  "item.stardew_fishing.cork_bobber.tooltip": "稍微增加你的\"钓鱼条\"的大小，使得钓鱼更容易",
+  "item.stardew_fishing.sonar_bobber.tooltip": "在你钓到鱼之前，显示鱼的种类",
+  "item.stardew_fishing.treasure_bobber.tooltip": "鱼在你收集宝藏时不会逃跑。也稍微增加了找到宝藏的几率",
+  "item.stardew_fishing.quality_bobber.tooltip": "极大提高钓鱼时获得的经验",
+  "item.stardew_fishing.quality_bobber.quality_food_tooltip": "也会提升你抓到的鱼的品质",
+  "stardew_fishing.bobber_broke": "你的%s损坏了！"
+}

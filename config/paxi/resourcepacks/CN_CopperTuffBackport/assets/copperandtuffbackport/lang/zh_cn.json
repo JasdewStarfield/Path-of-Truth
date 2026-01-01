@@ -1,0 +1,133 @@
+{
+  "subtitles.block.copper_bulb.turn_off": "铜灯：点亮",
+
+  "subtitles.block.copper_bulb.turn_on": "铜灯：熄灭",
+
+  "subtitles.block.copper_trapdoor.close": "活板门：关闭",
+
+  "subtitles.block.copper_trapdoor.open": "活板门：打开",
+
+ 
+
+  "block.copperandtuffbackport.chiseled_copper": "雕纹铜块",
+
+  "block.copperandtuffbackport.copper_bulb": "铜灯",
+
+  "block.copperandtuffbackport.copper_door": "铜门",
+
+  "block.copperandtuffbackport.copper_grate": "铜格栅",
+
+  "block.copperandtuffbackport.copper_trapdoor": "铜活板门",
+
+ 
+
+  "block.copperandtuffbackport.waxed_chiseled_copper": "涂蜡的雕纹铜块",
+
+  "block.copperandtuffbackport.waxed_copper_bulb": "涂蜡的铜灯",
+
+  "block.copperandtuffbackport.waxed_copper_door": "涂蜡的铜门",
+
+  "block.copperandtuffbackport.waxed_copper_grate": "涂蜡的铜格栅",
+
+  "block.copperandtuffbackport.waxed_copper_trapdoor": "涂蜡的铜活板门",
+
+ 
+
+  "block.copperandtuffbackport.exposed_chiseled_copper": "斑驳的雕纹铜块",
+
+  "block.copperandtuffbackport.exposed_copper_bulb": "斑驳的铜灯",
+
+  "block.copperandtuffbackport.exposed_copper_door": "斑驳的铜门",
+
+  "block.copperandtuffbackport.exposed_copper_grate": "斑驳的铜格栅",
+
+  "block.copperandtuffbackport.exposed_copper_trapdoor": "斑驳的铜活板门",
+
+ 
+
+  "block.copperandtuffbackport.waxed_exposed_chiseled_copper": "涂蜡的斑驳雕纹铜块",
+
+  "block.copperandtuffbackport.waxed_exposed_copper_bulb": "涂蜡的斑驳铜灯",
+
+  "block.copperandtuffbackport.waxed_exposed_copper_door": "涂蜡的斑驳铜门",
+
+  "block.copperandtuffbackport.waxed_exposed_copper_grate": "涂蜡的斑驳铜活格栅",
+
+  "block.copperandtuffbackport.waxed_exposed_copper_trapdoor": "涂蜡的斑驳铜活板门",
+
+  "block.copperandtuffbackport.oxidized_chiseled_copper": "氧化的雕纹铜块",
+
+  "block.copperandtuffbackport.oxidized_copper_bulb": "氧化的铜灯",
+
+  "block.copperandtuffbackport.oxidized_copper_door": "氧化的铜门",
+
+  "block.copperandtuffbackport.oxidized_copper_grate": "氧化的铜格栅",
+
+  "block.copperandtuffbackport.oxidized_copper_trapdoor": "氧化的铜活板门",
+
+ 
+
+  "block.copperandtuffbackport.waxed_oxidized_chiseled_copper": "涂蜡的氧化斑驳铜块",
+
+  "block.copperandtuffbackport.waxed_oxidized_copper_bulb": "涂蜡的氧化铜灯",
+
+  "block.copperandtuffbackport.waxed_oxidized_copper_door": "涂蜡的氧化铜门",
+
+  "block.copperandtuffbackport.waxed_oxidized_copper_grate": "涂蜡的氧化铜格栅",
+
+  "block.copperandtuffbackport.waxed_oxidized_copper_trapdoor": "涂蜡的氧化铜活板门",
+
+ 
+
+  "block.copperandtuffbackport.weathered_chiseled_copper": "锈蚀的斑驳铜块",
+
+  "block.copperandtuffbackport.weathered_copper_bulb": "锈蚀的铜灯",
+
+  "block.copperandtuffbackport.weathered_copper_door": "锈蚀的铜门",
+
+  "block.copperandtuffbackport.weathered_copper_grate": "锈蚀的铜格栅",
+
+  "block.copperandtuffbackport.weathered_copper_trapdoor": "锈蚀的铜活板门",
+
+ 
+
+  "block.copperandtuffbackport.waxed_weathered_chiseled_copper": "涂蜡的锈蚀斑驳铜块",
+
+  "block.copperandtuffbackport.waxed_weathered_copper_bulb": "涂蜡的锈蚀铜灯",
+
+  "block.copperandtuffbackport.waxed_weathered_copper_door": "涂蜡的锈蚀铜门",
+
+  "block.copperandtuffbackport.waxed_weathered_copper_grate": "涂蜡的锈蚀铜格栅",
+
+  "block.copperandtuffbackport.waxed_weathered_copper_trapdoor": "涂蜡的锈蚀铜活板门",
+
+ 
+
+  "block.copperandtuffbackport.chiseled_stone_bricks": "雕纹石砖",
+
+  "block.copperandtuffbackport.chiseled_tuff": "雕纹凝灰岩",
+
+  "block.copperandtuffbackport.chiseled_tuff_bricks": "雕纹凝灰岩砖",
+
+  "block.copperandtuffbackport.polished_tuff": "磨制凝灰岩",
+
+  "block.copperandtuffbackport.polished_tuff_slab": "磨制凝灰岩台阶",
+
+  "block.copperandtuffbackport.polished_tuff_stairs": "磨制凝灰岩楼梯",
+
+  "block.copperandtuffbackport.polished_tuff_wall": "磨制凝灰岩墙",
+
+  "block.copperandtuffbackport.tuff_brick_slab": "凝灰岩砖台阶",
+
+  "block.copperandtuffbackport.tuff_brick_stairs": "凝灰岩砖楼梯",
+
+  "block.copperandtuffbackport.tuff_brick_wall": "凝灰岩砖墙",
+
+  "block.copperandtuffbackport.tuff_bricks": "凝灰岩砖",
+
+  "block.copperandtuffbackport.tuff_slab": "凝灰岩台阶",
+
+  "block.copperandtuffbackport.tuff_stairs": "凝灰岩楼梯",
+
+  "block.copperandtuffbackport.tuff_wall": "凝灰岩墙"
+}
