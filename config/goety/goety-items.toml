@@ -14,6 +14,8 @@
 		#Define how much knockback resistance each armor piece provides, Default: 0.0
 		#Range: 0.0 ~ 1.7976931348623157E308
 		cursedPaladinKnockResist = 0.0
+		#Whether armor pieces don't break but no longer provide armor, Default: true
+		cursedPaladinPersist = true
 
 		[Armor."Cursed Paladin Armor"."Armor Points"]
 			#Define how much armor points wearing the Chestplate provides, Default: 7
@@ -74,6 +76,8 @@
 		#Define how much knockback resistance each armor piece provides, Default: 0.0
 		#Range: 0.0 ~ 1.7976931348623157E308
 		cursedKnightKnockResist = 0.0
+		#Whether armor pieces don't break but no longer provide armor, Default: true
+		cursedKnightPersist = true
 
 		[Armor."Cursed Knight Armor"."Armor Points"]
 			#Define how much armor points wearing the Leggings provides, Default: 5
@@ -102,6 +106,8 @@
 		#Define the toughness for each armor piece, Default: 2.0
 		#Range: 0.0 ~ 1.7976931348623157E308
 		blackIronToughness = 2.0
+		#Whether armor pieces don't break but no longer provide armor, Default: true
+		blackIronPersist = true
 
 		[Armor."Black Iron Armor"."Armor Points"]
 			#Define how much armor points wearing the Leggings provides, Default: 5
@@ -225,6 +231,12 @@
 	craftSouls = 1
 	#If soulRepair is enabled, the cost of Soul Energy multiplies per item's enchantments, Default: true
 	soulRepairEnchant = true
+	#How many servants an Esoteric Tesseract can contain, Default: 16
+	#Range: > 1
+	tesseractCapacity = 16
+	#How many uses before Tesseract is disabled, Default: 16
+	#Range: > 1
+	tesseractDurability = 16
 
 ["Tools & Weapons"]
 

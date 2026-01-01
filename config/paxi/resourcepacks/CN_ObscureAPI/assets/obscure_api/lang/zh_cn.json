@@ -1,0 +1,31 @@
+{
+  "attribute.obscure_api.accuracy": "精度",
+  "attribute.obscure_api.criticalDamage": "暴击伤害",
+  "attribute.obscure_api.criticalHit": "暴击",
+  "attribute.obscure_api.dodge": "闪避",
+  "attribute.obscure_api.healingPower": "治疗强度",
+  "attribute.obscure_api.magicDamage": "魔法伤害",
+  "attribute.obscure_api.magicResistance": "魔法抗性",
+  "attribute.obscure_api.parry": "格挡",
+  "attribute.obscure_api.penetration": "穿透",
+  "attribute.obscure_api.regeneration": "恢复",
+  "attribute.obscure_api.resilience": "韧性",
+
+  "obscure_api.accuracy": "精度",
+  "obscure_api.criticalDamage": "暴击伤害",
+  "obscure_api.criticalHit": "暴击",
+  "obscure_api.dodge": "闪避",
+  "obscure_api.healingPower": "治疗强度",
+  "obscure_api.magicDamage": "魔法伤害",
+  "obscure_api.magicResistance": "魔法抗性",
+  "obscure_api.parry": "格挡",
+  "obscure_api.penetration": "穿透",
+  "obscure_api.regeneration": "恢复",
+  "obscure_api.resilience": "韧性",
+
+  "icon.attack_speed.fast": "§f\uEA12 §2快",
+  "icon.attack_speed.medium": "§f\uEA12 §f中等",
+  "icon.attack_speed.slow": "§f\uEA12 §6慢",
+  "icon.attack_speed.very_fast": "§f\uEA12 §2极快",
+  "icon.attack_speed.very_slow": "§f\uEA12 §c极慢"
+}

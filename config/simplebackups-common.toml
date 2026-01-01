@@ -66,3 +66,10 @@ saveAll = true
 	#Leave empty to disable regex-based file exclusion
 	ignored_files_regex = ""
 
+#WARNING This configuration should stay as default if backups are not monitored properly.
+[error_handling]
+	#I/O Errors will be collected and print into the chat. The mod tries to complete the backup with as many files as possible. Otherwise, it will abort after the first error.
+	collectErrors = true
+	#If collectErrors is 'false', backups with errors will be deleted immediately to prevent deleting valid backups.
+	deleteUnfinishedBackup = true
+

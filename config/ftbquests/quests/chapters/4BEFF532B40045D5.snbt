@@ -66,6 +66,7 @@
 				"一般来说，水、冰、雪球、粘土可以用来在冰箱里制冷；岩浆块，熔岩，煤炭，木炭之类的则在锅炉里用来加热水袋。"
 				"总之，寒冷的地方要带热水袋，炎热的地方要带冷水袋，明白了吗？"
 			]
+			icon: "scguns:peal"
 			id: "15D6808FE057E96D"
 			subtitle: "水袋的配套设备"
 			tasks: [
@@ -546,6 +547,13 @@
 				"特别注意的一点是，似乎有&9奇怪的力量&r干扰了一些书本的解释。如果&d书本上没有给出答案或者语焉不详&r，也许应该翻翻任务或者JEI。"
 				"&o&a*法师的注释：如果你还没有打开精灵之门，那么也许你不应该把植物魔法辞典放进宝典……&r&r"
 			]
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "eclipticseasons:seasons_chronicle"
+				}
+			}
 			id: "7A0B5E901E6F8081"
 			rewards: [{
 				id: "5FE67996FC951D6F"
@@ -770,6 +778,7 @@
 				"你最多可以拿两个背包或者有物品的抽屉，否则就会获得负面效果……"
 				"抽屉不能装进背包或者其他抽屉里，反过来也不行。&4想都别想。&r"
 			]
+			icon: "everycomp:sd/goety/chorus_full_drawers_2"
 			id: "3A2CCC29ACE28498"
 			rewards: [
 				{
@@ -1180,6 +1189,7 @@
 				"有些食物会提供温暖/寒冷效果，藉此影响你的体感温度。"
 				"因此，如果感觉冷的话，不妨喝碗热汤吧！当然，炎热的时候吃一根冰棒也是极好的。"
 			]
+			icon: "cold_sweat:thermometer"
 			id: "123BA3F63EE1F6A7"
 			rewards: [
 				{

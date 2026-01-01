@@ -11,6 +11,7 @@
 	emergency_items: [{ Count: 1, id: "ftbquests:book" }]
 	emergency_items_cooldown: 300
 	grid_scale: 0.5d
+	hide_excluded_quests: false
 	icon: "create:wrench"
 	lock_message: ""
 	loot_crate_no_drop: {

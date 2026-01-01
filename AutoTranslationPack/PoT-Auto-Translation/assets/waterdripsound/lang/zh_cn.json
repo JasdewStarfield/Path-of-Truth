@@ -1,6 +1,0 @@
-{
-  "tooltip.config.waterdripsound.useDripstoneSounds": "如果启用，则使用 1.17 中添加的 Dripstone 水/熔岩\n 滴水声音。\n如果未启用，则使用旧版模组的\n 声音。",
-  "config.waterdripsound.useDripstoneSounds": "使用滴水石声音",
-  "config.waterdripsound.dripChance": "滴水机会",
-  "config.waterdripsound.soundCategory": "声音类别"
-}

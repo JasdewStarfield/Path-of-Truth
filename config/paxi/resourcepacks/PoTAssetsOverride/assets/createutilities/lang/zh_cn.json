@@ -1,3 +1,9 @@
 {
-  "item.createutilities.graviton_tube": "量子管"
+  "item.createutilities.graviton_tube": "量子管",
+  "block.createutilities.void_steel_bars": "虚空钢栏杆",
+  "block.createutilities.void_steel_ladder": "虚空钢梯",
+  "block.createutilities.void_steel_scaffolding": "虚空钢脚手架",
+  "block.createutilities.void_steel_block": "虚空钢块",
+  "block.createutilities.small_amethyst_tiles": "小紫水晶砖",
+  "block.createutilities.amethyst_tiles": "紫水晶砖"
 }

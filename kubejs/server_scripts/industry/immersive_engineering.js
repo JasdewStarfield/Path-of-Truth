@@ -266,7 +266,7 @@ ServerEvents.recipes(event => {
         }
       ],
       "heatRequirement": "none",
-      "processingTime": 200,
+      "processingTime": 50,
       "results": [
         {
           "item": "createaddition:biomass"
@@ -294,7 +294,7 @@ ServerEvents.recipes(event => {
         }
       ],
       "heatRequirement": "none",
-      "processingTime": 400,
+      "processingTime": 100,
       "results": [
         {
           "item": "createaddition:biomass"

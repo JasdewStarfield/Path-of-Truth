@@ -1,15 +1,17 @@
 
-#Aqueduct system settings
-[aqueduct]
-	#Transfer rate for aqueduct system in mB per tick
-	#Range: 1 ~ 1000
-	transferRate = 50
-	#Fill rate from water source blocks in mB per tick
-	#Range: 1 ~ 1000
-	waterFillRate = 50
-	#Maximum length of a single aqueduct network
-	#Range: 16 ~ 1024
-	maxLength = 256
-	#Whether aqueduct transfer takes priority over pipe transfer
-	prioritizeAqueduct = true
+#Gutter Outlet settings
+[gutter_outlet]
+	#Whether gutter outlet can collect rain water
+	collectRain = true
+	#Whether gutter outlet can collect snow as powder snow fluid
+	collectSnow = true
+	#Whether gutter outlet can collect fluid from dripstone (lava/water)
+	collectDripstone = true
+	#Whether gutter outlet can collect world fluid sources from above
+	collectWorldFluid = true
+
+	#Copper Sink settings
+	[gutter_outlet.copper_sink]
+		#Whether the Copper Sink provides infinite water (if false, it's just a normal 2000mB tank)
+		infiniteWater = false
 

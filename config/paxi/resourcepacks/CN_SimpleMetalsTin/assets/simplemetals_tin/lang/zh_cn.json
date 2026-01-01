@@ -1,0 +1,10 @@
+{
+  "item.simplemetals_tin.tin_sheet": "锡板",
+  "block.simplemetals_tin.tin_block": "锡块",
+  "item.simplemetals_tin.tin_ingot": "锡锭",
+  "block.simplemetals_tin.tin_ore": "锡石矿石",
+  "item.simplemetals_tin.tin_nugget": "锡粒",
+  "item.simplemetals_tin.raw_tin": "粗锡石",
+  "block.simplemetals_tin.deepslate_tin_ore": "深板岩锡石矿石",
+  "block.simplemetals_tin.raw_tin_block": "粗锡石块"
+}

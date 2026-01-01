@@ -16,3 +16,16 @@
 	Enable = true
 	FakeSeasonsLoaded = true
 
+#Stardew Fishing
+[stardew_fishing]
+	Enable = true
+	DisableMiniGameIfNotPassCheck = true
+
+#Xaero's World Map
+[xaeroworldmap]
+	Enable = true
+
+#Xaero's Minimap
+[xaerominimap]
+	Enable = true
+

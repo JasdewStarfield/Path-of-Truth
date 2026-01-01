@@ -5,7 +5,7 @@ autoSuggestions:true
 chatColors:true
 chatLinks:true
 chatLinksPrompt:true
-enableVsync:true
+enableVsync:false
 entityShadows:true
 forceUnicodeFont:false
 discrete_mouse_scroll:false
@@ -35,14 +35,14 @@ renderDistance:12
 simulationDistance:12
 entityDistanceScaling:1.5
 guiScale:0
-particles:2
+particles:0
 maxFps:120
 graphicsMode:1
 ao:true
 prioritizeChunkUpdates:0
 biomeBlendRadius:2
 renderClouds:"true"
-resourcePacks:["vanilla","mod_resources","eclipticseasons.extra_snow","Moonlight Mods Dynamic Assets","Minecraft-Mod-Language-Package-1.20.zip","CN_Comforts.zip","CN_CompressedCreateRecipes.zip","CN_CompressedEngineering.zip","CN_CopperTuffBackport.zip","CN_CreateBlueSkiesCompat.zip","CN_CreateCompressed.zip","CN_CreatePickyWheels.zip","CN_EndersDelight.zip","CN_JustEnoughMultiblocks.zip","CN_MechanicalBotania.zip","CN_NetherExpDelight.zip","CN_ObscureAPI.zip","CN_ReChiseled.zip","CN_ReChiseledCreate.zip","CN_RespawnObelisks.zip","CN_SCORCHEDGUNS2.zip","CN_SimpleMetalsTin.zip","CN_SmidgeonOBliss.zip","CN_StardewFishing.zip","CN_VCT.zip","netherexp:jne_emissive","netherexp:jne_retextures","file/[Moonsu] Better GUI for Sophisticated Backpacks 2.0 1.20-1.zip","file/Updated_Engineering_v1.7.zip","file/SmoothDrawers_1.20.1_v2.zip","file/Simple Grass Flowers v1.9.5.zip","file/SRU_1-3.zip","file/Refined Storage - ReCreated v0.6.zip","file/Nekos Enhanced Tools and Armour Plus V1.1.zip","file/Midnighttiggers-FCT-Default_1.20_V6.zip","file/CreateSophisticatedBackpacks.zip","file/Create Tweaks Compats.zip","file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip","file/Create Immersive Aircraft Warship ResoucePack v1.2.zip","file/Comforts Modernized - V1.1.zip","file/Better_Enderdragon.zip","PoTAssetsOverride"]
+resourcePacks:["mod_resources","eclipticseasons.extra_snow","vanilla","file/[Moonsu] Better GUI for Sophisticated Backpacks 2.0 1.20-1.zip","file/Updated_Engineering_v1.7.zip","file/SmoothDrawers_1.20.1_v2.zip","file/Simple Grass Flowers v1.9.5.zip","file/SRU_1-3.zip","file/Refined Storage - ReCreated v0.6.zip","file/Nekos Enhanced Tools and Armour Plus V1.1.zip","file/Midnighttiggers-FCT-Default_1.20_V8.zip","file/CreateSophisticatedBackpacks.zip","file/Create Tweaks Compats.zip","file/Create Immersive Aircrafts Resource Pack 1.20.1 - 2.0.zip","file/Create Immersive Aircraft Warship ResoucePack v1.2.zip","file/Comforts Modernized - V1.1.zip","file/Better_Enderdragon.zip","Moonlight Mods Dynamic Assets","netherexp:jne_emissive","netherexp:jne_retextures","Minecraft-Mod-Language-Package-1.20.zip","CN_AlexsDelight","CN_BlueSkies","CN_ColdSweat","CN_CollectorsReap","CN_Comforts","CN_CompressedCreateRecipes","CN_CompressedEngineering","CN_CopperTuffBackport","CN_CrateDelight","CN_CreateBlueSkiesCompat","CN_CreateCompressed","CN_CreatePickyWheels","CN_CreateTransmission","CN_EndersDelight","CN_JustEnoughMultiblocks","CN_MechanicalBotania","CN_NetherExpDelight","CN_NoMoWanderer","CN_ObscureAPI","CN_ReChiseled","CN_ReChiseledCreate","CN_RespawnObelisks","CN_ScorchedGuns2","CN_SimpleMetalsTin","CN_SmidgeonOBliss","CN_StardewFishing","CN_Tide","CN_VCT","CN_Xaeros","PoTAssetsOverride"]
 incompatibleResourcePacks:[]
 lastServer:
 lang:zh_cn

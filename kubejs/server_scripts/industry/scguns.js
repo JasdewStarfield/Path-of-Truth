@@ -32,44 +32,6 @@ ServerEvents.recipes(event => {
         B: 'create:andesite_alloy'
     })
 
-    //各级蓝图
-    event.shaped(Item.of('scguns:copper_blueprint'), [ 
-        'DAD',
-        'ABA',
-        'DAD'
-    ], {
-        A: 'paper',
-        B: '#forge:storage_blocks/copper',
-        D: '#forge:ingots/copper'
-    })
-    event.shaped(Item.of('scguns:iron_blueprint'), [ 
-        'DAD',
-        'ABA',
-        'DAD'
-    ], {
-        A: 'paper',
-        B: '#forge:storage_blocks/iron',
-        D: 'scguns:copper_blueprint'
-    })
-    event.shaped(Item.of('scguns:treated_brass_blueprint'), [ 
-        'DAD',
-        'ABA',
-        'DAD'
-    ], {
-        A: 'paper',
-        B: 'scguns:treated_brass_block',
-        D: 'scguns:iron_blueprint'
-    })
-    event.shaped(Item.of('scguns:diamond_steel_blueprint'), [ 
-        'DAD',
-        'ABA',
-        'DAD'
-    ], {
-        A: 'paper',
-        B: 'scguns:diamond_steel_block',
-        D: 'scguns:treated_brass_blueprint'
-    })
-
     //模具
     const moldTypesSCGuns = [
         "small_casing_mold",
@@ -264,4 +226,13 @@ ServerEvents.recipes(event => {
         B: 'kubejs:electronic_engineering',
         C: 'scguns:special_ammo_box'
     })
+
+    //信号枪
+    event.replaceInput(
+        {id:"scguns:flare_pistol"},
+        'scguns:treated_brass_ingot',
+        '#forge:ingots/gold'
+    )
+
+    //少部分特殊蓝图物品可合成（基于材料的）
 })

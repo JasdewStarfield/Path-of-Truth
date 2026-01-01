@@ -417,7 +417,7 @@
 			]
 			title: "铀"
 			x: 16.0d
-			y: 6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["4247C42D1F36561B"]
@@ -834,7 +834,7 @@
 				type: "item"
 			}]
 			x: 2.0d
-			y: 6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["1F4E96EC3B77F15A"]
@@ -846,7 +846,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: 6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: [
@@ -862,7 +862,7 @@
 				type: "item"
 			}]
 			x: 14.0d
-			y: 6.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["40717610A2317CCE"]
@@ -1459,8 +1459,8 @@
 					type: "checkmark"
 				}
 			]
-			x: -4.0d
-			y: -8.0d
+			x: 2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -1506,6 +1506,32 @@
 			]
 			x: 12.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["281BC3ACC0B8C2D3"]
+			icon: "minecraft:blaze_powder"
+			id: "57AEEE5C325BF587"
+			rewards: [{
+				id: "4217BA5424DAAAA2"
+				type: "xp"
+				xp: 3
+			}]
+			shape: "hexagon"
+			subtitle: "用硫粉注液熔岩，有概率获取"
+			tasks: [
+				{
+					id: "5221512C0FE3882B"
+					item: "minecraft:blaze_powder"
+					type: "item"
+				}
+				{
+					id: "595D1678CE6C9FE5"
+					title: "已完成自动化"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 6.0d
 		}
 	]
 	subtitle: ["Standardized Production"]

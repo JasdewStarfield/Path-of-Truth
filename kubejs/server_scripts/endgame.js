@@ -102,6 +102,7 @@ ServerEvents.recipes(event => {
     }
   )
   event.remove({ id: "createdieselgenerators:distillation/crude_oil" })
+  event.remove({ id: "createdieselgenerators:distillation/superheated_crude_oil" })
   event.custom({
     "type": "createdieselgenerators:distillation",
     "ingredients": [
@@ -128,6 +129,35 @@ ServerEvents.recipes(event => {
       {
         "fluid": "kubejs:lpg",
         "amount": 50
+      }
+    ]
+  })
+  event.custom({
+    "type": "createdieselgenerators:distillation",
+    "ingredients": [
+      {
+        "fluid": "createdieselgenerators:crude_oil",
+        "amount": 200
+      }
+    ],
+    "heatRequirement": "superheated",
+    "processingTime": 100,
+    "results": [
+      {
+        "fluid": "kubejs:heavy_oil",
+        "amount": 75
+      },
+      {
+        "fluid": "createdieselgenerators:diesel",
+        "amount": 75
+      },
+      {
+        "fluid": "createdieselgenerators:gasoline",
+        "amount": 75
+      },
+      {
+        "fluid": "kubejs:lpg",
+        "amount": 75
       }
     ]
   })

@@ -15,4 +15,7 @@
 	#The delay in ticks before an item created from radiant conversion can be picked up. Set to 0 to allow instant pickup. Very high values are not recommended. (Default: 10)
 	#Range: > 0
 	"Radiant Pickup Delay" = 10
+	#Duration of the red sandpaper polishing animation in ticks. Lower values mean you polish faster. (Default: 32)
+	#Range: > 1
+	"Red Sandpaper Speed" = 32
 

@@ -153,6 +153,7 @@
 			windswept = true
 			pine = true
 			chorus = true
+			chorus_blossom = true
 
 		[types.leaves_type.blue_skies]
 			bluebright = true

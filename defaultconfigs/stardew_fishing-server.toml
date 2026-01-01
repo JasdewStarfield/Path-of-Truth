@@ -19,22 +19,17 @@ quality3Multiplier = 4.0
 #The multiplier that is applied to the time it takes for a fish to bite after casting your rod.
 #Range: 0.0 ~ 1.0
 biteTimeMultiplier = 0.1
-#The line strength attribute modifier granted by the Trap Bobber. Fish escape speed with the Trap Bobber is calculated as `1 - trapBobberLineStrength` points per tick.
-#Range: 0.0 ~ 1.0
-trapBobberLineStrength = 0.33
-#The fishing bar size attribute modifier granted by the Cork Bobber. The Cork Bobber adds corkBobberBarSize pixels to the size of the fishing bar.
-#Range: 0 ~ 100
-corkBobberBarSize = 10
-#The treasure chance attribute modifier granted by the Treasure Bobber. The Treasure Bobber increases the chance of finding a treasure chest by treasureBobberTreasureChance percent.
-#Range: 0.0 ~ 1.0
-treasureBobberTreasureChance = 0.05
-#The fishing experience multiplier attribute modifier granted by the Quality Bobber. Fishing experience gained with the Quality Bobber is multiplied by this number.
-#Range: 1.0 ~ 10.0
-qualityBobberExpMultiplier = 1.4
 #The chance for finding a treasure chest each time you play the fishing minigame.
 #Range: 0.0 ~ 1.0
 treasureChestChance = 0.15
 #The chance that a treasure chest found in the fishing minigame is a golden chest.
 #Range: 0.0 ~ 1.0
 goldenChestChance = 0.1
+#Whether it be possible to attach bobber items by hovering over a fishing rod in an inventory and right clicking.
+inventoryBobberEquipping = true
+#Whether legendary fish will have a strobe effect when moving in the minigame.
+legendaryFishFlashing = true
+#The chance that any fish that bites is a legendary fish.
+#Range: 0.0 ~ 1.0
+legendaryFishChance = 0.01
 

@@ -1,0 +1,8 @@
+
+#General settings for Realistic Nametag
+[general]
+	#Set to true to completely disable the mod's features.
+	disableMOD = false
+	#If true, the mod's features will be disabled while in spectator mode.
+	disableInSpectator = true
+

@@ -88,7 +88,9 @@
     "jade": true
   },
   "eclipticseasons": {
+    "greenhouse_core": true,
     "animal": true,
+    "cauldron": true,
     "crop": true,
     "snowy_status": true,
     "crop.shift_hint": true
@@ -104,6 +106,7 @@
     "soul_energy": true,
     "raider_leader": true,
     "servant_mode": true,
+    "capture_mode": true,
     "zombie_villager": true,
     "villager_profession": true,
     "train_to": true,

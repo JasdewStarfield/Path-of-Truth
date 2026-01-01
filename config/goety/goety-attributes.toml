@@ -4,7 +4,7 @@
 	[Attributes.Cultists]
 		#How much Max Health Malghast have, Default: 20.0
 		#Range: 1.0 ~ 1.7976931348623157E308
-		malghastHealth = 20.0
+		malghastHealth = 10.0
 
 		[Attributes.Cultists.Maverick]
 			#How much natural armor points Mavericks have, Default: 0.0
@@ -20,7 +20,7 @@
 		[Attributes.Cultists."Obsidian Monolith"]
 			#How much Max Health Obsidian Monolith have, Default: 50.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			obsidianMonolithHealth = 50.0
+			obsidianMonolithHealth = 40.0
 			#How much natural armor points Obsidian Monolith have, Default: 12.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			obsidianMonolithArmor = 12.0
@@ -53,7 +53,7 @@
 			warlockArmor = 0.0
 			#How much Max Health Warlocks have, Default: 26.0
 			#Range: 0.0 ~ 1.7976931348623157E308
-			warlockHealth = 26.0
+			warlockHealth = 20.0
 
 		[Attributes.Cultists.Heretic]
 			#How much damage Heretics deals, Default: 2.0
@@ -90,7 +90,7 @@
 		[Attributes.Mini-Bosses.Minister]
 			#How much Max Health Ministers have, Default: 128.0
 			#Range: 1.0 ~ 1.7976931348623157E308
-			ministerHealth = 128.0
+			ministerHealth = 120.0
 			#How much damage Ministers deals, Default: 5.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			ministerDamage = 5.0
@@ -108,6 +108,17 @@
 			#How much Max Health Bone Lord have, Default: 20.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			boneLordHealth = 20.0
+
+		[Attributes.Mini-Bosses.Endersent]
+			#How much Max Health Endersents have, Default: 200.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			endersentHealth = 200.0
+			#How much natural Armor Points Endersents have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			endersentArmor = 0.0
+			#How much damage Endersents deals, Default: 14.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			endersentDamage = 14.0
 
 	[Attributes.General]
 
@@ -212,6 +223,29 @@
 			#The maximum amount of damage a Vizier can attain per hit, Default: 20.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			vizierDamageCap = 20.0
+			#How much damage Viziers deals without weapons, Default: 5.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			vizierDamage = 5.0
+
+		[Attributes.Bosses."Ender Keeper"]
+			#How much Max Health Ender Keeper have, Default: 320.0
+			#Range: 100.0 ~ 1.7976931348623157E308
+			enderKeeperHealth = 320.0
+			#How much natural Armor Points Ender Keepers have, Default: 10.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			enderKeeperArmor = 10.0
+			#The maximum amount of damage an Ender Keeper can attain per hit, Default: 20.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			enderKeeperDamageCap = 20.0
+			#How much damage Ender Keeper deals, Default: 14.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			enderKeeperDamage = 14.0
+			#Ender Keepers attack HP percent damage, Default: 0.05
+			#Range: 0.0 ~ 1.0
+			enderKeeperHPPercentDamage = 0.05
+			#How many blocks or distance away an attack can be from Ender Keeper to damage them, Default: 12.0
+			#Range: 6.0 ~ 1.7976931348623157E308
+			enderKeeperHurtRange = 12.0
 
 	[Attributes."Summoned Mobs"]
 
@@ -866,38 +900,90 @@
 			#Range: 0.0 ~ 1.7976931348623157E308
 			windCallerServantFollowRange = 35.0
 
-		[Attributes."Summoned Mobs"."Watchling Servant"]
-			#How much Max Health Watchling Servants have, Default: 24.0
+		[Attributes."Summoned Mobs"."Mountaineer Servant"]
+			#How much Max Health Mountaineer Servants have, Default: 28.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			mountaineerServantHealth = 28.0
+			#How much natural armor points Mountaineer Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			mountaineerServantArmor = 0.0
+			#How much damage Mountaineer Servants deals, Default: 5.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			mountaineerServantDamage = 5.0
+
+		[Attributes."Summoned Mobs"."Witch Servant"]
+			#How much Max Health Witch Servants have, Default: 26.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			witchServantHealth = 26.0
+			#How much natural Armor Witch Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			witchServantArmor = 0.0
+			#How much following/detection range Witch Servants have, Default: 16.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			witchServantFollowRange = 16.0
+
+		[Attributes."Summoned Mobs".Irk]
+			#How much Max Health Irks have, Default: 12.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			summonedIrkHealth = 12.0
+			#How much damage Irks deals, Default: 4.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			summonedIrkDamage = 4.0
+
+		[Attributes."Summoned Mobs".Watchling]
+			#How much Max Health Watchlings have, Default: 24.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			watchlingHealth = 24.0
-			#How much natural Armor Watchling Servants  have, Default: 0.0
+			#How much natural Armor Watchlings have, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			watchlingArmor = 0.0
-			#How much damage Watchling Servants deals, Default: 5.0
+			#How much damage Watchlings deals, Default: 5.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			watchlingDamage = 5.0
 
-		[Attributes."Summoned Mobs"."Blastling Servant"]
-			#How much Max Health Blastling Servants have, Default: 32.0
+		[Attributes."Summoned Mobs".Blastling]
+			#How much Max Health Blastlings have, Default: 32.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			blastlingHealth = 32.0
-			#How much natural Armor Blastling Servants  have, Default: 0.0
+			#How much natural Armor Blastlings have, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			blastlingArmor = 0.0
-			#How much damage Blastling Servants deals, Default: 3.0
+			#How much damage Blastlings deals, Default: 3.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			blastlingDamage = 3.0
 
-		[Attributes."Summoned Mobs"."Snareling Servant"]
-			#How much Max Health Snareling Servants have, Default: 20.0
+		[Attributes."Summoned Mobs".Snareling]
+			#How much Max Health Snarelings have, Default: 20.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			snarelingHealth = 20.0
-			#How much natural Armor Snareling Servants  have, Default: 0.0
+			#How much natural Armor Snarelings have, Default: 0.0
 			#Range: 0.0 ~ 1.7976931348623157E308
 			snarelingArmor = 0.0
-			#How much damage Snareling Servants deals, Default: 2.0
+			#How much damage Snarelings deals, Default: 2.0
 			#Range: 1.0 ~ 1.7976931348623157E308
 			snarelingDamage = 2.0
+
+		[Attributes."Summoned Mobs"."Signaler Servant"]
+			#How much Max Health Signaler Servants have, Default: 24.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			signalerServantHealth = 24.0
+			#How much natural Armor Signaler Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			signalerServantArmor = 0.0
+			#How much initial following/detection range Signaler Servants have, Default: 32.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			signalerServantFollowRange = 32.0
+
+		[Attributes."Summoned Mobs".Gnasher]
+			#How much Max Health Gnashers have, Default: 30.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			gnasherHealth = 30.0
+			#How much natural Armor Gnashers have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			gnasherArmor = 0.0
+			#How much damage Gnashers melee attack deals, Default: 6.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			gnasherDamage = 6.0
 
 	[Attributes.Illagers]
 		#How much Max Health Conquillager have, Default: 24.0

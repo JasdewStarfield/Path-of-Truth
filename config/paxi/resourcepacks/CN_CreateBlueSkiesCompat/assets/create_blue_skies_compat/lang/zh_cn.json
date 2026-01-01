@@ -1,0 +1,12 @@
+{
+  "item.create_blue_skies_compat.crushed_aquite_ore": "粉碎水蓝石矿石",
+  "item.create_blue_skies_compat.crushed_charoite_ore": "粉碎绛紫晶矿石",
+  "item.create_blue_skies_compat.crushed_falsite_ore": "粉碎缪铁矿石",
+  "item.create_blue_skies_compat.crushed_horizonite_ore": "粉碎炙铁矿石",
+  "item.create_blue_skies_compat.crushed_ventium_ore": "粉碎镰鼬铁矿石",
+  "item.create_blue_skies_compat.falsite_sheet": "缪铁板",
+  "item.create_blue_skies_compat.horizonite_sheet": "炙铁板",
+  "item.create_blue_skies_compat.ventium_sheet": "镰鼬铁板",
+
+  "creativetab.create_blue_skies_compat_tab": "机械动力-蔚蓝浩空兼容"
+}

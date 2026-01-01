@@ -1,107 +1,243 @@
 
 ["Modded Soul Cost"]
-	#Wild Rage Soul Cost, Default: 50
-	#Range: > 1
-	wildRageCost = 50
-	#Nyctophobia Soul Cost, Default: 50
-	#Range: > 1
-	nyctophobiaCost = 50
-	#Fiery Aura Soul Cost, Default: 50
-	#Range: > 1
-	fieryAuraCost = 50
-	#Fire Trail Soul Cost, Default: 50
-	#Range: > 1
-	fireTrailCost = 50
-	#Bottling Soul Cost, Default: 50
-	#Range: > 1
-	bottlingCost = 50
-	#Storm's Wrath Soul Cost, Default: 50
-	#Range: > 1
-	stormsWrathCost = 50
-	#Insight Soul Cost, Default: 50
-	#Range: > 1
-	insightCost = 50
-	#Gold Touched Soul Cost, Default: 10
-	#Range: > 1
-	goldTouchedCost = 10
-	#Freezing Soul Cost, Default: 25
-	#Range: > 1
-	freezingCost = 25
-	#Ender Flux Soul Cost, Default: 25
-	#Range: > 1
-	enderFluxCost = 25
-	#Fortunate Soul Cost, Default: 50
-	#Range: > 1
-	fortunateCost = 100
-	#Frosty Aura Soul Cost, Default: 100
-	#Range: > 1
-	frostyAuraCost = 100
-	#Snow Skin Soul Cost, Default: 50
-	#Range: > 1
-	snowSkinCost = 50
-	#Tripping Soul Cost, Default: 25
-	#Range: > 1
-	trippingCost = 25
-	#Ender Ground Soul Cost, Default: 10
-	#Range: > 1
-	enderGroundCost = 10
-	#Explosive Soul Cost, Default: 50
-	#Range: > 1
-	explosiveCost = 50
-	#Flammable Soul Cost, Default: 50
-	#Range: > 1
-	flammableCost = 50
-	#Cursed Soul Cost, Default: 50
-	#Range: > 1
-	cursedCost = 50
-	#Climbing Soul Cost, Default: 25
-	#Range: > 1
-	climbingCost = 25
-	#Plunge Soul Cost, Default: 50
-	#Range: > 1
-	plungeCost = 50
-	#Repulsive Soul Cost, Default: 25
-	#Range: > 1
-	repulsiveCost = 25
-	#Pressure Soul Cost, Default: 10
-	#Range: > 1
-	pressureCost = 10
-	#Sun Allergy Soul Cost, Default: 50
-	#Range: > 1
-	sunAllergyCost = 50
-	#Photosynthesis Soul Cost, Default: 25
-	#Range: > 1
-	photosynthesisCost = 25
-	#Corpse Eater Soul Cost, Default: 100
-	#Range: > 1
-	corpseEaterCost = 100
-	#Save Effects Soul Cost, Default: 50
-	#Range: > 1
-	saveEffectsCost = 50
-	#Evil Eye Soul Cost, Default: 50
-	#Range: > 1
-	evilEyeCost = 50
-	#Flimsy Soul Cost, Default: 50
-	#Range: > 1
-	flimsyCost = 50
-	#Venomous Hands Soul Cost, Default: 25
-	#Range: > 1
-	venomousHandsCost = 25
-	#Arrowmantic Soul Cost, Default: 50
-	#Range: > 1
-	arrowmanticCost = 50
-	#Flame Hands Soul Cost, Default: 25
-	#Range: > 1
-	flameHandsCost = 25
-	#Sapped Soul Cost, Default: 25
-	#Range: > 1
-	sappedCost = 25
-	#Swift Swim Soul Cost, Default: 25
-	#Range: > 1
-	swiftSwimCost = 25
-	#Void Touched Soul Cost, Default: 25
-	#Range: > 1
-	voidTouchedCost = 25
+
+	["Modded Soul Cost"."Status Effects"]
+		#Climbing Soul Cost, Default: 25
+		#Range: > 1
+		climbingCost = 25
+		#Corpse Eater Soul Cost, Default: 100
+		#Range: > 1
+		corpseEaterCost = 100
+		#Pressure Soul Cost, Default: 10
+		#Range: > 1
+		pressureCost = 10
+		#Ender Ground Soul Cost, Default: 10
+		#Range: > 1
+		enderGroundCost = 10
+		#Ender Flux Soul Cost, Default: 25
+		#Range: > 1
+		enderFluxCost = 25
+		#Flame Hands Soul Cost, Default: 25
+		#Range: > 1
+		flameHandsCost = 25
+		#Venomous Hands Soul Cost, Default: 25
+		#Range: > 1
+		venomousHandsCost = 25
+		#Void Touched Soul Cost, Default: 25
+		#Range: > 1
+		voidTouchedCost = 25
+		#Freezing Soul Cost, Default: 25
+		#Range: > 1
+		freezingCost = 25
+		#Gold Touched Soul Cost, Default: 10
+		#Range: > 1
+		goldTouchedCost = 10
+		#Gravity Pulse Soul Cost, Default: 50
+		#Range: > 1
+		gravityPulseCost = 50
+		#Nyctophobia Soul Cost, Default: 50
+		#Range: > 1
+		nyctophobiaCost = 50
+		#Snow Skin Soul Cost, Default: 50
+		#Range: > 1
+		snowSkinCost = 50
+		#Sapped Soul Cost, Default: 25
+		#Range: > 1
+		sappedCost = 25
+		#Storm's Wrath Soul Cost, Default: 50
+		#Range: > 1
+		stormsWrathCost = 50
+		#Sun Allergy Soul Cost, Default: 50
+		#Range: > 1
+		sunAllergyCost = 50
+		#Evil Eye Soul Cost, Default: 50
+		#Range: > 1
+		evilEyeCost = 50
+		#Tripping Soul Cost, Default: 25
+		#Range: > 1
+		trippingCost = 25
+		#Repulsive Soul Cost, Default: 25
+		#Range: > 1
+		repulsiveCost = 25
+		#Photosynthesis Soul Cost, Default: 25
+		#Range: > 1
+		photosynthesisCost = 25
+		#Swift Swim Soul Cost, Default: 25
+		#Range: > 1
+		swiftSwimCost = 25
+		#Swirling Soul Cost, Default: 50
+		#Range: > 1
+		swirlingCost = 50
+		#Arrowmantic Soul Cost, Default: 50
+		#Range: > 1
+		arrowmanticCost = 50
+		#Bottling Soul Cost, Default: 50
+		#Range: > 1
+		bottlingCost = 50
+		#Flammable Soul Cost, Default: 50
+		#Range: > 1
+		flammableCost = 50
+		#Flimsy Soul Cost, Default: 50
+		#Range: > 1
+		flimsyCost = 50
+		#Fortunate Soul Cost, Default: 50
+		#Range: > 1
+		fortunateCost = 100
+		#Insight Soul Cost, Default: 50
+		#Range: > 1
+		insightCost = 50
+		#Leeching Soul Cost, Default: 50
+		#Range: > 1
+		leechingCost = 50
+		#Rallying Soul Cost, Default: 50
+		#Range: > 1
+		rallyingCost = 50
+		#Radiance Soul Cost, Default: 50
+		#Range: > 1
+		radianceCost = 50
+		#Explosive Soul Cost, Default: 50
+		#Range: > 1
+		explosiveCost = 50
+		#Fiery Aura Soul Cost, Default: 50
+		#Range: > 1
+		fieryAuraCost = 50
+		#Frosty Aura Soul Cost, Default: 100
+		#Range: > 1
+		frostyAuraCost = 100
+		#Wild Rage Soul Cost, Default: 50
+		#Range: > 1
+		wildRageCost = 50
+		#Fire Trail Soul Cost, Default: 50
+		#Range: > 1
+		fireTrailCost = 50
+		#Plunge Soul Cost, Default: 50
+		#Range: > 1
+		plungeCost = 50
+		#Cursed Soul Cost, Default: 50
+		#Range: > 1
+		cursedCost = 50
+		#Deflective Soul Cost, Default: 50
+		#Range: > 1
+		deflectiveCost = 50
+		#Shielding Soul Cost, Default: 50
+		#Range: > 1
+		shieldingCost = 50
+		#Save Effects Soul Cost, Default: 50
+		#Range: > 1
+		saveEffectsCost = 50
+
+	["Modded Soul Cost"."Block/Other Effects"]
+		#Bat Burst Soul Cost, Default: 100
+		#Range: > 1
+		batBurstCost = 100
+		#BEEEEES Soul Cost, Default: 50
+		#Range: > 1
+		beesCost = 50
+		#Blind Jump Soul Cost, Default: 10
+		#Range: > 1
+		blindJumpCost = 10
+		#Chop Tree Soul Cost, Default: 25
+		#Range: > 1
+		chopTreeCost = 25
+		#Combust Soul Cost, Default: 100
+		#Range: > 1
+		combustCost = 100
+		#Corrosion Soul Cost, Default: 25
+		#Range: > 1
+		corrosionCost = 25
+		#Drought Soul Cost, Default: 25
+		#Range: > 1
+		droughtCost = 25
+		#Explode Soul Cost, Default: 100
+		#Range: > 1
+		explodeCost = 100
+		#Extinguish Soul Cost, Default: 25
+		#Range: > 1
+		extinguishCost = 25
+		#Fertility Soul Cost, Default: 25
+		#Range: > 1
+		fertilityCost = 25
+		#Flaying Soul Cost, Default: 25
+		#Range: > 1
+		flayingCost = 25
+		#Flooding Soul Cost, Default: 100
+		#Range: > 1
+		floodingCost = 100
+		#Freeze Soul Cost, Default: 10
+		#Range: > 1
+		freezeCost = 10
+		#Growth Soul Cost, Default: 50
+		#Range: > 1
+		growthCost = 50
+		#Grow Cactus Soul Cost, Default: 10
+		#Range: > 1
+		growCactusCost = 10
+		#Grow Cave Vines Soul Cost, Default: 10
+		#Range: > 1
+		growCaveVinesCost = 10
+		#Grow Tree Soul Cost, Default: 25
+		#Range: > 1
+		growTreeCost = 25
+		#Harvest Soul Cost, Default: 25
+		#Range: > 1
+		harvestCost = 25
+		#Infest Soul Cost, Default: 25
+		#Range: > 1
+		infestCost = 25
+		#Launch Soul Cost, Default: 25
+		#Range: > 1
+		launchCost = 25
+		#Leaf Shell Soul Cost, Default: 25
+		#Range: > 1
+		leafShellCost = 25
+		#Love Soul Cost, Default: 10
+		#Range: > 1
+		loveCost = 10
+		#Mossify Soul Cost, Default: 25
+		#Range: > 1
+		mossifyCost = 25
+		#Part Lava Soul Cost, Default: 25
+		#Range: > 1
+		partLavaCost = 25
+		#Part Water Soul Cost, Default: 25
+		#Range: > 1
+		partWaterCost = 25
+		#Pulverize Soul Cost, Default: 25
+		#Range: > 1
+		pulverizeCost = 25
+		#Purify Debuffs Soul Cost, Default: 50
+		#Range: > 1
+		purifyDebuffsCost = 50
+		#Purify Buffs Soul Cost, Default: 50
+		#Range: > 1
+		purifyBuffsCost = 50
+		#Pruning Soul Cost, Default: 10
+		#Range: > 1
+		pruningCost = 10
+		#Raise Dead Soul Cost, Default: 50
+		#Range: > 1
+		raiseDeadCost = 50
+		#Shear Soul Cost, Default: 10
+		#Range: > 1
+		shearCost = 10
+		#Snowy Soul Cost, Default: 25
+		#Range: > 1
+		snowyCost = 25
+		#Strip Armor Soul Cost, Default: 100
+		#Range: > 1
+		stripArmorCost = 100
+		#Sweet Thorns Soul Cost, Default: 25
+		#Range: > 1
+		sweetThornsCost = 25
+		#Thorn Trap Soul Cost, Default: 50
+		#Range: > 1
+		thornTrapCost = 50
+		#Transpose Soul Cost, Default: 25
+		#Range: > 1
+		transposeCost = 25
+		#Webbed Soul Cost, Default: 50
+		#Range: > 1
+		webbedCost = 50
 
 [Curable]
 	#Whether Snow Skin is curable via Milk or Wartful Egg, Default: false
@@ -211,4 +347,129 @@
 	#Maximum Bottling Level the player can obtain, set to 0 to disable Bottling Levels, Default: 5
 	#Range: > 0
 	maxBottlingLevel = 5
+
+["Vanilla Extra Capacity"]
+	#Absorption Extra Capacity, Default: 1
+	#Range: > 0
+	absorptionCapacity = 1
+	#Harming Extra Capacity, Default: 1
+	#Range: > 0
+	harmingCapacity = 1
+	#Healing Extra Capacity, Default: 1
+	#Range: > 0
+	healingCapacity = 1
+	#Health Boost Extra Capacity, Default: 2
+	#Range: > 0
+	healthBoostCapacity = 2
+	#Levitation Extra Capacity, Default: 2
+	#Range: > 0
+	levitationCapacity = 2
+	#Resistance Extra Capacity, Default: 6
+	#Range: > 0
+	resistanceCapacity = 6
+	#Wither Extra Capacity, Default: 1
+	#Range: > 0
+	witherCapacity = 1
+
+["Modded Capacity"]
+
+	["Modded Capacity"."Status Effects"]
+		#Bottling Extra Capacity, Default: 4
+		#Range: > 0
+		bottlingCapacity = 4
+		#Corpse Eater Extra Capacity, Default: 4
+		#Range: > 0
+		corpseEaterCapacity = 4
+		#Cursed Extra Capacity, Default: 4
+		#Range: > 0
+		cursedCapacity = 4
+		#Deflective Extra Capacity, Default: 4
+		#Range: > 0
+		deflectiveCapacity = 4
+		#Evil Eye Extra Capacity, Default: 4
+		#Range: > 0
+		evilEyeCapacity = 4
+		#Explosive Extra Capacity, Default: 2
+		#Range: > 0
+		explosiveCapacity = 2
+		#Fiery Aura Extra Capacity, Default: 2
+		#Range: > 0
+		fieryAuraCapacity = 2
+		#Fire Trail Extra Capacity, Default: 4
+		#Range: > 0
+		fireTrailCapacity = 4
+		#Fortunate Extra Capacity, Default: 6
+		#Range: > 0
+		fortunateCapacity = 6
+		#Frosty Aura Extra Capacity, Default: 2
+		#Range: > 0
+		frostyAuraCapacity = 2
+		#Gravity Pulse Extra Capacity, Default: 2
+		#Range: > 0
+		gravityPulseCapacity = 2
+		#Nyctophobia Extra Capacity, Default: 4
+		#Range: > 0
+		nyctophobiaCapacity = 4
+		#Plunge Extra Capacity, Default: 4
+		#Range: > 0
+		plungeCapacity = 4
+		#Radiance Extra Capacity, Default: 2
+		#Range: > 0
+		radianceCapacity = 2
+		#Rallying Extra Capacity, Default: 2
+		#Range: > 0
+		rallyingCapacity = 2
+		#Save Effects Extra Capacity, Default: 2
+		#Range: > 0
+		saveEffectsCapacity = 8
+		#Shielding Extra Capacity, Default: 2
+		#Range: > 0
+		shieldingCapacity = 2
+		#Snow Skin Extra Capacity, Default: 4
+		#Range: > 0
+		snowSkinCapacity = 4
+		#Storm's Wrath Extra Capacity, Default: 4
+		#Range: > 0
+		stormsWrathCapacity = 4
+		#Sun Allergy Extra Capacity, Default: 4
+		#Range: > 0
+		sunAllergyCapacity = 4
+		#Swirling Extra Capacity, Default: 2
+		#Range: > 0
+		swirlingCapacity = 2
+		#Wild Rage Extra Capacity, Default: 2
+		#Range: > 0
+		wildRageCapacity = 2
+
+	["Modded Capacity"."Block/Other Effects"]
+		#Bat Burst Extra Capacity, Default: 2
+		#Range: > 0
+		batBurstCapacity = 2
+		#BEEEEES Extra Capacity, Default: 1
+		#Range: > 0
+		beesCapacity = 1
+		#Combust Extra Capacity, Default: 1
+		#Range: > 0
+		combustCapacity = 1
+		#Explode Extra Capacity, Default: 4
+		#Range: > 0
+		explodeCapacity = 4
+		#Flooding Extra Capacity, Default: 2
+		#Range: > 0
+		floodingCapacity = 2
+		#Purify Debuffs Extra Capacity, Default: 2
+		#Range: > 0
+		purifyDebuffsCapacity = 2
+		#Purify Buffs Extra Capacity, Default: 2
+		#Range: > 0
+		purifyBuffsCapacity = 2
+		#Raise Dead Extra Capacity, Default: 2
+		#Range: > 0
+		raiseDeadCapacity = 2
+		#Strip Armor Extra Capacity, Default: 2
+		#Range: > 0
+		stripArmorCapacity = 2
+		#Webbed Extra Capacity, Default: 1
+		#Range: > 0
+		webbedCapacity = 1
 

@@ -12,46 +12,44 @@
 [Dimensions]
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Applies an offset to the world's temperature across an entire dimension
-	# ├── Format: [["dimension_id", temperature, *units], ["dimension_id", temperature, *units]... etc]
+	# ├── Format: [["dimension_id", temperature, *units], [...], etc]
 	# └── [* = optional]
 	# • dimension_id: The ID of the dimension (e.g. "minecraft:the_nether")
 	# • temperature: The temperature offset to apply to the dimension
 	# • *units: The units of the temperature ("f", "c", or "mc"). Defaults to Minecraft units (mc))
-	# ⌄ 
 	"Dimension Temperature Offsets" = [
 	    ["minecraft:the_nether", 0.3, "MC"],
 	    ["minecraft:the_end", -0.1, "MC"]
 	]
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Defines the temperature of a dimension, overriding biome and elevation temperature
-	# ├── Format: [["dimension_id", temperature, *units], ["dimension_id", temperature, *units]... etc]
+	# ├── Format: [["dimension_id", temperature, *units], [...], etc]
 	# └── [* = optional]
 	# • dimension_id: The ID of the dimension (e.g. "minecraft:the_nether")
 	# • temperature: The temperature of the dimension
 	# • *units: The units of the temperature ("f", "c", or "mc"). Defaults to Minecraft units (mc))
-	# ⌄ 
 	"Dimension Temperatures" = []
 
 [Biomes]
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Applies an offset to the temperature of a biome
-	# ├── Format: [["biome_id", lowTemp, highTemp, *units], ["biome_id", lowTemp, highTemp, *units]... etc]
+	# ├── Format: [["biome_id", lowTemp, highTemp, *units, *waterTemp], [...], etc]
 	# └── [* = optional]
 	# • biome_id: The ID of the biome (e.g. "minecraft:desert")
 	# • lowTemp: The temperature offset at midnight
 	# • highTemp: The temperature offset at noon
 	# • *units: The units of the temperature ("f", "c", or "mc"). Defaults to Minecraft units (mc))
-	# ⌄ 
+	# • *waterTemp: Offsets the temperature of water in the biome
 	"Biome Temperature Offsets" = []
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Defines the temperature of a biome, overriding the biome's default temperature
-	# ├── Format: [["biome_id", low-temp, high-temp, *units], ["biome_id", low-temp, high-temp, *units]... etc]
+	# ├── Format: [["biome_id", lowTemp, highTemp, *units, *waterTemp], [...], etc]
 	# └── [* = optional]
 	# • biome_id: The ID of the biome (e.g. "minecraft:desert")
 	# • lowTemp: The temperature of the biome at midnight
 	# • highTemp: The temperature of the biome at noon
 	# • *units: The units of the temperature ("f", "c", or "mc"). Defaults to Minecraft units (mc))
-	# ⌄ 
+	# • *waterTemp: The temperature of water in the biome
 	"Biome Temperatures" = [
 	    ["minecraft:deep_frozen_ocean", 56.0, 65.0, "F"],
 	    ["minecraft:deep_dark", 63.0, 63.0, "F"],
@@ -70,30 +68,31 @@
 	    ["minecraft:bamboo_jungle", 76.0, 87.0, "F"],
 	    ["minecraft:windswept_forest", 48.0, 66.0, "F"],
 	    ["minecraft:desert", 48.0, 115.0, "F"],
-	    ["minecraft:river", 60.0, 70.0, "F"],
+	    ["minecraft:river", 59, 82, "F"],
 	    ["minecraft:frozen_peaks", 15.0, 33.0, "F"],
 	    ["minecraft:jungle", 76.0, 87.0, "F"],
 	    ["minecraft:snowy_slopes", 24.0, 38.0, "F"],
 	    ["minecraft:savanna_plateau", 76.0, 98.0, "F"],
 	    ["minecraft:old_growth_birch_forest", 58.0, 72.0, "F"],
 	    ["minecraft:stony_shore", 50.0, 64.0, "F"],
-	    ["minecraft:savanna", 70.0, 95.0, "F"]
+	    ["minecraft:savanna", 70.0, 95.0, "F"],
+	    ["minecraft:plains", 59, 82, "F"]
 	]
 
 [Blocks]
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Applies temperature-emitting properties to blocks
-	# ├── Format: [["block_id", <temperature>, <range>, <*units>, <*maxEffect>, <*predicates>, <*"{nbt}">, <*temperatureLimit>], [etc...], [etc...]]
+	# ├── Format: [["block_id", temperature, range, *units, *maxEffect, *"predicates", *"{nbt}", *tempLimit], [...], etc]
 	# └── [* = optional]
 	# • block_id: The ID of the block (i.e. "minecraft:lava")
 	# • temperature: The temperature of the block, in Minecraft units
 	# • range: The radius of the block's temperature effect, in blocks
 	# • *units: The units of the temperature ("f", "c", or "mc"). Defaults to Minecraft units (mc))
 	# • *maxEffect: The maximum cumulative temperature change this block can cause to a player (even with multiple blocks)
-	# • *predicates: The state that the block has to be in for the temperature to be applied (i.e. lit=true).
-	#   (Multiple predicates can be used by separating them with commas [i.e. "lit=true,waterlogged=false"])
+	# • *predicates: The state that the block must have for the temperature to be applied (i.e. "lit=true").
+	#   (Define multiple predicates by separating them with commas [i.e. "lit=true,waterlogged=false"])
 	# • *nbt: The NBT data that the block must have for the temperature to be applied.
-	# • *temperatureLimit: The maximum world temperature at which this block temp will have any effect.
+	# • *tempLimit: The maximum world temperature at which this block temp will have any effect.
 	#   (Represents the minimum temp if the block temp is negative)
 	"Block Temperatures" = [
 	    ["cold_sweat:boiler", 0.27, 7, "mc", 0.88, "lit=true", "", 4],
@@ -113,98 +112,102 @@
 	    ["kubejs:lpg,netherexp:soul_jack_o_lantern,netherexp:soul_ghoul_o_lantern,netherexp:soul_burning_wither_skull_block,netherexp:soul_burning_skull_block,netherexp:soul_magma_block,netherexp:souled_geyser,minecraft:soul_lantern,blue_skies:moonstone_lantern", -0.3, 4, "mc", 1.0, "", "", -1],
 	    ["minecraft:lava_cauldron,#create:fan_processing_catalysts/blasting,#forge:ores/uranium,immersiveengineering:sheetmetal_uranium,immersiveengineering:slab_sheetmetal_uranium", 0.5, 7, "mc", 1.5],
 	    ["immersiveengineering:storage_uranium,immersiveengineering:raw_block_uranium,immersiveengineering:slab_storage_uranium", 0.8, 5, "mc", 5],
-	    ["minecraft:lava,kubejs:molten_iron,kubejs:molten_steel,kubejs:molten_slag,kubejs:molten_za,kubejs:molten_netherite,createnuclear:uranium", 0.25, 7, "mc", 4, "", "", 21.5, true]
+	    ["minecraft:lava,kubejs:molten_iron,kubejs:molten_steel,kubejs:molten_slag,kubejs:molten_za,kubejs:molten_netherite,createnuclear:uranium", 0.25, 7, "mc", 4, "", "", 21.5, true],
+	    ["create:blaze_burner", 5, 3, "f", 30, "blaze=smouldering", "", 400]
 	]
 	#─────────────────────────────────────────────────────────────────────────
 	# The maximum range of blocks' area of effect
 	# - Note: This will not change anything unless blocks are configured to utilize the expanded range
 	# - This value is limited to 16 for performance reasons
-	# ⌄ 
 	#Range: 1 ~ 16
 	"Block Range" = 7
 	#─────────────────────────────────────────────────────────────────────────
 	# When set to true, uses Cold Sweat's temperature system to determine water freezing behavior
-	# ⌄ 
 	"Custom Freezing Behavior" = false
 	#─────────────────────────────────────────────────────────────────────────
 	# When set to true, modifies ice blocks to be harvestable with a pickaxe
-	# ⌄ 
 	"Custom Ice Drops" = false
+	#─────────────────────────────────────────────────────────────────────────
+	# The speed at which wet players dry off
+	#Range: 0.0 ~ Infinity
+	"Dryoff Speed" = 0.0015
+	#─────────────────────────────────────────────────────────────────────────
+	# The speed at which players become soaked when in water
+	#Range: 0.0 ~ Infinity
+	"Water Soak Speed" = 0.1
+	#─────────────────────────────────────────────────────────────────────────
+	# The speed at which players become soaked when in rain
+	#Range: 0.0 ~ Infinity
+	"Rain Soak Speed" = 0.0125
+	#─────────────────────────────────────────────────────────────────────────
+	# The default temperature of water
+	# └── Format: [temperature, *units]
+	"Default Water Temperature" = [-10, "f"]
+	#─────────────────────────────────────────────────────────────────────────
+	# The maximum soak level a player can reach from rain alone (0.0 - 1.0)
+	#Range: 0.0 ~ Infinity
+	"Max Rain Soak" = 0.2
 
 [Misc]
 	#─────────────────────────────────────────────────────────────────────────
 	# List of blocks that will allow the player to sleep on them, regardless of the "Prevent Sleep When in Danger" setting
 	# Use this list if the player is not getting the temperature effect from sleeping on particular blocks
-	# ⌄ 
 	"Sleep Check Override Blocks" = ["#comforts:sleeping_bags"]
 	#─────────────────────────────────────────────────────────────────────────
 	# When set to true, players cannot sleep if they are cold or hot enough to die
-	# ⌄ 
 	"Check Sleeping Conditions" = true
 	#─────────────────────────────────────────────────────────────────────────
 	# Converts damage dealt by Soul Fire to cold damage (default: true)
 	# Does not affect the block's temperature
-	# ⌄ 
 	"Cold Soul Fire" = true
 	#─────────────────────────────────────────────────────────────────────────
-	# A temperature offset applied when the sky is overcast
+	# A temperature offset applied when in complete shade or when the sky is overcast
 	# └── Format: [offset, *units]
-	# ⌄ 
-	"Overcast Temperature Offset" = [-0.35, "mc"]
+	"Shade Temperature Offset" = [-0.2, "mc"]
 
-#"Thermal sources" are blocks that have a smokestack and give frigidness/warmth, like the hearth, boiler, and iceobx
+#"Thermal sources" are blocks that have a smokestack and give frigidness/warmth. like the hearth, boiler, and iceobx
 ["Thermal Sources"]
 	#─────────────────────────────────────────────────────────────────────────
 	# How effective thermal sources are at normalizing temperature
-	# ⌄ 
 	#Range: 0.0 ~ 1.0
 	"Thermal Source Strength" = 0.75
 	#─────────────────────────────────────────────────────────────────────────
 	# List of additional blocks that thermal sources can spread through
 	# Use this list if thermal sources aren't spreading through particular blocks that they should
-	# ⌄ 
 	"Thermal Source Spread Whitelist" = ["minecraft:iron_bars", "minecraft:jungle_leaves", "minecraft:oak_leaves", "minecraft:spruce_leaves", "minecraft:dark_oak_leaves", "minecraft:acacia_leaves", "minecraft:birch_leaves", "minecraft:azalea_leaves", "minecraft:flowering_azalea_leaves", "minecraft:mangrove_leaves", "minecraft:cherry_leaves", "undergarden:smogstem_leaves", "undergarden:wigglewood_leaves", "undergarden:grongle_leaves", "outer_end:azure_leaves", "goety:rotten_leaves", "goety:windswept_leaves", "goety:pine_leaves", "goety:hardened_leaves", "blue_skies:bluebright_leaves", "blue_skies:starlit_leaves", "blue_skies:frostbright_leaves", "blue_skies:lunar_leaves", "blue_skies:dusk_leaves", "blue_skies:maple_leaves", "blue_skies:crystallized_leaves", "blue_skies:comet_leaves", "blue_skies:crescent_fruit_leaves", "create:encased_fluid_pipe"]
 	#─────────────────────────────────────────────────────────────────────────
 	# List of additional blocks that thermal sources spread through
 	# Use this list if thermal sources are spreading through particular blocks that they shouldn't
-	# ⌄ 
 	"Thermal Source Spread Blacklist" = []
 
 	["Thermal Sources".Hearth]
 		#─────────────────────────────────────────────────────────────────────────
 		# Allows the hearth to automatically turn on/off based on nearby players' temperature
 		# If false, it turns on/off by redstone signal instead
-		# ⌄ 
 		"Automatic Hearth" = false
 		#─────────────────────────────────────────────────────────────────────────
 		# The distance the hearth's air will travel from a source, like the hearth itself or the end of a pipe
-		# ⌄ 
 		#Range: > 0
 		"Hearth Range" = 20
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum distance that air can be piped away from the hearth
-		# ⌄ 
 		#Range: > 0
 		"Max Hearth Range" = 96
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum volume of the hearth's area of effect
-		# ⌄ 
 		#Range: > 1
 		"Hearth Volume" = 12000
 		#─────────────────────────────────────────────────────────────────────────
 		# The time it takes for the hearth to be fully functional after being placed
-		# ⌄ 
 		#Range: > 0
 		"Hearth Warm-Up Time" = 1200
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum amount of insulation that the hearth can provide
-		# ⌄ 
 		#Range: 0 ~ 10
 		"Hearth Effect Strength" = 10
 		#─────────────────────────────────────────────────────────────────────────
 		# How often the hearth consumes fuel (in ticks)
 		# Lower numbers cause fuel to be consumed faster. Setting to 0 disables fuel consumption
-		# ⌄ 
 		#Range: > 0
 		"Hearth Fuel Consumption Interval" = 40
 
@@ -212,37 +215,30 @@
 		#─────────────────────────────────────────────────────────────────────────
 		# Allows the boiler to automatically turn on/off based on nearby players' temperature
 		# If false, it turns on/off by redstone signal instead
-		# ⌄ 
 		"Automatic Boiler" = false
 		#─────────────────────────────────────────────────────────────────────────
 		# The distance the boiler's air will travel from a source, like the boiler itself or the end of a pipe
-		# ⌄ 
 		#Range: > 0
 		"Boiler Range" = 16
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum distance that air can be piped away from the boiler
-		# ⌄ 
 		#Range: > 0
 		"Max Boiler Range" = 96
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum volume of the boiler's area of effect
-		# ⌄ 
 		#Range: > 1
 		"Boiler Volume" = 2000
 		#─────────────────────────────────────────────────────────────────────────
 		# The time it takes for the boiler to be fully functional after being placed
-		# ⌄ 
 		#Range: > 0
 		"Boiler Warm-Up Time" = 1200
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum amount of insulation that the boiler can provide
-		# ⌄ 
 		#Range: 0 ~ 10
 		"Boiler Warmth Strength" = 5
 		#─────────────────────────────────────────────────────────────────────────
 		# How often the boiler consumes fuel (in ticks)
 		# Lower numbers cause fuel to be consumed faster. Setting to 0 disables fuel consumption
-		# ⌄ 
 		#Range: > 0
 		"Boiler Fuel Consumption Interval" = 40
 
@@ -250,57 +246,48 @@
 		#─────────────────────────────────────────────────────────────────────────
 		# Allows the icebox to automatically turn on/off based on nearby players' temperature
 		# If false, it turns on/off by redstone signal instead
-		# ⌄ 
 		"Automatic Icebox" = false
 		#─────────────────────────────────────────────────────────────────────────
 		# The distance the icebox's air will travel from a source, like the icebox itself or the end of a pipe
-		# ⌄ 
 		#Range: > 0
 		"Icebox Range" = 16
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum distance that air can be piped away from the icebox
-		# ⌄ 
 		#Range: > 0
 		"Max Icebox Range" = 96
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum volume of the icebox's area of effect
-		# ⌄ 
 		#Range: > 1
 		"Icebox Volume" = 2000
 		#─────────────────────────────────────────────────────────────────────────
 		# The time it takes for the icebox to be fully functional after being placed
-		# ⌄ 
 		#Range: > 0
 		"Icebox Warm-Up Time" = 1200
 		#─────────────────────────────────────────────────────────────────────────
 		# The maximum amount of insulation that the icebox can provide
-		# ⌄ 
 		#Range: 0 ~ 10
 		"Icebox Chill Strength" = 5
 		#─────────────────────────────────────────────────────────────────────────
 		# How often the icebox consumes fuel (in ticks)
 		# Lower numbers cause fuel to be consumed faster. Setting to 0 disables fuel consumption
-		# ⌄ 
 		#Range: > 0
 		"Icebox Fuel Consumption Interval" = 40
 
 [Structures]
 	#─────────────────────────────────────────────────────────────────────────
 	# Overrides the world temperature when the player is within this structure
-	# ├── Format: [["structure_id", temperature, *units], ["structure_id", temperature, *units]... etc]
+	# ├── Format: [["structure_id", temperature, *units], [...], etc]
 	# └── [* = optional]
 	# • structure_id: The ID of the structure (i.e. "minecraft:stronghold")
 	# • temperature: The temperature of the structure, in Minecraft units
 	# • *units: The units of the temperature ("f" for Fahrenheit, "c" for Celsius, "mc" for Minecraft units)
-	# ⌄ 
 	"Structure Temperatures" = []
 	#─────────────────────────────────────────────────────────────────────────
 	# Offsets the world temperature when the player is within this structure
-	# ├── Format: [["structure_id", offset, *units], ["structure_id", offset, *units]... etc]
+	# ├── Format: [["structure_id", offset, *units], [...], etc]
 	# └── [* = optional]
-	# • structure_id: The ID of the structure (i.e. "minecraft:stronghold")
+	# • structure_id: The ID of the structure (i.e. "minecraft:igloo")
 	# • offset: The temperature offset of the structure, in Minecraft units
 	# • *units: The units of the temperature ("f" for Fahrenheit, "c" for Celsius, "mc" for Minecraft units)
-	# ⌄ 
 	"Structure Temperature Offsets" = []
 

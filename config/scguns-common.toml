@@ -18,13 +18,8 @@
 		#The value to multiply the damage by if projectile hit the players head
 		#Range: 1.0 ~ 1.7976931348623157E308
 		headShotDamageMultiplier = 1.25
-		#The value to multiply the damage by if projectile is a critical hit
-		#Range: 1.0 ~ 1.7976931348623157E308
-		criticalDamageMultiplier = 1.5
 		#If true, projectiles will ignore leaves when checking for collision
 		ignoreLeaves = true
-		#If true, projectiles will cause knockback when an entity is hit. By default this is set to true to match the behaviour of Minecraft.
-		enableKnockback = true
 		#Sets the strength of knockback when shot by a bullet projectile. Knockback must be enabled for this to take effect. If value is equal to zero, knockback will use default minecraft value
 		#Range: 0.0 ~ 1.0
 		knockbackStrength = 0.15
@@ -38,12 +33,10 @@
 		energyProductionRate = 50
 		#If true, enables the draw animation for weapons
 		drawAnimation = true
-		#If true, guns will always use energy system even if Create mod is loaded NOT WORKING.
-		forceEnergyGuns = false
 		#If true, guns will toggle ADS mode.
 		toggleADS = false
 		#Global multiplier for all gun damage. 1.0 = normal damage, 0.5 = half damage, 2.0 = double damage. Affects all projectile damage from guns.
-		#Range: 0.01 ~ 10.0
+		#Range: 0.01 ~ 100.0
 		globalDamageMultiplier = 1.0
 		#If true, the Brass Mask ritual will never spawn villagers. When disabled, it will spawn Dissidents instead based on the spawn chance below.
 		disableVillagerSpawning = false
@@ -54,6 +47,29 @@
 		enableAutoReload = true
 		#If true, allows flamethrowers to place fire on blocks
 		enableFirePlacement = true
+		#Global multiplier for all turret gun damage. 1.0 = normal damage, 0.5 = half damage, 2.0 = double damage. Affects all projectile damage from turrets.
+		#Range: 0.01 ~ 100.0
+		globalTurretDamageMultiplier = 1.0
+		#If true, allows flamethrowers weapons to purify sculk blocks
+		enableSculkPurification = true
+		#The volume for Player Gunfire. Default is 8
+		#Range: 1 ~ 10
+		playerGunfireVolume = 8
+		#The volume for Mob Gunfire. Default is 8
+		#Range: 1 ~ 10
+		mobGunfireVolume = 8
+		#Global multiplier for mob fire rate. 1.0 = normal speed, 0.5 = faster (half delay), 2.0 = slower (double delay). Lower values = faster shooting.
+		#Range: 0.1 ~ 5.0
+		mobFireRateMultiplier = 1.0
+		#Multiplier for delay between bursts. Higher = longer delays between bursts. 1.0 = normal, 2.0 = double delay.
+		#Range: 0.1 ~ 5.0
+		mobBurstDelayMultiplier = 1.0
+		#Global multiplier for mob gun damage. 1.0 = normal damage, 0.5 = half damage, 2.0 = double damage. Affects all projectile damage from mobs.
+		#Range: 0.01 ~ 100.0
+		mobGunDamageMultiplier = 1.0
+		#Chance (0.0 to 1.0) that Cog enemies will spawn a Signal Beacon on death. Set to 0.0 to disable beacon spawning from Cog deaths.
+		#Range: 0.0 ~ 1.0
+		cogBeaconSpawnChance = 0.15
 
 		#Properties related to gun griefing
 		[common.gameplay.griefing]
@@ -72,6 +88,8 @@
 			enableBlockBreaking = true
 			#If true, allows beam weapons to mine blocks
 			enableBeamMining = true
+			#If enabled, allows block removal on explosions from mob weapons. Only applies if enableBlockRemovalOnExplosions is also true
+			enableMobExplosionBlockRemoval = false
 
 		[common.gameplay.gameplay]
 			#Set to false to disable the spawning of casing items when firing guns.
@@ -114,12 +132,6 @@
 		silencedRange = 20.0
 		#LEGACY: Additional entities that will flee from gunshots. Animals are automatically detected. Use the 'scguns:fleeing_from_guns' entity tag instead for better mod compatibility.
 		fleeingEntities = ["minecraft:cow", "minecraft:sheep", "minecraft:pig", "minecraft:chicken", "minecraft:rabbit", "minecraft:horse", "minecraft:villager"]
-
-	#Properties relating to rockets
-	[common.rockets]
-		#The max distance which the explosion is effective to
-		#Range: 0.0 ~ 1.7976931348623157E308
-		explosionRadius = 5.0
 
 	#Properties relating to grenades
 	[common.grenades]
@@ -187,41 +199,6 @@
 		#Range: > 1
 		maxCount = 10
 
-	#Properties relating to turrets
-	[common.turret]
-		#Base damage for STANDARD_COPPER_ROUND turret projectile
-		#Range: 0.0 ~ 1.7976931348623157E308
-		standard_copper_round_damage = 4.0
-		#Base damage for ADVANCED_ROUND turret projectile
-		#Range: 0.0 ~ 1.7976931348623157E308
-		advanced_round_damage = 6.0
-		#Base damage for GIBBS_ROUND turret projectile
-		#Range: 0.0 ~ 1.7976931348623157E308
-		gibbs_round_damage = 8.0
-		#Base damage for COMPACT_COPPER_ROUND turret projectile
-		#Range: 0.0 ~ 1.7976931348623157E308
-		compact_copper_round_damage = 2.0
-		#Base damage for COMPACT_ADVANCED_ROUND turret projectile
-		#Range: 0.0 ~ 1.7976931348623157E308
-		compact_advanced_round_damage = 3.5
-		#Base damage for HOG_ROUND turret projectile
-		#Range: 0.0 ~ 1.7976931348623157E308
-		hog_round_damage = 5.0
-		#Base damage for SHOTGUN_SHELL turret projectile
-		#Range: 0.0 ~ 1.7976931348623157E308
-		shotgun_shell_damage = 18.0
-		#Base damage for BEARPACK_SHELL turret projectile
-		#Range: 0.0 ~ 1.7976931348623157E308
-		bearpack_shell_damage = 24.0
-		#If true, turret damage will scale over time
-		enable_damage_scaling = false
-		#The rate at which turret damage increases per day
-		#Range: 0.0 ~ 1.7976931348623157E308
-		damage_scaling_rate = 0.03
-		#The maximum damage that turret scaling can reach
-		#Range: 0.0 ~ 1.7976931348623157E308
-		max_scaled_damage = 1.7976931348623157E308
-
 	#Properties relating to ExoSuit Core capacities
 	[common.exosuit_cores]
 		#Energy capacity for Basic ExoSuit Core
@@ -233,4 +210,41 @@
 		#Energy capacity for Elite ExoSuit Core
 		#Range: 1000 ~ 100000
 		eliteCoreCapacity = 30000
+
+	#Gun Mob Spawning Configuration
+	[common.gunner_config]
+		#If enabled, mobs will have a chance to spawn with guns.
+		gunnerMobSpawning = false
+		#Base chance for progression-based gunner mobs to spawn (0.0 = never, 1.0 = always).
+		#This is the spawn chance on NORMAL difficulty. Thematic mobs use their own config.
+		#Range: 0.0 ~ 1.0
+		gunnerSpawnChance = 0.3
+		#If enabled, spawn chances scale with game difficulty.
+		#PEACEFUL: 50% of base chance, EASY: 75%, NORMAL: 100%, HARD: 150%
+		scaleToDifficulty = true
+		#If enabled, gunner mobs will have a chance to spawn as Elites with better armor.
+		eliteSpawning = true
+		#Base chance for Elite Gunners to spawn (0.0 = never, 1.0 = always).
+		#This is the spawn chance on NORMAL difficulty.
+		#Range: 0.0 ~ 1.0
+		eliteChance = 0.2
+
+	#Mini-Raid Configuration
+	[common.raids]
+		#If enabled, mini-raids can spawn at night based on player progression.
+		raidsEnabled = true
+		#Chance each night for a raid to spawn near a valid player (0.0 = never, 1.0 = always).
+		#Set to 0.0 to effectively disable raids without turning off the system entirely.
+		#Range: 0.0 ~ 1.0
+		nightlyRaidChance = 0.0
+		#Minimum number of days that must pass between natural raid spawns.
+		#Set to 0 to allow raids every night (if chance succeeds).
+		#Set to 1 to allow raids every other night.
+		#Set to 2 or higher to space out raids further.
+		#Range: 0 ~ 100
+		minDaysBetweenRaids = 2
+		#Time in minutes before a raid automatically fails if the boss is not defeated.
+		#Default: 10 minutes
+		#Range: 0 ~ 60
+		raidTimeoutMinutes = 10
 

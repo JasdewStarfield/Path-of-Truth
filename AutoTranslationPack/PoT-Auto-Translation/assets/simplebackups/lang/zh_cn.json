@@ -1,8 +1,0 @@
-{
-  "simplebackups.backups_paused": "备份已暂停",
-  "simplebackups.commands.is_merging": "合并操作已在进行中",
-  "simplebackups.backup_started": "备份开始...",
-  "simplebackups.commands.only_modified": "不仅会备份修改的文件，请检查您的配置文件",
-  "simplebackups.commands.finished": "合并备份成功完成",
-  "simplebackups.backup_finished": "备份已于 %s 内完成 (%s | %s)"
-}

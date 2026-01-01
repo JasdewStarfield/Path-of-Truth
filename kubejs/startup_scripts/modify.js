@@ -35,6 +35,11 @@ ItemEvents.modification(event => {
     item.rarity = "epic"
   })
 
+  //重型盾牌耐久
+  event.modify('immersiveengineering:shield', item => {
+    item.maxDamage = 4096
+  })
+
   //雪球堆叠64
   event.modify('minecraft:snowball', item => {
     item.maxStackSize = 64

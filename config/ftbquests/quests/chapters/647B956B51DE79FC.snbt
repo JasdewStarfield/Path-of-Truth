@@ -125,7 +125,7 @@
 			]
 			shape: "octagon"
 			size: 1.5d
-			subtitle: "**方舟，启动！"
+			subtitle: "方舟，启动！"
 			tasks: [
 				{
 					id: "1E28F60648CA8024"

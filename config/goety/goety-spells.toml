@@ -234,6 +234,9 @@
 		#Entangling Spell Cost, Default: 8
 		#Range: > 0
 		entanglingCost = 8
+		#Maximum amount of targets that can be entangled when cast using Wild Staff, Default: 8
+		#Range: > 1
+		entanglingStaffAmount = 8
 
 	[Spells."Whispering Spell"]
 		#Time to cast Whispering Spell, Default: 100
@@ -383,6 +386,18 @@
 		#Quaking Spell Cooldown, Default: 100
 		#Range: > 0
 		quakingCoolDown = 100
+		#Earth Fist Spell Cost, Default: 8
+		#Range: > 0
+		earthFistCost = 8
+		#Time to cast Earth Fist Spell, Default: 0
+		#Range: 0 ~ 72000
+		earthFistTime = 0
+		#Earth Fist Spell Cooldown, Default: 100
+		#Range: > 0
+		earthFistCoolDown = 60
+		#How much base damage Earth Fists deals, Default: 6.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		earthFistDamage = 6.0
 
 	[Spells."Shockwave Spell"]
 		#How much base maximum damage Shockwave Spell deals, Default: 24.0
@@ -1154,18 +1169,15 @@
 		#Vexing Spell Cost, Default: 18
 		#Range: > 0
 		vexCost = 18
-		#Number of Vex Servants that can be spawn with a wand, without instantly dying, around the player, Default: 8
-		#Range: > 1
-		wandVexLimit = 8
-		#Number of Vex Servants that can be spawn with a staff, without instantly dying, around the player, Default: 16
-		#Range: > 1
-		staffVexLimit = 16
 		#Vexing Spell Summon Down, Default: 340
 		#Range: 0 ~ 72000
 		vexSummonDown = 340
 		#Time to cast Vexing Spell, Default: 100
 		#Range: 0 ~ 72000
 		vexTime = 100
+		#Number of Vex Servants that an individual player can have in total, Default: 8
+		#Range: > 1
+		vexLimit = 8
 
 	[Spells."Ghastly Spell"]
 		#Number of Mini Ghasts that can exist around the player, Default: 8
@@ -1478,6 +1490,12 @@
 		#Time to cast Biomine Spell, Default: 40
 		#Range: 0 ~ 72000
 		biomineTime = 40
+		#How much base damage Biomine explosion deals, Default: 3.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		biomineDamage = 3.0
+		#How much base damage Biomine acid cloud deals, Default: 2.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		biomineAcidDamage = 2.0
 
 	[Spells."Bombardment Spell"]
 		#Bombardment Spell Cost, Default: 8
@@ -1537,7 +1555,7 @@
 		#Time to cast Watching Spell, Default: 40
 		#Range: 0 ~ 72000
 		watchlingTime = 40
-		#Watching Spell Cooldown, Default: 200
+		#Watching Spell Cooldown, Default: 300
 		#Range: > 0
 		watchlingCoolDown = 200
 		#Watching Spell Summon Down, Default: 120
@@ -1554,7 +1572,7 @@
 		#Time to cast Blasting Spell, Default: 60
 		#Range: 0 ~ 72000
 		blastlingTime = 60
-		#Blasting Spell Cooldown, Default: 200
+		#Blasting Spell Cooldown, Default: 400
 		#Range: > 0
 		blastlingCoolDown = 200
 		#Blasting Spell Summon Down, Default: 120
@@ -1571,7 +1589,7 @@
 		#Time to cast Snaring Spell, Default: 40
 		#Range: 0 ~ 72000
 		snarelingTime = 40
-		#Snaring Spell Cooldown, Default: 200
+		#Snaring Spell Cooldown, Default: 350
 		#Range: > 0
 		snarelingCoolDown = 200
 		#Snaring Spell Summon Down, Default: 120
@@ -1580,6 +1598,90 @@
 		#Number of Snareling Servants that an individual player can have in total, Default: 32
 		#Range: > 1
 		snarelingLimit = 32
+
+	[Spells."Illuminate Spell"]
+		#Illuminate Spell Cost, Default: 4
+		#Range: > 0
+		illuminateCost = 4
+		#How many ticks the Illuminate Spell much charge before casting, Default: 0
+		#Range: > 0
+		illuminateChargeUp = 0
+		#Time to cast Illuminate Spell per second, Default: 5
+		#Range: 0 ~ 72000
+		illuminateTime = 5
+		#Minimum block light level below which the spell attempts to light up, Default: 5
+		#Range: 0 ~ 15
+		illuminateMinLightLevel = 5
+
+	[Spells."Razor Wind Spell"]
+		#Razor Wind Spell Cost, Default: 24
+		#Range: > 0
+		razorWindCost = 24
+		#Time to cast Razor Wind Spell, Default: 0
+		#Range: 0 ~ 72000
+		razorWindDuration = 0
+		#Razor Wind Spell Cooldown, Default: 60
+		#Range: > 0
+		razorWindCoolDown = 60
+		#How much base damage Razor Winds deals, Default: 6.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		razorWindDamage = 6.0
+
+	[Spells."Thunderstorm Spell"]
+		#Thunderstorm Spell Cost, Default: 64
+		#Range: > 0
+		thunderstormCost = 64
+		#Time to cast Thunderstorm Spell, Default: 60
+		#Range: 0 ~ 72000
+		thunderstormTime = 60
+		#Thunderstorm Spell Cooldown, Default: 300
+		#Range: > 0
+		thunderstormCoolDown = 300
+		#How much base damage Thunderstorm deals, Default: 5.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		thunderstormDamage = 5.0
+
+	[Spells."Stellar Spell"]
+		#Stellar Spell Cost, Default: 16
+		#Range: > 0
+		stellarCost = 16
+		#Time to cast Stellar Spell, Default: 35
+		#Range: 15 ~ 72000
+		stellarDuration = 35
+		#Stellar Spell Cooldown, Default: 100
+		#Range: > 0
+		stellarCoolDown = 100
+		#How much base damage the Void Shocks from Stellar spell deals, Default: 7.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		stellarDamage = 7.0
+
+	[Spells."Void Flash Spell"]
+		#Void Flash Spell Cost, Default: 32
+		#Range: > 0
+		voidFlashCost = 32
+		#Time to cast Void Flash Spell, Default: 86
+		#Range: 0 ~ 72000
+		voidFlashDuration = 86
+		#Void Flash Spell Cooldown, Default: 200
+		#Range: > 0
+		voidFlashCoolDown = 200
+		#How much base damage the Void Shock Bombs from Void Flash spell deals, Default: 7.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		voidFlashDamage = 7.0
+
+	[Spells."Water Whip Spell"]
+		#Water Whip Spell Cost, Default: 16
+		#Range: > 0
+		waterWhipCost = 16
+		#Time to cast Water Whip Spell, Default: 0
+		#Range: 0 ~ 72000
+		waterWhipTime = 0
+		#Water Whip Spell Cooldown, Default: 10
+		#Range: > 0
+		waterWhipCoolDown = 10
+		#How much base damage the spell deals, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		waterWhipDamage = 4.0
 
 [Enchantments]
 	#Soul Eater Maximum Enchantment Level, Default: 5
@@ -1594,7 +1696,7 @@
 	#Wanting Maximum Enchantment Level, Default: 3
 	#Range: 1 ~ 10
 	maxWantingLevel = 3
-	#Range Maximum Enchantment Level, Default: 10
+	#Range Maximum Enchantment Level, Default: 5
 	#Range: 1 ~ 10
 	maxRangeLevel = 10
 	#Duration Maximum Enchantment Level, Default: 3
@@ -1606,6 +1708,11 @@
 	#Burning Maximum Enchantment Level, Default: 3
 	#Range: 1 ~ 10
 	maxBurningLevel = 3
+	#Whether Focus Enchantments can appear on Villager Trade Pools, Default: true
+	focusEnchantsTrades = true
+	#How much power Potency increases, Default: 1
+	#Range: > 1
+	potencyPower = 1
 
 [General]
 	#Whether Servants are killed/dismissed by hitting them while crouching with a wand or staff, put 1 to make them change by right-clicking on them while crouching, put 2 to disable it, Default: 0
@@ -1616,14 +1723,17 @@
 	#Casting Spells will cause the caster to completely stop moving, Default: false
 	fullStopCast = false
 	#Spells cost double soul cost if enchanted, Default: true
-	enchantMultiCost = true
+	enchantMultiCost = false
 	#Certain spells that summons servants will give player Summon Down effect, Default: true
 	summonDown = true
 	#Spells have their soul cost reduced or increased depending on the surroundings around the caster, Default: true
 	environmentalCost = true
-	#Multiplies the damage of spells by this amount, Default: 1
+	#Multiplies the damage of spells by this amount, this will will be multiplied by 'spellDamageMultiplierDecimal', Default: 1
 	#Range: > 1
 	spellDamageMultiplier = 1.5
 	#Whether Servants change navigation modes by hitting them, put false to make them change by right-clicking on them, Default: true
 	ownerHitCommand = true
+	#Multiplies the damage of spells by this amount in decimals, this will will be multiplied by 'spellDamageMultiplier', Default: 1.0
+	#Range: 0.0 ~ 1.7976931348623157E308
+	spellDamageMultiplierDecimal = 1.0
 

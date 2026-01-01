@@ -45,4 +45,8 @@ ItemEvents.tooltip(e => {
     e.add(["minecraft:echo_shard"], [Text.aqua({translate:'item.kubejs.echo_shard.desc'})])
 
     e.add(["kubejs:sword_o_justice"], [Text.yellow({translate:'item.kubejs.sword_o_justice.desc1'}),Text.red({translate:'item.kubejs.sword_o_justice.desc2'}),Text.gray({translate:'item.kubejs.sword_o_justice.desc3'})])
+
+    e.add(["immersiveengineering:armor_steel_helmet","immersiveengineering:armor_steel_chestplate","immersiveengineering:armor_steel_leggings","immersiveengineering:armor_steel_boots"], [Text.green({translate:'item.kubejs.steel_armor.desc'})])
+
+    e.add(["immersiveengineering:armor_faraday_boots","immersiveengineering:armor_faraday_leggings","immersiveengineering:armor_faraday_chestplate","immersiveengineering:armor_faraday_helmet"], [Text.green({translate:'item.kubejs.faraday_armor.desc'})])
 })

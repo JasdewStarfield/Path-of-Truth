@@ -4,12 +4,13 @@
       "net.minecraft.client.gui.screens.inventory.BookEditScreen",
       "net.mehvahdjukaar.supplementaries.client.screens.TextHolderEditScreen",
       "net.minecraft.client.gui.screens.inventory.AbstractSignEditScreen",
+      "com.sighs.generalfeedback.client.FeedbackScreen",
       "dev.ftb.mods.ftblibrary.ui.ScreenWrapper"
     ],
     "enableScreenRecovering": false,
     "recoveredScreens": [],
     "englishStateImpl": "CONVERSION_STATUS",
-    "primaryEnglishState": "CJK"
+    "primaryEnglishState": "ENG"
   },
   "advanceSettings": {
     "enableCharSimulation": false
