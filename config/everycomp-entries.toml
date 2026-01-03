@@ -68,6 +68,7 @@
 			lime_cake = true
 			pomegranate_cake = true
 			pink_dragon_fruit_cake = true
+			lucuma_cake = true
 
 	[types.wood_type]
 
@@ -136,6 +137,9 @@
 			willow = true
 			witch_hazel = true
 			zelkova = true
+
+		[types.wood_type.collectorsreap]
+			lucuma = true
 
 	[types.leaves_type]
 
@@ -225,6 +229,9 @@
 			yellow_birch = true
 			yellow_spruce = true
 			firecracker = true
+
+		[types.leaves_type.collectorsreap]
+			lucuma = true
 
 #Disables specific entries
 [entries]

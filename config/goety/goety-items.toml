@@ -217,6 +217,9 @@
 		#If 'voidSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		voidSetMobNeutralHealth = 50.0
+		#Determines how far Void Robes wearers can teleport away from original position, Default: 4
+		#Range: > 1
+		voidRobeTeleportDistance = 4
 
 [General]
 	#Fire Spawn Cage are enabled, Default: true
