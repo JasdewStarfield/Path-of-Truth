@@ -245,6 +245,8 @@
 		illagerServantChunkLoadMark = true
 		#Whether Illagers chunk load areas around themselves and their raid position when raiding, Default: true
 		illagerServantChunkLoadRaid = true
+		#Whether Mountaineers can climb up blocks like Spiders, Default: true
+		mountaineerClimb = true
 
 	[Servants."Void Servants"]
 		#Whether Void Servants can heal if summoned while wearing Nether Robe, Default: true

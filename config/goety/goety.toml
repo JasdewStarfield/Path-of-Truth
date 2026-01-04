@@ -174,7 +174,7 @@
 	#Move where the equipped Focus is located horizontally from its original position (- = Left, + = Right), Default: 0
 	#Range: > -2147483647
 	focusGuiHorizontal = 0
-	#Entities part of a Player's Book of Goodwill will not take most damage from said Player rather than just spells, Default: false
+	#Entities part of a Player's Grimoire of Goodwill will not take most damage from said Player rather than just spells, Default: false
 	goodwillNoDamage = false
 	#Show currently equipped focus on Wand/Staff in Gui, Default: true
 	focusGuiShow = true
@@ -194,4 +194,6 @@
 	maxArcaSouls = 100000
 	#Allows player movement if Focus/Brew Wheel are open, Default: true
 	wheelGuiMovement = true
+	#Entities part of a Player's Grimoire of Goodwill will be considered as the Player's ally codewise, Default: true
+	goodwillFullAlly = true
 
