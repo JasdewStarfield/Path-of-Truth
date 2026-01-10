@@ -244,6 +244,16 @@
 	trapped_lucuma_chest = true
 	vernal_purge = true
 	wild_berry_gummy = true
+	bullet_pepper_popper = true
+	cannoli = true
+	carbonara_pasta = true
+	chocolate_cannoli = true
+	coffee_cannoli = true
+	mint_cannoli = true
+	prawn_spread = true
+	strawberry_cannoli = true
+	stuffed_pasta_shells = true
+	vanilla_cannoli = true
 
 [Behavior]
 	#Whether Lime Bushes require Bee pollination to reach final growth stage.
@@ -269,4 +279,7 @@
 	#Chance to regain health with Rebound
 	#Range: 0.01 ~ 1.0
 	rebound_chance = 0.15
+	#Length in seconds of effect gained by eating Panettone.
+	#Range: 0 ~ 600
+	panettone_duration = 20
 
