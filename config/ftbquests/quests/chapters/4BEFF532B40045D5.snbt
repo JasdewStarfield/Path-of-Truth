@@ -227,7 +227,7 @@
 			}]
 			title: "组队！"
 			x: -1.5d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["07AF78F3534CC8D3"]
@@ -268,8 +268,8 @@
 				}
 			]
 			title: "区块加载！"
-			x: -2.5d
-			y: 4.5d
+			x: -3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["1AB48D8D4E2767F6"]
@@ -436,7 +436,7 @@
 			}]
 			title: "知识就是力量"
 			x: 1.5d
-			y: 3.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["4814464FAB9C404C"]
@@ -496,7 +496,7 @@
 				}
 			]
 			title: "艺术家的工作"
-			x: 0.0d
+			x: -1.0d
 			y: 4.0d
 		}
 		{
@@ -536,7 +536,7 @@
 				}
 			]
 			title: "音乐人的工作"
-			x: -1.0d
+			x: -2.0d
 			y: 5.0d
 		}
 		{
@@ -637,8 +637,8 @@
 				}
 			]
 			title: "知识掌控者"
-			x: 2.5d
-			y: 4.5d
+			x: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["1AB48D8D4E2767F6"]
@@ -863,7 +863,7 @@
 			y: -2.5d
 		}
 		{
-			dependencies: ["05BA4137086115E9"]
+			dependencies: ["3519ED0299640CF4"]
 			description: [
 				"这个系列的伪装方块配方很简单，而且可以把任意方块放入以复制其纹理！但它不会产生那个方块应有的特效，所以更适合用来搭建建筑。"
 				"植物魔法的幻影平台也有近似的效果，这里就不再赘述，不过……那个平台会让你掉下去（躺"
@@ -876,11 +876,11 @@
 				type: "item"
 			}]
 			title: "以假乱真"
-			x: 1.0d
+			x: 2.0d
 			y: 5.0d
 		}
 		{
-			dependencies: ["05BA4137086115E9"]
+			dependencies: ["34C16BAADA9CC42C"]
 			description: [
 				"在背包界面，你可以打开时装盔甲栏！(也可以关闭某一栏的护甲显示）"
 				"装备在时装栏的护甲会优先显示，但是，它们不会产生任何实际效果。"
@@ -900,8 +900,8 @@
 				type: "checkmark"
 			}]
 			title: "护甲幻化"
-			x: 0.0d
-			y: 5.5d
+			x: 1.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["2BC7BDD7E5EC76E5"]
@@ -1110,29 +1110,6 @@
 			title: "生命基本单元"
 			x: -7.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["3519ED0299640CF4"]
-			description: [
-				"本整合包为了方便游玩，加入了相当一批有效的饰品，可以在饰品栏进行装备。"
-				"然而相应的，有一些工业/魔法的工具也会占据饰品栏，这就需要你自行取舍了。"
-			]
-			icon: "artifacts:mimic_spawn_egg"
-			id: "3C9AD619097D4B8D"
-			rewards: [{
-				id: "63B151E0D0A6E011"
-				item: "botania:bauble_box"
-				type: "item"
-			}]
-			subtitle: "有用的小玩意"
-			tasks: [{
-				id: "664EE70AA886314D"
-				title: "有用就好"
-				type: "checkmark"
-			}]
-			title: "更多饰品"
-			x: 0.0d
-			y: 7.0d
 		}
 		{
 			dependencies: [
@@ -1361,6 +1338,102 @@
 			title: "二十四节气"
 			x: 0.0d
 			y: -6.5d
+		}
+		{
+			dependencies: ["34C16BAADA9CC42C"]
+			description: [
+				"一部分配方需要你在世界内与方块交互完成！"
+				"若要自动化，请考虑使用&6机械手&r！"
+			]
+			icon: "botania:dry_grass"
+			id: "2C6AFA92E62C37CD"
+			subtitle: "真·“手搓”"
+			tasks: [{
+				id: "562868CCB41DE84C"
+				title: "已读"
+				type: "checkmark"
+			}]
+			title: "世界合成"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["2C6AFA92E62C37CD"]
+			description: [
+				"切洋葱会辣哭人的，真的。"
+				"或许……&4&n不是人&r也行？"
+				"&a&o试试在黑曜石上面切洋葱！&r"
+			]
+			icon: "minecraft:crying_obsidian"
+			id: "3E212FB0811801DA"
+			rewards: [{
+				id: "784796870B331DD5"
+				item: "minecraft:ghast_tear"
+				type: "item"
+			}]
+			subtitle: "辣哭了，兄弟"
+			tasks: [
+				{
+					id: "6A423C18E9D64382"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					id: "19BD92EE064AD76A"
+					item: "farmersdelight:onion"
+					type: "item"
+				}
+				{
+					id: "3D3569EAFADD393F"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+				{
+					id: "23FFE1DC56183553"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/knives"
+						}
+					}
+					title: "什么刀都行"
+					type: "item"
+				}
+			]
+			title: "谁在切……？"
+			x: -1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2C6AFA92E62C37CD"]
+			description: [
+				"有些配方需要&9回响碎片&r，你可能需要前往&9深暗&r群系寻找它。提示：你可以使用&2自然指南针&r！"
+				"觉得在监守者面前翻找回响碎片太危险？你可以尝试对那里的幽匿块使用&5紫水晶碎片&r来概率获取回响碎片……这一流程也是&6可以自动化&r的。当然，如何自动生成幽匿块……就要看你的游戏理解了。"
+			]
+			icon: "minecraft:echo_shard"
+			id: "071FE8D29F382C57"
+			rewards: [{
+				id: "3A62C91997F80429"
+				item: "scguns:scamp_package"
+				type: "item"
+			}]
+			subtitle: "回响形态了"
+			tasks: [
+				{
+					id: "23B75BD42723C724"
+					item: "minecraft:sculk"
+					type: "item"
+				}
+				{
+					id: "09736956630D1AF3"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+			]
+			title: "回响形态了"
+			x: 1.0d
+			y: 6.5d
 		}
 	]
 	subtitle: ["The Representation of This World"]
