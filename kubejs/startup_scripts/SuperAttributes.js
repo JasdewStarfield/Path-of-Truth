@@ -111,7 +111,7 @@
             Attrs.init(e)
                 .add(SCAttribute.RELOAD_SPEED.get(), 0.075, 'multiply_base')
                 .add(SCAttribute.BULLET_DAMAGE_MULTIPLIER.get(), 0.025, 'multiply_base')
-                .add(Attributes.BLOCK_BREAK_SPEED, 0.05, 'multiply_total')
+                .add(Attributes.ATTACK_KNOCKBACK, 0.05)
                 .add(Attributes.MOVEMENT_SPEED, 0.05, 'multiply_total')
         }
         //钢化钻石
