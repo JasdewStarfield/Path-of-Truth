@@ -103,21 +103,23 @@
             Attrs.init(e)
                 .add(SCAttribute.RELOAD_SPEED.get(), 0.025, 'multiply_base')
                 .add(SCAttribute.BULLET_DAMAGE_MULTIPLIER.get(), 0.075, 'multiply_base')
-                .add(Attributes.ATTACK_DAMAGE, 0.05, 'multiply_base')
+                .add(Attributes.ATTACK_DAMAGE, 0.05, 'multiply_total')
+                .add(Attributes.ATTACK_SPEED, 0.05, 'multiply_total')
         }
         //黄铜合金
         else if (id.startsWith('scguns:treated_brass_')) {
             Attrs.init(e)
                 .add(SCAttribute.RELOAD_SPEED.get(), 0.075, 'multiply_base')
                 .add(SCAttribute.BULLET_DAMAGE_MULTIPLIER.get(), 0.025, 'multiply_base')
-                .add(Attributes.SPEED, 0.05, 'multiply_base')
+                .add(Attributes.ATTACK_KNOCKBACK, 0.05)
+                .add(Attributes.MOVEMENT_SPEED, 0.05, 'multiply_total')
         }
         //钢化钻石
         else if (id.startsWith('scguns:diamond_steel_')) {
             Attrs.init(e)
                 .add(SCAttribute.RELOAD_SPEED.get(), 0.075, 'multiply_base')
                 .add(SCAttribute.BULLET_DAMAGE_MULTIPLIER.get(), 0.075, 'multiply_base')
-                .add(Attributes.MAX_HEALTH, 3)
+                .add(Attributes.MAX_HEALTH, 4)
         }
     })
 

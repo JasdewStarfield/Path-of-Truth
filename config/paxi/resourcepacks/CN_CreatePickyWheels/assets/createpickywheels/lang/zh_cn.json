@@ -1,14 +1,37 @@
 {
-  "create.hint.waterwheel_infinite.title": "水体大小不够",
-  "create.hint.picky_biome_boost": "生物群系效率",
-  "create.hint.waterwheel_source": "太多或太少的水源试图转动这个水车。",
-  "create.hint.waterwheel_source.title": "缺乏水源",
-  "create.hint.windmill_flow": "这个风车周围缺乏足够的空旷空间。不然的话，那些风从哪里来呢？",
-  "create.hint.windmill_flow.title": "空气流量不足",
-  "create.hint.windmill_biome": "风车对它们的生物群系很挑剔。",
+  "create.hint.waterwheel_infinite.title": "水源不足",
   "create.hint.waterwheel_infinite": "目标流体体积不够大。",
+
+  "create.hint.waterwheel_source.title": "缺少动力源",
+  "create.hint.waterwheel_source": "太多或太少的水源试图转动这个水车。",
+
+  "create.hint.windmill_flow.title": "空气流量不足",
+  "create.hint.windmill_flow": "这个风车周围缺乏足够的空旷空间。不然的话，那些风从哪里来呢？",
   "create.hint.windmill_biome.title": "无效生物群系",
-  "create.hint.waterwheel_biome.title": "无效生物群系",
-  "create.hint.picky_height_boost": "海拔效率",
-  "create.hint.waterwheel_biome": "水车对它们的生物群系很挑剔。"
+  "create.hint.windmill_biome": "风车对它们的生物群系很挑剔。",
+
+  "create.hint.picky_efficiency_pre": "以",
+  "create.hint.picky_efficiency": "效率生产",
+
+  "create.hint.picky_biome_boost": "来自生物群系位置",
+  "create.hint.picky_height_boost": "来自相对高度要求",
+  "create.hint.picky_optimal_boost": "来自动力源条件",
+
+  "create.hint.picky_biome_error": "由于处于无效生物群系中而无法工作",
+  "create.hint.picky_biome_warn": "放置在次优生物群系中",
+  "create.hint.picky_biome_notice": "放置在最优生物群系中",
+
+  "create.hint.picky_source_error": "由于动力源无效而无法工作",
+  "create.hint.picky_source_warn": "放置在次优动力源上",
+  "create.hint.picky_source_notice": "放置在最优动力源上",
+
+  "create.ponder.water_wheel.text_4": "如果水体足够大，水车会从相邻的水源中获取动力。在河流生物群系中获得增强效果",
+  "create.ponder.water_wheel.text_5": "覆盖额外的侧面，或完全淹没它，将禁用其动能输出",
+  "create.ponder.water_wheel.text_6": "在水车上使用木板来改变其外观",
+
+  "create.ponder.large_water_wheel.text_6": "如果水体足够大，大型水车会从相邻的水源中获取动力。在河流生物群系中获得增强效果",
+  "create.ponder.large_water_wheel.text_7": "覆盖额外的侧面，或完全淹没它，将禁用其动能输出",
+  "create.ponder.large_water_wheel.text_8": "它们的旋转速度仅为普通水车的一半……",
+  "create.ponder.large_water_wheel.text_9": "……但提供更高的应力容量",
+  "create.ponder.large_water_wheel.text_10": "在水车上使用木板来改变其外观"
 }

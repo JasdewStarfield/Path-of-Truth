@@ -14,3 +14,20 @@ BlockEvents.rightClicked("minecraft:sculk", event => {
         }
     }
 })
+
+BlockEvents.rightClicked("farmersdelight:cutting_board", event => {
+    const heldItem = event.player.getItemInHand(event.hand)
+    const blockStack = event.block.getInventory().getStackInSlot(0)
+    const isOnionInBlockInventory = blockStack.hasTag("forge:crops/onion")
+    const blockUnder = event.level.getBlock(event.block.x, event.block.y - 1, event.block.z)
+
+    if (heldItem.hasTag("forge:tools/knives") && isOnionInBlockInventory && blockUnder.id === "minecraft:obsidian") {
+        heldItem.hurtAndBreak(1, event.player, (player) => {
+            player.broadcastBreakEvent(event.hand)
+        })
+        event.player.tell(Text.green({translate:'advancements.nether.obtain_crying_obsidian.title'}))
+        event.server.runCommandSilent(`particle subtle_effects:water_splash_droplet 5 5 true ${event.block.x} ${event.block.y} ${event.block.z} 0.5 0.5 0.5 0.01 5 normal`)
+        event.server.runCommandSilent(`playsound minecraft:block.lava.extinguish ambient @a ${event.block.x} ${event.block.y} ${event.block.z}`)
+        blockUnder.set("minecraft:crying_obsidian")
+    }
+})

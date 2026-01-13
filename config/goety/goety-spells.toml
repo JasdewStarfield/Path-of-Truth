@@ -1,8 +1,8 @@
 
 ["Servant Limits"]
-	#Number of Bound Illager Servants that an individual player can have in total, Default: 2
+	#Number of Bound Illager Servants that an individual player can have in total, Default: 8
 	#Range: > 1
-	boundIllagerLimit = 2
+	boundIllagerLimit = 8
 	#Number of Brood Mother Servants that an individual player can have in total, Default: 2
 	#Range: > 1
 	broodMotherLimit = 2
@@ -1682,6 +1682,23 @@
 		#How much base damage the spell deals, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		waterWhipDamage = 4.0
+
+	[Spells."Carrion Spell"]
+		#Carrion Spell Cost, Default: 16
+		#Range: > 0
+		carrionCost = 16
+		#Time to cast Carrion Spell, Default: 100
+		#Range: 0 ~ 72000
+		carrionTime = 100
+		#Carrion Spell Cooldown, Default: 300
+		#Range: > 0
+		carrionCoolDown = 300
+		#Carrion Spell Summon Down, Default: 200
+		#Range: 0 ~ 72000
+		carrionSummonDown = 200
+		#Number of Carrion Maggots and Flies a player can have, Default: 32
+		#Range: > 1
+		carrionLimit = 32
 
 [Enchantments]
 	#Soul Eater Maximum Enchantment Level, Default: 5

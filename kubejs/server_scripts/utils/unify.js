@@ -181,6 +181,15 @@ ServerEvents.recipes(event => {
   event.shapeless(Item.of('nethersdelight:hoglin_loin', 2), ['netherexp:hogham'])
   event.shapeless(Item.of('nethersdelight:hoglin_sirloin', 2), ['netherexp:cooked_hogham'])
 
+  //谁在切洋葱？
+  event.recipes.farmersdelight.cutting(
+    '#forge:crops/onion',
+    '#forge:tools/knives',
+    [
+      Item.of('minecraft:lime_dye')
+    ]
+  )
+
   //新版本配方backport
   event.remove({id: 'minecraft:lodestone'})
   event.shaped(Item.of('minecraft:lodestone'), [ 

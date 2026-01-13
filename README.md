@@ -35,7 +35,7 @@ A Minecraft 1.20.1 Forge tech & magic modpack
   <p align="center">
     整合包反馈交流群：631894460，798699096
     <br />
-    <a href="https://www.curseforge.com/minecraft/modpacks/path-of-truth"><strong>在Curseforge上下载整合包正式版 »</strong></a>
+    <a href="https://www.curseforge.com/minecraft/modpacks/path-of-truth"><strong>（不建议，目前已停更）在Curseforge上下载整合包正式版 »</strong></a>
     <br />
     <br />
     <a href="https://b23.tv/BzX9RtL">观看宣传视频</a>

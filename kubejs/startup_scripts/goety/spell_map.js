@@ -34,6 +34,7 @@
              * @param {Vec3d} frm
              */
             trySpread(worldIn, srcEntity, range, caster) {
+                if (range <= 0) return
                 Utils.server.scheduleInTicks(5 + Math.random() * 5, () => {
                     let frm = this.getCenter(srcEntity)
                     // find nearest

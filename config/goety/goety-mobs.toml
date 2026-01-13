@@ -19,7 +19,7 @@
 	wraithAggressiveTeleport = true
 	#Whether Hellfire damage is mitigated by Fire Protection enchantment, Default: true
 	hellfireFireProtection = true
-	#Whether undead mobs in the Crypts remain hostile even if players wear Necro Set, Default: true
+	#Whether undead mobs in the Crypts and certain tagged structures remain hostile even if players wear Necro Set, Default: true
 	hostileCryptUndead = true
 	#Whether Mobs with Tall Heads(ie. Villagers, Illagers, etc.) will drop Tall Skulls, Default: true
 	tallSkullDrop = true
@@ -28,6 +28,8 @@
 	#How long invulnerability, Default: 15
 	#Range: > 0
 	bossInvulnerabilityTime = 15
+	#Whether ender mobs in the Final Terminal and certain tagged structures remain hostile even if players wear Void Set, Default: true
+	hostileTerminalEnder = true
 
 	[Misc.Vizier]
 		#Whether Viziers are persistent and do not naturally despawn. Default: false
@@ -57,6 +59,18 @@
 		apocalypseMode = false
 		#Whether Apostles are persistent and do not naturally despawn. Default: false
 		apostlePersistent = true
+		#Whether Apostles can summon Fire Tornadoes. Default: false
+		apostleTornado = false
+		#Whether Apostles can summon Hell Clouds. Default: true
+		apostleHellCloud = true
+		#Enable pre-nerf Apostle Nether/The Risen regeneration. Default: false
+		apostleQuickerRegen = false
+		#Enable pre-nerf Apostle The Glorious resistance. Default: false
+		apostleResistance = false
+		#Whether Apostles gain magic resistance if difficulty is on Hard. Default: false
+		apostleHardMagicResistance = false
+		#Whether Apostles can shoot Critical Hits on their Arrows. Default: true
+		apostleCritArrows = true
 
 	[Misc.Crone]
 		#Whether Crones inflict thorn damage at attackers, when attacked. Default: true
@@ -243,6 +257,8 @@
 		illagerServantChunkLoadMark = true
 		#Whether Illagers chunk load areas around themselves and their raid position when raiding, Default: true
 		illagerServantChunkLoadRaid = true
+		#Whether Mountaineers can climb up blocks like Spiders, Default: true
+		mountaineerClimb = true
 
 	[Servants."Void Servants"]
 		#Whether Void Servants can heal if summoned while wearing Nether Robe, Default: true
@@ -611,6 +627,8 @@
 			witchServantTexture = true
 			#If Maverick Servants have custom textures, Default: true
 			maverickServantTexture = true
+			#If Warlock Servants have custom textures, Default: true
+			warlockServantTexture = true
 
 [Spawning]
 
