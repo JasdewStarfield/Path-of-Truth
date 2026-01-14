@@ -59,22 +59,35 @@
 		apocalypseMode = false
 		#Whether Apostles are persistent and do not naturally despawn. Default: false
 		apostlePersistent = true
-		#Whether Apostles can summon Fire Tornadoes. Default: false
-		apostleTornado = false
+		#Whether Apostles can summon Fire Tornadoes. Default: true
+		apostleTornado = true
 		#Whether Apostles can summon Hell Clouds. Default: true
 		apostleHellCloud = true
-		#Enable pre-nerf Apostle Nether/The Risen regeneration. Default: false
-		apostleQuickerRegen = false
-		#Enable pre-nerf Apostle The Glorious resistance. Default: false
-		apostleResistance = false
+		#Enable Apostle Nether/The Risen quicker regeneration. Disabling will cause them to regenerate 10x more slowly. Default: true
+		apostleQuickerRegen = true
+		#Enable Apostle The Glorious getting Resistance effect. Disabling will give them Iron Hide instead. Default: true
+		apostleResistance = true
 		#Whether Apostles gain magic resistance if difficulty is on Hard. Default: false
 		apostleHardMagicResistance = false
 		#Whether Apostles can shoot Critical Hits on their Arrows. Default: true
 		apostleCritArrows = true
+		#Whether Apostle shoot indicator is enabled. Default: true
+		apostleShootIndicator = true
+		#Whether Apostle's armor and armor toughness values are halved when fought outside of the Nether. Default: true
+		apostleHalvedArmor = true
+		#Whether Apostles' teleport has a delay. Disabling will cause them to teleport instantly. Default: true
+		apostleDelayedTeleport = true
+		#How much damage is reduced, by percentage, on the Apostle when in the Nether, setting to 100 will make them invulnerable, Default: 50
+		#Range: 0 ~ 100
+		apostleNetherDamageReduction = 50
 
 	[Misc.Crone]
 		#Whether Crones inflict thorn damage at attackers, when attacked. Default: true
 		croneThornDefense = true
+
+	[Misc.Damned]
+		#Whether Damned shoot indicator is enabled. Default: true
+		damnedShootIndicator = true
 
 [Servants]
 	#Enable Redstone Cubes block detection mechanic, Default: true

@@ -1753,4 +1753,6 @@
 	#Multiplies the damage of spells by this amount in decimals, this will will be multiplied by 'spellDamageMultiplier', Default: 1.0
 	#Range: 0.0 ~ 1.7976931348623157E308
 	spellDamageMultiplierDecimal = 1.0
+	#Whether explosions made by SpellExplosion class has double the radius, Default: false
+	spellExplosionDouble = false
 

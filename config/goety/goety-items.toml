@@ -220,6 +220,9 @@
 		#Determines how far Void Robes wearers can teleport away from original position, Default: 4
 		#Range: > 1
 		voidRobeTeleportDistance = 4
+		#How much damage is reduced when in the Nether the Unholy Hats provides by percent, Default: 50
+		#Range: 0 ~ 100
+		unholyHatNetherResistance = 50
 
 [General]
 	#Fire Spawn Cage are enabled, Default: true
