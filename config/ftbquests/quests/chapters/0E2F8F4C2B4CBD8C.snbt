@@ -751,7 +751,13 @@
 				}
 				{
 					id: "30E851ED59B13A7D"
-					item: "tide:sailfish"
+					item: {
+						Count: 1
+						id: "tide:sailfish"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 				{
