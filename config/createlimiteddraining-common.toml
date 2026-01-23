@@ -1,0 +1,10 @@
+#Define infinite draining groups.
+#Format: 'Fluid1, Fluid2... ; Biome1, Biome2...'
+#Logic: If the fluid is in the left list AND the biome is in the right list, it can be drained infinitely.
+#Note that this rule is applied BEFORE the basic Create rule.
+#If a fluid bypassed this mod's rule, it still needs to go through Create's rule. (By default, more than 10000 B and has tag #create:bottomless/allow)
+#Examples:
+#  'minecraft:water, #forge:milk ; #minecraft:is_ocean, minecraft:river' (Water and Milk are infinite in Oceans and Rivers)
+#  '#minecraft:lava ; #minecraft:is_nether' (Lava is infinite in Nether)
+drainingRules = ["#minecraft:lava ; #minecraft:is_nether"]
+

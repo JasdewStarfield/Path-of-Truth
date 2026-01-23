@@ -194,6 +194,8 @@
 	maxArcaSouls = 100000
 	#Allows player movement if Focus/Brew Wheel are open, Default: true
 	wheelGuiMovement = true
-	#Entities part of a Player's Grimoire of Goodwill will be considered as the Player's ally codewise, Default: true
-	goodwillFullAlly = true
+	#Entities part of a Player's Grimoire of Goodwill will be considered as the Player's ally codewise, Default: false
+	goodwillFullAlly = false
+	#Arca will save the Player if past Totem Maximum Soul Count but only if they're a Lich, Default: true
+	arcaLichUndying = true
 

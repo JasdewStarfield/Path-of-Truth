@@ -254,6 +254,8 @@
 	strawberry_cannoli = true
 	stuffed_pasta_shells = true
 	vanilla_cannoli = true
+	lucuma_cannoli = true
+	straw_brush = true
 
 [Behavior]
 	#Whether Lime Bushes require Bee pollination to reach final growth stage.
@@ -265,6 +267,12 @@
 	#(1/x) Chance to pick a Stygian Pomegranate from a bush when all conditions are met.
 	#Range: 1 ~ 100
 	stygian_pomegranate_rarity = 10
+	#Maximum durability of the Straw Brush.
+	#Range: > 1
+	straw_brush_durability = 8
+	#Amount of times a Pollen Covered Straw Brush will perform a Bone Meal action on a growable.
+	#Range: 1 ~ 100
+	straw_brush_bone_meals = 2
 
 [Effects]
 	#Attack damage multiplier gained from Surge I.
@@ -280,6 +288,6 @@
 	#Range: 0.01 ~ 1.0
 	rebound_chance = 0.15
 	#Length in seconds of effect gained by eating Panettone.
-	#Range: 0 ~ 600
+	#Range: > 0
 	panettone_duration = 20
 
