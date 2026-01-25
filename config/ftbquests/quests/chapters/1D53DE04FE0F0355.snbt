@@ -615,6 +615,19 @@
 					}
 					type: "item"
 				}
+				{
+					id: "28F1E57DA74B0F47"
+					item: {
+						Count: 1
+						id: "createdeco:decal_electrical"
+						tag: {
+							display: {
+								Lore: ["\"闪电羿\""]
+							}
+						}
+					}
+					type: "item"
+				}
 			]
 			shape: "hexagon"
 			size: 1.5d

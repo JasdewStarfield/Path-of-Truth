@@ -140,72 +140,16 @@
 	seaAmuletChargeConsume = 1
 
 	[Curios.Robes]
-		#If 'frostSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
-		#Range: 1.0 ~ 1.7976931348623157E308
-		frostSetMobNeutralHealth = 50.0
-		#Whether wearing both Witch Robe and Hat will cause Witches and Warlocks to be neutral, Default: true
-		witchSetWitchNeutral = true
-		#How much magic resistance Witches Robes provides by percent, Default: 85
-		#Range: 0 ~ 100
-		witchRobeResistance = 85
 		#Whether wearing Necro Crown while not being a Lich gives Weakness when in sunlight, Default: true
 		necroCrownWeakness = true
-		#How much frost resistance Frost Robes provides by percent, Default: 85
-		#Range: 0 ~ 100
-		frostRobeResistance = 85
-		#How much shock resistance Storm Robes provides by percent, Default: 85
-		#Range: 0 ~ 100
-		stormRobeResistance = 85
-		#How much magic resistance Warlock Robes provides by percent, Default: 85
-		#Range: 0 ~ 100
-		warlockRobeResistance = 85
-		#If 'wildSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
-		#Range: 1.0 ~ 1.7976931348623157E308
-		wildSetMobNeutralHealth = 50.0
-		#How much Soul Energy is taken per second when wearer is falling slowly, Default: 1
-		#Range: > 1
-		windRobeSouls = 1
-		#Whether wearing both Necro Cape and Crown will cause Undead mobs to be neutral, Default: true
-		necroSetUndeadNeutral = true
 		#Render Capes on certain Robes, Default: true
 		windRobeCape = true
-		#Whether wearing both Nether Robe and Crown will cause certain mobs to be neutral, Default: true
-		netherSetMobNeutral = true
-		#Whether wearing a Nether Robe will cause Witches and Warlocks to be neutral, Default: true
-		netherRobeWitchNeutral = true
-		#If 'abyssSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
-		#Range: 1.0 ~ 1.7976931348623157E308
-		abyssSetMobNeutralHealth = 50.0
-		#Whether wearing both Frost Robe and Crown will cause certain mobs to be neutral, Default: true
-		frostSetMobNeutral = true
-		#If 'necroSetUndeadNeutral' is enabled, the highest max health an Undead mob has to have to be neutral, Default: 50.0
-		#Range: 1.0 ~ 1.7976931348623157E308
-		necroSetUndeadNeutralHealth = 50.0
-		#Whether wearing both Nameless Cape and Crown will cause Undead mobs to be neutral, Default: true
-		namelessSetUndeadNeutral = true
 		#Necro Crown and Cape change textures when wearing a specific robe, Default: true
 		necroCapeChangeTexture = true
-		#Whether wearing both Abyss Robe and Crown will cause certain mobs to be neutral, Default: true
-		abyssSetMobNeutral = true
-		#How much fire resistance Nether Robes provides by percent, Default: 85
-		#Range: 0 ~ 100
-		netherRobeResistance = 85
-		#If 'namelessSetUndeadNeutral' is enabled, the highest max health an Undead mob has to have to be neutral, Default: 50.0
-		#Range: 1.0 ~ 1.7976931348623157E308
-		namelessSetUndeadNeutralHealth = 50.0
-		#Whether wearing both Wild Robe and Crown will cause certain mobs to be neutral, Default: true
-		wildSetMobNeutral = true
 		#Show Hoods when wearing certain robes ie, Illusive Robes, Default: true
 		showRobeHoods = true
 		#Whether wearing Necro Cape while not being a Lich gives Hunger when in sunlight, Default: true
 		necroCapeHunger = true
-		#If 'netherSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
-		#Range: 1.0 ~ 1.7976931348623157E308
-		netherSetMobNeutralHealth = 50.0
-		#Whether wearing a Warlock Robe will cause Witches and Warlocks to be neutral, Default: true
-		warlockRobeWitchNeutral = true
-		#Whether wearing both Void Robe and Crown will cause certain mobs to be neutral, Default: true
-		voidSetMobNeutral = true
 		#Determines the chance of Void Robes wearers can teleport away from incoming attacks, set to 0 to disable, Default: 5
 		#Range: 0 ~ 100
 		voidRobeTeleportChance = 5
@@ -214,15 +158,119 @@
 		#Determines what level of Sapped is applied while wearing Void Robes in rain or water, set to 0 to disable, Default: 2
 		#Range: 0 ~ 10
 		voidRobeWaterSapped = 2
-		#If 'voidSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
-		#Range: 1.0 ~ 1.7976931348623157E308
-		voidSetMobNeutralHealth = 50.0
 		#Determines how far Void Robes wearers can teleport away from original position, Default: 4
 		#Range: > 1
 		voidRobeTeleportDistance = 4
-		#How much damage is reduced when in the Nether the Unholy Hats provides by percent, Default: 50
-		#Range: 0 ~ 100
-		unholyHatNetherResistance = 50
+
+		[Curios.Robes.Discounts]
+			#How much soul cost discount Dark/Grand Robes provides by percent, Default: 15
+			#Range: 0 ~ 100
+			darkRobeDiscount = 15
+			#How much soul cost discount Frost Robes provides by percent, Default: 50
+			#Range: 0 ~ 100
+			frostRobeDiscount = 50
+			#How much soul cost discount Wind Robes provides by percent, Default: 50
+			#Range: 0 ~ 100
+			windRobeDiscount = 50
+			#How much soul cost discount Storm Robes provides by percent, Default: 50
+			#Range: 0 ~ 100
+			stormRobeDiscount = 50
+			#How much soul cost discount Wild Robes provides by percent, Default: 50
+			#Range: 0 ~ 100
+			wildRobeDiscount = 50
+			#How much soul cost discount Geo Robes provides by percent, Default: 50
+			#Range: 0 ~ 100
+			geoRobeDiscount = 50
+			#How much soul cost discount Nether/Unholy Robes provides by percent, Default: 50
+			#Range: 0 ~ 100
+			netherRobeDiscount = 50
+			#How much soul cost discount Abyss Robes provides by percent, Default: 50
+			#Range: 0 ~ 100
+			abyssRobeDiscount = 50
+			#How much soul cost discount Void Robes provides by percent, Default: 50
+			#Range: 0 ~ 100
+			voidRobeDiscount = 50
+
+		[Curios.Robes.Resistances]
+			#How much Soul Energy is taken per second when wearer is falling slowly, Default: 1
+			#Range: > 1
+			windRobeSouls = 1
+			#How much magic resistance Witches Robes provides by percent, Default: 85
+			#Range: 0 ~ 100
+			witchRobeResistance = 85
+			#How much magic resistance Warlock Robes provides by percent, Default: 85
+			#Range: 0 ~ 100
+			warlockRobeResistance = 85
+			#How much frost resistance Frost Robes provides by percent, Default: 85
+			#Range: 0 ~ 100
+			frostRobeResistance = 85
+			#How much shock resistance Storm Robes provides by percent, Default: 85
+			#Range: 0 ~ 100
+			stormRobeResistance = 85
+			#How much fire resistance Nether Robes provides by percent, Default: 85
+			#Range: 0 ~ 100
+			netherRobeResistance = 85
+			#How much damage is reduced when in the Nether the Unholy Hats provides by percent, Default: 50
+			#Range: 0 ~ 100
+			unholyHatNetherResistance = 50
+
+		[Curios.Robes.Neutral]
+			#Whether wearing both Abyss Robe and Crown will cause certain mobs to be neutral, Default: true
+			abyssSetMobNeutral = true
+			#If 'abyssSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			abyssSetMobNeutralHealth = 50.0
+			#Whether wearing both Geo Robe and Amethyst Necklace will cause certain mobs to be neutral, Default: true
+			geoSetMobNeutral = true
+			#If 'geoSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			geoSetMobNeutralHealth = 50.0
+			#Whether wearing both Frost Robe and Crown will cause certain mobs to be neutral, Default: true
+			frostSetMobNeutral = true
+			#If 'frostSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			frostSetMobNeutralHealth = 50.0
+			#Whether wearing both Wind Robe and Crown will cause certain mobs to be neutral, Default: true
+			windSetMobNeutral = true
+			#If 'windSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			windSetMobNeutralHealth = 50.0
+			#Whether wearing both Storm Robe and Crown will cause certain mobs to be neutral, Default: true
+			stormSetMobNeutral = true
+			#If 'stormSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			stormSetMobNeutralHealth = 50.0
+			#Whether wearing both Void Robe and Crown will cause certain mobs to be neutral, Default: true
+			voidSetMobNeutral = true
+			#If 'voidSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			voidSetMobNeutralHealth = 50.0
+			#Whether wearing both Wild Robe and Crown will cause certain mobs to be neutral, Default: true
+			wildSetMobNeutral = true
+			#If 'wildSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			wildSetMobNeutralHealth = 50.0
+			#Whether wearing both Nether Robe and Crown will cause certain mobs to be neutral, Default: true
+			netherSetMobNeutral = true
+			#If 'netherSetMobNeutral' is enabled, the highest max health affected mobs has to have to be neutral, Default: 50.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			netherSetMobNeutralHealth = 50.0
+			#Whether wearing both Necro Cape and Crown will cause Undead mobs to be neutral, Default: true
+			necroSetUndeadNeutral = true
+			#If 'necroSetUndeadNeutral' is enabled, the highest max health an Undead mob has to have to be neutral, Default: 50.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			necroSetUndeadNeutralHealth = 50.0
+			#Whether wearing both Nameless Cape and Crown will cause Undead mobs to be neutral, Default: true
+			namelessSetUndeadNeutral = true
+			#If 'namelessSetUndeadNeutral' is enabled, the highest max health an Undead mob has to have to be neutral, Default: 50.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			namelessSetUndeadNeutralHealth = 50.0
+			#Whether wearing both Witch Robe and Hat will cause Witches and Warlocks to be neutral, Default: true
+			witchSetWitchNeutral = true
+			#Whether wearing a Warlock Robe will cause Witches and Warlocks to be neutral, Default: true
+			warlockRobeWitchNeutral = true
+			#Whether wearing a Nether Robe will cause Witches and Warlocks to be neutral, Default: true
+			netherRobeWitchNeutral = true
 
 [General]
 	#Fire Spawn Cage are enabled, Default: true

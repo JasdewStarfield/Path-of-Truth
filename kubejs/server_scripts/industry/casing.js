@@ -149,16 +149,16 @@ ServerEvents.recipes(event => {
       'CAD'  
       ], {
       B: 'create:railway_casing',
-      A: 'dried_kelp_block',
+      A: 'rubberworks:rubber_sheet',
       C: 'immersiveengineering:ersatz_leather',
       D: 'create:cardboard'
     })
     event.recipes.create.sequenced_assembly([
       'kubejs:logistical_engineering'
     ], 'create:railway_casing', [
-      event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'dried_kelp_block']),
+      event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'rubberworks:rubber_sheet']),
       event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'immersiveengineering:ersatz_leather']),
       event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'create:cardboard']),
-      event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'dried_kelp_block'])
+      event.recipes.createDeploying('kubejs:incomplete_logistical_engineering', ['kubejs:incomplete_logistical_engineering', 'rubberworks:rubber_sheet'])
     ]).transitionalItem('kubejs:incomplete_logistical_engineering').loops(1)
 })

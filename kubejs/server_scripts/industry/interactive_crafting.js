@@ -37,6 +37,8 @@ ServerEvents.recipes(event => {
       ['vintageimprovements:spring_coiling_machine', 'vintageimprovements:spring_coiling_machine_wheel'],
       ['vintageimprovements:vibrating_table', "kubejs:basic_spring_set"],
       ['create:sticker', '#forge:slimeballs'],
+      ['rubberworks:sapper', 'create:mechanical_pump'],
+      ['rubberworks:compressor', 'create:industrial_iron_block']
     ]
     andesiteEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:andesite_engineering", material)
@@ -49,7 +51,7 @@ ServerEvents.recipes(event => {
       ["create:item_drain", "createdeco:iron_mesh_fence"],
       ["create_enchantment_industry:printer", "create:sturdy_sheet"],
       ["create_enchantment_industry:disenchanter", "#create:sandpaper"],
-      ["create:hose_pulley", "dried_kelp_block"],
+      ["create:hose_pulley", "rubberworks:rubber_block"],
       ["create:portable_fluid_interface", "create:chute"],
       ["vintageimprovements:vacuum_chamber", "create:mechanical_pump"],
       ['create:steam_engine', 'create:mechanical_piston'],
@@ -237,47 +239,4 @@ ServerEvents.recipes(event => {
     //区块加载器
     event.recipes.botania.mana_infusion('create_power_loader:brass_chunk_loader', 'create_power_loader:empty_brass_chunk_loader', 10000)
     event.recipes.botania.mana_infusion('create_power_loader:andesite_chunk_loader', 'create_power_loader:empty_andesite_chunk_loader', 4000)
-
-    //流体构件
-    event.recipes.create.sequenced_assembly(
-      [
-        Item.of('kubejs:fluid_mechanism', 1)
-      ],
-      '#forge:plates/constantan',
-      [
-        event.recipes.createDeploying('kubejs:incomplete_fluid_mechanism', ['kubejs:incomplete_fluid_mechanism', 'create:mechanical_pump']),
-        event.recipes.createDeploying('kubejs:incomplete_fluid_mechanism', ['kubejs:incomplete_fluid_mechanism', '#forge:nuggets/bronze']),
-        event.recipes.createDeploying('kubejs:incomplete_fluid_mechanism', ['kubejs:incomplete_fluid_mechanism', '#forge:nuggets/bronze']),
-        event.recipes.createPressing('kubejs:incomplete_fluid_mechanism', 'kubejs:incomplete_fluid_mechanism')
-      ]
-    ).transitionalItem('kubejs:incomplete_fluid_mechanism').loops(2)
-    event.recipes.create.compacting(
-      'kubejs:fluid_mechanism',
-      [
-        '#forge:plates/constantan',
-        'create:mechanical_pump',
-        'create:mechanical_pump',
-        '#forge:nuggets/bronze',
-        '#forge:nuggets/bronze',
-        '#forge:nuggets/bronze',
-        '#forge:nuggets/bronze',
-        Fluid.of('create:honey', 50)
-      ]
-    ).heated()
-
-    //流体接口
-    event.remove({id: "fluid:fluid_interface"})
-    event.shaped(
-      Item.of('fluid:fluid_interface', 1),
-      [
-      ' A ',
-      'BCB',
-      ' A '
-      ],
-      {
-          A: '#forge:nuggets/bronze',
-          B: '#forge:nuggets/constantan',
-          C: 'kubejs:fluid_mechanism'
-      }
-    )
 })

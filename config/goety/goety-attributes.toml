@@ -1007,6 +1007,31 @@
 			#Range: 1.0 ~ 1.7976931348623157E308
 			carrionFlyDamage = 3.0
 
+		[Attributes."Summoned Mobs"."Frayed Servant"]
+			#How much Max Health Frayed Servants have, Default: 20.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			frayedServantHealth = 20.0
+			#How much natural armor points Frayed Servants have, Default: 2.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			frayedServantArmor = 2.0
+			#How much damage Frayed Servants deals, Default: 3.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			frayedServantDamage = 3.0
+
+		[Attributes."Summoned Mobs"."Rattled Servant"]
+			#How much Max Health Rattled Servants have, Default: 20.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			rattledServantHealth = 20.0
+			#How much natural Armor Rattled Servants have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			rattledServantArmor = 0.0
+			#How much damage Rattled Servants deals, Default: 2.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			rattledServantDamage = 2.0
+			#How much extra damage Rattled Servants range attack deals, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			rattledServantRangeDamage = 0.0
+
 	[Attributes.Illagers]
 		#How much Max Health Conquillager have, Default: 24.0
 		#Range: 1.0 ~ 1.7976931348623157E308
