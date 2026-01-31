@@ -125,7 +125,7 @@
 	# When set to true, uses Cold Sweat's temperature system to determine water freezing behavior
 	"Custom Freezing Behavior" = false
 	#─────────────────────────────────────────────────────────────────────────
-	# When set to true, modifies ice blocks to be harvestable with a pickaxe
+	# When set to true, modifies ice blocks to be harvestable with a pickaxe and tweaks its mining speed
 	"Custom Ice Drops" = false
 	#─────────────────────────────────────────────────────────────────────────
 	# The speed at which wet players dry off

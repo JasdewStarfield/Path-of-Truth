@@ -233,7 +233,8 @@ const Bosses = [
     'bosses_of_mass_destruction:lich',
     'bosses_of_mass_destruction:obsidilith',
     'bosses_of_mass_destruction:void_blossom',
-    'botania:doppleganger'
+    'botania:doppleganger',
+    'aquamirae:captain_cornelia'
 ]
 
 const MiniBosses = [

@@ -245,6 +245,7 @@ ServerEvents.recipes(event => {
   event.remove({ id: 'oreganized:create/mixing/electrum_ingot' })
   event.remove({ id: 'oreganized:create/splashing/crushed_lead_ore' })
   event.remove({ id: 'oreganized:create/splashing/crushed_silver_ore' })
+  event.remove({ id: 'oreganized:mixing/electrum_ingot' })
   event.remove({ input: 'oreganized:bush_hammer' })
   event.remove({ output: 'oreganized:bush_hammer' })
   event.remove({ id: 'farmersdelight:cutting/saddle' })
