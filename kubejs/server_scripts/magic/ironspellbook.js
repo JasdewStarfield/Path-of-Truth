@@ -24,6 +24,18 @@ ServerEvents.recipes(event => {
     event.remove({id:'sophisticatedbackpacks:stack_upgrade_tier_3'})
     event.remove({id:'sophisticatedbackpacks:stack_upgrade_tier_4'})
     
+    //添加基座配方
+    event.shaped(
+        Item.of('irons_spellbooks:pedestal'),
+        [ 'AAA',
+          ' B ',
+          'AAA' ],
+        {
+            A: 'minecraft:polished_andesite_slab',
+            B: 'irons_spellbooks:arcane_ingot',
+        }
+    )
+
     //修改奥术布匹配方
     event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:magic_cloth'},
     '#minecraft:wool', 'immersiveengineering:hemp_fabric' )
