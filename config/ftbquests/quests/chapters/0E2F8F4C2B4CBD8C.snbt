@@ -31,15 +31,7 @@
 			rotation: 0.0d
 			width: 5.0d
 			x: 0.0d
-			y: 9.0d
-		}
-		{
-			height: 3.0d
-			image: "tide:item/golden_fishing_rod"
-			rotation: 0.0d
-			width: 3.0d
-			x: 0.0d
-			y: 5.0d
+			y: 6.0d
 		}
 		{
 			height: 3.0d
@@ -63,7 +55,7 @@
 			rotation: 0.0d
 			width: 5.0d
 			x: 0.0d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			height: 5.0d
@@ -497,489 +489,7 @@
 			]
 			title: "巫术卷轴"
 			x: -0.5d
-			y: 8.0d
-		}
-		{
-			dependencies: ["6A1B42D208C780BD"]
-			description: ["获得原版，维度模组以及alex的生物中（几乎）所有可以被处理为鱼的东西）"]
-			hide_until_deps_complete: true
-			icon: "netherdepthsupgrade:blazefish_bucket"
-			id: "725308B81E925449"
-			rewards: [
-				{
-					id: "5533F1E66DFF5304"
-					item: {
-						Count: 1
-						id: "alexsmobs:shield_of_the_deep"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "421B207EF66FE175"
-					item: "artifacts:anglers_hat"
-					type: "item"
-				}
-			]
-			subtitle: "全是鱼……"
-			tasks: [
-				{
-					id: "7B154DB1966B1382"
-					item: "minecraft:cod"
-					type: "item"
-				}
-				{
-					id: "78718D9DD2BD6E13"
-					item: "minecraft:salmon"
-					type: "item"
-				}
-				{
-					id: "74152D6B189B3DA7"
-					item: "minecraft:tropical_fish"
-					type: "item"
-				}
-				{
-					id: "13C563A116466022"
-					item: "blue_skies:grittle_flatfish"
-					type: "item"
-				}
-				{
-					id: "65AF67174D3C1B4C"
-					item: "blue_skies:municipal_monkfish"
-					type: "item"
-				}
-				{
-					id: "55BE799CC8B27780"
-					item: "blue_skies:charscale_moki"
-					type: "item"
-				}
-				{
-					id: "7F47D9BC91A0D43A"
-					item: "blue_skies:horizofin_tunid"
-					type: "item"
-				}
-				{
-					id: "16601674E1044D08"
-					item: "alexsmobs:blobfish"
-					type: "item"
-				}
-				{
-					id: "393A647265F5A4B4"
-					item: "alexsmobs:cosmic_cod"
-					type: "item"
-				}
-				{
-					id: "36C5117D4A73CEDE"
-					item: "alexsmobs:flying_fish"
-					type: "item"
-				}
-				{
-					id: "6F024CA37E1FB511"
-					item: "undergarden:raw_gwibling"
-					type: "item"
-				}
-				{
-					id: "2B479CF0C67F970D"
-					item: "alexsmobs:mudskipper_bucket"
-					type: "item"
-				}
-				{
-					id: "5BBF88022F8E6880"
-					item: "alexsmobs:devils_hole_pupfish_bucket"
-					type: "item"
-				}
-				{
-					id: "47E360501CC621C1"
-					item: "collectorsreap:platinum_bass"
-					type: "item"
-				}
-				{
-					id: "386F70BABE349558"
-					item: "netherdepthsupgrade:lava_pufferfish"
-					type: "item"
-				}
-				{
-					id: "27E605DCC252BEE6"
-					item: "netherdepthsupgrade:obsidianfish"
-					type: "item"
-				}
-				{
-					id: "1FFFCB00C381C75C"
-					item: "netherdepthsupgrade:searing_cod"
-					type: "item"
-				}
-				{
-					id: "242B011505F9CF2A"
-					item: "netherdepthsupgrade:bonefish"
-					type: "item"
-				}
-				{
-					id: "5478B37B6E1E73F5"
-					item: "netherdepthsupgrade:wither_bonefish"
-					type: "item"
-				}
-				{
-					id: "41448081AA848224"
-					item: "netherdepthsupgrade:blazefish"
-					type: "item"
-				}
-				{
-					id: "6635CE415AD5D26C"
-					item: "netherdepthsupgrade:magmacubefish"
-					type: "item"
-				}
-				{
-					id: "3025E78A1F141267"
-					item: "netherdepthsupgrade:glowdine"
-					type: "item"
-				}
-				{
-					id: "6662AB68EF28F9AC"
-					item: "netherdepthsupgrade:soulsucker"
-					type: "item"
-				}
-				{
-					id: "3296E52F518FF556"
-					item: "netherdepthsupgrade:eyeball_fish"
-					type: "item"
-				}
-			]
-			title: "钓鱼王I"
-			x: -0.5d
-			y: 5.5d
-		}
-		{
-			dependencies: ["6A1B42D208C780BD"]
-			description: [
-				"获得所有潮汐（Tide）模组中的鱼！"
-				"（由于主世界的特殊性，不要求全部群系鱼收集）"
-				"注意：传奇鱼类的出现和月相与幸运相关，游戏内会有更多的提示！"
-			]
-			hide_until_deps_complete: true
-			icon: "tide:crystal_shrimp"
-			id: "76F63C16AEEFA85D"
-			rewards: [
-				{
-					id: "4EAA16F7577E0C91"
-					item: {
-						Count: 1
-						id: "alexsmobs:endolocator"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "740CD24A6B8B79F0"
-					item: {
-						Count: 1
-						id: "tide:netherite_fishing_rod"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "568E42283331BBF6"
-					item: {
-						Count: 1
-						id: "minecraft:enchanted_book"
-						tag: {
-							StoredEnchantments: [{
-								id: "minecraft:mending"
-								lvl: 1s
-							}]
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "6A6D6A20FD19D613"
-					item: "tide:fortune_line"
-					type: "item"
-				}
-				{
-					id: "7961424FB910D587"
-					item: "tide:lavaproof_fishing_hook"
-					type: "item"
-				}
-				{
-					id: "4EDFB1EAA9C24C50"
-					item: "minecraft:heart_of_the_sea"
-					type: "item"
-				}
-				{
-					id: "1C472A163053C01C"
-					item: {
-						Count: 1
-						id: "minecraft:enchanted_book"
-						tag: {
-							StoredEnchantments: [{
-								id: "majruszsenchantments:fishing_fanatic"
-								lvl: 8s
-							}]
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "66FA12ECD6D41CF0"
-					item: "tide:nautilus_fishing_bobber"
-					type: "item"
-				}
-			]
-			subtitle: "怎么还有？"
-			tasks: [
-				{
-					id: "6F168B7EF518EEA7"
-					item: "tide:clayfish"
-					type: "item"
-				}
-				{
-					id: "0F5378833543C1E5"
-					item: "tide:trout"
-					type: "item"
-				}
-				{
-					id: "5C623A07E136369D"
-					item: "tide:barracuda"
-					type: "item"
-				}
-				{
-					id: "30E851ED59B13A7D"
-					item: {
-						Count: 1
-						id: "tide:sailfish"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "360ECEEACB0DF5AD"
-					item: "tide:catfish"
-					type: "item"
-				}
-				{
-					id: "3D4DFAB61709ADEA"
-					item: "tide:pike"
-					type: "item"
-				}
-				{
-					id: "66FBF753C73916BF"
-					item: "tide:bass"
-					type: "item"
-				}
-				{
-					id: "64E0685D884919CD"
-					item: "tide:tuna"
-					type: "item"
-				}
-				{
-					id: "2E63DE9A3FF3CC9B"
-					item: "tide:glowfish"
-					type: "item"
-				}
-				{
-					id: "17F36A2521552121"
-					item: "tide:anglerfish"
-					type: "item"
-				}
-				{
-					id: "0F8C458943AB6932"
-					item: "tide:cave_crawler"
-					type: "item"
-				}
-				{
-					id: "3E231738EF03AA91"
-					item: "tide:gilded_minnow"
-					type: "item"
-				}
-				{
-					id: "78FC8EE698CE7B93"
-					item: "tide:abyss_angler"
-					type: "item"
-				}
-				{
-					id: "07F684749B416F3B"
-					item: "tide:lapis_lanternfish"
-					type: "item"
-				}
-				{
-					id: "0D258FBD47880C01"
-					item: "tide:deep_grouper"
-					type: "item"
-				}
-				{
-					id: "6FAE8A524C536805"
-					item: "tide:enderfin"
-					type: "item"
-				}
-				{
-					id: "5710DE6F4524D227"
-					item: "tide:purpur_pike"
-					type: "item"
-				}
-				{
-					id: "2E39D95300CCC21B"
-					item: "tide:mint_carp"
-					type: "item"
-				}
-				{
-					id: "5D90A628BB5BE791"
-					item: "tide:angelfish"
-					type: "item"
-				}
-				{
-					id: "5A992A664D06313A"
-					item: "tide:cave_eel"
-					type: "item"
-				}
-				{
-					id: "3818CC2AC9D07991"
-					item: "tide:crystal_shrimp"
-					type: "item"
-				}
-				{
-					id: "10AF40D9EC3D4D6C"
-					item: "tide:iron_tetra"
-					type: "item"
-				}
-				{
-					id: "632904D14072A02E"
-					item: "tide:crystalline_carp"
-					type: "item"
-				}
-				{
-					id: "6F01294F509A8692"
-					item: "tide:bedrock_tetra"
-					type: "item"
-				}
-				{
-					id: "0B26F8A5DC41506F"
-					item: "tide:luminescent_jellyfish"
-					type: "item"
-				}
-				{
-					id: "35D2D71268790B70"
-					item: "tide:shadow_snapper"
-					type: "item"
-				}
-				{
-					id: "0E060D7BB4CB1E1A"
-					item: "tide:endstone_perch"
-					type: "item"
-				}
-				{
-					id: "29FADB3286CF2105"
-					item: "tide:endergazer"
-					type: "item"
-				}
-				{
-					id: "70624C15BFC90D94"
-					item: "tide:chorus_cod"
-					type: "item"
-				}
-				{
-					id: "1336ECCD91663AC1"
-					item: "tide:elytrout"
-					type: "item"
-				}
-				{
-					id: "73D9491E4A11C241"
-					item: "tide:voidseeker"
-					type: "item"
-				}
-				{
-					id: "4B22393021AD30D9"
-					item: "tide:magma_mackerel"
-					type: "item"
-				}
-				{
-					id: "00FACB0C31EAC5E0"
-					item: "tide:warped_guppy"
-					type: "item"
-				}
-				{
-					id: "36544E3D912BC5D5"
-					item: "tide:crimson_fangjaw"
-					type: "item"
-				}
-				{
-					id: "79012262939881C1"
-					item: "tide:soulscaler"
-					type: "item"
-				}
-				{
-					id: "44155C430CEACF7D"
-					item: "tide:witherfin"
-					type: "item"
-				}
-				{
-					id: "1680E63402361A87"
-					item: "tide:ashen_perch"
-					type: "item"
-				}
-				{
-					id: "734AF4CD2A24D12E"
-					item: {
-						Count: 1
-						id: "tide:blazing_swordfish"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "4958C7AAD00BEE9E"
-					item: "tide:yellow_perch"
-					type: "item"
-				}
-				{
-					id: "2E7358F40B52E9BA"
-					item: "tide:bluegill"
-					type: "item"
-				}
-				{
-					id: "4CDBC11E63BCDB1A"
-					item: "tide:guppy"
-					type: "item"
-				}
-				{
-					id: "4EBAF1A57D60D022"
-					item: "tide:ocean_perch"
-					type: "item"
-				}
-				{
-					id: "7C5DF1BE4AD01BCB"
-					item: "tide:mackerel"
-					type: "item"
-				}
-				{
-					id: "23BEB8F86FAABCF4"
-					item: "tide:midas_fish"
-					type: "item"
-				}
-				{
-					id: "084791C04BD4D0D3"
-					item: "tide:shooting_starfish"
-					type: "item"
-				}
-				{
-					id: "0D6D45252FC35B77"
-					item: "tide:aquathorn"
-					type: "item"
-				}
-			]
-			title: "钓鱼王II"
-			x: 0.5d
-			y: 4.5d
+			y: 5.0d
 		}
 		{
 			dependencies: ["0E5C63B3D4891362"]
@@ -1731,7 +1241,7 @@
 			]
 			title: "制杖与贩剑"
 			x: 0.5d
-			y: 8.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
@@ -2047,7 +1557,7 @@
 			]
 			title: "我爱读书"
 			x: -0.5d
-			y: 10.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
@@ -2727,7 +2237,7 @@
 			dependencies: ["0F9DF1C5137194E4"]
 			description: [
 				"你终将成为全能者。"
-				"法球可以添加在任何一件盔甲（即使不是铁魔法系列盔甲）上，但&l&4不可拆卸仅可删除&r&r，请谨慎抉择。"
+				"法球可以添加在任何一件盔甲（即使不是铁魔法系列盔甲）上，因此你可以选择给别的模组的盔甲附加加成以兼顾铁魔法的施法能效。"
 				"注：为了符合本整合包难度，这些胸甲都需要泰拉钢进行合成来凑齐套装。"
 			]
 			icon: {
@@ -2947,7 +2457,7 @@
 			]
 			title: "专精与全通"
 			x: 0.5d
-			y: 10.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["3B3B39FE9A88ED71"]
@@ -3110,7 +2620,7 @@
 			]
 			title: "知识不朽"
 			x: -0.5d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
@@ -3177,7 +2687,7 @@
 			]
 			title: "魔能武装"
 			x: 0.5d
-			y: 9.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6A1B42D208C780BD"]
