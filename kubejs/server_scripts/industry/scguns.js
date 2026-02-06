@@ -234,5 +234,6 @@ ServerEvents.recipes(event => {
         '#forge:ingots/gold'
     )
 
-    //少部分特殊蓝图物品可合成（基于材料的）
+    // 外骨骼核心
+    event.recipes.create.deploying("scguns:exo_suit_core", ["scguns:energy_core", "scguns:treated_brass_block"])
 })
