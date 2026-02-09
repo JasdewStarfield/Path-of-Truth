@@ -1,96 +1,107 @@
 
 [Debug]
-	#Info used for development.
+	#Show development-related metrics in the on-screen display.
 	DebugInfo = false
-	#Render snow edge overlay on neighbors for smoother snowy transitions.
+	#Renders decorative snow edges on adjacent blocks for seamless terrain transitions.
 	SmoothSnowyEdges = false
-	#When it snows, surface water will appear covered by a thin ice layer, making it look as if it has frozen.
+	#Visual effect: Surface water appears to be covered by a thin, cosmetic layer of ice.
 	FrozenWater = false
-	#The thin ice formed by freezing water can be easily broken.
+	#If true, the thin ice layer on water can be broken by players/entities.
 	FrozenWaterBreakable = true
-	#Water will not appear frozen under strong light.
+	#Prevents the visual frozen water effect in areas with high light levels.
 	FrozenWaterCheckLight = true
-	#Experimental feature: enables foggy weather during rainfall.
+	#Experimental: Adds a cinematic fog effect during rainfall.
 	FoggyWeather = false
 
 [GUI]
-	#Displays the season and humidity levels suitable for growing crops.
+	#Show tooltips for ideal seasons and humidity levels on crop items.
 	AgriculturalInformation = true
-	#Displays the use or source of a item.
+	#Show additional information regarding item usage or origins.
 	ItemInformation = true
+	#Whether to enable a simplified HUD overlay that displays the current season and solar term on the screen.
+	SimpleSeasonHud = false
 
 [Renderer]
-	#When enabled, chunks will be reloaded regularly to fix rendering glitches, but this may impact performance.
+	#Periodically force-reloads chunk rendering to fix visual glitches (may impact FPS).
 	ForceChunkRenderUpdate = true
-	#Enhanced reload, which will refresh all sections periodically.
+	#(ForceChunkRenderUpdate) A more thorough reload that refreshes all chunk sections periodically.
 	EnhancementChunkRenderUpdate = false
-	#Whether to reset the renderer after waking up.
+	#Refreshes the renderer state immediately after the player wakes up.
 	ResetRendererAfterSleep = false
-	#Changes grass and leaf colors with seasons visually.
+	#Apply seasonal color shifts to grass and leaf textures.
 	SeasonalGrassColorChange = true
-	#Birch, spruce, and mangrove leaves colors also have seasonal changes.
+	#Extend seasonal color shifts to birch, spruce, and mangrove leaves.
 	SeasonalColorChangeExtend = true
-	#When applying changes, perform mean calculation based on the percentage progress of the solar term instead of using a fixed value.
+	#Calculate seasonal color shifts based on exact solar term progress for smoother transitions.
 	SmootherSeasonalGrassColorChange = true
-	#In spring, grass blocks will occasionally have small flowers on them.
+	#Visual detail: Occasionally adds small, decorative flowers to grass blocks in Spring.
 	FlowerOnGrass = true
-	#Cull the top face if snowy model is applied.
+	#Optimized rendering: Cull the top face of a block if it is hidden by a snow model.
 	CullTopFaceWithSnow = false
-	#Use Minecraft’s default lighting rules to decide if snow should fall.
+	#Use standard Vanilla light/sky rules to determine if snow should fall in a location.
 	UseVanillaSnowCheck = false
-	#Blocks underneath solid blocks etc. may also be covered with snow.
+	#Allow decorative snow overlays to appear under solid blocks (e.g., in shadows or under eaves).
 	SnowUnderShadow = false
-	#Brownish grass block under trees in autumn.
+	#Visual detail: Adds a brownish, withered foliage effect under trees during Autumn.
 	FoliageUnderTree = false
+	#[Sodium/Embeddium] Renders a virtual snow layer inside fences and tall grass for a seamless look.
+	SnowInFence = true
+	#[Sodium/Embeddium] Minimum number of adjacent snow-covered blocks required to trigger the effect.
+	#Range: 1 ~ 8
+	SnowInFenceCount = 2
+	#[Sodium/Embeddium] Check all eight surrounding directions instead of just the cardinal four.
+	SnowInFenceDirection = false
+	#[Sodium/Embeddium] Render snow layers inside snow-connected fences only when in a snowy state.
+	SnowInFenceOnlySnowy = true
 
 [Sound]
-	#Ambient Sound.
-	Sound = true
+	#Enable ambient environmental sounds (birds, wind, etc.) based on the season.
+	NaturalSound = true
 
 [Particle]
-	#In spring, butterflies fly over the flowers.
+	#Spawns butterflies over flowers during Spring.
 	Butterfly = true
-	#Leaf blocks will drop leaves, and most frequently in the fall.
+	#Leaf blocks will drop falling leaf particles, peaking in frequency during Autumn.
 	FallenLeaves = true
-	#In the summer evenings, you can see fireflies beside the flowers.
+	#Spawns fireflies near flowers during Summer evenings.
 	Firefly = true
-	#When the grass and trees turn yellow, the wild geese fly south.
+	#Visual effect: Displays wild geese flying south during autumnal transitions.
 	WildGoose = true
-	#When the season core block is active, emits soft light particles to indicate the growth environment.
+	#Emits soft ambient particles when the Season Core or Greenhouse is active.
 	SeasonGreenhouse = true
-	#Number of particles emitted by the season greenhouse effect. The higher the value, the denser the effect.
+	#Density of particles emitted by the Greenhouse effect.
 	#Range: 0 ~ 160
 	SeasonGreenhouseParticleSpawnCount = 30
-	#See butterflies in the spring, fireflies in the summer, and fallen leaves.
+	#Enable seasonal particles like butterflies, fireflies, and falling leaves.
 	SeasonalParticles = true
-	#The interval/delay of butterfly particles. Higher values make butterflies appear less frequently.
+	#Density between butterfly spawns. Higher values result in fewer butterflies.
 	#Range: 1 ~ 10000
 	ButterflySpawnDelay = 10
-	#The interval/delay of fallen leaf particles. Higher values make butterflies appear less frequently.
+	#Density between leaf particles. Higher values result in fewer leaves falling.
 	#Range: 1 ~ 10000
 	FallenLeavesDropDelay = 10
-	#The interval/delay of firefly particles. Higher values make butterflies appear less frequently.
+	#Density between firefly spawns. Higher values result in fewer fireflies.
 	#Range: 1 ~ 10000
 	FireflySpawnDelay = 10
-	#The interval/delay of wild goose particles. Higher values make butterflies appear less frequently.
+	#Density between wild goose sightings. Higher values result in fewer sightings.
 	#Range: 1 ~ 10000
 	WildGooseSpawnDelay = 10
-	#Snow-covered leaves will drop snow particles when broken.
+	#Breaking snow-covered leaves will release a burst of snow particles.
 	SnowLeafParticles = true
 
 [Weather]
-	#Radius (in blocks) around the player within which weather is sampled and averaged to create smoother local weather transitions.
+	#The radius (in blocks) used to sample and blend weather patterns for smooth transitions.
 	#Range: 1 ~ 80
 	WeatherBufferDistance = 6
-	#Speed at which local weather transitions occur. Higher values mean faster transitions.
+	#How quickly local weather conditions change. Higher values mean faster shifts.
 	#Range: 8.0E-4 ~ 0.08
 	WeatherTransitionSpeed = 0.008
-	#Whether to apply stronger sampling weight in the direction the player is facing.
+	#Prioritize weather sampling in the direction the player is currently facing.
 	WeatherFrontBias = true
 
 [Compat]
 
 	[Compat.Oculus]
-		#Unify the shading and surface parameters of snow-covered blocks.
+		#Harmonizes shading parameters for all snow-covered surfaces when using shaders.
 		UnifiedSnowyBlockShading = true
 

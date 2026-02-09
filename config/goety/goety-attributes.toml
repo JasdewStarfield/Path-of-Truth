@@ -194,6 +194,34 @@
 			#Range: 1.0 ~ 2048.0
 			witherNecromancerFollowRange = 32.0
 
+		[Attributes.General."Cairn Necromancer"]
+			#How much Max Health Cairn Necromancers have, Default: 50.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			cairnNecromancerHealth = 50.0
+			#How much natural Armor Cairn Necromancers have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			cairnNecromancerArmor = 0.0
+			#How much following/detection range Cairn Necromancers have, Default: 16.0
+			#Range: 1.0 ~ 2048.0
+			cairnNecromancerFollowRange = 16.0
+			#How much damage Cairn Necromancers deals, Default: 3.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			cairnNecromancerDamage = 3.0
+
+		[Attributes.General."Mossy Necromancer"]
+			#How much Max Health Mossy Necromancers have, Default: 50.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			mossyNecromancerHealth = 50.0
+			#How much natural Armor Mossy Necromancers have, Default: 0.0
+			#Range: 0.0 ~ 1.7976931348623157E308
+			mossyNecromancerArmor = 0.0
+			#How much following/detection range Mossy Necromancers have, Default: 16.0
+			#Range: 1.0 ~ 2048.0
+			mossyNecromancerFollowRange = 16.0
+			#How much damage Mossy Necromancers deals, Default: 3.0
+			#Range: 1.0 ~ 1.7976931348623157E308
+			mossyNecromancerDamage = 3.0
+
 	[Attributes.Bosses]
 
 		[Attributes.Bosses.Apostle]

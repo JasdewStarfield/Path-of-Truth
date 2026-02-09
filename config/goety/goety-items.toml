@@ -48,6 +48,8 @@
 		darkArmorEnchantability = 20
 		#Whether Dark Helmets makes the wearer immune to Darkness, Default: true
 		darkHelmetDarkness = true
+		#Whether armor pieces don't break but no longer provide armor, Default: true
+		darkArmorPersist = true
 
 		[Armor."Dark Armor"."Armor Points"]
 			#Define how much armor points wearing the Boots provides, Default: 3
@@ -342,17 +344,6 @@
 		#Range: 1.0 ~ 1.7976931348623157E308
 		hammerBaseDamage = 5.0
 
-	["Tools & Weapons".Misc]
-		#Define the Enchantability for Philosopher's Mace, higher number the better, Default: 20
-		#Range: > 1
-		philosophersMaceEnchantability = 20
-		#How much damage Philosopher's Mace deals, Default: 9.0
-		#Range: 1.0 ~ 1.7976931348623157E308
-		philosophersMaceDamage = 9.0
-		#How many uses before the Philosopher's Mace breaks, Default: 128
-		#Range: > 1
-		philosophersMaceDurability = 128
-
 	["Tools & Weapons"."Special Tools"]
 		#Define the Enchantability for Special Tools, higher number the better, Default: 22
 		#Range: > 1
@@ -394,6 +385,8 @@
 		#How fast Dark Tools mines, the higher the better, Default: 8.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		darkToolsBreakSpeed = 8.0
+		#Whether tools don't break but no longer benefits, Default: true
+		darkToolsPersist = true
 
 	["Tools & Weapons".Scythes]
 		#How much damage Death Scythe deals, the configured number is added to Scythe Base Damage, Default: 4.0
@@ -407,7 +400,7 @@
 		#How fast it takes to fully swing a Scythe with item offhand and not wearing Grave Gloves. The lower the number the slower it takes to recharge, Default: 0.6
 		#Range: 0.0 ~ 1.7976931348623157E308
 		scytheAttackSpeed = 0.6
-		#Amount of Soul Energy Dark Scythe gives when hitting mob(s), Default: 1
+		#Amount of Soul Energy Scythes gives when hitting mob(s), Default: 1
 		#Range: > 1
 		darkScytheSouls = 1
 		#How much base damage Scythes deals, the damage added depends on material the scythe is made off (ie. Iron = 2.0), Default: 4.5
@@ -416,4 +409,38 @@
 		#Define the Enchantability for Death Scythe, higher number the better, Default: 22
 		#Range: > 1
 		deathScytheEnchantability = 22
+		#The chance, by percentage, of Sapped being amplified after hitting affected with Death Scythe, Default: 20
+		#Range: > 0
+		deathScytheSappedDuration = 20
+		#Whether tools don't break but no longer benefits, Default: true
+		deathScythePersist = true
+
+	["Tools & Weapons"."Philosopher's Mace"]
+		#How much damage Philosopher's Mace deals, Default: 9.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		philosophersMaceDamage = 9.0
+		#How many uses before the Philosopher's Mace breaks, Default: 128
+		#Range: > 1
+		philosophersMaceDurability = 128
+		#Define the Enchantability for Philosopher's Mace, higher number the better, Default: 20
+		#Range: > 1
+		philosophersMaceEnchantability = 20
+		#Whether tools don't break but no longer benefits, Default: true
+		philosophersMacePersist = true
+
+	["Tools & Weapons"."Blade of Ender"]
+		#How much damage Blade of Ender deals, Default: 9.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		bladeOfEnderDamage = 9.0
+		#How fast it takes to fully swing a Blade of Ender. The lower the number the slower it takes to recharge, Default: 1.2
+		#Range: 0.0 ~ 1.7976931348623157E308
+		bladeOfEnderAttackSpeed = 1.2
+		#How many uses before the Blade of Ender breaks, Default: 2031
+		#Range: > 1
+		bladeOfEnderDurability = 2031
+		#Define the Enchantability for Blade of Ender, higher number the better, Default: 20
+		#Range: > 1
+		bladeOfEnderEnchantability = 20
+		#Whether tools don't break but no longer benefits, Default: true
+		bladeOfEnderPersist = true
 

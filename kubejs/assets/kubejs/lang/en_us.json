@@ -38,5 +38,27 @@
 
     "item.eclipticseasons.calendar.desc": "Hang it on the wall to view the current ecliptic season!",
 
-    "msg.xearosmap.share_waypoint":"Shared a location:"
+    "msg.xearosmap.share_waypoint":"Shared a location:",
+
+        
+    "arcfurnace":"Arcfurnace",
+    "assembler":"Assembler",
+    "auto_workbench":"Auto Workbench",
+    "blast_furnace":"Crude Blast Furnace",
+    "bottling_machine":"Bottling Machine",
+    "bucket_wheel":"Bucket Wheel",
+    "coke_oven":"Coke Oven",
+    "crusher":"Crusher",
+    "diesel_generator":"Diesel Generator",
+    "excavator":"Excavator",
+    "excavator_full":"Excavator with Bucket Wheel",
+    "fermenter":"Fermenter",
+    "improved_blast_furnace":"Improved Blast Furnace",
+    "lightning_rod":"Lightning Rod",
+    "metal_press":"Mental Press",
+    "mixer":"Mixer",
+    "refinery":"Refinery",
+    "sheetmetal_tank":"Sheetmetal Tank",
+    "silo":"Silo",
+    "squeezer":"Squeezer"
 }

@@ -266,5 +266,26 @@
   "block.undergarden.depthrock_bed.tooltip.behaviour1":"进行一次_完全正常的_重生点设置并尝试睡眠。",
 
   "msg.xearosmap.share_waypoint":"分享了一个位置：",
-  "effect.kubejs.perfection":"完美"
+  "effect.kubejs.perfection":"完美",
+
+  "arcfurnace":"电弧炉",
+  "assembler":"装配机",
+  "auto_workbench":"自动化工程师装配台",
+  "blast_furnace":"粗制高炉",
+  "bottling_machine":"灌装机",
+  "bucket_wheel":"斗轮",
+  "coke_oven":"焦炉",
+  "crusher":"粉碎机",
+  "diesel_generator":"柴油发电机",
+  "excavator":"挖掘机",
+  "excavator_full":"带斗轮的挖掘机",
+  "fermenter":"工业发酵机",
+  "improved_blast_furnace":"改良高炉",
+  "lightning_rod":"避雷针",
+  "metal_press":"金属冲压机",
+  "mixer":"搅拌机",
+  "refinery":"精炼厂",
+  "sheetmetal_tank":"流体储罐",
+  "silo":"储物筒仓",
+  "squeezer":"工业挤压机"
 }

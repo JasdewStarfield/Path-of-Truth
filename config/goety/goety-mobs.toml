@@ -51,6 +51,9 @@
 		obsidianMonolithStartUpTime = 3
 		#Whether unowned Obsidian Monoliths can spawn Mobs, Default: true
 		obsidianMonolithSpawner = true
+		#Add mobs that ownerless Obsidian Monolith will not spawn. 
+		#To do so, enter the namespace ID of the mob, like "minecraft:zombie, minecraft:skeleton".
+		obsidianMonolithBlackList = ["minecraft:slime", "minecraft:ghast", "minecraft:piglin", "minecraft:piglin_brute", "minecraft:hoglin"]
 
 	[Misc.Apostle]
 		#Whether Apostles causes Villagers within 32 blocks of themselves to have a chance of converting into a Witch or Warlock. Default: true
@@ -689,6 +692,8 @@
 			maverickServantTexture = true
 			#If Warlock Servants have custom textures, Default: true
 			warlockServantTexture = true
+			#If Ripper Servants have custom textures, Default: true
+			ripperServantTexture = true
 
 [Spawning]
 

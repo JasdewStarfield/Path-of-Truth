@@ -1,0 +1,16 @@
+key.keyboard.keypad.divide;447;16;wide
+key.keyboard.keypad.multiply;511;16;wide
+key.keyboard.keypad.subtract;575;16;wide
+key.keyboard.keypad.7;383;32;wide
+key.keyboard.keypad.8;447;32;wide
+key.keyboard.keypad.9;511;32;wide
+key.keyboard.keypad.add;575;32;wide
+key.keyboard.keypad.4;383;48;wide
+key.keyboard.keypad.5;447;48;wide
+key.keyboard.keypad.6;511;48;wide
+key.keyboard.keypad.1;383;64;wide
+key.keyboard.keypad.2;447;64;wide
+key.keyboard.keypad.3;511;64;wide
+key.keyboard.keypad.0;447;80;wide
+key.keyboard.keypad.decimal;511;80;wide
+key.keyboard.keypad.enter;575;80;wide

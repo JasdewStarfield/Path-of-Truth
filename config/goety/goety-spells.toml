@@ -49,9 +49,9 @@
 		#Time to cast Killing Spell, Default: 60
 		#Range: 0 ~ 72000
 		killingTime = 60
-		#How much damage percentage multiplier of the target's health is applied back to caster, Default: 1.25
+		#How much damage percentage multiplier of the target's health is applied back to caster, Default: 1.1
 		#Range: 0.0 ~ 1.7976931348623157E308
-		killingFeedback = 1.25
+		killingFeedback = 1.1
 
 	[Spells."Whirlwind Spell"]
 		#Whirlwind Spell Cost, Default: 4
@@ -94,6 +94,12 @@
 		#How much base damage Soul Bolts deals, Default: 4.0
 		#Range: 1.0 ~ 1.7976931348623157E308
 		soulBoltDamage = 7.5
+		#How much base damage Poison Bolts deals, Default: 3.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		poisonBoltDamage = 3.0
+		#How much base damage Wither Bolts deals directly, Default: 4.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		witherBoltDamage = 4.0
 
 	[Spells."Magma Bomb Spell"]
 		#Magma Bomb Spell Cost, Default: 16

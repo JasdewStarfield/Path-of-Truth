@@ -108,3 +108,6 @@ config/c2me.toml
 config/c2me.toml
 /lightspeed-cache
 /AutoTranslation
+/config/CSC/backup
+/config/CSC/Data
+/config/CSC/online

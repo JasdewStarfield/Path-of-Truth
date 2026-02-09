@@ -1,0 +1,5 @@
+key.mouse.left;627;16;wide
+key.mouse.middle;659;0;wide
+key.mouse.right;691;16;wide
+key.mouse.5;643;37;wide
+key.mouse.4;659;53;wide

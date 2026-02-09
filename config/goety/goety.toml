@@ -73,6 +73,9 @@
 	#Add mobs that Forbidden Grass will not spawn. 
 	#To do so, enter the namespace ID of the mob, like "minecraft:zombie, minecraft:skeleton".
 	forbiddenGrassBlackList = []
+	#How many blocks each Tall Skull increases the Shrieking Obelisk's area of effect, Default: 4
+	#Range: > 1
+	shriekObeliskIncrease = 4
 
 ["Soul Taken"]
 	#Animals Killed, Default: 5
@@ -201,4 +204,6 @@
 	goodwillFullAlly = false
 	#Arca will save the Player if past Totem Maximum Soul Count but only if they're a Lich, Default: true
 	arcaLichUndying = true
+	#Entities part of a Player's Grimoire of Goodwill will be protected by the Player's servants, Default: true
+	goodwillServantGuard = true
 
