@@ -318,32 +318,32 @@ ServerEvents.recipes(event => {
   )
   //虚空荆棘
   event.shaped(
-    Item.of('kubejs:raw_world_base'),
+    Item.of('4x bosses_of_mass_destruction:void_thorn'),
     [
       ' A ',
       'BCD',
       ' A '
     ],
     {
-      B: 'kubejs:midnight',
-      D: 'kubejs:buran',
+      B: 'createutilities:void_steel_ingot',
+      D: 'botania:thorn_chakram',
       C: 'goety:philosophers_stone',
-      A: 'alexsmobs:farseer_arm'
+      A: 'bosses_of_mass_destruction:void_thorn'
     }
   )
   //古代灵魂
   event.shaped(
-    Item.of('kubejs:raw_world_base'),
+    Item.of('4x bosses_of_mass_destruction:ancient_anima'),
     [
       ' A ',
       'BCD',
       ' A '
     ],
     {
-      B: 'kubejs:midnight',
-      D: 'kubejs:buran',
+      B: 'irons_spellbooks:ancient_knowledge_fragment',
+      D: 'goety:soul_bolt_focus',
       C: 'goety:philosophers_stone',
-      A: 'alexsmobs:farseer_arm'
+      A: 'bosses_of_mass_destruction:ancient_anima'
     }
   )
 

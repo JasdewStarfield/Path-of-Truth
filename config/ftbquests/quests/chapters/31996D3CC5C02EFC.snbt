@@ -299,7 +299,7 @@
 		{
 			dependencies: ["059A741ABF2A9A34"]
 			description: [
-				"现在，你可以不用再去下界古战场了——你可以通过盔甲来制造远古骑士！"
+				"现在，你可以不用再去下界古战场了——你可以通过&o&6下界合金胸甲&r&r来制造远古骑士！"
 				"虽然下界合金有点贵，但我相信对于灰烬源质的需求会让你主动来造的）"
 				"以盖亚之魂唤醒远古的英灵——然后挨打）"
 			]
@@ -326,22 +326,6 @@
 				{
 					id: "4CEA80778A09A2C7"
 					item: "botania:life_essence"
-					type: "item"
-				}
-				{
-					id: "62D03B580725735D"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"cold_sweat:item_insulation": {
-								Insulation: [ ]
-							}
-						}
-						id: "minecraft:netherite_chestplate"
-						tag: {
-							Damage: 0
-						}
-					}
 					type: "item"
 				}
 			]
@@ -475,7 +459,7 @@
 		{
 			dependencies: ["7716E5CB171F049A"]
 			description: [
-				"通过对&d黑莲花&r进一步的催化，你终于获得了它。"
+				"通过以&d黑莲花&r催化暗夜信标，你终于获得了它。"
 				"虽然将其直接丢入魔力池中可以&b生成大量魔力&r，但黑暗核心将会&c直接逸散并浪费掉&r。"
 				"&o&7用于在终末仪式中渲染黑暗与末影。&r&r"
 			]
@@ -571,25 +555,25 @@
 		{
 			dependencies: ["12134A3EF6C80C54"]
 			description: [
-				"通过下界之星碎片和贤者之石，以及一些其他的辅助材料，你可以催生出完整的下界之星作为材料。"
+				"通过下界之星碎片和暗黑莲花，以及一些其他的辅助材料，你可以催生出完整的下界之星作为材料。"
 				"但这仍然要求你至少直面一次凋零。"
+				"另外，暗黑莲花需要&d先完成暗夜信标&r，所以……不要随便拆掉第一颗下界之星。"
 			]
 			icon: "minecraft:nether_star"
 			id: "61B0D0DB73C67D53"
+			rewards: [{
+				count: 4
+				id: "2D88BE756AEC0205"
+				item: "scguns:nether_star_fragment"
+				type: "item"
+			}]
 			shape: "diamond"
 			subtitle: "凋零补完计划"
-			tasks: [
-				{
-					id: "3DF90EB645E9CB75"
-					item: "minecraft:nether_star"
-					type: "item"
-				}
-				{
-					id: "368606C8304335B7"
-					item: "scguns:nether_star_fragment"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "3DF90EB645E9CB75"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
 			title: "聚合星辰"
 			x: -1.0d
 			y: -1.5d
