@@ -29,3 +29,7 @@
 [xaerominimap]
 	Enable = true
 
+#Subtle Effects
+[subtle_effects]
+	Enable = true
+

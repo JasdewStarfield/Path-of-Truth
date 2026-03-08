@@ -1,0 +1,34 @@
+#Adds a new configurable value to factory gauges that allows configuring how many promises each gauge can have at a time.
+enablePromiseLimits = true
+#Adds a new configurable value to Restocker factory gauges that allows configuring the gauge to request additional items when restocking.
+enableAdditionalStock = true
+#Prevent players from accidentally sitting in Seats holding a Stock Keeper.
+protectStockKeeperSeats = true
+
+#Package Addresses
+[addresses]
+	#Use optimized logic and caching for package address matching.
+	globOptimize = true
+	#Allow the user of regular expressions timestamp matching packages in Create (Frogports, Postboxes, Package Filters, etc.) with the "RegEx:" prefix.
+	globAllowRegex = true
+
+	#Regex Safety
+	[addresses.regexSafety]
+		#Maximum star height to allow in one regular expression. This is intended to prevent catastrophic backtracking.
+		#Range: 0 ~ 6
+		maxStarHeight = 1
+		#Maximum repetitions to allow in one regular expression. This is intended to minimize overall work.
+		#Range: > 0
+		maxRepetitions = 1000
+		#Whether or not to allow backreferences in regular expressions.
+		allowBackrefs = false
+
+#Kinetics
+[kinetics]
+
+	#Package Accelerator
+	[kinetics.packageAccelerator]
+		#The stress impact of the Package Accelerator
+		#Range: 1.0 ~ 100.0
+		acceleratorStressImpact = 4.0
+

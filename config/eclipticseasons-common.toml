@@ -168,6 +168,9 @@
 	NoSnowyUnderLight0 = false
 	#Allow snow overlays to cover light-emitting blocks.
 	SnowOverlayGlowingBlock = false
+	#Force using server synchronized config when joining a multiplayer server.
+	#If disabled, client keeps its own local config when exit.
+	ForceServerConfig = true
 
 [Map]
 	#Synchronize map colors to reflect atmospheric snow overlays.

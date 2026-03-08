@@ -1,0 +1,28 @@
+
+#Client-side Visual Settings
+[ui-visual]
+	#How to display time in tooltips.
+	#TICKS: Show game ticks (e.g. 60t)
+	#SECONDS: Show seconds (e.g. 3.0s)
+	#BOTH: Show both (e.g. 60t | 3.0s)
+	#Allowed Values: TICKS, SECONDS, BOTH
+	time_format = "TICKS"
+	#How to display mode in tooltips.
+	#TEXT: Show mode text (e.g. [Deep Auto Sleep Mode])
+	#NUMBER: Show limit number (e.g. dynamic:50% | 30t)
+	#BOTH: Show both ((1st line)[mode-text] (2nd line)number)
+	#Allowed Values: TEXT, NUMBER, BOTH
+	mode_format = "BOTH"
+	#How to display tier in tooltips.
+	#BAR: Show lazytick bar (e.g. [|||||···|||||])
+	#NUMBER: Show current interval and config limited number (e.g. 1t / 60t)
+	#BOTH: Show both ((1st line)[bar] (2nd line)number)
+	#Allowed Values: BAR, NUMBER, BOTH
+	tier_format = "BOTH"
+	#Whether to show the mode of the Lazy Tick mode.
+	show_mode_tooltip = true
+	#Whether to show the tier of the Lazy Tick mode.
+	show_tier_tooltip = true
+	#Whether to show the detailed description of the Lazy Tick mode.
+	show_description_tooltip = true
+

@@ -291,3 +291,18 @@
 	# • *units: The units of the temperature ("f" for Fahrenheit, "c" for Celsius, "mc" for Minecraft units)
 	"Structure Temperature Offsets" = []
 
+[Compatibility]
+
+	[Compatibility.Seasons]
+		#─────────────────────────────────────────────────────────────────────────
+		# Defines the temperature changes caused by each season
+		# ├── Format: [seasonStart, seasonMid, seasonEnd, *units]
+		# └── [* = optional]
+		# • seasonStart/Mid/End: The temperature offset at the start, middle, and end of the season
+		# • *units: The unit of temperature (C, F, or MC)
+		# ⌄ 
+		Summer = [0.4, 0.6, 0.4]
+		Autumn = [0.2, 0, -0.2]
+		Winter = [-0.4, -0.6, -0.4]
+		Spring = [-0.2, 0, 0.2]
+

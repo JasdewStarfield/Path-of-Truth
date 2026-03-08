@@ -53,6 +53,8 @@
 	SnowInFenceDirection = false
 	#[Sodium/Embeddium] Render snow layers inside snow-connected fences only when in a snowy state.
 	SnowInFenceOnlySnowy = true
+	#[Sodium/Embeddium] Render an additional snow layer on blocks that already use the snowy model.
+	ExtraSnowLayer = false
 
 [Sound]
 	#Enable ambient environmental sounds (birds, wind, etc.) based on the season.
