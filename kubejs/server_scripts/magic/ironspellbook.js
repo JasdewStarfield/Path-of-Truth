@@ -85,8 +85,6 @@ ServerEvents.recipes(event => {
     event.remove({id:'irons_spellbooks:iron_spell_book'})
     event.remove({id:'irons_spellbooks:gold_spell_book'})
     event.remove({id:'irons_spellbooks:diamond_spell_book'})
-    event.remove({id:'alshanex_familiars:sound_spell_book'})
-    event.remove({id:'alshanex_familiars:familiar_spellbook'})
 
     keepNBTShapedCrafting('irons_spellbooks:iron_spell_book',
         ['ABB',
@@ -126,35 +124,6 @@ ServerEvents.recipes(event => {
             D:'goety:soul_emerald'
         },
         'irons_spellbooks:gold_spell_book',
-        {ISB_Spells: {maxSpells: 10}}
-    )
-
-    keepNBTShapedCrafting('alshanex_familiars:sound_spell_book',
-        ['ABB',
-        'ACD',
-        'ABB'],
-        {
-            A:'immersiveengineering:plate_electrum',
-            B:'kubejs:terrasteel_sheet',
-            C:'irons_spellbooks:diamond_spell_book',
-            D:'alshanex_familiars:sound_upgrade_orb'
-        },
-        'irons_spellbooks:diamond_spell_book',
-        {ISB_Spells: {maxSpells: 10}}
-    )
-
-    
-    keepNBTShapedCrafting('alshanex_familiars:familiar_spellbook',
-        ['ABB',
-        'ACD',
-        'ABB'],
-        {
-            A:'goety:dark_ingot',
-            B:'irons_spellbooks:dragonskin',
-            C:'alshanex_familiars:sound_spell_book',
-            D:'minecraft:netherite_ingot'
-        },
-        'alshanex_familiars:sound_spell_book',
         {ISB_Spells: {maxSpells: 10}}
     )
     
@@ -201,22 +170,6 @@ ServerEvents.recipes(event => {
     //充能核心配方替换
     event.replaceInput({mod:'irons_spellbooks',output:'irons_spellbooks:energized_core'},
         'minecraft:copper_block', 'immersiveengineering:storage_constantan' )
-
-    //添加竖琴配方
-    event.shaped(
-        Item.of('alshanex_familiars:bard_harp'),
-        [
-            'ABC',
-            'BCD',
-            'CD '
-        ],
-        {
-            C: 'botania:mana_string',
-            D: 'immersiveengineering:dust_silver',
-            B: 'scguns:diamond_steel_ingot',
-            A: 'alshanex_familiars:sound_upgrade_orb'
-        }
-    )
 
     //泰拉钢锭加入各系胸甲配方
     event.remove({id:'irons_spellbooks:cryomancer_chestplate'})
