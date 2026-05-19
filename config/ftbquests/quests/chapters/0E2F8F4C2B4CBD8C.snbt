@@ -327,7 +327,7 @@
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
-			description: ["获得所有种类的巫术卷轴！"]
+			description: ["获得所有种类的邪术卷轴！"]
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:eldritch_manuscript"
 			id: "4A795BB15E5110EC"
@@ -486,8 +486,29 @@
 					match_nbt: true
 					type: "item"
 				}
+				{
+					id: "4167509BB75AC0E1"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:scroll"
+						tag: {
+							"irons_spellbooks:spell_container": {
+								data: [{
+									id: "irons_spellbooks:pocket_dimension"
+									index: 0
+									level: 1
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
+					type: "item"
+				}
 			]
-			title: "巫术卷轴"
+			title: "邪术之力"
 			x: -0.5d
 			y: 5.0d
 		}
@@ -1234,8 +1255,14 @@
 					type: "item"
 				}
 				{
-					id: "68FCA51BD2D0A93B"
-					item: "alshanex_familiars:bard_harp"
+					id: "0396883D1DAA3744"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:legionnaire_flamberge"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
 			]
@@ -2625,7 +2652,7 @@
 		{
 			dependencies: ["374C430D0AD70D2E"]
 			description: [
-				"雷霆之锤需要用雷电强化粉碎者后，它才有几率掉落。"
+				"雷霆之锤可以在烈风神祠拿到。"
 				"霜冻之刃来自墓穴的白骨领主，但也有几率在陶瓷坛内发现。"
 				"堕落之刃是缠魂甲胄的装备。"
 			]
@@ -2649,7 +2676,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "获得诡厄巫法的三把特殊武器！"
+			subtitle: "获得诡厄巫法的特殊武器！"
 			tasks: [
 				{
 					id: "11695387EBA3B86A"
@@ -2678,6 +2705,17 @@
 					item: {
 						Count: 1
 						id: "goety:fell_blade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2669FAE3406B9957"
+					item: {
+						Count: 1
+						id: "goety:death_scythe"
 						tag: {
 							Damage: 0
 						}

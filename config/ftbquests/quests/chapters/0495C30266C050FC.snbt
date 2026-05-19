@@ -57,12 +57,12 @@
 		{
 			dependencies: ["6A1B42D208C780BD"]
 			description: [
-				"获得所有潮汐（Tide）模组中的鱼！"
-				"（由于主世界的特殊性，不要求全部群系鱼收集）"
-				"注意：传奇鱼类的出现和月相与幸运相关，游戏内会有更多的提示！"
+				"获得所有的传说鱼！"
+				""
+				"注意：传说鱼类的出现和月相，幸运，地点等多种因素相关，游戏内会有更多的提示！"
 			]
 			hide_until_deps_complete: true
-			icon: "tide:crystal_shrimp"
+			icon: "irons_spellbooks:legendary_ink"
 			id: "76F63C16AEEFA85D"
 			rewards: [
 				{
@@ -102,16 +102,6 @@
 					type: "item"
 				}
 				{
-					id: "6A6D6A20FD19D613"
-					item: "tide:fortune_line"
-					type: "item"
-				}
-				{
-					id: "7961424FB910D587"
-					item: "tide:lavaproof_fishing_hook"
-					type: "item"
-				}
-				{
 					id: "4EDFB1EAA9C24C50"
 					item: "minecraft:heart_of_the_sea"
 					type: "item"
@@ -139,230 +129,8 @@
 			subtitle: "怎么还有？"
 			tasks: [
 				{
-					id: "6F168B7EF518EEA7"
-					item: "tide:clayfish"
-					type: "item"
-				}
-				{
-					id: "0F5378833543C1E5"
-					item: "tide:trout"
-					type: "item"
-				}
-				{
-					id: "5C623A07E136369D"
-					item: "tide:barracuda"
-					type: "item"
-				}
-				{
-					id: "30E851ED59B13A7D"
-					item: {
-						Count: 1
-						id: "tide:sailfish"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "360ECEEACB0DF5AD"
-					item: "tide:catfish"
-					type: "item"
-				}
-				{
-					id: "3D4DFAB61709ADEA"
-					item: "tide:pike"
-					type: "item"
-				}
-				{
-					id: "66FBF753C73916BF"
-					item: "tide:bass"
-					type: "item"
-				}
-				{
-					id: "64E0685D884919CD"
-					item: "tide:tuna"
-					type: "item"
-				}
-				{
-					id: "2E63DE9A3FF3CC9B"
-					item: "tide:glowfish"
-					type: "item"
-				}
-				{
-					id: "17F36A2521552121"
-					item: "tide:anglerfish"
-					type: "item"
-				}
-				{
-					id: "0F8C458943AB6932"
-					item: "tide:cave_crawler"
-					type: "item"
-				}
-				{
-					id: "3E231738EF03AA91"
-					item: "tide:gilded_minnow"
-					type: "item"
-				}
-				{
-					id: "78FC8EE698CE7B93"
-					item: "tide:abyss_angler"
-					type: "item"
-				}
-				{
-					id: "07F684749B416F3B"
-					item: "tide:lapis_lanternfish"
-					type: "item"
-				}
-				{
-					id: "0D258FBD47880C01"
-					item: "tide:deep_grouper"
-					type: "item"
-				}
-				{
-					id: "6FAE8A524C536805"
-					item: "tide:enderfin"
-					type: "item"
-				}
-				{
-					id: "5710DE6F4524D227"
-					item: "tide:purpur_pike"
-					type: "item"
-				}
-				{
-					id: "2E39D95300CCC21B"
-					item: "tide:mint_carp"
-					type: "item"
-				}
-				{
-					id: "5D90A628BB5BE791"
-					item: "tide:angelfish"
-					type: "item"
-				}
-				{
-					id: "5A992A664D06313A"
-					item: "tide:cave_eel"
-					type: "item"
-				}
-				{
-					id: "3818CC2AC9D07991"
-					item: "tide:crystal_shrimp"
-					type: "item"
-				}
-				{
-					id: "10AF40D9EC3D4D6C"
-					item: "tide:iron_tetra"
-					type: "item"
-				}
-				{
-					id: "632904D14072A02E"
-					item: "tide:crystalline_carp"
-					type: "item"
-				}
-				{
-					id: "6F01294F509A8692"
-					item: "tide:bedrock_tetra"
-					type: "item"
-				}
-				{
-					id: "0B26F8A5DC41506F"
-					item: "tide:luminescent_jellyfish"
-					type: "item"
-				}
-				{
-					id: "35D2D71268790B70"
-					item: "tide:shadow_snapper"
-					type: "item"
-				}
-				{
-					id: "0E060D7BB4CB1E1A"
-					item: "tide:endstone_perch"
-					type: "item"
-				}
-				{
-					id: "29FADB3286CF2105"
-					item: "tide:endergazer"
-					type: "item"
-				}
-				{
-					id: "70624C15BFC90D94"
-					item: "tide:chorus_cod"
-					type: "item"
-				}
-				{
-					id: "1336ECCD91663AC1"
-					item: "tide:elytrout"
-					type: "item"
-				}
-				{
 					id: "73D9491E4A11C241"
 					item: "tide:voidseeker"
-					type: "item"
-				}
-				{
-					id: "4B22393021AD30D9"
-					item: "tide:magma_mackerel"
-					type: "item"
-				}
-				{
-					id: "00FACB0C31EAC5E0"
-					item: "tide:warped_guppy"
-					type: "item"
-				}
-				{
-					id: "36544E3D912BC5D5"
-					item: "tide:crimson_fangjaw"
-					type: "item"
-				}
-				{
-					id: "79012262939881C1"
-					item: "tide:soulscaler"
-					type: "item"
-				}
-				{
-					id: "44155C430CEACF7D"
-					item: "tide:witherfin"
-					type: "item"
-				}
-				{
-					id: "1680E63402361A87"
-					item: "tide:ashen_perch"
-					type: "item"
-				}
-				{
-					id: "734AF4CD2A24D12E"
-					item: {
-						Count: 1
-						id: "tide:blazing_swordfish"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "4958C7AAD00BEE9E"
-					item: "tide:yellow_perch"
-					type: "item"
-				}
-				{
-					id: "2E7358F40B52E9BA"
-					item: "tide:bluegill"
-					type: "item"
-				}
-				{
-					id: "4CDBC11E63BCDB1A"
-					item: "tide:guppy"
-					type: "item"
-				}
-				{
-					id: "4EBAF1A57D60D022"
-					item: "tide:ocean_perch"
-					type: "item"
-				}
-				{
-					id: "7C5DF1BE4AD01BCB"
-					item: "tide:mackerel"
 					type: "item"
 				}
 				{
@@ -376,8 +144,97 @@
 					type: "item"
 				}
 				{
-					id: "0D6D45252FC35B77"
-					item: "tide:aquathorn"
+					id: "14B59A2971BA8CE1"
+					item: {
+						Count: 1
+						id: "tide:coelacanth"
+						tag: {
+							FishLength: 165.0d
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "55C544098481D930"
+					item: {
+						Count: 1
+						id: "tide:devils_hole_pupfish"
+						tag: {
+							FishLength: 2.0d
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1F234CC7A692B62F"
+					item: {
+						Count: 1
+						id: "tide:alpha_fish"
+						tag: {
+							FishLength: 50.0d
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "66BE07111E7ABBC7"
+					item: {
+						Count: 1
+						id: "tide:dragon_fish"
+						tag: {
+							FishLength: 650.0d
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "52493396DD3A4365"
+					item: "stardew_fishing:blazing_oarfish"
+					type: "item"
+				}
+				{
+					id: "39EEE1CD9F7B1447"
+					item: "stardew_fishing:goliath_grouper"
+					type: "item"
+				}
+				{
+					id: "40DF765D6786AE64"
+					item: "stardew_fishing:vampire_payara"
+					type: "item"
+				}
+				{
+					id: "406091BC1F212DFF"
+					item: "stardew_fishing:golden_snook"
+					type: "item"
+				}
+				{
+					id: "48F2DB0D055C999D"
+					item: "stardew_fishing:sabretoothed_tigerfish"
+					type: "item"
+				}
+				{
+					id: "543F305FC8D358EF"
+					item: "stardew_fishing:chromatic_arapaima"
+					type: "item"
+				}
+				{
+					id: "21EC71AA1E87807A"
+					item: "stardew_fishing:cyclops_mahimahi"
+					type: "item"
+				}
+				{
+					id: "4B4189A9359E1C51"
+					item: "stardew_fishing:storm_tarpon"
+					type: "item"
+				}
+				{
+					id: "70CF7007B09568F4"
+					item: "stardew_fishing:crystalline_snakehead"
+					type: "item"
+				}
+				{
+					id: "55AB7D74A82FCD3C"
+					item: "stardew_fishing:demon_gar"
 					type: "item"
 				}
 			]
