@@ -6,6 +6,8 @@ screenShakeScale = 1.0
 maxScreenShakers = 256
 #Determines if the experimental settings screen should be disabled
 disableExperimentalSettingsScreen = true
+#Whether the Slabfish Plush Campaign button should appear on the title screen. Ends May 11th.
+disableSlabfishPlushCampaign = false
 
 #Slabfish patron hat settings.
 [slabfishSettings]

@@ -1,5 +1,9 @@
 
 # #----------------------------------------------------------------------
+# CSC config version. If this value is different from the current CSC version, the old config will be archived and a fresh config will be generated.
+ConfigVersion = "1.21.26"
+
+# #----------------------------------------------------------------------
 #     Welcome to CSC! CSC (formerly Create:SchematicChecker | Create: Schematic Validator)
 # is a blueprint scanning mod specifically designed for Create and all its addons. It helps prevent any known potential or malicious exploits.
 # These exploits include, but are not limited to: item duplication, server lag or crashes, unauthorized access to creative items, and even server control takeover.
@@ -10,7 +14,7 @@
 # Thanks to the universal nature of schematics, CSC can scan and validate content from Create and all its related mods!
 # If users opt in, CSC can even connect online to automatically sync rule updates to the local server. Whenever the CSC team discovers a new exploit,
 # the configuration file will be updated automatically, allowing potential threats to be removed without restarting the server.
-# Choose a language you want to use     zh_cn / en_us 
+# Choose a language you want to use     zh_cn / zh_tw / ja_jp / en_us 
 Language = "en_us"
 
 UUID = "b884781b-84ab-4749-86d6-2673f97896bf"
@@ -23,8 +27,16 @@ UUID = "b884781b-84ab-4749-86d6-2673f97896bf"
     # The time if checker is timeout!
     DelayTime = 10
     # #----------------------------------------------------------------------
-    # Whether to enable whitelist mode. Recommended to enable, as it can directly eliminate blueprint vulnerabilities caused by unfamiliar mods
+    # Whether to remove entities. When set to true, entities inside the schematic will be cleared, except those listed in the whitelist.
+    # Enabling this feature can prevent all potential entity NBT duplication exploits, and also block armor stands from obtaining creative items.
+    # It is recommended to enable this feature!
+    KillEntity = true
+    # #----------------------------------------------------------------------
+    # Whether to enable mod id whitelist mode. Recommended to enable, as it can directly eliminate blueprint vulnerabilities caused by unfamiliar mods
     WhiteListModEnable = true
+    # #----------------------------------------------------------------------
+    # Whether to show the startup security notice for mod id whitelist mode
+    ShowWhitelistModeNotice = true
     # #----------------------------------------------------------------------
     # Only mods listed here will be allowed to retain NBT. Enter the modid (e.g., for minecraft:dirt, enter minecraft)
     WhiteListModList = [
@@ -37,6 +49,10 @@ UUID = "b884781b-84ab-4749-86d6-2673f97896bf"
         "copycats",
         "createsifter",
         "computercraft",
+        "mekanism",
+        "simulated",
+        "aeronautics",
+        "offroad",
         "yuushya" ]
     # #----------------------------------------------------------------------
     # The Block or Item you don't want to emerge in Schematic
@@ -87,11 +103,6 @@ UUID = "b884781b-84ab-4749-86d6-2673f97896bf"
         "minecraft:container",
         "minecraft:attribute_modifiers" ]
     # #----------------------------------------------------------------------
-    # Whether to remove entities. When set to true, entities inside the schematic will be cleared, except those listed in the whitelist.
-    # Enabling this feature can prevent all potential entity NBT duplication exploits, and also block armor stands from obtaining creative items.
-    # It is recommended to enable this feature!
-    KillEntity = true
-    # #----------------------------------------------------------------------
     # When the KillEntity feature is set to false, this feature will be enabled. Any entity listed here will be removed from the schematic.
     # However, entities in the whitelist cannot be removed, so do not use the same ID in both lists.
     BanEntity = [
@@ -116,6 +127,9 @@ UUID = "b884781b-84ab-4749-86d6-2673f97896bf"
     # This feature is highly recommended! When new exploits are discovered, it allows scanning historical uploads to trace back past activity.
     # This feature will consume some storage space, as each uploaded blueprint will be saved.
     EnableBackup = true
+    # #----------------------------------------------------------------------
+    # enable debug mod
+    problem = false
 
 [function]
     # #----------------------------------------------------------------------
@@ -141,6 +155,10 @@ UUID = "b884781b-84ab-4749-86d6-2673f97896bf"
     # #----------------------------------------------------------------------
     # Conveyor's max degree, Can't get more than 45degree in Create. Only change nbt can.
     maxConveyorAllowDegree = 45
+    # #----------------------------------------------------------------------
+    # When a fluid tank controller/tank count mismatch is detected, remove mismatched fluid tanks instead of blocking the entire blueprint.
+    # If disabled, fluid tank mismatch keeps the original behavior: mark as cheat and block upload.
+    TryRemoveFluidTankNotKill = true
 
 [online]
     # #----------------------------------------------------------------------
@@ -166,9 +184,3 @@ UUID = "b884781b-84ab-4749-86d6-2673f97896bf"
     # #----------------------------------------------------------------------
     # Whether to upload uncheck schematics. Default is true, this can help many people and CSC!
     report = true
-    [debug.debug]
-        # #----------------------------------------------------------------------
-        # enable debug mod
-        problem = false
-
-

@@ -1,0 +1,8 @@
+# [Feature]: Allows recursive scanning of subfolders within the 'schematics' directory.
+# [Compatibility Warning]: Enabling this will clear the schematic list before scanning,
+# which causes 'Create: Connected' category features to stop working.
+# [Requirement]: If 'Create: Connected' is installed and this is set to true, please ensure
+# that 'schematicNestingDepth' in the Create: Connected server config is set high enough
+# to allow the server to recognize files in deep subdirectories.
+enableRecursiveSchematicLoading = true
+

@@ -20,6 +20,8 @@
 	ItemInformation = true
 	#Whether to enable a simplified HUD overlay that displays the current season and solar term on the screen.
 	SimpleSeasonHud = false
+	#Display the standard Gregorian year instead of the solar calendar year.
+	ShowGregorianYear = false
 
 [Renderer]
 	#Periodically force-reloads chunk rendering to fix visual glitches (may impact FPS).
@@ -55,6 +57,21 @@
 	SnowInFenceOnlySnowy = true
 	#[Sodium/Embeddium] Render an additional snow layer on blocks that already use the snowy model.
 	ExtraSnowLayer = false
+	#[Sodium/Embeddium] Maxmum number of additional snow layer on blocks.
+	#Range: 0 ~ 8
+	ExtraSnowLayerMaxLayers = 2
+	#[Sodium/Embeddium] Maxmum number of additional snow layer on leave blocks.
+	#Range: 0 ~ 8
+	ExtraSnowLayerMaxLayersOnLeaves = 1
+	#[Sodium/Embeddium] Culling extra fake snow layer for necessary.
+	ExtraSnowLayerCulling = true
+	#Custom seasonal colors for single-tint blocks only.
+	#Format: "block_id@color1,color2,...,colorN,placeholder_color,base_color"
+	#The number of colors (N) must be a factor of 24 (e.g., 4, 12, or 24).
+	#- 4 colors: Seasonal (6 terms each)
+	#- 12 colors: Monthly (2 terms each)
+	#The 'placeholder_color' maps to index 24; 'base_color' is the final reference hex.
+	SeasonalColorOverrides = ["minecraft:spruce_leaves@#96C24E|0.024,#96C24E|0.096,#96C24E|0.18,#96C24E|0.21600002,#96C24E|0.14400001,#96C24E|0.120000005,#5BAE23|0.120000005,#5BAE23|0.072000004,#000000|0.0,#5BAE23|0.120000005,#5BAE23|0.060000002,#000000|0.0,#BEC936|0.060000002,#BEC936|0.120000005,#BEC936|0.14400001,#BEC936|0.18,#BEC936|0.21600002,#BEC936|0.14400001,#253D24|0.21600002,#253D24|0.24000001,#253D24|0.3,#253D24|0.18,#253D24|0.096,#253D24|0.060000002,#000000|0.0,#619961"]
 
 [Sound]
 	#Enable ambient environmental sounds (birds, wind, etc.) based on the season.
@@ -92,14 +109,8 @@
 	SnowLeafParticles = true
 
 [Weather]
-	#The radius (in blocks) used to sample and blend weather patterns for smooth transitions.
-	#Range: 1 ~ 80
-	WeatherBufferDistance = 6
-	#How quickly local weather conditions change. Higher values mean faster shifts.
-	#Range: 8.0E-4 ~ 0.08
-	WeatherTransitionSpeed = 0.008
-	#Prioritize weather sampling in the direction the player is currently facing.
-	WeatherFrontBias = true
+	#When enabled, Ecliptic Seasons may adjust rain and snow particle textures when needed.
+	TweakPrecipitationParticleTexture = true
 
 [Compat]
 

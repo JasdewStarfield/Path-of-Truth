@@ -1,14 +1,36 @@
 {
   "armorFormula": {
-    "desc:": "Armor damage reduction formula. Input values: armor,damage Default formula:damage*(15/(armor+15))",
+    "desc:": "Armor damage reduction formula, calculates the damage after armor, result is the new damage. Default formula, which is adjusted for modpacks:damage*(15/(armor+15))",
+    "armor": "Input value, which gets replaced with the entities armor value",
+    "damage": "Input value, which gets replaced with the incoming damage value",
     "armorFormula": "damage*(15/(armor+15))"
   },
   "toughnessFormula": {
-    "desc:": "Armor toughness reduces damage in relation to percent health lost.Input values:hitpct(0-1), toughness, damage. Default: damage*(1/(toughness/10+1)*hitpct+(1-hitpct))",
+    "desc:": "Armor toughness reduces damage in relation to percent health lost, result is the new damage. Default: damage*(1/(toughness/10+1)*hitpct+(1-hitpct))",
+    "toughness": "Input value, which gets replaced with the entities armor toughness value",
+    "damage": "Input value, which gets replaced with the incoming damage value, reduced by armor before",
+    "hitpct": "Input value, which gets replaced with the percentage of entity max health the incoming damage would take(0.0-1.0)",
     "toughnessFormula": "damage*(1/(toughness/10+1)*hitpct+(1-hitpct))"
   },
+  "protectionFormula": {
+    "desc:": "Protection enchantment formula, calculates the damage after protection enchantments, result is the new damage. Default formula equals vanilla formula, which results in 4% damage reduction per protectionlevel capped at 80%. Default formula:damage*(1.0-(MIN(MAX(protectionlevel, 0), 20.0))/25.0)",
+    "protectionlevel": "Input value, which gets replaced with sum of all protectionlevels, see below",
+    "damage": "Input value, which gets replaced with the incoming damage value",
+    "protectionFormula": "damage*(1.0-(MIN(MAX(protectionlevel, 0), 20.0))/25.0)"
+  },
+  "protectionLevels": {
+    "desc:": "Sets the amount of protection level a protection enchantment does give, per enchantment level, whole numbers only. By default these are vanilla levels.",
+    "protectionLevels": {
+      "minecraft:projectile_protection": 2.0,
+      "minecraft:feather_falling": 3.0,
+      "minecraft:protection": 1.0,
+      "minecraft:fire_protection": 2.0,
+      "minecraft:blast_protection": 2.0
+    }
+  },
   "playerdamageFormula": {
-    "desc:": "Player damage normalization, scales player damage caused to better balance modded weapons and combat. Input values:damage . To disable put just: damage Default formula:damage*(100/(damage+100))",
+    "desc:": "Player damage normalization formula, scales player damage caused to better balance modded weapons and combat, result is the new damage. To disable scaling put just: damage Default formula:damage*(100/(damage+100))",
+    "damage": "Input value, which gets replaced with the incoming damage value",
     "playerdamageFormula": "damage*(100/(damage+100))"
   },
   "debugprint": {

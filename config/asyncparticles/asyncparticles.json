@@ -3,6 +3,8 @@
   "particle": {
     "particleLimit": 16384,
     "removeIfMissedTick": false,
+    "parallelQueueRemoval": true,
+    "parallelQueueEviction": true,
     "particleLightCache": true,
     "cullUnderwaterParticleType": false
   },
@@ -17,8 +19,10 @@
     "syncParticleClasses": []
   },
   "rendering": {
-    "particleRenderingMode": "SYNCHRONOUSLY",
     "particleCulling": "SPHERE",
+    "particleRenderingMode": "SYNCHRONOUSLY",
+    "gpuAcceleration": true,
+    "appendNewParticlesToRenderer": true,
     "cullWeathers": true,
     "failPerSecLimit": 20,
     "failBehavior": "MARK_AS_SYNC",
@@ -40,6 +44,7 @@
     "fixParticleLights": true
   },
   "create": {
-    "rainEffect": "ALWAYS"
+    "rainEffect": "ALWAYS",
+    "tickRainBlockingRange": 16
   }
 }

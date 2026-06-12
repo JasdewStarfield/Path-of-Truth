@@ -2,7 +2,7 @@
 [Villagers]
 	#Wearing a Robe, along with variants, causes Villagers around the Player to have a negative Reputation unless said Player has 25 or more reputation among them, Default: false
 	villagerHate = false
-	#Wandering Traders transforms into Mavericks when struck by lightning, Default: true
+	#Wandering Traders have a chance of converting into Mavericks if they're underneath a Block of Crying Obsidian, Default: true
 	traderConvertMaverick = true
 	#Villagers have a chance of converting into Warlocks if they're underneath a Block of Crying Obsidian, Default: true
 	villagerConvertToWarlock = true
@@ -13,6 +13,16 @@
 	#Casting Spell in the presence of Villagers will cause the Player to lose a number of Reputation, set 0 to disable, Default: 0
 	#Range: > 0
 	villagerHateSpells = 0
+	#Villagers have a chance of converting into Warlock Servants if they're underneath a Block of Crying Obsidian and near and a player wearing Unholy Set, Default: true
+	villagerConvertWarlockUnholy = true
+	#Villagers have a chance of converting into Heretic Servants if they're sleeping near an active Nether Portal and a player wearing Unholy Set, Default: true
+	villagerConvertToHereticUnholy = true
+	#Wandering Traders have a chance of converting into Maverick Servants if they're underneath a Block of Crying Obsidian and a player wearing Unholy Set, Default: true
+	traderConvertMaverickUnholy = true
+	#Wandering Traders transforms into Reprobates when struck by lightning, Default: true
+	traderConvertReprobate = true
+	#Wandering Traders transforms into Reprobate Servants when struck by lightning summoned by player wearing Unholy Set, Default: true
+	traderConvertReprobateUnholy = true
 
 [Misc]
 	#Whether Wraiths should teleport towards their targets if they can't see them instead of just teleporting away when they're near them, Default: true
@@ -87,6 +97,8 @@
 		#How much damage is reduced, by percentage, on the Apostle when in the Nether, setting to 100 will make them invulnerable, Default: 50
 		#Range: 0 ~ 100
 		apostleNetherDamageReduction = 50
+		#Whether Apostles play their special death animation when in Nether, Default: true
+		apostleNetherFancyDeath = true
 
 	[Misc.Crone]
 		#Whether Crones inflict thorn damage at attackers, when attacked. Default: true
@@ -95,6 +107,14 @@
 	[Misc.Damned]
 		#Whether Damned shoot indicator is enabled. Default: true
 		damnedShootIndicator = true
+
+	[Misc."Ender Keeper"]
+		#Whether Ender Keeper has their after-image effect. Disable can prevent frame drop. Default: true
+		enderKeeperAfterImage = true
+
+	[Misc.Heresiarch]
+		#Whether Heresiarch has their after-image effect when they teleport. Disable can prevent frame drop. Default: true
+		heresiarchAfterImage = true
 
 [Servants]
 	#Enable Redstone Cubes block detection mechanic, Default: true
@@ -153,6 +173,8 @@
 	servantOwnedServantPlayerBenefit = true
 	#Whether servants can apply harmful status effects to their owner/allies, Default: false
 	servantsHarmEffectApply = false
+	#Whether Servants will always give their player Soul Energy upon killing, setting to false will cause them to only give if player wears Dark Robes, Necro Cape and Crown or full Black Iron or Dark Armor set, Default: true
+	servantsAlwaysGiveSE = true
 
 	[Servants."Water Servants"]
 		#How frequent Water Servants heal, count seconds, Default: 1
@@ -202,6 +224,14 @@
 		naturalMinionHealCost = 1
 		#Whether Black Beasts chunk load areas around themselves and their target when hunting down with Taglock Kit, Default: true
 		blackBeastChunkLoad = true
+		#Whether Trampler Servants when summoned as hostile will convert into their hostile counterpart, Default: true
+		tramplerHostileConvert = true
+		#Whether Ravager Servants when summoned as hostile will convert into their hostile counterpart, Default: true
+		ravagerHostileConvert = true
+		#Whether Redstone Golems when summoned as hostile will convert into their hostile counterpart, Default: true
+		redstoneGolemHostileConvert = true
+		#Whether Redstone Monstrosities when summoned as hostile will convert into their hostile counterpart, Default: true
+		redstoneMonstrosityHostileConvert = true
 
 	[Servants."Undead Servants"]
 		#Whether Undead Servants burn in Sunlight if not wearing helmet, Default: true
@@ -228,6 +258,9 @@
 		#How much Health Undead Servants heal, numerically, Default: 1.0
 		#Range: 0.0 ~ 1.7976931348623157E308
 		undeadServantsHealAmount = 1.0
+		#Chance that a baby zombie servant is summoned as a Chicken Jokey, Default: 0.05
+		#Range: 0.0 ~ 1.0
+		zombieServantChickenJockeyChance = 0.05
 
 	[Servants."Frost Servants"]
 		#Whether Frost Servants can heal if summoned while wearing Frost Robe, Default: true
@@ -301,7 +334,7 @@
 		#Whether Prisoners break ore blocks when mining, Default: false
 		prisonerMiningBreakBlocks = false
 		#How many times a Prisoner has to swing their pickaxe before collecting drops when mining, Default: 5
-		#Range: > 0
+		#Range: > 1
 		prisonerMiningSwings = 5
 		#How far Prisoners can scan for ores and mine it, in blocks, Default: 4
 		#Range: 1 ~ 64
@@ -319,6 +352,15 @@
 		prisonerUnshackleDamage = true
 		#Whether Prisoners can pick up Pickaxes that are dropped near them and mobGriefing is true, Default: true
 		prisonerPickUpPickaxe = true
+		#Whether the amount of times the Prisoner has to swing to collect ores is reduced if they have Haste effect, Default: true
+		prisonerMiningHaste = true
+		#Whether the amount of times the Prisoner has to swing to collect ores is increased if they have Mining Fatigue effect, Default: true
+		prisonerMiningMiningFatigue = true
+		#Whether Prisoners can get hungry, Default: true
+		prisonerHunger = true
+		#What are the chances of Prisoners getting hungry after mining a block, if 'prisonerHunger' is enabled, Default: 50
+		#Range: 1 ~ 100
+		prisonerMiningHungerChance = 50
 
 	[Servants."Geo Servants"]
 		#Whether Geo Servants can heal if summoned while wearing Frost Robe, Default: true
@@ -533,11 +575,21 @@
 			#Must have no more and no less than 8 integers
 			hereticRaidCount = [0, 0, 0, 1, 0, 0, 2, 1]
 
+		[Illagers.Raid.Reprobate]
+			#Whether Reprobates appear in Raids, Default: true
+			reprobateRaid = true
+			#How many Reprobates each wave
+			#Requires game restart
+			#Must have no more and no less than 8 integers
+			reprobateRaidCount = [0, 0, 1, 0, 0, 0, 1, 2]
+
 [Textures]
 	#If Brood Mothers uses their old textures, Default: false
 	broodMotherOldTexture = false
 	#If certain mobs have a different texture during some holiday months, Default: true
 	holidaySkins = true
+	#If armor worn by mobs that uses HierarchicalArmorLayer(ie, Illager Servants) shows Armor Trim, Default: true
+	hierarchicalArmorTrim = true
 
 	[Textures."Summoned Mobs"]
 
@@ -694,6 +746,10 @@
 			warlockServantTexture = true
 			#If Ripper Servants have custom textures, Default: true
 			ripperServantTexture = true
+			#If Heretic Servants have custom textures, Default: true
+			hereticServantTexture = true
+			#If Reprobate Servants have custom textures, Default: true
+			reprobateServantTexture = true
 
 [Spawning]
 
@@ -829,4 +885,15 @@
 		#Spawn maximum group count for Rattleds, must be equal or higher than min count, Default: 4
 		#Range: > 1
 		rattledSpawnMaxCount = 4
+
+	[Spawning.Reprobate]
+		#Spawn Weight for Reprobate, Default: 5
+		#Range: > 0
+		reprobateSpawnWeight = 5
+		#Spawn minimum group count for Reprobate, Default: 1
+		#Range: > 1
+		reprobateSpawnMinCount = 1
+		#Spawn maximum group count for Reprobate, must be equal or higher than min count, Default: 1
+		#Range: > 1
+		reprobateSpawnMaxCount = 1
 

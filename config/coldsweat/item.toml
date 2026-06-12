@@ -190,7 +190,8 @@
 	# • *stack_limit: If set, consuming multiple of the same item will apply stacking effects up to this limit.
 	# ⌄ 
 	"Temperature-Affecting Foods" = [
-	    ["cold_sweat:soul_sprout", -20.0, "{}", 1200]
+	    ["cold_sweat:soul_sprout", -20.0, "{}", 1200],
+	    ["cold_sweat:filled_waterskin", "{item:Temperature}"]
 	]
 	#─────────────────────────────────────────────────────────────────────────
 	# Defines how much a waterskin will change the player's body temperature when used
@@ -231,7 +232,7 @@
 [Misc]
 	#─────────────────────────────────────────────────────────────────────────//v
 	# Defines items that affect the player's temperature when in the inventory
-	# ├── Format: [["item_id", temperature, "slotRange", "trait", *"{nbt}", *maxEffect, *tempLimit], [...], etc]
+	# ├── Format: [["item_id", temperature, "slotRange", "trait", *"{nbt}", *maxEffect, *hide_if_unmet], [...], etc]
 	# └── [* = optional]
 	# • item_id: The item's ID (i.e. "minecraft:lava_bucket").
 	# • temperature: The temperature change the item will apply to the entity. For core temperature, this is applied every tick
@@ -239,10 +240,12 @@
 	# • trait: The temperature trait to apply the effect to. Typical values are "core" for body temperature or "world" for ambient temperature. More on the mod documentation page.
 	# • *nbt: The NBT data the item must have to apply to the entity.
 	# • *max_effect: The maximum temperature effect the item can apply to the entity.
-	# • *tempLimit: The maximum temperature at which this item temp will have any effect.
 	#   (Based on the given trait. Represents the minimum temp if the item temp is negative)
+	# • *hide_if_unmet: Only show the tooltip if the NBT check passes. Default to false.
 	# ⌄ 
-	"Item Temperatures" = []
+	"Item Temperatures" = [
+	    ["cold_sweat:filled_waterskin", 0.025, "hand,hotbar", "core", "{'Temperature':'0.1:'}", 999, true]
+	]
 
 # Drains pressure from Create's netherite backtank if the player is in a hot/cold environment
 # Triggered by the set bonus for wearing a full set of netherite diving gear

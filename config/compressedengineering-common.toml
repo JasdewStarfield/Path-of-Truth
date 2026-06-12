@@ -8,4 +8,6 @@
 	"Liquid Concrete Rework" = true
 	#Allows automatic insertion of graphite electrodes in the arc furnace through the holder on top.
 	"Arc Furnace Electrode Automation" = true
+	#Enable bypassing some restrictions in order to allow having more than one stack of an input in blueprint recipes. This config is here as a failsafe should something break.
+	"Enable Oversized Blueprint Crafting Recipes" = true
 

@@ -6,6 +6,10 @@
 	ironBuff = true
 	#If enabled, Ender Dragon's Fireballs will leave clouds that damages even undead and will not hit itself. Default: false
 	betterDragonFireball = false
+	#If L_Ender's Cataclysm is installed, pouring Lava onto Void Fluid source blocks will turn it into Void Stones. Default: true
+	cataclysmVoidStone = true
+	#If there's a Block of Lapis Lazuli below, Lava interacting with water will generate Ominous Stone. Default: true
+	ominousStoneGenerator = true
 
 [Blocks]
 	#Whether Night Beacons are allowed to function, turning Daytime to Midnight so long as it's activated, Default: true
@@ -76,6 +80,11 @@
 	#How many blocks each Tall Skull increases the Shrieking Obelisk's area of effect, Default: 4
 	#Range: > 1
 	shriekObeliskIncrease = 4
+	#Whether Shrieking Obelisk can prevent Pillager Patrols, Default: true
+	ShriekObeliskPatrol = true
+	#How many ticks until Void Frames returns back to Locked State after being used, Default: 24000
+	#Range: > 0
+	voidFrameCoolTime = 24000
 
 ["Soul Taken"]
 	#Animals Killed, Default: 5

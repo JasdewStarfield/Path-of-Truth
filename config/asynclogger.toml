@@ -1,0 +1,14 @@
+#Specifies whether to enable the mod
+enabled = true
+#Specifies the value for log4j2.asyncLoggerRingBufferSize (0 = use mod default, -1 = use log4j2 default)
+ringBufferSize = 0
+#Specifies the value for log4j2.asyncLoggerWaitStrategy (leave empty for default)
+waitStrategy = ""
+#Specifies the value for log4j2.asyncLoggerSynchronizeEnqueueWhenQueueFull (leave empty for default)
+synchronizeEnqueueWhenQueueFull = ""
+#Specifies the value for log4j2.formatMsgAsync (leave empty for default)
+formatMsgAsync = ""
+#Specifies whether System.out and System.err should be redirected to the logger
+wrapSysOutSysErr = false
+#When enabled, compares logging performance without and with AsyncLogger, and logs the test results. Will cause a mass amount of messages to be printed at startup.
+testPerformance = false
