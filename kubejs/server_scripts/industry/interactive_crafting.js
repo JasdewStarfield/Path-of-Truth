@@ -54,9 +54,9 @@ ServerEvents.recipes(event => {
       ["create:hose_pulley", "rubberworks:rubber_block"],
       ["create:portable_fluid_interface", "create:chute"],
       ["vintageimprovements:vacuum_chamber", "create:mechanical_pump"],
-      ['create:steam_engine', 'create:mechanical_piston'],
-      ['fluid:centrifugal_pump', 'create:propeller'],
-      ['fluid:copper_tap', '#forge:storage_blocks/constantan']
+      ['create:steam_engine', 'create:mechanical_piston']
+      //['fluid:centrifugal_pump', 'create:propeller'],
+      //['fluid:copper_tap', '#forge:storage_blocks/constantan']
     ]
     fluidEngineering.forEach(([output, material]) =>
       InteractiveCrafting(output, "kubejs:fluid_engineering", material)
@@ -69,7 +69,7 @@ ServerEvents.recipes(event => {
       ["create:mechanical_arm", "create:brass_hand"],
       ["create:elevator_pulley", "#forge:rope"],
       ["create:content_observer", "observer"],
-      ["fluid:pipette", "kubejs:fluid_mechanism"],
+      //["fluid:pipette", "kubejs:fluid_mechanism"],
       //["iammusicplayer:music_manager", "jukebox"],
       //["create:redstone_link", "redstone_torch"],
       //["create:mechanical_crafter", "#forge:workbench"],

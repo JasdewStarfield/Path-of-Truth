@@ -30,6 +30,7 @@ ServerEvents.recipes(event => {
     ).heated()
 
     // 流体接口
+    /*
     event.remove({id: "fluid:fluid_interface"})
     event.shaped(
       Item.of('fluid:fluid_interface', 1),
@@ -44,6 +45,7 @@ ServerEvents.recipes(event => {
           C: 'kubejs:fluid_mechanism'
       }
     )
+    */
 
     // 橡胶替换干海带
     event.replaceInput(
