@@ -190,7 +190,7 @@
 			dependencies: ["0F9DF1C5137194E4"]
 			description: [
 				"在你找到的铁魔法的饰品中，往往&9有源源不断的魔力从金属中产出&r，并为饰品提供能量以实现长效加成。但现在，你需要这种金属本身……来完成一些更伟大的创造。"
-				"通过在&b主世界地底采掘奥术残骸&r可以找到这种奇妙的金属。它可以&a通过魔力复制自身&r。"
+				"通过在&b主世界地底采掘秘银矿&r可以找到这种奇妙的金属。它可以&a通过魔力复制自身&r。"
 			]
 			id: "4A24B3DB9C49B7CB"
 			rewards: [{
@@ -202,7 +202,7 @@
 			subtitle: "魔法力量的源泉"
 			tasks: [{
 				id: "555B1EB04F8B776C"
-				item: "irons_spellbooks:arcane_salvage"
+				item: "irons_spellbooks:mithril_scrap"
 				type: "item"
 			}]
 			title: "奥能涌动"
@@ -490,7 +490,14 @@
 			subtitle: "那么，古尔丹，代价是什么呢？"
 			tasks: [{
 				id: "4F9F08784B20A945"
-				item: "goety:pedestal"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "goety:pedestals"
+					}
+				}
+				title: "Any #goety:pedestals"
 				type: "item"
 			}]
 			title: "奉献精神"
@@ -515,7 +522,14 @@
 			subtitle: "凝聚魔力……穿透帷幕。"
 			tasks: [{
 				id: "6BF142DEA2CF45A2"
-				item: "goety:dark_altar"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "goety:dark_altars"
+					}
+				}
+				title: "Any #goety:dark_altars"
 				type: "item"
 			}]
 			title: "【终点】仪式开始"
@@ -583,6 +597,8 @@
 			description: [
 				"呼唤熔岩的力量，以魔力水晶为引，异位面的金属为载体，你将聚合出这一珍贵的核心。"
 				"似乎有取之不尽的烈焰藏在内部……"
+				""
+				"&6*也可以直接结合炽金来合成*&r"
 			]
 			id: "55B96E1D3BF09085"
 			shape: "hexagon"
@@ -601,6 +617,8 @@
 			description: [
 				"呼唤冰霜的力量，以魔力水晶为引，异位面的金属为载体，你将聚合出这一珍贵的核心。"
 				"似乎有用之不竭的水流藏在内部……"
+				""
+				"&b*也可以直接结合秘银来合成*&r"
 			]
 			id: "6E1C390C50FEA9E2"
 			shape: "hexagon"

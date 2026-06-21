@@ -121,25 +121,8 @@
 			}
 			id: "12134A3EF6C80C54"
 			rewards: [{
-				id: "367CC6C84094F32B"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"cold_sweat:item_insulation": {
-							Insulation: [ ]
-						}
-					}
-					id: "irons_spellbooks:archevoker_chestplate"
-					tag: {
-						Damage: 0
-						ISB_Spells: {
-							data: [ ]
-							maxSpells: 1
-							mustEquip: 1b
-							spellWheel: 1b
-						}
-					}
-				}
+				id: "4414B04044FA9477"
+				item: "irons_spellbooks:decrepit_key"
 				type: "item"
 			}]
 			shape: "hexagon"
@@ -312,8 +295,8 @@
 			}
 			id: "7E592EF6A0A80611"
 			rewards: [{
-				id: "38286D4F42FAAD11"
-				item: "alshanex_familiars:statue_curio"
+				id: "55A82ED714DF86A0"
+				item: "handcrafted:evoker_trophy"
 				type: "item"
 			}]
 			subtitle: "石墩出动！"
@@ -436,6 +419,7 @@
 			description: [
 				"将&b魔力材料与灵魂共振&r，并将其在魔能振荡中融为一炉，魔力与灵魂之间的关联就将被你固化为实体——并用于&5击穿世界规则的屏障&r。"
 				"当然，它也可以&c击穿所有敌人的护甲&r。"
+				""
 				"&o&7用于在终末仪式中作为魔力与灵魂的载体。&r&r"
 				"&o&8*也用于工业侧的黄饼附魔……所以你需要不止一个。&r&r"
 			]
@@ -461,6 +445,7 @@
 			description: [
 				"通过以&d黑莲花&r催化暗夜信标，你终于获得了它。"
 				"虽然将其直接丢入魔力池中可以&b生成大量魔力&r，但黑暗核心将会&c直接逸散并浪费掉&r。"
+				""
 				"&o&7用于在终末仪式中渲染黑暗与末影。&r&r"
 			]
 			id: "4AB31A29B0259561"
@@ -484,7 +469,8 @@
 			dependencies: ["71BB0BEA50C791E2"]
 			description: [
 				"在&3最黑暗的地方&r，聚合生与死对应的材料，将其强行压入聚晶，你就会获得“以命换命”的力量。"
-				"虽然你的生命&c不可能支撑起对于强大生物的一换一&r，但这至少证明你通晓了这一规则，你也可以通过&d铁魔法的“止心术”&r来临时借用这一规则……烧半管血换天下无敌。"
+				"虽然你的生命&c不可能支撑起对于强大生物的一换一&r，但这至少证明你通晓了这一规则。"
+				""
 				"&o&7用于在终末仪式中注入生死规则。&r&r"
 			]
 			id: "735DE2EF56DEF309"

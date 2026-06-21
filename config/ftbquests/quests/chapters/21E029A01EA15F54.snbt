@@ -114,7 +114,7 @@
 			description: [
 				"铁魔法的炼金操作基本都通过这一口锅来实现&3（当然需要倒水）&r。"
 				"你有两种获得这口锅的方式："
-				"&2去寻找沼泽小屋，抢猪灵术士的锅&r；或者&6去下界找古战场，挑战远古骑士获得灰烬源质&r。"
+				"&2去寻找红树林小屋，抢猪灵术士的锅&r；或者&6去下界找古战场，挑战远古骑士获得灰烬源质&r。"
 				"推荐第一种，因为第二种选项你目前应该是打不过的（确信"
 			]
 			icon: "irons_spellbooks:alchemist_cauldron"
@@ -404,9 +404,10 @@
 			]
 			id: "7CCCB823C49F78E8"
 			rewards: [{
-				id: "0EED987BB86B8B9A"
-				item: "biomeswevegone:green_enchanted_sapling"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "3FE21CAF3040315B"
+				table_id: 5567297392411284388L
+				type: "random"
 			}]
 			subtitle: "哇，金色传说！"
 			tasks: [{
@@ -431,7 +432,7 @@
 				item: "irons_spellbooks:scroll_forge"
 				type: "item"
 			}]
-			subtitle: "九九归一"
+			subtitle: "分辨派系"
 			tasks: [
 				{
 					id: "33C00FE7789AFE4D"
@@ -471,11 +472,6 @@
 				{
 					id: "5F6F2AF0D82D06F7"
 					item: "minecraft:blaze_rod"
-					type: "item"
-				}
-				{
-					id: "068F5AA307F79E86"
-					item: "minecraft:note_block"
 					type: "item"
 				}
 			]
@@ -550,9 +546,9 @@
 			dependencies: ["7CCCB823C49F78E8"]
 			description: [
 				"升级不同级别的墨水需要不同级别的矿物。"
-				"理论上紫水晶碎片需要一个晶洞，然而有一类树可以自己缓慢长出紫水晶。"
+				"理论上紫水晶碎片需要一个晶洞，然而有一类树可以自己缓慢长出紫水晶，巫法后续的仪式更是可以直接制造母岩。"
 				""
-				"&o&m&d*恭喜紫水晶母岩荣获本包Joker称号！&r&r&r"
+				"&o&m&d*只有天然的魔法树林才能生长紫水晶哦）&r&r&r"
 			]
 			icon: "sophisticatedbackpacks:advanced_restock_upgrade"
 			id: "21667ABCD50F787E"

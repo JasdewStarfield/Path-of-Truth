@@ -165,28 +165,6 @@
 		{
 			dependencies: ["15E666BAE38566D8"]
 			description: [
-				"钓鱼王之证（确信"
-				"证明一下你是末地最强钓鱼佬怎么样）"
-			]
-			id: "10CAF35A5551DC8F"
-			rewards: [{
-				id: "167DAB5567615675"
-				item: "sophisticatedbackpacks:advanced_void_upgrade"
-				type: "item"
-			}]
-			subtitle: "从附加效果就可以看出来……"
-			tasks: [{
-				id: "759962C6923883ED"
-				item: "tide:voidseeker"
-				type: "item"
-			}]
-			title: "最神秘的鱼"
-			x: 0.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["15E666BAE38566D8"]
-			description: [
 				"复刻怪会变成你的样子并且和你有完全一样的装备，然后和你对战）"
 				"这些凝胶也是后续你&c塑造高级生命&r的材料，记得多收集一些）"
 				"八个复刻凝胶可以&5复刻几乎任何有耐久的装备&r（包括其附魔），但是实际耐久度是0，需要自己修复。"
@@ -327,6 +305,28 @@
 			title: "统领灾厄"
 			x: 1.5d
 			y: -1.5d
+		}
+		{
+			dependencies: ["6C542C19575974DB"]
+			description: [
+				"在原初城堡结构中，你可以找到一种&6奇妙而炽热的金属&r。然而这需要你征服试炼……并获取钥匙。"
+				"同时，&c原初受火者&r正在等待你的挑战。"
+			]
+			id: "1A105D318B18D4E3"
+			rewards: [{
+				id: "4D4FAEA610FBB278"
+				item: "irons_spellbooks:decrepit_key"
+				type: "item"
+			}]
+			subtitle: "烧起来了！"
+			tasks: [{
+				id: "178B09C51F7A6353"
+				item: "irons_spellbooks:pyrium_ingot"
+				type: "item"
+			}]
+			title: "原初受火者"
+			x: 0.0d
+			y: -2.0d
 		}
 	]
 	subtitle: ["At the Very End"]

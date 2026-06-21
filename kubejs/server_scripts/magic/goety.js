@@ -132,7 +132,9 @@ ServerEvents.recipes(event => {
         ['8x goety:pedestal_blackstone', '4x goety:dark_altar_blackstone', 'minecraft:blackstone', 'minecraft:polished_blackstone_bricks'],
         ['8x goety:pedestal_end_stone', '4x goety:dark_altar_end_stone', 'minecraft:end_stone', 'minecraft:end_stone_bricks'],
         ['8x goety:pedestal_highrock', '4x goety:dark_altar_highrock', 'goety:highrock', 'goety:highrock_bricks'],
-        ['8x goety:pedestal_marble', '4x goety:dark_altar_marble', 'goety:marble', 'goety:gold_covered_marble']
+        ['8x goety:pedestal_marble', '4x goety:dark_altar_marble', 'goety:marble', 'goety:gold_covered_marble'],
+        ['8x goety:pedestal_prismarine', '4x goety:dark_altar_prismarine', 'minecraft:prismarine', 'minecraft:prismarine_bricks'],
+        ['8x goety:pedestal_crypt_stone', '4x goety:dark_altar_crypt_stone', 'goety:crypt_stone', 'goety:crypt_bricks']
     ]
     let GoetyRitualItems = (output1, output2, block, brick) => {
         event.shaped(output1, [
@@ -150,7 +152,7 @@ ServerEvents.recipes(event => {
             ' C ',
             'DED'
         ], {
-            D: 'irons_spellbooks:arcane_salvage',
+            D: 'irons_spellbooks:mithril_scrap',
             C: output1,
             E: 'goety:cursed_ingot',
             B: 'botania:mana_gun',
@@ -252,6 +254,33 @@ ServerEvents.recipes(event => {
             'createaddition:diamond_grit_sandpaper'
         ]
 
+    )
+    //秘银，炽金复制
+    event.shapeless(Item.of('irons_spellbooks:mithril_ingot', 2),
+        [
+            'goety:philosophers_stone',
+            'irons_spellbooks:mithril_ingot'
+        ]
+    )
+    event.shapeless(Item.of('irons_spellbooks:pyrium_ingot', 2),
+        [
+            'goety:philosophers_stone',
+            'irons_spellbooks:pyrium_ingot' 
+        ]
+    )
+    //秘银炽金调和黑暗金属
+    event.shaped(
+        Item.of('goety:dark_metal_block'),
+        [
+            'AAB',
+            'ACB',
+            'ABB'
+        ],
+        {
+            A: 'irons_spellbooks:mithril_ingot',
+            B: 'irons_spellbooks:pyrium_ingot',
+            C: 'goety:philosophers_stone'
+        }
     )
 
     //诅咒注入系列配方
@@ -516,7 +545,7 @@ ServerEvents.recipes(event => {
                 "item": "minecraft:netherite_scrap"
             },
             {
-                "item": "irons_spellbooks:arcane_salvage"
+                "item": "irons_spellbooks:mithril_scrap"
             },
             {
                 "item": "goety:empty_focus"

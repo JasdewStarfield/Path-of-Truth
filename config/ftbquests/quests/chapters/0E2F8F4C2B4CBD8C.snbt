@@ -327,31 +327,42 @@
 		}
 		{
 			dependencies: ["374C430D0AD70D2E"]
-			description: ["获得所有种类的邪术卷轴！"]
+			description: [
+				"获得所有种类的邪术卷轴！"
+				"常规&6炽金&r只有通过&c原初城堡试炼宝箱&r才有几率获得，但是可以通过&d贤者之石&r复制，请不要浪费。"
+			]
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:eldritch_manuscript"
 			id: "4A795BB15E5110EC"
-			rewards: [{
-				id: "611EBF51F42906A1"
-				item: {
-					Count: 1
-					id: "irons_spellbooks:hither_thither_wand"
-					tag: {
-						ISB_Spells: {
-							data: [{
-								id: "irons_spellbooks:portal"
-								index: 0
-								level: 1
-								locked: 1b
-							}]
-							maxSpells: 1
-							mustEquip: 0b
-							spellWheel: 1b
+			rewards: [
+				{
+					id: "6067539668DFFE5F"
+					item: "irons_spellbooks:pyrium_ingot"
+					type: "item"
+				}
+				{
+					id: "10E06501147E6FCE"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:hellrazor"
+						tag: {
+							Damage: 0
+							"irons_spellbooks:spell_container": {
+								data: [{
+									id: "irons_spellbooks:raise_hell"
+									index: 0
+									level: 3
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 1b
+							}
 						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+			]
 			subtitle: "铁魔法的至高力量"
 			tasks: [
 				{
@@ -505,6 +516,11 @@
 							}
 						}
 					}
+					type: "item"
+				}
+				{
+					id: "413FF0AA61C65104"
+					item: "irons_spellbooks:eldritch_manuscript"
 					type: "item"
 				}
 			]
@@ -1140,6 +1156,9 @@
 			description: [
 				"哦天啊，制杖并贩剑（确信"
 				"这可以让你跳过攻打使徒的过程……"
+				"你可能会注意到这里没有&c原初受火者&r的战镰。原因？原因是我们并不强制要求玩家打高难度BOSS，但你还是得去摸箱子（或者完成隔壁任务）来获取&6炽金&r。"
+				""
+				"&o&7*死者之王这种路边一条还是打一打吧*&r&r"
 			]
 			hide_until_deps_complete: true
 			icon: "irons_spellbooks:blood_staff"
@@ -1261,6 +1280,55 @@
 						id: "irons_spellbooks:legionnaire_flamberge"
 						tag: {
 							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2F6473B6481873C9"
+					item: "irons_spellbooks:pyrium_staff"
+					type: "item"
+				}
+				{
+					id: "0BD847B3A5165823"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:boreal_blade"
+						tag: {
+							Damage: 0
+							"irons_spellbooks:spell_container": {
+								data: [{
+									id: "irons_spellbooks:frostbite"
+									index: 0
+									level: 3
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3BBA8482F9AC0561"
+					item: {
+						Count: 1
+						id: "irons_spellbooks:twilight_gale"
+						tag: {
+							Damage: 0
+							"irons_spellbooks:spell_container": {
+								data: [{
+									id: "irons_spellbooks:volt_strike"
+									index: 0
+									level: 5
+									locked: 1b
+								}]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 1b
+							}
 						}
 					}
 					type: "item"
@@ -1553,11 +1621,11 @@
 					id: "5C61EAE5C2AA3922"
 					item: {
 						Count: 1
-						id: "alshanex_familiars:familiar_spellbook"
+						id: "irons_spellbooks:ice_spell_book"
 						tag: {
-							ISB_Spells: {
+							"irons_spellbooks:spell_container": {
 								data: [ ]
-								maxSpells: 10
+								maxSpells: 12
 								mustEquip: 1b
 								spellWheel: 1b
 							}
@@ -1569,9 +1637,15 @@
 					id: "4186048BDD8132DE"
 					item: {
 						Count: 1
-						id: "alshanex_familiars:sound_spell_book"
+						id: "irons_spellbooks:cursed_doll_spell_book"
 						tag: {
-							ISB_Spells: {
+							"irons_spellbooks:affinity_data": {
+								bonuses: {
+									"irons_spellbooks:blood_slash": 1
+									"irons_spellbooks:blood_step": 1
+								}
+							}
+							"irons_spellbooks:spell_container": {
 								data: [ ]
 								maxSpells: 10
 								mustEquip: 1b
@@ -1994,7 +2068,10 @@
 				{
 					count: 64L
 					id: "2266D36CE47F7850"
-					item: { Count: 64, id: "sob:peanut_bag" }
+					item: {
+						Count: 64
+						id: "sob:peanut_bag"
+					}
 					type: "item"
 				}
 			]
@@ -2144,13 +2221,19 @@
 				{
 					count: 64L
 					id: "48C535EB43514695"
-					item: { Count: 64, id: "sob:nopal_crate" }
+					item: {
+						Count: 64
+						id: "sob:nopal_crate"
+					}
 					type: "item"
 				}
 				{
 					count: 64L
 					id: "64F1510C50314CE6"
-					item: { Count: 64, id: "sob:prickly_pear_crate" }
+					item: {
+						Count: 64
+						id: "sob:prickly_pear_crate"
+					}
 					type: "item"
 				}
 			]
@@ -2338,8 +2421,8 @@
 					type: "item"
 				}
 				{
-					id: "055A96661C24B54C"
-					item: "alshanex_familiars:sound_upgrade_orb"
+					id: "6F9D63E86338F7BF"
+					item: "irons_spellbooks:divine_soulshard"
 					type: "item"
 				}
 			]

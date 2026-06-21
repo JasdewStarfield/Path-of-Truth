@@ -148,6 +148,12 @@ ServerEvents.recipes(event => {
             B: 'botania:mana_pylon'
         }
     )
+    event.shapeless(Item.of('kubejs:water_elemental_core'),
+        [
+            'goety:shadow_essence',
+            'irons_spellbooks:mithril_ingot'
+        ]
+    )
     //缪铁催化
     event.shaped(
         Item.of('blue_skies:falsite_block', 8),
@@ -200,6 +206,12 @@ ServerEvents.recipes(event => {
             A: 'blue_skies:horizonite_block',
             B: 'botania:mana_pylon'
         }
+    )
+    event.shapeless(Item.of('kubejs:fire_elemental_core'),
+        [
+            'goety:shadow_essence',
+            'irons_spellbooks:pyrium_ingot'
+        ]
     )
     //炙铁催化
     event.shaped(

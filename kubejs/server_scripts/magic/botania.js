@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
             'ABA'
         ],
         {
-            B: 'irons_spellbooks:arcane_salvage',
+            B: 'irons_spellbooks:mithril_scrap',
             D: 'createaddition:electric_motor',
             C: 'goety:cursed_ingot',
             A: 'botania:manasteel_ingot'
@@ -256,11 +256,11 @@ ServerEvents.recipes(event => {
     event.recipes.botania.mana_infusion('2x irons_spellbooks:armor_pile', 'irons_spellbooks:armor_pile', 50000,'botania:conjuration_catalyst')
     //遗忆锭转化钻石1:2
     event.recipes.botania.mana_infusion('2x minecraft:diamond', 'undergarden:forgotten_ingot', 1000,'botania:alchemy_catalyst')
-    //龙皮，海洋之心，疣猪兽皮，奥术残骸，龙息复制
+    //龙皮，海洋之心，疣猪兽皮，秘银碎片，龙息复制
     event.recipes.botania.mana_infusion('2x irons_spellbooks:dragonskin', 'irons_spellbooks:dragonskin', 5000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x minecraft:heart_of_the_sea', 'minecraft:heart_of_the_sea', 50000,'botania:mana_bomb')
     event.recipes.botania.mana_infusion('2x irons_spellbooks:hogskin', 'irons_spellbooks:hogskin', 1000,'botania:mana_bomb')
-    event.recipes.botania.mana_infusion('2x irons_spellbooks:arcane_salvage', 'irons_spellbooks:arcane_salvage', 10000,'botania:conjuration_catalyst')
+    event.recipes.botania.mana_infusion('2x irons_spellbooks:mithril_scrap', 'irons_spellbooks:mithril_scrap', 10000,'botania:conjuration_catalyst')
     event.recipes.botania.mana_infusion('2x minecraft:dragon_breath', 'minecraft:dragon_breath', 500,'botania:conjuration_catalyst')
     //瞻远者蛋转化瞻远者之臂
     event.recipes.botania.mana_infusion('alexsmobs:farseer_arm', 'alexsmobs:spawn_egg_farseer', 50000,'botania:mana_bomb')
@@ -894,7 +894,7 @@ ServerEvents.recipes(event => {
             '#botania:petals/purple',
             '#botania:petals/lime',
             'botania:corporea_spark',
-            'irons_spellbooks:arcane_salvage',
+            'irons_spellbooks:mithril_scrap',
             '#forge:ingots/aluminum',
             'goety:dark_ingot',
             'botania:rune_water',
