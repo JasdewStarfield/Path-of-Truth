@@ -101,10 +101,16 @@
 	# ⌄ 
 	"Chameleon Shedding Timings" = [100, 36000, 0.1]
 	#─────────────────────────────────────────────────────────────────────────
-	# If true, chameleons will automatically shed their skin over time
-	# If false, chameleons will only shed when a player interacts with them
+	# If true, chameleons will automatically drop molt when ready to shed
+	# If false, chameleons will only drop molt when a player interacts with them
 	# ⌄ 
 	"Chameleons Shed Automatically" = false
+	#─────────────────────────────────────────────────────────────────────────
+	# The time limit for how long a chameleon can wait to be shed by a player
+	# Has no effect if 'Chameleons Shed Automatically' is enabled
+	# ⌄ 
+	#Range: > 0
+	"Chameleon Interact Time Limit" = 6000
 
 ["Mob Spawning"]
 	#─────────────────────────────────────────────────────────────────────────//v

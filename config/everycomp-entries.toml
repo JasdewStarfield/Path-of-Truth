@@ -25,6 +25,7 @@
 
 		[types.stone_type.botania]
 			livingrock = true
+			corporea = true
 
 		[types.stone_type.undergarden]
 			depthrock = true
@@ -36,7 +37,6 @@
 
 		[types.stone_type.goety]
 			shade_stone = true
-			crypt_stone = true
 			highrock = true
 			siltstone = true
 
@@ -51,6 +51,10 @@
 
 		[types.stone_type.oreganized]
 			glance = true
+
+		[types.stone_type.immersiveengineering]
+			hempcrete = true
+			concrete = true
 
 	[types.cake]
 
@@ -274,6 +278,76 @@
 			small_tiles = true
 			smooth_brick_paving_connecting = true
 			slated = true
+			squares_slab_connecting = true
+			brick_paving_slab_connecting = true
+			smooth_tiles_slab = true
+			brick_paving_slab = true
+			bordered_slab = true
+			squares_stairs = true
+			smooth_rotated_bricks_stairs = true
+			slated_stairs = true
+			tiles_stairs_connecting = true
+			bordered_slab_connecting = true
+			small_tiles_slab_connecting = true
+			path_stairs = true
+			small_bricks_stairs = true
+			squares_slab = true
+			bordered_stairs_connecting = true
+			diagonal_bricks_slab_connecting = true
+			waves_slab = true
+			small_tiles_stairs = true
+			brick_paving_stairs_connecting = true
+			diagonal_bricks_stairs = true
+			small_tiles_slab = true
+			rotated_bricks_slab = true
+			brick_paving_stairs = true
+			waves_stairs = true
+			big_tiles_stairs_connecting = true
+			small_tiles_stairs_connecting = true
+			smooth_tiles_stairs = true
+			small_bricks_stairs_connecting = true
+			smooth_rotated_bricks_stairs_connecting = true
+			small_bricks_slab = true
+			crushed_stairs = true
+			slated_slab = true
+			big_tiles_slab_connecting = true
+			rotated_bricks_slab_connecting = true
+			diagonal_bricks_stairs_connecting = true
+			brick_pattern_slab_connecting = true
+			smooth_large_tiles_slab_connecting = true
+			smooth_brick_paving_slab_connecting = true
+			path_stairs_connecting = true
+			bordered_stairs = true
+			waves_stairs_connecting = true
+			smooth_tiles_stairs_connecting = true
+			squares_stairs_connecting = true
+			crushed_slab_connecting = true
+			smooth_large_tiles_stairs_connecting = true
+			crushed_slab = true
+			tiles_slab_connecting = true
+			smooth_brick_paving_slab = true
+			smooth_rotated_bricks_slab_connecting = true
+			tiles_stairs = true
+			smooth_large_tiles_slab = true
+			smooth_tiles_slab_connecting = true
+			waves_slab_connecting = true
+			smooth_large_tiles_stairs = true
+			smooth_brick_paving_stairs_connecting = true
+			crushed_stairs_connecting = true
+			path_slab = true
+			tiles_slab = true
+			path_slab_connecting = true
+			diagonal_bricks_slab = true
+			small_bricks_slab_connecting = true
+			big_tiles_slab = true
+			smooth_brick_paving_stairs = true
+			big_tiles_stairs = true
+			brick_pattern_stairs = true
+			rotated_bricks_stairs = true
+			brick_pattern_stairs_connecting = true
+			rotated_bricks_stairs_connecting = true
+			brick_pattern_slab = true
+			smooth_rotated_bricks_slab = true
 
 		[entries.stone_type.handcrafted]
 			corner_trim = true

@@ -15,27 +15,31 @@
     "desc:": "Enables smart stopping of music, when the biome changes or player leaves a cave/water/night is over, default = true",
     "smartMusic": true
   },
+  "stopMusicForRecords": {
+    "desc:": "Enables Jukeboxes and records playing to stop the current background music, default = true",
+    "stopMusicForRecords": true
+  },
   "musicConditions": {
-    "desc:": "Sets the condition under which music from their respective categories is allowed to play. Required conditions need to be all met, a single matched disallowed conditions prevents it. Possible conditions are: [OVERWORLD, CAVE, WATER, NETHER, END, NIGHT, OTHERDIMENSIONS]",
+    "desc:": "Sets the condition under which music from their respective categories is allowed to play. Required conditions need to be all met, a single matched disallowed conditions prevents it. Possible conditions are: [OTHERDIMENSIONS, NIGHT, OVERWORLD, CAVE, WATER, END, NETHER]",
     "Biome": {
       "requires": "[]",
       "disallowed": "[OTHERDIMENSIONS]"
     },
     "Cave": {
       "requires": "[CAVE]",
-      "disallowed": "[NETHER, WATER, END, OTHERDIMENSIONS]"
+      "disallowed": "[END, OTHERDIMENSIONS, WATER, NETHER]"
     },
     "Night": {
       "requires": "[NIGHT]",
-      "disallowed": "[END, NETHER, CAVE, WATER, OTHERDIMENSIONS]"
+      "disallowed": "[CAVE, END, OTHERDIMENSIONS, WATER, NETHER]"
     },
     "Water": {
       "requires": "[WATER]",
-      "disallowed": "[END, NETHER, OTHERDIMENSIONS]"
+      "disallowed": "[END, OTHERDIMENSIONS, NETHER]"
     },
     "Game": {
       "requires": "[]",
-      "disallowed": "[NETHER, END, WATER, OTHERDIMENSIONS]"
+      "disallowed": "[END, OTHERDIMENSIONS, WATER, NETHER]"
     },
     "End": {
       "requires": "[END]",

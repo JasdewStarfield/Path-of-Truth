@@ -108,3 +108,7 @@ config/c2me.toml
 config/c2me.toml
 /lightspeed-cache
 /AutoTranslation
+/config/CSC
+*.bak
+/data
+/visual_keybinder

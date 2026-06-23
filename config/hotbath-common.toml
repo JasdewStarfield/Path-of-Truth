@@ -1,0 +1,31 @@
+#=== COMPATIBILITY MODE ===
+#Enable or disable compatibility mode.
+#When enabled, ALL advanced features are disabled (mod integrations, dirtiness).
+#Only basic fluid properties will be available.
+#Use this if you experience crashes or compatibility issues with other mods.
+#NOTE: This overrides all other settings below.
+#SAVE SAFETY: Your world data is preserved, just not used until re-enabled.
+#Default: false
+compatibilityMode = false
+#=== DIRTINESS SYSTEM ===
+#Enable or disable the dirtiness system.
+#When enabled, players will gradually get dirty and need to bathe to clean themselves.
+#SAVE SAFETY: Disabling this will NOT affect your world!
+#  - Player dirtiness data is preserved but simply ignored.
+#  - Re-enabling will restore previous dirtiness values.
+#Default: true
+enableDirtinessSystem = false
+#=== MOD INTEGRATIONS ===
+#Enable or disable mod integrations (Cold Sweat, LSO, Alex's Mobs, etc.).
+#When disabled, hotbath will not interact with other mods' systems.
+#SAVE SAFETY: This has NO impact on world data - can be toggled freely.
+#Default: true
+enableModIntegrations = true
+#=== CORAL BEHAVIOR ===
+#Enable or disable coral dying in hotbath fluids.
+#When enabled (default), coral will die in hotbath fluids just like on land.
+#When disabled, coral will survive in hotbath fluids as if they were water.
+#SAVE SAFETY: This has NO impact on world data - can be toggled freely.
+#Default: true
+coralDiesInHotbathFluid = true
+

@@ -10,6 +10,7 @@
 	AutumnTemps = [0.15, 0.1, 0.05, 0.0, -0.1, -0.2]
 	#Winter Temperatures divided into six periods according to the solar term table.
 	WinterTemps = [-0.3, -0.35, -0.35, -0.5, -0.45, -0.4]
+	TempModifier = true
 
 #Goety
 [goety]
@@ -27,5 +28,9 @@
 
 #Xaero's Minimap
 [xaerominimap]
+	Enable = true
+
+#Subtle Effects
+[subtle_effects]
 	Enable = true
 

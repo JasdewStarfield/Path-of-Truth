@@ -1,0 +1,13 @@
+enchantPageHeight = 120
+
+[element]
+	enableModId = true
+	enableCategory = true
+	enableRarity = true
+	enableApplyAtEnchantingTable = true
+	enableIsDiscoverable = true
+	enableIsTradeable = true
+	enableIsTreasureOnly = true
+	enableIsCurse = true
+	enableEnchantmentDesc = true
+
