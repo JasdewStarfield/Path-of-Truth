@@ -119,41 +119,48 @@ ServerEvents.recipes(event => {
     )
     
     //祭坛底座移除
-    event.remove({output:'goety:pedestal'})
-    //祭坛底座合成
-    event.shaped(
-        Item.of('8x goety:pedestal'),
-        [
+    event.remove({output:'#goety:pedestals'})
+    //祭坛移除
+    event.remove({output:'#goety:dark_altars'})
+
+    //祭坛及其底座合成
+    const GoetyAlter=[
+        ['8x goety:pedestal', '4x goety:dark_altar', 'goety:shade_stone', 'goety:shade_stone_bricks'],
+        ['8x goety:pedestal_stone', '4x goety:dark_altar_stone', 'minecraft:stone', 'minecraft:stone_bricks'],
+        ['8x goety:pedestal_deepslate', '4x goety:dark_altar_deepslate', 'minecraft:deepslate', 'minecraft:deepslate_bricks'],
+        ['8x goety:pedestal_nether_brick', '4x goety:dark_altar_nether_brick', 'minecraft:nether_brick', 'minecraft:nether_bricks'],
+        ['8x goety:pedestal_blackstone', '4x goety:dark_altar_blackstone', 'minecraft:blackstone', 'minecraft:polished_blackstone_bricks'],
+        ['8x goety:pedestal_end_stone', '4x goety:dark_altar_end_stone', 'minecraft:end_stone', 'minecraft:end_stone_bricks'],
+        ['8x goety:pedestal_highrock', '4x goety:dark_altar_highrock', 'goety:highrock', 'goety:highrock_bricks'],
+        ['8x goety:pedestal_marble', '4x goety:dark_altar_marble', 'goety:marble', 'goety:gold_covered_marble']
+    ]
+    let GoetyRitualItems = (output1, output2, block, brick) => {
+        event.shaped(output1, [
             'AAA',
             ' B ',
             'CDC'
-        ],
-        {
+        ], {
             D: 'botania:life_essence',
             B: 'irons_spellbooks:arcane_anvil',
             C: 'goety:haunted_planks',
-            A: 'goety:shade_stone'
-        }
-    )
-
-    //祭坛移除
-    event.remove({output:'goety:dark_altar'})
-    //祭坛合成
-    event.shaped(
-        Item.of('4x goety:dark_altar'),
-        [
+            A: block
+        })
+        event.shaped(output2, [
             'ABA',
             ' C ',
             'DED'
-        ],
-        {
+        ], {
             D: 'irons_spellbooks:arcane_salvage',
-            C: 'goety:pedestal',
+            C: output1,
             E: 'goety:cursed_ingot',
             B: 'botania:mana_gun',
-            A: 'goety:shade_stone_bricks'
-        }
-    )
+            A: brick
+        })
+    }
+    GoetyAlter.forEach(arr => {
+        GoetyRitualItems(arr[0], arr[1], arr[2], arr[3])
+    })
+
 
     //简易泰拉钢制作（第五章开放）
     event.shaped(

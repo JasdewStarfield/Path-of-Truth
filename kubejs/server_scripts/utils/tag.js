@@ -233,7 +233,8 @@ const Bosses = [
     'bosses_of_mass_destruction:lich',
     'bosses_of_mass_destruction:obsidilith',
     'bosses_of_mass_destruction:void_blossom',
-    'botania:doppleganger'
+    'botania:doppleganger',
+    'aquamirae:captain_cornelia'
 ]
 
 const MiniBosses = [
@@ -488,6 +489,9 @@ ServerEvents.tags("item", (event) => {
     ]);
     event.add('scguns:advanced_bullet_material', '#forge:ingots/steel');
     event.add('scguns:advanced_bullet_tips', '#forge:nuggets/steel')
+
+    //镐子标签修复（蔚蓝镐子缺失了minecraft:cluster_max_harvestables标签）
+    event.add("minecraft:cluster_max_harvestables","#minecraft:pickaxes")
 })
 
 ServerEvents.tags("block", (event) => {
