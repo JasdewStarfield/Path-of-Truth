@@ -81,8 +81,8 @@
     "mod_name": true
   },
   "uti": {
-    "entity_name": true,
-    "object_name": true
+    "block_name": true,
+    "entity_name": true
   },
   "balm": {
     "jade": true

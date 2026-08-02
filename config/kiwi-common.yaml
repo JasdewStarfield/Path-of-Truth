@@ -4,3 +4,5 @@ vars:
   Author: Snownee
 kSwitch:
   creativeOnly: false
+customization:
+  disableStonecuttingNamespaces: []

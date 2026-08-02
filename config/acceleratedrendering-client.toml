@@ -26,10 +26,6 @@
 	#- ENABLED: Translucent RenderType will still be rendered in accelerated pipeline even if the pipeline does not support translucent sorting unless mods explicitly disable force translucent acceleration temporarily when rendering their own geometries.
 	#Allowed Values: DISABLED, ENABLED
 	force_translucent_acceleration = "ENABLED"
-	#- DISABLED: Poses with identical transform matrix and normal matrix that used to transform vertices will not be cached in buffer which slightly decreases CPU pressure but increase VRAM usage unless mods explicitly disable it when rendering.
-	#- ENABLED: Poses with identical transform matrix and normal matrix that used to transform vertices will be cached in buffer which save VRAM but slightly increase CPU pressure unless mods explicitly disable it when rendering.
-	#Allowed Values: DISABLED, ENABLED
-	cache_identical_pose = "ENABLED"
 	#- SIMPLE: The most basic implementation of cache. Usually used for testing if other cache types are working correctly.
 	#- HANDLE: Faster implementation of cache using VarHandle and flatten values to improve performance on read/write operations.
 	#- UNSAFE: Fastest implementation of cache using unsafe memory operations that skip multiple safety checks to read/write.
@@ -43,10 +39,6 @@
 	#- MERGED: Meshes with identical vertices will be merged together, which will use less VRAM more RAM in storing the data of meshes used in merging.
 	#Allowed Values: IGNORED, MERGED
 	mesh_merge_type = "MERGED"
-	#- DISABLED: Meshes that is going to be accelerated will be collected and uploaded together at the end for choosing better uploading method and increasing memory access efficiency to reach the best performance. Also this method allows mesh cache with bigger capacity (up to VRAM limit), but it may not follow the correct draw order.
-	#- ENABLED: Meshes that is going to be accelerated will be uploaded immediately after the draw command. It is less efficient and only have about 2GB mesh cache (generally enough) but will follow the original draw order to get the most compatibility.
-	#Allowed Values: DISABLED, ENABLED
-	upload_mesh_immediately = "DISABLED"
 	#- DISABLED: Dynamic render types like lightning on charged creepers and winds on breezes will not be accelerated for less VRAM usage and smoother animations, but may exceptionally skip acceleration in modded geometries using these render types.
 	#- ENABLED: Dynamic render types like lightning on charged creepers and winds on breezes will be accelerated to accelerate modded geometries using these render types, but may have more VRAM usage and less smooth animations based on resolution settings.
 	#Allowed Values: DISABLED, ENABLED
@@ -338,4 +330,8 @@
 	#- ENABLED: Accelerations of UI driven by Sophisticated Core will be enabled.
 	#Allowed Values: DISABLED, ENABLED
 	sophisticated_feature_status = "ENABLED"
+	#- DISABLED: Accelerations of text driven by ModernUI's modern text engine will be disabled.
+	#- ENABLED: Accelerations of text driven by by ModernUI's modern text engine will be enabled.
+	#Allowed Values: DISABLED, ENABLED
+	modernui_feature_status = "ENABLED"
 

@@ -112,3 +112,4 @@ config/c2me.toml
 *.bak
 /data
 /visual_keybinder
+/.hmcl

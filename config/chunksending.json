@@ -1,10 +1,20 @@
 {
+  "info:": "This is the config for the chunk sending mod, it is mostly relevant for dedicated servers. A Tick in minecraft happens 20 times a second(20TPS), a chunk is a 16x16 block area that gets sent to the client.",
   "maxChunksPerTick": {
-    "desc:": "Maximum amount of chunks sent per tick to a player, increases dynamically with size of the backlog",
+    "desc:": "Maximum amount of chunks sent per tick to a player. Default: 15 (x3 in singleplayer)",
     "maxChunksPerTick": 5
+  },
+  "maxChunksPerTickAll": {
+    "desc:": "Maximum amount of chunks sent per tick globally for all players(equally split, minimum 1 per tick). Reduces the network impact of multiple players joining at once. Default: 80",
+    "maxChunksPerTickAll": 80
+  },
+  "prioritizeDirection": {
+    "desc:": "Enables chunks to prioritize loading in the direction the player is facing. Default: true",
+    "prioritizeDirection": true
   },
   "debugLogging": {
     "desc:": "Enable debug logging to show the amount of chunks sent/queued",
     "debugLogging": false
-  }
+  },
+  "version": 1
 }

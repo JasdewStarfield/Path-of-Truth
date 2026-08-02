@@ -473,7 +473,7 @@
 			]
 			description: [
 				"现在你进入了生物发电的时代！"
-				"虽然发酵苹果和压榨植物可能没那么容易，但相信你可以做到全自动的）"
+				"虽然发酵生物质和压榨植物可能没那么容易，但相信你可以做到全自动的）"
 			]
 			icon: "immersiveengineering:biodiesel_bucket"
 			id: "3B29D716A3D5AAF0"

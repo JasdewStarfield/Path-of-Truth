@@ -1,0 +1,20 @@
+
+[startup]
+	#Preload Forge path resource pack indexes on Lightspeed worker threads during startup.
+	asyncPreloadPacks = true
+	#Query safe resource-pack segments concurrently while preserving vanilla priority and filter order.
+	parallelResourceLookup = true
+	#Minimum safe pack segment size before Lightspeed uses parallel resource lookup. Small segments are faster sequentially.
+	#Range: 2 ~ 64
+	parallelLookupMinPacks = 4
+	#Cache per-pack resource existence checks. The persisted cache is loaded lazily so it does not block startup IO.
+	cacheResourceExistence = true
+
+[compatibility]
+	#Complete failed third-party client resource reload listeners instead of letting one mod crash the whole loading overlay.
+	isolateModdedResourceReloadFailures = true
+	#Class-name prefixes that may be isolated when resource reload fails. Use * for all non-core mod listeners.
+	isolatedResourceReloadListenerPatterns = ["*"]
+	#When Sinytra Connector is installed, avoid startup/resource optimizations that change Fabric resource reload or renderer lookup timing.
+	connectorCompatibilityMode = true
+

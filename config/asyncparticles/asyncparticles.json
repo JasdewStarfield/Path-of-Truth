@@ -11,6 +11,7 @@
   "tick": {
     "animationTickMode": "INTERRUPTIBLE",
     "particleTickMode": "INTERRUPTIBLE",
+    "gpuOnlyAsyncParticleTick": false,
     "tickWeatherAsync": true,
     "deferredTextureTick": true,
     "failPerSecLimit": 5,

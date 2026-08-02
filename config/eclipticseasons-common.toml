@@ -102,8 +102,6 @@
 	#The effective radius of the 'Season Core' block.
 	#Range: 4 ~ 31
 	SeasonCoreRange = 15
-	#Enables more precise shape detection for greenhouse structures.
-	ComplexGreenHouseCheck = true
 	#Use Manhattan distance (square) instead of Euclidean (circle) for greenhouse range.
 	UseBoxDistance = true
 	#[Deprecated] Use default seasonal/humidity values for unregistered crops.
@@ -132,6 +130,9 @@
 	#The effective radius of the 'Humid Tank' block.
 	#Range: 2.0 ~ 16.0
 	HumidityTankRange = 4.5
+	#Adjusts the greenhouse structure detection mode. Higher accuracy modes check more directions, while top-only mode only requires overhead coverage.
+	#Allowed Values: FULL, BASIC, TOP_ONLY
+	GreenHouseCheckMode = "FULL"
 
 [Animal]
 	#Limit animal breeding to their natural, compatible seasons.

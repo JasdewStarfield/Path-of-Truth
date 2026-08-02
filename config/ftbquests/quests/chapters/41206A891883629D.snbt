@@ -207,7 +207,10 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["3FADEC6A05255B1A"]
+			dependencies: [
+				"3FADEC6A05255B1A"
+				"24E7F8358E82569D"
+			]
 			id: "2739985E562929B2"
 			rewards: [
 				{
@@ -809,7 +812,6 @@
 		}
 		{
 			dependencies: [
-				"2739985E562929B2"
 				"577E2B9C81B59295"
 				"0DD8AAA01622241D"
 			]
