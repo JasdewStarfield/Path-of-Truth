@@ -556,7 +556,7 @@ ServerEvents.recipes(event => {
       B: 'goety:sculk_devourer',
       A: 'immersiveengineering:blastbrick_reinforced',
       D: 'kubejs:raw_world_base',
-      C: 'goety:reinforced_redstone_block'
+      C: 'goety:animator'
     }
   )
   //奥术充能器
